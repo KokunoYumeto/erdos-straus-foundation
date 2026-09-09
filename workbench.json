@@ -7,6 +7,7 @@
   "updated": "2026-09-09",
   "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
   "overview": "WORKBENCH.md",
+  "attempt_overview": "ATTEMPTS.md",
   "contributing": "CONTRIBUTING.md",
   "literature": "LITERATURE.md",
   "design": "POLYCLANK.md",
@@ -35,7 +36,8 @@
     "artifacts": "polyclank/artifacts.json",
     "claims": "polyclank/claims.json",
     "checks": "polyclank/checks.json",
-    "peers": "polyclank/peers.json"
+    "peers": "polyclank/peers.json",
+    "attempts": "polyclank/attempts.json"
   },
   "coverage": {
     "claims": "All 72 named theorem, lemma, proposition and corollary environments in the current supplement's 15 canonical proof sources.",

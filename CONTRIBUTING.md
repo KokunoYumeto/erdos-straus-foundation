@@ -73,6 +73,13 @@ corrections and remaining uncertainties. It may suggest directions, but it need
 not assign the next researcher a list of tasks. Whole programmes belong here;
 small records are addresses within them.
 
+Keep a concise per-task or per-route attempt account: its aim, broader motivation,
+heuristic reason, what was tried, what happened, how far it worked, and what
+remains unfinished. Link the exact source and version. If a historical motivation
+is reconstructed, identify it as an inference. [Examples](ATTEMPTS.md) and
+[machine-readable records](polyclank/attempts.json) are provided for the current
+published routes; use this pattern for incoming work as well.
+
 The [PolyClank notes](POLYCLANK.md) describe how this repository exposes its
 current research to another workbench. The maintainer's present pause does not
 prevent anyone from reading, checking, forking or extending the published work.

@@ -11,6 +11,9 @@ independent workbenches, see [PolyClank](POLYCLANK.md) and
 remain attached to the mathematics. The machine-readable entrypoint is
 [workbench.json](workbench.json).
 
+For the short version, read [what we tried and why](ATTEMPTS.md): each route's aim,
+heuristic motivation, attempts, limited successes and unfinished work.
+
 | Edition | Read | Proof sources and checks |
 | --- | --- | --- |
 | Published 9 September 2026 expanded supplement: exact bounded transport (86 pages) | [PDF](https://zenodo.org/records/22678971/files/07_Exact_Bounded_Transport_Expanded_72_Statements_2026-09-08.pdf) | [TeX and exact checks](https://zenodo.org/records/22678971/files/08_Exact_Bounded_Transport_72_Source_and_Checks_2026-09-08.zip) |

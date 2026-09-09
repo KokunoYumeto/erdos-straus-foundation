@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "record_type": "descriptive-research-attempts",
+  "updated": "2026-09-09",
+  "edition_doi": "10.5281/zenodo.22678971",
+  "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641",
+  "source_base_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/",
+  "broader_motivation": "Resolve Erdős–Straus and develop exact structural connections to other mathematics, preserving the original arithmetic rather than replacing it by a restricted selector.",
+  "motivation_provenance": "The broader aim was directly expressed by the owner. Route-specific heuristic reasons are editorial reconstructions from the cited constructions, not verbatim accounts of historical intent.",
+  "coverage": "Five routes in the published supplement; not every historical task or neighbouring workbench.",
+  "attempts": [
+    {
+      "id": "es:attempt:full-shell-factor-sieves",
+      "title": "Full-shell occupancy and factor sieves",
+      "aim": "Determine exactly what an ES counterexample must evade.",
+      "heuristic_reason": "Bounded prime-factor exponents retain information discarded by a coarse congruence sieve.",
+      "tried": "Full divisor packets, ordered witness reconstruction and exact factor tests for residuals three and seven.",
+      "outcome": "Exact first-two-shell tests and a necessary-and-sufficient all-shell no-hit criterion at each input prime; explicit per-shell selector failures.",
+      "successful_scope": "The original full finite prime-shell system, with complete fibres; the first-two-shell criterion concerns those shells only.",
+      "unfinished": "No proof that some shell is occupied for every prime, and no prime with all shells empty.",
+      "status": "structural-results-with-unresolved-global-aim",
+      "sources": ["first_two_shell_sieve.tex", "counterexample_sieve/all_shell_no_hit.tex"],
+      "claim_ids": ["es72:claim:thm:r3-factor-sieve", "es72:claim:thm:r7-factor-sieve", "es72:claim:thm:global-no-hit"]
+    },
+    {
+      "id": "es:attempt:bounded-shared-constraints",
+      "title": "Simultaneous constraints and bounded CRT",
+      "aim": "Express the colleague's linked conditions on one exact permitted integer tuple.",
+      "heuristic_reason": "CRT can organize congruences if shared variables and their original bounds survive the local-to-global passage.",
+      "tried": "Lattice gluing, bounded divisor CRT, Boolean coordinates and bounded input/prime-output incidence.",
+      "outcome": "Complete finite fibre algorithms and witness return; exact examples of integral and finite-budget obstructions.",
+      "successful_scope": "All solutions in the specified original finite domains, with their exact input/output projections.",
+      "unfinished": "Integral compatibility does not by itself give bounded occupancy; the prime-output construction has no asserted surjectivity.",
+      "status": "exact-fibre-algorithms-with-unresolved-occupancy",
+      "sources": ["bounded_transport.tex", "shared_variable_crt.tex", "input_output_incidence.tex"],
+      "claim_ids": ["es72:claim:thm:shared-variable-crt", "es72:claim:thm:input-output-incidence"]
+    },
+    {
+      "id": "es:attempt:witness-propagation",
+      "title": "Witness propagation and exact first codes",
+      "aim": "Propagate solutions with their order, raw factor scale and original codes retained.",
+      "heuristic_reason": "A transport law can connect witnesses across shells or primes without restarting their construction.",
+      "tried": "Ratio maps, positive shears, fixed-denominator successors, ray returns and four swap/tag candidates.",
+      "outcome": "Complete integer domains, inverse maps and failed returns; a global first code on the occupied residual-three domain.",
+      "successful_scope": "Each explicitly classified transport domain; the residual-three first-code theorem applies when that shell is occupied.",
+      "unfinished": "The classified domains do not yet force universal occupancy. Two passing adjacent positive shears cannot compose.",
+      "status": "classified-transports-with-unresolved-global-coverage",
+      "sources": ["bounded_transport.tex", "exact_audit/fixed_y_successor.tex", "raw_scale_hit_incidence.tex", "boundary_swap/boundary_swap_completion.tex"],
+      "claim_ids": ["es72:claim:thm:no-two-shears", "es72:claim:thm:boundary-r3-global-minimum"]
+    },
+    {
+      "id": "es:attempt:divisor-cyclic-interface",
+      "title": "Divisor categories and cyclic coordinates",
+      "aim": "Construct exact Connes–Consani interfaces for the retained arithmetic.",
+      "heuristic_reason": "Embedded ordered groups retain finite divisor data, and integral cyclic characters can detect gluing obstructions.",
+      "tried": "Embedded intersections, reciprocal returns, primitive marks, affine shear correction and cyclic-character coordinates.",
+      "outcome": "Exact maps with arithmetic return; a stronger corrected map where the uncorrected map fails.",
+      "successful_scope": "The specified finite divisor loci, transport domains and integral exponent-gluing obstruction.",
+      "unfinished": "Zero integral obstruction still does not force occupancy of the original bounded fibre.",
+      "status": "proved-correspondences-with-unresolved-bounded-occupancy",
+      "sources": ["connes_reading/connes_primitive_intersections.tex", "bounded_transport.tex", "integral_cyclic_bridge.tex"],
+      "claim_ids": ["es72:claim:thm:full-connes-shear", "es72:claim:thm:cyclic-lattice-gluing"]
+    },
+    {
+      "id": "es:attempt:auxiliary-torus-operators",
+      "title": "Auxiliary torus, sampling and directional inverse",
+      "aim": "Transport arithmetic character packets through the cited auxiliary cover and return the analysis to its operators.",
+      "heuristic_reason": "Exact finite covering fibres determine what averaging and sampling preserve.",
+      "tried": "Unchanged-grid sampling, complete-preimage and character-coset repair, continuous transfer and directional inverse estimates.",
+      "outcome": "Explicit extra sampling terms, exact repairs preserving packet counts, and sharp directional inverse estimates.",
+      "successful_scope": "The retained arithmetic packets and the specified finite or continuous operator domains, with full constants and fibres.",
+      "unfinished": "No construction of a fluid solution from a prime, universal ES occupancy or complete fluid proof verification follows here.",
+      "status": "operator-and-packet-results-with-unresolved-endpoint-bridge",
+      "sources": ["ns_operator_bridge/torus_cover_lemma.tex", "ns_operator_bridge/sieve_character_cover.tex", "ns_operator_bridge/reverse_proof_transport.tex", "ns_operator_bridge/reverse_smooth_inverse.tex", "ns_operator_bridge/ATTRIBUTION.md"],
+      "claim_ids": ["es72:claim:thm:ns-character-coset-correction", "es72:claim:thm:ns-sharp-smooth-inverse"]
+    }
+  ]
+}
