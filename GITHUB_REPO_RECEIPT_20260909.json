@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
+  "visibility": "public",
+  "branch": "main",
+  "initial_commit": "c13484cf4c26af1e5bcce6f4b481204e032acefe",
+  "created_utc": "2026-09-09T00:18:00Z",
+  "purpose": "Continuous readable GitHub workbench for the Erdős–Straus corpus; preserve the complete release and provenance without replacing prior files.",
+  "uploaded_files": [
+    "README.md",
+    "00_ERDOS_STRAUSS_Project_Reader.pdf",
+    "01_ERDOS_STRAUSS_Reader_Source_and_Build.zip",
+    "02_ERDOS_STRAUSS_Verification_and_Lean.zip",
+    "03_ERDOS_STRAUSS_Historical_Drafts_and_Corrections.zip",
+    "04_ERDOS_STRAUSS_Working_Corpus_and_Artifacts.zip",
+    "RELEASE_MANIFEST.csv",
+    "SHA256SUMS.txt"
+  ],
+  "release_source": "C:/Users/Floris/Documents/Erdos Strauss and related/release_candidate",
+  "release_manifest_hashes": {
+    "reader_pdf": "14c306274bb9f5f8591e4fb20de0e903a6f41ab4dc79314309bf4a0e4d07b016",
+    "source_zip": "521582fa5d25eae3ab8771fc0668ca52374f21ff0f8871a72e652aa090849dd8",
+    "verification_zip": "87df9acbbaee8a2cb475bb16fa7377e41f837e2201d68b5a44e10758c27257e3",
+    "history_zip": "1ed4325ee28f157f64428aa6ee85c5a2bbea58004c7a71cb4a3616e535302e25",
+    "working_corpus_zip": "7f3b5d34ee042a4e915a6718a6644a605e456a210a6b3f7e76f8da1be0116583"
+  },
+  "scope_note": "The repository does not claim a proof or counterexample for the conjecture. It is a public, versioned workbench; future additions must preserve exact identities, provenance, hypotheses, maps, exceptions, certificates, and nonclaims."
+}
