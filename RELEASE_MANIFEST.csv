@@ -1,0 +1,9 @@
+recommended_order,filename,role,description,size_bytes,sha256
+1,00_ERDOS_STRAUSS_Project_Reader.pdf,principal_paper,Principal paper and default Zenodo preview.,4518664,14c306274bb9f5f8591e4fb20de0e903a6f41ab4dc79314309bf4a0e4d07b016
+2,README.md,project_guide,Short guide to the mathematical scope and archive contents.,4584,b303af9d0e0675f5a966512d4c50bf947bebf14510b522b58bcf838e35fdcb5c
+3,01_ERDOS_STRAUSS_Reader_Source_and_Build.zip,reader_sources,"LaTeX source, build notes, and research logbook.",2823137,521582fa5d25eae3ab8771fc0668ca52374f21ff0f8871a72e652aa090849dd8
+4,02_ERDOS_STRAUSS_Verification_and_Lean.zip,verification,Replayed symbolic and finite checks with a pinned Lean development.,1087616,87df9acbbaee8a2cb475bb16fa7377e41f837e2201d68b5a44e10758c27257e3
+5,03_ERDOS_STRAUSS_Historical_Drafts_and_Corrections.zip,history,"The first three concept versions, earlier drafts, and correction guide.",18462567,1ed4325ee28f157f64428aa6ee85c5a2bbea58004c7a71cb4a3616e535302e25
+6,04_ERDOS_STRAUSS_Working_Corpus_and_Artifacts.zip,working_corpus,"Reviewed manuscripts, scripts, data tables, reports, and figures.",13433127,7f3b5d34ee042a4e915a6718a6644a605e456a210a6b3f7e76f8da1be0116583
+7,DOI_LINEAGE.csv,doi_lineage,Earlier Erdős–Straus records and related project lineages.,6526,6d663066c81bbb89cb7f7f5c660596c88be6f8c58fcffc01329019b49324e7bd
+8,ZENODO_METADATA.json,record_metadata,Human-readable copy of the Zenodo metadata payload.,9622,f91d76b0c54a3fbb1d470c5f40bbf12a32a7ba5c85e59b5181c65ac218c2b74e
