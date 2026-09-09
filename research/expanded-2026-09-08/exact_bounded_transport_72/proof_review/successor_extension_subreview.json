@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-08T16:26:58.023446+00:00",
+  "status": "passed_no_mathematical_errors_found",
+  "scope": [
+    "No length-two path in adjacent elementary L/J primitive shell witness graph",
+    "Affine index translation, inverse, composition, exact reciprocal divisor return",
+    "L middle-channel identification and J conjugation"
+  ],
+  "mathematical_errors": [],
+  "necessary_structure_qualification": "For c!=0, Psi is an order-preserving affine bijection of underlying lattice torsors, not an additive homomorphism or a map preserving the positive cone. Zero fibre is {c/N}; the linear part has trivial kernel.",
+  "counts": {
+    "primes": 63,
+    "adjacent_shells": 26439,
+    "source_pairs": 3956,
+    "edges": 8,
+    "two_edge_paths": 0,
+    "affine_label_checks": 244800,
+    "affine_reciprocal_checks": 107440,
+    "J_conjugation_checks": 107440,
+    "composition_checks": 125440
+  },
+  "ranges": {
+    "graph_prime_max": 1753,
+    "affine_N_M": [
+      1,
+      40
+    ],
+    "affine_c": [
+      -8,
+      8
+    ],
+    "affine_integer_labels": [
+      -4,
+      4
+    ],
+    "composition_N_M_K": [
+      1,
+      8
+    ],
+    "composition_c_d": [
+      -3,
+      3
+    ],
+    "composition_labels": [
+      -4,
+      -1,
+      0,
+      1,
+      4
+    ]
+  },
+  "edges": [
+    {
+      "kind": "J",
+      "source": [
+        73,
+        20,
+        1,
+        20
+      ],
+      "target": [
+        73,
+        21,
+        1,
+        21
+      ]
+    },
+    {
+      "kind": "L",
+      "source": [
+        73,
+        20,
+        20,
+        1
+      ],
+      "target": [
+        73,
+        21,
+        21,
+        1
+      ]
+    },
+    {
+      "kind": "J",
+      "source": [
+        433,
+        113,
+        1,
+        113
+      ],
+      "target": [
+        433,
+        114,
+        1,
+        114
+      ]
+    },
+    {
+      "kind": "L",
+      "source": [
+        433,
+        113,
+        113,
+        1
+      ],
+      "target": [
+        433,
+        114,
+        114,
+        1
+      ]
+    },
+    {
+      "kind": "J",
+      "source": [
+        997,
+        251,
+        1,
+        251
+      ],
+      "target": [
+        997,
+        252,
+        1,
+        252
+      ]
+    },
+    {
+      "kind": "L",
+      "source": [
+        997,
+        251,
+        251,
+        1
+      ],
+      "target": [
+        997,
+        252,
+        252,
+        1
+      ]
+    },
+    {
+      "kind": "J",
+      "source": [
+        1753,
+        440,
+        1,
+        20
+      ],
+      "target": [
+        1753,
+        441,
+        1,
+        21
+      ]
+    },
+    {
+      "kind": "L",
+      "source": [
+        1753,
+        440,
+        20,
+        1
+      ],
+      "target": [
+        1753,
+        441,
+        21,
+        1
+      ]
+    }
+  ],
+  "stronger_verified_consequence": "The graph is a directed matching: components consist of isolated vertices or one directed edge.",
+  "J_formulas": {
+    "divisor_complement": "u->N/u",
+    "reciprocal_complement": "x->1/(N*x)",
+    "conjugate_reciprocal_map": "x->x/(1-c*x)",
+    "exact_divisor_return": "u->u-c, for u|N,u>c,u-c|M",
+    "inverse_on_return": "v->v+c, with v|M,v+c>0,v+c|N"
+  },
+  "scope_limit": "Does not exclude other arithmetic transport maps or establish a global shell occupancy result.",
+  "source_records": [
+    {
+      "path": "bounded_transport.tex",
+      "sha256": "9bf5bee6e83d424eed62a9682fa5e3c95ed5438602d34290fb93855eb031fb9a"
+    }
+  ],
+  "manuscript_inspected_utc": "2026-09-08T16:33:23.124399+00:00",
+  "clarifications": [],
+  "scope_blocks": [
+    {
+      "path": "bounded_transport.tex",
+      "label": "thm:no-two-shears",
+      "start_line": 883,
+      "end_line": 952,
+      "sha256_normalized_lf_utf8": "e997d1714b39f48bc70efb1d600f22a9ad13c12e0401ddcdc36034351f3e4294"
+    },
+    {
+      "path": "bounded_transport.tex",
+      "label": "prop:affine-point",
+      "start_line": 1269,
+      "end_line": 1327,
+      "sha256_normalized_lf_utf8": "53a0287347d8a970ae430dd8754cca2052dd09bad9f0d3bb9bf0a18d0a0c1552"
+    },
+    {
+      "path": "bounded_transport.tex",
+      "label": "thm:full-connes-shear",
+      "start_line": 1329,
+      "end_line": 1402,
+      "sha256_normalized_lf_utf8": "0d80b0f638406a2b3643107b9d5a60bd8fd335ae993016ce7cfdd8cd86ac4c6e"
+    },
+    {
+      "path": "bounded_transport.tex",
+      "label": "eq:conjugate-affine and its domain, inverse, complement proof, p1753 example",
+      "start_line": 1404,
+      "end_line": 1466,
+      "sha256_normalized_lf_utf8": "dcf4d09ebe680c68223d6ea3d73c326af4367b65fa504db9f9073c7ad8447bc5"
+    }
+  ],
+  "provisional_source_history": [
+    {
+      "status": "verified_with_J_orientation_clarification",
+      "source_records": [
+        {
+          "path": "bounded_transport.tex",
+          "sha256": "9bf5bee6e83d424eed62a9682fa5e3c95ed5438602d34290fb93855eb031fb9a"
+        }
+      ],
+      "scope_blocks": [
+        {
+          "path": "bounded_transport.tex",
+          "label": "thm:no-two-shears",
+          "start_line": 883,
+          "end_line": 952,
+          "sha256_normalized_lf_utf8": "e997d1714b39f48bc70efb1d600f22a9ad13c12e0401ddcdc36034351f3e4294"
+        },
+        {
+          "path": "bounded_transport.tex",
+          "label": "prop:affine-point",
+          "start_line": 1269,
+          "end_line": 1327,
+          "sha256_normalized_lf_utf8": "53a0287347d8a970ae430dd8754cca2052dd09bad9f0d3bb9bf0a18d0a0c1552"
+        },
+        {
+          "path": "bounded_transport.tex",
+          "label": "thm:full-connes-shear",
+          "start_line": 1329,
+          "end_line": 1402,
+          "sha256_normalized_lf_utf8": "0d80b0f638406a2b3643107b9d5a60bd8fd335ae993016ce7cfdd8cd86ac4c6e"
+        }
+      ]
+    }
+  ],
+  "resolved_clarifications": [
+    {
+      "label": "thm:full-connes-shear",
+      "location": "Final J-edge sentence in its proof",
+      "kind": "Explicit orientation formula needed",
+      "statement": "The displayed theorem is correct for L. The J analogue must use kappa_M o Psi o kappa_N, with kappa_N(x)=1/(N*x); it is x->x/(1-c*x), equivalently divisor u->u-c. Direct Psi on the J divisor is false.",
+      "counterexample": {
+        "p": 1753,
+        "a": 440,
+        "b": 441,
+        "m": 20,
+        "c": 1,
+        "J_source_divisor": 22,
+        "J_target_divisor": 21,
+        "direct_Psi_result": "419/9261",
+        "required_result": "1/21"
+      },
+      "resolution": "Final source explicitly defines the reciprocal-divisor involution, equation eq:conjugate-affine, exact positive domain, inverse, complement orientation, and p1753 example. Independently reread and verified."
+    }
+  ],
+  "final_source_findings": {
+    "directed_matching": "proved with exact indegree/outdegree and no-two-path argument",
+    "affine_zero_fibre": "{c/N}",
+    "affine_positive_image_domain": "{x in H_N:N*x>c}",
+    "uncorrected_c_positive_L_return": "none, because e>1 divides a and gcd(a,a+1)=1",
+    "J_involution_domain": "positive reciprocal-divisor locus; not arbitrary H_N",
+    "J_map_inverse_and_marks": "fully explicit and verified",
+    "p1753_example": "prime specialization, original shells, L/J reciprocal maps and denominator triples all correct"
+  }
+}

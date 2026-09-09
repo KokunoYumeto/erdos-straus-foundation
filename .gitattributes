@@ -1,0 +1,7 @@
+# The imported edition is a byte-exact publication artifact, including line endings.
+research/expanded-2026-09-08/exact_bounded_transport_72/** -text -whitespace
+/*.md text eol=lf
+polyclank/*.json text eol=lf
+polyclank/evidence/*.json -text
+tools/*.py text eol=lf
+workbench.json text eol=lf

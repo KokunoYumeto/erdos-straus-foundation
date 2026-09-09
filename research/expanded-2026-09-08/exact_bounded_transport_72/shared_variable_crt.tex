@@ -1,0 +1,563 @@
+\section{The colleague's shared-variable CRT construction, equations (78)--(98)}
+\label{sec:shared-variable-crt}
+
+The additional colleague attachment relayed by the user continues
+equations (71)--(100).  It was read in full.  We retain its original
+equation numbers in the attributions below.  The results of this
+section prove the complete input and output CRT fibres in
+(78)--(80) and (96), and construct all the bounded auxiliary
+coordinates needed to make (98) an exact theorem with computable
+positive integer returns.  No assertion in the attachment is
+accepted merely because it has a theorem-status label.
+
+\subsection{Affine input and prescribed output classes}
+
+\begin{proposition}[Complete fibres for source equations (78)--(80)]
+\label{prop:input-crt}
+Fix a positive integer \(F\) and finitely many
+\(\lambda_i,\beta_i\in\Z,\ m_i\in\Z_{>0}\).
+The source choice \(F=p!\prod_\nu|E_\nu(p)|\), with
+each \(E_\nu(p)\ne0\), is retained as a particular input.
+The full input system is
+\[
+ X\equiv0\pmod{6F},\qquad
+ \lambda_iX\equiv\beta_i\pmod{m_i}.
+\]
+Put \(g_i=\gcd(\lambda_i,m_i)\).  If some \(g_i\nmid\beta_i\),
+the system is empty.  Otherwise let
+\[
+ n_i=m_i/g_i,\qquad
+ a_i\equiv(\lambda_i/g_i)^{-1}(\beta_i/g_i)\pmod{n_i},
+ \quad 0\le a_i<n_i,
+\]
+where \(a_i=0\) when \(n_i=1\).
+It is solvable if and only if
+\[
+ \gcd(n_i,n_j)\mid a_i-a_j\quad\text{for every }i,j,
+ \qquad \gcd(6F,n_i)\mid a_i\quad\text{for every }i.
+\]
+When these tests pass, the merge (80), with its stipulated
+zero step for reduced modulus one, constructs a unique
+residue \(a\in\{0,\ldots,M-1\}\), where
+\(M=\lcm(6F,n_1,\ldots,n_s)\).  All integer solutions are
+\(a+M\Z\); the associated homogeneous kernel is \(M\Z\).
+Its positive solutions and any bounded intersection are exactly
+\[
+ \{a+Mt:t\in\Z,\ t\ge\lfloor-a/M\rfloor+1\},
+\]
+\[
+ \{a+Mt:\lceil(U-a)/M\rceil\le t\le
+                     \lfloor(V-a)/M\rfloor\}\quad(U\le V).
+\]
+The inverse lift parameter is \(t=(X-a)/M\).
+In particular \(X=a+M>0\) satisfies every original condition.
+\end{proposition}
+\begin{proof}
+The coefficient reduction, including \(\lambda_i=0\) and
+\(n_i=1\), was proved in Theorem~\ref{thm:divisor-crt}.
+The two-residue merge and its full inverse were proved in
+Proposition~\ref{prop:crt}.  Necessity of the pairwise tests
+follows by subtracting any two required congruences.
+
+Here is a proof that those pairwise tests suffice for the
+successive merges, even when the moduli overlap.
+Suppose the previously merged modulus is
+\(M_0=\lcm(d_0,\ldots,d_k)\), with merged residue \(a_0\);
+include \(d_0=6F\) and its zero residue in this list.
+For a new residue \(b\pmod n\), consider any prime \(\ell\).
+Choose a previous \(d_i\) whose \(\ell\)-valuation is the
+largest of the previous valuations.  The common exponent in
+\(\gcd(M_0,n)\) is
+\(\min(v_\ell(d_i),v_\ell(n))\).
+The pairwise condition says that this power divides the
+difference between \(b\) and the residue at \(d_i\).
+Since \(a_0\) agrees with that residue modulo \(d_i\),
+the same power divides \(b-a_0\).
+Doing this at every prime proves
+\(\gcd(M_0,n)\mid b-a_0\), so the next merge is allowed.
+Induction proves all merges.
+
+For the merge, put \(g=\gcd(M_0,n)\) and
+\[
+ h=\operatorname{rem}_{n/g}
+       \left((M_0/g)^{-1}(b-a_0)/g\right).
+\]
+Then \(a_1=a_0+M_0h\) has both required residues and
+the new modulus is \(M_1=M_0n/g\).
+If \(0\le a_0<M_0\), the range \(0\le h<n/g\)
+gives \(0\le a_1<M_1\).  Thus the claimed representative
+range is retained, including \(h=0\) when \(n/g=1\).
+The full kernel and fibres follow from the two-residue
+proof and induction.  Finally dividing the inequalities
+\(0<a+Mt\) or \(U\le a+Mt\le V\) by positive \(M\)
+gives precisely the stated integer parameter bounds.
+\end{proof}
+
+\begin{proposition}[Prescribed output compatibility and its exact obstruction]
+\label{prop:output-crt}
+Retain a positive integer seed from the colleague's (88):
+\[
+ p=12h+1,\quad \varepsilon\in\{0,1\},\quad
+ A,B,C,D_p>0,\quad
+ 4ABCD_p=A+p^{1-\varepsilon}B+pC.
+\]
+Put
+\[
+ K_0=4ABC,\quad
+ \Theta=C+(1-\varepsilon)B,\quad
+ \Omega=A+\varepsilon B,\quad
+ g=\gcd(K_0,\Theta),\quad m=K_0/g.
+\]
+Here \(\Theta\) is the scalar from source equation (88);
+it is distinct from the unary bijection of
+Theorem~\ref{thm:unary-box}.
+For every integer \(q\),
+\[
+ D_q=(\Omega+q\Theta)/K_0\in\Z
+             \quad\Longleftrightarrow\quad q\equiv p\pmod m .
+\]
+For any \(\mathcal D>0\), the simultaneous output
+\(q\equiv1\pmod{\mathcal D}\), \(D_q\in\Z\)
+is possible exactly when
+\[
+ d:=\gcd(\mathcal D,m)\mid p-1.
+\]
+When this passes, one complete representative and modulus are
+\[
+ q_0=1+\mathcal D
+  \operatorname{rem}_{m/d}
+    \left((\mathcal D/d)^{-1}(p-1)/d\right),\qquad
+ L_{\rm out}=\lcm(\mathcal D,m).
+\]
+The remainder is zero when \(m/d=1\).
+Every integer output is \(q_0+L_{\rm out}t\), \(t\in\Z\);
+its inverse parameter is \((q-q_0)/L_{\rm out}\).
+All positive or bounded outputs are obtained by imposing
+the corresponding exact linear bounds on \(t\), as above.
+
+The obstruction has the additional exact form
+\[
+ \operatorname{den}\left(\frac{A+B+C}{4ABC}\right)
+       =\frac{m}{\gcd(m,p-1)}>1,
+\]
+where \(\operatorname{den}\) means the positive denominator
+of the reduced rational number.  Thus \(m\nmid p-1\);
+\(\mathcal D=12\) is compatible, and any
+\(\mathcal D\) divisible by \(m\) is incompatible.
+Equivalently, source equation (96) is exactly
+\[
+ \min(v_\ell(\mathcal D),v_\ell(m))
+                      \le v_\ell(p-1)\quad\text{for all primes }\ell.
+\]
+\end{proposition}
+\begin{proof}
+The seed identity is \(K_0D_p=\Omega+p\Theta\), so
+\(D_q=D_p+(q-p)\Theta/K_0\).
+Write \(\Theta=gw\); then \(\gcd(w,m)=1\).
+The extra summand is integral exactly when \(m\mid q-p\).
+Applying Proposition~\ref{prop:crt} to the two output
+classes proves the compatibility test, displayed lift,
+homogeneous kernel \(L_{\rm out}\Z\), and its full fibres.
+Unique prime factorization proves the valuation form.
+
+At \(q=1\), the same retained identity gives
+\[
+ \frac{A+B+C}{4ABC}
+        =D_p-\frac{(p-1)w}{m}.
+\]
+Since \(w,m\) are coprime, its reduced denominator is
+\(m/\gcd(m,p-1)\).
+Each of \(A,B,C\) is at most \(ABC\), and all are positive;
+hence the left side lies in \((0,3/4]\).
+It is not an integer, which proves the strict inequality
+for the denominator and all stated incompatibilities.
+For \(\mathcal D=12\), its gcd with \(m\) divides \(12\),
+which divides \(p-1\), proving that compatibility.
+
+These calculations prescribe integer output classes.
+They neither replace the condition that an output be prime
+nor show that a prime divisor of one chosen cyclotomic
+value belongs to the prescribed class. The exact incidence
+between these two objects, with all input fibres and original
+integer witnesses, is computed in the next theorem.
+\end{proof}
+\input{input_output_incidence.tex}
+
+\subsection{Canonical bounded auxiliary coordinates}
+
+Fix \(p\) throughout the following construction; polynomial
+coefficients may be specified integers depending on that fixed \(p\).
+Let the original common variables be
+\(x=(x_1,\ldots,x_n)\in\Z^n\), with
+\[
+ l_v\le x_v\le u_v,\qquad
+ B_v=\max(|l_v|,|u_v|).
+\]
+Retain any specified decidable admissibility condition
+\(\mathcal A(x)\) on this box, such as the prime label,
+the exact shell range, the code decoder, or the valuation budgets.
+Its full truth is always tested on one common integer tuple.
+Consider a finite Boolean expression \(\Phi\) built from
+polynomial equalities, inequalities, and divisibilities
+\(d(x)\mid f(x)\), with \(d(x)>0\) on the retained domain.
+Comparisons of two polynomials are expressed by their signed
+difference, and a congruence is the corresponding divisibility
+of that difference.  Implications and biconditionals are
+included as Boolean connectives, rather than imposing
+either side independently.
+
+For each polynomial \(f=\sum_\alpha c_\alpha x^\alpha\),
+define the explicit nonnegative integer bound
+\[
+ F_f=\sum_\alpha|c_\alpha|\prod_v B_v^{\alpha_v}.
+\]
+Then \(|f(x)|\le F_f\) throughout the original box.
+A factor \(B_v^0\) is one, including when \(B_v=0\).
+
+\begin{lemma}[Unique bounded sign and quotient encoding]
+\label{lem:canonical-auxiliary}
+The preceding finite truth system admits an explicit polynomial
+residual system on a finite augmented box with these properties:
+each admissible original tuple has exactly one auxiliary
+extension satisfying the residual equations; that extension
+records its exact truth bits; and its coordinates have the
+following proved bounds.
+
+For a sign test on \(f\), introduce
+\(s_-,s_0,s_+\in\{0,1\}\) and
+\(0\le t_-,t_+\le\max(F_f-1,0)\).
+Use the residual equations
+\begin{align}
+ s_-+s_0+s_+-1&=0,\notag\\
+ f-s_+(t_++1)+s_-(t_-+1)&=0,\label{eq:sign-encoding}\\
+ (1-s_+)t_+&=0,\qquad(1-s_-)t_-=0.\notag
+\end{align}
+The bits for \(f<0,f=0,f>0\) are respectively
+\(s_-,s_0,s_+\).
+
+For \(d(x)\mid f(x)\), let \(G=\max(1,F_d)\ge d(x)\)
+be the positive integer bound obtained from the absolute
+coefficient sum for \(d\) on the original box.  Introduce
+\[
+ -F_f\le q\le F_f,\qquad 0\le r,s\le G-1,
+\]
+and residual equations
+\begin{equation}\label{eq:quotient-encoding}
+ f-dq-r=0,\qquad d-1-r-s=0.
+\end{equation}
+Then \(q=\lfloor f/d\rfloor\), \(r=f-dq\) is the
+canonical remainder and \(s=d-1-r\).  Apply
+\eqref{eq:sign-encoding} to \(r\), with bound \(G-1\);
+its zero bit is exactly the divisibility bit.
+All original Boolean operations are then evaluated once on
+these common bits.  Alternatively, introducing one bit per
+Boolean subexpression and equating it to its integer truth
+polynomial gives a unique bounded polynomial extension as well.
+\end{lemma}
+\begin{proof}
+The first sign equation and the bit domains make exactly one
+of \(s_-,s_0,s_+\) equal one.  If it is \(s_+\), the
+other equations give \(f=t_++1>0\), \(t_-=0\), and
+\(t_+=f-1\).  If it is \(s_-\), they give
+\(f=-(t_-+1)<0\), \(t_+=0\), and \(t_-=-f-1\).
+If it is \(s_0\), both slacks are zero and \(f=0\).
+Conversely these unique choices satisfy all equations and
+bounds for each of the three signs; the cases \(F_f=0,1\)
+are included by the displayed maximum.  This proves both
+existence and uniqueness without an unspecified sign variable.
+
+For division, Euclidean division by \(d>0\) gives unique
+integers \(q,r\) with \(f=dq+r,\ 0\le r<d\).
+Because \(|f|\le F_f\) and \(d\ge1\), one has
+\(-F_f\le\lfloor f/d\rfloor\le F_f\).
+Also \(r,s=d-1-r\) lie in \([0,G-1]\).
+Conversely the two residual equations and nonnegative
+\(r,s\) imply \(0\le r\le d-1\), hence exactly that
+canonical Euclidean division, with unique \(s\).
+The sign proof applied to \(r\) proves the stated bit.
+The finitely many independent auxiliary blocks can therefore
+be attached to the same original tuple, each uniquely.
+The truth polynomials proved in the parent text take values
+zero or one on input bits; evaluating the expression from
+its leaves to its root gives a unique bit at every internal
+node.  This proves the optional polynomial extension and
+its bit bounds by induction on the expression.
+\end{proof}
+
+\subsection{The full bounded shared-variable theorem behind equation (98)}
+
+Let \(z=(x,\text{all auxiliaries})\) denote this complete
+augmented tuple, whose proved coordinate intervals are
+\(\ell_v\le z_v\le u_v\), \(1\le v\le k\).
+Keep the original admissibility condition on \(x\) and
+all indicated bit domains.  Put
+\(B'_v=\max(|\ell_v|,|u_v|)\).
+List all residual polynomials from
+Lemma~\ref{lem:canonical-auxiliary} and any required
+polynomial equalities as
+\[
+ f_a(z)=\sum_\alpha c_{a,\alpha}(p)z^\alpha.
+\]
+Required equalities have their own residuals; an equality
+appearing inside a negation or biconditional instead has
+its computed sign bit and is not incorrectly required true.
+Set
+\begin{equation}\label{eq:shared-residual-bound}
+ H=\max\left(\{0\}\cup
+   \left\{\sum_\alpha|c_{a,\alpha}(p)|
+                  \prod_v(B'_v)^{\alpha_v}:a\right\}\right).
+\end{equation}
+Let \(D_{\rm fixed}\ge1\) be any specified common multiple of
+all fixed congruence moduli, as in the colleague's equation (98).
+Their least common multiple is an explicit possible choice,
+with value one for an empty list.  Retain this chosen value and set
+\[
+ L=D_{\rm fixed}(H+1)>H.
+\]
+Variable divisor values are handled by
+\eqref{eq:quotient-encoding}; they are not treated as
+fixed factors of \(D_{\rm fixed}\).
+
+\begin{theorem}[Constructive bounded common lifts and global truth aggregation]
+\label{thm:shared-variable-crt}
+Choose any nonempty finite list of positive moduli
+\(d_1,\ldots,d_s\) whose least common multiple is \(L\).
+Overlapping noncoprime moduli are allowed.
+Define the vector residue map
+\[
+ \pi:\Z^k\longrightarrow\prod_{i=1}^s(\Z/d_i\Z)^k.
+\]
+Its image is exactly the tuples
+\(\boldsymbol r=(r_1,\ldots,r_s)\) whose corresponding
+coordinates agree modulo every \(\gcd(d_i,d_j)\).
+Its additive kernel is \(L\Z^k\).
+For each compatible tuple, scalar CRT in each coordinate
+constructs its representative
+\(r\in\{0,\ldots,L-1\}^k\), and its full integer fibre is
+\[
+ \pi^{-1}(\boldsymbol r)=r+L\Z^k.
+\]
+The complete bounded fibre is explicitly
+\begin{equation}\label{eq:shared-lift-fibre}
+ \left\{r+Lt:
+ \left\lceil\frac{\ell_v-r_v}{L}\right\rceil
+ \le t_v\le
+ \left\lfloor\frac{u_v-r_v}{L}\right\rfloor
+ \ \text{for every }v\right\}.
+\end{equation}
+Its inverse parameter is \(t_v=(z_v-r_v)/L\).
+Admissibility and bit-domain restrictions are imposed
+on these actual common lifts, retaining every one that passes.
+
+Enumerate exactly those compatible residue tuples for which
+\[
+ f_a(r_i)\equiv0\pmod{d_i}
+       \quad\text{for all residuals }a\text{ and all }i.
+\]
+For each such tuple, enumerate
+\eqref{eq:shared-lift-fibre}, retain the original admissibility
+and bit domains, and evaluate the complete Boolean expression
+\(\Phi\) on that common lift's canonical bits.
+Projection to \(x\) is a bijection from the retained tuples
+with \(\Phi=1\) to the original bounded truth-system
+solutions.  Its inverse is the unique auxiliary construction
+of Lemma~\ref{lem:canonical-auxiliary}.
+Thus this algorithm determines existence, all solutions and
+their exact integer lifts, including positive ES denominators
+when composed with Theorem~\ref{thm:unary-box}.
+
+In particular define
+\[
+ n(\boldsymbol r)=
+ \sum_{\substack{t\text{ in }\eqref{eq:shared-lift-fibre}}}
+ [\mathcal A(x(r+Lt))]
+ [\text{all specified bit domains at }r+Lt]\,
+ [\Phi(\text{recorded bits at }r+Lt)].
+\]
+For residue tuples that pass the local residual tests above,
+the exact solution count is \(\sum_{\boldsymbol r}n(\boldsymbol r)\).
+There is no duplicate projection in this count.
+The truth fibres, intersections, unions, multiplicities of union
+projections and inclusion--exclusion counts of
+Theorem~\ref{thm:unary-truth-fibres} hold here on this same
+solution domain, with the same common lifted tuple.
+\end{theorem}
+\begin{proof}
+The pairwise sufficiency proof in
+Proposition~\ref{prop:input-crt}, applied in each coordinate,
+proves the residue image statement.  A vector maps to zero
+precisely when every coordinate is divisible by every \(d_i\),
+equivalently by \(L\); this proves the kernel.
+The coordinatewise CRT representative and kernel give all
+integer fibres and the displayed inverse.  Dividing the
+original interval inequalities by positive \(L\) proves
+\eqref{eq:shared-lift-fibre}, including empty intervals.
+The case \(L=1\) has the unique zero residue and
+kernel \(\Z^k\), so this description also includes it.
+
+Integer polynomials preserve congruences, since sums and
+products preserve them.  Therefore any common lift of a
+tuple passing all local residual tests satisfies
+\(L\mid f_a(z)\) for every \(a\).
+Throughout the proved augmented box,
+\eqref{eq:shared-residual-bound} gives
+\(|f_a(z)|\le H<L\).  The only multiple of positive
+\(L\) in that interval is zero; hence every residual
+vanishes as an integer.  Conversely vanishing integer
+residuals pass every local residual test.
+
+For an admissible retained lift, the canonical auxiliary
+lemma now proves that its recorded bits are the exact
+integer truth values of the original predicates, including
+all negative remainders and signs.  Thus the single
+evaluation \(\Phi=1\) is precisely the original Boolean
+requirement.  Every original solution has its unique
+auxiliary extension; reducing that extension modulo the
+\(d_i\) places it in one of the enumerated compatible
+tuples, and its unique lift parameter places it in
+\eqref{eq:shared-lift-fibre}.  None is lost.
+Conversely each retained lift projects to a solution.
+Two retained lifts cannot project to the same \(x\),
+because the auxiliary extension is unique, and one
+augmented vector has exactly one residue tuple and one
+parameter vector \(t\).  This proves both inverse
+compositions, the absence of duplicate projections,
+and the count.
+
+All products and sums are finite: there are at most
+\(L^k\) compatible residue tuples, and each coordinate
+interval in the bounded fibre is finite.
+Thus this is a terminating exact construction, even if
+its enumeration is large.  Applying the previously proved
+set-fibre identities on these retained tuples proves
+the final union and intersection assertions.
+\end{proof}
+
+Two distinctions in the literal content of (98) are essential
+and are now calculated, rather than left as lifting assumptions.
+First, \(L>H\) makes residual zero-detection exact but need not
+make coordinate reduction injective.  For a zero residual,
+\(D_{\rm fixed}=2,\ H=0,\ L=2\) and \(-2\le x\le2\),
+the zero residue has precisely the three lifts \(-2,0,2\).
+Formula \eqref{eq:shared-lift-fibre} returns all three.
+Second, a negated composite divisibility is tested after
+global aggregation.  In the original shell
+\(p=13,a=7,R=15,u=1\), one has \(4u+1=5\):
+the congruence passes modulo five and fails modulo three.
+Thus \(\neg(15\mid4u+1)\) is true, but
+\(\neg(5\mid4u+1)\land\neg(3\mid4u+1)\) is false.
+A canonical remainder bit, or the exact global truth
+test on the same lift, preserves this difference.
+
+To apply the theorem directly to the complete ES system,
+take as original finite domain the unary codes
+\(0\le c<N_{\rm code}\) with their exact decoded budget
+conditions, or the disjoint tagged valuation boxes of
+Theorem~\ref{thm:unary-box}.  Retain every component label,
+code, exponent and ordering.  Theorem~\ref{thm:unary-truth-fibres}
+evaluates arbitrary additional specified predicates there.
+For polynomial residual evaluation, finite decoded
+coordinates may instead be included as original bounded
+variables with the linear code identity
+\eqref{eq:unary-code}, their rectangle bounds, and the
+proved integer admissibility tests.
+The division and sign construction above supplies every
+auxiliary bound required in (98).
+The unique code and divisor inverse then gives the original
+positive integer denominators, with the exact orientation
+in \eqref{eq:unary-integer-lift}.
+This proves the requested composition while retaining the
+full \(Q_p\) range; \(A\le2\) remains a separate optional
+predicate on this same domain.
+\begin{corollary}[The actual full primewise system as one polynomial truth system]
+\label{cor:actual-prime-truth-system}
+For the original prime \(p=12h+1\), use the single rectangle
+\[
+ 0\le j<6h,\quad 1\le A,B\le M_0=9h,\quad
+ \varepsilon\in\{0,1\}.
+\]
+Set, without changing any original shell variable,
+\[
+ a=3h+j+1,\quad R=4j+3,\quad S=pa,\quad
+ T=A+\bigl(p+(1-p)\varepsilon\bigr)B.
+\]
+The following finite Boolean expression consists solely of
+divisibility atoms on that same tuple:
+\begin{equation}\label{eq:actual-prime-boolean}
+ \Phi_{\rm ES}=
+ [AB\mid a]\ \land\
+ \bigwedge_{d=2}^{M_0}
+       \neg\bigl([d\mid A]\land[d\mid B]\bigr)
+       \ \land\ [R\mid T].
+\end{equation}
+Its successful tuples are exactly the full unary hit set
+\(\mathcal C_p^+\) under \eqref{eq:unary-code}.
+All divisors in these tests are positive throughout the rectangle.
+The canonical quotient construction in
+Lemma~\ref{lem:canonical-auxiliary}, applied to \(a/(AB)\)
+and \(T/R\), gives the exact variables \(D,C\).
+On the truth set they satisfy the explicit bounds
+\[
+ 1\le D\le M_0,\qquad
+ 1\le C\le C_{\max}:=\left\lfloor\frac{(p+1)M_0}{3}\right\rfloor .
+\]
+Consequently the original positive integer lifts satisfy
+\[
+ a\le M_0,\quad u=B^2D\le a^2\le M_0^2,\qquad
+ y,z\le pM_0^2C_{\max}.
+\]
+Appending any specified finite collection of equalities,
+positive-divisor congruences, inequalities, implications or
+biconditionals on these reconstructed coordinates therefore
+gives a fully bounded shared-variable system to which
+Theorem~\ref{thm:shared-variable-crt} applies with all
+auxiliary bounds constructed above.
+The full tagged count and \(2Q_p\) are the respective
+unweighted and weighted sums already proved in
+Theorem~\ref{thm:unary-truth-fibres}.
+\end{corollary}
+\begin{proof}
+For \(\varepsilon=0,1\), the polynomial
+\(p+(1-p)\varepsilon\) equals \(p^{1-\varepsilon}\)
+exactly.  Thus \(T\) is the original positive gate numerator.
+Also \(a>0,AB>0,R\ge3\), and each fixed \(d\ge2\) is
+positive.  If \(\gcd(A,B)>1\), that gcd is an integer in
+\([2,M_0]\) dividing both coordinates, so the corresponding
+conjunct in \eqref{eq:actual-prime-boolean} fails.
+Conversely a failing conjunct supplies a common divisor
+greater than one.  The middle conjunction is therefore
+exactly \(\gcd(A,B)=1\), proving that the whole expression
+is precisely \(\chi_p=1\).
+
+At a hit the two canonical remainders are zero, so their
+canonical quotients are \(D=a/(AB)\) and \(C=T/R\).
+They are positive because their numerators are positive.
+The rectangle gives \(D\le a\le M_0\) and
+\(T\le A+pB\le(p+1)M_0\); division by \(R\ge3\)
+proves the \(C\) bound.  Since \(a=ABD\),
+\[
+ u=B^2D\mid A^2B^2D^2=a^2
+\]
+with exact positive quotient \(A^2D\), proving the
+retained divisor budget and its numerical bound.
+The reconstruction \eqref{eq:unary-integer-lift},
+together with \(p^\varepsilon\le p\) and the established
+bounds on \(A,B,C,D\), proves the bounds for both
+\(y=p^\varepsilon ACD\) and \(z=pBCD\).
+These formulas have already been proved to give the
+original ES identity with its exact ordered inverse.
+
+For an appended predicate use these same canonical \(C,D\)
+and reconstructed integer coordinates.  Every polynomial
+in them has a computable coefficient bound from the
+displayed finite intervals; the sign and division lemma
+then supplies bounded unique auxiliaries for that predicate.
+Equivalently, substitute the coordinate polynomials
+\(y=(1+(p-1)\varepsilon)ACD\) and \(z=pBCD\),
+retaining their original values and their proved bounds.
+The code identity gives a unique code and inverse, so no
+additional tuple is introduced by using either presentation.
+Applying the shared-variable theorem proves all lifts and
+truth fibres; the previously proved multiplicities give
+the final count statements.
+\end{proof}

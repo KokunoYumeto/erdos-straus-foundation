@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "review": "positive-shear and arithmetic-site marked successor",
+  "created_utc": "2026-09-08T16:15:58.308129+00:00",
+  "status": "passed_no_mathematical_errors_found",
+  "scope": [
+    "bounded_transport.tex:thm:shear",
+    "bounded_transport.tex:cor:family",
+    "connes_reading/connes_primitive_intersections.tex:thm:connes-marked-successor"
+  ],
+  "sources": [
+    {
+      "path": "bounded_transport.tex",
+      "sha256": "d93f87e11cea53d5733d341c3f29947b7c21ba906e3729507a862a96a44351f1",
+      "initial_sha256": "aa254ce6a313865ba06648c18d88476c3320ca522a5265f76de33aa293215afb"
+    },
+    {
+      "path": "connes_reading/connes_primitive_intersections.tex",
+      "sha256": "77023419fd8d1dba895c7b4f765b294d86caacd748f13e6c16be4a07c211ea8c",
+      "initial_sha256": "77023419fd8d1dba895c7b4f765b294d86caacd748f13e6c16be4a07c211ea8c"
+    }
+  ],
+  "findings": [],
+  "checks": {
+    "direct_exhaustion": {
+      "prime_max": 1753,
+      "all_allowed_adjacent_shells": true,
+      "all_source_primitive_divisor_pairs": true,
+      "method": "Direct divisor enumeration; test L and J target divisibility/congruences independently of parameter formulas; reconstruct exact Fraction identities."
+    },
+    "parameter_grid": {
+      "R_min": 3,
+      "R_max": 99,
+      "R_step": 4,
+      "t_min": 0,
+      "t_max": 9,
+      "c_min": 0,
+      "c_max": 5
+    },
+    "corollary_c_range": [
+      0,
+      30
+    ],
+    "counts": {
+      "primes": 63,
+      "adjacent_shells": 26439,
+      "source_pairs": 3956,
+      "L_successes": 4,
+      "J_successes": 4,
+      "marked_successes": 3,
+      "parameter_candidates": 1500,
+      "prime_parameter_candidates": 93,
+      "corollary_prime_cases": 18
+    }
+  },
+  "shear_examples": [
+    {
+      "p": 73,
+      "a": 20,
+      "R": 7,
+      "m": 20,
+      "t": 0,
+      "c": 0,
+      "source": [
+        20,
+        4380,
+        219
+      ],
+      "target": [
+        21,
+        3066,
+        146
+      ]
+    },
+    {
+      "p": 433,
+      "a": 113,
+      "R": 19,
+      "m": 113,
+      "t": 0,
+      "c": 0,
+      "source": [
+        113,
+        293574,
+        2598
+      ],
+      "target": [
+        114,
+        246810,
+        2165
+      ]
+    },
+    {
+      "p": 997,
+      "a": 251,
+      "R": 7,
+      "m": 251,
+      "t": 3,
+      "c": 0,
+      "source": [
+        251,
+        9008892,
+        35892
+      ],
+      "target": [
+        252,
+        5778612,
+        22931
+      ]
+    },
+    {
+      "p": 1753,
+      "a": 440,
+      "R": 7,
+      "m": 20,
+      "t": 0,
+      "c": 1,
+      "source": [
+        440,
+        2313960,
+        115698
+      ],
+      "target": [
+        441,
+        1546146,
+        73626
+      ]
+    }
+  ],
+  "marked_examples": [
+    {
+      "p": 73,
+      "a": 20,
+      "R": 7,
+      "t": 0
+    },
+    {
+      "p": 433,
+      "a": 113,
+      "R": 19,
+      "t": 0
+    },
+    {
+      "p": 997,
+      "a": 251,
+      "R": 7,
+      "t": 3
+    }
+  ],
+  "exact_comparison": {
+    "marked_successor_general_shear_subfamily": "c=0, equivalently m=a",
+    "general_middle_source_divisor": "u=a*m",
+    "general_middle_target_divisor": "v=(a+1)*(m+1)",
+    "reciprocal_index_source": "e=a/m=1+c*(m+1)",
+    "reciprocal_index_target": "e_next=(a+1)/(m+1)=1+c*m",
+    "difference": "e-e_next=c",
+    "isomorphism_integer_return": "iff c=0, since e|a and gcd(a,a+1)=1"
+  },
+  "limits": "Finite computations supplement, and do not replace, the algebraic proof review. No universal shell occupancy or prime infinitude is inferred.",
+  "source_recheck_utc": "2026-09-08T16:20:10.565238+00:00",
+  "source_recheck_note": "An independent concurrent edit changed earlier parts of bounded_transport.tex during review. The complete shear theorem and corollary were reread and their statements and proofs remain as reviewed. Stable labels and exact current scope-block hashes are supplied.",
+  "scope_blocks": [
+    {
+      "path": "bounded_transport.tex",
+      "label": "thm:shear",
+      "start_line": 796,
+      "end_line": 851,
+      "sha256_normalized_lf_utf8": "cd516d8c92631e302e44a45580684cda9ece784114cde520d16a4afa5dd784d4"
+    },
+    {
+      "path": "bounded_transport.tex",
+      "label": "cor:family",
+      "start_line": 853,
+      "end_line": 881,
+      "sha256_normalized_lf_utf8": "eadf11ae0fe97b1a0f2caf93d3ab0f24735762ac7cc6ab9f0f82695e70a0c60d"
+    },
+    {
+      "path": "connes_reading/connes_primitive_intersections.tex",
+      "label": "thm:connes-marked-successor",
+      "start_line": 325,
+      "end_line": 427,
+      "sha256_normalized_lf_utf8": "dbc25495a5812a66d6752aa07a8315f739b58a7e0b8717fd571d216f274eef47"
+    }
+  ]
+}

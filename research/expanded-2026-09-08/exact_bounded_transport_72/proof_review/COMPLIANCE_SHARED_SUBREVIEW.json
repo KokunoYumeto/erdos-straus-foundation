@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-08",
+  "scope": "Independent audit of the current unary_boolean_transport.tex and shared_variable_crt.tex against preservation of information, complete calculation, and exact typed maps or computed obstructions between distinguished presentations.",
+  "files_read_in_full": [
+    {
+      "path": "unary_boolean_transport.tex",
+      "sha256": "6ee796fbc0a9ac286f9372e8f7345728dd8f785913dd79211e422ebdcf55af57"
+    },
+    {
+      "path": "shared_variable_crt.tex",
+      "sha256": "e944046560f152f76a24435052ea4e63153dbaaa8ec14084a72c49dd36e9750b"
+    }
+  ],
+  "additional_primary_source_read_in_full": {
+    "source": "a7b3a920-42b4-454c-b1ca-ddccbfbeaafb/pasted-text.txt",
+    "equations": "71-100",
+    "sha256_as_recorded_in_corpus": "69eaaa97ddceccbe6d688b8e66fe1a44fda9fc085f0ec3cc671cfacbffdfdcb1"
+  },
+  "verdict": "One narrow compliance gap in explicit input-to-output composition; no incorrect existing theorem or information-losing unary/shared-variable map found.",
+  "checks": [
+    {
+      "topic": "Unary tagged finite box and ordered denominator inverse",
+      "file": "unary_boolean_transport.tex",
+      "lines": [
+        69,
+        164
+      ],
+      "result": "pass",
+      "reason": "Both inverse compositions retain the shell, tag, exponents, D, u, and ordering; the exterior transpose and middle exchange are explicit."
+    },
+    {
+      "topic": "Truth/count projections and complete fibres",
+      "file": "unary_boolean_transport.tex",
+      "lines": [
+        166,
+        312
+      ],
+      "result": "pass",
+      "reason": "Counts are derived from retained indexed solution sets; no inverse from a scalar count is claimed. Exact truth fibres, union multiplicities, intersection diagonals, full lifts, and middle-invariance restriction are present."
+    },
+    {
+      "topic": "Partial domains and variable divisor positivity",
+      "files": [
+        "unary_boolean_transport.tex",
+        "shared_variable_crt.tex"
+      ],
+      "lines": [
+        [
+          232,
+          235
+        ],
+        [
+          194,
+          204
+        ],
+        [
+          470,
+          562
+        ]
+      ],
+      "result": "pass",
+      "reason": "Reconstructed-coordinate predicates are evaluated on the passing domain; variable divisors must remain positive on the retained admissible domain. Off-hit zero divisors are not authorized by the construction."
+    },
+    {
+      "topic": "Canonical auxiliaries and vector CRT fibres",
+      "file": "shared_variable_crt.tex",
+      "lines": [
+        215,
+        434
+      ],
+      "result": "pass",
+      "reason": "Signs, inactive slacks, quotients and remainders have unique bounded extensions. Full lattice kernels and interval lift parameters are retained even when coordinate reduction is not injective."
+    },
+    {
+      "topic": "Original primewise finite domain",
+      "file": "shared_variable_crt.tex",
+      "lines": [
+        470,
+        562
+      ],
+      "result": "pass",
+      "reason": "The full rectangle, prime p, shell range, both tags, finite coprimality predicate, and denominator bounds survive. A<=2 is optional."
+    }
+  ],
+  "findings": [
+    {
+      "id": "CSH-1",
+      "file": "shared_variable_crt.tex",
+      "lines": [
+        177,
+        181
+      ],
+      "kind": "missing concrete typed composition after a substantive distinction",
+      "existing_theorem_incorrect": false,
+      "universal_prime_coverage_required": false,
+      "description": "The distinction between prescribed integer output classes and prime divisors of a chosen cyclotomic input is printed without the exact surviving input/output incidence or a computed selected-factor obstruction. A generic additional-predicate reference does not instantiate that correspondence.",
+      "strongest_missing_map": "Incidence {(X,q): X lies in the complete positive/bounded input CRT class, q is prime, q divides X^4-X^2+1, q lies in the computed output CRT class}; input fibres are tested prime divisors, output fibres are disjoint noncoprime CRT lifts indexed by the roots of X^4-X^2+1 modulo q.",
+      "inverse_fibres": "For each q and compatible root rho, M_q=lcm(M,q), b_rho=a+M*rem_(q/g)((M/g)^(-1)*(rho-a)/g), g=gcd(M,q). Every bounded input is b_rho+M_q*t with exact ceil/floor bounds; inverse rho=rem_q(X), t=(X-b_rho)/M_q.",
+      "positive_return": "Append D_q=(Omega+q*Theta)/K0 and (a_q,y_q,z_q)=(A*B*D_q,q^epsilon*A*C*D_q,q*B*C*D_q). This is a graph bijection; all coordinates are positive integers and the ES identity follows from the retained seed numerator. Additional shell inequalities remain additional retained predicates.",
+      "computed_obstruction": {
+        "seed": {
+          "p": 13,
+          "A": 1,
+          "B": 2,
+          "C": 1,
+          "epsilon": 1,
+          "D_p": 2,
+          "a_p": 4
+        },
+        "m": 8,
+        "output_D": 12,
+        "output_q0": 13,
+        "output_modulus": 24,
+        "F": "13!",
+        "input_M": 37362124800,
+        "input_multiplier": 17,
+        "input_X": 635156121600,
+        "selected_prime_divisor": 73,
+        "roots_mod_73": [
+          3,
+          24,
+          49,
+          70
+        ],
+        "X_mod_73": 3,
+        "P_X_mod_73": 0,
+        "q_mod_12": 1,
+        "q_mod_8": 1,
+        "p_mod_8": 5,
+        "D_73": "19/2",
+        "interpretation": "The selected prime 73 fails the prescribed output class despite compatible CRT classes. This does not prove all prime divisors fail."
+      }
+    }
+  ],
+  "computation": {
+    "method": "Python exact integer arithmetic; fixed bounded example only",
+    "passed": true,
+    "lean_used": false,
+    "floating_point_used": false
+  },
+  "report": "proof_review/COMPLIANCE_SHARED_SUBREVIEW.md",
+  "manuscript_edits": false,
+  "prior_review_edits": false
+}

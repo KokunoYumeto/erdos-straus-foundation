@@ -1,0 +1,320 @@
+\subsection{An exact factor sieve in the first two original shells}
+
+Keep \(p=12h+1\) prime, \(h\ge1\), and put
+\(a_3=3h+1\), \(a_7=3h+2\). These are the original shells
+with residuals \(R_{a_3}=3\) and \(R_{a_7}=7\).
+They both lie in \(A_p\), and both are at most \(6h=(p-1)/2\).
+For either retained integer \(a\), write its actual prime factorization
+\(a=\prod_{\ell\mid a}\ell^{v_\ell}\). The exponent domain throughout
+is exactly
+\[
+ \mathcal B_a=\prod_{\ell\mid a}\{0,\ldots,2v_\ell\},\qquad
+ u(e)=\prod_{\ell\mid a}\ell^{e_\ell}.
+\]
+Unique prime factorization proves this is a bijection onto \(\Div(a^2)\),
+with inverse \(e_\ell=v_\ell(u)\). Every prime, exponent cap and
+integer \(a\) remains attached to the coordinates below.
+
+\begin{theorem}[The complete residual-three factor sieve]
+\label{thm:r3-factor-sieve}
+At \(a=a_3\), define
+\[
+ P_1=\prod_{\substack{\ell\mid a\\\ell\equiv1\ (3)}}(2v_\ell+1),
+ \qquad
+ P_2=\prod_{\substack{\ell\mid a\\\ell\equiv2\ (3)}}(2v_\ell+1).
+\]
+Empty products are one. The full exterior and middle sets coincide,
+and their complete exponent fibres are
+\[
+ E_a=M_a=
+ \left\{u(e):e\in\mathcal B_a,\quad
+           \sum_{\ell\equiv2\ (3)}e_\ell\equiv1\pmod2\right\}.
+\]
+In particular
+\[
+ |E_a|=|M_a|=\frac{P_1(P_2-1)}2,
+ \qquad |E_a|+\frac{|M_a|}{2}=\frac{3P_1(P_2-1)}4.
+\]
+The shell has a witness if and only if \(a\) has a prime divisor
+\(\ell\equiv2\pmod3\). Every such factor gives both channels
+with primitive layer \(A=1\), via
+\[
+ u=a\ell,\quad A=1,\quad B=\ell,\quad D=a/\ell,
+ \qquad C_0=(1+p\ell)/3,\quad C_1=(1+\ell)/3.
+\]
+Here the original tag \(\varepsilon=0\) uses \(C_0\), and
+\(\varepsilon=1\) uses \(C_1\); their respective ordered triples are
+\[
+ (a,C_0D,p\ell C_0D),\qquad
+ (a,pC_1D,p\ell C_1D).
+\]
+\end{theorem}
+\begin{proof}
+The identity \(a=3h+1\) gives \(a\equiv1\pmod3\), so no prime
+factor is three. The exterior condition \(3\mid4u+1\) and the
+middle condition \(3\mid u+a\) both say \(u\equiv2\pmod3\).
+Every factor \(\ell\equiv1\pmod3\) contributes one to the
+residue product, and every \(\ell\equiv2\pmod3\) contributes
+\((-1)^{e_\ell}\). This proves both inclusions in the displayed
+fibre equality, with the stated valuation inverse.
+
+There are \(P_2\) exponent choices on the second residue class.
+The number of even sums minus the number of odd sums equals
+\[
+ \prod_{\substack{\ell\mid a\\\ell\equiv2\ (3)}}
+       \left(\sum_{e=0}^{2v_\ell}(-1)^e\right)=1,
+\]
+because every inner alternating sum is one. Thus the odd sums
+number \((P_2-1)/2\); the first residue class independently
+contributes all \(P_1\) choices. This proves the cardinality.
+The complement \(u\mapsto a^2/u\) preserves the middle set:
+its residue is \(1/2=2\) modulo three. Its only positive fixed
+point would be \(u=a\), which has residue one and is absent.
+Hence \(|M_a|\) is even, and the displayed original weighted
+shell count is the stated integer.
+
+If there is no second-class factor, every exponent sum is zero
+and the fibre is empty. If \(\ell\equiv2\pmod3\) divides \(a\),
+the integer \(u=a\ell\) has exponent \(v_\ell+1\le2v_\ell\)
+at that prime and exponent \(v_t\) at every other prime \(t\).
+It belongs to \(\Div(a^2)\) and has residue two. Its coordinates
+satisfy \(a=ABD\), \(u=B^2D\), and \(\gcd(A,B)=1\) exactly.
+Both \(C_0,C_1\) are positive integers since \(p\equiv1\pmod3\)
+and \(\ell\equiv2\pmod3\). For each tag one has
+\(3C_\varepsilon=1+p^{1-\varepsilon}\ell\) and
+\(4a=p+3\). Multiplying gives
+\[
+ 4AB C_\varepsilon D
+   =A+p^{1-\varepsilon}B+pC_\varepsilon.
+\]
+Putting the three indicated reciprocals over \(pAB C_\varepsilon D\)
+therefore proves their sum is \(4/p\). This proves the complete
+arithmetic return with the original ordering and first denominator.
+\end{proof}
+
+\begin{theorem}[The complete residual-seven factor sieve]
+\label{thm:r7-factor-sieve}
+At \(a=a_7\), retain
+\[
+ n_3=\sum_{\substack{\ell\mid a\\\ell\equiv3\ (7)}}v_\ell,
+ \qquad
+ n_{24}=\sum_{\substack{\ell\mid a\\\ell\equiv2,4\ (7)}}v_\ell.
+\]
+Then \(E_a\cup M_a\ne\varnothing\) if and only if at least one
+of the following three explicitly computed predicates holds:
+\[
+ \begin{gathered}
+ \text{a prime divisor of }a\text{ is }5\text{ or }6\pmod7;\\
+ n_3\ge3;\qquad n_3\ge1\text{ and }n_{24}\ge1.
+ \end{gathered}
+\]
+The following choices give a witness in every passing case:
+\[
+ \begin{array}{c|c|c}
+ \text{retained factors or divisor}&u&\text{channel}\\ \hline
+ \ell\mid a,\ \ell\equiv5\ (7)&\ell&E_a\\
+ \ell\mid a,\ \ell\equiv6\ (7)&a\ell&M_a\\
+ d\mid a,\ d\text{ a product of three }3\ (7)\text{ prime factors}
+        &ad&M_a\\
+ \ell,t\mid a,\ \ell\equiv3\ (7),\ t\equiv2\ (7)
+        &a\ell t&M_a\\
+ \ell,t\mid a,\ \ell\equiv3\ (7),\ t\equiv4\ (7)
+        &a\ell/t&M_a
+ \end{array}
+\]
+The three factors defining \(d\) are counted with their original
+prime multiplicities. No factor is used more often than it divides \(a\).
+
+There is also an exact description of every witness, including those
+not selected by this table. Set
+\[
+ \lambda(1)=0,\quad\lambda(2)=2,\quad\lambda(3)=1,\quad
+ \lambda(4)=4,\quad\lambda(5)=5,\quad\lambda(6)=3.
+\]
+For each original prime \(\ell\mid a\), put
+\(\lambda_\ell=\lambda(\operatorname{rem}_7\ell)\), and put
+\(b=\sum_{\ell\mid a}\lambda_\ell v_\ell\) in \(\Z/6\Z\).
+The full fibres, with the original valuation inverse, are
+\[
+ E_a=\{u(e):e\in\mathcal B_a,\ \sum_\ell\lambda_\ell e_\ell=5\ (6)\},
+\]
+\[
+ M_a=\{u(e):e\in\mathcal B_a,\ \sum_\ell\lambda_\ell e_\ell=b+3\ (6)\}.
+\]
+In the finite group ring \(\Z[T]/(T^6-1)\), form
+\[
+ F_a(T)=\prod_{\ell\mid a}\sum_{e=0}^{2v_\ell}T^{\lambda_\ell e}
+        =\sum_{r=0}^5 c_rT^r.
+\]
+Then \(|E_a|=c_5\), \(|M_a|=c_{\operatorname{rem}_6(b+3)}\).
+Every coefficient counts its whole displayed exponent fibre; no
+exponent representative replaces the finite integer budget.
+\end{theorem}
+\begin{proof}
+The original unit calculation gives \(\gcd(a,7)=1\).
+Explicitly, if seven divided \(a\), then \(p=4a-7\) would be
+divisible by seven, contradicting primality and \(p\ge13\).
+The powers \(3^0,\ldots,3^5\) modulo seven are
+\(1,3,2,6,4,5\); the next power is one, and these six residues
+are distinct. They therefore enumerate every nonzero residue
+with the listed inverse \(\lambda\).
+Since \(4^{-1}=2\pmod7\), the exterior target is
+\(-4^{-1}=5=3^5\). The middle equation is \(u/a=-1=3^3\)
+in the unit group. Taking these exact finite-group coordinates
+proves the two displayed fibres. Expanding the finite product
+\(F_a\) chooses one original exponent at each prime; collecting
+terms with equal residues modulo six proves each count and its
+entire underlying fibre.
+
+Each table entry is a positive divisor of \(a^2\). For \(u=\ell\),
+the exponent is one at \(\ell\) and zero elsewhere. For \(u=a\ell\)
+the exponent at \(\ell\) increases from \(v_\ell\) to
+\(v_\ell+1\le2v_\ell\). If \(n_3\ge3\), select exactly three
+factors from the multiset having \(v_\ell\) copies of each
+\(3\pmod7\) prime. Their product \(d\) divides \(a\), so
+each exponent in \(ad\) is between \(v_\ell\) and \(2v_\ell\).
+For the last two rows \(\ell\ne t\), since their residues differ.
+For \(a\ell t\), both corresponding exponents increase by one
+within their budgets. For \(a\ell/t\), the \(\ell\)-exponent
+increases by one and the \(t\)-exponent decreases by one; the
+latter is nonnegative since \(t\mid a\). All other exponents
+remain exactly those of \(a\).
+
+The first entry has residue five, hence belongs to \(E_a\).
+The ratios \(u/a\) of the other entries have residues, in order,
+\[
+ 6,\qquad 3^3=6,\qquad3\cdot2=6,\qquad3/4=3\cdot2=6
+ \quad\pmod7.
+\]
+Thus they belong to \(M_a\). This proves sufficiency with full
+integer and exponent checks.
+
+For necessity suppose all three predicates fail. There is no prime
+factor with residue five or six. If \(n_3=0\), every prime factor
+has residue in \(H=\{1,2,4\}\). Direct multiplication modulo
+seven shows \(H\) is the subgroup generated by two, of order
+three. Every \(u\mid a^2\) and \(a\) itself then lie in \(H\).
+The exterior target five is outside \(H\), and the middle target
+\(-a\) is outside \(H\): otherwise its quotient by \(a\)
+would put \(-1=6\) in \(H\). Both channels are empty.
+
+The only remaining failed-predicate case has \(n_3=1\) or two
+and \(n_{24}=0\). Every prime factor now has residue one or
+three. Write \(e=\sum_{\ell\equiv3\ (7)}e_\ell\) for the
+sum of the actual divisor exponents. Its range is
+\(0\le e\le2n_3\le4\), and \(u\equiv3^e\pmod7\).
+No such exponent is five modulo six, so the exterior target
+is absent. For the middle condition,
+\(u/a\equiv3^{e-n_3}\), with \(-2\le e-n_3\le2\).
+None of these integers is three modulo six, so the middle
+target is absent. This proves necessity without enlarging
+the exponent intervals to their generated group.
+\end{proof}
+
+\begin{corollary}[The exact two-shell rejection set and integer reconstruction]
+\label{cor:two-shell-sieve-return}
+For every original prime \(p=12h+1\), the union of the two complete
+shell loci is empty exactly when both of the following hold:
+\[
+ \begin{gathered}
+ \text{every prime divisor of }3h+1\text{ is }1\pmod3;\\
+ \text{no prime divisor of }3h+2\text{ is }5\text{ or }6\pmod7,\qquad
+ n_3=0\ \text{or}\ (1\le n_3\le2\text{ and }n_{24}=0).
+ \end{gathered}
+\]
+The counts and complete exponent fibres in the preceding theorems
+give a sieve for these actual two shells for every such prime,
+without a numerical cutoff on \(p\). A surviving prime is one
+for which these two shells both fail; no assertion about the other
+original shells, or the number of surviving primes, is implied.
+
+For every retained passing pair \((\varepsilon,u)\), with
+\(\varepsilon=0\) for the exterior channel and one for the middle,
+set
+\[
+ g=\gcd(a,u),\quad A=a/g,\quad B=u/g,\quad D=g^2/u,\quad
+ C=(A+p^{1-\varepsilon}B)/R_a.
+\]
+These are positive integers and give the exact original ordered witness
+\[
+ (a,y,z)=(ABD,p^\varepsilon ACD,pBCD),\qquad
+ R_a=4a-p,\quad S_a=pa.
+\]
+The map from the retained tagged exponent vector to
+\((p,a,R_a,S_a,\varepsilon,u,A,B,C,D,y,z)\) has singleton fibres
+and inverse the original prime valuations of \(u\), retaining
+\(p,a,\varepsilon\). All constructed witnesses have
+\(a\le(p-1)/2\); membership in a smaller unary layer is imposed
+on the computed \(A\), not assumed for every table branch.
+\end{corollary}
+\begin{proof}
+Taking the conjunction of the two proved empty-fibre conditions
+gives exactly the displayed rejection set, in both directions.
+Each full locus remains available through its exponent fibre,
+so the rejection calculation has not discarded any unselected
+witness or any original prime factor.
+
+To prove the stated reconstruction directly, fix a prime \(\ell\)
+and write \(v=v_\ell(a)\), \(e=v_\ell(u)\), with \(0\le e\le2v\).
+Then \(v_\ell(g)=\min(v,e)\), and the exponent of \(g^2/u\)
+is \(2\min(v,e)-e\), which is \(e\ge0\) if \(e\le v\),
+and \(2v-e\ge0\) if \(e\ge v\). Thus \(D\) is a positive
+integer. The exact definitions give \(\gcd(A,B)=1\),
+\(a=ABD\), \(u=B^2D\); their inverses are the displayed
+formulas for \(g,A,B,D\).
+
+All of \(A,B,D\) are units modulo \(R_a\), because their
+prime factors divide \(a\), which is coprime to \(R_a\).
+For the exterior channel multiply \(4u+1\equiv0\) by \(A\):
+\[
+ A(4B^2D+1)=4aB+A\equiv pB+A\pmod{R_a}.
+\]
+Thus \(R_a\mid A+pB\). For the middle channel,
+\(u+a=BD(A+B)\), and the unit \(BD\) gives
+\(R_a\mid A+B\). These prove that \(C\) is a positive integer
+in each case, with no missing divisibility condition.
+Now \((4a-p)C=A+p^{1-\varepsilon}B\), hence
+\[
+ 4ABCD=A+p^{1-\varepsilon}B+pC.
+\]
+The three reciprocals, over the original common denominator
+\(pABCD\), have numerators \(pC,p^{1-\varepsilon}B,A\).
+Their sum is therefore \(4/p\), with precisely the asserted
+ordering and unchanged \(a,R_a,S_a\). Conversely the graph
+retains \(u\), so its original exponent vector and tag are
+recovered exactly and uniquely. Finally
+\(3h+1\le6h\) and \(3h+2\le6h\) for \(h\ge1\), proving
+the retained first-half bound. The integer \(A=a/g\) remains
+an explicit coordinate for any further layer condition.
+\end{proof}
+
+\paragraph{An occupied residual-seven shell outside the first two layers.}
+The prime \(p=373=12\cdot31+1\) has
+\(a_7=95=5\cdot19\). Primality is proved by the nonzero remainders
+\(1,1,3,2,10,9,16,12\) on division by, respectively,
+\(2,3,5,7,11,13,17,19\), all the primes at most
+\(\sqrt{373}<20\). Both factors of \(a_7\) are five modulo seven.
+Every original divisor is uniquely \(u=5^i19^j\),
+\(0\le i,j\le2\), and its residue is \(5^{i+j}\).
+For \(i+j=0,1,2,3,4\), these residues are
+\(1,5,4,6,2\). The exterior target five occurs exactly at
+\((i,j)=(1,0),(0,1)\), so \(E_{95}=\{5,19\}\).
+The middle target is \(-95\equiv3\pmod7\), which does not occur;
+thus \(M_{95}=\varnothing\).
+Their complete primitive coordinates are, respectively,
+\[
+ (A,B,C,D,\varepsilon)=(19,1,56,5,0),\qquad
+ (5,1,54,19,0),
+\]
+with ordered integer witnesses
+\[
+ (95,5320,104440),\qquad(95,5130,382698).
+\]
+Indeed \(7\cdot56=19+373\), \(7\cdot54=5+373\),
+and each has \(ABD=95\); the preceding reciprocal calculation
+therefore proves both identities with the original prime.
+The full fibres show that every hit in this shell has \(A=19\)
+or five. In particular no \(A\le2\) code in this shell is a hit.
+This determines precisely the failure of the same-shell implication
+from occupancy to the first two layers; all other original shells
+remain in the full primewise system.

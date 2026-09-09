@@ -1,0 +1,82 @@
+{
+  "canonical_main_sha256": "4356f53962f2da9b418e066f2c2ca1ba9572e45dc398bb2ca4d37981301e5050",
+  "reading_main_sha256": "bb84a6d7cd9c5f697072dc26750a0f166f5a6dc8f3506e6a9d19129f697c4e6b",
+  "status": "reversing_all_editorial_insertions_and_author_label_recovers_the_exact_canonical_text",
+  "changes": [
+    {
+      "original": "\\input{shared_variable_crt.tex}",
+      "publication": "\\input{publication_shared_variable_crt.tex}"
+    },
+    {
+      "original": "\\input{raw_scale_hit_incidence.tex}",
+      "publication": "\\input{publication_raw_scale_hit_incidence.tex}"
+    },
+    {
+      "original": "\\author{}",
+      "publication": "\\author{The Clankers}"
+    },
+    {
+      "original": "\\maketitle",
+      "publication": "\\maketitle\n\\begin{center}\n\\small Arithmetic contributor: Reddit user \\texttt{u/UmbrellaCorp\\_HR}.\\\\\nExpanded edition: 72 statements with full proofs.\\\\\nProject DOI: \\href{https://doi.org/10.5281/zenodo.20401937}{10.5281/zenodo.20401937}.\n\\end{center}\n\\noindent This edition adds fourteen statements to the 58-statement snapshot\n\\cite{PriorEdition}. The canonical mathematical source files are unchanged;\nthis reading edition adds contribution credit and citations at the relevant\nsource interfaces. Exact computation supplements the proofs at stated finite\nbounds. References distinguish a contribution's mathematical source from\nbroader historical context. The full announced Navier--Stokes construction\nremains outside this article's independent verification claim.\n\\par\\medskip\n"
+    },
+    {
+      "original": "This text retains the full prime-shell system in the supplied notes\n\\emph{Untitled 1736} and \\emph{Untitled 1737}.  Its new cross-shell\ncalculations classify ratio-preserving transport and the two elementary\npositive unimodular shears.  The local gluing calculation keeps the\nfinite exponent bounds through its integral lifts.  The connection to\nAlain Connes and Caterina Consani's divisor-category construction uses\nthe embedded ordered groups and their exact reciprocal-divisor locus.\nEvery arithmetic assertion used here is proved below; the accompanying\nexact computations check specified finite instances.  Neither a universal\noccupancy theorem nor a global empty prime is established.\n\n",
+      "publication": "We study positive integer solutions of $4/p=1/x+1/y+1/z$ through\ntheir complete bounded divisor-shell coordinates. The starting arithmetic,\npositivity-code and prime-production constructions were contributed by Reddit\nuser \\texttt{u/UmbrellaCorp\\_HR} and developed further in this collaboration\n\\cite{UmbrellaContribution}. Their relation to the established Egyptian-fraction\nparametrizations of Christian Elsholtz and Terence Tao is recorded explicitly;\nthe elementary reconstructions needed in this article are proved here\n\\cite{ElsholtzTao}. The cross-shell calculations classify ratio-preserving\ntransport and two elementary positive unimodular shears. The gluing\nconstruction retains the finite exponent bounds throughout its integral lifts.\nThe divisor-category connection uses Alain Connes and Caterina Consani's\nembedded ordered groups and their exact reciprocal-divisor locus\n\\cite{CCPericyclic}. A later part returns exact covering and inverse-operator\ncalculations to the auxiliary torus of the announced Navier--Stokes manuscript\n\\cite{OpenAINS}. No universal arithmetic occupancy, empty prime shell, or\ncomplete fluid blowup proof is asserted by these calculations.\n\n"
+    },
+    {
+      "original": "\\input{unary_boolean_transport.tex}",
+      "publication": "\n\\paragraph{Arithmetic lineage.}\nThe original finite-code and simultaneous-constraint input is the colleague's\ncontinuation \\cite{UmbrellaContribution}, especially its equations (71)--(100).\nThe intermediate source is \\cite{PrimewiseCoordinates}.\nThe following construction proves the complete bounded code and witness\ncorrespondences used here; it does not attribute this later proof to that input.\n\\input{unary_boolean_transport.tex}"
+    },
+    {
+      "original": "\\input{boundary_swap/boundary_swap_completion.tex}",
+      "publication": "\n\\paragraph{Boundary-source lineage.}\nThe same-tag exchange antecedent is \\cite{SignedMarginAntecedent}, within\nthe arithmetic programme originating in \\cite{UmbrellaContribution}.\nThe four-candidate construction below writes out all maps and proofs needed\nfor its expanded conclusions.\n\\input{boundary_swap/boundary_swap_completion.tex}"
+    },
+    {
+      "original": "\\input{integral_cyclic_bridge.tex}",
+      "publication": "\n\\paragraph{Cyclic-source interface.}\nThe degree-zero quotient and fibre-trace viewpoint is compared with\nConnes--Consani \\cite[Proposition 3.1 and equation (3.2)]{CCTrace}.\nThe following integral augmentation calculation is proved directly, including\nits torsion and finite arithmetic return. It is not imported as a finite-box\nlifting theorem from that source.\n\\input{integral_cyclic_bridge.tex}"
+    },
+    {
+      "original": "\\input{connes_reading/connes_primitive_intersections.tex}",
+      "publication": "\n\\paragraph{Divisor-category lineage.}\nThe precise source for the next construction is\nConnes--Consani \\cite[Section 7.4, Lemma 7.7 and Proposition 7.8]{CCPericyclic}.\nThe finite shell specialization, its primitive-pair return and its corrections\nare the calculations proved below.\n\\input{connes_reading/connes_primitive_intersections.tex}"
+    },
+    {
+      "original": "\\input{ns_operator_bridge/torus_cover_lemma.tex}",
+      "publication": "\n\\paragraph{Source operators and intellectual context.}\nThe specific auxiliary matrix and original directions used below are from\n\\cite[Section 6.1, equations (6.1)--(6.7), and Lemma 6.2]{OpenAINS};\nthe separately pinned source is \\cite{OpenAISource}. Earlier forced-fluid\nresearch is credited in \\cite{BuckmasterStatement,CMZEuler,CMZIPM,CMZHypo}.\nThe separate smooth-forcing IPM and Boussinesq manuscripts are\n\\cite{ABCIPM,ABBoussinesq}; their authorship and theorem domains are not\ninterchanged. None of these complete fluid theorems is assumed in the\narithmetic operator proofs below.\n\\input{ns_operator_bridge/torus_cover_lemma.tex}"
+    },
+    {
+      "original": "\\input{ns_operator_bridge/reverse_proof_transport.tex}",
+      "publication": "\n\\paragraph{Return to the continuous source calculation.}\nThe next two subsections address the actual continuous operators in\n\\cite[Lemma 6.2, (6.17)--(6.20), (8.4)--(8.10), (8.14), and\nLemma 8.6, (8.19)--(8.23)]{OpenAINS}. The sharp constants, full inverse\nfibres and strengthened derivative estimates are proved here. The original\ncutoff remainder and slow derivatives remain in those identities.\n\\input{ns_operator_bridge/reverse_proof_transport.tex}"
+    },
+    {
+      "original": "\\end{document}",
+      "publication": "\\input{publication_bibliography.tex}\n\\end{document}"
+    }
+  ],
+  "mathematical_proof_edits": false,
+  "leaf_editorial_maps": [
+    {
+      "canonical": "input_output_incidence.tex",
+      "publication": "publication_input_output_incidence.tex",
+      "canonical_sha256": "e7b09ec144f78f7507cdf87df2022fbb8651e5f7d491a5f7895a000b21fe4861",
+      "publication_sha256": "a0e65dff3476b0560b58888a98efefb58627ae9423cdbfc21a303ef183a49bf4",
+      "inserted_provenance": "\\paragraph{Contribution provenance.} The input--output prime construction continues the arithmetic and Euclid material of \\texttt{u/UmbrellaCorp\\_HR} \\cite{UmbrellaContribution}, including equations (88)--(90) and (96). The complete incidence fibres and witness returns below are subsequent proved calculations.",
+      "mathematical_text_unchanged": true
+    },
+    {
+      "canonical": "shared_variable_crt.tex",
+      "publication": "publication_shared_variable_crt.tex",
+      "canonical_sha256": "5637c0026d294db133ba4c2d16eadd6c15d3a1f7fcf60c15e2d59f7b1b284c6b",
+      "publication_sha256": "6ab8ce79ec70408945c4c186037b7c758dacf7ef60e96c7f316fd8983587f9d5",
+      "inserted_provenance": "\\paragraph{Contribution provenance.} The simultaneous constraints continue \\texttt{u/UmbrellaCorp\\_HR}'s equations (78)--(80), (88)--(90), (96) and (98) \\cite{UmbrellaContribution}. This credit identifies the original arithmetic input; the full shared-variable construction below supplies its complete proof and computed lift fibres.",
+      "mathematical_text_unchanged": true
+    },
+    {
+      "canonical": "raw_scale_hit_incidence.tex",
+      "publication": "publication_raw_scale_hit_incidence.tex",
+      "canonical_sha256": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442",
+      "publication_sha256": "0ed09690a03213a23a8a68ef04d07ce64f8ee701ceaeefdf9a2e7053f78b17ee",
+      "inserted_provenance": "\\paragraph{Contribution provenance.} The original positivity-code and Euclid/prime-production material is credited to \\texttt{u/UmbrellaCorp\\_HR} \\cite{UmbrellaContribution}. The named intermediate project calculations \\cite{PositivityTransport} below retain that lineage; they do not replace the original contributor's credit.",
+      "mathematical_text_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "status": "pass",
+  "unary_counts": {
+    "full_rectangular_codes": 856332,
+    "admissible_tagged_codes": 3048,
+    "successful_tagged_codes": 53,
+    "weighted_ordered_count": 82
+  },
+  "unary_fixtures": [
+    {
+      "p": 13,
+      "full_codes": 972,
+      "admissible": 64,
+      "successful": 5,
+      "weighted": 8,
+      "truth_cell_counts": {
+        "000": 0,
+        "001": 0,
+        "010": 0,
+        "011": 0,
+        "100": 1,
+        "101": 0,
+        "110": 2,
+        "111": 2
+      },
+      "selected_boolean_count": 4,
+      "union_fibre_counts": {
+        "2": 2,
+        "3": 3,
+        "108": 2,
+        "109": 3,
+        "18": 1
+      }
+    },
+    {
+      "p": 37,
+      "full_codes": 26244,
+      "admissible": 312,
+      "successful": 12,
+      "weighted": 20,
+      "truth_cell_counts": {
+        "000": 0,
+        "001": 0,
+        "010": 2,
+        "011": 1,
+        "100": 1,
+        "101": 1,
+        "110": 5,
+        "111": 2
+      },
+      "selected_boolean_count": 9,
+      "union_fibre_counts": {
+        "2": 2,
+        "3": 3,
+        "2054": 1,
+        "8": 2,
+        "9": 3,
+        "972": 1,
+        "973": 2,
+        "338": 2,
+        "216": 2,
+        "668": 2,
+        "3888": 1,
+        "3889": 2
+      }
+    },
+    {
+      "p": 61,
+      "full_codes": 121500,
+      "admissible": 648,
+      "successful": 15,
+      "weighted": 24,
+      "truth_cell_counts": {
+        "000": 0,
+        "001": 0,
+        "010": 1,
+        "011": 2,
+        "100": 2,
+        "101": 1,
+        "110": 6,
+        "111": 3
+      },
+      "selected_boolean_count": 12,
+      "union_fibre_counts": {
+        "2": 2,
+        "3": 3,
+        "196": 2,
+        "454": 1,
+        "2700": 2,
+        "2701": 3,
+        "14": 2,
+        "15": 3,
+        "2897": 2,
+        "18900": 1,
+        "18901": 2,
+        "726": 2,
+        "21783": 2,
+        "2352": 2,
+        "630": 1
+      }
+    },
+    {
+      "p": 73,
+      "full_codes": 209952,
+      "admissible": 808,
+      "successful": 10,
+      "weighted": 14,
+      "truth_cell_counts": {
+        "000": 1,
+        "001": 2,
+        "010": 0,
+        "011": 1,
+        "100": 2,
+        "101": 1,
+        "110": 1,
+        "111": 2
+      },
+      "selected_boolean_count": 8,
+      "union_fibre_counts": {
+        "257": 2,
+        "4005": 3,
+        "110": 2,
+        "15663": 2,
+        "147": 3,
+        "4212": 1,
+        "77977": 1,
+        "220": 1,
+        "73981": 1
+      }
+    },
+    {
+      "p": 97,
+      "full_codes": 497664,
+      "admissible": 1216,
+      "successful": 11,
+      "weighted": 16,
+      "truth_cell_counts": {
+        "000": 1,
+        "001": 1,
+        "010": 0,
+        "011": 2,
+        "100": 1,
+        "101": 1,
+        "110": 3,
+        "111": 2
+      },
+      "selected_boolean_count": 10,
+      "union_fibre_counts": {
+        "27649": 1,
+        "8": 1,
+        "169": 3,
+        "9": 2,
+        "459": 3,
+        "144": 2,
+        "83089": 2,
+        "434": 2,
+        "1298": 2,
+        "90289": 2
+      }
+    }
+  ],
+  "unary_truth_vectors_tested_per_prime": 8,
+  "all_code_box_inverse_orientations_and_weights_checked": true,
+  "actual_prime_corollary_polynomial_tag_coprimality_and_bounds_checked": true,
+  "sign_encodings_including_zero_bound": 25,
+  "complete_augmented_box_cases": 21600,
+  "canonical_auxiliary_original_tuples": 15,
+  "selected_global_boolean_original_tuples": [
+    [
+      -2,
+      1
+    ],
+    [
+      -2,
+      2
+    ],
+    [
+      -2,
+      3
+    ],
+    [
+      -1,
+      2
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "shared_residual_bound": 10,
+  "chosen_nonminimal_fixed_common_multiple": 6,
+  "shared_moduli": [
+    6,
+    22,
+    33
+  ],
+  "L": 66,
+  "multiple_lifts_for_zero_residue_mod2": [
+    -2,
+    0,
+    2
+  ],
+  "negative_composite_divisibility_fixture": true,
+  "overlapping_residue_pair_count": 12,
+  "scalar_input_cases": 525,
+  "prescribed_output_seed_cases": 848,
+  "limitations": "Finite exact checks supplement the all-parameter deductive review; no universal occupancy or efficient runtime bound follows."
+}

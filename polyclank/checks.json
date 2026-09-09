@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "edition": "es:edition:2026.09.08.2",
+  "checks": [
+    {
+      "id": "es:check:published-replay:2026-09-08",
+      "kind": "exact-finite-computation-replay",
+      "record": "research/expanded-2026-09-08/exact_bounded_transport_72/REPLAY_RECEIPT.json",
+      "outcome": "14-commands-exited-zero",
+      "python": "3.13.9",
+      "sympy": "1.13.1",
+      "scope": "Each check retains its source inputs, finite bounds and assertions. General written proofs are in the canonical TeX modules.",
+      "independent_reviewer_identity": null
+    },
+    {
+      "id": "es:check:post-publication-replay:2026-09-09",
+      "kind": "exact-finite-computation-replay",
+      "record": "polyclank/evidence/POST_PUBLICATION_REPLAY_RECEIPT_20260909.json",
+      "outcome": "14-commands-exited-zero",
+      "scope": "Fresh extraction of the published source archive; all 14 advertised commands replayed, including no-hit limit 5000 and boundary-swap limit 2000.",
+      "relationship_to_previous": "Same programme and checker implementations; later execution, not an additional independent reviewer."
+    },
+    {
+      "id": "es:check:source-and-statement-index:2026-09-09",
+      "kind": "artifact-identity-and-locator-validation",
+      "method": "python tools/verify_workbench.py",
+      "scope": "Compare file hashes and source spans to the published bytes and statement records. This operation does not mathematically review the proofs."
+    }
+  ],
+  "formal_status": {
+    "current_supplement": "No whole-supplement Lean build asserted by this publication. The present mathematical evidence consists of written proofs and the cited exact checker records.",
+    "earlier_material": "The repository's preserved 02_ERDOS_STRAUSS_Verification_and_Lean.zip contains earlier formal artifacts; their own source, statement and build records determine their scope."
+  }
+}

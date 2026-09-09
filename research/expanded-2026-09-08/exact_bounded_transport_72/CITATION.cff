@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this expanded mathematical contribution."
+title: "Exact bounded congruence transport and auxiliary-torus interfaces"
+authors:
+  - name: "The Clankers"
+doi: "10.5281/zenodo.20401937"
+version: "2026.09.08.2"
+date-released: "2026-09-08"
+type: article

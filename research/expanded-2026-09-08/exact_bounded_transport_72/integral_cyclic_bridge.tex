@@ -1,0 +1,242 @@
+% Integral bridge for the actual exponent-gluing groups; wrapper-free.
+The following construction gives the exact relation to degree-zero cyclic
+homology and cyclic cohomology, including the integral torsion and the
+original bounded exponent fibres. All group algebras here are over \(\Z\).
+
+\begin{lemma}[Integral augmentation coordinates and their complete fibres]
+\label{lem:integral-augmentation}
+Let \(G\) be an abelian group written additively. Put
+\(A_G=\Z[G]=\bigoplus_{g\in G}\Z u_g\), with
+\(u_gu_h=u_{g+h}\) and unit \(u_0\), and put
+\(I_G=\ker(\epsilon_G:A_G\to\Z)\), where
+\(\epsilon_G(\sum_g n_gu_g)=\sum_g n_g\).
+Every sum here has finite support. The maps
+\[
+ \kappa_G:G\longrightarrow I_G/I_G^2,
+ \qquad g\longmapsto (u_g-u_0)+I_G^2,
+\]
+\[
+ \theta_G:I_G/I_G^2\longrightarrow G,
+ \qquad \sum_g n_gu_g+I_G^2\longmapsto\sum_g n_gg
+\]
+are mutually inverse homomorphisms. In degree zero the cyclic-chain
+boundary is \(b(a\otimes b)=ab-ba\), so
+\(HC_0^{\Z}(A_G)=A_G/[A_G,A_G]=A_G\). The homomorphism
+\[
+ \Theta_G:HC_0^{\Z}(A_G)\longrightarrow G,
+ \qquad \sum_g n_gu_g\longmapsto\sum_g n_gg
+\]
+has kernel \(\Z u_0+I_G^2\) and fibre over \(g\) equal to
+\((u_g-u_0)+\Z u_0+I_G^2\). Its restriction to \(I_G\) has
+fibre \((u_g-u_0)+I_G^2\).
+For every homomorphism \(f:G\to H\), the unital algebra map
+\(f_*:A_G\to A_H\), \(u_g\mapsto u_{f(g)}\), preserves the
+augmentation ideals and their squares and satisfies
+\(\overline{f_*}\kappa_G=\kappa_H f\).
+\end{lemma}
+\begin{proof}
+The displayed multiplication makes \(A_G\) a commutative unital ring.
+An element of augmentation zero has the exact expression
+\(\sum_g n_g(u_g-u_0)\). Consequently \(I_G^2\) is generated
+as an additive group by the products
+\[
+ (u_g-u_0)(u_h-u_0)=u_{g+h}-u_g-u_h+u_0.
+\]
+The coefficient map \(\sum n_gu_g\mapsto\sum n_gg\) sends each
+such product to \((g+h)-g-h+0=0\), and thus defines \(\theta_G\).
+The same relation proves
+\(\kappa_G(g+h)=\kappa_G(g)+\kappa_G(h)\).
+Direct substitution gives \(\theta_G\kappa_G(g)=g\).
+For \(w=\sum n_gu_g\in I_G\), additivity of \(\kappa_G\) gives
+\[
+ \kappa_G\theta_G(w+I_G^2)
+ =\sum_g n_g(u_g-u_0)+I_G^2=w+I_G^2,
+\]
+where the final equality uses precisely \(\sum n_g=0\).
+This proves the inverse and the restricted fibres. For arbitrary \(w\),
+write \(w=\epsilon_G(w)u_0+(w-\epsilon_G(w)u_0)\). The second
+summand lies in \(I_G\), while \(\Theta_G(u_0)=0\); hence the
+kernel and every full fibre have the asserted form. Commutativity makes
+the degree-zero boundary zero, proving the stated homology formula
+directly. Finally the basis formula for \(f_*\) respects products,
+unit, and augmentation. It sends \(I_G^2\) into \(I_H^2\),
+and sends \(u_g-u_0\) to \(u_{f(g)}-u_0\). This proves naturality
+on each coordinate, hence on every finite sum.
+\end{proof}
+
+\begin{theorem}[Cyclic characters with exact inverse and separation]
+\label{thm:cyclic-character-bridge}
+Let \(G\) be a finite abelian group and \(T=\Q/\Z\). Use the
+cyclic cochain complex obtained by applying
+\(\operatorname{Hom}_{\Z}(-,T)\) to the integral cyclic chain complex.
+Its degree-zero cohomology consists of the additive traces
+\(\tau:A_G\to T\), meaning \(\tau(ab)=\tau(ba)\).
+Define the following subgroup of this degree-zero cohomology:
+\[
+ \mathcal T_G=\{\tau\in HC^0(A_G;T):
+              \tau(u_0)=0,\quad \tau(I_G^2)=0\}.
+\]
+There is an isomorphism with specified inverse
+\[
+ \operatorname{Hom}(G,T)\longrightarrow\mathcal T_G,
+ \quad \chi\longmapsto
+ \left[\tau_\chi\!\left(\sum_g n_gu_g\right)=\sum_g n_g\chi(g)\right],
+ \quad \chi(g)=\tau_\chi(u_g-u_0).
+\]
+Each fibre of this isomorphism is a singleton. These traces separate
+the augmentation coordinates: \(g=0\) if and only if
+\(\tau(u_g-u_0)=0\) for every \(\tau\in\mathcal T_G\).
+If \(H\leq G\), every character of \(H\) extends to \(G\),
+and the full fibre of restriction over a character \(\chi_H\) is
+\(\chi_0+\operatorname{Hom}(G/H,T)\), where \(\chi_0\) is any
+one extension and the second summand is pulled back along \(G\to G/H\).
+\end{theorem}
+\begin{proof}
+The only cocycle condition in degree zero is vanishing on
+\(ab-ba\), and there is no incoming cochain boundary in degree zero.
+Since \(A_G\) is commutative every additive functional is a trace.
+For a character \(\chi\), the formula for \(\tau_\chi\) is
+additive, sends \(u_0\) to zero, and sends every generator
+\(u_{g+h}-u_g-u_h+u_0\) of \(I_G^2\) to zero.
+Conversely, for \(\tau\in\mathcal T_G\), set
+\(\chi(g)=\tau(u_g-u_0)\). Applying \(\tau\) to that generator
+proves \(\chi(g+h)=\chi(g)+\chi(h)\). Also \(\tau(u_0)=0\),
+so additivity gives \(\tau(\sum n_gu_g)=\sum n_g\chi(g)\).
+These substitutions prove both inverses and all singleton fibres.
+
+Here is an explicit extension argument retaining all choices. Given
+\(H\leq G\), \(\chi:H\to T\), and \(x\in G\), let \(m\)
+be the least positive integer with \(mx\in H\); it exists because
+\(G\) is finite. Choose a rational representative \(r\) of
+\(\chi(mx)\). The solutions of \(m\beta=\chi(mx)\) in \(T\)
+are exactly
+\(\beta=(r+j)/m+\Z\), \(j=0,\ldots,m-1\): multiplying
+verifies them, and subtracting two solutions shows their difference
+is one of the \(m\) classes annihilated by \(m\).
+For each such \(\beta\), define
+\[
+ \chi'(h+kx)=\chi(h)+k\beta\qquad(h\in H,\ k\in\Z).
+\]
+If \(h+kx=h'+k'x\), division of \(k-k'\) by \(m\) and
+minimality of \(m\) show \(k-k'=\ell m\) for some integer
+\(\ell\); then \(h-h'=-\ell mx\). The difference of the
+two proposed values is \(-\ell\chi(mx)+\ell m\beta=0\).
+Thus the formula is well defined and additive. It extends \(\chi\),
+and every extension to \(H+\Z x\) is obtained uniquely by its
+value \(\beta\) on \(x\). Adjoining an element outside the current
+subgroup strictly increases its cardinality, so finitely many such
+steps extend \(\chi\) to \(G\). The difference of two extensions
+vanishes on \(H\), and factors uniquely through \(G/H\); adding
+any such factor produces another extension. This proves the full fibre.
+
+For nonzero \(g\), let its order be \(n>1\). The formula
+\(kg\mapsto k/n+\Z\) defines a character on \(\langle g\rangle\):
+two indices represent the same group element exactly when their
+difference is divisible by \(n\). Extend this character by the
+preceding construction. The resulting trace takes
+\(u_g-u_0\) to \(1/n+\Z\ne0\). For \(g=0\), every such
+evaluation is zero. This proves separation without discarding
+the finite-order coordinates.
+\end{proof}
+
+\begin{theorem}[The original lattice obstruction in cyclic coordinates]
+\label{thm:cyclic-lattice-gluing}
+Keep the original \(q_1,\ldots,q_s,D,E,L,K_D,K_E,K_L\) and
+the exact exponent box \(B\) of \eqref{eq:lattice-exact}. Set
+\[
+ G_L=\Z^s/K_L,\qquad
+ G_0=(\Z^s/K_D)\oplus(\Z^s/K_E),\qquad
+ O=\Z^s/(K_D+K_E).
+\]
+All three groups are finite. Under the coordinates of
+Lemma~\ref{lem:integral-augmentation}, \eqref{eq:lattice-exact}
+becomes the exact sequence
+\[
+ 0\longrightarrow I_{G_L}/I_{G_L}^2
+ \xrightarrow{\overline{i_*}} I_{G_0}/I_{G_0}^2
+ \xrightarrow{\overline{\delta_*}} I_O/I_O^2
+ \longrightarrow0,
+\]
+with the explicit generator maps
+\[
+ [u_{[e]_{K_L}}-u_0]\longmapsto
+ [u_{([e]_{K_D},[e]_{K_E})}-u_0],\qquad
+ [u_{([x]_{K_D},[y]_{K_E})}-u_0]\longmapsto
+ [u_{[x-y]_{K_D+K_E}}-u_0].
+\]
+The corresponding cyclic-character maps form the exact sequence
+\[
+ 0\longrightarrow\mathcal T_O
+ \xrightarrow{\delta^*}\mathcal T_{G_0}
+ \xrightarrow{i^*}\mathcal T_{G_L}\longrightarrow0,
+ \qquad \delta^*(\tau)=\tau\circ\delta_*,\quad
+ i^*(\tau)=\tau\circ i_*.
+\]
+For a specified local target pair
+\(v=([x]_{K_D},[y]_{K_E})\), write
+\(o=[x-y]_{K_D+K_E}\). Its integral gluing obstruction vanishes
+if and only if every \(\tau\in\mathcal T_O\) has
+\(\tau(u_o-u_0)=0\). If it vanishes, choose
+\(x-y=k_D+k_E\) with \(k_D\in K_D,k_E\in K_E\), and set
+\(e_0=x-k_D=y+k_E\). The complete original integer fibre and
+its exact bounded part are, respectively,
+\[
+ e_0+K_L,\qquad B\cap(e_0+K_L).
+\]
+They use precisely the original coordinates and intervals; the bounded
+part is enumerated by the fundamental-rectangle formula preceding
+this construction. No nonemptiness of that intersection is assumed.
+\end{theorem}
+\begin{proof}
+The map \([e]_{K_D}\mapsto\prod_j q_j^{e_j}\bmod D\) embeds
+\(\Z^s/K_D\) in the finite unit group modulo \(D\): its kernel
+is zero by the definition of \(K_D\). The same argument works
+for \(E\) and \(L\). The group \(O\) is a quotient of
+\(\Z^s/K_D\), hence is finite as well.
+Lemma~\ref{lem:integral-augmentation} gives a bijective group
+coordinate map \(\kappa\) at each term. Its naturality gives
+the two displayed generator formulas and the commuting squares
+with \(i\) and \(\delta\). Thus the middle kernel is exactly
+\(\kappa_{G_0}(\ker\delta)=\kappa_{G_0}(\operatorname{im}i)\);
+injectivity at the first term and surjectivity at the last follow
+by applying the specified \(\theta\) inverses. Explicitly, the fibre
+of \(\overline{\delta_*}\) over \(\kappa_O(o)\) is
+\[
+ \{\kappa_{G_0}(v_0+i(g)):g\in G_L\}
+\]
+for any \(v_0\) with \(\delta(v_0)=o\), and its parameter \(g\)
+is unique because \(i\) is injective. Such a \(v_0\) exists:
+if \(o=[t]_{K_D+K_E}\), take
+\(v_0=([t]_{K_D},[0]_{K_E})\). A fibre of
+\(\overline{i_*}\) over its image is a singleton, with inverse
+\(\kappa_{G_L}i^{-1}\theta_{G_0}\); outside that image it is empty.
+These are statements about the augmentation quotients. On them the
+composite is zero, since \(u_0-u_0=0\), as the formulas show.
+
+Under Theorem~\ref{thm:cyclic-character-bridge}, the dual maps are
+\(\chi\mapsto\chi\circ\delta\) and
+\(\psi\mapsto\psi\circ i\). Since \(\delta\) is surjective,
+the first is injective. A character \(\psi\) on \(G_0\)
+vanishes on \(i(G_L)=\ker\delta\) exactly when
+\(\chi(o)=\psi(v)\), for any \(v\) with \(\delta(v)=o\),
+defines a well-defined character on \(O\). This proves the middle
+kernel and supplies the unique inverse on that image. Every character
+on \(G_L\) extends from the subgroup \(i(G_L)\) to \(G_0\)
+by the proved extension construction, so \(i^*\) is surjective.
+Its full fibre over any specified trace is
+\(\tau_0+\delta^*\mathcal T_O\), with \(\tau_0\) any one
+extension; this follows from the computed kernel. The fibre of
+\(\delta^*\) is a singleton on its image and empty elsewhere.
+
+Character separation applied to \(O\) proves the criterion for
+\(o=0\). If it holds, the displayed decomposition of \(x-y\)
+gives \(e_0\equiv x\pmod{K_D}\) and
+\(e_0\equiv y\pmod{K_E}\). A vector \(e\) has these same
+two classes exactly when
+\(e-e_0\in K_D\cap K_E=K_L\). This proves the entire fibre
+and its intersection with \(B\), independently of the decomposition.
+Each retained exponent vector reconstructs its original product
+\(\prod_jq_j^{e_j}\); the original shell parameters
+\(p,h,a,R_a,S_a\), when present, remain fixed throughout.
+Every quotient used here has its specified inverse or complete fibre.
+\end{proof}

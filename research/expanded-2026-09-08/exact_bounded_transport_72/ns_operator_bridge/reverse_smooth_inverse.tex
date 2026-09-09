@@ -1,0 +1,506 @@
+\subsection{A sharp inverse estimate returned to the manuscript's original directions}
+\label{sec:ns-reverse-smooth}
+
+This subsection applies the preceding coordinate-level operator calculation
+back to the public manuscript's equation~(6.7), equation~(8.10), and
+Lemma~8.6, equation~(8.19). In the preserved 166-page extraction these
+occur on printed pages~64, 91, and 95, respectively. The manuscript's
+inverse acts on the continuous torus with probability Haar measure.
+We retain that domain and the original directions
+\[
+ \begin{gathered}
+ v_r=(1,1-\sqrt2),\qquad v_t=(\sqrt2-1,1),\\
+ D_v=v_1\partial_{Y_1}+v_2\partial_{Y_2},\qquad
+ Y\in\mathbb R^2/\mathbb Z^2.
+ \end{gathered}
+\]
+The following estimates strengthen the constants and derivative count
+in those inverse steps. They require no PDE existence assertion.
+
+\begin{theorem}[Sharp denominator constant in the original coordinates]
+\label{thm:ns-sharp-denominator}
+Put
+\[
+ \begin{gathered}
+ c=\sqrt{4+2\sqrt2},\qquad d=\sqrt{4-2\sqrt2},\\
+ w_r=(1,1+\sqrt2),\qquad w_t=(-1-\sqrt2,1).
+ \end{gathered}
+\]
+For either paired choice $(v,w)=(v_r,w_r)$ or $(v_t,w_t)$,
+$v\cdot w=0$, $\|v\|_2=d$, $\|w\|_2=c$, and for every
+$k=(m,n)\in\mathbb Z^2\setminus\{0\}$,
+\[
+ |v\cdot k|>\frac1{c\|k\|_2},\qquad
+ \inf_{k\ne0}|v\cdot k|\|k\|_2=\frac1c.             \tag{S1}
+\]
+In particular the constant $1/c$ cannot be increased.
+\end{theorem}
+\begin{proof}
+Direct multiplication gives all dot products and squared lengths.
+The products of the original symbols with their conjugates are
+\[
+ \begin{split}
+ (v_r\cdot k)(w_r\cdot k)&=m^2+2mn-n^2=(m+n)^2-2n^2,\\
+ (v_t\cdot k)(w_t\cdot k)&=n^2-2mn-m^2=(n-m)^2-2m^2.
+ \end{split}                                                     \tag{S2}
+\]
+Each is a nonzero integer: its vanishing with a nonzero second
+coordinate would make $\sqrt2$ rational, and when that coordinate
+vanishes the first one must also vanish. Irrationality follows from
+the parity argument given in Theorem~\ref{thm:ns-directional-intertwining}.
+Their absolute values are therefore at least one. Cauchy--Schwarz
+gives $|w\cdot k|\leq c\|k\|_2$. Equality would make the nonzero
+integer vector $k$ parallel to $w$, whose coordinate ratio is
+irrational, and is impossible. Hence
+$1\leq|v\cdot k||w\cdot k|<c|v\cdot k|\|k\|_2$.
+
+To prove optimality, retain the explicit Pell sequence
+\[
+ \begin{gathered}
+ \alpha=1+\sqrt2,\qquad\beta=1-\sqrt2=-\alpha^{-1},\\
+ p_0=1,\quad q_0=0,\quad
+ p_{j+1}=p_j+2q_j,\quad q_{j+1}=p_j+q_j.
+ \end{gathered}                                                   \tag{S3}
+\]
+Induction proves $p_j,q_j$ are integers and
+$p_j+q_j\sqrt2=\alpha^j$, $p_j-q_j\sqrt2=\beta^j$.
+In particular $p_j^2-2q_j^2=(-1)^j$. For $j\geq1$ set
+\[
+ k_{r,j}=(p_j-q_j,q_j),\qquad
+ k_{t,j}=(q_j,q_j-p_j).
+\]
+The two vectors have the same length $K_j$. Their actual symbol
+and conjugate values are respectively
+\[
+ \begin{array}{c|cc}
+ &v\cdot k_{v,j}&w\cdot k_{v,j}\\\hline
+ r&\beta^j&\alpha^j\\
+ t&-\beta^j&-\alpha^j
+ \end{array}
+\]
+by substitution. Since the retained nonzero perpendicular vectors
+$v,w$ span $\mathbb R^2$, the exact decomposition is
+$k=(v\cdot k)v/d^2+(w\cdot k)w/c^2$. Therefore
+\[
+ K_j^2=\frac{\alpha^{2j}}{c^2}+\frac{\alpha^{-2j}}{d^2},
+ \qquad
+ |v\cdot k_{v,j}|^2K_j^2
+       =\frac1{c^2}+\frac{\alpha^{-4j}}{d^2}.          \tag{S4}
+\]
+The number $\alpha$ is greater than one, so $K_j$ tends to infinity
+and the second expression tends to $1/c^2$. This proves (S1)'s
+infimum and its nonattainment with every integer coordinate retained.
+\end{proof}
+
+We specify the analytic spaces used below. For $Y\in[0,1]^2$ write
+\[
+ \begin{gathered}
+ e_k(Y)=e^{2\pi i k\cdot Y},\qquad W(k)=1+4\pi^2\|k\|_2^2,\\
+ \widehat f(k)=\int_{[0,1]^2}f(Y)e^{-2\pi i k\cdot Y}\,dY,
+ \end{gathered}
+\]
+For real $s$, $H^s$ is the completion of finite trigonometric
+polynomials with the exact norm
+\[
+ \|f\|_{H^s}^2=\sum_{k\in\mathbb Z^2}W(k)^s|\widehat f(k)|^2,
+ \qquad H^s_0=\{f\in H^s:\widehat f(0)=0\}.           \tag{S5}
+\]
+Thus elements may be represented by their weighted square-summable
+coefficient arrays; truncation of such arrays converges in this norm
+because the defining nonnegative series has vanishing tails.
+For integer $m\geq0$ the coordinate norm on $C^m$ is
+\[
+ \|f\|_{C^m}=\max_{a,b\geq0,\ a+b\leq m}
+          \sup_{Y\in\mathbb T^2}|\partial_{Y_1}^a\partial_{Y_2}^bf(Y)|.
+                                                               \tag{S6}
+\]
+All integrations and suprema use the original period-one coordinates.
+
+\begin{lemma}[Fourier reconstruction and the precise analytic estimates used]
+\label{lem:ns-fourier-analytic-bridge}
+For every smooth periodic function $f$, its Fourier series and each
+coordinatewise differentiated series converge absolutely and uniformly
+to $f$ and its corresponding derivative. For an integer $r\geq0$,
+\[
+ \|f\|_{H^r}\leq3^{r/2}\|f\|_{C^r}.                \tag{S7}
+\]
+The positive lattice constant
+\[
+ S=\sum_{k\in\mathbb Z^2\setminus\{0\}}W(k)^{-2}
+       \quad\hbox{satisfies}\quad S\leq\frac3{4\pi^4}.            \tag{S8}
+\]
+For every zero-mean coefficient array $b$ and integer $m\geq0$,
+\[
+ \sum_{k\ne0}(2\pi\|k\|_2)^m|b(k)|
+    \leq\sqrt S\left(\sum_{k\ne0}W(k)^{m+2}|b(k)|^2\right)^{1/2}.
+                                                               \tag{S9}
+\]
+Whenever the right side is finite, the corresponding Fourier series
+and its derivatives through order $m$ converge absolutely and
+uniformly, with $C^m$ norm at most that right side.
+\end{lemma}
+\begin{proof}
+The functions $e_k$ are orthonormal, since integrating each coordinate
+character gives one at integer frequency zero and zero elsewhere.
+For a finite set $F$ of frequencies, expansion of
+$\|g-\sum_{k\in F}\widehat g(k)e_k\|_{L^2}^2\geq0$
+therefore gives
+$\sum_{k\in F}|\widehat g(k)|^2\leq\int|g|^2$.
+Increasing $F$ proves Bessel's inequality for every continuous $g$.
+Periodic integration by parts gives
+$\widehat{\partial_1^a\partial_2^bf}(k)
+ =(2\pi i k_1)^a(2\pi i k_2)^b\widehat f(k)$;
+the boundary terms cancel at the two equal endpoint values.
+Expanding $W(k)^r=(1+(2\pi k_1)^2+(2\pi k_2)^2)^r$
+by the multinomial formula and applying Bessel to each derivative
+with orders $a,b$, $a+b\leq r$, gives
+\[
+ \begin{split}
+ \sum_kW(k)^r|\widehat f(k)|^2
+ &\leq\sum_{j+a+b=r}\frac{r!}{j!a!b!}
+                   \int_{[0,1]^2}|\partial_1^a\partial_2^bf|^2\\
+ &\leq3^r\|f\|_{C^r}^2.
+ \end{split}
+\]
+This proves (S7) without requiring an unproved Parseval identity.
+
+For a nonzero frequency choose a coordinate with
+$|k_i|\geq\|k\|_2/\sqrt2$. Integrating by parts $M$ times in
+that coordinate yields
+\[
+ |\widehat f(k)|\leq
+       \left(\frac{\sqrt2}{2\pi\|k\|_2}\right)^M\|f\|_{C^M}.
+                                                               \tag{S10}
+\]
+Exactly $8q$ integer points have $\max(|k_1|,|k_2|)=q$.
+Thus $\sum_{k\ne0}\|k\|_2^{-t}\leq8\sum_{q\geq1}q^{1-t}$
+is finite for $t>2$. Formula (S10) with arbitrarily large $M$
+proves absolute uniform convergence of the series and every
+differentiated series. Its continuous sum has Fourier coefficients
+$\widehat f(k)$ by uniform convergence and orthogonality.
+The difference from $f$ has all coefficients zero. Its product
+Fej\'er convolutions are zero and converge uniformly to that
+difference by the explicit positive-kernel argument following
+Theorem~\ref{thm:ns-torus-average}; hence the difference is zero.
+This proves reconstruction and differentiation. The same argument
+also yields Parseval for smooth functions if needed: finite Fourier
+sums converge in $L^2$, and their squared norms are the finite sums
+of squared coefficients by orthogonality.
+
+The same $8q$ count gives
+\[
+ S\leq\sum_{q=1}^{\infty}\frac{8q}{(1+4\pi^2q^2)^2}
+ \leq\frac1{2\pi^4}\sum_{q=1}^{\infty}q^{-3}
+ \leq\frac1{2\pi^4}\left(1+\int_1^{\infty}t^{-3}\,dt\right)
+ =\frac3{4\pi^4}.
+\]
+Finally $(2\pi\|k\|_2)^m\leq W(k)^{m/2}$.
+Apply Cauchy--Schwarz to
+$W(k)^{-1}$ and $W(k)^{(m+2)/2}|b(k)|$ to prove (S9).
+For a derivative of order $a+b\leq m$, its multiplier is bounded
+by $(2\pi\|k\|_2)^{a+b}\leq(2\pi\|k\|_2)^m$ because
+$\|k\|_2\geq1$. The resulting summable majorant is uniform in
+$Y$, proving all stated convergence and $C^m$ assertions.
+\end{proof}
+
+\begin{theorem}[The smooth inverse, exact Sobolev norm, and sharp derivative loss]
+\label{thm:ns-sharp-smooth-inverse}
+For either original direction $v$ and an integer $q\geq1$, define
+\[
+ \widehat{T_v^q f}(0)=0,\qquad
+ \widehat{T_v^q f}(k)
+       =\frac{\widehat f(k)}{(2\pi i\,v\cdot k)^q}\quad(k\ne0).
+                                                               \tag{S11}
+\]
+For every real $s$, this is a bounded map
+$T_v^q:H^{s+q}_0\to H^s_0$ with exact operator norm
+\[
+ \|T_v^q\|_{H^{s+q}_0\to H^s_0}
+       =\left(\frac c{4\pi^2}\right)^q.              \tag{S12}
+\]
+For every $\delta<q$, this inverse has no bounded extension
+$H^{s+\delta}_0\to H^s_0$ agreeing with (S11) on polynomials.
+
+For smooth zero-mean $f$, $T_v^qf$ is the unique smooth zero-mean
+solution of $D_v^q u=f$. More generally, for every datum
+$f\in H^{s+q}_0$, its coefficients give the unique zero-mean
+distributional solution. Here a distribution is a continuous
+complex-linear functional on $C^\infty(\mathbb T^2)$ with its
+seminorms (S6), and its coefficient at $k$ is its value on $e_{-k}$.
+On smooth periodic
+functions the kernel of $D_v^q$ is precisely the constants, its
+image is all smooth zero-mean functions, and its full fibre at $f$
+is $T_v^q f+\mathbb C$.
+\end{theorem}
+\begin{proof}
+Theorem~\ref{thm:ns-sharp-denominator} gives the exact pointwise bound
+\[
+ \frac1{|2\pi i\,v\cdot k|^q W(k)^{q/2}}
+ <\left(\frac{c\|k\|_2}{2\pi\sqrt{1+4\pi^2\|k\|_2^2}}\right)^q
+ <\left(\frac c{4\pi^2}\right)^q.                   \tag{S13}
+\]
+Multiplying coefficient by coefficient and summing nonnegative
+squares proves the upper bound in (S12) on polynomials and all
+weighted square-summable arrays. Thus truncation extends the same
+formula continuously to the stated completion, with no change of
+coordinates. On the single character at $k_{v,j}$ of (S3)--(S4),
+the ratio of the output norm to the input norm is
+\[
+ \frac{\alpha^{qj}}{(2\pi)^q(1+4\pi^2K_j^2)^{q/2}}
+        \longrightarrow\left(\frac c{4\pi^2}\right)^q,
+\]
+because $K_j/\alpha^j\to1/c$ by (S4). This proves the exact
+operator norm. If the input order is $s+\delta$ instead, the ratio
+is
+$\alpha^{qj}/((2\pi)^q(1+4\pi^2K_j^2)^{\delta/2})$.
+Its quotient by $\alpha^{(q-\delta)j}$ tends to the positive
+constant $c^\delta/(2\pi)^{q+\delta}$. It is unbounded when
+$\delta<q$, proving sharpness of the derivative loss.
+
+For smooth $f$, (S10) and the multiplier growth
+$|(2\pi i\,v\cdot k)^{-q}|\leq(c\|k\|_2/(2\pi))^q$
+give uniform absolute convergence of every differentiated inverse
+series. Lemma~\ref{lem:ns-fourier-analytic-bridge} and termwise
+differentiation therefore show smoothness and $D_v^qT_v^qf=f$.
+The zero coefficient is exactly its Haar mean. Every nonzero
+Fourier multiplier of $D_v^q$ is nonzero, so any smooth solution
+has exactly the coefficients (S11) away from zero. Its remaining
+constant is arbitrary; Fourier reconstruction proves the full
+kernel and fibres.
+
+To make the distributional assertion explicit, the resulting
+$u\in H^s_0$ has coefficients of at most polynomial growth:
+each term of its squared norm is bounded by that full norm, so
+$|\widehat u(k)|\leq\|u\|_{H^s}W(k)^{-s/2}$.
+Consequently there are $B\geq0$ and an integer $r\geq0$ with
+$|\widehat u(k)|\leq B\|k\|_2^r$ for $k\ne0$;
+one obtains them directly from
+$W(k)\leq(1+4\pi^2)\|k\|_2^2$ and $W(k)\geq1$.
+Define its pairing with a smooth periodic test function by
+$u(\varphi)=\sum_k\widehat u(k)\widehat\varphi(-k)$.
+Choose an integer $M>r+2$. Formula (S10) and the lattice count
+give the explicit continuous-functional bound
+\[
+ |u(\varphi)|\leq
+ \left(|\widehat u(0)|+
+    8B\left(\frac{\sqrt2}{2\pi}\right)^M
+       \sum_{j=1}^{\infty}j^{1+r-M}\right)\|\varphi\|_{C^M}.
+\]
+The series converges, so this defines a distribution with exactly
+the specified coefficients. The same construction realizes
+$f\in H^{s+q}_0$ as a distribution. Distributional differentiation
+is defined by $(D_vu)(\varphi)=-u(D_v\varphi)$; evaluating on
+$e_{-k}$ therefore multiplies its coefficient by $2\pi i\,v\cdot k$.
+Formula (S11) gives the coefficient equation for $D_v^qu=f$.
+Finally a distribution with all Fourier coefficients zero vanishes
+on every trigonometric polynomial. The Fourier partial sums of
+any smooth test function converge to it in every seminorm (S6),
+by Lemma~\ref{lem:ns-fourier-analytic-bridge}. Continuity of the
+distribution therefore makes its value on every smooth test
+function zero. This proves the coefficient equation as an equality
+of distributions and proves uniqueness: any other zero-mean
+solution has the same forced nonzero coefficients and the same
+zero coefficient.
+\end{proof}
+
+\begin{theorem}[A strengthened coordinate derivative estimate]
+\label{thm:ns-cm-improvement}
+For integers $m\geq0$, $q\geq1$ and zero-mean
+$f\in C^{m+q+2}(\mathbb T^2)$, the inverse series (S11) belongs
+to $C^m$ and satisfies
+\[
+ \begin{aligned}
+ \|T_v^qf\|_{C^m}
+   &\leq\left(\frac c{4\pi^2}\right)^q
+             \sqrt S\,\|f\|_{H^{m+q+2}}\\
+   &\leq C_{m,q}\|f\|_{C^{m+q+2}}.
+ \end{aligned}                                                   \tag{S14}
+\]
+where the completely specified constant is
+\[
+ C_{m,q}=\left(\frac c{4\pi^2}\right)^q
+          3^{(m+q+2)/2}\sqrt S
+ \leq\left(\frac c{4\pi^2}\right)^q
+          \frac{3^{(m+q+3)/2}}{2\pi^2}.             \tag{S15}
+\]
+For $q=1$ this uses $m+3$ input derivatives and applies to the
+original temporal inverse in equation~(8.19). For general $q$ it
+uses $m+q+2$ and applies to the original repeated radial inverse
+in equation~(8.10). No optimality assertion is made for this
+particular $C^m$ derivative count.
+\end{theorem}
+\begin{proof}
+Apply (S9) to the inverse coefficients, and then (S13) with
+$s=m+2$. This gives the first inequality (S14), including uniform
+convergence of all inverse derivatives through order $m$.
+Formula (S7) with $r=m+q+2$ gives the second inequality, and
+(S8) gives the displayed bound on the constant. The proofs of
+(S7) and (S9) only require the finite number of continuous
+derivatives displayed here, so the same argument applies directly
+to $C^{m+q+2}$ data. In the two source equations the operators
+are exactly $T_{v_t}$ and $T_{v_r}^q$, with the same Fourier
+constant $2\pi i$, sign, period and zero mode. The source bounds
+with $m+4$ and $m+q+3$ input derivatives follow at once from
+(S14), since increasing $C^r$ order only increases the norm (S6).
+\end{proof}
+
+\begin{proposition}[Parameter derivatives, support, reality and the source mean update]
+\label{prop:ns-inverse-parameters}
+Let $V\subset\mathbb R^b$ be open, and let
+$f:V\times\mathbb T^2\to\mathbb C$ be jointly smooth with
+$\int_{\mathbb T^2}f(x,Y)\,dY=0$ for every $x\in V$.
+Define $u(x,Y)=T_v^q(f(x,\cdot))(Y)$. Then $u$ is jointly
+smooth and, for every parameter multi-index $\gamma$,
+\[
+ \begin{gathered}
+ \partial_x^\gamma u=T_v^q(\partial_x^\gamma f),\\
+ \sup_{x\in K}\|\partial_x^\gamma u(x,\cdot)\|_{C^m}
+ \leq C_{m,q}\sup_{x\in K}
+                \|\partial_x^\gamma f(x,\cdot)\|_{C^{m+q+2}}.
+ \end{gathered}                                                  \tag{S16}
+\]
+for every compact $K\subset V$. If $f(x,Y)=0$ for all $Y$
+whenever $x\notin A\subset V$, the same statement holds for $u$.
+Real-valued data give a real-valued inverse.
+
+In the manuscript's fixed local band/common-torus chart, retain
+$Q>0$, $h=h_{\rm NS}$, $c_{i_0}=T_g^{i_0}Q^{1+h}>0$,
+$T_g=4+\sqrt2$, and the distinct coordinates
+\[
+ \begin{gathered}
+ Y\in\mathbb T^2_{\rm abs},\qquad y=J^{i_0}Y\in\mathbb T^2_{\rm com},
+ \qquad P_{i_0}F(Y)=F(J^{i_0}Y),\\
+ D_v^Y=v\cdot\partial_Y,\qquad D_v^y=v\cdot\partial_y,\qquad
+ T_v^Y=(D_v^Y)^{-1},\qquad T_v^y=(D_v^y)^{-1}.
+ \end{gathered}
+\]
+The inverse in each coordinate acts on that torus's smooth
+zero-Haar-mean functions and uses its own original Fourier
+frequency with the multiplier (S11). Denote the corresponding
+means by $\Pi_Y$ and $\Pi_y$. On the indicated smooth domains,
+\[
+ \begin{gathered}
+ \Pi_Y P_{i_0}=\Pi_y,\qquad
+ D_{v_t}^Y P_{i_0}=T_g^{i_0}P_{i_0}D_{v_t}^y,\\
+ T_{v_t}^Y P_{i_0}=T_g^{-i_0}P_{i_0}T_{v_t}^y
+       \quad\hbox{on }\ker\Pi_y.
+ \end{gathered}
+\]
+For the actual common-chart residual write
+$E_\theta^\circ=E_\theta-\Pi_yE_\theta$. Its temporal update is
+\[
+ \begin{gathered}
+ \Delta v=-c_{i_0}^{-1}T_{v_t}^yE_\theta^\circ,\qquad
+ c_{i_0}D_{v_t}^y\Delta v=-E_\theta^\circ,\\
+ P_{i_0}\Delta v=-Q^{-1-h}T_{v_t}^Y(P_{i_0}E_\theta^\circ),\\
+ \|\Delta v\|_{C_y^m}
+       \leq c_{i_0}^{-1}C_{m,1}\|E_\theta^\circ\|_{C_y^{m+3}}.
+ \end{gathered}
+                                                               \tag{S17}
+\]
+The identical typed formulas apply to the manuscript's desired axial
+increment $\gamma_d=-c_{i_0}^{-1}T_{v_t}^yE_z^\circ$.
+For smooth shell-supported data the source's actual axial increment is
+$\Delta\gamma=\gamma_d+a$, with $a=-A_1\gamma_d$, where its
+retained cutoff operator is explicitly
+\[
+ \begin{split}
+ (A_1f)(R,Z,T,y)
+  ={}&R^{-1}(\partial_R\chi_m)(R,Z,T)\\
+  &{}\cdot\int_0^\infty R'f\bigl(R',Z,T,
+          y+M((R')^{d_r}-R^{d_r})v_r\bigr)\,dR',
+ \qquad M=\Lambda^{i_0}Q^{d_r/2}.
+ \end{split}
+\]
+Here $R>0$, the smooth zero extension of $f$ has radial support
+locally bounded in a compact subinterval of $(0,\infty)$, and
+$\chi_m(R,Z,T)$ is the source's smooth torus-independent cutoff.
+The actual fast-time cancellation is consequently
+\[
+ c_{i_0}D_{v_t}^y\Delta\gamma
+       =-E_z^\circ+c_{i_0}D_{v_t}^y a.
+\]
+The complete displayed time operator remains
+$-\varepsilon\partial_T+c_{i_0}D_{v_t}^y$, with
+$\varepsilon=Q^h$ and $\partial_T$ holding $y$ fixed. Thus its
+action on the updates still contains
+$-\varepsilon\partial_T\Delta v$ and
+$-\varepsilon\partial_T\Delta\gamma$, respectively.
+No zero or flatness assertion about $a$ is part of this inverse estimate.
+\end{proposition}
+\begin{proof}
+On a compact parameter neighborhood inside $V$, every mixed
+parameter/torus derivative of $f$ is bounded. Differentiation of
+its coefficient integral in a parameter is justified by the
+continuous bounded derivative on that compact set times the
+finite torus measure. Repetition gives
+$\partial_x^\gamma\widehat f(x,k)
+=\widehat{\partial_x^\gamma f}(x,k)$ and also zero mean for
+each parameter derivative. Integration by parts as in (S10)
+gives every polynomial decay order uniformly on this neighborhood,
+for all parameter derivatives under consideration. After multiplication
+by the inverse multiplier and any fixed coordinate derivative,
+choose the decay order larger than the total growth exponent plus
+two. The $8q$ lattice-shell count then supplies a summable majorant
+independent of the parameter and torus variables. Thus every mixed
+series differentiates termwise and converges locally uniformly.
+One may justify each first derivative directly by integrating its
+uniformly convergent derivative series along a coordinate segment;
+the fundamental theorem of calculus passes to the sum. Iterating
+proves joint smoothness and (S16)'s exact commutation. Applying
+(S14) at each parameter and taking suprema proves its bound.
+
+When a parameter slice of $f$ vanishes, all its Fourier coefficients
+vanish, and (S11) gives the vanishing slice of $u$. This proves the
+support assertion without changing the parameter set. If $f$ is
+real, $\widehat f(-k)=\overline{\widehat f(k)}$ and
+$(2\pi i\,v\cdot(-k))^{-q}
+=\overline{(2\pi i\,v\cdot k)^{-q}}$; pairing opposite modes
+shows $u$ is real. A common-torus character $e_k(y)$ pulls back
+to $e_{(J^{i_0})^Tk}(Y)$. Its absolute derivative multiplier is
+$2\pi i\,v_t\cdot(J^{i_0})^Tk
+=T_g^{i_0}2\pi i\,v_t\cdot k$.
+The lattice map is injective and preserves zero frequency exactly,
+which proves the stated Haar identity and both typed intertwining
+identities, including the reciprocal factor for the inverse. Smooth
+Fourier convergence proved above passes them from characters to the
+specified smooth spaces. In particular
+$P_{i_0}T_{v_t}^y=T_g^{i_0}T_{v_t}^YP_{i_0}$ on $\ker\Pi_y$.
+Multiplying this identity by
+$-c_{i_0}^{-1}=-T_g^{-i_0}Q^{-1-h}$ gives the absolute
+representative in (S17) with its complete coefficient.
+
+The equation $D_{v_t}^yT_{v_t}^yE_\theta^\circ=E_\theta^\circ$
+proves (S17)'s common-chart cancellation, including its minus sign.
+The estimate is (S14), now in the explicitly named common
+coordinates, multiplied by $c_{i_0}^{-1}$. The same calculation
+with $E_z^\circ$ gives the desired $\gamma_d$ and its bound.
+For the stated shell-supported inputs, differentiation under the
+displayed $A_1$ integral is justified locally by a fixed compact
+radial interval and bounded smooth derivatives on that interval;
+$R$ stays positive. This proves smoothness of $a$ there.
+Linearity of $D_{v_t}^y$ applied to
+$\Delta\gamma=\gamma_d+a$ proves the actual fast cancellation
+with the retained term $c_{i_0}D_{v_t}^ya$. Finally applying the
+complete time operator to each update gives exactly the displayed
+slow derivatives in addition to its fast part. No slow derivative
+has been commuted through the radial cutoff operator.
+\end{proof}
+
+The static source dependency for this result is explicit.
+\texttt{DiophantineGraph.lean} proves the algebraic norm lower bounds
+at lines~94 and~104 and the reciprocal bounds with constant~6 at
+lines~226 and~241. \texttt{TorusInverse.lean} retains
+$\omega=2\pi i$ at line~52, defines the same original vectors at
+line~195, and proves the inverse coefficient bound and smooth
+inverse at lines~278 and~323. Its Haar measure at line~342 is the
+product of two actual circle Haar probability measures.
+\texttt{SmoothFourierData.lean}, lines~351 and~561, proves the
+rapid-coefficient and reconstruction bridge for smooth periodic
+functions; its line~565 returns the directional equation for
+those actual functions. Thus rapid coefficients are not being
+inserted here as an unproved surrogate for a smooth function.
+Equations (S1), (S12), and (S14) provide sharper analytical constants
+and derivative estimates for that same source chain. These are
+independent mathematical proofs with a bounded static source audit;
+no Lean process or complete PDE verification is asserted.

@@ -1,0 +1,163 @@
+{
+  "status": "passed_after_repair",
+  "unresolved_findings": 0,
+  "source": "raw_scale_hit_incidence.tex",
+  "source_sha256": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442",
+  "source_bytes": 25227,
+  "statement_count": 4,
+  "labels": [
+    "thm:raw-scale-fibre",
+    "thm:raw-scale-period",
+    "thm:raw-first-half-code",
+    "thm:raw-scale-hit-incidence"
+  ],
+  "statements": [
+    {
+      "label": "thm:raw-scale-fibre",
+      "line": 15,
+      "status": "passed",
+      "rigorous_review": [
+        "The original shell bound gives gcd(k,p)=1; the raw equation therefore proves k divides C.",
+        "The residual identity is multiplied by exactly k; D0=k^2*D preserves all original denominators and the original full shell.",
+        "Every k with k^2 dividing D0 gives exactly one inverse raw tuple; prime exponents give the complete square-divisor fibre count.",
+        "Checked every factor quotient, Omega/Theta scale, gcd(a,u), original ordered d_y and d_z, their product S^2, their complement inverse and the source/main orientation swap.",
+        "The retained reduced ratio is (A0,p^(1-epsilon)*B0), with exact gate quotient C0; primality and A0<p prove reduction."
+      ]
+    },
+    {
+      "label": "thm:raw-scale-period",
+      "line": 131,
+      "status": "passed",
+      "rigorous_review": [
+        "Both rational affine functions are retained for every integer q; seed subtraction proves both integrality congruences without deleting k^2.",
+        "The primewise gcd identity gcd(k^2*m0,w)=gcd(k^2,w) gives the exact period ratio.",
+        "The modulo-12 intersection has precisely q=p+lcm(12,mk)*t with its inverse and the stated nonnegative parameter.",
+        "Returned positive tuples have the original ordered witness; the explicit a_q/q formula proves the full original prime-shell endpoints.",
+        "At each primitive return the full lifting scale fibre is exactly the square-divisor set of gcd(D0p,D0q)."
+      ]
+    },
+    {
+      "label": "thm:raw-first-half-code",
+      "line": 242,
+      "status": "passed",
+      "rigorous_review": [
+        "Positive multiplication proves the exact gate, including the no-input case for nonpositive coefficient and the integer ceiling otherwise.",
+        "Full finite digit ranges and successive quotient/remainder divisions prove the PCT rectangle inverse and total indicator domain.",
+        "The literal product selector gives the least hit or exactly NH; the original layer cutoffs follow from its outer digit.",
+        "The generic full-to-PCT map uses each code's own decoded shell; both inverse maps retain all four digits and every derived ordered coordinate.",
+        "The exact relation LambdaF=3*LambdaH and cF-cH=2*(A-1)*LambdaH+(q-1)*j/2 is checked without identifying the integer codes."
+      ]
+    },
+    {
+      "label": "thm:raw-scale-hit-incidence",
+      "line": 412,
+      "status": "passed",
+      "rigorous_review": [
+        "The raw seed's exact output period retains k^2 after the numerator/gcd calculation; the original input constraints and first-half predicate are unchanged.",
+        "Both fixed-scale projections have the full filtered prime-divisor fibres and bounded CRT root-branch inverses, including empty branches.",
+        "Adjoining the complete original output is a graph bijection with projection inverse; no seed, input, prime, scale, tag or order is forgotten.",
+        "Forgetting the scale has exactly the displayed gcd square-divisor fibre, is onto primitive incidence, and has the k=1 section.",
+        "Counting by primitive pairs or by scales/primes/disjoint root branches gives the exact two cardinality expressions.",
+        "Each Boolean expression uses one retained graph member; projection fibres are intersected with its tests and radix reindexing preserves its truth vector."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "RS-001",
+      "status": "resolved",
+      "initial_source_line": 17,
+      "issue": "The initial phrase all positive integer tuple coordinates literally excluded epsilon=0.",
+      "repair": "The final source explicitly requires only A,B,C,D>0 and separately epsilon in {0,1}.",
+      "verified_source_sha256": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442"
+    },
+    {
+      "id": "RS-002",
+      "status": "resolved",
+      "initial_source_line": 279,
+      "issue": "The total indicator and full-to-PCT domain referred to fixed ray shell symbols instead of explicitly defining every arbitrary code's own shell.",
+      "repair": "The final source defines R(c),a(c),all three tests on decoded digits, the full-code shell a(cF),its first-half condition,and the generic recoding formula.",
+      "verified_source_sha256": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442"
+    }
+  ],
+  "source_hash_history": [
+    {
+      "stage": "initial_full_read",
+      "sha256": "b9cd215ee8fb36ccb7f00f579f71f1d691f5b00f67f333d89a3f44dd30c7f888"
+    },
+    {
+      "stage": "pre_definition_repairs",
+      "sha256": "a36bd9dab2c5ad64c45495d329fa45291e7b4a870ce8ea4572158d0e9212b3e4"
+    },
+    {
+      "stage": "resolved_and_checked",
+      "sha256": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442"
+    }
+  ],
+  "orientation_review": {
+    "status": "passed",
+    "source_order": [
+      "d_z",
+      "d_y"
+    ],
+    "original_reconstruction_order": [
+      "d_y",
+      "d_z"
+    ],
+    "exact_map": "(r,s)->(s,r) on positive integer pairs with r*s=S^2; inverse is the same map."
+  },
+  "finite_checks": {
+    "status": "pass",
+    "runtime": {
+      "python": "3.13.9",
+      "sympy": "1.13.1"
+    },
+    "coverage": {
+      "canonical_seed_hits": 53,
+      "complete_hit_radix_bijections": 51,
+      "complete_incidence_graph_outputs": 97,
+      "first_half_positive_prime_returns": 222,
+      "first_half_rectangle_codes": 190296,
+      "full_rectangle_codes": 856332,
+      "full_shell_positive_divisors": 1524,
+      "nonpositive_first_half_coefficient_returns": 3,
+      "outside_first_half_positive_prime_returns": 3,
+      "positive_prime_returns": 225,
+      "positive_returned_raw_coordinates": 234,
+      "raw_seed_scales": 57,
+      "same_tuple_selected_projection_fibres": 1220,
+      "signed_integer_q_period_checks": 34608
+    },
+    "scaled_incidence_counts": {
+      "inputs": 100,
+      "complete_factorizations": 100,
+      "all_distinct_factor_primes": 149,
+      "largest_factor_prime": 114733609453,
+      "primitive_pairs": 82,
+      "retained_output_primes": 74,
+      "scaled_triples": 97,
+      "weighted_scale_count": 97,
+      "weighted_root_branch_count": 97,
+      "triples_by_scale": {
+        "1": 82,
+        "2": 15
+      },
+      "primitive_pairs_by_scale_fibre_size": {
+        "1": 67,
+        "2": 15
+      },
+      "certified_roots": 296,
+      "root_branches_including_empty": 296,
+      "empty_root_branches": 214
+    },
+    "source_sha256": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442"
+  },
+  "artifact_sha256": {
+    "RAW_SCALE_SUBREVIEW.md": "0033275bf20f503cdc1ec02161844ebd0575cd391afb6fa3e4878429e873503f",
+    "raw_scale_checks.py": "a47547d0815c8b79c487f9bbcb9bf4df0779f93ec5dc5c4e012b131f75753632",
+    "raw_scale_checks.json": "05b58a486c1c3e6ac59c46f9160256f3df6aa336369765d173287b226422b7a1",
+    "raw_scaled_incidence_fixture.py": "fc5dc840767dc9599f7e29e34395c38b07795d5ddf2e6d076c5310b03926f3eb",
+    "raw_scaled_incidence_fixture.json": "df97b8ef90c7708a905a8a1dd22409e93d6e5d0df13aa5865162d894694528c3"
+  },
+  "scope": "Independent complete proof review of four new statements and all fixtures. Only proof_review files were written. Finite exact checks supplement the universal proofs; no prime-coverage assertion is made."
+}

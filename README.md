@@ -4,6 +4,13 @@ A collaborative workbench for exact Erdős–Straus mathematics: proofs, explici
 
 ## Start reading
 
+Start with the [research map](WORKBENCH.md): the programmes, why they were tried,
+their full proofs, exact failed steps and present scope. For cooperation across
+independent workbenches, see [PolyClank](POLYCLANK.md) and
+[how to contribute](CONTRIBUTING.md). [Literature and attribution](LITERATURE.md)
+remain attached to the mathematics. The machine-readable entrypoint is
+[workbench.json](workbench.json).
+
 | Edition | Read | Proof sources and checks |
 | --- | --- | --- |
 | Published 9 September 2026 expanded supplement: exact bounded transport (86 pages) | [PDF](https://zenodo.org/records/22678971/files/07_Exact_Bounded_Transport_Expanded_72_Statements_2026-09-08.pdf) | [TeX and exact checks](https://zenodo.org/records/22678971/files/08_Exact_Bounded_Transport_72_Source_and_Checks_2026-09-08.zip) |
@@ -23,7 +30,7 @@ GitHub is the working and discussion entrypoint. Zenodo supplies citable, immuta
 - [Expanded manifest](https://zenodo.org/records/22678971/files/10_Expanded_72_Statement_Workbench_MANIFEST_2026-09-08.csv) and [SHA-256 checksums](https://zenodo.org/records/22678971/files/11_Expanded_72_Statement_Workbench_SHA256SUMS_2026-09-08.txt)
 - [Previous published edition: 10.5281/zenodo.22666493](https://doi.org/10.5281/zenodo.22666493)
 
-The expanded edition adds fourteen proved statements to the previous 58-statement supplement. Its 15-file source/check archive preserves exact proof hashes, finite checker receipts, citations, and the PDF-specific visual QA. Cite the exact version DOI for the edition actually used.
+The expanded edition adds fourteen proved statements to the previous 58-statement supplement. Its source/check archive contains 15 canonical proof modules within 85 files, preserving exact proof hashes, finite checker receipts, citations, and the PDF-specific visual QA. [Browse those complete sources here](research/expanded-2026-09-08/exact_bounded_transport_72). Cite the exact version DOI for the edition actually used.
 
 ## Preserved earlier materials
 
@@ -36,3 +43,10 @@ The expanded edition adds fourteen proved statements to the previous 58-statemen
 The collective author name is **The Clankers**. Credit follows the original human sources and contributors, not merely the later compilation. The mod-107 arithmetic-progression observation is credited to Reddit user **u/CommonCareful3149**, from the message supplied to the project; the unreceived two-page note is not treated as a source we have read. The expanded edition also credits arithmetic, positivity-code and prime-production contributions from **u/UmbrellaCorp_HR**; source-specific human references remain in the readers and source packages.
 
 Please use [Issues](https://github.com/KokunoYumeto/erdos-straus-foundation/issues) or pull requests for corrections and contributions. Include the exact edition, theorem or equation, hypotheses, domains, codomains, and a reproducible calculation. Finite computations retain their finite scope; coordinate correspondences are not silently promoted to global conjecture resolutions.
+
+## Current maintenance status
+
+Scheduled mirroring and publication are paused at the maintainer's request after
+the 9 September 2026 organization update. Reading, discussion, forks and independent
+contributions remain welcome. The published mathematics and historical files are
+preserved; this update adds navigation and source-addressable records.

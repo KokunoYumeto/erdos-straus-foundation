@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "proved_with_reproducible_finite_checks",
+  "records": [
+    {
+      "id": "CC-FINITE-POINT",
+      "source": "CONNES-CONSANI-PERICYCLIC-2023 Lemma 7.7",
+      "own_proof": "connes_primitive_intersections.tex proposition prop:connes-finite-return",
+      "domain": "actual finite prime exponent box of Div(N)",
+      "codomain": "embedded subgroup H_N=(1/N)Z of Q containing Z",
+      "forward": "union_{d|N}(1/d)Z",
+      "inverse": "Div(N)={d>0 integer:1/d in H_N}",
+      "retained_data": "All prime exponents and upper bounds returned by exact reciprocal test."
+    },
+    {
+      "id": "CC-PRIMITIVE-INTERSECTION",
+      "source": "Own finite specialization of CC-FINITE-POINT",
+      "own_proof": "connes_primitive_intersections.tex theorem thm:connes-common-pairs",
+      "domain": "Q_a intersection Q_b for the same prime p",
+      "codomain": "primitive reciprocal pairs in H_{p*gcd(a,b)} whose sum labels are divisible by lcm(R_a,R_b)",
+      "forward": "(m,n) -> (1/m,1/n)",
+      "inverse": "coordinatewise reciprocal",
+      "fibres": "singletons",
+      "noncoprime_moduli": "lcm(R_a,R_b)=R_a R_b/gcd(R_a,R_b)",
+      "witness_return": "k_t=(pt/(mn))*((m+n)/(4t-p)), (B_t,C_t)=(k_t m,k_t n)"
+    },
+    {
+      "id": "CC-ABSTRACT-POINT",
+      "source": "CONNES-CONSANI-PERICYCLIC-2023 Proposition 7.8",
+      "own_proof": "connes_primitive_intersections.tex proposition prop:connes-abstract-loss",
+      "domain": "embedded H_N with finite N",
+      "codomain": "abstract ordered-group isomorphism class",
+      "object_fibre": "all finite positive N",
+      "kernel_relation": "all pairs (N,M) of finite positive budgets",
+      "isomorphism": "H_N -> H_M, x -> (N/M)x",
+      "divisor_return": "u=N/e -> v=M/e exactly for e|gcd(N,M)",
+      "primitive_pair_return": "for S_a=pa,S_b=pb, coordinatewise isomorphism carries an integral primitive pair to an integral primitive pair iff a=b"
+    },
+    {
+      "id": "CC-FINITE-TRACE",
+      "source": "CONNES-CONSANI-TRACE-2023 section 3.1 equation (3.2); CONNES-CONSANI-PERICYCLIC-2023 equation (4.1)",
+      "own_proof": "connes_finite_boxes.tex theorem thm:trace and proposition prop:HH",
+      "domain": "K^X, K=Z or Q, X finite and q:X onto Y",
+      "codomain": "K^Y",
+      "forward": "q_!(f)(y)=sum_{q(x)=y}f(x)",
+      "kernel": "free basis e_x-e_base(y) within each fibre",
+      "fibres": "sum_y g(y)e_base(y)+kernel",
+      "positive_integral_return": "all nonnegative integer distributions independently on each fibre",
+      "hochshild_realization": "HH_0(direct_sum_y Mat_{X_y}(Q)) is Q^Y via block trace; kernel is trace-zero block matrices"
+    },
+    {
+      "id": "CC-MARK-DESCENT",
+      "source": "Own exact calculation on CC-FINITE-TRACE",
+      "own_proof": "connes_finite_boxes.tex theorem thm:trace and proposition prop:cocycle",
+      "mark": "s:X -> K",
+      "criterion": "q_!D_s factors through q_! iff s is constant on every q fibre",
+      "obstruction_cochain": "ds(x,x')=s(x')-s(x) for q(x)=q(x')",
+      "cohomology_calculation": "d(ds)=0, every degree-one cocycle is a coboundary by c(x,x')=c(base,x')-c(base,x), so H^1=0",
+      "critical_limit": "The relevant obstruction is nonvanishing of the actual cochain ds, not its cohomology class.",
+      "repair": "Refine q to (q,s); refined fibres are q^{-1}(y) intersection s^{-1}(epsilon), with the same exact trace and integral inverse formulas."
+    },
+    {
+      "id": "CC-MIDDLE-PRIMITIVE-RETURN",
+      "source": "Own exact construction",
+      "own_proof": "connes_primitive_intersections.tex proposition prop:connes-middle-return",
+      "domain": "Div(a^2) with original finite valuations",
+      "codomain": "ordered coprime pairs m,n dividing a",
+      "forward": "u -> (u/gcd(u,a),a/gcd(u,a))",
+      "inverse": "(m,n) -> a*m/n",
+      "fibres": "singletons",
+      "mark_equivalence": "R|(u+a) iff R|(m+n)",
+      "ratio": "u/a=m/n"
+    },
+    {
+      "id": "CC-MARKED-SUCCESSOR",
+      "source": "Composition of CONNES-CONSANI-PERICYCLIC-2023 finite-point specialization with CC-MIDDLE-PRIMITIVE-RETURN",
+      "own_proof": "connes_primitive_intersections.tex theorem thm:connes-marked-successor",
+      "fixed_hypothesis": "p=12h+1 prime; a,a+1 in {3h+1,...,9h}; R=4a-p",
+      "ordered_group_map": "H_(a^2) -> H_((a+1)^2), x -> (a^2/(a+1)^2)*x",
+      "reciprocal_divisor_return": "a^2 -> (a+1)^2 only",
+      "E_endpoint": "Impossible at both ends: R=3 mod 4 cannot divide (2a)^2+1",
+      "exact_marked_domain": "Middle channel at both endpoints iff R*(R+4)|(p+4)",
+      "primitive_composition": "mu_(a+1) after divisor return equals L after mu_a on the retained top divisor; L=[[1,1],[0,1]] maps (a,1) to (a+1,1)",
+      "denominator_map": "(a,p*a*(a+1)/R,p*(a+1)/R) -> (a+1,p*(a+1)*(a+2)/(R+4),p*(a+2)/(R+4))",
+      "parameter_classification": "R>=3,R=3 mod 4,t>=0; p=R*(R+4)*(4t+1)-4 prime with p=1 mod 12; a=R*(R+5)/4-1+R*(R+4)*t; shell bounds proved automatically",
+      "fibres": "singletons with p and shell labels retained",
+      "distinct_from": "Coordinatewise isomorphism H_pa -> H_p(a+1) on primitive reciprocal pairs, which has no primitive return; the present composition changes the ratio."
+    }
+  ],
+  "no_unproved_lifting_assumption": true,
+  "global_positivity_claim": false
+}

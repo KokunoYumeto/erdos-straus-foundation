@@ -1,0 +1,606 @@
+{
+  "format_version": 1,
+  "p": 1201,
+  "original_norm_p_vector": [
+    7,
+    24
+  ],
+  "original_norm_p_plus_2_vector": [
+    31,
+    11
+  ],
+  "orientation_determinant_original": -667,
+  "oriented_cone": [
+    [
+      31,
+      11
+    ],
+    [
+      7,
+      24
+    ]
+  ],
+  "coordinate_upper_bounds": [
+    31,
+    24
+  ],
+  "canonical_splits": [
+    {
+      "v": [
+        31,
+        11
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 667,
+      "bezout_e0": [
+        14,
+        5
+      ],
+      "a0": -301,
+      "r": 366,
+      "k": -1,
+      "e": [
+        -17,
+        -6
+      ],
+      "z": [
+        14,
+        5
+      ],
+      "children_determinants": [
+        1,
+        301
+      ],
+      "return_coordinates": [
+        575,
+        -11
+      ]
+    },
+    {
+      "v": [
+        14,
+        5
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 301,
+      "bezout_e0": [
+        -3,
+        -1
+      ],
+      "a0": 65,
+      "r": 65,
+      "k": 0,
+      "e": [
+        -3,
+        -1
+      ],
+      "z": [
+        11,
+        4
+      ],
+      "children_determinants": [
+        1,
+        236
+      ],
+      "return_coordinates": [
+        366,
+        -7
+      ]
+    },
+    {
+      "v": [
+        11,
+        4
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 236,
+      "bezout_e0": [
+        -3,
+        -1
+      ],
+      "a0": 65,
+      "r": 65,
+      "k": 0,
+      "e": [
+        -3,
+        -1
+      ],
+      "z": [
+        8,
+        3
+      ],
+      "children_determinants": [
+        1,
+        171
+      ],
+      "return_coordinates": [
+        157,
+        -3
+      ]
+    },
+    {
+      "v": [
+        8,
+        3
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 171,
+      "bezout_e0": [
+        -3,
+        -1
+      ],
+      "a0": 65,
+      "r": 65,
+      "k": 0,
+      "e": [
+        -3,
+        -1
+      ],
+      "z": [
+        5,
+        2
+      ],
+      "children_determinants": [
+        1,
+        106
+      ],
+      "return_coordinates": [
+        -52,
+        1
+      ]
+    },
+    {
+      "v": [
+        5,
+        2
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 106,
+      "bezout_e0": [
+        2,
+        1
+      ],
+      "a0": -41,
+      "r": 65,
+      "k": -1,
+      "e": [
+        -3,
+        -1
+      ],
+      "z": [
+        2,
+        1
+      ],
+      "children_determinants": [
+        1,
+        41
+      ],
+      "return_coordinates": [
+        -261,
+        5
+      ]
+    },
+    {
+      "v": [
+        2,
+        1
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 41,
+      "bezout_e0": [
+        -1,
+        0
+      ],
+      "a0": 24,
+      "r": 24,
+      "k": 0,
+      "e": [
+        -1,
+        0
+      ],
+      "z": [
+        1,
+        1
+      ],
+      "children_determinants": [
+        1,
+        17
+      ],
+      "return_coordinates": [
+        -731,
+        14
+      ]
+    },
+    {
+      "v": [
+        1,
+        1
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 17,
+      "bezout_e0": [
+        -1,
+        0
+      ],
+      "a0": 24,
+      "r": 7,
+      "k": 1,
+      "e": [
+        0,
+        1
+      ],
+      "z": [
+        1,
+        2
+      ],
+      "children_determinants": [
+        1,
+        10
+      ],
+      "return_coordinates": [
+        -1932,
+        37
+      ]
+    },
+    {
+      "v": [
+        1,
+        2
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 10,
+      "bezout_e0": [
+        0,
+        1
+      ],
+      "a0": 7,
+      "r": 7,
+      "k": 0,
+      "e": [
+        0,
+        1
+      ],
+      "z": [
+        1,
+        3
+      ],
+      "children_determinants": [
+        1,
+        3
+      ],
+      "return_coordinates": [
+        -3133,
+        60
+      ]
+    },
+    {
+      "v": [
+        1,
+        3
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 3,
+      "bezout_e0": [
+        0,
+        1
+      ],
+      "a0": 7,
+      "r": 1,
+      "k": 2,
+      "e": [
+        2,
+        7
+      ],
+      "z": [
+        3,
+        10
+      ],
+      "children_determinants": [
+        1,
+        2
+      ],
+      "return_coordinates": [
+        -10600,
+        203
+      ]
+    },
+    {
+      "v": [
+        3,
+        10
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "D": 2,
+      "bezout_e0": [
+        -1,
+        -3
+      ],
+      "a0": 3,
+      "r": 1,
+      "k": 1,
+      "e": [
+        2,
+        7
+      ],
+      "z": [
+        5,
+        17
+      ],
+      "children_determinants": [
+        1,
+        1
+      ],
+      "return_coordinates": [
+        -18067,
+        346
+      ]
+    }
+  ],
+  "canonical_leaves": [
+    {
+      "v": [
+        31,
+        11
+      ],
+      "w": [
+        14,
+        5
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        14,
+        5
+      ],
+      "w": [
+        11,
+        4
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        11,
+        4
+      ],
+      "w": [
+        8,
+        3
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        8,
+        3
+      ],
+      "w": [
+        5,
+        2
+      ],
+      "determinant": 1,
+      "contains_first": true,
+      "contains_second": true
+    },
+    {
+      "v": [
+        5,
+        2
+      ],
+      "w": [
+        2,
+        1
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        2,
+        1
+      ],
+      "w": [
+        1,
+        1
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        1,
+        1
+      ],
+      "w": [
+        1,
+        2
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        1,
+        2
+      ],
+      "w": [
+        1,
+        3
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        1,
+        3
+      ],
+      "w": [
+        3,
+        10
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        3,
+        10
+      ],
+      "w": [
+        5,
+        17
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    },
+    {
+      "v": [
+        5,
+        17
+      ],
+      "w": [
+        7,
+        24
+      ],
+      "determinant": 1,
+      "contains_first": false,
+      "contains_second": false
+    }
+  ],
+  "canonical_leaf_count": 11,
+  "complete_return_enumeration": {
+    "tag_1_count": 0,
+    "tag_1_reason": "upper slope31/11<3 forces k<1",
+    "tag_p_bounds": {
+      "t_min": 427,
+      "t_max": 4117,
+      "k_max": 1016
+    },
+    "tag_p_count": 1,
+    "canonical_leaf_counts": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "returns": [
+      {
+        "q": 23,
+        "k": 9,
+        "t": 470,
+        "b": 34,
+        "tag": 1201,
+        "leaf_index_zero_based": 3,
+        "witness": [
+          306,
+          15980,
+          172727820
+        ]
+      }
+    ],
+    "independent_k_b_enumeration": [
+      [
+        23,
+        9,
+        470,
+        34
+      ]
+    ]
+  },
+  "supplied_return": {
+    "matrix": [
+      [
+        23,
+        1201
+      ],
+      [
+        9,
+        470
+      ]
+    ],
+    "tag": 1201,
+    "b": 34,
+    "witness": [
+      306,
+      15980,
+      172727820
+    ],
+    "unique_leaf_index_zero_based": 3,
+    "unique_leaf": {
+      "v": [
+        8,
+        3
+      ],
+      "w": [
+        5,
+        2
+      ],
+      "determinant": 1,
+      "contains_first": true,
+      "contains_second": true
+    }
+  },
+  "known_empty_subcone": {
+    "v": [
+      24,
+      35
+    ],
+    "w": [
+      13,
+      19
+    ],
+    "is_canonical_leaf": false,
+    "reason": "first boundary has second coordinate35>canonical bound24; neither boundary appears among canonical vertices"
+  }
+}

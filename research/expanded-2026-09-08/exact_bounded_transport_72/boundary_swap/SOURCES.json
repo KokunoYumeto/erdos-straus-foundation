@@ -1,0 +1,30 @@
+{
+  "schema": "es-boundary-swap-sources-v1",
+  "sources": [
+    {
+      "relative_path_from_parent": "../es_modular_prime_dynamics_20260908/signed_margin_sieve.tex",
+      "sha256": "d51347ad95517c59d4922b526bc55ac1e7a9487f18503f415943b9870ddda6ef",
+      "read_scope": "Original radix and hit definitions; complete thm:margin-swap-bands and proof; original boundary and residual-eleven fixtures",
+      "used_result": "The antecedent same-tag rational involution, its shell-only integral gate, original oriented divisor correspondence, and exact code drop. The new proof extends this to all four tag/swap candidates and their obstruction fibres."
+    },
+    {
+      "relative_path_from_parent": "raw_scale_hit_incidence.tex",
+      "sha256": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442",
+      "read_scope": "Raw factor scale and complete fibre; first-half gate and exact change of unary radix",
+      "used_result": "The retained raw gcd coordinate k, square-divisor scale fibre, unchanged original ordered witnesses, and the two distinct original radix formulas."
+    },
+    {
+      "relative_path_from_parent": "first_two_shell_sieve.tex",
+      "sha256": "55b0653488fca8cd60c78b0d702d637a81f982e5f3ca797155777633fec96f7e",
+      "read_scope": "Complete file",
+      "used_result": "The exact occupied R3 prime-factor domain and original R7 p=373 records. The new proof determines the actual global first code on every occupied R3 domain, and computes each R7 rational companion without erasing its denominator obstruction."
+    },
+    {
+      "relative_path_from_parent": "unary_boolean_transport.tex",
+      "sha256": "6ee796fbc0a9ac286f9372e8f7345728dd8f785913dd79211e422ebdcf55af57",
+      "read_scope": "Original unary radix definitions and complete thm:unary-box and proof",
+      "used_result": "Full-range code and original ordered residual labels d_y and d_z. No relabelling of the original reconstruction coordinate is made."
+    }
+  ],
+  "original_mathematics": "boundary_swap_completion.tex proves all four new statements directly on their complete domains, with full calculations and inverse fibres; the finite checker is verification, not a substitute for those proofs."
+}

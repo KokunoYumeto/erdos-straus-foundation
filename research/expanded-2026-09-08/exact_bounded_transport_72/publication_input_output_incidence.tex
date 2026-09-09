@@ -1,0 +1,392 @@
+\paragraph{Contribution provenance.} The input--output prime construction continues the arithmetic and Euclid material of \texttt{u/UmbrellaCorp\_HR} \cite{UmbrellaContribution}, including equations (88)--(90) and (96). The complete incidence fibres and witness returns below are subsequent proved calculations.
+
+% Wrapper-free original contribution. Uses the theorem environments and
+% macros of bounded_transport.tex. Include after prop:output-crt.
+\subsection{The exact incidence between inputs and prescribed prime outputs}
+
+Retain the original prime \(p=12h+1\), \(h\ge1\), and one fixed
+positive integer seed
+\[
+ \varepsilon\in\{0,1\},\qquad A,B,C,D_p>0,\qquad
+ 4ABCD_p=A+p^{1-\varepsilon}B+pC.
+\]
+Its original first denominator is \(a_p=ABD_p\); in this
+construction retain the full original condition
+\(a_p\in A_p=\{3h+1,\ldots,9h\}\).
+Keep \(A,B,C,D_p,\varepsilon\) fixed, with
+\[
+ K_0=4ABC,\quad \Theta=C+(1-\varepsilon)B,\quad
+ \Omega=A+\varepsilon B,\quad
+ m=K_0/\gcd(K_0,\Theta).
+\]
+Here \(\Theta\) is the scalar of the preceding proposition.
+All other original seed decorations, including any primitive
+coordinate conditions, remain attached to this fixed seed.
+
+Retain the input data \(F>0\), \(\lambda_i,\beta_i\in\Z\),
+\(m_i>0\) of Proposition~\ref{prop:input-crt}, a positive output
+modulus \(\mathcal D\), and integer bounds \(1\le U\le V\).
+Run the complete input solvability tests of that proposition.
+If they fail, the input set and every incidence set below are empty.
+If they pass, denote its computed representative by
+\(a_{\rm in}\in\{0,\ldots,M-1\}\), keeping this name distinct
+from every first denominator, and write the exact input set as
+\begin{align*}
+ \mathcal X
+ &=\{X\in\Z:U\le X\le V,\ X\equiv0\pmod{6F},\
+                  \lambda_iX\equiv\beta_i\pmod{m_i}\ \forall i\}\\
+ &=\{a_{\rm in}+Mt:
+       \lceil(U-a_{\rm in})/M\rceil\le t\le
+       \lfloor(V-a_{\rm in})/M\rfloor\}.
+\end{align*}
+In particular \(6F\mid M\) and \(6F\mid a_{\rm in}\).
+This equality retains every original input congruence; the bounds
+are not substituted for its residue conditions.
+Every formula below involving \(a_{\rm in},M\) refers to this
+computed solvable branch.  When the input tests fail, use
+\(\mathcal X=\varnothing\), all incidence fibres empty and all
+their counts zero; no residue representative is invented.
+Let \(\mathfrak s\) denote this entire fixed labelled datum,
+including the seed, original prime and shell, input conditions,
+chosen bounds and prescribed output modulus.  Define
+\[
+ N(X)=X^4-X^2+1,
+\]
+and the following finite set of candidate output primes:
+\[
+ \mathcal Q_{\rm out}=
+ \{q\text{ prime}:p<q\le N(V),\quad
+       q\equiv1\pmod{12},\quad q\equiv1\pmod{\mathcal D},\quad
+       q\equiv p\pmod m\}.
+\]
+The requirement \(q>p\) is an explicit part of this output domain.
+For the source specialization
+\(F=p!\prod_\nu|E_\nu(p)|\), with every \(E_\nu(p)\ne0\),
+the proof below also shows that this requirement is automatic
+for every prime divisor of an actual \(N(X)\).
+
+\begin{theorem}[Complete input--output incidence and witness fibres]
+\label{thm:input-output-incidence}
+The finite incidence set
+\[
+ \mathcal I_{\mathfrak s}=
+ \{(X,q):X\in\mathcal X,\ q\in\mathcal Q_{\rm out},\ q\mid N(X)\}
+\]
+has the following exact projections, inverses and arithmetic returns.
+
+The projection \(\pi_X:\mathcal I_{\mathfrak s}\to\mathcal X\),
+\((X,q)\mapsto X\), has precisely the fibre
+\[
+ \pi_X^{-1}(X)=
+ \left\{(X,q):
+ \begin{array}{l}
+ q\mid N(X),\quad q\text{ prime},\quad p<q,\\
+ q\equiv1\pmod{12},\quad q\equiv1\pmod{\mathcal D},\quad
+ q\equiv p\pmod m
+ \end{array}\right\}.
+\]
+Thus its image consists of exactly those bounded inputs whose
+displayed filtered prime-divisor list is nonempty.
+
+For the other projection
+\(\pi_q:\mathcal I_{\mathfrak s}\to\mathcal Q_{\rm out}\),
+\((X,q)\mapsto q\), enumerate, for each candidate \(q\), the full
+finite root set
+\[
+ \mathcal R_q=
+ \{\rho\in\{0,\ldots,q-1\}:\rho^4-\rho^2+1\equiv0\pmod q\}.
+\]
+Put \(g_q=\gcd(M,q)\) and \(L_q=\lcm(M,q)\).
+Retain a root exactly when \(g_q\mid\rho-a_{\rm in}\).
+For each retained root define
+\[
+ h_{q,\rho}=
+ \operatorname{rem}_{q/g_q}
+ \left((M/g_q)^{-1}\frac{\rho-a_{\rm in}}{g_q}\right),\qquad
+ x_{q,\rho}=a_{\rm in}+M h_{q,\rho},
+\]
+where the inverse is modulo \(q/g_q\); when \(q/g_q=1\),
+set \(h_{q,\rho}=0\) without taking such an inverse.
+The complete integer fibre of the two required input residues is
+\(x_{q,\rho}+L_q\Z\).  Its complete bounded branch is
+\begin{equation}\label{eq:incidence-root-branch}
+ \mathcal T_{q,\rho}=
+ \left\{t\in\Z:
+    \left\lceil\frac{U-x_{q,\rho}}{L_q}\right\rceil
+       \le t\le
+    \left\lfloor\frac{V-x_{q,\rho}}{L_q}\right\rfloor\right\}.
+\end{equation}
+The disjoint union over all these retained roots maps bijectively
+onto \(\pi_q^{-1}(q)\) by
+\[
+ (\rho,t)\longmapsto(x_{q,\rho}+L_qt,q).
+\]
+Its exact inverse is
+\[
+ \rho=\operatorname{rem}_q X,\qquad
+ t=(X-x_{q,\rho})/L_q.
+\]
+Each branch has homogeneous congruence kernel \(L_q\Z\).
+The incidence projections themselves are maps of finite sets,
+with the displayed fibres; no additive kernel is assigned to them.
+
+In particular the full incidence cardinality, including every
+bounded lift rather than only one residue representative, is
+\begin{align}
+ |\mathcal I_{\mathfrak s}|
+ &=\sum_{X\in\mathcal X}|\pi_X^{-1}(X)|\notag\\
+ &=\sum_{q\in\mathcal Q_{\rm out}}
+   \ \sum_{\substack{\rho\in\mathcal R_q\\
+                         g_q\mid\rho-a_{\rm in}}}
+   \max\left\{0,
+       \left\lfloor\frac{V-x_{q,\rho}}{L_q}\right\rfloor
+      -\left\lceil\frac{U-x_{q,\rho}}{L_q}\right\rceil+1\right\}.
+       \label{eq:incidence-count}
+\end{align}
+Prime divisors are counted once as labels \(q\), irrespective of
+their multiplicity in \(N(X)\).
+
+Every incidence has the explicit original integer witness
+\begin{equation}\label{eq:incidence-witness}
+ D_q=\frac{\Omega+q\Theta}{4ABC},\qquad
+ (a_q,y_q,z_q)=(ABD_q,q^\varepsilon ACD_q,qBCD_q),
+ \qquad \frac4q=\frac1{a_q}+\frac1{y_q}+\frac1{z_q}.
+\end{equation}
+Writing \(h_q=(q-1)/12\), its first denominator lies in the full
+original interval
+\[
+ a_q\in A_q=\{3h_q+1,\ldots,9h_q\}.
+\]
+Its retained shell coordinates are
+\[
+ R_q=4a_q-q=\frac{A+q^{1-\varepsilon}B}{C}>0,
+ \qquad S_q=qa_q.
+\]
+The map
+\[
+ (X,q)\longmapsto
+ (\mathfrak s,X,q,D_q,a_q,R_q,S_q,y_q,z_q)
+\]
+is a bijection onto its explicitly defined graph, with inverse
+the projection retaining \(\mathfrak s,X,q\).
+The further projection to the labelled output
+\((q,D_q,a_q,R_q,S_q,y_q,z_q)\) has exactly the input fibre
+described by \eqref{eq:incidence-root-branch} for that \(q\).
+Thus no unlabelled inverse silently discards the original input,
+prime, seed, or witness ordering.  These maps determine the entire
+incidence set and every output witness or prove their exact fibres
+empty; they do not assert that either incidence projection is onto.
+\end{theorem}
+\begin{proof}
+First the output search bound is valid for every actual positive
+integer input.  Direct expansion gives
+\[
+ N(1)=1,\qquad
+ N(n+1)-N(n)=4n^3+6n^2+2n=2n(n+1)(2n+1)>0
+ \quad(n\ge1).
+\]
+Hence \(1\le X\le V\) implies \(N(X)\le N(V)\).
+Every positive prime divisor \(q\) of \(N(X)\) is at most
+\(N(X)\), so the stated finite candidate bound loses none.
+In fact a retained input is a positive multiple of \(6F\),
+so \(X\ge6\) and \(N(X)>1\), although the prescribed prime
+filter can still have an empty fibre.
+
+The candidate output list is itself fully computable using the
+preceding output CRT.  Put
+\(D_*=\lcm(12,\mathcal D)\).
+The two requirements with residue one are equivalent to
+\(q\equiv1\pmod{D_*}\), because divisibility by both moduli is
+divisibility by their least common multiple.
+Proposition~\ref{prop:output-crt}, with \(\mathcal D=D_*\),
+computes an empty residue set if
+\(\gcd(D_*,m)\nmid p-1\), and otherwise computes its complete
+residue \(q_0\pmod{L_{\rm out}}\),
+\(L_{\rm out}=\lcm(D_*,m)\).
+All candidate integers are exactly
+\[
+ q=q_0+L_{\rm out}v,\qquad
+ \left\lceil\frac{p+1-q_0}{L_{\rm out}}\right\rceil
+ \le v\le
+ \left\lfloor\frac{N(V)-q_0}{L_{\rm out}}\right\rfloor.
+\]
+Test each for primality to obtain precisely \(\mathcal Q_{\rm out}\).
+This test is finite and exact: an integer \(n>1\) is composite
+exactly when it has a divisor among
+\(2,\ldots,\lfloor\sqrt n\rfloor\).
+Indeed a proper factorization \(n=rs\), \(r,s>1\), has at least
+one factor no larger than its square root; conversely such a
+divisor gives a proper factorization.  The same test, combined
+with divisibility by the fixed integer \(N(X)\), computes the
+entire filtered prime-divisor fibre of \(\pi_X\).
+
+For the source specialization \(F=p!\prod_\nu|E_\nu(p)|\),
+the original input condition \(6F\mid X\) gives
+\(N(X)\equiv1\pmod{6F}\).  Every prime at most \(p\)
+divides \(p!\), hence \(6F\), and cannot divide \(N(X)\).
+Consequently every prime divisor is greater than \(p\).
+Likewise no such divisor divides any of the retained nonzero
+\(E_\nu(p)\).  This proves the promised exclusion from the
+original input divisibility, without adding a prime-generation
+or residue-occupancy assertion.  In the general positive \(F\)
+case the explicit filter \(q>p\) remains in force.
+
+Fix a candidate output \(q\).  Polynomial evaluation preserves
+integer congruences, so
+\[
+ q\mid N(X)\quad\Longleftrightarrow\quad
+ \rho:=\operatorname{rem}_q X\ \text{belongs to }\mathcal R_q.
+\]
+The left condition \(X\in\mathcal X\) already imposes precisely
+\(X\equiv a_{\rm in}\pmod M\) and its interval.
+For a chosen root its simultaneous congruence is
+\(X\equiv\rho\pmod q\).
+The noncoprime CRT compatibility condition is exactly
+\(g_q\mid\rho-a_{\rm in}\); an incompatible root gives no
+integer lift.  For a compatible root with \(q/g_q>1\),
+\(\gcd(M/g_q,q/g_q)=1\), and the displayed inverse and remainder
+give a unique integer \(h_{q,\rho}\) in
+\(\{0,\ldots,q/g_q-1\}\).
+The number \(x_{q,\rho}=a_{\rm in}+Mh_{q,\rho}\) is unchanged
+modulo \(M\), and modulo \(q\) the equation for this remainder
+gives \(Mh_{q,\rho}\equiv\rho-a_{\rm in}\).
+Thus it has both original residues.
+When \(q/g_q=1\), compatibility says directly that
+\(a_{\rm in}\equiv\rho\pmod q\); the stipulated zero correction
+has the same property and \(L_q=M\).
+
+The difference of any two common lifts is divisible by both
+\(M\) and \(q\), equivalently by \(L_q\).
+Conversely addition of any multiple of \(L_q\) preserves both
+residues.  This proves the complete coset and its homogeneous
+kernel.  Dividing the unchanged inequalities
+\(U\le x_{q,\rho}+L_qt\le V\) by positive \(L_q\) proves
+exactly the bounds in \eqref{eq:incidence-root-branch}.
+Every such value continues to satisfy \(6F\mid X\) and each
+\(\lambda_iX\equiv\beta_i\pmod{m_i}\), because it remains in
+the exact input residue class.  None of those conditions has been
+dropped after the second CRT merge.
+
+Two different root branches cannot contain the same \(X\):
+its residue in \(\{0,\ldots,q-1\}\) is unique.
+Inside one branch the positive number \(L_q\) makes its
+integer parameter \(t\) unique.  The displayed inverse therefore
+recovers both \(\rho\) and \(t\), and every incidence over \(q\)
+supplies that inverse.  This proves both directions of the
+branch bijection and its disjointness, including empty intervals.
+For integers \(b_-,b_+\), the number of integers between them is
+\(\max\{0,b_+-b_-+1\}\).  Applying this to each branch and
+summing gives the second line of \eqref{eq:incidence-count};
+the first counts the same finite labelled pairs by their input
+projection.  All searches are finite: candidate primes are
+bounded, each root list has \(q\) entries, and every branch
+has a finite integer interval.
+
+It remains to prove the complete arithmetic return rather than
+identify the output only by a residue class.
+The fixed seed gives
+\(K_0D_p=\Omega+p\Theta\).
+Writing \(g=\gcd(K_0,\Theta)\), \(\Theta=gw\), and
+\(K_0=gm\), one has \(\gcd(w,m)=1\).  Hence
+\[
+ D_q=D_p+\frac{(q-p)w}{m}
+\]
+is an integer exactly when \(q\equiv p\pmod m\), as proved
+in the preceding proposition.  Every retained output satisfies
+that congruence, and \(\Omega+q\Theta>0\) proves \(D_q>0\).
+Thus all three coordinates in \eqref{eq:incidence-witness} are
+positive integers.  For the two retained values of the tag,
+\[
+ \Omega+q\Theta=A+q^{1-\varepsilon}B+qC.
+\]
+Putting their three reciprocals over the common positive
+denominator \(qABCD_q\) therefore gives
+\[
+ \frac1{ABD_q}+\frac1{q^\varepsilon ACD_q}
+                 +\frac1{qBCD_q}
+ =\frac{qC+q^{1-\varepsilon}B+A}{qABCD_q}
+ =\frac{4ABCD_q}{qABCD_q}=\frac4q.
+\]
+No denominator permutation occurs in this calculation.
+
+The original full shell interval also survives on this exact
+domain.  Since \(\Theta\ge C\) and \(\Omega>0\),
+\[
+ \frac{a_q}{q}=\frac{\Theta}{4C}+\frac{\Omega}{4Cq}
+                    >\frac14.
+\]
+As \(q>p\) and \(\Omega>0\), the same exact expression gives
+\[
+ \frac{a_q}{q}
+ \le\frac{a_p}{p}
+ \le\frac{3(p-1)}{4p}
+ =\frac34-\frac{3}{4p}
+ \le\frac34-\frac{3}{4q}.
+\]
+The second inequality uses precisely the retained original bound
+\(a_p\le9h=3(p-1)/4\).
+Because \(a_q\) is an integer and \(q=12h_q+1\), the lower
+bound \(a_q>q/4\) is equivalent to \(a_q\ge3h_q+1\), and
+the upper bound is \(a_q\le3(q-1)/4=9h_q\).
+This proves membership in the full original \(A_q\).
+Finally \(4a_q=(\Omega+q\Theta)/C\) proves the displayed
+formula for \(R_q\).  Its numerator is positive, and
+\(R_q=4a_q-q\) proves its integrality; \(S_q=qa_q\) retains
+the original supply.  In particular \(R_q\equiv3\pmod4\)
+and \(3\le R_q\le2q-3\) follow from that same original
+shell interval and \(q\equiv1\pmod{12}\).
+
+The graph construction attaches only coordinates uniquely
+computed from the retained \(\mathfrak s,X,q\), so projection
+back to those labels is its two-sided inverse and every graph
+fibre is a singleton.  On forgetting \(X\) but retaining \(q\)
+and the fixed seed, all remaining witness coordinates are fixed;
+its full fibre is consequently exactly the previously computed
+root-branch union for that \(q\).  This proves the stated
+projections, their complete fibres and all integer reconstruction
+claims without replacing an input/output incidence by independent
+choices of its two coordinates.
+\end{proof}
+
+\paragraph{An actual prime divisor excluded by the prescribed class.}
+Retain the prime \(p=13\), \(\varepsilon=1\), and
+\[
+ A=1,\quad B=2,\quad C=1,\quad D_p=2.
+\]
+The seed identity is \(4\cdot1\cdot2\cdot1\cdot2=16=1+2+13\).
+Its original first denominator \(a_p=4\) lies in
+\(A_{13}=\{4,\ldots,9\}\), and its ordered witness is
+\((4,26,52)\); over denominator \(52\), its reciprocal
+numerators are \(13,2,1\), giving \(16/52=4/13\).
+Here \(K_0=8\), \(\Theta=1\), \(\Omega=3\), and \(m=8\).
+Choose \(F=13!=6\,227\,020\,800\), no further affine input
+constraints, and \(\mathcal D=12\).  The exact input residue is
+\(a_{\rm in}=0\) modulo \(M=6F=37\,362\,124\,800\).
+Set both retained interval endpoints equal to
+\[
+ U=V=X_0=635\,156\,121\,600=17M.
+\]
+Thus \(\mathcal X=\{X_0\}\), with its unique original lift
+parameter \(17\).  Direct integer division gives
+\[
+ X_0=73\cdot8\,700\,768\,789+3,
+ \qquad N(3)=3^4-3^2+1=73.
+\]
+Polynomial reduction therefore proves \(73\mid N(X_0)\).
+The integer \(73\) is prime: none of \(2,3,5,7\), the primes
+at most \(\sqrt{73}<9\), divides it.  It satisfies \(73>13\)
+and \(73\equiv1\pmod{12}=\pmod{\mathcal D}\).
+However \(73\equiv1\pmod8\), whereas \(13\equiv5\pmod8\).
+The exact proposed transport coefficient is
+\[
+ D_{73}=\frac{\Omega+73\Theta}{K_0}
+       =\frac{3+73}{8}=\frac{19}{2},
+\]
+which is not an integer.  Hence this actual cyclotomic prime
+divisor is excluded from \(\mathcal Q_{\rm out}\), and
+\((X_0,73)\notin\mathcal I_{\mathfrak s}\).
+The unfiltered prime-divisor pair remains explicitly recorded;
+the exact incidence tests retain every other divisor that passes
+all output constraints.  This fixture proves failure for this
+selected divisor and does not assert that the filtered fibre
+at \(X_0\) is empty.

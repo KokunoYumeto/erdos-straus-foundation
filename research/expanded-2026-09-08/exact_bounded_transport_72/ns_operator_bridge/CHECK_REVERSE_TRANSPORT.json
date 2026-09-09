@@ -1,0 +1,2456 @@
+{
+  "status": "checks_passed",
+  "scope": "Exact finite computations; independent source review is recorded separately.",
+  "arithmetic": "Q(sqrt2), rational torus coordinates and exact cyclotomic polynomial reduction; tau=2*pi*i retained symbolically with its exponent.",
+  "derivative_rule": "(tau^j c_n)e_n -> tau^(j+1)(v dot n)c_n e_n",
+  "inverse_rule": "(tau^j c_n)e_n -> tau^(j-1)c_n/(v dot n)e_n, original n != 0",
+  "sample_and_DFT_checks": 5100,
+  "obstruction_examples": 64,
+  "retained_spectra": 16,
+  "full_preimage_points": 13293,
+  "full_preimage_Gram_checks": 84,
+  "exact_directional_checks": 60,
+  "sharp_derivative_frequency_pairs": 4800,
+  "sharp_inverse_frequency_pairs": 4416,
+  "affine_fibre_DFT_checks": 204,
+  "restriction": [
+    {
+      "N": 1,
+      "exact_sample_and_DFT_checks": 25,
+      "obstruction_examples": [
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "1",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/2",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-1",
+              "sqrt2_coefficient": "1"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/2",
+              "sqrt2_coefficient": "1/2"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "1",
+              "sqrt2_coefficient": "-1"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/2",
+              "sqrt2_coefficient": "-1/2"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "1",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/2",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-1",
+              "sqrt2_coefficient": "2"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/14",
+              "sqrt2_coefficient": "1/7"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-3",
+              "sqrt2_coefficient": "1"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-3/14",
+              "sqrt2_coefficient": "-1/14"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "1",
+              "sqrt2_coefficient": "-3"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/34",
+              "sqrt2_coefficient": "-3/34"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "5",
+              "sqrt2_coefficient": "-2"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "5/34",
+              "sqrt2_coefficient": "1/17"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "N": 2,
+      "exact_sample_and_DFT_checks": 100,
+      "obstruction_examples": [
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "2",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/4",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-2",
+              "sqrt2_coefficient": "2"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/4",
+              "sqrt2_coefficient": "1/4"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "2",
+              "sqrt2_coefficient": "-2"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/4",
+              "sqrt2_coefficient": "-1/4"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "2",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/4",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-2",
+              "sqrt2_coefficient": "4"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/28",
+              "sqrt2_coefficient": "1/14"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-6",
+              "sqrt2_coefficient": "2"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-3/28",
+              "sqrt2_coefficient": "-1/28"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "2",
+              "sqrt2_coefficient": "-6"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/68",
+              "sqrt2_coefficient": "-3/68"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "10",
+              "sqrt2_coefficient": "-4"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "5/68",
+              "sqrt2_coefficient": "1/34"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "N": 3,
+      "exact_sample_and_DFT_checks": 225,
+      "obstruction_examples": [
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "3",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/6",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-3",
+              "sqrt2_coefficient": "3"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/6",
+              "sqrt2_coefficient": "1/6"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "3",
+              "sqrt2_coefficient": "-3"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/6",
+              "sqrt2_coefficient": "-1/6"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "3",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/6",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-3",
+              "sqrt2_coefficient": "6"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/42",
+              "sqrt2_coefficient": "1/21"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-9",
+              "sqrt2_coefficient": "3"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/14",
+              "sqrt2_coefficient": "-1/42"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "3",
+              "sqrt2_coefficient": "-9"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/102",
+              "sqrt2_coefficient": "-1/34"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "15",
+              "sqrt2_coefficient": "-6"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "5/102",
+              "sqrt2_coefficient": "1/51"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "exact_sample_and_DFT_checks": 400,
+      "obstruction_examples": [
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "4",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/8",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-4",
+              "sqrt2_coefficient": "4"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/8",
+              "sqrt2_coefficient": "1/8"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "4",
+              "sqrt2_coefficient": "-4"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/8",
+              "sqrt2_coefficient": "-1/8"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "4",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/8",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-4",
+              "sqrt2_coefficient": "8"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/56",
+              "sqrt2_coefficient": "1/28"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-12",
+              "sqrt2_coefficient": "4"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-3/56",
+              "sqrt2_coefficient": "-1/56"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "4",
+              "sqrt2_coefficient": "-12"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/136",
+              "sqrt2_coefficient": "-3/136"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "20",
+              "sqrt2_coefficient": "-8"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "5/136",
+              "sqrt2_coefficient": "1/68"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "exact_sample_and_DFT_checks": 625,
+      "obstruction_examples": [
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "5",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/10",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-5",
+              "sqrt2_coefficient": "5"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/10",
+              "sqrt2_coefficient": "1/10"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "5",
+              "sqrt2_coefficient": "-5"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/10",
+              "sqrt2_coefficient": "-1/10"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "5",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/10",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-5",
+              "sqrt2_coefficient": "10"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/70",
+              "sqrt2_coefficient": "1/35"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-15",
+              "sqrt2_coefficient": "5"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-3/70",
+              "sqrt2_coefficient": "-1/70"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "5",
+              "sqrt2_coefficient": "-15"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/170",
+              "sqrt2_coefficient": "-3/170"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "25",
+              "sqrt2_coefficient": "-10"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/34",
+              "sqrt2_coefficient": "1/85"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "N": 6,
+      "exact_sample_and_DFT_checks": 900,
+      "obstruction_examples": [
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "6",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/12",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-6",
+              "sqrt2_coefficient": "6"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/12",
+              "sqrt2_coefficient": "1/12"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "6",
+              "sqrt2_coefficient": "-6"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/12",
+              "sqrt2_coefficient": "-1/12"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "6",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/12",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-6",
+              "sqrt2_coefficient": "12"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/84",
+              "sqrt2_coefficient": "1/42"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-18",
+              "sqrt2_coefficient": "6"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/28",
+              "sqrt2_coefficient": "-1/84"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "6",
+              "sqrt2_coefficient": "-18"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/204",
+              "sqrt2_coefficient": "-1/68"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "30",
+              "sqrt2_coefficient": "-12"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "5/204",
+              "sqrt2_coefficient": "1/102"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "exact_sample_and_DFT_checks": 1225,
+      "obstruction_examples": [
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "7",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/14",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-7",
+              "sqrt2_coefficient": "7"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/14",
+              "sqrt2_coefficient": "1/14"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "7",
+              "sqrt2_coefficient": "-7"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/14",
+              "sqrt2_coefficient": "-1/14"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "7",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/14",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-7",
+              "sqrt2_coefficient": "14"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/98",
+              "sqrt2_coefficient": "1/49"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-21",
+              "sqrt2_coefficient": "7"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-3/98",
+              "sqrt2_coefficient": "-1/98"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "7",
+              "sqrt2_coefficient": "-21"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/238",
+              "sqrt2_coefficient": "-3/238"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "35",
+              "sqrt2_coefficient": "-14"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "5/238",
+              "sqrt2_coefficient": "1/119"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "N": 8,
+      "exact_sample_and_DFT_checks": 1600,
+      "obstruction_examples": [
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "8",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/16",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            0
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-8",
+              "sqrt2_coefficient": "8"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/16",
+              "sqrt2_coefficient": "1/16"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "8",
+              "sqrt2_coefficient": "-8"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/16",
+              "sqrt2_coefficient": "-1/16"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            0,
+            1
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "8",
+              "sqrt2_coefficient": "0"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/16",
+              "sqrt2_coefficient": "0"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-8",
+              "sqrt2_coefficient": "16"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "1/112",
+              "sqrt2_coefficient": "1/56"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            1,
+            -2
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "-24",
+              "sqrt2_coefficient": "8"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-3/112",
+              "sqrt2_coefficient": "-1/112"
+            }
+          }
+        },
+        {
+          "direction": "v_r",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "8",
+              "sqrt2_coefficient": "-24"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "-1/272",
+              "sqrt2_coefficient": "-3/272"
+            }
+          }
+        },
+        {
+          "direction": "v_t",
+          "k": [
+            -2,
+            3
+          ],
+          "derivative_restriction": {
+            "tau_power": 1,
+            "coefficient": {
+              "rational": "40",
+              "sqrt2_coefficient": "-16"
+            }
+          },
+          "inverse_restriction": {
+            "tau_power": -1,
+            "coefficient": {
+              "rational": "5/272",
+              "sqrt2_coefficient": "1/136"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "spectra": [
+    {
+      "N": 1,
+      "spectra": [
+        {
+          "original_spectrum": [
+            [
+              0,
+              0
+            ]
+          ],
+          "original_zero_excluded": false,
+          "coefficient_recoveries": 1,
+          "direction_checks": 4
+        },
+        {
+          "original_spectrum": [
+            [
+              1,
+              0
+            ]
+          ],
+          "original_zero_excluded": true,
+          "coefficient_recoveries": 1,
+          "direction_checks": 4
+        }
+      ]
+    },
+    {
+      "N": 2,
+      "spectra": [
+        {
+          "original_spectrum": [
+            [
+              0,
+              0
+            ],
+            [
+              -2,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "original_zero_excluded": false,
+          "coefficient_recoveries": 4,
+          "direction_checks": 16
+        },
+        {
+          "original_spectrum": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "original_zero_excluded": true,
+          "coefficient_recoveries": 4,
+          "direction_checks": 16
+        }
+      ]
+    },
+    {
+      "N": 3,
+      "spectra": [
+        {
+          "original_spectrum": [
+            [
+              0,
+              0
+            ],
+            [
+              -3,
+              4
+            ],
+            [
+              -6,
+              8
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          "original_zero_excluded": false,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        },
+        {
+          "original_spectrum": [
+            [
+              3,
+              0
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              -3,
+              8
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "original_zero_excluded": true,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "spectra": [
+        {
+          "original_spectrum": [
+            [
+              0,
+              0
+            ],
+            [
+              -4,
+              5
+            ],
+            [
+              -8,
+              10
+            ],
+            [
+              -12,
+              15
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          "original_zero_excluded": false,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        },
+        {
+          "original_spectrum": [
+            [
+              4,
+              0
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              -4,
+              10
+            ],
+            [
+              -8,
+              15
+            ],
+            [
+              9,
+              4
+            ]
+          ],
+          "original_zero_excluded": true,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "spectra": [
+        {
+          "original_spectrum": [
+            [
+              0,
+              0
+            ],
+            [
+              -5,
+              6
+            ],
+            [
+              -10,
+              12
+            ],
+            [
+              -15,
+              18
+            ],
+            [
+              -20,
+              24
+            ]
+          ],
+          "original_zero_excluded": false,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        },
+        {
+          "original_spectrum": [
+            [
+              5,
+              0
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              -5,
+              12
+            ],
+            [
+              -10,
+              18
+            ],
+            [
+              -15,
+              24
+            ]
+          ],
+          "original_zero_excluded": true,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        }
+      ]
+    },
+    {
+      "N": 6,
+      "spectra": [
+        {
+          "original_spectrum": [
+            [
+              0,
+              0
+            ],
+            [
+              -6,
+              7
+            ],
+            [
+              -12,
+              14
+            ],
+            [
+              -18,
+              21
+            ],
+            [
+              -24,
+              28
+            ]
+          ],
+          "original_zero_excluded": false,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        },
+        {
+          "original_spectrum": [
+            [
+              6,
+              0
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              -6,
+              14
+            ],
+            [
+              -12,
+              21
+            ],
+            [
+              -18,
+              28
+            ]
+          ],
+          "original_zero_excluded": true,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "spectra": [
+        {
+          "original_spectrum": [
+            [
+              0,
+              0
+            ],
+            [
+              -7,
+              8
+            ],
+            [
+              -14,
+              16
+            ],
+            [
+              -21,
+              24
+            ],
+            [
+              -28,
+              32
+            ]
+          ],
+          "original_zero_excluded": false,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        },
+        {
+          "original_spectrum": [
+            [
+              7,
+              0
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              -7,
+              16
+            ],
+            [
+              -14,
+              24
+            ],
+            [
+              -21,
+              32
+            ]
+          ],
+          "original_zero_excluded": true,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        }
+      ]
+    },
+    {
+      "N": 8,
+      "spectra": [
+        {
+          "original_spectrum": [
+            [
+              0,
+              0
+            ],
+            [
+              -8,
+              9
+            ],
+            [
+              -16,
+              18
+            ],
+            [
+              -24,
+              27
+            ],
+            [
+              -32,
+              36
+            ]
+          ],
+          "original_zero_excluded": false,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        },
+        {
+          "original_spectrum": [
+            [
+              8,
+              0
+            ],
+            [
+              0,
+              9
+            ],
+            [
+              -8,
+              18
+            ],
+            [
+              -16,
+              27
+            ],
+            [
+              -24,
+              36
+            ]
+          ],
+          "original_zero_excluded": true,
+          "coefficient_recoveries": 5,
+          "direction_checks": 20
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "N": 1,
+      "m": 0,
+      "original_spectrum": [
+        [
+          1,
+          0
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          1,
+          0
+        ]
+      ],
+      "full_preimage_points": 1,
+      "target_fibre_size": 1,
+      "full_preimage_Gram_checks": 1,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 2
+    },
+    {
+      "N": 1,
+      "m": 1,
+      "original_spectrum": [
+        [
+          1,
+          0
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          3,
+          1
+        ]
+      ],
+      "full_preimage_points": 14,
+      "target_fibre_size": 14,
+      "full_preimage_Gram_checks": 1,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 2
+    },
+    {
+      "N": 1,
+      "m": 2,
+      "original_spectrum": [
+        [
+          1,
+          0
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          10,
+          8
+        ]
+      ],
+      "full_preimage_points": 196,
+      "target_fibre_size": 196,
+      "full_preimage_Gram_checks": 1,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 2
+    },
+    {
+      "N": 2,
+      "m": 0,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "full_preimage_points": 4,
+      "target_fibre_size": 1,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 6
+    },
+    {
+      "N": 2,
+      "m": 1,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "full_preimage_points": 56,
+      "target_fibre_size": 14,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "exact_directional_checks": 6
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          8,
+          26
+        ]
+      ],
+      "full_preimage_points": 784,
+      "target_fibre_size": 196,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "exact_directional_checks": 6
+    },
+    {
+      "N": 3,
+      "m": 0,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "full_preimage_points": 9,
+      "target_fibre_size": 1,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 6
+    },
+    {
+      "N": 3,
+      "m": 1,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "full_preimage_points": 126,
+      "target_fibre_size": 14,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 6
+    },
+    {
+      "N": 3,
+      "m": 2,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          8,
+          26
+        ]
+      ],
+      "full_preimage_points": 1764,
+      "target_fibre_size": 196,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 6
+    },
+    {
+      "N": 7,
+      "m": 0,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "full_preimage_points": 49,
+      "target_fibre_size": 1,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 6
+    },
+    {
+      "N": 7,
+      "m": 1,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "full_preimage_points": 686,
+      "target_fibre_size": 14,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 6
+    },
+    {
+      "N": 7,
+      "m": 2,
+      "original_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "transported_spectrum": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          8,
+          26
+        ]
+      ],
+      "full_preimage_points": 9604,
+      "target_fibre_size": 196,
+      "full_preimage_Gram_checks": 9,
+      "fixed_grid_alias_pairs": [],
+      "exact_directional_checks": 6
+    }
+  ],
+  "sharp_spectrum_criteria": [
+    {
+      "N": 1,
+      "integer_frequencies": 25,
+      "derivative_pairs": 600,
+      "inverse_pairs": 552,
+      "colliding_frequency_pairs": 300
+    },
+    {
+      "N": 2,
+      "integer_frequencies": 25,
+      "derivative_pairs": 600,
+      "inverse_pairs": 552,
+      "colliding_frequency_pairs": 72
+    },
+    {
+      "N": 3,
+      "integer_frequencies": 25,
+      "derivative_pairs": 600,
+      "inverse_pairs": 552,
+      "colliding_frequency_pairs": 28
+    },
+    {
+      "N": 4,
+      "integer_frequencies": 25,
+      "derivative_pairs": 600,
+      "inverse_pairs": 552,
+      "colliding_frequency_pairs": 12
+    },
+    {
+      "N": 5,
+      "integer_frequencies": 25,
+      "derivative_pairs": 600,
+      "inverse_pairs": 552,
+      "colliding_frequency_pairs": 0
+    },
+    {
+      "N": 6,
+      "integer_frequencies": 25,
+      "derivative_pairs": 600,
+      "inverse_pairs": 552,
+      "colliding_frequency_pairs": 0
+    },
+    {
+      "N": 7,
+      "integer_frequencies": 25,
+      "derivative_pairs": 600,
+      "inverse_pairs": 552,
+      "colliding_frequency_pairs": 0
+    },
+    {
+      "N": 8,
+      "integer_frequencies": 25,
+      "derivative_pairs": 600,
+      "inverse_pairs": 552,
+      "colliding_frequency_pairs": 0
+    }
+  ],
+  "affine_fibre_checks": [
+    {
+      "N": 1,
+      "original_spectrum_size": 25,
+      "occupied_classes": 1,
+      "free_coefficients": 24,
+      "DFT_coefficients_checked": 1
+    },
+    {
+      "N": 2,
+      "original_spectrum_size": 25,
+      "occupied_classes": 4,
+      "free_coefficients": 21,
+      "DFT_coefficients_checked": 4
+    },
+    {
+      "N": 3,
+      "original_spectrum_size": 25,
+      "occupied_classes": 9,
+      "free_coefficients": 16,
+      "DFT_coefficients_checked": 9
+    },
+    {
+      "N": 4,
+      "original_spectrum_size": 25,
+      "occupied_classes": 16,
+      "free_coefficients": 9,
+      "DFT_coefficients_checked": 16
+    },
+    {
+      "N": 5,
+      "original_spectrum_size": 25,
+      "occupied_classes": 25,
+      "free_coefficients": 0,
+      "DFT_coefficients_checked": 25
+    },
+    {
+      "N": 6,
+      "original_spectrum_size": 25,
+      "occupied_classes": 25,
+      "free_coefficients": 0,
+      "DFT_coefficients_checked": 36
+    },
+    {
+      "N": 7,
+      "original_spectrum_size": 25,
+      "occupied_classes": 25,
+      "free_coefficients": 0,
+      "DFT_coefficients_checked": 49
+    },
+    {
+      "N": 8,
+      "original_spectrum_size": 25,
+      "occupied_classes": 25,
+      "free_coefficients": 0,
+      "DFT_coefficients_checked": 64
+    }
+  ],
+  "sharp_inverse_checks": {
+    "pell_original_vector_identities": 80,
+    "typed_common_absolute_inverse_identities": 864,
+    "Fourier_constant": "tau=2*pi*i; inverse identities have tau exponent -1 on both sides",
+    "scope": "Finite exact checks, not numerical evidence for the analytic limit or a PDE theorem"
+  },
+  "source_sha256_at_check": "cf42ea9475aecd08268d1af5795fcbec92ca62b67d3ec0f73ddb04e187c74d62",
+  "proof_sources_sha256_at_check": {
+    "reverse_proof_transport.tex": "cf42ea9475aecd08268d1af5795fcbec92ca62b67d3ec0f73ddb04e187c74d62",
+    "reverse_smooth_inverse.tex": "b9083db518d98550f2bd9928a0fbbc061d3a70ee846441774ce331be5288ad5b"
+  },
+  "proof_statement_counts": {
+    "reverse_proof_transport.tex": 5,
+    "reverse_smooth_inverse.tex": 5
+  },
+  "checker_sha256": "bd4678a1c628dc343a12f89479d36e4908feec17dcd380d531ee1d314ce0338b"
+}

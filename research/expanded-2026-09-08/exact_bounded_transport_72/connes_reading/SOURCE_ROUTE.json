@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "record_type": "local_primary_source_route_and_content_reading",
+  "recorded_date": "2026-09-08",
+  "source": {
+    "source_node_id": "SNODE-C5F2DE218576CD68F9158ACE",
+    "file_id": "LFILE-DA1C3A0A16DBC87D58DB0B4F",
+    "title": "Cyclic Cohomology at 40: Achievements and Future Prospects",
+    "series": "Proceedings of Symposia in Pure Mathematics",
+    "volume": 105,
+    "year": 2023,
+    "editors_as_printed": [
+      "A. Connes",
+      "C. Consani",
+      "B. I. Dundas",
+      "M. Khalkhali",
+      "H. Moscovici"
+    ],
+    "path": "Private bibliographic source copy; title and source digest retained",
+    "sha256": "0e790d2b383c6a429091345db97ad832cbf346a73d273def39b5cae8271bbfd0",
+    "bytes": 10854617,
+    "pdf_page_count": 592,
+    "title_pages_read": [
+      1,
+      2,
+      4
+    ],
+    "toc_pdf_pages_fully_read_and_visually_checked": [
+      6,
+      7
+    ],
+    "preface_pdf_pages_fully_read": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "relevant_chapters": [
+    {
+      "id": "CONNES-CONSANI-TRACE-2023",
+      "title": "Hochschild homology, trace map and zeta-cycles",
+      "human_authors": [
+        "Alain Connes",
+        "Caterina Consani"
+      ],
+      "doi": "10.1090/pspum/105/01896",
+      "printed_page_range_inclusive": [
+        83,
+        102
+      ],
+      "pdf_page_range_inclusive": [
+        94,
+        113
+      ],
+      "reading_status": "complete including references and final blank page",
+      "selected_loci": [
+        {
+          "locator": "Proposition 3.1",
+          "printed_pages": [
+            87,
+            88
+          ],
+          "pdf_pages": [
+            98,
+            99
+          ],
+          "use": "Concrete kernel of degree-zero Hochschild pushforward as coinvariant differences."
+        },
+        {
+          "locator": "Section 3.1, equation (3.2)",
+          "printed_pages": [
+            88,
+            89
+          ],
+          "pdf_pages": [
+            99,
+            100
+          ],
+          "use": "Trace sums diagonal data over a quotient fibre; finite specialization proved by matrix units."
+        },
+        {
+          "locator": "Theorem 5.4 and proof",
+          "printed_pages": [
+            98,
+            99,
+            100
+          ],
+          "pdf_pages": [
+            109,
+            110,
+            111
+          ],
+          "use": "Read fully to verify the actual smooth-sheaf lifting argument and avoid importing it as an integral finite-box lifting assertion. Not used as a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "CONNES-CONSANI-PERICYCLIC-2023",
+      "title": "Cyclic theory and the pericyclic category",
+      "human_authors": [
+        "Alain Connes",
+        "Caterina Consani"
+      ],
+      "doi": "10.1090/pspum/105/01897",
+      "printed_page_range_inclusive": [
+        103,
+        122
+      ],
+      "pdf_page_range_inclusive": [
+        114,
+        133
+      ],
+      "reading_status": "complete including references",
+      "selected_loci": [
+        {
+          "locator": "Section 4, equations (4.1)-(4.2)",
+          "printed_pages": [
+            108,
+            109
+          ],
+          "pdf_pages": [
+            119,
+            120
+          ],
+          "use": "Finite pointed-set divisor pushforward and an example of keeping a bound without subgroup closure."
+        },
+        {
+          "locator": "Definition 7.4, equations (7.8)-(7.9)",
+          "printed_pages": [
+            117,
+            118
+          ],
+          "pdf_pages": [
+            128,
+            129
+          ],
+          "use": "Actual pericyclic pullback equates the degree and Frobenius functors; it is not a finite-box CRT theorem. Read but not used as theorem dependency."
+        },
+        {
+          "locator": "Lemma 7.7, Section 7.4",
+          "printed_pages": [
+            120
+          ],
+          "pdf_pages": [
+            131
+          ],
+          "use": "Divisor-category points retain embedded subgroups Z subset H subset Q; finite specialization H_N=(1/N)Z proved here with exact divisor inverse."
+        },
+        {
+          "locator": "Proposition 7.8, equation (7.14)",
+          "printed_pages": [
+            121
+          ],
+          "pdf_pages": [
+            132
+          ],
+          "use": "Further point quotient passes to abstract ordered groups; exact finite fibre and loss of primitive transport calculated here."
+        }
+      ]
+    }
+  ],
+  "complete_toc_inventory": [
+    [
+      1,
+      "Chern-Connes-Karoubi character isomorphisms and algebras of symbols of pseudodifferential operators",
+      [
+        "Alexandre Baldare",
+        "Moulay Benameur",
+        "Victor Nistor"
+      ]
+    ],
+    [
+      29,
+      "On Perrot's index cocycles",
+      [
+        "Jonathan Block",
+        "Nigel Higson",
+        "Jesus Sanchez Jr"
+      ]
+    ],
+    [
+      63,
+      "The Chern-Baum-Connes assembly map for Lie groupoids",
+      [
+        "P. Carrillo Rouse"
+      ]
+    ],
+    [
+      83,
+      "Hochschild homology, trace map and zeta-cycles",
+      [
+        "Alain Connes",
+        "Caterina Consani"
+      ]
+    ],
+    [
+      103,
+      "Cyclic theory and the pericyclic category",
+      [
+        "Alain Connes",
+        "Caterina Consani"
+      ]
+    ],
+    [
+      123,
+      "The image of Bott periodicity in cyclic homology",
+      [
+        "Joachim Cuntz"
+      ]
+    ],
+    [
+      135,
+      "Applications of topological cyclic homology to algebraic K-theory",
+      [
+        "Bjørn Ian Dundas"
+      ]
+    ],
+    [
+      161,
+      "Algebraic K-theory and generalized stable homotopy theory",
+      [
+        "David Gepner"
+      ]
+    ],
+    [
+      185,
+      "Cyclic cohomology and the extended Heisenberg calculus of Epstein and Melrose",
+      [
+        "Alexander Gorokhovsky",
+        "Erik van Erp"
+      ]
+    ],
+    [
+      197,
+      "Topological cyclic homology and the Fargues-Fontaine curve",
+      [
+        "Lars Hesselholt"
+      ]
+    ],
+    [
+      211,
+      "Hopf cyclic cohomology and beyond",
+      [
+        "Masoud Khalkhali",
+        "Ilya Shapiro"
+      ]
+    ],
+    [
+      239,
+      "The Hochschild cohomology of uniform Roe algebras",
+      [
+        "Matthew Lorentz"
+      ]
+    ],
+    [
+      257,
+      "Quantum differentiability - the analytical perspective",
+      [
+        "E. McDonald",
+        "F. Sukochev",
+        "X. Xiong"
+      ]
+    ],
+    [
+      281,
+      "Local cyclic homology for nonarchimedean Banach algebras",
+      [
+        "Ralf Meyer",
+        "Devarshi Mukherjee"
+      ]
+    ],
+    [
+      297,
+      "On the van Est analogy in Hopf cyclic cohomology",
+      [
+        "Henri Moscovici"
+      ]
+    ],
+    [
+      311,
+      "Primary and secondary invariants of Dirac operators on G-proper manifolds",
+      [
+        "Paolo Piazza",
+        "Xiang Tang"
+      ]
+    ],
+    [
+      353,
+      "Localization in Hochschild homology",
+      [
+        "Markus J. Pflaum"
+      ]
+    ],
+    [
+      371,
+      "Cyclic homology and group actions",
+      [
+        "Raphaël Ponge"
+      ]
+    ],
+    [
+      397,
+      "Cyclic cocycles and quantized pairings in materials science",
+      [
+        "Emil Prodan"
+      ]
+    ],
+    [
+      435,
+      "Periodic cyclic homology of crossed products",
+      [
+        "Michael Puschnigg"
+      ]
+    ],
+    [
+      457,
+      "Trace expansions and equivariant traces on an algebra of Fourier integral operators on R^n",
+      [
+        "Anton Savin",
+        "Elmar Schrohe"
+      ]
+    ],
+    [
+      477,
+      "Cartan motion group and orbital integrals",
+      [
+        "Yanli Song",
+        "Xiang Tang"
+      ]
+    ],
+    [
+      491,
+      "On noncommutative crystalline cohomology",
+      [
+        "Boris Tsygan"
+      ]
+    ],
+    [
+      513,
+      "Cyclic cocycles and one-loop corrections in the spectral action",
+      [
+        "Teun D.H. van Nuland",
+        "Walter D. van Suijlekom"
+      ]
+    ],
+    [
+      535,
+      "l1-higher index, l1-higher rho invariant and cyclic cohomology",
+      [
+        "Jinmin Wang",
+        "Zhizhang Xie",
+        "Guoliang Yu"
+      ]
+    ]
+  ],
+  "toc_inventory_author_provenance": "All chapter-opening headers checked locally. Initials retained when the opening header supplied only initials. Relevant two chapters supply full human names.",
+  "unread_boundary": "All other chapters were inspected only at their opening headers, with introductory text incidentally read for the Gepner and Hesselholt chapters. No theorem from an unread chapter is asserted or used.",
+  "rights": "Read locally from user-supplied PDF. No protected bulk text or source-page images are included in deliverables. Outputs contain original proofs and bibliographic locators."
+}

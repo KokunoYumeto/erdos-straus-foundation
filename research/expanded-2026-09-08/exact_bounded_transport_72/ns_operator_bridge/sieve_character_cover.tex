@@ -1,0 +1,295 @@
+\subsection{Exact character correction for every original sieve fibre}
+\label{sec:ns-character-sieve}
+
+The torus operator in the preceding subsection acts on the arithmetic
+characters of each original shell. We now calculate this action and all
+of its fibres, including those needed when its degree shares factors with
+the finite character group. No Navier--Stokes existence assertion is a
+hypothesis of these calculations.
+
+Fix the original prime $p=12h+1$, $h\geq1$, and an original shell
+$3h+1\leq a\leq9h$. Retain $R=4a-p$, $S=pa$, the distinct increasing
+prime factors $\ell_1,\ldots,\ell_s$ of $a$, and their original positive
+valuations $v_1,\ldots,v_s$. Put
+\[
+ G=(\mathbb Z/R\mathbb Z)^\times,\qquad
+ \widehat G=\operatorname{Hom}(G,\mathbb R/\mathbb Z),\qquad
+ \langle\chi,g\rangle=\exp(2\pi i\chi(g)).
+\]
+We write $G$ multiplicatively and $\widehat G$ additively. Thus
+$\chi(gg')=\chi(g)+\chi(g')$ in $\mathbb R/\mathbb Z$, with the
+displayed $2\pi i$ retained in every complex character. Let $n=|G|$.
+The exact change from the preceding subsection's multiplicative
+dual is the isomorphism
+$\chi\mapsto(g\mapsto\exp(2\pi i\chi(g)))$; its inverse takes the
+unique class in $\mathbb R/\mathbb Z$ with that exponential at each
+$g$. The exponential has kernel $\mathbb Z$ on $\mathbb R$ and
+maps onto the complex unit circle. Consequently both inverse
+compositions are identities and the character equations are preserved.
+Thus the two dual conventions are explicitly related, with singleton
+fibres; neither is silently substituted for the other.
+Every element $g\in G$ has order dividing $n$: its cyclic subgroup
+partitions $G$ into cosets, each with that order. Consequently
+$\chi(g)\in n^{-1}\mathbb Z/\mathbb Z$. The complete set $\widehat G$
+is therefore finite and can be obtained by enumerating all functions
+$G\to n^{-1}\mathbb Z/\mathbb Z$ and retaining exactly the identity
+and product equations. This is a finite construction on the actual
+unit multiplication table; it imposes no cyclicity hypothesis on $G$.
+
+For completeness, these characters separate $G$. If $g$ has order
+$o>1$, define $g^j\mapsto j/o$ on its cyclic subgroup. To extend an
+additive character from a subgroup $H$ of any finite abelian group to
+$H+\mathbb Zx$, choose the least $m>0$ with $mx\in H$, choose any
+$\beta\in\mathbb R/\mathbb Z$ with $m\beta=\chi(mx)$, and set
+$\chi'(h+jx)=\chi(h)+j\beta$. If $h+jx=h'+j'x$, then
+$j-j'=qm$ and $h-h'=-qmx$, so the two values agree. The character
+equations follow by addition. Such a $\beta$ exists: if $r\in\mathbb R$
+represents $\chi(mx)$, then $r/m$ is a choice. Adjoining elements
+until the finite group is exhausted extends the prescribed nonzero
+value $1/o$. This proves separation without an unproved extension
+assumption.
+
+\begin{lemma}[The original labelled packet as an exact character projection]
+\label{lem:ns-labelled-character-packet}
+Let $\mathbf X=(X_1,\ldots,X_s)$ be independent formal variables. For
+$t\in G$ define
+\[
+ \begin{split}
+ P_a(\chi;\mathbf X)
+   &=\prod_{j=1}^s\left(\sum_{e_j=0}^{2v_j}
+           X_j^{e_j}\langle\chi,[\ell_j]\rangle^{e_j}\right),\\
+ C_{a,t}(\mathbf X)
+   &=\frac1{|\widehat G|}\sum_{\chi\in\widehat G}
+          \langle\chi,t\rangle^{-1}P_a(\chi;\mathbf X).
+ \end{split}
+\]
+Then the complete coefficient identity is
+\[
+ C_{a,t}(\mathbf X)=
+ \sum_{\substack{0\leq e_j\leq2v_j\ (1\leq j\leq s)\\
+                   \prod_j\ell_j^{e_j}\equiv t\pmod R}}
+       \prod_{j=1}^s X_j^{e_j}.
+\]
+In particular every retained coefficient is $1$, and the exponent of
+$X_j$ is the original valuation of the corresponding positive divisor
+$u=\prod_j\ell_j^{e_j}$. The cardinalities of the original exterior
+and middle fibres are respectively
+\[
+ C_{a,-4^{-1}}(\mathbf1)=|E_a|,\qquad
+ C_{a,-a}(\mathbf1)=|M_a|.
+\]
+\end{lemma}
+\begin{proof}
+For $g=1$, every character value is $1$. For $g\ne1$, choose
+$\eta$ with $\langle\eta,g\rangle\ne1$ by separation. Translation
+$\chi\mapsto\chi+\eta$ permutes the finite set $\widehat G$; hence
+its character sum equals itself multiplied by
+$\langle\eta,g\rangle$ and is zero. Expand the finite product in
+$P_a$ without changing any exponent interval. For the term with
+the specified original vector $e$, character averaging is therefore
+$1$ exactly when $(\prod_j[\ell_j]^{e_j})t^{-1}=1$, and is otherwise
+$0$. Distinct original vectors have distinct formal monomials and
+distinct positive integers by unique prime factorization. This proves
+the identity and both inverse coordinate assertions. Since $R$ is
+odd and $\gcd(a,R)=1$, both targets are units. Their respective
+equations are exactly $R\mid4u+1$ and $R\mid u+a$.
+\end{proof}
+
+The exact comparison with the source's two-dimensional auxiliary torus
+is, for each retained unit $g\in G$, the homomorphism
+\[
+ E_g:\widehat G^2\longrightarrow(\mathbb R/\mathbb Z)^2,
+ \qquad E_g(\alpha,\beta)=(\alpha(g),\beta(g)).
+\]
+The family $(E_g)_{g\in G}$ is injective: equality on all $g$ is
+equality of the two functions. Its image consists precisely of pairs
+of tables satisfying the character identity and product equations
+above. Its inverse reads those two tables. Thus all these coordinates,
+not a selected single evaluation, retain the full arithmetic datum.
+With the literal source matrix $J_g=\left(\begin{smallmatrix}3&1\\1&5\end{smallmatrix}\right)$,
+define
+\[
+ \mathcal J(\alpha,\beta)=(3\alpha+\beta,\alpha+5\beta).
+\]
+For every $g$ we have $E_g\mathcal J=J_gE_g$ in the torus, by
+evaluating the two displayed sums. This proves the coordinate
+morphism to the source operator on every original unit, including
+each original prime residue and both targets.
+
+\begin{theorem}[Complete finite image, fibres and correction cosets]
+\label{thm:ns-character-coset-correction}
+Write $14\widehat G=\{14\chi:\chi\in\widehat G\}$ and
+$\widehat G[14]=\{\chi:14\chi=0\}$, and set
+$\delta=|\widehat G[14]|$. Then
+\[
+ \begin{split}
+ \ker\mathcal J&=\{(\tau,-3\tau):\tau\in\widehat G[14]\},\\
+ \operatorname{im}\mathcal J
+   &=\{(\gamma,\eta):\eta-5\gamma\in14\widehat G\}.
+ \end{split}
+\]
+There is an exact sequence of finite abelian groups
+\[
+ 0\longrightarrow\ker\mathcal J\longrightarrow\widehat G^2
+   \xrightarrow{\mathcal J}\widehat G^2
+   \xrightarrow{q}\widehat G/14\widehat G\longrightarrow0,
+ \qquad q(\gamma,\eta)=[\eta-5\gamma].
+\]
+For every image point, its full inverse fibre is
+\[
+ \{(\alpha,\gamma-3\alpha):14\alpha=5\gamma-\eta\}.
+\]
+The displayed root equation is solved by enumerating the already
+defined finite set $\widehat G$; all of its solutions are one
+solution plus $\widehat G[14]$.
+
+Choose a complete set $\mathcal R\subset\widehat G$ of coset
+representatives modulo $14\widehat G$, retaining the representative
+table. There are exactly $\delta$ representatives. Define
+\[
+ T:\widehat G^2\times\mathcal R\longrightarrow\widehat G^2,
+ \qquad T(\alpha,\beta,\rho)
+       =(3\alpha+\beta,\alpha+5\beta+\rho).
+\]
+This map is surjective, and every fibre has exactly $\delta$
+points. For an arbitrary complex-valued function $F$ on
+$\widehat G^2$, or a function with values in a complex polynomial
+algebra, the exact identity is
+\[
+ \frac1{\delta|\widehat G|^2}
+ \sum_{\rho\in\mathcal R}\sum_{\alpha,\beta\in\widehat G}
+       F(T(\alpha,\beta,\rho))
+ =\frac1{|\widehat G|^2}\sum_{\gamma,\eta\in\widehat G}F(\gamma,\eta).
+\]
+\end{theorem}
+\begin{proof}
+The first output equation forces $\beta=\gamma-3\alpha$.
+Substituting in the second gives $14\alpha=5\gamma-\eta$.
+This proves the image, the full fibre and the kernel, including
+both directions. The quotient map $q$ is surjective because
+$q(0,\eta)=[\eta]$; its kernel is precisely that image. Each fibre
+of multiplication by $14$ on $\widehat G$ is a coset of
+$\widehat G[14]$, so $|14\widehat G|=|\widehat G|/\delta$ and
+$|\widehat G/14\widehat G|=\delta$.
+
+For an arbitrary output $(\gamma,\eta)$ of $T$, choose the unique
+recorded representative $\rho$ of $[\eta-5\gamma]$. Then
+$14\alpha=5\gamma-\eta+\rho$ has exactly $\delta$ solutions,
+and for each of them $\beta=\gamma-3\alpha$. This supplies every
+preimage and proves both uniqueness of the coset coordinate and
+the full fibre formula. Counting each output once for each of its
+$\delta$ preimages proves the averaging identity, coefficient by
+coefficient for polynomial-valued $F$.
+\end{proof}
+
+\begin{theorem}[Exact alias terms and their removal on original valuations]
+\label{thm:ns-sieve-alias-removal}
+For $t_1,t_2\in G$ and independent variable tuples $\mathbf X,
+\mathbf Z$, put
+\[
+ F(\gamma,\eta)=
+  \langle\gamma,t_1\rangle^{-1}P_a(\gamma;\mathbf X)
+  \langle\eta,t_2\rangle^{-1}P_a(\eta;\mathbf Z),
+ \qquad G[14]=\{g\in G:g^{14}=1\}.
+\]
+The uncorrected source matrix gives exactly
+\[
+ \frac1{|\widehat G|^2}\sum_{\alpha,\beta}
+          F(\mathcal J(\alpha,\beta))
+   =\sum_{g\in G[14]}
+       C_{a,t_1g}(\mathbf X)C_{a,t_2g^{-3}}(\mathbf Z).
+\]
+The complete correction is
+\[
+ \frac1{\delta|\widehat G|^2}
+     \sum_{\rho\in\mathcal R}\sum_{\alpha,\beta}
+          F(T(\alpha,\beta,\rho))
+       = C_{a,t_1}(\mathbf X)C_{a,t_2}(\mathbf Z).
+\]
+Every monomial on the right retains both original exponent vectors.
+The corrected identity therefore preserves their complete joint
+fibre, not only its cardinality.
+\end{theorem}
+\begin{proof}
+For fixed original exponent vectors $e,f$, write
+$u=\prod_j[\ell_j]^{e_j}$, $v=\prod_j[\ell_j]^{f_j}$,
+$g=ut_1^{-1}$ and $k=vt_2^{-1}$. Its complex factor under the
+uncorrected map is
+\[
+ \langle\alpha,g^3k\rangle\langle\beta,gk^5\rangle.
+\]
+The two independent character sums retain the monomial exactly when
+$g^3k=1$ and $gk^5=1$. The first equality gives $k=g^{-3}$;
+the second then gives $g^{-14}=1$. Conversely those conditions
+give both equalities. This is precisely the first displayed sum,
+including every original exponent bound and variable.
+
+In the corrected map the same term has the additional factor
+$\langle\rho,k\rangle$. For $k^{14}=1$, this value depends only
+on the coset of $\rho$ modulo $14\widehat G$, since
+$\langle14\chi,k\rangle=\langle\chi,k^{14}\rangle=1$.
+If $k\ne1$, separation supplies a character whose value at $k$ is not $1$;
+translation by its coset permutes all quotient cosets and forces
+the sum over $\mathcal R$ to be zero. If $k=1$, every value is
+$1$. In the retained uncorrected terms, $k=g^{-3}$ and $g^{14}=1$.
+The two equations $g^3=1$ and $g^{14}=1$ imply $g=1$, since
+$1=5\cdot3-14$. Thus precisely $g=k=1$ remains. These are the
+original two target equations, proving the second identity with
+their full monomials. It also follows directly by applying the
+preceding theorem and then the independent character projections.
+\end{proof}
+
+\begin{corollary}[All finite covering histories preserve the full ES test]
+\label{cor:ns-finite-history-sieve}
+Fix an integer $k\geq0$, the original group, and the representative
+table $\mathcal R$. For $z_0\in\widehat G^2$ and a retained
+sequence $(\rho_0,\ldots,\rho_{k-1})\in\mathcal R^k$, define
+\[
+ z_{j+1}=\mathcal J z_j+(0,\rho_j)\quad(0\leq j<k),\qquad
+ z_k=\mathcal J^k z_0+
+       \sum_{j=0}^{k-1}\mathcal J^{k-1-j}(0,\rho_j).
+\]
+The history-to-output map has precisely $\delta^k$ preimages at
+each output, and
+\[
+ \frac1{\delta^k|\widehat G|^2}
+   \sum_{z_0\in\widehat G^2}\sum_{\rho_0,\ldots,\rho_{k-1}\in\mathcal R}
+      F(z_k)
+       =\frac1{|\widehat G|^2}\sum_zF(z)
+\]
+for every polynomial-valued $F$. In particular, taking
+$F(\gamma,\eta)=\langle\gamma,t\rangle^{-1}P_a(\gamma;\mathbf X)$
+recovers exactly $C_{a,t}(\mathbf X)$ for both original targets
+after every finite history length.
+\end{corollary}
+\begin{proof}
+The stated expansion of $z_k$ follows by substitution, with the
+empty sum and identity map for $k=0$. For a fixed terminal state,
+the preceding theorem supplies its unique last coset coordinate
+and every one of its $\delta$ predecessor states. Repeating the
+same inverse construction at each predecessor gives all histories
+and precisely $\delta^k$ of them, with no choices identified.
+The averaging formula follows by counting this exact fibre.
+For the specified function, the average over $\eta$ contributes
+exactly the factor $|\widehat G|$, and the other average is the
+proved labelled coefficient projection.
+\end{proof}
+
+Returning to integers uses each retained monomial's unique divisor
+$u=\prod_j\ell_j^{e_j}$, and then the complete ordered inverse of
+Theorem~\ref{thm:shellwise-no-hit}. Its exterior orientation coordinate
+and both middle divisors remain part of that return. In particular,
+the corrected averages give the same $|E_a|$, $|M_a|$, the same
+$q_{a,p}=|E_a|+|M_a|/2$, and the same $Q_p$ and $\mathcal O_p$
+in Theorem~\ref{thm:global-no-hit}. This supplies an exact arithmetic
+consequence of the source cover, including a proved obstruction to
+using its uncorrected finite sampling.
+
+The source's smooth fields use continuous auxiliary coordinates.
+Here $E_g$ is the explicit finite-coordinate map to that torus, and
+the preceding exact sequences and character products describe its
+arithmetic restriction. The operator correspondence by itself does
+not construct a Navier--Stokes velocity or force from a prime, or
+establish nonemptiness of any previously empty ES fibre. No such
+construction or prime-coverage conclusion is a premise of a result
+above.

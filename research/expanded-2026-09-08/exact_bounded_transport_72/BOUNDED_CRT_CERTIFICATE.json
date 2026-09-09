@@ -1,0 +1,2616 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "Finite exact tests of the stated universal elementary proofs; no universal ES positivity",
+  "script_sha256": "9d4822149dfe84262b891e81c638429beac191a96a8decc28ec1be30c23b29fe",
+  "counts": {
+    "noncoprime_residue_pairs": 23409,
+    "single_affine_divisor_systems": 25200,
+    "mixed_simultaneous_systems": 6000,
+    "primitive_monoid_systems": 900,
+    "full_original_shells_and_reconstructions": 690
+  },
+  "fixtures": [
+    {
+      "p": 37,
+      "a": 12,
+      "R": 11,
+      "S": 444,
+      "factor_a": {
+        "2": 2,
+        "3": 1
+      },
+      "E": {
+        "solutions": [
+          8
+        ],
+        "failure": null,
+        "N": 144,
+        "mandatory_lcm": 1,
+        "residue": 8,
+        "modulus": 11,
+        "kernel": "11 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [
+          [
+            3,
+            0
+          ]
+        ],
+        "coefficient": 1,
+        "reductions": [
+          [
+            4,
+            -1,
+            11,
+            1,
+            8,
+            11
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 3,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 2,
+          "7": 1,
+          "8": 1,
+          "9": 1
+        }
+      },
+      "M": {
+        "solutions": [],
+        "failure": null,
+        "N": 144,
+        "mandatory_lcm": 1,
+        "residue": 10,
+        "modulus": 11,
+        "kernel": "11 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            1,
+            -12,
+            11,
+            1,
+            10,
+            11
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 3,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 1,
+          "6": 2,
+          "7": 1,
+          "8": 1,
+          "9": 1
+        }
+      },
+      "pairs": [
+        [
+          3,
+          74
+        ],
+        [
+          74,
+          3
+        ]
+      ],
+      "triples": [
+        [
+          12,
+          42,
+          1036
+        ],
+        [
+          12,
+          1036,
+          42
+        ]
+      ]
+    },
+    {
+      "p": 37,
+      "a": 13,
+      "R": 15,
+      "S": 481,
+      "factor_a": {
+        "13": 1
+      },
+      "E": {
+        "solutions": [],
+        "failure": null,
+        "N": 169,
+        "mandatory_lcm": 1,
+        "residue": 11,
+        "modulus": 15,
+        "kernel": "15 Z",
+        "primes": [
+          13
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            4,
+            -1,
+            15,
+            1,
+            11,
+            15
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 1,
+          "4": 1,
+          "13": 1
+        }
+      },
+      "M": {
+        "solutions": [],
+        "failure": null,
+        "N": 169,
+        "mandatory_lcm": 1,
+        "residue": 2,
+        "modulus": 15,
+        "kernel": "15 Z",
+        "primes": [
+          13
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            1,
+            -13,
+            15,
+            1,
+            2,
+            15
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 1,
+          "4": 1,
+          "13": 1
+        }
+      },
+      "pairs": [],
+      "triples": []
+    },
+    {
+      "p": 37,
+      "a": 18,
+      "R": 35,
+      "S": 666,
+      "factor_a": {
+        "2": 1,
+        "3": 2
+      },
+      "E": {
+        "solutions": [],
+        "failure": null,
+        "N": 324,
+        "mandatory_lcm": 1,
+        "residue": 26,
+        "modulus": 35,
+        "kernel": "35 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            4,
+            -1,
+            35,
+            1,
+            26,
+            35
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 2,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "6": 1,
+          "9": 2,
+          "11": 1,
+          "12": 1,
+          "18": 1,
+          "19": 1,
+          "22": 1,
+          "27": 1
+        }
+      },
+      "M": {
+        "solutions": [],
+        "failure": null,
+        "N": 324,
+        "mandatory_lcm": 1,
+        "residue": 17,
+        "modulus": 35,
+        "kernel": "35 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            1,
+            -18,
+            35,
+            1,
+            17,
+            35
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 2,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "6": 1,
+          "9": 2,
+          "11": 1,
+          "12": 1,
+          "18": 1,
+          "19": 1,
+          "22": 1,
+          "27": 1
+        }
+      },
+      "pairs": [],
+      "triples": []
+    },
+    {
+      "p": 241,
+      "a": 64,
+      "R": 15,
+      "S": 15424,
+      "factor_a": {
+        "2": 6
+      },
+      "E": {
+        "solutions": [],
+        "failure": null,
+        "N": 4096,
+        "mandatory_lcm": 1,
+        "residue": 11,
+        "modulus": 15,
+        "kernel": "15 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            4,
+            -1,
+            15,
+            1,
+            11,
+            15
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 3,
+          "4": 3,
+          "8": 3
+        }
+      },
+      "M": {
+        "solutions": [],
+        "failure": null,
+        "N": 4096,
+        "mandatory_lcm": 1,
+        "residue": 11,
+        "modulus": 15,
+        "kernel": "15 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            1,
+            -64,
+            15,
+            1,
+            11,
+            15
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 3,
+          "4": 3,
+          "8": 3
+        }
+      },
+      "pairs": [],
+      "triples": []
+    },
+    {
+      "p": 73,
+      "a": 20,
+      "R": 7,
+      "S": 1460,
+      "factor_a": {
+        "2": 2,
+        "5": 1
+      },
+      "E": {
+        "solutions": [
+          5,
+          40
+        ],
+        "failure": null,
+        "N": 400,
+        "mandatory_lcm": 1,
+        "residue": 5,
+        "modulus": 7,
+        "kernel": "7 Z",
+        "primes": [
+          2,
+          5
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [
+          [
+            4,
+            -1,
+            7,
+            1,
+            5,
+            7
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 3,
+          "3": 2,
+          "4": 3,
+          "5": 2,
+          "6": 1
+        }
+      },
+      "M": {
+        "solutions": [
+          1,
+          8,
+          50,
+          400
+        ],
+        "failure": null,
+        "N": 400,
+        "mandatory_lcm": 1,
+        "residue": 1,
+        "modulus": 7,
+        "kernel": "7 Z",
+        "primes": [
+          2,
+          5
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "coefficient": 4,
+        "reductions": [
+          [
+            1,
+            -20,
+            7,
+            1,
+            1,
+            7
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 3,
+          "3": 2,
+          "4": 3,
+          "5": 2,
+          "6": 1
+        }
+      },
+      "pairs": [
+        [
+          1,
+          20
+        ],
+        [
+          1,
+          146
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          73
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          73,
+          4
+        ],
+        [
+          146,
+          1
+        ]
+      ],
+      "triples": [
+        [
+          20,
+          219,
+          4380
+        ],
+        [
+          20,
+          210,
+          30660
+        ],
+        [
+          20,
+          292,
+          730
+        ],
+        [
+          20,
+          220,
+          4015
+        ],
+        [
+          20,
+          730,
+          292
+        ],
+        [
+          20,
+          4380,
+          219
+        ],
+        [
+          20,
+          4015,
+          220
+        ],
+        [
+          20,
+          30660,
+          210
+        ]
+      ]
+    },
+    {
+      "p": 73,
+      "a": 21,
+      "R": 11,
+      "S": 1533,
+      "factor_a": {
+        "3": 1,
+        "7": 1
+      },
+      "E": {
+        "solutions": [
+          63
+        ],
+        "failure": null,
+        "N": 441,
+        "mandatory_lcm": 1,
+        "residue": 8,
+        "modulus": 11,
+        "kernel": "11 Z",
+        "primes": [
+          3,
+          7
+        ],
+        "exponent_vectors": [
+          [
+            2,
+            1
+          ]
+        ],
+        "coefficient": 1,
+        "reductions": [
+          [
+            4,
+            -1,
+            11,
+            1,
+            8,
+            11
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 2,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1
+        }
+      },
+      "M": {
+        "solutions": [
+          1,
+          441
+        ],
+        "failure": null,
+        "N": 441,
+        "mandatory_lcm": 1,
+        "residue": 1,
+        "modulus": 11,
+        "kernel": "11 Z",
+        "primes": [
+          3,
+          7
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [
+          [
+            1,
+            -21,
+            11,
+            1,
+            1,
+            11
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 2,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1
+        }
+      },
+      "pairs": [
+        [
+          1,
+          21
+        ],
+        [
+          1,
+          219
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          219,
+          1
+        ]
+      ],
+      "triples": [
+        [
+          21,
+          146,
+          3066
+        ],
+        [
+          21,
+          140,
+          30660
+        ],
+        [
+          21,
+          3066,
+          146
+        ],
+        [
+          21,
+          30660,
+          140
+        ]
+      ]
+    },
+    {
+      "p": 769,
+      "a": 194,
+      "R": 7,
+      "S": 149186,
+      "factor_a": {
+        "2": 1,
+        "97": 1
+      },
+      "E": {
+        "solutions": [
+          194
+        ],
+        "failure": null,
+        "N": 37636,
+        "mandatory_lcm": 1,
+        "residue": 5,
+        "modulus": 7,
+        "kernel": "7 Z",
+        "primes": [
+          2,
+          97
+        ],
+        "exponent_vectors": [
+          [
+            1,
+            1
+          ]
+        ],
+        "coefficient": 1,
+        "reductions": [
+          [
+            4,
+            -1,
+            7,
+            1,
+            5,
+            7
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 2,
+          "2": 2,
+          "3": 1,
+          "4": 2,
+          "5": 1,
+          "6": 1
+        }
+      },
+      "M": {
+        "solutions": [
+          2,
+          18818
+        ],
+        "failure": null,
+        "N": 37636,
+        "mandatory_lcm": 1,
+        "residue": 2,
+        "modulus": 7,
+        "kernel": "7 Z",
+        "primes": [
+          2,
+          97
+        ],
+        "exponent_vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [
+          [
+            1,
+            -194,
+            7,
+            1,
+            2,
+            7
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 2,
+          "2": 2,
+          "3": 1,
+          "4": 2,
+          "5": 1,
+          "6": 1
+        }
+      },
+      "pairs": [
+        [
+          1,
+          97
+        ],
+        [
+          1,
+          769
+        ],
+        [
+          97,
+          1
+        ],
+        [
+          769,
+          1
+        ]
+      ],
+      "triples": [
+        [
+          194,
+          21532,
+          2088604
+        ],
+        [
+          194,
+          21340,
+          16410460
+        ],
+        [
+          194,
+          2088604,
+          21532
+        ],
+        [
+          194,
+          16410460,
+          21340
+        ]
+      ]
+    },
+    {
+      "p": 769,
+      "a": 195,
+      "R": 11,
+      "S": 149955,
+      "factor_a": {
+        "3": 1,
+        "5": 1,
+        "13": 1
+      },
+      "E": {
+        "solutions": [
+          195
+        ],
+        "failure": null,
+        "N": 38025,
+        "mandatory_lcm": 1,
+        "residue": 8,
+        "modulus": 11,
+        "kernel": "11 Z",
+        "primes": [
+          3,
+          5,
+          13
+        ],
+        "exponent_vectors": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "coefficient": 1,
+        "reductions": [
+          [
+            4,
+            -1,
+            11,
+            1,
+            8,
+            11
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 2,
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 2,
+          "7": 2,
+          "8": 1,
+          "9": 4,
+          "10": 2
+        }
+      },
+      "M": {
+        "solutions": [
+          3,
+          25,
+          1521,
+          12675
+        ],
+        "failure": null,
+        "N": 38025,
+        "mandatory_lcm": 1,
+        "residue": 3,
+        "modulus": 11,
+        "kernel": "11 Z",
+        "primes": [
+          3,
+          5,
+          13
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            2
+          ]
+        ],
+        "coefficient": 4,
+        "reductions": [
+          [
+            1,
+            -195,
+            11,
+            1,
+            3,
+            11
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 2,
+          "3": 4,
+          "4": 3,
+          "5": 3,
+          "6": 2,
+          "7": 2,
+          "8": 1,
+          "9": 4,
+          "10": 2
+        }
+      },
+      "pairs": [
+        [
+          1,
+          65
+        ],
+        [
+          1,
+          769
+        ],
+        [
+          5,
+          39
+        ],
+        [
+          39,
+          5
+        ],
+        [
+          65,
+          1
+        ],
+        [
+          769,
+          1
+        ]
+      ],
+      "triples": [
+        [
+          195,
+          13842,
+          899730
+        ],
+        [
+          195,
+          13650,
+          10496850
+        ],
+        [
+          195,
+          15380,
+          119964
+        ],
+        [
+          195,
+          119964,
+          15380
+        ],
+        [
+          195,
+          899730,
+          13842
+        ],
+        [
+          195,
+          10496850,
+          13650
+        ]
+      ]
+    }
+  ],
+  "zero_obstruction_empty_budget": {
+    "5": {
+      "E": {
+        "solutions": [
+          1,
+          6,
+          36,
+          81
+        ],
+        "failure": null,
+        "N": 324,
+        "mandatory_lcm": 1,
+        "residue": 1,
+        "modulus": 5,
+        "kernel": "5 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "coefficient": 4,
+        "reductions": [
+          [
+            4,
+            -1,
+            5,
+            1,
+            1,
+            5
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 4,
+          "3": 3,
+          "4": 4
+        }
+      },
+      "M": {
+        "solutions": [
+          2,
+          12,
+          27,
+          162
+        ],
+        "failure": null,
+        "N": 324,
+        "mandatory_lcm": 1,
+        "residue": 2,
+        "modulus": 5,
+        "kernel": "5 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "coefficient": 4,
+        "reductions": [
+          [
+            1,
+            -18,
+            5,
+            1,
+            2,
+            5
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 4,
+          "3": 3,
+          "4": 4
+        }
+      }
+    },
+    "7": {
+      "E": {
+        "solutions": [
+          12,
+          54
+        ],
+        "failure": null,
+        "N": 324,
+        "mandatory_lcm": 1,
+        "residue": 5,
+        "modulus": 7,
+        "kernel": "7 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [
+          [
+            4,
+            -1,
+            7,
+            1,
+            5,
+            7
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 3,
+          "2": 3,
+          "3": 2,
+          "4": 3,
+          "5": 2,
+          "6": 2
+        }
+      },
+      "M": {
+        "solutions": [
+          3,
+          108
+        ],
+        "failure": null,
+        "N": 324,
+        "mandatory_lcm": 1,
+        "residue": 3,
+        "modulus": 7,
+        "kernel": "7 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [
+          [
+            1,
+            -18,
+            7,
+            1,
+            3,
+            7
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 3,
+          "2": 3,
+          "3": 2,
+          "4": 3,
+          "5": 2,
+          "6": 2
+        }
+      }
+    },
+    "35": {
+      "E": {
+        "solutions": [],
+        "failure": null,
+        "N": 324,
+        "mandatory_lcm": 1,
+        "residue": 26,
+        "modulus": 35,
+        "kernel": "35 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            4,
+            -1,
+            35,
+            1,
+            26,
+            35
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 2,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "6": 1,
+          "9": 2,
+          "11": 1,
+          "12": 1,
+          "18": 1,
+          "19": 1,
+          "22": 1,
+          "27": 1
+        }
+      },
+      "M": {
+        "solutions": [],
+        "failure": null,
+        "N": 324,
+        "mandatory_lcm": 1,
+        "residue": 17,
+        "modulus": 35,
+        "kernel": "35 Z",
+        "primes": [
+          2,
+          3
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            1,
+            -18,
+            35,
+            1,
+            17,
+            35
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 2,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "6": 1,
+          "9": 2,
+          "11": 1,
+          "12": 1,
+          "18": 1,
+          "19": 1,
+          "22": 1,
+          "27": 1
+        }
+      }
+    }
+  },
+  "nonzero_exponent_obstruction": {
+    "3": {
+      "E": {
+        "solutions": [
+          2,
+          8,
+          32,
+          128,
+          512,
+          2048
+        ],
+        "failure": null,
+        "N": 4096,
+        "mandatory_lcm": 1,
+        "residue": 2,
+        "modulus": 3,
+        "kernel": "3 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            5
+          ],
+          [
+            7
+          ],
+          [
+            9
+          ],
+          [
+            11
+          ]
+        ],
+        "coefficient": 6,
+        "reductions": [
+          [
+            4,
+            -1,
+            3,
+            1,
+            2,
+            3
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 7,
+          "2": 6
+        }
+      },
+      "M": {
+        "solutions": [
+          2,
+          8,
+          32,
+          128,
+          512,
+          2048
+        ],
+        "failure": null,
+        "N": 4096,
+        "mandatory_lcm": 1,
+        "residue": 2,
+        "modulus": 3,
+        "kernel": "3 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            5
+          ],
+          [
+            7
+          ],
+          [
+            9
+          ],
+          [
+            11
+          ]
+        ],
+        "coefficient": 6,
+        "reductions": [
+          [
+            1,
+            -64,
+            3,
+            1,
+            2,
+            3
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 7,
+          "2": 6
+        }
+      }
+    },
+    "5": {
+      "E": {
+        "solutions": [
+          1,
+          16,
+          256,
+          4096
+        ],
+        "failure": null,
+        "N": 4096,
+        "mandatory_lcm": 1,
+        "residue": 1,
+        "modulus": 5,
+        "kernel": "5 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [
+          [
+            0
+          ],
+          [
+            4
+          ],
+          [
+            8
+          ],
+          [
+            12
+          ]
+        ],
+        "coefficient": 4,
+        "reductions": [
+          [
+            4,
+            -1,
+            5,
+            1,
+            1,
+            5
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 3,
+          "3": 3,
+          "4": 3
+        }
+      },
+      "M": {
+        "solutions": [
+          1,
+          16,
+          256,
+          4096
+        ],
+        "failure": null,
+        "N": 4096,
+        "mandatory_lcm": 1,
+        "residue": 1,
+        "modulus": 5,
+        "kernel": "5 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [
+          [
+            0
+          ],
+          [
+            4
+          ],
+          [
+            8
+          ],
+          [
+            12
+          ]
+        ],
+        "coefficient": 4,
+        "reductions": [
+          [
+            1,
+            -64,
+            5,
+            1,
+            1,
+            5
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 3,
+          "3": 3,
+          "4": 3
+        }
+      }
+    },
+    "15": {
+      "E": {
+        "solutions": [],
+        "failure": null,
+        "N": 4096,
+        "mandatory_lcm": 1,
+        "residue": 11,
+        "modulus": 15,
+        "kernel": "15 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            4,
+            -1,
+            15,
+            1,
+            11,
+            15
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 3,
+          "4": 3,
+          "8": 3
+        }
+      },
+      "M": {
+        "solutions": [],
+        "failure": null,
+        "N": 4096,
+        "mandatory_lcm": 1,
+        "residue": 11,
+        "modulus": 15,
+        "kernel": "15 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            1,
+            -64,
+            15,
+            1,
+            11,
+            15
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 4,
+          "2": 3,
+          "4": 3,
+          "8": 3
+        }
+      }
+    }
+  },
+  "mixed_examples": [
+    {
+      "bounds": [
+        196
+      ],
+      "mandatory": [
+        5
+      ],
+      "congruences": [
+        [
+          6,
+          4,
+          9
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "mandatory_factor_exceeds_bound"
+      }
+    },
+    {
+      "bounds": [
+        190
+      ],
+      "mandatory": [
+        4
+      ],
+      "congruences": [
+        [
+          -2,
+          12,
+          14
+        ],
+        [
+          -2,
+          -12,
+          14
+        ],
+        [
+          5,
+          -6,
+          13
+        ],
+        [
+          -6,
+          -35,
+          24
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "mandatory_factor_exceeds_bound"
+      }
+    },
+    {
+      "bounds": [
+        759,
+        78
+      ],
+      "mandatory": [
+        16
+      ],
+      "congruences": [
+        [
+          8,
+          -7,
+          2
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "mandatory_factor_exceeds_bound"
+      }
+    },
+    {
+      "bounds": [
+        122
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          1,
+          6,
+          8
+        ],
+        [
+          -6,
+          5,
+          17
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": null,
+        "N": 122,
+        "mandatory_lcm": 1,
+        "residue": 70,
+        "modulus": 136,
+        "kernel": "136 Z",
+        "primes": [
+          2,
+          61
+        ],
+        "exponent_vectors": [],
+        "coefficient": 0,
+        "reductions": [
+          [
+            1,
+            6,
+            8,
+            1,
+            6,
+            8
+          ],
+          [
+            -6,
+            5,
+            17,
+            1,
+            2,
+            17
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 1,
+          "2": 1,
+          "61": 1,
+          "122": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        784,
+        349
+      ],
+      "mandatory": [
+        1
+      ],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1
+        ],
+        "failure": null,
+        "N": 1,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [],
+        "exponent_vectors": [
+          []
+        ],
+        "coefficient": 1,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        165
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          1,
+          -36,
+          15
+        ],
+        [
+          2,
+          27,
+          15
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "noncoprime_compatibility",
+        "failed_residue_pair": [
+          9,
+          15,
+          6,
+          15
+        ]
+      }
+    },
+    {
+      "bounds": [
+        613,
+        486
+      ],
+      "mandatory": [
+        12,
+        14
+      ],
+      "congruences": [
+        [
+          -4,
+          1,
+          2
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "mandatory_factor_exceeds_bound"
+      }
+    },
+    {
+      "bounds": [
+        780,
+        189
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          -2,
+          -25,
+          21
+        ],
+        [
+          3,
+          38,
+          14
+        ],
+        [
+          0,
+          11,
+          4
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "noncoprime_compatibility",
+        "failed_residue_pair": [
+          2,
+          21,
+          8,
+          14
+        ]
+      }
+    },
+    {
+      "bounds": [
+        686,
+        579,
+        580
+      ],
+      "mandatory": [
+        10,
+        5
+      ],
+      "congruences": [
+        [
+          8,
+          -24,
+          7
+        ],
+        [
+          -7,
+          -24,
+          1
+        ],
+        [
+          1,
+          14,
+          18
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "mandatory_factor_exceeds_bound"
+      }
+    },
+    {
+      "bounds": [
+        102,
+        581
+      ],
+      "mandatory": [
+        1,
+        7
+      ],
+      "congruences": [
+        [
+          -5,
+          29,
+          1
+        ],
+        [
+          -7,
+          -23,
+          15
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "mandatory_factor_exceeds_bound"
+      }
+    },
+    {
+      "bounds": [
+        383,
+        431,
+        695
+      ],
+      "mandatory": [
+        13
+      ],
+      "congruences": [
+        [
+          -3,
+          -36,
+          12
+        ],
+        [
+          -1,
+          -34,
+          7
+        ],
+        [
+          3,
+          35,
+          5
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "mandatory_factor_exceeds_bound"
+      }
+    },
+    {
+      "bounds": [
+        403
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          -3,
+          32,
+          18
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          0,
+          -17,
+          3
+        ]
+      ],
+      "result": {
+        "solutions": [],
+        "failure": "coefficient_gcd",
+        "failed_congruence": [
+          -3,
+          32,
+          18,
+          3
+        ]
+      }
+    },
+    {
+      "bounds": [
+        787,
+        470,
+        406
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          -4,
+          32,
+          6
+        ]
+      ],
+      "result": {
+        "solutions": [
+          1
+        ],
+        "failure": null,
+        "N": 1,
+        "mandatory_lcm": 1,
+        "residue": 1,
+        "modulus": 3,
+        "kernel": "3 Z",
+        "primes": [],
+        "exponent_vectors": [
+          []
+        ],
+        "coefficient": 1,
+        "reductions": [
+          [
+            -4,
+            32,
+            6,
+            2,
+            1,
+            3
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        226,
+        361
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1
+        ],
+        "failure": null,
+        "N": 1,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [],
+        "exponent_vectors": [
+          []
+        ],
+        "coefficient": 1,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        572,
+        598
+      ],
+      "mandatory": [
+        13
+      ],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          13,
+          26
+        ],
+        "failure": null,
+        "N": 26,
+        "mandatory_lcm": 13,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [
+          2,
+          13
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 2
+        }
+      }
+    },
+    {
+      "bounds": [
+        86,
+        528
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          -3,
+          36,
+          6
+        ]
+      ],
+      "result": {
+        "solutions": [
+          2
+        ],
+        "failure": null,
+        "N": 2,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 2,
+        "kernel": "2 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [
+          [
+            1
+          ]
+        ],
+        "coefficient": 1,
+        "reductions": [
+          [
+            -3,
+            36,
+            6,
+            3,
+            0,
+            2
+          ]
+        ],
+        "all_residue_coefficients": {
+          "0": 1,
+          "1": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        474,
+        253,
+        726
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1
+        ],
+        "failure": null,
+        "N": 1,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [],
+        "exponent_vectors": [
+          []
+        ],
+        "coefficient": 1,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        178,
+        642
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1,
+          2
+        ],
+        "failure": null,
+        "N": 2,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 2
+        }
+      }
+    },
+    {
+      "bounds": [
+        91
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          -5,
+          5,
+          8
+        ]
+      ],
+      "result": {
+        "solutions": [
+          7
+        ],
+        "failure": null,
+        "N": 91,
+        "mandatory_lcm": 1,
+        "residue": 7,
+        "modulus": 8,
+        "kernel": "8 Z",
+        "primes": [
+          7,
+          13
+        ],
+        "exponent_vectors": [
+          [
+            1,
+            0
+          ]
+        ],
+        "coefficient": 1,
+        "reductions": [
+          [
+            -5,
+            5,
+            8,
+            1,
+            7,
+            8
+          ]
+        ],
+        "all_residue_coefficients": {
+          "1": 1,
+          "3": 1,
+          "5": 1,
+          "7": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        140,
+        488,
+        287
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1
+        ],
+        "failure": null,
+        "N": 1,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [],
+        "exponent_vectors": [
+          []
+        ],
+        "coefficient": 1,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        71,
+        749,
+        97
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1
+        ],
+        "failure": null,
+        "N": 1,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [],
+        "exponent_vectors": [
+          []
+        ],
+        "coefficient": 1,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        520,
+        652
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          5,
+          10,
+          1
+        ]
+      ],
+      "result": {
+        "solutions": [
+          1,
+          2,
+          4
+        ],
+        "failure": null,
+        "N": 4,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [
+          2
+        ],
+        "exponent_vectors": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "coefficient": 3,
+        "reductions": [
+          [
+            5,
+            10,
+            1,
+            1,
+            0,
+            1
+          ]
+        ],
+        "all_residue_coefficients": {
+          "0": 3
+        }
+      }
+    },
+    {
+      "bounds": [
+        608
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          3,
+          8,
+          2
+        ]
+      ],
+      "result": {
+        "solutions": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          38,
+          76,
+          152,
+          304,
+          608
+        ],
+        "failure": null,
+        "N": 608,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 2,
+        "kernel": "2 Z",
+        "primes": [
+          2,
+          19
+        ],
+        "exponent_vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "coefficient": 10,
+        "reductions": [
+          [
+            3,
+            8,
+            2,
+            1,
+            0,
+            2
+          ]
+        ],
+        "all_residue_coefficients": {
+          "0": 10,
+          "1": 2
+        }
+      }
+    },
+    {
+      "bounds": [
+        717,
+        480
+      ],
+      "mandatory": [],
+      "congruences": [
+        [
+          -7,
+          -30,
+          1
+        ]
+      ],
+      "result": {
+        "solutions": [
+          1,
+          3
+        ],
+        "failure": null,
+        "N": 3,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [
+          3
+        ],
+        "exponent_vectors": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [
+          [
+            -7,
+            -30,
+            1,
+            1,
+            0,
+            1
+          ]
+        ],
+        "all_residue_coefficients": {
+          "0": 2
+        }
+      }
+    },
+    {
+      "bounds": [
+        367
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1,
+          367
+        ],
+        "failure": null,
+        "N": 367,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [
+          367
+        ],
+        "exponent_vectors": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "coefficient": 2,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 2
+        }
+      }
+    },
+    {
+      "bounds": [
+        403,
+        423
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1
+        ],
+        "failure": null,
+        "N": 1,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [],
+        "exponent_vectors": [
+          []
+        ],
+        "coefficient": 1,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 1
+        }
+      }
+    },
+    {
+      "bounds": [
+        226
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1,
+          2,
+          113,
+          226
+        ],
+        "failure": null,
+        "N": 226,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [
+          2,
+          113
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "coefficient": 4,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 4
+        }
+      }
+    },
+    {
+      "bounds": [
+        634
+      ],
+      "mandatory": [],
+      "congruences": [],
+      "result": {
+        "solutions": [
+          1,
+          2,
+          317,
+          634
+        ],
+        "failure": null,
+        "N": 634,
+        "mandatory_lcm": 1,
+        "residue": 0,
+        "modulus": 1,
+        "kernel": "1 Z",
+        "primes": [
+          2,
+          317
+        ],
+        "exponent_vectors": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "coefficient": 4,
+        "reductions": [],
+        "all_residue_coefficients": {
+          "0": 4
+        }
+      }
+    }
+  ],
+  "algorithms": {
+    "CRT": "Bezout inverse after gcd compatibility",
+    "scalar": "nonunit coefficient reduction, compatible CRT, exact bounded monoid convolution",
+    "independent_oracle": "direct positive integer substitution in unreduced constraints",
+    "primitive": "exclusive prime budget convolution compared with direct coprime divisor pairs"
+  }
+}

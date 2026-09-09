@@ -1,0 +1,197 @@
+{
+  "status": "pass",
+  "single_affine_signed_coefficient_cases": 7840,
+  "mixed_budgets_mandatory_factors_and_simultaneous_cases": 160,
+  "p37_local_tables": {
+    "5": {
+      "E": [
+        1,
+        6,
+        36,
+        81
+      ],
+      "M": [
+        2,
+        12,
+        27,
+        162
+      ]
+    },
+    "7": {
+      "E": [
+        12,
+        54
+      ],
+      "M": [
+        3,
+        108
+      ]
+    },
+    "35": {
+      "E": [],
+      "M": []
+    }
+  },
+  "p241_nonzero_obstruction_checked": true,
+  "empty_leaf_exact_rows": [
+    [
+      1752,
+      407,
+      279
+    ],
+    [
+      1753,
+      759,
+      520
+    ],
+    [
+      1754,
+      1237,
+      847
+    ],
+    [
+      1755,
+      434,
+      297
+    ]
+  ],
+  "rational_witness_and_fixed_y_examples_checked": true,
+  "p37_full_unary_distinction_and_p1753_strict_shear_example_checked": true,
+  "affine_and_complemented_reciprocal_cases": 7200,
+  "signed_affine_composition_cases": 9261,
+  "affine_zero_fibre_and_full_positive_image_domain_checked": true,
+  "matching_graph_audit": {
+    "prime_count": 63,
+    "adjacent_shell_count": 26439,
+    "passing_source_pair_count": 3956,
+    "edge_count": 8,
+    "all_indegrees_outdegrees_at_most_one": true,
+    "no_directed_path_length_two": true,
+    "edges": [
+      {
+        "kind": "L",
+        "source": [
+          73,
+          20,
+          20,
+          1
+        ],
+        "target": [
+          73,
+          21,
+          21,
+          1
+        ]
+      },
+      {
+        "kind": "J",
+        "source": [
+          73,
+          20,
+          1,
+          20
+        ],
+        "target": [
+          73,
+          21,
+          1,
+          21
+        ]
+      },
+      {
+        "kind": "L",
+        "source": [
+          433,
+          113,
+          113,
+          1
+        ],
+        "target": [
+          433,
+          114,
+          114,
+          1
+        ]
+      },
+      {
+        "kind": "J",
+        "source": [
+          433,
+          113,
+          1,
+          113
+        ],
+        "target": [
+          433,
+          114,
+          1,
+          114
+        ]
+      },
+      {
+        "kind": "L",
+        "source": [
+          997,
+          251,
+          251,
+          1
+        ],
+        "target": [
+          997,
+          252,
+          252,
+          1
+        ]
+      },
+      {
+        "kind": "J",
+        "source": [
+          997,
+          251,
+          1,
+          251
+        ],
+        "target": [
+          997,
+          252,
+          1,
+          252
+        ]
+      },
+      {
+        "kind": "L",
+        "source": [
+          1753,
+          440,
+          20,
+          1
+        ],
+        "target": [
+          1753,
+          441,
+          21,
+          1
+        ]
+      },
+      {
+        "kind": "J",
+        "source": [
+          1753,
+          440,
+          1,
+          20
+        ],
+        "target": [
+          1753,
+          441,
+          1,
+          21
+        ]
+      }
+    ]
+  },
+  "p1753_raw_J_counterexample_and_corrected_L_J_returns_checked": true,
+  "no_two_shears_hypothesis_boundary_p1613_mod12_5": "Two consecutive L edges occur at a404,405,406; this is outside the theorem and confirms the p congruence must remain attached.",
+  "missing_primitivity_counterexample_checked": true,
+  "limitations": "Finite numerical checks support, and do not replace, the deductive theorem-by-theorem review."
+}

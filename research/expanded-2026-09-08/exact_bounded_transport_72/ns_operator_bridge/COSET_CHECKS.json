@@ -1,0 +1,1993 @@
+{
+  "status": "checks_passed",
+  "scope": "Finite exact computations; not an independent manuscript proof review.",
+  "arithmetic": "Integer exponent histograms reduced modulo exact monic cyclotomic polynomials, with rational average denominators.",
+  "groups_checked": 11,
+  "map_fibres_checked": 2015,
+  "character_basis_pairs_checked": 2015,
+  "target_pairs_checked": 270,
+  "full_polynomial_terms_checked": 33877,
+  "original_histories_checked": 755963,
+  "manuscript_sha256_at_check": "916d7bc2a16d681c223de5f73330378f1babf70f7f4c0d657a93926deb5aae3c",
+  "checker_sha256": "62c1132b6b95bc87fbad9cbe8825002e7a9bc41f6764743a9971c6bcec355678",
+  "p13_a4_fixture": {
+    "p": 13,
+    "a": 4,
+    "R": 3,
+    "unit_group_target": 2,
+    "additive_character_coordinate_target": [
+      1
+    ],
+    "original_prime": 2,
+    "original_exponents": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "original_divisors": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "exterior_hit_exponents": [
+      1,
+      3
+    ],
+    "exterior_hit_divisors": [
+      2,
+      8
+    ],
+    "bare_pair": 13,
+    "true_pair": 4,
+    "covered_pair": 4,
+    "bare_pair_complete_exponent_fibre": [
+      [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      [
+        [
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      [
+        [
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      [
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      [
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      [
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      [
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      [
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      [
+        [
+          4
+        ],
+        [
+          0
+        ]
+      ],
+      [
+        [
+          4
+        ],
+        [
+          2
+        ]
+      ],
+      [
+        [
+          4
+        ],
+        [
+          4
+        ]
+      ]
+    ],
+    "covered_pair_complete_exponent_fibre": [
+      [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      [
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      [
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ]
+    ],
+    "bare_J2_first_packet": 5,
+    "true_first_packet": 2
+  },
+  "cases": [
+    {
+      "name": "trivial",
+      "cyclic_orders": [
+        1
+      ],
+      "order": 1,
+      "character_exponent": 1,
+      "delta": 1,
+      "coset_representatives": [
+        [
+          0
+        ]
+      ],
+      "image_size": 1,
+      "map_fibres_checked": 1,
+      "character_basis_pairs_checked": 1,
+      "packet_factors": [
+        {
+          "label": "label_A",
+          "original_exponent_bound": 2,
+          "group_image": [
+            0
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 3,
+      "target_pairs_checked": 1,
+      "full_polynomial_terms_checked": 9,
+      "alias_examples": [],
+      "J2_first_packet": [
+        {
+          "target": [
+            0
+          ],
+          "bare_J2_first_packet": 3,
+          "true_first_packet": 3
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 1,
+          "output_count": 1,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 1,
+          "output_count": 1,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 1,
+          "output_count": 1,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 3,
+          "original_histories_checked": 1,
+          "output_count": 1,
+          "each_fibre_size": 1
+        }
+      ]
+    },
+    {
+      "name": "U(3), p=13 a=4 R=3",
+      "cyclic_orders": [
+        2
+      ],
+      "order": 2,
+      "character_exponent": 2,
+      "delta": 2,
+      "coset_representatives": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "image_size": 2,
+      "map_fibres_checked": 4,
+      "character_basis_pairs_checked": 4,
+      "packet_factors": [
+        {
+          "label": "prime_2",
+          "original_exponent_bound": 4,
+          "group_image": [
+            1
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 5,
+      "target_pairs_checked": 4,
+      "full_polynomial_terms_checked": 100,
+      "alias_examples": [
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            0
+          ],
+          "bare": 13,
+          "true": 9
+        },
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            1
+          ],
+          "bare": 12,
+          "true": 6
+        },
+        {
+          "target1": [
+            1
+          ],
+          "target2": [
+            0
+          ],
+          "bare": 12,
+          "true": 6
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0
+          ],
+          "bare_J2_first_packet": 5,
+          "true_first_packet": 3
+        },
+        {
+          "target": [
+            1
+          ],
+          "bare_J2_first_packet": 5,
+          "true_first_packet": 2
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 4,
+          "output_count": 4,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 8,
+          "output_count": 4,
+          "each_fibre_size": 2
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 16,
+          "output_count": 4,
+          "each_fibre_size": 4
+        },
+        {
+          "length": 3,
+          "original_histories_checked": 32,
+          "output_count": 4,
+          "each_fibre_size": 8
+        }
+      ],
+      "unit_group_coordinates": {
+        "modulus": 3,
+        "generators": [
+          2
+        ],
+        "map": [
+          {
+            "coordinate": [
+              0
+            ],
+            "unit": 1
+          },
+          {
+            "coordinate": [
+              1
+            ],
+            "unit": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "U(7)",
+      "cyclic_orders": [
+        6
+      ],
+      "order": 6,
+      "character_exponent": 6,
+      "delta": 2,
+      "coset_representatives": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "image_size": 18,
+      "map_fibres_checked": 36,
+      "character_basis_pairs_checked": 36,
+      "packet_factors": [
+        {
+          "label": "prime_2",
+          "original_exponent_bound": 2,
+          "group_image": [
+            2
+          ]
+        },
+        {
+          "label": "prime_3",
+          "original_exponent_bound": 2,
+          "group_image": [
+            1
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 9,
+      "target_pairs_checked": 36,
+      "full_polynomial_terms_checked": 2916,
+      "alias_examples": [
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            0
+          ],
+          "bare": 5,
+          "true": 4
+        },
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            1
+          ],
+          "bare": 4,
+          "true": 2
+        },
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            2
+          ],
+          "bare": 5,
+          "true": 4
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0
+          ],
+          "bare_J2_first_packet": 3,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            1
+          ],
+          "bare_J2_first_packet": 3,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            2
+          ],
+          "bare_J2_first_packet": 3,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            3
+          ],
+          "bare_J2_first_packet": 3,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            4
+          ],
+          "bare_J2_first_packet": 3,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            5
+          ],
+          "bare_J2_first_packet": 3,
+          "true_first_packet": 1
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 36,
+          "output_count": 36,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 72,
+          "output_count": 36,
+          "each_fibre_size": 2
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 144,
+          "output_count": 36,
+          "each_fibre_size": 4
+        },
+        {
+          "length": 3,
+          "original_histories_checked": 288,
+          "output_count": 36,
+          "each_fibre_size": 8
+        }
+      ],
+      "unit_group_coordinates": {
+        "modulus": 7,
+        "generators": [
+          3
+        ],
+        "map": [
+          {
+            "coordinate": [
+              0
+            ],
+            "unit": 1
+          },
+          {
+            "coordinate": [
+              1
+            ],
+            "unit": 3
+          },
+          {
+            "coordinate": [
+              2
+            ],
+            "unit": 2
+          },
+          {
+            "coordinate": [
+              3
+            ],
+            "unit": 6
+          },
+          {
+            "coordinate": [
+              4
+            ],
+            "unit": 4
+          },
+          {
+            "coordinate": [
+              5
+            ],
+            "unit": 5
+          }
+        ]
+      }
+    },
+    {
+      "name": "U(15), p=97 a=28 R=15",
+      "cyclic_orders": [
+        4,
+        2
+      ],
+      "order": 8,
+      "character_exponent": 4,
+      "delta": 4,
+      "coset_representatives": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "image_size": 16,
+      "map_fibres_checked": 64,
+      "character_basis_pairs_checked": 64,
+      "packet_factors": [
+        {
+          "label": "prime_2",
+          "original_exponent_bound": 4,
+          "group_image": [
+            1,
+            0
+          ]
+        },
+        {
+          "label": "prime_7",
+          "original_exponent_bound": 2,
+          "group_image": [
+            3,
+            1
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 15,
+      "target_pairs_checked": 64,
+      "full_polynomial_terms_checked": 14400,
+      "alias_examples": [
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            0,
+            0
+          ],
+          "bare": 20,
+          "true": 9
+        },
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            0,
+            1
+          ],
+          "bare": 12,
+          "true": 3
+        },
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            1,
+            0
+          ],
+          "bare": 15,
+          "true": 6
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0,
+            0
+          ],
+          "bare_J2_first_packet": 8,
+          "true_first_packet": 3
+        },
+        {
+          "target": [
+            0,
+            1
+          ],
+          "bare_J2_first_packet": 8,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            1,
+            0
+          ],
+          "bare_J2_first_packet": 7,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            1,
+            1
+          ],
+          "bare_J2_first_packet": 7,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            2,
+            0
+          ],
+          "bare_J2_first_packet": 8,
+          "true_first_packet": 3
+        },
+        {
+          "target": [
+            2,
+            1
+          ],
+          "bare_J2_first_packet": 8,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            3,
+            0
+          ],
+          "bare_J2_first_packet": 7,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            3,
+            1
+          ],
+          "bare_J2_first_packet": 7,
+          "true_first_packet": 2
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 64,
+          "output_count": 64,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 256,
+          "output_count": 64,
+          "each_fibre_size": 4
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 1024,
+          "output_count": 64,
+          "each_fibre_size": 16
+        },
+        {
+          "length": 3,
+          "original_histories_checked": 4096,
+          "output_count": 64,
+          "each_fibre_size": 64
+        }
+      ],
+      "unit_group_coordinates": {
+        "modulus": 15,
+        "generators": [
+          2,
+          14
+        ],
+        "map": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "unit": 1
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "unit": 14
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "unit": 2
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "unit": 13
+          },
+          {
+            "coordinate": [
+              2,
+              0
+            ],
+            "unit": 4
+          },
+          {
+            "coordinate": [
+              2,
+              1
+            ],
+            "unit": 11
+          },
+          {
+            "coordinate": [
+              3,
+              0
+            ],
+            "unit": 8
+          },
+          {
+            "coordinate": [
+              3,
+              1
+            ],
+            "unit": 7
+          }
+        ]
+      }
+    },
+    {
+      "name": "U(8)",
+      "cyclic_orders": [
+        2,
+        2
+      ],
+      "order": 4,
+      "character_exponent": 2,
+      "delta": 4,
+      "coset_representatives": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "image_size": 4,
+      "map_fibres_checked": 16,
+      "character_basis_pairs_checked": 16,
+      "packet_factors": [
+        {
+          "label": "prime_3",
+          "original_exponent_bound": 2,
+          "group_image": [
+            1,
+            0
+          ]
+        },
+        {
+          "label": "prime_5",
+          "original_exponent_bound": 2,
+          "group_image": [
+            0,
+            1
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 9,
+      "target_pairs_checked": 16,
+      "full_polynomial_terms_checked": 1296,
+      "alias_examples": [
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            0,
+            0
+          ],
+          "bare": 25,
+          "true": 16
+        },
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            0,
+            1
+          ],
+          "bare": 20,
+          "true": 8
+        },
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            1,
+            0
+          ],
+          "bare": 20,
+          "true": 8
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0,
+            0
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 4
+        },
+        {
+          "target": [
+            0,
+            1
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            1,
+            0
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            1,
+            1
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 1
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 16,
+          "output_count": 16,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 64,
+          "output_count": 16,
+          "each_fibre_size": 4
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 256,
+          "output_count": 16,
+          "each_fibre_size": 16
+        },
+        {
+          "length": 3,
+          "original_histories_checked": 1024,
+          "output_count": 16,
+          "each_fibre_size": 64
+        }
+      ],
+      "unit_group_coordinates": {
+        "modulus": 8,
+        "generators": [
+          3,
+          5
+        ],
+        "map": [
+          {
+            "coordinate": [
+              0,
+              0
+            ],
+            "unit": 1
+          },
+          {
+            "coordinate": [
+              0,
+              1
+            ],
+            "unit": 5
+          },
+          {
+            "coordinate": [
+              1,
+              0
+            ],
+            "unit": 3
+          },
+          {
+            "coordinate": [
+              1,
+              1
+            ],
+            "unit": 7
+          }
+        ]
+      }
+    },
+    {
+      "name": "C7",
+      "cyclic_orders": [
+        7
+      ],
+      "order": 7,
+      "character_exponent": 7,
+      "delta": 7,
+      "coset_representatives": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ]
+      ],
+      "image_size": 7,
+      "map_fibres_checked": 49,
+      "character_basis_pairs_checked": 49,
+      "packet_factors": [
+        {
+          "label": "label_A",
+          "original_exponent_bound": 3,
+          "group_image": [
+            1
+          ]
+        },
+        {
+          "label": "label_B",
+          "original_exponent_bound": 2,
+          "group_image": [
+            3
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 12,
+      "target_pairs_checked": 49,
+      "full_polynomial_terms_checked": 7056,
+      "alias_examples": [
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            0
+          ],
+          "bare": 20,
+          "true": 4
+        },
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            1
+          ],
+          "bare": 20,
+          "true": 4
+        },
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            2
+          ],
+          "bare": 21,
+          "true": 4
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            1
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            2
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            3
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            4
+          ],
+          "bare_J2_first_packet": 1,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            5
+          ],
+          "bare_J2_first_packet": 1,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            6
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 2
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 49,
+          "output_count": 49,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 343,
+          "output_count": 49,
+          "each_fibre_size": 7
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 2401,
+          "output_count": 49,
+          "each_fibre_size": 49
+        },
+        {
+          "length": 3,
+          "original_histories_checked": 16807,
+          "output_count": 49,
+          "each_fibre_size": 343
+        }
+      ]
+    },
+    {
+      "name": "C14",
+      "cyclic_orders": [
+        14
+      ],
+      "order": 14,
+      "character_exponent": 14,
+      "delta": 14,
+      "coset_representatives": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ],
+        [
+          13
+        ]
+      ],
+      "image_size": 14,
+      "map_fibres_checked": 196,
+      "character_basis_pairs_checked": 196,
+      "packet_factors": [
+        {
+          "label": "label_A",
+          "original_exponent_bound": 2,
+          "group_image": [
+            1
+          ]
+        },
+        {
+          "label": "label_B",
+          "original_exponent_bound": 2,
+          "group_image": [
+            5
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 9,
+      "target_pairs_checked": 9,
+      "full_polynomial_terms_checked": 729,
+      "alias_examples": [
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            0
+          ],
+          "bare": 6,
+          "true": 1
+        },
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            13
+          ],
+          "bare": 6,
+          "true": 0
+        },
+        {
+          "target1": [
+            0
+          ],
+          "target2": [
+            7
+          ],
+          "bare": 6,
+          "true": 1
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            13
+          ],
+          "bare_J2_first_packet": 1,
+          "true_first_packet": 0
+        },
+        {
+          "target": [
+            7
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 1
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 196,
+          "output_count": 196,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 2744,
+          "output_count": 196,
+          "each_fibre_size": 14
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 38416,
+          "output_count": 196,
+          "each_fibre_size": 196
+        }
+      ]
+    },
+    {
+      "name": "C4 x C6",
+      "cyclic_orders": [
+        4,
+        6
+      ],
+      "order": 24,
+      "character_exponent": 12,
+      "delta": 4,
+      "coset_representatives": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "image_size": 144,
+      "map_fibres_checked": 576,
+      "character_basis_pairs_checked": 576,
+      "packet_factors": [
+        {
+          "label": "label_A",
+          "original_exponent_bound": 2,
+          "group_image": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "label_B",
+          "original_exponent_bound": 2,
+          "group_image": [
+            2,
+            1
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 9,
+      "target_pairs_checked": 9,
+      "full_polynomial_terms_checked": 729,
+      "alias_examples": [
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            0,
+            0
+          ],
+          "bare": 2,
+          "true": 1
+        },
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            2,
+            0
+          ],
+          "bare": 2,
+          "true": 1
+        },
+        {
+          "target1": [
+            3,
+            5
+          ],
+          "target2": [
+            3,
+            5
+          ],
+          "bare": 1,
+          "true": 0
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0,
+            0
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            3,
+            5
+          ],
+          "bare_J2_first_packet": 1,
+          "true_first_packet": 0
+        },
+        {
+          "target": [
+            2,
+            0
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 1
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 576,
+          "output_count": 576,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 2304,
+          "output_count": 576,
+          "each_fibre_size": 4
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 9216,
+          "output_count": 576,
+          "each_fibre_size": 16
+        }
+      ]
+    },
+    {
+      "name": "C2 x C14",
+      "cyclic_orders": [
+        2,
+        14
+      ],
+      "order": 28,
+      "character_exponent": 14,
+      "delta": 28,
+      "coset_representatives": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "image_size": 28,
+      "map_fibres_checked": 784,
+      "character_basis_pairs_checked": 784,
+      "packet_factors": [
+        {
+          "label": "label_A",
+          "original_exponent_bound": 2,
+          "group_image": [
+            1,
+            1
+          ]
+        },
+        {
+          "label": "label_B",
+          "original_exponent_bound": 2,
+          "group_image": [
+            0,
+            5
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 9,
+      "target_pairs_checked": 9,
+      "full_polynomial_terms_checked": 729,
+      "alias_examples": [
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            0,
+            0
+          ],
+          "bare": 4,
+          "true": 1
+        },
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            1,
+            13
+          ],
+          "bare": 3,
+          "true": 0
+        },
+        {
+          "target1": [
+            0,
+            0
+          ],
+          "target2": [
+            1,
+            0
+          ],
+          "bare": 2,
+          "true": 0
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0,
+            0
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            1,
+            13
+          ],
+          "bare_J2_first_packet": 1,
+          "true_first_packet": 0
+        },
+        {
+          "target": [
+            1,
+            0
+          ],
+          "bare_J2_first_packet": 2,
+          "true_first_packet": 0
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 784,
+          "output_count": 784,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 21952,
+          "output_count": 784,
+          "each_fibre_size": 28
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 614656,
+          "output_count": 784,
+          "each_fibre_size": 784
+        }
+      ]
+    },
+    {
+      "name": "C3 x C5",
+      "cyclic_orders": [
+        3,
+        5
+      ],
+      "order": 15,
+      "character_exponent": 15,
+      "delta": 1,
+      "coset_representatives": [
+        [
+          0,
+          0
+        ]
+      ],
+      "image_size": 225,
+      "map_fibres_checked": 225,
+      "character_basis_pairs_checked": 225,
+      "packet_factors": [
+        {
+          "label": "label_A",
+          "original_exponent_bound": 2,
+          "group_image": [
+            1,
+            1
+          ]
+        },
+        {
+          "label": "label_B",
+          "original_exponent_bound": 2,
+          "group_image": [
+            2,
+            1
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 9,
+      "target_pairs_checked": 9,
+      "full_polynomial_terms_checked": 729,
+      "alias_examples": [],
+      "J2_first_packet": [
+        {
+          "target": [
+            0,
+            0
+          ],
+          "bare_J2_first_packet": 1,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            2,
+            4
+          ],
+          "bare_J2_first_packet": 0,
+          "true_first_packet": 0
+        },
+        {
+          "target": [
+            1,
+            2
+          ],
+          "bare_J2_first_packet": 1,
+          "true_first_packet": 1
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 225,
+          "output_count": 225,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 225,
+          "output_count": 225,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 225,
+          "output_count": 225,
+          "each_fibre_size": 1
+        }
+      ]
+    },
+    {
+      "name": "C2 x C2 x C2",
+      "cyclic_orders": [
+        2,
+        2,
+        2
+      ],
+      "order": 8,
+      "character_exponent": 2,
+      "delta": 8,
+      "coset_representatives": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "image_size": 8,
+      "map_fibres_checked": 64,
+      "character_basis_pairs_checked": 64,
+      "packet_factors": [
+        {
+          "label": "label_A",
+          "original_exponent_bound": 2,
+          "group_image": [
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "label": "label_B",
+          "original_exponent_bound": 2,
+          "group_image": [
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "packet_exponent_vectors": 9,
+      "target_pairs_checked": 64,
+      "full_polynomial_terms_checked": 5184,
+      "alias_examples": [
+        {
+          "target1": [
+            0,
+            0,
+            0
+          ],
+          "target2": [
+            0,
+            0,
+            0
+          ],
+          "bare": 25,
+          "true": 16
+        },
+        {
+          "target1": [
+            0,
+            0,
+            0
+          ],
+          "target2": [
+            0,
+            1,
+            1
+          ],
+          "bare": 20,
+          "true": 8
+        },
+        {
+          "target1": [
+            0,
+            0,
+            0
+          ],
+          "target2": [
+            1,
+            0,
+            1
+          ],
+          "bare": 20,
+          "true": 8
+        }
+      ],
+      "J2_first_packet": [
+        {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 4
+        },
+        {
+          "target": [
+            0,
+            0,
+            1
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 0
+        },
+        {
+          "target": [
+            0,
+            1,
+            0
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 0
+        },
+        {
+          "target": [
+            0,
+            1,
+            1
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            1,
+            0,
+            0
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 0
+        },
+        {
+          "target": [
+            1,
+            0,
+            1
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 2
+        },
+        {
+          "target": [
+            1,
+            1,
+            0
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 1
+        },
+        {
+          "target": [
+            1,
+            1,
+            1
+          ],
+          "bare_J2_first_packet": 9,
+          "true_first_packet": 0
+        }
+      ],
+      "finite_history_checks": [
+        {
+          "length": 0,
+          "original_histories_checked": 64,
+          "output_count": 64,
+          "each_fibre_size": 1
+        },
+        {
+          "length": 1,
+          "original_histories_checked": 512,
+          "output_count": 64,
+          "each_fibre_size": 8
+        },
+        {
+          "length": 2,
+          "original_histories_checked": 4096,
+          "output_count": 64,
+          "each_fibre_size": 64
+        },
+        {
+          "length": 3,
+          "original_histories_checked": 32768,
+          "output_count": 64,
+          "each_fibre_size": 512
+        }
+      ]
+    }
+  ]
+}

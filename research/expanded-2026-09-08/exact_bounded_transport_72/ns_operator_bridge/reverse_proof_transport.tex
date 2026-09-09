@@ -1,0 +1,478 @@
+\subsection{Returning the full-fibre calculus to the new proof}
+\label{sec:ns-reverse-proof}
+
+We now apply the full-fibre maps to the source's continuous auxiliary
+calculus, in the direction requested by the user. The relevant source
+statements are Lemma~6.2, equations (6.17)--(6.20), and Lemma~8.6,
+equations (8.19)--(8.23), on printed pages 67 and 95--96 of the
+preserved 166-page manuscript. We retain its unit-period torus,
+$J$, $v_r$, $v_t$, $\Lambda=4-\sqrt2$, $T_g=4+\sqrt2$,
+and the Fourier character $e_n(Y)=\exp(2\pi i n\cdot Y)$.
+Write $\mathscr C=C^\infty(\mathbb T^2;\mathbb C)$,
+$\Pi f=\int_{\mathbb T^2}f$, and $\mathscr C_0=\ker\Pi$.
+The smooth inverse used below is proved, with its exact norm and
+original constants, in the next subsection. The conclusions here
+also hold directly on the previously defined finite polynomials.
+
+\begin{theorem}[Continuous transfer, descent, and every operator fibre]
+\label{thm:ns-continuous-transfer}
+For $m\geq0$, retain $K_m=\ker(J^m:\mathbb T^2\to\mathbb T^2)$
+and the full inverse parametrization (T8). Define
+\[
+\begin{aligned}
+ P_m:\mathscr C&\longrightarrow\mathscr C,
+ &P_mf(Y)&=f(J^mY),\\
+ L_m:\mathscr C&\longrightarrow\mathscr C,
+ &L_mg(X)&=14^{-m}\sum_{J^mY=X}g(Y),\\
+ Q_mg(Y)&=14^{-m}\sum_{a\in K_m}g(Y+a).
+\end{aligned}
+\]
+Then $L_mP_m=1$, $P_mL_m=Q_m$, and $Q_m^2=Q_m$.
+The image of $P_m$ is exactly the $K_m$-invariant functions,
+and $P_m^{-1}=L_m$ on that image. The full fibres of $L_m$ are
+$P_mf+\ker L_m$, where its kernel consists of functions whose
+sum on every full covering fibre is zero. The fibre of $P_m$ at
+$g$ is $\{L_mg\}$ if $Q_mg=g$ and is empty otherwise.
+Also $\ker Q_m=\ker L_m$. The complete fibre of $Q_m$ at
+$h$ is $h+\ker L_m$ if $Q_mh=h$, and is empty otherwise.
+For every $n\in\mathbb Z^2$,
+\[
+ L_me_n=
+ \begin{cases}
+ e_k,&n=(J^m)^Tk\text{ for }k\in\mathbb Z^2,\\
+ 0,&n\notin(J^m)^T\mathbb Z^2.
+ \end{cases}
+\]
+The integral and product identities are
+\[
+ \Pi L_mg=\Pi g,\quad \Pi P_mf=\Pi f,\quad
+ \langle P_mf,g\rangle=\langle f,L_mg\rangle,\quad
+ L_m((P_mf)g)=fL_mg.
+\]
+All inner products use the original probability Haar measure.
+In particular $\Pi((P_mf)(P_mg))=\Pi(fg)$.
+For $v=v_r,v_t$ and its corresponding eigenvalue $\lambda$,
+\[
+ D_vL_m=\lambda^{-m}L_mD_v,
+ \qquad D_v^{-1}L_m=\lambda^mL_mD_v^{-1}
+ \quad\hbox{on }\mathscr C_0.
+\]
+The maps $Q_m$ commute with $D_v$ and its zero-mean inverse.
+\end{theorem}
+\begin{proof}
+Every fibre is $Y+K_m$ and has exactly $14^m$ elements by
+(T8). On it, $P_mf$ is the constant $f(X)$. Fibre summation
+therefore proves both compositions, the projection, its image,
+the stated fibres of $L_m$ and $P_m$, and the product identity.
+Since $Q_m=P_mL_m$ and $P_m$ is injective, their kernels satisfy
+$\ker Q_m=\ker L_m$. A value of the projection $Q_m$ is fixed
+by it; if $Q_mh=h$, subtraction gives exactly
+$Q_m^{-1}(h)=h+\ker Q_m$, proving its full fibre as well.
+Locally the covering has $14^m$ affine inverse branches with
+linear part $J^{-m}$;
+their finite sum proves smoothness of $L_mg$ independently of
+the choice of local branches.
+
+For a character $e_n$, the fibre sum has factor
+$14^{-m}\sum_{a\in K_m}e_n(a)$. Translation by any element
+of $K_m$ leaves this sum unchanged. It is one if the character
+is trivial on $K_m$, and otherwise is zero. Triviality is
+equivalent to $(J^{-m})^Tn\in\mathbb Z^2$: evaluating on
+$J^{-m}z\pmod{\mathbb Z^2}$ for every $z\in\mathbb Z^2$
+proves both directions. In the trivial case write
+$n=(J^m)^Tk$; then $e_n(Y)=e_k(X)$ on the fibre.
+This proves the displayed multiplier without dropping its
+nonimage frequencies.
+
+The Fourier computation proves $\Pi L_mg=\Pi g$ first for
+polynomials. The Fejer approximation already proved after
+(T7) and the supremum bound $\|L_mg\|_\infty\le\|g\|_\infty$
+pass this equality to continuous $g$. The same approximation
+proves Haar preservation for $P_m$. Applying it to
+$L_m((P_mf)\overline g)=f\overline{L_mg}$ proves the inner
+product formula. The last product integral uses
+$(P_mf)(P_mg)=P_m(fg)$, which holds pointwise.
+
+On a surviving frequency $n=(J^m)^Tk$ one has
+$v\cdot n=\lambda^m(v\cdot k)$. On nonsurviving frequencies
+both sides of each asserted intertwining are zero. This proves
+the identities on polynomials, with the precise factors
+$2\pi i(v\cdot n)$ and their reciprocals. Smooth Fourier
+convergence and the finite derivative loss proved below pass
+them to $\mathscr C$ and $\mathscr C_0$. Finally $Q_m$ is
+averaging of translations, which commute with all these
+constant-direction multipliers; alternatively use its exact
+frequency projection.
+\end{proof}
+
+\begin{theorem}[The mean-correction map on every common band]
+\label{thm:ns-reverse-mean-correction}
+Let $U$ be an open set of retained slow coordinates. For a
+fixed source band scale $Q>0$, retain the source exponent
+$h_{\rm NS}$, $A_{\rm NS}=1/2+h_{\rm NS}$,
+$\varepsilon=Q^{h_{\rm NS}}$, and
+$c_i=T_g^iQ^{1+h_{\rm NS}}$. The subscripts distinguish the
+source's physical scaling constants from ES chart coordinates;
+their values are unchanged. For an extended band residual
+$E_i\in C^\infty(U\times\mathbb T^2)$, put
+\[
+ E_i^\circ=E_i-\Pi E_i,\qquad
+ \mathcal C_i(E_i)=-c_i^{-1}D_{v_t}^{-1}E_i^\circ.
+\]
+This is a smooth, zero-mean coefficient with
+$c_iD_{v_t}\mathcal C_i(E_i)=-E_i^\circ$.
+Its full kernel consists of the coefficients independent of the
+torus variable, and the full inverse fibre at any smooth
+zero-mean $V$ is
+\[
+ \{\,-c_iD_{v_t}V+b:\ b\in C^\infty(U;\mathbb C)\,\}.
+\]
+For $i\ge j\ge0$ put $\Delta=i-j$, preserving $Q$. Then
+\[
+ \mathcal C_j(P_\Delta E_i)=P_\Delta\mathcal C_i(E_i).
+\]
+Here $P_\Delta$ acts only on the torus coordinate and
+$c_j=T_g^{-\Delta}c_i$. The common representative and its
+full descent test are $P_\Delta E_i$ and
+$Q_\Delta E_j=E_j$, with inverse $E_i=L_\Delta E_j$.
+
+For a finite set of band indices with $i_0=\min i$, the common
+sum is $\sum_iP_{i-i_0}E_i$. Its absolute representative is
+exactly $\sum_iP_iE_i=P_{i_0}\sum_iP_{i-i_0}E_i$.
+On overlaps, equality of absolute representatives implies
+equality after pullback to the smaller common index. The same
+assertion holds for their zero-mean inverse corrections and
+for sums and products of the original coefficients.
+\end{theorem}
+\begin{proof}
+Character integration shows that $E_i^\circ$ has precisely its
+original nonzero Fourier coefficients. The exact inverse of
+$D_{v_t}$ proves the cancellation and smoothness. The kernel
+and inverse fibre follow from
+$E_i-\Pi E_i=-c_iD_{v_t}V$, with no condition on the freely
+retained slow function $b=\Pi E_i$.
+
+Haar preservation gives $(P_\Delta E_i)^\circ=P_\Delta E_i^\circ$.
+Using the already proved inverse covariance gives
+\[
+\begin{aligned}
+ \mathcal C_j(P_\Delta E_i)
+ &=-c_j^{-1}T_g^{-\Delta}P_\Delta D_{v_t}^{-1}E_i^\circ\\
+ &=-c_i^{-1}P_\Delta D_{v_t}^{-1}E_i^\circ
+ =P_\Delta\mathcal C_i(E_i).
+\end{aligned}
+\]
+The transfer theorem proves the descent test and its inverse.
+The identity $P_aP_b=P_{a+b}$ proves the sum formula. If
+$P_jF=P_kG$ and $j\le k$, injectivity of $P_j$ gives
+$F=P_{k-j}G$; its inverse and full compatibility test are
+again the transfer formulas. The calculation just made shows
+that applying the correction preserves this equality.
+Pullback preserves sums and products pointwise, proving the
+last assertion for the original compatible coefficients.
+
+The source's physical residual and velocity scaling gives
+exactly
+\[
+ Q^{A_{\rm NS}}Q^{-(2A_{\rm NS}+1/2)}T_g^{-i}
+ =Q^{-1-h_{\rm NS}}T_g^{-i}=c_i^{-1}.
+\]
+Thus the minus sign and coefficient above are the actual
+chart representation of $-D_{v_t}^{-1}$ acting on the
+physical residual in the absolute auxiliary variable, as
+in source (8.20)--(8.23). A distinct $Q$ must retain its own
+displayed scaling; the common-band identity holds at the
+fixed physical normalization specified here.
+\end{proof}
+
+\begin{theorem}[Physical evaluation, chain rules, and its complete fibre]
+\label{thm:ns-physical-evaluation-fibre}
+Retain the source $d_r>0$, $D_{\rm NS}=1/2-h_{\rm NS}$,
+$\varphi(r,t)=v_rr^{d_r}+v_tt\pmod{\mathbb Z^2}$, $r>0$.
+On any open physical slow domain, define
+\[
+ \mathcal E_iF(r,z,t)=F(r,z,t,J^i\varphi(r,t))
+\]
+for $F\in C^\infty(U\times\mathbb T^2)$. This map is
+surjective: its right inverse sends $f$ to the coefficient
+$F(r,z,t,Y)=f(r,z,t)$ independent of $Y$. Its exact kernel
+is the smooth functions vanishing on the displayed graph,
+and its full fibre at $f$ is this right inverse plus that
+kernel. For $i\ge j$, $\mathcal E_i=\mathcal E_jP_{i-j}$.
+The derivatives are exactly
+\[
+\begin{aligned}
+ \partial_t\mathcal E_iF
+ &=\mathcal E_i(\partial_tF+T_g^iD_{v_t}F),\\
+ \partial_r\mathcal E_iF
+ &=\mathcal E_i(\partial_rF+d_rr^{d_r-1}\Lambda^iD_{v_r}F),\\
+ \partial_z\mathcal E_iF&=\mathcal E_i\partial_zF.
+\end{aligned}
+\]
+In the original chart $R=r/\sqrt Q$, $Z=z/Q^{D_{\rm NS}}$,
+$T=(1-t)/Q$, these identities become
+\[
+\begin{aligned}
+ Q^{1+h_{\rm NS}}\partial_t&\longleftrightarrow
+       -\varepsilon\partial_T+c_iD_{v_t},\\
+ \sqrt Q\partial_r&\longleftrightarrow
+       \partial_R+\Lambda^iQ^{d_r/2}d_rR^{d_r-1}D_{v_r},\\
+ \sqrt Q\partial_z&\longleftrightarrow\varepsilon\partial_Z.
+\end{aligned}
+\]
+There is no linear map from evaluated physical coefficients
+to slow functions whose composition with $\mathcal E_i$
+equals the torus mean $\Pi$ on every extended coefficient.
+Nevertheless the joint map $(\mathcal E_i,\Pi)$ is explicitly
+surjective onto pairs of smooth slow functions, with the
+full inverse fibres described in the proof.
+\end{theorem}
+\begin{proof}
+Evaluation along a smooth graph for $r>0$ is smooth. The
+displayed right inverse proves surjectivity; subtraction
+proves the kernel and fibre. The band identity is direct
+composition of the powers of $J$. The chain rule and
+$J^iv_r=\Lambda^iv_r$, $J^iv_t=T_g^iv_t$ prove every
+derivative identity. In chart coordinates, respectively
+$\partial_tT=-1/Q$, $\partial_rR=Q^{-1/2}$ and
+$\partial_zZ=Q^{-D_{\rm NS}}$. Substitution gives the
+three stated coefficients, including the negative slow
+time term. There is no assertion of regularity of
+$r^{d_r}$ at the axis; the specified domain is $r>0$.
+
+Fix $n\in\mathbb Z^2\setminus\{0\}$ and write
+$a(r,t)=e_n(J^i\varphi(r,t))$, a nowhere zero smooth
+function. The extended coefficient $H=e_n(Y)-a(r,t)$
+has $\mathcal E_iH=0$ but $\Pi H=-a\ne0$.
+This proves the claimed failure of a linear descent of
+the mean through physical evaluation. It does not discard
+the relation between the two data: for arbitrary desired
+physical value $f$ and mean $b$, define
+\[
+ F_{f,b}(r,z,t,Y)=b(r,z,t)
+       +(f(r,z,t)-b(r,z,t))\frac{e_n(Y)}{a(r,t)}.
+\]
+It satisfies $\mathcal E_iF_{f,b}=f$ and $\Pi F_{f,b}=b$.
+The complete inverse fibre is
+$F_{f,b}+(\ker\mathcal E_i\cap\ker\Pi)$, by subtraction.
+For real $f,b$, the real part of this formula provides a
+real right inverse as well. These exact fibres give a
+structural justification for retaining auxiliary means
+before evaluation: one evaluated coefficient leaves the
+auxiliary mean free, with the complete correspondence
+given by $F_{f,b}$ and its displayed fibre.
+\end{proof}
+
+\begin{theorem}[Sampling quotient, full original-frequency fibres, and inverse obstruction]
+\label{thm:ns-reverse-sampling-fibres}
+For $N\ge1$ let $D_N=\mathbb T[N]^2$ and let
+$R_N:\mathcal P\to\mathbb C^{D_N}$ be restriction.
+For $f=\sum_na_ne_n$ its discrete Fourier coefficient
+at $r\in(\mathbb Z/N\mathbb Z)^2$ is exactly
+\[
+ \widehat {R_Nf}(r)=
+ N^{-2}\sum_{x\in D_N}f(x)e^{-2\pi i r\cdot x}
+ =\sum_{n\equiv r\pmod N}a_n.
+\]
+Thus $R_N$ is onto and its kernel consists of precisely
+the finite coefficient families having zero sum in every
+residue class. It satisfies $R_NP_m=J_N^{m*}R_N$,
+where $J_N^{m*}q(x)=q(J^mx)$.
+
+For any retained finite original spectrum $\Omega\subset\mathbb Z^2$,
+let $\Omega_r=\{n\in\Omega:n\equiv r\pmod N\}$.
+On $\mathcal P_\Omega=\operatorname{span}\{e_n:n\in\Omega\}$,
+the image consists of grid functions whose coefficients
+vanish at every empty $\Omega_r$. Above each such grid
+function $q$, choose and retain one $n_r\in\Omega_r$
+for each occupied class. All inverse fibres are
+\[
+ a_n=b_n\quad(n\ne n_r),\qquad
+ a_{n_r}=\widehat q(r)-\sum_{n\in\Omega_r\setminus\{n_r\}}b_n,
+\]
+with every $b_n\in\mathbb C$ freely retained.
+In particular restriction is injective on this domain
+exactly when every occupied $\Omega_r$ is a singleton.
+
+For either original $v=v_r,v_t$, a linear map on
+$\operatorname{im}(R_N|_{\mathcal P_\Omega})$ intertwines
+$R_ND_v$ with $R_N$ exactly when the elements of $\Omega$
+have distinct residues modulo $N$. On the original zero-Haar-mean
+subspace $\mathcal P_{\Omega,0}
+=\operatorname{span}\{e_n:n\in\Omega\setminus\{0\}\}$,
+an intertwining inverse map exists exactly when the elements
+of $\Omega\setminus\{0\}$ have distinct residues. In each
+case the map on the stated grid image is unique. The original
+frequency zero may collide with a nonzero frequency without
+violating the latter criterion, since the former is absent
+from the inverse domain.
+
+For either original $v=v_r,v_t$, no linear operator
+$B_N$ on grid functions satisfies $R_ND_v=B_NR_N$
+on all $\mathcal P$. No linear operator $A_N$ satisfies
+$R_ND_v^{-1}=A_NR_N$ on all $\mathcal P_0$ either.
+\end{theorem}
+\begin{proof}
+The product of the two finite geometric sums is one
+exactly when both integer frequency differences are
+divisible by $N$, and zero otherwise. Expanding $f$
+proves the coefficient formula. Choosing one integer
+representative of every residue class supplies an
+interpolating polynomial for any grid function: the
+$N^2$ discrete characters are orthonormal and hence a
+basis of the $N^2$-dimensional function space. This
+proves surjectivity and the kernel. Pointwise composition
+proves the matrix intertwining. The same coefficient
+equations restricted to $\Omega$ give the image and the
+entire affine inverse fibre displayed above; the free
+coordinates prove both directions of the injectivity test.
+
+For the sharp restricted derivative criterion, suppose distinct
+$n,n'\in\Omega$ have the same residue. Then
+$R_N(e_n-e_{n'})=0$ but
+\[
+ R_ND_v(e_n-e_{n'})
+   =2\pi i\,v\cdot(n-n')\,R_Ne_n\ne0.
+\]
+Indeed $n-n'$ is a nonzero integer vector and the nonvanishing
+symbol statement applies; $R_Ne_n$ is nowhere zero. This
+prevents descent of the derivative through restriction. If both
+original frequencies are nonzero, the inverse instead gives
+\[
+ R_ND_v^{-1}(e_n-e_{n'})
+  =\left(\frac1{2\pi i\,v\cdot n}
+             -\frac1{2\pi i\,v\cdot n'}\right)R_Ne_n\ne0.
+\]
+The two denominators are nonzero and their difference is
+$2\pi i\,v\cdot(n-n')\ne0$, so their reciprocals differ.
+This proves necessity on precisely $\mathcal P_{\Omega,0}$.
+Conversely, when the relevant residues are distinct,
+restriction is a linear bijection onto its stated image.
+Conjugation of the actual derivative or zero-mean inverse by
+that bijection defines the required operator; both preserve
+their original spectral domains. Surjectivity onto the image
+forces uniqueness. These arguments include the empty domain,
+whose grid image is the zero vector space.
+
+Choose $k\in\mathbb Z^2\setminus\{0\}$. The polynomial
+$e_{Nk}-1$ restricts to zero, whereas
+\[
+ R_ND_v(e_{Nk}-1)=2\pi iN(v\cdot k)\,1\ne0.
+\]
+The nonzero multiplier was proved for both original
+directions. A linear map must send zero to zero, which
+contradicts the proposed $B_N$. For the inverse take
+$e_{Nk}-e_{2Nk}\in\mathcal P_0$. It again restricts to
+zero, but its inverse restricts to
+\[
+ \left(\frac1{2\pi iN(v\cdot k)}
+       -\frac1{4\pi iN(v\cdot k)}\right)1
+ =\frac1{4\pi iN(v\cdot k)}\,1\ne0.
+\]
+This proves the second obstruction on exactly the stated
+zero-Haar-mean domain. It concerns an unrestricted
+sampling quotient, not the continuous inverse in (8.19).
+\end{proof}
+
+\begin{theorem}[Exact lifted computation of the source inverse and quadrature error]
+\label{thm:ns-reverse-lifted-inverse}
+Suppose the retained finite spectrum $\Omega$ has distinct
+residues modulo $N$. Define the exact interpolation map
+on $\operatorname{im}(R_N|_{\mathcal P_\Omega})$ by
+\[
+ I_\Omega q=\sum_{n\in\Omega}\widehat q([n])e_n.
+\]
+It is the inverse of $R_N$ on that domain. Thus
+$R_ND_vI_\Omega$ is the exact original-frequency
+derivative on the grid image; the inverse is
+$R_ND_v^{-1}I_\Omega$ on the image of the original
+zero-Haar-mean subspace. Zero mean means that the
+coefficient of the original integer frequency $0$
+vanishes; it does not mean the grid average vanishes.
+
+For $m\ge0$ retain the full preimage
+$H_{m,N}=(J^m)^{-1}(D_N)$ of size $14^mN^2$.
+For $f=\sum_{n\in\Omega}a_ne_n$, every original coefficient
+is recovered by
+\[
+ a_n=\frac1{14^mN^2}\sum_{Y\in H_{m,N}}
+       (P_mf)(Y)e^{-2\pi i((J^m)^Tn)\cdot Y}.
+\]
+The resulting original source inverse is
+\[
+ D_v^{-1}P_mf(Y)
+ =\sum_{\substack{n\in\Omega\\n\ne0}}
+   \frac{a_n}{2\pi i\lambda^m(v\cdot n)}
+      e_{(J^m)^Tn}(Y)
+\]
+whenever the original coefficient at zero is zero.
+All covering labels are those of (T8); the inverse
+frequency map is $(J^{-m})^T$ on its exact image.
+
+For a smooth $f$ and real $s\ge0$ define, with the
+original Fourier units,
+\[
+ \|f\|_{\mathcal A^s}
+ =\sum_{n\in\mathbb Z^2}(1+4\pi^2|n|_2^2)^{s/2}|\widehat f(n)|.
+\]
+Then the full-preimage quadrature has the exact error
+and the cover-level-independent bound
+\[
+\begin{aligned}
+ \frac1{|H_{m,N}|}\sum_{Y\in H_{m,N}}P_mf(Y)-\Pi f
+ &=\sum_{n\in N\mathbb Z^2\setminus\{0\}}\widehat f(n),\\
+ \left|\frac1{|H_{m,N}|}\sum_{Y\in H_{m,N}}P_mf(Y)-\Pi f\right|
+ &\le(1+4\pi^2N^2)^{-s/2}\|f\|_{\mathcal A^s}.
+\end{aligned}
+\]
+\end{theorem}
+\begin{proof}
+Singleton residue fibres in the preceding theorem give
+both interpolation compositions. Conjugating the actual
+operators by these inverse maps proves the derivative
+and inverse formulas on the precisely specified images.
+For example, $\Omega=\{(N,0)\}$ consists of an original
+nonzero frequency; its polynomials have zero Haar mean
+although their grid values are constant. The original
+frequency label makes its inverse unambiguous.
+
+The product inside the lifted coefficient sum is
+$P_m(fe_{-n})$. Each target of $D_N$ has $14^m$
+preimages, so that sum equals its exact original-grid
+average. The preceding discrete Fourier identity and
+the distinct residue condition give $a_n$. Applying
+the original multiplier to the recovered polynomial
+proves the inverse formula, including the factor
+$\lambda^m$ and the zero-mode exclusion. This computation
+does not replace the original spectrum by its residue set.
+
+For smooth $f$ the Fourier series is absolutely summable
+with every polynomial weight. One elementary verification
+integrates $(1-\partial_1^2-\partial_2^2)^kf$ against
+$e_{-n}$ by parts; it gives
+$|\widehat f(n)|\le C_k(1+4\pi^2|n|_2^2)^{-k}$.
+Grouping the nonzero integer points by maximum coordinate
+gives $8j$ points at radius $j$, so a sufficiently large
+integer $k$ makes every stated weighted sum converge.
+Uniform Fourier convergence follows; that the sum equals
+$f$ follows also from the previously proved Fejer
+approximation with the same coefficients.
+We may therefore sum the exact finite-fibre identity
+term by term. It retains exactly the frequencies in
+$N\mathbb Z^2$, and removal of the original zero
+frequency proves the error formula. Each remaining
+frequency has Euclidean length at least $N$; multiplying
+and dividing by the displayed weight and using the
+triangle inequality proves the bound. There is no
+unrecorded factor depending on $m$.
+\end{proof}
+
+The source's continuous mean and its temporal correction
+therefore have an exact reverse connection to the repaired
+full-fibre calculus. The restriction obstruction identifies
+what a finite verification must retain; the lifted formula
+provides a complete valid computation on its stated spectral
+domain and a quantitative convergence statement on smooth
+data. These proofs establish the specified operators and
+correction maps. They do not substitute a sampled identity
+for any remaining nonlinear estimate in the NS manuscript.

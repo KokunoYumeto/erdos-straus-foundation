@@ -1,0 +1,96 @@
+{
+  "edition": "2026.09.08.2",
+  "version_doi": null,
+  "concept_doi": "10.5281/zenodo.20401937",
+  "predecessor_doi": "10.5281/zenodo.22666493",
+  "proof_count": 15,
+  "statement_count": 72,
+  "transformation_count": 85,
+  "pages": 86,
+  "proof_hashes": {
+    "bounded_transport.tex": "4356f53962f2da9b418e066f2c2ca1ba9572e45dc398bb2ca4d37981301e5050",
+    "connes_reading/connes_primitive_intersections.tex": "77023419fd8d1dba895c7b4f765b294d86caacd748f13e6c16be4a07c211ea8c",
+    "exact_audit/fixed_y_successor.tex": "181e6b50dab2adb1b33de0cc9df0dafda97cb84ab37b5409fd778d41022c050f",
+    "unary_boolean_transport.tex": "6ee796fbc0a9ac286f9372e8f7345728dd8f785913dd79211e422ebdcf55af57",
+    "shared_variable_crt.tex": "5637c0026d294db133ba4c2d16eadd6c15d3a1f7fcf60c15e2d59f7b1b284c6b",
+    "integral_cyclic_bridge.tex": "49d4f511f86e5ca9429b0fb44b916ed0684241cd0f31181737bb04f29cdd1d85",
+    "input_output_incidence.tex": "e7b09ec144f78f7507cdf87df2022fbb8651e5f7d491a5f7895a000b21fe4861",
+    "first_two_shell_sieve.tex": "55b0653488fca8cd60c78b0d702d637a81f982e5f3ca797155777633fec96f7e",
+    "raw_scale_hit_incidence.tex": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442",
+    "counterexample_sieve/all_shell_no_hit.tex": "f440b496cf8298657b4bb17d2d97a12ce3392ca14ad09cb20859e97edbb608f2",
+    "ns_operator_bridge/torus_cover_lemma.tex": "4f4fae9611f87d10896b6019342370d11f9d35e8f9a5a90bde844cd7dfd66704",
+    "ns_operator_bridge/sieve_character_cover.tex": "916d7bc2a16d681c223de5f73330378f1babf70f7f4c0d657a93926deb5aae3c",
+    "ns_operator_bridge/reverse_proof_transport.tex": "cf42ea9475aecd08268d1af5795fcbec92ca62b67d3ec0f73ddb04e187c74d62",
+    "ns_operator_bridge/reverse_smooth_inverse.tex": "b9083db518d98550f2bd9928a0fbbc061d3a70ee846441774ce331be5288ad5b",
+    "boundary_swap/boundary_swap_completion.tex": "aa2af846808a077ce951d279da4249df742ab18c4e0d0f1880a47c3a675c60dc"
+  },
+  "all_proof_bytes_unchanged": true,
+  "pdf_sha256": "36bff0867a98c549810110eae829e143f89227e94a57be7d10a6173d9a16f30b",
+  "review_original_sha256": "cc5854436eac6faa2a15fefaf2e1fb2be81a1f86eed83bd3b24afc992ab9447d",
+  "editorial_changes": [
+    {
+      "path": "proof_review/REVIEW.md",
+      "original_sha256": "d3c067b86495aa77a209e7a89274a34b96555ad3a4b87a0f3107c6d0fd07a51d",
+      "public_sha256": "868bed5f3919267535a0afba57a0ed89fa0d939afad9f981531dff0c73bd9c5f",
+      "change": "Editorial replacement/removal of private paths and task routing only."
+    },
+    {
+      "path": "proof_review/review.json",
+      "original_sha256": "cc5854436eac6faa2a15fefaf2e1fb2be81a1f86eed83bd3b24afc992ab9447d",
+      "public_sha256": "52bd7eae51d0d6d17f1df886b44d2b77b75cece70ce6d032ec9d05a657c8c395",
+      "change": "Editorial replacement/removal of private paths and task routing only."
+    },
+    {
+      "path": "proof_review/THREE_REQUIREMENT_AUDIT.md",
+      "original_sha256": "3c591399aceff933904dfbe564049431731594c5dbdc60bbdce497c22c6ff0bf",
+      "public_sha256": "d1ac163faf9de0e0692a0413dc01ce8e1f966694c5e9b6db38ada2c6c0614506",
+      "change": "Editorial replacement/removal of private paths and task routing only."
+    },
+    {
+      "path": "proof_review/THREE_REQUIREMENT_AUDIT.json",
+      "original_sha256": "f92e6fb10b605af70dd47c711a44ae387ce70939b19478a074b5f42b92c369d7",
+      "public_sha256": "39d1ba920c4d97060def02c18666a31d3ac3e4b2b304a5c26886a2c1f1aaa323",
+      "change": "Editorial replacement/removal of private paths and task routing only."
+    },
+    {
+      "path": "SOURCE_CLAIM_MORPHISMS.json",
+      "original_sha256": "7f18806c6bdf28d2d2f5c539822d4d4290d85522a0cea2f912315217b1b1ff9d",
+      "public_sha256": "665eb0fe8c2400bcc75031b5dc39e1e7dbe9460df8f158c12cf4d827ab5b9543",
+      "change": "Editorial replacement/removal of private paths and task routing only."
+    },
+    {
+      "path": "qa/QA.json",
+      "original_sha256": "3d6628e52fbd681cde88f4821c508c136acc6b271a0c42d22f167ffe0528c70b",
+      "public_sha256": "3c8fc351cdce01816ab16e11ef1c80661cf8f34a936dfa5d694057134ea45ca7",
+      "change": "Editorial replacement/removal of private paths and task routing only."
+    },
+    {
+      "path": "ns_operator_bridge/REVERSE_FINAL_REVIEW.md",
+      "change": "Removed private assignment quotation and delivery directions; complete mathematical review retained."
+    }
+  ],
+  "colleague": {
+    "name": "u/UmbrellaCorp_HR",
+    "role": "Supplied arithmetic, positivity-code and Euclid material; identified by the project author.",
+    "source_equations": "71-100",
+    "source_sha256": "69eaaa97ddceccbe6d688b8e66fe1a44fda9fc085f0ec3cc671cfacbffdfdcb1"
+  },
+  "baseline": "All ten files retained unchanged.",
+  "publication_read": "All fourteen new proofs and their detailed review records read; prior source-bound reviews retained.",
+  "excluded": "Protected primary papers, raw transcripts, private logs, credentials, unfinished research and RH material.",
+  "canonical_pdf_sha256": "c06a30ff0d37f96e35e5ac0582b2a93c244dc05b2b53d7f76b0ea470ae93946d",
+  "canonical_pages": 83,
+  "publication_pdf_qa": "qa/PUBLICATION_PDF_QA.json",
+  "publication_editorial_map": "PUBLICATION_EDITORIAL_MAP.json",
+  "publication_repair": {
+    "at": "2026-09-09T15:28:53.068Z",
+    "scope": "Reading-PDF bibliography/cross-reference rebuild and correction of inherited public edition prose. All 15 canonical mathematical source files unchanged.",
+    "prior_reading_pdf_sha256": "b712757792016cc93673ecebd011abb748542870289d6041eb006427dc2e058b",
+    "reading_pdf_sha256": "36bff0867a98c549810110eae829e143f89227e94a57be7d10a6173d9a16f30b",
+    "reading_pdf_pages": 86,
+    "prior_qa_retained": "qa/QA.json",
+    "current_qa": "qa/PUBLICATION_PDF_QA.json",
+    "replay_status": "The fourteen-command replay dated 2026-09-08 remains the existing computational evidence; this editorial repair did not rerun or relabel it.",
+    "github": "https://github.com/KokunoYumeto/erdos-straus-foundation"
+  }
+}

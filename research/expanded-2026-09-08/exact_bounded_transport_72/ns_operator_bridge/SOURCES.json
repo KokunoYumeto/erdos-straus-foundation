@@ -1,0 +1,439 @@
+{
+  "recorded_at_utc": "2026-09-08T19:25:36.026180+00:00",
+  "scope": "Primary-source attribution and scoped NS version comparison for the existing ES operator bridge; no Lean/Lake/Elan run and no whole-proof verification",
+  "ns_repository_commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538",
+  "fluid_lean_commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+  "fluid_lean_commit_date_utc": "2026-09-08T04:07:52Z",
+  "archive_receipt_supplied_by_programme_owner": {
+    "url": "https://codeload.github.com/openai/NavierStokesAndEuler/zip/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538",
+    "sha256": "7cf995819832019ce38ab5ac78e056f2af528504c8de062e524a0a50a52089c2",
+    "status": "supplied preserved receipt; this subtask hashed individual local source files, not the ZIP"
+  },
+  "sources": [
+    {
+      "id": "ns_pdf_165",
+      "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/openai_navier_stokes.pdf",
+      "bytes": 2955931,
+      "sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "read_scope": [
+        "Title page and Theorem 1.1 p1; historical context p2; descriptive/proof-outline text pp3-6",
+        "Section 6.1 pp62-64; Lemma 6.2 and its proof p67; auxiliary-support excerpts pp62-72",
+        "Section 10.5 and Corollary 10.6 pp125-126",
+        "References p165"
+      ],
+      "full_proof_independently_verified": false,
+      "pages": 165
+    },
+    {
+      "id": "ns_pdf_166",
+      "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+      "local_path_from_ns_research_root": "downloaded_public_release/navier-stokes.pdf",
+      "bytes": 2959204,
+      "sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+      "read_scope": [
+        "Title page and Theorem 1.1 p1; historical context pp2-3",
+        "Section 6.1 pp62-64; Lemma 6.2 and its proof p67; auxiliary-support excerpts pp62-73",
+        "References pp165-166"
+      ],
+      "full_proof_independently_verified": false,
+      "pages": 166,
+      "last_modified_reported_by_programme_owner": "2026-09-08 19:09:35 GMT"
+    },
+    {
+      "id": "buckmaster_statement",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/buckmaster_statement.pdf",
+      "bytes": 53497,
+      "sha256": "8d7723941bcda2fa55c1e74faa6298e04c706d17ff8abd2ad01878039c621f9d",
+      "read_scope": [
+        "All four pages through preserved text extraction; p1 programme/authorship; p4 express epistemic limitations"
+      ],
+      "full_proof_independently_verified": false,
+      "pages": 4
+    },
+    {
+      "id": "buckmaster_statement_text",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/buckmaster_statement.txt",
+      "bytes": 10788,
+      "sha256": "804f42464715d11a55f2f13553ee7b82367cd0328ab73f4d37e223058fdea24f",
+      "read_scope": [
+        "Complete preserved text"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "ns_text_165",
+      "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/openai_navier_stokes.txt",
+      "bytes": 508505,
+      "sha256": "c2466b56318500a4502a6040345bc2fac8aaa7c499e5029e56beaca7cdfbacf6",
+      "read_scope": [
+        "First 300 lines",
+        "Lines 7890-7975 (periodic corollary)",
+        "Lines 10387-end (references)",
+        "Full text searched for attribution names, acknowledgements and selected numbered statements; full proof not read"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "announcement_preserved",
+      "url": "https://openai.com/index/navier-stokes-solution/",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/openai_announcement.html",
+      "bytes": 421746,
+      "sha256": "d5ea00ce964df540fdb33be3b082849f6ef18425ac1522008656427093fd2207",
+      "read_scope": [
+        "Concurrent work section from HTML with script/style markup excluded; relevant authorship/priority passages"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "ns_repository_README.md",
+      "url": "https://github.com/openai/NavierStokesAndEuler/blob/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/README.md",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/formal_inventory/full_source/NavierStokesAndEuler-8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/README.md",
+      "bytes": 2018,
+      "sha256": "2ca277a62b6bb6ce34686303c9c777e56d5b460160004a49a28e4e72086d781e",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false,
+      "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538"
+    },
+    {
+      "id": "ns_repository_formalization.yaml",
+      "url": "https://github.com/openai/NavierStokesAndEuler/blob/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/formalization.yaml",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/formal_inventory/full_source/NavierStokesAndEuler-8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/formalization.yaml",
+      "bytes": 4379,
+      "sha256": "6c6d30c58c70a0a04fa41a08a50ba7eb7e8a96a7f604a30b4bec6b921ea87dc3",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false,
+      "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538"
+    },
+    {
+      "id": "ns_repository_lakefile.toml",
+      "url": "https://github.com/openai/NavierStokesAndEuler/blob/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/lakefile.toml",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/formal_inventory/full_source/NavierStokesAndEuler-8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/lakefile.toml",
+      "bytes": 662,
+      "sha256": "97b2804da5b9a2cd0aaf44ce42b7c39e9947beff9d2ac01a11e0d3d867af1c09",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false,
+      "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538"
+    },
+    {
+      "id": "ns_repository_lake-manifest.json",
+      "url": "https://github.com/openai/NavierStokesAndEuler/blob/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/lake-manifest.json",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/formal_inventory/full_source/NavierStokesAndEuler-8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/lake-manifest.json",
+      "bytes": 3810,
+      "sha256": "5ec1dc8e009008d0efb9601cd38f6ba54e753fd538b0e5f8c3e6c5ec72ee1e09",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false,
+      "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538"
+    },
+    {
+      "id": "ns_repository_lean-toolchain",
+      "url": "https://github.com/openai/NavierStokesAndEuler/blob/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/lean-toolchain",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/formal_inventory/full_source/NavierStokesAndEuler-8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/lean-toolchain",
+      "bytes": 29,
+      "sha256": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false,
+      "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538"
+    },
+    {
+      "id": "ns_repository_ComparatorChallenges_README.md",
+      "url": "https://github.com/openai/NavierStokesAndEuler/blob/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/ComparatorChallenges/README.md",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/formal_inventory/full_source/NavierStokesAndEuler-8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/ComparatorChallenges/README.md",
+      "bytes": 665,
+      "sha256": "f28c5f581d7bbc9504db467b88686a89ad5a94e4fd38b48a1866ae6224b5a1d8",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false,
+      "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538"
+    },
+    {
+      "id": "ns_repository_NavierStokes_ComparatorSolution.lean",
+      "url": "https://github.com/openai/NavierStokesAndEuler/blob/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/NavierStokes/ComparatorSolution.lean",
+      "local_path_from_ns_research_root": "lanes/web_bundle_audit/coordination/claimed_proof/formal_inventory/full_source/NavierStokesAndEuler-8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538/NavierStokes/ComparatorSolution.lean",
+      "bytes": 1359,
+      "sha256": "52950d5d618a8d34c9bfbdb16641c81c276e97b6d7fd2a76c08577353f0b0227",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false,
+      "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538"
+    },
+    {
+      "id": "alpoge_buckmaster_euler.pdf",
+      "url": "https://cims.nyu.edu/~tristanb/euler.pdf",
+      "bytes": 1105306,
+      "sha256": "97ef408bff09b4f6ed9f3867734d1eb2245f3f34e6334b28136c84c02d0ae8d8",
+      "pages": 112,
+      "read_scope": {
+        "complete_pages": [
+          1,
+          2,
+          3,
+          112
+        ]
+      },
+      "full_proof_independently_verified": false,
+      "http_last_modified": null,
+      "retrieval_mode": "Primary URL bytes, parsed in memory; PDF not written into this directory"
+    },
+    {
+      "id": "alpoge_buckmaster_boussinesq.pdf",
+      "url": "https://cims.nyu.edu/~tristanb/boussinesq.pdf",
+      "bytes": 846615,
+      "sha256": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b",
+      "pages": 76,
+      "read_scope": {
+        "complete_pages": [
+          1,
+          2,
+          3,
+          7,
+          8,
+          76
+        ],
+        "additional_search": "Every extracted page searched for Lemma 2.1 and Lemma 3.1; only matching lines inspected beyond listed pages"
+      },
+      "full_proof_independently_verified": false,
+      "http_last_modified": null,
+      "retrieval_mode": "Primary URL bytes, parsed in memory; PDF not written into this directory"
+    },
+    {
+      "id": "alpoge_buckmaster_ipm.pdf",
+      "url": "https://cims.nyu.edu/~tristanb/ipm.pdf",
+      "bytes": 704785,
+      "sha256": "b3ebdbb8d9a93dcca5f3b3f8796e63f7f28b48e0b0e258b909110a4b69c72a12",
+      "pages": 57,
+      "read_scope": {
+        "complete_pages": [
+          1,
+          2,
+          3,
+          57
+        ]
+      },
+      "full_proof_independently_verified": false,
+      "http_last_modified": null,
+      "retrieval_mode": "Primary URL bytes, parsed in memory; PDF not written into this directory"
+    },
+    {
+      "id": "fluid_repository_euler-blowup_README.md",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/README.md",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 5052,
+      "sha256": "5925a6eec362a04ecc115bd4a0f53ca9510260faa3a7f57dc7a41b0706b05b16",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "fluid_repository_euler-blowup_formalization.yaml",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/formalization.yaml",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 4436,
+      "sha256": "e4e3b2715e9d0e39eb0a9be714b35051c63b8b898b8c6070a97fd627dce91b56",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "fluid_repository_euler-blowup_NOTICE",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/euler-blowup/NOTICE",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 1073,
+      "sha256": "5e99cf0eb76a1651934ecff03d8c020dc820f84509531efbe974663bb5bfbea7",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "fluid_repository_boussinesq-blowup_README.md",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/boussinesq-blowup/README.md",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 6153,
+      "sha256": "aecc130fb224cf46891f2d47d500adb7e3631b1843343ba7c2d4acad3ce54c9e",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "fluid_repository_boussinesq-blowup_formalization.yaml",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/boussinesq-blowup/formalization.yaml",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 5113,
+      "sha256": "ded9eb41bffc85ac9efc804a958d40903c5285aaa62ad670a29434b42f274815",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "fluid_repository_boussinesq-blowup_NOTICE",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/boussinesq-blowup/NOTICE",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 1061,
+      "sha256": "a8ab11f88d2cf8108c582e4e56a727a2b6a7fea17fcfc01bbb2219023c8b3be7",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "fluid_repository_affinecore_README.md",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/affinecore/README.md",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 7380,
+      "sha256": "fa27ad796703f50551c420c9857405b4b49f806b48bd3ebfae7f3169d41c41a7",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "fluid_repository_affinecore_formalization.yaml",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/affinecore/formalization.yaml",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 5220,
+      "sha256": "f05f5315a47bc56c656fa6a35344e7468c1e92900fec20c288a9480a27a0098f",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "fluid_repository_affinecore_NOTICE",
+      "url": "https://raw.githubusercontent.com/tristanbuckmaster/fluid_lean/d0124689230b58b4f86e7b90ac59de06404b3b6b/affinecore/NOTICE",
+      "commit": "d0124689230b58b4f86e7b90ac59de06404b3b6b",
+      "bytes": 1066,
+      "sha256": "d4ced5ee89ab7de35833db76142b2da529b7c3898c7c5d69bc6bb2465d602132",
+      "read_scope": [
+        "Complete file"
+      ],
+      "full_proof_independently_verified": false
+    },
+    {
+      "id": "cordoba_martinez_zoroa_euler",
+      "url": "https://arxiv.org/abs/2309.08495v1",
+      "bytes": 40521,
+      "sha256": "570727d32559f0c604407c92c64c47200b9392ab512a9803e9b607db29c81f4a",
+      "read_scope": [
+        "Title, authors, abstract, submission history"
+      ],
+      "full_proof_independently_verified": false,
+      "hash_scope": "Downloaded HTML bytes; page read through web tool"
+    },
+    {
+      "id": "cordoba_martinez_zoroa_ipm",
+      "url": "https://arxiv.org/abs/2410.22920v3",
+      "bytes": 38880,
+      "sha256": "f4bf14762462a90f583f4b980bebbc5d61a002355facc67d235da265d37e0831",
+      "read_scope": [
+        "Title, authors, abstract, submission history"
+      ],
+      "full_proof_independently_verified": false,
+      "hash_scope": "Downloaded HTML bytes; page read through web tool"
+    },
+    {
+      "id": "cordoba_martinez_zoroa_zheng_hypodissipative",
+      "url": "https://arxiv.org/abs/2407.06776v2",
+      "bytes": 40393,
+      "sha256": "2172051b4b4aa5414a51147285db62ab71efacb09f4c4d9eb842988aef2fadc2",
+      "read_scope": [
+        "Title, authors, abstract, submission history"
+      ],
+      "full_proof_independently_verified": false,
+      "hash_scope": "Downloaded HTML bytes; page read through web tool"
+    }
+  ],
+  "scoped_comparisons": [
+    {
+      "scope": "section_6_1",
+      "source_ids": [
+        "ns_pdf_165",
+        "ns_pdf_166"
+      ],
+      "page_locations": {
+        "ns_pdf_165": "62-64",
+        "ns_pdf_166": "62-64"
+      },
+      "start_anchor_inclusive": "6.1.Dyadic charts",
+      "end_anchor_exclusive": "6.2.Slow cutoffs",
+      "extraction": "pypdf PdfReader, join page.extract_text() with newline over physical PDF pages 62-73. Remove only full-line running page headers using the recorded regular expression, then delimit by anchors. Source PDFs remain unchanged.",
+      "running_header_pattern": "(?m)^\\d+ OPENAI\\n|^FINITE TIME BLOWUP FOR NAVIER–STOKES \\d+\\n",
+      "exact_extracted_blocks_equal_after_header_removal": true,
+      "sha256_utf8_block": {
+        "ns_pdf_165": "04e05287e9b04c920c7618430ea433010d0a579af89935ecd80a785cacb18c1a",
+        "ns_pdf_166": "04e05287e9b04c920c7618430ea433010d0a579af89935ecd80a785cacb18c1a"
+      },
+      "characters": {
+        "ns_pdf_165": 4346,
+        "ns_pdf_166": 4346
+      },
+      "line_diff": [],
+      "full_pdf_equivalence_claimed": false,
+      "pypdf_version": "6.10.0"
+    },
+    {
+      "scope": "lemma_6_2_and_proof",
+      "source_ids": [
+        "ns_pdf_165",
+        "ns_pdf_166"
+      ],
+      "page_locations": {
+        "ns_pdf_165": "67",
+        "ns_pdf_166": "67"
+      },
+      "start_anchor_inclusive": "Lemma 6.2.",
+      "end_anchor_exclusive": "Fields are defined on the extended domain",
+      "extraction": "pypdf PdfReader, join page.extract_text() with newline over physical PDF pages 62-73. Remove only full-line running page headers using the recorded regular expression, then delimit by anchors. Source PDFs remain unchanged.",
+      "running_header_pattern": "(?m)^\\d+ OPENAI\\n|^FINITE TIME BLOWUP FOR NAVIER–STOKES \\d+\\n",
+      "exact_extracted_blocks_equal_after_header_removal": true,
+      "sha256_utf8_block": {
+        "ns_pdf_165": "5d64e2786ad26e5a267bfdc3f7aaff70cc386e56d3533a1008dc7f0f48552b42",
+        "ns_pdf_166": "5d64e2786ad26e5a267bfdc3f7aaff70cc386e56d3533a1008dc7f0f48552b42"
+      },
+      "characters": {
+        "ns_pdf_165": 1425,
+        "ns_pdf_166": 1425
+      },
+      "line_diff": [],
+      "full_pdf_equivalence_claimed": false,
+      "pypdf_version": "6.10.0"
+    }
+  ],
+  "source_reference_defects": [
+    {
+      "source": "alpoge_buckmaster_euler.pdf",
+      "location": "Section 1.2 p2",
+      "description": "Companion Boussinesq wave calculation cited as Lemma 2.1; current boussinesq.pdf exact affine wave is Lemma 3.1 p8, while section 2 is AI statement. This is a reference-number mismatch, not a proof refutation."
+    },
+    {
+      "source": "alpoge_buckmaster_ipm.pdf",
+      "location": "Section 1.1 p3",
+      "description": "The two announced formal-artifact hashes remain literal BOUSSINESQ SHA-256 and EULER SHA-256 placeholders. Do not treat them as actual pins; the separately pinned fluid_lean receipt gives provenance only."
+    }
+  ],
+  "verification_limits": [
+    "Source availability and author assertions checked; no independent full proof or kernel replay performed",
+    "Repository declared dependencies and specified adapter read; no full cross-repository code-provenance comparison performed",
+    "No conclusion about private access, misuse, spending or ownership beyond sources",
+    "The two NS PDFs are preserved as different versions; only the two delimited extracted passages were compared"
+  ]
+}

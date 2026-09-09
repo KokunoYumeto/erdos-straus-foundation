@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "at": "2026-09-08T21:01:47.774199+00:00",
+  "python_version": "3.13.9",
+  "sympy_version": "1.13.1",
+  "scope": "Fourteen finite exact checkers run from the standalone tree; general proofs are in TeX.",
+  "commands": [
+    {
+      "command": "python verify_bounded_crt.py",
+      "exit_code": 0,
+      "seconds": 1.089,
+      "stdout_sha256": "0ca3de3c7220e8a6f7f21447c7d8e5faa597669ee8ce72ee0c5ebec2a064cb1f"
+    },
+    {
+      "command": "python connes_reading/verify_exact.py",
+      "exit_code": 0,
+      "seconds": 0.139,
+      "stdout_sha256": "fd39b24e2945062aa1efc6470f45c0c7725dd96e20bbd26f91cb0addc84e9ac9"
+    },
+    {
+      "command": "python exact_audit/orchard_partition_fixture.py",
+      "exit_code": 0,
+      "seconds": 0.065,
+      "stdout_sha256": "4b5afa43bb312ff22d07402d8dbd7066e75486c8ddcccf37a7e13a9ea95d6b6e"
+    },
+    {
+      "command": "python proof_review/review_checks.py",
+      "exit_code": 0,
+      "seconds": 1.045,
+      "stdout_sha256": "29b20e89405040a1186f7d108e2f636ad4577e0a79d4767d0cf3163717ad6c57"
+    },
+    {
+      "command": "python proof_review/boolean_shared_checks.py",
+      "exit_code": 0,
+      "seconds": 0.933,
+      "stdout_sha256": "1b7661c7a1913d1d37d2e62ec8d50e49909a4c6b9d82b93dfa1ad71245539890"
+    },
+    {
+      "command": "python proof_review/cyclic_incidence_checks.py",
+      "exit_code": 0,
+      "seconds": 0.716,
+      "stdout_sha256": "73b4b52b53547529803dab3c6532bf08e00f2726d548fcab8435b2fb726cb382"
+    },
+    {
+      "command": "python proof_review/raw_scale_checks.py",
+      "exit_code": 0,
+      "seconds": 1.904,
+      "stdout_sha256": "9eacd957ddd42bb8147d2e6717c49813e4f9aa5b75b4e7bbe34622d9c4420db7"
+    },
+    {
+      "command": "python proof_review/raw_scaled_incidence_fixture.py",
+      "exit_code": 0,
+      "seconds": 0.647,
+      "stdout_sha256": "0731f254b634eafd2f18aa012ec39b09e8e754596e163d3b1cc37476ce9208ae"
+    },
+    {
+      "command": "python proof_review/sieve_checks.py",
+      "exit_code": 0,
+      "seconds": 0.22,
+      "stdout_sha256": "930083da22abcb472155462b87316af204fdbb4ccede81c86136c7454b6347d0"
+    },
+    {
+      "command": "python counterexample_sieve/check_nohit.py --limit 5000 --certificate",
+      "exit_code": 0,
+      "seconds": 28.591,
+      "stdout_sha256": "157db653e463187d61593541bb467124a49ecfc29f1d367e908ee999c7515b67"
+    },
+    {
+      "command": "python ns_operator_bridge/check_torus.py",
+      "exit_code": 0,
+      "seconds": 2.018,
+      "stdout_sha256": "e99c73391ec44ab83aa650225bd6c36a3db815794d84d0446b2e8f8fc2ccd01a"
+    },
+    {
+      "command": "python ns_operator_bridge/check_coset.py",
+      "exit_code": 0,
+      "seconds": 21.742,
+      "stdout_sha256": "906e5f3a6c7d4999461768a766483e8e7688d4deff04cae3ed9cc4d6f072e67a"
+    },
+    {
+      "command": "python ns_operator_bridge/check_reverse_transport.py",
+      "exit_code": 0,
+      "seconds": 4.307,
+      "stdout_sha256": "74c7279a001c1ae8e51d1e04cc15821d5ba84df1ef16b2aae980fba3caeb63d5"
+    },
+    {
+      "command": "python boundary_swap/check_boundary_swap.py --limit 2000",
+      "exit_code": 0,
+      "seconds": 2.607,
+      "stdout_sha256": "f76303b558e2bb6eb852aa21d05ccec365940151368bcb8fe736638ad8f25a8a"
+    }
+  ],
+  "no_lean_build": true
+}

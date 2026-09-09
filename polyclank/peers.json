@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "coverage": "One related design workbench inspected during this organization. This is not a global peer catalogue or an adoption claim.",
+  "peers": [
+    {
+      "id": "github:KokunoYumeto/yang-mills-interacting-workbench",
+      "repository": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench",
+      "relation": "source-of-PolyClank-organization-design",
+      "inspected_revision": "7ba7ea5a5dab84d88934477de93dda71f6af0662",
+      "source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/tree/7ba7ea5a5dab84d88934477de93dda71f6af0662/docs/polyclank",
+      "design_pull_request": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/pull/3",
+      "design_status_at_inspection": "draft-pull-request",
+      "mathematical_verification_of_ES_by_peer": "not-asserted",
+      "synchronized_heads": []
+    }
+  ]
+}

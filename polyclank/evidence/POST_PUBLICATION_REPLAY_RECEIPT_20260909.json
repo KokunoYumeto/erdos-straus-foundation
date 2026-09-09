@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-09",
+  "source_archive": "08_Exact_Bounded_Transport_72_Source_and_Checks_2026-09-08.zip",
+  "extracted_source": "exact_bounded_transport_72",
+  "scope": "Fresh local replay of the published public source package after Zenodo publication.",
+  "commands": [
+    "python verify_bounded_crt.py",
+    "python connes_reading/verify_exact.py",
+    "python exact_audit/orchard_partition_fixture.py",
+    "python proof_review/review_checks.py",
+    "python proof_review/boolean_shared_checks.py",
+    "python proof_review/cyclic_incidence_checks.py",
+    "python proof_review/raw_scale_checks.py",
+    "python proof_review/raw_scaled_incidence_fixture.py",
+    "python proof_review/sieve_checks.py",
+    "python counterexample_sieve/check_nohit.py --limit 5000 --certificate",
+    "python ns_operator_bridge/check_torus.py",
+    "python ns_operator_bridge/check_coset.py",
+    "python ns_operator_bridge/check_reverse_transport.py",
+    "python boundary_swap/check_boundary_swap.py --limit 2000"
+  ],
+  "exit_codes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "status": "passed",
+  "interpretation": "All listed finite and structural checker commands completed successfully. This replay corroborates the stated source package at its declared scopes; it does not establish an Erdős–Straus, Riemann, Yang–Mills, or Navier–Stokes endpoint."
+}

@@ -1,0 +1,1596 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{mathrsfs}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\emergencystretch=2em
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\lcm}{lcm}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}
+\newcommand{\N}{\mathbb N}
+\title{Exact bounded congruence gluing and arithmetic successors\\
+for Erd\H{o}s--Straus shells}
+\author{The Clankers}
+\date{8 September 2026}
+\begin{document}
+\maketitle
+\begin{center}
+\small Arithmetic contributor: Reddit user \texttt{u/UmbrellaCorp\_HR}.\\
+Expanded edition: 72 statements with full proofs.\\
+Project DOI: \href{https://doi.org/10.5281/zenodo.20401937}{10.5281/zenodo.20401937}.
+\end{center}
+\noindent This edition adds fourteen statements to the 58-statement snapshot
+\cite{PriorEdition}. The canonical mathematical source files are unchanged;
+this reading edition adds contribution credit and citations at the relevant
+source interfaces. Exact computation supplements the proofs at stated finite
+bounds. References distinguish a contribution's mathematical source from
+broader historical context. The full announced Navier--Stokes construction
+remains outside this article's independent verification claim.
+\par\medskip
+
+
+We study positive integer solutions of $4/p=1/x+1/y+1/z$ through
+their complete bounded divisor-shell coordinates. The starting arithmetic,
+positivity-code and prime-production constructions were contributed by Reddit
+user \texttt{u/UmbrellaCorp\_HR} and developed further in this collaboration
+\cite{UmbrellaContribution}. Their relation to the established Egyptian-fraction
+parametrizations of Christian Elsholtz and Terence Tao is recorded explicitly;
+the elementary reconstructions needed in this article are proved here
+\cite{ElsholtzTao}. The cross-shell calculations classify ratio-preserving
+transport and two elementary positive unimodular shears. The gluing
+construction retains the finite exponent bounds throughout its integral lifts.
+The divisor-category connection uses Alain Connes and Caterina Consani's
+embedded ordered groups and their exact reciprocal-divisor locus
+\cite{CCPericyclic}. A later part returns exact covering and inverse-operator
+calculations to the auxiliary torus of the announced Navier--Stokes manuscript
+\cite{OpenAINS}. No universal arithmetic occupancy, empty prime shell, or
+complete fluid blowup proof is asserted by these calculations.
+
+\section{Original shells, coordinates, and integer reconstruction}
+
+Fix \(h\in\Z_{>0}\) such that \(p=12h+1\) is prime.  First choose
+\[
+ a\in A_p:=\{3h+1,\ldots,9h\},
+\]
+and then define \(R_a=4a-p\), \(S_a=pa\).  In particular
+\[
+ 3\le R_a\le2p-3,\quad R_a\equiv3\pmod4,\quad 0<a<p.
+\]
+The order of these definitions is part of the construction.  The
+identity \(4a=p+R_a\) will be used without changing that order.
+
+\begin{lemma}\label{lem:units}
+One has \(\gcd(R_a,S_a)=1\).  The finite set
+\[
+ \mathcal W_a=
+ \{(m,n)\in\Z_{>0}^2:m,n\mid S_a,\ \gcd(m,n)=1,\
+                         R_a\mid m+n\}
+\]
+is in bijection with all ordered positive integer solutions whose first
+denominator is \(a\).  With \(k=(m+n)/R_a\), the bijection is
+\begin{equation}\label{eq:reconstruct}
+ (m,n)\longmapsto(a,y,z)
+       =\bigl(a,(S_a/n)k,(S_a/m)k\bigr).
+\end{equation}
+Its inverse is the unique reduced positive pair \(m,n\) in
+\[
+ \frac mn=\frac{R_a y-S_a}{S_a}=\frac yz .
+\]
+Complementation interchanges \(m,n\) and interchanges \(y,z\).
+\end{lemma}
+\begin{proof}
+Since \(0<a<p\), primality gives \(\gcd(a,p)=1\), hence
+\(\gcd(a,4a-p)=1\).  A common divisor of \(p,4a-p\) would divide
+\(4a\), which is prime to \(p\).  This proves the unit assertion.
+For \((m,n)\in\mathcal W_a\), the integer \(k\) is positive and
+\(S_a/n,S_a/m\) are positive integers.  Thus
+\[
+ \frac1y+\frac1z=\frac{n+m}{S_a k}=\frac{R_a}{S_a}
+                   =\frac4p-\frac1a.
+\]
+Conversely the original equality implies
+\[
+ R_a yz=S_a(y+z),\qquad
+ d:=R_a y-S_a=\frac{S_a y}{z}>0,\qquad
+ (R_a y-S_a)(R_a z-S_a)=S_a^2.
+\]
+Thus \(d\) is a positive divisor of \(S_a^2\) and
+\(d\equiv-S_a\pmod{R_a}\).  If \(v_\ell(S_a)=b_\ell\) and
+\(v_\ell(d)=c_\ell\), then \(0\le c_\ell\le2b_\ell\).
+The reduced ratio \(d/S_a\) has numerator and denominator exponents
+\[
+ v_\ell(m)=\max(c_\ell-b_\ell,0),\qquad
+ v_\ell(n)=\max(b_\ell-c_\ell,0).
+\]
+Both are at most \(b_\ell\), and at most one is nonzero.  Hence \(m,n\)
+divide \(S_a\) and are coprime.  Multiplication of
+\(d\equiv-S_a\) by the unit \(n/S_a\) gives \(m+n\equiv0\).
+The reverse formula \(d=S_a m/n\) is integral and divides \(S_a^2\)
+by those same exponent inequalities.  Substituting it in
+\(y=(S_a+d)/R_a\) and the complementary formula for \(z\)
+gives \eqref{eq:reconstruct}.  These constructions are inverse by
+uniqueness of the reduced fraction, with no reordered denominator.
+\end{proof}
+
+Define the full supply of primitive rational ratios by
+\[
+ \mathcal P(N):=\{m/n:m,n\in\Div(N),\ \gcd(m,n)=1\}.
+\]
+Every ratio retains its unique positive reduced numerator and
+denominator.  If \(N=\prod_{\ell\mid N}\ell^{b_\ell}\), then
+\begin{equation}\label{eq:signed-box}
+ \prod_{\ell\mid N}([-b_\ell,b_\ell]\cap\Z)
+ \xrightarrow{\;\sim\;}\mathcal P(N),\qquad
+ \boldsymbol\beta\longmapsto\prod_{\ell\mid N}\ell^{\beta_\ell}
+\end{equation}
+is a bijection.  The inverse is \(v_\ell(m)-v_\ell(n)\);
+primitivity gives the positive and negative parts just computed.
+This is a bijection of finite sets, not the replacement of the set
+by the subgroup of \(\Q_{>0}^{\times}\) that it generates.
+
+For direct comparison with the two supplied channels, put
+\[
+ E_a=\{u\mid a^2:R_a\mid4u+1\},\qquad
+ M_a=\{u\mid a^2:R_a\mid u+a\}.
+\]
+All divisors in this text are positive.  To recover their precise
+multiplicities, write \(d\mid p^2a^2\) uniquely as \(d=p^i v\),
+where \(i=0,1,2\), \(v\mid a^2\).  When \(i=2\), the congruence
+\(d\equiv-pa\) is \(R_a\mid pv+a\), and multiplication by
+\(4p^{-1}\) modulo \(R_a\), using \(4a=p\), makes it
+\(R_a\mid4v+1\).  Complementation exchanges this case with \(i=0\).
+When \(i=1\), it is \(R_a\mid v+a\), and complementation is
+\(v\mapsto a^2/v\).  Its only possible fixed point \(v=a\) would
+give \(R_a\mid2a\); by Lemma~\ref{lem:units} this would give
+\(R_a\mid2\), impossible.  Thus the number of unordered passing
+pairs is exactly \(|E_a|+|M_a|/2\).
+
+The two direct exponent maps on
+\[
+ B_a=\prod_{\ell\mid a}\{0,\ldots,2v_\ell(a)\},\qquad
+ U(\boldsymbol e)=\prod_{\ell\mid a}\ell^{e_\ell}
+\]
+therefore have respective targets
+\[
+ U(\boldsymbol e)\equiv -4^{-1}\pmod{R_a},
+ \qquad U(\boldsymbol e)\equiv-a\pmod{R_a}.
+\]
+Their signed version is \(U(\boldsymbol e)/a\).  It has targets
+\(-p^{-1}\) and \(-1\), respectively.  The maps and inverses are
+the translations \(e_\ell\leftrightarrow e_\ell-v_\ell(a)\);
+they retain every exponent bound.
+
+\subsection{The full primewise biconditional and the two unary layers}
+
+Let \(q_{R_a,p}\) count unordered pairs underlying
+\(\mathcal W_a\), and retain the exact full aggregate
+\[
+ Q_p=\sum_{a=3h+1}^{9h}q_{R_a,p},\qquad
+ q_{R_a,p}=|E_a|+\tfrac12|M_a|.
+\]
+These definitions do not identify \(Q_p\) with a restricted
+selector.  There is a direct proof of the full biconditional
+\[
+ \operatorname{ES}(p)\quad\Longleftrightarrow\quad Q_p>0.
+\]
+For necessity choose a permutation of an actual integer
+solution with first denominator \(a\) minimal, retaining
+the permutation to recover its original order.  Positivity
+gives \(4/p>1/a\), and minimality gives
+\(4/p=1/a+1/y+1/z\le3/a\).  Hence
+\(p/4<a\le3p/4\), whose integer values for \(p=12h+1\)
+are exactly \(3h+1,\ldots,9h\).  Lemma~\ref{lem:units}
+then gives a passing pair and thus a positive summand.
+Conversely a positive summand has a passing pair, and
+\eqref{eq:reconstruct} supplies an original positive
+integer witness.  This proves both directions while
+leaving every summand in the original full range.
+
+The source's unary cutoff \(A\le2\) has a different
+precise domain.  Reduce \(u/a=B/A\) with positive
+coprime \(A,B\).  The signed box proves \(A,B\mid a\),
+hence \(AB\mid a\).  Writing \(s=a/(AB)\) gives
+\[
+ a=ABs,\qquad u=B^2s,\qquad
+ A=\frac{a}{\gcd(a,u)},\quad
+ B=\frac{u}{\gcd(a,u)},\quad
+ s=\frac{\gcd(a,u)^2}{u}.
+\]
+The first two descriptions prove the integrality of
+the last formula and are inverse by the unique reduced
+ratio.  Multiplying the exterior congruence by the
+unit \(A\), and using \(4a\equiv p\bmod R_a\),
+gives exactly \(R_a\mid A+pB\).  The middle congruence
+gives exactly \(R_a\mid A+B\), since \(a,A\) are
+units modulo \(R_a\).  Restricting to \(A=1,2\)
+therefore keeps exactly those canonical pairs and
+their stated marks, not all divisors of \(a^2\).
+
+At \(p=37,a=12,R_a=11\), the full divisors of \(144\)
+are
+\[
+ 1,2,3,4,6,8,9,12,16,18,24,36,48,72,144 .
+\]
+The exterior target \(8\bmod11\) is attained only by
+\(u=8\); the middle target \(10\bmod11\) is attained
+by none.  Here \(u/a=2/3\), so \((A,B,s)=(3,2,2)\).
+The full shell has the witness
+\((12,42,1036)\) and no \(A\le2\) witness.
+For the reciprocal check the common denominator 3108
+gives \(259+74+3=336=4\cdot84\).
+This disproves per-shell completeness of the cutoff.
+It does not disprove the source's global assertion
+that some shell admits that cutoff: at the same prime
+the shell \(a=10,R_a=3,u=5\) has \(A=2,B=1,s=5\)
+and \(3\mid4\cdot5+1\).  Its reconstructed triple is
+\((10,2405,130)\), obtained from
+\(d=37^2\cdot5=6845\), \(S_a=370\).
+Both \(y=(370+6845)/3=2405\) and
+\(z=(370+20)/3=130\) are positive integers and satisfy
+the original identity by Lemma~\ref{lem:units}.
+
+\input{first_two_shell_sieve.tex}
+\input{counterexample_sieve/all_shell_no_hit.tex}
+
+\section{Local congruences with all integral lifts retained}
+
+The following calculation applies to either preceding box, including
+the signed box for \(S_a\).  Fix positive integers \(q_1,\ldots,q_s\)
+and a finite integer box
+\[
+ B=\prod_{j=1}^s([L_j,U_j]\cap\Z),\qquad L_j\le U_j,
+\]
+where negative endpoints are allowed.  Take positive moduli
+\(D_1,\ldots,D_t\) prime to \(q_1\cdots q_s\).  If a modulus is one,
+its residue group has one element and all its congruences are
+vacuous.  For \(D\) among these moduli or their least common
+multiples, define
+\[
+ \phi_D:\Z^s\longrightarrow(\Z/D\Z)^\times,\qquad
+ \phi_D(\boldsymbol e)=\prod_j(q_j\bmod D)^{e_j},\qquad
+ K_D=\ker\phi_D .
+\]
+The image \(H_D\) is used only to describe integral fibres.  The
+actual arithmetic domain remains \(B\).
+
+\begin{theorem}[Integral exponent gluing and its bounded fibre]\label{thm:glue}
+Let \(D,E\) be such moduli and \(L=\lcm(D,E)\).
+There is an exact sequence of abelian groups
+\begin{equation}\label{eq:lattice-exact}
+ 0\longrightarrow\Z^s/(K_D\cap K_E)
+ \xrightarrow{\ i\ }\Z^s/K_D\oplus\Z^s/K_E
+ \xrightarrow{\ \delta\ }\Z^s/(K_D+K_E)\longrightarrow0 ,
+\end{equation}
+where \(i([\boldsymbol e])=([\boldsymbol e],[\boldsymbol e])\)
+and \(\delta([\boldsymbol x],[\boldsymbol y])
+=[\boldsymbol x-\boldsymbol y]\).  Also \(K_L=K_D\cap K_E\).
+
+For local targets \(r_D\in H_D,r_E\in H_E\), choose integral
+lifts \(\boldsymbol x,\boldsymbol y\), respectively.  Their
+well-defined obstruction is
+\[
+ o(r_D,r_E)=[\boldsymbol x-\boldsymbol y]\in
+                        \Z^s/(K_D+K_E).
+\]
+If it is nonzero there is no integral common exponent lift.
+If it is zero, express \(\boldsymbol x-\boldsymbol y
+=\boldsymbol k_D+\boldsymbol k_E\) with
+\(\boldsymbol k_D\in K_D,\boldsymbol k_E\in K_E\), and put
+\[
+ \boldsymbol e_0=\boldsymbol x-\boldsymbol k_D
+                  =\boldsymbol y+\boldsymbol k_E.
+\]
+Then the complete set of common integral lifts, and the complete
+set of arithmetic lifts, are respectively
+\begin{equation}\label{eq:bounded-fibre}
+ \boldsymbol e_0+K_L,\qquad
+ B\cap(\boldsymbol e_0+K_L).
+\end{equation}
+In particular the vanishing obstruction is not a claim that the
+second set is nonempty.
+\end{theorem}
+\begin{proof}
+Changing a representative in the first map by \(K_D\cap K_E\)
+does not change either coordinate; its kernel is zero because
+vanishing of both coordinates puts it in this intersection.
+Changing representatives in \(\delta\) changes their difference
+by \(K_D+K_E\), so \(\delta\) is well defined.  It is onto, since
+\(([\boldsymbol z],[0])\) maps to any class \([\boldsymbol z]\).
+If \(\delta([\boldsymbol x],[\boldsymbol y])=0\), take the displayed
+decomposition and \(\boldsymbol e_0\).  Its two residue classes
+are exactly those of \(\boldsymbol x,\boldsymbol y\); hence it
+is a preimage under \(i\).  Conversely every diagonal class has
+difference zero.  This proves exactness, the asserted obstruction,
+and the explicit lift.  Two common lifts differ by both kernels,
+and addition of any member of their intersection preserves both
+targets, proving the first formula in \eqref{eq:bounded-fibre}.
+Requiring precisely the original inequalities gives the second.
+Finally a unit is one modulo \(L\) exactly when it is one modulo
+both \(D,E\): integer divisibility by both is divisibility by
+their least common multiple.  Apply this to the numerator minus
+denominator of the positive rational product if any exponent is
+negative; that denominator is prime to all the moduli.  This
+proves \(K_L=K_D\cap K_E\).
+\end{proof}
+
+\begin{proposition}[Noncoprime modulus compatibility and its inverse]\label{prop:crt}
+Put \(g=\gcd(D,E)\), \(D=gD_0,E=gE_0\).
+The reduction map gives the ring isomorphism
+\[
+ \Z/L\Z\xrightarrow{\sim}
+ \Z/D\Z\times_{\Z/g\Z}\Z/E\Z.
+\]
+For representatives \(r,s\) of a compatible pair, set
+\(c=(s-r)/g\), choose \(v\) with \(D_0v\equiv1\pmod{E_0}\),
+and set
+\[
+ w=r+D(vc\bmod E_0).
+\]
+Then \(w\bmod L\) is its unique inverse.  The same map restricts
+to a bijection on unit groups.  For a pair of unit targets
+arising from local exponent maps, this ring-level compatibility
+is necessary; after it, the additional integral obstruction
+and bounded fibre are those of Theorem~\ref{thm:glue}.
+\end{proposition}
+\begin{proof}
+Compatibility means \(g\mid s-r\), so \(c\) is integral.
+The coprimality \(\gcd(D_0,E_0)=1\) gives the inverse \(v\) by
+Bezout.  The formula is \(r\) modulo \(D\); modulo \(E\),
+\(Dvc=gD_0vc\equiv gc=s-r\), as required.
+Two inverse representatives differ by both moduli, hence by \(L\).
+Addition and multiplication commute with reduction, proving
+the ring statement.  An integer is prime to \(L\) exactly when
+it is prime to both \(D,E\), proving the unit statement.
+An exponent lift supplies this common residue automatically,
+but a common residue need not lie in \(H_L\), and membership
+in \(H_L\) need not supply a representative in \(B\).
+Theorem~\ref{thm:glue} computes those two further questions.
+\end{proof}
+
+These constructions are effective without an unspecified lifting
+assumption.  To see this directly, put
+\[
+ T_j=\operatorname{ord}_{L}(q_j),\qquad
+ F=\prod_j\{0,\ldots,T_j-1\},
+\]
+where the order is one for modulus one.  These finite orders exist:
+multiplication by a unit permutes the finite residue group, and
+two equal powers can be cancelled.  Divide each exponent by \(T_j\)
+with its unique remainder in the indicated interval.  The map
+\(\phi_L\) is unchanged.  Consequently its complete kernel is
+\[
+ K_L=\bigcup_{\substack{\boldsymbol f\in F\\\phi_L(\boldsymbol f)=1}}
+       \left(\boldsymbol f+\prod_j T_j\Z\right).
+\]
+For any target replace \(1\) by that target in this formula.
+Intersection with \(B\) is calculated coordinate by coordinate
+using the original intervals, with each surviving vector retained.
+This enumerates exact integral fibres and their bounded portions.
+It may be expensive; it is finite and does not posit their occupancy.
+Repeated gluing of \(t\) moduli uses the intersection of the first
+\(i\) kernels as the next \(K_D\); the new obstruction is computed
+against this whole intersection.  Thus it does not substitute
+pairwise compatibility for a simultaneous lift.
+
+There is also a precise additive cohomological presentation.
+The two-term complex
+\[
+ C^0=\Z^s/K_D\oplus\Z^s/K_E
+       \xrightarrow{\delta}
+ C^1=\Z^s/(K_D+K_E)
+\]
+has \(H^0=i(\Z^s/K_L)\) and \(H^1=0\), by
+\eqref{eq:lattice-exact}.  A specified pair of local targets has
+a gluing lift precisely when its difference \(\delta\) is zero.
+The finite-box condition is the pullback of \(B\) along that
+integral fibre.  In particular the vanishing of this complex's
+\(H^1\) does not make every specified pair a cocycle and does not
+make the bounded pullback nonempty. Their relation to cyclic
+cohomology is the integral coordinate construction proved immediately below.
+
+\paragraph{Cyclic-source interface.}
+The degree-zero quotient and fibre-trace viewpoint is compared with
+Connes--Consani \cite[Proposition 3.1 and equation (3.2)]{CCTrace}.
+The following integral augmentation calculation is proved directly, including
+its torsion and finite arithmetic return. It is not imported as a finite-box
+lifting theorem from that source.
+\input{integral_cyclic_bridge.tex}
+
+\begin{proposition}[Nonzero integral exponent obstruction in an actual shell]
+\label{prop:nonzero-obstruction}
+At \(p=241,a=64,R_a=15\), the exterior and middle targets each
+have bounded local lifts modulo three and five, but neither
+has an integral exponent lift using the permitted prime \(2\),
+even before its finite exponent budget is imposed.
+\end{proposition}
+\begin{proof}
+Trial division by \(2,3,5,7,11,13\), the primes at most
+\(\sqrt{241}<16\), proves primality.  Here \(h=20\),
+\(a=64\in\{61,\ldots,180\}\), \(R_a=4\cdot64-241=15\),
+and \(a^2=2^{12}\).  Both targets equal \(11\bmod15\):
+\(-4^{-1}=11\bmod15\), and \(-64=11\bmod15\).
+Writing \(u=2^j\), the target modulo three is \(2\), hence
+\(j\equiv1\bmod2\); the target modulo five is \(1\), hence
+\(j\equiv0\bmod4\).  These order statements follow from
+\(2^2=1\bmod3\) and the four distinct powers
+\(1,2,4,3\bmod5\).
+Each congruence has a lift in \(\{0,\ldots,12\}\),
+for example \(j=1\) and \(j=0\), respectively.  Their
+kernel lattices are \(K_3=2\Z\) and \(K_5=4\Z\).
+The obstruction is
+\[
+ [1-0]\in\Z/(2\Z+4\Z)=\Z/2\Z,
+\]
+which is nonzero.  Thus no integral exponent lift exists;
+the actual bounded fibres are also empty.  Ordinary
+residue CRT still has the integral fibre \(11+15\Z\).
+This distinguishes the exponent obstruction from
+noncoprime residue compatibility, which is vacuous here.
+\end{proof}
+
+\begin{proposition}[Zero integral obstruction with an empty bounded fibre]
+\label{prop:local-counterexample}
+At the actual full shell \(p=37,a=18,R_a=35,S_a=666\), both
+channels have divisor hits at each prime-power factor \(5,7\)
+of \(R_a\), but both full channels are empty.  For the exterior
+target the integral exponent obstruction in
+Theorem~\ref{thm:glue} is zero, while its bounded fibre is empty.
+\end{proposition}
+\begin{proof}
+Here \(a^2=2^2 3^4=324\).  The complete divisor list, formed by
+all fifteen choices \(u=2^i3^j\), \(0\le i\le2,0\le j\le4\), is
+\[
+ 1,2,3,4,6,9,12,18,27,36,54,81,108,162,324.
+\]
+Direct substitution of this entire list gives
+\[
+ \begin{array}{c|l|l}
+ D&\{u:D\mid4u+1\}&\{u:D\mid u+18\}\\\hline
+ 5&1,6,36,81&2,12,27,162\\
+ 7&12,54&3,108
+ \end{array}.
+\]
+In either channel the two listed sets are disjoint.  Divisibility
+by \(35\) requires both tests on the same divisor, so both full
+channels are empty.  Their complete origin classification in
+Section~1 proves \(\mathcal W_{18}=\varnothing\).
+
+For the precise integral lift, the element \(2\) has order four
+modulo five, \(3=2^3\bmod5\), the element \(3\) has order six
+modulo seven, and \(2=3^2\bmod7\); their powers can be verified
+by multiplication in the respective groups.  Thus
+\[
+ K_5=\{(i,j):i+3j\equiv0\pmod4\},\qquad
+ K_7=\{(i,j):2i+j\equiv0\pmod6\}.
+\]
+The targets are \(1\bmod5\) and \(5=3^5\bmod7\).
+Their exact bounded exponent fibres are
+\[
+ \{(0,0),(1,1),(2,2),(0,4)\},\qquad
+ \{(2,1),(1,3)\}.
+\]
+The common integral lift \(\boldsymbol e_0=(5,1)\) satisfies
+both congruences:
+\(5+3=8\) is divisible by four and \(2\cdot5+1=11\equiv5\bmod6\).
+It therefore witnesses the vanishing obstruction.  The whole
+integral fibre is
+\((5,1)+(K_5\cap K_7)\); its intersection with
+\(\{0,1,2\}\times\{0,\ldots,4\}\) is empty by the displayed
+complete bounded fibres.  At the integer level,
+\[
+ U(5,1)=96,\qquad4\cdot96+1=385=11\cdot35.
+\]
+The two prime factors are permitted, but the exponent \(5\)
+of \(2\) exceeds its budget \(2\).  The ordinary CRT inverse
+is \(u\equiv26\bmod35\), with full fibre \(26+35\Z\).
+It includes \(96\), and no element of the actual divisor list.
+
+The primitive orchard description gives the same failed
+gluing.  The local pairs \((2,3)\) at modulus five and
+\((1,6)\) at modulus seven are positive, primitive, and divide
+\(666=2\cdot3^2\cdot37\).  Coordinatewise CRT has the positive
+primitive lift \((22,13)\bmod35\), with full integral fibre
+\((22,13)+35\Z^2\).  Its displayed numerator contains \(11\)
+and its denominator \(13\), both unavailable in \(S_a\).
+No other representative satisfies all the primitive divisor
+bounds: if one did, it would belong to the full set
+\(\mathcal W_{18}\), already proved empty by the complete
+E/M calculation.  This proves the failure at the common
+finite box, not a failure of the CRT map itself.
+\end{proof}
+
+For clarity, the exact finite gluing also has a direct
+set-theoretic fibre-product form.  If \(B\) is the original
+box and \(F_i\subset B\) is the passing set for one prime-power
+factor, give each \(F_i\) its inclusion in \(B\).  Then
+\[
+ \bigcap_i F_i\ \xrightarrow{\sim}\
+ F_1\times_B\cdots\times_B F_t,\qquad
+ e\longmapsto(e,\ldots,e).
+\]
+The inverse takes any component, since all components have
+equal image in \(B\); both compositions are identities.
+The product over a single unlabelled point would instead
+permit different exponent choices, exactly the error in
+the preceding example.
+
+\section{Bounded divisibility and simultaneous congruences}
+
+Here is a version that allows nonunits, noncoprime moduli, several
+divisor bounds, and mandatory factors.  It will be applied to the
+original E/M expressions, not to an unspecified lifting predicate.
+Take positive integers \(N_1,\ldots,N_v\), positive integers
+\(f_1,\ldots,f_w\) (the list may be empty), and integers
+\(c_i,b_i\), positive moduli \(M_i\) for \(1\le i\le t\)
+(this list may also be empty).  The exact problem is to find all
+\(u\in\Z_{>0}\) satisfying
+\begin{equation}\label{eq:affine-system}
+ u\mid N_j\ (1\le j\le v),\qquad
+ f_j\mid u\ (1\le j\le w),\qquad
+ c_i u\equiv b_i\pmod{M_i}\ (1\le i\le t).
+\end{equation}
+Assume \(v\ge1\), so this positive arithmetic problem is finite.
+Zero coefficients \(c_i\) are allowed.
+
+\begin{theorem}[Constructive bounded divisibility CRT]\label{thm:divisor-crt}
+The following algorithm returns exactly every solution of
+\eqref{eq:affine-system}, with its original positive integer
+lift and all exponent coordinates.
+
+First put \(N=\gcd(N_1,\ldots,N_v)\) and
+\(f=\lcm(f_1,\ldots,f_w)\), taking \(f=1\) for an empty list.
+If \(f\nmid N\), the solution set is empty.  Otherwise write
+\[
+ N=\prod_{\ell\mid N}\ell^{e_\ell},\qquad
+ f=\prod_{\ell\mid N}\ell^{d_\ell},\qquad
+ B_{f,N}=\prod_{\ell\mid N}\{d_\ell,\ldots,e_\ell\}.
+ \tag{\(\ast\)}
+\]
+For each affine congruence let
+\(g_i=\gcd(c_i,M_i)>0\).  If \(g_i\nmid b_i\), the solution
+set is empty.  Otherwise put \(m_i=M_i/g_i\).
+When \(m_i>1\), solve the single unit equation
+\[
+ r_i\equiv(c_i/g_i)^{-1}(b_i/g_i)\pmod{m_i}.
+\]
+When \(m_i=1\), put \(r_i=0\) in its one-element ring.
+Successively combine the residues \((r_i\bmod m_i)\)
+by Proposition~\ref{prop:crt}.  A failed compatibility test
+gives an empty solution set.  If all tests pass, they give
+one residue \(r\bmod L\), \(L=\lcm_i m_i\); for an empty
+list take \(L=1,r=0\).
+
+For \(\ell\mid N\), perform the finite residue-monoid
+calculation
+\begin{equation}\label{eq:monoid-dp}
+ F_0(X)=[1],\qquad
+ F_k(X)=F_{k-1}(X)
+        \left(\sum_{j=d_{\ell_k}}^{e_{\ell_k}}[\ell_k^j]\right)
+        \quad\text{in }\N[\Z/L\Z]_{\rm mult}.
+\end{equation}
+Here \([x][y]=[xy\bmod L]\), and the subscript specifies
+the multiplicative monoid algebra of the full residue ring,
+including its zero and nonunits.  Then the coefficient of
+\([r]\) in the final product is exactly the number of
+solutions.  A contribution to that coefficient with chosen
+exponents \((j_\ell)\) gives the unique lift
+\[
+ u=\prod_{\ell\mid N}\ell^{j_\ell}.
+\]
+Retaining the contributing exponent choices gives every
+solution once and gives their complete inverse coordinates
+\(j_\ell=v_\ell(u)\).  These are precisely the positive
+bounded lifts in the residue fibre
+\begin{equation}\label{eq:numeric-fibre}
+ r+L\Z,\qquad
+ \left\lceil\frac{1-r}{L}\right\rceil
+ \le\frac{u-r}{L}\le
+ \left\lfloor\frac{N-r}{L}\right\rfloor,
+\end{equation}
+intersected with the box \((\ast)\) by its exact evaluation
+map.  The reduction homomorphism \(\Z\to\Z/L\Z\) has kernel
+\(L\Z\) and the displayed cosets as fibres.
+\end{theorem}
+\begin{proof}
+The conditions \(u\mid N_j\) for every \(j\) are equivalent,
+prime by prime, to \(u\mid N\); the conditions \(f_j\mid u\)
+are equivalent to \(f\mid u\).  Hence \(f\nmid N\) is
+impossible, and otherwise unique factorization gives exactly
+the independent inequalities in \((\ast)\).  The empty
+prime list \(N=f=1\) has one empty vector evaluating to one.
+This includes every positive divisor and excludes zero.
+
+A congruence \(c_i u-b_i=M_i z_i\) implies \(g_i\mid b_i\).
+Under that divisibility it is equivalent to
+\[
+ (c_i/g_i)u\equiv b_i/g_i\pmod{m_i}.
+ \tag{\(\dagger\)}
+\]
+When \(m_i>1\), the coefficient is prime to \(m_i\):
+a common prime divisor after division would contradict the
+definition of their full gcd \(g_i\).  Bezout therefore
+gives the displayed inverse, proving equivalence to
+\(u\equiv r_i\bmod m_i\) in both directions.
+When \(c_i=0\), one has \(g_i=M_i,m_i=1\);
+the initial test is exactly \(M_i\mid b_i\), after which
+the congruence is vacuous.  Thus zero and nonunit
+coefficients have also been treated exactly.
+Proposition~\ref{prop:crt}, applied inductively to the
+entire current residue and the next one, produces precisely
+all simultaneous congruences, or proves that none exist.
+It retains the gcd compatibility at every stage; the final
+kernel is \(L\Z\) by divisibility by all the \(m_i\).
+
+It remains to solve the finite budget in that fibre.
+By definition of multiplication in the monoid algebra,
+expanding \(F_k\) chooses one allowed exponent for each of
+the first \(k\) labelled primes, multiplies their exact
+residues, and adds one to its coefficient.  Induction on
+\(k\), starting from the one empty choice, proves this
+statement including multiplicities.  No cancellation or
+inverse is taken in this expansion.  Thus the final
+coefficient at \(r\) counts exactly those and only those
+vectors in \((\ast)\) whose integer evaluation is \(r\bmod L\).
+Distinct vectors give distinct positive integers by unique
+factorization.  Their product evaluates to a divisor of
+\(N\), divisible by \(f\), and satisfies all the reduced
+congruences.  Reversing \((\dagger)\) proves all the
+original affine congruences.  Conversely every solution
+has one of those exact exponent vectors and necessarily
+contributes to that coefficient.  This proves the
+complete positive lifting assertion rather than assuming
+it.  Finally \(1\le u\le N\) gives exactly the bounds
+in \eqref{eq:numeric-fibre}; they do not replace the
+prime-exponent inequalities, which remain in the
+intersection already computed by the product.
+\end{proof}
+
+For the actual shell \(a\), the exterior substitution in
+this theorem is
+\[
+ N_1=a^2,\quad f=1,\quad(c_1,b_1,M_1)=(4,-1,R_a),
+\]
+and the middle substitution is
+\[
+ N_1=a^2,\quad f=1,\quad(c_1,b_1,M_1)=(1,-a,R_a).
+\]
+One may replace the single modulus by any list of factors
+whose least common multiple is \(R_a\), including
+overlapping noncoprime factors; the simultaneous conditions
+are then exactly the original divisibility.  The coefficients
+of \eqref{eq:monoid-dp} compute the full \(E_a,M_a\).
+Every recorded exponent choice reconstructs the original
+positive denominators by Section~1.  A zero coefficient
+proves emptiness of that fixed finite channel.  It does
+not prove that all channels at all admissible shells
+vanish or that at least one is positive for every prime.
+
+For primitive pairs the equally exact two-coordinate
+monoid calculation retains the exclusive use of each
+prime budget.  If \(S=\prod\ell^{b_\ell}\), replace one
+factor in \eqref{eq:monoid-dp} by
+\[
+ [(1,1)]+\sum_{j=1}^{b_\ell}
+       \left([(\ell^j,1)]+[(1,\ell^j)]\right)
+       \quad\text{in }\N[(\Z/L\Z)^2]_{\rm mult}.
+\]
+Multiplication is coordinatewise.  Its terms choose
+exactly one of: no factor, a positive exponent on \(m\),
+or a positive exponent on \(n\).  Unique factorization
+therefore identifies the choices with the original
+coprime pairs \(m,n\mid S\), bijectively.  Summing the
+coefficients over \(r+s\equiv0\bmod R_a\), with
+\(L=R_a\), counts exactly \(\mathcal W_a\); storing choices
+returns each actual pair and then
+\eqref{eq:reconstruct}.  If another divisor or congruence
+mark is required, its exact test is imposed on the same
+stored pair, or a further coordinate is kept in the
+finite product.  Independent choices of representatives
+are never substituted for the same integer coordinates.
+
+
+\paragraph{Arithmetic lineage.}
+The original finite-code and simultaneous-constraint input is the colleague's
+continuation \cite{UmbrellaContribution}, especially its equations (71)--(100).
+The intermediate source is \cite{PrimewiseCoordinates}.
+The following construction proves the complete bounded code and witness
+correspondences used here; it does not attribute this later proof to that input.
+\input{unary_boolean_transport.tex}
+\input{publication_shared_variable_crt.tex}
+\input{publication_raw_scale_hit_incidence.tex}
+
+\paragraph{Boundary-source lineage.}
+The same-tag exchange antecedent is \cite{SignedMarginAntecedent}, within
+the arithmetic programme originating in \cite{UmbrellaContribution}.
+The four-candidate construction below writes out all maps and proofs needed
+for its expanded conclusions.
+\input{boundary_swap/boundary_swap_completion.tex}
+
+\section{Exact cross-shell transport at a fixed rational ratio}
+
+For each \(a\), the complete positive rational shell is parametrized
+by \(\tau\in\Q_{>0}\):
+\[
+ y_a(\tau)=\frac{pa(1+\tau)}{R_a},\qquad
+ z_a(\tau)=\frac{pa(1+\tau)}{R_a\tau}.
+\]
+Substitution proves the original reciprocal identity, and
+\(\tau=y_a/z_a\) is the inverse coordinate.  For \(a,b\in A_p\)
+this gives the bijection of rational shells
+\begin{equation}\label{eq:rational-transport}
+ T_{a,b}(a,y,z)=
+ \left(b,\frac{bR_a}{aR_b}y,\frac{bR_a}{aR_b}z\right).
+\end{equation}
+Its inverse is \(T_{b,a}\), and \(T_{b,c}T_{a,b}=T_{a,c}\).
+All constants remain in this expression.
+
+\begin{theorem}[Complete integral domain of ratio-preserving transport]\label{thm:ratio}
+Let \(a,b\in A_p\), \(g=\gcd(a,b)\), and \(L=\lcm(R_a,R_b)\).
+The exact domain on which \eqref{eq:rational-transport} carries a
+positive integer witness to a positive integer witness consists of
+\begin{equation}\label{eq:common-pairs}
+ \{(m,n):m,n\mid pg,\ \gcd(m,n)=1,\ L\mid m+n\},
+\end{equation}
+with the source reconstructed by \eqref{eq:reconstruct}.
+Its image is given by the same reduced pair at \(b\).
+The restricted map is a bijection between these source and target
+subsets, with the same inverse and one-element fibres.
+
+If \(b=a+d\) for \(d>0\), the exact retained budgets and modulus
+compatibility are
+\[
+ g=\gcd(a,d),\qquad
+ v_\ell(pg)=\min(v_\ell(pa),v_\ell(pb)),\qquad
+ \gcd(R_a,R_b)=\gcd(R_a,d).
+\]
+\end{theorem}
+\begin{proof}
+The ratio \(\tau=y/z\) is unchanged by the displayed nonzero
+rational factor, so it has the same unique reduced positive pair
+at both ends.  Lemma~\ref{lem:units} makes simultaneous integrality
+equivalent to \(m,n\) dividing both \(pa,pb\) and both moduli
+dividing \(m+n\).  Since \(a,b<p\) and \(p\) is prime,
+\(\gcd(pa,pb)=p\gcd(a,b)=pg\).  This gives exactly
+\eqref{eq:common-pairs} and proves both directions.  For such
+a pair put \(k_a=(m+n)/R_a\), \(k_b=(m+n)/R_b\).
+Their reconstructed denominators satisfy
+\[
+ \frac{(pb/n)k_b}{(pa/n)k_a}
+  =\frac{bR_a}{aR_b}
+  =\frac{(pb/m)k_b}{(pa/m)k_a},
+\]
+which proves the claimed image without assuming a rational
+factor is an integer.  The inverse and fibres follow by
+recovering the unchanged ratio.  Finally
+\(\gcd(a,a+d)=\gcd(a,d)\), while
+\[
+ \gcd(R_a,R_b)=\gcd(R_a,4d)=\gcd(R_a,d)
+\]
+because \(R_a\) is odd.  Unique factorization gives the
+coordinatewise minimum of every retained exponent budget.
+\end{proof}
+
+\begin{corollary}[All adjacent persistent ratios]\label{cor:adjacent}
+Suppose \(a,a+1\in A_p\) and put \(R=R_a\).  The common integer
+witness domain of \(T_{a,a+1}\) is empty unless
+\begin{equation}\label{eq:persistent}
+ R(R+4)\mid p+1.
+\end{equation}
+When \eqref{eq:persistent} holds, it consists of exactly the two
+ordered pairs \((p,1),(1,p)\).  Thus there is exactly one
+unordered common ratio pair.  For \((p,1)\), the two triples are
+\[
+ (a,pa(p+1)/R,a(p+1)/R),\qquad
+ (a+1,p(a+1)(p+1)/(R+4),(a+1)(p+1)/(R+4)).
+\]
+Each quotient here is an integer by \eqref{eq:persistent}.
+\end{corollary}
+\begin{proof}
+The preceding theorem gives \(g=1\) and
+\(\gcd(R,R+4)=1\), so the common budget is \(\Div(p)\).
+The full list of coprime ordered pairs is
+\((1,1),(p,1),(1,p)\).  The first has sum two and cannot pass
+either modulus, which is at least three.  Each of the other
+two has sum \(p+1\) and passes both precisely under
+\eqref{eq:persistent}.  Reconstruction gives the displayed
+triples and their complements.
+\end{proof}
+
+In particular there is a sharp height restriction:
+an adjacent persistent ratio can occur only if
+\[
+ R(R+4)\le p+1.
+\]
+This is a restriction on this exact transport, not on the
+existence of other witnesses in either shell.  At \(p=769\),
+\(a=194,R=7\), the next shell is \(195,11\), and
+\(p+1=770=10\cdot7\cdot11\); hence both ratios do persist.
+Primality of 769 is verified by trial division by
+\(2,3,5,7,11,13,17,19,23\), all primes at most its square root.
+
+\section{A primitive Euclidean successor with its full arithmetic domain}
+
+Use the two original positive unimodular shears
+\[
+ L=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad
+ J=\begin{pmatrix}1&0\\1&1\end{pmatrix}.
+\]
+They act on the column \((m,n)^{\mathsf T}\) as
+\(L(m,n)=(m+n,n)\) and \(J(m,n)=(m,m+n)\).  Their integer
+inverses are respectively
+\(\left(\begin{smallmatrix}1&-1\\0&1\end{smallmatrix}\right)\)
+and \(\left(\begin{smallmatrix}1&0\\-1&1\end{smallmatrix}\right)\).
+Both preserve primitivity, since an integer divides
+\(m+n,n\) exactly when it divides \(m,n\), and likewise for \(J\).
+
+\begin{proposition}[No same-shell arithmetic shear]\label{prop:no-shear}
+Neither \(L\) nor \(J\) carries a pair in \(\mathcal W_a\)
+into the primitive divisor supply \(\mathcal P(S_a)\) of the
+same shell.
+\end{proposition}
+\begin{proof}
+The new coordinate is \(m+n>0\), which is divisible by \(R_a\).
+If it divided \(S_a\), then \(R_a\) would divide \(S_a\),
+contradicting \(\gcd(R_a,S_a)=1\) and \(R_a\ge3\).
+There is no further gcd cancellation, because the new pair
+is primitive.  This proves the assertion for both maps.
+\end{proof}
+
+\begin{theorem}[Complete adjacent arithmetic shear classification]\label{thm:shear}
+Let \(a,a+1\in A_p\), \(R=R_a\), and \((m,n)\in\mathcal W_a\).
+Then \(L(m,n)\in\mathcal W_{a+1}\) exactly for the following data:
+\begin{equation}\label{eq:shear-domain}
+ n=1,\qquad m\mid a,\qquad m+1\mid a+1,\qquad
+ R\mid m+1,\qquad R+4\mid m+2.
+\end{equation}
+All such data have the unique parametrization
+\begin{align}
+ m&=\frac{R(R+5)}4-1+R(R+4)t,\qquad t\in\Z_{\ge0},
+                    \label{eq:shear-m}\\
+ a&=m+c\,m(m+1),\qquad c\in\Z_{\ge0},\qquad
+ p=4a-R,              \label{eq:shear-ap}
+\end{align}
+retaining \(R\ge3,R\equiv3\pmod4\), the original prime condition
+\(p=12h+1\), and \(a,a+1\in A_p\).
+Conversely every datum with these stated arithmetic properties
+gives the adjacent shear and actual positive integer triples by
+\eqref{eq:reconstruct}.  The classification for \(J\) is obtained
+by interchanging \(m,n\); its unchanged coordinate must be one.
+\end{theorem}
+\begin{proof}
+Suppose first that both pairs pass.  The unchanged integer \(n\)
+divides both \(pa,p(a+1)\), whose greatest common divisor is \(p\).
+Thus \(n=1\) or \(p\).  If \(n=p\), primitivity gives \(p\nmid m\);
+then \(m+p\), also prime to \(p\), would divide \(a+1\).
+But \(m+p>p>a+1\), impossible.  Hence \(n=1\).
+If \(p\mid m\), the new coordinate \(m+1\) is prime to \(p\)
+and greater than \(p\); once again its divisibility in \(p(a+1)\)
+would force it to divide the smaller \(a+1\).  Thus \(p\nmid m\),
+and \(m\mid pa\) implies \(m\mid a\).  Now
+\(m+1\le a+1<p\), so \(p\nmid m+1\), and its target supply
+condition gives \(m+1\mid a+1\).  The two residual conditions
+are exactly the last two in \eqref{eq:shear-domain}.
+Conversely \eqref{eq:shear-domain} supplies both divisor
+conditions, primitivity, positivity, and the two target
+congruences.  This proves the equivalence.
+
+For the complete parameter calculation, put \(m+1=Rk\).
+The next congruence is \(Rk+1\equiv0\pmod{R+4}\), or
+\(4k\equiv1\pmod{R+4}\).  Because \(R+5\) is divisible by
+four, the least positive inverse of four modulo \(R+4\) is
+\((R+5)/4\), giving
+\(k=(R+5)/4+(R+4)t\).  Since \(m>0\), no negative \(t\) is
+possible: decreasing the least positive value by \(R+4\)
+makes \(k<0\).  This is \eqref{eq:shear-m}, and the numerator
+there was already proved divisible by four.
+Next write \(a=mr\).  The condition \(m+1\mid a+1\) says
+\(-r+1\equiv0\pmod{m+1}\), so \(r=1+c(m+1)\).
+Positivity of \(r\) makes \(c\ge0\); this is
+\eqref{eq:shear-ap}.  Every division and reverse substitution
+has now been checked.  Finally the coordinate exchange
+\(P(m,n)=(n,m)\) satisfies \(J=PLP\) and preserves the source
+and target conditions, proving the last assertion with the
+denominators exchanged as in Lemma~\ref{lem:units}.
+\end{proof}
+
+\begin{corollary}[An explicit arithmetic successor family]\label{cor:family}
+For every \(c\in\Z_{\ge0}\) for which
+\(p=73+1680c\) is prime, put \(a=20+420c\).
+There is a passing pair \((20,1)\) at \(a,R_a=7\),
+and \(L(20,1)=(21,1)\) is a passing pair at \(a+1,R_{a+1}=11\).
+In particular the shears do sometimes give actual adjacent
+integer transport even though Proposition~\ref{prop:no-shear}
+excludes same-shell transport.
+\end{corollary}
+\begin{proof}
+Here \(p=12(6+140c)+1\), so
+\[
+ 3h+1=19+420c,\qquad 9h=54+1260c.
+\]
+Both \(a=20+420c\) and \(a+1\) belong to this interval.
+One has \(20\mid a=20(1+21c)\) and
+\(21\mid a+1=21(1+20c)\), while the two coordinate sums are
+\(21=3\cdot7\) and \(22=2\cdot11\).
+This proves all the conditions in \eqref{eq:shear-domain},
+with the stated prime restriction retained.  At \(c=0\),
+trial division by \(2,3,5,7\) proves that \(73\) is prime, and
+the actual triples are
+\[
+ (20,4380,219),\qquad(21,3066,146).
+\]
+Their reciprocal identities follow directly from
+Lemma~\ref{lem:units}, or by substituting \(S_a=1460,k_a=3\)
+and \(S_{a+1}=1533,k_{a+1}=2\) in \eqref{eq:reconstruct}.
+\end{proof}
+
+\begin{theorem}[No two consecutive positive Euclidean shell steps]
+\label{thm:no-two-shears}
+For the fixed prime \(p=12h+1\), form the directed graph whose
+vertices are the fully labelled pairs \((a,m,n)\) with
+\(a\in A_p\), \((m,n)\in\mathcal W_a\), and whose edges
+are exactly the passing transitions
+\[
+ (a,m,n)\longmapsto(a+1,m+n,n)
+ \quad\hbox{or}\quad
+ (a,m,n)\longmapsto(a+1,m,m+n).
+\]
+There is no directed path of length two in this graph.
+More precisely, each nontrivial connected component of the
+underlying undirected graph consists of exactly one directed edge.
+There do exist edges, for example the one at \(p=73,a=20\)
+in Corollary~\ref{cor:family}.
+\end{theorem}
+\begin{proof}
+Theorem~\ref{thm:shear} shows that an \(L\)-edge must have
+source \((m,1)\) and target \((m+1,1)\).  A following
+\(J\)-edge would require the unchanged first coordinate
+of that target to equal one; this is impossible because
+\(m+1>1\).  Interchanging coordinates excludes a \(J\)
+edge followed by an \(L\)-edge.
+
+Suppose instead that there were two \(L\)-edges.  Their
+three passing pairs would be \((m+i,1)\) at shells
+\(a+i\), for \(i=0,1,2\), with all three shells in
+the original allowed interval.  Put \(K=a-m\).
+The full shear classification gives
+\[
+ m+i\mid a+i,\qquad R_a+4i\mid m+i+1
+ \quad(i=0,1,2).
+\]
+Subtracting \(m+i\) in the first condition proves
+\(m+i\mid K\).  One of the three consecutive positive
+integers \(m,m+1,m+2\) is divisible by three, so
+\(3\mid K\).  The second condition implies
+\[
+ R_a+4i\mid 4(m+i+1)-(R_a+4i)
+                 =4(m+1)-R_a=:C .
+\]
+One of the three residues \(R_a,R_a+4,R_a+8\) is
+divisible by three, since their increment is one
+modulo three.  Hence \(3\mid C\).  But the unchanged
+prime and shell identity give
+\[
+ C=4m+4-(4a-p)=p+4-4K\equiv2\pmod3,
+\]
+using \(p\equiv1\pmod3\) and \(3\mid K\).
+This contradiction excludes two \(L\)-edges.
+The coordinate swap preserves every divisor condition,
+sum congruence, and shell label, so it excludes two
+\(J\)-edges by the same argument.  All four possible
+two-edge types have now been excluded.  The verified
+\(p=73\) edge proves the stated sharpness.
+For the stronger component assertion, an outgoing \(L\)-edge
+requires \(n=1\), and an outgoing \(J\)-edge requires \(m=1\).
+Both could occur only at \((1,1)\), which cannot pass the
+gate \(R_a\mid2\), since \(R_a\ge3\).  Each individual
+map has a unique image, so every outdegree is at most one.
+An incoming \(L\)-edge has target first coordinate strictly
+greater than its second, whereas an incoming \(J\)-edge has
+target second coordinate strictly greater than its first.
+Their inverse subtractions are unique.  Thus every
+indegree is at most one.  The absence of a length-two
+path also excludes a vertex having both a predecessor
+and a successor.  Every nonisolated vertex therefore
+belongs to precisely one edge, proving the assertion.
+\end{proof}
+
+This graph retains a passing arithmetic witness at every
+intermediate step.  The theorem makes no assertion about
+matrix words whose intermediate pairs leave that domain,
+or about the different fixed-denominator successor below.
+
+The family is stated for every prime specialization; this proof
+does not assert that a progression supplies primes by an elementary
+local lifting argument.  The successor classification is additional
+cross-shell information: it names every permitted input, every
+output, and its inverse on its image.  It supplies no new witness
+from an empty input shell.  In particular a height based only on
+the determinant of an orchard subdivision cannot infer that an
+empty leaf has a permitted arithmetic successor.
+
+\section{Arithmetic localization along the original norm subdivision}
+
+We now retain the colleague's original norm endpoints and its corrected
+subdivision together with actual marked return matrices.  This gives a
+stronger inheritance statement than the mere inclusions of child
+return sets in the parent.
+
+Let \(F(r,s)=r^2+2s^2\), and retain positive primitive
+\[
+ v_0=(u,v),\quad w_0=(x,y),\quad
+ F(v_0)=p,\quad F(w_0)=p+2,\quad
+ \Delta=uy-vx,\quad T=ux+2vy .
+\]
+The assignment of the two norms and the sign of \(\Delta\) are never
+changed.  Expansion gives
+\[
+ T^2+2\Delta^2
+ =u^2x^2+4uvxy+4v^2y^2
+   +2u^2y^2-4uvxy+2v^2x^2
+ =(u^2+2v^2)(x^2+2y^2)=p(p+2).
+\]
+If \(\Delta=0\), the two vectors are positive rational multiples;
+integrality and the gcd-one hypotheses force this multiple to be
+one by reducing its numerator and denominator.  Their norms would
+then agree, impossible.  Thus \(|\Delta|\ge1\) and
+\(T^2\le(p+1)^2-3\).  The integers \(p+1-T,p+1+T\)
+are positive and their product is \(1+2\Delta^2\).
+If \(|\Delta|=1\), the product is three; its two positive factors
+have sum four, which would give \(p=1\).  Hence
+\(|\Delta|\ge2\).  These facts concern the original norm
+endpoints, not new vectors inserted into their cone.
+
+For the oriented cone generators use \(V_0=v_0,W_0=w_0\)
+when \(\Delta>0\) and \(V_0=w_0,W_0=v_0\) when \(\Delta<0\).
+This records an order change, while retaining \(v_0,w_0\) and
+their respective norm labels.  Write
+\[
+ C(V,W)=\{rV+sW:r,s\in\mathbb R_{\ge0}\}.
+\]
+All generators below are primitive vectors with strictly positive
+integer coordinates.  They satisfy
+\[
+ \det(V,W)>0 .
+\]
+Primitivity is an explicit hypothesis of the following subdivision lemma.
+
+\begin{lemma}[Canonical subdivision with coordinate bounds]\label{lem:split}
+For \(D=\det(V,W)>1\), there are unique integers \(r\) and
+integer vector \(E\) satisfying
+\[
+ 1\le r<D,\qquad W=rV+DE,\qquad\det(V,E)=1.
+\]
+The vector
+\[
+ Z=V+E=\frac{(D-r)V+W}{D}
+\]
+is positive, primitive, and interior to \(C(V,W)\), with
+\(\det(V,Z)=1\), \(\det(Z,W)=D-r\).
+Recursion on the right child terminates in at most \(D\)
+unimodular leaves.  In every coordinate all inserted vectors
+are at most the maximum of that coordinate on the initial
+two generators.
+\end{lemma}
+\begin{proof}
+Bezout gives \(E_0\in\Z^2\) with \(\det(V,E_0)=1\).
+The integral basis \(V,E_0\) writes \(W=r_0 V+D E_0\).
+For a unique \(k\), the replacement \(E=E_0+kV\),
+\(r=r_0-Dk\) gives \(0\le r<D\).
+Primitivity of \(W\) in this integral basis implies
+\(\gcd(r,D)=1\); as \(D>1\), \(r\ne0\).
+The formula for \(Z\) is a positive combination with both
+coefficients nonzero.  It proves positivity and interiority.
+Its determinant with \(V\) is one, proving primitivity.
+The other determinant is
+\(\det(V+E,rV+DE)=D-r\), by bilinearity and
+\(\det(E,V)=-1\).
+Any other \(E\) with determinant one differs from \(E_0\)
+by an integer multiple of \(V\), so the specified remainder
+also proves uniqueness.  Both child determinants are
+smaller positive integers, hence the process terminates.
+Inductively the number of leaves is at most
+\(1+(D-r)\le D\), with one leaf at \(D=1\).
+Finally the two coefficients of \(V,W\) in \(Z\) sum to
+\((D-r+1)/D\le1\).  Each coordinate of \(Z\) is therefore
+at most the corresponding maximum of \(V,W\).  Induction
+proves the assertion on every later child.
+\end{proof}
+
+For a tag \(e\in\{1,p\}\), a tagged marked return in \(C\)
+is the full tuple \((q,k,t,b,e)\) of positive integers
+with its retained tag such that
+\begin{equation}\label{eq:marked-return}
+ M=\begin{pmatrix}q&p\\k&t\end{pmatrix},\qquad
+ qt-pk=1,\qquad q+e=4bk,\qquad (q,k),(p,t)\in C .
+\end{equation}
+Here \(q\) is a positive integer, with no primality
+assumption.  The tag is retained even when both marks
+hold for the same matrix.
+
+\begin{lemma}[Exact finite test and return to original denominators]
+\label{lem:marked-finite}
+Suppose \(C\) has slope interval
+\(0<\beta\le r/s\le\alpha<\infty\).
+All tuples \eqref{eq:marked-return} are obtained exactly
+once by choosing
+\[
+ \lceil p/\alpha\rceil\le t\le\lfloor p/\beta\rfloor,\qquad
+ k\mid et+1,\quad k>0,\quad \delta=(et+1)/k,
+\]
+testing
+\[
+ \delta\equiv-p\pmod{4t},\qquad
+ \beta\le (pk+1)/(tk)\le\alpha,
+\]
+and setting \(b=(p+\delta)/(4t)\),
+\(q=4bk-e=(pk+1)/t\).
+Every quotient in this reconstruction is integral.
+For \(e=p\) the original integer witness is
+\((bk,bt,pbkt)\); for \(e=1\) it is
+\((bt,pbk,pbkt)\).
+\end{lemma}
+\begin{proof}
+The second column gives the stated finite interval for \(t\).
+Substitution of \(q=4bk-e\) in the determinant equation gives
+\((4bt-p)k=et+1>0\), so \(\delta=4bt-p>0\) and the
+divisor and congruence conditions hold.  The first column
+gives the other slope test.
+Conversely the congruence makes \(b\) a positive integer,
+and
+\[
+ t(4bk-e)=(p+\delta)k-et=pk+1
+\]
+proves the positive integrality of \(q\), the determinant,
+and the mark.  Both slope tests place the columns in \(C\).
+The constructions recover \(e,t,k,b,q\) exactly and are
+inverse.  For the asserted triples, their common positive
+denominator \(pbkt\) makes the two identities respectively
+\[
+ 4bkt=pt+pk+1\quad(e=p),\qquad
+ 4bkt=pk+t+1\quad(e=1),
+\]
+which are precisely the determinant equations after the
+mark is substituted.  Thus they are actual original
+unit-fraction witnesses.
+\end{proof}
+
+\begin{theorem}[Disjoint arithmetic localization in the norm subdivision]
+\label{thm:orchard-partition}
+At every split of Lemma~\ref{lem:split} starting from
+the original norm cone \(C(V_0,W_0)\), the set of tagged
+returns is the disjoint union of the two child return sets.
+Consequently it is exactly the disjoint union over all
+terminal leaves of this canonical subdivision.
+The maps keep \(q,p,k,t,b,e\) unchanged, so the integer
+witness reconstructed in Lemma~\ref{lem:marked-finite}
+and every divisor-budget mark attached to that witness
+are unchanged.  The inverse leaf assignment is unique.
+\end{theorem}
+\begin{proof}
+First consider any split ray \(Z=(c,d)\) whose first
+coordinate satisfies \(c\le p\).  Since
+\(qt-pk=1\), the first return column has strictly larger
+slope than the second:
+\[
+ \frac qk-\frac pt=\frac1{kt}>0.
+\]
+If the columns were in opposite strict interiors of
+the two child cones, they would therefore straddle \(Z\)
+in this order.  Because their matrix has determinant
+one, the exact coordinates of \(Z\) in that integral
+basis are
+\[
+ Z=A(q,k)+B(p,t),\qquad
+ A=ct-dp,\qquad B=qd-kc .
+\]
+Strict straddling says \(A>0,B>0\).  Both are integers,
+so \(A,B\ge1\), and the first coordinate gives
+\(c=Aq+Bp\ge q+p>p\), a contradiction.
+Thus both columns lie in one closed child cone, including
+all cases where one lies on the splitter.  A return in
+both closed child cones would have both columns on their
+intersection ray, contradicting determinant one.
+This proves disjoint union for such a split, not just
+the inclusions from either child.
+
+It remains to prove this numerical hypothesis for the
+entire original construction.  The norm equations and
+strictly positive second coordinates give
+\[
+ u^2<p,\qquad x^2<p+2 .
+\]
+For \(p>2\), \(\sqrt{p+2}<p\), since
+\(p^2-p-2=(p-2)(p+1)>0\).  Both initial first coordinates
+are therefore less than \(p\).  The coordinate bound of
+Lemma~\ref{lem:split} makes every later \(c\) less than
+\(p\) too.  Repeated disjoint union proves the theorem,
+as the subdivision terminates.  Each inclusion is the
+identity on the full return tuple; its reconstruction
+therefore retains precisely the same integer denominators.
+Any added mark that is a predicate on that retained
+tuple restricts the disjoint union to a disjoint union.
+Given a parent return, at each split the preceding
+argument identifies its unique child, giving the
+unique inverse assignment all the way to a leaf.
+\end{proof}
+
+This theorem composes the original norm inequalities,
+the corrected coordinate-preserving subdivision, and
+the integral determinant-one return arithmetic.
+It also explains why geometric inheritance alone
+does not force all leaves occupied: disjoint
+localization preserves the parent return count, rather
+than creating a return in a prescribed empty leaf.
+
+For the supplied \(p=1201\) example retain
+\[
+ v_0=(7,24),\quad w_0=(31,11),\quad
+ \Delta=-667,\quad T=745,\quad
+ p+1-T=457,\quad p+1+T=1947.
+\]
+Their norms and all displayed integers are verified by
+squaring and multiplication.  The oriented canonical
+chain from \((31,11)\) to \((7,24)\), obtained by the
+explicit algorithm, is
+\begin{align*}
+ &(31,11),(14,5),(11,4),(8,3),(5,2),(2,1),\\
+ &(1,1),(1,2),(1,3),(3,10),(5,17),(7,24).
+\end{align*}
+Each consecutive determinant is one; its exact split
+remainders are recorded by the accompanying checker.
+The supplied tagged return
+\[
+ M=\begin{pmatrix}23&1201\\9&470\end{pmatrix},\qquad
+ e=p,\quad b=34,
+\]
+satisfies \(23\cdot470-1201\cdot9=1\) and
+\(23+1201=4\cdot34\cdot9\).
+Its unique leaf is \(C((8,3),(5,2))\), as shown by
+the full integer coordinates
+\[
+ (23,9)=(8,3)+3(5,2),\qquad
+ (1201,470)=52(8,3)+157(5,2),\qquad
+ 1\cdot157-3\cdot52=1.
+\]
+The reconstructed original triple is
+\[
+ (306,15980,172727820).
+\]
+The contained empty cone in the supplied correction,
+generated by \((24,35),(13,19)\), is a different
+unimodular subcone; it is not a leaf of this canonical
+chain.  In particular its second coordinate \(35\)
+exceeds the canonical invariant bound \(24\).
+There is no incompatibility between these facts.
+
+For completeness its full empty-return proof is short.
+Its slope interval is
+\(\beta=13/19,\alpha=24/35\), and its determinant is one.
+Its containment in the original norm cone follows from
+\[
+ (24,35)=\frac{821v_0+331w_0}{667},\qquad
+ (13,19)=\frac{446v_0+179w_0}{667},
+\]
+with positive coefficients.  From \(q+e=4bk\),
+\(b\ge1\), and \(q\le\alpha k\) one obtains
+\((4-\alpha)k\le e\).
+The \(e=1\) bound is less than one, so that tag is
+impossible.  For \(e=p\), the full bounds are
+\[
+ 1752\le t\le1755,\qquad
+ k\le\left\lfloor42035/116\right\rfloor=362.
+\]
+The determinant congruence has the following least
+positive solutions:
+\[
+ \begin{array}{c|r|r}
+ t&k_0&(1201k_0+1)/t\\\hline
+ 1752&407&279\\
+ 1753&759&520\\
+ 1754&1237&847\\
+ 1755&434&297
+ \end{array}.
+\]
+Each equality proves that \(1201\) is a unit modulo
+\(t\), and hence that every solution is
+\(k=k_0+tz\), \(z\in\Z\).
+The indicated \(k_0\) is between one and \(t-1\) and
+exceeds 362 in every row.  No positive solution
+satisfies the full bound.  Thus the entire local
+return set is empty, while the distinct canonical
+leaf above retains the given witness.
+
+
+\paragraph{Divisor-category lineage.}
+The precise source for the next construction is
+Connes--Consani \cite[Section 7.4, Lemma 7.7 and Proposition 7.8]{CCPericyclic}.
+The finite shell specialization, its primitive-pair return and its corrections
+are the calculations proved below.
+\input{connes_reading/connes_primitive_intersections.tex}
+
+\subsection{The full shear as an affine correction of the finite-point map}
+
+The preceding middle-endpoint map is the zero-correction part
+of a fully explicit correspondence for every shear in
+Theorem~\ref{thm:shear}.  We compute that correction and its
+composition, keeping the finite divisor bounds.
+
+\begin{proposition}[Affine embedded-group map and its exact divisor fibre]
+\label{prop:affine-point}
+For positive integers \(N,M\) and any \(c\in\Z\), define
+\[
+ \Psi_{N,M,c}:H_N\longrightarrow H_M,\qquad
+ x\longmapsto\frac NM x-\frac cM .
+\]
+It is an affine bijection of the embedded sets, with inverse
+\[
+ y\longmapsto\frac MN y+\frac cN.
+\]
+Its fibres are singletons.  It is an additive homomorphism
+exactly when \(c=0\); otherwise no homomorphism kernel
+is being assigned to it.  Its zero fibre is \(\{c/N\}\),
+and its positive-image domain is
+\(\{x\in H_N:Nx>c\}\).  Its exact return on positive
+reciprocal divisors is
+\begin{equation}\label{eq:affine-divisor-return}
+ u=N/e\longmapsto v=M/(e-c),\qquad
+ e\mid N,\quad e>c,\quad e-c\mid M.
+\end{equation}
+Thus the retained index fibre is the finite intersection
+\(\Div(N)\cap(c+\Div(M))\), with no unbounded
+completion substituted for either side.  The complete
+composition rule is
+\[
+ \Psi_{M,L,d}\circ\Psi_{N,M,c}=\Psi_{N,L,c+d}
+ \qquad(N,M,L>0,\ c,d\in\Z).
+\]
+For compositions restricted to reciprocal divisors,
+the intermediate condition \(e-c\mid M,\ e-c>0\)
+remains part of the domain in addition to the two
+endpoint conditions.
+\end{proposition}
+\begin{proof}
+Write \(x=e/N\), \(e\in\Z\).  Its image is
+\((e-c)/M\), which is in \(H_M\).  Conversely any
+\(f/M\) is the image of \((f+c)/N\).  These formulas
+prove both inverse compositions and singleton fibres.
+The image of zero is \(-c/M\), so additivity
+requires \(c=0\), and for \(c=0\) the formula is
+an additive homomorphism.  The formula \((e-c)/M\)
+also proves the zero-fibre and positive-image assertions.
+For \(u\mid N\) put \(e=N/u\); it is a positive
+divisor of \(N\).  The image of \(1/u\) is
+\((e-c)/M\).  It is \(1/v\) with \(v\) a positive
+integer precisely when \(e-c>0\) and \(e-c\mid M\).
+Then \(v=M/(e-c)\mid M\), proving
+\eqref{eq:affine-divisor-return} and its converse.
+Finally substitution gives
+\[
+ \frac ML\left(\frac NM x-\frac cM\right)-\frac dL
+       =\frac NLx-\frac{c+d}{L}.
+\]
+For a two-step reciprocal return the intermediate
+point has index \(e-c\); its positive divisor
+condition is exactly the one stated, independent
+of whether the endpoint has index \(e-c-d\).
+\end{proof}
+
+\begin{theorem}[Exact affine-point realization of every positive shear]
+\label{thm:full-connes-shear}
+For any \(L\)-edge of Theorem~\ref{thm:shear}, use
+its unique parameters \(m,c\):
+\[
+ a=m+c\,m(m+1),\qquad b=a+1,\qquad c\ge0.
+\]
+The source and target middle divisors are
+\[
+ u=am,\qquad v=b(m+1).
+\]
+They divide \(a^2,b^2\), respectively.  The following
+maps compose exactly:
+\[
+ \frac1u
+ \xmapsto{\ \Psi_{a^2,b^2,c}\ }\frac1v,\qquad
+ \mu_a(u)=(m,1)\xmapsto{\ L\ }(m+1,1)=\mu_b(v).
+\]
+Their retained integral indices satisfy
+\[
+ e=\frac{a^2}{u}=\frac am=1+c(m+1),\qquad
+ e'=\frac{b^2}{v}=\frac b{m+1}=1+cm,\qquad e-e'=c.
+\]
+Both middle marks, all exponent bounds, and the
+positive integer denominator reconstruction are
+exactly the original shear marks and reconstruction.
+The uncorrected ordered-group isomorphism gives this
+same reciprocal-divisor correspondence precisely
+when \(c=0\).  If \(c>0\), the uncorrected map has
+no positive reciprocal integer return at this source.
+\end{theorem}
+\begin{proof}
+The source divisibility \(m\mid a\) and target
+divisibility \(m+1\mid b\) imply \(u\mid a^2\)
+and \(v\mid b^2\) by their displayed definitions.
+Moreover
+\(\gcd(am,a)=a\) and \(\gcd(b(m+1),b)=b\),
+so the exact maps \(\mu_a,\mu_b\) of
+Proposition~\ref{prop:connes-middle-return}
+give the stated primitive pairs.
+Their middle marks are
+\[
+ R_a\mid u+a=a(m+1)
+     \ \Longleftrightarrow\ R_a\mid m+1,
+\]
+and
+\[
+ R_b\mid v+b=b(m+2)
+     \ \Longleftrightarrow\ R_b\mid m+2 ,
+\]
+by the respective unit assertions.  These are
+precisely the two gates of the full shear
+classification, not additional assumptions.
+The parameter formula gives both index equalities;
+the equality \(e-e'=c\) then shows
+\[
+ \Psi_{a^2,b^2,c}(1/u)=\frac{e-c}{b^2}
+                         =\frac{e'}{b^2}=\frac1v .
+\]
+It also explicitly proves the positive divisor
+return conditions of Proposition~\ref{prop:affine-point}.
+The maps \(\mu_a,\mu_b\) have already been proved
+to retain their whole divisor valuations and give
+the exact integer witnesses, so this composition
+retains those data as well.
+Without the correction, equality to \(1/v\)
+would instead require \(e=e'\), equivalently \(c=0\).
+This proves both the full affine statement and the
+precise special case of the ordered-group
+isomorphism.  When \(c>0\), the uncorrected image is
+\(e/b^2\) with \(e=1+c(m+1)>1\) and \(e\mid a\).
+Since \(\gcd(a,b)=1\), \(\gcd(e,b^2)=1\), so
+\(e\nmid b^2\).  Its reciprocal cannot be an integer.
+\end{proof}
+
+Here is the full conjugate correspondence for \(J\),
+including the different reciprocal-coordinate formula.
+On the positive reciprocal-divisor set of \(N\), define
+\[
+ \iota_N(x)=\frac1{Nx}.
+\]
+For \(x=1/u\), \(u\mid N\), its value is
+\(u/N=1/(N/u)\), so it implements the involutive divisor
+complement \(u\mapsto N/u\).  Direct substitution gives
+\begin{equation}\label{eq:conjugate-affine}
+ \iota_M\circ\Psi_{N,M,c}\circ\iota_N(x)
+       =\frac{x}{1-cx}.
+\end{equation}
+Its exact positive reciprocal-divisor domain and label map are
+\[
+ u\mid N,\quad u>c,\quad u-c\mid M,
+ \qquad u\longmapsto v=u-c.
+\]
+The inverse is \(v\mapsto v+c\), restricted to
+\(v\mid M\), \(v+c>0\), \(v+c\mid N\);
+all fibres are singletons.  These assertions follow
+also by inserting \(x=1/u\) in \eqref{eq:conjugate-affine},
+which gives \(1/(u-c)\).  The condition \(u>c\)
+both excludes its pole and proves positivity.
+
+For the \(J\)-edge \((1,m)\mapsto(1,m+1)\), use the same
+parameters \(a=m+c\,m(m+1)\), \(b=a+1\).
+The middle divisors are now
+\[
+ u=\frac am=1+c(m+1),\qquad
+ v=\frac b{m+1}=1+cm=u-c.
+\]
+They are positive divisors of \(a^2,b^2\), respectively,
+so the exact domain above is satisfied with \(N=a^2,M=b^2\).
+Divisor complementation satisfies
+\(\mu_a(a^2/w)=P\mu_a(w)\), where
+\(P(m,n)=(n,m)\): indeed the reduced ratio
+\((a^2/w)/a=a/w\) is the inverse of \(w/a\).
+Thus the proved conjugation is exactly \(J=PLP\).
+It retains both middle congruences, their complete
+valuation bounds, and exchanges the last two original
+denominators under \eqref{eq:reconstruct}.
+
+For an explicit nonzero correction retain the prime
+\(p=1753\), \(a=440\), \(b=441\), \(R_a=7\),
+\(R_b=11\), \(m=20\), \(c=1\).  Primality follows
+by testing the primes at most \(\sqrt{1753}<42\),
+namely \(2,3,5,7,11,13,17,19,23,29,31,37,41\);
+none divides \(1753\).  Here the \(L\) map is
+\[
+ \frac1{8800}\xmapsto{\Psi_{193600,194481,1}}
+ \frac1{9261},
+\]
+with indices \(22\mapsto21\); its original witnesses are
+\[
+ (440,2313960,115698)\longmapsto
+ (441,1546146,73626).
+\]
+The conjugate \(J\) map sends \(1/22\) to \(1/21\)
+and exchanges the last two entries in these triples.
+All these equalities follow by substitution in the
+proved formulas, which retain the original prime and shells.
+
+The integer difference \(c\) has the additive
+composition law computed above.  It is not a
+global Lyapunov function for ES failure: it may
+be zero on an actual edge, and
+Theorem~\ref{thm:no-two-shears} proves that within
+the exact positive shear domains at a fixed
+prime, no two such edges can even be composed.
+The full affine maps do compose on their
+embedded groups; their restrictions retain
+the additional intermediate divisor and
+residual tests, exactly as stated.
+
+\section{A strictly decreasing denominator with exact arithmetic return}
+\input{exact_audit/fixed_y_successor.tex}
+
+\section{The Navier--Stokes auxiliary cover and exact arithmetic sampling}
+
+The independently proved calculations below use the literal auxiliary
+torus matrix in OpenAI's public manuscript
+\href{https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf}
+{\emph{Finite Time Blowup for Navier--Stokes}}, Section~6.
+Two different files were served at that URL on 8 September 2026;
+both versions are identified by their complete digests in
+\texttt{ns\_operator\_bridge/SOURCES.json}. The first has 165 pages
+and the later one 166. The matrix (6.2), its derivative coordinates
+(6.3)--(6.7), and Lemma~6.2 are the specific source passages used
+here. The proofs below establish the stated operator identities
+directly; they do not import the manuscript's full blowup claim as a
+proved result of this repository. The pinned formal source is
+\href{https://github.com/openai/NavierStokesAndEuler/tree/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538}
+{revision 8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538}; no formal
+verification process was run for this contribution.
+
+The related work has distinct authorship and provenance.
+\href{https://cims.nyu.edu/~tristanb/statement.pdf}{Tristan Buckmaster's statement}
+credits joint forced-fluid work with Levent Alp\"oge and the
+foundational forced-blowup programme of Diego C\'ordoba and
+Luis Mart\'inez-Zoroa. The
+\href{https://cims.nyu.edu/~tristanb/ipm.pdf}{IPM manuscript}
+lists Alp\"oge, Buckmaster and Matei P. Coiculescu; the
+\href{https://cims.nyu.edu/~tristanb/boussinesq.pdf}{Boussinesq manuscript}
+lists Alp\"oge and Buckmaster and credits the earlier Boussinesq
+work of C\'ordoba, Andr\'es La\'in-Sanclemente and Mart\'inez-Zoroa.
+The later OpenAI PDF also discusses the hypodissipative work of
+C\'ordoba, Mart\'inez-Zoroa and Fan Zheng. These are source
+attributions, not additional PDE theorems asserted here. Exact
+authorship evidence, passage locations, reference-number differences,
+and the separately stated formal-review statuses are retained in
+\texttt{ns\_operator\_bridge/ATTRIBUTION.md}.
+
+
+\paragraph{Source operators and intellectual context.}
+The specific auxiliary matrix and original directions used below are from
+\cite[Section 6.1, equations (6.1)--(6.7), and Lemma 6.2]{OpenAINS};
+the separately pinned source is \cite{OpenAISource}. Earlier forced-fluid
+research is credited in \cite{BuckmasterStatement,CMZEuler,CMZIPM,CMZHypo}.
+The separate smooth-forcing IPM and Boussinesq manuscripts are
+\cite{ABCIPM,ABBoussinesq}; their authorship and theorem domains are not
+interchanged. None of these complete fluid theorems is assumed in the
+arithmetic operator proofs below.
+\input{ns_operator_bridge/torus_cover_lemma.tex}
+\input{ns_operator_bridge/sieve_character_cover.tex}
+
+\paragraph{Return to the continuous source calculation.}
+The next two subsections address the actual continuous operators in
+\cite[Lemma 6.2, (6.17)--(6.20), (8.4)--(8.10), (8.14), and
+Lemma 8.6, (8.19)--(8.23)]{OpenAINS}. The sharp constants, full inverse
+fibres and strengthened derivative estimates are proved here. The original
+cutoff remainder and slow derivatives remain in those identities.
+\input{ns_operator_bridge/reverse_proof_transport.tex}
+\input{ns_operator_bridge/reverse_smooth_inverse.tex}
+
+\input{publication_bibliography.tex}
+\end{document}

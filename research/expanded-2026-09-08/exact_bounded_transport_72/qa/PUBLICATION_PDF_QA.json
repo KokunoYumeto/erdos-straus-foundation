@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "at": "2026-09-09T15:28:53.068Z",
+  "status": "passed",
+  "sha256": "36bff0867a98c549810110eae829e143f89227e94a57be7d10a6173d9a16f30b",
+  "pdf_sha256": "36bff0867a98c549810110eae829e143f89227e94a57be7d10a6173d9a16f30b",
+  "pages": 86,
+  "source_entrypoint": "publication.tex",
+  "canonical_main_sha256": "4356f53962f2da9b418e066f2c2ca1ba9572e45dc398bb2ca4d37981301e5050",
+  "reading_main_sha256": "bb84a6d7cd9c5f697072dc26750a0f166f5a6dc8f3506e6a9d19129f697c4e6b",
+  "bibliography_sha256": "bc89bdc95c56ce051a809e6f7cd45a1b773ca5c40fe236d2ded13cfe030f124d",
+  "build": {
+    "command": "pdflatex -interaction=nonstopmode -halt-on-error -output-directory=output/pdf publication.tex",
+    "passes_this_repair": 2,
+    "final_exit_code": 0,
+    "final_log_sha256": "d8c798e1cf2a56cb2a082bd5699a79b7e18f9447b5946311ab8d7f03f8b3e3be",
+    "undefined_citations": [],
+    "undefined_references": [],
+    "latex_warnings": [],
+    "overfull_boxes": [],
+    "underfull_boxes": []
+  },
+  "all_pages_visual_reviewed": true,
+  "visual_review": {
+    "method": "All 86 pages rendered by Poppler pdftoppm at 72 dpi and inspected in 15 labelled contact sheets. Current title/contributor, citation-bearing pages 19, 34 and 40, dense mathematical displays, page boundaries and references on pages 84-86 inspected for layout.",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86
+    ],
+    "result": "No visible clipping, overlapping text, missing glyph blocks, unresolved citation placeholders or page-number defects observed.",
+    "contact_sheets": [
+      {
+        "name": "contact-01-06.png",
+        "sha256": "bb27c91e067ffefe58312e3a58d86691a6da2d91f4eb0540719752c32a4ae060"
+      },
+      {
+        "name": "contact-07-12.png",
+        "sha256": "cc843a825129ac35c2e6e974bd51ec06702b91d31616272d714a997f9fd5afbf"
+      },
+      {
+        "name": "contact-13-18.png",
+        "sha256": "13e6d6ee5b9d4aa2db8650a0aae546e926b4004e7f21dfec9d5bb60f1c5a2d63"
+      },
+      {
+        "name": "contact-19-24.png",
+        "sha256": "6310d758b9340dccdd3e217fff634f62ebd803c8526a5277f08c0122660234f2"
+      },
+      {
+        "name": "contact-25-30.png",
+        "sha256": "d9989575e7c80ce1f4e2ae2a9a666b2b0e77f35d0f96b5b052db89a070660315"
+      },
+      {
+        "name": "contact-31-36.png",
+        "sha256": "fe5a8e5784c040b54d1edba5408bd146603c100949b4d08daa6e309d8ef5da93"
+      },
+      {
+        "name": "contact-37-42.png",
+        "sha256": "03387aedc05263c10261aa946c6b14bba3ca51582ac6941f84efa035167b15bc"
+      },
+      {
+        "name": "contact-43-48.png",
+        "sha256": "8f9d63ce6e4ae6766721019789bb2f65774ec19238cf36472c2615e6a526d85c"
+      },
+      {
+        "name": "contact-49-54.png",
+        "sha256": "ed3c0b0a490d13ae716ecf73b22aba5a50a75788d061a41afa00f58ecb84ddc9"
+      },
+      {
+        "name": "contact-55-60.png",
+        "sha256": "9e783a89435e8519eb976e4dab0e81653672957d210dead129cba240db56bd78"
+      },
+      {
+        "name": "contact-61-66.png",
+        "sha256": "64fcce8880ab8eaafae821fd5b5775d0593ce7711a687814d75e2bfee146d448"
+      },
+      {
+        "name": "contact-67-72.png",
+        "sha256": "9aec45d9874c7ee6d387f58c83e773b9653c3de23002c7b06a78884e42a2e22e"
+      },
+      {
+        "name": "contact-73-78.png",
+        "sha256": "df4442b51dc8ea314eae738a4ddbd5ec38f070ec8244e6e4ee0197632db9d3c0"
+      },
+      {
+        "name": "contact-79-84.png",
+        "sha256": "1dd5f874f1d378570717a506306cd999f1e76ac8ecd0e7ce251ee1c7d7fbf54b"
+      },
+      {
+        "name": "contact-85-86.png",
+        "sha256": "8b9911a496b6ea77a1a2229b7d1ad89eb11665fa3a6841d19de7fd72853aebea"
+      }
+    ],
+    "limitation": "Visual layout review is not a new proof audit. Original source-bound proof reviews and bounded computation receipts retain their own dates and scopes."
+  },
+  "historical_canonical_pdf_sha256": "c06a30ff0d37f96e35e5ac0582b2a93c244dc05b2b53d7f76b0ea470ae93946d",
+  "prior_unsettled_reading_pdf_sha256": "b712757792016cc93673ecebd011abb748542870289d6041eb006427dc2e058b",
+  "bibliography": {
+    "cited_keys": 16,
+    "defined_keys": 16,
+    "missing_keys": 0
+  },
+  "mathematical_proof_bytes_changed": false
+}

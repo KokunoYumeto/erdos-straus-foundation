@@ -1,0 +1,358 @@
+\section{Composition with the exact unary Boolean indicator}
+\label{sec:unary-transport}
+
+The parent text \emph{The complete primewise coordinate system},
+in its section \emph{Exact unary counts and simultaneous logical
+constraints}, defines a rectangular unary code, the indicator
+\(\chi_p\), and truth polynomials for Boolean operations.
+We use those exact coordinates here.  The additional result is the
+complete bijection to the bounded divisor boxes and the computation
+of every simultaneous truth fibre on that one retained domain.
+The classical torsor identities proved in that text are not needed
+again for this composition.
+
+Keep the full range, with these names distinguished from
+the shear matrix \(J\) and from a general divisor bound:
+\[
+ J_{\rm code}=6h,\quad M_{\rm code}=9h,\quad
+ \Lambda=2J_{\rm code}M_{\rm code},\quad
+ N_{\rm code}=2J_{\rm code}M_{\rm code}^{\,2}.
+\]
+For this section only abbreviate \(J_{\rm code},M_{\rm code}\)
+by \(J_0,M_0\).  The full rectangle consists of
+\[
+ 0\le j<J_0,\quad 1\le A,B\le M_0,\quad
+ \varepsilon\in\{0,1\},
+\]
+with shell \(a=3h+j+1,\ R=4j+3,\ S=pa\).
+Its code and decoder are
+\begin{align}
+ c&=(A-1)\Lambda+2M_0j+2(B-1)+\varepsilon,
+       \label{eq:unary-code}\\
+ A&=1+\lfloor c/\Lambda\rfloor,\quad
+ v=c-\Lambda\lfloor c/\Lambda\rfloor,\quad
+ j=\lfloor v/(2M_0)\rfloor,\notag\\
+ B&=1+\lfloor v/2\rfloor-M_0j,\qquad
+ \varepsilon=v-2\lfloor v/2\rfloor. \notag
+\end{align}
+Successive division by \(\Lambda,2M_0,2\) proves these are
+inverse for \(0\le c<N_{\rm code}\).
+
+Write \([P]\) for the integer \(0\) or \(1\) according as the
+specified predicate \(P\) is false or true.  Define
+\[
+ \kappa_p(c)=[AB\mid a]\,[\gcd(A,B)=1],\qquad
+ \chi_p(c)=\kappa_p(c)\,[R\mid A+p^{1-\varepsilon}B].
+\]
+This is precisely the parent's indicator: \(4AB\mid p+4j+3\)
+is equivalent to \(AB\mid a\), while its gcd-floor bits
+equal these divisibility and coprimality bits.
+Set \(\mathcal C_p^{\rm bud}=\{c:\kappa_p(c)=1\}\) and
+\(\mathcal C_p^+=\{c:\chi_p(c)=1\}\).
+
+For completeness the parent's integer truth-polynomial convention is
+\[
+ \neg b=1-b,\quad b\land d=bd,\quad b\lor d=b+d-bd,
+\]
+\[
+ b\Rightarrow d=1-b+bd,\qquad
+ b\Longleftrightarrow d=1-b-d+2bd.
+\]
+For \(b=0\), the last two expressions are \(1\) and
+\(1-d\); for \(b=1\), they are both \(d\).
+The first three follow by the same two substitutions.
+Induction on the expression therefore gives its exact
+zero-or-one truth value.  We use that convention for \(F\) below.
+
+\begin{theorem}[Unary codes and one retained tagged valuation box]
+\label{thm:unary-box}
+There is an explicit bijection
+\[
+ \Theta:\mathcal B_p:=
+ \coprod_{\substack{0\le j<6h\\\varepsilon\in\{0,1\}}}
+ \{(j,\varepsilon)\}\times
+ \prod_{\ell\mid a_j}\{0,\ldots,2v_\ell(a_j)\}
+ \ \longrightarrow\ \mathcal C_p^{\rm bud}.
+\]
+For \((j,\varepsilon,\boldsymbol e)\), its forward map is
+\[
+ u=\prod_{\ell\mid a_j}\ell^{e_\ell},\quad
+ g=\gcd(a_j,u),\quad A=a_j/g,\quad B=u/g,\quad D=g^2/u,
+\]
+followed by \eqref{eq:unary-code}.
+Its inverse decodes \(j,A,B,\varepsilon\), sets
+\[
+ D=a_j/(AB),\qquad u=B^2D,\qquad
+ \boldsymbol e=(v_\ell(u))_{\ell\mid a_j}.
+\]
+All fibres of these inverse maps are singletons.
+The preimage \(\mathcal B_p^+=\Theta^{-1}(\mathcal C_p^+)\)
+is exactly
+\[
+ R_j\mid 4u+p^\varepsilon,
+\]
+on the same box.  This is the exterior condition for \(\varepsilon=0\)
+and the middle condition for \(\varepsilon=1\).
+Every point in this preimage reconstructs the positive integers
+\begin{equation}\label{eq:unary-integer-lift}
+ C=\frac{A+p^{1-\varepsilon}B}{R_j},\qquad
+ (a_j,y,z)=(ABD,p^\varepsilon ACD,pBCD).
+\end{equation}
+On its image, the inverse from the ordered triple retains its first
+denominator, obtains the reduced pair
+\[
+ (m,n)=\operatorname{red}\big((R_jy-S_j)/S_j\big),
+\]
+and then recovers \(A=m,\ B=n/p^{1-\varepsilon}\), the tag
+\(\varepsilon=0\) when \(p\mid n\) and \(\varepsilon=1\) otherwise,
+and the displayed inverse code and exponents.
+\end{theorem}
+\begin{proof}
+Unique prime factorization makes the exponent box bijective to
+\(\Div(a_j^2)\), with the displayed valuation inverse.
+Write \(a_j=gA,u=gB\) with \(\gcd(A,B)=1\).
+Since \(u\mid a_j^2\), one has \(B\mid gA^2\), hence
+\(B\mid g\).  Therefore \(D=g/B=g^2/u\) is a positive
+integer and \(a_j=ABD,u=B^2D\).
+In particular \(AB\mid a_j\) and \(A,B\le a_j\le9h\);
+so the forward code belongs to the specified rectangle
+and has \(\kappa_p=1\).
+Conversely \(D=a_j/(AB)>0\) gives
+\(u=B^2D\mid a_j^2\), with quotient \(A^2D\);
+coprimality gives \(\gcd(a_j,u)=BD\).
+It follows that the two maps recover \(A,B,D,u\) exactly.
+Unique prime factorization and the code decoder recover every
+remaining label, proving both inverse compositions.
+
+The integers \(A,p,R_j\) satisfy
+\(\gcd(A,R_j)=\gcd(p,R_j)=1\).
+Multiplying \(4u+p^\varepsilon\) by \(A\) modulo \(R_j\),
+and using \(4ABD=p+R_j\), gives
+\[
+ A(4B^2D+p^\varepsilon)
+       \equiv pB+p^\varepsilon A
+       =p^\varepsilon(A+p^{1-\varepsilon}B)\pmod{R_j}.
+\]
+Both multipliers are units, so this is an equivalence.
+For \(\varepsilon=1\), \(4u+p\equiv4(u+a_j)\pmod{R_j}\)
+and \(4\) is a unit, giving exactly the middle gate.
+
+On the passing locus \(C,D>0\) are integers and
+\[
+ 4ABCD=pC+A+p^{1-\varepsilon}B.
+\]
+With common denominator \(pABCD\), the three reciprocals
+in \eqref{eq:unary-integer-lift} have these three
+numerators.  Their sum is therefore \(4/p\).
+Moreover direct substitution yields
+\[
+ R_jy-S_j=p^\varepsilon A^2D,\qquad
+ \frac{R_jy-S_j}{S_j}=\frac{A}{p^{1-\varepsilon}B}.
+\]
+This fraction is reduced because \(\gcd(A,B)=1\) and
+\(A\le a_j<p\).  Also \(B<p\), so the divisibility
+of its denominator by \(p\) recovers the tag.
+This proves the asserted inverse on the exact image,
+including the retained ordering.  The exterior chart chooses
+the orientation \((A,pB)\); its transpose is recovered by
+exchanging \(y,z\), as in Section~1.
+In the middle channel the source chart has pair \((A,B)\),
+whereas the map \(\mu_a(u)\) below has pair \((B,A)\);
+their exact correspondence is the coordinate exchange \(P\),
+with the same exchange of the final two denominators.
+No orientation is silently identified.
+\end{proof}
+
+\begin{theorem}[Simultaneous truth fibres, unions, and intersections]
+\label{thm:unary-truth-fibres}
+Let \(P_1,\ldots,P_t\) be any finite list of specified arithmetic
+predicates decidable by exact integer operations on
+\(\mathcal C_p^+\), including divisibility, congruences,
+equalities and inequalities on the reconstructed coordinates.
+Define the evaluation map on that finite domain by
+\[
+ \rho(c)=([P_1(c)],\ldots,[P_t(c)])\in\{0,1\}^t.
+\]
+For \(\sigma\in\{0,1\}^t\), the full fibre is
+\[
+ H_\sigma=\{c\in\mathcal C_p^+:\rho(c)=\sigma\},\qquad
+ \widehat H_\sigma=
+ \{\xi\in\mathcal B_p^+:\rho(\Theta(\xi))=\sigma\}.
+\]
+The restriction of \(\Theta\) is a bijection
+\(\widehat H_\sigma\to H_\sigma\), with exactly the
+integer lift and inverse of Theorem~\ref{thm:unary-box}.
+
+For any finite Boolean expression \(\Phi\) in these predicates,
+including any simultaneous list of biconditionals, put
+\(T_\Phi=\{\sigma:\Phi(\sigma)=1\}\).
+Its full solution set is the disjoint union
+\[
+ H_\Phi=\coprod_{\sigma\in T_\Phi}H_\sigma,\qquad
+ \Theta^{-1}(H_\Phi)=
+           \coprod_{\sigma\in T_\Phi}\widehat H_\sigma .
+\]
+In particular, for any \(r\ge1\) solution subsets \(X_1,\ldots,X_r\)
+of this same coded domain,
+\[
+ \Theta^{-1}\Big(\bigcap_iX_i\Big)=\bigcap_i\Theta^{-1}(X_i),
+ \qquad
+ \Theta^{-1}\Big(\bigcup_iX_i\Big)=\bigcup_i\Theta^{-1}(X_i).
+\]
+The iterated fibre product
+\(X_1\times_{\mathcal C_p^+}\cdots
+\times_{\mathcal C_p^+}X_r\) over the inclusions is exactly
+\(\{(c,\ldots,c):c\in\bigcap_iX_i\}\).
+Its inverse diagonal projection has singleton fibres.
+The union projection
+\(\coprod_iX_i\to\bigcup_iX_i\), \((i,c)\mapsto c\),
+has exact fibre \(\{(i,c):c\in X_i\}\).
+A disjoint inverse representation of the union is obtained
+by choosing the least such \(i\).
+
+The computable exact cardinalities are
+\begin{align}
+ |H_\sigma|&=\sum_{c\in\mathcal C_p^+}
+     \prod_{\sigma_i=1}[P_i(c)]
+     \prod_{\sigma_i=0}(1-[P_i(c)]),\label{eq:truth-cardinality}\\
+ |H_\Phi|&=\sum_{\sigma\in T_\Phi}|H_\sigma|
+       =\sum_{\xi\in\mathcal B_p^+}
+                       [\Phi(\rho(\Theta(\xi)))],\notag\\
+ \left|\bigcup_{i=1}^rX_i\right|
+     &=\sum_{\varnothing\ne I\subseteq\{1,\ldots,r\}}
+           (-1)^{|I|+1}\left|\bigcap_{i\in I}X_i\right|.\notag
+\end{align}
+Equivalently, writing \(F(c)\) for the parent's truth
+polynomial, the exact selected tagged count and weighted count are
+\[
+ \sum_{c=0}^{N_{\rm code}-1}\chi_p(c)F(c),\qquad
+ W_F=\sum_{c=0}^{N_{\rm code}-1}
+                  (2-\varepsilon(c))\chi_p(c)F(c).
+\]
+Predicates involving \(C,D,y,z\) are evaluated on the passing
+domain where these coordinates exist.  They can be assigned any
+fixed bits outside that domain, since the factor \(\chi_p=0\)
+removes those codes.  No fractional candidate is treated as an
+integer lift.  For \(F=1\), \(W_F=2Q_p\).
+For a general selection invariant under middle complementation
+\(u\mapsto a_j^2/u\), \(W_F/2\) counts the selected unordered
+pairs; without that invariance it is only the displayed
+half-weighted tagged count and can be nonintegral.
+\end{theorem}
+\begin{proof}
+Each code has exactly one truth vector, so the fibres \(H_\sigma\)
+are pairwise disjoint and partition \(\mathcal C_p^+\).
+The inverse bijection \(\Theta^{-1}\) preserves membership
+in every predicate evaluated at that same code; this proves
+the fibre statement and both set identities.
+A tuple in the fibre product has equal images under the
+inclusions, which means all of its entries are literally
+the same code.  Conversely any member of the intersection
+gives that diagonal tuple.  The union fibre follows from
+the definition of the coproduct, and the least-index rule
+is defined precisely on the union.
+
+The product in \eqref{eq:truth-cardinality} is one exactly
+when every bit agrees with \(\sigma\); otherwise one of
+its factors is zero.  Summing proves its count.  Disjointness
+and the bijection give the other two expressions for
+\(|H_\Phi|\).  At a point belonging to \(k>0\) of the
+\(X_i\), the inclusion--exclusion sum contributes
+\(\sum_{s=1}^k(-1)^{s+1}\binom{k}{s}=1\);
+at a point in none it contributes zero.  The equality follows
+by expanding \((1-1)^k\) and then summing over the finite domain.
+The parent's Boolean truth polynomials evaluate to the same bit
+\([\Phi]\) at each code, so their displayed counts agree with
+these fibres.
+
+Finally the exterior chart represents both ordered orientations
+of one unordered pair and the middle charts represent the two
+distinct complementary orientations.  The preceding proofs and
+the fixed-point-free middle complementation of Section~1 give
+\(W_1=2Q_p\).  An invariant middle selection retains both or
+neither of those orientations; division by two then gives the
+unordered count.  If one orientation alone is retained its
+weight is one, proving both the limitation and the possible
+nonintegrality asserted above.
+\end{proof}
+
+\begin{proposition}[Constructive CRT evaluation inside every common truth fibre]
+\label{prop:unary-crt-fibre}
+Every fibre of Theorem~\ref{thm:unary-truth-fibres} can be
+computed with its complete integer lifts, using the bounded
+divisibility CRT of Theorem~\ref{thm:divisor-crt} for its
+positive affine/divisibility atoms and exact finite tests for
+all its other atoms.  Noncoprime moduli, nonunit or zero
+affine coefficients, negations, and biconditionals are retained.
+
+More explicitly, in one fixed component \((j,\varepsilon)\),
+write \(u=\prod_{\ell\mid a_j}\ell^{e_\ell}\).
+Include the original bound \(u\mid a_j^2\) and the original
+gate \(4u\equiv-p^\varepsilon\pmod{R_j}\).
+For a truth vector \(\sigma\), collect every atom required true
+of the forms
+\[
+ u\mid N_i,\qquad f_i\mid u,\qquad
+ \alpha_i u\equiv\beta_i\pmod{L_i},
+ \quad N_i,f_i,L_i>0,\quad\alpha_i,\beta_i\in\Z,
+\]
+where the displayed parameters are fixed in that component.
+Let \(\mathcal L_\sigma\) be the complete finite list returned
+by Theorem~\ref{thm:divisor-crt} on those conditions.
+For each \(u\) on this list reconstruct its unique code by
+Theorem~\ref{thm:unary-box} and retain it exactly when
+\[
+ [P_i(c)]=\sigma_i\quad(1\le i\le t).
+\]
+This gives precisely \(H_\sigma\) in that component, without
+multiplicity.  Summing the retained list lengths over
+\(j,\varepsilon,\sigma\in T_\Phi\) gives \(|H_\Phi|\).
+Storing the codes, exponents, and \eqref{eq:unary-integer-lift}
+gives all positive integer lifts and their singleton inverse
+fibres, not only that cardinality.
+\end{proposition}
+\begin{proof}
+Each actual member of \(H_\sigma\) satisfies its positive
+collected atoms and the original bound and gate.  The full
+biconditional in Theorem~\ref{thm:divisor-crt} therefore places
+its unique \(u\) in \(\mathcal L_\sigma\).
+It passes the final truth-vector test, proving that none is lost.
+Conversely each retained list element satisfies all original
+arithmetic conditions and every required true or false atom,
+so its code is in exactly the stated fibre.
+Unique factorization and Theorem~\ref{thm:unary-box} preclude
+duplicates in a fixed component; the retained \(j,\varepsilon\)
+labels and disjoint truth vectors preclude duplicates between
+components or vectors.
+
+For completeness this is a finite algorithm for arbitrary
+specified decidable atoms, even when none has the collected
+affine form: in that case the list is the bounded divisor
+list satisfying the original gate, and every additional atom
+is tested by its specified exact rule.  If an atom's coefficients
+depend on \(u\) or on another decoded coordinate, that atom is
+evaluated in this last step, rather than incorrectly treating
+a variable coefficient as constant in CRT.
+A false divisibility or congruence atom is likewise tested
+on each same integer \(u\); it is not replaced by an independent
+choice of a failing representative.  The preliminary gcd
+compatibilities, full residue fibre \(r+L\Z\), monoid
+coefficients, and retained valuation intervals are exactly
+those proved in Theorem~\ref{thm:divisor-crt}.
+These calculations produce the entire list or prove it empty;
+no existence assumption is added.  This proves termination,
+both inclusions, and the reconstruction and counting statements.
+\end{proof}
+
+The previously proved actual-shell obstruction \(p=37,a=18\)
+makes the common-domain requirement concrete.  On
+\(\Div(324)\), the two predicates \(5\mid4u+1\) and
+\(7\mid4u+1\) have respectively the nonempty truth sets
+\(\{1,6,36,81\}\) and \(\{12,54\}\).
+Their intersection on that same divisor domain is empty.
+The code bijection transports precisely these two finite
+subsets, so it also transports the empty intersection.
+The unrestricted integer CRT lift \(u=96\) remains outside
+the valuation budget.  Neither taking a Cartesian product
+of these local truth sets nor introducing separate
+witnesses changes this computed fibre.

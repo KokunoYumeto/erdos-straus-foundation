@@ -1,0 +1,514 @@
+% Wrapper-free proof; uses only amsmath, amssymb and theorem environments.
+\section{Four retained coordinate candidates and the exact residual-three first hit}
+\label{sec:boundary-four-candidates}
+
+The antecedent \emph{Signed margins, exact witness swaps, and the
+prime-output sieve}, Theorem \texttt{thm:margin-swap-bands}, proves
+the same-tag exchange, its shell criterion, its oriented divisor map,
+and the initial forbidden bands. The source file is
+\texttt{signed\_margin\_sieve.tex}, SHA256
+\texttt{d51347ad95517c59d4922b526bc55ac1e7a9487f18503f415943b9870ddda6ef}.
+We compute here the two additional tag candidates, every failed
+candidate's exact rational obstruction, the complete integral orbit
+fibres, and the actual least code on every occupied residual-three
+shell. All raw coordinates and their source marks remain present.
+
+Fix a prime \(p=12h+1\), \(h\ge1\), and a full original shell
+\[
+ 0\le j<6h,\qquad a=3h+j+1,\qquad R=4j+3=4a-p,
+ \qquad S=pa.
+\]
+Let \(\mathcal R_{p,j}\) consist of the complete records
+\[
+\begin{gathered}
+ X=(p,j,a,R,S,A,B,C,D,\varepsilon),\\
+ A,B,D\in\mathbb Z_{>0},\quad ABD=a,\\
+ \varepsilon\in\{0,1\},\quad
+ C=\frac{A+p^{1-\varepsilon}B}{R}\in\mathbb Q_{>0}.
+\end{gathered}
+\]
+Let \(\mathcal I_{p,j}\) be its exact subset \(C\in\mathbb Z\).
+No coprimality restriction is imposed on \(A,B\) in these raw
+domains. Since \(a<p\), \(\gcd(a,R)=\gcd(a,p)=1\);
+therefore every one of \(A,B,D,p\) is a unit modulo \(R\).
+For the first equality, a prime dividing \(a,R\) would divide
+\(p=4a-R\), contradicting \(a<p\). For the second use primality
+and \(0<a<p\). Finally \(R\) is odd and
+\(\gcd(p,R)=1\), since \(p\mid R\) would imply \(p\mid a\).
+These unit statements will justify each cancellation explicitly.
+
+\begin{theorem}[The four rational candidates with their complete inverse]
+\label{thm:boundary-four-rational}
+For \(s,t\in\{0,1\}\), set
+\[
+ (\alpha,\beta)=
+ \begin{cases}(A,B)&s=0,\\(B,A)&s=1,\end{cases}
+ \qquad \eta=\varepsilon+t-2\varepsilon t,
+ \qquad C_{s,t}=\frac{\alpha+p^{1-\eta}\beta}{R}.
+\]
+The map \(T_{s,t}:\mathcal R_{p,j}\to\mathcal R_{p,j}\)
+retains \(p,j,a,R,S,D\) and replaces
+\((A,B,C,\varepsilon)\) by
+\((\alpha,\beta,C_{s,t},\eta)\). Its inverse is precisely
+\(T_{s,t}\). The four maps form an action of
+\((\mathbb Z/2\mathbb Z)^2\): composition adds both displayed
+bits modulo two. Every individual map has singleton fibres.
+The full rational orbit of \(X\) has four distinct records if
+\(A\ne B\), and two if \(A=B\); its complete stabilizer is
+\(\{(0,0)\}\) in the former case and
+\(\{(0,0),(1,0)\}\) in the latter case.
+
+For every candidate retain its original ordered rational witness and
+both oriented residuals:
+\begin{align*}
+ (x_{s,t},y_{s,t},z_{s,t})
+   &=(a,p^\eta\alpha C_{s,t}D,p\beta C_{s,t}D),\\
+ \frac1{x_{s,t}}+\frac1{y_{s,t}}+\frac1{z_{s,t}}&=\frac4p,\\
+ d_{y,s,t}=Ry_{s,t}-S&=p^\eta\alpha^2D,\\
+ d_{z,s,t}=Rz_{s,t}-S&=p^{2-\eta}\beta^2D,
+ \qquad d_{y,s,t}d_{z,s,t}=S^2.
+\end{align*}
+Thus these residuals are positive integers even when one or both
+witness denominators are nonintegral. Writing
+\(u=B^2D\), the retained target coordinate is
+\(u_{s,t}=u\) if \(s=0\), and
+\(u_{s,t}=a^2/u=A^2D\) if \(s=1\), with the tag
+\(\eta\) still attached. The map to the graph containing the
+source \(X\), both bits, and this full target has inverse projection
+to \((X,s,t)\), hence singleton fibres; no witness ordering or
+choice among equal rational candidates is forgotten.
+
+Set \(k=\gcd(A,B)\). The raw-coordinate correspondence is
+\[
+ (A_0,B_0,C_0,D_0,k)
+   =(A/k,B/k,C/k,k^2D,k),\qquad
+ (A,B,C,D)=(kA_0,kB_0,kC_0,D_0/k^2).
+\]
+Here \(\gcd(A_0,B_0)=1\), \(k^2\mid D_0\), and
+\(C_0=(A_0+p^{1-\varepsilon}B_0)/R\).
+The maps \(T_{s,t}\) commute with this correspondence, retaining
+the very same \(k\) and \(D_0\). Above a fixed coprime record,
+the full raw-scale fibre is exactly
+\(\{k>0:k^2\mid D_0\}\), including when \(C_0\) is rational.
+The integral locus is equivalent to \(C_0\in\mathbb Z\), and
+on that locus all displayed witnesses agree under this raw-scale
+correspondence coordinate by coordinate.
+\end{theorem}
+\begin{proof}
+The product \(\alpha\beta D=ABD=a\) and the target coefficient
+equation put each target in the specified rational domain. Applying
+the same bit twice restores \(A,B,\varepsilon\). The coefficient
+is the unique rational number satisfying its defining equation, so
+it also returns to the original \(C\). The swap and tag operations
+commute on these three discrete coordinates, which proves the group
+law and all individual inverses. A fixed point must have \(t=0\),
+because changing the tag changes that retained coordinate. For
+\(s=1,t=0\) it must, and conversely does, have \(A=B\).
+These are all four possible stabilizer elements, giving the orbit
+counts directly.
+
+The target equation reads
+\[
+ 4\alpha\beta C_{s,t}D
+     =\alpha+p^{1-\eta}\beta+pC_{s,t}.
+\]
+Over the positive rational common denominator
+\(p\alpha\beta C_{s,t}D\), the three reciprocals have
+numerators \(pC_{s,t},p^{1-\eta}\beta,\alpha\), respectively.
+Their sum is consequently \(4/p\). Multiplying
+\(RC_{s,t}=\alpha+p^{1-\eta}\beta\) by
+\(p^\eta\alpha D\), and then by \(p\beta D\), gives
+the two residual identities after subtracting
+\(S=p\alpha\beta D\). Their product is
+\(p^2\alpha^2\beta^2D^2=S^2\). The formulas for
+\(u_{s,t}\) follow from \(a^2=A^2B^2D^2\); applying the
+same complement twice restores \(u\), still with its appropriate
+tag. Projection from the fully specified graph restores exactly
+the source and the two chosen bits, including at fixed points.
+
+The raw-scale formulas are inverse because
+\(\gcd(kA_0,kB_0)=k\). Substitution gives
+\(A_0B_0D_0=a\) and the stated rational coefficient. The
+square-divisor condition is exactly what makes \(D_0/k^2\)
+an integer. Thus every scale in the displayed fibre occurs, and
+no other scale does. On the original integral locus, reducing
+\(RC=A+p^{1-\varepsilon}B\) modulo \(k\) gives
+\(k\mid RC\); since \(k\mid a\), \(\gcd(k,R)=1\), so
+\(k\mid C\). This proves \(C_0\) integral. Conversely,
+\(C=kC_0\) is integral when \(C_0\) is. The same argument
+works for every target because its \(k\) is unchanged.
+Finally direct substitution gives
+\(ABD=A_0B_0D_0\),
+\(p^\varepsilon ACD=p^\varepsilon A_0C_0D_0\), and
+\(pBCD=pB_0C_0D_0\). The target calculation has the same
+identities with \(\alpha/k,\beta/k,C_{s,t}/k\). This proves
+the asserted commutation and every retained witness equality.
+\end{proof}
+
+\begin{theorem}[Exact obstruction classes, denominators, and four integral fibres]
+\label{thm:boundary-obstruction-fibres}
+For an integral source \(X\in\mathcal I_{p,j}\), the following
+table gives the target numerator modulo \(R\), the common exact
+positive reduced denominator \(\delta_{s,t}\) of
+\(C_{s,t},y_{s,t},z_{s,t}\), and the complete integrality test.
+The original positive rational numbers themselves remain the
+fractions defined in the preceding theorem.
+\[
+\begin{array}{c|c|c|c}
+ (s,t)\text{ and source tag}&
+ \alpha+p^{1-\eta}\beta\pmod R&\delta_{s,t}&
+ T_{s,t}X\in\mathcal I_{p,j}\\\hline
+ (0,0),\ \varepsilon=0\text{ or }1&0&1&\text{always}\\
+ (1,0),\ \varepsilon=1&0&1&\text{always}\\
+ (1,0),\ \varepsilon=0&(1-p^2)B&
+ R/\gcd(R,p^2-1)&R\mid p^2-1\\
+ (0,1)\text{ or }(1,1),\ \varepsilon=0&(1-p)B&
+ R/\gcd(R,p-1)&R\mid p-1\\
+ (0,1),\ \varepsilon=1&(p-1)B&
+ R/\gcd(R,p-1)&R\mid p-1\\
+ (1,1),\ \varepsilon=1&-(p-1)B&
+ R/\gcd(R,p-1)&R\mid p-1
+\end{array}
+\]
+Each integral restriction
+\[
+ T_{s,t}:\{X\in\mathcal I_{p,j}:T_{s,t}X\in\mathcal I_{p,j}\}
+   \longrightarrow
+ \{X\in\mathcal I_{p,j}:T_{s,t}X\in\mathcal I_{p,j}\}
+\]
+is a bijection with the same inverse \(T_{s,t}\) and singleton
+fibres. If the test fails, the precise rational target and its
+inverse in \(\mathcal R_{p,j}\) still apply.
+
+More explicitly, the additive morphism
+\[
+ \psi_R:\mathbb Z/R\mathbb Z\longrightarrow
+      (\mathbb Q/\mathbb Z)[R],\qquad
+ \overline n\longmapsto n/R+\mathbb Z
+\]
+is an isomorphism. The target obstruction is exactly
+\(\omega_{s,t}=\psi_R(\overline{\alpha+p^{1-\eta}\beta})
+ =C_{s,t}+\mathbb Z\), and has additive order
+\(\delta_{s,t}\). For any integer multiplier \(m\) occurring
+in the second column, put \(g_m=\gcd(R,m)\) and
+\(\delta_m=R/g_m\), with \(\gcd(R,0)=R\).
+The map \(\psi_R\circ[m]\) has image exactly
+\((\mathbb Q/\mathbb Z)[\delta_m]\), kernel exactly
+\(\delta_m\mathbb Z/R\mathbb Z\), and every nonempty fibre
+is exactly \(\overline{b_0}+\delta_m\mathbb Z/R\mathbb Z\).
+In the table the retained input \(B\) is a unit modulo \(R\),
+so its output has the full order \(\delta_m\).
+\end{theorem}
+\begin{proof}
+For \(\varepsilon=0\), the integral source gives
+\(A\equiv-pB\pmod R\). Its same-tag swap numerator is
+\(B+pA\equiv(1-p^2)B\). Both tag-changing numerators are
+\(A+B\equiv(1-p)B\). For \(\varepsilon=1\), the source
+gives \(A\equiv-B\pmod R\); its same-tag swap has numerator
+\(A+B\equiv0\), while its tag changes have numerators
+\(A+pB\equiv(p-1)B\) and
+\(B+pA\equiv-(p-1)B\). The identity target has its original
+integral numerator. This proves every residue entry independently
+of any representative choice.
+
+For an integer \(N>0\), the exact denominator of \(N/R\)
+is \(R/\gcd(R,N)\). To prove this statement, write
+\(N=gN_1,R=gR_1\), where \(g=\gcd(R,N)\) and
+\(\gcd(N_1,R_1)=1\); then \(dN/R\) is an integer exactly
+when \(R_1\mid d\), by Bezout. Its least positive such \(d\)
+is \(R_1\). Every factor \(B,p,\alpha,\beta,D\) is a
+unit modulo \(R\), so
+\[
+ \gcd(R,mB)=\gcd(R,m),\quad
+ \gcd(R,p^\eta\alpha DN)=\gcd(R,N),\quad
+ \gcd(R,p\beta DN)=\gcd(R,N).
+\]
+Apply the denominator calculation to each displayed numerator and
+its two indicated multiples. This proves the same exact denominator
+for the coefficient and both ordered witness denominators, all table
+values, and both directions of every integrality assertion.
+The restricted map is its own inverse because the rational map is
+its own inverse; if its source and target are integral, the same
+condition holds with their roles exchanged.
+
+Changing \(n\) by a multiple of \(R\) changes \(n/R\) by
+an integer, so \(\psi_R\) is well-defined and additive. Its
+kernel is zero. Every class annihilated by \(R\) is represented
+by a rational \(x\) with \(Rx=n\in\mathbb Z\), and is
+therefore \(\psi_R(\overline n)\). This proves its stated
+codomain and both parts of the isomorphism. The denominator
+calculation already proves the order of each \(N/R+\mathbb Z\).
+For \(m\ne0\), write \(R=g_m\delta_m\),
+\(m=g_mm_1\), \(\gcd(\delta_m,m_1)=1\).
+Then \(R\mid mb\) is equivalent to \(\delta_m\mid b\),
+giving the complete kernel. Bezout gives an integer inverse of
+\(m_1\) modulo \(\delta_m\), so the fractions
+\(mb/R=m_1b/\delta_m\) attain every class
+\(n/\delta_m+\mathbb Z\); these are precisely the stated
+image. Two inputs have the same output exactly when their
+difference is in the proved kernel, giving every fibre. For
+\(m=0\), the map is zero, \(\delta_m=1\), and these same
+descriptions respectively give the zero image, whole domain, and
+whole nonempty fibre. Finally \(\gcd(B,R)=1\) gives
+\(\gcd(B,\delta_m)=1\), so multiplication by the retained
+\(B\) leaves the exact order \(\delta_m\) unchanged.
+\end{proof}
+
+\begin{theorem}[Complete integral orbits and the original code-lowering map]
+\label{thm:boundary-orbit-code}
+Retain either original radix
+\[
+ (J_H,M_H)=(3h,6h),\qquad (J_F,M_F)=(6h,9h),\qquad
+ \Lambda_\rho=2J_\rho M_\rho.
+\]
+For \(\rho=H\), impose its actual shell domain \(j<3h\);
+for \(\rho=F\), keep the whole domain above. Codes use the
+retained coprime coordinates of the raw record:
+\[
+ c_\rho(X)=(A_0-1)\Lambda_\rho+2M_\rho j
+                    +2(B_0-1)+\varepsilon.
+\]
+The rectangle \(1\le A_0,B_0\le M_\rho\),
+\(0\le j<J_\rho\), \(\varepsilon\in\{0,1\}\) has
+the following full code inverse on
+\(0\le c<M_\rho\Lambda_\rho\):
+\[
+\begin{gathered}
+ A_0=1+\lfloor c/\Lambda_\rho\rfloor,\quad
+ r=c-(A_0-1)\Lambda_\rho,\quad
+ j=\lfloor r/(2M_\rho)\rfloor,\\
+ w=r-2M_\rho j,\quad B_0=1+\lfloor w/2\rfloor,\quad
+ \varepsilon=w-2\lfloor w/2\rfloor.
+\end{gathered}
+\]
+On a hit this recovers \(a=3h+j+1\), \(R=4j+3\),
+\(S=pa\), \(D_0=a/(A_0B_0)\), and
+\(C_0=(A_0+p^{1-\varepsilon}B_0)/R\).
+Keeping the scale \(k\) then recovers the entire raw record.
+Every integral target in the same rational orbit has code
+\begin{equation}\label{eq:boundary-four-code-difference}
+ c_\rho(T_{s,t}X)-c_\rho(X)
+  =s(B_0-A_0)(\Lambda_\rho-2)+(\eta-\varepsilon).
+\end{equation}
+Let \(\mathcal O_I(X)\) be the rational orbit intersected with
+the integral domain. Its complete list and its smallest-code member
+are as follows; the coefficient at every listed member is always
+its forced coefficient and \(D,k,p,j,a,R,S\) are retained.
+\[
+\begin{array}{c|c|c}
+\text{shell and tag}&\text{members, as }(A,B,\varepsilon)&
+                 \text{smallest-code coordinates}\\\hline
+ R\mid p-1& (A,B,0),(B,A,0),(A,B,1),(B,A,1)&
+               (\min(A,B),\max(A,B),0)\\
+ R\nmid p-1,\ R\mid p^2-1&
+              (A,B,\varepsilon),(B,A,\varepsilon)&
+               (\min(A,B),\max(A,B),\varepsilon)\\
+ R\nmid p^2-1,\ \varepsilon=1&(A,B,1),(B,A,1)&
+               (\min(A,B),\max(A,B),1)\\
+ R\nmid p^2-1,\ \varepsilon=0&(A,B,0)&(A,B,0)
+\end{array}
+\]
+The first row has four distinct members. The second row has two
+except when \(A=B\), when it has one. The third row has two
+distinct members. The fourth row has one. The map selecting the
+listed smallest member, while retaining \(k\), has full fibre
+exactly that displayed integral orbit. If \(k\) is also forgotten,
+the full fibre above its coprime smallest member is the disjoint
+union of these orbits over every \(k>0\) with \(k^2\mid D_0\).
+Retaining the source and chosen bits instead gives the singleton
+graph inverse of Theorem~\ref{thm:boundary-four-rational}.
+
+Consequently any globally least hit in either original radix lies
+among the listed orbit minima. In particular on a shell
+\(R\mid p-1\) its tag is zero and \(A_0<B_0\).
+On every middle hit the swap lowers the original code exactly when
+\(A_0>B_0\). On an exterior hit with \(A_0>B_0\), the
+same-tag swap gives a lower integral hit exactly on
+\(R\mid p^2-1\); elsewhere
+the rational companion and its nontrivial obstruction remain the
+exact relation. These statements specify both the retained positive
+integer domains and the failed integral fibres.
+\end{theorem}
+\begin{proof}
+The product \(A_0B_0D_0=a\) gives
+\(1\le A_0,B_0\le a\le M_\rho\) on the specified shell
+range. Swapping retains these same bounds. Thus all candidates
+remain in the same code rectangle. The inner digit
+\(2(B_0-1)+\varepsilon\) runs bijectively through
+\(0,\ldots,2M_\rho-1\). Adding \(2M_\rho j\) runs
+bijectively through \(0,\ldots,\Lambda_\rho-1\).
+Adding \((A_0-1)\Lambda_\rho\) therefore runs bijectively
+through the full displayed interval. Successive Euclidean division
+gives exactly the three remainders \(r,w,\varepsilon\) above,
+so both encode--decode composites are identities on every original
+digit. The hit's defining budget and gate make the displayed
+\(D_0,C_0\) positive integers; their formulas and the raw-scale
+inverse restore every other recorded coordinate.
+The tag increment is precisely
+\(\eta-\varepsilon\); the difference of the outer and inner
+digits is \((B_0-A_0)\Lambda_\rho+2(A_0-B_0)\) if
+\(s=1\), and zero otherwise. This proves the full difference
+formula without changing the radix or any shell digit.
+
+The four-candidate table of the preceding theorem gives exactly the
+four rows of integral members. If \(R\mid p-1\), equality
+\(A=B\) would imply, from either source tag, \(R\mid2A\).
+But \(A\) and two are units modulo the odd integer \(R\ge3\),
+a contradiction. A middle hit with \(A=B\) gives that same
+contradiction even without \(R\mid p-1\). In the second row
+an exterior hit with \(A=B\) is permitted, and the swap then
+fixes the entire record. There are no other coincidences, by the
+stabilizer calculation above.
+
+One has \(\Lambda_\rho\ge36\), so
+\(\Lambda_\rho-2>1\). Thus any nonzero integer decrease of
+\(A_0\) under a swap decreases the code by more than either
+possible tag increment; at a fixed ordered pair tag zero precedes
+tag one by exactly one. This proves each claimed smallest member
+and its uniqueness as a record. Distinct integral orbit minima
+cannot share a fibre: if two records have the same minimum, they
+belong to the rational orbit of that minimum. Conversely every
+integral member of that orbit has precisely the same computed
+minimum. This proves the complete fibre. The raw-scale inverse
+already established gives exactly the extra disjoint choices when
+\(k\) is forgotten, and proves that no other raw preimages occur.
+
+If a globally least hit were not minimal within its own integral
+orbit, the computed smaller member would be another original hit
+with a strictly smaller original code, a contradiction. All further
+statements now follow from the displayed minima, the exclusion of
+\(A=B\) in the first row, and the exact difference formula.
+\end{proof}
+
+\begin{theorem}[The exact global first code on the occupied residual-three domain]
+\label{thm:boundary-r3-global-minimum}
+Put \(a_3=3h+1=(p+3)/4\), and retain its actual prime factors.
+Define the explicit prime set
+\[
+ \mathcal P_2(a_3)=\{\ell:\ell\text{ prime},\ \ell\mid a_3,
+                                  \ \ell\equiv2\pmod3\}.
+\]
+The residual-three shell has an integral hit exactly on the domain
+\(\mathcal P_2(a_3)\ne\varnothing\). On this precisely
+specified domain let \(\ell_*=\min\mathcal P_2(a_3)\).
+The global least hit in each of the two original radices is
+\[
+ (A_0,j,B_0,\varepsilon)=(1,0,\ell_*,0),\qquad
+ c_{*,H}=c_{*,F}=2(\ell_*-1),
+\]
+with every original coordinate given by
+\[
+ D_0=a_3/\ell_*,\quad C_0=(1+p\ell_*)/3,\quad
+ u=a_3\ell_*,\quad R=3,\quad S=pa_3,
+\]
+\[
+ (x,y,z)=(a_3,C_0D_0,p\ell_*C_0D_0),\qquad
+ d_y=D_0,\quad d_z=p^2\ell_*^2D_0.
+\]
+Its complete raw-scale fibre is
+\[
+ (A,B,C,D,\varepsilon)
+    =(k,k\ell_*,kC_0,D_0/k^2,0),\qquad k>0,\quad k^2\mid D_0.
+\]
+If \(\mathcal P_2(a_3)=\varnothing\), the entire original
+\(j=0\) hit fibre is empty in both radices; the theorem makes
+no assertion that the later shells are empty.
+
+For a passing boundary source with coprime digits
+\((A_0,j,B_0,\varepsilon)=(m+1,0,1,0)\), its same-tag
+swap has code \(2m\), retaining
+\[
+ D_0=a_3/(m+1),\quad
+ C_0=(m+1+p)/3,\quad C_0^{\leftrightarrow}=(1+p(m+1))/3.
+\]
+The global formula strengthens this to
+\(c_{*,\rho}=2(\ell_*-1)\le2m\), with equality exactly
+when \(m+1=\ell_*\). The swapped ordered witness is
+\((a_3,C_0^{\leftrightarrow}D_0,
+ p(m+1)C_0^{\leftrightarrow}D_0)\), and its source is
+recovered by the proved involution with the same raw scale.
+\end{theorem}
+\begin{proof}
+Here \(a_3\equiv1\pmod3\), so none of its prime factors is
+three. For any raw hit, its coprime coordinates satisfy
+\(A_0B_0\mid a_3\) and, because \(p\equiv1\pmod3\),
+the exact gate \(A_0+B_0\equiv0\pmod3\), independently
+of the retained tag. Both coordinates are units modulo three;
+therefore at least one of \(A_0,B_0\) is two modulo three.
+Its prime factorization contains a prime two modulo three: if
+every factor were one, its product would be one. That prime divides
+\(a_3\), proving necessity and proving that no omitted raw scale
+can create a hit on the failed domain.
+
+Conversely any \(\ell\in\mathcal P_2(a_3)\) gives
+\(A_0=1,B_0=\ell,D_0=a_3/\ell\) and
+\(C_0=(1+p\ell)/3\), all positive integers. Their equation
+\(3C_0=1+p\ell\), together with \(4a_3=p+3\), is exactly
+the original central equation. The preceding witness calculation
+therefore proves it is a hit with the displayed ordering, residuals,
+and full scale fibre. This establishes the occupied-domain
+equivalence before making any least-code assertion.
+
+On this domain select \(\ell_*\). Every hit with \(A_0\ge2\)
+has code at least \(\Lambda_\rho\). A hit with \(A_0=1\)
+and \(j\ge1\) has code at least \(2M_\rho\). The selected
+hit has code
+\(2(\ell_*-1)\le2(a_3-1)<2M_\rho\le\Lambda_\rho\),
+where \(a_3\le M_\rho\) and \(J_\rho\ge1\).
+It therefore precedes all these other digits. The remaining hits
+have \(A_0=1,j=0\), hence \(B_0\mid a_3\) and
+\(B_0\equiv2\pmod3\). Such a positive integer has at least
+one prime factor in \(\mathcal P_2(a_3)\), so
+\(B_0\ge\ell_*\). Equality at the smallest code is attained
+with tag zero, and tag one is one integer later. Thus no code
+precedes \(2(\ell_*-1)\), and the decoder makes its digits
+unique. This proves the actual global minimum in both rectangles,
+including comparison with every later shell.
+
+For the boundary source, its budget says \(m+1\mid a_3\)
+and its gate says \(m+1\equiv2\pmod3\). In particular
+\(m+1\ge2\), and it has a prime factor at least \(\ell_*\)
+and at most \(m+1\). The shell has \(3\mid p-1\), so its
+integral swap and both coefficient formulas follow from the
+four-candidate computation. Substitution into the unchanged radix
+gives the exact swapped code \(2m\). The global formula then
+gives the inequality, and equality of the two displayed integer
+codes is equivalent to \(\ell_*=m+1\). The witness and inverse
+are the specified candidate formulas and preserve every raw scale.
+\end{proof}
+
+\paragraph{Two exact residual-seven companions.}
+For \(R=7\), the exterior same-tag integral restriction is
+precisely \(p\equiv1\) or \(6\pmod7\): the prime seven
+divides \((p-1)(p+1)\) exactly when it divides one of the two
+factors. The tag-changing restriction is precisely
+\(p\equiv1\pmod7\). The maps and fibres in the preceding
+theorems apply on each of these exact residue domains.
+At \(p=373\), \(a=95\), \(R=7\), the two original exterior
+records \((A,B,C,D,\varepsilon)=(19,1,56,5,0)\) and
+\((5,1,54,19,0)\) have \(p\equiv2\pmod7\).
+Their same-tag swaps have respectively
+\[
+ C^{\leftrightarrow}=7088/7,\quad
+ (x',y',z')=(95,35440/7,251163280/7),
+\]
+and
+\[
+ C^{\leftrightarrow}=1866/7,\quad
+ (x',y',z')=(95,35454/7,66121710/7).
+\]
+These follow by substituting the two retained source records in
+\(C^{\leftrightarrow}=(B+pA)/R\),
+\(y'=BC^{\leftrightarrow}D\), and
+\(z'=pAC^{\leftrightarrow}D\). Since
+\(\gcd(7,p^2-1)=\gcd(7,3)=1\), the theorem proves that
+every displayed coefficient and denominator has exact denominator
+seven and that both rational witnesses have reciprocal sum \(4/373\).
+The tag-changing candidates also have denominator seven because
+\(\gcd(7,p-1)=1\). Thus the complete integral orbit of each
+of these exterior records is its singleton, while all three other
+labelled candidates and their inverse maps remain fully specified.
+For completeness, trial division proves the asserted primality of
+373: the remainders at \(2,3,5,7,11,13,17,19\) are respectively
+\(1,1,3,2,10,9,16,12\), all nonzero; these are all primes below
+\(\sqrt{373}<20\).

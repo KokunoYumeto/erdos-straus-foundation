@@ -1,0 +1,181 @@
+\subsection{An arithmetic successor preserving one original denominator}
+\label{sec:exact-audit-fixed-y}
+
+Let \(p=12h+1\) be prime, let
+\(A_p=\{3h+1,\ldots,9h\}\), and choose \(a,a+1\in A_p\).
+Retain the original residuals and supplies
+\[
+ b=a+1,\qquad R=4a-p,\qquad R_b=R+4,\qquad
+ S_a=pa,\qquad S_b=p(a+1),\qquad A=a(a+1).
+\]
+For \(c\in\{a,b\}\), let
+\[
+ \mathcal I_c=\left\{(y,z)\in\mathbb Z_{>0}^2:
+       \frac4p=\frac1c+\frac1y+\frac1z\right\}.
+\]
+Every retained coordinate, including the ordered unmarked denominators,
+is part of these objects.
+
+\begin{theorem}[Exact integral fixed-denominator successor]
+\label{thm:exact-audit-fixed-y}
+Define the two finite domains
+\begin{align*}
+ \mathcal D_a&=\{(y,z)\in\mathcal I_a:A+z\mid A^2\},\\
+ \mathcal D_b^-&=\{(y,z')\in\mathcal I_b:
+                       0<z'<A,\ A-z'\mid A^2\}.
+\end{align*}
+Then
+\begin{equation}\label{eq:exact-audit-fixed-y-map}
+ T_a:\mathcal D_a\longrightarrow\mathcal D_b^-,\qquad
+ (y,z)\longmapsto\left(y,\frac{Az}{A+z}\right)
+\end{equation}
+is a bijection, with inverse
+\begin{equation}\label{eq:exact-audit-fixed-y-inverse}
+ (y,z')\longmapsto\left(y,\frac{Az'}{A-z'}\right).
+\end{equation}
+Every forward value satisfies \(0<z'<\min(z,A)\). Thus this
+successor strictly decreases the original denominator \(z\) on its
+complete integral-return domain; every fibre is a singleton.
+
+For the source reduced positive primitive ratio \(\tau=m/n=y/z\),
+the target ratio is
+\begin{equation}\label{eq:exact-audit-fixed-y-ratio}
+ \tau'=\frac{a(R+4)\tau+p}{(a+1)R}.
+\end{equation}
+Its raw integer pair, reduction factor, and primitive return are exactly
+\begin{equation}\label{eq:exact-audit-fixed-y-gcd}
+ U=a(R+4)m+pn,\quad V=(a+1)Rn,\quad
+ g=\gcd(U,V),\quad (m',n')=(U/g,V/g).
+\end{equation}
+For every source witness, this primitive target obeys
+\[
+ m',n'\mid p(a+1),\qquad R+4\mid m'+n'
+\]
+if and only if the proved divisibility \(A+z\mid A^2\) holds.
+In particular the reduction factor and all target exponent bounds are
+retained, not replaced by projective-ratio existence.
+\end{theorem}
+\begin{proof}
+Keeping the same original \(y\), subtraction of the equations for
+shells \(a\) and \(b=a+1\) forces
+\[
+ \frac1{z'}=\frac1z+\frac1a-\frac1{a+1}
+           =\frac1z+\frac1A.
+\]
+Its unique positive rational solution is \(z'=Az/(A+z)\).
+Conversely this identity proves the original equation at \(b\),
+because
+\[
+ \frac1b+\frac1y+\frac1{z'}
+ =\frac1b+\frac1y+\frac1z+\frac1a-\frac1b=\frac4p.
+\]
+Since \(A,z>0\), both \(z'/z=A/(A+z)<1\) and
+\(z'/A=z/(A+z)<1\), proving strict positivity and both bounds.
+The exact identity
+\begin{equation}\label{eq:exact-audit-fixed-y-factor}
+ z'=A-\frac{A^2}{A+z},\qquad (A+z)(A-z')=A^2
+\end{equation}
+shows, for integer source \(z\), that \(z'\) is an integer exactly
+when \(A+z\mid A^2\). In that case \(A-z'>0\) is a positive
+integer divisor of \(A^2\); thus the forward point lies in
+\(\mathcal D_b^-\).
+
+Conversely, for a point in \(\mathcal D_b^-\), put
+\[
+ z=\frac{Az'}{A-z'}=\frac{A^2}{A-z'}-A.
+\]
+It is a positive integer by \(0<z'<A\) and the displayed divisor
+condition. Its reciprocal satisfies \(1/z=1/z'-1/A\), so
+\[
+ \frac1a+\frac1y+\frac1z
+ =\frac1a+\frac1y+\frac1{z'}-\frac1a+\frac1b=\frac4p.
+\]
+Also \(A+z=A^2/(A-z')\) divides \(A^2\). Thus it lies in
+\(\mathcal D_a\). Equation \eqref{eq:exact-audit-fixed-y-factor}
+proves both inverse compositions. The domains are finite: on the
+source, \(A+z\) is a positive divisor of the fixed positive integer
+\(A^2\), and each \(z\) fixes \(y\) uniquely through the original
+equation; the target has \(1\le z'<A\), again with at most one
+\(y\) for each \(z'\).
+
+The source shell identity gives
+\(y=pa(1+\tau)/R\), since \(y/z=\tau\) and
+\(R/pa=1/y+1/z=(1+\tau)/y\). Consequently
+\begin{align*}
+ \tau'=\frac y{z'}
+ &=\frac yz+\frac yA
+ =\tau+\frac{p(1+\tau)}{(a+1)R}\\
+ &=\frac{((a+1)R+p)\tau+p}{(a+1)R}
+ =\frac{a(R+4)\tau+p}{(a+1)R},
+\end{align*}
+where the last equality uses the original identity \(R+p=4a\).
+This proves \eqref{eq:exact-audit-fixed-y-ratio}; substitution
+\(\tau=m/n\) and division by the explicitly retained \(g\) prove
+\eqref{eq:exact-audit-fixed-y-gcd}. All four integers \(U,V,m',n'\)
+are positive, and \(\gcd(m',n')=1\).
+
+To verify the target budget claim without assuming any lift, recall its
+elementary exact reconstruction. For an integer target witness,
+\[
+ d_b=(R+4)y-pb>0,\qquad e_b=(R+4)z'-pb>0,\qquad
+ d_b e_b=(pb)^2.
+\]
+Positivity follows from \((R+4)/pb=1/y+1/z'\); the product follows
+by expansion of the same identity. Moreover
+\(d_b/(pb)=y/z'=m'/n'\). If \(v_\ell(pb)=e_\ell\), then
+\(0\le v_\ell(d_b)\le2e_\ell\). Reducing \(d_b/(pb)\) gives
+\[
+ v_\ell(m')=\max(v_\ell(d_b)-e_\ell,0),\quad
+ v_\ell(n')=\max(e_\ell-v_\ell(d_b),0),
+\]
+so both are at most \(e_\ell\). Thus \(m',n'\mid pb\).
+Since \(\gcd(pb,R+4)=1\), reducing
+\(d_b\equiv-pb\pmod{R+4}\) gives \(R+4\mid m'+n'\).
+
+In the reverse direction those bounded primitive conditions reconstruct
+positive integers
+\[
+ Y=\frac{pb}{n'}\frac{m'+n'}{R+4},\qquad
+ Z=\frac{pb}{m'}\frac{m'+n'}{R+4}.
+\]
+Their ratio is \(m'/n'\), and their reciprocal sum is
+\((R+4)/(pb)\), exactly the target rational shell. A positive
+ratio \(m'/n'\) and that reciprocal sum determine the ordered rational
+pair uniquely by these same formulas; hence \((Y,Z)=(y,z')\).
+Thus \(z'\) is integral, which by
+\eqref{eq:exact-audit-fixed-y-factor} is precisely \(A+z\mid A^2\).
+This proves both directions of the budget equivalence without an
+unproved arithmetic-return premise.
+\end{proof}
+
+At \(p=13,a=4,R=3\), the actual source pair \((m,n)=(13,2)\)
+gives
+\[
+ (a,y,z)=(4,130,20),\qquad A=20,\qquad
+ (A+z,A-z')=(40,10),\qquad (b,y,z')=(5,130,10).
+\]
+The raw target pair is
+\((U,V)=(4\cdot7\cdot13+13\cdot2,\,5\cdot3\cdot2)
+=(390,30)\); its \(g=30\) gives \((m',n')=(13,1)\).
+The original identities can also be checked over denominators
+\(260\) and \(130\): their reciprocal numerators are respectively
+\(65+2+13=80\) and \(26+1+13=40\).
+
+At \(p=37,a=12,R=11\), the actual full source witness
+\((m,n)=(3,74)\) gives \((a,y,z)=(12,42,1036)\).
+Here
+\[
+ A=156,\quad A+z=1192,\quad A^2=24336
+ =20\cdot1192+496.
+\]
+Thus the exact positive rational successor has
+\[
+ z'=\frac{20202}{149},\quad
+ (U,V)=(3278,10582),\quad g=22,\quad(m',n')=(149,481).
+\]
+Its target supply is \(p(a+1)=481=37\cdot13\), and the retained
+numerator \(149\) does not divide it. Indeed \(481=3\cdot149+34\).
+Even though \(15\mid149+481=630\), the actual divisor budget fails.
+This computes the failure of this specific successor on an occupied
+source shell, while the successful \(p=13\) case proves that its
+integer-return domain is nonempty.

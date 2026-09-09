@@ -1,0 +1,504 @@
+\subsection{The auxiliary torus cover on exact finite arithmetic fibres}
+\label{sec:ns-torus-finite}
+
+The source of the operator in this subsection is the public manuscript
+\emph{Finite Time Blowup for Navier--Stokes}, whose displayed author is
+OpenAI, Section~6, equation~(6.2) on printed page~63 and Lemma~6.2,
+equation~(6.19), on printed page~67.  The preserved source is the PDF
+with SHA-256
+\texttt{8c8a94ad9ac824c8b605b9827cadf7beaca}\allowbreak%
+\texttt{48bd10b380de3cfc872a2c37afa81};
+the associated source pin is
+\texttt{8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538}.
+The following proofs concern this explicitly specified integer operator
+and its arithmetic counting consequences. They do not use a
+Navier--Stokes existence or blowup theorem. Authorship of other results
+is not inferred from this operator calculation.
+
+Retain, in the coordinates and order of the source,
+\[
+ \begin{gathered}
+ J=\begin{pmatrix}3&1\\1&5\end{pmatrix},\qquad \det J=14,\\
+ v_r=(1,1-\sqrt2),\qquad v_t=(\sqrt2-1,1),\\
+ Jv_r=(4-\sqrt2)v_r,\qquad Jv_t=(4+\sqrt2)v_t.
+ \end{gathered}
+\]
+For example the two components of $Jv_r$ are $4-\sqrt2$ and
+$6-5\sqrt2=(4-\sqrt2)(1-\sqrt2)$; those of $Jv_t$ are
+$3\sqrt2-2=(4+\sqrt2)(\sqrt2-1)$ and $4+\sqrt2$.
+No eigenvector is divided by its length. Put
+$\mathbb T=\mathbb R/\mathbb Z$ and
+$\Phi:\mathbb T^2\to\mathbb T^2$, $\Phi(x,y)=(3x+y,x+5y)$.
+
+\begin{theorem}[Directional operators in the unchanged source coordinates]
+\label{thm:ns-directional-intertwining}
+Let $\mathcal P$ be the complex trigonometric polynomials on
+$\mathbb T^2$, and let $\mathcal P_0$ consist of those with zero
+constant Fourier coefficient. For $m\geq0$ define
+$P_m:\mathcal P\to\mathcal P$ by $(P_m f)(Y)=f(J^mY)$.
+Writing $f(Y)=\sum_{n\in\mathbb Z^2}\widehat f(n)
+e^{2\pi i n\cdot Y}$ with finite support gives the exact formula
+\[
+ P_m f(Y)=\sum_n\widehat f(n)e^{2\pi i((J^m)^Tn)\cdot Y}.
+                                                               \tag{T0a}
+\]
+Thus $P_m$ is injective; its image is precisely the polynomials
+whose frequencies belong to $(J^m)^T\mathbb Z^2$, and its inverse
+on that image has coefficient at $n$ equal to the coefficient at
+$(J^m)^Tn$ of the image polynomial. It preserves the constant
+coefficient and the probability Haar average.
+
+For $(v,\lambda)=(v_r,4-\sqrt2)$ or $(v_t,4+\sqrt2)$, define
+$D_v=v\cdot\partial_Y$. Then
+\[
+ D_vP_m=\lambda^mP_mD_v,\qquad
+ D_v^{-1}P_m=\lambda^{-m}P_mD_v^{-1}\quad\text{on }\mathcal P_0,
+                                                               \tag{T0b}
+\]
+where the exact inverse with its original Fourier constant is
+\[
+ D_v^{-1}f(Y)=\sum_{n\ne0}
+       \frac{\widehat f(n)}{2\pi i(v\cdot n)}e^{2\pi i n\cdot Y}.
+                                                               \tag{T0c}
+\]
+The kernel of $D_v:\mathcal P\to\mathcal P$ is exactly the
+constant polynomials; its image is $\mathcal P_0$; and every
+fibre at $f\in\mathcal P_0$ is $D_v^{-1}f+\mathbb C$.
+\end{theorem}
+\begin{proof}
+The equality $n\cdot J^mY=((J^m)^Tn)\cdot Y$ proves (T0a).
+The integer frequency map is injective because $\det J^m=14^m$
+is nonzero. This proves the image, inverse and singleton fibres
+of $P_m$, and the zero frequency is preserved in both directions.
+Integrating each character over $[0,1]^2$ proves the averaging
+claim directly. By the chain rule
+$v\cdot\partial_Y f(J^mY)=(J^mv)\cdot(\partial f)(J^mY)$;
+the displayed eigenvector computations give $J^mv=\lambda^mv$.
+This proves the first identity (T0b) with the actual source vectors.
+For nonzero $n=(n_1,n_2)\in\mathbb Z^2$, neither
+$n_1+(1-\sqrt2)n_2$ nor $(\sqrt2-1)n_1+n_2$ is zero.
+Otherwise, unless both integer coordinates were zero, solving
+that equation would make $\sqrt2$ rational. To recall the exact
+obstruction, a reduced fraction $a/b$ with square two satisfies
+$a^2=2b^2$, forcing $a$ and then $b$ even, a contradiction.
+Each nonconstant Fourier mode of $D_v$ therefore has nonzero
+multiplier $2\pi i(v\cdot n)$. This proves (T0c), the kernel,
+the image and every asserted fibre. On a pulled-back mode the
+denominator is
+$2\pi i(v\cdot(J^m)^Tn)=\lambda^m2\pi i(v\cdot n)$.
+Its reciprocal proves the second identity (T0b).
+\end{proof}
+
+\begin{theorem}[The cover and its complete finite-torsion restriction]
+\label{thm:ns-torus-fibres}
+For a target $(a,b)\in\mathbb T^2$, choose real representatives
+$\widetilde a,\widetilde b$. Its complete fibre under $\Phi$ is
+\[
+ \left\{\left(
+ \frac{5\widetilde a-\widetilde b+k}{14},
+ \widetilde a-3\frac{5\widetilde a-\widetilde b+k}{14}
+ \right)\pmod{\mathbb Z^2}:k=0,\ldots,13\right\}.       \tag{T1}
+\]
+In particular $\Phi$ is surjective and
+$\ker\Phi=\{(k/14,-3k/14):k=0,\ldots,13\}$.
+
+For an integer $N\geq1$, identify $\mathbb T[N]$ with
+$\mathbb Z/N\mathbb Z$ by $j\mapsto j/N+\mathbb Z$, with inverse
+$z\mapsto N\widetilde z\pmod N$ for any real representative
+$\widetilde z$ of $z$. Changing that representative by an integer
+changes $N\widetilde z$ by a multiple of $N$.
+The restriction $J_N$ to
+$(\mathbb Z/N\mathbb Z)^2$ has image and kernel
+\[
+ \begin{split}
+ I_N&=\{(a,b):g\mid5a-b\},\qquad g=\gcd(N,14),\\
+ K_N&=\{(kN/g,-3kN/g)\pmod N:0\leq k<g\}.
+ \end{split}                                                    \tag{T2}
+\]
+Divisibility in (T2) is independent of the chosen integer target
+representatives. A target outside $I_N$ has empty fibre. For a target
+inside $I_N$, put $n=N/g$. If $n=1$ put $x_0=0$; otherwise put
+\[
+ x_0\equiv (14/g)^{-1}(5a-b)/g\pmod n.
+\]
+Its entire fibre is
+\[
+ \{(x_0+kn,a-3x_0-3kn)\pmod N:0\leq k<g\}.           \tag{T3}
+\]
+Consequently $|K_N|=g$ and $|I_N|=N^2/g$.
+\end{theorem}
+\begin{proof}
+The first equation $3x+y=a$ forces $y=a-3x$ in either group.
+Substitution in the second equation gives $14x=5a-b$.
+On $\mathbb T$ this equation has exactly the fourteen solutions in
+(T1): after choosing real representatives the difference from
+$(5\widetilde a-\widetilde b)/14$ belongs to
+$\frac1{14}\mathbb Z/\mathbb Z$. Their first coordinates are distinct.
+Changing representatives leaves the solution equations unchanged, so
+leaves the displayed full fibre unchanged. On $\mathbb Z/N\mathbb Z$
+the equation is solvable precisely when $g\mid5a-b$: necessity follows
+because $g$ divides both $14$ and $N$; sufficiency follows by dividing
+the integer congruence by $g$, since $\gcd(14/g,n)=1$.
+The resulting single class modulo $n$ has exactly the $g$ lifts in
+(T3). For $n=1$ that divided congruence has its single zero class.
+At the zero target this gives (T2)'s kernel. Every occupied fibre has
+$g$ elements and the domain has $N^2$ elements, proving the image
+cardinality. The coordinate identification with torsion commutes with
+$J$ because every matrix entry is an integer.
+\end{proof}
+
+\begin{theorem}[Exact averaging, aliasing, and the complete-preimage repair]
+\label{thm:ns-torus-average}
+For every function $f:(\mathbb Z/N\mathbb Z)^2\to\mathbb C$,
+\[
+ \frac1{N^2}\sum_{x,y\bmod N} f(3x+y,x+5y)
+   =\frac g{N^2}\sum_{(a,b)\in I_N}f(a,b).             \tag{T4}
+\]
+This equals the uniform mean of $f$ on all targets for every $f$ if
+and only if $g=1$. For a frequency $(u,v)\bmod N$, the character
+$\exp(2\pi i(ua+vb)/N)$ pulls back to frequency
+$(3u+v,u+5v)$. Its mean after pullback is one precisely at
+\[
+ (u,v)=(kN/g,-3kN/g)\pmod N,\qquad 0\leq k<g,          \tag{T5}
+\]
+and is zero at every other frequency.
+
+For any finite subgroup $D\subset\mathbb T^2$, let
+$H=\Phi^{-1}(D)$. Then $H$ is a finite subgroup,
+$|H|=14|D|$, and $\Phi:H\to D$ has the complete fibres (T1).
+Define typed linear maps
+\[
+ \begin{aligned}
+ P:\mathbb C^D&\longrightarrow\mathbb C^H,& Pf(h)&=f(\Phi h),\\
+ L:\mathbb C^H&\longrightarrow\mathbb C^D,& Lv(d)&=
+       \frac1{14}\sum_{\Phi h=d}v(h).
+ \end{aligned}                                                   \tag{T6}
+\]
+Then $LP$ is the identity, $PL$ is the projection onto functions
+constant on every deck orbit $h+\ker\Phi$, and
+\[
+ \frac1{|H|}\sum_{h\in H}Pf(h)=\frac1{|D|}\sum_{d\in D}f(d),
+ \qquad
+ \langle Pf,v\rangle_H=\langle f,Lv\rangle_D.          \tag{T7}
+\]
+Here $\langle f,v\rangle_D=|D|^{-1}\sum f\overline v$,
+and likewise on $H$. The full fibre of $L$ at $f$ is
+$Pf+\ker L$, where
+$\ker L=\{v:\sum_{\Phi h=d}v(h)=0\text{ for every }d\}$.
+The map $P$ is injective, and its fibre at $v$ is the singleton
+$\{Lv\}$ if $v$ is deck-invariant, and is empty otherwise.
+\end{theorem}
+\begin{proof}
+Sum $f$ by the fibres (T3) to obtain (T4). If $g=1$ the image is the
+whole group. If $g>1$, the function indicating the zero target has
+pullback mean $g/N^2$ and full target mean $1/N^2$, proving failure
+without any regularity assumption. For characters, the geometric
+sum $\sum_{j=0}^{N-1}\exp(2\pi i kj/N)$ is $N$ if $N\mid k$
+and zero otherwise: multiplication by its ratio leaves the sum
+unchanged, so a ratio different from one forces it to vanish. Apply this to
+both input coordinates and use (T2), since $J$ is symmetric.
+
+The inverse image $H$ is a subgroup because $\Phi$ is a homomorphism.
+It is the disjoint union of the fourteen-element fibres over $D$.
+On every such fibre $Pf$ is the constant $f(d)$, which proves
+$LP=1$ and the first identity (T7). Formula (T6) makes $PLv$ the
+arithmetic mean of $v$ on its deck orbit. It therefore has image
+exactly the deck-invariant functions and squares to itself.
+Summing $f(d)\overline{v(h)}$ on these same fibres proves the
+inner-product identity with the stated factors $|H|=14|D|$.
+The kernel and all claimed fibres follow directly: $L(v-Pf)=0$
+is equivalent to $Lv=f$, while $Pf=v$ implies and, for
+deck-invariant $v$, is implied by $f=Lv$.
+\end{proof}
+
+For the specific subgroup $D=\mathbb T[N]^2$, (T1) gives points
+of $H$ with denominators dividing $14N$, and $|H|=14N^2$.
+Thus (T7) changes the sampling domain to this explicitly given
+preimage; it does not assert that the original $N^2$ samples acquire
+new values. The continuous identity in source equation~(6.19)
+has the same Fourier calculation: on $\mathbb T^2$ a frequency
+$n\in\mathbb Z^2$ has nonzero mean exactly when $n=0$, and
+$J^Tn=0$ exactly when $n=0$ because $\det J=14$.
+For completeness this identity holds for all continuous functions.
+Set $K_M(t)=M^{-1}|\sum_{j=0}^{M-1}e^{2\pi ijt}|^2$.
+Expansion shows that this is a nonnegative trigonometric polynomial;
+integrating its expansion shows its mass is one, since exactly the
+$M$ diagonal terms survive. Convolution with
+$K_M(t_1)K_M(t_2)$ is a trigonometric polynomial and converges
+uniformly to each continuous function. Indeed, outside any fixed
+neighborhood of zero each one-dimensional kernel is bounded by
+$1/(M\sin^2(\pi\delta))$; uniform continuity bounds the integral
+inside that neighborhood and this bound controls the complement.
+The finite Fourier identity therefore passes to the integral limit.
+This argument uses the original torus and its probability Haar
+measure, not a replacement of a finite exponent box by a subgroup.
+
+\begin{proposition}[Powers and product covers, with all lift labels]
+\label{prop:ns-torus-powers}
+For $m\geq0$ the map $\Phi_m=J^m$ has torus fibres of size $14^m$.
+For a target $d$ with real representative $\widetilde d$, the exact
+parametrization is
+\[
+ \mathbb Z^2/J^m\mathbb Z^2\longrightarrow\Phi_m^{-1}(d),
+ \qquad [k]\longmapsto J^{-m}(\widetilde d+k)\pmod{\mathbb Z^2}.
+                                                               \tag{T8}
+\]
+Its inverse sends a real lift $\widetilde h$ to
+$[J^m\widetilde h-\widetilde d]$. In particular a full preimage of
+a finite subgroup $D$ has $14^m|D|$ elements, and (T6)--(T7)
+hold with $\Phi_m$ and $14^m$. For a block diagonal product of $s$
+copies of $J^m$, use $s$ independent copies of (T8); every fibre
+has $14^{ms}$ elements and the averaging statements have that factor.
+
+On fixed $N$-torsion, define $S_0(d)=\{d\}$ and
+$S_{j+1}(d)=\coprod_{w\in S_j(d)}J_N^{-1}(w)$, with every
+one-step fibre given by (T3). Then $S_j(d)=\{h:J_N^jh=d\}$
+with no repeated elements. These exact recursion fibres must be
+used in place of an assumed size $\gcd(N,14)^j$.
+\end{proposition}
+\begin{proof}
+Changing $k$ by $J^m z$ changes (T8) by $z$ and hence changes no
+torus point. Conversely equality of torus points implies this exact
+change in $k$. Every lift in the fibre gives an integral difference
+$J^m\widetilde h-\widetilde d$, proving surjectivity and the inverse.
+One-step surjectivity and fourteen-element fibres imply by induction
+that the fibre of $\Phi_m$ consists of $14^m$ points: the preimages
+of distinct intermediate points are disjoint. This proves the
+cardinality of the quotient as well. Fibre counting now proves all
+averaging assertions exactly as in (T6)--(T7), and independent
+coordinate choices prove the product statement. In the torsion
+recursion each candidate $h$ has the unique intermediate point
+$J_Nh$, so the displayed union is disjoint and the induction gives
+precisely $J_N^{j+1}h=d$. For example, at $N=2$, $J_N$ is the
+matrix whose four entries are one; its square is zero. Its kernel
+has two elements at $j=1$ and four elements at every $j\geq2$,
+which also verifies why the proposed exponential size is incorrect.
+\end{proof}
+
+\begin{lemma}[The actual finite dual and its coordinate embedding]
+\label{lem:ns-finite-dual}
+Let $G$ be a finite abelian multiplicative group and
+$\widehat G=\operatorname{Hom}(G,\{z\in\mathbb C:|z|=1\})$.
+Then $|\widehat G|=|G|$, its characters separate the elements of
+$G$, and
+\[
+ \frac1{|G|}\sum_{\chi\in\widehat G}\chi(u)
+      =\begin{cases}1&u=1,\\0&u\ne1.\end{cases}       \tag{T9}
+\]
+Choose and retain an ordered generating tuple $g_1,\ldots,g_s$ of
+$G$ (the list of all elements is permitted). The map
+\[
+ E:\widehat G\to\mathbb T^s,\qquad
+ E(\chi)_j=\theta_j\pmod{\mathbb Z},\quad
+       e^{2\pi i\theta_j}=\chi(g_j)                  \tag{T10}
+\]
+is an injective homomorphism. Its inverse on the image sends
+$\theta$ to the character
+$g_1^{n_1}\cdots g_s^{n_s}\mapsto
+\exp(2\pi i\sum n_j\theta_j)$. The image consists exactly of
+the vectors for which $\sum n_j\theta_j=0$ in $\mathbb T$
+for every relation $\prod g_j^{n_j}=1$.
+\end{lemma}
+\begin{proof}
+We give the character construction to make the dual and its fibres
+explicit. Suppose a character $\chi$ is already defined on a
+subgroup $B$, and choose $g\notin B$. Let $r$ be the smallest
+positive integer such that $g^r\in B$. Every element of
+$\langle B,g\rangle$ has a unique presentation $bg^j$ with
+$b\in B$ and $0\leq j<r$: equality of two such presentations
+would place $g^{j-j'}$ in $B$. For each of the $r$ distinct complex
+roots $z$ of $z^r=\chi(g^r)$, define
+$\widetilde\chi(bg^j)=\chi(b)z^j$.
+The relation at $j=r$ proves multiplicativity, and restriction and
+the value at $g$ recover $\chi,z$ uniquely. Starting at the trivial
+subgroup and adjoining elements until reaching $G$ constructs
+exactly $\prod r=|G|$ characters, because the subgroup order also
+multiplies by $r$ at each step. To separate $u\ne1$ of order $d$,
+first define the character on $\langle u\rangle$ by
+$u\mapsto e^{2\pi i/d}$, then extend by this construction.
+Multiplication by a character nontrivial at $u$ permutes
+$\widehat G$ and multiplies the sum in (T9) by a number other
+than one; hence that sum is zero. At $u=1$ every summand is one.
+Finally a homomorphism is determined by its values on the retained
+generators. The relation equations in (T10) are exactly what makes
+the inverse formula independent of presentation; multiplication
+then proves it is a character. This proves every image, inverse,
+and singleton-fibre assertion.
+\end{proof}
+
+On $\widehat G^2$ the source matrix is the exact endomorphism
+\[
+ J_G(\chi,\psi)=(\chi^3\psi,\chi\psi^5).             \tag{T11}
+\]
+Under the coordinate embedding
+$E_2(\chi,\psi)=((E\chi)_1,(E\psi)_1,\ldots,
+(E\chi)_s,(E\psi)_s)$ it is the restriction of the $s$-block
+torus map $\Phi^{\oplus s}$. Thus $E_2J_G=\Phi^{\oplus s}E_2$
+coordinate by coordinate, with an explicitly proved inverse for
+$E_2$ on its image. This is the precise morphism between the
+continuous cover and the finite character group.
+
+\begin{theorem}[Exact arithmetic aliasing and the original packet fibres]
+\label{thm:ns-es-packet}
+For a function $f$ on $\widehat G^2$, define
+\[
+ \widehat f(u,v)=\frac1{|G|^2}
+   \sum_{\alpha,\beta\in\widehat G}
+       f(\alpha,\beta)\overline{\alpha(u)\beta(v)}.
+\]
+Then its mean after the finite restriction (T11) is exactly
+\[
+ \frac1{|G|^2}\sum_{\chi,\psi}f(J_G(\chi,\psi))
+   =\sum_{\substack{u\in G\\u^{14}=1}}
+           \widehat f(u,u^{-3}).                     \tag{T12}
+\]
+Each one-coordinate marginal of $J_G$ is uniform, although their
+joint distribution need not be uniform. The complete kernel is
+$\{(\chi,\chi^{-3}):\chi^{14}=1\}$; a target $(\alpha,\beta)$
+is in the image precisely when $\alpha^5\beta^{-1}$ is a
+fourteenth power in $\widehat G$. Its complete fibre consists of
+$(\chi,\alpha\chi^{-3})$ for all fourteenth roots
+$\chi^{14}=\alpha^5\beta^{-1}$.
+
+Retain an original shell $p=12h+1$ prime, $h\geq1$,
+$3h+1\leq a\leq9h$, and $R=4a-p$. Put $G=U(R)$ and retain
+the entire prime exponent box
+\[
+ {\cal B}_a=\prod_{\ell\mid a}\{0,\ldots,2v_\ell(a)\},\quad
+ U_a(e)=\prod_{\ell\mid a}\ell^{e_\ell},\quad
+ c_a(g)=\#\{e\in{\cal B}_a:[U_a(e)]_R=g\}.
+\]
+Here $R\geq3$ is odd, $a<p$, and $\gcd(a,R)=1$, since any
+common prime divisor divides $p=4a-R$ and cannot divide $a<p$.
+In particular every listed prime factor is a unit. Define the
+actual packet function at target $g\in G$ by
+\[
+ F_{a,g}(\chi)=\chi(g^{-1})
+       \prod_{\ell\mid a}\sum_{e=0}^{2v_\ell(a)}\chi([\ell]_R)^e.
+                                                               \tag{T13}
+\]
+The exact one-step count is
+\[
+ c_a(g)=\frac1{|G|}\sum_\chi F_{a,g}(\chi)
+       =\frac1{|G|^2}\sum_{\chi,\psi}F_{a,g}(\chi^3\psi).
+                                                               \tag{T14}
+\]
+Every original exponent is retained in (T13), and the counted
+fibre maps bijectively to the original divisors of $a^2$ congruent
+to $g$, with inverse $u\mapsto(v_\ell(u))_{\ell\mid a}$.
+
+For two such finite packets on this same group, with coefficients
+$c_a,c_b$ and targets $g,h$, where all factors of $b$ are also
+units modulo this same $R$, the exact joint mean is
+\[
+ \frac1{|G|^2}\sum_{\chi,\psi}
+    F_{a,g}(\chi^3\psi)F_{b,h}(\chi\psi^5)
+   =\sum_{\substack{u\in G\\u^{14}=1}}
+          c_a(gu)c_b(hu^{-3}).                       \tag{T15}
+\]
+All summands are nonnegative integers. Their complete pair fibre
+consists of the original exponent pairs $(e,f)$ with
+$[U_a(e)]_R=gu$, $[U_b(f)]_R=hu^{-3}$, indexed by $u^{14}=1$.
+The index is uniquely recovered as $u=g^{-1}[U_a(e)]_R$.
+
+More generally write the first row of the original integer power
+$J^m$ as $(A_m,B_m)$ and set $d_m=\gcd(A_m,B_m)$, with
+$J^0$ having row $(1,0)$ and $d_0=1$. Then
+\[
+ \frac1{|G|^2}\sum_{\chi,\psi}
+    F_{a,g}(\chi^{A_m}\psi^{B_m})
+       =\sum_{u^{d_m}=1}c_a(gu).                     \tag{T16}
+\]
+The powers and their integer row entries are retained, so the
+additional torsion terms are visible at every level.
+\end{theorem}
+\begin{proof}
+Formula (T9) makes the functions $(\alpha,\beta)\mapsto
+\alpha(u)\beta(v)$ an orthonormal family of $|G|^2$ elements
+in the $|G|^2$-dimensional space of all functions on
+$\widehat G^2$. They are therefore a basis and have the displayed
+Fourier coefficients. The pullback of this basis element is
+\[
+ (\chi^3\psi)(u)(\chi\psi^5)(v)
+       =\chi(u^3v)\psi(uv^5).
+\]
+By (T9) its mean is one exactly when $u^3v=uv^5=1$.
+The first equation forces $v=u^{-3}$; substituting in the second
+gives $u^{-14}=1$. This proves (T12). For fixed $\chi$ the first
+output $\chi^3\psi$ runs bijectively through $\widehat G$ as
+$\psi$ varies, so its marginal is uniform. For fixed $\psi$ the
+second output $\chi\psi^5$ likewise runs bijectively as $\chi$
+varies. Solving the first target equation gives
+$\psi=\alpha\chi^{-3}$; substituting in the second yields
+$\beta=\alpha^5\chi^{-14}$, proving the image and full fibres.
+The zero-target fibre yields the stated kernel.
+
+Expanding the finite product (T13) gives precisely
+$\sum_{e\in{\cal B}_a}\chi(g^{-1}[U_a(e)]_R)$.
+Applying (T9) proves its mean is $c_a(g)$; applying the first
+marginal calculation proves the second equality in (T14).
+Unique prime factorization proves the divisor bijection and the
+displayed inverse on every fibre. In the product of the two
+expanded packets, (T9) keeps exactly the exponent pairs whose
+quotients $u=g^{-1}[U_a(e)]_R$ and $v=h^{-1}[U_b(f)]_R$
+satisfy $u^3v=uv^5=1$. The preceding calculation gives precisely
+the indexed fibres in (T15). No summand or exponent allocation is
+discarded. Finally the mean of
+$\chi(u)^{A_m}\psi(u)^{B_m}$ is one precisely when
+$u^{A_m}=u^{B_m}=1$. These equations are equivalent to
+$u^{d_m}=1$: Bezout's integer relation yields one implication,
+and divisibility of both row entries by $d_m$ yields the other.
+Expansion of the single packet now proves (T16).
+\end{proof}
+
+\begin{corollary}[Complete-preimage coefficient extraction and an original-shell discrepancy]
+\label{cor:ns-es-cover-repair}
+Let $D=E_2(\widehat G^2)\subset\mathbb T^{2s}$ and let
+$H_m=\{z\in\mathbb T^{2s}:(J^m)^{\oplus s}z\in D\}$ be
+the full inverse image under the block map $(J^m)^{\oplus s}$. For any function $f$ on
+$\widehat G^2$, the exact identity is
+\[
+ \frac1{|H_m|}\sum_{z\in H_m}
+   f\!\left(E_2^{-1}((J^m)^{\oplus s}z)\right)
+   =\frac1{|G|^2}\sum_{\chi,\psi}f(\chi,\psi),
+ \qquad |H_m|=14^{ms}|G|^2.                           \tag{T17}
+\]
+All lifts are given by the product of (T8), and $E_2^{-1}$ is
+the coordinate formula (T10); thus every map in (T17) is typed
+on its full domain. For $f(\chi,\psi)=F_{a,g}(\chi)$,
+(T17) equals $c_a(g)$; for
+$f(\chi,\psi)=F_{a,g}(\chi)F_{b,h}(\psi)$ it equals
+$c_a(g)c_b(h)$, with no extra terms.
+
+In the original shell $p=13$, $a=4$, $R=3$, the full box is
+$e_2=0,1,2,3,4$. The residues of its five divisors
+$1,2,4,8,16$ are $1,2,1,2,1$. Hence $c_a(1)=3$ and
+$c_a(2)=2$, and both original targets $-4^{-1}$ and $-a$ are
+$2$ in $U(3)$. Formula (T15) with both packets and both targets
+equal to these values is $2\cdot2+3\cdot3=13$, whereas
+the independent target count is $2\cdot2=4$.
+Moreover
+$J^2=\left(\begin{smallmatrix}10&8\\8&26\end{smallmatrix}\right)$,
+so (T16) at $m=2$ is $c_a(2)+c_a(1)=5$, whereas the
+original coefficient remains $2$. Formula (T17) returns $2$
+and $4$, respectively, at every cover level.
+\end{corollary}
+\begin{proof}
+Apply the product-cover assertion of Proposition~\ref{prop:ns-torus-powers}
+to the subgroup $D$. Lemma~\ref{lem:ns-finite-dual} proves
+$|D|=|G|^2$ and the precise inverse used in (T17). Every target
+therefore occurs $14^{ms}$ times, which proves the identity by
+fibre counting. The one-packet conclusion is (T14); the two-packet
+conclusion follows by separating the independent finite sums.
+The displayed residues directly give the two coefficients in
+the example. Both elements of $U(3)$ satisfy $u^{14}=1$;
+in (T15) their two contributions are respectively $4$ and $9$.
+The first row of $J^2$ has gcd $2$, and both group elements
+satisfy $u^2=1$, proving its stated mean. All original five
+exponents and both nonzero coefficient fibres have been listed.
+\end{proof}
+
+The bridge therefore supplies an exact finite sampling rule for the
+original shell packet and an explicit obstruction to transferring
+joint averages or repeated covers on an unchanged finite torsion set.
+It proves neither global shell occupancy nor a PDE assertion.

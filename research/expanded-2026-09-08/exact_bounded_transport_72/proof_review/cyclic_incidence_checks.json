@@ -1,0 +1,641 @@
+{
+  "status": "pass",
+  "augmentation_groups": [
+    {
+      "moduli": [
+        1
+      ],
+      "order": 1,
+      "augmentation_square_smith_diagonal": [],
+      "torsion_order_preserved": true,
+      "all_characters_annihilate_relations": true,
+      "characters_separate": true
+    },
+    {
+      "moduli": [
+        2
+      ],
+      "order": 2,
+      "augmentation_square_smith_diagonal": [
+        2
+      ],
+      "torsion_order_preserved": true,
+      "all_characters_annihilate_relations": true,
+      "characters_separate": true
+    },
+    {
+      "moduli": [
+        3
+      ],
+      "order": 3,
+      "augmentation_square_smith_diagonal": [
+        1,
+        3
+      ],
+      "torsion_order_preserved": true,
+      "all_characters_annihilate_relations": true,
+      "characters_separate": true
+    },
+    {
+      "moduli": [
+        4
+      ],
+      "order": 4,
+      "augmentation_square_smith_diagonal": [
+        1,
+        1,
+        4
+      ],
+      "torsion_order_preserved": true,
+      "all_characters_annihilate_relations": true,
+      "characters_separate": true
+    },
+    {
+      "moduli": [
+        6
+      ],
+      "order": 6,
+      "augmentation_square_smith_diagonal": [
+        1,
+        1,
+        1,
+        1,
+        6
+      ],
+      "torsion_order_preserved": true,
+      "all_characters_annihilate_relations": true,
+      "characters_separate": true
+    },
+    {
+      "moduli": [
+        2,
+        2
+      ],
+      "order": 4,
+      "augmentation_square_smith_diagonal": [
+        1,
+        2,
+        2
+      ],
+      "torsion_order_preserved": true,
+      "all_characters_annihilate_relations": true,
+      "characters_separate": true
+    },
+    {
+      "moduli": [
+        2,
+        4
+      ],
+      "order": 8,
+      "augmentation_square_smith_diagonal": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        4
+      ],
+      "torsion_order_preserved": true,
+      "all_characters_annihilate_relations": true,
+      "characters_separate": true
+    },
+    {
+      "moduli": [
+        3,
+        3
+      ],
+      "order": 9,
+      "augmentation_square_smith_diagonal": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3
+      ],
+      "torsion_order_preserved": true,
+      "all_characters_annihilate_relations": true,
+      "characters_separate": true
+    }
+  ],
+  "dual_exact_sequences": [
+    {
+      "r": 1,
+      "s": 1,
+      "L": 1,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 1,
+      "s": 2,
+      "L": 2,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 1,
+      "s": 3,
+      "L": 3,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 1,
+      "s": 4,
+      "L": 4,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 1,
+      "s": 5,
+      "L": 5,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 1,
+      "s": 6,
+      "L": 6,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 1,
+      "s": 7,
+      "L": 7,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 1,
+      "s": 8,
+      "L": 8,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 2,
+      "s": 1,
+      "L": 2,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 2,
+      "s": 2,
+      "L": 2,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 2,
+      "s": 3,
+      "L": 6,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 2,
+      "s": 4,
+      "L": 4,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 2,
+      "s": 5,
+      "L": 10,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 2,
+      "s": 6,
+      "L": 6,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 2,
+      "s": 7,
+      "L": 14,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 2,
+      "s": 8,
+      "L": 8,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 3,
+      "s": 1,
+      "L": 3,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 3,
+      "s": 2,
+      "L": 6,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 3,
+      "s": 3,
+      "L": 3,
+      "obstruction_order": 3,
+      "restriction_fibre_size": 3
+    },
+    {
+      "r": 3,
+      "s": 4,
+      "L": 12,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 3,
+      "s": 5,
+      "L": 15,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 3,
+      "s": 6,
+      "L": 6,
+      "obstruction_order": 3,
+      "restriction_fibre_size": 3
+    },
+    {
+      "r": 3,
+      "s": 7,
+      "L": 21,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 3,
+      "s": 8,
+      "L": 24,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 4,
+      "s": 1,
+      "L": 4,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 4,
+      "s": 2,
+      "L": 4,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 4,
+      "s": 3,
+      "L": 12,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 4,
+      "s": 4,
+      "L": 4,
+      "obstruction_order": 4,
+      "restriction_fibre_size": 4
+    },
+    {
+      "r": 4,
+      "s": 5,
+      "L": 20,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 4,
+      "s": 6,
+      "L": 12,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 4,
+      "s": 7,
+      "L": 28,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 4,
+      "s": 8,
+      "L": 8,
+      "obstruction_order": 4,
+      "restriction_fibre_size": 4
+    },
+    {
+      "r": 5,
+      "s": 1,
+      "L": 5,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 5,
+      "s": 2,
+      "L": 10,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 5,
+      "s": 3,
+      "L": 15,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 5,
+      "s": 4,
+      "L": 20,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 5,
+      "s": 5,
+      "L": 5,
+      "obstruction_order": 5,
+      "restriction_fibre_size": 5
+    },
+    {
+      "r": 5,
+      "s": 6,
+      "L": 30,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 5,
+      "s": 7,
+      "L": 35,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 5,
+      "s": 8,
+      "L": 40,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 6,
+      "s": 1,
+      "L": 6,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 6,
+      "s": 2,
+      "L": 6,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 6,
+      "s": 3,
+      "L": 6,
+      "obstruction_order": 3,
+      "restriction_fibre_size": 3
+    },
+    {
+      "r": 6,
+      "s": 4,
+      "L": 12,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 6,
+      "s": 5,
+      "L": 30,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 6,
+      "s": 6,
+      "L": 6,
+      "obstruction_order": 6,
+      "restriction_fibre_size": 6
+    },
+    {
+      "r": 6,
+      "s": 7,
+      "L": 42,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 6,
+      "s": 8,
+      "L": 24,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 7,
+      "s": 1,
+      "L": 7,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 7,
+      "s": 2,
+      "L": 14,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 7,
+      "s": 3,
+      "L": 21,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 7,
+      "s": 4,
+      "L": 28,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 7,
+      "s": 5,
+      "L": 35,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 7,
+      "s": 6,
+      "L": 42,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 7,
+      "s": 7,
+      "L": 7,
+      "obstruction_order": 7,
+      "restriction_fibre_size": 7
+    },
+    {
+      "r": 7,
+      "s": 8,
+      "L": 56,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 8,
+      "s": 1,
+      "L": 8,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 8,
+      "s": 2,
+      "L": 8,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 8,
+      "s": 3,
+      "L": 24,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 8,
+      "s": 4,
+      "L": 8,
+      "obstruction_order": 4,
+      "restriction_fibre_size": 4
+    },
+    {
+      "r": 8,
+      "s": 5,
+      "L": 40,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 8,
+      "s": 6,
+      "L": 24,
+      "obstruction_order": 2,
+      "restriction_fibre_size": 2
+    },
+    {
+      "r": 8,
+      "s": 7,
+      "L": 56,
+      "obstruction_order": 1,
+      "restriction_fibre_size": 1
+    },
+    {
+      "r": 8,
+      "s": 8,
+      "L": 8,
+      "obstruction_order": 8,
+      "restriction_fibre_size": 8
+    }
+  ],
+  "coefficient_ring": "Z; Smith calculations keep finite torsion, and characters take values inQ/Z.",
+  "p241_nonzero_obstruction_trace": "1/2modZ",
+  "p37_zero_integral_obstruction_empty_bounded_fibre": true,
+  "incidence_cases": [
+    {
+      "M": 6,
+      "a": 0,
+      "U": 1,
+      "V": 60,
+      "input_count": 10,
+      "incidence_count": 6,
+      "output_count": 6,
+      "max_candidate_prime": 5306113,
+      "noncoprime_passing_branch": false
+    },
+    {
+      "M": 18,
+      "a": 6,
+      "U": 1,
+      "V": 120,
+      "input_count": 7,
+      "incidence_count": 6,
+      "output_count": 6,
+      "max_candidate_prime": 168883021,
+      "noncoprime_passing_branch": false
+    },
+    {
+      "M": 222,
+      "a": 60,
+      "U": 1,
+      "V": 750,
+      "input_count": 4,
+      "incidence_count": 7,
+      "output_count": 4,
+      "max_candidate_prime": 170918569,
+      "noncoprime_passing_branch": true
+    },
+    {
+      "M": 438,
+      "a": 0,
+      "U": 1,
+      "V": 900,
+      "input_count": 2,
+      "incidence_count": 1,
+      "output_count": 1,
+      "max_candidate_prime": 588865158001,
+      "noncoprime_passing_branch": false
+    },
+    {
+      "M": 12,
+      "a": 6,
+      "U": 6,
+      "V": 90,
+      "input_count": 8,
+      "incidence_count": 6,
+      "output_count": 6,
+      "max_candidate_prime": 1075441,
+      "noncoprime_passing_branch": false
+    }
+  ],
+  "source_factor_obstruction": {
+    "p": 13,
+    "X": 635156121600,
+    "q": 73,
+    "Dq": "19/2"
+  },
+  "limitations": "Finite exact tests supplement the universal proofs. Incidence comparisons enumerate all prime divisors of each tested input; no universal nonempty-output assertion is made."
+}

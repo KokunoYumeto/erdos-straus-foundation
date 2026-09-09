@@ -1,0 +1,603 @@
+\paragraph{Contribution provenance.} The original positivity-code and Euclid/prime-production material is credited to \texttt{u/UmbrellaCorp\_HR} \cite{UmbrellaContribution}. The named intermediate project calculations \cite{PositivityTransport} below retain that lineage; they do not replace the original contributor's credit.
+
+% Wrapper-free original proof. Requires the definitions and macros of
+% bounded_transport.tex, input_output_incidence.tex and unary_boolean_transport.tex.
+\section{Raw scales, prime incidence, and the original first-half hit code}
+
+The source \emph{Transport into the colleague's stronger finite-code
+positivity layers}, equations (PCT1)--(PCT11), was read in full.
+The source \emph{Fixed TCHISLA rays and their exact intersection with
+fixed divisor rays}, section \emph{The original factor scale and its
+complete coordinate fibre}, was also read in full.  We retain their
+raw scale and the PCT first-half radix.  The proofs here give their
+exact composition with the bounded input--output incidence and with
+the different full-range unary radix used earlier in this text.
+
+\begin{theorem}[Raw factor scale with every original coordinate retained]
+\label{thm:raw-scale-fibre}
+Fix the original prime \(p=12h+1\), \(h\ge1\).
+Let \(\mathcal T_p^{\rm raw}\) be the set of all tuples
+\((A,B,C,D,\varepsilon)\) with \(A,B,C,D\in\Z_{>0}\) and
+\(\varepsilon\in\{0,1\}\), satisfying
+\[
+ 4ABCD=A+p^{1-\varepsilon}B+pC,
+ \qquad a=ABD\in A_p=\{3h+1,\ldots,9h\}.
+\]
+Let \(\mathcal T_p^{\rm cop}\) be its sublocus \(\gcd(A,B)=1\).
+There is a bijection with explicit inverse
+\[
+ \mathcal T_p^{\rm raw}\longleftrightarrow
+ \{(A_0,B_0,C_0,D_0,\varepsilon,k):
+       (A_0,B_0,C_0,D_0,\varepsilon)\in\mathcal T_p^{\rm cop},
+       \ k>0,\ k^2\mid D_0\},
+\]
+given by
+\[
+ k=\gcd(A,B),\qquad
+ (A_0,B_0,C_0,D_0)=(A/k,B/k,C/k,k^2D),
+\]
+and
+\[
+ (A,B,C,D)=(kA_0,kB_0,kC_0,D_0/k^2).
+\]
+The projection forgetting only \(k\) has the complete fibre
+\(\{k>0:k^2\mid D_0\}\). Its size is
+\[
+ \prod_{\ell\mid D_0}(\lfloor v_\ell(D_0)/2\rfloor+1).
+\]
+The bijection retaining \(k\) has singleton fibres.
+
+The following are equalities of the original ordered coordinates:
+\begin{align*}
+ a&=ABD=A_0B_0D_0,& R&=4a-p,&S&=pa,\\
+ u&=B^2D=B_0^2D_0,&
+ (x,y,z)&=(ABD,p^\varepsilon ACD,pBCD)\\
+ &&&=(A_0B_0D_0,p^\varepsilon A_0C_0D_0,pB_0C_0D_0),\\
+ d_z&=Rz-S=p^{2-\varepsilon}B^2D,
+ &d_y&=Ry-S=p^\varepsilon A^2D,\\
+ g_{\rm actual}&=\gcd(a,u)=kBD=B_0D_0.
+\end{align*}
+Thus every labelled cross residual \(4vw-p(v+w)\) for two
+of the original denominators is unchanged.  The factor quotients
+and affine numerators satisfy
+\[
+ \frac{B+p^\varepsilon C}{A}
+   =\frac{B_0+p^\varepsilon C_0}{A_0},\quad
+ BCD=B_0C_0D_0,\quad
+ \frac{A+pC}{B}=\frac{A_0+pC_0}{B_0},
+\]
+\[
+ \Omega=k\Omega_0,\quad\Theta=k\Theta_0,
+ \quad \Omega+q\Theta=k(\Omega_0+q\Theta_0),
+\]
+where \(\Omega_0=A_0+\varepsilon B_0\) and
+\(\Theta_0=C_0+(1-\varepsilon)B_0\).
+The original ratio has reduced pair
+\((A_0,p^{1-\varepsilon}B_0)\), whose residual gate quotient is
+\(C_0=C/k\).  In particular none of these maps replaces a raw
+tuple by an unlabelled coprime tuple.
+\end{theorem}
+\begin{proof}
+Since \(A,B\le AB\le ABD=a<p\), one has \(1\le k<p\)
+and \(\gcd(k,p)=1\).  The original equation modulo \(k\)
+gives \(k\mid pC\); Bezout therefore gives \(k\mid C\).
+All proposed coordinates are positive integers, and
+\(\gcd(A_0,B_0)=1\).  The exact residual identity is
+\[
+ 4ABCD-A-p^{1-\varepsilon}B-pC
+ =k\bigl(4A_0B_0C_0D_0-A_0-p^{1-\varepsilon}B_0-pC_0\bigr).
+\]
+Its positive factor \(k\) shows equivalence of the two equations,
+while \(ABD=A_0B_0D_0\) preserves the original shell bound.
+Conversely the square-divisor condition makes \(D_0/k^2\) a
+positive integer, the displayed residual vanishes, and
+\(\gcd(kA_0,kB_0)=k\).  Both compositions therefore recover
+every coordinate, including the retained scale.  Unique prime
+factorization identifies its full fibre with
+\(0\le v_\ell(k)\le\lfloor v_\ell(D_0)/2\rfloor\), proving
+the count, including the empty prime product when \(D_0=1\).
+
+Substitution proves the displayed equalities for the denominators,
+\(a,R,S,u\), and all three factor quotients.  To check the oriented
+divisor residuals, the original equation gives
+\(RC=A+p^{1-\varepsilon}B\).  Multiplying this by \(pBD\)
+and subtracting \(pABD\) gives \(Rz-S=p^{2-\varepsilon}B^2D\).
+Multiplying instead by \(p^\varepsilon AD\) and subtracting
+\(pABD\) gives \(Ry-S=p^\varepsilon A^2D\).
+Also \(\gcd(ABD,B^2D)=BD\gcd(A,B)=kBD=B_0D_0\).
+Each cross residual is unchanged because its two labelled
+denominators and the original prime are unchanged.  The affine
+numerator formulas follow by inserting \(kA_0,kB_0,kC_0\)
+in their definitions.  Finally
+\[
+ \frac yz=\frac{A_0}{p^{1-\varepsilon}B_0},\qquad
+ A_0+p^{1-\varepsilon}B_0=RC_0.
+\]
+The fraction is reduced because \(\gcd(A_0,B_0)=1\) and
+\(A_0<p\), so \(p\nmid A_0\).  This proves the exact primitive
+pair and the gate quotient without dropping its scale conversion.
+In the original reconstruction \eqref{eq:reconstruct}, the coordinate
+named \(d\) is precisely \(d_y=Ry-S\). The other oriented coordinate
+is its explicit complement: \(d_y d_z=S^2\), as their displayed
+products give \(p^2A^2B^2D^2=S^2\). Thus
+\(d_z=S^2/d_y\), with the same inverse formula in the other direction;
+no original orientation or name for \(d\) is reassigned.
+The ray source's ordered labels \((d,e)\) correspond to
+\((d_z,d_y)\); the original reconstruction order is
+\((d_y,d_z)\). Their exact change of order is
+\((r,s)\mapsto(s,r)\) on \(\{(r,s)\in\Z_{>0}^2:rs=S^2\}\),
+whose square is the identity and whose fibres are singletons.
+\end{proof}
+
+\begin{theorem}[Exact scale restriction of the fixed primitive ray]
+\label{thm:raw-scale-period}
+Fix a coprime seed \((A_0,B_0,C_0,D_{0,p},\varepsilon)\)
+in \(\mathcal T_p^{\rm cop}\).  Put
+\[
+ \begin{gathered}
+ K_0=4A_0B_0C_0,\quad
+ \Theta_0=C_0+(1-\varepsilon)B_0,\quad
+ \Omega_0=A_0+\varepsilon B_0,\\
+ g_0=\gcd(K_0,\Theta_0),\quad m_0=K_0/g_0,\quad w=\Theta_0/g_0.
+ \end{gathered}
+\]
+Retain any \(k>0\) with \(k^2\mid D_{0,p}\), and the associated
+fixed raw parameters \((kA_0,kB_0,kC_0,\varepsilon)\).
+For every integer \(q\), keep the original rational functions
+\[
+ D_0(q)=\frac{\Omega_0+q\Theta_0}{K_0},\qquad
+ D_k(q)=\frac{\Omega_0+q\Theta_0}{k^2K_0}.
+\]
+Their complete integrality statements are
+\[
+ D_0(q)\in\Z\ \Longleftrightarrow\ q\equiv p\pmod{m_0},
+ \qquad
+ D_k(q)\in\Z\ \Longleftrightarrow\ D_0(q)\in k^2\Z
+ \Longleftrightarrow\ q\equiv p\pmod{m_k},
+\]
+where
+\begin{equation}\label{eq:raw-scale-period}
+ m_k=\frac{k^2K_0}{\gcd(k^2K_0,\Theta_0)},\qquad
+ \frac{m_k}{m_0}=\frac{k^2}{\gcd(k^2,w)}.
+\end{equation}
+Thus the full raw return is the specified subray of the primitive
+ray, not an enlargement of the raw domain.  Intersecting with
+\(q\ge p\), \(q\equiv1\pmod{12}\) gives exactly
+\[
+ q=p+\lcm(12,m_k)t,\qquad t\in\Z_{\ge0}.
+\]
+Primality, and any further output predicates, remain exact tests on
+these same integers.
+
+For every such positive returned \(q\), the raw tuple and the
+coprime tuple give the same original ordered integer witness and
+the same \(a_q,R_q,S_q,u_q\).  The scale inverse is exactly
+\(D_k(q)=D_0(q)/k^2\).  At a fixed primitive returned input \(q\),
+the full set of scales coming from this fixed primitive seed is
+\[
+ \mathcal K_{p,q}=
+ \{k>0:k^2\mid\gcd(D_{0,p},D_0(q))\}.
+\]
+It has the square-divisor count of this displayed gcd.
+\end{theorem}
+\begin{proof}
+The primitive seed equation is
+\(K_0D_{0,p}=\Omega_0+p\Theta_0\).  Therefore
+\[
+ D_0(q)=D_{0,p}+(q-p)\Theta_0/K_0.
+\]
+Because \(\gcd(m_0,w)=1\), its last summand is an integer
+exactly when \(m_0\mid q-p\).  For the retained \(k\), the
+seed value \(D_k(p)=D_{0,p}/k^2\) is already an integer, so
+\[
+ D_k(q)-D_k(p)=(q-p)\Theta_0/(k^2K_0)
+\]
+is integral exactly when \(m_k\mid q-p\), by division by the
+positive gcd.  The equality \(D_0(q)=k^2D_k(q)\) proves both
+directions of the square-divisibility statement, including when
+the original primitive rational value is not an integer.
+
+The period ratio follows by a complete gcd calculation:
+\[
+ \gcd(k^2K_0,\Theta_0)
+ =g_0\gcd(k^2m_0,w)=g_0\gcd(k^2,w).
+\]
+The last equality follows prime by prime, since no prime divides
+both \(m_0\) and \(w\).  Substitution gives
+\eqref{eq:raw-scale-period}.  Its ratio is a positive integer
+dividing \(k^2\), so every raw return also passes the primitive
+period.  Since the seed satisfies \(p\equiv1\pmod{12}\),
+the simultaneous congruences are exactly divisibility of \(q-p\)
+by \(\lcm(12,m_k)\); \(q\ge p\) gives the stated parameter
+and its inverse \((q-p)/\lcm(12,m_k)\).
+
+For \(q\ge p>0\), the numerator \(\Omega_0+q\Theta_0\) is
+positive, hence each integral returned \(D_k(q)\) is positive.
+Apply the coordinate identities of Theorem~\ref{thm:raw-scale-fibre}
+at this input: their direct substitutions are valid for the fixed
+positive returned integer \(q\) and preserve all listed coordinates.
+The original identity at \(q\) gives
+\[
+ \frac1{A_0B_0D_0(q)}+
+ \frac1{q^\varepsilon A_0C_0D_0(q)}+
+ \frac1{qB_0C_0D_0(q)}=\frac4q,
+\]
+by the same common denominator computation as
+\eqref{eq:incidence-witness}.  If \(q\) is prime and
+\(q\equiv1\pmod{12}\), its first denominator lies in the original
+full \(A_q\): the exact formula
+\[
+ \frac{a_q}{q}=\frac{\Theta_0}{4C_0}
+                       +\frac{\Omega_0}{4C_0q}
+\]
+is greater than \(1/4\) and at most \(a_p/p\), which is at most
+\(3/4-3/(4p)\le3/4-3/(4q)\).
+Integrality then gives the original full integer endpoints.
+Finally a retained scale must satisfy its seed condition
+\(k^2\mid D_{0,p}\) and its exact return condition
+\(k^2\mid D_0(q)\); these are equivalent to their displayed gcd
+divisibility.  Prime factorization gives its complete count and
+the scale reconstruction inverse.
+\end{proof}
+
+\begin{theorem}[First-half gate and exact change of unary radix]
+\label{thm:raw-first-half-code}
+Use the fixed primitive seed and ray above, and a returned prime
+\(q\ge p\), \(q\equiv1\pmod{12}\).
+Put \(a_q=A_0B_0D_0(q)\), \(R_q=4a_q-q\), \(S_q=qa_q\).
+The exact first-half return condition is
+\begin{equation}\label{eq:raw-first-half-gate}
+ 2a_q\le q-1
+ \quad\Longleftrightarrow\quad
+ q(2C_0-\Theta_0)\ge\Omega_0+2C_0.
+\end{equation}
+If \(2C_0-\Theta_0\le0\), no positive input passes it.
+Otherwise it is precisely
+\[
+ q\ge\left\lceil\frac{\Omega_0+2C_0}{2C_0-\Theta_0}\right\rceil.
+\]
+This gate is invariant under every retained raw scale.  If the
+original seed is already first-half, it passes for every returned
+\(q\ge p\); otherwise the computed gate remains in the domain.
+
+On this gate retain the PCT radix, with names distinguished from
+both the input CRT modulus and the full-range radix:
+\[
+ M_H=(q-1)/2,\quad J_H=(q-1)/4,\quad
+ \Lambda_H=(q-1)^2/4=2M_HJ_H,\quad N_H=M_H\Lambda_H.
+\]
+The exact PCT hit of this ray is
+\begin{equation}\label{eq:raw-pct-code}
+ j=(4a_q-q-3)/4,\qquad
+ c_H=(A_0-1)\Lambda_H+(q-1)j+2(B_0-1)+\varepsilon.
+\end{equation}
+Here \(0\le j<J_H\), \(1\le A_0,B_0\le M_H\), and
+\[
+ A_0B_0\mid a_q,\quad \gcd(A_0,B_0)=1,\quad
+ R_q\mid A_0+q^{1-\varepsilon}B_0,
+\]
+with exact quotients \(D_0(q)\) and \(C_0\).
+
+For every code in this PCT rectangle, its inverse is the following
+successive division, with all remainders retained:
+\[
+ A=1+\lfloor c_H/\Lambda_H\rfloor,\quad
+ v=c_H-(A-1)\Lambda_H,\quad j=\lfloor v/(q-1)\rfloor,
+\]
+\[
+ r=v-(q-1)j,\qquad B=1+\lfloor r/2\rfloor,
+ \qquad\varepsilon=r-2\lfloor r/2\rfloor.
+\]
+For every \(0\le c<N_H\), let
+\((A(c),j(c),B(c),\varepsilon(c))\) be that exact decoder and put
+\[
+ R(c)=4j(c)+3,\qquad a(c)=(q+R(c))/4.
+\]
+Define the total bit \(\chi_H(c)\) to be one precisely when
+\[
+ A(c)B(c)\mid a(c),\qquad \gcd(A(c),B(c))=1,\qquad
+ R(c)\mid A(c)+q^{1-\varepsilon(c)}B(c),
+\]
+and zero otherwise. Define its total least-hit selector by the original product
+\[
+ c_{*,H}(q)=\sum_{n=0}^{N_H-1}\prod_{c=0}^n(1-\chi_H(c)).
+\]
+Then the displayed witness gives
+\[
+ 0\le c_{*,H}(q)\le c_H<A_0\Lambda_H.
+\]
+For every integer \(1\le r_0\le M_H\), the existence of a hit
+with \(A\le r_0\) is equivalent to
+\(c_{*,H}(q)<r_0\Lambda_H\).
+The value \(N_H\) occurs exactly when there is no hit and is
+never decoded as a candidate.  A specified witness has
+\(A_0\le2\) exactly when its own code is below
+\(2\Lambda_H\); this implies that same least-hit bound but its
+failure does not exclude another hit in the first two layers.
+
+Write \(q=12h_q+1\) and retain separately the earlier full radix
+\[
+ M_F=9h_q,\quad J_F=6h_q,\quad\Lambda_F=2M_FJ_F,
+ \quad N_F=M_F\Lambda_F.
+\]
+For an arbitrary full-range code \(c_F\), decode
+\((j,A,B,\varepsilon)\) in the full radix and define its own
+shell \(a(c_F)=(q+4j+3)/4\).
+There is an exact bijection from full-range hit codes satisfying
+\(2a(c_F)\le q-1\) onto PCT hit codes, given by
+\[
+ c_F\longmapsto(A-1)\Lambda_H+(q-1)j+2(B-1)+\varepsilon.
+\]
+Its inverse decodes the PCT radix and
+uses \((A-1)\Lambda_F+2M_Fj+2(B-1)+\varepsilon\).
+Both maps have singleton fibres and preserve the full tuple,
+\(a_q,R_q,S_q,C,D,u\), the original ordered witness, and every
+predicate on those retained coordinates.  A raw scale is attached
+separately; forgetting it has exactly the scale fibre already proved.
+Their exact numerical difference is
+\[
+ \Lambda_F=3\Lambda_H,\qquad
+ c_F-c_H=2(A-1)\Lambda_H+\frac{q-1}{2}j.
+\]
+\end{theorem}
+\begin{proof}
+The exact equality \(a_q=(\Omega_0+q\Theta_0)/(4C_0)\)
+makes \(2a_q\le q-1\) equivalent, after multiplying by the
+positive integer \(2C_0\), to
+\(\Omega_0+q\Theta_0\le2C_0q-2C_0\).
+This is \eqref{eq:raw-first-half-gate}.  Its right side requires
+a positive number \(\Omega_0+2C_0\); hence a nonpositive
+coefficient \(2C_0-\Theta_0\) permits no positive \(q\).
+For a positive coefficient, integer division gives exactly the
+displayed ceiling.  If the seed passes at \(p\), that coefficient
+is positive and the inequality remains true for every \(q\ge p\).
+The first denominator is unchanged by raw scaling, proving gate
+invariance without an extra range assumption.
+
+The full-shell bounds proved above give \(a_q>q/4\), so the
+integer \(R_q=4a_q-q\equiv3\pmod4\) is at least three.
+The first-half bound gives \(R_q\le q-2\), and consequently
+\[
+ 0\le j=(R_q-3)/4\le(q-5)/4=J_H-1.
+\]
+Also \(a_q=A_0B_0D_0(q)\le M_H\), so
+\(A_0,B_0\le M_H\) and \(A_0B_0\mid a_q\).
+The primitive tuple equation at \(q\) gives
+\(R_qC_0=A_0+q^{1-\varepsilon}B_0\), with \(C_0>0\).
+These prove precisely the three hit tests and their quotients.
+
+For arbitrary rectangle data the digit
+\(2(B-1)+\varepsilon\) runs through
+\(0,\ldots,2M_H-1=q-2\) exactly once.
+Together with \(j=0,\ldots,J_H-1\) it gives every remainder
+\(0,\ldots,(q-1)J_H-1=\Lambda_H-1\) exactly once.
+The outer digit \(A-1\) therefore codes exactly
+\(0,\ldots,N_H-1\), and the displayed successive divisions
+recover all four original digits.  In particular the ray's hit
+has code less than \(A_0\Lambda_H\).
+If the least hit is \(c_0\), the product defining the selector
+is one for precisely \(n<c_0\) and zero for \(n\ge c_0\).
+Its sum is \(c_0\); if none exists, all \(N_H\) terms are one.
+Thus the proved hit gives the claimed upper bound.  The first
+\(r_0\) layers consist exactly of codes below \(r_0\Lambda_H\).
+Their occupancy is therefore equivalent to the least-hit inequality,
+including the failure sentinel case.  The same digit bound proves
+the statement about the specified first-two-layer witness.
+
+For the change of radix, a full-range hit with first-half shell has
+\(j<J_H=3h_q\) and \(A,B\le a_q\le M_H=6h_q\)
+by its divisor condition.  Hence its decoded digits belong to the
+PCT rectangle.  Conversely all PCT hit digits lie in the full
+rectangle because \(J_H\le J_F\), \(M_H\le M_F\), and their
+first denominator is \(3h_q+j+1\le6h_q=M_H\).
+The shell and hit tests are identical on these same digits.
+Both decoding algorithms were proved inverse to their respective
+radix formulas, so decode--recode in either order is the identity
+on the digits and on the corresponding codes.  On a hit the exact
+quotients are \(D=a_q/(AB)\),
+\(C=(A+q^{1-\varepsilon}B)/R_q\), and \(u=B^2D\).
+These are computed from the same preserved digits and shell.
+The ordered denominator formulas consequently agree in both
+presentations.  A predicate on those coordinates has the same truth
+value under the bijection.  The raw scale is not one of the code
+digits; its complete inverse choices remain those of
+Theorems~\ref{thm:raw-scale-fibre} and \ref{thm:raw-scale-period}.
+Finally \(M_F=9h_q\), \(J_F=6h_q\), \(M_H=6h_q\),
+\(J_H=3h_q\) give \(\Lambda_F=108h_q^2=3\Lambda_H\).
+Subtracting the two complete code formulas retains the same inner
+digit and gives
+\(c_F-c_H=2(A-1)\Lambda_H+(18h_q-12h_q)j\),
+which is exactly the displayed difference.
+\end{proof}
+
+\begin{theorem}[The complete scaled incidence of first-half hits]
+\label{thm:raw-scale-hit-incidence}
+Fix the primitive seed of Theorem~\ref{thm:raw-scale-period},
+the exact bounded input set \(\mathcal X\) of
+Theorem~\ref{thm:input-output-incidence}, and its original input
+data, bounds and output modulus \(\mathcal D\).
+Put \(\mathcal K_p=\{k>0:k^2\mid D_{0,p}\}\).
+The complete scaled first-half incidence is
+\[
+ \mathcal I_H^{\rm raw}=
+ \left\{(k,X,q):
+ \begin{array}{l}
+ k\in\mathcal K_p,\quad X\in\mathcal X,\quad q\text{ prime},
+       \quad p<q\le N(V),\quad q\mid N(X),\\
+ q\equiv1\pmod{12},\quad q\equiv1\pmod{\mathcal D},
+       \quad q\equiv p\pmod{m_k},\\
+ q(2C_0-\Theta_0)\ge\Omega_0+2C_0
+ \end{array}\right\}.
+\]
+It has a bijection onto the graph recording, in addition to all
+fixed original data and \(k,X,q\), the following complete output:
+\[
+ \begin{gathered}
+ D_0(q),\quad
+ (A,B,C,D,\varepsilon)
+       =(kA_0,kB_0,kC_0,D_0(q)/k^2,\varepsilon),\\
+ (a_q,y_q,z_q)=(A_0B_0D_0(q),
+      q^\varepsilon A_0C_0D_0(q),qB_0C_0D_0(q)),\\
+ R_q=4a_q-q,\quad S_q=qa_q,\quad u_q=B_0^2D_0(q),
+ \quad j=(4a_q-q-3)/4,\quad c_H,\quad c_F.
+ \end{gathered}
+\]
+Here \(c_H,c_F\) are the two distinct codes of
+Theorem~\ref{thm:raw-first-half-code}.  The graph inverse is
+projection to the retained fixed data and \(k,X,q\), and its
+fibres are singletons.
+
+For a fixed \(k\), the exact projection to \((X,q)\) is the
+input--output incidence theorem with the raw period \(m_k\),
+restricted by the computed first-half gate.  In particular for
+every retained \(q\) its input fibre is the disjoint root-branch
+union \eqref{eq:incidence-root-branch}, with precisely the same
+original \(a_{\rm in},M,U,V\); every original input constraint
+remains imposed.  For fixed \((k,X)\), its fibre is exactly the
+distinct prime divisors of \(N(X)\) satisfying all the displayed
+output tests for that \(k\).
+
+Let \(\mathcal I_H^0\) be the primitive incidence, obtained by
+using \(m_0\) and the same first-half gate and other constraints.
+Forgetting \(k\) maps \(\mathcal I_H^{\rm raw}\) onto
+\(\mathcal I_H^0\), with exact fibre
+\[
+ \mathcal K_{p,q}
+ =\{k>0:k^2\mid\gcd(D_{0,p},D_0(q))\}
+ \quad\text{over }(X,q).
+\]
+This projection has a specified section \(k=1\); it does not
+assert that one fixed raw \(k>1\) returns on the entire primitive
+ray.  Consequently the two exact bounded counts are
+\[
+ |\mathcal I_H^{\rm raw}|
+ =\sum_{(X,q)\in\mathcal I_H^0}
+   \prod_{\ell\mid\gcd(D_{0,p},D_0(q))}
+       \left(\left\lfloor
+          \frac{v_\ell(\gcd(D_{0,p},D_0(q)))}2
+        \right\rfloor+1\right),
+\]
+and the sum over \(k\in\mathcal K_p\), retained prime \(q\),
+and compatible roots \(\rho\) of the branch sizes in
+\eqref{eq:incidence-count}, using that \(k\)'s output tests.
+
+Every retained output proves
+\(c_{*,H}(q)\le c_H<A_0\Lambda_H\).
+Any finite collection of exact decidable arithmetic predicates
+and Boolean expressions may be evaluated on this one retained
+graph tuple.  Its truth fibres correspond bijectively under the
+graph and radix inverses.  Under a projection forgetting
+\(k\) or \(X\), the full selected fibre is exactly the fibre
+above intersected with those predicate tests; no predicate is
+replaced by independent witnesses for its different occurrences.
+The union, intersection, fibre-product and count formulas of
+Theorem~\ref{thm:unary-truth-fibres} therefore apply on this same
+finite graph domain.  No assertion of prime coverage or universal
+first-layer occupancy is required for any of these correspondences.
+\end{theorem}
+\begin{proof}
+The scale set is finite by its proved square-divisor description.
+Each retained scale gives a valid original raw seed with its
+original first denominator unchanged.  Its exact output period is
+\(m_k\), by Theorem~\ref{thm:raw-scale-period}.
+Applying the input--output incidence theorem to these fixed raw
+parameters uses
+\[
+ \frac{4(kA_0)(kB_0)(kC_0)}
+      {\gcd(4(kA_0)(kB_0)(kC_0),k\Theta_0)}
+ =\frac{k^2K_0}{\gcd(k^2K_0,\Theta_0)}=m_k.
+\]
+Thus this is exactly its raw integrality condition, including every
+scale factor.  Its root congruence concerns only the retained input
+polynomial \(N(X)\), so the root and CRT input branches retain
+the same original input data and all their inverse parameters.
+The first-half restriction is precisely the inequality already
+proved and is a predicate on that same \(q\).
+These observations prove the fixed-scale fibres in both projection
+directions, including every empty fibre.
+
+Every such output has \(D_0(q)/k^2\) a positive integer,
+and the coordinate equalities of the scale theorem give exactly
+the listed raw tuple, original ordered witness and shell data.
+The gate gives the PCT code and its full-radix counterpart with
+their proved inverses and least-hit inequality.
+All graph coordinates are uniquely determined from the retained
+fixed seed and \(k,X,q\); projection recovers these labels.
+This proves both inverse compositions and the singleton graph
+fibres without identifying inputs that happen to yield the same
+prime or witness.
+
+Forgetting \(k\) preserves a primitive incidence because
+\(m_0\mid m_k\) and all other tests are unchanged.
+Conversely a primitive incidence has \(D_0(q)\) a positive
+integer.  The scales lifting it are exactly those satisfying both
+\(k^2\mid D_{0,p}\) and \(k^2\mid D_0(q)\), by the proved
+raw period equivalence.  This is the displayed gcd fibre.
+It is nonempty because \(k=1\) always lies in it, proving
+surjectivity and the stated section.  Unique prime factorization
+counts that fibre.  Counting all triples by this projection gives
+the first count; counting first by \(k\), then \(q\), then the
+disjoint input root branches gives the second.  All sets are finite
+by the finite scale set, bounded prime set and finite lift intervals.
+
+Finally a specified predicate is evaluated at the exact graph
+coordinates that have just been proved integral and recovered by
+the inverse.  Reindexing either code retains those coordinates, so
+it retains the predicate's truth value.  A projection with a
+nontrivial fibre retains precisely those members that pass the same
+predicate tests; its selected fibre is therefore the stated set
+intersection.  Every graph element has one complete truth vector.
+The disjoint truth-fibre decomposition, diagonal intersection
+fibre product, union multiplicities and finite inclusion--exclusion
+proof of Theorem~\ref{thm:unary-truth-fibres} applies to these
+finite sets verbatim, with the graph element as the common variable.
+This establishes all Boolean correspondences and counts without
+assuming that any prescribed fibre is occupied.
+\end{proof}
+
+\paragraph{Exact radix and retained-scale fixtures.}
+At the prime \(p=13\), the primitive tuple
+\((A_0,B_0,C_0,D_{0,p},\varepsilon)=(2,1,5,2,0)\)
+satisfies \(4\cdot2\cdot1\cdot5\cdot2=80=2+13+13\cdot5\).
+Its original first denominator is \(a=4\), residual \(R=3\)
+and index \(j=0\).  The PCT radix has
+\((M_H,J_H,\Lambda_H)=(6,3,36)\), so \(c_H=36\).
+The full radix has \((M_F,J_F,\Lambda_F)=(9,6,108)\),
+so the exact reindexed code is \(c_F=108\).
+If the unchanged integer \(36\) were used as a full code, its
+full decoder would instead give \((A,j,B,\varepsilon)=(1,2,1,0)\),
+with \(a=6\), \(R=11\).  It fails because \(11\nmid1+13\).
+This checks the numerical distinction together with its exact
+tuple-preserving reindexing map.
+
+For a separate scale fixture, retain \(p=61\),
+\((A,B,C,D,\varepsilon)=(2,4,2,2,1)\).
+The equation is \(128=2+4+61\cdot2\) and \(a=16\)
+lies in \(A_{61}=\{16,\ldots,45\}\) and in its first half.
+Its scale is \(k=2\), and the primitive tuple is \((1,2,1,8,1)\).
+Thus \(K_0=8\), \(\Theta_0=1\), \(\Omega_0=3\),
+\(m_0=8\), \(m_2=32\), with the respective modulo-twelve
+periods \(24\) and \(96\).
+The prime \(q=109=61+2\cdot24\) gives
+\[
+ D_0(109)=14,\qquad a_{109}=28,\qquad R_{109}=3,
+ \qquad j=0,\qquad c_H=2(2-1)+1=3.
+\]
+Its ordered primitive witness is \((28,1526,3052)\).
+Over denominator \(3052\), its reciprocal numerators are
+\(109,2,1\), whose sum \(112\) gives \(4/109\).
+The first-half hit is therefore actual, but the retained raw
+coefficient is \(D_2(109)=14/4=7/2\), not an integer.
+The scale fibre over this returned prime has only \(k=1\),
+since \(\gcd(D_{0,p},D_0(109))=\gcd(8,14)=2\).
+The prime \(q=157=61+96\) instead gives
+\(D_0(157)=20\), \(D_2(157)=5\), and the actual raw tuple
+\((2,4,2,5,1)\), with the same ordered witness
+\((40,3140,6280)\) as its primitive tuple \((1,2,1,20,1)\).
+Here the scale fibre is \(\{1,2\}\), since \(\gcd(8,20)=4\).
+Primality of \(61,109,157\) follows by trial division by the
+primes up to their square roots: respectively
+\(2,3,5,7\), \(2,3,5,7\), and \(2,3,5,7,11\);
+none divides its indicated number.  These computations exhibit the
+exact strict restriction of a fixed raw scale without enlarging its
+ray when a primitive code succeeds.

@@ -1,0 +1,10330 @@
+{
+  "status": "pass",
+  "source": "raw_scale_hit_incidence.tex",
+  "source_sha256": "fbc86a3f127448b797d51bb99441c209340278e1bcf942135c77b6ba49306442",
+  "source_unchanged_during_run": true,
+  "script_sha256": "fc5dc840767dc9599f7e29e34395c38b07795d5ddf2e6d076c5310b03926f3eb",
+  "runtime": {
+    "python": "3.13.9",
+    "sympy": "1.13.1"
+  },
+  "fixed_original_data": {
+    "p": 61,
+    "A0": 1,
+    "B0": 2,
+    "C0": 1,
+    "D0_p": 8,
+    "epsilon": 1,
+    "scales": [
+      1,
+      2
+    ],
+    "K0": 8,
+    "Omega0": 3,
+    "Theta0": 1,
+    "period_by_scale": {
+      "1": 8,
+      "2": 32
+    },
+    "input_residue": 0,
+    "input_modulus": 6,
+    "U": 1,
+    "V": 600,
+    "output_modulus": 1,
+    "first_half_gate": "q >= 5"
+  },
+  "counts": {
+    "inputs": 100,
+    "complete_factorizations": 100,
+    "all_distinct_factor_primes": 149,
+    "largest_factor_prime": 114733609453,
+    "primitive_pairs": 82,
+    "retained_output_primes": 74,
+    "scaled_triples": 97,
+    "weighted_scale_count": 97,
+    "weighted_root_branch_count": 97,
+    "triples_by_scale": {
+      "1": 82,
+      "2": 15
+    },
+    "primitive_pairs_by_scale_fibre_size": {
+      "1": 67,
+      "2": 15
+    },
+    "certified_roots": 296,
+    "root_branches_including_empty": 296,
+    "empty_root_branches": 214
+  },
+  "checks": {
+    "complete_prime_power_factorizations": true,
+    "no_prime_cutoff": true,
+    "scaled_congruence_equals_original_rational_integrality": true,
+    "projection_onto_primitive_incidence": true,
+    "specified_k1_section": true,
+    "every_scale_fibre_equals_square_divisors_of_retained_gcd": true,
+    "prime_factor_weight_formula": true,
+    "all_modular_roots_certified_by_exact_quartic_factorization": true,
+    "all_bounded_CRT_branches_and_inverse_parameters": true,
+    "root_branches_disjoint": true,
+    "complete_CRT_pairs_equal_direct_pairs": true,
+    "complete_CRT_triples_equal_direct_triples": true,
+    "all_three_scaled_counts_agree": true,
+    "every_fixed_scale_input_output_fibre": true
+  },
+  "factorizations": [
+    {
+      "X": 6,
+      "N_X": 1261,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          97,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 12,
+      "N_X": 20593,
+      "prime_powers": [
+        [
+          20593,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 18,
+      "N_X": 104653,
+      "prime_powers": [
+        [
+          229,
+          1
+        ],
+        [
+          457,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 24,
+      "N_X": 331201,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          73,
+          1
+        ],
+        [
+          349,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 30,
+      "N_X": 809101,
+      "prime_powers": [
+        [
+          809101,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 36,
+      "N_X": 1678321,
+      "prime_powers": [
+        [
+          1678321,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 42,
+      "N_X": 3109933,
+      "prime_powers": [
+        [
+          673,
+          1
+        ],
+        [
+          4621,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 48,
+      "N_X": 5306113,
+      "prime_powers": [
+        [
+          5306113,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 54,
+      "N_X": 8500141,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          2089,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 60,
+      "N_X": 12956401,
+      "prime_powers": [
+        [
+          37,
+          1
+        ],
+        [
+          241,
+          1
+        ],
+        [
+          1453,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 66,
+      "N_X": 18970381,
+      "prime_powers": [
+        [
+          37,
+          1
+        ],
+        [
+          512713,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 72,
+      "N_X": 26868673,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          337,
+          1
+        ],
+        [
+          6133,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 78,
+      "N_X": 37008973,
+      "prime_powers": [
+        [
+          757,
+          1
+        ],
+        [
+          48889,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 84,
+      "N_X": 49780081,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          3829237,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 90,
+      "N_X": 65601901,
+      "prime_powers": [
+        [
+          61,
+          1
+        ],
+        [
+          1075441,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 96,
+      "N_X": 84925441,
+      "prime_powers": [
+        [
+          7177,
+          1
+        ],
+        [
+          11833,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 102,
+      "N_X": 108232813,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          8325601,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 108,
+      "N_X": 136037233,
+      "prime_powers": [
+        [
+          3049,
+          1
+        ],
+        [
+          44617,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 114,
+      "N_X": 168883021,
+      "prime_powers": [
+        [
+          168883021,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 120,
+      "N_X": 207345601,
+      "prime_powers": [
+        [
+          601,
+          1
+        ],
+        [
+          345001,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 126,
+      "N_X": 252031501,
+      "prime_powers": [
+        [
+          252031501,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 132,
+      "N_X": 303578353,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          23352181,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 138,
+      "N_X": 362654893,
+      "prime_powers": [
+        [
+          3709,
+          1
+        ],
+        [
+          97777,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 144,
+      "N_X": 429960961,
+      "prime_powers": [
+        [
+          193,
+          1
+        ],
+        [
+          2227777,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 150,
+      "N_X": 506227501,
+      "prime_powers": [
+        [
+          13,
+          2
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          27481,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 156,
+      "N_X": 592216561,
+      "prime_powers": [
+        [
+          37,
+          1
+        ],
+        [
+          16005853,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 162,
+      "N_X": 688721293,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          23473,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 168,
+      "N_X": 796565953,
+      "prime_powers": [
+        [
+          796565953,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 174,
+      "N_X": 916605901,
+      "prime_powers": [
+        [
+          181,
+          1
+        ],
+        [
+          5064121,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 180,
+      "N_X": 1049727601,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          4933,
+          1
+        ],
+        [
+          16369,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 186,
+      "N_X": 1196848621,
+      "prime_powers": [
+        [
+          6073,
+          1
+        ],
+        [
+          197077,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 192,
+      "N_X": 1358917633,
+      "prime_powers": [
+        [
+          409,
+          1
+        ],
+        [
+          3322537,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 198,
+      "N_X": 1536914413,
+      "prime_powers": [
+        [
+          1536914413,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 204,
+      "N_X": 1731849841,
+      "prime_powers": [
+        [
+          61,
+          1
+        ],
+        [
+          28390981,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 210,
+      "N_X": 1944765901,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          97,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          14149,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 216,
+      "N_X": 2176735681,
+      "prime_powers": [
+        [
+          73,
+          1
+        ],
+        [
+          541,
+          1
+        ],
+        [
+          55117,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 222,
+      "N_X": 2428863373,
+      "prime_powers": [
+        [
+          73,
+          1
+        ],
+        [
+          33272101,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 228,
+      "N_X": 2702284273,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          207868021,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 234,
+      "N_X": 2998164781,
+      "prime_powers": [
+        [
+          24049,
+          1
+        ],
+        [
+          124669,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 240,
+      "N_X": 3317702401,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          397,
+          1
+        ],
+        [
+          733,
+          1
+        ],
+        [
+          877,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 246,
+      "N_X": 3662125741,
+      "prime_powers": [
+        [
+          661,
+          1
+        ],
+        [
+          5540281,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 252,
+      "N_X": 4032694513,
+      "prime_powers": [
+        [
+          997,
+          2
+        ],
+        [
+          4057,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 258,
+      "N_X": 4430699533,
+      "prime_powers": [
+        [
+          13,
+          2
+        ],
+        [
+          1801,
+          1
+        ],
+        [
+          14557,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 264,
+      "N_X": 4857462721,
+      "prime_powers": [
+        [
+          157,
+          1
+        ],
+        [
+          30939253,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 270,
+      "N_X": 5314337101,
+      "prime_powers": [
+        [
+          5314337101,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 276,
+      "N_X": 5802706801,
+      "prime_powers": [
+        [
+          61,
+          1
+        ],
+        [
+          95126341,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 282,
+      "N_X": 6323987053,
+      "prime_powers": [
+        [
+          37,
+          1
+        ],
+        [
+          170918569,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 288,
+      "N_X": 6879624193,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          2437,
+          1
+        ],
+        [
+          5869,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 294,
+      "N_X": 7471095661,
+      "prime_powers": [
+        [
+          74929,
+          1
+        ],
+        [
+          99709,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 300,
+      "N_X": 8099910001,
+      "prime_powers": [
+        [
+          8099910001,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 306,
+      "N_X": 8767606861,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          21649,
+          1
+        ],
+        [
+          31153,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 312,
+      "N_X": 9475756993,
+      "prime_powers": [
+        [
+          277,
+          1
+        ],
+        [
+          34208509,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 318,
+      "N_X": 10225962253,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          229,
+          1
+        ],
+        [
+          433,
+          1
+        ],
+        [
+          7933,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 324,
+      "N_X": 11019855601,
+      "prime_powers": [
+        [
+          11019855601,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 330,
+      "N_X": 11859101101,
+      "prime_powers": [
+        [
+          457,
+          1
+        ],
+        [
+          25949893,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 336,
+      "N_X": 12745393921,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          157,
+          1
+        ],
+        [
+          181,
+          1
+        ],
+        [
+          34501,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 342,
+      "N_X": 13680460333,
+      "prime_powers": [
+        [
+          313,
+          1
+        ],
+        [
+          43707541,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 348,
+      "N_X": 14666057713,
+      "prime_powers": [
+        [
+          14666057713,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 354,
+      "N_X": 15703974541,
+      "prime_powers": [
+        [
+          6421,
+          1
+        ],
+        [
+          2445721,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 360,
+      "N_X": 16796030401,
+      "prime_powers": [
+        [
+          409,
+          1
+        ],
+        [
+          41066089,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 366,
+      "N_X": 17944075981,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          1380313537,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 372,
+      "N_X": 19149993073,
+      "prime_powers": [
+        [
+          97,
+          1
+        ],
+        [
+          277,
+          1
+        ],
+        [
+          712717,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 378,
+      "N_X": 20415694573,
+      "prime_powers": [
+        [
+          37,
+          1
+        ],
+        [
+          551775529,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 384,
+      "N_X": 21743124481,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          3517,
+          1
+        ],
+        [
+          12853,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 390,
+      "N_X": 23134257901,
+      "prime_powers": [
+        [
+          23134257901,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 396,
+      "N_X": 24591101041,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          9001,
+          1
+        ],
+        [
+          210157,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 402,
+      "N_X": 26115691213,
+      "prime_powers": [
+        [
+          3769,
+          1
+        ],
+        [
+          6929077,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 408,
+      "N_X": 27710096833,
+      "prime_powers": [
+        [
+          937,
+          1
+        ],
+        [
+          29573209,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 414,
+      "N_X": 29376417421,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          73,
+          1
+        ],
+        [
+          30955129,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 420,
+      "N_X": 31116783601,
+      "prime_powers": [
+        [
+          3733,
+          1
+        ],
+        [
+          8335597,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 426,
+      "N_X": 32933357101,
+      "prime_powers": [
+        [
+          32933357101,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 432,
+      "N_X": 34828330753,
+      "prime_powers": [
+        [
+          9721,
+          1
+        ],
+        [
+          3582793,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 438,
+      "N_X": 36803928493,
+      "prime_powers": [
+        [
+          36803928493,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 444,
+      "N_X": 38862405361,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          27425833,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 450,
+      "N_X": 41006047501,
+      "prime_powers": [
+        [
+          189421,
+          1
+        ],
+        [
+          216481,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 456,
+      "N_X": 43237172161,
+      "prime_powers": [
+        [
+          61,
+          1
+        ],
+        [
+          708806101,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 462,
+      "N_X": 45558127693,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          73,
+          1
+        ],
+        [
+          48006457,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 468,
+      "N_X": 47971293553,
+      "prime_powers": [
+        [
+          47971293553,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 474,
+      "N_X": 50479080301,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          3883006177,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 480,
+      "N_X": 53083929601,
+      "prime_powers": [
+        [
+          53083929601,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 486,
+      "N_X": 55788314221,
+      "prime_powers": [
+        [
+          241,
+          1
+        ],
+        [
+          877,
+          1
+        ],
+        [
+          263953,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 492,
+      "N_X": 58594738033,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          4507287541,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 498,
+      "N_X": 61505736013,
+      "prime_powers": [
+        [
+          2833,
+          1
+        ],
+        [
+          21710461,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 504,
+      "N_X": 64523874241,
+      "prime_powers": [
+        [
+          37,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          15998977,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 510,
+      "N_X": 67651749901,
+      "prime_powers": [
+        [
+          37,
+          1
+        ],
+        [
+          1828425673,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 516,
+      "N_X": 70891991281,
+      "prime_powers": [
+        [
+          193,
+          1
+        ],
+        [
+          1237,
+          1
+        ],
+        [
+          296941,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 522,
+      "N_X": 74247257773,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          709,
+          1
+        ],
+        [
+          8055469,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 528,
+      "N_X": 77720239873,
+      "prime_powers": [
+        [
+          61,
+          1
+        ],
+        [
+          1274102293,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 534,
+      "N_X": 81313659181,
+      "prime_powers": [
+        [
+          81313659181,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 540,
+      "N_X": 85030268401,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          6540789877,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 546,
+      "N_X": 88872851341,
+      "prime_powers": [
+        [
+          373,
+          1
+        ],
+        [
+          238265017,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 552,
+      "N_X": 92844222913,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          38449,
+          1
+        ],
+        [
+          185749,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 558,
+      "N_X": 96947229133,
+      "prime_powers": [
+        [
+          96947229133,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 564,
+      "N_X": 101184747121,
+      "prime_powers": [
+        [
+          12253,
+          1
+        ],
+        [
+          8257957,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 570,
+      "N_X": 105559685101,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          133114357,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 576,
+      "N_X": 110074982401,
+      "prime_powers": [
+        [
+          97,
+          1
+        ],
+        [
+          1134793633,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 582,
+      "N_X": 114733609453,
+      "prime_powers": [
+        [
+          114733609453,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 588,
+      "N_X": 119538567793,
+      "prime_powers": [
+        [
+          97,
+          1
+        ],
+        [
+          1232356369,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 594,
+      "N_X": 124492890061,
+      "prime_powers": [
+        [
+          56809,
+          1
+        ],
+        [
+          2191429,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    },
+    {
+      "X": 600,
+      "N_X": 129599640001,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          10753,
+          1
+        ],
+        [
+          25057,
+          1
+        ]
+      ],
+      "complete_product_verified": true
+    }
+  ],
+  "primitive_pairs": [
+    [
+      18,
+      229
+    ],
+    [
+      24,
+      349
+    ],
+    [
+      30,
+      809101
+    ],
+    [
+      42,
+      4621
+    ],
+    [
+      60,
+      1453
+    ],
+    [
+      72,
+      6133
+    ],
+    [
+      78,
+      757
+    ],
+    [
+      84,
+      3829237
+    ],
+    [
+      114,
+      168883021
+    ],
+    [
+      126,
+      252031501
+    ],
+    [
+      132,
+      23352181
+    ],
+    [
+      138,
+      3709
+    ],
+    [
+      150,
+      109
+    ],
+    [
+      156,
+      16005853
+    ],
+    [
+      174,
+      181
+    ],
+    [
+      180,
+      4933
+    ],
+    [
+      186,
+      197077
+    ],
+    [
+      198,
+      1536914413
+    ],
+    [
+      204,
+      28390981
+    ],
+    [
+      210,
+      109
+    ],
+    [
+      210,
+      14149
+    ],
+    [
+      216,
+      541
+    ],
+    [
+      216,
+      55117
+    ],
+    [
+      222,
+      33272101
+    ],
+    [
+      228,
+      207868021
+    ],
+    [
+      234,
+      124669
+    ],
+    [
+      240,
+      397
+    ],
+    [
+      240,
+      733
+    ],
+    [
+      240,
+      877
+    ],
+    [
+      246,
+      661
+    ],
+    [
+      252,
+      997
+    ],
+    [
+      258,
+      14557
+    ],
+    [
+      264,
+      157
+    ],
+    [
+      264,
+      30939253
+    ],
+    [
+      270,
+      5314337101
+    ],
+    [
+      276,
+      95126341
+    ],
+    [
+      288,
+      2437
+    ],
+    [
+      288,
+      5869
+    ],
+    [
+      294,
+      99709
+    ],
+    [
+      312,
+      277
+    ],
+    [
+      312,
+      34208509
+    ],
+    [
+      318,
+      229
+    ],
+    [
+      318,
+      7933
+    ],
+    [
+      330,
+      25949893
+    ],
+    [
+      336,
+      157
+    ],
+    [
+      336,
+      181
+    ],
+    [
+      336,
+      34501
+    ],
+    [
+      342,
+      43707541
+    ],
+    [
+      354,
+      6421
+    ],
+    [
+      372,
+      277
+    ],
+    [
+      372,
+      712717
+    ],
+    [
+      384,
+      3517
+    ],
+    [
+      384,
+      12853
+    ],
+    [
+      390,
+      23134257901
+    ],
+    [
+      396,
+      210157
+    ],
+    [
+      402,
+      6929077
+    ],
+    [
+      420,
+      3733
+    ],
+    [
+      420,
+      8335597
+    ],
+    [
+      426,
+      32933357101
+    ],
+    [
+      438,
+      36803928493
+    ],
+    [
+      444,
+      109
+    ],
+    [
+      450,
+      189421
+    ],
+    [
+      456,
+      708806101
+    ],
+    [
+      486,
+      877
+    ],
+    [
+      492,
+      4507287541
+    ],
+    [
+      498,
+      21710461
+    ],
+    [
+      504,
+      109
+    ],
+    [
+      516,
+      1237
+    ],
+    [
+      516,
+      296941
+    ],
+    [
+      522,
+      709
+    ],
+    [
+      522,
+      8055469
+    ],
+    [
+      528,
+      1274102293
+    ],
+    [
+      534,
+      81313659181
+    ],
+    [
+      540,
+      6540789877
+    ],
+    [
+      546,
+      373
+    ],
+    [
+      552,
+      185749
+    ],
+    [
+      558,
+      96947229133
+    ],
+    [
+      564,
+      12253
+    ],
+    [
+      564,
+      8257957
+    ],
+    [
+      570,
+      133114357
+    ],
+    [
+      582,
+      114733609453
+    ],
+    [
+      594,
+      2191429
+    ]
+  ],
+  "scaled_triples": [
+    [
+      1,
+      18,
+      229
+    ],
+    [
+      1,
+      24,
+      349
+    ],
+    [
+      1,
+      30,
+      809101
+    ],
+    [
+      1,
+      42,
+      4621
+    ],
+    [
+      1,
+      60,
+      1453
+    ],
+    [
+      1,
+      72,
+      6133
+    ],
+    [
+      1,
+      78,
+      757
+    ],
+    [
+      1,
+      84,
+      3829237
+    ],
+    [
+      1,
+      114,
+      168883021
+    ],
+    [
+      1,
+      126,
+      252031501
+    ],
+    [
+      1,
+      132,
+      23352181
+    ],
+    [
+      1,
+      138,
+      3709
+    ],
+    [
+      1,
+      150,
+      109
+    ],
+    [
+      1,
+      156,
+      16005853
+    ],
+    [
+      1,
+      174,
+      181
+    ],
+    [
+      1,
+      180,
+      4933
+    ],
+    [
+      1,
+      186,
+      197077
+    ],
+    [
+      1,
+      198,
+      1536914413
+    ],
+    [
+      1,
+      204,
+      28390981
+    ],
+    [
+      1,
+      210,
+      109
+    ],
+    [
+      1,
+      210,
+      14149
+    ],
+    [
+      1,
+      216,
+      541
+    ],
+    [
+      1,
+      216,
+      55117
+    ],
+    [
+      1,
+      222,
+      33272101
+    ],
+    [
+      1,
+      228,
+      207868021
+    ],
+    [
+      1,
+      234,
+      124669
+    ],
+    [
+      1,
+      240,
+      397
+    ],
+    [
+      1,
+      240,
+      733
+    ],
+    [
+      1,
+      240,
+      877
+    ],
+    [
+      1,
+      246,
+      661
+    ],
+    [
+      1,
+      252,
+      997
+    ],
+    [
+      1,
+      258,
+      14557
+    ],
+    [
+      1,
+      264,
+      157
+    ],
+    [
+      1,
+      264,
+      30939253
+    ],
+    [
+      1,
+      270,
+      5314337101
+    ],
+    [
+      1,
+      276,
+      95126341
+    ],
+    [
+      1,
+      288,
+      2437
+    ],
+    [
+      1,
+      288,
+      5869
+    ],
+    [
+      1,
+      294,
+      99709
+    ],
+    [
+      1,
+      312,
+      277
+    ],
+    [
+      1,
+      312,
+      34208509
+    ],
+    [
+      1,
+      318,
+      229
+    ],
+    [
+      1,
+      318,
+      7933
+    ],
+    [
+      1,
+      330,
+      25949893
+    ],
+    [
+      1,
+      336,
+      157
+    ],
+    [
+      1,
+      336,
+      181
+    ],
+    [
+      1,
+      336,
+      34501
+    ],
+    [
+      1,
+      342,
+      43707541
+    ],
+    [
+      1,
+      354,
+      6421
+    ],
+    [
+      1,
+      372,
+      277
+    ],
+    [
+      1,
+      372,
+      712717
+    ],
+    [
+      1,
+      384,
+      3517
+    ],
+    [
+      1,
+      384,
+      12853
+    ],
+    [
+      1,
+      390,
+      23134257901
+    ],
+    [
+      1,
+      396,
+      210157
+    ],
+    [
+      1,
+      402,
+      6929077
+    ],
+    [
+      1,
+      420,
+      3733
+    ],
+    [
+      1,
+      420,
+      8335597
+    ],
+    [
+      1,
+      426,
+      32933357101
+    ],
+    [
+      1,
+      438,
+      36803928493
+    ],
+    [
+      1,
+      444,
+      109
+    ],
+    [
+      1,
+      450,
+      189421
+    ],
+    [
+      1,
+      456,
+      708806101
+    ],
+    [
+      1,
+      486,
+      877
+    ],
+    [
+      1,
+      492,
+      4507287541
+    ],
+    [
+      1,
+      498,
+      21710461
+    ],
+    [
+      1,
+      504,
+      109
+    ],
+    [
+      1,
+      516,
+      1237
+    ],
+    [
+      1,
+      516,
+      296941
+    ],
+    [
+      1,
+      522,
+      709
+    ],
+    [
+      1,
+      522,
+      8055469
+    ],
+    [
+      1,
+      528,
+      1274102293
+    ],
+    [
+      1,
+      534,
+      81313659181
+    ],
+    [
+      1,
+      540,
+      6540789877
+    ],
+    [
+      1,
+      546,
+      373
+    ],
+    [
+      1,
+      552,
+      185749
+    ],
+    [
+      1,
+      558,
+      96947229133
+    ],
+    [
+      1,
+      564,
+      12253
+    ],
+    [
+      1,
+      564,
+      8257957
+    ],
+    [
+      1,
+      570,
+      133114357
+    ],
+    [
+      1,
+      582,
+      114733609453
+    ],
+    [
+      1,
+      594,
+      2191429
+    ],
+    [
+      2,
+      24,
+      349
+    ],
+    [
+      2,
+      138,
+      3709
+    ],
+    [
+      2,
+      156,
+      16005853
+    ],
+    [
+      2,
+      216,
+      541
+    ],
+    [
+      2,
+      234,
+      124669
+    ],
+    [
+      2,
+      240,
+      733
+    ],
+    [
+      2,
+      258,
+      14557
+    ],
+    [
+      2,
+      264,
+      157
+    ],
+    [
+      2,
+      294,
+      99709
+    ],
+    [
+      2,
+      312,
+      34208509
+    ],
+    [
+      2,
+      318,
+      7933
+    ],
+    [
+      2,
+      336,
+      157
+    ],
+    [
+      2,
+      384,
+      3517
+    ],
+    [
+      2,
+      498,
+      21710461
+    ],
+    [
+      2,
+      564,
+      12253
+    ]
+  ],
+  "scale_fibres": [
+    {
+      "X": 18,
+      "q": 229,
+      "D0_q": 29,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 29
+      }
+    },
+    {
+      "X": 24,
+      "q": 349,
+      "D0_q": 44,
+      "gcd_D0p_D0q": 4,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 44,
+        "2": 11
+      }
+    },
+    {
+      "X": 30,
+      "q": 809101,
+      "D0_q": 101138,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 101138
+      }
+    },
+    {
+      "X": 42,
+      "q": 4621,
+      "D0_q": 578,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 578
+      }
+    },
+    {
+      "X": 60,
+      "q": 1453,
+      "D0_q": 182,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 182
+      }
+    },
+    {
+      "X": 72,
+      "q": 6133,
+      "D0_q": 767,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 767
+      }
+    },
+    {
+      "X": 78,
+      "q": 757,
+      "D0_q": 95,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 95
+      }
+    },
+    {
+      "X": 84,
+      "q": 3829237,
+      "D0_q": 478655,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 478655
+      }
+    },
+    {
+      "X": 114,
+      "q": 168883021,
+      "D0_q": 21110378,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 21110378
+      }
+    },
+    {
+      "X": 126,
+      "q": 252031501,
+      "D0_q": 31503938,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 31503938
+      }
+    },
+    {
+      "X": 132,
+      "q": 23352181,
+      "D0_q": 2919023,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 2919023
+      }
+    },
+    {
+      "X": 138,
+      "q": 3709,
+      "D0_q": 464,
+      "gcd_D0p_D0q": 8,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 464,
+        "2": 116
+      }
+    },
+    {
+      "X": 150,
+      "q": 109,
+      "D0_q": 14,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 14
+      }
+    },
+    {
+      "X": 156,
+      "q": 16005853,
+      "D0_q": 2000732,
+      "gcd_D0p_D0q": 4,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 2000732,
+        "2": 500183
+      }
+    },
+    {
+      "X": 174,
+      "q": 181,
+      "D0_q": 23,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 23
+      }
+    },
+    {
+      "X": 180,
+      "q": 4933,
+      "D0_q": 617,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 617
+      }
+    },
+    {
+      "X": 186,
+      "q": 197077,
+      "D0_q": 24635,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 24635
+      }
+    },
+    {
+      "X": 198,
+      "q": 1536914413,
+      "D0_q": 192114302,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 192114302
+      }
+    },
+    {
+      "X": 204,
+      "q": 28390981,
+      "D0_q": 3548873,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 3548873
+      }
+    },
+    {
+      "X": 210,
+      "q": 109,
+      "D0_q": 14,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 14
+      }
+    },
+    {
+      "X": 210,
+      "q": 14149,
+      "D0_q": 1769,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 1769
+      }
+    },
+    {
+      "X": 216,
+      "q": 541,
+      "D0_q": 68,
+      "gcd_D0p_D0q": 4,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 68,
+        "2": 17
+      }
+    },
+    {
+      "X": 216,
+      "q": 55117,
+      "D0_q": 6890,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 6890
+      }
+    },
+    {
+      "X": 222,
+      "q": 33272101,
+      "D0_q": 4159013,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 4159013
+      }
+    },
+    {
+      "X": 228,
+      "q": 207868021,
+      "D0_q": 25983503,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 25983503
+      }
+    },
+    {
+      "X": 234,
+      "q": 124669,
+      "D0_q": 15584,
+      "gcd_D0p_D0q": 8,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 15584,
+        "2": 3896
+      }
+    },
+    {
+      "X": 240,
+      "q": 397,
+      "D0_q": 50,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 50
+      }
+    },
+    {
+      "X": 240,
+      "q": 733,
+      "D0_q": 92,
+      "gcd_D0p_D0q": 4,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 92,
+        "2": 23
+      }
+    },
+    {
+      "X": 240,
+      "q": 877,
+      "D0_q": 110,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 110
+      }
+    },
+    {
+      "X": 246,
+      "q": 661,
+      "D0_q": 83,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 83
+      }
+    },
+    {
+      "X": 252,
+      "q": 997,
+      "D0_q": 125,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 125
+      }
+    },
+    {
+      "X": 258,
+      "q": 14557,
+      "D0_q": 1820,
+      "gcd_D0p_D0q": 4,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 1820,
+        "2": 455
+      }
+    },
+    {
+      "X": 264,
+      "q": 157,
+      "D0_q": 20,
+      "gcd_D0p_D0q": 4,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 20,
+        "2": 5
+      }
+    },
+    {
+      "X": 264,
+      "q": 30939253,
+      "D0_q": 3867407,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 3867407
+      }
+    },
+    {
+      "X": 270,
+      "q": 5314337101,
+      "D0_q": 664292138,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 664292138
+      }
+    },
+    {
+      "X": 276,
+      "q": 95126341,
+      "D0_q": 11890793,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 11890793
+      }
+    },
+    {
+      "X": 288,
+      "q": 2437,
+      "D0_q": 305,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 305
+      }
+    },
+    {
+      "X": 288,
+      "q": 5869,
+      "D0_q": 734,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 734
+      }
+    },
+    {
+      "X": 294,
+      "q": 99709,
+      "D0_q": 12464,
+      "gcd_D0p_D0q": 8,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 12464,
+        "2": 3116
+      }
+    },
+    {
+      "X": 312,
+      "q": 277,
+      "D0_q": 35,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 35
+      }
+    },
+    {
+      "X": 312,
+      "q": 34208509,
+      "D0_q": 4276064,
+      "gcd_D0p_D0q": 8,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 4276064,
+        "2": 1069016
+      }
+    },
+    {
+      "X": 318,
+      "q": 229,
+      "D0_q": 29,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 29
+      }
+    },
+    {
+      "X": 318,
+      "q": 7933,
+      "D0_q": 992,
+      "gcd_D0p_D0q": 8,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 992,
+        "2": 248
+      }
+    },
+    {
+      "X": 330,
+      "q": 25949893,
+      "D0_q": 3243737,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 3243737
+      }
+    },
+    {
+      "X": 336,
+      "q": 157,
+      "D0_q": 20,
+      "gcd_D0p_D0q": 4,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 20,
+        "2": 5
+      }
+    },
+    {
+      "X": 336,
+      "q": 181,
+      "D0_q": 23,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 23
+      }
+    },
+    {
+      "X": 336,
+      "q": 34501,
+      "D0_q": 4313,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 4313
+      }
+    },
+    {
+      "X": 342,
+      "q": 43707541,
+      "D0_q": 5463443,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 5463443
+      }
+    },
+    {
+      "X": 354,
+      "q": 6421,
+      "D0_q": 803,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 803
+      }
+    },
+    {
+      "X": 372,
+      "q": 277,
+      "D0_q": 35,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 35
+      }
+    },
+    {
+      "X": 372,
+      "q": 712717,
+      "D0_q": 89090,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 89090
+      }
+    },
+    {
+      "X": 384,
+      "q": 3517,
+      "D0_q": 440,
+      "gcd_D0p_D0q": 8,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 440,
+        "2": 110
+      }
+    },
+    {
+      "X": 384,
+      "q": 12853,
+      "D0_q": 1607,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 1607
+      }
+    },
+    {
+      "X": 390,
+      "q": 23134257901,
+      "D0_q": 2891782238,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 2891782238
+      }
+    },
+    {
+      "X": 396,
+      "q": 210157,
+      "D0_q": 26270,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 26270
+      }
+    },
+    {
+      "X": 402,
+      "q": 6929077,
+      "D0_q": 866135,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 866135
+      }
+    },
+    {
+      "X": 420,
+      "q": 3733,
+      "D0_q": 467,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 467
+      }
+    },
+    {
+      "X": 420,
+      "q": 8335597,
+      "D0_q": 1041950,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 1041950
+      }
+    },
+    {
+      "X": 426,
+      "q": 32933357101,
+      "D0_q": 4116669638,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 4116669638
+      }
+    },
+    {
+      "X": 438,
+      "q": 36803928493,
+      "D0_q": 4600491062,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 4600491062
+      }
+    },
+    {
+      "X": 444,
+      "q": 109,
+      "D0_q": 14,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 14
+      }
+    },
+    {
+      "X": 450,
+      "q": 189421,
+      "D0_q": 23678,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 23678
+      }
+    },
+    {
+      "X": 456,
+      "q": 708806101,
+      "D0_q": 88600763,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 88600763
+      }
+    },
+    {
+      "X": 486,
+      "q": 877,
+      "D0_q": 110,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 110
+      }
+    },
+    {
+      "X": 492,
+      "q": 4507287541,
+      "D0_q": 563410943,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 563410943
+      }
+    },
+    {
+      "X": 498,
+      "q": 21710461,
+      "D0_q": 2713808,
+      "gcd_D0p_D0q": 8,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 2713808,
+        "2": 678452
+      }
+    },
+    {
+      "X": 504,
+      "q": 109,
+      "D0_q": 14,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 14
+      }
+    },
+    {
+      "X": 516,
+      "q": 1237,
+      "D0_q": 155,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 155
+      }
+    },
+    {
+      "X": 516,
+      "q": 296941,
+      "D0_q": 37118,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 37118
+      }
+    },
+    {
+      "X": 522,
+      "q": 709,
+      "D0_q": 89,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 89
+      }
+    },
+    {
+      "X": 522,
+      "q": 8055469,
+      "D0_q": 1006934,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 1006934
+      }
+    },
+    {
+      "X": 528,
+      "q": 1274102293,
+      "D0_q": 159262787,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 159262787
+      }
+    },
+    {
+      "X": 534,
+      "q": 81313659181,
+      "D0_q": 10164207398,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 10164207398
+      }
+    },
+    {
+      "X": 540,
+      "q": 6540789877,
+      "D0_q": 817598735,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 817598735
+      }
+    },
+    {
+      "X": 546,
+      "q": 373,
+      "D0_q": 47,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 47
+      }
+    },
+    {
+      "X": 552,
+      "q": 185749,
+      "D0_q": 23219,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 23219
+      }
+    },
+    {
+      "X": 558,
+      "q": 96947229133,
+      "D0_q": 12118403642,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 12118403642
+      }
+    },
+    {
+      "X": 564,
+      "q": 12253,
+      "D0_q": 1532,
+      "gcd_D0p_D0q": 4,
+      "scale_fibre": [
+        1,
+        2
+      ],
+      "square_divisor_weight": 2,
+      "raw_D_by_scale": {
+        "1": 1532,
+        "2": 383
+      }
+    },
+    {
+      "X": 564,
+      "q": 8257957,
+      "D0_q": 1032245,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 1032245
+      }
+    },
+    {
+      "X": 570,
+      "q": 133114357,
+      "D0_q": 16639295,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 16639295
+      }
+    },
+    {
+      "X": 582,
+      "q": 114733609453,
+      "D0_q": 14341701182,
+      "gcd_D0p_D0q": 2,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 14341701182
+      }
+    },
+    {
+      "X": 594,
+      "q": 2191429,
+      "D0_q": 273929,
+      "gcd_D0p_D0q": 1,
+      "scale_fibre": [
+        1
+      ],
+      "square_divisor_weight": 1,
+      "raw_D_by_scale": {
+        "1": 273929
+      }
+    }
+  ],
+  "root_CRT_fibres": [
+    {
+      "q": 109,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          18,
+          91
+        ],
+        "t_roots": [
+          46,
+          64
+        ],
+        "rho_by_t": {
+          "46": [
+            41,
+            68
+          ],
+          "64": [
+            8,
+            101
+          ]
+        },
+        "roots": [
+          8,
+          41,
+          68,
+          101
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          108,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 8,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 444,
+          "L_q": 654,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            444
+          ]
+        },
+        {
+          "rho": 41,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 150,
+          "L_q": 654,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            150
+          ]
+        },
+        {
+          "rho": 68,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 504,
+          "L_q": 654,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            504
+          ]
+        },
+        {
+          "rho": 101,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 210,
+          "L_q": 654,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            210
+          ]
+        }
+      ],
+      "entire_input_fibre": [
+        150,
+        210,
+        444,
+        504
+      ]
+    },
+    {
+      "q": 157,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          25,
+          132
+        ],
+        "t_roots": [
+          13,
+          145
+        ],
+        "rho_by_t": {
+          "13": [
+            22,
+            135
+          ],
+          "145": [
+            50,
+            107
+          ]
+        },
+        "roots": [
+          22,
+          50,
+          107,
+          135
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          156,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 22,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 336,
+          "L_q": 942,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            336
+          ]
+        },
+        {
+          "rho": 50,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 678,
+          "L_q": 942,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 107,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 264,
+          "L_q": 942,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            264
+          ]
+        },
+        {
+          "rho": 135,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 606,
+          "L_q": 942,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        264,
+        336
+      ]
+    },
+    {
+      "q": 181,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          84,
+          97
+        ],
+        "t_roots": [
+          49,
+          133
+        ],
+        "rho_by_t": {
+          "49": [
+            7,
+            174
+          ],
+          "133": [
+            26,
+            155
+          ]
+        },
+        "roots": [
+          7,
+          26,
+          155,
+          174
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          180,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 7,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 912,
+          "L_q": 1086,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 26,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 750,
+          "L_q": 1086,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 155,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 336,
+          "L_q": 1086,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            336
+          ]
+        },
+        {
+          "rho": 174,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 174,
+          "L_q": 1086,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            174
+          ]
+        }
+      ],
+      "entire_input_fibre": [
+        174,
+        336
+      ]
+    },
+    {
+      "q": 229,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          40,
+          189
+        ],
+        "t_roots": [
+          95,
+          135
+        ],
+        "rho_by_t": {
+          "95": [
+            18,
+            211
+          ],
+          "135": [
+            89,
+            140
+          ]
+        },
+        "roots": [
+          18,
+          89,
+          140,
+          211
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          228,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 18,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 18,
+          "L_q": 1374,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            18
+          ]
+        },
+        {
+          "rho": 89,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 318,
+          "L_q": 1374,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            318
+          ]
+        },
+        {
+          "rho": 140,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1056,
+          "L_q": 1374,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 211,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1356,
+          "L_q": 1374,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        18,
+        318
+      ]
+    },
+    {
+      "q": 277,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          44,
+          233
+        ],
+        "t_roots": [
+          117,
+          161
+        ],
+        "rho_by_t": {
+          "117": [
+            35,
+            242
+          ],
+          "161": [
+            95,
+            182
+          ]
+        },
+        "roots": [
+          35,
+          95,
+          182,
+          242
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          276,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 35,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 312,
+          "L_q": 1662,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            312
+          ]
+        },
+        {
+          "rho": 95,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 372,
+          "L_q": 1662,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            372
+          ]
+        },
+        {
+          "rho": 182,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1290,
+          "L_q": 1662,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 242,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1350,
+          "L_q": 1662,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        312,
+        372
+      ]
+    },
+    {
+      "q": 349,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          104,
+          245
+        ],
+        "t_roots": [
+          123,
+          227
+        ],
+        "rho_by_t": {
+          "123": [
+            160,
+            189
+          ],
+          "227": [
+            24,
+            325
+          ]
+        },
+        "roots": [
+          24,
+          160,
+          189,
+          325
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          348,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 24,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 24,
+          "L_q": 2094,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            24
+          ]
+        },
+        {
+          "rho": 160,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 858,
+          "L_q": 2094,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 189,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1236,
+          "L_q": 2094,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 325,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2070,
+          "L_q": 2094,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        24
+      ]
+    },
+    {
+      "q": 373,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          177,
+          196
+        ],
+        "t_roots": [
+          89,
+          285
+        ],
+        "rho_by_t": {
+          "89": [
+            173,
+            200
+          ],
+          "285": [
+            69,
+            304
+          ]
+        },
+        "roots": [
+          69,
+          173,
+          200,
+          304
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          372,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 69,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1188,
+          "L_q": 2238,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 173,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 546,
+          "L_q": 2238,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            546
+          ]
+        },
+        {
+          "rho": 200,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1692,
+          "L_q": 2238,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 304,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1050,
+          "L_q": 2238,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        546
+      ]
+    },
+    {
+      "q": 397,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          69,
+          328
+        ],
+        "t_roots": [
+          35,
+          363
+        ],
+        "rho_by_t": {
+          "35": [
+            157,
+            240
+          ],
+          "363": [
+            177,
+            220
+          ]
+        },
+        "roots": [
+          157,
+          177,
+          220,
+          240
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          396,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 157,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2142,
+          "L_q": 2382,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 177,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1368,
+          "L_q": 2382,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 220,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1014,
+          "L_q": 2382,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 240,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 240,
+          "L_q": 2382,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            240
+          ]
+        }
+      ],
+      "entire_input_fibre": [
+        240
+      ]
+    },
+    {
+      "q": 541,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          259,
+          282
+        ],
+        "t_roots": [
+          130,
+          412
+        ],
+        "rho_by_t": {
+          "130": [
+            216,
+            325
+          ],
+          "412": [
+            268,
+            273
+          ]
+        },
+        "roots": [
+          216,
+          268,
+          273,
+          325
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          540,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 216,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 216,
+          "L_q": 3246,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            216
+          ]
+        },
+        {
+          "rho": 268,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1350,
+          "L_q": 3246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 273,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1896,
+          "L_q": 3246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 325,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 3030,
+          "L_q": 3246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        216
+      ]
+    },
+    {
+      "q": 661,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          68,
+          593
+        ],
+        "t_roots": [
+          297,
+          365
+        ],
+        "rho_by_t": {
+          "297": [
+            309,
+            352
+          ],
+          "365": [
+            246,
+            415
+          ]
+        },
+        "roots": [
+          246,
+          309,
+          352,
+          415
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          660,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 246,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 246,
+          "L_q": 3966,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            246
+          ]
+        },
+        {
+          "rho": 309,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2292,
+          "L_q": 3966,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 352,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1674,
+          "L_q": 3966,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 415,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 3720,
+          "L_q": 3966,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        246
+      ]
+    },
+    {
+      "q": 709,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          254,
+          455
+        ],
+        "t_roots": [
+          228,
+          482
+        ],
+        "rho_by_t": {
+          "228": [
+            187,
+            522
+          ],
+          "482": [
+            91,
+            618
+          ]
+        },
+        "roots": [
+          91,
+          187,
+          522,
+          618
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          708,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 91,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 3636,
+          "L_q": 4254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 187,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 3732,
+          "L_q": 4254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 522,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 522,
+          "L_q": 4254,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            522
+          ]
+        },
+        {
+          "rho": 618,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 618,
+          "L_q": 4254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        522
+      ]
+    },
+    {
+      "q": 733,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          118,
+          615
+        ],
+        "t_roots": [
+          308,
+          426
+        ],
+        "rho_by_t": {
+          "308": [
+            113,
+            620
+          ],
+          "426": [
+            240,
+            493
+          ]
+        },
+        "roots": [
+          113,
+          240,
+          493,
+          620
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          732,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 113,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 846,
+          "L_q": 4398,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 240,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 240,
+          "L_q": 4398,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            240
+          ]
+        },
+        {
+          "rho": 493,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4158,
+          "L_q": 4398,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 620,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 3552,
+          "L_q": 4398,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        240
+      ]
+    },
+    {
+      "q": 757,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          55,
+          702
+        ],
+        "t_roots": [
+          28,
+          730
+        ],
+        "rho_by_t": {
+          "28": [
+            78,
+            679
+          ],
+          "730": [
+            165,
+            592
+          ]
+        },
+        "roots": [
+          78,
+          165,
+          592,
+          679
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          756,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 78,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 78,
+          "L_q": 4542,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            78
+          ]
+        },
+        {
+          "rho": 165,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2436,
+          "L_q": 4542,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 592,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2106,
+          "L_q": 4542,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 679,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4464,
+          "L_q": 4542,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        78
+      ]
+    },
+    {
+      "q": 877,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          312,
+          565
+        ],
+        "t_roots": [
+          283,
+          595
+        ],
+        "rho_by_t": {
+          "283": [
+            391,
+            486
+          ],
+          "595": [
+            240,
+            637
+          ]
+        },
+        "roots": [
+          240,
+          391,
+          486,
+          637
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          876,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 240,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 240,
+          "L_q": 5262,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            240
+          ]
+        },
+        {
+          "rho": 391,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4776,
+          "L_q": 5262,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 486,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 486,
+          "L_q": 5262,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            486
+          ]
+        },
+        {
+          "rho": 637,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 5022,
+          "L_q": 5262,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        240,
+        486
+      ]
+    },
+    {
+      "q": 997,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          388,
+          609
+        ],
+        "t_roots": [
+          305,
+          693
+        ],
+        "rho_by_t": {
+          "305": [
+            91,
+            906
+          ],
+          "693": [
+            252,
+            745
+          ]
+        },
+        "roots": [
+          91,
+          252,
+          745,
+          906
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          996,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 91,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 5076,
+          "L_q": 5982,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 252,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 252,
+          "L_q": 5982,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            252
+          ]
+        },
+        {
+          "rho": 745,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 5730,
+          "L_q": 5982,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 906,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 906,
+          "L_q": 5982,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        252
+      ]
+    },
+    {
+      "q": 1237,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          601,
+          636
+        ],
+        "t_roots": [
+          301,
+          937
+        ],
+        "rho_by_t": {
+          "301": [
+            516,
+            721
+          ],
+          "937": [
+            175,
+            1062
+          ]
+        },
+        "roots": [
+          175,
+          516,
+          721,
+          1062
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          1236,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 175,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 6360,
+          "L_q": 7422,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 516,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 516,
+          "L_q": 7422,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            516
+          ]
+        },
+        {
+          "rho": 721,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 6906,
+          "L_q": 7422,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 1062,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1062,
+          "L_q": 7422,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        516
+      ]
+    },
+    {
+      "q": 1453,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          66,
+          1387
+        ],
+        "t_roots": [
+          694,
+          760
+        ],
+        "rho_by_t": {
+          "694": [
+            60,
+            1393
+          ],
+          "760": [
+            557,
+            896
+          ]
+        },
+        "roots": [
+          60,
+          557,
+          896,
+          1393
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          1452,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 60,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 60,
+          "L_q": 8718,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            60
+          ]
+        },
+        {
+          "rho": 557,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2010,
+          "L_q": 8718,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 896,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 6708,
+          "L_q": 8718,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 1393,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 8658,
+          "L_q": 8718,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        60
+      ]
+    },
+    {
+      "q": 2437,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          171,
+          2266
+        ],
+        "t_roots": [
+          86,
+          2352
+        ],
+        "rho_by_t": {
+          "86": [
+            288,
+            2149
+          ],
+          "2352": [
+            110,
+            2327
+          ]
+        },
+        "roots": [
+          110,
+          288,
+          2149,
+          2327
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          2436,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 110,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 9858,
+          "L_q": 14622,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 288,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 288,
+          "L_q": 14622,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            288
+          ]
+        },
+        {
+          "rho": 2149,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 14334,
+          "L_q": 14622,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 2327,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4764,
+          "L_q": 14622,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        288
+      ]
+    },
+    {
+      "q": 3517,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          517,
+          3000
+        ],
+        "t_roots": [
+          259,
+          3259
+        ],
+        "rho_by_t": {
+          "259": [
+            980,
+            2537
+          ],
+          "3259": [
+            384,
+            3133
+          ]
+        },
+        "roots": [
+          384,
+          980,
+          2537,
+          3133
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          3516,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 384,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 384,
+          "L_q": 21102,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            384
+          ]
+        },
+        {
+          "rho": 980,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 15048,
+          "L_q": 21102,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 2537,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 6054,
+          "L_q": 21102,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 3133,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 20718,
+          "L_q": 21102,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        384
+      ]
+    },
+    {
+      "q": 3709,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          997,
+          2712
+        ],
+        "t_roots": [
+          499,
+          3211
+        ],
+        "rho_by_t": {
+          "499": [
+            138,
+            3571
+          ],
+          "3211": [
+            1747,
+            1962
+          ]
+        },
+        "roots": [
+          138,
+          1747,
+          1962,
+          3571
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          3708,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 138,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 138,
+          "L_q": 22254,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            138
+          ]
+        },
+        {
+          "rho": 1747,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 20292,
+          "L_q": 22254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 1962,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1962,
+          "L_q": 22254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 3571,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 22116,
+          "L_q": 22254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        138
+      ]
+    },
+    {
+      "q": 3733,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          1836,
+          1897
+        ],
+        "t_roots": [
+          949,
+          2785
+        ],
+        "rho_by_t": {
+          "949": [
+            420,
+            3313
+          ],
+          "2785": [
+            1271,
+            2462
+          ]
+        },
+        "roots": [
+          420,
+          1271,
+          2462,
+          3313
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          3732,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 420,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 420,
+          "L_q": 22398,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            420
+          ]
+        },
+        {
+          "rho": 1271,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 5004,
+          "L_q": 22398,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 2462,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 17394,
+          "L_q": 22398,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 3313,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 21978,
+          "L_q": 22398,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        420
+      ]
+    },
+    {
+      "q": 4621,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          1094,
+          3527
+        ],
+        "t_roots": [
+          1764,
+          2858
+        ],
+        "rho_by_t": {
+          "1764": [
+            42,
+            4579
+          ],
+          "2858": [
+            110,
+            4511
+          ]
+        },
+        "roots": [
+          42,
+          110,
+          4511,
+          4579
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          4620,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 42,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 42,
+          "L_q": 27726,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            42
+          ]
+        },
+        {
+          "rho": 110,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 18594,
+          "L_q": 27726,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 4511,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 9132,
+          "L_q": 27726,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 4579,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 27684,
+          "L_q": 27726,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        42
+      ]
+    },
+    {
+      "q": 4933,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          670,
+          4263
+        ],
+        "t_roots": [
+          2132,
+          2802
+        ],
+        "rho_by_t": {
+          "2132": [
+            1014,
+            3919
+          ],
+          "2802": [
+            180,
+            4753
+          ]
+        },
+        "roots": [
+          180,
+          1014,
+          3919,
+          4753
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          4932,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 180,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 180,
+          "L_q": 29598,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            180
+          ]
+        },
+        {
+          "rho": 1014,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1014,
+          "L_q": 29598,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 3919,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 28584,
+          "L_q": 29598,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 4753,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 29418,
+          "L_q": 29598,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        180
+      ]
+    },
+    {
+      "q": 5869,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          1555,
+          4314
+        ],
+        "t_roots": [
+          778,
+          5092
+        ],
+        "rho_by_t": {
+          "778": [
+            288,
+            5581
+          ],
+          "5092": [
+            754,
+            5115
+          ]
+        },
+        "roots": [
+          288,
+          754,
+          5115,
+          5581
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          5868,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 288,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 288,
+          "L_q": 35214,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            288
+          ]
+        },
+        {
+          "rho": 754,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 12492,
+          "L_q": 35214,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 5115,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 22722,
+          "L_q": 35214,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 5581,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 34926,
+          "L_q": 35214,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        288
+      ]
+    },
+    {
+      "q": 6133,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          1899,
+          4234
+        ],
+        "t_roots": [
+          950,
+          5184
+        ],
+        "rho_by_t": {
+          "950": [
+            937,
+            5196
+          ],
+          "5184": [
+            72,
+            6061
+          ]
+        },
+        "roots": [
+          72,
+          937,
+          5196,
+          6061
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          6132,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 72,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 72,
+          "L_q": 36798,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            72
+          ]
+        },
+        {
+          "rho": 937,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 31602,
+          "L_q": 36798,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 5196,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 5196,
+          "L_q": 36798,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 6061,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 36726,
+          "L_q": 36798,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        72
+      ]
+    },
+    {
+      "q": 6421,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          212,
+          6209
+        ],
+        "t_roots": [
+          3105,
+          3317
+        ],
+        "rho_by_t": {
+          "3105": [
+            1179,
+            5242
+          ],
+          "3317": [
+            354,
+            6067
+          ]
+        },
+        "roots": [
+          354,
+          1179,
+          5242,
+          6067
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          6420,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 354,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 354,
+          "L_q": 38526,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            354
+          ]
+        },
+        {
+          "rho": 1179,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 20442,
+          "L_q": 38526,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 5242,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 18084,
+          "L_q": 38526,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 6067,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 38172,
+          "L_q": 38526,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        354
+      ]
+    },
+    {
+      "q": 7933,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          3922,
+          4011
+        ],
+        "t_roots": [
+          2006,
+          5928
+        ],
+        "rho_by_t": {
+          "2006": [
+            3268,
+            4665
+          ],
+          "5928": [
+            318,
+            7615
+          ]
+        },
+        "roots": [
+          318,
+          3268,
+          4665,
+          7615
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          7932,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 318,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 318,
+          "L_q": 47598,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            318
+          ]
+        },
+        {
+          "rho": 3268,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 19134,
+          "L_q": 47598,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 4665,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 28464,
+          "L_q": 47598,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 7615,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 47280,
+          "L_q": 47598,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        318
+      ]
+    },
+    {
+      "q": 12253,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          965,
+          11288
+        ],
+        "t_roots": [
+          483,
+          11771
+        ],
+        "rho_by_t": {
+          "483": [
+            2846,
+            9407
+          ],
+          "11771": [
+            564,
+            11689
+          ]
+        },
+        "roots": [
+          564,
+          2846,
+          9407,
+          11689
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          12252,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 564,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 564,
+          "L_q": 73518,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            564
+          ]
+        },
+        {
+          "rho": 2846,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 51858,
+          "L_q": 73518,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 9407,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 21660,
+          "L_q": 73518,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 11689,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 72954,
+          "L_q": 73518,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        564
+      ]
+    },
+    {
+      "q": 12853,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          708,
+          12145
+        ],
+        "t_roots": [
+          6073,
+          6781
+        ],
+        "rho_by_t": {
+          "6073": [
+            384,
+            12469
+          ],
+          "6781": [
+            5255,
+            7598
+          ]
+        },
+        "roots": [
+          384,
+          5255,
+          7598,
+          12469
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          12852,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 384,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 384,
+          "L_q": 77118,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            384
+          ]
+        },
+        {
+          "rho": 5255,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 18108,
+          "L_q": 77118,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 7598,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 59010,
+          "L_q": 77118,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 12469,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 76734,
+          "L_q": 77118,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        384
+      ]
+    },
+    {
+      "q": 14149,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          3305,
+          10844
+        ],
+        "t_roots": [
+          1653,
+          12497
+        ],
+        "rho_by_t": {
+          "1653": [
+            210,
+            13939
+          ],
+          "12497": [
+            6805,
+            7344
+          ]
+        },
+        "roots": [
+          210,
+          6805,
+          7344,
+          13939
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          14148,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 210,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 210,
+          "L_q": 84894,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            210
+          ]
+        },
+        {
+          "rho": 6805,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 77550,
+          "L_q": 84894,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 7344,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 7344,
+          "L_q": 84894,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 13939,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 84684,
+          "L_q": 84894,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        210
+      ]
+    },
+    {
+      "q": 14557,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          2114,
+          12443
+        ],
+        "t_roots": [
+          6222,
+          8336
+        ],
+        "rho_by_t": {
+          "6222": [
+            4006,
+            10551
+          ],
+          "8336": [
+            258,
+            14299
+          ]
+        },
+        "roots": [
+          258,
+          4006,
+          10551,
+          14299
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          14556,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 258,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 258,
+          "L_q": 87342,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            258
+          ]
+        },
+        {
+          "rho": 4006,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 33120,
+          "L_q": 87342,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 10551,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 54222,
+          "L_q": 87342,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 14299,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 87084,
+          "L_q": 87342,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        258
+      ]
+    },
+    {
+      "q": 34501,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          15716,
+          18785
+        ],
+        "t_roots": [
+          9393,
+          25109
+        ],
+        "rho_by_t": {
+          "9393": [
+            336,
+            34165
+          ],
+          "25109": [
+            16121,
+            18380
+          ]
+        },
+        "roots": [
+          336,
+          16121,
+          18380,
+          34165
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          34500,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 336,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 336,
+          "L_q": 207006,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            336
+          ]
+        },
+        {
+          "rho": 16121,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 50622,
+          "L_q": 207006,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 18380,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 156384,
+          "L_q": 207006,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 34165,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 206670,
+          "L_q": 207006,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        336
+      ]
+    },
+    {
+      "q": 55117,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          16923,
+          38194
+        ],
+        "t_roots": [
+          8462,
+          46656
+        ],
+        "rho_by_t": {
+          "8462": [
+            8931,
+            46186
+          ],
+          "46656": [
+            216,
+            54901
+          ]
+        },
+        "roots": [
+          216,
+          8931,
+          46186,
+          54901
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          55116,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 216,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 216,
+          "L_q": 330702,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            216
+          ]
+        },
+        {
+          "rho": 8931,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 174282,
+          "L_q": 330702,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 46186,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 156420,
+          "L_q": 330702,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 54901,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 330486,
+          "L_q": 330702,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        216
+      ]
+    },
+    {
+      "q": 99709,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          26547,
+          73162
+        ],
+        "t_roots": [
+          13274,
+          86436
+        ],
+        "rho_by_t": {
+          "13274": [
+            13905,
+            85804
+          ],
+          "86436": [
+            294,
+            99415
+          ]
+        },
+        "roots": [
+          294,
+          13905,
+          85804,
+          99415
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          99708,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 294,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 294,
+          "L_q": 598254,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            294
+          ]
+        },
+        {
+          "rho": 13905,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 313032,
+          "L_q": 598254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 85804,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 285222,
+          "L_q": 598254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 99415,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 597960,
+          "L_q": 598254,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        294
+      ]
+    },
+    {
+      "q": 124669,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          15158,
+          109511
+        ],
+        "t_roots": [
+          54756,
+          69914
+        ],
+        "rho_by_t": {
+          "54756": [
+            234,
+            124435
+          ],
+          "69914": [
+            28237,
+            96432
+          ]
+        },
+        "roots": [
+          234,
+          28237,
+          96432,
+          124435
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          124668,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 234,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 234,
+          "L_q": 748014,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            234
+          ]
+        },
+        {
+          "rho": 28237,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 651582,
+          "L_q": 748014,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 96432,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 96432,
+          "L_q": 748014,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 124435,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 747780,
+          "L_q": 748014,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        234
+      ]
+    },
+    {
+      "q": 185749,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          52160,
+          133589
+        ],
+        "t_roots": [
+          66795,
+          118955
+        ],
+        "rho_by_t": {
+          "66795": [
+            92538,
+            93211
+          ],
+          "118955": [
+            552,
+            185197
+          ]
+        },
+        "roots": [
+          552,
+          92538,
+          93211,
+          185197
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          185748,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 552,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 552,
+          "L_q": 1114494,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            552
+          ]
+        },
+        {
+          "rho": 92538,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 92538,
+          "L_q": 1114494,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 93211,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1021956,
+          "L_q": 1114494,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 185197,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1113942,
+          "L_q": 1114494,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        552
+      ]
+    },
+    {
+      "q": 189421,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          26157,
+          163264
+        ],
+        "t_roots": [
+          13079,
+          176343
+        ],
+        "rho_by_t": {
+          "13079": [
+            450,
+            188971
+          ],
+          "176343": [
+            13049,
+            176372
+          ]
+        },
+        "roots": [
+          450,
+          13049,
+          176372,
+          188971
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          189420,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 450,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 450,
+          "L_q": 1136526,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            450
+          ]
+        },
+        {
+          "rho": 13049,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 202470,
+          "L_q": 1136526,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 176372,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 934056,
+          "L_q": 1136526,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 188971,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1136076,
+          "L_q": 1136526,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        450
+      ]
+    },
+    {
+      "q": 197077,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          69191,
+          127886
+        ],
+        "t_roots": [
+          34596,
+          162482
+        ],
+        "rho_by_t": {
+          "34596": [
+            186,
+            196891
+          ],
+          "162482": [
+            68871,
+            128206
+          ]
+        },
+        "roots": [
+          186,
+          68871,
+          128206,
+          196891
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          197076,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 186,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 186,
+          "L_q": 1182462,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            186
+          ]
+        },
+        {
+          "rho": 68871,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 660102,
+          "L_q": 1182462,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 128206,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 522360,
+          "L_q": 1182462,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 196891,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1182276,
+          "L_q": 1182462,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        186
+      ]
+    },
+    {
+      "q": 210157,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          103474,
+          106683
+        ],
+        "t_roots": [
+          53342,
+          156816
+        ],
+        "rho_by_t": {
+          "53342": [
+            102425,
+            107732
+          ],
+          "156816": [
+            396,
+            209761
+          ]
+        },
+        "roots": [
+          396,
+          102425,
+          107732,
+          209761
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          210156,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 396,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 396,
+          "L_q": 1260942,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            396
+          ]
+        },
+        {
+          "rho": 102425,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 312582,
+          "L_q": 1260942,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 107732,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 948360,
+          "L_q": 1260942,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 209761,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1260546,
+          "L_q": 1260942,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        396
+      ]
+    },
+    {
+      "q": 296941,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          61371,
+          235570
+        ],
+        "t_roots": [
+          30686,
+          266256
+        ],
+        "rho_by_t": {
+          "30686": [
+            96103,
+            200838
+          ],
+          "266256": [
+            516,
+            296425
+          ]
+        },
+        "roots": [
+          516,
+          96103,
+          200838,
+          296425
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          296940,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 516,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 516,
+          "L_q": 1781646,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            516
+          ]
+        },
+        {
+          "rho": 96103,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1580808,
+          "L_q": 1781646,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 200838,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 200838,
+          "L_q": 1781646,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 296425,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1781130,
+          "L_q": 1781646,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        516
+      ]
+    },
+    {
+      "q": 712717,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          276767,
+          435950
+        ],
+        "t_roots": [
+          138384,
+          574334
+        ],
+        "rho_by_t": {
+          "138384": [
+            372,
+            712345
+          ],
+          "574334": [
+            162852,
+            549865
+          ]
+        },
+        "roots": [
+          372,
+          162852,
+          549865,
+          712345
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          712716,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 372,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 372,
+          "L_q": 4276302,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            372
+          ]
+        },
+        {
+          "rho": 162852,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 162852,
+          "L_q": 4276302,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 549865,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4113450,
+          "L_q": 4276302,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 712345,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4275930,
+          "L_q": 4276302,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        372
+      ]
+    },
+    {
+      "q": 809101,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          1799,
+          807302
+        ],
+        "t_roots": [
+          900,
+          808202
+        ],
+        "rho_by_t": {
+          "900": [
+            30,
+            809071
+          ],
+          "808202": [
+            26970,
+            782131
+          ]
+        },
+        "roots": [
+          30,
+          26970,
+          782131,
+          809071
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          809100,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 30,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 30,
+          "L_q": 4854606,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            30
+          ]
+        },
+        {
+          "rho": 26970,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 26970,
+          "L_q": 4854606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 782131,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4827636,
+          "L_q": 4854606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 809071,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4854576,
+          "L_q": 4854606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        30
+      ]
+    },
+    {
+      "q": 2191429,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          705671,
+          1485758
+        ],
+        "t_roots": [
+          352836,
+          1838594
+        ],
+        "rho_by_t": {
+          "352836": [
+            594,
+            2190835
+          ],
+          "1838594": [
+            793194,
+            1398235
+          ]
+        },
+        "roots": [
+          594,
+          793194,
+          1398235,
+          2190835
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          2191428,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 594,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 594,
+          "L_q": 13148574,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            594
+          ]
+        },
+        {
+          "rho": 793194,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 793194,
+          "L_q": 13148574,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 1398235,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 12355380,
+          "L_q": 13148574,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 2190835,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 13147980,
+          "L_q": 13148574,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        594
+      ]
+    },
+    {
+      "q": 3829237,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          14111,
+          3815126
+        ],
+        "t_roots": [
+          7056,
+          3822182
+        ],
+        "rho_by_t": {
+          "7056": [
+            84,
+            3829153
+          ],
+          "3822182": [
+            592620,
+            3236617
+          ]
+        },
+        "roots": [
+          84,
+          592620,
+          3236617,
+          3829153
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          3829236,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 84,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 84,
+          "L_q": 22975422,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            84
+          ]
+        },
+        {
+          "rho": 592620,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 592620,
+          "L_q": 22975422,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 3236617,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 22382802,
+          "L_q": 22975422,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 3829153,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 22975338,
+          "L_q": 22975422,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        84
+      ]
+    },
+    {
+      "q": 6929077,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          323207,
+          6605870
+        ],
+        "t_roots": [
+          161604,
+          6767474
+        ],
+        "rho_by_t": {
+          "161604": [
+            402,
+            6928675
+          ],
+          "6767474": [
+            2602713,
+            4326364
+          ]
+        },
+        "roots": [
+          402,
+          2602713,
+          4326364,
+          6928675
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          6929076,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 402,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 402,
+          "L_q": 41574462,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            402
+          ]
+        },
+        {
+          "rho": 2602713,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 23389944,
+          "L_q": 41574462,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 4326364,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 18184518,
+          "L_q": 41574462,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 6928675,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 41574060,
+          "L_q": 41574462,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        402
+      ]
+    },
+    {
+      "q": 8055469,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          544967,
+          7510502
+        ],
+        "t_roots": [
+          272484,
+          7782986
+        ],
+        "rho_by_t": {
+          "272484": [
+            522,
+            8054947
+          ],
+          "7782986": [
+            2762316,
+            5293153
+          ]
+        },
+        "roots": [
+          522,
+          2762316,
+          5293153,
+          8054947
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          8055468,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 522,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 522,
+          "L_q": 48332814,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            522
+          ]
+        },
+        {
+          "rho": 2762316,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2762316,
+          "L_q": 48332814,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 5293153,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 45570498,
+          "L_q": 48332814,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 8054947,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 48332292,
+          "L_q": 48332814,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        522
+      ]
+    },
+    {
+      "q": 8257957,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          636191,
+          7621766
+        ],
+        "t_roots": [
+          318096,
+          7939862
+        ],
+        "rho_by_t": {
+          "318096": [
+            564,
+            8257393
+          ],
+          "7939862": [
+            2269474,
+            5988483
+          ]
+        },
+        "roots": [
+          564,
+          2269474,
+          5988483,
+          8257393
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          8257956,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 564,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 564,
+          "L_q": 49547742,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            564
+          ]
+        },
+        {
+          "rho": 2269474,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 18785388,
+          "L_q": 49547742,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 5988483,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 30762354,
+          "L_q": 49547742,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 8257393,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 49547178,
+          "L_q": 49547742,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        564
+      ]
+    },
+    {
+      "q": 8335597,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          352799,
+          7982798
+        ],
+        "t_roots": [
+          176400,
+          8159198
+        ],
+        "rho_by_t": {
+          "176400": [
+            420,
+            8335177
+          ],
+          "8159198": [
+            932793,
+            7402804
+          ]
+        },
+        "roots": [
+          420,
+          932793,
+          7402804,
+          8335177
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          8335596,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 420,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 420,
+          "L_q": 50013582,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            420
+          ]
+        },
+        {
+          "rho": 932793,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 25939584,
+          "L_q": 50013582,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 7402804,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 24073998,
+          "L_q": 50013582,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 8335177,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 50013162,
+          "L_q": 50013582,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        420
+      ]
+    },
+    {
+      "q": 16005853,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          48671,
+          15957182
+        ],
+        "t_roots": [
+          24336,
+          15981518
+        ],
+        "rho_by_t": {
+          "24336": [
+            156,
+            16005697
+          ],
+          "15981518": [
+            3796260,
+            12209593
+          ]
+        },
+        "roots": [
+          156,
+          3796260,
+          12209593,
+          16005697
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          16005852,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 156,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 156,
+          "L_q": 96035118,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            156
+          ]
+        },
+        {
+          "rho": 3796260,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 3796260,
+          "L_q": 96035118,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 12209593,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 92238858,
+          "L_q": 96035118,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 16005697,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 96034962,
+          "L_q": 96035118,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        156
+      ]
+    },
+    {
+      "q": 21710461,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          496007,
+          21214454
+        ],
+        "t_roots": [
+          248004,
+          21462458
+        ],
+        "rho_by_t": {
+          "248004": [
+            498,
+            21709963
+          ],
+          "21462458": [
+            6757272,
+            14953189
+          ]
+        },
+        "roots": [
+          498,
+          6757272,
+          14953189,
+          21709963
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          21710460,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 498,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 498,
+          "L_q": 130262766,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            498
+          ]
+        },
+        {
+          "rho": 6757272,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 6757272,
+          "L_q": 130262766,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 14953189,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 123505494,
+          "L_q": 130262766,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 21709963,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 130262268,
+          "L_q": 130262766,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        498
+      ]
+    },
+    {
+      "q": 23352181,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          34847,
+          23317334
+        ],
+        "t_roots": [
+          17424,
+          23334758
+        ],
+        "rho_by_t": {
+          "17424": [
+            132,
+            23352049
+          ],
+          "23334758": [
+            2299836,
+            21052345
+          ]
+        },
+        "roots": [
+          132,
+          2299836,
+          21052345,
+          23352049
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          23352180,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 132,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 132,
+          "L_q": 140113086,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            132
+          ]
+        },
+        {
+          "rho": 2299836,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2299836,
+          "L_q": 140113086,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 21052345,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 137813250,
+          "L_q": 140113086,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 23352049,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 140112954,
+          "L_q": 140113086,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        132
+      ]
+    },
+    {
+      "q": 25949893,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          217799,
+          25732094
+        ],
+        "t_roots": [
+          108900,
+          25840994
+        ],
+        "rho_by_t": {
+          "108900": [
+            330,
+            25949563
+          ],
+          "25840994": [
+            9986777,
+            15963116
+          ]
+        },
+        "roots": [
+          330,
+          9986777,
+          15963116,
+          25949563
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          25949892,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 330,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 330,
+          "L_q": 155699358,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            330
+          ]
+        },
+        {
+          "rho": 9986777,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 35936670,
+          "L_q": 155699358,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 15963116,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 119762688,
+          "L_q": 155699358,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 25949563,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 155699028,
+          "L_q": 155699358,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        330
+      ]
+    },
+    {
+      "q": 28390981,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          83231,
+          28307750
+        ],
+        "t_roots": [
+          41616,
+          28349366
+        ],
+        "rho_by_t": {
+          "41616": [
+            204,
+            28390777
+          ],
+          "28349366": [
+            8489460,
+            19901521
+          ]
+        },
+        "roots": [
+          204,
+          8489460,
+          19901521,
+          28390777
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          28390980,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 204,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 204,
+          "L_q": 170345886,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            204
+          ]
+        },
+        {
+          "rho": 8489460,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 8489460,
+          "L_q": 170345886,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 19901521,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 161856426,
+          "L_q": 170345886,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 28390777,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 170345682,
+          "L_q": 170345886,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        204
+      ]
+    },
+    {
+      "q": 30939253,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          139391,
+          30799862
+        ],
+        "t_roots": [
+          69696,
+          30869558
+        ],
+        "rho_by_t": {
+          "69696": [
+            264,
+            30938989
+          ],
+          "30869558": [
+            12539773,
+            18399480
+          ]
+        },
+        "roots": [
+          264,
+          12539773,
+          18399480,
+          30938989
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          30939252,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 264,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 264,
+          "L_q": 185635518,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            264
+          ]
+        },
+        {
+          "rho": 12539773,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 167236038,
+          "L_q": 185635518,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 18399480,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 18399480,
+          "L_q": 185635518,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 30938989,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 185635254,
+          "L_q": 185635518,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        264
+      ]
+    },
+    {
+      "q": 33272101,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          98567,
+          33173534
+        ],
+        "t_roots": [
+          49284,
+          33222818
+        ],
+        "rho_by_t": {
+          "49284": [
+            222,
+            33271879
+          ],
+          "33222818": [
+            10940826,
+            22331275
+          ]
+        },
+        "roots": [
+          222,
+          10940826,
+          22331275,
+          33271879
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          33272100,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 222,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 222,
+          "L_q": 199632606,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            222
+          ]
+        },
+        {
+          "rho": 10940826,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 10940826,
+          "L_q": 199632606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 22331275,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 188691780,
+          "L_q": 199632606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 33271879,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 199632384,
+          "L_q": 199632606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        222
+      ]
+    },
+    {
+      "q": 34208509,
+      "compatible_scales": [
+        1,
+        2
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          194687,
+          34013822
+        ],
+        "t_roots": [
+          97344,
+          34111166
+        ],
+        "rho_by_t": {
+          "97344": [
+            312,
+            34208197
+          ],
+          "34111166": [
+            3837493,
+            30371016
+          ]
+        },
+        "roots": [
+          312,
+          3837493,
+          30371016,
+          34208197
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          34208508,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 312,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 312,
+          "L_q": 205251054,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            312
+          ]
+        },
+        {
+          "rho": 3837493,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 174880038,
+          "L_q": 205251054,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 30371016,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 30371016,
+          "L_q": 205251054,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 34208197,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 205250742,
+          "L_q": 205251054,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        312
+      ]
+    },
+    {
+      "q": 43707541,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          233927,
+          43473614
+        ],
+        "t_roots": [
+          116964,
+          43590578
+        ],
+        "rho_by_t": {
+          "116964": [
+            342,
+            43707199
+          ],
+          "43590578": [
+            3706195,
+            40001346
+          ]
+        },
+        "roots": [
+          342,
+          3706195,
+          40001346,
+          43707199
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          43707540,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 342,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 342,
+          "L_q": 262245246,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            342
+          ]
+        },
+        {
+          "rho": 3706195,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 222243900,
+          "L_q": 262245246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 40001346,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 40001346,
+          "L_q": 262245246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 43707199,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 262244904,
+          "L_q": 262245246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        342
+      ]
+    },
+    {
+      "q": 95126341,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          152351,
+          94973990
+        ],
+        "t_roots": [
+          76176,
+          95050166
+        ],
+        "rho_by_t": {
+          "76176": [
+            276,
+            95126065
+          ],
+          "95050166": [
+            21024300,
+            74102041
+          ]
+        },
+        "roots": [
+          276,
+          21024300,
+          74102041,
+          95126065
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          95126340,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 276,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 276,
+          "L_q": 570758046,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            276
+          ]
+        },
+        {
+          "rho": 21024300,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 21024300,
+          "L_q": 570758046,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 74102041,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 549733746,
+          "L_q": 570758046,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 95126065,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 570757770,
+          "L_q": 570758046,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        276
+      ]
+    },
+    {
+      "q": 133114357,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          649799,
+          132464558
+        ],
+        "t_roots": [
+          324900,
+          132789458
+        ],
+        "rho_by_t": {
+          "324900": [
+            570,
+            133113787
+          ],
+          "132789458": [
+            52078073,
+            81036284
+          ]
+        },
+        "roots": [
+          570,
+          52078073,
+          81036284,
+          133113787
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          133114356,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 570,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 570,
+          "L_q": 798686142,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            570
+          ]
+        },
+        {
+          "rho": 52078073,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 185192430,
+          "L_q": 798686142,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 81036284,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 613493712,
+          "L_q": 798686142,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 133113787,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 798685572,
+          "L_q": 798686142,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        570
+      ]
+    },
+    {
+      "q": 168883021,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          25991,
+          168857030
+        ],
+        "t_roots": [
+          12996,
+          168870026
+        ],
+        "rho_by_t": {
+          "12996": [
+            114,
+            168882907
+          ],
+          "168870026": [
+            1481430,
+            167401591
+          ]
+        },
+        "roots": [
+          114,
+          1481430,
+          167401591,
+          168882907
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          168883020,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 114,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 114,
+          "L_q": 1013298126,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            114
+          ]
+        },
+        {
+          "rho": 1481430,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1481430,
+          "L_q": 1013298126,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 167401591,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1011816696,
+          "L_q": 1013298126,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 168882907,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1013298012,
+          "L_q": 1013298126,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        114
+      ]
+    },
+    {
+      "q": 207868021,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          103967,
+          207764054
+        ],
+        "t_roots": [
+          51984,
+          207816038
+        ],
+        "rho_by_t": {
+          "51984": [
+            228,
+            207867793
+          ],
+          "207816038": [
+            11852124,
+            196015897
+          ]
+        },
+        "roots": [
+          228,
+          11852124,
+          196015897,
+          207867793
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          207868020,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 228,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 228,
+          "L_q": 1247208126,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            228
+          ]
+        },
+        {
+          "rho": 11852124,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 11852124,
+          "L_q": 1247208126,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 196015897,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1235356002,
+          "L_q": 1247208126,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 207867793,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1247207898,
+          "L_q": 1247208126,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        228
+      ]
+    },
+    {
+      "q": 252031501,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          31751,
+          251999750
+        ],
+        "t_roots": [
+          15876,
+          252015626
+        ],
+        "rho_by_t": {
+          "15876": [
+            126,
+            252031375
+          ],
+          "252015626": [
+            2000250,
+            250031251
+          ]
+        },
+        "roots": [
+          126,
+          2000250,
+          250031251,
+          252031375
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          252031500,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 126,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 126,
+          "L_q": 1512189006,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            126
+          ]
+        },
+        {
+          "rho": 2000250,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 2000250,
+          "L_q": 1512189006,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 250031251,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1510188756,
+          "L_q": 1512189006,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 252031375,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 1512188880,
+          "L_q": 1512189006,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        126
+      ]
+    },
+    {
+      "q": 708806101,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          415871,
+          708390230
+        ],
+        "t_roots": [
+          207936,
+          708598166
+        ],
+        "rho_by_t": {
+          "207936": [
+            456,
+            708805645
+          ],
+          "708598166": [
+            94818360,
+            613987741
+          ]
+        },
+        "roots": [
+          456,
+          94818360,
+          613987741,
+          708805645
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          708806100,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 456,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 456,
+          "L_q": 4252836606,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            456
+          ]
+        },
+        {
+          "rho": 94818360,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 94818360,
+          "L_q": 4252836606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 613987741,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4158018246,
+          "L_q": 4252836606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 708805645,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 4252836150,
+          "L_q": 4252836606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        456
+      ]
+    },
+    {
+      "q": 1274102293,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          557567,
+          1273544726
+        ],
+        "t_roots": [
+          278784,
+          1273823510
+        ],
+        "rho_by_t": {
+          "278784": [
+            528,
+            1274101765
+          ],
+          "1273823510": [
+            147197424,
+            1126904869
+          ]
+        },
+        "roots": [
+          528,
+          147197424,
+          1126904869,
+          1274101765
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          1274102292,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 528,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 528,
+          "L_q": 7644613758,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            528
+          ]
+        },
+        {
+          "rho": 147197424,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 147197424,
+          "L_q": 7644613758,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 1126904869,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 7497416334,
+          "L_q": 7644613758,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 1274101765,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 7644613230,
+          "L_q": 7644613758,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        528
+      ]
+    },
+    {
+      "q": 1536914413,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          78407,
+          1536836006
+        ],
+        "t_roots": [
+          39204,
+          1536875210
+        ],
+        "rho_by_t": {
+          "39204": [
+            198,
+            1536914215
+          ],
+          "1536875210": [
+            7762194,
+            1529152219
+          ]
+        },
+        "roots": [
+          198,
+          7762194,
+          1529152219,
+          1536914215
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          1536914412,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 198,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 198,
+          "L_q": 9221486478,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            198
+          ]
+        },
+        {
+          "rho": 7762194,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 7762194,
+          "L_q": 9221486478,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 1529152219,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 9213724284,
+          "L_q": 9221486478,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 1536914215,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 9221486280,
+          "L_q": 9221486478,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        198
+      ]
+    },
+    {
+      "q": 4507287541,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          484127,
+          4506803414
+        ],
+        "t_roots": [
+          242064,
+          4507045478
+        ],
+        "rho_by_t": {
+          "242064": [
+            492,
+            4507287049
+          ],
+          "4507045478": [
+            119094996,
+            4388192545
+          ]
+        },
+        "roots": [
+          492,
+          119094996,
+          4388192545,
+          4507287049
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          4507287540,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 492,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 492,
+          "L_q": 27043725246,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            492
+          ]
+        },
+        {
+          "rho": 119094996,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 119094996,
+          "L_q": 27043725246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 4388192545,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 26924630250,
+          "L_q": 27043725246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 4507287049,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 27043724754,
+          "L_q": 27043725246,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        492
+      ]
+    },
+    {
+      "q": 5314337101,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          145799,
+          5314191302
+        ],
+        "t_roots": [
+          72900,
+          5314264202
+        ],
+        "rho_by_t": {
+          "72900": [
+            270,
+            5314336831
+          ],
+          "5314264202": [
+            19682730,
+            5294654371
+          ]
+        },
+        "roots": [
+          270,
+          19682730,
+          5294654371,
+          5314336831
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          5314337100,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 270,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 270,
+          "L_q": 31886022606,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            270
+          ]
+        },
+        {
+          "rho": 19682730,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 19682730,
+          "L_q": 31886022606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 5294654371,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 31866339876,
+          "L_q": 31886022606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 5314336831,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 31886022336,
+          "L_q": 31886022606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        270
+      ]
+    },
+    {
+      "q": 6540789877,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          583199,
+          6540206678
+        ],
+        "t_roots": [
+          291600,
+          6540498278
+        ],
+        "rho_by_t": {
+          "291600": [
+            540,
+            6540789337
+          ],
+          "6540498278": [
+            157463460,
+            6383326417
+          ]
+        },
+        "roots": [
+          540,
+          157463460,
+          6383326417,
+          6540789337
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          6540789876,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 540,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 540,
+          "L_q": 39244739262,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            540
+          ]
+        },
+        {
+          "rho": 157463460,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 157463460,
+          "L_q": 39244739262,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 6383326417,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 39087275802,
+          "L_q": 39244739262,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 6540789337,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 39244738722,
+          "L_q": 39244739262,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        540
+      ]
+    },
+    {
+      "q": 23134257901,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          304199,
+          23133953702
+        ],
+        "t_roots": [
+          152100,
+          23134105802
+        ],
+        "rho_by_t": {
+          "152100": [
+            390,
+            23134257511
+          ],
+          "23134105802": [
+            59318610,
+            23074939291
+          ]
+        },
+        "roots": [
+          390,
+          59318610,
+          23074939291,
+          23134257511
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          23134257900,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 390,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 390,
+          "L_q": 138805547406,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            390
+          ]
+        },
+        {
+          "rho": 59318610,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 59318610,
+          "L_q": 138805547406,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 23074939291,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 138746228796,
+          "L_q": 138805547406,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 23134257511,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 138805547016,
+          "L_q": 138805547406,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        390
+      ]
+    },
+    {
+      "q": 32933357101,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          362951,
+          32932994150
+        ],
+        "t_roots": [
+          181476,
+          32933175626
+        ],
+        "rho_by_t": {
+          "181476": [
+            426,
+            32933356675
+          ],
+          "32933175626": [
+            77308350,
+            32856048751
+          ]
+        },
+        "roots": [
+          426,
+          77308350,
+          32856048751,
+          32933356675
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          32933357100,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 426,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 426,
+          "L_q": 197600142606,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            426
+          ]
+        },
+        {
+          "rho": 77308350,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 77308350,
+          "L_q": 197600142606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 32856048751,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 197522834256,
+          "L_q": 197600142606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 32933356675,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 197600142180,
+          "L_q": 197600142606,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        426
+      ]
+    },
+    {
+      "q": 36803928493,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          383687,
+          36803544806
+        ],
+        "t_roots": [
+          191844,
+          36803736650
+        ],
+        "rho_by_t": {
+          "191844": [
+            438,
+            36803928055
+          ],
+          "36803736650": [
+            84027234,
+            36719901259
+          ]
+        },
+        "roots": [
+          438,
+          84027234,
+          36719901259,
+          36803928055
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          36803928492,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 438,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 438,
+          "L_q": 220823570958,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            438
+          ]
+        },
+        {
+          "rho": 84027234,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 84027234,
+          "L_q": 220823570958,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 36719901259,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 220739543724,
+          "L_q": 220823570958,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 36803928055,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 220823570520,
+          "L_q": 220823570958,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        438
+      ]
+    },
+    {
+      "q": 81313659181,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          570311,
+          81313088870
+        ],
+        "t_roots": [
+          285156,
+          81313374026
+        ],
+        "rho_by_t": {
+          "285156": [
+            534,
+            81313658647
+          ],
+          "81313374026": [
+            152272770,
+            81161386411
+          ]
+        },
+        "roots": [
+          534,
+          152272770,
+          81161386411,
+          81313658647
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          81313659180,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 534,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 534,
+          "L_q": 487881955086,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            534
+          ]
+        },
+        {
+          "rho": 152272770,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 152272770,
+          "L_q": 487881955086,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 81161386411,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 487729682316,
+          "L_q": 487881955086,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 81313658647,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 487881954552,
+          "L_q": 487881955086,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        534
+      ]
+    },
+    {
+      "q": 96947229133,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          622727,
+          96946606406
+        ],
+        "t_roots": [
+          311364,
+          96946917770
+        ],
+        "rho_by_t": {
+          "311364": [
+            558,
+            96947228575
+          ],
+          "96946917770": [
+            173740554,
+            96773488579
+          ]
+        },
+        "roots": [
+          558,
+          173740554,
+          96773488579,
+          96947228575
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          96947229132,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 558,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 558,
+          "L_q": 581683374798,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            558
+          ]
+        },
+        {
+          "rho": 173740554,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 173740554,
+          "L_q": 581683374798,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 96773488579,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 581509634244,
+          "L_q": 581683374798,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 96947228575,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 581683374240,
+          "L_q": 581683374798,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        558
+      ]
+    },
+    {
+      "q": 114733609453,
+      "compatible_scales": [
+        1
+      ],
+      "root_certificate": {
+        "discriminant_roots": [
+          677447,
+          114732932006
+        ],
+        "t_roots": [
+          338724,
+          114733270730
+        ],
+        "rho_by_t": {
+          "338724": [
+            582,
+            114733608871
+          ],
+          "114733270730": [
+            197136786,
+            114536472667
+          ]
+        },
+        "roots": [
+          582,
+          197136786,
+          114536472667,
+          114733608871
+        ],
+        "product_coefficients_mod_q_ascending": [
+          1,
+          0,
+          114733609452,
+          0,
+          1
+        ],
+        "complete_root_factorization_verified": true
+      },
+      "branches": [
+        {
+          "rho": 582,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 582,
+          "L_q": 688401656718,
+          "t_min": 0,
+          "t_max": 0,
+          "branch_size": 1,
+          "inputs": [
+            582
+          ]
+        },
+        {
+          "rho": 197136786,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 197136786,
+          "L_q": 688401656718,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 114536472667,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 688204519932,
+          "L_q": 688401656718,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        },
+        {
+          "rho": 114733608871,
+          "gcd_M_q": 1,
+          "compatible": true,
+          "x0": 688401656136,
+          "L_q": 688401656718,
+          "t_min": 0,
+          "t_max": -1,
+          "branch_size": 0,
+          "inputs": []
+        }
+      ],
+      "entire_input_fibre": [
+        582
+      ]
+    }
+  ],
+  "scope": "All X divisible by 6 in [1,600], all prime factors of each X^4-X^2+1, both retained scales 1 and 2, and every corresponding bounded root branch. No assertion about other inputs or universal prime coverage."
+}

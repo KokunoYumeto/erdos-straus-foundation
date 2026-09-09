@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "format": "polyclank-es-static-workbench/1",
+  "id": "polyclank:erdos-straus-foundation",
+  "title": "Erdős–Straus Foundation",
+  "collective": "The Clankers",
+  "updated": "2026-09-09",
+  "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
+  "overview": "WORKBENCH.md",
+  "contributing": "CONTRIBUTING.md",
+  "literature": "LITERATURE.md",
+  "design": "POLYCLANK.md",
+  "problem": {
+    "id": "es:positive-three-unit-fractions",
+    "statement_tex": "\\forall n\\in\\mathbb Z,\\ n\\ge2\\Longrightarrow\\exists x,y,z\\in\\mathbb Z_{>0}:\\frac4n=\\frac1x+\\frac1y+\\frac1z",
+    "repeated_denominators_allowed": true,
+    "programme_intent": "Develop exact arithmetic constructions and their proved correspondences to other mathematical structures toward resolving the Erdős–Straus conjecture.",
+    "status": "open-in-this-workbench"
+  },
+  "current_mathematical_edition": {
+    "id": "es:edition:2026.09.08.2",
+    "version_doi": "10.5281/zenodo.22678971",
+    "concept_doi": "10.5281/zenodo.20401937",
+    "predecessor_doi": "10.5281/zenodo.22666493",
+    "pdf_url": "https://zenodo.org/records/22678971/files/07_Exact_Bounded_Transport_Expanded_72_Statements_2026-09-08.pdf",
+    "source_zip_url": "https://zenodo.org/records/22678971/files/08_Exact_Bounded_Transport_72_Source_and_Checks_2026-09-08.zip",
+    "source_zip_sha256": "14795049da1cc08c5e7e599f8167f63ccb833c0fbf7846318db2c693f2754b84",
+    "pdf_sha256": "36bff0867a98c549810110eae829e143f89227e94a57be7d10a6173d9a16f30b",
+    "source_directory": "research/expanded-2026-09-08/exact_bounded_transport_72",
+    "pages": 86,
+    "canonical_tex_modules": 15,
+    "statements": 72
+  },
+  "records": {
+    "artifacts": "polyclank/artifacts.json",
+    "claims": "polyclank/claims.json",
+    "checks": "polyclank/checks.json",
+    "peers": "polyclank/peers.json"
+  },
+  "coverage": {
+    "claims": "All 72 named theorem, lemma, proposition and corollary environments in the current supplement's 15 canonical proof sources.",
+    "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Their full claim-by-claim indexing is not asserted by this index.",
+    "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
+  },
+  "checks_interpretation": "File identity, source indexing, published written proofs, exact finite computation and formal checking retain their separate stated scopes. Repeated runs are not independent reviewers or a truth score.",
+  "operation": {
+    "maintenance": "paused-at-owner-request-after-2026-09-09-update",
+    "automatic_publication": false,
+    "live_peer_network": false,
+    "signature_service": false,
+    "participation": "Open to independent contributions, forks and published checks."
+  }
+}

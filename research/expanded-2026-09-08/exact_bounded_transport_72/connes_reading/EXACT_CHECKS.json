@@ -1,0 +1,211 @@
+{
+  "status": "passed",
+  "scope": "finite checks of proved identities; no universal ES claim",
+  "counts": {
+    "finite_group_pairs": 10000,
+    "shell_pairs": 1656,
+    "primitive_witnesses": 42,
+    "adjacent_shell_pairs": 8088,
+    "abstract_pair_return_checks": 912,
+    "middle_divisor_primitive_returns": 592,
+    "marked_endpoint_successor_checks": 8088
+  },
+  "example": {
+    "p": 13,
+    "a4": {
+      "E": [
+        {
+          "u": 2,
+          "denominators": [
+            4,
+            130,
+            20
+          ]
+        },
+        {
+          "u": 8,
+          "denominators": [
+            4,
+            468,
+            18
+          ]
+        }
+      ],
+      "M": [
+        {
+          "u": 2,
+          "denominators": [
+            4,
+            26,
+            52
+          ]
+        },
+        {
+          "u": 8,
+          "denominators": [
+            4,
+            52,
+            26
+          ]
+        }
+      ]
+    },
+    "a5": {
+      "E": [
+        {
+          "u": 5,
+          "denominators": [
+            5,
+            130,
+            10
+          ]
+        }
+      ],
+      "M": []
+    },
+    "residue_fibres_mod3": {
+      "1": [
+        1,
+        4,
+        16
+      ],
+      "2": [
+        2,
+        8
+      ]
+    },
+    "retained_integral_divisor_map": [
+      [
+        16,
+        25
+      ]
+    ],
+    "mark_coboundary_1_16": 1
+  },
+  "adjacent_common_pair_examples": [
+    {
+      "p": 769,
+      "a": 194,
+      "R": 7,
+      "pairs": [
+        [
+          1,
+          769
+        ],
+        [
+          769,
+          1
+        ]
+      ],
+      "witnesses": {
+        "194": [
+          16410460,
+          21340
+        ],
+        "195": [
+          10496850,
+          13650
+        ]
+      }
+    }
+  ],
+  "successful_marked_endpoint_maps": [
+    {
+      "p": 73,
+      "a": 20,
+      "R": 7,
+      "t": 0,
+      "divisor_map": [
+        400,
+        441
+      ],
+      "primitive_shear": [
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ]
+      ],
+      "denominator_triples": [
+        [
+          20,
+          4380,
+          219
+        ],
+        [
+          21,
+          3066,
+          146
+        ]
+      ]
+    },
+    {
+      "p": 433,
+      "a": 113,
+      "R": 19,
+      "t": 0,
+      "divisor_map": [
+        12769,
+        12996
+      ],
+      "primitive_shear": [
+        [
+          113,
+          1
+        ],
+        [
+          114,
+          1
+        ]
+      ],
+      "denominator_triples": [
+        [
+          113,
+          293574,
+          2598
+        ],
+        [
+          114,
+          246810,
+          2165
+        ]
+      ]
+    },
+    {
+      "p": 997,
+      "a": 251,
+      "R": 7,
+      "t": 3,
+      "divisor_map": [
+        63001,
+        63504
+      ],
+      "primitive_shear": [
+        [
+          251,
+          1
+        ],
+        [
+          252,
+          1
+        ]
+      ],
+      "denominator_triples": [
+        [
+          251,
+          9008892,
+          35892
+        ],
+        [
+          252,
+          5778612,
+          22931
+        ]
+      ]
+    }
+  ],
+  "script_sha256": "1ed31222cc8675036e3169d1f4e90a70fa37b468410fea0741358199cc0029db"
+}
