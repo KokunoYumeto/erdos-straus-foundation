@@ -53,3 +53,15 @@ Scheduled mirroring and publication are paused at the maintainer's request after
 the 9 September 2026 organization update. Reading, discussion, forks and independent
 contributions remain welcome. The published mathematics and historical files are
 preserved; this update adds navigation and source-addressable records.
+
+## Results and continuing bridge programmes
+
+The [results bench](RESULTS.md) gives separately readable statements, proof notes,
+source relationships and actual checking scopes. Its [machine-readable records](results/records.json)
+complement the larger published statement index; they do not claim a complete ES
+resolution, independent review of the archive, or novelty for every result.
+
+The [recovered research directions](RESEARCH_DIRECTIONS.md) describe the owner's
+motivations, older Star–Kneser, Niemeier, Ogg, Busy Beaver, split-zero and geometric
+work, and the remaining questions. They preserve open directions without assigning
+the next researcher a compulsory task list. The raw chat archive remains private.
