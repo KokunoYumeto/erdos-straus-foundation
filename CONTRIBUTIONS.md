@@ -52,9 +52,9 @@ Use **u/UmbrellaCorp_HR** in public records. The owner identifies this as their 
 
 The public [three-theorem post](https://www.reddit.com/r/LLMmathematics/comments/1va0hr5/three_theorems_for_constructing_inversive_circle/) concerns inversive circle packings and generalized Machin formulas over algebraic number fields. The owner's reply identifies downstream sections: *Central-angle field closure*, *Circle-inversion coefficient transformation*, and *Full inverse-circle equation and evaluation covariance*. These section names provide a concrete adoption trail; the screenshots were not independently reviewed in this pass.
 
-### Correction of an unsupported proof claim
+### Counterexamples and mathematical auditing
 
-The [project-history post](https://www.reddit.com/r/LLMmathematics/comments/1szs5wf/comment/olmxr22/) explicitly credits this contributor with detecting an assumption inserted into a model-generated proof claim. That criticism is recorded as a contribution. The post points to an older version of the consolidated archive, but the exact erroneous step and replacement have not yet been matched. No specific faulty theorem is guessed.
+**u/UmbrellaCorp_HR's counterexamples and audits of the work led to significant improvements, including identifying a false positive where an AI claimed a proof that was not correct.** This records the owner's explicit attribution and the acknowledgement in the [project-history post](https://www.reddit.com/r/LLMmathematics/comments/1szs5wf/comment/olmxr22/). The contribution is credited at that scope; identifying a particular withdrawn paper or reconstructing its defective step is not a requirement of this attribution record.
 
 ### Positivity codes, prime production, and witness transport
 
@@ -102,4 +102,4 @@ The owner now supplies two additional motivations: pushing Leech-lattice maps so
 
 ## What is deliberately still unresolved
 
-The exact novelty of the first computational observation; each CivQ17 figure's use; the precise earlier proof gap caught by u/UmbrellaCorp_HR; full attribution within unshared joint conversations; the original CommonCareful two-page note; and the outcome of several lateral research requests remain incomplete. The [handoff](provenance/2026-09-10/HANDOFF.md) records them as missing links, not reasons to delete credit or invent a completed bridge.
+The exact novelty of the first computational observation; each CivQ17 figure's use; full attribution within unshared joint conversations; the original CommonCareful two-page note; and the outcome of several lateral research requests remain incomplete. The [handoff](provenance/2026-09-10/HANDOFF.md) records them as missing links, not reasons to delete credit or invent a completed bridge.

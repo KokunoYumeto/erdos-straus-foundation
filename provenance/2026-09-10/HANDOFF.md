@@ -10,17 +10,17 @@ This proposal adds CONTRIBUTIONS.md, PROJECT_HISTORY.md, the upload reading guid
 
 ## Reading route
 
-Start at [the contribution outline](../../CONTRIBUTIONS.md), then [the idea history](../../PROJECT_HISTORY.md). The uploaded-source reading guide explains exactly which material now supports the expanded u/UmbrellaCorp_HR record. The JSON registers expose the same attributions with source IDs and unresolved questions.
+Start at [the contribution outline](../../CONTRIBUTIONS.md), then [the idea history](../../PROJECT_HISTORY.md). The uploaded-source reading guide explains exactly which material now supports the expanded u/UmbrellaCorp_HR record. The JSON registers expose the same attributions with source IDs and unresolved questions. The later [integration PR #3](https://github.com/KokunoYumeto/erdos-straus-foundation/pull/3) contains subsequent source recovery and cross-workbench comparisons; the original history is not a statement that later recovery did not occur.
 
 ## Specific links still to recover
 
 For CivQ17, match the seven credited figures and further comments to source artifacts and downstream uses. Do not assert all suggestions were integrated.
 
-For UmbrellaCorp_HR, locate the exact earlier hidden assumption identified in the acknowledged correction. Match the newly supplied (71)–(100) continuation, orchard work, and unary selectors to actual public derivations. Keep joint and model-generated contributions visible rather than assigning every line to one human.
+For UmbrellaCorp_HR, retain this credit: their counterexamples and auditing significantly improved the work, including catching a false positive where an AI claimed a proof that was not correct. Do not make identifying a particular paper or reconstructing its faulty step an attribution task. Match the newly supplied (71)–(100) continuation, orchard work, and unary selectors to actual public derivations. Keep joint and model-generated contributions visible rather than assigning every line to one human.
 
 For CommonCareful3149, the pasted message supplies the exact progression. The focused R107 repository already contains a credited reconstruction and a proposed public Reddit permalink. The two-page original note remains unreceived in this record. Do not substitute the workbench's later note for it or describe a reconstructed certificate as the author's original upload.
 
-For the owner's bridge ideas, preserve the contemporary Niemeier/Leech, star/support, Busy Beaver and algebraic-development history. The Ogg request and the exact rationale for continued Leech exploration are present retrospective testimony. No completed map or historical timestamp was recovered for the Ogg direction.
+For the owner's bridge ideas, preserve the contemporary Niemeier/Leech, star/support, Busy Beaver and algebraic-development history. The Ogg request and the exact rationale for continued Leech exploration were initially recorded as retrospective testimony. Consult the subsequent source-recovery and cross-workbench records before describing a direction as missing, completed, or unexamined.
 
 The original deep-tail post is credited as the initiating source. Its deletion reason and precise novelty remain unknown. Do not add speculation about the author's motives.
 
