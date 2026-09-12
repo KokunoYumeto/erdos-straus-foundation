@@ -1,0 +1,168 @@
+{
+  "schema": "polyclank-provisional-provenance-sources/1",
+  "compiled_on": "2026-09-10",
+  "scope": "Source descriptions for the contribution and idea-history reconstruction; not a full discovery log or mathematical audit.",
+  "public_payload_policy": "No raw private conversation, private alias, deleted post body, protected source paper or full upload is republished.",
+  "sources": [
+    {
+      "id": "S-owner-20260910",
+      "kind": "owner-attribution-and-retrospective-testimony",
+      "locator": "Project-owner instruction received 10 September 2026 in the editorial conversation",
+      "public_url": null,
+      "inspected": true,
+      "supports": "Public association KokunoYumeto = u/lepthymo; requested public attribution; attribution of the three uploaded texts to u/UmbrellaCorp_HR; joint-work context; motivation for Leech, Busy Beaver and Ogg comparisons.",
+      "limitation": "A retrospective statement, not independent recovery of all prior events; no private aliases or raw conversation republished."
+    },
+    {
+      "id": "S-deep-tail",
+      "kind": "original-public-post-and-reply-returned-by-web-index",
+      "url": "https://www.reddit.com/r/LLMmathematics/comments/1sysemj/how_gpt55_and_gemini_31_pro_mapped_the_deep_tail/",
+      "title": "How GPT-5.5 and Gemini 3.1 Pro mapped the deep tail of the Erdős-Straus Conjecture",
+      "public_handle": "u/Far-Lifeguard519",
+      "inspected_on": "2026-09-10",
+      "supports": "Original computational investigation; model names in the post; owner's reply linking the analytical writeup and lattice idea.",
+      "status": "Deletion reported in the later public history and confirmed by owner; indexed rendering retrieved; present universal live visibility not established.",
+      "limitation": "Deletion reason and discovery novelty unknown; no body mirror or real-identity association supplied."
+    },
+    {
+      "id": "S-master-thread",
+      "kind": "public-project-history",
+      "url": "https://www.reddit.com/r/LLMmathematics/comments/1szs5wf/erd%C5%91sstraus_conjecture_umbral_moonshine_project/",
+      "public_handle": "u/lepthymo",
+      "inspected_on": "2026-09-10",
+      "supports": "Sequence of links and research motivations; initiating-source deletion; lattice/star, support-zero, Busy Beaver, supersignum, geometry and physics-comparison directions; acknowledgements.",
+      "limitation": "Relative timestamps not normalized. Different indexed views show different edits; no complete edit chronology recovered. Linked papers not all independently retrieved or audited."
+    },
+    {
+      "id": "S-civ-comment",
+      "kind": "public-comment-and-project-history-view",
+      "url": "https://www.reddit.com/r/LLMmathematics/comments/1szs5wf/comment/olmxr22/",
+      "public_handle": "u/CivQ17",
+      "inspected_on": "2026-09-10",
+      "supports": "The identity ((2n+1)^2-5)/4 = n^2+n-1 and root instruction; owner's follow-up links; explicit Umbrella correction acknowledgement in this view.",
+      "limitation": "Not an extraction of every comment or figure."
+    },
+    {
+      "id": "S-supersignum",
+      "kind": "public-idea-and-adoption-reply",
+      "url": "https://www.reddit.com/r/wildwestllmmath/comments/1rx677d/supersignum_unit/",
+      "public_handle": "u/TextBackground496",
+      "inspected_on": "2026-09-10",
+      "supports": "Circular/hyperbolic proposal and owner's reply linking a separate AI-assisted exposition at Zenodo 19099929.",
+      "limitation": "The original formulation's assertions are not certified by this source reading."
+    },
+    {
+      "id": "S-circle",
+      "kind": "public-mathematical-post-and-adoption-reply",
+      "url": "https://www.reddit.com/r/LLMmathematics/comments/1va0hr5/three_theorems_for_constructing_inversive_circle/",
+      "public_handle": "u/UmbrellaCorp_HR",
+      "inspected_on": "2026-09-10",
+      "supports": "Circle/number-field contribution; owner identifies three downstream section titles and an intended comparison with the external polynomial construction.",
+      "limitation": "Text and attribution inspected; theorem screenshots not successfully retrieved for independent visual examination."
+    },
+    {
+      "id": "S-jgp",
+      "kind": "public-upstream-method-discussion",
+      "url": "https://www.reddit.com/r/mathematics/comments/1v5sbya/claude_used_my_pipeline_to_find_a_counterexample/",
+      "public_handle": "u/JGPTech",
+      "inspected_on": "2026-09-10",
+      "supports": "Existence of the upstream pipeline discussion cited by the ES archive.",
+      "limitation": "Does not independently establish the external discovery causality claimed in its headline, or direct participation in ES."
+    },
+    {
+      "id": "S-zenodo-21805460",
+      "kind": "historical-publication-metadata",
+      "url": "https://zenodo.org/records/21805460",
+      "doi": "10.5281/zenodo.21805460",
+      "edition_label": "2026.08.05.16",
+      "publication_date_as_reported": "2026-08-05",
+      "inspected_on": "2026-09-10",
+      "access": "Full indexed metadata retrieved; direct page request also returned an error.",
+      "supports": "Seven credited CivQ17 figures; references to CivQ17, UmbrellaCorp_HR and JGPTech; derivative edition relationships and corrected global claims.",
+      "limitation": "Does not substitute for inspecting the seven figures or every archived proof."
+    },
+    {
+      "id": "S-foundation-bibliography",
+      "kind": "published-source-bibliography",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f/research/expanded-2026-09-08/exact_bounded_transport_72/publication_bibliography.tex",
+      "blob_sha": "8d61bc224c891f3c29e1047cce66728130e6d4cd",
+      "supports": "Explicit UmbrellaCorp_HR attribution for arithmetic, positivity-code and prime-production input including (71)–(100); later collective derivations and mathematical literature.",
+      "limitation": "Attribution is public; the cited original private communication was not made public by this bibliography."
+    },
+    {
+      "id": "S-foundation-map",
+      "kind": "published-research-map",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f/WORKBENCH.md",
+      "blob_sha": "f7e9f4179fe05bb132d7dd429b61ef8044c32203",
+      "supports": "Current arithmetic, bounded CRT, witness, cyclic-category and auxiliary-operator programmes and their scope boundaries.",
+      "limitation": "Primarily describes the current supplement, not the complete historical contribution record."
+    },
+    {
+      "id": "S-r107-note",
+      "kind": "public-downstream-reconstruction",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-workbench/blob/240c4e1db1ca8e07d21a7a8a5f9a0a043cb3aa95/work/MC-ES-PACKET-R107-001/r107_deficit_progression.tex",
+      "blob_sha": "5ec6e0481e0a59992b1a64a1954df6351c51ded2",
+      "inspected_on": "2026-09-10",
+      "inspection_scope": "Opening 150 source lines: title attribution, provenance, coordinates, progression and saturation statements, beginning of proof.",
+      "supports": "Explicit credit to CommonCareful3149 and a matching public reconstruction of the ten-point progression.",
+      "limitation": "Neither the contributor's missing original note nor a fresh replay of the Python or Lean certificate."
+    },
+    {
+      "id": "S-common-message",
+      "kind": "private-message-text-supplied-by-owner",
+      "locator": "CommonCareful3149 message pasted in the owner's 10 September 2026 request",
+      "public_url": null,
+      "supports": "Referral through UmbrellaCorp_HR; p=8803369 and residual 107; D={23+42j mod 53:0<=j<=9}; |D-D|=19; proposed saturation interpretation; express uncertainty about novelty and prepared two-page note.",
+      "limitation": "Sender attribution supplied by owner; original account message not accessed. The two-page note has not been received in this record. Full message not republished."
+    },
+    {
+      "id": "S-common-public-lead",
+      "kind": "permalink-found-in-downstream-source",
+      "url": "https://www.reddit.com/r/LLMmathematics/comments/1vy127z/",
+      "inspection": "Attempted 10 September 2026; retrieval failed.",
+      "supports": "A source lead recorded in the public R107 note, not independently inspected original content."
+    },
+    {
+      "id": "U1736",
+      "kind": "owner-supplied-human-ai-chat-export",
+      "name": "Untitled 1736.md",
+      "received_on": "2026-09-10",
+      "attributed_contributor": "u/UmbrellaCorp_HR",
+      "attribution_basis": "S-owner-20260910",
+      "sha256": "58b26f9d217be64b785e05dfd11b422fe0ff5da9d013a02e7cbb2274d709466a",
+      "bytes": 22995,
+      "public_payload": false,
+      "locators": ["equations (1)–(19)", "Execution checkpoint", "O10–O12", "O13", "A20", "P20"],
+      "summary_path": "UPLOAD_READING.md",
+      "limitations": ["Relative dates are unresolved.", "Referenced execution packages were not supplied here.", "Reported checks were not rerun.", "Human/model contribution split is not fully reconstructed."]
+    },
+    {
+      "id": "U1737",
+      "kind": "owner-supplied-human-ai-chat-export",
+      "name": "Untitled 1737.md",
+      "received_on": "2026-09-10",
+      "attributed_contributor": "u/UmbrellaCorp_HR",
+      "attribution_basis": "S-owner-20260910",
+      "sha256": "21e30d0dbde7caf6fb218d234bd1b555f50ae2cf5c7643d4d1203b5f4442c2e0",
+      "bytes": 45020,
+      "public_payload": false,
+      "locators": ["Current task statement", "numbered research sections 1–18", "equations (143)–(178)"],
+      "summary_path": "UPLOAD_READING.md",
+      "limitations": ["Instructions record intended work, not proof that every request was performed.", "Personal and non-mathematical passages omitted from public summary.", "Universal two-layer claims remain unproved in the source.", "Reported exact evaluations were not replayed."]
+    },
+    {
+      "id": "U1738",
+      "kind": "owner-supplied-human-ai-chat-export",
+      "name": "Untitled 1738.md",
+      "received_on": "2026-09-10",
+      "attributed_contributor": "u/UmbrellaCorp_HR",
+      "attribution_basis": "S-owner-20260910",
+      "sha256": "e71ffb876f19f2a6a5adf0f47f98b95122e5c14fca3e771b876d3a6977a83e1f",
+      "bytes": 14394,
+      "public_payload": false,
+      "locators": ["equations (71)–(100)", "internal filename Erdos_Straus_Complete_Positivity_CRT_Euclid_2026-09-08.md"],
+      "summary_path": "UPLOAD_READING.md",
+      "limitations": ["The internal filename's date is not independently verified creation metadata.", "No byte identity is assumed with a different internal source named in earlier provenance.", "Universal positivity and the predecessor-covering condition remain unproved in the source."]
+    }
+  ]
+}
