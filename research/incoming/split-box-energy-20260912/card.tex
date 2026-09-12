@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=175mm,paperheight=210mm,margin=14mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,microtype}
+\pagestyle{empty}
+\begin{document}
+\begin{center}
+{\Large\bfseries Split divisor boxes\par}
+\vspace{2mm}
+{\large An exact ES forcing criterion}\par
+\vspace{2mm}
+The Clankers\quad---\quad13 September 2026
+\end{center}
+\hrule\vspace{4mm}
+Retain the entire prime-exponent box $B_e=\prod_i[-e_i,e_i]_{\mathbb Z}$
+modulo $R=4a-p$. Split its budget $e=f+b$, and pull the original targets
+through the removed part:
+\[
+\mathcal T=\{-1,-p,-p^{-1}\},\qquad
+\mathcal F_b=\mathcal T\,v(B_b)^{-1}.
+\]
+\[
+\boxed{v(B_e)\cap\mathcal T\ne\varnothing
+\iff v(B_f)\cap\mathcal F_b\ne\varnothing.}
+\]
+In each quadratic-character cell, exact integer/parity minimization gives
+\[
+\boxed{\text{energy}<\text{target-avoidance minimum}
+\ \Longrightarrow\ \text{an original ES witness}.}
+\]
+\textbf{Strict example.} At $p=1201$, $a=312$, $R=47$, remove one
+power of $2$ from the exponent budget. The unsplit test does not certify.
+The partial negative-character cell has
+\[
+\text{mass}=30,\qquad\text{energy}=46<50=\text{minimum}.
+\]
+Its marked inverse returns
+\[
+\boxed{\frac4{1201}=\frac1{312}+\frac1{9608}+\frac1{46839}.}
+\]
+\textbf{Finite comparison.} Among 9531 specified shells, the earlier test
+certifies 240; adding the split tests certifies 438. Fourteen additions use
+strict finite minima. These are shell counts, not new prime coverage.
+
+\vspace{3mm}\hrule\vspace{3mm}
+\small
+The original exponent multiplicities, labels, signs and inverse fibres remain
+explicit. Failed states retain the exact denominator defect and affine inverse.
+The three-page note supplies proofs and reproducible standard-library checks.
+No universal ES proof, priority claim or independent review is asserted.
+This card summarizes the proof, rather than replacing it.
+\end{document}

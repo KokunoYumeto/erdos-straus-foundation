@@ -1,0 +1,136 @@
+{
+  "base": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "branch": "research/split-box-energy-20260912",
+  "core_checks": 7512721,
+  "date": "2026-09-13",
+  "documents": {
+    "all_pages_rendered_and_inspected": true,
+    "overfull_boxes": 0,
+    "posting_card_pages": 1,
+    "preprint_pages": 3,
+    "undefined_references": 0,
+    "workbench_pages": 5
+  },
+  "empty_shells": [
+    [37, 18], [61, 22], [241, 64], [3361, 847]
+  ],
+  "failed_transport_states": 11658,
+  "five_output_files_byte_identical": true,
+  "fresh_extraction": "passed",
+  "fresh_preprint_extracted_text_identical": true,
+  "full_affine_comparisons": 287352,
+  "full_affine_levels": [3, 5, 9, 15],
+  "literature": {
+    "inherited": "pinned character_energy.tex, boolean_cyclotomic.tex, common_modulus_hexagon.tex; Elsholtz-Tao 1107.1010 section 2",
+    "priority": "No historical-priority conclusion. Unretrieved leads are not proof sources.",
+    "search_terms": ["Erdos Straus collision energy", "Erdos Straus split divisor", "multiplicative energy divisors exponents"],
+    "unresolved_leads": ["Zenodo 19908760 metadata; full PDF not retrieved", "arXiv:2609.09204 search result; full text not retrieved"]
+  },
+  "nonclaims": ["universal ES existence", "new prime coverage", "Koide-chamber positivity for example", "runtime improvement", "density theorem", "Lean build", "independent review", "global S6 theorem", "full historical-priority search"],
+  "normal": "passed",
+  "optimized": "passed",
+  "optimizer_dp_moduli": [3, 5, 7, 9, 11, 15],
+  "outputs": {
+    "checks.json": {
+      "bytes": 841,
+      "git_blob_sha": "3b1ae0ef1f71f782bf41145d07f7df8be428aaa0",
+      "sha256": "45930a2a0d70adc8e977a403afcc9f9f8e5482a82459d0f52885b686705de2ce"
+    },
+    "example.json": {
+      "bytes": 12132,
+      "git_blob_sha": "721c42e0c02ace5c3632dc753556691716b1c322",
+      "sha256": "ab7b1c1c8152a350b8346551f325df31ce0ecc9a140b08c180325dcbe8df77db"
+    },
+    "scan.json": {
+      "bytes": 184211,
+      "git_blob_sha": "333b6c51e12629c3ab207c939c5a811228f91328",
+      "sha256": "18cde1784e70c6847906ee2437f8034f2801f0394faf9e39f1962a6a2d684aad"
+    },
+    "structural.json": {
+      "bytes": 497,
+      "git_blob_sha": "0c84e1466d552c213c4b84ee4db022e87d23831c",
+      "sha256": "2dd871a5af0d11fd0501a1cb2fa62478eb9a249ed5c26b585470c179770f1fef"
+    },
+    "transport.json": {
+      "bytes": 4669,
+      "git_blob_sha": "6733608b326615cecb78356f82a5860e884b8aab",
+      "sha256": "9fd81ea3f660cbec6f5aa3c72be4ab3609871eb0352991b9d8b82f75343670ea"
+    }
+  },
+  "python": "3.13.5",
+  "scan": {
+    "additional_finite_minimum": 14,
+    "additional_infeasible_minimum": 184,
+    "baseline_certified": 240,
+    "combined_certified": 438,
+    "primes": 54,
+    "shells": 9531
+  },
+  "scan_domain": "p prime, p=1 mod12, p<=1500; all integer p/4<a<p/2; remove one prime budget 1..e_i, retained box not a point",
+  "schema": "polyclank.scoped-replay.v1",
+  "sources": {
+    "LICENSE.md": {
+      "bytes": 1382,
+      "git_blob_sha": "e2e5559ee799900335538c673bf4ed589c1ec85f",
+      "sha256": "233df243c53d5e7f71da28c8376b04b060e058cd208d9641ecc34b879239193d"
+    },
+    "README.md": {
+      "bytes": 4249,
+      "git_blob_sha": "3ffca403e95b5c98973cac5825c1ed75a25e7482",
+      "sha256": "837ebc448c784d97a5afa738f4a7a4413c13bd32106f20e16e3608241775acff"
+    },
+    "card.tex": {
+      "bytes": 1914,
+      "git_blob_sha": "f71d700300e7f95f8b2648aeaf4a1855b8b2e484",
+      "sha256": "e714945d65bd4dc462f99ef371b9b30ae09a1f306b5904c7cafe662aaca05425"
+    },
+    "lean_plan.md": {
+      "bytes": 2053,
+      "git_blob_sha": "cb95118e1e430a84de306d9f70d46427309b5479",
+      "sha256": "b479050e52baed3dd0caaec5407f6e5719e24b3c144de70911b0cd7cd05c6956"
+    },
+    "morphisms.json": {
+      "bytes": 3521,
+      "git_blob_sha": "446416ac9631e7f6646ab19d3354add148d2564f",
+      "sha256": "d3bb2bfbe94b64961c1d25fd5d7994e99bf6b37630be9c270a1b2ce4239f3957"
+    },
+    "note.tex": {
+      "bytes": 1175,
+      "git_blob_sha": "c285559b1f189add25a1a09aabe2b577cc95f82a",
+      "sha256": "5bb3173d655287530d8756ad4fa21cea237c0d2eb2cb84c7c280e47df586737e"
+    },
+    "preprint.tex": {
+      "bytes": 8744,
+      "git_blob_sha": "085ed7444bb910933b54a01937c884f74e9bf58b",
+      "sha256": "e91c2b19e2ab95492ec3c65bcc4f9b2dbfe6aa4587b390b2c8e2d3f517e3a0f5"
+    },
+    "references.tex": {
+      "bytes": 1311,
+      "git_blob_sha": "b5f7491c6e5c10862aebb381d92d2dab0b4b924e",
+      "sha256": "4c1133f46f803d4144ba6ee615b99243037bf3885215ce15b043a60ba0535264"
+    },
+    "split_box.tex": {
+      "bytes": 7786,
+      "git_blob_sha": "ce682e559dcf7f6035c9d35aaa0d80be59bfa2d3",
+      "sha256": "85e4e9ee709c56959fd778f2c58608a71f3986de45fdb5e4aaf662a85efea93d"
+    },
+    "transport_details.tex": {
+      "bytes": 4622,
+      "git_blob_sha": "5558ae5436d836394ab32c1d62ff214d373256fb",
+      "sha256": "c8a5c25bfb0b07be3afe8af59af2a42457561085fa0fc86b862be3ead6444883"
+    },
+    "verify.py": {
+      "bytes": 14622,
+      "git_blob_sha": "c2c12a3f5523caff2457c1d0c946d7d8cecb2595",
+      "sha256": "2fc951df53ef60745c5ea01d8a80d917fadecdd6807d26e726a51c3c3fb5f003"
+    },
+    "verify_transport.py": {
+      "bytes": 5706,
+      "git_blob_sha": "941664e854c8f52d75cdd98d4c3516ccaa6bad1c",
+      "sha256": "fc433162757e05f8bd0a1e7e823b2ff089abc43f81d646737fb797dd6b5d0719"
+    }
+  },
+  "transport_checks": 605288,
+  "transport_primes": [5, 13, 37, 61, 97],
+  "transport_states": 12042
+}
