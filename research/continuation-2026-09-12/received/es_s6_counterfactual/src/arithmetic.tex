@@ -1,0 +1,171 @@
+\section{The full labelled arithmetic atlas}
+Fix a prime $p=4m+1$. The complete first-denominator interval is
+\[
+ m+1\le a\le3m,\qquad R=4a-p.
+\]
+It has $3\le R\le2p-3$ and $\gcd(a,R)=\gcd(p,R)=1$.
+For $a=\prod_q q^{e_q}$ retain every vector
+$f\in\prod_q\{0,\ldots,2e_q\}$ and $u=\prod_q q^{f_q}$.
+The inverse is $f_q=v_q(u)$.
+The channel formulas are
+\begin{align}
+ Q_E&=\left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\\
+ Q_M&=\left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+\end{align}
+For all raw orders, use the disjoint labels $(E,u,0),(E,u,1),(M,u,0)$;
+the exterior bit reverses the last two positions. The middle reversal is
+already $u\mapsto a^2/u$, so another middle bit would duplicate it.
+The first coordinate need not be the smallest at an arbitrary rational
+candidate; it was the smallest only in the completeness argument below.
+
+\begin{lemma}[Exact rational and integral return]\label{lem:denom}
+Every such candidate is a positive rational decomposition of $4/p$.
+Its last two entries have the same reduced denominator
+\[
+ D_E=\frac R{\gcd(R,4u+1)},\qquad
+ D_M=\frac R{\gcd(R,u+a)}.
+\]
+In particular $D$ is odd and prime to $p$, and $D=1$ exactly at an integral
+candidate. ES holds at $p$ exactly when some full-atlas candidate has $D=1$.
+The number of full ordered labels is at most $\tfrac32(p-1)^2$.
+\end{lemma}
+\begin{proof}
+Writing $Q=(a,Y,Z)$, substitution gives
+$(RY-pa)(RZ-pa)=p^2a^2$; both factors are positive.
+Expansion proves the rational reciprocal identity.
+For $E$, multiplying the $Y$ numerator by the unit $u$ gives
+$a^2(4u+1)$ modulo $R$, and the $Z$ numerator is
+$4a^2(4u+1)$ modulo $R$. For $M$, the analogous numerators reduce, up to
+units, to $u+a$. Their gcds with $R$ therefore agree exactly, proving the
+minimal denominators.
+
+For any positive integral solution, move a smallest denominator to the
+first position and retain the permutation. Then $p/4<a\le3p/4$, so it is
+in this interval. The positive factors $d_Y=RY-pa,d_Z=RZ-pa$ multiply to
+$p^2a^2$. As $p\nmid a$, $v_p(d_Y)$ is 0,1 or 2. The three inverse labels
+are respectively
+\[
+ (E,a^2/d_Y,0),\qquad (M,pa^2/d_Y,0),\qquad(E,d_Y/p^2,1).
+\]
+The congruence $d_Y\equiv-pa\pmod R$ gives the corresponding gate by
+multiplication by units. Conversely an integral candidate is a solution.
+Finally $\tau(a^2)\le2a-1$ by pairing divisors around $a$; hence
+$3\sum_{a=m+1}^{3m}\tau(a^2)\le24m^2=\tfrac32(p-1)^2$.
+This is the full-shell form of the inherited Type I/II divisor
+parametrizations \cite[\S2]{et}; it is not claimed as a new parametrization.
+\end{proof}
+
+For every rational candidate keep
+\[
+ g=\gcd(a,u),\quad h=g^2/u,\quad r=u/g,\quad s=a/g,
+\]
+so $h,r,s$ are positive integers, $a=hrs$, $u=hr^2$ and $\gcd(r,s)=1$.
+The quotients $\kappa=(pr+s)/R$ and $\lambda=(r+s)/R$ remain rational
+until the gate passes. In the unswapped order the inverse is
+$u=a^2/(RY-pa)$ for $E$ and $u=pa^2/(RY-pa)$ for $M$.
+Clearing $X=DQ$ gives a positive integral solution at $pD$, not at $p$:
+\[
+ F_p(X)=4X_0X_1X_2-p\sum_{i<j}X_iX_j
+       =p(D-1)\sum_{i<j}X_iX_j.
+\]
+The prime, the scale and the raw order therefore remain marks.
+
+\section{Arithmetic obstruction groups become geometric cocycles}
+For a candidate $\alpha$ let $g_E=4u+1$ or $g_M=u+a$, $h_0=\gcd(R,g_c)$,
+and $D=R/h_0$. Its cyclic obstruction group is the \emph{actual} subgroup
+\[
+ O_\alpha=\langle[g_c]_R\rangle\le\Z/R.
+\]
+The map $\Z/D\to O_\alpha$, $k\mapsto kg_c\bmod R$, is a bijection.
+On a representative $v\in O_\alpha\cap\{0,\ldots,R-1\}$ its inverse is
+\[
+ k=\frac v{h_0}(g_c/h_0)^{-1}\pmod D;
+\]
+modulo one the inverse is the unique zero class.
+Each prime power is retained by
+\[
+ v_\ell(D)=\max\{v_\ell(R)-v_\ell(g_c),0\}.
+\]
+Combining this inverse with Theorem~\ref{thm:class} gives the \emph{faithful}
+map
+\begin{equation}\label{eq:cohomap}
+ O_\alpha\xrightarrow{\sim}\langle[b_D]\rangle,\qquad
+ kg_c\longmapsto k[b_D].
+\end{equation}
+The inverse first reads minus the third cusp evaluation modulo $D$, then
+multiplies by $g_c$ modulo $R$. Thus the denominator obstruction is not
+merely assigned a similarly sized group: it is explicitly identified
+with a split cyclic subgroup of the geometric cocycle group.
+
+\begin{definition}
+The \emph{full denominator-labelled cover} at $p$ is the disjoint union,
+over every ordered atlas label $\alpha$, of the covers with fibres
+$\{\alpha\}\times\mathcal F_{D_\alpha}$ and actions
+$(\alpha,v)\mapsto(\alpha,a_jv)$. Its decoration includes the prime,
+shell, factorization, exponent vector, channel, swap, $h,r,s$, channel
+quotient, rational triple, clearing scale and all local losses.
+\end{definition}
+
+\begin{theorem}[Complete failure object]\label{thm:failure}
+ES fails at $p$ if and only if this full labelled cover has no section.
+Equivalently, every summand has a nonzero cocycle class of exact order
+$D_\alpha\ge3$, and every cusp permutation has no fixed sheet.
+The compactified components, degrees, ramification and genera of the
+complete object are given by Theorem~\ref{thm:orbits}, applied with their
+full arithmetic multiplicities.
+\end{theorem}
+\begin{proof}
+Over the connected base a section has a constant discrete candidate label.
+Theorem~\ref{thm:class} says its value in that summand is single-valued
+exactly when $D_\alpha=1$. Lemma~\ref{lem:denom} proves the arithmetic
+biconditional. The finite connected components are precisely the orbits,
+so Theorem~\ref{thm:orbits} supplies the stated complete classification.
+\end{proof}
+
+The cover degree is bounded by
+$\tfrac32(p-1)^2(2p-3)^3$. The small input consisting of all labelled
+$D_\alpha$ and the three formulas specifies every sheet and every edge;
+it is not necessary to expand that many sheets to validate the atlas.
+An actual global negative certificate would have to provide \emph{all}
+labels and a nonzero prime-power loss on each. No global negative example
+is supplied. The algorithm returns an existing positive witness on all
+four primes used in its full-atlas tests.
+
+The previous operator $H_p=\operatorname{diag}((D_\alpha-1)/2)$ has a
+separate meaning. Its inverse, when all $D>1$, multiplies the $\alpha$-th
+coordinate by $2/(D_\alpha-1)$. Every geometric loop permutation is
+invertible regardless of whether $D=1$. Neither assertion is the inverse
+of the other. The same denominator connects them, with its label retained.
+
+\paragraph{Restricted prototype.}
+At $p=241,a=64,R=15$ every divisor is $u=2^e$, $0\le e\le12$.
+For each canonical channel, complete modular arithmetic gives
+$D=3$ four times, $D=5$ six times, and $D=15$ three times.
+Including the exterior swap gives 39 labels, with multiplicities
+12,18,9 respectively. The associated cover has
+\[
+ 32949\text{ sheets},\qquad60\text{ connected components},\qquad
+ \sum g=5448.
+\]
+All 39 summands are sectionless. This is an actual complete negative
+\emph{shell}, not a false prime: other shells at 241 succeed.
+Taking the gcd of its denominators gives one and would destroy the
+leafwise obstruction. The validator rejects a restricted certificate,
+a deleted row, or a full atlas containing a successful candidate.
+
+
+\paragraph{Existing arithmetic transports lift, but do not erase their labels.}
+Exterior order reversal and middle complementation preserve $D$.
+The retained relation from $E(u)$ to $M(u')$, where $u,u'\mid a^2$ and
+$u'\equiv pu\pmod R$, preserves $D$ because
+$u'+a\equiv a(4u+1)\pmod R$ and $a$ is a unit.
+Thus every such labelled edge has the explicit equivariant cover map
+$(\alpha,v)\mapsto(\alpha',v)$, with reverse edge as inverse.
+The endpoint labels and the whole chosen path are retained; forgetting
+them would make this cover-valued functor nonfaithful on paths.
+The 39-state restricted graph above has three components, of sizes
+12,18,9 at levels 3,5,15. The certificate lists all edges.
+These particular transports are defect-preserving, not a claimed
+strict descent. Cross-shell arithmetic still needs an additional
+argument; arbitrary independent choices of $D_\alpha$ are not substituted
+for the simultaneously calculated values from one prime.

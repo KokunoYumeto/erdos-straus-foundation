@@ -1,0 +1,134 @@
+{
+  "allowed_integration": "Keep predecessor statements and byte identities; attach these corrections and continuations at their exact typed scope. Independent authorization is required for remote publication.",
+  "date": "2026-09-12",
+  "entrypoint": "workbench_audit.tex",
+  "execution_receipt": "execution_receipt.json",
+  "formalization_plan": "lean_ready_plan.md",
+  "format": "local-typed-morphism-audit-manifest/1",
+  "integration_modules": [
+    "src/01_symmetry_complete_traces_integrable.tex",
+    "src/02_octad_aligned_octonions_integrable.tex",
+    "src/03_shortest_trace_lifts_integrable.tex",
+    "src/audit_body.tex",
+    "src/morphism_register.tex"
+  ],
+  "morphisms": "morphisms.json",
+  "original_inventory": "source_inventory.json",
+  "pdf": "workbench_audit.pdf",
+  "publication_status": "Local artifact release only; no GitHub commit, pull request, merge, DOI or external deposit performed.",
+  "readable_morphisms": "MORPHISMS.md",
+  "remaining_obligation": "Construct a positive integral trace on F_p=0 for every prescribed prime. Linear lift, symmetry completion, and ambient cubic equivalences do not establish occupancy by themselves.",
+  "results": [
+    {
+      "id": "P1",
+      "pages": 3,
+      "pdf": "preprints/01_symmetry_complete_traces.pdf",
+      "pdf_sha256": "e9318aa1d442da58bdf895a46f3c37f9727164336187d7f880d1cff9836f5c29",
+      "posting_card_pdf": "preprints/01_symmetry_complete_traces_card.pdf",
+      "posting_card_png": "preprints/png/01_symmetry_complete_traces_card.png",
+      "priority": "novelty_review.json",
+      "proof_tex": "preprints/01_symmetry_complete_traces.tex",
+      "proof_tex_sha256": "0cffd597efcd30067edd1b32319685a0312bc59e388e78747c0585b3f7fca8dd",
+      "statement_and_equation_locators": [
+        {
+          "label": "eq:model",
+          "line": 45
+        },
+        {
+          "label": "prop:ninefailure",
+          "line": 67
+        },
+        {
+          "label": "thm:reconstruction",
+          "line": 88
+        },
+        {
+          "label": "eq:inverse",
+          "line": 90
+        },
+        {
+          "label": "lem:indexfour",
+          "line": 107
+        },
+        {
+          "label": "thm:syndrome",
+          "line": 133
+        },
+        {
+          "label": "eq:syndrome",
+          "line": 139
+        }
+      ],
+      "status": "Written proof plus explicit finite certificate; not Lean-verified or independently reviewed.",
+      "title": "Minimal stable trace completion and exact integral syndrome",
+      "verification": "execution_receipt.json"
+    },
+    {
+      "id": "P2",
+      "pages": 3,
+      "pdf": "preprints/02_octad_aligned_octonions.pdf",
+      "pdf_sha256": "8abadabca6202eef40b000b4b128360805ae3d7d5182e68b50dd6bfb1f99477f",
+      "posting_card_pdf": "preprints/02_octad_aligned_octonions_card.pdf",
+      "posting_card_png": "preprints/png/02_octad_aligned_octonions_card.png",
+      "priority": "novelty_review.json",
+      "proof_tex": "preprints/02_octad_aligned_octonions.tex",
+      "proof_tex_sha256": "d3d109217b81e1033fba39a9733697642f0d8602a2289ef4b7de4849cb8fd05d",
+      "statement_and_equation_locators": [
+        {
+          "label": "eq:model",
+          "line": 45
+        },
+        {
+          "label": "eq:wilson",
+          "line": 71
+        },
+        {
+          "label": "thm:isometry",
+          "line": 77
+        },
+        {
+          "label": "eq:traces",
+          "line": 112
+        },
+        {
+          "label": "prop:cubic",
+          "line": 132
+        },
+        {
+          "label": "eq:fullcorrection",
+          "line": 163
+        }
+      ],
+      "status": "Written proof plus explicit finite certificate; not Lean-verified or independently reviewed.",
+      "title": "Octad-aligned full-lattice isometry and corrected cubic interface",
+      "verification": "execution_receipt.json"
+    },
+    {
+      "id": "P3",
+      "pages": 3,
+      "pdf": "preprints/03_shortest_trace_lifts.pdf",
+      "pdf_sha256": "6e9d53daa2f8c7f445d0aac1743744efedc8ba293ac637b6fa51535f91215513",
+      "posting_card_pdf": "preprints/03_shortest_trace_lifts_card.pdf",
+      "posting_card_png": "preprints/png/03_shortest_trace_lifts_card.png",
+      "priority": "novelty_review.json",
+      "proof_tex": "preprints/03_shortest_trace_lifts.tex",
+      "proof_tex_sha256": "705c30e9f65c9b6bddfeddf2e49eb242b849187525c1e5d4455f1a19a8a2c617",
+      "statement_and_equation_locators": [
+        {
+          "label": "eq:model",
+          "line": 45
+        },
+        {
+          "label": "thm:shortest",
+          "line": 67
+        }
+      ],
+      "status": "Written proof plus explicit finite certificate; not Lean-verified or independently reviewed.",
+      "title": "Eight-seed proof of the all-integer shortest three-trace lift",
+      "verification": "execution_receipt.json"
+    }
+  ],
+  "scope": "Eight available predecessor packages, 49 typed arrows, three standalone research notes, executable repairs and exact inverse constructions.",
+  "source_reading": "source_reading.json",
+  "visual_review": "visual_review.json"
+}

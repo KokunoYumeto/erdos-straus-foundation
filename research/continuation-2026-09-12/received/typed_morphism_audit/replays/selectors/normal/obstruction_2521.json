@@ -1,0 +1,278 @@
+[
+  {
+    "R": 23,
+    "a": 636,
+    "channel": "M",
+    "denominators_increasing": [
+      636,
+      70588,
+      5611746
+    ],
+    "denominators_raw": [
+      636,
+      5611746,
+      70588
+    ],
+    "h": 2,
+    "kappa": null,
+    "lambda": 7,
+    "p": 2521,
+    "positive_chamber": true,
+    "r": 2,
+    "s": 159,
+    "u": 8
+  },
+  {
+    "R": 23,
+    "a": 636,
+    "channel": "E",
+    "denominators_increasing": [
+      636,
+      69748,
+      131876031
+    ],
+    "denominators_raw": [
+      636,
+      69748,
+      131876031
+    ],
+    "h": 53,
+    "kappa": 329,
+    "lambda": null,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 3,
+    "s": 4,
+    "u": 477
+  },
+  {
+    "R": 23,
+    "a": 636,
+    "channel": "M",
+    "denominators_increasing": [
+      636,
+      70588,
+      5611746
+    ],
+    "denominators_raw": [
+      636,
+      70588,
+      5611746
+    ],
+    "h": 2,
+    "kappa": null,
+    "lambda": 7,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 159,
+    "s": 2,
+    "u": 50562
+  },
+  {
+    "R": 31,
+    "a": 638,
+    "channel": "M",
+    "denominators_increasing": [
+      638,
+      55462,
+      804199
+    ],
+    "denominators_raw": [
+      638,
+      804199,
+      55462
+    ],
+    "h": 11,
+    "kappa": null,
+    "lambda": 1,
+    "p": 2521,
+    "positive_chamber": true,
+    "r": 2,
+    "s": 29,
+    "u": 44
+  },
+  {
+    "R": 31,
+    "a": 638,
+    "channel": "E",
+    "denominators_increasing": [
+      638,
+      51997,
+      23833534
+    ],
+    "denominators_raw": [
+      638,
+      51997,
+      23833534
+    ],
+    "h": 29,
+    "kappa": 163,
+    "lambda": null,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 2,
+    "s": 11,
+    "u": 116
+  },
+  {
+    "R": 31,
+    "a": 638,
+    "channel": "M",
+    "denominators_increasing": [
+      638,
+      55462,
+      804199
+    ],
+    "denominators_raw": [
+      638,
+      55462,
+      804199
+    ],
+    "h": 11,
+    "kappa": null,
+    "lambda": 1,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 29,
+    "s": 2,
+    "u": 9251
+  },
+  {
+    "R": 55,
+    "a": 644,
+    "channel": "M",
+    "denominators_increasing": [
+      644,
+      30252,
+      1217643
+    ],
+    "denominators_raw": [
+      644,
+      1217643,
+      30252
+    ],
+    "h": 1,
+    "kappa": null,
+    "lambda": 3,
+    "p": 2521,
+    "positive_chamber": true,
+    "r": 4,
+    "s": 161,
+    "u": 16
+  },
+  {
+    "R": 55,
+    "a": 644,
+    "channel": "M",
+    "denominators_increasing": [
+      644,
+      30252,
+      1217643
+    ],
+    "denominators_raw": [
+      644,
+      30252,
+      1217643
+    ],
+    "h": 1,
+    "kappa": null,
+    "lambda": 3,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 161,
+    "s": 4,
+    "u": 25921
+  },
+  {
+    "R": 87,
+    "a": 652,
+    "channel": "E",
+    "denominators_increasing": [
+      652,
+      18908,
+      23833534
+    ],
+    "denominators_raw": [
+      652,
+      18908,
+      23833534
+    ],
+    "h": 326,
+    "kappa": 29,
+    "lambda": null,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 1,
+    "s": 2,
+    "u": 326
+  },
+  {
+    "R": 111,
+    "a": 658,
+    "channel": "E",
+    "denominators_increasing": [
+      658,
+      14946,
+      131876031
+    ],
+    "denominators_raw": [
+      658,
+      14946,
+      131876031
+    ],
+    "h": 47,
+    "kappa": 159,
+    "lambda": null,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 7,
+    "s": 2,
+    "u": 2303
+  },
+  {
+    "R": 471,
+    "a": 748,
+    "channel": "E",
+    "denominators_increasing": [
+      748,
+      4004,
+      42899857
+    ],
+    "denominators_raw": [
+      748,
+      4004,
+      42899857
+    ],
+    "h": 11,
+    "kappa": 91,
+    "lambda": null,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 17,
+    "s": 4,
+    "u": 3179
+  },
+  {
+    "R": 1583,
+    "a": 1026,
+    "channel": "E",
+    "denominators_increasing": [
+      1026,
+      1634,
+      55610739
+    ],
+    "denominators_raw": [
+      1026,
+      1634,
+      55610739
+    ],
+    "h": 19,
+    "kappa": 43,
+    "lambda": null,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 27,
+    "s": 2,
+    "u": 13851
+  }
+]

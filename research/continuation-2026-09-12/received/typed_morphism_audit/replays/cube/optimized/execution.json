@@ -1,0 +1,14 @@
+{
+  "name": "cube",
+  "mode": "optimized",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-O",
+    "/mnt/data/typed_morphism_audit/inputs/cube_unification/verify.py",
+    "--out",
+    "/mnt/data/typed_morphism_audit/replays/cube/optimized/certificate.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.0781607520000023,
+  "source_sha256": "4d84b3f7a1aa5bb1fff8cee51f12a145f0dcebdb53e3012ddcb0a0eca34f132d"
+}

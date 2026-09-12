@@ -1,0 +1,379 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "runs": [
+    {
+      "name": "selectors",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/erdos_straus_research/verifier.py",
+        "--bound",
+        "2000000",
+        "--families",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/selectors/normal"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 23.090119448999985,
+      "source_sha256": "e95ba8a5621202d460695a5cc7dfdfbeea0550326db313c9567bd52002b4206a"
+    },
+    {
+      "name": "pointwise",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/es_pointwise_tranche/verifier.py",
+        "--self-test",
+        "--anchors",
+        "--cover-bound",
+        "10000000000",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/pointwise/normal"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.967588574000018,
+      "source_sha256": "a6ffb891ff59ad5d8e6502b39f82f019664bd2aab89213a46df314614947cc81"
+    },
+    {
+      "name": "jordan",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/three_coordinate_jordan/verify.py",
+        "--output",
+        "/mnt/data/typed_morphism_audit/replays/jordan/normal/certificate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.679900932999999,
+      "source_sha256": "849e26ed84266ddcee85dbd68d6ea0b5cffe588ee40bdf42009f1c267dc03c9e"
+    },
+    {
+      "name": "jordan",
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/typed_morphism_audit/inputs/three_coordinate_jordan/verify.py",
+        "--output",
+        "/mnt/data/typed_morphism_audit/replays/jordan/optimized/certificate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.639080695000018,
+      "source_sha256": "849e26ed84266ddcee85dbd68d6ea0b5cffe588ee40bdf42009f1c267dc03c9e"
+    },
+    {
+      "name": "jordan",
+      "normal_optimized_file_identity": true,
+      "normal_files": {
+        "stdout.txt": "344deae87e1c63691a9530062ecee5f37248be0dabe3cb3f7f7e227f292a2fea",
+        "certificate.json": "344deae87e1c63691a9530062ecee5f37248be0dabe3cb3f7f7e227f292a2fea",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "optimized_files": {
+        "stdout.txt": "344deae87e1c63691a9530062ecee5f37248be0dabe3cb3f7f7e227f292a2fea",
+        "certificate.json": "344deae87e1c63691a9530062ecee5f37248be0dabe3cb3f7f7e227f292a2fea",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cube",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/cube_unification/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/cube/normal/certificate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.9836244730000203,
+      "source_sha256": "4d84b3f7a1aa5bb1fff8cee51f12a145f0dcebdb53e3012ddcb0a0eca34f132d"
+    },
+    {
+      "name": "cube",
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/typed_morphism_audit/inputs/cube_unification/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/cube/optimized/certificate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.0781607520000023,
+      "source_sha256": "4d84b3f7a1aa5bb1fff8cee51f12a145f0dcebdb53e3012ddcb0a0eca34f132d"
+    },
+    {
+      "name": "cube",
+      "normal_optimized_file_identity": true,
+      "normal_files": {
+        "stdout.txt": "ed6f9fa8a6e4d0fe7d97758e5d638588525fb8f447de6ac91356a0a1526b566b",
+        "certificate.json": "ed6f9fa8a6e4d0fe7d97758e5d638588525fb8f447de6ac91356a0a1526b566b",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "optimized_files": {
+        "stdout.txt": "ed6f9fa8a6e4d0fe7d97758e5d638588525fb8f447de6ac91356a0a1526b566b",
+        "certificate.json": "ed6f9fa8a6e4d0fe7d97758e5d638588525fb8f447de6ac91356a0a1526b566b",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "graded_lie",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/cube_unification/graded_lie.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.497127608999989,
+      "source_sha256": "c0b683c3d8215590a0277c49c6a429046c541c1d9fedb4503cc8cd7caa8874e2"
+    },
+    {
+      "name": "graded_lie",
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/typed_morphism_audit/inputs/cube_unification/graded_lie.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.0757499380000013,
+      "source_sha256": "c0b683c3d8215590a0277c49c6a429046c541c1d9fedb4503cc8cd7caa8874e2"
+    },
+    {
+      "name": "graded_lie",
+      "normal_optimized_file_identity": true,
+      "normal_files": {
+        "stdout.txt": "3530fe20dfee1286734b4c1324d40b1f9d0f54ae170fbcfdd0339a9750678b53",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "optimized_files": {
+        "stdout.txt": "3530fe20dfee1286734b4c1324d40b1f9d0f54ae170fbcfdd0339a9750678b53",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "wilson_leech",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/cube_unification/leech_ternary.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 18.805249126000007,
+      "source_sha256": "7f6a0a4e8d283b3bee643a7b300777c0eeb98be7c9b88515052971f21d15f6c6"
+    },
+    {
+      "name": "wilson_leech",
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/typed_morphism_audit/inputs/cube_unification/leech_ternary.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.869277066999985,
+      "source_sha256": "7f6a0a4e8d283b3bee643a7b300777c0eeb98be7c9b88515052971f21d15f6c6"
+    },
+    {
+      "name": "wilson_leech",
+      "normal_optimized_file_identity": true,
+      "normal_files": {
+        "stdout.txt": "fc47448a8111c650d9697116e2c8a0ebb9b9fd7c29061e1c757ae82fa2122387",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "optimized_files": {
+        "stdout.txt": "fc47448a8111c650d9697116e2c8a0ebb9b9fd7c29061e1c757ae82fa2122387",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cayley",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/cayley_fable_bridge/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/cayley/normal"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.1467400059999875,
+      "source_sha256": "afbf088bfbb5ebea32adcfcbd7a9889c54e77e1b080f9a4f176f399f6d5c2f02"
+    },
+    {
+      "name": "cayley",
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/typed_morphism_audit/inputs/cayley_fable_bridge/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/cayley/optimized"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.6727404419999914,
+      "source_sha256": "afbf088bfbb5ebea32adcfcbd7a9889c54e77e1b080f9a4f176f399f6d5c2f02"
+    },
+    {
+      "name": "cayley",
+      "normal_optimized_file_identity": true,
+      "normal_files": {
+        "polynomial.json": "e3bc23a3acbec93dc626ee5a559df42da1f93c37e0e516bf35229623b131dff4",
+        "arithmetic.json": "558432bbb96739fb08fd8a961ab6549e153ba6d633e28ab7d7e418f6bbe60421",
+        "stdout.txt": "9a38728712fb23f2db37ac6c4252d256d2db83ac0d8d55cab3c5aadad1b44f65",
+        "receipt.json": "9a38728712fb23f2db37ac6c4252d256d2db83ac0d8d55cab3c5aadad1b44f65",
+        "lines.json": "ec701b407b826f622542b1ff140893c461b7aadaeb3d86c1f6e85d330314ab9a",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "optimized_files": {
+        "polynomial.json": "e3bc23a3acbec93dc626ee5a559df42da1f93c37e0e516bf35229623b131dff4",
+        "arithmetic.json": "558432bbb96739fb08fd8a961ab6549e153ba6d633e28ab7d7e418f6bbe60421",
+        "stdout.txt": "9a38728712fb23f2db37ac6c4252d256d2db83ac0d8d55cab3c5aadad1b44f65",
+        "receipt.json": "9a38728712fb23f2db37ac6c4252d256d2db83ac0d8d55cab3c5aadad1b44f65",
+        "lines.json": "ec701b407b826f622542b1ff140893c461b7aadaeb3d86c1f6e85d330314ab9a",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "tetrahedral",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/tetrahedral_markings/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/tetrahedral/normal"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.069632597000009,
+      "source_sha256": "38523593e82fde52b61026459e0dbfa35008e2f84295fdf8e7101ce357c19ed7"
+    },
+    {
+      "name": "tetrahedral",
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/typed_morphism_audit/inputs/tetrahedral_markings/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/tetrahedral/optimized"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.1478180959999804,
+      "source_sha256": "38523593e82fde52b61026459e0dbfa35008e2f84295fdf8e7101ce357c19ed7"
+    },
+    {
+      "name": "tetrahedral",
+      "normal_optimized_file_identity": true,
+      "normal_files": {
+        "tetrahedral_pencils.json": "fdc6ae4180337213e14f3816f5ad6f6d103b2c7e7b45cd94be54bf7423783d08",
+        "stdout.txt": "2bb1eb3b87dbe29a7f9f1808adfc6b2fb4da300f3707744254a1d7b82ca2659a",
+        "receipt.json": "2bb1eb3b87dbe29a7f9f1808adfc6b2fb4da300f3707744254a1d7b82ca2659a",
+        "orthogonal_algebra.json": "08a6cf1ac05acbc276dbea78520f5ef1629bb9699efa5c58edebead4a10a6547",
+        "cayley_atlas.json": "7add87091997c48098d246444b1d71d72439fa12fb5f9dbeba49e072081b2f98",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "optimized_files": {
+        "tetrahedral_pencils.json": "fdc6ae4180337213e14f3816f5ad6f6d103b2c7e7b45cd94be54bf7423783d08",
+        "stdout.txt": "2bb1eb3b87dbe29a7f9f1808adfc6b2fb4da300f3707744254a1d7b82ca2659a",
+        "receipt.json": "2bb1eb3b87dbe29a7f9f1808adfc6b2fb4da300f3707744254a1d7b82ca2659a",
+        "orthogonal_algebra.json": "08a6cf1ac05acbc276dbea78520f5ef1629bb9699efa5c58edebead4a10a6547",
+        "cayley_atlas.json": "7add87091997c48098d246444b1d71d72439fa12fb5f9dbeba49e072081b2f98",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "mellin",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/mellin_leech_research/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/mellin/normal"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.747140933999987,
+      "source_sha256": "a4e242cdd429eb51319d24ae545429710b9b562b7bc1ddaa24ed7e35fd007dd1"
+    },
+    {
+      "name": "mellin",
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/typed_morphism_audit/inputs/mellin_leech_research/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/mellin/optimized"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.951571245000025,
+      "source_sha256": "a4e242cdd429eb51319d24ae545429710b9b562b7bc1ddaa24ed7e35fd007dd1"
+    },
+    {
+      "name": "mellin",
+      "normal_optimized_file_identity": true,
+      "normal_files": {
+        "leech_branches.json": "ee0fb4ef57df0229a8716f9351f1f7119a4d50e67a5ffa4aedafc411cc62dcbb",
+        "stdout.txt": "5705b46585d085cd4b73d5961c2c4c649ff80692caef753ac6ce7a18af3567ef",
+        "analytic_constants.json": "f037ef399e220c7b71fe310093e65fa7992eea21e33b81c555c895aa7a6c9867",
+        "finite_receipt.json": "be968c572e917606fcf5425146dd62a90490c7c620ee3c39872c84636923d344",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "optimized_files": {
+        "leech_branches.json": "ee0fb4ef57df0229a8716f9351f1f7119a4d50e67a5ffa4aedafc411cc62dcbb",
+        "stdout.txt": "5705b46585d085cd4b73d5961c2c4c649ff80692caef753ac6ce7a18af3567ef",
+        "analytic_constants.json": "f037ef399e220c7b71fe310093e65fa7992eea21e33b81c555c895aa7a6c9867",
+        "finite_receipt.json": "be968c572e917606fcf5425146dd62a90490c7c620ee3c39872c84636923d344",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "trace_inverse",
+      "mode": "normal",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "/mnt/data/typed_morphism_audit/inputs/leech_trace_inverse/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/trace_inverse/normal"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.175336171000026,
+      "source_sha256": "a6e90f48d69979a5e69040665dc6ca75b9605ee68dd5f8324da8389eb023f4f4"
+    },
+    {
+      "name": "trace_inverse",
+      "mode": "optimized",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "/mnt/data/typed_morphism_audit/inputs/leech_trace_inverse/verify.py",
+        "--out",
+        "/mnt/data/typed_morphism_audit/replays/trace_inverse/optimized"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.148670887000037,
+      "source_sha256": "a6e90f48d69979a5e69040665dc6ca75b9605ee68dd5f8324da8389eb023f4f4"
+    },
+    {
+      "name": "trace_inverse",
+      "normal_optimized_file_identity": true,
+      "normal_files": {
+        "arithmetic.json": "fdfc929c3c58c3d07993fc149d2b17fa46660b0220e7834b14b6293963129758",
+        "stdout.txt": "1b0343ecf03e70b5935c97d979a5ce7a17240fa4ceb70ed4f4e4e874ed0f0aa1",
+        "shortest_lifts.json": "0188197541df7e71f7496b1d808e793dfe1b1895fe5dd8b824ca1f2c23ca531c",
+        "twelve_views.json": "3926b650c6613f3253d53044d0a7b08e68a2f0ccb043cc76aeedd212483da9b6",
+        "summary.json": "69bee4a880d5dd74c66cf7c12d86d3e894b4b7f8a5aef959a7df716c4e74778c",
+        "trace_frame.json": "b9c4edf0cbbe37b41d90cd41ddd612cfab096581ae7b2a73a9c569249811c29d",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "optimized_files": {
+        "arithmetic.json": "fdfc929c3c58c3d07993fc149d2b17fa46660b0220e7834b14b6293963129758",
+        "stdout.txt": "1b0343ecf03e70b5935c97d979a5ce7a17240fa4ceb70ed4f4e4e874ed0f0aa1",
+        "shortest_lifts.json": "0188197541df7e71f7496b1d808e793dfe1b1895fe5dd8b824ca1f2c23ca531c",
+        "twelve_views.json": "3926b650c6613f3253d53044d0a7b08e68a2f0ccb043cc76aeedd212483da9b6",
+        "summary.json": "69bee4a880d5dd74c66cf7c12d86d3e894b4b7f8a5aef959a7df716c4e74778c",
+        "trace_frame.json": "b9c4edf0cbbe37b41d90cd41ddd612cfab096581ae7b2a73a9c569249811c29d",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ]
+}

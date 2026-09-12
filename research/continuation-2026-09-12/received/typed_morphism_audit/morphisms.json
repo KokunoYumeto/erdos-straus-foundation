@@ -1,0 +1,1206 @@
+{
+  "date": "2026-09-12",
+  "interpretation": "A many-to-one morphism is allowed. Claims of inverse transport explicitly retain its fibres or prove the target property descends.",
+  "morphisms": [
+    {
+      "domain_and_exceptional_locus": "positive integers; all available prime exponents 0..2v_q(a)",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton",
+      "id": "M01",
+      "information_loss_and_required_marks": "None. Do not replace the exponent box by the subgroup it generates.",
+      "inverse_or_reconstruction": "a=hrs, u=hr^2",
+      "map": "d=gcd(a,u); r=u/d; s=a/d; h=d/r",
+      "source_locators": [
+        {
+          "label": "prop:divisor",
+          "line": 89,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "a>0,u|a^2",
+      "status": "retained",
+      "target_type": "(h,r,s), gcd(r,s)=1",
+      "title": "Divisor to primitive marked ray"
+    },
+    {
+      "domain_and_exceptional_locus": "p odd prime; 0<R<p; R|pr+s; p+R=4hrs; kappa=(pr+s)/R",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton on the marked image",
+      "id": "M02",
+      "information_loss_and_required_marks": "Sorting/permuting is not part of this arrow.",
+      "inverse_or_reconstruction": "u=x^2/(R*y-p*x), then M01; kappa from p,r,s,R",
+      "map": "(hrs,hs*kappa,p*h*r*kappa)",
+      "source_locators": [
+        {
+          "label": "eq:E",
+          "line": 75,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        },
+        {
+          "label": "eq:Ediv",
+          "line": 100,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "(p,R,u,h,r,s,E,kappa)",
+      "status": "retained",
+      "target_type": "ordered (x,y,z) with retained p,R,E",
+      "title": "Exterior denominator reconstruction"
+    },
+    {
+      "domain_and_exceptional_locus": "p odd prime; 0<R<p; R|r+s; p+R=4hrs; lambda=(r+s)/R",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton on the marked image",
+      "id": "M03",
+      "information_loss_and_required_marks": "lambda is not exterior kappa.",
+      "inverse_or_reconstruction": "u=p*x^2/(R*y-p*x), then M01",
+      "map": "(hrs,p*h*s*lambda,p*h*r*lambda)",
+      "source_locators": [
+        {
+          "label": "eq:M",
+          "line": 83,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        },
+        {
+          "label": "eq:Mdiv",
+          "line": 101,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "(p,R,u,h,r,s,M,lambda)",
+      "status": "retained",
+      "target_type": "ordered (x,y,z) with retained p,R,M",
+      "title": "Middle denominator reconstruction"
+    },
+    {
+      "domain_and_exceptional_locus": "same bounded domain as M03; R odd >1",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "exactly two, u and a^2/u",
+      "id": "M04",
+      "information_loss_and_required_marks": "The two marked states must not be counted as two distinct sorted triples.",
+      "inverse_or_reconstruction": "retain u or an orientation bit to invert",
+      "map": "u -> min-order of the last two denominators",
+      "source_locators": [
+        {
+          "label": "prop:orientation",
+          "line": 128,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        },
+        {
+          "label": "eq:middleinvolution",
+          "line": 133,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "oriented middle divisor states",
+      "status": "retained",
+      "target_type": "increasing denominator triples",
+      "title": "Middle orientation quotient"
+    },
+    {
+      "domain_and_exceptional_locus": "auxiliary q does not divide coefficients; determinant-collision primes retained; all cutoffs fixed for PNT",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "a block may contain several rays",
+      "id": "M05",
+      "information_loss_and_required_marks": "A density result is not an inverse returning a state at each prime.",
+      "inverse_or_reconstruction": "Retain ray labels and the entire root block",
+      "map": "ray (r,s) -> -s/r mod q; group equal roots",
+      "source_locators": [
+        {
+          "label": "thm:pgf",
+          "line": 193,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        },
+        {
+          "label": "prop:collisions",
+          "line": 533,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "eligible finite auxiliary-prime set and rays",
+      "status": "retained",
+      "target_type": "finite joint incidence law",
+      "title": "Prime-incidence root blocks"
+    },
+    {
+      "domain_and_exceptional_locus": "original bounded exponent multiset; quotient-group zero-sum bounds 2,3,5",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "all extensions by discarded occurrences satisfying the divisor budget",
+      "id": "M06",
+      "information_loss_and_required_marks": "Existence of a residue in generated support is insufficient.",
+      "inverse_or_reconstruction": "No unique inverse: record deleted occurrences and the source residual",
+      "map": "retain a minimal target-product submultiset",
+      "source_locators": [
+        {
+          "label": "lem:extract",
+          "line": 259,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        },
+        {
+          "label": "thm:235",
+          "line": 266,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "actual prime-factor occurrences in a residual",
+      "status": "retained",
+      "target_type": "bounded Omega residual",
+      "title": "Composite residual extraction"
+    },
+    {
+      "domain_and_exceptional_locus": "rd-sb=epsilon=+-1; A,RB primitive; new coordinates positive; r_prime*s_prime|a",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton for chosen basis",
+      "id": "M07",
+      "information_loss_and_required_marks": "Retain p,R,basis and shell divisor test. The ordinary mediant does not preserve R>1.",
+      "inverse_or_reconstruction": "A=epsilon*(d*r_prime-b*s_prime); B=epsilon*(r*s_prime-s*r_prime)/R",
+      "map": "v_prime=A*v+R*B*w; kappa_prime=A*kappa+B*(bp+d)",
+      "source_locators": [
+        {
+          "label": "thm:lattice",
+          "line": 548,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        },
+        {
+          "label": "eq:latticemap",
+          "line": 555,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "state v=(r,s), companion w=(b,d)",
+      "status": "retained",
+      "target_type": "all same-(p,R) exterior rays",
+      "title": "Same-shell unimodular companion map"
+    },
+    {
+      "domain_and_exceptional_locus": "g=gcd(h,r); necessary and sufficient R|4r^3-1",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "exact finite g-indexed inverse fibre",
+      "id": "M08",
+      "information_loss_and_required_marks": "Forgetting g can identify two distinct exterior states.",
+      "inverse_or_reconstruction": "for each g: h=g*b1,r=g*a1,s=H/g^2; require g^2|H, coprimality, cubic congruence",
+      "map": "(H,a1,b1)=(s*g^2,r/g,h/g)",
+      "source_locators": [
+        {
+          "label": "thm:cubic",
+          "line": 581,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        },
+        {
+          "label": "eq:cubicfibre",
+          "line": 600,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "exterior marking",
+      "status": "retained",
+      "target_type": "middle marking plus square-divisor index g",
+      "title": "Exterior-to-middle cubic exchange"
+    },
+    {
+      "domain_and_exceptional_locus": "t|a/A, nd|A, gcd(n,d)=1; tn+d=0 mod R; tn>8d; gcd(a,R)=1",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "all anchor pairs giving integral t; collisions t*n*d_prime=t_prime*n_prime*d",
+      "id": "M09",
+      "information_loss_and_required_marks": "No unbounded exponent lift or positivity surrogate.",
+      "inverse_or_reconstruction": "t=d*s/(n*r), with original anchor pair retained",
+      "map": "g=gcd(d,tn); (h,r,s)=(a*g^2/(dtn),d/g,tn/g); u=a*d/(tn)",
+      "source_locators": [
+        {
+          "label": "eq:packetmap",
+          "line": 127,
+          "path": "inputs/es_pointwise_tranche/tranche.tex",
+          "sha256": "be5bcf96043d3a7d725cc287eea76c042fe40ae65f930026cca9450a8c36c54a"
+        },
+        {
+          "label": "eq:packetinverse",
+          "line": 163,
+          "path": "inputs/es_pointwise_tranche/tranche.tex",
+          "sha256": "be5bcf96043d3a7d725cc287eea76c042fe40ae65f930026cca9450a8c36c54a"
+        }
+      ],
+      "source_type": "(p,R,A;t,n,d) from actual divisor boxes",
+      "status": "retained",
+      "target_type": "positive middle state",
+      "title": "Angular anchor packet"
+    },
+    {
+      "domain_and_exceptional_locus": "k=(4u+1)/R; all entries positive; R<p; u|a^2",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton on the stated congruence/divisor locus",
+      "id": "M10",
+      "information_loss_and_required_marks": "k differs from kappa. Search termination does not imply a nonempty output.",
+      "inverse_or_reconstruction": "R=(4u+1)/k; a=(u+D)/k",
+      "map": "k=(4u+1)/R; D=(kp+1)/4=k*a-u",
+      "source_locators": [
+        {
+          "label": "prop:hyperbola",
+          "line": 464,
+          "path": "inputs/es_pointwise_tranche/tranche.tex",
+          "sha256": "be5bcf96043d3a7d725cc287eea76c042fe40ae65f930026cca9450a8c36c54a"
+        }
+      ],
+      "source_type": "(p,R,a,u,E)",
+      "status": "retained",
+      "target_type": "(p,k,D,u)",
+      "title": "Exterior shell/hyperbola exchange"
+    },
+    {
+      "domain_and_exceptional_locus": "omega=e^(2pi i/3); retain complex conjugation and slot order",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton",
+      "id": "M11",
+      "information_loss_and_required_marks": "Do not identify vector-space coordinates with componentwise direct-product multiplication.",
+      "inverse_or_reconstruction": "qj=t+omega^(-j)zeta+omega^j*conjugate(zeta)",
+      "map": "t=sum(q)/3; zeta=(q0+omega*q1+omega^2*q2)/3",
+      "source_locators": [
+        {
+          "label": "eq:fourier",
+          "line": 30,
+          "path": "inputs/three_coordinate_jordan/note.tex",
+          "sha256": "aae33fa1e39f72157d5ca7c72ebff10a025dec92c725115c5b5c0fd4e65ed710"
+        },
+        {
+          "label": "eq:inverse-fourier",
+          "line": 35,
+          "path": "inputs/three_coordinate_jordan/note.tex",
+          "sha256": "aae33fa1e39f72157d5ca7c72ebff10a025dec92c725115c5b5c0fd4e65ed710"
+        }
+      ],
+      "source_type": "ordered real triple q",
+      "status": "retained",
+      "target_type": "(t,zeta) in R direct-sum C",
+      "title": "Ordered Fourier coordinates"
+    },
+    {
+      "domain_and_exceptional_locus": "same fields and normalization as M11",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "isomorphism",
+      "id": "M12",
+      "information_loss_and_required_marks": "Norm is cubic product; spin-factor c=0 is a different product.",
+      "inverse_or_reconstruction": "M11 transports multiplication both ways",
+      "map": "(t,z)*(u,w)=(tu+2Re(z*bar(w)),t*w+u*z+bar(z)*bar(w))",
+      "source_locators": [
+        {
+          "label": "prop:product",
+          "line": 40,
+          "path": "inputs/three_coordinate_jordan/note.tex",
+          "sha256": "aae33fa1e39f72157d5ca7c72ebff10a025dec92c725115c5b5c0fd4e65ed710"
+        },
+        {
+          "label": "eq:family",
+          "line": 84,
+          "path": "inputs/three_coordinate_jordan/note.tex",
+          "sha256": "aae33fa1e39f72157d5ca7c72ebff10a025dec92c725115c5b5c0fd4e65ed710"
+        }
+      ],
+      "source_type": "ordered componentwise multiplication",
+      "status": "retained",
+      "target_type": "star multiplication in Fourier coordinates",
+      "title": "Transported cubic algebra"
+    },
+    {
+      "domain_and_exceptional_locus": "q=t^2-2Norm(z) is anisotropic over Q; not over R",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton",
+      "id": "M13",
+      "information_loss_and_required_marks": "Jordan invertibility is not division-algebra cancellation.",
+      "inverse_or_reconstruction": "involution on Jordan-invertible elements",
+      "map": "(t,z) -> (t,-z)/q",
+      "source_locators": [
+        {
+          "label": "thm:rational",
+          "line": 127,
+          "path": "inputs/three_coordinate_jordan/note.tex",
+          "sha256": "aae33fa1e39f72157d5ca7c72ebff10a025dec92c725115c5b5c0fd4e65ed710"
+        }
+      ],
+      "source_type": "Q direct-sum Q(omega), spin product",
+      "status": "retained",
+      "target_type": "nonzero elements with Jordan inverse",
+      "title": "Rational spin inverse"
+    },
+    {
+      "domain_and_exceptional_locus": "B fixed; output vector space retained",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "scalar contraction alone has a kernel",
+      "id": "M14",
+      "information_loss_and_required_marks": "27 input cells for a 3D algebra carry 3 output coordinates: 81 scalar coefficients, not one scalar 27-cube.",
+      "inverse_or_reconstruction": "retain every output component, or full family ell composed with associator",
+      "map": "[a,u;b,v;c,w]=(0,B(u,v)w-B(v,w)u)",
+      "source_locators": [
+        {
+          "label": "prop:recovery",
+          "line": 81,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "source algebra (a,u)(b,v)=(ab+B(u,v),av+bu)",
+      "status": "retained",
+      "target_type": "vector-valued trilinear tensor",
+      "title": "Full three-input associator"
+    },
+    {
+      "domain_and_exceptional_locus": "chosen marks e_i and splittings; incompatible shared edges have no lift",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "affine space of dimension eight",
+      "id": "M15",
+      "information_loss_and_required_marks": "Three marked faces do not determine the full cube.",
+      "inverse_or_reconstruction": "read faces and subtract T0",
+      "map": "inclusion-exclusion lift T0 plus Q0 tensor Q1 tensor Q2",
+      "source_locators": [
+        {
+          "label": "thm:glue",
+          "line": 173,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "three bilinear faces with compatible shared edges",
+      "status": "retained",
+      "target_type": "scalar 3x3x3 tensor",
+      "title": "Three marked-face gluing"
+    },
+    {
+      "domain_and_exceptional_locus": "rank exactly two along smooth determinant curves; left/right kernels per slot",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "forgetting tensor or line bundle is not injective",
+      "id": "M16",
+      "information_loss_and_required_marks": "Identical cubic equations do not identify incidence maps or full-turn translation.",
+      "inverse_or_reconstruction": "phi_ji; retain tensor and all basis changes",
+      "map": "phi_ij given by tensor(v_i,v_j,-)=0",
+      "source_locators": [
+        {
+          "label": "lem:kernel",
+          "line": 234,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        },
+        {
+          "label": "thm:infinite",
+          "line": 271,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "nondegenerate cube plus three typed planes",
+      "status": "retained",
+      "target_type": "three genus-one curves and maps phi_ij",
+      "title": "Cube kernel-incidence transport"
+    },
+    {
+      "domain_and_exceptional_locus": "rank-two arithmetic face; distinct lattice/arithmetic scale conventions",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton with all marks; many cubes without marks",
+      "id": "M17",
+      "information_loss_and_required_marks": "This attaches a known witness, not produces an unknown one.",
+      "inverse_or_reconstruction": "undo each basis change and divide the retained clearing scale",
+      "map": "Gaussian normalize faces; L A R=M; change all tensor slots and clear denominators",
+      "source_locators": [
+        {
+          "label": "thm:attachment",
+          "line": 716,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "existing ordered ES witness plus Moore cube",
+      "status": "retained",
+      "target_type": "integral cube, three basis changes, clearing scale",
+      "title": "Arithmetic-face attachment to cube"
+    },
+    {
+      "domain_and_exceptional_locus": "oriented 3D spaces; first-Tits coefficient field fixed",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "injective",
+      "id": "M18",
+      "information_loss_and_required_marks": "D_u^2=0 and I+tD_u apply to pure u; not arbitrary sums.",
+      "inverse_or_reconstruction": "read tensor coefficients from operator entries using epsilon_ijk",
+      "map": "for pure a*b*c: D(A,B,C)=(b(a cross Cc)^T,c(b cross Aa)^T,a(c cross Bb)^T)",
+      "source_locators": [
+        {
+          "label": "eq:Du",
+          "line": 361,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        },
+        {
+          "label": "eq:Dinverse",
+          "line": 371,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        },
+        {
+          "label": "thm:move",
+          "line": 380,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "T in V0 tensor V1 tensor V2",
+      "status": "retained",
+      "target_type": "linear D_T on three Hom blocks",
+      "title": "Tensor to graded Lie operator"
+    },
+    {
+      "domain_and_exceptional_locus": "complexification and orientations; fixed multiplication association",
+      "evidence_scope": "original formal-polynomial replay plus new exact Q(i) determining-grid check",
+      "fibres": "linear isomorphism of dimension27",
+      "id": "M19",
+      "information_loss_and_required_marks": "Compact real points satisfy A=A*, C=B*. Split transformations need not preserve that real form or the chosen lattice.",
+      "inverse_or_reconstruction": "read all matrix entries back",
+      "map": "x1=(A23,col1 B,-row1 C,A32), cyclic for x2,x3; xi_i=Aii",
+      "source_locators": [
+        {
+          "label": "eq:phi",
+          "line": 495,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "(A,B,C) in three typed Hom blocks",
+      "status": "retained",
+      "target_type": "H3(split O)",
+      "title": "First Tits to Zorn-Albert coordinates"
+    },
+    {
+      "domain_and_exceptional_locus": "p positive; denominators positive; e3=0 iff ES",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton in affine marked coordinates",
+      "id": "M20",
+      "information_loss_and_required_marks": "Projectivization forgets a common scale; retain it.",
+      "inverse_or_reconstruction": "p=-a0, denominators=a_i/4",
+      "map": "(-p,4x,4y,4z)",
+      "source_locators": [
+        {
+          "label": "eq:cayleyes",
+          "line": 784,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "ordered ES state (p;x,y,z)",
+      "status": "retained",
+      "target_type": "(-p,4x,4y,4z) with affine scale",
+      "title": "Cayley encoding"
+    },
+    {
+      "domain_and_exceptional_locus": "every coordinate nonzero",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton projectively, nontrivial scale affinely",
+      "id": "M21",
+      "information_loss_and_required_marks": "Coordinate hyperplanes are excluded; exceptional divisors not hidden.",
+      "inverse_or_reconstruction": "same product formula; second application scales by (product a)^2",
+      "map": "ell_i=product_{j!=i}a_j, equivalently [1/a_i]",
+      "source_locators": [
+        {
+          "label": "eq:cremona",
+          "line": 223,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        }
+      ],
+      "source_type": "Cayley coordinate torus e3=0",
+      "status": "retained",
+      "target_type": "projective plane sum ell_i=0",
+      "title": "Reciprocal Cremona map"
+    },
+    {
+      "domain_and_exceptional_locus": "all a_i nonzero, pairwise distinct; h_i=-1/(4a_i)",
+      "evidence_scope": "72 all-oriented arithmetic flags independently replayed, 432 local factor returns",
+      "fibres": "singleton with face, companion order and scale",
+      "id": "M22",
+      "information_loss_and_required_marks": "Changing face can change positivity. Twelve A4 flags, twenty-four S4 flags.",
+      "inverse_or_reconstruction": "a_i=(-1/4)/h_i, a_j=1/(h_i*t_ij)",
+      "map": "t_ij=-4a_i/a_j; normalized a_i=-1/4",
+      "source_locators": [
+        {
+          "label": "eq:roots",
+          "line": 193,
+          "path": "inputs/tetrahedral_markings/note.tex",
+          "sha256": "19375dad6fcf14915595efd740949c361e55ec21fe4efc60cbb17fe3c6565f56"
+        },
+        {
+          "label": "eq:coeffs",
+          "line": 204,
+          "path": "inputs/tetrahedral_markings/note.tex",
+          "sha256": "19375dad6fcf14915595efd740949c361e55ec21fe4efc60cbb17fe3c6565f56"
+        }
+      ],
+      "source_type": "marked Cayley a and face i",
+      "status": "retained",
+      "target_type": "three roots t_ij plus normalization h_i",
+      "title": "Four normalized Cayley charts"
+    },
+    {
+      "domain_and_exceptional_locus": "r*s*t nonzero; none=-4; all distinct inherited from full torus",
+      "evidence_scope": "general rational identities and all72 arithmetic flags",
+      "fibres": "singleton",
+      "id": "M23",
+      "information_loss_and_required_marks": "Companion swap is necessary for preserved tetrahedral orientation.",
+      "inverse_or_reconstruction": "J^2=identity",
+      "map": "J(r,s,t)=(16/r,-4t/r,-4s/r)",
+      "source_locators": [
+        {
+          "label": "eq:J",
+          "line": 225,
+          "path": "inputs/tetrahedral_markings/note.tex",
+          "sha256": "19375dad6fcf14915595efd740949c361e55ec21fe4efc60cbb17fe3c6565f56"
+        },
+        {
+          "label": "eq:relations",
+          "line": 231,
+          "path": "inputs/tetrahedral_markings/note.tex",
+          "sha256": "19375dad6fcf14915595efd740949c361e55ec21fe4efc60cbb17fe3c6565f56"
+        }
+      ],
+      "source_type": "oriented roots (r,s,t), sum4",
+      "status": "retained",
+      "target_type": "new oriented roots",
+      "title": "Oriented face exchange"
+    },
+    {
+      "domain_and_exceptional_locus": "simple root d!=0; eta^2=(3r-4)^2+16d",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton; forgetting eta leaves two companion orders",
+      "id": "M24",
+      "information_loss_and_required_marks": "eta maps to4eta/r under J; its square is insufficient for orientation.",
+      "inverse_or_reconstruction": "s=(4-r+eta)/2; t=(4-r-eta)/2",
+      "map": "r fixed; d=-3r^2/4+2r+beta/2; eta=s-t",
+      "source_locators": [
+        {
+          "label": "eq:rd",
+          "line": 254,
+          "path": "inputs/tetrahedral_markings/note.tex",
+          "sha256": "19375dad6fcf14915595efd740949c361e55ec21fe4efc60cbb17fe3c6565f56"
+        }
+      ],
+      "source_type": "ordered r,s,t",
+      "status": "retained",
+      "target_type": "(r,d,eta), d=f_prime(r), eta=s-t",
+      "title": "Derivative/companion coordinates"
+    },
+    {
+      "domain_and_exceptional_locus": "characteristic zero; gamma=-1/2; cubic splits over stated field if rational branches requested",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "6-to-1 geometrically",
+      "id": "M25",
+      "information_loss_and_required_marks": "Rational coefficients do not imply rational roots.",
+      "inverse_or_reconstruction": "recover unordered roots; retain selected factor and companion eta for ordered inverse",
+      "map": "alpha=product/4, beta=-pair_sum/2, gamma=-1/2",
+      "source_locators": [
+        {
+          "label": "eq:esbase",
+          "line": 131,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        }
+      ],
+      "source_type": "ordered triple of distinct roots sum4",
+      "status": "retained",
+      "target_type": "(alpha,beta,gamma)",
+      "title": "Ordered roots to cubic coefficients"
+    },
+    {
+      "domain_and_exceptional_locus": "characteristic zero; factor coefficients retained",
+      "evidence_scope": "polynomial source replay plus432 factor-chart inversions",
+      "fibres": "polynomial isomorphism to normalized factor variety",
+      "id": "M26",
+      "information_loss_and_required_marks": "Fable u is not ES divisor u.",
+      "inverse_or_reconstruction": "u=L_U; v=2 L_V Q_UV-L_U Q_VV; w=-4Q_UV^2-2Q_UU Q_VV-12L_V Q_UV^2-6L_V Q_UU Q_VV+9Q_VV",
+      "map": "L=uU+(1+uv)V; Q as explicit polynomial chart",
+      "source_locators": [
+        {
+          "label": "eq:factor",
+          "line": 50,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        }
+      ],
+      "source_type": "(u,v,w) in affine3",
+      "status": "retained",
+      "target_type": "(L,Q), Res(L,Q)=1 and U2V coefficient1",
+      "title": "Fable chart to normalized factor pair"
+    },
+    {
+      "domain_and_exceptional_locus": "Res(L,Q)=1; generic separable cubic has three simple projective roots",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "3 geometric points off discriminant, 1 over double+simple, 0 at triple root in this chart",
+      "id": "M27",
+      "information_loss_and_required_marks": "Constant nonzero Jacobian is local: it does not supply a global single-valued inverse.",
+      "inverse_or_reconstruction": "choose one simple root; finite root r gives u=1/d,v=-r-d,w=5d^2+3rd-gamma*d^3",
+      "map": "(L,Q)->LQ",
+      "source_locators": [
+        {
+          "label": "thm:fibres",
+          "line": 56,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        },
+        {
+          "label": "eq:inverse",
+          "line": 58,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        }
+      ],
+      "source_type": "normalized (L,Q)",
+      "status": "retained",
+      "target_type": "binary cubic coefficients",
+      "title": "Factor multiplication"
+    },
+    {
+      "domain_and_exceptional_locus": "roots distinct; matrix M determinant D=4(t2-t3)(t1-t2)(t1-t3)!=0",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton with M and selected factor",
+      "id": "M28",
+      "information_loss_and_required_marks": "M and two different scale factors must remain; resultant transforms by D^2.",
+      "inverse_or_reconstruction": "undo both scalars and adj M",
+      "map": "L=(8/D)L_star composed adj M; Q=(1/64)Q_star composed adj M",
+      "source_locators": [
+        {
+          "label": "thm:mobius",
+          "line": 171,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        },
+        {
+          "label": "eq:transportpair",
+          "line": 193,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        }
+      ],
+      "source_type": "three base normalized factors plus ordered roots",
+      "status": "retained",
+      "target_type": "three transported normalized factors",
+      "title": "Quarter cubic to arbitrary ES reciprocal cubic"
+    },
+    {
+      "domain_and_exceptional_locus": "H half-sign tetrahedron; simultaneous A4 action on numerator and denominator",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "4-to-1; 24 states if orientation reversals included",
+      "id": "M29",
+      "information_loss_and_required_marks": "Four frames above each factor are not four geometric preimages of the cubic.",
+      "inverse_or_reconstruction": "retain tetrahedral numerator frame to choose the preimage",
+      "map": "pick component L and complementary Q, then normalize resultant",
+      "source_locators": [
+        {
+          "label": "thm:twelve",
+          "line": 130,
+          "path": "inputs/tetrahedral_markings/note.tex",
+          "sha256": "19375dad6fcf14915595efd740949c361e55ec21fe4efc60cbb17fe3c6565f56"
+        }
+      ],
+      "source_type": "12 oriented pairs (H,K)",
+      "status": "retained",
+      "target_type": "3 normalized factors of fixed C_star",
+      "title": "Tetrahedral pencil states"
+    },
+    {
+      "domain_and_exceptional_locus": "choose primitive integral pair, not both divisible23; denominators treated projectively",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "infinite fibres",
+      "id": "M30",
+      "information_loss_and_required_marks": "The three named marks reduce to infinity,12,11. Do not reduce arbitrary complex Mellin values.",
+      "inverse_or_reconstruction": "no arithmetic inverse unless original rational lift retained",
+      "map": "[a:b]->[a mod23:b mod23]",
+      "source_locators": [
+        {
+          "label": "eq:projective",
+          "line": 62,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        },
+        {
+          "label": "eq:cycle",
+          "line": 67,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "marked rational projective coordinates",
+      "status": "retained",
+      "target_type": "P1(F23)",
+      "title": "Rational projective reduction"
+    },
+    {
+      "domain_and_exceptional_locus": "explicit generator matching C,J and base coordinate; order fixed",
+      "evidence_scope": "original fullfinitechecks and newgenerator-equivariancecomputation",
+      "fibres": "singleton finite label map",
+      "id": "M31",
+      "information_loss_and_required_marks": "This only transports labels. p, denominators, scales and factors are separate retained fields.",
+      "inverse_or_reconstruction": "read table inverse",
+      "map": "branch_table(orbit,u,j)",
+      "source_locators": [
+        {
+          "label": "eq:labels",
+          "line": 119,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "oriented A4 flag plus orbit bit",
+      "status": "retained",
+      "target_type": "24 named coordinates",
+      "title": "Abstract flag to projective Leech coordinate"
+    },
+    {
+      "domain_and_exceptional_locus": "v_i=(ones-4e_i)/sqrt8; minimum norm4",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton on these24 marks only",
+      "id": "M32",
+      "information_loss_and_required_marks": "The full lattice quotient has kernel12Lambda and size12^24, not24.",
+      "inverse_or_reconstruction": "read one of the24 marked classes",
+      "map": "i->[v_i]",
+      "source_locators": [
+        {
+          "label": "thm:mod12",
+          "line": 175,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "24 named coordinates",
+      "status": "retained",
+      "target_type": "24 classes in Lambda/12Lambda",
+      "title": "Minimal-vector congruence marking"
+    },
+    {
+      "domain_and_exceptional_locus": "three specified octads; no extra congruence condition",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "affine rank21 lattice, det64",
+      "id": "M33",
+      "information_loss_and_required_marks": "P alone loses the kernel; the full (t,k) representation is bijective.",
+      "inverse_or_reconstruction": "sigma(t)=sum t_i b_i plus arbitrary k in K21",
+      "map": "P_j(x/sqrt8)=sum_Bj x_i/4",
+      "source_locators": [
+        {
+          "label": "thm:inverse",
+          "line": 92,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        }
+      ],
+      "source_type": "Lambda_G",
+      "status": "retained",
+      "target_type": "Z3",
+      "title": "Three integral lattice traces"
+    },
+    {
+      "domain_and_exceptional_locus": "r=t mod4, reduced a_i in{-1,0,1,2};64 classes",
+      "evidence_scope": "old full196560 replay; new8-seed/64classproof; mutation tests",
+      "fibres": "section, not a bijection onto Lambda",
+      "id": "M34",
+      "information_loss_and_required_marks": "Tie-break choice need not be symmetry-equivariant. New8-seedproof replaces fullshell enumeration for attainment.",
+      "inverse_or_reconstruction": "P(lambda_star)=t; inverse fibre has all minimizers or fullK21 as selected target dictates",
+      "map": "nu_r+sum((t_i-a_i)/4)w_i",
+      "source_locators": [
+        {
+          "label": "thm:shortest",
+          "line": 126,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        }
+      ],
+      "source_type": "t in Z3",
+      "status": "retained with shorter standalone proof and strengthened output validation",
+      "target_type": "chosen minimum vector lambda_star(t)",
+      "title": "Shortest integral trace lift"
+    },
+    {
+      "domain_and_exceptional_locus": "g in A4, rho_g its induced phase action",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton",
+      "id": "M35",
+      "information_loss_and_required_marks": "No invariant integral section outside4Z3. Dropping the correction changes the action.",
+      "inverse_or_reconstruction": "apply g inverse and corresponding cocycle",
+      "map": "(rho_g t, gk+g sigma(t)-sigma(rho_g t))",
+      "source_locators": [
+        {
+          "label": "eq:cocycle",
+          "line": 201,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        },
+        {
+          "label": "thm:invariants",
+          "line": 180,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        }
+      ],
+      "source_type": "(t,k) in Z3 direct-sum K21",
+      "status": "retained",
+      "target_type": "same full-coordinate object",
+      "title": "Tetrahedral kernel cocycle"
+    },
+    {
+      "domain_and_exceptional_locus": "only common sum constraints; original 9-column section fixed",
+      "evidence_scope": "fullreplay andnewexplicitK9/Jcounterexample; repairedCLIchecksallviews",
+      "fibres": "affine rank15, det5292",
+      "id": "M36",
+      "information_loss_and_required_marks": "All12 T-readings determined; J does NOT descend to this quotient.",
+      "inverse_or_reconstruction": "all four P(T^n lambda), residual lambda-sigma9(a)",
+      "map": "a=pack first triple plus first2 of other3; lambda=sigma9(a)+k9",
+      "source_locators": [
+        {
+          "label": "thm:nine",
+          "line": 222,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        },
+        {
+          "label": "eq:Tphase",
+          "line": 217,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        }
+      ],
+      "source_type": "four ordered triples of common sum",
+      "status": "retained; J-composition boundary added",
+      "target_type": "Lambda_G plus rank15 fibre",
+      "title": "Four-view integral inverse"
+    },
+    {
+      "domain_and_exceptional_locus": "explicit aligned pi,signs; z_j=half rawblock; Wilson normhalf",
+      "evidence_scope": "37 generating vectors, signed metric identity, unimodularity; allbasis inverse checks",
+      "fibres": "singleton entirelattice",
+      "id": "M37",
+      "information_loss_and_required_marks": "Previously absent coordinate arrow now supplied. Existing Wilson-MOG isometry is primary antecedent.",
+      "inverse_or_reconstruction": "x_pi(i)=epsilon_i y_i",
+      "map": "y_i=epsilon_i x_pi(i)",
+      "source_locators": [
+        {
+          "label": "eq:wilson",
+          "line": 554,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        },
+        {
+          "label": "eq:leech",
+          "line": 36,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        }
+      ],
+      "source_type": "Lambda_G raw24",
+      "status": "new coordinate completion",
+      "target_type": "Lambda_W in O3",
+      "title": "Golay to Wilson model"
+    },
+    {
+      "domain_and_exceptional_locus": "three octonionic entries and conjugates in fixed positions",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton on image",
+      "id": "M38",
+      "information_loss_and_required_marks": "Preserves quadratic norm with factor4; cubic nu is not trace product.",
+      "inverse_or_reconstruction": "read ordered off-diagonal entries",
+      "map": "iota(z)=[[0,z2,bar z1],[bar z2,0,z0],[z1,bar z0,0]]",
+      "source_locators": [
+        {
+          "label": "eq:leechinvariants",
+          "line": 569,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "Wilson Leech O3",
+      "status": "retained with concrete Golay source and norm correction",
+      "target_type": "H3(O_R) with zero diagonal",
+      "title": "Off-diagonal Albert embedding"
+    },
+    {
+      "domain_and_exceptional_locus": "full graph membership: compact octonions,lattice and3diagonalconstraints",
+      "evidence_scope": "written cubic formulas, exactQ(i) checks, full2600-node determining check",
+      "fibres": "singleton",
+      "id": "M39",
+      "information_loss_and_required_marks": "4N-pS = F_p(t)+sum(p-4t_i)N(z_i)+4nu. Every correction retained.",
+      "inverse_or_reconstruction": "read all z, invert signed permutation, recompute traces",
+      "map": "augment the aligned off-diagonal embedding by its three traces",
+      "source_locators": [
+        {
+          "label": "eq:defect",
+          "line": 262,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        },
+        {
+          "label": "eq:titsnorm",
+          "line": 333,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "lambda in Lambda_G",
+      "status": "new corrected interface",
+      "target_type": "Xhat=diag(P lambda)+iota(Pi lambda)",
+      "title": "Faithful combined trace-Albert graph"
+    },
+    {
+      "domain_and_exceptional_locus": "specific ordered bijection in source; char0",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "singleton coordinate map",
+      "id": "M40",
+      "information_loss_and_required_marks": "Not an isomorphism of the cubic surface with27-dimensional affine space. Weyl lifts may retain signs after permutations return.",
+      "inverse_or_reconstruction": "read matrix entries by labels",
+      "map": "dictionary gives45signed normmonomials matching45tritangent triples",
+      "source_locators": [
+        {
+          "label": "eq:blocks",
+          "line": 261,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        },
+        {
+          "label": "thm:dictionary",
+          "line": 272,
+          "path": "inputs/cayley_fable_bridge/note.tex",
+          "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0"
+        }
+      ],
+      "source_type": "three3x3typedblocks",
+      "status": "retained",
+      "target_type": "27independent labeled scalar variables",
+      "title": "Albert coordinates to27linevariables"
+    },
+    {
+      "domain_and_exceptional_locus": "explicit linear imageequations and exactmod4syndrome",
+      "evidence_scope": "759orbit,Gram576,24minor det2^14, allintegerdualquotientproof",
+      "fibres": "singleton",
+      "id": "M41",
+      "information_loss_and_required_marks": "Smallest real stable span under<J,T> has rank24; no9-dimensional fullgroupquotient.",
+      "inverse_or_reconstruction": "x_i=(23 S_i-7S)/1012; latticeimage iff(11S-23S0)/506=0 mod4",
+      "map": "a_B=sum_B x/4",
+      "source_locators": [
+        {
+          "label": "thm:nine",
+          "line": 222,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        },
+        {
+          "label": "thm:groups",
+          "line": 88,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "lambda in Lambda_G",
+      "status": "new integral reconstruction theorem",
+      "target_type": "a_B for all759octads",
+      "title": "Full orbit trace completion"
+    },
+    {
+      "domain_and_exceptional_locus": "fullfinite module size12^24, bilinear pairing mod12; preserve Jacobi variable z for classidentification",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "invertible on fullpacket; selected24marks notclosed",
+      "id": "M42",
+      "information_loss_and_required_marks": "Setting z=0 canidentifyisometriccosets; selecting24classes losesFouriersupport.",
+      "inverse_or_reconstruction": "F^2 sends a to -a",
+      "map": "F_ab=12^-12 exp(-2pi i(a,b)/12)",
+      "source_locators": [
+        {
+          "label": "eq:vectorTheta",
+          "line": 384,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "Lambda/12Lambda theta packet",
+      "status": "retained",
+      "target_type": "same packet after tau or t inversion",
+      "title": "Vector theta Fourier return"
+    },
+    {
+      "domain_and_exceptional_locus": "sourceconvention u^(s-1); finitekernels and centeredstrip asstated",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "not a finiteprojectiverootmap",
+      "id": "M43",
+      "information_loss_and_required_marks": "Completion marks +-1/2 are not xi zeros; infinity is chartmark notintegralsubstitution.",
+      "inverse_or_reconstruction": "Mellin inversion requires analyticdomain/growthandalltransformdata; no pointwise inverseclaimedhere",
+      "map": "M(Eh)=xi/4; normalizedsource is4Eh",
+      "source_locators": [
+        {
+          "label": "prop:normalization",
+          "line": 42,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "E h with h=(pi\u00b2x4-3pi x\u00b2/2)e^-pi x\u00b2",
+      "status": "retained",
+      "target_type": "xi(s+1/2)/4",
+      "title": "Mellin transform of literal source kernel"
+    },
+    {
+      "domain_and_exceptional_locus": "R_n=0 for gcd(n,12)>1; actualn retained",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "discardingcharacters losescomponents",
+      "id": "M44",
+      "information_loss_and_required_marks": "Finite projective labels are not arithmeticvalues; imprimitivefactors and conductorsretained.",
+      "inverse_or_reconstruction": "retainall4characterprojections andphases; restore2,3 factors byfull2^a3^b sum",
+      "map": "B(u)=4sqrt(u) sum R_n h(nu)",
+      "source_locators": [
+        {
+          "label": "thm:dirichlet",
+          "line": 231,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        },
+        {
+          "label": "eq:restore",
+          "line": 250,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "all positive integers n and residueoperators",
+      "status": "retained",
+      "target_type": "matrix Mellin Dirichlet packet",
+      "title": "Residue-valued arithmetic kernel"
+    },
+    {
+      "domain_and_exceptional_locus": "Psi=u^1/2 Theta(u^1/kappa); zero-modekilled; Leechkappa12",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "spectral scalar observations canlose vectorcosetlabels",
+      "id": "M45",
+      "information_loss_and_required_marks": "Leech transform has zeta(w)zeta(w-11)-L(Delta,w), not Riemannxi.",
+      "inverse_or_reconstruction": "retainfulltheta coefficients/analyticdata, notjustendpointvalues",
+      "map": "K=1/2(D\u00b2-1/4)Psi; w=kappa(s+1/2)",
+      "source_locators": [
+        {
+          "label": "thm:theta",
+          "line": 316,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        },
+        {
+          "label": "eq:LeechM",
+          "line": 361,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "selfdual positive definite lattice rank2kappa",
+      "status": "retained",
+      "target_type": "entire even Mellin function",
+      "title": "Leech theta centeredkernel"
+    },
+    {
+      "domain_and_exceptional_locus": "epsilon>0, stated herror; retaintailandendpointestimates",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "N/A analyticestimate",
+      "id": "M46",
+      "information_loss_and_required_marks": "Kernelapproximation is not eigenfunctioncomparison or RHproof.",
+      "inverse_or_reconstruction": "no spectral inverse toWeillowesteigenfunctionproved",
+      "map": "sourcefinitekernelconstruction",
+      "source_locators": [
+        {
+          "label": "thm:error",
+          "line": 257,
+          "path": "inputs/mellin_leech_research/note.tex",
+          "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847"
+        }
+      ],
+      "source_type": "h_lambda compact approximation with explicitC",
+      "status": "retained",
+      "target_type": "Mellin B_lambda converging on closed substrips",
+      "title": "Finitekernel approximation"
+    },
+    {
+      "domain_and_exceptional_locus": "specified relations; injection requiresSchanuel, notusedunconditionally",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "unknown unconditionalkernel",
+      "id": "M47",
+      "information_loss_and_required_marks": "Period subgroupZ varpi injects byordinaryevaluation, but fullringfaithfulnessconditional.",
+      "inverse_or_reconstruction": "kernelJ; cube evaluation kernelJ^27",
+      "map": "evaluate(X,Y)=(pi,i)",
+      "source_locators": [
+        {
+          "label": "eq:periodmap",
+          "line": 882,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "free exponential-ring quotient A",
+      "status": "retained",
+      "target_type": "complexnumbers",
+      "title": "Terzo exponential evaluation"
+    },
+    {
+      "domain_and_exceptional_locus": "p prescribed prime; Fp=0 actualequation; allmarks inherited",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "each t hasfull latticekernel-fibre",
+      "id": "M48",
+      "information_loss_and_required_marks": "Surjectivity ofP doesnotestablish existenceoft withFp=0.",
+      "inverse_or_reconstruction": "selector reconstructionwhenboundedmarkexists; no universal producerproved",
+      "map": "select t>0 with 4t0t1t2=p pair_sum",
+      "source_locators": [
+        {
+          "label": "eq:defect",
+          "line": 262,
+          "path": "inputs/leech_trace_inverse/note.tex",
+          "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+        },
+        {
+          "label": "prop:prime-return",
+          "line": 804,
+          "path": "inputs/cube_unification/note.tex",
+          "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+        }
+      ],
+      "source_type": "complete positiveintegraltracefibres",
+      "status": "explicit unresolved existence arrow",
+      "target_type": "ESsolution locus",
+      "title": "Arithmetic cubic selection"
+    },
+    {
+      "domain_and_exceptional_locus": "allowedprime restriction applies to every prime/divisor sum; square majorant before CRT; fixedfamily constants",
+      "evidence_scope": "written source and bounded original replay",
+      "fibres": "N/A countingtheorem",
+      "id": "M49",
+      "information_loss_and_required_marks": "No finitecomputation or densityone leap to universal selector.",
+      "inverse_or_reconstruction": "notapointwise inverse; no movingmodulusPNT silentlyused",
+      "map": "count exceptions to existence of bounded residual",
+      "source_locators": [
+        {
+          "label": "app:sieve",
+          "line": 556,
+          "path": "inputs/es_pointwise_tranche/tranche.tex",
+          "sha256": "be5bcf96043d3a7d725cc287eea76c042fe40ae65f930026cca9450a8c36c54a"
+        },
+        {
+          "label": "thm:small",
+          "line": 456,
+          "path": "inputs/erdos_straus_research/paper.tex",
+          "sha256": "3d8f6c1df956c4c0c9465b694e794c167d753486e252578f2e277feb4a339459"
+        }
+      ],
+      "source_type": "fixedrayfamily andactualprimefactoroccurrences",
+      "status": "retained",
+      "target_type": "explicit exceptional-count theorem",
+      "title": "Fixedmodulus Selberg conclusion"
+    }
+  ],
+  "record_count": 49,
+  "schema": "typed-morphism-ledger/1",
+  "scope": "Eight locally available mathematical packages; no reconstruction of unavailable conversations or uninspected Git branches."
+}

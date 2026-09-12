@@ -1,0 +1,40 @@
+{
+  "check_count": 2232577,
+  "checks_by_kind": {
+    "CRT": 549503,
+    "affine_points": 1099014,
+    "atlas": 458496,
+    "cohomology": 68,
+    "cycles": 112608,
+    "fillings": 82,
+    "formulas": 11454,
+    "level3_group": 1204,
+    "matrices": 10,
+    "orbits": 23,
+    "regressions": 9,
+    "transport": 106
+  },
+  "explicit_levels": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    15,
+    21,
+    25,
+    27,
+    35,
+    45
+  ],
+  "full_S6_theorem_reverified": false,
+  "full_atlas_primes": [
+    5,
+    37,
+    241,
+    1201
+  ],
+  "global_ES_counterexample_found": false,
+  "status": "PASS",
+  "whole_cover_fibre_limits": "Only levels listed above explicitly expanded; all atlas cover degrees/ramification use proved closed formulas."
+}

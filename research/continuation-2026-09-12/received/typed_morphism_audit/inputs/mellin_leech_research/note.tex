@@ -1,0 +1,457 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,mathrsfs,amsmath,amssymb,amsthm,mathtools,booktabs,longtable,array,microtype,xurl}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\R}{\mathbb R}\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}
+\newcommand{\M}{\mathcal M}\newcommand{\K}{\mathcal K}\newcommand{\E}{\mathcal E}
+\DeclareMathOperator{\tr}{tr}\DeclareMathOperator{\supp}{supp}\DeclareMathOperator{\PSL}{PSL}\DeclareMathOperator{\SL}{SL}\DeclareMathOperator{\lcm}{lcm}
+\title[Three Mellin markings and Leech modulo--12]{Three projective Mellin markings and a Leech modulo--12 lift\\
+Exact tetrahedral transport, residue kernels, and theta completion}
+\author[Research continuation]{Research continuation for the Erd\H{o}s--Straus workbench}
+\date{11 September 2026}
+\begin{document}
+\begin{abstract}
+We connect the marked triple $\infty,1/2,-1/2$ to an explicit order-twelve Leech-lattice isometry: its fourth power is the reduction of the projective root cycle. Two regular tetrahedral orbits give a complete $24$-coordinate table, and marked minimal vectors give an injective return into $\Lambda/12\Lambda$. A residue-valued version of the kernel in Connes--Consani--Moscovici, arXiv:2511.22755v1, has four exact Dirichlet-character components on this representation and an explicit cutoff-error estimate. An independent, canonically scaled theta construction replaces the rank-one lattice by the Leech lattice. Its Mellin transform is a completed combination of $\zeta(w)\zeta(w-11)$ and the Ramanujan $\Delta$-series, with $w=12(s+1/2)$. All normalizations, retained marks, and finite verification domains are explicit. These statements do not prove spectral convergence to the zeros of $\xi$, RH, or Erd\H{o}s--Straus. No historical-priority claim is made.
+\end{abstract}
+\maketitle
+
+\section{The cited kernel and its exact normalization}
+Fix the Mellin convention
+\[
+\M f(s)=\int_0^\infty f(u)u^{s-1}\,du.
+\]
+Throughout, $s$ is centered; the usual zeta variable is $w=s+1/2$. Fourier duality $u^{-iz}$ corresponds to $s=-iz$. The literal formulas (7.1)--(7.2) of \cite{CCM} are
+\begin{equation}\label{eq:source}
+h(x)=\left(\pi^2x^4-\frac{3\pi}{2}x^2\right)e^{-\pi x^2},
+\qquad \E h(u)=u^{1/2}\sum_{n\ge1}h(nu).
+\end{equation}
+The paper takes $k_\lambda=\E h_\lambda$ on $[\lambda^{-1},\lambda]$, zero outside; the input $h_\lambda$ is supported on $[-\lambda,\lambda]$. Lemma 7.2 supplies a normalization with
+\begin{equation}\label{eq:approx}
+\sup_{|x|\le\lambda}|h_\lambda(x)-h(x)|\le C\lambda^{-2}
+\end{equation}
+for a constant independent of $\lambda$. We keep this imported estimate distinct from the unresolved eigenvector comparison in that paper's Section 8.
+
+\begin{proposition}[Literal constant]\label{prop:normalization}
+For the precise $h,\E$ in \eqref{eq:source},
+\[
+\M(\E h)(s)=\frac14\xi(s+1/2),
+\quad
+\xi(w)=\frac12w(w-1)\pi^{-w/2}\Gamma(w/2)\zeta(w).
+\]
+In particular the normalization giving $\xi$ is $4\E h$, not $\E h$.
+\end{proposition}
+\begin{proof}
+For $\Re w>1$, absolute convergence justifies termwise integration. The substitution $y=nu$ gives the factor $n^{-w}$. The Gaussian Mellin integral and two gamma recurrences give
+\begin{align*}
+\M h(w)&=\pi^{-w/2}\left[\frac12\Gamma((w+4)/2)-\frac34\Gamma((w+2)/2)\right]\\
+&=\frac{w(w-1)}8\pi^{-w/2}\Gamma(w/2).
+\end{align*}
+Multiplication by $\zeta(w)$ proves the formula there. The Fourier invariance and zero integral of $h$ follow either by Gaussian differentiation or from its displayed Hermite combination; also $h(0)=0$. Poisson summation therefore gives $\E h(u)=\E h(1/u)$. The function and its logarithmic derivatives decrease faster than every power at both ends. The Mellin transform is entire, so analytic continuation proves the identity everywhere.
+\end{proof}
+This is a normalization correction for the literal displayed formulas, not a change to their zero set. Both completed endpoint values are $\xi(0)=\xi(1)=1/2$; thus the literal $\E h$ has Mellin value $1/8$ at $s=\pm1/2$. Those two points are not zeros of the completed function.
+
+The affine multiplier is $s^2-1/4$. Retain its two roots \emph{and the affine-chart mark at infinity} by
+\begin{equation}\label{eq:projective}
+\mathscr P(S,T)=T(S^2-T^2/4).
+\end{equation}
+The third mark $T=0$ is not an evaluation of the Mellin integral at $s=\infty$. A compactly supported logarithmic kernel has an entire Mellin transform, but this does not supply a regular value at projective infinity.
+The root cycle is
+\begin{equation}\label{eq:cycle}
+c(s)=\frac{2s-3}{4s+2},\qquad
+\infty\mapsto\frac12\mapsto-\frac12\mapsto\infty.
+\end{equation}
+Its matrix $M=\left(\begin{smallmatrix}2&-3\\4&2\end{smallmatrix}\right)$ satisfies $M^3=-64I$ and
+$\mathscr P(M(S,T))=-64\mathscr P(S,T)$. Thus its projective order is three, with the homogeneous scalar retained.
+
+\section{An explicit tetrahedral and cyclic lift into Leech coordinates}
+Use $\Omega=\mathbb P^1(\F_{23})=\F_{23}\cup\{\infty\}$. Because $2$ is invertible,
+\[
+\infty,\frac12,-\frac12\quad\longmapsto\quad\infty,12,11.
+\]
+Only these marked homogeneous coordinates are specialized; no complex Mellin argument or value is reduced modulo $23$.
+Define matrices in $\SL_2(\F_{23})$:
+\begin{equation}\label{eq:matrices}
+C=\begin{pmatrix}12&5\\1&12\end{pmatrix},\quad
+J=\begin{pmatrix}1&7\\3&22\end{pmatrix},\quad
+T=\begin{pmatrix}4&11\\16&4\end{pmatrix}.
+\end{equation}
+Here $C$ is the reduction of $M/4$ from \eqref{eq:cycle}. Matrices act by fractional-linear transformations. Let brackets denote their projective classes.
+
+\begin{theorem}[Twelve-step lift of the half-root cycle]\label{thm:groups}
+One has
+\[
+J^2=C^3=-I,\qquad (JC)^3=I,\qquad T^4=C,\qquad T^{12}=-I,\qquad T^{24}=I.
+\]
+The group $G=\langle[J],[C]\rangle$ has order $12$ and is $A_4$. It acts freely on $\Omega$ with two orbits of size $12$. The projective transformation $[T]$ has order $12$, with cycles
+\begin{align*}
+&(\infty,6,13,8,12,3,0,20,11,15,10,17),\\
+&(1,18,21,4,19,2,5,22,9,7,16,14).
+\end{align*}
+In the first cycle, the original three marks occur at times $0,4,8$. The group generated by $[J],[T]$ is all of $\PSL_2(23)$, of order $6072$.
+\end{theorem}
+\begin{proof}
+Matrix multiplication verifies the displayed powers and determinants. The projective group generated by $J,C$ is enumerated by $V C^j$, $j=0,1,2$, with
+\[
+V=\left\{I,J,CJC^{-1},C^2JC^{-2}\right\}.
+\]
+Its three nonidentity elements have order two, their product rules are those of a Klein group, and $C$ cycles them. These twelve matrices are distinct modulo sign. A nonidentity order-two or order-three element has no projective fixed point over $\F_{23}$: the relevant discriminants $-4$ and $-3$ are nonsquares. Hence the two orbits are regular. Direct fractional-linear substitution gives the two displayed $T$ cycles, proving its exact order. For the last finite assertion, the checker exhausts the group generated by $J,T$ and compares it with \emph{all} determinant-one $2\times2$ matrices over $\F_{23}$ modulo $\{\pm I\}$. Both sets are identical with $6072$ elements. This is a bounded exhaustive certificate, not a sampling argument.
+\end{proof}
+
+Identify the Klein group with
+\[
+U_{12}=(\Z/12\Z)^\times=\{1,5,7,11\}
+\]
+by $g_1=I$, $g_5=J$, $g_7=CJC^{-1}$, $g_{11}=C^2JC^{-2}$. Then $g_ug_v=g_{uv}$ projectively. Conjugation by $C$ induces the automorphism $\sigma$ cycling $5,7,11$. Thus
+\[
+(u,j)(v,k)=(u\sigma^j(v),j+k)
+\]
+is the exact $A_4$ law on the twelve labels. It is not addition in $\Z/12\Z$.
+
+For bases $b_0=\infty$, $b_1=0$, define
+\begin{equation}\label{eq:labels}
+\phi_\epsilon(u,j)=g_u C^j b_\epsilon.
+\end{equation}
+The full invertible label table is
+\[
+\begin{array}{c|rrr|rrr}
+&\multicolumn{3}{c|}{\epsilon=0}&\multicolumn{3}{c}{\epsilon=1}\\
+u\backslash j&0&1&2&0&1&2\\\hline
+1&\infty&12&11&0&10&13\\
+5&8&15&2&16&22&9\\
+7&7&20&6&1&21&14\\
+11&3&18&17&4&19&5
+\end{array}
+\]
+Every point of $\Omega$ occurs exactly once. The inverse reads its row, column and side. Multiplication by $g_v$ changes $(u,j)$ to $(vu,j)$; multiplication by $C$ changes it to $(\sigma(u),j+1)$. This is a generator-preserving identification with the earlier twelve tetrahedral/factor markings once their base mark is fixed.
+One $T$ step sends six points of each tetrahedral orbit into that same orbit and six into the other one. Keeping both orbits therefore retains the actual twelve-step dynamics. The central sign $T^{12}=-I$ belongs to the $\SL_2$ lift, not to an asserted order-$24$ coordinate permutation.
+
+\section{The lattice and the literal reduction modulo twelve}
+Let $Q\subset\F_{23}^\times$ be the eleven nonzero quadratic residues. In $\F_2^\Omega$ let $\mathcal C$ be the span of
+\[
+\mathbf1_{(a+Q)\cup\{\infty\}},\qquad a\in\F_{23}.
+\]
+This is a quadratic-residue presentation of the extended binary Golay code. Chapman \cite[Section 1.6, p.~10]{Chapman} gives the projective-line construction and its $\PSL_2(23)$ invariance. Independently, the checker performs elimination, enumerates all $4096$ codewords, and verifies
+\begin{equation}\label{eq:weights}
+W_{\mathcal C}(z)=1+759z^8+2576z^{12}+759z^{16}+z^{24}.
+\end{equation}
+It also tests every one of the $6072$ projective permutations on the twelve-element code basis.
+
+Define
+\begin{equation}\label{eq:lattice}
+\Lambda=\left\{\frac{x}{\sqrt8}:\begin{array}{l}
+x\in\Z^{24},\quad x_i\equiv m\pmod2\text{ for one }m\in\{0,1\},\\
+\sum x_i\equiv4m\pmod8,\quad
+((x_i-m)/2\bmod2)_{i\in\Omega}\in\mathcal C
+\end{array}\right\}.
+\end{equation}
+This is the standard Leech construction of \cite[Theorem 1.4, p.~4]{Brouwer}.
+
+\begin{proposition}[Lattice properties and preserved actions]\label{prop:lattice}
+The set \eqref{eq:lattice} is an even unimodular lattice, with no vector of squared norm two. Every coordinate permutation preserving $\mathcal C$ preserves $\Lambda$; in particular $G$ and $T$ act on it by isometries.
+\end{proposition}
+\begin{proof}
+The even-coordinate part has numerators $2c+4z$, where $c\in\mathcal C$ is represented by bits and $\sum z_i$ is even. Closure follows because $c+d=(c\mathbin\oplus d)+2(c\cap d)$ and the intersection has even size by self-orthogonality. Its norms are
+\[
+\frac{\|2c+4z\|^2}{8}=\frac{|c|}{2}+2c\cdot z+2\|z\|^2\in2\Z.
+\]
+Let $v=(-3,1,\ldots,1)/\sqrt8$. One has $2v$ in the even part, $\|v\|^2=4$, and
+\[
+\left\langle v,\frac{2c+4z}{\sqrt8}\right\rangle
+=|c|/4-c_0+\frac12\sum z_i-2z_0\in\Z.
+\]
+The odd part of \eqref{eq:lattice} is precisely the coset by $v$. This proves additive closure, integrality and evenness. The even numerator lattice has index $2^{24}2^{12}2=2^{37}$ in $\Z^{24}$; adjoining the odd coset divides it by two. Scaling all 24 coordinates by $1/\sqrt8$ gives covolume $2^{36}8^{-12}=1$.
+For a squared-norm-two vector, odd coordinates already have squared norm at least $24/8=3$. In the even case, $x=2y$ would satisfy $\sum y_i^2=4$. Four entries $\pm1$ contradict the code's minimum weight; one entry $\pm2$ contradicts $\sum x_i\equiv0\pmod8$. These exhaust the possibilities. Permutations preserving the code visibly preserve all three conditions in \eqref{eq:lattice}.
+\end{proof}
+The identification with the Leech lattice can alternatively be made using its uniqueness theorem, \cite[Theorem 1.1]{Brouwer}. No isometry to the earlier octonionic coordinate convention is silently chosen.
+
+\begin{theorem}[Marked branches in $\Lambda/12\Lambda$]\label{thm:mod12}
+Put
+\[
+v_i=\frac{\mathbf1-4e_i}{\sqrt8}\in\Lambda,\qquad i\in\Omega.
+\]
+The map
+\[
+(\epsilon,u,j)\longmapsto[v_{\phi_\epsilon(u,j)}]\in\Lambda/12\Lambda
+\]
+is injective and equivariant for the preceding $A_4$ action. The $T$ action on these classes has exactly the two cycles of Theorem~\ref{thm:groups}, and $T^4=C$ remains exact on them.
+\end{theorem}
+\begin{proof}
+Each numerator is congruent to $1$ modulo four, has sum $20$, and has squared length $32$, so \eqref{eq:lattice} applies and $\|v_i\|^2=4$. For $i\ne j$, $\|v_i-v_j\|^2=4$. A nonzero vector in $12\Lambda$ has squared norm at least $576$, proving distinctness of the 24 classes. Coordinate permutations send $v_i$ to $v_{g(i)}$, proving equivariance and the exact cycles.
+\end{proof}
+The quotient has $12^{24}$ elements; only the named 24 classes are enumerated. This is a true congruence module, separate from the order of a permutation. If one retains the vectors before reduction, their Gram matrix is $2I+2\mathbf1\mathbf1^t$. They form a rational basis, with inverse
+\[
+\frac{x}{\sqrt8}=\sum a_i v_i,
+\qquad a_i=\frac{\sum_jx_j-20x_i}{80}.
+\]
+They generate a sublattice of index $5\cdot2^{12}$, not an unannounced integral basis of $\Lambda$.
+
+The checker additionally reconstructs and tests every norm-four vector: the disjoint families have sizes $1104$, $759\cdot128=97152$, and $24\cdot4096=98304$. This checks all $196560$ minimal vectors in this coordinate convention. The finite count does not stand in for the all-vector proof above.
+
+\section{A residue-valued Mellin kernel on the same Leech representation}
+Let $V=\Lambda\otimes\R$, with the Euclidean inner product, and let $R_u$ be the coordinate permutation of $g_u$. Extend periodically to a monoid of coefficient operators by
+\[
+R_n=\begin{cases}R_{n\bmod12}&\gcd(n,12)=1,\\0&\gcd(n,12)>1.\end{cases}
+\]
+Then $R_mR_n=R_{mn}$, retaining prime-power multiplicities through the actual integer index $n$. The omitted primes 2 and 3 are addressed explicitly below.
+
+For the four characters of $U_{12}$, in the order $1,5,7,11$, use
+\[
+\begin{array}{c|rrrr}
+\chi_0&1&1&1&1\\
+\chi_{-3}&1&-1&1&-1\\
+\chi_{-4}&1&1&-1&-1\\
+\chi_{12}&1&-1&-1&1
+\end{array}.
+\]
+Extend them by zero to nonunits and set
+\[
+P_\chi=\frac14\sum_{u\in U_{12}}\chi(u)R_u.
+\]
+They are orthogonal projections of rank six with sum $I$. The rank follows because a nonidentity $g_u$ has no fixed coordinate. With $Q_j$ the coordinate projection onto the eight entries of phase $j$ in \eqref{eq:labels}, $P_\chi Q_j$ are twelve rank-two joint projections. Fourier projections are rational or complex linear maps on $V$; they are not asserted to preserve the integral Leech lattice.
+
+Define the operator-valued kernel
+\begin{equation}\label{eq:BK}
+B(u)=4u^{1/2}\sum_{n\ge1}R_nh(nu).
+\end{equation}
+Its finite counterpart is
+\begin{equation}\label{eq:BKl}
+B_\lambda(u)=4u^{1/2}\sum_{1\le n\le\lambda/u}R_nh_\lambda(nu),
+\quad \lambda^{-1}\le u\le\lambda,
+\end{equation}
+zero elsewhere. Only integers $n\le\lambda^2$ enter; every entry has the same finite-input scope as the scalar construction, with its residue mark retained.
+
+\begin{theorem}[Exact Mellin and Euler components]\label{thm:dirichlet}
+For $w=s+1/2$, initially $\Re w>1$ and then throughout $\Re w>0$ by continuation,
+\begin{equation}\label{eq:BL}
+\M B(s)=\frac12w(w-1)\pi^{-w/2}\Gamma(w/2)
+\sum_{\chi}L_{12}(w,\chi)P_\chi,
+\end{equation}
+where $L_{12}(w,\chi)=\sum_{n\ge1}\chi(n)n^{-w}$ is the exact modulus-twelve series, including imprimitive local factors. Equivalently, in the absolutely convergent half-plane,
+\[
+\sum_{n\ge1}R_nn^{-w}=\prod_{p\nmid12}(I-R_p p^{-w})^{-1}.
+\]
+The principal component is
+\[
+P_{\chi_0}\M B(s)=(1-2^{-w})(1-3^{-w})\xi(w)P_{\chi_0}.
+\]
+\end{theorem}
+\begin{proof}
+Every $R_u$ is an isometry, so absolute convergence and termwise Mellin integration follow for $\Re w>1$. Proposition~\ref{prop:normalization} computes the common gamma multiplier. Character orthogonality gives $R_n=\sum_\chi\chi(n)P_\chi$, proving \eqref{eq:BL}. Multiplicativity proves the Euler product with all powers present. For the principal character, the two removed Euler factors give the last equation. The other Dirichlet series continue holomorphically to $\Re w>0$, and the principal pole at one is canceled by $w-1$. The integral continuation is justified directly by the estimates in the next theorem.
+\end{proof}
+To restore the exact scalar kernel, let $b_0(u)$ be the principal coefficient of $B(u)$. Then
+\begin{equation}\label{eq:restore}
+4\E h(u)=\sum_{a,b\ge0}2^{-a/2}3^{-b/2}\,
+ b_0(2^a3^b u).
+\end{equation}
+This follows from the unique decomposition $n=2^a3^bm$ with $\gcd(m,12)=1$. At fixed $u>0$ the Gaussian decay makes the sum absolutely convergent. The same formula for $B_\lambda$ is exact for $u\in[\lambda^{-1},\lambda]$ with only $2^a3^bu\le\lambda$ allowed. Thus no Euler factor has been discarded without an inverse restoration.
+The nontrivial characters have different conductors and parities. We do not equate their components or import a common even functional equation for them. Conjugation by $C$ cycles the three nontrivial characters while transporting their labels; it is not an equality of their numerical $L$-functions.
+
+\begin{theorem}[Explicit operator-valued cutoff bound]\label{thm:error}
+Assume exactly \eqref{eq:approx}, and let $\lambda\ge2$, $0<\epsilon<1/2$. Put
+\[
+V_h=\int_0^\infty|h'(x)|\,dx=e^{-1/2}+9e^{-3}.
+\]
+Uniformly for $-1/2+\epsilon\le\Re s\le1/2-\epsilon$,
+\begin{align}\label{eq:error}
+\|\M B_\lambda(s)-\M B(s)\|\le{}&
+\frac{4C+8V_h}{\epsilon}\lambda^{-\epsilon}\\
+&+e^{-\pi\lambda^2}\left[
+\frac{4\pi^2\lambda^5+2\pi\lambda^4}{\epsilon}
++2\pi\lambda^3+3\lambda+\frac{3}{2\pi\lambda}\right].\nonumber
+\end{align}
+The approximation constant is inherited from the cited prolate estimate; all other constants are displayed.
+\end{theorem}
+\begin{proof}
+Let $A(x)=\sum_{1\le n\le x}R_n$. The twelve-entry character table shows
+\[
+\|A(x)-(x/3)P_{\chi_0}\|\le2\qquad(x\ge0).
+\]
+The sharp discrepancies of the four components are $2/3,1,2,1$, respectively. Abel summation, $\int_0^\infty h=0$, and vanishing boundary terms give
+\[
+\left\|\sum_{n\ge1}R_nh(nu)\right\|\le2V_h,
+\qquad \|B(u)\|\le8V_hu^{1/2}.
+\]
+This proves the required Mellin integrability at zero for $\Re s>-1/2$. The formula for $V_h$ follows from the two extrema at $\pi x^2=1/2,3$, where $h=-e^{-1/2}/2$ and $h=9e^{-3}/2$.
+
+On the cutoff interval the finite sum of input errors is bounded by $4C\lambda^{-1}u^{-1/2}$. Its Mellin integral is at most $(4C/\epsilon)\lambda^{-\epsilon}$. There is also an omitted Gaussian tail, which must be retained when comparing a compactly supported input to $h$. Since $h$ is positive decreasing for $x\ge1$,
+\[
+\sum_{n>\lambda/u}h(nu)\le h(\lambda)+u^{-1}H(\lambda),
+\quad H(v):=\int_v^\infty h(x)\,dx=\frac\pi2v^3e^{-\pi v^2}.
+\]
+The equality for $H$ follows from $h(x)=\frac{d}{dx}[-\pi x^3e^{-\pi x^2}/2]$. Its two cutoff Mellin integrals are at most
+\[
+\frac{4\lambda}{\epsilon}(h(\lambda)+H(\lambda))
+\le\frac{4\pi^2\lambda^5+2\pi\lambda^4}{\epsilon}e^{-\pi\lambda^2}.
+\]
+The lower omitted interval contributes at most $(8V_h/\epsilon)\lambda^{-\epsilon}$ by the Abel bound. For $u\ge\lambda$,
+\[
+\|B(u)\|\le4u^{1/2}(h(u)+H(u)/u)\le4\pi^2u^{9/2}e^{-\pi u^2}.
+\]
+Since $\Re s\le1/2$, the remaining Mellin integral is bounded by $4\pi^2\int_\lambda^\infty u^4e^{-\pi u^2}du$. Two integrations by parts and the elementary Gaussian-tail bound give
+\[
+4\pi^2\int_\lambda^\infty u^4e^{-\pi u^2}du
+\le e^{-\pi\lambda^2}\left(2\pi\lambda^3+3\lambda+\frac{3}{2\pi\lambda}\right).
+\]
+Adding the four terms proves \eqref{eq:error}. All estimates are independent of $\Im s$.
+\end{proof}
+This transports a kernel approximation. It does not establish simplicity/evenness of the Weil ground state, or closeness of this kernel to that ground state. Those remain the separate obligations named in \cite[Section 8]{CCM}.
+
+\section{Replacing the rank-one theta input by the Leech lattice}
+There is a direct all-rank construction with the same normalized completion marks. Let $L$ be a positive-definite integral unimodular lattice of rank $2\kappa$, where $\kappa$ can be half-integral (the rank-one example is $\Z$). Define
+\[
+\Theta_L(t)=\sum_{v\in L}e^{-\pi t\|v\|^2},\qquad
+D=u\frac{d}{du},\qquad
+\Psi_L(u)=u^{1/2}\Theta_L(u^{1/\kappa}).
+\]
+Poisson summation gives $\Theta_L(1/t)=t^\kappa\Theta_L(t)$, so $\Psi_L(1/u)=\Psi_L(u)$.
+
+\begin{theorem}[Canonical centered lattice Mellin kernel]\label{thm:theta}
+Set
+\begin{equation}\label{eq:canonical}
+\K_L(u)=\frac12(D^2-1/4)\Psi_L(u).
+\end{equation}
+It is invariant under $u\mapsto1/u$ and decreases faster than every power at both ends. Its Mellin transform is entire and even, and
+\begin{equation}\label{eq:generalM}
+\M\K_L(s)=\frac\kappa2(s^2-1/4)\pi^{-w}\Gamma(w)Z_L(w),
+\quad w=\kappa(s+1/2),
+\end{equation}
+where $Z_L(w)=\sum_{v\ne0}\|v\|^{-2w}$, continued from $\Re w>\kappa$. Both completed endpoint values are $1/2$. For $L=\Z$, one has $\K_\Z=4\E h$ and $\M\K_\Z(s)=\xi(s+1/2)$ exactly.
+\end{theorem}
+\begin{proof}
+Inversion changes $D$ to $-D$, proving symmetry. The $v=0$ term is $u^{1/2}$ and is annihilated by $D^2-1/4$. Every other term decreases exponentially in $u^{1/\kappa}$ at infinity; standard lattice-point bounds, obtained by disjoint balls around lattice points, justify differentiation and the asserted rapid decay. Inversion gives the same property at zero.
+
+For a nonzero vector put $x=\pi\|v\|^2u^{1/\kappa}$. Direct differentiation gives
+\[
+\frac12(D^2-1/4)(u^{1/2}e^{-x})
+=\frac{u^{1/2}}{2\kappa^2}x(x-\kappa-1)e^{-x}.
+\]
+In $\Re w>\kappa$, termwise Mellin integration is absolutely justified and yields
+\[
+\frac{1}{2\kappa}\bigl[\Gamma(w+2)-(\kappa+1)\Gamma(w+1)\bigr]
+\pi^{-w}Z_L(w),
+\]
+which is \eqref{eq:generalM} since $w(w-\kappa)=\kappa^2(s^2-1/4)$. Analytic continuation proves the identity globally.
+
+For endpoint values, the regularized theta integral is
+\[
+\pi^{-w}\Gamma(w)Z_L(w)=
+\frac1{w-\kappa}-\frac1w+
+\int_1^\infty(\Theta_L(t)-1)(t^{w-1}+t^{\kappa-w-1})\,dt.
+\]
+Its residues are $1$ at $\kappa$ and $-1$ at zero. Substitution gives $1/2$ at both $s=\pm1/2$.
+For $L=\Z$, $\kappa=1/2$, the nonzero lattice terms occur in $\pm n$ pairs. The differential formula becomes precisely four times \eqref{eq:source}. Equivalently $Z_\Z(w)=2\zeta(2w)$ reduces \eqref{eq:generalM} to the stated $\xi$ identity.
+\end{proof}
+This makes the half-strip normalization a consequence of centered theta duality. It is not a claim that every lattice's completed zeta has the Riemann zero set.
+
+For $\Lambda$, $\kappa=12$. The exact theta identity, \cite[Section 3, p.~6]{Brouwer}, is
+\[
+\Theta_\Lambda(t)=1+\frac{65520}{691}
+\sum_{n\ge1}(\sigma_{11}(n)-\tau(n))e^{-2\pi nt},
+\]
+where $\Delta(q)=q\prod_{m\ge1}(1-q^m)^{24}=\sum\tau(n)q^n$.
+It follows that
+\begin{equation}\label{eq:LeechM}
+\boxed{\quad
+\M\K_\Lambda(s)=\frac{393120}{691}(s^2-1/4)
+(2\pi)^{-w}\Gamma(w)
+\bigl[\zeta(w)\zeta(w-11)-L(\Delta,w)\bigr],
+\quad w=12s+6.\quad}
+\end{equation}
+The identity is first an absolutely convergent Dirichlet calculation for $\Re w>12$, and then an entire completed identity. The Ramanujan term is forced by the Leech theta series; it is not inferred from a visual analogy. The degree-three marking \eqref{eq:projective} survives, while the analytic function is explicitly different from $\xi$.
+
+\section{The complete modulo-twelve theta packet and its markings}
+A literal modulo-twelve analytic packet uses
+\[
+\mathcal D=\Lambda/12\Lambda,\qquad |\mathcal D|=12^{24}.
+\]
+The lattice $\sqrt{12}\Lambda$ has dual $\Lambda/\sqrt{12}$ and discriminant module $\mathcal D$. Define
+\[
+\Theta_a(t)=\sum_{x\in a+12\Lambda}e^{-\pi t\|x\|^2/12},\qquad a\in\mathcal D.
+\]
+Let $\mathsf F$ be the exact finite Fourier matrix
+\[
+\mathsf F_{ab}=12^{-12}\exp\left(-\frac{2\pi i(a,b)}{12}\right).
+\]
+The pairing is well defined and nondegenerate by unimodularity. Character orthogonality gives $\mathsf F^2 e_a=e_{-a}$ and unitarity. Poisson summation on $\sqrt{12}\Lambda$ gives
+\begin{equation}\label{eq:vectorTheta}
+\boldsymbol\Theta(1/t)=t^{12}\mathsf F\boldsymbol\Theta(t).
+\end{equation}
+All the lattice isometries above act on $\mathcal D$ and commute with $\mathsf F$.
+
+Define the vector kernel
+\[
+\boldsymbol\K(u)=\frac12(D^2-1/4)
+\bigl[u^{1/2}\boldsymbol\Theta(u^{1/12})\bigr].
+\]
+The same proof as Theorem~\ref{thm:theta}, component by component in this finite-dimensional space, gives entire Mellin transforms and
+\[
+\boldsymbol\K(1/u)=\mathsf F\boldsymbol\K(u),\qquad
+\M\boldsymbol\K(-s)=\mathsf F\M\boldsymbol\K(s).
+\]
+The two boundary values retain the actual endpoint vectors:
+\[
+\M\boldsymbol\K(-1/2)=\tfrac12e_0,
+\qquad
+\M\boldsymbol\K(1/2)=\tfrac12\mathsf F e_0.
+\]
+Indeed the zero-frequency term at large $t$ is $e_0$ and the density term at small $t$ is $\mathsf F e_0$; the regularized Mellin residues are $-e_0$ and $\mathsf F e_0$. The second endpoint has every component equal to $1/(2\cdot12^{12})$.
+This is a Fourier-covariant replacement of a scalar evenness relation, with the finite class information retained.
+
+\subsection*{Why a marked theta packet also keeps an elliptic variable}
+At $z=0$, isometric cosets have equal scalar theta series. The 24 seed classes of Theorem~\ref{thm:mod12} are therefore not distinguished by their scalar theta \emph{values}. Their labels must remain, or one uses the full Jacobi functions
+\[
+\Theta_a(\tau,z)=
+\sum_{x\in a+12\Lambda}
+\exp\left(\frac{\pi i\tau\|x\|^2}{12}
++\frac{2\pi i(x,z)}{\sqrt{12}}\right).
+\]
+They satisfy $\Theta_{ga}(\tau,gz)=\Theta_a(\tau,z)$, rather than erasing the transformed mark. For fixed $\Im\tau>0$ the functions in $z$ for distinct $a$ are linearly independent: their Fourier supports $\{x/\sqrt{12}:x\in a+12\Lambda\}$ are disjoint. Fourier integration over the torus of $\sqrt{12}\Lambda$ recovers each coefficient and its coset. The modular return is
+\[
+\boldsymbol\Theta(-1/\tau,z/\tau)
+=(-i\tau)^{12}e^{\pi i(z,z)/\tau}\mathsf F\boldsymbol\Theta(\tau,z).
+\]
+It follows directly from the Gaussian Fourier transform with the same pairing conventions. Setting $z=0$ is an explicit information-losing observation.
+
+Keeping only the 24 marked basis vectors of $\C^{\mathcal D}$ is not closed under $\mathsf F$: the image of each basis vector has nonzero coefficient at every one of the $12^{24}$ classes. The full packet specifies that return without requiring an enumeration of its huge index set. The executable does not purport to enumerate it.
+
+\section{Source scope, retained arithmetic, and next analytic obligation}
+The local archive search located the $12A_2$--Niemeier/Leech passage in \nolinkurl{primitive_support_defects_preprint.tex}, with references to an Eisenstein--Leech note. The public recovered-directions branch separately records CivQ17's $x\mapsto4x+1$ dynamics modulo twelve. Neither inspection identifies the particular earlier Leech ``modulo twelve dynamics'' recalled by the user. We therefore do not relabel $T$ as a recovered historical formula. Its coordinates, lift and verification are given independently above.
+
+The maps act on the new label factor of a marked arithmetic state. If that state carries
+\[
+(p,R,u_{\rm ES},h,r,s,\text{channel},\kappa\text{ or }\lambda;x,y,z),
+\]
+all those fields are unchanged and retained. The inverse table \eqref{eq:labels} recovers the branch mark from the named Leech class. This is not a method that creates a new positive ES witness from an unoccupied prime.
+
+The source \cite{CCM} constructs selfadjoint spectral approximants under its stated simple-even eigenvector hypotheses, and separately develops the prolate kernel approximation. Our operator lift proves an exact residue decomposition and a quantitative kernel limit. It does not prove that the corresponding Weil eigenvectors are close to these kernels. The lattice theta construction gives another exact Mellin function, explicitly involving $L(\Delta,w)$; its zeros have not been identified with those of $\xi$.
+The next analytic task is a specified comparison between a residue/Leech-coupled Weil operator and one of these retained kernels, including the nonprincipal sectors and the finite Fourier return. Only a proved comparison could transfer the appropriate spectral conclusion.
+
+\section{Reproducibility and primary-source crosswalk}
+Run
+\begin{verbatim}
+python verify.py --out reproduced
+python -O verify.py --out reproduced_optimized
+\end{verbatim}
+The checker imports only the Python standard library and no previous checker. It reconstructs the code, every projective matrix, the two branch tables, the order-twelve cycles, the character projections, all norm-four Leech vectors, forty theta coefficients and the exact algebraic Mellin factors. The normal and optimized mathematical JSON outputs are required to agree. It does not numerically approximate an integral and call that an analytic proof. The accompanying dependency plan is Lean-ready, not a compiled Lean certificate.
+
+The primary roles are precise: \cite[Section 7, equations (7.1)--(7.12), Lemmas 7.1--7.3; Section 8]{CCM} supplies the input kernel, prolate estimate and open comparison obligations; \cite[Section 1.6, p.~10]{Chapman} supplies the quadratic-residue/Golay projective-line construction; \cite[Theorems 1.1--1.4, pp.~1--4; Section 3, p.~6]{Brouwer} supplies the standard lattice identification and theta-series identities. The concrete matrices, marking tables, residue-kernel bound and normalization calculations have proofs here. No assertion of historical novelty is attached to these calculations.
+
+\begin{thebibliography}{9}
+\bibitem{CCM} Connes, A., Consani, C., \& Moscovici, H. (2025).
+\emph{Zeta spectral triples}. arXiv:2511.22755v1, 27 November 2025.
+\url{https://arxiv.org/html/2511.22755v1}.
+\bibitem{Chapman} Chapman, R. (1997). \emph{Constructions of the Golay codes: A survey}. Version 1.1, 23 September 1997. University of Exeter.
+\url{https://empslocal.ex.ac.uk/people/staff/rjchapma/etc/golay11.pdf}.
+\bibitem{Brouwer} Brouwer, A. E. (n.d.). \emph{Uniqueness of the Leech lattice}. Six-page lecture note, author's Eindhoven site. In particular the presentation of Conway's uniqueness proof, Theorem 1.4, and Section 3.
+\url{https://aeb.win.tue.nl/2WF02/Leech.pdf}.
+\bibitem{Local} \emph{Tetrahedral markings and the four Cayley charts} (preceding local workbench tranche), \texttt{note.tex}, \texttt{verify.py}, and accompanying branch JSON. Exact inspected file hashes are recorded in this tranche's source ledger. This record is not a historical-priority claim.
+\end{thebibliography}
+\end{document}

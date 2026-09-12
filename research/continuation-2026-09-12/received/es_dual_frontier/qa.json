@@ -1,0 +1,139 @@
+{
+  "renderer": "PyMuPDF",
+  "render_scale": 1.7,
+  "pages": [
+    {
+      "pdf": "workbench.pdf",
+      "page": 1,
+      "png": "png/workbench-01.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 2,
+      "png": "png/workbench-02.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 3,
+      "png": "png/workbench-03.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 4,
+      "png": "png/workbench-04.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 5,
+      "png": "png/workbench-05.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 6,
+      "png": "png/workbench-06.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 7,
+      "png": "png/workbench-07.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 8,
+      "png": "png/workbench-08.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 9,
+      "png": "png/workbench-09.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 10,
+      "png": "png/workbench-10.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "workbench.pdf",
+      "page": 11,
+      "png": "png/workbench-11.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "preprints/denominator_defects.pdf",
+      "page": 1,
+      "png": "png/denominator_defects-01.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "preprints/denominator_defects.pdf",
+      "page": 2,
+      "png": "png/denominator_defects-02.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "preprints/denominator_defects.pdf",
+      "page": 3,
+      "png": "png/denominator_defects-03.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "preprints/exact_forcing.pdf",
+      "page": 1,
+      "png": "png/exact_forcing-01.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "preprints/exact_forcing.pdf",
+      "page": 2,
+      "png": "png/exact_forcing-02.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "preprints/exact_forcing.pdf",
+      "page": 3,
+      "png": "png/exact_forcing-03.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    },
+    {
+      "pdf": "card.pdf",
+      "page": 1,
+      "png": "png/card-01.png",
+      "width": 595.2760009765625,
+      "height": 841.8900146484375
+    }
+  ],
+  "compile_overfull_warnings": 0,
+  "compile_undefined_reference_warnings": 0,
+  "visual_inspection": "All 18 rendered pages inspected in three contact sheets; posting card and exact-forcing proof page2 additionally inspected full-size. No clipping or overlapping mathematical text observed.",
+  "inspected_full_size": [
+    "card.png",
+    "png/exact_forcing-02.png"
+  ]
+}

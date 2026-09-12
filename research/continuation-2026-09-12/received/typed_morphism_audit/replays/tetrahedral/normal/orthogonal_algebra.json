@@ -1,0 +1,48 @@
+{
+  "affine_coordinate": "z=V/(U+V)",
+  "affine_values": [
+    "0",
+    "2/3",
+    "2"
+  ],
+  "polynomial": "z*(3*z-2)*(z-2)",
+  "primitive_idempotents_constant_linear_quadratic": [
+    [
+      "1",
+      "-2",
+      "3/4"
+    ],
+    [
+      "0",
+      "9/4",
+      "-9/8"
+    ],
+    [
+      "0",
+      "-1/4",
+      "3/8"
+    ]
+  ],
+  "root_labels": [
+    "infinity",
+    "1/2",
+    "-1/2"
+  ],
+  "trace_gram": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ]
+}

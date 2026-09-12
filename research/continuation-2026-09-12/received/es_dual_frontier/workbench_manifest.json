@@ -1,0 +1,22 @@
+{
+  "checker": "dual_es.py",
+  "counterexample_found": false,
+  "counterfactual_object": "counterfactual_system.json",
+  "date": "2026-09-12",
+  "formalization": "lean_ready_plan.md",
+  "giuga_counterexample_assumed_for_ES": false,
+  "global_conjecture_proved": false,
+  "morphism_delta": "morphisms.json",
+  "novelty": "novelty_review.json",
+  "programme": "two-sided ES construction and counterfactual system",
+  "proof": "workbench.tex",
+  "receipts": "execution_receipt.json",
+  "remote_changes": [],
+  "schema": "polyclank-es-incoming/1",
+  "short_preprints": [
+    "preprints/denominator_defects.tex",
+    "preprints/exact_forcing.tex"
+  ],
+  "source_sha256_file": "lineage/source_hashes.json",
+  "status": "local research output; not pushed or published"
+}

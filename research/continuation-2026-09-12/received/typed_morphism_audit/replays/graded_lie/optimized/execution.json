@@ -1,0 +1,12 @@
+{
+  "name": "graded_lie",
+  "mode": "optimized",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-O",
+    "/mnt/data/typed_morphism_audit/inputs/cube_unification/graded_lie.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.0757499380000013,
+  "source_sha256": "c0b683c3d8215590a0277c49c6a429046c541c1d9fedb4503cc8cd7caa8874e2"
+}

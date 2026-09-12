@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern,amsmath,amssymb,microtype,booktabs}
+\usepackage[paperwidth=7.5in,paperheight=10in,margin=0.55in]{geometry}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{8pt}
+\begin{document}
+{\small THE CLANKERS\hfill RESEARCH NOTE / 12 SEPTEMBER 2026}\par\vspace{8pt}\hrule\vspace{15pt}
+
+{\LARGE\bfseries Every integer triple has\par a shortest Leech lift}\par\vspace{8pt}
+Three disjoint Golay octads give a trace map $P:\Lambda\to\mathbb Z^3$. For every $t\in\mathbb Z^3$,
+\[
+\boxed{\displaystyle
+\min_{P\lambda=t}\|\lambda\|^2
+=\frac{\|t\|^2}{4}+\mu(t\bmod4).}
+\]
+Take $r_i\in\{0,1,2,3\}$ and reduce $3$ to $-1$, giving $a(r)$. Then
+\[
+\boxed{\displaystyle
+\mu(r)=\begin{cases}
+0&r=(0,0,0),\\
+3&r=(2,2,2),\\
+4-\|a(r)\|^2/4&\text{otherwise}.
+\end{cases}}
+\]
+In particular, the extra squared-norm cost is always at most $15/4$.
+
+\textbf{A finite seed proof, not a height extrapolation.} Eight explicit norm-four seeds, code-preserving phase permutations and block sign changes give all 62 ordinary nonzero residues. A balanced dodecad realizes norm six at $(2,2,2)$, and parity proves that lower bound. Zero handles the remaining class.
+
+Let $w_i=2\mathbf1_{B_i}/\sqrt8$. Translation changes the $i$th trace by four and leaves the perpendicular component fixed. Hence
+\[
+\lambda_*(t)=\nu_r+\sum_i\frac{t_i-a_i(r)}4w_i
+\]
+is an explicit shortest inverse for every integer input.
+
+The entire fibre is $\sigma(t)+\ker P$. Keeping that kernel preserves the marked state under subsequent maps; selecting a shortest representative does not remove the other states.
+
+\textit{Full statement: An eight-seed proof of the shortest three-octad Leech trace inverse.}
+\vfill\hrule\vspace{6pt}
+{\footnotesize Exact definitions, complete proofs and standard-library certificates accompany the three-page preprint. The Leech and Golay constructions are classical; no historical-priority claim or proof of Erd\H{o}s--Straus is made.}
+\end{document}

@@ -1,0 +1,88 @@
+% Copy-ready replacement for src/core.tex, Proposition Functorial modulus maps.
+% This private correction does not alter the supplied archive.
+\begin{proposition}[Functorial modulus maps and their compactifications]
+\label{prop:crt}
+For positive odd integers $D\mid E$, coordinate reduction
+$\mathcal F_E\to\mathcal F_D$ is equivariant and surjective, with fibres
+of size $(E/D)^3$. It induces a map of the corresponding compactified
+covers. At a marked source branch cycle of length $e_E$ mapping to a
+target branch cycle of length $e_D$, one has $e_D\mid e_E$, and the local
+degree is $e_E/e_D$. At the cusp this is $E/D$.
+
+For coprime positive odd integers $D,E$, coordinate CRT gives an
+equivariant bijection
+\[
+ \mathcal F_{DE}\xrightarrow{\sim}\mathcal F_D\times\mathcal F_E,
+\]
+with coordinate inverse
+$a+D((b-a)D^{-1}\bmod E)\bmod DE$.
+The corresponding unramified cover is the fibre product over the
+punctured base. Its compactification is the normalization of the fibre
+product of the compactified covers over $\mathbb P^1$.
+The cocycles and local systems have the induced reduction and CRT maps.
+Every product and every map retains the same base and candidate label.
+\end{proposition}
+\begin{proof}
+All three affine formulas have integral coefficients, hence commute with
+coordinate reduction. Each residue modulo $D$ has exactly $E/D$ lifts
+modulo $E$, proving the fibre count in three coordinates. Equivariance
+gives the map of covers away from the punctures.
+
+At a fixed puncture, let $e_E$ be the source cycle length and $e_D$ its
+image cycle length. The $e_E$-th power of target monodromy fixes the
+image sheet, so $e_D\mid e_E$. Choose compatible sheet origins and
+local coordinates with base parameter
+\[
+ t=w_E^{e_E}=w_D^{e_D}.
+\]
+The prescribed punctured-cover map has the local form
+\[
+ w_D=\zeta w_E^{e_E/e_D},\qquad \zeta^{e_D}=1,
+\]
+where the root of unity retains the target branch mark. The positive
+integer exponent proves holomorphic extension, unique by agreement on
+the punctured disc. At infinity $e_E=E$ and $e_D=D$ by the cusp-cycle
+theorem. At the finite branch points their values are the actual cycle
+lengths dividing three and four; they need not equal the moduli.
+
+The displayed CRT formula is inverse to both coordinate reductions.
+It commutes with all three monodromies, so it identifies the unramified
+level-$DE$ cover with the fibre product of the two unramified covers.
+To complete this identification, consider source and target branch
+cycles of lengths $e_D,e_E$. Their local fibre product has equation
+\[
+ x^{e_D}=y^{e_E}.
+\]
+Put $d=\gcd(e_D,e_E)$, $r=e_D/d$, $s=e_E/d$. Its $d$ branches are
+$x^r=\xi y^s$ for $\xi^d=1$. On a branch, choose $\eta^r=\xi$.
+The normalization has the parametrization
+\[
+ x=\eta w^s,\qquad y=w^r,\qquad
+ t=w^{\operatorname{lcm}(e_D,e_E)}.
+\]
+The two maps to the base agree because $\eta^{e_D}=\xi^d=1$.
+Since $\gcd(r,s)=1$, Bezout's identity gives a birational inverse in
+the field of meromorphic germs, and the parameter disc is smooth.
+The product monodromy has precisely $d$ cycles of length
+$\operatorname{lcm}(e_D,e_E)$: a simultaneous iterate returns exactly
+when divisible by both lengths, and the number of orbits is
+$e_De_E/\operatorname{lcm}(e_D,e_E)=d$.
+Thus the normalized local branches are exactly the completed product
+cover. Their unique extensions glue to the compactified level-$DE$
+cover. This argument is componentwise for disconnected covers and
+keeps every candidate label and marked branch.
+
+For example, reduction from level 15 to level 3 sends the $a_1$ cycle
+\[
+ (0,0,0)\mapsto(6,9,13)\mapsto(0,9,2)\mapsto(0,0,0)
+\]
+to the cycle
+\[
+ (0,0,0)\mapsto(0,0,1)\mapsto(0,0,2)\mapsto(0,0,0).
+\]
+The local degree here is $3/3=1$, whereas at the cusp it is $15/3=5$.
+For the coprime levels three and five the cusp fibre product
+$x^3=y^5$ is singular; its normalization is
+$x=w^5,y=w^3,t=w^{15}$. This records why normalization is part of
+the compactified product statement.
+\end{proof}

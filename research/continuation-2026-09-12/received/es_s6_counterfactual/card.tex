@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern,amsmath,amssymb,booktabs,xcolor,microtype}
+\usepackage[paperwidth=185mm,paperheight=245mm,margin=15mm]{geometry}
+\definecolor{navy}{HTML}{153653}\definecolor{muted}{HTML}{506171}
+\emergencystretch=2em
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{7pt}
+\begin{document}
+{\small\color{muted}EXACT RESEARCH NOTE\hfill 12 SEPTEMBER 2026\par}
+\vspace{5pt}
+{\LARGE\bfseries\color{navy}ES denominator defects\\inside a three-coordinate\\monodromy system\par}
+\vspace{4pt}
+For a full-shell divisor candidate $u\mid a^2$, $R=4a-p$, its least
+return denominator is
+\[
+ D_E=\frac R{\gcd(R,4u+1)},\qquad D_M=\frac R{\gcd(R,u+a)}.
+\]
+\textbf{Integral success at the original prime is exactly $D=1$.}
+
+\hrule\vspace{5pt}
+From the actual $(3,4,\infty)$ period matrices, act on
+$(\mathbb Z/D)^3$ by
+\[
+\begin{aligned}
+a_1(x,y,z)&=(6+y,-6-x-y,z-2+x),\\
+a_2(x,y,z)&=(-y,x-6,z+3+y),\\
+a_\infty(x,y,z)&=(x,y+x,z-1).
+\end{aligned}
+\]
+Every map is invertible. Every cusp cycle has length exactly $D$.
+The affine gluing class has exact order $D$, despite being trivial
+on each of the two finite cyclic subgroups.
+
+{\large\bfseries\color{navy}Complete classification for every odd $D$}
+\[
+\begin{array}{c|c|c}
+&\text{orbit degrees}&\text{compact genera}\\[3pt]\hline
+3\nmid D&D^3&\dfrac{5D^3-12D^2-17D+24}{24}\\[12pt]
+3\mid D&D^3/9&\dfrac{5D^3-12D^2-81D+216}{216}\\[12pt]
+&8D^3/9&\dfrac{5D^3-12D^2-9D+27}{27}
+\end{array}
+\]
+At $D=3$: degrees $3,24$ and genera $0,1$.
+At $D=5$: degree $125$ and genus $11$.
+
+\textbf{The full labelled union has a section exactly when ES holds.}
+Labels retain every shell, exponent budget, channel, order and clearing scale.
+
+\vfill\hrule\vspace{4pt}
+{\footnotesize\color{muted}
+Written all-level proofs + standard-library certificates. Source matrices:
+manuscript circulated by Alp\"oge/Claude, \S2. This is a finite torsion-cover
+comparison, not a proof of ES or an independent certification of the
+source's global $S^6$ claim. Full definitions and proofs accompany this card.}
+\end{document}

@@ -1,0 +1,636 @@
+[
+  {
+    "p": 241,
+    "rows": [
+      {
+        "D": 3,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 1
+      },
+      {
+        "D": 3,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 1
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 2
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 2
+      },
+      {
+        "D": 15,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 7,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 4
+      },
+      {
+        "D": 15,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 7,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 4
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 8
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 8
+      },
+      {
+        "D": 3,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 16
+      },
+      {
+        "D": 3,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 16
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 32
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 32
+      },
+      {
+        "D": 15,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 7,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 64
+      },
+      {
+        "D": 15,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 7,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 64
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 128
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 128
+      },
+      {
+        "D": 3,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 256
+      },
+      {
+        "D": 3,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 256
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 512
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 512
+      },
+      {
+        "D": 15,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 7,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 1024
+      },
+      {
+        "D": 15,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 7,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 1024
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 2048
+      },
+      {
+        "D": 5,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 2048
+      },
+      {
+        "D": 3,
+        "a": 64,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 4096
+      },
+      {
+        "D": 3,
+        "a": 64,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "obstructing_prime": 3,
+        "u": 4096
+      }
+    ],
+    "scope": "restricted",
+    "shells": [
+      64
+    ]
+  },
+  {
+    "p": 37,
+    "rows": [
+      {
+        "D": 7,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 3,
+          "numerator": 1
+        },
+        "obstructing_prime": 7,
+        "u": 1
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 1
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 2
+      },
+      {
+        "D": 7,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 3,
+          "numerator": 1
+        },
+        "obstructing_prime": 7,
+        "u": 2
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 3
+      },
+      {
+        "D": 5,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 3
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 4
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 4
+      },
+      {
+        "D": 7,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 3,
+          "numerator": 1
+        },
+        "obstructing_prime": 7,
+        "u": 6
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 6
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 9
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 9
+      },
+      {
+        "D": 5,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 12
+      },
+      {
+        "D": 7,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 3,
+          "numerator": 1
+        },
+        "obstructing_prime": 7,
+        "u": 12
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 18
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 18
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 27
+      },
+      {
+        "D": 7,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 3,
+          "numerator": 1
+        },
+        "obstructing_prime": 7,
+        "u": 27
+      },
+      {
+        "D": 7,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 3,
+          "numerator": 1
+        },
+        "obstructing_prime": 7,
+        "u": 36
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 36
+      },
+      {
+        "D": 5,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 54
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 54
+      },
+      {
+        "D": 7,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 3,
+          "numerator": 1
+        },
+        "obstructing_prime": 7,
+        "u": 81
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 81
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 108
+      },
+      {
+        "D": 5,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 108
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 162
+      },
+      {
+        "D": 7,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 3,
+          "numerator": 1
+        },
+        "obstructing_prime": 7,
+        "u": 162
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "E",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 324
+      },
+      {
+        "D": 35,
+        "a": 18,
+        "channel": "M",
+        "inverse_gap": {
+          "denominator": 17,
+          "numerator": 1
+        },
+        "obstructing_prime": 5,
+        "u": 324
+      }
+    ],
+    "scope": "restricted",
+    "shells": [
+      18
+    ]
+  }
+]

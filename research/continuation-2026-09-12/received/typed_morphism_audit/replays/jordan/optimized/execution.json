@@ -1,0 +1,14 @@
+{
+  "name": "jordan",
+  "mode": "optimized",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-O",
+    "/mnt/data/typed_morphism_audit/inputs/three_coordinate_jordan/verify.py",
+    "--output",
+    "/mnt/data/typed_morphism_audit/replays/jordan/optimized/certificate.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 15.639080695000018,
+  "source_sha256": "849e26ed84266ddcee85dbd68d6ea0b5cffe588ee40bdf42009f1c267dc03c9e"
+}

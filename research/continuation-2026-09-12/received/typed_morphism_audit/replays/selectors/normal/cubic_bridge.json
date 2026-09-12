@@ -1,0 +1,148 @@
+{
+  "collision_fibre": [
+    {
+      "R": 3,
+      "a": 98,
+      "channel": "E",
+      "denominators_increasing": [
+        98,
+        14308,
+        113588
+      ],
+      "denominators_raw": [
+        98,
+        14308,
+        113588
+      ],
+      "h": 2,
+      "kappa": 146,
+      "lambda": null,
+      "p": 389,
+      "positive_chamber": true,
+      "r": 1,
+      "s": 49,
+      "transfer_g": 1,
+      "u": 2
+    },
+    {
+      "R": 3,
+      "a": 98,
+      "channel": "E",
+      "denominators_increasing": [
+        98,
+        12712,
+        34614776
+      ],
+      "denominators_raw": [
+        98,
+        12712,
+        34614776
+      ],
+      "h": 14,
+      "kappa": 908,
+      "lambda": null,
+      "p": 389,
+      "positive_chamber": false,
+      "r": 7,
+      "s": 1,
+      "transfer_g": 7,
+      "u": 686
+    }
+  ],
+  "collision_target": {
+    "R": 3,
+    "a": 98,
+    "channel": "M",
+    "denominators_increasing": [
+      98,
+      19061,
+      38122
+    ],
+    "denominators_raw": [
+      98,
+      38122,
+      19061
+    ],
+    "h": 49,
+    "kappa": null,
+    "lambda": 1,
+    "p": 389,
+    "positive_chamber": false,
+    "r": 1,
+    "s": 2,
+    "u": 49
+  },
+  "normalized_example": {
+    "R": 31,
+    "a": 120,
+    "channel": "M",
+    "denominators_increasing": [
+      120,
+      1796,
+      53880
+    ],
+    "denominators_raw": [
+      120,
+      53880,
+      1796
+    ],
+    "h": 4,
+    "kappa": null,
+    "lambda": 1,
+    "p": 449,
+    "positive_chamber": true,
+    "r": 1,
+    "s": 30,
+    "source_u": 240,
+    "transfer_g": 2,
+    "u": 4
+  },
+  "source": {
+    "R": 31,
+    "a": 638,
+    "channel": "E",
+    "denominators_increasing": [
+      638,
+      51997,
+      23833534
+    ],
+    "denominators_raw": [
+      638,
+      51997,
+      23833534
+    ],
+    "h": 29,
+    "kappa": 163,
+    "lambda": null,
+    "p": 2521,
+    "positive_chamber": false,
+    "r": 2,
+    "s": 11,
+    "u": 116
+  },
+  "target": {
+    "R": 31,
+    "a": 638,
+    "channel": "M",
+    "denominators_increasing": [
+      638,
+      55462,
+      804199
+    ],
+    "denominators_raw": [
+      638,
+      804199,
+      55462
+    ],
+    "h": 11,
+    "kappa": null,
+    "lambda": 1,
+    "p": 2521,
+    "positive_chamber": true,
+    "r": 2,
+    "s": 29,
+    "source_u": 116,
+    "transfer_g": 1,
+    "u": 44
+  }
+}

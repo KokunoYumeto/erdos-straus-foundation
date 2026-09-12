@@ -1,0 +1,828 @@
+{
+  "R": 15,
+  "a": 64,
+  "components": [
+    {
+      "D": 3,
+      "size": 12,
+      "vertices": [
+        0,
+        1,
+        2,
+        12,
+        13,
+        14,
+        24,
+        25,
+        26,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "D": 5,
+      "size": 18,
+      "vertices": [
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        15,
+        16,
+        17,
+        21,
+        22,
+        23,
+        27,
+        28,
+        29,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "D": 15,
+      "size": 9,
+      "vertices": [
+        6,
+        7,
+        8,
+        18,
+        19,
+        20,
+        30,
+        31,
+        32
+      ]
+    }
+  ],
+  "cover_transport": "identity on the three torsion coordinates; retain the source and target arithmetic labels and the edge",
+  "edges": [
+    {
+      "from": 0,
+      "kind": "exterior order reversal",
+      "to": 1
+    },
+    {
+      "from": 0,
+      "kind": "same-shell E/M correspondence",
+      "to": 2
+    },
+    {
+      "from": 0,
+      "kind": "same-shell E/M correspondence",
+      "to": 14
+    },
+    {
+      "from": 0,
+      "kind": "same-shell E/M correspondence",
+      "to": 26
+    },
+    {
+      "from": 0,
+      "kind": "same-shell E/M correspondence",
+      "to": 38
+    },
+    {
+      "from": 1,
+      "kind": "same-shell E/M correspondence",
+      "to": 2
+    },
+    {
+      "from": 1,
+      "kind": "same-shell E/M correspondence",
+      "to": 14
+    },
+    {
+      "from": 1,
+      "kind": "same-shell E/M correspondence",
+      "to": 26
+    },
+    {
+      "from": 1,
+      "kind": "same-shell E/M correspondence",
+      "to": 38
+    },
+    {
+      "from": 2,
+      "kind": "same-shell E/M correspondence",
+      "to": 12
+    },
+    {
+      "from": 2,
+      "kind": "same-shell E/M correspondence",
+      "to": 13
+    },
+    {
+      "from": 2,
+      "kind": "same-shell E/M correspondence",
+      "to": 24
+    },
+    {
+      "from": 2,
+      "kind": "same-shell E/M correspondence",
+      "to": 25
+    },
+    {
+      "from": 2,
+      "kind": "same-shell E/M correspondence",
+      "to": 36
+    },
+    {
+      "from": 2,
+      "kind": "same-shell E/M correspondence",
+      "to": 37
+    },
+    {
+      "from": 2,
+      "kind": "middle complement",
+      "to": 38
+    },
+    {
+      "from": 3,
+      "kind": "exterior order reversal",
+      "to": 4
+    },
+    {
+      "from": 3,
+      "kind": "same-shell E/M correspondence",
+      "to": 5
+    },
+    {
+      "from": 3,
+      "kind": "same-shell E/M correspondence",
+      "to": 17
+    },
+    {
+      "from": 3,
+      "kind": "same-shell E/M correspondence",
+      "to": 29
+    },
+    {
+      "from": 4,
+      "kind": "same-shell E/M correspondence",
+      "to": 5
+    },
+    {
+      "from": 4,
+      "kind": "same-shell E/M correspondence",
+      "to": 17
+    },
+    {
+      "from": 4,
+      "kind": "same-shell E/M correspondence",
+      "to": 29
+    },
+    {
+      "from": 5,
+      "kind": "same-shell E/M correspondence",
+      "to": 15
+    },
+    {
+      "from": 5,
+      "kind": "same-shell E/M correspondence",
+      "to": 16
+    },
+    {
+      "from": 5,
+      "kind": "same-shell E/M correspondence",
+      "to": 27
+    },
+    {
+      "from": 5,
+      "kind": "same-shell E/M correspondence",
+      "to": 28
+    },
+    {
+      "from": 5,
+      "kind": "middle complement",
+      "to": 35
+    },
+    {
+      "from": 6,
+      "kind": "exterior order reversal",
+      "to": 7
+    },
+    {
+      "from": 6,
+      "kind": "same-shell E/M correspondence",
+      "to": 8
+    },
+    {
+      "from": 6,
+      "kind": "same-shell E/M correspondence",
+      "to": 20
+    },
+    {
+      "from": 6,
+      "kind": "same-shell E/M correspondence",
+      "to": 32
+    },
+    {
+      "from": 7,
+      "kind": "same-shell E/M correspondence",
+      "to": 8
+    },
+    {
+      "from": 7,
+      "kind": "same-shell E/M correspondence",
+      "to": 20
+    },
+    {
+      "from": 7,
+      "kind": "same-shell E/M correspondence",
+      "to": 32
+    },
+    {
+      "from": 8,
+      "kind": "same-shell E/M correspondence",
+      "to": 18
+    },
+    {
+      "from": 8,
+      "kind": "same-shell E/M correspondence",
+      "to": 19
+    },
+    {
+      "from": 8,
+      "kind": "same-shell E/M correspondence",
+      "to": 30
+    },
+    {
+      "from": 8,
+      "kind": "same-shell E/M correspondence",
+      "to": 31
+    },
+    {
+      "from": 8,
+      "kind": "middle complement",
+      "to": 32
+    },
+    {
+      "from": 9,
+      "kind": "exterior order reversal",
+      "to": 10
+    },
+    {
+      "from": 9,
+      "kind": "same-shell E/M correspondence",
+      "to": 11
+    },
+    {
+      "from": 9,
+      "kind": "same-shell E/M correspondence",
+      "to": 23
+    },
+    {
+      "from": 9,
+      "kind": "same-shell E/M correspondence",
+      "to": 35
+    },
+    {
+      "from": 10,
+      "kind": "same-shell E/M correspondence",
+      "to": 11
+    },
+    {
+      "from": 10,
+      "kind": "same-shell E/M correspondence",
+      "to": 23
+    },
+    {
+      "from": 10,
+      "kind": "same-shell E/M correspondence",
+      "to": 35
+    },
+    {
+      "from": 11,
+      "kind": "same-shell E/M correspondence",
+      "to": 21
+    },
+    {
+      "from": 11,
+      "kind": "same-shell E/M correspondence",
+      "to": 22
+    },
+    {
+      "from": 11,
+      "kind": "middle complement",
+      "to": 29
+    },
+    {
+      "from": 11,
+      "kind": "same-shell E/M correspondence",
+      "to": 33
+    },
+    {
+      "from": 11,
+      "kind": "same-shell E/M correspondence",
+      "to": 34
+    },
+    {
+      "from": 12,
+      "kind": "exterior order reversal",
+      "to": 13
+    },
+    {
+      "from": 12,
+      "kind": "same-shell E/M correspondence",
+      "to": 14
+    },
+    {
+      "from": 12,
+      "kind": "same-shell E/M correspondence",
+      "to": 26
+    },
+    {
+      "from": 12,
+      "kind": "same-shell E/M correspondence",
+      "to": 38
+    },
+    {
+      "from": 13,
+      "kind": "same-shell E/M correspondence",
+      "to": 14
+    },
+    {
+      "from": 13,
+      "kind": "same-shell E/M correspondence",
+      "to": 26
+    },
+    {
+      "from": 13,
+      "kind": "same-shell E/M correspondence",
+      "to": 38
+    },
+    {
+      "from": 14,
+      "kind": "same-shell E/M correspondence",
+      "to": 24
+    },
+    {
+      "from": 14,
+      "kind": "same-shell E/M correspondence",
+      "to": 25
+    },
+    {
+      "from": 14,
+      "kind": "middle complement",
+      "to": 26
+    },
+    {
+      "from": 14,
+      "kind": "same-shell E/M correspondence",
+      "to": 36
+    },
+    {
+      "from": 14,
+      "kind": "same-shell E/M correspondence",
+      "to": 37
+    },
+    {
+      "from": 15,
+      "kind": "exterior order reversal",
+      "to": 16
+    },
+    {
+      "from": 15,
+      "kind": "same-shell E/M correspondence",
+      "to": 17
+    },
+    {
+      "from": 15,
+      "kind": "same-shell E/M correspondence",
+      "to": 29
+    },
+    {
+      "from": 16,
+      "kind": "same-shell E/M correspondence",
+      "to": 17
+    },
+    {
+      "from": 16,
+      "kind": "same-shell E/M correspondence",
+      "to": 29
+    },
+    {
+      "from": 17,
+      "kind": "middle complement",
+      "to": 23
+    },
+    {
+      "from": 17,
+      "kind": "same-shell E/M correspondence",
+      "to": 27
+    },
+    {
+      "from": 17,
+      "kind": "same-shell E/M correspondence",
+      "to": 28
+    },
+    {
+      "from": 18,
+      "kind": "exterior order reversal",
+      "to": 19
+    },
+    {
+      "from": 18,
+      "kind": "same-shell E/M correspondence",
+      "to": 20
+    },
+    {
+      "from": 18,
+      "kind": "same-shell E/M correspondence",
+      "to": 32
+    },
+    {
+      "from": 19,
+      "kind": "same-shell E/M correspondence",
+      "to": 20
+    },
+    {
+      "from": 19,
+      "kind": "same-shell E/M correspondence",
+      "to": 32
+    },
+    {
+      "from": 20,
+      "kind": "same-shell E/M correspondence",
+      "to": 30
+    },
+    {
+      "from": 20,
+      "kind": "same-shell E/M correspondence",
+      "to": 31
+    },
+    {
+      "from": 21,
+      "kind": "exterior order reversal",
+      "to": 22
+    },
+    {
+      "from": 21,
+      "kind": "same-shell E/M correspondence",
+      "to": 23
+    },
+    {
+      "from": 21,
+      "kind": "same-shell E/M correspondence",
+      "to": 35
+    },
+    {
+      "from": 22,
+      "kind": "same-shell E/M correspondence",
+      "to": 23
+    },
+    {
+      "from": 22,
+      "kind": "same-shell E/M correspondence",
+      "to": 35
+    },
+    {
+      "from": 23,
+      "kind": "same-shell E/M correspondence",
+      "to": 33
+    },
+    {
+      "from": 23,
+      "kind": "same-shell E/M correspondence",
+      "to": 34
+    },
+    {
+      "from": 24,
+      "kind": "exterior order reversal",
+      "to": 25
+    },
+    {
+      "from": 24,
+      "kind": "same-shell E/M correspondence",
+      "to": 26
+    },
+    {
+      "from": 24,
+      "kind": "same-shell E/M correspondence",
+      "to": 38
+    },
+    {
+      "from": 25,
+      "kind": "same-shell E/M correspondence",
+      "to": 26
+    },
+    {
+      "from": 25,
+      "kind": "same-shell E/M correspondence",
+      "to": 38
+    },
+    {
+      "from": 26,
+      "kind": "same-shell E/M correspondence",
+      "to": 36
+    },
+    {
+      "from": 26,
+      "kind": "same-shell E/M correspondence",
+      "to": 37
+    },
+    {
+      "from": 27,
+      "kind": "exterior order reversal",
+      "to": 28
+    },
+    {
+      "from": 27,
+      "kind": "same-shell E/M correspondence",
+      "to": 29
+    },
+    {
+      "from": 28,
+      "kind": "same-shell E/M correspondence",
+      "to": 29
+    },
+    {
+      "from": 30,
+      "kind": "exterior order reversal",
+      "to": 31
+    },
+    {
+      "from": 30,
+      "kind": "same-shell E/M correspondence",
+      "to": 32
+    },
+    {
+      "from": 31,
+      "kind": "same-shell E/M correspondence",
+      "to": 32
+    },
+    {
+      "from": 33,
+      "kind": "exterior order reversal",
+      "to": 34
+    },
+    {
+      "from": 33,
+      "kind": "same-shell E/M correspondence",
+      "to": 35
+    },
+    {
+      "from": 34,
+      "kind": "same-shell E/M correspondence",
+      "to": 35
+    },
+    {
+      "from": 36,
+      "kind": "exterior order reversal",
+      "to": 37
+    },
+    {
+      "from": 36,
+      "kind": "same-shell E/M correspondence",
+      "to": 38
+    },
+    {
+      "from": 37,
+      "kind": "same-shell E/M correspondence",
+      "to": 38
+    }
+  ],
+  "p": 241,
+  "vertices": [
+    {
+      "D": 3,
+      "channel": "E",
+      "swap": 0,
+      "u": 1
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "swap": 1,
+      "u": 1
+    },
+    {
+      "D": 3,
+      "channel": "M",
+      "swap": 0,
+      "u": 1
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 0,
+      "u": 2
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 1,
+      "u": 2
+    },
+    {
+      "D": 5,
+      "channel": "M",
+      "swap": 0,
+      "u": 2
+    },
+    {
+      "D": 15,
+      "channel": "E",
+      "swap": 0,
+      "u": 4
+    },
+    {
+      "D": 15,
+      "channel": "E",
+      "swap": 1,
+      "u": 4
+    },
+    {
+      "D": 15,
+      "channel": "M",
+      "swap": 0,
+      "u": 4
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 0,
+      "u": 8
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 1,
+      "u": 8
+    },
+    {
+      "D": 5,
+      "channel": "M",
+      "swap": 0,
+      "u": 8
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "swap": 0,
+      "u": 16
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "swap": 1,
+      "u": 16
+    },
+    {
+      "D": 3,
+      "channel": "M",
+      "swap": 0,
+      "u": 16
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 0,
+      "u": 32
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 1,
+      "u": 32
+    },
+    {
+      "D": 5,
+      "channel": "M",
+      "swap": 0,
+      "u": 32
+    },
+    {
+      "D": 15,
+      "channel": "E",
+      "swap": 0,
+      "u": 64
+    },
+    {
+      "D": 15,
+      "channel": "E",
+      "swap": 1,
+      "u": 64
+    },
+    {
+      "D": 15,
+      "channel": "M",
+      "swap": 0,
+      "u": 64
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 0,
+      "u": 128
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 1,
+      "u": 128
+    },
+    {
+      "D": 5,
+      "channel": "M",
+      "swap": 0,
+      "u": 128
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "swap": 0,
+      "u": 256
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "swap": 1,
+      "u": 256
+    },
+    {
+      "D": 3,
+      "channel": "M",
+      "swap": 0,
+      "u": 256
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 0,
+      "u": 512
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 1,
+      "u": 512
+    },
+    {
+      "D": 5,
+      "channel": "M",
+      "swap": 0,
+      "u": 512
+    },
+    {
+      "D": 15,
+      "channel": "E",
+      "swap": 0,
+      "u": 1024
+    },
+    {
+      "D": 15,
+      "channel": "E",
+      "swap": 1,
+      "u": 1024
+    },
+    {
+      "D": 15,
+      "channel": "M",
+      "swap": 0,
+      "u": 1024
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 0,
+      "u": 2048
+    },
+    {
+      "D": 5,
+      "channel": "E",
+      "swap": 1,
+      "u": 2048
+    },
+    {
+      "D": 5,
+      "channel": "M",
+      "swap": 0,
+      "u": 2048
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "swap": 0,
+      "u": 4096
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "swap": 1,
+      "u": 4096
+    },
+    {
+      "D": 3,
+      "channel": "M",
+      "swap": 0,
+      "u": 4096
+    }
+  ]
+}

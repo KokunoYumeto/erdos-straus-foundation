@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-12",
+  "inherited_source_policy": "Earlier Yamamoto, Monks–Velingker, Elsholtz–Tao, Dahan, Milne, Kim–Schreyer and Terzo locators remain in the preserved predecessor texts and their ledgers. Full fresh reading of each is not asserted.",
+  "local_source_inventory": "source_inventory.json",
+  "records": [
+    {
+      "apa": "Wilson, R. A. (2009). Octonions and the Leech lattice. Revised 20 March 2009.",
+      "id": "S-Wilson",
+      "locators": [
+        "Section 2, printed p. 2: basis, scaled E8 lattice and right multiplication",
+        "Section 3, printed p. 3: all three joint lattice conditions and norm factor",
+        "Section 4, printed pp. 4–5: existing explicit MOG identification and full-lattice proof"
+      ],
+      "not_claimed": "First isometry, new Leech model, or whole-paper audit.",
+      "role": "Imported target lattice and its unimodularity; existing model isometry explicitly acknowledged. The pinned projective-octad-aligned table is the local continuation.",
+      "status": "retrieved; selected mathematical text and relevant PDF pages inspected",
+      "url": "https://maths.qmul.ac.uk/~raw/pubs_files/octoLeech1rev.pdf"
+    },
+    {
+      "apa": "Chapman, R. (1997, September 23). Constructions of the Golay codes: A survey (Version 1.1).",
+      "id": "S-Chapman",
+      "locators": [
+        "Section 1.2, Theorem 1, pp. 2–3: Steiner system of octads",
+        "Section 1.6, p. 10: quadratic-residue/projective construction and PSL2(23) action"
+      ],
+      "role": "Classical code/design input; finite code, orbit and incidence computations independently replayed in this tranche.",
+      "status": "retrieved; relevant sections inspected",
+      "url": "https://empslocal.ex.ac.uk/people/staff/rjchapma/etc/golay11.pdf"
+    },
+    {
+      "apa": "Brouwer, A. E. (n.d.). Uniqueness of the Leech lattice [Lecture notes].",
+      "id": "S-Brouwer",
+      "locators": [
+        "Theorem 1.1: uniqueness and minimum-norm setting",
+        "Theorem 1.4, p. 4: integral Golay coordinate model"
+      ],
+      "role": "Imported integral Leech model, unimodularity and minimum four; no new uniqueness claim.",
+      "status": "retrieved; selected text and coordinate page inspected",
+      "url": "https://aeb.win.tue.nl/2WF02/Leech.pdf"
+    },
+    {
+      "apa": "Baez, J. C., & Pumplün, S. (2026). Three-dimensional geometry in exceptional mathematics (arXiv:2609.07538v1).",
+      "id": "S-Baez-Pumplun",
+      "locators": [
+        "Sections 5–6",
+        "Theorem 11 and Appendix A: first-Tits/Zorn/Albert coordinate map"
+      ],
+      "role": "Imported ambient isomorphism and field conventions; exact Q(i) return and compact-image guard reconstructed here.",
+      "status": "retrieved; named coordinate sections inspected; not a full-paper independent audit",
+      "url": "https://arxiv.org/html/2609.07538v1"
+    },
+    {
+      "apa": "Tao, T. (2026, July 21). A digestion of the Jacobian conjecture counterexample.",
+      "id": "S-Tao",
+      "locators": [
+        "Equations (2), (5), (7), (10): explicit polynomial, normalized factors and multiplication target"
+      ],
+      "role": "Fable factor-coordinate antecedent. Local exact factor-return calculations are not a statement of broad consensus or an independent audit of every global claim.",
+      "status": "retrieved; named passages inspected",
+      "url": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/"
+    },
+    {
+      "apa": "Connes, A., Consani, C., & Moscovici, H. (2025). Zeta spectral triples (arXiv:2511.22755v1).",
+      "id": "S-CCM",
+      "locators": [
+        "Section 7, including Lemma 7.2"
+      ],
+      "role": "Retain literal Mellin normalization, regularization, approximation versus eigenfunction comparison. No new proof of its full analytic programme.",
+      "status": "retrieved; inherited kernel definitions and approximation scope checked",
+      "url": "https://arxiv.org/html/2511.22755v1"
+    },
+    {
+      "apa": "Bhargava, M., & Ho, W. (2013). Coregular spaces and genus one curves (arXiv:1306.4424).",
+      "id": "S-Bhargava-Ho",
+      "locators": [
+        "Sections 3.2.3 and 5.1.1, as identified in the predecessor"
+      ],
+      "role": "Cube-incidence/elliptic-return antecedent. This pass replayed the local exact checker; it did not reread the entire paper.",
+      "status": "publication pointer checked; exact use carried from predecessor source ledger",
+      "url": "https://arxiv.org/abs/1306.4424"
+    },
+    {
+      "apa": "Degtyarev, A., Itenberg, I., & Ottem, J. C. (2023). Planes in cubic fourfolds (preprint arXiv:2105.13951).",
+      "failed_retrievals": [
+        "https://arxiv.org/pdf/2105.13951",
+        "https://www.mn.uio.no/math/personer/vit/johnco/papers/3.pdf"
+      ],
+      "id": "L-Degtyarev-Itenberg-Ottem",
+      "locators": [
+        "Search lead involving an index-four extension and Leech/Niemeier lattice comparisons; no exact theorem correspondence established"
+      ],
+      "role": "Potential antecedent to index-four lattice arithmetic; prevents advertising the index-four observation alone as a novel theorem.",
+      "status": "search lead only; PDF fetch attempts failed in this pass",
+      "url": "https://arxiv.org/abs/2105.13951"
+    }
+  ],
+  "scope": "Current source inspection and named inherited dependencies; source identity is not proof certification."
+}

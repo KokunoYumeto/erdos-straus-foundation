@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+/replay/
+/tmp/
+/reconstructed/*.aux
+/reconstructed/*.log
+/reconstructed/*.out
+/reconstructed/*.toc
+/output/pdf/*.aux
+/output/pdf/*.log
+/output/pdf/*.out
+/output/pdf/*.toc

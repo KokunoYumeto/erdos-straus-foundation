@@ -1,0 +1,95 @@
+{
+  "consulted_as_of": "2026-09-05",
+  "sources": [
+    {
+      "key": "Yamamoto1965",
+      "author": "Koichi Yamamoto",
+      "year": 1965,
+      "title": "On the Diophantine equation 4/n = 1/x + 1/y + 1/z",
+      "publication": "Memoirs of the Faculty of Science, Kyushu University, Series A, Mathematics",
+      "volume": "19",
+      "issue": "1",
+      "pages": "37–47",
+      "url": "https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf",
+      "locators": [
+        "§1, Lemma 2, equation (4), p. 38"
+      ],
+      "used_for": "Inherited exterior congruences; PDF page visually inspected."
+    },
+    {
+      "key": "ElsholtzTao2013",
+      "authors": [
+        "Christian Elsholtz",
+        "Terence Tao"
+      ],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdős–Straus equation on unit fractions",
+      "publication": "Journal of the Australian Mathematical Society",
+      "volume": "94",
+      "issue": "1",
+      "pages": "50–105",
+      "doi": "10.1017/S1446788712000468",
+      "url": "https://arxiv.org/abs/1107.1010v6",
+      "locators": [
+        "§2, equations (2.1)–(2.9)",
+        "Propositions 2.2–2.3 and 2.6–2.7"
+      ],
+      "used_for": "Inherited Type I/II coordinate representation and permutation context; equation page visually inspected."
+    },
+    {
+      "key": "Rudnick2015",
+      "author": "Zeév Rudnick",
+      "year": 2015,
+      "date": "2015-05-26",
+      "title": "Primes in arithmetic progressions: Fixed modulus",
+      "publication": "Tel Aviv University course notes",
+      "url": "https://www.math.tau.ac.il/~rudnick/courses/sieves2015/fixed%20progressions.pdf",
+      "locators": [
+        "§2, p. 2",
+        "equation (1)"
+      ],
+      "used_for": "Classical fixed-modulus PNT and log-weighted reciprocal-prime estimate; PDF page visually inspected."
+    },
+    {
+      "key": "Williams1974",
+      "author": "Kenneth S. Williams",
+      "year": 1974,
+      "title": "Mertens’ theorem for arithmetic progressions",
+      "publication": "Journal of Number Theory",
+      "volume": "6",
+      "pages": "353–359",
+      "doi": "10.1016/0022-314X(74)90032-8",
+      "url": "https://people.math.carleton.ca/~williams/papers/pdf/057.pdf",
+      "locators": [
+        "§3, Theorem 1, p. 356"
+      ],
+      "used_for": "Classical Mertens estimate for fixed arithmetic progressions."
+    },
+    {
+      "key": "Dahan2026",
+      "author": "Benjamin Dahan",
+      "year": 2026,
+      "date": "2026-08-25",
+      "title": "Sieve dimension and search depth for the Erdős–Straus conjecture, n ≡ 1 (mod 24)",
+      "publication": "arXiv preprint",
+      "version": "2608.24035v1",
+      "url": "https://arxiv.org/html/2608.24035v1",
+      "locators": [
+        "§4.1, Lemma 4.2",
+        "§4.1, Theorem 4.3"
+      ],
+      "used_for": "Direct antecedent for inverse-residue half-support pairing at target -1 and fixed-family half-dimensional sieve. Adapted to bounded exterior target -p; not claimed as a newly invented method."
+    }
+  ],
+  "priority_scope": "No exhaustive priority claim. Original Rosati paper not directly consulted.",
+  "derived_here": [
+    "Exact finite-cutoff joint incidence and root-block collision specialization",
+    "Sharp finite-capacity 2/3/5 completion and explicit minimal patterns",
+    "Companion-basis map with inverse and fixed-residual height barrier",
+    "Cubic exterior-to-middle transfer, complete inverse fibres and explicit infinite progression",
+    "Additional all-positive-exterior obstruction at p=2521",
+    "Independent marked finite censuses and certificates",
+    "Two-cutoff two-factor small-residual refinements of the fixed-family bound",
+    "Explicit positive hybrid witnesses for all 4,519 hard primes up to 2,000,000, using 138 exterior rays and four middle shells"
+  ]
+}

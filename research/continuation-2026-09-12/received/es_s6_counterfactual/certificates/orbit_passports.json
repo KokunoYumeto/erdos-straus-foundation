@@ -1,0 +1,347 @@
+[
+  {
+    "D": 1,
+    "components": [
+      {
+        "component": "connected",
+        "cycles_0": {
+          "1": 1
+        },
+        "cycles_1": {
+          "1": 1
+        },
+        "cycles_infinity": {
+          "1": 1
+        },
+        "degree": 1,
+        "genus": 0
+      }
+    ],
+    "degree": 1,
+    "has_section": true,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 3,
+    "components": [
+      {
+        "component": "x=y=0 mod 3",
+        "cycles_0": {
+          "3": 1
+        },
+        "cycles_1": {
+          "1": 3
+        },
+        "cycles_infinity": {
+          "3": 1
+        },
+        "degree": 3,
+        "genus": 0
+      },
+      {
+        "component": "(x,y) nonzero mod 3",
+        "cycles_0": {
+          "1": 3,
+          "3": 7
+        },
+        "cycles_1": {
+          "4": 6
+        },
+        "cycles_infinity": {
+          "3": 8
+        },
+        "degree": 24,
+        "genus": 1
+      }
+    ],
+    "degree": 27,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 5,
+    "components": [
+      {
+        "component": "connected",
+        "cycles_0": {
+          "1": 5,
+          "3": 40
+        },
+        "cycles_1": {
+          "1": 5,
+          "4": 30
+        },
+        "cycles_infinity": {
+          "5": 25
+        },
+        "degree": 125,
+        "genus": 11
+      }
+    ],
+    "degree": 125,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 7,
+    "components": [
+      {
+        "component": "connected",
+        "cycles_0": {
+          "1": 7,
+          "3": 112
+        },
+        "cycles_1": {
+          "1": 7,
+          "4": 84
+        },
+        "cycles_infinity": {
+          "7": 49
+        },
+        "degree": 343,
+        "genus": 43
+      }
+    ],
+    "degree": 343,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 9,
+    "components": [
+      {
+        "component": "x=y=0 mod 3",
+        "cycles_0": {
+          "3": 27
+        },
+        "cycles_1": {
+          "1": 9,
+          "4": 18
+        },
+        "cycles_infinity": {
+          "9": 9
+        },
+        "degree": 81,
+        "genus": 10
+      },
+      {
+        "component": "(x,y) nonzero mod 3",
+        "cycles_0": {
+          "1": 9,
+          "3": 213
+        },
+        "cycles_1": {
+          "4": 162
+        },
+        "cycles_infinity": {
+          "9": 72
+        },
+        "degree": 648,
+        "genus": 97
+      }
+    ],
+    "degree": 729,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 15,
+    "components": [
+      {
+        "component": "x=y=0 mod 3",
+        "cycles_0": {
+          "3": 125
+        },
+        "cycles_1": {
+          "1": 15,
+          "4": 90
+        },
+        "cycles_infinity": {
+          "15": 25
+        },
+        "degree": 375,
+        "genus": 61
+      },
+      {
+        "component": "(x,y) nonzero mod 3",
+        "cycles_0": {
+          "1": 15,
+          "3": 995
+        },
+        "cycles_1": {
+          "4": 750
+        },
+        "cycles_infinity": {
+          "15": 200
+        },
+        "degree": 3000,
+        "genus": 521
+      }
+    ],
+    "degree": 3375,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 21,
+    "components": [
+      {
+        "component": "x=y=0 mod 3",
+        "cycles_0": {
+          "3": 343
+        },
+        "cycles_1": {
+          "1": 21,
+          "4": 252
+        },
+        "cycles_infinity": {
+          "21": 49
+        },
+        "degree": 1029,
+        "genus": 183
+      },
+      {
+        "component": "(x,y) nonzero mod 3",
+        "cycles_0": {
+          "1": 21,
+          "3": 2737
+        },
+        "cycles_1": {
+          "4": 2058
+        },
+        "cycles_infinity": {
+          "21": 392
+        },
+        "degree": 8232,
+        "genus": 1513
+      }
+    ],
+    "degree": 9261,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 25,
+    "components": [
+      {
+        "component": "connected",
+        "cycles_0": {
+          "1": 25,
+          "3": 5200
+        },
+        "cycles_1": {
+          "1": 25,
+          "4": 3900
+        },
+        "cycles_infinity": {
+          "25": 625
+        },
+        "degree": 15625,
+        "genus": 2926
+      }
+    ],
+    "degree": 15625,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 27,
+    "components": [
+      {
+        "component": "x=y=0 mod 3",
+        "cycles_0": {
+          "3": 729
+        },
+        "cycles_1": {
+          "1": 27,
+          "4": 540
+        },
+        "cycles_infinity": {
+          "27": 81
+        },
+        "degree": 2187,
+        "genus": 406
+      },
+      {
+        "component": "(x,y) nonzero mod 3",
+        "cycles_0": {
+          "1": 27,
+          "3": 5823
+        },
+        "cycles_1": {
+          "4": 4374
+        },
+        "cycles_infinity": {
+          "27": 648
+        },
+        "degree": 17496,
+        "genus": 3313
+      }
+    ],
+    "degree": 19683,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 35,
+    "components": [
+      {
+        "component": "connected",
+        "cycles_0": {
+          "1": 35,
+          "3": 14280
+        },
+        "cycles_1": {
+          "1": 35,
+          "4": 10710
+        },
+        "cycles_infinity": {
+          "35": 1225
+        },
+        "degree": 42875,
+        "genus": 8296
+      }
+    ],
+    "degree": 42875,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  },
+  {
+    "D": 45,
+    "components": [
+      {
+        "component": "x=y=0 mod 3",
+        "cycles_0": {
+          "3": 3375
+        },
+        "cycles_1": {
+          "1": 45,
+          "4": 2520
+        },
+        "cycles_infinity": {
+          "45": 225
+        },
+        "degree": 10125,
+        "genus": 1981
+      },
+      {
+        "component": "(x,y) nonzero mod 3",
+        "cycles_0": {
+          "1": 45,
+          "3": 26985
+        },
+        "cycles_1": {
+          "4": 20250
+        },
+        "cycles_infinity": {
+          "45": 1800
+        },
+        "degree": 81000,
+        "genus": 15961
+      }
+    ],
+    "degree": 91125,
+    "has_section": false,
+    "point_index": "(x*D+y)*D+z; x,y,z in {0,...,D-1}"
+  }
+]

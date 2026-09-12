@@ -1,0 +1,125 @@
+[
+  {
+    "factorization_L": {
+      "3": 1,
+      "13": 1,
+      "181": 1
+    },
+    "minimum_residual_Omega": 2,
+    "p": 3529,
+    "ray": [
+      2,
+      1
+    ],
+    "states": [
+      {
+        "R": 39,
+        "a": 892,
+        "channel": "E",
+        "denominators_increasing": [
+          892,
+          80726,
+          569764108
+        ],
+        "denominators_raw": [
+          892,
+          80726,
+          569764108
+        ],
+        "h": 446,
+        "kappa": 181,
+        "lambda": null,
+        "p": 3529,
+        "positive_chamber": true,
+        "r": 2,
+        "s": 1,
+        "u": 1784
+      },
+      {
+        "R": 543,
+        "a": 1018,
+        "channel": "E",
+        "denominators_increasing": [
+          1018,
+          6617,
+          46702786
+        ],
+        "denominators_raw": [
+          1018,
+          6617,
+          46702786
+        ],
+        "h": 509,
+        "kappa": 13,
+        "lambda": null,
+        "p": 3529,
+        "positive_chamber": true,
+        "r": 2,
+        "s": 1,
+        "u": 2036
+      }
+    ]
+  },
+  {
+    "factorization_L": {
+      "7": 1,
+      "11": 1,
+      "43": 1,
+      "139": 1
+    },
+    "minimum_residual_Omega": 3,
+    "p": 153409,
+    "ray": [
+      3,
+      2
+    ],
+    "states": [
+      {
+        "R": 3311,
+        "a": 39180,
+        "channel": "E",
+        "denominators_increasing": [
+          39180,
+          1815340,
+          417734241090
+        ],
+        "denominators_raw": [
+          39180,
+          1815340,
+          417734241090
+        ],
+        "h": 6530,
+        "kappa": 139,
+        "lambda": null,
+        "p": 153409,
+        "positive_chamber": true,
+        "r": 3,
+        "s": 2,
+        "u": 58770
+      },
+      {
+        "R": 10703,
+        "a": 41028,
+        "channel": "E",
+        "denominators_increasing": [
+          41028,
+          588068,
+          135322385718
+        ],
+        "denominators_raw": [
+          41028,
+          588068,
+          135322385718
+        ],
+        "h": 6838,
+        "kappa": 43,
+        "lambda": null,
+        "p": 153409,
+        "positive_chamber": true,
+        "r": 3,
+        "s": 2,
+        "u": 61542
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "pointwise",
+  "mode": "normal",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/typed_morphism_audit/inputs/es_pointwise_tranche/verifier.py",
+    "--self-test",
+    "--anchors",
+    "--cover-bound",
+    "10000000000",
+    "--out",
+    "/mnt/data/typed_morphism_audit/replays/pointwise/normal"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 15.967588574000018,
+  "source_sha256": "a6ffb891ff59ad5d8e6502b39f82f019664bd2aab89213a46df314614947cc81"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "mellin",
+  "mode": "optimized",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-O",
+    "/mnt/data/typed_morphism_audit/inputs/mellin_leech_research/verify.py",
+    "--out",
+    "/mnt/data/typed_morphism_audit/replays/mellin/optimized"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 5.951571245000025,
+  "source_sha256": "a4e242cdd429eb51319d24ae545429710b9b562b7bc1ddaa24ed7e35fd007dd1"
+}

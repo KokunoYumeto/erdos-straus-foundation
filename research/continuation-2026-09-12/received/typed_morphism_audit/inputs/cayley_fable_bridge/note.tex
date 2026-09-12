@@ -1,0 +1,396 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,mathrsfs,booktabs,array,microtype}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[authoryear,round]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}\newcommand{\C}{\mathbb C}\newcommand{\Z}{\mathbb Z}
+\newcommand{\PP}{\mathbb P}\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\Disc}{\operatorname{Disc}}\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\lcm}{\operatorname{lcm}}
+\setlength{\emergencystretch}{2em}
+\title{The marked quarter:\\Fable fibres, the Cayley cubic,\\and the 27-line Cartan dictionary}
+\author{Research continuation with exact certificates}
+\date{11 September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+We compare the value $-1/4$ in the explicit Alp\"oge--Fable map with the marked Cayley chart for Erd\H{o}s--Straus. They are not identified as singular points. Instead, we give an invertible, marked M\"obius transport from the three normalized factors over the Fable base point to the reciprocal cubic of any ordered distinct solution. The reciprocal plane, its six-point blow-up, and the four-node Cayley specialization connect this calculation to the supplied cubic-surface slides. We provide an explicit bijection between the 27 line classes and three $3\times3$ matrix blocks: the 45 tritangent triples are exactly the monomial supports of the first-Tits cubic norm, with signs retained. We calculate the specialized conic-pencil quintic and the four-node reflection orbits. No pointwise integral-production theorem, conjecture resolution, or mathematical-priority claim is made.
+\end{abstract}
+
+\section{Sources, fields, and comparison scope}
+The input is the preceding Cayley encoding and the supplied screenshots on monodromy, pencils of planes, resolvent degree, and special points. The screenshots are supplied evidence; their localhost address was not treated as a retrieved public source. The explicit Fable polynomial and its normalized binary-factor interpretation are from \citet[eqs.~(1), (2), (5), (7), (10)]{tao}; the discriminant comparison also occurs in \citet[displayed elimination equations]{speyer}. We independently expand the identities used below.
+
+Unless specified otherwise the field has characteristic zero. Pointwise real assertions use $\mathbb R$, rational assertions use $\Q$, and counts of geometric fibres use an algebraic closure. The integral arithmetic includes its original prime $p$; projectivization does not retain it unless it is marked. Our $u,v,w$ below are Fable source coordinates, not the selector divisor $u_{\rm ES}$.
+
+\section{The exact Fable fibre and its inverses}
+Put $h=1+uv$ and define
+\begin{align}
+\alpha&=h^3w+v^2h(4+3uv),\\
+\beta&=v+3uh^2w+3uv^2(4+3uv),\\
+\gamma&=2u-3u^2v-u^3w.
+\end{align}
+Write $F(u,v,w)=(\alpha,\beta,\gamma)$. Its associated binary cubic is
+\begin{equation}\label{eq:binary}
+ C_{\alpha,\beta,\gamma}(U,V)
+ =\frac\gamma2U^3+U^2V+\frac\beta2UV^2+\alpha V^3.
+\end{equation}
+Define
+\begin{align*}
+ q_0&=1-\tfrac32uv-\tfrac12u^2w,\\
+ q_1&=\tfrac12(v+uhw+3uv^2),\\
+ q_2&=h^2w+v^2(4+3uv).
+\end{align*}
+Then $L=uU+hV$, $Q=q_0U^2+q_1UV+q_2V^2$ satisfy
+\begin{equation}\label{eq:factor}
+ LQ=C_{F(u,v,w)},\qquad
+ \Res(L,Q)=u^2q_2-uhq_1+h^2q_0=1.
+\end{equation}
+Here the coefficient $U^2V$ is fixed to one. Expanding the four coefficients and the resultant proves these identities. Differentiation and determinant expansion give $\det DF=-2$.
+
+\begin{theorem}[Complete root-marked fibres]\label{thm:fibres}
+The geometric fibre of $F$ over $(\alpha,\beta,\gamma)$ is in bijection with the simple projective roots of \eqref{eq:binary}. At a finite simple root $r$ of $f(T)=C(T,1)$, put $d=f'(r)$. The inverse is
+\begin{equation}\label{eq:inverse}
+ (u,v,w)=\left(d^{-1},-r-d,5d^2+3rd-\gamma d^3\right).
+\end{equation}
+A simple root at infinity occurs exactly when $\gamma=0$; its inverse is
+\[
+ (u,v,w)=(0,\beta,\alpha-4\beta^2).
+\]
+In particular a separable binary cubic has exactly three preimages. A double root plus a simple root gives one preimage; a triple root gives none.
+\end{theorem}
+\begin{proof}
+If $u\ne0$, the root of $L$ is $r=-h/u$. Equation \eqref{eq:factor} makes it simple. Normalizing $L=\lambda(U-rV)$ gives
+$\Res(L,Q)=\lambda f'(r)$, so $u=\lambda=1/d$ and $v=-r-d$.
+The expression for $\gamma$ then yields \eqref{eq:inverse}. Conversely substitute \eqref{eq:inverse} into $F$. The three outputs simplify to
+\[
+ \bigl(\gamma r^3+r^2-rd,\ 2d-3\gamma r^2-4r,\ \gamma\bigr).
+\]
+The root and derivative equations identify these with $(\alpha,\beta,\gamma)$. At $u=0$ direct substitution gives $(\alpha,\beta,\gamma)=(w+4v^2,v,0)$. The $U^2V$ coefficient being one makes the infinite root simple. All source points have been exhausted by $u=0$ and $u\ne0$.
+\end{proof}
+The factor coordinates can also recover the source polynomially:
+\[
+ u=L_U,\quad v=2L_Vq_1-uq_2,\quad
+ w=-4q_1^2-2q_0q_2-12L_Vq_1^2-6L_Vq_0q_2+9q_2.
+\]
+On the normalized factor locus these are inverse to the displayed chart. The certificate checks the compositions needed for transported factors.
+
+The binary discriminant, in the ordinary coefficient convention, is
+\begin{equation}\label{eq:disc}
+ \Disc(C)=-\frac14\Delta_F,\quad
+ \Delta_F=16\alpha-\beta^2-18\alpha\beta\gamma
+             +\beta^3\gamma+27\alpha^2\gamma^2.
+\end{equation}
+
+\begin{proposition}[What $-1/4$ means here]\label{prop:quarter}
+At $b_*=(-1/4,0,0)$ the cubic is
+\[
+ C_*(U,V)=V(U-V/2)(U+V/2),\qquad \Disc(C_*)=1.
+\]
+Its complete fibre is
+\[
+ (0,0,-1/4),\quad (1,-3/2,13/2),\quad(-1,3/2,13/2).
+\]
+The point is not on the discriminant, and none of its preimages is a critical point of $F$.
+\end{proposition}
+\begin{proof}
+The roots are $\infty,1/2,-1/2$; apply Theorem~\ref{thm:fibres}. For an independent elimination, when $\beta=\gamma=0$ and $u\ne0$, solve
+$w=2/u^2-3v/u$. Substitution gives
+\[
+ \beta=2(2uv+3)/u,\qquad
+ \alpha=(uv+1)(uv+2)/u^2.
+\]
+Thus $v=-3/(2u)$ and $\alpha=-1/(4u^2)$. At $\alpha=-1/4$ this forces $u=\pm1$. The case $u=0$ gives the remaining point.
+\end{proof}
+For general $(\alpha,0,0)$ with $\alpha\ne0$, the other two branches have $u^2=-1/(4\alpha)$, $v=-3/(2u)$, $w=-26\alpha$. They are real exactly for $\alpha<0$, and rational exactly when $-\alpha$ is a rational square. At $\alpha=0$ only the infinite-root branch remains. Going around zero exchanges the two finite roots; the missing branches escape this affine source chart. The global Jacobian remains nonzero. Thus multi-sheetedness is not Jacobian ramification at $b_*$.
+
+\section{The reciprocal plane and the ES slice of the Fable base}
+Let
+\[
+ \mathscr C:\ e_3(a_0,a_1,a_2,a_3)=0\subset\PP^3.
+\]
+On the coordinate torus it is equivalently $\sum_i a_i^{-1}=0$. For a marked ES state the homogeneous coordinates are
+\[
+ [-p:4x:4y:4z],\qquad
+ (-1/4,X_1,X_2,X_3)=(-1/4,x/p,y/p,z/p).
+\]
+This normalization is defined because $p\ne0$. The number $-1/4$ is a coordinate of every point in the chosen chart, not one distinguished Cayley point. The four Cayley nodes and nine lines are recorded in \citet[\S1, p.~1]{heathbrown}.
+
+Put $t_i=X_i^{-1}$. Then
+\begin{equation}\label{eq:sum4}
+ t_1+t_2+t_3=4,
+\qquad
+ f_{\rm ES}(T)=-\frac14\prod_{i=1}^3(T-t_i).
+\end{equation}
+Its $T^2$ coefficient is one. Thus it is exactly \eqref{eq:binary}, with
+\begin{equation}\label{eq:esbase}
+ \alpha=\frac{t_1t_2t_3}{4},\qquad
+ \beta=-\frac{t_1t_2+t_1t_3+t_2t_3}{2},\qquad
+ \gamma=-\frac12.
+\end{equation}
+The marked negative coordinate has become the leading coefficient of the reciprocal cubic. It has not become the constant coefficient of $C_*$.
+
+\begin{theorem}[The precise factor-incidence bridge]\label{thm:esbridge}
+Let $B^\circ=\{(\alpha,\beta,-1/2):\alpha\ne0,\ \Disc(C)\ne0\}$. On the locus of nonzero distinct $t_i$ with sum four, the map to $B^\circ$ defined by \eqref{eq:esbase} has six geometric points in every fibre, namely the six orderings. Marking $t_1$ and applying \eqref{eq:inverse} instead gives a map to $F^{-1}(B^\circ)$ with exactly two points per fibre: the orderings of $t_2,t_3$. The subsequent Fable map to $B^\circ$ has degree three.
+
+For positive real $t_i$, the target region is exactly
+\[
+ \gamma=-1/2,\qquad\alpha>0,\qquad\beta<0,\qquad\Disc(C)>0.
+\]
+Over $\Q$ the converse requires the cubic to split over $\Q$; geometric fibre counts do not assert rational splitting.
+\end{theorem}
+\begin{proof}
+The elementary symmetric coefficients determine the unordered roots. Theorem~\ref{thm:fibres} recovers the distinguished root, leaving the other two unordered. These observations prove both fibre statements and their inverse constructions. For the real assertion, positive distinct roots give the displayed inequalities. Conversely positive discriminant gives three distinct real roots, their sum is four, their product is positive, and their second elementary symmetric function is positive. Two negative roots $-a,-b$ would force the third root $c>a+b$ and then $ab-c(a+b)<0$, a contradiction. No root is zero.
+\end{proof}
+For a finite selected root $r$ and $d=f'(r)$, the companion roots are
+\begin{equation}\label{eq:companion}
+ \frac{4-r\pm\sqrt{\Gamma}}2,\qquad
+ \Gamma=(3r-4)^2+16d,
+ \qquad \Delta_F=-d^2\Gamma/4.
+\end{equation}
+These follow by dividing $-4f(T)$ by $T-r$. The companion product is $4r-2r^2-4d$. The sign of $\sqrt\Gamma$ is the retained companion ordering.
+
+\begin{lemma}[No repeated denominators on the hard prime locus]
+For a prime $p\equiv1\pmod4$, a positive integral ES solution has three distinct denominators.
+\end{lemma}
+\begin{proof}
+A repetition would give $4/p=2/x+1/z$. Both factors in
+\[
+ (2x-p)(4z-p)=p^2
+\]
+are positive. The second is $3\pmod4$, whereas every positive divisor of $p^2$ is $1\pmod4$. This is impossible.
+\end{proof}
+Consequently the distinct-root restriction excludes no hard-prime ES solution. The omitted loci for the geometric construction remain $t_i=0$, $t_i=t_j$, and failure of the chosen affine normalization.
+
+\section{An invertible marked transport from the Fable quarter}
+\begin{theorem}[All three factors transported together]\label{thm:mobius}
+Let $t_1,t_2,t_3$ be distinct in a characteristic-zero field. Define
+\begin{equation}\label{eq:M}
+ M=\begin{pmatrix}
+ 2t_1(t_2-t_3)&t_1(t_2+t_3)-2t_2t_3\\
+ 2(t_2-t_3)&2t_1-t_2-t_3
+ \end{pmatrix}
+ =\begin{pmatrix}a&b\\c&d\end{pmatrix}.
+\end{equation}
+Then
+\[
+ D:=\det M=4(t_2-t_3)(t_1-t_2)(t_1-t_3)\ne0,
+\]
+and $m(z)=(az+b)/(cz+d)$ sends the ordered triple
+$(\infty,1/2,-1/2)$ to $(t_1,t_2,t_3)$. The binary identity is
+\begin{equation}\label{eq:transport}
+ C_*(dU-bV,-cU+aV)
+ =-2D\prod_i(U-t_iV).
+\end{equation}
+When $\sum t_i=4$, division by $8D$ makes this exactly the ES cubic.
+
+For each normalized base factor pair $L_*Q_*=C_*$, $\Res(L_*,Q_*)=1$, the transported pair is
+\begin{equation}\label{eq:transportpair}
+ L=\frac8D L_*\circ\operatorname{adj}M,
+ \qquad Q=\frac1{64}Q_*\circ\operatorname{adj}M.
+\end{equation}
+It has product $C_{\rm ES}$ and resultant one. Retaining $M$ makes this transport invertible. All three pairs, not a selected single pair, are transported.
+\end{theorem}
+\begin{proof}
+Substituting the three arguments verifies the fractional-linear images; expansion gives $D$. The three factors on the left of \eqref{eq:transport} have the required roots. Their leading-coefficient product is
+$-c(d+c/2)(d-c/2)=-2D$, proving the identity with its scale. Under a binary change of variables $G$, the resultant of degrees one and two multiplies by $(\det G)^2$. Here $\det\operatorname{adj}M=D$. Independent scalings of $L,Q$ multiply their resultant by the square of the linear scale times the quadratic scale. Thus \eqref{eq:transportpair} has resultant
+$(8/D)^2(1/64)D^2=1$; its product scale is $1/(8D)$. Inverses use $ (\operatorname{adj}M)^{-1}$ and the reciprocal scalar factors. Distinctness is exactly what ensures every inverse is defined.
+\end{proof}
+The three base normalized pairs are
+\[
+ (V,U^2-V^2/4),\quad(U-V/2,UV+V^2/2),\quad(-U-V/2,-UV+V^2/2).
+\]
+Theorem~\ref{thm:mobius} is the promised map relating the constructions. It does not identify $b_*$ with a singular Cayley point. It constructs $M$ from a specified ordered root triple, not yet from a prime alone.
+
+For $p=5$ and $(x,y,z)=(2,4,20)$,
+\[
+ (t_1,t_2,t_3)=(5/2,5/4,1/4),\quad
+ M=\begin{pmatrix}5&25/8\\2&7/2\end{pmatrix},\quad D=45/4,
+\]
+and the new target is $(25/128,-65/32,-1/2)$. The certificate also performs all three branch calculations for
+\[
+ p=1201,\quad(R,u_{\rm ES},h,r,s,\kappa)=(23,17,17,1,18,53),
+\]
+with ordered denominators $(306,16218,1082101)$. Large rational numerators are retained in JSON.
+
+\section{Four nodes, six blow-ups, and the specialized quintic}
+Consider the plane $H:\ell_0+\ell_1+\ell_2+\ell_3=0\subset\PP^3$. On its coordinate torus the map
+\begin{equation}\label{eq:cremona}
+ a_i=\prod_{j\ne i}\ell_j
+\end{equation}
+is an isomorphism to the Cayley coordinate torus, with inverse given by the same reciprocal construction. Its six base points are $\ell_i=\ell_j=0$, one for each pair. Its four coordinate lines contract to the four coordinate nodes. Blowing up the six base points resolves this rational map. In the ES chart the plane point is $(-4,t_1,t_2,t_3)$, so this is the same reciprocal plane used above, not an independently chosen surface.
+
+Coordinate permutations give $S_4$. Marking the negative coordinate leaves $S_3$; inside the orientation-preserving tetrahedral subgroup $A_4$, the corresponding stabilizer is $C_3$. The Fable degree-three map is instead selection of one of the remaining three factors. These are distinct marking operations.
+
+To compute the pencil through the Cayley edge $a_0=a_1=0$, set
+$a_0=sw$, $a_1=tw$. Then
+\[
+ e_3=w\bigl(stw(a_2+a_3)+(s+t)a_2a_3\bigr).
+\]
+The residual conic matrix is
+\[
+ Q_{s,t}=\frac12\begin{pmatrix}
+ 0&st&st\\st&0&s+t\\st&s+t&0
+ \end{pmatrix},
+\qquad
+ \boxed{\det Q_{s,t}=\frac14s^2t^2(s+t).}
+\]
+Thus the binary quintic has degree five, but its distinct roots are $s=0$, $t=0$, $s+t=0$, with multiplicities $2,2,1$. No root is silently removed by dehomogenizing. This is the exact Cayley specialization of the conic-pencil calculation, not a separable generic quintic.
+
+All nine Cayley lines are $a_i=a_j=0$ or $a_i+a_j=a_k+a_l=0$. A point with one negative and three positive coordinates lies on none. The special lines still supply projection and degeneration data; they are not themselves positive ES witnesses.
+
+\section{The 27 lines are coordinates for the same cubic norm}
+For a smooth cubic surface obtained by blowing up six points in general position, use the intersection lattice
+\[
+ h^2=1,\quad e_i^2=-1,\quad h e_i=e_ie_j=0\ (i\ne j),\quad
+ K=-3h+\sum_i e_i.
+\]
+The line classes are
+\begin{equation}\label{eq:lines}
+ E_i=e_i,\quad L_{ij}=h-e_i-e_j,\quad
+ Q_i=2h-\sum_{j\ne i}e_j.
+\end{equation}
+This is the classical model in \citet[\S2.1, pp.~4--5]{medrano}; the Weyl-lattice interpretation is \citet[\S1, Theorem~1 and following remark]{bayerserre}.
+
+The classical signed 45-tritangent realization of this norm is already explicit in \citet[Remark~3.4, pp.~11--12 of the preprint]{kimschreyer}; see also \citet[\S3.1, p.~8]{ilievmanivel}. We now match it to our three-block convention. Assign an independent scalar coordinate to each label in \eqref{eq:lines} and place them in matrices as follows:
+\begin{equation}\label{eq:blocks}
+ A=\begin{pmatrix}L_{14}&L_{24}&L_{34}\\L_{15}&L_{25}&L_{35}\\L_{16}&L_{26}&L_{36}\end{pmatrix},\quad
+ B=\begin{pmatrix}Q_4&Q_5&Q_6\\E_4&E_5&E_6\\L_{56}&L_{46}&L_{45}\end{pmatrix},\quad
+ C=\begin{pmatrix}E_1&Q_1&L_{23}\\E_2&Q_2&L_{13}\\E_3&Q_3&L_{12}\end{pmatrix}.
+\end{equation}
+The labels in these matrices denote coordinates, not products of divisors. The inverse coordinate map reads each named entry. Define
+\begin{equation}\label{eq:Tits}
+ N=\det A+\det B+\det C-\tr(CBA).
+\end{equation}
+This is the first-Tits norm in the arrow convention of the preceding tranche; the classical Albert-algebra identification is \citet[\S5, Theorem~11 and Appendix~A]{baezpumplun}.
+
+\begin{theorem}[Complete tritangent--monomial dictionary]\label{thm:dictionary}
+The 45 unordered triples of distinct line classes summing to $-K$ are exactly the 45 nonzero monomial supports of \eqref{eq:Tits} under \eqref{eq:blocks}. The determinant signs and the negative mixed signs give an explicit signed lift of this incidence dictionary.
+\end{theorem}
+\begin{proof}
+Comparing $h$-coefficients, a triple summing to $-K$ is either three $L$'s or an $E$, an $L$, and a $Q$. The first case consists of the 15 partitions of six labels into three pairs. The second case is $E_i+L_{ij}+Q_j$ with $i\ne j$, giving 30 triples.
+
+The six terms of $\det A$ give the six perfect matchings between $\{1,2,3\}$ and $\{4,5,6\}$. The twelve terms of $\det B+\det C$ give the twelve $E_iL_{ij}Q_j$ with $i,j$ in the same block. Each $L_{i,j+3}$ in the mixed trace is paired with
+\[
+ (E_i,Q_{j+3}),\quad(Q_i,E_{j+3}),\quad
+ (L_{\{1,2,3\}\setminus\{i\}},L_{\{4,5,6\}\setminus\{j+3\}}).
+\]
+These give the remaining eighteen $ELQ$ triples and nine perfect matchings. No supports coincide, proving completeness. Coefficients are precisely the determinant permutation signs and $-1$ for the trace terms.
+\end{proof}
+This is a coordinate-level connection, not the identification of a two-dimensional cubic surface with a 27-dimensional vector space. The field of definition of the line marking must be retained. Over a general field, Galois descent need not preserve a chosen block labeling over that field.
+
+For reproducibility take roots $e_i-e_{i+1}$, $1\le i\le5$, and $h-e_1-e_2-e_3$. Their Gram matrix is the negative $E_6$ Cartan matrix. Reflections act by $v\mapsto v+(v\cdot\alpha)\alpha$. The verifier constructs their 27-letter permutations and exhausts the generated group, obtaining 51,840 elements. It also computes signs lifting each of the six individual reflections to a norm-preserving monomial map of \eqref{eq:Tits}. These chosen lifts are not asserted to define a group-theoretic section of the Weyl quotient: the final displayed lift has a nontrivial diagonal square. Every coefficient check, including these squares, is retained.
+
+\subsection{The five roots and their two-component choices}
+For the chosen line $E_6$, its ten incident lines occur in the five pairs
+\[
+ \{L_{i6},Q_i\},\qquad 1\le i\le5,
+\qquad E_6+L_{i6}+Q_i=-K.
+\]
+The other sixteen lines are $E_1,\ldots,E_5$, the ten $L_{ij}$ with $i,j\le5$, and $Q_6$. Thus the partition is $27=1+10+16$. The line stabilizer has order 1920, its permutation action on the five pairs has order 120, and its kernel is the 16 even pair flips. All these statements are checked by the finite permutation enumeration. They realize the classical $W(D_5)$ stabilizer inside $W(E_6)$ \citep[\S1]{bayerserre}. The five degenerations explain the quintic; the paired component choices must also be retained.
+
+\subsection{The four-node specialization}
+Label the six blow-ups by the pairs $12,13,14,23,24,34$ of four coordinate lines. The four contracted classes are
+\[
+ \alpha_i=h-\sum_{j\ne i}e_{ij},\qquad 1\le i\le4.
+\]
+They have pairwise zero intersection and square $-2$. Their reflections generate $(\Z/2)^4$. On the 27 line classes its orbits consist of six sets of four and three singletons; the certificate lists all nine orbits.
+
+There is also a divisor proof of the nine images. Each exceptional $e_{ij}$ is accompanied by two classes of the form $\alpha_i+e_{ij}$ or $\alpha_j+e_{ij}$, and by $\alpha_i+\alpha_j+e_{ij}$, the conic class omitting the opposite pair. After contracting the four $\alpha_i$, these four classes have the same line image. The three remaining classes join opposite pairs and stay distinct. This accounts for $27=6\cdot4+3$, without claiming 27 distinct lines on the singular Cayley surface or asserting a nonreduced Hilbert-scheme length from this count alone.
+
+\section{The arithmetic condition that remains attached}
+Let $t_i=A_i/q$ be normalized by a primitive positive integer triple $(A_1,A_2,A_3)$, and set $S=A_1+A_2+A_3$. Since $\sum t_i=4$, $t_i=4A_i/S$. The marked denominators at prime $p$ are
+\[
+ d_i=\frac{pS}{4A_i}.
+\]
+With $L=\lcm(A_1,A_2,A_3)$ they are all integral exactly when $4L\mid pS$. Hence
+\[
+ p_0=\frac{4L}{\gcd(4L,S)},\qquad
+ d_i\in\Z_{>0}\ (\forall i)\quad\Longleftrightarrow\quad p_0=p
+\]
+for prime $p$: $S\le3L<4L$ shows $p_0>1$. Thus neither a rational M\"obius transport nor a solvable-field point silently becomes an integral point for a prescribed prime.
+
+The selector data remain auxiliary marks. For exterior and middle channels respectively, their inverse divisor is
+\[
+ u_{\rm ES}=\frac{x^2}{Ry-px},\qquad
+ u_{\rm ES}=\frac{px^2}{Ry-px}.
+\]
+The residual, channel, and ordered denominators select the correct formula. Once $d_0=\gcd(x,u_{\rm ES})$ is known, recover $r=u_{\rm ES}/d_0$, $s=x/d_0$, and $h=d_0/r$, and then the original quotient. No factor multiplicity or denominator permutation is suppressed by the coefficient maps.
+
+The special-point results in \citet[Theorems~1.2--1.3]{gomezwolfson} and \citet{gomez} concern points over specified algebraic extensions under their ambient-dimension hypotheses. We do not invoke them to assert rational or positive integral ES existence. The useful next comparison is a construction controlling the actual return $p_0$, not equality of algebraic degrees or dimensions.
+
+\section{Certificates and nonclaims}
+Run \texttt{python verify.py --out certificates} using Python 3.10 or newer. The standard-library program uses sparse rational Laurent polynomials, exact rational arithmetic, integer divisor classes, and complete finite permutation closure. Ordinary and optimized executions have identical output. The tests include the global Jacobian and factor identities; inverse and discriminant identities; the marked M\"obius cubic identity; the conic-pencil quintic; all 45 tritangent supports and signs; six signed reflection lifts; the 51,840-element group, 1,920-element stabilizer and five-pair action; and the four-node specialization orbits. JSON also contains all three arithmetic branches for $p=5$ and $p=1201$.
+
+The written arguments supply the unbounded statements. No Lean compilation, independent reviewer, comprehensive priority claim, or ES existence proof is asserted. The reading/source ledger distinguishes current sources from screenshot contents, prior local artifacts, and the GitHub comparison actually read. No remote repository was modified.
+
+\begin{thebibliography}{99}
+\bibitem[Baez and Pumpl\"un(2026)]{baezpumplun}
+Baez, J.~C., \& Pumpl\"un, S. (2026).
+\emph{Three-dimensional geometry in exceptional mathematics} (arXiv:2609.07538v1).
+\url{https://arxiv.org/abs/2609.07538}.
+Used: \S5, Theorem~11 and Appendix~A; the first-Tits norm and its Albert identification. The concrete line-coordinate table in this tranche is independently verified.
+
+\bibitem[Bayer-Fluckiger and Serre(2021)]{bayerserre}
+Bayer-Fluckiger, E., \& Serre, J.-P. (2021).
+Lines on cubic surfaces, Witt invariants and Stiefel--Whitney classes.
+\emph{Indagationes Mathematicae, 32}(5), 920--938.
+\url{https://doi.org/10.1016/j.indag.2020.08.005}.
+Inspected author PDF dated 2 February 2023: \S1, Theorem~1 and following remark. No theorem from its later cohomological sections is used.
+
+\bibitem[G\'omez-Gonz\'ales(2025)]{gomez}
+G\'omez-Gonz\'ales, C. (2025).
+\emph{Special points on intersections of hypersurfaces} (arXiv:2510.10272).
+\url{https://arxiv.org/abs/2510.10272}.
+The screenshot calls a 2026 edition; the retrieved record begins in 2025. Used as a scope comparison, not an ES existence input.
+
+\bibitem[G\'omez-Gonz\'ales and Wolfson(2025)]{gomezwolfson}
+G\'omez-Gonz\'ales, C., \& Wolfson, J. (2025).
+\emph{Solvable points on intersections of quadrics, cubics, and quartics}
+(arXiv:2508.00215). \url{https://arxiv.org/abs/2508.00215}.
+Used: introduction, Theorems~1.2--1.3, to distinguish solvable-field points from the prescribed integral return.
+
+\bibitem[Heath-Brown(2002)]{heathbrown}
+Heath-Brown, D.~R. (2002).
+\emph{The density of rational points on Cayley's cubic surface}
+(arXiv:math/0210333v1). \url{https://arxiv.org/abs/math/0210333}.
+Used: \S1, p.~1, equation, four nodes, and nine lines. No counting asymptotic is used to assert pointwise coverage.
+
+\bibitem[Iliev and Manivel(2011)]{ilievmanivel}
+Iliev, A., \& Manivel, L. (2011).
+\emph{On cubic hypersurfaces of dimension seven and eight} (arXiv:1102.3618v2).
+\url{https://arxiv.org/abs/1102.3618}. Used: \S3.1, p.~8, Cartan's 27-line construction and the cubic Jordan determinant. The paper's later geometric results are not invoked.
+
+\bibitem[Kim and Schreyer(2020)]{kimschreyer}
+Kim, Y., \& Schreyer, F.-O. (2020).
+An explicit matrix factorization of cubic hypersurfaces of small dimension.
+\emph{Journal of Pure and Applied Algebra, 224}, 106346.
+\url{https://arxiv.org/abs/1905.09626}. Inspected: Remark~3.4, pp.~11--12 of the preprint, the exact 27-variable/27-line identification and signed 45-tritangent cubic. No priority claim is made for that correspondence.
+
+\bibitem[Medrano Mart\'in del Campo(2021)]{medrano}
+Medrano Mart\'in del Campo, A. (2021).
+\emph{Monodromy of the family of cubic surfaces branching over smooth cubic curves}
+(arXiv:1910.09593v2).
+\url{https://arxiv.org/abs/1910.09593}.
+Used: introduction and \S2.1, pp.~4--5, for the smooth cubic line-class model. Its specialized cyclic-cover monodromy theorem is not substituted for universal monodromy.
+
+\bibitem[Speyer(2026)]{speyer}
+Speyer, D. (2026, July 20).
+The new counterexample to the Jacobian conjecture.
+\emph{Secret Blogging Seminar}.
+\url{https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/}.
+Used: displayed polynomial and elimination/discriminant expressions, with independent checks. Comment-thread assertions are not promoted to dependencies.
+
+\bibitem[Tao(2026)]{tao}
+Tao, T. (2026, July 21).
+A digestion of the Jacobian conjecture counterexample.
+\emph{What's new}.
+\url{https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/}.
+Used: equation~(1), factor multiplication~(2), resultant~(5), normalization~(7), constrained factor locus~(10), and concluding coordinate comparison. Original map credit remains Alp\"oge--Fable; the article credits the preceding geometric discussion.
+\end{thebibliography}
+\end{document}

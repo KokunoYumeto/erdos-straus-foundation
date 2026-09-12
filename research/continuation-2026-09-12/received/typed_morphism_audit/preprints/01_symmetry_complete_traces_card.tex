@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern,amsmath,amssymb,microtype,booktabs}
+\usepackage[paperwidth=7.5in,paperheight=10in,margin=0.55in]{geometry}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{8pt}
+\begin{document}
+{\small THE CLANKERS\hfill RESEARCH NOTE / 12 SEPTEMBER 2026}\par\vspace{8pt}\hrule\vspace{15pt}
+
+{\LARGE\bfseries A complete inverse for\par all Golay-octad traces}\par\vspace{8pt}
+Use the standard projective Leech model $\lambda=x/\sqrt8$. For each of the 759 Golay octads $B$, record
+\[
+a_B=\frac14\sum_{i\in B}x_i,\qquad
+S=\sum_Ba_B,\qquad S_i=\sum_{B\ni i}a_B.
+\]
+\textbf{Every coordinate returns.}
+\[
+\boxed{\displaystyle x_i=\frac{23S_i-7S}{1012}.}
+\]
+For integer data, first require the explicit linear image equations
+$a_B=\frac14\sum_{i\in B}x_i(a)$. There is then exactly one remaining integral obstruction:
+\[
+\boxed{\displaystyle
+\frac{11S-23S_0}{506}\equiv0\pmod4.}
+\]
+This condition is necessary and sufficient for a Leech lift. The lift is unique.
+
+\textbf{Why these constants?} The octad incidence matrix satisfies
+\[
+A^{\mathsf T}A=176I+77\mathbf1\mathbf1^{\mathsf T}.
+\]
+The positive-octad vectors generate an index-four sublattice. Its dual is
+$\Lambda+\mathbb Z\,\mathbf1/(2\sqrt8)$, yielding the exact syndrome above.
+
+\textbf{Why retain all the data?} A previous nine-trace time readout is not stable under the second symmetry generator. The joint symmetry orbit supplies all octads, and their linear span has rank 24. The inverse restores the data that the smaller quotient loses.
+
+\textit{Full statement: Symmetry-complete integral trace reconstruction for the projective Leech lattice.}
+\vfill\hrule\vspace{6pt}
+{\footnotesize Exact definitions, complete proofs and standard-library certificates accompany the three-page preprint. The Leech and Golay constructions are classical; no historical-priority claim or proof of Erd\H{o}s--Straus is made.}
+\end{document}

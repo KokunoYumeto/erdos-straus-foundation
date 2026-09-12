@@ -1,0 +1,79 @@
+{
+  "actual_examples": {
+    "full_counterexample_found": false,
+    "restricted_negative": [
+      {
+        "R": 15,
+        "a": 64,
+        "global_counterexample": false,
+        "p": 241
+      },
+      {
+        "R": 35,
+        "a": 18,
+        "global_counterexample": false,
+        "p": 37
+      }
+    ]
+  },
+  "conditional_consequences": [
+    "No factor2mod3 in(p+3)/4",
+    "All prime factors of(p+7)/4 lie in{1,2,4}mod7",
+    "No prime factor3mod4 in p+1",
+    "Every actual saturated index-two anchor has no outside cofactor factor, or would give a middle witness",
+    "Every shell obeys the exact integer/symmetric no-hit energy lower bound",
+    "Every rational leaf clears to an integral witness at pD with D>=3, gcd(D,p)=1, n<=p(2p-3)",
+    "Full positive trace defect-square operator has bounded inverse of norm<=1",
+    "Positive-real/integral-adic Brauer-Manin set is nonetheless nonempty by the cited theorem"
+  ],
+  "hypothesis": {
+    "established": false,
+    "least_global_counterexample_reduction": "A least global counterexample would be prime and congruent1 mod24; elementary constructive proof in workbench.tex",
+    "statement": "p has no positive integral solution to 4/p=1/x+1/y+1/z"
+  },
+  "necessary_and_sufficient_at_p": [
+    "all D>=3",
+    "all original integral gates miss",
+    "H=diag((D-1)/2) is invertible",
+    "a full prime-coloured obstruction certificate validates on all leaves"
+  ],
+  "nonclaims": [
+    "No global witness theorem",
+    "No actual false prime",
+    "No Leech-root obstruction to ES",
+    "No completion of Giuga conjecture",
+    "No fixed-modulus analytic theorem applied to growing moduli"
+  ],
+  "object": {
+    "bound": "at most(p-1)^2 canonical leaves",
+    "domain": "all p/4<a<3p/4, u|a^2, both E/M channels; exact exponents 0..2v_q(a)",
+    "fields": [
+      "p",
+      "a",
+      "R",
+      "u",
+      "prime factorization",
+      "exponent vector",
+      "h",
+      "r",
+      "s",
+      "channel",
+      "rational kappa or lambda",
+      "ordered rational denominators",
+      "minimal common denominator D",
+      "local valuation deficits",
+      "affine scale",
+      "all24face/root labels",
+      "Leech full state and kernel",
+      "ordered octonions and cubic correction"
+    ],
+    "name": "Complete valuation-labelled denominator-defect atlas"
+  },
+  "obstruction_to_one_map": "Middle complementation and u_M=p*u_E modR preserve D. Restricted graph atp241a64 has exact components of sizes8,12,6 atD3,5,15.",
+  "positive_research": [
+    "force a target with the sharp integer collision bound",
+    "force a positive middle witness with the greatest actual outside divisor",
+    "search for a well-founded cross-shell decrease of D, not an assumed one"
+  ],
+  "schema": "es-false-prime-object/1"
+}

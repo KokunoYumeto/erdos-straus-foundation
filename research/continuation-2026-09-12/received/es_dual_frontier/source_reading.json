@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-12",
+  "predecessor_bytes": "lineage/source_hashes.json",
+  "primary_sources": [
+    {
+      "authors": "Yamamoto, K.",
+      "locator": "Lemma 2, equation (4), printed p.38; page image inspected",
+      "role": "Inherited exterior congruence criterion",
+      "title": "On the Diophantine equation 4/n=1/x+1/y+1/z",
+      "url": "https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf",
+      "year": 1965
+    },
+    {
+      "authors": "Monks, M.; Velingker, A.",
+      "locator": "Theorem 2.2 and Corollary2.3,p.4; proof pp.5-6",
+      "role": "Reduced two-unit-fraction divisor criterion only; unreduced generality not imported",
+      "title": "On the Erdos-Straus conjecture: Properties of solutions to its underlying Diophantine equation",
+      "url": "https://mathematicalgemstones.com/maria/papers/ErdosStraus.pdf",
+      "year": 2008
+    },
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "locator": "Section2, Propositions2.2 and2.6",
+      "role": "Type I/II parametrization lineage; no later density theorem used",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "year": 2013
+    },
+    {
+      "authors": "Kellner, B.C.",
+      "locator": "Section3, Lemma3.1 and Theorem3.5",
+      "role": "Necessary Giuga+Carmichael condition for a Giuga-conjecture counterexample",
+      "url": "https://arxiv.org/pdf/math/0409259",
+      "year": 2004
+    },
+    {
+      "authors": "Bright, M.; Loughran, D.",
+      "locator": "v2, Theorem1.8 p.4; proof Section3.8 p.14",
+      "role": "Nonempty positive-real/integral-adic Brauer-Manin set, not global positive integral existence",
+      "url": "https://arxiv.org/pdf/1908.02526",
+      "year": 2020
+    },
+    {
+      "authors": "Wilson, R.A.",
+      "locator": "Sections2-4",
+      "role": "Octonion Fano convention, joint Leech membership, coordinate-model background",
+      "url": "https://maths.qmul.ac.uk/~raw/pubs_files/octoLeech1rev.pdf",
+      "year": 2009
+    }
+  ],
+  "repository_reads": [
+    {
+      "commit": "9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f",
+      "locator": "thm:shellwise-no-hit; equations(1)-(10d)",
+      "path": "research/expanded-2026-09-08/exact_bounded_transport_72/counterexample_sieve/all_shell_no_hit.tex",
+      "repository": "KokunoYumeto/erdos-straus-foundation",
+      "role": "Full shell packet and exact ordered return already present; no novelty claimed"
+    },
+    {
+      "commit": "9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f",
+      "locator": "thm:r3-factor-sieve;thm:r7-factor-sieve",
+      "path": "research/expanded-2026-09-08/exact_bounded_transport_72/first_two_shell_sieve.tex",
+      "repository": "KokunoYumeto/erdos-straus-foundation",
+      "role": "First-two-shell support restrictions inherited"
+    }
+  ],
+  "scope_limit": "No complete re-audit of preceding 49 morphisms or all cited papers; no Giuga programme full replay; no remote writes.",
+  "user_source": {
+    "executed": false,
+    "file": "verify_giuga_blind_plane_cd.py",
+    "read": "complete 382-line file; A3-A6 and A8-A9b used as methodological comparison",
+    "scope": "Giuga versus Giuga+Carmichael; simultaneous congruences; labelled phase returns. No transfer of a Giuga counterexample asserted. A7 numerical phases not represented as exact symbolic proof.",
+    "sha256": "96320eb43437e5a5e658a84a1603155c6b53951c34191f7cbd3f853f254a2d98"
+  }
+}

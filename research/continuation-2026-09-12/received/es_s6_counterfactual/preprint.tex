@@ -1,0 +1,74 @@
+\documentclass[10pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}
+\hypersetup{pdftitle={Affine torsion covers and exact ES denominator defects},pdfauthor={The Clankers research workbench}}
+\emergencystretch=2em
+\title[Affine torsion covers and ES denominator defects]{Affine torsion covers of the $(3,4,\infty)$ period system\\
+and exact Erd\H{o}s--Straus denominator defects}
+\author{The Clankers: source-addressable mathematical note}
+\date{12 September 2026}
+\begin{document}
+\begin{abstract}
+For the specified integral period monodromy we compute a three-coordinate
+affine slice at every odd torsion level. Its extension cocycle has exact
+order equal to that level. We prove a complete orbit classification, with
+one orbit away from three and two orbits at levels divisible by three,
+and give closed genus formulas. The return denominator of each fully
+marked Erd\H{o}s--Straus divisor candidate maps faithfully to this cocycle
+subgroup. The comparison uses the actual source matrices, not the source's
+global six-sphere claim. No universal ES positivity theorem or historical
+priority is asserted.
+\end{abstract}\maketitle
+\input{src/core.tex}
+\section{Application with the arithmetic labels retained}
+For a prime $p=4m+1$, let $m+1\le a\le3m$, $R=4a-p$, and
+$u=\prod q^{f_q}$ where $a=\prod q^{e_q}$ and $0\le f_q\le2e_q$.
+The inherited two-channel rational triples are
+\[
+ Q_E=\left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\qquad
+ Q_M=\left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+\]
+Both satisfy the reciprocal equation. The two latter coordinates have
+common minimal denominator
+\[
+ D_E=R/\gcd(R,4u+1),\qquad D_M=R/\gcd(R,u+a).
+\]
+For $E$ this follows by multiplying the first numerator by the unit $u$
+modulo $R$, obtaining $a^2(4u+1)$; the other numerator is congruent to
+$4a^2(4u+1)$. For $M$ the same calculation has factor $u+a$.
+The denominator is odd, so every candidate gives the affine cover above.
+If $g$ is its gate and $h=\gcd(R,g)$, the explicit group isomorphism is
+\[
+ \langle[g]_R\rangle\longrightarrow\langle[b_D]\rangle,
+ \qquad [kg]_R\longmapsto k[b_D].
+\]
+Its inverse reads $k$ as minus the third cusp evaluation and multiplies
+by $g$ modulo $R$. Conversely the inverse from a residue $v$ to $k$ is
+$(v/h)(g/h)^{-1}\bmod D$.
+
+Every integral ES solution is caught by this full interval: choose a
+smallest denominator $a$, use $p/4<a\le3p/4$, and factor
+$(RY-pa)(RZ-pa)=p^2a^2$. Its three possible $p$-valuations give respectively
+$E,u=a^2/(RY-pa)$; $M,u=pa^2/(RY-pa)$; or the reversed exterior with
+$u=(RY-pa)/p^2$. Thus ES at $p$ is equivalent to $D=1$ for some candidate.
+Retain the exterior order bit, middle complementation $u\mapsto a^2/u$,
+all exponents, and $p$ in the decoration. By Theorem~\ref{thm:class},
+the disjoint union of these decorated covers has a section exactly when
+ES holds. There is no claim that forgetting the decoration remains
+injective, nor that the resulting compact curves are six-spheres.
+
+For the restricted empty shell $p=241,a=64,R=15$, each channel has return
+levels $3,5,15$ with multiplicities $4,6,3$. Keeping both exterior orders
+and the original middle order gives 39 states, hence 32,949 sheets in
+60 compact components, with total genus 5,448. Other shells at that prime
+succeed. The standard-library verifier includes all these records and the
+full atlases for $p=5,37,241,1201$; the all-level theorems above are written
+proofs, not extrapolations from those finite replays.
+\input{src/references_short.tex}
+\end{document}

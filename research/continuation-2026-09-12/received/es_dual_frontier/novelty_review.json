@@ -1,0 +1,45 @@
+{
+  "assessment_date": "2026-09-12",
+  "global_verdict": "Limited content-level search, not exhaustive prior-art exclusion. Short notes are standalone mathematical expositions of these exact continuations, not announcements of global conjecture solutions.",
+  "queries_performed": [
+    "\"Erdos Straus\" \"common denominator\" divisor",
+    "\"Erdős–Straus\" \"collision\" support",
+    "\"Erdos Straus\" \"least\" \"nonresidue\"",
+    "\"Erdős–Straus\" \"energy\" divisors",
+    "\"Erdos Straus\" \"denominator\" \"gcd\"",
+    "\"Erdos Straus\" \"largest divisor\" nonresidue",
+    "\"Erdős–Straus\" \"inverse\" \"counterexample\" certificate"
+  ],
+  "statements": [
+    {
+      "antecedent": "Foundation all_shell_no_hit.tex; classical divisor and Type I/II coordinates",
+      "statement": "Full finite shell/divisor no-hit criterion",
+      "status": "inherited"
+    },
+    {
+      "qualification": "Elementary deduction from inherited formulas; no historical-priority claim",
+      "statement": "Exact common denominator D and failed-state same-shell transport",
+      "status": "exact packaged extension; prior exact statement not located in scoped search"
+    },
+    {
+      "qualification": "Not a new general spectral theorem or independent existence argument",
+      "statement": "Finite coordinate-algebra inverse certificate / success projector",
+      "status": "standard linear algebra applied to explicitly bounded ES denominator defects"
+    },
+    {
+      "qualification": "Search did not establish an earlier identical packaged criterion; no claim the integer inequality itself is novel",
+      "statement": "Balanced integer/symmetric energy floor on actual ES exponent box",
+      "status": "standard convex integer histogram minimization; exact ES target application newly supplied here"
+    },
+    {
+      "qualification": "Not an unqualified first-ever divisor theorem; original result here is the documented refined construction and inverse",
+      "statement": "Largest available divisor outside index-two subgroup and angular improvement",
+      "status": "elementary exact cofactor theorem; sharpens the preceding anchor method"
+    },
+    {
+      "qualification": "No novelty claim for the underlying coordinate changes or Leech properties",
+      "statement": "Marked lattice and Fable transport of failed states",
+      "status": "new worked application of inherited maps with exact scaling and collision strata"
+    }
+  ]
+}

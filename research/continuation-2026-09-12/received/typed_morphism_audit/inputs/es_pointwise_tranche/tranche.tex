@@ -1,0 +1,621 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,longtable,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathrsfs}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\K}{\mathcal K}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\B}{\mathsf B}
+\newcommand{\V}{\mathcal V}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\QR}{\operatorname{QR}}
+\title{Pointwise angular forcing for marked Erd\H{o}s--Straus selectors\\
+\large A continuation tranche: weighted exponent boxes, exact exceptions, and a finite covering certificate}
+\author{Research transcript; no historical-priority claim}
+\date{5 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The proposed infinite-exterior/four-middle-shell dichotomy is not resolved here. We prove a pointwise angular-forcing theorem from actual bounded signed exponent boxes. Its optimal one-sided representative height gives explicit cofactor bounds, an exact marked construction, and complete inverse fibres. Seven concrete anchors reduce a possible counterexample to prescribed prime-factor residue sets; all finite angular exceptions are eliminated within the proposed hybrid. A balanced-factor family shows precisely why unweighted residue saturation does not itself imply chamber positivity. Independently verified modular certificates prove the proposed dichotomy for all $14\,215\,707$ hard primes at most $10^{10}$. The original finite exterior family with the four middle shells has exactly three failures in this enlarged range; each is repaired by an unbounded $(1,s)$ ray. No density theorem is used to infer any pointwise assertion.
+\end{abstract}
+
+\section{The exact question and its finite coordinates}
+Let
+\[
+ C=\{1,121,169,289,361,529\},\qquad
+ \HH=\{p\text{ prime}:p\bmod840\in C\}.
+\]
+Write
+\[
+ \alpha=\frac{\sqrt3-\sqrt2}{1+\sqrt2},\quad
+ \beta=\frac{\sqrt3+\sqrt2}{1+\sqrt2},\quad
+ \gamma=1+\sqrt2,\qquad
+ \K=(0,\alpha)\cup(\beta,\gamma).
+\]
+Here $1/8<\alpha<1/7$, and $[3/2,2]\subset\K$.
+The natural closure in this tranche means exactly
+\begin{equation}\label{eq:closure}
+ \V_\infty=
+ \{(r,s)\in\mathbb Z_{>0}^2:\gcd(r,s)=1,\ 3s\le2r\le4s\}
+ \ \cup\ \{(1,s):s\ge8\}.
+\end{equation}
+It does not add cross-mediants between the two disconnected portions of the chamber.
+
+\begin{lemma}[Exact Farey domain]\label{lem:farey}
+All primitive vectors in the first set in \eqref{eq:closure} are obtained by repeated insertion of mediants between $(2,1)$ and $(3,2)$.
+\end{lemma}
+\begin{proof}
+The basis matrix with these columns has determinant one. A vector $(r,s)$ has basis coordinates
+\[
+ A=2r-3s,\qquad B=2s-r,
+\quad (r,s)=A(2,1)+B(3,2).
+\]
+The interval inequalities are exactly $A,B\ge0$, and $\gcd(A,B)=1$. At an endpoint one coordinate is zero and the other one. If $A=B$, coprimality gives $A=B=1$, the mediant. If $A>B$, replace the current endpoint basis $(v,w)$ by $(v,v+w)$; the coordinates become $(A-B,B)$ and their sum decreases. If $B>A$, replace the basis by $(v+w,w)$, obtaining $(A,B-A)$. The determinant remains one. This subtractive Euclidean recursion terminates at an endpoint or a mediant, proving that the vector occurs in a finite refinement without assuming a common depth.
+\end{proof}
+
+The question is whether every $p\in\HH$ has an exterior state on $\V_\infty$, or a middle state with slope in $\K$ and $R\in\{11,19,23,39\}$. The marking is always
+\[
+ (p,R,a,u,h,r,s,\mathrm{channel},\kappa\text{ or }\lambda;
+            x,y,z) ,
+\]
+where the last three coordinates retain their raw order. For $0<R<p$, $R\equiv3\pmod4$, set $a=(p+R)/4$. For each $u\mid a^2$, the unique normalization is
+\begin{equation}\label{eq:normalize}
+ d=\gcd(a,u),\quad r=u/d,\quad s=a/d,\quad h=d/r;
+ \qquad a=hrs,\quad u=hr^2,\quad \gcd(r,s)=1.
+\end{equation}
+For a prime power $q^e\parallel a$, $q^f\parallel u$, $0\le f\le2e$, the exponents in $(h,r,s)$ are
+\[
+ (e-|f-e|,(f-e)_+,(e-f)_+).
+\]
+In particular no unavailable multiplicity is introduced. Also $u/a=r/s$.
+
+The two exact channels are
+\begin{align}
+ E:&\quad R\mid4u+1,
+ &\kappa&=(pr+s)/R,
+ &(x,y,z)&=(hrs,hs\kappa,phr\kappa),\label{eq:E}\\
+ M:&\quad R\mid4u+p,
+ &\lambda&=(r+s)/R,
+ &(x,y,z)&=(hrs,phs\lambda,phr\lambda).\label{eq:M}
+\end{align}
+Since $p\equiv4hrs\pmod R$ and $h,r,s$ are units modulo $R$, the divisibilities are respectively equivalent to $R\mid pr+s$ and $R\mid r+s$. Multiplication by $phrs\kappa$ or $phrs\lambda$ proves the reciprocal identity. These inherited coordinates and their literature crosswalk are isolated in Section~\ref{sec:antecedents}; the results below concern additional angular and pointwise information.
+
+\section{Weighted angular forcing from an actual exponent box}
+\begin{definition}
+Let $R\ge3$ be odd, and let $H$ be an index-two subgroup of
+$G=(\mathbb Z/R\mathbb Z)^\times$ with $-1\notin H$. An integer $A>0$ is a \emph{saturated anchor} for $(R,H)$ if $\gcd(A,R)=1$, all its prime factors lie in $H$, and its actual signed box
+\begin{equation}\label{eq:box}
+ \mathscr B_R(A)=
+ \left\{nd^{-1}\pmod R:\ n,d>0,\ \gcd(n,d)=1,\ nd\mid A\right\}=H,
+\end{equation}
+Equivalently, if $A=\prod q^{e_q}$, the allowed exponent of $q$ in $n/d$ is each integer in $[-e_q,e_q]$. Define the one-sided representative height
+\begin{equation}\label{eq:height}
+ \B_R(A)=\max_{v\in H}\ 
+ \min_{\substack{nd\mid A,\ \gcd(n,d)=1\\nd^{-1}\equiv v\ (R)}}\frac d n.
+\end{equation}
+Both extrema are over nonempty finite sets. In particular $\B_R(A)\le A$.
+\end{definition}
+
+\begin{theorem}[Pointwise weighted angular forcing]\label{thm:forcing}
+Let $p>R$ satisfy $p\equiv1\pmod4$, $R\equiv3\pmod4$, and
+$\gcd(a,R)=1$, where $a=(p+R)/4$. Primality is not needed for this construction. Let $A\mid a$ be a saturated anchor, put $b=a/A$, and let $0<\eta\le\alpha$. Set $T=\B_R(A)/\eta$.
+
+If $b\bmod R\notin H$ and $b>T$, a middle state exists with $0<r/s<\eta$. The same conclusion holds if $b\bmod R\in H$, $b$ has an actual prime factor outside $H$, and $b>T^2$.
+Consequently, if $a$ has a prime factor outside $H$, the single sufficient inequality
+\begin{equation}\label{eq:coarseforce}
+ a>A\max\{1,\B_R(A)/\eta\}^2
+\end{equation}
+forces such a state. In particular $a>64A^3$ suffices at $\eta=1/8$.
+If all prime factors of $a$ lie in $H$, there is no middle state at that shell, irrespective of angle.
+\end{theorem}
+\begin{proof}
+The quotient $G/H$ has order two, and its nonidentity coset is $-H$. We first find an actual divisor $t\mid b$, outside $H$, such that $t>T$.
+If $b\notin H$, take $t=b$. Otherwise choose an actual prime $q\mid b$ outside $H$. If $q>T$, take $t=q$; if $q\le T$, take $t=b/q$. Then $b/q$ is outside $H$, and $b>T^2$ gives $b/q>T$. This is valid even for repeated prime factors: exactly one occurrence of $q$ has been removed.
+
+The residue $-t^{-1}$ is in $H$. Choose a pair $(n,d)$ in the actual anchor box representing this residue with $d/n\le\B_R(A)$. Put
+\begin{equation}\label{eq:packetmap}
+ g=\gcd(d,tn),\quad r=d/g,\quad s=tn/g,\quad
+ h=\frac{ag^2}{dtn},\quad
+ u=\frac{ad}{tn},\quad
+ \lambda=\frac{d+tn}{gR}.
+\end{equation}
+Because $nd\mid A$ and $t\mid b$, $dtn\mid a$. Thus $h$ and $u$ are positive integers, $a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$. Also $R\mid d+tn$. Since $g\mid a$ and $\gcd(a,R)=1$, division by $g$ preserves the divisibility; hence $\lambda$ is integral. Formula~\eqref{eq:M} now gives the full ordered solution. Finally
+\[
+ \frac rs=\frac d{tn}\le\frac{\B_R(A)}t<\eta\le\alpha.
+\]
+For \eqref{eq:coarseforce}, if $T\ge1$ then $b>T^2$ also gives $b>T$; if $T<1$, every positive integer $b$ exceeds $T$. The bound $\B_R(A)\le A$ gives the last numerical assertion.
+
+Conversely, a middle state would have $r,s\mid a$ and $r/s\equiv-1\pmod R$. If all prime factors of $a$ lie in $H$, both $r$ and $s$, with every available exponent, lie in $H$; their quotient cannot equal $-1$.
+\end{proof}
+
+\begin{corollary}[Necessary cofactor inequalities]\label{cor:heightobstruction}
+Suppose the proposed hybrid fails at $p\in\HH$. Fix $R\in\{11,19,23,39\}$ and any saturated anchor $A\mid a_R=(p+R)/4$. If $a_R$ has a prime factor outside its anchor subgroup, then, with $B=\B_R(A)$,
+\[
+ a_R/A\notin H\ \Longrightarrow\ a_R\le8AB,
+ \qquad
+ a_R/A\in H\ \Longrightarrow\ a_R\le64AB^2.
+\]
+These inequalities apply to every such divisor $A$, not just to the seven fixed anchors below.
+\end{corollary}
+\begin{proof}
+Apply the two branches of Theorem~\ref{thm:forcing} with $\eta=1/8$ and take contrapositives.
+\end{proof}
+
+\subsection{Domain, inverse fibres, and collision law}
+Fix $p,R,A$ as above. The full packet domain for the rational threshold $1/8$ consists of
+\[
+ t\mid a/A,\quad nd\mid A,\quad\gcd(n,d)=1,\quad
+ tn+d\equiv0\pmod R,\quad tn>8d.
+\]
+It maps by \eqref{eq:packetmap} into the marked middle states at $(p,R)$ with $r/s<1/8$. Not every such middle state need be in the image for a specified $A$.
+For a target $(h,r,s)$ all preimages are given exactly by the anchor pairs $(n,d)$ for which
+\begin{equation}\label{eq:packetinverse}
+ t=\frac{ds}{nr}\in\mathbb Z_{>0},\qquad t\mid a/A,
+ \qquad tn>8d,
+\end{equation}
+with the displayed congruence imposed (or inferred from the target). Then $r\mid d$, $g=d/r$, and \eqref{eq:packetmap} recovers the target. Indeed $r\mid ds=tnr$ and $\gcd(r,s)=1$ imply $r\mid d$, after which reduction of the ratio forces $g$.
+Each $(n,d)$ permits at most one $t$, so every fibre is finite and has size at most $\prod_{q^{e_q}\parallel A}(2e_q+1)$.
+Two packets collide precisely when
+\begin{equation}\label{eq:collision}
+ tnd'=t'n'd.
+\end{equation}
+This is equality of their reduced slopes, equivalently equality of their $u$ coordinates. Thus dropping packet coordinates loses a finite fibre; it does not erase the exterior/middle tag, shell, normalization, or denominator orientation.
+
+\section{Seven explicit anchors and their exact angular exceptions}\label{sec:anchors}
+For $R=11,19,23$, let $H_R$ be the quadratic residues. Put
+\[
+ H_{39}=\langle2\rangle=\{1,2,4,5,8,10,11,16,20,22,25,32\}.
+\]
+All these are index-two subgroups excluding $-1$.
+
+\begin{theorem}[Exact hard-prime anchor reduction]\label{thm:seven}
+The following table gives saturated anchors and their exact heights. In the last column are all $p\in\HH$ for which $A\mid a_R$, some prime factor of $a_R$ is outside $H_R$, yet no middle state at $R$ has slope in $\K$.
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+$R$&$A$&$\B_R(A)$&finite cutoff $256A\B_R(A)^2-R$&exceptions\\
+\midrule
+11&9&9&186613&none\\
+23&12&3&27625&none\\
+23&18&6&165865&1201\\
+19&35&35&10975981&837601\\
+39&40&$5/2$&63961&none\\
+39&50&10&1279961&3361\\
+39&64&32&16777177&none\\
+\bottomrule
+\end{tabular}
+\end{center}
+Every exception has a positive witness inside the proposed hybrid. Consequently any counterexample satisfies, for every row,
+\begin{equation}\label{eq:puresupport}
+ A\mid a_R\quad\Longrightarrow\quad
+  q\bmod R\in H_R\quad\text{for every prime }q\mid a_R.
+\end{equation}
+\end{theorem}
+\begin{proof}
+The box computations are small and exact. Modulo $11$, $3$ has order $5$; the exponents $-2,\ldots,2$ fill $H_{11}$. Modulo $23$, $2$ has order $11$ and $3=2^8$; the rectangles
+\[
+ -2\le i\le2,\ -1\le j\le1,
+ \qquad\text{and}\qquad
+ -1\le i\le1,\ -2\le j\le2
+\]
+in the exponent $i+8j$ each cover $\mathbb Z/11\mathbb Z$. Modulo $19$, $5$ has order $9$ and $7=5^6$; $i+6j$, $i,j\in\{-1,0,1\}$, covers all nine classes. Modulo $39$, $2$ has order $12$ and $5=2^9$. The rectangles $|i|\le3,|j|\le1$ and $|i|\le1,|j|\le2$ in $i+9j$, and the interval $|i|\le6$, cover all twelve classes.
+
+For the heights one enumerates those same boxes, taking the least $d/n$ in each residue. The accompanying JSON contains every pair, all signed exponents, and all minimizing representatives. This is exhaustive finite minimization, not subgroup generation. For example the minimizing pairs for $R=23,A=12$, in increasing order of $H_{23}$, are
+\[
+ (n,d)=(1,1),(2,1),(3,1),(4,1),(6,1),(1,3),
+ (4,3),(12,1),(3,2),(2,3),(3,4).
+\]
+Their maximum $d/n$ is $3$, and the residue $8$ requires $(1,3)$, proving equality.
+
+Theorem~\ref{thm:forcing} excludes all exceptions with
+$a_R>64A\B_R(A)^2$. The remaining finite calculation runs
+\begin{equation}\label{eq:finiteanchorloop}
+ 1\le b\le64\B_R(A)^2,\qquad p=4Ab-R.
+\end{equation}
+For each hard prime in this interval, factor $a_R=Ab$, test its actual prime factors against $H_R$, then enumerate every exponent $0\le f_q\le2v_q(a_R)$ for $u\mid a_R^2$. Test $R\mid4u+p$ and the strict integer positivity test in Appendix~\ref{app:positivity}. The exact counts are:
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+$R$&$A$&hard primes&with a non-$H_R$ factor&angular exceptions\\
+\midrule
+11&9&152&91&0\\
+23&12&37&24&0\\
+23&18&143&90&1\\
+19&35&3754&2421&1\\
+39&40&19&9&0\\
+39&50&302&183&1\\
+39&64&1061&682&0\\
+\bottomrule
+\end{tabular}
+\end{center}
+These are counts of primes, not counts of states. The verifier uses trial division for primality and complete divisor boxes, and regenerates this entire table. Thus the finite part is a deterministic computer-assisted lemma with the explicit bound \eqref{eq:finiteanchorloop}.
+
+At the three exceptional shells, all oriented middle states are exactly the following; each entry lists $(u,h,r,s,\lambda)$:
+\begin{align*}
+ p=1201,\,R=23:&\quad (108,3,6,17,1),\ (867,3,17,6,1);\\
+ p=837601,\,R=19:&\quad (37975,31,35,193,12),\ (47285,965,7,31,2),\\
+ &\quad (927365,965,31,7,2),\ (1154719,31,193,35,12);\\
+ p=3361,\,R=39:&\quad (125,5,5,34,1),\ (5780,5,34,5,1).
+\end{align*}
+Their repairs, with full coordinates in the JSON, are
+\begin{center}
+\begin{tabular}{rrcrrrrr}
+\toprule
+$p$&$R$&tag&$u$&$h$&$r$&$s$&$\lambda$ or $\kappa$\\
+\midrule
+1201&39&M&2&2&1&155&4\\
+837601&11&M&81&1&9&23267&2116\\
+3361&3&E&29&29&1&29&1130\\
+\bottomrule
+\end{tabular}
+\end{center}
+The raw ordered denominators are respectively
+\[
+ (310,1489240,9608),\quad
+ (209403,41237586580172,15951273444),\quad
+ (841,950330,110139970).
+\]
+Direct substitution or \eqref{eq:E}--\eqref{eq:M} verifies each. None is a counterexample to the proposed hybrid, proving \eqref{eq:puresupport}.
+\end{proof}
+
+\subsection{Hand classification for the first three anchors}
+The finite classification at $R=11,23$ also has a small direct proof independent of the larger cutoff enumeration.
+
+\begin{proposition}\label{prop:hand}
+Among odd integers $a$ with $9\mid a$ and $\gcd(a,11)=1$ which contain a nonresidue prime factor, failure of chamber-positive middle selection at $R=11$ occurs exactly at
+\[
+ a\in\{171,513,3249,9747\}.
+\]
+Among positive integers $a$ coprime to $23$ containing a nonresidue prime factor, the analogous exceptional sets are $\{60,300\}$ when $12\mid a$, and $\{306,5202\}$ when $18\mid a$.
+\end{proposition}
+\begin{proof}
+For an anchor $A$ and an outside prime $q>8A$, Theorem~\ref{thm:forcing}'s construction with $t=q$ gives a positive state whenever $Aq\mid a$. For the remaining primes $q\le8A$, inspect only the anchor box and the two orientations of $qn/d$. The exact bad-prime lists are
+\[
+ (R,A)=(11,9):\ \{2,19\};\qquad
+ (23,12):\ \{5\};\qquad
+ (23,18):\ \{17\}.
+\]
+The small-prime table in the certificate lists all positive packets and proves these finite assertions by integer inequalities.
+
+For $(11,9)$, oddness excludes $2$, so a remaining bad $a$ can have no nonresidue prime other than $19$. If another QR prime $\ell\ne3$ divides $a$, then $t=19\ell>72$ is an available outside divisor of $a/9$. An exponent at least three on $19$ similarly supplies $t=19^3>72$. If $v_3(a)\ge4$, the actual divisor $3^4\cdot19=1539\equiv-1\pmod{11}$ gives $(r,s)=(1,1539)$. Thus only $a=3^e19^f$, $e=2,3$, $f=1,2$, remain.
+
+For $(23,12)$, only the nonresidue $5$ can remain. Any further QR prime is $13$ or at least $29$, apart from $2,3$. The factor $13$ gives the actual divisor $390\equiv-1\pmod{23}$; a larger QR prime $\ell$ gives $t=5\ell>96$. The cases $v_2(a)\ge3$, $v_3(a)\ge2$, and $v_5(a)\ge3$ give respectively
+\[
+ (r,s)=(15,8),\quad(1,45),\quad(3,250),
+\]
+whose products divide $a$, sums are divisible by $23$, and slopes are in $\K$. Only $a=60,300$ remain.
+
+For $(23,18)$ only the nonresidue $17$ can remain. Any other QR prime $\ell\ne2,3$ is at least $13$, so $t=17\ell>144$. The cases $v_2(a)\ge2$, $v_3(a)\ge3$, and $v_{17}(a)\ge3$ give the divisors
+\[
+ 68,\qquad459,\qquad18\cdot17^3=88434,
+\]
+all $-1$ modulo $23$, and hence the positive rays $(1,s)$ in the middle channel. Only $a=306,5202$ remain.
+
+For each listed $a$, complete divisor enumeration proves nonpositivity; these tiny boxes are also in the JSON. The corresponding $4a-R$ values in the $R=11$ case are $673,2041,12985,38977$, none a hard prime ($2041=13\cdot157$, $12985$ is divisible by $5$, and the other two are not hard residues). For $12\mid a$, $217=7\cdot31$ and $1177=11\cdot107$ are composite. For $18\mid a$, $4\cdot306-23=1201$ and $4\cdot5202-23=20785$ is divisible by $5$.
+\end{proof}
+
+\section{Additional pointwise restrictions and a genuine angular barrier}
+\begin{proposition}[The shell-$3$ exterior dichotomy]\label{prop:R3}
+For a hard prime $p$, put $a_3=(p+3)/4$. There is an exterior state at $R=3$ with $r=1,s\ge8$ if and only if $a_3$ has a prime factor $2\pmod3$.
+\end{proposition}
+\begin{proof}
+We have $a_3\equiv1\pmod6$. If $q\equiv2\pmod3$ is its least such prime factor, the multiplicity of outside factors in $a_3$ is even. Hence $s=a_3/q\ge q$ and $s\equiv5\pmod6$. If $s<8$, then $q=s=5$, giving $p=97$, which is not hard. Thus $s\ge8$, and $(R,h,r,s)=(3,q,1,a_3/q)$ satisfies $R\mid4h+1$, giving the claimed exterior state. Conversely such a state has $h\equiv2\pmod3$, so an actual prime factor of $h\mid a_3$ is $2\pmod3$.
+\end{proof}
+
+\begin{corollary}[Explicit counterexample locus]\label{cor:locus}
+Any counterexample to the proposed hybrid has all prime factors of $(p+3)/4$ congruent to $1\pmod3$, satisfies all seven implications \eqref{eq:puresupport}, and satisfies every variable-anchor inequality in Corollary~\ref{cor:heightobstruction}.
+Moreover, unless $p\equiv1\pmod{144}$, at least one of the first three fixed anchor implications applies. On the entire hard class $p\equiv121\pmod{840}$, the $R=19,A=35$ implication applies.
+\end{corollary}
+\begin{proof}
+Only the last assertions require calculation. Let $b=(p+23)/24$. Then
+\[
+ a_{11}=3(2b-1),\qquad a_{23}=6b.
+\]
+The three anchor conditions are respectively $b\equiv2\pmod3$, $2\mid b$, and $3\mid b$. None holds precisely when $b\equiv1\pmod6$, equivalently $p\equiv1\pmod{144}$. Finally $p\equiv121\pmod{840}$ implies $p+19\equiv0\pmod{140}$, hence $35\mid a_{19}$.
+\end{proof}
+
+The height obstruction also allows anchors not in the fixed list. For example, if $\ell>3$ is a prime in a nonidentity QR class modulo $11$, then $A=3\ell$ is saturated. Direct inspection gives
+\begin{equation}\label{eq:variableheight}
+\begin{array}{c|rrrr}
+ \ell\bmod11&3&4&5&9\\\hline
+ \B_{11}(3\ell)&3\ell&\ell/3&1&3.
+\end{array}
+\end{equation}
+To verify this, use $3$ as generator of $H_{11}$: the second prime has exponent $1,-1,-2,2$ respectively, and inspect the nine exponents $i+cj$, $i,j=-1,0,1$. For completeness, in the residue order $1,3,4,5,9$ of $H_{11}$, the exact minima of $d/n$ are
+\[
+\begin{array}{c|ccccc}
+\ell\bmod11&1&3&4&5&9\\\hline
+3&3/\ell&1/\ell&3&3\ell&1/(3\ell)\\
+4&1/(3\ell)&1/3&1/\ell&3/\ell&\ell/3\\
+5&1&1/3&1/(3\ell)&1/\ell&3/\ell\\
+9&1&3/\ell&3&1/(3\ell)&1/\ell
+\end{array}
+\]
+Every entry is among the nine available monomials $3^{-i}\ell^{-j}$; comparison of the alternatives proves minimality. In the last row $\ell>9$, since $\ell>3$ is a prime congruent to $9$ modulo $11$. All other comparisons use $\ell>3$. Taking the row maxima proves \eqref{eq:variableheight}. Thus a nonresidue factor in $a_{11}$, combined with a QR prime $\ell\equiv5\pmod{11}$, forces a positive middle state as soon as $a_{11}>192\ell$; for $\ell\equiv9\pmod{11}$ the bound is $a_{11}>1728\ell$. These are linear, not cubic, bounds. In the outside-cofactor branch they improve further to $24\ell$ and $72\ell$, respectively.
+
+\begin{theorem}[A balanced-factor obstruction to angular propagation]\label{thm:barrier}
+Let $\ell,q$ be distinct primes other than $3,11$, satisfying
+\[
+ \ell\equiv3\pmod{11},\qquad q\equiv2\pmod{11},
+ \qquad9\ell\le q\le21\ell.
+\]
+Put $a=3\ell q$ and $p=4a-11$. Whenever $p>11$ is prime, its complete middle fibre at $R=11$ consists of exactly the two slopes
+\[
+ \frac{3\ell}{q},\qquad\frac q{3\ell}.
+\]
+Neither is in $\K$. The signed QR box from $3\ell$ nevertheless fills the entire QR subgroup, and $q$ is a nonresidue.
+\end{theorem}
+\begin{proof}
+Use primitive root $2$ modulo $11$. The exponents of $3,\ell,q$ are $8,8,1$ modulo $10$. In the actual box each exponent multiplier is $-1,0,1$. The equation
+\[
+ 8(i+j)+k\equiv5\pmod{10},\qquad i,j,k\in\{-1,0,1\},
+\]
+has exactly the solutions $(1,1,-1)$ and $(-1,-1,1)$: inspect $i+j=-2,-1,0,1,2$; only the extreme sums work, with $k=1,-1$ respectively. Thus the only coprime divisor ratios equal to $-1$ modulo $11$ are $3\ell/q$ and its inverse, and $h=1$.
+The first ratio lies in $[1/7,1/3]$, above $\alpha$ but below $\beta$; the inverse lies in $[3,7]$, above $\gamma$. Both fail the strict chamber inequalities. Saturation of $3\ell$ follows from $i+j\in\{-2,-1,0,1,2\}$ modulo $5$.
+\end{proof}
+
+A concrete hard prime is
+\[
+ p=2016361=12\cdot113\cdot1487-11,
+ \qquad a=504093=3\cdot113\cdot1487.
+\]
+Its full $R=11$ fibre has
+\[
+ (u,h,r,s,\lambda)=(114921,1,339,1487,166),
+ \quad(2211169,1,1487,339,166),
+\]
+with raw denominators
+\[
+ (504093,497722581962,113468698914),
+ \quad(504093,113468698914,497722581962).
+\]
+Primality, the complete exponent box, and nonpositivity are deterministic certificate checks. There is no assertion that infinitely many prime values of the displayed bilinear expression exist. The family proves a conditional-in-parameters obstruction, not a hypothetical repair of the global selector.
+
+\section{A certificate through $10^{10}$, independent of the discovery search}\label{sec:cover}
+Let
+\[
+ \V_* = F_4\cup\{(1,s):8\le s\le128\}.
+\]
+Here $F_4$ has seventeen rays, so $|\V_*|=138$.
+
+\begin{theorem}[Deterministic finite-range coverage]\label{thm:range}
+There are exactly $14\,215\,707$ primes $p\le10^{10}$ in $\HH$. The exterior family $\V_*$ together with the four positive middle shells has exactly three failures in that interval:
+\[
+ 11259889,\quad788653441,\quad1350237001.
+\]
+All three have exterior witnesses on $\V_\infty$. Consequently the proposed infinite-closure/four-shell dichotomy holds for every hard prime at most $10^{10}$.
+\end{theorem}
+\begin{proof}[Certificate and proof of its verification rule]
+The supplied compressed JSON has $78\,332$ exterior rules and $414\,902$ middle rules. Its generator is not trusted: the standard-library verifier independently checks the validity of every rule and exhausts the prime universe by an exact sieve.
+
+An exterior rule fixes primitive $(r,s)\in\V_\infty$ and $R\equiv3\pmod4$ with $\gcd(4r^2s,R)=1$. Put $m=4rs$ and
+\begin{equation}\label{eq:Erule}
+ t\equiv-s(mr)^{-1}\pmod R,\qquad
+ p\equiv-R+mt\pmod{mR},\qquad p>R.
+\end{equation}
+Every such prime has $h=(p+R)/m$, $u=hr^2$ and $\kappa=(pr+s)/R$. Formula~\eqref{eq:E} reconstructs all marks. In the certificate, every rule belongs either to $\V_*$ or to one of the three added rays below.
+
+A middle rule fixes $(R,u,d)$ with
+\begin{equation}\label{eq:Mrule}
+ R\in\{11,19,23,39\},\quad u\mid d^2,\quad\gcd(d,R)=1,
+ \quad a\equiv0\pmod d,\quad a\equiv-u\pmod R.
+\end{equation}
+These congruences define one class $p=4a-R$ modulo $4dR$. If $u/a$ is in the lower chamber at some threshold $p_0>R$, it stays in the lower chamber for every larger $p$ in that class. If $u/a$ is in the upper chamber at both endpoints of a closed interval, it stays there throughout the interval, since $a$ increases with $p$ and $u/a$ decreases. Thus each rule stores a lower threshold, an upper-chamber interval, or both. The verifier checks the endpoints using strict integer inequalities. The conditions imply $u\mid a^2$, $\gcd(a,R)=1$, and $R\mid4u+p$; normalization \eqref{eq:normalize} reconstructs the full middle marking at every covered prime. This compression loses the discovery witness, but not the ability to recover a canonical complete ordered witness.
+
+For completeness, the prime sieve has one flag for each integer $840k+c$, $c\in C$, up to the bound. For each prime $q\le10^5$ not dividing $840$, strike the unique $k$-class
+\[
+ k\equiv-c\,840^{-1}\pmod q
+\]
+starting at values $840k+c\ge q^2$. No member of these hard classes is divisible by $2,3,5,7$. The integer $1$ is explicitly deleted. Every composite in the universe has a prime divisor at most $10^5$; hence this is a complete deterministic sieve. Counting its surviving flags gives the stated prime count.
+
+Each verified witness progression is intersected with each of the six hard progressions by the generalized Chinese remainder theorem. To make the counting proof explicit, $840k+c\equiv b\pmod M$ is soluble precisely when $g=\gcd(840,M)$ divides $b-c$. If it does, $k$ occupies the single class
+\[
+ k\equiv\frac{b-c}{g}(840/g)^{-1}\pmod{M/g}.
+\]
+The verifier clears exactly these flags inside the stored interval. After all base-family exterior and all middle rules, exactly the three displayed flags remain. Exact factorization of $rp+s$ for all $138$ base rays, together with complete middle divisor boxes at the four shells, proves that these three are genuine failures, rather than merely gaps in the compressed cover.
+
+The additional exterior states are
+\begin{center}
+\begin{tabular}{rrrrrrr}
+\toprule
+$p$&$R$&$u=h$&$r$&$s$&$\kappa$&$a$\\
+\midrule
+11259889&151&3586&1&785&74574&2815010\\
+788653441&7&698&1&282469&112705130&197163362\\
+1350237001&3&983&1&343397&450193466&337559251\\
+\bottomrule
+\end{tabular}
+\end{center}
+All have $s\ge8$ and $0<R<p$. Their raw denominators are
+\begin{align*}
+ &(2815010,209926555740,3011146134757596),\\
+ &(197163362,22221322345447060,62041931437810926340),\\
+ &(337559251,151966969188053966,597534121519807663078).
+\end{align*}
+Their three rules clear the remaining flags. This proves the finite assertion, not a limiting claim.
+\end{proof}
+
+In fact all four middle fibres at each of these three primes are empty, even before imposing positivity. The JSON retains their factorizations, all $138$ base-ray factorizations, and every actual middle state (the lists are empty). State counts and prime counts are not interchanged.
+
+\section{Complete termination for one candidate, and its limitation}
+A future candidate can be tested without any Farey-depth cutoff. Since $u/a=r/s$, membership in the closure is exactly
+\begin{equation}\label{eq:uclosure}
+ 3a\le2u\le4a
+ \quad\text{or}\quad
+ u\mid a\ \text{ and }\ 8u\le a.
+\end{equation}
+At each $R=3,7,\ldots<p$, the exterior congruence is
+\[
+ u\equiv u_0=\frac{3R-1}{4}\pmod R.
+\]
+In the upper branch enumerate these $u$ between $\lceil3a/2\rceil$ and $2a$ and test $u\mid a^2$; in the lower branch enumerate them up to $a/8$ and test $u\mid a$. In the lower branch $4u+1\ge3R$ and $8u\le a=(p+R)/4$ imply $23R\le p+8$, so no larger lower shell can contribute.
+
+\begin{proposition}[Exact exterior hyperbola map]\label{prop:hyperbola}
+There is a bijection between exterior markings $(p,R,a,u)$ and the tuples $(p,k,D,u)$ satisfying
+\[
+ k>0,\quad k\equiv3\pmod4,\quad D=(kp+1)/4,\quad
+ u\mid D^2,\quad k\mid u+D,
+ \quad0<\frac{4u+1}{k}<p.
+\]
+The maps are
+\[
+ k=\frac{4u+1}{R},\quad D=ka-u,
+ \qquad
+ R=\frac{4u+1}{k},\quad a=\frac{u+D}{k}.
+\]
+All fibres have size one when $p,u$ are retained. The normalization and channel tag remain unchanged.
+\end{proposition}
+\begin{proof}
+Forwards, $4D=kp+1$ follows from $4a=p+R$. Also $\gcd(k,u)=1$, since any common divisor divides $4u+1=kR$ and $u$. Modulo $u$, $D\equiv ka$, whence $u\mid a^2$ implies $u\mid D^2$.
+Conversely $4D-kp=1$ gives $\gcd(k,D)=1$; from $u\equiv-D\pmod k$ follows $\gcd(k,u)=1$. The same congruence gives $k\mid4u+1$. Then $4a=p+R$, $R\equiv3\pmod4$, and $u\mid D^2$ with $D\equiv ka\pmod u$ yields $u\mid a^2$. All maps are now forced, proving the inverse assertions.
+\end{proof}
+
+For the closure $u\le2a\le p-1$, so $kR=4u+1\le4p-3$. Choose any integer cutoff $0\le T<p$. Enumerate small shells $R\le T$ by divisors of $a^2$; enumerate the remaining states by
+\[
+ k\equiv3\pmod4,\qquad
+ k\le\left\lfloor\frac{4p-3}{T+1}\right\rfloor,
+ \qquad u\mid\left(\frac{kp+1}{4}\right)^2,
+\]
+retaining only $R>T$ and \eqref{eq:uclosure}. This is a disjoint exhaustive two-pass algorithm. Every divisor enumeration uses the exact exponent interval $0\le f_q\le2e_q$. The verifier implements both algorithms and compares their full outputs at small hard primes. No optimal-complexity claim is made; Elsholtz--Tao already discuss a different Type-I search algorithm in their Section~3.
+
+Termination for testing one specified $p$ is not a terminating existence proof for every $p$. No assertion that the two-pass output is always nonempty has been inserted.
+
+\section{Where the pointwise argument stops}\label{sec:stop}
+The counterexample locus in Corollary~\ref{cor:locus} is not empty as a set of primes. For example $p=11259889$ satisfies every stated fixed-anchor support condition and the shell-$3$ support condition:
+\[
+ a_3=7\cdot402139,
+ \qquad a_{11}=3^2\cdot5^2\cdot12511.
+\]
+Both factors of $a_3$ are $1\pmod3$; all factors of $a_{11}$ are QR modulo $11$. Among the seven fixed anchors only $(R,A)=(11,9)$ applies. Its other shifted factorizations are
+\[
+ a_{19}=11\cdot255907,\quad
+ a_{23}=2\cdot3\cdot41\cdot11443,\quad
+ a_{39}=2\cdot1407491.
+\]
+All four middle fibres are empty, as certified, so the variable-anchor necessary inequalities hold as well by Theorem~\ref{thm:forcing}. Thus this prime does not merely defeat a particular angular construction: these four middle shells cannot help at all. It is repaired by the exterior ray $(1,785)$ and shell $151$.
+
+The next pointwise theorem therefore must force an exterior witness in the closure on the remaining weighted/support locus, or supply a logically complete alternative using one of the existing four middle shells when its fibre is nonempty. A subgroup membership argument cannot replace an actual bounded-exponent divisor; unweighted signed-box saturation cannot replace the angle, by Theorem~\ref{thm:barrier}. The current results prove neither that the remaining locus is finite nor that its exterior selector always terminates successfully. They locate any counterexample above $10^{10}$ and impose explicit additional factorization inequalities at every saturated anchor.
+
+\section{Content-level antecedent crosswalk}\label{sec:antecedents}
+The following distinguishes inherited identities from the angular continuation. Page numbers for Elsholtz--Tao refer to the 55-page arXiv manuscript, so that equation numbers give a version-stable second locator.
+
+\paragraph{Yamamoto \cite{Yamamoto}.}
+Lemma~2, equation~(4), printed p.~38, is the exterior congruence pair, with Yamamoto's $(a,b,q)=(r,s,R)$. The proof of Lemma~1 on the same page separates one and two $p$-divisible denominators. These facts are inherited, not new.
+
+\paragraph{Monks--Velingker \cite{MV}.}
+Theorem~2.1(c)--(e), pp.~2--3, supplies the divisibility/valuation classification and orientation context. Theorem~2.2 and Corollary~2.3, p.~4, with the proof of Theorem~2.2 on pp.~5--6, supply the two-unit-fraction divisor criterion. Its reduced-fraction form is the one used here: $\gcd(R,pa)=1$ and coprime divisor pairs. No inference from an unreduced numerator/denominator is needed.
+
+\paragraph{Elsholtz--Tao \cite{ET}.}
+For the exterior state, their Type-I coordinates in equations~(2.1)--(2.9), p.~11, are exactly
+\[
+ (a_{\rm ET},b_{\rm ET},c_{\rm ET},d_{\rm ET},e_{\rm ET},f_{\rm ET})
+   =(r,\kappa,s,h,k,R),\quad k=(4hr^2+1)/R.
+\]
+Their map $\pi^{\rm I}$ gives $(z,x,y)$ in our order. The equation $ce=a+b$ is $sk=r+\kappa$, obtained by comparing $skR=s(4hr^2+1)$ with $Rr+pr+s$. Their Type-II coordinates in equations~(2.13)--(2.22), p.~14, are
+\[
+ (a_{\rm ET},b_{\rm ET},c_{\rm ET},d_{\rm ET},e_{\rm ET},f_{\rm ET})
+  =(s,r,\lambda,h,R,4hs\lambda-1).
+\]
+Their map $\pi^{\rm II}$ gives exactly $(x,y,z)$ in our raw order. Propositions~2.2 and 2.6 are the corresponding coordinate descriptions. Thus neither the channel normalization nor its two-fraction identity is being assigned new priority.
+
+\paragraph{Dahan \cite{Dahan}.}
+Lemma~2.2 in Section~2.2, and Theorem~2.6/Corollary~2.7 in Section~2.3 of v1, give the reduced binary criterion and untwisted/twisted divisor branches. In the untwisted branch take $(n,c,K,d_1,d_2)=(p,R,a,r,s)$; in the twisted branch use the same tuple with congruence $pr+s\equiv0\pmod R$. Lemma~4.2 and Theorem~4.3 in Section~4.1 concern residue-support restrictions and sieve dimension, not the pointwise angular conclusion proved here. The repairs to the inherited sieve presentation are recorded separately in Appendix~\ref{app:sieve}.
+
+\paragraph{Content search beyond the four requested antecedents.}
+A search located the repository notes \cite{Repo11,Repo23} \emph{Exact $q=11$ filter}, Sections~3, 7--8, and \emph{Exact $q=23$ filter}, Sections~3--7, dated 15 August 2026 in the repository \texttt{chasebryan/centl}. They already discuss unweighted signed-box QR saturation, including $9\mid a_{11}$ and extra $2$- or $3$-valuation in $a_{23}$. The residue-saturation idea is therefore explicitly not claimed as new. Those notes concern the existence of a middle target without the chamber restriction. The present additions are the one-sided height, its actual-divisor cofactor construction and inverse fibres, exact angular exceptions, the balanced-factor angular obstruction, and the independent $10^{10}$ certificate. No exhaustive historical-priority assertion is made for these additions either. The proof of the angular results does not require accepting a repository status label or an unproved global claim.
+
+\appendix
+\section{Exact positivity test}\label{app:positivity}
+For positive integers $r,s$, set
+\[
+ D=s^2-4rs-3r^2,\qquad E=3r^2-4rs-s^2.
+\]
+Then
+\begin{align*}
+ r/s<\alpha
+ &\iff D>0\ \text{and}\ D^2>8r^2(r+s)^2,\\
+ r/s<\gamma
+ &\iff r\le s\ \text{or}\ (r-s)^2<2s^2,\\
+ r/s>\beta
+ &\iff r>s\ \text{and}\bigl(E\ge0\ \text{or}\
+                    8r^2(r-s)^2>E^2\bigr).
+\end{align*}
+For the first equivalence rewrite $r/s+(r/s+1)\sqrt2<\sqrt3$, square positive sides, and isolate the remaining positive radical before squaring again. For the last, first $r/s>\beta>1$, then rewrite $r/s+(r/s-1)\sqrt2>\sqrt3$ and square positive sides. If $E\ge0$, the radical term gives strict positivity; otherwise the second square is equivalent. These sign conditions prevent all extraneous roots. The program uses these strict integer tests, never floating-point approximations.
+
+\section{The two inherited sieve presentation repairs}\label{app:sieve}
+No new density statement is used in this tranche. To specify the corrected notation in the inherited proof, fix once and for all its allowed-prime set $\mathcal P$ and write
+\[
+ \mathcal D=\{d\ge1:d\text{ squarefree and every prime divisor of }d
+                      \text{ belongs to }\mathcal P\}.
+\]
+Every prime product is restricted to $q\in\mathcal P$, and every $d,e,\ell$ sum below is restricted to $\mathcal D$, including the inner sum in the minimizing weights:
+\[
+ G(z)=\sum_{\substack{d\in\mathcal D\\d\le z}}H(d),\qquad
+ \lambda_d=\frac{\mu(d)}{G(z)}
+ \prod_{q\mid d}(1-g(q))^{-1}
+ \sum_{\substack{\ell\in\mathcal D,\ \ell\le z/d\\(\ell,d)=1}}H(\ell)
+ \quad(d\in\mathcal D,d\le z),
+\]
+and $\lambda_d=0$ otherwise. Before any CRT expansion, the square majorant is
+\[
+ \#\{n\in I:n\text{ survives}\}
+ \le\sum_{n\in I}
+ \left(\sum_{\substack{d\in\mathcal D\\d\le z}}
+             \lambda_d\,1_{\Omega_d}(n)\right)^2.
+\]
+Indeed on a surviving $n$ only the $d=1$ indicator remains and $\lambda_1=1$. Only after this inequality is established does one expand it into the double sum over $d,e\in\mathcal D$ and count $\Omega_{[d,e]}$ by CRT. All subsequent diagonalizing sums over $\ell$ have the same restriction. This is a notation and order-of-proof repair, not an additional pointwise hypothesis.
+
+\section{Executable scope and nonclaims}
+Python 3.9 or later and its standard library suffice. The principal commands are
+\begin{lstlisting}
+python3 verifier.py --self-test --anchors --cover-bound 10000000000
+python3 verifier.py --witness 11259889
+python3 verifier.py --closure-prime 2521
+\end{lstlisting}
+The first regenerates all finite angular exceptions, the hand tables, map/inverse tests, the three exact finite-family failures, and the compressed covering verification. The second reconstructs a complete raw ordered witness with a rule identifier. The third exhausts the specified infinite closure and four middle shells for one prime; failure of a stored covering rule alone is never treated as nonexistence.
+
+The cover file is compressed JSON, not executable code. Integers can exceed $2^{53}$; use arbitrary-precision JSON integer parsing. The verifier uses explicit checks rather than optimization-sensitive Python assertions. Primality is certified by complete trial division or a complete sieve, never by a probable-prime test. The Lean-ready plan supplied separately is an exact dependency specification, not a compiled Lean proof. No conclusion about primes above $10^{10}$ is drawn from the census; individual stored rules remain valid wherever their explicit intervals and congruences hold.
+
+\begin{thebibliography}{9}
+\bibitem{Yamamoto}
+Yamamoto, K. (1965). On the Diophantine equation $4/n=1/x+1/y+1/z$.
+\emph{Memoirs of the Faculty of Science, Kyushu University, Series A, Mathematics, 19}(1), 37--47.
+\url{https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_article}.
+
+\bibitem{MV}
+Monks, M., \& Velingker, A. (2008, September 23).
+\emph{On the Erd\H{o}s--Straus conjecture: Properties of solutions to its underlying Diophantine equation} [Author-hosted manuscript].
+\url{https://mathematicalgemstones.com/maria/papers/ErdosStraus.pdf}.
+
+\bibitem{ET}
+Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\url{https://arxiv.org/abs/1107.1010}.
+
+\bibitem{Dahan}
+Dahan, B. (2026, August 25).
+\emph{Sieve dimension and search depth for the Erd\H{o}s--Straus conjecture, $n\equiv1\pmod{24}$} [Preprint, arXiv:2608.24035v1].
+\url{https://arxiv.org/html/2608.24035v1}.
+
+\bibitem{Repo11}
+chasebryan. (2026, August 15).
+\emph{Exact $q=11$ filter for Mordell-hard primes in the strong/Type-II corridor} [Repository research note, \texttt{centl}].
+\url{https://github.com/chasebryan/centl/blob/main/research/erdos-straus/STRONG-ES-Q11-EXACT-FILTER.md}.
+
+\bibitem{Repo23}
+chasebryan. (2026, August 15).
+\emph{Exact $q=23$ filter for Mordell-hard primes in the strong/Type-II corridor} [Repository research note, \texttt{centl}].
+\url{https://github.com/chasebryan/centl/blob/main/research/erdos-straus/STRONG-ES-Q23-EXACT-FILTER.md}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,263 @@
+{
+  "scope": "Exact files of the new reader, proofs, records and actual replay outputs; original source hashes are separate.",
+  "original_manifest": "received/ARTIFACT_PROVENANCE.json",
+  "original_files": 429,
+  "original_manifest_sha256": "1e525d1b4849d812a55fc67421a0eb23f28e1c61985c59ad8ff55b826b7285f0",
+  "new_files": [
+    {
+      "path": ".gitignore",
+      "bytes": 190,
+      "sha256": "f98630c9bda1ba875780b12bafcc463c35451910b8a8080cc04671bb6e4504ba"
+    },
+    {
+      "path": "build_release_manifest.py",
+      "bytes": 1499,
+      "sha256": "d5f80303067f9f93789443d9fef2217e0212ac15f04b66718ad2fa36d46a747f"
+    },
+    {
+      "path": "checks/dual/checks.json",
+      "bytes": 432,
+      "sha256": "bec73461a60967a3aaa49218a710979c3392089062f94eaae12df822bc89ac98"
+    },
+    {
+      "path": "checks/dual/collision_energy.json",
+      "bytes": 13270,
+      "sha256": "9d410dfe4376ccfd8602948a30f02443a5a73e74a5b7ba120fac8abec1368c43"
+    },
+    {
+      "path": "checks/dual/full_atlas_profiles.json",
+      "bytes": 61417,
+      "sha256": "9122c13e24e99269f60bba5ff04193427387053ce302facb159449631c54879c"
+    },
+    {
+      "path": "checks/dual/negative_certificate_regressions.json",
+      "bytes": 388,
+      "sha256": "c49b7760991a9d4bee13737ec8074759ac8cf6da9daf2e7049847a611e0c574f"
+    },
+    {
+      "path": "checks/dual/rational_integral_geometric_routes.json",
+      "bytes": 427649,
+      "sha256": "e18dfda4b6bb867850857c03c3313d77b6f7af3ab254c3f0e345752f6a0a3287"
+    },
+    {
+      "path": "checks/dual/restricted_negative_prototypes.json",
+      "bytes": 12702,
+      "sha256": "c61713fbaffa74306574267ed39ecaaa403ec1c4e0a60792ca8347cc39c3570a"
+    },
+    {
+      "path": "checks/dual/restricted_transport_graphs.json",
+      "bytes": 10453,
+      "sha256": "20d01223caa1aa348f5628c6cc3ed0ad3e2aebc3e30efcc7ddd07ef5c5f5e7b2"
+    },
+    {
+      "path": "checks/dual/same_shell_defect_transport.json",
+      "bytes": 1051,
+      "sha256": "5ac300e674be6a3b391b9437d961b87fc92cfefed22beabbd0445aa78a905fb8"
+    },
+    {
+      "path": "checks/dual/sharpened_anchor_examples.json",
+      "bytes": 6902,
+      "sha256": "32aa92cdb8cff9d67f7ab4031a1f1f0e079f27126a673094a884b6dfa3778a5c"
+    },
+    {
+      "path": "checks/energy/energy_scan.json",
+      "bytes": 2359279,
+      "sha256": "fc939255e14b73f56a24b15d68748453af1e6b500f5292b6f7b6972c008160b4"
+    },
+    {
+      "path": "checks/energy/examples.json",
+      "bytes": 185041,
+      "sha256": "2bb4e513e66895ba78c697072e21d8cf63eff01a2ad848f15be477a5ab26a3e6"
+    },
+    {
+      "path": "checks/energy/execution_receipt.json",
+      "bytes": 787,
+      "sha256": "3be2e6c0287cb8fbd45a21869faf8bde000f7f706594d77cc03965c744840f6b"
+    },
+    {
+      "path": "checks/energy/mathematical_summary.json",
+      "bytes": 1892,
+      "sha256": "ea2cd6e21be9c5daf3dc9e0267579ccf9df53a6969293a76a7e1c8a7d221d395"
+    },
+    {
+      "path": "checks/geometry_independent_receipt.json",
+      "bytes": 33333,
+      "sha256": "d8d855eacc7d27f937abd45902f821ab69bd66365a0f934bcb7caf8f16daeae4"
+    },
+    {
+      "path": "checks/s6/atlas_p1201.json.gz",
+      "bytes": 1280039,
+      "sha256": "80dc8beb2f0398a744e2af2880c237b45561ee58164a8a96b1ae3fd262abc976"
+    },
+    {
+      "path": "checks/s6/atlas_p241.json.gz",
+      "bytes": 166738,
+      "sha256": "4eef0ceaa141322d5b284233ea7f5978413cb5cfa16c4408e4e92c1128e9095f"
+    },
+    {
+      "path": "checks/s6/atlas_p37.json.gz",
+      "bytes": 13450,
+      "sha256": "b214c73fa7149198250ecdc2456e876a0dfe7da6a0dc18a4b4cf661c519fbce3"
+    },
+    {
+      "path": "checks/s6/atlas_p5.json.gz",
+      "bytes": 1048,
+      "sha256": "34f7e6435cace42ee5a5e281ce8fb9ae6f3a175da7fc351c7a31c117cde99ea0"
+    },
+    {
+      "path": "checks/s6/atlas_summaries.json",
+      "bytes": 23748,
+      "sha256": "efa97dbf16d7cfddbf9607b9365cdc276977773f3c831d5e497a9941a5f9f6cc"
+    },
+    {
+      "path": "checks/s6/checks.json",
+      "bytes": 779,
+      "sha256": "37931cb856fb031c930ad371ced94bae21e18cf45d094450f6ee081b247f6f7b"
+    },
+    {
+      "path": "checks/s6/cohomology.json",
+      "bytes": 562,
+      "sha256": "ad9b917228dbebc0996686f947ce6e537b68c0743af18c15d9ce321ef9f2800c"
+    },
+    {
+      "path": "checks/s6/level3_group.json",
+      "bytes": 63887,
+      "sha256": "d33b96f584867adb0aee8abaa02e7fb1408d02e440b35e8ed7a27a8f1c432586"
+    },
+    {
+      "path": "checks/s6/naturality.json",
+      "bytes": 281,
+      "sha256": "d29ce150af85315df1ff26757fb01f1bae3950f60a8e115df18c390a7979d154"
+    },
+    {
+      "path": "checks/s6/orbit_passports.json",
+      "bytes": 6791,
+      "sha256": "0fe2f3f5b0a6cff0a559ce6fd265eae0cb275f3d31411f73ff2b58f0a0dc2bdc"
+    },
+    {
+      "path": "checks/s6/permutations_D1.json.gz",
+      "bytes": 178,
+      "sha256": "eefb5a99e4adfccdb7bd7419826ca2a0f6f03ff6ba4809e4066df09ccb326ab0"
+    },
+    {
+      "path": "checks/s6/permutations_D3.json.gz",
+      "bytes": 313,
+      "sha256": "5d313f51cda47dca136f3614257986ae047422e51486b8a29642f9779e78c272"
+    },
+    {
+      "path": "checks/s6/permutations_D5.json.gz",
+      "bytes": 587,
+      "sha256": "158fdd6e43feef3d42fc7e1da5e606fcb7083ecc68eed8942ca5e6562e9212ba"
+    },
+    {
+      "path": "checks/s6/permutations_D7.json.gz",
+      "bytes": 1284,
+      "sha256": "28409462fb471652d8ab4ad6b10b92d2f975e4195fc9f6eb9e9b26e6b066d348"
+    },
+    {
+      "path": "checks/s6/permutations_D9.json.gz",
+      "bytes": 2487,
+      "sha256": "5b7e3b60e8a2ac2a01ffd6a7bc601f499f9341474801139c446fd8e397a7e5f4"
+    },
+    {
+      "path": "checks/s6/restricted_p241_a64.json.gz",
+      "bytes": 1735,
+      "sha256": "9ccb467d0a8694c2bcac6e3af88368901af90acbb9a49b151db0bb821966a84d"
+    },
+    {
+      "path": "checks/s6/restricted_transport_graph.json",
+      "bytes": 14431,
+      "sha256": "ea48e9007072bc7fdaadb5dfd9ed02677ccc092db804565731559b45157265c4"
+    },
+    {
+      "path": "checks/s6/source_matrices.json",
+      "bytes": 1891,
+      "sha256": "f8ef7915401fe8ececa05dac2b2950dea60cb473bc837bd2fcc7bf3ebf8ea36c"
+    },
+    {
+      "path": "checks/s6/twist_presentations.json",
+      "bytes": 9141,
+      "sha256": "9fa23c45f0c6d9bfb99285fbf1d8893d4a08c96244a564232a538d3da7d56659"
+    },
+    {
+      "path": "continuation.json",
+      "bytes": 9313,
+      "sha256": "de946d8a634264f01b5d841910917b4d3a7c10cf11d03042b70735e588d9bd4c"
+    },
+    {
+      "path": "CORRECTIONS.md",
+      "bytes": 6758,
+      "sha256": "f4c504bf97aeccae0fd5dd6135ca20bee5a1f09bcae4b0128ccf5c2eeac29c2e"
+    },
+    {
+      "path": "LICENCE.md",
+      "bytes": 1859,
+      "sha256": "5b7a8b640cefcd5e7b14f7dd08c71a8a0cc9aa3cde3f9d913e885b839083cc9d"
+    },
+    {
+      "path": "output/pdf/continuation.pdf",
+      "bytes": 566921,
+      "sha256": "b8b466cd01213cc73320d389a922467743a89f5bd1bb346b645694dd8747a60c"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 5779,
+      "sha256": "8581ce015c19f3ebec5a303de24a19eff66febbab5a19c927ddf64dc0a87694e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5805,
+      "sha256": "e53d91ac2375d993cf2efa9a8160054c6843bc68c6f952a3ded696c07df40d47"
+    },
+    {
+      "path": "reconstructed/boolean_cyclotomic.tex",
+      "bytes": 37108,
+      "sha256": "ccd75f26417c1504f401856f4276adcdee84462fc8929912a9ea3d0cc66354ac"
+    },
+    {
+      "path": "reconstructed/boolean_exact_checks.py",
+      "bytes": 5085,
+      "sha256": "d68ca4bbb858e277d32e394ca1e32e2703dd21ad5be9b34011d5f50a5f5b3963"
+    },
+    {
+      "path": "reconstructed/character_energy.tex",
+      "bytes": 21864,
+      "sha256": "8e2c5ac2b005fe47b25c09ee3cf5b330a3931835badb6de2f6420d909762f811"
+    },
+    {
+      "path": "reconstructed/character_energy_check.py",
+      "bytes": 17067,
+      "sha256": "ab6b5518deeb38068266191f26c5a012adca6cf4e10a4ba4618ca28c28bdaf56"
+    },
+    {
+      "path": "reconstructed/common_modulus_hexagon.tex",
+      "bytes": 9214,
+      "sha256": "68d5876b54befd93d6dc4e3503d0aa0dd1539167d7b91a30c0b4d45684488f24"
+    },
+    {
+      "path": "reconstructed/compactification_correction.tex",
+      "bytes": 3978,
+      "sha256": "f6c550d22f8ab04bfe970ddb52eec25df64adba94688d5cf058920db752a8ade"
+    },
+    {
+      "path": "reconstructed/continuation.tex",
+      "bytes": 6072,
+      "sha256": "97be4a89230c478716b7a73cd9ca6c84ca36f7221de0efe322941c2b4dc454f0"
+    },
+    {
+      "path": "reconstructed/picard_hexagon.tex",
+      "bytes": 16599,
+      "sha256": "015f204b7828da141cddab07e91a71ae5f22644b30e538c2370f6ce1ea8c05e5"
+    },
+    {
+      "path": "VERIFY.md",
+      "bytes": 2608,
+      "sha256": "40b07aaf6cdff11cd072369a1a38251ddee0763860b4bb1d255d7211445c61df"
+    },
+    {
+      "path": "verify_continuation.py",
+      "bytes": 8026,
+      "sha256": "1b496e7000e6b2b385abad7c151843afe7bd46a7835920c169e8feee0209967d"
+    }
+  ]
+}

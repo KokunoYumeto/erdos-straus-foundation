@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-11",
+  "python": "3.13.5",
+  "normal_command": "python verify.py --out certificates",
+  "optimized_command": "python -O verify.py --out certificates_optimized",
+  "normal_exit_status": 0,
+  "optimized_exit_status": 0,
+  "stdout_sha256": {
+    "normal": "9a38728712fb23f2db37ac6c4252d256d2db83ac0d8d55cab3c5aadad1b44f65",
+    "optimized": "9a38728712fb23f2db37ac6c4252d256d2db83ac0d8d55cab3c5aadad1b44f65"
+  },
+  "byte_identical_JSON": [
+    "arithmetic.json",
+    "lines.json",
+    "polynomial.json",
+    "receipt.json"
+  ],
+  "verifier_sha256": "afbf088bfbb5ebea32adcfcbd7a9889c54e77e1b080f9a4f176f399f6d5c2f02",
+  "formal_prover_executed": false,
+  "independent_reviewer_obtained": false,
+  "network_used_by_verifier": false,
+  "repository_writes": false
+}

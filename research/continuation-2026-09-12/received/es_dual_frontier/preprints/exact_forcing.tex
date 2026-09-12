@@ -1,0 +1,191 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype}
+\usepackage[hidelinks]{hyperref}\usepackage{xurl}
+\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}
+\title{Two exact positive-witness tests for Erd\H{o}s--Straus divisor boxes}
+\author{The Clankers research workbench}\date{12 September 2026}
+\begin{document}
+\begin{abstract}
+We retain all multiplicities in a signed divisor box and derive a sharp
+integer collision threshold for meeting the combined exterior/middle target.
+It forces a marked witness at $p=1201$ where the ordinary Cauchy--Schwarz
+threshold does not. Separately, an exact largest-divisor formula sharpens the
+cofactor step in an existing angular construction. The bounds are unconditional
+sufficient criteria with explicit witness inverses, not hypotheses asserted
+for all primes. Standard finite inequalities, the ES channels, and the
+previous anchor construction are not claimed as new; historical priority of
+these particular packaged refinements is unassessed.
+\end{abstract}
+\maketitle
+
+Let $p$ be a prime $1\pmod4$, let $p/4<a<3p/4$, and put $R=4a-p$.
+Every $u\mid a^2$ gives the exterior and middle gates
+\[
+ R\mid4u+1\quad(E),\qquad R\mid u+a\quad(M).
+\]
+With $g=\gcd(a,u)$, set $h=g^2/u$, $r=u/g$, $s=a/g$.
+Then $a=hrs$, $u=hr^2$, $\gcd(r,s)=1$, and the positive ordered witnesses are
+\[
+ (hrs,hs\kappa,phr\kappa),\ \kappa=(pr+s)/R\quad(E),
+\]
+\[
+ (hrs,phs\lambda,phr\lambda),\ \lambda=(r+s)/R\quad(M).
+\]
+Integrality follows from the indicated gate. These are the inherited
+Yamamoto/Type-I--II coordinates \cite{y,et}.
+
+\section{The integer collision threshold}
+Write $a=\prod q^{e_q}$ and let $\mu(g)$ count the vectors
+$\beta\in\prod_q[-e_q,e_q]\cap\Z^{\omega(a)}$ satisfying
+$\prod q^{\beta_q}=g$ in $G=(\Z/R\Z)^\times$. Set
+\[
+ N=\prod_q(2e_q+1),\quad E=\sum_{g\in G}\mu(g)^2,
+ \quad\mathcal T=\{-1,-p,-p^{-1}\}\subset G.
+\]
+Coincident targets are counted once. The inversion involution gives
+$\mu(g)=\mu(g^{-1})$; both channels fail exactly when
+$\mu$ vanishes on $\mathcal T$.
+
+\begin{theorem}
+Let $M=|G|-|\mathcal T|>0$, write $N=Mq+r$ with $0\le r<M$, and put
+$L=Mq^2+r(2q+1)$. If $E<L$, one of the two gates has an actual divisor hit.
+The energy can be computed without discarding any exponent budget by
+\[
+ E=\sum_{\delta_q=-2e_q}^{2e_q}
+ \mathbf1_{\prod q^{\delta_q}=1\ (R)}
+ \prod_q(2e_q+1-|\delta_q|).
+\]
+\end{theorem}
+\begin{proof}
+If there is no hit, $N$ occurrences occupy $M$ allowed bins. Whenever two
+counts differ by two or more, moving one occurrence from the larger to the
+smaller strictly lowers their sum of squares. Hence the minimum has $r$
+counts $q+1$ and $M-r$ counts $q$, proving $E\ge L$.
+The displayed energy formula counts ordered pairs of exponent vectors of
+equal image, grouped by their difference. In coordinate $q$ a difference
+$\delta_q$ occurs in $2e_q+1-|\delta_q|$ ordered pairs.
+
+For the inverse, take an actual vector $\beta$ in a target fibre. If its
+image is $-1$, use $M$; if it is $-p^{-1}$, use $E$; if it is only $-p$,
+first negate every exponent and use $E$. In all cases
+$u=\prod q^{e_q+\beta_q}$ has exponents in $[0,2e_q]$. The gate and the
+ordered denominator formulas then hold exactly.
+\end{proof}
+
+There is a further exact parity improvement. If $1\in\mathcal T$, the
+zero vector is a hit. Otherwise let $s$ count the allowed nonidentity
+involutions and $r$ the allowed unordered inverse pairs. A no-hit histogram
+has identity count $1+2x_0$, involution counts $2x_i$, and pair counts $y_j,y_j$.
+Consequently its exact relaxed energy minimum is
+\[
+ \min_{x_0+\cdots+x_s+y_1+\cdots+y_r=(N-1)/2}
+ \left((1+2x_0)^2+4\sum_{i=1}^sx_i^2+2\sum_{j=1}^ry_j^2\right).
+\]
+It is computed by taking the required number of least marginal costs from
+$8,16,24,\ldots$ (identity), $4,12,20,\ldots$ (each involution),
+and $2,6,10,\ldots$ (each inverse pair). The increasing marginal sequences
+make every selected prefix feasible; an exchange proves optimality.
+
+At $p=1201,a=306,R=23$, the actual box is
+$[-1,1]\times[-2,2]\times[-1,1]$ on primes $2,3,17$.
+The energy is $107$, the target set is $\{9,18,22\}$, and
+$N=45$, $M=19$. Ordinary Cauchy--Schwarz does not force a hit:
+$19\cdot107=2033>45^2=2025$.
+But the integer threshold is
+\[
+ 12\cdot2^2+7\cdot3^2=111>107.
+\]
+The inverse gives $u=17$, $E$, and
+$(306,16218,1082101)$. This is a better sufficient criterion, not a claim
+of new numerical coverage. The full multiplicity table is in the certificate.
+
+\section{A sharper angular cofactor step}
+Let $H\le(\Z/R\Z)^\times$ have index two, with $-1\notin H$.
+Choose an actual divisor $A\mid a$ whose prime factors lie in $H$ and
+whose pairs $nd\mid A$, $\gcd(n,d)=1$, represent every $v=n/d\in H$.
+Define the attained rational costs
+\[
+ c_A(v)=\min_{n/d=v\ (R)}d/n,
+ \qquad B_A=\max_{v\in H}c_A(v),\qquad b=a/A.
+\]
+This hypothesis concerns a finite, explicitly checked anchor; it is not
+asserted for an arbitrary shell or unknown prime. It is the exact anchor
+notion from the preceding workbench angular construction \cite{anchor}.
+
+\begin{theorem}
+The greatest available divisor of $b$ outside $H$ is
+\[
+ T_H(b)=b\quad(b\notin H),\qquad
+ T_H(b)=b/q_*\quad(b\in H\text{ with an outside prime factor}),
+\]
+where $q_*$ is the least such prime; it is zero when no outside factor exists.
+If $T_H(b)>8B_A$, the shell has a middle witness with $0<r/s<1/8$.
+The exact anchor-wise criterion is
+$\max_{t\mid b,\ t\notin H}t/c_A(-t^{-1})>8$.
+\end{theorem}
+\begin{proof}
+When $b\in H$ and $t\notin H$, the complement $b/t$ is outside and must
+contain an outside prime factor. Hence $b/t\ge q_*$. Equality is attained
+by $t=b/q_*$. The other cases are immediate. This uses one actual prime
+occurrence even when $q_*$ divides $b$ repeatedly.
+
+For any chosen outside $t$, take a minimizing pair $(n,d)$ at $-t^{-1}$.
+Then $R\mid d+tn$ and $dtn\mid a$. Put
+\[
+ g=\gcd(d,tn),\quad r=d/g,\quad s=tn/g,\quad
+ h=ag^2/(dtn),\quad u=ad/(tn),\quad\lambda=(d+tn)/(gR).
+\]
+All are positive integers, $g$ is a unit modulo $R$, $a=hrs$, $u=hr^2$,
+and $\gcd(r,s)=1$. The middle gate holds and $r/s=c_A(-t^{-1})/t$.
+The largest-divisor sufficient condition and exact criterion follow.
+For a target with the anchor retained, all inverse pairs satisfy
+$t=ds/(nr)\mid b$; then $r\mid d$, $g=d/r$, and the original packet is
+recovered. Thus the finite fibres are explicit.
+\end{proof}
+The source Koide lower boundary exceeds $1/8$, as is already certified by
+$\sqrt3>1.732$, $\sqrt2<1.415$ and $317/2415>1/8$.
+The coarse earlier threshold $b>64B_A^2$ is replaced, when $b\in H$,
+by the factor-sensitive bound $b>8B_Aq_*$.
+
+For $R=19,A=35$, the nine residue costs (residue, cost) are
+\[
+\begin{array}{c|rrrrrrrrr}
+v&1&4&5&6&7&9&11&16&17\\\hline
+c_A(v)&1&5&1/5&35&1/7&5/7&7&1/35&7/5
+\end{array}
+\]
+These values follow by listing the nine coprime pairs $nd\mid35$.
+At the prime $p=558721$, $a=139685=35\cdot3991$,
+$b=13\cdot307\in H$, $q_*=13$, and $307>280$ but $3991<78400$.
+The minimizing pair $(n,d)=(1,35)$ yields
+\[
+ (R,u,h,r,s,\lambda)=(19,15925,13,35,307,18),
+\]
+with denominators $(139685,40137399198,4575924990)$.
+No claim is made that the resulting prime family was previously uncovered.
+
+\paragraph{Scope.}
+Both theorems construct actual witnesses when their proved inequalities hold.
+A counterexample to ES would have to violate every sufficient test in every
+full shell. No theorem that one of these tests always succeeds is assumed.
+The standard-library verifier recalculates the energies, their full fibres,
+the symmetric minima, all anchor pairs, and the explicit witness returns.
+
+\begin{thebibliography}{9}
+\bibitem{y} Yamamoto, K. (1965). On the Diophantine equation
+$4/n=1/x+1/y+1/z$. \emph{Mem. Fac. Sci. Kyushu Univ. A, 19}(1), 37--47.
+Lemma 2, equation (4), p.~38.
+\bibitem{et} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math.
+Soc., 94}(1), 50--105. \S2.
+\bibitem{anchor} The Clankers research workbench (2026).
+\emph{Pointwise selector continuation}, section ``Weighted angular forcing''.
+The supplied predecessor \texttt{es\_pointwise\_continuation\_bundle.zip}
+retains the original finite anchor and its complete middle-state inverse.
+The largest-cofactor step and integer collision refinement are the
+present continuation. No historical-priority claim is made.
+\end{thebibliography}
+\end{document}

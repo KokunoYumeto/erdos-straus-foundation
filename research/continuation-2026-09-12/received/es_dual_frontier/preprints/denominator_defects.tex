@@ -1,0 +1,188 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,mathrsfs}
+\usepackage[hidelinks]{hyperref}\usepackage{xurl}
+\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}
+\title{Exact denominator defects and finite inverse certificates\\for Erd\H{o}s--Straus shells}
+\author{The Clankers research workbench}
+\date{12 September 2026}
+\begin{document}
+\begin{abstract}
+Every full-shell divisor candidate yields a positive rational Erd\H{o}s--Straus
+solution, including candidates failing the integral gates. We compute the common
+reduced denominator of its last two entries. Failure at a prime is equivalent
+to invertibility of a finite, explicitly labelled diagonal operator. The same
+denominator controls scaling to an integral solution at a multiple of the prime
+and is invariant under a natural same-shell channel correspondence. The
+parametrizations and full-shell criterion are inherited; this note records the
+complete denominator-sensitive extension. It proves neither a counterexample
+nor universal positivity, and makes no historical-priority assertion.
+\end{abstract}
+\maketitle
+
+Fix a prime $p=4m+1$, $m\ge1$. Let
+\[
+ m+1\le a\le3m,\qquad R=4a-p,\qquad u\mid a^2,
+\]
+where divisors are positive. Then $R\equiv3\pmod4$,
+$3\le R\le2p-3$ and $\gcd(a,R)=\gcd(p,R)=1$.
+Retain a channel $c\in\{E,M\}$ and the ordered triples
+\begin{align}
+ q_E&=\left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\label{eq:e}\\
+ q_M&=\left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).\label{eq:m}
+\end{align}
+These are the exterior/middle divisor channels underlying the classical
+parametrizations \cite{y,et}; the full finite gate criterion is already
+recorded in the pinned workbench \cite{f}.
+
+\begin{theorem}
+Every triple \eqref{eq:e}--\eqref{eq:m} is positive rational and has reciprocal
+sum $4/p$. Its second and third entries have the same reduced denominator
+\[
+ \boxed{D_E=R/\gcd(R,4u+1),\qquad D_M=R/\gcd(R,u+a).}
+\]
+This is the least integer clearing all three entries. It is odd, prime to $p$,
+and divides $R$. For $X=Dq_c$ and $S(X)=X_0X_1+X_0X_2+X_1X_2$,
+\[
+ \sum_i1/X_i=\frac4{pD},\qquad
+ 4X_0X_1X_2-pS(X)=p(D-1)S(X).
+\]
+\end{theorem}
+\begin{proof}
+In $E$ the residuals $RY-pa,RZ-pa$ are $a^2/u,p^2u$; in $M$ they are
+$pa^2/u,pu$. Both products are $p^2a^2$. Expanding and dividing by $R$
+gives $RYZ=pa(Y+Z)$, the reciprocal identity. Positivity is explicit.
+Modulo $R$ the two exterior numerators satisfy
+\[
+ u(pa+a^2/u)\equiv a^2(4u+1),\quad
+ pa+p^2u\equiv4a^2(4u+1).
+\]
+Every multiplier is a unit, so the gcd of either numerator with $R$ is
+$\gcd(R,4u+1)$. For $M$, multiplication of the first numerator by $u$
+gives $pa(u+a)$ and the other numerator is $p(u+a)$. The same reasoning
+proves its formula. Since $a$ is integral these are the least simultaneous
+clearing factors. Scaling the reciprocal identity and subtracting the two
+cubic equations gives the final equality.
+\end{proof}
+
+The full marking is recovered from $g=\gcd(a,u)$ by
+\[
+ h=g^2/u,\quad r=u/g,\quad s=a/g,
+ \qquad \kappa=(pr+s)/R\ (E),\quad\lambda=(r+s)/R\ (M).
+\]
+Equivalently $a=hrs$, $u=hr^2$ and $\gcd(r,s)=1$.
+The inverse in the canonical order is
+\[
+ u=a^2/(RY-pa)\ (E),\qquad u=pa^2/(RY-pa)\ (M).
+\]
+The scale is recoverable from the integer triple and the original prime:
+\[
+ \boxed{D=4X_0X_1X_2/(pS(X)),\qquad q_c=X/D.}
+\]
+Thus clearing and retaining $p$ loses no candidate information. A channel
+can also be recovered from $v_p(Y)=0$ in $E$ and $v_p(Y)>0$ in $M$.
+The powers of $p$ in these statements are valuations of rational numbers;
+all original shell denominators are prime to $p$.
+
+\begin{theorem}
+Let $\mathscr A_p$ be the set of the above canonical candidates. Then
+$|\mathscr A_p|\le(p-1)^2$. On $\Q^{\mathscr A_p}$ define
+\[
+ H_p=\operatorname{diag}_{\alpha\in\mathscr A_p}
+ \delta_\alpha,\qquad \delta_\alpha=(D_\alpha-1)/2.
+\]
+The following are equivalent: ES is false at $p$; all $D_\alpha\ge3$;
+$H_p$ is invertible; there is a unique function $b$ with
+$\delta b=1$, given by $b_\alpha=2/(D_\alpha-1)$.
+Otherwise a zero coordinate reconstructs an actual positive integer witness.
+\end{theorem}
+\begin{proof}
+A smallest denominator in any positive integral solution obeys
+$p/4<a\le3p/4$. Put $d_Y=RY-pa$ and $d_Z=RZ-pa$. These are positive
+integers with product $p^2a^2$. Since $p\nmid a$, $v_p(d_Y)$ is $0,1,$
+or $2$. The three inverse branches are respectively
+\[
+ (E,a^2/d_Y,\text{no swap}),\quad
+ (M,pa^2/d_Y),\quad
+ (E,d_Y/p^2,\text{swap last two}).
+\]
+The congruence $d_Y\equiv-pa\pmod R$, and its complementary one, give the
+required gates by multiplication by units. Hence an integral solution occurs
+exactly when a canonical candidate has $D=1$. Canonical $M$ already retains
+the companion order via $u\leftrightarrow a^2/u$; only $E$ needs a separate
+swap bit when reproducing every raw order.
+
+Divisors of $a^2$ pair around $a$, so $\tau(a^2)\le2a-1$. Therefore
+\[
+ |\mathscr A_p|=2\sum_{a=m+1}^{3m}\tau(a^2)
+ \le2\sum_{a=m+1}^{3m}(2a-1)=16m^2.
+\]
+Each diagonal entry is in $\{0,\ldots,p-2\}$. A diagonal operator is a
+unit exactly when all its entries are nonzero, with the displayed inverse.
+\end{proof}
+
+A full negative certificate is consequently the complete exponent-box list
+with, for every candidate, a prime $\ell$ satisfying
+\[
+ v_\ell(R)>v_\ell(4u+1)\quad(E),\qquad
+ v_\ell(R)>v_\ell(u+a)\quad(M).
+\]
+Primality, the complete shell range, every exponent cap and both channels
+are verified, rather than assumed. No such full certificate is exhibited.
+The universal polynomials
+\[
+ \Pi_p(z)=\prod_{j=1}^{p-2}(1-z/j),\qquad
+ Q_p(z)=(1-\Pi_p(z))/z
+\]
+give $H_pQ_p(H_p)=I-\Pi_p(H_p)$, where $\Pi_p(H_p)$ projects exactly
+onto passing candidates. This uses elementary finite interpolation, not a
+spectral assumption about a differential operator.
+
+\begin{proposition}
+If $u,u'\mid a^2$ and $u'\equiv pu\pmod R$, then $D_E(u)=D_M(u')$.
+The cleared and uncleared Cayley vectors are projectively identical.
+\end{proposition}
+\begin{proof}
+$u'+a\equiv a(4u+1)\pmod R$ and $a$ is a unit, proving the first claim.
+The two Cayley vectors are
+$(-p,4a,4Y,4Z)$ and $(-pD,4Da,4DY,4DZ)$, related by the common scale $D$.
+Their face roots $-4A_i/A_j$ and all their branch labels therefore agree.
+The retained affine parameter is what distinguishes the original prime
+from its proper multiple.
+\end{proof}
+
+For example $p=241,a=64,u=1,E$ gives
+\[
+ D=3,\quad q=(64,3904/3,14701/3),\quad X=(192,3904,14701).
+\]
+The cleared triple solves ES at $723$, not $241$. The entire shell $a=64$
+has no hits, with $D=3,5,15$ occurring $4,6,3$ times respectively in each
+channel. Its restricted inverse certificate is not a global counterexample.
+
+\paragraph{Reproduction and scope.}
+The companion standard-library verifier checks the full atlases at
+$p=5,13,37,97,241,1201,2521$, the singleton inverses, repeated-root boundary,
+local deficits and all 24 labelled factor routes for selected successful and
+unsuccessful states. A proposed negative certificate missing even one shell
+or divisor entry is rejected. Finite execution is not a universal proof or
+an independent review. A separate workbench tranche develops constructive
+collision-energy and angular criteria for making a diagonal entry vanish.
+
+\begin{thebibliography}{9}
+\bibitem{y} Yamamoto, K. (1965). On the Diophantine equation
+$4/n=1/x+1/y+1/z$. \emph{Mem. Fac. Sci. Kyushu Univ. A, 19}(1), 37--47.
+Lemma 2, equation (4), p.~38.
+\bibitem{et} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math.
+Soc., 94}(1), 50--105. \S2, Propositions 2.2 and 2.6.
+\bibitem{f} The Clankers (2026). \emph{Exact bounded congruence transport}.
+Erd\H{o}s--Straus Foundation, commit
+\texttt{9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f},
+\texttt{counterexample\_sieve/all\_shell\_no\_hit.tex},
+Theorem \texttt{thm:shellwise-no-hit}, equations (1)--(10d).
+\end{thebibliography}
+\end{document}

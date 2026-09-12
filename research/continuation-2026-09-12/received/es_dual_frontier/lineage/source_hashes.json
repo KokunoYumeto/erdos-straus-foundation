@@ -1,0 +1,22 @@
+[
+  {
+    "name": "verify_giuga_blind_plane_cd.py",
+    "bytes": 13039,
+    "sha256": "96320eb43437e5a5e658a84a1603155c6b53951c34191f7cbd3f853f254a2d98"
+  },
+  {
+    "name": "note.tex",
+    "bytes": 20124,
+    "sha256": "3041773834b4bb9afaee0f55e779e9ce5315cc55ed43592ba7539df05850fedd"
+  },
+  {
+    "name": "branch_verify.py",
+    "bytes": 23202,
+    "sha256": "bcb57400216a0484ca6f64f25005789deb78e84d1d5b56ffb1ae842192be0f1d"
+  },
+  {
+    "name": "aligned_isometry.json",
+    "bytes": 34218,
+    "sha256": "cb454d2a94f1b57cdd4fa15774c58f2c92f0db62004873eadeb61aa3b4cd1d14"
+  }
+]

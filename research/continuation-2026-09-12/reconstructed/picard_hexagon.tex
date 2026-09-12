@@ -1,0 +1,349 @@
+\section{The marked cubic-surface contraction and the toric hexagon}
+\label{sec:picard-hexagon}
+This section reconstructs the explicit geometric comparison in the supplied
+discussion, lines 2017--2055. All point labels and directions below are part
+of the objects. The split degree-six model and its six boundary curves occur
+in \href{https://www.math.uni-bielefeld.de/lag/man/290.pdf}{Mark Blunk,
+\emph{Del Pezzo surfaces of degree 6 over an arbitrary field}, \S2,
+Proposition 2.1, printed p.~3}; the Picard maps, signs and torus coordinates
+needed for the present comparison are proved here.
+
+\subsection{The marked surfaces, contraction and complete inverse fibres}
+Work over $\mathbb C$. Let $p_1,\ldots,p_6$ be six distinct marked points
+of $\mathbb P^2$, no three collinear and not all six on a conic. Choose
+coordinates with
+\[
+ p_1=[1:0:0],\quad p_2=[0:1:0],\quad p_3=[0:0:1].
+\]
+This is a nonempty explicitly realized domain: one choice is
+\[
+ p_4=[1:1:1],\qquad p_5=[1:2:3],\qquad p_6=[1:3:2].             \tag{PH1}
+\]
+For this choice the determinants of the twenty point triples, in
+lexicographic index order, are
+\[
+1,1,3,2,-1,-2,-3,1,-1,-5,1,1,1,-2,-1,1,1,2,1,-3,
+\]
+with the points as rows in increasing label order; in particular they are all
+nonzero. A conic through the first three points has the form
+$A x_0x_1+B x_0x_2+C x_1x_2=0$. Its values at the last three have coefficient
+matrix
+\[
+\begin{pmatrix}1&1&1\\2&3&6\\3&2&6\end{pmatrix},\qquad\det=7,
+\]
+so no conic passes through all six.
+
+Put
+\[
+Y=\operatorname{Bl}_{p_1,p_2,p_3}\mathbb P^2,
+\qquad S=\operatorname{Bl}_{p_1,\ldots,p_6}\mathbb P^2.
+\]
+Let $q_a\in Y$ be the unchanged point above $p_a$, for $a=4,5,6$.
+All three lie in the complement of the coordinate triangle and its
+exceptional divisors. The morphism
+\[
+ f:S=\operatorname{Bl}_{q_4,q_5,q_6}Y\longrightarrow Y             \tag{PH2}
+\]
+contracts exactly the three exceptional curves $E_4,E_5,E_6$.
+Denote the line pullback and exceptional classes on $S$ by $H,E_1,\ldots,E_6$,
+and those on $Y$ by $h,e_1,e_2,e_3$.
+
+Here are the fibres and their inverse data explicitly. Near a centre $q_a$
+take regular local coordinates $(\xi,\eta)$ vanishing there. The blowup is
+\[
+ \{(\xi,\eta,[s:t]):\xi t=\eta s\}.
+\]
+Its two charts are $(\xi,t)$ with $\eta=\xi t$, and $(s,\eta)$ with
+$\xi=s\eta$. Over the centre the fibre is the whole $\mathbb P^1$ of
+directions $[s:t]$; elsewhere the unique direction is $[\xi:\eta]$.
+Thus $f$ is an isomorphism away from the three specified fibres, and
+retaining the centres and these exceptional directions gives the full
+blowup return. No inverse at a contracted point discards its direction.
+
+The Picard groups and intersection forms are
+\[
+\operatorname{Pic}(S)=\mathbb ZH\oplus\bigoplus_{i=1}^6\mathbb ZE_i,
+\quad H^2=1,\quad H E_i=0,\quad E_iE_j=-\delta_{ij},
+\]
+and the analogous basis $(h,e_1,e_2,e_3)$ on $Y$. To see the additional
+summand at a blowup, push a divisor to the smooth base and subtract its
+total transform; the difference is supported on the exceptional curve.
+Its coefficient is unique since that curve has self-intersection $-1$,
+as follows from the transition of its normal coordinate between the two
+charts above. Applying this argument successively gives the displayed bases.
+The maps are exactly
+\[
+ f^*h=H,\quad f^*e_i=E_i\ (1\le i\le3),\qquad
+ f_*H=h,\quad f_*E_i=e_i\ (i\le3),\quad f_*E_a=0\ (a\ge4).
+                                                               \tag{PH3}
+\]
+Hence $f_*f^*=1$, the kernel of $f_*$ is
+$\mathbb ZE_4\oplus\mathbb ZE_5\oplus\mathbb ZE_6$, and it is orthogonal
+to $f^*\operatorname{Pic}(Y)$. For
+$D=dH-\sum m_iE_i$, $D'=d'H-\sum m'_iE_i$, one has
+\[
+ f^*f_*D=D+\sum_{a=4}^6m_aE_a,\qquad
+ (f_*D)(f_*D')=DD'+\sum_{a=4}^6m_am'_a.                         \tag{PH4}
+\]
+These identities prove both the precise lost sublattice and the correction
+to intersection numbers. The canonical classes obey
+\[
+ -K_S=3H-\sum_{i=1}^6E_i=f^*(-K_Y)-E_4-E_5-E_6,
+ \quad -K_Y=3h-e_1-e_2-e_3,
+ \quad K_S^2=3,\quad K_Y^2=6.                                  \tag{PH5}
+\]
+The canonical-class formula follows in a blowup chart from
+$d\xi\wedge d\eta=\xi\,d\xi\wedge dt$ and then from the canonical
+class $-3h$ of the plane.
+
+For completeness, these marked blowups give the stated cubic model.
+The cubic forms through the six points have dimension four: their six
+evaluation conditions are independent, since a conic through any five
+points, multiplied by a line avoiding the sixth, separates that sixth
+evaluation. Such a conic exists, is unique by Bezout, and is irreducible
+because a pair of lines contains at most four of the points. The cubics
+have no further base point: for a point outside the six, the pairs whose
+joining line contains it form a matching of at most three edges. There are
+fifteen perfect matchings of six labels, and each forbidden edge belongs
+to three; hence at least six perfect matchings avoid all forbidden edges.
+Such a matching supplies a product of three joining lines
+nonzero there. At each marked point, matchings with two different partners
+give independent first-order directions. Thus the induced anticanonical
+system is base-point free on $S$.
+It is ample as well. For a nonexceptional irreducible curve of degree $d$
+and multiplicities $m_i$, distinct from the six conics above, Bezout with
+each such conic gives $2d\ge\sum_{j\ne i}m_j$. Summing gives
+$\sum m_i\le12d/5<3d$, so $(-K_S)C>0$. Each of the six conics and every
+$E_i$ has anticanonical degree one. Together with $K_S^2=3$, the
+Nakai--Moishezon criterion proves ampleness.
+The resulting morphism to $\mathbb P^3$ is finite, and its nondegenerate
+surface image has degree at least two. The equality
+$3=\deg(\text{morphism})\deg(\text{image})$ makes it birational onto a
+cubic surface. A general hyperplane pullback is a smooth curve of genus
+one by Bertini and adjunction. Its plane cubic image has arithmetic genus
+one, so it is smooth; hence the cubic surface has no singular curve.
+A hypersurface with no codimension-one singularity is normal. The finite
+birational morphism to this normal surface is an isomorphism. In particular
+the anticanonical model is a smooth cubic surface.
+
+\subsection{All twenty-seven line classes and their contracted images}
+The complete list on $S$ is
+\[
+ E_i\ (1\le i\le6),\qquad L_{ij}=H-E_i-E_j\ (i<j),\qquad
+ Q_i=2H-\sum_{j\ne i}E_j\ (1\le i\le6).                        \tag{PH6}
+\]
+The last two classes are the strict transforms of the actual joining lines
+and the unique conics through the indicated five points. Their curves are
+smooth rational, have square $-1$, and anticanonical degree one, so their
+images in the cubic model are lines. Conversely a line is a smooth rational
+curve with square $-1$ by adjunction. Unless exceptional, it has degree
+$d\ge1$ and nonnegative multiplicities satisfying
+\[
+ \sum m_i=3d-1,\qquad \sum m_i^2=d^2+1.
+\]
+Cauchy gives $(3d-1)^2\le6(d^2+1)$, hence $d\le2$. At $d=1$ exactly two
+multiplicities are one; at $d=2$ exactly five are one. This proves (PH6)
+is exhaustive without omitting a line class.
+
+Let $J=\{1,2,3\}$ and $K=\{4,5,6\}$. The entire contraction correspondence
+is the following table. A zero divisor class in its second row records a
+contracted curve, not an inverse point of a divisor map.
+\[
+\begin{array}{c|c|c}
+\text{curve on }S&\text{image class on }Y&\text{image curve square}\\\hline
+E_i\ (i\in J)&e_i&-1\\
+E_a\ (a\in K)&0\quad(\text{point }q_a)&\text{not a curve}\\
+L_{ij}\ (i,j\in J)&h-e_i-e_j&-1\\
+L_{ia}\ (i\in J,a\in K)&h-e_i&0\\
+L_{ab}\ (a,b\in K)&h&1\\
+Q_i\ (i\in J)&2h-\sum_{j\in J\setminus\{i\}}e_j&2\\
+Q_a\ (a\in K)&2h-e_1-e_2-e_3&1
+\end{array}                                                     \tag{PH7}
+\]
+Each noncontracted entry is the actual line or conic with its remaining
+marked incidence conditions; coincident divisor classes do not identify
+distinct image curves. The total-transform inverse is
+\[
+ f^*f_*L_{ij}=L_{ij}+\sum_{a\in K\cap\{i,j\}}E_a,
+ \qquad f^*f_*Q_i=Q_i+\sum_{a\in K\setminus\{i\}}E_a,           \tag{PH8}
+\]
+because the original plane curves pass simply through exactly those centres.
+Equations (PH3)--(PH4) prove the table and every square in it.
+
+The six curves
+\[
+ E_1,L_{12},E_2,L_{23},E_3,L_{13}                                \tag{PH9}
+\]
+avoid the three contraction centres and return isomorphically to their six
+namesakes on $Y$. Each has square $-1$. The intersection rules give
+$E_iL_{jk}=1$ exactly when $i\in\{j,k\}$; different $E_i$ are disjoint,
+and the three displayed $L_{ij}$ are pairwise disjoint. Thus (PH9) is
+exactly the cycle with neighbouring intersection one and every other
+intersection zero. Its sum is $-K_Y$.
+
+\subsection{A six-cycle realized by Cremona and a marked configuration map}
+Put $\alpha=H-E_1-E_2-E_3$, so $\alpha^2=-2$ and $K_S\alpha=0$.
+Define the reflection and permutation
+\[
+ C(D)=D+(D\alpha)\alpha,
+ \qquad \sigma=(1\ 3\ 2),\quad
+ \sigma(H)=H,\quad\sigma(E_i)=E_{\sigma(i)},
+\]
+where $\sigma$ fixes the labels in $K$. Their composite is $T=\sigma C$.
+The two operations commute, $C^2=1$, and $\sigma^3=1$. Expansion using
+$\alpha^2=-2$ proves $C(D)C(D')=DD'$, and both operations fix $K_S$.
+Consequently $T$ is an integral intersection isometry, fixes the canonical
+class, and $T^3=C$, $T^6=1$. Its exact basis action is
+\[
+\begin{split}
+T(H)&=2H-E_1-E_2-E_3,\\
+T(E_1)&=L_{12},\quad T(E_2)=L_{23},\quad T(E_3)=L_{13},\qquad
+T(E_a)=E_a\ (a\in K).
+\end{split}                                                     \tag{PH10}
+\]
+In particular it sends the six entries of (PH9) successively to the next,
+including $L_{13}\mapsto E_1$, and its order is exactly six.
+Its full permutation of all twenty-seven classes is
+\[
+\begin{gathered}
+(E_1\ L_{12}\ E_2\ L_{23}\ E_3\ L_{13}),\qquad
+(E_4)(E_5)(E_6),\\
+(L_{14}\ L_{34}\ L_{24})\ (L_{15}\ L_{35}\ L_{25})\
+(L_{16}\ L_{36}\ L_{26}),\qquad (Q_1\ Q_3\ Q_2),\\
+(L_{45}\ Q_6)\ (L_{46}\ Q_5)\ (L_{56}\ Q_4).
+\end{gathered}                                                   \tag{PH11}
+\]
+To verify completeness directly, a mixed class $L_{ia}$ has $L_{ia}\alpha=0$,
+so maps to $L_{\sigma(i),a}$; a class $L_{ab}$ in $K$ has product one with
+$\alpha$, so maps to $Q_c$ for $K\setminus\{a,b\}=\{c\}$; the latter
+has product $-1$ and maps back. A $Q_i$ with $i\in J$ has product zero
+and maps to $Q_{\sigma(i)}$. Together with (PH10), these calculations prove
+every entry of (PH11); intersection preservation holds for every pair,
+not only for neighbouring sides of the hexagon.
+
+This is realized geometrically on the degree-six surface. The quadratic
+plane Cremona map and the coordinate permutation are
+\[
+ \kappa[x_0:x_1:x_2]=[x_1x_2:x_0x_2:x_0x_1],\qquad
+ \rho[x_0:x_1:x_2]=[x_1:x_2:x_0].
+\]
+Their composite is
+\[
+ F=\rho\kappa:[x_0:x_1:x_2]\dashrightarrow
+ [x_0x_2:x_0x_1:x_1x_2].                                       \tag{PH12}
+\]
+The blowup $Y$ is also the graph closure
+\[
+ \{([x],[y])\in\mathbb P^2\times\mathbb P^2:
+                 x_0y_0=x_1y_1=x_2y_2\}.
+\]
+Away from the three coordinate points the second coordinate is the
+displayed Cremona value; at each point the two blowup charts give its
+exceptional direction. Thus switching the two projective factors extends
+$\kappa$ to an automorphism of $Y$, and simultaneous permutation of the
+coordinates extends $\rho$. Their action on curve classes is the
+\emph{pushforward} $T=\sigma C$; the pullback is $T^{-1}=C\sigma^{-1}$.
+For instance a general line has Cremona transform a conic through the three
+centres, and $E_i$ maps to the opposite joining line, proving (PH10) directly.
+
+On a six-point blowup the exact geometric statement retains the changed
+centres. Set $q'_a=F(q_a)$ and
+$S'=\operatorname{Bl}_{q'_4,q'_5,q'_6}Y$. Then $F$ lifts to an isomorphism
+$\widetilde F:S\to S'$ making $f'\widetilde F=Ff$, with the exceptional
+label $a$ sent to the exceptional label $a$ at $q'_a$. Its inverse is the
+lift of $F^{-1}$. On exceptional directions its map is the projectivized
+invertible derivative $\mathbb P(dF_{q_a})$, obtained by substituting the
+two local blowup charts. For (PH1), the new plane centres are exactly
+\[
+ p'_4=[1:1:1],\qquad p'_5=[3:2:6],\qquad p'_6=[2:3:6].
+\]
+Thus (PH10)--(PH11) are the complete marked pushforward between these
+configurations; they do not assert an automorphism of the fixed generic
+six-point configuration. The contraction maps commute with $T$ on their
+Picard groups because the kernel spanned by $E_4,E_5,E_6$ is fixed.
+
+\subsection{Torus coordinates, the exact fan, and the cusp-side convention}
+Use the following specified coordinates on the dense torus of $Y$:
+\[
+ u=x_2/x_0,\qquad v=x_2/x_1,
+ \qquad [x_0:x_1:x_2]=[v:u:uv].                                \tag{PH13}
+\]
+Substitution in (PH12) gives the genuine torus automorphism
+\[
+ F(u,v)=(u/v,u),\qquad F^{-1}(u,v)=(v,v/u),\qquad
+ F^3(u,v)=(u^{-1},v^{-1}),\quad F^6(u,v)=(u,v).                  \tag{PH14}
+\]
+For example $F^2(u,v)=(v^{-1},u/v)$, proving the third-power formula by
+one more substitution. At a retained centre $(u,v)$ the exceptional
+direction map in (PH2) is completely explicit:
+\[
+dF_{(u,v)}=\begin{pmatrix}1/v&-u/v^2\\1&0\end{pmatrix},\quad
+\det dF=u/v^2,\qquad
+[P:Q]\longmapsto[vP-uQ:v^2P].                                  \tag{PH14a}
+\]
+At the image centre $(U,V)=(u/v,u)$ its inverse sends
+$[P':Q']$ to $[U^2Q':UQ'-VP']$. Substitution gives
+$[u^2P:u^2Q]=[P:Q]$, proving the inverse on the entire exceptional
+$\mathbb P^1$, including vertical and infinite slope directions.
+The valuation vectors
+$(\operatorname{ord}_B u,\operatorname{ord}_B v)$ of the boundary curves
+in the retained order are precisely
+\[
+\begin{array}{c|rrrrrr}
+B&E_1&L_{12}&E_2&L_{23}&E_3&L_{13}\\\hline
+\operatorname{ord}_B u&1&1&0&-1&-1&0\\
+\operatorname{ord}_B v&0&1&1&0&-1&-1
+\end{array}                                                     \tag{PH15}
+\]
+For a joining line these are its zero and pole orders in (PH13). At $E_1$,
+both $x_1$ and $x_2$ vanish to first order while $x_0$ is a unit, giving
+$(1,0)$; the other two exceptional rows follow in the same way from the
+displayed coordinate ratios. Thus the six rays, in the exact curve order,
+are
+\[
+n_1=(1,0),\ n_2=(1,1),\ n_3=(0,1),\ n_4=(-1,0),\
+n_5=(-1,-1),\ n_6=(0,-1).
+\]
+Adjacent pairs have determinant one. The cones between them are the six
+smooth toric charts of the three-point blowup: the original plane fan's
+three cones are each subdivided by the sum of their two generating rays,
+which is the blowup operation in the local charts of (PH2).
+On this cocharacter lattice (PH14) acts by
+\[
+ R_6=\begin{pmatrix}1&-1\\1&0\end{pmatrix},\qquad
+ R_6n_i=n_{i+1},\quad R_6^3=-I,
+\]
+with subscripts modulo six. Its action on characters is the transpose.
+The equality $Q(X-Y,X)=Q(X,Y)$ for $Q=X^2-XY+Y^2$ proves that these are
+the same six norm-one vectors as in the integral hexagonal quotient.
+Because $R_6$ carries every cone to the next cone, its monomial map and
+inverse carry the dual-cone monomial coordinate rings into the corresponding
+chart rings. This proves extension across every boundary chart directly,
+in agreement with the graph model above.
+
+The source cusp marks its rays, in \S9.3 of the
+\href{https://alpo.ge/s6.pdf}{circulated period manuscript}, by
+\[
+(1,0),(1,-1),(0,-1),(-1,0),(-1,1),(0,1).
+\]
+The integral matrix $B=\operatorname{diag}(1,-1)$ sends each $n_i$ to the
+corresponding source ray, preserves opposite pairs, and is its own inverse.
+It induces the exact torus coordinate change $(u,v)\mapsto(u,v^{-1})$.
+In that convention the conjugate rotation is
+$BR_6B=\left(\begin{smallmatrix}1&1\\-1&0\end{smallmatrix}\right)$ and
+the conjugate torus map is $(u,v)\mapsto(uv,u^{-1})$.
+
+This identifies the marked smooth toric normalizations and their six
+curves. The source further supplies a normalization map $\nu:dP_6\to W$
+identifying each side with its opposite. With that source map retained,
+the actual comparison is the composite $S\xrightarrow{f}Y\xrightarrow{B}
+dP_6\xrightarrow{\nu}W$. The first map has exactly the three
+$\mathbb P^1$ fibres proved above. The last has one preimage off the
+boundary, two branches at a general double-curve point, and three at each
+triple point, as its local equations $xy=0$ and $xyz=0$ show. The source
+marks the two triple-point preimages by the alternating vertex sets
+$\{p_{12},p_{34},p_{56}\}$ and $\{p_{23},p_{45},p_{61}\}$.
+All side-identification maps remain attached to $\nu$; the fan map alone
+does not reconstruct their gluing parameters or identify the singular
+quotient with its smooth normalization. No global six-sphere claim is used
+in the Picard, torus or contraction proofs.

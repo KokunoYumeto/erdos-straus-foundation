@@ -1,0 +1,541 @@
+\section{The complete source-addressable arrow register}
+Full file hashes and exact formula strings are in \texttt{morphisms.json}; the prose version is \texttt{MORPHISMS.md}. Each entry states the source, target, domain, map, return, fibre and information boundary.
+\subsection*{M01 -- Divisor to primitive marked ray}
+\noindent\textbf{Source.} a>0,u|a\textasciicircum{}2\par
+\noindent\textbf{Target.} (h,r,s), gcd(r,s)=1\par
+\noindent\textbf{Domain.} positive integers; all available prime exponents 0..2v\_q(a)\par
+\noindent\textbf{Map.} d=gcd(a,u); r=u/d; s=a/d; h=d/r\par
+\noindent\textbf{Return.} a=hrs, u=hr\textasciicircum{}2\par
+\noindent\textbf{Fibre.} singleton\par
+\noindent\textbf{Retained information.} None. Do not replace the exponent box by the subgroup it generates.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/erdos_straus_research/paper.tex}:89, \texttt{prop:divisor}.
+\subsection*{M02 -- Exterior denominator reconstruction}
+\noindent\textbf{Source.} (p,R,u,h,r,s,E,kappa)\par
+\noindent\textbf{Target.} ordered (x,y,z) with retained p,R,E\par
+\noindent\textbf{Domain.} p odd prime; 0<R<p; R|pr+s; p+R=4hrs; kappa=(pr+s)/R\par
+\noindent\textbf{Map.} (hrs,hs*kappa,p*h*r*kappa)\par
+\noindent\textbf{Return.} u=x\textasciicircum{}2/(R*y-p*x), then M01; kappa from p,r,s,R\par
+\noindent\textbf{Fibre.} singleton on the marked image\par
+\noindent\textbf{Retained information.} Sorting/permuting is not part of this arrow.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/erdos_straus_research/paper.tex}:75, \texttt{eq:E}; \path{inputs/erdos_straus_research/paper.tex}:100, \texttt{eq:Ediv}.
+\subsection*{M03 -- Middle denominator reconstruction}
+\noindent\textbf{Source.} (p,R,u,h,r,s,M,lambda)\par
+\noindent\textbf{Target.} ordered (x,y,z) with retained p,R,M\par
+\noindent\textbf{Domain.} p odd prime; 0<R<p; R|r+s; p+R=4hrs; lambda=(r+s)/R\par
+\noindent\textbf{Map.} (hrs,p*h*s*lambda,p*h*r*lambda)\par
+\noindent\textbf{Return.} u=p*x\textasciicircum{}2/(R*y-p*x), then M01\par
+\noindent\textbf{Fibre.} singleton on the marked image\par
+\noindent\textbf{Retained information.} lambda is not exterior kappa.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/erdos_straus_research/paper.tex}:83, \texttt{eq:M}; \path{inputs/erdos_straus_research/paper.tex}:101, \texttt{eq:Mdiv}.
+\subsection*{M04 -- Middle orientation quotient}
+\noindent\textbf{Source.} oriented middle divisor states\par
+\noindent\textbf{Target.} increasing denominator triples\par
+\noindent\textbf{Domain.} same bounded domain as M03; R odd >1\par
+\noindent\textbf{Map.} u -> min-order of the last two denominators\par
+\noindent\textbf{Return.} retain u or an orientation bit to invert\par
+\noindent\textbf{Fibre.} exactly two, u and a\textasciicircum{}2/u\par
+\noindent\textbf{Retained information.} The two marked states must not be counted as two distinct sorted triples.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/erdos_straus_research/paper.tex}:128, \texttt{prop:orientation}; \path{inputs/erdos_straus_research/paper.tex}:133, \texttt{eq:middleinvolution}.
+\subsection*{M05 -- Prime-incidence root blocks}
+\noindent\textbf{Source.} eligible finite auxiliary-prime set and rays\par
+\noindent\textbf{Target.} finite joint incidence law\par
+\noindent\textbf{Domain.} auxiliary q does not divide coefficients; determinant-collision primes retained; all cutoffs fixed for PNT\par
+\noindent\textbf{Map.} ray (r,s) -> -s/r mod q; group equal roots\par
+\noindent\textbf{Return.} Retain ray labels and the entire root block\par
+\noindent\textbf{Fibre.} a block may contain several rays\par
+\noindent\textbf{Retained information.} A density result is not an inverse returning a state at each prime.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/erdos_straus_research/paper.tex}:193, \texttt{thm:pgf}; \path{inputs/erdos_straus_research/paper.tex}:533, \texttt{prop:collisions}.
+\subsection*{M06 -- Composite residual extraction}
+\noindent\textbf{Source.} actual prime-factor occurrences in a residual\par
+\noindent\textbf{Target.} bounded Omega residual\par
+\noindent\textbf{Domain.} original bounded exponent multiset; quotient-group zero-sum bounds 2,3,5\par
+\noindent\textbf{Map.} retain a minimal target-product submultiset\par
+\noindent\textbf{Return.} No unique inverse: record deleted occurrences and the source residual\par
+\noindent\textbf{Fibre.} all extensions by discarded occurrences satisfying the divisor budget\par
+\noindent\textbf{Retained information.} Existence of a residue in generated support is insufficient.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/erdos_straus_research/paper.tex}:259, \texttt{lem:extract}; \path{inputs/erdos_straus_research/paper.tex}:266, \texttt{thm:235}.
+\subsection*{M07 -- Same-shell unimodular companion map}
+\noindent\textbf{Source.} state v=(r,s), companion w=(b,d)\par
+\noindent\textbf{Target.} all same-(p,R) exterior rays\par
+\noindent\textbf{Domain.} rd-sb=epsilon=+-1; A,RB primitive; new coordinates positive; r\_prime*s\_prime|a\par
+\noindent\textbf{Map.} v\_prime=A*v+R*B*w; kappa\_prime=A*kappa+B*(bp+d)\par
+\noindent\textbf{Return.} A=epsilon*(d*r\_prime-b*s\_prime); B=epsilon*(r*s\_prime-s*r\_prime)/R\par
+\noindent\textbf{Fibre.} singleton for chosen basis\par
+\noindent\textbf{Retained information.} Retain p,R,basis and shell divisor test. The ordinary mediant does not preserve R>1.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/erdos_straus_research/paper.tex}:548, \texttt{thm:lattice}; \path{inputs/erdos_straus_research/paper.tex}:555, \texttt{eq:latticemap}.
+\subsection*{M08 -- Exterior-to-middle cubic exchange}
+\noindent\textbf{Source.} exterior marking\par
+\noindent\textbf{Target.} middle marking plus square-divisor index g\par
+\noindent\textbf{Domain.} g=gcd(h,r); necessary and sufficient R|4r\textasciicircum{}3-1\par
+\noindent\textbf{Map.} (H,a1,b1)=(s*g\textasciicircum{}2,r/g,h/g)\par
+\noindent\textbf{Return.} for each g: h=g*b1,r=g*a1,s=H/g\textasciicircum{}2; require g\textasciicircum{}2|H, coprimality, cubic congruence\par
+\noindent\textbf{Fibre.} exact finite g-indexed inverse fibre\par
+\noindent\textbf{Retained information.} Forgetting g can identify two distinct exterior states.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/erdos_straus_research/paper.tex}:581, \texttt{thm:cubic}; \path{inputs/erdos_straus_research/paper.tex}:600, \texttt{eq:cubicfibre}.
+\subsection*{M09 -- Angular anchor packet}
+\noindent\textbf{Source.} (p,R,A;t,n,d) from actual divisor boxes\par
+\noindent\textbf{Target.} positive middle state\par
+\noindent\textbf{Domain.} t|a/A, nd|A, gcd(n,d)=1; tn+d=0 mod R; tn>8d; gcd(a,R)=1\par
+\noindent\textbf{Map.} g=gcd(d,tn); (h,r,s)=(a*g\textasciicircum{}2/(dtn),d/g,tn/g); u=a*d/(tn)\par
+\noindent\textbf{Return.} t=d*s/(n*r), with original anchor pair retained\par
+\noindent\textbf{Fibre.} all anchor pairs giving integral t; collisions t*n*d\_prime=t\_prime*n\_prime*d\par
+\noindent\textbf{Retained information.} No unbounded exponent lift or positivity surrogate.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/es_pointwise_tranche/tranche.tex}:127, \texttt{eq:packetmap}; \path{inputs/es_pointwise_tranche/tranche.tex}:163, \texttt{eq:packetinverse}.
+\subsection*{M10 -- Exterior shell/hyperbola exchange}
+\noindent\textbf{Source.} (p,R,a,u,E)\par
+\noindent\textbf{Target.} (p,k,D,u)\par
+\noindent\textbf{Domain.} k=(4u+1)/R; all entries positive; R<p; u|a\textasciicircum{}2\par
+\noindent\textbf{Map.} k=(4u+1)/R; D=(kp+1)/4=k*a-u\par
+\noindent\textbf{Return.} R=(4u+1)/k; a=(u+D)/k\par
+\noindent\textbf{Fibre.} singleton on the stated congruence/divisor locus\par
+\noindent\textbf{Retained information.} k differs from kappa. Search termination does not imply a nonempty output.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/es_pointwise_tranche/tranche.tex}:464, \texttt{prop:hyperbola}.
+\subsection*{M11 -- Ordered Fourier coordinates}
+\noindent\textbf{Source.} ordered real triple q\par
+\noindent\textbf{Target.} (t,zeta) in R direct-sum C\par
+\noindent\textbf{Domain.} omega=e\textasciicircum{}(2pi i/3); retain complex conjugation and slot order\par
+\noindent\textbf{Map.} t=sum(q)/3; zeta=(q0+omega*q1+omega\textasciicircum{}2*q2)/3\par
+\noindent\textbf{Return.} qj=t+omega\textasciicircum{}(-j)zeta+omega\textasciicircum{}j*conjugate(zeta)\par
+\noindent\textbf{Fibre.} singleton\par
+\noindent\textbf{Retained information.} Do not identify vector-space coordinates with componentwise direct-product multiplication.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/three_coordinate_jordan/note.tex}:30, \texttt{eq:fourier}; \path{inputs/three_coordinate_jordan/note.tex}:35, \texttt{eq:inverse-fourier}.
+\subsection*{M12 -- Transported cubic algebra}
+\noindent\textbf{Source.} ordered componentwise multiplication\par
+\noindent\textbf{Target.} star multiplication in Fourier coordinates\par
+\noindent\textbf{Domain.} same fields and normalization as M11\par
+\noindent\textbf{Map.} (t,z)*(u,w)=(tu+2Re(z*bar(w)),t*w+u*z+bar(z)*bar(w))\par
+\noindent\textbf{Return.} M11 transports multiplication both ways\par
+\noindent\textbf{Fibre.} isomorphism\par
+\noindent\textbf{Retained information.} Norm is cubic product; spin-factor c=0 is a different product.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/three_coordinate_jordan/note.tex}:40, \texttt{prop:product}; \path{inputs/three_coordinate_jordan/note.tex}:84, \texttt{eq:family}.
+\subsection*{M13 -- Rational spin inverse}
+\noindent\textbf{Source.} Q direct-sum Q(omega), spin product\par
+\noindent\textbf{Target.} nonzero elements with Jordan inverse\par
+\noindent\textbf{Domain.} q=t\textasciicircum{}2-2Norm(z) is anisotropic over Q; not over R\par
+\noindent\textbf{Map.} (t,z) -> (t,-z)/q\par
+\noindent\textbf{Return.} involution on Jordan-invertible elements\par
+\noindent\textbf{Fibre.} singleton\par
+\noindent\textbf{Retained information.} Jordan invertibility is not division-algebra cancellation.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/three_coordinate_jordan/note.tex}:127, \texttt{thm:rational}.
+\subsection*{M14 -- Full three-input associator}
+\noindent\textbf{Source.} source algebra (a,u)(b,v)=(ab+B(u,v),av+bu)\par
+\noindent\textbf{Target.} vector-valued trilinear tensor\par
+\noindent\textbf{Domain.} B fixed; output vector space retained\par
+\noindent\textbf{Map.} [a,u;b,v;c,w]=(0,B(u,v)w-B(v,w)u)\par
+\noindent\textbf{Return.} retain every output component, or full family ell composed with associator\par
+\noindent\textbf{Fibre.} scalar contraction alone has a kernel\par
+\noindent\textbf{Retained information.} 27 input cells for a 3D algebra carry 3 output coordinates: 81 scalar coefficients, not one scalar 27-cube.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:81, \texttt{prop:recovery}.
+\subsection*{M15 -- Three marked-face gluing}
+\noindent\textbf{Source.} three bilinear faces with compatible shared edges\par
+\noindent\textbf{Target.} scalar 3x3x3 tensor\par
+\noindent\textbf{Domain.} chosen marks e\_i and splittings; incompatible shared edges have no lift\par
+\noindent\textbf{Map.} inclusion-exclusion lift T0 plus Q0 tensor Q1 tensor Q2\par
+\noindent\textbf{Return.} read faces and subtract T0\par
+\noindent\textbf{Fibre.} affine space of dimension eight\par
+\noindent\textbf{Retained information.} Three marked faces do not determine the full cube.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:173, \texttt{thm:glue}.
+\subsection*{M16 -- Cube kernel-incidence transport}
+\noindent\textbf{Source.} nondegenerate cube plus three typed planes\par
+\noindent\textbf{Target.} three genus-one curves and maps phi\_ij\par
+\noindent\textbf{Domain.} rank exactly two along smooth determinant curves; left/right kernels per slot\par
+\noindent\textbf{Map.} phi\_ij given by tensor(v\_i,v\_j,-)=0\par
+\noindent\textbf{Return.} phi\_ji; retain tensor and all basis changes\par
+\noindent\textbf{Fibre.} forgetting tensor or line bundle is not injective\par
+\noindent\textbf{Retained information.} Identical cubic equations do not identify incidence maps or full-turn translation.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:234, \texttt{lem:kernel}; \path{inputs/cube_unification/note.tex}:271, \texttt{thm:infinite}.
+\subsection*{M17 -- Arithmetic-face attachment to cube}
+\noindent\textbf{Source.} existing ordered ES witness plus Moore cube\par
+\noindent\textbf{Target.} integral cube, three basis changes, clearing scale\par
+\noindent\textbf{Domain.} rank-two arithmetic face; distinct lattice/arithmetic scale conventions\par
+\noindent\textbf{Map.} Gaussian normalize faces; L A R=M; change all tensor slots and clear denominators\par
+\noindent\textbf{Return.} undo each basis change and divide the retained clearing scale\par
+\noindent\textbf{Fibre.} singleton with all marks; many cubes without marks\par
+\noindent\textbf{Retained information.} This attaches a known witness, not produces an unknown one.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:716, \texttt{thm:attachment}.
+\subsection*{M18 -- Tensor to graded Lie operator}
+\noindent\textbf{Source.} T in V0 tensor V1 tensor V2\par
+\noindent\textbf{Target.} linear D\_T on three Hom blocks\par
+\noindent\textbf{Domain.} oriented 3D spaces; first-Tits coefficient field fixed\par
+\noindent\textbf{Map.} for pure a*b*c: D(A,B,C)=(b(a cross Cc)\textasciicircum{}T,c(b cross Aa)\textasciicircum{}T,a(c cross Bb)\textasciicircum{}T)\par
+\noindent\textbf{Return.} read tensor coefficients from operator entries using epsilon\_ijk\par
+\noindent\textbf{Fibre.} injective\par
+\noindent\textbf{Retained information.} D\_u\textasciicircum{}2=0 and I+tD\_u apply to pure u; not arbitrary sums.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:361, \texttt{eq:Du}; \path{inputs/cube_unification/note.tex}:371, \texttt{eq:Dinverse}; \path{inputs/cube_unification/note.tex}:380, \texttt{thm:move}.
+\subsection*{M19 -- First Tits to Zorn-Albert coordinates}
+\noindent\textbf{Source.} (A,B,C) in three typed Hom blocks\par
+\noindent\textbf{Target.} H3(split O)\par
+\noindent\textbf{Domain.} complexification and orientations; fixed multiplication association\par
+\noindent\textbf{Map.} x1=(A23,col1 B,-row1 C,A32), cyclic for x2,x3; xi\_i=Aii\par
+\noindent\textbf{Return.} read all matrix entries back\par
+\noindent\textbf{Fibre.} linear isomorphism of dimension27\par
+\noindent\textbf{Retained information.} Compact real points satisfy A=A*, C=B*. Split transformations need not preserve that real form or the chosen lattice.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} original formal-polynomial replay plus new exact Q(i) determining-grid check\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:495, \texttt{eq:phi}.
+\subsection*{M20 -- Cayley encoding}
+\noindent\textbf{Source.} ordered ES state (p;x,y,z)\par
+\noindent\textbf{Target.} (-p,4x,4y,4z) with affine scale\par
+\noindent\textbf{Domain.} p positive; denominators positive; e3=0 iff ES\par
+\noindent\textbf{Map.} (-p,4x,4y,4z)\par
+\noindent\textbf{Return.} p=-a0, denominators=a\_i/4\par
+\noindent\textbf{Fibre.} singleton in affine marked coordinates\par
+\noindent\textbf{Retained information.} Projectivization forgets a common scale; retain it.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:784, \texttt{eq:cayleyes}.
+\subsection*{M21 -- Reciprocal Cremona map}
+\noindent\textbf{Source.} Cayley coordinate torus e3=0\par
+\noindent\textbf{Target.} projective plane sum ell\_i=0\par
+\noindent\textbf{Domain.} every coordinate nonzero\par
+\noindent\textbf{Map.} ell\_i=product\_\{j!=i\}a\_j, equivalently [1/a\_i]\par
+\noindent\textbf{Return.} same product formula; second application scales by (product a)\textasciicircum{}2\par
+\noindent\textbf{Fibre.} singleton projectively, nontrivial scale affinely\par
+\noindent\textbf{Retained information.} Coordinate hyperplanes are excluded; exceptional divisors not hidden.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cayley_fable_bridge/note.tex}:223, \texttt{eq:cremona}.
+\subsection*{M22 -- Four normalized Cayley charts}
+\noindent\textbf{Source.} marked Cayley a and face i\par
+\noindent\textbf{Target.} three roots t\_ij plus normalization h\_i\par
+\noindent\textbf{Domain.} all a\_i nonzero, pairwise distinct; h\_i=-1/(4a\_i)\par
+\noindent\textbf{Map.} t\_ij=-4a\_i/a\_j; normalized a\_i=-1/4\par
+\noindent\textbf{Return.} a\_i=(-1/4)/h\_i, a\_j=1/(h\_i*t\_ij)\par
+\noindent\textbf{Fibre.} singleton with face, companion order and scale\par
+\noindent\textbf{Retained information.} Changing face can change positivity. Twelve A4 flags, twenty-four S4 flags.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} 72 all-oriented arithmetic flags independently replayed, 432 local factor returns\par
+\noindent\textbf{Locators.} \path{inputs/tetrahedral_markings/note.tex}:193, \texttt{eq:roots}; \path{inputs/tetrahedral_markings/note.tex}:204, \texttt{eq:coeffs}.
+\subsection*{M23 -- Oriented face exchange}
+\noindent\textbf{Source.} oriented roots (r,s,t), sum4\par
+\noindent\textbf{Target.} new oriented roots\par
+\noindent\textbf{Domain.} r*s*t nonzero; none=-4; all distinct inherited from full torus\par
+\noindent\textbf{Map.} J(r,s,t)=(16/r,-4t/r,-4s/r)\par
+\noindent\textbf{Return.} J\textasciicircum{}2=identity\par
+\noindent\textbf{Fibre.} singleton\par
+\noindent\textbf{Retained information.} Companion swap is necessary for preserved tetrahedral orientation.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} general rational identities and all72 arithmetic flags\par
+\noindent\textbf{Locators.} \path{inputs/tetrahedral_markings/note.tex}:225, \texttt{eq:J}; \path{inputs/tetrahedral_markings/note.tex}:231, \texttt{eq:relations}.
+\subsection*{M24 -- Derivative/companion coordinates}
+\noindent\textbf{Source.} ordered r,s,t\par
+\noindent\textbf{Target.} (r,d,eta), d=f\_prime(r), eta=s-t\par
+\noindent\textbf{Domain.} simple root d!=0; eta\textasciicircum{}2=(3r-4)\textasciicircum{}2+16d\par
+\noindent\textbf{Map.} r fixed; d=-3r\textasciicircum{}2/4+2r+beta/2; eta=s-t\par
+\noindent\textbf{Return.} s=(4-r+eta)/2; t=(4-r-eta)/2\par
+\noindent\textbf{Fibre.} singleton; forgetting eta leaves two companion orders\par
+\noindent\textbf{Retained information.} eta maps to4eta/r under J; its square is insufficient for orientation.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/tetrahedral_markings/note.tex}:254, \texttt{eq:rd}.
+\subsection*{M25 -- Ordered roots to cubic coefficients}
+\noindent\textbf{Source.} ordered triple of distinct roots sum4\par
+\noindent\textbf{Target.} (alpha,beta,gamma)\par
+\noindent\textbf{Domain.} characteristic zero; gamma=-1/2; cubic splits over stated field if rational branches requested\par
+\noindent\textbf{Map.} alpha=product/4, beta=-pair\_sum/2, gamma=-1/2\par
+\noindent\textbf{Return.} recover unordered roots; retain selected factor and companion eta for ordered inverse\par
+\noindent\textbf{Fibre.} 6-to-1 geometrically\par
+\noindent\textbf{Retained information.} Rational coefficients do not imply rational roots.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cayley_fable_bridge/note.tex}:131, \texttt{eq:esbase}.
+\subsection*{M26 -- Fable chart to normalized factor pair}
+\noindent\textbf{Source.} (u,v,w) in affine3\par
+\noindent\textbf{Target.} (L,Q), Res(L,Q)=1 and U2V coefficient1\par
+\noindent\textbf{Domain.} characteristic zero; factor coefficients retained\par
+\noindent\textbf{Map.} L=uU+(1+uv)V; Q as explicit polynomial chart\par
+\noindent\textbf{Return.} u=L\_U; v=2 L\_V Q\_UV-L\_U Q\_VV; w=-4Q\_UV\textasciicircum{}2-2Q\_UU Q\_VV-12L\_V Q\_UV\textasciicircum{}2-6L\_V Q\_UU Q\_VV+9Q\_VV\par
+\noindent\textbf{Fibre.} polynomial isomorphism to normalized factor variety\par
+\noindent\textbf{Retained information.} Fable u is not ES divisor u.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} polynomial source replay plus432 factor-chart inversions\par
+\noindent\textbf{Locators.} \path{inputs/cayley_fable_bridge/note.tex}:50, \texttt{eq:factor}.
+\subsection*{M27 -- Factor multiplication}
+\noindent\textbf{Source.} normalized (L,Q)\par
+\noindent\textbf{Target.} binary cubic coefficients\par
+\noindent\textbf{Domain.} Res(L,Q)=1; generic separable cubic has three simple projective roots\par
+\noindent\textbf{Map.} (L,Q)->LQ\par
+\noindent\textbf{Return.} choose one simple root; finite root r gives u=1/d,v=-r-d,w=5d\textasciicircum{}2+3rd-gamma*d\textasciicircum{}3\par
+\noindent\textbf{Fibre.} 3 geometric points off discriminant, 1 over double+simple, 0 at triple root in this chart\par
+\noindent\textbf{Retained information.} Constant nonzero Jacobian is local: it does not supply a global single-valued inverse.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cayley_fable_bridge/note.tex}:56, \texttt{thm:fibres}; \path{inputs/cayley_fable_bridge/note.tex}:58, \texttt{eq:inverse}.
+\subsection*{M28 -- Quarter cubic to arbitrary ES reciprocal cubic}
+\noindent\textbf{Source.} three base normalized factors plus ordered roots\par
+\noindent\textbf{Target.} three transported normalized factors\par
+\noindent\textbf{Domain.} roots distinct; matrix M determinant D=4(t2-t3)(t1-t2)(t1-t3)!=0\par
+\noindent\textbf{Map.} L=(8/D)L\_star composed adj M; Q=(1/64)Q\_star composed adj M\par
+\noindent\textbf{Return.} undo both scalars and adj M\par
+\noindent\textbf{Fibre.} singleton with M and selected factor\par
+\noindent\textbf{Retained information.} M and two different scale factors must remain; resultant transforms by D\textasciicircum{}2.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cayley_fable_bridge/note.tex}:171, \texttt{thm:mobius}; \path{inputs/cayley_fable_bridge/note.tex}:193, \texttt{eq:transportpair}.
+\subsection*{M29 -- Tetrahedral pencil states}
+\noindent\textbf{Source.} 12 oriented pairs (H,K)\par
+\noindent\textbf{Target.} 3 normalized factors of fixed C\_star\par
+\noindent\textbf{Domain.} H half-sign tetrahedron; simultaneous A4 action on numerator and denominator\par
+\noindent\textbf{Map.} pick component L and complementary Q, then normalize resultant\par
+\noindent\textbf{Return.} retain tetrahedral numerator frame to choose the preimage\par
+\noindent\textbf{Fibre.} 4-to-1; 24 states if orientation reversals included\par
+\noindent\textbf{Retained information.} Four frames above each factor are not four geometric preimages of the cubic.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/tetrahedral_markings/note.tex}:130, \texttt{thm:twelve}.
+\subsection*{M30 -- Rational projective reduction}
+\noindent\textbf{Source.} marked rational projective coordinates\par
+\noindent\textbf{Target.} P1(F23)\par
+\noindent\textbf{Domain.} choose primitive integral pair, not both divisible23; denominators treated projectively\par
+\noindent\textbf{Map.} [a:b]->[a mod23:b mod23]\par
+\noindent\textbf{Return.} no arithmetic inverse unless original rational lift retained\par
+\noindent\textbf{Fibre.} infinite fibres\par
+\noindent\textbf{Retained information.} The three named marks reduce to infinity,12,11. Do not reduce arbitrary complex Mellin values.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/mellin_leech_research/note.tex}:62, \texttt{eq:projective}; \path{inputs/mellin_leech_research/note.tex}:67, \texttt{eq:cycle}.
+\subsection*{M31 -- Abstract flag to projective Leech coordinate}
+\noindent\textbf{Source.} oriented A4 flag plus orbit bit\par
+\noindent\textbf{Target.} 24 named coordinates\par
+\noindent\textbf{Domain.} explicit generator matching C,J and base coordinate; order fixed\par
+\noindent\textbf{Map.} branch\_table(orbit,u,j)\par
+\noindent\textbf{Return.} read table inverse\par
+\noindent\textbf{Fibre.} singleton finite label map\par
+\noindent\textbf{Retained information.} This only transports labels. p, denominators, scales and factors are separate retained fields.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} original fullfinitechecks and newgenerator-equivariancecomputation\par
+\noindent\textbf{Locators.} \path{inputs/mellin_leech_research/note.tex}:119, \texttt{eq:labels}.
+\subsection*{M32 -- Minimal-vector congruence marking}
+\noindent\textbf{Source.} 24 named coordinates\par
+\noindent\textbf{Target.} 24 classes in Lambda/12Lambda\par
+\noindent\textbf{Domain.} v\_i=(ones-4e\_i)/sqrt8; minimum norm4\par
+\noindent\textbf{Map.} i->[v\_i]\par
+\noindent\textbf{Return.} read one of the24 marked classes\par
+\noindent\textbf{Fibre.} singleton on these24 marks only\par
+\noindent\textbf{Retained information.} The full lattice quotient has kernel12Lambda and size12\textasciicircum{}24, not24.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/mellin_leech_research/note.tex}:175, \texttt{thm:mod12}.
+\subsection*{M33 -- Three integral lattice traces}
+\noindent\textbf{Source.} Lambda\_G\par
+\noindent\textbf{Target.} Z3\par
+\noindent\textbf{Domain.} three specified octads; no extra congruence condition\par
+\noindent\textbf{Map.} P\_j(x/sqrt8)=sum\_Bj x\_i/4\par
+\noindent\textbf{Return.} sigma(t)=sum t\_i b\_i plus arbitrary k in K21\par
+\noindent\textbf{Fibre.} affine rank21 lattice, det64\par
+\noindent\textbf{Retained information.} P alone loses the kernel; the full (t,k) representation is bijective.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/leech_trace_inverse/note.tex}:92, \texttt{thm:inverse}.
+\subsection*{M34 -- Shortest integral trace lift}
+\noindent\textbf{Source.} t in Z3\par
+\noindent\textbf{Target.} chosen minimum vector lambda\_star(t)\par
+\noindent\textbf{Domain.} r=t mod4, reduced a\_i in\{-1,0,1,2\};64 classes\par
+\noindent\textbf{Map.} nu\_r+sum((t\_i-a\_i)/4)w\_i\par
+\noindent\textbf{Return.} P(lambda\_star)=t; inverse fibre has all minimizers or fullK21 as selected target dictates\par
+\noindent\textbf{Fibre.} section, not a bijection onto Lambda\par
+\noindent\textbf{Retained information.} Tie-break choice need not be symmetry-equivariant. New8-seedproof replaces fullshell enumeration for attainment.\par
+\noindent\textbf{Status.} retained with shorter standalone proof and strengthened output validation\par
+\noindent\textbf{Evidence.} old full196560 replay; new8-seed/64classproof; mutation tests\par
+\noindent\textbf{Locators.} \path{inputs/leech_trace_inverse/note.tex}:126, \texttt{thm:shortest}.
+\subsection*{M35 -- Tetrahedral kernel cocycle}
+\noindent\textbf{Source.} (t,k) in Z3 direct-sum K21\par
+\noindent\textbf{Target.} same full-coordinate object\par
+\noindent\textbf{Domain.} g in A4, rho\_g its induced phase action\par
+\noindent\textbf{Map.} (rho\_g t, gk+g sigma(t)-sigma(rho\_g t))\par
+\noindent\textbf{Return.} apply g inverse and corresponding cocycle\par
+\noindent\textbf{Fibre.} singleton\par
+\noindent\textbf{Retained information.} No invariant integral section outside4Z3. Dropping the correction changes the action.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/leech_trace_inverse/note.tex}:201, \texttt{eq:cocycle}; \path{inputs/leech_trace_inverse/note.tex}:180, \texttt{thm:invariants}.
+\subsection*{M36 -- Four-view integral inverse}
+\noindent\textbf{Source.} four ordered triples of common sum\par
+\noindent\textbf{Target.} Lambda\_G plus rank15 fibre\par
+\noindent\textbf{Domain.} only common sum constraints; original 9-column section fixed\par
+\noindent\textbf{Map.} a=pack first triple plus first2 of other3; lambda=sigma9(a)+k9\par
+\noindent\textbf{Return.} all four P(T\textasciicircum{}n lambda), residual lambda-sigma9(a)\par
+\noindent\textbf{Fibre.} affine rank15, det5292\par
+\noindent\textbf{Retained information.} All12 T-readings determined; J does NOT descend to this quotient.\par
+\noindent\textbf{Status.} retained; J-composition boundary added\par
+\noindent\textbf{Evidence.} fullreplay andnewexplicitK9/Jcounterexample; repairedCLIchecksallviews\par
+\noindent\textbf{Locators.} \path{inputs/leech_trace_inverse/note.tex}:222, \texttt{thm:nine}; \path{inputs/leech_trace_inverse/note.tex}:217, \texttt{eq:Tphase}.
+\subsection*{M37 -- Golay to Wilson model}
+\noindent\textbf{Source.} Lambda\_G raw24\par
+\noindent\textbf{Target.} Lambda\_W in O3\par
+\noindent\textbf{Domain.} explicit aligned pi,signs; z\_j=half rawblock; Wilson normhalf\par
+\noindent\textbf{Map.} y\_i=epsilon\_i x\_pi(i)\par
+\noindent\textbf{Return.} x\_pi(i)=epsilon\_i y\_i\par
+\noindent\textbf{Fibre.} singleton entirelattice\par
+\noindent\textbf{Retained information.} Previously absent coordinate arrow now supplied. Existing Wilson-MOG isometry is primary antecedent.\par
+\noindent\textbf{Status.} new coordinate completion\par
+\noindent\textbf{Evidence.} 37 generating vectors, signed metric identity, unimodularity; allbasis inverse checks\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:554, \texttt{eq:wilson}; \path{inputs/leech_trace_inverse/note.tex}:36, \texttt{eq:leech}.
+\subsection*{M38 -- Off-diagonal Albert embedding}
+\noindent\textbf{Source.} Wilson Leech O3\par
+\noindent\textbf{Target.} H3(O\_R) with zero diagonal\par
+\noindent\textbf{Domain.} three octonionic entries and conjugates in fixed positions\par
+\noindent\textbf{Map.} iota(z)=[[0,z2,bar z1],[bar z2,0,z0],[z1,bar z0,0]]\par
+\noindent\textbf{Return.} read ordered off-diagonal entries\par
+\noindent\textbf{Fibre.} singleton on image\par
+\noindent\textbf{Retained information.} Preserves quadratic norm with factor4; cubic nu is not trace product.\par
+\noindent\textbf{Status.} retained with concrete Golay source and norm correction\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:569, \texttt{eq:leechinvariants}.
+\subsection*{M39 -- Faithful combined trace-Albert graph}
+\noindent\textbf{Source.} lambda in Lambda\_G\par
+\noindent\textbf{Target.} Xhat=diag(P lambda)+iota(Pi lambda)\par
+\noindent\textbf{Domain.} full graph membership: compact octonions,lattice and3diagonalconstraints\par
+\noindent\textbf{Map.} augment the aligned off-diagonal embedding by its three traces\par
+\noindent\textbf{Return.} read all z, invert signed permutation, recompute traces\par
+\noindent\textbf{Fibre.} singleton\par
+\noindent\textbf{Retained information.} 4N-pS = F\_p(t)+sum(p-4t\_i)N(z\_i)+4nu. Every correction retained.\par
+\noindent\textbf{Status.} new corrected interface\par
+\noindent\textbf{Evidence.} written cubic formulas, exactQ(i) checks, full2600-node determining check\par
+\noindent\textbf{Locators.} \path{inputs/leech_trace_inverse/note.tex}:262, \texttt{eq:defect}; \path{inputs/cube_unification/note.tex}:333, \texttt{eq:titsnorm}.
+\subsection*{M40 -- Albert coordinates to27linevariables}
+\noindent\textbf{Source.} three3x3typedblocks\par
+\noindent\textbf{Target.} 27independent labeled scalar variables\par
+\noindent\textbf{Domain.} specific ordered bijection in source; char0\par
+\noindent\textbf{Map.} dictionary gives45signed normmonomials matching45tritangent triples\par
+\noindent\textbf{Return.} read matrix entries by labels\par
+\noindent\textbf{Fibre.} singleton coordinate map\par
+\noindent\textbf{Retained information.} Not an isomorphism of the cubic surface with27-dimensional affine space. Weyl lifts may retain signs after permutations return.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cayley_fable_bridge/note.tex}:261, \texttt{eq:blocks}; \path{inputs/cayley_fable_bridge/note.tex}:272, \texttt{thm:dictionary}.
+\subsection*{M41 -- Full orbit trace completion}
+\noindent\textbf{Source.} lambda in Lambda\_G\par
+\noindent\textbf{Target.} a\_B for all759octads\par
+\noindent\textbf{Domain.} explicit linear imageequations and exactmod4syndrome\par
+\noindent\textbf{Map.} a\_B=sum\_B x/4\par
+\noindent\textbf{Return.} x\_i=(23 S\_i-7S)/1012; latticeimage iff(11S-23S0)/506=0 mod4\par
+\noindent\textbf{Fibre.} singleton\par
+\noindent\textbf{Retained information.} Smallest real stable span under<J,T> has rank24; no9-dimensional fullgroupquotient.\par
+\noindent\textbf{Status.} new integral reconstruction theorem\par
+\noindent\textbf{Evidence.} 759orbit,Gram576,24minor det2\textasciicircum{}14, allintegerdualquotientproof\par
+\noindent\textbf{Locators.} \path{inputs/leech_trace_inverse/note.tex}:222, \texttt{thm:nine}; \path{inputs/mellin_leech_research/note.tex}:88, \texttt{thm:groups}.
+\subsection*{M42 -- Vector theta Fourier return}
+\noindent\textbf{Source.} Lambda/12Lambda theta packet\par
+\noindent\textbf{Target.} same packet after tau or t inversion\par
+\noindent\textbf{Domain.} fullfinite module size12\textasciicircum{}24, bilinear pairing mod12; preserve Jacobi variable z for classidentification\par
+\noindent\textbf{Map.} F\_ab=12\textasciicircum{}-12 exp(-2pi i(a,b)/12)\par
+\noindent\textbf{Return.} F\textasciicircum{}2 sends a to -a\par
+\noindent\textbf{Fibre.} invertible on fullpacket; selected24marks notclosed\par
+\noindent\textbf{Retained information.} Setting z=0 canidentifyisometriccosets; selecting24classes losesFouriersupport.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/mellin_leech_research/note.tex}:384, \texttt{eq:vectorTheta}.
+\subsection*{M43 -- Mellin transform of literal source kernel}
+\noindent\textbf{Source.} E h with h=(pi²x4-3pi x²/2)e\textasciicircum{}-pi x²\par
+\noindent\textbf{Target.} xi(s+1/2)/4\par
+\noindent\textbf{Domain.} sourceconvention u\textasciicircum{}(s-1); finitekernels and centeredstrip asstated\par
+\noindent\textbf{Map.} M(Eh)=xi/4; normalizedsource is4Eh\par
+\noindent\textbf{Return.} Mellin inversion requires analyticdomain/growthandalltransformdata; no pointwise inverseclaimedhere\par
+\noindent\textbf{Fibre.} not a finiteprojectiverootmap\par
+\noindent\textbf{Retained information.} Completion marks +-1/2 are not xi zeros; infinity is chartmark notintegralsubstitution.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/mellin_leech_research/note.tex}:42, \texttt{prop:normalization}.
+\subsection*{M44 -- Residue-valued arithmetic kernel}
+\noindent\textbf{Source.} all positive integers n and residueoperators\par
+\noindent\textbf{Target.} matrix Mellin Dirichlet packet\par
+\noindent\textbf{Domain.} R\_n=0 for gcd(n,12)>1; actualn retained\par
+\noindent\textbf{Map.} B(u)=4sqrt(u) sum R\_n h(nu)\par
+\noindent\textbf{Return.} retainall4characterprojections andphases; restore2,3 factors byfull2\textasciicircum{}a3\textasciicircum{}b sum\par
+\noindent\textbf{Fibre.} discardingcharacters losescomponents\par
+\noindent\textbf{Retained information.} Finite projective labels are not arithmeticvalues; imprimitivefactors and conductorsretained.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/mellin_leech_research/note.tex}:231, \texttt{thm:dirichlet}; \path{inputs/mellin_leech_research/note.tex}:250, \texttt{eq:restore}.
+\subsection*{M45 -- Leech theta centeredkernel}
+\noindent\textbf{Source.} selfdual positive definite lattice rank2kappa\par
+\noindent\textbf{Target.} entire even Mellin function\par
+\noindent\textbf{Domain.} Psi=u\textasciicircum{}1/2 Theta(u\textasciicircum{}1/kappa); zero-modekilled; Leechkappa12\par
+\noindent\textbf{Map.} K=1/2(D²-1/4)Psi; w=kappa(s+1/2)\par
+\noindent\textbf{Return.} retainfulltheta coefficients/analyticdata, notjustendpointvalues\par
+\noindent\textbf{Fibre.} spectral scalar observations canlose vectorcosetlabels\par
+\noindent\textbf{Retained information.} Leech transform has zeta(w)zeta(w-11)-L(Delta,w), not Riemannxi.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/mellin_leech_research/note.tex}:316, \texttt{thm:theta}; \path{inputs/mellin_leech_research/note.tex}:361, \texttt{eq:LeechM}.
+\subsection*{M46 -- Finitekernel approximation}
+\noindent\textbf{Source.} h\_lambda compact approximation with explicitC\par
+\noindent\textbf{Target.} Mellin B\_lambda converging on closed substrips\par
+\noindent\textbf{Domain.} epsilon>0, stated herror; retaintailandendpointestimates\par
+\noindent\textbf{Map.} sourcefinitekernelconstruction\par
+\noindent\textbf{Return.} no spectral inverse toWeillowesteigenfunctionproved\par
+\noindent\textbf{Fibre.} N/A analyticestimate\par
+\noindent\textbf{Retained information.} Kernelapproximation is not eigenfunctioncomparison or RHproof.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/mellin_leech_research/note.tex}:257, \texttt{thm:error}.
+\subsection*{M47 -- Terzo exponential evaluation}
+\noindent\textbf{Source.} free exponential-ring quotient A\par
+\noindent\textbf{Target.} complexnumbers\par
+\noindent\textbf{Domain.} specified relations; injection requiresSchanuel, notusedunconditionally\par
+\noindent\textbf{Map.} evaluate(X,Y)=(pi,i)\par
+\noindent\textbf{Return.} kernelJ; cube evaluation kernelJ\textasciicircum{}27\par
+\noindent\textbf{Fibre.} unknown unconditionalkernel\par
+\noindent\textbf{Retained information.} Period subgroupZ varpi injects byordinaryevaluation, but fullringfaithfulnessconditional.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/cube_unification/note.tex}:882, \texttt{eq:periodmap}.
+\subsection*{M48 -- Arithmetic cubic selection}
+\noindent\textbf{Source.} complete positiveintegraltracefibres\par
+\noindent\textbf{Target.} ESsolution locus\par
+\noindent\textbf{Domain.} p prescribed prime; Fp=0 actualequation; allmarks inherited\par
+\noindent\textbf{Map.} select t>0 with 4t0t1t2=p pair\_sum\par
+\noindent\textbf{Return.} selector reconstructionwhenboundedmarkexists; no universal producerproved\par
+\noindent\textbf{Fibre.} each t hasfull latticekernel-fibre\par
+\noindent\textbf{Retained information.} Surjectivity ofP doesnotestablish existenceoft withFp=0.\par
+\noindent\textbf{Status.} explicit unresolved existence arrow\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/leech_trace_inverse/note.tex}:262, \texttt{eq:defect}; \path{inputs/cube_unification/note.tex}:804, \texttt{prop:prime-return}.
+\subsection*{M49 -- Fixedmodulus Selberg conclusion}
+\noindent\textbf{Source.} fixedrayfamily andactualprimefactoroccurrences\par
+\noindent\textbf{Target.} explicit exceptional-count theorem\par
+\noindent\textbf{Domain.} allowedprime restriction applies to every prime/divisor sum; square majorant before CRT; fixedfamily constants\par
+\noindent\textbf{Map.} count exceptions to existence of bounded residual\par
+\noindent\textbf{Return.} notapointwise inverse; no movingmodulusPNT silentlyused\par
+\noindent\textbf{Fibre.} N/A countingtheorem\par
+\noindent\textbf{Retained information.} No finitecomputation or densityone leap to universal selector.\par
+\noindent\textbf{Status.} retained\par
+\noindent\textbf{Evidence.} written source and bounded original replay\par
+\noindent\textbf{Locators.} \path{inputs/es_pointwise_tranche/tranche.tex}:556, \texttt{app:sieve}; \path{inputs/erdos_straus_research/paper.tex}:456, \texttt{thm:small}.

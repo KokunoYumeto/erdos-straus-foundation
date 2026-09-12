@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "es:continuation:2026-09-12",
+  "title": "Exact selectors, character energy, and integral return",
+  "date": "2026-09-12",
+  "collective": "The Clankers",
+  "goal": "Resolve ES by structural arithmetic constructions and prove the exact maps linking the divisor, character, cyclotomic and geometric descriptions.",
+  "status": "bounded-continuation-with-proofs-and-exact-checks; universal-ES-unresolved",
+  "overview": "README.md",
+  "reader": "output/pdf/continuation.pdf",
+  "proof_entrypoint": "reconstructed/continuation.tex",
+  "provenance": "PROVENANCE.md",
+  "original_member_hashes": "received/ARTIFACT_PROVENANCE.json",
+  "verification": "VERIFY.md",
+  "corrections": "CORRECTIONS.md",
+  "source_transcripts": [
+    {
+      "id": "es:source:jt-boolean-20260912",
+      "sha256": "19d54ae24d712598c14f222ee81eb19f192c9e944fbbfe5009f91780709792f3",
+      "bytes": 142207,
+      "lf_physical_lines": 8995,
+      "content_read": "complete",
+      "raw_transcript_in_repository": false,
+      "contributor_credit": "JT: Boolean, positivity, cyclotomic, prime-character, generalized-congruence and adversarial research directions; assistant derivations remain identified as such."
+    },
+    {
+      "id": "es:source:joint-discussion-20260912",
+      "sha256": "f64ba17c42b174e9d1f9778b4342b3f6b6a98e5e4ea4d096bdc924e8dcc33042",
+      "bytes": 120381,
+      "content_read": "complete",
+      "raw_transcript_in_repository": false,
+      "contributor_credit": "Maintainer's exact-morphism and geometric programme, joint ES work, and assistant-developed continuations; no invented sentence-level human attribution."
+    }
+  ],
+  "mathematics": [
+    {
+      "id": "es:20260912:first-half",
+      "type": "proved theorem",
+      "statement": "For p prime and p=1 mod4, every positive integral ES triple has p/4 < min(x,y,z) < p/2.",
+      "proof": "reconstructed/boolean_cyclotomic.tex",
+      "locator": "thm:bp-first-half",
+      "source_role": "Complete derivation during integration of the first-half selector; no historical novelty claim."
+    },
+    {
+      "id": "es:20260912:boolean-coordinates",
+      "type": "proved correspondence",
+      "statement": "For p=12h+1, bounded divisor, coprime tuple and first-half integer code give inverse maps; full-range codes map to minimum-first codes with explicitly enumerated permutation fibres. Nonemptiness is exactly ES(p).",
+      "proof": "reconstructed/boolean_cyclotomic.tex",
+      "locator": "thm:bp-code; prop:bp-radix",
+      "depends_on": ["es:20260912:first-half"],
+      "source_locator": "JT export lines 14-387, 5203-5293, 6465-6606; earlier repository radix sources cited in proof"
+    },
+    {
+      "id": "es:20260912:crt",
+      "type": "proved correspondence",
+      "statement": "The middle 12n carrier is soluble exactly under the two displayed gcd divisibilities; its period and inverse bounded-interval test retain one common divisor vector. The mod8 condition at n=2 is necessary.",
+      "proof": "reconstructed/boolean_cyclotomic.tex",
+      "locator": "thm:bp-crt",
+      "source_locator": "JT export lines 4740-5058 and 6104-6158"
+    },
+    {
+      "id": "es:20260912:cyclotomic",
+      "type": "proved theorem and reindexing",
+      "statement": "For m=12n the whole family Phi_m(mr) generates precisely primes 1 modm, includes every such p by r <= (p-1)/2, and reindexes the same Boolean ES assertion. For m=12 a positive primitive short pair has quartic ph with 1 <= h < p; h=1 is retained.",
+      "proof": "reconstructed/boolean_cyclotomic.tex",
+      "locator": "thm:bp-cyclotomic; thm:bp-short",
+      "source_locator": "JT export lines 5438-6411, 6612-6751, 8031-8136"
+    },
+    {
+      "id": "es:20260912:character-necessity",
+      "type": "proved theorem and exact count",
+      "statement": "Every middle primitive witness has a quadratic nonresidue prime factor in AB and every exterior witness one in BC. The prescribed shell's negative Jacobi divisor count is (tau-sigma)/2, which does not itself force a specific target. Fourier and primitive-pair multiplicity maps are exact.",
+      "proof": "reconstructed/boolean_cyclotomic.tex",
+      "locator": "thm:bp-nonresidue; prop:bp-character; BP15-BP16",
+      "source_locator": "JT export lines 6836-7604, 7843-7887"
+    },
+    {
+      "id": "es:20260912:counterexamples",
+      "type": "exact counterexamples to specified strengthenings",
+      "statement": "p=3361 prescribed shell failure; p=37 separately occupied local fibres with empty common divisor fibre; terminal h=1 at 61,73,193; short cofactor 181 is a square at p=2521; degree-eight cofactor bound fails at p=73. Also endpoint universality fails at p=193. None is an ES counterexample.",
+      "proof": "reconstructed/boolean_cyclotomic.tex",
+      "locator": "Five exact regressions and their scopes; endpoint theorem discussion",
+      "source_locator": "JT export lines 5149-5189 and 8330-8786"
+    },
+    {
+      "id": "es:20260912:energy",
+      "type": "proved constructive criterion",
+      "statement": "Exact attained minimum L for target-avoiding distributions with inversion symmetry and identity/involution parity is the sum of least marginal costs. Actual E<L yields a fully reconstructible integral ES witness. Fine quadratic partitions preserve all coarse certificates via the exact minimum convolution identity.",
+      "proof": "reconstructed/character_energy.tex",
+      "locator": "sec:reconstructed-character-energy; exact minimum, forcing and refinement subsections",
+      "source_locator": "Joint discussion final Today 8:19 AM response; newly reconstructed complete proof, original energy.tex absent",
+      "computation": "checks/energy/mathematical_summary.json"
+    },
+    {
+      "id": "es:20260912:energy-1201",
+      "type": "exact calculation",
+      "statement": "p=1201,a=310,R=39: N=27,E=39=L_unpartitioned; negative Jacobi N=18,E=30<L=32 forces the middle witness (310,1489240,9608).",
+      "proof": "reconstructed/character_energy.tex",
+      "locator": "The complete numerical witness at p = 1201",
+      "depends_on": ["es:20260912:energy"],
+      "computation": "checks/energy/examples.json"
+    },
+    {
+      "id": "es:20260912:gate-cocycle",
+      "type": "proved morphism",
+      "statement": "For an odd retained R and gate g, ord(g[b_R])=R/gcd(R,g); multiplication by g embeds the coefficient-one compressed system into the original modulus with exact inverse and image. Minus third cusp evaluation inverts the arithmetic cyclic-subgroup map.",
+      "proof": "reconstructed/common_modulus_hexagon.tex",
+      "locator": "Gate order, compression and the simultaneous local return",
+      "source_locator": "Joint discussion final integration and received S6 integral matrices"
+    },
+    {
+      "id": "es:20260912:hexagon-quartic",
+      "type": "proved morphism and orbit classification",
+      "statement": "The integral affine t coordinates conjugate the three generators exactly. The X,Y,W image is the index-three lattice W=2X-Y mod3. Q(r^2,s^2)=r^4-r^2s^2+s^4 is an iterated field norm; the complete positive-square dihedral returns are characterized by |r^2-s^2| being a square.",
+      "proof": "reconstructed/common_modulus_hexagon.tex",
+      "locator": "Integral cyclic coordinates; hexagonal quotient; positive-square returns",
+      "depends_on": ["es:20260912:cyclotomic"],
+      "nonclaim": "The extended rotation is not asserted to be a word in the monodromy; the second monodromy's nonzero Q correction is explicitly calculated."
+    },
+    {
+      "id": "es:20260912:compactification",
+      "type": "proved correction",
+      "statement": "Local completed-cover degree is e_source/e_target, not always E/D. Compactified CRT gives the explicitly parametrized normalization of the fibre product. Level 15 to 3 at a1 has degree1, at the cusp degree5.",
+      "proof": "reconstructed/compactification_correction.tex",
+      "locator": "prop:crt",
+      "corrects": "received/es_s6_counterfactual/src/core.tex:173 Functorial modulus maps; both received workbench and preprint",
+      "computation": "checks/geometry_independent_receipt.json"
+    }
+  ],
+  "additional_geometric_proof": {
+    "id": "es:20260912:picard-hexagon",
+    "type": "proved marked contraction and coordinate isomorphism",
+    "proof": "reconstructed/picard_hexagon.tex",
+    "locator": "sec:picard-hexagon; PH1-PH15",
+    "source_locator": "Joint discussion lines 2017-2055; Blunk Section2 Proposition2.1; circulated period source Section9.3",
+    "statement": "The cubic-to-degree6 blowdown has the displayed Picard kernel and three projective-line fibres; all27 line-class images and six-cycle actions are exact. The torus and exceptional-direction maps retain the changed centres and give explicit inverses."
+  },
+  "recovery_limits": [
+    "The final 2189-byte downloaded wrapper's six included TeX files were not found; reconstructed modules are not original downloaded bytes.",
+    "The two September9 Boolean-dialogue ZIPs were not found; their historical large computational claims are not counted as replayed.",
+    "The typed-audit ancestry is preserved but not every ancestor theorem was independently re-audited in this intake.",
+    "No new Lean or global S6 certification, no ES resolution, no blanket novelty claim."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-12",
+  "global_nonclaims": [
+    "No assertion that an unlocated source does not exist.",
+    "No new Leech lattice or first octonionic Leech model.",
+    "No theorem count is an independent-review count.",
+    "No ES/RH resolution or formal verification is inferred from literature searches."
+  ],
+  "method": "Content-level primary-source search and comparison with supplied predecessor proofs; not a comprehensive priority adjudication.",
+  "queries_executed": [
+    "Leech lattice octads span index 4 octad lattice Smith normal form 759",
+    "Leech lattice three octads orthogonal complement shortest cosets 10528 5440",
+    "Leech lattice three orthogonal octads projection three coordinates kernel determinant 64",
+    "Leech lattice trio octads cosets rank 21 minimum 15/4",
+    "\"octads\" \"index 4\"",
+    "\"Leech\" \"10528\"",
+    "\"Leech\" \"5440\" \"2688\"",
+    "\"Planes in cubic fourfolds\" \"index 4\""
+  ],
+  "records": [
+    {
+      "candidate_contribution": "Minimal stable completion of this pinned C/J/T trace system; explicit all-octad inverse; explicit cyclic syndrome for its integral image.",
+      "id": "P1",
+      "inherited": "Golay Steiner incidence, dual-lattice methods, and the Leech lattice.",
+      "priority_label": "Potentially original exact formulation; historical priority unestablished. The index-four lattice alone is not advertised as new.",
+      "search_result": "No exact earlier formulation of the combined marked coordinate theorem was established in this search. Related index-four literature was found but not fully retrieved."
+    },
+    {
+      "candidate_contribution": "The displayed projective-octad-aligned signed permutation, exact field-compatible return, and complete trace/cubic correction.",
+      "id": "P2",
+      "inherited": "Wilson already gives a concrete MOG–octonion isometry; first-Tits/Albert formulas are classical.",
+      "priority_label": "New pinned-coordinate completion and explicit comparison in this project, not a priority claim.",
+      "search_result": "Existing model comparisons were positively found. No claim of new existence or first construction is made."
+    },
+    {
+      "candidate_contribution": "Eight-seed standalone proof of the all-integer shortest three-trace formula.",
+      "id": "P3",
+      "inherited": "The formula was already proved in the immediately preceding project package; minimum-four Leech fact and phase/sign symmetries are classical.",
+      "priority_label": "Proof simplification/extraction of a project result; literature novelty unestablished.",
+      "search_result": "No matching external statement of this exact coordinate formula identified in scoped queries. This pass simplifies and publishes the proof rather than recounting it as a second discovery."
+    }
+  ]
+}

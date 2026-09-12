@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=27mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype,booktabs,longtable,array}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\DeclareMathOperator{\ord}{ord}
+\title{Exact selectors, character energy, and integral return\\
+for the Erd\H{o}s--Straus equation}
+\author{The Clankers}
+\date{12 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The bounded divisor formulation of the Erd\H{o}s--Straus equation admits
+exact arithmetic, character-theoretic and geometric descriptions. We prove
+completeness of the first-half denominator selector and give its inverse
+coordinate maps. Inversion parity yields an exact collision-energy minimum
+for a divisor distribution avoiding all solution targets; resolving this
+minimum by quadratic characters strengthens the resulting existence test.
+The original arithmetic gate is also the exact order of a specified affine
+cocycle. An integral three-coordinate change identifies its cyclic action
+with a hexagonal quotient, retaining the third coordinate and index-three
+gluing. The homogeneous cyclotomic quartic is the same quadratic form on
+positive squares, with a complete description of its dihedral square returns.
+Local compactification maps are given using actual branch-cycle lengths.
+These results do not establish universal Erd\H{o}s--Straus existence.
+\end{abstract}
+\tableofcontents
+\clearpage
+\section{Research lineage and conventions}
+The Boolean, positivity, cyclotomic and prime-character directions in the
+joint investigation are credited to JT as identified in the supplied
+dialogue. The maintainer's programme asks for exact maps linking those
+arithmetic conditions to the geometric structures, without discarding
+coordinates or scales. Assistant-derived arguments are recorded as such,
+not retroactively attributed to a human who requested their investigation.
+The source locators and hashes in \texttt{../PROVENANCE.md} distinguish the
+complete dialogue, recovered source packages, and the newly written proofs.
+
+The type-I/type-II arithmetic has its literature antecedent in Elsholtz
+and Tao \cite{et}; the received papers preserve their more detailed
+source-specific references. The integral monodromy used below is taken
+from the displayed matrices of the circulated period manuscript
+\cite{period}, through the received torsion-cover note. Only those explicit
+matrices enter these algebraic proofs. The global sphere claim of that
+manuscript is not a premise. Permutation triples and branched covers have
+the classical context described by Sijsling and Voight \cite{sv}.
+
+Each section declares its own coordinates: in particular a primitive
+tuple's scale $D$ and an affine system's level $D$ are named locally and
+are not silently identified. Ordered denominators, channel marks,
+divisor exponents and branch origins are retained. Finite computations
+are distinguished from the general written proofs.
+
+\input{boolean_cyclotomic.tex}
+\input{character_energy.tex}
+\input{common_modulus_hexagon.tex}
+
+\section{Local maps of the completed affine covers}
+For this section $\mathcal F_D=(\mathbb Z/D\mathbb Z)^3$ with the
+coefficient-one affine action displayed above. The base is the sphere
+with its three marked punctures removed, with their positively oriented
+monodromies $a_1,a_2,a_\infty$. A finite equivariant set defines its
+cover by taking the universal cover times the set and identifying
+$(\gamma z,v)$ with $(z,\gamma^{-1}v)$ under deck transformations.
+The marked cycles at a puncture are filled by discs with base coordinate
+$t=w^e$, one for each cycle of length $e$. This construction specifies
+the objects and local coordinates used in the following proof.
+For the cusp $a_\infty(x,y,z)=(x,y+x,z-1)$, its $k$th iterate is
+$(x,y+kx,z-k)$; its cycle length at every point of level $D$ is exactly
+$D$. At the finite points the lengths divide three and four by the
+displayed generator relations. The original level-modulus quotient
+alone therefore does not specify those finite local degrees.
+\input{compactification_correction.tex}
+\input{picard_hexagon.tex}
+
+\begin{thebibliography}{9}
+\bibitem{blunk} Mark Blunk, \emph{Del Pezzo surfaces of degree 6 over an
+arbitrary field}, arXiv:0805.0119v2, Section 2, Proposition 2.1.
+\url{https://arxiv.org/abs/0805.0119v2}.
+\bibitem{jt} JT and The Clankers, \emph{Boolean product formulation and
+joint ES research discussion}, September 2026. Complete supplied research
+dialogues, exact export identities and statement locators in
+\texttt{../PROVENANCE.md}. These are research provenance, not a substitute
+for the proofs written here.
+\bibitem{et} Christian Elsholtz and Terence Tao, \emph{Counting the number
+of solutions to the Erd\H{o}s--Straus equation on unit fractions},
+J. Aust. Math. Soc. \textbf{94} (2013), 50--105, Section 2.
+\url{https://arxiv.org/abs/1107.1010}.
+\bibitem{period} \emph{The $(3,4,\infty)$ modular family of 2-tori,
+completed at its three special points, is a complex structure on $S^6$},
+108-page circulated manuscript hosted by Levent Alp\"oge,
+\url{https://alpo.ge/s6.pdf}. Citation identifies the source of the period
+matrices, not a certification of the title's conclusion or an inference
+of authorship from hosting. See the received bibliography for the
+accompanying Engel exposition and attribution discussion.
+\bibitem{sv} Jeroen Sijsling and John Voight, \emph{On computing Bely\u\i
+maps}, Publications math\'ematiques de Besan\c con 2014/1, 73--131,
+Section 1. \url{https://arxiv.org/abs/1311.2529}.
+\end{thebibliography}
+\end{document}

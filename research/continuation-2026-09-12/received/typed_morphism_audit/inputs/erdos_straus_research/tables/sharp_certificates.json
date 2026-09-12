@@ -1,0 +1,74 @@
+[
+  {
+    "factorization_L3": {
+      "2": 4,
+      "13": 3,
+      "29": 1,
+      "31": 1
+    },
+    "minimum_residual_Omega": 4,
+    "p": 6320329,
+    "states": [
+      {
+        "R": 151931,
+        "a": 1618065,
+        "channel": "E",
+        "denominators_increasing": [
+          1618065,
+          67311504,
+          709051417941360
+        ],
+        "denominators_raw": [
+          1618065,
+          67311504,
+          709051417941360
+        ],
+        "h": 107871,
+        "kappa": 208,
+        "lambda": null,
+        "p": 6320329,
+        "positive_chamber": true,
+        "r": 5,
+        "s": 3,
+        "u": 2696775
+      }
+    ],
+    "trial_division_bound": 2514
+  },
+  {
+    "factorization_L3": {
+      "2": 6,
+      "17": 3,
+      "31": 1,
+      "37": 2
+    },
+    "minimum_residual_Omega": 5,
+    "p": 2668835929,
+    "states": [
+      {
+        "R": 5635211,
+        "a": 668617785,
+        "channel": "E",
+        "denominators_increasing": [
+          668617785,
+          316657382976,
+          1408511001449102907840
+        ],
+        "denominators_raw": [
+          668617785,
+          316657382976,
+          1408511001449102907840
+        ],
+        "h": 44574519,
+        "kappa": 2368,
+        "lambda": null,
+        "p": 2668835929,
+        "positive_chamber": true,
+        "r": 5,
+        "s": 3,
+        "u": 1114362975
+      }
+    ],
+    "trial_division_bound": 51660
+  }
+]

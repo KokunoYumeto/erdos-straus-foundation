@@ -1,0 +1,257 @@
+[
+  {
+    "R": 23,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 1,
+        "companion_d": 19,
+        "height_barrier_product": 10920,
+        "target_u": 17
+      },
+      {
+        "A": 170,
+        "B": -7,
+        "companion_b": 1,
+        "companion_d": 19,
+        "height_barrier_product": 10920,
+        "target_u": 2754
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [
+      108,
+      867
+    ],
+    "p": 1201,
+    "source_u": 17
+  },
+  {
+    "R": 23,
+    "companion_fibre": [
+      {
+        "A": -143,
+        "B": 7,
+        "companion_b": 8,
+        "companion_d": 1,
+        "height_barrier_product": 4632,
+        "target_u": 17
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 8,
+        "companion_d": 1,
+        "height_barrier_product": 4632,
+        "target_u": 2754
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [
+      108,
+      867
+    ],
+    "p": 1201,
+    "source_u": 2754
+  },
+  {
+    "R": 31,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 3,
+        "companion_d": 1,
+        "height_barrier_product": 3104,
+        "target_u": 1232
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [
+      2,
+      47432
+    ],
+    "p": 1201,
+    "source_u": 1232
+  },
+  {
+    "R": 39,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 4,
+        "companion_d": 1,
+        "height_barrier_product": 6440,
+        "target_u": 1550
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [
+      2,
+      48050
+    ],
+    "p": 1201,
+    "source_u": 1550
+  },
+  {
+    "R": 71,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 1,
+        "companion_d": 7,
+        "height_barrier_product": 36216,
+        "target_u": 53
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [],
+    "p": 1201,
+    "source_u": 53
+  },
+  {
+    "R": 339,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 34,
+        "companion_d": 1,
+        "height_barrier_product": 3930740,
+        "target_u": 13475
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [],
+    "p": 1201,
+    "source_u": 13475
+  },
+  {
+    "R": 1043,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 32,
+        "companion_d": 1,
+        "height_barrier_product": 34878996,
+        "target_u": 18513
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [],
+    "p": 1201,
+    "source_u": 18513
+  },
+  {
+    "R": 23,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 2,
+        "companion_d": 3,
+        "height_barrier_product": 3577,
+        "target_u": 477
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [
+      8,
+      50562
+    ],
+    "p": 2521,
+    "source_u": 477
+  },
+  {
+    "R": 31,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 1,
+        "companion_d": 6,
+        "height_barrier_product": 6501,
+        "target_u": 116
+      }
+    ],
+    "cubic_transfer_exists": true,
+    "middle_translation_targets": [
+      44,
+      9251
+    ],
+    "p": 2521,
+    "source_u": 116
+  },
+  {
+    "R": 87,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 1,
+        "companion_d": 3,
+        "height_barrier_product": 23144,
+        "target_u": 326
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [],
+    "p": 2521,
+    "source_u": 326
+  },
+  {
+    "R": 111,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 3,
+        "companion_d": 1,
+        "height_barrier_product": 38420,
+        "target_u": 2303
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [],
+    "p": 2521,
+    "source_u": 2303
+  },
+  {
+    "R": 471,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 4,
+        "companion_d": 1,
+        "height_barrier_product": 902975,
+        "target_u": 3179
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [],
+    "p": 2521,
+    "source_u": 3179
+  },
+  {
+    "R": 1583,
+    "companion_fibre": [
+      {
+        "A": 1,
+        "B": 0,
+        "companion_b": 13,
+        "companion_d": 1,
+        "height_barrier_product": 32660510,
+        "target_u": 13851
+      }
+    ],
+    "cubic_transfer_exists": false,
+    "middle_translation_targets": [],
+    "p": 2521,
+    "source_u": 13851
+  }
+]

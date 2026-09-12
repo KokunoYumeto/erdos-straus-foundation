@@ -1,0 +1,77 @@
+{
+  "self_test": {
+    "bounded_states_tested": 71,
+    "anchor_packet_tests": 84,
+    "hard_sieves_agree_through": 2000000
+  },
+  "anchors": [
+    {
+      "R": 11,
+      "A": 9,
+      "hard_primes_tested": 152,
+      "with_nonH_prime_factor": 91,
+      "exception_primes": []
+    },
+    {
+      "R": 23,
+      "A": 12,
+      "hard_primes_tested": 37,
+      "with_nonH_prime_factor": 24,
+      "exception_primes": []
+    },
+    {
+      "R": 23,
+      "A": 18,
+      "hard_primes_tested": 143,
+      "with_nonH_prime_factor": 90,
+      "exception_primes": [
+        1201
+      ]
+    },
+    {
+      "R": 19,
+      "A": 35,
+      "hard_primes_tested": 3754,
+      "with_nonH_prime_factor": 2421,
+      "exception_primes": [
+        837601
+      ]
+    },
+    {
+      "R": 39,
+      "A": 40,
+      "hard_primes_tested": 19,
+      "with_nonH_prime_factor": 9,
+      "exception_primes": []
+    },
+    {
+      "R": 39,
+      "A": 50,
+      "hard_primes_tested": 302,
+      "with_nonH_prime_factor": 183,
+      "exception_primes": [
+        3361
+      ]
+    },
+    {
+      "R": 39,
+      "A": 64,
+      "hard_primes_tested": 1061,
+      "with_nonH_prime_factor": 682,
+      "exception_primes": []
+    }
+  ],
+  "cover": {
+    "bound": 10000000000,
+    "hard_prime_count": 14215707,
+    "base_hybrid_misses": [
+      11259889,
+      788653441,
+      1350237001
+    ],
+    "exterior_rules_checked": 78332,
+    "middle_rules_checked": 414902,
+    "uncovered_after_extensions": 0,
+    "seconds": 13.151
+  }
+}

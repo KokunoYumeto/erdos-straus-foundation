@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-11",
+  "local_predecessor": {
+    "path": "/mnt/data/cayley_fable_bridge/note.tex",
+    "sha256": "540c0d2cc531b6293f7eb8cdffeb19f566f6a673e41f9bfc5967af1b9a9e9cb0",
+    "scope": "Fable polynomial/factor chart, reciprocal Cayley encoding and inherited E/M inverse formulas"
+  },
+  "primary_sources": [
+    {
+      "author": "Terence Tao",
+      "date": "2026-07-21",
+      "title": "A digestion of the Jacobian conjecture counterexample",
+      "url": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/",
+      "locators": [
+        "Equations (1), (2), (5), (7), (10)"
+      ],
+      "used_for": "Explicit Fable polynomial, normalized binary multiplication map and three factor markings",
+      "inspection": "Main mathematical construction retrieved; selected formulas independently rederived and verified"
+    },
+    {
+      "author": "D. R. Heath-Brown",
+      "date": "2002",
+      "title": "The density of rational points on Cayley’s cubic surface",
+      "url": "https://arxiv.org/abs/math/0210333",
+      "locators": [
+        "Section 1, p. 1"
+      ],
+      "used_for": "Symmetric Cayley equation and its coordinate-torus reciprocal form",
+      "inspection": "Opening geometry retrieved; no use of asymptotic counting theorem"
+    },
+    {
+      "author": "Andrew V. Sutherland",
+      "date": "2021-09-20",
+      "title": "Étale algebras, norm and trace",
+      "url": "https://math.mit.edu/classes/18.785/2021fa/LectureNotes4.pdf",
+      "locators": [
+        "Section 4.2, Definition 4.29 and Corollary 4.33",
+        "Section 4.3, Definition 4.46"
+      ],
+      "used_for": "Standard finite étale algebra, CRT and trace/norm conventions",
+      "inspection": "Relevant definitions and CRT discussion retrieved; explicit degree-three model proved in the tranche"
+    },
+    {
+      "author": "NIST",
+      "title": "Digital Library of Mathematical Functions",
+      "url": "https://dlmf.nist.gov/25.4",
+      "locators": [
+        "25.4.3",
+        "25.4.4"
+      ],
+      "used_for": "Classical ξ functional equation only; no zero-location assertion",
+      "inspection": "Equation text retrieved"
+    }
+  ],
+  "search_scope": {
+    "queries": [
+      "Cayley reciprocal tetrahedral cubic",
+      "Cayley root 16 involution cubic",
+      "tetrahedral primitive idempotents cubic"
+    ],
+    "result": "No exact statement-level predecessor for the displayed involution was used; searches are non-comprehensive and do not establish novelty"
+  },
+  "new_computations": "All explicit maps and finite objects in verify.py were checked locally; no external verifier or archive code was imported."
+}

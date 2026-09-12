@@ -1,0 +1,12 @@
+{
+  "name": "wilson_leech",
+  "mode": "optimized",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-O",
+    "/mnt/data/typed_morphism_audit/inputs/cube_unification/leech_ternary.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 12.869277066999985,
+  "source_sha256": "7f6a0a4e8d283b3bee643a7b300777c0eeb98be7c9b88515052971f21d15f6c6"
+}

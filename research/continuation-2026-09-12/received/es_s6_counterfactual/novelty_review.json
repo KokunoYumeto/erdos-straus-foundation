@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-12",
+  "priority_claim": false,
+  "queries": [
+    "\"(3,4\" \"torsion\" \"Alpöge\"",
+    "\"s6\" \"affine\" \"genus\" \"Claude\"",
+    "\"5D^3\" monodromy genus",
+    "Riemann existence permutation triple Sijsling Voight",
+    "\"affine special linear group\" \"216\" \"Hessian\""
+  ],
+  "findings": [
+    {
+      "result": "Explicit source period matrices",
+      "status": "inherited directly, not new"
+    },
+    {
+      "result": "Permutation triples give covers; cycles determine genus",
+      "status": "classical and cited"
+    },
+    {
+      "result": "Denominator defect formula and full ordered ES atlas",
+      "status": "prior tranche continuation; not claimed new in this note"
+    },
+    {
+      "result": "All-odd-D orbit and genus formulas for this affine gamma=1 slice",
+      "status": "derived here; no exact antecedent established in the limited content search"
+    },
+    {
+      "result": "Primitive cohomology class of order D and faithful gate-group map",
+      "status": "explicit derived comparison; general cocycle framework is classical"
+    },
+    {
+      "result": "Level-three ASL2(F3) group",
+      "status": "standard finite group; the exact matrix realization and source comparison are verified, no novelty of the group"
+    },
+    {
+      "result": "Twist presentation realizes D prime to6",
+      "status": "elementary specialization of the source formula, not a new S6 construction"
+    }
+  ],
+  "limitations": "No comprehensive historical-priority determination, independent reviewer or review of the full analytic/topological source manuscript."
+}

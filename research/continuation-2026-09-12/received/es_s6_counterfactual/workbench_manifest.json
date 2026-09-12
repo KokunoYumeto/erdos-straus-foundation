@@ -1,0 +1,34 @@
+{
+  "schema": "polyclank-incoming-note/1",
+  "title": "Complete ES defect atlases as affine torsion monodromy",
+  "date": "2026-09-12",
+  "status": "local research tranche; not pushed or deposited",
+  "dependencies": {
+    "workbench.tex": {
+      "bytes": 36536,
+      "sha256": "69caa5ce4a8961fe64a40927f5cffb62a08bbd66a2ccffd66f4dae41bcd530a3"
+    },
+    "dual_es.py": {
+      "bytes": 28902,
+      "sha256": "e356a26ad4b1a7c9be27d181a1a77bf52f4e3e53a5e5bc83c41e70bd912ea8ad"
+    },
+    "verify_giuga_blind_plane_cd.py": {
+      "bytes": 13039,
+      "sha256": "96320eb43437e5a5e658a84a1603155c6b53951c34191f7cbd3f853f254a2d98"
+    }
+  },
+  "entrypoints": [
+    "workbench.tex",
+    "preprint.tex",
+    "verify.py",
+    "morphisms.json",
+    "source_reading.json",
+    "lean_ready_plan.md"
+  ],
+  "mathematical_scope": "all odd-level orbit/genus proofs; full marked arithmetic inputs at any specified prime; no actual global negative example",
+  "boundaries": [
+    "Source global S6 theorem not independently verified",
+    "The current cover is not asserted isomorphic to the compact source threefold",
+    "No finite T12 / A4 / Leech-mod12 group is identified with the new central commutator solely because 12 occurs"
+  ]
+}

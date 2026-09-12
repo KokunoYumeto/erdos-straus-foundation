@@ -1,0 +1,27 @@
+{
+  "ES_branch_checks": 6,
+  "ES_examples": 2,
+  "W_E6_order": 51840,
+  "certificate_sha256": {
+    "arithmetic.json": "558432bbb96739fb08fd8a961ab6549e153ba6d633e28ab7d7e418f6bbe60421",
+    "lines.json": "ec701b407b826f622542b1ff140893c461b7aadaeb3d86c1f6e85d330314ab9a",
+    "polynomial.json": "e3bc23a3acbec93dc626ee5a559df42da1f93c37e0e516bf35229623b131dff4"
+  },
+  "formal_polynomial_groups": 10,
+  "kernel_order": 16,
+  "line_classes": 27,
+  "nonclaims": [
+    "No universal ES existence proof",
+    "No formal-prover compilation",
+    "No deformation lifting theorem for the positive integer lattice",
+    "No identification of the special Fable point with a Cayley node"
+  ],
+  "normalized_factor_transports": 6,
+  "quotient_order": 120,
+  "runtime": "Python standard library; exact rational and integer operations",
+  "signed_reflection_lifts": 6,
+  "special_fibre_points": 3,
+  "stabilizer_order": 1920,
+  "status": "PASS",
+  "tritangent_triples": 45
+}

@@ -1,0 +1,126 @@
+{
+  "checked_on": "2026-09-05",
+  "priority_claim": false,
+  "references": [
+    {
+      "id": "Yamamoto1965",
+      "authors": [
+        "Koichi Yamamoto"
+      ],
+      "year": 1965,
+      "title": "On the Diophantine Equation 4/n = 1/x + 1/y + 1/z",
+      "journal": "Memoirs of the Faculty of Science, Kyushu University, Series A, Mathematics",
+      "volume": 19,
+      "issue": 1,
+      "pages": "37-47",
+      "url": "https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf",
+      "locators": [
+        "Lemma 2, equation (4), printed page 38",
+        "Lemma 1 proof, printed page 38"
+      ],
+      "used_for": "Inherited exterior congruences and one/two p-divisible denominator classification."
+    },
+    {
+      "id": "MonksVelingker2008",
+      "authors": [
+        "M. Monks",
+        "A. Velingker"
+      ],
+      "document_date": "2008-09-23",
+      "title": "On the Erdos-Straus conjecture: Properties of solutions to its underlying diophantine equation",
+      "url": "https://mathematicalgemstones.com/maria/papers/ErdosStraus.pdf",
+      "locators": [
+        "Theorem 2.1(c)-(e), printed pages 2-3",
+        "Theorem 2.2 and Corollary 2.3, printed page 4",
+        "Theorem 2.2 proof, printed pages 5-6"
+      ],
+      "used_for": "Divisibility and reduced binary divisor criterion. No unreduced-fraction inference is used."
+    },
+    {
+      "id": "ElsholtzTao2013",
+      "authors": [
+        "Christian Elsholtz",
+        "Terence Tao"
+      ],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "journal": "Journal of the Australian Mathematical Society",
+      "volume": 94,
+      "issue": 1,
+      "pages": "50-105",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "locators": [
+        "55-page arXiv manuscript, equations (2.1)-(2.9), page 11",
+        "Proposition 2.2, page 12",
+        "equations (2.13)-(2.22) and Proposition 2.6, page 14",
+        "Section 3, Type-I search discussion"
+      ],
+      "crosswalk_E": [
+        "r",
+        "kappa",
+        "s",
+        "h",
+        "k",
+        "R"
+      ],
+      "crosswalk_M": [
+        "s",
+        "r",
+        "lambda",
+        "h",
+        "R",
+        "4*h*s*lambda-1"
+      ],
+      "used_for": "Inherited coordinate varieties. Raw E triple is the cyclic permutation of pi-I specified in the manuscript; raw M triple agrees with pi-II."
+    },
+    {
+      "id": "Dahan2026v1",
+      "authors": [
+        "B. Dahan"
+      ],
+      "document_date": "2026-08-25",
+      "title": "Sieve dimension and search depth for the Erdos-Straus conjecture, n congruent to 1 modulo 24",
+      "url": "https://arxiv.org/html/2608.24035v1",
+      "locators": [
+        "Section 2.2, Lemma 2.2",
+        "Section 2.3, Theorem 2.6 and Corollary 2.7",
+        "Section 4.1, Lemma 4.2 and Theorem 4.3"
+      ],
+      "used_for": "Binary criterion and untwisted/twisted branch crosswalk; inherited sieve antecedent. Not used to infer chamber-positive pointwise coverage."
+    },
+    {
+      "id": "RepositoryQ11",
+      "author_credit": "chasebryan (repository account; no additional authorship identity assumed)",
+      "document_date": "2026-08-15",
+      "title": "Exact q=11 filter for Mordell-hard primes in the strong/Type-II corridor",
+      "url": "https://raw.githubusercontent.com/chasebryan/centl/main/research/erdos-straus/STRONG-ES-Q11-EXACT-FILTER.md",
+      "locators": [
+        "Section 3: Two units of quadratic-residue valuation fill the QR subgroup",
+        "Section 7: Exact q=11 miss theorem",
+        "Section 8: The square-divisible subcase is especially clean"
+      ],
+      "used_for": "Content-level overlap and priority limitation: unweighted QR signed-box saturation is already present. No repository status label is a proof premise."
+    },
+    {
+      "id": "RepositoryQ23",
+      "author_credit": "chasebryan (repository account; no additional authorship identity assumed)",
+      "document_date": "2026-08-15",
+      "title": "Exact q=23 filter for Mordell-hard primes in the strong/Type-II corridor",
+      "url": "https://raw.githubusercontent.com/chasebryan/centl/main/research/erdos-straus/STRONG-ES-Q23-EXACT-FILTER.md",
+      "locators": [
+        "Sections 3-4: forced box and filling the subgroup",
+        "Sections 5-7: nonresidue factors and exact miss theorem"
+      ],
+      "used_for": "Content-level overlap: extra 2/3 valuation and unweighted saturation. The angular height theorem is proved separately."
+    }
+  ],
+  "content_search_queries": [
+    "\"Erd\u0151s\u2013Straus\" \"anchor\" \"quadratic\"",
+    "\"Erdos Straus\" \"837601\"",
+    "\"Erd\u0151s\u2013Straus\" \"23\" \"quadratic nonresidue\"",
+    "\"Erd\u0151s\" \"Koide\" \"2521\"",
+    "\"Erdos\" \"11\" \"signed\" \"filter\"",
+    "\"11259889\" \"Straus\""
+  ],
+  "conclusion": "The content search found prior unweighted signed-box filters. It did not establish historical novelty or priority of the angular continuation. No exhaustive literature search or universal selector proof is claimed."
+}

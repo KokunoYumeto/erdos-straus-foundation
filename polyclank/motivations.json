@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "record_kind": "human_research_directions",
+  "coverage": "Six verified user passages from two web exports. Partial recovery, not an exhaustive history or theorem audit.",
+  "public_attribution": "The Clankers (human contributor; collective attribution)",
+  "interpretation": "Quotes are verbatim excerpts. Direction and status fields are editorial descriptions. Source exports remain local; embedded assistant passages are not attributed to the human.",
+  "sources": [
+    {
+      "id": "es:web:framework-38",
+      "title": "Mathematical Framework Construction",
+      "export_filename": "ChatGPT-Mathematical Framework Construction (38).md",
+      "sha256": "7011d1e2c6f535183aff0ddc70bce02f20b06f8c3539481371ef633e09e1d93a",
+      "bytes": 1247542,
+      "lines": 63556,
+      "created_as_exported": "5/3/2026 13:53:11",
+      "exported_as_exported": "5/7/2026 3:09:04",
+      "conversation_id": "69f73726-fca4-83eb-92f3-659b1f899282",
+      "availability": "Locally retained original and byte-identical archival copy; not a public transcript."
+    },
+    {
+      "id": "es:web:functor-4",
+      "title": "Mathematical Functor Construction",
+      "export_filename": "ChatGPT-Mathematical Functor Construction (4).md",
+      "sha256": "2a3e2cf92b2b306672193ff2a758588d9fab17c3a9d7b9a223c1a66bd984501b",
+      "bytes": 356554,
+      "lines": 12692,
+      "created_as_exported": "7/10/2026 20:46:40",
+      "exported_as_exported": "7/11/2026 21:32:45",
+      "conversation_id": "6a513e0b-6d3c-83eb-84c3-d42ddf8bf5b2",
+      "availability": "Locally retained original and byte-identical archival copy; not a public transcript."
+    }
+  ],
+  "ideas": [
+    {
+      "id": "es:human-direction:four-way",
+      "source": "es:web:framework-38",
+      "line_start": 13235,
+      "line_end": 13235,
+      "quote": "Either see if you can find any of the tables or forms where some sneaky positivity condition is hiding, or adjoin a sort of completed Tesserine structure to this",
+      "direction": "Seek a representation that retains four-way sign distinctions while investigating positivity.",
+      "status": "Historical research direction; the excerpt is not itself a positivity theorem."
+    },
+    {
+      "id": "es:human-direction:blade-one",
+      "source": "es:web:framework-38",
+      "line_start": 15455,
+      "line_end": 15455,
+      "quote": "consider blade 1 - that's the only non-symmetric one so any positivity should live there",
+      "direction": "Investigate whether the asymmetry assigned to blade 1 localizes a positivity mechanism.",
+      "status": "Historical proposed mechanism; neither the uniqueness of that asymmetry nor the positivity consequence is certified by this record."
+    },
+    {
+      "id": "es:human-direction:all-residuals",
+      "source": "es:web:framework-38",
+      "line_start": 17675,
+      "line_end": 17675,
+      "quote": "generalize to all R by induction the proof already given for the isolated late one",
+      "direction": "Propagate the earlier residual calculation to all R, and lift the root-system/Hauptmodul work through the quadratic tessarine structure.",
+      "status": "Historical objective; not an assertion that the proposed induction was completed."
+    },
+    {
+      "id": "es:human-direction:colour-parity",
+      "source": "es:web:framework-38",
+      "line_start": 30756,
+      "line_end": 30756,
+      "quote": "just colour + parity type grading as oposed to just parity",
+      "direction": "Retain a three-way colour distinction together with the preceding parity information, and calculate the resulting structure.",
+      "status": "Historical construction request; no identification with an arbitrary Z3 object or a physical theory is asserted."
+    },
+    {
+      "id": "es:human-direction:y-junction",
+      "source": "es:web:framework-38",
+      "line_start": 33106,
+      "line_end": 33106,
+      "quote": "So it is not the same as just the word Z3.",
+      "direction": "The user explicitly described a Y-junction and QCD centre-symmetry picture as the origin of the star/snowflake heuristic, seeking three-way discernment rather than substituting any available three-element symmetry.",
+      "status": "Directly documented heuristic origin; a physical interpretation still requires the actual mathematical correspondence."
+    },
+    {
+      "id": "es:human-direction:third-sign",
+      "source": "es:web:functor-4",
+      "line_start": 9428,
+      "line_end": 9432,
+      "quote": "and then I suppose asking - I'd guess \"are tere any negaivve ones?\" i.e. \"(0,0,1) or (0,0,-1) as well?",
+      "direction": "Investigate both signs of the proposed third-direction obstruction while retaining information lost by an earlier projection.",
+      "status": "Historical coordinate proposal, not an established ES counterexample."
+    }
+  ]
+}

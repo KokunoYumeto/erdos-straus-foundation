@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern,amsmath,amssymb,microtype,booktabs}
+\usepackage[paperwidth=7.5in,paperheight=10in,margin=0.55in]{geometry}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{8pt}
+\begin{document}
+{\small THE CLANKERS\hfill RESEARCH NOTE / 12 SEPTEMBER 2026}\par\vspace{8pt}\hrule\vspace{15pt}
+
+{\LARGE\bfseries One exact bridge between\par two Leech coordinate models}\par\vspace{8pt}
+The three marked Golay octads can be aligned with Wilson's three octonions by a signed permutation, not merely by an existence theorem.
+
+For $\lambda=x/\sqrt8$, put $y_i=\epsilon_i x_{\pi(i)}$ and use the three blocks of $y/2$ as octonions.
+\[
+\begin{array}{c|rrrrrrrr}
+&\multicolumn{8}{c}{\pi}\,\\\hline
+0&0&1&3&4&8&23&7&16\\
+1&10&22&15&18&12&21&19&20\\
+2&2&13&5&11&6&14&17&9
+\end{array}
+\]
+\[
+\epsilon=(+-------\mid----++-+\mid----++-+).
+\]
+The inverse is $x_{\pi(i)}=\epsilon_i y_i$. The map preserves the lattice and squared norm exactly. Thirty-seven generator tests plus unimodularity prove equality of the infinite lattices.
+
+\textbf{The cubic must be retained as well.} Set $t=P\lambda$, $n_i=N(z_i)$ and $\nu=2\operatorname{Re}((z_0z_1)z_2)$. In the full Albert state $\widehat X=\operatorname{diag}(t)+\iota(z)$,
+\[
+\boxed{\begin{aligned}
+4N_J(\widehat X)-pS_J(\widehat X)
+={}&F_p(t)+\sum_i(p-4t_i)n_i+4\nu,\\
+F_p(t)={}&4t_0t_1t_2-p\sum_{i<j}t_it_j.
+\end{aligned}}
+\]
+A lattice isometry need not preserve this chosen cubic. Keeping the correction makes the interface exact rather than conflating the two invariants.
+
+\textit{Full statement: An octad-aligned Golay--octonion coordinate bridge and its full cubic correction.}
+\vfill\hrule\vspace{6pt}
+{\footnotesize Exact definitions, complete proofs and standard-library certificates accompany the three-page preprint. The Leech and Golay constructions are classical; no historical-priority claim or proof of Erd\H{o}s--Straus is made.}
+\end{document}
