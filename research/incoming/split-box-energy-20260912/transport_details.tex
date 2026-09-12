@@ -1,0 +1,92 @@
+\section{Complete fibres and the common-modulus return}
+This section expands the arithmetic and geometric statements above. No
+analytic compactification or global six-manifold theorem is used.
+
+\paragraph{Labelled state domain.}
+A split state is the full tuple
+\[
+(p,a,(q_i,e_i)_i,f,b,\xi,\eta,\ell,t),
+\]
+where $p$ and $a$ lie in the declared first-half domain, $f+b=e$,
+$\xi\in B_f$, $\eta\in B_b$, and $(\ell,t)$ is one of the three
+labelled targets. The pair $(\xi,\eta)$ is retained even when two pairs
+sum to the same vector. The primewise interval formula in (2) gives the
+complete fibre of this addition map. Numerical target deduplication occurs
+only when forming a forbidden set. A selected factor label is never inferred
+from its residue when those residues coincide.
+
+\paragraph{Defect before positivity is decided.}
+For every divisor $u\mid a^2$, put $d=a^2/u$ and retain
+\[
+ Q_E=\left(a,\frac{pa+d}{R},\frac{pa+p^2u}{R}\right),\qquad
+ Q_M=\left(a,\frac{p(a+d)}R,\frac{p(a+u)}R\right).
+\]
+All entries are positive rationals. Writing their last two entries as
+$Y,Z$, the residual pair is $(d,p^2u)$ in E and $(pd,pu)$ in M.
+Thus $(RY-pa)(RZ-pa)=p^2a^2$, and expansion proves
+$1/a+1/Y+1/Z=4/p$. In E, multiplying the first numerator by the unit $u$
+gives $a^2(4u+1)\pmod R$, and the second numerator is
+$4a^2(4u+1)\pmod R$. In M, multiplying the first numerator by $u$
+gives $pa(a+u)$, and the second is $p(a+u)$. All displayed multipliers
+are units modulo $R$. The two reduced denominators are consequently equal:
+\[
+ D_E=\frac{R}{\gcd(R,4u+1)},\qquad
+ D_M=\frac{R}{\gcd(R,u+a)}.
+\]
+No gcd is taken across different leaves. The ordered integral triple
+$DQ$ solves the equation at $pD$. Retaining $p$ and $D$ gives its inverse
+$Q=(DQ)/D$; forgetting that scale could confuse a failed return at $p$ with
+a successful return at the different parameter $pD$.
+
+\paragraph{Every local prime power is retained.}
+The unit identity (7) gives, for every $\lambda^a\parallel R$,
+\[
+\max(a-v_\lambda(g),0)=\max(a-v_\lambda(\rho),0).
+\]
+The notation $v_\lambda(0)=+\infty$ is used when a gate vanishes, or
+one may replace this display by equality of the two gcd quotients at
+modulus $\lambda^a$. The same original integer exponent vectors are
+reduced at every prime power. Separate local choices do not give a common
+bounded vector without the fibre (2).
+
+\paragraph{Actual affine inverse.}
+Write each generator as $A_j^g(v)=B_jv+g b_j$, with the three matrices and
+vectors read from the displayed formulas above. If $g=c\rho$ in
+$\mathbb Z/R\mathbb Z$, then
+\[
+ c(B_jv+\rho b_j)=B_j(cv)+g b_j.
+\]
+The map $S_c(v)=cv$, with inverse $S_{c^{-1}}$, therefore intertwines each
+generator, all its inverse powers, and every word in the generators.
+This establishes an isomorphism of the full finite affine systems, not
+merely equality of an invariant or agreement on successful points.
+
+Their coefficient cocycle has exact order $R/\gcd(R,g)$. At the cusp,
+its value is $(0,0,-g)$ and
+$(B_\infty-I)(X,Y,Z)=(0,X,0)$. Third-coordinate evaluation consequently
+annihilates every coboundary and detects order $R/\gcd(R,g)$. That same
+integer annihilates every coefficient of the cocycle, proving the reverse
+bound. This proves the exact order without assuming the source's global
+complex-geometric claim.
+
+\paragraph{Counterfactual scope.}
+For a false ES prime, every candidate in the complete first-half atlas
+must have $D>1$, and every split and every character cell must obey (5).
+This is a stronger family of necessary conditions. It is not asserted that
+the conditions cannot hold simultaneously. In particular the present unit
+conjugacy preserves $D$; it is not itself a defect-reducing cross-shell move.
+The sufficient criterion may force a target when an unsplit moment test
+does not, as in the displayed example. It does not manufacture a target by
+replacing the actual exponent box with its generated group.
+
+\paragraph{Execution boundary.}
+The standalone core verifier compares the greedy optimizer with an
+independent exhaustive dynamic programme on the specified small unit groups.
+It checks all splits in first-half shells for $p=13,37,61,97$, all overlaps
+in the declared two-coordinate boxes, four empty shells, and the full
+9531-shell comparison. The companion verifier checks 12042 labelled split
+states at $p=5,13,37,61,97$, including 11658 unsuccessful states, plus full
+finite affine maps at levels $3,5,9,15$. All requested labels and original
+rational quotients are retained in its example outputs. These finite checks
+are distinct from the general proofs. No independent reviewer or Lean
+execution is claimed.
