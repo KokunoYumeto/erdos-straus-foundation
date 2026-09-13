@@ -1,0 +1,249 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{lmodern,mathrsfs,amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\title{Prime-power boundary comparison and two-sided ES moment certificates}
+\author{The Clankers}
+\date{14 September 2026\quad---\quad Research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+A complete labelled ES divisor atlas has a prime-labelled truncated-polynomial
+module. Its joint kernel and ordinary augmentation have a comparison whose
+trace is precisely the original success count. Two singularity-safe canonical
+moment problems bound that trace from below and above, retaining split-fibre
+masses and all relation norms. Four moments determine 9530 of 9531 shell counts
+in the specified finite test; six moments resolve the remaining case. The
+construction does not establish a universal ES theorem. No priority claim is made.
+\end{abstract}
+
+\paragraph{Arithmetic input and exact ordered inverse.}
+Fix a prime $p\equiv1\pmod4$, an integer $p/4<a<p/2$, and $R=4a-p$.
+Write $a=\prod_iq_i^{e_i}$ with distinct increasing primes. An original state
+is a pair $(c,\beta)$, where $c=E,M$ and $-e_i\le\beta_i\le e_i$.
+Keep $u=\prod_iq_i^{e_i+\beta_i}$, $g_E=4u+1$, $g_M=u+a$ and
+\[
+ D=\frac R{\gcd(R,g_c)},\qquad x=D^{-1}\in(0,1/3]\cup\{1\}.
+ \tag{1}
+\]
+The two positive rational triples are
+\[
+ E:\ \left(a,\frac{pa+a^2/u}R,\frac{pa+p^2u}R\right),\qquad
+ M:\ \left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+ \tag{2}
+\]
+They satisfy $(RY-pa)(RZ-pa)=p^2a^2$, hence $4/p=1/a+1/Y+1/Z$.
+Since $4a\equiv p\pmod R$ and $\gcd(pa,R)=1$, the two reduced denominators
+of $Y,Z$ are both exactly $D$. Thus $D=1$ is equivalent to an integral hit.
+These are the inherited Type I/II divisor coordinates \cite{ET}.
+The ordered inverse is $u=a^2/(RY-pa)$ in E and $u=pa^2/(RY-pa)$ in M.
+With $d_0=\gcd(a,u)$, retain $(h,r,s)=(d_0^2/u,u/d_0,a/d_0)$.
+Prime valuations prove $a=hrs$, $u=hr^2$, $\gcd(r,s)=1$.
+The integer quotients at a hit are $(pr+s)/R$ in E and $(r+s)/R$ in M.
+Neither channel nor denominator order is identified with the other.
+
+\begin{theorem}[The boundary comparison detects original successes]
+For a finite labelled selection $\mathscr A$ of original states, let $\mathcal L$
+be all primes dividing its moduli and set
+\[
+ d_{\alpha\ell}=\max\{v_\ell(R_\alpha)-v_\ell(g_\alpha),0\},\quad
+ J_\alpha=\mathbb Q[z_\ell:\ell\in\mathcal L]/(z_\ell^{d_{\alpha\ell}+1})_\ell.
+\]
+Write $\mathcal J=\bigoplus_\alpha J_\alpha$ and $V=\bigoplus_\alpha\mathbb Q e_\alpha$.
+The maps
+\[
+ s:V\xrightarrow{\sim}\bigcap_\ell\ker(z_\ell:\mathcal J\to\mathcal J),\quad
+ e_\alpha\mapsto z^{d_\alpha}e_\alpha,\qquad
+ \epsilon(F_\alpha)=F_\alpha(0)e_\alpha
+\]
+obey $\epsilon s=\operatorname{diag}(\mathbf1_{D_\alpha=1})$.
+Its trace and rank are exactly the number $H$ of original canonical hits.
+\end{theorem}
+\begin{proof}
+The monomials $z^b$, $0\le b_\ell\le d_{\alpha\ell}$, form a basis.
+Multiplication by each $z_\ell$ has distinct nonzero images, so its kernel
+has exactly the basis vectors with $b_\ell=d_{\alpha\ell}$. Their joint
+kernel is the top-monomial line. Reading that coefficient inverts $s$.
+Evaluation at zero preserves it precisely when every $d_{\alpha\ell}$ is
+zero, equivalently $D_\alpha=1$.
+\end{proof}
+This is the explicit multi-prime application of the source's boundary-kernel
+map $M/vM\simeq\ker(v:M/vf(M)\to M/vf(M))$, $[x]\mapsto[f(x)]$,
+with $M=\mathbb Q[z]$, $f=z^d$ \cite[BR1--BR7]{SZ}.
+Each failure still has a nonzero top line; forgetting its degree is not success.
+A supported zero retains its state label, rather than becoming external absence.
+For $d'\le d$, ordinary reduction kills the top line unless $d'=d$;
+the reverse injection $F\mapsto z^{d-d'}F$ preserves it. These are different maps.
+
+\newpage
+\paragraph{Canonical lower and upper bounds on the comparison trace.}
+Let $\mu=\sum_\alpha w_\alpha\delta_{x_\alpha}$ be any finite positive measure
+on $(0,c]\cup\{1\}$, with $0<c<1$. Retain its full mass, not a normalized
+probability measure. Put $m_j=\sum_\alpha w_\alpha x_\alpha^j$ and
+$H=\mu(\{1\})$. For $d\ge0$ set
+\[
+ U_d=\min_{\deg P\le d,\,P(1)=1}\int P^2\,d\mu,\qquad
+ L_d=\max_{\deg P\le d,\,P(1)=1}\frac1{1-c}\int(x-c)P^2\,d\mu.
+ \tag{3}
+\]
+The upper problem is the classical Christoffel variational problem
+\cite[\S2.1, (2.2)--(2.3)]{Las}. The finite singular kernels, signed lower
+problem and original arithmetic return are calculated here.
+For $0\le i,j<d$ define
+\[
+ \begin{aligned}
+ (G_+)_{ij}&=m_{i+j+2}-2m_{i+j+1}+m_{i+j},&
+ (b_+)_i&=m_{i+1}-m_i,\\
+ (G_-)_{ij}&=-m_{i+j+3}+(c+2)m_{i+j+2}-(2c+1)m_{i+j+1}+cm_{i+j},&
+ (b_-)_i&=m_{i+2}-(c+1)m_{i+1}+cm_i.
+ \end{aligned}\tag{4}
+\]
+\begin{theorem}[Two-sided certificate, including singular source forms]
+Both $G_\pm$ are positive semidefinite and $b_\pm\in\operatorname{im}G_\pm$.
+For any solutions $G_\pm y_\pm=b_\pm$,
+\[
+ \boxed{L_d=\frac{m_1-cm_0+b_-^{\mathsf T}y_-}{1-c}
+ \ \le\ H\ \le\ U_d=m_0-b_+^{\mathsf T}y_+.}\tag{5}
+\]
+All optimizers are $P_+=1-(x-1)y_+(x)+(x-1)\ker G_+$ and
+$P_-=1+(x-1)y_-(x)+(x-1)\ker G_-$.
+The bounds are nested and become exact at a finite degree.
+If $H$ counts original states, $\lceil L_d\rceil=\lfloor U_d\rfloor$
+certifies its exact value. In particular $L_d>0$ forces a witness;
+$U_d<1$ certifies absence only in the stated finite domain.
+\end{theorem}
+\begin{proof}
+Write $P=1+(x-1)q$. The two quadratic expressions are
+\[
+ m_0+2b_+^{\mathsf T}q+q^{\mathsf T}G_+q,
+ \quad (m_1-cm_0+2b_-^{\mathsf T}q-q^{\mathsf T}G_-q)/(1-c).
+\]
+The Gram weights are $w(x-1)^2$ and $w(c-x)(x-1)^2$, respectively,
+nonnegative on the declared support. Any kernel polynomial vanishes where
+that weight is positive. The corresponding $b$ weight vanishes at every
+other point, so $b$ annihilates the kernel and lies in the range.
+Completing the squares proves the formulas, attainment and complete optimizer
+fibres. Successful atoms contribute $H$; other atoms give nonnegative upper
+and nonpositive lower contributions. Increasing degree enlarges the feasible
+space. A polynomial equal to one at 1 and vanishing at every other support
+point proves finite exactness.
+\end{proof}
+No generalized inverse is hidden: rational RREF gives one solution and a
+complete rational nullspace. The degree-zero convention uses empty matrices.
+For $i\le j$, orthogonality to all allowed corrections proves the exact secants
+\[
+ U_i-U_j=\int(P_{+,i}-P_{+,j})^2d\mu,\qquad
+ L_j-L_i=\frac1{1-c}\int(c-x)(P_{-,i}-P_{-,j})^2d\mu.
+ \tag{6}
+\]
+Both differences have the retained primitive $(P_i-P_j)/(x-1)$.
+The lower weight vanishes at $x=c$; these original states remain present
+elsewhere in the source. This instantiates the original-relation norm
+calculation of PR29 \cite[\S3--4]{SZ}; it does not identify counting measure
+with the theta-function norm.
+
+\paragraph{Four integer moments and a finite stopping estimate.}
+For ES, $c=1/3$ and $m_j=S_j/R^j$, where
+$S_j=\sum_\alpha\gcd(R,g_\alpha)^j$. Define
+$A_i=3S_{i+1}-RS_i$ for $i=0,1,2$.
+The signed degree-one matrix is negative semidefinite exactly when
+\[
+ A_0\le0,\quad A_2\le0,\quad A_0A_2\ge A_1^2.\tag{7}
+\]
+Any positive direction has nonzero evaluation at 1, because polynomials
+vanishing there have nonpositive signed norm. Normalizing it proves that
+violation of (7) is equivalent to $L_1>0$.
+The comparison $P=T_d(6x-1)/T_d(5)$ also proves
+$0\le U_d-H\le m_0/T_d(5)^2$ and
+$0\le H-L_d\le m_0/(2T_d(5)^2)$.
+Thus $T_d(5)^2>3m_0/2$ gives a unique integer count. This is a degree bound,
+not a claimed fast algorithm for the original moments.
+
+\newpage
+\paragraph{Split cohomology, its two quotients, and unchanged mass.}
+For an actual budget split $e=f+b$, the map $(\xi,\eta,c)\mapsto(\xi+\eta,c)$
+has complete fibre
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),\quad
+ \eta=\beta-\xi,
+\]
+whose size is the product $n(\beta)$ of those interval lengths.
+Each occurrence is given the original state's mass divided by $n(\beta)$.
+For every polynomial $P$,
+\[
+ \sum_\alpha w_\alpha P(x_\alpha)
+ =\sum_\omega\frac{w_{q\omega}}{n(\beta)}P(x_{q\omega}).\tag{8}
+\]
+Pullback duplicates values; its weighted adjoint averages them over each
+fibre. Their composite is the identity. Their other composite is the
+orthogonal projection, with kernel the explicit fibre-sum-zero relations.
+They commute with the prime variables and both maps of Theorem 1. This proves
+that the moments and canonical bounds retain the original count under splitting.
+
+The previous residue cohomology has a different quotient. For matching pairs
+$\mathscr P$, original successes $S$, and common channel/residues $I$, keep
+\[
+ \mathbb Q^S\xleftarrow{q_*}\mathbb Q^{\mathscr P}
+ \xrightarrow{r_*}\mathbb Q^I\cong H^0_{\rm residue}.
+\]
+The averaged comparison $B_{z\alpha}=|q^{-1}(\alpha)\cap r^{-1}(z)|/n(\beta)$
+preserves total mass; its norm is $B^{\mathsf T}G_I B$, not an assigned identity.
+At $p=2521,a=636,R=23$, $f=(1,1,1),b=(1,0,0)$, the three dimensions are
+$3,5,4$. In column order $(E,477),(M,8),(M,50562)$ and row order
+$(E,13),(M,11),(M,21),(M,22)$,
+\[
+ B=\begin{pmatrix}1&0&0\\0&1/2&0\\0&0&1/2\\0&1/2&1/2\end{pmatrix},\quad
+ G_I=\operatorname{diag}(2,2,2,3/2),\quad
+ B^{\mathsf T}G_I B=\begin{pmatrix}2&0&0\\0&7/8&3/8\\0&3/8&7/8\end{pmatrix}.
+ \tag{9}
+\]
+The nonzero cross terms remain, as required by the mixed-support source formula
+BR8 \cite{SZ}. Neither cohomology quotient is identified with the other.
+
+\paragraph{Exact certificates.}
+For this shell the measure is $3\delta_1+87\delta_{1/23}$; the boundary module
+is $\mathbb Q^3\oplus(\mathbb Q[z]/z^2)^{87}$. Its full socle has dimension
+90 but the comparison trace is three. The polynomial $(23x-1)/22$ gives
+$L_1=U_1=3$, using four original moments.
+For the empty shell $p=241,a=64,R=15$, the measure is
+$8\delta_{1/3}+12\delta_{1/5}+6\delta_{1/15}$ and
+\[
+ -12/425\le H\le180/463<1.
+\]
+This certifies that shell empty, not the prime false. Its 26 supported socle
+lines still exist.
+
+All 9531 first-half shells at the 54 primes $p\equiv1\pmod{12}$, $p\le1500$,
+were enumerated: 412838 original states and 1920 hits in 685 shells.
+Degree-one brackets give exact counts in 9530 shells; the remaining case
+$p=1093,a=280,R=27$ has
+\[
+ [L_1,U_1]=[45982/7737,681/94],\quad
+ [L_2,U_2]=[6,1132982/188317],
+\]
+so the exact count is six. Every occupied shell in this test has $L_1>0$;
+that reverse implication is not proved for arbitrary shells. The standard-library
+verifier uses exact integers and fractions, singular normal equations,
+full prime-exponent boxes and negative controls. It computes moments by
+finite enumeration; no universal positivity, faster complexity, analytic
+Frobenius comparison or Lean certification is asserted.
+
+\begingroup\small
+\begin{thebibliography}{3}
+\bibitem{SZ} The Clankers (2026). \emph{SplitZero source continuations}.
+Zeta repository: PR28 \texttt{tau-split-integration/RESEARCH\_NOTE.md};
+PR29 \texttt{tau-arithmetic-metric-transfer/RESEARCH\_NOTE.md}, at
+\texttt{35b7aeaf\ldots2507fb}. Draft PR30
+\texttt{tau-mixed-boundary-formal/RESEARCH\_NOTE.md}, BR1--BR8,
+at \texttt{f57532b9\ldots3e97}. Full identifiers and locators accompany the sources.
+\bibitem{Las} Lasserre, J.-B. (2022). \emph{A disintegration of the Christoffel
+function}. arXiv:2203.16238v1, \S2.1, equations (2.2)--(2.3).
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\S2, Propositions 2.2 and 2.6.
+\end{thebibliography}
+\endgroup
+\end{document}

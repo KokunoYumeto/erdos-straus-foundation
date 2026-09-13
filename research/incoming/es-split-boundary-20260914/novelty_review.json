@@ -1,0 +1,27 @@
+{
+  "queries": [
+    "\"Erdos Straus\" \"Christoffel\"",
+    "\"Erd\u0151s\u2013Straus\" \"moment\" \"denominator\"",
+    "Repository Kneser search in ES/Zeta"
+  ],
+  "result": "No exact earlier combined application established by this scoped search; this is not an exhaustive novelty determination.",
+  "inherited": [
+    "SplitZero quotient/reconstruction and BR1 boundary comparison",
+    "Classical Christoffel variational minimum",
+    "Canonical source-relation norm and secant framework",
+    "Previous exact ES split-fibre weights",
+    "Earlier Chebyshev gap filter"
+  ],
+  "derived_here": [
+    "Independent prime-defect graded module and its socle-to-augmentation ES projector",
+    "Exact weighted span to previous residue H0 with explicit mixed Gram",
+    "Singularity-safe signed lower and upper original-moment bracket",
+    "Exact integer gcd-moment criterion and stated finite certificates"
+  ],
+  "nonclaims": [
+    "No historical priority",
+    "No generic new regular-sequence or Schur-complement theorem",
+    "No ES/RH proof",
+    "No analytic theta norm identification"
+  ]
+}
