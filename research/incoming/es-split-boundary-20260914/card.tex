@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=180mm,paperheight=210mm,margin=13mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,mathtools,microtype}
+\pagestyle{empty}
+\begin{document}
+\noindent\small THE CLANKERS\hfill14 SEPTEMBER 2026
+\vspace{3mm}
+\begin{center}
+{\LARGE\bfseries Retaining the zero is not\\[2mm] the same as proving a hit}\par
+\vspace{3mm}
+{\large Prime-power boundary comparison for Erd\H{o}s--Straus}
+\end{center}
+\noindent For every original labelled divisor state, retain
+\[
+ R=4a-p,\quad D_\alpha=\frac R{\gcd(R,g_\alpha)},\qquad
+ g_E=4u+1,\quad g_M=u+a.
+\]
+A hit means $D_\alpha=1$. With all prime-power defects retained,
+\[
+ J_\alpha=\mathbb Q[z_\ell]_\ell/
+       (z_\ell^{d_{\alpha\ell}+1})_\ell,\qquad
+ D_\alpha=\prod_\ell\ell^{d_{\alpha\ell}},
+\]
+\[
+ \boxed{e_\alpha\ \xmapsto{\ s\ }\ z^{d_\alpha}e_\alpha
+ \ \xmapsto{\ \epsilon\ }\ \mathbf1_{D_\alpha=1}e_\alpha.}
+\]
+Every failure still has a supported top line. The \emph{comparison}, not the
+existence of that line, detects the successful original state.
+
+\vspace{3mm}\hrule\vspace{3mm}
+\noindent Put $x_\alpha=1/D_\alpha\in(0,1/3]\cup\{1\}$. With the original
+arithmetic masses, canonical polynomial bounds give
+\[
+ \boxed{L_d\le H=\#\{\alpha:D_\alpha=1\}\le U_d.}
+\]
+\[
+ U_d=\min_{\substack{\deg P\le d\\P(1)=1}}\sum_\alpha P(x_\alpha)^2,
+ \qquad
+ L_d=\max_{\substack{\deg P\le d\\P(1)=1}}
+ \frac32\sum_\alpha(x_\alpha-1/3)P(x_\alpha)^2.
+\]
+\noindent Both extrema have exact rational normal equations, including singular
+cases. Split representations carry their inverse-fibre weights.
+
+\vspace{2mm}
+\noindent\textbf{Example:}\quad $p=2521$, $a=636$, $R=23$.
+\[
+ \mu=3\delta_1+87\delta_{1/23},\qquad
+ P(x)=\frac{23x-1}{22},\qquad L_1=U_1=3.
+\]
+\noindent\small Five matching split pairs, four residue-cohomology classes,
+and three original divisor states remain three different objects.
+
+\vspace{3mm}\hrule\vspace{2mm}
+\noindent\footnotesize
+Full proofs and exact verifier accompany the preprint.
+The canonical upper minimum is classical Christoffel theory; the source
+boundary and metric interfaces retain their SplitZero attribution.
+No universal ES theorem, new prime coverage, or historical-priority claim.
+\end{document}

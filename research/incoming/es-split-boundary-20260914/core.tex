@@ -1,0 +1,463 @@
+\section{Source version and scope of the integration}
+The previous ES SplitZero note retained supported zero, the original incoming
+relations, and the exact mass of every bounded divisor state. We now integrate
+three later source interfaces: support-changing quotients and both transition
+defects (PR28, equations I1--I9); canonical metric secants with their original
+relation norms (PR29, sections 3--4); and the new boundary-kernel comparison
+(PR30, equations BR1--BR7). The first two are read at Zeta main
+\texttt{35b7aeaff0b63b0db71f26c5b921cdbbec2507fb}; the third is read at
+\texttt{f57532b97c5c92a8c197e6cd4fef2b36b2d33e97}, an unmerged draft at intake
+\cite{SZ28,SZ29,SZ30}. These are not all assigned to the frozen R62 publication.
+The 821-page edition is not represented as fully audited. Its periodized theta
+integrals and growing-family estimates are not identified with the finite norms
+below. The supplied source records formal checks; no new Lean build is claimed.
+
+The new arithmetic constructions are a prime-labelled boundary module, its
+socle-to-augmentation comparison, and two canonical moment bounds computed
+without selecting successful atoms first. All proofs below are elementary and
+include singular finite moment forms. The positive-definite inverse formulas of
+the source cannot simply be used on a singular matrix.
+
+\section{Complete original arithmetic, including failed states}
+Fix a prime $p\equiv1\pmod4$, an integer $p/4<a<p/2$, and $R=4a-p$.
+Write $a=\prod_i q_i^{e_i}$ with distinct increasing primes. A canonical labelled
+state is $\alpha=(p,a,R,c,\beta)$, where $c\in\{E,M\}$ and
+$\beta\in\prod_i[-e_i,e_i]_{\mathbb Z}$. Set
+\[
+ u_\alpha=\prod_iq_i^{e_i+\beta_i},\qquad
+ g_E=4u+1,\quad g_M=u+a,\qquad D_\alpha=R/\gcd(R,g_c).
+ \tag{A1}
+\]
+All actual prime-factor multiplicities and both channels are retained. For a
+finite selection of shells use their disjoint union, not a deduplicated residue
+set. The full first-half interval is sufficient by the existing workbench
+smallest-denominator theorem; none of the new forcing lemmas requires that
+completeness theorem for its validity on a specified finite selection.
+
+\begin{lemma}[Rational candidate and exact return]
+Each state gives the positive rational triple
+\[
+ Q_E=\left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\qquad
+ Q_M=\left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+ \tag{A2}
+\]
+It solves $4/p=\sum_iQ_i^{-1}$. The last two denominators in reduced form are
+both exactly $D_\alpha$. Consequently the candidate is integral precisely when
+$D_\alpha=1$; otherwise $D_\alpha\ge3$ is odd. With $x_\alpha=1/D_\alpha$,
+\[
+ x_\alpha\in(0,1/3]\cup\{1\}.
+ \tag{A3}
+\]
+\end{lemma}
+\begin{proof}
+We have $\gcd(pa,R)=1$ and $u\mid a^2$. Direct multiplication gives
+$(RY-pa)(RZ-pa)=p^2a^2$ for each displayed triple. Expanding gives the
+reciprocal identity. Modulo $R$, the two exterior numerators, after multiplying
+the first by the unit $u$, are $a^2(4u+1)$ and $4a^2(4u+1)$. The two middle
+numerators similarly have gcd with $R$ equal to $\gcd(R,u+a)$. This proves the
+exact reduced denominators. Oddness follows from $R\equiv3\pmod4$.
+\end{proof}
+
+These are the inherited Type I/II divisor coordinates \cite{ET}. At a hit let
+$d_0=\gcd(a,u)$ and retain
+\[
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0),\quad a=hrs,\quad u=hr^2,
+\]
+\[
+ E:\quad\kappa=(pr+s)/R,\ (a,hs\kappa,phr\kappa),\qquad
+ M:\quad\lambda=(r+s)/R,\ (a,phs\lambda,phr\lambda).
+ \tag{A4}
+\]
+Prime valuations prove integrality and $\gcd(r,s)=1$; clearing reciprocals
+verifies (A4). The ordered inverse is
+\[
+ u=\frac{a^2}{RY-pa}\ (E),\qquad
+ u=\frac{pa^2}{RY-pa}\ (M).
+ \tag{A5}
+\]
+The exterior ordering bit, if both raw orders are wanted, and the middle
+involution $u\mapsto a^2/u$ are not identified. Our counts use the canonical
+$E,M,u$ labels just declared, not distinct unordered denominator triples.
+
+\section{Prime-labelled boundary modules and the success comparison}
+Let $\mathcal L$ be the finite set of primes dividing the selected shell
+moduli. For every state define
+\[
+ d_{\alpha\ell}=\max\{v_\ell(R_\alpha)-v_\ell(g_\alpha),0\},\qquad
+ D_\alpha=\prod_{\ell\in\mathcal L}\ell^{d_{\alpha\ell}}.
+ \tag{B1}
+\]
+A prime absent from a shell has exponent zero. Over
+$A=\mathbb Q[z_\ell:\ell\in\mathcal L]$, put
+\[
+ J_\alpha=A/(z_\ell^{d_{\alpha\ell}+1}:\ell\in\mathcal L),\quad
+ \mathcal J=\bigoplus_\alpha J_\alpha,\quad
+ V=\bigoplus_\alpha\mathbb Q e_\alpha.
+ \tag{B2}
+\]
+These are independent variables for different primes. The construction is
+not a tensor of cones with an unspecified common parameter.
+
+\begin{theorem}[The retained boundary comparison]
+The joint annihilator $\operatorname{Soc}\mathcal J=\bigcap_\ell\ker z_\ell$
+has the labelled basis $z^{d_\alpha}e_\alpha$. The maps
+\[
+ s:V\xrightarrow{\sim}\operatorname{Soc}\mathcal J,
+ \quad e_\alpha\mapsto z^{d_\alpha}e_\alpha,\qquad
+ \epsilon:\mathcal J\to V,\quad F_\alpha\mapsto F_\alpha(0)e_\alpha
+ \tag{B3}
+\]
+obey
+\[
+ \boxed{\epsilon s=\operatorname{diag}(\mathbf1_{D_\alpha=1}).}
+ \tag{B4}
+\]
+In particular the rank and trace of this comparison, and the dimension of the
+multidegree-zero socle, equal the original success count $H$.
+\end{theorem}
+\begin{proof}
+The residue monomials $z^b$, $0\le b_\ell\le d_{\alpha\ell}$, form a basis.
+Multiplication by $z_\ell$ sends distinct surviving basis vectors to distinct
+basis vectors, so its kernel consists exactly of those with
+$b_\ell=d_{\alpha\ell}$. Intersecting leaves the single top monomial.
+Its coefficient supplies the inverse to $s$. Evaluation at zero sends this
+monomial to one if all exponents vanish and to zero otherwise, proving (B4).
+\end{proof}
+
+The direct source of (B3) is BR1 in \cite{SZ30}: if multiplication by $v$ and
+$f$ are injective on $M$, then
+$M/vM\simeq\ker(v:M/vf(M)\to M/vf(M))$ via $[x]\mapsto[f(x)]$.
+Well-definedness uses linearity, injectivity uses cancellation by $f$ before
+quotienting, and surjectivity uses cancellation by $v$ on $M$.
+Here each single-prime instance has $M=\mathbb Q[z_\ell]$,
+$v=z_\ell$, and $f=z_\ell^{d_{\alpha\ell}}$; the joint statement was proved
+above without an unproved tensor-homology identification. Classical Koszul
+regularity is compatible with this polynomial model \cite{Stacks}; no general
+Tor functor is needed for the displayed computation.
+
+Every labelled summand of the full socle is present, also at failures. Its
+ordinary augmentation and its graded kernel are different observations.
+In the original SplitZero carrier, a zero image has the same nonbottom support
+label: it is $e$ in that fibre, not external absence $\tau$. This instantiates
+the receiving-zero criterion I2 and the boundary-image criterion BR7
+\cite{SZ28,SZ30}. The joint annihilator is stated explicitly; it is not silently
+the annihilator of one arbitrary scalar.
+
+\paragraph{Reduction and its opposite-direction map.}
+For $d'\le d$ coordinatewise, reduction $Q:J_d\to J_{d'}$ is the usual
+monomial truncation. Its kernel is the span of monomials exceeding at least
+one $d'_\ell$. It sends the top monomial to zero unless $d=d'$.
+In the opposite direction,
+\[
+ I:J_{d'}\hookrightarrow J_d,\qquad F\mapsto z^{d-d'}F
+ \tag{B5}
+\]
+is injective and preserves the top socle; its inverse on its image subtracts
+the exponent vector $d-d'$. The composite $QI$ is multiplication by
+$z^{d-d'}$ modulo the smaller ideal, not generally the identity.
+Reduction from a modulus $R$ to a divisor of $R$ decreases the vector (B1),
+so it uses exactly $Q$. This is a local observation of the same marked
+arithmetic leaf, not a claim that the reduced modulus defines a new ES shell.
+Independent local successes cannot be glued by
+replacing this map by the socle-preserving reverse map. Arithmetic coefficient
+multiplication by $x_d=\prod\ell^{-d_\ell}$ has transition defect
+\[
+ Q M_{x_d}-M_{x_{d'}}Q=(x_d-x_{d'})Q.
+ \tag{B6}
+\]
+This records the extra coefficient defect of I9 in \cite{SZ28}; it is not
+assumed zero.
+
+\section{The original split weights commute with this boundary model}
+Split $e=f+b$. The map $q:(\xi,\eta,c)\mapsto(\xi+\eta,c)$ has complete fibre
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),\quad
+ \eta=\beta-\xi,
+\]
+and cardinality
+\[
+ n(\beta)=\prod_i\bigl(\min(f_i,\beta_i+b_i)-\max(-f_i,\beta_i-b_i)+1\bigr).
+ \tag{W1}
+\]
+Every interval is nonempty because $|\beta_i|\le f_i+b_i$.
+The two canonical channel labels remain separate even if numerical values
+coincide. At every split occurrence use the same $d_\alpha,J_\alpha,s,\epsilon$
+as its returned state. Pullback $U$ duplicates coefficients, and
+\[
+ (EF)_\alpha=\frac1{n(\beta)}\sum_{q(\omega)=\alpha}F_\omega.
+ \tag{W2}
+\]
+Then $EU=1$, both maps commute with all $z_\ell$, with $s,\epsilon$, and with
+$x_\alpha$. The kernel of $E$ consists of fibre sums zero; its complete
+primitive is the nonreference-coordinate star-difference expansion. Native
+occurrence counting is not the original arithmetic metric.
+
+For original value-vector weights $w_\alpha>0$, use occurrence weights
+$w_\alpha/n(\beta)$. The maps (W2) satisfy $U^*=E$ and $U^*U=1$ and
+\[
+ \|F\|^2=\|EF\|^2+\|F-UEF\|^2.
+ \tag{W3}
+\]
+The proof groups the sums by fibres; the cross term vanishes because each
+remainder fibre sum is zero. On coefficient vectors with pushforward instead
+of pullback the dual convention is cost $n(\beta)$ and lift $1/n(\beta)$;
+these types are related by the diagonal fibre-size map, not conflated.
+For every polynomial $P$, in particular all moment and Gram entries,
+\[
+ \sum_\alpha w_\alpha P(x_\alpha)
+ =\sum_\omega\frac{w_{q\omega}}{n(\beta)}P(x_{q\omega}).
+ \tag{W4}
+\]
+Arbitrary further source transports retain their off-diagonal pairings, as
+required by BR8 and SP1--SP13 \cite{SZ30,SP}. Different labels alone do not
+prove orthogonality after a map identifies them.
+
+\paragraph{The original residue cohomology and the arithmetic image are distinct.}
+For one actual split and channel, let $\mathscr P$ be the matching-pair set,
+$S$ the original successful exponent labels, and $I$ the common residue set.
+For the two actual maps $X\to Z\leftarrow Y$, use the complex
+$B_X\oplus B_Y\hookrightarrow\mathbb Q^X\oplus\mathbb Q^Y\to\mathbb Q^Z$,
+where $B_X,B_Y$ are generated by the nonreference star differences in each
+residue fibre and the last map is left fibre sum minus right fibre sum.
+A cycle has equal fibre sums; subtracting the two reference representatives
+leaves the specified star relations. Thus its complete degree-zero quotient
+is $\mathbb Q^I$, including its inverse and all boundary primitives.
+This is the preceding residue cohomology. In contrast, (B4)
+has image $\mathbb Q^S$. Their exact comparison is the span
+\[
+ \mathbb Q^S\xleftarrow{q_*}\mathbb Q^{\mathscr P}
+ \xrightarrow{r_*}\mathbb Q^I.
+ \tag{W5}
+\]
+Both maps sum coefficients over their indicated fibres. Their kernels have
+the complete nonreference star-difference bases. A map induced directly from
+$q_*$ to $r_*$ exists only when the residue is constant on every arithmetic
+fibre: this is equivalent to $\ker q_*\subseteq\ker r_*$. It is not assumed.
+The retained arithmetic section $\sigma_q e_\alpha=
+\sum_{q\omega=\alpha}e_\omega/n(\beta)$ defines an actual comparison
+\[
+ B=r_*\sigma_q,\qquad B_{z\alpha}=
+ \frac{|r^{-1}(z)\cap q^{-1}(\alpha)|}{n(\beta)},\qquad
+ \mathbf1^{\mathsf T}B=\mathbf1^{\mathsf T}.
+ \tag{W6}
+\]
+Thus it preserves total arithmetic mass, not necessarily vector dimension
+or the original metric. For the previous counting-source harmonic metric
+$G_I=\operatorname{diag}(1/|X_z|+1/|Y_z|)$, the transported form is exactly
+$B^{\mathsf T}G_IB$, including all cross terms.
+
+At $p=2521,a=636,R=23$, $f=(1,1,1),b=(1,0,0)$, there are five matched
+pairs, four common channel/residues, and three original channel/divisor
+states. With columns $(E,477),(M,8),(M,50562)$ and rows
+$(E,13),(M,11),(M,21),(M,22)$,
+\[
+ B=\begin{pmatrix}1&0&0\\0&1/2&0\\0&0&1/2\\0&1/2&1/2\end{pmatrix},
+ \quad G_I=\operatorname{diag}(2,2,2,3/2),\quad
+ B^{\mathsf T}G_IB=
+ \begin{pmatrix}2&0&0\\0&7/8&3/8\\0&3/8&7/8\end{pmatrix}.
+ \tag{W7}
+\]
+The mixed $3/8$ entries are retained. Consequently the new success-projector
+trace is three, not an identification with the old residue cohomology's
+dimension four. Both are quotients of the same fully marked pair space,
+with their own kernel, primitive, and norm.
+
+\section{Canonical two-sided bounds from the unchanged moment data}
+The following result applies to any finite positive measure supported on
+$(0,c]\cup\{1\}$, where $0<c<1$. In the ES instance use $c=1/3$ and unit
+weight on every original state. Let
+\[
+ m_j=\sum_\alpha w_\alpha x_\alpha^j,\quad
+ W=m_0,\quad H=\sum_{x_\alpha=1}w_\alpha.
+\]
+Do not divide by $W$: the original mass is retained. For degree $d\ge0$ set
+\[
+ U_d=\min_{\deg P\le d,\ P(1)=1}\sum_\alpha w_\alpha P(x_\alpha)^2,
+\quad
+ L_d=\max_{\deg P\le d,\ P(1)=1}
+ \frac1{1-c}\sum_\alpha w_\alpha(x_\alpha-c)P(x_\alpha)^2.
+ \tag{M1}
+\]
+The first is the classical Christoffel variational problem \cite[eqs.~(2.2)--(2.3)]{Las}.
+We retain its singular finite-source cases and the signed lower counterpart.
+These are not an identification with the source's analytic theta moment form.
+
+Write $P=1+(x-1)q(x)$ with $q$ of degree at most $d-1$.
+For $0\le i,j<d$ define
+\[
+ (G_+)_{ij}=m_{i+j+2}-2m_{i+j+1}+m_{i+j},\quad
+ (b_+)_i=m_{i+1}-m_i,
+\]
+\[
+ (G_-)_{ij}=-m_{i+j+3}+(c+2)m_{i+j+2}
+ -(2c+1)m_{i+j+1}+cm_{i+j},
+\quad
+ (b_-)_i=m_{i+2}-(c+1)m_{i+1}+cm_i.
+ \tag{M2}
+\]
+
+\begin{theorem}[Canonical bracket with complete singular fibres]
+Both $G_+,G_-$ are positive semidefinite and $b_\pm$ belong to their ranges.
+Choose any exact solutions $G_\pm y_\pm=b_\pm$. Then
+\[
+ \boxed{U_d=m_0-b_+^{\mathsf T}y_+,\qquad
+ L_d=\frac{m_1-cm_0+b_-^{\mathsf T}y_-}{1-c}.}
+ \tag{M3}
+\]
+All optimizing polynomials are
+\[
+ P_+=1-(x-1)y_+(x)+(x-1)\ker G_+,\qquad
+ P_-=1+(x-1)y_-(x)+(x-1)\ker G_-.
+ \tag{M4}
+\]
+They obey
+\[
+ \boxed{L_d\le H\le U_d,\qquad L_d\nearrow H,\quad U_d\searrow H.}
+ \tag{M5}
+\]
+For a finite measure equality holds at some finite degree. When original
+weights count states, $H$ is an integer, and $\lceil L_d\rceil=\lfloor U_d\rfloor$
+is an exact count certificate. In particular $L_d>0$ forces a witness and
+$U_d<1$ certifies no witness in the stated finite domain.
+\end{theorem}
+\begin{proof}
+The two Grams are sums of rank-one matrices with coefficients
+$w(x-1)^2$ and $w(c-x)(x-1)^2$, respectively. The second coefficient is
+nonnegative on the declared support, including its zero value at $x=1$.
+A kernel polynomial of either Gram vanishes at every point carrying a
+positive corresponding coefficient. The same points carry its $b$ terms;
+at $x=1$, and additionally at $x=c$ for the second form, those terms vanish.
+Thus each $b$ annihilates the kernel, proving membership in the range.
+Expanding (M1) in $q$ gives the upper expression
+$m_0+2b_+^{\mathsf T}q+q^{\mathsf T}G_+q$ and the lower numerator
+$m_1-cm_0+2b_-^{\mathsf T}q-q^{\mathsf T}G_-q$.
+Completing the squares proves (M3)--(M4), including attainment and all fibres.
+Successful atoms contribute exactly their original mass to either expression.
+Every other contribution is nonnegative for the upper and nonpositive for
+the lower. This proves the bounds. Increasing degree enlarges the feasible
+polynomial space. A polynomial equal to one at 1 and vanishing at every other
+support point gives equality, proving finite termination.
+\end{proof}
+
+\paragraph{The relation norms, not only their zero quotient.}
+For compatible choices of optimizers at $i\le j$, the original secants are
+\[
+ U_i-U_j=\sum_\alpha w_\alpha(P_{+,i}-P_{+,j})^2(x_\alpha),
+\]
+\[
+ L_j-L_i=\frac1{1-c}\sum_\alpha w_\alpha(c-x_\alpha)
+              (P_{-,i}-P_{-,j})^2(x_\alpha).
+ \tag{M6}
+\]
+Both follow by orthogonality of the optimizer to all allowed corrections.
+The difference has explicit primitive $(P_i-P_j)/(x-1)$.
+The second right side is nonnegative because the difference vanishes at 1.
+At $x=c$ its observation weight is zero: those original states remain present
+in the full source and in the upper form. They are not declared external zero
+or silently identified with the source's original relation module. This is the
+finite arithmetic implementation of the metric-boundary discipline in
+\cite[sections 3--4]{SZ29}.
+
+\paragraph{The first-degree test as four integer gcd moments.}
+At one shell, set $S_j=\sum_\alpha\gcd(R,g_\alpha)^j$ for $0\le j\le3$;
+then $m_j=S_j/R^j$. Put
+\[
+ A_0=3S_1-RS_0,\quad A_1=3S_2-RS_1,\quad A_2=3S_3-RS_2.
+ \tag{M8}
+\]
+The degree-one signed localizing matrix is
+\[
+ \begin{pmatrix}m_1-m_0/3&m_2-m_1/3\\
+ m_2-m_1/3&m_3-m_2/3\end{pmatrix}.
+\]
+It is negative semidefinite exactly when
+$A_0\le0$, $A_2\le0$, and $A_0A_2\ge A_1^2$.
+A positive direction cannot be a polynomial vanishing at one, since its
+remaining terms would all be nonpositive. It can therefore be normalized
+and is one of the competitors in (M1). Conversely $L_1>0$ supplies that
+direction. We have proved the exact criterion
+\[
+ \boxed{L_1>0\iff A_0>0\ \text{or}\ A_2>0\ \text{or}\ A_0A_2<A_1^2.}
+ \tag{M9}
+\]
+Every empty shell must satisfy the three opposite inequalities. For example, the measure $\delta_1+10^4\delta_{1/5}+10^4\delta_{1/7}$ has
+$H=1$ but $L_1=-8189/1811<0$. Thus the general
+finite-support theorem allows occupied measures with $L_1\le0$;
+no all-prime sufficiency of degree one is inferred from the finite ES scan.
+
+\paragraph{Uniform finite stopping bound.}
+For $c=1/3$, use the existing comparison polynomial
+$C_d(x)=T_d(6x-1)/T_d(5)$, with the usual Chebyshev recurrence. Its value at one
+is one and its absolute value on $[0,1/3]$ is at most $T_d(5)^{-1}$.
+Using it as a competitor proves
+\[
+ 0\le U_d-H\le\frac{W}{T_d(5)^2},\qquad
+ 0\le H-L_d\le\frac{W}{2T_d(5)^2}.
+ \tag{M7}
+\]
+Hence $T_d(5)^2>3W/2$ guarantees a unique integer in the bracket. Since
+$T_d(5)=((5+\sqrt{24})^d+(5-\sqrt{24})^d)/2$, a logarithmic degree suffices.
+This bounds certificate degree, not the cost of obtaining the arithmetic
+moments. It refines the earlier fixed Chebyshev filter; neither filtering nor
+Christoffel minimization is claimed as a new general principle.
+
+\paragraph{Certified moment intervals.}
+If $m_j\in[\underline m_j,\overline m_j]$, select any rational normalized
+polynomials $P_+,P_-$. For their upper polynomial $P_+^2$ and lower polynomial
+$(x-c)P_-^2/(1-c)$, sum moment intervals with the sign of each coefficient.
+The upper endpoint of the first sum bounds $H$ above; the lower endpoint of
+the second bounds it below. Approximate optimization may choose the polynomials
+but is not proof of their moments. Singular matrices need not be inverted,
+and signed sums are not bounded by independently subtracting two upper bounds.
+
+\section{Exact examples and finite verification}
+At $p=2521,a=636,R=23$, the original measure is
+\[
+ 3\delta_1+87\delta_{1/23}.
+\]
+The boundary module is three labelled copies of $\mathbb Q$ and 87 labelled
+copies of $\mathbb Q[z]/z^2$: total dimension 177, socle dimension 90,
+but $\operatorname{rank}(\epsilon s)=3$. For degree one,
+$P(x)=(23x-1)/22$ gives $L_1=U_1=3$. The split $e=(2,1,1)$,
+$f=(1,1,1)$ has five matching pairs, but its inverse-fibre weights give the
+same measure and the same count three.
+
+At the empty shell $p=241,a=64,R=15$, the measure is
+$8\delta_{1/3}+12\delta_{1/5}+6\delta_{1/15}$ and the complete boundary socle
+still has 26 labelled directions. Its augmentation comparison is zero.
+The calculated bracket is
+\[
+ \boxed{-\frac{12}{425}\le H\le\frac{180}{463}<1,}
+\]
+which certifies $H=0$ in that shell, not failure at the prime.
+
+The exhaustive comparison uses all 9531 first-half shells of the 54 primes
+$p\equiv1\pmod{12}$ with $p\le1500$: 412838 original channel-labelled states,
+1920 successful states in 685 shells, and 8846 empty shells. Degree-one
+brackets determine the exact count in 9530 shells; degree two resolves the
+remaining shell $p=1093,a=280,R=27$. There
+\[
+ [L_1,U_1]=[45982/7737,681/94],\qquad
+ [L_2,U_2]=[6,1132982/188317].
+\]
+All 685 occupied shells are positively certified at degree at most one.
+This is not new prime coverage or a universal lower bound. The implementation
+computes the actual moments by finite enumeration; no faster algorithm is
+claimed. Separate exact fixtures test singular cases in 80 small measures,
+all 64 three-prime exponent tuples through three, coordinatewise reduction,
+split weights, source secants, and six false-formula rejection tests.
+
+\section{Remaining pointwise target and formalization scope}
+For the full atlas of a prescribed prime, ES failure would mean that every
+socle top monomial has a nonzero valuation degree, equivalently $\epsilon s=0$.
+The new positive test seeks $L_d>0$ on some shell or finite combined atlas.
+The proofs do not force that inequality uniformly. A separate arithmetic
+bound on the original moments is still required; merely constructing the
+boundary module or checking positive Gram matrices does not supply it.
+
+The coefficient modules, their support labels, original exponent vectors,
+channel maps, moment observation kernel, singular correction kernels and
+prime-wise reductions remain explicit. The new finite constructions do not
+inherit a Frobenius, a theta norm, or a zeta-zero interpretation by terminology.
+No source publication or unmerged Zeta branch is altered. Source claims of
+Lean/CI status are not a new Lean audit of this application.

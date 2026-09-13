@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-14",
+  "previous_integration": "7ea0a49945390eae14d3160a5730858899768b5f",
+  "zeta_main": "35b7aeaff0b63b0db71f26c5b921cdbbec2507fb",
+  "sources": [
+    {
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "path": "README.md",
+      "commit": "35b7aeaff0b63b0db71f26c5b921cdbbec2507fb",
+      "git_blob": "1b6653292ee93d22165ddcd0feefdbcdbf67dd52",
+      "read_scope": "Full fetched README; publication and programme status only, not all linked proofs",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/35b7aeaff0b63b0db71f26c5b921cdbbec2507fb/README.md"
+    },
+    {
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "path": "workbenches/tau-split-integration/RESEARCH_NOTE.md",
+      "commit": "35b7aeaff0b63b0db71f26c5b921cdbbec2507fb",
+      "git_blob": "dcedf4050f0ea18aa7e5aa975d6e767a91006edf",
+      "read_scope": "Full note, especially I1-I9; actual quotient and two transition defects",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/35b7aeaff0b63b0db71f26c5b921cdbbec2507fb/workbenches/tau-split-integration/RESEARCH_NOTE.md"
+    },
+    {
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "path": "workbenches/tau-arithmetic-metric-transfer/RESEARCH_NOTE.md",
+      "commit": "35b7aeaff0b63b0db71f26c5b921cdbbec2507fb",
+      "git_blob": "46f39f79cba608c551462e8a905f76f874f586e3",
+      "read_scope": "Lines 1-220; source detection, canonical secants, signed moment transfer",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/35b7aeaff0b63b0db71f26c5b921cdbbec2507fb/workbenches/tau-arithmetic-metric-transfer/RESEARCH_NOTE.md"
+    },
+    {
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "path": "workbenches/tau-restriction-certificate-formal/RESEARCH_NOTE.md",
+      "commit": "35b7aeaff0b63b0db71f26c5b921cdbbec2507fb",
+      "git_blob": "24744b69fb5b478c35c20d608cf1a281ef3e90b1",
+      "read_scope": "Lines 1-210; actual metric return maps and trace certificate, no full CI replay",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/35b7aeaff0b63b0db71f26c5b921cdbbec2507fb/workbenches/tau-restriction-certificate-formal/RESEARCH_NOTE.md"
+    },
+    {
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "path": "workbenches/splitzero-tandem/continuations/20260913-accepted-followups/deligne-mixed-control/sources/SP.tex",
+      "commit": "35b7aeaff0b63b0db71f26c5b921cdbbec2507fb",
+      "git_blob": "f249baf3a8eb6691aad153076a34ed5ec7c20631",
+      "read_scope": "Full SP1-SP13; same-source projections, signs and cross terms",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/35b7aeaff0b63b0db71f26c5b921cdbbec2507fb/workbenches/splitzero-tandem/continuations/20260913-accepted-followups/deligne-mixed-control/sources/SP.tex"
+    },
+    {
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "path": "workbenches/tau-mixed-boundary-formal/RESEARCH_NOTE.md",
+      "commit": "f57532b97c5c92a8c197e6cd4fef2b36b2d33e97",
+      "git_blob": "78537c3d0d928a9b534859bff9910ce498e13833",
+      "read_scope": "Full note; BR1-BR8; separate unmerged PR30 at intake",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/f57532b97c5c92a8c197e6cd4fef2b36b2d33e97/workbenches/tau-mixed-boundary-formal/RESEARCH_NOTE.md"
+    }
+  ],
+  "ES_main": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "previous_ES_PR5_head": "4f17e4aa63113a063eb027c8931cee5d5cce3981",
+  "source_status": "PR30 draft, unmerged at intake; no source CI claimed independently replayed",
+  "local_antecedent": {
+    "path": "es_zero_cohomology_bundle.zip",
+    "sha256": "3cf9290146e87fcd80023bf04e7f90e9582da984072e26d527e5bf508a9628eb",
+    "scope": "Exact previous bundle retained locally, its cohomology/weight theorem read; no prior full-check replay claimed in this turn"
+  },
+  "literature": [
+    {
+      "author": "Lasserre, J.-B.",
+      "year": 2022,
+      "title": "A disintegration of the Christoffel function",
+      "locator": "arXiv:2203.16238v1, section 2.1, equations (2.2)-(2.3)",
+      "used": "Upper canonical variational minimum is classical; no priority claim"
+    },
+    {
+      "author": "The Stacks Project",
+      "locator": "Lemma 15.31.2, Tag 062F",
+      "used": "Context for regular polynomial sequences; new joint kernel proved by basis calculation"
+    },
+    {
+      "author": "Elsholtz, C., and Tao, T.",
+      "year": 2013,
+      "locator": "arXiv:1107.1010, section 2, Propositions 2.2 and 2.6",
+      "used": "Inherited Type I/II coordinates; rational identity and denominators recalculated here"
+    }
+  ],
+  "not_read": [
+    "Entire 821-page R62 volume",
+    "All publication archives",
+    "All CI logs",
+    "Any unprovided private analytic source"
+  ]
+}

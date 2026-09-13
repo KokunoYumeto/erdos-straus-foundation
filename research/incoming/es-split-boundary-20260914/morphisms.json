@@ -1,0 +1,173 @@
+{
+  "convention": "Every map retains the original state and support label unless explicitly marked quotient; zero amplitude is not absence.",
+  "maps": [
+    {
+      "id": "A1",
+      "name": "Original leaf -> valuation tuple",
+      "domain": "canonical (p,a,R,E/M,beta)",
+      "codomain": "(same complete leaf,(d_l)_l,D)",
+      "inverse_or_information_loss": "D=product l^d_l; original leaf retained; tuple alone forgets residue units and exponents",
+      "proof_location": "A1,B1"
+    },
+    {
+      "id": "A2",
+      "name": "Original rational denominators",
+      "domain": "canonical leaf",
+      "codomain": "positive ordered rational triple with same p and D",
+      "inverse_or_information_loss": "u=a^2/(RY-pa) for E, pa^2/(RY-pa) for M; retain channel and shell",
+      "proof_location": "A2,A5"
+    },
+    {
+      "id": "B1",
+      "name": "Boundary socle insertion",
+      "domain": "V=direct_sum Q e_alpha",
+      "codomain": "joint kernel of all prime variables in direct_sum J_alpha",
+      "inverse_or_information_loss": "inverse extracts coefficient of top monomial in each labelled summand",
+      "proof_location": "B3"
+    },
+    {
+      "id": "B2",
+      "name": "Ordinary augmentation",
+      "domain": "direct_sum J_alpha",
+      "codomain": "V with same state labels",
+      "inverse_or_information_loss": "kernel all positive-degree monomials; not an inverse of socle inclusion",
+      "proof_location": "B3"
+    },
+    {
+      "id": "B3",
+      "name": "Success comparison",
+      "domain": "V",
+      "codomain": "V",
+      "inverse_or_information_loss": "epsilon s is idempotent diagonal; kernel span D>1, image span D=1",
+      "proof_location": "B4"
+    },
+    {
+      "id": "B4",
+      "name": "Local modulus observation",
+      "domain": "J_d for full marked alpha",
+      "codomain": "J_dprime for observed modulus, retaining original alpha",
+      "inverse_or_information_loss": "surjective truncation; complete kernel monomials exceeding dprime; not a shell-changing move",
+      "proof_location": "B5"
+    },
+    {
+      "id": "B5",
+      "name": "Reverse prime-layer embedding",
+      "domain": "J_dprime",
+      "codomain": "J_d",
+      "inverse_or_information_loss": "multiply by z^(d-dprime); inverse subtract exponents on image; QI not generally id",
+      "proof_location": "B5"
+    },
+    {
+      "id": "B6",
+      "name": "Arithmetic coefficient transition",
+      "domain": "fixed local observation Q",
+      "codomain": "same source and target",
+      "inverse_or_information_loss": "QM_x-M_xprime Q=(x-xprime)Q; nonzero defect retained",
+      "proof_location": "B6"
+    },
+    {
+      "id": "W1",
+      "name": "Split addition",
+      "domain": "B_f x B_b x {E,M}",
+      "codomain": "B_e x {E,M}",
+      "inverse_or_information_loss": "full intervals in W1, eta=beta-xi; nonconstant fibre multiplicities retained",
+      "proof_location": "W1"
+    },
+    {
+      "id": "W2",
+      "name": "Value pullback",
+      "domain": "original labelled coefficient functions",
+      "codomain": "occurrence functions weighted w_alpha/n_beta",
+      "inverse_or_information_loss": "isometry U; left inverse E fibre average; ker E star differences",
+      "proof_location": "W2,W3"
+    },
+    {
+      "id": "W3",
+      "name": "Coefficient pushforward",
+      "domain": "occurrence coefficient vectors",
+      "codomain": "original coefficient vectors",
+      "inverse_or_information_loss": "cost n_beta, section 1/n_beta; dual convention not silently value pullback",
+      "proof_location": "W3"
+    },
+    {
+      "id": "W4",
+      "name": "Boundary-weight square",
+      "domain": "socle/augmentation on labelled originals",
+      "codomain": "same modules on occurrences",
+      "inverse_or_information_loss": "U,E commute with every prime variable, s, epsilon, x; all weights retained",
+      "proof_location": "W4"
+    },
+    {
+      "id": "W5",
+      "name": "Old/new cohomology span",
+      "domain": "Q^matched-pairs",
+      "codomain": "Q^original-successes and Q^common-residues",
+      "inverse_or_information_loss": "two fibre-sum quotients with separate star kernels; neither assumed same",
+      "proof_location": "W5"
+    },
+    {
+      "id": "W6",
+      "name": "Canonical comparison of the two quotients",
+      "domain": "original-success coordinate space",
+      "codomain": "old residue H0",
+      "inverse_or_information_loss": "matrix B counts intersections/n_beta; column sums1; complete Gram B^T G_I B",
+      "proof_location": "W6,W7"
+    },
+    {
+      "id": "M1",
+      "name": "Moment observation",
+      "domain": "original weighted atomic measure",
+      "codomain": "m_0,...,m_(2d+1)",
+      "inverse_or_information_loss": "kernel signed measures with those vanishing moments; arithmetic label not recoverable from moments alone",
+      "proof_location": "M1,M2"
+    },
+    {
+      "id": "M2",
+      "name": "Upper canonical polynomial",
+      "domain": "exact moments on declared support",
+      "codomain": "normalized polynomial modulo (x-1)ker G_plus",
+      "inverse_or_information_loss": "RREF solution and full nullspace retained; formula M3; upper relation norm",
+      "proof_location": "M3,M4,M6"
+    },
+    {
+      "id": "M3",
+      "name": "Lower canonical polynomial",
+      "domain": "same exact original moments",
+      "codomain": "normalized polynomial modulo (x-1)ker G_minus",
+      "inverse_or_information_loss": "lower correction weight vanishes at x=c; those states retained; signed lower norm",
+      "proof_location": "M3,M4,M6"
+    },
+    {
+      "id": "M4",
+      "name": "Degree comparison",
+      "domain": "optimizer at degree i",
+      "codomain": "optimizer at degree j>=i",
+      "inverse_or_information_loss": "difference=(x-1) times explicit primitive; exact secants not norm-free quotient equality",
+      "proof_location": "M6"
+    },
+    {
+      "id": "M5",
+      "name": "Count certificate",
+      "domain": "L_d,U_d and original unit state masses",
+      "codomain": "unique integer H when ceil L=floor U",
+      "inverse_or_information_loss": "L>0 forces at least one labelled D=1; U<1 excludes hits only in stated finite atlas",
+      "proof_location": "M5"
+    },
+    {
+      "id": "M6",
+      "name": "Four integer moments",
+      "domain": "S_0,...,S_3 at one original shell",
+      "codomain": "signed 2x2 localizing matrix",
+      "inverse_or_information_loss": "A0,A1,A2 in M8; PSD boundary conditions M9; no universal converse asserted",
+      "proof_location": "M8,M9"
+    },
+    {
+      "id": "M7",
+      "name": "Certified interval observation",
+      "domain": "certified moment intervals and rational normalized polynomials",
+      "codomain": "rigorous lower/upper bounds",
+      "inverse_or_information_loss": "use coefficient signs separately; do not subtract independently bounded upper sums",
+      "proof_location": "section5 interval paragraph"
+    }
+  ]
+}
