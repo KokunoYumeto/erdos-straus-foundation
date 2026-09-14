@@ -1,0 +1,246 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=23mm]{geometry}
+\usepackage{lmodern,mathrsfs,amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\emergencystretch=2em
+\title{All-Support ES Cohomology and Its Uniform Mixed Completion}
+\author{The Clankers}
+\date{14 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+The complete local prime-power tests on original ES divisor states give a
+support-indexed resolution. Its higher truncation error is an explicit
+cohomology group, not an unassigned inclusion--exclusion remainder.
+Combining this resolution with actual split-occurrence relations preserves
+original state counts and admits a homotopy uniformly bounded by one.
+The prime-jet comparison and an absolutely convergent arithmetic supertrace
+are explicit. The construction does not force universal occupancy.
+\end{abstract}
+
+\paragraph{Original arithmetic and support.}
+For a prime $p=4m+1$, retain $m+1\le a\le2m$, $R=4a-p$,
+$a=\prod_iq_i^{e_i}$, $-e_i\le\beta_i\le e_i$, and
+$u=\prod_iq_i^{e_i+\beta_i}$. Each original label $\alpha$ includes these
+fields and $c\in\{E,M\}$. Put
+\[
+ g_E=4u+1,\quad g_M=u+a,\quad D_\alpha=R/\gcd(R,g_c).
+\]
+The inherited rational Type I/II triples are
+\[
+ E:\left(a,\frac{pa+a^2/u}R,\frac{pa+p^2u}R\right),\quad
+ M:\left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+\]
+Their two nonfirst reduced denominators are both $D$ by reducing their
+numerators modulo $R$ and multiplying by units. The factor identity
+$(RY-pa)(RZ-pa)=p^2a^2$ gives reciprocal sum $4/p$. Thus $D=1$ is the
+integral criterion. At a hit let $d_0=\gcd(a,u)$,
+$(h,r,s)=(d_0^2/u,u/d_0,a/d_0)$; the quotients are
+$\kappa=(pr+s)/R$ in E and $\lambda=(r+s)/R$ in M.
+The ordered inverses are $u=a^2/(RY-pa)$ and $u=pa^2/(RY-pa)$,
+respectively. No prime exponent or channel order is discarded \cite{ET}.
+
+Order the tests $T=\{(\ell,j):1\le j\le v_\ell(R)\}$ lexicographically.
+In $V=k^{\mathscr A}$ let $B_t$ be spanned by states failing test $t$.
+For $S\subseteq T$, let $F_\alpha(S)$ be its failed tests and $r_\alpha=|F_\alpha|$.
+Form the cochain
+\[
+ C_S^{-j}=\bigoplus_{\substack{I\subseteq S\\|I|=j}}\bigcap_{t\in I}B_t,
+ \qquad
+ d(e_{\alpha,I})=\sum_{t\in I}(-1)^{\operatorname{pos}_I(t)}
+                                     e_{\alpha,I\setminus\{t\}}.       \tag{1}
+\]
+For $j=0$ the intersection is the unchanged $V$. The support lattice is
+$\{\bot\}\sqcup\mathcal P(T)$ with a zero complex at the additional bottom.
+The empty test set is present and distinct from absence. Inclusions of
+supports give actual cochain maps; reconstruction uses the original
+SplitZero addition at the support join and its internal quotient \cite{SZ}.
+
+\begin{theorem}[Full resolution and all missing higher primitives]
+Over every commutative ring,
+\[
+ H^0(C_S)=k^{\{\alpha:F_\alpha(S)=\varnothing\}},\qquad H^{-j}(C_S)=0\ (j>0).
+\]
+The complete primitive on a failed block is $h z=e_{t_0}\wedge z$, with
+$t_0$ its least failed test. All other primitives differ by an incoming
+boundary. If (1) is truncated at degree $-d$, $d\ge1$, its extra top
+cohomology on a block with $r>d$ is
+\[
+ \bigwedge^d\ker(\mathbf1^*:k^r\to k),\qquad
+ \operatorname{rank}=\binom{r-1}{d}.                       \tag{2}
+\]
+Its integral basis consists of wedges of $e_i-e_{t_0}$; its inverse reads
+subsets omitting $t_0$, and its omitted full primitive is $e_{t_0}\wedge z$.
+\end{theorem}
+\begin{proof}
+Each block of (1) is the exterior algebra on the failed tests, in negative
+degrees, with contraction $\iota$ by the all-ones covector. Expanding on
+ordered basis subsets gives $\iota\varepsilon_v+\varepsilon_v\iota=\iota(v)$.
+At $v=e_{t_0}$ it is the identity. A passing block consists only of its
+original degree-zero coordinate. Finally split
+$k^r=ke_{t_0}\oplus\ker\mathbf1^*$. Contraction sends $e_{t_0}\wedge z$
+to $z$ and kills the second summand, proving (2) and every inverse.
+\end{proof}
+This uses the classical simplex/Koszul construction \cite{Kos}, with the
+actual arithmetic labels rather than a presumed geometric realization.
+
+\newpage
+\paragraph{Support changes and the original metric.}
+Give every exterior basis term of state $\alpha$ its original weight $w_\alpha>0$.
+Over $\mathbb Q$ or $\mathbb R$, the canonical homotopy is wedge by
+$\overline e_F=r^{-1}\sum_{t\in F}e_t$. Its adjoint calculation gives
+\[
+ \Delta=dd^*+d^*d=rI,\qquad h=d^*\Delta^{-1},\qquad\|h\|=r^{-1/2}\le1.
+                                                               \tag{3}
+\]
+On passing blocks the harmonic projection is the identity. For $S\subseteq T$,
+$K_{ST}=h_Ti_{ST}-i_{ST}h_S$ satisfies
+\[
+ dK_{ST}+K_{ST}d=i_{ST}\pi_S-\pi_Ti_{ST},\qquad
+ K_{SU}=K_{TU}i_{ST}+i_{TU}K_{ST}.                          \tag{4}
+\]
+These follow by inserting $dh+hd=1-\pi$ and telescoping. The contractions
+are fibrewise, not asserted natural; $K_{ST}$ records their exact defect.
+A killed degree-zero class has its receiving primitive $e_{\alpha,t}$,
+not an absent receiving state. If the failed counts are $0<r\le s$,
+the squared norm of its change in canonical primitive is exactly
+$w_\alpha(1/r-1/s)$; if $r=0<s$ it is $w_\alpha/s$.
+The formula follows by computing the cross pairing $1/s$ between uniform
+vectors on nested failed sets.
+
+\paragraph{Arithmetic meaning of the higher correction.}
+For a finite original atlas with $H$ hits, alternating binomial summation gives
+\[
+ \boxed{\sum_{j=0}^d(-1)^j\dim C^{-j}
+ =H+(-1)^d\sum_{r_\alpha>0}\binom{r_\alpha-1}{d}.}         \tag{5}
+\]
+At $p=1129$, $a=396$, $R=455=5\cdot7\cdot13$, all 150 states fail and
+the full dimensions are $(150,378,313,85)$. Every pair of local exterior
+conditions has an actual divisor witness: $726,26136$ for $(5,7)$,
+$16,81$ for $(5,13)$, and $432$ for $(7,13)$. None satisfies all three.
+The pair-truncated value 85 is exactly its missing top cohomology, killed
+by the original 85 third-support primitives. The prime itself has a witness
+at $a=285,R=11,u=1$ in M: $(285,8365890,29354)$.
+At $p=2689$, $a=781$, $R=435$, the dimensions are $(18,36,24,5)$.
+The unique canonical hit is
+\[
+ E:\ (u,h,r,s,\kappa)=(8591,71,11,1,68),\quad
+ (781,4828,142807412).
+\]
+Its pair-truncated value six returns to the correct one after (5).
+
+\paragraph{The actual split relation direction.}
+A split $e=f+b$ has complete fibre
+$\max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i)$,
+$\eta=\beta-\xi$. Retain its entire ordered set $F_\alpha$ of size $n$.
+Use $S^{-1}=\ker(q:k^{F_\alpha}\to k)\hookrightarrow S^0=k^{F_\alpha}$,
+where $q$ sums coefficients. With original coefficient cost $nw_\alpha$
+on each occurrence, $\sigma(c)=(c/n)_\omega$ is an isometry,
+$\sigma^*=q$, and $P_S=\sigma q$ on degree zero. On degree $-1$ take
+$P_S=0$. The relation metric in its star basis is $nw_\alpha(I+\mathbf1\mathbf1^*)$.
+The homotopy sends $F$ to $F-\sigma qF$ in the actual kernel; hence
+$\Delta_S=1-P_S$.
+
+\begin{theorem}[Mixed double complex with constants independent of the array]
+On $\mathcal T=S\otimes C$, use
+$d=d_S\otimes1+(-1)^{\deg S}\otimes d_C$. The augmentation $q\otimes1$
+and section $\sigma\otimes1$ are cochain maps with full fibre kernel retained.
+At a state failing $r$ tests,
+\[
+ \boxed{\Delta_{\mathcal T}=rI+(I-P_S)\otimes I.}           \tag{6}
+\]
+Its Green operator is $P_S/r+(I-P_S)/(r+1)$ for $r>0$, and $I-P_S$ for
+$r=0$. Both the Green and $d^*G$ have norm at most one. The harmonic image
+has one direction per original successful state, not per split occurrence.
+\end{theorem}
+\begin{proof}
+The tensor sign cancels the mixed terms in $d^2$ and in the Laplacian.
+Add (3) to $\Delta_S=1-P_S$. The two orthogonal sectors give (6) and its
+inverse. On every positive eigenvalue $\lambda\ge1$,
+$\|d^*G\|\le1/\sqrt\lambda$. Its homotopy identity gives every primitive;
+the missing inverse coordinates are exactly the original split relations.
+\end{proof}
+
+\newpage
+\paragraph{Natural return to the SplitZero prime jets.}
+Put $d_{\alpha\ell}(S)=\#\{(\ell,j)\in F_\alpha(S)\}$ and
+\[
+ J_{\alpha,S}=k[z_\ell]_\ell/(z_\ell^{d_{\alpha\ell}(S)+1})_\ell,
+ \qquad D_S=(I_S^+=\ker\epsilon\hookrightarrow J_S).
+\]
+The cochain map $F:C_S\to D_S$ sends degree-zero $e_\alpha$ and every
+failed singleton to the same top monomial $z^{d_\alpha(S)}e_\alpha$;
+it is zero in lower degrees. Singletons have positive-degree targets in
+$I^+$; pair boundaries have opposite equal images. This proves $dF=Fd$.
+For $S\subseteq T$ the target map multiplies by
+$z^{d(T)-d(S)}$, an injection with inverse exponent subtraction on its image.
+It is a module map, generally not a unital algebra map; it makes $F$ natural
+and is not the opposite truncation map.
+On $H^0$, the comparison includes precisely the passing coordinates into
+the ordinary augmentation space. The complete mapping cone
+\[
+ \operatorname{Cone}(F)^n=D^n\oplus C^{n+1},\quad
+ d(y,z)=(d_Dy+Fz,-d_Cz)
+\]
+has $H^0$ freely based by failing original states and no other cohomology.
+To verify, eliminate positive-degree monomials by their identical primitives
+in $I^+$ and the simplex pairs by Theorem 1. The remaining coordinates are
+exactly those stated. Thus the derived top line, supported zero and actual
+success remain three different observations \cite{SZ}.
+
+\paragraph{Infinite completion with an actual trace domain.}
+For a specified full-support packet, take its Hilbert amplitude direct sum.
+The carrier retains the support labels separately from zero amplitudes. Use maximal
+componentwise domains for $d,d^*$ and $\Delta$. Closedness follows by taking
+components of graph limits; testing finitely supported vectors identifies
+the adjoint domain. The Green and homotopy bounds of (6) extend uniformly,
+and
+\[
+ \|e^{-t\Delta}-\Pi_H\|\le e^{-t}.
+\]
+In a split fibre the raw heat trace is
+$[1+2(n-1)e^{-t}]2^re^{-tr}$; the actual split-harmonic compression has
+trace $2^re^{-tr}$. Changing the metric alone would not remove the first
+factor. Therefore retain the compression $P_S$ in the arithmetic trace.
+
+If $M_s$ multiplies the prime-$p$ row by $p^{-s}$ and $t\ge\log2$, then
+for $\sigma=\Re s>2$
+\[
+ \boxed{\operatorname{Str}(M_sP_Se^{-t\Delta})=\sum_p p^{-s}H_p.} \tag{7}
+\]
+Absolute convergence precedes cancellation: there are at most
+$W_p\le4m(1+\lfloor\log_2(2m)\rfloor)^2$ original states, because
+$\tau(a^2)\le d_3(a)$ and $\sum_{a\le N}d_3(a)\le N(\sum_{j\le N}1/j)^2$.
+The compressed state trace is $(2e^{-t})^r\le1$.
+On $2^j\le p<2^{j+1}$ we have $W_p\le pj^2$ and at most $2^j$ indices,
+so the trace-norm tail after $2^L$, $L\ge3$, is bounded by
+\[
+ \rho^L\left(\frac{L^2}{1-\rho}+\frac{2L\rho}{(1-\rho)^2}
+            +\frac{\rho(1+\rho)}{(1-\rho)^3}\right),
+ \qquad \rho=2^{-(\sigma-2)}.
+\]
+Now each failed block has alternating sum $(1-1)^r=0$ and each successful
+block contributes one, proving (7). At $\sigma=3$ the full bound is $9/2$.
+No unrestricted or conditionally convergent infinite trace is asserted.
+
+\paragraph{Scope.}
+The ordinary intersection resolution and Koszul contraction are classical.
+The contribution retains the actual ES tests, every prime-power threshold,
+split primitives, cochain comparison and infinite trace domain. It gives an
+exact account of the simultaneous-failure object and of the additional
+higher relations omitted by pair truncation. It does not prove that every
+prime row has $H^0\ne0$. An arithmetic lower bound on the same original
+cohomology count remains necessary; higher exactness alone does not supply it.
+The standalone checker covers 9531 shells, 412838 original states, all stated
+examples, matrices and negative controls. No historical-priority, independent
+review or Lean-build claim is made.
+
+\begingroup\small
+\begin{thebibliography}{3}
+\bibitem{SZ} The Clankers. (2026). \emph{SplitZero: reconstruction, internal homology, and balanced finite jets}, \S\S1--4, 6, Zeta commit \texttt{8fd2157e\ldots{}ec0c15}. Exact paths accompany the workbench source.
+\bibitem{Kos} The Stacks Project Authors. \emph{The Koszul complex}. Definition 15.29.1 and Lemma 15.29.5, Tag 0621.
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc., 94}(1), 50--105, \S2.
+\end{thebibliography}
+\endgroup
+\end{document}
