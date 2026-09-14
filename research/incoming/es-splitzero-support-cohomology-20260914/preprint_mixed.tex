@@ -1,0 +1,232 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=23mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\emergencystretch=2em
+\title{A Genuine Three-Support Class in an ES Divisor Source}
+\author{The Clankers}
+\date{14 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+Actual residue-pushforward kernels on the nine divisors of $118^2$ give a
+mixed cohomology class invisible on every pair of supports. We calculate its
+complete integral representatives, local-gluing obstruction and original
+quotient metric. The construction is an explicit arithmetic application of
+support-indexed internal homology, not a reinterpretation of a three-column
+Gram matrix. It does not prove universal Erd\H{o}s--Straus existence.
+\end{abstract}
+
+\paragraph{Source framework.}
+The SplitZero reconstruction retains a diagram of modules on a
+join-semilattice and takes its disjoint union: supported zero $(S,0)$ is
+not absence $\tau$. Quotients use the actual incoming differential; a
+transition kills a class precisely when its chain image has a receiving
+boundary primitive \cite[\S\S1--4]{SZ}. Here supports are subsets of three
+original relation modules. Inclusions of supports include their actual
+intersection complexes. An additional bottom is the zero complex; the
+empty test set still carries $V$. The inclusions, differentials and induced homology transitions are coherent
+linear families and have their SplitZero reconstructions. Individual choices
+of sections are not assumed natural; their relation corrections are retained.
+
+\begin{theorem}[Mixed relation and local-gluing comparison]
+Let $U_1,U_2,U_3$ be submodules of a module $V$ over a commutative ring $k$.
+In degrees $-3,-2,-1,0$ form
+\[
+ C:\quad U_{123}\longrightarrow U_{12}\oplus U_{13}\oplus U_{23}
+ \longrightarrow U_1\oplus U_2\oplus U_3\longrightarrow V,
+\]
+where $U_I=\bigcap_{i\in I}U_i$ and
+\[
+ d_3(t)=(t,-t,t),\quad d_2(a,b,c)=(-a-b,a-c,b+c),\quad
+ d_1(u_1,u_2,u_3)=u_1+u_2+u_3.
+\]
+Then
+\[
+ \boxed{H^{-1}(C)=
+ \frac{U_3\cap(U_1+U_2)}{U_{13}+U_{23}},\quad
+ H^{-2}(C)=H^{-3}(C)=0,\quad H^0(C)=V/(U_1+U_2+U_3).}       \tag{1}
+\]
+The first isomorphism sends a cycle to its third coordinate. Let
+\[
+ \mathcal G=\{([v_i])\in\textstyle\bigoplus_iV/U_i:
+                         v_j-v_i\in U_i+U_j\ (i<j)\}.
+\]
+There is also the exact comparison
+\[
+ \boxed{H^{-1}(C)\simeq\mathcal G/\operatorname{diag}V,
+ \qquad[(u_1,u_2,u_3)]\longmapsto[(0,u_3,0)].}              \tag{2}
+\]
+Every two-submodule restriction has $H^{-1}=0$.
+\end{theorem}
+\begin{proof}
+For (1), a cycle's third coordinate lies in the stated numerator.
+A boundary changes it by $b+c$. An element $u_3$ of that numerator lifts
+by choosing $-u_3=u_1+u_2$; two choices differ by $(v,-v,0)$,
+$v\in U_{12}$. If $u_3=b+c$, subtract $d_2(0,b,c)$; the remaining
+cycle is of this same pair-boundary form. Also $\ker d_2$ consists of
+$(t,-t,t)$ with $t\in U_{123}$ and $d_3$ is injective. This proves all
+groups and inverse fibres, including the pair case.
+For (2), adding $d_2(a,b,c)$ changes the middle quotient by $b+c$.
+The term $c$ vanishes modulo $U_2$ and $(0,b,0)$ is diagonal since
+$b\in U_1\cap U_3$. To invert a compatible triple, subtract its first
+representative diagonally, then write it as $(0,a_1,b_1)$ with
+$a_1,b_1\in U_1$. Write $b_1-a_1=c_2+c_3$ with $c_i\in U_i$.
+Subtracting $b_1$ gives $(0,-c_3,0)$, the image of the cycle
+$(b_1-a_1,-c_2,-c_3)$. If a cycle image is diagonal $v$, then $v\in U_{13}$ and
+$u_3-v\in U_{23}$, so (1) makes it a boundary. This proves injectivity and
+the inverse choices. The diagonal map has its own kernel $U_{123}$.
+\end{proof}
+The intersection-complex and distributive-lattice context are classical
+\cite[\S2.1, (5)--(8); \S3]{Mas}. No distributivity is presumed in (1).
+
+\newpage
+\paragraph{The exact arithmetic modules.}
+Take the prime $p=241$ and its first-half ES shell
+\[
+ a=118=2\cdot59,\qquad R=4a-p=231=3\cdot7\cdot11.
+\]
+Take $k$ nontrivial. The original divisor set, in its retained order, is
+\[
+ \mathcal D=\{1,2,4,59,118,236,3481,6962,13924\},\quad V=k^{\mathcal D}.
+\]
+For $\ell=3,7,11$ use $r_\ell(e_u)=e_{u\bmod\ell}$ and set
+$U_1=\ker r_3,U_2=\ker r_7,U_3=\ker r_{11}$.
+Every residue fibre has reference $u_0$ and complete relation basis
+$e_u-e_{u_0}$. Its coefficient-sum quotient has inverse representative
+$e_{u_0}$; the entire inverse fibre adds those relations.
+The actual fibres are
+\[
+\begin{array}{c|l}
+3&\{1,4,118,3481,13924\},\ \{2,59,236,6962\}\\
+7&\{1,13924\},\ \{2,3481\},\ \{4,6962\},\ \{59\},\ \{118\},\ \{236\}\\
+11&\{1\},\ \{2\},\ \{4,59\},\ \{118\},\ \{236,3481\},\ \{6962\},\ \{13924\}.
+\end{array}                                                   \tag{3}
+\]
+Set
+\[
+\begin{gathered}
+ a_0=e_{13924}-e_1,\quad v=e_{3481}-e_2,\quad w=e_{6962}-e_4,
+ \quad b_0=v+w,\\
+ r=e_{59}-e_4,\quad s=e_{3481}-e_{236},\quad c_0=r+s.
+\end{gathered}
+\]
+The complete integral calculations from (3) are
+\[
+ U_2=\langle a_0,v,w\rangle,\quad U_3=\langle r,s\rangle,
+\quad U_{12}=\langle a_0,b_0\rangle,\quad U_{13}=\langle c_0\rangle,
+\quad U_{23}=U_{123}=0.                                    \tag{4}
+\]
+Indeed $a_0$ has zero modulo-three sum, $v,w$ have opposite such sums,
+and so do $r,s$. Membership in $U_2$ forces zero coefficients at both
+$59$ and $236$; this proves the last intersection is zero. All pivots are
+units, so the assertions hold over any commutative $k$.
+The seven internal modulo-three fibre differences, together with $v$,
+generate every total-sum-zero vector. Hence $H^0(C)=k$.
+
+\begin{theorem}[A nonzero ternary class and its full inverse]
+For (3)--(4), all pairwise mixed groups vanish, but
+\[
+ \boxed{H^{-1}(C)\simeq k,\qquad\gamma=(-v-r,v,r)\text{ generates it}.} \tag{5}
+\]
+Every cycle has a unique expression
+\[
+ z=\lambda\gamma+d_2(Aa_0+Bb_0,Cc_0,0),                   \tag{6}
+\]
+with inverse
+\[
+\begin{gathered}
+ \lambda=[e_{59}]z_3-[e_{3481}]z_3,\quad C=[e_{3481}]z_3,\\
+ A=[e_{13924}](z_2-\lambda v),\qquad
+ B=[e_{3481}](z_2-\lambda v).
+\end{gathered}
+\]
+\end{theorem}
+\begin{proof}
+Write $z_3$ in the complete basis $r,s$. Subtract the displayed multiple
+of $\gamma$ and the $Cc_0$ boundary; the third component becomes zero.
+The remaining second component lies in $U_{12}$ and has the unique
+$a_0,b_0$ coefficients shown. This proves existence and uniqueness in
+(6), so no nonzero multiple of $\gamma$ is a boundary. Formula (1) gives
+the pair statement. This is an integral proof, not just a rational rank test.
+\end{proof}
+Under (2), the resulting nonzero local-gluing class has representatives
+$(0,r,0)$. Its three pairs have common lifts $v+r,0,r$, respectively.
+A global lift would be $A(r+s)$, since it must lie in $U_1\cap U_3$.
+Its modulo-seven coordinate at residue three forces $A=1$, and that at
+residue five forces $A=0$. Thus no global linear lift exists.
+
+\newpage
+\paragraph{Original relation metric and canonical representative.}
+Over $\mathbb Q$ or $\mathbb R$, keep the counting metric on each of the
+three original copies of $V$. Define the actual incoming columns
+\[
+ B_0=d_2(a_0,0,0),\quad B_1=d_2(b_0,0,0),\quad B_2=d_2(0,c_0,0).
+\]
+Direct coefficient multiplication gives
+\[
+ \boxed{B^*B=\begin{pmatrix}4&0&0\\0&8&2\\0&2&8\end{pmatrix},\quad
+ B^*\gamma=\begin{pmatrix}0\\5\\5\end{pmatrix},\quad
+ \|\gamma\|^2=8.}                                        \tag{7}
+\]
+Thus the unchanged source metric gives the least-norm representative
+\[
+ \boxed{\gamma_h=\gamma-\tfrac12B_1-\tfrac12B_2,
+ \quad\|\gamma_h\|^2=3,
+ \quad\|\gamma-\gamma_h\|^2=5.}                           \tag{8}
+\]
+Multiplying (7) by $(0,1/2,1/2)^\mathsf T$ verifies orthogonality.
+Every representative of $\lambda[\gamma]$ is $\lambda\gamma_h+Bt$ with
+exact squared norm $3\lambda^2+t^*(B^*B)t$. The actual primitive of the
+removed term is $(b_0/2,c_0/2,0)$ in degree $-2$. Its source value is not
+replaced by zero before passing to the quotient.
+This implements the original-metric minimum-section identity of the
+SplitZero workbench \cite[AMT7--10]{AMT} on the explicit arithmetic modules.
+It does not transfer the workbench's analytic Gamma metric to this example.
+
+\paragraph{The arithmetic target map is additional data.}
+Neither $H^0(C)=k$ nor $H^{-1}(C)=k$ is a count of ES solutions.
+The preceding residue kernels forget coefficient distributions, whereas
+the ES channels require target residues of actual original divisors.
+In E the local targets are $-4^{-1}\bmod\ell$; in M they are
+$-a\bmod\ell$. With paired standard bases, $r_\ell^*$ pulls each target
+delta back to its indicator $p_{\ell,c}$ on $\mathcal D$.
+The actual global gate is pointwise product
+\[
+ \mathbf1_{R\mid g_c(u)}=\prod_{\ell\mid R}p_{\ell,c}(u),
+ \quad g_E=4u+1,\quad g_M=u+a.                            \tag{9}
+\]
+Both channels are empty at this shell. Every local observation and every
+higher class above still exists. Formula (9) explicitly compares the source
+maps with the arithmetic predicates, rather than pretending their different
+cohomologies are one object. For general prime powers one retains every
+threshold $\ell^j\mid g_c$ and uses their joint test on the same $u$.
+
+For the separate coordinate failure ideals $B_t=(1-p_t)V$, the complete
+intersection complex has basis $(u,I)$ with $I$ a set of failed tests.
+Its boundary removes one test with alternating sign. Each nonempty failed
+set is an augmented simplex, contracted integrally by wedging its least
+vertex; only states satisfying every test contribute $H^0$. The larger
+workbench tranche proves the split-occurrence double complex, its natural
+prime-jet comparison, all higher truncation errors and its uniformly bounded
+Hilbert homotopy. These are not assumed in (1)--(9).
+
+\paragraph{Reproduction and status.}
+The standard-library verifier reconstructs all fibres, kernels and
+intersections, (5)--(8), and the local-gluing rank obstruction. It also checks
+625 complete cycle-coordinate returns and both arithmetic gates. A separate
+proof is supplied for each claimed universal algebraic identity; finite tests
+are not used as substitutes. The general mixed intersection mechanism is
+classical \cite{Mas}. The explicit divisor-residue example and its retained
+metric calculation are the present application; no historical-priority,
+Lean-build, independent-review or universal ES claim is made.
+
+\begingroup\small
+\begin{thebibliography}{4}
+\bibitem{SZ} The Clankers. (2026). \emph{SplitZero: reconstruction, internal homology, and balanced finite jets}. \texttt{formal/splitzero/DERIVED\_MATHEMATICS.md}, \S\S1--4, Zeta repository commit \texttt{8fd2157e\ldots{}ec0c15}.
+\bibitem{AMT} Split-Zero research programme. (2026). \emph{The original arithmetic and Gamma mixed transfer}. Current fourteen-file source packet, file13, AMT7--10; same pin. Full locators accompany this note.
+\bibitem{Mas} Maszczyk, T. (2009). \emph{Distributive lattices and cohomology}. arXiv:0811.3997v2, \S2.1, (5)--(8), and \S3. The needed non-distributive groups here are proved directly.
+\end{thebibliography}
+\endgroup
+\end{document}
