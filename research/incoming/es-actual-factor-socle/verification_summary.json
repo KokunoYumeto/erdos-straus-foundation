@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "domain": "six hard classes modulo840; primes p<=2000000; valid dyadic seeds k>=4, p>2u",
+  "main_explicit_checks": 265616,
+  "negative_controls": 8,
+  "separate_implementation_checks": 111868,
+  "ordinary_and_optimized": "Both main and separate implementations returned zero and generated identical mathematical JSON",
+  "canonical_row_digest": "96d0022e6b20c8e4952e085e0c0ac34311ae1699e357467a5be20c3bc2dbae1b",
+  "totals": {
+    "hard_primes": 4519,
+    "branches": 37289,
+    "original_middle_states": 4583,
+    "occupied_branches": 3097,
+    "occupied_primes": 2411,
+    "old_capacity_branches": 993,
+    "old_capacity_primes": 990,
+    "new_socle_branches": 1139,
+    "new_socle_primes": 1119,
+    "short_both_roles_branches": 3051,
+    "short_both_roles_primes": 2387,
+    "fair_baseline_branches": 3065,
+    "fair_baseline_primes": 2398,
+    "fair_plus_socle_branches": 3068,
+    "fair_plus_socle_primes": 2399
+  },
+  "strict_branch_additions": [[852769,6],[1546729,5],[1553281,5]],
+  "strict_prime_additions": [852769],
+  "mathematical_json_sha256": {
+    "checks.json": "f48e17a905c4e346389c8fd06b9461525d155a6793ecb7047c05dbb064da8f9f",
+    "examples.json": "899a8162e7b1442fbc9adfe794543fad0facd2e8aa7c87a956c39c2381c8d3e1",
+    "independent.json": "cf211b48e3de8956d099f3969d0aebbb39a09854da41048427a52aadf7b90cd6",
+    "negative_controls.json": "fba9e2880ced3c4c35cf97a6b2f9c32b066ff89100eb72beca7337fb284f1d9f",
+    "scan.json": "c5e3646cc3da647ddadcb126834a0b07faca1240f846c41079a2376018ecfbba",
+    "structural.json": "6915cb781950ccc3b47d2b546810bbdedb473174476e24fe1e7ea3bb2d82f190"
+  },
+  "nonclaims": ["No universal ES proof","No new overall prime coverage","No Lean build","No independent mathematical review","No historical-priority claim"],
+  "publication_scope": "Complete workbench proof and both standalone checkers; generated tables reproduce from scripts. Local package has expanded metadata and rendered documents."
+}
