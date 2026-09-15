@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-15",
+  "comparison": {
+    "bound": 2000000,
+    "scope": "All six hard classes modulo840; all k>=4 with2^(2k-4)<p",
+    "primes": 4519,
+    "valid_seed_branches": 37289,
+    "original_states": 4583,
+    "occupied_branches": 3097,
+    "old_capacity_primes": 964,
+    "old_capacity_branches": 966,
+    "new_certificate_primes": 1194,
+    "new_certificate_branches": 1199,
+    "union_primes": 1196,
+    "additional_primes": 232,
+    "additional_branches": 237,
+    "old_not_new_primes": [820969, 1501369],
+    "simple_socle_branches": 1086,
+    "pivot_beyond_simple_branches": 113,
+    "table_sha256": "df4bd274c9b2ffe701388538a2f9bc55f97ce75a7de353a9fc61de9a2816adb3"
+  },
+  "published_checker": {
+    "file": "check_independent.py",
+    "method": "Finite group logs; parity-aware bounded knapsack; complete actual divisor enumeration",
+    "checks": 111867,
+    "ordinary_and_optimized_outputs_identical": true,
+    "scope": "Finite comparison; no import of the main local verifier and no independent-review claim"
+  },
+  "worked_example_checker": {
+    "file": "check_examples.py",
+    "examples": 3,
+    "complete_original_state_counts": [1, 2, 1],
+    "ordinary_and_optimized_outputs_identical": true,
+    "prime_testing": "Complete deterministic trial division for each displayed prime and factor"
+  },
+  "expanded_local_verifier": {
+    "file_in_local_handoff": "verify.py",
+    "checks": 216302,
+    "negative_controls_rejected": 6,
+    "ordinary_and_optimized_outputs_identical": true,
+    "not_in_this_public_intake": true
+  },
+  "main_example": {
+    "p": 1794769,
+    "k": 5,
+    "N_factors": [[3,2],[13,1],[23,2],[29,1]],
+    "selected": [[3,2],[13,1],[23,1]],
+    "positive_blocks": [9,13,23],
+    "effective_modulus": 16,
+    "selected_divisor": 207,
+    "factor_role": "residual",
+    "R": 207,
+    "Q": 8671,
+    "a": 448744,
+    "u": 32,
+    "h": 2,
+    "r": 4,
+    "s": 56093,
+    "lambda": 271,
+    "denominators": [448744,54565295814214,3891059192],
+    "unique_state_in_fixed_seed": true,
+    "minimum_factor_occurrences_on_either_side": 3
+  },
+  "nonclaims": [
+    "No universal ES proof",
+    "No new overall ES verification range",
+    "No necessity of this criterion for all ES hits",
+    "No efficient general factorization algorithm",
+    "No historical-priority determination",
+    "No new Lean build or independent mathematical review"
+  ]
+}
