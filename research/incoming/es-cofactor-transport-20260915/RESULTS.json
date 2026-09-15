@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-15",
+  "base_commit": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "source_blobs": {
+    "preprint.tex": "40ff8de8a2cdb865dfe7766aa105b1214ad61cdb",
+    "verify.py": "644074d7b4f01cfb7141aed24da00a4653a82655",
+    "check_count.py": "9d2c7423f2a8642d003a7781b4c5668d7f883b83"
+  },
+  "local_runs": {
+    "verify_normal_returncode": 0,
+    "verify_optimized_returncode": 0,
+    "check_count_normal_returncode": 0,
+    "check_count_optimized_returncode": 0,
+    "all_six_mathematical_JSON_outputs_identical": true,
+    "main_checks": 150069,
+    "main_rejected_false_controls": 6,
+    "independent_checker_conditions": 28663,
+    "independent_progression_integer_branches": 7234
+  },
+  "census": {
+    "scope": "p<=2000000, p=25 mod48, p prime in six hard mod840 classes; fixed u=8 only",
+    "primes": 2245,
+    "occupied_fixed_seed_branches": 839,
+    "empty_fixed_seed_branches": 1406,
+    "original_middle_states": 1303,
+    "minimum_residual_above_sqrt_N": 240,
+    "balanced_formula_branches": 1677
+  },
+  "examples": [
+    {"p":2542201,"k":4,"N":2542233,"N_factors":[[3,1],[37,2],[619,1]],"count":1,"R":22903,"Q":111,"u":8,"h":2,"r":2,"s":160319,"lambda":7,"denominators":[641276,5705883709666,71181628],"reflection_u_defect":2},
+    {"p":6185041,"k":5,"u":32,"N_factors":[[3,2],[829,2]],"threshold":3,"e":2,"fixed_seed_count":0,"other_middle_seed":[1,23]},
+    {"p":9017211169,"k":6,"u":128,"N_factors":[[3,6],[3517,2]],"threshold":7,"e":6,"fixed_seed_count":0,"other_middle_seed":[2,39]},
+    {"p":50929,"k":5,"e":3,"M_factors":[[31,1],[61,1]],"count":1,"R":1647},
+    {"p":26460001,"k":6,"e":8,"M_factors":[[37,1],[109,1]],"count":1,"R":8991,"Q":2943},
+    {"p":653881,"k":4,"e":7,"M_factors":[[13,1],[23,1]],"deep_short_R":39}
+  ],
+  "nonclaims": ["No universal ES proof","No new prime verification range","No historical priority","No independent mathematical review","No Lean build","No source-wide audit"]
+}
