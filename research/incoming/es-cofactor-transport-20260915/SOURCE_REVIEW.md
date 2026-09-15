@@ -1,0 +1,13 @@
+# Source review and attempt record
+
+Base: foundation main63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9; CONTRIBUTING.md blob63a407d17fc53e481061b2efbc51f71b2cb54578 read in full.
+
+The local predecessor was the attached split-scalar arithmetic package dated15September2026. Its core sections1-4 were read. The least-square-root divisor and fixed-seed CRT equations were separately recovered in the previous Boolean-product transcript, lines4741-4822. The fixed-p correlation window was read at lines7671-7748, including the already failed multiplier route. The p1201 R31/R39 witnesses were read as inherited inputs, not counted as new discoveries. Private transcripts are not republished.
+
+Primary literature actually inspected: Elsholtz and Tao, arXiv1107.1010v6, section2 equations(2.13)-(2.22), Propositions2.6-2.7; Sutherland's MIT18.785 Lecture18, Theorem18.1. The former supplies inherited TypeII coordinates, rederived here. The latter supplies primes q in the sharpness progression; it supplies no primality assertion for p=3^e q^2-4u.
+
+The exact count argument uses elementary finite cyclic-group arithmetic proved in full. The general ideas of divisor-complement pairing, residue carriers and prime-power multiplicities are inherited mathematical tools, not claimed inventions. A content-level search for Erdos–Straus with cofactor multiplicity, p+32/mod16 and3-adic powers found no verified exact earlier statement of this combined theorem; this is not an exhaustive novelty determination. Dahan's arXiv2608.24035 inverse-pair work is a relevant prior programme reference but its complete text could not be fetched in this turn, so no new reading or precise-content claim is made. A separate search lead labelled CN-shared complementary cover also could not be opened and was not used as a theorem.
+
+Attempt sequence: unrestricted same-p cofactor reflection was tested first. Its exact constant availability defect was proved and the square-root-return claim was restricted to its actual locus. The dyadic defect-two family then led to a different constructive operation: an actual bounded3-power block and a residue half-cycle. Pairing original divisors yielded the all-multiplicity lower bound. The threshold was stress-tested one occurrence below it and two actual hard-prime failures were certified; other ES witnesses are given for those primes. Cross-seed forcing for every prime remains unproved.
+
+No source-wide reader/CI audit, formal Lean build, historical-priority claim or universal ES assertion is made. The source/project and analytic frameworks are not identified merely by shared terminology.
