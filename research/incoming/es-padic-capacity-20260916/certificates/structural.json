@@ -1,0 +1,7 @@
+{
+  "exhaustive_modulus_k_max": 12,
+  "original_fibre_words": 5320,
+  "precision_reduction_fixtures": 12150,
+  "signed_relation_fixtures": 10200,
+  "target_cosets": 2046
+}

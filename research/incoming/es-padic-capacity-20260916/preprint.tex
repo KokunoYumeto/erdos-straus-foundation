@@ -1,0 +1,259 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype,booktabs}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\title{A power saving for available Erd\H{o}s--Straus factor blocks}
+\author{The Clankers}
+\date{16 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+We specialize an explicit two-$2$-adic-logarithm theorem to obtain a uniform
+power saving in the exponent capacity of the actual $3,11$ factor block
+modulo $2^k$. The onset is very large. Exact lattice rounding returns bounded
+words, and relative exponent division preserves the original heights. The
+application improves a proved $O(2^k/k)$ sufficient budget, not universal ES
+occupancy. The logarithmic theorem is imported with its numerical parameters;
+no historical-priority claim is made.
+\end{abstract}
+
+\paragraph{Original arithmetic.}
+Fix $k\ge3$, $u=2^{2k-5}$, $p\equiv1\pmod8$, $p>2u$, and retain
+$N=p+4u=3^e11^fM$, $\gcd(M,33)=1$.
+An original middle state is equivalent to
+\[
+ Q\mid N,\quad Q\equiv-1\pmod{2^k},\qquad R=N/Q,
+ \quad a=(p+R)/4.                                         \tag{1}
+\]
+Indeed $u\mid a^2\iff2^{k-2}\mid a$. The target gives
+$R\equiv-p\pmod{2^k}$, so this holds. Both $Q,R\ge3$, and $N<3p$ gives
+$R,Q<p$. The middle gate is $R\mid a+u$. The implications reverse.
+With $d_0=\gcd(a,u)$, set
+\[
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0),\quad\lambda=(r+s)/R,
+ \quad(x,y,z)=(a,phs\lambda,phr\lambda).
+\]
+Prime valuations prove integrality and $a=hrs,u=hr^2,\gcd(r,s)=1$.
+Clearing reciprocals gives $4/p=1/x+1/y+1/z$, with ordered inverse
+$u=pa^2/(Ry-pa)$. These are inherited Type II coordinates \cite{ET}.
+Integer $p$ is permitted; prime examples require their own primality proof.
+
+\paragraph{The exact relation lattice.}
+Let $o=2^{k-2}$. Difference-of-squares induction gives
+$v_2(3^{2^t}-1)=t+2$, hence
+$H_k=\langle3\rangle=\{x\equiv1,3\pmod8\}$ has order $o$.
+Retain the unique $0\le J_k<o$ with $3^{J_k}\equiv11\pmod{2^k}$ and put
+\[
+ \mathcal L_k=\mathbb Z(o,0)+\mathbb Z(-J_k,1)
+ =\{(a,b):3^a11^b\equiv1\pmod{2^k}\}.                    \tag{2}
+\]
+Its determinant is $o$. Nonzero $(a,b)$ makes $3^a11^b-1\ne0$ by prime
+factorization, even when one or both exponents are negative.
+
+\begin{lemma}[Explicit logarithmic specialization]
+For either triple
+\[
+ (C,H,D_0)=(550000,140,400000)
+ \quad\text{or}\quad(387000,4000,270000),                  \tag{3}
+\]
+every nonzero integer pair, with $B=\max(|a|,|b|)$, satisfies
+\[
+ v_2(3^a11^b-1)<C\max\{\log B,H\}.
+\]
+Consequently, for $k\ge CH$, every nonzero member of $\mathcal L_k$ satisfies
+$B>\exp(k/C)>2^{\lfloor k/D_0\rfloor}$.
+\end{lemma}
+\begin{proof}
+Use Chim \cite[Theorem 2.1; Table 1 and formulas, pp.~346--348]{Chim},
+at local prime 2 and rational field parameters $D=e=f=g=1$, $\kappa=2$,
+$Z_1=4$. For $ab\ne0$, set $\alpha_1=3^{\operatorname{sgn}a}$,
+$\alpha_2=11^{-\operatorname{sgn}b}$ and $b_1=|a|,b_2=|b|$.
+Its nonzero form is $11^{-b}(3^a11^b-1)$, with the same valuation. The original
+heights are $\log3,\log11$. Put $b'=b_1/\log11+b_2/\log3$.
+For the two respective table rows
+\[
+ (x_1,x_2,x_3,C_2)=(200,25,4.93,5500),
+ \quad(5000,900,4.85,3920),
+\]
+the source bound is
+\[
+ v_2(\Lambda)<\frac{2C_2(2\log2+x_3)\log3\log11}{(\log2)^3}
+ \max\{\log(b'\log2),x_1\log2,x_2(2\log2+x_3)\log2\}.
+\]
+The rational enclosures
+$.6931<\log2<.6932$, $1.0986<\log3<1.0987$,
+$2.3978<\log11<2.3980$ imply, respectively, coefficient bounds
+$549798<C$, $386893<C$, fixed maxima below $H$, and $C\log2<D_0$.
+They also give $\log2(1/\log11+1/\log3)<1$, so the variable term is below
+$\log B$. These enclosures follow from twelve terms of
+$\log x=2\sum_{j\ge0}((x-1)/(x+1))^{2j+1}/(2j+1)$ with its geometric tail,
+using $x=2,3/2,11/8$.
+On either axis the valuation is 1 for odd exponent and $2+v_2(B)$ for even
+exponent, which satisfies (3) directly. If a relation has $k\ge CH$, its
+valuation at least $k$ forces $\log B>k/C$. This proves the conclusion.
+\end{proof}
+
+\newpage
+\begin{theorem}[Uniform bounded-word power saving]
+For $k\ge77{,}000{,}000$, every element of $H_k$ is $3^i11^j$ with
+\[
+ 0\le i,j\le 2^{k-1-\lfloor k/400000\rfloor}.
+\]
+For $k\ge1{,}548{,}000{,}000$, the stronger bound is
+\[
+ \boxed{0\le i,j\le T(k):=2^{k-1-\lfloor k/270000\rfloor}.} \tag{4}
+\]
+In particular the second sufficient square side is
+$O((2^k)^{1-1/270000})$. Every word has an exact constructive return.
+\end{theorem}
+\begin{proof}
+Take an exact Gauss-reduced basis $b_1,b_2$ of (2), with
+$\lambda=\|b_1\|\le\|b_2\|$ and
+$|\langle b_1,b_2\rangle|\le\lambda^2/2$ \cite[\S17.1]{Galbraith}.
+Writing $b_2=\mu b_1+h e_\perp$ gives $|\mu|\le1/2$,
+$h=o/\lambda$, and $h^2\ge3\lambda^2/4$.
+A lattice vector with second coefficient zero has length at least $\lambda$;
+with coefficient $\pm1$ the reduced basis gives length at least $\|b_2\|$;
+with larger coefficient its perpendicular length is at least $2h>\lambda$.
+Thus $\lambda$ is shortest and $\lambda<4\sqrt o/3$.
+
+Let $D_0$ correspond to the applicable row of (3), $U=2^{\lfloor k/D_0\rfloor}$,
+and $T=2o/U$. The lemma gives $\lambda>U$. For target $t$, put $v=(t,0)$,
+$c=(T/2,T/2)$ and $B_0=(b_1\ b_2)$. The integer word
+\[
+ \boxed{w=v+B_0\operatorname{round}(B_0^{-1}(c-v))}          \tag{5}
+\]
+has the desired residue. Nearest-integer coefficient errors are at most $1/2$,
+so its distance from $c$ is at most
+\[
+ \frac12(\|b_1\|+\|b_2\|)
+ \le\frac34\lambda+\frac{o}{2\lambda}
+ <\sqrt o+\frac{o}{2U}\le\frac T2.
+\]
+For the stated ranges $4\lfloor k/D_0\rfloor\le k-2$ and
+$\lfloor k/D_0\rfloor\ge1$, which implies $\sqrt o\le T/4$; the other
+term is $T/4$. Therefore both integer coordinates lie in $[0,T]$.
+Finally $T\le(2^k)^{1-1/D_0}$.
+\end{proof}
+
+The complete word fibre is $((t,0)+\mathcal L_k)\cap([0,e]\times[0,f])$.
+Its inverse basis coordinates are $B_0^{-1}(w-(t,0))\in\mathbb Z^2$.
+All rounding ties are fixed towards $+\infty$; rounding is not claimed to solve
+closest-vector minimization \cite[\S18.2]{Galbraith}.
+At any precision the exact row-sum widths
+\[
+ W_3=|b_{1,1}|+|b_{2,1}|,\qquad W_{11}=|b_{1,2}|+|b_{2,2}|
+\]
+give an often smaller rectangle, by the same coordinate rounding argument.
+The former uniform estimate used only $\lambda>k/4$, yielding
+$\max\{4\lceil\sqrt o\rceil,\lceil8o/k\rceil\}$.
+The new power bound is an asymptotic improvement with an enormous onset,
+not a new practical census result or an optimized numerical constant.
+
+\paragraph{Original ES implication and mass.}
+If the actual exponents $e,f$ in (1) meet the stated sufficient side, an original
+middle state exists exactly when $M$ has a prime factor $5$ or $7\pmod8$.
+Necessity holds because all other factors lie in $H_k$.
+For an actual such prime $q$, apply (5) at
+$t=\log_3(-q^{-1})$; then $Q=3^i11^jq\mid N$ returns (1) and its ordered
+positive denominators. No unavailable exponent is introduced.
+If $A(M)$ counts all outside divisors of $M$, disjoint translated rectangles give
+\[
+ \boxed{C_k(p)\ge A(M)
+ \left\lfloor\frac{e+1}{T+1}\right\rfloor
+ \left\lfloor\frac{f+1}{T+1}\right\rfloor.}                \tag{6}
+\]
+Distinct $i,j,t$ give distinct integer cofactors by unique factorization.
+The inventory requirement is substantial: $e,f\ge T$ and an outside prime
+imply $3p>N\ge5\cdot33^T$. Nothing here asserts that every prime supplies it.
+
+\newpage
+\paragraph{Relative precision, with no inflated logarithmic heights.}
+Fix $d=2^v$, $h=k-v\ge3$. The map
+\[
+ H_h\xrightarrow{\sim}\langle3^d\rangle\subset H_k,
+ \qquad 3^a\longmapsto3^{da}
+\]
+is well-defined and has inverse exponent division. It also sends $11$ to
+$11^d$, since $J_k\bmod2^{h-2}=J_h$. Consequently
+\[
+ \boxed{3^{da}11^{db}\equiv1\pmod{2^k}
+ \iff3^a11^b\equiv1\pmod{2^h}.}                           \tag{7}
+\]
+The higher-layer relation lattice is exactly $\mathcal L_h$. There is no need
+to apply the logarithmic theorem to the inflated heights of $3^d$ and $11^d$.
+
+The actual digit decomposition is
+\[
+ i=r+dI,\quad j=s+dJ,\quad0\le r,s<d,
+ \quad I\le\lfloor(e-r)/d\rfloor,
+ \quad J\le\lfloor(f-s)/d\rfloor.
+\]
+Retain only available lower digits with $t-r-J_ks\equiv0\pmod d$.
+Their higher target is $(t-r-J_ks)/d$ modulo $2^{h-2}$ and their higher
+step is $J_h$. The power bound at precision $h$, or its exact finite basis
+widths, now gives an original word. Euclidean division recovers every digit
+and every capacity; different digit fibres are disjoint.
+
+The associated relative boundary remains the explicit module comparison
+\[
+ \iota_d:\mathbb F_2[C_d]\xrightarrow{\sim}\ker((X+1)^d),
+ \qquad X^r\longmapsto X^r\sum_{j=0}^{o/d-1}X^{dj}.
+\]
+Its image consists of vectors constant on those cosets. Reading one coefficient
+per coset after that image test is its inverse; ordinary quotient summation
+has $\pi_d\iota_d=(o/d)I=0$. This is the prior SplitZero BR1 specialization
+\cite{SplitZero}, not a new algebra-inverse assertion. Integer preimage counts
+and support labels remain before reduction. A receiving supported zero
+$e=0_A^\bullet$ is not absence $\tau$. The new coverage theorem does not claim
+its entire counting packet is this uniform relative norm.
+
+\paragraph{Finite certificate and limits.}
+At the inherited prime $p=482187176641$, $k=6$,
+$N=3^7 11^5 37^2$, the exact basis $(2,2),(-5,3)$ has determinant 16 and
+widths $(7,5)$. The target for the actual outside divisor 37 is 13. Formula
+(5) returns $(i,j)=(1,4)$, hence
+\[
+ (Q,R,a,h,r,s,\lambda)
+ =(1625151,296703,120546868336,2,8,7534179271,25393),
+\]
+\[
+ (x,y,z)=(120546868336,184499678869490521595996846,195906863623118608).
+\]
+The complete target fibre is $(1,4),(6,1)$. Primality is checked by full
+trial division. This known branch illustrates the exact return, not the
+large-onset asymptotic improvement.
+
+At $k=8,v=2$, the integer $N=3^{28}11^{20}31^2$ has an available lower
+fibre $(r,s)=(0,0)$. The precision-six basis returns $(I,J)=(5,3)$,
+hence the original $(i,j)=(20,12)$ and $Q=3^{20}11^{12}31$.
+Primality of $p=N-8192$ is not asserted.
+
+The standard-library package verifies all 2046 cyclic targets through $k=12$,
+258 full basis certificates through $k=4096$, complete bounded fibres,
+signed/axis cases, and relative inverses. A separate implementation checks
+modular powers and original divisor returns without importing the first.
+No giant threshold modulus was computed. The imported logarithmic theorem,
+not a bounded experiment, supplies the universal estimate. No new Lean build,
+independent mathematical review, historical priority or universal ES theorem
+is claimed.
+
+\begingroup\footnotesize
+\begin{thebibliography}{4}
+\bibitem{Chim} Chim, K. C. (2025). Lower bounds for linear forms in two $p$-adic
+logarithms. \emph{Journal of Number Theory, 266}, 295--349.
+Theorem 2.1; Table 1 and formulas, pp.~346--348.
+doi:10.1016/j.jnt.2024.07.012.
+\bibitem{Galbraith} Galbraith, S. D. (2012). \emph{Mathematics of public key
+cryptography}. Cambridge University Press. \S17.1, Theorem 17.1.2, Algorithm 23;
+\S18.2.
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc.,
+94}(1), 50--105. \S2, (2.13)--(2.22).
+\bibitem{SplitZero} The Clankers (2026). \emph{Mixed-boundary recovery on the
+original SplitZero quotient}. BR1--BR2, Zeta commit \texttt{1efd5333\ldots2644c3}.
+The full pinned reading and predecessor hashes accompany the workbench proof.
+\end{thebibliography}\endgroup
+\end{document}

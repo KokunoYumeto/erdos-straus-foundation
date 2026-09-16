@@ -1,0 +1,22 @@
+[
+  {
+    "capacity": "2^(k-1-floor(k/denominator))",
+    "denominator": 400000,
+    "expanded_large_modulus": false,
+    "label": "A",
+    "onset": 77000000,
+    "relation_lower": "max(|a|,|b|)>2^floor(k/denominator)",
+    "relation_lower_power": 192,
+    "square_capacity_power": 76999807
+  },
+  {
+    "capacity": "2^(k-1-floor(k/denominator))",
+    "denominator": 270000,
+    "expanded_large_modulus": false,
+    "label": "B",
+    "onset": 1548000000,
+    "relation_lower": "max(|a|,|b|)>2^floor(k/denominator)",
+    "relation_lower_power": 5733,
+    "square_capacity_power": 1547994266
+  }
+]

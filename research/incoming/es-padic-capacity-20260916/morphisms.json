@@ -1,0 +1,126 @@
+{
+  "maps": [
+    {
+      "id": "A1",
+      "name": "Original cofactor and marked ES state",
+      "domain": "Q|N, Q=-1 mod2^k",
+      "codomain": "(p,k,u,N,Q,R,a,h,r,s,lambda,x,y,z)",
+      "formula": "R=N/Q, a=(p+R)/4, gcd normalization (A3).",
+      "inverse_fibres_and_loss": "Inverse u=pa^2/(Ry-pa), Q=N/R. Retain channel M and denominator order."
+    },
+    {
+      "id": "A2",
+      "name": "Signed arithmetic relation to the imported two-power form",
+      "domain": "(a,b) in Z^2 with ab!=0",
+      "codomain": "(alpha1,alpha2,b1,b2,Lambda)",
+      "formula": "alpha1=3^sgn(a), alpha2=11^-sgn(b), b1=abs(a), b2=abs(b).",
+      "inverse_fibres_and_loss": "Signs and positive exponents recover a,b. Lambda=11^-b(3^a11^b-1); multiplier is a 2-adic unit. Axes handled separately."
+    },
+    {
+      "id": "A3",
+      "name": "Relation lattice coordinate equivalence",
+      "domain": "Z^2",
+      "codomain": "L_k",
+      "formula": "(c,d) -> (o*c-J_k*d,d).",
+      "inverse_fibres_and_loss": "Inverse (a,b)->((a+J_k*b)/o,b). Integral exactly on the declared kernel."
+    },
+    {
+      "id": "A4",
+      "name": "Finite 2-adic logarithm observation",
+      "domain": "The convergent normalized log ratio modulo2^(k-3)",
+      "codomain": "J_k in [0,2^(k-2))",
+      "formula": "J_k=1+2[(log(11/3)/8)/(log9/8)].",
+      "inverse_fibres_and_loss": "Unique modular-power inverse label. The finite residue does not retain the full infinite 2-adic expansion."
+    },
+    {
+      "id": "A5",
+      "name": "Exact basis reduction",
+      "domain": "Original ordered basis ((o,0),(-J_k,1))",
+      "codomain": "Gauss-reduced ordered basis plus trace",
+      "formula": "Integer swaps and nearest multiple subtraction.",
+      "inverse_fibres_and_loss": "Each operation is unimodular; reversing the retained trace returns the original ordered basis."
+    },
+    {
+      "id": "A6",
+      "name": "Word selection by rounding",
+      "domain": "Target t and actual translated rectangle with proved widths",
+      "codomain": "Original exponent word plus basis coordinates",
+      "formula": "w=(t,0)+B round(B^-1(c-(t,0))).",
+      "inverse_fibres_and_loss": "For fixed t,B, rounding coefficient fibre z is z+[-1/2,1/2)^2. Inverse on a selected word reads B^-1(w-(t,0)); it does not recover a discarded arbitrary centre."
+    },
+    {
+      "id": "A7",
+      "name": "Complete bounded target fibre",
+      "domain": "(t,0)+L_k intersect actual rectangle",
+      "codomain": "All original 3,11 exponent pairs at the target",
+      "formula": "Identity on coordinates.",
+      "inverse_fibres_and_loss": "Integer factorization reads exponents; modular residue alone forgets the fibre."
+    },
+    {
+      "id": "A8",
+      "name": "Prime-factor word to cofactor",
+      "domain": "(t,i,j) with t|M outside H and target i+Jj",
+      "codomain": "Q=3^i11^j t",
+      "formula": "Multiply actual distinct-prime factors.",
+      "inverse_fibres_and_loss": "i=v3(Q), j=v11(Q), t=Q/(3^i11^j). Unique, no coloured copies."
+    },
+    {
+      "id": "R1",
+      "name": "Exact relative group isomorphism",
+      "domain": "H_(k-v)",
+      "codomain": "<3^(2^v)> inside H_k",
+      "formula": "g -> g^(2^v).",
+      "inverse_fibres_and_loss": "Read retained cyclic exponent and divide by2^v. This identifies relation lattices at precision k-v, not arbitrary fields or heights."
+    },
+    {
+      "id": "R2",
+      "name": "Complete lower/higher digits",
+      "domain": "Actual rectangle 0<=i<=e,0<=j<=f",
+      "codomain": "Disjoint union of actual lower-digit/high-capacity rectangles",
+      "formula": "i=r+dI, j=s+dJ with 0<=r,s<d.",
+      "inverse_fibres_and_loss": "Euclidean division; higher bounds floor((e-r)/d), floor((f-s)/d). No multiplicity renormalization."
+    },
+    {
+      "id": "R3",
+      "name": "Relative target equation",
+      "domain": "One retained lower fibre meeting t-r-J_k*s=0 mod d",
+      "codomain": "Target (t-r-J_k*s)/d mod2^(k-v-2)",
+      "formula": "Divide the actual integer difference by d.",
+      "inverse_fibres_and_loss": "Reverse by multiplying by d and restoring lower digits and original target representative. Incompatible lower fibres are not admitted."
+    },
+    {
+      "id": "R4",
+      "name": "Relative boundary inclusion",
+      "domain": "F2[C_d]",
+      "codomain": "ker((X+1)^d) in F2[C_o]",
+      "formula": "X^r -> X^r sum_(j<o/d) X^(d*j).",
+      "inverse_fibres_and_loss": "Inverse reads a coefficient per coset after the constant-coset image test. Module map, not a unital ring isomorphism."
+    },
+    {
+      "id": "R5",
+      "name": "Ordinary coefficient quotient",
+      "domain": "F2[C_o]",
+      "codomain": "F2[C_d]",
+      "formula": "Sum coefficients with same exponent modulo d.",
+      "inverse_fibres_and_loss": "Kernel is the corresponding coset-sum-zero subspace. pi*iota=0 for a nontrivial 2-power ratio; not the inverse of R4."
+    },
+    {
+      "id": "R6",
+      "name": "Coefficient reduction with supported zeros",
+      "domain": "Original integer coefficient counts plus original label set",
+      "codomain": "Same support set with amplitudes mod2",
+      "formula": "Reduce amplitudes, retain every presence label.",
+      "inverse_fibres_and_loss": "Many-to-one amplitudes; retain original integer vector for full return. Even positive counts become e, never automatically tau."
+    },
+    {
+      "id": "C1",
+      "name": "Disjoint-block counting lower bound",
+      "domain": "Disjoint actual exponent rectangles and outside t|M",
+      "codomain": "Distinct original cofactors",
+      "formula": "Choose one target word per rectangle and multiply by t.",
+      "inverse_fibres_and_loss": "Unique factorization and disjoint rectangles make chosen states distinct; no sum over overlapping untracked families."
+    }
+  ],
+  "number": 15,
+  "support_convention": "G(A)={tau} disjoint-union A^bullet; e=0^bullet != tau"
+}

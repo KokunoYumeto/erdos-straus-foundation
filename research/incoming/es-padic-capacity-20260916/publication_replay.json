@@ -1,0 +1,23 @@
+{
+  "publication_date":"2026-09-16",
+  "base_commit":"63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "input_archive":"es_padic_capacity_bundle.zip",
+  "archive_manifest_entries_checked":30,
+  "archive_manifest_failures":[],
+  "commands":[
+    {"command":"python verify.py --out regenerated","returncode":0,"checks":58319,"basis_certificates":258,"largest_computed_k":4096,"exhaustive_targets":2046,"negative_controls":7},
+    {"command":"python -O verify.py --out regenerated_O","returncode":0,"checks":58319,"basis_certificates":258,"largest_computed_k":4096,"exhaustive_targets":2046,"negative_controls":7},
+    {"command":"python check_independent.py --input regenerated --out regenerated/independent.json","returncode":0,"checks":18352,"basis_certificates":258,"largest_verified_k":4096,"direct_words":5320,"imports_main":false}
+  ],
+  "delivered_mathematical_json_matched":["bases.json","checks.json","constants.json","examples.json","independent.json","negative_controls.json","structural.json","thresholds.json"],
+  "byte_preserved_source_sha256":{
+    "core.tex":"e02076254b4f95fdd1096ffa92fa35e9e5ae8b99d66521ab33e1617296371024",
+    "verify.py":"55c0c131220dbfdf9c5ea82f3d5b818e16c1cb002ed9d418935ea5b7edb87896",
+    "check_independent.py":"df668e1a1007c63340a4402a36a86c48dd333292f47593d53ccc732a69cad8d7",
+    "workbench.tex":"f6f3f383a515b7616a55bea165809dad01806d9c2fbf0d4e760c4fc3d7b18008",
+    "references.tex":"e929250c5bdf21c2167ddc75f6e4acd9b3bee62306f99aa31c71ffefd5e7aab9",
+    "lean_plan.md":"508729865a6b624c39d509940d3ced93e097c30d9347ecc6efcc98d12a6d7f82"
+  },
+  "source_reading_serialization":"Same historical data, reformatted for publication; current publication event is separate.",
+  "nonclaims":["No independent mathematical review","No imported Chim theorem proved computationally","No giant threshold modulus expanded","No Lean build","No new prime coverage","No universal ES theorem"]
+}

@@ -1,0 +1,9 @@
+[
+  "zero relation is not a nonzero logarithmic form",
+  "below-capacity rounding is not certified",
+  "improper lower digit cannot be divided",
+  "missing original outside factor",
+  "dependent bases cannot replace 3,11",
+  "same coefficients at wrong precision",
+  "changing denominator order without inverse"
+]
