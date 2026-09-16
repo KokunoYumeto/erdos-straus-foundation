@@ -1,0 +1,79 @@
+{
+  "ES_main_read": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "attached_predecessor": {
+    "path": "es_discrete_positivity_bundle.zip",
+    "scope": "Read current core through source retrieval, then inspected full local input while constructing the application; reexecuted the inherited prime certificate and recomputed all new shell states. No full predecessor-verifier replay claimed.",
+    "second_hard_prime_json_sha256": "7811f1a35c5175da138b892b5d27379ff3cb0afcdd4b7b49ab68318c355fa0bc",
+    "sha256": "a8ae1e616e9b7df95c996a24536c077c7f355153023d83b320dd9da4089aa9cc",
+    "source_core_sha256": "77e8cfe14946d99d3c2d262966921268a88a2a52d6660f90947e4fd0ffc4e5d0",
+    "used": "Actual original labels, rational/ordered inverse, discrete filters and previous second hard prime. Input code and original files unchanged."
+  },
+  "date": "2026-09-14",
+  "non_imports": [
+    "Original Gamma measure is not assigned to finite counting source",
+    "No claim that all 46-page or 37-page linked sources were audited",
+    "No source CI or Lean build independently replayed",
+    "No analytic endpoint/RH claim",
+    "No inferred identification with Albert, Fable or Leech structures beyond explicit maps in this tranche"
+  ],
+  "primary_literature": [
+    {
+      "authors": [
+        "Lasserre, J.-B."
+      ],
+      "locator": "Section 2, equations (2.3)-(2.4), Theorem 3.2",
+      "publication": "SIAM Journal on Optimization, 21(3), 864-885",
+      "title": "A new look at nonnegativity on closed sets and polynomial optimization",
+      "url": "https://arxiv.org/pdf/1009.0125",
+      "used": "Classical signed localizing forms; no claim to invent this principle",
+      "version": "v3",
+      "year": 2011
+    },
+    {
+      "authors": [
+        "Elsholtz, C.",
+        "Tao, T."
+      ],
+      "locator": "Section 2, Propositions 2.2 and 2.6",
+      "publication": "Journal of the Australian Mathematical Society, 94(1), 50-105",
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "used": "Inherited Type I/II background. Exact formulas needed here also proved directly.",
+      "year": 2013
+    }
+  ],
+  "publication": {
+    "branch": "research/es-mixed-support-20260914",
+    "new_path": "research/incoming/es-mixed-support-20260914/",
+    "patch_base": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+    "scope": "Additive source branch only; no existing repository path is modified and no merge is recorded here."
+  },
+  "sources": [
+    {
+      "blob": "bc66f3fd5856c8788e855dc013bb90d6c5fec23e",
+      "commit": "d1191f9c2c47d4317c87262eca9e75c8de9ca7ff",
+      "path": "README.md",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "scope": "Lines 1-200; current and explicitly historical publication guide, not a full audit of the linked Gamma proofs",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/d1191f9c2c47d4317c87262eca9e75c8de9ca7ff/README.md"
+    },
+    {
+      "blob": "3ef86dc22fcb8f04a38f849c50a3c5f0f10945bc",
+      "commit": "d1191f9c2c47d4317c87262eca9e75c8de9ca7ff",
+      "path": "workbenches/splitzero-tandem/continuations/20260914-joint-gamma-schur/README.md",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "scope": "Full fetched guide; actual mathematical proof followed separately",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/d1191f9c2c47d4317c87262eca9e75c8de9ca7ff/workbenches/splitzero-tandem/continuations/20260914-joint-gamma-schur/README.md"
+    },
+    {
+      "blob": "a32c231349ec0a495db8c3a584be99d1e9936281",
+      "commit": "d1191f9c2c47d4317c87262eca9e75c8de9ca7ff",
+      "path": "workbenches/splitzero-tandem/continuations/20260914-joint-gamma-schur/sources/JOINT_SCHUR_EXACT_INTEGRATION.tex",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "scope": "Lines 180-460, JSA12-JSA30; use here JSA12-JSA20, full joint covariance, cross Schur factors, original relation correction and its norm",
+      "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/d1191f9c2c47d4317c87262eca9e75c8de9ca7ff/workbenches/splitzero-tandem/continuations/20260914-joint-gamma-schur/sources/JOINT_SCHUR_EXACT_INTEGRATION.tex"
+    }
+  ],
+  "zeta_main_read": "d1191f9c2c47d4317c87262eca9e75c8de9ca7ff",
+  "zeta_repository": "KokunoYumeto/zeta-function-research-reader"
+}

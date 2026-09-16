@@ -1,0 +1,225 @@
+{
+  "convention": "Every source/state support label is retained separately from its coefficient. Quotients and observations have their kernels/fibres stated.",
+  "maps": [
+    {
+      "codomain": "Same marking with u|a^2",
+      "domain": "Original shell and beta_i in [-e_i,e_i]",
+      "formula": "u=product q_i^(e_i+beta_i)",
+      "id": "A1",
+      "inverse_fibres_and_loss": "Inverse beta_i=v_qi(u)-e_i; ordered factors retained",
+      "metric_and_support": "Each original labelled state has unit counting mass",
+      "name": "Bounded exponent/divisor equivalence",
+      "proof_location": "A1"
+    },
+    {
+      "codomain": "Ordered rational triple with same p,a,R,c,D",
+      "domain": "Original (p,a,R,c,u)",
+      "formula": "A3",
+      "id": "A2",
+      "inverse_fibres_and_loss": "Inverse u=a^2/(RY-pa) in E, pa^2/(RY-pa) in M; numerical triple alone does not replace channel",
+      "metric_and_support": "Failure remains positive rational with exact reduced return denominator D",
+      "name": "Positive rational candidate and ordered return",
+      "proof_location": "A3-A4"
+    },
+    {
+      "codomain": "(h,r,s) with a=hrs,u=hr^2,gcd(r,s)=1",
+      "domain": "Original divisor u|a^2",
+      "formula": "d0=gcd(a,u); (h,r,s)=(d0^2/u,u/d0,a/d0)",
+      "id": "A3",
+      "inverse_fibres_and_loss": "Inverse a=hrs,u=hr^2; quotient kappa or lambda attached; E/M and raw order retained",
+      "metric_and_support": "No Koide restriction asserted",
+      "name": "Coprime marking",
+      "proof_location": "A4,E10"
+    },
+    {
+      "codomain": "(same state,1_E,1_(beta457>0))",
+      "domain": "Original state alpha",
+      "formula": "Read channel and full bounded exponent",
+      "id": "S1",
+      "inverse_fibres_and_loss": "Projection to two bits has all original states with those bits as fibre; labels remain on full source",
+      "metric_and_support": "Both support sets overlap on actual original states",
+      "name": "Overlapping support observation",
+      "proof_location": "E2-E3"
+    },
+    {
+      "codomain": "Original counting functions R^Omega",
+      "domain": "R^r coefficient vectors",
+      "formula": "(Ac)_alpha=sum_i c_i f_i(alpha)",
+      "id": "S2",
+      "inverse_fibres_and_loss": "All inverse solutions c0+ker A; ker A=ker K",
+      "metric_and_support": "K=A* A is the actual quotient metric; cross terms retained",
+      "name": "Mixed synthesis",
+      "proof_location": "S1-S4"
+    },
+    {
+      "codomain": "im A in original source",
+      "domain": "R^r/ker A with K",
+      "formula": "bar A[c]=Ac",
+      "id": "S3",
+      "inverse_fibres_and_loss": "Inverse coefficient class solving Ac=f; full source return also retains (I-P_A)f",
+      "metric_and_support": "Isometry in K, not a reset Euclidean norm",
+      "name": "Feature quotient/image isometry",
+      "proof_location": "S1 kernel paragraph"
+    },
+    {
+      "codomain": "Original coordinate functions on union",
+      "domain": "Direct sum of supported coordinate functions",
+      "formula": "Sum all input coefficients at each original state",
+      "id": "S4",
+      "inverse_fibres_and_loss": "Kernel fibre sums zero; primitive star differences v_i(e_i-e_i0)",
+      "metric_and_support": "Cancellation preserves support union, including supported zero",
+      "name": "Overlapping occurrence addition",
+      "proof_location": "S1 kernel paragraph"
+    },
+    {
+      "codomain": "Coefficient form J",
+      "domain": "Actual original multiplier X-1/3",
+      "formula": "J=A*(X-1/3)A",
+      "id": "S5",
+      "inverse_fibres_and_loss": "Records one chosen feature restriction; it does not invert the entire source operator",
+      "metric_and_support": "Every off-diagonal entry uses the same states; no orthogonality from names",
+      "name": "Signed localizing pullback",
+      "proof_location": "S1-S4"
+    },
+    {
+      "codomain": "(s,z)",
+      "domain": "(t,z), first coefficient pivot -a<0",
+      "formula": "s=t-b*z/a; S=C+bb*/a",
+      "id": "S6",
+      "inverse_fibres_and_loss": "Inverse t=s+b*z/a; strict theorem excludes zero pivot; actual inertia preserved",
+      "metric_and_support": "Signed congruence not positive-metric orthogonal projection",
+      "name": "Signed Schur congruence",
+      "proof_location": "S5-S7"
+    },
+    {
+      "codomain": "Actual successful-state subspace",
+      "domain": "Any positive-definite coefficient subspace for J",
+      "formula": "c -> Pi Ac",
+      "id": "S7",
+      "inverse_fibres_and_loss": "Injective on that subspace; bound dimension <=H, not onto all hits in general",
+      "metric_and_support": "Proof uses failure contributions <=0",
+      "name": "Positive-subspace injection",
+      "proof_location": "S3"
+    },
+    {
+      "codomain": "Integer lower bound on original H",
+      "domain": "Explicit coefficient c and proved hit-pattern cap M(c)>0",
+      "formula": "ceil(3 c*Jc/(2M(c)))",
+      "id": "S8",
+      "inverse_fibres_and_loss": "One-sided bound, not an inverse; pattern cap must be justified independently of hit choices",
+      "metric_and_support": "Original counting mass, supports and signs unchanged",
+      "name": "Pattern-normalized count lower bound",
+      "proof_location": "S4,E7-E8"
+    },
+    {
+      "codomain": "(c0,c1,c2)",
+      "domain": "F in image of the three hard-shell features",
+      "formula": "Read (M,1),(E,1),(M,457^4) as in E9",
+      "id": "S9",
+      "inverse_fibres_and_loss": "Verify recovered linear combination at every original state; equivalent K^-1 A*",
+      "metric_and_support": "K positive definite proved by these independent evaluations",
+      "name": "Concrete image inverse",
+      "proof_location": "E9"
+    },
+    {
+      "codomain": "B_e x {E,M}",
+      "domain": "B_f x B_b x {E,M}",
+      "formula": "q(xi,eta,c)=(xi+eta,c)",
+      "id": "W1",
+      "inverse_fibres_and_loss": "All intervals max(-f_i,beta_i-b_i)<=xi_i<=min(f_i,beta_i+b_i), eta=beta-xi",
+      "metric_and_support": "n_beta may vary; none of its occurrences suppressed",
+      "name": "Actual split addition",
+      "proof_location": "W1 antecedent"
+    },
+    {
+      "codomain": "Split occurrence l2 with weight 1/n_qomega",
+      "domain": "Original counting l2",
+      "formula": "Uv=v o q; EF_alpha=sum_fibre F/n_alpha",
+      "id": "W2",
+      "inverse_fibres_and_loss": "EU=I; ker E fibre sums zero with star primitives; full fibre Uv+ker E",
+      "metric_and_support": "U*=E, exact Pythagoras",
+      "name": "Value duplication and weighted return",
+      "proof_location": "W1"
+    },
+    {
+      "codomain": "Occurrence support on (xi,eta)",
+      "domain": "Full original support predicate on beta",
+      "formula": "Predicate(beta)=predicate(xi+eta)",
+      "id": "W3",
+      "inverse_fibres_and_loss": "Using xi alone changes support and is rejected; target-source state labels persist",
+      "metric_and_support": "Mixed Gram transport includes inverse fibre weights",
+      "name": "Support pullback",
+      "proof_location": "W1"
+    },
+    {
+      "codomain": "Original counting functions",
+      "domain": "Original states via retained top-monomial module",
+      "formula": "epsilon s A=Pi A",
+      "id": "B1",
+      "inverse_fibres_and_loss": "Failed top directions remain; augmentation kills their receiving coefficients",
+      "metric_and_support": "Supported zero is not external absence; no residue-H0 dimension substitution",
+      "name": "Boundary receiving comparison",
+      "proof_location": "W1 final paragraph"
+    },
+    {
+      "codomain": "Mixed coefficient form",
+      "domain": "Odd-reciprocal diagonal X and actual A",
+      "formula": "A*Phi_j(X)A",
+      "id": "U1",
+      "inverse_fibres_and_loss": "No inverse to compressed form asserted; lost source sector explicit",
+      "metric_and_support": "Loewner error <=epsilon_j K; all cross terms retained",
+      "name": "Original filter followed by feature observation",
+      "proof_location": "U1"
+    },
+    {
+      "codomain": "Original arithmetic direct-sum source",
+      "domain": "Countable direct sum of actual metric quotients V_p",
+      "formula": "Direct sum bar A_p",
+      "id": "U2",
+      "inverse_fibres_and_loss": "Isometry onto its image; orthogonal complement retained",
+      "metric_and_support": "Uniform norm error <=1/(2^j j! (2j+3)), without a feature-count bound",
+      "name": "Uniform mixed direct sum",
+      "proof_location": "U2"
+    },
+    {
+      "codomain": "Original orthogonal complement",
+      "domain": "Isometry bar A onto feature subspace",
+      "formula": "R_A=(I-P_A)X bar A",
+      "id": "U3",
+      "inverse_fibres_and_loss": "R_A*=adjoint; R_A*R_A=bar A*X^2 bar A-C^2; zero iff invariant",
+      "metric_and_support": "Original relation norm retained, not discarded after quotient",
+      "name": "Compression multiplication defect",
+      "proof_location": "U3"
+    },
+    {
+      "codomain": "Correct A*Phi(X)A or separately defined Phi(C)",
+      "domain": "Original diagonal spectrum and feature compression",
+      "formula": "Construct each independently",
+      "id": "U4",
+      "inverse_fibres_and_loss": "They need not agree; p37 example records exact discrepancy, not a valid intertwiner",
+      "metric_and_support": "Correct filter used before compression; compressed spectrum can leave odd reciprocals",
+      "name": "Functional-calculus order",
+      "proof_location": "U4"
+    },
+    {
+      "codomain": "Four-by-four integer moment table",
+      "domain": "All original states in four support cells",
+      "formula": "S_k^ij=sum_cell gcd(R,g)^k, k=0..3",
+      "id": "M1",
+      "inverse_fibres_and_loss": "Forgets individual states; witness extractor still uses retained full state set",
+      "metric_and_support": "No products of independent marginals; overlap S_k^11 retained",
+      "name": "Mixed gcd-moment observation",
+      "proof_location": "E3-E5"
+    },
+    {
+      "codomain": "A labelled D=1 state and A4 denominators",
+      "domain": "Positive rational trial plus complete original finite source",
+      "formula": "Enumerate in retained order and return a hit; theorem guarantees at least one",
+      "id": "M2",
+      "inverse_fibres_and_loss": "Positive trial does not uniquely specify a witness; complete hit fibre serialized",
+      "metric_and_support": "All 9702 leaves and three actual hits remain; no prime-coverage claim",
+      "name": "Certificate to arithmetic witness",
+      "proof_location": "S4,E10"
+    }
+  ]
+}

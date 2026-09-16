@@ -1,0 +1,156 @@
+{
+  "J": [
+    [
+      {
+        "denominator": 135,
+        "numerator": -368012
+      },
+      {
+        "denominator": 3645,
+        "numerator": -147776
+      },
+      {
+        "denominator": 6075,
+        "numerator": -210814
+      }
+    ],
+    [
+      {
+        "denominator": 3645,
+        "numerator": -147776
+      },
+      {
+        "denominator": 2460375,
+        "numerator": -3424592
+      },
+      {
+        "denominator": 820125,
+        "numerator": 444182
+      }
+    ],
+    [
+      {
+        "denominator": 6075,
+        "numerator": -210814
+      },
+      {
+        "denominator": 820125,
+        "numerator": 444182
+      },
+      {
+        "denominator": 2460375,
+        "numerator": -2300062
+      }
+    ]
+  ],
+  "K": [
+    [
+      {
+        "denominator": 1,
+        "numerator": 9702
+      },
+      {
+        "denominator": 135,
+        "numerator": 34279
+      },
+      {
+        "denominator": 135,
+        "numerator": 29624
+      }
+    ],
+    [
+      {
+        "denominator": 135,
+        "numerator": 34279
+      },
+      {
+        "denominator": 729,
+        "numerator": 32147
+      },
+      {
+        "denominator": 6075,
+        "numerator": 122717
+      }
+    ],
+    [
+      {
+        "denominator": 135,
+        "numerator": 29624
+      },
+      {
+        "denominator": 6075,
+        "numerator": 122717
+      },
+      {
+        "denominator": 6075,
+        "numerator": 233546
+      }
+    ]
+  ],
+  "b": [
+    0,
+    1,
+    1,
+    0
+  ],
+  "f": [
+    5,
+    2,
+    2,
+    4
+  ],
+  "incorrect_partial_exponent_J": [
+    [
+      {
+        "denominator": 135,
+        "numerator": -368012
+      },
+      {
+        "denominator": 3645,
+        "numerator": -147776
+      },
+      {
+        "denominator": 18225,
+        "numerator": -628682
+      }
+    ],
+    [
+      {
+        "denominator": 3645,
+        "numerator": -147776
+      },
+      {
+        "denominator": 2460375,
+        "numerator": -3424592
+      },
+      {
+        "denominator": 7381125,
+        "numerator": 4067318
+      }
+    ],
+    [
+      {
+        "denominator": 18225,
+        "numerator": -628682
+      },
+      {
+        "denominator": 7381125,
+        "numerator": 4067318
+      },
+      {
+        "denominator": 1476225,
+        "numerator": -1345034
+      }
+    ]
+  ],
+  "occurrences": 44550,
+  "original_hits": {
+    "denominator": 1,
+    "numerator": 3
+  },
+  "original_mass": {
+    "denominator": 1,
+    "numerator": 9702
+  },
+  "raw_hit_occurrences": 7
+}

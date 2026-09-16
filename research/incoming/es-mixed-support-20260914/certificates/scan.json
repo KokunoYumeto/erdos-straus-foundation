@@ -1,0 +1,16 @@
+{
+  "bound": 1500,
+  "counts": {
+    "certified_choices": 1693,
+    "certified_shells": 685,
+    "occupied_shells": 685,
+    "original_states": 412838,
+    "primes": 54,
+    "shells": 9531,
+    "strict_ternary_choices": 0,
+    "strict_ternary_shells": 0,
+    "support_choices": 20177
+  },
+  "first_strict": [],
+  "scope": "all first-half shells at prime p=1 mod12; supports E and beta_q>0 for every prime q|a"
+}
