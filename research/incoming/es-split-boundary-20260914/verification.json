@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-14",
+  "core": {
+    "runs": [
+      {
+        "mode": "normal",
+        "command": [
+          "python",
+          "/mnt/data/es_split_boundary_20260914/verify.py",
+          "--bound",
+          "1500",
+          "--out",
+          "/mnt/data/es_split_boundary_20260914/certificates"
+        ],
+        "returncode": 0,
+        "seconds": 14.291941404342651,
+        "stdout": "{\"checks\": 2787464, \"negative_controls\": 6, \"scan\": {\"count_degree_1\": 9530, \"count_degree_2\": 1, \"empty_shells\": 8846, \"occupied_shells\": 685, \"positive_degree_0\": 43, \"positive_degree_1\": 642, \"primes\": 54, \"shells\": 9531, \"states\": 412838, \"success_states\": 1920}}\n",
+        "stderr": ""
+      },
+      {
+        "mode": "optimized",
+        "command": [
+          "python",
+          "-O",
+          "/mnt/data/es_split_boundary_20260914/verify.py",
+          "--bound",
+          "1500",
+          "--out",
+          "/mnt/data/es_split_boundary_20260914/certificates_optimized"
+        ],
+        "returncode": 0,
+        "seconds": 14.309794664382935,
+        "stdout": "{\"checks\": 2787464, \"negative_controls\": 6, \"scan\": {\"count_degree_1\": 9530, \"count_degree_2\": 1, \"empty_shells\": 8846, \"occupied_shells\": 685, \"positive_degree_0\": 43, \"positive_degree_1\": 642, \"primes\": 54, \"shells\": 9531, \"states\": 412838, \"success_states\": 1920}}\n",
+        "stderr": ""
+      }
+    ],
+    "byte_identical": true
+  },
+  "fresh": {
+    "command": [
+      "python",
+      "verify.py",
+      "--bound",
+      "1500",
+      "--out",
+      "generated"
+    ],
+    "returncode": 0,
+    "stdout": "{\"checks\": 2787464, \"negative_controls\": 6, \"scan\": {\"count_degree_1\": 9530, \"count_degree_2\": 1, \"empty_shells\": 8846, \"occupied_shells\": 685, \"positive_degree_0\": 43, \"positive_degree_1\": 642, \"primes\": 54, \"shells\": 9531, \"states\": 412838, \"success_states\": 1920}}\n",
+    "seconds_including_tex_rebuilds": 16.729536771774292,
+    "six_json_outputs_identical": true,
+    "all_three_pdf_extracted_texts_identical": true,
+    "tex_commands": [
+      {
+        "document": "workbench",
+        "pass_number": 1,
+        "returncode": 0
+      },
+      {
+        "document": "workbench",
+        "pass_number": 2,
+        "returncode": 0
+      },
+      {
+        "document": "preprint",
+        "pass_number": 1,
+        "returncode": 0
+      },
+      {
+        "document": "preprint",
+        "pass_number": 2,
+        "returncode": 0
+      },
+      {
+        "document": "card",
+        "pass_number": 1,
+        "returncode": 0
+      },
+      {
+        "document": "card",
+        "pass_number": 2,
+        "returncode": 0
+      }
+    ]
+  },
+  "screen": {
+    "bound": 50000,
+    "normal_and_optimized_json_identical": true,
+    "counts": {
+      "canonical_states": 658782438,
+      "empty_shells": 7452217,
+      "occupied_forced_degree_one": 56756,
+      "occupied_shells": 56756,
+      "primes": 1264,
+      "shells": 7508973,
+      "success_states": 146920
+    },
+    "completion_evidence": "Both detached runs produced the complete final JSON and final stdout; process exit codes were not retained. No fresh-extraction 50000 replay is asserted."
+  },
+  "source_git_blobs": {
+    "verify.py": "a32c1eac6d2ae24ec7e760789ef716fb6e843d1b",
+    "screen_degree_one.py": "02200c1a282e5d154563a04247efaeef0ddb241d",
+    "core.tex": "f382a5a89850951e24a6942e056c971a8b2878c4",
+    "preprint.tex": "a9d1e587826506d4ea9c7dc9f29f36ff32d49365",
+    "workbench.tex": "dbc0b523eca9ba84c2cdd80c3c241c69912a1668",
+    "references.tex": "2c5be71833c4b72c63975f3cf57f3fd4be45eaf4",
+    "card.tex": "9ce26d4d3caa49c78c12ebd9a38375306ba7feaa",
+    "README.md": "73662d6bb90a2eb6de0d37cc53cbd800e369fd2a",
+    "source_reading.json": "9dc837a76a7c2f3c6732f3c35c184aab28b52a54",
+    "morphisms.json": "6263fdae1840d7845954cf8f874bda1f7e171d88",
+    "MORPHISMS.md": "be8bc8f739e6edee3eec6611033f6f131303ceb0",
+    "lean_plan.md": "1782229afde39f802fb6bad4015b3029d57f8946",
+    "novelty_review.json": "3e67d3acdf8adc3de87ead417bab005b74d24451",
+    "LICENSE.md": "e1cbc5b2ef456f4277a00b51747d83cdcf3c4952",
+    "SOFTWARE_LICENSE.txt": "f5807e2d6b7e8b464599141ccde44315d720c489"
+  },
+  "mathematical_certificates": {
+    "checks.json": "df55dc48515a62a8d4ae156ef5e86b82f6ed8fb9a0e3eb2880ac7e3a9e46d908",
+    "degree_one_screen.json": "183d31504e7f1ef1092a10fa7604b50fdbc6ed26360177503549fc250513fc7b",
+    "examples.json": "e1797a406dbe3ce1858e7f3d01cedb99f57c32591d638d180828874329f1f859",
+    "negative_controls.json": "f4ff8bb69e8fbc2938036381b3a425294a77ec380e0a1e23519b4893d29081d0",
+    "scan.json": "e89ee2433fd70b335c186037fc125b79488f072aadd2b7c09b86af02513acf20",
+    "splits.json": "709e98246192e5dc4c9a02899c81ac87b502daf04fd1487be43ea11eab1ca3bd",
+    "structural.json": "e3d80ea584a2df79f31aaa97e80b997088a090bf2e6fac0c57ee1d25618fdc4a"
+  },
+  "render": {
+    "workbench_pages": 7,
+    "preprint_pages": 3,
+    "card_pages": 1,
+    "rendered_and_inspected": [
+      "workbench contact sheet",
+      "preprint contact sheet",
+      "full posting card"
+    ],
+    "warnings": "No overfull boxes or undefined references after second TeX passes"
+  },
+  "nonclaims": [
+    "No independent mathematical review",
+    "No Lean build",
+    "No source-wide CI replay",
+    "No historical-priority conclusion",
+    "No new ES prime coverage",
+    "No universal ES or RH theorem"
+  ]
+}
