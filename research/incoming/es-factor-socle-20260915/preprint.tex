@@ -1,0 +1,243 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=23mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\title{An actual-factor socle certificate for Erd\H{o}s--Straus}
+\author{The Clankers}
+\date{15 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+A characteristic-two group algebra can force every unit residue to occur among
+an explicitly bounded family of actual divisors. We give a complete binary-prefix
+test for one leading-socle selection class, preserve original factor multiplicities
+through a positive binary-submask lift, and return an ordered ES solution.
+The construction allows new primes to replace missing powers of three in the
+preceding seed method. A hard-prime example has exactly one three-factor/cofactor
+state. The group-algebra strategy is classical; no universal ES or priority claim
+is made.
+\end{abstract}
+
+\paragraph{Original arithmetic and the allowed modulus reduction.}
+Let $k\ge4$, $u=2^{2k-5}$, $m=2^k$, $p\equiv1\pmod8$, $p>2u$, and
+$N=p+4u=\prod_q q^{e_q}$, with actual prime exponents. Put
+$h=k-1$ when $p\equiv1+2^{k-1}\pmod m$, and $h=k$ otherwise; set
+$n=2^h$, $L=2^{h-2}$ and $r_0=h-2$.
+A divisor $d\mid N$ in class $-1\pmod n$ gives $Q=d$, except that in the
+half-turn case its full residue may be $-p\pmod m$: then put $R=d$ and
+$Q=N/d$. In all cases $RQ=N$, $Q\equiv-1\pmod m$.
+In the half-turn case complementation exchanges the two distinct lift classes;
+the map has two preimages per original state. Otherwise it is bijective.
+
+The inherited middle-state return is
+\[
+ a=(p+R)/4,\quad d_0=\gcd(a,u),\quad
+ (h_0,r,s)=(d_0^2/u,u/d_0,a/d_0),\quad \lambda=(r+s)/R,
+\]
+\[
+ (x,y,z)=(a,ph_0s\lambda,ph_0r\lambda),\qquad
+ u=pa^2/(Ry-pa).                                             \tag{1}
+\]
+Indeed, $u\mid a^2$ is equivalent to $2^{k-2}\mid a$, obtained from the
+cofactor congruence. Both factors are $3\pmod4$, at least three and less than
+$p$, since $N<3p$. Prime valuations give $a=h_0rs$, $u=h_0r^2$ and
+$\gcd(r,s)=1$. The middle gate gives $R\lambda=r+s$, and clearing the
+reciprocal sum proves $4/p=1/x+1/y+1/z$. These Type II coordinates and the
+fixed-seed atlas are inherited \cite{ET,Prior}.
+
+\paragraph{Actual divisor words before parity reduction.}
+For a selected budget $0\le f_q\le e_q$, keep
+\[
+ B_f=\prod_q\prod_{a:\,\mathrm{bit}_a(f_q)=1}(1+[q]^{2^a})\in\mathbb Z[G],
+ \qquad G=(\mathbb Z/n\mathbb Z)^\times.                      \tag{2}
+\]
+Every term is an original divisor: its exponent at $q$ is a binary submask
+of $f_q$. Unique factorization and the binary expansion invert the term map.
+Coefficients after residue collision retain the number of such terms.
+Modulo two, Frobenius gives $\overline B_f=\prod_q(1+[q])^{f_q}$.
+A nonzero parity proves positive occupancy. Zero parity may be a supported
+even coefficient, not absence; (2) is not erased by reduction.
+
+For $g=3$ or $5$, $G=\langle-1\rangle\times\langle g\rangle$ with
+$|\langle g\rangle|=L$. Induction gives the orders modulo $2^h$; the two
+subgroups are respectively $1,3\pmod8$ and $1,5\pmod8$. The substitutions
+\[
+ S=1+[-1],\quad T=1+[g],\qquad
+ [(-1)^\epsilon g^j]\longleftrightarrow(1+S)^\epsilon(1+T)^j
+\]
+give an algebra isomorphism $\mathbb F_2[G]\simeq\mathbb F_2[S,T]/(S^2,T^L)$,
+with the displayed inverse. Its joint annihilator is the line
+\[
+ \operatorname{Ann}(S,T)=\mathbb F_2ST^{L-1},\qquad
+ ST^{L-1}=\sum_{t\in G}[t].                                \tag{3}
+\]
+The monomial basis proves the annihilator statement; the odd binomial
+coefficients of $(1+[g])^{L-1}$ prove the last identity. Highest-augmentation
+products forcing occupied coefficients are a classical group-algebra method,
+not a new principle here \cite[\S1, pp.~2--3]{Petrov}.
+
+\newpage
+\begin{theorem}[Actual-factor selection]
+Write $q=(-1)^{\epsilon_q}g^{j_q}\pmod n$, $0\le j_q<L$, and set
+$w_q=2^{v_2(j_q)}$ for $j_q\ne0$, with sentinel $w_q=L$ at $j_q=0$.
+Suppose an actual selection $f_q\le e_q$ and a pivot $m_0=2^a$ satisfy
+\[
+ \sum_qw_qf_q=L-1+m_0,\quad
+ \sum_{\epsilon_q=1,w_q=m_0}f_q\equiv1\pmod2,\quad
+ \epsilon_q=1,
+w_q>m_0\Longrightarrow f_q\text{ even}.       \tag{4}
+\]
+Then $\overline B_f=ST^{L-1}$, every unit residue has an original divisor
+representative in (2), and (1) returns a positive integral ES witness.
+At most $L$ prime occurrences are needed in one marked factor $R$ or $Q$.
+\end{theorem}
+\begin{proof}
+For $j_q\ne0$, write
+\[
+ 1+[q]=A_q+\epsilon_qSB_q,\quad
+ A_q=1+(1+T)^{j_q}=T^{w_q}U_q,\quad U_q(0)=B_q(0)=1.
+\]
+The part without $S$ vanishes by its degree. The coefficient of $S$ is
+\[
+ \sum_{\epsilon_q=1,\ f_q\text{ odd}}
+ B_qA_q^{f_q-1}\prod_{t\ne q}A_t^{f_t}.
+\]
+Its summand has degree $L-1+m_0-w_q$. Larger weights have even selected
+exponent; smaller weights vanish modulo $T^L$; pivot summands each equal
+$T^{L-1}$ and occur in odd number. A selected identity-residue prime is
+excluded by the weight equation. A selected $j_q=0$ outside prime forces
+$m_0=L$ and exactly one such occurrence; its factor is $S$ and the remaining
+weight is $L-1$, proving that exceptional case directly. Removing one pivot
+occurrence leaves weight $L-1$, so there are at most $L$ occurrences total.
+Equations (2)--(3) and the cofactor return prove the claim.
+\end{proof}
+
+The weights can be computed without a discrete-log search. For
+$x=(-1)^{\epsilon_q}q$, use $w_q=1$ when $x\equiv g\pmod8$,
+$w_q=2^{v_2(x-1)-2}$ when $x\equiv1\pmod8$ but not modulo $n$, and $w_q=L$
+when $x\equiv1\pmod n$. The order identities prove these formulas.
+
+\begin{theorem}[Exact finite capacity test for (4)]
+For each weight $2^b$ let
+\[
+ I_b=\sum_{\epsilon_q=0,w_q=2^b}e_q,\quad
+ O_b=\sum_{\epsilon_q=1,w_q=2^b}e_q,\quad
+ P_b=\sum_{\epsilon_q=1,w_q=2^b}\lfloor e_q/2\rfloor.
+\]
+For a pivot $a$ with $O_a>0$, put, for $0\le b<r_0$,
+\[
+ c_b=I_b+\mathbf1_{b<a}O_b
+ +\mathbf1_{b=a+1}\lfloor(O_a-1)/2\rfloor
+ +\mathbf1_{b\ge a+2}P_{b-1}.                               \tag{5}
+\]
+A selection (4) exists exactly when
+\[
+ \boxed{\sum_{b=0}^{j-1}2^bc_b\ge2^j-1\quad(1\le j\le r_0).} \tag{6}
+\]
+Thus checking all pivots gives a terminating arithmetic sufficient test for
+arbitrary original prime-factor multiplicities.
+\end{theorem}
+\begin{proof}
+Reserve one pivot occurrence. The remaining odd pivot aggregate is grouped
+into pairs of weight $2^{a+1}$; higher outside primes must pair their own
+occurrences, giving $P_b$, not $\lfloor O_b/2\rfloor$. Lower outside and all
+inside occurrences are unrestricted. The remaining target weight is $L-1$,
+with exactly the coin capacities (5). Necessity of (6) follows modulo $2^j$.
+For sufficiency, at each new denomination $2^b$, lower coins cover a complete
+interval at least through $2^b-1$. Its translates by all available multiples
+of $2^b$ touch or overlap, so subset sums fill every integer through the new
+total. The last inequality includes $L-1$. Descending greedy allocation and
+bounded compositions among the original primes give a full inverse selection.
+\end{proof}
+The test is exact for the leading-term class (4), not necessary for every ES
+witness or every possible group-ring cancellation.
+
+A quantitative consequence retains unused factor capacity. Put
+$M_f=\prod_q\lfloor(e_q+1)/(f_q+1)\rfloor$. The translates of (2) by
+$\prod_q q^{(f_q+1)t_q}$, with $0\le t_q<\lfloor(e_q+1)/(f_q+1)\rfloor$,
+are disjoint by quotient and remainder. Each contains a coarse target.
+Therefore the original state count is at least $M_f$ when $h=k$, and at
+least $\lceil M_f/2\rceil$ in the half-turn case.
+
+\newpage
+\paragraph{A mixed contribution with a unique arithmetic return.}
+At the deterministically checked hard prime
+\[
+ p=1794769\equiv529\pmod{840},\quad k=5,\quad u=32,\quad
+ N=3^2\cdot13\cdot23^2\cdot29,
+\]
+we have $h=4$, $L=4$. In the $g=3$ basis, the pairs $(\epsilon,w)$ for
+$3,13,23$ are $(0,1),(1,1),(1,2)$. The actual selection
+$(f_3,f_{13},f_{23})=(2,1,1)$ satisfies (4) at pivot two. Its positive lift is
+\[
+ (1+[9])(1+[13])(1+[23]),
+\]
+whose eight integer residue coefficients modulo 16 are all one.
+The divisor $207=9\cdot23$ is $-1$ modulo 16, but $-p$, not $-1$, modulo
+32. Thus it is the residual; $Q=8671=13\cdot23\cdot29$.
+The original marking is
+\[
+ (a,u,h_0,r,s,\lambda)=(448744,32,2,4,56093,271),
+\]
+\[
+ \boxed{\frac4{1794769}=\frac1{448744}
+ +\frac1{54565295814214}+\frac1{3891059192}.}
+\]
+All 36 divisors of $N$ give exactly this one original state. Neither target
+has a one- or two-prime word. The preceding $3$-power threshold required
+three occurrences but only two are present. The two simpler tests using
+inside factors in either $\langle3\rangle$ or $\langle5\rangle$ alone also
+fail. The mixed contribution supplies the missing arithmetic capacity.
+
+For $p=165601$, $k=4$, $N=3\cdot13\cdot31\cdot137$, the weights of the
+inside primes $3$ and $137$ are one and two. The outside prime $13$ completes
+the socle selection. Its return is
+$(41408,1145153436736,221242936)$, and the disjoint-packing bound gives
+both original states. The prime $31$ already supplies an alternative cofactor;
+this example illustrates the weighted mechanism, not failure of every simpler
+construction. At $p=852769$, $k=6$, prime $17$ contributes weight four beside
+three actual powers of $3$; outside prime $13$ gives the unique state
+$(213280,863923218520,518483552)$. It requires no sevenfold $3$-power block.
+
+\paragraph{Scope, finite evidence, and the remaining problem.}
+The complete test through two million contains 4519 hard-class primes,
+37289 valid dyadic branches and 4583 original states in 3097 occupied branches.
+The previous sufficient capacity theorem covers 964 primes. The new prefix
+test covers 1194 primes; their union covers 1196. This adds 232 primes to
+that test, not to known overall ES coverage. Two previously certified primes
+remain outside this new sufficient test and are not discarded.
+
+Every tested positive certificate is returned to actual factors, the full
+modulus orientation, the original $a$ factorization, and the ordered
+reciprocal identity. The main verifier uses valuations and prefix inequalities;
+a separate implementation uses finite logarithms and parity-aware bounded
+knapsack and agrees on the complete branch digest. The source, exact JSON,
+full proofs and typed maps accompany this note. No Lean or independent
+mathematical review is claimed.
+
+The final universal step is still arithmetic. The construction proves
+\emph{when actual factors form a nonzero top product}; it does not assert
+that every prime has a seed with that capacity. If every pivot fails, a
+specific finite binary-prefix deficit remains. Cross-seed constraints must
+force one such deficit to disappear or produce a different positive selection.
+A supported zero coefficient, a generated subgroup, and an available bounded
+factor word remain distinct observations throughout.
+
+\begingroup\small
+\begin{thebibliography}{3}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\S2, Propositions 2.6--2.7; arXiv:1107.1010v6.
+\bibitem{Petrov} Petrov, F. (2020). \emph{Combinatorial results implied by many
+zero divisors in a group ring}. arXiv:1606.03256v4. \S1, pp.~2--3.
+The general augmentation method and its Olson antecedent are attributed there;
+no first-use claim for that method is made here.
+\bibitem{Prior} The Clankers. (2026). \emph{All-phase cofactor bounds, valuation
+correlations and logarithmic escape}. 15 September 2026 source tranche,
+Sections 1--3; predecessor fixed-seed PR8, commit \texttt{79054f8b\ldots{}ba750}.
+Exact revisions and read scopes are in the accompanying source ledger.
+\end{thebibliography}\endgroup
+\end{document}
