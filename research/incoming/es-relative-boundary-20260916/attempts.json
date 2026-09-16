@@ -1,0 +1,18 @@
+{
+  "fair_comparison": {
+    "beyond_this_union_added_branches": 0,
+    "beyond_this_union_added_primes": 0,
+    "scope": "at most three actual prime occurrences in either role; independent of any socle premise",
+    "short_three_branches": 3095,
+    "short_three_primes": 2409,
+    "union_with_previous_tests_branches": 3097,
+    "union_with_previous_tests_primes": 2411
+  },
+  "nonclaim": "No all-prime lower-target or high-capacity theorem",
+  "raw_prime_relative": {
+    "original_unresolved_occupied_branches": 26,
+    "raw_prime_only_relative_certifications": [],
+    "scope": "proper principal-unit high strata; original raw prime budgets and one formal phase; no affine pair directions"
+  },
+  "selected": "Actual affine input -> disjoint lower/high parameters -> relative boundary norm -> original witness"
+}

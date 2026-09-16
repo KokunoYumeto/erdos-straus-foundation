@@ -1,0 +1,205 @@
+{
+  "convention": "Retain original state and support masks; each information-losing map specifies its kernel/fibre. No global arithmetic occupancy assumed.",
+  "maps": [
+    {
+      "codomain": "original middle state",
+      "domain": "p,k,N=factorized p+4u; Q|N, Q=-1 mod2^k",
+      "formula": "R=N/Q; a=(p+R)/4; A3 normalization",
+      "id": "A1",
+      "information_loss_and_exceptions": "No prime assumption for identity; require p=1mod8,p>2u. N and a factorizations differ.",
+      "inverse_or_fibre": "u=pa^2/(Ry-pa), Q=N/R; retain p,R,M and ordered denominators",
+      "name": "Original fixed-seed cofactor",
+      "proof_location": "A1-A4"
+    },
+    {
+      "codomain": "original physical divisors W|N",
+      "domain": "disjoint original prime blocks and bounded parameters t",
+      "formula": "v_q(W)=offset_q+step_q*t_block",
+      "id": "A2",
+      "information_loss_and_exceptions": "Image is a specified subset of original divisor box; unused complement is not absent from the full source.",
+      "inverse_or_fibre": "read any nonzero step; all other coordinates checked",
+      "name": "Affine prime-exponent source",
+      "proof_location": "C1"
+    },
+    {
+      "codomain": "F2[T]/T^o",
+      "domain": "F2[X]/(X^o-1)",
+      "formula": "T=X+1",
+      "id": "B1",
+      "information_loss_and_exceptions": "Ordinary coefficient algebra isomorphism, not a global sparse-semiring inverse.",
+      "inverse_or_fibre": "X=T+1",
+      "name": "Cyclic/Pascal coefficient coordinates",
+      "proof_location": "B1"
+    },
+    {
+      "codomain": "A_d",
+      "domain": "A_o",
+      "formula": "sum coefficients with equal residues modulo d",
+      "id": "B2",
+      "information_loss_and_exceptions": "Need d|o; support masks travel even when amplitudes cancel.",
+      "inverse_or_fibre": "kernel consists of coefficient vectors with each coset sum zero",
+      "name": "Ordinary cyclic quotient",
+      "proof_location": "B2-B3"
+    },
+    {
+      "codomain": "ker(T^d) in A_o",
+      "domain": "A_d as an F2[X]-module via quotient",
+      "formula": "X^r -> X^r*N_d",
+      "id": "B3",
+      "information_loss_and_exceptions": "Not a unital algebra map; image is square-zero for proper d. Ordinary quotient is not its inverse.",
+      "inverse_or_fibre": "test each coset constant; then read coefficient at r=0..d-1",
+      "name": "Relative boundary inclusion",
+      "proof_location": "B2-B3"
+    },
+    {
+      "codomain": "ker(T^d)",
+      "domain": "A_o",
+      "formula": "F -> N_d F = iota_d pi_d F",
+      "id": "B4",
+      "information_loss_and_exceptions": "Integer projection/repetition gives L times identity; mod2 it is zero when L even.",
+      "inverse_or_fibre": "retain coset-sum kernel of pi_d for full source reconstruction",
+      "name": "Relative norm multiplication",
+      "proof_location": "B3"
+    },
+    {
+      "codomain": "A_o",
+      "domain": "A_dprime, dprime|d|o",
+      "formula": "iota_o,d iota_d,dprime = iota_o,dprime",
+      "id": "B5",
+      "information_loss_and_exceptions": "Not multiplication of overlapping norm elements; their intersection multiplicity remains.",
+      "inverse_or_fibre": "unique subgroup exponent decomposition",
+      "name": "Subgroup-tower comparison",
+      "proof_location": "B4"
+    },
+    {
+      "codomain": "sparse F2 coefficients with same image support",
+      "domain": "sparse integer coefficients with declared presence keys",
+      "formula": "reduce values modulo2 without deleting zero keys",
+      "id": "B6",
+      "information_loss_and_exceptions": "A zero coefficient at an existing key is supported e, not tau. Reduction alone is not injective.",
+      "inverse_or_fibre": "integer coefficient and preimage labels retained as decoration",
+      "name": "Supported coefficient reduction",
+      "proof_location": "B3 and examples"
+    },
+    {
+      "codomain": "r_i,z_i with stride delta_i",
+      "domain": "0<=t_i<=E_i",
+      "formula": "delta_i=d/gcd(d,a_i); t_i=r_i+delta_i*z_i",
+      "id": "C1",
+      "information_loss_and_exceptions": "No fractional mass introduced; includes phase parameter but phase is not an integer prime.",
+      "inverse_or_fibre": "Euclidean division gives unique r_i,z_i",
+      "name": "Disjoint lower/high exponent decomposition",
+      "proof_location": "C3-C4"
+    },
+    {
+      "codomain": "target class in C_d",
+      "domain": "actual lower-digit vector",
+      "formula": "t0-sum a_i*r_i mod d",
+      "id": "C2",
+      "information_loss_and_exceptions": "Zero lower gate does not assert a high lift.",
+      "inverse_or_fibre": "full lower vector and capacities retained",
+      "name": "Lower quotient target",
+      "proof_location": "C5"
+    },
+    {
+      "codomain": "positive integer packet on subgroup C_L",
+      "domain": "bounded high box with explicit C6 prefixes",
+      "formula": "choose total weighted degree L-1; use binary submask parameters",
+      "id": "C3",
+      "information_loss_and_exceptions": "Requires high logs divisible by d; exact total degree alone is insufficient. d=o excluded.",
+      "inverse_or_fibre": "suffix-parity inverse and every bounded source tuple retained",
+      "name": "Actual high-capacity packet",
+      "proof_location": "C6-C7"
+    },
+    {
+      "codomain": "full original parameter vector",
+      "domain": "subgroup target, selected packet and lower digits",
+      "formula": "z_i from packet; t_i=r_i+delta_i*z_i",
+      "id": "C4",
+      "information_loss_and_exceptions": "Source coordinates not replaced by their modular residues.",
+      "inverse_or_fibre": "read affine parameters, divmod stride, check retained digits and submasks",
+      "name": "High target reconstruction",
+      "proof_location": "Theorem actual relative packet forcing"
+    },
+    {
+      "codomain": "original cofactor Q",
+      "domain": "physical word W and epsilon in{0,1}",
+      "formula": "Q=W for epsilon0; Q=N/W for epsilon1",
+      "id": "C5",
+      "information_loss_and_exceptions": "Forgetting role identifies at most complementary words; do not count them as new states.",
+      "inverse_or_fibre": "W=Q or R according to retained role",
+      "name": "Formal orientation return",
+      "proof_location": "C2 and A2"
+    },
+    {
+      "codomain": "actual capacity function",
+      "domain": "E_i+1=C_i*delta_i+B_i",
+      "formula": "F_i(r)=C_i-1+1_(r<B_i)",
+      "id": "C6",
+      "information_loss_and_exceptions": "Minimum capacity may be insufficient even when some particular fibre works; not necessary for all witnesses.",
+      "inverse_or_fibre": "retain E_i,delta_i and admissible r_i",
+      "name": "Uniform lower-fibre capacity",
+      "proof_location": "C8"
+    },
+    {
+      "codomain": "r_t in[0,L), L=2^(k-ell)",
+      "domain": "t|M, t=-1 mod2^ell, v2(b-1)=ell",
+      "formula": "b^r_t=-t^-1 mod2^k",
+      "id": "D1",
+      "information_loss_and_exceptions": "Actual b-factor capacity is independently required.",
+      "inverse_or_fibre": "binary lift chooses one of two exponents at each precision",
+      "name": "Exact principal-unit logarithm",
+      "proof_location": "D1-D2"
+    },
+    {
+      "codomain": "Q=b^i t",
+      "domain": "t and i=r_t+jL within0..e",
+      "formula": "multiply actual factors",
+      "id": "D2",
+      "information_loss_and_exceptions": "Complete bijection because gcd(b,M)=1.",
+      "inverse_or_fibre": "i=v_b(Q); t=Q/b^i",
+      "name": "All original cofactors at one high prime",
+      "proof_location": "D2-D3"
+    },
+    {
+      "codomain": "positive integer count series",
+      "domain": "fixed b,M,k and all nonnegative e",
+      "formula": "sum C(e)z^e=(sum_t z^r_t)/((1-z)(1-z^L))",
+      "id": "D3",
+      "information_loss_and_exceptions": "Varying e varies p; remove invalid finite prefix; not a prime-filtered rationality theorem.",
+      "inverse_or_fibre": "coefficient tracks actual bounded i<=e",
+      "name": "All-exponent generating series",
+      "proof_location": "D3a"
+    },
+    {
+      "codomain": "coarse word of length<=2^(ell-2)",
+      "domain": "actual t=-1mod2^ell of minimum occurrence length",
+      "formula": "remove a proper quotient-zero subword if its full sign is+1, keep if-1",
+      "id": "D4",
+      "information_loss_and_exceptions": "Not an arbitrary subgroup-membership replacement; uses an existing bounded coarse target.",
+      "inverse_or_fibre": "retain removed prime occurrences and original t",
+      "name": "Minimal coarse target reduction",
+      "proof_location": "D4"
+    },
+    {
+      "codomain": "actual N,p and exactly two target cofactors",
+      "domain": "k>=6, actual q,r in stated reduced classes",
+      "formula": "N=3*17^L*q*r; p=N-4u; Q1=17^(L/2)r,Q2=3*17^(L/2)q",
+      "id": "E1",
+      "information_loss_and_exceptions": "Dirichlet supplies auxiliary primes, not primality of derived p. Individually certified example separate.",
+      "inverse_or_fibre": "retain k,q,r,L and role; complete enumeration by coarse residues",
+      "name": "Separation-family parameter construction",
+      "proof_location": "E6-E8"
+    },
+    {
+      "codomain": "first certified relative packet or no certificate in declared class",
+      "domain": "actual factorization and preceding maximal singleton/pair lines",
+      "formula": "test every proper relative level and all actual lower digits after capacity pruning",
+      "id": "F1",
+      "information_loss_and_exceptions": "Not exhaustive over every possible affine line or every ES state. Stronger three-word baseline retained.",
+      "inverse_or_fibre": "certificate records pattern, offsets,strides,digits,selected capacities and inverse word",
+      "name": "Canonical relative search",
+      "proof_location": "Section finite comparison"
+    }
+  ]
+}

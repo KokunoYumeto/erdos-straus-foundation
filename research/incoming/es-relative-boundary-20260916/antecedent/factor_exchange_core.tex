@@ -1,0 +1,478 @@
+\section{Original arithmetic and the selected advance}
+The predecessor constructs a nonzero top-socle product from the available
+prime powers inside either cyclic subgroup of the dyadic unit group, then
+uses one outside factor to reach the target \cite[Sections 2--4]{Prior}.
+This continuation allows the outside factors to contribute directions as
+well: the alternatives $q$ and $r$ give the inside ratio $q/r$, while the
+factor $r$ remains in the original integer word. It is an actual exchange
+inside the bounded exponent box, not an assertion that a negative prime
+exponent is available. The complete two-prime box decomposes into the
+retained exchange lines below. Their maximal capacities have closed formulas
+at every exponent multiplicity.
+
+The SplitZero convention remains
+$G(A)=\{\tau\}\sqcup A^\bullet$, $e=0_A^\bullet\ne\tau$.
+All original choices are retained with their integer coefficients. Reduction
+modulo two is a specified observation: an even positive coefficient becomes
+a supported zero, not an absent choice. We neither assign a socle after
+calculating successful states nor infer their existence from an abstract
+augmentation alone.
+
+Fix
+\[
+ k\ge3,\quad m=2^k,\quad o=2^{k-2},\quad u=2^{2k-5},\qquad
+ p\equiv1\pmod8,\quad p>2u,\quad N=p+4u=\prod_{q}q^{e_q}. \tag{A1}
+\]
+The factors $q$ are distinct actual primes; the $e_q$ are their actual
+multiplicities. The structural results permit any integer $p$ in (A1).
+Primality is checked separately in examples and the prime census.
+
+The original middle states at this fixed seed are in bijection with
+\[
+ Q\mid N,\quad Q\equiv-1\pmod m,\qquad
+ R=N/Q,\quad a=(p+R)/4.                                    \tag{A2}
+\]
+For completeness, $K(u)=\prod_{\ell^v\parallel u}\ell^{\lceil v/2\rceil}
+=2^{k-2}$ and $u\mid a^2\iff K(u)\mid a$. Since $m\mid4u$, (A2) gives
+$R\equiv-p\pmod m$ and hence that availability. Both $Q,R$ are $3\pmod4$,
+so at least three; $N<3p$ implies both are less than $p$. Also
+$R\mid p+4u$ implies $R\mid a+u$. Reversing these steps proves the inverse
+from the original gate and availability conditions.
+
+Retain the complete normalization
+\[
+ d=\gcd(a,u),\quad(h,r,s_0)=(d^2/u,u/d,a/d),\quad
+ \lambda=(r+s_0)/R,\quad
+ (x,y,z)=(a,phs_0\lambda,phr\lambda).                       \tag{A3}
+\]
+For $v_q(a)=E$, $v_q(u)=F\le2E$, the exponents of $h,r,s_0$ are
+$E-|F-E|$, $(F-E)_+$, $(E-F)_+$. Thus they are integers,
+$a=hrs_0$, $u=hr^2$, and $\gcd(r,s_0)=1$.
+All are units modulo $R$, so $R\mid a+u=hr(r+s_0)$ makes $\lambda$ integral.
+Multiplying the reciprocal sum by $phrs_0\lambda$ gives
+$p\lambda+r+s_0=(p+R)\lambda=4hrs_0\lambda$.
+The ordered inverse is
+\[
+ \boxed{u=\frac{pa^2}{Ry-pa}.}                              \tag{A4}
+\]
+These are inherited Type II coordinates, not a new parametrization.
+The explicit crosswalk to Elsholtz--Tao \cite[Section 2, (2.13)--(2.22)]{ET}
+is $(a_{ET},b_{ET},c_{ET},d_{ET},e_{ET},f_{ET})=(r,s_0,\lambda,h,R,Q)$;
+their denominator map returns $(x,z,y)$. This last transposition is recorded,
+not silently removed. No complete classification for composite $p$ is imported.
+
+\section{Actual two-prime exchange lines and their full inverse}
+Let $q,r$ be distinct primes, with exponent budgets $E,F$. Set
+\[
+ \ell_c=\max(0,c-F),\quad h_c=\min(E,c),\quad 0\le c\le E+F.
+\]
+The whole original box is the disjoint union of the anti-diagonals
+\[
+ (c,t)\longmapsto(i,j)=(\ell_c+t,c-\ell_c-t),\qquad
+ 0\le t\le h_c-\ell_c.                                    \tag{B1}
+\]
+The inverse is $c=i+j$, $t=i-\ell_c$. Therefore the exact integer identity is
+\[
+ \sum_{i=0}^{E}\sum_{j=0}^{F}[q]^i[r]^j
+ =\sum_{c=0}^{E+F}[q]^{\ell_c}[r]^{c-\ell_c}
+       \sum_{t=0}^{h_c-\ell_c}([q]/[r])^t.                 \tag{B2}
+\]
+The right side is first an identity of Laurent monomials: all completed
+monomials have nonnegative exponents within the original budgets.
+Its reduction in a unit group is a later map. Every original monomial occurs
+once. Parallel lines with fixed $i-j=d$ have the analogous inverse
+\[
+ \ell_d=\max(0,-d),\quad h_d=\min(F,E-d),\quad
+ (i,j)=(d+\ell_d+t,\ell_d+t),\quad 0\le t\le h_d-\ell_d.     \tag{B3}
+\]
+Their ratio is $qr$ instead of $q/r$.
+
+Fix either
+\[
+ H_3=\langle3\rangle=\{x:x\equiv1,3\pmod8\},\qquad
+ H_{-3}=\langle-3\rangle=\{x:x\equiv1,5\pmod8\},             \tag{B4}
+\]
+inside $(\mathbb Z/m)^\times$. The identity
+$v_2(3^{2^j}-1)=j+2$ for $j\ge1$, by successive difference-of-squares
+factorizations, proves that these have order $o$. Each contains $p$, not $-1$.
+Write $H=H_b$ and $\chi_b=1$ on $H$, $-1$ on its other coset.
+When $\chi_b(q)=\chi_b(r)$, both $q/r$ and $qr$ lie in $H$.
+The constant monomial in (B1) or (B3) remains separately recorded.
+
+\begin{theorem}[Optimal line capacities, including their parity]
+Let $E,F\ge1$ and $v=\min(E,F)$. If both primes lie outside $H$, prescribe
+parity $\epsilon\in\{0,1\}$ of the constant monomial. The largest possible
+parameter lengths in (B1) and (B3), respectively, are
+\[
+ \boxed{
+ L_{\rm exchange}=v-\mathbf1_{E=F,\ v\not\equiv\epsilon\ (2)},\qquad
+ L_{\rm parallel}=v-\mathbf1_{E=F,\ \epsilon=1}.}            \tag{B5}
+\]
+If both primes lie inside $H$, both maxima are $v$, with constant in $H$.
+\end{theorem}
+\begin{proof}
+The anti-diagonal length is $\min(c,E,F,E+F-c)$, whose maximum $v$ occurs
+precisely for $v\le c\le\max(E,F)$. If the budgets differ, this interval
+contains both parities. If they agree, its only point is $c=v$, and either
+neighbor gives length $v-1$. The parity of its constant is $c\pmod2$.
+For parallel lines, difference zero gives length $v$ with even constant.
+When the budgets differ, difference $1$ or $-1$ toward the larger budget also
+gives length $v$ with odd constant. With equal budgets any odd difference
+loses at least one, and difference one attains that loss. The same proof
+without the parity constraint applies to inside primes.
+\end{proof}
+
+An explicit maximizing anti-diagonal uses $c=v$ when its parity is wanted,
+$c=v+1$ when the budgets differ and its parity is not wanted, and $c=v-1$
+otherwise. The parallel odd line uses offsets $(1,0)$ when $E>F$, and
+$(0,1)$ otherwise. The formulas include length zero; no binomial at an
+identity ratio is selected later.
+
+\section{Affine packets from disjoint actual prime blocks}
+Partition the actual prime indices into singletons and pairs. Pairs must
+have the same $\chi_b$ value. For each block $B_i$ choose a retained affine
+line
+\[
+ v_q(W)=a_q+\sigma_qt_i\quad(q\in B_i),\qquad 0\le t_i\le L_i,   \tag{C1}
+\]
+where the integer endpoint inequalities put every exponent in $[0,e_q]$.
+The block step vector $(\sigma_q)_{q\in B_i}$ is nonzero. Use (B1) or (B3) for pairs. For a singleton
+inside $H$, use exponent $t$. For a singleton outside $H$, choose exponent
+$\epsilon+2t$, $0\le t\le\lfloor(e_q-\epsilon)/2\rfloor$.
+
+Keep
+\[
+ A=\prod_q q^{a_q},\qquad
+ g_i=\prod_{q\in B_i}q^{\sigma_q}\in H\pmod m,
+ \qquad \chi_b(A)=-1.                                    \tag{C2}
+\]
+The $g_i$ may be positive rationals, but
+$W(\mathbf t)=A\prod_i g_i^{t_i}$ is always an actual positive integer divisor
+of $N$. For a fixed set of block lines this map is injective: in each block,
+a nonzero step coordinate gives
+\[
+ t_i=(v_q(W)-a_q)/\sigma_q,
+\]
+and all other block coordinates must agree. Distinct blocks have disjoint
+prime indices. The full inverse image is thus specified, not just its residue.
+The omitted part of the original exponent box is retained as the complement
+of this explicitly defined subset. Reusing one prime in two blocks would
+invalidate this inverse and is not allowed.
+
+Write $g_i=b^{d_i}\pmod m$, with $0\le d_i<o$. Discard identity steps only
+from the selected packet by setting their selected count to zero; their
+constant monomials remain in $A$. For nonidentity steps set
+$w_i=2^{v_2(d_i)}$ with capacity $L_i$.
+Optionally include one formal phase step $p^{-1}=b^{-s}$, where $p=b^s$;
+if $s\ne0$ it has capacity one and weight $2^{v_2(s)}$.
+It records residual/cofactor orientation and is not a factor of $N$.
+
+\begin{lemma}[Inherited bounded selection and its inverse]
+For powers-of-two weights below $o=2^n$ and capacities $L_i$, a choice
+$0\le c_i\le L_i$ with $\sum_i c_iw_i=o-1$ exists exactly when
+\[
+ \boxed{\sum_{w_i\le2^j}L_iw_i\ge2^{j+1}-1
+ \quad(0\le j<n).}                                       \tag{C3}
+\]
+A highest-weight-first greedy choice constructs it.
+\end{lemma}
+\begin{proof}
+Reducing the total modulo $2^{j+1}$ proves necessity. For sufficiency,
+select one unit, pair the remaining units into twos, and divide all remaining
+weights by two. The new prefix mass is
+$\lfloor(C_{j+1}-1)/2\rfloor\ge2^{j+1}-1$; induction proves existence.
+All carries retain the original labels. To justify the greedy inverse,
+among smaller dyadic coins total mass at least $w$ contains exactly $w$:
+pair upwards, or else the remaining unpaired coins have total at most $w-1$.
+Exchange such a submultiset for another available weight-$w$ coin until the
+greedy amount is attained. Continue downwards.
+\end{proof}
+This lemma and its top-socle consequence are inherited from the pinned
+predecessor \cite[Section 3, Lemma 1 and Theorem 2]{Prior}; their short proofs
+are retained to make the present application standalone.
+
+\begin{theorem}[Actual factor-exchange forcing]
+Assume (A1), (C1)--(C2), and the explicit prefixes (C3), including the optional
+phase. Then an original positive integral middle witness exists. All selected
+integer exponents and both possible roles have terminating inverses.
+Every predecessor single-chart socle certificate is contained in this class.
+\end{theorem}
+\begin{proof}
+In $\mathbb F_2[C_o]=\mathbb F_2[T]/T^o$, $T=X+1$, an actual nonzero log
+$d=2^vr$, $r$ odd, gives
+$1+X^d=T^{2^v}U_d(T)$ with $U_d(0)=1$.
+Choose $c_i$ of total weight $o-1$. Then
+\[
+ \prod_i(1+X^{d_i})^{c_i}=T^{o-1}=\sum_{j=0}^{o-1}X^j.     \tag{C4}
+\]
+The extra unit disappears above the top degree. Repeated squaring proves
+the last equality.
+Let $t\preceq c$ mean binary submask containment. Frobenius gives
+$(1+Y)^c=\sum_{t\preceq c}Y^t$ in characteristic two. The corresponding
+integer packet is therefore
+\[
+ \mathcal P(X)= (1+X^{-s})^\delta
+      \prod_{i}\left(\sum_{t_i\preceq c_i}X^{d_it_i}\right),
+ \qquad \delta\in\{0,1\}.                                \tag{C5}
+\]
+Every coordinate is an actual allowed $t_i\le c_i\le L_i$, once, rather
+than a coloured subset of indistinguishable prime copies. By (C4), every
+integer cyclic coefficient is odd and positive. Choose its target
+$-A^{-1}\in H$. It returns
+\[
+ W(\mathbf t)p^{-\varepsilon}\equiv-1\pmod m,
+ \qquad \varepsilon\in\{0,\delta\}.                        \tag{C6}
+\]
+For $\varepsilon=0$, take $Q=W$; for $\varepsilon=1$, take $R=W$ and
+$Q=N/W$. These satisfy (A2), and (A3)--(A4) finish the return.
+
+To find a word, factor (C5) into its binary binomials and retain their suffix
+products modulo two. At an odd target, exactly one of the two next suffix
+coefficients is odd. Follow it and subtract its exponent when selected.
+The terminal target is zero. An even coefficient on the other branch is
+not called absent. Given a returned state and its role, read $W=Q$ or $W=R$,
+then invert the original affine lines and check the submask conditions.
+For a fixed packet and role this is injective; after forgetting the role
+there are at most two inverse words, $Q$ and $N/Q$.
+
+For predecessor inclusion choose all singletons, exponent zero offsets inside,
+one outside prime with offset one, and all other outside primes with offset
+zero. Its inside steps and the phase are exactly the old items; set the extra
+square-step counts to zero. The old selected vector proves (C3), and the base
+is the old actual outside prime.
+\end{proof}
+
+The perfect-cover framework is classical \cite[Section 1; Theorem 12]{GH}.
+A packet here may have different odd integer multiplicities at different
+residues; it is not asserted to be a perfect uniform cover. The reduction and
+the original coefficient vector are both retained. In particular (C4) has
+augmentation zero but is nonzero, and every original cyclic coordinate is
+occupied. This is a supported-zero observation, not a target-absence test.
+A ratio $q/r$ is not declared a freely available arithmetic factor: its
+compensating affine constant in (C1) travels through every calculation.
+
+\paragraph{Original count, disjoint free factors, and collisions.}
+Let $M_0$ consist only of primes on which all selected physical words have
+exponent identically zero. Partially unused budgets on other primes are
+not put into this separate counting factor. Put
+\[
+ A_+(M_0)=\#\{t\mid M_0:\chi_b(t)=1\}
+ =\tfrac12\left[\prod_{q^e\parallel M_0}(e+1)+
+ \prod_{q^e\parallel M_0}\sum_{j=0}^{e}\chi_b(q)^j\right].   \tag{C7}
+\]
+For each such $t$, use target $-(At)^{-1}$ in (C5).
+Unique factorization separates $t$ from the physical packet word within
+one role. Each original cofactor has at most two roles. Hence
+\[
+ \boxed{C_k(p)\ge A_+(M_0)\ (\delta=0),\qquad
+ C_k(p)\ge\lceil A_+(M_0)/2\rceil\ (\delta=1).}             \tag{C8}
+\]
+All collisions on forgetting the role are exactly pairs of words whose
+product is $N$. Neither duplicated roles nor equal residues are counted as
+new original states.
+
+\paragraph{All multiplicities and the declared search class.}
+For each prime matching and each coset parity/mode choice, (B5) gives the
+largest capacity of that type. Replacing another line by this maximal one
+preserves its cyclic step and constant coset, and only increases the prefixes.
+Since (C5) covers the entire needed coset, changing the numerical constant
+within that same coset introduces no new target restriction. Thus the
+canonical search is complete within the declared singleton and disjoint
+parallel/exchange-line class. It is not complete for all ES states or all
+possible subfamilies of the exponent box.
+With $r$ distinct primes there are at most $r!$ such matchings and at most
+$2^r$ mode/parity choices per matching. There are two charts.
+The decision search consequently uses at most $2^{r+1}r!$ prefix tests,
+each on $O(r+k)$ data. Factoring $N$ and expanding $o$-term suffix products
+have their separate costs. These are finite bounds, not a fast-factorization
+claim. The formulas for maximal lines do not enumerate huge prime powers.
+
+\section{A sharp close-pair theorem and exact counts}
+A particularly useful exchange step is the half-turn. Let $k\ge4$ and
+$L=o/2$. Let $b$ be an actual prime congruent to $3$ or $5\pmod8$, and write
+$H=\langle b\rangle$, which is one of (B4). Indeed $v_2(b^2-1)=3$,
+and successive difference-of-squares factorizations give
+$v_2(b^{2^j}-1)=j+2$ for $j\ge1$, proving its full order. Retain distinct outside primes
+$q,r$ with
+\[
+ \boxed{q/r\equiv b^L=1+2^{k-1}\pmod{2^k}.}                \tag{D1}
+\]
+Write $N=b^e q^{a_q}r^{a_r}M$, where $a_q,a_r\ge1$,
+$\gcd(bqr,M)=1$ and $e\ge0$. The value $e=0$ is allowed for the obstruction
+statement; the sufficient threshold below is positive.
+
+\begin{theorem}[Half-turn exchange, sharp uniform capacity]
+The original subfamily
+\[
+ Q=b^i t q\quad\text{or}\quad Q=b^i t r,
+ \qquad 0\le i\le e,\quad t\mid M,\quad t\in H
+\]
+has count $C_{\rm ex}$ satisfying
+\[
+ \boxed{\left\lfloor\frac{e+1}{L}\right\rfloor A_+(M)
+ \le C_{\rm ex}\le
+ \left\lceil\frac{e+1}{L}\right\rceil A_+(M).}              \tag{D2}
+\]
+If $L\mid e+1$, both bounds are equal. In particular $e\ge L-1$ forces an
+original witness, with no further phase assumption on $p$ beyond (A1).
+If $a_q=a_r=1$ and every prime factor of $M$ is inside $H$, this subfamily
+is the entire original fixed-seed branch.
+The uniform sufficient exponent $L-1$ is optimal over the stated integer
+parameters.
+\end{theorem}
+\begin{proof}
+For each retained $t$, define $0\le j_t<o$ by
+$b^{j_t}=-(qt)^{-1}\pmod m$. The $q$ words hit precisely when
+$i\equiv j_t\pmod o$; by (D1), the $r$ words hit precisely when
+$i\equiv j_t-L\pmod o$. Together this is
+$i\equiv j_t\pmod L$, with exactly one partner for each such $i$.
+Thus the exact per-divisor count is
+\[
+ \max\left\{0,1+\left\lfloor\frac{e-(j_t\bmod L)}L\right\rfloor\right\}.
+                                                               \tag{D3}
+\]
+This is between the two integer bounds in (D2). The maps are injective because
+$q,r,b$ and the prime factors of $t$ are distinct. If the outside primes occur
+exactly once and $M$ has no outside prime, any target cofactor must contain
+exactly one of $q,r$, proving the completeness assertion.
+
+For sharpness fix $b=3$, choose primes
+$q\equiv-3$, $r\equiv-3^{L+1}\pmod m$, and put
+$e=L-2$, $N=3^e qr$, $p=N-4u$.
+The two prime classes are distinct and reduced. Dirichlet's theorem gives
+arbitrarily large actual choices \cite[Theorem 18.1]{Sutherland}; $p$ is
+an integer, not asserted prime in this general construction.
+It satisfies $p\equiv1\pmod m$ and eventually (A1).
+Every outside divisor is $3^iq$ or $3^ir$ with $0\le i\le L-2$.
+The target requires $i\equiv L-1\pmod L$, so the complete branch is empty.
+\end{proof}
+
+This inverse can be computed without expanding $3^e$: find $j_t$ by binary
+lifting in the cyclic group, reduce it modulo $L$, choose the appropriate
+partner, and count the remaining occurrences using (D3). The count is exact
+for arbitrarily large binary-encoded $e$. If $q/r\equiv1\pmod8$ but is not
+the identity modulo $2^k$, its exchange weight in either chart is
+\[
+ \boxed{2^{v_2(q-r)-2}.}                                   \tag{D4}
+\]
+Indeed $v_2(q/r-1)=v_2(q-r)$ because $r$ is odd, and the nonzero even-log
+identity from (B4) gives $v_2(b^j-1)=v_2(j)+2$.
+Thus an actual difference between two available primes supplies a high
+nilpotent layer. It is not an assumed new prime divisor.
+
+\section{Exact strict examples and the required negative example}
+At the certified hard prime
+\[
+ p=837601\equiv121\pmod{840},\quad k=5,\quad u=32,\quad
+ N=837729=3^3\cdot19\cdot23\cdot71,                         \tag{E1}
+\]
+the two outside factors satisfy $23/71\equiv17=3^4\pmod{32}$.
+Retain the exchange $71(23/71)^t$, $t=0,1$, and the three available factors
+of $3$. The cyclic packet is
+\[
+ (1+X)(1+X^2)(1+X^4)=\sum_{j=0}^7X^j.                     \tag{E2}
+\]
+The integer constant is $71$, not one; its omitted use would invalidate
+the original word. The target logarithm is $2$, giving $Q=3^2\cdot71=639$
+and $R=1311$. The original marking is
+\[
+ (a,h,r,s_0,\lambda)=(209728,32,1,6554,5),
+\]
+\[
+ \boxed{\frac4{837601}=\frac1{209728}+
+       \frac1{878341912640}+\frac1{134016160}.}              \tag{E3}
+\]
+The unused prime $19$ is inside $H_3$, so (C8) gives at least two original
+states. Here (D2) is an equality: the complete branch has exactly
+$Q=639,1311$. The other ordered triple is
+$(209560,1799158571990,274733128)$.
+The two prior chart-prefix tests and the $3,11$ capacity test fail;
+neither $Q$ nor $R$ has at most two prime occurrences. This is a strict
+improvement against their actual union, not only one selected baseline.
+
+At $p=1740481$, $k=5$,
+$N=3^5\cdot13\cdot19\cdot29$ and $13/29\equiv17\pmod{32}$.
+The same exchange proves positivity. Its cofactors are exactly $351,4959$;
+one return is
+\[
+ (u,R,a,h,r,s_0,\lambda)=(32,4959,436360,2,4,54545,11),
+\]
+with ordered denominators $(436360,2088559795190,153162328)$.
+
+The third strict added branch uses a different original line:
+\[
+ p=1794769,\quad k=5,\quad N=3^2\cdot13\cdot23^2\cdot29.
+\]
+Use the parallel line $(v_{23},v_{29})=(1+t,t)$, $0\le t\le1$.
+Its constant is $23$ and its step $23\cdot29\equiv3^3\pmod{32}$.
+Together with selected count two for the $3$ block and the phase $p^{-1}$,
+the weights are $2,1,4$, of total seven. The inverse selects physical word
+$207=3^2\cdot23$ in the residual role, giving the unique cofactor
+$8671=13\cdot23\cdot29$. Both occurrences of $23$ were available; neither
+was used twice by two nominally separate blocks.
+
+The threshold really matters. At the certified hard prime
+\[
+ p=278881\equiv1\pmod{840},\quad k=5,\quad
+ N=3^2\cdot29\cdot1069,                                   \tag{E4}
+\]
+we have $29/1069\equiv17\pmod{32}$, but $e=2=L-2$.
+The complete fixed-seed branch is empty, exactly as in the sharp construction.
+This is not an ES counterexample: at seed $u=2$, $Q=39$, $R=7151$ the
+ordered denominators are $(71508,99711112740,2788810)$.
+
+The new class does not subsume the earlier two-block theorem. At the inherited
+$p=482187176641$, $k=6$, $N=3^7 11^5 37^2$, that theorem applies while no
+certificate in the declared affine-line search class is found. Exhaustion
+here is of the finite maximal-line class, not of all possible algebraic packets.
+
+\section{Finite comparison, preserved limitations, and next arithmetic step}
+The complete inherited test universe is the 4519 primes through two million
+in the six residue classes modulo $840$:
+\[
+ 1,121,169,289,361,529.
+\]
+It uses every valid $k\ge4$ with $p>2u_k$. It has 37289 branches and 4583 original middle states.
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Criterion&Branches&Primes\\\midrule
+Previous cyclic socle&1139&1119\\
+Affine-line socle here&1443&1362\\
+Prime/two-prime words in both roles&3051&2387\\
+Short words, prior $3,11$ test, or previous socle&3068&2399\\
+That union or the present criterion&3071&2401\\
+All original divisors in this seed family&3097&2411\\\bottomrule
+\end{tabular}
+\end{center}
+The three added branches are $(837601,5)$, $(1740481,5)$ and $(1794769,5)$.
+The additional primes relative to the full previous union are precisely
+$837601,1740481$. These are improvements to sufficient tests, not new overall
+ES verification coverage. A census of positive rows is not a universal theorem.
+
+The verifier checks all original ordered states in the census, and reconstructs
+an actual word and count bound for every new certificate. Separate structural
+checks include 81 complete two-prime boxes, 1364 dyadic capacity profiles,
+526 selected cyclic packets, and all half-turn intervals at cyclic orders
+$4,8,16,32,64,128$ in the specified ranges. A separate implementation uses
+literal diagonal enumeration, direct residue tables and bounded knapsack.
+It imports none of the main verifier. The eight false-transform controls
+include deleting the exchange constant, reusing a prime in two blocks, and
+replacing the signed exchange slope without moving its logarithm.
+
+A failed arithmetic branch must now avoid every available affine-block prefix
+certificate, in addition to the previous actual-stabilizer constraints. For
+example, any available half-turn outside pair with a full-order prime block
+forces the corresponding exponent below $L-1$ if that branch is empty.
+The pair difference in (D4) and the actual exponent inventory are both
+quantitative inputs. We have not shown that the related integers $p+4u_k$
+for one prescribed prime cannot simultaneously avoid these conditions.
+The missing assertion is about their factorization correlations, not about
+whether the marked return exists after a certificate has been obtained.
+
+A scoped primary-source search did not establish an earlier identical combined
+application. That is not an exhaustive historical-priority determination.
+The cyclic algebra and perfect-cover background are classical; the original
+ES normalization and earlier top-socle lemma retain their attribution.
+No new Lean build, independent mathematical review, analytic theta-norm
+identification or global ES theorem is asserted.

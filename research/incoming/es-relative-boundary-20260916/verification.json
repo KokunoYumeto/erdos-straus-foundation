@@ -1,0 +1,172 @@
+{
+  "antecedent_condition_invocations": 876325,
+  "date": "2026-09-16",
+  "earlier_source_replay": {
+    "bound": 2000000,
+    "source": "/mnt/data/es_factor_exchange/verify.py",
+    "stdout": "{\"checks\": 679109, \"negative_controls\": 8, \"scan\": {\"actual_branches\": 3097, \"actual_primes\": 2411, \"affine_branches\": 1443, \"affine_primes\": 1362, \"branches\": 37289, \"hard_primes\": 4519, \"new_union_branches\": 3071, \"new_union_primes\": 2401, \"old_socle_branches\": 1139, \"old_socle_primes\": 1119, \"old_union_branches\": 3068, \"old_union_primes\": 2399, \"original_middle_states\": 4583, \"short_branches\": 3051, \"short_primes\": 2387, \"two_block_branches\": 993, \"two_block_primes\": 990}}"
+  },
+  "fair_baseline": {
+    "beyond_this_union_added_branches": 0,
+    "beyond_this_union_added_primes": 0,
+    "scope": "at most three actual prime occurrences in either role; independent of any socle premise",
+    "short_three_branches": 3095,
+    "short_three_primes": 2409,
+    "union_with_previous_tests_branches": 3097,
+    "union_with_previous_tests_primes": 2411
+  },
+  "final_archive_replay": "Recorded in the separately supplied es_relative_boundary_archive_receipt.json; no circular self-hash.",
+  "finite_scope": {
+    "bound": 2000000,
+    "branches": 37289,
+    "complete_original_factors": true,
+    "hard_classes": [
+      1,
+      121,
+      169,
+      289,
+      361,
+      529
+    ],
+    "primes": 4519,
+    "raw_relative_prime_only_attempt": {
+      "original_unresolved_occupied_branches": 26,
+      "raw_prime_only_relative_certifications": [],
+      "scope": "proper principal-unit high strata; original raw prime budgets and one formal phase; no affine pair directions"
+    },
+    "states": 4583
+  },
+  "mathematical_sha256": {
+    "checks.json": "ba14c97baf921568d496524e971b8fb100342889711a0e7fa860759b80e632f3",
+    "examples.json": "c53d93303064322aee6ff88081e361fdd5e531294cbef459822fb25014a60ce3",
+    "fair_baseline.json": "c1b2bdb7615486fea1fdd512d72cc8792d4ccc20b58dcdb1a8bee4afbe24a149",
+    "independent.json": "343f79d134fffab349b986b0835159695dac02b846b10e4fe3b4ad5cf59ac294",
+    "negative_controls.json": "a73ee7e4c77b1b331ed558b3f6dff530d6d824a34a297d2a6a55058aad462dd2",
+    "scan.json": "2e7fc009cbb9b810b18c1a5ebceed824a9fdd8bc29c8914253c9c081dcc2cdd8",
+    "structural.json": "1656aa284e735e0f6a38e3c39e821760dc7b7179767f65db3ead16382d645702"
+  },
+  "nonclaims": [
+    "No new overall ES coverage",
+    "No universal ES theorem",
+    "No efficient factorization theorem",
+    "No source-wide analytic/Lean replay",
+    "No new Lean build",
+    "No independent mathematical review",
+    "No historical-priority determination",
+    "No remote repository modification"
+  ],
+  "normal_and_optimized": {
+    "byte_identical": true,
+    "mathematical_files": [
+      "checks.json",
+      "examples.json",
+      "fair_baseline.json",
+      "independent.json",
+      "negative_controls.json",
+      "scan.json",
+      "structural.json"
+    ],
+    "runs": [
+      {
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/es_relative_socle_20260916/verify.py",
+          "--bound",
+          "2000000",
+          "--out",
+          "/mnt/data/es_relative_socle_20260916/certificates"
+        ],
+        "kind": "main",
+        "mode": "normal",
+        "returncode": 0,
+        "seconds": 25.731022834777832,
+        "stderr": "",
+        "stdout": "{\"antecedent_checks\": 876325, \"negative_controls\": 7, \"new_checks\": 203654, \"scan\": {\"actual_branches\": 3097, \"actual_primes\": 2411, \"branches\": 37289, \"hard_primes\": 4519, \"new_union_branches\": 3073, \"new_union_primes\": 2402, \"old_affine_branches\": 1443, \"old_union_branches\": 3071, \"old_union_primes\": 2401, \"relative_class_branches\": 1723, \"relative_class_primes\": 1595, \"states\": 4583}}\n"
+      },
+      {
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/es_relative_socle_20260916/check_independent.py",
+          "--input",
+          "/mnt/data/es_relative_socle_20260916/certificates",
+          "--out",
+          "/mnt/data/es_relative_socle_20260916/certificates/independent.json"
+        ],
+        "kind": "independent",
+        "mode": "normal",
+        "returncode": 0,
+        "seconds": 39.346155405044556,
+        "stderr": "",
+        "stdout": "{\"additional_primes\": [1213129], \"checks\": 167547, \"counts\": {\"actual_branches\": 3097, \"actual_primes\": 2411, \"branches\": 37289, \"hard_primes\": 4519, \"new_union_branches\": 3073, \"new_union_primes\": 2402, \"old_affine_branches\": 1443, \"old_union_branches\": 3071, \"old_union_primes\": 2401, \"relative_class_branches\": 1723, \"relative_class_primes\": 1595, \"states\": 4583}}\n"
+      },
+      {
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-O",
+          "/mnt/data/es_relative_socle_20260916/verify.py",
+          "--bound",
+          "2000000",
+          "--out",
+          "/mnt/data/es_relative_socle_20260916/certificates_optimized"
+        ],
+        "kind": "main",
+        "mode": "optimized",
+        "returncode": 0,
+        "seconds": 25.318965911865234,
+        "stderr": "",
+        "stdout": "{\"antecedent_checks\": 876325, \"negative_controls\": 7, \"new_checks\": 203654, \"scan\": {\"actual_branches\": 3097, \"actual_primes\": 2411, \"branches\": 37289, \"hard_primes\": 4519, \"new_union_branches\": 3073, \"new_union_primes\": 2402, \"old_affine_branches\": 1443, \"old_union_branches\": 3071, \"old_union_primes\": 2401, \"relative_class_branches\": 1723, \"relative_class_primes\": 1595, \"states\": 4583}}\n"
+      },
+      {
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-O",
+          "/mnt/data/es_relative_socle_20260916/check_independent.py",
+          "--input",
+          "/mnt/data/es_relative_socle_20260916/certificates_optimized",
+          "--out",
+          "/mnt/data/es_relative_socle_20260916/certificates_optimized/independent.json"
+        ],
+        "kind": "independent",
+        "mode": "optimized",
+        "returncode": 0,
+        "seconds": 39.330535888671875,
+        "stderr": "",
+        "stdout": "{\"additional_primes\": [1213129], \"checks\": 167547, \"counts\": {\"actual_branches\": 3097, \"actual_primes\": 2411, \"branches\": 37289, \"hard_primes\": 4519, \"new_union_branches\": 3073, \"new_union_primes\": 2402, \"old_affine_branches\": 1443, \"old_union_branches\": 3071, \"old_union_primes\": 2401, \"relative_class_branches\": 1723, \"relative_class_primes\": 1595, \"states\": 4583}}\n"
+      }
+    ]
+  },
+  "own_conditions": 203654,
+  "primality_scope": "Three complete-order primality certificates. The two smaller p are also trial-divided; the 17-digit p is not trial-divided through its full square root. Its p-1 factor primes are checked.",
+  "render": {
+    "all_proof_pages_rendered": true,
+    "card_pages": 1,
+    "inspection": "All workbench and preprint pages in contact sheets; full posting card. Final type-label wording recompiled without overfull boxes or unresolved references.",
+    "preprint_pages": 3,
+    "renderer": "pdftoppm",
+    "warnings": [],
+    "workbench_pages": 7
+  },
+  "separate_checker_conditions": 167547,
+  "source_sha256": {
+    "ATTEMPTS.md": "f359e8de0f94c815d4a11e5b7008b932755443947ddcaa4611ddb3faa21393ef",
+    "LICENSE.md": "267d2bfbdd9f59eebcff1ff1560930730bd8e2243a65221af0ba83d53a4ceba9",
+    "MORPHISMS.md": "aa127d21c10c21d6b7a2e5144f8f93e8086a6ab6b0053e7acca93231c31ef4e0",
+    "PR_BODY.md": "e4a4edc90db911b7d5fb39cdc52af7a1d787133e57d8457735db9ac8c6588ce9",
+    "README.md": "e3d8582713a12f9fa2e2a290b862fba64ea635d007f8fec055566a8c7f7d0117",
+    "SOFTWARE_LICENSE.txt": "a3968825a422da5adb043e84e280432abe8c1fca7cf329021ff18a662036512a",
+    "antecedent/README.md": "0bbb5bfd5feccd469af457301311bf79bf698a110d0501ad0ebc1390958776b7",
+    "antecedent/factor_exchange.py": "7b19ae5af165a5868ed3041cab9a35cf03701d783c8754876e2c2a4e5c5fef3f",
+    "antecedent/factor_exchange_core.tex": "e501612099e1eb88f15f0fa1335dc2c7c41230bb52dac40ba7f63290053b5eae",
+    "attempts.json": "794786ba83e9c5718a7e88dee0ca32c9d0de8d73e666b5b888628f0a8772261c",
+    "card.tex": "c418282f5f5d54bbb055b942016288181a2a24dd7cef930f6d5452154dc6377f",
+    "check_independent.py": "c0974e73660fb98e80a0b3ff118f86d110f0079858ddf9fc2f613191498330e6",
+    "core.tex": "a16896e91a7b4b2be757022de3a57aa078244d9afd79bf5647b2670de2a10244",
+    "lean_plan.md": "f8e4b82181f0654f88b27e71ef4d3aea6f6ad692c761454c62672cc0c1e15960",
+    "morphisms.json": "4c1eb06f5612eed451202eaf562588406f6a0cd63399edf76dcc43f9f09c1805",
+    "preprint.tex": "91b8a4620677d7a2872372711ab4990bbd9040b9d1243e8f32535024b45de3e3",
+    "references.tex": "707c781ea19d08c1e105f980ca4fbcc7ebc0250005799a3f992d2a5e83a3b946",
+    "source_reading.json": "9fa4e80c677c35c245cc9a5288a02a1c2ce951bee93c1e674c861bc0cdad4d81",
+    "verify.py": "346292be42a35a98834351219326dcde77da8dafb760304029d06e324017a36c",
+    "workbench.tex": "508259974e8edc83e85673e887bd096173f15757b6367a9e61bc4ff33cda497d"
+  }
+}
