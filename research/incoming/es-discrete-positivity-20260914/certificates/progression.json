@@ -1,0 +1,1355 @@
+[
+  {
+    "gcd": 1,
+    "j": 0,
+    "n": 19748674681,
+    "raw_h": 26,
+    "raw_kappa": 341725215823,
+    "raw_r": 2336,
+    "raw_s": 81289,
+    "t": 73,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 4937168704,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 4937168704
+        },
+        {
+          "denominator": 1,
+          "numerator": 722241027794932022
+        },
+        {
+          "denominator": 1,
+          "numerator": 409884191461517484986392768
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 19748674681,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 341725215823
+      },
+      "quotient_name": "kappa",
+      "r": 2336,
+      "s": 81289,
+      "u": 141879296
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 1,
+    "n": 275399328121,
+    "raw_h": 26,
+    "raw_kappa": 66454877873711,
+    "raw_r": 32576,
+    "raw_s": 81289,
+    "t": 1018,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 68849832064,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 68849832064
+        },
+        {
+          "denominator": 1,
+          "numerator": 140453314754378430454
+        },
+        {
+          "denominator": 1,
+          "numerator": 15501040284026098565277461008256
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 275399328121,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 66454877873711
+      },
+      "quotient_name": "kappa",
+      "r": 32576,
+      "s": 81289,
+      "u": 27591090176
+    }
+  },
+  {
+    "gcd": 13,
+    "j": 2,
+    "n": 531049981561,
+    "raw_h": 26,
+    "raw_kappa": 247099523272719,
+    "raw_r": 62816,
+    "raw_s": 81289,
+    "t": 1963,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 132762495424,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 132762495424
+        },
+        {
+          "denominator": 1,
+          "numerator": 522248301830217424566
+        },
+        {
+          "denominator": 1,
+          "numerator": 214314192149111297136748064468544
+        }
+      ],
+      "exponents": null,
+      "h": 4394,
+      "p": 531049981561,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 19007655636363
+      },
+      "quotient_name": "kappa",
+      "r": 4832,
+      "s": 6253,
+      "u": 102592096256
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 3,
+    "n": 786700635001,
+    "raw_h": 26,
+    "raw_kappa": 542275661412847,
+    "raw_r": 93056,
+    "raw_s": 81289,
+    "t": 2908,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 196675158784,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 196675158784
+        },
+        {
+          "denominator": 1,
+          "numerator": 1146107202255311914358
+        },
+        {
+          "denominator": 1,
+          "numerator": 1032160754291053682420404713471232
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 786700635001,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 542275661412847
+      },
+      "quotient_name": "kappa",
+      "r": 93056,
+      "s": 81289,
+      "u": 225144897536
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 4,
+    "n": 1042351288441,
+    "raw_h": 26,
+    "raw_kappa": 951983292294095,
+    "raw_r": 123296,
+    "raw_s": 81289,
+    "t": 3853,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 260587822144,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 260587822144
+        },
+        {
+          "denominator": 1,
+          "numerator": 2012030016029661899830
+        },
+        {
+          "denominator": 1,
+          "numerator": 3181015382710924121277951598377920
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 1042351288441,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 951983292294095
+      },
+      "quotient_name": "kappa",
+      "r": 123296,
+      "s": 81289,
+      "u": 395249494016
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 5,
+    "n": 1298001941881,
+    "raw_h": 26,
+    "raw_kappa": 1476222415916463,
+    "raw_r": 153536,
+    "raw_s": 81289,
+    "t": 4798,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 324500485504,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 324500485504
+        },
+        {
+          "denominator": 1,
+          "numerator": 3120016743153267380982
+        },
+        {
+          "denominator": 1,
+          "numerator": 7649106500599257722244289183214208
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 1298001941881,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 1476222415916463
+      },
+      "quotient_name": "kappa",
+      "r": 153536,
+      "s": 81289,
+      "u": 612905885696
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 6,
+    "n": 1553652595321,
+    "raw_h": 26,
+    "raw_kappa": 2114993032279951,
+    "raw_r": 183776,
+    "raw_s": 81289,
+    "t": 5743,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 388413148864,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 388413148864
+        },
+        {
+          "denominator": 1,
+          "numerator": 4470067383626128357814
+        },
+        {
+          "denominator": 1,
+          "numerator": 15700916298336053835527514205669696
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 1553652595321,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 2114993032279951
+      },
+      "quotient_name": "kappa",
+      "r": 183776,
+      "s": 81289,
+      "u": 878114072576
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 7,
+    "n": 1809303248761,
+    "raw_h": 26,
+    "raw_kappa": 2868295141384559,
+    "raw_r": 214016,
+    "raw_s": 81289,
+    "t": 6688,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 452325812224,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 452325812224
+        },
+        {
+          "denominator": 1,
+          "numerator": 6062181937448244830326
+        },
+        {
+          "denominator": 1,
+          "numerator": 28877180733490776053008919677097984
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 1809303248761,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 2868295141384559
+      },
+      "quotient_name": "kappa",
+      "r": 214016,
+      "s": 81289,
+      "u": 1190874054656
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 8,
+    "n": 2064953902201,
+    "raw_h": 26,
+    "raw_kappa": 3736128743230287,
+    "raw_r": 244256,
+    "raw_s": 81289,
+    "t": 7633,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 516238475584,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 516238475584
+        },
+        {
+          "denominator": 1,
+          "numerator": 7896360404619616798518
+        },
+        {
+          "denominator": 1,
+          "numerator": 48994889530822352208242994882516672
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 2064953902201,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 3736128743230287
+      },
+      "quotient_name": "kappa",
+      "r": 244256,
+      "s": 81289,
+      "u": 1551185831936
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 9,
+    "n": 2320604555641,
+    "raw_h": 26,
+    "raw_kappa": 4718493837817135,
+    "raw_r": 274496,
+    "raw_s": 81289,
+    "t": 8578,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 580151138944,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 580151138944
+        },
+        {
+          "denominator": 1,
+          "numerator": 9972602785140244262390
+        },
+        {
+          "denominator": 1,
+          "numerator": 78147286182279174376457425380607360
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 2320604555641,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 4718493837817135
+      },
+      "quotient_name": "kappa",
+      "r": 274496,
+      "s": 81289,
+      "u": 1959049404416
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 10,
+    "n": 2576255209081,
+    "raw_h": 26,
+    "raw_kappa": 5815390425145103,
+    "raw_r": 304736,
+    "raw_s": 81289,
+    "t": 9523,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 644063802304,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 644063802304
+        },
+        {
+          "denominator": 1,
+          "numerator": 12290909079010127221942
+        },
+        {
+          "denominator": 1,
+          "numerator": 118703867946999098874553093003715648
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 2576255209081,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 5815390425145103
+      },
+      "quotient_name": "kappa",
+      "r": 304736,
+      "s": 81289,
+      "u": 2414464772096
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 11,
+    "n": 2831905862521,
+    "raw_h": 26,
+    "raw_kappa": 7026818505214191,
+    "raw_r": 334976,
+    "raw_s": 81289,
+    "t": 10468,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 707976465664,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 707976465664
+        },
+        {
+          "denominator": 1,
+          "numerator": 14851279286229265677174
+        },
+        {
+          "denominator": 1,
+          "numerator": 173310385851309446261104075857851136
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 2831905862521,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 7026818505214191
+      },
+      "quotient_name": "kappa",
+      "r": 334976,
+      "s": 81289,
+      "u": 2917431934976
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 12,
+    "n": 3087556515961,
+    "raw_h": 26,
+    "raw_kappa": 8352778078024399,
+    "raw_r": 365216,
+    "raw_s": 81289,
+    "t": 11413,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 771889129024,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 771889129024
+        },
+        {
+          "denominator": 1,
+          "numerator": 17653713406797659628086
+        },
+        {
+          "denominator": 1,
+          "numerator": 244888844688727001336357648322687424
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 3087556515961,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 8352778078024399
+      },
+      "quotient_name": "kappa",
+      "r": 365216,
+      "s": 81289,
+      "u": 3467950893056
+    }
+  },
+  {
+    "gcd": 37,
+    "j": 13,
+    "n": 3343207169401,
+    "raw_h": 26,
+    "raw_kappa": 9793269143575727,
+    "raw_r": 395456,
+    "raw_s": 81289,
+    "t": 12358,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 835801792384,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 835801792384
+        },
+        {
+          "denominator": 1,
+          "numerator": 20698211440715309074678
+        },
+        {
+          "denominator": 1,
+          "numerator": 336637503019958013142234281051562112
+        }
+      ],
+      "exponents": null,
+      "h": 35594,
+      "p": 3343207169401,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 264682949826371
+      },
+      "quotient_name": "kappa",
+      "r": 10688,
+      "s": 2197,
+      "u": 4066021646336
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 14,
+    "n": 3598857822841,
+    "raw_h": 26,
+    "raw_kappa": 11348291701868175,
+    "raw_r": 425696,
+    "raw_s": 81289,
+    "t": 13303,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 899714455744,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 899714455744
+        },
+        {
+          "denominator": 1,
+          "numerator": 23984773387982214016950
+        },
+        {
+          "denominator": 1,
+          "numerator": 452030873172898194962327640971476800
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 3598857822841,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 11348291701868175
+      },
+      "quotient_name": "kappa",
+      "r": 425696,
+      "s": 81289,
+      "u": 4711644194816
+    }
+  },
+  {
+    "gcd": 13,
+    "j": 15,
+    "n": 3854508476281,
+    "raw_h": 26,
+    "raw_kappa": 13017845752901743,
+    "raw_r": 455936,
+    "raw_s": 81289,
+    "t": 14248,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 963627119104,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 963627119104
+        },
+        {
+          "denominator": 1,
+          "numerator": 27513399248598374454902
+        },
+        {
+          "denominator": 1,
+          "numerator": 594819721242632724321904591283097088
+        }
+      ],
+      "exponents": null,
+      "h": 4394,
+      "p": 3854508476281,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 1001372750223211
+      },
+      "quotient_name": "kappa",
+      "r": 35072,
+      "s": 6253,
+      "u": 5404818538496
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 16,
+    "n": 4110159129721,
+    "raw_h": 26,
+    "raw_kappa": 14801931296676431,
+    "raw_r": 486176,
+    "raw_s": 81289,
+    "t": 15193,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1027539782464,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1027539782464
+        },
+        {
+          "denominator": 1,
+          "numerator": 31284089022563790388534
+        },
+        {
+          "denominator": 1,
+          "numerator": 769031067091436242987905191460752576
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 4110159129721,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 14801931296676431
+      },
+      "quotient_name": "kappa",
+      "r": 486176,
+      "s": 81289,
+      "u": 6145544677376
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 17,
+    "n": 4365809783161,
+    "raw_h": 26,
+    "raw_kappa": 16700548333192239,
+    "raw_r": 516416,
+    "raw_s": 81289,
+    "t": 16138,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1091452445824,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1091452445824
+        },
+        {
+          "denominator": 1,
+          "numerator": 35296842709878461817846
+        },
+        {
+          "denominator": 1,
+          "numerator": 978968184348772856968942697252436864
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 4365809783161,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 16700548333192239
+      },
+      "quotient_name": "kappa",
+      "r": 516416,
+      "s": 81289,
+      "u": 6933822611456
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 18,
+    "n": 4621460436601,
+    "raw_h": 26,
+    "raw_kappa": 18713696862449167,
+    "raw_r": 546656,
+    "raw_s": 81289,
+    "t": 17083,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1155365109184,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1155365109184
+        },
+        {
+          "denominator": 1,
+          "numerator": 39551660310542388742838
+        },
+        {
+          "denominator": 1,
+          "numerator": 1229210600411296136515303560679807552
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 4621460436601,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 18713696862449167
+      },
+      "quotient_name": "kappa",
+      "r": 546656,
+      "s": 81289,
+      "u": 7769652340736
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 19,
+    "n": 4877111090041,
+    "raw_h": 26,
+    "raw_kappa": 20841376884447215,
+    "raw_r": 576896,
+    "raw_s": 81289,
+    "t": 18028,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1219277772544,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1219277772544
+        },
+        {
+          "denominator": 1,
+          "numerator": 44048541824555571163510
+        },
+        {
+          "denominator": 1,
+          "numerator": 1524614096442849116118947430038186240
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 4877111090041,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 20841376884447215
+      },
+      "quotient_name": "kappa",
+      "r": 576896,
+      "s": 81289,
+      "u": 8653033865216
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 20,
+    "n": 5132761743481,
+    "raw_h": 26,
+    "raw_kappa": 23083588399186383,
+    "raw_r": 607136,
+    "raw_s": 81289,
+    "t": 18973,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1283190435904,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1283190435904
+        },
+        {
+          "denominator": 1,
+          "numerator": 48787487251918009079862
+        },
+        {
+          "denominator": 1,
+          "numerator": 1870310707374464294513507149896558528
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 5132761743481,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 23083588399186383
+      },
+      "quotient_name": "kappa",
+      "r": 607136,
+      "s": 81289,
+      "u": 9583967184896
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 21,
+    "n": 5388412396921,
+    "raw_h": 26,
+    "raw_kappa": 25440331406666671,
+    "raw_r": 637376,
+    "raw_s": 81289,
+    "t": 19918,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1347103099264,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1347103099264
+        },
+        {
+          "denominator": 1,
+          "numerator": 53768496592629702491894
+        },
+        {
+          "denominator": 1,
+          "numerator": 2271708721904363634674288761097574016
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 5388412396921,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 25440331406666671
+      },
+      "quotient_name": "kappa",
+      "r": 637376,
+      "s": 81289,
+      "u": 10562452299776
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 22,
+    "n": 5644063050361,
+    "raw_h": 26,
+    "raw_kappa": 27911605906888079,
+    "raw_r": 667616,
+    "raw_s": 81289,
+    "t": 20863,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1411015762624,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1411015762624
+        },
+        {
+          "denominator": 1,
+          "numerator": 58991569846690651399606
+        },
+        {
+          "denominator": 1,
+          "numerator": 2734492682497958563818271500757546304
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 5644063050361,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 27911605906888079
+      },
+      "quotient_name": "kappa",
+      "r": 667616,
+      "s": 81289,
+      "u": 11588489209856
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 23,
+    "n": 5899713703801,
+    "raw_h": 26,
+    "raw_kappa": 30497411899850607,
+    "raw_r": 697856,
+    "raw_s": 81289,
+    "t": 21808,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1474928425984,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1474928425984
+        },
+        {
+          "denominator": 1,
+          "numerator": 64456707014100855802998
+        },
+        {
+          "denominator": 1,
+          "numerator": 3264623385387849973404107802266452992
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 5899713703801,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 30497411899850607
+      },
+      "quotient_name": "kappa",
+      "r": 697856,
+      "s": 81289,
+      "u": 12662077915136
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 24,
+    "n": 6155364357241,
+    "raw_h": 26,
+    "raw_kappa": 33197749385554255,
+    "raw_r": 728096,
+    "raw_s": 81289,
+    "t": 22753,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1538841089344,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1538841089344
+        },
+        {
+          "denominator": 1,
+          "numerator": 70163908094860315702070
+        },
+        {
+          "denominator": 1,
+          "numerator": 3868337880573828219132123295287935680
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 6155364357241,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 33197749385554255
+      },
+      "quotient_name": "kappa",
+      "r": 728096,
+      "s": 81289,
+      "u": 13783218415616
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 25,
+    "n": 6411015010681,
+    "raw_h": 26,
+    "raw_kappa": 36012618363999023,
+    "raw_r": 758336,
+    "raw_s": 81289,
+    "t": 23698,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1602753752704,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1602753752704
+        },
+        {
+          "denominator": 1,
+          "numerator": 76113173088969031096822
+        },
+        {
+          "denominator": 1,
+          "numerator": 4552149471822873120944316805759299968
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 6411015010681,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 36012618363999023
+      },
+      "quotient_name": "kappa",
+      "r": 758336,
+      "s": 81289,
+      "u": 14951910711296
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 26,
+    "n": 6666665664121,
+    "raw_h": 26,
+    "raw_kappa": 38942018835184911,
+    "raw_r": 788576,
+    "raw_s": 81289,
+    "t": 24643,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1666666416064,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1666666416064
+        },
+        {
+          "denominator": 1,
+          "numerator": 82304501996427001987254
+        },
+        {
+          "denominator": 1,
+          "numerator": 5322847716669153963024360355891515456
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 6666665664121,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 38942018835184911
+      },
+      "quotient_name": "kappa",
+      "r": 788576,
+      "s": 81289,
+      "u": 16168154802176
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 27,
+    "n": 6922316317561,
+    "raw_h": 26,
+    "raw_kappa": 41985950799111919,
+    "raw_r": 818816,
+    "raw_s": 81289,
+    "t": 25588,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1730579079424,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1730579079424
+        },
+        {
+          "denominator": 1,
+          "numerator": 88737894817234228373366
+        },
+        {
+          "denominator": 1,
+          "numerator": 6187498426414029493797599164169215744
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 6922316317561,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 41985950799111919
+      },
+      "quotient_name": "kappa",
+      "r": 818816,
+      "s": 81289,
+      "u": 17431950688256
+    }
+  },
+  {
+    "gcd": 169,
+    "j": 28,
+    "n": 7177966971001,
+    "raw_h": 26,
+    "raw_kappa": 45144414255780047,
+    "raw_r": 849056,
+    "raw_s": 81289,
+    "t": 26533,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1794491742784,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1794491742784
+        },
+        {
+          "denominator": 1,
+          "numerator": 95413351551390710255158
+        },
+        {
+          "denominator": 1,
+          "numerator": 7153443666126047925931051645350698432
+        }
+      ],
+      "exponents": null,
+      "h": 742586,
+      "p": 7177966971001,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 267126711572663
+      },
+      "quotient_name": "kappa",
+      "r": 5024,
+      "s": 481,
+      "u": 18743298369536
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 29,
+    "n": 7433617624441,
+    "raw_h": 26,
+    "raw_kappa": 48417409205189295,
+    "raw_r": 879296,
+    "raw_s": 81289,
+    "t": 27478,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 1858404406144,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 1858404406144
+        },
+        {
+          "denominator": 1,
+          "numerator": 102330872198896447632630
+        },
+        {
+          "denominator": 1,
+          "numerator": 8228301754640946936333409410467925120
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 7433617624441,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 48417409205189295
+      },
+      "quotient_name": "kappa",
+      "r": 879296,
+      "s": 81289,
+      "u": 20102197846016
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 1000,
+    "n": 255670402114681,
+    "raw_h": 26,
+    "raw_kappa": 57274594118572543823,
+    "raw_r": 30242336,
+    "raw_s": 81289,
+    "t": 945073,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 63917600528704,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 63917600528704
+        },
+        {
+          "denominator": 1,
+          "numerator": 121050656513920731385524022
+        },
+        {
+          "denominator": 1,
+          "numerator": 11514130751379758323504927179106235262680768
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 255670402114681,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 57274594118572543823
+      },
+      "quotient_name": "kappa",
+      "r": 30242336,
+      "s": 81289,
+      "u": 23779571055159296
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 1000000,
+    "n": 255650673188674681,
+    "raw_h": 26,
+    "raw_kappa": 57265755217966629053215823,
+    "raw_r": 30240002336,
+    "raw_s": 81289,
+    "t": 945000073,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 63912668297168704,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 63912668297168704
+        },
+        {
+          "denominator": 1,
+          "numerator": 121031975373745522036778386932022
+        },
+        {
+          "denominator": 1,
+          "numerator": 11510577189601093431070175074640888786788098161274392768
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 255650673188674681,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 57265755217966629053215823
+      },
+      "quotient_name": "kappa",
+      "r": 30240002336,
+      "s": 81289,
+      "u": 23775901273313421879296
+    }
+  },
+  {
+    "gcd": 1,
+    "j": 1000000000000,
+    "n": 255650653440019748674681,
+    "raw_h": 26,
+    "raw_kappa": 57265746370568847406287328341725215823,
+    "raw_r": 30240000000002336,
+    "raw_s": 81289,
+    "t": 945000000000073,
+    "witness": {
+      "D": 1,
+      "R": 135,
+      "a": 63912663360004937168704,
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 63912663360004937168704
+        },
+        {
+          "denominator": 1,
+          "numerator": 121031956674646446957051956472833027794932022
+        },
+        {
+          "denominator": 1,
+          "numerator": 11510573632897900109387746858572740910800425273777007607041172137805484986392768
+        }
+      ],
+      "exponents": null,
+      "h": 26,
+      "p": 255650653440019748674681,
+      "quotient": {
+        "denominator": 1,
+        "numerator": 57265746370568847406287328341725215823
+      },
+      "quotient_name": "kappa",
+      "r": 30240000000002336,
+      "s": 81289,
+      "u": 23775897600003673313280000141879296
+    }
+  }
+]

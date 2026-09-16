@@ -1,0 +1,31 @@
+{
+  "derived_and_verified_here": [
+    "One-sided odd-reciprocal filter error with exact coefficient norm and sharp finite window",
+    "Simultaneous original row lower/upper certificate with factorial degree schedule and explicit moment precision",
+    "Hard-prime occupied-shell obstruction to aggregate first-degree adequacy, and second hard example excluding channel-wise universal adequacy",
+    "Explicit E-resolved and quartic positive certificates; original witnesses and all-integer progression"
+  ],
+  "inherited": [
+    "Classical Lagrange interpolation",
+    "Prior exact original ES defect gap and row bounds",
+    "Canonical signed moment variational framework",
+    "Type I/II divisor selectors and progression specialization",
+    "Classical full-order primality criterion and Dirichlet theorem"
+  ],
+  "no_conclusions": [
+    "ES false",
+    "ES proved in full",
+    "All quartic tests are sufficient and necessary",
+    "Least failure of degree-one test",
+    "Previously unverified prime coverage",
+    "New general interpolation or progression method"
+  ],
+  "outcome": "No exact antecedent for the combined ES application established in the scoped search. Several broad search hits were irrelevant and are not cited. This is not an exhaustive novelty determination.",
+  "priority_claim": false,
+  "queries": [
+    "\"Erdos Straus\" \"Christoffel\"",
+    "\"Erd\u0151s\u2013Straus\" \"19748674681\"",
+    "\"Erdos Straus\" \"factorial\" \"polynomial\"",
+    "\"reciprocal integers\" \"polynomial\" \"spectral\" approximation"
+  ]
+}

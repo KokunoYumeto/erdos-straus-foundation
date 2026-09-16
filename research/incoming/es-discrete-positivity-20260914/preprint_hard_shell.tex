@@ -1,0 +1,228 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\title{A hard-prime ES shell missed by first-degree moments:\newline exact counterexample, positive repairs and a progression}
+\author{The Clankers}
+\date{14 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+An occupied original divisor shell at a prime congruent to one modulo 840 has
+negative-definite aggregate first-degree signed localizing form. We give its
+complete finite residue calculation, deterministic primality certificate, and
+unique marked witness. Retaining the exterior channel separately or applying
+a discrete quartic both certify positivity. The witness extends to an explicit
+all-integer arithmetic progression with infinitely many prime members. This
+is not an ES counterexample, new prime coverage, or a claim of historical priority.
+\end{abstract}
+
+\paragraph{Original definitions.}
+For $p/4<a<p/2$ and $R=4a-p$, each divisor $u\mid a^2$ has two channel labels,
+with $g_E=4u+1$, $g_M=u+a$ and $D=R/\gcd(R,g_c)$. The original rational
+triples are
+\[
+ E:\left(a,\frac{pa+a^2/u}R,\frac{pa+p^2u}R\right),\qquad
+ M:\left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+\]
+They sum reciprocally to $4/p$ since $(RY-pa)(RZ-pa)=p^2a^2$.
+The two nonfirst reduced denominators are both $D$, using $4a\equiv p\pmod R$
+and $\gcd(pa,R)=1$. Thus $D=1$ is exactly a hit, and all failed $D$ are odd
+and at least three. These are the inherited Type I/II coordinates \cite{ET}.
+
+Let $\mu=\sum_{c,u}\delta_{1/D}$ retain every original state. Define
+\[
+ L_1(\mu)=\max_{\deg P\le1,\ P(1)=1}
+ \frac32\int(x-1/3)P(x)^2\,d\mu(x).
+ \tag{1}
+\]
+Successful atoms contribute one and failed atoms nonpositively, so $L_1\le H$,
+where $H$ is the original hit count. The preceding finite screen found no
+occupied shell with $L_1\le0$ through prime parameter 50000; its source
+explicitly made no universal converse claim \cite{Prior}.
+
+\begin{theorem}[An occupied hard shell with no aggregate first-degree certificate]
+Let
+\[
+ p=19748674681\equiv1\pmod{840},\qquad
+ a=4937168704=2^6\cdot13^4\cdot37\cdot73,\qquad R=135.
+ \tag{2}
+\]
+Then $p$ is prime, the shell contains exactly one original hit, but
+\[
+ L_1(E+M)=-\frac{50887012}{144801015}<0.
+ \tag{3}
+\]
+\end{theorem}
+\begin{proof}
+A full order certificate uses base 11 and
+$p-1=2^3\cdot3\cdot5\cdot7\cdot23510327$.
+Every factor is prime by trial division, the largest requiring divisors only
+through 4848. Direct modular powering gives $11^{p-1}\equiv1$ and the residues
+\[
+\begin{array}{c|rrrrr}
+q&2&3&5&7&23510327\\\hline
+11^{(p-1)/q}\bmod p&19748674680&10039250736&3428156451&13907516733&12674160518.
+\end{array}
+\]
+The gcd with $p$ of every displayed residue minus one is one. Thus modulo any
+prime divisor of $p$ the order of 11 is divisible by $p-1$, forcing that divisor
+to be at least $p$. This proves primality. The verifier also independently
+tries every odd divisor of $p$ through 140529.
+
+In the finite group algebra of $(\mathbb Z/135\mathbb Z)^\times$, form
+\[
+ (\sum_{i=0}^{12}[2]^i)(\sum_{j=0}^{8}[13]^j)
+ (\sum_{k=0}^{2}[37]^k)(\sum_{l=0}^{2}[73]^l).
+ \tag{4}
+\]
+Applying the two gates to every residue with its coefficient gives the
+following complete table. The factors sum to 1053 actual divisors; direct
+integer divisor enumeration gives the same table independently.
+
+\newpage
+\noindent\emph{Proof continued.}
+\[
+\begin{array}{c|rrrrrrrr}
+D&1&3&5&9&15&27&45&135\\\hline
+E&1&39&53&80&69&144&244&423\\
+M&0&40&54&80&68&144&244&423\\
+E+M&1&79&107&160&137&288&488&846
+\end{array}\tag{5}
+\]
+This finite multiplication is itself an executable certificate: start with
+coefficient one at the group identity; for each factor in (4), replace the
+coefficient array by the sum of its displayed translates. No generated-group
+support or unlimited multiplicity substitutes for the exponents.
+
+Put $S_j=\sum_{c,u}\gcd(R,g_c)^j$ and $A_i=3S_{i+1}-RS_i$. The first five
+moments from (5) are
+\[
+(S_0,S_1,S_2,S_3,S_4)=(2106,13962,315738,12455226,722183418).
+\]
+They yield
+\[
+(A_0,A_1,A_2)=(-242424,-937656,-5258952),\qquad
+A_0A_2-A_1^2=395697405312>0.
+\]
+The signed form on linear polynomial coefficients is a positive scalar times
+a diagonal congruence of $\begin{psmallmatrix}A_0&A_1\\A_1&A_2\end{psmallmatrix}$.
+It is negative definite. Substituting $P=1+b(x-1)$ and maximizing the resulting
+quadratic in $b$ gives (3). Table (5) proves $H=1$.
+\end{proof}
+
+\paragraph{Positive repair one: keep the channel.}
+For a genuine disjoint partition of original states $\mathcal A=\bigsqcup A_i$,
+\[
+ \boxed{\sum_i\max\{0,\lceil L_d(\mu_i)\rceil\}\le H.}\tag{6}
+\]
+It strengthens under refinement. Indeed each summand bounds its own integer
+hit count, and every coarse normalized polynomial is available on each finer
+piece. Therefore $L_{\rm coarse}\le\sum L_{\rm fine}$; the ceiling inequality
+and discarding negative summands prove monotonicity.
+
+On the exterior channel of (2), the fixed polynomial $P=(36x-1)/35$ gives
+\[
+ \boxed{\frac32\sum_E(x-1/3)P(x)^2=\frac{64376}{196875}>0.}\tag{7}
+\]
+The full coefficient form is $\operatorname{diag}(J_E,J_M)$. The aggregate
+form is its restriction along $P\mapsto(P,P)$, with pullback $J_E+J_M$.
+The restriction is not an isomorphism; (7) remains a direction of the original
+full source even though that diagonal restriction is negative definite.
+These are disjoint original labels. After other observation maps, the actual
+mixed Gram must still be transported rather than presumed block diagonal.
+
+\paragraph{Positive repair two: use the discrete spectrum.}
+Define
+\[
+ \Phi_j(x)=x\prod_{\nu=1}^j\frac{(2\nu+1)x-1}{2\nu}.
+\]
+At $D=2k+1>1$, this is zero if $k\le j$ and otherwise equals
+$(-1)^j\binom{k-1}{j}/D^{j+1}$. Also $\Phi_j(1)=1$.
+Thus odd $j$ bounds the original hit indicator below and even $j$ bounds it
+above. From (5), exact rational evaluation gives
+\[
+ \boxed{\sum_{E+M}\Phi_3(1/D)=\frac{1297691}{2460375}>0,\qquad
+ \sum_{E+M}\Phi_4(1/D)=\frac{115374406}{110716875}.}\tag{8}
+\]
+The bracket contains exactly the integer one. Since
+$48\Phi_3=105x^4-71x^3+15x^2-x$, positivity follows from the explicit integer
+inequality $105S_4-71RS_3+15R^2S_2-R^3S_1>0$.
+The companion note proves factorial uniform errors for the entire filter family.
+
+\newpage
+\paragraph{The actual witness and its inverse.}
+The sole hit is
+\[
+ (c,u,h,r,s,\kappa)=(E,141879296,26,2336,81289,341725215823),
+\]
+with original centered exponent vector $(5,-3,-1,1)$ and raw denominators
+\[
+ \boxed{(4937168704,\ 722241027794932022,\
+ 409884191461517484986392768).}\tag{9}
+\]
+Directly $a=hrs$, $u=hr^2$, and $135\kappa=pr+s$.
+Clearing the reciprocal sum of $(hrs,hs\kappa,phr\kappa)$ gives
+$(p+135)\kappa=4hrs\kappa$, proving ES. Its inverse is
+$u=a^2/(135Y-pa)$, followed by
+$(h,r,s)=(d_0^2/u,u/d_0,a/d_0)$ with $d_0=\gcd(a,u)$.
+The slope $2336/81289<1/8$ lies in the programme's lower positive chamber.
+No denominator permutation or exponent occurrence has been discarded.
+
+\begin{theorem}[All-integer progression with a canonical marked return]
+For every integer $j\ge0$, set
+\[
+ t=73+945j,\qquad C=67632448,\qquad
+ n=4Ct-135=19748674681+255650653440j,
+\]
+\[
+ h_0=26,\qquad r_0=32t,\qquad s_0=81289,\qquad a=Ct,
+\]
+\[
+ \kappa_0=341725215823+8847406287328j+57265746370560j^2.
+\]
+Then the positive integers $(a,h_0s_0\kappa_0,nh_0r_0\kappa_0)$ solve ES at $n$.
+Every $n$ is $1\pmod{840}$, and infinitely many members are prime.
+\end{theorem}
+\begin{proof}
+Polynomial expansion proves $a=h_0r_0s_0$ and
+$135\kappa_0=nr_0+s_0$. The same reciprocal calculation as for (9) proves the
+identity; all terms are positive for $j\ge0$. The initial term and step are
+coprime, so Dirichlet's theorem supplies infinitely many primes
+\cite[Theorem 18.1]{Dirichlet}. No hypothesis that $t$ is prime is imposed.
+If $d=\gcd(r_0,s_0)$, then $\gcd(d,135)=1$ because $\gcd(s_0,135)=1$.
+The quotient equation gives $d\mid\kappa_0$. Therefore
+\[
+ (h,r,s,\kappa)=(h_0d^2,r_0/d,s_0/d,\kappa_0/d),\qquad u=h_0r_0^2
+\]
+is the canonical coprime marking and keeps all three ordered denominators.
+On this image the parameter inverse is
+$j=(n-19748674681)/255650653440$.
+\end{proof}
+The progression is an explicit specialization of the inherited selector.
+Its existence is not claimed as a new general progression method, and its
+later slopes are not all asserted to lie in the separate chamber.
+
+\paragraph{Limits and reproducibility.}
+The counterexample is to a possible universal \emph{converse} for the sufficient
+first-degree moment test, not to any previously proved sufficient theorem.
+It is not claimed least. Channel resolution itself is not asserted universally
+sufficient: the full workbench gives another certified hard-prime shell at
+which both degree-one channel maxima are negative and the same quartic is
+positive. No fixed-degree universal sufficiency or ES proof is claimed.
+The standalone standard-library verifier performs both complete histogram
+calculations, checks the prime certificates and every labelled inverse, and
+returns exact rational scores. No probabilistic primality assumption enters.
+
+\begin{thebibliography}{3}\small
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc.,
+94}(1), 50--105, \S2.
+\bibitem{Prior} The Clankers (2026). \emph{Prime-power boundary kernels and
+canonical ES count certificates}. ES workbench draft PR6, commit
+\texttt{f234ed0c34100c39e52c6a4645793823e830a983}, equation M9 and finite screen.
+\bibitem{Dirichlet} Sutherland, A. V. (2017). \emph{18.785 Lecture 18:
+Dirichlet L-functions, primes in arithmetic progressions}, Theorem 18.1.
+\end{thebibliography}
+\end{document}

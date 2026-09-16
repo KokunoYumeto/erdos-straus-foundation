@@ -1,0 +1,730 @@
+[
+  {
+    "crude": {
+      "denominator": 3,
+      "numerator": 1
+    },
+    "degree": 1,
+    "m": 0,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 1,
+        "numerator": 1
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 3,
+        "numerator": 1
+      },
+      "maximizers": [
+        3
+      ],
+      "supremum_at": "attained",
+      "window": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 10,
+      "numerator": 1
+    },
+    "degree": 2,
+    "m": 1,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 2,
+        "numerator": -1
+      },
+      {
+        "denominator": 2,
+        "numerator": 3
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 49,
+        "numerator": 2
+      },
+      "maximizers": [
+        7
+      ],
+      "supremum_at": "attained",
+      "window": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 56,
+      "numerator": 1
+    },
+    "degree": 3,
+    "m": 2,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 8,
+        "numerator": 1
+      },
+      {
+        "denominator": 1,
+        "numerator": -1
+      },
+      {
+        "denominator": 8,
+        "numerator": 15
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 2197,
+        "numerator": 10
+      },
+      "maximizers": [
+        13
+      ],
+      "supremum_at": "attained",
+      "window": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 432,
+      "numerator": 1
+    },
+    "degree": 4,
+    "m": 3,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 48,
+        "numerator": -1
+      },
+      {
+        "denominator": 16,
+        "numerator": 5
+      },
+      {
+        "denominator": 48,
+        "numerator": -71
+      },
+      {
+        "denominator": 16,
+        "numerator": 35
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 9261,
+        "numerator": 4
+      },
+      "maximizers": [
+        21
+      ],
+      "supremum_at": "attained",
+      "window": [
+        8,
+        11
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 4224,
+      "numerator": 1
+    },
+    "degree": 5,
+    "m": 4,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 384,
+        "numerator": 1
+      },
+      {
+        "denominator": 16,
+        "numerator": -1
+      },
+      {
+        "denominator": 192,
+        "numerator": 103
+      },
+      {
+        "denominator": 16,
+        "numerator": -31
+      },
+      {
+        "denominator": 128,
+        "numerator": 315
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 28629151,
+        "numerator": 1001
+      },
+      "maximizers": [
+        31
+      ],
+      "supremum_at": "attained",
+      "window": [
+        13,
+        16
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 49920,
+      "numerator": 1
+    },
+    "degree": 6,
+    "m": 5,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 3840,
+        "numerator": -1
+      },
+      {
+        "denominator": 768,
+        "numerator": 7
+      },
+      {
+        "denominator": 384,
+        "numerator": -47
+      },
+      {
+        "denominator": 384,
+        "numerator": 301
+      },
+      {
+        "denominator": 1280,
+        "numerator": -3043
+      },
+      {
+        "denominator": 256,
+        "numerator": 693
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 6321363049,
+        "numerator": 15504
+      },
+      "maximizers": [
+        43
+      ],
+      "supremum_at": "attained",
+      "window": [
+        18,
+        23
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 691200,
+      "numerator": 1
+    },
+    "degree": 7,
+    "m": 6,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 46080,
+        "numerator": 1
+      },
+      {
+        "denominator": 960,
+        "numerator": -1
+      },
+      {
+        "denominator": 9216,
+        "numerator": 185
+      },
+      {
+        "denominator": 96,
+        "numerator": -19
+      },
+      {
+        "denominator": 46080,
+        "numerator": 48259
+      },
+      {
+        "denominator": 960,
+        "numerator": -2689
+      },
+      {
+        "denominator": 1024,
+        "numerator": 3003
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 217210832577,
+        "numerator": 32890
+      },
+      "maximizers": [
+        57
+      ],
+      "supremum_at": "attained",
+      "window": [
+        25,
+        30
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 10967040,
+      "numerator": 1
+    },
+    "degree": 8,
+    "m": 7,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 645120,
+        "numerator": -1
+      },
+      {
+        "denominator": 10240,
+        "numerator": 1
+      },
+      {
+        "denominator": 18432,
+        "numerator": -47
+      },
+      {
+        "denominator": 2048,
+        "numerator": 73
+      },
+      {
+        "denominator": 92160,
+        "numerator": -26437
+      },
+      {
+        "denominator": 10240,
+        "numerator": 13539
+      },
+      {
+        "denominator": 14336,
+        "numerator": -46027
+      },
+      {
+        "denominator": 2048,
+        "numerator": 6435
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 806460091894081,
+        "numerator": 6724520
+      },
+      "maximizers": [
+        73
+      ],
+      "supremum_at": "attained",
+      "window": [
+        32,
+        39
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 196116480,
+      "numerator": 1
+    },
+    "degree": 9,
+    "m": 8,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 10321920,
+        "numerator": 1
+      },
+      {
+        "denominator": 129024,
+        "numerator": -1
+      },
+      {
+        "denominator": 368640,
+        "numerator": 97
+      },
+      {
+        "denominator": 18432,
+        "numerator": -91
+      },
+      {
+        "denominator": 737280,
+        "numerator": 41141
+      },
+      {
+        "denominator": 18432,
+        "numerator": -7141
+      },
+      {
+        "denominator": 286720,
+        "numerator": 460319
+      },
+      {
+        "denominator": 14336,
+        "numerator": -51719
+      },
+      {
+        "denominator": 32768,
+        "numerator": 109395
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 57823453665387477,
+        "numerator": 23950355
+      },
+      "maximizers": [
+        93
+      ],
+      "supremum_at": "attained",
+      "window": [
+        41,
+        48
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 3901685760,
+      "numerator": 1
+    },
+    "degree": 10,
+    "m": 9,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 185794560,
+        "numerator": -1
+      },
+      {
+        "denominator": 20643840,
+        "numerator": 11
+      },
+      {
+        "denominator": 15482880,
+        "numerator": -353
+      },
+      {
+        "denominator": 737280,
+        "numerator": 407
+      },
+      {
+        "denominator": 4423680,
+        "numerator": -36767
+      },
+      {
+        "denominator": 1474560,
+        "numerator": 118591
+      },
+      {
+        "denominator": 46448640,
+        "numerator": -23137931
+      },
+      {
+        "denominator": 1720320,
+        "numerator": 3260147
+      },
+      {
+        "denominator": 4128768,
+        "numerator": -16488341
+      },
+      {
+        "denominator": 65536,
+        "numerator": 230945
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 339456738992222314849,
+        "numerator": 6358402050
+      },
+      "maximizers": [
+        113
+      ],
+      "supremum_at": "attained",
+      "window": [
+        50,
+        59
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 85465497600,
+      "numerator": 1
+    },
+    "degree": 11,
+    "m": 10,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 3715891200,
+        "numerator": 1
+      },
+      {
+        "denominator": 30965760,
+        "numerator": -1
+      },
+      {
+        "denominator": 247726080,
+        "numerator": 421
+      },
+      {
+        "denominator": 368640,
+        "numerator": -19
+      },
+      {
+        "denominator": 88473600,
+        "numerator": 88049
+      },
+      {
+        "denominator": 245760,
+        "numerator": -3133
+      },
+      {
+        "denominator": 371589120,
+        "numerator": 40634351
+      },
+      {
+        "denominator": 7741440,
+        "numerator": -4782671
+      },
+      {
+        "denominator": 412876800,
+        "numerator": 903998749
+      },
+      {
+        "denominator": 491520,
+        "numerator": -2147647
+      },
+      {
+        "denominator": 262144,
+        "numerator": 969969
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 90479501408781298828125,
+        "numerator": 70326849736
+      },
+      "maximizers": [
+        135
+      ],
+      "supremum_at": "attained",
+      "window": [
+        61,
+        70
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 2043740160000,
+      "numerator": 1
+    },
+    "degree": 12,
+    "m": 11,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 81749606400,
+        "numerator": -1
+      },
+      {
+        "denominator": 7431782400,
+        "numerator": 13
+      },
+      {
+        "denominator": 99090432,
+        "numerator": -11
+      },
+      {
+        "denominator": 495452160,
+        "numerator": 2041
+      },
+      {
+        "denominator": 176947200,
+        "numerator": -17539
+      },
+      {
+        "denominator": 176947200,
+        "numerator": 286637
+      },
+      {
+        "denominator": 743178240,
+        "numerator": -13598869
+      },
+      {
+        "denominator": 743178240,
+        "numerator": 105832571
+      },
+      {
+        "denominator": 2477260800,
+        "numerator": -1846565957
+      },
+      {
+        "denominator": 825753600,
+        "numerator": 2054181337
+      },
+      {
+        "denominator": 86507520,
+        "numerator": -409716583
+      },
+      {
+        "denominator": 524288,
+        "numerator": 2028117
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 87025041112366268116189227,
+        "numerator": 2592893501380
+      },
+      "maximizers": [
+        159
+      ],
+      "supremum_at": "attained",
+      "window": [
+        72,
+        83
+      ]
+    }
+  },
+  {
+    "crude": {
+      "denominator": 52973744947200,
+      "numerator": 1
+    },
+    "degree": 13,
+    "m": 12,
+    "polynomial": [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 1961990553600,
+        "numerator": 1
+      },
+      {
+        "denominator": 11678515200,
+        "numerator": -1
+      },
+      {
+        "denominator": 3567255552,
+        "numerator": 23
+      },
+      {
+        "denominator": 212336640,
+        "numerator": -61
+      },
+      {
+        "denominator": 59454259200,
+        "numerator": 500671
+      },
+      {
+        "denominator": 6553600,
+        "numerator": -1119
+      },
+      {
+        "denominator": 8918138880,
+        "numerator": 21847877
+      },
+      {
+        "denominator": 106168320,
+        "numerator": -2653597
+      },
+      {
+        "denominator": 178362777600,
+        "numerator": 31997840621
+      },
+      {
+        "denominator": 1061683200,
+        "numerator": -934405231
+      },
+      {
+        "denominator": 21799895040,
+        "numerator": 60792010889
+      },
+      {
+        "denominator": 51904512,
+        "numerator": -264438847
+      },
+      {
+        "denominator": 4194304,
+        "numerator": 16900975
+      }
+    ],
+    "sharp": {
+      "error": {
+        "denominator": 59465142630879224950439453125,
+        "numerator": 63100453194324
+      },
+      "maximizers": [
+        185
+      ],
+      "supremum_at": "attained",
+      "window": [
+        85,
+        96
+      ]
+    }
+  }
+]

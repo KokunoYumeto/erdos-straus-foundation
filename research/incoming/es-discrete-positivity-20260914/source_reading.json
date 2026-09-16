@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-14",
+  "github": {
+    "PR": 6,
+    "base": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+    "head": "f234ed0c34100c39e52c6a4645793823e830a983",
+    "read_scope": "PR metadata and stated prior scan scope; this is not a new full source-wide audit",
+    "repository": "KokunoYumeto/erdos-straus-foundation",
+    "state_observed": "open draft unmerged at source-reading time",
+    "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/pull/6",
+    "publication_note": "This object records the antecedent reading scope. Publication of the present tranche occurred later on its own branch."
+  },
+  "new_calculation_scope": "Finite residue-box exploration led to candidate factorizations, then full deterministic arithmetic and prime certificates were reconstructed. Search software is not an antecedent proof; the final standard-library verifier imports none of it.",
+  "not_claimed_read": [
+    "Entire Zeta cumulative edition",
+    "Every historical ES archive",
+    "Source CI logs or Lean builds",
+    "A complete historical-priority literature survey"
+  ],
+  "primary_literature": [
+    {
+      "author": "National Institute of Standards and Technology",
+      "locator": "Section 3.3(i), equations 3.3.1-3.3.3",
+      "title": "Digital Library of Mathematical Functions, Interpolation",
+      "url": "https://dlmf.nist.gov/3.3",
+      "use": "Complete classical Lagrange map and inverse; finite discrete sign/error theorem derived in this application."
+    },
+    {
+      "author": "Elsholtz, C., and Tao, T.",
+      "locator": "Section 2, Propositions 2.2 and 2.6; displayed preprint PDF pp.12 and14",
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "use": "Inherited Type I/II framework. Rational formulas and exact inverses are recalculated here; no priority claimed for selector progressions.",
+      "year": 2013
+    },
+    {
+      "author": "Lasserre, J.-B.",
+      "locator": "Section 2.1, equations 2.2-2.3 in v1",
+      "title": "A disintegration of the Christoffel function",
+      "url": "https://arxiv.org/abs/2203.16238",
+      "use": "Context for the preceding canonical upper moment problem; not a source of the new discrete sign claim.",
+      "year": 2022
+    },
+    {
+      "author": "Sutherland, A. V.",
+      "locator": "Theorem 18.1, p.1",
+      "title": "18.785 Lecture 18: Dirichlet L-functions, primes in arithmetic progressions",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "use": "Infinitely many prime values in the displayed reduced progression; no simultaneous-prime assumption.",
+      "year": 2017
+    }
+  ],
+  "source_files": [
+    {
+      "filename": "es_infinite_arithmetic_bundle.zip",
+      "read_scope": "Previous exact infinite-array source package; extracted contents inspected, source proof and relevant PDF text read. No inherited verification counts promoted to new executions.",
+      "sha256": "d124b2edb134537049589303d72982aef566b70e06a85c13679f4f010aa5fce9"
+    },
+    {
+      "filename": "workbench.pdf",
+      "read_scope": "Lemma 1 and Theorem 2; original atlas and original counting norm. Row completeness, mass and all newly used coordinates rederived in this tranche.",
+      "sha256": "aff9e6b1d77cbfb6128663013c0124dced2b752ade1db42f29bf0fec247dd658"
+    },
+    {
+      "filename": "core.tex",
+      "read_scope": "First-degree signed localizer M8-M9, explicit nonconverse scope, earlier finite 50000 screen via public PR6, and original quotient weights.",
+      "sha256": "d31f8ecf45ef6dcd5d1f0790eaf6691374afcf374beca070f576a646ef8d68ee"
+    },
+    {
+      "filename": "es_split_boundary_bundle.zip",
+      "read_scope": "Preceding complete source and certificates; retained as antecedent, not modified.",
+      "sha256": "3281857121286f5492bc9cd4e7bfb6f21ba1be0767351030f1a1d60d4c9a0bb0"
+    }
+  ]
+}
