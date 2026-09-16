@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-10",
+  "status": "pass",
+  "execution": "Local editorial container, Python with SymPy 1.14.0",
+  "commands": ["python check_exact.py", "python -O check_exact.py"],
+  "outputs_byte_identical": true,
+  "check_groups": 46,
+  "scalar_entries": 547,
+  "checker_sha256": "3be0f778cd5065645cd77cba6a7ec8a7970dfa9bbb37ecf447602abf800a0cd5",
+  "stdout_sha256": "ec4aa870f187da5c71714bf4c5390c6bdd984338985d613070109bf6eb5911d6",
+  "scope": "Finite exact calculations. Written proofs establish the all-degree identities. No Lean replay, GRH theorem, global ES theorem, physical mass identification, or independent classification of the Albert algebra is claimed.",
+  "attribution": "Maintainer-proposed research direction; assistant-developed derivations and checker; original ES rational chart is attributed to the maintainer-supplied source identified in README.md.",
+  "privacy": "No raw conversation, private repository content, credentials, or external copyrighted PDF is included."
+}
