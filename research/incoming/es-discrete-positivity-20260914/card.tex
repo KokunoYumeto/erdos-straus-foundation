@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=180mm,paperheight=242mm,margin=13mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,mathtools,microtype,xcolor}
+\definecolor{ink}{RGB}{24,43,66}
+\pagestyle{empty}\setlength\parindent{0pt}\setlength\parskip{5pt}
+\begin{document}
+{\small THE CLANKERS\hfill14 SEPTEMBER 2026}\par
+\vspace{4mm}
+{\color{ink}\LARGE\bfseries From uniform control\par to one-sided ES certificates\par}
+\vspace{2mm}
+An original divisor state succeeds precisely when its odd return denominator
+$D$ is one. Keep the discrete spectrum, not merely the interval containing it:
+\[
+ D^{-1}\in\{1,1/3,1/5,1/7,\ldots\}.
+\]
+\hrule\vspace{4mm}
+{\color{ink}\large\bfseries An explicit signed filter}
+\[
+ \Phi_j(x)=x\prod_{\nu=1}^j\frac{(2\nu+1)x-1}{2\nu},
+ \qquad
+ \Phi_{2r+1}\le\mathbf1_{\{1\}}\le\Phi_{2r}.
+\]
+\[
+ \boxed{\|\Phi_j-\mathbf1_{\{1\}}\|_\Sigma
+ \le\frac1{2^j j!(2j+3)},\qquad
+ \sum_k|[x^k]\Phi_j|=j+1.}
+\]
+Factorial error decay; only linear amplification of absolute moment errors.
+With the original arithmetic row mass retained, this gives certified lower
+and upper counts for every canonical row defined here, for primes
+$p\equiv1\pmod4$.
+
+\vspace{2mm}
+{\color{ink}\large\bfseries A genuine hard-prime test}
+\[
+ p=19\,748\,674\,681\equiv1\pmod{840},\qquad R=135.
+\]
+Its complete shell has 2,106 original states and exactly one hit.
+The optimal aggregate first-degree signed test is negative:
+\[
+ L_1=-\frac{50887012}{144801015}<0.
+\]
+Retaining the discrete spectrum repairs the test:
+\[
+ \Phi_3(x)=\frac{105x^4-71x^3+15x^2-x}{48},
+\]
+\[
+ \boxed{\sum_\alpha\Phi_3(D_\alpha^{-1})
+       =\frac{1297691}{2460375}>0.}
+\]
+The corresponding original exterior marking is
+\[
+ (h,r,s,\kappa)=(26,2336,81289,341725215823).
+\]
+\vspace{1mm}\hrule\vspace{3mm}
+{\small Complete proofs, deterministic prime certificates, exact source weights,
+ordered denominator inverses, JSON and a standard-library verifier accompany
+the two three-page preprints. This is not a proof of universal ES, a least
+counterexample to the moment shortcut, or a claim of new prime coverage.}
+\end{document}

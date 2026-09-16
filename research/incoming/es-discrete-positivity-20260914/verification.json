@@ -1,0 +1,109 @@
+{
+  "certificates": {
+    "arrays.json": "b44094bd70c5ee7f598f9914379c76e42074bf1a7564afafbe041bb8259b70a6",
+    "checks.json": "69fbcdb4212da4848582736d13add02c483d9d9f61059de5cc9c41c8ddaaacae",
+    "filters.json": "62dccc268bfb28ecd5ab37105c6f10eeed77fe63180de547dc2af039734270ae",
+    "hard_prime.json": "34c7d23d645ff9837394d3de8afeff5998676b03feebc2939e09623340f712e5",
+    "interpolation.json": "ea9870067b483a7887e216032be1af0fbbfc5b76fdaeecc85e4d06bf6395676b",
+    "negative_controls.json": "aa8c7a945ec2ccf0befb545efdd222e9e054838521e9e781a324650e5c65f35a",
+    "progression.json": "35d862ff9eff48c9c2e7b1ee03917bed38ed638d13e8d52e810837236d1314ad",
+    "rows.json": "c065e63278f8ed4e4ac796b01cb0386a35868e8ce48b06391f051f3704884ba1",
+    "second_hard_prime.json": "7811f1a35c5175da138b892b5d27379ff3cb0afcdd4b7b49ab68318c355fa0bc",
+    "splits.json": "fc5b95881d76d29ed31cb79af1af2e988a77636db4038d84b1aa9bfd443c30a5"
+  },
+  "date": "2026-09-14",
+  "documents": {
+    "card": {
+      "TeX_fatal_errors": false,
+      "overfull_or_undefined_after_final_pass": [],
+      "pages": 1,
+      "sha256": "b8573798ff0e832b696c8d3629ff3de677825527343ed4e73b11a0d7a9096927",
+      "text_sha256": "b7bbea5c68f62acc94aa2bf053fb06ce39740ceddf528719b2c2940d868d024a",
+      "visually_inspected": "Every rendered page in contact sheets; full posting-card image after paragraph repair."
+    },
+    "preprint_filters": {
+      "TeX_fatal_errors": false,
+      "overfull_or_undefined_after_final_pass": [],
+      "pages": 3,
+      "sha256": "bc519df9201b00323796210a9caf774995c25a4af937fd79346bf7f8f5b2444f",
+      "text_sha256": "49edd3e565394551573b6bfda1498acf9b509723ad2b7905f515381e72411546",
+      "visually_inspected": "Every rendered page in contact sheets; full posting-card image after paragraph repair."
+    },
+    "preprint_hard_shell": {
+      "TeX_fatal_errors": false,
+      "overfull_or_undefined_after_final_pass": [],
+      "pages": 3,
+      "sha256": "28036e63e77ce3d5e6854ecde150ed7ac9e8193c8c56d7dee94fb30773300394",
+      "text_sha256": "72ea804b7725f9e7b734abed85c8cd8b5040413400a224a8322cc87cced93f90",
+      "visually_inspected": "Every rendered page in contact sheets; full posting-card image after paragraph repair."
+    },
+    "workbench": {
+      "TeX_fatal_errors": false,
+      "overfull_or_undefined_after_final_pass": [],
+      "pages": 7,
+      "sha256": "c1ccaeeb1de9fa07e2b02d5a06a98d2e3666b743f2ecd4ed9c374d51d392e483",
+      "text_sha256": "5c67c4abe04de7e8952c17ada1a30dfdba6ea5ef89e1c838f36f7891795ad681",
+      "visually_inspected": "Every rendered page in contact sheets; full posting-card image after paragraph repair."
+    }
+  },
+  "github": {
+    "read": "PR6 open, draft, unmerged at f234ed0c34100c39e52c6a4645793823e830a983",
+    "publication": "Published additively on research/es-discrete-positivity-20260914; main and PR6 are unchanged."
+  },
+  "mathematical_JSON_reproduction": {
+    "same_platform_normal_optimized_byte_identical": true,
+    "cross_platform_semantically_identical": true,
+    "raw_byte_caveat": "Windows text mode emits CRLF while the supplied files use LF; newline-normalized bytes are identical."
+  },
+  "nonclaims": [
+    "Not independent mathematical review",
+    "Not a Lean build",
+    "Not a universal ES result",
+    "Not new prime coverage",
+    "Not a least counterexample to moment adequacy"
+  ],
+  "review_scope": "General theorems have written coordinate proofs. Finite tests check their formulas and the specified arithmetic states, not all-prime occupancy. Both specified large primes have deterministic proof certificates.",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "verify.py",
+        "--bound",
+        "1500",
+        "--out",
+        "certificates"
+      ],
+      "mode": "normal",
+      "returncode": 0,
+      "seconds": 2.5199476969996795,
+      "stderr": "",
+      "stdout": "{\"checks\": 577947, \"hard_prime\": 19748674681, \"hard_shell_states\": 2106, \"negative_controls\": 7, \"row_scope\": {\"canonical_hits\": 1920, \"primes\": 54, \"shells\": 9531, \"states\": 412838}}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify.py",
+        "--bound",
+        "1500",
+        "--out",
+        "certificates_optimized"
+      ],
+      "mode": "optimized",
+      "returncode": 0,
+      "seconds": 4.083030898999823,
+      "stderr": "",
+      "stdout": "{\"checks\": 577947, \"hard_prime\": 19748674681, \"hard_shell_states\": 2106, \"negative_controls\": 7, \"row_scope\": {\"canonical_hits\": 1920, \"primes\": 54, \"shells\": 9531, \"states\": 412838}}\n"
+    }
+  ],
+  "source_sha256": {
+    "card.tex": "275880538d7acf9bc7c4d3f61a1760626429650fd66c8254deff35527f0feff9",
+    "core.tex": "3a612d2653854422f74626ecec44e6dcbbf3cb1512907332d917067b3bc20dd8",
+    "preprint_filters.tex": "ec329b523be8d02bfc5f8eeb145ee18f74ddf512a449d69d5f51fd01c87d499e",
+    "preprint_hard_shell.tex": "19942835d761054b9e0eb3547d2c8bda259fd55a63eebdb00c08b916921e39c9",
+    "prime_proof.json": "77fbdf14447fd237287399ee14a0f13f7080ffd28a8ae755e70e555fa77d4a44",
+    "references.tex": "1e9913465337d8e22ebc1c14ce17624febe105e1f8903e7a76cd7d64b28ab72c",
+    "verify.py": "8dffb97b4bc2ee36219aa11d505ac696c5d298292174666821315aa0e7aa263c",
+    "workbench.tex": "acad7bab4ea079956d8b4d98382ff8c4580742f1c0514da38cd48619611ff34d"
+  }
+}

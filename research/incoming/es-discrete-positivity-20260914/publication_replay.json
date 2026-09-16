@@ -1,0 +1,96 @@
+{
+  "schema": "es-publication-replay-v1",
+  "recorded_at": "2026-09-16T22:45:46+02:00",
+  "source_archive": {
+    "filename": "es_discrete_positivity_bundle.zip",
+    "sha256": "a8ae1e616e9b7df95c996a24536c077c7f355153023d83b320dd9da4089aa9cc",
+    "integration_patch_sha256": "21cd4ddc9303c8ef39bbc349c8bac06a7e47561bea59c2a668afbd01c1d9b714",
+    "manifest_entries_verified": 34
+  },
+  "finite_replay": {
+    "normal_command": "python verify.py --bound 1500 --out generated",
+    "optimized_command": "python -O verify.py --bound 1500 --out generated_optimized",
+    "normal_returncode": 0,
+    "optimized_returncode": 0,
+    "check_invocations": 577947,
+    "negative_controls": 7,
+    "row_scope": {
+      "primes": 54,
+      "shells": 9531,
+      "states": 412838,
+      "canonical_hits": 1920
+    },
+    "hard_prime": 19748674681,
+    "hard_shell_states": 2106,
+    "certificate_files": 10,
+    "certificate_semantic_equality": true,
+    "certificate_canonical_semantic_sha256": "3938bf26fda2fd7abc95cba468c4b512ed6160b2f1297175433ed67e99fc4a68",
+    "raw_byte_caveat": "The supplied JSON uses LF. Windows text-mode replay emits CRLF. Parsed JSON and newline-normalized bytes agree; raw cross-platform byte identity is not claimed."
+  },
+  "publication_corrections": [
+    {
+      "kind": "theorem_scope",
+      "files": [
+        "README.md",
+        "PR_BODY.md",
+        "card.tex",
+        "preprint_filters.tex"
+      ],
+      "correction": "The universal wording was restricted to every canonical row defined in this tranche, namely primes p congruent to 1 modulo 4. No reduction for the other prime residue classes is supplied here."
+    },
+    {
+      "kind": "evidence_wording",
+      "files": [
+        "core.tex",
+        "verification.json"
+      ],
+      "correction": "The executable is described as a standalone deterministic verifier, not as independent mathematical review, and JSON reproduction is stated semantically with its line-ending caveat."
+    },
+    {
+      "kind": "publication_status",
+      "files": [
+        "README.md",
+        "PR_BODY.md",
+        "source_reading.json",
+        "verification.json"
+      ],
+      "correction": "Local workflow residue was replaced by the public branch, base, and antecedent status."
+    }
+  ],
+  "pdf_rebuild": {
+    "engine": "MiKTeX pdfTeX 1.40.29",
+    "final_logs_have_fatal_errors": false,
+    "final_logs_have_undefined_references": false,
+    "final_logs_have_overfull_boxes": false,
+    "documents": {
+      "card.pdf": {
+        "pages": 1,
+        "sha256": "b8573798ff0e832b696c8d3629ff3de677825527343ed4e73b11a0d7a9096927"
+      },
+      "preprint_filters.pdf": {
+        "pages": 3,
+        "sha256": "bc519df9201b00323796210a9caf774995c25a4af937fd79346bf7f8f5b2444f"
+      },
+      "preprint_hard_shell.pdf": {
+        "pages": 3,
+        "sha256": "28036e63e77ce3d5e6854ecde150ed7ac9e8193c8c56d7dee94fb30773300394"
+      },
+      "workbench.pdf": {
+        "pages": 7,
+        "sha256": "c1ccaeeb1de9fa07e2b02d5a06a98d2e3666b743f2ecd4ed9c374d51d392e483"
+      }
+    }
+  },
+  "proved_scope": [
+    "Exact one-sided interpolation filters on the reciprocal odd spectrum for the canonical rows defined in the tranche",
+    "Factorial uniform filter error and coefficient l1 norm j+1",
+    "Exact bounded hard-shell and progression certificates represented by the included JSON files"
+  ],
+  "nonclaims": [
+    "No universal Erdos-Straus theorem",
+    "No coverage of canonical rows not defined in this tranche",
+    "No least-counterexample claim",
+    "No Lean certification",
+    "No independent mathematical review"
+  ]
+}

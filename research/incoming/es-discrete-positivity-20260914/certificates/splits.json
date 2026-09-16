@@ -1,0 +1,107 @@
+[
+  {
+    "a": 636,
+    "b": [
+      1,
+      0,
+      0
+    ],
+    "f": [
+      1,
+      1,
+      1
+    ],
+    "occurrences": 162,
+    "original_hits": 3,
+    "original_states": 90,
+    "p": 2521,
+    "raw_occurrence_hits": 5,
+    "weighted_histogram": [
+      [
+        1,
+        {
+          "denominator": 1,
+          "numerator": 3
+        }
+      ],
+      [
+        23,
+        {
+          "denominator": 1,
+          "numerator": 87
+        }
+      ]
+    ]
+  },
+  {
+    "a": 64,
+    "b": [
+      3
+    ],
+    "f": [
+      3
+    ],
+    "occurrences": 98,
+    "original_hits": 0,
+    "original_states": 26,
+    "p": 241,
+    "raw_occurrence_hits": 0,
+    "weighted_histogram": [
+      [
+        3,
+        {
+          "denominator": 1,
+          "numerator": 8
+        }
+      ],
+      [
+        5,
+        {
+          "denominator": 1,
+          "numerator": 12
+        }
+      ],
+      [
+        15,
+        {
+          "denominator": 1,
+          "numerator": 6
+        }
+      ]
+    ]
+  },
+  {
+    "a": 312,
+    "b": [
+      1,
+      0,
+      0
+    ],
+    "f": [
+      2,
+      1,
+      1
+    ],
+    "occurrences": 270,
+    "original_hits": 2,
+    "original_states": 126,
+    "p": 1201,
+    "raw_occurrence_hits": 2,
+    "weighted_histogram": [
+      [
+        1,
+        {
+          "denominator": 1,
+          "numerator": 2
+        }
+      ],
+      [
+        47,
+        {
+          "denominator": 1,
+          "numerator": 124
+        }
+      ]
+    ]
+  }
+]

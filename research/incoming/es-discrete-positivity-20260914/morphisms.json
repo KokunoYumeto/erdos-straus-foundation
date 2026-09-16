@@ -1,0 +1,176 @@
+{
+  "convention": "All state, channel and support tags remain unless explicitly declared a projection. Scalar equality is not identification of source fibres.",
+  "maps": [
+    {
+      "codomain": "same original labels with u|a^2",
+      "domain": "(p,a,R,c,beta), beta in full [-e,e] box",
+      "formula": "u=product q_i^(e_i+beta_i)",
+      "id": "A1",
+      "inverse_or_fibre": "beta_i=v_q_i(u)-e_i; retain primes and channel",
+      "name": "Original exponent/divisor equivalence",
+      "proof_location": "core (1)-(2)"
+    },
+    {
+      "codomain": "same label with (h,r,s,quotient),(X,Y,Z)",
+      "domain": "canonical original leaf",
+      "formula": "(4)-(5), D=R/gcd(R,g_c)",
+      "id": "A2",
+      "inverse_or_fibre": "u=a^2/(RY-pa) E; u=pa^2/(RY-pa) M; gcd normalization returns every coordinate",
+      "name": "Rational and integral denominator reconstruction",
+      "proof_location": "core (4)-(5)"
+    },
+    {
+      "codomain": "x=1/D with label retained",
+      "domain": "complete original leaf",
+      "formula": "D=R/gcd(R,g_c)",
+      "id": "A3",
+      "inverse_or_fibre": "x alone identifies D but does not recover shell,u,channel; these remain in state",
+      "name": "Defect spectral observation",
+      "proof_location": "core (2)-(3)"
+    },
+    {
+      "codomain": "values at 0,1,1/3,...,1/(2j+1)",
+      "domain": "polynomials degree<=j+1",
+      "formula": "evaluation",
+      "id": "I1",
+      "inverse_or_fibre": "inverse complete Lagrange basis, not only one selected value",
+      "name": "Full finite interpolation map",
+      "proof_location": "core (7)-(8)"
+    },
+    {
+      "codomain": "same support with coefficient Phi_j(1/D)",
+      "domain": "original labelled eigenvalues",
+      "formula": "Phi_j=x product (((2nu+1)x-1)/(2nu))",
+      "id": "I2",
+      "inverse_or_fibre": "not invertible: failures D=3,...,2j+1 are zeroed; original D/labels retained; zero coefficient not absence",
+      "name": "Signed interpolation filter",
+      "proof_location": "core (9)-(10)"
+    },
+    {
+      "codomain": "finite set of possible integer maximizing k",
+      "domain": "j>=1,s>=1",
+      "formula": "window (11)",
+      "id": "I3",
+      "inverse_or_fibre": "all maximizers and exact rational values are retained; j=0 or s=0 separate",
+      "name": "Hybrid sharp error evaluation",
+      "proof_location": "core (11)"
+    },
+    {
+      "codomain": "M_k=sum D^(-k)",
+      "domain": "counting measure on original labels",
+      "formula": "original unit mass or declared masses",
+      "id": "U1",
+      "inverse_or_fibre": "moments forget which source labels supplied values; no claimed inverse from moments alone",
+      "name": "Original moment observation",
+      "proof_location": "core Section3"
+    },
+    {
+      "codomain": "ell_pn,u_pn and unique integer H_p",
+      "domain": "p and original moments through j(p,n)+2",
+      "formula": "(12)-(16)",
+      "id": "U2",
+      "inverse_or_fibre": "ceil ell=floor u=H; a positive score gives a finite search for a positive original summand, not its identity without search",
+      "name": "Uniform signed row certificate",
+      "proof_location": "core (12)-(16)"
+    },
+    {
+      "codomain": "sign-directed lower/upper count interval",
+      "domain": "absolute certified moment intervals",
+      "formula": "coefficient l1 norm <= j+2",
+      "id": "U3",
+      "inverse_or_fibre": "uncertainty retained; actual tolerance (16(j+2)3^n)^(-1), no row mass normalization",
+      "name": "Certified interval input",
+      "proof_location": "core Section3 Absolute input error"
+    },
+    {
+      "codomain": "same domain",
+      "domain": "maximal counting number-operator domain sum H_p^2 |v_p|^2 finite",
+      "formula": "diagonals ell_pn,u_pn",
+      "id": "U4",
+      "inverse_or_fibre": "bounded differences from N, constants (15); relative traces only on stated convergent domain",
+      "name": "Infinite row operators",
+      "proof_location": "core Section3 Infinite operators"
+    },
+    {
+      "codomain": "two identical coefficient vectors (P,P)",
+      "domain": "one normalized coefficient vector P",
+      "formula": "Delta P=(P,P)",
+      "id": "P1",
+      "inverse_or_fibre": "inverse on diagonal reads one entry; full two-channel form retains off-diagonal-in-this-decomposition directions",
+      "name": "Restriction to a common channel polynomial",
+      "proof_location": "core Section4"
+    },
+    {
+      "codomain": "integer lower bound sum max(0,ceil Ld)",
+      "domain": "genuine disjoint original subfamilies",
+      "formula": "(19)",
+      "id": "P2",
+      "inverse_or_fibre": "sums original mass, not split occurrences or duplicate branch labels; refined bound monotone",
+      "name": "Partition-resolved lower count",
+      "proof_location": "core (19)"
+    },
+    {
+      "codomain": "B_e x {E,M}",
+      "domain": "B_f x B_b x {E,M}",
+      "formula": "(xi,eta,c)->(xi+eta,c)",
+      "id": "S1",
+      "inverse_or_fibre": "full interval fibres and eta=beta-xi; cardinal n(beta) retained",
+      "name": "Split addition",
+      "proof_location": "core Section4 Split arithmetic"
+    },
+    {
+      "codomain": "occurrence l2 weighted 1/n(beta)",
+      "domain": "counting l2 on original states",
+      "formula": "U duplicates values; U* averages",
+      "id": "S2",
+      "inverse_or_fibre": "U*U=I; kernel of average fibre sums zero; full inverse fibre Uv+kerU*",
+      "name": "Isometric split duplication and average",
+      "proof_location": "core (20)"
+    },
+    {
+      "codomain": "f(UXU*) on full occurrence space",
+      "domain": "original X and f",
+      "formula": "Uf(X)U*+f(0)(I-UU*)",
+      "id": "S3",
+      "inverse_or_fibre": "returns by U* on imU; Phi_j(0)=0, pure P_j has nonzero relation-sector term",
+      "name": "Polynomial functional calculus under split compression",
+      "proof_location": "core (20)"
+    },
+    {
+      "codomain": "group-algebra coefficient array followed by gate histogram",
+      "domain": "bounded actual prime exponents",
+      "formula": "(23)",
+      "id": "H1",
+      "inverse_or_fibre": "full fibres indexed by original exponents; neither group support nor histogram alone replaces labels",
+      "name": "Direct/residue finite histogram comparison",
+      "proof_location": "core Section5"
+    },
+    {
+      "codomain": "deterministic primality conclusion",
+      "domain": "n,base,complete factorization n-1 with descending prime certificates",
+      "formula": "order of base modulo every divisor must equal n-1",
+      "id": "H2",
+      "inverse_or_fibre": "all factor certificates and modular residues retained; no probable-prime step",
+      "name": "Prime proof DAG",
+      "proof_location": "core Section5 and prime_proof.json"
+    },
+    {
+      "codomain": "n, a,u,raw h0,r0,s0,kappa0, ordered witness",
+      "domain": "j in nonnegative integers",
+      "formula": "(29)",
+      "id": "F1",
+      "inverse_or_fibre": "j=(n-pstar)/255650653440 on image; no claim every hard n lies in image",
+      "name": "All-integer progression map",
+      "proof_location": "core Section6"
+    },
+    {
+      "codomain": "coprime marking with same denominators",
+      "domain": "raw progression marking",
+      "formula": "d=gcd(r0,s0); h=h0*d^2,r=r0/d,s=s0/d,kappa=kappa0/d",
+      "id": "F2",
+      "inverse_or_fibre": "retain d/raw frame if its inverse is requested; denominator order and u unchanged; gcd(d,135)=1",
+      "name": "Primitive canonicalization",
+      "proof_location": "core Section6"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\title{Factorial one-sided count certificates\newline on the odd reciprocal ES spectrum}
+\author{The Clankers}
+\date{14 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+The exact denominator defects of the Erd\H{o}s--Straus divisor atlas are odd.
+Explicit rational interpolation polynomials therefore separate successes from
+failures with factorial uniform error and only linear growth of the absolute
+coefficient sum. Preserving the original state counts gives simultaneous
+one-sided certificates for every canonical row defined here, for primes
+$p\equiv1\pmod4$, at moment degree asymptotic to
+$\log p/\log\log p$. The finite coefficient-error and split-compression maps
+are explicit. The theorem controls recovery of the count; it does not prove
+that every such prime's count is positive. No historical-priority claim is made.
+\end{abstract}
+
+\paragraph{Exact arithmetic domain.}
+For prime $p=4m+1$, retain every $m+1\le a\le2m$, $R=4a-p$,
+$a=\prod_iq_i^{e_i}$, $-e_i\le\beta_i\le e_i$, $u=\prod_iq_i^{e_i+\beta_i}$,
+and the two separate channel tags $E,M$. Their gates and defects are
+\[
+ g_E=4u+1,\qquad g_M=u+a,\qquad D=R/\gcd(R,g_c).
+\]
+The original positive rational triples are
+\[
+ E:\ \left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\qquad
+ M:\ \left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+\]
+Multiplication gives $(RY-pa)(RZ-pa)=p^2a^2$, proving their reciprocal sum is
+$4/p$. Since $\gcd(pa,R)=1$ and $4a\equiv p\pmod R$, both nonfirst reduced
+denominators are exactly $D$. Thus the hit indicator is $\mathbf1_{D=1}$,
+and every failure has odd $D\ge3$. The inherited complete first-half atlas
+retains the Type I/II coordinate conventions \cite{ET,Prior}. The original
+inverse is $u=a^2/(RY-pa)$ for E and $u=pa^2/(RY-pa)$ for M, with its tag.
+
+For the countable disjoint union of these labelled rows use counting
+$\ell^2$, $Xe_\alpha=D_\alpha^{-1}e_\alpha$, and
+$\Pi e_\alpha=\mathbf1_{D_\alpha=1}e_\alpha$. The spectral accumulation
+point zero is not an absent state. The exact ambient compact set is
+\[
+ \Sigma=\{0,1,1/3,1/5,1/7,\ldots\}.
+\]
+
+\begin{theorem}[Discrete signed interpolation]
+Define the degree-$(j+1)$ polynomial
+\[
+ \Phi_j(x)=x\prod_{\nu=1}^j\frac{(2\nu+1)x-1}{2\nu},\qquad j\ge0.
+ \tag{1}
+\]
+Its value is one at 1. At $D=2k+1>1$ its value is zero for $1\le k\le j$;
+otherwise it is
+\[
+ \Phi_j(1/D)=(-1)^j\frac{\binom{k-1}{j}}{(2k+1)^{j+1}}.
+ \tag{2}
+\]
+Consequently on $\Sigma$,
+\[
+ \Phi_{2r+1}\le\mathbf1_{\{1\}}\le\Phi_{2r},\qquad
+ \|\Phi_j-\mathbf1_{\{1\}}\|_\Sigma
+ \le\frac1{2^j j!(2j+3)}.
+ \tag{3}
+\]
+The even sequence decreases and the odd sequence increases to the indicator.
+The coefficient $\ell^1$ norm of $\Phi_j$ is exactly $j+1$.
+\end{theorem}
+\begin{proof}
+Each factor of (1) is $(\nu-k)/(\nu D)$ at $1/D$, giving (2).
+For $k>j$, its absolute value is at most $1/(2^j j!D)$, and $D\ge2j+3$.
+The two additional factors in the same-parity comparison have product in
+$[0,1]$ on each remaining failed node; newly reached nodes become zero.
+This proves the signs and monotonicity. All nonzero coefficients alternate;
+their absolute sum is $|\Phi_j(-1)|=\prod_{\nu=1}^j(\nu+1)/\nu=j+1$.
+\end{proof}
+
+\newpage
+\paragraph{Interpolation and exact error.}
+The full evaluation map on $0,1,1/3,\ldots,1/(2j+1)$ is a rational linear
+isomorphism. Its inverse is the Lagrange formula
+\[
+ (v_i)_i\longmapsto\sum_i v_i\prod_{h\ne i}\frac{x-z_h}{z_i-z_h}.
+\]
+Thus (1) is one explicitly selected inverse column of a classical map
+\cite[\S3.3(i), equations 3.3.1--3.3.3]{DLMF}. Its values outside these nodes
+are not asserted to have the signs in (3); the discrete spectrum is essential.
+
+There is a sharp finite alternative to the bound in (3). For $j\ge1$ the
+maximum in (2) occurs among the integers
+\[
+ \max\{j+1,\lfloor1+j(j+2)/2\rfloor\}\le k\le
+ \max\{j+1,\lceil j+j(j+2)/2\rceil\}.
+ \tag{4}
+\]
+Indeed the logarithmic derivative of the positive expression in (2) has the
+sign of $\sum_{\nu=1}^j(2\nu+1)/(k-\nu)-2$, a strictly decreasing function.
+Its crossing lies between $1+j(j+2)/2$ and $j+j(j+2)/2$ by bounding every
+denominator between $k-j$ and $k-1$. This proves (4), including the endpoint
+restriction. Exact evaluation gives errors $1/3,2/49,10/2197,4/9261$ at
+$j=0,1,2,3$, attained respectively at $D=3,7,13,21$.
+
+\paragraph{Original mass, not a probability replacement.}
+Let $W_p$ be the size of a full canonical row and $H_p$ its success count.
+An elementary bound is
+\[
+ W_p\le B_p=\min\{6m^2,4m(1+\lfloor\log_2(2m)\rfloor)^2\}.
+ \tag{5}
+\]
+For the first expression use $\tau(a^2)\le2a-1$. For the second use the
+prime-power inequality $2e+1\le(e+1)(e+2)/2$, hence $\tau(a^2)\le d_3(a)$.
+Then $\sum_{a\le N}d_3(a)\le N(\sum_{u\le N}1/u)^2$, and dyadic grouping
+bounds the harmonic sum by $1+\lfloor\log_2N\rfloor$. Double for both channels.
+
+\begin{theorem}[Simultaneous original-count certificates]
+For accuracy index $n\ge0$, choose the least even $j=j(p,n)$ with
+\[
+ 2^j j!(2j+3)\ge8\cdot3^nB_p.
+\]
+Set $Q_j(p)=\sum_{\alpha\in\mathcal A_p}\Phi_j(D_\alpha^{-1})$. Then
+\[
+ \boxed{H_p-\frac1{16\cdot3^n}\le Q_{j+1}(p)\le H_p
+ \le Q_j(p)\le H_p+\frac1{8\cdot3^n}.}
+ \tag{6}
+\]
+In particular $\lceil Q_{j+1}(p)\rceil=\lfloor Q_j(p)\rfloor=H_p$, and
+$H_p>0$ if and only if $Q_{j+1}(p)>0$. The largest required moment index is
+$j+2=(1+o(1))\log p/\log\log p$ for fixed $n$.
+\end{theorem}
+\begin{proof}
+Sum (3) with the original unit masses and apply (5).
+The ratio between consecutive error denominators is
+$2(j+1)(2j+5)/(2j+3)>2$. This proves (6) and its rounding consequence.
+The estimate $\log(2^j j!(2j+3))=j\log j+O(j)$ follows by integrating
+$\log x$ above and below its integer sum. Minimality among even integers
+changes it by $O(\log j)$; $\log B_p=\log p+O(\log\log p)$ proves the degree.
+\end{proof}
+The inequality $Q_{j+1}(p)>0$ is not established for every prime by this
+convergence theorem. It is the now-explicit arithmetic lower bound to prove.
+On the original prime counting space, the number operator $N=\operatorname{diag}H_p$
+retains its maximal domain $\sum H_p^2|v_p|^2<\infty$.
+The two operators in (6) have that same domain and bounded differences from
+$N$ with the displayed uniform constants.
+
+\newpage
+\paragraph{Certified moment inputs.}
+Write $M_k(p)=\sum_\alpha D_\alpha^{-k}$. Each $Q_j$ is an explicit rational
+linear combination of these original moments. If every moment through degree
+$j+2$ has certified absolute error at most
+\[
+ \delta=\frac1{16(j+2)3^n},
+\]
+the total evaluation error is at most $1/(16\cdot3^n)$ for either filter.
+Form the lower endpoint by subtracting this allowance and the upper by adding
+it to the approximate sums. Their width is at most $7/(16\cdot3^n)<1$ and they
+contain the integer $H_p$. This is an absolute error statement. It does not
+claim that computing the original moments to this accuracy has low complexity.
+
+For any finite original selection, the particularly simple quartic gives
+\[
+ \Phi_3(x)=\frac{105x^4-71x^3+15x^2-x}{48}\le\mathbf1_{\{1\}}(x).
+\]
+At one shell put $S_k=\sum_\alpha\gcd(R,g_\alpha)^k$. The unconditional
+sufficient test is therefore
+\[
+ \boxed{105S_4-71RS_3+15R^2S_2-R^3S_1>0\quad\Longrightarrow\quad H>0.}
+ \tag{7}
+\]
+A separate accompanying note supplies a hard-prime shell at which (7) succeeds
+while the optimal aggregate first-degree signed moment test fails. Neither (7)
+nor first-degree adequacy is asserted necessary for arbitrary positive shells.
+
+\paragraph{Split-fibre and operator return.}
+For $e=f+b$ the addition map $(\xi,\eta,c)\mapsto(\xi+\eta,c)$ has complete
+fibre
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),
+ \quad\eta=\beta-\xi.
+\]
+Its size $n(\beta)$ is the product of those interval lengths. Assigning each
+occurrence weight $1/n(\beta)$ preserves every $M_k$ and $Q_j$ exactly by
+finite fibre summation. All channel labels and original exponent vectors
+remain; a residue-support subgroup does not replace the exponent box.
+
+In the completed occurrence space with those weights, value duplication $U$
+has adjoint equal to fibre averaging, and $U^*U=I$. For $A=UXU^*$ on the full
+occurrence space, every polynomial satisfies
+\[
+ f(A)=Uf(X)U^*+f(0)(I-UU^*).
+\]
+Decompose into $\operatorname{im}U$ and its orthogonal complement to prove it.
+Because $\Phi_j(0)=0$,
+\[
+ \boxed{\Phi_j(UXU^*)=U\Phi_j(X)U^*.}
+ \tag{8}
+\]
+The return on the image uses $U^*$; the kernel directions stay marked.
+The raw repeated diagonal trace is different and multiplies original states
+by their fibre sizes. For the product in (1) without the leading $x$, its
+constant term would instead contribute
+$(-1)^j(2^jj!)^{-1}(I-UU^*)$.
+
+\paragraph{Verification and scope.}
+The accompanying standard-library verifier uses rational arithmetic and checks
+all signs, coefficient sums, interpolation inverse columns, sharp finite
+windows, original split fibres and the stated operator comparisons. It checks
+the row schedule through $p\le1500$ and on explicit growing-mass fixtures.
+The infinite theorems are proved above, not inferred from that finite replay.
+Original normalized ES coordinates recover a witness after a positive sum
+identifies a successful finite source label. Moments alone do not identify
+which state supplied it. Supported coefficient zero is not external absence.
+
+\begin{thebibliography}{3}\small
+\bibitem{DLMF} National Institute of Standards and Technology. \emph{Digital Library
+of Mathematical Functions}, \S3.3(i), equations 3.3.1--3.3.3.
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to
+the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc., 94}(1),
+50--105, \S2, Propositions 2.2 and 2.6.
+\bibitem{Prior} The Clankers (2026). \emph{Uniform infinite-array control for marked
+Erd\H{o}s--Straus selectors}, 14 September, Lemma 1 and Theorem 2. Complete
+source/hash identity and the preceding SplitZero integration are in the companion ledger.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,521 @@
+\section{Original arithmetic and what the uniform estimate leaves to prove}
+The source is the preceding infinite-array tranche and its pinned finite
+SplitZero application \cite{Prior,Boundary}. We retain all original labels,
+not only the eigenvalues of their observation. Let $p=4m+1$ be prime. The
+canonical row consists of
+\[
+ m+1\le a\le2m,\quad R=4a-p,\quad
+ a=\prod_iq_i^{e_i},\quad -e_i\le\beta_i\le e_i,\quad c\in\{E,M\}.
+ \tag{1}
+\]
+Set
+\[
+ u=\prod_iq_i^{e_i+\beta_i},\quad g_E=4u+1,\quad g_M=u+a,\quad
+ D_\alpha=\frac R{\gcd(R,g_c)},\quad x_\alpha=D_\alpha^{-1}.
+ \tag{2}
+\]
+Every original prime-power defect and channel remains part of $\alpha$.
+The exact possible observation values are
+\[
+ \Sigma=\{0\}\cup\{1/(2k+1):k\ge0\},
+ \qquad x_\alpha\in\Sigma\setminus\{0\}.
+ \tag{3}
+\]
+Zero is a possible spectral limit, not an absent labelled state.
+The inherited bound treated this set as the larger interval union
+$[0,1/3]\cup\{1\}$. The present improvement uses the gaps inside that interval.
+
+For completeness, the positive rational candidate is
+\[
+ E:\ \left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\qquad
+ M:\ \left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+ \tag{4}
+\]
+The two nonfirst reduced denominators are both exactly $D_\alpha$.
+Indeed $(RY-pa)(RZ-pa)=p^2a^2$, and $4a\equiv p\pmod R$ with
+$\gcd(pa,R)=1$ reduces the numerator gcds to those in (2).
+Consequently a positive integral witness is exactly a state with $D_\alpha=1$.
+These are classical Type I/II coordinates, with the marking retained
+\cite[\S2, Propositions 2.2 and 2.6]{ET}.
+
+Writing $d_0=\gcd(a,u)$ gives the complete normalization
+\[
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0),\quad a=hrs,\quad u=hr^2,\quad\gcd(r,s)=1.
+\]
+At a hit the quotient and raw ordered denominators are
+\[
+ E:\ \kappa=(pr+s)/R,\quad(a,hs\kappa,phr\kappa),\qquad
+ M:\ \lambda=(r+s)/R,\quad(a,phs\lambda,phr\lambda).
+ \tag{5}
+\]
+The ordered inverse recovers $u=a^2/(RY-pa)$ for E and
+$u=pa^2/(RY-pa)$ for M, then recovers every $\beta_i=v_{q_i}(u)-e_i$.
+There is no unmarked interchange of the last two denominators.
+
+\paragraph{Why the row is complete.}
+Here is the previously established first-half argument, included to identify
+its exact hypothesis. Order a positive integral solution as $x\le y\le z$.
+Then $p/4<x\le3p/4<p$. If $x>p/2$, the reciprocal equation implies
+$y<p$. Thus $z=pk$ by clearing denominators modulo $p$. Put
+$t=(4k-1)/p\in\mathbb Z_{>0}$; it has $t\equiv3\pmod4$,
+$\gcd(t,k)=1$, and $txy=k(x+y)$. Write $x=du,y=dv$ with
+$\gcd(u,v)=1$, $u\le v$. Then $uv\mid k$, so $k=uvl$ and
+$td=l(u+v)$. Coprimality gives $u+v=th,d=lh$.
+The inequality $2x>p$ now gives $2lu(u-v)>-1$, forcing $u=v=1$.
+But then $t\mid2$, contrary to $t\equiv3\pmod4$.
+Equality $x=p/2$ is impossible for odd $p$.
+For $a=x$, both other denominators exceed $p/2$, and the positive integer
+factor pair $(RY-pa,RZ-pa)$ has product $p^2a^2$. Its two $p$-adic orders are
+$(0,2)$, $(1,1)$, or $(2,0)$, yielding exactly (4), with a recorded exterior
+reversal in the last case. Thus (1) decides existence without restricting a ray
+or a Koide chamber.
+
+Let $W_p$ and $H_p$ be the canonical row's total and successful counts.
+The original counting Hilbert space and projector are
+\[
+ \mathcal H=\ell^2\!\left(\bigsqcup_p\mathscr A_p\right),\quad
+ Xe_\alpha=x_\alpha e_\alpha,\quad
+ \Pi e_\alpha=\mathbf1_{D_\alpha=1}e_\alpha.
+ \tag{6}
+\]
+The preceding theorem gives $\|X^n-\Pi\|\le3^{-n}$ and compensates row
+mass by an explicit prime-dependent power. It does not itself prove $H_p>0$.
+The following construction yields one-sided inequalities with faster
+convergence and a controlled moment-coefficient norm.
+
+\section{Discrete interpolation filters and their exact constants}
+For $j,s\ge0$ define
+\[
+ P_j(x)=\prod_{\nu=1}^j\frac{(2\nu+1)x-1}{2\nu},\qquad
+ F_{j,s}(x)=x^sP_j(x),\qquad \Phi_j=F_{j,1}.
+ \tag{7}
+\]
+These are explicit rational polynomials. In particular $\Phi_j$ is the unique
+polynomial of degree at most $j+1$ with values one at $1$ and zero at
+$0,1/3,\ldots,1/(2j+1)$. The full evaluation map on these $j+2$ distinct
+nodes is an isomorphism; its inverse is
+\[
+ (v_i)_i\longmapsto\sum_i v_i\prod_{h\ne i}\frac{x-z_h}{z_i-z_h}.
+ \tag{8}
+\]
+This is the classical Lagrange interpolation map \cite[\S3.3(i)]{DLMF}.
+Only its stated inverse column is used in (7); no novelty of interpolation
+itself is claimed.
+
+\begin{theorem}[Exact one-sided filters]\label{thm:filters}
+For $D=2k+1>1$,
+\[
+ F_{j,s}(1/D)=
+ \begin{cases}
+ 0,&1\le k\le j,\\
+ (-1)^j\displaystyle\frac{\binom{k-1}{j}}{(2k+1)^{j+s}},&k>j.
+ \end{cases}
+ \tag{9}
+\]
+Also $F_{j,s}(1)=1$, and its coefficient $\ell^1$ norm is exactly $j+1$.
+Thus even $j$ gives an upper and odd $j$ a lower bound for the indicator of $D=1$.
+On the entire set (3),
+\[
+ \boxed{\Phi_{2r+1}\le\mathbf1_{\{1\}}\le\Phi_{2r},\qquad
+ \|\Phi_j-\mathbf1_{\{1\}}\|_\Sigma
+ \le\frac1{2^j j!(2j+3)}.}
+ \tag{10}
+\]
+The even sequence decreases and the odd sequence increases to that indicator.
+\end{theorem}
+\begin{proof}
+Each factor at $D=2k+1$ is $(\nu-k)/(\nu D)$, proving (9) and the sign.
+For $k>j$,
+$\binom{k-1}{j}/D^j\le1/(2^j j!)$ and $D\ge2j+3$.
+This proves (10), including the value zero at the accumulation point.
+All nonzero coefficients of $P_j$ alternate in sign, so their absolute sum is
+$|P_j(-1)|=\prod_{\nu=1}^j(\nu+1)/\nu=j+1$; multiplication by $x^s$ only
+shifts them. For the same-parity comparison, the additional two factors
+have product between zero and one at every remaining failed node, and are
+one at the successful node. Nodes newly encountered become zero. These
+statements prove monotonicity and convergence.
+\end{proof}
+
+The sign assertion is only on the actual discrete spectrum. For example
+$P_2(1/4)<0$; using it as an upper bound on all of $[0,1/3]$ would be false.
+Even return denominators are excluded by the arithmetic proof, not by fiat.
+
+\begin{theorem}[A finite formula for the sharp hybrid error]\label{thm:sharp}
+For $j\ge1,s\ge1$, the exact maximum error of $F_{j,s}$ is obtained among
+\[
+ k\in\mathbb Z,\quad
+ \max\{j+1,\lfloor1+j(j+2)/(2s)\rfloor\}
+ \le k\le
+ \max\{j+1,\lceil j+j(j+2)/(2s)\rceil\}.
+ \tag{11}
+\]
+Evaluate the positive rational expression in (9) at these finitely many
+integers and take its maximum. For $j=0,s>0$, the maximum is $3^{-s}$.
+For $s=0$ the supremum is $1/(2^j j!)$, approached as $D\to\infty$.
+\end{theorem}
+\begin{proof}
+For real $k>j$, logarithmic differentiation of
+$\binom{k-1}{j}/(2k+1)^{j+s}$ gives the sign of
+\[
+ \sum_{\nu=1}^j\frac{2\nu+1}{k-\nu}-2s.
+\]
+The sum is strictly decreasing from infinity to zero. Its unique crossing is
+between $1+j(j+2)/(2s)$ and $j+j(j+2)/(2s)$, since
+$\sum(2\nu+1)=j(j+2)$. Before that crossing the function increases and after it
+decreases. The maximizing integer, also respecting $k\ge j+1$, lies in (11).
+The boundary cases follow directly from (9).
+\end{proof}
+
+In particular the first errors for $\Phi_j$, $j=0,1,2,3$, are
+$1/3,2/49,10/2197,4/9261$, attained at $D=3,7,13,21$.
+The theorem is a maximization on the full allowed odd spectrum; it does not
+assert that each maximizing $D$ occurs in every arithmetic row.
+
+\section{Uniform row positivity, original mass and certified precision}
+For any finite original selection $A$, put
+\[
+ M_k(A)=\sum_{\alpha\in A}D_\alpha^{-k},\qquad
+ Q_j(A)=\sum_{\alpha\in A}\Phi_j(D_\alpha^{-1}).
+\]
+The count $H_A$ retains repeated states with different original labels.
+Theorem~\ref{thm:filters} proves
+\[
+ \boxed{Q_{2r+1}(A)\le H_A\le Q_{2r}(A),\qquad
+ |Q_j(A)-H_A|\le\frac{|A|}{2^j j!(2j+3)}.}
+ \tag{12}
+\]
+The same formulas allow positive prescribed masses, but integer recovery below
+uses the original unit masses, not a row normalized to total mass one.
+
+The original row bound is
+\[
+ W_p\le B_p=
+ \min\{6m^2,4m(1+\lfloor\log_2(2m)\rfloor)^2\}.
+ \tag{13}
+\]
+Indeed $\tau(a^2)\le2a-1$ gives the first expression. Prime by prime,
+$2e+1\le(e+1)(e+2)/2$, so $\tau(a^2)\le d_3(a)$.
+Then $\sum_{a\le N}d_3(a)\le N(\sum_{u\le N}1/u)^2$ and dyadic grouping
+bounds the harmonic sum by $1+\lfloor\log_2N\rfloor$. This proves (13).
+
+\begin{theorem}[Uniform unscaled lower certificates]\label{thm:rows}
+For $n\ge0$, let $j(p,n)$ be the least even nonnegative integer satisfying
+\[
+ 2^j j!(2j+3)\ge8\cdot3^n B_p.
+ \tag{14}
+\]
+Set $\ell_{p,n}=Q_{j+1}(\mathscr A_p)$ and
+$u_{p,n}=Q_j(\mathscr A_p)$. Simultaneously for every row,
+\[
+ \boxed{H_p-\frac1{16\cdot3^n}\le\ell_{p,n}\le H_p
+ \le u_{p,n}\le H_p+\frac1{8\cdot3^n}.}
+ \tag{15}
+\]
+In particular $\lceil\ell_{p,n}\rceil=\lfloor u_{p,n}\rfloor=H_p$, and
+\[
+ \boxed{H_p>0\iff\ell_{p,n}>0.}
+ \tag{16}
+\]
+The largest moment index is $j(p,n)+2$. For fixed $n$, it is
+$(1+o(1))\log p/\log\log p$ as $p\to\infty$ through these rows.
+\end{theorem}
+\begin{proof}
+Apply (12)--(14). The ratio of consecutive denominators is
+$2(j+1)(2j+5)/(2j+3)>2$, proving the lower error in (15).
+The bracket has width at most $3/(16\cdot3^n)<1$ and contains the integer $H_p$.
+For $H_p\ge1$ its lower endpoint is positive; for $H_p=0$ it is nonpositive.
+All degree choices depend only on the proved mass bound, not on success.
+Finally the integral bounds for $\sum_{h=1}^j\log h$ give
+$\log(2^j j!(2j+3))=j\log j+O(j)$. Minimality among even integers changes
+this by only $O(\log j)$. Since $\log B_p=\log p+O(\log\log p)$,
+the asserted degree estimate follows.
+\end{proof}
+
+This is a certificate-degree improvement, not a bound on the cost of computing
+the original moments. For a mass bound $10^{12}$ the stated schedule needs
+moments through degree 14; for $10^{24}$, through degree 22. At the first hard
+prime of Section~\ref{sec:hard}, its whole-row mass bound is
+$22\,829\,467\,930\,080$, giving maximum moment degree 16. Its whole row was
+not enumerated in this contribution.
+
+\paragraph{Absolute input error.}
+If every supplied moment through degree $j+2$ has certified absolute error
+at most $\delta=(16(j+2)3^n)^{-1}$, polynomial evaluation error is at most
+$(j+1)\delta$ for the upper filter and $(j+2)\delta$ for the lower.
+These follow from the exact coefficient norm in Theorem~\ref{thm:filters}.
+Enlarge both endpoints in the required directions. The resulting interval
+still contains $H_p$ and has width less than $7/(16\cdot3^n)<1$.
+Original masses are unchanged; if moments are large, obtaining this absolute
+precision still requires the corresponding relative precision.
+
+\paragraph{Infinite operators.}
+On the original countable space (6), the pointwise inequalities give
+$\Phi_{2r+1}(X)\preceq\Pi\preceq\Phi_{2r}(X)$ with the same operator-norm errors.
+Let $N e_p=H_pe_p$ on the maximal domain
+$\{v:\sum H_p^2|v_p|^2<\infty\}$. The row operators with diagonals
+$\ell_{p,n},u_{p,n}$ have that same domain; their differences from $N$ are
+bounded with the constants in (15). This follows directly by coordinate norms,
+so no unproved trace of an infinite identity is used. For real $\sigma>1$,
+the signed relative row traces converge absolutely, bounded by the corresponding
+constant in (15) times $\sum_p p^{-\sigma}$.
+
+For the whole programme, (16) gives
+\[
+ \forall p\ H_p>0
+ \iff\inf_p\ell_{p,0}>0
+ \iff\inf_p\ell_{p,0}\ge15/16.
+ \tag{17}
+\]
+This is a precise forcing target, not a proof of the last bound. An empty row
+would have every odd-filter sum nonpositive. The present argument does not
+rule out such a row merely by assembling all rows.
+
+\section{Source-resolved lower bounds and exact transport}
+For a genuine partition $A=\bigsqcup_\lambda A_\lambda$, retain its original
+unit masses. Let $L_d(\mu_\lambda)$ be the previous signed variational bound
+\[
+ L_d(\mu_\lambda)=\max_{\deg P\le d,\ P(1)=1}
+ \frac32\int(x-1/3)P(x)^2d\mu_\lambda.
+ \tag{18}
+\]
+Its continuous-support sign is valid on $[0,1/3]\cup\{1\}$; the discrete
+polynomials (7) use the stronger exact spectrum and belong to a different
+family. We do not claim one family dominates the other at every degree.
+
+\begin{proposition}[A lower bound retaining the partition]
+The integer
+\[
+ C_d(\{A_\lambda\})=
+ \sum_\lambda\max\{0,\lceil L_d(\mu_\lambda)\rceil\}
+ \tag{19}
+\]
+is a lower bound for $H_A$. Refining the original partition cannot decrease it.
+In particular a positive score on one original channel certifies an ES witness
+without requiring a positive sum after merging the channels.
+\end{proposition}
+\begin{proof}
+Each $L_d(\mu_\lambda)\le H_{A_\lambda}$ and the latter is a nonnegative
+integer. For a refinement of one part, every common polynomial has score the
+sum of its refined scores, so $L_{\rm coarse}\le\sum L_{\rm fine}$.
+Use $\lceil\sum x_i\rceil\le\sum\lceil x_i\rceil$ and discard negative
+summands to obtain (19) and its monotonicity.
+\end{proof}
+
+At degree one, the two-channel coefficient space has block form
+$\operatorname{diag}(J_E,J_M)$. Restriction through
+$\Delta P=(P,P)$ has form $J_E+J_M$. This is restriction to a particular
+subspace, not an equivalence of the forms. The inverse of $\Delta$ on its
+image reads either identical entry; the difference component must be retained
+for the full direct sum.
+
+\paragraph{Split arithmetic.}
+For a budget split $e=f+b$, the addition map has fibre
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),\quad\eta=\beta-\xi,
+\]
+with cardinality $n(\beta)$ equal to the product of those interval lengths.
+Assign each occurrence weight $1/n(\beta)$. For every new filter and every
+moment, the occurrence sum equals the original sum. This is proved by grouping
+the actual finite fibres, not by assuming an unweighted convolution.
+In the corresponding completed spaces, duplication $U$ and fibre averaging
+$E=U^*$ satisfy $EU=1$. Since $\Phi_j(0)=0$,
+\[
+ \boxed{\Phi_j(UXU^*)=U\Phi_j(X)U^*.}\tag{20}
+\]
+Its inverse on $\operatorname{im}U$ uses $U^*$, and the complementary kernel
+is retained. The raw repeated diagonal operator still counts split
+multiplicities; (20) is its compressed transport, not a licence to take the raw
+trace. For $P_j$ without the extra $x$, the missing term would be
+$(-1)^j(2^j j!)^{-1}(I-UU^*)$.
+
+Every polynomial observation retains its source state $\alpha$ and $D_\alpha$.
+Forgetting them can merge zeroed defects $3,5,\ldots,2j+1$. A scalar moment
+vector does not reconstruct which divisor supplied a hit. Positive lower
+scores imply that some original summand is positive; enumerating its finite
+original fibre then returns a $D=1$ label and (5). The prime-power socle and
+augmentation maps commute with these blockwise scalar polynomials, without
+turning supported zeros into external absence.
+
+\section{An actual hard-prime obstruction and two positive repairs}\label{sec:hard}
+Take
+\[
+ \boxed{\begin{gathered}p_*=19\,748\,674\,681\equiv1\pmod{840},\qquad R=135,\\
+ a_*=4\,937\,168\,704=2^6\cdot13^4\cdot37\cdot73.\end{gathered}}
+ \tag{21}
+\]
+This is a prime, certified by the full order criterion with base $11$ and
+\[
+ p_*-1=2^3\cdot3\cdot5\cdot7\cdot23510327.
+\]
+All factors are proved prime by complete trial division. The residues of
+$11^{(p_*-1)/q}$, in this factor order, are
+\[
+ 19748674680,\ 10039250736,\ 3428156451,\ 13907516733,\ 12674160518.
+\]
+Each displayed residue minus one is coprime to $p_*$, and
+$11^{p_*-1}=1\pmod{p_*}$.
+For any prime divisor $l$ of $p_*$, these identities force the order modulo
+$l$ to be divisible by $p_*-1$, hence $l\ge p_*$. This proves primality.
+The program separately tests every possible odd divisor through $140529$.
+
+The following table exhausts the $1053$ divisors and both original channels:
+\[
+\begin{array}{c|rrrrrrrr}
+D&1&3&5&9&15&27&45&135\\\hline
+E&1&39&53&80&69&144&244&423\\
+M&0&40&54&80&68&144&244&423\\
+E+M&1&79&107&160&137&288&488&846
+\end{array}\tag{22}
+\]
+It can be independently reproduced in the finite group algebra by multiplying
+\[
+ (\sum_{i=0}^{12}[2]^i)(\sum_{j=0}^8[13]^j)
+ (\sum_{k=0}^2[37]^k)(\sum_{l=0}^2[73]^l)
+ \quad\text{in }\mathbb Z[(\mathbb Z/135\mathbb Z)^\times]
+ \tag{23}
+\]
+and applying the two gcd gates to each residue. The independent direct
+exponent enumeration is also supplied, with all 2106 labels. No group-generated
+support is substituted for these bounded exponents.
+
+For $S_i=\sum_\alpha\gcd(R,g_\alpha)^i$, the first values are
+\[
+(S_0,S_1,S_2,S_3,S_4)
+=(2106,13962,315738,12455226,722183418).
+\]
+Let $A_i=3S_{i+1}-RS_i$. Then
+\[
+ (A_0,A_1,A_2)=(-242424,-937656,-5258952),\qquad
+ A_0A_2-A_1^2=395697405312>0.
+ \tag{24}
+\]
+The degree-one signed localizing matrix is congruent, by a positive diagonal
+coordinate change, to $\begin{psmallmatrix}A_0&A_1\\A_1&A_2\end{psmallmatrix}$.
+It is negative definite. Thus the shell has a hit but \emph{every} aggregate
+degree-one normalized polynomial fails to give a positive score. Its exact
+maximum is $-50887012/144801015$.
+This is an obstruction to extending the earlier finite observation, not a
+counterexample to ES or a correction of the proved sufficient criterion.
+No leastness is claimed.
+
+\paragraph{First repair: retain the channel.}
+On E alone, the fixed polynomial $P(x)=(36x-1)/35$ has score
+\[
+ \boxed{\frac32\sum_{\alpha\in E}(x_\alpha-1/3)P(x_\alpha)^2
+ =\frac{64376}{196875}>0.}\tag{25}
+\]
+The exact E maximum is $1692013/5172810>0$; the M maximum is negative.
+Thus (19) forces at least one original E witness.
+
+\paragraph{Second repair: exploit the discrete spectrum.}
+The fixed quartic filter
+\[
+ \Phi_3(x)=\frac{105x^4-71x^3+15x^2-x}{48}
+\]
+gives, on the original \emph{combined} state set,
+\[
+ \boxed{Q_3=\frac{1297691}{2460375}>0,
+ \qquad Q_4=\frac{115374406}{110716875}.}\tag{26}
+\]
+Their integer bracket is exactly $H=1$. In particular, the arithmetic
+inequality
+\[
+ \boxed{105S_4-71RS_3+15R^2S_2-R^3S_1>0}\tag{27}
+\]
+is a valid sufficient condition for a hit in \emph{every} original shell.
+It is satisfied here although (24) prevents first-degree certification.
+This uses one higher moment for positivity, with no singular-Gram inverse.
+
+The unique original hit in this shell is
+\[
+ (c,u,h,r,s,\kappa)=
+ (E,141879296,26,2336,81289,341725215823),
+\]
+\[
+ (x,y,z)=
+ (4937168704,722241027794932022,409884191461517484986392768).
+ \tag{28}
+\]
+The centered vector is $(5,-3,-1,1)$. Its slope $2336/81289<1/8$ also belongs
+to the prescribed lower positive chamber. That chamber assertion is only for
+this marking, not every later member of the progression below.
+
+\paragraph{Channel separation alone is not asserted universal.}
+There is a second fully certified hard prime
+\[
+ p_{**}=2671180768668258904496300170662649\equiv289\pmod{840},
+\]
+with $a=(p_{**}+135)/4=2^5\cdot431^3\cdot457^3\cdot7229^4$.
+Its 9702 canonical candidates contain three E hits, but
+\[
+ L_1(E+M)=-\frac{7138170316}{1971871105},\qquad
+ L_1(E)=-\frac{146243172}{493377905},\qquad L_1(M)<0.
+\]
+The fixed discrete quartic nevertheless gives
+\[
+ Q_3=\frac{54448414}{66430125}>0.
+\]
+The exact full histogram, three witnesses and recursive Lucas certificate
+are in the JSON. The eight nontrivial certificate nodes reduce to trial-prime
+leaves below 10000; no probable-prime assumption is used. This additional case
+excludes a premature claim that channel separation always suffices.
+
+\section{A constructive infinite arithmetic specialization}
+The first recovered witness extends pointwise, without requiring its parameter
+to be prime. For every integer $j\ge0$, put
+\[
+ t=73+945j,\quad C=67632448,\quad n=4Ct-135
+ =19748674681+255650653440j,
+\]
+\[
+ h_0=26,\quad r_0=32t,\quad s_0=81289,\quad a=Ct,
+\]
+\[
+ \kappa_0=341725215823+8847406287328j+57265746370560j^2.
+\]
+Polynomial expansion proves $135\kappa_0=nr_0+s_0$ and
+$a=h_0r_0s_0$. Therefore
+\[
+ \boxed{\frac4n=\frac1a+\frac1{h_0s_0\kappa_0}
+                  +\frac1{nh_0r_0\kappa_0}.}\tag{29}
+\]
+All denominators are positive integers for every $j\ge0$.
+If $d=\gcd(r_0,s_0)$, then $\gcd(d,135)=1$ and $d\mid\kappa_0$.
+The canonical return is
+\[
+ (h,r,s,\kappa)=(h_0d^2,r_0/d,s_0/d,\kappa_0/d),\quad
+ u=h_0r_0^2,
+\]
+which leaves the ordered denominators unchanged. The actual inverse parameter
+is $j=(n-19748674681)/255650653440$ on this image.
+Every $n$ in (29) is $1\pmod{840}$, and the initial term is coprime to the
+step. Dirichlet's theorem therefore gives infinitely many prime members
+\cite[Theorem 18.1]{Dirichlet}. Formula (29) already proves ES for every integer
+member. This is a specialization of the inherited selector, not a claim that
+arithmetic-progression constructions are new or that this progression exhausts
+the hard locus.
+
+\section{Verification, source scope and next pointwise obligation}
+The standalone deterministic standard-library verifier proves the two primes by exact
+certificates, enumerates both specified shells in full, compares direct and
+residue-algebra censuses, verifies the moment inequalities and their positive
+witness inverses, and tests the entire finite node window used for sharp errors.
+It also checks interpolation inverse columns, interval precision, completed
+split trace identities and a full small-prime row comparison. Its finite output
+is not a proof of the infinite estimates; those were proved above.
+
+The original infinite-array and SplitZero source measures, kernels and labels
+are retained. No theta-source norm, Frobenius action, Leech geometry or cubic
+surface existence theorem is imported to assert positivity of these arithmetic
+sums. The generic interpolation and moment principles have their primary
+citations. The application and examples were calculated here; a scoped search
+did not establish historical priority.
+
+The uniform estimates now give explicit original-moment separating inequalities,
+with factorial rather than merely geometric error and controlled coefficient
+size. Two actual hard-prime shells show why a fixed first-degree shortcut cannot
+be inferred from the earlier census, and how stronger signed estimates recover
+positive witnesses. What is not proved is that every canonical row defined here,
+for primes $p\equiv1\pmod4$, must satisfy one
+of these positive lower inequalities. The remaining universal assertion is the
+arithmetic lower bound in (17), not an unproved limit interchange.

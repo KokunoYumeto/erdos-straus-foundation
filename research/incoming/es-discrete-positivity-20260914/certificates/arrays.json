@@ -1,0 +1,892 @@
+{
+  "degree_comparison": [
+    {
+      "coefficient_sum_max": 8,
+      "exact_schedule": 6,
+      "mass_power10": 3,
+      "new_degree": 8,
+      "power_filter_degree": 10
+    },
+    {
+      "coefficient_sum_max": 10,
+      "exact_schedule": 8,
+      "mass_power10": 6,
+      "new_degree": 10,
+      "power_filter_degree": 16
+    },
+    {
+      "coefficient_sum_max": 14,
+      "exact_schedule": 12,
+      "mass_power10": 12,
+      "new_degree": 14,
+      "power_filter_degree": 29
+    },
+    {
+      "coefficient_sum_max": 22,
+      "exact_schedule": 20,
+      "mass_power10": 24,
+      "new_degree": 22,
+      "power_filter_degree": 54
+    },
+    {
+      "coefficient_sum_max": 36,
+      "exact_schedule": 34,
+      "mass_power10": 48,
+      "new_degree": 36,
+      "power_filter_degree": 104
+    },
+    {
+      "coefficient_sum_max": 60,
+      "exact_schedule": 58,
+      "mass_power10": 96,
+      "new_degree": 60,
+      "power_filter_degree": 205
+    },
+    {
+      "coefficient_sum_max": 104,
+      "exact_schedule": 102,
+      "mass_power10": 192,
+      "new_degree": 104,
+      "power_filter_degree": 406
+    }
+  ],
+  "growing_synthetic_arrays": [
+    {
+      "bracket": {
+        "B": 22,
+        "H": 0,
+        "L": {
+          "denominator": 134521003125,
+          "numerator": -1985984
+        },
+        "U": {
+          "denominator": 199290375,
+          "numerator": 32032
+        },
+        "W": 22,
+        "absolute_moment_tolerance": {
+          "denominator": 96,
+          "numerator": 1
+        },
+        "largest_moment_degree": 6,
+        "lower_error": {
+          "denominator": 24960,
+          "numerator": 11
+        },
+        "m": 4,
+        "upper_error": {
+          "denominator": 192,
+          "numerator": 1
+        }
+      },
+      "growing_power": 1,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 23,
+        "H": 1,
+        "L": {
+          "denominator": 134521003125,
+          "numerator": 134519017141
+        },
+        "U": {
+          "denominator": 199290375,
+          "numerator": 199322407
+        },
+        "W": 23,
+        "absolute_moment_tolerance": {
+          "denominator": 96,
+          "numerator": 1
+        },
+        "largest_moment_degree": 6,
+        "lower_error": {
+          "denominator": 49920,
+          "numerator": 23
+        },
+        "m": 4,
+        "upper_error": {
+          "denominator": 4224,
+          "numerator": 23
+        }
+      },
+      "growing_power": 1,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 24,
+        "H": 2,
+        "L": {
+          "denominator": 134521003125,
+          "numerator": 269040020266
+        },
+        "U": {
+          "denominator": 199290375,
+          "numerator": 398612782
+        },
+        "W": 24,
+        "absolute_moment_tolerance": {
+          "denominator": 96,
+          "numerator": 1
+        },
+        "largest_moment_degree": 6,
+        "lower_error": {
+          "denominator": 2080,
+          "numerator": 1
+        },
+        "m": 4,
+        "upper_error": {
+          "denominator": 176,
+          "numerator": 1
+        }
+      },
+      "growing_power": 1,
+      "hit_count": 2
+    },
+    {
+      "bracket": {
+        "B": 112,
+        "H": 0,
+        "L": {
+          "denominator": 26904200625,
+          "numerator": -3971968
+        },
+        "U": {
+          "denominator": 39858075,
+          "numerator": 64064
+        },
+        "W": 112,
+        "absolute_moment_tolerance": {
+          "denominator": 96,
+          "numerator": 1
+        },
+        "largest_moment_degree": 6,
+        "lower_error": {
+          "denominator": 3120,
+          "numerator": 7
+        },
+        "m": 4,
+        "upper_error": {
+          "denominator": 264,
+          "numerator": 7
+        }
+      },
+      "growing_power": 2,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 113,
+        "H": 1,
+        "L": {
+          "denominator": 26904200625,
+          "numerator": 26900228657
+        },
+        "U": {
+          "denominator": 39858075,
+          "numerator": 39922139
+        },
+        "W": 113,
+        "absolute_moment_tolerance": {
+          "denominator": 96,
+          "numerator": 1
+        },
+        "largest_moment_degree": 6,
+        "lower_error": {
+          "denominator": 49920,
+          "numerator": 113
+        },
+        "m": 4,
+        "upper_error": {
+          "denominator": 4224,
+          "numerator": 113
+        }
+      },
+      "growing_power": 2,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 114,
+        "H": 2,
+        "L": {
+          "denominator": 26904200625,
+          "numerator": 53804429282
+        },
+        "U": {
+          "denominator": 39858075,
+          "numerator": 79780214
+        },
+        "W": 114,
+        "absolute_moment_tolerance": {
+          "denominator": 96,
+          "numerator": 1
+        },
+        "largest_moment_degree": 6,
+        "lower_error": {
+          "denominator": 8320,
+          "numerator": 19
+        },
+        "m": 4,
+        "upper_error": {
+          "denominator": 704,
+          "numerator": 19
+        }
+      },
+      "growing_power": 2,
+      "hit_count": 2
+    },
+    {
+      "bracket": {
+        "B": 1012,
+        "H": 0,
+        "L": {
+          "denominator": 19613162255625,
+          "numerator": -138451456
+        },
+        "U": {
+          "denominator": 2179240250625,
+          "numerator": 242290048
+        },
+        "W": 1012,
+        "absolute_moment_tolerance": {
+          "denominator": 128,
+          "numerator": 1
+        },
+        "largest_moment_degree": 8,
+        "lower_error": {
+          "denominator": 2741760,
+          "numerator": 253
+        },
+        "m": 6,
+        "upper_error": {
+          "denominator": 172800,
+          "numerator": 253
+        }
+      },
+      "growing_power": 3,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 1013,
+        "H": 1,
+        "L": {
+          "denominator": 19613162255625,
+          "numerator": 19613023804169
+        },
+        "U": {
+          "denominator": 2179240250625,
+          "numerator": 2179482540673
+        },
+        "W": 1013,
+        "absolute_moment_tolerance": {
+          "denominator": 128,
+          "numerator": 1
+        },
+        "largest_moment_degree": 8,
+        "lower_error": {
+          "denominator": 10967040,
+          "numerator": 1013
+        },
+        "m": 6,
+        "upper_error": {
+          "denominator": 691200,
+          "numerator": 1013
+        }
+      },
+      "growing_power": 3,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 1014,
+        "H": 2,
+        "L": {
+          "denominator": 19613162255625,
+          "numerator": 39226186059794
+        },
+        "U": {
+          "denominator": 2179240250625,
+          "numerator": 4358722791298
+        },
+        "W": 1014,
+        "absolute_moment_tolerance": {
+          "denominator": 128,
+          "numerator": 1
+        },
+        "largest_moment_degree": 8,
+        "lower_error": {
+          "denominator": 1827840,
+          "numerator": 169
+        },
+        "m": 6,
+        "upper_error": {
+          "denominator": 115200,
+          "numerator": 169
+        }
+      },
+      "growing_power": 3,
+      "hit_count": 2
+    },
+    {
+      "bracket": {
+        "B": 10012,
+        "H": 0,
+        "L": {
+          "denominator": 3922632451125,
+          "numerator": -276902912
+        },
+        "U": {
+          "denominator": 435848050125,
+          "numerator": 484580096
+        },
+        "W": 10012,
+        "absolute_moment_tolerance": {
+          "denominator": 128,
+          "numerator": 1
+        },
+        "largest_moment_degree": 8,
+        "lower_error": {
+          "denominator": 2741760,
+          "numerator": 2503
+        },
+        "m": 6,
+        "upper_error": {
+          "denominator": 172800,
+          "numerator": 2503
+        }
+      },
+      "growing_power": 4,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 10013,
+        "H": 1,
+        "L": {
+          "denominator": 3922632451125,
+          "numerator": 3922355548213
+        },
+        "U": {
+          "denominator": 435848050125,
+          "numerator": 436332630221
+        },
+        "W": 10013,
+        "absolute_moment_tolerance": {
+          "denominator": 128,
+          "numerator": 1
+        },
+        "largest_moment_degree": 8,
+        "lower_error": {
+          "denominator": 645120,
+          "numerator": 589
+        },
+        "m": 6,
+        "upper_error": {
+          "denominator": 691200,
+          "numerator": 10013
+        }
+      },
+      "growing_power": 4,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 10014,
+        "H": 2,
+        "L": {
+          "denominator": 3922632451125,
+          "numerator": 7844987999338
+        },
+        "U": {
+          "denominator": 435848050125,
+          "numerator": 872180680346
+        },
+        "W": 10014,
+        "absolute_moment_tolerance": {
+          "denominator": 128,
+          "numerator": 1
+        },
+        "largest_moment_degree": 8,
+        "lower_error": {
+          "denominator": 1827840,
+          "numerator": 1669
+        },
+        "m": 6,
+        "upper_error": {
+          "denominator": 115200,
+          "numerator": 1669
+        }
+      },
+      "growing_power": 4,
+      "hit_count": 2
+    },
+    {
+      "bracket": {
+        "B": 100012,
+        "H": 0,
+        "L": {
+          "denominator": 128681957559155625,
+          "numerator": -236890441216
+        },
+        "U": {
+          "denominator": 105911076180375,
+          "numerator": 4084317952
+        },
+        "W": 100012,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 975421440,
+          "numerator": 25003
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 49029120,
+          "numerator": 25003
+        }
+      },
+      "growing_power": 5,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 100013,
+        "H": 1,
+        "L": {
+          "denominator": 128681957559155625,
+          "numerator": 128681720668714409
+        },
+        "U": {
+          "denominator": 105911076180375,
+          "numerator": 105915160498327
+        },
+        "W": 100013,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 3901685760,
+          "numerator": 100013
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 196116480,
+          "numerator": 100013
+        }
+      },
+      "growing_power": 5,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 100014,
+        "H": 2,
+        "L": {
+          "denominator": 128681957559155625,
+          "numerator": 257363678227870034
+        },
+        "U": {
+          "denominator": 105911076180375,
+          "numerator": 211826236678702
+        },
+        "W": 100014,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 650280960,
+          "numerator": 16669
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 32686080,
+          "numerator": 16669
+        }
+      },
+      "growing_power": 5,
+      "hit_count": 2
+    },
+    {
+      "bracket": {
+        "B": 1000012,
+        "H": 0,
+        "L": {
+          "denominator": 25736391511831125,
+          "numerator": -473780882432
+        },
+        "U": {
+          "denominator": 21182215236075,
+          "numerator": 8168635904
+        },
+        "W": 1000012,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 975421440,
+          "numerator": 250003
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 49029120,
+          "numerator": 250003
+        }
+      },
+      "growing_power": 6,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 1000013,
+        "H": 1,
+        "L": {
+          "denominator": 25736391511831125,
+          "numerator": 25735917730948693
+        },
+        "U": {
+          "denominator": 21182215236075,
+          "numerator": 21190383871979
+        },
+        "W": 1000013,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 557383680,
+          "numerator": 142859
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 28016640,
+          "numerator": 142859
+        }
+      },
+      "growing_power": 6,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 1000014,
+        "H": 2,
+        "L": {
+          "denominator": 25736391511831125,
+          "numerator": 51472309242779818
+        },
+        "U": {
+          "denominator": 21182215236075,
+          "numerator": 42372599108054
+        },
+        "W": 1000014,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 650280960,
+          "numerator": 166669
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 32686080,
+          "numerator": 166669
+        }
+      },
+      "growing_power": 6,
+      "hit_count": 2
+    },
+    {
+      "bracket": {
+        "B": 10000012,
+        "H": 0,
+        "L": {
+          "denominator": 5147278302366225,
+          "numerator": -947561764864
+        },
+        "U": {
+          "denominator": 4236443047215,
+          "numerator": 16337271808
+        },
+        "W": 10000012,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 975421440,
+          "numerator": 2500003
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 49029120,
+          "numerator": 2500003
+        }
+      },
+      "growing_power": 7,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 10000013,
+        "H": 1,
+        "L": {
+          "denominator": 5147278302366225,
+          "numerator": 5146330740601361
+        },
+        "U": {
+          "denominator": 4236443047215,
+          "numerator": 4252780319023
+        },
+        "W": 10000013,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 3901685760,
+          "numerator": 10000013
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 196116480,
+          "numerator": 10000013
+        }
+      },
+      "growing_power": 7,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 10000014,
+        "H": 2,
+        "L": {
+          "denominator": 5147278302366225,
+          "numerator": 10293609042967586
+        },
+        "U": {
+          "denominator": 4236443047215,
+          "numerator": 8489223366238
+        },
+        "W": 10000014,
+        "absolute_moment_tolerance": {
+          "denominator": 160,
+          "numerator": 1
+        },
+        "largest_moment_degree": 10,
+        "lower_error": {
+          "denominator": 650280960,
+          "numerator": 1666669
+        },
+        "m": 8,
+        "upper_error": {
+          "denominator": 32686080,
+          "numerator": 1666669
+        }
+      },
+      "growing_power": 7,
+      "hit_count": 2
+    },
+    {
+      "bracket": {
+        "B": 100000012,
+        "H": 0,
+        "L": {
+          "denominator": 31269715686874816875,
+          "numerator": -91655065255936
+        },
+        "U": {
+          "denominator": 231627523606480125,
+          "numerator": 18003673532416
+        },
+        "W": 100000012,
+        "absolute_moment_tolerance": {
+          "denominator": 192,
+          "numerator": 1
+        },
+        "largest_moment_degree": 12,
+        "lower_error": {
+          "denominator": 72990720000,
+          "numerator": 3571429
+        },
+        "m": 10,
+        "upper_error": {
+          "denominator": 3052339200,
+          "numerator": 3571429
+        }
+      },
+      "growing_power": 8,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 100000013,
+        "H": 1,
+        "L": {
+          "denominator": 31269715686874816875,
+          "numerator": 31269624031809560939
+        },
+        "U": {
+          "denominator": 231627523606480125,
+          "numerator": 231645527280012541
+        },
+        "W": 100000013,
+        "absolute_moment_tolerance": {
+          "denominator": 192,
+          "numerator": 1
+        },
+        "largest_moment_degree": 12,
+        "lower_error": {
+          "denominator": 2043740160000,
+          "numerator": 100000013
+        },
+        "m": 10,
+        "upper_error": {
+          "denominator": 85465497600,
+          "numerator": 100000013
+        }
+      },
+      "growing_power": 8,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 100000014,
+        "H": 2,
+        "L": {
+          "denominator": 31269715686874816875,
+          "numerator": 62539339718684377814
+        },
+        "U": {
+          "denominator": 231627523606480125,
+          "numerator": 463273050886492666
+        },
+        "W": 100000014,
+        "absolute_moment_tolerance": {
+          "denominator": 192,
+          "numerator": 1
+        },
+        "largest_moment_degree": 12,
+        "lower_error": {
+          "denominator": 340623360000,
+          "numerator": 16666669
+        },
+        "m": 10,
+        "upper_error": {
+          "denominator": 14244249600,
+          "numerator": 16666669
+        }
+      },
+      "growing_power": 8,
+      "hit_count": 2
+    },
+    {
+      "bracket": {
+        "B": 1000000012,
+        "H": 0,
+        "L": {
+          "denominator": 6253943137374963375,
+          "numerator": -183310130511872
+        },
+        "U": {
+          "denominator": 46325504721296025,
+          "numerator": 36007347064832
+        },
+        "W": 1000000012,
+        "absolute_moment_tolerance": {
+          "denominator": 192,
+          "numerator": 1
+        },
+        "largest_moment_degree": 12,
+        "lower_error": {
+          "denominator": 46448640000,
+          "numerator": 22727273
+        },
+        "m": 10,
+        "upper_error": {
+          "denominator": 21366374400,
+          "numerator": 250000003
+        }
+      },
+      "growing_power": 9,
+      "hit_count": 0
+    },
+    {
+      "bracket": {
+        "B": 1000000013,
+        "H": 1,
+        "L": {
+          "denominator": 6253943137374963375,
+          "numerator": 6253759827244451503
+        },
+        "U": {
+          "denominator": 46325504721296025,
+          "numerator": 46361512068360857
+        },
+        "W": 1000000013,
+        "absolute_moment_tolerance": {
+          "denominator": 192,
+          "numerator": 1
+        },
+        "largest_moment_degree": 12,
+        "lower_error": {
+          "denominator": 2043740160000,
+          "numerator": 1000000013
+        },
+        "m": 10,
+        "upper_error": {
+          "denominator": 85465497600,
+          "numerator": 1000000013
+        }
+      },
+      "growing_power": 9,
+      "hit_count": 1
+    },
+    {
+      "bracket": {
+        "B": 1000000014,
+        "H": 2,
+        "L": {
+          "denominator": 6253943137374963375,
+          "numerator": 12507702964619414878
+        },
+        "U": {
+          "denominator": 46325504721296025,
+          "numerator": 92687016789656882
+        },
+        "W": 1000000014,
+        "absolute_moment_tolerance": {
+          "denominator": 192,
+          "numerator": 1
+        },
+        "largest_moment_degree": 12,
+        "lower_error": {
+          "denominator": 340623360000,
+          "numerator": 166666669
+        },
+        "m": 10,
+        "upper_error": {
+          "denominator": 14244249600,
+          "numerator": 166666669
+        }
+      },
+      "growing_power": 9,
+      "hit_count": 2
+    }
+  ]
+}
