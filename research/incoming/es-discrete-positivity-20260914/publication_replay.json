@@ -1,6 +1,6 @@
 {
   "schema": "es-publication-replay-v1",
-  "recorded_at": "2026-09-16T22:55:00+02:00",
+  "recorded_at": "2026-09-16T22:45:46+02:00",
   "source_archive": {
     "filename": "es_discrete_positivity_bundle.zip",
     "sha256": "a8ae1e616e9b7df95c996a24536c077c7f355153023d83b320dd9da4089aa9cc",
