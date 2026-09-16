@@ -1,0 +1,8 @@
+{
+  "basis_certificates": 258,
+  "checks": 18352,
+  "direct_words": 5320,
+  "imports_main": false,
+  "largest_verified_k": 4096,
+  "scope": "Verifies certificates, not imported Chim theorem; no giant threshold modulus expanded"
+}

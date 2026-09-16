@@ -1,0 +1,264 @@
+{
+  "commands": [
+    {
+      "command": [
+        "python",
+        "verify.py",
+        "--out",
+        "certificates"
+      ],
+      "cwd": "/mnt/data/es_padic_capacity_20260916",
+      "returncode": 0,
+      "seconds": 4.522361098000147,
+      "stderr": "",
+      "stdout": "{\"basis_certificates\": 258, \"checks\": 58319, \"exhaustive_targets\": 2046, \"largest_computed_k\": 4096, \"negative_controls\": 7}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify.py",
+        "--out",
+        "/mnt/data/_es_padic_work/optimized"
+      ],
+      "cwd": "/mnt/data/es_padic_capacity_20260916",
+      "returncode": 0,
+      "seconds": 5.618305647999932,
+      "stderr": "",
+      "stdout": "{\"basis_certificates\": 258, \"checks\": 58319, \"exhaustive_targets\": 2046, \"largest_computed_k\": 4096, \"negative_controls\": 7}\n"
+    },
+    {
+      "command": [
+        "python",
+        "check_independent.py",
+        "--input",
+        "certificates",
+        "--out",
+        "certificates/independent.json"
+      ],
+      "cwd": "/mnt/data/es_padic_capacity_20260916",
+      "returncode": 0,
+      "seconds": 1.3474783599999682,
+      "stderr": "",
+      "stdout": "{\"basis_certificates\": 258, \"checks\": 18352, \"direct_words\": 5320, \"imports_main\": false, \"largest_verified_k\": 4096, \"scope\": \"Verifies certificates, not imported Chim theorem; no giant threshold modulus expanded\"}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "check_independent.py",
+        "--input",
+        "/mnt/data/_es_padic_work/optimized",
+        "--out",
+        "/mnt/data/_es_padic_work/optimized/independent.json"
+      ],
+      "cwd": "/mnt/data/es_padic_capacity_20260916",
+      "returncode": 0,
+      "seconds": 1.4042925440003273,
+      "stderr": "",
+      "stdout": "{\"basis_certificates\": 258, \"checks\": 18352, \"direct_words\": 5320, \"imports_main\": false, \"largest_verified_k\": 4096, \"scope\": \"Verifies certificates, not imported Chim theorem; no giant threshold modulus expanded\"}\n"
+    },
+    {
+      "command": [
+        "python",
+        "verify.py",
+        "--out",
+        "generated"
+      ],
+      "cwd": "/mnt/data/_es_padic_work/fresh",
+      "returncode": 0,
+      "seconds": 3.167040513000302,
+      "stderr": "",
+      "stdout": "{\"basis_certificates\": 258, \"checks\": 58319, \"exhaustive_targets\": 2046, \"largest_computed_k\": 4096, \"negative_controls\": 7}\n"
+    },
+    {
+      "command": [
+        "python",
+        "check_independent.py",
+        "--input",
+        "generated",
+        "--out",
+        "generated/independent.json"
+      ],
+      "cwd": "/mnt/data/_es_padic_work/fresh",
+      "returncode": 0,
+      "seconds": 1.3142724989997987,
+      "stderr": "",
+      "stdout": "{\"basis_certificates\": 258, \"checks\": 18352, \"direct_words\": 5320, \"imports_main\": false, \"largest_verified_k\": 4096, \"scope\": \"Verifies certificates, not imported Chim theorem; no giant threshold modulus expanded\"}\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "workbench.tex"
+      ],
+      "cwd": "/mnt/data/_es_padic_work/fresh",
+      "returncode": 0,
+      "seconds": 0.9755810609999571,
+      "stderr": "",
+      "stdout_tail": "/public/lm/lmr12.pfb></usr/share/texmf/fonts/ty\npe1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/\nshare/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public\n/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/tex\nmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lms\ny7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/t\nexmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>\nOutput written on workbench.pdf (5 pages, 382000 bytes).\nTranscript written on workbench.log.\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "workbench.tex"
+      ],
+      "cwd": "/mnt/data/_es_padic_work/fresh",
+      "returncode": 0,
+      "seconds": 0.8206436079999548,
+      "stderr": "",
+      "stdout_tail": "/public/lm/lmr12.pfb></usr/share/texmf/fonts/ty\npe1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/\nshare/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public\n/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/tex\nmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lms\ny7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/t\nexmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>\nOutput written on workbench.pdf (5 pages, 382269 bytes).\nTranscript written on workbench.log.\n"
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-layout",
+        "workbench.pdf",
+        "workbench.txt"
+      ],
+      "cwd": "/mnt/data/es_padic_capacity_20260916",
+      "returncode": 0,
+      "seconds": 0.058367273999920144,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-layout",
+        "workbench.pdf",
+        "workbench.txt"
+      ],
+      "cwd": "/mnt/data/_es_padic_work/fresh",
+      "returncode": 0,
+      "seconds": 0.06043338700010281,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "preprint.tex"
+      ],
+      "cwd": "/mnt/data/_es_padic_work/fresh",
+      "returncode": 0,
+      "seconds": 0.7718627680001191,
+      "stderr": "",
+      "stdout_tail": "ype1/public/lm/lmr5.pfb></usr/\nshare/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public\n/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf\n/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8\n.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts\n/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></\nusr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>\nOutput written on preprint.pdf (3 pages, 404085 bytes).\nTranscript written on preprint.log.\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "preprint.tex"
+      ],
+      "cwd": "/mnt/data/_es_padic_work/fresh",
+      "returncode": 0,
+      "seconds": 0.653574947999914,
+      "stderr": "",
+      "stdout_tail": "pe1/publi\nc/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texm\nf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.p\nfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/t\nype1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></u\nsr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/pu\nblic/lm/lmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy\nmbols/msbm10.pfb>\nOutput written on preprint.pdf (3 pages, 404165 bytes).\nTranscript written on preprint.log.\n"
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-layout",
+        "preprint.pdf",
+        "preprint.txt"
+      ],
+      "cwd": "/mnt/data/es_padic_capacity_20260916",
+      "returncode": 0,
+      "seconds": 0.04233350000004066,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-layout",
+        "preprint.pdf",
+        "preprint.txt"
+      ],
+      "cwd": "/mnt/data/_es_padic_work/fresh",
+      "returncode": 0,
+      "seconds": 0.05230150599982153,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "date": "2026-09-16",
+  "finite_result": {
+    "basis_certificates": 258,
+    "checks": 58319,
+    "exhaustive_targets": 2046,
+    "largest_computed_k": 4096,
+    "negative_controls": 7
+  },
+  "fresh_pdf_extracted_texts_identical": true,
+  "fresh_source_math_json_byte_identical": true,
+  "imported_theorem": "Chim 2025 Theorem2.1 and Table1 variants; not proved by finite checks",
+  "independent_result": {
+    "basis_certificates": 258,
+    "checks": 18352,
+    "direct_words": 5320,
+    "imports_main": false,
+    "largest_verified_k": 4096,
+    "scope": "Verifies certificates, not imported Chim theorem; no giant threshold modulus expanded"
+  },
+  "mathematical_json": [
+    {
+      "name": "bases.json",
+      "sha256": "c1ff9eb759282962fc75ee454c562ba7d98fc7f42c3ad5b450b6224091a43eeb"
+    },
+    {
+      "name": "checks.json",
+      "sha256": "4d1dfb4f791492880dfa239a4755f118bee136fada8190c78bb76716d18835cb"
+    },
+    {
+      "name": "constants.json",
+      "sha256": "b312d6281e118b8504d2dca4cf4726933c10e60e65e6b00ab79c4fb1132fe084"
+    },
+    {
+      "name": "examples.json",
+      "sha256": "f2fed763f38f6c9b4a91a558504de441d4e9eda870af0f460ca37084a619597e"
+    },
+    {
+      "name": "independent.json",
+      "sha256": "9a73a0a1dd65475f331aacc2cd237a6f695de96a27db621e86f41a8701131f0c"
+    },
+    {
+      "name": "negative_controls.json",
+      "sha256": "539c424339dcee675ea114d684fffc4d964d5b942f8dc16b7a32ed8d7f907d7b"
+    },
+    {
+      "name": "structural.json",
+      "sha256": "43390e3a6d1c9a01de04276d3595cd8723d3d4bb594fbe7737c713c43ae79972"
+    },
+    {
+      "name": "thresholds.json",
+      "sha256": "4f95736b4be70a2c5402e80a4ef8885da3d7e5c72858182e9ca5c202a845aad7"
+    }
+  ],
+  "normal_optimized_math_json_byte_identical": true,
+  "not_claimed": [
+    "Independent mathematical review",
+    "New Lean build",
+    "New prime coverage",
+    "Optimal constants",
+    "Universal ES"
+  ],
+  "render": {
+    "inspected": "All pages in rendered contact sheets; no overfull boxes or undefined citations after final passes.",
+    "preprint_pages": 3,
+    "workbench_pages": 5
+  },
+  "theorem_onsets_not_computed": [
+    77000000,
+    1548000000
+  ]
+}
