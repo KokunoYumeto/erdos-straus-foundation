@@ -1,0 +1,158 @@
+{
+  "schema": "polyclank.scoped-execution.v1",
+  "date": "2026-09-13",
+  "python": "3.13.5",
+  "checks": 703150,
+  "scan": {
+    "inflated_channel_observations": 111,
+    "matching_H0_rank": 1001,
+    "matching_occurrences": 1827,
+    "primes": 21,
+    "shells": 1284,
+    "splits": 3775
+  },
+  "scope": "all first-half shells at p prime, p=1 mod12, p<=500; unsplit and all single-occurrence peels",
+  "normal": "passed",
+  "optimized": "passed",
+  "four_mathematical_outputs_byte_identical": true,
+  "fresh_source_copy_normal_and_optimized": "passed; original certificate bytes recovered",
+  "fresh_preprint_and_workbench_extracted_text": "identical",
+  "negative_controls": [
+    {
+      "mutation": "wrong_addition_fibre",
+      "optimized": false,
+      "returncode": 1,
+      "last_stderr_line": "ArithmeticError: weight_fibre_formula"
+    },
+    {
+      "mutation": "wrong_addition_fibre",
+      "optimized": true,
+      "returncode": 1,
+      "last_stderr_line": "ArithmeticError: weight_fibre_formula"
+    },
+    {
+      "mutation": "wrong_quotient_Gram",
+      "optimized": false,
+      "returncode": 1,
+      "last_stderr_line": "ArithmeticError: canonical_cohomology_Gram"
+    },
+    {
+      "mutation": "wrong_quotient_Gram",
+      "optimized": true,
+      "returncode": 1,
+      "last_stderr_line": "ArithmeticError: canonical_cohomology_Gram"
+    },
+    {
+      "mutation": "lost_original_hit",
+      "optimized": false,
+      "returncode": 1,
+      "last_stderr_line": "ArithmeticError: exact_canonical_state_polynomial"
+    },
+    {
+      "mutation": "lost_original_hit",
+      "optimized": true,
+      "returncode": 1,
+      "last_stderr_line": "ArithmeticError: exact_canonical_state_polynomial"
+    }
+  ],
+  "documents": {
+    "preprint_pages": 3,
+    "workbench_pages": 7,
+    "card_pages": 1,
+    "overfull_boxes": 0,
+    "undefined_refs": 0,
+    "rendered": "all pages via pdftoppm",
+    "visual_inspection": "preprint all pages and workbench contact sheet plus card"
+  },
+  "matrix_scope": "169 complete small map-pairs with two Grams; unequal common fibres 1..6 with two Grams; four complete marked arithmetic examples. Larger scan uses proved rank formula, not dense elimination.",
+  "source_files": {
+    "README.md": {
+      "bytes": 5957,
+      "sha256": "e295382d1349ae36699fd86727adc26148238c38e6000526de8b3846bd9a7c62",
+      "git_blob_sha1": "3518efe2c985363b071efeb4a3a6b7f14dc1d58e"
+    },
+    "core.tex": {
+      "bytes": 17860,
+      "sha256": "58f6e66e3d8d02315fe93fb52ab63ad272d5c9505e34f261f4c266896af739e2",
+      "git_blob_sha1": "34f47350de73c40a4d574b71d731827445eb953b"
+    },
+    "workbench.tex": {
+      "bytes": 1374,
+      "sha256": "39feed2b9df77b9dc1748e70d9d81be18d53a4e3a2dc73e4e4de22c375953d17",
+      "git_blob_sha1": "90f94c5751f0c00d86886858a124ad2d09491149"
+    },
+    "preprint.tex": {
+      "bytes": 10255,
+      "sha256": "b5ddef1caca950b3ef6ce2e4aa004d17d7cc6523967ce52b892e1fd10c2cdb59",
+      "git_blob_sha1": "3df63280d5b763bda8635b1c94a3aebe22998e55"
+    },
+    "card.tex": {
+      "bytes": 2055,
+      "sha256": "c24f219618f0ea51b96cb2507a5319eec3b67d5dec43fb393615f0789bdbc524",
+      "git_blob_sha1": "15ea11e923383a98540aa1cc61e8fa1fd7d0ec26"
+    },
+    "references.tex": {
+      "bytes": 1941,
+      "sha256": "d8a39de8a32c74ea3f22ca6c4e5cfd9de09505c732c904cce78d3983ac906f80",
+      "git_blob_sha1": "03e86cf0ea08089835e7eebdfc75eca4e17275ae"
+    },
+    "verify.py": {
+      "bytes": 18809,
+      "sha256": "b8576e590afdd227ddbcfb1c6cf633ac6702c5289fb90de6116c7418b250cd37",
+      "git_blob_sha1": "42407bfd5244616770041e30f5f3856b9ad5db25"
+    },
+    "morphisms.json": {
+      "bytes": 6170,
+      "sha256": "6f643c9c8ba6448a20ad6817981baf10c1ce1ffcab36d051c96bb31c67274d80",
+      "git_blob_sha1": "12483a315a83dfcfb3aae676ecfe03841cf38bbb"
+    },
+    "source_reading.json": {
+      "bytes": 3444,
+      "sha256": "924a234162fd80cb407fa29c17d1faca12de4a668d126aea8eecc1033d7d3e02",
+      "git_blob_sha1": "edf39e1a7d1f375de2d80f5b5113f6f53ddc3a81"
+    },
+    "lean_plan.md": {
+      "bytes": 3028,
+      "sha256": "e67d28f4b1479d7a66127df5f34a4c4902703cb412c3f72fd7649d9e03c19a02",
+      "git_blob_sha1": "aff02b35aebe41214a4c7c3ca9b564f82f0c7c94"
+    }
+  },
+  "outputs": {
+    "checks.json": {
+      "bytes": 1592,
+      "sha256": "591122974dd20ca7e576860ce79781bb1894827644c83a5c374b7c335b7cf016",
+      "git_blob_sha1": "02d93443b3147e9cf596c1548c631a5691b59539"
+    },
+    "examples.json": {
+      "bytes": 207644,
+      "sha256": "084fa8408ad3361d5d6c8e6c7c8f95e572548531fcd931ee0a75a80239de971b",
+      "git_blob_sha1": "4be92b304a1c1aa2448a025aee0c0b8d6ade71ba"
+    },
+    "negative_controls.json": {
+      "bytes": 974,
+      "sha256": "02633be81f39b83d6ad1a901231dd6c4d4ff4edfa71dec6a397d5d022f1f1f1e",
+      "git_blob_sha1": "c1ecbafd0c2a1e009dbed9d1ba23285a0d7fa42f"
+    },
+    "scan.json": {
+      "bytes": 4909,
+      "sha256": "173f1862c0ee09eaaf53c834fceb2a351dba979f095f39453cb472adb035ac74",
+      "git_blob_sha1": "ee3bbeaf8c570ddf930e516aa5b8a3b51f5da382"
+    },
+    "structural.json": {
+      "bytes": 2262,
+      "sha256": "d52ebdb36c4ec67eabe65b11f87593e868cf69b052970a8aa0d737f8edef43fb",
+      "git_blob_sha1": "3694ba67fb3c3f31f8e07d608648750da5515691"
+    }
+  },
+  "development_correction": "Initial dense-rank 500-bound scan hit its 200-second wall limit. Replaced repeated dense tests in scan by proved fibre formulas while retaining dense tests in generic fixtures and explicit examples; completed runs are those above.",
+  "nonclaims": [
+    "universal ES or RH proof",
+    "new prime coverage",
+    "Zeta theta norm equals finite counting norm",
+    "unbounded analytic estimates",
+    "Lean build",
+    "independent reviewer",
+    "historical priority",
+    "new remote publication"
+  ]
+}

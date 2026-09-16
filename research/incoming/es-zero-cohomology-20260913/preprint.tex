@@ -1,0 +1,192 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=23mm]{geometry}
+\usepackage{lmodern,mathrsfs,amsmath,amssymb,amsthm,mathtools,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\title{Supported cohomology and counting-preserving\texorpdfstring{\\}{} inverses for ES divisor boxes}
+\author{The Clankers}
+\date{13 September 2026 --- research draft}
+\begin{document}
+\maketitle
+\begin{abstract}
+A finite three-term cochain identifies common residues without counting
+internal cancellation as an arithmetic witness. Its original counting
+norm has an explicit least-norm quotient. A different, fully marked
+quotient recovers original divisor states from overlapping split boxes,
+with inverse-fibre weights and actual relation primitives. These two
+quotients need not have the same dimension. Iterated inverses agree when
+the inherited metric is retained, and need not agree when it is reset.
+The construction is a finite arithmetic instance of the existing SplitZero
+quotient programme, not a new general cohomology or determinant theorem.
+\end{abstract}
+
+Let $p\equiv1\pmod4$ be prime, $p/4<a<p/2$, $R=4a-p$, and
+$a=\prod q_i^{e_i}$. For a budget $b\ge0$ define
+$B_b=\prod[-b_i,b_i]_{\mathbb Z}$ and
+$v(\beta)=\prod q_i^{\beta_i}\pmod R$.
+A channel label $c$ is M or E, with $t_M=-1$, $t_E=-p^{-1}$.
+The divisor map $\beta\mapsto u=\prod q_i^{e_i+\beta_i}$ is a bijection
+$B_e\to\operatorname{Div}(a^2)$. The two gates are $R\mid u+a$ and
+$R\mid4u+1$. These are the inherited ES coordinates [4,5].
+
+Choose $e=f+b$. Retain the two maps, separately at each channel,
+\[
+ X=B_f\xrightarrow{\ell}G,\quad Y=B_b\xrightarrow{r_c}G,
+ \qquad\ell(\xi)=v(\xi),\quad r_c(\eta)=t_cv(\eta)^{-1},
+ \quad G=(\mathbb Z/R\mathbb Z)^\times.                       \tag{1}
+\]
+For any finite maps $X\to Z\leftarrow Y$, let $B_X,B_Y$ be the free
+star-difference modules in each nonempty fibre: choose reference $x_z$,
+then use $e_x-e_{x_z}$ for every other $x$. Define
+\[
+ B_X\oplus B_Y\lhook\joinrel\longrightarrow k^X\oplus k^Y
+ \xrightarrow{d}k^Z,
+ \qquad d(A,B)_z=\sum_{X_z}A_x-\sum_{Y_z}B_y               \tag{2}
+\]
+in degrees $-1,0,1$ over any commutative ring $k$.
+
+\begin{theorem}[Cohomology and original counting norm]
+Put $I=\ell(X)\cap r(Y)$. The incoming map in (2) is injective,
+$H^0(2)\simeq k^I$, and $H^1(2)\simeq k^{Z\setminus(\ell(X)\cup r(Y))}$.
+The degree-zero map sends a cycle to its common fibre sums $c_z$; its
+integral inverse is $c_z(e_{x_z},e_{y_z})$.
+For the original counting Gram over $\mathbb R$ or $\mathbb C$, its
+canonical representative assigns $c_z/m_z$ to each of the $m_z=|X_z|$
+left occurrences and $c_z/n_z$ to each of the $n_z=|Y_z|$ right occurrences.
+Its quotient squared norm is
+\[
+ \boxed{\sum_{z\in I}(m_z^{-1}+n_z^{-1})|c_z|^2.}             \tag{3}
+\]
+The source, relation and quotient determinants on that fibre are
+$m_z+n_z$, $m_zn_z$, and $(m_z+n_z)/(m_zn_z)$.
+\end{theorem}
+\begin{proof}
+A vector with zero fibre sum is uniquely
+$\sum_{x\ne x_z}A_x(e_x-e_{x_z})$. In a cycle, only a common nonempty
+fibre permits a nonzero sum. Subtracting the displayed reference lift
+therefore gives exactly the incoming image and its explicit primitive.
+The image of $d$ is the free coordinate module on the union of the two
+images, proving $H^1$. The stated canonical representative has the same
+sums and is orthogonal to every star difference; subtracting it proves
+least norm and the Pythagorean identity. The determinant of a star Gram
+is its fibre size. Applying the Schur identity to the cycle basis
+(reference, star differences) gives the displayed determinants.
+\end{proof}
+
+The existing SplitZero reconstruction [1,2] retains a support mask and
+distinguishes external absence $\tau$ from $(\lambda,0)$ in a present
+fibre. Apply it to (2) at the masks of its two legs. Incoming relations
+map to their \emph{supported} zero classes, not to absence. The source
+quotient metric is the same actual-Gram construction as [3,\S1]. There is
+no assertion that the finite counting norm equals the analytic theta
+source norm.
+
+A residue coarsening $\pi:Z\to Z'$ induces on $H^0$ the map
+$c\mapsto(\sum_{\pi(z)=w}c_z)_w$. Its kernel has star-difference bases
+inside fibres of $I\to\pi(I)$; its cokernel is freely indexed by
+$(\pi\ell(X)\cap\pi r(Y))\setminus\pi(I)$. Every killed class has the
+explicit coarser star primitive above. Thus local cohomology classes do
+not assert one simultaneous original exponent choice.
+
+\begin{theorem}[Original arithmetic masses and inverse fibres]
+Let $\mathscr P_c=\{(\xi,\eta):\ell(\xi)=r_c(\eta)\}$ and
+$\mathscr W_c=\{\beta\in B_e:v(\beta)=t_c\}$.
+Addition $q:\mathscr P_c\to\mathscr W_c$ is onto, and its complete fibre is
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),
+ \qquad\eta=\beta-\xi.                                   \tag{4}
+\]
+Let $N(\beta)$ be the product of these interval lengths.
+For every original rational weight $w_\beta$,
+\[
+ \boxed{\sum_{\beta\in\mathscr W_c}w_\beta U^{e+\beta}
+ =\sum_{(\xi,\eta)\in\mathscr P_c}
+       \frac{w_{\xi+\eta}}{N(\xi+\eta)}U^{e+\xi+\eta}.}     \tag{5}
+\]
+The linear fibre-sum map $Q:k^{\mathscr P_c}\to k^{\mathscr W_c}$ has
+exact star relations and an integral reference section. Over $\mathbb Q$
+its counting-norm canonical section is $J(c)_x=c_{q(x)}/N(q(x))$.
+The full inverse retains $QA$ and every nonreference coefficient of
+$A-JQA$. Its quotient norm is $\sum|c_\beta|^2/N(\beta)$.
+\end{theorem}
+\begin{proof}
+Each interval in (4) is nonempty since $|\beta_i|\le f_i+b_i$; its
+bounds are exactly the two summand bounds. The residue product proves
+surjectivity and (5). For the linear assertion, on each fibre sum-zero
+vectors are exactly its star relations, and equal coefficients minimize
+the counting norm. The relation primitive is the list of nonreference
+coefficients. All inverse compositions follow by substitution.
+\end{proof}
+
+The original uniform norm on $k^{\mathscr W_c}$ is \emph{not} this native
+quotient norm. Transporting it requires diagonal cost $N(\beta)$ on each
+refined occurrence. This choice is forced among fibre-permutation-invariant
+diagonal metrics: cost $h$ gives quotient cost $h/N(\beta)$.
+Every change of metric is consequently explicit.
+
+For finite surjections $P\to W\to Z$, put $m_w=|P_w|$ and
+$n_z=\sum_{w\mapsto z}m_w$. With the inherited metric $1/m_w$, the second
+canonical inverse gives $m_wc_z/n_z$ at $w$, and the first gives $c_z/n_z$
+at every original occurrence. This is exactly the direct inverse. Resetting
+the intermediate metric changes it. For three copies of $[-1,1]$, total
+exponent zero has seven lifts. Direct coefficients are all $1/7$, squared norm
+$1/7$; resetting yields four $1/6$ and three $1/9$, squared norm $4/27$. The
+nonzero boundary discarded by resetting has squared norm
+\[
+ \boxed{4/27-1/7=1/189.}                                  \tag{6}
+\]
+
+\paragraph{The same object keeps failures and successful denominators.}
+For any pair put $x=v(\xi)$, $w=v(\eta)$, $\rho=x-t_cw^{-1}$ and
+$\beta=\xi+\eta$. The original gates obey
+\[
+ g_M=u+a\equiv aw\rho,\quad g_E=4u+1\equiv pw\rho\pmod R.
+\]
+Both factors are units, so $D=R/\gcd(R,g_c)=R/\gcd(R,\rho)$.
+Formula (5) extends to \emph{all} pairs by adding $Z^{D-1}$ to each
+monomial and using $\mathscr W_c=B_e$. All original prime-power defects
+are retained. Multiplication by the same unit gives the explicit affine
+coefficient-system conjugacy of [4], with inverse multiplication by its
+modular inverse.
+
+For a matched pair, set $d_0=\gcd(a,u)$,
+$(h,r,s)=(d_0^2/u,u/d_0,a/d_0)$. On M let
+$\lambda=(r+s)/R$ and take $(a,phs\lambda,phr\lambda)$.
+On E let $\kappa=(pr+s)/R$ and take $(a,hs\kappa,phr\kappa)$.
+The gate makes the quotient a positive integer; clearing reciprocals
+proves $4/p$. The ordered inverse is $u=pa^2/(RY-pa)$ on M and
+$u=a^2/(RY-pa)$ on E. Divisor valuations recover $\beta$, and (4)
+recovers every split lift. The cohomology rank counts residues, not pairs
+or original divisor states; those two projections of $\mathscr P_c$
+remain separate.
+
+\paragraph{Exact examples and nonclaims.}
+At $p=2521,a=636,R=23$, split $(2,1,1)=(1,1,1)+(1,0,0)$.
+There are five matched pairs, four channel/residue classes, and three
+original divisor states. Four pairs have $N=2$, one has $N=1$, so the
+original mass is $4/2+1=3$. The harmonic Gram is
+$\operatorname{diag}(2,2,3/2,2)$, determinant $12$.
+At the empty shell $p=241,a=64,R=15$, split $6=3+3$.
+The full two-channel complex has dimensions $(12,28,16)$ and is exact.
+The raw two-leg kernel has dimension twelve, all relations, while the
+all-ones source norm remains $28$. A supported zero cohomology fibre is
+not an absent source. Neither example is new prime coverage.
+
+The general proofs above are self-contained finite algebra. The delivered
+standard-library checker verifies actual differentials, Gram determinants,
+coarsening primitives, the full marked examples, all small map pairs,
+all small overlapping splits and a bounded arithmetic scan. It does not
+prove universal ES or a zeta spectral identification. No historical
+priority or Lean certification is claimed.
+
+\begingroup\footnotesize
+\begin{thebibliography}{5}
+\bibitem{a} The Clankers (2026). \emph{SplitZero: reconstruction, internal homology, and balanced finite jets}, \S\S1--6. Zeta workbench, \texttt{formal/splitzero/DERIVED\_MATHEMATICS.md}, revision \texttt{7ea0a49945390eae14d3160a5730858899768b5f}.
+\bibitem{b} The Clankers (2026). \emph{Arithmetic cohomology over the tau-base}, \S\S1--4. Same repository/revision, \texttt{workbenches/tau-base-cohomology/TAU\_BASE\_MODEL.md}.
+\bibitem{c} The Clankers (2026). \emph{Canonical quotient volumes, trace control and an endpoint-budget criterion}, \S\S1,5. Same repository/revision, \texttt{workbenches/tau-toda-volume-formal/RESEARCH\_NOTE.md}.
+\bibitem{d} The Clankers (2026). \emph{Split divisor boxes and exact Erd\H{o}s--Straus forcing}. ES workbench draft PR 5, revision \texttt{4f17e4aa63113a063eb027c8931cee5d5cce3981}.
+\bibitem{e} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc., 94}(1), 50--105. \S2, Propositions 2.2 and 2.6.
+\end{thebibliography}
+\endgroup
+\end{document}
