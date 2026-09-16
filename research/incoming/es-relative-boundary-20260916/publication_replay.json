@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-16",
+  "repository": "KokunoYumeto/erdos-straus-foundation",
+  "branch": "research/es-relative-boundary-20260916",
+  "base_commit": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "recovered_source_commit": "119dfa6",
+  "replay": {
+    "normal": {
+      "new_checks": 203654,
+      "antecedent_check_invocations": 876325,
+      "negative_controls": 7
+    },
+    "optimized": {
+      "new_checks": 203654,
+      "antecedent_check_invocations": 876325,
+      "negative_controls": 7
+    },
+    "separate_checker": {
+      "checks": 167547,
+      "imports_main_or_antecedent": false
+    },
+    "certificate_objects_semantically_equal": [
+      "checks.json",
+      "examples.json",
+      "fair_baseline.json",
+      "independent.json",
+      "negative_controls.json",
+      "scan.json",
+      "structural.json"
+    ]
+  },
+  "finite_scope": {
+    "bound": 2000000,
+    "hard_primes": 4519,
+    "branches": 37289,
+    "states": 4583,
+    "actual_branches": 3097,
+    "actual_primes": 2411,
+    "relative_class_branches": 1723,
+    "relative_class_primes": 1595,
+    "added_against_declared_previous_union": {
+      "branches": 2,
+      "primes": 1
+    },
+    "added_against_three_occurrence_plus_previous_tests": {
+      "branches": 0,
+      "primes": 0
+    }
+  },
+  "source_snapshot": {
+    "integration_patch_sha256": "d366664c3979a640d30967a66944a6e2392a7077fcc41da0563ac78396d5d297",
+    "recovered_readme_sha256": "e3d8582713a12f9fa2e2a290b862fba64ea635d007f8fec055566a8c7f7d0117",
+    "recovered_pr_body_sha256": "e4a4edc90db911b7d5fb39cdc52af7a1d787133e57d8457735db9ac8c6588ce9"
+  },
+  "publication_changes": [
+    "Corrected spacing in replay prose",
+    "Replaced stale pre-publication status in README and PR_BODY",
+    "Added this publication replay without changing a mathematical source, verifier, or certificate"
+  ],
+  "nonclaims": [
+    "No proof of the Erdos-Straus conjecture",
+    "No new Lean build",
+    "No independent mathematical review",
+    "No historical-priority claim"
+  ]
+}

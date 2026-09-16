@@ -65,7 +65,7 @@ python -O verify.py --bound 2000000 --out regenerated_optimized
 python check_independent.py --input regenerated --out regenerated/independent.json
 ```
 
-The main script imports the exact predecessor module for the existing arithmetic normalization and baseline definitions. Its checks are counted separately: 203654 new checks and876325 invocations of antecedent checks. The separate implementation imports neither and performs167547 checks. Seven deliberately false transformations are rejected. Both scripts test the actual complete rows, not merely the aggregate totals. A separately implemented checker is not independent mathematical review.
+The main script imports the exact predecessor module for the existing arithmetic normalization and baseline definitions. Its checks are counted separately: 203654 new checks and 876325 invocations of antecedent checks. The separate implementation imports neither and performs 167547 checks. Seven deliberately false transformations are rejected. Both scripts test the actual complete rows, not merely the aggregate totals. A separately implemented checker is not independent mathematical review.
 
 Build documents with two `pdflatex -halt-on-error` passes each for `workbench.tex`, `preprint.tex`, and `card.tex`; render with `pdftoppm` or the supplied environment's PDF renderer.
 
@@ -79,4 +79,4 @@ The remaining pointwise problem is to force a qualifying original lower fibre an
 
 ## Publication status
 
-GitHub source reads succeeded. The current interface exposed no creation action. This package includes an additive patch for `research/incoming/es-relative-boundary-20260916/`; it has **not** been pushed. Existing PR10 and all other branches remain unchanged.
+The recovered package was first committed byte-for-byte as commit `119dfa6`; this publication revision changes only status prose and adds a replay receipt. It is published additively on branch `research/es-relative-boundary-20260916` under `research/incoming/es-relative-boundary-20260916/`. It does not modify `main`, PR10, or another research branch.

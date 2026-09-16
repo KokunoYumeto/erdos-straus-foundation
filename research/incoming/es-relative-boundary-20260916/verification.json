@@ -53,7 +53,7 @@
     "No new Lean build",
     "No independent mathematical review",
     "No historical-priority determination",
-    "No remote repository modification"
+    "No direct modification of main or another research branch"
   ],
   "normal_and_optimized": {
     "byte_identical": true,
@@ -151,8 +151,8 @@
     "ATTEMPTS.md": "f359e8de0f94c815d4a11e5b7008b932755443947ddcaa4611ddb3faa21393ef",
     "LICENSE.md": "267d2bfbdd9f59eebcff1ff1560930730bd8e2243a65221af0ba83d53a4ceba9",
     "MORPHISMS.md": "aa127d21c10c21d6b7a2e5144f8f93e8086a6ab6b0053e7acca93231c31ef4e0",
-    "PR_BODY.md": "e4a4edc90db911b7d5fb39cdc52af7a1d787133e57d8457735db9ac8c6588ce9",
-    "README.md": "e3d8582713a12f9fa2e2a290b862fba64ea635d007f8fec055566a8c7f7d0117",
+    "PR_BODY.md": "d4371451df65a6f542d6702325a0a2eb7afac71631babba07cfe31db59ac212a",
+    "README.md": "f1ed2845dbce0b07031dea970e88d3ffcd21680cfab2db19401c58c9d3d4ce8e",
     "SOFTWARE_LICENSE.txt": "a3968825a422da5adb043e84e280432abe8c1fca7cf329021ff18a662036512a",
     "antecedent/README.md": "0bbb5bfd5feccd469af457301311bf79bf698a110d0501ad0ebc1390958776b7",
     "antecedent/factor_exchange.py": "7b19ae5af165a5868ed3041cab9a35cf03701d783c8754876e2c2a4e5c5fef3f",
@@ -164,6 +164,7 @@
     "lean_plan.md": "f8e4b82181f0654f88b27e71ef4d3aea6f6ad692c761454c62672cc0c1e15960",
     "morphisms.json": "4c1eb06f5612eed451202eaf562588406f6a0cd63399edf76dcc43f9f09c1805",
     "preprint.tex": "91b8a4620677d7a2872372711ab4990bbd9040b9d1243e8f32535024b45de3e3",
+    "publication_replay.json": "1273f76e03d988b97b13444a29b187d8792d31563113acd247b03c838c1a917b",
     "references.tex": "707c781ea19d08c1e105f980ca4fbcc7ebc0250005799a3f992d2a5e83a3b946",
     "source_reading.json": "9fa4e80c677c35c245cc9a5288a02a1c2ce951bee93c1e674c861bc0cdad4d81",
     "verify.py": "346292be42a35a98834351219326dcde77da8dafb760304029d06e324017a36c",
