@@ -1,0 +1,73 @@
+{
+  "antecedents": [
+    {
+      "local": "antecedents/es_relative_boundary_bundle.zip",
+      "sha256": "295dc1f9ef0bf523a6a7b3b776ef384144b6062fa85333b38cef21ff7edbfd36"
+    },
+    {
+      "local": "antecedents/relative_core.tex",
+      "sha256": "a16896e91a7b4b2be757022de3a57aa078244d9afd79bf5647b2670de2a10244"
+    },
+    {
+      "local": "antecedents/two_block_core.tex",
+      "sha256": "45614310869e642e3ad4eb9fb3f4706fe0e345fc11837c224505588fd4152fd8"
+    }
+  ],
+  "byline": "The Clankers",
+  "chosen_frontier": "Supply the explicit 2-adic bound left at equations (19)-(20) of the two-block core, then transport it through the proper-subgroup digit fibres.",
+  "date": "2026-09-16",
+  "github": {
+    "ES_main": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+    "create_discovery": "No actions returned",
+    "publication_status": "Local additive patch only",
+    "push_discovery": "No actions returned",
+    "read_succeeded": true,
+    "remote_mutation": false
+  },
+  "literature": [
+    {
+      "author": "Chim, K. C.",
+      "dependency_status": "Imported human primary theorem. Exact application parameters and rational roundings proved and checked here.",
+      "doi": "10.1016/j.jnt.2024.07.012",
+      "journal": "Journal of Number Theory",
+      "pages": "295-349",
+      "read_scope": "Section 2 definitions and Theorem 2.1; Section 10 full p=2 table and variants formula. PDF images at journal pages 298,299,346,347,348 inspected. Not a line-by-line reproof of the entire article.",
+      "title": "Lower bounds for linear forms in two p-adic logarithms",
+      "url": "https://tugraz.elsevierpure.com/ws/portalfiles/portal/92346766/1-s2.0-S0022314X24001793-main.pdf",
+      "used_rows": [[200,25,"4.93",5500],[5000,900,"4.85",3920]],
+      "volume": 266,
+      "year": 2025
+    },
+    {
+      "author": "Galbraith, S. D.",
+      "locators": ["17.1 Theorem 17.1.2 and Algorithm 23","18.2 basis rounding"],
+      "title": "Mathematics of Public Key Cryptography",
+      "urls": ["https://www.math.auckland.ac.nz/~sgal018/crypto-book/ch17.pdf","https://www.math.auckland.ac.nz/~sgal018/crypto-book/ch18.pdf"],
+      "use": "Classical algorithm. Specific determinant, shortest-vector and error estimates proved directly.",
+      "year": 2012
+    },
+    {
+      "authors": ["Elsholtz, Christian","Tao, Terence"],
+      "locators": ["Section2 (2.13)-(2.22)","Propositions2.6-2.7"],
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "use": "Inherited TypeII coordinate background. Current fixed-seed return and its inverse re-proved.",
+      "year": 2013
+    }
+  ],
+  "nonclaims": ["No universal ES theorem","No new prime coverage","No optimality of numerical constants","No modulus expanded at the large theorem onsets","No Lean build","No independent mathematical review"],
+  "novelty_search": {
+    "derived_here": ["The two explicit rational constant specializations","Their uniform ES factor-capacity power-saving corollaries","Exact effective-precision transport without inflated base heights","Executable original-word and relative-fibre certificates"],
+    "inherited": ["Two-logarithm linear-height bounds (including earlier general p-adic theory)","Lattice reduction and rounding","Earlier ES 3,11 relation lattice","Original relative quotient/kernel map"],
+    "queries": ["\"Erdos Straus\" \"Chim\"","\"Erdős–Straus\" \"Chim\"","\"3\" \"11\" \"Chim\" \"logarithms\"","\"Erdos Straus\" \"power saving\" \"lattice\""],
+    "result": "No exact earlier ES application established in the scoped search. This is not an exhaustive priority determination."
+  },
+  "workbench": {
+    "blob": "78537c3d0d928a9b534859bff9910ce498e13833",
+    "file": "workbenches/tau-mixed-boundary-formal/RESEARCH_NOTE.md",
+    "not_imported": ["Analytic Gamma/Toda norm estimate","RH conclusions","Source-wide Lean verification for this application"],
+    "observed_main": "1efd53337561d8f67cf0ac1d119acdaa222644c3",
+    "read_scope": "Fresh main read and original BR1-BR2 passage (lines18-78); current attachment supplies full relative implementation.",
+    "repository": "KokunoYumeto/zeta-function-research-reader"
+  }
+}

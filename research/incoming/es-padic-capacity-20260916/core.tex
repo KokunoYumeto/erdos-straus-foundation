@@ -1,0 +1,380 @@
+\section{The arithmetic estimate selected for continuation}
+The prior two-block tranche proved a uniform exponent budget $O(2^k/k)$ and
+isolated the nonzero $2$-adic form which would improve it
+\cite[Theorem 3, (15)--(20)]{PriorTwo}. The relative-boundary tranche then
+showed how actual high-factor blocks lift a retained lower residue
+\cite[Theorem 2, (C3)--(C7)]{PriorRelative}. Here we supply the missing
+quantitative estimate, using a primary-source two-logarithm theorem, and
+transport it through that exact relative decomposition.
+
+The result is an explicit power saving, not merely a smaller multiplicative
+constant. Its onset is enormous and it is not a practical improvement in the
+previous two-million-prime census. The exact finite basis certificates remain
+much better in that range. No universal occupancy, historical priority, or
+independent proof of the imported logarithmic theorem is asserted.
+
+\section{Original states and their complete ordered return}
+Fix
+\[
+ k\ge3,\quad u=2^{2k-5},\quad p\equiv1\pmod8,\quad p>2u,
+ \quad N=p+4u=3^e11^fM,\quad\gcd(M,33)=1.                 \tag{A1}
+\]
+The structural statements allow integer $p$; primality is separately checked
+in the prime example. Original middle states at this seed are in bijection with
+\[
+ Q\mid N,\quad Q\equiv-1\pmod{2^k},\qquad
+ R=N/Q,\quad a=(p+R)/4.                                  \tag{A2}
+\]
+Indeed $K(u)=2^{k-2}$ satisfies $u\mid a^2\iff K(u)\mid a$.
+Since $N\equiv p\pmod{2^k}$, the target gives $R\equiv-p\pmod{2^k}$
+and hence this availability. Both $Q,R$ are $3\pmod4$ and at least three.
+The inequality $N<3p$ gives $Q,R<p$. Also $4(a+u)=R+N$ gives
+$R\mid a+u$. All implications reverse. Since $u$ is a power of two,
+$\gcd(p,N)=1$ even without assuming $p$ prime.
+
+Retain
+\[
+ d_0=\gcd(a,u),\quad(h,r,s)=(d_0^2/u,u/d_0,a/d_0),\quad
+ \lambda=(r+s)/R,\quad(x,y,z)=(a,phs\lambda,phr\lambda).    \tag{A3}
+\]
+Prime valuations give $a=hrs$, $u=hr^2$, $\gcd(r,s)=1$ and integer
+$h,r,s$. All are units modulo $R$, so $R\mid a+u=hr(r+s)$ makes
+$\lambda$ integral. Clearing the reciprocal sum gives
+$p\lambda+r+s=(p+R)\lambda=4hrs\lambda$. The complete ordered inverse is
+\[
+ \boxed{u=\frac{pa^2}{Ry-pa}.}                             \tag{A4}
+\]
+These are inherited Type II coordinates \cite[\S2, (2.13)--(2.22)]{ET}.
+The factorization of $N$ is input, not the returned factorization of $a$.
+
+Put $o_k=2^{k-2}$. The order identity
+$v_2(3^{2^t}-1)=t+2$ for $t\ge1$ proves
+\[
+ H_k=\langle3\rangle=\{w:w\equiv1,3\pmod8\}
+ \subset(\mathbb Z/2^k\mathbb Z)^\times,\qquad |H_k|=o_k.
+\]
+Let $0\le J_k<o_k$ be the unique logarithm $3^{J_k}\equiv11$.
+It is odd. The exact relation lattice is
+\[
+ \mathcal L_k=\{(a,b)\in\mathbb Z^2:a+J_kb\equiv0\pmod{o_k}\}
+ =\mathbb Z(o_k,0)+\mathbb Z(-J_k,1),\quad\det\mathcal L_k=o_k.
+                                                               \tag{A5}
+\]
+Its congruence is $3^a11^b\equiv1\pmod{2^k}$. A modular relation is not
+an equality of positive integer products. Unique factorization makes
+$3^a11^b-1$ nonzero whenever $(a,b)\ne(0,0)$.
+
+\section{An explicit imported logarithmic estimate, with every parameter}
+We use Chim \cite[Theorem 2.1; \S10, Table 1 and final formula on
+pp.~346--348]{Chim}. The local prime in that theorem is $2$, not the ES
+parameter $p$. For rational $2$-adic units the field parameters are
+$D=e=f=g=1$, $\kappa=2$, $Z_1=4$. Take $A_1=3,A_2=11$.
+They meet the prescribed logarithmic-height lower bounds, also when either
+rational input is inverted.
+
+For a row $(x_1,x_2,x_3,C_2)$ of the $p=2$ block of Chim's table, set
+\[
+ \mathcal K=\frac{2C_2(2\log2+x_3)\log3\log11}{(\log2)^3},\quad
+ \mathcal H=\max\!\left\{\log b'+\log\log2,
+ x_1\log2,x_2(2\log2+x_3)\log2\right\},
+\]
+where $b'=b_1/\log11+b_2/\log3$. The cited theorem gives
+$v_2(\alpha_1^{b_1}-\alpha_2^{b_2})<\mathcal K\mathcal H$ for
+positive $b_1,b_2$ and multiplicatively independent inputs. We use two rows:
+\[
+\begin{array}{c|rrrr|rrr}
+ &x_1&x_2&x_3&C_2&C&H&D_0\\\hline
+ A&200&25&4.93&5500&550000&140&400000\\
+ B&5000&900&4.85&3920&387000&4000&270000
+\end{array}                                                   \tag{B1}
+\]
+The last three columns are our rationally certified roundings, not constants
+quoted verbatim from the source.
+
+\begin{theorem}[Nonzero relation height]\label{thm:height}
+For either row of (B1), every $(a,b)\in\mathbb Z^2\setminus\{(0,0)\}$,
+with $B=\max(|a|,|b|)$, satisfies
+\[
+ \boxed{v_2(3^a11^b-1)<C\max\{\log B,H\}.}                 \tag{B2}
+\]
+If $k\ge CH$ and $(a,b)\in\mathcal L_k\setminus\{0\}$, then
+\[
+ \boxed{B>\exp(k/C)>2^{\lfloor k/D_0\rfloor}.}             \tag{B3}
+\]
+\end{theorem}
+\begin{proof}
+For $ab\ne0$, take
+$\alpha_1=3^{\operatorname{sgn}a}$,
+$\alpha_2=11^{-\operatorname{sgn}b}$,
+$b_1=|a|$, $b_2=|b|$. Then
+\[
+ \alpha_1^{b_1}-\alpha_2^{b_2}=11^{-b}(3^a11^b-1).
+\]
+The multiplier is a $2$-adic unit, so the valuations agree. Both heights and
+all field parameters stated above apply with either sign; the inputs are
+multiplicatively independent by their distinct prime valuations.
+
+The following rigorous enclosures are sufficient:
+\[
+ .6931<\log2<.6932,\quad1.0986<\log3<1.0987,\quad
+ 2.3978<\log11<2.3980.                                    \tag{B4}
+\]
+They imply
+$\log2(1/\log11+1/\log3)<1$, and hence
+$\log b'+\log\log2<\log B$.
+For row A they give $\mathcal K<549798<550000$ and both fixed terms of
+$\mathcal H$ below $140$; for row B, $\mathcal K<386893<387000$ and both
+fixed terms below $4000$. They also give $C\log2<D_0$ in both rows.
+The exact rational upper expressions, rather than rounded decimals, are
+recorded and checked in \texttt{constants.json}.
+
+For completeness (B4) follows without numerical logarithm software from
+\[
+ \log x=2\sum_{j=0}^{n-1}\frac{z^{2j+1}}{2j+1}+R_n,
+ \quad0<R_n\le\frac{2z^{2n+1}}{(2n+1)(1-z^2)},\quad z=\frac{x-1}{x+1}.
+\]
+Use $n=12$ for $x=2,3/2,11/8$, with
+$\log3=\log2+\log(3/2)$ and $\log11=3\log2+\log(11/8)$.
+This proves the displayed finite roundings.
+
+If $a=0$ or $b=0$, the valuation is $1$ for an odd nonzero exponent, and
+$2+v_2(B)$ for an even one, by difference-of-squares induction. The same holds
+for inverse powers. These quantities satisfy (B2) directly; the imported theorem
+has not been applied to an exponent zero.
+
+Finally a relation has valuation at least $k$. If $\log B\le H$, (B2)
+would give $k<CH$, impossible. Otherwise $k<C\log B$.
+Since $C\log2<D_0$, exponentiation proves (B3).
+\end{proof}
+
+This is a specialization of the cited logarithmic theorem, not a new generic
+Baker-type theorem. Linear dependence on $\log B$ is what allows a power
+saving below; a quadratic dependence would give a different rate.
+
+\section{From short-relation exclusion to bounded original words}
+Let $b_1,b_2$ be an exact Gauss-reduced basis of $\mathcal L_k$:
+\[
+ \lambda=\|b_1\|\le\|b_2\|,\qquad
+ |\langle b_1,b_2\rangle|\le\lambda^2/2.
+\]
+It is obtained by integer swaps and nearest-integer subtractions; termination
+uses decreasing positive squared norms, with a stop on equality to avoid a
+rounding-tie cycle. These are the classical reduction operations
+\cite[\S17.1, Theorem 17.1.2 and Algorithm 23]{Galbraith}.
+
+Here are the precise estimates used. Write
+$b_2=\mu b_1+h e_\perp$, so $|\mu|\le1/2$, $h=o_k/\lambda$, and
+$h^2\ge3\lambda^2/4$. A vector with second coefficient zero has length at
+least $\lambda$. For second coefficient $\pm1$, reducedness gives length
+at least $\|b_2\|$. For absolute coefficient at least two, its perpendicular
+part has length at least $2h>\lambda$. Thus $b_1$ is shortest. Also
+\[
+ \lambda^2\le\frac{2o_k}{\sqrt3},\qquad
+ \lambda<\frac43\sqrt{o_k},\qquad
+ \frac12(\|b_1\|+\|b_2\|)
+ \le\frac34\lambda+\frac{o_k}{2\lambda}.                  \tag{C1}
+\]
+
+For a target $t\in\mathbb Z/o_k$ and a rectangle
+$[a,a+E]\times[b,b+F]$, let $c=(a+E/2,b+F/2)$, $v=(t,0)$, and let
+$B_0$ have columns $b_1,b_2$. The actual returned word is
+\[
+ \boxed{w=v+B_0\operatorname{round}(B_0^{-1}(c-v)).}        \tag{C2}
+\]
+Rounding is coordinatewise nearest integer, ties towards $+\infty$.
+It is not asserted to give a closest vector. Its coordinate errors are at
+most $1/2$, so (C1) bounds its Euclidean displacement from $c$.
+The exact basis-dependent sufficient widths are
+\[
+ W_3=|b_{1,1}|+|b_{2,1}|,\qquad
+ W_{11}=|b_{1,2}|+|b_{2,2}|.                               \tag{C3}
+\]
+They need no logarithmic theorem. If $E\ge W_3,F\ge W_{11}$, (C2) lies in
+the original rectangle. Its complete fibre is
+$(v+\mathcal L_k)\cap([a,a+E]\times[b,b+F])$; the inverse on any such word
+is $B_0^{-1}(w-v)\in\mathbb Z^2$. The subtractions, translations and rounding
+convention are retained, not projected away \cite[\S18.2]{Galbraith}.
+
+\begin{theorem}[Explicit uniform power-saving capacity]\label{thm:capacity}
+For either row $(C,H,D_0)$ of (B1), suppose $k\ge CH$. Put
+\[
+ \boxed{T_{D_0}(k)=2^{\,k-1-\lfloor k/D_0\rfloor}.}        \tag{C4}
+\]
+Every cyclic target has an original word $3^i11^j$, $0\le i,j\le T_{D_0}(k)$.
+The word has the terminating exact construction (C2). In particular,
+\[
+\begin{array}{c|c|c}
+ k\text{ range}&\text{sufficient square side}&\text{rate}\\\hline
+ k\ge77{,}000{,}000&T_{400000}(k)&O((2^k)^{1-1/400000})\\
+ k\ge1{,}548{,}000{,}000&T_{270000}(k)&O((2^k)^{1-1/270000})
+\end{array}                                                   \tag{C5}
+\]
+\end{theorem}
+\begin{proof}
+By Theorem~\ref{thm:height}, $\lambda>U=2^{\lfloor k/D_0\rfloor}$.
+Equation (C1) bounds the rounding displacement strictly by
+$\sqrt{o_k}+o_k/(2U)$. Let $T=2o_k/U$, which is (C4).
+For the stated $k$, $4\lfloor k/D_0\rfloor\le k-2$, so
+$\sqrt{o_k}/U\ge2$; consequently $\sqrt{o_k}\le T/4$ and
+$o_k/(2U)=T/4$. The error is strictly less than $T/2$.
+This places the returned integer coordinates in the square centred at $(T/2,T/2)$.
+Finally $\lfloor k/D_0\rfloor\ge k/D_0-1$ gives
+$T\le(2^k)^{1-1/D_0}$.
+\end{proof}
+
+The prior estimate is
+$\max\{4\lceil\sqrt{o_k}\rceil,\lceil8o_k/k\rceil\}$.
+At the stated onsets, $2^{\lfloor k/D_0\rfloor}>k/4$; this remains true in
+successive length-$D_0$ buckets because the left side doubles while the
+right endpoint grows linearly. Therefore (C4) is strictly below its second
+term. Below the large onsets retain the prior bound or the elementary side
+$o_k-1$. At any precision, the exact widths (C3) may be much smaller than
+any uniform bound. No threshold modulus in (C5) was explicitly expanded in
+the finite computation.
+
+\paragraph{Consequences for actual ES input.}
+If the actual exponents in (A1) satisfy $e,f\ge T_{D_0}(k)$, then
+\[
+ \boxed{C_k(p)>0\iff M\text{ has a prime divisor }5\text{ or }7\pmod8.}
+                                                               \tag{C6}
+\]
+Necessity holds because products of only residues $1,3\pmod8$ cannot be $-1$.
+For sufficiency, take such an actual prime $q$ and target
+$t=\log_3(-q^{-1})\pmod{o_k}$. The bounded word returns
+$Q=3^i11^jq\mid N$, then (A2)--(A4). No primality of a selected residue or
+factorization oracle is inferred from the logarithmic estimate.
+
+Let $A(M)$ count all outside divisors of $M$. A sufficient integer side $T$
+also gives the exact original-state lower bound
+\[
+ C_k(p)\ge A(M)
+ \left\lfloor\frac{e+1}{T+1}\right\rfloor
+ \left\lfloor\frac{f+1}{T+1}\right\rfloor.                 \tag{C7}
+\]
+Partition the exponent intervals into disjoint $(T+1)$-point intervals.
+Every translated rectangle covers the cyclic group by (C2). Unique prime
+factorization separates its different $i,j,t$, so no original state is counted
+twice. Smaller basis-dependent rectangles may be used instead.
+The capacity input is strong: whenever $e,f\ge T$ and an outside factor exists,
+$3p>N\ge5\cdot33^T$. This precludes presenting (C5) as a practical small-$p$ test.
+
+\section{Relative boundary transport without increasing the heights}
+Fix $v\ge0$, $d=2^v$, and $h=k-v\ge3$. The actual group map
+\[
+ H_h\longrightarrow H_k,\qquad g\longmapsto g^d             \tag{D1}
+\]
+is well-defined, injective, and has image $\langle3^d\rangle$. It is a
+map between the indicated residue groups, not exponentiation of arbitrary
+unmarked lifts. Identifying each group by its retained power of $3$ proves
+all assertions and gives the inverse by exponent division. In particular,
+\[
+ \boxed{3^{da}11^{db}\equiv1\pmod{2^k}
+ \iff 3^a11^b\equiv1\pmod{2^h}.}                          \tag{D2}
+\]
+Equivalently, $J_k\bmod2^{h-2}=J_h$. The lattice of relative exponent relations
+is exactly $\mathcal L_h$. Applying the imported theorem separately to
+$3^d,11^d$ would inflate both heights; (D2) avoids that loss by an explicit
+isomorphism, not by deleting a factor.
+
+Decompose the original $3,11$ rectangle by Euclidean division:
+\[
+ i=r+dI,\quad j=s+dJ,\quad0\le r,s<d,\qquad
+ 0\le I\le\left\lfloor\frac{e-r}{d}\right\rfloor,
+ \quad0\le J\le\left\lfloor\frac{f-s}{d}\right\rfloor.    \tag{D3}
+\]
+Only digits $r\le e,s\le f$ occur. For a retained target $t$, first require
+$t-r-J_ks\equiv0\pmod d$. The exact higher target is
+\[
+ I+J_hJ\equiv(t-r-J_ks)/d\pmod{2^{h-2}}.                  \tag{D4}
+\]
+When the two higher capacities meet (C4) at precision $h$, or their exact
+basis widths, (C2) solves (D4) and (D3) returns an actual original word.
+The full inverse reads the two lower digits and quotients. Every parameter
+occurs in precisely one digit fibre; no inverse-fibre weights are needed here.
+Different overlapping affine families must still be kept separate.
+
+This implements the preceding relative boundary, rather than replacing it.
+For $o=2^{k-2}$, $d\mid o$ and $o/d\ge2$, put
+$\mathcal N_d=\sum_{j=0}^{o/d-1}X^{dj}$ in $\mathbb F_2[C_o]$.
+The source map remains
+\[
+ \iota_d:\mathbb F_2[C_d]\xrightarrow{\sim}\ker((X+1)^d),
+ \quad X^r\mapsto X^r\mathcal N_d,
+ \qquad \pi_d\iota_d=(o/d)I=0.                            \tag{D5}
+\]
+Its inverse reads one coefficient per coset after the constant-on-coset image
+test. This is the previously proved BR1 instance
+\cite[BR1--BR2]{SplitZero}\cite[(B1)--(B4)]{PriorRelative}.
+The new capacity theorem constructs available higher words; it does not claim
+that their entire counting distribution equals the uniform norm element.
+Integer counts and labels remain before parity reduction. A coefficient
+reducing to zero stays a supported zero $e=0_A^\bullet$, not absence $\tau$.
+No Gamma/Toda metric or analytic source estimate is imported into (D2)--(D4).
+
+\section{Executable precision and original-state examples}
+The integer-only logarithm routine uses
+\[
+ J_k=1+2z\pmod{2^{k-2}},\qquad
+ z=\frac{\log(11/3)/8}{\log9/8}\pmod{2^{k-3}}.             \tag{E1}
+\]
+The denominator is odd. For $c=1,1/3$ the normalized series is
+\[
+ \frac{\log(1+8c)}8
+ =\sum_{j\ge1}\frac{(-1)^{j+1}2^{3(j-1)}c^j}{j}.          \tag{E2}
+\]
+To compute modulo $2^n$, write $j=2^\nu j_0$, invert only the odd $j_0$, and
+retain terms with $3(j-1)-\nu<n$. Summing through $n+2$ is sufficient:
+$\nu\le j-1$ makes every later valuation at least $2(j-1)\ge n$.
+The first-term valuation and the formal additive law of the convergent
+logarithm on $1+8\mathbb Z_2$ prove (E1). Modular exponentiation independently
+checks $3^{J_k}=11$, and the known group order proves uniqueness.
+There is no floating-point approximation to a discrete logarithm.
+
+At the inherited hard prime $p=482187176641$, $k=6$,
+$N=3^7 11^5 37^2$. An exact basis is
+\[
+ b_1=(2,2),\quad b_2=(-5,3),\quad\det(b_1,b_2)=16,
+ \quad(W_3,W_{11})=(7,5).
+\]
+For the actual outside divisor $37$, the target is $13$. The rounding rule
+returns $(i,j)=(1,4)$ and hence
+\[
+ Q=1625151,\ R=296703,\ a=120546868336,
+ \quad(h,r,s,\lambda)=(2,8,7534179271,25393),
+\]
+\[
+ (x,y,z)=(120546868336,184499678869490521595996846,195906863623118608).
+\]
+The complete original target fibre is $(1,4),(6,1)$; the other point returns
+the prior ordered witness. This replays a known occupied branch and is not
+new prime coverage. Its primality is checked by full trial division.
+
+At $k=8,v=2$, use the integer input
+$N=3^{28}11^{20}31^2$, $p=N-8192$. The lower digits $(0,0)$ reach the
+correct quotient class. Precision $h=6$ uses the same $7$ by $5$ high rectangle.
+The returned high word is $(5,3)$, hence the original word is $(20,12)$ and
+$Q=3^{20}11^{12}31$. The full denominators and inverse are certified.
+Primality of this $p$ is not asserted. Here the exact precision map is used;
+the asymptotic threshold is not invoked at precision six.
+
+For a required negative comparison, the complete branch
+$p=49681$, $k=6$, $N=3^3 11\,13^2$ has no cofactor $-1\pmod{64}$.
+Its actual powers do not meet the computed widths. The prime nevertheless has
+$(x,y,z)=(12423,56450112,9255769024)$ in another channel/shell. This is an
+empty fixed-seed branch, not an ES counterexample.
+
+\paragraph{Finite scope and proof boundary.}
+The new checker verifies all $2046$ targets at precisions $3\le k\le12$,
+complete corresponding rectangle fibres, signed and axis cases, actual lower
+and higher digit inverses, and $258$ exact basis certificates through
+$k=4096$. An independent implementation uses direct modular digit lifting
+and determinant conditions, not (E1), and checks the exact original divisors.
+The main checker rejects seven deliberately false transformations. Executed
+counts and hashes are in the generated receipts. No finite experiment proves
+Chim's theorem or computes a modulus at either giant onset in (C5).
+
+The remaining global obligation is unchanged in kind: force the actual
+factorization of at least one seed of every required prime to provide an
+occupied lower target and adequate high capacities, or another original
+selector. This work improves the quantitative implication from that inventory;
+it does not hypothesize that the inventory is present and call it universal ES.
