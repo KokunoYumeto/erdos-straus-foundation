@@ -1,0 +1,22 @@
+{
+  "format": "polyclank-crossworkbench-comparison/1",
+  "date": "2026-09-10",
+  "es_commit": "9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f",
+  "zeta_commit": "42d00e359b16d52ca71568ce5e3db5341949d929",
+  "details": "CROSS_WORKBENCH_COMPARISON.md",
+  "mathematical_replay_this_pass": false,
+  "independent_review_this_pass": false,
+  "historical_public_zip_comparison_complete": false,
+  "results": [
+    {"id":"X1","integration_status":"existing_in_local_integrated_reader_public_version_unmatched","primary_route":"ES","counterpart_label":"eq:BB107-full-matrix-algebra"},
+    {"id":"X2","integration_status":"related_local_geometry_exact_public_match_unresolved","primary_route":"geometry/ES","counterpart_label":"thm:Fourier-Wick-Descartes"},
+    {"id":"X3","integration_status":"public_core_counterpart_found","primary_route":"zeta","counterpart_label":"prop:gcue-coordinate-support"},
+    {"id":"X4","integration_status":"exact_public_counterpart_unresolved","primary_route":"support-affine/Collatz","counterpart_label":null},
+    {"id":"X5","integration_status":"source_specific_discrepancy_current_public_error_unestablished","primary_route":"ES","counterpart_label":"eq:support-Fricke-principal-fibre"},
+    {"id":"X6","integration_status":"public_full_counterpart_found","primary_route":"zeta","counterpart_label":"prop:finite-weyl-coordinate-isomorphism"},
+    {"id":"X7","integration_status":"defined_model_exact_public_counterpart_unresolved","primary_route":"finite-operator/Yang-Mills interface","counterpart_label":null}
+  ],
+  "client_paths": ["github_connected_web_session","local_agent","other_authorized_client","human"],
+  "credit_rule": "Describe contributions, not rank contributors; use authorized public handles.",
+  "publication_history": "No withdrawn article is identified or inferred."
+}

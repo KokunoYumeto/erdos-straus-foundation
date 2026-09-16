@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "check_groups": 8,
+  "script_sha256": "2036b66e8218fcc2e62d8e92a135859f3ab44ddb36650cc62c3adadb645bfea0",
+  "output_sha256": "d693c7f5a75cb3dce69d4aec3247a7e04a038f77b596f57adcdfc8cb446ac523",
+  "normal_and_optimized_outputs_identical": true,
+  "coefficient_truncation_degree": 860,
+  "word_basis_dimension": 25,
+  "coefficient_frame_determinant_mod107": 8,
+  "word_basis_determinant_mod107": 32,
+  "commutator_determinant_mod107": 15,
+  "binary_words_checked": 1023,
+  "external_archive_code_executed": false,
+  "lean_run": false,
+  "independent_second_review": false,
+  "scope": "Exact finite claims and sampled identities; general arguments are written separately."
+}
