@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-16",
+  "repository": "KokunoYumeto/erdos-straus-foundation",
+  "branch": "research/zero-cohomology-moment-gap-20260913",
+  "base_commit": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "source_archive": {
+    "filename": "es_zero_cohomology_bundle.zip",
+    "sha256": "3cf9290146e87fcd80023bf04e7f90e9582da984072e26d527e5bf508a9628eb",
+    "integration_patch_sha256": "7bdadcf1f85f220dd6317c0b3fdcc57f8eee2c87e77da8fd5c89e431713f302c",
+    "manifest_entries_verified": 26,
+    "manifest_entries_failed": 0
+  },
+  "replay": {
+    "python": "3.13.9",
+    "bound": 500,
+    "normal_exit": 0,
+    "optimized_exit": 0,
+    "condition_invocations": 703150,
+    "scan": {
+      "primes": 21,
+      "shells": 1284,
+      "splits": 3775,
+      "matching_occurrences": 1827,
+      "matching_H0_rank": 1001,
+      "inflated_channel_observations": 111
+    },
+    "certificate_objects_semantically_equal": [
+      "checks.json",
+      "examples.json",
+      "scan.json",
+      "structural.json"
+    ],
+    "cross_platform_byte_caveat": "Windows replay uses CRLF and the supplied files use LF; newline-normalized bytes are equal.",
+    "negative_control_caveat": "The supplied negative_controls.json is hash-verified, but no mutation harness is included in the source archive."
+  },
+  "lineage": {
+    "antecedent_pull_request": 5,
+    "downstream_pull_request": 6,
+    "adjacent_distinct_pull_request": 7
+  },
+  "publication_additions": [
+    "five supplied certificate JSON files",
+    "workbench, preprint and card PDFs",
+    "card and preprint page images",
+    "source-specific CC0 and MIT notices",
+    "current PR description and this replay receipt"
+  ],
+  "nonclaims": [
+    "No proof of the Erdos-Straus conjecture or the Riemann hypothesis",
+    "No new prime coverage",
+    "No new Lean build",
+    "No independent mathematical review",
+    "No historical-priority claim"
+  ]
+}

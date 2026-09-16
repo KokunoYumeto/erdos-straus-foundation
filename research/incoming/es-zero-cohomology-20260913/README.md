@@ -106,6 +106,9 @@ All deliverable additions are under
 `research/incoming/es-zero-cohomology-20260913/`. No existing code,
 accepted claim, manuscript, license, workflow, or other branch is rewritten.
 The Zeta source is linked at its immutable revision, not copied or
-relicensed. This bundle includes an additive patch and proposed PR body.
-Actual remote publication, if any, is recorded separately in
-`publication_status.json`; the local package alone does not establish it.
+relicensed. The exact recovered eleven-file source patch is preserved in the
+first branch commit. A second publication commit adds the five cited
+certificate files, readable PDFs and page images, source-specific licensing,
+the current draft-PR description and a fresh replay receipt. The branch is
+published as `research/zero-cohomology-moment-gap-20260913`; `main` and the
+downstream PR6 branch remain unchanged.

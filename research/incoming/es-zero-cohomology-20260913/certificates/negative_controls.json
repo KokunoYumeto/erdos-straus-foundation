@@ -1,0 +1,38 @@
+[
+  {
+    "mutation": "wrong_addition_fibre",
+    "optimized": false,
+    "returncode": 1,
+    "last_stderr_line": "ArithmeticError: weight_fibre_formula"
+  },
+  {
+    "mutation": "wrong_addition_fibre",
+    "optimized": true,
+    "returncode": 1,
+    "last_stderr_line": "ArithmeticError: weight_fibre_formula"
+  },
+  {
+    "mutation": "wrong_quotient_Gram",
+    "optimized": false,
+    "returncode": 1,
+    "last_stderr_line": "ArithmeticError: canonical_cohomology_Gram"
+  },
+  {
+    "mutation": "wrong_quotient_Gram",
+    "optimized": true,
+    "returncode": 1,
+    "last_stderr_line": "ArithmeticError: canonical_cohomology_Gram"
+  },
+  {
+    "mutation": "lost_original_hit",
+    "optimized": false,
+    "returncode": 1,
+    "last_stderr_line": "ArithmeticError: exact_canonical_state_polynomial"
+  },
+  {
+    "mutation": "lost_original_hit",
+    "optimized": true,
+    "returncode": 1,
+    "last_stderr_line": "ArithmeticError: exact_canonical_state_polynomial"
+  }
+]

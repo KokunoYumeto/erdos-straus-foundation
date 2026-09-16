@@ -67,9 +67,9 @@
   "matrix_scope": "169 complete small map-pairs with two Grams; unequal common fibres 1..6 with two Grams; four complete marked arithmetic examples. Larger scan uses proved rank formula, not dense elimination.",
   "source_files": {
     "README.md": {
-      "bytes": 5957,
-      "sha256": "e295382d1349ae36699fd86727adc26148238c38e6000526de8b3846bd9a7c62",
-      "git_blob_sha1": "3518efe2c985363b071efeb4a3a6b7f14dc1d58e"
+      "bytes": 6163,
+      "sha256": "de7be5532074e32042db98841aebd7f5d3ad3a055928674ea31353765882a94e",
+      "git_blob_sha1": "226437f0f7cb9cac3af4414c005b5bd692f06fe4"
     },
     "core.tex": {
       "bytes": 17860,

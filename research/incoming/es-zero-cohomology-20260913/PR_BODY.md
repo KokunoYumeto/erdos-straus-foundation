@@ -1,0 +1,11 @@
+## Historical zero-cohomology source tranche
+
+This draft publishes the exact 2026-09-13 `es_zero_cohomology_bundle.zip` (SHA-256 `3cf9290146e87fcd80023bf04e7f90e9582da984072e26d527e5bf508a9628eb`) under `research/incoming/es-zero-cohomology-20260913/`. It is based on `main` at `63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9`. No existing file, workflow, schedule or other branch is modified.
+
+PR5 is the attributed split-box antecedent. This packet retains its addition-fibre and gate-unit interface but imports no predecessor code. PR6 is the later downstream integration: its source ledger records this exact ZIP and hash as its local antecedent, then extends the residue cohomology, matched-pair comparison, inverse-fibre weighting and empty-shell analysis with boundary-kernel and moment certificates. This draft preserves the earlier source tranche; it neither supersedes PR6 nor presents shared results as an independent rediscovery. PR7 is adjacent but distinct: it studies genuine mixed-support and higher-intersection cohomology rather than the two quotients and arithmetic weight correction proved here.
+
+The packet proves the three-term source cochain and explicit primitives, coarsening kernels and cokernels, the separate matched-pair quotient, count-preserving inverse-fibre weights, and the inherited metric required under iteration. It verifies the `5/4/3` comparison at `(p,a,R)=(2521,636,23)` and the genuinely empty `p=241,a=64` shell, where zero cohomology does not erase retained source mass.
+
+Fresh ordinary and optimized runs each record 703,150 exact condition invocations on 21 primes, 1,284 shells and 3,775 splits. Their mathematical JSON objects agree with the supplied certificates. Raw JSON bytes are platform-dependent because Windows text mode writes CRLF while the archive stores LF. The six archived negative-control receipts are preserved, but the ZIP contains no mutation runner with which to regenerate them.
+
+The branch contains the complete proof source, checker, five certificate files, readable PDFs/page images, typed maps, source ledger and formalization plan. No universal ES or RH theorem, new prime coverage, analytic theta/counting-norm identification, Lean build, independent mathematical review or historical-priority claim is made. This is a draft for statement-level review, not an automatic merge.

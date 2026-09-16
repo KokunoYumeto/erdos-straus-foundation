@@ -1,0 +1,151 @@
+{
+  "all_small_map_pairs": 169,
+  "coarsening": {
+    "boundary_primitive": [
+      {
+        "denominator": 1,
+        "numerator": -1
+      },
+      {
+        "denominator": 1,
+        "numerator": -1
+      }
+    ],
+    "coarse_H0": 1,
+    "fine_H0": 2,
+    "killed_class": [
+      1,
+      -1
+    ],
+    "nonzero_chain_image": [
+      {
+        "denominator": 1,
+        "numerator": 1
+      },
+      {
+        "denominator": 1,
+        "numerator": -1
+      },
+      {
+        "denominator": 1,
+        "numerator": 1
+      },
+      {
+        "denominator": 1,
+        "numerator": -1
+      }
+    ]
+  },
+  "small_split_budgets": 36,
+  "tower": {
+    "canonical_coefficients": [
+      {
+        "denominator": 7,
+        "numerator": 1
+      },
+      {
+        "denominator": 7,
+        "numerator": 1
+      },
+      {
+        "denominator": 7,
+        "numerator": 1
+      },
+      {
+        "denominator": 7,
+        "numerator": 1
+      },
+      {
+        "denominator": 7,
+        "numerator": 1
+      },
+      {
+        "denominator": 7,
+        "numerator": 1
+      },
+      {
+        "denominator": 7,
+        "numerator": 1
+      }
+    ],
+    "canonical_norm_squared": {
+      "denominator": 7,
+      "numerator": 1
+    },
+    "excess": {
+      "denominator": 189,
+      "numerator": 1
+    },
+    "occurrences": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1
+      ]
+    ],
+    "reset_coefficients": [
+      {
+        "denominator": 6,
+        "numerator": 1
+      },
+      {
+        "denominator": 9,
+        "numerator": 1
+      },
+      {
+        "denominator": 6,
+        "numerator": 1
+      },
+      {
+        "denominator": 9,
+        "numerator": 1
+      },
+      {
+        "denominator": 6,
+        "numerator": 1
+      },
+      {
+        "denominator": 9,
+        "numerator": 1
+      },
+      {
+        "denominator": 6,
+        "numerator": 1
+      }
+    ],
+    "reset_norm_squared": {
+      "denominator": 27,
+      "numerator": 4
+    }
+  }
+}
