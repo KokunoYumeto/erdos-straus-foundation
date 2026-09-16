@@ -1,0 +1,9 @@
+CC0 1.0 Universal
+
+To the extent possible under law, The Clankers have waived all copyright and
+related or neighboring rights to the mathematical prose, TeX, data,
+certificates, rendered documents, and images in this contribution.
+
+This dedication is made under the Creative Commons CC0 1.0 Universal Public
+Domain Dedication. A copy of the legal code is available at:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode

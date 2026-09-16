@@ -1,0 +1,125 @@
+{
+  "schema": "es-publication-replay-v1",
+  "date": "2026-09-16",
+  "repository": "KokunoYumeto/erdos-straus-foundation",
+  "base_revision": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "source_archive": {
+    "name": "es_split_scalar_arithmetic_bundle.zip",
+    "sha256": "283c539e5ae717cbf74ad7f5374c007ad99639991d6cfba965b612394d583851",
+    "archived_manifest_entries": 27,
+    "archived_manifest_result": "all entries matched their recorded SHA-256 digests"
+  },
+  "environment": {
+    "operating_system": "Windows",
+    "python": "3.13.9",
+    "dependencies": "Python standard library only",
+    "randomness": "none",
+    "parallelism": "none"
+  },
+  "runs": [
+    {
+      "command": "python verify.py --out replay_normal",
+      "exit_code": 0,
+      "result": {
+        "checks": 409536,
+        "negative_controls_rejected": 5,
+        "small_scan": {
+          "primes": 44,
+          "shells": 2480,
+          "canonical_candidates": 80032,
+          "hits": 1043
+        }
+      }
+    },
+    {
+      "command": "python -O verify.py --out replay_optimized",
+      "exit_code": 0,
+      "result": "same finite counts and same ten certificate objects as the normal run"
+    },
+    {
+      "command": "python check_catalogue.py --catalogue replay_normal/catalogue27.json --out replay_frontier_normal.json",
+      "exit_code": 0,
+      "result": {
+        "unoccupied_capped_profiles": 62812,
+        "frontier_edges_tested": 629841,
+        "occupied_boundary_edges": 567030
+      }
+    },
+    {
+      "command": "python -O check_catalogue.py --catalogue replay_optimized/catalogue27.json --out replay_frontier_optimized.json",
+      "exit_code": 0,
+      "result": "same finite counts and same JSON object as the normal frontier run"
+    },
+    {
+      "command": "python check_dirichlet.py --bound 120 --out replay_dirichlet_normal.json",
+      "exit_code": 0,
+      "result": {
+        "integers_per_channel_modulus": 1268,
+        "local_factor_coefficients": 1800
+      }
+    },
+    {
+      "command": "python -O check_dirichlet.py --bound 120 --out replay_dirichlet_optimized.json",
+      "exit_code": 0,
+      "result": "same finite counts and same JSON object as the normal Dirichlet run"
+    }
+  ],
+  "certificate_comparison": {
+    "method": "parse each archived and regenerated file as JSON and compare the resulting exact Python objects",
+    "all_equal": true,
+    "files": [
+      "arithmetic.json",
+      "catalogue27.json",
+      "checks.json",
+      "dirichlet_verification.json",
+      "frontier_verification.json",
+      "hard_scan.json",
+      "negative_controls.json",
+      "profiles.json",
+      "recurrences.json",
+      "split_scalar.json"
+    ],
+    "byte_identity_not_claimed": "The public archive retains the original certificate bytes; replay files were generated on Windows and semantic JSON equality, rather than newline-sensitive byte equality, was checked."
+  },
+  "verified_finite_assertions": {
+    "catalogue": {
+      "minimal_profiles": 174,
+      "arity_histogram": {
+        "1": 9,
+        "2": 99,
+        "3": 66
+      },
+      "maximum_reserved_occurrences": 9
+    },
+    "hard_scan": {
+      "bound": 2000000,
+      "hard_class_primes": 4519,
+      "occupied_residual_27_shells": 1214,
+      "exterior_states": 1880,
+      "middle_states": 1800
+    }
+  },
+  "documents": {
+    "workbench.pdf": {
+      "pages": 9,
+      "source": "workbench.tex with core.tex and the public-safe references.tex",
+      "build": "two successful pdflatex passes with no undefined references, overfull boxes, or LaTeX warnings on the final pass",
+      "visual_check": "all nine rendered pages inspected; no clipping, overlap, broken equations, or illegible text observed"
+    },
+    "preprint.pdf": {
+      "pages": 3,
+      "source": "archived preprint.tex",
+      "visual_check": "all three rendered pages inspected; no clipping, overlap, broken equations, or illegible text observed"
+    }
+  },
+  "interpretation": "The implementation and its finite assertions were reproduced in the stated ranges. The written monotonicity, cap, coefficient-fibre, and reconstruction arguments are the mathematical bridge from the finite residual-27 grid to the fixed-residual theorem; a successful finite run alone is not a universal Erdős--Straus proof.",
+  "nonclaims": [
+    "No assertion that every prime occupies the residual-27 shell",
+    "No universally bounded collection of residuals is established",
+    "No universal Erdős--Straus theorem",
+    "No Riemann-hypothesis implication",
+    "No independent mathematical review",
+    "No Lean build",
+    "No historical-priority determination"
+  ]
+}

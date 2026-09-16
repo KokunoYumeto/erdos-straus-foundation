@@ -1,0 +1,49 @@
+{
+  "caps": [
+    9,
+    4,
+    9,
+    4,
+    3,
+    1,
+    9,
+    4,
+    9,
+    4,
+    3,
+    1,
+    9,
+    4,
+    9,
+    4,
+    1
+  ],
+  "counts": {
+    "frontier_edges_tested": 629841,
+    "occupied_boundary_edges": 567030,
+    "unoccupied_capped_profiles": 62812
+  },
+  "independently_verified_patterns": 174,
+  "modulus": 27,
+  "proof": "Every upward path from zero either stays in the listed unoccupied grid or first crosses a checked occupied boundary; occupancy is upward closed.",
+  "transition_cache_entries": 2625,
+  "unit_residues": [
+    2,
+    4,
+    5,
+    7,
+    8,
+    10,
+    11,
+    13,
+    14,
+    16,
+    17,
+    19,
+    20,
+    22,
+    23,
+    25,
+    26
+  ]
+}

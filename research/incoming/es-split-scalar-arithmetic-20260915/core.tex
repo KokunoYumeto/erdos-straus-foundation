@@ -1,0 +1,519 @@
+\section{Research assessment and the scalar distinction}
+The immediate goal is positive integral occupancy of the original
+Erd\H{o}s--Straus divisor atlas, not the construction of another object that
+encodes occupancy after its answer is known. The preceding complexes built
+from $D_\alpha=R/\gcd(R,g_\alpha)$ do retain failed states, their incoming
+relations, and their supported zeros. Their formal contraction estimates,
+however, also hold for arbitrary prescribed arrays of failed defects. Without
+an additional arithmetic statement, those estimates do not force a successful
+state. The observation-Gram and prime-indexed Koszul constructions also used
+``support'' differently from the owner's original scalar distinction.
+
+Here $A$ is a coefficient ring and
+\[
+ G(A)=\{\tau\}\sqcup A^\bullet,\qquad e=0_A^\bullet\ne\tau.
+ \tag{S1}
+\]
+The original source distinguishes an empty face, a supported zero amplitude,
+and an arbitrary supported amplitude. Its mixed-support monad permits a
+previously absent coordinate to be present with residue zero; the source's
+ordinary residue map still has $\{\tau\}$, not a supported infinitesimal fibre,
+over $\tau$ \cite[\S6.1--6.2]{Owner}. Its actual internal quotient retains the
+receiving support and the original boundary primitive \cite[\S1--4]{Derived}.
+We use these distinctions, not a new three-element scalar system.
+
+\section{Which inverses preserve absent and supported zero}
+Let $\Gamma$ be a finite group and $A$ a nonzero commutative unital ring.
+A coefficient vector in $G(A)[\Gamma]$ is exactly a pair
+\[
+ (S,f),\qquad S\subseteq\Gamma,\quad f\in A[\Gamma],\quad
+ \operatorname{nz}(f)\subseteq S.
+ \tag{S2}
+\]
+A coefficient outside $S$ is $\tau$, and a coefficient in $S$ whose amplitude
+is zero is $e$. The complete inverse to (S2) reads those two cases separately.
+Addition and convolution are
+\[
+ (S,f)+(T,g)=(S\cup T,f+g),\qquad
+ (S,f)(T,g)=(ST,fg).
+ \tag{S3}
+\]
+Indeed a product coefficient is present precisely when some present pair
+contributes to it. Such contributions can cancel in amplitude but cannot
+become absent. The global multiplicative identity is
+$(\{1_\Gamma\},[1_\Gamma])$; the global additive identity is $(\varnothing,0)$.
+Forgetting $S$ is an amplitude homomorphism with complete fibre
+$\{S:S\supseteq\operatorname{nz}(f)\}$. It is not injective.
+
+\begin{theorem}[Sparse split units and the nonnegative inverse obstruction]
+The global units of $G(A)[\Gamma]$ are exactly the monomials
+$a^\bullet[g]$ with $a\in A^\times$, $g\in\Gamma$.
+Moreover, if an ordinary real group-algebra element and its inverse both have
+nonnegative coefficients, both are monomials.
+\end{theorem}
+\begin{proof}
+If $(S,f)(T,g)$ is the global identity, $ST=\{1_\Gamma\}$ and neither set is
+empty. Fixing $t\in T$, injectivity of $s\mapsto st$ forces $|S|=1$; then
+$|T|=1$. Their amplitudes multiply to one. This also proves the converse.
+For ordinary nonnegative coefficients, the nonzero coefficient support of a
+product is exactly the product of the two nonzero supports; the same argument
+applies.
+\end{proof}
+This theorem concerns the declared global free coefficient semiring. It does
+\emph{not} prohibit ordinary linear inverses in a fixed full-support fibre of
+the SplitZero reconstruction. Those inverses have different domains and identities.
+
+\paragraph{An exact six-cycle comparison.}
+The ordinary target in the earlier source is $D_k=[3]+2[3-k]$ on $C_6$;
+its Fourier transform is everywhere nonzero \cite[Abstract]{Center}.
+At $k=2$, with additive indices modulo six, put
+\[
+ D=[3]+2[1],\qquad B=\frac{[3]-2[1]+4[5]}9.
+\]
+Ordinary multiplication gives $DB=[0]$. With its sparse supported lift,
+\[
+ \boxed{DB=1^\bullet[0]+e[2]+e[4]=E_H,\quad H=\{0,2,4\}.}
+ \tag{S4}
+\]
+The six individual products give coefficients $1,0,0$ at $0,2,4$ respectively;
+all three sites were used. Thus $E_H^2=E_H$, but $E_H$ is not the global identity.
+Also
+\[
+ E_HD=[3]+2[1]+e[5]=D^{\rm sat},\quad
+ E_HD^{\rm sat}=D^{\rm sat},\quad D^{\rm sat}B=E_H.
+ \tag{S5}
+\]
+The target has an inverse relative to the displayed saturated identity after
+retaining the new present-zero site. Its ordinary Fourier-unit assertion was
+correct; it did not prove an inverse with the original sparse presence mask.
+For any subgroup $H$, $(H,[1])$ gives this same idempotent completion:
+it preserves amplitudes and replaces $S$ by $HS$. Keeping the old mask gives
+the inverse as a decorated correspondence; forgetting it loses absence data.
+Activation with amplitude zero is not an arithmetic witness.
+
+\paragraph{Fourier observation.}
+In an ordinary finite Fourier matrix and its inverse every entry is nonzero.
+Under split matrix evaluation, any nonempty input presence mask therefore
+becomes the full output mask, and inverse Fourier evaluation returns full
+presence with the original amplitudes. This follows entry by entry from (S3)
+and the ordinary Fourier inverse. In particular the composite is support
+completion, not the identity on sparse split vectors. On a predeclared
+full-support fibre the usual inverse is valid. No new Fourier theorem is
+claimed; the change of carrier is the point.
+
+\section{Original arithmetic before the answer is encoded}
+Fix $R\equiv3\pmod4$, $a>R/2$, $\gcd(a,R)=1$, and put
+\[
+ n=4a-R>R,\quad a=\prod_{i=1}^kq_i^{e_i},\quad g_i=q_i\bmod R.
+ \tag{A1}
+\]
+Primality of $n$ is not needed for the following constructions. The prime
+applications separately check it. The primes $q_i$ are distinct and ordered,
+and their multiplicities are never replaced by a generated subgroup.
+Let $\Gamma_R=(\mathbb Z/R\mathbb Z)^\times$. Define
+\[
+ P^E_{g,e}=\sum_{f=0}^{2e}[g]^f,\qquad
+ P^M_{g,e}=\sum_{\beta=-e}^{e}[g]^\beta,
+ \quad t_E=-4^{-1},\quad t_M=-1\quad\text{in }\Gamma_R.
+ \tag{A2}
+\]
+Then the coefficient of $t_c$ in $\prod_iP^c_{g_i,e_i}$ is exactly the
+number of original channel-$c$ states. In E, $u=\prod q_i^{f_i}$; in M,
+$u=a\prod q_i^{\beta_i}$. The target conditions are respectively
+$R\mid4u+1$ and $R\mid u+a$. This explains why the two targets in (A2) are
+constant when $R$ is fixed, without deleting the original $a$.
+
+All coefficients in (A2) are nonnegative integer counts. Sending zero count
+to $\tau$ and positive count $m$ to $m^\bullet$ is a semiring homomorphism
+from $\mathbb N[\Gamma_R]$ to $G(\mathbb Q)[\Gamma_R]$, since no cancellation
+or nontrivial zero divisor is possible. This is a declared sparse counting
+carrier. Declaring every site present instead gives another valid carrier,
+with the added zero sites retained. Neither is confused with evaluation of a
+\emph{given} gate: its zero residue is the supported scalar $e$. Thus an absent
+target, a signed cancellation, and a successful gate evaluation are different
+observations with different fibres.
+
+\paragraph{Exact positive denominators.}
+For a target word, let $d=\gcd(a,u)$ and
+\[
+ h=d^2/u,\quad r=u/d,\quad s=a/d.
+\]
+At a prime $q$ with valuations $v_q(a)=e$, $v_q(u)=f$, the valuations of
+$r,s,h$ are $(f-e)^+,(e-f)^+,e-|f-e|$. They are nonnegative, so
+$a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$. The ordered return is
+\[
+ E:\ \kappa=(nr+s)/R,\quad(a,hs\kappa,nhr\kappa),\qquad
+ M:\ \lambda=(r+s)/R,\quad(a,nhs\lambda,nhr\lambda).
+ \tag{A3}
+\]
+Reduction modulo $R$ and $4a\equiv n$ show that the displayed quotients are
+positive integers. Multiplying the reciprocal sum by $nhrs\kappa$ gives
+$n\kappa+nr+s=(n+R)\kappa=4hrs\kappa$ in E; the middle computation gives
+$n\lambda+r+s=(n+R)\lambda=4hrs\lambda$. Hence both solve ES.
+For ordered denominators $(a,Y,Z)$ the inverses are
+\[
+ u=\frac{a^2}{RY-na}\ (E),\qquad
+ u=\frac{na^2}{RY-na}\ (M).
+ \tag{A4}
+\]
+The channel, order, and complete valuation vector remain part of the return.
+The Type I/II framework is inherited \cite[\S2, Propositions 2.2 and 2.6]{ET}.
+
+\section{Exact infinite exponent arithmetic with positive coefficients}
+The next construction starts from the prime factors in (A1), not from the
+already computed defect or success projector.
+
+\begin{theorem}[Positive rational carriers and full coefficient fibres]
+In $\mathbb Q[\Gamma_R][[z]]$,
+\[
+ \boxed{\sum_{e\ge0}P^E_{g,e}z^e
+  =\frac{1+z[g]}{(1-z)(1-z[g]^2)},\qquad
+ \sum_{e\ge0}P^M_{g,e}z^e
+  =\frac{1+z}{(1-z[g])(1-z[g]^{-1})}.}
+ \tag{P1}
+\]
+Both right sides have specified positive geometric expansions. Each coefficient
+has a bijection with the original bounded exponent choices.
+\end{theorem}
+\begin{proof}
+For E expand the two geometric series and the two-term numerator. Their
+indices $(j,k,\varepsilon)\in\mathbb N^2\times\{0,1\}$ give
+$e=j+k+\varepsilon$, $f=2k+\varepsilon$. Conversely
+$\varepsilon=f\bmod2$, $k=(f-\varepsilon)/2$,
+$j=e-k-\varepsilon$. These are nonnegative exactly on $0\le f\le2e$.
+For M the corresponding map is
+$e=j+k+\varepsilon$, $\beta=j-k$. Its inverse is
+$\varepsilon=(e-\beta)\bmod2$,
+$j=(e-\varepsilon+\beta)/2$, $k=(e-\varepsilon-\beta)/2$;
+nonnegativity is exactly $|\beta|\le e$.
+\end{proof}
+The rational equalities are in the ordinary formal group algebra. The
+\emph{positive expansions} have canonical sparse split lifts. The denominator
+expressions are not asserted to have global inverses in $G(\mathbb Q)[\Gamma_R][[z]]$.
+This distinction is precisely (S4), now at infinite formal degree. Every
+coefficient is a finite sum with its original labelled terms, so no divergent
+summation or choice of analytic branch is involved.
+
+\begin{theorem}[Periodic count formula and exact finite capacity reduction]
+Let $o=\operatorname{ord}_{\Gamma_R}(g)$ and write $e=r+ok$, $0\le r<o$.
+For either channel,
+\[
+ \boxed{P^c_{g,e}=P^c_{g,r}+2k\sum_{h\in\langle g\rangle}[h].}
+ \tag{P2}
+\]
+In particular its coefficient support is unchanged by replacing $e$ with
+$\min(e,\lfloor o/2\rfloor)$. That capacity is the least one at which the
+whole subgroup is filled. Counts are not unchanged by this support reduction.
+\end{theorem}
+\begin{proof}
+Increasing $e$ by $o$ adds $2o$ consecutive exponents in E. In M it adds
+$o$ exponents at each end. Each added block of length $o$ traverses the
+subgroup once, proving (P2) by iteration. A consecutive interval of length
+$2e+1$ covers the cyclic subgroup exactly once its length reaches $o$.
+Below $\lfloor o/2\rfloor$ that length is smaller than $o$. Nonnegative
+convolution preserves equality of supports, so the reduction holds independently
+in every factor of a product.
+\end{proof}
+Thus every fixed finite residue alphabet has an explicit multiaffine
+quasipolynomial count on each residue class of its exponent parameters modulo
+their orders: multiply the linear expressions (P2). This formula keeps arbitrarily
+large multiplicities with finitely many group coordinates.
+
+If several \emph{distinct} original primes have the same residue $g$, their
+coefficient supports combine as one interval with capacity
+$E_g=\sum_{q\equiv g}e_q$. Their counts instead retain
+\[
+ C_g(T)=\prod_{q\equiv g}(1+T+\cdots+T^{2e_q})
+ \tag{P3}
+\]
+in E, and the analogous centered polynomial in M. The full inverse fibre of
+aggregate exponent $f$ is all $(f_q)$ with $0\le f_q\le2e_q$ and
+$\sum f_q=f$. Equivalently choose the coordinates successively and retain the
+interval bounds imposed by the remaining capacities. These fibres are nonempty
+for every $0\le f\le2E_g$, by induction on the number of intervals.
+For two factors the fibre length is
+$\min(2e_1,f)-\max(0,f-2e_2)+1$. One prime of multiplicity two has five choices;
+two distinct primes of multiplicity one have nine. Their residue supports agree
+but their original amplitudes do not.
+
+\section{Complete local classification at residual 27}
+Here $\Gamma_{27}=\langle2\rangle$ has order 18. The two target logarithms
+are 7 in E and 9 in M. For $1\le j\le17$ put
+\[
+ E_j(a)=\sum_{q\equiv2^j\ (27)}v_q(a),\qquad
+ c_j=\left\lfloor\frac{18/\gcd(j,18)}2\right\rfloor.
+ \tag{C1}
+\]
+The identity-residue primes do not alter target existence; their coefficient
+polynomials and factors in $a$ remain retained.
+
+\begin{theorem}[Complete finite conductor at $R=27$]\label{thm:27}
+There are exactly 174 coordinatewise minimal nonnegative capacity profiles
+for which E or M has a target. They comprise 9 one-class profiles, 99 two-class
+profiles and 66 three-class profiles. No minimal profile uses more classes.
+Their maximum total capacity is nine.
+
+For every $a>27/2$ coprime to 27, a channel hit exists if and only if its
+profile $(E_j(a))$ dominates one of those 174 profiles. Consequently any hit
+has a witness obtained by reserving at most nine \emph{actual prime occurrences}
+in $a$, belonging to at most three nonidentity residue classes modulo 27.
+All surplus factors remain in the original $a$ and ordered reconstruction.
+\end{theorem}
+\begin{proof}[Proof, including the finite certificate boundary]
+Equation (P3) identifies coefficient \emph{support} with the aggregate interval
+model. Equation (P2) reduces every capacity to $0\le E_j\le c_j$, preserving
+target existence. Occupancy is increasing in every capacity. These reductions
+apply to every exponent, not just a computed range.
+
+The following complete finite calculation identifies its minimal occupied
+profiles. Its full output and target words are in \texttt{catalogue27.json}.
+First enumerate all $2^{17}=131072$ zero/one supports. A support $S$ has
+18-bit masks $V_E(S),V_M(S)$, with the empty mask $\{0\}$. If $j\in S$ is
+removed and $W$ is the preceding mask, its update is
+\[
+ V_E=W\cup(W+j)\cup(W+2j),\qquad
+ V_M=W\cup(W+j)\cup(W-j),
+ \tag{C2}
+\]
+with residues modulo18. Test membership of 7 and 9. This leaves 360 misses,
+256 with only even logarithms and 104 with at least one odd logarithm.
+A profile supported on even logarithms can never reach either odd target at
+any multiplicity. For each of the other 104 supports enumerate its positive
+capacities $1\le E_j\le c_j$, a total of 14040 profiles, using the same interval
+updates. Keep an occupied profile precisely when all its immediate coordinate
+predecessors miss. Together with the 85 squarefree minimal profiles this gives
+174, with arity counts $9,99,66$ and maximum capacity sum nine. Both the masks
+and the exact finite loop bounds are reproduced by the standalone verifier;
+each retained profile includes a target word and every immediate predecessor
+is separately checked.
+
+An independent checker uses original unit residues, not logarithmic bit masks.
+It starts at the zero profile and explores every unoccupied profile in the
+capped grid. It visits 62812 such profiles and 629841 upward edges. Every
+occupied boundary edge (567030 in total) dominates a listed profile whose
+witness and minimality have already been checked in original residues.
+Thus every monotone path either remains unoccupied or first crosses a checked
+occupied boundary. This independently verifies the complete antichain, rather
+than merely corroborating selected entries. It is a finite computer-assisted
+proof of the displayed small classification; its general reduction was proved
+before enumeration.
+
+Finally, for a dominated minimal profile reserve its indicated number of
+actual occurrences in each residue class. Allocate its target exponent to
+those primes within their reserved capacities, using the interval fibres
+(P3); this is always possible. E uses the resulting raw exponents. M uses
+those centered exponents, with every unreserved prime at its original central
+exponent. Equations (A3)--(A4) give the original marked integer witness.
+\end{proof}
+
+\paragraph{A short counterfactual consequence.}
+The 104 squarefree misses containing an odd logarithm have arity distribution
+$7,45,43,9$ at arities $1,2,3,4$. Hence, if the prime divisors of $a$ occupy
+at least five distinct nonidentity residue classes modulo27 and at least one
+is $2\bmod3$, the residual-27 shell necessarily has a hit. This criterion is
+pointwise and uses only the given factorization, not an already-found divisor.
+If such an odd-logarithm shell misses and has exactly four nonidentity classes,
+its class set must be one of
+\[
+\begin{gathered}
+ \{5,10,19,23\},\ \{5,8,11,13\},\ \{8,11,13,25\},\\
+ \{2,4,7,17\},\ \{5,10,14,19\},\ \{10,14,19,23\},\\
+ \{2,4,14,22\},\ \{2,4,14,17\},\ \{2,4,7,14\}.
+\end{gathered}
+\]
+Further multiplicity restrictions are exactly the 174-profile avoidance test;
+these nine support sets alone are necessary, not sufficient, for failure.
+The alternative with every prime divisor $1\bmod3$ may contain arbitrarily
+many occurrences and occupies only even logarithms, so it genuinely misses
+this fixed residual. No global contradiction is claimed from this alternative.
+
+The nine-occurrence bound is sharp for the local residue-profile model:
+for the sole residue $23=2^{11}$, the E word requires raw exponent
+$17\bmod18$, and M requires centered exponent $9\bmod18$.
+Both first become available at capacity nine. No assertion that the
+corresponding minimal prime instance has been found is needed.
+
+Three residue classes really are necessary at a hard prime. At
+\[
+ p=19489\equiv169\pmod{840},\quad a=4879=7\cdot17\cdot41,\quad R=27,
+\]
+the complete 54-state shell has one hit:
+\[
+ E:\quad u=580601=7^2 17^2 41,\quad
+ (h,r,s,\kappa)=(41,119,1,85896),
+\]
+\[
+ (X,Y,Z)=(4879,3521736,8167578435576).
+ \tag{C3}
+\]
+Every proper class subbudget misses both targets. The centred vector of this
+E witness is $(1,1,0)$; the third class nevertheless occurs in its \emph{raw}
+exterior target word. The arity statement refers to the declared E-raw/M-centered
+budget model, not to the number of nonzero entries in every alternative chart.
+Trial division through 139 proves primality. The catalogue, residues and
+ordered inverse are all checked exactly.
+
+\section{A hand-verifiable infinite-family subtheorem}
+\begin{theorem}[All multiplicities for the $1,7,11$ residue family]
+Suppose every prime factor of $a$ is $1,7$, or $11$ modulo 27. Let
+$A=\sum_{q\equiv7}v_q(a)$ and $B=\sum_{q\equiv11}v_q(a)$. Then
+\[
+ \boxed{
+ E\ne\varnothing\iff
+ B\ge7\ \lor\ (A\ge1,\ B\ge3)\ \lor\ (A\ge2,\ B\ge1),}
+ \tag{T1}
+\]
+\[
+ \boxed{
+ M\ne\varnothing\iff
+ B\ge9\ \lor\ (A\ge1,\ B\ge5)\ \lor\ (A\ge2,\ B\ge1).}
+ \tag{T2}
+\]
+Additional residue classes preserve sufficiency of these patterns but not
+necessity. No assumption of primality for $n=4a-27$ is required.
+\end{theorem}
+\begin{proof}
+The logarithms of 7 and 11 to base2 are $-2,-5$ modulo18. E is therefore
+$2i+5j\equiv11\pmod{18}$ with $0\le i\le2A$, $0\le j\le2B$.
+If $B=0$, parity excludes the target. If $A=0$, $j\equiv13\pmod{18}$,
+so $B\ge7$. For $A=1$, the values $i=0,1,2$ require least nonnegative
+$j=13,9,5$; hence $B\ge3$. If $A\ge2$, $(i,j)=(3,1)$ suffices as soon
+as $B\ge1$. These exhaust all cases.
+
+M is $2r+5s\equiv9\pmod{18}$ with $|r|\le A$, $|s|\le B$.
+Again $B=0$ fails. At $A=0$ the least possible $|s|$ is9. At $A=1$
+the three possibilities $r=-1,0,1$ have minimum possible $|s|$ respectively
+$5,9,5$. At $A\ge2$, $(r,s)=(2,1)$ suffices when $B\ge1$.
+The bounded composition fibres (P3) restore actual distinct prime factors;
+residue1 factors do not change these congruences.
+\end{proof}
+
+The known empty shell $p=3361,a=847=7\cdot11^2$ has $(A,B)=(1,2)$.
+Its failure is an inherited regression, not a new ES counterexample
+\cite[\S2]{Boolean}. The theorem explains its exact threshold failure.
+Adding one actual factor7 gives
+\[
+ a'=5929=7^2 11^2,\quad p'=23689\equiv169\pmod{840}.
+\]
+Its three hits include
+\[
+ M:\quad u=11,\quad(h,r,s,\lambda)=(11,1,539,20),
+ \quad (X,Y,Z)=(5929,2809041620,5211580).
+ \tag{T3}
+\]
+Primality is checked by all possible divisors through153.
+This is an actual arithmetic extension, not an abstract activation of $e$.
+For $a'=ta$, $n'=t(n+R)-R$ and $\gcd(t,R)=1$, the old E state embeds by
+$u'=u$ and the old M state by $u'=tu$. Both retain their exact denominator
+defect, since their gates are respectively unchanged and multiplied by $t$.
+The inverse on the marked image is immediate from $t$. All three new hits
+lie outside these old images. This does not prove a same-prime descent:
+$n'$ and $n$ are explicitly different.
+
+As a check of genuinely unbounded multiplicity, for the symbolic
+$a=7^{10^{12}}11^{10^{12}+1}$, (P2) calculates without expanding $a$ or its
+box the one-channel mass and counts
+\[
+\begin{array}{c|r}
+\text{mass}&4000000000008000000000003\\
+E&222222222222555555555555\\
+M&222222222222777777777778.
+\end{array}
+\]
+No primality claim for the corresponding enormous $n$ is made.
+
+\section{An exact infinite Dirichlet carrier for the same arithmetic}
+For fixed $R$, define $\mathsf P_c(a)=\prod_{q^e\parallel a}P^c_{q\bmod R,e}$
+for $(a,R)=1$, and
+\[
+ \mathscr F_c(s)=\sum_{(a,R)=1}\mathsf P_c(a)a^{-s}.
+\]
+These are locally finite formal Dirichlet series first. For $\sigma=\Re s>1$
+they converge absolutely in the group-algebra coefficient $\ell^1$ norm, since
+\[
+ \sum_{(a,R)=1}\tau(a^2)a^{-\sigma}
+ =\prod_{q\nmid R}\frac{1+q^{-\sigma}}{(1-q^{-\sigma})^2}
+ \le\frac{\zeta(\sigma)^3}{\zeta(2\sigma)}.
+ \tag{D1}
+\]
+Uniqueness of the prime-factorization indices and the coefficient bijections
+in (P1) justify the exact Euler products. In particular no success indicator
+has been inserted before constructing the series.
+
+For a Dirichlet character $\chi\bmod R$, including imprimitive ones, put
+$\zeta_R(s)=\prod_{q\nmid R}(1-q^{-s})^{-1}$. Applying $\chi$ to the
+finite group coordinate gives
+\[
+ \boxed{
+ \chi(\mathscr F_E(s))=
+ \frac{\zeta_R(s)L(s,\chi)L(s,\chi^2)}{L(2s,\chi^2)},\qquad
+ \chi(\mathscr F_M(s))=
+ \frac{\zeta_R(s)}{\zeta_R(2s)}L(s,\chi)L(s,\chi^{-1}).}
+ \tag{D2}
+\]
+For E, rewrite $1+\chi(q)z=(1-\chi(q)^2z^2)/(1-\chi(q)z)$ in (P1).
+For M use $1+z=(1-z^2)/(1-z)$. These prove (D2) prime by prime in the
+absolutely convergent half-plane. The $L$-function conventions and their
+Euler products are standard \cite[25.15.1--25.15.4]{DLMF}; no primitive
+replacement or missing Euler factor at a prime dividing $R$ is permitted.
+Finite character inversion gives the generating series of actual target
+counts by $|\Gamma_R|^{-1}\sum_\chi\overline{\chi(t_c)}\chi(\mathscr F_c)$.
+This amplitude observation retains the full original series as its source;
+it is not a support-faithful inverse by (S4).
+
+There is an explicit uniform-in-$R$ tail. Prime-exponent comparison gives
+$\tau(a^2)\le d_3(a)$, since $2e+1\le(e+1)(e+2)/2$.
+Counting ordered factorizations yields
+$\sum_{a\le T}d_3(a)\le T(1+\log T)^2$.
+Writing $a^{-\sigma}=\sigma\int_a^\infty t^{-\sigma-1}dt$, summing
+nonnegative terms, and dropping the subtracted initial count gives, for $X\ge1$,
+\[
+ \boxed{
+ \sum_{a>X}\tau(a^2)a^{-\sigma}
+ \le \sigma X^{1-\sigma}
+ \left[\frac{(1+\log X)^2}{\sigma-1}
+ +\frac{2(1+\log X)}{(\sigma-1)^2}
+ +\frac2{(\sigma-1)^3}\right].}
+ \tag{D3}
+\]
+This proves the claimed convergence and explicit tail. The Euler carrier
+uses all positive $a$ coprime to $R$, including its finite nonphysical prefix.
+The actual first-half positive-shell carrier is its restriction to $a>R/2$:
+in the ordinary amplitude series one subtracts the explicitly retained finite
+Dirichlet polynomial $\sum_{a\le R/2,(a,R)=1}\mathsf P_c(a)a^{-s}$.
+In the split carrier this is restriction of the index set with the removed
+prefix recorded, not cancellation relabelled as absence. The result concerns
+the full infinite arithmetic array at fixed modulus, not a nonzero coefficient
+at every index. Nor is it the Gamma/period kernel of the other programme.
+Imposing that $4a-R$ is prime changes the coefficient subsequence and does
+not preserve the asserted Euler product without another argument.
+
+\section{Verification, provenance and the remaining pointwise obligation}
+The general inverse obstruction, positive coefficient maps, periodic formulas,
+capacity reduction, two-class theorem and Dirichlet identities have the proofs
+above. The 174-pattern theorem has the stated exhaustive finite certificate,
+checked by two independently implemented algorithms; this is not independent
+mathematical review.
+
+The full residual-27 classification was also applied to all 4519 primes at
+most two million in the six stipulated hard classes modulo840. It matched
+actual counts in every instance: 1214 occupied residual-27 shells, 1880 E
+states and 1800 M states. This is not new prime coverage. An independent
+small-modulus check includes all first-half shells of 44 primes $1\bmod4$
+through500, with 80032 canonical candidates and 1043 hits. Every output
+witness is checked through (A4). No assertion about other residuals is
+inferred from these tables.
+
+For a hypothetical false prime, the profile of $a=(p+27)/4$ must avoid all
+174 exact patterns. Analogous fixed-residual classifications can be generated
+from (P2), but $R=27$ alone is not a universal selector. The next arithmetic
+step must connect different shells of the \emph{same} $p$, retaining
+\[
+ a_{R+4t}=a_R+t,\qquad \gcd(a_R,a_R+t)=\gcd(a_R,t).
+\]
+Neither the validity of these identities nor an invertible ordinary Fourier
+matrix proves that one of those correlated profiles is occupied. The work
+here stops before that implication. It replaces further defect-based
+repackaging by actual occurrence-level arithmetic and identifies exactly why
+support activation and amplitude inversion cannot supply the implication on
+their own. No historical-priority, Lean-build, global ES, or RH claim is made.

@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-15",
+  "publication_revision": {
+    "repository": "KokunoYumeto/erdos-straus-foundation",
+    "base_revision": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+    "mode": "additive research branch"
+  },
+  "github": {
+    "repository": "KokunoYumeto/zeta-function-research-reader",
+    "main_observed": "98c3c5f287231aa4f42cba19a7ab827ae3afffae",
+    "read_path": "formal/splitzero/DERIVED_MATHEMATICS.md",
+    "git_blob": "fe05d32ccd314daac7c59d225c9cac3d4c1bf3d3",
+    "read_scope": "Lines 1-135, original reconstruction and internal quotient/homology; no source-wide Lean or PDF review"
+  },
+  "local_source_notes": [
+    {
+      "public_reference": "Globalization Semiring Analysis",
+      "version": 1,
+      "locator": "Theorem 6.1 and section 6.2, source lines 6780-6949",
+      "used": "Definition of G(A), the absent/supported-zero distinction, and the mixed-support monad",
+      "distribution": "The protected source text is not redistributed; this record gives only the mathematical locator and use."
+    },
+    {
+      "public_reference": "Support-Completed Center Sectors, Koide Null Forms, and Fourier-Zero Removal in Residual Erdos-Straus Shells",
+      "version": "May 2026 source edition",
+      "locator": "Abstract and the section titled 'The quotient target has no Fourier blind spot'",
+      "used": "Ordinary C6 target and its full Fourier support"
+    },
+    {
+      "public_reference": "Boolean product formulation research note",
+      "version": "12 September 2026 source edition",
+      "locator": "Section 2, source lines 8330-8468",
+      "used": "The empty p=3361, a=847, R=27 shell; centered-divisor equations; and typed-target cautions",
+      "distribution": "No private transcript or platform identifier is included in the public package."
+    }
+  ],
+  "primary_literature": [
+    {
+      "author": "Elsholtz, C., and Tao, T.",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "locator": "arXiv:1107.1010, section 2, Propositions 2.2 and 2.6",
+      "url": "https://arxiv.org/abs/1107.1010",
+      "used": "Inherited Type I/II framework; the present ordered identities are rederived in A3-A4"
+    },
+    {
+      "author": "National Institute of Standards and Technology",
+      "title": "Digital Library of Mathematical Functions",
+      "locator": "Sections 25.15.1, 25.15.2, and 25.15.4",
+      "url": "https://dlmf.nist.gov/25.15",
+      "used": "Dirichlet L-series, Euler factors, and imprimitive conventions; the fixed-residual factor products are derived explicitly"
+    }
+  ],
+  "novelty_search": {
+    "queries": [
+      "Erdos Straus exponent saturation",
+      "split zero group algebra units",
+      "Erdos Straus 7 11 27 divisor",
+      "Erdos Straus generating function exponents",
+      "split-zero convolution units"
+    ],
+    "assessment": "No matching exact 174-profile classification or exact combined scalar application was established by this scoped search. General group periodicity, Lagrange-type coefficient ideas, and Euler products are classical. No historical-priority conclusion is made."
+  },
+  "not_claimed": [
+    "No source-wide audit of the cited SplitZero repository",
+    "No independent review",
+    "No new Lean build",
+    "No universal Erdos-Straus or Riemann-hypothesis theorem",
+    "No historical-priority determination",
+    "No private transcript redistribution",
+    "No merge or review decision is implied by publication on an additive branch"
+  ]
+}

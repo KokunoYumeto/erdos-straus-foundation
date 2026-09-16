@@ -1,0 +1,12 @@
+{
+  "bound": 120,
+  "counts": {
+    "integers_per_channel_modulus": 1268,
+    "local_factor_coefficients": 1800
+  },
+  "nonclaims": [
+    "No numerical infinite sum used",
+    "No pointwise occupancy inferred from an Euler product"
+  ],
+  "scope": "exact Dirichlet coefficients for a<=bound; fixed residuals 3,7,11,15,23,27,35"
+}
