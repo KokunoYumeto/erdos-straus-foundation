@@ -1,0 +1,417 @@
+\section{The arithmetic direction selected by the sweep}
+The recent continuations fall into three mathematically different classes.
+First, the marked divisor and cofactor correspondences, exact factor-capacity
+bounds, and actual-word inverses can produce an integral solution. Second,
+SplitZero reconstruction, relation weights, uniform filters, and completed
+homotopies protect a computation against loss of information, but their formal
+properties alone also hold for prescribed all-failure arrays. Third, the
+Leech/monodromy maps have precise retained fibres, but no integral selection
+inequality follows just from those inverses. The present continuation pushes
+the first class using a coefficient calculation compatible with the second;
+it neither discards nor extends the third.
+
+The earlier archive already contains a Star--Kneser target-forcing theorem
+\cite[\S12.1, Theorem 12.1, pp.~37--38]{Archive}. Only that local theorem and its
+proof are used, not the global conclusion claimed elsewhere in that document.
+The new finite comparison also includes short words in \emph{both} residual
+and cofactor roles. Comparing only to the preceding sufficient capacity bound
+would overstate the computational improvement.
+
+The SplitZero convention is retained:
+\[
+ G(A)=\{\tau\}\sqcup A^\bullet,\qquad e=0_A^\bullet\ne\tau.
+\]
+In particular, coefficient reduction can kill an even positive amplitude
+without making its original label absent. The scalar $e$ is not an exterior
+channel tag, nor a prime multiplicity; those have separately named fields.
+
+\section{Original fixed-seed arithmetic and the two cyclic charts}
+Fix
+\[
+ k\ge3,\quad u=2^{2k-5},\quad m=2^k,\quad o=2^{k-2},\quad
+ p\equiv1\pmod8,\quad p>2u,\qquad N=p+4u.                 \tag{A1}
+\]
+Primality is not needed for the structural theorem. Write the actual integer
+factorization as $N=\prod_q q^{e_q}$, with distinct primes $q$.
+The factorization is input, not a proposed efficient factorization algorithm.
+The original middle states at this fixed seed are in bijection with
+\[
+ \boxed{Q\mid N,\quad Q\equiv-1\pmod m,\qquad
+ R=N/Q,\quad a=(p+R)/4.}                                  \tag{A2}
+\]
+Indeed $K(u)=2^{k-2}$ and $u\mid a^2$ is equivalent to $K(u)\mid a$.
+Since $m\mid4u$, the congruence in (A2) gives $R\equiv-p\pmod m$, hence
+$K(u)\mid a$. Both $R$ and $Q$ are $3\pmod4$, so at least three, and
+$N<3p$ makes each less than $p$. Also $R\mid p+4u$ implies $R\mid a+u$.
+Conversely the original conditions imply (A2). This proves all range and
+availability conditions rather than importing mere CRT compatibility.
+
+With $d=\gcd(a,u)$, retain
+\[
+ (h,r,s_0)=(d^2/u,u/d,a/d),\quad
+ \lambda=(r+s_0)/R,\qquad
+ (x,y,z)=(a,phs_0\lambda,phr\lambda).                       \tag{A3}
+\]
+Prime valuations prove integrality of $h,r,s_0$, $a=hrs_0$, $u=hr^2$ and
+$\gcd(r,s_0)=1$. As $\gcd(N,u)=1$, all these factors are units modulo $R$;
+the gate gives $R\mid r+s_0$. Multiplication of the reciprocal sum by
+$phrs_0\lambda$ gives $(p+R)\lambda=4hrs_0\lambda$.
+The complete ordered divisor inverse is
+\[
+ \boxed{u=\frac{pa^2}{Ry-pa}.}                              \tag{A4}
+\]
+The original exponents in $a$, its centered divisor vector, and the middle
+channel travel with (A3). The Type II parametrization is inherited
+\cite{ET,TwoBlock}; the forcing calculation below is not attributed to it.
+
+There are two useful cyclic subgroups:
+\[
+ H_3=\langle3\rangle=\{x:x\equiv1,3\pmod8\},\qquad
+ H_{-3}=\langle-3\rangle=\{x:x\equiv1,5\pmod8\},            \tag{A5}
+\]
+of order $o$ in $(\mathbb Z/m)^\times$. Neither contains $-1$, and both
+contain $p$. The identity $v_2(3^{2^j}-1)=j+2$ for $j\ge1$, proved by
+successive factorization of a difference of squares, gives the orders;
+reduction modulo eight then identifies the two subgroups. Finite logarithms
+in either chart are uniquely lifted one binary digit at a time.
+
+Fix $b\in\{3,-3\}$. For every $q\in H_b$ let
+$q\equiv b^{a_q}$, $0\le a_q<o$, and let $p\equiv b^s$, $0\le s<o$.
+Ignore identity logarithms only in the selected packet. For each remaining
+prime define
+\[
+ w_q=2^{v_2(a_q)},\quad E_q=e_q.
+\]
+If $s\ne0$, add one \emph{phase item}, with logarithm $-s\bmod o$,
+weight $w_p=2^{v_2(s)}$ and capacity one. It is not a prime factor of $N$.
+The choice of that item will record residual versus cofactor orientation.
+For $q\equiv1\pmod8$, its nonzero weight equals
+$2^{v_2(q-1)-2}$; the item is an identity when $v_2(q-1)\ge k$.
+The other inside residue class has weight one. These formulas let the
+capacity test run without a discrete logarithm.
+
+\section{A complete bounded criterion for reaching the top layer}
+\begin{lemma}[Bounded dyadic selection]\label{lem:coins}
+Let $o=2^n$, $n\ge1$. Given weights $w_i\in\{1,2,\ldots,2^{n-1}\}$
+that are powers of two and capacities $E_i\in\mathbb Z_{\ge0}$, there are
+integers $0\le c_i\le E_i$ with
+\[
+ \sum_i c_iw_i=o-1                                        \tag{B1}
+\]
+if and only if all the actual prefix capacities satisfy
+\[
+ \boxed{\sum_{w_i\le2^j}E_iw_i\ge2^{j+1}-1,
+ \qquad0\le j<n.}                                        \tag{B2}
+\]
+The selected items and their original labels can be reconstructed finitely.
+\end{lemma}
+\begin{proof}
+Modulo $2^{j+1}$, the contribution of weights at most $2^j$ must be
+$2^{j+1}-1$, so its nonnegative total is at least that amount. This proves
+necessity. For sufficiency, aggregate capacities by denomination, keeping a
+list of the original labels. Select one unit coin, which (B2) supplies.
+Pair all remaining unit coins and replace each pair by a labelled coin of
+weight two, leaving at most one unused unit. Divide all remaining weights
+by two. The new capacity through denomination $2^j$ equals
+\[
+ \left\lfloor\frac{C_{j+1}-1}{2}\right\rfloor
+ \ge2^{j+1}-1,
+ \quad C_{j+1}=\sum_{w_i\le2^{j+1}}E_iw_i.
+\]
+Induction supplies $2^{n-1}-1$ in the divided system. Expanding each paired
+coin gives (B1) with no occurrence used twice. Ties between labels are
+resolved in their retained input order.
+
+The executable uses the equivalent descending-denomination greedy selection.
+Its exchange proof is as follows. Among coins strictly smaller than a
+power of two $w$, any multiset of total at least $w$ contains a submultiset
+of total exactly $w$: pair coins upwards; if no weight-$w$ coin is produced,
+at most one unpaired coin of each lower weight remains, of total at most
+$w-1$. If a representation uses fewer available weight-$w$ coins than the
+greedy choice, exchange a lower submultiset of mass $w$ for another such coin.
+Iterating preserves a representation and proves the greedy inverse.
+\end{proof}
+
+Let $X$ denote a cyclic basis element, not an arithmetic denominator. In
+characteristic two the full cyclic coefficient algebra has the explicit
+isomorphism
+\[
+ \mathbb F_2[C_o]=\mathbb F_2[X]/(X^o-1)
+ \cong\mathbb F_2[T]/(T^o),\qquad T=X+1,\quad X=T+1.        \tag{B3}
+\]
+For $a\not\equiv0\pmod o$,
+\[
+ \operatorname{ord}_T(1+X^a)=2^{v_2(a)}.                   \tag{B4}
+\]
+To see this, write $a=2^vr$ with $r$ odd and use
+$1+(1+T)^a=1+(1+T^{2^v})^r$; its first term is $T^{2^v}$.
+All basis coefficients and the inverse Pascal transform are explicit in (B3).
+This is an ordinary coefficient-algebra isomorphism; it is not asserted to
+be an inverse in the global sparse split semiring.
+
+\begin{theorem}[Actual-factor top-socle packet]\label{thm:top}
+Suppose the items of (A5), including the optional phase item, satisfy (B2).
+Choose $c_i$ as in (B1). Then
+\[
+ \boxed{\prod_i(1+X^{a_i})^{c_i}
+ =T^{o-1}=1+X+\cdots+X^{o-1}\quad\text{in }\mathbb F_2[C_o].} \tag{B5}
+\]
+There is an actual unweighted, bounded exponent subfamily whose integer
+coefficient at \emph{every} cyclic residue is positive and odd.
+\end{theorem}
+\begin{proof}
+By (B4), the product is $T^{o-1}$ times a unit with constant term one.
+All its higher terms vanish modulo $T^o$, proving the first equality.
+Repeated squaring gives
+$T^{o-1}=\prod_{j=0}^{n-1}(1+X^{2^j})=\sum_{r=0}^{o-1}X^r$.
+
+Write $f\preceq c$ when every binary one-bit of $f$ is also a one-bit of
+$c$. Frobenius gives the exact coefficient identity
+\[
+ (1+Y)^c=\prod_{j:\,c_j=1}(1+Y^{2^j})
+ =\sum_{f\preceq c}Y^f\quad\bmod2.                       \tag{B6}
+\]
+Use the integer packet
+\[
+ P(X)=(1+X^{-s})^\delta
+       \prod_{q:\,c_q>0}\left(\sum_{f_q\preceq c_q}X^{a_qf_q}\right),
+ \quad\delta\in\{0,1\}.                                 \tag{B7}
+\]
+Each original prime exponent appears once and satisfies
+$0\le f_q\le c_q\le e_q$. Reduction of (B7) is (B5), so every original
+coefficient is odd, hence at least one. Distinct exponent vectors that give
+the same residue are still counted separately.
+\end{proof}
+
+The group-algebra and binary-cover mechanisms are classical. In particular,
+Greene--Higgins \cite[\S1; Theorem 12, p.~7]{GH} describe perfect cyclic
+$2$-group covers and their generating polynomials. Here (B7) need not be a
+perfect or uniform cover: for logs $(1,3,5)$ and selected capacities
+$(3,3,1)$ in $C_8$, its integer coefficients are
+\[
+ (5,5,3,5,3,3,5,3).
+\]
+Their parity is one everywhere, but the number of original preimages is not
+constant. This is why the positive integer packet, its reduction, and its
+full inverse fibres remain separate.
+
+The top line $\mathbb F_2T^{o-1}=\ker(T)$ is nonzero but has augmentation
+zero, since $o$ is even. Thus ordinary augmentation is a receiving supported
+zero although every original residue is occupied. The result does not infer
+positivity from the existence of an abstract socle: it proves that an actual
+bounded arithmetic product equals its nonzero top element. Exceeding the top
+degree can instead give zero, so the exact equality (B1) is necessary for this
+particular proof. No identification with a theta metric is used.
+
+\section{Terminating return to original denominators and counts}
+\begin{theorem}[Original witness from the packet]\label{thm:return}
+Under (A1), if (B2) holds in either cyclic chart and an actual prime divisor
+$q_0\mid N$ lies outside that chart, the fixed-seed original middle branch
+contains a positive integral ES witness.
+\end{theorem}
+\begin{proof}
+The element $-q_0^{-1}$ lies in $H_b$; let its logarithm be $r$.
+By (B7), choose an actual bounded vector and phase bit with
+\[
+ Bp^{-\varepsilon}\equiv-q_0^{-1}\pmod m,
+ \quad B=\prod_q q^{f_q},\quad f_q\preceq c_q,
+ \quad\varepsilon\in\{0,\delta\}.
+\]
+All prime factors of $B$ are inside the chart and hence different from $q_0$;
+therefore $q_0B\mid N$. If $\varepsilon=0$, take $Q=q_0B$ and $R=N/Q$.
+If $\varepsilon=1$, take $R=q_0B$ and $Q=N/R$. Their residues are exactly
+those of (A2). Equations (A3)--(A4) finish the original return.
+\end{proof}
+
+The algorithm multiplies suffixes of the binary factors in (B6) over
+$\mathbb F_2[C_o]$. At a target whose current coefficient is odd, exactly one
+of the two suffix coefficients for omitting or taking the next factor is odd.
+Choose it and update the target. The final target is zero, yielding the
+bounded exponent word. An even coefficient on a discarded branch is not
+asserted empty. The full fibre of a target is all retained submask vectors
+and permitted phase bits satisfying its one modular equation.
+
+For an original returned state with $q_0$, chart and role retained, read
+$Q/q_0$ or $R/q_0$ according to the role, then its actual prime valuations.
+This gives the complete inverse when it belongs to the selected submasks.
+Forgetting the selected chart, outside divisor, or role can identify different
+returns. Those are not counted as different original denominator states.
+The algorithm is finite in $o$ and the number of binary factors; factoring
+$N$ and writing large output integers retain their separate costs.
+
+\paragraph{A genuine lower count.}
+Let $M_0=\prod_{q:c_q=0}q^{e_q}$; unallocated occurrences of a partly selected
+prime are not included in this \emph{particular disjoint subfamily}.
+They still belong to the original full factorization. Define
+$A_0=\#\{t\mid M_0:t\notin H_b\}$.
+Each such $t$ has a packet word by Theorem~\ref{thm:top}.
+Unique factorization makes the return injective within each role, and every
+original $Q$ has at most two roles. Therefore
+\[
+ \boxed{C_k(p)\ge A_0\quad(\delta=0),\qquad
+ C_k(p)\ge\lceil A_0/2\rceil\quad(\delta=1).}              \tag{C1}
+\]
+The exact original mass is
+\[
+ A_0=\frac12\left(
+ \prod_{q^e\parallel M_0}(e+1)-
+ \prod_{q^e\parallel M_0}\sum_{j=0}^e\chi_b(q)^j\right),   \tag{C2}
+\]
+where $\chi_b=1$ inside $H_b$ and $-1$ outside. This expands the actual
+divisor list and preserves all multiplicities.
+
+\section{A strict original arithmetic example}
+Take the deterministically certified hard prime
+\[
+ p=852769\equiv169\pmod{840},\quad k=6,\quad u=128,
+ \qquad N=853281=3^3\cdot11\cdot13^2\cdot17.              \tag{D1}
+\]
+In the $3$-chart, $o=16$, the prime logarithms of $3,11,17$ are $1,7,4$,
+and $s=8$. The available prefix masses are $(4,4,8,16)$, compared with
+$(1,3,7,15)$. Choose $c_3=3$, $c_{11}=0$, $c_{17}=1$, and the phase once.
+The actual packet is
+\[
+ (1+X)(1+X^2)(1+X^4)(1+X^8)=\sum_{r=0}^{15}X^r.           \tag{D2}
+\]
+Here each target is represented exactly once even before reduction. Its
+augmentation modulo two is zero, not absence of those sixteen words.
+
+The outside prime $13$ has target logarithm $11$. The unique packet choice
+is $3^3p^{-1}$, so
+\[
+ R=3^3\cdot13=351,\quad Q=11\cdot13\cdot17=2431,
+ \quad(a,h,r,s_0,\lambda)=(213280,8,4,6665,19).
+\]
+The ordered reciprocal identity is
+\[
+ \boxed{\frac4{852769}=
+ \frac1{213280}+\frac1{863923218520}+\frac1{518483552}.}     \tag{D3}
+\]
+The original factorization $a=2^5\cdot5\cdot31\cdot43$ gives centered
+vector $(2,-1,-1,-1)$ for $u=128$.
+The full divisor enumeration has just this one target cofactor.
+It has three prime occurrences, while its complementary residual has four;
+no prime or two-prime word works in either role.
+The preceding $3,11$ paired-gap test requires $e_3\ge6$ here, whereas the
+actual exponent is three. Thus (D3) lies beyond both that sufficient bound
+and the fair two-occurrence direct baseline.
+
+The methods are not universally ordered. The inherited example
+$p=482187176641$, $k=6$, $N=3^7 11^5 37^2$ satisfies the preceding two-block
+criterion but fails (B2) in both new charts. Conversely (D1) satisfies the
+new criterion but fails that one. Both are retained.
+At $p=49681,k=6$, $N=3^3 11\cdot13^2$ the complete branch is empty and
+both new charts fail their prefix conditions. These are fixed-seed results,
+not assertions about all ES solutions at those primes.
+
+\section{A second retained constraint: concentration at an actual stabilizer}
+Let $G=(\mathbb Z/2^k)^\times$ and let $W$ be the set of original divisor
+residues of $N$. Assume $-1\notin W$ and let
+$H=\{g:gW=W\}$ be its actual stabilizer. Since $1\in W$, $-1\notin H$.
+Complementation also excludes $-p$ from $W$. Put
+$t_H=1$ if $p\in H$, and $t_H=2$ otherwise.
+Then
+\[
+ \boxed{\sum_{q\bmod m\notin H}e_q\le[G:H]-1-t_H.}         \tag{E1}
+\]
+For each nontrivial cyclic subgroup $C\le G/H$, there is the additional bound
+\[
+ \boxed{\sum_{\langle qH\rangle=C}e_q\le |C|-2.}           \tag{E2}
+\]
+These provide explicit refinements of the archived Star--Kneser interface
+\cite{Archive}; Kneser's addition theorem is classical \cite[Theorem 1]{DeVos}.
+No global claim of the archived document is an input here.
+
+\begin{proof}
+The final divisor set projected to $G/H$ has trivial stabilizer. Adjoin
+nonidentity prime occurrences one at a time by $S\mapsto S\cup qS$.
+If such a step did not enlarge $S$, it would make $S$ invariant under $q$;
+all later products would preserve this invariance, contradicting the final
+trivial stabilizer. Starting from one element, the final size is therefore
+at least one plus the number of such occurrences. It avoids $t_H$ specified
+cosets, proving (E1).
+
+For (E2), isolate occurrences whose projections generate the same cyclic
+subgroup $C$. Each is a generator of $C$. Starting with the identity, adjoining
+any such generator strictly grows the partial set unless it is already all
+of $C$: invariance under a generator would otherwise be impossible.
+Thus $|C|-1$ occurrences fill $C$. The full divisor set would then be
+$C$-invariant, a contradiction. This proves (E2).
+\end{proof}
+
+All possible target-avoiding subgroups have an explicit finite list. With
+$n=k-2$, they are the identity and
+\[
+ \boxed{H_{j,\epsilon}=
+ \left\langle(-1)^\epsilon3^{2^{n-j}}\right\rangle,
+ \quad1\le j\le n,\quad\epsilon=0,1.}                    \tag{E3}
+\]
+There are $2k-3$. Projection $G=C_2\times C_{2^n}\to C_{2^n}$ is injective
+on a subgroup avoiding $-1$. Such a subgroup is the graph of a homomorphism
+from the unique subgroup of order $2^j$ to $C_2$, giving the two choices.
+For (E1)--(E2), a candidate on this list is not called the actual stabilizer
+unless that has been verified. If every candidate is ruled out, a target is
+forced. A surviving candidate alone does not certify emptiness.
+
+A false fixed-seed branch must obey these concentration bounds and, in each
+of the two charts with an outside prime, fail at least one (B2). Explicitly,
+for some $0\le j<k-2$,
+\[
+ \sum_{\substack{q\in H_b,\ a_q\ne0\\w_q\le2^j}}e_qw_q
+ +\mathbf1_{0<w_p\le2^j}w_p
+ \le2^{j+1}-2.                                           \tag{E4}
+\]
+All other nonidentity inside factors have $q\equiv1\pmod{2^{j+3}}$.
+This is a restriction on actual factor multiplicities, not only on the
+subgroup they generate. It does not yet contradict all seed factorizations
+of one prescribed prime.
+
+\section{Finite comparison, provenance and the remaining arrow}
+The complete finite comparison uses the preceding domain $k\ge4$ at all
+4519 hard-class primes through two million, with 37289 valid fixed-seed
+branches. Direct enumeration finds 4583 original middle states in 3097
+occupied branches, occurring at 2411 primes.
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Test & branches & primes\\\midrule
+Preceding $3,11$ capacity &993&990\\
+New two-chart top packet &1139&1119\\
+Prime/two-prime words, both roles &3051&2387\\
+Previous capacity or those short words &3065&2398\\
+Same baseline or new packet &3068&2399\\
+Full divisor occupancy &3097&2411\\\bottomrule
+\end{tabular}
+\end{center}
+The three strict additional branches occur at
+$(p,k)=(852769,6),(1546729,5),(1553281,5)$; only $852769$ is a new prime
+for the fair baseline across all its seed branches. The recovered subgroup
+criteria alone certify 1753 branches at 1572 primes. These counts describe
+sufficient tests, not new overall ES coverage, a least counterexample,
+or a universal theorem. The inherited large example above proves that the
+observed finite inclusion of the old capacity test in the new one is not
+a general implication.
+
+The standalone verifier preserves all original count and inverse data and
+checks the selection theorem against bounded knapsack, packet parities
+against positive coefficients, and the concentration law against actual
+small stabilizers. A second implementation imports none of the first: it
+uses direct residue convolution, bounded knapsack, valuation weights, and
+explicitly enumerated cyclic subgroups. Reproduction receipts report their
+actual scopes; multiple runs are not multiple independent reviews.
+
+The strongest next arrow remains fixed-prime arithmetic. A hypothetical
+failure must make every relevant $p+4u$ satisfy at least one specific low-layer
+capacity deficiency or have no prime in the required complementary coset,
+while also meeting (E1)--(E2). The exact additive differences between these
+seed values constrain their factorizations; no theorem here forces their
+simultaneous avoidance to be impossible. Nevertheless the top calculation
+now proves that an \emph{actually available} bounded product has every target
+coefficient nonzero. It does not start from a success projector already
+built out of the answer.
+
+No historical-priority claim is made. The group-algebra ingredients, perfect
+binary covers, Kneser interface and Type II reconstruction are attributed.
+The particular bounded capacity, phase-role return and actual-factor
+application are proved here. No Lean build, independent mathematical review,
+analytic theta identification or universal ES proof is asserted.
