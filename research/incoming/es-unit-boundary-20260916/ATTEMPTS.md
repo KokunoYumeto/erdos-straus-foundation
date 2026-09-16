@@ -59,3 +59,9 @@ Git helper were absent and the local public remote lookup failed DNS resolution.
 Account permission is not the obstacle: the connector reports push permission.
 The response therefore creates and checks actual local commits and a portable
 Git bundle, while explicitly leaving the remote PR uncreated.
+
+## Final notation correction
+
+The full integer norm in the circulant inverse is now named `J_D`; it is not
+the relative norm `N_D` in the boundary inclusion. This removes an overloaded
+symbol in D1 without changing its proved or computed identity.

@@ -83,7 +83,8 @@ no authenticated local CLI helper was available and the local Git remote lookup
 failed DNS resolution. **No remote branch, commit or PR was created in this session.**
 
 The accompanying delivery contains a real portable local Git history: one commit
-records the preceding unpushed p-adic tranche and a second records this continuation.
+records the preceding unpushed p-adic tranche, a second records this continuation,
+and a final notation correction is separately recorded.
 It is explicitly a source-only history, not a clone of upstream main. A checked
 `git format-patch` series and a publication script allow an authenticated worker to
 create the requested research branch and draft PR without rewriting main.

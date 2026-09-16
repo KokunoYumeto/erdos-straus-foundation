@@ -1,51 +1,5 @@
 {
-  "date": "2026-09-16",
-  "runs": [
-    {
-      "command": [
-        "python",
-        "verify.py",
-        "--bound",
-        "2000000",
-        "--out",
-        "certificates"
-      ],
-      "returncode": 0,
-      "elapsed_seconds": 39.01661443710327,
-      "stdout": "{\"antecedent_checks\": 1492552, \"negative_controls\": 8, \"new_checks\": 232268, \"scan\": {\"branches\": 37289, \"hard_primes\": 4519, \"new_only_branches\": 1778, \"occupied_branches\": 3097, \"occupied_primes\": 2411, \"original_states\": 4583, \"prior_relative_branches\": 1723, \"prior_relative_primes\": 1595, \"prior_union_branches\": 3073, \"prior_union_primes\": 2402, \"relative_or_new_branches\": 1778, \"relative_or_new_primes\": 1627, \"short_three_or_prior_branches\": 3097, \"short_three_or_prior_primes\": 2411, \"union_with_new_branches\": 3074, \"union_with_new_primes\": 2403}}\n",
-      "stderr": ""
-    },
-    {
-      "command": [
-        "python",
-        "-O",
-        "verify.py",
-        "--bound",
-        "2000000",
-        "--out",
-        "certificates_optimized"
-      ],
-      "returncode": 0,
-      "elapsed_seconds": 41.99989438056946,
-      "stdout": "{\"antecedent_checks\": 1492552, \"negative_controls\": 8, \"new_checks\": 232268, \"scan\": {\"branches\": 37289, \"hard_primes\": 4519, \"new_only_branches\": 1778, \"occupied_branches\": 3097, \"occupied_primes\": 2411, \"original_states\": 4583, \"prior_relative_branches\": 1723, \"prior_relative_primes\": 1595, \"prior_union_branches\": 3073, \"prior_union_primes\": 2402, \"relative_or_new_branches\": 1778, \"relative_or_new_primes\": 1627, \"short_three_or_prior_branches\": 3097, \"short_three_or_prior_primes\": 2411, \"union_with_new_branches\": 3074, \"union_with_new_primes\": 2403}}\n",
-      "stderr": ""
-    },
-    {
-      "command": [
-        "python",
-        "check_independent.py",
-        "--input",
-        "certificates",
-        "--out",
-        "certificates/independent.json"
-      ],
-      "returncode": 0,
-      "elapsed_seconds": 3.544562339782715,
-      "stdout": "{\"checks\": 188717, \"scan\": {\"bound\": 2000000, \"branches\": 37289, \"new_certificates\": 1778, \"primes\": 4519, \"states\": 4583}}\n",
-      "stderr": ""
-    }
-  ],
-  "normal_optimized_byte_identical": true,
+  "antecedent_check_invocations": 1492552,
   "compared_main_json_files": [
     "checks.json",
     "examples.json",
@@ -53,9 +7,7 @@
     "scan.json",
     "structural.json"
   ],
-  "new_check_count": 232268,
-  "antecedent_check_invocations": 1492552,
-  "independent_check_count": 188717,
+  "date": "2026-09-16",
   "finite_input": {
     "branches": 37289,
     "hard_primes": 4519,
@@ -74,6 +26,16 @@
     "union_with_new_branches": 3074,
     "union_with_new_primes": 2403
   },
+  "independent_check_count": 188717,
+  "mathematical_json_hashes": {
+    "checks.json": "a1468b5e6b0a619acfac4116aadb18e21e8a9ad3750f7730c1c632db232fcc1e",
+    "examples.json": "828ea51fc2fac1b4840c5bd7348db75ab767c133108236ca805c97bb7396ae07",
+    "independent.json": "2748fe726cf3b9c6336a9586014083f2cb5bd087b3ba6e8f2596745c5f9423f0",
+    "negative_controls.json": "2cdbd9dc23460c1013ef297d33bab843db079b8c3d0bb0788513530bd1219a9d",
+    "scan.json": "ae475bb244c8b36756bbb8513cca1258baea2149c9b5405ef711715e1d8291c5",
+    "scan_summary.json": "ff88c729b9a8cd1761ffb903eecccd60a94d291d1ae454d8af28a4f5f4074d0c",
+    "structural.json": "1dbf8210682561920cc7a3e25127668fafdd1c692ccef886e596898c3963268e"
+  },
   "negative_controls": [
     "nonunit inversion",
     "delete actual even surplus",
@@ -84,23 +46,7 @@
     "empty branch called global counterexample",
     "parity inverse declared integral unimodular"
   ],
-  "source_hashes": {
-    "verify.py": "282c0d6b432e54333c9d93ef8ce502fd9821f4bc73b011d8557f2ba2bd1412a3",
-    "check_independent.py": "052c54a6f1900cc42be5755d96588cf4223df3a3216ab1db39ea4dac76884510",
-    "core.tex": "9c78ceb90784e3d080a04d333680dde3f540a63ba8a5c1844eb06efd37b9ae76",
-    "preprint.tex": "81c63302b53fa0921e813e4b81950149a29a1b95e0707299ea2a90ccd5c8f32c",
-    "workbench.tex": "58cdfb95ba7be72d52990a1634c93cd298fa04a506d97e26717a1b12d43da51f",
-    "references.tex": "6d2dc10fc50fc1cc853dd86e6826ed2b7914a45030637f38da4887aa023b6df7"
-  },
-  "mathematical_json_hashes": {
-    "structural.json": "1dbf8210682561920cc7a3e25127668fafdd1c692ccef886e596898c3963268e",
-    "checks.json": "a1468b5e6b0a619acfac4116aadb18e21e8a9ad3750f7730c1c632db232fcc1e",
-    "scan.json": "ae475bb244c8b36756bbb8513cca1258baea2149c9b5405ef711715e1d8291c5",
-    "independent.json": "2748fe726cf3b9c6336a9586014083f2cb5bd087b3ba6e8f2596745c5f9423f0",
-    "scan_summary.json": "ff88c729b9a8cd1761ffb903eecccd60a94d291d1ae454d8af28a4f5f4074d0c",
-    "examples.json": "828ea51fc2fac1b4840c5bd7348db75ab767c133108236ca805c97bb7396ae07",
-    "negative_controls.json": "2cdbd9dc23460c1013ef297d33bab843db079b8c3d0bb0788513530bd1219a9d"
-  },
+  "new_check_count": 232268,
   "nonclaims": [
     "No universal ES result",
     "No new global prime verification range",
@@ -108,5 +54,60 @@
     "No independent mathematical review",
     "No historical priority conclusion",
     "No remote PR created"
-  ]
+  ],
+  "normal_optimized_byte_identical": true,
+  "post_replay_text_only_correction": "Separate J_D (full integer cyclic norm) from N_D (relative norm) in D1; no code or mathematical certificate changed.",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "verify.py",
+        "--bound",
+        "2000000",
+        "--out",
+        "certificates"
+      ],
+      "elapsed_seconds": 39.01661443710327,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"antecedent_checks\": 1492552, \"negative_controls\": 8, \"new_checks\": 232268, \"scan\": {\"branches\": 37289, \"hard_primes\": 4519, \"new_only_branches\": 1778, \"occupied_branches\": 3097, \"occupied_primes\": 2411, \"original_states\": 4583, \"prior_relative_branches\": 1723, \"prior_relative_primes\": 1595, \"prior_union_branches\": 3073, \"prior_union_primes\": 2402, \"relative_or_new_branches\": 1778, \"relative_or_new_primes\": 1627, \"short_three_or_prior_branches\": 3097, \"short_three_or_prior_primes\": 2411, \"union_with_new_branches\": 3074, \"union_with_new_primes\": 2403}}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify.py",
+        "--bound",
+        "2000000",
+        "--out",
+        "certificates_optimized"
+      ],
+      "elapsed_seconds": 41.99989438056946,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"antecedent_checks\": 1492552, \"negative_controls\": 8, \"new_checks\": 232268, \"scan\": {\"branches\": 37289, \"hard_primes\": 4519, \"new_only_branches\": 1778, \"occupied_branches\": 3097, \"occupied_primes\": 2411, \"original_states\": 4583, \"prior_relative_branches\": 1723, \"prior_relative_primes\": 1595, \"prior_union_branches\": 3073, \"prior_union_primes\": 2402, \"relative_or_new_branches\": 1778, \"relative_or_new_primes\": 1627, \"short_three_or_prior_branches\": 3097, \"short_three_or_prior_primes\": 2411, \"union_with_new_branches\": 3074, \"union_with_new_primes\": 2403}}\n"
+    },
+    {
+      "command": [
+        "python",
+        "check_independent.py",
+        "--input",
+        "certificates",
+        "--out",
+        "certificates/independent.json"
+      ],
+      "elapsed_seconds": 3.544562339782715,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"checks\": 188717, \"scan\": {\"bound\": 2000000, \"branches\": 37289, \"new_certificates\": 1778, \"primes\": 4519, \"states\": 4583}}\n"
+    }
+  ],
+  "source_hashes": {
+    "check_independent.py": "052c54a6f1900cc42be5755d96588cf4223df3a3216ab1db39ea4dac76884510",
+    "core.tex": "1f15a6f9b6af79db36a663f79a558b186cbedf99ec82d207b4574c9becd32bc0",
+    "preprint.tex": "81c63302b53fa0921e813e4b81950149a29a1b95e0707299ea2a90ccd5c8f32c",
+    "references.tex": "6d2dc10fc50fc1cc853dd86e6826ed2b7914a45030637f38da4887aa023b6df7",
+    "verify.py": "282c0d6b432e54333c9d93ef8ce502fd9821f4bc73b011d8557f2ba2bd1412a3",
+    "workbench.tex": "58cdfb95ba7be72d52990a1634c93cd298fa04a506d97e26717a1b12d43da51f"
+  }
 }
