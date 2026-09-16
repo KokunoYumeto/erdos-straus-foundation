@@ -1,0 +1,24 @@
+{
+  "command": [
+    "python",
+    "/mnt/data/_es_work/prior/es_padic_capacity_20260916/check_independent.py",
+    "--input",
+    "/mnt/data/_es_work/prior_replay",
+    "--out",
+    "/mnt/data/_es_work/prior_replay/independent.json"
+  ],
+  "returncode": 0,
+  "seconds": 2.042012929916382,
+  "stdout": "{\"basis_certificates\": 258, \"checks\": 18352, \"direct_words\": 5320, \"imports_main\": false, \"largest_verified_k\": 4096, \"scope\": \"Verifies certificates, not imported Chim theorem; no giant threshold modulus expanded\"}\n",
+  "stderr": "",
+  "matched_originals": {
+    "structural.json": true,
+    "checks.json": true,
+    "thresholds.json": true,
+    "independent.json": true,
+    "bases.json": true,
+    "examples.json": true,
+    "constants.json": true,
+    "negative_controls.json": true
+  }
+}

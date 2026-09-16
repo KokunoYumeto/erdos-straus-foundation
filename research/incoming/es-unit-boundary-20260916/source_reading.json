@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-16",
+  "byline": "The Clankers",
+  "target": "KokunoYumeto/erdos-straus-foundation",
+  "ES_main": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "zeta_main": "1efd53337561d8f67cf0ac1d119acdaa222644c3",
+  "splitzero": {
+    "path": "workbenches/tau-mixed-boundary-formal/RESEARCH_NOTE.md",
+    "blob": "78537c3d0d928a9b534859bff9910ce498e13833",
+    "read_scope": "Original scalar convention; complete BR1 and BR2 with prequotient conditions. Not a source-wide analytic/Lean audit."
+  },
+  "primary_literature": [
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "locator": "arXiv:1107.1010, Section2 (2.13)-(2.22), Propositions2.6-2.7",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "scope": "Inherited TypeII coordinate background; original current map independently proved"
+    },
+    {
+      "authors": "Massey, J. L.; Costello, D. J., Jr.; Justesen, J.",
+      "year": 1973,
+      "title": "Polynomial weights and code constructions",
+      "journal": "IEEE Transactions on Information Theory 19(1),101-110",
+      "doi": "10.1109/TIT.1973.1054936",
+      "locator": "Primary repository abstract, weight-retaining property",
+      "urls": [
+        "https://orbit.dtu.dk/en/publications/polynomial-weights-and-code-constructions/",
+        "https://ntrs.nasa.gov/citations/19730033341"
+      ],
+      "scope": "Read the exact available abstract. Full primary PDF unavailable (DTU download403; NASA no download). Binary theorem proved directly; no invented detailed locator."
+    },
+    {
+      "author": "Sutherland, A. V.",
+      "year": 2017,
+      "title": "Dirichlet L-functions, primes in arithmetic progressions",
+      "locator": "MIT18.785 Lecture18, Theorem18.1, page1",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "scope": "Auxiliary prime progressions only; derived integer p not asserted prime"
+    }
+  ],
+  "antecedents": [
+    {
+      "file": "es_padic_capacity_bundle.zip",
+      "sha256": "d62671127f3addb8ba1139c9f4c44a25164aff134c2823e672c07b81d6b4a90c",
+      "read_scope": "Current core.tex fully read with Files. Its original normal verifier and separate checker replayed, not a reproof of Chim."
+    },
+    {
+      "file": "antecedent/factor_exchange.py",
+      "sha256": "7b19ae5af165a5868ed3041cab9a35cf03701d783c8754876e2c2a4e5c5fef3f",
+      "scope": "Byte-preserved main arithmetic and canonical paired-line baseline"
+    },
+    {
+      "file": "antecedent/relative.py",
+      "sha256": "346292be42a35a98834351219326dcde77da8dafb760304029d06e324017a36c",
+      "scope": "Byte-preserved canonical stride-relative baseline"
+    },
+    {
+      "file": "antecedent/antecedent/factor_exchange.py",
+      "sha256": "7b19ae5af165a5868ed3041cab9a35cf03701d783c8754876e2c2a4e5c5fef3f",
+      "scope": "Byte-preserved dependency at its required relative path"
+    }
+  ],
+  "novelty_search": {
+    "queries": [
+      "\"Erdos Straus\" \"unit correction\"",
+      "\"Erdos Straus\" \"unit\" \"relative\" \"group algebra\"",
+      "\"Erd\u0151s\u2013Straus\" \"repeated-root\"",
+      "\"Erdos Straus\" \"annihilator\""
+    ],
+    "result": "No exact earlier ES application established by this scoped content search. No historical-priority conclusion.",
+    "inherited": [
+      "BR1/BR2 boundary comparison",
+      "binary repeated-root weight retention",
+      "TypeII coordinates",
+      "prior relative norm and actual affine factor packets"
+    ],
+    "derived_here": [
+      "integer unit-corrected lower coefficient identity with labelled source fibres",
+      "complete integral index and original availability/metric comparison",
+      "all-k unique-cofactor family and exact canonical-test separation",
+      "complete-order prime examples and finite comparison"
+    ]
+  },
+  "not_imported": [
+    "Private RH/Overleaf workflow instructions in unrelated surfaced sources",
+    "An analytic theta or Gamma metric",
+    "Unproved universal ES occupancy",
+    "A full source Lean certificate for the new code"
+  ]
+}

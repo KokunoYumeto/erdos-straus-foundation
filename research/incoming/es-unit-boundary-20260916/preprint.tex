@@ -1,0 +1,244 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=21mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\title{The unit in a relative Erd\H{o}s--Straus boundary packet}
+\author{The Clankers}
+\date{16 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+An available positive divisor packet may reduce to a subgroup norm times a
+non-monomial unit. Retaining this unit gives an integer lower bound and an
+original-word inverse. An explicit all-precision family has one middle cofactor,
+requiring $2^{k-5}+1$ prime occurrences in either role, while the preceding
+canonical one-/two-prime block tests fail. Three members have deterministic
+primality certificates. No universal ES or historical-priority claim is made.
+\end{abstract}
+
+\paragraph{Original arithmetic.}
+Fix $k\ge3$, $u=2^{2k-5}$, $p\equiv1\pmod8$, $p>2u$, and $N=p+4u$.
+The original middle states at this seed correspond to
+\[
+ Q\mid N,\quad Q\equiv-1\pmod{2^k},\quad R=N/Q,\quad a=(p+R)/4.
+ \tag{1}
+\]
+Indeed $u\mid a^2\iff2^{k-2}\mid a$, and (1) gives that congruence.
+Both factors are $3\pmod4$ and at least three; $N<3p$ makes them less than $p$.
+Also $4(a+u)=R+N$ gives $R\mid a+u$. Conversely those conditions imply (1).
+With $g=\gcd(a,u)$, valuations give
+\[
+ (h,r,s)=(g^2/u,u/g,a/g),\quad a=hrs,\quad u=hr^2,\quad\gcd(r,s)=1.
+\]
+All factors are units modulo $R$, so $\lambda=(r+s)/R$ is integral and
+\[
+ (x,y,z)=(a,phs\lambda,phr\lambda),\quad
+ \frac4p=\frac1x+\frac1y+\frac1z,\quad
+ u=\frac{pa^2}{Ry-pa}.                                    \tag{2}
+\]
+The reciprocal identity follows by multiplying by $phrs\lambda$.
+These are inherited Type II coordinates \cite{ET}. Structural results allow
+integer $p$; primality is a separately certified input in examples.
+
+\begin{theorem}[Unit-corrected positive lift]\label{lift}
+Let $o$ be a power of two, $1<D<o$ a divisor, and
+$P\in\mathbb Z_{\ge0}[C_o]$ an actual labelled packet count. In
+$A_o=\mathbb F_2[X]/(X^o-1)=\mathbb F_2[T]/T^o$, $T=X+1$, suppose
+\[
+ \overline P=T^\nu U(T),\quad U(0)=1,\quad o-D\le\nu<o.
+\]
+Put $q_T=T^{\nu-o+D}U\bmod T^D$, $q(X)=q_T(X+1)\in A_D$, and let
+$\widehat q$ be its $0/1$ coefficient lift. There is a unique
+$E\in\mathbb Z_{\ge0}[C_o]$ with
+\[
+ \boxed{P=\mathcal N_D\widehat q+2E,\qquad
+ \mathcal N_D=\sum_{j=0}^{o/D-1}X^{jD}=T^{o-D}.}             \tag{3}
+\]
+For every nonnegative original complementary packet $G$,
+\[
+ \boxed{[X^t]PG\ge[X^{t\bmod D}](\widehat q\,\pi_DG),}    \tag{4}
+\]
+where $\pi_D$ sums whole integer coefficients over the congruence classes.
+If $\nu=o-D$, the module map $h\mapsto\mathcal N_Dqh$ identifies $A_D$ with
+$\ker T^D$. Its inverse first reads constant coefficients on $D$-cosets,
+then multiplies by $q^{-1}$. Ordinary quotient summation is not the inverse.
+\end{theorem}
+\begin{proof}
+Multiplication by the norm repeats each coefficient on a coset. Thus the
+parity of $P$ is $q$ repeated. Subtracting that $0/1$ vector gives the unique
+nonnegative even remainder (3). Convolution gives the stronger exact identity
+$[X^t]PG=[X^{t\bmod D}]\widehat q\pi_DG+2[X^t]EG$.
+The $T$-coordinate map $h\mapsto T^{o-D}h$ has image $\ker T^D$ and is injective
+on $A_D$. When $q_T(0)=1$, its inverse is
+$\sum_{j=0}^{D-1}(1+q_T)^j$. This proves all assertions.
+\end{proof}
+For $z=\nu-o+D>0$, the same map has kernel $T^{D-z}A_D$ and image $T^\nu A_o$;
+these exceptions are not inverted. The boundary source is SplitZero BR1 with
+prequotient $\mathbb F_2[[T]]$, $v=T^D$, $f=T^{o-D}U$ \cite{SZ}.
+Both multipliers are injective before quotienting, and $U$ is a power-series
+unit. The original supported zero $e=0_A^\bullet$ is not absence $\tau$:
+even positive coefficients and their original preimages remain in (3).
+
+\newpage
+\paragraph{Constructive input and original-word inverse.}
+In the cyclic chart $H_b=\langle b\rangle$, $b=3$ or $-3$, retain a packet
+$W=A\prod_iG_i^{t_i}$ on disjoint original prime blocks, with affine exponents
+$v_q(W)=a_q+\sigma_qt_i$ and $0\le t_i\le E_i$. Endpoint inequalities put
+every exponent in its actual prime-factor inventory. Require $A\notin H_b$,
+$G_i\in H_b$; retain the formal role $p^{-\varepsilon}$, $\varepsilon=0,1$.
+This role is not a prime factor. Let the cyclic step logs be $a_i$, of order
+$o=2^{k-2}$.
+
+Choose actual subcapacities $c_i\le E_i$, put
+$\nu=\sum_i c_i2^{v_2(a_i)}<o$, and use
+\[
+ P(X)=\prod_i\sum_{t_i\preceq c_i}X^{a_it_i},\qquad
+ U=\prod_i\left(\frac{1+(1+T)^{a_i}}{T^{2^{v_2(a_i)}}}\right)^{c_i}. \tag{5}
+\]
+Here $t\preceq c$ is binary-submask containment. Frobenius proves
+$\overline P=T^\nu U$ without replacing repeated occurrences by coloured
+copies. Untouched coordinates can supply $G$; a used coordinate is not also
+an independent remaining factor.
+
+A positive lower coefficient in (4) provides an actual $G$-word and an odd
+fine coefficient of $P$. Factor (5) into its binary factors and compute suffix
+parities. At an odd target, exactly one of the two next suffix coefficients
+is odd; following it terminates at exponent zero. The returned $t_i$ are
+actual submasks. Affine inversion reads
+$(v_q(W)-a_q)/\sigma_q$ at a nonzero step and checks all other coordinates.
+The final equation $Wp^{-\varepsilon}=-1\pmod{2^k}$ returns $Q=W$ at role zero
+or $Q=N/W$ at role one, then (1)--(2). Fixed-role words are distinct; forgetting
+the role identifies at most the two complementary words. Thus (4) bounds role
+words, or half that many original states rounded upwards when both roles occur.
+
+\paragraph{A nontrivial integral boundary as well.}
+Let $D$ be a power of two and $h<D$ odd. For $q=X^r(1+\cdots+X^{h-1})$, write
+$a=h^{-1}\bmod D$ in $[1,D)$ and $b=(ha-1)/D$. Direct geometric multiplication gives
+\[
+ q^{-1}=X^{-r}\left(\sum_{j=0}^{a-1}X^{hj}-\frac bh\sum_{j=0}^{D-1}X^j\right)
+ \quad\text{in }\mathbb Q[C_D].                            \tag{6}
+\]
+Therefore its integer circulant has image exactly the vectors whose coefficient
+sum is divisible by $h$: necessity is its column sum; sufficiency follows from
+(6). Its cokernel is $\mathbb Z/h$ and determinant has absolute value $h$.
+Its cyclic coefficient Gram is $(o/D)C_q^{\mathsf T}C_q$, not the identity.
+In particular $q=X^3+\cdots+X^7\in A_8$ is invertible modulo two but has integer
+index five. The inverse has signs and denominators; it is not used as a
+positivity-preserving inverse. The original-word quotient instead weights an occupied
+residue by $1/P_r$; a formal periodic amplitude can lift only if it vanishes
+where $P_r=0$. These source constraints are retained in the full proof.
+
+\begin{theorem}[A unique-state family with unbounded required length]
+Let $k\ge6$, $d=2^{k-4}$, and choose distinct primes $q,r,s\ne3$ with
+\[
+ q\equiv3^{3d-1},\qquad r\equiv-3^{5d/2},\qquad
+ s\equiv-3^{d/2+2}\pmod{2^k}.
+\]
+Set $N=3^{d-1}qrs$, $p=N-4u$, requiring $p>2u$. Then $p\equiv1\pmod{24}$,
+and the complete fixed-seed branch has exactly
+\[
+ \boxed{Q=3^{d/2-1}qs,
+ \qquad R=3^{d/2}r,
+ \qquad \Omega(Q)=\Omega(R)=2^{k-5}+1.}                     \tag{7}
+\]
+Theorem~\ref{lift} forces that state using a proper boundary and a non-monomial
+unit. The preceding canonical disjoint singleton/two-prime full and relative
+packet tests fail throughout this family.
+\end{theorem}
+\begin{proof}
+In $H_3$, only $r,s$ are outside, each once. Inside words have logs in
+$[0,d-1]\cup[3d-1,4d-2]$. The $r$ target $3d/2$ misses both intervals;
+the $s$ target $7d/2-2$ has the unique expression $(3d-1)+(d/2-1)$.
+This proves (7). The phase is $3d$, so the role has log $d$. The actual
+constant-$s$ packet satisfies the \emph{integer} identity
+\[
+ (1+\cdots+X^{d-1})(1+X^{3d-1})(1+X^d)
+ =\mathcal N_{2d}(X^{d-1}+\cdots+X^{2d-1})+2(1+\cdots+X^{d-2}). \tag{8}
+\]
+The target reduces to $3d/2-2$, an occupied coefficient of the displayed unit.
+This proves the new certificate, with no target-availability assumption.
+\end{proof}
+
+\newpage
+\paragraph{Exact scope of the separation.}
+For the preceding test class, let $D_0$ be its common dyadic lower stride.
+A step log $a$ of capacity $E$ has high stride
+$\delta=D_0/\gcd(a,D_0)$ and high weighted capacity at most
+$\lfloor E/\delta\rfloor\operatorname{lowbit}(a\delta/D_0\bmod(o/D_0))$.
+The complete upper bounds for all its disjoint singleton/same-coset pair
+patterns, including the role, are
+\[
+\begin{array}{c|cccc}
+D_0&1&2&4\le D_0\le d&2d\\\hline
+\text{maximum upper bound}&2d+2&d+1&2d/D_0&0.
+\end{array}                                                 \tag{9}
+\]
+Each is below the required $4d/D_0-1$. To verify the list for all $d$, in the
+$3$-chart the two inside singletons have weights/capacities $(1,d-1),(1,1)$.
+Their pair has weight $d$ or two and capacity one. The outside pair has weight
+two when active; outside singletons have zero capacity. The role has weight
+$d$ and capacity one. At stride at least four the small capacity-one steps
+vanish; only the role, the weight-$d$ pair, or at most $d/D_0-1$ singleton
+units remain. This gives (9), with strides one and two calculated directly.
+
+In the $-3$-chart all four primes are outside. Only the $3$ singleton can have
+positive capacity, namely $d/2-1$ at weight two. The $(3,q)$ pair has weight
+$d$ or two; each cross pair has weight one; the $(r,s)$ pair has weight two.
+Every pair has capacity at most one. Disjointness and the same role again give
+(9). Lower digits only reduce these bounds. This proves failure before the old
+quotient target is considered.
+
+A different map does survive: the \emph{three-prime shear}
+\[
+(v_3,v_r,v_s)=(a+2t,t,1-t),\quad0\le a\le d-3,\quad t=0,1
+\]
+has half-turn step $3^2r/s=3^{2d}\pmod{2^k}$ and inverse
+$t=v_r$, $a=v_3-2v_r$. With $q$ retained and $a=d/2-1$, its $t=0$ endpoint is
+(7). It is not a disjoint pair block. No failure of all higher-arity maps is claimed.
+
+Dirichlet's theorem supplies infinitely many auxiliary choices. The derived
+$p$ are not asserted prime. They can all be $1\pmod{840}$ by additionally
+requiring $q\equiv(1+4u)(3^{d-1}rs)^{-1}\pmod{35}$, with $r,s$ avoiding $5,7$.
+The residue is a unit since $1+2^{2k-3}$ is nonzero modulo $5,7$ \cite{Dirichlet}.
+
+\paragraph{Certified prime members.}
+The auxiliary choices $(6,59,23,47)$, $(7,17099,239,167)$ and
+$(8,1259,223,599)$ for $(k,q,r,s)$ give the primes
+\[
+1721521,\quad1492567108321,\quad2413105093468609.
+\]
+Their unique cofactor/residual pairs are
+$(8319,207)$, $(77099391,19359)$ and $(1649306367,1463103)$, with lengths
+three, five and nine in \emph{both} roles. Complete-order primality certificates
+and all divisor enumerations accompany the source. For the first prime,
+\[
+\frac4{1721521}=\frac1{430432}+\frac1{12041213064920}+\frac1{3580763680}.
+\]
+For the largest prime the state is
+\[
+(u,a,h,r,s,\lambda)=(2048,603276273732928,2,32,9426191777077,6442603).
+\]
+The finite comparison through two million adds only one prime to the prior
+union of relative, two-prime and $3,11$ tests. A three-occurrence search with
+prior tests already covers every occupied branch there. The unbounded family,
+not an inflated small-range comparison, establishes the structural separation.
+No universal ES theorem, new global verification range, Lean build, independent
+mathematical review, or historical-priority conclusion is asserted.
+
+\begingroup\footnotesize
+\begin{thebibliography}{4}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{J. Aust. Math. Soc., 94}(1), 50--105. arXiv:1107.1010, \S2, (2.13)--(2.22).
+\bibitem{SZ} The Clankers (2026). \emph{Mixed-boundary recovery on the original
+SplitZero quotient}, BR1--BR2. Zeta workbench commit
+\texttt{1efd53337561d8f67cf0ac1d119acdaa222644c3}.
+\bibitem{Dirichlet} Sutherland, A. V. (2017). \emph{Dirichlet L-functions,
+primes in arithmetic progressions}. MIT 18.785 Lecture 18, Theorem 18.1, p.~1.
+\bibitem{MCJ} Massey, J. L., Costello, D. J., Jr., \& Justesen, J. (1973).
+Polynomial weights and code constructions. \emph{IEEE Trans. Inf. Theory, 19}(1),
+101--110. Classical weight-retention antecedent; the full note gives a direct
+binary proof and the exact scope of the source reading.
+\end{thebibliography}\endgroup
+\end{document}
