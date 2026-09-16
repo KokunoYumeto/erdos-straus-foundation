@@ -1,0 +1,76 @@
+{
+  "checks": {
+    "actual_affine_endpoints": 6175,
+    "actual_factor_primality": 3,
+    "actual_factorization_input": 1781,
+    "actual_phase_role": 1781,
+    "all_reported_tests_are_sufficient_in_finite_scan": 37289,
+    "both_roles_exact_word_length": 3,
+    "certificate_in_exact_scan_domain": 1778,
+    "cleared_ES_identity": 1781,
+    "cofactor_role_fibre_bound": 3,
+    "complete_order_prime_factors": 3,
+    "complete_original_even_pair_partition": 3,
+    "complete_prime_and_seed_universe": 1,
+    "complete_short_word_baseline": 37289,
+    "constructed_original_state_is_in_packet": 3,
+    "declared_integral_index": 30,
+    "deterministic_prime_proof": 3,
+    "direct_binomial_exact_order": 1781,
+    "disjoint_original_coordinate_partition": 1781,
+    "every_integer_packet_word_available": 112,
+    "every_positive_new_test_has_retained_certificate": 1,
+    "exhaustive_unique_cofactor": 3,
+    "formal_inverse_actual_available_domain": 2,
+    "full_mixed_original_Gram": 2,
+    "full_rational_circulant_inverse": 340,
+    "independent_actual_factorization": 37289,
+    "independent_original_count": 37289,
+    "integer_lower_target_mass": 1781,
+    "literal_family_coefficient_identity": 3,
+    "lower_bound_is_on_actual_role_words": 3,
+    "ordered_denominators": 1781,
+    "ordered_original_inverse": 1781,
+    "original_divisor_normalization": 1781,
+    "original_packet_relative_parity": 1781,
+    "original_seed_factor_equations": 1781,
+    "original_word_counting_quotient_weights": 2,
+    "physical_affine_step_log": 6094,
+    "positive_middle_gate": 1781,
+    "proper_nontrivial_relative_index": 1781,
+    "retained_unit_T_coordinates": 1781,
+    "uniform_old_capacity_envelope": 60
+  },
+  "circulants": 30,
+  "family": [
+    {
+      "Q": 8319,
+      "R": 207,
+      "k": 6,
+      "p": 1721521,
+      "word_length": 3
+    },
+    {
+      "Q": 77099391,
+      "R": 19359,
+      "k": 7,
+      "p": 1492567108321,
+      "word_length": 5
+    },
+    {
+      "Q": 1649306367,
+      "R": 1463103,
+      "k": 8,
+      "p": 2413105093468609,
+      "word_length": 9
+    }
+  ],
+  "scan": {
+    "bound": 2000000,
+    "branches": 37289,
+    "new_certificates": 1778,
+    "primes": 4519,
+    "states": 4583
+  },
+  "total_checks": 188717
+}

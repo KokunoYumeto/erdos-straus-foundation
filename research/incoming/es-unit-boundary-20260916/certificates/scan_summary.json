@@ -1,0 +1,199 @@
+{
+  "bound": 2000000,
+  "complete_new_certificate_count": 1778,
+  "full_scan_sha256": "ae475bb244c8b36756bbb8513cca1258baea2149c9b5405ef711715e1d8291c5",
+  "new_beyond_old_relative_count": 55,
+  "nonclaim": "No universal ES theorem, no new overall prime verification range, no dominance over all larger-arity affine packets",
+  "scope": "all valid k>=4 dyadic fixed-seed branches of six hard classes mod840",
+  "strongest_new": [
+    {
+      "certificate": {
+        "base": 3,
+        "blocks": [
+          {
+            "capacity": 3,
+            "coset_parity": 0,
+            "indices": [
+              0
+            ],
+            "log": 1,
+            "mode": "single",
+            "offsets": [
+              0
+            ],
+            "steps": [
+              1
+            ]
+          },
+          {
+            "capacity": 0,
+            "coset_parity": 0,
+            "indices": [
+              1
+            ],
+            "log": 4,
+            "mode": "single",
+            "offsets": [
+              0
+            ],
+            "steps": [
+              2
+            ]
+          },
+          {
+            "capacity": 0,
+            "coset_parity": 1,
+            "indices": [
+              2
+            ],
+            "log": 8,
+            "mode": "single",
+            "offsets": [
+              1
+            ],
+            "steps": [
+              2
+            ]
+          },
+          {
+            "capacity": 1,
+            "coset_parity": 0,
+            "indices": [
+              3
+            ],
+            "log": 11,
+            "mode": "single",
+            "offsets": [
+              0
+            ],
+            "steps": [
+              1
+            ]
+          }
+        ],
+        "capacities": [
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        "certificate": {
+          "coarse_complement": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "index": 8,
+          "lower_count": 1,
+          "lower_parameters": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quotient_T": 135,
+          "quotient_X": 248,
+          "selected": [
+            3,
+            0,
+            0,
+            1,
+            1
+          ],
+          "weight": 8
+        },
+        "constant": 47,
+        "k": 6,
+        "logs": [
+          1,
+          4,
+          8,
+          11,
+          4
+        ],
+        "p": 1721521,
+        "phase": 12,
+        "target": 12
+      },
+      "factorization": [
+        [
+          3,
+          3
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          47,
+          1
+        ],
+        [
+          59,
+          1
+        ]
+      ],
+      "k": 6,
+      "p": 1721521,
+      "prior_union": false,
+      "state": {
+        "N": 1722033,
+        "Q": 8319,
+        "R": 207,
+        "a": 430432,
+        "a_factorization": [
+          [
+            2,
+            5
+          ],
+          [
+            13451,
+            1
+          ]
+        ],
+        "centered_exponents": [
+          2,
+          -1
+        ],
+        "channel": "M",
+        "denominators": [
+          430432,
+          12041213064920,
+          3580763680
+        ],
+        "h": 8,
+        "k": 6,
+        "lambda_": 65,
+        "p": 1721521,
+        "r": 4,
+        "s": 13451,
+        "u": 128
+      }
+    }
+  ],
+  "totals": {
+    "branches": 37289,
+    "hard_primes": 4519,
+    "new_only_branches": 1778,
+    "occupied_branches": 3097,
+    "occupied_primes": 2411,
+    "original_states": 4583,
+    "prior_relative_branches": 1723,
+    "prior_relative_primes": 1595,
+    "prior_union_branches": 3073,
+    "prior_union_primes": 2402,
+    "relative_or_new_branches": 1778,
+    "relative_or_new_primes": 1627,
+    "short_three_or_prior_branches": 3097,
+    "short_three_or_prior_primes": 2411,
+    "union_with_new_branches": 3074,
+    "union_with_new_primes": 2403
+  }
+}

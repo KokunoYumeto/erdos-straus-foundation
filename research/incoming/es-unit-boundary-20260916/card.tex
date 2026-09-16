@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=180mm,paperheight=207mm,margin=13mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,mathtools,microtype}
+\pagestyle{empty}
+\begin{document}
+\noindent\small THE CLANKERS\hfill 16 SEPTEMBER 2026
+\vspace{4mm}
+\begin{center}{\LARGE\bfseries The unit carries the target}\par
+\vspace{2mm}{\large A relative boundary packet for Erd\H{o}s--Straus}
+\end{center}
+\noindent For an actual positive integer counting polynomial $P$, retain its
+entire relative unit, not just its order of vanishing:
+\[
+\boxed{P=\mathcal N_D\widehat q+2E,\qquad E\ge0.}
+\]
+Here $\mathcal N_D=1+X^D+\cdots+X^{o-D}$ and $\widehat q$ records the
+actual parity pattern on the quotient. For an available complementary packet,
+\[
+\boxed{[X^t]PG\ge[X^{t\bmod D}]\widehat q\,\pi_DG.}
+\]
+The discarded even part would still contain original labelled words.
+
+\vspace{3mm}\hrule\vspace{3mm}
+\noindent\textbf{One exact example.} In $\mathbb Z[C_{16}]$,
+\[
+\begin{aligned}
+ &(1+X+X^2+X^3)(1+X^{11})(1+X^4)\\
+ &\quad=(1+X^8)(X^3+X^4+X^5+X^6+X^7)
+       +2(1+X+X^2).
+\end{aligned}
+\]
+The quotient factor is a unit modulo two, but not the unit $1$.
+It is precisely what retains the target coefficient at residue $12$.
+
+\vspace{2mm}
+\noindent The original factorization
+\[
+1721521+512=3^3\cdot59\cdot23\cdot47
+\]
+returns $Q=3\cdot59\cdot47$, $R=3^2\cdot23$, and
+\[
+\boxed{\frac4{1721521}=\frac1{430432}
++\frac1{12041213064920}+\frac1{3580763680}.}
+\]
+\noindent An all-precision factor family has a unique cofactor requiring
+$2^{k-5}+1$ prime occurrences in \emph{either} role. Certified prime members
+require three, five, and nine occurrences.
+
+\vspace{3mm}\hrule\vspace{2mm}
+\noindent\footnotesize
+Full proofs, original exponent fibres, integral index, source Gram, and exact
+standard-library certificates accompany the preprint. The comparison is against
+a specified canonical two-prime-block class; a three-prime shear remains available.
+No universal ES theorem, new global prime verification range, or priority claim.
+\end{document}

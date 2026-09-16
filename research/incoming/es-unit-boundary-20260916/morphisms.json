@@ -1,0 +1,221 @@
+{
+  "convention": "All source counts, p, channel, factorization, zero/absence distinction and word orientation remain explicit. Only named quotients lose coordinates.",
+  "maps": [
+    {
+      "id": "A1",
+      "name": "Fixed-seed arithmetic",
+      "domain": "(p,k,Q), Q|p+4u, Q=-1 mod2^k",
+      "codomain": "original positive M state",
+      "map": "R=N/Q; a=(p+R)/4; gcd normalization",
+      "inverse_fibres_and_information_loss": "u=pa^2/(Ry-pa), retain k, channel and ordered denominators",
+      "proof_locator": "A1--A3"
+    },
+    {
+      "id": "A2",
+      "name": "Available affine coordinates",
+      "domain": "bounded parameter tuple on disjoint prime blocks",
+      "codomain": "actual divisor W|N",
+      "map": "v_q(W)=a_q+sigma_q t_i, endpoint checks",
+      "inverse_fibres_and_information_loss": "read one nonzero step per block, then verify all coordinates",
+      "proof_locator": "A4"
+    },
+    {
+      "id": "A3",
+      "name": "Role return",
+      "domain": "available W and epsilon=0/1",
+      "codomain": "cofactor Q",
+      "map": "Q=W or Q=N/W",
+      "inverse_fibres_and_information_loss": "retain role; forgetting it has at most two preimages Q,R",
+      "proof_locator": "A5"
+    },
+    {
+      "id": "B1",
+      "name": "Cyclic coordinate change",
+      "domain": "F2[C_o]",
+      "codomain": "F2[T]/T^o",
+      "map": "T=X+1, full binomial coefficients",
+      "inverse_fibres_and_information_loss": "same binomial substitution, not a scalar readout",
+      "proof_locator": "B1"
+    },
+    {
+      "id": "B2",
+      "name": "Relative readout",
+      "domain": "nonzero parity P of order nu>=o-D",
+      "codomain": "q in F2[C_D]",
+      "map": "divide by T^(o-D), keep all coefficients; substitute T=X+1",
+      "inverse_fibres_and_information_loss": "norm_D*q returns exact parity P",
+      "proof_locator": "B2"
+    },
+    {
+      "id": "B3",
+      "name": "Integer source partition",
+      "domain": "actual labelled positive packet",
+      "codomain": "selected norm words and paired even remainder",
+      "map": "P=norm_D*q_hat+2E; canonical suffix representative at odd sites",
+      "inverse_fibres_and_information_loss": "selected word or (even pair, side), retaining residue and original tuple",
+      "proof_locator": "B3 and following proof"
+    },
+    {
+      "id": "B4",
+      "name": "Positive complement observation",
+      "domain": "two independently available coordinate packets P,G",
+      "codomain": "integer target lower bound",
+      "map": "norm_D*q_hat*pi_D(G)+2EG",
+      "inverse_fibres_and_information_loss": "choose actual coarse G-word and odd fine P-word; not an inverse of total counts alone",
+      "proof_locator": "B4"
+    },
+    {
+      "id": "B5",
+      "name": "Unit-corrected comparison",
+      "domain": "A_D with nu=o-D",
+      "codomain": "ker(T^D) in A_o",
+      "map": "h -> norm_D*q*h",
+      "inverse_fibres_and_information_loss": "constant-on-coset image test, read representative coefficients, multiply by q^-1",
+      "proof_locator": "B5"
+    },
+    {
+      "id": "B6",
+      "name": "Singular exception",
+      "domain": "A_D with z=nu-o+D>0",
+      "codomain": "T^nu A_o",
+      "map": "same multiplication",
+      "inverse_fibres_and_information_loss": "kernel T^(D-z)A_D; readout divisible by T^z; invert U modulo T^(D-z)",
+      "proof_locator": "Theorem1"
+    },
+    {
+      "id": "B7",
+      "name": "Ordinary quotient",
+      "domain": "A_o",
+      "codomain": "A_D",
+      "map": "sum coordinates per D-coset",
+      "inverse_fibres_and_information_loss": "kernel the coset-sum-zero module; pi iota=0 mod2, not identity",
+      "proof_locator": "B5"
+    },
+    {
+      "id": "B8",
+      "name": "Actual SplitZero BR1",
+      "domain": "M=F2[[T]], v=T^D, f=T^(o-D)U",
+      "codomain": "quotient and its v-annihilator",
+      "map": "[x] -> [f(x)]",
+      "inverse_fibres_and_information_loss": "prequotient cancellation; U is a power-series unit; polynomial ideal not falsely replaced",
+      "proof_locator": "BR1 instance after Theorem1"
+    },
+    {
+      "id": "B9",
+      "name": "Supported-zero observation",
+      "domain": "original integer coefficient with presence label",
+      "codomain": "same support in G(F2)",
+      "map": "reduce amplitude modulo2",
+      "inverse_fibres_and_information_loss": "full integer count and original word fibre retained; e is not tau",
+      "proof_locator": "section2"
+    },
+    {
+      "id": "C1",
+      "name": "Bounded submask packet",
+      "domain": "c_i<=E_i, actual log a_i",
+      "codomain": "integer packet and its reduced binomial product",
+      "map": "sum over t_i submasks; nu=sum c_i lowbit(a_i)",
+      "inverse_fibres_and_information_loss": "retain bits and original prime indices; no coloured occurrence duplication",
+      "proof_locator": "C1--C3"
+    },
+    {
+      "id": "C2",
+      "name": "Odd suffix inverse",
+      "domain": "odd fine high-packet coefficient",
+      "codomain": "one original bounded tuple",
+      "map": "follow the unique odd suffix branch",
+      "inverse_fibres_and_information_loss": "full remaining fibres retained; target terminates at zero",
+      "proof_locator": "section3"
+    },
+    {
+      "id": "C3",
+      "name": "Classical weight observation",
+      "domain": "nonzero exact T-order nu",
+      "codomain": "lower bound on Hamming weight",
+      "map": "weight>=2^popcount(nu)",
+      "inverse_fibres_and_information_loss": "does not locate the target or invert support cardinality",
+      "proof_locator": "C4"
+    },
+    {
+      "id": "D1",
+      "name": "Rational geometric inverse",
+      "domain": "q=X^r S_h, h odd<D",
+      "codomain": "inverse in Q[C_D]",
+      "map": "X^-r(S_a(X^h)-(b/h)norm_D), ha-Db=1",
+      "inverse_fibres_and_information_loss": "full exact convolution inverse; signs and denominator h retained",
+      "proof_locator": "D1"
+    },
+    {
+      "id": "D2",
+      "name": "Integral coefficient image",
+      "domain": "Z^D under C_q",
+      "codomain": "sum-divisible-by-h sublattice",
+      "map": "cyclic convolution",
+      "inverse_fibres_and_information_loss": "cokernel Z/h; determinant magnitude h, not unimodular merely because mod2 invertible",
+      "proof_locator": "D2"
+    },
+    {
+      "id": "D3",
+      "name": "Coefficient Gram",
+      "domain": "formal cyclic coefficient input",
+      "codomain": "repeated coefficient output",
+      "map": "norm_D C_q",
+      "inverse_fibres_and_information_loss": "Gram (o/D)C_q^T C_q; no identity-metric replacement",
+      "proof_locator": "D3"
+    },
+    {
+      "id": "D4",
+      "name": "Original word quotient",
+      "domain": "orthonormal word coordinates",
+      "codomain": "occupied residue sums",
+      "map": "sum within each fibre",
+      "inverse_fibres_and_information_loss": "canonical section y_r/P_r; star kernel, primitive and norm splitting",
+      "proof_locator": "section4 original word paragraph"
+    },
+    {
+      "id": "D5",
+      "name": "Available formal amplitude",
+      "domain": "D_P defined by all original zero-fibre constraints",
+      "codomain": "actual word space",
+      "map": "(C_qh)_(r modD)/P_r on every actual word",
+      "inverse_fibres_and_information_loss": "formal image and integral image kept separate; no words supplied where P_r=0",
+      "proof_locator": "D4--D5"
+    },
+    {
+      "id": "E1",
+      "name": "Explicit factor family",
+      "domain": "k>=6 and prime residues E1",
+      "codomain": "unique original cofactor",
+      "map": "Q=3^(d/2-1)q s, R=3^(d/2)r",
+      "inverse_fibres_and_information_loss": "factorization and fixed p retained; prime p only when independently certified",
+      "proof_locator": "E1--E4"
+    },
+    {
+      "id": "E2",
+      "name": "Family normalized unit",
+      "domain": "integer high packet P_d",
+      "codomain": "Q_d and even remainder",
+      "map": "E2 coefficient identity",
+      "inverse_fibres_and_information_loss": "unit has d+1 terms and integer index d+1; deleting it changes targets",
+      "proof_locator": "E2"
+    },
+    {
+      "id": "E3",
+      "name": "Preceding canonical comparison",
+      "domain": "all old singleton/same-coset-pair patterns and strides",
+      "codomain": "explicit maximum weighted capacity",
+      "map": "E5 envelope below required o/stride-1",
+      "inverse_fibres_and_information_loss": "not a no-go theorem for arbitrary affine packets",
+      "proof_locator": "E5"
+    },
+    {
+      "id": "E4",
+      "name": "Surviving three-prime shear",
+      "domain": "0<=a<=d-3, t=0/1",
+      "codomain": "original exponents (a+2t,t,1-t)",
+      "map": "step 3^2 r/s is a half turn",
+      "inverse_fibres_and_information_loss": "t=v_r, a=v_3-2v_r; actual endpoints retain compensating powers",
+      "proof_locator": "E6"
+    }
+  ]
+}
