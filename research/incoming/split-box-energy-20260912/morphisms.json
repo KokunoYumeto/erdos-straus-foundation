@@ -1,0 +1,101 @@
+{
+  "exceptions": [
+    "p prime, p=1 mod4 and p/4<a<p/2",
+    "f,b nonnegative integer vectors with f+b=e",
+    "all modular divisions are by units of original modulus R",
+    "empty optimizer feasible set has minimum infinity, serialized as null",
+    "f=0 excluded from comparison only",
+    "no successful split for every prime or Koide-chamber conclusion asserted"
+  ],
+  "maps": [
+    {
+      "codomain": "B_e",
+      "domain": "B_f x B_b",
+      "forward": "beta=xi+eta",
+      "id": "SBE01",
+      "information_loss": "the full finite addition fibre",
+      "inverse_or_fibre": "xi_i in [max(-f_i,beta_i-b_i),min(f_i,beta_i+b_i)]; eta=beta-xi"
+    },
+    {
+      "codomain": "labelled full target vector",
+      "domain": "(xi,label,target,eta), v(xi)=target/v(eta)",
+      "forward": "beta=xi+eta",
+      "id": "SBE02",
+      "information_loss": "repeated residues do not merge target labels",
+      "inverse_or_fibre": "SBE01 with the retained target label"
+    },
+    {
+      "codomain": "G",
+      "domain": "B_f",
+      "forward": "v(xi)=product q_i^xi_i",
+      "id": "SBE03",
+      "information_loss": "mu_f counts every original vector",
+      "inverse_or_fibre": "all xi in the specified finite residue fibre"
+    },
+    {
+      "codomain": "Div(a^2)",
+      "domain": "B_e",
+      "forward": "u=product q_i^(e_i+beta_i)",
+      "id": "SBE04",
+      "information_loss": "none",
+      "inverse_or_fibre": "beta_i=valuation_q_i(u)-e_i"
+    },
+    {
+      "codomain": "channel-marked normalized divisor vector",
+      "domain": "labelled target vector",
+      "forward": "negate beta only for E-inverse",
+      "id": "SBE05",
+      "information_loss": "numerical target equality does not identify labels",
+      "inverse_or_fibre": "undo the recorded sign and label"
+    },
+    {
+      "codomain": "h,r,s with a=hrs and gcd(r,s)=1",
+      "domain": "u dividing a^2",
+      "forward": "d=gcd(a,u); h=d^2/u; r=u/d; s=a/d",
+      "id": "SBE06",
+      "information_loss": "none when a retained",
+      "inverse_or_fibre": "u=h*r^2"
+    },
+    {
+      "codomain": "ordered ES denominators",
+      "domain": "integral channel gate",
+      "forward": "formula (6) in preprint.tex",
+      "id": "SBE07",
+      "information_loss": "sorting requires a permutation mark",
+      "inverse_or_fibre": "u=a^2/(R*Y-p*a) for E; p*a^2/(R*Y-p*a) for M"
+    },
+    {
+      "codomain": "R,rho,c,g,D",
+      "domain": "full split state",
+      "forward": "rho=x-target/w; g=c*rho with c=aw,pw,x^-1",
+      "id": "SBE08",
+      "information_loss": "residue alone has no arithmetic inverse",
+      "inverse_or_fibre": "retain p,a,budgets,xi,eta,label"
+    },
+    {
+      "codomain": "(Z/R)^3 at g",
+      "domain": "(Z/R)^3 at rho",
+      "forward": "v maps to c*v",
+      "id": "SBE09",
+      "information_loss": "none; c is a unit",
+      "inverse_or_fibre": "v maps to c^-1*v"
+    },
+    {
+      "codomain": "p,D,X=DQ",
+      "domain": "p,Q,D",
+      "forward": "multiply the ordered rational triple by D",
+      "id": "SBE10",
+      "information_loss": "forgetting original p confuses return at p with pD",
+      "inverse_or_fibre": "Q=X/D"
+    },
+    {
+      "codomain": "cell masses and energies",
+      "domain": "residue distribution",
+      "forward": "sum mu and mu^2 in every cell",
+      "id": "SBE11",
+      "information_loss": "moments do not determine support",
+      "inverse_or_fibre": "no unique inverse; exact minimum ranges over admissible distributions"
+    }
+  ],
+  "schema": "polyclank.local-morphisms.v1"
+}

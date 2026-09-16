@@ -1,0 +1,172 @@
+% Copy-ready integration module. Wrapper supplies theorem environments.
+\section{Split-box collision forcing and integral return}
+\paragraph{Domain and inherited arithmetic.}
+Fix a prime $p\equiv1\pmod4$, an integer $p/4<a<p/2$, and
+$R=4a-p$. Write $a=\prod_{i=1}^kq_i^{e_i}$ with distinct increasing primes.
+Then $\gcd(pa,R)=1$. For a nonnegative budget vector $b$, put
+\[
+ B_b=\prod_i[-b_i,b_i]_{\mathbb Z},\quad
+ v(\beta)=\prod_iq_i^{\beta_i}\pmod R,\quad
+ \mu_b(g)=\#\{\beta\in B_b:v(\beta)=g\}.
+\]
+The map $\beta\mapsto u=\prod q_i^{e_i+\beta_i}$ bijects $B_e$ with
+$\operatorname{Div}(a^2)$. Its inverse is $\beta_i=v_{q_i}(u)-e_i$.
+The middle target is $-1$ and the direct exterior target is $-p^{-1}$.
+The inverted exterior target $-p$ is also allowed, recording the operation
+$\beta\mapsto-\beta$. Let $\mathcal T=\{-1,-p,-p^{-1}\}$, deduplicated
+as a set while all three channel labels remain retained.
+These gates and the ordered reconstruction below are inherited
+\cite[\S2, Propositions 2.2 and 2.6]{ET},\cite{Prior}.
+
+\begin{theorem}[Exact target pullback and inverse fibres]
+For $f,b\ge0$ with $f+b=e$, define
+\[
+ \mathcal F_b=\{t v(\eta)^{-1}:t\in\mathcal T,\eta\in B_b\}.
+\]
+Then
+\[
+ \operatorname{supp}\mu_e\cap\mathcal T=\varnothing
+ \iff \operatorname{supp}\mu_f\cap\mathcal F_b=\varnothing.
+ \tag{1}
+\]
+Retaining a vector $\xi\in B_f$ and its target label $(t,\eta)$, an
+intersection on the right returns $\beta=\xi+\eta\in B_e$.
+The complete inverse fibre over any $\beta$ is
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),
+ \qquad\eta=\beta-\xi.\tag{2}
+\]
+\end{theorem}
+\begin{proof}
+Each interval (2) is nonempty because $|\beta_i|\le f_i+b_i$.
+It is exactly the condition that both summands stay in their boxes.
+The multiplicative identity $v(\xi+\eta)=v(\xi)v(\eta)$ now proves
+both directions of (1) and the stated inverse.
+\end{proof}
+In particular the convolution need not equal the original uniform count:
+\[
+ (\mu_f*\mu_b)(g)=\sum_{\substack{\beta\in B_e\\v(\beta)=g}}
+ \prod_i\bigl(\min(f_i,\beta_i+b_i)-\max(-f_i,\beta_i-b_i)+1\bigr).
+ \tag{3}
+\]
+For $f=b=(1)$, exponent zero has three preimages. The weights in (3)
+are retained; no shorter or unbounded substitute for $B_e$ is used.
+
+\paragraph{Exact collision minimum.}
+Let $\pi:G=(\mathbb Z/R\mathbb Z)^\times\to V$ be a homomorphism to an
+ elementary abelian $2$-group. Each cell $C=\pi^{-1}(v)$ is inversion-stable.
+The negation involution of $B_f$ has the unique fixed vector zero, so
+$\mu_f(g)=\mu_f(g^{-1})$, $\mu_f(1)$ is odd, and other involution
+multiplicities are even. Retain $n=\sum_C\mu_f(g)$ and $E=\sum_C\mu_f(g)^2$.
+
+Let $L_C(n;\mathcal F_b)$ be the least energy of any nonnegative integer
+function of mass $n$ with those parity and inversion conditions, vanishing
+on $C\cap\mathcal F_b$. Its value is $+\infty$ if the identity is
+forbidden in its cell, if $n<d$ or $n-d$ is odd for $d=\mathbf1_{1\in C}$,
+or if positive remaining mass has no available slot. Otherwise start the
+identity at one when present and allocate $(n-d)/2$ mass-pairs. The successive
+costs of each available slot, for $j\ge0$, are
+\[
+ \begin{array}{c|ccc}
+ \text{slot}&\{g,g^{-1}\},\ g^2\ne1&\{g\},\ g^2=1,\ g\ne1&\{1\}\\\hline
+ \text{occupancy}&(j,j)&2j&1+2j\\
+ \text{next cost}&4j+2&8j+4&8j+8.
+ \end{array}                                                   \tag{4}
+\]
+The value is $d$ plus the required number of least costs from these
+increasing sequences. Prefixes are automatically respected; exchanging a
+selected larger cost with an unselected smaller one proves exact optimality.
+This slot optimizer is proved in the prior continuation \cite{Prior}.
+
+\begin{theorem}[Split-box forcing]
+Failure of both original channels implies, for every split and cell,
+\[
+ \boxed{E\ge L_C(n;\mathcal F_b).}                             \tag{5}
+\]
+A strict reverse inequality produces an original positive integral witness.
+The tests include the previous unsplit test at $b=0$. Refining the character
+partition cannot weaken certification.
+\end{theorem}
+\begin{proof}
+On failure, (1) makes the actual function $\mu_f$ feasible for the minimum,
+so (5) follows. A violation forces an occupied forbidden residue; retain
+its actual $\xi,t,\eta$ and use Theorem 1. Refined minimum allocations
+concatenate to a coarse feasible one, so their sum is at least the coarse
+minimum. Actual energies add, proving the refinement assertion.
+\end{proof}
+
+\paragraph{Original positive denominators and inverse.}
+After the recorded exterior inversion if necessary, define
+$d_0=\gcd(a,u)$ and
+\[
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0).
+\]
+Prime valuations prove $a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$.
+The target gates give the positive integral quotient and ordered triple
+\[
+ \begin{array}{ll}
+ \mathrm E:\quad\kappa=(pr+s)/R,&(a,hs\kappa,phr\kappa),\\
+ \mathrm M:\quad\lambda=(r+s)/R,&(a,phs\lambda,phr\lambda).
+ \end{array}                                                   \tag{6}
+\]
+Clearing their reciprocals gives $4/p$ directly. The ordered inverse is
+$u=a^2/(RY-pa)$ for E and $u=pa^2/(RY-pa)$ for M; it recovers the complete
+prime exponents. Choosing the previously retained label and the fibre (2)
+recovers every split preimage, including repeated residues and target labels.
+
+\paragraph{Failure is retained as well.}
+For any split state write $x=v(\xi)$, $w=v(\eta)$ and
+$\rho=x-tw^{-1}\pmod R$. With $g=u+a$ for M and $g=4u+1$ for E,
+\[
+ g\equiv c\rho\pmod R,\qquad
+ c=aw\ (\mathrm M),\quad pw\ (\mathrm E_+),\quad x^{-1}\ (\mathrm E_-).
+ \tag{7}
+\]
+For the inverted exterior label use $u\equiv a/(xw)$; then
+$4u+1\equiv x^{-1}(x+p/w)$. The other cases follow by $u\equiv axw$.
+Every $c$ is a unit, so the original denominator defect is exactly
+\[
+ \boxed{D=R/\gcd(R,g)=R/\gcd(R,\rho).}                         \tag{8}
+\]
+For the affine maps of \cite{Hex}, explicitly
+\[
+ (X,Y,Z)\mapsto(6g+Y,-6g-X-Y,Z-2g+X),\quad
+ (-Y,X-6g,Z+3g+Y),\quad(X,Y+X,Z-g),
+\]
+coordinate scaling $v\mapsto cv$ is an equivariant bijection from the
+coefficient-$\rho$ system to the coefficient-$g$ system, with inverse
+$c^{-1}v$. This follows by distributing $c$ in every displayed coordinate.
+Thus the split does not erase the geometric defect at unsuccessful leaves.
+
+\paragraph{Strict numerical certificate.}
+Let $p=1201$, $a=312=2^3\cdot3\cdot13$, $R=47$. The unsplit negative
+cell has mass 42, energy 88, and minimum 82; the positive cell has
+$(21,33,21)$, so neither certifies. For
+\[
+ f=(2,1,1),\quad b=(1,0,0),\qquad
+ \mathcal F_b=\{9,18,21,23,28,34,42,45,46\},
+\]
+the negative targets are $\{23,45,46\}$. In the 45-vector partial box
+that cell has mass 30 and energy 46. Ten inverse-pair slots remain after
+target exclusion; allocating 15 units gives minimum
+$2(5\cdot2^2+5\cdot1^2)=50$. Thus $46<50$ forces a hit. The retained
+vectors $\xi=(-2,1,1)$, $\eta=(-1,0,0)$ return
+\[
+ (p,R,u,h,r,s,\lambda)=(1201,47,1521,1,39,8,1),\qquad
+ (X,Y,Z)=(312,9608,46839).
+\]
+This is a stricter sufficient inequality in a known shell, not new prime
+coverage or a claim that its ray lies in the separate Koide chamber.
+
+\paragraph{Scope and reproducibility.}
+All 9531 first-half shells at the 54 primes $p\equiv1\pmod{12}$,
+$p\le1500$, were tested, removing one prime's exponent budget at a time.
+The original quadratic test certifies 240 shells; the union with these
+split tests certifies 438. Fourteen additions use strict finite minima;
+184 use infeasibility. The tautological endpoint $f=0$ is excluded.
+The standard-library verifier, exact JSON, maps, and fuller proof are in
+\path{research/incoming/split-box-energy-20260912/} of the workbench
+repository cited below. Neither successful split existence for every
+prime nor a running-time improvement is proved. Historical priority is
+not established, and no Lean or independent review is claimed.
+
