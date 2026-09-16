@@ -8,7 +8,7 @@ The inspected foundation main revision is `9a3ddfe8b38a424f1ff0426201a1f4f6f9d27
 
 The local comparison corpus includes Chatnotes.zip, the two supplied ES continuation archives, the three colleague working texts, and the previously prepared results packet. Local continuation manuscripts have not been byte-matched to public editions. A matching title or a filename containing a version number is not such a match.
 
-[RESULTS.md](RESULTS.md) is the public-facing results entry point. [Exact new arguments](results/integration-2026-09-10/ARGUMENTS.md) and the [source map](results/integration-2026-09-10/SOURCES.md) contain the mathematics and locators behind the following opportunities.
+[SOURCE_LED_RESULTS.md](SOURCE_LED_RESULTS.md) is the source-led results entry point. [Exact new arguments](results/integration-2026-09-10/ARGUMENTS.md) and the [source map](results/integration-2026-09-10/SOURCES.md) contain the mathematics and locators behind the following opportunities. The repository's separate `RESULTS.md` is the reusable results bench from PR #2; neither document supersedes the other.
 
 ## Arithmetic and additive-combinatorial programmes
 
