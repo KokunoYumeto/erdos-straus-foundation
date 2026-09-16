@@ -1,0 +1,87 @@
+{
+  "antecedent": {
+    "archive_sha256": "0f9164c453868fee5a6082d1898a5f2440d717cd3aae9c25ede73278733401d3",
+    "core_sha256": "e501612099e1eb88f15f0fa1335dc2c7c41230bb52dac40ba7f63290053b5eae",
+    "path": "es_factor_exchange/verify.py",
+    "prior_status": "Factor-exchange local package was not claimed pushed; its own antecedent is PR10",
+    "read_scope": "Complete preceding core.tex and relevant implementation; main predecessor bound2m rerun during this continuation",
+    "retained_as": "antecedent/factor_exchange.py",
+    "sha256": "7b19ae5af165a5868ed3041cab9a35cf03701d783c8754876e2c2a4e5c5fef3f"
+  },
+  "byline": "The Clankers",
+  "date": "2026-09-16",
+  "github": {
+    "PR10": "open draft, unmerged in observed read",
+    "new_remote_mutations": false,
+    "write_discovery": "GitHub create query returned no actions"
+  },
+  "nonclaims": [
+    "No universal ES theorem",
+    "No new prime coverage",
+    "No source-wide analytic comparison",
+    "No new Lean build",
+    "No independent mathematical review",
+    "No historical-priority determination"
+  ],
+  "primary_literature": [
+    {
+      "authors": "Greene, John; Higgins, Clayton",
+      "locators": [
+        "Section1",
+        "Theorem12, journal page7"
+      ],
+      "title": "Maximal Subset Sums in a Group of Order a Power of 2",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL28/Greene/greene6.pdf",
+      "use": "Classical cyclic-cover and generating-polynomial framework; not claiming every new integer packet a perfect uniform cover",
+      "year": 2025
+    },
+    {
+      "authors": "Elsholtz, Christian; Tao, Terence",
+      "locators": [
+        "Section2",
+        "Equations2.13-2.22",
+        "Propositions2.6-2.7"
+      ],
+      "title": "Counting the number of solutions to the Erd\u0151s\u2013Straus equation on unit fractions",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "use": "Inherited TypeII coordinates, re-proved with ordered inverse and current domain",
+      "year": 2013
+    },
+    {
+      "authors": "Sutherland, Andrew V.",
+      "locators": [
+        "Theorem18.1,p1"
+      ],
+      "title": "Dirichlet L-functions, primes in arithmetic progressions",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "use": "Auxiliary primes in specified reduced residue classes; no inference that derived bilinear p is prime",
+      "year": 2017
+    }
+  ],
+  "search": {
+    "classical": [
+      "relative norm and invariants of a group algebra",
+      "cyclic 2-group structure",
+      "quotient-kernel BR1",
+      "TypeII ES parametrization"
+    ],
+    "finding": "No exact earlier combined application established in scoped content searches. This is not evidence of exhaustive priority exclusion.",
+    "queries": [
+      "\"Erdos Straus\" \"relative\" \"group algebra\"",
+      "\"Erd\u0151s\u2013Straus\" \"socle\"",
+      "\"Erdos Straus\" \"17\" \"subgroup\"",
+      "\"Erd\u0151s\u2013Straus\" \"coset\" \"lifting\"",
+      "\"Erdos Straus\" \"relative norm\"",
+      "\"Erd\u0151s\u2013Straus\" \"p+512\""
+    ]
+  },
+  "zeta": {
+    "applied": "BR1 quotient-to-kernel with prequotient F2[T], v=T^d, f=T^(o-d); support distinction BR6-BR8 retained.",
+    "commit": "1efd53337561d8f67cf0ac1d119acdaa222644c3",
+    "git_blob": "78537c3d0d928a9b534859bff9910ce498e13833",
+    "not_applied": "No analytic Gamma/Toda estimate or source-wide cohomology theorem imported as an ES occupancy proof.",
+    "path": "workbenches/tau-mixed-boundary-formal/RESEARCH_NOTE.md",
+    "read_scope": "Complete fetched research note, with focused BR1-BR2 lines20-75 read; current continuation guide inspected separately. No full549-page read or source Lean replay.",
+    "repository": "KokunoYumeto/zeta-function-research-reader"
+  }
+}

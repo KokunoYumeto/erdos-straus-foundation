@@ -1,0 +1,247 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Relative norm packets and actual divisor lifts for Erd\H{o}s--Straus}
+\author{The Clankers}
+\date{16 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+An available bounded factor product can fill a proper subgroup without covering
+its entire cyclic chart. We give the exact quotient-to-kernel map, a disjoint
+exponent decomposition and the original integer return. A sharp one-prime
+lifting theorem controls every multiplicity; a certified hard-prime example
+succeeds beyond the previous full-chart and two-prime tests. A second example
+shows that a coarse target alone does not lift. The original support labels and
+integer coefficients remain when their characteristic-two observations vanish.
+No universal ES or historical-priority claim is made.
+\end{abstract}
+
+\paragraph{Original arithmetic.}
+Fix $k\ge3$, $u=2^{2k-5}$, $m=2^k$, $o=2^{k-2}$,
+$p\equiv1\pmod8$, $p>2u$ and the actual factorization $N=p+4u$.
+The original fixed-seed middle states correspond to
+\[
+ Q\mid N,\quad Q\equiv-1\pmod m,\quad R=N/Q,\quad a=(p+R)/4. \tag{1}
+\]
+Since $K(u)=2^{k-2}$, the cofactor congruence gives $K(u)\mid a$ and $u\mid a^2$.
+Both factors are $3\pmod4$, at least three and less than $p$, because $N<3p$.
+Also $R\mid a+u$. With $d_0=\gcd(a,u)$,
+\[
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0),\quad\lambda=(r+s)/R,
+ \quad (x,y,z)=(a,phs\lambda,phr\lambda).                  \tag{2}
+\]
+Prime valuations prove integrality and $a=hrs,u=hr^2,\gcd(r,s)=1$.
+The gate gives integral $\lambda$. Clearing reciprocals proves $4/p=1/x+1/y+1/z$.
+The ordered inverse is $u=pa^2/(Ry-pa)$. These are inherited Type II coordinates
+\cite[\S2, (2.13)--(2.22)]{ET}; their factorization, distinguished denominator and
+channel are not erased. Structural statements below permit integer $p$.
+
+\begin{theorem}[The relative boundary, not its ordinary quotient]
+For $o=2^n$, $d=2^v$, $0\le v<n$, put $L=o/d$ and
+$A_o=\mathbb F_2[X]/(X^o-1)=\mathbb F_2[T]/T^o$, $T=X+1$.
+Then
+\[
+ \mathcal N_d=\sum_{j=0}^{L-1}X^{dj}=T^{o-d},\qquad
+ \iota_d:A_d\xrightarrow{\sim}\ker(T^d:A_o\to A_o),\quad
+ X^r\mapsto X^r\mathcal N_d.                               \tag{3}
+\]
+The inverse reads one coefficient in each coset modulo $d$. For the ordinary
+quotient $\pi_d:A_o\to A_d$,
+\[
+ \mathcal N_dF=\iota_d\pi_dF,\qquad
+ \pi_d\iota_d=L\,1=0,\qquad \mathcal N_d^2=L\mathcal N_d=0. \tag{4}
+\]
+\end{theorem}
+\begin{proof}
+Repeated squaring with $X^d=1+T^d$ proves the polynomial identity in (3).
+The shifts $X^r\mathcal N_d$, $0\le r<d$, have disjoint coset supports.
+The equation $(X^d-1)F=0$ says exactly that coefficients are constant along
+each coset, proving the inverse. The coefficient of $\mathcal N_dF$ at $r$
+is the sum of coefficients of $F$ congruent to $r\pmod d$. This proves (4),
+including its integer versions before reduction modulo two.
+\end{proof}
+The map is an $\mathbb F_2[X]$-module equivalence, not an algebra isomorphism; its image is
+square-zero. It is the BR1 boundary comparison of \cite{SZ} with prequotient
+$\mathbb F_2[T]$, parameter $T^d$ and injective multiplier $T^{o-d}$.
+In the source $G(A)=\{\tau\}\sqcup A^\bullet$, the zero of (4) has its receiving
+support; it is not external absence. Norm lifts compose along a subgroup tower
+by repeating coset coefficients. Multiplying overlapping norms is a different
+operation and retains the intersection multiplicity.
+
+\begin{theorem}[Available mixed-radix lifting]
+Use an original injective affine packet
+$W=A\prod_iG_i^{t_i}$, $0\le t_i\le E_i$, on disjoint prime-coordinate blocks.
+Every exponent endpoint lies in its actual factor budget. Assume
+$A\notin H_g$, $G_i\in H_g$, where $g=3$ or $-3$ and
+$H_g=\langle g\rangle\le(\mathbb Z/m)^\times$ has order $o$.
+Adjoin the formal role parameter of capacity one with multiplier $p^{-1}$;
+write the resulting logs as $a_i$, and $g^{t_0}=-A^{-1}$.
+For $d=2^v$, define
+\[
+ \delta_i=d/\gcd(d,a_i),\qquad
+ t_i=r_i+\delta_i z_i,\quad0\le r_i<\delta_i,\ r_i\le E_i,
+ \quad 0\le z_i\le F_i:=\lfloor(E_i-r_i)/\delta_i\rfloor.  \tag{5}
+\]
+Suppose $t_0-\sum a_ir_i$ is divisible by $d$. For nonzero
+$b_i=a_i\delta_i/d\pmod L$, put $w_i=2^{v_2(b_i)}$. If
+\[
+ \sum_{w_i\le2^j}F_iw_i\ge2^{j+1}-1\quad(0\le j<\log_2L), \tag{6}
+\]
+then an original positive integral ES state exists, with a terminating inverse.
+\end{theorem}
+\begin{proof}
+Euclidean division gives (5) bijectively on the whole original parameter box.
+The dyadic prefix criterion (6) selects $c_i\le F_i$ with
+$\sum c_iw_i=L-1$: take one unit, pair the remaining units, divide the weights
+by two, and induct. Reduction modulo successive powers of two proves necessity.
+The labels of paired occurrences are retained.
+Now in $\mathbb F_2[Y]/(Y^L-1)$ the actual product
+$\prod(1+Y^{b_i})^{c_i}$ equals $(Y+1)^{L-1}=\sum_{j=0}^{L-1}Y^j$.
+The integer packet uses each binary submask $z_i\preceq c_i$ once, because
+$(1+U)^c=\sum_{z\preceq c}U^z$ modulo two. Each cyclic coefficient is odd and
+positive. Choose the target $(t_0-\sum a_ir_i)/d$, return (5), and keep the
+resulting role $\epsilon\in\{0,1\}$. It satisfies $Wp^{-\epsilon}=-1\pmod m$.
+Take $Q=W$ if $\epsilon=0$ or $Q=N/W$ otherwise, then apply (2).
+
+Binary-factor suffix products give a terminating word: at an odd coefficient
+exactly one next branch remains odd. The inverse reads $W=Q$ or $R$ from the
+role, recovers each affine parameter from a nonzero prime-coordinate step,
+and performs (5)'s Euclidean division. Check every submask and other coordinate.
+For a fixed role the map is injective; forgetting it has at most the two words
+$Q,R$ as preimages. No rational ratio is used without its compensating constant.
+\end{proof}
+The integer source counts are unchanged by (5); it is a disjoint decomposition,
+not an overlapping split requiring a weight correction. A zero high step is
+not selected. The one-point subgroup $d=o$ is excluded because it would merely
+restate a fine target. Full-chart forcing is the case $d=1$.
+
+\begin{theorem}[Sharp all-multiplicity one-prime lift]
+Let $3\le\ell<k$, let $b$ be a prime with $v_2(b-1)=\ell$, and write
+$N=b^eM$, $\gcd(b,M)=1$, $L=2^{k-\ell}$. For each actual divisor
+$t\mid M$ with $t=-1\pmod{2^\ell}$, let $r_t\in[0,L)$ be the unique exponent
+$b^{r_t}=-t^{-1}\pmod{2^k}$. With $A$ the number of these divisors, the entire
+original count is
+\[
+ C=\sum_t\max\{0,1+\lfloor(e-r_t)/L\rfloor\},\qquad
+ \lfloor(e+1)/L\rfloor A\le C\le\lceil(e+1)/L\rceil A.      \tag{7}
+\]
+Thus $e\ge L-1$ gives $C>0\iff A>0$, and this uniform threshold is sharp.
+For fixed $b,M$, $C(e+L)=C(e)+A$ and
+$\sum_{e\ge0}C(e)z^e=(\sum_t z^{r_t})/((1-z)(1-z^L))$, before imposing primality
+or discarding the finite invalid-size prefix.
+A cofactor can then be chosen with $\Omega(Q)\le L-1+2^{\ell-2}$.
+\end{theorem}
+\begin{proof}
+Successive squaring gives $v_2(b^{2^j}-1)=\ell+j$, so $b$ generates exactly
+$1\pmod{2^\ell}$ and has order $L$. Unique factorization writes each cofactor
+as $b^it$, $0\le i\le e$; its target condition is $i=r_t\pmod L$.
+This proves (7) and its complete inverse fibre.
+For sharpness take actual distinct primes $q=-b/3$ and $r=-b$ modulo $2^k$,
+put $M=3qr$ and $e=L-2$. Dirichlet's theorem supplies arbitrarily large choices
+\cite[Theorem 18.1]{Dirichlet}. Only $r$ and $3q$ are coarse targets; both require
+$i=L-1$. The derived $p=N-4u$ satisfies $p=1\pmod{2^k}$ and is eventually in
+(1)'s domain, but is not asserted prime.
+
+Choose a shortest coarse target divisor $t$. The quotient of
+$(\mathbb Z/2^\ell)^\times$ by $\{1,-1\}$ is cyclic of order $d=2^{\ell-2}$.
+If $t$ used more than $d$ prime occurrences, partial sums of its first $d$
+images would give a nonempty proper subword with residue $1$ or $-1$ in the
+original group. Remove it in the first case or retain it in the second, a
+contradiction. Thus $\Omega(t)\le d$, and $Q=b^{r_t}t$ proves the bound.
+\end{proof}
+
+\paragraph{A strict hard-prime certificate.}
+At the separately certified prime
+\[
+ p=8060861761\equiv1\pmod{840},\qquad
+ p+512=3\cdot17^4\cdot53\cdot607,
+\]
+$17$ generates the four principal units modulo $64$ above $1\pmod{16}$.
+Only $607$ and $159$ among divisors of $3\cdot53\cdot607$ are $-1\pmod{16}$.
+Both are $31\pmod{64}$ and require exponent two. The exact cofactors are
+$45951$ and $175423$. One original return is
+\[
+ \boxed{\frac4{8060861761}=\frac1{2015259296}
+ +\frac1{1457964212136949677976}+\frac1{92603179910368}.}
+\]
+It has $(R,u,h,r,s,\lambda)=(175423,128,8,4,62976853,359)$.
+Both previous chart-prefix tests, the full canonical affine-line test, the
+$3,11$ criterion, and prime/two-prime words in both roles fail in this branch.
+For the prefix test, the low-weight budget is at most two whereas three is
+required: only $3$ and $53$ have odd log, each once, while $17,607$ have weights
+four and eight. The complete finite baseline and primality proofs accompany
+the note. The new relative packet needs only the available four-residue subgroup.
+
+The two lower source words have the same residue. Combining their four-term
+high packets gives integer coefficient two at $15,31,47,63$, hence zero after
+reduction modulo two. The two original states remain. Positivity is established
+before this cancellation, with both source labels retained.
+
+At the also certified prime $p=9331009$,
+$p+512=3\cdot17^2\cdot229\cdot47$ has two coarse targets, each requiring
+exponent three. The entire branch is empty despite those nonzero coarse counts.
+A different shell gives denominators
+$(2332754,8467342993257754,3110706463357)$, so this is not an ES counterexample.
+
+\paragraph{Unbounded separation, not only a small search improvement.}
+For $k\ge6$, let $L=2^{k-4}$ and choose actual distinct primes
+$q\equiv-(1+2^{k-1})/3$, $r\equiv-(1+2^{k-1})\pmod{2^k}$.
+Put $N=3\cdot17^Lqr$ and $p=N-2^{2k-3}$. Dirichlet supplies arbitrarily large
+choices; the derived $p$ is not asserted prime. Since
+$17^{L/2}=1+2^{k-1}\pmod{2^k}$, precisely the two lower targets $r,3q$ lift,
+each at exponent $L/2$. Thus the only cofactors are
+$17^{L/2}r$ and $3\cdot17^{L/2}q$. They are complementary and their least
+occurrence length is $L/2+1\to\infty$. The relative order-$L$ theorem applies.
+The prior full-chart singleton/pair prefixes fail: only $3,q$ have odd log,
+once each and in opposite cosets; pairing them with other primes supplies at
+most two units in the second prefix. All other logs are divisible by four,
+and the phase is zero. The required prefix is three. This proves a separation
+from that class and from every fixed word-length cutoff, not from every
+conceivable algebraic certificate.
+
+There is an individually certified prime member at
+\[
+ p=16689143913960961\equiv121\pmod{840},\quad k=7,\qquad
+ N=3\cdot17^8\cdot277\cdot2879.
+\]
+Its only cofactors $240456959$ and $69405951$ use five and six occurrences.
+The first returns
+$(u,R,a,h,r,s,\lambda)=(512,69405951,4172285995841728,8,8,65191968685027,939285)$
+through (2). The exact primality and denominator certificates are supplied.
+
+\paragraph{Scope.}
+The full workbench proves all subgroup maps, role fibres, uniform lower-digit
+capacity formulas and original-count returns. In the stated 37,289-branch
+finite comparison, the stronger previous union gains two branches and one prime;
+these are not new overall ES coverage. In fact, adding direct three-occurrence
+words to the previous union already certifies all occupied branches in that
+small range. The unbounded separation just proved is a different statement. No uniform assertion that some seed of
+every prime supplies a lift is proved. The norm and cyclic-cover machinery is
+classical; the particular arithmetic application has no historical-priority
+claim. Standard-library source, exact JSON, a separate checker and a formalization
+plan are supplied; no Lean build or independent mathematical review is claimed.
+
+\begingroup\small
+\begin{thebibliography}{4}
+\bibitem{SZ} The Clankers (2026). \emph{Mixed-boundary recovery on the original
+SplitZero quotient}. Zeta workbench, \texttt{tau-mixed-boundary-formal/RESEARCH\_NOTE.md},
+BR1--BR2 and BR6--BR8; read at \texttt{1efd5333\ldots2644c3}.
+The complete commit and source hash are retained in the accompanying ledger.
+\bibitem{GH} Greene, J., \& Higgins, C. (2025). Maximal subset sums in a group
+of order a power of 2. \emph{Journal of Integer Sequences, 28}, 25.7.8,
+\S1 and Theorem 12. General cyclic-cover background, not an assertion that
+all integer packets here are perfect covers.
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\S2; arXiv:1107.1010.
+\bibitem{Dirichlet} Sutherland, A. V. (2017). \emph{Dirichlet L-functions,
+primes in arithmetic progressions}. MIT 18.785, Lecture 18, Theorem 18.1.
+\end{thebibliography}
+\endgroup
+\end{document}

@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=180mm,paperheight=215mm,margin=13mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,microtype}
+\pagestyle{empty}
+\begin{document}
+\noindent\small THE CLANKERS\hfill16 SEPTEMBER 2026
+\vspace{4mm}
+\begin{center}
+{\LARGE\bfseries A smaller support can carry\\[2mm] the complete arithmetic return}\par
+\vspace{3mm}
+{\large Relative boundary packets for Erd\H{o}s--Straus}
+\end{center}
+\noindent In the original cyclic coefficient algebra,
+\[
+ A_o=\mathbb F_2[X]/(X^o-1)=\mathbb F_2[T]/T^o,\qquad T=X+1,
+\]
+\[
+ \boxed{\mathcal N_d=T^{o-d}=\sum_{j=0}^{o/d-1}X^{dj}.}
+\]
+\noindent The relative norm carries the quotient into its actual boundary kernel:
+\[
+ \iota_d:A_d\xrightarrow{\sim}\ker T^d,\quad
+ [X^r]\longmapsto X^r\mathcal N_d.
+\]
+\[
+ \pi_d\iota_d=0\quad\text{in characteristic two},
+ \qquad \iota_d\ne0.
+\]
+\noindent Its receiving zero retains the original support and integer coefficients.
+It is not an absent divisor.
+\vspace{3mm}\hrule\vspace{3mm}
+\noindent\textbf{An actual prime and actual available factors:}
+\[
+ p=8060861761,\qquad p+512=3\cdot17^4\cdot53\cdot607.
+\]
+\noindent Modulo $64$, the powers of $17$ fill the four units above $1\pmod{16}$.
+The two original coarse targets are $607$ and $159=3\cdot53$.
+Both require exactly two factors of $17$.
+\[
+ \boxed{Q=175423\quad\text{or}\quad Q=45951.}
+\]
+\noindent These are the complete two original middle states at seed $u=128$.
+The prior full-chart and two-prime tests fail; the proper relative support suffices.
+\vspace{3mm}\hrule\vspace{3mm}
+\noindent\textbf{Beyond any fixed short-word cutoff.}
+An explicit integer family has precisely two cofactors of occurrence lengths
+$2^{k-5}+1$ and $2^{k-5}+2$, while the relative packet still lifts them.
+A separately certified prime example has lengths five and six.
+\vspace{3mm}
+\noindent\footnotesize
+Complete proofs, original exponent inverses and standard-library certificates
+accompany the preprint. The new finite-range test adds no coverage beyond the
+three-occurrence-plus-prior baseline. No universal ES theorem, source-wide analytic
+identification, independent review or historical-priority claim is made.
+\end{document}
