@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,longtable,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}
+\hypersetup{pdftitle={The complete ES defect atlas as affine torsion monodromy},pdfauthor={The Clankers research workbench}}
+\emergencystretch=2em
+\title{The complete ES defect atlas as affine torsion monodromy\\
+Source reconstruction, primitive cohomology, and all odd-level genera}
+\author{The Clankers research workbench\\\small Assistant-developed continuation; source-specific attribution retained}
+\date{12 September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+The full finite Erd\H{o}s--Straus divisor atlas has a canonical integer
+return denominator at every labelled candidate. We identify its cyclic
+obstruction group with a primitive cohomology class of exact order $D$
+in the actual rank-four period monodromy circulated with the proposed
+$S^6$ construction. The affine slice has three residue coordinates.
+We classify all its orbits and all compactified genera for every odd
+level, retaining prime-power budgets, raw orders and candidate labels.
+A source-derived central commutator is translation by $-12$.
+A counterexample prime would give a full sectionless decorated covering;
+no such prime is found. We distinguish this construction from the source's
+six-dimensional total space, exhibit an obstruction to one proposed
+identification, and keep all source-global claims outside the new proofs.
+\end{abstract}
+\tableofcontents
+\input{src/core.tex}
+\input{src/arithmetic.tex}
+\input{src/comparison.tex}
+\section{Reproducibility and precise scope}
+The standalone verifier recomputes primality, factorizations, every full
+exponent box, every ordered rational return, all local denominator losses,
+and the actual finite affine permutations at the stated levels.
+It completely enumerates levels $1,3,5,7,9,15,21,25,27,35,45$ and full
+arithmetic atlases at primes $5,37,241,1201$.
+Large covers attached to the arithmetic atlases are specified by exact
+formulas and proved passports; their $D^3$ sheets are not all expanded.
+The restricted negative example $p=241,a=64$ is checked separately and
+cannot pass the full-negative validator.
+
+The code uses only the Python standard library and raises explicit errors,
+including in optimized execution. The certificate stores every source
+matrix and affine branch; the $D\le9$ permutations are supplied in full.
+The source topology and analytic period-existence theorem were not
+independently rerun, nor was a Lean build performed. A precise dependency
+plan accompanies this tranche. No global ES resolution or independently
+certified global complex structure on $S^6$ is claimed.
+
+The orbit classification, its exact genus formulas, and the marked
+cyclic-obstruction comparison were derived in this investigation. A
+content-level search located the source monodromies, the standard
+permutation-cover correspondence and classical finite group framework,
+but no exact antecedent for these combined formulas was established.
+This is not a historical-priority claim. The compact companion preprint
+isolates those calculations rather than republishing a long historical
+corpus. No repository was modified and no external deposit was made.
+\input{src/references.tex}
+\end{document}

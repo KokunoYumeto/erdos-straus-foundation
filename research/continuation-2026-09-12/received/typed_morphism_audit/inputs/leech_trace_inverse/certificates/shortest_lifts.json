@@ -1,0 +1,3621 @@
+{
+  "ES_defect_square_sum_coefficients": [
+    737280,
+    0,
+    241920
+  ],
+  "classes": [
+    {
+      "minimal_lift_multiplicity": 1,
+      "mu_times4": 0,
+      "reduced_trace": [
+        0,
+        0,
+        0
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 10528,
+      "mu_times4": 15,
+      "reduced_trace": [
+        0,
+        0,
+        1
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 1288,
+      "mu_times4": 12,
+      "reduced_trace": [
+        0,
+        0,
+        2
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 10528,
+      "mu_times4": 15,
+      "reduced_trace": [
+        0,
+        0,
+        -1
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "residue_mod4": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 10528,
+      "mu_times4": 15,
+      "reduced_trace": [
+        0,
+        1,
+        0
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "residue_mod4": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        0,
+        1,
+        1
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        0,
+        1,
+        2
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        3,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        0,
+        1,
+        -1
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        -2,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 1288,
+      "mu_times4": 12,
+      "reduced_trace": [
+        0,
+        2,
+        0
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        0,
+        2,
+        1
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 28,
+      "mu_times4": 8,
+      "reduced_trace": [
+        0,
+        2,
+        2
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        0,
+        2,
+        -1
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -3,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 10528,
+      "mu_times4": 15,
+      "reduced_trace": [
+        0,
+        -1,
+        0
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        0,
+        -1,
+        1
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        -2,
+        0,
+        0,
+        -2,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        0,
+        -1,
+        2
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "residue_mod4": [
+        0,
+        3,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        0,
+        -1,
+        -1
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        -2,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        0,
+        3,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 10528,
+      "mu_times4": 15,
+      "reduced_trace": [
+        1,
+        0,
+        0
+      ],
+      "representative_numerator": [
+        -3,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "residue_mod4": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        1,
+        0,
+        1
+      ],
+      "representative_numerator": [
+        -2,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        1,
+        0,
+        2
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        1,
+        0,
+        -1
+      ],
+      "representative_numerator": [
+        -2,
+        0,
+        -2,
+        0,
+        0,
+        -2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        2,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        1,
+        1,
+        0
+      ],
+      "representative_numerator": [
+        -2,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 2688,
+      "mu_times4": 13,
+      "reduced_trace": [
+        1,
+        1,
+        1
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        3
+      ],
+      "residue_mod4": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        1,
+        1,
+        2
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 2688,
+      "mu_times4": 13,
+      "reduced_trace": [
+        1,
+        1,
+        -1
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -3,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        1,
+        2,
+        0
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        1,
+        2,
+        1
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2
+      ],
+      "residue_mod4": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 8,
+      "mu_times4": 7,
+      "reduced_trace": [
+        1,
+        2,
+        2
+      ],
+      "representative_numerator": [
+        -3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        1,
+        2,
+        -1
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        -2,
+        0,
+        0,
+        -2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        0
+      ],
+      "residue_mod4": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        1,
+        -1,
+        0
+      ],
+      "representative_numerator": [
+        -2,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        1,
+        3,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 2688,
+      "mu_times4": 13,
+      "reduced_trace": [
+        1,
+        -1,
+        1
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        3
+      ],
+      "residue_mod4": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        1,
+        -1,
+        2
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        -2,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 2688,
+      "mu_times4": 13,
+      "reduced_trace": [
+        1,
+        -1,
+        -1
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        -3,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "residue_mod4": [
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 1288,
+      "mu_times4": 12,
+      "reduced_trace": [
+        2,
+        0,
+        0
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        2,
+        0,
+        1
+      ],
+      "representative_numerator": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        3,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 28,
+      "mu_times4": 8,
+      "reduced_trace": [
+        2,
+        0,
+        2
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        2,
+        0,
+        -1
+      ],
+      "representative_numerator": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        3
+      ],
+      "residue_mod4": [
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        2,
+        1,
+        0
+      ],
+      "representative_numerator": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "residue_mod4": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        2,
+        1,
+        1
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 8,
+      "mu_times4": 7,
+      "reduced_trace": [
+        2,
+        1,
+        2
+      ],
+      "representative_numerator": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        2,
+        1,
+        -1
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        -2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 28,
+      "mu_times4": 8,
+      "reduced_trace": [
+        2,
+        2,
+        0
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 8,
+      "mu_times4": 7,
+      "reduced_trace": [
+        2,
+        2,
+        1
+      ],
+      "representative_numerator": [
+        1,
+        1,
+        -3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 1232,
+      "mu_times4": 12,
+      "reduced_trace": [
+        2,
+        2,
+        2
+      ],
+      "representative_numerator": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        2,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 8,
+      "mu_times4": 7,
+      "reduced_trace": [
+        2,
+        2,
+        -1
+      ],
+      "representative_numerator": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        2,
+        -1,
+        0
+      ],
+      "representative_numerator": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        3,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        2,
+        -1,
+        1
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        -2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 8,
+      "mu_times4": 7,
+      "reduced_trace": [
+        2,
+        -1,
+        2
+      ],
+      "representative_numerator": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        3,
+        1
+      ],
+      "residue_mod4": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        2,
+        -1,
+        -1
+      ],
+      "representative_numerator": [
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        2,
+        -2,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        2
+      ],
+      "residue_mod4": [
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 10528,
+      "mu_times4": 15,
+      "reduced_trace": [
+        -1,
+        0,
+        0
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        -1,
+        0,
+        1
+      ],
+      "representative_numerator": [
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        3,
+        0,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        -1,
+        0,
+        2
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        3,
+        0,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        -1,
+        0,
+        -1
+      ],
+      "representative_numerator": [
+        -4,
+        0,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        3,
+        0,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        -1,
+        1,
+        0
+      ],
+      "representative_numerator": [
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "residue_mod4": [
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 2688,
+      "mu_times4": 13,
+      "reduced_trace": [
+        -1,
+        1,
+        1
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        -1,
+        1,
+        2
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 2688,
+      "mu_times4": 13,
+      "reduced_trace": [
+        -1,
+        1,
+        -1
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        3,
+        1,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 560,
+      "mu_times4": 11,
+      "reduced_trace": [
+        -1,
+        2,
+        0
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "residue_mod4": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        -1,
+        2,
+        1
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0
+      ],
+      "residue_mod4": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 8,
+      "mu_times4": 7,
+      "reduced_trace": [
+        -1,
+        2,
+        2
+      ],
+      "representative_numerator": [
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "residue_mod4": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        -1,
+        2,
+        -1
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "residue_mod4": [
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 5440,
+      "mu_times4": 14,
+      "reduced_trace": [
+        -1,
+        -1,
+        0
+      ],
+      "representative_numerator": [
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 2688,
+      "mu_times4": 13,
+      "reduced_trace": [
+        -1,
+        -1,
+        1
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "residue_mod4": [
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 224,
+      "mu_times4": 10,
+      "reduced_trace": [
+        -1,
+        -1,
+        2
+      ],
+      "representative_numerator": [
+        -2,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        -2,
+        0,
+        -2,
+        0,
+        0,
+        0
+      ],
+      "residue_mod4": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "minimal_lift_multiplicity": 2688,
+      "mu_times4": 13,
+      "reduced_trace": [
+        -1,
+        -1,
+        -1
+      ],
+      "representative_numerator": [
+        -3,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "residue_mod4": [
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "formula": "min||lambda||^2=||t||^2/4+mu(t mod4)",
+  "minimal_shell_projection": [
+    {
+      "multiplicity": 1,
+      "trace": [
+        -4,
+        0,
+        0
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        -2,
+        -2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        -2,
+        -1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -2,
+        -1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -2,
+        -1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        -2,
+        0,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        -2,
+        0,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 1288,
+      "trace": [
+        -2,
+        0,
+        0
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        -2,
+        0,
+        1
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        -2,
+        0,
+        2
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -2,
+        1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -2,
+        1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        -2,
+        1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -2,
+        1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -2,
+        2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        -2,
+        2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -2,
+        2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        -1,
+        -2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -1,
+        -2,
+        2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 2688,
+      "trace": [
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 2688,
+      "trace": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -1,
+        -1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        -1,
+        0,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 10528,
+      "trace": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        -1,
+        0,
+        2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -1,
+        1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 2688,
+      "trace": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        -1,
+        1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 2688,
+      "trace": [
+        -1,
+        1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -1,
+        1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -1,
+        2,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -1,
+        2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        -1,
+        2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        -1,
+        2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        -1,
+        2,
+        2
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "trace": [
+        0,
+        -4,
+        0
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        0,
+        -2,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        0,
+        -2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 1288,
+      "trace": [
+        0,
+        -2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        0,
+        -2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        0,
+        -2,
+        2
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        0,
+        -1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 10528,
+      "trace": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        0,
+        -1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "trace": [
+        0,
+        0,
+        -4
+      ]
+    },
+    {
+      "multiplicity": 1288,
+      "trace": [
+        0,
+        0,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 10528,
+      "trace": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 19530,
+      "trace": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "multiplicity": 10528,
+      "trace": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "multiplicity": 1288,
+      "trace": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "trace": [
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        0,
+        1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 10528,
+      "trace": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        0,
+        2,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        0,
+        2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 1288,
+      "trace": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "trace": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        1,
+        -2,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        1,
+        -2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        1,
+        -2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        1,
+        -2,
+        2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        1,
+        -1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 2688,
+      "trace": [
+        1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 2688,
+      "trace": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        1,
+        -1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        1,
+        0,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 10528,
+      "trace": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        1,
+        1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 2688,
+      "trace": [
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 5440,
+      "trace": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 2688,
+      "trace": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        1,
+        2,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        1,
+        2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        2,
+        -2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        2,
+        -2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        2,
+        -2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        2,
+        -1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        2,
+        -1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        2,
+        -1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        2,
+        -1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        2,
+        -1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        2,
+        0,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 1288,
+      "trace": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        2,
+        1,
+        -2
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        2,
+        1,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 560,
+      "trace": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "multiplicity": 224,
+      "trace": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        2,
+        2,
+        -1
+      ]
+    },
+    {
+      "multiplicity": 28,
+      "trace": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "multiplicity": 8,
+      "trace": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "trace": [
+        4,
+        0,
+        0
+      ]
+    }
+  ],
+  "positive_minimal_shell": [
+    {
+      "count": 2688,
+      "prime_parameter_as_rational": "4/3",
+      "trace": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "count": 224,
+      "prime_parameter_as_rational": "8/5",
+      "trace": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "count": 224,
+      "prime_parameter_as_rational": "8/5",
+      "trace": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "count": 8,
+      "prime_parameter_as_rational": "2",
+      "trace": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "count": 224,
+      "prime_parameter_as_rational": "8/5",
+      "trace": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "count": 8,
+      "prime_parameter_as_rational": "2",
+      "trace": [
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "count": 8,
+      "prime_parameter_as_rational": "2",
+      "trace": [
+        2,
+        2,
+        1
+      ]
+    }
+  ]
+}

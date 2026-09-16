@@ -1,0 +1,196 @@
+\section{The original gate in an integral three-coordinate system}
+This section reconstructs the final supplied discussion of 12 September,
+08:19, from its complete text. The downloaded \texttt{workbench.tex} is only
+a wrapper: its five mathematical input files were not recovered. The formulas
+below are therefore explicitly a reconstruction, not an assertion that those
+missing source bytes or their execution receipts have been recovered.
+The comparison to JT's quartic calculation is a contribution of the supplied
+joint investigation; the proofs here check the stated maps independently.
+
+Fix an odd positive integer $R$ and an integer gate $g$. All four marked
+coordinates $(g,x,y,z)$ are retained, with $g$ fixed by every map. On
+$(\mathbb Z/R\mathbb Z)^3$ define
+\begin{align*}
+ a_1^g(x,y,z)&=(6g+y,-6g-x-y,z-2g+x),\\
+ a_2^g(x,y,z)&=(-y,x-6g,z+3g+y),\\
+ a_\infty^g(x,y,z)&=(x,y+x,z-g).
+\end{align*}
+These are the affine slices of the integral matrices in the received
+\nolinkurl{es_s6_counterfactual/src/core.tex}, equation (1), whose source is
+the $(3,4,\infty)$ period manuscript circulated by Levent Alp\"oge.
+Only the displayed integral representation is used; no assertion about the
+global diffeomorphism type of its proposed completed threefold is needed.
+Direct composition gives
+$(a_1^g)^3=(a_2^g)^4=a_1^ga_2^ga_\infty^g=1$.
+The inverses are $(a_1^g)^2,(a_2^g)^3$ and
+$(x,y,z)\mapsto(x,y-x,z+g)$ respectively.
+
+\begin{proposition}[Integral cyclic coordinates]
+For each retained $g$, the map
+\[
+ t_0=-x-y-z-2g,\qquad t_1=-x-z+2g,\qquad t_2=-z
+\]
+is an affine isomorphism over $\mathbb Z$, hence modulo every $R$. Its inverse is
+\[
+ x=t_2-t_1+2g,\qquad y=-t_0+t_1-4g,\qquad z=-t_2.
+\]
+In these coordinates the three maps become, respectively,
+\begin{align*}
+ c(t)&=(t_2,t_0,t_1),\\
+ b_g(t)&=(t_1-g,t_2-g,t_0-t_1+t_2+g),\\
+ u_g(t)&=(t_0+t_1-t_2-g,t_1+g,t_2+g).
+\end{align*}
+\end{proposition}
+\begin{proof}
+The two displayed substitutions compose to the identity in all three
+coordinates, without a division. Substituting each $a_j^g$ into $t_0,t_1,t_2$
+gives the three formulas. For example
+$t_0(a_1^g)=-6g-y+6g+x+y-z+2g-x-2g=-z=t_2$;
+$t_1(a_1^g)=-6g-y-z+2g-x+2g=t_0$ and
+$t_2(a_1^g)=-z+2g-x=t_1$. This proves the first conjugacy;
+the second and third follow by the same explicitly given substitutions.
+The inverse coordinate formulas retain both $g$ and all integer coordinates.
+\end{proof}
+
+\begin{proposition}[The hexagonal quotient and its exact integral inverse]
+Set $X=t_2-t_1$, $Y=t_0-t_1$, $W=-(t_0+t_1+t_2)$. The image in
+$\mathbb Z^3$ is exactly
+\[
+ \mathcal L=\{(X,Y,W):W\equiv2X-Y\pmod3\},
+\]
+an index-three sublattice. Its inverse is
+\[
+ t_0={-W-X+2Y\over3},\quad t_1={-W-X-Y\over3},\quad
+ t_2={-W+2X-Y\over3}.
+\]
+For $Q(X,Y)=X^2-XY+Y^2$, one has
+$2Q(X,Y)+W^2=3(t_0^2+t_1^2+t_2^2)$.
+The integral operation $r(t)=(-t_1,-t_2,-t_0)$ satisfies
+\[
+ r^2=c,\quad r^3=-I,\quad r^6=I,\qquad
+ r:(X,Y,W)\longmapsto(X-Y,X,-W).
+\]
+It preserves $\mathcal L$ and $Q$. It is a specified extension of the cyclic
+action, not claimed to be a word in the original monodromy group.
+The second original monodromy acts on the planar readout by
+$(X,Y)\mapsto(Y+2g,-X)$ and satisfies
+\[
+ Q(Y+2g,-X)-Q(X,Y)=2XY+2gX+4gY+4g^2.
+\]
+\end{proposition}
+\begin{proof}
+Solving the three linear equations gives the displayed inverse. Its three
+numerators are divisible by three exactly under the one displayed congruence.
+The map $(X,Y,W)\mapsto W-2X+Y\pmod3$ is onto, so its kernel has index three.
+Expanding $2(X^2-XY+Y^2)+W^2$ after substitution cancels every cross term
+and leaves $3\sum t_i^2$. Direct iteration gives the powers of $r$.
+The new readouts are $X-Y,X,-W$; their gluing residual is
+$-W-2(X-Y)+X=-W-X+2Y$, divisible by three on $\mathcal L$.
+Expanding $Q(X-Y,X)$ gives $Q(X,Y)$. Substitution into $b_g$ gives
+$X'=Y+2g,Y'=-X$; expanding the two quadratic polynomials proves the last
+identity, including its nonzero correction.
+\end{proof}
+The readout $(t_0,t_1,t_2)\mapsto(X,Y)$ has kernel
+$\mathbb Z(1,1,1)$. Retaining $W$ restores that omitted coordinate subject
+to the exact gluing above. Modulo three the displayed divided inverse is
+\emph{not} silently used: the original integral $t$-coordinates remain the
+primary state at such levels. No unrestricted product of a plane and an
+integer axis replaces $\mathcal L$.
+
+\begin{proposition}[Gate order, compression and the simultaneous local return]
+Put $d=\gcd(R,g)$ and $D=R/d$. For
+$\Delta=\langle a_1,a_2:a_1^3=a_2^4=1\rangle$, write the above affine
+representation as $v\mapsto B_jv+g b_j$. Then
+\[
+ \operatorname{ord}(g[b_R])=D
+ \quad\hbox{in }H^1(\Delta,(\mathbb Z/R\mathbb Z)^3_B).
+\]
+Multiplication by $g$ gives an equivariant injection from the coefficient-one
+system at level $D$ to the coefficient-$g$ system at level $R$:
+\[
+ (\mathbb Z/D\mathbb Z)^3\longrightarrow(\mathbb Z/R\mathbb Z)^3,
+ \qquad v\longmapsto gv.
+\]
+Its image is $(d\mathbb Z/R\mathbb Z)^3$. Its inverse on the image divides
+representatives by $d$ and multiplies by $(g/d)^{-1}$ modulo $D$.
+Both systems have a global fixed sheet precisely when $D=1$. The full
+level-$R$, coefficient-zero system then has $R$ fixed sheets, while the
+compressed level-one system has one.
+\end{proposition}
+\begin{proof}
+Block multiplication gives $b_{hk}=b_h+B_hb_k$. A coboundary at the cusp
+has third coordinate zero because the third row of $B_\infty-I$ is zero.
+Third cusp evaluation is consequently a well-defined homomorphism on
+cohomology and sends $g[b_R]$ to $-g\pmod R$. If $k g[b_R]=0$, then
+$R\mid kg$, equivalently $D\mid k$. Conversely $Dg=0\pmod R$ kills every
+cocycle coefficient, proving exact order.
+Since $\gcd(g/d,D)=1$, the stated inverse proves injectivity and identifies
+the image. Each affine generator obeys
+$g(B_jv+b_j)=B_j(gv)+g b_j$, proving equivariance. For $D=1$ every
+division-modulo-one means its unique zero class.
+A common fixed point would be fixed by the cusp; its last coordinate forces
+$g=0\pmod R$. When $g=0$, the second generator forces $x=-y$ and $y=x$,
+so $x=y=0$ since $R$ is odd. Every $z$ is then fixed by both generators.
+This proves the fixed-sheet counts and their existence equivalence.
+\end{proof}
+In an ES leaf, $g=4u+1$ in channel E and $g=u+a$ in channel M. Thus the
+actual subgroup $\langle[g]_R\rangle$ and the subgroup generated by
+$g[b_R]$ are isomorphic by $kg\mapsto kg[b_R]$; minus cusp evaluation is
+the inverse. For $R=\prod\ell^{h_\ell}$, the CRT map is componentwise
+reduction of this \emph{one} labelled state. Its inverse is
+$v=\sum_\ell v_\ell (R/\ell^{h_\ell})
+ ((R/\ell^{h_\ell})^{-1}\bmod\ell^{h_\ell})\pmod R$ in each coordinate.
+It retains the same divisor exponents, channel and gate at every factor.
+The order is $D=\prod_\ell\ell^{\max(h_\ell-v_\ell(g),0)}$.
+Different divisors chosen separately at different primes do not define this
+same-leaf correspondence.
+
+\section{JT's quartic and the positive-square locus of the hexagon}
+Let $\eta=e^{\pi i/3}$ and $\zeta=e^{\pi i/6}$, so $\zeta^2=\eta$.
+The field $\mathbb Q(\zeta)$ has degree four over $\mathbb Q$; its
+chosen degree-two subfield is $\mathbb Q(\eta)$ and the nontrivial relative
+automorphism sends $\zeta$ to $-\zeta$. For integers $r,s$,
+\[
+ N_{\mathbb Q(\zeta)/\mathbb Q(\eta)}(r-s\zeta)=r^2-\eta s^2,
+ \qquad
+ N_{\mathbb Q(\eta)/\mathbb Q}(X-\eta Y)=X^2-XY+Y^2.
+\]
+Indeed the first product is $(r-s\zeta)(r+s\zeta)$; the second uses
+$\eta+\bar\eta=1$ and $\eta\bar\eta=1$. Consequently
+\[
+ r^4-r^2s^2+s^4=Q(r^2,s^2)
+ =N_{\mathbb Q(\zeta)/\mathbb Q}(r-s\zeta).
+\]
+Multiplication by $\eta^{-1}=1-\eta$ sends
+$X-\eta Y$ to $(X-Y)-\eta X$, the exact planar hexagon map above.
+
+\begin{proposition}[All positive-square returns in the dihedral orbit]
+Let $r,s$ be distinct positive coprime integers. Under the group generated
+by $(X,Y)\mapsto(X-Y,X)$ and $(X,Y)\mapsto(Y,X)$, the points having
+both coordinates positive squares correspond to $(r,s),(s,r)$, and,
+exactly when $|r^2-s^2|=t^2$ for a positive integer $t$, the two additional
+pairs $(\max(r,s),t),(t,\max(r,s))$. Their common quartic norm does not
+change. These statements retain the group element as a mark whenever the
+chosen path matters.
+\end{proposition}
+\begin{proof}
+The six rotation images of $(X,Y)$ are
+\[
+ (X,Y),(X-Y,X),(-Y,X-Y),(-X,-Y),(Y-X,-X),(Y,Y-X).
+\]
+The other six images are their swaps. For distinct $X,Y>0$, the positive
+pairs in this list are exactly
+$(X,Y),(Y,X),(\max(X,Y),|X-Y|),(|X-Y|,\max(X,Y))$.
+Taking $X=r^2,Y=s^2$ proves the square criterion and the complete list.
+Any common prime divisor of $t$ and $\max(r,s)$ would divide the other
+original coordinate too, contradicting $\gcd(r,s)=1$.
+Rotation and swapping both preserve $Q$ by polynomial expansion.
+\end{proof}
+For $(r,s)=(3,5)$, $25-9=16$ gives $(3,5),(5,3),(4,5),(5,4)$,
+all of norm $481=37\cdot13$. At $(1,26)$ the difference is $675$,
+not a square since $25^2<675<26^2$. The norm is
+$456301=2521\cdot181$, and $88^2=3\cdot2521+181$.
+Thus the exact norm bridge preserves this cofactor, which is a quadratic
+residue modulo 2521. A norm-changing arithmetic operation is not supplied
+by the hexagonal unit action. This is the precise scope of the bridge,
+not a conclusion that the constructions are unrelated.

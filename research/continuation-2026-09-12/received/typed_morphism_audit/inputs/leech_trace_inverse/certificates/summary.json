@@ -1,0 +1,15 @@
+{
+  "T_order": 12,
+  "checks": 201742,
+  "claims_not_checked": [
+    "universal ES existence",
+    "full Leech-lattice uniqueness proof",
+    "Lean compilation",
+    "independent review",
+    "historical novelty"
+  ],
+  "minimal_vectors": 196560,
+  "nine_column_right_inverse": "exact identity",
+  "projection_support": 123,
+  "single_trace_residue_classes": 64
+}

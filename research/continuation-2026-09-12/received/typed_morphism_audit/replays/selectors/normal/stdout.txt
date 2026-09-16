@@ -1,0 +1,128 @@
+{
+  "bound": 2000000,
+  "hard_classes": [
+    1,
+    121,
+    169,
+    289,
+    361,
+    529
+  ],
+  "prime_count": 4519,
+  "by_ray": [
+    {
+      "ray": [
+        2,
+        1
+      ],
+      "prime_residual_states": 1566,
+      "prime_residual_prime_hits": 1098,
+      "all_residual_states": 5777,
+      "all_residual_prime_hits": 1723,
+      "minimum_Omega_histogram": {
+        "2": 625,
+        "1": 1098
+      }
+    },
+    {
+      "ray": [
+        3,
+        2
+      ],
+      "prime_residual_states": 838,
+      "prime_residual_prime_hits": 743,
+      "all_residual_states": 2694,
+      "all_residual_prime_hits": 1410,
+      "minimum_Omega_histogram": {
+        "1": 743,
+        "2": 635,
+        "3": 32
+      }
+    },
+    {
+      "ray": [
+        5,
+        3
+      ],
+      "prime_residual_states": 550,
+      "prime_residual_prime_hits": 490,
+      "all_residual_states": 720,
+      "all_residual_prime_hits": 581,
+      "minimum_Omega_histogram": {
+        "1": 490,
+        "2": 84,
+        "3": 7
+      }
+    }
+  ],
+  "by_class": [
+    {
+      "c": 1,
+      "primes": 755,
+      "old_prime_hits": 271,
+      "v3_prime_states": 48,
+      "v3_prime_hits": 43,
+      "v3_new_prime_hits": 24,
+      "all_three_composite_completed_hits": 430
+    },
+    {
+      "c": 121,
+      "primes": 772,
+      "old_prime_hits": 249,
+      "v3_prime_states": 48,
+      "v3_prime_hits": 46,
+      "v3_new_prime_hits": 31,
+      "all_three_composite_completed_hits": 447
+    },
+    {
+      "c": 169,
+      "primes": 751,
+      "old_prime_hits": 278,
+      "v3_prime_states": 133,
+      "v3_prime_hits": 114,
+      "v3_new_prime_hits": 72,
+      "all_three_composite_completed_hits": 474
+    },
+    {
+      "c": 289,
+      "primes": 739,
+      "old_prime_hits": 286,
+      "v3_prime_states": 128,
+      "v3_prime_hits": 113,
+      "v3_new_prime_hits": 73,
+      "all_three_composite_completed_hits": 453
+    },
+    {
+      "c": 361,
+      "primes": 745,
+      "old_prime_hits": 268,
+      "v3_prime_states": 54,
+      "v3_prime_hits": 50,
+      "v3_new_prime_hits": 28,
+      "all_three_composite_completed_hits": 480
+    },
+    {
+      "c": 529,
+      "primes": 757,
+      "old_prime_hits": 316,
+      "v3_prime_states": 139,
+      "v3_prime_hits": 124,
+      "v3_new_prime_hits": 76,
+      "all_three_composite_completed_hits": 551
+    }
+  ],
+  "channels": {
+    "v2_Qmod24_23": 838,
+    "v3_Qmod24_11": 394,
+    "v1_Qmod24_23": 814,
+    "v1_Qmod24_7": 752,
+    "v3_Qmod24_23": 156
+  },
+  "prime_residual_old_hits": 1668,
+  "prime_residual_union_hits": 1972,
+  "prime_residual_v3_new_hits": 304,
+  "all_residual_old_hits": 2588,
+  "all_residual_union_hits": 2835,
+  "all_residual_v3_new_hits": 247
+}
+All exact checks passed; elapsed 21.311 seconds.

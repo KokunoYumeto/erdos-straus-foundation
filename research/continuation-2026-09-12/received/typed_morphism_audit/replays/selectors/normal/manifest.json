@@ -1,0 +1,20 @@
+{
+  "asymptotic_theorems_computationally_proved": false,
+  "finite_bound": 2000000,
+  "large_prime_certificates_checked_by_trial_division": true,
+  "sha256": {
+    "cubic_bridge.json": "e328f831cb475d51dadd9022fd0601fb579d4bf6236d1a31e0507b42f7120499",
+    "families.json": "fb44b22a97ec7b07191601d5e3b2d0a6d1f0e39a79c20c8214c522c4720eac0a",
+    "local.json": "202aa820570a50370081ef5424cbb2bfe33e84a12a0684009426f0299ffcb86b",
+    "map_fibres.json": "78140d09ae9a1edb7ed0113b425e661f79d1f944c7456582df4451090d3bca10",
+    "minimal_patterns.json": "18ef188cd29f4690d3c88001666059178603bf135f0721fa0916bad62b7587cc",
+    "obstruction_2521.json": "0f3b9904c4331f0328c7fae5386c765d2dafdeda755e1bcf128fc4af8b839996",
+    "primality_certificates.json": "5c7c564dc99a98d121134d53973c4f65c0402c40c1ca2d98d1d819238793a843",
+    "sharp_certificates.json": "bfba613f2bc52a6001abdf87949ed7860a6a0a808e051a89cd9914586eb695bc",
+    "sharp_small_rays.json": "112202068a9fb1029cff1b302616f9e257f82971e575e708fc7264d91cd6b7d6",
+    "stress_1201.json": "0adfc7b1798b3bb766c99e74d44f4e1b31a11ebfdee072eaed7536fd3b8cef7d",
+    "summary.json": "2104d420d185781853edd4fadb5ec3d4ab9b956bf58abdb0ef1c7725aa845369",
+    "three_ray_states.json": "c9e36b83a081f47a07d39ce1ec91fe81b85ea50ef162445ac41b777af74d4d1d",
+    "zero_sum.json": "0b4fd678e484bb32d38584402fd43fb085c8b10f41af192835bebcb297be517a"
+  }
+}

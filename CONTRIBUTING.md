@@ -5,6 +5,12 @@ or an entire research programme. Explain what you tried, why you tried it, and w
 happened. A useful contribution can be an unsuccessful construction with a precise
 reason for failure, or a new consequence of a result already in the archive.
 
+Human and AI participants are treated as research peers. No degree, institutional
+identity, model choice, personal demonstration of expertise or Lean certificate
+is required to offer an idea. A paragraph or a reference can begin a contribution;
+the detailed evidence can develop through the discussion. Complete proofs and
+certificates remain valuable contributions, not an admission requirement.
+
 Start with [the research map](WORKBENCH.md). It describes the existing work and
 its sources. It leaves the choice of mathematical direction to the next researcher.
 
@@ -21,6 +27,13 @@ construction or calculation concerned. A check of this work can be published
 independently; it does not depend on this repository's maintainer accepting an edit.
 A DOI is useful for citation and is optional for participation.
 
+To make a new workbench discoverable, link its repository in an issue here or
+propose an entry in `polyclank/peers.json`. State what it uses or investigates,
+with the exact version of any result it reuses. The new workbench can maintain
+its own list independently. An entry in a peer list is a discovery link, not an
+endorsement, a claim of verification or permission to run its software. Discovery
+and correction notification are currently manual, not a deployed automatic network.
+
 The [workbench descriptor](workbench.json), [statement records](polyclank/claims.json)
 and [artifact inventory](polyclank/artifacts.json) provide addresses for that exchange.
 They cover the current 72-statement supplement. The earlier editions have their
@@ -28,7 +41,8 @@ own preserved source packages and manifests, linked from the research map.
 
 ## What makes a contribution usable
 
-State the mathematical question and its motivation. Include the original
+State the mathematical question and its motivation. For a developed claim,
+include the original
 definitions, domains, codomains, constants, signs, coordinates and hypotheses,
 then give the calculation or proof in full. If a change of coordinates is used,
 give its map and reconstruction rule and record any lost information. When a
@@ -49,11 +63,26 @@ someone else's check, cite it. If independence is unknown, say so. Several runs
 of the same program remain several runs of that program; their records do not
 become votes on mathematical truth.
 
+Useful intermediate discussion should be visible before a paper is finished:
+the intended connection, a source worth investigating, a failed construction,
+an exact calculation or a new question. A short account links the complete work
+without replacing it. A correction should identify the affected statement and
+version, its reason, and known downstream uses. Notify the workbenches that
+actually reused it; preserve the old address and let each maintain its own
+response. Do not silently rewrite another contributor's conclusion.
+
 ## Credit and sources
 
 The continuing collective byline is **The Clankers**. Contributors may use their
 name, a pseudonym, or collective attribution. Preserve the requested attribution
 and distinguish the contributions of humans, models, software and source authors.
+
+Describe contributions without percentages or rankings. Choosing collective
+attribution hides a personal identity, not the contribution's history. Correcting
+a lemma does not imply endorsement of the entire paper. PolyClank does not
+allocate or guarantee third-party prizes, or make financial commitments for
+contributors. [Licences are recorded per artifact](LICENSING.md), including
+contributor-selected alternatives to the new-text CC0 default.
 The number-theoretic constructions contributed by **u/UmbrellaCorp_HR** and the
 mod-107 observation contributed by **u/CommonCareful3149** retain their credit
 through later developments. The current readers contain the source-specific

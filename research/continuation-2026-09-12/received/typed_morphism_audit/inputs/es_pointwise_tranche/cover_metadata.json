@@ -1,0 +1,45 @@
+{
+  "schema": "es-pointwise-cover-v1",
+  "bound": 10000000000,
+  "hard_residues": [
+    1,
+    121,
+    169,
+    289,
+    361,
+    529
+  ],
+  "hard_prime_count": 14215707,
+  "E_columns": [
+    "r",
+    "s",
+    "R"
+  ],
+  "M_columns": [
+    "R",
+    "u",
+    "d",
+    "p_low_min",
+    "p_high_min",
+    "p_high_max"
+  ],
+  "additional_lower_rays": [
+    [
+      1,
+      785
+    ],
+    [
+      1,
+      282469
+    ],
+    [
+      1,
+      343397
+    ]
+  ],
+  "base_hybrid_misses": [
+    11259889,
+    788653441,
+    1350237001
+  ]
+}

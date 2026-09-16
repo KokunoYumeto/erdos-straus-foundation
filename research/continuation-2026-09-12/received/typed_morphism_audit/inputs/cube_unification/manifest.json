@@ -1,0 +1,75 @@
+{
+  "format": "three-slot-bundle-manifest/1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4297,
+      "sha256": "a6858679696c5e6e638c59bd1c1e8bf3c52b29ae18cbbe24fe04b9e85bb3b6f0"
+    },
+    {
+      "path": "note.tex",
+      "bytes": 45686,
+      "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01"
+    },
+    {
+      "path": "note.pdf",
+      "bytes": 398080,
+      "sha256": "a0dfb787aa338deba854a47687c8db3170ca3ee40ecbf2d28ba4d11ed222a56e"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 26514,
+      "sha256": "4d84b3f7a1aa5bb1fff8cee51f12a145f0dcebdb53e3012ddcb0a0eca34f132d"
+    },
+    {
+      "path": "graded_lie.py",
+      "bytes": 3868,
+      "sha256": "c0b683c3d8215590a0277c49c6a429046c541c1d9fedb4503cc8cd7caa8874e2"
+    },
+    {
+      "path": "leech_ternary.py",
+      "bytes": 4329,
+      "sha256": "7f6a0a4e8d283b3bee643a7b300777c0eeb98be7c9b88515052971f21d15f6c6"
+    },
+    {
+      "path": "certificate.json",
+      "bytes": 25748,
+      "sha256": "ed6f9fa8a6e4d0fe7d97758e5d638588525fb8f447de6ac91356a0a1526b566b"
+    },
+    {
+      "path": "graded_lie_certificate.json",
+      "bytes": 1408,
+      "sha256": "3530fe20dfee1286734b4c1324d40b1f9d0f54ae170fbcfdd0339a9750678b53"
+    },
+    {
+      "path": "leech_certificate.json",
+      "bytes": 4631,
+      "sha256": "fc47448a8111c650d9697116e2c8a0ebb9b9fd7c29061e1c757ae82fa2122387"
+    },
+    {
+      "path": "execution_receipt.json",
+      "bytes": 1867,
+      "sha256": "19fb1cecafdb1061f6434dd13ad708184568ba3b1e0f13f8b19fda6993978f2b"
+    },
+    {
+      "path": "source_reading.json",
+      "bytes": 5192,
+      "sha256": "2adaee7baad13e016f183fcd0410c16220bdb0b9fb88a0e3f7813ce28f43dc06"
+    },
+    {
+      "path": "lean_ready_plan.md",
+      "bytes": 10248,
+      "sha256": "d6b2a2263c5021a0c0895e380ed48fef1c3ff6de2e7e2e9b5ec3dc6c54790f14"
+    },
+    {
+      "path": "pdf_review.json",
+      "bytes": 470,
+      "sha256": "249a1bb14748d9b7df2f4a2cf99789debcd38b27f128463cc902eb2e80c73367"
+    },
+    {
+      "path": "verify_bundle.py",
+      "bytes": 811,
+      "sha256": "061d2d7a2777d35b2a3cc623b9c8806644c275ce814a539207f361f5eb006f83"
+    }
+  ]
+}

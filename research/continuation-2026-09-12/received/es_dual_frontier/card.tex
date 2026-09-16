@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,xcolor}
+\definecolor{ink}{HTML}{203B59}\definecolor{rulegray}{HTML}{CCD5DE}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{7pt}
+\begin{document}
+{\small\sffamily\color{ink} ERD\H{O}S--STRAUS \quad / \quad EXACT TWO-SIDED CERTIFICATES}
+
+\vspace{5mm}
+{\LARGE\bfseries A positive witness---or a complete obstruction atlas}
+
+\vspace{3mm}
+For prime $p\equiv1\pmod4$, retain every shell $p/4<a<3p/4$, every
+actual divisor $u\mid a^2$, and both channels. Put $R=4a-p$.
+
+Every candidate already gives a \emph{positive rational} decomposition of
+$4/p$. The last two denominators have the same exact reduced denominator:
+\[
+\boxed{D_E=\frac{R}{\gcd(R,4u+1)},\qquad
+       D_M=\frac{R}{\gcd(R,u+a)}.}
+\]
+{\large\bfseries Integrality at the original prime is exactly $D=1$.}
+
+\vspace{3mm}{\color{rulegray}\hrule}\vspace{4mm}
+{\large\bfseries Constructive direction}
+
+An actual signed divisor box has multiplicity mass $N$ and collision energy
+$E=\sum_g\mu(g)^2$. A miss in $M$ allowed residue bins forces
+\[
+E\ge Mq^2+r(2q+1),\qquad N=Mq+r,\quad0\le r<M.
+\]
+At $p=1201$, $a=306$, $R=23$:
+\[
+N=45,\quad M=19,\quad E=107<111.
+\]
+This forces the marked exterior witness
+\[
+(R,u,h,r,s,\kappa)=(23,17,17,1,18,53).
+\]
+The ordinary Cauchy bound does not force this hit.
+
+\vspace{3mm}{\color{rulegray}\hrule}\vspace{4mm}
+{\large\bfseries Counterfactual direction}
+
+If ES fails at $p$, the complete finite atlas has $D\ge3$ everywhere.
+Define the labelled diagonal operator
+\[
+H_p=\operatorname{diag}\!\left(\frac{D-1}{2}\right).
+\]
+It must have the exact positive inverse
+\[
+H_p^{-1}=\operatorname{diag}\!\left(\frac{2}{D-1}\right),
+\qquad 0<H_p^{-1}\le I.
+\]
+Every original exponent-box leaf must carry a certified prime-valuation
+obstruction. Restricted negative examples are not global counterexamples.
+
+\vspace{3mm}{\color{rulegray}\hrule}\vspace{3mm}
+{\small
+Clearing by $D$ gives a genuine integral solution at $pD$, not at $p$.
+All factor labels, affine scales, Leech coordinates, and the full cubic
+correction remain attached.\par
+Complete proofs and standard-library replay: \texttt{workbench.tex},
+\texttt{dual\_es.py}, and two three-page notes.\par
+No global ES proof or counterexample is claimed. Exact refinements of
+inherited coordinates; historical priority unassessed.
+}
+\vfill
+{\footnotesize\sffamily The Clankers research workbench\hfill 12 September 2026}
+\end{document}

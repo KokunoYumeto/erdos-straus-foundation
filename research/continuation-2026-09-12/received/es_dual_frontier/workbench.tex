@@ -1,0 +1,774 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,mathtools,booktabs,longtable,array,microtype}
+\usepackage[hidelinks]{hyperref}\usepackage{xurl}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}\newcommand{\ES}{\operatorname{ES}}
+\newcommand{\Div}{\operatorname{Div}}\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\lcm}{\operatorname{lcm}}\newcommand{\Tr}{\operatorname{Tr}}
+\DeclareMathOperator{\Res}{Res}
+\title{Positive witnesses and a constructive counterfactual system\\for the Erd\H{o}s--Straus equation}
+\author{The Clankers research workbench\\\small Assistant-developed continuation; source-specific credit retained}
+\date{12 September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+The same full finite shell atlas supports two exact research directions. Every
+canonical divisor state gives a positive rational decomposition of $4/p$;
+the two nondistinguished denominators have the same reduced denominator $D$.
+We compute $D$ exactly, identify failure at $p$ with an explicitly invertible
+finite diagonal operator, and carry both successful and unsuccessful states
+through marked Cayley, factor, Leech and octonionic coordinates. Integer
+collision-energy bounds and an exact largest non-subgroup-divisor calculation
+supply constructive sufficient conditions for $D=1$, including a strict
+improvement on the preceding angular bound. No counterexample is found and
+no universal positivity theorem is claimed. The all-shell criterion itself,
+the E/M parametrizations, and the standard inequalities are inherited;
+the present contribution is the explicit two-sided continuation and its
+certificates, without a historical-priority assertion.
+\end{abstract}
+
+\section{Scope, source lineage, and the Giuga model}
+The target is $4/n=1/x+1/y+1/z$ with positive integer denominators.
+A counterexample to a restricted ray family, an angular chamber, or the
+cutoff $R<p$ is not a counterexample to this equation. We use the entire
+first-denominator range forced by a smallest denominator. The foundation's
+\texttt{all\_shell\_no\_hit.tex}, pinned at
+\texttt{9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f}, already supplies the
+finite exponent packet and complete ordered return \cite{foundation}.
+The antecedents are Yamamoto's Lemma 2, equation (4), p.~38;
+Monks--Velingker's reduced-fraction criterion, Theorem 2.2, pp.~4--6;
+and Elsholtz--Tao's Type I/II maps, \S2, Propositions 2.2 and 2.6
+\cite{yamamoto,mv,et}. All formulas required here are rederived below.
+
+The uploaded \texttt{verify\_giuga\_blind\_plane\_cd.py} separates a Giuga
+integer from a counterexample to Giuga's conjecture. Its blocks A3--A6
+retain the additional Carmichael conditions. For a composite candidate $n$
+and each prime $q\mid n$, the simultaneous local conditions are
+\[
+ q\mid n/q-1,\qquad q-1\mid n-1
+ \quad\Longleftrightarrow\quad q^2(q-1)\mid n-q.
+\]
+The equivalence follows from $q^2\mid n-q$ and
+$n-q\equiv n-1\pmod{q-1}$, since $\gcd(q^2,q-1)=1$.
+The first condition forces squarefreeness. The counterexample must be both
+Giuga and Carmichael, not merely one of them; see Kellner's Theorem 3.5
+\cite{kellner}. We import this \emph{method of retaining simultaneous
+conditions}, not a conjectural map between Giuga and ES counterexamples.
+The file's A7 uses floating complex exponentials, while A9b checks an exact
+CRT bijection; neither is represented here as a full formal proof.
+
+For exact phase conventions, the pair
+$(e^{2\pi iA/q},e^{2\pi iB/(q-1)})$ has relative exponent
+\[
+ e=(q-1)A-qB\pmod{q(q-1)}.
+\]
+Its inverse is $A=-e\pmod q$, $B=-e\pmod{q-1}$. Thus this restricted
+relative phase is faithful, although a generic equal-radius Hopf quotient
+forgets the common phase. This fixes the signs explicitly without relying
+on numerical equality of roots of unity. The source's generic annihilator
+and Cayley--Dickson experiments are not needed for the ES proof below.
+
+\section{The full candidate atlas}
+Fix a prime $p=4m+1$, $m\ge1$, and set
+\[
+ \mathcal S_p=\{m+1,\ldots,3m\},\qquad R_a=4a-p.
+\]
+Then $3\le R_a\le2p-3$, $R_a\equiv3\pmod4$, and
+$\gcd(a,R_a)=\gcd(p,R_a)=1$. These follow from $0<a<p$ and primality.
+Write $a=\prod_q q^{e_q}$ and retain the whole box
+\[
+ \mathcal B_a=\prod_{q\mid a}\{0,\ldots,2e_q\},\qquad
+ u(f)=\prod_{q\mid a}q^{f_q}.
+\]
+Unique factorization makes this a bijection to $\Div(a^2)$, with inverse
+$f_q=v_q(u)$. No generated subgroup replaces this box.
+
+A canonical candidate is $\alpha=(p,a,u,c)$ with $a\in\mathcal S_p$,
+$u\mid a^2$, and $c\in\{E,M\}$. Define
+\begin{align}
+ Q_E(\alpha)&=\left(a,\frac{pa+a^2/u}{R_a},\frac{pa+p^2u}{R_a}\right),\label{eq:E}\\
+ Q_M(\alpha)&=\left(a,\frac{p(a+a^2/u)}{R_a},\frac{p(a+u)}{R_a}\right).\label{eq:M}
+\end{align}
+The initial position is distinguished and the other two positions remain
+ordered. An additional exterior swap bit is used when all raw orders are
+required. A middle swap is already $u\mapsto a^2/u$; adding another middle
+swap bit would duplicate records.
+
+\begin{theorem}[Positive rational atlas and complete integral test]\label{thm:atlas}
+Every candidate in \eqref{eq:E}--\eqref{eq:M} is a positive rational
+solution of $4/p=1/a+1/Y+1/Z$. With
+\[
+ g=\gcd(a,u),\quad r=u/g,\quad s=a/g,\quad h=g^2/u,
+\]
+one has $h,r,s\in\Z_{>0}$, $\gcd(r,s)=1$, $a=hrs$, and $u=hr^2$.
+The rational quotients are
+\[
+ \kappa=(pr+s)/R_a\quad(E),\qquad
+ \lambda=(r+s)/R_a\quad(M).
+\]
+The ordered maps are $(hrs,hs\kappa,phr\kappa)$ and
+$(hrs,phs\lambda,phr\lambda)$. Moreover,
+\[
+ \ES(p)\quad\Longleftrightarrow\quad
+ \text{at least one canonical candidate has all coordinates integral}.
+\]
+There are at most $(p-1)^2$ canonical candidates.
+\end{theorem}
+\begin{proof}
+At a prime with $v_q(a)=e$ and $v_q(u)=f$, the exponents of
+$r,s,h$ are $(f-e)_+,(e-f)_+$ and $e-|f-e|$. They are nonnegative
+and prove all normalization assertions. Direct substitution gives
+\[
+ (R_aY-pa)(R_aZ-pa)=p^2a^2
+\]
+in both channels. Expanding yields
+$R_aYZ=pa(Y+Z)$, the desired identity; every displayed denominator is
+positive. The quotient formulas follow by substitution.
+
+For completeness take an actual integral solution and move its smallest
+denominator to the first position, retaining that permutation.
+Positivity gives $p/4<a\le3p/4$, hence $a\in\mathcal S_p$.
+Put $d_Y=R_aY-pa$, $d_Z=R_aZ-pa$. Then $d_Y,d_Z>0$ and
+$d_Yd_Z=p^2a^2$. Thus $d_Y=p^iv$ for $i\in\{0,1,2\}$,
+$v\mid a^2$. If $i=0$, the inverse is $E,u=a^2/d_Y$ without a swap;
+if $i=1$, it is $M,u=pa^2/d_Y$; if $i=2$, it is
+$E,u=d_Y/p^2$ with the exterior swap. The congruences
+$d_Y\equiv d_Z\equiv-pa\pmod{R_a}$ give exactly the required channel
+gates. For instance $i=0$ gives $R_a\mid4u+1$ after multiplication by
+units $u,a^{-1}$ and use of $p\equiv4a$; $i=1$ gives
+$R_a\mid u+a$. Conversely an integral candidate is already a witness.
+The explicit inverse also preserves the full divisor exponent vector.
+
+Pair divisors of $a^2$ around its square root $a$ to get
+$\tau(a^2)\le2a-1$. Hence
+\[
+ |\mathscr A_p|=2\sum_{a=m+1}^{3m}\tau(a^2)
+ \le2\sum_{a=m+1}^{3m}(2a-1)=16m^2=(p-1)^2.
+\]
+The bound counts canonical candidates, not their additional exterior swaps.
+\end{proof}
+
+\section{The exact return denominator}
+\begin{theorem}[Common denominator and defect]\label{thm:denom}
+The two nondistinguished coordinates of each candidate have the same
+reduced rational denominator
+\[
+ D_E=\frac{R_a}{\gcd(R_a,4u+1)},\qquad
+ D_M=\frac{R_a}{\gcd(R_a,u+a)}.\tag{D}
+\]
+This $D$ is the least positive integer clearing the entire triple.
+It is odd, divides $R_a$, and is prime to $p$. With
+\[
+ X=DQ_c(\alpha),\qquad n=pD,\qquad
+ \delta_\alpha=(D-1)/2,
+\]
+one has $X\in\Z_{>0}^3$, $\sum 1/X_i=4/n$, and
+\[
+ F_p(X):=4X_0X_1X_2-p\sum_{i<j}X_iX_j
+ =2p \delta_\alpha\sum_{i<j}X_iX_j.\tag{F}
+\]
+Success at the original prime is exactly $D=1$.
+If $D>1$, then $3p\le n\le p(2p-3)$ and
+$1\le \delta_\alpha\le p-2$.
+\end{theorem}
+\begin{proof}
+For $E$, multiply the numerator of $Y$ by the unit $u$ modulo $R_a$:
+\[
+ u(pa+a^2/u)\equiv a^2(4u+1),\qquad
+ pa+p^2u\equiv4a^2(4u+1)\pmod{R_a}.
+\]
+Every displayed multiplier $u,a,4$ is a unit. Thus both numerator gcds
+with $R_a$ equal $\gcd(R_a,4u+1)$. For $M$, the numerator identities
+\[
+ u\,p(a+a^2/u)=pa(u+a),\qquad p(a+u)=p(u+a)
+\]
+give the same conclusion with $u+a$. Reducing the fractions proves (D).
+As $a$ is integral, $D$ is the least clearing factor of all three entries.
+The bounds and coprimality follow from the shell units. Finally
+$F_{pD}(X)=0$ by scaling the reciprocal identity; subtracting it from
+$F_p(X)$ gives (F).
+\end{proof}
+
+\begin{proposition}[Complete candidate inverse and collision stratum]
+In the canonical order,
+\[
+ u=\frac{a^2}{R_aY-pa}\ (E),\qquad
+ u=\frac{pa^2}{R_aY-pa}\ (M).
+\]
+An exterior triple has three distinct entries. A middle triple has a
+repeat precisely when $u=a$, in which case $Y=Z$ and $D=R_a>1$.
+The middle complement preserves $D$ and reverses the last two entries.
+\end{proposition}
+\begin{proof}
+The residual products in the two channels are respectively
+$(a^2/u,p^2u)$ and $(pa^2/u,pu)$, proving the inverse.
+In the exterior channel $v_p(Y)=0$ and $v_p(Z)\ge1$;
+$a=Y$ would give $(4u-1)a=2pu$. Since $\gcd(u,4u-1)=1$,
+$4u-1$ divides $2p$, impossible modulo four for its odd divisor.
+The equality $a=Z$ would imply $p\mid4a^2$, also impossible.
+In the middle channel both $Y,Z$ have positive $p$-adic valuation,
+while $a$ does not. The equality $Y=Z$ is $a^2/u=u$, hence $u=a$.
+Then $\gcd(R_a,2a)=1$ gives $D=R_a$.
+Complementation follows from the displayed formulas.
+\end{proof}
+
+\begin{proposition}[A same-shell map cannot improve this defect]\label{prop:transport}
+If $u,u'\mid a^2$ and $u'\equiv pu\pmod{R_a}$, the exterior
+candidate at $u$ and the middle candidate at $u'$ have exactly the same $D$,
+whether or not they are integral.
+\end{proposition}
+\begin{proof}
+$u'+a\equiv a(4u+1)\pmod{R_a}$, and $a$ is a unit. Apply (D).
+\end{proof}
+This extends the inherited same-shell congruence to unsuccessful rational
+states. It does not assert that a suitable $u'$ always exists, nor does
+failure of this particular improvement mechanism rule out other maps.
+
+\section{The counterfactual object and its finite inverse certificate}
+\begin{definition}
+The \emph{defect atlas} at $p$ consists of all shells, their complete prime
+factorizations and exponent boxes, both canonical channel maps, each $D$,
+and each local valuation deficit
+\[
+ v_\ell(D)=\max\{v_\ell(R_a)-v_\ell(g_c(u)),0\},
+ \quad g_E(u)=4u+1,\quad g_M(u)=u+a.
+\]
+A negative certificate lists every canonical candidate and, for each one,
+a prime $\ell$ where the displayed deficit is positive. It has the
+explicit scope \emph{full} or \emph{restricted}.
+\end{definition}
+
+Let $\mathcal A_p=\Q^{\mathscr A_p}$ be the finite algebra of functions on
+the canonical candidate set, retaining its basis labels. Let $H_p$ be
+multiplication by $\delta_\alpha=(D_\alpha-1)/2$.
+\begin{theorem}[Two-sided certificate theorem]\label{thm:dual}
+The following are equivalent:
+\begin{enumerate}
+\item $p$ has no positive integral ES decomposition;
+\item $D_\alpha\ge3$ for every canonical candidate;
+\item $H_p$ is invertible;
+\item there is a unique function $b$ with $\delta b=1$, namely
+$b(\alpha)=2/(D_\alpha-1)$;
+\item there is a full negative certificate with the stated local deficits.
+\end{enumerate}
+When these conditions hold, $0<b(\alpha)\le1$. Otherwise any zero coordinate
+of $H_p$ reconstructs a positive integral witness. Both alternatives are
+recognizable by terminating exact algorithms.
+\end{theorem}
+\begin{proof}
+The atlas theorem and the common denominator theorem identify existence
+with some $D=1$. Every other $D$ is odd and at least three. A diagonal
+operator on a finite coordinate algebra is invertible exactly when all
+entries are nonzero, with the displayed unique inverse. A nontrivial
+positive integer $D$ has a prime divisor, whose valuation has the stated
+positive deficit. Conversely any such deficit proves $D>1$.
+Enumerating the finite shell interval and all bounded exponent choices
+constructs one of the alternatives and verifies it. Primality is checked
+by trial division through $\lfloor\sqrt p\rfloor$ in the supplied verifier.
+\end{proof}
+
+There is a universal polynomial version, not an uncomputed hypothesis.
+Set
+\[
+ \Pi_p(z)=\prod_{j=1}^{p-2}(1-z/j),\qquad
+ Q_p(z)=\frac{1-\Pi_p(z)}z\in\Q[z].
+\]
+All diagonal entries of $H_p$ belong to $\{0,\ldots,p-2\}$, so
+\[
+ \Pi_p(H_p)=\text{the exact success projector},\qquad
+ H_pQ_p(H_p)=I-\Pi_p(H_p).
+\]
+Thus a false prime has $H_pQ_p(H_p)=I$. The success dimension is the number
+of canonical passing candidates, not a count of globally sorted triples.
+This interpolation is a standard finite-algebra fact; the particular
+operator and its arithmetic labels are the construction here.
+
+\paragraph{A genuine restricted prototype, not a counterexample.}
+At $p=241,a=64,R=15$ all divisors are $u=2^e$, $0\le e\le12$.
+For either channel the $D$ histogram is
+\[
+ D=3:4\text{ entries},\quad D=5:6\text{ entries},\quad D=15:3\text{ entries}.
+\]
+The negative operator is invertible on these 26 slots. Yet the \emph{full}
+atlas at $241$ has positive witnesses in other shells. Even
+$\gcd\{D_\alpha\}=1$ on this rejected shell: taking a gcd across different
+candidates would give a false conclusion. The second prototype is
+$p=37,a=18,R=35$, whose integral exponent lift can lie outside the original
+box. Both prototypes are already motivated in the foundation and are
+replayed here with their full rational defect data.
+
+The same example has a complete defect-preserving transport graph. Its
+vertices are the 26 labelled $E/M$ candidates. Join complementary middle
+states, and join $E(u)$ to $M(u')$ precisely when
+$u'\equiv pu\pmod R$. Every edge preserves $D$ by
+Proposition~\ref{prop:transport}. Exhaustive adjacency gives exactly
+three connected components: eight vertices at $D=3$, twelve at $D=5$,
+and six at $D=15$. Thus combining these particular moves cannot turn
+this rejected shell into a passing shell. The graph does not restrict
+other cross-shell moves and is not a global counterexample.
+
+\paragraph{Consequences for a least global counterexample.}
+A least counterexample $n$ must be prime: multiply a solution at any prime
+divisor by $n/p$. The prime $2$ is solved by $(1,2,2)$. For $p\equiv3\pmod4$
+the triple $((p+1)/2,(p+1)/2,p(p+1)/4)$ works. For $p\equiv2\pmod3$ use
+$(p,(p+1)/3,p(p+1)/3)$. A remaining prime is $1\pmod{12}$; if it is
+$13\pmod{24}$ then $a_3=(p+3)/4$ is even and $u=2$ passes the residual-three
+exterior gate. Therefore a least false prime is $1\pmod{24}$.
+Its first two shells obey
+\[
+ q\mid (p+3)/4\Longrightarrow q\equiv1\pmod3,
+\]
+\[
+ q\mid (p+7)/4\Longrightarrow q\equiv1,2,4\pmod7.
+\]
+The first assertion is the exact residual-three criterion. For the second,
+$a_7$ is even and the signed powers $2^{-1},1,2$ fill the subgroup
+$\{1,2,4\}$ modulo seven. Any factor outside it makes the middle target
+$-1$ attainable using its one actual occurrence and one of those three
+powers. If every factor is inside, both original targets are outside.
+These are specializations of the foundation's first-two-shell theorems,
+not new source attributions \cite{foundation}.
+
+The condition $p+1$ having a prime divisor $q\equiv3\pmod4$ also gives a
+witness: $R=q<p$, $r=s=1$, $h=(p+q)/4$, and $q\mid p+1$.
+Thus a false prime has no such factor. Every further necessary condition
+proved below applies to every shell of the same false prime.
+
+\section{A sharpened positive collision criterion}
+Fix a shell and $G=(\Z/R\Z)^\times$. Use the actual signed exponent box
+\[
+ \mathcal B^\pm_a=\prod_{q\mid a}\{-e_q,\ldots,e_q\}.
+\]
+Let $\mu(g)$ count its full fibres under
+$\beta\mapsto\prod q^{\beta_q}\pmod R$, and put
+\[
+ N=\prod_q(2e_q+1),\quad E=\sum_g\mu(g)^2,
+ \quad\mathcal T=\{-1,-p,-p^{-1}\}\subset G.
+\]
+The set braces remove any coincident targets. Inversion of the box gives
+$\mu(g)=\mu(g^{-1})$. The channel targets on $u/a$ are $-p^{-1}$ and $-1$;
+therefore avoiding both channels is exactly avoiding $\mathcal T$.
+
+\begin{theorem}[Integer collision-energy forcing]\label{thm:energy}
+Let $M=|G|-|\mathcal T|$. If $M>0$ write $N=Mq+r$ with $0\le r<M$ and set
+\[
+ L(N,M)=Mq^2+r(2q+1).
+\]
+If both channels are empty, then $E\ge L(N,M)$.
+In particular $E<L(N,M)$ constructs a witness. If $M=0$, a witness exists.
+The exact collision energy is
+\[
+ E=\sum_{\delta_q=-2e_q}^{2e_q}
+ \mathbf1_{\prod q^{\delta_q}=1\ (R)}
+ \prod_q(2e_q+1-|\delta_q|).\tag{C}
+\]
+\end{theorem}
+\begin{proof}
+A miss leaves at most $M$ bins containing $N$ occurrences. If two bin
+counts differ by at least two, moving one from the larger to the smaller
+strictly decreases the sum of squares. The minimum therefore has $r$
+bins of size $q+1$ and $M-r$ bins of size $q$, giving $L$.
+For (C), $E$ counts ordered pairs of exponent vectors with equal image.
+At a fixed difference $\delta_q$, exactly $2e_q+1-|\delta_q|$ pairs
+occur in that coordinate; multiply and impose the one simultaneous
+residue equation. To extract a hit, retain an exponent vector in a target
+fibre. At $-1$ use $M$. At $-p^{-1}$ use $E$. At $-p$ negate the whole
+exponent vector first. In each case $u=\prod q^{e_q+\beta_q}$ remains
+inside the original divisor box and the canonical denominator formula
+returns the ordered witness.
+\end{proof}
+
+\paragraph{A stronger exact symmetric minimum.}
+If $1\in\mathcal T$, the zero exponent vector is already a hit.
+Otherwise let $s$ be the number of allowed nonidentity involutions and
+$r$ the number of allowed unordered inverse pairs. The identity count is
+odd, each other involution count is even, and each inverse pair has equal
+counts. A miss consequently satisfies
+\[
+ E\ge L_{\rm sym}:=
+ \min_{x_0+\cdots+x_s+y_1+\cdots+y_r=(N-1)/2}
+ \left((1+2x_0)^2+4\sum_{i=1}^sx_i^2+2\sum_{j=1}^ry_j^2\right),
+\]
+with nonnegative integer variables. This finite minimum has an exact greedy
+algorithm: start from one and take $(N-1)/2$ least available marginal costs
+from the increasing sequences $8,16,24,\ldots$ for the identity,
+$4,12,20,\ldots$ for each other involution, and $2,6,10,\ldots$ for each
+inverse pair. Each selected prefix is feasible, and an exchange of an
+unnecessarily expensive selected marginal with a cheaper available one
+proves optimality. These constraints follow from the involution
+$\beta\mapsto-\beta$, whose sole fixed vector is zero.
+
+\paragraph{Strict improvement at an inherited stress prime.}
+For $p=1201,a=306,R=23$, the factors are $2\cdot3^2\cdot17$.
+Here $N=45$, $\mathcal T=\{9,18,22\}$, $M=19$, and the exact energy is
+$107$. Ordinary Cauchy--Schwarz gives only
+$19\cdot107=2033>2025$ and does not force a hit.
+The integer minimum is $12\cdot2^2+7\cdot3^2=111$;
+$L_{\rm sym}=111$ as well. Since $107<111$, the sharper theorem forces
+an actual target. The retained inverse returns $u=17$, channel $E$,
+$(h,r,s,\kappa)=(17,1,18,53)$ and
+$(306,16218,1082101)$. This is not new finite coverage of that prime;
+it is a strictly stronger exact sufficient criterion.
+
+A hypothetical false prime must satisfy $E_a\ge L_{{\rm sym},a}$ in
+\emph{every} full shell. Equivalently the nontrivial Fourier mass of each
+multiplicity packet must be sufficiently large, since the usual finite
+Parseval identity gives
+$\sum_{\chi\ne1}|\widehat\mu(\chi)|^2=|G|E-N^2$.
+No Fourier sign, density estimate, or subgroup-support approximation
+replaces the integer target fibre.
+
+\section{Exact maximal-cofactor angular forcing}
+Let $H\le(\Z/R\Z)^\times$ have index two with $-1\notin H$.
+Let $A\mid a$, all of whose prime factors lie in $H$, and retain the
+\emph{actual} finite anchor pairs
+\[
+ (n,d):\quad nd\mid A,\quad\gcd(n,d)=1.
+\]
+Suppose their ratios cover $H$, an explicitly checkable condition on $A$.
+For $v\in H$, define the attained cost
+\[
+ c_A(v)=\min_{n/d=v\ (R)}d/n,
+ \qquad B_A=\max_{v\in H}c_A(v).
+\]
+This is the preceding angular construction's exact finite data, not a
+universal assumption on the unknown ES prime.
+
+\begin{theorem}[Exact largest available outside divisor]\label{thm:cofactor}
+Write $a=Ab$ and assume $\gcd(a,R)=1$. The largest divisor of $b$ outside $H$
+is
+\[
+ T_H(b)=
+ \begin{cases}
+ b,&b\notin H,\\
+ b/q_*,&b\in H\text{ and has a prime divisor outside }H,\\
+ 0,&\text{every prime divisor of }b\text{ lies in }H,
+ \end{cases}
+\]
+where $q_*$ is the least actual outside prime factor.
+If $T_H(b)>8B_A$, there is a middle state with $0<r/s<1/8$.
+More exactly, the anchor construction has such a state if and only if
+some actual outside divisor $t\mid b$ satisfies
+$t>8c_A(-t^{-1})$.
+\end{theorem}
+\begin{proof}
+If $b$ is outside, $b$ itself is the largest divisor. If $b\in H$ and $t$
+is outside, the complement $b/t$ is outside, hence has an outside prime
+factor and is at least $q_*$. The bound $t\le b/q_*$ is attained by that
+quotient. If there is no outside factor no divisor can be outside.
+
+For an outside divisor $t$, choose a minimizing pair $(n,d)$ for
+$-t^{-1}\in H$. Then $R\mid d+tn$ and $dtn\mid a$. Set
+\[
+ g=\gcd(d,tn),\quad r=d/g,\quad s=tn/g,\quad
+ h=\frac{ag^2}{dtn},\quad u=\frac{ad}{tn},\quad
+ \lambda=\frac{d+tn}{gR}.
+\]
+Every coordinate is integral; $g$ is a unit modulo $R$;
+$a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$. Thus this is a middle state,
+and $r/s=c_A(-t^{-1})/t$. This proves both assertions. For a marked target
+$(h,r,s)$ the complete inverse fibre consists of the anchor pairs for which
+$t=ds/(nr)$ is a positive divisor of $b$ outside $H$ and satisfies the
+stated congruence and inequality. Coprimality forces $r\mid d$ and then
+$g=d/r$. Thus all inverse data are explicit; forgetting $(n,d,t)$ can
+create only the stated finite fibres.
+\end{proof}
+The lower Koide boundary exceeds $1/8$: the rational bounds
+$\sqrt3>1732/1000$, $\sqrt2<1415/1000$, give
+$317/2415>1/8$. The radical bounds follow by squaring positive rationals.
+Thus the produced states lie in the stipulated lower chamber.
+
+For $b\in H$ the preceding universal threshold $b>64B_A^2$ is now replaced
+by the factor-sensitive threshold
+\[
+ \boxed{b>8B_Aq_*.}
+\]
+The new theorem neither assumes the outside factor exists in every shell
+nor asserts monotonicity of $D$ under an unspecified map.
+
+\paragraph{Numerical certificate below the old sufficient threshold.}
+Take $R=19$, $A=35$, and the quadratic residues
+$H=\{1,4,5,6,7,9,11,16,17\}$. The actual anchor box covers $H$ and
+$B_A=35$. At
+\[
+ p=558721=140\cdot3991-19,\qquad b=3991=13\cdot307,
+\]
+$b\in H$, $q_*=13$ and $T_H(b)=307>280$,
+whereas $3991<78400=64B_A^2$. The cost at the selected residue is $35$,
+with $(n,d)=(1,35)$. The theorem gives
+\[
+ (R,u,h,r,s,\lambda)=(19,15925,13,35,307,18)
+\]
+and ordered denominators
+\[
+ (139685,40137399198,4575924990).
+\]
+The prime is $121\pmod{840}$ and its primality is certified by complete trial
+division. Three further examples and all minimizing pairs are in the JSON.
+These are illustrations of a stronger criterion, not claims of previously
+unknown ES coverage.
+
+For a hypothetical false prime, every actual saturated anchor in every
+shell has \emph{no} outside prime factor at all: without an angular restriction
+one outside divisor and the congruence construction already yield a middle
+state. For the stronger chamber-restricted counterfactual, the exact
+necessary inequalities are instead
+$t\le8c_A(-t^{-1})$ for every available outside $t$ (for the $1/8$
+subchamber). The two counterfactuals must not be conflated.
+
+\section{Transport through the marked geometric and lattice interfaces}
+\subsection{Scale, Cayley coordinates, and all factor labels}
+For a rational atlas state $q=(a,Y,Z)$ retain
+\[
+ A=(-p,4a,4Y,4Z),\qquad e_3(A)=0.
+\]
+The cleared state $(pD,Dq)$ has Cayley vector $DA$. Thus its projective
+point, all four face root triples, and their factor labels agree with those
+of the original rational candidate:
+\[
+ t_{ij}=-4A_i/A_j\quad(j\ne i),\qquad \sum_{j\ne i}t_{ij}=4.
+\]
+The affine parameter $p$ or the equivalent full scale must remain available.
+$D$ can then be retained directly or recomputed from the rational denominators.
+It is not recoverable from branch labels alone.
+The face inverse is $A_j=-4A_i/t_{ij}$ with $A_i$ retained.
+
+For a flag $(i,j,k,l)$ put $r=t_{ij},s=t_{ik},t=t_{il}$,
+$d=-\tfrac14(r-s)(r-t)$ and $\eta=s-t$. The unnormalized factors
+\[
+ \ell=U-rV,\qquad Q=-\tfrac14(U-sV)(U-tV)
+\]
+are retained for every flag, with resultant $d$.
+If $d\ne0$, the normalized pair is $(\ell/d,dQ)$ and the inherited Fable
+source coordinates are
+\[
+ (d^{-1},-r-d,5d^2+3rd+\tfrac12d^3).
+\]
+The derivative, $\eta$, scale and flag are not deleted. If $d=0$,
+the resultant-one chart is not invoked: the original factors and their
+multiplicity labels remain. In particular the rejected $M,u=a$ states
+are not thrown away to make the normalized chart look complete.
+The selected computations carry every one of 24 flags, including the
+zero-resultant strata, through the stated return.
+
+The four-face resolvent from the preceding package is
+$b_0=A_0A_1+A_2A_3$ and its two matching analogues. Clearing gives
+$b_i(DA)=D^2b_i(A)$. This degree-two scale is retained. It does not identify
+the three resolvent values with the three denominator values.
+
+\subsection{A genuine failed rational candidate with integral geometric lifts}
+For $p=241,a=64,u=1,E$, one has $R=15$, $D=3$ and
+\[
+ q=(64,3904/3,14701/3),\qquad
+ X=(192,3904,14701),\qquad n=723.
+\]
+The integer $X$ solves ES at $723$, not at $241$. Nevertheless both records
+have the same projective Cayley point and the same labelled face cubics.
+The certificate supplies all normalized simple factor routes for this failed
+candidate, not just routes for already successful states.
+
+\subsection{Leech fibres and the full Albert correction}
+Retain the preceding integral map $P:\Lambda\to\Z^3$ and its specified
+section $\sigma(t)=\sum t_i b_i$, where the numerator of $b_0$ is
+\[
+(-3,1,-1,1,1,-1,-1,1,1,1,1,1,1,-1,1,1,1,1,-1,-1,-1,-1,1,1)
+\]
+and $b_1=Cb_0,b_2=C^2b_0$, each divided by $\sqrt8$.
+The three octads, code membership and identities $P(b_i)=e_i$ are checked
+exactly in the standalone package. The infinite section follows by
+linearity and closure of the classical Leech lattice.
+
+The clearing denominator is recoverable even from the integral trace, provided
+the original prime is retained:
+\[
+ D=\frac{4X_0X_1X_2}{p\sum_{i<j}X_iX_j}.
+\]
+It then recovers $q=X/D$, $a$, $R$, and $u$ by the candidate inverse.
+The channel is distinguished by $v_p(Y)=0$ in $E$ and $v_p(Y)>0$ in $M$.
+Thus the map from canonical candidates to their ordered cleared triples,
+and hence to their chosen Leech lifts, is injective for fixed $p$.
+The complete scaled-candidate lift is
+\[
+ (\alpha,k)\longmapsto \lambda_\Lambda=\sigma(Dq)+k,
+ \qquad k\in\ker P.
+\]
+Its inverse uses $q=P\lambda_\Lambda/D$, the retained $p,R,c$ and the
+candidate inverse, then $k=\lambda_\Lambda-\sigma(Dq)$.
+These are maps on the explicitly specified image, not on arbitrary
+unmarked lattice vectors. The supplied tests use $k=0$ but retain the
+full fibre theorem. The all-octad inverse is checked on these vectors too;
+its nonzero-syndrome classes are not silently admitted.
+
+The signed Golay--Wilson map in \texttt{lineage/aligned\_isometry.json}
+identifies the full numerator vector with ordered octonions $z_0,z_1,z_2$.
+Its explicit signed inverse is checked. The previously established
+infinite-lattice image theorem is inherited, not newly audited here. The
+checker verifies the signed dictionary against the pinned matrix on all
+576 entries, tests the actual joint Wilson membership conditions on each
+returned state, and computes the full octonion cubic using the retained
+Fano multiplication convention \cite{wilson}.
+For $X=P\lambda_\Lambda$, $n_i=N(z_i)$ and
+$\nu=2\Re((z_0z_1)z_2)$, retain
+\[
+ \widehat X=\begin{pmatrix}X_0&z_2&\bar z_1\\\bar z_2&X_1&z_0\\
+ z_1&\bar z_0&X_2\end{pmatrix}.
+\]
+Then the earlier exact identity becomes
+\[
+ 4N_J(\widehat X)-pS_J(\widehat X)
+ =2p\delta_\alpha\sum_{i<j}X_iX_j+\sum_i(p-4X_i)n_i+4\nu.
+\]
+The seven geometric test states include the numerical values of
+$N_J,S_J,\nu$, and both sides of this identity. The diagonal denominator
+defect and the off-diagonal cubic correction are separate terms. Neither an arbitrary lattice isometry nor a split-Tits
+transformation is declared to preserve the marked compact cubic.
+
+For any genuine bijection of retained states $f$, multiplication by
+$\delta\circ f^{-1}$ is conjugate to multiplication by $\delta$ on the original
+function algebra. Thus success kernels and negative inverse certificates
+transport exactly. A many-to-one projection must retain its fibre, and a
+map changing the arithmetic state must recompute $D$; functorial notation
+alone does not prove an improvement.
+
+\section{The infinite trace-space counterfactual and its analytic boundary}
+Since $P^{-1}(t)=\sigma(t)+K$, $K=\ker P$, the positive trace space is
+explicitly $\Z_{>0}^3\times K$. Multiplication by
+$F_p(P\lambda)^2$ has a nonzero kernel exactly when ES holds at $p$.
+Under the false-prime hypothesis all values are positive integers, so its
+pointwise inverse $1/F_p(P\lambda)^2$ exists and is bounded by one.
+Under the true-prime alternative every successful trace gives an entire
+rank-21 lattice fibre of zeros. More precisely, on
+$\ell^2(\{\lambda\in\Lambda:P\lambda\in\Z_{>0}^3\})$ with counting measure,
+its domain is
+\[
+ \mathcal D(\mathcal H_p)=\{f:\sum_\lambda
+    F_p(P\lambda)^4|f(\lambda)|^2<\infty\}.
+\]
+Coordinatewise multiplication by the nonnegative real values
+$F_p(P\lambda)^2$ is self-adjoint on this maximal domain: the adjoint
+condition tested against each coordinate vector forces the same multiplier
+and the same square-summability requirement. In the false case its inverse
+is the everywhere-defined multiplier $F_p(P\lambda)^{-2}$, with norm at
+most one, and $\mathcal H_p\ge I$. In the true case its zero eigenspace is
+infinite-dimensional, since an entire translate of the rank-21 kernel is
+present. This is an exact operator encoding of the arithmetic alternative,
+not an independently constructed differential operator or an asserted
+analytic solution of the conjecture.
+
+The same alternative is expressed by the previously marked theta series:
+\[
+ \mathcal Z_p(q)=
+ \sum_{\substack{t\in\Z_{>0}^3\\F_p(t)=0}}
+ q^{\|t\|^2/8}\Theta_{K+r(t)}(q),\qquad 0<q<1.
+\]
+Every summand is positive, so $\mathcal Z_p(q)=0$ exactly in the false
+case. This identifies the analytic quantity to control; it does not
+calculate it independently of arithmetic occupancy.
+
+There is a useful external restriction on any genuine counterexample.
+Bright--Loughran's Theorem 1.8 proves that the positive-real/integral-adic
+Brauer--Manin set is nonempty for every parameter \cite{bl}. A false
+prime would therefore have a nonempty such adelic set but no global positive
+integer witness. This rules out one proposed emptiness explanation, not all
+possible arithmetic obstructions. It also does not turn local compatibility
+inside different exponent vectors into one simultaneous bounded lift.
+
+\section{The two research directions as one program}
+The positive track tries to construct a zero of $\delta_\alpha$. The negative
+track assumes $\delta$ is a unit and derives its mandatory arithmetic,
+concentration, geometric and integral-return properties. A contradiction
+must violate one of those properties by a proved calculation.
+The supplied positive tests are Theorem~\ref{thm:energy} and
+Theorem~\ref{thm:cofactor}; the exact same-shell obstruction is
+Proposition~\ref{prop:transport}.
+
+A next useful theorem would prove that every full atlas has a shell whose
+integer energy falls below its counterfactual minimum, or construct a
+well-founded cross-shell move that strictly lowers $D$ until $D=1$.
+No such universal decrease is assumed. The inverse certificate and the
+restricted examples make a proposed move testable on failures as well as
+successes. A proof of either universal assertion would finish the positive
+prime cases; the present tranche proves neither assertion.
+
+\section{Certificates, checks, and nonclaims}
+The standard-library checker exhausts every full canonical candidate at
+the following seven primes:
+\begin{center}\begin{tabular}{r|rrrrrrr}
+$p$&5&13&37&97&241&1201&2521\\
+leaves&12&64&312&1216&3964&29600&73060
+\end{tabular}\end{center}
+For $1201$ the full counts are $8E+8M$, not the $7E+8M$ of the restricted
+$R<p$ atlas; at $2521$ they are $7E+6M$, not $6E+6M$.
+These are marked first-denominator counts, not sorted-triple counts.
+All assertions about rational denominators, scaling, inverse coordinates
+and repeated-root strata are checked on every candidate.
+
+The two negative examples are labelled \emph{restricted}; the validator
+rejects promoting them to full certificates. It also rejects a removed
+leaf, an incorrect clearing denominator, and a fabricated full negative
+certificate at $p=5$. The exact energy autocorrelations are recomputed
+independently of their histogram squares. The largest-outside-divisor
+formula is compared with exhaustive divisor enumeration for every unit
+cofactor $b\le3000$ at $R=19$. All 24 factor labels are retained for seven
+selected rational or integral states, including one repeated-root state.
+No actual full negative certificate is found.
+
+Run
+\begin{verbatim}
+python dual_es.py --self-test --out certificates
+python -O dual_es.py --self-test --out certificates_optimized
+\end{verbatim}
+The optimized run has identical mathematical outputs. Use
+\texttt{--prime p} to produce a witness or a fully verified negative
+certificate, and \texttt{--verify-negative file.json} to check a proposed
+full negative certificate. Trial division and complete enumeration are
+finite but are not advertised as polynomial in $\log p$.
+The source Giuga program was read, not fully executed; its expensive
+power-sum and symbolic Cayley--Dickson suites are not part of these receipts.
+No new numerical verification bound, independent reviewer, formal Lean
+build, or proof of the global conjecture is claimed.
+
+\begin{thebibliography}{9}
+\bibitem{wilson} Wilson, R. A. (2009). Octonions and the Leech lattice.
+\emph{Journal of Algebra, 322}, 2186--2190. Source PDF \S2--\S4:
+Fano multiplication convention, joint lattice conditions, and coordinate comparison.
+\url{https://maths.qmul.ac.uk/~raw/pubs_files/octoLeech1rev.pdf}.
+\bibitem{yamamoto} Yamamoto, K. (1965). On the Diophantine equation
+$4/n=1/x+1/y+1/z$. \emph{Memoirs of the Faculty of Science, Kyushu
+University, Series A, Mathematics, 19}(1), 37--47.
+Lemma 2, equation (4), p.~38.
+\url{https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf}.
+\bibitem{mv} Monks, M., \& Velingker, A. (2008, September 23).
+\emph{On the Erd\H{o}s--Straus conjecture: Properties of solutions to its
+underlying Diophantine equation}. Theorem 2.2 and Corollary 2.3, p.~4;
+proof pp.~5--6. Only the reduced fraction case is used.
+\url{https://mathematicalgemstones.com/maria/papers/ErdosStraus.pdf}.
+\bibitem{et} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\S2, Propositions 2.2 and 2.6. \url{https://arxiv.org/abs/1107.1010}.
+\bibitem{kellner} Kellner, B. C. (2004). \emph{The equivalence of Giuga's
+and Agoh's conjectures}. arXiv:math/0409259v1.
+\S3, Lemma 3.1 and Theorem 3.5, pp.~4--5.
+\url{https://arxiv.org/pdf/math/0409259}.
+\bibitem{bl} Bright, M., \& Loughran, D. (2020). Brauer--Manin obstruction
+for Erd\H{o}s--Straus surfaces. \emph{Bulletin of the London Mathematical
+Society, 52}(4), 746--761. arXiv v2, Theorem 1.8, p.~4; proof \S3.8,
+p.~14. \url{https://arxiv.org/abs/1908.02526}.
+\bibitem{foundation} The Clankers. (2026). \emph{Exact bounded congruence
+transport}, expanded workbench edition. Pinned repository commit
+\texttt{9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f}.
+\texttt{counterexample\_sieve/all\_shell\_no\_hit.tex},
+Theorem \texttt{thm:shellwise-no-hit}, equations (1)--(10d);
+\texttt{first\_two\_shell\_sieve.tex}, residual-three and residual-seven
+theorems. Source-specific human credit remains attached to that edition.
+\url{https://github.com/KokunoYumeto/erdos-straus-foundation}.
+\end{thebibliography}
+\end{document}

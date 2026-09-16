@@ -1,0 +1,347 @@
+[
+  {
+    "R": 23,
+    "a": 306,
+    "channel": "E",
+    "denominators_increasing": [
+      306,
+      16218,
+      1082101
+    ],
+    "denominators_raw": [
+      306,
+      16218,
+      1082101
+    ],
+    "h": 17,
+    "kappa": 53,
+    "lambda": null,
+    "p": 1201,
+    "positive_chamber": true,
+    "r": 1,
+    "s": 18,
+    "u": 17
+  },
+  {
+    "R": 23,
+    "a": 306,
+    "channel": "M",
+    "denominators_increasing": [
+      306,
+      21618,
+      61251
+    ],
+    "denominators_raw": [
+      306,
+      61251,
+      21618
+    ],
+    "h": 3,
+    "kappa": null,
+    "lambda": 1,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 6,
+    "s": 17,
+    "u": 108
+  },
+  {
+    "R": 23,
+    "a": 306,
+    "channel": "M",
+    "denominators_increasing": [
+      306,
+      21618,
+      61251
+    ],
+    "denominators_raw": [
+      306,
+      21618,
+      61251
+    ],
+    "h": 3,
+    "kappa": null,
+    "lambda": 1,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 17,
+    "s": 6,
+    "u": 867
+  },
+  {
+    "R": 23,
+    "a": 306,
+    "channel": "E",
+    "denominators_increasing": [
+      306,
+      15980,
+      172727820
+    ],
+    "denominators_raw": [
+      306,
+      15980,
+      172727820
+    ],
+    "h": 34,
+    "kappa": 470,
+    "lambda": null,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 9,
+    "s": 1,
+    "u": 2754
+  },
+  {
+    "R": 31,
+    "a": 308,
+    "channel": "M",
+    "denominators_increasing": [
+      308,
+      12010,
+      1849540
+    ],
+    "denominators_raw": [
+      308,
+      1849540,
+      12010
+    ],
+    "h": 2,
+    "kappa": null,
+    "lambda": 5,
+    "p": 1201,
+    "positive_chamber": true,
+    "r": 1,
+    "s": 154,
+    "u": 2
+  },
+  {
+    "R": 31,
+    "a": 308,
+    "channel": "E",
+    "denominators_increasing": [
+      308,
+      11935,
+      57335740
+    ],
+    "denominators_raw": [
+      308,
+      11935,
+      57335740
+    ],
+    "h": 77,
+    "kappa": 155,
+    "lambda": null,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 4,
+    "s": 1,
+    "u": 1232
+  },
+  {
+    "R": 31,
+    "a": 308,
+    "channel": "M",
+    "denominators_increasing": [
+      308,
+      12010,
+      1849540
+    ],
+    "denominators_raw": [
+      308,
+      12010,
+      1849540
+    ],
+    "h": 2,
+    "kappa": null,
+    "lambda": 5,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 154,
+    "s": 1,
+    "u": 47432
+  },
+  {
+    "R": 39,
+    "a": 310,
+    "channel": "M",
+    "denominators_increasing": [
+      310,
+      9608,
+      1489240
+    ],
+    "denominators_raw": [
+      310,
+      1489240,
+      9608
+    ],
+    "h": 2,
+    "kappa": null,
+    "lambda": 4,
+    "p": 1201,
+    "positive_chamber": true,
+    "r": 1,
+    "s": 155,
+    "u": 2
+  },
+  {
+    "R": 39,
+    "a": 310,
+    "channel": "E",
+    "denominators_increasing": [
+      310,
+      9548,
+      57335740
+    ],
+    "denominators_raw": [
+      310,
+      9548,
+      57335740
+    ],
+    "h": 62,
+    "kappa": 154,
+    "lambda": null,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 5,
+    "s": 1,
+    "u": 1550
+  },
+  {
+    "R": 39,
+    "a": 310,
+    "channel": "M",
+    "denominators_increasing": [
+      310,
+      9608,
+      1489240
+    ],
+    "denominators_raw": [
+      310,
+      9608,
+      1489240
+    ],
+    "h": 2,
+    "kappa": null,
+    "lambda": 4,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 155,
+    "s": 1,
+    "u": 48050
+  },
+  {
+    "R": 47,
+    "a": 312,
+    "channel": "M",
+    "denominators_increasing": [
+      312,
+      9608,
+      46839
+    ],
+    "denominators_raw": [
+      312,
+      46839,
+      9608
+    ],
+    "h": 1,
+    "kappa": null,
+    "lambda": 1,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 8,
+    "s": 39,
+    "u": 64
+  },
+  {
+    "R": 47,
+    "a": 312,
+    "channel": "M",
+    "denominators_increasing": [
+      312,
+      9608,
+      46839
+    ],
+    "denominators_raw": [
+      312,
+      9608,
+      46839
+    ],
+    "h": 1,
+    "kappa": null,
+    "lambda": 1,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 39,
+    "s": 8,
+    "u": 1521
+  },
+  {
+    "R": 71,
+    "a": 318,
+    "channel": "E",
+    "denominators_increasing": [
+      318,
+      5406,
+      1082101
+    ],
+    "denominators_raw": [
+      318,
+      5406,
+      1082101
+    ],
+    "h": 53,
+    "kappa": 17,
+    "lambda": null,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 1,
+    "s": 6,
+    "u": 53
+  },
+  {
+    "R": 339,
+    "a": 385,
+    "channel": "E",
+    "denominators_increasing": [
+      385,
+      1364,
+      57335740
+    ],
+    "denominators_raw": [
+      385,
+      1364,
+      57335740
+    ],
+    "h": 11,
+    "kappa": 124,
+    "lambda": null,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 35,
+    "s": 1,
+    "u": 13475
+  },
+  {
+    "R": 1043,
+    "a": 561,
+    "channel": "E",
+    "denominators_increasing": [
+      561,
+      646,
+      25602918
+    ],
+    "denominators_raw": [
+      561,
+      646,
+      25602918
+    ],
+    "h": 17,
+    "kappa": 38,
+    "lambda": null,
+    "p": 1201,
+    "positive_chamber": false,
+    "r": 33,
+    "s": 1,
+    "u": 18513
+  }
+]

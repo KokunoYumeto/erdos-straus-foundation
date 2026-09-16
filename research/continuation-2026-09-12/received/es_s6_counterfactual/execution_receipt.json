@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "/mnt/data/es_s6_counterfactual/verify.py",
+        "--out",
+        "/mnt/data/es_s6_counterfactual/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 6.92,
+      "stdout": "{\"check_count\": 2232577, \"checks_by_kind\": {\"CRT\": 549503, \"affine_points\": 1099014, \"atlas\": 458496, \"cohomology\": 68, \"cycles\": 112608, \"fillings\": 82, \"formulas\": 11454, \"level3_group\": 1204, \"matrices\": 10, \"orbits\": 23, \"regressions\": 9, \"transport\": 106}, \"explicit_levels\": [1, 3, 5, 7, 9, 15, 21, 25, 27, 35, 45], \"full_S6_theorem_reverified\": false, \"full_atlas_primes\": [5, 37, 241, 1201], \"global_ES_counterexample_found\": false, \"status\": \"PASS\", \"whole_cover_fibre_limits\": \"Only levels listed above explicitly expanded; all atlas cover degrees/ramification use proved closed formulas.\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "/mnt/data/es_s6_counterfactual/verify.py",
+        "--out",
+        "/mnt/data/es_s6_counterfactual/certificates_optimized"
+      ],
+      "exit_code": 0,
+      "seconds": 9.164,
+      "stdout": "{\"check_count\": 2232577, \"checks_by_kind\": {\"CRT\": 549503, \"affine_points\": 1099014, \"atlas\": 458496, \"cohomology\": 68, \"cycles\": 112608, \"fillings\": 82, \"formulas\": 11454, \"level3_group\": 1204, \"matrices\": 10, \"orbits\": 23, \"regressions\": 9, \"transport\": 106}, \"explicit_levels\": [1, 3, 5, 7, 9, 15, 21, 25, 27, 35, 45], \"full_S6_theorem_reverified\": false, \"full_atlas_primes\": [5, 37, 241, 1201], \"global_ES_counterexample_found\": false, \"status\": \"PASS\", \"whole_cover_fibre_limits\": \"Only levels listed above explicitly expanded; all atlas cover degrees/ramification use proved closed formulas.\"}\n",
+      "stderr": ""
+    }
+  ],
+  "normal_optimized_bytes_identical": true,
+  "certificate_count": 19,
+  "certificate_hashes": {
+    "checks.json": "a9b1de4836c9757cc8e197a5adfa86ae12ec5e9f51ee7a752e4c96e14955f11a",
+    "permutations_D9.json.gz": "5b7e3b60e8a2ac2a01ffd6a7bc601f499f9341474801139c446fd8e397a7e5f4",
+    "permutations_D3.json.gz": "5d313f51cda47dca136f3614257986ae047422e51486b8a29642f9779e78c272",
+    "atlas_p241.json.gz": "4eef0ceaa141322d5b284233ea7f5978413cb5cfa16c4408e4e92c1128e9095f",
+    "source_matrices.json": "430fd039aa7739bdce5dba70a072c4941ebcb04211bf9c7f8264b028c15cc9de",
+    "atlas_summaries.json": "4d84da28b4f1ce08e4c416dddfea12b6cee318e256431e86c6c77c35488eae19",
+    "permutations_D1.json.gz": "eefb5a99e4adfccdb7bd7419826ca2a0f6f03ff6ba4809e4066df09ccb326ab0",
+    "atlas_p37.json.gz": "b214c73fa7149198250ecdc2456e876a0dfe7da6a0dc18a4b4cf661c519fbce3",
+    "restricted_transport_graph.json": "b45f8861035fed022e5e2eb91d1bc06e06604772bc8f4ab2418bcfb139fba403",
+    "cohomology.json": "d5287155ebfbcdf6a57f838ae8318179e40f336fba4c099b11f8c510b3c23d9a",
+    "naturality.json": "9cd6d78ca1711d97f5a84b4db6ad26d4a5e6a764d2bff8eddd370da94ed90f9b",
+    "permutations_D5.json.gz": "158fdd6e43feef3d42fc7e1da5e606fcb7083ecc68eed8942ca5e6562e9212ba",
+    "atlas_p1201.json.gz": "80dc8beb2f0398a744e2af2880c237b45561ee58164a8a96b1ae3fd262abc976",
+    "level3_group.json": "52e85b2b669cda4ef1ad389edfab59ef67df255ed6db2582cdcb5dcbd2436212",
+    "orbit_passports.json": "e4cce64474097bba58990ceed606978684152c5a75707cf6a15534798fa3e484",
+    "atlas_p5.json.gz": "34f7e6435cace42ee5a5e281ce8fb9ae6f3a175da7fc351c7a31c117cde99ea0",
+    "permutations_D7.json.gz": "28409462fb471652d8ab4ad6b10b92d2f975e4195fc9f6eb9e9b26e6b066d348",
+    "twist_presentations.json": "17975dac7d4cfa47b1f8da629b531291a5366c3543bbc2ec02e29831c02f468c",
+    "restricted_p241_a64.json.gz": "9ccb467d0a8694c2bcac6e3af88368901af90acbb9a49b151db0bb821966a84d"
+  },
+  "independent_review": false,
+  "Lean_build": false,
+  "entire_source_S6_proof_replayed": false,
+  "fresh_archive_replay": {
+    "exit_code": 0,
+    "seconds": 6.763,
+    "mathematical_bytes_identical": true,
+    "stdout": "{\"check_count\": 2232577, \"checks_by_kind\": {\"CRT\": 549503, \"affine_points\": 1099014, \"atlas\": 458496, \"cohomology\": 68, \"cycles\": 112608, \"fillings\": 82, \"formulas\": 11454, \"level3_group\": 1204, \"matrices\": 10, \"orbits\": 23, \"regressions\": 9, \"transport\": 106}, \"explicit_levels\": [1, 3, 5, 7, 9, 15, 21, 25, 27, 35, 45], \"full_S6_theorem_reverified\": false, \"full_atlas_primes\": [5, 37, 241, 1201], \"global_ES_counterexample_found\": false, \"status\": \"PASS\", \"whole_cover_fibre_limits\": \"Only levels listed above explicitly expanded; all atlas cover degrees/ramification use proved closed formulas.\"}\n"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "checker_sha256": "ab6b5518deeb38068266191f26c5a012adca6cf4e10a4ba4618ca28c28bdaf56",
+  "command_arguments": [
+    "--out",
+    "checks\\energy",
+    "--scan-bound",
+    "1500"
+  ],
+  "elapsed_seconds": 23.047957500006305,
+  "mathematical_output_sha256": {
+    "energy_scan.json": "fc939255e14b73f56a24b15d68748453af1e6b500f5292b6f7b6972c008160b4",
+    "examples.json": "2bb4e513e66895ba78c697072e21d8cf63eff01a2ad848f15be477a5ab26a3e6",
+    "mathematical_summary.json": "ea2cd6e21be9c5daf3dc9e0267579ccf9df53a6969293a76a7e1c8a7d221d395"
+  },
+  "optimization": 0,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "utc": "2026-09-12T16:21:30.514119+00:00"
+}

@@ -1,0 +1,935 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,booktabs,longtable,array}
+\usepackage[authoryear,round]{natbib}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Marked residual selectors for the Erdos-Straus equation},pdfauthor={Independent derivation and reproducible certificates}}
+\usepackage{microtype}
+\usepackage{fancyvrb}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\E}{\mathcal E}
+\newcommand{\M}{\mathcal M}
+\newcommand{\Pcal}{\mathcal P}
+\newcommand{\Om}{\Omega}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\rad}{\operatorname{rad}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\title{Marked residual selectors for the Erd\H{o}s--Straus equation:\\
+exact local laws, sharp composite completion,\\and an exterior--middle transfer}
+\author{Independent derivation and reproducible certificates}
+\date{September 5, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We retain the residual, primitive ray, factor coordinates, channel, and raw denominator orientation in the bounded residual selector for $4/p$. For the rays $(2,1),(3,2),(5,3)$ we prove the finite-cutoff prime-incidence product law, including its exceptional primes and the precise scope of its covariance statements. We then complete these prime channels: every hit has a residual with respectively at most $2,3,5$ prime factors counted with multiplicity. The last bound is attained at the hard prime $2668835929$. The modulus-$60$ channels have exactly $184$ minimal factor-residue patterns each.
+
+For any $k$ fixed distinct primitive rays, the primes in a fixed hard progression missed by all their bounded exterior selectors number $O(X/(\log X)^{1+k/2})$. The same bound holds with witnesses restricted to $\Om(R)\le2$ and $R\le p^\varepsilon$, for any fixed $\varepsilon>0$. A two-cutoff refinement gives a quantitative almost-all theorem even for $R\le(\log p)^A$, for every fixed $A>0$. Proofs with explicit sieve truncations are given. A unimodular-basis classification proves a fixed-residual Farey height barrier. A separate, exact cubic factor-swap transfers exterior states to middle states, with a complete inverse-fibre formula; it crosses into the positive chamber at $p=2521$. Exhaustion at $1201$ and $2521$ proves that neither the original Farey cone nor even all positive exterior rays can give a universal positive-selector theorem. A fixed hybrid family covers all $4519$ tested hard primes up to $2000000$, with explicit positive marked witnesses. The standard-library verifier reproduces every stated finite census and supplies all marked states as JSON. These results do not assert a pointwise solution for every prime or a priority claim over the whole literature.
+\end{abstract}
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Scope, notation, and antecedents}
+Let
+\[
+ C=\{1,121,169,289,361,529\},\qquad
+ \Pcal_c=\{p\text{ prime}:p\equiv c\pmod{840}\}.
+\]
+Every $c\in C$ is a unit modulo $840$ and is $1$ modulo $24$. Throughout the selector sections, $p$ is an odd prime with $p\equiv1\pmod4$, $0<R<p$, $R\equiv3\pmod4$, and
+\[
+ a=\frac{p+R}{4}.
+\]
+Thus $p/4<a<p/2$ and $\gcd(a,R)=1$. We work with precisely this bounded selector. ``Complete'' below means complete for this specified shell window, not an unproved assertion that every possible Erd\H{o}s--Straus solution has such a marked denominator.
+
+The positive chamber in this note is the stipulated set
+\begin{equation}\label{eq:chamber}
+ \mathcal K=(0,\alpha)\cup(\beta,1+\sqrt2),\qquad
+ \alpha=\frac{\sqrt3-\sqrt2}{1+\sqrt2},\quad
+ \beta=\frac{\sqrt3+\sqrt2}{1+\sqrt2}.
+\end{equation}
+No physical interpretation of the word ``Koide'' is needed or claimed. Membership means $r/s\in\mathcal K$.
+
+\paragraph{What is inherited.}
+The exterior congruences are exactly the second alternative of \citet[\S1, Lemma 2, equation (4), p.~38]{Yamamoto1965}, with his $(a,b,q)=(r,s,R)$. The Type I/II coordinate framework is inherited as well: see \citet[\S2, equations (2.1)--(2.9), Propositions 2.2--2.3 and 2.6--2.7]{ElsholtzTao2013}. For example, their Type I coordinates $(a,b,c,d,e,f)=(r,\kappa,s,h,(r+\kappa)/s,R)$ give our denominators after the indicated permutation. The displayed $e$ is integral: reducing $R\kappa=pr+s$ and $R=4hrs-p$ modulo $s$ gives $p(r+\kappa)\equiv0\pmod s$, and $p\nmid s$. We prove the particular normalization and orientation statements used here rather than treating an unmarked parametrization as a bijection.
+
+The analytic inputs are the prime number theorem in fixed arithmetic progressions, as stated in \citet[\S2, p.~2]{Rudnick2015}, and its Mertens consequence, also available in \citet[\S3, Theorem 1, p.~356]{Williams1974}. The inverse-residue pairing underlying the half-dimensional obstruction has a direct antecedent in \citet[\S4.1, Lemma 4.2 and Theorem 4.3]{Dahan2026}, for target $-1$. We adapt that mechanism to target $-p$ in fixed progressions, preserve $R<p$, and give the integer-sequence Selberg argument in full. The $2,3,5$ completion, explicit pattern tables, marked cubic transfer and its fibres, and the additional obstruction certificates are the continuations derived here. No exhaustive claim of historical novelty is made.
+
+\section{Exact marked selectors and their fibres}\label{sec:selectors}
+\begin{definition}
+An exterior state is the tuple
+\[
+ (p,R,h,r,s,\kappa;E;x,y,z)
+\]
+with positive integers $h,r,s,\kappa$, $\gcd(r,s)=1$, $p+R=4hrs$, $R\kappa=pr+s$, and
+\begin{equation}\label{eq:E}
+ (x,y,z)=(hrs,hs\kappa,phr\kappa).
+\end{equation}
+A middle state is the tuple
+\[
+ (p,R,h,r,s,\lambda;M;x,y,z)
+\]
+with the same shell and primitivity conditions, $R\lambda=r+s$, and
+\begin{equation}\label{eq:M}
+ (x,y,z)=(hrs,phs\lambda,phr\lambda).
+\end{equation}
+The middle quotient is denoted $\lambda$, not $\kappa$; the two linear equations are different. The corresponding sets are $\E_p$ and $\M_p$.
+\end{definition}
+
+\begin{proposition}[Divisor-coordinate bijection]\label{prop:divisor}
+For fixed $p,R,a$, divisors $u\mid a^2$ are in bijection with triples $(h,r,s)\in\N^3$ satisfying $a=hrs$ and $\gcd(r,s)=1$. The maps are
+\begin{equation}\label{eq:decode}
+ u=hr^2,\quad d=\gcd(a,u),\quad r=u/d,\quad s=a/d,\quad h=d/r.
+\end{equation}
+In these coordinates the exterior and middle tests are respectively
+\begin{equation}\label{eq:divtests}
+ R\mid4u+1,\qquad R\mid4u+p.
+\end{equation}
+Their raw denominator reconstructions are
+\begin{align}
+ E:\quad &(a,(pa+a^2/u)/R,(pa+p^2u)/R),\label{eq:Ediv}\\
+ M:\quad &(a,p(a+a^2/u)/R,p(a+u)/R).\label{eq:Mdiv}
+\end{align}
+Every displayed denominator is a positive integer and the sum of the three reciprocals is $4/p$.
+\end{proposition}
+\begin{proof}
+Write $a=\prod q^{e_q}$ and $u=\prod q^{f_q}$, where $0\le f_q\le2e_q$. The exponents in $r,s,h$ are respectively
+\[
+ (f_q-e_q)_+,\quad(e_q-f_q)_+,\quad e_q-|f_q-e_q|.
+\]
+They are nonnegative integers; $r,s$ are coprime; and both $a=hrs$ and $u=hr^2$ follow exponent by exponent. Conversely these two identities and $\gcd(r,s)=1$ force those exponents. This proves the bijection, including integrality of $d/r$.
+
+Since $p\equiv4a=4hrs\pmod R$ and $r,s,h$ are units modulo $R$,
+\[
+ pr+s\equiv s(4hr^2+1),\qquad
+ 4u+p\equiv4hr(r+s)\pmod R.
+\]
+This proves the equivalence of the tests. Substituting $a^2/u=hs^2$ gives \eqref{eq:Ediv}--\eqref{eq:Mdiv} and the marked formulas. For $E$, multiplication of the reciprocal sum by $phrs\kappa$ gives
+\[
+ p\kappa+pr+s=(p+R)\kappa=4hrs\kappa.
+\]
+For $M$, multiplication by $phrs\lambda$ gives
+\[
+ p\lambda+r+s=(p+R)\lambda=4hrs\lambda.
+\]
+These are exactly the required cleared-denominator identities.
+\end{proof}
+
+\begin{proposition}[Completeness within the window and orientation]\label{prop:orientation}
+Suppose $a\in(p/4,p/2)$ is integral and
+$4/p=1/a+1/y+1/z$ with positive integral denominators. After putting the unique $p$-divisible denominator last in the exterior case, or retaining either order in the middle case, the triple arises uniquely from \eqref{eq:Ediv} or \eqref{eq:Mdiv}.
+
+The map from marked states to raw triples is injective. For $E$ its output is already increasing. For $M$, passing to increasing triples has fibres of size exactly two, interchanged by
+\begin{equation}\label{eq:middleinvolution}
+ u\longleftrightarrow a^2/u,\qquad (h,r,s)\longleftrightarrow(h,s,r).
+\end{equation}
+There are no exterior--middle collisions, nor collisions between different $R$ after sorting.
+\end{proposition}
+\begin{proof}
+The residual two-fraction equation is equivalent to
+\begin{equation}\label{eq:factorpair}
+ (Ry-pa)(Rz-pa)=(pa)^2.
+\end{equation}
+Both factors are positive. Since $p\nmid aR$, the two $p$-adic exponents are $(0,2),(1,1)$ or $(2,0)$. After orienting the exterior case, they are $(0,2)$, so the factors uniquely have the form $(a^2/u,p^2u)$ with $u\mid a^2$. In the middle case they uniquely have the form $(pa^2/u,pu)$. The congruence for either denominator is exactly the corresponding test in \eqref{eq:divtests}; the other follows as well. The inverse is explicitly
+\[
+ u=\frac{a^2}{Ry-pa}\quad(E),\qquad
+ u=\frac{pa^2}{Ry-pa}\quad(M).
+\]
+Furthermore $1/y+1/z=4/p-1/a<2/p$, so $y,z>p/2$. Thus $a$ is the unique denominator below $p/2$ and survives sorting, recovering $R=4a-p$. For $E$, $z/y=pr/s>1$, because $s\le a<p$. In this case $p\nmid y$ and $p\mid z$. For $M$, both $y,z$ are divisible by $p$ and $z/y=r/s$.
+
+A fixed point of \eqref{eq:middleinvolution} would have $u=a$, hence $R\mid4a+p=2p+R$. But $\gcd(R,2p)=1$ and $R\ge3$, a contradiction. Hence every middle sorting fibre has exactly two states. The divisibility patterns distinguish the channels. These observations also prove all the claimed injectivity and collision statements.
+\end{proof}
+
+\paragraph{Information that must not be discarded.}
+Forgetting the raw middle orientation loses one bit. Forgetting $R$ is recoverable from a bounded sorted triple but not from a bare ray or an incidence count. Forgetting the channel identifies different defining linear equations and is invalid. In particular, ``15 oriented states and 11 triples'' at $1201$ means 15 distinct raw ordered triples and 11 increasing triples, not 11 raw ordered triples.
+
+\section{The three-ray prime-incidence law}\label{sec:local}
+Put
+\[
+ v_1=(2,1),\quad v_2=(3,2),\quad v_3=(5,3),\qquad
+ L_i(p)=r_ip+s_i,
+\]
+with shell moduli $m_1=8,m_2=24,m_3=60$. The elementary inequalities
+\[
+ \beta<3/2<2<1+\sqrt2
+\]
+show that all three rays, and the entire interval of slopes between the first two, belong to the upper component of \eqref{eq:chamber}.
+For example $\beta<3/2$ is equivalent to $2\sqrt3<3+\sqrt2$, whose square is immediate.
+
+The integer identities are
+\begin{equation}\label{eq:threebezout}
+ 3L_1-2L_2=-1,\qquad5L_1-2L_3=-1,\qquad5L_2-3L_3=1.
+\end{equation}
+Consequently the three $L_i(p)$ are pairwise coprime for every integer $p$. In particular all residuals on distinct rays in this triple are coprime, including composite residuals.
+
+For $c\in C$ and a prime $q\nmid840$, let
+\[
+ I_c(q)=\{i:q\equiv-c\pmod{m_i}\}.
+\]
+The equivalence with the inherited shell laws follows because $p\equiv c\pmod{840}$ and each $m_i$ divides $840$. Thus the first two prime channels are $q\equiv7\pmod8$ and $q\equiv23\pmod{24}$. The third has
+\[
+ \begin{array}{c|c|c}
+ c\bmod120&v_3\text{ classes }q\bmod120&\rho_c\bmod120\\\hline
+ 1&59,119&119\\
+ 49&11,71&71
+ \end{array}
+\]
+where $\rho_c=-c\pmod{120}$. At $q\equiv\rho_c\pmod{120}$ all three rays are eligible. Their roots in $(\Z/q\Z)^\times$ are
+\begin{equation}\label{eq:roots}
+ -2^{-1},\quad-2\,3^{-1},\quad-3\,5^{-1}.
+\end{equation}
+They are nonzero and pairwise distinct by \eqref{eq:threebezout}. The only excluded small prime that could be a first-ray prime channel is $7$; it would force $p\equiv3\pmod7$, whereas the six hard classes are $1,2,4$ modulo $7$. It therefore contributes no missed deterministic incidence here.
+
+\begin{theorem}[Exact finite-cutoff product law]\label{thm:pgf}
+Let $S$ be any finite set of primes coprime to $840$. Define
+\[
+ N_{i,S}(p)=\#\{q\in S:q\equiv-c\pmod{m_i},\ q\mid L_i(p)\}.
+\]
+Under the uniform distribution on primes $p\le X$ in $\Pcal_c$, the joint probability generating function converges, as $X\to\infty$, to
+\begin{equation}\label{eq:pgf}
+ \prod_{q\in S}
+ \frac{q-1-|I_c(q)|+\sum_{i\in I_c(q)}X_i}{q-1}.
+\end{equation}
+In particular a common auxiliary prime has factor
+\begin{equation}\label{eq:commonfactor}
+ \frac{q-4+X+Y+Z}{q-1}.
+\end{equation}
+Writing $a_q=1/(q-1)$, the limiting moments are
+\begin{align}
+ \mathbb EN_{i,S}&=\sum_{q\in S:i\in I_c(q)}a_q,\\
+ \Var(N_{i,S})&=\sum_{q\in S:i\in I_c(q)}a_q(1-a_q),\\
+ \Cov(N_{i,S},N_{j,S})&=-\sum_{q\in S:i,j\in I_c(q)}a_q^2\quad(i\ne j).\label{eq:cov}
+\end{align}
+The covariance is strictly negative exactly when that finite common set is nonempty.
+\end{theorem}
+\begin{proof}
+For each $q$, the admissible residue space for primes other than $q$ has $q-1$ elements. Each eligible ray occupies exactly its nonzero root from \eqref{eq:roots}; the occupied roots are disjoint. Hence there are $q-1-|I_c(q)|$ residues with no label and one with each eligible label. This is the local numerator in \eqref{eq:pgf}.
+
+The Chinese remainder theorem identifies all choices of nonzero residues modulo the primes in $S$, together with $p\equiv c\pmod{840}$, with distinct reduced residue classes modulo $840\prod_{q\in S}q$. The prime number theorem for this fixed modulus assigns each of them the same limiting relative weight $\prod_{q\in S}(q-1)^{-1}$. This proves the product, not merely a heuristic independence assertion. For sufficiently large $p$ every $q\in S$ also satisfies $q<p$, so the labels are genuine bounded states. The moment formulas follow by differentiating the finite polynomial, or by summing independent categorical variables; distinct labels at the same $q$ have product zero and covariance $-a_q^2$.
+\end{proof}
+
+\begin{remark}[Necessary limitation]
+The word ``product'' here refers to every finite auxiliary set. Neither an untruncated Euler product for a uniformly random prime nor an untruncated covariance asymptotic has been proved. Letting $S$ depend on $X$ inside the preceding prime-number-theorem argument would require an additional uniform estimate. No such interchange is used.
+\end{remark}
+
+\begin{corollary}[Simultaneous density-one multiplicities]\label{cor:many}
+For every fixed integer $K\ge1$ and every $c\in C$, the relative density in $\Pcal_c$ of primes having at least $K$ prime-residual states on each of $v_1,v_2,v_3$ equals one.
+\end{corollary}
+\begin{proof}
+Use only $S_T=\{q\le T:q\text{ prime},q\equiv\rho_c\pmod{120}\}$. Set
+\[
+ \mu_T=\sum_{q\in S_T}\frac1{q-1}
+       =\frac1{32}\log\log T+O_c(1).
+\]
+The equality follows from Mertens in arithmetic progressions and the convergence of $\sum_q1/(q(q-1))$. For $\mu_T>K$, Theorem~\ref{thm:pgf}, Chebyshev's inequality and a union bound give a limiting upper bound
+\begin{equation}\label{eq:cheb}
+ \frac{3\mu_T}{(\mu_T-K)^2}
+\end{equation}
+for failure of at least one of the three inequalities $N_{i,S_T}\ge K$. First take $X\to\infty$ with $T$ fixed, then take $T\to\infty$. The bound tends to zero. Distinct $q$ give distinct $R$ and distinct marked states. Nothing in this argument eliminates a zero-density exceptional set.
+\end{proof}
+
+\section{Exact composite completion: the sharp \texorpdfstring{$2,3,5$}{2,3,5} theorem}\label{sec:completion}
+For $n\in\N$ and a modulus $m$, retain only the prime factors of $n$ coprime to $m$. A factor-residue multiset includes a residue $b$ with capacity
+\[
+ e_b(n)=\sum_{q\mid n,\ q\equiv b\ (m)}v_q(n).
+\]
+Repeated factors count repeatedly; replacing these capacities by the subgroup generated by the support is generally incorrect.
+
+For a unit $\tau\not\equiv1\pmod m$, define a \emph{minimal target pattern} to be a nondecreasing tuple of units $(b_1,\ldots,b_t)$ whose product is $\tau$ modulo $m$ and no proper submultiset of which has product $\tau$.
+
+\begin{lemma}[Small zero-sum constants, with elementary proof]\label{lem:zero}
+Every sequence of two elements of $C_2$, three elements of $C_2^2$, or five elements of $C_4\times C_2$ has a nonempty zero-sum subsequence.
+\end{lemma}
+\begin{proof}
+For $C_2$, a zero element or two equal nonzero elements suffice. For $C_2^2$, a zero or repeated element suffices unless the three elements are exactly its three nonzero elements, whose sum is zero.
+
+For five elements of $C_4\times C_2$, reduce modulo $2$ in the first coordinate, giving five elements of $C_2^2$ and kernel $C_2$. There is a zero-sum subsequence of length at most two among the five images: either one is zero or two among the three nonzero values coincide. Remove it. At least three images remain, so the preceding paragraph supplies a second disjoint nonempty zero-sum subsequence. Each of the two corresponding sums in $C_4\times C_2$ belongs to the two-element kernel. If one is zero we are finished; otherwise they are equal nonzero elements and their union sums to zero.
+\end{proof}
+
+\begin{lemma}[Target extraction]\label{lem:extract}
+Let $G$ be a finite abelian group and let $\tau$ have order two. If every sequence of $d$ elements of $G/\langle\tau\rangle$ has a nonempty zero-sum subsequence, then every multiset in $G$ possessing a submultiset of product $\tau$ possesses one of cardinality at most $d$.
+\end{lemma}
+\begin{proof}
+Choose a target submultiset of least cardinality $t$. If $t>d$, apply the quotient statement to any $d$ of its occurrences. A nonempty submultiset has product either $1$ or $\tau$ in $G$. In the first case delete it from the chosen target multiset; in the second case use it alone. Either contradicts minimality. This proof respects every occurrence capacity.
+\end{proof}
+
+\begin{theorem}[Sharp composite completion]\label{thm:235}
+Let $p\in\bigcup_{c\in C}\Pcal_c$. For $i=1,2,3$, an exterior state on $v_i$ exists if and only if there exists a residual $R$ on that ray with
+\[
+ \Om(R)\le2,\quad\Om(R)\le3,\quad\Om(R)\le5,
+\]
+respectively. Here $\Om$ counts prime factors with multiplicity.
+
+Equivalently, the factor capacities of $L_i(p)$ contain a minimal target pattern for
+\[
+ (m,\tau)=(8,7),\quad(24,23),\quad
+ (60,59)\text{ or }(60,11),
+\]
+where the last target is $-p\pmod{60}$. The numbers of minimal patterns of lengths $1,2,3,4,5$ are respectively
+\[
+ \begin{array}{c|rrrrr|r}
+ (m,\tau)&1&2&3&4&5&\text{total}\\\hline
+ (8,7)&1&1&0&0&0&2\\
+ (24,23)&1&3&4&0&0&8\\
+ (60,59)&1&7&32&80&64&184\\
+ (60,11)&1&7&32&80&64&184
+ \end{array}
+\]
+None of the bounds $2,3,5$ can be decreased even when restricted to the six hard prime progressions.
+\end{theorem}
+\begin{proof}
+First, every divisor $R$ in the correct target residue automatically satisfies the shell inequality $R<p$ on these three rays. Indeed $\kappa=L_i(p)/R$ satisfies
+\[
+ \kappa\equiv-r_i-s_i p^{-1}\pmod{m_i}.
+\]
+Its least positive possible residue is $5$ for $v_1$, $19$ for $v_2$, and $52$ or $28$ for $v_3$ when $p\equiv1$ or $49\pmod{60}$. Hence
+\[
+ R\le(2p+1)/5<p,\quad R\le(3p+2)/19<p,\quad
+ R\le(5p+3)/28<p.
+\]
+All these target divisors are units modulo their shell modulus; factors not coprime to it cannot occur in $R$.
+
+The unit groups modulo $8,24,60$ are $C_2^2,C_2^3,C_2^2\times C_4$. Each specified target has order two. In the first two cases quotienting by the target gives $C_2$ and $C_2^2$. For $60$, CRT coordinates are
+\[
+ (\epsilon_4,\epsilon_3,e_5)\in C_2\times C_2\times C_4,
+\]
+where the first two record the nontrivial unit modulo $4$ and $3$, and $2^{e_5}$ is the residue modulo $5$. Both targets have first coordinate $1$ and even last coordinate. If $\tau=(1,t_3,t_5)$, the explicit quotient map is
+\[
+ (\epsilon_4,\epsilon_3,e_5)\mapsto
+ (e_5-\epsilon_4t_5\bmod4,\epsilon_3-\epsilon_4t_3\bmod2).
+\]
+Its kernel is $\{1,\tau\}$ and its image is $C_4\times C_2$. Lemmas~\ref{lem:zero}--\ref{lem:extract} give the three bounds. Extracting a submultiset selects an actual divisor, not merely a generated residue. Conversely any contained pattern selects prime occurrences whose product is a correctly congruent divisor and hence a state by Proposition~\ref{prop:divisor}.
+
+For the pattern counts, enumerate nondecreasing tuples of the unit residues of lengths through the proved bound, test their product, and test all proper submultisets. This is a finite exhaustive algorithm; the verifier provides an independent dynamic-programming implementation and emits every pattern in \texttt{minimal\_patterns.json}. The largest enumeration has only $\sum_{j=1}^5\binom{15+j}{j}$ tuples. The zero-sum proof establishes that no longer patterns have been omitted. Sharpness is proved in Proposition~\ref{prop:sharp} below.
+\end{proof}
+
+\begin{proposition}[Simpler exact failure tests for the first two rays]\label{prop:failure}
+On these progressions, $v_1$ fails with all composite residuals if and only if every prime divisor of $2p+1$ is $1$ or $3$ modulo $8$. The ray $v_2$ fails with all composite residuals if and only if its prime divisor residues modulo $24$ are contained in at least one of
+\[
+ A=\{1,5,13,17\},\qquad B=\{1,5,7,11\}.
+\]
+\end{proposition}
+\begin{proof}
+Modulo $8$ the two minimal patterns are $(7)$ and $(3,5)$. Since $2p+1\equiv3\pmod8$, the presence of a $5$-residue prime and the absence of a $7$-residue prime forces the presence of a $3$-residue prime. This proves the first assertion in both directions.
+
+Modulo $24$ every unit has order two, so the attainable divisor residues equal the subgroup $H$ generated by the prime divisor residues: an exponent can be reduced to zero or one without exceeding its available capacity. Also $5\in H$ because $3p+2\equiv5\pmod{24}$. If $23\notin H$, elementary linear algebra in $C_2^3$ gives a character trivial on $H$ and negative at $23$. Subject to being positive at $5$, there are exactly two such characters. Their kernels are precisely $A,B$, as direct multiplication in the eight-element group verifies. Conversely neither $A$ nor $B$ contains $23$, so a support lying in one of them cannot give a target divisor.
+\end{proof}
+
+\paragraph{Why the subgroup replacement fails at $60$.}
+The two residues $7,53$ generate $59$ modulo $60$, since $7^3\cdot53\equiv59$. But with one occurrence of each, the attainable products are only $1,7,53,11$, not $59$. The finite-capacity multiset, not the generated subgroup, is the exact object. This example is a group obstruction; it is not being asserted to be a complete factorization $5p+3$ for one of the hard primes.
+
+\begin{proposition}[A sharp five-factor prime certificate]\label{prop:sharp}
+The prime
+\[
+ p=2668835929\equiv529\pmod{840}
+\]
+has exactly one $v_3$ residual, namely
+\[
+ 5p+3=2^6\,17^3\,31\,37^2,\qquad R=17^3\,31\,37=5635211.
+\]
+Its marked state has
+\[
+ h=44574519,\qquad\kappa=2368,
+\]
+and raw denominators
+\[
+ (668617785,\ 316657382976,\ 1408511001449102907840).
+\]
+In particular the smallest possible $\Om(R)$ is five. A four-factor example is $p=6320329$, whose unique residual is $151931=13^2\cdot29\cdot31$. The first two completion bounds are also attained: $p=3529$ has exactly the first-ray residuals $39,543$, both of length two, and $p=153409$ has exactly the second-ray residuals $3311,10703$, both of length three.
+\end{proposition}
+\begin{proof}
+Primality is certified in Appendix~\ref{app:prime} and independently checked by exact trial division in the verifier. Here $p\equiv49\pmod{60}$, so $R\equiv11\pmod{60}$. A target divisor is odd and therefore has the form $17^a31^b37^d$, with $0\le a\le3$, $0\le b\le1$, $0\le d\le2$. Reduction modulo $3$ forces $a$ odd. Reduction modulo $4$ forces $b=1$. Reduction modulo $5$ forces $a+d\equiv0\pmod4$. These conditions uniquely give $(a,b,d)=(3,1,1)$. Thus the residual is unique and has five prime factors. Substitution computes $h,\kappa$ and the denominators. For the four-factor example, the complete factorization $5p+3=2^4\,13^3\,29\,31$ and the same three congruence tests give exponents $(2,1,1)$ on the odd primes, uniquely. For the first-ray example, $2\cdot3529+1=3\cdot13\cdot181$, with factor residues $3,5,5$ modulo $8$, so its target divisors are exactly $39,543$. For the second-ray example, $3\cdot153409+2=7\cdot11\cdot43\cdot139$, with residues $7,11,19,19$ modulo $24$; its only target divisors are $3311,10703$. Both numbers are prime and lie in the hard classes $169,529$, respectively. All these assertions are also rechecked by divisor exhaustion.
+\end{proof}
+
+\section{A finite-family theorem beyond the density law}\label{sec:sieve}
+\begin{theorem}[Fixed families with a half dimension per ray]\label{thm:family}
+Let $\mathcal V=\{(r_i,s_i):1\le i\le k\}$ be any fixed finite set of distinct positive primitive rays. For $c\in C$, let $E_{\mathcal V,c}(X)$ count primes $p\le X$ in $\Pcal_c$ for which there is no exterior state with $0<R<p$ on any ray in $\mathcal V$. Then
+\begin{equation}\label{eq:familybound}
+ E_{\mathcal V,c}(X)\ll_{\mathcal V,c}\frac{X}{(\log X)^{1+k/2}}.
+\end{equation}
+No chamber restriction is needed; consequently the theorem applies to any fixed family wholly inside either stipulated positive component. The exponent is an upper-bound exponent, not an asymptotic equality or a lower bound for the exceptional set.
+\end{theorem}
+\begin{proof}
+Set $m_i=4r_is_i$ and $M=\lcm(840,m_1,\ldots,m_k)$. Split $p\equiv c\pmod{840}$ into its finitely many unit classes $t\pmod M$; primes dividing $M$ contribute only a fixed finite exception. Fix one such $t$ and write $\tau_i=-t\pmod{m_i}$. Each $\tau_i$ is $3$ modulo $4$, so it is not a square in $G_i=(\Z/m_i\Z)^\times$.
+
+We count on $X\le p\le2X$ and put $z=\lfloor X^{1/12}\rfloor$. Discard from the auxiliary primes every divisor of
+\[
+ B=M\prod_i r_is_i\prod_{i<j}|r_is_j-r_js_i|
+\]
+and every $q\le2(k+1)$. All factors are fixed and the determinants are nonzero because the rays are primitive and distinct.
+
+For a prime missed by the family, let $T_i^0$ be the set of residue classes modulo $m_i$ of the remaining auxiliary primes $q\le z$ dividing $r_ip+s_i$. The involution
+\[
+ b\mapsto\tau_i b^{-1}
+\]
+has no fixed point: a fixed point would be a square root of $\tau_i$, impossible modulo $4$. The support $T_i^0$ omits $\tau_i$, since a single prime in that class is a valid residual. It cannot meet both elements of an involution pair: their two distinct prime representatives would have product $R\le z^2<X\le p$, divide $r_ip+s_i$, and satisfy $p+R\equiv0\pmod{m_i}$. They would therefore be a bounded exterior state.
+
+Extend $T_i^0$ to a set $T_i$ choosing exactly one element from each pair, with $1$ chosen in the pair $\{1,\tau_i\}$. There are exactly $2^{\varphi(m_i)/2-1}$ possible choices. It suffices to bound a fixed tuple $(T_1,\ldots,T_k)$, of which there are finitely many.
+
+For an allowed auxiliary prime $q$, exclude the residue $0$ modulo $q$ and the roots
+\[
+ -s_i r_i^{-1}\pmod q\quad\text{for those }i\text{ with }q\bmod m_i\notin T_i.
+\]
+These roots are nonzero and pairwise distinct because $q\nmid B$. The number of excluded residues is
+\[
+ \nu(q)=1+\sum_i1_{q\bmod m_i\notin T_i}\le k+1<q/2.
+\]
+Every prime under consideration survives these exclusions. The mean of $\nu(q)$ over reduced classes modulo $M$ is
+\[
+ \kappa_0=1+k/2.
+\]
+Indeed reduction from units modulo $M$ onto units modulo each $m_i$ is surjective with equal fibres, and each $T_i$ has half the units. The fixed-modulus prime number theorem and summation by parts give
+\begin{equation}\label{eq:nuavg}
+ \sum_{q\le y}\frac{\nu(q)}q=\kappa_0\log\log y+O(1),\qquad
+ \sum_{q\le y}\frac{\nu(q)\log q}{q}=\kappa_0\log y+O(1),
+\end{equation}
+where all sums use the allowed auxiliary primes and constants depend only on the fixed data.
+
+Here is the full upper-bound sieve needed. On squarefree products of allowed primes define multiplicatively
+\[
+ g(q)=\nu(q)/q,\quad h(q)=g(q)/(1-g(q)),\quad
+ G(z)=\sum_{d\le z}h(d),
+\]
+with $g(1)=h(1)=1$. The sums over $d$ are restricted to those squarefree products. Put
+\[
+ \lambda_d=\mu(d)\prod_{q\mid d}(1-g(q))^{-1}
+ \frac{\sum_{\ell\le z/d,(\ell,d)=1}h(\ell)}{G(z)}.
+\]
+Thus $\lambda_1=1$, $\lambda_d=0$ for $d>z$, and $|\lambda_d|\le2^{\omega(d)}\le d$.
+The quadratic form satisfies
+\begin{equation}\label{eq:selbergQ}
+ \sum_{d,e\le z}\lambda_d\lambda_e g([d,e])=G(z)^{-1}.
+\end{equation}
+For completeness, use
+$g([d,e])=g(d)g(e)/g((d,e))$ and
+$1/g(v)=\sum_{\ell\mid v}1/h(\ell)$. If
+$y_\ell=\sum_{\ell\mid d}\lambda_dg(d)$, the quadratic form becomes
+$\sum_\ell y_\ell^2/h(\ell)$. M\"obius inversion gives
+$\lambda_1=\sum_\ell\mu(\ell)y_\ell$. Equality in Cauchy--Schwarz is attained at
+$y_\ell=\mu(\ell)h(\ell)/G(z)$, and its inverse is exactly the displayed choice of $\lambda_d$. This proves \eqref{eq:selbergQ}.
+
+An integer in $[X,2X]$, congruent to $t$ modulo $M$ and surviving every excluded residue, contributes one to the square of its divisor-weight sum. For squarefree $v$, CRT gives $X\nu(v)/(Mv)+O(\nu(v))$ integers in the excluded systems at all $q\mid v$. Expanding the square and using \eqref{eq:selbergQ} bounds the survivors by
+\begin{equation}\label{eq:sieveexplicit}
+ \frac{X}{M G(z)}+
+ \left(\sum_{d\le z}|\lambda_d|\nu(d)\right)^2
+ \le\frac{X}{M G(z)}+z^6,
+\end{equation}
+because $\nu(d)\le d$ and $\sum_{d\le z}d^2\le z^3$ for integral $z\ge1$.
+
+To lower-bound $G$, let $y=z^{1/(2\kappa_0+2)}$ and consider the probability distribution on squarefree products of allowed primes up to $y$ proportional to $h(d)$. Its normalizing constant is
+$H_y=\prod_{q\le y}(1+h(q))$, and its expected $\log d$ equals
+\[
+ \sum_{q\le y}\frac{h(q)}{1+h(q)}\log q
+ =\sum_{q\le y}\frac{\nu(q)\log q}{q}
+ \le(\kappa_0+1)\log y=\tfrac12\log z
+\]
+for all sufficiently large $z$. Markov's inequality therefore puts at least half its mass on $d\le z$. Hence
+\[
+ G(z)\ge\tfrac12 H_y\gg(\log y)^{\kappa_0}\gg(\log z)^{\kappa_0},
+\]
+where the Euler-product estimate follows from \eqref{eq:nuavg} and $\sum_qg(q)^2<\infty$. In \eqref{eq:sieveexplicit}, $z^6\le X^{1/2}$, and $\log z\asymp\log X$. This proves the dyadic bound with exponent $\kappa_0$. Summing over the finitely many masks, refined classes, and dyadic intervals proves \eqref{eq:familybound}. Every use of the residual inequality was justified by $q_1q_2\le z^2<X$.
+\end{proof}
+
+\begin{corollary}[Positive Farey finite families]\label{cor:fareybound}
+Starting from the ordered pair $v_1,v_2$, insert the mediant of every adjacent pair $d$ times and call the resulting row $\mathcal F_d$. It has $2^d+1$ primitive rays, all in the positive chamber, and
+\[
+ E_{\mathcal F_d,c}(X)\ll_{d,c}
+ \frac{X}{(\log X)^{(2^d+3)/2}}.
+\]
+In particular the completed three-ray family has exponent $5/2$. For every fixed $A>0$, some finite positive Farey row has an exceptional upper bound $O_A(X/(\log X)^A)$.
+\end{corollary}
+\begin{proof}
+Adjacent determinants begin at $1$ and remain $1$ after insertion, since $\det(v,v+w)=\det(v,w)=\det(v+w,w)$. Hence each new vector is primitive. Its slope is strictly between its parents. There are twice as many adjacent intervals after each step, so the row has $2^d+1$ rays. Apply Theorem~\ref{thm:family}. The last assertion chooses a fixed $d$ after fixing $A$; it does not allow $d$ to grow inside an implicit constant depending on $d$.
+\end{proof}
+
+
+\begin{theorem}[Two-factor witnesses with small residuals]\label{thm:small}
+Fix a nonempty family $\mathcal V$ of $k$ distinct positive primitive rays and $c\in C$. For each fixed $\varepsilon>0$, the primes $p\le X$ in $\Pcal_c$ having no state on any ray of $\mathcal V$ with
+\[
+ \Om(R)\le2,\qquad 0<R<p,\qquad R\le p^\varepsilon
+\]
+number
+\begin{equation}\label{eq:smallpower}
+ O_{\mathcal V,c,\varepsilon}\!\left(\frac{X}{(\log X)^{1+k/2}}\right).
+\end{equation}
+For each fixed $A>0$, replacing the last restriction by $R\le(\log p)^A$ gives the bound
+\begin{equation}\label{eq:smallpolylog}
+ O_{\mathcal V,c,A}\!\left(\frac{X}{\log X\,(\log\log X)^{k/2}}\right).
+\end{equation}
+In particular, these restricted witnesses exist for a relative-density-one set of primes in the progression. Neither assertion is pointwise, nor uniform in $\varepsilon$ or $A$.
+\end{theorem}
+\begin{proof}
+Retain the fixed refinement modulus, masks, and discarded prime set from Theorem~\ref{thm:family}. Work on $X\le p\le2X$, set $z=\lfloor X^{1/12}\rfloor$, and let
+\[
+ 2\le y\le z^{1/(4k)}.
+\]
+Consider primes with no witness obtained from one or two allowed auxiliary primes at most $y$. The same inverse-residue argument gives the same finite set of half-unit masks: a forbidden single prime or pair would give a target divisor $R\le y^2<p$ with $\Om(R)\le2$.
+
+Sieve primality with every allowed auxiliary prime $q\le z$, but impose the linear-form roots only for $q\le y$. Thus
+\[
+ \nu_y(q)=1+1_{q\le y}\sum_{i=1}^k1_{q\bmod m_i\notin T_i}.
+\]
+It still satisfies $1\le\nu_y(q)\le k+1<q/2$. Consequently the exact weight calculation and the remainder estimate \eqref{eq:sieveexplicit} apply without change, with $g_y(q)=\nu_y(q)/q$, $h_y(q)=g_y(q)/(1-g_y(q))$, and
+\[
+ G_y(z)=\sum_{d\le z}h_y(d).
+\]
+No prime-distribution theorem with a varying modulus is needed: the modulus determining every indicator remains the same fixed $M$.
+
+Put $w=z^{1/4}$; then $y\le w$. On squarefree products of allowed primes at most $w$, use weights $h_y(d)$ and normalizing constant
+\[
+ H_{y,w}=\prod_{q\le w}(1+h_y(q)).
+\]
+The fixed-modulus Mertens estimates, uniformly for $2\le y\le w$, give
+\begin{align*}
+ \log H_{y,w}
+ &=\sum_{q\le w}\frac1q+
+   \sum_{i=1}^k\sum_{\substack{q\le y\\q\bmod m_i\notin T_i}}\frac1q+O(1)\\
+ &=\log\log w+\frac{k}{2}\log\log y+O(1).
+\end{align*}
+The $O(1)$ in the first line is uniform because
+$\sum_q\nu_y(q)^2/q^2\le(k+1)^2\sum_q1/q^2$; the discarded finite prime set contributes another fixed constant. Hence
+\[
+ H_{y,w}\gg\log w\,(\log y)^{k/2}.
+\]
+The expected logarithm of the random squarefree product equals
+\begin{align*}
+ \sum_{q\le w}\frac{h_y(q)}{1+h_y(q)}\log q
+ &=\log w+\frac{k}{2}\log y+O(1)\\
+ &\le\frac14\log z+\frac18\log z+O(1)
+ \le\frac12\log z
+\end{align*}
+for all sufficiently large $z$, uniformly in $y$ in the specified interval. Markov's inequality therefore gives
+\[
+ G_y(z)\ge\tfrac12 H_{y,w}
+ \gg \log z\,(\log y)^{k/2}.
+\]
+The dyadic exceptional count, after summing over the fixed masks and progressions, is consequently at most
+\begin{equation}\label{eq:twocutoff}
+ O_{\mathcal V,c}\!\left(
+ \frac{X}{\log X\,(\log y)^{k/2}}+X^{1/2}\right),
+ \qquad 2\le y\le z^{1/(4k)}.
+\end{equation}
+
+For \eqref{eq:smallpower}, take
+$y=\min(X^{\varepsilon/2},z^{1/(4k)})$.
+Then $y^2\le p^\varepsilon$ and $\log y\asymp_{k,\varepsilon}\log X$.
+For \eqref{eq:smallpolylog}, take
+$y=\min((\log X)^{A/2},z^{1/(4k)})$.
+Eventually the first term is smaller, $y^2\le(\log p)^A$, and
+$\log y=(A/2)\log\log X$. Both cutoffs tend to infinity; finitely many small $X$ are absorbed in the constants. Summing dyadic intervals proves the two bounds. Division by the fixed-progression prime count proves the final density-one assertion.
+\end{proof}
+
+\section{Unimodular propagation, its inverse, and its exact barrier}\label{sec:lattice}
+\begin{proposition}[General local collision law]\label{prop:collisions}
+For primitive rays $v_i=(r_i,s_i)$ and a prime $q\nmid\prod_i r_is_i$, the roots of $r_ip+s_i$ and $r_jp+s_j$ coincide modulo $q$ if and only if
+\[
+ q\mid r_is_j-r_js_i.
+\]
+For any fixed progression determining shell eligibility, partition the eligible rays into blocks $B_1,\ldots,B_t$ by equality of roots. The local generating factor is
+\[
+ \frac{q-1-t+\sum_{j=1}^t\prod_{i\in B_j}X_i}{q-1}.
+\]
+The finite product proof is the same CRT argument as Theorem~\ref{thm:pgf}. Thus non-unimodular families require collision blocks at a finite, explicitly specified set of primes; they do not justify the three-ray factor everywhere.
+\end{proposition}
+\begin{proof}
+Multiply equality of $-s_ir_i^{-1}$ and $-s_jr_j^{-1}$ by $r_ir_j$. A common root gives all labels in its block simultaneously, whereas different roots are disjoint. Counting the $q-1$ nonzero residues gives the formula.
+\end{proof}
+
+\begin{theorem}[Complete same-residual companion-basis map]\label{thm:lattice}
+Fix an exterior state with primitive ray $v=(r,s)$ and choose an integer companion $w=(b,d)$ with $\det(v,w)=\varepsilon\in\{1,-1\}$. Write $L_w=bp+d$ and $a=(p+R)/4$. All exterior states at this same $(p,R)$ are parametrized, bijectively, by the pairs $(A,B)\in\Z^2$ satisfying
+\begin{equation}\label{eq:latticedomain}
+ r'=Ar+RBb>0,\quad s'=As+RBd>0,\quad
+ \gcd(A,RB)=1,\quad r's'\mid a.
+\end{equation}
+The map is
+\begin{equation}\label{eq:latticemap}
+ (r',s')=Av+RBw,\quad h'=a/(r's'),\quad
+ \kappa'=A\kappa+B L_w.
+\end{equation}
+The inverse is obtained by applying the inverse unimodular matrix to $(r',s')$ and dividing its second coordinate by $R$.
+
+If $w$ is positive and propagation is restricted to the strict positive cone $A>0,B>0$, there is no image whenever
+\begin{equation}\label{eq:heightbarrier}
+ (r+Rb)(s+Rd)>a.
+\end{equation}
+In particular the ordinary mediant $v+w$ cannot retain a residual $R>1$ of $v$.
+\end{theorem}
+\begin{proof}
+The determinant identity $rL_w-bL_v=\varepsilon$ implies $\gcd(L_w,R)=1$, since $R\mid L_v$. Write any integer vector uniquely as $Av+Cw$. Its linear form is $AR\kappa+C L_w$, so it is divisible by $R$ if and only if $R\mid C$. Thus $C=RB$. Unimodularity preserves the gcd of the coordinates, giving $\gcd(r',s')=\gcd(A,RB)$. The last condition in \eqref{eq:latticedomain} is precisely the integral shell condition, and the formula for $\kappa'$ is its actual quotient. Conversely every same-shell exterior state has these unique coordinates, so no additional existence hypothesis has been inserted. This is a classification of the map's exact domain, not a claim that this domain contains a desired new direction.
+
+For positive $A,B$, both are at least one, hence $r's'\ge(r+Rb)(s+Rd)$. If this exceeds $a$, the divisibility condition is impossible. For the mediant the second basis coefficient is $C=1$, which is not divisible by $R>1$.
+\end{proof}
+
+\paragraph{What this does and does not propagate.}
+Mediants create new rays and, by Theorem~\ref{thm:family}, useful new selector channels. They do not transport an existing residual from a parent. In the basis $((2,1),(3,2))$, every positive-cone vector has nonnegative coordinates and slope in $[3/2,2]$. The exterior positive state $(r,s)=(1,18)$ at $1201$ instead has the exact coordinates
+\[
+ (1,18)=-52(2,1)+35(3,2).
+\]
+Its equation is $p+18=-52L_1+35L_2$, and at $p=1201$ it is divisible by $23$. Neither parent is a state at this $(p,R)$, so the anchored same-residual condition $C=RB$ is not applicable to those two parent vectors. The negative coordinate is indispensable for this representation, but entails no arithmetic inconsistency. Failure of the positive-cone map is not a claim that the states are unrelated.
+
+\section{An exact cubic exterior--middle transfer}\label{sec:cubic}
+\begin{theorem}[Factor-swap correspondence and all its fibres]\label{thm:cubic}
+Let $(p,R,h,r,s,\kappa)\in\E_p$. Set $g=\gcd(h,r)$ and replace its divisor coordinate $u=hr^2$ by
+\[
+ u'=sr^2.
+\]
+This always divides $a^2$. It gives a middle state if and only if
+\begin{equation}\label{eq:cubic}
+ R\mid4r^3-1.
+\end{equation}
+On this exact locus the target is
+\begin{equation}\label{eq:cubicmap}
+ (H,a_1,b_1,\lambda)=
+ \left(sg^2,\frac r g,\frac h g,\frac{r+h}{gR}\right).
+\end{equation}
+Its raw denominators, without cancelling the mark, are
+\begin{equation}\label{eq:cubicdenom}
+ \left(hrs,\frac{phs(r+h)}R,\frac{prs(r+h)}R\right).
+\end{equation}
+For a middle state $(p,R,H,a_1,b_1,\lambda)$, all preimages are indexed exactly by the positive integers $g$ satisfying
+\begin{equation}\label{eq:cubicfibre}
+ g^2\mid H,\qquad \gcd(ga_1,H/g^2)=1,\qquad
+ R\mid4(ga_1)^3-1.
+\end{equation}
+The corresponding exterior coordinates are
+\begin{equation}\label{eq:cubicinverse}
+ h=gb_1,\quad r=ga_1,\quad s=H/g^2,\quad
+ \kappa=(pga_1+H/g^2)/R.
+\end{equation}
+Retaining $g$ makes the correspondence invertible. Without it the fibres can have more than one element. The target slope is exactly $r/h$, not $r/s$.
+\end{theorem}
+\begin{proof}
+Since $a=hrs$, one has $a^2/u'=h^2s\in\N$. Normalizing $u'$ by Proposition~\ref{prop:divisor} gives exactly $H=sg^2$, $a_1=r/g$, $b_1=h/g$. The middle condition is $R\mid a_1+b_1$, equivalent to $R\mid r+h$ because $g$ is a unit modulo $R$.
+
+The exterior condition is $4hr^2\equiv-1\pmod R$. Since $r$ is a unit modulo $R$,
+\[
+ h+r\equiv0\pmod R
+ \quad\Longleftrightarrow\quad
+ 4r^3-1\equiv0\pmod R.
+\]
+This proves both directions of the exact exceptional-locus statement, and also the integrality of $\lambda$. Substitution into the middle denominators cancels the displayed powers of $g$ and yields \eqref{eq:cubicdenom}.
+
+For the inverse, $g^2\mid H$ ensures all coordinates in \eqref{eq:cubicinverse} are integral and $hrs=Ha_1b_1=a$. The gcd condition is exactly exterior primitivity. Since $a_1+b_1\equiv0\pmod R$, substitution gives
+\[
+ 4hr^2+1=4g^3b_1a_1^2+1
+ \equiv1-4g^3a_1^3\equiv0\pmod R.
+\]
+Thus this is an exterior state. Moreover $\gcd(h,r)=g$ because $\gcd(a_1,b_1)=1$. Forward normalization therefore recovers the original middle state and the same $g$. Conversely any preimage must satisfy these formulas, proving completeness of the fibre description. Finally $(r/g)/(h/g)=r/h$.
+\end{proof}
+
+\paragraph{A genuine collision.}
+The middle state $(p,R,H,a_1,b_1,\lambda)=(389,3,49,1,2,1)$ has two preimages, with $g=1,7$:
+\[
+ (h,r,s)=(2,1,49),\qquad(14,7,1).
+\]
+The verifier checks both. Thus suppression of the normalization mark is a real information loss, not merely a formal warning.
+
+\begin{corollary}[An explicit infinite prime bridge through $2521$]\label{cor:bridge}
+For every prime
+\[
+ p=2521+48720k\quad(k\ge0),\qquad s=11+210k,
+\]
+there is an exterior state with $(R,h,r,s)=(31,29,2,s)$ and $\kappa=15s-2$. Its cubic transfer is the positive middle state
+\[
+ (R,H,a_1,b_1,\lambda)=(31,s,2,29,1),
+\]
+with raw denominators $(58s,29ps,2ps)$. The progression contains infinitely many primes and lies in $p\equiv1\pmod{840}$.
+\end{corollary}
+\begin{proof}
+Here $p=232s-31$, $s$ is odd, and $4\cdot2^3-1=31$. The shell is $p+31=4\cdot29\cdot2s$, and
+$(2p+s)/31=15s-2$. Apply Theorem~\ref{thm:cubic}, with $g=1$. Since $2/29<1/8<\alpha$, the target is positive. To check the last strict inequality, $1+9\sqrt2<8\sqrt3$ follows by two squarings from $648<841$.
+The modulus is $48720=2^4\cdot3\cdot5\cdot7\cdot29$, coprime to $2521$, so the prime number theorem in arithmetic progressions supplies infinitely many primes. Congruence modulo $840$ is immediate.
+\end{proof}
+
+\paragraph{A complete description of same-shell channel conversion.}
+At any fixed shell, let $a=\prod q_j^{e_j}$. Divisors $u$ correspond to exponent vectors $0\le f_j\le2e_j$. If $u$ is exterior, another divisor $u'$ is middle exactly when
+\begin{equation}\label{eq:boxtranslation}
+ u'\equiv p u\pmod R,
+ \quad\text{equivalently}\quad
+ \prod_jq_j^{f'_j-f_j}\equiv p\pmod R.
+\end{equation}
+This follows by multiplying $4u\equiv-1$ by $p$. Equation~\eqref{eq:boxtranslation} is an exact finite-capacity translation problem, not an automatic existence theorem. The cubic transfer constructs one such translation on its stated locus. For example at $1201$,
+\[
+ (R,u,u')=(23,17,108),\qquad(31,1232,2)
+\]
+both satisfy \eqref{eq:boxtranslation}. At $R=71$ there is an exterior state and no middle state, so no total same-$(p,R)$ exterior-to-middle map can exist.
+
+Literal scaling $(r,s)\mapsto(pr,s)$ also explains nothing: although it changes $pr+s\equiv0$ into a middle-type sum, its new product is $prs$. Preserving the shell would require new $h'=h/p$, impossible since $h\le a<p$ and $p\nmid h$. A valid channel transfer must redistribute the divisor coordinates, as \eqref{eq:cubicmap} does, or change the shell.
+
+\section{Exhaustive stress tests and pointwise obstructions}\label{sec:stress}
+The two tables below exhaust every $R=3,7,\ldots,p-2$ and every divisor of $((p+R)/4)^2$, applying both channel tests. They are not searches truncated at a few favourable residuals. Section~\ref{sec:selectors} proves that this finite procedure is exhaustive for the stipulated window. The symbols $+$ and $-$ record exact membership in \eqref{eq:chamber}; the quotient column means $\kappa$ for $E$, $\lambda$ for $M$.
+
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering\small
+\textbf{Complete bounded selector at $p=1201$}\\[4pt]
+\begin{tabular}{@{}rrlcclc@{}}
+\toprule
+$R$&$u$&$(h,r,s)$&Channel&Quotient&Raw $(x,y,z)$&$\mathcal K$\\
+\midrule
+23&17&$(17,1,18)$&E&53&$(306,16218,1082101)$&+\\
+23&108&$(3,6,17)$&M&1&$(306,61251,21618)$&-\\
+23&867&$(3,17,6)$&M&1&$(306,21618,61251)$&-\\
+23&2754&$(34,9,1)$&E&470&$(306,15980,172727820)$&-\\
+31&2&$(2,1,154)$&M&5&$(308,1849540,12010)$&+\\
+31&1232&$(77,4,1)$&E&155&$(308,11935,57335740)$&-\\
+31&47432&$(2,154,1)$&M&5&$(308,12010,1849540)$&-\\
+39&2&$(2,1,155)$&M&4&$(310,1489240,9608)$&+\\
+39&1550&$(62,5,1)$&E&154&$(310,9548,57335740)$&-\\
+39&48050&$(2,155,1)$&M&4&$(310,9608,1489240)$&-\\
+47&64&$(1,8,39)$&M&1&$(312,46839,9608)$&-\\
+47&1521&$(1,39,8)$&M&1&$(312,9608,46839)$&-\\
+71&53&$(53,1,6)$&E&17&$(318,5406,1082101)$&-\\
+339&13475&$(11,35,1)$&E&124&$(385,1364,57335740)$&-\\
+1043&18513&$(17,33,1)$&E&38&$(561,646,25602918)$&-\\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{center}
+
+\begin{center}
+\begin{minipage}{\textwidth}
+\centering\small
+\textbf{Complete bounded selector at $p=2521$}\\[4pt]
+\begin{tabular}{@{}rrlcclc@{}}
+\toprule
+$R$&$u$&$(h,r,s)$&Channel&Quotient&Raw $(x,y,z)$&$\mathcal K$\\
+\midrule
+23&8&$(2,2,159)$&M&7&$(636,5611746,70588)$&+\\
+23&477&$(53,3,4)$&E&329&$(636,69748,131876031)$&-\\
+23&50562&$(2,159,2)$&M&7&$(636,70588,5611746)$&-\\
+31&44&$(11,2,29)$&M&1&$(638,804199,55462)$&+\\
+31&116&$(29,2,11)$&E&163&$(638,51997,23833534)$&-\\
+31&9251&$(11,29,2)$&M&1&$(638,55462,804199)$&-\\
+55&16&$(1,4,161)$&M&3&$(644,1217643,30252)$&+\\
+55&25921&$(1,161,4)$&M&3&$(644,30252,1217643)$&-\\
+87&326&$(326,1,2)$&E&29&$(652,18908,23833534)$&-\\
+111&2303&$(47,7,2)$&E&159&$(658,14946,131876031)$&-\\
+471&3179&$(11,17,4)$&E&91&$(748,4004,42899857)$&-\\
+1583&13851&$(19,27,2)$&E&43&$(1026,1634,55610739)$&-\\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{center}
+
+\begin{proposition}[Two independent obstructions]\label{prop:stress}
+At $p=1201$, all three fixed rays fail even with composite residuals, and neither exterior nor middle states occur on any ray in the entire interval $[3/2,2]$. There are $15$ raw states, $11$ increasing triples, and exactly $3$ positive states.
+
+At $p=2521$, there are $12$ raw states and $9$ increasing triples; its $3$ positive states are all middle states. In particular, \emph{the collection of all positive exterior rays, not merely a finite family, fails at this hard prime}.
+\end{proposition}
+\begin{proof}
+The complete tables give these statements directly, and their completeness is certified by the exhaustive divisor algorithm. For the fixed-ray checks at $1201$, independently,
+\[
+ 2p+1=3^3\cdot89,\quad3p+2=5\cdot7\cdot103,\quad
+ 5p+3=2^3\cdot751.
+\]
+The first two exact failure criteria in Proposition~\ref{prop:failure} apply. The odd divisors of the third number are $1,751$, neither congruent to $-1201\equiv59\pmod{60}$. The seven exterior slopes in the first table are
+\[
+ 1/18,9,4,5,1/6,35,33,
+\]
+none in $[3/2,2]$. The middle slopes are $6/17,17/6,1/154,154,1/155,155,8/39,39/8$, likewise outside that interval. Thus allowing the middle channel without leaving the original Farey cone does not remove this obstruction.
+
+At $2521$ the complete exterior slope list is
+\[
+ 3/4,\ 2/11,\ 1/2,\ 7/2,\ 17/4,\ 27/2.
+\]
+None belongs to $\mathcal K$, as verified by the exact polynomial inequalities in Appendix~\ref{app:chamber}. Its positive middle states have $(R,h,r,s)=(23,2,2,159)$, $(31,11,2,29)$ and $(55,1,4,161)$. The middle state at $R=31$ is exactly the image of the nonpositive exterior state $(31,29,2,11)$ under Theorem~\ref{thm:cubic}.
+\end{proof}
+
+The original three positive states at $1201$ are consequently not to be reassigned to the wrong channel. The exterior state is
+\[
+ (R,u,h,r,s,\kappa)=(23,17,17,1,18,53),
+\]
+with $(306,16218,1082101)$. The other two are middle states with $(R,h,r,s,\lambda)=(31,2,1,154,5)$ and $(39,2,1,155,4)$; their raw second denominators are the larger ones. The cubic factor-swap fails on every exterior state at $1201$, because none satisfies $R\mid4r^3-1$. This is failure of that specific map, not failure of all channel relations: the two explicit translations in \eqref{eq:boxtranslation} already exhibit such relations.
+
+\section{Independent finite censuses}\label{sec:census}
+All counts in this section were regenerated by \texttt{verifier.py}; none is used as a premise in the asymptotic or algebraic proofs. The prime range is $p\le2000000$ with $p\bmod840\in C$, containing $4519$ primes.
+
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Ray&Prime $R$ states&Primes hit&All $R$ states&Primes hit\\
+\midrule
+$(2,1)$&1566&1098&5777&1723\\
+$(3,2)$&838&743&2694&1410\\
+$(5,3)$&550&490&720&581\\
+\bottomrule
+\end{tabular}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{@{}rrrrrrr@{}}
+\toprule
+$c$&Primes&Old prime hits&$v_3$ prime states&$v_3$ hits&New hits&Completed union\\
+\midrule
+1&755&271&48&43&24&430\\
+121&772&249&48&46&31&447\\
+169&751&278&133&114&72&474\\
+289&739&286&128&113&73&453\\
+361&745&268&54&50&28&480\\
+529&757&316&139&124&76&551\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The old three prime incidences are $v_1$ with $q\equiv7$ or $23\pmod{24}$, and $v_2$ with $q\equiv23\pmod{24}$. Their state counts are $752,814,838$, and their union contains $1668$ primes. The third ray has $550$ prime-residual states on $490$ primes and adds $304$ previously missed primes. Thus the prime-residual union contains $1972$ primes.
+
+Completing all three rays with composite residuals gives $9191$ states on $2835$ primes. The old two completed rays cover $2588$ primes; the completed third ray adds $247$ to that stronger baseline. It is essential not to confuse this last $247$ with the $304$ measured against the old prime-only baseline. Composite completion adds $863$ primes to the three-ray prime-only union.
+
+The first new prime-only third-ray certificate is
+\[
+ (p,R,h,r,s,\kappa)=(3889,11,65,5,3,1768),
+\]
+with raw denominators $(975,344760,2234619400)$. The first such certificate in the common three-way auxiliary class is
+\[
+ (17929,431,306,5,3,208),
+\]
+with raw denominators $(4590,190944,5705724960)$. The phrase ``previously missed'' here is relative to the old prime incidences: $17929$ already has a \emph{composite} second-ray residual $2831$.
+
+At Farey depths $d=0,1,2,3,4$, the completed upper families have $2,3,5,9,17$ rays and cover respectively $2588,2835,3010,3334,3512$ primes in this finite census. Adding the lower positive rays $(1,s)$ for $8\le s\le128$ to the $17$ upper rays covers $4508$ of the $4519$ primes. The remaining $11$ are
+\[
+ \begin{gathered}
+ 2521,20521,21841,99241,161281,397489,471241,\\
+ 488401,560281,567961,1139041.
+ \end{gathered}
+\]
+For this explicit family
+\[
+ \mathcal V_* = \mathcal F_4\cup\{(1,s):8\le s\le128\},
+\]
+there are $17+121=138$ distinct positive rays. Independently of the finite count, Theorem~\ref{thm:family} therefore gives the unconditional bound
+\[
+ E_{\mathcal V_*,c}(X)\ll_c \frac{X}{(\log X)^{70}}.
+\]
+The fixed implied constant is not a practical estimate at the finite census bound; it is not used to derive the count $4508$. By Theorem~\ref{thm:small}, the exponent $70$ also holds for this same fixed family when witnesses are restricted to $\Om(R)\le2$ and $R\le p^\varepsilon$, for each fixed $\varepsilon>0$. The polylogarithmic-residual version has upper bound $O(X/(\log X(\log\log X)^{69}))$ for each fixed power of $\log p$.
+
+The extended family computation is optional under \texttt{--families}; its JSON includes one full marked certificate for each covered prime. This is a finite statement and not an assertion that those $138$ rays cover every prime. In fact Proposition~\ref{prop:stress} rules out every exterior-only positive family at $2521$.
+
+
+\begin{proposition}[Certified finite hybrid coverage]\label{prop:hybrid}
+For every prime $p\le2000000$ in one of the six hard classes, either the positive exterior family $\mathcal V_*$ produces a bounded state, or a positive middle state exists with
+\[
+ R\in\{11,19,23,39\}.
+\]
+Thus this fixed collection of $138$ exterior rays and four middle shells covers all $4519$ primes in the specified finite range.
+\end{proposition}
+\begin{proof}
+The complete exterior census supplies a marked witness for $4508$ primes. For its remaining $11$, the following middle coordinates satisfy $p+R=4hrs$, $r+s=R\lambda$, $\gcd(r,s)=1$, and $r/s\in\mathcal K$:
+\begin{center}
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+$p$&$R$&$h$&$r$&$s$&$\lambda$\\
+\midrule
+2521&23&2&2&159&7\\
+20521&11&59&1&87&8\\
+21841&11&1&9&607&56\\
+99241&11&3&1&8271&752\\
+161281&11&3&1&13441&1222\\
+397489&39&17&2&2923&75\\
+471241&11&173&1&681&62\\
+488401&23&1&1&122106&5309\\
+560281&11&1&1&140073&12734\\
+567961&19&1&7&20285&1068\\
+1139041&19&169&5&337&18\\
+\bottomrule
+\end{tabular}
+\end{center}
+Every corresponding raw ordered denominator triple is exactly $(hrs,phs\lambda,phr\lambda)$; \texttt{families.json} records these triples, their divisor marks $u=hr^2$, and all other coordinates explicitly. The standard-library verifier regenerates them by exhausting the four specified middle shells after the exterior pass, and checks every integer identity and strict chamber inequality. This proves a finite theorem, not a conjectural extrapolation. No statement is made that these four middle shells repair every prime outside $\mathcal V_*$ beyond the stated range.
+\end{proof}
+
+\section{What has been established, and the next indispensable arrow}
+The continuation is not just a density statement. It includes a sharp finite factor-pattern theorem, a quantitative finite-family theorem, a complete same-residual lattice map with an obstruction, a quantitative two-factor small-residual refinement, an exterior--middle transfer with inverses and genuine collisions, and a hard prime at which all positive exterior rays fail.
+
+A positive-selector strategy cannot be completed merely by adding more positive Farey mediants: $1201$ already rules out the original cone, and $2521$ rules out the whole positive exterior channel. Moreover $1201,R=71$ rules out a total shell-preserving exterior-to-middle map. The cubic correspondence supplies one successful arrow, but its exact divisor locus proves that it is not a universal one. A procedure required to start from an arbitrary exterior mark must permit a shell change or a failure report followed by reselection. This does not rule out a selective same-shell construction that chooses a different starting mark; shell change has not been proved necessary for every possible global strategy.
+
+\paragraph{Prioritized next theorem, not a premise of this note.}
+The concrete next target is a \emph{shell-changing escape theorem}: for every hard prime missed by the completed positive exterior family, construct a middle state (or a positive exterior state on a different shell) by a terminating arithmetic operation on the bounded divisor-exponent boxes. A particularly useful quantitative version would prove, on this remaining set, existence of such a state with $R\le C(\log p)^2$, for an explicit constant and an explicit finite initial range. Neither existence nor that bound is proved here; no result above assumes it. For this proposed shell-changing strategy, the indispensable new content is a pointwise production of a divisor translation together with termination, not a subgroup-generation surrogate, a density-one assertion, or an eligibility condition renamed as a theorem. A different selective same-shell strategy would instead have to prove that a successful starting shell can always be chosen; the present obstruction does not exclude that alternative.
+
+The finite-family sieve may give arbitrarily large fixed logarithmic savings, but that fact neither furnishes the proposed escape operation nor bounds the largest exception. This note makes no claim that the Erd\H{o}s--Straus conjecture has been proved.
+
+\appendix
+\section{Exact chamber comparisons}\label{app:chamber}
+The verifier contains no floating-point radical comparison. For positive $r,s$ put
+\[
+ D=s^2-4rs-3r^2,\qquad F=3r^2-4rs-s^2.
+\]
+The lower condition is exactly
+\[
+ r/s<\alpha\quad\Longleftrightarrow\quad D>0\ \text{and}\ D^2>8r^2(r+s)^2.
+\]
+Indeed $r+(r+s)\sqrt2<s\sqrt3$, after squaring the positive sides, is $2r(r+s)\sqrt2<D$. The signs in the displayed test are therefore necessary before squaring again.
+For the upper component, first require $r>s$ and
+\[
+ F\ge0\quad\text{or}\quad8r^2(r-s)^2>F^2.
+\]
+This is equivalent to $r+(r-s)\sqrt2>s\sqrt3$. Finally require $r\le s$ or $(r-s)^2<2s^2$ for $r/s<1+\sqrt2$. Combining these conditions gives exactly \eqref{eq:chamber}; the strict endpoints remain strict.
+
+\section{Primality certificates}\label{app:prime}
+For the sharp five-factor example,
+\[
+ n-1=2^3\cdot3\cdot11\cdot241\cdot41947,
+ \qquad n=2668835929.
+\]
+Take base $13$. The verifier checks $13^{n-1}\equiv1\pmod n$ and the residues
+\[
+ \begin{array}{c|r}
+ q&13^{(n-1)/q}\bmod n\\\hline
+ 2&2668835928\\
+ 3&1097868867\\
+ 11&1552044973\\
+ 241&493318988\\
+ 41947&611866755
+ \end{array}
+\]
+Each residue minus one is coprime to $n$. The factor $41947$, and every other prime factor used, is verified by trial division through its integer square root (at most $204$ here).
+
+Here is the elementary certificate theorem, to specify exactly what is checked. If $n>1$, $n-1=\prod q^{e_q}$ is fully factored into primes, $a^{n-1}\equiv1\pmod n$, and $\gcd(a^{(n-1)/q}-1,n)=1$ for every $q$, then $n$ is prime. For any prime $\ell\mid n$, the order of $a$ modulo $\ell$ divides $n-1$ but does not divide $(n-1)/q$ for any $q$. It therefore contains every full factor $q^{e_q}$ and equals $n-1$. Since this order divides $\ell-1$, one has $\ell\ge n$, forcing $\ell=n$. This proves the criterion.
+
+The JSON file \texttt{primality\_certificates.json} also supplies bases and residues for $1201,2521,3529,3889,17929,153409,6320329$. Independent trial division of the two largest isolated examples is performed in addition to this order certificate.
+
+\section{Executable verification, finite bounds, and formalization}
+The executable deliverable is \texttt{verifier.py}, using only the Python standard library. It constructs primes up to the requested finite bound by an ordinary sieve; factors all linear forms by exact trial division; enumerates divisors by their complete prime-exponent ranges; decodes every state; and checks the integer identity
+\[
+ 4xyz=p(xy+xz+yz).
+\]
+The following invocation regenerates the tables reported here:
+\begin{Verbatim}[fontsize=\small]
+python3 verifier.py --bound 2000000 --out tables --families
+\end{Verbatim}
+For a small check independent of the main census:
+\begin{Verbatim}[fontsize=\small]
+python3 verifier.py --self-test-only --out self_tests
+\end{Verbatim}
+The local-law certificate exhausts $13300=(71-1)(191-1)$ unit-residue pairs and their CRT lifts with $c=529$. This is a check of a finite residue-space product, not a sample from which a prime-density theorem is inferred. The zero-sum check exhausts all $\binom{12}{5}=792$ five-element multisets in $C_4\times C_2$. The complete stress searches use $R<p$ and all $u\mid a^2$, with no residual cutoff below that specified boundary.
+
+\texttt{tables/manifest.json} gives SHA-256 checksums for the generated JSON files. The file \texttt{map\_fibres.json} checks every same-residual companion-basis fibre, denominator inverse, middle orientation partner, and exterior-to-middle divisor translation in the two stress tables. The full census distinguishes \texttt{denominators\_raw} from \texttt{denominators\_increasing}, stores $p,R,a,u,h,r,s$, and uses separate nullable \texttt{kappa} and \texttt{lambda} fields. Prime-residual and all-residual counts are kept separately.
+
+A dependency-ordered, Lean-ready lemma list is supplied in \texttt{lean\_plan.md}. No Lean compilation or machine-checked proof is claimed. The Python certificates are finite exhaustive checks; the infinite statements have the mathematical proofs above, with the explicitly identified classical prime-distribution inputs.
+
+\begin{thebibliography}{99}
+\bibitem[Dahan(2026)]{Dahan2026}
+Dahan, B. (2026). \emph{Sieve dimension and search depth for the Erd\H{o}s--Straus conjecture, $n\equiv1\pmod{24}$}. arXiv:2608.24035v1. Locators used: \S4.1, Lemma 4.2 and Theorem 4.3. \url{https://arxiv.org/abs/2608.24035}.
+
+\bibitem[Elsholtz and Tao(2013)]{ElsholtzTao2013}
+Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions. \emph{Journal of the Australian Mathematical Society, 94}(1), 50--105. \url{https://doi.org/10.1017/S1446788712000468}. Locators refer to arXiv:1107.1010v6, \S2, equations (2.1)--(2.9), Propositions 2.2--2.3, 2.6--2.7; see also Proposition 1.6 for the distinct classical odd-square obstruction.
+
+\bibitem[Rudnick(2015)]{Rudnick2015}
+Rudnick, Z. (2015, May 26). \emph{Primes in arithmetic progressions: Fixed modulus} [Course notes]. Tel Aviv University. Locator: \S2, p.~2, fixed-modulus PNT and equation (1). \url{https://www.math.tau.ac.il/~rudnick/courses/sieves2015/fixed\%20progressions.pdf}.
+
+\bibitem[Williams(1974)]{Williams1974}
+Williams, K. S. (1974). Mertens' theorem for arithmetic progressions. \emph{Journal of Number Theory, 6}, 353--359. \url{https://doi.org/10.1016/0022-314X(74)90032-8}. Locator: \S3, Theorem 1, p.~356.
+
+\bibitem[Yamamoto(1965)]{Yamamoto1965}
+Yamamoto, K. (1965). On the Diophantine equation $4/n=1/x+1/y+1/z$. \emph{Memoirs of the Faculty of Science, Kyushu University, Series A, Mathematics, 19}(1), 37--47. Locator: \S1, Lemmas 1--2, pp.~37--38, especially equation (4) on p.~38. \url{https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf}.
+\end{thebibliography}
+\end{document}

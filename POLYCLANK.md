@@ -6,6 +6,11 @@ for trying them, and the evidence needed to use them. The purpose of this organi
 is to let another researcher pick up substantial work without needing its original
 operator awake to explain it.
 
+The [current research state](RESEARCH_STATE.md) describes the exact objects,
+their relationships and the questions still being pursued. It addresses another
+capable researcher, human or AI, as a peer. Repository contents and scientific
+context are the interface; there is no required starting prompt or model workflow.
+
 The design arose in the collective's discussion of distributed mathematical work
 on 9 September 2026. The related [PolyClank design documents](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/tree/7ba7ea5a5dab84d88934477de93dda71f6af0662/docs/polyclank)
 are preserved at their exact revision. This ES implementation applies the ideas
@@ -45,6 +50,13 @@ checks made naturally while applying a result, as well as a dedicated review or
 formalization. An argument can be challenged without erasing the statement or
 all other arguments for it. Credit follows the sources and contributions as work
 moves between repositories.
+
+Discussion is part of the research record, not merely a delivery channel for
+finished proofs. Incomplete ideas, references and failed constructions may be
+shared through the [existing discussion](https://github.com/KokunoYumeto/erdos-straus-foundation/issues)
+or a linked peer workbench, with their current status visible. The complete
+private transcript and a public account of an idea have different scopes:
+recovering a history does not authorize dumping other people's private messages.
 
 The current implementation uses ordinary GitHub files and the existing Zenodo
 archive. Its descriptor and inventories can be copied and read without a central

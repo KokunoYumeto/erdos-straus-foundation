@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-11",
+  "source_records": [
+    {
+      "author": "A. E. Brouwer",
+      "title": "Uniqueness of the Leech lattice",
+      "url": "https://aeb.win.tue.nl/2WF02/Leech.pdf",
+      "locators": [
+        "Theorem 1.1",
+        "Theorem 1.4, printed p.4",
+        "minimal vector shapes immediately before Theorem 1.4",
+        "Section 3"
+      ],
+      "status": "retrieved and relevant passages inspected",
+      "role": "standard coordinate lattice, uniqueness context, minimum and theta background"
+    },
+    {
+      "authors": [
+        "Henry Cohn",
+        "Abhinav Kumar"
+      ],
+      "title": "Universally optimal distribution of points on spheres",
+      "arxiv": "math/0607446v2",
+      "locators": [
+        "Definition 1.1, p.101",
+        "Table 1, p.102; screenshot inspected",
+        "Section 2 spherical-design criterion"
+      ],
+      "status": "retrieved; table visually inspected",
+      "role": "11-design input for general moment interpretation; displayed ES moment independently enumerated"
+    },
+    {
+      "author": "Ichiro Shimada",
+      "title": "A note on construction of the Leech lattice",
+      "arxiv": "2311.18309v1",
+      "locators": [
+        "Theorem 4.1, p.5",
+        "Theorem 4.5, p.7"
+      ],
+      "status": "retrieved and relevant passages inspected",
+      "role": "covering radius sqrt(2), classical deep-hole classification credited to Conway, Parker, Sloane; not used to assert ES"
+    },
+    {
+      "authors": [
+        "Martin Bright",
+        "Daniel Loughran"
+      ],
+      "title": "Brauer-Manin obstruction for Erdos-Straus surfaces",
+      "arxiv": "1908.02526",
+      "locators": [
+        "Theorems 1.1,1.2,1.9",
+        "Section 1.2",
+        "Appendix A"
+      ],
+      "status": "retrieved and relevant passages inspected",
+      "role": "distinguish positive integral existence, local conditions, and rational surface isomorphism"
+    },
+    {
+      "authors": [
+        "Christian Elsholtz",
+        "Terence Tao"
+      ],
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "arxiv": "1107.1010",
+      "locators": [
+        "Section 2"
+      ],
+      "status": "inherited parametrization source from preceding conversation; not newly audited here",
+      "role": "selector reconstruction lineage only"
+    }
+  ],
+  "preceding_tranche": {
+    "path": "mellin_leech_research/note.tex",
+    "sha256": "c3f60e9b1a0d12c6c474c253964efd7019f9adb0ca0a374931b98d247a954847",
+    "reading": "projective matrices, two-sheet phase table, coordinate Leech model, integer marks"
+  },
+  "content_search_scope": [
+    "Leech octad trios and projections",
+    "Leech lattice 19530 orthogonal-vector query (no exact counterpart established)",
+    "covering radius and deep holes",
+    "spherical designs and exact moments",
+    "ES arithmetic geometry"
+  ],
+  "no_claims": [
+    "exhaustive literature containment",
+    "historical novelty",
+    "proof of ES",
+    "newly verified transitive upstream corpus"
+  ]
+}

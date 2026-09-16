@@ -1,0 +1,99 @@
+{
+  "p": 2016361,
+  "R": 11,
+  "a": 504093,
+  "factorization_a": {
+    "3": 1,
+    "113": 1,
+    "1487": 1
+  },
+  "prime_1487_nonH": 2,
+  "available_signed_exponents": [
+    -1,
+    0,
+    1
+  ],
+  "target_exponent_vectors": [
+    [
+      -1,
+      -1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1
+    ]
+  ],
+  "middle_states": [
+    {
+      "p": 2016361,
+      "R": 11,
+      "a": 504093,
+      "u": 114921,
+      "channel": "M",
+      "h": 1,
+      "r": 339,
+      "s": 1487,
+      "kappa": null,
+      "lambda": 166,
+      "denominators_raw": [
+        504093,
+        497722581962,
+        113468698914
+      ],
+      "denominators_increasing": [
+        504093,
+        113468698914,
+        497722581962
+      ],
+      "positive_chamber": false
+    },
+    {
+      "p": 2016361,
+      "R": 11,
+      "a": 504093,
+      "u": 2211169,
+      "channel": "M",
+      "h": 1,
+      "r": 1487,
+      "s": 339,
+      "kappa": null,
+      "lambda": 166,
+      "denominators_raw": [
+        504093,
+        113468698914,
+        497722581962
+      ],
+      "denominators_increasing": [
+        504093,
+        113468698914,
+        497722581962
+      ],
+      "positive_chamber": false
+    }
+  ],
+  "separate_hybrid_witness": {
+    "p": 2016361,
+    "R": 23,
+    "a": 504096,
+    "u": 18,
+    "channel": "M",
+    "h": 2,
+    "r": 3,
+    "s": 84016,
+    "kappa": null,
+    "lambda": 3653,
+    "denominators_raw": [
+      504096,
+      1237684515679456,
+      44194600398
+    ],
+    "denominators_increasing": [
+      504096,
+      44194600398,
+      1237684515679456
+    ],
+    "positive_chamber": true
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "date": "2026-09-12",
+  "findings": "No visible clipping, overlap, missing glyphs or unresolved references; no overfull hbox in final compilation logs. Cards are summaries; full proofs are in the three-page notes.",
+  "font_policy": "No font files redistributed.",
+  "inspected_contacts": [
+    "qa/final/workbench_contact_0.png",
+    "qa/final/workbench_contact_1.png",
+    "qa/final/workbench_contact_2.png",
+    "qa/final/preprint_contact.png",
+    "qa/final/card_contact.png"
+  ],
+  "method": "All 23 workbench pages, all nine short-paper pages, and all three one-page posting cards rendered and visually inspected using contact sheets; representative cards and paper pages also inspected at full size.",
+  "pdfs": [
+    {
+      "overfull_hbox": false,
+      "pages": 23,
+      "path": "workbench_audit.pdf",
+      "sha256": "c63266e1d07d73287577ac7bf72938907feca0c7cd26ebd898363988ad29a034",
+      "undefined_reference": false
+    },
+    {
+      "overfull_hbox": false,
+      "pages": 3,
+      "path": "preprints/01_symmetry_complete_traces.pdf",
+      "sha256": "e9318aa1d442da58bdf895a46f3c37f9727164336187d7f880d1cff9836f5c29",
+      "undefined_reference": false
+    },
+    {
+      "overfull_hbox": false,
+      "pages": 1,
+      "path": "preprints/01_symmetry_complete_traces_card.pdf",
+      "sha256": "d14abd1b736a64941da5e4cdf4b4c4091de685bda255887ad7b5fabf0155f6dc",
+      "undefined_reference": false
+    },
+    {
+      "overfull_hbox": false,
+      "pages": 3,
+      "path": "preprints/02_octad_aligned_octonions.pdf",
+      "sha256": "8abadabca6202eef40b000b4b128360805ae3d7d5182e68b50dd6bfb1f99477f",
+      "undefined_reference": false
+    },
+    {
+      "overfull_hbox": false,
+      "pages": 1,
+      "path": "preprints/02_octad_aligned_octonions_card.pdf",
+      "sha256": "5a828a363140b6e40eb6b22424a54ad96d61ceb93550ed58b0303583dfa6561c",
+      "undefined_reference": false
+    },
+    {
+      "overfull_hbox": false,
+      "pages": 3,
+      "path": "preprints/03_shortest_trace_lifts.pdf",
+      "sha256": "6e9d53daa2f8c7f445d0aac1743744efedc8ba293ac637b6fa51535f91215513",
+      "undefined_reference": false
+    },
+    {
+      "overfull_hbox": false,
+      "pages": 1,
+      "path": "preprints/03_shortest_trace_lifts_card.pdf",
+      "sha256": "186599f87092d7267ae0da69a806b11f371065e716bdd26edee04c0f16b88627",
+      "undefined_reference": false
+    }
+  ],
+  "posting_images": [
+    {
+      "path": "preprints/png/01_symmetry_complete_traces-1.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "bcb1a841ef2152d6e81f2e1b879f3120d71b198ba5acfe91277649a9c6edc908"
+    },
+    {
+      "path": "preprints/png/01_symmetry_complete_traces-2.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "40977cf42147f09667c8a6ff0a13874ebcb3a2c45c367a7d7a8e4f3cd3f288d7"
+    },
+    {
+      "path": "preprints/png/01_symmetry_complete_traces-3.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "c60864f2081599f17b8cab6faa132fa67dec6f83a5b0eb1c80c809e9375d7a82"
+    },
+    {
+      "path": "preprints/png/01_symmetry_complete_traces_card.png",
+      "pixels": [
+        1350,
+        1800
+      ],
+      "sha256": "0913eafb63f58bf6bf2e6a1453f4bb9b162cb554dc736e2f3b969fcd697ce9e6"
+    },
+    {
+      "path": "preprints/png/02_octad_aligned_octonions-1.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "c96970d18aa0bc2b1e9100f35cdd6479d11e3180dade60ee1dd9d6d132c2c31f"
+    },
+    {
+      "path": "preprints/png/02_octad_aligned_octonions-2.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "cedcbe942fb915b3666b055f6aaca2355274e297fb8a630fba8ec2e83418efe7"
+    },
+    {
+      "path": "preprints/png/02_octad_aligned_octonions-3.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "701d8c75197147e85eb31e47d39511dcaf7d74ea163f992ab0f9e2aa9fc27571"
+    },
+    {
+      "path": "preprints/png/02_octad_aligned_octonions_card.png",
+      "pixels": [
+        1350,
+        1800
+      ],
+      "sha256": "87f825e7ef6fc78cf9f21bb75cfd04ffed4ca8cc500c609232f5391810cfe5ab"
+    },
+    {
+      "path": "preprints/png/03_shortest_trace_lifts-1.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "577b66a7bbfcb0b845262c33b56abbe204529d9468bb7b9c8310e2190257f025"
+    },
+    {
+      "path": "preprints/png/03_shortest_trace_lifts-2.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "91f2f6d58940dac36d394096c5315024e3221f91573edaf0d4a288cf11b5ad27"
+    },
+    {
+      "path": "preprints/png/03_shortest_trace_lifts-3.png",
+      "pixels": [
+        1323,
+        1871
+      ],
+      "sha256": "e6922fdf7d22b8fb38cd86baba6dd8cd585c398e281a272d31d84fee3b3ae4e3"
+    },
+    {
+      "path": "preprints/png/03_shortest_trace_lifts_card.png",
+      "pixels": [
+        1350,
+        1800
+      ],
+      "sha256": "1225b5faa6389b7c5890b0d13fd9be74e231680114369f5040b306151fae12bc"
+    }
+  ],
+  "status": "PASS"
+}

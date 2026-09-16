@@ -1,0 +1,14 @@
+{
+  "name": "tetrahedral",
+  "mode": "optimized",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-O",
+    "/mnt/data/typed_morphism_audit/inputs/tetrahedral_markings/verify.py",
+    "--out",
+    "/mnt/data/typed_morphism_audit/replays/tetrahedral/optimized"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.1478180959999804,
+  "source_sha256": "38523593e82fde52b61026459e0dbfa35008e2f84295fdf8e7101ce357c19ed7"
+}

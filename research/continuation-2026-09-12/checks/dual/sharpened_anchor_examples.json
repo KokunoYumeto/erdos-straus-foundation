@@ -1,0 +1,347 @@
+{
+  "A": 35,
+  "H": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    9,
+    11,
+    16,
+    17
+  ],
+  "R": 19,
+  "costs": {
+    "1": [
+      {
+        "denominator": 1,
+        "numerator": 1
+      },
+      1,
+      1
+    ],
+    "11": [
+      {
+        "denominator": 1,
+        "numerator": 7
+      },
+      1,
+      7
+    ],
+    "16": [
+      {
+        "denominator": 35,
+        "numerator": 1
+      },
+      35,
+      1
+    ],
+    "17": [
+      {
+        "denominator": 5,
+        "numerator": 7
+      },
+      5,
+      7
+    ],
+    "4": [
+      {
+        "denominator": 1,
+        "numerator": 5
+      },
+      1,
+      5
+    ],
+    "5": [
+      {
+        "denominator": 5,
+        "numerator": 1
+      },
+      5,
+      1
+    ],
+    "6": [
+      {
+        "denominator": 1,
+        "numerator": 35
+      },
+      1,
+      35
+    ],
+    "7": [
+      {
+        "denominator": 7,
+        "numerator": 1
+      },
+      7,
+      1
+    ],
+    "9": [
+      {
+        "denominator": 7,
+        "numerator": 5
+      },
+      7,
+      5
+    ]
+  },
+  "examples": [
+    {
+      "anchor": 35,
+      "cofactor": 3991,
+      "d": 35,
+      "g": 1,
+      "inverse_t": {
+        "denominator": 1,
+        "numerator": 307
+      },
+      "least_outside_prime": 13,
+      "max_height": {
+        "denominator": 1,
+        "numerator": 35
+      },
+      "n": 1,
+      "new_uniform_sufficient": true,
+      "old_uniform_sufficient": false,
+      "outside_divisor": 307,
+      "residue_cost": {
+        "denominator": 1,
+        "numerator": 35
+      },
+      "state": {
+        "D": 1,
+        "R": 19,
+        "a": 139685,
+        "channel": "M",
+        "gap": 0,
+        "h": {
+          "denominator": 1,
+          "numerator": 13
+        },
+        "lambda": {
+          "denominator": 1,
+          "numerator": 18
+        },
+        "p": 558721,
+        "r": 35,
+        "rational_ordered_denominators": [
+          {
+            "denominator": 1,
+            "numerator": 139685
+          },
+          {
+            "denominator": 1,
+            "numerator": 40137399198
+          },
+          {
+            "denominator": 1,
+            "numerator": 4575924990
+          }
+        ],
+        "repeated_root_stratum": false,
+        "s": 307,
+        "scaled_ordered_denominators": [
+          139685,
+          40137399198,
+          4575924990
+        ],
+        "scaled_parameter": 558721,
+        "u": 15925
+      }
+    },
+    {
+      "anchor": 35,
+      "cofactor": 4147,
+      "d": 1,
+      "g": 1,
+      "inverse_t": {
+        "denominator": 1,
+        "numerator": 319
+      },
+      "least_outside_prime": 13,
+      "max_height": {
+        "denominator": 1,
+        "numerator": 35
+      },
+      "n": 5,
+      "new_uniform_sufficient": true,
+      "old_uniform_sufficient": false,
+      "outside_divisor": 319,
+      "residue_cost": {
+        "denominator": 5,
+        "numerator": 1
+      },
+      "state": {
+        "D": 1,
+        "R": 19,
+        "a": 145145,
+        "channel": "M",
+        "gap": 0,
+        "h": {
+          "denominator": 1,
+          "numerator": 91
+        },
+        "lambda": {
+          "denominator": 1,
+          "numerator": 84
+        },
+        "p": 580561,
+        "r": 1,
+        "rational_ordered_denominators": [
+          {
+            "denominator": 1,
+            "numerator": 145145
+          },
+          {
+            "denominator": 1,
+            "numerator": 7078304212980
+          },
+          {
+            "denominator": 1,
+            "numerator": 4437808284
+          }
+        ],
+        "repeated_root_stratum": false,
+        "s": 1595,
+        "scaled_ordered_denominators": [
+          145145,
+          7078304212980,
+          4437808284
+        ],
+        "scaled_parameter": 580561,
+        "u": 91
+      }
+    },
+    {
+      "anchor": 35,
+      "cofactor": 4303,
+      "d": 1,
+      "g": 1,
+      "inverse_t": {
+        "denominator": 1,
+        "numerator": 331
+      },
+      "least_outside_prime": 13,
+      "max_height": {
+        "denominator": 1,
+        "numerator": 35
+      },
+      "n": 7,
+      "new_uniform_sufficient": true,
+      "old_uniform_sufficient": false,
+      "outside_divisor": 331,
+      "residue_cost": {
+        "denominator": 7,
+        "numerator": 1
+      },
+      "state": {
+        "D": 1,
+        "R": 19,
+        "a": 150605,
+        "channel": "M",
+        "gap": 0,
+        "h": {
+          "denominator": 1,
+          "numerator": 65
+        },
+        "lambda": {
+          "denominator": 1,
+          "numerator": 122
+        },
+        "p": 602401,
+        "r": 1,
+        "rational_ordered_denominators": [
+          {
+            "denominator": 1,
+            "numerator": 150605
+          },
+          {
+            "denominator": 1,
+            "numerator": 11068401517810
+          },
+          {
+            "denominator": 1,
+            "numerator": 4777039930
+          }
+        ],
+        "repeated_root_stratum": false,
+        "s": 2317,
+        "scaled_ordered_denominators": [
+          150605,
+          11068401517810,
+          4777039930
+        ],
+        "scaled_parameter": 602401,
+        "u": 65
+      }
+    },
+    {
+      "anchor": 35,
+      "cofactor": 4927,
+      "d": 1,
+      "g": 1,
+      "inverse_t": {
+        "denominator": 1,
+        "numerator": 379
+      },
+      "least_outside_prime": 13,
+      "max_height": {
+        "denominator": 1,
+        "numerator": 35
+      },
+      "n": 1,
+      "new_uniform_sufficient": true,
+      "old_uniform_sufficient": false,
+      "outside_divisor": 379,
+      "residue_cost": {
+        "denominator": 1,
+        "numerator": 1
+      },
+      "state": {
+        "D": 1,
+        "R": 19,
+        "a": 172445,
+        "channel": "M",
+        "gap": 0,
+        "h": {
+          "denominator": 1,
+          "numerator": 455
+        },
+        "lambda": {
+          "denominator": 1,
+          "numerator": 20
+        },
+        "p": 689761,
+        "r": 1,
+        "rational_ordered_denominators": [
+          {
+            "denominator": 1,
+            "numerator": 172445
+          },
+          {
+            "denominator": 1,
+            "numerator": 2378916712900
+          },
+          {
+            "denominator": 1,
+            "numerator": 6276825100
+          }
+        ],
+        "repeated_root_stratum": false,
+        "s": 379,
+        "scaled_ordered_denominators": [
+          172445,
+          2378916712900,
+          6276825100
+        ],
+        "scaled_parameter": 689761,
+        "u": 455
+      }
+    }
+  ],
+  "height": {
+    "denominator": 1,
+    "numerator": 35
+  }
+}

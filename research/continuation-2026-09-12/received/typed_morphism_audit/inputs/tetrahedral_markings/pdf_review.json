@@ -1,0 +1,9 @@
+{
+  "pdf": "note.pdf",
+  "sha256": "033a5defcc4895c1caf4f0bed8e415e62a9be0f34c0602fa0a2752928a09d29e",
+  "pages": 7,
+  "renderer": "pdftoppm 100/120 dpi",
+  "visual_review": "All mathematical pages inspected in contact renders; final bibliography page inspected separately after layout adjustment. No clipping or overfull boxes found.",
+  "build": "Two successful pdflatex passes",
+  "math_scope": "Visual review is not mathematical verification."
+}

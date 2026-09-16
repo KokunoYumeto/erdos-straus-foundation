@@ -1,0 +1,20 @@
+[
+  {
+    "p": 241,
+    "tests": [
+      "restricted replay passed",
+      "full-scope promotion rejected",
+      "missing leaf rejected",
+      "wrong denominator rejected"
+    ]
+  },
+  {
+    "p": 37,
+    "tests": [
+      "restricted replay passed",
+      "full-scope promotion rejected",
+      "missing leaf rejected",
+      "wrong denominator rejected"
+    ]
+  }
+]

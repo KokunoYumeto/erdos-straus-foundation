@@ -1,0 +1,448 @@
+{
+  "coordinates": {
+    "infinite_anisotropy_proof": "Primitive-integer parity descent in note.tex, not a bounded search claim.",
+    "integer_triples": 125,
+    "ordered_product_pairs": 15625,
+    "parity_table": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "rational_spin_inverse_examples": 342
+  },
+  "marked_ES_examples": [
+    {
+      "Fourier_t": "1098625/3",
+      "Fourier_z": [
+        "-1081795/3",
+        "-1065883/3"
+      ],
+      "N": 5370151289508,
+      "R": 23,
+      "S": 17885599632,
+      "T": 1098625,
+      "a": 306,
+      "channel": "E",
+      "h": 17,
+      "kappa": 53,
+      "ordered_denominators": [
+        306,
+        16218,
+        1082101
+      ],
+      "p": 1201,
+      "r": 1,
+      "s": 18,
+      "u": 17
+    },
+    {
+      "Fourier_t": "860299/3",
+      "Fourier_z": [
+        "-54824/3",
+        "249579"
+      ],
+      "N": 28456385390444,
+      "R": 31,
+      "S": 45150948656,
+      "T": 860299,
+      "a": 638,
+      "channel": "M",
+      "h": 11,
+      "lam": 1,
+      "ordered_denominators": [
+        638,
+        804199,
+        55462
+      ],
+      "p": 2521,
+      "r": 2,
+      "s": 29,
+      "u": 44
+    }
+  ],
+  "nonclaims": [
+    "No ES existence theorem or new numerical coverage bound.",
+    "No identification of the previously mentioned unidentified Mobius passage.",
+    "No global-holonomy classification or lossless integer-winding claim for the finite A4 image.",
+    "No novelty or whole-Albert-Jordan-identity verification claim."
+  ],
+  "schema": "three-coordinate-jordan-checks/1",
+  "status": "pass",
+  "symbolic": {
+    "commutator_entries_checked": 9,
+    "cubic_left_multiplication_determinant_checked": true,
+    "kind": "formal sparse polynomial identities",
+    "nonzero_entry_polynomial": [
+      {
+        "coefficient": "2",
+        "powers": [
+          0,
+          0,
+          3,
+          1
+        ]
+      },
+      {
+        "coefficient": "-2",
+        "powers": [
+          0,
+          0,
+          3,
+          3
+        ]
+      },
+      {
+        "coefficient": "-6",
+        "powers": [
+          0,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": "6",
+        "powers": [
+          0,
+          2,
+          1,
+          3
+        ]
+      }
+    ],
+    "quadratic_representation_determinant": "(t^2-2*x^2-2*y^2)^3",
+    "variables": [
+      "t",
+      "x",
+      "y",
+      "gamma"
+    ]
+  },
+  "twists": {
+    "generator_automorphism_basis_pairs": 1458,
+    "group_order": 12,
+    "half_angle_rational_samples": 21,
+    "mixed_Peirce_basis_pairs": 64,
+    "tetrahedral_elements": [
+      {
+        "matrix": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "matrix": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          2,
+          3,
+          0,
+          1
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          3,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          2,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          3,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          2,
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          1,
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          0,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          1,
+          2,
+          0,
+          3
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          0,
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          1,
+          0,
+          3,
+          2
+        ]
+      },
+      {
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "permutation_of_four_vertices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "topological_scope": "The continuous half-angle/Mobius proof is in note.tex; sample checks are not a topological proof."
+  },
+  "verifier_sha256": "849e26ed84266ddcee85dbd68d6ea0b5cffe588ee40bdf42009f1c267dc03c9e"
+}

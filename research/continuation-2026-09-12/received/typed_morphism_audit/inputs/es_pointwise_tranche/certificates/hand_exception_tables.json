@@ -1,0 +1,943 @@
+[
+  {
+    "R": 11,
+    "A": 9,
+    "bad_small_primes": [
+      2,
+      19
+    ],
+    "small_prime_tests": [
+      {
+        "q": 2,
+        "positive_packets": []
+      },
+      {
+        "q": 7,
+        "positive_packets": [
+          [
+            3,
+            1,
+            1,
+            21
+          ]
+        ]
+      },
+      {
+        "q": 13,
+        "positive_packets": [
+          [
+            1,
+            9,
+            13,
+            9
+          ]
+        ]
+      },
+      {
+        "q": 17,
+        "positive_packets": [
+          [
+            9,
+            1,
+            1,
+            153
+          ]
+        ]
+      },
+      {
+        "q": 19,
+        "positive_packets": []
+      },
+      {
+        "q": 29,
+        "positive_packets": [
+          [
+            3,
+            1,
+            1,
+            87
+          ]
+        ]
+      },
+      {
+        "q": 41,
+        "positive_packets": [
+          [
+            1,
+            3,
+            3,
+            41
+          ]
+        ]
+      },
+      {
+        "q": 43,
+        "positive_packets": [
+          [
+            1,
+            1,
+            1,
+            43
+          ]
+        ]
+      },
+      {
+        "q": 61,
+        "positive_packets": [
+          [
+            9,
+            1,
+            1,
+            549
+          ]
+        ]
+      }
+    ],
+    "exceptional_a": [
+      {
+        "a": 171,
+        "p": 673,
+        "factorization_p": {
+          "673": 1
+        },
+        "hard_prime": false,
+        "middle_states": [
+          {
+            "p": 673,
+            "R": 11,
+            "a": 171,
+            "u": 27,
+            "channel": "M",
+            "h": 3,
+            "r": 3,
+            "s": 19,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              171,
+              76722,
+              12114
+            ],
+            "denominators_increasing": [
+              171,
+              12114,
+              76722
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 673,
+            "R": 11,
+            "a": 171,
+            "u": 1083,
+            "channel": "M",
+            "h": 3,
+            "r": 19,
+            "s": 3,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              171,
+              12114,
+              76722
+            ],
+            "denominators_increasing": [
+              171,
+              12114,
+              76722
+            ],
+            "positive_chamber": false
+          }
+        ]
+      },
+      {
+        "a": 513,
+        "p": 2041,
+        "factorization_p": {
+          "13": 1,
+          "157": 1
+        },
+        "hard_prime": false,
+        "middle_states": [
+          {
+            "p": 2041,
+            "R": 11,
+            "a": 513,
+            "u": 81,
+            "channel": "M",
+            "h": 9,
+            "r": 3,
+            "s": 19,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              513,
+              698022,
+              110214
+            ],
+            "denominators_increasing": [
+              513,
+              110214,
+              698022
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 2041,
+            "R": 11,
+            "a": 513,
+            "u": 3249,
+            "channel": "M",
+            "h": 9,
+            "r": 19,
+            "s": 3,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              513,
+              110214,
+              698022
+            ],
+            "denominators_increasing": [
+              513,
+              110214,
+              698022
+            ],
+            "positive_chamber": false
+          }
+        ]
+      },
+      {
+        "a": 3249,
+        "p": 12985,
+        "factorization_p": {
+          "5": 1,
+          "7": 2,
+          "53": 1
+        },
+        "hard_prime": false,
+        "middle_states": [
+          {
+            "p": 12985,
+            "R": 11,
+            "a": 3249,
+            "u": 513,
+            "channel": "M",
+            "h": 57,
+            "r": 3,
+            "s": 19,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              3249,
+              28125510,
+              4440870
+            ],
+            "denominators_increasing": [
+              3249,
+              4440870,
+              28125510
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 12985,
+            "R": 11,
+            "a": 3249,
+            "u": 20577,
+            "channel": "M",
+            "h": 57,
+            "r": 19,
+            "s": 3,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              3249,
+              4440870,
+              28125510
+            ],
+            "denominators_increasing": [
+              3249,
+              4440870,
+              28125510
+            ],
+            "positive_chamber": false
+          }
+        ]
+      },
+      {
+        "a": 9747,
+        "p": 38977,
+        "factorization_p": {
+          "38977": 1
+        },
+        "hard_prime": false,
+        "middle_states": [
+          {
+            "p": 38977,
+            "R": 11,
+            "a": 9747,
+            "u": 1539,
+            "channel": "M",
+            "h": 171,
+            "r": 3,
+            "s": 19,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              9747,
+              253272546,
+              39990402
+            ],
+            "denominators_increasing": [
+              9747,
+              39990402,
+              253272546
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 38977,
+            "R": 11,
+            "a": 9747,
+            "u": 61731,
+            "channel": "M",
+            "h": 171,
+            "r": 19,
+            "s": 3,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              9747,
+              39990402,
+              253272546
+            ],
+            "denominators_increasing": [
+              9747,
+              39990402,
+              253272546
+            ],
+            "positive_chamber": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "R": 23,
+    "A": 12,
+    "bad_small_primes": [
+      5
+    ],
+    "small_prime_tests": [
+      {
+        "q": 5,
+        "positive_packets": []
+      },
+      {
+        "q": 7,
+        "positive_packets": [
+          [
+            3,
+            2,
+            2,
+            21
+          ]
+        ]
+      },
+      {
+        "q": 11,
+        "positive_packets": [
+          [
+            2,
+            1,
+            1,
+            22
+          ]
+        ]
+      },
+      {
+        "q": 17,
+        "positive_packets": [
+          [
+            4,
+            1,
+            1,
+            68
+          ]
+        ]
+      },
+      {
+        "q": 19,
+        "positive_packets": [
+          [
+            6,
+            1,
+            1,
+            114
+          ]
+        ]
+      },
+      {
+        "q": 37,
+        "positive_packets": [
+          [
+            3,
+            4,
+            4,
+            111
+          ]
+        ]
+      },
+      {
+        "q": 43,
+        "positive_packets": [
+          [
+            1,
+            3,
+            3,
+            43
+          ]
+        ]
+      },
+      {
+        "q": 53,
+        "positive_packets": [
+          [
+            3,
+            2,
+            2,
+            159
+          ]
+        ]
+      },
+      {
+        "q": 61,
+        "positive_packets": [
+          [
+            3,
+            1,
+            1,
+            183
+          ]
+        ]
+      },
+      {
+        "q": 67,
+        "positive_packets": [
+          [
+            1,
+            2,
+            2,
+            67
+          ],
+          [
+            12,
+            1,
+            1,
+            804
+          ]
+        ]
+      },
+      {
+        "q": 79,
+        "positive_packets": [
+          [
+            2,
+            3,
+            3,
+            158
+          ]
+        ]
+      },
+      {
+        "q": 83,
+        "positive_packets": [
+          [
+            3,
+            4,
+            4,
+            249
+          ]
+        ]
+      },
+      {
+        "q": 89,
+        "positive_packets": [
+          [
+            1,
+            3,
+            3,
+            89
+          ]
+        ]
+      }
+    ],
+    "exceptional_a": [
+      {
+        "a": 60,
+        "p": 217,
+        "factorization_p": {
+          "7": 1,
+          "31": 1
+        },
+        "hard_prime": false,
+        "middle_states": [
+          {
+            "p": 217,
+            "R": 23,
+            "a": 60,
+            "u": 9,
+            "channel": "M",
+            "h": 1,
+            "r": 3,
+            "s": 20,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              60,
+              4340,
+              651
+            ],
+            "denominators_increasing": [
+              60,
+              651,
+              4340
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 217,
+            "R": 23,
+            "a": 60,
+            "u": 400,
+            "channel": "M",
+            "h": 1,
+            "r": 20,
+            "s": 3,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              60,
+              651,
+              4340
+            ],
+            "denominators_increasing": [
+              60,
+              651,
+              4340
+            ],
+            "positive_chamber": false
+          }
+        ]
+      },
+      {
+        "a": 300,
+        "p": 1177,
+        "factorization_p": {
+          "11": 1,
+          "107": 1
+        },
+        "hard_prime": false,
+        "middle_states": [
+          {
+            "p": 1177,
+            "R": 23,
+            "a": 300,
+            "u": 45,
+            "channel": "M",
+            "h": 5,
+            "r": 3,
+            "s": 20,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              300,
+              117700,
+              17655
+            ],
+            "denominators_increasing": [
+              300,
+              17655,
+              117700
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 1177,
+            "R": 23,
+            "a": 300,
+            "u": 2000,
+            "channel": "M",
+            "h": 5,
+            "r": 20,
+            "s": 3,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              300,
+              17655,
+              117700
+            ],
+            "denominators_increasing": [
+              300,
+              17655,
+              117700
+            ],
+            "positive_chamber": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "R": 23,
+    "A": 18,
+    "bad_small_primes": [
+      17
+    ],
+    "small_prime_tests": [
+      {
+        "q": 5,
+        "positive_packets": [
+          [
+            9,
+            1,
+            1,
+            45
+          ]
+        ]
+      },
+      {
+        "q": 7,
+        "positive_packets": [
+          [
+            3,
+            2,
+            2,
+            21
+          ],
+          [
+            2,
+            9,
+            14,
+            9
+          ]
+        ]
+      },
+      {
+        "q": 11,
+        "positive_packets": [
+          [
+            2,
+            1,
+            1,
+            22
+          ]
+        ]
+      },
+      {
+        "q": 17,
+        "positive_packets": []
+      },
+      {
+        "q": 19,
+        "positive_packets": [
+          [
+            6,
+            1,
+            1,
+            114
+          ]
+        ]
+      },
+      {
+        "q": 37,
+        "positive_packets": [
+          [
+            18,
+            1,
+            1,
+            666
+          ]
+        ]
+      },
+      {
+        "q": 43,
+        "positive_packets": [
+          [
+            1,
+            3,
+            3,
+            43
+          ]
+        ]
+      },
+      {
+        "q": 53,
+        "positive_packets": [
+          [
+            3,
+            2,
+            2,
+            159
+          ],
+          [
+            2,
+            9,
+            9,
+            106
+          ]
+        ]
+      },
+      {
+        "q": 61,
+        "positive_packets": [
+          [
+            3,
+            1,
+            1,
+            183
+          ]
+        ]
+      },
+      {
+        "q": 67,
+        "positive_packets": [
+          [
+            1,
+            2,
+            2,
+            67
+          ]
+        ]
+      },
+      {
+        "q": 79,
+        "positive_packets": [
+          [
+            9,
+            2,
+            2,
+            711
+          ],
+          [
+            2,
+            3,
+            3,
+            158
+          ]
+        ]
+      },
+      {
+        "q": 83,
+        "positive_packets": [
+          [
+            1,
+            9,
+            9,
+            83
+          ],
+          [
+            18,
+            1,
+            1,
+            1494
+          ]
+        ]
+      },
+      {
+        "q": 89,
+        "positive_packets": [
+          [
+            1,
+            3,
+            3,
+            89
+          ]
+        ]
+      },
+      {
+        "q": 97,
+        "positive_packets": [
+          [
+            9,
+            1,
+            1,
+            873
+          ]
+        ]
+      },
+      {
+        "q": 103,
+        "positive_packets": [
+          [
+            2,
+            1,
+            1,
+            206
+          ]
+        ]
+      },
+      {
+        "q": 107,
+        "positive_packets": [
+          [
+            3,
+            1,
+            1,
+            321
+          ]
+        ]
+      },
+      {
+        "q": 109,
+        "positive_packets": [
+          [
+            1,
+            6,
+            6,
+            109
+          ]
+        ]
+      },
+      {
+        "q": 113,
+        "positive_packets": [
+          [
+            1,
+            2,
+            2,
+            113
+          ]
+        ]
+      },
+      {
+        "q": 137,
+        "positive_packets": [
+          [
+            1,
+            1,
+            1,
+            137
+          ]
+        ]
+      }
+    ],
+    "exceptional_a": [
+      {
+        "a": 306,
+        "p": 1201,
+        "factorization_p": {
+          "1201": 1
+        },
+        "hard_prime": true,
+        "middle_states": [
+          {
+            "p": 1201,
+            "R": 23,
+            "a": 306,
+            "u": 108,
+            "channel": "M",
+            "h": 3,
+            "r": 6,
+            "s": 17,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              306,
+              61251,
+              21618
+            ],
+            "denominators_increasing": [
+              306,
+              21618,
+              61251
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 1201,
+            "R": 23,
+            "a": 306,
+            "u": 867,
+            "channel": "M",
+            "h": 3,
+            "r": 17,
+            "s": 6,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              306,
+              21618,
+              61251
+            ],
+            "denominators_increasing": [
+              306,
+              21618,
+              61251
+            ],
+            "positive_chamber": false
+          }
+        ]
+      },
+      {
+        "a": 5202,
+        "p": 20785,
+        "factorization_p": {
+          "5": 1,
+          "4157": 1
+        },
+        "hard_prime": false,
+        "middle_states": [
+          {
+            "p": 20785,
+            "R": 23,
+            "a": 5202,
+            "u": 1836,
+            "channel": "M",
+            "h": 51,
+            "r": 6,
+            "s": 17,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              5202,
+              18020595,
+              6360210
+            ],
+            "denominators_increasing": [
+              5202,
+              6360210,
+              18020595
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 20785,
+            "R": 23,
+            "a": 5202,
+            "u": 14739,
+            "channel": "M",
+            "h": 51,
+            "r": 17,
+            "s": 6,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              5202,
+              6360210,
+              18020595
+            ],
+            "denominators_increasing": [
+              5202,
+              6360210,
+              18020595
+            ],
+            "positive_chamber": false
+          }
+        ]
+      }
+    ]
+  }
+]

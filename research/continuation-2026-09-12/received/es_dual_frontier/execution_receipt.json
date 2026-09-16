@@ -1,0 +1,128 @@
+{
+  "checker_sha256": "e356a26ad4b1a7c9be27d181a1a77bf52f4e3e53a5e5bc83c41e70bd912ea8ad",
+  "cli_prime1201_exit": 0,
+  "counterexample_found": false,
+  "date": "2026-09-12",
+  "flags_per_state": 24,
+  "fresh_extraction": {
+    "all_certificate_bytes_identical": true,
+    "elapsed_seconds": 9.562,
+    "exit_code": 0,
+    "summary": {
+      "by_kind": {
+        "anchor": 2857,
+        "energy": 24,
+        "exact": 1028171,
+        "lattice": 643,
+        "operator": 56,
+        "phase": 342,
+        "polynomial": 4,
+        "regression": 10,
+        "routes": 846,
+        "transport": 322
+      },
+      "checks": 1033275,
+      "counterexample_found": false
+    }
+  },
+  "full_candidate_leaves_replayed": 108228,
+  "geometric_test_states": 7,
+  "lineage_sha256": {
+    "aligned_isometry.json": "cb454d2a94f1b57cdd4fa15774c58f2c92f0db62004873eadeb61aa3b4cd1d14",
+    "branch_verify.py": "bcb57400216a0484ca6f64f25005789deb78e84d1d5b56ffb1ae842192be0f1d",
+    "source_hashes.json": "a62c8a91978d5b77337de6995a6fb7c70dd57db342bb8fa1b6e9d8bad11ec618"
+  },
+  "mathematical_certificates_sha256": {
+    "checks.json": "4ffdce403f108a91667a5c4a7a109935d4d8ccc35417d60d62c146a07da0530a",
+    "collision_energy.json": "d2537e11f236f436691107a8323c99239ad130bb1390df2f46dc2649c2ebe10c",
+    "full_atlas_profiles.json": "91889bdef4240a38d2da9f3a7d336ffbc234eece7c6a7f282d98a270b9d3f6ea",
+    "negative_certificate_regressions.json": "1c9dd2b2d4a32b02f42bbfabf21b388588bdebeea7e167ae447ef834ea3c0bbd",
+    "rational_integral_geometric_routes.json": "76581c75da03e9c85b27bed2cec6f6760fbe1ca862518ec68ccb8fc82f5112d3",
+    "restricted_negative_prototypes.json": "90a2f7e099d0420f6472182b36d7f94a203dda4930d4bba3d65c54445bab703f",
+    "restricted_transport_graphs.json": "0bb53092ecb7b49810c28e57bbb0d74505474aa0ec2bd10066a21581923a267a",
+    "same_shell_defect_transport.json": "5d2d3b0d256e50916a90d81d4177c4f8cfd81e827211d6f342dbcea3b29ab3b2",
+    "sharpened_anchor_examples.json": "e1a97645dc90d907e97a5d606a752c103a961886b299c048abba052caadb737e"
+  },
+  "new_checker_assert_nodes": 0,
+  "normal_optimized_mathematical_bytes_identical": true,
+  "normal_optimized_stdout_identical": true,
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "primes": [
+    5,
+    13,
+    37,
+    97,
+    241,
+    1201,
+    2521
+  ],
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "qa": "qa.json",
+  "remote_writes": [],
+  "runs": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "dual_es.py",
+        "--self-test",
+        "--out",
+        "certificates"
+      ],
+      "elapsed_seconds": 9.351,
+      "exit_code": 0,
+      "name": "normal",
+      "summary": {
+        "by_kind": {
+          "anchor": 2857,
+          "energy": 24,
+          "exact": 1028171,
+          "lattice": 643,
+          "operator": 56,
+          "phase": 342,
+          "polynomial": 4,
+          "regression": 10,
+          "routes": 846,
+          "transport": 322
+        },
+        "checks": 1033275,
+        "counterexample_found": false
+      }
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "dual_es.py",
+        "--self-test",
+        "--out",
+        "certificates_optimized"
+      ],
+      "elapsed_seconds": 9.247,
+      "exit_code": 0,
+      "name": "optimized",
+      "summary": {
+        "by_kind": {
+          "anchor": 2857,
+          "energy": 24,
+          "exact": 1028171,
+          "lattice": 643,
+          "operator": 56,
+          "phase": 342,
+          "polynomial": 4,
+          "regression": 10,
+          "routes": 846,
+          "transport": 322
+        },
+        "checks": 1033275,
+        "counterexample_found": false
+      }
+    }
+  ],
+  "tests_not_done": [
+    "No Giuga-script full execution",
+    "No continuous prime-range verification",
+    "No full predecessor replay",
+    "No Lean build",
+    "No independent review"
+  ]
+}

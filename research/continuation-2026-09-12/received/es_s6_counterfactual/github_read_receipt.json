@@ -1,0 +1,17 @@
+{
+  "repository": "KokunoYumeto/yang-mills-interacting-workbench",
+  "main_revision": "8cfbd18f3e398c533e1acabfba98b4a29975000a",
+  "commit_message": "Explain S6 triality vocabulary for new readers",
+  "commit_date": "2026-09-09T19:00:46Z",
+  "connector_reads": [
+    "branches/main",
+    "README.md",
+    "contents/s6",
+    "s6/README.md",
+    "s6/ATTEMPTS.md",
+    "s6/27_s6_key_advances_frozen_2026-09-06.tex"
+  ],
+  "writes": false,
+  "merges": false,
+  "external_archive_downloaded": false
+}

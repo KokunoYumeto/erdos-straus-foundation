@@ -12,7 +12,16 @@ They are a reading aid alongside the [full research map](WORKBENCH.md) and proof
 The route-specific heuristic explanations below are editorial reconstructions
 from those constructions, not quotations of an original thought process.
 
+[Recovered human directions](MOTIVATIONS.md) now provide a separate, directly
+sourced record from the earlier web conversations. They restore historical
+intent without inventing a theorem-by-theorem lineage for these five routes.
+
 ## 1. Full-shell occupancy and factor sieves
+
+The later [12 September attempt account](research/continuation-2026-09-12/README.md#what-the-approaches-achieve)
+records the new joint Boolean, character-energy and geometric work, its
+motivations, complete proofs and exact failed strengthenings. The five
+published-supplement routes below retain their original edition scope.
 
 **Aim:** understand exactly what an ES counterexample would have to evade.
 **Reason for trying:** factor exponents retain more arithmetic information than

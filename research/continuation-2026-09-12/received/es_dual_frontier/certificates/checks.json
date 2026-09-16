@@ -1,0 +1,17 @@
+{
+  "checks_by_kind": {
+    "anchor": 2857,
+    "energy": 24,
+    "exact": 1028171,
+    "lattice": 643,
+    "operator": 56,
+    "phase": 342,
+    "polynomial": 4,
+    "regression": 10,
+    "routes": 846,
+    "transport": 322
+  },
+  "counterexample_found": false,
+  "scope": "full finite atlases at the listed seven primes; two explicitly restricted negative prototypes; general proofs in TeX",
+  "total": 1033275
+}

@@ -1,0 +1,411 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,mathrsfs,amsmath,amssymb,amsthm,mathtools,booktabs,longtable,array,microtype,xurl}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\emergencystretch=2em
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\R}{\mathbb R}\newcommand{\F}{\mathbb F}
+\newcommand{\La}{\Lambda}\newcommand{\tr}{\operatorname{tr}}\newcommand{\Span}{\operatorname{span}}
+\title[Integral Leech trace inverses]{Integral inverse maps from Leech trace data\\
+Shortest lifts, twelve-step gluing, and the exact Erd\H{o}s--Straus obligation}
+\author{Research continuation for the marked Erd\H{o}s--Straus programme}
+\date{11 September 2026}
+\begin{document}
+\begin{abstract}
+The phase sets in the preceding projective Leech construction are three disjoint Golay octads. Their norm-four indicator vectors define a surjective integral three-trace map. We give an explicit linear section and the complete fibres, and determine the shortest lift of every integral triple by a 64-class formula with additive squared-norm cost at most $15/4$. Four independent time slices of the order-twelve isometry have precisely one common-sum constraint: an explicit nine-column integral inverse proves there are no further lifting obstructions. All twelve time readings and the kernel data are retained. At the same time, a tetrahedrally equivariant single-valued integral section cannot exist; its exact obstruction is $4\Z^3$. The affine correction to any section restores full equivariance. These are universal lifting theorems, not a proof that an Erd\H{o}s--Straus cubic fibre contains a positive integer point. We give the precise theta decomposition, shell moment, and arithmetic equation required for that further step. No historical-priority claim or Lean compilation is made.
+\end{abstract}
+\maketitle
+
+\section{Pinned coordinates and the inherited Leech lattice}
+Coordinates are indexed by $\Omega=\F_{23}\cup\{\infty\}$, serialized as $0,\ldots,22,23$. Let $Q$ be the eleven nonzero squares modulo $23$. Define $\mathcal C$ to be the binary span of the characteristic vectors of
+\[
+(a+Q)\cup\{\infty\},\qquad a\in\F_{23}.
+\]
+The checker reconstructs all $4096$ words, their self-duality, and their weight enumerator
+\[
+1+759z^8+2576z^{12}+759z^{16}+z^{24}.
+\]
+Use the same coordinate Leech model as the preceding tranche:
+\begin{equation}\label{eq:leech}
+\La=\left\{\frac{x}{\sqrt8}:\begin{array}{l}
+x\in\Z^{24},\quad x_i\equiv m\pmod2\text{ for one }m\in\{0,1\},\\
+\sum_i x_i\equiv4m\pmod8,\\
+((x_i-m)/2\bmod2)_i\in\mathcal C
+\end{array}\right\}.
+\end{equation}
+This model and its minimal-vector shapes are Brouwer's Theorem 1.4 and the preceding calculation on printed p.~4 \cite{Brouwer}. We use that $\La$ is even, unimodular, and has minimum squared norm four. These general properties can also be proved directly from \eqref{eq:leech}, as in the preceding tranche. The new checker checks membership, not a replacement uniqueness proof.
+
+Retain the projective matrices
+\[
+C=\begin{pmatrix}12&5\\1&12\end{pmatrix},\quad
+J=\begin{pmatrix}1&7\\3&22\end{pmatrix},\quad
+T=\begin{pmatrix}4&11\\16&4\end{pmatrix}\quad(\bmod23).
+\]
+They act on coordinates by fractional-linear transformations and on vectors by the corresponding permutations. The exact identities are
+\[
+T^4=C,\quad T^{12}=-I\text{ in }\mathrm{SL}_2(23),\quad T^{12}=1\text{ on coordinates}.
+\]
+Write $V_4=\{1,J,CJC^{-1},C^2JC^{-2}\}$ projectively, so $\langle J,C\rangle=A_4$. The $-I$ matrix is retained at the homogeneous level; it is not an order-24 coordinate permutation.
+
+The six $V_4$-orbits, grouped by the three phases of the previous two-sheet branch table, give the following sets:
+\begin{align*}
+B_0&=\{0,1,3,4,7,8,16,\infty\},\\
+B_1&=\{10,12,15,18,19,20,21,22\},\\
+B_2&=\{2,5,6,9,11,13,14,17\}.
+\end{align*}
+\begin{lemma}\label{lem:octads}
+The $B_j$ partition $\Omega$ and are codewords of weight eight. The group $V_4$ fixes each $B_j$ and $C$ sends $B_j$ to $B_{j+1}$, with indices modulo three.
+\end{lemma}
+\begin{proof}
+The displayed lists prove the partition. Gaussian elimination over $\F_2$ in the 23 defining generators verifies membership of each characteristic vector. The verifier performs this finite calculation from the defining generators, and checks the stated permutations on all 24 coordinates. This supplies a complete finite certificate for the fixed sets, not a heuristic identification of an eight-set with an octad.
+\end{proof}
+Set
+\begin{equation}\label{eq:frame}
+w_j=\frac{2\mathbf1_{B_j}}{\sqrt8}\in\La,\qquad
+(w_i,w_j)=4\delta_{ij},\qquad
+P(\lambda)=((\lambda,w_0),(\lambda,w_1),(\lambda,w_2)).
+\end{equation}
+For $\lambda=x/\sqrt8$, the exact coordinates are
+\[
+P_j(\lambda)=\frac14\sum_{i\in B_j}x_i\in\Z.
+\]
+The integrality follows from the integral lattice pairing. These are three \emph{linear readouts}, not three coordinates asserted to define a multiplication on $\La$. To compare with the diagonal Jordan algebra, use the explicit map $t\mapsto\operatorname{diag}(t_0,t_1,t_2)$. The prior off-diagonal Albert map is a different, additional map; equality of the two is not assumed.
+
+\section{A complete integral inverse and its optimal height}
+Let $b_0$ be the following vector, divided by $\sqrt8$:
+\begin{center}\small
+\texttt{(-3,1,-1,1,1,-1,-1,1,1,1,1,1,1,-1,1,1,1,1,-1,-1,-1,-1,1,1)}.
+\end{center}
+Set $b_1=Cb_0$, $b_2=C^2b_0$. Direct coordinate checks give
+\begin{equation}\label{eq:dual}
+b_i\in\La,\qquad (b_i,w_j)=\delta_{ij},\qquad (b_i,b_j)=4\delta_{ij}.
+\end{equation}
+Every equality and membership test in \eqref{eq:dual} is reproduced in the certificate.
+
+\begin{theorem}[All integral trace triples lift]\label{thm:inverse}
+The homomorphism $P:\La\to\Z^3$ is onto. Put
+\[
+\sigma(t)=\sum_{i=0}^2t_i b_i,\qquad K=\ker P.
+\]
+Then the map
+\[
+\Z^3\times K\longrightarrow\La,\qquad(t,k)\longmapsto\sigma(t)+k
+\]
+is a bijection with inverse $\lambda\mapsto(P\lambda,\lambda-\sigma(P\lambda))$. It is a bijection of abelian groups, not an orthogonal splitting. The fibre of $t$ is exactly $\sigma(t)+K$. The kernel has rank 21 and determinant 64.
+\end{theorem}
+\begin{proof}
+Equation \eqref{eq:dual} proves $P\sigma=1$ and both inverse formulas. The rank follows. Let $L=\bigoplus\Z w_i$, of Gram matrix $4I$. It is primitive: if $\sum a_iw_i\in\La$ with rational $a_i$, pairing with $b_j$ gives $a_j\in\Z$. The quotient $\La/(L\oplus K)$ is $\Z^3/4\Z^3$ under $P$, hence has order 64. Because $\det\La=1$,
+\[
+\det L\det K=[\La:L\oplus K]^2=64^2.
+\]
+Since $\det L=64$, also $\det K=64$.
+\end{proof}
+For the orthogonal decomposition define
+\[
+q(t)=\frac14\sum_i t_iw_i,\qquad r(t)=\sigma(t)-q(t)\in K^*.
+\]
+The whole fibre has the form
+\begin{equation}\label{eq:orthofibre}
+P^{-1}(t)=q(t)+(r(t)+K),\qquad
+\|\lambda\|^2=\frac{\|t\|^2}{4}+\|r(t)+k\|^2.
+\end{equation}
+The classes $r(t)+K$ depend exactly on $t\bmod4$ and identify
+\[
+K^*/K\cong(\Z/4\Z)^3.
+\]
+Indeed $4b_i-w_i\in K$, whereas $q(t)\in\La$ forces $4\mid t_i$ by primitivity of $L$. There are 64 classes, equal to the determinant of $K$, so none are missing. The pairing matrix of the $r(e_i)$ is $\frac{15}{4}I$, congruent to $-\frac14I$ as an even discriminant form.
+
+For a residue vector $r\in\{0,1,2,3\}^3$, define $a_i(r)=r_i$ for $r_i\le2$ and $a_i(r)=-1$ for $r_i=3$; put $d(r)=\sum_i a_i(r)^2$.
+\begin{theorem}[Exact shortest lift]\label{thm:shortest}
+For every $t\in\Z^3$,
+\begin{equation}\label{eq:height}
+\min_{P\lambda=t}\|\lambda\|^2=\frac{\|t\|^2}{4}+\mu(t\bmod4),
+\end{equation}
+where
+\[
+\mu(r)=\begin{cases}
+0&r=(0,0,0),\\
+3&r=(2,2,2),\\
+4-d(r)/4&\text{otherwise}.
+\end{cases}
+\]
+In particular $0\le\mu(r)\le15/4$. All shortest fibres are nonempty. A fully explicit shortest lift is
+\[
+\lambda_*(t)=\nu_r+\sum_i\frac{t_i-a_i(r)}4w_i,
+\]
+where the 64 vectors $\nu_r$ are provided in \texttt{shortest\_lifts.json} with $P\nu_r=a(r)$.
+\end{theorem}
+\begin{proof}
+For $r=0$ take $\nu_r=0$. For each of the other 62 residues different from $(2,2,2)$, the certificate supplies a vector of squared norm four with the exact reduced trace. These vectors are constructed by exhaustively enumerating the three minimal-vector shapes from \eqref{eq:leech}. The universal lower bound is the absence of nonzero lattice vectors of squared norm below four, applied at the reduced trace; it is not inferred solely from search.
+
+For reduced trace $(2,2,2)$, write $\lambda=x/\sqrt8$. Its total numerator sum is 24, so \eqref{eq:leech} forces $x$ even. Put $x=2y$. Each block sum of $y$ is four. Thus
+\[
+\|\lambda\|^2=\frac12\sum_i y_i^2\ge\frac12\sum_i|y_i|\ge6.
+\]
+Equality requires each $y_i$ to be zero or one, with four ones in each block. Exactly 1232 code dodecads have that block distribution; any one provides the required norm-six vector. One certificate has support
+\[
+\{0,3,4,5,6,8,9,10,12,13,15,18\}
+\]
+for $x_i=2$. This proves the lower bound and attainment at $(2,2,2)$.
+
+Finally translation by $w_i$ adds four to the $i$th trace and leaves the orthogonal kernel component unchanged. Subtracting $(t_i-a_i)/4$ copies therefore gives a bijection of the relevant fibres preserving the kernel norm. Formula \eqref{eq:orthofibre} transports the proven minimum from the reduced trace to every $t$. The stated affine formula is integral and attains it.
+\end{proof}
+The certificate contains all residues, their representative coordinates, and multiplicities. The summary by absolute reduced trace, allowing permutations, is
+\[
+\begin{array}{c|r|r|r}
+\text{type}&\text{residue classes}&\mu&\text{shortest-lift multiplicity}\\\hline
+000&1&0&1\\
+100&6&15/4&10528\\
+110&12&7/2&5440\\
+111&8&13/4&2688\\
+200&3&3&1288\\
+210&12&11/4&560\\
+211&12&5/2&224\\
+220&3&2&28\\
+221&6&7/4&8\\
+222&1&3&1232
+\end{array}
+\]
+This is an optimal inverse for every integral trace triple, not only for the finite range used in optional inverse tests. Finite data establish the 64 representatives; the all-input proof is translation and the norm bound above.
+
+\section{Why an invariant choice loses information, and its exact repair}
+The section $\sigma$ is equivariant under the three-cycle $C$. It cannot be replaced by a section equivariant under the entire fixed tetrahedral action without retaining kernel information.
+\begin{theorem}[Exact invariant-lift obstruction]\label{thm:invariants}
+For the subgroup $V_4$ above,
+\[
+P(\La^{V_4})=4\Z^3.
+\]
+Consequently no $V_4$-equivariant set-theoretic section $\Z^3\to\La$ exists, where $V_4$ acts trivially on the traces. In particular no fully $A_4$-equivariant single-valued integral section exists. This does not obstruct the full equivariant fibre correspondence.
+\end{theorem}
+\begin{proof}
+A fixed numerator vector is constant on each of the six four-element $V_4$-orbits. If its common parity were odd, its numerator sum would be four times a sum of six odd integers, hence divisible by eight; \eqref{eq:leech} instead requires four modulo eight. Thus it is even.
+
+Write its six constants as $2a_j,2a'_j$, $j=0,1,2$. The fixed binary codewords are exactly the unions of the three phase octads: the complete 64 possibilities of unions of the six tetrads are checked, and the eight passing patterns are $(a,a)$ with $a\in\F_2^3$. Therefore $a_j\equiv a'_j\pmod2$, and
+\[
+P_j=2(a_j+a'_j)\in4\Z.
+\]
+Conversely every $\sum n_jw_j$ is fixed and has trace $4n$. A section over $e_0$ would have to be fixed but have trace $e_0$, a contradiction.
+\end{proof}
+For $g\in A_4$, let $\rho_g$ be its permutation action on the three phases and define
+\[
+\kappa_g(t)=g\sigma(t)-\sigma(\rho_gt)\in K.
+\]
+In the full coordinates of Theorem~\ref{thm:inverse}, the action is
+\begin{equation}\label{eq:cocycle}
+(t,k)\longmapsto(\rho_gt,\,gk+\kappa_g(t)).
+\end{equation}
+Both inverse and composition are exact; direct subtraction gives
+\[
+\kappa_{gh}(t)=g\kappa_h(t)+\kappa_g(\rho_ht).
+\]
+The certificate supplies these linear maps on all three basis traces for all twelve $g$. The complete set of shortest lifts also transforms equivariantly; choosing one representative by an arbitrary tie-break does not make that representative invariant. The fourfold branch datum survives in the kernel correction even when its trace is unchanged.
+
+\section{All twelve time readings: simultaneous integral gluing}
+The order-twelve isometry $T$ is distinct from the order-twelve group $A_4$. We retain both. Put
+\[
+P_n(\lambda)=P(T^n\lambda),\qquad
+\rho(t_0,t_1,t_2)=(t_2,t_0,t_1).
+\]
+Because $T^4=C$,
+\begin{equation}\label{eq:Tphase}
+P_{n+4}=\rho P_n.
+\end{equation}
+Moreover $\sum_iw_i=2\mathbf1/\sqrt8$ is fixed by every coordinate permutation. Thus the four independent triples $P_0,P_1,P_2,P_3$ have one common sum.
+
+\begin{theorem}[No additional four-view integral obstruction]\label{thm:nine}
+The map
+\[
+\mathscr P:\La\longrightarrow\mathcal A:=
+\{(t^{(0)},t^{(1)},t^{(2)},t^{(3)})\in(\Z^3)^4:
+\sum_i t_i^{(0)}=\cdots=\sum_i t_i^{(3)}\}
+\]
+given by the four time triples is surjective. Identifying $\mathcal A$ with $\Z^9$ by retaining all three entries of $t^{(0)}$ and the first two of each later triple, it has the explicit nine-column right inverse in Appendix~\ref{app:lifts}. Its whole fibre is that right inverse plus a rank-fifteen kernel $K_9$, of determinant 5292.
+\end{theorem}
+\begin{proof}
+The common-sum condition was proved above. For $a\in\Z^9$ its inverse unpacking sets $s=a_0+a_1+a_2$ and uses
+\[
+(a_0,a_1,a_2),\ (a_3,a_4,s-a_3-a_4),\
+(a_5,a_6,s-a_5-a_6),\ (a_7,a_8,s-a_7-a_8).
+\]
+For the nine vectors $u_i$ in Appendix~\ref{app:lifts}, direct lattice-membership tests give $u_i\in\La$, $\|u_i\|^2=4$, and their nine readouts are the columns of $I_9$. Thus $\sigma_9(a)=\sum a_i u_i$ is an integral right inverse for \emph{every} input. The inverse coordinates are $(\mathscr P\lambda,\lambda-\sigma_9(\mathscr P\lambda))$. No existence predicate is imposed on the input beyond the explicit common-sum equations.
+
+The nine integral pairing vectors defining the coordinates of $\mathscr P$ are
+\[w_0,w_1,w_2,T^{-1}w_0,T^{-1}w_1,\ldots,T^{-3}w_1.\]
+Their Gram determinant is 5292, computed by exact elimination on the displayed coordinate sets. The right inverse proves their span primitive, as in Theorem~\ref{thm:inverse}. Unimodularity and the same index argument identify the orthogonal-complement determinant with 5292.
+\end{proof}
+The right-inverse Gram matrix is explicitly recorded; its maximum absolute row sum is 15. Therefore
+\[
+\|\sigma_9(a)\|^2\le15\sum_{i=0}^8a_i^2.
+\]
+The induced $T$ action on four triples is
+\[
+(t^{(0)},t^{(1)},t^{(2)},t^{(3)})
+\longmapsto(t^{(1)},t^{(2)},t^{(3)},\rho t^{(0)}).
+\]
+Call its integral matrix $G$. The kernel $K_9$ is $T$-stable by \eqref{eq:Tphase}. With
+\[
+\delta(a)=T\sigma_9(a)-\sigma_9(Ga)\in K_9,
+\]
+the full action is $(a,k)\mapsto(Ga,Tk+\delta(a))$. It has exact twelve-step return, including the kernel. The certificate gives $\delta$ on all nine basis inputs.
+
+The four time triples in this section are not reidentified with the four $V_4$ branch marks from the preceding section. For the original $A_4$ action, $V_4$ fixes $P$; its nontrivial effect is in the retained kernel. Arbitrary additional group elements are handled by transporting the frame with the vector, not by asserting that $K_9$ is stable under the entire group generated by $J,T$.
+
+\section{What rigidity transfers to Erd\H{o}s--Straus}
+Define the exact defect
+\begin{equation}\label{eq:defect}
+F_p(x,y,z)=4xyz-p(xy+xz+yz).
+\end{equation}
+For positive integer coordinates, $F_p=0$ is exactly ES. The three-trace theorem gives the unconditional equivalence
+\[
+\exists t\in\Z_{>0}^3:F_p(t)=0
+\quad\Longleftrightarrow\quad
+\exists\lambda\in\La:P\lambda\in\Z_{>0}^3,\ F_p(P\lambda)=0.
+\]
+The inverse has bounded excess squared norm \eqref{eq:height}; thus no additional lattice lifting obstruction is hidden in this equivalence. The equation $F_p=0$ remains to be produced, not assumed.
+
+\begin{proposition}[Scale and the special residue]
+Every positive ES witness has
+\[
+\min_{P\lambda=(x,y,z)}\|\lambda\|^2\ge\frac{27p^2}{64}.
+\]
+For odd $p$, no such witness has $(x,y,z)\equiv(2,2,2)\pmod4$.
+\end{proposition}
+\begin{proof}
+Cauchy's inequality gives $(x+y+z)(1/x+1/y+1/z)\ge9$, so $x+y+z\ge9p/4$. Then $x^2+y^2+z^2\ge(x+y+z)^2/3\ge27p^2/16$, and \eqref{eq:orthofibre} proves the bound. In the excluded residue, each pairwise product is four modulo eight and $4xyz$ is zero modulo eight. Hence $F_p\equiv4\pmod8$ for odd $p$.
+\end{proof}
+The exceptional reduced lattice fibre of Theorem~\ref{thm:shortest} therefore does not occur for odd-prime solutions. This is a necessary arithmetic consequence, not a proof that one of the remaining residues contains a solution.
+
+The scalar theta function forgets the trace. The correct retained object is the Jacobi series
+\[
+\Theta_\La(\tau,z)=\sum_{\lambda\in\La}q^{\|\lambda\|^2/2}
+ e^{2\pi iP(\lambda)\cdot z},\qquad q=e^{2\pi i\tau}.
+\]
+The orthogonal fibre decomposition gives the exact Fourier coefficient
+\begin{equation}\label{eq:theta}
+[e^{2\pi it\cdot z}]\Theta_\La
+=q^{\|t\|^2/8}\Theta_{K+r(t)}(\tau).
+\end{equation}
+There are exactly 64 kernel coset series, with their explicit discriminant labels retained. The smallest exponent is $\|t\|^2/8+\mu(t\bmod4)/2$. For real $0<q<1$, each coefficient is strictly positive by the explicit lift. This proves positivity of all \emph{linear trace fibres}, not the intersection with \eqref{eq:defect}.
+
+For example the fully explicit ES series is
+\[
+\mathcal Z_p(q)=\sum_{\substack{t\in\Z_{>0}^3\\F_p(t)=0}}
+ q^{\|t\|^2/8}\Theta_{K+r(t)}(q).
+\]
+It is positive exactly when a positive ES solution exists. Formula \eqref{eq:theta} shows why a proof about the scalar theta series alone cannot replace the arithmetic coefficient selection. No claim is made that $\mathcal Z_p$ inherits a standard modular transformation from an unselected theta function.
+
+The original selector marks remain independent fields. For an exterior state
+\[
+a=hrs=(p+R)/4,\quad u=hr^2,\quad\kappa=(pr+s)/R,
+\]
+retain $(x,y,z)=(a,hs\kappa,phr\kappa)$. For a middle state retain $\lambda=(r+s)/R$ and $(a,phs\lambda,phr\lambda)$. From the ordered denominators,
+\[
+u=\frac{a^2}{Ry-pa}\ (E),\qquad
+u=\frac{pa^2}{Ry-pa}\ (M).
+\]
+Here $u$ is the recovered divisor, not a lattice vector. Setting $d=\gcd(a,u)$ gives $r=u/d$, $s=a/d$, $h=d/r$; these inverse formulas preserve orientation and all exponent multiplicities. Their inherited parametrization lineage is Elsholtz--Tao, Section 2 \cite{ET}, and Yamamoto as crosswalked in Bright--Loughran, Appendix A \cite{BL}. The new lattice maps preserve the input marks; they do not assert a new selector channel.
+
+The certificate lifts the four retained states with $(p,R,\mathrm{tag},h,r,s)$ equal to
+\[
+(5,3,E,2,1,1),\ (1201,23,E,17,1,18),\
+(1201,39,M,2,1,155),\ (2521,31,M,11,2,29).
+\]
+They are existing witnesses used to verify return maps, not new primewise existence evidence. The chamber tests, when required, are imposed on the recovered original $r/s$, not on a differently rotated or averaged trace. The first example is not asserted to belong to that chamber.
+
+\section{Which Leech properties can force more?}
+\subsection{Minimum norm and glue}
+Evenness, rootlessness and integral glue have already been used to prove an exact shortest inverse and its sole exceptional reduced class. They are particularly useful for converting a sufficiently small \emph{integral} residual into zero: if a construction gives $|F_p(P\lambda)|<1$, then it gives an ES witness provided $P\lambda>0$. No such uniform residual estimate is asserted here.
+
+\subsection{Covering radius and its actual quantitative content}
+The Leech covering radius is $\sqrt2$ (Conway--Parker--Sloane, stated in Shimada, Theorem 4.1 \cite{Shimada}). For a target $t\in\R^3$, apply it to $q(t)$ from \eqref{eq:orthofibre}. Since the operator norm of $P$ is two, it gives a lattice point with
+\[
+\|P\lambda-t\|\le2\sqrt2.
+\]
+For integral $t$, Theorem~\ref{thm:inverse} is stronger: the trace error can be zero. For a real ES point, the covering bound only controls metric error. At $a=3p/4$,
+\[
+F_p(a+e_0,a+e_1,a+e_2)
+=\frac{3p^2}{4}\sum e_i+2p\sum_{i<j}e_ie_j+4e_0e_1e_2.
+\]
+A bounded trace error is therefore not a proved subunit arithmetic error. The covering theorem is a tool for a subsequent targeted construction, not a no-exception theorem for arbitrary cubic intersections.
+
+\subsection{Design identities and arithmetic tests}
+The $196560$ minimal vectors form a spherical 11-design after normalization; see Cohn--Kumar, Definition 1.1 and Table 1, printed pp.~101--102 \cite{CK}. In particular its degree-six moments apply to $F_p\circ P$. They give the exact polynomial identity
+\begin{equation}\label{eq:moment}
+\sum_{\|v\|^2=4}F_p(Pv)^2=241920p^2+737280.
+\end{equation}
+Indeed the mixed odd terms vanish, while the averages of $(P_0P_1P_2)^2$ and $(P_0P_1+P_0P_2+P_1P_2)^2$ are $64/273$ and $16/13$. These follow from the uniform-sphere moments with radius two and three orthogonal functionals of squared norm four. Multiplying by $196560$ gives \eqref{eq:moment}. The verifier independently sums every vector and checks all three polynomial coefficients.
+
+This supplies exact identities for an auxiliary-function programme. It does not by itself imply a zero: the displayed second moment grows quadratically with $p$. The positive traces occurring in this particular minimal shell are exactly the permutations of $(1,1,1),(1,1,2),(1,2,2)$, giving values $4/3,8/5,2$ for the parameter $p$, respectively. Thus the fixed shell is not the required large-prime arithmetic domain.
+
+\subsection{Twelve-step rigidity does not force every orbit to hit}
+Theorem~\ref{thm:nine} permits the four triples all to equal $(p,p,p)$. It supplies an actual integral lattice vector whose trace at all twelve steps is $(p,p,p)$, and
+\[
+F_p(p,p,p)=p^3\ne0.
+\]
+At $p=1201$ this vector and its full finite return are certified. This refutes only the assertion that \emph{every} such twelve-step orbit must contain an ES point. It is not a counterexample to ES and does not rule out an arithmetically selected orbit family.
+
+An exact elementary move is already available. Translation by $n b_0$ changes only the first trace, and
+\[
+F_p(t+ne_0)=F_p(t)+n\big(4t_1t_2-p(t_1+t_2)\big).
+\]
+Thus the exact single-coordinate correction is possible precisely when the displayed coefficient divides $-F_p(t)$ and the corrected coordinate is positive. This is an explicit move and its obstruction, not a claimed terminating descent. Composing it with the full $T$ action requires the retained kernel corrections; dropping them changes the next trace.
+
+\subsection{The next proof target}
+The most direct forcing object is a \emph{marked}, nonnegative, summable weight $W_p$ supported on positive trace states, together with an independently proved positive value of
+\[
+\sum_{\lambda\in\La}W_p(\lambda)\bigl(1-F_p(P\lambda)^2\bigr).
+\]
+Such positivity would force an actual integral zero, since each nonzero integral defect has square at least one. Constructing and evaluating a suitable weight, or proving a terminating arithmetic descent on the full marked fibres, is the further theorem required. This is a stated research objective, not an assumption used to claim ES.
+
+There is relevant arithmetic guidance: Bright--Loughran's Theorem 1.1 proves that the ES existence problem has no Brauer--Manin obstruction, but their Theorems 1.2 and 1.9 show that strong-approximation behaviour is more restrictive. Their Section 1.2 emphasizes that all these rational surfaces are isomorphic after scaling while their integral models differ \cite{BL}. This is why preserving $p$, integrality, signs and local factors in any lattice forcing construction is mathematically consequential.
+
+\appendix
+\section{Explicit simultaneous right inverse}\label{app:lifts}
+Each of the following rows is a numerator divided by $\sqrt8$, in order $0,\ldots,22,\infty$. Its nine readouts are the corresponding standard basis vector. This nine-by-nine identity is the finite certificate used in Theorem~\ref{thm:nine}.
+\begin{center}\scriptsize
+\begin{tabular}{c|l}
+0&\texttt{-1,-1,-1,1,3,-1,1,1,-1,-1,1,1,-1,-1,1,1,1,1,-1,-1,1,-1,1,1}\\
+1&\texttt{-3,-1,-1,1,1,1,1,1,-1,-1,1,1,-1,-1,-1,1,1,1,1,1,1,1,-1,1}\\
+2&\texttt{-1,-1,-1,-1,1,-1,1,1,-1,1,1,3,-1,1,-1,1,1,1,-1,1,1,-1,-1,1}\\
+3&\texttt{-2,-2,-2,0,2,0,0,0,2,0,-2,0,0,0,2,0,0,0,0,0,0,2,0,0}\\
+4&\texttt{-2,0,-2,0,0,2,-2,0,0,0,0,2,0,0,0,0,2,0,2,0,0,0,-2,0}\\
+5&\texttt{-2,-2,0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,-2,2,-2,0,0}\\
+6&\texttt{-2,-2,0,2,0,0,0,0,2,-2,0,2,0,0,2,0,0,-2,0,0,0,0,0,0}\\
+7&\texttt{-2,-2,0,0,0,0,0,0,2,-2,-2,0,0,2,0,0,0,0,2,0,0,0,0,2}\\
+8&\texttt{-2,0,0,0,0,0,0,2,0,0,-2,0,0,-2,2,0,0,0,2,0,2,-2,0,0}
+\end{tabular}
+\end{center}
+The functional Gram matrix is
+\[
+\left(\begin{smallmatrix}
+4&0&0&1&2&1&1&2&1\\0&4&0&1&1&2&1&1&2\\0&0&4&2&1&1&2&1&1\\
+1&1&2&4&0&1&2&1&1\\2&1&1&0&4&1&1&2&1\\1&2&1&1&1&4&0&1&2\\
+1&1&2&2&1&0&4&2&1\\2&1&1&1&2&1&2&4&0\\1&2&1&1&1&2&1&0&4
+\end{smallmatrix}\right),\qquad\det=5292.
+\]
+
+\section{Reproduction and scope}
+Run Python 3.9 or later with no third-party packages or network:
+\begin{verbatim}
+python verify.py --out replay
+python -O verify.py --out replay_optimized
+\end{verbatim}
+Compare all JSON bytes. The script has explicit runtime guards, not removable assertions. It reconstructs the code, verifies every claimed representative and map, exhausts all $196560$ minimal vectors, and retains exact rational arithmetic. The mathematical certificates do not embed their own changing runtime or paths. Execution metadata and hashes are in a separate receipt.
+
+A complete-source search was not claimed. The literature search specifically covered Leech octad trios, projections, covering radius, design identities, and ES arithmetic geometry. The coordinate inverse formulas and certificates are a continuation in this programme; whether any are new in the literature is unassessed. No scripts from the prior package are imported by this verifier. Universal primewise ES existence remains unproved, and the Lean-ready plan is not a compiled Lean proof.
+
+\begin{thebibliography}{9}
+\bibitem{Brouwer} Brouwer, A. E. (n.d.). \emph{Uniqueness of the Leech lattice}. Theorems 1.1 and 1.4, minimal shapes on p.~4, theta series in Section 3. \url{https://aeb.win.tue.nl/2WF02/Leech.pdf}.
+\bibitem{CK} Cohn, H., \& Kumar, A. (2007). Universally optimal distribution of points on spheres. \emph{Journal of the American Mathematical Society, 20}(1), 99--148. Definition 1.1 and Table 1, pp.~101--102; design discussion and harmonic criterion in Section 2. \url{https://arxiv.org/abs/math/0607446}.
+\bibitem{Shimada} Shimada, I. (2024). A note on construction of the Leech lattice. \emph{Discrete Mathematics, 347}(3), 113832. Inspected arXiv version 1, Theorems 4.1 and 4.5, pp.~5--7: Conway--Parker--Sloane covering and deep-hole results are credited there. \url{https://arxiv.org/abs/2311.18309}.
+\bibitem{BL} Bright, M., \& Loughran, D. (2020). Brauer--Manin obstruction for Erd\H{o}s--Straus surfaces. \emph{Bulletin of the London Mathematical Society, 52}(4), 746--761. Theorems 1.1, 1.2, 1.9, Section 1.2, and Appendix A. \url{https://arxiv.org/abs/1908.02526}.
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions. \emph{Journal of the Australian Mathematical Society, 94}(1), 50--105. Section 2, inherited parametrizations. \url{https://arxiv.org/abs/1107.1010}.
+\end{thebibliography}
+\end{document}

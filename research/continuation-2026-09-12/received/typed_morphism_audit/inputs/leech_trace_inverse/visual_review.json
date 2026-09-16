@@ -1,0 +1,6 @@
+{
+  "pages": 9,
+  "renderer": "pdftoppm at 80 dpi",
+  "inspection": "all nine rendered pages reviewed in contact sheet; no clipped displayed mathematics; TeX second pass reports no overfull/underfull boxes",
+  "note_pdf_sha256": "55fb3f2a7823467ce5520dcc475ddbe0ba81cb80eba7f54c8dc1f77144e41af4"
+}

@@ -1,0 +1,32 @@
+{
+  "certificate_sha256": {
+    "cayley_atlas.json": "7add87091997c48098d246444b1d71d72439fa12fb5f9dbeba49e072081b2f98",
+    "orthogonal_algebra.json": "08a6cf1ac05acbc276dbea78520f5ef1629bb9699efa5c58edebead4a10a6547",
+    "tetrahedral_pencils.json": "fdc6ae4180337213e14f3816f5ad6f6d103b2c7e7b45cd94be54bf7423783d08"
+  },
+  "check_counts_by_scope": {
+    "algebra": 28,
+    "atlas": 381,
+    "formal": 13,
+    "group": 199,
+    "isotopes": 448,
+    "pencil": 67
+  },
+  "nonclaims": [
+    "No universal ES construction",
+    "No fourth preimage of the fixed Fable map",
+    "No RH zero-location theorem",
+    "No independence or novelty claim",
+    "No Lean build"
+  ],
+  "result": "PASS",
+  "runtime": "Python standard library only",
+  "scope": {
+    "algebra": "Complete three-dimensional quotient algebra CRT and trace checks",
+    "atlas": "36 marked face/root states over three listed ES witnesses",
+    "formal": "Laurent-polynomial coefficient identities",
+    "group": "All 144 products in the 12-element rotation group",
+    "pencil": "All 12 oriented and 24 orientation-unrestricted pencil lifts"
+  },
+  "total_exact_conditions": 1136
+}

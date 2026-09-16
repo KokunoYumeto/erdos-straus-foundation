@@ -1,0 +1,217 @@
+\section{What the inspected $S^6$ construction actually contains}
+The live workbench revision read for this tranche is
+{\small\texttt{8cfbd18f3e398c533e1acabfba98b4a29975000a}}. Its S6 guide distinguishes
+the original construction from later scoped reconstructions
+\cite{s6repo}. We read the five-page key-advances TeX and the local-source
+passages identified below, not the entire externally hosted 1,079-file,
+174-MB frozen project. The source manuscript was read through its public
+PDF; attempts to download it into this runtime failed DNS resolution.
+No full-file hash or independent global verification is invented.
+
+The manuscript circulated by Levent Alp\"oge describes a complex
+threefold $X\to\mathbb P^1$, with complex two-torus fibres off
+$0,1,\infty$. Engel's separate exposition attributes the manuscript to
+Claude, communicated by Alp\"oge, and offers geometric explanation rather
+than a certification asserted by this tranche \cite{source,engel}.
+The following are the precise source objects, not conclusions about an
+ES counterexample.
+
+\subsection{Periods and actual duality}
+The source integral matrices on $V=\mathbb L^*$ are
+\[
+ T_1=\begin{pmatrix}1&0&-6&2\\0&-1&1&1\\0&-1&0&1\\0&0&0&1\end{pmatrix},\quad
+ T_2=\begin{pmatrix}1&6&0&-3\\0&0&-1&1\\0&1&0&0\\0&0&0&1\end{pmatrix}.
+\]
+The inverse-transpose relation $A_j=(T_j^{-1})^t$ proves
+$\langle T_jv,A_j\ell\rangle=\langle v,\ell\rangle$ exactly.
+The ordered period map is
+\[
+ \Pi=\begin{pmatrix}6\mu&\tau&1&0\\\beta&\mu&0&1\end{pmatrix}:\R^4\to\C^2,
+ \quad \Im\tau>0,\quad
+ \Im\beta-\frac{6(\Im\mu)^2}{\Im\tau}<0.
+\]
+These conditions make it real-linearly invertible. On the covering upper
+half-plane its equivariance is
+$\Pi(gz)=R_g(z)\Pi(z)\rho_V(g)^t$, with $R_g(z)\in\mathrm{GL}_2(\C)$.
+The period functions obey, among others,
+\[
+ \tau g_1=(\tau-1)/\tau,\quad \tau g_2=-1/\tau,
+ \qquad \mu g_1=(1-\mu)/\tau,\quad\mu g_2=1+\mu/\tau,
+\]
+\[
+ \beta g_1=\beta+2-6(1-\mu)^2/\tau,\qquad
+ \beta g_2=\beta-3-6\mu^2/\tau.
+\]
+At the two finite centres $\tau=e^{\pi i/3}$ and $i$; at the cusp the
+specified $\mu$ and $\beta+\tau$ are bounded.
+The common invariant covector is the $\gamma$ used in the affine slice.
+
+On a fixed regular fibre the map
+\begin{equation}\label{eq:torsion}
+ (\mathbb L/D\mathbb L)\longrightarrow
+ (\C^2/\Pi\mathbb L)[D],\qquad
+ [v]\longmapsto[\Pi v/D]
+\end{equation}
+is a bijection. If $D\zeta=\Pi v$ in the torus, invertibility of $\Pi$
+recovers $v$ modulo $D$; this proves both directions. Equivariance of the
+periods makes \eqref{eq:torsion} commute with $A_j$.
+Its restriction to $\gamma(v)=1$ is exactly the cover in this tranche.
+Every such point has exact torsion order $D$.
+This is a literal comparison to the regular period local system.
+
+\subsection{Opposite-side gluing and the finite fillings}
+The cusp fibre has normalization $dP_6$, the blow-up of $\mathbb P^2$ at
+three noncollinear points. Its six boundary curves form a hexagon. Three
+pairs of opposite curves are identified. The resulting fibre $W$ has
+three double curves and two triple points, with local total-space models
+$t_c=z_1$, $z_1z_2$, or $z_1z_2z_3$.
+The normalization has respectively one, two, or three points over those
+strata. The side-pairings are reversible on their marked branches; the
+normalization-to-quotient map is not injective there. Retaining a branch
+label is necessary to lift a point back.
+
+At the finite centres the source uses ramified base coordinates
+$t_j=s_j^{m_j}$, $(m_1,m_2)=(3,4)$, and free affine quotient actions
+$\xi\mapsto A_j\xi+v_j/m_j$ on the real period torus, coupled with the
+base rotation. The complete deck-group relations are
+\[
+ \Gamma_j=\langle\mathbb L,G_j\mid
+ G_jt_\ell G_j^{-1}=t_{A_j\ell},\quad G_j^{m_j}=t_{v_j}\rangle.
+\]
+The source-side attachment kernel is the central infinite cyclic group
+$\langle\widetilde G_j^{m_j}t_{-v_j}\rangle$.
+The finite central product covers have degrees nine and eight, not three
+and four. Their kernels and affine translations are retained in the
+workbench key-advances \S3.
+
+\subsection{The conjugate term in a period comparison}
+Another literal source ``mirror'' is a real-linear comparison of nearby
+periods, not a holomorphic involution. Put
+$T=\Im\tau>0$, $m=\Im\mu$,
+$d=\Im\beta_{c_*}-6m^2/T<0$, and
+$P_*=\left(\begin{smallmatrix}0&0\\-m/T&1\end{smallmatrix}\right)$.
+For $\beta_c=\beta_{c_*}+\delta$ the workbench gives
+\[
+ \zeta\longmapsto
+ \left(I+\frac{\delta}{2id}P_*\right)\zeta
+ -\frac{\delta}{2id}P_*\overline\zeta,
+ \qquad \det_{\R}=\frac{d+\Im\delta}{d}>0.
+\]
+Both the inverse-transpose duality, the opposite-side identifications,
+and this conjugate term are exact operations. They are not interchangeable.
+The workbench further records a nonzero Kodaira--Spencer deformation class;
+we do not reprove that global statement here.
+
+\section{The completed filling presentation and the denominator}
+The source computes a cyclic fundamental group with order
+\[
+ n=|12\ell_0-4\ell_1-3\ell_2|,
+\]
+for admissible translations, and claims that the original choice
+$(\ell_0,\ell_1,\ell_2)=(0,1,-1)$ has the homology and smooth type of $S^6$.
+The admissibility conditions are explicit:
+$3\nmid\ell_1$ and $\ell_2$ odd \cite[Proposition 5.6 and \S7]{source}.
+Their geometric justification belongs to that source. The following
+presentation calculation is independent integer algebra.
+
+\begin{proposition}[Exact cyclic presentation comparison]
+For each odd $D$ prime to three, choose
+\[
+ \ell_0=0,\qquad
+ \ell_2=\begin{cases}1&D\equiv1\ (4),\\-1&D\equiv3\ (4),\end{cases}
+ \qquad \ell_1=-\frac{D+3\ell_2}{4}.
+\]
+These choices are admissible and have $12\ell_0-4\ell_1-3\ell_2=D$.
+The relation matrix
+\[
+ \begin{pmatrix}-\ell_1&3&0\\-\ell_2&0&4\\-\ell_0&1&1\end{pmatrix}
+\]
+has Smith invariants $(1,1,D)$. Conversely every admissible nonzero value
+of $12\ell_0-4\ell_1-3\ell_2$ is prime to six.
+\end{proposition}
+\begin{proof}
+The numerator defining $\ell_1$ is divisible by four. Modulo three it is
+$D$, so $3\nmid\ell_1$. The other assertions about the parameters follow
+by substitution. The determinant has absolute value $D$; two minors
+from the last row and the first two rows give 3 and $-4$, so the gcd of
+all two-by-two minors is one, yielding the Smith invariants. Mapping the
+three generators to $1$, $\ell_1/3$, $\ell_2/4$ modulo $D$ annihilates the
+relations and is onto. The inverse sends $1\bmod D$ to the first generator.
+An admissible value is odd modulo two and nonzero modulo three, proving
+the converse. The source's original signed value is $-1$, not $+1$.
+\end{proof}
+
+Thus a denominator cyclic group can be compared to the completed-source
+presentation for $\gcd(D,6)=1$. Denominators divisible by three cannot
+be assigned such a free filling merely by choosing other integers in
+that same $(3,4)$ family. The finite torsion-cover construction still
+works for them and has the two orbits already calculated.
+Neither comparison is an isomorphism between a finite ES atlas and a
+compact six-manifold.
+
+\section{A definite obstruction to one putative isomorphism}
+\begin{proposition}[Genus survives the natural base change]
+Take a positive-genus compact component $C_D\to\mathbb P^1$ of the cover,
+and a connected resolution of a dominant component of the normalized
+fibre product $X\times_{\mathbb P^1}C_D$, when the source compact fibration
+is used. Its fundamental group surjects onto $\pi_1(C_D)$, so its first
+Betti number is at least $2g(C_D)$. It is not diffeomorphic to $S^6$.
+\end{proposition}
+\begin{proof}
+A loop of the compact base can be moved off the finitely many special
+points. Over that complement the pullback is a proper submersion with
+connected torus fibres. Lift the loop from a chosen point; connect its
+endpoint back to its start within the fibre. The resulting closed loop
+maps to the original loop, proving the surjection. The same open
+submersion is unaffected by normalization or a resolution that is an
+isomorphism over it. Abelianization gives the Betti inequality.
+\end{proof}
+For every odd $D>1$ at least one component has positive genus, by the
+formulas already proved. This only excludes this particular pullback as
+an $S^6$ copy. It does not exclude another carefully specified map, and
+it is not a contradiction to ES falsity: ordinary successful primes
+also have many rejected leaves with such components.
+
+A different naive comparison already lies on a boundary. The native
+coefficient form of the regular period model is
+\[
+ G(t,m,b)=\begin{pmatrix}2t&2m\\2m&b/3\end{pmatrix},\quad
+ \det G=\frac23(tb-6m^2).
+\]
+Substituting the exact divisor relation $uv=a^2$ by
+$(t,m,b)=(u/2,a/2,3v)$ gives
+$G=\left(\begin{smallmatrix}u&a\\a&v\end{smallmatrix}\right)$ with determinant
+zero. Regular periods require the strict negative determinant, so this
+substitution is not a regular-fibre embedding. Our torsion comparison
+uses the valid period lattice and the integer level $D$, not that
+singular substitution.
+
+\section{The level-three group, with every matrix retained}
+At $D=3$ the generated matrix group has the form
+\[
+ \left\{
+ \begin{pmatrix}1&0&0&0\\0&a&b&0\\0&c&d&0\\\chi(A)&r&s&1\end{pmatrix}:
+ A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\mathrm{SL}_2(\F_3),\quad
+ r,s\in\F_3\right\}.
+\]
+Here $\chi:\mathrm{SL}_2(\F_3)\to\F_3$ is the character taking the planar
+part of $A_1$ to 1 and that of $A_2$ to 0. For a finite exact proof,
+$Q=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$ and its
+conjugate by $P=\left(\begin{smallmatrix}0&1\\-1&-1\end{smallmatrix}\right)$
+generate the eight-element quaternion subgroup; $P$ normalizes it and
+has order three. Hence $\mathrm{SL}_2(\F_3)=Q_8\rtimes\langle P\rangle$,
+and the exponent of $P$ defines $\chi$.
+The kernel translations with bottom rows $(0,1,0,1)$ and $(0,0,1,1)$
+are respectively the source words
+\[
+ A_2A_2A_1A_2A_2A_1A_1,\qquad
+ A_1A_1A_2A_2A_1A_2A_2 \pmod3.
+\]
+Multiplication verifies them. They generate all nine row translations;
+together with the projected 24 matrices they give exactly the displayed
+216 matrices. Removing $(r,s)$ gives an explicit splitting. The group
+is therefore $(\F_3^2)^*\rtimes\mathrm{SL}_2(\F_3)$, isomorphic to
+$\mathrm{ASL}_2(\F_3)$ using the invariant alternating pairing to identify
+the dual module. This identification is verified as a matrix-group
+statement, not inferred from the order 216 alone. No identification of
+its 27-point action with the preceding Albert coordinates is asserted.

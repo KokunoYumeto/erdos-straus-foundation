@@ -1,0 +1,82 @@
+{
+  "date": "2026-09-12",
+  "sources": [
+    {
+      "id": "S6-SOURCE",
+      "title": "The (3,4,infinity) modular family of 2-tori, completed at its three special points, is a complex structure on S6",
+      "url": "https://alpo.ge/s6.pdf",
+      "extent": "108 PDF pages",
+      "status": "selected text passages and page images inspected",
+      "locators": [
+        "setup pp.1-2",
+        "Section 2, Lemmas 2.4-2.7, printed pp.8-10",
+        "Section 3 period definitions",
+        "Section 4 cusp normalization and opposite-side gluing",
+        "Proposition 5.6, printed p.33, freeness",
+        "Section 7, cyclic fundamental-group presentation"
+      ],
+      "used": "explicit integral matrices, period/torsion interpretation, source comparison and exact filling conditions",
+      "not_claimed": "complete proof audit, independent global sphere verification, stable byte match or local PDF download",
+      "download_status": "local attempts failed DNS; source was read through the web tool"
+    },
+    {
+      "id": "S6-WORKBENCH",
+      "repository": "KokunoYumeto/yang-mills-interacting-workbench",
+      "revision": "8cfbd18f3e398c533e1acabfba98b4a29975000a",
+      "paths": [
+        "README.md",
+        "s6/README.md",
+        "s6/ATTEMPTS.md",
+        "s6/27_s6_key_advances_frozen_2026-09-06.tex"
+      ],
+      "status": "live connector reads; no modifications",
+      "used": "period-comparison conjugate term, filling kernels and distinction between local certificates and global claims",
+      "external_archive": "10.5281/zenodo.22678442; full 174-MB 1079-file archive located but not downloaded"
+    },
+    {
+      "id": "ENGEL",
+      "author": "Philip Engel",
+      "url": "https://philip-engel.github.io/S6.pdf",
+      "extent": "25 pages",
+      "status": "introduction and source attribution inspected; not a full independent proof audit",
+      "used": "attributes source manuscript to Claude, communicated by Levent Alpoge; identifies geometric exposition scope"
+    },
+    {
+      "id": "BELYI",
+      "authors": [
+        "Jeroen Sijsling",
+        "John Voight"
+      ],
+      "year": 2014,
+      "title": "On computing Belyi maps",
+      "url": "https://arxiv.org/abs/1311.2529",
+      "locators": [
+        "Introduction",
+        "Section 1"
+      ],
+      "used": "permutation triples/finite covers and dessins; classical Riemann-existence construction",
+      "errata": "https://jvoight.github.io/articles/compute-belyi-errata.pdf, 3 November 2023; cyclic orders must be retained"
+    },
+    {
+      "id": "ET",
+      "authors": [
+        "Christian Elsholtz",
+        "Terence Tao"
+      ],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "url": "https://arxiv.org/abs/1107.1010",
+      "locators": [
+        "Section 2, Propositions 2.2 and 2.6"
+      ],
+      "used": "inherited Type I/II parametrization lineage; every formula needed for the current proof is rederived"
+    },
+    {
+      "id": "GIUGA-METHOD",
+      "source_file": "verify_giuga_blind_plane_cd.py",
+      "readable_citation": "supplied source lines 106-147",
+      "used": "methodological comparison only: retain Giuga and Carmichael requirements simultaneously",
+      "not_claimed": "full replay of the uploaded SymPy program or a Giuga-to-S6 theorem"
+    }
+  ]
+}

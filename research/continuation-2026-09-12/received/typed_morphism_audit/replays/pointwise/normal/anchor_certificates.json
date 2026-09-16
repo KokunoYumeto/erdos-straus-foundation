@@ -1,0 +1,1954 @@
+[
+  {
+    "R": 11,
+    "A": 9,
+    "H": [
+      1,
+      3,
+      4,
+      5,
+      9
+    ],
+    "signed_box": [
+      {
+        "n": 1,
+        "d": 9,
+        "signed_exponents": [
+          -2
+        ],
+        "residue": 5
+      },
+      {
+        "n": 1,
+        "d": 3,
+        "signed_exponents": [
+          -1
+        ],
+        "residue": 4
+      },
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 3,
+        "d": 1,
+        "signed_exponents": [
+          1
+        ],
+        "residue": 3
+      },
+      {
+        "n": 9,
+        "d": 1,
+        "signed_exponents": [
+          2
+        ],
+        "residue": 9
+      }
+    ],
+    "height": [
+      9,
+      1
+    ],
+    "optimal_representatives": [
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 3,
+        "d": 1,
+        "signed_exponents": [
+          1
+        ],
+        "residue": 3
+      },
+      {
+        "n": 1,
+        "d": 3,
+        "signed_exponents": [
+          -1
+        ],
+        "residue": 4
+      },
+      {
+        "n": 1,
+        "d": 9,
+        "signed_exponents": [
+          -2
+        ],
+        "residue": 5
+      },
+      {
+        "n": 9,
+        "d": 1,
+        "signed_exponents": [
+          2
+        ],
+        "residue": 9
+      }
+    ],
+    "b_bound": 5184,
+    "a_bound": 46656,
+    "p_bound": 186613,
+    "hard_primes_tested": 152,
+    "with_nonH_prime_factor": 91,
+    "exceptions": []
+  },
+  {
+    "R": 23,
+    "A": 12,
+    "H": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      12,
+      13,
+      16,
+      18
+    ],
+    "signed_box": [
+      {
+        "n": 1,
+        "d": 12,
+        "signed_exponents": [
+          -2,
+          -1
+        ],
+        "residue": 2
+      },
+      {
+        "n": 1,
+        "d": 4,
+        "signed_exponents": [
+          -2,
+          0
+        ],
+        "residue": 6
+      },
+      {
+        "n": 3,
+        "d": 4,
+        "signed_exponents": [
+          -2,
+          1
+        ],
+        "residue": 18
+      },
+      {
+        "n": 1,
+        "d": 6,
+        "signed_exponents": [
+          -1,
+          -1
+        ],
+        "residue": 4
+      },
+      {
+        "n": 1,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          0
+        ],
+        "residue": 12
+      },
+      {
+        "n": 3,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 13
+      },
+      {
+        "n": 1,
+        "d": 3,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 8
+      },
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 3,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 3
+      },
+      {
+        "n": 2,
+        "d": 3,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 16
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 2
+      },
+      {
+        "n": 6,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 6
+      },
+      {
+        "n": 4,
+        "d": 3,
+        "signed_exponents": [
+          2,
+          -1
+        ],
+        "residue": 9
+      },
+      {
+        "n": 4,
+        "d": 1,
+        "signed_exponents": [
+          2,
+          0
+        ],
+        "residue": 4
+      },
+      {
+        "n": 12,
+        "d": 1,
+        "signed_exponents": [
+          2,
+          1
+        ],
+        "residue": 12
+      }
+    ],
+    "height": [
+      3,
+      1
+    ],
+    "optimal_representatives": [
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 2
+      },
+      {
+        "n": 3,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 3
+      },
+      {
+        "n": 4,
+        "d": 1,
+        "signed_exponents": [
+          2,
+          0
+        ],
+        "residue": 4
+      },
+      {
+        "n": 6,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 6
+      },
+      {
+        "n": 1,
+        "d": 3,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 8
+      },
+      {
+        "n": 4,
+        "d": 3,
+        "signed_exponents": [
+          2,
+          -1
+        ],
+        "residue": 9
+      },
+      {
+        "n": 12,
+        "d": 1,
+        "signed_exponents": [
+          2,
+          1
+        ],
+        "residue": 12
+      },
+      {
+        "n": 3,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 13
+      },
+      {
+        "n": 2,
+        "d": 3,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 16
+      },
+      {
+        "n": 3,
+        "d": 4,
+        "signed_exponents": [
+          -2,
+          1
+        ],
+        "residue": 18
+      }
+    ],
+    "b_bound": 576,
+    "a_bound": 6912,
+    "p_bound": 27625,
+    "hard_primes_tested": 37,
+    "with_nonH_prime_factor": 24,
+    "exceptions": []
+  },
+  {
+    "R": 23,
+    "A": 18,
+    "H": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      12,
+      13,
+      16,
+      18
+    ],
+    "signed_box": [
+      {
+        "n": 1,
+        "d": 18,
+        "signed_exponents": [
+          -1,
+          -2
+        ],
+        "residue": 9
+      },
+      {
+        "n": 1,
+        "d": 6,
+        "signed_exponents": [
+          -1,
+          -1
+        ],
+        "residue": 4
+      },
+      {
+        "n": 1,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          0
+        ],
+        "residue": 12
+      },
+      {
+        "n": 3,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 13
+      },
+      {
+        "n": 9,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          2
+        ],
+        "residue": 16
+      },
+      {
+        "n": 1,
+        "d": 9,
+        "signed_exponents": [
+          0,
+          -2
+        ],
+        "residue": 18
+      },
+      {
+        "n": 1,
+        "d": 3,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 8
+      },
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 3,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 3
+      },
+      {
+        "n": 9,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          2
+        ],
+        "residue": 9
+      },
+      {
+        "n": 2,
+        "d": 9,
+        "signed_exponents": [
+          1,
+          -2
+        ],
+        "residue": 13
+      },
+      {
+        "n": 2,
+        "d": 3,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 16
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 2
+      },
+      {
+        "n": 6,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 6
+      },
+      {
+        "n": 18,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          2
+        ],
+        "residue": 18
+      }
+    ],
+    "height": [
+      6,
+      1
+    ],
+    "optimal_representatives": [
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 2
+      },
+      {
+        "n": 3,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 3
+      },
+      {
+        "n": 1,
+        "d": 6,
+        "signed_exponents": [
+          -1,
+          -1
+        ],
+        "residue": 4
+      },
+      {
+        "n": 6,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 6
+      },
+      {
+        "n": 1,
+        "d": 3,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 8
+      },
+      {
+        "n": 9,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          2
+        ],
+        "residue": 9
+      },
+      {
+        "n": 1,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          0
+        ],
+        "residue": 12
+      },
+      {
+        "n": 3,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 13
+      },
+      {
+        "n": 9,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          2
+        ],
+        "residue": 16
+      },
+      {
+        "n": 18,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          2
+        ],
+        "residue": 18
+      }
+    ],
+    "b_bound": 2304,
+    "a_bound": 41472,
+    "p_bound": 165865,
+    "hard_primes_tested": 143,
+    "with_nonH_prime_factor": 90,
+    "exceptions": [
+      {
+        "p": 1201,
+        "a": 306,
+        "factorization_a": {
+          "2": 1,
+          "3": 2,
+          "17": 1
+        },
+        "middle_states": [
+          {
+            "p": 1201,
+            "R": 23,
+            "a": 306,
+            "u": 108,
+            "channel": "M",
+            "h": 3,
+            "r": 6,
+            "s": 17,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              306,
+              61251,
+              21618
+            ],
+            "denominators_increasing": [
+              306,
+              21618,
+              61251
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 1201,
+            "R": 23,
+            "a": 306,
+            "u": 867,
+            "channel": "M",
+            "h": 3,
+            "r": 17,
+            "s": 6,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              306,
+              21618,
+              61251
+            ],
+            "denominators_increasing": [
+              306,
+              21618,
+              61251
+            ],
+            "positive_chamber": false
+          }
+        ],
+        "hybrid_repair": {
+          "p": 1201,
+          "R": 39,
+          "a": 310,
+          "u": 2,
+          "channel": "M",
+          "h": 2,
+          "r": 1,
+          "s": 155,
+          "kappa": null,
+          "lambda": 4,
+          "denominators_raw": [
+            310,
+            1489240,
+            9608
+          ],
+          "denominators_increasing": [
+            310,
+            9608,
+            1489240
+          ],
+          "positive_chamber": true
+        }
+      }
+    ]
+  },
+  {
+    "R": 19,
+    "A": 35,
+    "H": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      16,
+      17
+    ],
+    "signed_box": [
+      {
+        "n": 1,
+        "d": 35,
+        "signed_exponents": [
+          -1,
+          -1
+        ],
+        "residue": 6
+      },
+      {
+        "n": 1,
+        "d": 5,
+        "signed_exponents": [
+          -1,
+          0
+        ],
+        "residue": 4
+      },
+      {
+        "n": 7,
+        "d": 5,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 9
+      },
+      {
+        "n": 1,
+        "d": 7,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 11
+      },
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 7,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 7
+      },
+      {
+        "n": 5,
+        "d": 7,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 17
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 5
+      },
+      {
+        "n": 35,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 16
+      }
+    ],
+    "height": [
+      35,
+      1
+    ],
+    "optimal_representatives": [
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 1,
+        "d": 5,
+        "signed_exponents": [
+          -1,
+          0
+        ],
+        "residue": 4
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 5
+      },
+      {
+        "n": 1,
+        "d": 35,
+        "signed_exponents": [
+          -1,
+          -1
+        ],
+        "residue": 6
+      },
+      {
+        "n": 7,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 7
+      },
+      {
+        "n": 7,
+        "d": 5,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 9
+      },
+      {
+        "n": 1,
+        "d": 7,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 11
+      },
+      {
+        "n": 35,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 16
+      },
+      {
+        "n": 5,
+        "d": 7,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 17
+      }
+    ],
+    "b_bound": 78400,
+    "a_bound": 2744000,
+    "p_bound": 10975981,
+    "hard_primes_tested": 3754,
+    "with_nonH_prime_factor": 2421,
+    "exceptions": [
+      {
+        "p": 837601,
+        "a": 209405,
+        "factorization_a": {
+          "5": 1,
+          "7": 1,
+          "31": 1,
+          "193": 1
+        },
+        "middle_states": [
+          {
+            "p": 837601,
+            "R": 19,
+            "a": 209405,
+            "u": 37975,
+            "channel": "M",
+            "h": 31,
+            "r": 35,
+            "s": 193,
+            "kappa": null,
+            "lambda": 12,
+            "denominators_raw": [
+              209405,
+              60136401396,
+              10905565020
+            ],
+            "denominators_increasing": [
+              209405,
+              10905565020,
+              60136401396
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 837601,
+            "R": 19,
+            "a": 209405,
+            "u": 47285,
+            "channel": "M",
+            "h": 965,
+            "r": 7,
+            "s": 31,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              209405,
+              50113667830,
+              11315989510
+            ],
+            "denominators_increasing": [
+              209405,
+              11315989510,
+              50113667830
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 837601,
+            "R": 19,
+            "a": 209405,
+            "u": 927365,
+            "channel": "M",
+            "h": 965,
+            "r": 31,
+            "s": 7,
+            "kappa": null,
+            "lambda": 2,
+            "denominators_raw": [
+              209405,
+              11315989510,
+              50113667830
+            ],
+            "denominators_increasing": [
+              209405,
+              11315989510,
+              50113667830
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 837601,
+            "R": 19,
+            "a": 209405,
+            "u": 1154719,
+            "channel": "M",
+            "h": 31,
+            "r": 193,
+            "s": 35,
+            "kappa": null,
+            "lambda": 12,
+            "denominators_raw": [
+              209405,
+              10905565020,
+              60136401396
+            ],
+            "denominators_increasing": [
+              209405,
+              10905565020,
+              60136401396
+            ],
+            "positive_chamber": false
+          }
+        ],
+        "hybrid_repair": {
+          "p": 837601,
+          "R": 11,
+          "a": 209403,
+          "u": 81,
+          "channel": "M",
+          "h": 1,
+          "r": 9,
+          "s": 23267,
+          "kappa": null,
+          "lambda": 2116,
+          "denominators_raw": [
+            209403,
+            41237586580172,
+            15951273444
+          ],
+          "denominators_increasing": [
+            209403,
+            15951273444,
+            41237586580172
+          ],
+          "positive_chamber": true
+        }
+      }
+    ]
+  },
+  {
+    "R": 39,
+    "A": 40,
+    "H": [
+      1,
+      2,
+      4,
+      5,
+      8,
+      10,
+      11,
+      16,
+      20,
+      22,
+      25,
+      32
+    ],
+    "signed_box": [
+      {
+        "n": 1,
+        "d": 40,
+        "signed_exponents": [
+          -3,
+          -1
+        ],
+        "residue": 1
+      },
+      {
+        "n": 1,
+        "d": 8,
+        "signed_exponents": [
+          -3,
+          0
+        ],
+        "residue": 5
+      },
+      {
+        "n": 5,
+        "d": 8,
+        "signed_exponents": [
+          -3,
+          1
+        ],
+        "residue": 25
+      },
+      {
+        "n": 1,
+        "d": 20,
+        "signed_exponents": [
+          -2,
+          -1
+        ],
+        "residue": 2
+      },
+      {
+        "n": 1,
+        "d": 4,
+        "signed_exponents": [
+          -2,
+          0
+        ],
+        "residue": 10
+      },
+      {
+        "n": 5,
+        "d": 4,
+        "signed_exponents": [
+          -2,
+          1
+        ],
+        "residue": 11
+      },
+      {
+        "n": 1,
+        "d": 10,
+        "signed_exponents": [
+          -1,
+          -1
+        ],
+        "residue": 4
+      },
+      {
+        "n": 1,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          0
+        ],
+        "residue": 20
+      },
+      {
+        "n": 5,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 22
+      },
+      {
+        "n": 1,
+        "d": 5,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 8
+      },
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 5
+      },
+      {
+        "n": 2,
+        "d": 5,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 16
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 2
+      },
+      {
+        "n": 10,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 10
+      },
+      {
+        "n": 4,
+        "d": 5,
+        "signed_exponents": [
+          2,
+          -1
+        ],
+        "residue": 32
+      },
+      {
+        "n": 4,
+        "d": 1,
+        "signed_exponents": [
+          2,
+          0
+        ],
+        "residue": 4
+      },
+      {
+        "n": 20,
+        "d": 1,
+        "signed_exponents": [
+          2,
+          1
+        ],
+        "residue": 20
+      },
+      {
+        "n": 8,
+        "d": 5,
+        "signed_exponents": [
+          3,
+          -1
+        ],
+        "residue": 25
+      },
+      {
+        "n": 8,
+        "d": 1,
+        "signed_exponents": [
+          3,
+          0
+        ],
+        "residue": 8
+      },
+      {
+        "n": 40,
+        "d": 1,
+        "signed_exponents": [
+          3,
+          1
+        ],
+        "residue": 1
+      }
+    ],
+    "height": [
+      5,
+      2
+    ],
+    "optimal_representatives": [
+      {
+        "n": 40,
+        "d": 1,
+        "signed_exponents": [
+          3,
+          1
+        ],
+        "residue": 1
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 2
+      },
+      {
+        "n": 4,
+        "d": 1,
+        "signed_exponents": [
+          2,
+          0
+        ],
+        "residue": 4
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 5
+      },
+      {
+        "n": 8,
+        "d": 1,
+        "signed_exponents": [
+          3,
+          0
+        ],
+        "residue": 8
+      },
+      {
+        "n": 10,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 10
+      },
+      {
+        "n": 5,
+        "d": 4,
+        "signed_exponents": [
+          -2,
+          1
+        ],
+        "residue": 11
+      },
+      {
+        "n": 2,
+        "d": 5,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 16
+      },
+      {
+        "n": 20,
+        "d": 1,
+        "signed_exponents": [
+          2,
+          1
+        ],
+        "residue": 20
+      },
+      {
+        "n": 5,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 22
+      },
+      {
+        "n": 8,
+        "d": 5,
+        "signed_exponents": [
+          3,
+          -1
+        ],
+        "residue": 25
+      },
+      {
+        "n": 4,
+        "d": 5,
+        "signed_exponents": [
+          2,
+          -1
+        ],
+        "residue": 32
+      }
+    ],
+    "b_bound": 400,
+    "a_bound": 16000,
+    "p_bound": 63961,
+    "hard_primes_tested": 19,
+    "with_nonH_prime_factor": 9,
+    "exceptions": []
+  },
+  {
+    "R": 39,
+    "A": 50,
+    "H": [
+      1,
+      2,
+      4,
+      5,
+      8,
+      10,
+      11,
+      16,
+      20,
+      22,
+      25,
+      32
+    ],
+    "signed_box": [
+      {
+        "n": 1,
+        "d": 50,
+        "signed_exponents": [
+          -1,
+          -2
+        ],
+        "residue": 32
+      },
+      {
+        "n": 1,
+        "d": 10,
+        "signed_exponents": [
+          -1,
+          -1
+        ],
+        "residue": 4
+      },
+      {
+        "n": 1,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          0
+        ],
+        "residue": 20
+      },
+      {
+        "n": 5,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 22
+      },
+      {
+        "n": 25,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          2
+        ],
+        "residue": 32
+      },
+      {
+        "n": 1,
+        "d": 25,
+        "signed_exponents": [
+          0,
+          -2
+        ],
+        "residue": 25
+      },
+      {
+        "n": 1,
+        "d": 5,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 8
+      },
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 5
+      },
+      {
+        "n": 25,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          2
+        ],
+        "residue": 25
+      },
+      {
+        "n": 2,
+        "d": 25,
+        "signed_exponents": [
+          1,
+          -2
+        ],
+        "residue": 11
+      },
+      {
+        "n": 2,
+        "d": 5,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 16
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 2
+      },
+      {
+        "n": 10,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 10
+      },
+      {
+        "n": 50,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          2
+        ],
+        "residue": 11
+      }
+    ],
+    "height": [
+      10,
+      1
+    ],
+    "optimal_representatives": [
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          0
+        ],
+        "residue": 2
+      },
+      {
+        "n": 1,
+        "d": 10,
+        "signed_exponents": [
+          -1,
+          -1
+        ],
+        "residue": 4
+      },
+      {
+        "n": 5,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          1
+        ],
+        "residue": 5
+      },
+      {
+        "n": 1,
+        "d": 5,
+        "signed_exponents": [
+          0,
+          -1
+        ],
+        "residue": 8
+      },
+      {
+        "n": 10,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          1
+        ],
+        "residue": 10
+      },
+      {
+        "n": 50,
+        "d": 1,
+        "signed_exponents": [
+          1,
+          2
+        ],
+        "residue": 11
+      },
+      {
+        "n": 2,
+        "d": 5,
+        "signed_exponents": [
+          1,
+          -1
+        ],
+        "residue": 16
+      },
+      {
+        "n": 1,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          0
+        ],
+        "residue": 20
+      },
+      {
+        "n": 5,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          1
+        ],
+        "residue": 22
+      },
+      {
+        "n": 25,
+        "d": 1,
+        "signed_exponents": [
+          0,
+          2
+        ],
+        "residue": 25
+      },
+      {
+        "n": 25,
+        "d": 2,
+        "signed_exponents": [
+          -1,
+          2
+        ],
+        "residue": 32
+      }
+    ],
+    "b_bound": 6400,
+    "a_bound": 320000,
+    "p_bound": 1279961,
+    "hard_primes_tested": 302,
+    "with_nonH_prime_factor": 183,
+    "exceptions": [
+      {
+        "p": 3361,
+        "a": 850,
+        "factorization_a": {
+          "2": 1,
+          "5": 2,
+          "17": 1
+        },
+        "middle_states": [
+          {
+            "p": 3361,
+            "R": 39,
+            "a": 850,
+            "u": 125,
+            "channel": "M",
+            "h": 5,
+            "r": 5,
+            "s": 34,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              850,
+              571370,
+              84025
+            ],
+            "denominators_increasing": [
+              850,
+              84025,
+              571370
+            ],
+            "positive_chamber": false
+          },
+          {
+            "p": 3361,
+            "R": 39,
+            "a": 850,
+            "u": 5780,
+            "channel": "M",
+            "h": 5,
+            "r": 34,
+            "s": 5,
+            "kappa": null,
+            "lambda": 1,
+            "denominators_raw": [
+              850,
+              84025,
+              571370
+            ],
+            "denominators_increasing": [
+              850,
+              84025,
+              571370
+            ],
+            "positive_chamber": false
+          }
+        ],
+        "hybrid_repair": {
+          "p": 3361,
+          "R": 3,
+          "a": 841,
+          "u": 29,
+          "channel": "E",
+          "h": 29,
+          "r": 1,
+          "s": 29,
+          "kappa": 1130,
+          "lambda": null,
+          "denominators_raw": [
+            841,
+            950330,
+            110139970
+          ],
+          "denominators_increasing": [
+            841,
+            950330,
+            110139970
+          ],
+          "positive_chamber": true
+        }
+      }
+    ]
+  },
+  {
+    "R": 39,
+    "A": 64,
+    "H": [
+      1,
+      2,
+      4,
+      5,
+      8,
+      10,
+      11,
+      16,
+      20,
+      22,
+      25,
+      32
+    ],
+    "signed_box": [
+      {
+        "n": 1,
+        "d": 64,
+        "signed_exponents": [
+          -6
+        ],
+        "residue": 25
+      },
+      {
+        "n": 1,
+        "d": 32,
+        "signed_exponents": [
+          -5
+        ],
+        "residue": 11
+      },
+      {
+        "n": 1,
+        "d": 16,
+        "signed_exponents": [
+          -4
+        ],
+        "residue": 22
+      },
+      {
+        "n": 1,
+        "d": 8,
+        "signed_exponents": [
+          -3
+        ],
+        "residue": 5
+      },
+      {
+        "n": 1,
+        "d": 4,
+        "signed_exponents": [
+          -2
+        ],
+        "residue": 10
+      },
+      {
+        "n": 1,
+        "d": 2,
+        "signed_exponents": [
+          -1
+        ],
+        "residue": 20
+      },
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1
+        ],
+        "residue": 2
+      },
+      {
+        "n": 4,
+        "d": 1,
+        "signed_exponents": [
+          2
+        ],
+        "residue": 4
+      },
+      {
+        "n": 8,
+        "d": 1,
+        "signed_exponents": [
+          3
+        ],
+        "residue": 8
+      },
+      {
+        "n": 16,
+        "d": 1,
+        "signed_exponents": [
+          4
+        ],
+        "residue": 16
+      },
+      {
+        "n": 32,
+        "d": 1,
+        "signed_exponents": [
+          5
+        ],
+        "residue": 32
+      },
+      {
+        "n": 64,
+        "d": 1,
+        "signed_exponents": [
+          6
+        ],
+        "residue": 25
+      }
+    ],
+    "height": [
+      32,
+      1
+    ],
+    "optimal_representatives": [
+      {
+        "n": 1,
+        "d": 1,
+        "signed_exponents": [
+          0
+        ],
+        "residue": 1
+      },
+      {
+        "n": 2,
+        "d": 1,
+        "signed_exponents": [
+          1
+        ],
+        "residue": 2
+      },
+      {
+        "n": 4,
+        "d": 1,
+        "signed_exponents": [
+          2
+        ],
+        "residue": 4
+      },
+      {
+        "n": 1,
+        "d": 8,
+        "signed_exponents": [
+          -3
+        ],
+        "residue": 5
+      },
+      {
+        "n": 8,
+        "d": 1,
+        "signed_exponents": [
+          3
+        ],
+        "residue": 8
+      },
+      {
+        "n": 1,
+        "d": 4,
+        "signed_exponents": [
+          -2
+        ],
+        "residue": 10
+      },
+      {
+        "n": 1,
+        "d": 32,
+        "signed_exponents": [
+          -5
+        ],
+        "residue": 11
+      },
+      {
+        "n": 16,
+        "d": 1,
+        "signed_exponents": [
+          4
+        ],
+        "residue": 16
+      },
+      {
+        "n": 1,
+        "d": 2,
+        "signed_exponents": [
+          -1
+        ],
+        "residue": 20
+      },
+      {
+        "n": 1,
+        "d": 16,
+        "signed_exponents": [
+          -4
+        ],
+        "residue": 22
+      },
+      {
+        "n": 64,
+        "d": 1,
+        "signed_exponents": [
+          6
+        ],
+        "residue": 25
+      },
+      {
+        "n": 32,
+        "d": 1,
+        "signed_exponents": [
+          5
+        ],
+        "residue": 32
+      }
+    ],
+    "b_bound": 65536,
+    "a_bound": 4194304,
+    "p_bound": 16777177,
+    "hard_primes_tested": 1061,
+    "with_nonH_prime_factor": 682,
+    "exceptions": []
+  }
+]

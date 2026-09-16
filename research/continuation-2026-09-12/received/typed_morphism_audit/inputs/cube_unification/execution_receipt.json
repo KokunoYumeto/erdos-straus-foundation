@@ -1,0 +1,61 @@
+{
+  "format": "three-slot-execution-receipt/1",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "run_date_utc": "2026-09-11",
+  "runs": [
+    {
+      "script": "verify.py",
+      "optimized": false,
+      "returncode": 0,
+      "seconds": 0.771,
+      "stdout_sha256": "ed6f9fa8a6e4d0fe7d97758e5d638588525fb8f447de6ac91356a0a1526b566b",
+      "stderr": ""
+    },
+    {
+      "script": "verify.py",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 0.736,
+      "stdout_sha256": "ed6f9fa8a6e4d0fe7d97758e5d638588525fb8f447de6ac91356a0a1526b566b",
+      "stderr": ""
+    },
+    {
+      "script": "graded_lie.py",
+      "optimized": false,
+      "returncode": 0,
+      "seconds": 0.724,
+      "stdout_sha256": "3530fe20dfee1286734b4c1324d40b1f9d0f54ae170fbcfdd0339a9750678b53",
+      "stderr": ""
+    },
+    {
+      "script": "graded_lie.py",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 0.779,
+      "stdout_sha256": "3530fe20dfee1286734b4c1324d40b1f9d0f54ae170fbcfdd0339a9750678b53",
+      "stderr": ""
+    },
+    {
+      "script": "leech_ternary.py",
+      "optimized": false,
+      "returncode": 0,
+      "seconds": 8.616,
+      "stdout_sha256": "fc47448a8111c650d9697116e2c8a0ebb9b9fd7c29061e1c757ae82fa2122387",
+      "stderr": ""
+    },
+    {
+      "script": "leech_ternary.py",
+      "optimized": true,
+      "returncode": 0,
+      "seconds": 8.359,
+      "stdout_sha256": "fc47448a8111c650d9697116e2c8a0ebb9b9fd7c29061e1c757ae82fa2122387",
+      "stderr": ""
+    }
+  ],
+  "normal_optimized_byte_identical": true,
+  "removable_assert_nodes": 0,
+  "independent_reviewers": 0,
+  "lean_run": false,
+  "scope": "Actual local execution. General proofs are in note.tex and cited imported results; tests retain their stated finite or formal-polynomial scope."
+}

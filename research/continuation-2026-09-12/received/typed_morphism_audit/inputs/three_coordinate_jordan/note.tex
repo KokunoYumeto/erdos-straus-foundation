@@ -1,0 +1,353 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,booktabs,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newcommand{\R}{\mathbb R}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}\newcommand{\OO}{\mathbb O}
+\DeclareMathOperator{\Tr}{Tr}\DeclareMathOperator{\Rea}{Re}
+\DeclareMathOperator{\Aut}{Aut}\DeclareMathOperator{\Spin}{Spin}
+\title{Three-coordinate Jordan arithmetic,\texorpdfstring{\\}{ }marked octonionic frames, and coherent M\"obius returns}
+\author{Research note developed from the maintainer's proposal}
+\date{11 September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+We extract a precise candidate for the proposed ``three-dimensional numbers'' from the retained ES/Koide coordinates and the marked Albert algebra. On the same real vector space $\R\oplus\C$, a normalized permutation-equivariant family of products is Jordan exactly at three parameter values, giving two isomorphism classes: a rank-two spin factor and the rank-three split spectral algebra. The quadratic Koide form is the spin determinant, while the cubic spectral norm supplies the inverse-trace equation for Erd\H{o}s--Straus. The rational spin form over $\Q\oplus\Q(\omega)$ is anisotropic by parity descent, so every nonzero rational element has a Jordan inverse. Three explicitly lifted real eigenline loops give compatible sign returns on the three octonionic Peirce spaces; together with cyclic frame permutation they generate $A_4$. Every construction is given in coordinates. These results do not prove primewise integral occupancy or identify an unspecified earlier twist passage. No priority claim is made.
+\end{abstract}
+
+\section{The intended object and the preserved distinctions}
+The motivating proposal asks for a three-coordinate arithmetic object tied to three marked octonionic components, with nontrivial return maps retained rather than quotienting away their action. It is not assumed to mean a three-dimensional associative real division algebra. The three numbers, the twenty-four frame directions, the twenty-seven-dimensional algebra, and a winding label are different types of data. Their relationships will be explicit.
+
+The starting workbench uses the ordered frame of $H_3(\OO)$, the ES/Koide quadratic form, an all-degree cyclic construction, and an off-diagonal chart extension \cite{workbench}. We use those definitions, not a claim that they force ES occupancy. The construction below supplies a literal M\"obius eigenline in real two-by-two corners. The exact earlier passage informally called a M\"obius twist was not recovered, so identity with that earlier passage is not asserted.
+
+\section{A real three-coordinate algebra with a cubic inverse}
+Fix $\omega=\exp(2\pi i/3)$. Indices $j$ in this section run from $0$ to $2$.
+For an ordered real triple $q=(q_0,q_1,q_2)$ define
+\begin{equation}\label{eq:fourier}
+ t=\frac{q_0+q_1+q_2}{3},\qquad
+ z=\frac{q_0+\omega q_1+\omega^2q_2}{3}.
+\end{equation}
+The inverse is
+\begin{equation}\label{eq:inverse-fourier}
+ q_j=t+\omega^{-j}z+\omega^j\bar z.
+\end{equation}
+The inverse values are real. This is a real-linear isomorphism, with no permutation quotient.
+
+\begin{proposition}[The transported cubic product]\label{prop:product}
+The componentwise multiplication of ordered triples becomes
+\begin{equation}\label{eq:cubic-product}
+ (t,z)\star(u,w)=
+ \bigl(tu+2\Rea(z\bar w),\;tw+uz+\bar z\bar w\bigr).
+\end{equation}
+It is commutative, associative and unital, with unit $(1,0)$. Its cubic norm and adjoint are
+\begin{align}\label{eq:norm}
+ N(t,z)&=t^3-3t|z|^2+2\Rea(z^3),\\
+ (t,z)^\#&=(t^2-|z|^2,\;\bar z^2-tz).\label{eq:adj}
+\end{align}
+They satisfy $v\star v^\#=N(v)(1,0)$. The inverse is $v^\#/N(v)$ exactly when $N(v)\ne0$.
+\end{proposition}
+\begin{proof}
+Multiply the two expressions in \eqref{eq:inverse-fourier} and use $\omega^3=1$. The constant coefficient is $tu+z\bar w+\bar zw$, and the coefficient of $\omega^{-j}$ is $tw+uz+\bar z\bar w$; the other coefficient is its conjugate. This gives \eqref{eq:cubic-product}. The Fourier isomorphism transports the algebra identities from $\R^3$.
+
+The three elementary symmetric functions of the inverse triple are
+\begin{equation}\label{eq:elementary}
+ T=3t,\qquad S=3(t^2-|z|^2),\qquad N=q_0q_1q_2.
+\end{equation}
+Expansion of the last expression gives \eqref{eq:norm}. The triple adjoint is $(q_1q_2,q_0q_2,q_0q_1)$, or equivalently $q^{\star2}-Tq+S1$. Applying \eqref{eq:cubic-product} gives \eqref{eq:adj}. Componentwise multiplication proves the inverse identity and its precise excluded set, namely the union $q_j=0$.
+\end{proof}
+
+This product is not the componentwise direct-product algebra $\R\times\C$. The vector space is $\R\oplus\C$, but its multiplication is the displayed transported product, isomorphic to $\R^3$. In particular the complex coordinate is not an embedded unital copy of the complex field.
+
+For the inherited quadratic form,
+\begin{equation}\label{eq:koide}
+ \Delta(q)=2T^2-3\sum_jq_j^2=9(t^2-2|z|^2).
+\end{equation}
+The workbench defect $\Delta=-1$ is therefore $t^2-2|z|^2=-1/9$. It is not replaced by the homogeneous cone. Writing $z=\rho e^{i\theta}$ gives
+\begin{equation}
+ N(t,z)=t^3-3t\rho^2+2\rho^3\cos(3\theta).
+\end{equation}
+Thus the quadratic data $(t,|z|)$ do not determine the cubic norm. The extra third harmonic is retained by the multiplication term $\bar z\bar w$.
+
+\section{A rigidity calculation: two Jordan types on the same space}
+Let $V=\R\oplus\C$, with unit $1=(1,0)$ and scalar projection $\tau(t,z)=t$. Fix
+\[
+ g((t,z),(u,w))=tu+2\Rea(z\bar w).
+\]
+Let the permutation generators act by $(t,z)\mapsto(t,\omega z)$ and $(t,z)\mapsto(t,\bar z)$.
+
+\begin{theorem}[Normalized equivariant Jordan products]\label{thm:rigidity}
+A commutative unital real-bilinear product on $V$, equivariant under these generators and satisfying $\tau(v\circ w)=g(v,w)$, has the form
+\begin{equation}\label{eq:family}
+ (t,z)\circ_c(u,w)=
+ \bigl(tu+2\Rea(z\bar w),\;tw+uz+c\bar z\bar w\bigr),\quad c\in\R.
+\end{equation}
+It satisfies the Jordan identity if and only if $c\in\{0,1,-1\}$. The products at $1$ and $-1$ are isomorphic. The $c=0$ product is the rank-two spin factor; the other type is the rank-three spectral algebra of Proposition~\ref{prop:product}.
+\end{theorem}
+\begin{proof}
+The unit fixes products involving the real coordinate, and the scalar condition fixes the scalar component. A symmetric real-bilinear map $\C\times\C\to\C$ has the form
+\[
+ A zw+B(z\bar w+\bar zw)+C\bar z\bar w
+\]
+for complex coefficients $A,B,C$. Equivariance under simultaneous multiplication by $\omega$ forces $A=B=0$: their respective weights are $\omega^2$ and $1$, not $\omega$. Conjugation equivariance makes $C$ real. This proves the classification of products before imposing the Jordan identity.
+
+Write $v=(t,x+iy)$. Left multiplication has the matrix
+\[
+ L_v=\begin{pmatrix}
+ t&2x&2y\\x&t+cx&-cy\\y&-cy&t-cx
+ \end{pmatrix},
+\]
+and
+\[
+ v^2=(t^2+2x^2+2y^2,\;2tx+c(x^2-y^2)+i(2ty-2cxy)).
+\]
+Direct multiplication yields the polynomial identity
+\begin{equation}\label{eq:commutator}
+ [L_v,L_{v^2}]=2c(c^2-1)y(3x^2-y^2)
+ \begin{pmatrix}0&0&0\\0&0&1\\0&-1&0\end{pmatrix}.
+\end{equation}
+For a commutative algebra, the Jordan identity is exactly $[L_v,L_{v^2}]=0$ for all $v$. Choosing $x=0,y=1$ proves necessity of $c(c^2-1)=0$, and the displayed identity proves sufficiency. The map $(t,z)\mapsto(t,-z)$ identifies the products at $1$ and $-1$.
+
+Finally, at $c=0$ the real-linear map
+\begin{equation}\label{eq:spin-matrix}
+ (t,x+iy)\longmapsto
+ M(t,x,y)=\begin{pmatrix}t+\sqrt2x&\sqrt2y\\\sqrt2y&t-\sqrt2x\end{pmatrix}
+\end{equation}
+intertwines the product with $(AB+BA)/2$ on $\operatorname{Sym}_2(\R)$. Matrix multiplication verifies this identity and gives $\det M=t^2-2|z|^2$. This is the standard spin-factor construction \cite[\S3.1]{baez}.
+\end{proof}
+
+The theorem is a classification under the stated normalization and symmetry conditions, not a classification of all conceivable three-dimensional arithmetic structures. The two products need not be identified: the quadratic determinant controls one, and the cubic norm controls the other.
+
+\section{A rational three-dimensional Jordan division algebra}
+Let $K=\Q(\omega)$ and use the $c=0$ product on $V_\Q=\Q\oplus K$. This is three-dimensional over $\Q$.
+
+\begin{theorem}[Anisotropy and exact rational Jordan inverse]\label{thm:rational}
+The quadratic form
+\[
+ D(t,z)=t^2-2N_{K/\Q}(z)
+\]
+has no nonzero rational zero. Every nonzero $v=(t,z)\in V_\Q$ is Jordan-invertible, with
+\begin{equation}
+ v^{-1}_{J}=\frac{(t,-z)}{D(t,z)}.
+\end{equation}
+In particular $V_\Q$ is a Jordan division algebra. This does not assert that every ordinary multiplication operator $L_v$ is invertible.
+\end{theorem}
+\begin{proof}
+Write $z=a+b\omega$. A rational zero, after clearing denominators and removing the integer gcd, would give a primitive integer triple satisfying
+\[
+ t^2=2(a^2-ab+b^2).
+\]
+Then $t$ is even and $a^2-ab+b^2$ is even. Its values modulo two on $(a,b)\in\{0,1\}^2$ are $0,1,1,1$, so $a,b$ are both even. This contradicts primitivity.
+
+Direct substitution gives $v\circ_0v^{-1}_J=1$ and $v^2\circ_0v^{-1}_J=v$. To verify the Jordan-invertibility assertion without confusing it with invertibility of $L_v$, define the quadratic representation $U_v=2L_v^2-L_{v^2}$. In the real coordinates of \eqref{eq:spin-matrix},
+\[
+ U_v=\begin{pmatrix}
+ t^2+2x^2+2y^2&4tx&4ty\\
+ 2tx&t^2+2x^2-2y^2&4xy\\
+ 2ty&4xy&t^2-2x^2+2y^2
+ \end{pmatrix},
+\qquad \det U_v=D(v)^3.
+\]
+Thus it is invertible for every nonzero rational $v$. The explicit inverse is rational. By contrast, if $v=(0,z)$, then any $(0,w)$ with $\Rea(z\bar w)=0$ lies in $\ker L_v$, even though $v$ has a Jordan inverse.
+\end{proof}
+
+This is a rational result. Over $\R$ the quadratic form has nonzero isotropic vectors. The map \eqref{eq:spin-matrix} is a real algebra isomorphism, not a claim that the relevant integral structure is ordinary integral symmetric matrices. Under \eqref{eq:fourier}, the anisotropy also says that $\Delta(q)=0$ has no nonzero rational solution.
+
+\section{Three spectral coordinates and twenty-four marked directions}
+Use the compact real Albert algebra
+\begin{equation}\label{eq:albert}
+ J=H_3(\OO),\qquad
+ X=\begin{pmatrix}
+ a&z&\bar y\\\bar z&b&x\\y&\bar x&c
+ \end{pmatrix},\qquad X\circ Y=\tfrac12(XY+YX).
+\end{equation}
+Its Jordan identity and standard exceptional-group structure are classical inputs \cite[\S\S3.4,4.2]{baez}\cite[\S2.1]{yokota}. Let $e_i$ be the three diagonal primitive idempotents. For $i<j$, $F_{ij}(u)$ has upper entry $u$ at $(i,j)$, lower entry $\bar u$ at $(j,i)$, and all other entries zero.
+
+The vector-space decomposition is
+\begin{equation}\label{eq:peirce}
+ J=\bigoplus_{i=1}^3\R e_i\ \oplus\ F_{12}(\OO)\oplus F_{23}(\OO)\oplus F_{13}(\OO).
+\end{equation}
+Each off-diagonal summand has dimension eight. The coefficient algebra $\sum q_i e_i$ is exactly the three-dimensional spectral algebra already described.
+
+\begin{proposition}[The three pairwise pieces do not decouple]\label{prop:peirce}
+The multiplication satisfies
+\[
+ F_{ij}(u)^2=N(u)(e_i+e_j),\qquad
+ F_{12}(u)\circ F_{23}(v)=\tfrac12F_{13}(uv).
+\]
+Consequently the linear span of the three eight-dimensional off-diagonal spaces is not a Jordan subalgebra. The Jordan subalgebra generated by those three full spaces is all of $J$.
+\end{proposition}
+\begin{proof}
+Each identity is direct two-factor matrix multiplication, requiring no reassociation of octonion products. The squares of $F_{12}(1),F_{23}(1),F_{13}(1)$ supply $e_1+e_2,e_2+e_3,e_1+e_3$. Their linear combinations supply each $e_i$ individually, for example
+\[
+ e_1=\tfrac12\big((e_1+e_2)+(e_1+e_3)-(e_2+e_3)\big).
+\]
+Together with the starting spaces these span the full decomposition \eqref{eq:peirce}.
+\end{proof}
+
+For a varying ordered Jordan frame $\mathbf e=(e_1,e_2,e_3)$, the coefficient map is
+\[
+ (\mathbf e,q)\longmapsto X=\sum_iq_ie_i.
+\]
+At fixed frame its inverse is $q_i=\Tr(X\circ e_i)$. At distinct spectral values, retaining their ordering gives the inverse frame formula
+\begin{equation}\label{eq:projectors}
+ e_i=\frac{(X-q_j1)\circ(X-q_k1)}{(q_i-q_j)(q_i-q_k)}.
+\end{equation}
+This follows by evaluating the polynomial on the three orthogonal idempotents. At coincident values this formula is excluded and internal eigenspace frames are not determined. Forgetting the eigenvalue order produces the expected six choices on the distinct-spectrum locus, not a claim of nontrivial monodromy for that real six-sheet presentation.
+
+The ordered-frame stabilizer is $\Spin(8)$ \cite[Theorem~2.7.1, printed p.~52]{yokota}; the frame space is $F_4/\Spin(8)$. Its tangent coordinates are the three off-diagonal octonionic pieces. Explicitly,
+\[
+ (u,v,w)\longmapsto
+ \left(F_{12}(u)-F_{13}(w),\;
+ F_{23}(v)-F_{12}(u),\;
+ F_{13}(w)-F_{23}(v)\right).
+\]
+Differentiating $e_i^2=e_i$, $e_i\circ e_j=0$, and $\sum e_i=1$ forces exactly these adjacent off-diagonal and opposite-sign conditions; reading the three upper entries is the inverse. Thus the dimensions are $3$ spectral coordinates and $24$ frame directions, totaling $27$ on the regular locus. They are not four scalar coordinates in disguise.
+
+\section{Literal M\"obius eigenlines and their coherent three-way returns}
+For $\theta\in\R$ set
+\[
+ A(\theta)=\begin{pmatrix}\cos\theta&\sin\theta\\\sin\theta&-\cos\theta\end{pmatrix},\qquad
+ v(\theta)=\binom{\cos(\theta/2)}{\sin(\theta/2)}.
+\]
+Direct trigonometric identities give $A(\theta)v(\theta)=v(\theta)$ and $A(\theta)^2=I$. Although $A(\theta+2\pi)=A(\theta)$,
+\begin{equation}\label{eq:mobius}
+ v(\theta+2\pi)=-v(\theta).
+\end{equation}
+The line projection $v(\theta)v(\theta)^T=(I+A(\theta))/2$ returns, but a continuously chosen unit vector does not.
+
+\begin{proposition}[The precise twisted bundle]
+The positive-eigenvalue line bundle over this circle is the M\"obius line bundle. Over the punctured traceless plane its total space is a three-dimensional manifold; it is not the vector space $\R^3$ with a globally defined extra coordinate.
+\end{proposition}
+\begin{proof}
+On the interval $[0,2\pi]$, use $v(\theta)$ to trivialize the eigenline. At the identified endpoints, \eqref{eq:mobius} identifies fibre coordinate $a$ with $-a$. This is exactly the clutching description of the M\"obius line bundle. There is no nonzero global section: such a section would give a continuous nonzero real function $f$ on the interval with $f(2\pi)=-f(0)$, violating the intermediate value theorem. Adding the positive radial coordinate gives base dimension two and fibre dimension one. The nontrivial gluing must be retained, rather than calling its total space a real vector space.
+\end{proof}
+This half-angle construction is the nonsingular real symmetric-matrix geometric phase treated in \cite[Proposition~6, \S3 and Appendix~B]{rondomanski}. We use no statement about passing through the scalar-matrix degeneracy.
+
+Now embed the corresponding rotations into real three-by-three matrices. Let $R_{12}(\phi)$ rotate the first two coordinates, fixing the third. Its conjugation on $J$ is a Jordan automorphism. In fact any real orthogonal $R$ satisfies
+\[
+ (RXR^T)\circ(RYR^T)=R(X\circ Y)R^T;
+\]
+expanding entries and using $R^TR=I$ proves the identity, with real coefficients permitting the contractions without octonion reassociation.
+
+For distinct real $q_i$, the path
+\[
+ X_\theta=R_{12}(\theta/2)\operatorname{diag}(q_1,q_2,q_3)R_{12}(\theta/2)^T
+\]
+returns its matrix and all three spectral idempotents at $2\pi$. The retained conjugating automorphism instead returns to conjugation by
+\[
+ D_{12}=\operatorname{diag}(-1,-1,1).
+\]
+In the coordinates \eqref{eq:albert} this is
+\[
+ (a,b,c;x,y,z)\longmapsto(a,b,c;-x,-y,z).
+\]
+Thus the real M\"obius sign has an explicit nontrivial action on two of the marked octonionic spaces. It belongs to the frame stabilizer, not to a newly adjoined scalar direction.
+
+\begin{theorem}[Coherent returns form a tetrahedral group]\label{thm:tetrahedral}
+Let
+\[
+ D_{23}=\operatorname{diag}(1,-1,-1),\quad
+ D_{31}=\operatorname{diag}(-1,1,-1),\quad
+ C=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix}.
+\]
+The three return matrices satisfy
+\[
+ D_{12}D_{23}=D_{31},\quad D_{12}D_{23}D_{31}=I,\quad
+ CD_{12}C^{-1}=D_{23}.
+\]
+They generate $V_4\rtimes C_3\cong A_4$. The subgroup $V_4$ is central in the ordered-frame stabilizer $\Spin(8)$. Their conjugation action on $J$ is faithful. Its action on the diagonal coefficient algebra has image $C_3$ and kernel $V_4$.
+\end{theorem}
+\begin{proof}
+The diagonal signs give a group $V_4$ with its three nonidentity elements cyclically permuted by $C$. The twelve matrices $DC^j$, $D\in V_4$, $0\le j<3$, are distinct: their underlying permutation distinguishes $j$, and then their signs distinguish $D$.
+
+They permute the tetrahedron vertices $(1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1)$. Each diagonal generator induces a double transposition, and $C$ induces a three-cycle. The action is faithful since these four vertices span $\R^3$, so the twelve-element group is the alternating group on these four vertices.
+
+A matrix $DC^j$ whose conjugation fixes every element of $J$ must first fix all diagonal idempotents, forcing $j=0$. Fixing all three $F_{ij}(1)$ then forces all pairwise products of the diagonal signs to be $1$. All signs are equal, and determinant $1$ in odd dimension forces $D=I$. On diagonal matrices all $D$ act trivially and $C$ acts as the three-cycle, proving the last assertion. Any frame-fixing Jordan automorphism preserves each Peirce space, because these spaces are defined by multiplication with the retained $e_i$. Each $D$ acts on each such space by a scalar sign and acts identically on the diagonal. It therefore commutes with every frame-fixing automorphism, proving the centrality assertion.
+\end{proof}
+
+This is an explicit endpoint representation of specified lifted loops, not a connection-independent global holonomy classification of $F_4/\Spin(8)$. The half-angle sign records winding parity only. To retain every winding, keep the real parameter or path class, or the workbench's full-turn operator construction, rather than replacing it with this finite image. The new $A_4$ calculation does not identify group order with a vector-space dimension.
+
+\section{The exact ES equation in this algebra and its integer marking}
+For ordered positive integer denominators $d=(x,y,z)$ use a distinct symbol $\mathsf X=x e_1+y e_2+z e_3$ for their spectral encoding. This is not an identification with the workbench's normalized Koide roots without its intervening chart maps.
+
+Let
+\[
+ T=\Tr\mathsf X=x+y+z,\quad
+ S=\tfrac12\big(T^2-\Tr\mathsf X^2\big)=xy+yz+zx,\quad
+ N=N_J(\mathsf X)=xyz.
+\]
+The cubic adjoint satisfies $\Tr(\mathsf X^\#)=S$ and $\mathsf X^{-1}=\mathsf X^\#/N$.
+
+\begin{proposition}[Inverse trace and the marked integral lattice]
+For every positive integer $p$ and positive integer triple $d$,
+\begin{equation}\label{eq:es}
+ \frac4p=\frac1x+\frac1y+\frac1z
+ \quad\Longleftrightarrow\quad
+ 4N_J(\mathsf X)=p\Tr(\mathsf X^\#).
+\end{equation}
+Write $Z=x+\omega y+\omega^2z=A+B\omega$. The exact integer lattice is
+\begin{equation}\label{eq:lattice}
+ T,A,B\in\Z,\qquad T\equiv A+B\pmod3,
+\end{equation}
+with inverse
+\[
+ (x,y,z)=\left(\frac{T+2A-B}{3},\frac{T-A+2B}{3},\frac{T-A-B}{3}\right).
+\]
+Positivity is exactly positivity of these three numerators. In these unnormalized coordinates, putting $n=A^2-AB+B^2$, equation \eqref{eq:es} is
+\begin{equation}\label{eq:es-fourier}
+ 4\big(T^3-3Tn+2\Rea(Z^3)\big)=9p(T^2-n).
+\end{equation}
+\end{proposition}
+\begin{proof}
+The inverse trace is $S/N$, giving \eqref{eq:es}. Since $Z=(x-z)+(y-z)\omega$, its two coefficients are $A=x-z$ and $B=y-z$. Solving these together with $T=x+y+z$ gives the inverse and the exact congruence. Positivity and both directions are immediate from the inverse. Scaling $T=3t,Z=3z$ in \eqref{eq:elementary} gives
+\[
+ S=(T^2-n)/3,\qquad
+ N=(T^3-3Tn+2\Rea(Z^3))/27,
+\]
+which proves \eqref{eq:es-fourier}.
+\end{proof}
+
+For every $\phi\in\Aut(J)$, the scalar function
+\[
+ \mathcal E_p(\mathsf X)=4N_J(\mathsf X)-pS(\mathsf X)
+\]
+is unchanged. One coordinate-free proof uses
+\[
+ N_J(X)=\tfrac16\big((\Tr X)^3-3\Tr X\Tr X^2+2\Tr X^3\big),
+\]
+and $\Tr X=\Tr_{\operatorname{End}(J)}L_X/9$; automorphisms conjugate multiplication operators. Therefore pure frame transport cannot turn a failed spectral triple into an ES triple. This is a precise limitation of that transport, not a refutation of a larger arithmetic construction using other maps.
+
+The original selector marking remains available before the spectral map. For a prime $p\equiv1\pmod4$, $0<R<p$ with $R\equiv3\pmod4$, $a=(p+R)/4$, and $u\mid a^2$, set
+\[
+ d_0=\gcd(a,u),\quad r=u/d_0,\quad s=a/d_0,\quad h=d_0/r.
+\]
+Valuation exponents show that these are positive integers, $a=hrs,u=hr^2$, and $\gcd(r,s)=1$. In the exterior channel use $\kappa=(pr+s)/R$ and ordered denominators $(hrs,hs\kappa,phr\kappa)$. In the middle channel use $\lambda=(r+s)/R$ and $(hrs,phs\lambda,phr\lambda)$. The spectral Fourier map has singleton fibres at fixed ordering; dropping $(p,R,u,h,r,s)$ and the tag is not authorized by that fact. No operator in this note is claimed to manufacture a missing selector marking.
+
+An additional elementary identity at every ES triple is
+\[
+ (4x-p)(4y-p)(4z-p)=p^2\big(4(x+y+z)-p\big),
+\]
+obtained by expanding the left side and cancelling $64xyz-16pS$. It is a cubic reformulation, not a pointwise existence argument.
+
+\section{What has been extracted and what has not}
+The coherent object is a marked cubic Jordan system: its three spectral coefficients, three octonionic Peirce spaces, quadratic and cubic invariants, explicitly lifted frame maps, and the original rational/integral markings. The three real-coordinate spin factor is a pairwise model, not the entire rank-three Albert algebra. On its rational ES/Koide form every nonzero vector is Jordan-invertible, but this is not ordinary associative division and does not generate the primewise integer lattice points in \eqref{eq:es}.
+
+A further directly related primary source found during the literature search is Baez and Pumpl\"un \cite{baezpumplun}: Theorem~4 describes a reversible marked-octonion construction from three-dimensional \emph{complex} geometry; Theorem~11 and Appendix~A give an explicit first-Tits/complex-Albert isomorphism. These are further comparison leads. They are not dependencies for the calculations here, nor a reason to identify complex dimension three with real dimension three. Their entire proof graph was not audited.
+
+\subsection*{Executable scope}
+Run \texttt{python verify.py --output checks.json}. The checker has no third-party dependencies and no removable assertions. It verifies the Jordan commutator and two determinant formulas as formal sparse-polynomial identities; it also checks 125 integer Fourier triples and all 15,625 ordered product pairs, 342 nonzero rational-spin inverse examples, the complete modulo-two descent table, all 12 tetrahedral matrices and their faithful action, 1,458 basis products for two Albert automorphism generators, 64 mixed Peirce basis products, 21 rational half-angle examples, and two fully marked ES examples. Basis verification proves the displayed bilinear intertwining identities; sample eigenvectors do not prove the topological monodromy, whose argument is written above. No Lean execution, new ES coverage bound, global ES proof, or historical novelty claim is made.
+
+\begingroup\small
+\begin{thebibliography}{9}\setlength{\itemsep}{2pt}
+\bibitem{baez} Baez, J. C. (2002). The octonions. \emph{Bulletin of the American Mathematical Society, 39}(2), 145--205. \url{https://math.ucr.edu/home/baez/octonions/}. Relevant loci: \S3.1 (two-by-two Jordan models), \S3.4 (Albert algebra, trace and determinant), \S4.2 ($F_4$ and triality). Errata published in 2005.
+\bibitem{yokota} Yokota, I. (2009). \emph{Exceptional Lie groups} [Preprint]. arXiv:0902.0431v1. \url{https://arxiv.org/abs/0902.0431}. Relevant loci: \S2.1; Theorem 2.7.1, printed p.~52 (PDF page 57), including the explicit frame-stabilizer map.
+\bibitem{rondomanski} Rondomanski, J., Cojal Gonz\'alez, J. D., Rabe, J. P., Palma, C.-A., \& Polthier, K. (2024). \emph{Geometric phase and holonomy in the space of 2-by-2 symmetric operators} [Preprint]. arXiv:2411.15038v1. \url{https://arxiv.org/abs/2411.15038}. Relevant loci: Proposition~6, \S3, \S4, Appendix~B. Only the nonsingular half-angle/eigenline construction is used here.
+\bibitem{workbench} The Clankers. (2026, September 10). \emph{One support, all cyclic degrees, and a reversible Koide--Jordan map}; \emph{A full turn that returns the frame but retains internal holonomy} [Incoming workbench notes]. \url{https://github.com/KokunoYumeto/erdos-straus-foundation/tree/c8aa929c7e7bfb8f5adb1c189c008c3dc0ce679b/research/incoming/2026-09-10-cyclic-support-jordan-koide}. The first note was re-read for this extraction; both were supplied in the preceding intake. The current note does not assert identification with a distinct, unidentified earlier M\"obius passage.
+\bibitem{baezpumplun} Baez, J., \& Pumpl\"un, S. (2026). \emph{Three-dimensional geometry in exceptional mathematics} [Preprint]. arXiv:2609.07538v1. \url{https://arxiv.org/html/2609.07538v1}. Search/read scope: introduction, Theorem~4, Theorem~11 and its displayed isomorphism. Further literature lead, not a proof dependency here.
+\end{thebibliography}
+\endgroup
+\end{document}

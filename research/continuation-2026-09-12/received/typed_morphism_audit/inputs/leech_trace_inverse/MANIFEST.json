@@ -1,0 +1,75 @@
+{
+  "scope": "Source, certificates, executable inverse, and nine-page proof note. Build intermediates and duplicate optimized-run certificates excluded.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2750,
+      "sha256": "332e5f9af98ad01591752c3d736882a92d33f0992c61c7933c428c874dc82d5b"
+    },
+    {
+      "path": "note.pdf",
+      "bytes": 414884,
+      "sha256": "55fb3f2a7823467ce5520dcc475ddbe0ba81cb80eba7f54c8dc1f77144e41af4"
+    },
+    {
+      "path": "note.tex",
+      "bytes": 27827,
+      "sha256": "f8fddc4cf10b49e4d242b520d0201a66d9d2ff450cc8d7bf112eb2433a71aaee"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 15517,
+      "sha256": "a6e90f48d69979a5e69040665dc6ca75b9605ee68dd5f8324da8389eb023f4f4"
+    },
+    {
+      "path": "reconstruct.py",
+      "bytes": 2662,
+      "sha256": "76b089baa31bb27a10dc816849f6f581fb47137c7f8cfd43ac5887342a9777ea"
+    },
+    {
+      "path": "execution_receipt.json",
+      "bytes": 2061,
+      "sha256": "5e49539d098a45bbdaaed7287a1ec109c39286dc7f852dd5b3b3585604c1ccdc"
+    },
+    {
+      "path": "source_reading.json",
+      "bytes": 3038,
+      "sha256": "18d9fabcb54a110458935698ab2bfa04e5615b2d71c1799a987a3cf2688054c7"
+    },
+    {
+      "path": "lean_ready_plan.md",
+      "bytes": 7022,
+      "sha256": "092e085cf8b2cdacc714480e0c75487502c8337f72be6f2bd01715f26d31066a"
+    },
+    {
+      "path": "visual_review.json",
+      "bytes": 298,
+      "sha256": "ecde24b452d05b4238794fcda986fba098e2462d82e01a7e80476cc34733c9a3"
+    },
+    {
+      "path": "certificates/arithmetic.json",
+      "bytes": 4728,
+      "sha256": "fdfc929c3c58c3d07993fc149d2b17fa46660b0220e7834b14b6293963129758"
+    },
+    {
+      "path": "certificates/shortest_lifts.json",
+      "bytes": 46489,
+      "sha256": "0188197541df7e71f7496b1d808e793dfe1b1895fe5dd8b824ca1f2c23ca531c"
+    },
+    {
+      "path": "certificates/summary.json",
+      "bytes": 364,
+      "sha256": "69bee4a880d5dd74c66cf7c12d86d3e894b4b7f8a5aef959a7df716c4e74778c"
+    },
+    {
+      "path": "certificates/trace_frame.json",
+      "bytes": 20521,
+      "sha256": "b9c4edf0cbbe37b41d90cd41ddd612cfab096581ae7b2a73a9c569249811c29d"
+    },
+    {
+      "path": "certificates/twelve_views.json",
+      "bytes": 8112,
+      "sha256": "3926b650c6613f3253d53044d0a7b08e68a2f0ccb043cc76aeedd212483da9b6"
+    }
+  ]
+}

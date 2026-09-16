@@ -1,0 +1,16 @@
+{
+  "name": "selectors",
+  "mode": "normal",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/typed_morphism_audit/inputs/erdos_straus_research/verifier.py",
+    "--bound",
+    "2000000",
+    "--families",
+    "--out",
+    "/mnt/data/typed_morphism_audit/replays/selectors/normal"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 23.090119448999985,
+  "source_sha256": "e95ba8a5621202d460695a5cc7dfdfbeea0550326db313c9567bd52002b4206a"
+}

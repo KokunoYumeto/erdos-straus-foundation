@@ -1,0 +1,216 @@
+{
+  "date": "2026-09-12",
+  "records": [
+    {
+      "codomain": "u positive dividing a^2 with p,a retained",
+      "domain": "p prime=1 mod4; p/4<a<3p/4; exponent f_q in [0,2v_q(a)]",
+      "exceptional_locus": "No angle or R<p cutoff permitted for global failure.",
+      "fibres": "singletons",
+      "id": "D01_full_box",
+      "inverse": "f_q=v_q(u)",
+      "map": "u=product(q^f_q)",
+      "scope": "Inherited complete divisor coordinates; exact enumerated domain."
+    },
+    {
+      "codomain": "(p,R,u,h,r,s,E/M,kappa/lambda)",
+      "domain": "(p,a,u,E/M)",
+      "exceptional_locus": "Quotient is allowed to be rational on failed candidates.",
+      "fibres": "singletons",
+      "id": "D02_primitive",
+      "inverse": "a=hrs; u=hr^2",
+      "map": "g=gcd(a,u); R=4a-p; r=u/g; s=a/g; h=g^2/u; kappa=(pr+s)/R or lambda=(r+s)/R",
+      "scope": "Extension keeps unsuccessful rational candidates."
+    },
+    {
+      "codomain": "positive rational ordered ES triple at p",
+      "domain": "canonical exterior candidates",
+      "exceptional_locus": "For arbitrary ordered integral witnesses with v_p(RY-pa)=2, retain the exterior swap.",
+      "fibres": "singletons in canonical order",
+      "id": "D03_rational_E",
+      "inverse": "u=a^2/(RY-pa)",
+      "map": "(a,(pa+a^2/u)/R,(pa+p^2u)/R)",
+      "scope": "Inherited channel formula, extended before divisibility gate."
+    },
+    {
+      "codomain": "positive rational ordered ES triple at p",
+      "domain": "canonical middle candidates",
+      "exceptional_locus": "Y=Z exactly u=a; no extra middle swap bit.",
+      "fibres": "singletons in canonical order",
+      "id": "D04_rational_M",
+      "inverse": "u=pa^2/(RY-pa)",
+      "map": "(a,p(a+a^2/u)/R,p(a+u)/R)",
+      "scope": "Inherited channel formula; full rational collision stratum retained."
+    },
+    {
+      "codomain": "minimal common reduced denominator D",
+      "domain": "full candidate with original p",
+      "exceptional_locus": "D=1 success; otherwise odd D in [3,2p-3], gcd(D,p)=1.",
+      "fibres": "Forgetting candidate loses fibres; no claim D alone is injective.",
+      "id": "D05_return_defect",
+      "inverse": "With cleared X and p: D=4product(X)/(p*S(X))",
+      "map": "D_E=R/gcd(R,4u+1); D_M=R/gcd(R,u+a)",
+      "scope": "Proved exact common-denominator theorem."
+    },
+    {
+      "codomain": "(original p, scaled parameter pD, integral ordered X)",
+      "domain": "(p,candidate,D)",
+      "exceptional_locus": "Forgetting p permits distinct integral models of the same projective point.",
+      "fibres": "singletons with p and canonical order retained",
+      "id": "D06_clearing",
+      "inverse": "D=4product(X)/(pS(X)); q=X/D; candidate inverse D03/D04",
+      "map": "X=D*q; F_p(X)=p(D-1)S(X)",
+      "scope": "Failed states map to genuine integral ES solutions at pD, not p."
+    },
+    {
+      "codomain": "exterior-middle correspondence at fixed p,R",
+      "domain": "(p,a,u_E,u_M) with u_E,u_M|a^2 and u_M=p*u_E modR",
+      "exceptional_locus": "Some exterior states have no middle partner.",
+      "fibres": "complete finite relation; not an everywhere-defined map",
+      "id": "D07_same_shell",
+      "inverse": "reverse the ordered pair of divisors",
+      "map": "retains both actual divisors; D_E(u_E)=D_M(u_M)",
+      "scope": "Defect preserved, including when D>1."
+    },
+    {
+      "codomain": "(p,a,a^2/u,M)",
+      "domain": "(p,a,u,M)",
+      "exceptional_locus": "Fixed rational point u=a is a failed, repeated-root state.",
+      "fibres": "singletons",
+      "id": "D08_complement",
+      "inverse": "itself",
+      "map": "reverses Y,Z and preserves D",
+      "scope": "Full rational complement, unlike integral-only fixed-point-free locus."
+    },
+    {
+      "codomain": "prime-labelled valuation deficits",
+      "domain": "failed canonical candidates",
+      "exceptional_locus": "A union of obstructions on different leaves is not one common local obstruction.",
+      "fibres": "Each leaf may have several obstruction primes; chosen minimum canonical.",
+      "id": "D09_prime_obstruction",
+      "inverse": "Recompute each full box leaf and all deficits; not from ell alone.",
+      "map": "choose least ell|D; v_ell(R)>v_ell(g_c(u))",
+      "scope": "Constructive negative certificate; scope must be full to imply ES failure."
+    },
+    {
+      "codomain": "A_p=Q^candidates, H multiplication by (D-1)/2",
+      "domain": "complete finite labelled candidate set",
+      "exceptional_locus": "Operator invertibility is equivalent to failure, not independently proved for a prime.",
+      "fibres": "No arithmetic labels forgotten.",
+      "id": "D10_diagonal_algebra",
+      "inverse": "Read coordinate label of any zero, or multiply by the displayed inverse",
+      "map": "ker H gives successes; when all D>1 inverse is pointwise 2/(D-1)",
+      "scope": "Exact two-sided certificate encoding."
+    },
+    {
+      "codomain": "multiplicity function mu on units moduloR",
+      "domain": "actual signed exponent box",
+      "exceptional_locus": "Target set {-1,-p,-p^-1} uses distinct elements only.",
+      "fibres": "residue fibres retain multiplicity; reduction alone is not injective",
+      "id": "D11_energy_packet",
+      "inverse": "actual beta in target yields u=product q^(e+beta); negate beta for target -p when needed",
+      "map": "beta->product q^beta; retain full fibre table",
+      "scope": "Integer energy lower bound on every failed shell; strict reverse extracts witness."
+    },
+    {
+      "codomain": "middle candidate with full p,R,u,h,r,s,lambda",
+      "domain": "R,H,A|a and actual t|a/A outsideH; nd|A,gcd(n,d)=1,n/d=-t^-1 modR",
+      "exceptional_locus": "Positive chamber sufficient test is tn>8d; not assumed for an arbitrary p.",
+      "fibres": "finite fibres over retained anchor pairs",
+      "id": "D12_anchor_packet",
+      "inverse": "for each anchor pair t=ds/(nr); require integer t|a/A; g=d/r",
+      "map": "g=gcd(d,tn); r=d/g; s=tn/g; h=ag^2/(dtn); u=ad/(tn); lambda=(d+tn)/(gR)",
+      "scope": "Improved using exact greatest outside divisor, not subgroup-generated availability."
+    },
+    {
+      "codomain": "raw and cleared affine Cayley vectors",
+      "domain": "(p,q,D) positive rational candidate",
+      "exceptional_locus": "All coordinates nonzero; a repeated middle pair remains labelled.",
+      "fibres": "projective quotient identifies the pair; raw scale retained",
+      "id": "D13_cayley",
+      "inverse": "q_j=a_(j+1)/4; recover p=-a_0 and D from scales or D05",
+      "map": "a=(-p,4q_0,4q_1,4q_2); a_clear=D*a",
+      "scope": "Both lie on e3=0; clearing changes the arithmetic parameter."
+    },
+    {
+      "codomain": "three ordered face roots plus raw face scale a_i",
+      "domain": "ordered raw Cayley coordinates plus one of24 flags (i,j,k,l)",
+      "exceptional_locus": "Labels remain distinct even when numerical roots coincide.",
+      "fibres": "singletons with labels, orientation and affine scale retained",
+      "id": "D14_four_faces",
+      "inverse": "a_q=-4a_i/t_iq; same for cleared scales",
+      "map": "t_iq=-4a_i/a_q; sum roots=4",
+      "scope": "All24flags checked for seven rational/integral candidates."
+    },
+    {
+      "codomain": "linear/quadratic factor pair and Fable coordinates",
+      "domain": "face roots r,s,t with derivative d=-(r-s)(r-t)/4",
+      "exceptional_locus": "d=0: retain raw factors and record that normalized chart is unavailable; no division by zero.",
+      "fibres": "Selects a typed factor, not an unlabelled cubic root.",
+      "id": "D15_factor_normalization",
+      "inverse": "Retain d and companion difference s-t; multiply and read marked roots.",
+      "map": "raw L=U-rV, raw Q=-(U-sV)(U-tV)/4; if d!=0, L/d,dQ",
+      "scope": "Fable chart formulas replayed only on their actual simple-root locus."
+    },
+    {
+      "codomain": "b=(a0a1+a2a3,a0a2+a1a3,a0a3+a1a2)",
+      "domain": "raw Cayley vector and companion matching labels",
+      "exceptional_locus": "Coincident b retained on repeated-root strata.",
+      "fibres": "resolvent is an observation with retained upstream fibre",
+      "id": "D16_resolvent",
+      "inverse": "Use retained raw coordinates/face maps; b alone not asserted injective.",
+      "map": "clearing D scales b by D^2",
+      "scope": "Degree-two scaling checked on all examples."
+    },
+    {
+      "codomain": "full Leech lambda",
+      "domain": "integral cleared trace X in Z^3 and k in kerP",
+      "exceptional_locus": "Do not discard k for subsequent actions by J,T.",
+      "fibres": "rank21 fibre over X; tested section k=0",
+      "id": "D17_trace_lift",
+      "inverse": "X=P(lambda), k=lambda-sigma(P(lambda))",
+      "map": "sigma(X)+k with explicit b0,Cb0,C^2b0",
+      "scope": "Inherited integral inverse; basis membership and right inverse replayed."
+    },
+    {
+      "codomain": "759 octad traces a_B=sum_B x_i/4",
+      "domain": "full Leech numerator x",
+      "exceptional_locus": "Linear compatibility and delta=(11S-23S_0)/506=0 mod4 required.",
+      "fibres": "singletons on exact image",
+      "id": "D18_all_octads",
+      "inverse": "x_i=(23S_i-7S)/1012",
+      "map": "S=sum_B a_B, S_i=sum_(B contains i)a_B",
+      "scope": "Complete trace inverse/syndrome tested; theorem inherited."
+    },
+    {
+      "codomain": "three ordered Wilson octonions",
+      "domain": "full Leech numerator",
+      "exceptional_locus": "Joint pair/triple lattice congruences checked, not merely norm.",
+      "fibres": "singletons on image lattice",
+      "id": "D19_octonions",
+      "inverse": "signed inverse numerator permutation",
+      "map": "pinned signed permutation y_i=eps_i x_pi(i), then z_j=(y_(8j+r))/2",
+      "scope": "Dictionary pinned; infinite-lattice isometry theorem inherited."
+    },
+    {
+      "codomain": "compact marked Albert matrix",
+      "domain": "Leech state with trace X and ordered z_i",
+      "exceptional_locus": "Full defect is F_p(X)+sum(p-4X_i)N(z_i)+4nu, not just F_p(X).",
+      "fibres": "singletons on specified image",
+      "id": "D20_Albert",
+      "inverse": "read off-diagonal entries and signed inverse, then confirm diagonal=P(lambda)",
+      "map": "diagonal X; off-diagonal z; keep nu=2Re((z0*z1)*z2)",
+      "scope": "All seven numerical cubic correction identities checked."
+    },
+    {
+      "codomain": "labelled multiplication operators",
+      "domain": "bijection f between fully retained state spaces",
+      "exceptional_locus": "A noninjective observation needs its fibre; a state-changing operation recomputesD.",
+      "fibres": "same success kernels/inverse certificates",
+      "id": "D21_operator_transport",
+      "inverse": "use f^-1",
+      "map": "H_new=f_* H_old f_*^-1 with multiplier delta o f^-1",
+      "scope": "Abstract conjugacy proved coordinatewise; not a new existence theorem."
+    }
+  ],
+  "schema": "es-dual-morphism-delta/1"
+}

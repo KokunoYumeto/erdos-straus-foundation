@@ -1,0 +1,102 @@
+{
+  "format": "selected-source-reading/1",
+  "date": "2026-09-11",
+  "archive_sha256": "cedae4470c6d2e5a1ac50ef71b4f1e605fe892c801b5c118ba45f35dad8ff0d8",
+  "selection_policy": "Selected mathematical source identities only; no raw conversations, personal details, original thesis payload, or full private inventory republished. Not all archive contents were read.",
+  "records": [
+    {
+      "source_kind": "user_supplied_mathematical_document",
+      "member_basename": "ternary_recovery_terzo_functor_note13_20260711.md",
+      "sha256": "858be24e780cfd104e9d949444a254a1d2aa49c624d6cd5d9501b3691a25f35e",
+      "bytes": 7195,
+      "reading_scope": "Read: full ternary-recovery statement, tensor-versus-contraction distinction, period requirement, and conditional TERZO programme. Source notes supply antecedents, not independent proof certification."
+    },
+    {
+      "source_kind": "user_supplied_mathematical_document",
+      "member_basename": "terzo_grounding_note8_20260711.md",
+      "sha256": "c51c1121e1e8fce9fdda408461ca6b7ac7d9f357c39453bcf60fbe19b4670df2",
+      "bytes": 4601,
+      "reading_scope": "Read: grounding and conditional status of the exponential-kernel statement; checked against primary thesis."
+    },
+    {
+      "source_kind": "user_supplied_mathematical_document",
+      "member_basename": "blade_cd_terzo_bridge.tex",
+      "sha256": "6408008fb9718a7700609b61aa6d8ad54505d23f0112b0a30aaf40bd56b1584f",
+      "bytes": 29561,
+      "reading_scope": "Targeted mathematical reading: blade/CD convention, original products and exponential bridge."
+    },
+    {
+      "source_kind": "user_supplied_mathematical_document",
+      "member_basename": "verify_k4_ternary_recovery.py",
+      "sha256": "259310831c1eb401b095de269119429569447797eab89d6d14a82a9a41cda072",
+      "bytes": 7183,
+      "reading_scope": "Read source conventions and check targets; fresh standard-library implementation independently reconstructed the seed multiplication and both kernel/fixed-space containments."
+    },
+    {
+      "source_kind": "user_supplied_mathematical_document",
+      "member_basename": "terzo_extracted_text.txt",
+      "sha256": "1615336ce96dd35366d98cc5bdfe1072e18196ef0612801e8eb6a24f3814e903",
+      "bytes": 154229,
+      "reading_scope": "Primary thesis text: section 2.4, Theorem 2.4.1, pages 26 onward; section 2.4.1, Theorem 2.4.2, pages 33 onward; not full thesis audit."
+    },
+    {
+      "source_kind": "user_supplied_mathematical_document",
+      "member_basename": "cumulative_nullity_k4_ledger.tex",
+      "sha256": "61c363cd1a5807824361988674a3baffb791a3b92ba9d09d4985ae52b791ec21",
+      "bytes": 38281,
+      "reading_scope": "Targeted reading of operation/nullity lineage, not acceptance of every ledger claim."
+    },
+    {
+      "source_kind": "user_supplied_mathematical_document",
+      "member_basename": "full_noncommutative_k4_operation.tex",
+      "sha256": "6c6e860c16af083282ad5bf07df3afc18053a2f26d2b6ab27ef7c88415121ea1",
+      "bytes": 25547,
+      "reading_scope": "Targeted reading of the full noncommutative operation and its retained source conventions."
+    },
+    {
+      "source_kind": "user_supplied_mathematical_document",
+      "member_basename": "terzo_cc_cvs_jt_deformation_intertwiner.tex",
+      "sha256": "baf7db6506710ca9aa5b7705c7d5687b4e66536c08a9fe77549abbc041bc9044",
+      "bytes": 25180,
+      "reading_scope": "Targeted reading of the proposed deformation/intertwiner programme; its hoped-for endpoint is not adopted as a theorem."
+    }
+  ],
+  "public_primary_sources": [
+    {
+      "author": "Bhargava and Ho",
+      "year": 2013,
+      "id": "arXiv:1306.4424v1",
+      "used": "sections 3.2.2-3.2.3, page 19; section 5.1.1, following Lemma 5.3, page 35",
+      "scope": "Original triangle-incidence and translation result; those pages rendered and inspected."
+    },
+    {
+      "author": "Baez and Pumplun",
+      "year": 2026,
+      "id": "arXiv:2609.07538v1",
+      "used": "section 5 equations (10)-(15), Theorem 11 and Appendix A; section 6 equations (16)-(20)",
+      "scope": "Original explicit presentation of classical first Tits/Zorn and graded E6 constructions. Norm and entry conventions independently verified; not a whole-preprint audit."
+    },
+    {
+      "author": "Milne",
+      "year": 2006,
+      "title": "Elliptic Curves",
+      "used": "Chapter II, Theorem 4.1 and Corollary 4.2, pp.62-64; Corollary 5.7, p.66",
+      "scope": "Good reduction and torsion theorem."
+    },
+    {
+      "author": "Wilson",
+      "year": 2009,
+      "id": "10.1016/j.jalgebra.2009.03.021",
+      "used": "Revised author preprint, 20 March 2009, sections 2-4, pp.2-5",
+      "scope": "Full short-shell definitions inspected, including screenshot confirmation of bars and multiplication order. New checker replayed complete listed shell."
+    },
+    {
+      "author": "Heath-Brown",
+      "year": 2002,
+      "id": "arXiv:math/0210333v1",
+      "used": "section 1, page 1",
+      "scope": "Classical Cayley cubic identification only; no density input."
+    }
+  ],
+  "novelty_scope": "Content-level searching identified major exact antecedents. No comprehensive novelty or historical-priority claim."
+}

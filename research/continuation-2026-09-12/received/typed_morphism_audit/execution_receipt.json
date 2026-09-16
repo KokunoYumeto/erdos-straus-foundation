@@ -1,0 +1,218 @@
+{
+  "core_output_hashes": {
+    "all_marked_fable_junctions.json": "8d997e25eb4d67f8839a183a47e6304cd3bc96d2f80787c7cdcae63fd4e6074e",
+    "audit_algebra.json": "05bff615652dfda5c988d040f284ebab677f2a57abb2c8aaa84171d847d11a03",
+    "audit_receipt.json": "8c2a7eddd45e96416bf0ffd5ffd3e40188d130ae8074200003b3975b3cf6a857",
+    "complete_octad_trace.json": "c926dc5fb3b3bd896caa25e879545e6d8994777cbdab3b604095dd5e0f8bf8f7",
+    "end_to_end_returns.json": "4170c0f2dc443c26f3173eb43ed3a54ec1fce6e91348c9c93ae4cca2dd52bd44"
+  },
+  "date": "2026-09-12",
+  "eight_seed_output_identical": true,
+  "eight_seed_scope": {
+    "complete_trace_residues": 64,
+    "file": "certificates/shortest_eight_seed.json",
+    "norm_four_seeds": 8,
+    "norm_six_seed": 1
+  },
+  "environment": {
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "morphism_count": 49,
+  "new_core": {
+    "arithmetic_inputs": 3,
+    "codewords": 4096,
+    "conditions": 6228,
+    "counts": {
+      "Cayley-full-equation": 3,
+      "Cayley-open-domain": 72,
+      "Golay-Wilson-Zorn-Tits-return": 37,
+      "Golay-dimension": 1,
+      "Golay-enumerator": 1,
+      "all-cubic-mixed-corrections": 37,
+      "all-generator-image-memberships": 37,
+      "all-octad-linear-inverse": 38,
+      "augmented-Albert-return": 37,
+      "code-generator-action": 36,
+      "complete-channel-mark-return": 72,
+      "complete-cubic-test-dimension": 1,
+      "complete-four-face-orientation-fibres": 3,
+      "complete-ternary-cubic-coefficients": 1,
+      "constant-trace-obstruction": 1,
+      "cubic-does-not-descend-through-trace": 1,
+      "derivative-transition": 72,
+      "end-to-end-Fable-to-ES": 72,
+      "end-to-end-Leech-Albert-trace": 72,
+      "end-to-end-selector-integrality": 72,
+      "exact-cubic-return": 37,
+      "exact-mod-four-syndrome": 148,
+      "factor-affine-normalization": 432,
+      "factor-chart-two-sided-return": 432,
+      "factor-resultant": 432,
+      "four-face-scale-return": 72,
+      "four-face-transition": 72,
+      "full-cubic-polarization-grid": 2600,
+      "full-lattice-generator-count": 1,
+      "full-octad-orbit": 1,
+      "full-section-cubic-identity": 10,
+      "generator-typed-flag-equivariance": 13,
+      "hidden-nine-trace-kernel": 1,
+      "incidence-Gram": 576,
+      "integral-octad-basis-minor": 1,
+      "isometry-two-sided-return": 37,
+      "joint-symmetry-group": 1,
+      "marked-fable-inverse": 432,
+      "nine-trace-nonclosure-witness": 1,
+      "octad-block-alignment": 3,
+      "order-four-not-order-two": 1,
+      "orientation-transition": 72,
+      "oriented-companion-equation": 72,
+      "oriented-companion-inverse": 72,
+      "phase-isometry-not-cubic-automorphism": 1,
+      "quadratic-trace-corrections": 37,
+      "signed-coordinate-isometry": 1,
+      "split-move-retains-cubic-norm": 1,
+      "split-to-compact-domain-guard": 1,
+      "trace-span-ranks": 1,
+      "twelve-branch-label-bijection": 1
+    },
+    "distinct_face_local_factor_instances": 216,
+    "factor_return_evaluations_including_transition": 432,
+    "finite_group_elements": 6072,
+    "full_homogeneous_cubic_test_nodes": 2600,
+    "not_claimed": [
+      "independent reviewer",
+      "a Lean build",
+      "global ES/RH proof",
+      "full literature priority",
+      "a cubic-norm identification with trace product"
+    ],
+    "octads": 759,
+    "oriented_and_reversed_flags": 72,
+    "source_sha256": "068570e5e993470c5b0f068889ec16af463d01c1645d32ab1f8c5cb562423009",
+    "status": "PASS"
+  },
+  "new_runs": [
+    {
+      "command": [
+        "python",
+        "verify_audit.py",
+        "--out",
+        "certificates/fresh"
+      ],
+      "elapsed_seconds": 3.401293,
+      "exit_code": 0,
+      "log": "logs/final_run_00.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "cd1f53a84ac86900aba9ad8570203ad325412a060c79027fa1153ba0a05830e5"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify_audit.py",
+        "--out",
+        "certificates/optimized"
+      ],
+      "elapsed_seconds": 3.362701,
+      "exit_code": 0,
+      "log": "logs/final_run_01.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "cd1f53a84ac86900aba9ad8570203ad325412a060c79027fa1153ba0a05830e5"
+    },
+    {
+      "command": [
+        "python",
+        "verify_shortest.py",
+        "--out",
+        "certificates/shortest_eight_seed.json"
+      ],
+      "elapsed_seconds": 0.83266,
+      "exit_code": 0,
+      "log": "logs/final_run_02.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "954fbeb5f941e5d41d2aa894db855bf6e8a9ca7382bf0ef226af05d54748ac54"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify_shortest.py",
+        "--out",
+        "certificates/shortest_eight_seed_optimized.json"
+      ],
+      "elapsed_seconds": 0.841055,
+      "exit_code": 0,
+      "log": "logs/final_run_03.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "954fbeb5f941e5d41d2aa894db855bf6e8a9ca7382bf0ef226af05d54748ac54"
+    },
+    {
+      "command": [
+        "python",
+        "test_validation.py"
+      ],
+      "elapsed_seconds": 7.941999,
+      "exit_code": 0,
+      "log": "logs/final_run_04.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "96a571a809a85421f5eed79dffdfdba155d14401262f5b20749803b4a1832017"
+    },
+    {
+      "command": [
+        "python",
+        "reconstruct_octad.py",
+        "--self-test"
+      ],
+      "elapsed_seconds": 0.852244,
+      "exit_code": 0,
+      "log": "logs/final_run_05.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a3d1a8084337e5758b9bc6c473c878b4d2eb5acdaead7a1c61b08ea5fa407edc"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "reconstruct_octad.py",
+        "--self-test"
+      ],
+      "elapsed_seconds": 0.850378,
+      "exit_code": 0,
+      "log": "logs/final_run_06.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a3d1a8084337e5758b9bc6c473c878b4d2eb5acdaead7a1c61b08ea5fa407edc"
+    }
+  ],
+  "no_remote_writes": true,
+  "nonclaims": [
+    "Compiled Lean proof",
+    "Independent mathematical reviewer",
+    "Global literature priority",
+    "Universal ES or RH proof",
+    "Equivariance of a quotient whose kernel is not invariant",
+    "Equality of the full Albert cubic and the three-trace product"
+  ],
+  "normal_optimized_core_identical": true,
+  "original_inputs": {
+    "all_sha256_unchanged": true,
+    "bytes": 18293639,
+    "files": 105,
+    "inventory": "source_inventory.json"
+  },
+  "predecessor_replay": {
+    "all_exit_zero": true,
+    "all_pair_file_hashes_equal": true,
+    "interpretation": "Replay is a finite execution check, not an independent review or proof of every written general statement.",
+    "normal_optimized_pairs": 8,
+    "processes": 18,
+    "receipt": "replay_receipts.json"
+  },
+  "status": "PASS",
+  "validation_regressions": {
+    "file": "certificates/validation_regressions.json",
+    "mutated_copies_only": true,
+    "purpose": "Demonstrate original CLI validation holes and rejection by the patched CLI; unchanged original mathematical certificates pass.",
+    "status": "PASS"
+  }
+}

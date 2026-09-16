@@ -1,0 +1,43 @@
+{
+  "python": "3.13.5",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "verify.py",
+        "--out",
+        "certificates"
+      ],
+      "elapsed_seconds": 2.349,
+      "returncode": 0,
+      "stdout": "{\"A4_order\": 12, \"Golay_codewords\": 4096, \"exact_check_count\": 618196, \"generated_PSL2_order\": 6072, \"minimal_shell_vectors\": 196560, \"network_access\": false, \"prior_checker_imports\": false, \"scope\": \"Finite exact algebra, full code/group replay, branch maps, minimal-shell membership, formal Mellin factors; no analytic theorem-prover run.\", \"source_normalization_factor\": 4, \"status\": \"PASS\", \"stdlib_only\": true, \"theta_coefficients_checked\": 40}\n",
+      "stderr": "",
+      "files": {
+        "analytic_constants.json": "f037ef399e220c7b71fe310093e65fa7992eea21e33b81c555c895aa7a6c9867",
+        "finite_receipt.json": "be968c572e917606fcf5425146dd62a90490c7c620ee3c39872c84636923d344",
+        "leech_branches.json": "ee0fb4ef57df0229a8716f9351f1f7119a4d50e67a5ffa4aedafc411cc62dcbb"
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify.py",
+        "--out",
+        "optimized"
+      ],
+      "elapsed_seconds": 3.768,
+      "returncode": 0,
+      "stdout": "{\"A4_order\": 12, \"Golay_codewords\": 4096, \"exact_check_count\": 618196, \"generated_PSL2_order\": 6072, \"minimal_shell_vectors\": 196560, \"network_access\": false, \"prior_checker_imports\": false, \"scope\": \"Finite exact algebra, full code/group replay, branch maps, minimal-shell membership, formal Mellin factors; no analytic theorem-prover run.\", \"source_normalization_factor\": 4, \"status\": \"PASS\", \"stdlib_only\": true, \"theta_coefficients_checked\": 40}\n",
+      "stderr": "",
+      "files": {
+        "analytic_constants.json": "f037ef399e220c7b71fe310093e65fa7992eea21e33b81c555c895aa7a6c9867",
+        "finite_receipt.json": "be968c572e917606fcf5425146dd62a90490c7c620ee3c39872c84636923d344",
+        "leech_branches.json": "ee0fb4ef57df0229a8716f9351f1f7119a4d50e67a5ffa4aedafc411cc62dcbb"
+      }
+    }
+  ],
+  "normal_optimized_byte_identity": true,
+  "verification_scope": "Finite exact algebra, code, lattice-shell and coefficient calculations. General analytic claims have written proofs; no numerical integral, theorem-prover build or independent reviewer is substituted.",
+  "verifier_sha256": "a4e242cdd429eb51319d24ae545429710b9b562b7bc1ddaa24ed7e35fd007dd1"
+}

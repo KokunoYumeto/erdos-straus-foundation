@@ -1,0 +1,13 @@
+{
+  "name": "cayley",
+  "mode": "normal",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/typed_morphism_audit/inputs/cayley_fable_bridge/verify.py",
+    "--out",
+    "/mnt/data/typed_morphism_audit/replays/cayley/normal"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 2.1467400059999875,
+  "source_sha256": "afbf088bfbb5ebea32adcfcbd7a9889c54e77e1b080f9a4f176f399f6d5c2f02"
+}

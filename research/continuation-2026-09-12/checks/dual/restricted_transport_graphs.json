@@ -1,0 +1,677 @@
+[
+  {
+    "R": 15,
+    "a": 64,
+    "components": [
+      {
+        "D": 3,
+        "nodes": [
+          0,
+          1,
+          8,
+          9,
+          16,
+          17,
+          24,
+          25
+        ]
+      },
+      {
+        "D": 5,
+        "nodes": [
+          2,
+          3,
+          6,
+          7,
+          10,
+          11,
+          14,
+          15,
+          18,
+          19,
+          22,
+          23
+        ]
+      },
+      {
+        "D": 15,
+        "nodes": [
+          4,
+          5,
+          12,
+          13,
+          20,
+          21
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "D": 3,
+        "channel": "E",
+        "u": 1
+      },
+      {
+        "D": 3,
+        "channel": "M",
+        "u": 1
+      },
+      {
+        "D": 5,
+        "channel": "E",
+        "u": 2
+      },
+      {
+        "D": 5,
+        "channel": "M",
+        "u": 2
+      },
+      {
+        "D": 15,
+        "channel": "E",
+        "u": 4
+      },
+      {
+        "D": 15,
+        "channel": "M",
+        "u": 4
+      },
+      {
+        "D": 5,
+        "channel": "E",
+        "u": 8
+      },
+      {
+        "D": 5,
+        "channel": "M",
+        "u": 8
+      },
+      {
+        "D": 3,
+        "channel": "E",
+        "u": 16
+      },
+      {
+        "D": 3,
+        "channel": "M",
+        "u": 16
+      },
+      {
+        "D": 5,
+        "channel": "E",
+        "u": 32
+      },
+      {
+        "D": 5,
+        "channel": "M",
+        "u": 32
+      },
+      {
+        "D": 15,
+        "channel": "E",
+        "u": 64
+      },
+      {
+        "D": 15,
+        "channel": "M",
+        "u": 64
+      },
+      {
+        "D": 5,
+        "channel": "E",
+        "u": 128
+      },
+      {
+        "D": 5,
+        "channel": "M",
+        "u": 128
+      },
+      {
+        "D": 3,
+        "channel": "E",
+        "u": 256
+      },
+      {
+        "D": 3,
+        "channel": "M",
+        "u": 256
+      },
+      {
+        "D": 5,
+        "channel": "E",
+        "u": 512
+      },
+      {
+        "D": 5,
+        "channel": "M",
+        "u": 512
+      },
+      {
+        "D": 15,
+        "channel": "E",
+        "u": 1024
+      },
+      {
+        "D": 15,
+        "channel": "M",
+        "u": 1024
+      },
+      {
+        "D": 5,
+        "channel": "E",
+        "u": 2048
+      },
+      {
+        "D": 5,
+        "channel": "M",
+        "u": 2048
+      },
+      {
+        "D": 3,
+        "channel": "E",
+        "u": 4096
+      },
+      {
+        "D": 3,
+        "channel": "M",
+        "u": 4096
+      }
+    ],
+    "p": 241,
+    "scope": "restricted single shell",
+    "undirected_edges": [
+      [
+        0,
+        1,
+        "exterior_middle_congruence"
+      ],
+      [
+        0,
+        9,
+        "exterior_middle_congruence"
+      ],
+      [
+        0,
+        17,
+        "exterior_middle_congruence"
+      ],
+      [
+        0,
+        25,
+        "exterior_middle_congruence"
+      ],
+      [
+        1,
+        25,
+        "middle_complement"
+      ],
+      [
+        2,
+        3,
+        "exterior_middle_congruence"
+      ],
+      [
+        2,
+        11,
+        "exterior_middle_congruence"
+      ],
+      [
+        2,
+        19,
+        "exterior_middle_congruence"
+      ],
+      [
+        3,
+        23,
+        "middle_complement"
+      ],
+      [
+        4,
+        5,
+        "exterior_middle_congruence"
+      ],
+      [
+        4,
+        13,
+        "exterior_middle_congruence"
+      ],
+      [
+        4,
+        21,
+        "exterior_middle_congruence"
+      ],
+      [
+        5,
+        21,
+        "middle_complement"
+      ],
+      [
+        6,
+        7,
+        "exterior_middle_congruence"
+      ],
+      [
+        6,
+        15,
+        "exterior_middle_congruence"
+      ],
+      [
+        6,
+        23,
+        "exterior_middle_congruence"
+      ],
+      [
+        7,
+        19,
+        "middle_complement"
+      ],
+      [
+        8,
+        9,
+        "exterior_middle_congruence"
+      ],
+      [
+        8,
+        17,
+        "exterior_middle_congruence"
+      ],
+      [
+        8,
+        25,
+        "exterior_middle_congruence"
+      ],
+      [
+        9,
+        17,
+        "middle_complement"
+      ],
+      [
+        10,
+        11,
+        "exterior_middle_congruence"
+      ],
+      [
+        10,
+        19,
+        "exterior_middle_congruence"
+      ],
+      [
+        11,
+        15,
+        "middle_complement"
+      ],
+      [
+        12,
+        13,
+        "exterior_middle_congruence"
+      ],
+      [
+        12,
+        21,
+        "exterior_middle_congruence"
+      ],
+      [
+        14,
+        15,
+        "exterior_middle_congruence"
+      ],
+      [
+        14,
+        23,
+        "exterior_middle_congruence"
+      ],
+      [
+        16,
+        17,
+        "exterior_middle_congruence"
+      ],
+      [
+        16,
+        25,
+        "exterior_middle_congruence"
+      ],
+      [
+        18,
+        19,
+        "exterior_middle_congruence"
+      ],
+      [
+        20,
+        21,
+        "exterior_middle_congruence"
+      ],
+      [
+        22,
+        23,
+        "exterior_middle_congruence"
+      ],
+      [
+        24,
+        25,
+        "exterior_middle_congruence"
+      ]
+    ]
+  },
+  {
+    "R": 35,
+    "a": 18,
+    "components": [
+      {
+        "D": 7,
+        "nodes": [
+          0,
+          3,
+          18,
+          22,
+          27
+        ]
+      },
+      {
+        "D": 35,
+        "nodes": [
+          1,
+          11,
+          14,
+          19,
+          26,
+          29
+        ]
+      },
+      {
+        "D": 35,
+        "nodes": [
+          2,
+          7,
+          23
+        ]
+      },
+      {
+        "D": 35,
+        "nodes": [
+          4,
+          9,
+          16,
+          21,
+          24
+        ]
+      },
+      {
+        "D": 5,
+        "nodes": [
+          5,
+          20,
+          25
+        ]
+      },
+      {
+        "D": 35,
+        "nodes": [
+          6
+        ]
+      },
+      {
+        "D": 7,
+        "nodes": [
+          8,
+          13,
+          17
+        ]
+      },
+      {
+        "D": 35,
+        "nodes": [
+          10,
+          15,
+          28
+        ]
+      },
+      {
+        "D": 5,
+        "nodes": [
+          12
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "D": 7,
+        "channel": "E",
+        "u": 1
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 1
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 2
+      },
+      {
+        "D": 7,
+        "channel": "M",
+        "u": 2
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 3
+      },
+      {
+        "D": 5,
+        "channel": "M",
+        "u": 3
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 4
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 4
+      },
+      {
+        "D": 7,
+        "channel": "E",
+        "u": 6
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 6
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 9
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 9
+      },
+      {
+        "D": 5,
+        "channel": "E",
+        "u": 12
+      },
+      {
+        "D": 7,
+        "channel": "M",
+        "u": 12
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 18
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 18
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 27
+      },
+      {
+        "D": 7,
+        "channel": "M",
+        "u": 27
+      },
+      {
+        "D": 7,
+        "channel": "E",
+        "u": 36
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 36
+      },
+      {
+        "D": 5,
+        "channel": "E",
+        "u": 54
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 54
+      },
+      {
+        "D": 7,
+        "channel": "E",
+        "u": 81
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 81
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 108
+      },
+      {
+        "D": 5,
+        "channel": "M",
+        "u": 108
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 162
+      },
+      {
+        "D": 7,
+        "channel": "M",
+        "u": 162
+      },
+      {
+        "D": 35,
+        "channel": "E",
+        "u": 324
+      },
+      {
+        "D": 35,
+        "channel": "M",
+        "u": 324
+      }
+    ],
+    "p": 37,
+    "scope": "restricted single shell",
+    "undirected_edges": [
+      [
+        0,
+        3,
+        "exterior_middle_congruence"
+      ],
+      [
+        1,
+        29,
+        "middle_complement"
+      ],
+      [
+        2,
+        7,
+        "exterior_middle_congruence"
+      ],
+      [
+        3,
+        27,
+        "middle_complement"
+      ],
+      [
+        4,
+        9,
+        "exterior_middle_congruence"
+      ],
+      [
+        5,
+        25,
+        "middle_complement"
+      ],
+      [
+        7,
+        23,
+        "middle_complement"
+      ],
+      [
+        8,
+        13,
+        "exterior_middle_congruence"
+      ],
+      [
+        9,
+        21,
+        "middle_complement"
+      ],
+      [
+        10,
+        15,
+        "exterior_middle_congruence"
+      ],
+      [
+        11,
+        19,
+        "middle_complement"
+      ],
+      [
+        13,
+        17,
+        "middle_complement"
+      ],
+      [
+        14,
+        19,
+        "exterior_middle_congruence"
+      ],
+      [
+        16,
+        21,
+        "exterior_middle_congruence"
+      ],
+      [
+        20,
+        25,
+        "exterior_middle_congruence"
+      ],
+      [
+        22,
+        27,
+        "exterior_middle_congruence"
+      ],
+      [
+        26,
+        29,
+        "exterior_middle_congruence"
+      ]
+    ]
+  }
+]

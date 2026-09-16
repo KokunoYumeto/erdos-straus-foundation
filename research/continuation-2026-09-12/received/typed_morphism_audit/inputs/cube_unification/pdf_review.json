@@ -1,0 +1,9 @@
+{
+  "format": "pdf-review/1",
+  "pages": 13,
+  "renderer": "pdftoppm",
+  "dpi": 110,
+  "review": "All 13 pages rendered; all inspected in three contact sheets. No clipped equations, overlapping text, undefined references, or overfull boxes in final compilation. Final source amendments were textual/scalar-interface additions and recompiled.",
+  "font_files_distributed": false,
+  "disclaimer": "Visual/source rendering review, not an independent mathematical audit."
+}

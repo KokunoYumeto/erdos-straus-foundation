@@ -1,0 +1,3 @@
+{"status": "PASS", "rejected_mutations": 2, "clean_runs": 4, "normals_equal_optimized": true}
+
+---STDERR---

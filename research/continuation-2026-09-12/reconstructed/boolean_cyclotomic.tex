@@ -1,0 +1,909 @@
+% Copy-ready mathematical module. Requires amsmath, amssymb, amsthm,
+% hyperref and theorem/lemma/proposition/corollary environments.
+% No repository files are modified by this intake artifact.
+\section{The complete first-half selector and its cyclotomic relations}
+\label{sec:bp-increment}
+
+The source dialogue is JT and ChatGPT, \emph{Boolean product formulation},
+9--11 September 2026, exported 12 September 2026
+(\href{https://chatgpt.com/share/6aa445c7-f990-83ea-a2b9-0a9cae13dc52}{shared source dialogue}).
+The preserved transcript has SHA-256
+\texttt{19d54ae24d712598}\allowbreak
+\texttt{c14f222ee81eb19f1}\allowbreak
+\texttt{92c9e944fbbfe500}\allowbreak
+\texttt{9f91780709792f3}.
+The locators below refer to the one-based lines of that export.
+JT supplies the Boolean-product, cyclotomic, generalized-congruence and
+adversarial directions; the following arguments state the mathematical
+claims with their exact scopes. They make no blanket claim of novelty.
+In particular no universal Erd\H{o}s--Straus theorem or counterexample is
+asserted. The first-half proof and the explicit complete permutation fibres
+below fill out the relation between the retained full-range code and the
+dialogue's first-half code.
+
+Write \(\operatorname{ES}(p)\) for the existence of positive integers
+\(x,y,z\) such that \(4/p=1/x+1/y+1/z\).
+Prime factorization, quadratic reciprocity with its supplementary laws,
+and cyclicity of the multiplicative group of a finite field are used in
+their usual classical forms. Every additional arithmetic implication in
+this section is proved here.
+
+\subsection{The denominator bound, divisor maps and exact code}
+
+\begin{theorem}[First-half denominator bound]\label{thm:bp-first-half}
+Let \(p\) be prime and \(p\equiv1\pmod4\). The minimum denominator in
+every positive integer Erd\H{o}s--Straus solution lies strictly between
+\(p/4\) and \(p/2\).
+\end{theorem}
+\begin{proof}
+Retain a permutation of the original coordinates and name its ordered
+values \(x\le y\le z\). Positivity gives \(1/x<4/p\), so \(x>p/4\).
+Suppose \(x>p/2\); equality is impossible because \(p\) is odd.
+Then
+\[
+ \frac4p\le\frac1x+\frac2y<\frac2p+\frac2y,
+\]
+so \(y<p\). Neither \(x\) nor \(y\) is divisible by \(p\).
+The integer equation \(4xyz=p(xy+xz+yz)\) gives \(p\mid z\).
+Write \(z=pk\). The original equality becomes
+\[
+ (4k-1)xy=pk(x+y).
+\]
+Thus \(t=(4k-1)/p\) is a positive integer,
+\(t\equiv3\pmod4\), \(\gcd(t,k)=1\), and \(txy=k(x+y)\).
+Write \(x=g\alpha,y=g\beta\), where \(g=\gcd(x,y)\) and
+\(\gcd(\alpha,\beta)=1\). Then
+\[
+ tg\alpha\beta=k(\alpha+\beta),\qquad
+ \gcd(\alpha\beta,\alpha+\beta)=1.
+\]
+Hence \(k=\alpha\beta D\) for an integer \(D>0\), and
+\[
+ tg=D(\alpha+\beta),\quad \gcd(t,D)=1,\quad
+ pt=4\alpha\beta D-1.
+\]
+The inequality \(x>p/2\) implies
+\[
+ 2D\alpha(\alpha+\beta)>4\alpha\beta D-1,
+ \qquad 2D\alpha(\alpha-\beta)>-1.
+\]
+The last left side is an integer, so it is nonnegative and
+\(\alpha\ge\beta\). Applying the same argument to \(y>p/2\)
+gives \(\beta\ge\alpha\). Coprimality forces
+\(\alpha=\beta=1\). Now \(tg=2D\) and \(\gcd(t,D)=1\)
+give \(t\mid2\), contrary to \(t\equiv3\pmod4\).
+The retained permutation recovers the original coordinate order.
+\end{proof}
+
+Fix henceforth a prime \(p=12h+1\), \(h\ge1\), and put
+\[
+ a=3h+j+1,\quad R=4a-p=4j+3,\quad S=pa,
+ \qquad 0\le j<3h.
+\]
+Thus \(p/4<a<p/2\), \(3\le R\le p-2\), and
+\(\gcd(R,pa)=1\). Indeed \(a<p\) is prime to \(p\), a common
+divisor of \(a,R\) divides \(p\), and a common divisor of \(p,R\)
+divides \(4a\); also \(R\) is odd. Define
+\[
+ E_a=\{u>0:u\mid a^2,\ R\mid4u+1\},\qquad
+ M_a=\{u>0:u\mid a^2,\ R\mid4u+p\}.
+\]
+The middle condition is equivalently \(R\mid u+a\).
+
+\begin{theorem}[Original ordered solutions and the bounded divisor code]
+\label{thm:bp-code}
+For \(u\mid a^2\), set
+\[
+ g=\gcd(a,u),\quad A=a/g,\quad B=u/g,\quad D=g^2/u.
+\]
+These are positive integers and define a bijection
+\[
+ \operatorname{Div}(a^2)\longleftrightarrow
+ \{(A,B,D)>0:a=ABD,\ \gcd(A,B)=1\},\qquad u=B^2D.
+\]
+For \(\varepsilon\in\{0,1\}\), its hit condition is exactly
+\[
+ R\mid4u+p^\varepsilon
+ \quad\Longleftrightarrow\quad R\mid A+p^{1-\varepsilon}B.
+\]
+On that set, define
+\[
+ C=\frac{A+p^{1-\varepsilon}B}{R},\qquad
+ (x,y,z)=(ABD,p^\varepsilon ACD,pBCD).
+ \tag{BP1}
+\]
+Then \(C>0\) is integral, \(4ABCD=A+p^{1-\varepsilon}B+pC\),
+and (BP1) is an original ordered solution.
+
+Put
+\[
+ M_H=6h,\quad J_H=3h,\quad\Lambda_H=36h^2,
+ \quad N_H=216h^3=(p-1)^3/8.
+\]
+The map
+\[
+ c_H=(A-1)\Lambda_H+(p-1)j+2(B-1)+\varepsilon
+ \tag{BP2}
+\]
+is a bijection from the rectangle
+\(1\le A,B\le M_H,\ 0\le j<J_H,\ \varepsilon\in\{0,1\}\)
+to \(0\le c_H<N_H\). On its decoded coordinates set
+\[
+ \chi_{H,p}(c_H)=
+ \left\lfloor\frac{\gcd(4AB,p+4j+3)}{4AB}\right\rfloor
+ \left\lfloor\frac1{\gcd(A,B)}\right\rfloor
+ \left\lfloor\frac{\gcd(4j+3,A+p^{1-\varepsilon}B)}{4j+3}\right\rfloor.
+\]
+Then
+\[
+ \operatorname{ES}(p) \Longleftrightarrow\
+ \exists\,0\le c_H<N_H:\chi_{H,p}(c_H)=1.
+ \tag{BP3}
+\]
+\end{theorem}
+\begin{proof}
+Write \(a=gA,u=gB\) with \(\gcd(A,B)=1\). The divisibility
+\(u\mid a^2\) implies \(B\mid gA^2\), hence \(B\mid g\).
+Therefore \(D=g/B\) is integral and \(a=ABD,u=B^2D\).
+Conversely these equalities give \(u\mid a^2\) with quotient
+\(A^2D\), and \(\gcd(a,u)=BD\). This proves both inverse
+compositions. Also \(A,B\le a\le M_H\).
+Using \(4ABD=p+R\), one has
+\[
+ A(4u+p^\varepsilon)
+ \equiv pB+p^\varepsilon A
+ =p^\varepsilon(A+p^{1-\varepsilon}B)\pmod R.
+\]
+Both \(A\) and \(p\) are units modulo \(R\), proving the
+biconditional. On its passing locus, multiplying the definition of
+\(C\) by \(R=4ABD-p\) gives the tuple equation. The sum of the
+three reciprocals in (BP1), over denominator \(pABCD\), has numerator
+\(pC+p^{1-\varepsilon}B+A=4ABCD\).
+
+For the code inverse divide \(c_H\) by \(\Lambda_H\) to recover
+\(A-1\) and remainder \(v\), divide \(v\) by \(p-1\) to recover
+\(j\) and remainder \(r\), then divide \(r\) by 2 to recover
+\(B-1\) and \(\varepsilon\). The ranges of successive remainders
+are precisely the prescribed ranges. The gcd-floor factors equal
+the divisibility or coprimality bits because their quotients are
+positive and at most one. Thus a passing code gives (BP1).
+
+For the converse, Theorem~\ref{thm:bp-first-half} selects a first
+denominator \(a\) in this interval, retaining its original position.
+For the other denominators define
+\[
+ d_y=Ry-S=Sy/z>0,\quad d_z=Rz-S>0,
+ \qquad d_y d_z=S^2.
+\]
+Conversely a positive \(d_y\mid S^2\) with \(R\mid d_y+S\)
+determines \(d_z=S^2/d_y\) and
+\(y=(d_y+S)/R,z=(d_z+S)/R\); the second quotient is integral
+because \(d_y\equiv-S\) is a unit modulo \(R\).
+Since \(p\nmid a\), the exponent \(i=v_p(d_y)\) is 0,1 or 2.
+For \(i=0\), set \(\varepsilon=0,u=a^2/d_y\); multiplying
+\(d_y+pa\equiv0\) by \(4u/a\) gives \(p(1+4u)\equiv0\).
+For \(i=2\), set \(\varepsilon=0,u=d_y/p^2\); multiplication
+by \(4/p\) gives the same congruence, with the final two original
+denominators exchanged in (BP1). For \(i=1\), write \(d_y=pv\)
+and set \(\varepsilon=1,u=a^2/v\). Then \(v\equiv-a\), hence
+\(u\equiv-a\), giving the middle condition. All three cases
+therefore give a passing code. The exterior exchange is recorded,
+not identified with the original ordering. This proves (BP3).
+\end{proof}
+
+\begin{proposition}[Radix embedding and the full permutation fibres]
+\label{prop:bp-radix}
+Retain the repository's full rectangle
+\[
+ J_F=6h,\quad M_F=9h,\quad\Lambda_F=108h^2,
+ \quad N_F=972h^3,
+\]
+with the same shell formula and code
+\(c_F=(A-1)\Lambda_F+18hj+2(B-1)+\varepsilon\).
+The full-range hits satisfying \(a\le6h\) are bijective to the
+first-half hits by decoding and recoding the same four coordinates.
+The map preserves \(a,R,S,A,B,C,D,u\), the ordered triple (BP1),
+and every predicate on these coordinates, and
+\[
+ c_F-c_H=2(A-1)\Lambda_H+6hj.
+ \tag{BP4}
+\]
+All other full-range hits still have a computable image among
+first-half hits after retaining the coordinate permutation. More
+precisely, let \(\mathcal H_{\min}\) consist of first-half hit codes
+whose first denominator is minimal and whose middle-channel lift has
+\(y<z\). There is a surjection from full-range hits to
+\(\mathcal H_{\min}\). For a fixed code in \(\mathcal H_{\min}\),
+its entire inverse fibre is obtained by the following finite rule:
+take all distinct permutations \((b,c,d)\) of its lifted triple,
+retain those with
+\[
+ 3h+1\le b\le9h,\qquad
+ v_p((4b-p)c-pb)\in\{0,1\},
+ \tag{BP5}
+\]
+and recover their full codes by the inverse in the proof.
+Thus the two existential selectors agree, although their full hit
+sets, shell labels and total counts need not agree.
+\end{proposition}
+\begin{proof}
+For a full-range hit with \(a\le6h\), the conditions \(AB\mid a\)
+give \(A,B\le6h\), and \(j<3h\). The hit tests on those same
+coordinates are identical. The two proved radix decoders are inverse,
+and the values \(\Lambda_F=3\Lambda_H\), \(18h-12h=6h\)
+give (BP4).
+
+For the second statement lift a full code to its ordered triple.
+Choose its minimum denominator as first coordinate. Theorem
+\ref{thm:bp-first-half} puts it in the first-half interval. The
+residual-divisor proof in Theorem~\ref{thm:bp-code} gives a unique
+canonical exterior orientation, with residual exponent 0 for the
+second denominator, or a middle orientation with both exponents 1.
+In the latter case choose the smaller of the final two denominators
+as second. They cannot be equal: equality would give
+\(d_y=d_z=S\), hence \(R\mid2S\), and the unit condition would
+give \(R\mid2\), impossible. This yields a unique code in
+\(\mathcal H_{\min}\). In the exterior case exactly one of the
+two residual exponents is 0 and the other 2, so its orientation is
+also unique. The minimum value and the multiset of remaining values
+are unique, even if a value occurs more than once; hence these rules
+give a unique resulting code.
+
+For a retained permutation in (BP5), put \(R_b=4b-p,S_b=pb\) and
+\(d_c=R_bc-S_b\). When \(v_p(d_c)=0\), recover
+\(\varepsilon=0,u=b^2/d_c\); when \(v_p(d_c)=1\), recover
+\(\varepsilon=1,u=pb^2/d_c\). The proof of Theorem
+\ref{thm:bp-code} gives the positive integers \(A,B,C,D\) and
+the code with \(j=b-3h-1\). Since \(A,B\le b\le9h\), it is
+in the full rectangle and its ordered lift is exactly \((b,c,d)\).
+Conversely every full code in the inverse fibre has that triple as
+one of the distinct permutations, its first coordinate is in the
+full interval, and its canonical residual exponent is 0 or 1.
+Thus (BP5) gives every point of the fibre and no duplicates.
+Surjectivity follows because each minimal first-half code has its
+identical full-radix lift.
+\end{proof}
+
+\begin{corollary}[Boolean products and the exact two-layer inclusion]
+Define
+\[
+ S(p)=1-\prod_{c=0}^{N_H-1}(1-\chi_{H,p}(c)),\qquad
+ S_2(p)=1-\prod_{c=0}^{2\Lambda_H-1}(1-\chi_{H,p}(c)).
+\]
+Then \(S_2(p)\le S(p)\), \(S(p)=1\) if and only if
+\(\operatorname{ES}(p)\), and \(S_2(p)=1\) if and only if a
+first-half hit has \(A\in\{1,2\}\). For any prime set \(\mathcal P\)
+define its infinite Boolean product as the infimum of its finite
+initial products. Then
+\[
+ \prod_{p\in\mathcal P}S(p)=1
+ \quad\Longleftrightarrow\quad
+ (\forall p\in\mathcal P)\operatorname{ES}(p).
+\]
+\end{corollary}
+\begin{proof}
+Each complement factor is a bit. Its finite product is one exactly
+when every hit bit vanishes. The radix intervals for fixed \(A\)
+are \([(A-1)\Lambda_H,A\Lambda_H-1]\), so the first two are
+exactly the displayed smaller range. Inclusion gives the inequality.
+The finite initial products form a nonincreasing sequence of bits;
+one zero factor makes every later product zero, and absent such a
+factor every finite product is one. Apply (BP3).
+\end{proof}
+
+These statements correspond to transcript lines 14--163, 180--387,
+5203--5293 and 6465--6606. The repository's previous exact radix map
+is Theorem \texttt{raw-first-half-code} in
+\nolinkurl{raw_scale_hit_incidence.tex}; the broader full-range
+bound and code occur in \nolinkurl{bounded_transport.tex} and
+\nolinkurl{unary_boolean_transport.tex}.
+
+\subsection{Endpoint forcing and the corrected generalized carrier}
+
+\begin{theorem}[The endpoint factor theorem]\label{thm:bp-endpoint}
+Let \(p\equiv1\pmod{24}\) be prime. An \(A=1\) hit with
+\(R^2\le p\) and \(B=1\) or \(D=1\) exists if and only if
+\((p+1)/2\) or \(p+4\) has a prime divisor congruent to 3 modulo 4.
+If \(q\) is the least such divisor of the first integer, the
+exterior code is \((p-1)(q-3)/4\). If it is the least such divisor
+of the second integer, the middle code is \((p+1)(q-1)/4\).
+\end{theorem}
+\begin{proof}
+Both integers are odd and 1 modulo 4. If either has a prime factor
+3 modulo 4, the number of such prime factors counted with multiplicity
+is positive and even. The least one \(q\) therefore has square at
+most that integer. For \((p+1)/2\), this gives \(q^2<p\).
+For \(p+4\), it gives \(q^2\le p+4\); since \(q^2-p\)
+is divisible by 8, it follows that \(q^2\le p\).
+
+In the first case use
+\[
+ (R,A,B,D,\varepsilon)=
+ (q,1,1,(p+q)/4,0),\quad C=(p+1)/q.
+\]
+In the second case use
+\[
+ (R,A,B,D,\varepsilon)=
+ (q,1,(p+q)/4,1,1),\quad C=(p+q+4)/(4q).
+\]
+All these quantities are positive integers; in the second case oddness
+of \(q\) and \(q\mid p+4\) give the last integrality. Substitution
+in (BP2) gives the stated codes, and the tuple equations prove the hits.
+
+Conversely \(A=B=1\) makes the middle channel impossible because
+\(R\nmid2\); the exterior channel requires \(R\mid p+1\).
+If \(A=D=1\), then \(B=a\), and the middle channel requires
+\(R\mid p+4\). The exterior channel would require
+\(R\mid p^2+4\). A positive integer \(R\equiv3\pmod4\)
+has a prime factor \(q\equiv3\pmod4\). Such a prime cannot divide
+\(p^2+4\): division by the unit 4 would make \(-1\) a square
+modulo \(q\). A square root of \(-1\) would have order 4 in a
+group of order \(q-1\equiv2\pmod4\), impossible. In each remaining
+case that prime \(q\mid R\) divides \((p+1)/2\) or \(p+4\).
+\end{proof}
+
+The factor hypothesis is not universal: at \(p=193\), the two
+integers are the primes 97 and 197, both 1 modulo 4. Nevertheless
+\((A,B,C,D,\varepsilon)=(1,5,138,10,0)\) gives the code 200 and
+the solution \((50,1380,1331700)\). This retains the actual scope of
+transcript lines 2570--2944 and its correction at 5149--5189.
+
+\begin{theorem}[Exact generalized carrier]
+\label{thm:bp-crt}
+For \(u>0\) set
+\(\kappa(u)=\prod_{\ell^e\parallel u}\ell^{\lceil e/2\rceil}\).
+Let \(n>0\) and \(R>0\), \(R\equiv3\pmod4\). The system
+\[
+ t\equiv1\pmod{12n},\quad
+ t\equiv-R\pmod{4\kappa(u)},\quad
+ t\equiv-R-4u\pmod{4R}
+ \tag{BP6}
+\]
+has an integer solution if and only if
+\[
+ \gcd(3n,\kappa(u))\mid(R+1)/4,\qquad
+ \gcd(3n,R)\mid(R+4u+1)/4.
+ \tag{BP7}
+\]
+Its complete solution set, when nonempty, is one class modulo
+\(4\operatorname{lcm}(3n,\kappa(u),R)\).
+For the exterior carrier retain \(R\mid4u+1\) and omit the third
+congruence; only the first divisibility in (BP7) remains.
+For a prescribed prime \(p\), actual membership in the carrier,
+\(R<p\), and the original common divisor must be retained.
+\end{theorem}
+\begin{proof}
+Prime valuations give \(u\mid a^2\) if and only if
+\(\kappa(u)\mid a\), and \(\kappa(u)\mid u\). With
+\(4a=p+R\), these are exactly
+\[
+ u\mid a^2\ \Longleftrightarrow\ p\equiv-R\pmod{4\kappa(u)},
+ \quad
+ R\mid a+u\ \Longleftrightarrow\ p\equiv-R-4u\pmod{4R}.
+\]
+For a finite system of integer congruences, pairwise residue agreement
+modulo the corresponding gcds is necessary by subtraction. To prove
+sufficiency, for each prime select a modulus having maximal exponent
+of that prime. Its prescribed residue agrees with every other at all
+lower powers by the pairwise condition. Ordinary CRT over these distinct
+prime powers gives a solution. Differences of solutions are exactly
+multiples of the lcm. Applying this criterion to (BP6), the first two
+pair conditions are (BP7); the third is
+\(\gcd(\kappa(u),R)\mid u\), automatic because \(\kappa(u)\mid u\).
+The lcm gives the stated period. The same argument with two moduli
+gives the exterior statement.
+
+For a class \(b+m\mathbb Z\), intersection with an integer interval
+\([\alpha,\beta]\) occurs exactly when
+\[
+ \left\lceil\frac{\alpha-b}{m}\right\rceil
+ \le\left\lfloor\frac{\beta-b}{m}\right\rfloor.
+\]
+At \(\alpha=\beta=p\), this is precisely membership of \(p\).
+Finally a single \(u\mid a^2\) has the unique exponent vector
+\((e_\ell)\in\prod_{\ell\mid a}\{0,\ldots,2v_\ell(a)\}\).
+Reduction modulo different prime powers dividing \(R\) uses this same
+vector. Its complete fibre is the intersection of the local fibres
+on that box, not their Cartesian product.
+\end{proof}
+
+At \(n=2\), (BP7) is exactly
+\[
+ 2\mid u\Rightarrow R\equiv7\pmod8,\quad
+ 3\mid u\Rightarrow R\equiv2\pmod3,\quad
+ 3\mid R\Rightarrow u\equiv2\pmod3.
+\]
+Thus a modulo-8 condition cannot be removed: \(R=3,u=2\) gives
+incompatible requirements \(t\equiv1\pmod{24}\) and
+\(t\equiv5\pmod8\). Also \(R=7,u=1\) gives the compatible
+class \(73\pmod{168}\), which does not contain 193. These are the
+corrections of transcript lines 4740--5058 and the generalization at
+6104--6158.
+
+\subsection{Cyclotomic order, infinitude, coverage and a smaller cofactor}
+
+\begin{theorem}[Cyclotomic Euclid and complete-family coverage]
+\label{thm:bp-cyclotomic}
+Let \(m=12n\), \(n>0\), and \(P>0\). Then
+\[
+ \Phi_m(mP)>1,\qquad \gcd(mP,\Phi_m(mP))=1,
+\]
+and every prime divisor of this value is 1 modulo \(m\).
+There are infinitely many primes in that class. For each such prime
+\(p\), there are exactly \(\varphi(m)/2\) integers
+\(1\le r\le(p-1)/2\) with \(p\mid\Phi_m(mr)\).
+Consequently, with \(P_T=\prod_{r=1}^T\Phi_m(mr)\),
+\[
+ p\equiv1\pmod m,\quad p\le2T+1\quad\Longrightarrow\quad p\mid P_T.
+ \tag{BP8}
+\]
+In the Boolean convention of the preceding corollary,
+\[
+ \prod_{p\equiv1\ (m)}S(p)
+ =\inf_{T\ge1}\prod_{r=1}^T
+   \prod_{\substack{q\mid\Phi_m(mr)\\q\ \text{prime}}}S(q).
+ \tag{BP9}
+\]
+This identity does not assert that either side equals one.
+\end{theorem}
+\begin{proof}
+Use \(X^m-1=\prod_{d\mid m}\Phi_d(X)\) and \(\Phi_m(0)=1\).
+For a prime \(q\nmid mr\), a root \(r\) of \(\Phi_m\)
+has order exactly \(m\): a smaller order \(e\mid m\) would make
+it a common root with a factor \(\Phi_d\), \(d\mid e<m\),
+and hence a repeated root of \(X^m-1\). This contradicts the
+nonzero derivative \(mr^{m-1}\) modulo \(q\). Conversely an
+element of order \(m\) vanishes on none of the proper-divisor
+factors, so it vanishes on \(\Phi_m\).
+
+For \(X=mP\), the constant term gives \(\Phi_m(X)\equiv1\pmod X\),
+so each prime divisor is prime to \(mX\). Its order is \(m\),
+which divides \(q-1\). Pair primitive roots into nonreal conjugates.
+For real \(X\ge2\), every pair contributes \(|X-\zeta|^2\)
+strictly between \((X-1)^2\) and \((X+1)^2\); hence
+\[
+ (X-1)^{\varphi(m)}<\Phi_m(X)<(X+1)^{\varphi(m)}.
+\]
+This proves \(\Phi_m(mP)>1\). If \(P\) is the product of any
+finite list of primes 1 modulo \(m\), a prime divisor of that value
+is outside the list and in the same class, proving infinitude.
+
+For a prescribed prime \(p\equiv1\pmod m\), the cyclic group
+\(\mathbb F_p^\times\) has exactly \(\varphi(m)\) elements
+of order \(m\). Multiplication by the unit \(m^{-1}\) gives exactly
+that many roots of \(\Phi_m(mX)\). As \(4\mid m\), negation
+preserves primitive \(m\)-th roots: the exponent of a primitive
+root changes from a unit \(k\pmod m\) to \(k+m/2\), still a
+unit at every odd prime and still odd. Thus \(\Phi_m\) is even.
+The nonzero representatives pair as \(r,p-r\), giving the exact
+half-interval count and in fact
+\[
+ p^{\varphi(m)/2}\mid\prod_{r=1}^{(p-1)/2}\Phi_m(mr).
+\]
+This proves (BP8). Every prime occurring in the right side of (BP9)
+is in the required class, and (BP8) eventually includes every member
+of that class. Repetitions have no effect because \(S(q)^e=S(q)\)
+for \(e\ge1\). Both infima therefore vanish for exactly the same
+zero factors and otherwise equal one.
+\end{proof}
+
+The polynomial change needed for the larger modulus is exact:
+\[
+ \Phi_{12}(X^n)
+ =\prod_{\substack{d\mid n\\\gcd(n/d,6)=1}}\Phi_{12d}(X),
+ \quad
+ \Phi_{12n}(X)=
+ \prod_{\substack{d\mid n\\\gcd(d,6)=1}}
+ (X^{4n/d}-X^{2n/d}+1)^{\mu(d)}.
+ \tag{BP10}
+\]
+Indeed \(\operatorname{ord}(\zeta^n)=\operatorname{ord}(\zeta)/
+\gcd(\operatorname{ord}(\zeta),n)=12\) precisely when
+\(\operatorname{ord}(\zeta)=12d\), \(d\mid n\), and
+\(\gcd(n/d,6)=1\). Simple roots give the first polynomial
+identity; multiplicative M\"obius inversion gives the second.
+Thus \(\Phi_{12n}(X)=X^{4n}-X^{2n}+1\) exactly when
+\(n=2^\alpha3^\beta\). Any other prime divisor of \(n\)
+gives an additional nonconstant factor in the first identity.
+Changing only the argument does not impose order \(12n\):
+\(\Phi_{12}(24)=13\cdot73\cdot349\).
+
+The recursion \(P_0=1\), \(W_k=\Phi_m(mP_k)\),
+\(P_{k+1}=P_kW_k\) has \(P_k=\prod_{i<k}W_i\) and pairwise
+coprime \(W_i>1\), by the same constant-term calculation. It
+therefore introduces a new prime at every step. Multiplying an input
+also by a factorial \(b!\) excludes every prime at most \(b\).
+These statements prove newness and, with such a factorial, strict
+growth; (BP8)--(BP9) concern the entire family and do not assert
+coverage by a particular single recursion. These are the mathematical
+scopes of transcript lines 5438--6411 and 8031--8136.
+
+\begin{theorem}[Short homogeneous \(\Phi_{12}\) factorization]
+\label{thm:bp-short}
+For every prime \(p\equiv1\pmod{12}\), there exist coprime
+positive integers \(r,s\le\lfloor\sqrt p\rfloor\) such that
+\[
+ r^4-r^2s^2+s^4=ph,\qquad 1\le h<p.
+ \tag{BP11}
+\]
+Every prime divisor of \(h\) is congruent to 1 modulo 12.
+\end{theorem}
+\begin{proof}
+Choose \(w\) of order 12 modulo \(p\) and put
+\(H=\lfloor\sqrt p\rfloor\). The map
+\((i,j)\mapsto i-wj\) from \(\{0,\ldots,H\}^2\) into
+\(\mathbb F_p\) has a repeated value because \((H+1)^2>p\).
+The difference gives \((r_0,s_0)\ne(0,0)\),
+\(|r_0|,|s_0|\le H\), \(r_0\equiv ws_0\pmod p\).
+Neither coordinate vanishes: one zero would force the other to be
+a multiple of \(p\) of absolute value less than \(p\).
+Retain \(g=\gcd(|r_0|,|s_0|)\) and their two signs, and set
+\(r=|r_0|/g,s=|s_0|/g\). These retained data recover the original
+signed pair. Since \(g<p\), division by it is valid modulo \(p\).
+Evenness in each coordinate gives
+\(p\mid F(r,s):=r^4-r^2s^2+s^4\).
+
+One has \(F=(r^2-s^2)^2+r^2s^2>0\). If \(r\ge s\),
+then \(F=r^4-s^2(r^2-s^2)\le r^4\), and the opposite case is
+symmetric. Thus \(0<F\le H^4<p^2\), giving (BP11).
+If a prime \(q\mid F\) divided \(r\) or \(s\), it would
+divide both, contrary to coprimality. A primitive pair gives
+\(F\equiv1\pmod2\) and \(F\equiv1\pmod3\), so these two
+primes are excluded. The unit \(rs^{-1}\) is a root of
+\(\Phi_{12}\) modulo \(q\), and the order argument above gives
+\(q\equiv1\pmod{12}\).
+\end{proof}
+
+This proves the assistant proposition at transcript lines 6612--6751
+with the terminal alternative \(h=1\) retained. For comparison of
+the cofactor and quadratic sign, there is an exact lift formula.
+If \(F(r,s)=ph\), \(p\nmid rs\), then
+\[
+ \frac{F(r+pt,s)}p\equiv h+t\,2r(2r^2-s^2)\pmod p.
+ \tag{BP12}
+\]
+The coefficient is a unit: \(2r^2=s^2\) would imply
+\(F=3s^4/4=0\pmod p\), impossible. Hence unrestricted lifts
+realize every quotient residue modulo \(p\), including either
+nonzero square class. Primitivity can be retained by choosing \(t\)
+to avoid the one forbidden class modulo each prime dividing \(s\),
+using CRT together with the prescribed class modulo \(p\).
+A positive sufficiently large representative gives a positive lift.
+This exact statement does not retain the short-box bound.
+
+\subsection{Necessary nonresidue factors and the exact character target}
+
+\begin{lemma}[Divisor-of-a-sum obstruction]\label{lem:bp-square}
+Let \(a,b,d>0\), \(\gcd(a,b)=1\), \(d\mid a+b\), and
+\(d\equiv3\pmod4\). Then \(-d\) is not a square modulo \(4ab\).
+\end{lemma}
+\begin{proof}
+Suppose \(t^2\equiv-d\pmod{4ab}\). The hypotheses give
+\(\gcd(d,ab)=1\). For each odd prime \(\ell\mid ab\),
+\(\left(\frac{-d}{\ell}\right)=1\). Quadratic reciprocity,
+including its sign because \(d\equiv3\pmod4\), gives
+\[
+ \left(\frac\ell d\right)=\left(\frac{-d}\ell\right)=1.
+\]
+If \(2\mid ab\), reducing modulo 8 makes \(t\) odd and gives
+\(d\equiv7\pmod8\), so \(\left(\frac2d\right)=1\).
+Prime factorization and multiplicativity therefore imply
+\(\left(\frac ad\right)=\left(\frac bd\right)=1\).
+But \(a\equiv-b\pmod d\) gives
+\(\left(\frac ad\right)=-\left(\frac bd\right)\), a contradiction.
+\end{proof}
+
+\begin{theorem}[A nonresidue prime in every normalized witness]
+\label{thm:bp-nonresidue}
+Every middle witness in (BP1) has a prime divisor \(\ell\mid AB\)
+with \(\left(\frac\ell p\right)=-1\). Every exterior witness
+has such a prime divisor of \(BC\).
+\end{theorem}
+\begin{proof}
+For the middle channel, \(R\mid A+B\), \(\gcd(A,B)=1\),
+and \(p\equiv-R\pmod{4AB}\). Lemma~\ref{lem:bp-square}
+says \(p\) is not a square modulo \(4AB\). If every prime
+\(\ell\mid AB\) were a residue modulo \(p\), reciprocity
+would give \(\left(\frac p\ell\right)=1\) for each odd
+such prime, because \(p\equiv1\pmod4\). A unit square root
+modulo \(\ell\) lifts to every power: given \(x^2\equiv p\)
+modulo \(\ell^e\), solve
+\(2xt\equiv(p-x^2)/\ell^e\pmod\ell\) and replace
+\(x\) by \(x+t\ell^e\). If \(2\mid AB\),
+\(\left(\frac2p\right)=1\) and \(p\equiv1\pmod4\)
+give \(p\equiv1\pmod8\). Every such unit is a square modulo
+each 2-power: starting modulo 8, replacing an odd root \(x\)
+modulo \(2^e\), \(e\ge3\), by \(x+t2^{e-1}\) toggles
+the next square bit modulo \(2^{e+1}\). If \(AB\) is odd,
+the needed modulo-4 root follows from \(p\equiv1\pmod4\).
+CRT now makes \(p\) a square modulo \(4AB\), a contradiction.
+
+For the exterior channel the tuple equation is
+\[
+ A(4BCD-1)=p(B+C).
+\]
+Since \(A<p\), set \(T=(B+C)/A\in\mathbb Z_{>0}\).
+Then \(pT+1=4BCD\), \(T\equiv3\pmod4\), and \(T\mid B+C\).
+A common prime divisor of \(B,C\) would divide \(A\), so
+\(\gcd(B,C)=1\). Also \(p\nmid BC\): \(B<p\), and
+\(p\mid C\) in the tuple equation would force \(p\mid A\).
+If \(p\) were a square modulo \(4BC\), its inverse would be
+one, contrary to Lemma~\ref{lem:bp-square} because
+\(p^{-1}\equiv-T\pmod{4BC}\). The same prime-power and
+reciprocity argument therefore supplies a nonresidue prime in \(BC\).
+\end{proof}
+
+For any fixed \(K\ge2\), put
+\[
+ m_K=\operatorname{lcm}\left(12n,8,
+       \prod_{\substack{3\le\ell\le K\\\ell\ \text{prime}}}\ell\right).
+\]
+Every prime \(p\equiv1\pmod{m_K}\) makes all primes at most
+\(K\) quadratic residues: use reciprocity for odd primes and the
+modulo-8 supplementary law for 2. Theorem~\ref{thm:bp-nonresidue}
+therefore forces a prime greater than \(K\) in the specified product
+\(AB\) or \(BC\). In the middle channel, \(A\le2\) forces
+that prime to divide \(B\), hence \(B>K\). Theorem
+\ref{thm:bp-cyclotomic} produces infinitely many primes satisfying
+these restrictions. This excludes fixed bounds on these pairs, not
+all witnesses or the global two-layer assertion. These are the exact
+quantifiers of transcript lines 6836--7265.
+
+\begin{proposition}[A nonempty Jacobi-sign class and exact target counts]
+\label{prop:bp-character}
+Let \(p\ge13\) be prime and \(p\equiv1\pmod4\), and put
+\(L=(p-1)/4\). There is a prime quadratic nonresidue
+\(\ell\le L\). The integer
+\(a=\ell\lceil(L+1)/\ell\rceil\) is a first-half shell denominator
+containing a nonresidue prime factor. For this shell put
+\[
+ \tau=\prod_{r\mid a}(2v_r(a)+1),\qquad
+ \sigma=\prod_{\substack{r\mid a\\(r/p)=1}}(2v_r(a)+1).
+\]
+Then the exact number of divisors \(u\mid a^2\) with
+\(\left(\frac uR\right)=-1\) is
+\((\tau-\sigma)/2\ge\tau/3>0\).
+
+For every first-half shell, independently of this choice, let
+\[
+ W_a=\left\{\prod_{\ell\mid a}\ell^{e_\ell}\pmod R:
+                   -v_\ell(a)\le e_\ell\le v_\ell(a)\right\}.
+\]
+Then \(W_a^{-1}=W_a\) and
+\[
+ E_a\cup M_a\ne\varnothing
+ \quad\Longleftrightarrow\quad \{-1,-p\}\cap W_a\ne\varnothing.
+ \tag{BP13}
+\]
+With \(\psi\) ranging over all characters of
+\((\mathbb Z/R\mathbb Z)^\times\),
+\[
+ |E_a|+|M_a|=
+ \frac1{\varphi(R)}\sum_\psi\psi(-1)(1+\psi(p))
+       \prod_{\ell^v\parallel a}\sum_{e=-v}^v\psi(\ell)^e.
+ \tag{BP14}
+\]
+\end{proposition}
+\begin{proof}
+If every integer 1 through \(L\) were a residue, their negatives
+would also be residues because \(p\equiv1\pmod4\), exhausting
+all \(2L\) nonzero residues. Every integer from \(L+1\) through
+\(3L\) would then be a nonresidue. But \(2L=2\cdot L\) is a
+product of two assumed residues and lies in that interval. The least
+nonresidue is prime because otherwise all its prime factors are
+smaller residues. The prescribed \(a\) satisfies
+\(L+1\le a\le L+\ell\le2L\).
+
+For an odd prime \(r\mid a\), reciprocity and
+\(R\equiv-p\pmod r\), \(R\equiv3\pmod4\), give
+\(\left(\frac rR\right)=\left(\frac rp\right)\): the two
+reciprocity signs cancel. For \(r=2\), evenness of \(a\)
+gives \(R\equiv-p\pmod8\) and the same identity by the
+supplementary law. Summing the Jacobi symbols of divisors of \(a^2\)
+therefore factors into geometric sums. A residue prime contributes
+\(2v+1\), and a nonresidue prime contributes
+\(\sum_{e=0}^{2v}(-1)^e=1\). The sum is \(\sigma\), the
+total is \(\tau\), and the negative count follows. At least one
+nonresidue factor gives \(\tau\ge3\sigma\).
+
+Dividing \(u\mid a^2\) by \(a\) translates exponents by
+\(-v_\ell(a)\), and inversion negates every centered exponent.
+The middle target becomes \(-1\), while the exterior target
+becomes \(-p^{-1}\); inversion changes it to \(-p\). This
+proves (BP13). Orthogonality gives, for a unit \(t\),
+\[
+ \#\{u\mid a^2:u\equiv t\pmod R\}
+ =\frac1{\varphi(R)}\sum_\psi\overline{\psi(t)}
+       \prod_{\ell^v\parallel a}\sum_{e=0}^{2v}\psi(\ell)^e.
+\]
+Shift each exponent by \(-v\), retaining the factor \(\psi(a)\).
+At \(t=-a\) its prefactor is \(\psi(-1)\); at
+\(t=-4^{-1}\) it is \(\psi(-1)\psi(4a)=\psi(-1)\psi(p)\).
+Adding gives (BP14). No individual summand is asserted nonnegative;
+the total is an integer target count.
+\end{proof}
+
+There is a further exact comparison with the divisor-pair statistic
+used in the dialogue. Let
+\[
+ T_{R,S}=\#\{(m,r):m,r\mid S,\ R\mid m+r\}.
+\]
+Character orthogonality gives
+\[
+ T_{R,S}=\frac1{\varphi(R)}\sum_\psi\psi(-1)
+                  \left|\sum_{d\mid S}\psi(d)\right|^2.
+ \tag{BP15}
+\]
+Indeed expansion has the target \(-mr^{-1}=1\) in the unit group.
+Reduction by \(g=\gcd(m,r)\) maps these pairs onto the primitive
+pairs \((m_0,r_0)\) with \(m_0,r_0\mid S\),
+\(\gcd(m_0,r_0)=1\), \(R\mid m_0+r_0\). Its full fibre is
+\[
+ \{(g m_0,g r_0):g\mid S/(m_0r_0)\}.
+ \tag{BP16}
+\]
+To prove this, division by \(g\mid S\) preserves the congruence
+because \(g\) is a unit modulo \(R\). Conversely both scaled
+entries divide \(S\) exactly when
+\(g\mid\gcd(S/m_0,S/r_0)=S/(m_0r_0)\). The primitive pair
+reconstructs the ordered solution
+\[
+ k=(m_0+r_0)/R,\qquad
+ (a,y,z)=(a,(S/r_0)k,(S/m_0)k).
+\]
+Its reciprocal sum is \(1/a+R/S=4/p\). The inverse primitive
+pair is the reduced positive ratio \((Ry-S)/S=y/z\); prime
+valuations in \((Ry-S)(Rz-S)=S^2\) prove both its entries
+divide \(S\). Thus \(T>0\) is exactly shell occupancy, while
+its multiplicities are the divisor counts of (BP16). A canonical
+hit supplies the distinct pair \((A,p^{1-\varepsilon}B)\),
+so \(T\ge2\). This proves, with its full multiplicity map,
+the relation in transcript lines 3594--3744 and 7843--7887.
+
+\subsection{Five exact regressions and their scopes}
+
+The following finite certificates are the five stronger-claim
+counterexamples of transcript lines 8330--8786. They were reproduced
+by a separate standard-library integer calculation. Their exhaustiveness
+concerns the displayed finite divisor sets or coordinate boxes, not all
+primes or all Erd\H{o}s--Straus candidates.
+
+\paragraph{1. A selected nonresidue shell can be empty.}
+Take \(p=3361\), \(L=840\). The primes 2,3,5,7 are residues
+modulo \(p\): use \(p\equiv1\pmod8\), \(p\equiv1\pmod{12}\),
+and reciprocity with \(p\equiv1\pmod5\), \(p\equiv1\pmod7\).
+Thus every integer 1 through 10 is a residue. On the other hand
+\(3361\equiv6\pmod{11}\), and the nonzero squares modulo 11
+are \(\{1,3,4,5,9\}\), so 11 is the least nonresidue.
+Proposition~\ref{prop:bp-character} selects
+\[
+ a=11\lceil841/11\rceil=847=7\cdot11^2,\quad R=27,\quad j=6.
+\]
+Every divisor of \(a^2\) is \(7^i11^e\), \(0\le i\le2\),
+\(0\le e\le4\). Their residues are exactly
+\[
+ \{1,2,7,8,10,11,13,14,16,19,22,23,26\}\pmod{27}.
+\]
+They omit \(-4^{-1}=20\) and \(-a=17\), proving
+\(E_6=M_6=\varnothing\). The six negative-Jacobi divisors are
+\(11,77,539,1331,9317,65219\). The principal contribution
+to (BP14) is \(2\cdot15/18=5/3\), while its complete sum is
+zero; the other characters contribute \(-5/3\).
+This is not an ES counterexample: the first shell has \(a=841\),
+\(R=3\), \(u=29\mid841^2\), and \(3\mid4\cdot29+1\).
+Its tuple is \((A,B,C,D,\varepsilon)=(29,1,1130,29,0)\), giving
+\[
+ c_H=79027200,\qquad
+ \frac4{3361}=\frac1{841}+\frac1{950330}+\frac1{110139970}.
+\]
+
+\paragraph{2. Nonempty local fibres need not intersect in the divisor box.}
+At \(p=37,a=18,R=35\), the complete divisor list is
+\[
+ \operatorname{Div}(324)=
+ \{1,2,3,4,6,9,12,18,27,36,54,81,108,162,324\}.
+\]
+Those satisfying \(5\mid4u+1\) are \(1,6,36,81\); those
+satisfying \(7\mid4u+1\) are \(12,54\). Both lists are nonempty
+and their intersection is empty. CRT gives \(u\equiv26\pmod{35}\),
+but no member of the original complete list belongs to that class.
+This refutes the exchange of \(\forall m\exists u\) with
+\(\exists u\forall m\), while preserving Theorem~\ref{thm:bp-crt}.
+
+\paragraph{3. The short cofactor may always be one at a nonbase prime.}
+The complete positive primitive boxes in Theorem~\ref{thm:bp-short}
+give the following table:
+\[
+\begin{array}{c|c|c|c}
+ p&H&\text{all primitive pairs}&h\\\hline
+ 61&7&(2,3),(3,2)&1\\
+ 73&8&(1,3),(3,1)&1\\
+ 193&13&(3,4),(4,3)&1\\
+ 2521&50&(1,26),(26,1)&181
+\end{array}
+\]
+Here is a finite exact verification of completeness. The roots of
+\(\Phi_{12}\) in these four prime fields are, respectively,
+\[
+ \{21,29,32,40\},\quad \{3,24,49,70\},\quad
+ \{49,63,130,144\},\quad \{26,97,2424,2495\}.
+\]
+Substitution gives four distinct roots in each case, so the polynomial
+degree proves the lists complete. For each root \(w\), the possible
+positive coordinates in the box are exactly
+\[
+ r=ws-pk,\quad
+ \max\left(1,\left\lceil\frac{pk+1}{w}\right\rceil\right)
+ \le s\le
+ \min\left(H,\left\lfloor\frac{pk+H}{w}\right\rfloor\right),
+ \quad0\le k\le\lfloor wH/p\rfloor.
+ \tag{BP17}
+\]
+Evaluating these integer intervals gives, before removing nonprimitive
+pairs, respectively
+\[
+\begin{array}{c|l}
+61&(2,3),(3,2),(4,6),(6,4)\\
+73&(1,3),(2,6),(3,1),(6,2)\\
+193&(3,4),(4,3),(6,8),(8,6),(9,12),(12,9)\\
+2521&(1,26),(26,1).
+\end{array}
+\]
+The gcd test and direct quartic evaluation give the preceding table.
+For example \(2^4-2^2 3^2+3^4=61\). Hence \(h>1\) cannot
+be demanded at every prime greater than 13 in this prescribed box.
+
+\paragraph{4. A smaller cyclotomic prime need not be a nonresidue.}
+The last row of that complete table gives
+\[
+ 1-26^2+26^4=456301=2521\cdot181,
+ \qquad 88^2=3\cdot2521+181.
+\]
+Thus \(181<2521\), \(181\equiv1\pmod{12}\), but
+\(\left(\frac{181}{2521}\right)=1\). Both permitted pairs
+give that cofactor. The actual middle tuple
+\((A,B,C,D,\varepsilon)=(2,159,7,2,1)\) has
+\(AB=2\cdot3\cdot53\), with 53 a nonresidue modulo 2521:
+reciprocity gives
+\[
+ \left(\frac{53}{2521}\right)
+ =\left(\frac{30}{53}\right)
+ =\left(\frac2{53}\right)\left(\frac3{53}\right)
+  \left(\frac5{53}\right)=(-1)(-1)(-1)=-1.
+\]
+Its code and original denominators are
+\[
+ c_H=1600517,\qquad
+ \frac4{2521}=\frac1{636}+\frac1{70588}+\frac1{5611746}.
+\]
+Substitution gives \(4ABCD=17808=A+B+pC\), and all the code
+bits equal one. Thus the cofactor and witness factor have their
+respective exact roles.
+
+\paragraph{5. The degree-four cofactor bound does not persist for
+\(\Phi_{24}\).}
+For \(p=73\), the eight roots of \(\Phi_{24}(X)=X^8-X^4+1\)
+modulo 73 are \(7,17,21,30,43,52,56,66\). Substitution and degree
+prove completeness. Formula (BP17), now with \(H=8\) and this root
+list, gives exactly
+\((1,7),(7,1),(4,5),(5,4)\). They are all primitive, and
+\[
+ F_{24}(1,7)=5762401=73\cdot78937,\quad
+ F_{24}(4,5)=296161=73\cdot4057.
+\]
+The smallest quotient is \(4057>73\), disproving the unchanged
+requirement \(h<p\). The valid bound for this degree-eight trinomial
+is \(F_{24}(r,s)\le\max(r,s)^8<p^4\), hence \(h<p^3\).
+The cyclotomic infinitude theorem at modulus 24 is unaffected.
+
+The primality checks needed in these finite certificates are elementary
+trial divisions by all primes at most the respective square roots.
+For 61 and 73 those primes are \(2,3,5,7\); for 193 they are
+\(2,3,5,7,11,13\); for 2521 they are
+\(2,3,5,7,11,13,17,19,23,29,31,37,41,43,47\); for 3361
+add 53 to that last list. None divides the corresponding number.
+For the auxiliary primes 97,181,197 the same test uses respectively
+the lists through 7,13,13. The complete finite divisor sets, root
+lists, quotient values and reciprocal identities above are exact
+certificates for their stated counterexamples. They do not establish
+the universal positivity of (BP3) or (BP9).

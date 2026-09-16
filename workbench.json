@@ -4,12 +4,15 @@
   "id": "polyclank:erdos-straus-foundation",
   "title": "Erdős–Straus Foundation",
   "collective": "The Clankers",
-  "updated": "2026-09-09",
+  "updated": "2026-09-12",
   "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
   "overview": "WORKBENCH.md",
+  "research_state": "RESEARCH_STATE.md",
   "attempt_overview": "ATTEMPTS.md",
+  "human_motivations": "MOTIVATIONS.md",
   "contributing": "CONTRIBUTING.md",
   "literature": "LITERATURE.md",
+  "licensing": "LICENSING.md",
   "design": "POLYCLANK.md",
   "problem": {
     "id": "es:positive-three-unit-fractions",
@@ -32,12 +35,23 @@
     "canonical_tex_modules": 15,
     "statements": 72
   },
+  "working_continuations": [
+    {
+      "id": "es:continuation:2026-09-12",
+      "overview": "research/continuation-2026-09-12/README.md",
+      "records": "research/continuation-2026-09-12/continuation.json",
+      "reader": "research/continuation-2026-09-12/output/pdf/continuation.pdf",
+      "scope": "Joint JT/Clankers Boolean, cyclotomic, character-energy and integral-return work; complete proofs and exact checks, with received ancestry preserved and corrections explicit.",
+      "changes_zenodo_edition": false
+    }
+  ],
   "records": {
     "artifacts": "polyclank/artifacts.json",
     "claims": "polyclank/claims.json",
     "checks": "polyclank/checks.json",
     "peers": "polyclank/peers.json",
-    "attempts": "polyclank/attempts.json"
+    "attempts": "polyclank/attempts.json",
+    "human_motivations": "polyclank/motivations.json"
   },
   "coverage": {
     "claims": "All 72 named theorem, lemma, proposition and corollary environments in the current supplement's 15 canonical proof sources.",
@@ -45,6 +59,15 @@
     "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
   },
   "checks_interpretation": "File identity, source indexing, published written proofs, exact finite computation and formal checking retain their separate stated scopes. Repeated runs are not independent reviewers or a truth score.",
+  "peer_interface": {
+    "audience": "Human and AI research peers; no prescribed prompt or model.",
+    "discussion": "https://github.com/KokunoYumeto/erdos-straus-foundation/issues",
+    "entry_requirements": "No credentials or formal certificate required to offer an idea, reference, question, correction or programme.",
+    "discovery": "Independent peer lists; manual issue or pull request proposing a link with its actual relation and source version.",
+    "corrections": "Identify the affected statement and version, preserve the old address, link evidence and notify known downstream users without rewriting their work.",
+    "credit": "Descriptive contribution history under the requested name, pseudonym or collective attribution; no rankings or implied endorsement.",
+    "licence_defaults": "CC0 for new text and metadata where the contributor chooses it and holds rights; MIT for new standalone tools. Existing and alternative per-artifact licences remain in force."
+  },
   "operation": {
     "maintenance": "paused-at-owner-request-after-2026-09-09-update",
     "automatic_publication": false,

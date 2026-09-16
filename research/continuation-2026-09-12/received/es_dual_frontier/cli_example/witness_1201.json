@@ -1,0 +1,40 @@
+{
+  "D": 1,
+  "R": 23,
+  "a": 306,
+  "channel": "E",
+  "gap": 0,
+  "h": {
+    "denominator": 1,
+    "numerator": 17
+  },
+  "kappa": {
+    "denominator": 1,
+    "numerator": 53
+  },
+  "p": 1201,
+  "r": 1,
+  "rational_ordered_denominators": [
+    {
+      "denominator": 1,
+      "numerator": 306
+    },
+    {
+      "denominator": 1,
+      "numerator": 16218
+    },
+    {
+      "denominator": 1,
+      "numerator": 1082101
+    }
+  ],
+  "repeated_root_stratum": false,
+  "s": 18,
+  "scaled_ordered_denominators": [
+    306,
+    16218,
+    1082101
+  ],
+  "scaled_parameter": 1201,
+  "u": 17
+}

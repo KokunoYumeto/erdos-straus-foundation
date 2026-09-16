@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-11",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "verify.py",
+        "--out",
+        "regenerated"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.602991,
+      "stdout_sha256": "2bb1eb3b87dbe29a7f9f1808adfc6b2fb4da300f3707744254a1d7b82ca2659a",
+      "stderr_bytes": 0,
+      "output_file_sha256": {
+        "cayley_atlas.json": "7add87091997c48098d246444b1d71d72439fa12fb5f9dbeba49e072081b2f98",
+        "orthogonal_algebra.json": "08a6cf1ac05acbc276dbea78520f5ef1629bb9699efa5c58edebead4a10a6547",
+        "receipt.json": "2bb1eb3b87dbe29a7f9f1808adfc6b2fb4da300f3707744254a1d7b82ca2659a",
+        "tetrahedral_pencils.json": "fdc6ae4180337213e14f3816f5ad6f6d103b2c7e7b45cd94be54bf7423783d08"
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify.py",
+        "--out",
+        "regenerated"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.60461,
+      "stdout_sha256": "2bb1eb3b87dbe29a7f9f1808adfc6b2fb4da300f3707744254a1d7b82ca2659a",
+      "stderr_bytes": 0,
+      "output_file_sha256": {
+        "cayley_atlas.json": "7add87091997c48098d246444b1d71d72439fa12fb5f9dbeba49e072081b2f98",
+        "orthogonal_algebra.json": "08a6cf1ac05acbc276dbea78520f5ef1629bb9699efa5c58edebead4a10a6547",
+        "receipt.json": "2bb1eb3b87dbe29a7f9f1808adfc6b2fb4da300f3707744254a1d7b82ca2659a",
+        "tetrahedral_pencils.json": "fdc6ae4180337213e14f3816f5ad6f6d103b2c7e7b45cd94be54bf7423783d08"
+      }
+    }
+  ],
+  "normal_optimized_stdout_identical": true,
+  "normal_optimized_files_identical": true,
+  "verifier_sha256": "38523593e82fde52b61026459e0dbfa35008e2f84295fdf8e7101ce357c19ed7",
+  "note_tex_sha256": "19375dad6fcf14915595efd740949c361e55ec21fe4efc60cbb17fe3c6565f56",
+  "scope": "Exact algebraic replay, not independent mathematical review or Lean compilation"
+}

@@ -1,0 +1,35 @@
+{
+  "arithmetic_inverse": "[k*gate mod R] -> k[c_D]; inverse k=-cusp_evaluation(class) mod D",
+  "cocycle_generators": {
+    "A1": [
+      6,
+      -6,
+      -2
+    ],
+    "A2": [
+      0,
+      -6,
+      3
+    ],
+    "A_infinity": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "finite_class_order": "D",
+  "integral_class": "primitive infinite order; splits a Z summand",
+  "integral_cusp_evaluation": -1,
+  "local_fixed_vectors": {
+    "A1": [
+      2,
+      -4,
+      0
+    ],
+    "A2": [
+      3,
+      -3,
+      0
+    ]
+  }
+}

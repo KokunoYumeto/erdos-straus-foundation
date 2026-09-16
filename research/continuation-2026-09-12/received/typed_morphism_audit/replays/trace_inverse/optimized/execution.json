@@ -1,0 +1,14 @@
+{
+  "name": "trace_inverse",
+  "mode": "optimized",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-O",
+    "/mnt/data/typed_morphism_audit/inputs/leech_trace_inverse/verify.py",
+    "--out",
+    "/mnt/data/typed_morphism_audit/replays/trace_inverse/optimized"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 4.148670887000037,
+  "source_sha256": "a6e90f48d69979a5e69040665dc6ca75b9605ee68dd5f8324da8389eb023f4f4"
+}

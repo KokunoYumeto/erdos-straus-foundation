@@ -1,0 +1,178 @@
+{
+  "date": "2026-09-11",
+  "purpose": "Marked -1/4 and cubic-surface comparison",
+  "primary_sources": [
+    {
+      "id": "Tao2026",
+      "author": "Terence Tao",
+      "year": 2026,
+      "title": "A digestion of the Jacobian conjecture counterexample",
+      "url": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/",
+      "locators": [
+        "Equation (1): explicit polynomial and displayed determinant/fibre",
+        "Equations (2), (5), (7), (10): multiplication, resultant, normalization, constrained factor locus",
+        "Concluding coordinate changes and polynomial inverse"
+      ],
+      "role": "Primary exposition of the explicit Alpöge–Fable polynomial and factor interpretation; independently expanded here.",
+      "read_scope": "Displayed defining construction and chart argument; comments are not mathematical dependencies."
+    },
+    {
+      "id": "Speyer2026",
+      "author": "David Speyer",
+      "year": 2026,
+      "title": "The new counterexample to the Jacobian conjecture",
+      "url": "https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/",
+      "locators": [
+        "Displayed polynomial map",
+        "Displayed elimination and discriminant formulas"
+      ],
+      "role": "Independent primary discussion and discriminant comparison.",
+      "read_scope": "Defining and elimination passages, not whole comment discussion."
+    },
+    {
+      "id": "HeathBrown2002",
+      "author": "D. R. Heath-Brown",
+      "year": 2002,
+      "title": "The density of rational points on Cayley’s cubic surface",
+      "url": "https://arxiv.org/abs/math/0210333",
+      "locators": [
+        "Section 1, page 1: equation, four nodes, nine lines"
+      ],
+      "role": "Classical Cayley equation and line boundary.",
+      "read_scope": "Introductory defining geometry; no quantitative rational-point theorem used."
+    },
+    {
+      "id": "Medrano2021",
+      "author": "Adán Medrano Martín del Campo",
+      "year": 2021,
+      "title": "Monodromy of the family of cubic surfaces branching over smooth cubic curves",
+      "url": "https://arxiv.org/abs/1910.09593v2",
+      "locators": [
+        "Introduction: universal-family W(E6) monodromy",
+        "Section 2.1, printed page 4: six-point blow-up, line classes and intersection pairing"
+      ],
+      "role": "Classical smooth-cubic marking and monodromy context.",
+      "read_scope": "Introduction and Section 2.1; page 4 rendered and inspected. The paper’s specialized 648-element monodromy is not substituted for universal W(E6)."
+    },
+    {
+      "id": "BayerSerre2021",
+      "author": "Eva Bayer-Fluckiger and Jean-Pierre Serre",
+      "year": 2021,
+      "title": "Lines on cubic surfaces, Witt invariants and Stiefel–Whitney classes",
+      "url": "https://doi.org/10.1016/j.indag.2020.08.005",
+      "inspected_url": "https://www.college-de-france.fr/sites/default/files/media/document/2023-11/Jean-Pierre%20Serre_Bayer-Serre%20Lines%20on%20cubic%20surfaces.pdf",
+      "locators": [
+        "Section 1, Theorem 1 and subsequent remark"
+      ],
+      "role": "W(E6) root/line model and W(D5) line stabilizer.",
+      "read_scope": "Opening root and line description in author PDF dated 2 February 2023, not all Witt-invariant results."
+    },
+    {
+      "id": "BaezPumplun2026",
+      "author": "John C. Baez and Susanne Pumplün",
+      "year": 2026,
+      "title": "Three-dimensional Geometry in Exceptional Mathematics",
+      "url": "https://arxiv.org/abs/2609.07538v1",
+      "locators": [
+        "Section 5: first-Tits cubic norm",
+        "Theorem 11 and Appendix A: explicit Albert isomorphism"
+      ],
+      "role": "Classical three-block norm and its Jordan-algebra identification.",
+      "read_scope": "Defining norm and stated coordinate isomorphism; earlier tranche had more complete calculations. No whole-paper audit asserted."
+    },
+    {
+      "id": "IlievManivel2011",
+      "author": "Atanas Iliev and Laurent Manivel",
+      "year": 2011,
+      "title": "On cubic hypersurfaces of dimension seven and eight",
+      "url": "https://arxiv.org/abs/1102.3618v2",
+      "locators": [
+        "Section 3.1, printed page 8"
+      ],
+      "role": "Content-level antecedent: Cartan cubic written from 27-line configuration.",
+      "read_scope": "The defining Jordan determinant and historical 27-line paragraph only; later Calabi–Yau and derived-category claims not used."
+    },
+    {
+      "id": "KimSchreyer2020",
+      "author": "Yeongrak Kim and Frank-Olaf Schreyer",
+      "year": 2020,
+      "title": "An explicit matrix factorization of cubic hypersurfaces of small dimension",
+      "url": "https://arxiv.org/abs/1905.09626",
+      "locators": [
+        "Remark 3.4, printed pages 11–12"
+      ],
+      "role": "Direct antecedent for the signed 45-tritangent cubic and 27-variable/27-line correspondence.",
+      "read_scope": "Remark and multidegree explanation; page 11 rendered and inspected. Large Hessian table not used or copied."
+    },
+    {
+      "id": "GomezWolfson2025",
+      "author": "Claudio Gómez-Gonzáles and Jesse Wolfson",
+      "year": 2025,
+      "title": "Solvable points on intersections of quadrics, cubics, and quartics",
+      "url": "https://arxiv.org/abs/2508.00215",
+      "locators": [
+        "Introduction, Theorems 1.2–1.3"
+      ],
+      "role": "Source behind special-point slides; field-extension and ambient-dimension scope comparison only.",
+      "read_scope": "Statement-level comparison, not imported into an ES existence proof."
+    },
+    {
+      "id": "Gomez2025",
+      "author": "Claudio Gómez-Gonzáles",
+      "year": 2025,
+      "title": "Special points on intersections of hypersurfaces",
+      "url": "https://arxiv.org/abs/2510.10272",
+      "locators": [
+        "Abstract and source identification"
+      ],
+      "role": "Identify slide citation and keep field-extension problem distinct from prescribed integral return.",
+      "read_scope": "Abstract only; screenshot uses a 2026 date while retrieved arXiv record begins in 2025. No claim of exact slide/publication version identity."
+    }
+  ],
+  "supplied_material": {
+    "screenshots": 14,
+    "subjects": [
+      "27-line monodromy",
+      "pencil of planes and quintic",
+      "resolvent degree",
+      "special points",
+      "Cayley nodal cubic",
+      "Clebsch cubic",
+      "other singular hypersurfaces"
+    ],
+    "scope": "Visually inspected supplied screenshots; no public access to the displayed localhost slide server is claimed."
+  },
+  "connected_read": [
+    {
+      "repository": "KokunoYumeto/erdos-straus-foundation",
+      "ref": "8da642d4892f9d40487e52b1fae8d14ea0d46b1e",
+      "path": "results/integration-2026-09-10/ARGUMENTS.md",
+      "lines": [
+        1,
+        70
+      ],
+      "result": "Read selected recovered-matrix and quadratic-form notes. This read did not supply the explicit Fable chart; the primary public exposition did."
+    }
+  ],
+  "prior_local_material": [
+    {
+      "path": "/mnt/data/cube_unification/note.tex",
+      "sha256": "a786a6a7870361c80f96a001a4ebc43e206f07990ff37e53deb6af5c38846c01",
+      "role": "Earlier conversation package; predecessor calculations remain attributed to that package, not newly re-executed en bloc."
+    },
+    {
+      "path": "/mnt/data/cube_unification/execution_receipt.json",
+      "sha256": "19fb1cecafdb1061f6434dd13ad708184568ba3b1e0f13f8b19fda6993978f2b",
+      "role": "Earlier conversation package; predecessor calculations remain attributed to that package, not newly re-executed en bloc."
+    }
+  ],
+  "independent_derivations": [
+    "Complete root-marked inverse in the chosen coordinates",
+    "Normalized Mobius matrix and pair scalings",
+    "ES reciprocal coefficient slice and positivity region",
+    "Three-block line-entry dictionary with exact signs",
+    "Six signed Weyl lifts and four-node specialization orbits",
+    "Cayley conic-pencil determinant"
+  ],
+  "priority_scope": "A content-level literature search found the classical factor, Weyl, first-Tits and 45-tritangent antecedents. No exhaustive historical-priority determination or assertion of mathematical novelty is made."
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-11",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "source_sha256": "a6e90f48d69979a5e69040665dc6ca75b9605ee68dd5f8324da8389eb023f4f4",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "verify.py",
+        "--out",
+        "certificates"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.0653,
+      "stdout": "{\"T_order\": 12, \"checks\": 201742, \"claims_not_checked\": [\"universal ES existence\", \"full Leech-lattice uniqueness proof\", \"Lean compilation\", \"independent review\", \"historical novelty\"], \"minimal_vectors\": 196560, \"nine_column_right_inverse\": \"exact identity\", \"projection_support\": 123, \"single_trace_residue_classes\": 64}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify.py",
+        "--out",
+        "optimized_certificates"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.7557,
+      "stdout": "{\"T_order\": 12, \"checks\": 201742, \"claims_not_checked\": [\"universal ES existence\", \"full Leech-lattice uniqueness proof\", \"Lean compilation\", \"independent review\", \"historical novelty\"], \"minimal_vectors\": 196560, \"nine_column_right_inverse\": \"exact identity\", \"projection_support\": 123, \"single_trace_residue_classes\": 64}\n",
+      "stderr": ""
+    }
+  ],
+  "mathematical_outputs_byte_identical": true,
+  "files": {
+    "arithmetic.json": "fdfc929c3c58c3d07993fc149d2b17fa46660b0220e7834b14b6293963129758",
+    "shortest_lifts.json": "0188197541df7e71f7496b1d808e793dfe1b1895fe5dd8b824ca1f2c23ca531c",
+    "summary.json": "69bee4a880d5dd74c66cf7c12d86d3e894b4b7f8a5aef959a7df716c4e74778c",
+    "trace_frame.json": "b9c4edf0cbbe37b41d90cd41ddd612cfab096581ae7b2a73a9c569249811c29d",
+    "twelve_views.json": "3926b650c6613f3253d53044d0a7b08e68a2f0ccb043cc76aeedd212483da9b6"
+  },
+  "scope": "Standard-library finite certificates and exact basis/representative identities; universal results use the written proofs. No Lean compilation or independent review."
+}

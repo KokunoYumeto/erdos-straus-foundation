@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-11",
+  "primary_sources": [
+    {
+      "id": "CCM-v1",
+      "authors": [
+        "Alain Connes",
+        "Caterina Consani",
+        "Henri Moscovici"
+      ],
+      "year": 2025,
+      "title": "Zeta Spectral Triples",
+      "version": "arXiv:2511.22755v1",
+      "url": "https://arxiv.org/html/2511.22755v1",
+      "locators": [
+        "Section 7, (7.1)-(7.2): literal kernel and E normalization",
+        "Section 7, Lemma 7.1: Hermite combination",
+        "Section 7, (7.6), Lemma 7.2(ii), (7.8): compact input and sup-norm approximation",
+        "Section 7, Lemma 7.3: Mellin-kernel limit",
+        "Section 8: missing comparison/spectral convergence obligations"
+      ],
+      "scope": "These sections read from version-pinned HTML. Finite-matrix spectrum and numerical tables not independently replayed. Literal Mellin coefficient independently recomputed."
+    },
+    {
+      "id": "Chapman-1997",
+      "authors": [
+        "Robin Chapman"
+      ],
+      "year": 1997,
+      "title": "Constructions of the Golay Codes: A Survey",
+      "version": "1.1, 23 September 1997",
+      "url": "https://empslocal.ex.ac.uk/people/staff/rjchapma/etc/golay11.pdf",
+      "locators": [
+        "Section 1.6, printed p.10: quadratic-residue projective-line construction, PSL(2,23) action",
+        "Section 1.2: code weight structure"
+      ],
+      "scope": "Primary author note parsed and p.10 rendered/inspected. Concrete code and all projective actions independently reconstructed and executed."
+    },
+    {
+      "id": "Brouwer-Leech",
+      "authors": [
+        "A. E. Brouwer"
+      ],
+      "year": null,
+      "title": "Uniqueness of the Leech lattice",
+      "url": "https://aeb.win.tue.nl/2WF02/Leech.pdf",
+      "locators": [
+        "Theorem 1.1: even rootless rank-24 unimodular identification",
+        "Theorem 1.4, printed p.4: parity/sum/code coordinate construction",
+        "Section 3, printed p.6: theta identity 65520/691*(sigma11-tau)"
+      ],
+      "scope": "Six-page primary author note parsed; pp.4 and 6 rendered/inspected. Coordinate lattice proof written independently; classical theta identity imported with its normalization."
+    },
+    {
+      "id": "GitHub-recovered-directions",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/dd16c2246f1125e08631d3cfc050e8a4ba15f6d1/RESEARCH_DIRECTIONS.md",
+      "ref": "dd16c2246f1125e08631d3cfc050e8a4ba15f6d1",
+      "locators": [
+        "read lines 16-66 through connected GitHub",
+        "Niemeier/Leech section",
+        "CivQ17 affine modulo-12 programme section"
+      ],
+      "scope": "Historical-source pointer only. Does not establish that the newly displayed T is an earlier workbench formula."
+    }
+  ],
+  "local_comparisons": [
+    {
+      "source": "preceding tetrahedral-markings tranche",
+      "path": "note.tex",
+      "sha256": "19375dad6fcf14915595efd740949c361e55ec21fe4efc60cbb17fe3c6565f56",
+      "scope": "Branch definitions and basepoint conventions; not imported by the new executable."
+    },
+    {
+      "source": "preceding tetrahedral-markings tranche",
+      "path": "verify.py",
+      "sha256": "38523593e82fde52b61026459e0dbfa35008e2f84295fdf8e7101ce357c19ed7",
+      "scope": "Branch definitions and basepoint conventions; not imported by the new executable."
+    },
+    {
+      "source": "preceding tetrahedral-markings tranche",
+      "path": "certificates/tetrahedral_pencils.json",
+      "sha256": "fdc6ae4180337213e14f3816f5ad6f6d103b2c7e7b45cd94be54bf7423783d08",
+      "scope": "Branch definitions and basepoint conventions; not imported by the new executable."
+    },
+    {
+      "source": "preceding tetrahedral-markings tranche",
+      "path": "certificates/cayley_atlas.json",
+      "sha256": "7add87091997c48098d246444b1d71d72439fa12fb5f9dbeba49e072081b2f98",
+      "scope": "Branch definitions and basepoint conventions; not imported by the new executable."
+    }
+  ],
+  "archive_scope": {
+    "source": "user-supplied archive",
+    "member": "reconstructed_math_program_core_20260711.zip!/06_source_extracts/primitive_support_defects_preprint.tex",
+    "sha256": "f12f2c1c36effbf89740e308733d8434989e69cc088a0fc1c686281a157b42c5",
+    "inspected_lines": [
+      70,
+      920,
+      1153,
+      1273
+    ],
+    "role": "Located 12A2 Niemeier/Leech and theta-series context. The exact recalled Leech mod-12 dynamics was not identified. The new matrix T is not represented as recovered source material.",
+    "redistributed": false
+  },
+  "search_boundary": "Targeted connected GitHub search/read, a bounded nested-archive text search, and primary-source web reading. No exhaustive novelty search; no historical-priority claim. No raw correspondence or private transcripts are included.",
+  "source_bytes": "External source PDFs and font files are not redistributed. Parsed reading and screenshots are distinguished from exact local byte hashes."
+}

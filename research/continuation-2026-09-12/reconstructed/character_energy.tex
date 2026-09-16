@@ -1,0 +1,479 @@
+% Reconstructed proof module, 12 September 2026.
+% This is newly authored mathematics, not a recovered src/energy.tex download.
+% Required packages: amsmath, amssymb, amsthm; the standalone wrapper supplies them.
+\section{Exact character-resolved collision minima and integral ES return}
+\label{sec:reconstructed-character-energy}
+
+\paragraph{Provenance and scope.}
+This module reconstructs the character-resolved energy result stated in the
+supplied joint ES discussion, \texttt{pasted-text.txt}, in its final
+``Today 8:19 AM'' entry, subsection ``JT's contribution supplies an exact
+refinement of the positivity test.'' The discussion credits the quadratic
+character refinement to its integration of JT's bounded-divisor synthesis.
+The original \texttt{src/energy.tex} was not available: the downloaded loose
+\texttt{workbench.tex} is a wrapper referring to that missing file.
+The shell and ordered channel conventions are those in the supplied earlier
+\texttt{es\_dual\_frontier/workbench.tex} and the definition block in
+\texttt{dual\_es.py}; their required identities are proved here in full.
+The independently authored checker imports no downloaded code.
+The result is a sufficient test on a specified full exponent box. It proves
+no universal statement that every prime has a shell passing this test.
+
+\subsection{The complete shell, exponent box, and ordered return}
+Fix a prime $p=4m+1$, where $m\geq1$, and an integer
+\[
+ m+1\leq a\leq3m,\qquad R=4a-p.
+\]
+Then $3\leq R\leq8m-1=2p-3$, $R\equiv3\pmod4$, and $0<a<p$.
+Since $p$ is prime, $\gcd(a,p)=1$; consequently
+\[
+ \gcd(a,R)=\gcd(a,p)=1,\qquad
+ \gcd(p,R)=\gcd(p,4a)=1.
+\]
+Write the complete prime factorization as $a=\prod_{q\mid a}q^{e_q}$.
+All these primes are units modulo $R$. Define
+\[
+ B_a=\prod_{q\mid a}\bigl([-e_q,e_q]\cap\mathbb Z\bigr),
+ \quad v(\beta)=\prod_{q\mid a}q^{\beta_q}\in
+ G=(\mathbb Z/R\mathbb Z)^\times,
+ \quad u(\beta)=\prod_{q\mid a}q^{e_q+\beta_q}.
+\]
+Negative powers in $v$ mean multiplicative inverses in $G$.
+Unique prime factorization proves that $\beta\mapsto u(\beta)$ is a bijection
+from $B_a$ onto the positive divisors of $a^2$: its inverse is
+$\beta_q=v_q(u)-e_q$. Multiplying the residue products gives
+\[
+ v(\beta)=u(\beta)a^{-1}\pmod R,
+ \qquad u(-\beta)=a^2/u(\beta),
+ \qquad v(-\beta)=v(\beta)^{-1}.
+\]
+In particular no unbounded subgroup or shorter exponent interval has
+replaced $B_a$.
+
+For any positive divisor $u\mid a^2$, put $d=a^2/u$ and retain the two
+ordered rational triples
+\begin{align*}
+ Q_E(p,a,u)&=\left(a,\frac{pa+d}{R},\frac{pa+p^2u}{R}\right),\\
+ Q_M(p,a,u)&=\left(a,\frac{p(a+d)}{R},\frac{p(a+u)}{R}\right).
+\end{align*}
+Their first denominator remains distinguished; the last two entries are
+not sorted. In either case, if these entries are denoted $Y,Z$, then
+\[
+ (RY-pa)(RZ-pa)=p^2a^2.
+\]
+Indeed the two factors are $(d,p^2u)$ in channel $E$ and $(pd,pu)$ in
+channel $M$. Expanding and cancelling the identical constant term gives
+$R^2YZ-paR(Y+Z)=0$. Since $R,p,a,Y,Z$ are positive, division gives
+\[
+ \frac1Y+\frac1Z=\frac{R}{pa},\qquad
+ \frac1a+\frac1Y+\frac1Z=\frac{p+R}{pa}=\frac4p.
+\]
+Both triples therefore always give positive rational ES decompositions.
+
+The exact integral gates follow without discarding the modulus $R$.
+For $E$, multiplication of the first numerator by the unit $u$ yields
+\[
+ u(pa+d)\equiv a^2(4u+1)\pmod R,
+ \qquad pa+p^2u\equiv4a^2(4u+1)\pmod R.
+\]
+For $M$ the exact numerator identities are
+\[
+ u\,p(a+d)=pa(u+a),\qquad p(a+u)=p(u+a).
+\]
+Since every multiplier used is a unit modulo $R$, the two reduced
+denominators in each channel coincide and are respectively
+\[
+ D_E=\frac{R}{\gcd(R,4u+1)},\qquad
+ D_M=\frac{R}{\gcd(R,u+a)}.
+\]
+Thus $Q_E$ is integral exactly when $R\mid4u+1$, and $Q_M$ exactly when
+$R\mid u+a$. This proves all assertions about integrality, not merely
+one implication.
+
+Since $u=av(\beta)$ modulo $R$ and $4a=p$ modulo $R$, these tests become
+\[
+ M:\ v(\beta)=-1,
+ \qquad E:\ v(\beta)=-p^{-1}.
+\]
+The complete box is stable under $\beta\mapsto-\beta$, and
+$(-p)^{-1}=-p^{-1}$, so a vector with residue $-p$ also supplies an
+exterior witness by applying this involution. Consequently simultaneous
+failure of both channels in this shell is equivalent to absence of all
+the residues in the deduplicated, inversion-stable set
+\[
+ T=\{-1,-p,-p^{-1}\}\subseteq G.
+\]
+The set may have fewer than three elements, and may contain the identity;
+both possibilities are retained below.
+
+For the additional integral marking put
+\[
+ g=\gcd(a,u),\quad h=g^2/u,\quad r=u/g,\quad s=a/g.
+\]
+If $e=v_q(a)$ and $f=v_q(u)$, then $0\leq f\leq2e$ and the exponents
+of $h,r,s$ are $2\min(e,f)-f$, $f-\min(e,f)$ and
+$e-\min(e,f)$. The first is $f$ when $f\leq e$ and $2e-f$ otherwise,
+so all are nonnegative. At least one of the last two is zero, proving
+$\gcd(r,s)=1$. Direct substitution now proves
+\[
+ a=hrs,\quad u=hr^2,\quad d=hs^2,
+\]
+and the ordered triples are
+\[
+ Q_E=(hrs,hs\kappa,phr\kappa),\quad\kappa=(pr+s)/R,
+ \qquad
+ Q_M=(hrs,phs\lambda,phr\lambda),\quad\lambda=(r+s)/R.
+\]
+Since $g$ is a unit modulo $R$, the middle gate is equivalent to
+$R\mid r+s$. The exterior numerator satisfies
+$pa+d=hs(pr+s)$, where $hs$ is a unit modulo $R$, so the exterior
+gate is equivalent to $R\mid pr+s$. Hence these quotients are positive
+integers whenever the corresponding target occurs. Every marking returns
+to the original objects via $a=hrs$, $u=hr^2$ and
+$\beta_q=v_q(u)-e_q$; moreover
+\[
+ u=\frac{a^2}{RY-pa}\quad(E),\qquad
+ u=\frac{pa^2}{RY-pa}\quad(M).
+\]
+Thus the channel and ordered denominators retain an explicit inverse.
+
+For completeness, the full interval of shells suffices for the ES
+existence question at this $p$. Given any positive integral solution,
+move a smallest denominator to the distinguished position $a$, retaining
+that permutation. The inequalities
+$4/p>1/a$ and $4/p\leq3/a$ give $p/4<a\leq3p/4$, hence
+$m+1\leq a\leq3m$. Its other two denominators obey the residual product
+identity above, and
+$RY-pa=paY/Z>0$, $RZ-pa=paZ/Y>0$. Since $p\nmid a$, the first residual
+is uniquely $p^i v$ with $i\in\{0,1,2\}$ and $v\mid a^2$.
+For $i=0$, take $E,u=a^2/v$ in the existing order. For $i=1$, take
+$M,u=a^2/v$ in the existing order. For $i=2$, take $E,u=v$ and retain
+the swap of the last two entries. The displayed residuals verify each
+case. Conversely, an integral candidate already solves ES. This proves
+the exact equivalence with a hit in the full atlas; it does not assert
+that such a hit always exists.
+
+\subsection{Multiplicities, parity, and character cells}
+Define
+\[
+ \mu(g)=\#\{\beta\in B_a:v(\beta)=g\},\quad
+ N=\sum_{g\in G}\mu(g)=\prod_{q\mid a}(2e_q+1),\quad
+ E=\sum_{g\in G}\mu(g)^2.
+\]
+The involution $\beta\mapsto-\beta$ bijects the fibres of $g$ and
+$g^{-1}$, proving $\mu(g)=\mu(g^{-1})$. Its only fixed vector in the
+integer box is zero. The fibre over $1$ contains that vector and otherwise
+splits into two-element orbits; thus $\mu(1)$ is odd and at least one.
+If $g^2=1$ but $g\ne1$, its fibre is stable under this involution and
+contains no fixed vector, so $\mu(g)$ is even.
+
+The collision count also has the independent exact expression
+\[
+ E=\sum_{\substack{-2e_q\leq\delta_q\leq2e_q\ (q\mid a)\\
+                  \prod q^{\delta_q}=1\ (\bmod R)}}
+       \prod_{q\mid a}(2e_q+1-|\delta_q|).
+\]
+Indeed $E$ counts ordered pairs $(\beta,\gamma)$ with identical residue.
+Their coordinate difference $\delta=\beta-\gamma$ has residue one.
+For a single interval $[-e,e]$, the number of ordered pairs of difference
+$\delta$ is $2e+1-|\delta|$ for $|\delta|\leq2e$, and zero otherwise:
+the first entry lies in $[-e,e]\cap[-e+\delta,e+\delta]$.
+Taking the product of these counts proves the formula.
+
+Let $V$ be a finite elementary abelian $2$-group, written
+multiplicatively, and let $\pi:G\to V$ be a homomorphism; surjectivity
+is not required. For $v\in V$ put
+\[
+ C_v=\pi^{-1}(v),\qquad
+ N_v=\sum_{g\in C_v}\mu(g),\qquad
+ E_v=\sum_{g\in C_v}\mu(g)^2.
+\]
+As $v^{-1}=v$, each cell is stable under inversion. Its mass is even
+except in the cell containing $1$, where its mass is odd: inverse pairs
+contribute twice their common multiplicity, nonidentity involutions have
+even multiplicity, and the identity contributes odd multiplicity.
+Empty cells have mass and energy zero.
+
+For each odd prime $\ell\mid R$, the prime-local quadratic character
+$\chi_\ell(g)$ is $1$ when $g$ is a nonzero square modulo $\ell$ and
+$-1$ otherwise. This is a homomorphism: in the multiplicative group of
+the field $\mathbb Z/\ell\mathbb Z$, the square map is a homomorphism
+whose kernel is exactly $\{1,-1\}$, since
+$(x-1)(x+1)=0$ implies $x=1$ or $x=-1$ in a field. Every fibre has
+two elements, so the square subgroup has index two. The quotient by
+that subgroup has two elements and therefore supplies precisely this
+sign character. Reduction modulo $\ell$ is a group homomorphism on $G$,
+which proves the assertion for $\chi_\ell$ on $G$ as well.
+
+Writing $R=\prod_{\ell\mid R}\ell^{f_\ell}$, define
+\[
+ \pi_{\rm quad}(g)=(\chi_\ell(g))_{\ell\mid R},\qquad
+ \pi_{\rm Jac}(g)=\prod_{\ell\mid R}\chi_\ell(g)^{f_\ell}.
+\]
+Both are homomorphisms. The second is obtained from the first by the
+explicit homomorphism $(\epsilon_\ell)\mapsto
+\prod\epsilon_\ell^{f_\ell}$; factors with even $f_\ell$ disappear only
+from this product. For example, modulo $9$ the residue $2$ is a
+non-square modulo $3$, so its prime-local character is $-1$, whereas
+its Jacobi character is $(-1)^2=1$. Thus these two partitions need
+not coincide. The trivial homomorphism is the unpartitioned case.
+
+\subsection{The exact minimum, including all impossible cases}
+For a fixed cell let $A_v=C_v\setminus T$. Since both $C_v$ and $T$
+are inversion-stable, so is $A_v$. Its slots are the unordered inverse
+pairs $\{g,g^{-1}\}$ with $g\ne g^{-1}$, the individual nonidentity
+involutions $g^2=1$, $g\ne1$, and the identity if it is present.
+Write $b_v=1$ when $1\in C_v$ and $b_v=0$ otherwise.
+
+For a nonnegative integer mass $n$, define $L_v(n)$ as the minimum of
+$\sum_{g\in C_v}\nu(g)^2$ over all maps
+$\nu:C_v\to\mathbb Z_{\geq0}$ satisfying
+\[
+ \sum_{g\in C_v}\nu(g)=n,\quad
+ \nu(g)=\nu(g^{-1}),\quad
+ \nu|_{T\cap C_v}=0,
+\]
+and additionally $\nu(1)$ odd when $1\in C_v$, and $\nu(g)$ even
+for every nonidentity involution in the cell. If there is no such map,
+set $L_v(n)=+\infty$.
+
+Here is a complete evaluation. If $1\in T\cap C_v$, the minimum is
+$+\infty$ for every $n$, since an odd nonnegative identity value cannot
+vanish. Otherwise the identity slot exists precisely when $b_v=1$.
+If $n<b_v$ or $n-b_v$ is odd, the minimum is $+\infty$.
+In all remaining cases put $K=(n-b_v)/2$. Write $P_v$ for the set
+of inverse-pair slots and $J_v$ for the nonidentity involution slots.
+Use nonnegative integer variables $k_P$ for $P\in P_v$, $z_j$ for
+$j\in J_v$, and $k_0$ only if $b_v=1$. Then
+\[
+ L_v(n)=\min_{\sum_P k_P+\sum_j z_j+b_vk_0=K}
+ \left(2\sum_P k_P^2+4\sum_j z_j^2+
+ \begin{cases}(1+2k_0)^2,&b_v=1,\\0,&b_v=0.\end{cases}\right),
+\]
+where the absent variable is omitted from both sums. If $K>0$ and
+there are no slots, the minimum is $+\infty$; if $K=0$ it is $b_v$.
+These are all the impossible cases: when at least one slot exists, it
+can hold every remaining pair of mass units. For a pair slot the two
+values are $(k_P,k_P)$, for a nonidentity involution its value is
+$2z_j$, and for the identity its value is $1+2k_0$. These assignments
+give a bijection between feasible slot allocations and feasible maps
+$\nu$, proving the optimization formula. There are finitely many
+allocations for fixed $K$, so every finite minimum is attained.
+
+Start the identity at mass one and energy one when $b_v=1$ and start
+every other slot at zero. Incrementing a slot with current index $k$
+by one adds two units of mass. Its exact energy increment is respectively
+\[
+ \begin{array}{c|c|c}
+ \text{slot}&\text{current values}&\text{incremental energy}\\\hline
+ \{g,g^{-1}\},\ g\ne g^{-1}&(k,k)&2(k+1)^2-2k^2=4k+2\\
+ g^2=1,\ g\ne1&2k&(2k+2)^2-(2k)^2=8k+4\\
+ g=1&1+2k&(3+2k)^2-(1+2k)^2=8k+8
+ \end{array}
+\]
+In each row $k$ starts at zero. Thus the marginal sequences are
+$2,6,10,\ldots$, $4,12,20,\ldots$, and $8,16,24,\ldots$.
+Selecting the $K$ least costs from the union of these increasing
+sequences proves the minimum exactly. To justify feasibility, every
+predecessor in a sequence is strictly smaller than its successor,
+so selecting a successor among the $K$ least costs selects its whole
+prefix. Ties between different sequences can be resolved in any fixed
+order. To justify optimality, any feasible allocation selects exactly
+$K$ costs from this union, hence its sum is at least the sum of the
+$K$ least ones. Equivalently, replacing a selected unnecessarily large
+cost by the least unselected available cost improves the allocation
+until the same minimum is reached. A heap holding the first unused
+cost of each sequence implements this finite procedure.
+
+\paragraph{Forcing theorem.}
+For the actual full-box multiplicities and every cell $v$,
+\[
+ \mu|_{T\cap C_v}=0\quad\Longrightarrow\quad E_v\geq L_v(N_v).
+\]
+Indeed all other constraints defining $L_v$ were proved for $\mu$,
+so this restriction is a feasible map if its target fibres vanish.
+Taking the contrapositive proves
+\[
+ E_v<L_v(N_v)\quad\Longrightarrow\quad
+ \text{there is }\beta\in B_a\text{ with }v(\beta)\in T\cap C_v.
+\]
+The preceding explicit map then produces a positive integral ES
+witness. In particular, if $T\cap C_v=\{-1\}$, the witness is in
+the middle channel. A finite energy is smaller than $+\infty$,
+so incompatible cells are included without an extra convention.
+If $1\in T$, the zero vector itself is already a target and is
+detected by this rule. If $T\cap C_v$ is empty, the actual restriction
+is feasible and this cell can never produce a false certificate.
+
+Every finite $L_v(n)$ is attained by a distribution satisfying exactly
+the specified mass, symmetry, parity, and exclusions. Hence it is the
+largest universal lower bound on energy from those constraints alone.
+This is the precise optimality assertion. It does not state that every
+energy above the minimum is attainable, or that every attaining abstract
+distribution arises from the arithmetic exponent box.
+
+\subsection{Exact refinement and preservation of certificates}
+Let $\pi_2:G\to V_2$ and $\pi_1:G\to V_1$ be such homomorphisms,
+and suppose $\pi_1=\rho\circ\pi_2$ for a homomorphism
+$\rho:V_2\to V_1$. A coarse cell $C_v$ is the disjoint union of
+the fine cells $C_w$ with $\rho(w)=v$. For any prescribed fine
+masses $n_w$, with $n=\sum_{\rho(w)=v}n_w$, the exact inequality is
+\[
+ L^{(1)}_v(n)\leq\sum_{\rho(w)=v} L^{(2)}_w(n_w).
+\]
+All terms take values in $\mathbb Z_{\geq0}\cup\{+\infty\}$.
+If some right-hand term is infinite the inequality is automatic.
+Otherwise choose a minimizer on each fine cell and join these maps.
+Each inversion orbit lies entirely in a fine cell, so the joined map
+obeys every coarse constraint, with mass $n$ and energy equal to the
+sum on the right. This proves the inequality. Restricting any coarse
+feasible map to its fine cells proves the stronger exact identity
+\[
+ L^{(1)}_v(n)=
+ \min_{\substack{n_w\in\mathbb Z_{\geq0}\\
+                  \sum_{\rho(w)=v}n_w=n}}
+       \sum_{\rho(w)=v}L^{(2)}_w(n_w).
+\]
+If the coarse minimum is finite, its minimizer supplies the masses
+and gives the reverse inequality. If it is infinite, no combination
+of finite fine minimizers can exist, since their join would be a
+coarse feasible map. This also proves equality in the infinite case.
+
+For actual masses and energies,
+$N^{(1)}_v=\sum N^{(2)}_w$ and $E^{(1)}_v=\sum E^{(2)}_w$ by disjointness.
+If every fine cell satisfies $E^{(2)}_w\geq L^{(2)}_w(N^{(2)}_w)$,
+their sum and the inequality above give
+$E^{(1)}_v\geq L^{(1)}_v(N^{(1)}_v)$. The contrapositive proves that
+every coarse forcing certificate yields a forcing certificate in at
+least one of its fine cells. This applies successively to the trivial,
+Jacobi, and all-prime-local quadratic partitions, with the explicit
+product map already proved above.
+
+\subsection{The complete numerical witness at p = 1201}
+Take $p=1201$, $a=310=2\cdot5\cdot31$, $R=39=3\cdot13$.
+To certify primality explicitly, $34^2<1201<35^2$ and the residues
+of $1201$ modulo the primes $2,3,5,7,11,13,17,19,23,29,31$ are
+respectively $1,1,1,4,2,5,11,4,5,12,23$. None is zero, and every
+composite integer has a prime divisor at most its square root, as
+follows by writing it as the product of two positive factors larger
+than one and taking a prime factor of the smaller one. These are
+all primes at most 34, so $1201$ is prime.
+There are exactly $3^3=27$ exponent vectors with each coordinate
+in $\{-1,0,1\}$. In the residue ring, $p=31$ and $31^{-1}=34$,
+since $31\cdot34=27\cdot39+1$. Hence $T=\{5,8,38\}$.
+The complete histogram on the 24 units is
+\[
+\begin{array}{c|rrrrrrrrrrrr}
+g&1&2&4&5&7&8&10&11&14&16&17&19\\\hline
+\mu(g)&1&1&1&1&2&1&1&0&2&1&1&2\\[2pt]
+g&20&22&23&25&28&29&31&32&34&35&37&38\\\hline
+\mu(g)&1&1&1&0&2&1&1&0&1&1&2&2
+\end{array}
+\]
+This table can be checked by multiplying all 27 combinations of
+$(2^{-1},1,2)=(20,1,2)$, $(5^{-1},1,5)=(8,1,5)$ and
+$(31^{-1},1,31)=(34,1,31)$ modulo $39$. Its six entries of value
+two and fifteen entries of value one give $N=27$ and $E=6\cdot4+15=39$.
+
+Deleting $T$ leaves nine inverse pairs,
+\[
+ \{2,20\},\{4,10\},\{7,28\},\{11,32\},\{16,22\},
+ \{17,23\},\{19,37\},\{29,35\},\{31,34\},
+\]
+the two nonidentity involutions $14,25$, and the identity. The
+unpartitioned mass budget is $(27-1)/2=13$. The 13 least marginal
+costs are nine copies of $2$, two copies of $4$, and two copies of
+$6$. Thus
+\[
+ L_{\mathrm{unpartitioned}}(27)=1+9\cdot2+2\cdot4+2\cdot6=39.
+\]
+Equality $E=39$ gives no strict forcing certificate at this level.
+
+The negative Jacobi cell is exactly
+\[
+ C_- =\{7,14,17,19,23,28,29,31,34,35,37,38\}.
+\]
+For a direct sign check the nonzero squares modulo $3$ are $\{1\}$,
+and those modulo $13$ are $\{1,3,4,9,10,12\}$; taking the product
+of these two signs gives exactly the displayed cell. Its table entries
+give $N_-=18$, $E_-=30$, and $T\cap C_-=\{38\}$.
+Removing this target leaves five pairs
+\[
+ \{7,28\},\{17,23\},\{19,37\},\{29,35\},\{31,34\}
+\]
+and the nonidentity involution $14$. There is no identity slot.
+The budget is nine, whose nine least costs are five copies of $2$,
+one copy of $4$, and three copies of $6$. Therefore
+\[
+ L_-(18)=5\cdot2+4+3\cdot6=32
+ =\min_{n_1+\cdots+n_5+z=9}
+       \left(2\sum_{i=1}^5 n_i^2+4z^2\right).
+\]
+All variables in the minimum are nonnegative integers. The allocation
+$(n_1,\ldots,n_5,z)=(2,2,2,1,1,1)$ attains 32, and the marginal
+argument proves that no smaller value occurs. Hence $30<32$ forces
+the middle target in this specific cell.
+
+The finer labels are ordered by the primes $(3,13)$; their complete
+mass, energy, minimum and target data are
+\[
+\begin{array}{c|r|r|r|l}
+v&N_v&E_v&L_v(N_v)&T\cap C_v\\\hline
+(-1,-1)&4&4&4&\{5,8\}\\
+(-1,+1)&8&12&14&\{38\}\\
+(+1,-1)&10&18&18&\varnothing\\
+(+1,+1)&5&5&5&\varnothing
+\end{array}
+\]
+These values follow by grouping the full histogram using the explicit
+square lists. The allowed slot counts are respectively two pairs;
+two pairs and the involution $14$; three pairs; and two pairs, the
+identity, and the involution $25$. The marginal formula gives the
+four displayed minima, including $2+2+4+6=14$ for $(-1,+1)$.
+
+An actual middle fibre vector is $\beta=(0,-1,-1)$ in the prime
+order $(2,5,31)$. Its residue is $8\cdot34=272=6\cdot39+38$, and
+its original divisor is $u=2^{1+0}5^{1-1}31^{1-1}=2$.
+The complete marking is therefore
+\[
+ (p,R,u,h,r,s,\lambda)=(1201,39,2,2,1,155,4),
+\]
+because $\gcd(310,2)=2$ and $(1+155)/39=4$. Substitution in the
+ordered middle return gives
+\[
+ Q_M=(310,\ 1201\cdot2\cdot155\cdot4,\ 1201\cdot2\cdot1\cdot4)
+     =(310,1489240,9608).
+\]
+Every number is a positive integer. The earlier proved reciprocal
+identity now verifies the ES equation exactly, and the retained
+slope satisfies $r/s=1/155<1/8$. This is a stronger forcing
+certificate for this witness, with its entire divisor vector retained.
+
+\subsection{Finite verification and the boundary of the result}
+The independent standard-library checker compares the marginal algorithm
+with an independent dynamic program
+that uses the occupancy squares directly. It includes all masses
+$0\leq n\leq19$, zero through three pair slots, zero through three
+nonidentity involution slots, presence or absence of the identity,
+and the forbidden-identity case. It also compares the actual cells
+of the $1201,310$ example with that dynamic program. The checker
+uses explicit exceptions, so optimized Python retains every check.
+For its arithmetic cases it enumerates the full box and independently
+enumerates divisors of $a^2$ by trial divisibility and complementary
+divisors. The signed-box symmetries, parity, target exclusions,
+refinement inequalities, and extracted rational identities are checked
+exactly. The weighted autocorrelation is independently checked on
+the listed examples, including shells with $R\geq p$.
+
+The scan uses exactly the primes $p\equiv1\pmod{12}$ with $p\leq1500$
+and the first-half shells $m+1\leq a\leq2m$, equivalently $R<p$.
+It contains 54 primes and 9531 shells and gives respectively
+214 unpartitioned, 231 Jacobi, and 240 fully quadratic certifications.
+These are shell counts. The general theorem retains the full shell
+range through $3m$; this finite scan does not replace that range.
+The empty shell $p=37,a=18,R=35$ is retained and is not certified by
+any partition. Ordinary and optimized execution reproduce the same
+mathematical JSON outputs, with execution details recorded separately.
+These finite results and the proved sufficient criterion do not
+establish that every prime has a certified shell, and a shell that
+does not pass this strict inequality may still have a genuine target.

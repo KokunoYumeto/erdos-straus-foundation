@@ -1,0 +1,356 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,booktabs,array,microtype}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[authoryear,round]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}\newcommand{\R}{\mathbb R}\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}\newcommand{\PP}{\mathbb P}
+\newcommand{\Tr}{\operatorname{Tr}}\newcommand{\Nm}{\operatorname{N}}
+\newcommand{\Res}{\operatorname{Res}}
+\setlength{\emergencystretch}{2em}
+\title{Four tetrahedral markings over three Fable branches\\
+\large Orthogonal half-units, normalized pencils, and the four-face Cayley atlas}
+\author{An explicit research continuation}
+\date{11 September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+We retain the fourfold tetrahedral marking rather than interpreting it as an additional root of a fixed cubic. The split algebra of the three projective roots $\infty,1/2,-1/2$ supplies three orthogonal half-units. Four signed combinations form a regular tetrahedron. Its rotation group acts on a marked numerator--denominator pencil, producing twelve distinct states: each of the four numerator directions carries all three factor markings. Resultant normalization maps these states four-to-one to the three explicit Fable preimages. A second construction retains all four Cayley charts, their twelve root markings, exact transition maps, the companion-order sign, and the original ES marking. We derive a rational involution on the root--derivative coordinates and verify all calculations with standard-library Python. These are constructions and coordinate identities, not a universal ES existence theorem or a zero-location result for the zeta function. Historical priority is not claimed.
+\end{abstract}
+
+\section{The three branches as orthogonal half-units}
+The binary cubic used below is
+\[
+ C_*(U,V)=V(U-V/2)(U+V/2).
+\]
+Its simple projective roots are $\infty,1/2,-1/2$. The Fable polynomial and the normalized factor interpretation are supplied by \citet[eqs.~(1), (2), (5), (7), (10)]{tao}. We use the precise algebraic expressions, not a blanket inference about verification from a source's status.
+
+The affine coordinate $z=V/(U+V)$ is defined at all three points and sends them, in that order, to $0,2/3,2$. Thus their algebra of rational functions is
+\[
+ \mathcal A=\Q[z]/\bigl(z(3z-2)(z-2)\bigr).
+\]
+The split finite-\'etale algebra and multiplication-trace conventions are those of \citet[\S4.2, Definition~4.29; \S4.3, Definition~4.46]{sutherland}. All needed computations here are elementary and are given explicitly.
+
+\begin{proposition}[Complete orthogonal branch coordinates]
+The three elements
+\begin{align*}
+ e_0&=1-2z+\tfrac34z^2,&
+ e_1&=\tfrac94z-\tfrac98z^2,&
+ e_2&=-\tfrac14z+\tfrac38z^2
+\end{align*}
+satisfy
+\[
+ e_ie_j=\delta_{ij}e_i,\qquad \sum_i e_i=1.
+\]
+Evaluation at $0,2/3,2$ is an algebra isomorphism $\mathcal A\to\Q^3$, whose inverse sends $(a_0,a_1,a_2)$ to $\sum a_ie_i$. For multiplication trace,
+\[
+ \langle a,b\rangle=\Tr_{\mathcal A/\Q}(ab),\qquad
+ \langle e_i,e_j\rangle=\delta_{ij}.
+\]
+This form is positive definite after extension to $\R$.
+\end{proposition}
+\begin{proof}
+Each displayed polynomial takes value one at its own root and zero at the other two. The Chinese remainder theorem proves the isomorphism and all the products. In the $e_i$ basis, multiplication by $\sum a_ie_i$ is diagonal with entries $a_i$, hence its trace is their sum. Consequently the trace form is $\sum a_ib_i$, proving the claims.
+\end{proof}
+
+Put $q_i=e_i/2$. They are three different orthogonal elements of length $1/2$, with trace $1/2$, not three equal scalars. Their sum is $1/2$ times the algebra unit; retaining only the sum loses the branch labels.
+
+Define
+\[
+ H_0=q_0+q_1-q_2,\qquad K_0=e_1+e_2.
+\]
+The norm is the determinant of multiplication, hence
+\begin{equation}\label{eq:pencil}
+ -2\Nm(UK_0-VH_0)=V(U-V/2)(U+V/2).
+\end{equation}
+The three projective readouts are
+\[
+ [H_0(e_0):K_0(e_0)]=[1/2:0],\quad
+ [H_0(e_1):K_0(e_1)]=[1/2:1],\quad
+ [H_0(e_2):K_0(e_2)]=[-1/2:1].
+\]
+Thus infinity is represented by a nonzero numerator and a zero denominator on one marked direction. The direction itself is present in the three-dimensional algebra; it has not been deleted from the pencil. This is an exact orthogonal representation of the three branches, not an assertion that the three projective points are equal.
+
+\section{The four directions and their twelve lifts}
+In the $e_i$ orthonormal basis, define the four vectors
+\begin{equation}\label{eq:tetra}
+ \tfrac12(-1,-1,-1),\quad
+ \tfrac12(-1,1,1),\quad
+ \tfrac12(1,-1,1),\quad
+ \tfrac12(1,1,-1).
+\end{equation}
+They are exactly the real solutions of
+\[
+ \Tr(H^2)=3/4,\qquad \Nm(H)=-1/8.
+\]
+Indeed, the arithmetic--geometric mean inequality for the three squared coordinates is an equality at these values, so each absolute coordinate is $1/2$; the negative product gives exactly four sign choices. Thus this four-point set is an intrinsic simultaneous level set of the trace metric and cubic norm, not an arbitrary selection of four vertices.
+
+They have Gram matrix $G_{ij}=\delta_{ij}-1/4$ and sum zero. Their six squared mutual distances are all two, so they are the vertices of a regular tetrahedron. The centre of the opposite face is $-H_i/3$; the four face centres give the dual tetrahedron.
+
+There is also a four-coordinate presentation with no ambiguity about dimension. In the three-dimensional subspace $\sum b_i=0$ of $\R^4$, the centred vertex vectors are
+\[
+ v_i=\epsilon_i-\tfrac14(1,1,1,1).
+\]
+The orthogonal projection is $I_4-\frac14\mathbf1\mathbf1^T$. The centre of the face opposite $v_i$ has coordinate $-1/4$ at $i$ and $1/12$ at each other position. This is a metric normalization; it is not an identification of a face centre with a singular Cayley point or a Fable preimage.
+
+Let $G$ consist of the operators
+\[
+ (Rx)_i=\varepsilon_i x_{\pi(i)},\qquad
+ \varepsilon_0\varepsilon_1\varepsilon_2=1,
+ \quad \pi\in\{\mathrm{id},(012),(021)\}.
+\]
+They preserve the trace metric, have determinant one, and preserve the cubic norm $x_0x_1x_2$. They form a group of order twelve. Their action on \eqref{eq:tetra} identifies it with $A_4$. In fact this is the entire common orientation-preserving linear symmetry group of the trace metric and cubic norm. To prove the converse, norm preservation permutes the three irreducible coordinate planes of $x_0x_1x_2=0$. The operator is therefore monomial; metric preservation makes its nonzero coefficients $\pm1$. Norm preservation forces their product to one, and positive determinant then forces an even coordinate permutation.
+
+\begin{proposition}[Four coherent unit markings]
+For each numerator $H$ in \eqref{eq:tetra}, let $\nu=-2H$ and define
+\[
+ (x\circ_\nu y)_i=\nu_i x_i y_i.
+\]
+This is an associative commutative algebra with unit $\nu$. Its multiplication norm remains $x_0x_1x_2$, and its trace pairing remains $\sum x_i y_i$. Every $R\in G$ is a unital isomorphism from the product with unit $\nu$ to the product with unit $R\nu$.
+\end{proposition}
+\begin{proof}
+The entries of $\nu$ are signs with product one. Thus $\nu_i^2=1$, giving the unit and associativity laws directly. Multiplication by $x$ has diagonal entries $\nu_ix_i$; its norm is $\prod x_i$ and trace is $\sum\nu_ix_i$. Taking the trace of multiplication by $x\circ_\nu y$ gives the asserted pairing. For $(Rx)_i=\varepsilon_ix_{\pi(i)}$, the new unit is $(R\nu)_i=\varepsilon_i\nu_{\pi(i)}$. Both sides of
+\[
+ R(x\circ_\nu y)=(Rx)\circ_{R\nu}(Ry)
+\]
+have component $\varepsilon_i\nu_{\pi(i)}x_{\pi(i)}y_{\pi(i)}$. This proves the full equivariance and its inverse, using $R^{-1}$.
+\end{proof}
+These are four marked, isomorphic products, not four nonisomorphic fields. In each one the numerator is literally $H=-\nu/2$; the denominator pencil and component labels still distinguish its three projective readings.
+
+\begin{remark}
+These transformations are norm-preserving linear transformations. The sign-changing elements need not be unital algebra automorphisms: they can send an idempotent to its negative. The trace norm and cubic norm are the asserted invariants. In particular their action must not be silently conflated with unit-fixing Jordan frame automorphisms.
+\end{remark}
+
+\begin{theorem}[Twelve marked pencils over three Fable branches]\label{thm:twelve}
+The orbit
+\[
+ \mathcal P=\{(RH_0,RK_0):R\in G\}
+\]
+has twelve distinct elements. Projection to its numerator $H$ has four values, each with three denominator choices. Every pair satisfies
+\[
+ -2\Nm(UK-VH)=C_*(U,V).
+\]
+Reading the root in fixed slot $e_0$ and normalizing its factor to resultant one gives a surjection to the three Fable preimages of $(-1/4,0,0)$, with exactly four elements per fibre. For each fixed numerator, the three denominator choices map bijectively to the three preimages.
+
+If all six coordinate permutations are allowed, the full tetrahedral group has order twenty-four. It produces twenty-four distinct pencil states, two per pair (numerator, selected root). This last factor is the orientation, not another root.
+\end{theorem}
+\begin{proof}
+Each sign product is one, so the product of the three rows of the pencil is unchanged. A transformation fixing both $H_0,K_0$ must preserve their three different projective ratios. Its coordinate permutation is therefore the identity; the nonzero numerator coefficients then force all signs to be positive. The orbit consequently has twelve elements. The numerator has the four values \eqref{eq:tetra}, each with a three-element stabilizer, establishing the first counts.
+
+A complete direct tabulation, using $2H$ for brevity, is
+\[
+\begin{array}{c|ccc}
+2H&K\text{ for root }\infty&K\text{ for root }1/2&K\text{ for root }-1/2\\\hline
+(-1,-1,-1)&(0,-1,1)&(-1,1,0)&(1,0,-1)\\
+(-1,1,1)&(0,1,-1)&(-1,-1,0)&(1,0,1)\\
+(1,-1,1)&(0,-1,-1)&(1,1,0)&(-1,0,1)\\
+(1,1,-1)&(0,1,1)&(1,-1,0)&(-1,0,-1)
+\end{array}
+\]
+This proves each numerator sees each root once. To check that these roots give the stated Fable points without losing normalization, put
+\[
+ \ell=K_0U-H_0V,\qquad Q_0=-2(K_1U-H_1V)(K_2U-H_2V),
+\]
+where subscripts in this formula mean components of the particular $(H,K)$. Its nonzero resultant $\rho=\Res(\ell,Q_0)$ supplies
+\[
+ L=\ell/\rho,\qquad Q=\rho Q_0.
+\]
+The product is unchanged and $\Res(L,Q)=1$. Depending on the selected root, the normalized pair is exactly
+\[
+ (V,U^2-V^2/4),\quad
+ (U-V/2,UV+V^2/2),\quad
+ (-U-V/2,-UV+V^2/2).
+\]
+The corresponding Fable points are respectively
+\[
+ (0,0,-1/4),\quad(1,-3/2,13/2),\quad(-1,3/2,13/2).
+\]
+For the full group, the same stabilizer proof gives twenty-four pencil states. Holding a numerator and observed root leaves the two ways to order the companion slots; they have opposite orientations. This proves the final statement.
+\end{proof}
+
+The map in the theorem is an intentionally enlarged marking space. It has four lifts per original inverse point; it does not change the fibre cardinality of the original polynomial map. Forgetting numerator, denominator, or orientation must be recorded as a separate operation.
+
+\section{Four Cayley charts, with inverse maps}
+The Cayley equation is $e_3(a_0,a_1,a_2,a_3)=0$. On its coordinate torus it is
+$\sum a_i^{-1}=0$; see \citet[\S1]{heathbrown}. Work on
+\[
+ \mathcal C^\circ=\{[a_0:a_1:a_2:a_3]:
+ \sum a_i^{-1}=0,\ a_i\ne0,\ a_i\ne a_j\ (i\ne j)\}.
+\]
+The equalities excluded here are homogeneous and therefore well defined.
+
+For each mark $i$, choose the representative
+\[
+ b_j^{(i)}=-\frac{a_j}{4a_i}.
+\]
+Then $b_i^{(i)}=-1/4$ and the three reciprocal roots
+\begin{equation}\label{eq:roots}
+ t_{ij}=-4a_i/a_j\quad(j\ne i),\qquad\sum_{j\ne i}t_{ij}=4
+\end{equation}
+are finite, nonzero, distinct, and different from $-4$. The inverse reads $b_i=-1/4$, $b_j=1/t_{ij}$. This returns the projective point with every coordinate label. To recover an originally chosen affine representative, also retain the scale $-1/(4a_i)$ and divide by it.
+
+The cubic in face $i$ is
+\[
+ C_i(U,V)=-\frac14\prod_{j\ne i}(U-t_{ij}V)
+ =-\frac14U^3+U^2V+\frac{\beta_i}{2}UV^2+\alpha_iV^3.
+\]
+It is a Fable target with $\gamma=-1/2$, and
+\begin{equation}\label{eq:coeffs}
+ \alpha_i=\frac14\prod_{j\ne i}t_{ij}
+ =-\frac{16a_i^4}{\prod_k a_k},\qquad
+ \beta_i=-\frac12\sum_{j<k;\ j,k\ne i}t_{ij}t_{ik}
+ =-\frac{8a_i^3(\sum_k a_k-a_i)}{\prod_k a_k}.
+\end{equation}
+There are twelve face/root markings $(i,j)$, $i\ne j$. The abstract $A_4$ action is free and transitive on these oriented tetrahedral flags: there is a unique even completion $(i,j,k,l)$ of every ordered pair.
+
+\begin{proposition}[Atlas overlaps and exceptional loci]
+The four charts cover the stated open locus, with inverse \eqref{eq:roots}. A zero coordinate prevents normalization or reciprocal reading. A repeated coordinate merges roots in a face excluding both corresponding labels, so it is excluded for the common simple-root atlas. Over non-split fields, individual roots or their labels require a splitting field; geometric branch counts alone do not imply rationality.
+
+Distinct marked faces need not have distinct numerical cubic coefficients on all of $\mathcal C^\circ$. For example, opposite coordinate pairs can produce the same cubic. Marked face labels remain distinct. For a positive ES state with distinct denominators, all four targets \eqref{eq:coeffs} are numerically distinct.
+\end{proposition}
+\begin{proof}
+The inverse is direct. The degeneracies follow from $t_{ij}=t_{ik}\iff a_j=a_k$ and $t_{ij}=-4\iff a_i=a_j$. For the last assertion take the original representative $(-p,4x,4y,4z)$. Positivity gives $4x,4y,4z>p$. With distinct denominators the four positive numbers $|a_i|$ are pairwise distinct; hence so are their fourth powers and the four $\alpha_i$. The example $[1:-1:2:-2]$ illustrates why this conclusion is not extended to the whole torus.
+\end{proof}
+
+Only the face marked by the negative coordinate has all three reciprocal roots positive. At any positive-coordinate mark the roots have one positive and two negative values. Their sum is four, so the positive root exceeds four, and $\beta_i>0$ there; in the positive ES chart $\beta_i<0$. Thus changing the face while keeping the underlying point is not production of four positive denominator triples at the same prime. Permuting the entire marked point transports its positivity convention as well.
+
+\section{Exact oriented face reversal}
+Write the roots at an even oriented tuple $(i,j,k,l)$ as $(r,s,t)$, so $r+s+t=4$. Replacing the marked face $i$ by $j$ and retaining even orientation gives $(j,i,l,k)$, not $(j,i,k,l)$. The root transformation is
+\begin{equation}\label{eq:J}
+ J(r,s,t)=\left(\frac{16}{r},-\frac{4t}{r},-\frac{4s}{r}\right).
+\end{equation}
+The companion swap is essential for the orientation.
+
+Let $C(r,s,t)=(s,t,r)$. Then
+\begin{equation}\label{eq:relations}
+ J^2=C^3=(JC)^3=1.
+\end{equation}
+The first two identities follow immediately. For the third, applying $JC$ once, twice, and three times gives
+\[
+ (16/s,-4r/s,-4t/s),\quad
+ (-4s/r,16/r,-4t/r),\quad(r,s,t).
+\]
+These are precisely the tetrahedral relations; the labelled permutation construction proves the action has twelve flag states even at points where numerical root tuples have extra symmetries.
+
+Put $f(T)=C_i(T,1)$ and $d=f'(r)$. The root equation and derivative give
+\[
+ \alpha=-\tfrac12r^3+r^2-rd,\qquad
+ \beta=2d+\tfrac32r^2-4r.
+\]
+The finite-root Fable inverse is
+\begin{equation}\label{eq:Fpoint}
+ (u,v,w)=\left(d^{-1},-r-d,5d^2+3rd+\tfrac12d^3\right).
+\end{equation}
+Substitution into the Fable polynomial verifies its image is $(\alpha,\beta,-1/2)$.
+
+\begin{theorem}[Rational involution on marked Fable sheets]
+On the open domain induced by $\mathcal C^\circ$, face reversal is
+\begin{equation}\label{eq:rd}
+ (r,d)\longmapsto
+ \left(\frac{16}{r},\ 8+\frac{16(d-8)}{r^2}\right).
+\end{equation}
+It is its own inverse. On target coefficients it induces
+\begin{equation}\label{eq:ab}
+ \alpha' =\frac{256\alpha}{r^4},\qquad
+ \beta'+8=\frac{16(\beta+8)}{r^2}.
+\end{equation}
+If $\eta=s-t$ retains the ordered companion difference, then
+\[
+ \eta^2=(3r-4)^2+16d,\qquad \eta'=4\eta/r.
+\]
+Thus the full oriented return includes $(r,d,\eta)$, not merely $(r,d)$.
+\end{theorem}
+\begin{proof}
+At the new distinguished root $16/r$, the derivative is
+\[
+ d'=-\frac14\left(\frac{16+4s}{r}\right)
+                 \left(\frac{16+4t}{r}\right)
+    =-4(4+s)(4+t)/r^2.
+\]
+Use $s+t=4-r$ and $st=-4d-2r^2+4r$ to obtain \eqref{eq:rd}. Applying it twice gives $(r,d)$. Substitution in the displayed coefficient formulas proves \eqref{eq:ab}. Finally the companion discriminant follows by subtracting the roots of their quadratic; \eqref{eq:J} gives the stated sign of $\eta'$.
+\end{proof}
+
+A complete algebraic domain description for $(r,d)$ over a splitting field is
+\[
+ r\ne0,-4,\quad d\ne0,\quad
+ \alpha\ne0,\quad
+ \Gamma=(3r-4)^2+16d\ne0,\quad f(-4)\ne0.
+\]
+The last exclusion is exactly the other-face derivative obstruction:
+\[
+ f(-4)=32-2\beta+\alpha
+      =-\frac{(r+4)r^2d'}{16}.
+\]
+For a rational oriented marking, also retain a specified rational $\eta$ with $\eta^2=\Gamma$. Without it the two companion orderings remain a two-element fibre. All domain exclusions are explicit; no target-strength hypothesis is hidden in the notation.
+
+\section{Exact arithmetic examples and state recovery}
+For $p=5$, $(x,y,z)=(2,4,20)$, the four Cayley marks give
+\[
+\begin{array}{c|c|c|c}
+i&\text{three roots}&\alpha_i&\beta_i\\\hline
+0&(5/2,5/4,1/4)&25/128&-65/32\\
+1&(32/5,-2,-2/5)&32/25&182/25\\
+2&(64/5,-8,-4/5)&512/25&1328/25\\
+3&(64,-40,-20)&12800&1520
+\end{array}
+\]
+All have $\gamma=-1/2$. The certificate supplies their twelve full Fable preimages, not only the cubics. It also supplies the same data and inverse checks for the following hard-prime states, preserving raw denominator order:
+\[
+\begin{array}{c|c|c|c|c|c|c}
+p&R&\text{channel}&u_{\rm ES}&h&r&s\\\hline
+1201&23&E&17&17&1&18\\
+2521&31&M&44&11&2&29
+\end{array}
+\]
+Their quotients are $\kappa=53$ and $\lambda=1$, respectively, and their ordered denominators are
+\[
+ (306,16218,1082101),\qquad(638,804199,55462).
+\]
+The complete original marking is returned using
+\[
+ u_{\rm ES}=\frac{x^2}{Ry-px}\quad(E),\qquad
+ u_{\rm ES}=\frac{px^2}{Ry-px}\quad(M),
+\]
+followed by $D=\gcd(x,u_{\rm ES})$, $r=u_{\rm ES}/D$, $s=x/D$, $h=D/r$.
+These are not the Fable source coordinate $u$ in \eqref{eq:Fpoint}.
+The prime, channel, original chart, raw order, and scale remain marked throughout.
+
+\section{Three complex channels and the analytic nonclaim}
+The complexification $\mathcal A_\C$ has the three orthogonal complex summands $\C e_i$. The affine three-real-dimensional locus
+\[
+ \frac12\,1+\mathrm i(t_0e_0+t_1e_1+t_2e_2),\qquad t_i\in\R,
+\]
+has three orthogonal imaginary directions in the standard Hermitian extension of the trace form. Its projections are the three lines $\Re s_i=1/2$. Moving a component to $-1/2$ is a coordinate translation or sign change whose inverse must be retained; it is not a newly proved zeta-zero location.
+
+One may define the entirely explicit, but uncoupled, analytic map
+\[
+ \Xi\left(\sum s_ie_i\right)=\sum \xi(s_i)e_i.
+\]
+The scalar equation $\xi(s)=\xi(1-s)$, DLMF~25.4.3, gives $\Xi(1-S)=\Xi(S)$. It does not locate zeros. For example the scalar polynomial $((s-1/2)^2-1)((s-1/2)^2-4)$ has the same reflection symmetry and zeros off the critical line. A tensor- or arithmetic-induced analytic map would be additional data; no such implication is asserted by the pencil calculation. The numerical halves in projective readouts and in a functional equation are different roles until an actual analytic intertwiner has been constructed.
+
+\section{Evidence and scope}
+The verifier is self-contained standard-library Python. It proves the indicated identities by exact Laurent-polynomial coefficient comparison and enumerates the entire finite pencil and group objects. Its final run passed 1136 explicit conditions: 13 formal identity comparisons, 28 quotient-algebra conditions, 199 group/metric conditions, 448 isotope/unit conditions, 67 pencil conditions, and 381 chart/arithmetic conditions. The arithmetic portion comprises exactly three listed witnesses, not a prime-range claim. Counts of program checks are not counts of mathematical theorems or independent reviews.
+
+Normal and optimized runs are compared byte for byte. JSON retains all twelve pencil states, the three idempotent polynomials, all thirty-six arithmetic face/root states, inverse scales, and source hashes. No external code is executed by the verifier. No Lean build, independent review, universal ES existence theorem, new real field, general transcendental-number decomposition, or RH proof is claimed.
+
+The primary sources used are listed below with exact locators. Targeted content searches found no exact predecessor used for the displayed involution; they were not comprehensive. No historical-priority claim is made.
+
+\begingroup\small\setlength{\bibsep}{3pt}
+\begin{thebibliography}{9}
+\bibitem[Heath-Brown(2002)]{heathbrown}
+Heath-Brown, D. R. (2002). \emph{The density of rational points on Cayley's cubic surface}. arXiv:math/0210333v1. \S1, p.~1, equation and coordinate-torus formulation. \url{https://arxiv.org/abs/math/0210333}
+\bibitem[NIST(2026)]{dlmf}
+National Institute of Standards and Technology. (2026). \emph{Digital Library of Mathematical Functions}, \S25.4, equations 25.4.3--25.4.4. Retrieved September 11, 2026. \url{https://dlmf.nist.gov/25.4}
+\bibitem[Sutherland(2021)]{sutherland}
+Sutherland, A. V. (2021). \emph{\'Etale algebras, norm and trace}. MIT 18.785, Lecture 4, September 20. \S4.2, Definition 4.29 and Corollary 4.33; \S4.3, Definition 4.46. \url{https://math.mit.edu/classes/18.785/2021fa/LectureNotes4.pdf}
+\bibitem[Tao(2026)]{tao}
+Tao, T. (2026, July 21). \emph{A digestion of the Jacobian conjecture counterexample}. What's New. Equations (1), (2), (5), (7), (10). \url{https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/}
+\end{thebibliography}
+\endgroup
+\end{document}

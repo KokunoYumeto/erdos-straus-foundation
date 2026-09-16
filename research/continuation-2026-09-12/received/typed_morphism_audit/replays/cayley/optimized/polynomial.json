@@ -1,0 +1,7 @@
+{
+  "Jacobian": -2,
+  "companion_discriminant": "(3*r-4)^2+16*d",
+  "formal_identity_groups": 10,
+  "quintic_discriminant": "s^2*t^2*(s+t)/4",
+  "target_cubic": "gamma*U^3/2 + U^2*V + beta*U*V^2/2 + alpha*V^3"
+}
