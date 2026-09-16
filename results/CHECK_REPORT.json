@@ -1,0 +1,19 @@
+{
+  "R01_scope": "Written semiring proof; no separate computational test claimed",
+  "checks": {
+    "R02": {"cases": 6, "passed": true, "translation_matrix_determinants": ["-729", "63", "-81", "27", "-81", "63"], "trivial_character_value": 3},
+    "R03": {"after_adjoining_separate_level_one": [1,1,7,7], "coarse_sizes": [1,7,7], "passed": true, "residue_fibres": {"0":[5],"1":[11,31,41,71],"2":[2,7,17,47],"3":[3,13,23],"4":[19,29,59]}},
+    "R04": {"passed": true, "scope": "arithmetic of fixed supplied integers; no Busy Beaver maximality or complexity theorem", "values": {"11_squared_mod_107":14,"21_S5_mod_107":93,"S5_mod_107":35,"a_mod_107":93,"inverse_21_mod_107":51,"inverse_minus_6_S5_mod_107":27,"minus_21_S5_mod_107":14,"p_mod_107":51,"pa_mod_107":35}},
+    "R05": {"mod12_map":{"1":5,"3":1,"5":9,"7":5,"9":1,"11":9},"odd_examples":1000,"passed":true,"scope":"examples accompany a general algebraic proof; not trajectory convergence"},
+    "R06": {"deficit":[1,10,12,21,23,30,32,41,43,52],"differences":[0,2,7,9,11,13,18,20,22,24,29,31,33,35,40,42,44,46,51],"input_triples":75,"passed":true,"scope":"one finite support calculation","support":[0,2,3,4,5,6,7,8,9,11,13,14,15,16,17,18,19,20,22,24,25,26,27,28,29,31,33,34,35,36,37,38,39,40,42,44,45,46,47,48,49,50,51]},
+    "R07": {"passed":true,"pell_recurrence_cases":40,"scope":"integer ingredients only; general sharp estimate has a written proof"},
+    "R08": {"one_coordinate_index":3,"passed":true,"scope":"basis calculation; arbitrary-rank statements proved in the note"},
+    "R09": {"nonempty_subset_pairs_C6":3969,"passed":true,"scope":"finite illustrations only; general theorem uses cited Kneser theorem"},
+    "R10": {"cost_multiplicities":{"0":1,"4":46,"6":25},"glue_elements":72,"nonzero_coset_costs":["4","6"],"pairwise_closure_checks":5184,"passed":true,"scope":"exact finite quadratic-module data; not all lattice or modular conclusions"}
+  },
+  "external_code_executed":false,
+  "formal_prover_run":false,
+  "independent_reviewers":0,
+  "kind":"exact finite cross-checks, not general proof certification",
+  "passed_check_families":9
+}

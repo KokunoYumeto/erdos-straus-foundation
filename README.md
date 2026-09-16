@@ -105,3 +105,17 @@ the 9 September 2026 organization update. Reading, discussion, forks and indepen
 contributions remain welcome. The published mathematics and historical files are
 preserved. The manually requested 12 September continuation is available on
 GitHub; it does not restart scheduled mirroring or replace the Zenodo edition.
+This branch adds navigation and source-addressable records for the results bench
+and recovered bridge programmes.
+
+## Results and continuing bridge programmes
+
+The [results bench](RESULTS.md) gives separately readable statements, proof notes,
+source relationships and actual checking scopes. Its [machine-readable records](results/records.json)
+complement the larger published statement index; they do not claim a complete ES
+resolution, independent review of the archive, or novelty for every result.
+
+The [recovered research directions](RESEARCH_DIRECTIONS.md) describe the project's
+motivations, older Star–Kneser, Niemeier, Ogg, Busy Beaver, split-zero and geometric
+work, and the remaining questions. They preserve open directions without assigning
+the next researcher a compulsory task list. The raw chat archive remains private.
