@@ -1,0 +1,158 @@
+{
+  "schema": "polyclank.typed-morphisms.v1",
+  "maps": [
+    {
+      "id": "ZC01",
+      "domain": "support-labelled source module",
+      "codomain": "support-labelled quotient",
+      "formula": "(mask,x)->(mask,[x])",
+      "inverse_or_fibres": "fibre x+actual relations",
+      "information_loss": "amplitude relation unless primitive retained; mask never lost",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC02",
+      "domain": "star relation columns",
+      "codomain": "Q^X + Q^Y",
+      "formula": "e_x-e_reference on its original leg",
+      "inverse_or_fibres": "nonreference coefficients",
+      "information_loss": "none; incoming is injective",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC03",
+      "domain": "Q^X + Q^Y",
+      "codomain": "Q^Z",
+      "formula": "sum_left - sum_right",
+      "inverse_or_fibres": "kernel cycles; explicit sums",
+      "information_loss": "both fibre identities and cancellation unless retained",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC04",
+      "domain": "ker d / im partial",
+      "codomain": "Q^(common residues)",
+      "formula": "common sums",
+      "inverse_or_fibres": "integral reference lift + full star primitive",
+      "information_loss": "within-fibre data precisely the incoming relation",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC05",
+      "domain": "H0 classes",
+      "codomain": "original source cycles",
+      "formula": "c/(weight*inverse_weight_mass) on each leg",
+      "inverse_or_fibres": "class extraction; residual actual relation",
+      "information_loss": "none when residual retained",
+      "exceptional_locus": "Only nonempty common fibres; positive Gram entries"
+    },
+    {
+      "id": "ZC06",
+      "domain": "fine residue complex",
+      "codomain": "coarse residue complex",
+      "formula": "identity source, sum codomain, star expansion on boundaries",
+      "inverse_or_fibres": "kernel stars in fibres of common-image map; cokernel new coarse matches",
+      "information_loss": "explicit killed classes and new coarse classes",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC07",
+      "domain": "B_e",
+      "codomain": "divisors of a^2",
+      "formula": "u=prod q^(e+beta)",
+      "inverse_or_fibres": "beta=v_q(u)-e",
+      "information_loss": "none",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC08",
+      "domain": "B_f x B_b",
+      "codomain": "B_e",
+      "formula": "xi+eta",
+      "inverse_or_fibres": "coordinate intervals formula (11)",
+      "information_loss": "full split fibre; retained N(beta) and chosen lift",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC09",
+      "domain": "matched pairs",
+      "codomain": "common channel/residue labels",
+      "formula": "(c,xi,eta)->(c,v(xi))",
+      "inverse_or_fibres": "all matched pairs in residue fibre",
+      "information_loss": "not injective; not a divisor-state encoding",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC10",
+      "domain": "matched pairs",
+      "codomain": "original canonical hit labels",
+      "formula": "(c,xi,eta)->(c,xi+eta)",
+      "inverse_or_fibres": "N(beta) actual split pairs",
+      "information_loss": "not interchangeable with ZC09",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC11",
+      "domain": "functions on refined occurrences",
+      "codomain": "functions on original exponents",
+      "formula": "fibre sum Q",
+      "inverse_or_fibres": "J(c)=c/N and star residual primitive",
+      "information_loss": "complete boundary unless retained",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC12",
+      "domain": "original positive arithmetic masses",
+      "codomain": "refined positive masses",
+      "formula": "w_beta/N(beta)",
+      "inverse_or_fibres": "fibre sum",
+      "information_loss": "none on marked original masses",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC13",
+      "domain": "native refined counting Gram",
+      "codomain": "canonical quotient Gram",
+      "formula": "1/N(beta)",
+      "inverse_or_fibres": "source plus relation coordinates",
+      "information_loss": "not equal to original uniform norm unless explicit metric transported",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC14",
+      "domain": "two successive finite quotients with induced metrics",
+      "codomain": "direct quotient",
+      "formula": "weighted intermediate allocation m_w*c_z/n_z",
+      "inverse_or_fibres": "canonical lifts compose with full relation coordinates",
+      "information_loss": "resetting metric changes lift by explicit boundary",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC15",
+      "domain": "split residual coefficient rho modulo R",
+      "codomain": "original gate g modulo R",
+      "formula": "g=c*rho, c=aw on M, pw on E",
+      "inverse_or_fibres": "rho=c^-1*g",
+      "information_loss": "none; original p,a,channel,split retained",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC16",
+      "domain": "coefficient-rho affine system",
+      "codomain": "coefficient-g affine system",
+      "formula": "v->c*v mod R",
+      "inverse_or_fibres": "v->c^-1*v mod R",
+      "information_loss": "none; original modulus retained",
+      "exceptional_locus": "None within stated finite domains"
+    },
+    {
+      "id": "ZC17",
+      "domain": "canonical successful channel/exponent",
+      "codomain": "ordered ES state",
+      "formula": "gcd normalization; standard E/M quotients",
+      "inverse_or_fibres": "u=pa^2/(RY-pa) M, a^2/(RY-pa) E; valuations",
+      "information_loss": "none with channel and order",
+      "exceptional_locus": "D=1; positive original shell"
+    }
+  ]
+}

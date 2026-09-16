@@ -1,0 +1,63 @@
+{
+  "schema": "polyclank.source-crosswalk.v1",
+  "zeta_revision": "7ea0a49945390eae14d3160a5730858899768b5f",
+  "es_base": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "es_split_revision": "4f17e4aa63113a063eb027c8931cee5d5cce3981",
+  "sources": [
+    {
+      "path": "formal/splitzero/DERIVED_MATHEMATICS.md",
+      "read": "Sections 1-7 of the returned proof note; attribution/reproduction context also inspected",
+      "used": "Sections 1-4: reconstruction, supported quotient, actual homology and comparison kernels; section 6 not treated as ES analytic identification",
+      "repository": "KokunoYumeto/zeta-function-research-reader"
+    },
+    {
+      "path": "workbenches/tau-base-cohomology/TAU_BASE_MODEL.md",
+      "git_blob_reported": "77a644c26de13970a81169c856801321cd4e41cc",
+      "read": "Sections 1-4 and start of section 5 in the returned text",
+      "used": "G(k), tau versus supported zero, two-leg masks, actual two-term cochain; not all analytic results",
+      "repository": "KokunoYumeto/zeta-function-research-reader"
+    },
+    {
+      "path": "workbenches/tau-toda-volume-formal/RESEARCH_NOTE.md",
+      "git_blob_reported": "0e05f8865a6cfb56e2e7b6be1f826b2e2a7f537f",
+      "read": "Complete returned note",
+      "used": "Sections 1,5: original-Gram canonical correction and determinant comparison; no Toda asymptotic estimate imported",
+      "repository": "KokunoYumeto/zeta-function-research-reader"
+    },
+    {
+      "path": "CURRENT_RESEARCH.md",
+      "read": "Complete guide",
+      "used": "Navigation and current source scope; not substituted for the proof files",
+      "repository": "KokunoYumeto/zeta-function-research-reader"
+    },
+    {
+      "path": "research/continuation-2026-09-12/reconstructed/boolean_cyclotomic.tex",
+      "git_blob_reported": "41aecae338ccbd7a850a4e680b9defec2241eeb8",
+      "read": "Lines 1-210 including complete first-half bound and ordered code proof",
+      "used": "Complete shell domain and inherited ordered selector",
+      "repository": "KokunoYumeto/erdos-straus-foundation"
+    },
+    {
+      "path": "research/incoming/split-box-energy-20260912/",
+      "read": "Prior provided full source formulas and mounted verifier; live PR status confirmed",
+      "used": "Inherited addition fibres and gate-unit identity; freshly rewritten finite code does not import predecessor code",
+      "repository": "KokunoYumeto/erdos-straus-foundation"
+    }
+  ],
+  "not_read_or_claimed": [
+    "full 482-page Zeta reader",
+    "all published companion archives",
+    "fresh Zeta Lean run",
+    "analytic isomorphism from the ES finite complex to the theta complex"
+  ],
+  "literature_search": {
+    "queries": [
+      "Erdos Straus divisor exponents cohomology weighted collision energy",
+      "conditional expectation finite probability spaces quotient norm pushforward fibre counting",
+      "finite sheaf cohomology two maps kernel intersection arithmetic weights"
+    ],
+    "conclusion": "No exact earlier combined ES statement established; broad search is insufficient for priority. General finite linear algebra, conditional weighting, and Schur complements are inherited/standard.",
+    "unread_primary_lead": "arXiv:2605.03902 Bundles of Probability Schemes, search abstract only; not used as a proof source"
+  },
+  "transfer_scope": "GitHub returned text and blob metadata; this ledger does not claim independent byte matching of all upstream source files."
+}

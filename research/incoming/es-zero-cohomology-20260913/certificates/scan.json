@@ -1,0 +1,251 @@
+{
+  "bound": 500,
+  "first_inflation": {
+    "R": 3,
+    "a": 4,
+    "channels": {
+      "E": {
+        "cohomology": {
+          "Gram_diagonal": [
+            {
+              "denominator": 2,
+              "numerator": 3
+            },
+            {
+              "denominator": 2,
+              "numerator": 3
+            }
+          ],
+          "boundary_columns": null,
+          "dimensions": {
+            "C0": 6,
+            "C1": 2,
+            "Cminus1": 2,
+            "H0": 2,
+            "H1": 0,
+            "Hminus1": 0
+          },
+          "harmonic_columns": null,
+          "left_counts": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "quotient_determinant": {
+            "denominator": 4,
+            "numerator": 9
+          },
+          "right_counts": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "shared": [
+            1,
+            2
+          ],
+          "source_mass": {
+            "denominator": 1,
+            "numerator": 6
+          },
+          "verification_mode": "proved_fibre_formulas; not dense rank replay"
+        },
+        "raw_matches": 4,
+        "weighted_original_count": {
+          "denominator": 1,
+          "numerator": 2
+        },
+        "witnesses": [
+          {
+            "R": 3,
+            "a": 4,
+            "beta": [
+              -1
+            ],
+            "channel": "E",
+            "denominators": [
+              4,
+              20,
+              130
+            ],
+            "h": 2,
+            "p": 13,
+            "quotient": 5,
+            "r": 1,
+            "s": 2,
+            "u": 2
+          },
+          {
+            "R": 3,
+            "a": 4,
+            "beta": [
+              1
+            ],
+            "channel": "E",
+            "denominators": [
+              4,
+              18,
+              468
+            ],
+            "h": 2,
+            "p": 13,
+            "quotient": 9,
+            "r": 2,
+            "s": 1,
+            "u": 8
+          }
+        ]
+      },
+      "M": {
+        "cohomology": {
+          "Gram_diagonal": [
+            {
+              "denominator": 2,
+              "numerator": 3
+            },
+            {
+              "denominator": 2,
+              "numerator": 3
+            }
+          ],
+          "boundary_columns": null,
+          "dimensions": {
+            "C0": 6,
+            "C1": 2,
+            "Cminus1": 2,
+            "H0": 2,
+            "H1": 0,
+            "Hminus1": 0
+          },
+          "harmonic_columns": null,
+          "left_counts": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "quotient_determinant": {
+            "denominator": 4,
+            "numerator": 9
+          },
+          "right_counts": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "shared": [
+            1,
+            2
+          ],
+          "source_mass": {
+            "denominator": 1,
+            "numerator": 6
+          },
+          "verification_mode": "proved_fibre_formulas; not dense rank replay"
+        },
+        "raw_matches": 4,
+        "weighted_original_count": {
+          "denominator": 1,
+          "numerator": 2
+        },
+        "witnesses": [
+          {
+            "R": 3,
+            "a": 4,
+            "beta": [
+              -1
+            ],
+            "channel": "M",
+            "denominators": [
+              4,
+              52,
+              26
+            ],
+            "h": 2,
+            "p": 13,
+            "quotient": 1,
+            "r": 1,
+            "s": 2,
+            "u": 2
+          },
+          {
+            "R": 3,
+            "a": 4,
+            "beta": [
+              1
+            ],
+            "channel": "M",
+            "denominators": [
+              4,
+              26,
+              52
+            ],
+            "h": 2,
+            "p": 13,
+            "quotient": 1,
+            "r": 2,
+            "s": 1,
+            "u": 8
+          }
+        ]
+      }
+    },
+    "full_budget": [
+      2
+    ],
+    "p": 13,
+    "primes": [
+      2
+    ],
+    "removed": [
+      1
+    ],
+    "retained": [
+      1
+    ]
+  },
+  "joint_local_regression": {
+    "E_mod5": [
+      1,
+      6,
+      36,
+      81
+    ],
+    "E_mod7": [
+      12,
+      54
+    ],
+    "R": 35,
+    "a": 18,
+    "intersection": [],
+    "p": 37
+  },
+  "scan": {
+    "inflated_channel_observations": 111,
+    "matching_H0_rank": 1001,
+    "matching_occurrences": 1827,
+    "primes": 21,
+    "shells": 1284,
+    "splits": 3775
+  },
+  "scope": "prime p=1 mod12, p<=bound, all first-half shells; unsplit and one-occurrence peels"
+}

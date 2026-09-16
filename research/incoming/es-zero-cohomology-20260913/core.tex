@@ -1,0 +1,368 @@
+\section{Source interface: supported zero and original norms}
+The Zeta workbench's SplitZero construction \cite{Derived,Tau,Toda} is
+used here, not replaced by a second scalar theory. For a ring $k$, its
+coefficient semiring is $G(k)=\{\tau\}\sqcup k^\bullet$, with
+$e=0_k^\bullet\ne\tau$. Reconstruction over a support semilattice $L$
+forms a disjoint union of module fibres. Its internal quotient is
+\[
+ (\lambda,x)\longmapsto(\lambda,[x]);
+ \qquad (\lambda,0)\ne\tau\quad(\lambda\ne\bot).
+\]
+The difference between two representatives is an actual relation, not a
+reason to remove the fibre label. In the source's tau-base diagram the
+cochain is $[V\oplus V\xrightarrow{r_+-r_-}\mathscr B]$ in degrees $0,1$.
+The analytic theta maps, their domains and $\mathscr B/\Theta V$ are not
+identified with a finite ES module in this note. We instantiate the
+source's \emph{algebraic} reconstruction, internal homology, kernel and
+original-Gram quotient interfaces on specified finite arithmetic maps.
+No purity, RH, or analytic-source comparison is imported.
+
+The source's least-norm construction is likewise retained. If $G>0$ is
+the original Gram, $B$ the independent relation columns and $C$ a chosen
+representative matrix, then
+\[
+ R=C-B(B^*GB)^{-1}B^*GC,\quad
+ R^*GR=C^*GC-C^*GB(B^*GB)^{-1}B^*GC.                 \tag{1}
+\]
+The determinant of the source Gram in columns $[C,B]$ is
+$\det(B^*GB)\det(R^*GR)$. This is the existing Schur-complement calculation
+\cite[\S1]{Toda}, not a new determinant theorem. Our contribution below
+is a complete arithmetic instance, its counting weights and original
+selector inverse. The finite ES norm is specified directly; it is not
+silently declared equal to the theta-function norm.
+
+\section{The complete finite cochain and its quotient}
+Let $X,Y,Z$ be finite sets with maps $\ell:X\to Z$, $r:Y\to Z$.
+For a commutative ring $k$, use the free modules with their labelled bases.
+Let $X_z=\ell^{-1}(z)$ and $Y_z=r^{-1}(z)$, and choose one reference
+$x_z$ or $y_z$ in each nonempty fibre. The relations are
+\[
+ B_X=\bigoplus_{z}\bigoplus_{x\in X_z\setminus\{x_z\}}k(e_x-e_{x_z}),
+ \qquad B_Y=\bigoplus_{z}\bigoplus_{y\in Y_z\setminus\{y_z\}}k(e_y-e_{y_z}).
+\]
+Consider the actual three-term cochain
+\[
+ \mathcal C^{-1}=B_X\oplus B_Y
+ \xrightarrow{\partial}\mathcal C^0=k^X\oplus k^Y
+ \xrightarrow{d}\mathcal C^1=k^Z,
+ \quad d(a,b)_z=\sum_{X_z}a_x-\sum_{Y_z}b_y.       \tag{2}
+\]
+The incoming map is inclusion; $d\partial=0$ term by term.
+
+\begin{theorem}[Complete integral cohomology and inverse]\label{thm:cohom}
+Put $S=\ell(X)$, $T=r(Y)$ and $I=S\cap T$. Over every commutative ring,
+\[
+ H^{-1}(\mathcal C)=0,\quad H^0(\mathcal C)\simeq k^I,
+ \quad H^1(\mathcal C)\simeq k^{Z\setminus(S\cup T)}.            \tag{3}
+\]
+The degree-zero isomorphism sends a cycle to
+$c_z=\sum_{X_z}a_x=\sum_{Y_z}b_y$. Its inverse sends $c_z$ to
+$c_z(e_{x_z},e_{y_z})$. The complete fibre over $(c_z)$ consists of this
+representative plus $\partial\theta$, with unique relation coefficients
+$\theta_x=a_x$ and $\theta_y=b_y$ away from the reference indices.
+\end{theorem}
+\begin{proof}
+The displayed star differences are independent and generate exactly the
+kernel of each fibre sum: a vector of sum zero equals
+$\sum_{x\ne x_z}a_x(e_x-e_{x_z})$. In a cycle the two sums agree. If
+only one fibre is nonempty, this common sum is zero; otherwise it is any
+$c_z$. Subtracting the stated reference representative leaves precisely
+the displayed relations. This proves (3), including both inverse
+compositions, without division in $k$. Finally the image of $d$ contains
+exactly all coordinate basis vectors indexed by $S\cup T$.
+\end{proof}
+
+Taking only $\ker d$ without the original incoming relations would count
+internal cancellations as witnesses. The relation primitive in the proof
+specifies exactly what is removed. To apply the source's support theory,
+use the four masks $L=\mathcal P(\{\mathrm{left},\mathrm{right}\})$,
+coordinate inclusions at present legs, and the common codomain for every
+nonempty mask. Set the empty-mask complex to zero. The relation submodules
+are transition-stable. Reconstruct (2) and its homology internally as in
+\cite[\S\S1--4]{Derived}; the differential-square equation is the
+supported-zero map at the retained mask, not the constant absent map.
+If the joint $H^0$ is zero, that is still its \emph{present zero fibre}.
+
+\subsection{The complete canonical weight}
+Give $k^X\oplus k^Y$ its original real or complex diagonal Gram, with
+positive entries $a_x,b_y$. Define
+\[
+ M_z=\sum_{X_z}a_x^{-1},\qquad N_z=\sum_{Y_z}b_y^{-1}.
+\]
+For $z\in I$, its least-norm representative is
+\[
+ r(c)_x=\frac{c_z}{a_xM_z},\qquad
+ r(c)_y=\frac{c_z}{b_yN_z},                            \tag{4}
+\]
+and its quotient norm is
+\[
+ \boxed{\|c\|_{H^0}^2=\sum_{z\in I}
+          (M_z^{-1}+N_z^{-1})|c_z|^2.}                \tag{5}
+\]
+To prove this, the weighted inner product of (4) with each star relation
+is zero. Its sums are $c_z$, and its squared norm is (5). Subtracting it
+from any other cycle supplies the explicit relation primitive and the
+Pythagorean identity. Empty fibres are excluded from (4), not assigned a
+fictitious inverse weight. Least-norm representatives may be rational or
+complex; integral witness extraction uses labelled occurrences, not the
+claim that (4) is an integral source vector.
+
+For the original counting Gram $a_x=b_y=1$, put $m_z=|X_z|$, $n_z=|Y_z|$.
+Then the quotient Gram is $\operatorname{diag}(1/m_z+1/n_z)$.
+In the integral cycle basis given by the reference representative and
+star differences, a common fibre has source determinant $m_z+n_z$,
+relation determinant $m_zn_z$, and quotient determinant
+$(m_z+n_z)/(m_zn_z)$. A one-sided fibre contributes the same determinant
+to source and relations. These formulas follow either from (1) or from
+$\det(I+\mathbf1\mathbf1^*)=\text{matrix size}+1$ on each star block.
+Thus all source and relation factors are visible.
+
+The canonical projection of the original all-ones vector onto the
+harmonic degree-zero subspace has components
+$2n_z/(m_z+n_z)$ on $X_z$ and $2m_z/(m_z+n_z)$ on $Y_z$, with squared norm
+\[
+ \boxed{4\sum_{z\in I}\frac{m_zn_z}{m_z+n_z}.}       \tag{6}
+\]
+This is positive exactly when $I$ is nonempty. It is an exact source-norm
+criterion, not a bound proving $I$ nonempty for arbitrary arithmetic data.
+
+\subsection{Coarsening and killed classes}
+For $\pi:Z\to Z'$, retain the same $X,Y$ but replace their maps by
+$\pi\ell,\pi r$. The identity on degree zero and fibre-sum map on degree
+one define a chain map; the incoming map sends each old star difference
+to its explicit expression in the coarser star basis. The induced map is
+\[
+ (c_z)_{z\in I}\longmapsto
+ \left(\sum_{\substack{z\in I\\\pi(z)=w}}c_z\right)_{w\in I'},
+ \quad I'=\pi(S)\cap\pi(T).                         \tag{7}
+\]
+Its image is $k^{\pi(I)}$, its cokernel $k^{I'\setminus\pi(I)}$, and its
+kernel has the star-difference basis in each fibre of $I\to\pi(I)$.
+For any killed class its chain representative has coarser sums zero, and
+the preceding nonreference-coordinate formula is its boundary primitive.
+This is an actual instance of the source's transported-class kernel,
+not the assumption that comparisons are injective \cite[\S3]{Derived}.
+For example two matched residues merging to one kill the nonzero class
+$(1,-1)$; unmatched fine residues can also create new coarse matches.
+
+\section{The ES specialization: two channels, all actual exponents}
+In this arithmetic application, the coefficient field is $\mathbb Q$.
+Fix a prime $p\equiv1\pmod4$, $p/4<a<p/2$, $R=4a-p$, and
+$a=\prod_iq_i^{e_i}$. Put $B_e=\prod_i[-e_i,e_i]_{\mathbb Z}$ and
+$v(\beta)=\prod_iq_i^{\beta_i}\pmod R$. All powers are units.
+Retain the two \emph{canonical} channel targets
+\[
+ t_M=-1,\qquad t_E=-p^{-1}\pmod R.                  \tag{8}
+\]
+The additional inverted-exterior target of the split-energy test is a
+labelled alternative computation of E, not a third canonical channel.
+
+Split $e=f+b$ with $f,b\ge0$. In each separately labelled channel use
+\[
+ X=B_f,\quad Y=B_b,\quad Z=(\mathbb Z/R\mathbb Z)^\times,
+ \quad \ell(\xi)=v(\xi),\quad r_c(\eta)=t_cv(\eta)^{-1}.       \tag{9}
+\]
+The full object is the direct sum of these channel complexes, retaining
+$(p,a,R,c,f,b)$ as its type. Theorem~\ref{thm:cohom} proves
+\[
+ H^0(\mathcal C_c)\ne0
+ \iff \exists(\xi,\eta):v(\xi+\eta)=t_c.             \tag{10}
+\]
+Every $\beta\in B_e$ has the complete addition fibre
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),
+ \qquad \eta=\beta-\xi,                             \tag{11}
+\]
+so (10) is equivalent to an original channel hit. The original divisor is
+\[
+ u=\prod_iq_i^{e_i+\beta_i},\quad d_0=\gcd(a,u),\quad
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0).                       \tag{12}
+\]
+On M use $\lambda=(r+s)/R$ and denominators
+$(a,phs\lambda,phr\lambda)$; on E use $\kappa=(pr+s)/R$ and
+$(a,hs\kappa,phr\kappa)$. The inverse is
+$u=pa^2/(RY-pa)$ on M and $u=a^2/(RY-pa)$ on E.
+Prime valuations prove all normalizations; clearing the reciprocal sum
+proves the original ES identity. These coordinates and first-half
+completeness are inherited \cite{ET,ESBase,Split}. The ordered pair
+$(\xi,\eta)$, channel and full exponents are not inferred from a residue
+alone; they are selected from the recorded fibres (9),(11).
+
+\section{The exact original arithmetic weight and its chain primitive}
+Let $\mathscr P_c$ be the matched pairs in (9) and let
+$\mathscr W_c=\{\beta\in B_e:v(\beta)=t_c\}$. Addition gives a surjection
+\[
+ q:\mathscr P_c\to\mathscr W_c,
+ \qquad N(\beta)=|q^{-1}(\beta)|
+ =\prod_i\bigl(\min(f_i,\beta_i+b_i)-\max(-f_i,\beta_i-b_i)+1\bigr).\tag{13}
+\]
+There are \emph{two} observations of $\mathscr P_c$: its matched residue
+and its original exponent vector. Neither determines the other in general.
+The residue cohomology rank, the matching-pair count and the original
+witness count must not be identified.
+
+For any finite surjection $q:P\to W$, let $Q:k^P\to k^W$ sum over its
+fibres. Its kernel has the complete basis $e_x-e_{x_0(w)}$. Thus
+\[
+ [\ker Q\hookrightarrow k^P]\simeq k^W[0]          \tag{14}
+\]
+in degrees $-1,0$, by the integral reference section and explicit fibre relations. Over
+$\mathbb Q$ the canonical section for the counting Gram is
+\[
+ J(c)_x=c_{q(x)}/N(q(x)),\quad QJ=1.                 \tag{15}
+\]
+For every amplitude vector $A$, retain both $QA$ and
+$\theta_x=A_x-J(QA)_x$ at each nonreference point. This is a linear
+bijection, with inverse $J(QA)+\sum\theta_x(e_x-e_{x_0})$.
+In particular a nonzero cancellation is an actual boundary with its
+primitive, not external absence.
+
+The inherited counting norm gives
+\[
+ \|A\|^2=\sum_w\frac{|QA(w)|^2}{N(w)}+\|A-JQA\|^2.             \tag{16}
+\]
+If instead one is transporting the \emph{original uniform norm} on
+$k^W$, its permutation-invariant diagonal metric on a refined fibre is
+necessarily $N(w)I$: minimization then gives quotient norm $|c_w|^2$.
+This transported metric is displayed as a changed metric; it is not called
+the native product-counting norm. Indeed a constant diagonal $h_wI$ on a
+fibre has quotient norm $h_w|c_w|^2/N(w)$, proving uniqueness.
+
+Over $\mathbb Q$ or $\mathbb R$, arbitrary positive original ES masses $\omega_{c,\beta}$ are
+reconstructed without duplication by assigning to each lifted pair the
+mass $\omega_{c,\beta}/N(\beta)$. In particular the full original
+channel count and every monomial are recovered exactly:
+\[
+ \boxed{\sum_{\beta\in\mathscr W_c}U^{e+\beta}
+ =\sum_{(\xi,\eta)\in\mathscr P_c}
+          \frac{U^{e+\xi+\eta}}{N(\xi+\eta)}.}      \tag{17}
+\]
+The zero coefficient is absence of that monomial; a signed intermediate
+sum cancelling to zero retains its source support mask separately.
+
+\subsection{All failed candidates retain their original defect}
+For every split pair, matched or not, put
+\[
+ x=v(\xi),\quad w=v(\eta),\quad\rho=x-t_cw^{-1}\pmod R,
+ \qquad \beta=\xi+\eta.
+\]
+The original gates $g_M=u+a$, $g_E=4u+1$ satisfy
+\[
+ g_c\equiv c_c\rho\pmod R,
+ \qquad c_M=aw,\quad c_E=pw,                        \tag{18}
+\]
+where both multipliers are units. Hence
+\[
+ D_c(\beta)=\frac R{\gcd(R,g_c)}=\frac R{\gcd(R,\rho)}.         \tag{19}
+\]
+For the original affine monodromy
+\[
+ (X,Y,Z)\mapsto(6g+Y,-6g-X-Y,Z-2g+X),\quad
+ (-Y,X-6g,Z+3g+Y),\quad(X,Y+X,Z-g),
+\]
+scaling by $c_c$ is an equivariant bijection from coefficient $\rho$ to
+coefficient $g_c$, inverse scaling by $c_c^{-1}$. No global sphere theorem
+is required. Equations (13),(18) prove the \emph{complete defect-polynomial}
+identity
+\[
+ \sum_{\beta\in B_e}U^{e+\beta}Z^{D_c(\beta)-1}
+ =\sum_{\xi\in B_f,\eta\in B_b}
+       \frac{U^{e+\xi+\eta}Z^{D_c(\xi+\eta)-1}}{N(\xi+\eta)}. \tag{20}
+\]
+Evaluating the polynomial at $Z=0$ means coefficient extraction at exponent
+zero and gives (17). This is not a limiting positivity assumption.
+
+\subsection{Iterated quotients must carry their inherited metric}
+For finite surjections $P\xrightarrow q W\xrightarrow r Z$, let
+$m_w=|q^{-1}(w)|$ and $n_z=\sum_{r(w)=z}m_w$.
+The quotient metric on $k^W$ is $\operatorname{diag}(1/m_w)$.
+The canonical lift of $c_z$ to $w$ is $m_wc_z/n_z$; lifting again gives
+$c_z/n_z$ at every original occurrence. It agrees exactly with the direct
+canonical lift for $rq$. Every kernel coordinate is recovered by the
+successive star primitives. This proves all finite towers by induction.
+
+Resetting the intermediate metric to the identity changes that map.
+For three budgets $[-1,1]$, total exponent zero has seven ordered triples.
+The direct coefficients are all $1/7$ and squared norm $1/7$.
+Resetting after adding the first two gives four coefficients $1/6$ and
+three $1/9$, with squared norm $4/27$. Thus the exact excess is
+\[
+ \boxed{\frac4{27}-\frac17=\frac1{189}>0.}           \tag{21}
+\]
+The discarded difference is a nonzero zero-sum boundary. This is a concrete
+reason to retain the source/relation metric through each morphism.
+
+\section{Concrete tests and the counterfactual object}
+At $p=2521$, $a=636=2^2\cdot3\cdot53$, $R=23$, choose
+$f=(1,1,1)$, $b=(1,0,0)$. The complete matched pair table is
+\[
+\begin{array}{c|r|r|r|r|r}
+c&g&\xi&\eta&\beta&N(\beta)\\\hline
+M&22&(-1,1,1)&(0,0,0)&(-1,1,1)&2\\
+M&11&(0,-1,-1)&(1,0,0)&(1,-1,-1)&2\\
+M&21&(0,1,1)&(-1,0,0)&(-1,1,1)&2\\
+M&22&(1,-1,-1)&(0,0,0)&(1,-1,-1)&2\\
+E&13&(-1,1,0)&(-1,0,0)&(-2,1,0)&1
+\end{array}
+\]
+There are five matched pairs, four channel/residue cohomology coordinates,
+and three original canonical channel states. The harmonic Gram in the
+ordered shared coordinates
+\[ (M,11),\ (M,21),\ (M,22),\ (E,13) \]
+is $\operatorname{diag}(2,2,3/2,2)$, determinant $12$. The mass identity is
+$4\cdot(1/2)+1=3$, not five. The two middle states have
+$(u,h,r,s,\lambda)=(8,2,2,159,7)$ and $(50562,2,159,2,7)$; the exterior
+state has $(477,53,3,4,329)$. Equation (12) returns all denominators and
+(17) retains the two middle orientations as distinct canonical labels.
+
+At the genuinely empty \emph{single shell} $p=241,a=64,R=15$, split
+$6=3+3$. The two channel complexes together have dimensions
+\[
+ \dim C^{-1}=12,\quad \dim C^0=28,\quad\dim C^1=16,
+ \qquad H^{-1}=H^0=H^1=0.
+\]
+The raw two-leg kernel has dimension twelve; all twelve coordinates are
+actual relations. The counting norm of the all-ones source vector is
+$28$, not zero. Its supported acyclic fibre is not $\tau$. Other shells
+at 241 succeed, so this is not an ES counterexample.
+
+Likewise at $p=37,a=18,R=35$, the exterior local divisor sets are
+$\{1,6,36,81\}$ modulo five and $\{12,54\}$ modulo seven. They are both
+nonempty but disjoint. Equation (7) permits new cohomology after
+coarsening; it does not give a simultaneous original exponent vector.
+One must retain the joint residue or the same original leaf in every local
+factor. These original regression sets are inherited \cite{ESBase}.
+
+For the complete first-half atlas at a fixed prime, choose any split at
+each shell and sum the two canonical channel complexes with their full
+support labels. Its degree-zero cohomology is nonzero exactly when ES
+holds at that prime. A hypothetical false prime has zero ordinary
+$H^0$ in every such labelled summand, not absent source objects or zero
+source weights. On the refined matched-pair complexes (14), $H^0$ counts
+actual canonical states; on (2) it counts matched channel/residues.
+The distinction persists under all split changes.
+
+These identities do not produce a universal nonzero class. They supply
+an exact source-norm expression (6), a complete original state-count
+expression (17), and an all-defect expression (20) on which a positivity
+or cross-shell estimate can be attempted. A generic source-norm bound from
+the Zeta application is not presumed valid for this finite arithmetic
+family merely because the quotient formulas have the same algebraic form.
+
+\section{Verification scope}
+The standard-library verifier constructs the actual differentials, relation
+columns and canonical representatives. It checks their ranks, both inverse
+compositions, relation primitives, and determinant ratios for every pair
+of maps from sets of size at most two into a three-element set, in both
+counting and specified nonconstant diagonal metrics. It also checks unequal
+common fibres through size six, every small split budget, and the complete
+three-stage tower. The displayed arithmetic examples include every original
+candidate and every split pair, successful or failed. Further bounded
+first-half scans retain their exact domain in the JSON. They prove no
+unbounded occupancy statement.
+
+Source-level general statements and finite checks have different scopes.
+The Zeta analytic source is read through the pinned workbenches cited below;
+the full 482-page reader and the analytic/formal corpus were not audited or
+replayed. No Lean theorem is claimed for this tranche. Existing mathematical
+source files are not rewritten, and no historical-priority claim is made.
