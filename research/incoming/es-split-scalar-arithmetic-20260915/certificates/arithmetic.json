@@ -1,0 +1,346 @@
+{
+  "examples": [
+    {
+      "R": 27,
+      "a": 847,
+      "candidate_count": 30,
+      "hits": [],
+      "n": 3361,
+      "primality_trial_bound": 57,
+      "prime": true
+    },
+    {
+      "R": 27,
+      "a": 5929,
+      "candidate_count": 50,
+      "hits": [
+        {
+          "R": 27,
+          "a": 5929,
+          "beta": [
+            -2,
+            -1
+          ],
+          "channel": "M",
+          "denominators": [
+            5929,
+            2809041620,
+            5211580
+          ],
+          "h": 11,
+          "n": 23689,
+          "prime_factors": [
+            [
+              7,
+              2
+            ],
+            [
+              11,
+              2
+            ]
+          ],
+          "quotient": 20,
+          "r": 1,
+          "s": 539,
+          "u": 11
+        },
+        {
+          "R": 27,
+          "a": 5929,
+          "beta": [
+            1,
+            -1
+          ],
+          "channel": "E",
+          "denominators": [
+            5929,
+            5202274,
+            78423334682
+          ],
+          "h": 77,
+          "n": 23689,
+          "prime_factors": [
+            [
+              7,
+              2
+            ],
+            [
+              11,
+              2
+            ]
+          ],
+          "quotient": 6142,
+          "r": 7,
+          "s": 11,
+          "u": 3773
+        },
+        {
+          "R": 27,
+          "a": 5929,
+          "beta": [
+            2,
+            1
+          ],
+          "channel": "M",
+          "denominators": [
+            5929,
+            5211580,
+            2809041620
+          ],
+          "h": 11,
+          "n": 23689,
+          "prime_factors": [
+            [
+              7,
+              2
+            ],
+            [
+              11,
+              2
+            ]
+          ],
+          "quotient": 20,
+          "r": 539,
+          "s": 1,
+          "u": 3195731
+        }
+      ],
+      "n": 23689,
+      "primality_trial_bound": 153,
+      "prime": true
+    },
+    {
+      "R": 27,
+      "a": 4879,
+      "candidate_count": 54,
+      "hits": [
+        {
+          "R": 27,
+          "a": 4879,
+          "beta": [
+            1,
+            1,
+            0
+          ],
+          "channel": "E",
+          "denominators": [
+            4879,
+            3521736,
+            8167578435576
+          ],
+          "h": 41,
+          "n": 19489,
+          "prime_factors": [
+            [
+              7,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              41,
+              1
+            ]
+          ],
+          "quotient": 85896,
+          "r": 119,
+          "s": 1,
+          "u": 580601
+        }
+      ],
+      "n": 19489,
+      "primality_trial_bound": 139,
+      "prime": true
+    }
+  ],
+  "old_source_transport": [
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 1,
+      "u": 1
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 7,
+      "u": 1
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "newu": 11,
+      "u": 11
+    },
+    {
+      "D": 9,
+      "channel": "M",
+      "newu": 77,
+      "u": 11
+    },
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 121,
+      "u": 121
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 847,
+      "u": 121
+    },
+    {
+      "D": 9,
+      "channel": "E",
+      "newu": 1331,
+      "u": 1331
+    },
+    {
+      "D": 3,
+      "channel": "M",
+      "newu": 9317,
+      "u": 1331
+    },
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 14641,
+      "u": 14641
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 102487,
+      "u": 14641
+    },
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 7,
+      "u": 7
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 49,
+      "u": 7
+    },
+    {
+      "D": 9,
+      "channel": "E",
+      "newu": 77,
+      "u": 77
+    },
+    {
+      "D": 9,
+      "channel": "M",
+      "newu": 539,
+      "u": 77
+    },
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 847,
+      "u": 847
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 5929,
+      "u": 847
+    },
+    {
+      "D": 3,
+      "channel": "E",
+      "newu": 9317,
+      "u": 9317
+    },
+    {
+      "D": 9,
+      "channel": "M",
+      "newu": 65219,
+      "u": 9317
+    },
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 102487,
+      "u": 102487
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 717409,
+      "u": 102487
+    },
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 49,
+      "u": 49
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 343,
+      "u": 49
+    },
+    {
+      "D": 9,
+      "channel": "E",
+      "newu": 539,
+      "u": 539
+    },
+    {
+      "D": 3,
+      "channel": "M",
+      "newu": 3773,
+      "u": 539
+    },
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 5929,
+      "u": 5929
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 41503,
+      "u": 5929
+    },
+    {
+      "D": 9,
+      "channel": "E",
+      "newu": 65219,
+      "u": 65219
+    },
+    {
+      "D": 9,
+      "channel": "M",
+      "newu": 456533,
+      "u": 65219
+    },
+    {
+      "D": 27,
+      "channel": "E",
+      "newu": 717409,
+      "u": 717409
+    },
+    {
+      "D": 27,
+      "channel": "M",
+      "newu": 5021863,
+      "u": 717409
+    }
+  ],
+  "scan": {
+    "canonical_candidates": 80032,
+    "hits": 1043,
+    "primes": 44,
+    "shells": 2480
+  }
+}

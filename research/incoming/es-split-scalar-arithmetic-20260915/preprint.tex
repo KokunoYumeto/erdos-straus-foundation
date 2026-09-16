@@ -1,0 +1,221 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=23mm]{geometry}
+\usepackage{lmodern,mathrsfs,amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\emergencystretch=2em
+\title{Split-zero inversion and a finite divisor-capacity theorem for ES}
+\author{The Clankers}
+\date{15 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+We distinguish sparse support-preserving inversion from ordinary amplitude
+inversion in a split-zero coefficient algebra. Positive bounded-divisor factors
+then give exact formulas for all prime multiplicities. A complete computer-assisted
+classification at residual 27 proves that any occupied shell has a witness
+using a reserved budget of at most nine prime occurrences in at most three
+nonidentity residue classes. The three-class bound is necessary at a certified
+hard prime. Source arithmetic, labels and inverse fibres remain explicit;
+no universal ES or historical-priority assertion is made.
+\end{abstract}
+
+\paragraph{The scalar, not a substitute support index.}
+For a nonzero commutative ring $A$, let
+$G(A)=\{\tau\}\sqcup A^\bullet$, with $e=0_A^\bullet\ne\tau$.
+This is the source's absent/supported distinction \cite{SZ}. A sparse vector
+in $G(A)[\Gamma]$ is a pair $(S,f)$ with $S\subseteq\Gamma$ and
+$\operatorname{nz}(f)\subseteq S$; a zero amplitude in $S$ is $e$.
+Its operations are
+\[
+ (S,f)+(T,g)=(S\cup T,f+g),\qquad(S,f)(T,g)=(ST,fg).
+ \tag{1}
+\]
+An amplitude sum may cancel; its presence does not. The inverse representation
+reads $f$ on $S$ and $\tau$ off $S$.
+
+\begin{theorem}[The precise inverse boundary]
+The global units of $G(A)[\Gamma]$ are exactly $a^\bullet[g]$,
+$a\in A^\times$. In the ordinary real group algebra, an element and its inverse
+cannot both have nonnegative coefficients unless both are monomials.
+\end{theorem}
+\begin{proof}
+If a product is the global identity, its support product is the singleton
+$\{1\}$. Fixing a member of either nonempty support forces the other support
+to be a singleton; the amplitudes must be units. Nonnegative real convolution
+has the same noncancellation property. The converses are immediate.
+\end{proof}
+This is not a prohibition of linear inverses inside a fixed nonbottom fibre.
+For example, in additive $C_6$ the ordinary inverse identity
+\[
+ ([3]+2[1])\frac{[3]-2[1]+4[5]}9=[0]
+\]
+returns instead $1^\bullet[0]+e[2]+e[4]=E_H$ in the sparse split algebra,
+$H=\{0,2,4\}$. It is idempotent and acts as an identity only after the
+specified coset saturation. In particular
+$E_H([3]+2[1])=[3]+2[1]+e[5]$.
+The earlier full Fourier support of this ordinary target \cite{Target} is
+not disputed. The added present-zero coordinate is not a positive divisor count.
+
+\paragraph{Actual arithmetic factors.}
+Fix $R\equiv3\pmod4$, $a>R/2$, $\gcd(a,R)=1$, and $n=4a-R$.
+Write $a=\prod q_i^{e_i}$, keeping the actual primes and their multiplicities.
+In $\Gamma_R=(\mathbb Z/R\mathbb Z)^\times$ define
+\[
+ P^E_{g,e}=\sum_{f=0}^{2e}[g]^f,\qquad
+ P^M_{g,e}=\sum_{\beta=-e}^{e}[g]^\beta.
+ \tag{2}
+\]
+The E target is $-4^{-1}$, with $u=\prod q_i^{f_i}$; the M target is $-1$,
+with $u=a\prod q_i^{\beta_i}$. Thus a target coefficient in
+$\prod_iP^c_{q_i,e_i}$ counts exactly the original channel-$c$ states.
+These positive count coefficients have a support-faithful sparse lift to
+$G(\mathbb Q)$; no signed cancellation can create a spurious coefficient.
+
+\begin{theorem}[All exponents from finite exact data]
+In the ordinary formal group algebra,
+\[
+ \sum_{e\ge0}P^E_{g,e}z^e=\frac{1+z[g]}{(1-z)(1-z[g]^2)},\qquad
+ \sum_{e\ge0}P^M_{g,e}z^e=\frac{1+z}{(1-z[g])(1-z[g]^{-1})}.
+ \tag{3}
+\]
+Each has a specified positive expansion with one-to-one coefficient indices.
+If $o=\operatorname{ord}(g)$ and $e=r+ok$, $0\le r<o$, then
+\[
+ P^c_{g,e}=P^c_{g,r}+2k\sum_{h\in\langle g\rangle}[h].
+ \tag{4}
+\]
+Its support is unchanged by $e\mapsto\min(e,\lfloor o/2\rfloor)$.
+\end{theorem}
+\begin{proof}
+The E expansion indices $(j,k,\varepsilon)\in\mathbb N^2\times\{0,1\}$
+map to $(e,f)=(j+k+\varepsilon,2k+\varepsilon)$; the inverse is
+$\varepsilon=f\bmod2$, $k=(f-\varepsilon)/2$, $j=e-k-\varepsilon$.
+For M the map is $(e,\beta)=(j+k+\varepsilon,j-k)$, with inverse
+$\varepsilon=(e-\beta)\bmod2$, $j=(e-\varepsilon+\beta)/2$,
+$k=(e-\varepsilon-\beta)/2$. These are nonnegative exactly on the original
+bounds. Increasing $e$ by $o$ adds two full cycles of $g$, proving (4).
+A consecutive interval fills its cyclic subgroup when $2e+1\ge o$.
+\end{proof}
+The positive expansions, not formal subtraction inverses, are lifted to the
+split carrier. Equation (4) is an exact multiaffine quasipolynomial formula
+for arbitrary multiplicities. The cap preserves availability, not counts.
+
+\paragraph{Grouping retains its complete fibres.}
+For distinct primes of the same residue, aggregate capacity is
+$E_g=\sum_{q\equiv g}e_q$. The support is the interval of total capacity;
+its count polynomial is instead $\prod_{q\equiv g}(1+T+\cdots+T^{2e_q})$.
+Every coefficient fibre is the set of integer compositions
+$\sum f_q=f$, $0\le f_q\le2e_q$. It is nonempty for every $0\le f\le2E_g$,
+by successive addition of integer intervals. These compositions supply all
+actual prime-exponent lifts. For example, one prime squared has five choices,
+whereas two distinct same-residue primes once each have nine.
+
+\begin{theorem}[Complete residual-27 capacity classification]
+Put $E_j(a)=\sum_{q\equiv2^j\ (27)}v_q(a)$ for $1\le j\le17$.
+There is a fully specified list of 174 coordinatewise minimal profiles such
+that a residual-27 E or M hit exists exactly when $(E_j(a))$ dominates a
+listed profile. Nine profiles use one residue class, 99 use two, and 66 use
+three; none uses more. Their total capacities are at most nine.
+Every hit therefore has an original witness reserving at most nine actual
+prime occurrences from at most three nonidentity residue classes.
+\end{theorem}
+\begin{proof}[Proof and complete finite certificate]
+The group has order 18, generated by 2; the target logarithms are 7 and 9.
+Group equal-residue factors using their composition fibres, then cap coordinate
+$j$ at $c_j=\lfloor(18/\gcd(j,18))/2\rfloor$ using Theorem~2.
+Occupancy increases coordinatewise.
+
+For the $2^{17}$ zero/one supports, use 18-bit masks, initially $\{0\}$.
+Adding class $j$ replaces E-mask $W$ by $W\cup(W+j)\cup(W+2j)$ and M-mask by
+$W\cup(W+j)\cup(W-j)$, all modulo 18. Exactly 360 supports miss: 256 have only
+even logarithms, which miss at every multiplicity. On the other 104 supports,
+enumerate all positive capped coordinates; there are 14,040 profiles. Keep a
+hit precisely when all its immediate predecessors miss. Including the 85
+squarefree minimal profiles gives the 174 entries and the asserted bounds.
+Every entry stores an actual target exponent word.
+
+An independent original-residue checker starts at the zero capacity vector
+and visits every capped unoccupied vector. It finds 62,812 such vectors and
+tests 629,841 upward frontier edges. All 567,030 occupied boundary edges dominate
+a verified listed profile. Every increasing path either remains in the
+unoccupied set or first crosses such a boundary; hence no minimal hit is
+omitted. Both exhaustive algorithms are included with their exact finite
+bounds. This is the finite computer-assisted part of the theorem, not a
+finite-prime extrapolation.
+
+For a dominated profile reserve its capacities among actual occurrences in
+the original factorization and allocate its target word using the composition
+fibres. Unreserved E exponents are zero; unreserved M centered exponents are
+zero. The original $a$ is unchanged. The reconstruction below completes the proof.
+\end{proof}
+The 104 odd-logarithm misses have arity counts $7,45,43,9$. Therefore a factorization with at least five distinct nonidentity residue classes modulo27 and a prime divisor $2\bmod3$ necessarily gives a hit in this shell. This is a pointwise sufficient consequence, not just a classification after a witness is given.
+
+The bound nine is attained in the local profile with sole residue 23 and
+capacity 9: its first E raw target exponent is 17 and its first M centered
+target exponent has absolute value 9. This optimality is for the stated local
+model, not a claim of prime optimality.
+
+\paragraph{Marked inverse and arithmetic sharpness.}
+Given $u$, put $d=\gcd(a,u)$ and $(h,r,s)=(d^2/u,u/d,a/d)$.
+Prime valuations give $a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$.
+The inherited ordered formulas are
+\[
+ E:\ \kappa=(nr+s)/R,\ (a,hs\kappa,nhr\kappa),\qquad
+ M:\ \lambda=(r+s)/R,\ (a,nhs\lambda,nhr\lambda).
+ \tag{5}
+\]
+The target divisibility makes the quotients integral. Clearing reciprocals
+gives $4/n$ since $n+R=4a$; the inverse is
+$u=a^2/(RY-na)$ in E and $u=na^2/(RY-na)$ in M \cite[\S2]{ET}.
+Thus the full denominator order, channel, scale and original prime exponents
+remain available after capacity selection.
+
+At the prime $p=19489\equiv169\pmod{840}$, $a=4879=7\cdot17\cdot41$,
+$R=27$, every proper residue subbudget misses both targets. The full 54-state
+shell has the sole E hit
+\[
+ u=580601,\quad(h,r,s,\kappa)=(41,119,1,85896),
+ \quad(X,Y,Z)=(4879,3521736,8167578435576).
+\]
+This makes three classes necessary. Its E centered vector is $(1,1,0)$;
+the arity theorem uses the raw E word $(2,2,1)$, not that alternative
+coordinate count. Trial division through 139 certifies primality.
+
+\paragraph{An infinite family with a hand proof.}
+If all prime residues of $a$ lie in $\{1,7,11\}$, let $A,B$ be the total
+multiplicities in classes 7 and 11. Then E is nonempty exactly when
+$B\ge7$ or $(A\ge1,B\ge3)$ or $(A\ge2,B\ge1)$; M is nonempty exactly when
+$B\ge9$ or $(A\ge1,B\ge5)$ or $(A\ge2,B\ge1)$.
+Indeed $\log_2 7=-2$, $\log_2 11=-5$ modulo 18. For E solve
+$2i+5j=11\pmod{18}$ with $i\in[0,2A]$, $j\in[0,2B]$:
+$A=0$ needs $j=13$; $A=1$ first permits $j=5$; $A\ge2$ permits $(3,1)$;
+$B=0$ is impossible. For M solve $2r+5s=9\pmod{18}$ in the centered box:
+$A=0$ needs $|s|=9$; $A=1$ first permits $|s|=5$; $A\ge2$ permits $(2,1)$.
+These cases prove both necessity and sufficiency for every multiplicity.
+
+\paragraph{Scope.}
+The complete scripts, 174-entry JSON catalogue, all inverse data and the
+longer proof are supplied together. The application to 4,519 hard-class primes
+through two million finds 1,214 occupied residual-27 shells, 1,880 E states and
+1800 M states; it is not new prime coverage. The all-exponent theorem is at
+fixed residual, not a proof that every prime has an occupied residual.
+General group periodicity and positive rational series are classical tools.
+The exact scalar comparison and finite catalogue were calculated here;
+no historical-priority, Lean-build or independent-review claim is made.
+
+\begin{thebibliography}{3}\small
+\bibitem{SZ} Split-Zero research programme (2026).
+\emph{Derived Mathematics}, \texttt{formal/splitzero/DERIVED\_MATHEMATICS.md},
+\S\S1--4, revision \texttt{98c3c5f\ldots afffae}; and the owner's saved
+\emph{Globalization Semiring Analysis}, \S6.1--6.2. Exact locators accompany the package.
+\bibitem{Target} Clankers (2026). \emph{Support-Completed Center Sectors,
+Koide Null Forms, and Fourier-Zero Removal in Residual Erd\H{o}s--Straus
+Shells}. May source edition, Abstract; ordinary target $D_k=[3]+2[3-k]$.
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\S2, Propositions 2.2 and 2.6; arXiv:1107.1010.
+\end{thebibliography}
+\end{document}

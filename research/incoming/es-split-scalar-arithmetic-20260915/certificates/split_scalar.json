@@ -1,0 +1,56 @@
+{
+  "cyclic_support_pairs": 5460,
+  "ordinary_inverse": {
+    "1": {
+      "denominator": 9,
+      "numerator": -2
+    },
+    "3": {
+      "denominator": 9,
+      "numerator": 1
+    },
+    "5": {
+      "denominator": 9,
+      "numerator": 4
+    }
+  },
+  "saturated_target": {
+    "1": {
+      "denominator": 1,
+      "numerator": 2
+    },
+    "3": {
+      "denominator": 1,
+      "numerator": 1
+    },
+    "5": {
+      "denominator": 1,
+      "numerator": 0
+    }
+  },
+  "split_product": {
+    "0": {
+      "denominator": 1,
+      "numerator": 1
+    },
+    "2": {
+      "denominator": 1,
+      "numerator": 0
+    },
+    "4": {
+      "denominator": 1,
+      "numerator": 0
+    }
+  },
+  "target": {
+    "1": {
+      "denominator": 1,
+      "numerator": 2
+    },
+    "3": {
+      "denominator": 1,
+      "numerator": 1
+    }
+  },
+  "type": "cyclic labels 0..5, additive convolution; missing keys are tau"
+}

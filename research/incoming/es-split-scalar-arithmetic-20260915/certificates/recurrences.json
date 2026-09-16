@@ -1,0 +1,21 @@
+{
+  "amplitude_collision": {
+    "one_prime_squared": {
+      "1": 1,
+      "19": 1,
+      "22": 1,
+      "25": 1,
+      "7": 1
+    },
+    "two_distinct_primes": {
+      "1": 1,
+      "19": 2,
+      "22": 3,
+      "25": 1,
+      "7": 2
+    }
+  },
+  "max_residual": 31,
+  "pair_instances": 9400,
+  "single_factor_instances": 5684
+}
