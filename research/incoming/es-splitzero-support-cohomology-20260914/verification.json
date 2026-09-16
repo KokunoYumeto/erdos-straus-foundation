@@ -1,0 +1,16 @@
+{
+  "date":"2026-09-14",
+  "public_checker":"check_core.py",
+  "public_checks":428412,
+  "public_scope":"Original nine-divisor mixed relations and complete integral inverse fixtures, local marginal obstruction, exact original quotient norm, scalar-one Koszul blocks r=0..7, all stated small arithmetic examples, and complete first-half scan through1500",
+  "commands":["python check_core.py --bound 1500 --out public_checks.json","python -O check_core.py --bound 1500 --out public_checks_optimized.json"],
+  "normal_returncode":0,
+  "optimized_returncode":0,
+  "public_json_byte_identical":true,
+  "public_json_sha256":"8ad0c7e3731aa8f5a5c55bce072182bd1ef492087a25ed97a16bba967020a177",
+  "scan":{"primes":54,"shells":9531,"original_states":412838,"hits":1920,"occupied_shells":685,"empty_shells":8846},
+  "git_blobs":{"check_core.py":"d5eb56d12c8e387f09b513c0634bad624506351a","preprint_mixed.tex":"12a4686d7d833a8e57261b157e533be13520db16","preprint_resolution.tex":"c61fbe59495eb1070733bd865bcd14298384672a"},
+  "documents":{"preprint_mixed_pages":3,"preprint_resolution_pages":3,"status":"Two-pass pdflatex builds; rendered pages inspected; complete proof text included"},
+  "larger_local_checker":{"conditions":507774,"included_in_this_PR":false,"scope":"Additional complete split double-complex matrices, source metrics, jet cochain/cone comparisons, support transitions, detailed finite state records and six negative controls. Local normal/optimized JSON agrees. Not the same test scope as the compact public checker."},
+  "nonclaims":["No independent mathematical review","No Lean build","No new ES prime coverage","No uniform arithmetic positivity","No historical priority"]
+}

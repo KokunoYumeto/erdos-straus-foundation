@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-14",
+  "zeta_commit": "8fd2157e8b41783224b42781699432d824ec0c15",
+  "ES_base": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "sources": [
+    {"repository":"KokunoYumeto/zeta-function-research-reader","path":"formal/splitzero/DERIVED_MATHEMATICS.md","blob":"fe05d32ccd314daac7c59d225c9cac3d4c1bf3d3","read_scope":"Sections 1-4 and 6: original reconstruction, incoming quotient, receiving-boundary and jet interfaces. No new formal-source CI replay."},
+    {"repository":"KokunoYumeto/zeta-function-research-reader","path":"workbenches/splitzero-tandem/continuations/20260914-original-kernel-web/08_ORIGINAL_MIXED_CONTROL.tex","blob":"bfcaccb3b39ca73e7560ed65d87cef5e82354994","read_scope":"Full returned source; original mixed-kernel metric domain retained. Its analytic estimates are not finite arithmetic assumptions."},
+    {"repository":"KokunoYumeto/zeta-function-research-reader","path":"workbenches/splitzero-tandem/continuations/20260914-original-kernel-web/13_ARITHMETIC_MIXED_TRANSFER.tex","blob":"b6cfec2ac9517acc378aa02686ada6e7923ef381","read_scope":"Lines 1-250, particularly AMT1-10: original source metrics, minimum sections and relation differences; no audit of the whole analytic source."}
+  ],
+  "primary_antecedents": [
+    {"author":"Maszczyk, Tomasz","year":2009,"title":"Distributive lattices and cohomology","locator":"arXiv:0811.3997v2, section 2.1 (5)-(8), section 2.2 and section 3 Corollary 5","used":"Classical intersection/quotient complex and distributivity context. All non-distributive cohomology groups used here are proved directly."},
+    {"author":"The Stacks Project Authors","title":"The Koszul complex","locator":"Tag 0621, Definition 15.29.1 and Lemma 15.29.5","used":"Classical contraction identity. The exact arithmetic basis and signs are independently supplied."},
+    {"author":"Elsholtz, C., and Tao, T.","year":2013,"title":"Counting the number of solutions to the Erdos-Straus equation on unit fractions","locator":"arXiv:1107.1010, section 2, Propositions 2.2 and 2.6","used":"Inherited Type I/II coordinates; displayed rational gate and ordered inverse are recalculated."}
+  ],
+  "novelty_scope":"Targeted content search found the classical intersection-complex antecedent. No historical priority for the exact arithmetic application is established.",
+  "not_claimed":["All linked reader pages read","All source CI or Lean replayed","Analytic Gamma norm identified with counting norm","General Cech or Koszul theory newly invented","ES or RH proved"]
+}
