@@ -53,7 +53,7 @@
     "No Lean build",
     "No independent mathematical review",
     "No historical priority conclusion",
-    "No remote PR created"
+    "No direct modification of main or another research branch"
   ],
   "normal_optimized_byte_identical": true,
   "post_replay_text_only_correction": "Separate J_D (full integer cyclic norm) from N_D (relative norm) in D1; no code or mathematical certificate changed.",

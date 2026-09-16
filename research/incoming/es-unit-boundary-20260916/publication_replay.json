@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-16",
+  "repository": "KokunoYumeto/erdos-straus-foundation",
+  "branch": "research/unit-boundary-20260916",
+  "base_commit": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "transplanted_commits": [
+    "fe5a6e0",
+    "fc53338"
+  ],
+  "source_record": {
+    "bundle_sha256": "6dada83de71181c179db37ab8c9ac80970b151447247956fe99deb246faec701",
+    "unit_patch_sha256": "277404417b87801ecb77c85b5eb6a83166da3c94dbb2677c21522527f236baec",
+    "notation_patch_sha256": "aa23469bb271f98c043c18c59c53094be91d7bb9df402673bdff222164f8875c",
+    "omitted_already_published_padic_patch_sha256": "f0cec087931c55540983907eb934ff662c430815dca3f2df656c479f1184a380"
+  },
+  "replay": {
+    "normal": {
+      "new_checks": 232268,
+      "antecedent_check_invocations": 1492552,
+      "negative_controls": 8
+    },
+    "optimized": {
+      "new_checks": 232268,
+      "antecedent_check_invocations": 1492552,
+      "negative_controls": 8
+    },
+    "separate_checker": {
+      "checks": 188717,
+      "imports_main_or_antecedent": false
+    },
+    "certificate_objects_semantically_equal": [
+      "checks.json",
+      "examples.json",
+      "independent.json",
+      "negative_controls.json",
+      "scan_summary.json",
+      "structural.json"
+    ]
+  },
+  "finite_scope": {
+    "bound": 2000000,
+    "hard_primes": 4519,
+    "branches": 37289,
+    "states": 4583,
+    "occupied_branches": 3097,
+    "occupied_primes": 2411,
+    "prior_union_branches": 3073,
+    "prior_union_primes": 2402,
+    "union_with_new_branches": 3074,
+    "union_with_new_primes": 2403,
+    "new_branch_prime": [1721521, 6]
+  },
+  "publication_changes": [
+    "Transplanted only the unit-boundary and notation-correction patches onto upstream main",
+    "Added a current public PR description",
+    "Replaced stale publication status while retaining publication_attempt.json as historical provenance"
+  ],
+  "nonclaims": [
+    "No proof of the Erdos-Straus conjecture",
+    "No new global prime verification range",
+    "No new Lean build",
+    "No independent mathematical review",
+    "No historical-priority conclusion"
+  ]
+}

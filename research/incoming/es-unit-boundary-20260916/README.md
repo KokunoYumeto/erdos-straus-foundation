@@ -77,18 +77,16 @@ A fresh archive replay and document rendering are recorded separately.
 
 ## Publication status
 
-This directory is prepared for an additive draft PR. The authenticated connector
-reports account push permission, but the session exposes GET-only operations;
-no authenticated local CLI helper was available and the local Git remote lookup
-failed DNS resolution. **No remote branch, commit or PR was created in this session.**
+The recovered unit-boundary commits were transplanted onto upstream `main` without
+the already-published p-adic root commit. They are published additively on branch
+`research/unit-boundary-20260916` under
+`research/incoming/es-unit-boundary-20260916/`. The p-adic predecessor remains in
+PR11; the separate relative-boundary source remains on its own branch. Neither
+`main` nor another research branch is rewritten.
 
-The accompanying delivery contains a real portable local Git history: one commit
-records the preceding unpushed p-adic tranche, a second records this continuation,
-and a final notation correction is separately recorded.
-It is explicitly a source-only history, not a clone of upstream main. A checked
-`git format-patch` series and a publication script allow an authenticated worker to
-create the requested research branch and draft PR without rewriting main.
-The actual local hashes and bundle checks are in the publication receipt.
+`publication_attempt.json` is retained as a historical record of the earlier
+failed publication environment. `publication_replay.json` records the successful
+source transplantation and fresh local replay.
 
 ## Nonclaims and attribution
 
