@@ -1,0 +1,80 @@
+{
+  "archive": {
+    "manifest_entries_verified": 31,
+    "manifest_sha256": "d18c4056016a4db1195db6c176c0a9c1b6eb8182adbec3b2d133f6257c2b81df",
+    "sha256": "121d558874f89716eef50bcedb28d575dd33194177961566968383e3aa53549f"
+  },
+  "base_commit": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+  "branch": "research/es-mixed-support-20260914",
+  "certificate_comparison": {
+    "certificate_files": 9,
+    "gzip_byte_identical": true,
+    "json_semantically_equal": true,
+    "json_supplied_vs_replay_raw_bytes_equal": false,
+    "json_supplied_vs_replay_lf_normalized_bytes_equal": true,
+    "normal_vs_optimized_raw_bytes_equal": true,
+    "portability_note": "The supplied JSON uses LF and the audited Windows replay uses CRLF. Parsed values and LF-normalized bytes agree exactly."
+  },
+  "corrections_before_publication": [
+    "Included all nine exact certificate files and all supplied readable PDF/PNG previews omitted by the text-only integration patch.",
+    "Replaced machine-local commands and publication-tool status prose with repository-relative, public-facing records.",
+    "Qualified the certificate comparison as semantic and LF-normalized identity across platforms; only the deterministic gzip ledger is raw-byte identical to the supplied artifact.",
+    "Removed one extra blank line at the end of MORPHISMS.md.",
+    "Made the typed comparison with PR #7 explicit: R^3 maps by A to R^Omega, then by Pi to arithmetic H^0 with epsilon s A = Pi A; no identification with PR #7 H^-1 is asserted."
+  ],
+  "environment": {
+    "audited_on": "2026-09-16",
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "python": "CPython 3.13.9",
+    "randomness": "none",
+    "third_party_python_packages": "none"
+  },
+  "finite_result": {
+    "candidates": 9702,
+    "checks": 104179,
+    "hard_lower": {
+      "denominator": 1890375,
+      "numerator": 607462
+    },
+    "negative_controls": 6,
+    "scan": {
+      "certified_choices": 1693,
+      "certified_shells": 685,
+      "occupied_shells": 685,
+      "original_states": 412838,
+      "primes": 54,
+      "shells": 9531,
+      "strict_ternary_choices": 0,
+      "strict_ternary_shells": 0,
+      "support_choices": 20177
+    }
+  },
+  "integration_patch_sha256": "f00d12aa6b6129a1eb15a67713e17469f6332af5488382c91742e4e1554d4cd8",
+  "nonclaims": [
+    "The bounded scan is not a proof of universal Erdős–Straus occupancy.",
+    "No new prime-coverage result is claimed.",
+    "No Lean build or independent mathematical review is claimed.",
+    "The scalar mixed-support form is not identified with PR #7 native H^-1 cohomology."
+  ],
+  "replay_commands": [
+    [
+      "python",
+      "verify.py",
+      "--bound",
+      "1500",
+      "--out",
+      "generated"
+    ],
+    [
+      "python",
+      "-O",
+      "verify.py",
+      "--bound",
+      "1500",
+      "--out",
+      "generated_optimized"
+    ]
+  ],
+  "repository_path": "research/incoming/es-mixed-support-20260914/",
+  "status": "finite assertion reproduced in the stated range; mathematical source retained at its proved scope"
+}

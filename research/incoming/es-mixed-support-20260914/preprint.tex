@@ -1,0 +1,253 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\title{A ternary mixed-support certificate for an Erd\H{o}s--Straus shell}
+\author{The Clankers}
+\date{14 September 2026 --- research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+On one complete marked divisor source, three explicitly overlapping observations
+have a positive signed direction although each two-observation restriction is
+negative definite. The certificate uses only mixed gcd moments through cubic
+order and returns an original positive integral witness. We give the full
+matrix, rational trial vector, support definitions and reconstruction.
+The original counting metric and mixed cross terms are retained. This is a
+strict sufficient-test improvement, not a universal Erd\H{o}s--Straus theorem.
+\end{abstract}
+
+\paragraph{Original states.}
+Let $p\equiv1\pmod4$, $p/4<a<p/2$, $R=4a-p$, and $\gcd(pa,R)=1$.
+For $a=\prod q_i^{e_i}$ retain every $c\in\{E,M\}$ and
+$\beta_i\in[-e_i,e_i]_{\mathbb Z}$. Put
+\[
+ u=\prod_iq_i^{e_i+\beta_i},\quad g_E=4u+1,\quad g_M=u+a,\quad
+ D=R/\gcd(R,g_c),\quad x=1/D.
+\]
+The positive rational triples are
+\[
+ E:\ \left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\qquad
+ M:\ \left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+\]
+They satisfy $(RY-pa)(RZ-pa)=p^2a^2$ and hence have reciprocal sum $4/p$.
+Reduction modulo $R$ shows that both nonfirst reduced denominators equal $D$.
+Thus a hit is exactly $D=1$; every failure has odd $D\ge3$.
+These marked Type I/II coordinates are inherited [1].
+
+\paragraph{Mixed observations, not independent sources.}
+For original counting space $\mathbb R^\Omega$ and specified functions
+$f_0,\ldots,f_{r-1}$ on the same states, define
+\[
+ (Av)_\alpha=\sum_i v_if_i(\alpha),\quad K=A^*A,\qquad
+ J_{ij}=\sum_\alpha(x_\alpha-1/3)f_i(\alpha)f_j(\alpha).
+ \tag{1}
+\]
+These are signed localizing forms [2]. Their cross terms record actual overlap.
+The kernel of $K$ is exactly $\ker A$ and lies in $\ker J$. The original
+norm on the coefficient quotient is $v^*Kv$, not an assigned identity matrix.
+The source's joint Schur calculation [3, JSA12--JSA20] likewise keeps its
+complete cross block; its analytic measure is not identified with (1).
+
+\begin{theorem}[Positivity, count and a strict ternary test]
+Let $H$ count original states with $D=1$. Then $n_+(J)\le H$.
+If $|(Av)_\alpha|^2\le M(v)$ on every possible successful pattern, then
+\[
+ H\ge\left\lceil\frac{3v^*Jv}{2M(v)}\right\rceil\qquad(M(v)>0).
+ \tag{2}
+\]
+For a symmetric $3\times3$ matrix with negative diagonal entries and positive
+three two-coordinate principal determinants, a positive direction exists
+exactly when its full determinant is positive. In that case its inertia is
+$(1,2,0)$ while all two-coordinate restrictions are negative definite.
+\end{theorem}
+\begin{proof}
+Failures contribute nonpositively to $v^*Jv$, while hits contribute
+$(2/3)|(Av)_\alpha|^2$. This proves (2). Restricting $\Pi A$ to a positive
+subspace of $J$ is injective: a vector with zero successful coordinates has
+nonpositive form. Hence its dimension is at most $H$.
+For the ternary assertion write $J=\left(\begin{smallmatrix}-a&b^*\\b&C\end{smallmatrix}\right)$.
+The invertible substitution $s=t-b^*z/a$ gives
+\[
+ (t,z)^*J(t,z)=-a s^2+z^*(C+bb^*/a)z.
+ \tag{3}
+\]
+The latter $2\times2$ matrix has negative diagonal entries by the two-coordinate
+conditions, and determinant $-\det J/a$. This proves all inertia claims.
+\end{proof}
+
+\newpage
+\paragraph{Actual arithmetic certificate.}
+Use the previously certified prime [4]
+\[
+\begin{split}
+ p&=2671180768668258904496300170662649\\
+ a&=(p+135)/4=2^5\,431^3\,457^3\,7229^4,\quad R=135.
+\end{split}
+\]
+Its complete original source has $2\cdot11\cdot7\cdot7\cdot9=9702$ states.
+Define supports without referring to successful-state labels:
+\[
+ \mathcal E=\{c=E\},\quad \mathcal B=\{\beta_{457}>0\},\qquad
+ f_0=1,\quad f_1=x\mathbf1_{\mathcal E},\quad f_2=x\mathbf1_{\mathcal B}.
+ \tag{4}
+\]
+The third predicate means $v_{457}(u)>3$. It is an original bounded-exponent
+condition, not a successful-state label.
+Let $S_k^{ij}$ denote the sum of $\gcd(R,g)^k$ in the four cells
+$(\mathbf1_E,\mathbf1_B)=(i,j)$. Exact enumeration gives
+\[
+\begin{array}{c|rrrr}
+(i,j)&S_0&S_1&S_2&S_3\\\hline
+(0,0)&2772&19480&435596&14842144\\
+(0,1)&2079&14819&332487&11329307\\
+(1,0)&2772&19474&435524&14841442\\
+(1,1)&2079&14805&368151&17899341
+\end{array}\tag{5}
+\]
+These moments also follow from multiplying the four actual bounded exponent
+polynomials modulo 135, retaining the $457$-half flag. This independent
+calculation is included in the verifier.
+The full signed matrix is
+\[
+ \boxed{3R^3J=
+ \begin{pmatrix}
+ -20121056100&-299246400&-256139010\\
+ -299246400&-10273776&3997638\\
+ -256139010&3997638&-6900186
+ \end{pmatrix}.}\tag{6}
+\]
+The two-coordinate determinants are
+\[
+ 117170815341873600,\quad73231837162654500,\quad54909855743292,
+\]
+whereas the full determinant is
+\[
+ 799917306693954510200400>0.\tag{7}
+\]
+Thus every pair of the three \emph{specified} observations fails, and their
+full mixture succeeds. This does not exclude a different reparametrization
+that names an already combined function as one column.
+
+An explicit rational positive trial is
+\[
+ F=\frac{-1+36x\mathbf1_E+36x\mathbf1_B}{71}.
+\]
+At $D=1$ it takes only the values $-1/71,35/71,1$, so $|F|\le1$ there.
+Multiplying (6) by $(-1,36,36)$ gives
+\[
+ \boxed{\frac32\sum_\alpha(x_\alpha-1/3)F_\alpha^2
+       =\frac{607462}{1890375}>0.}\tag{8}
+\]
+Theorem 1 proves a positive integral ES witness. Deleting just the mixed
+entry would give the negative value $-1639754/17013375$ instead, losing the proof.
+The older scalar first-degree test on $(1,x)$ fails on the combined source
+and on each channel separately, as recalculated in the certificate [4].
+
+\paragraph{An actual marked return.}
+One reconstructed hit has
+\[
+\begin{gathered}
+ \beta=(5,-2,3,-4),\quad u=4020447794899891321856,\quad c=E,\\
+ h=431,\quad r=3054207776,\quad s=507303010196865101041,\\
+ \kappa=60432156109394470448106286277616196397479.
+\end{gathered}
+\]
+Directly, $a=hrs$, $u=hr^2$ and $135\kappa=pr+s$.
+Therefore $(a,hs\kappa,phr\kappa)$ is a positive integer triple with
+reciprocal sum $4/p$. The ordered inverse is $u=a^2/(RY-pa)$.
+Every other returned coordinate follows by the stated gcd normalization;
+none of the denominator order, prime exponents or channel is suppressed.
+
+\newpage
+\paragraph{Original metric and all source information.}
+The actual positive source Gram for (4) is
+\[
+ K=R^{-2}\begin{pmatrix}
+176818950&4627665&3999240\\
+4627665&803675&368151\\
+3999240&368151&700638
+\end{pmatrix}.
+\]
+It is nonsingular: the actual rows $(M,1),(E,1),(M,457^4)$ give independent
+coordinate readings. They recover the coefficients from the image by
+$c_0=F(M,1)$, $c_1=(F(E,1)-c_0)/x(E,1)$ and
+$c_2=(F(M,457^4)-c_0)/x(M,457^4)$.
+The full inverse of an arbitrary source decomposition retains its orthogonal
+remainder $(I-P_A)F$. It is not a claim that three observations encode all
+9702 original states.
+
+For a budget split $e=f+b$, the complete fibre over $\beta$ is
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),\quad
+ \eta=\beta-\xi.
+\]
+Its size $n_\beta$ is the product of these interval lengths. Duplicating source
+values into occurrences with weight $1/n_\beta$ is an isometry; its adjoint
+averages each fibre. Thus it preserves $K,J$ and all their mixed entries.
+The upper-half predicate is evaluated on $\beta=\xi+\eta$, not on $\xi$.
+The tested split $f=(5,2,2,4),b=(0,1,1,0)$ has 44550 occurrences but original
+mass 9702; seven raw hit occurrences have arithmetic mass three.
+
+\paragraph{Uniform mixed filters, and a necessary correction.}
+The inherited polynomials [4]
+\[
+ \Phi_j(x)=x\prod_{\nu=1}^j\frac{(2\nu+1)x-1}{2\nu},\qquad
+ \varepsilon_j=\frac1{2^jj!(2j+3)}
+\]
+have one-sided factorial error on the odd reciprocal spectrum. Consequently,
+for \emph{any} feature synthesis,
+\[
+ 0\preceq(-1)^j\{A^*\Phi_j(X)A-A^*\Pi A\}
+       \preceq\varepsilon_jK.\tag{9}
+\]
+This follows by evaluating on a coefficient vector and using the pointwise
+bound with weight $|(Av)_\alpha|^2$. Passing to the quotient with its original
+$K$ metric makes $A$ isometric. Direct sums over arbitrary growing prime-indexed
+feature spaces therefore retain the same operator-norm error $\varepsilon_j$.
+This bound controls mixed observations, not their unknown positive lower limit.
+
+One must filter \emph{before} compression. If $\bar A$ is isometric,
+$C=\bar A^*X\bar A$ and $P_A=\bar A\bar A^*$, then
+\[
+ \bar A^*X^2\bar A-C^2
+ =\bar A^*X(I-P_A)X\bar A=R_A^*R_A,\quad R_A=(I-P_A)X\bar A.
+\]
+Insert $I=P_A+(I-P_A)$ to prove the identity. It vanishes precisely on an
+$X$-invariant feature subspace. The actual empty shell $p=37,a=18,R=35$
+has two exterior states $u=1,12$ with $D=7,5$. On their constant line,
+\[
+ C=6/35,\quad \bar A^*\Phi_3(X)\bar A=0,
+ \quad \Phi_3(C)=17/343000>0.
+\]
+The latter ordering would give a false positivity test. Its discarded quadratic
+relation norm is $1/1225$.
+
+\paragraph{Scope and reproduction.}
+The accompanying standard-library \texttt{verify.py} and
+\texttt{prime\_certificate.json} reproduce (5)--(8), the full 9702-state
+census, all three hits and their original inverse data. Primality is checked by
+a recursive complete-$p-1$ order certificate (eight internal nodes, fifteen
+trial-division leaves). The bounded scan through $p\le1500$ checks 9531 shells
+and 20177 support choices without a false positive; it supplies no new prime
+coverage. The example (6) is not claimed least. Localizing matrices and Schur
+identities are classical; historical priority for this exact application is not
+asserted. Universal positivity in at least one shell of every prime remains
+unproved. All displayed sufficient implications have complete proofs above.
+
+\begingroup\footnotesize
+\begin{enumerate}
+\item Elsholtz, C., \& Tao, T. (2013). \emph{J. Aust. Math. Soc., 94}(1), 50--105.
+  arXiv:1107.1010, \S2, Propositions 2.2 and 2.6.
+\item Lasserre, J.-B. (2011). \emph{SIAM J. Optim., 21}(3), 864--885.
+  arXiv:1009.0125v3, (2.3)--(2.4), Theorem 3.2.
+\item The Clankers (2026). \emph{Joint Gamma Schur Return},
+  \texttt{JOINT\_SCHUR\_EXACT\_INTEGRATION.tex}, JSA12--JSA20;
+  Zeta repository commit \texttt{d1191f9c...ca7ff}.
+\item The Clankers (2026). \emph{Discrete-spectrum positivity and hard-shell
+  continuations}, supplied 14 September package, \texttt{core.tex} and
+  \texttt{second\_hard\_prime.json}. Exact pins accompany this source.
+\end{enumerate}
+\endgroup
+\end{document}

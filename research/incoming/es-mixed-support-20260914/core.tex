@@ -1,0 +1,487 @@
+\section{Original arithmetic and the question being tested}
+Fix an integer $p\equiv1\pmod4$ and a shell
+\[
+ p/4<a<p/2,\quad R=4a-p,\quad \gcd(pa,R)=1,\qquad
+ a=\prod_{i=1}^tq_i^{e_i}.
+\]
+Primality is needed for the usual complete-prime-row equivalence, but the
+individual candidate identities below require only these displayed conditions.
+An original state $\alpha$ retains $(p,a,R,c,\beta)$, the ordered prime list,
+$-e_i\le\beta_i\le e_i$, and
+\[
+ u=\prod_iq_i^{e_i+\beta_i},\quad c\in\{E,M\},\quad
+ g_E=4u+1,\quad g_M=u+a,\quad
+ D_\alpha=\frac R{\gcd(R,g_c)},\quad x_\alpha=D_\alpha^{-1}.
+ \tag{A1}
+\]
+The canonical source has counting measure on these labels, not on distinct
+residues, split occurrences or sorted triples. In particular,
+\[
+ x_\alpha\in\{1,1/3,1/5,\ldots\},\quad
+ H=\#\{\alpha:D_\alpha=1\}.
+ \tag{A2}
+\]
+All failed states have $x\le1/3$ because $R$ is positive and odd.
+
+The inherited positive rational triples are
+\[
+ E:\ \left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\qquad
+ M:\ \left(a,\frac{p(a+a^2/u)}{R},\frac{p(a+u)}{R}\right).
+ \tag{A3}
+\]
+They obey $(RY-pa)(RZ-pa)=p^2a^2$, hence have reciprocal sum $4/p$.
+The gcds of the two nonfirst numerators with $R$ are both
+$\gcd(R,g_c)$: reduce modulo $R$ using $4a\equiv p$ and multiply by the
+units $a,u,p,4$ as required. Thus their reduced denominators are exactly $D$.
+At a hit let $d_0=\gcd(a,u)$ and
+\[
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0),\quad
+ a=hrs,\quad u=hr^2,\quad \gcd(r,s)=1.
+\]
+Prime valuations prove all integrality assertions. The original ordered return is
+\[
+ E:\ \kappa=(pr+s)/R,\quad(a,hs\kappa,phr\kappa),\qquad
+ M:\ \lambda=(r+s)/R,\quad(a,phs\lambda,phr\lambda).
+ \tag{A4}
+\]
+The inverse recovers $u=a^2/(RY-pa)$ in E and $u=pa^2/(RY-pa)$ in M,
+then every $\beta_i=v_{q_i}(u)-e_i$. These are inherited Type I/II coordinates
+\cite[\S2, Propositions 2.2 and 2.6]{ET}; no new parametrization is claimed.
+The middle reversal $u\mapsto a^2/u$ and an exterior ordering bit, when used,
+remain distinct operations. No positive-Koide restriction is imposed in the new
+mixed test.
+
+\section{One original source, several overlapping observations}
+Let $\Omega$ be a finite set of original states, and set
+$\mathcal H=\mathbb R^\Omega$ with its original counting inner product.
+Take explicit real functions $f_0,\ldots,f_{r-1}$ on this same set. Their
+supports may overlap. Define the synthesis map and its two pullback forms:
+\[
+ A:\mathbb R^r\to\mathcal H,\quad (Ac)_\alpha=\sum_i c_if_i(\alpha),
+ \quad K=A^*A,\quad
+ J=A^*(X-\tfrac13I)A,\quad Xe_\alpha=x_\alpha e_\alpha.
+ \tag{S1}
+\]
+Thus
+\[
+ K_{ij}=\sum_\alpha f_i(\alpha)f_j(\alpha),\qquad
+ J_{ij}=\sum_\alpha(x_\alpha-\tfrac13)f_i(\alpha)f_j(\alpha).
+ \tag{S2}
+\]
+Every cross term is on the original arithmetic source. Separate labels for two
+columns do not make their images orthogonal.
+These are finite signed localizing forms, a classical construction
+\cite[\S2, equations (2.3)--(2.4); Theorem 3.2]{Lasserre}.
+The particular support functions and arithmetic certificates below are the
+new application, not a claim to have invented that construction.
+
+\begin{theorem}[Mixed-support positivity and multiplicity]
+For the actual forms (S1), $\ker K=\ker A\subseteq\ker J$ and
+\[
+ n_+(J)\le\operatorname{rank}(\Pi A)\le H,
+ \quad \Pi e_\alpha=\mathbf1_{D_\alpha=1}e_\alpha.
+ \tag{S3}
+\]
+In particular, a coefficient vector with $c^*Jc>0$ forces an original hit.
+If the explicitly proved bound $|(Ac)_\alpha|^2\le M(c)$ holds on all possible
+successful patterns, then
+\[
+ \boxed{H\ge\left\lceil\frac{3c^*Jc}{2M(c)}\right\rceil}
+ \quad(M(c)>0).
+ \tag{S4}
+\]
+No occupied support, successful state, or unknown positive contribution is
+assumed in calculating $J$ or in the pattern bound.
+\end{theorem}
+\begin{proof}
+The equality of kernels follows from $c^*Kc=\|Ac\|^2$.
+On $D=1$ the multiplier $x-1/3$ equals $2/3$; on every other state it is
+nonpositive. Thus
+\[
+ c^*Jc\le\frac23\sum_{D_\alpha=1}|(Ac)_\alpha|^2.
+\]
+This proves (S4). On a subspace where $J$ is positive definite, $\Pi A$ is
+injective: a nonzero vector in its kernel would have nonpositive form by the
+same calculation. Taking dimensions proves (S3).
+\end{proof}
+
+\paragraph{Kernels, inverses and actual source norms.}
+The image of $A$ has the quotient norm $c^*Kc$ on
+$V=\mathbb R^r/\ker A$. In this metric $\bar A:V\to\operatorname{im}A$ is
+an isometry. The inverse on the image is the coefficient class of any solution
+of $Ac=f$; all solutions are $c_0+\ker A$. Exact row reduction gives a solution
+and every kernel generator. If $K$ is invertible, the inverse is $K^{-1}A^*$.
+For arbitrary original $f$ the discarded component is explicitly
+$(I-P_A)f$, where $P_A$ is the orthogonal projection onto $\operatorname{im}A$.
+The full return keeps this component, rather than identifying all original
+states with an $r$-coordinate observation.
+
+If several independently supplied support functions are first assembled by
+addition, the larger synthesis map
+$\bigoplus_i\mathbb R^{\operatorname{supp}f_i}\to\mathbb R^\Omega$ has
+one fibre-sum condition at each original coordinate. Its kernel is the full
+space of those sums zero, with primitives
+$\sum_{i\ne i_0}v_i(e_i-e_{i_0})$ at that coordinate. Cancellation of values
+retains the support union in the SplitZero carrier; it is not external absence.
+Restricting this larger map to the specified column functions gives (S1).
+
+\paragraph{The source comparison actually used.}
+The pinned Zeta proof calculates a full joint covariance
+$\left(\begin{smallmatrix}K&C\\C^*&B\end{smallmatrix}\right)$, its Schur
+complements, and the original relation-valued minimum-section correction
+\cite[JSA12--JSA20]{Joint}. Our positive $K$ and signed $J$ are not those
+analytic Gamma matrices. We apply their same-source/cross-term discipline,
+and prove the signed elimination needed here directly. No Gamma asymptotic,
+theta-source norm, or analytic endpoint claim is imported by analogy.
+
+\section{The exact third-support contribution}
+The following calculation keeps the first column and both other support
+columns in their stated order. Write
+\[
+ J=\begin{pmatrix}-a&b^*\\b&C\end{pmatrix},\quad a>0.
+\]
+Then the reversible coordinate change
+\[
+ (t,z)\mapsto(s,z),\quad s=t-b^*z/a,
+ \qquad(t,z)=(s+b^*z/a,z)
+ \tag{S5}
+\]
+gives
+\[
+ (t,z)^*J(t,z)=-a|s|^2+z^*Sz,
+ \qquad S=C+bb^*/a.
+ \tag{S6}
+\]
+This is a congruence with the original signed form, not a positive-norm
+orthogonal projection. It preserves inertia and has no unspecified scale.
+
+\begin{theorem}[Strict ternary criterion]
+For a real symmetric $3\times3$ form whose three diagonal entries are negative
+and whose three two-coordinate principal determinants are positive,
+\[
+ \boxed{J\text{ has a positive direction}\iff\det J>0.}
+ \tag{S7}
+\]
+When this holds its inertia is $(1,2,0)$: exactly one positive and two negative
+directions. All two-column restrictions remain negative definite.
+\end{theorem}
+\begin{proof}
+The two diagonal entries of $S$ in (S6) are negative by the principal-minor
+conditions involving the first coordinate. Also $\det J=-a\det S$.
+A $2\times2$ symmetric matrix with negative diagonal entries is negative
+semidefinite exactly when its determinant is nonnegative. A negative
+determinant gives one positive and one negative direction. Equation (S6)
+proves all assertions. Zero pivots and vanishing principal determinants are
+excluded from this strict statement, not inverted; (S3)--(S4) still apply
+there using their actual kernels.
+\end{proof}
+
+The mixed condition is $S_{12}^2>S_{11}S_{22}$, with the complete conditional
+entry $S_{12}=C_{12}+b_1b_2/a$. Dropping $C_{12}$ or replacing the three-column
+space by the common-polynomial diagonal restriction changes the problem.
+The strict comparison refers to the three given coordinate subspaces.
+It does not assert that every imaginable two-function reparametrization fails:
+one may name an already combined function as a new column, provided its full
+three-term decomposition remains attached.
+
+\section{A genuine three-support certificate on the original hard shell}
+The arithmetic integer and its exact factorization are
+\[
+\begin{split}
+ p&=2671180768668258904496300170662649,\\
+ a&=667795192167064726124075042665696
+     =2^5\,431^3\,457^3\,7229^4,\\
+ R&=135,
+ \qquad p=4a-135\equiv289\pmod{840}.
+\end{split}\tag{E1}
+\]
+The attached complete-order certificate proves $p$ prime; the arithmetic
+positivity proof below already holds without appealing to its primality.
+This is the second hard shell from the preceding tranche \cite{Prior}, reused
+for a genuinely different support test rather than called a new prime.
+There are $2\cdot11\cdot7\cdot7\cdot9=9702$ original states.
+
+Define the following supports using only the channel and original exponent:
+\[
+ \mathcal E=\{c=E\},\quad
+ \mathcal B=\{\beta_{457}>0\},\qquad
+ f_0=1,\quad f_1=x\mathbf1_{\mathcal E},\quad
+ f_2=x\mathbf1_{\mathcal B}.
+ \tag{E2}
+\]
+These supports are the whole source, the exterior channel, and the upper
+half of one actual exponent interval. The latter overlaps both channels.
+It means $v_{457}(u)>3$, not membership in a set of already known witnesses.
+
+For $i,j\in\{0,1\}$, let $S_k^{ij}$ sum $\gcd(R,g)^k$ over the cell
+$(\mathbf1_{\mathcal E},\mathbf1_{\mathcal B})=(i,j)$.
+All data through cubic order are as follows:
+\[
+\begin{array}{c|rrrr}
+(i,j)&S_0&S_1&S_2&S_3\\\hline
+(0,0)&2772&19480&435596&14842144\\
+(0,1)&2079&14819&332487&11329307\\
+(1,0)&2772&19474&435524&14841442\\
+(1,1)&2079&14805&368151&17899341
+\end{array}\tag{E3}
+\]
+These are common-state mixed moments, not products of marginal moments.
+Writing $S_k^E=S_k^{10}+S_k^{11}$ and similarly for $B$, the exact entries are
+\[
+\begin{aligned}
+(3R^3J)_{00}&=R^2(3S_1-RS_0),&
+(3R^3J)_{01}&=R(3S_2^E-RS_1^E),\\
+(3R^3J)_{02}&=R(3S_2^B-RS_1^B),&
+(3R^3J)_{11}&=3S_3^E-RS_2^E,\\
+(3R^3J)_{22}&=3S_3^B-RS_2^B,&
+(3R^3J)_{12}&=3S_3^{11}-RS_2^{11}.
+\end{aligned}\tag{E4}
+\]
+The complete matrix is
+\[
+ \boxed{3R^3J=
+ \begin{pmatrix}
+ -20121056100&-299246400&-256139010\\
+ -299246400&-10273776&3997638\\
+ -256139010&3997638&-6900186
+ \end{pmatrix}.}\tag{E5}
+\]
+Its three two-coordinate principal determinants are respectively
+\[
+117170815341873600,\quad73231837162654500,\quad54909855743292,
+\]
+and its full determinant is
+\[
+ \boxed{799917306693954510200400>0.}\tag{E6}
+\]
+Thus every two-component restriction fails the signed positivity test,
+whereas all three components have a positive direction.
+The usual scalar degree-one test on $(1,x)$ fails on the full source,
+on E alone and on M alone; their independently recalculated exact forms
+are in the certificate. This is stronger than a counterexample only to
+one aggregated channel test.
+
+A small rational trial vector suffices; no eigenvector approximation enters:
+\[
+ F_\alpha=\frac{-1+36x_\alpha\mathbf1_{\mathcal E}
+                         +36x_\alpha\mathbf1_{\mathcal B}}{71}.
+ \tag{E7}
+\]
+At a hit, its four possible values are $-1/71,35/71,35/71,1$.
+Hence their squares are at most one, independently of which patterns hit.
+Using (E5) yields
+\[
+ \boxed{\frac32\sum_\alpha(x_\alpha-\tfrac13)F_\alpha^2
+      =\frac{607462}{1890375}>0.}\tag{E8}
+\]
+This proves that an original integral witness exists. If just the $12$ cross
+entry is deleted, the same calculation incorrectly becomes
+$-1639754/17013375$. The retained cross term changes the conclusion.
+
+The ordinary source metric, separately, is
+\[
+ K=\frac1{R^2}
+ \begin{pmatrix}
+176818950&4627665&3999240\\
+4627665&803675&368151\\
+3999240&368151&700638
+ \end{pmatrix}.
+ \tag{E9}
+\]
+It is positive definite: source rows $(M,u=1)$, $(E,u=1)$, and
+$(M,u=457^4)$ give independent evaluations of the three columns.
+For $F\in\operatorname{im}A$, recover
+$c_0=F(M,1)$,
+$c_1=(F(E,1)-c_0)/x(E,1)$,
+and $c_2=(F(M,457^4)-c_0)/x(M,457^4)$.
+The full membership test is then $F_\alpha=c_0+c_1f_1(\alpha)+c_2f_2(\alpha)$
+for every original state. This gives an explicit image inverse as well as
+the metric inverse $K^{-1}A^*$.
+
+\paragraph{Finite census, primality, and actual positive return.}
+The retained prime exponents are $(5,3,3,4)$. Direct divisor enumeration and a
+separate bounded multiplication in
+$\mathbb Z[(\mathbb Z/135\mathbb Z)^\times]$, marked by whether the $457$
+exponent exceeds three, give exactly the same table (E3).
+The two channel distributions in defect order $1,3,5,9,15,27,45,135$ are
+\[
+ E:(3,202,266,403,336,617,1212,1812),\qquad
+ M:(0,210,270,406,328,616,1208,1813).
+\]
+All three hits have
+\[
+ \beta=(5,j,3,-4),\quad j\in\{-2,0,2\},\qquad
+ u=2^{10}431^{j+3}457^6.
+\]
+For the first, $j=-2$, the recovered data include
+\[
+ u=4020447794899891321856,\quad h=431,\quad r=3054207776,\quad
+ s=507303010196865101041,
+\]
+\[
+ \kappa=60432156109394470448106286277616196397479,
+ \qquad (X,Y,Z)=(a,hs\kappa,phr\kappa).
+ \tag{E10}
+\]
+The identities $a=hrs$, $u=hr^2$, $135\kappa=pr+s$ and (A4) prove
+positivity and the reciprocal equation. Exact expanded denominators and all
+inverse checks are serialized, not rounded.
+
+The supplied primality proof is independently executed: all eight nontrivial
+nodes give the complete factorization of $n-1$ and a base $b$ satisfying
+$b^{n-1}=1\pmod n$ and
+$\gcd(b^{(n-1)/q}-1,n)=1$ for every prime $q\mid n-1$.
+For each prime divisor $l\mid n$ these conditions force the order modulo $l$
+to be $n-1$, hence $l\ge n$ and $n$ is prime. Fifteen terminal primes are
+checked by exhaustive trial division; there are 23 total nodes.
+The large prime and its primality certificate are inherited from \cite{Prior};
+only the new mixed form is being added.
+
+\section{Finite certificates lifted back to all split supports}
+For an actual budget split $e=f+b$, let $q(\xi,\eta,c)=(\xi+\eta,c)$.
+Its complete inverse fibre is
+\[
+ \max(-f_i,\beta_i-b_i)\le\xi_i\le\min(f_i,\beta_i+b_i),\quad
+ \eta=\beta-\xi,
+\]
+with size the product $n_\alpha$ of these interval lengths.
+Equip the occurrence space with weight $1/n_{q\omega}$ and define
+\[
+ (Uv)_\omega=v_{q\omega},\qquad
+ (EF)_\alpha=\frac1{n_\alpha}\sum_{q\omega=\alpha}F_\omega.
+\]
+Grouping each finite fibre proves $U^*=E$, $EU=I$, and
+$\|F\|^2=\|EF\|^2+\|F-UEF\|^2$. The kernel of $E$ consists of fibre sums
+zero, with the explicit star-difference primitives at every fibre.
+The full source image retains those kernel coordinates on return.
+For any original multiplier $h(X)$ and actual feature synthesis $A$,
+\[
+ \boxed{(UA)^*h(\widetilde X)(UA)=A^*h(X)A.}\tag{W1}
+\]
+Here $\widetilde X$ repeats the original coefficient and every support
+predicate is pulled back through $q$. In particular $\beta_{457}>0$ is tested
+on $\xi+\eta$, not on either summand alone.
+
+The hard-shell check uses $f=(5,2,2,4)$ and $b=(0,1,1,0)$.
+There are 44550 occurrences over 9702 original states. Seven raw hit
+occurrences have weighted mass three. Both $K$ and $J$ return exactly to
+(E5),(E9). Replacing $\beta_{457}>0$ by $\xi_{457}>0$ gives a different form,
+recorded as a rejected false substitution.
+Prime-power boundary degrees also pull back unchanged. In the earlier module
+$J_\alpha=\mathbb Q[z_\ell]/(z_\ell^{v_\ell(D_\alpha)+1})_\ell$,
+top insertion $s$ and constant extraction $\epsilon$ still obey
+$\epsilon s=\Pi$; hence the mixed arithmetic comparison is $\epsilon s A=\Pi A$.
+All supported top lines at failures remain in the source even though this
+particular receiving image is zero. The new quadratic form is not relabelled
+as the dimension of the older residue-cohomology quotient.
+
+\section{Uniform mixed control and the order of compression}
+The previous discrete arithmetic filters are
+\[
+ \Phi_j(x)=x\prod_{\nu=1}^j\frac{(2\nu+1)x-1}{2\nu},\quad
+ \varepsilon_j=\frac1{2^j j!(2j+3)}.
+\]
+At $x=1/(2k+1)$, the value is zero for $1\le k\le j$, otherwise
+$(-1)^j\binom{k-1}{j}/(2k+1)^{j+1}$; it is one at $x=1$.
+This proves the inherited bounds
+$\Phi_{2j+1}\le\mathbf1_{\{1\}}\le\Phi_{2j}$ and uniform error
+$\varepsilon_j$ directly \cite{Prior}. For every actual mixed synthesis $A$,
+\[
+ \begin{gathered}
+ A^*\Phi_{2j+1}(X)A\preceq A^*\Pi A\preceq A^*\Phi_{2j}(X)A,\\
+ 0\preceq(-1)^j\bigl(A^*\Phi_j(X)A-A^*\Pi A\bigr)
+          \preceq\varepsilon_j K.
+ \end{gathered}\tag{U1}
+\]
+These are inequalities of full forms, including off-diagonal entries, not
+entrywise inequalities. To prove them, evaluate both sides on any coefficient
+vector and sum the pointwise filter inequality weighted by $|(Ac)_\alpha|^2$.
+
+The conclusion is independent of the number and sizes of overlapping supports.
+For any countable prime-indexed family, use the actual metric quotient
+$V_p=\mathbb C^{r_p}/\ker A_p$ with Gram $K_p$. The induced maps $\bar A_p$
+are isometries; their direct sum is an isometry into the original counting
+Hilbert space. Consequently on $\bigoplus_pV_p$,
+\[
+ \boxed{\left\|\bigoplus_p\bar A_p^*
+             (\Phi_j(X_p)-\Pi_p)\bar A_p\right\|\le\varepsilon_j.}
+ \tag{U2}
+\]
+No uniform bound on $r_p$, support multiplicity, or the original row mass is
+needed. The metric quotient and its inverse on the image are retained; this is
+not a rescaling of the original successful-state count.
+If the $A_p$ have proper images, $A_p^*\Pi_pA_p$ is a compression of the
+success projection, not the projection itself and not its original trace.
+The forgotten orthogonal sector remains specified in (S1).
+
+\begin{theorem}[The order-of-composition correction]
+Let $\bar A$ be an isometry onto a feature subspace and $P_A=\bar A\bar A^*$.
+For $C=\bar A^*X\bar A$,
+\[
+ \boxed{\bar A^*X^2\bar A-C^2
+ =\bar A^*X(I-P_A)X\bar A
+ =R_A^*R_A,\quad R_A=(I-P_A)X\bar A.}\tag{U3}
+\]
+It vanishes exactly when the feature subspace is $X$-invariant. In general
+one cannot replace the matrices in (U1) by $\Phi_j(C)$.
+\end{theorem}
+\begin{proof}
+Insert $I=P_A+(I-P_A)$ between the two copies of $X$. The first summand is
+$C^2$, the other is the displayed squared norm. Vanishing is equivalent to
+$(I-P_A)X\bar A=0$, which is precisely invariance. Self-adjointness then
+also makes the orthogonal complement invariant.
+\end{proof}
+The relation $R_A$ is retained with its source norm, as in the source's
+minimum-section corrections; it is not discarded merely because its
+projection to the feature quotient is zero. For the hard example the verifier
+calculates the full nonzero positive semidefinite coordinate defect
+$M_2-M_1K^{-1}M_1$, where $M_i=A^*X^iA$.
+
+The danger has an actual ES countercheck. In the empty shell
+$p=37,a=18,R=35$, the exterior states $u=1,12$ give
+\[
+ Q_1=(18,198/7,407/7),\qquad Q_2=(18,99/5,2442/5),
+\]
+with $D_1=7,D_2=5$. Compress their counting source onto its constant line.
+Then $C=6/35$, so
+\[
+ \boxed{\bar A^*\Phi_3(X)\bar A=0,
+ \qquad \Phi_3(C)=17/343000>0.}\tag{U4}
+\]
+The second expression would falsely report positivity. The quadratic relation
+norm in (U3) is $1/1225$. Applying the filter first and then taking the mixed
+Gram is therefore essential, even though each operation separately is defined.
+
+\section{Evidence, scope and next arithmetic bound}
+The default standard-library verification constructs all 9702 hard-shell
+states and checks their rational identities, return denominators and ordered
+inverses. It independently reconstitutes the four mixed gcd-moment rows by
+bounded group multiplication, checks every two-coordinate negative form and
+the full positive direction, and records all three integral witnesses.
+It tests 729 symmetric integer forms including singular boundaries, 256
+nonorthogonal support dictionaries at five filter degrees, the actual split
+with 44550 occurrences, and six rejected false transformations.
+
+The additional scan covers all 9531 first-half shells at the 54 primes
+$p\equiv1\pmod{12}$, $p\le1500$: 412838 canonical states and 20177 choices
+of the support $\beta_q>0$. There are 1693 certified choices covering the
+685 occupied shells. There are no strictly ternary-only choices in this small
+range; the fixed large example supplies the strict improvement. These counts
+are not a new prime-coverage result, and the large example is not claimed least.
+All inputs for the printed positive certificate are exact integers or rationals;
+floating-point exploration is not used in its verification.
+
+The new full three-support form, its explicit original arithmetic return, and
+the uniform mixed-form transport are the contributions of this tranche.
+Signed localizing forms, Schur congruences and compression identities have
+classical antecedents. The scoped literature comparison did not establish
+historical priority for the precise ES example; none is asserted.
+
+For every hypothetical false prime, all such original mixed forms must be
+negative semidefinite, including their ternary determinants and higher mixed
+minors. The unresolved universal step is to force a positive direction in at
+least one shell by an arithmetic estimate on the actual mixed moments.
+Pairwise estimates omit a demonstrably relevant condition, but the correct
+full condition is not yet proved positive for every prime. Uniform convergence
+(U2) controls all retained observations without supplying that arithmetic
+lower bound. No ES, RH, or global geometric conclusion is claimed.

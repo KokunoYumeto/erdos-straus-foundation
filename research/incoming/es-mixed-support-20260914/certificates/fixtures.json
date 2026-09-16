@@ -1,0 +1,11 @@
+{
+  "filter_degrees": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "integer_symmetric_forms": 729,
+  "mixed_filter_sources": 256
+}

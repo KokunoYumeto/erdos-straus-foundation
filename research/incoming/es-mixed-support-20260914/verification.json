@@ -1,0 +1,77 @@
+{
+  "certificate_reproduction": {
+    "gzip_original_states": "byte-identical in ordinary and optimized replay and against the supplied certificate",
+    "json": "ordinary and optimized outputs are byte-identical to each other; against the supplied certificates they are semantically and LF-normalized byte identical",
+    "portability_note": "Python text-mode newline translation gives CRLF on the audited Windows replay and LF in the supplied certificates, so cross-platform raw-byte identity is not claimed"
+  },
+  "certificate_sha256": {
+    "checks.json": "516586abaa46a08d583d00613968faf3d83c4e34a07d645960ba831c20a5ac58",
+    "compression_counterexample.json": "a47c56961192b57de2aaf9618cfb0b4e119e2a4a7472fd34c4da145835ff0386",
+    "fixtures.json": "7eadeaf7e33a87d0877edb77e5b8a569a9082e0fe380036ad8e9e2545ee6267f",
+    "hard_ternary.json": "417ce2deebf1e43911e4dfddeb006cb6286d64a8e65acc2f5ef72e1c3cfb9608",
+    "negative_controls.json": "ecf80d1b0131d0d81958346613f1689239e1be030da209206dc87b85b08cc154",
+    "original_states.json.gz": "87fd9cd72684c0b02a7c2183bc64dbb0af6f511e014dfc643bf6ebedeaede039",
+    "primality.json": "0934803dc5b096051f0cef7e02d3da00fad788b8e92a33d29dd0753c3437703a",
+    "scan.json": "2ce59de51a36c8203be8607943297cc78b9150ca7a6371201d2260043ce06ff5",
+    "split_return.json": "10b7f810cc79d109944880e53ee6a3fecd92868e30a51b8fcd7dba4b5afd8130"
+  },
+  "normal": {
+    "command": [
+      "python",
+      "verify.py",
+      "--bound",
+      "1500",
+      "--out",
+      "generated"
+    ],
+    "returncode": 0,
+    "source_receipt_seconds": 9.088347787999965,
+    "stderr": "",
+    "stdout": "{\"candidates\": 9702, \"checks\": 104179, \"hard_lower\": {\"denominator\": 1890375, \"numerator\": 607462}, \"negative_controls\": 6, \"scan\": {\"certified_choices\": 1693, \"certified_shells\": 685, \"occupied_shells\": 685, \"original_states\": 412838, \"primes\": 54, \"shells\": 9531, \"strict_ternary_choices\": 0, \"strict_ternary_shells\": 0, \"support_choices\": 20177}}\n"
+  },
+  "optimized": {
+    "command": [
+      "python",
+      "-O",
+      "verify.py",
+      "--bound",
+      "1500",
+      "--out",
+      "generated_optimized"
+    ],
+    "returncode": 0,
+    "source_receipt_seconds": 11.217793765999886,
+    "stderr": "",
+    "stdout": "{\"candidates\": 9702, \"checks\": 104179, \"hard_lower\": {\"denominator\": 1890375, \"numerator\": 607462}, \"negative_controls\": 6, \"scan\": {\"certified_choices\": 1693, \"certified_shells\": 685, \"occupied_shells\": 685, \"original_states\": 412838, \"primes\": 54, \"shells\": 9531, \"strict_ternary_choices\": 0, \"strict_ternary_shells\": 0, \"support_choices\": 20177}}\n"
+  },
+  "render": {
+    "build_status": "All three supplied documents compile without overfull boxes or undefined references after the final passes",
+    "card_pages": 1,
+    "inspected": [
+      "All workbench pages in contact sheet",
+      "All preprint pages in contact sheet",
+      "Full-resolution preprint page 2",
+      "Full-resolution final posting card"
+    ],
+    "preprint_pages": 3,
+    "workbench_pages": 7
+  },
+  "scope": {
+    "checks_reported_by_program": 104179,
+    "finite_hard_shell_states": 9702,
+    "no_Lean_build": true,
+    "no_independent_review": true,
+    "no_universal_ES_theorem": true,
+    "original_small_scan_states": 412838,
+    "shell_scan_bound": 1500
+  },
+  "source_sha256": {
+    "card.tex": "c98a93eb439d6e3437cb619da7df606ebf9f164c0905156c651fda4db9e8522d",
+    "core.tex": "f8dc3fce3c41fdf8012a78025fb2ee8c49c74394d6597a38a1ac05ef4531ce7f",
+    "preprint.tex": "da9c5760ae6a445b8fce8a7d7716ec75fcb3e7fb63ce93a621b51798ac105cf7",
+    "prime_certificate.json": "2adab7f62caddc5643f19dafc62ece60644a13a4c9c66b2f4afa2dade7f97251",
+    "references.tex": "55a8a3cf692b805e7a9d854a12001871319723a006abc12e573530c0e357be4b",
+    "verify.py": "f43031b7167e13cc8ad30a730afdf443f379868b964e29d8bf36385f986eeb3c",
+    "workbench.tex": "14fd7e0c1ed276290da642296e1edae5dc877168c89a7e56a5203eca5a17f620"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "compressed_X": {
+    "denominator": 35,
+    "numerator": 6
+  },
+  "constant_source_Gram": 2,
+  "correct_compressed_Phi3": {
+    "denominator": 1,
+    "numerator": 0
+  },
+  "incorrect_Phi3_of_compressed_X": {
+    "denominator": 343000,
+    "numerator": 17
+  },
+  "quadratic_compression_defect": {
+    "denominator": 1225,
+    "numerator": 1
+  },
+  "states": [
+    {
+      "D": 7,
+      "R": 35,
+      "a": 18,
+      "beta": [
+        -1,
+        -2
+      ],
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 18
+        },
+        {
+          "denominator": 7,
+          "numerator": 198
+        },
+        {
+          "denominator": 7,
+          "numerator": 407
+        }
+      ],
+      "gate": 5,
+      "gcd": 5,
+      "h": 1,
+      "p": 37,
+      "quotient": {
+        "denominator": 7,
+        "numerator": 11
+      },
+      "quotient_name": "kappa",
+      "r": 1,
+      "s": 18,
+      "u": 1
+    },
+    {
+      "D": 5,
+      "R": 35,
+      "a": 18,
+      "beta": [
+        1,
+        -1
+      ],
+      "channel": "E",
+      "denominators": [
+        {
+          "denominator": 1,
+          "numerator": 18
+        },
+        {
+          "denominator": 5,
+          "numerator": 99
+        },
+        {
+          "denominator": 5,
+          "numerator": 2442
+        }
+      ],
+      "gate": 49,
+      "gcd": 7,
+      "h": 3,
+      "p": 37,
+      "quotient": {
+        "denominator": 5,
+        "numerator": 11
+      },
+      "quotient_name": "kappa",
+      "r": 2,
+      "s": 3,
+      "u": 12
+    }
+  ]
+}
