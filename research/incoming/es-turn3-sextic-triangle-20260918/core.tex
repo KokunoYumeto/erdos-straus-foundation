@@ -1,0 +1,400 @@
+\section{The route-selection question}
+Turn 2 constructed the complete canonical shifted-factor graph and found closed
+components on which both original selectors fail. Those components contained
+large, changing obstruction quotients. The narrower possibility remained that
+\emph{the smallest active quotient, of order six, could not persist around a
+closed component}. This tranche disproves that narrower assertion as well.
+
+\begin{theorem}[Closed primitive sextic triangle]\label{thm:triangle}
+Let
+\[
+ p=113946012068401\equiv121\pmod{840}.
+\]
+This is a prime. Its canonical nonresidue-factor graph has the closed component
+\[
+ \boxed{31\longrightarrow223\longrightarrow307\longrightarrow31.} \tag{1}
+\]
+At each vertex the original exterior and middle selectors are empty, the actual
+full unit group and coefficient envelope agree, their actual support stabilizer
+has index six, and the inactive original divisor block fills that stabilizer.
+The exceptional successor prime is simple and is the only outgoing nonresidue
+prime. Every vertex has the first phase $pK=rK$; every neighbor-square relation
+has an actual sixth-root lift. The three complete boxes have respectively
+$45,405,405$ original vectors.
+\end{theorem}
+The statement is a counterexample to a proposed \emph{proof implication}, not to
+Erd\H{o}s--Straus (ES). Section~\ref{sec:positive} returns a positive integral
+solution at this same prime. No least-prime assertion or complete scan of the
+large prime's entire graph is made.
+
+The universal source graph is due to Bryan \cite[\S\S1--7]{BryanGraph}.
+The primitive sextic normal form and the neighbor-square recurrence are also
+antecedents \cite[\S\S3--8]{BryanSix}, \cite[\S\S2--4]{BryanChain}.
+The latter gives two consecutive primitive failures at $p=808369$, then a larger
+index. Turn 2 supplied closed components containing a primitive failure
+\cite[\S\S7--8]{Turn2}. The new certificate keeps \emph{every} vertex primitive
+and closes in three edges. A content-level search found no matching certificate;
+this is not a historical-priority determination.
+
+\section{The original source and a certificate criterion}
+For a hard prime $p$, the vertices are primes $q<p$ with $(q/p)=-1$.
+Here all three vertices satisfy $q\equiv3\pmod4$, so
+\[
+ a_q=(p+q)/4,\qquad R_q=q,\qquad
+ a_q=\prod_t t^{e_t},\qquad
+ \mathcal B_q=\prod_t[-e_t,e_t]_{\mathbb Z}.                 \tag{2}
+\]
+For each original vector retain
+\[
+ v(\beta)=\prod_t t^{\beta_t}\pmod q,\quad
+ u(\beta)=\prod_t t^{e_t+\beta_t}\mid a_q^2,\quad
+ \mu_q(x)=\#\{\beta:v(\beta)=x\},\quad W_q=\operatorname{supp}\mu_q. \tag{3}
+\]
+The inverse is $\beta_t=v_t(u)-e_t$. In particular $\mu_q(x)=\mu_q(x^{-1})$.
+The canonical gates and their centered targets are
+\[
+ M:q\mid u+a_q\ \longleftrightarrow\ v=-1,\qquad
+ E:q\mid4u+1\ \longleftrightarrow\ v=-p^{-1}.              \tag{4}
+\]
+The reflected exterior target $-p$ requires the retained map $\beta\mapsto-\beta$;
+it is not a third canonical channel. All prime-power multiplicities in (2) remain.
+
+The full edge set consists of \emph{all} primes $r\mid a_q$ with $(r/p)=-1$, with
+weight $v_r(a_q)$. An edge is not chosen by a heuristic rule. In this tranche the
+complete factorization proves that every vertex has exactly one edge.
+
+Here is a direct sufficient test for the claimed failure structure. Set
+$G_q=(\mathbb Z/q\mathbb Z)^\times$, $K_q=G_q^6$, and suppose the actual integer
+factorization is $a_q=B_qr$, with $r\nmid B_q$, all factors of $B_q$ in $K_q$,
+\[
+ W_q(B_q)=K_q,\qquad \operatorname{ord}(rK_q)=6,\qquad4\in K_q. \tag{5}
+\]
+The phase is then fixed by the original equation:
+\[
+ p\equiv4B_qr\pmod q\quad\Longrightarrow\quad pK_q=rK_q.
+\]
+Orient $rK_q$ as class $1$ in $C_6$. The complete support and targets are
+\[
+ W_q/K_q=\{0,1,5\},\qquad
+ (M,E_+,E_-)=(3,2,4).                                    \tag{6}
+\]
+Thus both channels fail. The set $\{0,1,5\}$ has trivial stabilizer in $C_6$;
+therefore the stabilizer of $W_q$ in the full unit group is exactly $K_q$, not a
+guessed power-residue group. Since $W_q(B_q)=K_q$ and $r$ is an original factor,
+$\Gamma_q=\langle-1,2,t:t\mid a_q\rangle$ contains $K_q$ and its quotient generator,
+so $\Gamma_q=G_q$. Both indices are six.
+
+Every prime factor $t\mid a_q$ satisfies $(t/p)=(t/q)$. For odd $t$, use
+$p\equiv-q\pmod t$, $p\equiv1\pmod4$, $q\equiv3\pmod4$ and quadratic reciprocity;
+for $t=2$ use the supplementary law. The reciprocity input is classical
+\cite[\S6.4]{Hatcher}. The inactive factors are squares modulo $q$, whereas $r$
+is not, since $q-1$ has exactly one factor of two. This proves that $r$ is the
+only outgoing nonresidue factor. The code also checks the characters directly.
+
+\paragraph{Minimality of the structural sizes.}
+At any external nonresidue prime residual $q\equiv3\pmod4$, a failed stabilizer
+cannot contain $-1$, so it has odd order. Its index is twice an odd integer.
+Index two would make the stabilizer the squares, containing the exterior target
+$-p^{-1}$, since $(p/q)=-1$. Thus six is the first possible index.
+There are no self-edges because $q\nmid a_q$. A two-cycle of $3\pmod4$ primes
+would require both reciprocal Legendre symbols to be $-1$, contrary to quadratic
+reciprocity. Hence three is the shortest possible cycle in this prime-residual
+sector. Theorem~\ref{thm:triangle} realizes both minimal structural sizes, not a
+minimum value of $p$.
+
+\section{Complete integer and coefficient certificate}\label{sec:certificate}
+The three source factorizations are
+\begin{align*}
+ a_{31}&=28486503017108=223\,B_{31},& B_{31}&=2^2\cdot31935541499,\\
+ a_{223}&=28486503017156=307\,B_{223},& B_{223}&=2^2\cdot17\cdot41\cdot33281891,\\
+ a_{307}&=28486503017177=31\,B_{307},& B_{307}&=19^2\cdot269\cdot937\cdot10099.
+\end{align*}
+All displayed factors are prime. Complete trial division certifies the factors.
+For the large parameter,
+\[
+ p-1=2^4\cdot3^3\cdot5^2\cdot10550556673.                 \tag{7}
+\]
+The last factor is prime, and base $11$ satisfies $11^{p-1}\equiv1\pmod p$.
+The residues of $11^{(p-1)/\ell}$ for the four distinct primes $\ell$ in (7) are
+\[
+ 113946012068400,\quad68851444066,\quad71881191975328,\quad61379549739175.
+\tag{8}
+\]
+Each residue minus one is coprime to $p$. If a prime $d$ divided $p$, the order
+of $11\bmod d$ would therefore contain every full prime power in $p-1$.
+Thus $p-1\mid d-1$, forcing $d\ge p$ and proving $p$ prime.
+The separate implementation additionally tries every odd divisor through
+$\lfloor\sqrt p\rfloor=10674549$.
+
+The remaining certificate is small. Use kernel generators $b_q$ and centered
+logarithmic factors as follows; each ordered pair is (logarithm, original exponent).
+\[
+\begin{array}{c|r|r|l|r}
+q&|K_q|&b_q&\text{inactive centered factors in }C_{|K_q|}&\tau(B_q^2)\\\hline
+31&5&2&(1,2),(0,1)&15\\
+223&37&2&(1,2),(23,1),(11,1),(8,1)&135\\
+307&51&4&(19,2),(45,1),(2,1),(28,1)&135
+\end{array}                                                  \tag{9}
+\]
+For example, $33281891\equiv2^8\pmod{223}$ and $10099\equiv4^{28}\pmod{307}$.
+The displayed generators have exact orders $5,37,51$. Direct exponentiation
+checks every factor and order. The complete integer coefficient products are
+\[
+ \prod_{(d,e)\text{ in row }q}\sum_{j=-e}^{e}X^{dj}
+ \equiv\sum_{j=0}^{|K_q|-1}c_{q,j}X^j\pmod{X^{|K_q|}-1},       \tag{10}
+\]
+where the following are the \emph{entire} coefficient vectors:
+\begingroup\small
+\begin{align*}
+c_{31}={}&(3,3,3,3,3),\\
+c_{223}={}&(1,3,4,4,5,5,4,3,2,3,4,3,4,5,3,3,4,4,4,\\
+           &\quad4,4,4,3,3,5,4,3,4,3,2,3,4,5,5,4,4,3),\\
+c_{307}={}&(3,1,4,1,4,2,3,3,3,3,2,4,2,4,1,5,1,5,1,4,1,4,1,3,2,2,\\
+           &\quad2,2,3,1,4,1,4,1,5,1,5,1,4,2,4,2,3,3,3,3,2,4,1,4,1).
+\end{align*}
+\endgroup
+These polynomial identities can be checked by finite multiplication. Every
+coefficient is positive, proving $W(B_q)=K_q$ with its original multiplicities.
+The successor orders in the full groups are $6,222,306$, respectively; their
+classes all have order six. Each $4\in K_q$. Thus (5)--(6) apply.
+
+The exact fine targets are
+\[
+\begin{array}{c|rrr|r|r}
+q&M&E_+&E_-&|W_q|&|\mathcal B_q|\\\hline
+31&30&10&28&15&45\\
+223&222&36&31&111&405\\
+307&306&201&223&153&405.
+\end{array}                                                   \tag{11}
+\]
+All targets are in the three unoccupied quotient classes. The complete $855$
+original vectors, their divisors $u$, normalized $h,r,s$, channel tags, raw
+quotients and ordered rational denominator triples are serialized in JSON.
+Every candidate rational identity equals $4/p$; every one fails the required
+integral gate in both channels. No original exponent vector is omitted.
+The unique outgoing edges in (1) follow from the complete factorizations and
+character checks. This proves Theorem~\ref{thm:triangle}.
+
+\section{The odd component and the exact lost correlation}\label{sec:mixed}
+The following calculation applies to \emph{any} primitive sextic failure with
+one simple active prime and saturated inactive factor $B$. Write $T=\tau(B^2)$;
+$T$ is odd. In the quotient oriented by the active prime, its original counting
+polynomial is
+\[
+ \overline\mu=T(1+g+g^{-1})\in\mathbb Z[C_6].              \tag{12}
+\]
+Here the bar denotes the integer quotient observation, not reduction modulo two.
+The exact CRT coordinate map is $j\mapsto(j\bmod2,j\bmod3)$, inverse
+$(a,b)\mapsto3a+4b\pmod6$. It turns (12) into the joint matrix
+\[
+ \boxed{C=T\begin{pmatrix}1&0&0\\0&1&1\end{pmatrix}.}     \tag{13}
+\]
+Its row sums are $(T,2T)$ and its column sums are $(T,T,T)$. In particular, the
+\emph{odd cubic marginal is exactly uniform and positive}, while all three joint
+target cells are absent. The data do not lack quadratic or cubic residues
+separately; they lack the required joint pairings.
+
+\begin{proposition}[Full integer marginal fibres]
+Every nonnegative integer matrix with those row and column sums is uniquely
+\[
+ \begin{pmatrix}T-u-v&u&v\\u+v&T-u&T-v\end{pmatrix},
+ \qquad u,v\ge0,\quad u+v\le T.                          \tag{14}
+\]
+There are $(T+1)(T+2)/2$ such matrices. Imposing the original inversion symmetry
+reduces the entire fibre to
+\[
+ \boxed{C(w)=\begin{pmatrix}T-2w&w&w\\2w&T-w&T-w\end{pmatrix},
+ \quad w\in\mathbb Z_{\ge0},\quad2w\le T.}                \tag{15}
+\]
+The sum of its two canonical target-cell coefficients is $3w$.
+\end{proposition}
+\begin{proof}
+Read $u=C_{0,1}$ and $v=C_{0,2}$. The prescribed sums force every other entry in
+(14), giving both the inverse and the nonnegativity inequalities. Inversion
+exchanges cubic coordinates 1 and 2 without changing parity, so $u=v=w$.
+The canonical E target is cell $(0,2)$ and the M target is $(1,0)$, giving $w+2w$. These are quotient-coset totals. They are not asserted to be
+the exact fine exterior-plus-middle state count.
+\end{proof}
+These are fibres of the stated coefficient observation, not a claim that every
+matrix in the fibre is the divisor distribution of an arithmetic shell. The
+actual triangle realizes $w=0$ at all three vertices.
+
+The integer kernel of taking row and column sums is generated by
+\[
+ \begin{pmatrix}1&-1&0\\-1&1&0\end{pmatrix},\qquad
+ \begin{pmatrix}1&0&-1\\-1&0&1\end{pmatrix}.               \tag{16}
+\]
+Formula (14) supplies the complete inverse after its two kernel coordinates are
+retained. Under inversion symmetry only the sum of those directions remains.
+No independent-product replacement of the marginals is made.
+
+There is also an exact form inside the characteristic-two coefficient algebra.
+Write $g=yx$, with $y^2=1,x^3=1$, and put $\varepsilon=y+1$. Then
+\[
+ \mathbb F_2[C_6]\cong
+ \mathbb F_2[\varepsilon]/\varepsilon^2\ \times\
+ \mathbb F_4[\varepsilon]/\varepsilon^2.                  \tag{17}
+\]
+If $J=1+x+x^2$ and $E=x+x^2$, these are orthogonal idempotents with $J+E=1$.
+Evaluation at $x=1$ and at a marked $\zeta\in\mathbb F_4$ satisfying
+$\zeta^2+\zeta+1=0$ gives (17). Its inverse sends
+$(a+b\varepsilon,c+d\varepsilon)$, with
+$c=c_0+c_1\zeta,d=d_0+d_1\zeta$, to
+\[
+ (a+b\varepsilon)J+(c_0+c_1x)E+\varepsilon(d_0+d_1x)E.
+\]
+The actual primitive packet reduces to
+\[
+ \boxed{1+y(x+x^2)=J+\varepsilon E\longleftrightarrow(1,\varepsilon).} \tag{18}
+\]
+It is nonzero on the primitive cubic component but has square zero there.
+The complete multiplication is verified on all $64^2$ pairs of coefficient
+vectors, independently of the arithmetic counterexample.
+
+Characteristic two is only an observation: $C(0)$ and $C(2)$ have the same
+reduction when $T\ge4$, although their target-cell sums are 0 and 6. The full
+integer $w$ and original fibres must remain.
+
+Squaring the quotient packet is also not a permitted reuse of the original
+factor budget:
+\[
+ (1+g+g^{-1})^2=3+2g+2g^{-1}+g^2+g^{-2}.                 \tag{19}
+\]
+The apparent E-target coefficients at $g^{\pm2}$ come exclusively from the two
+active exponent pairs $(1,1)$ and $(-1,-1)$. Their sums $\pm2$ lie outside the
+actual interval $[-1,1]$. The map of two source boxes by addition has its full
+bounded-composition fibres, but its target is a \emph{doubled} exponent box.
+It is not the original selector source. Across different vertices, even the
+moduli and prime factors differ; quotient labels do not create an integral
+intertwiner between the original boxes.
+
+\section{Actual carries and cyclic arithmetic}
+At vertex $q$ put $r=q_+$ and choose section $\sigma_q(j)=r^j$ for $0\le j<6$.
+Every fine unit has unique coordinates $\sigma_q(j)k$, $k\in K_q$.
+With $\delta_q=r^6$, the complete multiplication is
+\[
+ (i,k)(j,l)=((i+j)\bmod6,\ kl\delta_q^{\lfloor(i+j)/6\rfloor}). \tag{20}
+\]
+The cyclic carries are
+\[
+\begin{array}{c|r|r|r}
+q&r\bmod q&\delta_q&\operatorname{ord}(\delta_q)\\\hline
+31&6&1&1\\
+223&84&8&37\\
+307&31&144&51.
+\end{array}                                                  \tag{21}
+\]
+The last extension $C_{306}\to C_6$ with kernel $C_{51}$ has no homomorphic
+section: any lift of a quotient generator has order divisible by nine, so cannot
+have sixth power one. Direct enumeration verifies the complete lift locus.
+The other two group extensions split, but the marked section at 223 still has
+its nontrivial carry. No direct-product substitution deletes (20).
+
+If $\mu_B$ is the full inactive count, the fine quotient-array formula is
+\[
+ \nu(0,k)=\nu(1,k)=\mu_B(k),\quad
+ \nu(5,k)=\mu_B(\delta_q k),\quad
+ \nu(2,k)=\nu(3,k)=\nu(4,k)=0.                            \tag{22}
+\]
+Thus support saturation never requires uniform fine coefficients.
+
+All three neighbor relations use the same sign:
+\[
+ q_-q_+^2\equiv u_q^6\pmod q.                            \tag{23}
+\]
+One exact choice is $(u_{31},u_{223},u_{307})=(3,38,20)$; the corresponding
+kernel values are $(16,196,17)$. The complete six-element root fibres are in
+JSON. Both neighbors have the same nontrivial cubic character at each vertex:
+\[
+ (q_-^{(q-1)/3},q_+^{(q-1)/3})=(25,25),(183,183),(17,17)
+\]
+in the respective fields. These are three separately marked field values, not
+scalars multiplied across different finite fields.
+
+The integer cycle itself has a full inverse. Writing $c_i=B_{q_i}$, let
+\[
+ D=64c_0c_1c_2,
+ \quad T_i=1+4c_i+16c_ic_{i+1},\quad h=\gcd(T_0,T_1,T_2).
+\]
+The original equations give $(D-1)q_i=pT_i$ and hence
+\[
+ p=(D-1)/h,\qquad q_i=T_i/h,
+ \quad h=6117772570470359649583.                          \tag{24}
+\]
+Every coefficient and cyclic starting label is retained.
+
+The discovery progression, not an asserted all-failure progression, was
+\[
+ p(t)=1396761361+1782724440t,\qquad t=63916,
+\]
+with the three inactive affine values
+\[
+ 1565876+1998570t,\quad1137428+1451730t,\quad11264207+14376810t.
+\]
+The edge equations hold identically there. The prime, inactive factorizations
+and saturation at the specified $t$ are individually proved. No infinitude of
+closed sextic components in this progression is inferred.
+
+\section{A real ES return and the route-selection consequence}\label{sec:positive}
+The counterexample prime has a separate original exterior state
+\[
+ R=3,\quad a=28486503017101=19\cdot127\cdot1949\cdot6057173,
+ \quad u=1949,
+\]
+\[
+ (h,r,s,\kappa)=(1949,1,14615958449,37986876008950).
+\]
+It returns the positive ordered denominators
+\[
+ \begin{split}
+ x&=28486503017101,\\
+ y&=1082113258039195768479053950,\\
+ z&=8436154959673348101798680263550.
+ \end{split}                                               \tag{25}
+\]
+Indeed $a=hrs$, $3\kappa=pr+s$, and the inherited exterior identity
+\cite[\S2, Proposition 2.2]{ET} gives $4/p=1/x+1/y+1/z$ by direct multiplication.
+Its ordered inverse is $u=a^2/(3y-pa)$. Primality of all factors and the rational
+identity are checked in both implementations.
+
+An actual additional port also repairs a vertex of the example. At $q=31$ the
+square multiplier 9 gives
+\[
+ R'=279,\ a'=28486503017170,\ u'=1991,\quad
+ (h,r,s,\lambda)=(1991,1,14307635870,51281849).             \tag{26}
+\]
+These give a genuine M return by $279\lambda=r+s$ and $a'=hrs$.
+The multiplier is a square modulo $p$, satisfies the original size bound, and is
+retained as a new source marking. This proves only this repair, not a universal
+nine-port theorem. The unchanged original cycle remains closed in the canonical
+graph.
+
+There can be no strictly decreasing well-founded function of the original
+marked vertices along \emph{every} forced edge: (1) returns to the identical
+state after three steps. This excludes local descent on that graph; it does not
+exclude a larger state space or a selective different arithmetic operation.
+Nor does it refute the weaker claim that some other canonical component has a
+hit. We have not enumerated the entire graph at this large prime.
+
+The mandatory Turn 3 gate therefore closes the proposed canonical sextic-cycle
+escape route. All the smallest odd-component data, nonuniform fine counts,
+section corrections, target orientations, and integer cycle identities coexist
+with failure. Turn 4 must derive a relation between \emph{different original
+sources} or attack the complete original-shell signed count. Extending this
+failed local-closure assertion to higher quotient orders would be invalid.
+Equations (14)--(18) identify the missing mixed coefficient, not a positive
+lower bound for it at every prime.
+
+\section{Executable scope}
+The standard-library main verifier checks all three factorizations, $855$
+original vectors and both gate tests on each, both rational denominator returns
+and their inverses, the full stabilizers, both full/effective indices, every
+inactive coefficient, all carries, and all six-root fibres. Its primality proof
+uses (7)--(8). It checks all $64^2$ products in (17), exact nonnegative marginal
+fibres for $0\le T\le24$, and eight explicitly false transformations.
+The separate implementation imports neither the main verifier nor predecessor
+software. It uses direct divisors, Jacobi characters, literal support translates,
+a separately expanded three-cycle inverse, and complete trial primality of $p$.
+Run receipts and hashes distinguish finite verification from the written proofs.
+No entire previous-tranche re-audit, remote publication without a receipt, new
+prime-coverage range, independently reviewed proof, or Lean compilation is claimed.
