@@ -1,0 +1,207 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,array,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title[Primitive sextic cycles and square-source escape]{Primitive Sextic Cycles and Square-Source Escape\\for the Erd\H{o}s--Straus Selectors}
+\author{The Clankers}\date{18 September 2026}
+\begin{document}
+\begin{abstract}
+A canonical external-nonresidue factor graph can have a closed failed triangle
+whose three actual stabilizer quotients all have order six. We supply the complete
+factor data at a certified prime and prove the saturation and target exclusions.
+Thus constant minimal sextic defects, including their nonzero cubic jets, do not
+force canonical cycle closure. A separately marked square source does force an
+exit from every canonical all-$3\bmod4$ triangle, with no favourable-factor
+hypothesis. This is not a counterexample or a proof of Erd\H{o}s--Straus.
+\end{abstract}\maketitle
+
+Let $p$ be prime in one of the six hard classes
+$1,121,169,289,361,529\pmod{840}$. Write $(\cdot/p)$ for its quadratic character.
+At a prime $q<p$ with $(q/p)=-1$, the canonical source is
+\[
+ \sigma_q=\begin{cases}1&q\equiv3\pmod4,\\3&q\equiv1\pmod4,\end{cases}
+ \quad R_q=\sigma_qq,\qquad A_q=(p+R_q)/4.
+\]
+Every prime factor $r\mid A_q$ with $(r/p)=-1$ is an edge $q\to r$, carrying
+weight $v_r(A_q)$. These factors exist because $(A_q/p)=-1$, are below $p$, and
+are distinct from $q$. This graph and its reciprocity rules are inherited [1].
+
+For $a=\prod_t t^{e_t}$, retain the complete centered box and its integer counts
+\[
+ \beta_t\in[-e_t,e_t],\quad u=\prod_t t^{e_t+\beta_t},\quad
+ v(\beta)=\prod_t t^{\beta_t}\pmod R,\quad
+ \mu(g)=\#v^{-1}(g),\quad W=\operatorname{supp}\mu.
+\]
+The canonical channels are $R\mid4u+1$ (E) and $R\mid u+a$ (M). Their targets
+are $-p^{-1}$ and $-1$; inversion retains the extra exterior orientation $-p$.
+With $d=\gcd(a,u)$, set $(h,r,s)=(d^2/u,u/d,a/d)$. The exact returns are
+\[
+ E:(a,hs\kappa,phr\kappa),\quad \kappa=(pr+s)/R;
+ \qquad M:(a,phs\lambda,phr\lambda),\quad\lambda=(r+s)/R. \tag{1}
+\]
+Their ordered divisor inverses are $a^2/(Ry-pa)$ and $pa^2/(Ry-pa)$, respectively.
+These are the original Type I/II coordinates [2].
+
+\begin{theorem}\label{tri}
+For the prime
+\[
+ p=7510085481569082811681\equiv121\pmod{840},
+\]
+the canonical graph contains the closed component $31\to223\to307\to31$.
+At each vertex its actual stabilizer is $K_q=G_q^6$, with
+$G_q=(\mathbb Z/q\mathbb Z)^\times$, and both channels are empty. Every
+inactive factor box fills $K_q$; each successor is the unique simple nonresidue
+prime factor. All effective and full indices equal six.
+\end{theorem}
+\begin{proof}
+Put
+\[
+ L_0=526211146410389771,\quad L_1=1165340089472441,\quad L_2=23500235136011.
+\]
+The complete factorizations are
+\[
+ \frac{p+31}{4}=2^4L_0\cdot223,\qquad
+ \frac{p+223}{4}=2^7\cdot41L_1\cdot307,\qquad
+ \frac{p+307}{4}=17\cdot19\cdot79\cdot101L_2\cdot31.       \tag{2}
+\]
+All factors and $p$ are prime by the executable complete-order certificate below.
+The kernel orders are $5,37,51$. Generators are $2,2,171$.
+At 31, the factor $2^4$ fills the kernel. At 223, the logs of $2,41$ are $1,11$;
+$[-7,7]+11[-1,1]$ contains $[-18,18]$. At 307, the logs of $17,19,79,101$ are
+$-17,7,-1,-2$. The last two fill $[-3,3]$; the other two give centres
+\[
+ -24,-17,-10,-7,0,7,10,17,24,
+\]
+whose consecutive gaps are at most seven. Their radius-three intervals contain
+$[-27,27]$, so they fill the 51-element kernel. The remaining $L_i$ lie in their
+respective kernels (residues $8,136,216$). Thus every inactive box is saturated.
+
+If $r$ denotes the successor, its quotient class generates $C_6$, while $4\in K_q$.
+Consequently $pK_q=rK_q$ and
+$W_q=K_q\{r^{-1},1,r\}$. In successor coordinates the occupied classes are
+$5,0,1$, and the middle/exterior target classes are $3,2,4$. The occupied set
+has trivial quotient period, proving the actual stabilizer assertion.
+For each factor $t\mid A_q$, reciprocity gives $(t/p)=(t/q)$. All inactive
+factors are squares modulo $q$, and only $r$ is a nonresidue; its exponent is one.
+This proves closure using all outgoing factors, not a selected subgraph.
+\end{proof}
+
+The integer coarse counts are $T_q(1,1,0,0,0,1)$, with $T_q=27,135,243$.
+The complete source has $81+405+729=1215$ vectors, all serialized with $u,\beta$
+and fine residues. The prime proof has 38 complete-order nodes and 42 trial leaves
+below 10,000. Each internal node verifies a complete factorization of $n-1$ and
+\[
+ a^{n-1}=1\pmod n,\quad\gcd(a^{(n-1)/r}-1,n)=1\quad(r\mid n-1).
+\]
+These force the full order $n-1$ modulo every prime divisor of $n$, hence prove
+primality. At the root, $p-1=2^5\cdot3\cdot5\cdot15646011419935589191$ and $a=11$.
+The standard-library checker verifies every child. This is a finite, exact
+certificate, not a probable-prime or infinite-family assertion.
+
+A two-cycle on primes $3\pmod4$ would require both reciprocal quadratic symbols
+to be $-1$, impossible. Thus the displayed cycle has minimum possible length,
+although no least-prime claim is made. It is not an ES counterexample:
+\[
+ \begin{gathered}
+ R=3,\quad a=1877521370392270702921,\quad u=71,\\
+ (h,r,s,\kappa)=(71,1,26443962963271418351,2512176481510784743344)
+ \end{gathered}
+\]
+returns the positive original E state through (1).
+
+\paragraph{The odd component really survives.}
+The primary Eisenstein factors of the three primes are
+$-5-6\omega,-17-6\omega,-17-18\omega$, with $\omega^2+\omega+1=0$.
+Using the convention and cubic symbol in [3, \S2, p.4; \S4, p.8], the exponents
+of the primary and conjugate symbols are
+\[
+ H=\begin{pmatrix}*&1&0\\1&*&0\\0&0&*\end{pmatrix},\qquad
+ J=\begin{pmatrix}*&0&1\\0&*&1\\2&2&*\end{pmatrix}.
+\]
+They obey $H=H^{\mathsf T}$ and $J=-J^{\mathsf T}$. Their sum is the rational
+norm-symbol table. There is no reciprocity contradiction after the conjugate
+prime is retained. The neighbour-square kernel elements are $16,196,17$, with
+sixth roots $3,38,20$. The actual section carries $r^6=1,8,144$ also remain;
+at 307 the extension $C_{306}\to C_6$ does not split.
+
+For $\varepsilon^2=0$, the exact algebra isomorphism
+\[
+ \mathbb F_2[C_6]\longrightarrow
+ \mathbb F_2[\varepsilon]/\varepsilon^2\times
+ \mathbb F_4[\varepsilon]/\varepsilon^2,
+ \quad F\longmapsto(F(1+\varepsilon),F(\omega(1+\varepsilon)))
+\]
+sends the reduced packet $1+X+X^5$ to $(1,\varepsilon)$.
+An inverse uses $e_0=1+X^2+X^4$, $e_1=X^2+X^4$, $E=1+X^3$, $Z=X^4$:
+\[
+ (a+b\varepsilon,c+d\varepsilon)
+ \longmapsto(a+bE)e_0+(c(Z)+Ed(Z))e_1.
+\]
+The cubic body is a supported zero and its jet is nonzero; none of this creates
+an absent target. Squaring the packet gives $(1,0)$ but uses two active
+occurrences, whereas the original active prime occurs only once.
+
+\begin{theorem}[Square-nine escape]\label{nine}
+For any canonical triangle of external nonresidue primes all $3\pmod4$, and
+every vertex $q$ in it, the original source $(p+9q)/4$ is below $p$ and has a
+nonresidue prime factor. Every such factor lies outside that triangle.
+\end{theorem}
+\begin{proof}
+For its largest vertex $Q$, an incoming canonical edge gives
+$4cQ=p+q_{\rm prev}<p+Q$, hence $3Q<p$. Therefore the square source is an
+integer below $p$, and its character modulo $p$ is $-1$.
+Its own vertex cannot divide it. The canonical successor is excluded by
+\[
+ \gcd((p+q)/4,(p+9q)/4)=\gcd((p+q)/4,2).
+\]
+The predecessor $s$ has $(q/s)=-1$, so $(s/q)=1$ by reciprocity. But every
+nonresidue factor $t\mid(p+9q)/4$ has $(t/q)=-1$, again by reciprocity and the
+square 9. Thus the predecessor is excluded too. Factorization supplies at least
+one such $t$, proving the assertion without a prime-supply hypothesis.
+\end{proof}
+
+\begin{theorem}[A cardinality constraint on enlarged traps]
+Let $C$ be a set of external nonresidue primes all $3\pmod4$. Suppose
+$(2L-1)^2\max C<3p$ and $\min C>2L-2$. If every nonresidue factor of every
+$(p+(2j+1)^2q)/4$, $q\in C$, $0\le j<L$, remains in $C$, then $|C|\ge2L+1$.
+\end{theorem}
+\begin{proof}
+Every source supplies a factor. Different ports at $q$ have gcd
+\[
+ \gcd\left((p+(2i+1)^2q)/4,(j-i)(i+j+1)\right).
+\]
+Its prime divisors are at most $2L-2$, so no internal factor is shared. Each
+vertex has at least $L$ successors. There are no self-edges or opposite pairs,
+by reciprocity for square multipliers. Hence
+$L|C|\le|C|(|C|-1)/2$.
+\end{proof}
+
+In a primitive sink strongly connected component the inactive factor $B$ in $A_q=Br$ is at least
+four: $B=1$ would force $\operatorname{ord}_q(2)\mid6$; $B=2$ or $3$ would force
+order three for that integer because its three-point box is a subgroup. These
+allow only $q=3,7,13$, outside the domain. Thus its largest vertex obeys
+$15Q<p$. The preceding theorem with $L=3$ proves that a primitive closed
+component of at most six vertices has an exit at multiplier 9 or 25.
+
+For the displayed large prime, the square-nine successors are respectively
+$11$, $113306597729903$, and $268217338627467243373$, all outside the triangle.
+Only the first square source is occupied (four E and four M states); the other
+two are empty. Escape must not be identified with immediate selector success.
+The next universal problem is to force an occupied original source after or
+outside such extensions. Neither canonical reciprocity closure nor ES is proved.
+
+\begin{thebibliography}{9}
+\bibitem{1} Bryan, C. (2026). \emph{External-nonresidue factor cycle};
+\emph{Primitive sextic defect chains and the neighbor-square recurrence}, \S\S2--5.
+\texttt{chasebryan/centl}, revision \texttt{42508684c4386b575d7b52e763565345a76bcb9e}.
+\bibitem{2} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to
+the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc., 94},
+50--105. arXiv:1107.1010, \S2.
+\bibitem{3} Damg\aa rd, I. B., \& Frandsen, G. S. (2003).
+\emph{Efficient algorithms for gcd and cubic residuosity in the ring of Eisenstein integers}.
+BRICS RS-03-8, \S2, p.4; \S4, p.8. DOI: 10.7146/brics.v10i8.21779.
+\end{thebibliography}
+\end{document}
