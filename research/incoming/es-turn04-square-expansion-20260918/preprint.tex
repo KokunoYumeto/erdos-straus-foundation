@@ -1,0 +1,257 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,array,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Finite Reduction of Mixed Square-Source Closed Sets\\for the Erd\H{o}s--Straus Equation}
+\author{The Clankers}\date{18 September 2026}
+\begin{document}
+\begin{abstract}
+Square-multiplied shifted factors impose a finite reduction on every closed set
+of prescribed cardinality in the external-nonresidue graph, without restricting
+its stabilizer index or its vertex types. A set of size $m$ forces $p<16^{m^2}$.
+A complete finite cofactor enumeration excludes all sets of size at most five.
+An integer carry preserves the full selector even when its square residual overlaps
+the base modulus. These statements do not prove universal selector occupancy.
+\end{abstract}\maketitle
+
+Let $p$ be prime in $1,121,169,289,361,529\pmod{840}$. Put
+\[
+ V_p=\{q<p:q\text{ prime},\ (q/p)=-1\},\qquad
+ \sigma_q=\begin{cases}1&q\equiv3\pmod4,\\3&q\equiv1\pmod4.\end{cases}
+\]
+The canonical graph and its factorwise reciprocity rules are inherited [1].
+The primes $2,3,5,7$ are residues, so $V_p\ne\varnothing$ and $\min V_p\ge11$.
+For odd $t>0$ define the separately marked source
+\[
+ R=\sigma_q qt^2<3p,\qquad A_{q,t}=(p+R)/4.
+\]
+It is an integer below $p$, coprime to $pR$, and $(A_{q,t}/p)=-1$.
+Every such source therefore has a nonresidue prime factor below $p$, distinct
+from $q$. Every factor is an edge, retaining its full valuation.
+Call $C\subseteq V_p$ \emph{closed} if all those nonresidue factors remain in $C$
+at every $q\in C$ and every valid $t$. This is stronger than canonical closure
+and independent of selector occupancy. Previously, only all-$3\bmod4$ triangles
+and small primitive components had a proved square-source escape [2].
+
+\begin{lemma}[An original source avoiding a finite vertex set]\label{prefix}
+Let $q\in C$, $|C|=m$. Define
+\[
+ (b_0,\ldots,b_7)=(1,2,3,4,5,6,9,15),\qquad
+ b_n=\left\lceil\frac{(2n+9)(3^n-1)}{18}\right\rceil\ (n\ge8).
+\]
+Among the $b_{m-1}$ integers $F_q(j)=A_{q,2j+1}$, $0\le j<b_{m-1}$,
+at least one is coprime to every prime of $C$. If all these sources are below $p$,
+that source has an actual nonresidue factor outside $C$.
+\end{lemma}
+\begin{proof}
+Write $F_q(j)=A_{q,1}+\sigma_q qj(j+1)$. At $r\in C\setminus\{q\}$ it has
+zero or two roots, since its discriminant is the nonzero residue $-\sigma_q qp$.
+The two roots sum to $-1$. The source has no root modulo $q$.
+For a subset of the $n\le m-1$ active forbidden primes, CRT gives $2^k$ roots
+modulo their product $d$, paired by $a\mapsto d-1-a$ without fixed points.
+For one pair, its count in $[0,N)$ differs from $2N/d$ by less than one: after
+complete periods are removed, a prefix of length at most $(d-1)/2$ contains at
+most one root and a longer proper prefix contains at least one. Inclusion--exclusion
+therefore gives the exact count $Z$ with
+\[
+ \left|Z-N\prod_r(1-2/r)\right|<(3^n-1)/2\quad(n>0).       \tag{1}
+\]
+The increasing active primes satisfy $r_i\ge2i+9$, so
+$\prod_r(1-2/r)\ge9/(2n+9)$. This proves the formula for $n\ge8$.
+For $1\le n\le5$, each prime at least 11 covers at most one index in $[0,n]$:
+two distinct roots have sum at least 10, while the largest possible sum there is
+$2n-1\le9$. For $n=6$, in a prefix of length 9 only 11 and 13 can cover two indices,
+so at most 8 are covered. For $n=7$, in a prefix of length 15, 11 and 13 cover at
+most 3 each, 17,19,23 at most 2 each, and all others at most 1: the total is at most 14.
+For $n=0$ every index works. The constants increase and satisfy $b_n\le4^n$;
+for the formula use $(2n+9)/18<(4/3)^n$, proved inductively. Finally use the
+negative character of an actual source below $p$ to obtain its outside prime.
+\end{proof}
+
+\begin{theorem}[All-cardinality finite reduction]\label{height}
+A nonempty closed set $C$ of size $m$ has $m\ge2$. For
+$H=(2b_{m-1}-1)^2$, every $q\in C$ satisfies
+\[
+ \boxed{\sigma_q qH\ge3p,\qquad q\ge p/H,\qquad p<(4H)^m<16^{m^2}.} \tag{2}
+\]
+It contains a simple canonical cycle of length $2\le l\le m$ with equations
+$p+\sigma_iq_i=4c_iq_{i+1}$. Rotate to $c_0=v=\min c_i$. Then
+\[
+ \boxed{1\le v<(H+3)/4,\quad
+ v\le c_i\le\left\lfloor\frac{vH-1}{4v-3}\right\rfloor.}          \tag{3}
+\]
+Each coefficient word in this finite domain reconstructs at most one candidate
+prime cycle, including both original vertex types.
+\end{theorem}
+\begin{proof}
+Lemma~\ref{prefix} proves the first inequality in (2); otherwise all its sources
+are valid and one has an outside factor. Since $\sigma_q\le3$, $q\ge p/H$.
+Canonical sources always give an outgoing edge, and self-edges are impossible,
+so finite closure supplies a simple cycle. Set
+$D=4^l\prod c_i$, $S=\prod\sigma_i$. At each cyclic starting point $i$, iterate
+\[
+ D_0=1,\ T_0=0,\quad
+ D_{j+1}=4c_{i+j}D_j,\quad T_{j+1}=\sigma_{i+j}T_j+D_j.
+\]
+Its final numerator $T_i$ satisfies $(D-S)q_i=pT_i$, and $D>S$.
+Therefore $p\mid D-S$, and, since the distinct primes $q_i$ have gcd one,
+\[
+ h=\gcd_iT_i,\qquad \boxed{p=(D-S)/h,\quad q_i=T_i/h.}            \tag{4}
+\]
+All integer, prime, character, type, range and edge conditions must be checked
+on the reconstructed candidate. Since $c_i=A_{q_i,1}/q_{i+1}<H$,
+$p\le D-S<(4H)^m<16^{m^2}$, using $b_{m-1}\le4^{m-1}$.
+For the largest cycle vertex $Q$, its incoming edge gives
+$4vQ<p+3Q$, so $Q<p/(4v-3)$. Each canonical source is less than $vp/(4v-3)$,
+hence $c_i<vH/(4v-3)$. Taking the exact integer endpoint and requiring it at least
+$v$ proves (3). The reconstruction (4) is a complete necessary finite reduction,
+not a favourable-factor hypothesis.
+\end{proof}
+
+\begin{theorem}[No closed set of size at most five]\label{five}
+At every hard prime, every nonempty set of at most five external nonresidue primes
+has an actual nonresidue factor outside it in some valid source with
+$t\in\{1,3,5,7,9\}$.
+\end{theorem}
+\begin{proof}
+At a fixed vertex the exact source gcd is
+\[
+ \gcd(F_q(i),F_q(j))=\gcd(F_q(i),(j-i)(i+j+1)).                  \tag{5}
+\]
+For the first five ports its prime factors are at most 8, whereas vertices are at
+least 11. Five valid ports therefore need five distinct successors, impossible
+inside a set of at most five after excluding the source itself.
+Thus closure would give $81\sigma_q q\ge3p$ at every vertex. The finite domain
+(3) becomes
+\[
+ 2\le l\le5,\quad\sigma_i\in\{1,3\},\quad1\le v\le20,
+ \quad c_0=v,\quad v\le c_i\le\left\lfloor\frac{81v-1}{4v-3}\right\rfloor. \tag{6}
+\]
+Retain the inequalities $81\sigma_iT_i\ge3(D-S)$ and reconstruct by (4).
+The supplied standard-library enumeration and its second implementation exhaust
+this domain: 1,381,117,764 rooted profiles are bounded; 5,922,259 pass the range
+inequalities; 1,915 reconstruct typed hard-class integers; six have every integer
+prime; four rooted profiles have every vertex a nonresidue. Up to rotation these
+are exactly
+\[
+\begin{array}{r|l}
+4201&61,137,1153,383,191\\
+12601&409,3457,5743,2293,487\\
+26209&661,881,7213,5981,5519.
+\end{array}                                                   \tag{7}
+\]
+For completeness, the exact exhaustive reduction used in that computation is as
+follows. Fix other positive coefficients and set $c_j=x$. Write
+$D-S=D_0x-S$, $T_i=A_ix+B_i$, where $A_i\ge0$, $B_i>0$.
+Then
+\[
+ \frac{d}{dx}\frac{T_i}{D-S}
+ =\frac{-A_iS-D_0B_i}{(D_0x-S)^2}<0.                           \tag{8}
+\]
+With all unassigned coordinates at their lower bound $v$, failure of any range
+inequality excludes the entire remaining box. Otherwise the next coordinate
+satisfies
+$[3D_0-81\sigma_iA_i]x\le81\sigma_iB_i+3S$; each positive bracket gives an
+exact floor endpoint. The main checker recurses through every permitted integer.
+The second uses binary search of (8) and independently reconstructs the numerators
+from $4c_iT_{i+1}=D-S+\sigma_iT_i$. Both produce the same full range-profile hash.
+The ledger retains every typed candidate and a proper composite divisor or failed
+character when rejected. All trial divisions are exhaustive, not probable-prime tests.
+
+Each cycle in (7) already has five vertices. At its first vertex, multiplier 9 gives
+respectively
+\[
+ 1462=2\cdot17\cdot43,\qquad5911=23\cdot257,\qquad11014=2\cdot5507.
+\]
+The nonresidue primes $43,23,5507$ are outside their respective cycles. Every
+factorization, primality, character and size condition is checked. Thus every
+remaining candidate leaves the proposed set. This is a finite computer-assisted
+proof after the universal reduction, not a scan of primes up to a chosen bound.
+\end{proof}
+
+Starting at any external nonresidue prime, a breadth-first exploration of those
+five valid ports must reach at least six distinct vertices after at most 25 source
+factorizations. Otherwise the explored set of at most five vertices would be
+closed. All source integers are below $p$, so ordinary trial division makes this a
+terminating factor-supply algorithm. It is not a terminating ES selector.
+More generally Theorem~\ref{height} uses only its initial $b_{m-1}$ ports; for
+$p\ge16^{m^2}$ they force at least $m+1$ reachable vertices within $m b_{m-1}$
+source factorizations.
+
+The argument allows all quotient indices and both vertex types. Opposite mixed
+edges cannot be deleted: at $p=12889$, the canonical pair $43\leftrightarrow61$
+has sources $53\cdot61$ and $2^2\cdot19\cdot43$. Both selectors are empty at
+\emph{all} valid squares there: $t=1,3,\ldots,29$ at 43 and $t=1,3,\ldots,13$ at 61.
+The accompanying independent checker exhausts all 246 original divisors across
+these 22 sources. Thus outside-factor escape is not immediate local occupancy.
+A valid path $43\xrightarrow{3}3319\xrightarrow{1}1013\xrightarrow{1}11$ ends at
+$A=3225,u=9$ and returns
+\[
+ \frac4{12889}=\frac1{3225}+\frac1{1357856150}+\frac1{3789366}.
+\]
+
+\paragraph{The full square residual and the integer coefficient.}
+For the original source $A=\prod l^{e_l}$ retain each
+$\beta_l\in[-e_l,e_l]$ and $u=\prod l^{e_l+\beta_l}$. Set $R_0=\sigma_q q$,
+$\eta_E=1$, $\eta_M=p$. For every actual base candidate
+$u\mid A^2$, $R_0\mid4u+\eta_c$, keep
+\[
+ k=\frac{4u+\eta_c}{R_0},\quad d=k\bmod t^2,\quad b=(k-d)/t^2.
+\]
+Then
+\[
+ |c_{q,t}|=[Z^0]\sum_{u}Z^{d(u)},\qquad
+ u=\frac{R_0(d+t^2b)-\eta_c}{4}.                           \tag{9}
+\]
+These are integer coefficients with original labels. The fibre of a digit is all
+allowed $b$ in (9), not a chosen representative. No coprimality of $R_0,t$ is used.
+At $p=1129,q=t=11$, $A=615$ and $u=1845$ passes both mod 11 and mod 121, but fails
+mod 1331: its carry is 671, with digit 66 mod 121. Replacing a product by the lcm would
+lose an actual valuation constraint. Across two square sources the common divisor
+domain is exactly $\operatorname{Div}(\gcd(A,A')^2)$, and the same integer carry is
+retained there. A zero augmentation or a zero after coefficient reduction is not
+an absent original divisor.
+
+For a full hit, $d_0=\gcd(A,u)$ gives $(h,r,s)=(d_0^2/u,u/d_0,A/d_0)$.
+The ordered outputs are
+\[
+ E:(A,hs\kappa,phr\kappa),\quad\kappa=(pr+s)/R;
+ \qquad M:(A,phs\lambda,phr\lambda),\quad\lambda=(r+s)/R.
+\]
+Their original ordered inverses are $u=A^2/(Ry-pA)$ and $u=pA^2/(Ry-pA)$.
+Direct multiplication proves $4/p$; these are the inherited Type I/II coordinates [3].
+No universal nonzero target coefficient is inferred from (9) or from source escape.
+The remaining issue is simultaneous failure on larger sets, not a missing
+formal inverse of a reduced coefficient.
+
+\paragraph{Reproducibility and scope.}
+Run the following commands with the accompanying Python files:
+{\small\begin{verbatim}
+python cofactor_check.py \
+  --out certificates/cofactor_certificate.json
+python check_independent.py \
+  --input certificates --out independent.json
+\end{verbatim}}
+The portable example checker separately verifies the 22 sources and their positive
+return. Optimized Python is supported. The full workbench adds the complete root
+counts, prime-power lifts, mixed reciprocity table and bounded graph replay.
+No ES resolution, least-counterexample assertion, historical-priority determination,
+Lean build or independent mathematical review is claimed.
+
+\begin{thebibliography}{3}
+\bibitem{Bryan} Bryan, C. (2026). \emph{External-nonresidue factor cycle}, \S\S1--7.
+CENTL, commit \texttt{42508684c4386b575d7b52e763565345a76bcb9e},
+\url{https://github.com/chasebryan/centl/blob/42508684c4386b575d7b52e763565345a76bcb9e/research/erdos-straus/EXTERNAL-NR-FACTOR-CYCLE.md}.
+\bibitem{Turn3} The Clankers. (2026). \emph{Primitive sextic cycles and square-source
+escape for the Erd\H{o}s--Straus selectors}, \S\S6--7. Commit
+\texttt{852f86e085c7bfbb381b85cafb222a5802194e63},
+\url{https://github.com/KokunoYumeto/erdos-straus-foundation/pull/18}.
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to the
+Erd\H{o}s--Straus equation on unit fractions. \emph{Journal of the Australian
+Mathematical Society, 94}(1), 50--105. \S2, Propositions2.2 and2.6.
+\url{https://arxiv.org/abs/1107.1010}.
+\end{thebibliography}
+\end{document}
