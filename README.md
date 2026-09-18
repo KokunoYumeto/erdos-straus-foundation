@@ -41,6 +41,20 @@ source-located passages; it is not presented as the complete history.
 
 ## Start reading
 
+**18 September continuations:** [Turn 3: primitive sextic triangle and
+square-source escape](research/incoming/es-turn03-primitive-sextic-20260918/README.md)
+gives a certified constant-$C_6$ three-cycle, disproving the proposed strict
+canonical-descent mechanism while preserving the conjecture itself, and proves
+the corresponding square-source escape statements. [Turn 4: mixed
+square-source expansion](research/incoming/es-turn04-square-expansion-20260918/README.md)
+proves that every set of at most five external nonresidue vertices has an
+outside factor among the valid ports $t\in\{1,3,5,7,9\}$, obtains at least six
+reachable vertices from any start in at most 25 source factorizations, and
+reduces every fixed-cardinality closed set to a finite original
+cycle--cofactor domain. The supplied exact checkers exclude closed sets of
+cardinality at most five. These are factor-supply theorems, not a proof that an
+original $E/M$ selector is occupied and not a proof of Erdős--Straus.
+
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with
 JT: complete Boolean and cyclotomic arguments, a stronger quadratic-character

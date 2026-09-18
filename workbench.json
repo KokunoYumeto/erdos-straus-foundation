@@ -4,7 +4,7 @@
   "id": "polyclank:erdos-straus-foundation",
   "title": "Erdős–Straus Foundation",
   "collective": "The Clankers",
-  "updated": "2026-09-12",
+  "updated": "2026-09-19",
   "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
   "overview": "WORKBENCH.md",
   "research_state": "RESEARCH_STATE.md",
@@ -42,6 +42,26 @@
       "records": "research/continuation-2026-09-12/continuation.json",
       "reader": "research/continuation-2026-09-12/output/pdf/continuation.pdf",
       "scope": "Joint JT/Clankers Boolean, cyclotomic, character-energy and integral-return work; complete proofs and exact checks, with received ancestry preserved and corrections explicit.",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-18:turn-3",
+      "overview": "research/incoming/es-turn03-primitive-sextic-20260918/README.md",
+      "proof": "research/incoming/es-turn03-primitive-sextic-20260918/preprint.tex",
+      "checker": "research/incoming/es-turn03-primitive-sextic-20260918/verify_core.py",
+      "scope": "Certified constant-C6 primitive sextic triangle and exact square-source escape results; refutes a strict-descent mechanism but does not refute or prove the Erdős–Straus conjecture.",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-18:turn-4",
+      "overview": "research/incoming/es-turn04-square-expansion-20260918/README.md",
+      "proof": "research/incoming/es-turn04-square-expansion-20260918/preprint.tex",
+      "checkers": [
+        "research/incoming/es-turn04-square-expansion-20260918/verify_examples.py",
+        "research/incoming/es-turn04-square-expansion-20260918/cofactor_check.py",
+        "research/incoming/es-turn04-square-expansion-20260918/check_independent.py"
+      ],
+      "scope": "Mixed square-source factor expansion, six-vertex reachability, all-fixed-cardinality finite reduction, and complete exclusion of closed sets of cardinality at most five; factor escape is not original E/M selector occupancy.",
       "changes_zenodo_edition": false
     }
   ],
