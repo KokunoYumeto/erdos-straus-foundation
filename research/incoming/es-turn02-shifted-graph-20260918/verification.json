@@ -1,0 +1,168 @@
+{
+  "date": "2026-09-18",
+  "main_checks": 4032500,
+  "independent_checks": 393203,
+  "closed_component_checks": 696,
+  "main_finite_scope": {
+    "E_states": 1729,
+    "M_states": 2728,
+    "auxiliary_E_states": 10,
+    "auxiliary_vertices": 57416,
+    "divisor_candidates": 8357211,
+    "edge_occurrences": 193997,
+    "edge_support": 191789,
+    "least_start_trapped": 8,
+    "occupied_vertices": 1709,
+    "primes": 137,
+    "primes_with_graph_hit": 137,
+    "primes_with_trap": 39,
+    "trap_vertices": 11954,
+    "vertices": 188255
+  },
+  "main_bound": 50000,
+  "rows_sha256": "164892c8a5721dca804a3abe327b56e50f1a2a55df2cd94eb7327553bf9cda19",
+  "explicit_smaller_scopes": {
+    "all_Turn1_factor_cut_checks": "Every canonical vertex at hard primes p<=5000; not all p<=50000",
+    "detailed_full_graphs": [
+      1201,
+      2521,
+      3361,
+      5569
+    ],
+    "p808369": "Only listed 7 nodes, including certified six-cycle; not complete graph scan",
+    "abstract_graphs": 38636
+  },
+  "executions": {
+    "runs": [
+      {
+        "mode": "normal",
+        "tool": "verify.py",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/es_turn2_shifted_graph_20260918/verify.py",
+          "--bound",
+          "50000",
+          "--out",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates"
+        ],
+        "returncode": 0,
+        "seconds": 31.813632488250732,
+        "stdout": "{\"checks\": 4032500, \"negative_controls\": 8, \"row_sha256\": \"164892c8a5721dca804a3abe327b56e50f1a2a55df2cd94eb7327553bf9cda19\", \"scan\": {\"E_states\": 1729, \"M_states\": 2728, \"auxiliary_E_states\": 10, \"auxiliary_vertices\": 57416, \"divisor_candidates\": 8357211, \"edge_occurrences\": 193997, \"edge_support\": 191789, \"least_start_trapped\": 8, \"occupied_vertices\": 1709, \"primes\": 137, \"primes_with_graph_hit\": 137, \"primes_with_trap\": 39, \"trap_vertices\": 11954, \"vertices\": 188255}}\n",
+        "stderr": ""
+      },
+      {
+        "mode": "normal",
+        "tool": "check_independent.py",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/es_turn2_shifted_graph_20260918/check_independent.py",
+          "--input",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates",
+          "--out",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates/independent.json"
+        ],
+        "returncode": 0,
+        "seconds": 9.305779695510864,
+        "stdout": "{\"bound\": 50000, \"checks\": 393203, \"primes\": 137, \"rows_sha256\": \"164892c8a5721dca804a3abe327b56e50f1a2a55df2cd94eb7327553bf9cda19\", \"scope\": \"complete canonical graph scan rows and all detailed small graphs; listed large component only; no imported checker\"}\n",
+        "stderr": ""
+      },
+      {
+        "mode": "normal",
+        "tool": "verify_traps.py",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "/mnt/data/es_turn2_shifted_graph_20260918/verify_traps.py",
+          "--input",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates/traps.json",
+          "--out",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates/trap_check.json"
+        ],
+        "returncode": 0,
+        "seconds": 0.6561827659606934,
+        "stdout": "{\"checks\": 696, \"components\": [{\"cycle\": [11, 211, 683, 89, 17, 643, 113], \"effective_indices\": [10, 210, 682, 176, 32, 642, 224], \"original_divisor_vectors\": 75, \"p\": 2521, \"vertices\": 7}, {\"cycle\": [31, 53, 11, 281, 1051, 1103], \"effective_indices\": [6, 104, 10, 560, 1050, 1102], \"original_divisor_vectors\": 198, \"p\": 3361, \"vertices\": 6}, {\"cycle\": [19, 28871, 6977, 8293, 2003, 67531], \"effective_indices\": [6, 28870, 13952, 16584, 2002, 67530], \"original_divisor_vectors\": 222, \"p\": 808369, \"vertices\": 6}], \"scope\": \"displayed closed components and genuine ES returns; not a full prime scan or leastness proof\"}\n",
+        "stderr": ""
+      },
+      {
+        "mode": "optimized",
+        "tool": "verify.py",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-O",
+          "/mnt/data/es_turn2_shifted_graph_20260918/verify.py",
+          "--bound",
+          "50000",
+          "--out",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates_optimized"
+        ],
+        "returncode": 0,
+        "seconds": 31.71291947364807,
+        "stdout": "{\"checks\": 4032500, \"negative_controls\": 8, \"row_sha256\": \"164892c8a5721dca804a3abe327b56e50f1a2a55df2cd94eb7327553bf9cda19\", \"scan\": {\"E_states\": 1729, \"M_states\": 2728, \"auxiliary_E_states\": 10, \"auxiliary_vertices\": 57416, \"divisor_candidates\": 8357211, \"edge_occurrences\": 193997, \"edge_support\": 191789, \"least_start_trapped\": 8, \"occupied_vertices\": 1709, \"primes\": 137, \"primes_with_graph_hit\": 137, \"primes_with_trap\": 39, \"trap_vertices\": 11954, \"vertices\": 188255}}\n",
+        "stderr": ""
+      },
+      {
+        "mode": "optimized",
+        "tool": "check_independent.py",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-O",
+          "/mnt/data/es_turn2_shifted_graph_20260918/check_independent.py",
+          "--input",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates_optimized",
+          "--out",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates_optimized/independent.json"
+        ],
+        "returncode": 0,
+        "seconds": 9.149168968200684,
+        "stdout": "{\"bound\": 50000, \"checks\": 393203, \"primes\": 137, \"rows_sha256\": \"164892c8a5721dca804a3abe327b56e50f1a2a55df2cd94eb7327553bf9cda19\", \"scope\": \"complete canonical graph scan rows and all detailed small graphs; listed large component only; no imported checker\"}\n",
+        "stderr": ""
+      },
+      {
+        "mode": "optimized",
+        "tool": "verify_traps.py",
+        "command": [
+          "/opt/pyvenv/bin/python",
+          "-O",
+          "/mnt/data/es_turn2_shifted_graph_20260918/verify_traps.py",
+          "--input",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates_optimized/traps.json",
+          "--out",
+          "/mnt/data/es_turn2_shifted_graph_20260918/certificates_optimized/trap_check.json"
+        ],
+        "returncode": 0,
+        "seconds": 0.6705584526062012,
+        "stdout": "{\"checks\": 696, \"components\": [{\"cycle\": [11, 211, 683, 89, 17, 643, 113], \"effective_indices\": [10, 210, 682, 176, 32, 642, 224], \"original_divisor_vectors\": 75, \"p\": 2521, \"vertices\": 7}, {\"cycle\": [31, 53, 11, 281, 1051, 1103], \"effective_indices\": [6, 104, 10, 560, 1050, 1102], \"original_divisor_vectors\": 198, \"p\": 3361, \"vertices\": 6}, {\"cycle\": [19, 28871, 6977, 8293, 2003, 67531], \"effective_indices\": [6, 28870, 13952, 16584, 2002, 67530], \"original_divisor_vectors\": 222, \"p\": 808369, \"vertices\": 6}], \"scope\": \"displayed closed components and genuine ES returns; not a full prime scan or leastness proof\"}\n",
+        "stderr": ""
+      }
+    ],
+    "normal_optimized_identical": true,
+    "mathematical_sha256": {
+      "traps.json": "802509f92c23937c59ff3d14a36a5418fc21b2a6bd6193878370344ad94b0bd3",
+      "graph_fixtures.json": "e2d6b861f3055da962c80618dab73a23d2d5a7d439c7e2e16557e661229cc691",
+      "examples.json": "796892f45bd70006cfcbf80566fd6cea10b9fec8354866f4e7c483fdb3c26c66",
+      "checks.json": "1b47390d84a52aba5b0ade68982d7498e8f33a44cc71c34d8fc5fbd075bb1854",
+      "trap_check.json": "96198c96ccc101be3876be4a6e0a521983204aa1c946721aca6d6f1ee4305750",
+      "scan.json": "f6419b5adb738a2c24ee84f1b0861f270df32ec4db8f3df49e2c991cc7effe3e",
+      "independent.json": "489a3bdc78a689799d92630cb4dcbc6e9739bfec38563a0488dc957116d41f76",
+      "negative_controls.json": "6652b7683416af5db6aa38b7c19079f95647f8b3e032979aecf07a9070d71ce8"
+    },
+    "source_sha256": {
+      "verify.py": "5bca7b0d314bc685d8929555311b9806a83eda583390d189ae02dfa0d9c45e3d",
+      "check_independent.py": "4f9d552744c40d32a10cf915dfe578161ae9f70e1d9a08d5b53edb0f3c86e997",
+      "verify_traps.py": "f86eb1f968d7253f77390ee1a17b1ae55d0d42846f4f441efe46e0c30f847495"
+    }
+  },
+  "render": {
+    "workbench_pages": 8,
+    "preprint_pages": 3,
+    "status": "All 11 pages rendered at 115 dpi and visually inspected; no clipped/out-of-page spans; no overfull box or unresolved reference after second LaTeX pass."
+  },
+  "nonclaims": [
+    "No independent mathematical review",
+    "No Lean build",
+    "No prior full-corpus audit",
+    "No universal ES theorem or counterexample",
+    "No new ES verification range",
+    "No historical priority",
+    "No remote PR at this stage"
+  ]
+}

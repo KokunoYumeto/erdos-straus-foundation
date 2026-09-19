@@ -15,6 +15,13 @@ pdflatex -halt-on-error preprint.tex
 
 The checker uses only the Python standard library. It verifies all 80 recursive prime-proof nodes, all original factorization and divisor data for the triangle, all three square-nine source factorizations, and an independent positive ES solution at the same p. The generated `core_certificate.json` preserves exact integer counts and ordered data. Use an arbitrary-precision JSON parser; numbers exceed 2^53.
 
-The full workbench tranche additionally includes an explicit dual-number CRT, primary/conjugate cubic-symbol tables, fine section carries, a separate full checker and a bounded triangle scan. This public portable checker is intentionally scoped to the central arithmetic certificate, not that larger scan. Preliminary factor discovery used SymPy, but neither final primality nor this replay depends on it.
+The [`full/`](full/README.md) directory preserves the complete workbench
+tranche byte-for-byte. It includes the seven-page source and PDF, explicit
+dual-number CRT, primary/conjugate cubic-symbol tables, fine section carries,
+both complete replay implementations, deterministic certificates, the bounded
+triangle scan, typed morphism register, and Turn 4 handoff. This public portable
+checker is intentionally scoped to the central arithmetic certificate, not
+that larger scan. Preliminary factor discovery used SymPy, but neither final
+primality nor this replay depends on it.
 
 The triangle has minimum possible cycle length within the all-3-mod-4 vertex type; no least-prime claim is made. No whole-graph enumeration at the large prime, infinite prime-family theorem, universal graph closure, ES proof, Lean build, independent mathematical review, or historical-priority determination is asserted. The collective byline is The Clankers. Antecedents are credited at their actual use in the proof.

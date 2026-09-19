@@ -1,0 +1,8 @@
+{
+  "bound": 250000,
+  "checks": 1863,
+  "imports_predecessor_or_main": false,
+  "prime_nodes": 80,
+  "status": "passed",
+  "triangle_vectors": 1215
+}

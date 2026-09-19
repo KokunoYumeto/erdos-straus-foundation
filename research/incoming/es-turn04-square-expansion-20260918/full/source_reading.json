@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-18",
+  "task": "Turn 4: all-cardinality mixed square-source reduction and original integer carry",
+  "ES_main": "2e75574e8bdc9cc3f8584002ee35f10e475ae09c",
+  "ES_tree": "50f21f5328a2e2feed20ab7ae2c34ecb18678a10",
+  "centl_main": "42508684c4386b575d7b52e763565345a76bcb9e",
+  "antecedents": [
+    {
+      "path": "/mnt/data/es_turn3_sextic_triangle_20260918/core.tex",
+      "sha256": "3cf8ee71b427ccd935684d78d28eb0ed92060f3312754fc4cd76ec1e293c4aa7",
+      "scope": "Full file read using Files; relevant source expansion, domains, return and original square bounds checked."
+    },
+    {
+      "path": "/mnt/data/es_turn3_sextic_triangle_20260918/HANDOFF_TURN_4.md",
+      "sha256": "93b12bbe985b1a15da6d0139a4dafd46edf122284916801ccf0f6916d77a5bcb",
+      "scope": "Full read; canonical closure is not retried; mixed higher-index extension selected."
+    },
+    {
+      "path": "/mnt/data/erdos_straus_cumulative_through_turn3_20260918.zip",
+      "sha256": "0ce39f657953ca1db9dc6b64727060a2b0c5c2612bb429b394181d0255813364",
+      "scope": "Sealed predecessor archive, preserved byte-for-byte. Its full historical content has not been re-audited this turn."
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "The Clankers",
+      "year": 2026,
+      "title": "Primitive sextic cycles and square-source escape for the Erdős–Straus selectors",
+      "locator": "Full Turn 3 core, Sections 6–7; earlier source/return definitions in Section 2",
+      "commit": "852f86e085c7bfbb381b85cafb222a5802194e63",
+      "role": "Inherited all-3-mod-4 square escape and scope; not imported as a mixed theorem."
+    },
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/EXTERNAL-NR-FACTOR-CYCLE.md",
+      "blob": "95cafb07787de8593548e6397dde0b31ab22f864",
+      "locator": "Sections 1–7, full note read",
+      "role": "Inherited canonical source existence and reciprocity; all actual factor edges retained."
+    },
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/UNIVERSAL-SQUARE-LIFT-SHADOW-CLASSIFICATION.md",
+      "blob": "6bce22cdf0d06ef0f59c3d578ecc636c91460a24",
+      "locator": "Sections 3–6; full note read",
+      "role": "Antecedent comparison only. Its unbounded Type-A/B shadow parameters are not substituted for the fixed-p bounded source."
+    },
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/SQUARE-LIFT-COUNTEREXAMPLE-RESULTS.md",
+      "blob": "f4f210d3c018a8a6f688e196b05272e1115b9f4d",
+      "role": "Read for scoped prior computational work; its reported run was not replayed or imported as proof."
+    },
+    {
+      "author": "Allen Hatcher",
+      "year": 2022,
+      "title": "Topology of Numbers",
+      "url": "https://pi.math.cornell.edu/~hatcher/TN/TNbook.pdf",
+      "locator": "Section 6.4, pp. 205–212, author September 2024 edition",
+      "role": "Quadratic reciprocity and supplementary laws; text read. One attempted PDF screenshot returned an internal error; no graphical fact was needed."
+    },
+    {
+      "authors": "Christian Elsholtz and Terence Tao",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdős–Straus equation on unit fractions",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "locator": "Section 2, Propositions 2.2 and 2.6, equations 2.1–2.22",
+      "role": "Type I/II coordinates. The six-coordinate crosswalk and denominator permutations are calculated and checked on actual returned states."
+    }
+  ],
+  "content_level_search": {
+    "queries": [
+      "square source escape (two connected workbenches)",
+      "\"Erdos Straus\" \"12889\" \"43\" \"61\"",
+      "\"Erdős–Straus\" \"square-source\"",
+      "\"Erdos Straus\" \"closed\" \"cofactor\""
+    ],
+    "result": "No exact earlier match for the current all-cardinality finite reduction or at-most-five exclusion was established in this scoped search. No historical-priority conclusion."
+  },
+  "new_derivations": [
+    "Paired CRT-root prefix discrepancy and all-cardinality C-free prefix",
+    "Mixed mod-12 eligibility table and corrected edge count",
+    "Finite cycle-cofactor reduction of every fixed-cardinality closed set",
+    "Complete computer-assisted at-most-five exclusion and bounded six-vertex production",
+    "Exact original integer carry through overlapping square factors",
+    "All 22 local square sources empty at p=12889, q=43,61, with a surviving actual path"
+  ],
+  "nonclaims": [
+    "No ES solution for every prime or ES counterexample",
+    "No upper bound on the size of all remaining closed sets",
+    "No target positivity inferred from factor escape",
+    "No all-prime statement inferred from the bounded 5000 scan",
+    "No full historical raw JSONL read",
+    "No Lean build or independent mathematical review",
+    "No source-wide analytic identification",
+    "No historical-priority claim"
+  ],
+  "discovery_record": {
+    "status": "completed_discovery_only",
+    "command": "python probe.py 1000000",
+    "bound": 1000000,
+    "hard_primes": 2370,
+    "canonical_trapped_prime_records": 724,
+    "retained_trap_records_after_adding_first_three_valid_square_ports": 0,
+    "record_fields": [
+      "p",
+      "vertex_count",
+      "canonical_trapped_vertices",
+      "augmented_trapped_vertices",
+      "first_20_augmented_trapped_vertices"
+    ],
+    "elapsed_seconds_reported_in_log": 3394.44,
+    "source_sha256": "103fcca818387b96e13216bd57f4336e7314ecb6db718ffdb2346911e8830bc0",
+    "result_sha256": "0ab81eff7fe3d4c9234dbe4b9e589f81e871ec25c0da4987d58bda77defd2c31",
+    "log_sha256": "3848c01c532f7301617012f9b95d815b7940de6c82ee8d9cb5bda6e17f91345d",
+    "scope": "Full canonical graph at every hard prime <=1000000, followed by the first three valid square ports only when canonical closure has a failed closed set. No universal conclusion; not independently rerun across this larger bound in the release check."
+  },
+  "publication": {
+    "PR": 19,
+    "commit": "4b6bb0f187fa44bb62fc8c51e996f05dfc90e2d7",
+    "scope": "Standalone four-page proof, complete two-implementation finite cofactor verification, and portable original examples. Full local workbench/root/graph replay and 21-map register are additionally delivered in the ZIP."
+  }
+}

@@ -45,6 +45,30 @@
       "changes_zenodo_edition": false
     },
     {
+      "id": "es:continuation:2026-09-17:turn-1",
+      "overview": "research/incoming/es-turn01-joint-failure-20260917/README.md",
+      "proof": "research/incoming/es-turn01-joint-failure-20260917/workbench.tex",
+      "checkers": [
+        "research/incoming/es-turn01-joint-failure-20260917/verify.py",
+        "research/incoming/es-turn01-joint-failure-20260917/check_independent.py",
+        "research/incoming/es-turn01-joint-failure-20260917/verify_examples.py"
+      ],
+      "scope": "Complete simultaneous exterior/middle target-collision law, every actual factor-cut inequality, all effective quotient normal forms through order eight, and the exact prime-residual index-six edge; no uniform all-index or occupancy theorem.",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-18:turn-2",
+      "overview": "research/incoming/es-turn02-shifted-graph-20260918/README.md",
+      "proof": "research/incoming/es-turn02-shifted-graph-20260918/workbench.tex",
+      "checkers": [
+        "research/incoming/es-turn02-shifted-graph-20260918/verify.py",
+        "research/incoming/es-turn02-shifted-graph-20260918/check_independent.py",
+        "research/incoming/es-turn02-shifted-graph-20260918/verify_traps.py"
+      ],
+      "scope": "Complete shifted-factor graph, all-type transitions, finite closure decision and integral cycle inverse; the p=2521 sink disproves universal local selector closure but not Erdős–Straus.",
+      "changes_zenodo_edition": false
+    },
+    {
       "id": "es:continuation:2026-09-18:turn-3",
       "overview": "research/incoming/es-turn03-primitive-sextic-20260918/README.md",
       "proof": "research/incoming/es-turn03-primitive-sextic-20260918/preprint.tex",
@@ -63,8 +87,59 @@
       ],
       "scope": "Mixed square-source factor expansion, six-vertex reachability, all-fixed-cardinality finite reduction, and complete exclusion of closed sets of cardinality at most five; factor escape is not original E/M selector occupancy.",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-19:turn-5",
+      "overview": "research/incoming/es-turn05-channel-coupling-20260919/README.md",
+      "proof": "research/incoming/es-turn05-channel-coupling-20260919/workbench.tex",
+      "reader": "research/incoming/es-turn05-channel-coupling-20260919/workbench.pdf",
+      "checkers": [
+        "research/incoming/es-turn05-channel-coupling-20260919/verify.py",
+        "research/incoming/es-turn05-channel-coupling-20260919/verify_windows.py",
+        "research/incoming/es-turn05-channel-coupling-20260919/check_independent.py",
+        "research/incoming/es-turn05-channel-coupling-20260919/check_windows.py"
+      ],
+      "scope": "Exact E/M involution on Div(a/4), sharp joined windows and complete one-simple-nonresidue counts, exact primitive pair fibres and Möbius return, plus proved six-vertex and reciprocal-source limits; complete-shell positivity remains open.",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-19:turn-6",
+      "overview": "research/incoming/es-turn06-full-shell-20260919/README.md",
+      "proof": "research/incoming/es-turn06-full-shell-20260919/workbench.tex",
+      "reader": "research/incoming/es-turn06-full-shell-20260919/workbench.pdf",
+      "claims": "research/incoming/es-turn06-full-shell-20260919/claims.json",
+      "checkers": [
+        "research/incoming/es-turn06-full-shell-20260919/verify.py",
+        "research/incoming/es-turn06-full-shell-20260919/check_independent.py"
+      ],
+      "scope": "At every sufficiently large prescribed prime after summing all first-half shells, quantitative failure of principal/adverse-sign and fixed-sublinear raw spectral estimates; exact integer collision bounds and proper nonprincipal certificates survive, but universal target-pair positivity is unproved.",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-19:turn-6b",
+      "overview": "research/incoming/es-turn06b-pointwise-localization-20260919/README.md",
+      "proof": "research/incoming/es-turn06b-pointwise-localization-20260919/pointwise_localization.md",
+      "checker": "research/incoming/es-turn06b-pointwise-localization-20260919/verify_localization.py",
+      "scope": "Pointwise least-nonresidue localization of every original middle and exterior state, exact endpoint-excluded boundary gap, reciprocal-coordinate bound, and free fourfold fundamental domain; localization does not imply remaining-region occupancy.",
+      "changes_zenodo_edition": false
     }
   ],
+  "current_frontier": {
+    "source": "research/incoming/es-turn06-full-shell-20260919/HANDOFF_TURN_7.md",
+    "unproved_statement_tex": "\\forall p\\equiv1\\pmod4\\text{ prime},\\quad \\sum_{p/4<a<p/2} T_a>0",
+    "available_exact_forms": [
+      "diagonal-free signed character identity",
+      "zero-truncated integer collision lower bounds with original pair return",
+      "complement-aware convex refinement",
+      "proper conjugate-stable even-character projections"
+    ],
+    "excluded_shortcuts": [
+      "canonical graph closure",
+      "factor supply without selector occupancy",
+      "the annihilated Jacobi term",
+      "untruncated fixed-sublinear adverse-sign spectral domination"
+    ]
+  },
   "records": {
     "artifacts": "polyclank/artifacts.json",
     "claims": "polyclank/claims.json",

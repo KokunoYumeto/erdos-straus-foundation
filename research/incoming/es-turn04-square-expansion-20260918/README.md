@@ -22,6 +22,13 @@ pdflatex -halt-on-error preprint.tex
 
 The first enumerator derives affine interval bounds from the exact monotonicity formula. The second independently reconstructs the affine numerators, uses binary-search pruning, exhaustive trial division and literal quadratic residue sets; it imports none of the first implementation. The small example checker independently enumerates every divisor and verifies the ordered positive return. Python optimization is supported; all arithmetic is exact. The hash is a replay identifier, not a substitute for the proved pruning theorem.
 
-The full local tranche additionally contains the seven-page workbench proof, prime-power root counts, mixed reciprocity tables, exact coefficient fibres, a complete square-source scan through hard p<=5000 and a 21-map register. Those additional replay lanes are not falsely attributed to this smaller public checker.
+The [`full/`](full/README.md) directory now preserves the broader source
+tranche: the seven-page workbench proof source, prime-power root counts, mixed
+reciprocity tables, exact coefficient fibres, the complete square-source scan
+through hard `p<=5000`, both full replay implementations, deterministic
+certificates, the 21-map register, attempt ledger, and Turn 5 handoff. The
+`discovery/` scan through one million is retained there as exploratory evidence
+only. Those additional replay lanes are not falsely attributed to the smaller
+portable checker above.
 
 The canonical source and reciprocity antecedents are Bryan's pinned CENTL notes; original Type I/II coordinates are attributed to Elsholtz–Tao; Turn 3 is PR #18. This contribution adds new files only. No least-example assertion, whole-conjecture result, new ES verification range, independent mathematical review, Lean build or historical-priority determination is claimed.

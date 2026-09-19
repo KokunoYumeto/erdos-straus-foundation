@@ -1,0 +1,221 @@
+{
+  "date": "2026-09-19",
+  "success": true,
+  "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "source_sha256": {
+    "verify.py": "6f9e12f17e909845fe6c0e8811cba284cc9ad71794e8b42a3a358ae22b48113a",
+    "check_independent.py": "d7ccb21b5d821f556586378adec5a39683565b33894168d7fd4080f5c2ac321f",
+    "core.tex": "1154c91a11de61c353f04f10c7b93edbd7600f728b4d5ef66515d9e94c6c23f6",
+    "preprint.tex": "8401951657f8ab46a8d7213f13f4841eb96b4658579c54bcdd8ac30f425ab693",
+    "references.tex": "5039813ca56c38ac963f6ea0ec25ddc704df860b5b0e5cc0355ab71fd3b7f25e"
+  },
+  "main": {
+    "explicit_checks": 1037513,
+    "full_shell_bound": 3000,
+    "hard_bound": 2000000,
+    "negative_controls": [
+      "a nonzero coarse source alone forces the target",
+      "a positive coarse coefficient equals its parity reduction",
+      "discarding the residual collision term is harmless",
+      "a positive target always has positive principal lower bound",
+      "coset sums are an isometry for the fine counting norm",
+      "an arbitrary coefficient array has the original fourfold orbit divisibility",
+      "coset counts determine fine energy",
+      "the real and balanced-integer lower bounds always agree",
+      "a useful selected spectrum must be a character subgroup"
+    ],
+    "no_universal_occupancy_claim": true,
+    "success": true
+  },
+  "independent": {
+    "divisor_power_constants_check": [
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        29
+      ],
+      [
+        6,
+        139
+      ],
+      [
+        7,
+        1424
+      ],
+      [
+        8,
+        45197
+      ]
+    ],
+    "explicit_checks": 928678,
+    "full_failure_replays": [
+      {
+        "all_rows_sha256": "86ca0e8d0183f7a79c945eea9b3f73bc139ef401fe481afe084a9ff6fa927fc2",
+        "max_L": [
+          0,
+          1
+        ],
+        "max_global_integer_lower": 0,
+        "occupied_shell_count": 34,
+        "p": 87481,
+        "shells": 21870
+      },
+      {
+        "all_rows_sha256": "989107f88a2bdbcca83219bad13d1e1fd496245c6ff232c01700faaa6c49473e",
+        "max_L": [
+          0,
+          1
+        ],
+        "max_global_integer_lower": 2,
+        "occupied_shell_count": 44,
+        "p": 196561,
+        "shells": 49140
+      },
+      {
+        "all_rows_sha256": "5815e0c061e1eb30cc19f0b1ef3b5c9bdb2c5536f1832c556744aa3bfc9246ae",
+        "max_L": [
+          0,
+          1
+        ],
+        "max_global_integer_lower": 0,
+        "occupied_shell_count": 64,
+        "p": 944329,
+        "shells": 236082
+      },
+      {
+        "all_rows_sha256": "5ff47c28a1da393f728ccc41f3965cf93e5d8ad02c7eb2bf7048140962affd0f",
+        "max_L": [
+          0,
+          1
+        ],
+        "max_global_integer_lower": 0,
+        "occupied_shell_count": 90,
+        "p": 1915201,
+        "shells": 478800
+      }
+    ],
+    "hard_bound": 2000000,
+    "hard_prime_count": 4519,
+    "positive_certificates": 4515,
+    "scope": "No main/antecedent imports; full small atlas, all hard positive certificates, all first-half shells of every listed principal miss, examples, independent convex DP, a separate rational spectral interval, and finite divisor-power constants. Not an independent mathematical review.",
+    "small_atlas": {
+      "E_states": 5700,
+      "M_states": 5268,
+      "occupied_shells": 3918,
+      "original_divisor_vectors": 1877004,
+      "primes": 211,
+      "shells": 73798,
+      "target_pairs": 70596
+    },
+    "small_rows_sha256": "ad1024d98046eaeae69c3c5d413e02eea0be6e68fb15a0b31c7c931e8e110192",
+    "spectral_check": {
+      "R": 47,
+      "intervals": [
+        [
+          1009,
+          1010
+        ],
+        [
+          24,
+          25
+        ]
+      ],
+      "method": "pi=4*(atan(1/2)+atan(1/3)); separate rational Taylor series; literal original word differences",
+      "p": 944329
+    },
+    "success": true
+  },
+  "normal_optimized_mathematical_outputs": [
+    {
+      "name": "abstract.json",
+      "sha256": "cee40dded67f3adf229898e8f6d24c67d582cbaa94bc01b8c371e32100bda2a3",
+      "bytes": 232,
+      "normal_optimized_identical": true
+    },
+    {
+      "name": "complement.json",
+      "sha256": "3882a9bdf5d4b5e79500194ad09bef07e8afa82c0409558f37f6330bd1e02df5",
+      "bytes": 5508,
+      "normal_optimized_identical": true
+    },
+    {
+      "name": "constants.json",
+      "sha256": "125b6723596b7bbb27e2e4c28c6c507323fa29b24b44ae8808595deb0b7d594d",
+      "bytes": 20822,
+      "normal_optimized_identical": true
+    },
+    {
+      "name": "examples.json",
+      "sha256": "3cff4a71c72c411f8340e7e0bfe455b0ecf0eda8a5082e9beb2e7fa452d62c56",
+      "bytes": 144629,
+      "normal_optimized_identical": true
+    },
+    {
+      "name": "failure_87481.json",
+      "sha256": "1a4af56c5a1afb712797d8cf556d16a00ff6555c1cd1afc4d095ba6785427222",
+      "bytes": 2066075,
+      "normal_optimized_identical": true
+    },
+    {
+      "name": "full_shells.json",
+      "sha256": "c6e566cb6c9e9d8b5e1579c5d0d81e7d3f534d9376891c56541cfaee0ce67cbe",
+      "bytes": 8678779,
+      "normal_optimized_identical": true
+    },
+    {
+      "name": "principal_census.json",
+      "sha256": "09a51f5330e6b6a3b60cf9f7b0af8dd89a9746297db2896c55437941a57b9b22",
+      "bytes": 3007357,
+      "normal_optimized_identical": true
+    },
+    {
+      "name": "spectral.json",
+      "sha256": "6cd542c5bd9479df1cadb995995de2d860e1855be670ce80a4a951de104638eb",
+      "bytes": 42520,
+      "normal_optimized_identical": true
+    },
+    {
+      "name": "summary.json",
+      "sha256": "159dfd9d7afab186bc16e400792effd47a21d5fcd0fbc940c9f1300da4e3b1ae",
+      "bytes": 731,
+      "normal_optimized_identical": true
+    }
+  ],
+  "run_receipts": [
+    "run_normal.json",
+    "run_optimized.json",
+    "run_independent.json"
+  ],
+  "replay_interruptions": [
+    {
+      "scope": "Two combined main/optimized/independent container invocations",
+      "outcome": "Main and optimized completed; wrapper time limit expired before an independent completion receipt. No stale result reused. Independent was rerun standalone to the recorded successful final result."
+    }
+  ],
+  "proof_scope": "The infinite inequalities have written proofs, with exact finite rational constant checks. Numerical enumeration is not the proof of the all-p estimate. Independent implementation is not independent mathematical review.",
+  "render_scope": "Both final PDFs rendered at130dpi; 9 workbench pages and4 preprint pages inspected. Render hashes are in render_receipt.json. Final spelling fixes are checked before packaging.",
+  "lean_build": false,
+  "historical_priority_claim": false,
+  "universal_ES_closure": false,
+  "replay_lanes": {
+    "main_json_outputs": 9,
+    "independent_json_outputs": 1,
+    "all_proof_pages": 13,
+    "all_mode_constant_parameters_checked": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

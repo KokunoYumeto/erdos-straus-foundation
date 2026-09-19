@@ -1,0 +1,229 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=20mm]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Joint E/M obstruction at small period index}
+\author{The Clankers}
+\date{17 September 2026 --- Turn 1 research preprint}
+\begin{document}\maketitle
+\begin{abstract}
+For the complete centered divisor box of an Erd\H{o}s--Straus shell we retain
+both channel targets, their exact collisions, and the arithmetic relation
+$p=4a\pmod R$. Every joint failure with effective period quotient of order at
+most eight has an actually saturated inactive factor block after removal of
+at most two prime occurrences. All such quotient profiles are classified.
+The existing prime-shift index-six result is attributed; the composite-modulus,
+cut-budget and coefficient-fibre extensions are proved here. No universal ES
+occupancy or historical-priority claim is made.
+\end{abstract}
+
+\paragraph{Original source.}
+Fix a prime $p\equiv1\pmod4$, $p/4<a<p/2$, and $R=4a-p$.
+Write $a=\prod q_i^{e_i}$ and retain
+\[
+ \mathcal B=\prod[-e_i,e_i]_{\mathbb Z},\quad
+ v(\beta)=\prod q_i^{\beta_i}\pmod R,\quad
+ u=\prod q_i^{e_i+\beta_i},\quad
+ \mu(g)=\#v^{-1}(g),\quad W=\operatorname{supp}\mu.
+\]
+The inverse is $\beta_i=v_{q_i}(u)-e_i$. The canonical M target is $-1$;
+the E target is $-p^{-1}$, with the recorded alternative $-p$ under
+$\beta\mapsto-\beta$. Thus joint failure is
+$W\cap\{-1,-p,-p^{-1}\}=\varnothing$. The alternative is not a third channel.
+These are the inherited Type I/II coordinates \cite{ET}.
+
+Put $\Gamma=\langle-1,2,q_i\rangle$ in $G=(\mathbb Z/R)^\times$ and
+$K=\{g:gW=W\}$. Since $1\in W$, every period lies in $W$, so $K\le\Gamma$
+and this is also the actual stabilizer in $G$. In
+\[
+ A=\Gamma/K,\quad d=|A|,\quad S=W/K,\quad
+ \alpha=-1K,\quad z=2K,\quad\eta=pK,\quad g_i=q_iK,
+\]
+retain the arithmetic equation
+\[
+ \boxed{\eta=z^2\prod_i g_i^{e_i}.}                       \tag{1}
+\]
+The extra coefficient unit $2$ has not been supplied as an available prime.
+The ambient index $[G:K]$ can exceed the effective index $d$.
+
+\begin{theorem}[Every target collision and factor cut]
+On joint failure, $\alpha$ is a nonidentity involution, $d$ is even,
+$\eta\ne\alpha$, and the distinct forbidden classes
+$F=\{\alpha,\alpha\eta,\alpha\eta^{-1}\}$ number one, two, or three
+according as $\eta=1$, $\eta^2=1\ne\eta$, or $\eta^2\ne1$.
+Call $i$ active if $g_i\ne1$. Then
+\[
+ \operatorname{ord}(g_i)>2e_i+1,\qquad
+ \boxed{2\sum_{i\text{ active}}e_i\le d-1-|F|.}        \tag{2}
+\]
+For a nonempty active-index set $J$, let $C_J=\langle g_i:i\in J\rangle$,
+$U_J=\prod_{i\notin J}\{g_i^{-e_i},\ldots,g_i^{e_i}\}$ and
+$F_J=(FU_J^{-1})\cap C_J$. Then
+\[
+ \boxed{2\sum_{i\in J}e_i\le |C_J|-1-\max(1,|F_J|).}    \tag{3}
+\]
+\end{theorem}
+\begin{proof}
+$S$ has no nonidentity period, since lifting one would contradict the definition
+of $K$. It is symmetric under inversion. The collision assertions follow by
+cancelling $\alpha$; $\eta=\alpha$ would put $1$ in $F$.
+A factor whose interval fills its cyclic subgroup would give a period, so its
+order exceeds $2e_i+1$. Translate its interval and adjoin $2e_i$ copies of
+$\{1,g_i\}$. Each step strictly grows: otherwise $g_i$ would stabilize that
+partial support and every subsequent product. This gives $|S|\ge1+2\sum e_i$,
+proving (2). The same argument in $C_J$ gives the corresponding lower bound
+for its subproduct. That subproduct avoids $F_J$ and cannot equal $C_J$, which
+would also create a period. This proves (3), including the empty $F_J$ case.
+\end{proof}
+The single-target growth framework is classical Kneser theory; the two-target
+prime-shift form already appears in \cite{Bryan}. No asymptotic estimate is used.
+
+\newpage
+\begin{theorem}[Complete classification through effective order eight]
+Let $B=\prod_{q_i\in K}q_i^{e_i}$. If $d\le8$ and the shell fails jointly,
+then
+\[
+ \boxed{W(B)=K,\qquad\Omega(a/B)\le2.}                   \tag{4}
+\]
+For nonpure cases the complete table is
+\[
+\begin{array}{c|c|c|c}
+ A&\text{active capacity}&\text{active directions}&\text{phase}\\\hline
+ C_6&1&\{g\},\ |g|=6&\eta=g^{\pm1}\\
+ C_6&2&\{g,g^{-1}\},\ |g|=6&\eta=1\\
+ C_8&1&\{g\},\ |g|=4&\eta=1\\
+ C_8&1&\{g\},\ |g|=8&\eta=g^{\pm1}\\
+ C_8&2&\{g,g^{-1}\},\ |g|=8&\eta=1\\
+ C_4\times C_2&1&\{g\},\ |g|=4&\alpha\notin\langle g\rangle,\ \eta=g^{\pm1}.
+\end{array}                                                  \tag{5}
+\]
+One occurrence means one first-power prime. Two mean one square prime or two
+distinct simple primes, with their individual signs retained. The support is
+$\{1,g^{\pm1}\}$ or $\{1,g^{\pm1},g^{\pm2}\}$ accordingly.
+The pure cases $W=K$ are exactly: $C_2$ with $\eta=1$;
+$C_2^2$ with independent $\alpha,z$ and $\eta=1$;
+$C_6$ with $|z|=3$ or $6$;
+$C_8$ with $|z|=8$;
+and $C_4\times C_2$ with $|z|=4$ and $\alpha\notin\langle z\rangle$.
+In the pure cases $\eta=z^2$. All rows retain (1) and generation of $A$ by
+$\alpha,z,g_i$. Conversely, these data and $W(B)=K$ imply joint failure and
+make $K$ the actual stabilizer.
+\end{theorem}
+\begin{proof}
+At order two there is no active element by (2). At order four, an active
+generator occurs once and leaves only $\alpha=g^2$ unoccupied, forcing
+$\eta=1$; (1) instead makes $\eta$ an odd power of $g$. Thus the case is pure,
+and its quotient cannot be cyclic since then $z^2=\alpha$.
+At order six, every active element has order six, the budget permits at most
+two occurrences, and all are in the same inverse pair. One gives the three-point
+interval and odd $\eta$; excluding $\eta=\alpha$ leaves $g^{\pm1}$. Two give
+the five-point interval missing only $\alpha$, forcing $\eta=1$.
+
+At order eight, $C_2^3$ has no active element and cannot be generated purely
+by $\alpha,z$. In $C_4\times C_2$, active elements have order four and capacity
+one. Two in the same cyclic subgroup fill it, creating a period. Two in the
+different cyclic subgroups give seven support elements, requiring $\eta=1$;
+their central product lies outside the square subgroup, contradicting (1).
+Three occurrences repeat a cyclic subgroup. For one, $z^2g=g^{\pm1}$, and
+$\alpha$ must be outside its cyclic subgroup to avoid an exterior hit.
+
+In $C_8$, mixed orders four and eight give seven support elements and an odd
+$\eta$, whereas failure requires $\eta=1$. Two order-eight directions not in
+one inverse pair fill the group. Three aligned occurrences give seven elements
+but odd $\eta$. Two order-four occurrences fill their subgroup. Testing the
+remaining one- or two-occurrence intervals gives precisely (5). The pure cases
+follow because $A$ is generated by $\alpha,z$, with $\eta=z^2$.
+
+Each active interval in (5) has an extreme quotient value attained by exactly
+one active exponent vector. Its fine support is a translate of $W(B)$ and is
+an entire nonempty $K$-coset. Therefore $W(B)=K$. For the converse each listed
+support is aperiodic and avoids the indicated targets; multiplying by the
+actual $K$-saturated block proves both assertions.
+\end{proof}
+
+Thus a non-subgroup joint failure first has $d=6$. A non-subgroup failure with
+exactly two distinct target classes has $d\ge12$: no row up to eight allows
+it, and $C_{10}$ has only the forbidden involution $\eta=\alpha$.
+For $R=q\equiv3\pmod4$ prime with $(p/q)=-1$, an effective index-six failure
+reduces further to $a=Br$ with exactly one first-power prime $r$ outside $K$,
+$W(B)=K$, and $pK=r^{\pm1}K$. The existing ambient-index-six theorem is
+credited to \cite{Bryan}; full ambient and effective indices are not conflated.
+
+\newpage
+\paragraph{The quotient does not erase the original coefficients.}
+Choose $\sigma:A\to\Gamma$ with $\sigma(1)=1$. Every original unit has the
+unique coordinates $(c,k)$ with $g=\sigma(c)k$, and the complete product is
+\[
+ (c,k)(d,l)=(cd,kl\omega(c,d)),\qquad
+ \omega(c,d)=\sigma(c)\sigma(d)\sigma(cd)^{-1}\in K.       \tag{6}
+\]
+Expanding the representatives proves the normalized cocycle identity.
+The inverse reads $c=gK$, $k=g/\sigma(c)$. The fine count remains
+$\nu(c,k)=\mu(\sigma(c)k)$; its quotient is $\bar\mu(c)=\sum_k\nu(c,k)$.
+The quotient kernel has the full star-difference basis
+$e_{\sigma(c)k}-e_{\sigma(c)}$, $k\ne1$. Quotient values plus nonreference
+coefficients reconstruct the original vector. The same statement holds on
+each actual exponent fibre. No factor of $|K|$ is divided out of a count.
+
+Writing $T=\tau(B^2)$, one active simple prime gives quotient masses $(T,T,T)$;
+one active square gives five copies of $T$; two distinct active simple primes
+give $T(1,2,3,2,1)$. The fine distributions retain the corresponding translates
+of $\mu_B$, not uniform masses. A supported zero in this quotient retains its
+source label and relation primitive, rather than becoming the absent $\tau$
+of the original SplitZero scalar.
+
+\paragraph{Actual arithmetic examples.}
+For $p=3361$, $a=848=2^4\cdot53$, $R=31$,
+\[
+ K=\{1,2,4,8,16\},\quad d=6,\quad pK=53K.
+\]
+Both channels fail in this shell. The inactive coefficients are one at $1$
+and two at the other four members of $K$. Each occupied quotient coset has
+mass nine; dividing by five would not recover its integer coefficients.
+
+For $p=5569$, $a=1397=11\cdot127$, $R=19$, the other phase occurs:
+$K=\{1,7,11\}$ and $pK=127^{-1}K$. With $\sigma(j)=2^j$, $0\le j<6$,
+\[
+ \boxed{\omega(i,j)=7^{\lfloor(i+j)/6\rfloor}\pmod{19}.} \tag{7}
+\]
+Every lift of the quotient generator has order eighteen. Replacing the
+extension by $C_6\times C_3$ would lose this actual cubic carry.
+
+At $p=22129$, $a=5537=7^2\cdot113$, $R=19$, the exterior-only index-three
+defect is rescued by M:
+\[
+ (u,h,r,s,\lambda)=(49,49,1,113,6),\qquad
+ \frac4{22129}=\frac1{5537}+\frac1{735169638}+\frac1{6505926}.
+\]
+The composite shell $p=109,a=31,R=15$ has targets $(14,11,11)$ and neither
+channel hits. The prime-parameter example $p=6340273,a=1259^2,R=51$ has
+$W=K=\{1,35\}$, effective index eight and ambient index sixteen, demonstrating
+why the two indices must remain separate.
+
+\paragraph{Ordered reconstruction and scope.}
+For any original hit, $d_0=\gcd(a,u)$ and
+$(h,r,s)=(d_0^2/u,u/d_0,a/d_0)$ give $(a,hs\kappa,phr\kappa)$ in E with
+$\kappa=(pr+s)/R$, or $(a,phs\lambda,phr\lambda)$ in M with
+$\lambda=(r+s)/R$. The inverse is $u=a^2/(Ry-pa)$ or $pa^2/(Ry-pa)$,
+respectively. The full workbench proves first-half completeness, every
+normal-form case, all target cuts, and every original inverse. The standard-library
+verifier and a separately implemented direct-divisor checker supply bounded
+finite certificates; they do not prove universal occupancy or formal Lean status.
+
+\begingroup\small
+\begin{thebibliography}{3}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to
+the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc.,94}(1),
+50--105. arXiv:1107.1010, \S2.
+\bibitem{Bryan} chasebryan (2026, August 15). \emph{Two-target Kneser collapse
+for external nonresidue shifts}, \S\S4--9; \emph{Exact index-six normal form
+for the combined FAB targets}, \S\S3--8. \texttt{chasebryan/centl}, source blobs
+\texttt{41e75319\ldots917d5}, \texttt{81f984e6\ldots{}b59e}. Full identifiers accompany
+this source. The underlying addition theorem is DeVos (2013), arXiv:1303.3539,
+Theorem 1, a proof of classical Kneser theory.
+\end{thebibliography}
+\endgroup
+\end{document}

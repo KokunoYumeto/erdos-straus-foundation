@@ -1,0 +1,508 @@
+\section{Scope and the result of the prescribed test}
+This is Turn 2 of the ten-turn ES programme. Its task is to join the complete
+joint exterior/middle obstruction to the universally available shifted-factor
+system. The canonical system, its reciprocity laws, and existence of a cycle
+are inherited from Bryan's note \cite[\S\S1--7]{BryanGraph}. We retain \emph{all}
+nonresidue factors, extend Turn 1 to its auxiliary composite vertices, calculate
+four transition types and their exact common domains, and give a complete
+closed-component decision theorem. The theorem that every closed component
+contains an occupied local selector is false. We certify a closed seven-cycle
+at $p=2521$, and show a primitive sextic obstruction feeding a closed component
+at $p=3361$. These are counterexamples to that proposed proof step, not to ES.
+No historical-priority claim is made. The complete graph construction below is
+proved directly; none of the source's status labels replaces a proof.
+
+\section{The universal original graph, with both vertex types}
+Let $p$ be prime in one of the six classes
+$1,121,169,289,361,529\pmod{840}$. Thus $p\equiv1\pmod{24}$ and
+$(2/p)=(3/p)=(5/p)=(7/p)=1$, by quadratic reciprocity and its supplementary laws.
+Here and below parentheses denote the Legendre symbol at a prime denominator
+and the Jacobi symbol at a positive odd composite denominator.
+Set
+\[
+ V_p=\{q<p:q\text{ prime},\ (q/p)=-1\},\qquad
+ \sigma_q=\begin{cases}1&q\equiv3\pmod4,\\3&q\equiv1\pmod4,\end{cases}
+ \quad R_q=\sigma_q q,\quad A_q=(p+R_q)/4.                 \tag{1}
+\]
+\begin{lemma}[Complete source and outgoing factors]
+$V_p$ is nonempty, its members are at least 11, and for every $q\in V_p$,
+\[
+ p/4<A_q<p,\quad R_q\equiv3\pmod4,\quad \gcd(pA_q,R_q)=1,
+ \quad (A_q/p)=-1.                                      \tag{2}
+\]
+Write $A_q=\prod_t t^{e_{qt}}$. The complete outgoing edge set is
+\[
+ q\longrightarrow r\quad\Longleftrightarrow\quad
+ r\mid A_q,\ r\in V_p,
+ \qquad\text{with retained weight }m_{qr}=e_{qr}.          \tag{3}
+\]
+It is nonempty, has no self-edge, and
+$\sum_{r\in V_p}m_{qr}$ is odd. Even positive multiplicities are retained.
+\end{lemma}
+\begin{proof}
+A positive nonresidue below $p$ has a nonresidue prime factor below $p$.
+The four displayed residue symbols exclude $2,3,5,7$.
+Integrality and $p/4<A_q<p$ follow from (1) and $q<p$. Since a common divisor
+of $A_q,R_q$ divides $p$, and $p$ divides neither $q$ nor $3$, (2)'s coprimality
+holds. Modulo $p$, $4A_q=\sigma_q q$, so $(A_q/p)=-1$.
+Factoring this equality of characters gives the odd multiplicity sum and a
+nonempty outgoing set. Every outgoing prime is at most $A_q<p$, and $q$ itself
+cannot divide $A_q$. These assertions use all original prime multiplicities.
+\end{proof}
+
+At the vertex retain the entire centered source
+\[
+ \mathcal B_q=\prod_{t\mid A_q}[-e_{qt},e_{qt}]_{\mathbb Z},\quad
+ v_q(\beta)=\prod_t t^{\beta_t}\pmod{R_q},\quad
+ u_q(\beta)=\prod_t t^{e_{qt}+\beta_t}.                    \tag{4}
+\]
+The last map is a bijection to $\operatorname{Div}(A_q^2)$, inverse
+$\beta_t=v_t(u)-e_{qt}$. Keep the integer function
+$\mu_q(g)=\#v_q^{-1}(g)$, its support $W_q$, and separately the canonical hits
+\[
+ E_q=\{u\mid A_q^2:R_q\mid4u+1\},\qquad
+ M_q=\{u\mid A_q^2:R_q\mid u+A_q\}.                      \tag{5}
+\]
+The targets on (4) are $-p^{-1}$ and $-1$. Inversion of the \emph{same} exponent
+vector gives the reflected exterior target $-p$, not a third channel.
+
+\paragraph{Marked return at an auxiliary vertex.}
+For a hit put $a=A_q,R=R_q,d=\gcd(a,u)$ and
+\[
+ (h,r_0,s_0)=(d^2/u,u/d,a/d),\quad a=hr_0s_0,\quad u=hr_0^2.
+\]
+Prime valuations prove integrality and $\gcd(r_0,s_0)=1$. The ordered returns are
+\[
+ \begin{array}{ll}
+ E:&\kappa=(pr_0+s_0)/R,\quad (x,y,z)=(a,hs_0\kappa,phr_0\kappa),\\
+ M:&\lambda=(r_0+s_0)/R,\quad (x,y,z)=(a,phs_0\lambda,phr_0\lambda).
+ \end{array}                                               \tag{6}
+\]
+The gates and units imply the quotients are integers; multiplying the reciprocal
+sum by $phr_0s_0\kappa$ or $phr_0s_0\lambda$ proves $4/p$.
+The ordered inverse is
+\[
+ u=\frac{a^2}{Ry-pa}\ (E),\qquad
+ u=\frac{pa^2}{Ry-pa}\ (M).                               \tag{7}
+\]
+These are inherited Type I/II coordinates \cite[\S2, Propositions 2.2, 2.6]{ET}.
+The preserved record is
+\[
+(p,q,\sigma_q,R_q,A_q,u,\beta,E/M,h,r_0,s_0,\kappa\text{ or }\lambda;x,y,z).
+\]
+
+The prime-residual vertices satisfy $A_q<p/2$. The composite vertices need not.
+If $A_q>p/2$, there can be no M hit: its last two denominators are multiples of
+$p$, and the reciprocal sum would be at most $1/A_q+2/p<4/p$.
+For an E hit in this larger range, $z\ge p$ and $y<p/2$. To verify the latter,
+order any ES triple $x\le y\le z$. If $x>p/2$, then $y<p$, $z=pk$, and
+$t=(4k-1)/p$ is a positive integer $3\pmod4$. Writing $x=gA,y=gB$,
+$\gcd(A,B)=1$, gives $k=ABD$, $tg=D(A+B)$, $\gcd(t,D)=1$.
+The inequality $x>p/2$ implies $2DA(A-B)>-1$, so $A\ge B$; ordering gives
+$A=B=1$, whence $t\mid2$, a contradiction. Equality is impossible for odd $p$.
+The coordinate switch is explicitly
+$(h,r_0,s_0,\kappa)\mapsto(h,\kappa,s_0,r_0)$.
+Indeed $\gcd(\kappa,s_0)=1$ follows from $R\kappa=pr_0+s_0$ and the units;
+also $(4hs_0\kappa-p)r_0=p\kappa+s_0$.
+Thus its divisor is $u'=h\kappa^2$, and the switch is its own inverse.
+Swap the two non-$p$ denominators, set $a'=y,R'=4y-p$ and
+$u'=y^2/(R'a-py)$, and apply (6)--(7). The original permutation $(y,a,z)$ is
+retained. This is a proven return to the first-half atlas, not deletion of a vertex.
+
+\section{The Turn 1 obstruction attaches without changing the source}
+Define, independently at every vertex,
+\[
+ G_q=(\mathbb Z/R_q\mathbb Z)^\times,\quad
+ \Gamma_q=\langle-1,2,t:t\mid A_q\rangle,\quad
+ K_q=\operatorname{Stab}_{G_q}(W_q),\quad\mathcal Q_q=\Gamma_q/K_q.
+                                                               \tag{8}
+\]
+Since $1\in W_q$, $K_q\subseteq W_q\subseteq\Gamma_q$.
+With $\alpha=-1K_q,\zeta=2K_q,\eta=pK_q,g_t=tK_q$,
+\[
+ \eta=\zeta^2\prod_tg_t^{e_{qt}},\qquad
+ F_q=\{\alpha,\alpha\eta,\alpha\eta^{-1}\}.                \tag{9}
+\]
+The distinct target count is $1,2,3$ according as $\eta=1$, $\eta\ne1$ is an
+involution, or $\eta^2\ne1$. All three labels are retained. Joint failure is
+exactly $(W_q/K_q)\cap F_q=\varnothing$.
+
+All the algebraic results of Turn 1 apply on (2), including composite residuals
+and $A_q>p/2$: their proofs use only the unit condition and $4A_q=p+R_q$,
+not the first-half size bound. For completeness their principal restrictions are
+\[
+ 2\sum_{g_t\ne1}e_{qt}\le|\mathcal Q_q|-1-|F_q|,
+ \qquad \operatorname{ord}(g_t)>2e_{qt}+1\ (g_t\ne1).       \tag{10}
+\]
+For any nonempty subset $I$ of active prime indices, use the actual remaining
+centered word set $U_I$ and $C_I=\langle g_t:t\in I\rangle$; then
+\[
+ 2\sum_{t\in I}e_{qt}
+ \le |C_I|-1-\max\{1,|(F_qU_I^{-1})\cap C_I|\}.          \tag{11}
+\]
+Indeed any period of a factor subproduct persists to the final quotient support.
+Each of its $2e$ nonidentity two-point factors must strictly enlarge the support;
+a full cyclic interval would create a period. Comparing this growth with the
+actual pulled-back missing targets proves (10)--(11).
+The complete order-at-most-eight classification and its fine coefficients are
+retained from Turn 1 \cite[\S\S3--6]{Turn1}, rather than reclassified here.
+In particular, effective index six at a prime vertex forces exactly one simple
+nonresidue factor $r$, with
+\[
+ A_q=Br,\quad W(B)=K_q,\quad |rK_q|=6,\quad
+ pK_q=rK_q\text{ or }r^{-1}K_q.                          \tag{12}
+\]
+The general prime-shift sextic antecedent is \cite{BryanSix}; the precise
+saturated inactive source is in Turn 1.
+
+Each quotient has its own section $s_q$ and carry
+$\omega_q(c,d)=s_q(c)s_q(d)s_q(cd)^{-1}\in K_q$.
+The retained fine coefficient is $\mu_q(s_q(c)k)$, not a uniform share of its
+coset mass. The new graph does not identify $K_q$ and $K_r$, their sections,
+or their quotient coefficient arrays merely because an edge exists.
+
+\section{All four arithmetic transition types}
+An edge $q\to r$ retains
+\[
+ m=v_r(A_q),\quad B=A_q/r^m,\quad c=A_q/r=r^{m-1}B,
+ \quad\boxed{p+\sigma_q q=4cr.}                          \tag{13}
+\]
+These are bijective coordinates for the edge after its input prime and complete
+factorization are retained. If $\tau=\sigma_r$, the next source is exactly
+\[
+ \boxed{4A_r=(4c+\tau)r-\sigma_q q,\qquad R_r=\tau r.}   \tag{14}
+\]
+No factorization of $A_r$ is inferred from that of $A_q$; it is a new original
+factorization of this specified integer.
+
+For every prime $t\mid A_q$ the common character identity is
+\[
+ \boxed{(t/R_q)=(t/p).}                                  \tag{15}
+\]
+For odd $t$, use $R_q\equiv-p\pmod t$, $R_q\equiv3\pmod4$,
+and quadratic reciprocity. The sign from $(-1/t)$ cancels the reciprocity sign.
+For $t=2$, its occurrence makes $R_q\equiv-p\pmod8$, giving the same formula.
+For an outgoing edge this yields the already inherited source-prime rules
+\[
+ (r/q)=\begin{cases}-1&\sigma_q=1,\\-(-3/r)&\sigma_q=3,\end{cases}
+ \qquad
+ (q/r)=\begin{cases}-(-1/r)&\sigma_q=1,\\-(-3/r)&\sigma_q=3.
+ \end{cases}                                               \tag{16}
+\]
+The reversed symbol need not be a nonresidue. In particular, an all-$3\pmod4$
+two-cycle is impossible. A mixed two-cycle requires its $3\pmod4$ prime to be
+$1\pmod3$, and a two-cycle with both primes $1\pmod4$ requires equal residues
+modulo three. These follow by applying both directions of (16) and reciprocity;
+they are necessary restrictions, not a converse existence theorem.
+
+The fine inverse-exterior target at the successor is always $-p\pmod{R_r}$.
+Its complete transfer table is
+\[
+\begin{array}{c|c|l}
+ \sigma_q&\tau&\text{retained equality at the successor}\\\hline
+1&1&q\equiv-p\pmod r\\
+3&1&3q\equiv-p\pmod r\\
+1&3&q-4cr\equiv-p\pmod{3r}\\
+3&3&3q-4cr\equiv-p\pmod{3r}.
+\end{array}                                                \tag{17}
+\]
+For $\tau=3$ the exact CRT representation is
+\[
+ \boxed{-p\longleftrightarrow(2,\sigma_q q\bmod r)
+ \in(\mathbb Z/3\mathbb Z)^\times\times(\mathbb Z/r\mathbb Z)^\times.}
+                                                               \tag{18}
+\]
+The inverse sends $(a,b)$ to
+\[
+ a r(r^{-1}\bmod3)+3b(3^{-1}\bmod r)\pmod{3r}.
+\]
+In (18), $a=2$. In the last row of (17), $3q$ itself is a nonunit modulo
+$3r$. The cofactor correction must be retained; division by three in that
+unit group is undefined. The three local targets all have first CRT coordinate
+2, and their second coordinates are $-1,-p,-p^{-1}\pmod r$. The full joint
+coefficient is obtained from the \emph{same} exponent vector in both coordinates.
+Independently chosen local witnesses are not a global witness.
+
+\paragraph{The exact common original-divisor domain.}
+Put $\Delta=A_r-A_q=(\tau r-\sigma_q q)/4$. Then
+\[
+ \gcd(R_q,R_r)=\begin{cases}3&\sigma_q=\tau=3,\\1&\text{otherwise},\end{cases}
+ \quad
+ \operatorname{Div}(A_q^2)\cap\operatorname{Div}(A_r^2)
+ =\operatorname{Div}(\gcd(A_q,A_r)^2).                    \tag{19}
+\]
+The second assertion is primewise minimum of the two original exponent bounds.
+On this precise common domain, fixed $u$ transports its centered exponents by
+\[
+ \beta_t^{(r)}=\beta_t^{(q)}+v_t(A_q)-v_t(A_r),
+ \quad g_E'=g_E=4u+1,\quad g_M'=g_M+\Delta.              \tag{20}
+\]
+The maps (19)--(20) have their literal inclusion inverses, not a map from all
+source words to all target words. Even on their common domain the gate can change.
+At $p=1801$, $19\to13$ has $A_{19}=455$, $A_{13}=460$; their common divisors
+of squares are $1,5,25$. The original $u=1$ M hit at modulus 19 is a miss at
+modulus 39. Its source denominators are $(455,19666920,43224)$.
+
+If two successive prime vertices both have primitive index six, (17) puts the
+previous vertex in an order-three forbidden class at the successor, while the
+new exceptional prime has order six. With actual effective quotient $K_r$,
+$qK_r=t^{2\varepsilon}K_r$, $\varepsilon=\pm1$, for the next active prime $t$.
+Only when the ambient index is six may this be written as a sixth-power congruence.
+The earlier consecutive example is attributed to \cite[\S\S2--4]{BryanChain}.
+
+\section{A complete closed-failure test}
+Let $\mathscr H=\{q:E_q\cup M_q\ne\varnothing\}$ and let $N^+(q)$ be the
+complete distinct successor set, with multiplicities kept separately.
+Define
+\[
+ U_0=V_p\setminus\mathscr H,\qquad
+ U_{j+1}=\{q\in U_j:N^+(q)\subseteq U_j\}.               \tag{21}
+\]
+\begin{theorem}[Finite closure and exact reachability certificates]\label{thm:closure}
+The sequence stabilizes in at most $|V_p|$ iterations. Its terminal set $U_\infty$
+is the unique largest forward-closed set of locally failed vertices. For every
+original vertex,
+\[
+ \boxed{q\notin U_\infty\iff
+ \text{some path of length at most }|V_p|-1\text{ reaches }\mathscr H.}
+                                                               \tag{22}
+\]
+Moreover $U_\infty\ne\varnothing$ if and only if the complete directed graph
+has a sink strongly connected component disjoint from $\mathscr H$.
+\end{theorem}
+\begin{proof}
+Each nonstationary step removes a vertex, and the final set is closed and
+failed by its definition. Every closed failed set is contained in every $U_j$,
+by induction. A removed vertex either is a hit or has a successor removed
+earlier, producing a strictly decreasing removal rank and a terminating hit
+path. Conversely a shortest hit path has no repeated vertex, so has length at
+most $|V_p|-1$; backwards induction removes each of its vertices.
+A nonempty finite closed set has a bottom strongly connected component. Because
+the set is closed, that component has no outgoing edge in the full graph.
+Conversely any failed sink component remains in every $U_j$.
+\end{proof}
+
+The executable inverse of (22) records an outgoing edge decreasing the shortest
+hit distance and terminates in an actual state (6). A certificate of nonreachability
+contains its entire successor-closed failed set. A sink component can be certified
+by all its outgoing factorizations and two rooted reachability trees within it.
+A selected failed cycle with an omitted exit is not such a certificate.
+The graph-theoretic SCC decomposition is standard \cite[Theorems 3.10 and 5.2]{Tarjan}; (21)--(22)
+are proved here with their arithmetic observation and full-edge semantics.
+
+The test is complete at fixed $p$: a sieve supplies all primes below $p$;
+trial division or a smallest-factor table factors each $A_q<p$; the complete
+boxes (4) decide both channels. There are fewer than $p$ vertices, and each
+has at most $2A_q-1<2p$ square-divisor candidates, by divisor pairing. Thus fewer
+than $2p^2$ candidates and twice that many gate tests suffice as a crude finite
+bound. No favourable factorization, density claim, or supplied no-hit flag
+is assumed. The graph remains a specified selector subfamily, not the complete
+ES atlas: $U_\infty=V_p$ would not by itself certify an ES counterexample.
+
+\section{Complete cyclic integer coordinates}
+For a simple directed cycle $q_0,\ldots,q_{l-1}$, retain
+$p+\sigma_iq_i=4c_iq_{i+1}$ with indices modulo $l$. Set
+\[
+ D=4^l\prod_i c_i,\qquad S=\prod_i\sigma_i.
+\]
+At each cyclic starting point define $T_i$ by iterating
+\[
+ D_0=1,\ S_0=1,\ T_0=0,\qquad
+ D_{j+1}=4c_{i+j}D_j,\quad S_{j+1}=\sigma_{i+j}S_j,
+ \quad T_{j+1}=\sigma_{i+j}T_j+D_j.                       \tag{23}
+\]
+Let $T_i$ denote the final $T_l$ for that starting point.
+\begin{theorem}[Integral cycle inverse]
+Every such cycle satisfies
+\[
+ \boxed{(D-S)q_i=pT_i.}                                   \tag{24}
+\]
+In particular, with $h=\gcd(T_0,\ldots,T_{l-1})$,
+\[
+ \boxed{p=(D-S)/h,\qquad q_i=T_i/h.}                       \tag{25}
+\]
+Thus an ordered coefficient word $(\sigma_i,c_i)$ encodes at most one canonical
+prime cycle. Its converse is a finite exact test: calculate (23)--(25), then
+verify integrality, distinct prime vertices below the prime $p$, the specified
+$\sigma$ types, nonresidue symbols, factor edges and, when claimed, all-edge
+closure and both local failures. None of those latter tests is omitted.
+\end{theorem}
+\begin{proof}
+Composition of the affine equations yields
+$D_jq_{i+j}=S_jq_i+pT_j$, proving (23) and then (24).
+$D>S$ because every $4c_i>\sigma_i$. Since $p$ and $q_i$ are distinct primes,
+$p\mid D-S$. Put $h_0=(D-S)/p$; then $T_i=h_0q_i$.
+A simple cycle has at least two distinct primes, so their common gcd is one;
+hence $h=h_0$. This proves (25) and its uniqueness statement.
+\end{proof}
+Forgetting the cycle's starting point loses its $l$ rotations. They are not
+silently identified in (23). The affine maps have slopes at most $3/4$ and
+consistent positive fixed points; their contraction is not a contradiction to
+cycle existence. The next example satisfies (24) exactly.
+
+\section{A closed all-failure component actually exists}
+\begin{theorem}[Certified obstruction to canonical-cycle closure]\label{thm:counter}
+At the hard prime $p=2521$, the complete canonical graph has the sink component
+\[
+ \boxed{11\to211\to683\to89\to17\to643\to113\to11.}     \tag{26}
+\]
+Every vertex has exactly its displayed outgoing nonresidue prime, and every
+one of its two local selectors is empty. It is therefore impossible to reach
+an occupied canonical vertex from any point of (26). This refutes the assertion
+that every closed component has an occupied selector, and refutes such a
+reachability assertion starting at the least nonresidue prime.
+\end{theorem}
+\begin{proof}
+All displayed integers are prime, checked by complete trial division, as is
+$p$. The exact source data are
+\[
+\begin{array}{r|r|l|r|r|r}
+ q&R_q&A_q\text{ with factorization}&r&m_{qr}&|\Gamma_q/K_q|\\\hline
+11&11&633=3\cdot211&211&1&10\\
+211&211&683&683&1&210\\
+683&683&801=3^2\cdot89&89&1&682\\
+89&267&697=17\cdot41&17&1&176\\
+17&51&643&643&1&32\\
+643&643&791=7\cdot113&113&1&642\\
+113&339&715=5\cdot11\cdot13&11&1&224.
+\end{array}                                                \tag{27}
+\]
+Every $K_q$ here is trivial. The nonresidue membership and absence of other
+outgoing factors follow either by exact Euler powers or reciprocity on the
+complete factorizations. The complete centered supports and three targets are
+listed in Appendix~\ref{app:cycle}, where direct comparison proves every miss.
+Thus (26) is strongly connected and has no unrecorded exit.
+\end{proof}
+The total original divisor mass on the seven vertices is 75, not 71 (the latter
+is the sum of their support sizes). The full $p=2521$ graph has 187 vertices,
+four occupied vertices, and $|U_\infty|=107$. Its unique bottom component is
+(26). Its occupied vertices are $23,29,37,1583$; none is reachable from this component.
+For its ordered coefficient word,
+\[
+ (c_i)=(3,1,9,41,1,7,65),\quad(\sigma_i)=(1,1,1,3,3,1,3),
+\]
+\[
+ D=8252375040,\quad S=27,\quad h=3273453,
+ \quad D-S=2521h.                                        \tag{28}
+\]
+All rotated numerators $T_i=hq_i$ are retained in JSON.
+
+The prime $2521$ itself is solved, for example, by the original middle state
+$(R,a,u,h,r_0,s_0,\lambda)=(23,636,8,2,2,159,7)$:
+\[
+ \frac4{2521}=\frac1{636}+\frac1{5611746}+\frac1{70588}.    \tag{29}
+\]
+Thus the local-cycle implication is false; ES is not contradicted.
+
+At $p=3361$ there is another closed failed component
+\[
+ 31\to53\to11\to281\to1051\to1103\to31,                 \tag{30}
+\]
+with source factors $848=2^4\cdot53$, $880=2^4\cdot5\cdot11$,
+$843=3\cdot281$, $1051$, $1103$, and $1116=2^2 3^2\cdot31$.
+The effective indices are respectively $6,104,10,560,1050,1102$.
+A genuine primitive sextic defect therefore feeds a closed component: an
+increase of quotient index does not imply escape or a well-founded decrease.
+Its cycle identity is $566231040-9=3361\cdot168471$.
+The full graph has 233 vertices, three occupied vertices, and 191 trapped ones.
+
+The inherited consecutive sextic chain at $p=808369$ \cite[\S4]{BryanChain}
+continues to the closed failed six-cycle
+\[
+ 19\to28871\to6977\to8293\to2003\to67531\to19.           \tag{31}
+\]
+Every listed node, factor, complete gate set and stabilizer is in the certificate.
+This verifies the listed component only, not a fresh complete graph census at
+$808369$.
+
+\section{A legitimate same-prime extension, with its limitation}
+A different multiplier can be included only as a separately marked source.
+For $q\in V_p$, let $s>0$ obey
+\[
+ sq\equiv3\pmod4,\quad sq<3p,\quad(s/p)=1.
+\]
+Then $A_{q,s}=(p+sq)/4$ satisfies all source conditions (2), and its complete
+nonresidue successors and two gates are defined in exactly the same manner.
+For two such multipliers $s,t$,
+\[
+ A_{q,t}-A_{q,s}=q(t-s)/4,\quad
+ \boxed{\gcd(A_{q,s},A_{q,t})=\gcd(A_{q,s},(t-s)/4).}      \tag{32}
+\]
+This follows from $q\nmid A_{q,s}$. For consecutive multipliers differing by
+four the original factors are coprime. Their divisor sources cannot be identified.
+
+At $p=2521,q=11$, replacing the canonical multiplier 1 by the actual quadratic
+residue 5 yields $R=55,A=644=2^2\cdot7\cdot23$. Its $u=16$ M state is
+\[
+ (h,r_0,s_0,\lambda)=(1,4,161,3),\qquad
+ \boxed{\frac4{2521}=\frac1{644}+\frac1{1217643}+\frac1{30252}.} \tag{33}
+\]
+The old and new $A$ values are coprime; this is a newly available source, not
+transport of a missed divisor through a quotient. It repairs this component
+once that extra marked port is allowed. No claim that multiplier 5, the pair
+of ports $\sigma,\sigma+4$, or all permitted ports succeed universally is made.
+
+Two further regression distinctions are useful. At $p=3361,q=977$,
+$A_q=11^2\cdot13$ has both outgoing edges $11$ (weight two) and $13$ (weight one).
+The former enters (30); the latter is immediately occupied. Choosing the least
+factor discards a real escape. At $p=1201,q=461$ the auxiliary E hit is
+\[
+ (R,A,u)=(1383,646,24548),\quad(x,y,z)=(646,561,25602918).
+\]
+Its permutation returns the first-half E state
+$(R',A',u')=(1043,561,18513)$ with the ordered triple $(561,646,25602918)$.
+Deleting vertices with $A>p/2$ would delete this genuine original return.
+
+\section{Verified scope and Turn 3 handoff}
+The full scan is over all 137 hard-class primes at most 50,000. It includes
+188,255 original nonresidue-prime vertices, 191,789 distinct factor edges and
+193,997 edge occurrences. The complete source enumeration has 8,357,211
+divisor candidates, 1,729 E states and 2,728 M states in 1,709 occupied vertices.
+There are 57,416 auxiliary vertices above $p/2$, carrying ten E states; their
+permutations are verified. There are 39 primes with a nonempty failure trap,
+and 11,954 trapped vertices altogether. Eight least-prime starting vertices
+are trapped. Every prime in this finite scan has some occupied graph vertex;
+that is a finite result, not a universal theorem.
+
+The first hard prime with a canonical trap is 2521: both implementations
+independently enumerate every earlier hard prime and its complete graph.
+The first implementation verifies all factor-cut bounds of Turn 1 at every
+vertex for $p\le5000$, and full fine/coset records in the declared detailed
+examples; it does not claim every factor-cut recomputed at 50,000.
+Separate finite graph fixtures exhaust all loop-free graphs with nonempty
+successor sets on two through four vertices and every hit mask: 38,636 cases.
+The main and separate implementations use different character tests, gate
+reconstruction, SCC algorithms and reachability calculations. They share no
+code. Normal and optimized receipts and exact scopes accompany the package.
+
+The exit of Turn 2 is the complete original graph, its all-type arithmetic
+transitions, and a terminating closed-failure test with exact counterexamples
+to the proposed local closure principle. Turn 3 must not try to prove that
+all canonical closed components are rescued. A sufficient global claim would
+be $U_\infty\ne V_p$ for every required prime, which is much weaker than the
+false claim $U_\infty=\varnothing$. Alternatively an explicitly enlarged
+same-$p$ source must prove its own escape mechanism. Neither follows from
+reciprocity signs, a supported-zero relation, or a finite cycle alone.
+
+\appendix
+\section{Complete seven-cycle supports}\label{app:cycle}
+The following sets are the supports of the full products
+$\prod_{t^e\parallel A_q}\sum_{j=-e}^e[t]^j$ modulo $R_q$.
+Their original multiplicities, not only these supports, are in the JSON.
+In the displayed cycle order, the target triples $(-1,-p,-p^{-1})$ are
+\[
+ (10,9,5),\ (210,11,96),\ (682,211,560),\ (266,149,224),
+ \ (50,29,44),\ (642,51,290),\ (338,191,71).
+\]
+\begin{align*}
+W_{11}&=\{1,2,3,4,6,7,8\},\\
+W_{211}&=\{1,38,50\},\\
+W_{683}&=\{1,3,9,76,89,110,118,228,238,267,307,330,485,492,617\},\\
+W_{89}&=\{1,17,41,46,110,163,172,238,254\},\\
+W_{17}&=\{1,28,31\},\\
+W_{643}&=\{1,7,92,108,113,126,148,239,387\},\\
+W_{113}&=\{1,5,11,13,19,32,37,53,55,65,68,70,142,143,160,185,206,\\
+&\hspace{23mm}209,214,232,247,265,266,275,313\}.
+\end{align*}
+Every target is absent from its corresponding support. Every original factor
+and every exponent range that produces these sets is displayed in (27).

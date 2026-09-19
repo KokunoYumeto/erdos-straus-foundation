@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-18",
+  "task": "Turn3: primitive sextic closure gate and square-source escape",
+  "ES_main": "2e75574e8bdc9cc3f8584002ee35f10e475ae09c",
+  "centl_main": "42508684c4386b575d7b52e763565345a76bcb9e",
+  "antecedents": [
+    {
+      "path": "/mnt/data/es_turn2_shifted_graph_20260918/core.tex",
+      "sha256": "2ec43ed556d92494ccbaf30cb8fc0b3e4a1c3d50117ea26d4e8f45e00167d4f0",
+      "scope": "Read full proof/handoff relevant to the current route; no entire historical archive re-audit"
+    },
+    {
+      "path": "/mnt/data/es_turn2_shifted_graph_20260918/HANDOFF_TURN_3.md",
+      "sha256": "fb60ad11d52f281e38987a30755683c8d3f289c8aaaa84d2e768a61417d5b32b",
+      "scope": "Read full proof/handoff relevant to the current route; no entire historical archive re-audit"
+    },
+    {
+      "path": "/mnt/data/es_turn1_joint_failure_20260917/core.tex",
+      "sha256": "f6464795ae2e7b5cea89821ff400202bf8e09e472fa9d19f50ebbbd938a6b09e",
+      "scope": "Read full proof/handoff relevant to the current route; no entire historical archive re-audit"
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/EXTERNAL-NR-FACTOR-CYCLE.md",
+      "locator": "sections1-7",
+      "role": "Inherited graph existence and quadratic reciprocity edge laws"
+    },
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/FAB-INDEX6-COMBINED-DEFECT.md",
+      "locator": "sections3-8",
+      "role": "Inherited primitive index-six form; no universal closure imported"
+    },
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/ES-PRIMITIVE-SEXTIC-CHAIN.md",
+      "locator": "sections2-5",
+      "role": "Inherited consecutive-defect result and neighbor-square recurrence"
+    },
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/ES-COMPOSITE-SUCCESSOR-INDEX6.md",
+      "blob": "2899a97dc8cb5f16912d1ec6a6ec16fd9181adba",
+      "role": "Read as adjacent mixed-vertex background; no composite classification theorem imported here"
+    },
+    {
+      "authors": "Damgard, I. B., and Frandsen, G. S.",
+      "year": 2003,
+      "title": "Efficient algorithms for gcd and cubic residuosity in the ring of Eisenstein integers",
+      "source": "BRICS RS-03-8",
+      "doi": "10.7146/brics.v10i8.21779",
+      "locator": "section2 p4, section4 p8",
+      "role": "Norm, stronger primary convention, cubic reciprocity and conjugation; actual entries directly computed",
+      "url": "https://www.brics.dk/RS/03/8/BRICS-RS-03-8.pdf",
+      "reading": "Parsed section2 and section4; physical page9 (printed8) screenshot inspected. Physical page5 screenshot failed, but its primary definition is fully parsed."
+    },
+    {
+      "authors": "Elsholtz, C., and Tao, T.",
+      "year": 2013,
+      "source": "arXiv:1107.1010",
+      "locator": "section2, Propositions2.2 and2.6",
+      "role": "Inherited TypeI/II normalization; each identity used here re-derived"
+    }
+  ],
+  "content_level_search": {
+    "queries": [
+      "Erdos Straus primitive sextic defect cycle nonresidue cubic reciprocity",
+      "Erdos Straus sextic triangle",
+      "Erdos Straus 31 223 307",
+      "7510085481569082811681",
+      "Erdos Straus square multiplier cycle"
+    ],
+    "outcome": "No exact prior primitive all-C6 triangle or matching square-source escape theorem identified in this scoped search. This is not a historical-priority determination."
+  },
+  "discovery": {
+    "software": "SymPy used only for discovery factorization and probable primality screening",
+    "final_status": "Both shipped checkers are standard-library only and prove primality from complete-order certificates. The displayed p is checked independently of the discovery screening.",
+    "attempts": [
+      "Low-effective-index failures and two-source expansions examined as motivation; not substituted for universal closure.",
+      "A constant primitive triangle was designed from compatible sixth-power residues, saturated inactive packets and exact linear forms. Earlier larger candidate retained only in the attempt ledger.",
+      "Completed auxiliary square-port exploration through p<=100000 found no augmented trap. An earlier 250000 attempt timed out before a completion receipt; no result from that run is claimed.",
+      "The finalized 250000 scan is a DIFFERENT, complete directed-triangle scan and is checked independently."
+    ]
+  },
+  "nonclaims": [
+    "No ES proof or counterexample",
+    "No universal enlarged-graph closure",
+    "No least-prime claim",
+    "No infinite family of prime parameters",
+    "No full graph enumeration at the large p",
+    "No independent mathematical review",
+    "No Lean build",
+    "No source-wide analytic identification",
+    "No private conversation or protected primary-source payload included in public contribution"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "date": "2026-09-19",
+  "success": true,
+  "archive": "/mnt/data/es_turn6_full_shell_bundle.zip",
+  "bytes": 5821528,
+  "sha256": "4f78ef7ed3288d94447064d02dd6bbadb162ccda1bdb05554a4ac863435740e5",
+  "manifest_entries_verified": 68,
+  "full_replay_runs": {
+    "main": {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--hard-bound",
+        "2000000",
+        "--out",
+        "fresh_normal"
+      ],
+      "cwd": "/mnt/data/es_turn6_fresh_replay/es_turn6_full_shell_20260919",
+      "returncode": 0,
+      "elapsed_seconds": 6.251463873999455,
+      "stdout": "full scan {'original_divisor_vectors': 1877004, 'shells': 73798, 'E_states': 5700, 'M_states': 5268, 'target_pairs': 70596, 'occupied_shells': 3918, 'primes': 211}\nprincipal scan 4519 [87481, 196561, 944329, 1915201]\n{\"success\": true, \"explicit_checks\": 1037513, \"negative_controls\": [\"a nonzero coarse source alone forces the target\", \"a positive coarse coefficient equals its parity reduction\", \"discarding the residual collision term is harmless\", \"a positive target always has positive principal lower bound\", \"coset sums are an isometry for the fine counting norm\", \"an arbitrary coefficient array has the original fourfold orbit divisibility\", \"coset counts determine fine energy\", \"the real and balanced-integer lower bounds always agree\", \"a useful selected spectrum must be a character subgroup\"], \"full_shell_bound\": 3000, \"hard_bound\": 2000000, \"no_universal_occupancy_claim\": true}\n",
+      "stderr": ""
+    },
+    "optimized": {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--hard-bound",
+        "2000000",
+        "--out",
+        "fresh_optimized"
+      ],
+      "cwd": "/mnt/data/es_turn6_fresh_replay/es_turn6_full_shell_20260919",
+      "returncode": 0,
+      "elapsed_seconds": 5.959912416999941,
+      "stdout": "full scan {'original_divisor_vectors': 1877004, 'shells': 73798, 'E_states': 5700, 'M_states': 5268, 'target_pairs': 70596, 'occupied_shells': 3918, 'primes': 211}\nprincipal scan 4519 [87481, 196561, 944329, 1915201]\n{\"success\": true, \"explicit_checks\": 1037513, \"negative_controls\": [\"a nonzero coarse source alone forces the target\", \"a positive coarse coefficient equals its parity reduction\", \"discarding the residual collision term is harmless\", \"a positive target always has positive principal lower bound\", \"coset sums are an isometry for the fine counting norm\", \"an arbitrary coefficient array has the original fourfold orbit divisibility\", \"coset counts determine fine energy\", \"the real and balanced-integer lower bounds always agree\", \"a useful selected spectrum must be a character subgroup\"], \"full_shell_bound\": 3000, \"hard_bound\": 2000000, \"no_universal_occupancy_claim\": true}\n",
+      "stderr": ""
+    },
+    "independent": {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "check_independent.py",
+        "--input",
+        "fresh_normal",
+        "--out",
+        "fresh_normal/independent.json"
+      ],
+      "cwd": "/mnt/data/es_turn6_fresh_replay/es_turn6_full_shell_20260919",
+      "returncode": 0,
+      "elapsed_seconds": 24.116962017999867,
+      "stdout": "{\"divisor_power_constants_check\": [[3, 4], [4, 9], [5, 29], [6, 139], [7, 1424], [8, 45197]], \"explicit_checks\": 928678, \"full_failure_replays\": [{\"all_rows_sha256\": \"86ca0e8d0183f7a79c945eea9b3f73bc139ef401fe481afe084a9ff6fa927fc2\", \"max_L\": [0, 1], \"max_global_integer_lower\": 0, \"occupied_shell_count\": 34, \"p\": 87481, \"shells\": 21870}, {\"all_rows_sha256\": \"989107f88a2bdbcca83219bad13d1e1fd496245c6ff232c01700faaa6c49473e\", \"max_L\": [0, 1], \"max_global_integer_lower\": 2, \"occupied_shell_count\": 44, \"p\": 196561, \"shells\": 49140}, {\"all_rows_sha256\": \"5815e0c061e1eb30cc19f0b1ef3b5c9bdb2c5536f1832c556744aa3bfc9246ae\", \"max_L\": [0, 1], \"max_global_integer_lower\": 0, \"occupied_shell_count\": 64, \"p\": 944329, \"shells\": 236082}, {\"all_rows_sha256\": \"5ff47c28a1da393f728ccc41f3965cf93e5d8ad02c7eb2bf7048140962affd0f\", \"max_L\": [0, 1], \"max_global_integer_lower\": 0, \"occupied_shell_count\": 90, \"p\": 1915201, \"shells\": 478800}], \"hard_bound\": 2000000, \"hard_prime_count\": 4519, \"positive_certificates\": 4515, \"scope\": \"No main/antecedent imports; full small atlas, all hard positive certificates, all first-half shells of every listed principal miss, examples, independent convex DP, a separate rational spectral interval, and finite divisor-power constants. Not an independent mathematical review.\", \"small_atlas\": {\"E_states\": 5700, \"M_states\": 5268, \"occupied_shells\": 3918, \"original_divisor_vectors\": 1877004, \"primes\": 211, \"shells\": 73798, \"target_pairs\": 70596}, \"small_rows_sha256\": \"ad1024d98046eaeae69c3c5d413e02eea0be6e68fb15a0b31c7c931e8e110192\", \"spectral_check\": {\"R\": 47, \"intervals\": [[1009, 1010], [24, 25]], \"method\": \"pi=4*(atan(1/2)+atan(1/3)); separate rational Taylor series; literal original word differences\", \"p\": 944329}, \"success\": true}\n",
+      "stderr": ""
+    }
+  },
+  "mathematical_files": [
+    {
+      "name": "abstract.json",
+      "sha256": "cee40dded67f3adf229898e8f6d24c67d582cbaa94bc01b8c371e32100bda2a3",
+      "bytes": 232,
+      "fresh_identical": true
+    },
+    {
+      "name": "complement.json",
+      "sha256": "3882a9bdf5d4b5e79500194ad09bef07e8afa82c0409558f37f6330bd1e02df5",
+      "bytes": 5508,
+      "fresh_identical": true
+    },
+    {
+      "name": "constants.json",
+      "sha256": "125b6723596b7bbb27e2e4c28c6c507323fa29b24b44ae8808595deb0b7d594d",
+      "bytes": 20822,
+      "fresh_identical": true
+    },
+    {
+      "name": "examples.json",
+      "sha256": "3cff4a71c72c411f8340e7e0bfe455b0ecf0eda8a5082e9beb2e7fa452d62c56",
+      "bytes": 144629,
+      "fresh_identical": true
+    },
+    {
+      "name": "failure_87481.json",
+      "sha256": "1a4af56c5a1afb712797d8cf556d16a00ff6555c1cd1afc4d095ba6785427222",
+      "bytes": 2066075,
+      "fresh_identical": true
+    },
+    {
+      "name": "full_shells.json",
+      "sha256": "c6e566cb6c9e9d8b5e1579c5d0d81e7d3f534d9376891c56541cfaee0ce67cbe",
+      "bytes": 8678779,
+      "fresh_identical": true
+    },
+    {
+      "name": "independent.json",
+      "sha256": "7331aa0329d05e2c30f36a526e2fcbfe170fe0752dedca33707a82654e1bda61",
+      "bytes": 2328,
+      "fresh_identical": true
+    },
+    {
+      "name": "principal_census.json",
+      "sha256": "09a51f5330e6b6a3b60cf9f7b0af8dd89a9746297db2896c55437941a57b9b22",
+      "bytes": 3007357,
+      "fresh_identical": true
+    },
+    {
+      "name": "spectral.json",
+      "sha256": "6cd542c5bd9479df1cadb995995de2d860e1855be670ce80a4a951de104638eb",
+      "bytes": 42520,
+      "fresh_identical": true
+    },
+    {
+      "name": "summary.json",
+      "sha256": "159dfd9d7afab186bc16e400792effd47a21d5fcd0fbc940c9f1300da4e3b1ae",
+      "bytes": 731,
+      "fresh_identical": true
+    }
+  ],
+  "document_replay": {
+    "documents": [
+      {
+        "document": "workbench.pdf",
+        "pages": 9,
+        "text_identical": true,
+        "all_page_pixels_identical": true,
+        "dpi": 130,
+        "build_seconds": 1.3546255219998784,
+        "source_sha256": "60d17cd26d738c62d98d82c08fa40a86d305fcbf23fe496eb390ba509b802847"
+      },
+      {
+        "document": "preprint.pdf",
+        "pages": 4,
+        "text_identical": true,
+        "all_page_pixels_identical": true,
+        "dpi": 130,
+        "build_seconds": 1.5896638079993863,
+        "source_sha256": "8401951657f8ab46a8d7213f13f4841eb96b4658579c54bcdd8ac30f425ab693"
+      }
+    ],
+    "total_pages": 13
+  },
+  "publication": {
+    "date": "2026-09-19",
+    "repository": "KokunoYumeto/erdos-straus-foundation",
+    "upstream_read_pin": "d5498ed24e149ea705661142bd1d7027c11ecafe",
+    "remote_pr_created": false,
+    "remote_commit_created": false,
+    "connector_status": "All 48 surfaced actions are read-only; create and push discovery returned no actions. Installed GitHub plugin was located through Plugin Management.",
+    "gh_available": false,
+    "cli_attempts": [
+      {
+        "command": [
+          "git",
+          "ls-remote",
+          "https://github.com/KokunoYumeto/erdos-straus-foundation.git",
+          "HEAD"
+        ],
+        "returncode": 128,
+        "stdout": "",
+        "stderr": "fatal: unable to access 'https://github.com/KokunoYumeto/erdos-straus-foundation.git/': Could not resolve host: github.com\n",
+        "elapsed_seconds": 0.02330940100000589
+      },
+      {
+        "command": [
+          "git",
+          "config",
+          "--global",
+          "--get",
+          "credential.helper"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "",
+        "elapsed_seconds": 0.0021145959999557817
+      }
+    ],
+    "status": "not_published",
+    "scope": "Actual source-only local commits and an additive patch; no remote branch or pull request created. This record is not upstream main.",
+    "local_base": "d37f5713508b2d59155833b61717ea8e58d2cbcc",
+    "local_commit": "82237df176ca1b53acf9074cae98d6f77ad7ff26",
+    "local_history": "source-only independent record, not upstream main",
+    "new_text_paths": 14,
+    "path_prefix": "research/incoming/es-turn06-full-shell-20260919",
+    "local_tree": "93bfef516537503a73378c5692b0fb1349d0d174",
+    "fsck_stdout": "",
+    "bundle_verified": true,
+    "bundle_sha256": "707772552bddcebb29318377777411a42abd3ef7ecfe0454e2827581b10eeaca",
+    "patch_sha256": "430d08e0056308e6c0fdd9beec8e99b137bd89bb188d2250ed87e4340e67d4a0",
+    "publisher_executed": false,
+    "patch_replay_source_identical": true
+  },
+  "scope": "The final archive was freshly extracted; all68 payload manifest entries checked; full bound3000/hard-bound2m main and -O runs and independent checker completed. Ten mathematical JSON files agree. Both PDFs rebuilt; all13 pages have identical rendered pixels. This is reproducibility, not independent mathematical review or an ES proof.",
+  "diagnostics": [
+    "The document replay guard initially checked unresolved citations after the first LaTeX pass and stopped. The guard was corrected to require all references resolved after the prescribed second pass. The final two-pass replays have no unresolved-reference or overfull-box warnings."
+  ]
+}

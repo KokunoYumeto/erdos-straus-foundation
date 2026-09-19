@@ -1,0 +1,1085 @@
+{
+  "adaptive_quotient_corollary": "For all integer J>=1 and p>=2^20*J^3, retain any per-shell set of at most J even characters (conjugate-closed for real observations). Their real projection lower bounds sum to <=-(1/24)*p*log(p); subgroup observations are included.",
+  "claim": "For prime p=1 mod 4 and p>=2^20, sum_a L_a <= -(1/24)*p*log(p).",
+  "divisor_power_constants": [
+    {
+      "C_m": 4,
+      "K_m": [
+        1536,
+        35
+      ],
+      "local_maxima": [
+        {
+          "maximizing_exponent": 3,
+          "maximum_power": [
+            8,
+            1
+          ],
+          "q": 2
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            3,
+            1
+          ],
+          "q": 3
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            8,
+            5
+          ],
+          "q": 5
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            8,
+            7
+          ],
+          "q": 7
+        }
+      ],
+      "m": 3
+    },
+    {
+      "C_m": 9,
+      "K_m": [
+        127401984,
+        25025
+      ],
+      "local_maxima": [
+        {
+          "maximizing_exponent": 5,
+          "maximum_power": [
+            81,
+            2
+          ],
+          "q": 2
+        },
+        {
+          "maximizing_exponent": 3,
+          "maximum_power": [
+            256,
+            27
+          ],
+          "q": 3
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            81,
+            25
+          ],
+          "q": 5
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            16,
+            7
+          ],
+          "q": 7
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            16,
+            11
+          ],
+          "q": 11
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            16,
+            13
+          ],
+          "q": 13
+        }
+      ],
+      "m": 4
+    },
+    {
+      "C_m": 29,
+      "K_m": [
+        16780370116608000,
+        955049953
+      ],
+      "local_maxima": [
+        {
+          "maximizing_exponent": 6,
+          "maximum_power": [
+            16807,
+            64
+          ],
+          "q": 2
+        },
+        {
+          "maximizing_exponent": 4,
+          "maximum_power": [
+            3125,
+            81
+          ],
+          "q": 3
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            243,
+            25
+          ],
+          "q": 5
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            243,
+            49
+          ],
+          "q": 7
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            32,
+            11
+          ],
+          "q": 11
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            32,
+            13
+          ],
+          "q": 13
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            32,
+            17
+          ],
+          "q": 17
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            32,
+            19
+          ],
+          "q": 19
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            32,
+            23
+          ],
+          "q": 23
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            32,
+            29
+          ],
+          "q": 29
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            32,
+            31
+          ],
+          "q": 31
+        }
+      ],
+      "m": 5
+    },
+    {
+      "C_m": 139,
+      "K_m": [
+        2107631844899214418882499117580288000,
+        301040178822477892190393
+      ],
+      "local_maxima": [
+        {
+          "maximizing_exponent": 8,
+          "maximum_power": [
+            531441,
+            256
+          ],
+          "q": 2
+        },
+        {
+          "maximizing_exponent": 4,
+          "maximum_power": [
+            15625,
+            81
+          ],
+          "q": 3
+        },
+        {
+          "maximizing_exponent": 3,
+          "maximum_power": [
+            4096,
+            125
+          ],
+          "q": 5
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            729,
+            49
+          ],
+          "q": 7
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            729,
+            121
+          ],
+          "q": 11
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            13
+          ],
+          "q": 13
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            17
+          ],
+          "q": 17
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            19
+          ],
+          "q": 19
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            23
+          ],
+          "q": 23
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            29
+          ],
+          "q": 29
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            31
+          ],
+          "q": 31
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            37
+          ],
+          "q": 37
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            41
+          ],
+          "q": 41
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            43
+          ],
+          "q": 43
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            47
+          ],
+          "q": 47
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            53
+          ],
+          "q": 53
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            59
+          ],
+          "q": 59
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            64,
+            61
+          ],
+          "q": 61
+        }
+      ],
+      "m": 6
+    },
+    {
+      "C_m": 1424,
+      "K_m": [
+        189102819580729702766001177002161447477915597102110293861589749008957440000,
+        15940015951213731260291358039559449021070706827478329
+      ],
+      "local_maxima": [
+        {
+          "maximizing_exponent": 9,
+          "maximum_power": [
+            78125,
+            4
+          ],
+          "q": 2
+        },
+        {
+          "maximizing_exponent": 5,
+          "maximum_power": [
+            1152,
+            1
+          ],
+          "q": 3
+        },
+        {
+          "maximizing_exponent": 3,
+          "maximum_power": [
+            16384,
+            125
+          ],
+          "q": 5
+        },
+        {
+          "maximizing_exponent": 3,
+          "maximum_power": [
+            16384,
+            343
+          ],
+          "q": 7
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            2187,
+            121
+          ],
+          "q": 11
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            2187,
+            169
+          ],
+          "q": 13
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            2187,
+            289
+          ],
+          "q": 17
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            19
+          ],
+          "q": 19
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            23
+          ],
+          "q": 23
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            29
+          ],
+          "q": 29
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            31
+          ],
+          "q": 31
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            37
+          ],
+          "q": 37
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            41
+          ],
+          "q": 41
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            43
+          ],
+          "q": 43
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            47
+          ],
+          "q": 47
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            53
+          ],
+          "q": 53
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            59
+          ],
+          "q": 59
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            61
+          ],
+          "q": 61
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            67
+          ],
+          "q": 67
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            71
+          ],
+          "q": 71
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            73
+          ],
+          "q": 73
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            79
+          ],
+          "q": 79
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            83
+          ],
+          "q": 83
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            89
+          ],
+          "q": 89
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            97
+          ],
+          "q": 97
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            101
+          ],
+          "q": 101
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            103
+          ],
+          "q": 103
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            107
+          ],
+          "q": 107
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            109
+          ],
+          "q": 109
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            113
+          ],
+          "q": 113
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            128,
+            127
+          ],
+          "q": 127
+        }
+      ],
+      "m": 7
+    },
+    {
+      "C_m": 45197,
+      "K_m": [
+        5660975347518275004860935845293751769771799478388462797076696273222567172340516816017171732424823144276602337745627318281900180752417423360000,
+        325110208817369024543742063536540393169874445643029844821636079287505273089842673104646140161775507752761
+      ],
+      "local_maxima": [
+        {
+          "maximizing_exponent": 11,
+          "maximum_power": [
+            209952,
+            1
+          ],
+          "q": 2
+        },
+        {
+          "maximizing_exponent": 6,
+          "maximum_power": [
+            5764801,
+            729
+          ],
+          "q": 3
+        },
+        {
+          "maximizing_exponent": 4,
+          "maximum_power": [
+            625,
+            1
+          ],
+          "q": 5
+        },
+        {
+          "maximizing_exponent": 3,
+          "maximum_power": [
+            65536,
+            343
+          ],
+          "q": 7
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            6561,
+            121
+          ],
+          "q": 11
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            6561,
+            169
+          ],
+          "q": 13
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            6561,
+            289
+          ],
+          "q": 17
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            6561,
+            361
+          ],
+          "q": 19
+        },
+        {
+          "maximizing_exponent": 2,
+          "maximum_power": [
+            6561,
+            529
+          ],
+          "q": 23
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            29
+          ],
+          "q": 29
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            31
+          ],
+          "q": 31
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            37
+          ],
+          "q": 37
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            41
+          ],
+          "q": 41
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            43
+          ],
+          "q": 43
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            47
+          ],
+          "q": 47
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            53
+          ],
+          "q": 53
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            59
+          ],
+          "q": 59
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            61
+          ],
+          "q": 61
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            67
+          ],
+          "q": 67
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            71
+          ],
+          "q": 71
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            73
+          ],
+          "q": 73
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            79
+          ],
+          "q": 79
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            83
+          ],
+          "q": 83
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            89
+          ],
+          "q": 89
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            97
+          ],
+          "q": 97
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            101
+          ],
+          "q": 101
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            103
+          ],
+          "q": 103
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            107
+          ],
+          "q": 107
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            109
+          ],
+          "q": 109
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            113
+          ],
+          "q": 113
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            127
+          ],
+          "q": 127
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            131
+          ],
+          "q": 131
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            137
+          ],
+          "q": 137
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            139
+          ],
+          "q": 139
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            149
+          ],
+          "q": 149
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            151
+          ],
+          "q": 151
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            157
+          ],
+          "q": 157
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            163
+          ],
+          "q": 163
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            167
+          ],
+          "q": 167
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            173
+          ],
+          "q": 173
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            179
+          ],
+          "q": 179
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            181
+          ],
+          "q": 181
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            191
+          ],
+          "q": 191
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            193
+          ],
+          "q": 193
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            197
+          ],
+          "q": 197
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            199
+          ],
+          "q": 199
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            211
+          ],
+          "q": 211
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            223
+          ],
+          "q": 223
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            227
+          ],
+          "q": 227
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            229
+          ],
+          "q": 229
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            233
+          ],
+          "q": 233
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            239
+          ],
+          "q": 239
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            241
+          ],
+          "q": 241
+        },
+        {
+          "maximizing_exponent": 1,
+          "maximum_power": [
+            256,
+            251
+          ],
+          "q": 251
+        }
+      ],
+      "m": 8
+    }
+  ],
+  "e_upper": [
+    31967,
+    11760
+  ],
+  "full_sum_upper_coefficient": [
+    -1,
+    24
+  ],
+  "general_resolution_theorem": "For m>=3, C_m from the finite prime/exponent formula, p>=2^20 and p^(1-2/m)>=12*J*C_m^2, every raw sum retaining at most J even modes per shell is <=-p*log(p)/8. Equivalent integer condition p^(m-2)>=(12*J*C_m^2)^m.",
+  "log2_interval": [
+    [
+      346617686907988864,
+      500063617986634845
+    ],
+    [
+      6932353738160839627,
+      10001272359732696900
+    ]
+  ],
+  "p_threshold": 1048576,
+  "scope": "Finite rational checks support constants; core.tex proves the infinite inequalities.",
+  "small_prime_maximum_exponents": {
+    "2": 3,
+    "3": 2,
+    "5": 1,
+    "7": 1
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "documents": [
+    {
+      "pdf": "workbench.pdf",
+      "pages": 9,
+      "sha256": "8d7eef72c8ae5eafc78e9488b0110dce337b0a614a3e5e1eafabd45fe6fc1819",
+      "render_dpi": 130,
+      "page_images": [
+        {
+          "path": "rendered/workbench/page-1.png",
+          "sha256": "122c81d340867aad7a77d021f478ae69335c5641f2c1328bab114ffe1d78f655"
+        },
+        {
+          "path": "rendered/workbench/page-2.png",
+          "sha256": "7ed9c8a22cfd679a6b3508e1cc6026e41e57f2ae7f5c2e5a0ef4fbc27ee420d8"
+        },
+        {
+          "path": "rendered/workbench/page-3.png",
+          "sha256": "861562c61d41a1152963c0796877056c588877ddceeb33d1ec974c42cc0adf0a"
+        },
+        {
+          "path": "rendered/workbench/page-4.png",
+          "sha256": "f2de67a7246b2161efa3efd2eb7077bae525245fa8c22fda2d459a1551f0451a"
+        },
+        {
+          "path": "rendered/workbench/page-5.png",
+          "sha256": "1683c8f6bea85d4d6d76213356780cd42688e519f497c8c8915755332daddcd3"
+        },
+        {
+          "path": "rendered/workbench/page-6.png",
+          "sha256": "0d65b0da0b68308beba9ca783b48caf4c54bfca28262f6ecdc981c2427bd27d0"
+        },
+        {
+          "path": "rendered/workbench/page-7.png",
+          "sha256": "69f23b4bf70c0fe090ffc551fd0550eb553ef5116232b9f4c4728ad8c8af6ee1"
+        },
+        {
+          "path": "rendered/workbench/page-8.png",
+          "sha256": "9f522400185958151858c60922028603137ab77fbb2825b81c937d9fe2005a00"
+        },
+        {
+          "path": "rendered/workbench/page-9.png",
+          "sha256": "85bef8cc7163da11de7dfb1d9474843823e5d31441f1590f552b9f6df75419e1"
+        }
+      ],
+      "all_pages_visually_inspected": true
+    },
+    {
+      "pdf": "preprint.pdf",
+      "pages": 4,
+      "sha256": "2ecb5102a1b771e53e6d7b9d21ae50696781fadb5eb94d5b0ce6ac8d95aec084",
+      "render_dpi": 130,
+      "page_images": [
+        {
+          "path": "rendered/preprint/page-1.png",
+          "sha256": "bef9c3b81357e0e085d48253f0ca880685fbf12834c780942a14fab2cf19cf2b"
+        },
+        {
+          "path": "rendered/preprint/page-2.png",
+          "sha256": "ac85845dfc42081c6733c980caf537f3366a06f79acfa637899d6f3aac654546"
+        },
+        {
+          "path": "rendered/preprint/page-3.png",
+          "sha256": "000f103e4c9182edf575dc5932efd2600707f73335b9dd7fc08168fccdc9f8f3"
+        },
+        {
+          "path": "rendered/preprint/page-4.png",
+          "sha256": "a1cdb97b4e681f503b131f7cf579d1ae93b82b89d9c3cbd744bbf9adab78429a"
+        }
+      ],
+      "all_pages_visually_inspected": true
+    }
+  ],
+  "total_pages": 13,
+  "scope": "All final proof pages inspected. No OCR used. Normal rebuilding and clean extracted replay are recorded separately."
+}

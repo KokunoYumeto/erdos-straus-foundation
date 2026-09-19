@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-18",
+  "task": "Turn2: all-edge shifted-factor system and complete closed failure test",
+  "ES_main": "2e75574e8bdc9cc3f8584002ee35f10e475ae09c",
+  "centl_main": "42508684c4386b575d7b52e763565345a76bcb9e",
+  "antecedent_archive": {
+    "file": "antecedent/es_turn1_joint_failure_bundle.zip",
+    "sha256": "eb51a3ee5c504d30849cdb2c917c5762ec8d445230edc26c481ff63f57f9d049",
+    "read": "Full supplied Turn1 core.tex, HANDOFF_TURN_2.md and source_reading.json; all proof dependencies explicitly scoped. The sealed archive is not claimed fully re-audited or its full old scan replayed."
+  },
+  "primary_sources": [
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/EXTERNAL-NR-FACTOR-CYCLE.md",
+      "blob": "95cafb07787de8593548e6397dde0b31ab22f864",
+      "scope": "Full fetched note, sections1-8. Graph existence and the two source character laws are inherited, not novelty claims."
+    },
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/FAB-INDEX6-COMBINED-DEFECT.md",
+      "blob": "81f984e6961c2b6cf4157bf8089305a5b2dbb59e",
+      "scope": "Inherited through Turn1 and supplied full source context; sections3-8. Primitive sextic source data, not all-cycle closure."
+    },
+    {
+      "author": "Chase Bryan",
+      "year": 2026,
+      "path": "research/erdos-straus/ES-PRIMITIVE-SEXTIC-CHAIN.md",
+      "blob": "523f133a65771fdbd5a7e5cfecc7418798dd8c35",
+      "scope": "Full fetched source, sections2-4. The p808369 consecutive pair is inherited; its full six-cycle here is separately calculated."
+    },
+    {
+      "authors": "Elsholtz, C., and Tao, T.",
+      "year": 2013,
+      "source": "arXiv:1107.1010",
+      "locator": "Section2, Propositions2.2 and2.6, equations2.1-2.9 and2.13-2.22",
+      "scope": "Used original TypeI/II coordinates, all algebra re-proved; no average-to-pointwise inference."
+    },
+    {
+      "authors": "Tarjan, R. E., and Zwick, U.",
+      "year": 2022,
+      "source": "arXiv:2201.07197v3",
+      "locator": "Theorems3.10 and5.2, pp10 and18",
+      "scope": "Classical strong-component algorithms; the arithmetic fixed-point/reachability theorem is proved directly."
+    }
+  ],
+  "content_search": {
+    "queries": [
+      "2521 closed cycle nonresidue (both workbenches)",
+      "\"Erdos Straus\" \"2521\" \"cycle\"",
+      "\"external-nonresidue\" \"closed\""
+    ],
+    "result": "No exact prior closed-component certificate established by this scoped search. No exhaustive historical-priority conclusion."
+  },
+  "nonimports": [
+    "No analytic theta norm or Frobenius purity assertion",
+    "No universal nonresidue-graph occupancy result",
+    "No conjecture resolution from a failed graph component",
+    "No raw full-session JSONL reading",
+    "No entire moving repository or source CI audit",
+    "No Lean compilation"
+  ],
+  "publication_read_scope": "Current ES main read; merged PR17 is present. No repository writing action was exposed."
+}

@@ -1,0 +1,128 @@
+{
+  "conjugate_matrix": [
+    [
+      null,
+      0,
+      1
+    ],
+    [
+      0,
+      null,
+      1
+    ],
+    [
+      2,
+      2,
+      null
+    ]
+  ],
+  "entries": [
+    {
+      "conjugate_value": 15,
+      "denominator": 31,
+      "h": 1,
+      "k": 0,
+      "norm_symbol": 1,
+      "numerator_norm": 223,
+      "primary_value": 19
+    },
+    {
+      "conjugate_value": 17,
+      "denominator": 31,
+      "h": 0,
+      "k": 1,
+      "norm_symbol": 1,
+      "numerator_norm": 307,
+      "primary_value": 29
+    },
+    {
+      "conjugate_value": 207,
+      "denominator": 223,
+      "h": 1,
+      "k": 0,
+      "norm_symbol": 1,
+      "numerator_norm": 31,
+      "primary_value": 12
+    },
+    {
+      "conjugate_value": 173,
+      "denominator": 223,
+      "h": 0,
+      "k": 1,
+      "norm_symbol": 1,
+      "numerator_norm": 307,
+      "primary_value": 34
+    },
+    {
+      "conjugate_value": 200,
+      "denominator": 307,
+      "h": 0,
+      "k": 2,
+      "norm_symbol": 2,
+      "numerator_norm": 31,
+      "primary_value": 103
+    },
+    {
+      "conjugate_value": 188,
+      "denominator": 307,
+      "h": 0,
+      "k": 2,
+      "norm_symbol": 2,
+      "numerator_norm": 223,
+      "primary_value": 91
+    }
+  ],
+  "omega_images": [
+    25,
+    183,
+    289
+  ],
+  "primary": [
+    [
+      -5,
+      -6
+    ],
+    [
+      -17,
+      -6
+    ],
+    [
+      -17,
+      -18
+    ]
+  ],
+  "primary_matrix": [
+    [
+      null,
+      1,
+      0
+    ],
+    [
+      1,
+      null,
+      0
+    ],
+    [
+      0,
+      0,
+      null
+    ]
+  ],
+  "rational_norm_matrix": [
+    [
+      null,
+      1,
+      1
+    ],
+    [
+      1,
+      null,
+      1
+    ],
+    [
+      2,
+      2,
+      null
+    ]
+  ]
+}

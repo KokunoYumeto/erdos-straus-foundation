@@ -1,0 +1,137 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,xurl}\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}
+\title[Exact E/M channel windows]{Exact Channel Exchange and Joined Divisor Windows\ for the Erd\H{o}s--Straus Equation}
+\author{The Clankers}\date{19 September 2026}
+\begin{document}
+\begin{abstract}
+We retain the original exterior and middle divisor channels. A reciprocal divisor
+involution exchanges them on its maximal integral domain. For $a=2^eA$, $A$ odd,
+the original packet with odd part dividing $A$ has two explicitly overlapping
+cyclic windows, whose union has length $3e+3$. If $a=\ell^e r$ has one simple
+nonresidue prime $r$ and a residue prime $\ell$, these become a complete
+channel classification, with an exact one-unit count comparison when 4 belongs
+to the power subgroup. The theorem is an exact arithmetic comparison on its specified factor class,
+not universal ES occupancy.
+\end{abstract}\maketitle
+Let $p\equiv1\pmod4$ be prime, $p/4<a<p$, $R=4a-p$, and $\gcd(pa,R)=1$.
+The original labelled gates for $u\mid a^2$ are
+\[
+ E:R\mid4u+1,\qquad M:R\mid u+a.
+\]
+Put $d=\gcd(a,u)$ and $(h,r,s)=(d^2/u,u/d,a/d)$. The ordered returns are
+\[
+ E:(a,hs\kappa,phr\kappa),\quad\kappa=(pr+s)/R;
+ \qquad M:(a,phs\lambda,phr\lambda),\quad\lambda=(r+s)/R.
+\]
+Prime valuations give $a=hrs,u=hr^2,\gcd(r,s)=1$; multiplication verifies $4/p$.
+The ordered inverses are $a^2/(Ry-pa)$ and $pa^2/(Ry-pa)$. This arithmetic is
+inherited Type I/II parametrization [1].
+
+\begin{proposition}[Exact channel involution]
+If $4\mid a$, the map $u\mapsto a/(4u)$ is an involution of
+$\operatorname{Div}(a/4)$ and interchanges E and M. This is its maximal integral
+domain among original divisors of $a^2$.
+\end{proposition}
+\begin{proof}
+Integrality is exactly $4u\mid a$. Put $v=a/(4u)$. Since $a,u$ are units modulo
+$R$, the equality $a(4u+1)=4u(v+a)$ proves the equivalence of the gates.
+The ratio $v/u=a/(4u^2)$ has quadratic character $(a/p)$, so it actually changes
+character on a negative source. A numerical fixed point requires $a=4u^2$;
+its E and M labels remain distinct. For example, $p=61,a=16,R=3,u=2$ is fixed.
+\end{proof}
+
+Write $a=2^eA$, $A$ odd, $e\ge1$. Retain the actual subpacket
+$u=2^fd$, $0\le f\le2e$, $d\mid A$. Its omitted odd-square divisors are not
+removed from the full source. For $w\mid A$ consider
+\[
+ I_E=[-2e-2,-2],\quad I_M=[-e,e],\qquad 2^j=-w\pmod R.
+\]
+\begin{theorem}[Joined windows]
+The solutions in these integer intervals are in bijection with the original
+packet hits, by
+\[
+ E:u=2^{-j-2}w,\qquad M:u=2^{e+j}A/w.
+\]
+The inverse reads $f=v_2(u)$ and the odd part $d$ and gives
+$(w,j)=(d,-f-2)$ or $(A/d,f-e)$ respectively. Their union is
+$[-2e-2,e]$, of length $3e+3$. Their overlap is $[-e,-2]$ and pairs
+precisely the involution above.
+
+Let $D=\operatorname{ord}_R(2)$ and $A_- =\#\{w\mid A:-w\in\langle2\rangle_R\}$.
+If $3e+3\ge D$, the packet is jointly occupied exactly when $A_->0$.
+Write $2e+1=f_0D+\rho$, $0\le\rho<D$, and set
+$\delta=\min((e+2)\bmod D,(-e-2)\bmod D)$. Its tagged joint count satisfies
+\[
+ A_-\bigl(2f_0+\mathbf1_{\rho\ge D-\delta}\bigr)
+ \le C\le A_-\bigl(2f_0+\mathbf1_{\rho>0}+\mathbf1_{\rho>\delta}\bigr).
+\]
+The two constants are the exact extrema over cyclic target classes.
+\end{theorem}
+\begin{proof}
+E is equivalent to $2^{-f-2}=-d$, while M is equivalent to $2^{f-e}=-A/d$.
+These equalities prove the bijections. The intervals overlap or are adjacent
+when $e\ge1$, proving the union. The product of their overlap words is $a/4$.
+For counts, remove $f_0$ complete cycles from each interval. The remaining arcs
+have length $\rho$ and separation with shorter distance $\delta$. They overlap
+exactly when $\rho>\delta$, and cover the cycle exactly when $\rho\ge D-\delta$.
+Their indicator-sum extrema give the bounds. Finally a consecutive interval of
+length $3e+3$ fills the cycle exactly when that length is at least $D$.
+\end{proof}
+For $e=0$ the intervals are the two singletons $\{-2\},\{0\}$; the consecutive
+union assertion is not used. Logarithms specify residue classes; the returned
+integer exponents must still lie in the original intervals.
+
+\begin{theorem}[Complete counts with one simple nonresidue factor]
+Suppose $a=Br$, $r\nmid B$ is prime, $(r/p)=-1$, and every prime factor of $B$
+has character $+1$. Put
+$\mu_B(g)=\#\{v\mid B^2:vB^{-1}=g\pmod R\}$. Then
+\[
+ \boxed{|E_a|=\mu_B(-p^{-1}),\qquad |M_a|/2=\mu_B(-r).}
+\]
+For $B=\ell^e$ with $4\in\langle\ell\rangle_R$, let its order be $D$ and retain
+$c=\log_\ell4$. If $-r$ lies in the subgroup with log $j$, then
+\[
+ |E_a|=\#\{n\in[-2e-c,-c]:n=j\pmod D\},\qquad
+ |M_a|/2=\#\{n\in[-e,e]:n=j\pmod D\}.
+\]
+In particular $\bigl||E_a|-|M_a|/2\bigr|\le1$. If $-r$ is outside, both vanish.
+If 4 is outside the power subgroup, at most one channel is occupied.
+\end{theorem}
+\begin{proof}
+For every original square divisor, quadratic reciprocity gives $(u/R)=(u/p)$:
+for each odd prime $t\mid a$, $R=-p\pmod t$ and $R=3\pmod4$ cancel the two
+signs; the supplementary law handles 2. E therefore requires $(u/p)=-1$, and
+M requires $(u/p)=-(a/p)=1$. The permitted exponent of $r$ is consequently one
+in E and zero or two in M. The E word is $u=rv$; the first M orientation is
+$u=v$, and its complement $a^2/v$ is the other. This proves the coefficient
+formulas with all multiplicities. For $B=\ell^e$, the E gate becomes
+$\ell^{-f-c}=-r$, and the first M gate becomes $\ell^{f-e}=-r$.
+The two intervals have the same length, hence their counts of one residue
+differ by at most one. When 4 is outside, the necessary cosets for $-r$ are
+$4^{-1}\langle\ell\rangle$ and $\langle\ell\rangle$, which are disjoint.
+\end{proof}
+For $\ell=2$, one may take the integer lift $c=2$. Thus the joined-window theorem
+classifies the \emph{whole} count $|E|+|M|/2$ in this factor class.
+At the hard prime $23209$, $R=127$, $a=2\cdot2917$, the order is seven and the
+log of $-2917$ is two. The E classes are $3,4,5$ and the M classes $6,0,1$;
+both complete channels miss. This realizes the one-class shortfall from the
+universal cyclic-cover threshold. At residual 31 the primes $43801,8521,12601$
+realize respectively $(|E|,|M|/2)=(1,0),(0,1),(1,1)$, so the count difference
+cannot be improved to equality.
+
+The complete six-vertex stopping example, its original source factorizations and
+ordered returns are recorded in the accompanying workbench and executable
+certificates. The window inequalities do not assert that every prescribed prime
+supplies a suitable factorization or an occupied original target.
+\begin{thebibliography}{2}
+\bibitem{1} C. Elsholtz and T. Tao (2013), \emph{Counting the number of solutions to the
+Erd\H{o}s--Straus equation on unit fractions}, J. Austral. Math. Soc. 94, 50--105;
+arXiv:1107.1010, \S2, Propositions 2.2 and 2.6. Used parametrizations are rederived.
+\bibitem{2} The Clankers (2026), \emph{Turn 4: mixed square-source finite reduction},
+PR19 revision \texttt{4b6bb0f187fa44bb62fc8c51e996f05dfc90e2d7}.
+The source and factor-expansion results do not supply selector occupancy.
+\end{thebibliography}
+\end{document}

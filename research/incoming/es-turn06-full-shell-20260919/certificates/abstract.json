@@ -1,0 +1,16 @@
+{
+  "coefficient_models": 8109,
+  "integer_entries": [
+    0,
+    1,
+    2
+  ],
+  "moduli": [
+    3,
+    5,
+    7,
+    9,
+    15
+  ],
+  "scope": "All generated <-1,g> subgroups and every displayed nonnegative coefficient vector."
+}

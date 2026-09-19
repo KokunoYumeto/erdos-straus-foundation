@@ -1,0 +1,2338 @@
+{
+  "R": 47,
+  "a": 236094,
+  "all_even_modes": 23,
+  "atan_terms": 18,
+  "character_definition": "chi(5)=zeta_23, hence chi(-1)=1; retain principal and conjugate pairs",
+  "coefficient_vector": [
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    3,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    3
+  ],
+  "collision_energy": 132,
+  "cos_terms": 18,
+  "distinct_labelled_states": [
+    {
+      "R": 47,
+      "a": 236094,
+      "channel": "M",
+      "h": 361,
+      "ordered_denominators": [
+        236094,
+        780326438241,
+        4772638766
+      ],
+      "p": 944329,
+      "quotient": 7,
+      "r": 2,
+      "s": 327,
+      "u": 1444
+    },
+    {
+      "R": 47,
+      "a": 236094,
+      "channel": "E",
+      "h": 19,
+      "ordered_denominators": [
+        236094,
+        4743625766,
+        13915701497485019991
+      ],
+      "p": 944329,
+      "quotient": 124832257,
+      "r": 6213,
+      "s": 2,
+      "u": 733426011
+    },
+    {
+      "R": 47,
+      "a": 236094,
+      "channel": "E",
+      "h": 114,
+      "ordered_denominators": [
+        236094,
+        4743626640,
+        25698437786546160
+      ],
+      "p": 944329,
+      "quotient": 2190040,
+      "r": 109,
+      "s": 19,
+      "u": 1354434
+    },
+    {
+      "R": 47,
+      "a": 236094,
+      "channel": "M",
+      "h": 6,
+      "ordered_denominators": [
+        236094,
+        20454166140,
+        6175911660
+      ],
+      "p": 944329,
+      "quotient": 10,
+      "r": 109,
+      "s": 361,
+      "u": 71286
+    },
+    {
+      "R": 47,
+      "a": 236094,
+      "channel": "M",
+      "h": 361,
+      "ordered_denominators": [
+        236094,
+        4772638766,
+        780326438241
+      ],
+      "p": 944329,
+      "quotient": 7,
+      "r": 327,
+      "s": 2,
+      "u": 38601369
+    },
+    {
+      "R": 47,
+      "a": 236094,
+      "channel": "E",
+      "h": 19,
+      "ordered_denominators": [
+        236094,
+        4743668991,
+        520563300901766
+      ],
+      "p": 944329,
+      "quotient": 763507,
+      "r": 38,
+      "s": 327,
+      "u": 27436
+    },
+    {
+      "R": 47,
+      "a": 236094,
+      "channel": "M",
+      "h": 6,
+      "ordered_denominators": [
+        236094,
+        6175911660,
+        20454166140
+      ],
+      "p": 944329,
+      "quotient": 10,
+      "r": 361,
+      "s": 109,
+      "u": 781926
+    },
+    {
+      "R": 47,
+      "a": 236094,
+      "channel": "E",
+      "h": 218,
+      "ordered_denominators": [
+        236094,
+        4744230232,
+        37230865851144
+      ],
+      "p": 944329,
+      "quotient": 60284,
+      "r": 3,
+      "s": 361,
+      "u": 1962
+    }
+  ],
+  "energies": [
+    {
+      "cosine_terms": [
+        {
+          "coefficient": 374,
+          "exponent": 1
+        },
+        {
+          "coefficient": 352,
+          "exponent": 2
+        },
+        {
+          "coefficient": 318,
+          "exponent": 3
+        },
+        {
+          "coefficient": 276,
+          "exponent": 4
+        },
+        {
+          "coefficient": 232,
+          "exponent": 5
+        },
+        {
+          "coefficient": 184,
+          "exponent": 6
+        },
+        {
+          "coefficient": 140,
+          "exponent": 7
+        },
+        {
+          "coefficient": 100,
+          "exponent": 8
+        },
+        {
+          "coefficient": 66,
+          "exponent": 9
+        },
+        {
+          "coefficient": 42,
+          "exponent": 10
+        },
+        {
+          "coefficient": 28,
+          "exponent": 11
+        }
+      ],
+      "lower": [
+        50477576627,
+        50000000
+      ],
+      "mode": 1,
+      "proved_integer_interval": [
+        1009,
+        1010
+      ],
+      "upper": [
+        1009551532541,
+        1000000000
+      ]
+    },
+    {
+      "cosine_terms": [
+        {
+          "coefficient": 374,
+          "exponent": 2
+        },
+        {
+          "coefficient": 352,
+          "exponent": 4
+        },
+        {
+          "coefficient": 318,
+          "exponent": 6
+        },
+        {
+          "coefficient": 276,
+          "exponent": 8
+        },
+        {
+          "coefficient": 232,
+          "exponent": 10
+        },
+        {
+          "coefficient": 184,
+          "exponent": 12
+        },
+        {
+          "coefficient": 140,
+          "exponent": 14
+        },
+        {
+          "coefficient": 100,
+          "exponent": 16
+        },
+        {
+          "coefficient": 66,
+          "exponent": 18
+        },
+        {
+          "coefficient": 42,
+          "exponent": 20
+        },
+        {
+          "coefficient": 28,
+          "exponent": 22
+        }
+      ],
+      "lower": [
+        12260564607,
+        500000000
+      ],
+      "mode": 2,
+      "proved_integer_interval": [
+        24,
+        25
+      ],
+      "upper": [
+        4904225843,
+        200000000
+      ]
+    }
+  ],
+  "five_even_modes_lower_strict": [
+    58,
+    1
+  ],
+  "five_even_modes_rounded_target_lower": 60,
+  "generator": 5,
+  "mass": 48,
+  "norm_polynomial_cyclic_coefficients": [
+    192,
+    187,
+    176,
+    159,
+    138,
+    116,
+    92,
+    70,
+    50,
+    33,
+    21,
+    14,
+    14,
+    21,
+    33,
+    50,
+    70,
+    92,
+    116,
+    138,
+    159,
+    176,
+    187
+  ],
+  "original_target_pairs": [
+    {
+      "input_pair": [
+        2,
+        327
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          780326438241,
+          4772638766
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 2,
+        "s": 327,
+        "u": 1444
+      }
+    },
+    {
+      "input_pair": [
+        2,
+        5867116077
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 19,
+        "ordered_denominators": [
+          236094,
+          4743625766,
+          13915701497485019991
+        ],
+        "p": 944329,
+        "quotient": 124832257,
+        "r": 6213,
+        "s": 2,
+        "u": 733426011
+      }
+    },
+    {
+      "input_pair": [
+        19,
+        102931861
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        38,
+        6213
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          780326438241,
+          4772638766
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 2,
+        "s": 327,
+        "u": 1444
+      }
+    },
+    {
+      "input_pair": [
+        38,
+        205863722
+      ],
+      "pair_mark": {
+        "common_divisor": 2,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        38,
+        111475205463
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 19,
+        "ordered_denominators": [
+          236094,
+          4743625766,
+          13915701497485019991
+        ],
+        "p": 944329,
+        "quotient": 124832257,
+        "r": 6213,
+        "s": 2,
+        "u": 733426011
+      }
+    },
+    {
+      "input_pair": [
+        57,
+        308795583
+      ],
+      "pair_mark": {
+        "common_divisor": 3,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        109,
+        361
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          20454166140,
+          6175911660
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 109,
+        "s": 361,
+        "u": 71286
+      }
+    },
+    {
+      "input_pair": [
+        114,
+        617591166
+      ],
+      "pair_mark": {
+        "common_divisor": 6,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        218,
+        722
+      ],
+      "pair_mark": {
+        "common_divisor": 2,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          20454166140,
+          6175911660
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 109,
+        "s": 361,
+        "u": 71286
+      }
+    },
+    {
+      "input_pair": [
+        327,
+        2
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          4772638766,
+          780326438241
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 327,
+        "s": 2,
+        "u": 38601369
+      }
+    },
+    {
+      "input_pair": [
+        327,
+        1083
+      ],
+      "pair_mark": {
+        "common_divisor": 3,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          20454166140,
+          6175911660
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 109,
+        "s": 361,
+        "u": 71286
+      }
+    },
+    {
+      "input_pair": [
+        327,
+        35884502
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 19,
+        "ordered_denominators": [
+          236094,
+          4743668991,
+          520563300901766
+        ],
+        "p": 944329,
+        "quotient": 763507,
+        "r": 38,
+        "s": 327,
+        "u": 27436
+      }
+    },
+    {
+      "input_pair": [
+        361,
+        109
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          6175911660,
+          20454166140
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 361,
+        "s": 109,
+        "u": 781926
+      }
+    },
+    {
+      "input_pair": [
+        361,
+        2832987
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 218,
+        "ordered_denominators": [
+          236094,
+          4744230232,
+          37230865851144
+        ],
+        "p": 944329,
+        "quotient": 60284,
+        "r": 3,
+        "s": 361,
+        "u": 1962
+      }
+    },
+    {
+      "input_pair": [
+        361,
+        1955705359
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        654,
+        2166
+      ],
+      "pair_mark": {
+        "common_divisor": 6,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          20454166140,
+          6175911660
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 109,
+        "s": 361,
+        "u": 71286
+      }
+    },
+    {
+      "input_pair": [
+        722,
+        218
+      ],
+      "pair_mark": {
+        "common_divisor": 2,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          6175911660,
+          20454166140
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 361,
+        "s": 109,
+        "u": 781926
+      }
+    },
+    {
+      "input_pair": [
+        722,
+        118047
+      ],
+      "pair_mark": {
+        "common_divisor": 361,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          780326438241,
+          4772638766
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 2,
+        "s": 327,
+        "u": 1444
+      }
+    },
+    {
+      "input_pair": [
+        722,
+        5665974
+      ],
+      "pair_mark": {
+        "common_divisor": 2,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 218,
+        "ordered_denominators": [
+          236094,
+          4744230232,
+          37230865851144
+        ],
+        "p": 944329,
+        "quotient": 60284,
+        "r": 3,
+        "s": 361,
+        "u": 1962
+      }
+    },
+    {
+      "input_pair": [
+        722,
+        3911410718
+      ],
+      "pair_mark": {
+        "common_divisor": 38,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        1083,
+        327
+      ],
+      "pair_mark": {
+        "common_divisor": 3,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          6175911660,
+          20454166140
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 361,
+        "s": 109,
+        "u": 781926
+      }
+    },
+    {
+      "input_pair": [
+        1083,
+        5867116077
+      ],
+      "pair_mark": {
+        "common_divisor": 57,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        2166,
+        654
+      ],
+      "pair_mark": {
+        "common_divisor": 6,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          6175911660,
+          20454166140
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 361,
+        "s": 109,
+        "u": 781926
+      }
+    },
+    {
+      "input_pair": [
+        2166,
+        11734232154
+      ],
+      "pair_mark": {
+        "common_divisor": 114,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        6213,
+        38
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          4772638766,
+          780326438241
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 327,
+        "s": 2,
+        "u": 38601369
+      }
+    },
+    {
+      "input_pair": [
+        6213,
+        681805538
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 19,
+        "ordered_denominators": [
+          236094,
+          4743668991,
+          520563300901766
+        ],
+        "p": 944329,
+        "quotient": 763507,
+        "r": 38,
+        "s": 327,
+        "u": 27436
+      }
+    },
+    {
+      "input_pair": [
+        39349,
+        308795583
+      ],
+      "pair_mark": {
+        "common_divisor": 109,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 218,
+        "ordered_denominators": [
+          236094,
+          4744230232,
+          37230865851144
+        ],
+        "p": 944329,
+        "quotient": 60284,
+        "r": 3,
+        "s": 361,
+        "u": 1962
+      }
+    },
+    {
+      "input_pair": [
+        78698,
+        617591166
+      ],
+      "pair_mark": {
+        "common_divisor": 218,
+        "p_side": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 218,
+        "ordered_denominators": [
+          236094,
+          4744230232,
+          37230865851144
+        ],
+        "p": 944329,
+        "quotient": 60284,
+        "r": 3,
+        "s": 361,
+        "u": 1962
+      }
+    },
+    {
+      "input_pair": [
+        118047,
+        722
+      ],
+      "pair_mark": {
+        "common_divisor": 361,
+        "common_p_bit": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          4772638766,
+          780326438241
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 327,
+        "s": 2,
+        "u": 38601369
+      }
+    },
+    {
+      "input_pair": [
+        1888658,
+        308795583
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          780326438241,
+          4772638766
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 2,
+        "s": 327,
+        "u": 1444
+      }
+    },
+    {
+      "input_pair": [
+        2832987,
+        361
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 218,
+        "ordered_denominators": [
+          236094,
+          4744230232,
+          37230865851144
+        ],
+        "p": 944329,
+        "quotient": 60284,
+        "r": 3,
+        "s": 361,
+        "u": 1962
+      }
+    },
+    {
+      "input_pair": [
+        5665974,
+        722
+      ],
+      "pair_mark": {
+        "common_divisor": 2,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 218,
+        "ordered_denominators": [
+          236094,
+          4744230232,
+          37230865851144
+        ],
+        "p": 944329,
+        "quotient": 60284,
+        "r": 3,
+        "s": 361,
+        "u": 1962
+      }
+    },
+    {
+      "input_pair": [
+        35884502,
+        327
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 19,
+        "ordered_denominators": [
+          236094,
+          4743668991,
+          520563300901766
+        ],
+        "p": 944329,
+        "quotient": 763507,
+        "r": 38,
+        "s": 327,
+        "u": 27436
+      }
+    },
+    {
+      "input_pair": [
+        35884502,
+        5867116077
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          780326438241,
+          4772638766
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 2,
+        "s": 327,
+        "u": 1444
+      }
+    },
+    {
+      "input_pair": [
+        102931861,
+        19
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        102931861,
+        340902769
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          20454166140,
+          6175911660
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 109,
+        "s": 361,
+        "u": 71286
+      }
+    },
+    {
+      "input_pair": [
+        205863722,
+        38
+      ],
+      "pair_mark": {
+        "common_divisor": 2,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        205863722,
+        681805538
+      ],
+      "pair_mark": {
+        "common_divisor": 2,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          20454166140,
+          6175911660
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 109,
+        "s": 361,
+        "u": 71286
+      }
+    },
+    {
+      "input_pair": [
+        308795583,
+        57
+      ],
+      "pair_mark": {
+        "common_divisor": 3,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        308795583,
+        39349
+      ],
+      "pair_mark": {
+        "common_divisor": 109,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 218,
+        "ordered_denominators": [
+          236094,
+          4744230232,
+          37230865851144
+        ],
+        "p": 944329,
+        "quotient": 60284,
+        "r": 3,
+        "s": 361,
+        "u": 1962
+      }
+    },
+    {
+      "input_pair": [
+        308795583,
+        1888658
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          4772638766,
+          780326438241
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 327,
+        "s": 2,
+        "u": 38601369
+      }
+    },
+    {
+      "input_pair": [
+        308795583,
+        1022708307
+      ],
+      "pair_mark": {
+        "common_divisor": 3,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          20454166140,
+          6175911660
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 109,
+        "s": 361,
+        "u": 71286
+      }
+    },
+    {
+      "input_pair": [
+        340902769,
+        102931861
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          6175911660,
+          20454166140
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 361,
+        "s": 109,
+        "u": 781926
+      }
+    },
+    {
+      "input_pair": [
+        617591166,
+        114
+      ],
+      "pair_mark": {
+        "common_divisor": 6,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        617591166,
+        78698
+      ],
+      "pair_mark": {
+        "common_divisor": 218,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 218,
+        "ordered_denominators": [
+          236094,
+          4744230232,
+          37230865851144
+        ],
+        "p": 944329,
+        "quotient": 60284,
+        "r": 3,
+        "s": 361,
+        "u": 1962
+      }
+    },
+    {
+      "input_pair": [
+        617591166,
+        2045416614
+      ],
+      "pair_mark": {
+        "common_divisor": 6,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          20454166140,
+          6175911660
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 109,
+        "s": 361,
+        "u": 71286
+      }
+    },
+    {
+      "input_pair": [
+        681805538,
+        6213
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 19,
+        "ordered_denominators": [
+          236094,
+          4743668991,
+          520563300901766
+        ],
+        "p": 944329,
+        "quotient": 763507,
+        "r": 38,
+        "s": 327,
+        "u": 27436
+      }
+    },
+    {
+      "input_pair": [
+        681805538,
+        205863722
+      ],
+      "pair_mark": {
+        "common_divisor": 2,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          6175911660,
+          20454166140
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 361,
+        "s": 109,
+        "u": 781926
+      }
+    },
+    {
+      "input_pair": [
+        681805538,
+        111475205463
+      ],
+      "pair_mark": {
+        "common_divisor": 361,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          780326438241,
+          4772638766
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 2,
+        "s": 327,
+        "u": 1444
+      }
+    },
+    {
+      "input_pair": [
+        1022708307,
+        308795583
+      ],
+      "pair_mark": {
+        "common_divisor": 3,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          6175911660,
+          20454166140
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 361,
+        "s": 109,
+        "u": 781926
+      }
+    },
+    {
+      "input_pair": [
+        1955705359,
+        361
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        2045416614,
+        617591166
+      ],
+      "pair_mark": {
+        "common_divisor": 6,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 6,
+        "ordered_denominators": [
+          236094,
+          6175911660,
+          20454166140
+        ],
+        "p": 944329,
+        "quotient": 10,
+        "r": 361,
+        "s": 109,
+        "u": 781926
+      }
+    },
+    {
+      "input_pair": [
+        3911410718,
+        722
+      ],
+      "pair_mark": {
+        "common_divisor": 38,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        5867116077,
+        2
+      ],
+      "pair_mark": {
+        "common_divisor": 1,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 19,
+        "ordered_denominators": [
+          236094,
+          4743625766,
+          13915701497485019991
+        ],
+        "p": 944329,
+        "quotient": 124832257,
+        "r": 6213,
+        "s": 2,
+        "u": 733426011
+      }
+    },
+    {
+      "input_pair": [
+        5867116077,
+        1083
+      ],
+      "pair_mark": {
+        "common_divisor": 57,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        5867116077,
+        35884502
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          4772638766,
+          780326438241
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 327,
+        "s": 2,
+        "u": 38601369
+      }
+    },
+    {
+      "input_pair": [
+        11734232154,
+        2166
+      ],
+      "pair_mark": {
+        "common_divisor": 114,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 114,
+        "ordered_denominators": [
+          236094,
+          4743626640,
+          25698437786546160
+        ],
+        "p": 944329,
+        "quotient": 2190040,
+        "r": 109,
+        "s": 19,
+        "u": 1354434
+      }
+    },
+    {
+      "input_pair": [
+        111475205463,
+        38
+      ],
+      "pair_mark": {
+        "common_divisor": 19,
+        "p_side": 0
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "E",
+        "h": 19,
+        "ordered_denominators": [
+          236094,
+          4743625766,
+          13915701497485019991
+        ],
+        "p": 944329,
+        "quotient": 124832257,
+        "r": 6213,
+        "s": 2,
+        "u": 733426011
+      }
+    },
+    {
+      "input_pair": [
+        111475205463,
+        681805538
+      ],
+      "pair_mark": {
+        "common_divisor": 361,
+        "common_p_bit": 1
+      },
+      "state": {
+        "R": 47,
+        "a": 236094,
+        "channel": "M",
+        "h": 361,
+        "ordered_denominators": [
+          236094,
+          4772638766,
+          780326438241
+        ],
+        "p": 944329,
+        "quotient": 7,
+        "r": 327,
+        "s": 2,
+        "u": 38601369
+      }
+    }
+  ],
+  "original_words": [
+    {
+      "a_divisor": 1,
+      "d": 1,
+      "even_log_mod23": 0,
+      "full_log_mod46": 0,
+      "p_bit": 0,
+      "residue": 1
+    },
+    {
+      "a_divisor": 2,
+      "d": 2,
+      "even_log_mod23": 18,
+      "full_log_mod46": 18,
+      "p_bit": 0,
+      "residue": 2
+    },
+    {
+      "a_divisor": 3,
+      "d": 3,
+      "even_log_mod23": 20,
+      "full_log_mod46": 20,
+      "p_bit": 0,
+      "residue": 3
+    },
+    {
+      "a_divisor": 6,
+      "d": 6,
+      "even_log_mod23": 15,
+      "full_log_mod46": 38,
+      "p_bit": 0,
+      "residue": 6
+    },
+    {
+      "a_divisor": 19,
+      "d": 19,
+      "even_log_mod23": 22,
+      "full_log_mod46": 45,
+      "p_bit": 0,
+      "residue": 19
+    },
+    {
+      "a_divisor": 38,
+      "d": 38,
+      "even_log_mod23": 17,
+      "full_log_mod46": 17,
+      "p_bit": 0,
+      "residue": 38
+    },
+    {
+      "a_divisor": 57,
+      "d": 57,
+      "even_log_mod23": 19,
+      "full_log_mod46": 19,
+      "p_bit": 0,
+      "residue": 10
+    },
+    {
+      "a_divisor": 109,
+      "d": 109,
+      "even_log_mod23": 21,
+      "full_log_mod46": 21,
+      "p_bit": 0,
+      "residue": 15
+    },
+    {
+      "a_divisor": 114,
+      "d": 114,
+      "even_log_mod23": 14,
+      "full_log_mod46": 37,
+      "p_bit": 0,
+      "residue": 20
+    },
+    {
+      "a_divisor": 218,
+      "d": 218,
+      "even_log_mod23": 16,
+      "full_log_mod46": 39,
+      "p_bit": 0,
+      "residue": 30
+    },
+    {
+      "a_divisor": 327,
+      "d": 327,
+      "even_log_mod23": 18,
+      "full_log_mod46": 41,
+      "p_bit": 0,
+      "residue": 45
+    },
+    {
+      "a_divisor": 361,
+      "d": 361,
+      "even_log_mod23": 21,
+      "full_log_mod46": 44,
+      "p_bit": 0,
+      "residue": 32
+    },
+    {
+      "a_divisor": 654,
+      "d": 654,
+      "even_log_mod23": 13,
+      "full_log_mod46": 13,
+      "p_bit": 0,
+      "residue": 43
+    },
+    {
+      "a_divisor": 722,
+      "d": 722,
+      "even_log_mod23": 16,
+      "full_log_mod46": 16,
+      "p_bit": 0,
+      "residue": 17
+    },
+    {
+      "a_divisor": 1083,
+      "d": 1083,
+      "even_log_mod23": 18,
+      "full_log_mod46": 18,
+      "p_bit": 0,
+      "residue": 2
+    },
+    {
+      "a_divisor": 2071,
+      "d": 2071,
+      "even_log_mod23": 20,
+      "full_log_mod46": 20,
+      "p_bit": 0,
+      "residue": 3
+    },
+    {
+      "a_divisor": 2166,
+      "d": 2166,
+      "even_log_mod23": 13,
+      "full_log_mod46": 36,
+      "p_bit": 0,
+      "residue": 4
+    },
+    {
+      "a_divisor": 4142,
+      "d": 4142,
+      "even_log_mod23": 15,
+      "full_log_mod46": 38,
+      "p_bit": 0,
+      "residue": 6
+    },
+    {
+      "a_divisor": 6213,
+      "d": 6213,
+      "even_log_mod23": 17,
+      "full_log_mod46": 40,
+      "p_bit": 0,
+      "residue": 9
+    },
+    {
+      "a_divisor": 12426,
+      "d": 12426,
+      "even_log_mod23": 12,
+      "full_log_mod46": 12,
+      "p_bit": 0,
+      "residue": 18
+    },
+    {
+      "a_divisor": 39349,
+      "d": 39349,
+      "even_log_mod23": 19,
+      "full_log_mod46": 19,
+      "p_bit": 0,
+      "residue": 10
+    },
+    {
+      "a_divisor": 78698,
+      "d": 78698,
+      "even_log_mod23": 14,
+      "full_log_mod46": 37,
+      "p_bit": 0,
+      "residue": 20
+    },
+    {
+      "a_divisor": 118047,
+      "d": 118047,
+      "even_log_mod23": 16,
+      "full_log_mod46": 39,
+      "p_bit": 0,
+      "residue": 30
+    },
+    {
+      "a_divisor": 236094,
+      "d": 236094,
+      "even_log_mod23": 11,
+      "full_log_mod46": 11,
+      "p_bit": 0,
+      "residue": 13
+    },
+    {
+      "a_divisor": 1,
+      "d": 944329,
+      "even_log_mod23": 1,
+      "full_log_mod46": 1,
+      "p_bit": 1,
+      "residue": 5
+    },
+    {
+      "a_divisor": 2,
+      "d": 1888658,
+      "even_log_mod23": 19,
+      "full_log_mod46": 19,
+      "p_bit": 1,
+      "residue": 10
+    },
+    {
+      "a_divisor": 3,
+      "d": 2832987,
+      "even_log_mod23": 21,
+      "full_log_mod46": 21,
+      "p_bit": 1,
+      "residue": 15
+    },
+    {
+      "a_divisor": 6,
+      "d": 5665974,
+      "even_log_mod23": 16,
+      "full_log_mod46": 39,
+      "p_bit": 1,
+      "residue": 30
+    },
+    {
+      "a_divisor": 19,
+      "d": 17942251,
+      "even_log_mod23": 0,
+      "full_log_mod46": 0,
+      "p_bit": 1,
+      "residue": 1
+    },
+    {
+      "a_divisor": 38,
+      "d": 35884502,
+      "even_log_mod23": 18,
+      "full_log_mod46": 18,
+      "p_bit": 1,
+      "residue": 2
+    },
+    {
+      "a_divisor": 57,
+      "d": 53826753,
+      "even_log_mod23": 20,
+      "full_log_mod46": 20,
+      "p_bit": 1,
+      "residue": 3
+    },
+    {
+      "a_divisor": 109,
+      "d": 102931861,
+      "even_log_mod23": 22,
+      "full_log_mod46": 22,
+      "p_bit": 1,
+      "residue": 28
+    },
+    {
+      "a_divisor": 114,
+      "d": 107653506,
+      "even_log_mod23": 15,
+      "full_log_mod46": 38,
+      "p_bit": 1,
+      "residue": 6
+    },
+    {
+      "a_divisor": 218,
+      "d": 205863722,
+      "even_log_mod23": 17,
+      "full_log_mod46": 40,
+      "p_bit": 1,
+      "residue": 9
+    },
+    {
+      "a_divisor": 327,
+      "d": 308795583,
+      "even_log_mod23": 19,
+      "full_log_mod46": 42,
+      "p_bit": 1,
+      "residue": 37
+    },
+    {
+      "a_divisor": 361,
+      "d": 340902769,
+      "even_log_mod23": 22,
+      "full_log_mod46": 45,
+      "p_bit": 1,
+      "residue": 19
+    },
+    {
+      "a_divisor": 654,
+      "d": 617591166,
+      "even_log_mod23": 14,
+      "full_log_mod46": 14,
+      "p_bit": 1,
+      "residue": 27
+    },
+    {
+      "a_divisor": 722,
+      "d": 681805538,
+      "even_log_mod23": 17,
+      "full_log_mod46": 17,
+      "p_bit": 1,
+      "residue": 38
+    },
+    {
+      "a_divisor": 1083,
+      "d": 1022708307,
+      "even_log_mod23": 19,
+      "full_log_mod46": 19,
+      "p_bit": 1,
+      "residue": 10
+    },
+    {
+      "a_divisor": 2071,
+      "d": 1955705359,
+      "even_log_mod23": 21,
+      "full_log_mod46": 21,
+      "p_bit": 1,
+      "residue": 15
+    },
+    {
+      "a_divisor": 2166,
+      "d": 2045416614,
+      "even_log_mod23": 14,
+      "full_log_mod46": 37,
+      "p_bit": 1,
+      "residue": 20
+    },
+    {
+      "a_divisor": 4142,
+      "d": 3911410718,
+      "even_log_mod23": 16,
+      "full_log_mod46": 39,
+      "p_bit": 1,
+      "residue": 30
+    },
+    {
+      "a_divisor": 6213,
+      "d": 5867116077,
+      "even_log_mod23": 18,
+      "full_log_mod46": 41,
+      "p_bit": 1,
+      "residue": 45
+    },
+    {
+      "a_divisor": 12426,
+      "d": 11734232154,
+      "even_log_mod23": 13,
+      "full_log_mod46": 13,
+      "p_bit": 1,
+      "residue": 43
+    },
+    {
+      "a_divisor": 39349,
+      "d": 37158401821,
+      "even_log_mod23": 20,
+      "full_log_mod46": 20,
+      "p_bit": 1,
+      "residue": 3
+    },
+    {
+      "a_divisor": 78698,
+      "d": 74316803642,
+      "even_log_mod23": 15,
+      "full_log_mod46": 38,
+      "p_bit": 1,
+      "residue": 6
+    },
+    {
+      "a_divisor": 118047,
+      "d": 111475205463,
+      "even_log_mod23": 17,
+      "full_log_mod46": 40,
+      "p_bit": 1,
+      "residue": 9
+    },
+    {
+      "a_divisor": 236094,
+      "d": 222950410926,
+      "even_log_mod23": 12,
+      "full_log_mod46": 12,
+      "p_bit": 1,
+      "residue": 18
+    }
+  ],
+  "p": 944329,
+  "pi_identity": "pi=16 arctan(1/5)-4 arctan(1/239)",
+  "pi_interval": [
+    [
+      92676161944119193876535457516553944143835008694392062238962837114882876962960559561995010105901400094677239277187052154250324,
+      29499738560383133012504461154278174633352032095346122681020808889829314090301152918706119261138247777125798165798187255859375
+    ],
+    [
+      8112267112280876899610953737844218427786424954355327339928601316068363661652866296680048911001930995449605757112976200536,
+      2582214821202634146155044655580099668541519939719728530752333545441196240463328103386330706844964879564940929412841796875
+    ]
+  ],
+  "prime_factorization_a": [
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      109,
+      1
+    ]
+  ],
+  "scope": "A proper selected spectrum, not the complete terminal quotient. Rational interval certificates use no floating point. Universal selection not asserted.",
+  "selected_even_modes": [
+    0,
+    1,
+    22,
+    2,
+    21
+  ],
+  "target_count": 60,
+  "three_even_modes_lower_strict": [
+    1286,
+    23
+  ],
+  "three_even_modes_rounded_target_lower": 56,
+  "witness": {
+    "input_pair": [
+      2,
+      327
+    ],
+    "pair_mark": {
+      "common_divisor": 1,
+      "common_p_bit": 0
+    },
+    "state": {
+      "R": 47,
+      "a": 236094,
+      "channel": "M",
+      "h": 361,
+      "ordered_denominators": [
+        236094,
+        780326438241,
+        4772638766
+      ],
+      "p": 944329,
+      "quotient": 7,
+      "r": 2,
+      "s": 327,
+      "u": 1444
+    }
+  }
+}

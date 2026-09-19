@@ -1,0 +1,646 @@
+\section{Objective and the precise outcome}
+The Turn 5 handoff asks for positivity of the complete original first-half
+pair sum at a prescribed prime, not for another family constructed after useful
+factors are supplied. We make that attempt here. The exact pair source and its
+$2\tau_{\rm div}(h)$ fibres are inherited from \cite[\S\S3--4]{Turn5}; the
+Type I/II coordinates are classical \cite[\S2]{ET}. They are rederived below so
+that the new estimates have a complete arithmetic return.
+
+The principal-character isolation attempt fails quantitatively: for every prime
+$p\equiv1\pmod4$ with $p\ge2^{20}$, its complete unweighted lower estimate is at
+most $-p\log p/24$. More generally this remains true when at most $J$ even characters are retained
+at each shell, once $p\ge2^{20}J^3$, including arbitrary shellwise subgroup
+observations of index at most $J$. An all-exponent refinement extends this
+obstruction to every fixed sublinear mode budget, with an explicit onset.
+This is an obstruction to that specified estimate, not to ES or to every possible
+signed estimate. An original finite prime also defeats \emph{every} nonnegative
+shell reweighting of the principal-only estimate.
+
+The surviving calculation retains nonprincipal even-character information
+through unsaturated cosets and uses an exact integer collision bound. It returns
+actual states at the four bounded principal-only failures, including a cubic
+quotient whose two occupied coarse coefficients are both eight. No theorem
+that these improved bounds are positive at some shell of every prime is proved.
+No historical-priority claim is made for the estimates or the classical
+Cauchy--Schwarz, balancing, Fourier, and divisor arguments they use.
+
+\section{Complete source, first-half completeness, and original returns}
+Let $p\equiv1\pmod4$ be prime and put
+\[
+ I_p=\{a\in\mathbb Z:p/4<a<p/2\},\qquad R_a=4a-p.
+\]
+Thus $R_a=3,7,\ldots,p-2$, and $\gcd(pa,R_a)=1$.
+Write $a=\prod_\ell\ell^{e_\ell}$. The complete original divisor source is
+\[
+ \beta_\ell\in[-e_\ell,e_\ell]_{\mathbb Z},\qquad
+ u=\prod_\ell\ell^{e_\ell+\beta_\ell}\mid a^2.            \tag{1}
+\]
+Its inverse is $\beta_\ell=v_\ell(u)-e_\ell$. The gates and normalization are
+\[
+ E:R_a\mid4u+1,\qquad M:R_a\mid4u+p,
+\]
+\[
+ d_0=\gcd(a,u),\quad (h,r,s)=(d_0^2/u,u/d_0,a/d_0),
+ \quad a=hrs,\quad u=hr^2,\quad\gcd(r,s)=1.
+\]
+Prime valuations prove the asserted positive integers. The ordered returns are
+\[
+ E:\ \kappa=(pr+s)/R_a,\quad(x,y,z)=(a,hs\kappa,phr\kappa),
+                                                               \tag{2}
+\]
+\[
+ M:\ \lambda=(r+s)/R_a,\quad(x,y,z)=(a,phs\lambda,phr\lambda).
+                                                               \tag{3}
+\]
+The gates and the fact that $h,r,s$ are units modulo $R_a$ prove the integer
+quotients. Clearing denominators proves $4/p=1/x+1/y+1/z$. The ordered divisor
+inverses are respectively
+\[
+ u=\frac{a^2}{R_ay-pa},\qquad
+ u=\frac{pa^2}{R_ay-pa}.                                      \tag{4}
+\]
+The middle involution $u\mapsto a^2/u$ swaps the last two denominators;
+exterior orientation retains its unique $p$-divisible denominator last.
+
+For completeness, every positive solution has a distinguished first-half
+coordinate. Order $x\le y\le z$. Then $p/4<x\le3p/4<p$, and at least one,
+but not all, denominators are multiples of $p$. In Type II, $y,z\ge p$ force
+$x<p/2$. In Type I write the two non-$p$ denominators as $dr,ds$, with
+$r\le s$ and $\gcd(r,s)=1$, and the third as $pk$. The equation gives
+$p\mid4k-1$; put $t=(4k-1)/p\equiv3\pmod4$. Then
+\[
+ td rs=k(r+s),\quad k=h rs,\quad r+s=t\lambda,\quad d=h\lambda.
+\]
+Here $rs\mid k$ and $\gcd(t,h)=1$ justify the two divisions.
+The case $r=s$ would give $t\mid2$ and is impossible. For $r<s$,
+\[
+ p-2hr\lambda
+ =\frac{2hr(s-r)-1}{t}>0.
+\]
+So $hr\lambda$ is a first-half denominator. Finally
+\[
+ (R_ay-pa)(R_az-pa)=p^2a^2                                 \tag{5}
+\]
+classifies a solution at this denominator. Both factors are positive; their
+$p$-valuations are $(0,2),(1,1),(2,0)$. The required congruence modulo $R_a$
+and the divisor relation recover exactly (1)--(4), with the recorded exterior
+orientation or either middle order. These are the inherited Type I/II
+coordinates \cite[Propositions 2.2 and 2.6]{ET}, not a new parametrization.
+
+\subsection{The common pair source}
+Retain actual divisors of $pa$ as $d=p^\epsilon v$, where $v\mid a$ and
+$\epsilon\in\{0,1\}$. Put
+\[
+ \mathcal P_a=\{(b,c):b,c\mid pa,\ R_a\mid b+c\},\qquad T_a=|\mathcal P_a|.
+                                                               \tag{6}
+\]
+A primitive labelled M pair $(r,s)$ has the full fibre
+\[
+ (b,c)=(p^\epsilon d r,p^\epsilon d s),\quad d\mid h,
+ \quad \epsilon\in\{0,1\};                                \tag{7}
+\]
+an E pair has fibre
+\[
+ (pdr,ds)\ \hbox{or}\ (ds,pdr),\quad d\mid h.              \tag{8}
+\]
+To invert, divide $(b,c)$ by its gcd. If neither coprime part contains $p$, use
+M and retain the gcd's $p$-bit. Otherwise remove its one $p$, designate that side
+$r$, and use E, retaining the side. The lcm condition gives $drs\mid a$ and
+$h=a/(rs)$. Thus every original state has exactly $2\tau_{\rm div}(h)$ preimages.
+At fixed $a$ the map $(r,s,h)\mapsto u=hr^2$ is the original divisor inverse.
+Consequently, for $F_a=|E_a|+|M_a|$,
+\[
+ 2F_a\le T_a\le2\tau_{\rm div}(a)F_a,\qquad
+ \operatorname{ES}(p)\ \Longleftrightarrow\ \sum_{a\in I_p}T_a>0. \tag{9}
+\]
+The full exact-state M\"obius inversion remains in \cite[\S4, ``Complete primitive count'']{Turn5}; it
+is not an additional prerequisite for using (9). Here $\tau_{\rm div}$ is the
+divisor-count function, not the absent-support element $\tau$.
+
+\begin{lemma}[Original fourfold orbits]\label{lem:four}
+For every actual shell, $T_a\in4\mathbb Z_{\ge0}$. The involutions
+\[
+ S(b,c)=(c,b),\qquad I(b,c)=(pa/b,pa/c)                    \tag{10}
+\]
+generate a free Klein four action on $\mathcal P_a$.
+\end{lemma}
+\begin{proof}
+They commute and preserve (6). A fixed point of $S$ would give $R_a\mid2b$,
+contrary to coprimality and $R_a\ge3$. A fixed point of $I$ would give $b^2=pa$,
+contrary to $v_p(pa)=1$. A fixed point of $SI$ gives $bc=pa$ and $b\equiv-c$.
+Since $pa\equiv4a^2\pmod{R_a}$, it would make $-1$ a square modulo $R_a$.
+This is impossible when $R_a\equiv3\pmod4$: a prime $3\pmod4$ occurs to odd
+exponent in $R_a$ and $-1$ is a nonsquare there. Thus all orbits have four members.
+In (7), $S$ swaps $r,s$ and $I$ additionally sends $(d,\epsilon)$ to
+$(h/d,1-\epsilon)$. In (8), $S$ changes the side and $I$ also replaces $d$ by
+$h/d$. These are actions on the original marked fibres, not extra ES states.
+\end{proof}
+
+\section{The full-shell principal estimate is uniformly negative}
+In $G_a=(\mathbb Z/R_a\mathbb Z)^\times$, let
+\[
+ c_a(g)=\#\{d\mid pa:d\equiv g\pmod{R_a}\},\quad
+ m_a=2\tau_{\rm div}(a),\quad \mathcal E_a=\sum_g c_a(g)^2.
+\]
+Character orthogonality gives
+\[
+ T_a=\frac1{\varphi(R_a)}\sum_\chi\chi(-1)
+             \left|\sum_{d\mid pa}\chi(d)\right|^2,
+ \qquad
+ \mathcal E_a=\frac1{\varphi(R_a)}\sum_\chi
+             \left|\sum_{d\mid pa}\chi(d)\right|^2.       \tag{11}
+\]
+All characters, including imprimitive ones, are retained. The first identity is
+already present in the historical pair-source transcript \cite{Boolean}; its
+use here does not claim a new Fourier reformulation. The principal contribution
+is $P_a=m_a^2/\varphi(R_a)$. Giving every nonprincipal term the adverse sign yields
+\[
+ T_a\ge L_a:=2P_a-\mathcal E_a
+ =\frac{8\tau_{\rm div}(a)^2}{\varphi(R_a)}-\mathcal E_a. \tag{12}
+\]
+This is a valid lower bound, but the next theorem shows why summing it cannot
+close the conjecture.
+
+\begin{lemma}[Two elementary explicit bounds]\label{lem:elementary}
+For $n\ge1$, $\tau_{\rm div}(n)<4n^{1/3}$. For $x\ge3$,
+\[
+ \sum_{\substack{r\le x\\r\equiv3\ (4)}}\frac1{\varphi(r)}
+ <\frac75\left(1+\frac14\log x\right).                  \tag{13}
+\]
+\end{lemma}
+\begin{proof}
+For primes at least eleven, $e+1\le2^e\le q^{e/3}$. For $q=2,3,5,7$, successive
+ratios show that $(e+1)/q^{e/3}$ is maximized at $e=3,2,1,1$, respectively.
+The four maxima are bounded by $2,3/2,6/5,11/10$; their product is $3.96<4$.
+The ratio check after a maximum is $(e+2)^3<q(e+1)^3$ and becomes stronger as
+$e$ increases; before the maximum the reverse inequalities hold. This proves
+all exponent cases, not only the finitely evaluated maxima.
+
+For the second assertion use the classical divisor identity, also recorded in
+\cite[Lemmas 8--10, pp. 11--12]{Farah}. Only this identity and its elementary
+expansion are used; no probability or independence assertion from that paper
+enters the present proof. Explicitly,
+\[
+ \frac r{\varphi(r)}=\sum_{d\mid r}\frac{\mu(d)^2}{\varphi(d)}.
+\]
+Writing $r=dm$, both variables are odd and $m$ is in one specified reduced class
+modulo four. For either class,
+$\sum_{m\le X}1/m\le1+\frac14\log X$: isolate its first term and bound later
+terms by the preceding length-four integrals. Consequently the left side of
+(13) is at most
+\[
+ \left(1+\frac14\log x\right)
+ \sum_{d\text{ odd}}\frac{\mu(d)^2}{d\varphi(d)}
+ =\left(1+\frac14\log x\right)
+ \prod_{q\text{ odd prime}}\left(1+\frac1{q(q-1)}\right).
+\]
+Absolute convergence justifies this expansion. Its product is at most
+\[
+ \exp\left(\sum_{j\ge1}\frac1{2j(2j+1)}\right)
+ =\exp(1-\log2)=\frac e2<\frac75.
+\]
+The last strict inequality follows from the factorial series for $e<14/5$.
+\end{proof}
+
+\begin{theorem}[A complete pointwise failure of principal domination]
+\label{thm:negative}
+For every prime $p\equiv1\pmod4$ with $p\ge2^{20}$,
+\[
+ \boxed{\sum_{a\in I_p}L_a\le-\frac1{24}p\log p.}        \tag{14}
+\]
+\end{theorem}
+\begin{proof}
+Put $\mathcal P=\sum_aP_a$ and $\mathcal D=\sum_a\mathcal E_a$.
+Because $a<p/2$ and $2^{-2/3}<2/3$, Lemma~\ref{lem:elementary} gives
+\[
+ \mathcal P<\frac{224}{15}p^{2/3}(\log p+4).             \tag{15}
+\]
+On the other hand, $\mathcal E_a\ge m_a=2\tau_{\rm div}(a)$ from the original
+diagonal pairs. Let $Y=\lfloor\sqrt p/2\rfloor$. Every divisor $d\le Y$ of
+$a$ has a distinct complementary divisor $a/d>Y$, since $a>p/4\ge Y^2$.
+The interval $I_p$ contains more than $p/(4d)-1$ multiples of $d$, so
+\[
+ \mathcal D\ge2\sum_a\tau_{\rm div}(a)
+ >p\sum_{d=1}^Y\frac1d-4Y
+ >p(\tfrac12\log p-\log2)-2\sqrt p.                    \tag{16}
+\]
+The harmonic bound is $\sum_{d\le Y}1/d\ge\log(Y+1)$, and $Y+1>\sqrt p/2$.
+
+For $p\ge2^{20}$, one has $p^{1/3}>100$, $\log p>40/3$, $\log2<3/4$ and
+$2/\sqrt p\le1/512$. Equations (15)--(16) imply
+\[
+ \frac{2\mathcal P}{p\log p}
+ <\frac{448}{15}\frac1{100}\frac{13}{10}
+ =\frac{728}{1875},\qquad
+ \frac{\mathcal D}{p\log p}>\frac7{16}.
+\]
+Finally $7/16-728/1875=1477/30000>1/24$. This proves (14). The elementary
+logarithm bounds follow either from integration or the rational series retained
+in the certificate. No distribution-of-primes theorem or ES occupancy enters.
+\end{proof}
+
+\begin{corollary}[Adaptive finite quotient resolution]\label{cor:index}
+For each shell choose any subgroup $B_a\le G_a$ containing $-1$, with
+$[G_a:B_a]\le J$. Let $m_{a,C}=\sum_{g\in C}c_a(g)$ and put
+\[
+ L_{a,B_a}=\frac2{|B_a|}\sum_{C\in G_a/B_a}m_{a,C}^2-\mathcal E_a.
+                                                               \tag{17}
+\]
+For every integer $J\ge1$ and prime $p\equiv1\pmod4$ with $p\ge2^{20}J^3$,
+\[
+ \sum_a L_{a,B_a}\le-\frac1{24}p\log p.                 \tag{18}
+\]
+The subgroups may depend on the actual factorization of each shell.
+More generally, let $\Sigma_a$ be any at most $J$ even characters, with conjugate
+pairs retained when a real observation is intended, and put
+\[
+ L_{a,\Sigma_a}=\frac2{\varphi(R_a)}
+ \sum_{\chi\in\Sigma_a}\left|\sum_{d\mid pa}\chi(d)\right|^2-\mathcal E_a.
+                                                               \tag{18a}
+\]
+Then $T_a\ge L_{a,\Sigma_a}$ and the same summed upper bound (18) holds.
+\end{corollary}
+\begin{proof}
+Let $\mathcal E_+$ be the full even-character energy. Equation (11) gives
+$T_a=2\mathcal E_+-\mathcal E_a$. Retaining any part of that nonnegative energy
+proves (18a). Each squared character sum is at most $m_a^2$, so
+$L_{a,\Sigma_a}\le2JP_a-\mathcal E_a$. The previous proof applies because
+$p^{1/3}>100J$. The subgroup version is $\Sigma_a=B_a^\perp$, whose cardinality
+is its index. Equivalently use $\sum_Cm_{a,C}^2\le m_a^2$ in (17).
+\end{proof}
+The same argument permits positive weights $w_0\le w_a\le w_1$ after replacing
+$J$ by $Jw_1/w_0$ in the height condition, and yields the upper bound
+$-w_0p\log p/24$. It does not cover truncating all negative bounds to zero,
+weights without a positive lower bound, unbounded-index observations, or the
+integer refinement below. Those restrictions are part of the theorem.
+
+\subsection{An effective obstruction at every fixed sublinear spectral scale}
+The power $J^3$ above is not an intrinsic barrier. For an integer $m\ge3$, put
+\[
+ K_m=\prod_{\substack{q<2^m\\q\ \mathrm{prime}}}
+       \max_{0\le e<2m}\frac{(e+1)^m}{q^e},\qquad
+ C_m=\min\{C\in\mathbb Z_{>0}:C^m\ge K_m\}.             \tag{18b}
+\]
+These are finite, exactly computable constants. For every integer $a\ge1$,
+\[
+ \tau_{\rm div}(a)\le C_ma^{1/m}.
+\]
+For $q\ge2^m$, use $e+1\le2^e$. For a smaller prime, the consecutive ratio
+is decreasing, and once $e+1\ge2m$,
+\[
+ \left(1+\frac1{e+1}\right)^m
+ \le\left(1+\frac1{2m}\right)^m
+ \le\sum_{j=0}^m\frac1{2^j j!}<2\le q.
+\]
+The maximum is therefore among the stated $2m$ exponents. Multiplication proves
+the all-integer bound.
+
+\begin{theorem}[Effective sublinear-resolution obstruction]\label{thm:sublinear}
+Retain any at most $J$ even characters at each original shell. For every prime
+$p\equiv1\pmod4$ such that
+\[
+ p\ge2^{20},\qquad p^{1-2/m}\ge12JC_m^2,
+\]
+\[
+ \boxed{\sum_{a\in I_p}L_{a,\Sigma_a}\le-\frac18p\log p.} \tag{18c}
+\]
+For $m=4$, $C_4=9$, so it suffices that
+\[
+ \boxed{p\ge\max\{2^{20},944784J^2\}.}                 \tag{18d}
+\]
+\end{theorem}
+\begin{proof}
+The reciprocal-totient estimate (13) gives
+\[
+ \mathcal P\le\frac75 C_m^2\,2^{-2/m}p^{2/m}(\log p+4).
+\]
+As before $\mathcal D/(p\log p)>7/16$ and
+$1+4/\log p<13/10$. The capacity inequality therefore gives
+\[
+ \frac{2J\mathcal P}{p\log p}<\frac{91}{300},\qquad
+ \frac7{16}-\frac{91}{300}=\frac{161}{1200}>\frac18.
+\]
+This proves (18c). At $m=4$, the primes $2,3,5,7,11,13$ have maximizing
+exponents $5,3,2,1,1,1$, and
+\[
+ K_4=\frac{127401984}{25025},\qquad8^4<K_4<9^4.
+\]
+Thus $C_4=9$, and $12C_4^2=972$, whose square is $944784$.
+\end{proof}
+For any fixed $\delta>0$, choose $m$ with $2/m<\delta$. The theorem then
+excludes a positive raw sum from any per-shell budget at most $p^{1-\delta}$
+for every
+\[
+ p\ge\max\{2^{20},(12C_m^2)^{1/(\delta-2/m)}\}.
+\]
+This is a bound on the stated adverse-sign estimate, not a lower bound on the
+number of modes needed to locate an ES witness by any method. Zero truncation,
+integer balancing and arithmetic control of the omitted signs remain outside
+this obstruction.
+
+The diagonal mass in (16) is exactly cancelled in the true signed formula,
+since $\sum_\chi\chi(-1)=0$. In particular one may write (11) with each squared
+character sum replaced by $|\sum_{d\mid pa}\chi(d)|^2-m_a$. That exact removal
+does not itself bound the remaining signed terms. The theorem rules out the
+specific adverse-sign replacement, not arithmetic cancellation in the original sum.
+
+\section{Retaining nonprincipal information on unsaturated cosets}
+Fix an actual shell and a chosen subgroup $B\le G_a$ with $-1\in B$; it is
+\emph{not} assumed to be the actual stabilizer of the divisor support. Write
+$|B|=2s$. Every coset is partitioned into $s$ antipodal pairs $\{g,-g\}$.
+For integer $m\ge0$, write $m=sq+r$ with $0\le r<s$ and define
+\[
+ \mathfrak b_s(m)=sq^2+r(2q+1).                            \tag{19}
+\]
+\begin{theorem}[Integer collision lower bound]\label{thm:integer}
+With $m_C=\sum_{g\in C}c_a(g)$,
+\[
+ \boxed{T_a\ge\mathcal L_{a,B}:=
+ \sum_{C\in G_a/B}\mathfrak b_s(m_C)-\mathcal E_a
+ \ge L_{a,B}.}                                           \tag{20}
+\]
+Equality in the first inequality holds exactly when the antipodal-pair totals
+within every $B$-coset differ by at most one. Moreover
+\[
+ \boxed{T_a\ge4\max\{0,\lceil\mathcal L_{a,B}/4\rceil\}.} \tag{21}
+\]
+\end{theorem}
+\begin{proof}
+Put $z_{C,j}=c_a(g_j)+c_a(-g_j)$ for the $s$ pairs in a coset. Expansion gives
+\[
+ T_a+\mathcal E_a=\sum_C\sum_{j=1}^s z_{C,j}^2.
+\]
+For nonnegative integers of sum $m_C$, transferring one unit from a coordinate
+at least two larger than another strictly decreases the sum of squares.
+It therefore has minimum (19), with exactly the stated equality locus.
+Real Cauchy--Schwarz gives $\mathfrak b_s(m_C)\ge m_C^2/s$, proving the second
+inequality. Lemma~\ref{lem:four} proves (21).
+\end{proof}
+
+The retained spectral interpretation is exact. Let $Q_Bc$ be the vector constant
+at $m_C/|B|$ on each coset, and $J_-c(g)=c(-g)$. In the explicitly specified
+Euclidean residue-coordinate metric, $Q_B$ is an orthogonal projection and
+$J_-Q_B=Q_B$. Therefore
+\[
+ T_a=\|Q_Bc_a\|^2+
+ \langle c_a-Q_Bc_a,J_-(c_a-Q_Bc_a)\rangle,
+\]
+which yields (17) without assuming that the support is saturated. Fourier
+expansion of $Q_B$ retains \emph{all} characters trivial on $B$; they are even.
+For $B=G_a$ this is the principal estimate. For $B=\{1,-1\}$ it is the exact
+answer, so that terminal choice is not presented as a reduced forcing theorem.
+
+The bound uses coset counts and equal-residue collisions, not negative-target
+membership. When it is positive, enumerate the original residue buckets until
+one bucket and its negative are both nonempty, then apply (7)--(8) and (2)--(4).
+There are exactly $2\tau_{\rm div}(a)$ original words, so this finite return
+terminates under the proved positive bound. This is a terminating return from a
+\emph{verified inequality}, not a proof that the inequality always holds.
+
+\subsection{Original fibres and metrics}
+The map from the free integer module on original divisors to residue coefficients
+sums inside each actual residue fibre. Its kernel is generated by
+$e_d-e_{d_*}$, with $d_*$ the least original divisor in that fibre. Retaining the
+sum and all nonselected coordinates reconstructs the selected coordinate by
+subtraction. The same construction applies to the residue-to-coset map.
+Thus neither projection is claimed injective. In the word-counting metric, the
+minimum-norm section of residue data $y_g$ assigns $y_g/c_a(g)$ to each word in
+that nonempty fibre and has squared norm $\sum y_g^2/c_a(g)$. This is not the
+unweighted residue metric used to evaluate the explicitly defined collision
+energy. In particular coset summation is not declared isometric.
+
+A positive integer coarse coefficient that reduces to zero modulo two remains
+supported with its original fibre. An empty fibre is absent. The proof of (20)
+uses the integer counts before such reduction. It never infers a fine target
+from coarse membership alone; the retained collision term supplies the bound.
+
+\subsection{The complement-aware refinement}
+There is further original information which can be retained without inspecting
+the target. Put $P=pa\bmod R_a=(2a)^2\bmod R_a$. Divisor complementation gives
+\[
+ c_a(g)=c_a(P/g).                                         \tag{22}
+\]
+If $g^2=P$, the coefficient $c_a(g)$ is even: the fixed residue fibre is paired
+by $d\mapsto pa/d$, which has no fixed original word.
+
+Complementation pairs the $B$-cosets. A distinct pair $C,C'$ has equal masses
+$m$ and contributes at least $2\mathfrak b_s(m)$ to $T_a+\mathcal E_a$.
+For a self-complementary coset, let $f$ be half the number of its roots of $g^2=P$.
+The induced involution on its antipodal pairs has $f$ fixed pairs and
+$r=(s-f)/2$ two-pair orbits. There are no extra fixed pairs from $g^2=-P$, since
+$-1$ is a nonsquare. The coset mass is even, say $2M$. Its exact lower
+contribution is
+\[
+ \mathfrak c_{r,f}(M)=
+ \min_{\substack{z_i,w_j\ge0\text{ integers}\\\sum z_i+\sum w_j=M}}
+ \left(2\sum_{i=1}^r z_i^2+4\sum_{j=1}^f w_j^2\right).   \tag{23}
+\]
+This minimum is executable without an oracle: select the $M$ smallest marginal
+costs in the $r$ lists $2,6,10,\ldots$ and $f$ lists $4,12,20,\ldots$, retaining
+the list labels. Every selected prefix is feasible. Exchange of a selected larger
+cost with an unselected smaller cost proves optimality. A separate dynamic
+program checks the finite examples. Summing these orbit bounds and subtracting
+$\mathcal E_a$ strengthens (20). It is an actual source-complement refinement,
+not an assumption that a general coefficient array satisfies (22).
+
+\section{Finite counterexample to all principal-only shell reweighting}
+At the deterministically verified hard prime
+\[
+ p=87481\equiv121\pmod{840},
+\]
+complete enumeration of all $21870$ first-half shells proves
+\[
+ \boxed{L_a\le0\quad\text{for every }a\in I_p.}           \tag{24}
+\]
+The integer refinement (20) with $B=G_a$ is also nonpositive at every shell.
+There are nevertheless 34 occupied shells. Equation (24) proves that no choice
+of nonnegative shell weights, even chosen after factorization, makes
+$\sum_aw_aL_a$ positive at this prime. This is a counterexample to that proposed
+certificate family, not to ES.
+
+At $a=21878=2\cdot10939$, $R=31$, take
+\[
+ B=\langle-1,2\rangle=\{1,2,4,8,15,16,23,27,29,30\}.
+\]
+The original mass is eight, the energy eight, and the coarse masses are $(8,0,0)$.
+Thus $L_{a,B}=24/5$, $\mathcal L_{a,B}=6$, and (21) forces $T_a\ge8$, attained.
+The pair $(1,p)$ returns the original E state
+\[
+ (h,r,s,\kappa)=(21878,1,1,2822),
+\]
+\[
+ \frac4{87481}=\frac1{21878}+\frac1{61739716}+\frac1{5401052095396}.
+\]
+The shell is already an elementary endpoint success. Its role here is to refute
+the claim that the full principal estimate is necessarily a sufficient detector,
+not to claim a previously uncovered prime.
+
+\section{A cubic quotient gives a sharp original lower bound}
+At the hard prime $p=944329\equiv169\pmod{840}$, every principal-only $L_a$ is
+again nonpositive. Choose the original shell
+\[
+ a=236098=2\cdot97\cdot1217,\qquad R=63,
+\]
+and the chosen observation subgroup
+\[
+ B=\langle-1,13\rangle
+ =\{1,8,13,20,22,29,34,41,43, 50,55,62\}.
+\]
+This has index three; it is not a saturated support or assumed stabilizer.
+The original 16 divisors of $pa$ have distinct fine residues, so
+$\mathcal E_a=16$. The three coset counts are $(8,8,0)$. Since $s=6$,
+\[
+ \mathfrak b_6(8)=12,\qquad
+ \boxed{\mathcal L_{a,B}=12+12-16=8=T_a.}                  \tag{25}
+\]
+In comparison, the principal-only lower bound is $-16/9$, and the real
+coset bound is $16/3$. If $\omega^2+\omega+1=0$, the two retained nonprincipal
+cubic coefficients are $8(1+\omega)$ and its conjugate, each of squared
+absolute value 64. Their combined positive energy is $32/9$ after division by
+$\varphi(63)$. Twice that energy is exactly the improvement from $-16/9$ to
+$16/3$. The integer balancing supplies the remaining sharpening to eight.
+Both occupied coarse counts reduce to zero modulo two; their original words
+and the integer argument do not disappear.
+
+The source pair $(1,1149248393)=(1,944329\cdot1217)$ returns
+\[
+ (u,h,r,s,\kappa)=(287331266,194,1217,1,18242038),
+\]
+\[
+ \frac4{944329}=\frac1{236098}+\frac1{3538955372}
+               +\frac1{4067138774169717196}.
+\]
+At the same prime, the occupied shell $a=236094$, $R=47$ has $T_a=60$ and
+principal lower bound $-732/23$. Its unit group has order 46. There is no proper
+subgroup containing $-1$ with order greater than two. Thus this shell has no
+nonterminal subgroup observation of the present kind. Taking the order-two
+subgroup computes $T_a$ exactly and is not a new reduced certificate. This
+negative control prevents universal success of the quotient hierarchy from
+being asserted without proof.
+
+\subsection{A proper selected spectrum resolves the prime-order quotient}
+The absence of an intermediate subgroup at $R=47$ does not preclude a smaller
+spectral observation. Keep the same original shell
+\[
+ p=944329,\qquad a=236094=2\cdot3\cdot19^2\cdot109,\qquad R=47.
+\]
+The element $5$ generates its unit group of order 46. Let
+$\zeta=e^{2\pi i/23}$ and $\chi(5)=\zeta$, so $\chi(-1)=1$.
+The original 48 divisors give, in these even-character coordinates,
+\[
+ C(X)=2+X+X^{11}+2X^{12}+3X^{13}+4X^{14}+4X^{15}
+       +5X^{16}+5X^{17}+5X^{18}+5X^{19}+4X^{20}+4X^{21}+3X^{22}.
+\]
+For the original norm polynomial $Q(X)=C(X)C(X^{-1})\bmod(X^{23}-1)$,
+\[
+ Q_0=192,\qquad
+ (Q_1,\ldots,Q_{11})=(187,176,159,138,116,92,70, 50,33,21,14),
+ \quad Q_{23-j}=Q_j.
+\]
+Exact rational intervals give
+\[
+ \boxed{1009<Q(\zeta)<1010,\qquad24<Q(\zeta^2)<25.}       \tag{25a}
+\]
+For completeness the interval certificate uses
+$\pi=16\arctan(1/5)-4\arctan(1/239)$. The rational tangent formula makes
+$\tan(4\arctan(1/5)-\arctan(1/239))=1$, and that angle is in $(0,1)$;
+$\pi/2>1$ follows from $\arctan1>1/2$, so the identity has the stated branch.
+Use 18 alternating arctangent terms with the next-term remainder. For
+$0\le x\le\pi$, use 18 cosine terms and the next-term absolute remainder;
+all tail terms are decreasing. Uncertainty in $\pi$ contributes at most the
+argument uncertainty, since $|\cos x-\cos y|\le|x-y|$. Evaluating
+$Q_0+2\sum_{j=1}^{11}Q_j\cos(2\pi mj/23)$ with reflection into $[0,\pi]$
+proves (25a) by rational arithmetic. A second checker uses
+$\pi=4(\arctan(1/2)+\arctan(1/3))$, 50 arctangent terms and 21 cosine terms,
+and obtains the same strict integer enclosures. No floating-point value is a
+proof input. Both polynomial and intervals remain in the JSON certificate.
+
+The collision energy is 132 and the principal squared sum is 2304. Retaining only
+$\{1,\chi,\bar\chi\}$ in (18a) gives
+\[
+ T_a\ge\frac{2Q(\zeta)-732}{23}>\frac{1286}{23}>52,
+ \quad\text{hence }T_a\ge56.
+\]
+Adding $\chi^2,\bar\chi^2$ gives
+\[
+ \boxed{T_a>\frac{2(1009+24)-732}{23}=58,
+         \quad T_a\ge60,}                               \tag{25b}
+\]
+using the original fourfold action. Direct enumeration, performed separately,
+gives $T_a=60$. Thus five of the 23 even-character modes certify the full attained
+lower bound. Unlike retaining every even mode, this is a proper observation.
+The original pair $(2,327)$ returns the M state
+\[
+ (u,h,r,s,\lambda)=(1444,361,2,327,7),
+\]
+\[
+ \frac4{944329}=\frac1{236094}+\frac1{780326438241}
+                         +\frac1{4772638766}.
+\]
+The norm polynomial is calculated from the original words; its identity
+$Q_0=\mathcal E_a+T_a$ is a verification check, not an assumed target input to
+the interval inequality. The retained observation consists of the selected
+Fourier values and collision energy; the remaining Fourier coordinates form
+its explicit kernel complement. Orthogonal Fourier projection onto a
+conjugate-stable set of even modes commutes with $J_-$, which is the identity
+on that image. Keeping all omitted coordinates gives its inverse. No coset
+saturation, change of coefficient prime, or positivity of the omitted signed
+part is postulated.
+
+\section{Finite comparison and the remaining universal inequality}
+The complete declared hard universe through $2{,}000{,}000$ has 4519 primes.
+The principal-only condition $L_a>0$ at some original shell holds at 4515.
+Its exact misses are
+\[
+ 87481,\quad196561,\quad944329,\quad1915201.              \tag{26}
+\]
+Completeness of the finite test does not depend on an arbitrary residual cutoff:
+$\mathcal E_a\ge2\tau_{\rm div}(a)$ makes $L_a>0$ require
+$\varphi(R)<4\tau_{\rm div}(a)$. The exact maximum of $\tau_{\rm div}(a)$ over
+$1\le a\le999999$ is 240. All 311 possible residuals with $R\equiv3\pmod4$,
+$R<2{,}000{,}000$ and $\varphi(R)<960$ are tested; their largest is 1995.
+A separate implementation additionally enumerates \emph{every} first-half shell
+of all four exceptions, not only this reduced candidate set.
+
+Chosen quotient certificates for the four primes have
+$(a,R,|B|,\mathcal L_{a,B},T_a)$ respectively
+\[
+ (21878,31,10,6,8),\quad(49159,75,20,4,16),
+\]
+\[
+ (236098,63,12,8,8),\quad(478836,143,4,86,144).
+\]
+The last complement-aware lower bound is 88. At the second prime, even the
+integer principal observation at $a=49147$, $R=27$ gives lower bound two where
+the real bound is zero. The certificates retain this simpler additional repair.
+The basic integer scalar test therefore covers 4516 of the 4519 primes; the
+displayed nonprincipal certificates cover the remaining three. These are
+comparisons of sufficient tests, not newly solved or previously unverified primes.
+
+The complete small replay checks all 73798 first-half shells at the 211 primes
+$p\equiv1\pmod4$, $p\le3000$. It retains 1877004 divisor vectors, 5700 E states,
+5268 oriented M states, and 70596 target pairs. The independent implementation
+uses literal pair comparisons and trial enumeration of square divisors on that
+whole range. Finite computations do not establish a positive lower bound at all
+primes. Theorem~\ref{thm:negative} and Corollary~\ref{cor:index} have general
+written proofs and do not extrapolate from this scan.
+
+The exact surviving sufficient quantity is
+\[
+ \sum_{a\in I_p}4\max\{0,\lceil\mathcal L_{a,B_a}/4\rceil\},
+                                                               \tag{27}
+\]
+or its complement-aware refinement. It is bounded above by $\sum_aT_a$ and
+returns original witnesses when positive. No proof that (27) is positive for
+some nonterminal choices at every prescribed prime is supplied. Likewise no
+universal upper bound on the remaining signed Fourier contribution has been
+proved. The source's requested universal closure is therefore unresolved.
+
+The next estimate must force enough of the actual even-character
+energy without assuming a favourable spectrum, or exploit original off-diagonal correlations before absolute values, or
+supply a different arithmetic witness. The preceding factor-supply character
+is annihilated in the combined observation \cite[\S4, ``The source character is annihilated'']{Turn5}; repeating
+that fact cannot provide the missing positive term. Averaged ES counts
+\cite[Theorem 1.1 and Remark 1.2]{ET} are not converted into a pointwise lower
+bound. There is no Lean build, independent mathematical review, or historical
+priority assertion in this tranche.

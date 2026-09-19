@@ -1,0 +1,122 @@
+[
+  {
+    "id": "A1",
+    "name": "Original centered divisor equivalence",
+    "domain": "beta in product[-e,e]",
+    "codomain": "u|a^2",
+    "inverse_or_fibre": "beta_i=v_qi(u)-e_i",
+    "information_loss": "No coordinates discarded"
+  },
+  {
+    "id": "A2",
+    "name": "E/M channel observation",
+    "domain": "original divisor with p,a,R",
+    "codomain": "M:-1; E:-p^-1",
+    "inverse_or_fibre": "A5-A6 ordered reconstruction",
+    "information_loss": "E inverse label is beta negation, not a third channel"
+  },
+  {
+    "id": "B1",
+    "name": "Coefficient envelope",
+    "domain": "actual units -1,2,q_i",
+    "codomain": "Gamma subgroup of full units",
+    "inverse_or_fibre": "literal inclusion",
+    "information_loss": "2 is not newly available inventory"
+  },
+  {
+    "id": "B2",
+    "name": "Actual period quotient",
+    "domain": "W in Gamma, K=Stab(W)",
+    "codomain": "S in Gamma/K",
+    "inverse_or_fibre": "full inverse image of support",
+    "information_loss": "counts do not distribute uniformly"
+  },
+  {
+    "id": "B3",
+    "name": "Arithmetic phase constraint",
+    "domain": "p=4a-R and original factors",
+    "codomain": "eta=z^2 product g_i^e_i",
+    "inverse_or_fibre": "retained defining equation",
+    "information_loss": "eta cannot be chosen independently"
+  },
+  {
+    "id": "B4",
+    "name": "Target collision map",
+    "domain": "three labelled channel targets",
+    "codomain": "one,two,or three quotient classes",
+    "inverse_or_fibre": "labels retained at each image",
+    "information_loss": "coincidence does not create equal fine counts"
+  },
+  {
+    "id": "C1",
+    "name": "Factor-cut pullback",
+    "domain": "actual complementary box U_J and targets F",
+    "codomain": "(F U_J^-1) intersection C_J",
+    "inverse_or_fibre": "retain suffix exponent word and original prefix",
+    "information_loss": "No independent local CRT substitution"
+  },
+  {
+    "id": "D1",
+    "name": "Low-index source reduction",
+    "domain": "joint failure, effective index <=8",
+    "codomain": "a=B a_active with W(B)=K, Omega active<=2",
+    "inverse_or_fibre": "actual factorization partition",
+    "information_loss": "all inactive exponents retained"
+  },
+  {
+    "id": "D2",
+    "name": "Small normal-form converse",
+    "domain": "table plus actual B saturation and phase",
+    "codomain": "joint failure with actual stabilizer K",
+    "inverse_or_fibre": "explicit listed support",
+    "information_loss": "the saturation assertion is verified, not guessed"
+  },
+  {
+    "id": "E1",
+    "name": "Prime NR specialization",
+    "domain": "R prime=3 mod4,(p/R)=-1, effective index6",
+    "codomain": "a=B r, sole first-power nonresidue direction",
+    "inverse_or_fibre": "original factor edge p+R=4Br",
+    "information_loss": "full ambient G^6 only if ambient index6"
+  },
+  {
+    "id": "F1",
+    "name": "Section coordinate bijection",
+    "domain": "g in Gamma",
+    "codomain": "(gK,g/sigma(gK))",
+    "inverse_or_fibre": "(c,k)->sigma(c)k",
+    "information_loss": "twisted product uses omega"
+  },
+  {
+    "id": "F2",
+    "name": "Section change",
+    "domain": "sigma prime=sigma theta",
+    "codomain": "kernel coordinate k/theta(c)",
+    "inverse_or_fibre": "multiply back theta(c)",
+    "information_loss": "cocycle changes by displayed coboundary"
+  },
+  {
+    "id": "F3",
+    "name": "Coefficient pushforward",
+    "domain": "nu(c,k) original integer count",
+    "codomain": "sum_k nu(c,k)",
+    "inverse_or_fibre": "plus all nonreference kernel coordinates",
+    "information_loss": "star-difference relation kernel"
+  },
+  {
+    "id": "F4",
+    "name": "Fine witness search",
+    "domain": "positive original fine target coefficient",
+    "codomain": "bounded beta word",
+    "inverse_or_fibre": "actual suffix-positive recurrence",
+    "information_loss": "not merely positive quotient average"
+  },
+  {
+    "id": "F5",
+    "name": "C18 example",
+    "domain": "actual unit action mod19",
+    "codomain": "C6 quotient with K=C3",
+    "inverse_or_fibre": "carry 7^floor((i+j)/6)",
+    "information_loss": "no homomorphic direct-product section"
+  }
+]

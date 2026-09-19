@@ -1,0 +1,362 @@
+[
+  {
+    "K": [
+      1,
+      2,
+      4,
+      8,
+      15,
+      16,
+      23,
+      27,
+      29,
+      30
+    ],
+    "R": 31,
+    "T": 8,
+    "a": 21878,
+    "complement_integer_lower": 6,
+    "complement_residue": 8,
+    "orbits": [
+      {
+        "cosets": [
+          1
+        ],
+        "energy_floor": 14,
+        "fixed_pair_orbits": 1,
+        "mass": 8,
+        "minimum_allocation": [
+          2,
+          1,
+          1
+        ],
+        "regular_pair_orbits": 2
+      },
+      {
+        "cosets": [
+          3,
+          5
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      }
+    ],
+    "p": 87481,
+    "unconstrained_integer_lower": 6
+  },
+  {
+    "K": [
+      1,
+      4,
+      11,
+      14,
+      16,
+      19,
+      26,
+      29,
+      31,
+      34,
+      41,
+      44,
+      46,
+      49,
+      56,
+      59,
+      61,
+      64,
+      71,
+      74
+    ],
+    "R": 75,
+    "T": 16,
+    "a": 49159,
+    "complement_integer_lower": 4,
+    "complement_residue": 49,
+    "orbits": [
+      {
+        "cosets": [
+          1
+        ],
+        "energy_floor": 28,
+        "fixed_pair_orbits": 0,
+        "mass": 16,
+        "minimum_allocation": [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "regular_pair_orbits": 5
+      },
+      {
+        "cosets": [
+          2
+        ],
+        "energy_floor": 0,
+        "fixed_pair_orbits": 2,
+        "mass": 0,
+        "minimum_allocation": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "regular_pair_orbits": 4
+      }
+    ],
+    "p": 196561,
+    "unconstrained_integer_lower": 4
+  },
+  {
+    "K": [
+      1,
+      8,
+      13,
+      20,
+      22,
+      29,
+      34,
+      41,
+      43,
+      50,
+      55,
+      62
+    ],
+    "R": 63,
+    "T": 8,
+    "a": 236098,
+    "complement_integer_lower": 8,
+    "complement_residue": 58,
+    "orbits": [
+      {
+        "cosets": [
+          1,
+          2
+        ],
+        "energy_floor": 24,
+        "mass_each": 8
+      },
+      {
+        "cosets": [
+          4
+        ],
+        "energy_floor": 0,
+        "fixed_pair_orbits": 2,
+        "mass": 0,
+        "minimum_allocation": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "regular_pair_orbits": 2
+      }
+    ],
+    "p": 944329,
+    "unconstrained_integer_lower": 8
+  },
+  {
+    "K": [
+      1,
+      12,
+      131,
+      142
+    ],
+    "R": 143,
+    "T": 144,
+    "a": 478836,
+    "complement_integer_lower": 88,
+    "complement_residue": 1,
+    "orbits": [
+      {
+        "cosets": [
+          1
+        ],
+        "energy_floor": 52,
+        "fixed_pair_orbits": 2,
+        "mass": 10,
+        "minimum_allocation": [
+          3,
+          2
+        ],
+        "regular_pair_orbits": 0
+      },
+      {
+        "cosets": [
+          2,
+          6
+        ],
+        "energy_floor": 100,
+        "mass_each": 10
+      },
+      {
+        "cosets": [
+          3,
+          4
+        ],
+        "energy_floor": 64,
+        "mass_each": 8
+      },
+      {
+        "cosets": [
+          5,
+          31
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      },
+      {
+        "cosets": [
+          7,
+          41
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      },
+      {
+        "cosets": [
+          8,
+          18
+        ],
+        "energy_floor": 36,
+        "mass_each": 6
+      },
+      {
+        "cosets": [
+          9,
+          16
+        ],
+        "energy_floor": 16,
+        "mass_each": 4
+      },
+      {
+        "cosets": [
+          10,
+          43
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      },
+      {
+        "cosets": [
+          14,
+          40
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      },
+      {
+        "cosets": [
+          15,
+          19
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      },
+      {
+        "cosets": [
+          17,
+          42
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      },
+      {
+        "cosets": [
+          20,
+          28
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      },
+      {
+        "cosets": [
+          21
+        ],
+        "energy_floor": 0,
+        "fixed_pair_orbits": 0,
+        "mass": 0,
+        "minimum_allocation": [
+          0
+        ],
+        "regular_pair_orbits": 1
+      },
+      {
+        "cosets": [
+          27,
+          53
+        ],
+        "energy_floor": 2,
+        "mass_each": 1
+      },
+      {
+        "cosets": [
+          29,
+          30
+        ],
+        "energy_floor": 0,
+        "mass_each": 0
+      },
+      {
+        "cosets": [
+          32,
+          54
+        ],
+        "energy_floor": 4,
+        "mass_each": 2
+      }
+    ],
+    "p": 1915201,
+    "unconstrained_integer_lower": 86
+  },
+  {
+    "K": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11,
+      13,
+      14,
+      16,
+      17,
+      19,
+      20,
+      22,
+      23,
+      25,
+      26
+    ],
+    "R": 27,
+    "T": 16,
+    "a": 49147,
+    "complement_integer_lower": 2,
+    "complement_residue": 7,
+    "orbits": [
+      {
+        "cosets": [
+          1
+        ],
+        "energy_floor": 66,
+        "fixed_pair_orbits": 1,
+        "mass": 24,
+        "minimum_allocation": [
+          3,
+          3,
+          3,
+          2,
+          1
+        ],
+        "regular_pair_orbits": 4
+      }
+    ],
+    "p": 196561,
+    "unconstrained_integer_lower": 2
+  }
+]

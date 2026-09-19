@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "verify.py",
+    "--bound",
+    "3000",
+    "--hard-bound",
+    "2000000",
+    "--out",
+    "certificates"
+  ],
+  "cwd": "/mnt/data/es_turn6_full_shell_20260919",
+  "returncode": 0,
+  "elapsed_seconds": 6.027160805999301,
+  "stdout": "full scan {'original_divisor_vectors': 1877004, 'shells': 73798, 'E_states': 5700, 'M_states': 5268, 'target_pairs': 70596, 'occupied_shells': 3918, 'primes': 211}\nprincipal scan 4519 [87481, 196561, 944329, 1915201]\n{\"success\": true, \"explicit_checks\": 1037513, \"negative_controls\": [\"a nonzero coarse source alone forces the target\", \"a positive coarse coefficient equals its parity reduction\", \"discarding the residual collision term is harmless\", \"a positive target always has positive principal lower bound\", \"coset sums are an isometry for the fine counting norm\", \"an arbitrary coefficient array has the original fourfold orbit divisibility\", \"coset counts determine fine energy\", \"the real and balanced-integer lower bounds always agree\", \"a useful selected spectrum must be a character subgroup\"], \"full_shell_bound\": 3000, \"hard_bound\": 2000000, \"no_universal_occupancy_claim\": true}\n",
+  "stderr": "",
+  "source_sha256": {
+    "verify.py": "6f9e12f17e909845fe6c0e8811cba284cc9ad71794e8b42a3a358ae22b48113a",
+    "check_independent.py": "d7ccb21b5d821f556586378adec5a39683565b33894168d7fd4080f5c2ac321f"
+  }
+}

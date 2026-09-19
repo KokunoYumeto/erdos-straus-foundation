@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-19",
+  "repository": "KokunoYumeto/erdos-straus-foundation",
+  "upstream_read_pin": "d5498ed24e149ea705661142bd1d7027c11ecafe",
+  "remote_pr_created": false,
+  "remote_commit_created": false,
+  "connector_status": "All 48 surfaced actions are read-only; create and push discovery returned no actions. Installed GitHub plugin was located through Plugin Management.",
+  "gh_available": false,
+  "cli_attempts": [
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "https://github.com/KokunoYumeto/erdos-straus-foundation.git",
+        "HEAD"
+      ],
+      "returncode": 128,
+      "stdout": "",
+      "stderr": "fatal: unable to access 'https://github.com/KokunoYumeto/erdos-straus-foundation.git/': Could not resolve host: github.com\n",
+      "elapsed_seconds": 0.02330940100000589
+    },
+    {
+      "command": [
+        "git",
+        "config",
+        "--global",
+        "--get",
+        "credential.helper"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 0.0021145959999557817
+    }
+  ],
+  "status": "not_published",
+  "scope": "Actual source-only local commits and an additive patch; no remote branch or pull request created. This record is not upstream main.",
+  "local_base": "d37f5713508b2d59155833b61717ea8e58d2cbcc",
+  "local_commit": "82237df176ca1b53acf9074cae98d6f77ad7ff26",
+  "local_history": "source-only independent record, not upstream main",
+  "new_text_paths": 14,
+  "path_prefix": "research/incoming/es-turn06-full-shell-20260919",
+  "local_tree": "93bfef516537503a73378c5692b0fb1349d0d174",
+  "fsck_stdout": "",
+  "bundle_verified": true,
+  "bundle_sha256": "707772552bddcebb29318377777411a42abd3ef7ecfe0454e2827581b10eeaca",
+  "patch_sha256": "430d08e0056308e6c0fdd9beec8e99b137bd89bb188d2250ed87e4340e67d4a0",
+  "publisher_executed": false,
+  "patch_replay_source_identical": true
+}

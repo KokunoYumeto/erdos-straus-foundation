@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-19",
+  "status": "passed",
+  "source": {
+    "description": "Later pointwise-localization continuation recovered from the supplied Turn 6 session transcript, after the packaged full-shell tranche.",
+    "transcript_sha256": "a92f5139b9aabae4e9df7d039d8c74c60b640d65e939d37869a8348488159e90",
+    "line_locator": "13194-13587"
+  },
+  "repairs": [
+    "Restored the lost radical in the middle-channel split: j <= sqrt(a) or j >= sqrt(a).",
+    "Added the complement-fixed case to the Klein-four freeness proof and excluded it by v_p(pa)=1.",
+    "Typed the orbit sum-and-difference inverse on its image lattice, including its congruence modulo 4."
+  ],
+  "replay": {
+    "commands": [
+      "python verify_localization.py --bound 1000 --out <external-output>/normal.json",
+      "python -O verify_localization.py --bound 1000 --out <external-output>/optimized.json"
+    ],
+    "normal_optimized_byte_identical": true,
+    "receipt_sha256": "536ed9cad39c2d33125d381f55774fe158ee46d03a24d08ae39b19bb8a4eb013",
+    "verification_digest": "b9a8833118ffcb0bbb4ada01b186b8d37924f1bba539ec83cc4793d9d3e8ddad",
+    "checks": 768985,
+    "negative_controls": 4,
+    "primes_1_mod_8": 37,
+    "shells": 4388,
+    "square_divisors": 85786,
+    "middle_states_oriented": 586,
+    "middle_states_ordered": 293,
+    "exterior_states": 474,
+    "target_pairs": 5860,
+    "fourfold_orbits": 1465,
+    "endpoint_excluded_exterior_states": 74
+  },
+  "independent_derivation": {
+    "status": "passed",
+    "report_sha256": "74f5be5f4496f2713ade0892fc7447608542c4b7f683366ae56964f0a7e8b79b",
+    "checked": [
+      "middle-channel least-nonresidue localization and hard-prime equalities",
+      "exterior boundary-gap, endpoint-excluded strict inequality and reciprocal D bound",
+      "free Klein-four source action and unique fundamental representative",
+      "p=41, p=1009 and p=2521 exact coordinate examples",
+      "two empty minimal p=2521 lanes and the surviving Q=111 state",
+      "odd-square two-colour obstruction and its exact information loss"
+    ],
+    "result": "The stated localization theorems and examples are correct after the three explicit presentation repairs."
+  },
+  "scope": "The result localizes every original E/M state and certifies the declared finite range. It neither proves occupancy of the remaining region nor proves the Erdős--Straus conjecture."
+}

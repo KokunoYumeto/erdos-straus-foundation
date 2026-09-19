@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-19",
+  "task": "Turn6: complete first-half signed pair sum at a prescribed prime",
+  "ES_main": "d5498ed24e149ea705661142bd1d7027c11ecafe",
+  "ES_tree": "bb2a6b6d3307ad7726b8e495e92a14ef9d46dc30",
+  "antecedents": [
+    {
+      "file": "HANDOFF_TURN_6.md",
+      "sha256": "9c7d82608bce2e315f568feb703f33daa7fd588bad5d7fb6409874f13c0abac5",
+      "scope": "Full Files read. Prescribed complete-source task and all nonclaims retained."
+    },
+    {
+      "file": "core.tex",
+      "sha256": "2514a21e99ad4380472e338445e529eff4ddbddea27e2e4bb2a6dc7e3b4fd7c0",
+      "scope": "Full Files read. Exact pair fibres and Fourier formula are inherited; first-half arithmetic and pair return rederived in this tranche."
+    },
+    {
+      "file": "verification.json",
+      "sha256": "8e1532e8110d208d08dd341484f60845bbdb526e0cc86799e1f67c830bc53012",
+      "scope": "Historical execution record preserved, not counted as a new independent replay."
+    },
+    {
+      "file": "verify.py",
+      "sha256": "b3e38a4a7f98a1176139754b4f47c933df8561637c484cc1354fec45bd0ea7bd",
+      "scope": "Available predecessor source, not imported by either current verifier."
+    },
+    {
+      "file": "check_independent.py",
+      "sha256": "54e8d9f67de1789bf680c94fa3869e9a3daef15eb7c172771877bf7ab15f28f5",
+      "scope": "Available predecessor source, not imported by either current verifier."
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": [
+        "Christian Elsholtz",
+        "Terence Tao"
+      ],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "journal": "Journal of the Australian Mathematical Society94(1),50-105",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "version": "arXiv1107.1010v6",
+      "locators": [
+        "Section2,Propositions2.2 and2.6",
+        "Theorem1.1 andRemark1.2, PDFpp3-4"
+      ],
+      "use": "Coordinate antecedent; average estimates and explicitly heuristic pointwise discussion used only for scope. No average theorem is used to infer a pointwise lower bound."
+    },
+    {
+      "author": "Christopher Farah",
+      "year": 2026,
+      "month": "April",
+      "title": "Semi-Constructive Approach to the Erdos-Straus Conjecture",
+      "url": "https://www.researchgate.net/publication/403742713_Semi-Constructive_Approach_to_the_Erdos-Straus_Conjecture",
+      "locator": "Lemmas8-10,pp11-12; author-uploaded full text, lines1340-1609 in the fetched page",
+      "use": "Content-level comparison for the classical reciprocal-totient divisor identity and odd-progression expansion. The present explicit upper bound is proved directly. No probability, independence, prime-average or claimed pointwise theorem from this preprint is imported. No arXiv identifier was established."
+    }
+  ],
+  "history_sources": [
+    {
+      "title": "Boolean product formulation",
+      "locator": "Supplied transcript lines7859-7884,8140-8196,8419-8435",
+      "use": "Earlier original pair formula, complete signed sum, and a one-shell cancellation counterexample. No full transcript truth/audit claim. Raw transcript not included in public payload."
+    }
+  ],
+  "connected_workbench_reads": [
+    {
+      "repo": "KokunoYumeto/erdos-straus-foundation",
+      "path": "CONTRIBUTING.md",
+      "ref": "d5498ed24e149ea705661142bd1d7027c11ecafe",
+      "sha": "63a407d17fc53e481061b2efbc51f71b2cb54578",
+      "scope": "Complete source read; collective byline, source-specific credit and additive contribution policy retained."
+    }
+  ],
+  "content_level_search": {
+    "queries": [
+      "\"Erdos-Straus\" \"principal character\" divisor",
+      "\"Erdos Straus\" \"collision\" \"energy\"",
+      "\"Erdos-Straus\" \"coset\" \"divisors\"",
+      "\"Erdos Straus\" \"divisor pairs\" characters",
+      "GitHub collision and principal-character in the connected workbenches",
+      "\"Erdős Straus\" \"Fourier\" \"energy\"",
+      "\"Erdos Straus\" \"principal character\"",
+      "\"Erdős–Straus\" \"collision\" \"coset\""
+    ],
+    "result": "Related divisor-collision and subgroup material was found; no earlier exact match for the displayed quantitative complete-sum bound was established. Classical character orthogonality, Cauchy-Schwarz and integer balancing are not claimed as inventions. No historical-priority conclusion."
+  },
+  "not_imported": [
+    "No new theorem from an unread recent preprint.",
+    "No RH, Leech, or Giuga result imported merely because it occurs in the supplied file corpus.",
+    "No nonresidue graph factor-supply result assumed to force the killed target character."
+  ],
+  "new_derivations": [
+    "Free original target Klein-four action.",
+    "Explicit all-p principal lower-estimate obstruction and adaptive bounded-index extension.",
+    "Integer unsaturated-coset collision bound, equality locus and original return.",
+    "Complement-aware original parity and convex refinement.",
+    "Complete finite failure of all principal-only nonnegative shell reweighting at87481.",
+    "Proper non-subgroup five-even-mode certificate at p944329,R47, using two independently implemented exact rational interval evaluations.",
+    "All-m explicit divisor constants and effective obstruction at every fixed sublinear per-shell spectral scale."
+  ],
+  "nonclaims": [
+    "No universal ES positivity, proof or counterexample.",
+    "No guarantee of a successful nonterminal quotient at every prime.",
+    "No new overall ES verification range.",
+    "No independent mathematical review or Lean build.",
+    "No historical-priority determination.",
+    "No remote PR inferred from a local source history.",
+    "No re-audit of the sealed predecessor cumulative archive."
+  ],
+  "final_source_read": {
+    "web_refresh": [
+      "arXiv1107.1010v6 abstract and scope",
+      "Farah author full text Lemmas8-10; no probabilistic claim imported"
+    ]
+  }
+}

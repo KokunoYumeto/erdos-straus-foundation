@@ -41,19 +41,46 @@ source-located passages; it is not presented as the complete history.
 
 ## Start reading
 
-**18 September continuations:** [Turn 3: primitive sextic triangle and
-square-source escape](research/incoming/es-turn03-primitive-sextic-20260918/README.md)
-gives a certified constant-$C_6$ three-cycle, disproving the proposed strict
-canonical-descent mechanism while preserving the conjecture itself, and proves
-the corresponding square-source escape statements. [Turn 4: mixed
-square-source expansion](research/incoming/es-turn04-square-expansion-20260918/README.md)
-proves that every set of at most five external nonresidue vertices has an
-outside factor among the valid ports $t\in\{1,3,5,7,9\}$, obtains at least six
-reachable vertices from any start in at most 25 source factorizations, and
-reduces every fixed-cardinality closed set to a finite original
-cycle--cofactor domain. The supplied exact checkers exclude closed sets of
-cardinality at most five. These are factor-supply theorems, not a proof that an
-original $E/M$ selector is occupied and not a proof of Erdős--Straus.
+**17--19 September structural continuation:** a six-turn programme is preserved
+in seven linked records because Turn 6 has two independent continuations. Each
+record retains both the result and the failure that determined the next step.
+
+1. [Simultaneous exterior/middle failure](research/incoming/es-turn01-joint-failure-20260917/README.md)
+   classifies the complete original exponent boxes through effective quotient
+   order eight, proves every factor-cut inequality, and identifies the exact
+   prime-residual index-six normal form.
+2. [The complete shifted-factor graph](research/incoming/es-turn02-shifted-graph-20260918/README.md)
+   proves the all-edge transition and closure theorem, then gives a genuine
+   seven-vertex sink of locally empty selectors at $p=2521$. This disproves the
+   proposed local/cycle implication, not Erdős--Straus.
+3. [Primitive sextic triangle and square-source escape](research/incoming/es-turn03-primitive-sextic-20260918/README.md)
+   gives a certified constant-$C_6$ three-cycle, refuting strict canonical
+   descent while proving the corresponding square-source escape statements.
+4. [Mixed square-source expansion](research/incoming/es-turn04-square-expansion-20260918/README.md)
+   proves that every set of at most five external nonresidue vertices has an
+   outside factor among $t\in\{1,3,5,7,9\}$, obtains six reachable vertices in
+   at most 25 factorizations, and reduces every fixed-cardinality closed set to
+   a finite original cycle--cofactor domain.
+5. [Exact channel coupling](research/incoming/es-turn05-channel-coupling-20260919/README.md)
+   constructs a genuine exterior/middle involution and sharp joined windows,
+   proves the complete $2\tau(h)$ pair fibres and Möbius return, and shows
+   exactly why immediate factor and reciprocal-source repairs can still fail.
+6. [Complete-shell spectral bounds](research/incoming/es-turn06-full-shell-20260919/README.md)
+   proves a quantitative obstruction to principal/adverse-sign domination,
+   an exact integer collision lower bound, and proper nonprincipal certificates
+   including a five-mode proof of 60 target pairs at $p=944329,R=47$.
+7. [Pointwise localization](research/incoming/es-turn06b-pointwise-localization-20260919/README.md)
+   bounds every possible original middle and exterior state using the least
+   quadratic nonresidue, proves the exact free fourfold fundamental domain, and
+   records the corrected equality and endpoint cases. It narrows the remaining
+   source but does not prove that it is occupied.
+
+The first four steps produce and transport factors; the fifth couples the
+original $E/M$ channels; the packaged sixth attacks their complete first-half
+positive pair sum; its parallel pointwise continuation localizes every possible
+original state. None asserts the still-missing universal positivity theorem.
+Each directory contains the complete proof, exact maps, executable certificates,
+source lineage, negative controls, and an explicit handoff where one was made.
 
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with

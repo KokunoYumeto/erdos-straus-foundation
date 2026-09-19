@@ -1,0 +1,457 @@
+\section{Turn 3 and the precise route-selection result}
+The canonical nonresidue-factor graph and its two source character laws are
+inherited from Bryan \cite[\S\S1--7]{BryanGraph}. The primitive sextic local form
+and consecutive-defect examples are also antecedents
+\cite[\S\S3--8]{BryanSix}\cite[\S\S2--5]{BryanChain}. Turn 1 retained the actual
+stabilizer and inactive saturation, and Turn 2 constructed closed failed components
+whose effective indices vary \cite{Turn1,Turn2}.
+
+Here the stronger proposed assertion, that a cycle cannot remain primitive sextic
+at every vertex, is disproved by a closed triangle at the prime
+\[
+ \boxed{p=7510085481569082811681\equiv121\pmod{840}.}       \tag{1}
+\]
+The complete original arithmetic, including primality, is certified below.
+Cubic reciprocity and the actual cubic nilpotent component are consistent with the
+triangle. A different result survives: a separately marked square multiplier
+forces a nonresidue factor outside every canonical all-$3\bmod4$ triangle.
+More generally, small primitive closed components cannot remain closed after the
+square multipliers $1,9,25$ are all admitted. This is escape from a specified
+component, not a universal theorem that a later selector is occupied.
+
+\section{Original source, targets, and marked return}
+Let $p$ be a prime in one of the six classes $1,121,169,289,361,529\pmod{840}$.
+For a prime $q<p$ with $(q/p)=-1$, the canonical multiplier is
+$\sigma_q=1$ for $q\equiv3\pmod4$, and $\sigma_q=3$ otherwise. Set
+\[
+ A_q=(p+\sigma_q q)/4,\qquad R_q=\sigma_q q.
+\]
+The complete graph has an edge $q\to r$ for every prime $r\mid A_q$ with
+$(r/p)=-1$, retaining its weight $v_r(A_q)$. A hard prime has
+$(2/p)=(3/p)=(5/p)=(7/p)=1$. Factoring a least positive nonresidue proves the
+vertex set is nonempty and its primes are at least 11. Multiplicativity gives
+$(A_q/p)=-1$, hence every vertex has an outgoing factor. Since $A_q<p$ and
+$q\nmid A_q$, the new vertex is below $p$ and distinct from $q$.
+
+At an original source $a=A_q=\prod_t t^{e_t}$ retain
+\[
+ \beta\in\prod_t[-e_t,e_t]_{\mathbb Z},\quad
+ u=\prod_t t^{e_t+\beta_t},\quad
+ v(\beta)=\prod_t t^{\beta_t}\pmod R,\quad
+ \mu(g)=\#\{\beta:v(\beta)=g\}.                         \tag{2}
+\]
+The inverse is $\beta_t=v_t(u)-e_t$. Its total mass is $\tau(a^2)$.
+The original two channels are
+\[
+ E:\ R\mid4u+1\iff v(\beta)=-p^{-1},\qquad
+ M:\ R\mid u+a\iff v(\beta)=-1.                         \tag{3}
+\]
+The third labelled target $-p$ uses the involution $\beta\mapsto-\beta$ before
+canonical exterior reconstruction; it is not another channel.
+
+For a hit, $d_0=\gcd(a,u)$ gives
+\[
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0),\qquad a=hrs,\ u=hr^2,\ \gcd(r,s)=1.
+\]
+The ordered returns and inverses are
+\[
+\begin{array}{c|c|c}
+ & (x,y,z)&\text{ordered divisor inverse}\\\hline
+ E& (a,hs\kappa,phr\kappa),\quad\kappa=(pr+s)/R
+      &u=a^2/(Ry-pa)\\
+ M& (a,phs\lambda,phr\lambda),\quad\lambda=(r+s)/R
+      &u=pa^2/(Ry-pa).
+\end{array}                                                   \tag{4}
+\]
+Prime valuations give the normalization, and multiplication by $phrs\kappa$ or
+$phrs\lambda$ verifies $4/p$. These are inherited Type I/II coordinates
+\cite[\S2, Propositions 2.2 and 2.6]{ET}. They also hold at the separately marked
+square sources below, where $p/4<a<p$ and $\gcd(pa,R)=1$. If an exterior source
+has $a>p/2$, the coordinate switch $(h,r,s,\kappa)\mapsto(h,\kappa,s,r)$ swaps
+the first two denominators and returns to the first-half atlas, as proved in
+Turn 2 \cite[\S2]{Turn2}. No large auxiliary source is silently deleted.
+
+For a prime residual $q\equiv3\pmod4$, put
+\[
+ G_q=(\mathbb Z/q\mathbb Z)^\times,\quad
+ W_q=\operatorname{supp}\mu_q,\quad
+ K_q=\operatorname{Stab}_{G_q}(W_q),\quad
+ \Gamma_q=\langle-1,2,t:t\mid A_q\rangle.                 \tag{5}
+\]
+The full and effective indices are respectively $|G_q/K_q|$ and $|\Gamma_q/K_q|$.
+For the triangle below both are six, established rather than assumed.
+
+\begin{lemma}[Inherited primitive form, with its full argument]\label{lem:primitive}
+At a failed prime-residual vertex with $|\Gamma_q/K_q|=6$, exactly one simple
+prime $r\mid A_q$ lies outside $K_q$, it is the only nonresidue prime factor,
+and $A_q=B_qr$ with $W(B_q)=K_q$. Its quotient image has order six, and
+$pK_q=rK_q$ or $r^{-1}K_q$.
+\end{lemma}
+\begin{proof}
+Because $-1\notin W_q$ and $K_q\subseteq W_q$, the cyclic group $K_q$ has odd
+order; it lies in the quadratic residues. The image of $p$ is a non-square in
+$\Gamma_q/K_q\cong C_6$. It cannot be the unique involution, since then an
+exterior target is the identity. Hence it has order six, and all three targets
+are distinct. The aperiodic quotient support consequently has at most three
+points. For every prime outside $K_q$, its signed interval cannot fill its
+nontrivial cyclic subgroup, or that period would persist in the final support.
+Building each such interval from $2e$ copies of $\{1,g\}$ shows strict growth
+at every step. Thus $1+2\sum_{g\ne1}e\le3$. There is at least one active prime,
+since $A_q$ is a nonresidue and all elements of $K_q$ are squares. It is unique
+and simple; its quotient order is greater than three, hence six. The image of
+$p$ is $r$ or $r^{-1}$, rather than the forbidden involution. Each of the three
+occupied quotient positions has one active exponent above it, so its fine
+support is a translate of $W(B_q)$. Actual $K_q$-periodicity then forces
+$W(B_q)=K_q$. The factorwise reciprocity identity identifies the same unique
+prime as a nonresidue modulo $p$.
+\end{proof}
+
+\section{A closed primitive sextic triangle}
+Let
+\[
+ L_0=526211146410389771,\quad L_1=1165340089472441,\quad
+ L_2=23500235136011.
+\]
+All four integers $p,L_0,L_1,L_2$ are prime. Their exact factorizations give
+\[
+\begin{array}{c|r|l|c}
+ q&A_q& A_q=B_q r_q&r_q\\\hline
+31&1877521370392270702928&2^4L_0\cdot223&223\\
+223&1877521370392270702976&2^7\cdot41L_1\cdot307&307\\
+307&1877521370392270702997&17\cdot19\cdot79\cdot101L_2\cdot31&31.
+\end{array}                                                   \tag{6}
+\]
+\begin{theorem}[Closed minimal-length primitive component]\label{thm:triangle}
+At the hard prime (1), the three original vertices form the closed component
+\[
+ \boxed{31\longrightarrow223\longrightarrow307\longrightarrow31.} \tag{7}
+\]
+At each vertex $K_q=G_q^6$, $W(B_q)=K_q$, $v_{r_q}(A_q)=1$, and $r_qK_q$
+generates $G_q/K_q\cong C_6$. Both complete local channels are empty.
+Each vertex has exactly its displayed outgoing nonresidue prime, of weight one.
+A canonical cycle consisting of primes $3\pmod4$ cannot have length two, so
+three is the minimum possible length. No least-prime assertion is made.
+\end{theorem}
+\begin{proof}
+The primality proof is the finite complete-order certificate explained below;
+all factorizations in (6) are exact integer identities. The following bounded
+packets already fill the respective sixth-power subgroups:
+\[
+\begin{array}{c|c|c|c}
+q&|K_q|&\text{generator of }K_q&\text{fixed logarithmic packet}\\\hline
+31&5&2&[-4,4]\\
+223&37&2&[-7,7]+11[-1,1]\\
+307&51&171&17[-1,1]+7[-1,1]+[-3,3].
+\end{array}                                                   \tag{8}
+\]
+The first row covers the five residues. The second covers every integer from
+$-18$ through $18$. For the third, the actual prime logs of $17,19,79,101$
+with respect to $171=4^{10}\pmod{307}$ are $-17,7,-1,-2$. The last two give
+$[-3,3]$. The nine centres from the first two are
+\[
+ -24,-17,-10,-7,0,7,10,17,24.
+\]
+Consecutive gaps are at most seven, so their radius-three intervals cover
+$[-27,27]$, hence all residues modulo 51. This proves all three saturations
+by original bounded exponent vectors. Every remaining $L_i$ is in $K_q$:
+its residue is respectively $8,136,216$, with logarithm $3,26,39$ relative to
+$2,2,4$. Adding those actual factors preserves the already saturated support.
+
+The successor orders in $G_q$ are $6,222,306$; their quotient orders are six.
+Also $4\in K_q$ at every vertex, so (6) implies
+$pK_q=r_qK_q$. Thus the full support is exactly
+\[
+ W_q=K_q\{r_q^{-1},1,r_q\}.                              \tag{9}
+\]
+With $r_qK_q$ labelled 1 in $C_6$, the support classes are $5,0,1$, while the
+middle and two exterior target classes are $3,2,4$. The set $\{5,0,1\}$ has
+no nontrivial period, proving that $K_q$ is the \emph{actual} stabilizer, not a
+guessed power-residue subgroup. The support and successor generate the whole
+unit group, so the effective index is also six.
+
+For any prime $t\mid A_q$, reciprocity and $p\equiv-q\pmod t$ give
+$(t/p)=(t/q)$; the same identity for $t=2$ follows from the supplementary law.
+Every factor of $B_q$ is a square modulo $q$, whereas $r_q$ has odd quotient
+exponent and is a nonresidue. Hence the listed successor is the only eligible
+prime and appears once. All three vertices themselves are nonresidues modulo
+$p$, since $(p/q)=-1$ and $p\equiv1\pmod4$. This proves closure with no omitted
+outgoing factor.
+
+For a hypothetical two-cycle $q\leftrightarrow r$ with both primes
+$3\pmod4$, both edge laws would give $(r/q)=(q/r)=-1$. Reciprocity makes these
+symbols opposite. This proves the minimum-length assertion.
+\end{proof}
+
+\paragraph{Primality and original multiplicities.}
+The supplied certificate has 80 nodes, of which 42 terminate by complete trial
+division below 10,000 and 38 use the following elementary lemma. If the complete
+factorization of $n-1$ is into already proved primes and an integer $a$ satisfies
+\[
+ a^{n-1}\equiv1\pmod n,\qquad
+ \gcd(a^{(n-1)/r}-1,n)=1\quad\text{for every }r\mid n-1,
+                                                               \tag{10}
+\]
+then for every prime divisor $l$ of $n$, the order of $a\pmod l$ contains each
+full prime-power factor of $n-1$. Consequently $n-1\mid l-1$, so $l\ge n$;
+hence $n$ is prime. At the root (1),
+\[
+ p-1=2^5\cdot3\cdot5\cdot15646011419935589191,
+ \qquad a=11.
+\]
+Every child factor, exponent, base, power and gcd in (10) is in
+\texttt{prime\_certificates.json}; both standard-library implementations verify
+all 80 nodes. No probable-prime assertion is an input to the final certificate.
+
+The inactive masses are respectively $27,135,243$, so the quotient count vector
+in classes $0,1,2,3,4,5$ is
+\[
+ T_q(1,1,0,0,0,1),\qquad T_q=27,135,243.                 \tag{11}
+\]
+The complete original divisor counts are $81,405,729$, totalling 1215. Every
+vector, integer divisor, fine residue, quotient coordinate and kernel coordinate
+is recorded. For example, the inactive counts at $q=31$ on
+$1,2,4,8,16$ are $5,6,5,5,6$; they are not $27/5$ per element.
+
+A separate original state demonstrates that (1) is not an ES counterexample:
+\[
+ R=3,\quad a=1877521370392270702921,
+ \quad u=71,\quad (h,r,s)=(71,1,26443962963271418351),
+\]
+\[
+ \kappa=2512176481510784743344,
+ \quad (x,y,z)=(a,hs\kappa,ph\kappa).                   \tag{12}
+\]
+Here $a=19\cdot71\cdot19371487\cdot71847221867$, with all factors separately
+certified prime. Equation (4) verifies the positive reciprocal identity.
+
+\section{Higher reciprocity is compatible with the closed cycle}
+Let $\omega^2+\omega+1=0$, and retain the primary Eisenstein primes
+\[
+ \pi_0=-5-6\omega,\qquad \pi_1=-17-6\omega,
+ \qquad\pi_2=-17-18\omega.                               \tag{13}
+\]
+Their norms $a^2-ab+b^2$ are $31,223,307$. Each is $1\pmod3$ in
+$\mathbb Z[\omega]$, using the stronger primary convention of Damg\aa rd and
+Frandsen \cite[\S2, p.4]{DF}. The reduction maps send $\omega$ to
+\[
+ z_0=25,\qquad z_1=183,\qquad z_2=289.
+\]
+For $i\ne j$, define $H_{ij},J_{ij}\in\mathbb Z/3$ by
+\[
+ \left[\frac{\pi_j}{\pi_i}\right]_3=\omega^{H_{ij}},\qquad
+ \left[\frac{\overline\pi_j}{\pi_i}\right]_3=\omega^{J_{ij}}.
+\]
+The exact tables are
+\[
+ H=\begin{pmatrix}*&1&0\\1&*&0\\0&0&*\end{pmatrix},\qquad
+ J=\begin{pmatrix}*&0&1\\0&*&1\\2&2&*\end{pmatrix},\qquad
+ H+J=\begin{pmatrix}*&1&1\\1&*&1\\2&2&*\end{pmatrix}.     \tag{14}
+\]
+Each entry is checked by reducing the actual Eisenstein numerator at $z_i$,
+raising to $(q_i-1)/3$, and comparing with $1,z_i,z_i^2$. Cubic reciprocity gives
+$H_{ij}=H_{ji}$; conjugation and reciprocity give $J_{ij}=-J_{ji}$
+\cite[\S4, p.8]{DF}. The rational norm character is $H_{ij}+J_{ij}$, not the
+primary-only character. The asymmetric conjugate table cannot be discarded.
+All forward and backward rational prime characters are nontrivial, consistently
+with (7), not in contradiction with reciprocity.
+
+With successor $r_i$ and predecessor $q_{i-1}$, all phases here are positive:
+$pK_i=r_iK_i$. Therefore
+\[
+ q_{i-1}K_i=r_i^{-2}K_i,\qquad
+ q_{i-1}r_i^2\pmod{q_i}=16,196,17.                       \tag{15}
+\]
+These kernel elements have explicit sixth roots $3,38,20$, respectively.
+This is the exact neighbour-square recurrence of the predecessor, now satisfied
+around a closed primitive triangle \cite[\S3]{BryanChain}.
+
+The section $j\mapsto r_i^j$ has carry
+\[
+ \omega_i(j,k)=(r_i^6)^{\lfloor(j+k)/6\rfloor},\qquad
+ r_i^6\pmod{q_i}=1,8,144.                                \tag{16}
+\]
+Every fine group element has coordinates $(j,k_0)$ with $k_0\in K_i$; the product
+uses that carry, and its inverse is $g\mapsto(j,gr_i^{-j})$. At $q=307$ all lifts
+of a quotient generator have order divisible by 18. The extension of $C_6$ by
+$C_{51}$ does not split; $C_{306}$ must not be replaced by $C_6\times C_{51}$.
+The quotient labels at different vertices are separately marked by their own
+successor. Their use of a common abstract $C_6$ is not a residue-group
+homomorphism between different prime moduli.
+
+\section{The smallest odd coefficient component, including its nilpotent part}
+The following comparison is an explicit classical algebraic CRT calculation.
+It states exactly what the primitive packet does in the odd component; it is
+not proposed as an independent ES existence theorem.
+Put $\varepsilon^2=0$ and $\mathbb F_4=\mathbb F_2[\omega]/(\omega^2+\omega+1)$.
+There is a unital algebra isomorphism
+\[
+ \boxed{\Phi:\mathbb F_2[X]/(X^6-1)\longrightarrow
+ \mathbb F_2[\varepsilon]/\varepsilon^2\times
+ \mathbb F_4[\varepsilon]/\varepsilon^2,\quad
+ F\mapsto(F(1+\varepsilon),F(\omega(1+\varepsilon))).}    \tag{17}
+\]
+Its complete inverse can be written without solving a linear system. Set
+\[
+ e_0=1+X^2+X^4,\quad e_1=X^2+X^4,\quad E=1+X^3,\quad Z=X^4.
+\]
+For $(a+b\varepsilon,c+d\varepsilon)$, with $a,b\in\mathbb F_2$ and
+$c,d\in\mathbb F_4$, the inverse is
+\[
+ \boxed{(a+bE)e_0+\bigl(c(Z)+E d(Z)\bigr)e_1.}           \tag{18}
+\]
+Indeed $e_0,e_1$ are complementary orthogonal idempotents; $E^2=0$; $Z$ on the
+second component is $\omega$; and $e_0X=e_0(1+E)$,
+$e_1X=e_1Z(1+E)$. These identities prove both compositions and multiplicativity.
+Equivalently, $X^6-1=(X+1)^2(X^2+X+1)^2$ with coprime factors.
+
+Every original integer $T_q$ in (11) is odd. Its reduction is the same marked
+polynomial $P=1+X+X^5$, and direct substitution gives
+\[
+ \boxed{\Phi(P)=(1,\varepsilon),\qquad
+ \Phi(P^2)=(1,0),\qquad P^2=e_0.}                        \tag{19}
+\]
+The cubic body is zero while its cubic nilpotent coefficient is nonzero. In the
+source convention $G(A)=\{\tau\}\sqcup A^\bullet$, this is a supported zero
+observation with a retained jet, not absence. It does not force a target:
+the fine, complete sources in Theorem~\ref{thm:triangle} have all three target
+classes absent despite their nonzero cubic jet.
+
+Squaring $P$ introduces two independent active occurrences and their pair
+multiplicities. The original active prime has exponent bound one. Neither that
+squared source nor its exterior target coefficients are an available move inside
+the original box. All integer counts and fine kernel fibres preceding reduction
+remain in the certificate. Equality of the three reduced local packets is not
+an invented isomorphism of their original factor sources.
+
+\section{A genuinely additional source breaks the minimal cycle}
+\begin{theorem}[Square-nine escape, with no new factor-supply assumption]
+\label{thm:nine}
+Let $q_0\to q_1\to q_2\to q_0$ be any canonical directed triangle of external
+nonresidue primes, all $3\pmod4$, at a hard prime $p$. It need not be primitive
+and its vertices may have other canonical exits. For every vertex $q_i$, the
+new original source
+\[
+ A_{q_i,9}=(p+9q_i)/4
+\]
+is below $p$, has quadratic character $-1\pmod p$, and has at least one
+nonresidue prime factor. \emph{Every} such factor lies outside the triangle.
+\end{theorem}
+\begin{proof}
+Let $Q$ be the largest vertex. Its incoming edge gives
+$4cQ=p+q_{\rm prev}<p+Q$, so $3Q<p$. Thus $9q_i<3p$ and the new sources are
+positive integers below $p$. Multiplication by the square 9 preserves the
+nonresidue character, proving existence of a nonresidue factor below $p$.
+No source is divisible by its own vertex. Further,
+\[
+ \gcd(A_{q,1},A_{q,9})=\gcd(A_{q,1},2),                 \tag{20}
+\]
+so its canonical successor, an odd prime at least 11, cannot divide $A_{q,9}$.
+Finally its predecessor $s$ satisfies $(q/s)=-1$. Both are $3\pmod4$, hence
+$(s/q)=1$. Any nonresidue factor $t$ of $A_{q,9}$ has $(t/q)=-1$: reciprocity
+in $p\equiv-9q\pmod t$ gives $(t/p)=(t/q)$. The predecessor is therefore
+excluded too. These are all three vertices.
+\end{proof}
+
+The arithmetic map in this theorem changes the source, retaining
+$(p,q,1,A_{q,1})$ and $(p,q,9,A_{q,9})$ separately. It is not a transport of an
+old missing divisor or an enlargement of its multiplicity. Both have their
+original factorization, exponent box, channels and return (4).
+
+\begin{theorem}[Square-source cardinality obstruction]\label{thm:ports}
+Let $C$ be a finite set of external nonresidue primes, all $3\pmod4$, and let
+$L\ge1$. Suppose
+\[
+ (2L-1)^2\max C<3p,\qquad \min C>2L-2.                  \tag{21}
+\]
+If every nonresidue factor of every source
+$A_{q,j}=(p+(2j+1)^2q)/4$, $q\in C$, $0\le j<L$, lies in $C$, then
+\[
+ \boxed{|C|\ge2L+1.}                                   \tag{22}
+\]
+\end{theorem}
+\begin{proof}
+Every source is an actual integer below $p$, with nonresidue character, hence
+has a nonempty outgoing factor set. For $i<j$,
+\[
+ \boxed{\gcd(A_{q,i},A_{q,j})
+ =\gcd(A_{q,i},(j-i)(i+j+1)).}                          \tag{23}
+\]
+This follows by subtracting the sources and cancelling their unit $q$. Every
+prime divisor of the two factors on the right is at most $2L-2$. By (21), an
+internal prime cannot occur at two different ports. Each vertex therefore has
+at least $L$ distinct internal successors. There are no self-edges, and no
+opposite pair of edges: the square-source character law would otherwise make
+both reciprocal symbols $-1$ at two $3\pmod4$ primes. Hence the total number
+of directed edges is at most $|C|(|C|-1)/2$ and at least $L|C|$. This proves (22).
+\end{proof}
+
+\begin{corollary}[Uniform escape for small primitive components]
+Let $C$ be a closed canonical strongly connected component consisting entirely
+of primitive effective-index-six prime-residual failures. If $|C|\le6$, at least
+one of its square sources with multiplier 9 or 25 has a nonresidue prime factor
+outside $C$. No assertion that this factor's next selector is occupied is made.
+\end{corollary}
+\begin{proof}
+Turn 1's actual normal form gives $A_q=B_qr_q$, $W(B_q)=K_q$, and a unique
+outgoing prime $r_q$ \cite[\S5]{Turn1}. Each $B_q\ge4$. If $B_q=1$, then
+$K_q=1$ and $|\Gamma_q|=6$; since $2\in\Gamma_q$, $q\mid2^6-1=63$, impossible
+for a hard external prime. If $B_q=2$, its three-element signed support can be
+a subgroup only if $\operatorname{ord}_q(2)=3$, forcing $q=7$. If $B_q=3$, the
+same argument forces $q=13$, contrary to $q\equiv3\pmod4$.
+At a largest vertex $Q$, the incoming canonical edge now gives
+$16Q\le p+q_{\rm prev}<p+Q$. Thus $15Q<p$ and $25Q<3p$.
+Take $L=3$ in Theorem~\ref{thm:ports}; $\min C\ge11>4$. Closure under all three
+ports would require at least seven vertices. Port 1 is already closed, so an
+outside factor occurs at 9 or 25.
+\end{proof}
+For an arbitrary all-$3\pmod4$ canonical closed component one still has
+$3\max C<p$. The same argument with $L=2$ proves that components of at most
+four vertices cannot remain closed after multiplier 9 is added.
+
+\section{Actual escape, exact scope, and the next obligation}
+For (1), the three multiplier-nine factorizations are
+\[
+\begin{array}{c|l|l}
+q&A_{q,9}&\text{all nonresidue prime factors}\\\hline
+31&2\cdot5\cdot11\cdot131\cdot2467\cdot52814328044617&11\\
+223&2\cdot7\cdot17\cdot69623\cdot113306597729903&113306597729903\\
+307&7\cdot268217338627467243373&268217338627467243373.
+\end{array}                                                   \tag{24}
+\]
+All factors in the table are certified prime. At $q=31$ the full new source has
+four E and four M states. One M state is
+\[
+\begin{gathered}
+ R=279,\quad a=1877521370392270702990,\quad u=156417668,\\
+ (h,r,s,\lambda)=(323177,22,264071640223085,946493334133),
+\end{gathered}                                                \tag{25}
+\]
+with ordered denominators given by (4). At $q=223$ and $307$, both new channels
+are empty. Thus even the explicit escape does not mean that every added source
+is immediately occupied. At $q=223$, projection from $9q$ to $q$ supplies two
+candidates in each channel, but none lifts with its original exponent vector.
+For instance,
+\[
+ u=1098476221603538346086974,\qquad
+ 223\mid4u+1,\quad u\equiv4\pmod9,
+\]
+whereas E requires $u\equiv2\pmod9$. The other projected E candidate is
+$5\pmod9$, and both projected M candidates are $1\pmod9$ instead of the
+required $8\pmod9$. The square factor of the residual remains part of the
+actual selector; it is not discarded because it has trivial Jacobi sign.
+
+The actual closed triangle refutes a strict decrease on every canonical primitive
+edge, even with all cubic and nilpotent data retained. Square sources provide a
+proved extra arithmetic input, but escape is not eventual selector occupancy.
+Larger or mixed-type closed components remain possible. Turn 4 must retain the
+size/type bounds (21)--(22), or pivot to the complete-shell signed coefficient sum.
+
+\paragraph{Exact computational scope.}
+The standard-library checks cover all 1215 original vectors, all fine products
+and carries, both square-port gates, all 80 prime-proof nodes, and the complete
+64-element coefficient ring. The separate triangle scan covers the 636 hard
+primes up to 250,000: 1,802,376 vertices, 961,554 edges, and 19 triangles, all
+obeying square-nine escape. It is not an all-shell ES census or the large prime's
+full graph. Independent code, hashes and negative controls accompany the proof.
+No least-prime, historical-priority, independent-review, Lean-build or universal
+ES claim is made.

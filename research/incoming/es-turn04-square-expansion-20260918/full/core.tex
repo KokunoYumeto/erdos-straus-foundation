@@ -1,0 +1,477 @@
+\section{Scope: from one sextic triangle to arbitrary mixed components}
+Turn 3 supplied an actual closed canonical triangle with constant primitive sextic
+quotient, and separately proved square-source escape for all-$3\bmod4$ triangles
+\cite{Turn3}. Neither canonical cycle closure nor cubic reciprocity forces an ES
+witness. The present continuation retains the square-source mechanism but removes
+its stabilizer-index and vertex-type restrictions. It proves an explicit height
+bound for a square-source-closed set of any prescribed cardinality, a finite
+cofactor reduction, and a computer-assisted exclusion of all such sets of at most
+five vertices. The proof is independent of whether the local selectors are empty.
+It does not prove that every component contains an occupied selector.
+
+The canonical factor graph is inherited from Bryan \cite[\S\S1--7]{Bryan}.
+Quadratic reciprocity is the classical law in Hatcher \cite[\S6.4, pp.205--212]{Hatcher}.
+All counting and finite reduction arguments used below have complete proofs here.
+A different Type-A/B square-lift shadow theorem \cite[\S\S3--6]{Shadow} allows
+unbounded auxiliary parameters; it does not supply the fixed-$p$, source-below-$p$
+conclusions proved here. No historical-priority conclusion is asserted.
+
+\section{Every original square source and its coefficient return}
+Let $p$ be prime in $1,121,169,289,361,529\pmod{840}$ and let
+\[
+ V_p=\{q<p:q\text{ prime},\ (q/p)=-1\},\quad
+ \sigma_q=\begin{cases}1&q\equiv3\pmod4,\\3&q\equiv1\pmod4.\end{cases}
+\]
+Here $p\ge1009$, $V_p\ne\varnothing$, and its primes are at least 11.
+Indeed $2,3,5,7$ are residues at each hard class. Factoring a least positive
+nonresidue gives a nonresidue prime below $p$. For an odd integer $t>0$ retain
+\[
+ R_0=\sigma_q q,\quad R=R_0t^2<3p,\quad A_t=(p+R)/4.
+                                                        \tag{1}
+\]
+Then $p/4<A_t<p$, $\gcd(pA_t,R)=1$, and $(A_t/p)=-1$. The last equality follows
+from $4A_t\equiv\sigma_q q t^2\pmod p$; the bound implies $t<p$, and
+$(\sigma_q/p)=1$. Thus the complete factorization of $A_t$ has at least one
+nonresidue prime $r<p$, distinct from $q$. Every such prime is an outgoing edge,
+with its actual weight $v_r(A_t)$; the sum of those weights is odd.
+
+At each separately marked source retain
+\[
+ A_t=\prod_l l^{e_l},\quad \beta_l\in[-e_l,e_l],\quad
+ u=\prod_l l^{e_l+\beta_l}\mid A_t^2,\quad
+ v(\beta)=uA_t^{-1}\pmod R.                             \tag{2}
+\]
+The original gates are
+\[
+ E:R\mid4u+1,\qquad M:R\mid4u+p\iff R\mid u+A_t.       \tag{3}
+\]
+The map (2) is bijective, with $\beta_l=v_l(u)-e_l$. Its integer coefficients count
+these original vectors, not a multiset of independently coloured prime copies.
+
+For a hit put $d=\gcd(A_t,u)$ and
+\[
+ (h,r,s)=(d^2/u,u/d,A_t/d),\quad A_t=hrs,\quad u=hr^2.
+\]
+Prime valuations show $h,r,s>0$ and $\gcd(r,s)=1$. The ordered returns are
+\[
+ E:(x,y,z)=(A_t,hs\kappa,phr\kappa),\quad\kappa=(pr+s)/R,
+\]
+\[
+ M:(x,y,z)=(A_t,phs\lambda,phr\lambda),\quad\lambda=(r+s)/R. \tag{4}
+\]
+The gates imply integrality because $h,r,s,p$ are units modulo $R$.
+Multiplying the reciprocal sums by $phrs\kappa$ or $phrs\lambda$ proves $4/p$.
+The ordered divisor inverses are $u=A_t^2/(Ry-pA_t)$ for E and
+$u=pA_t^2/(Ry-pA_t)$ for M. These are inherited Type I/II coordinates
+\cite[\S2, Propositions 2.2 and 2.6]{ET}, rechecked here with (1).
+An upper-half source cannot have an M hit, since its other two denominators
+are multiples of $p$. An E hit with $A_t>p/2$ returns to the first-half chart
+by $(h,r,s,\kappa)\mapsto(h,\kappa,s,r)$, retaining the swap of the first two
+denominators \cite{Turn3}.
+The literal Elsholtz--Tao coordinate maps are
+$(r,\kappa,s,h,(r+\kappa)/s,R)$ for E, with their image ordered $(z,x,y)$,
+and $(r,s,\lambda,h,R,4rh\lambda-1)$ for M, with image $(x,z,y)$.
+The inverse reads these coordinates and applies the displayed permutation;
+$p(r+\kappa)=s(4hr\kappa-1)$ proves the extra E integrality.
+
+\begin{theorem}[Exact carry for a square residual]\label{thm:carry}
+For $c\in\{E,M\}$ let $\eta_E=1$, $\eta_M=p$. On the original base-candidate set
+\[
+ \mathcal B_{c,q,t}=\{u\mid A_t^2:R_0\mid4u+\eta_c\}
+\]
+put
+\[
+ k_c(u)=\frac{4u+\eta_c}{R_0},\quad d_c(u)=k_c(u)\bmod t^2,\quad
+ b_c(u)=\frac{k_c(u)-d_c(u)}{t^2}.
+\]
+The full channel count is the exact integer coefficient
+\[
+ \boxed{|c_{q,t}|=[Z^0]\sum_{u\in\mathcal B_{c,q,t}}Z^{d_c(u)}}. \tag{5}
+\]
+The inverse, with the source and channel retained, is
+\[
+ \boxed{u=\frac{R_0(d_c+t^2b_c)-\eta_c}{4}.}             \tag{6}
+\]
+It applies exactly when the right side is a positive integer divisor of $A_t^2$.
+No coprimality of $R_0$ and $t$ is required.
+\end{theorem}
+\begin{proof}
+Euclidean division gives $k=d+t^2b$ uniquely. Divisibility by $R_0t^2$ is exactly
+$d=0$, proving (5); solving the same integer equation gives (6). If only $d$ is
+kept, its full fibre is the displayed set of allowed $b$ values. Keeping a separate
+basis vector for each original $u$ makes that fibre explicit.
+\end{proof}
+
+The coefficient pushforward $\mathbb Z^{\mathcal B}\to\mathbb Z^{\mathbb Z/t^2}$
+sums along the actual fibres. Its kernel is generated by $e_u-e_{u_*}$ in each
+occupied fibre, where $u_*$ is its least divisor. Recording all nonselected
+coordinates and the sum reconstructs the selected coordinate by subtraction.
+A coefficient that becomes zero after reduction remains a supported zero, whereas
+an empty original fibre is absent. No inverse of the augmentation is asserted.
+
+For $t=2j+1$ write $F_q(j)=A_t$. Then
+\[
+ F_q(j)=A_1+\sigma_q q\,j(j+1),\qquad
+ \boxed{\gcd(F_q(i),F_q(j))=\gcd(F_q(i),(j-i)(i+j+1)).}  \tag{7}
+\]
+This follows by subtraction and $\gcd(F_q(i),\sigma_q q)=1$.
+The exact unchanged-divisor domain of two sources is
+$\operatorname{Div}(\gcd(A_t,A_{t'})^2)$.
+On it the centred coordinates change by
+$\beta_l' =\beta_l+v_l(A_t)-v_l(A_{t'})$, and the integer carry $k_c(u)$ is
+unchanged. The full tests remain $t^2\mid k_c(u)$ and $t'^2\mid k_c(u)$.
+This is a coefficient transport through a common original source; it does not
+assert that a nonzero projected coefficient has a full lift.
+
+\section{Paired roots and a uniform source that avoids a finite vertex set}
+For $r\in V_p\setminus\{q\}$ the discriminant of $F_q$ modulo $r$ is
+$-\sigma_q q p\ne0$. Consequently
+\[
+ \nu_{q,r}=\#\{j\pmod r:F_q(j)=0\}
+ =1+\left(\frac{-\sigma_q q p}{r}\right)\in\{0,2\}.    \tag{8}
+\]
+When roots exist they are exchanged by $j\mapsto-1-j$, with no fixed root.
+At $r=q$ there is no root. These are statements about prime divisibility of the
+actual integer source, not about availability of a selector divisor.
+
+For $C\subseteq V_p$ containing $q$, define
+\[
+ Z_C(q,N)=\#\{0\le j<N:\gcd(F_q(j),\prod_{r\in C}r)=1\}.
+\]
+Let $\mathcal R$ contain the $n$ primes of $C\setminus\{q\}$ for which (8) is two,
+and put $\delta=\prod_{r\in\mathcal R}(1-2/r)$. For $J\subseteq\mathcal R$,
+let $d_J=\prod_{r\in J}r$ and let $\mathcal Z_J\subset[0,d_J)$ be the complete
+CRT root set. The empty set has modulus one and root zero. Inclusion--exclusion is
+\[
+ \boxed{Z_C(q,N)=\sum_{J\subseteq\mathcal R}(-1)^{|J|}
+ \sum_{a\in\mathcal Z_J}\left(1+\left\lfloor\frac{N-1-a}{d_J}\right\rfloor\right).} \tag{9}
+\]
+Each term is a count of original source indices.
+
+\begin{theorem}[Reflection bound and explicit escape prefix]\label{thm:prefix}
+If $n>0$ then
+\[
+ \boxed{|Z_C(q,N)-N\delta|<(3^n-1)/2,\qquad
+ \delta\ge\frac9{2n+9}.}                              \tag{10}
+\]
+For $n=0$, $Z_C(q,N)=N$. Define
+\[
+ (b_0,\ldots,b_7)=(1,2,3,4,5,6,9,15),\quad
+ b_n=\left\lceil\frac{(2n+9)(3^n-1)}{18}\right\rceil\quad(n\ge8).
+                                                               \tag{11}
+\]
+Then $Z_C(q,b_n)>0$. In particular, if $|C|=m$ and
+\[
+ \sigma_q q(2b_{m-1}-1)^2<3p,
+\]
+one of those original sources has a nonresidue prime factor outside $C$.
+\end{theorem}
+\begin{proof}
+For nonempty $J$, its $2^{|J|}$ CRT roots are paired by $a\mapsto d_J-1-a$.
+There is no fixed point: it would imply $2a+1=0$ at every prime of $J$, contrary
+to $p\ne0$ there. For one pair, remove complete periods from $N$. In a prefix of
+length at most $(d_J-1)/2$ at most one root is counted; in a longer proper prefix
+at least one is counted. In either case the discrepancy from $2N/d_J$ has
+absolute value strictly less than one. Thus the $J$ discrepancy is less than
+$2^{|J|-1}$. Summing gives
+$\sum_{J\ne\varnothing}2^{|J|-1}=(3^n-1)/2$.
+This improved estimate concerns prefixes beginning at zero, not arbitrary intervals.
+If the active primes are increasing, $r_i\ge2i+9$, so the telescoping product is
+$\delta\ge\prod_{i=1}^n(2i+7)/(2i+9)=9/(2n+9)$.
+
+For $n\ge8$, (10) and (11) force $Z_C>0$. For $1\le n\le5$, a prime at least
+11 can cover at most one index in $[0,n]$: two distinct root representatives
+would sum to $r-1\ge10$, whereas their maximum sum is $2n-1\le9$.
+For $n=6$ and $N=9$, only 11 and 13 can cover two indices, so the maximum covered
+count is $6+2=8$. For $n=7$ and $N=15$, primes 11 and 13 cover at most three
+indices, 17,19,23 at most two, and all others at most one. Hence at most
+$7+2+2+1+1+1=14$ indices are covered. The constants increase with $n$ and satisfy
+$b_n\le4^n$: for the formula use $(2n+9)/18<(4/3)^n$, starting at $n=1$ and
+inducting; strict inequality before rounding gives the integer bound.
+Finally all indicated sources are below $p$ under the stated strict range bound.
+Their character is $-1$, so the C-free one has an actual nonresidue prime factor
+below $p$ outside $C$.
+\end{proof}
+
+Original edge weights can be counted exactly as well. If $x$ is a root modulo
+$r^a$, its unique lift is
+\[
+ x'=x+r^ah,\qquad h\equiv-\frac{F_q(x)}{r^a}
+                 \bigl(\sigma_q q(2x+1)\bigr)^{-1}\pmod r.       \tag{12}
+\]
+The derivative is a unit at every root. Keeping both lifted roots at every layer,
+\[
+ \boxed{\sum_{j=0}^{N-1}v_r(F_q(j))=
+ \sum_{\substack{a\ge1\\r^a\le F_q(N-1)}}
+ \sum_{x\in\mathcal Z(r^a)}
+ \left(1+\left\lfloor\frac{N-1-x}{r^a}\right\rfloor\right).}     \tag{13}
+\]
+This is the indicator expansion of each valuation; it is finite and exact.
+Neither even multiplicities nor repeated visits to a prime are deleted.
+
+\section{Mixed-type reciprocity, including opposite edges}
+For $q,r\in V_p$, $q\ne r$, root eligibility is
+\[
+ \left(\frac qr\right)=-\left(\frac{-\sigma_q}{r}\right).
+                                                               \tag{14}
+\]
+Reciprocity and its supplementary laws show that two orientations can be eligible
+simultaneously exactly for the unordered type pairs
+\[
+ \boxed{(1,1),\ (5,5),\ (1,7),\ (5,7)\pmod{12}.}        \tag{15}
+\]
+For these pairs either both orientations or neither is eligible. For every other
+type pair exactly one orientation is eligible before the finite source bound.
+For example, for $q\equiv1\pmod4$ use
+$(-3/r)=+1$ at $r\equiv1,7\pmod{12}$ and $-1$ at $r\equiv5,11\pmod{12}$;
+for $q\equiv3\pmod4$ use $(-1/r)$. These signs with reciprocity give all (15).
+Eligibility does not itself prove a bounded source occurs.
+
+If $C$ contains $n_j$ vertices of each type $j\in\{1,5,7,11\}$, the number of
+its possible directed edges is at most
+\[
+ U(C)=\binom m2+\binom{n_1}2+\binom{n_5}2+n_7(n_1+n_5),\quad m=|C|.
+                                                               \tag{16}
+\]
+If $L$ initial square sources are valid at every vertex and $\min C>2L-2$,
+closure would imply $mL\le U(C)$. Indeed (7) prevents a prime of $C$ from occurring
+at two ports at the same vertex, so each vertex has at least $L$ distinct
+successors. The old all-$3\bmod4$ theorem is its special case $U(C)=\binom m2$.
+Using that smaller bound for arbitrary mixed vertices would be false.
+
+\section{A uniform reduction of every higher-index closed component}
+Call a nonempty set $C\subseteq V_p$ \emph{square-source closed} if every
+nonresidue prime factor of every valid source (1) at every $q\in C$ lies in $C$.
+No condition on the local gate counts is included in this definition. An all-failure
+closed component of the full square-source graph is such a set.
+
+\begin{theorem}[Cardinality--height bound and finite cofactor reduction]
+\label{thm:height}
+Let $C$ be square-source closed and $m=|C|$. Then $m\ge2$. Put
+$N=b_{m-1}$ and $H=(2N-1)^2$. Every $q\in C$ satisfies
+\[
+ \boxed{\sigma_q qH\ge3p,\qquad q\ge p/H,\qquad
+ p<(4H)^m<16^{m^2}.}                                   \tag{17}
+\]
+Moreover $C$ contains a simple canonical cycle of some length $2\le l\le m$.
+Write its original equations as
+\[
+ p+\sigma_iq_i=4c_iq_{i+1},\qquad i\pmod l.             \tag{18}
+\]
+After cyclically rotating to a least cofactor $c_0=v$, every coefficient lies in
+\[
+ \boxed{1\le v<(H+3)/4,\qquad
+ v\le c_i\le\left\lfloor\frac{vH-1}{4v-3}\right\rfloor.}       \tag{19}
+\]
+Thus each fixed cardinality has a completely explicit finite source-coefficient
+search, valid for all hard primes and every stabilizer quotient.
+\end{theorem}
+\begin{proof}
+Self edges are impossible and canonical sources are always valid, so finite
+closure supplies a simple cycle of length at least two. Theorem~\ref{thm:prefix}
+forces the first inequality of (17); otherwise a source has a nonresidue factor
+outside $C$. Since $\sigma_q\le3$, $q\ge p/H$.
+
+Let $D=4^l\prod c_i$, $S=\prod\sigma_i$. Composition of (18) gives
+\[
+ (D-S)q_i=pT_i,\quad T_i>0,\quad D>S.
+\]
+Primality and $q_i\ne p$ imply $p\mid D-S$. Also $c_i=A_{q_i,1}/q_{i+1}<H$,
+so $p\le D-S<(4H)^l\le(4H)^m$. Since $b_{m-1}\le4^{m-1}$,
+$4H<16^m$, proving the last bound.
+
+For (19), let $Q$ be the largest vertex of this cycle. Its incoming edge gives
+$4vQ\le p+\sigma q_{\rm prev}<p+3Q$, so $Q<p/(4v-3)$.
+Each canonical source is therefore less than $vp/(4v-3)$. Since every successor
+is at least $p/H$, $c_i<vH/(4v-3)$. The largest allowed integer is precisely the
+right side of (19), and $c_i\ge v$ forces $4v-3<H$.
+\end{proof}
+
+Here is the full inverse of the coefficient word. For each cyclic starting point
+$i$, iterate
+\[
+ D_0=1,\quad T_0=0,\qquad
+ D_{j+1}=4c_{i+j}D_j,\quad T_{j+1}=\sigma_{i+j}T_j+D_j.
+\]
+Let $T_i$ denote its final numerator. Set
+\[
+ h=\gcd(T_0,\ldots,T_{l-1}),\quad
+ \boxed{p=(D-S)/h,\qquad q_i=T_i/h.}                    \tag{20}
+\]
+For an original simple prime cycle this follows from $(D-S)q_i=pT_i$ and
+$\gcd_iq_i=1$. Conversely (20) supplies at most one integer candidate; check
+integrality, hard class, all primalities, distinctness, $11\le q_i<p$,
+vertex types, all character values and every equation (18). Canonical cyclic
+rotation is retained, with possible repeated least-cofactor roots explicitly
+counted as duplicate profiles rather than duplicate components.
+
+\section{No square-source-closed set of at most five vertices}
+\begin{theorem}[Finite, all-prime exclusion]\label{thm:five}
+For every hard prime $p$, every nonempty set of at most five vertices has some
+valid original square source with $t\in\{1,3,5,7,9\}$ and a nonresidue prime factor outside that set.
+In particular every all-failure closed component in the full square-source graph
+has at least six vertices.
+\end{theorem}
+\begin{proof}
+Suppose $|C|\le5$ and all its valid sources with $t\in\{1,3,5,7,9\}$ have every nonresidue factor in $C$. Five initial ports at a vertex have pairwise
+source gcd prime factors at most eight by (7). Since every vertex is at least 11,
+these ports require five distinct successors, impossible in $C\setminus\{q\}$.
+Thus $81\sigma_q q\ge3p$ for each vertex. Apply the finite reduction (18)--(20)
+with $H=81$ and $2\le l\le5$. Its complete domain is
+\[
+ \sigma_i\in\{1,3\},\quad 1\le v\le20,\quad c_0=v,\quad
+ v\le c_i\le\left\lfloor\frac{81v-1}{4v-3}\right\rfloor.        \tag{21}
+\]
+Retain only profiles satisfying $81\sigma_iT_i\ge3(D-S)$ at every vertex.
+
+The supplied standard-library finite proof enumerates (21), using the exact
+monotone reduction described next. The complete count is 1,381,117,764 possible
+rooted coefficient profiles, of which 5,922,259 satisfy all range inequalities.
+There are 1,915 profiles reconstructing typed hard-class integer parameters.
+Exact trial division leaves six all-prime profiles; the nonresidue tests leave
+four rooted profiles, representing precisely the following three cycles:
+\[
+\begin{array}{r|l}
+4201&61\to137\to1153\to383\to191\to61\\
+12601&409\to3457\to5743\to2293\to487\to409\\
+26209&661\to881\to7213\to5981\to5519\to661.
+\end{array}                                                    \tag{22}
+\]
+All have five vertices, so $C$ must equal that cycle. The marked multiplier-nine
+sources at their first vertices are respectively
+\[
+\begin{array}{r|r|l|r}
+p&q&A_{q,3}&\text{outside nonresidue factor}\\\hline
+4201&61&1462=2\cdot17\cdot43&43\\
+12601&409&5911=23\cdot257&23\\
+26209&661&11014=2\cdot5507&5507.
+\end{array}                                                    \tag{23}
+\]
+Every source is below $p$. Every factor is prime and the last column has character
+$-1$ modulo the corresponding $p$. These are checked by exhaustive trial division
+and exact modular powers. Thus each candidate leaves its five vertices, contradicting
+closure. The independently implemented enumerator recovers the identical complete
+range-profile digest and candidate cycles. This is a finite computer-assisted
+proof after (21), not extrapolation from a bounded prime census.
+\end{proof}
+
+\begin{corollary}[A terminating six-vertex arithmetic expansion]
+At every hard prime, starting at any external nonresidue prime, factoring at most
+25 valid original sources with $t\in\{1,3,5,7,9\}$ supplies at least six distinct
+reachable external nonresidue primes. No factor inventory or target occupancy is
+assumed.
+\end{corollary}
+\begin{proof}
+Explore the five valid ports of each newly discovered vertex, retaining every
+nonresidue factor. Stop when six distinct vertices have been discovered. If the
+queue emptied sooner, the visited set would have size at most five and be closed
+under those five ports, contradicting Theorem~\ref{thm:five}. Before six vertices
+are found, at most five vertices, and hence at most 25 sources, can be processed.
+Every factorization terminates by trial division; no polynomial running-time bound
+is asserted. The earlier source labels and multiplicities remain attached to the
+returned paths.
+\end{proof}
+
+The general height theorem has a similar constructive reading. Closure only under
+the valid initial $b_{m-1}$ ports already suffices for its proof. Therefore, if
+$p\ge16^{m^2}$, a breadth-first exploration of these ports from any starting vertex
+must reach at least $m+1$ distinct vertices after at most $m b_{m-1}$ source
+factorizations. This is proved finite factor growth, not termination at a selector.
+
+\paragraph{Why the finite enumeration is complete.}
+With other coefficients fixed and positive, let $c_j=x$. Then
+\[
+ D-S=D_0x-S,\qquad T_i=A_ix+B_i,\qquad A_i\ge0,\ B_i>0,
+\]
+so
+\[
+ \frac{d}{dx}\frac{T_i}{D-S}
+ =\frac{-A_iS-D_0B_i}{(D_0x-S)^2}<0.                    \tag{24}
+\]
+The numerator expansion contains a positive term independent of every $c_j$,
+which proves $B_i>0$. Thus the range-compatible coefficient set is downward
+closed. At a partial profile, set all future coefficients to their least allowed
+value $v$. If any inequality fails, the whole remaining box is excluded.
+Otherwise the next coordinate is bounded by
+\[
+ [3D_0-81\sigma_iA_i]x\le81\sigma_iB_i+3S.              \tag{25}
+\]
+When the bracket is positive, its integer floor supplies the upper endpoint;
+otherwise it imposes no upper restriction. Recursing through every integer up to
+the least upper endpoint covers exactly the allowed profiles. One implementation
+uses (25), the other tests (24) by binary search and reconstructs all $T_i$ from a
+single expanded numerator and $4c_iT_{i+1}=D-S+\sigma_iT_i$.
+The complete ledger keeps every one of the 1,915 typed models and a composite
+factor or failed character whenever rejected. Its maximum reconstructed $p$ is
+200,875,369. No primality assumption enters from a probable-prime test.
+
+\section{An exact mixed-type local obstruction and its surviving path}
+At the prime $p=12889\equiv289\pmod{840}$ the canonical component is
+\[
+ 43\longrightarrow61\longrightarrow43,
+\]
+with $A_{43,1}=3233=53\cdot61$ and
+$A_{61,1}=3268=2^2\cdot19\cdot43$. Each successor is the only nonresidue prime
+factor and both E/M gates are empty. This is the allowed mixed pair of types
+$7$ and $1\pmod{12}$, not a violation of reciprocity.
+
+There is a stronger exact local counterexample: \emph{all} valid square sources
+at each of these two vertices have both gates empty. At $43$, the full list is
+$t=1,3,\ldots,29$; at $61$, it is $t=1,3,\ldots,13$. The certificate exhausts all
+22 original divisor boxes and their carry coefficients. This disproves an
+immediate-occupancy assertion even when every valid square at those vertices is
+used; it does not contradict Theorem~\ref{thm:five}, which supplies outside factors.
+
+A separately verified actual path is
+\[
+ 43\xrightarrow{t=3}3319\xrightarrow{t=1}1013
+ \xrightarrow{t=1}11,
+\]
+with source factorizations $3319$, $4052=2^2\cdot1013$,
+$3982=2\cdot11\cdot181$, then $3225=3\cdot5^2\cdot43$.
+The last source has an original M hit $u=9$, with
+$(h,r,s,\lambda)=(1,3,1075,98)$, and returns
+\[
+ \frac4{12889}=\frac1{3225}+\frac1{1357856150}+\frac1{3789366}.
+\]
+The certificate retains the order and inverse. This is a specified successful path, not a theorem that
+every outside factor eventually reaches a hit.
+
+At $p=1129,q=11,t=11$, $R=1331$, $A_t=615=3\cdot5\cdot41$, and
+$u=1845=3^2\cdot5\cdot41\mid A_t^2$. Its numerator is
+\[
+ 4u+1=7381=121\cdot61.
+\]
+It satisfies the separate congruences modulo $11$ and $121$, but not their product
+$1331$. The original carry is $671$, whose digit modulo $121$ is $66$.
+Thus independent congruences impose only the lcm when the moduli overlap;
+Theorem~\ref{thm:carry} retains the additional valuation exactly.
+
+Finally C-free production is sufficient, not necessary, for an outside factor.
+At $p=3361,q=977$, $A_{q,1}=1573=11^2\cdot13$ has both 11 and 13 as nonresidue
+prime factors. Relative to $C=\{977,11\}$ it is not C-free, yet 13 is outside.
+The exact function $Z_C$ is not substituted for the full closure predicate.
+
+\section{Outcome and verification boundary}
+The surviving square-source mechanism has a genuine uniform extension:
+closed components of every prescribed cardinality reduce to an explicit finite
+set of original integer cycle equations, at all stabilizer indices and both
+vertex types. Every such component satisfies $p<16^{|C|^2}$, and all sets of
+size at most five have a proved exit among their first five valid odd-square sources. These results do not bound $|C|$ above in terms
+that contradict every possible hard prime. Large closed all-failure sets, and the
+question whether the entire square-source family has a hit at each $p$, remain.
+
+The original channel coefficient (5), not its augmentation or a coarse character,
+is required for positivity. The quotient carry gives its complete reconstruction
+including noncoprime square factors; it does not force that coefficient to be
+nonzero. Turn 5 must combine the channel constraints on the remaining larger
+sets or pursue the complete-shell sum, rather than equate source escape with an
+occupied selector.
+
+The complete finite cofactor search is the proof component of
+Theorem~\ref{thm:five}. The separate bounded square-source scan covers the 13 hard
+primes through 5000: 2698 vertices, 4460 valid sources, 125666 original divisors,
+103 E states and 146 M states. It is corroboration, not an enlarged ES verification
+range or evidence replacing the unbounded argument. The two code implementations
+are independent implementations, not independent mathematical review. No Lean
+build, historical-priority determination or resolution of ES is asserted.

@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-19",
+  "status": "passed",
+  "scope": "Fresh repository-intake replay after restoring direct Bryan/Tarjan citations and the public route ledger. Reproducibility is not independent mathematical review or new ES coverage.",
+  "commands": [
+    "python verify.py --bound 50000 --out <external-output>",
+    "python -O verify.py --bound 50000 --out <external-output>",
+    "python check_independent.py --input <normal-output> --out <external-output>/independent.json",
+    "python -O check_independent.py --input <normal-output> --out <external-output>/independent_optimized.json",
+    "python verify_traps.py --input certificates/traps.json --out <external-output>/trap_check.json",
+    "python -O verify_traps.py --input certificates/traps.json --out <external-output>/trap_check_optimized.json",
+    "pdflatex workbench.tex (two passes)",
+    "pdflatex preprint.tex (two passes)"
+  ],
+  "main": {
+    "normal_optimized_mathematical_json_identical": true,
+    "checks": 4032500,
+    "negative_controls": 8,
+    "row_sha256": "164892c8a5721dca804a3abe327b56e50f1a2a55df2cd94eb7327553bf9cda19",
+    "primes": 137,
+    "vertices": 188255,
+    "edge_support": 191789,
+    "edge_occurrences": 193997,
+    "divisor_candidates": 8357211,
+    "E_states": 1729,
+    "M_states": 2728,
+    "primes_with_trap": 39,
+    "primes_with_graph_hit": 137
+  },
+  "separate_checker": {
+    "normal_optimized_identical": true,
+    "checks": 393203,
+    "primes": 137,
+    "rows_sha256": "164892c8a5721dca804a3abe327b56e50f1a2a55df2cd94eb7327553bf9cda19"
+  },
+  "trap_checker": {
+    "normal_optimized_identical": true,
+    "checks": 696,
+    "components": [
+      {"p": 2521, "vertices": 7, "original_divisor_vectors": 75},
+      {"p": 3361, "vertices": 6, "original_divisor_vectors": 198},
+      {"p": 808369, "vertices": 6, "original_divisor_vectors": 222}
+    ]
+  },
+  "documents": {
+    "workbench_pages": 8,
+    "preprint_pages": 3
+  },
+  "integrated_source_sha256": {
+    "verify.py": "5bca7b0d314bc685d8929555311b9806a83eda583390d189ae02dfa0d9c45e3d",
+    "check_independent.py": "4f9d552744c40d32a10cf915dfe578161ae9f70e1d9a08d5b53edb0f3c86e997",
+    "verify_traps.py": "f86eb1f968d7253f77390ee1a17b1ae55d0d42846f4f441efe46e0c30f847495",
+    "core.tex": "2ec43ed556d92494ccbaf30cb8fc0b3e4a1c3d50117ea26d4e8f45e00167d4f0",
+    "preprint.tex": "c4cc44aac4fff791417f034d471c668c22680fd05b8fa2e9b8033d36625526b9",
+    "workbench.tex": "3745d7c57e1447428495cc8a49bcb52eb3fd1e7313ac193db40ded716326728a"
+  }
+}

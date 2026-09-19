@@ -1,0 +1,18 @@
+{
+  "explicit_checks": 1037513,
+  "full_shell_bound": 3000,
+  "hard_bound": 2000000,
+  "negative_controls": [
+    "a nonzero coarse source alone forces the target",
+    "a positive coarse coefficient equals its parity reduction",
+    "discarding the residual collision term is harmless",
+    "a positive target always has positive principal lower bound",
+    "coset sums are an isometry for the fine counting norm",
+    "an arbitrary coefficient array has the original fourfold orbit divisibility",
+    "coset counts determine fine energy",
+    "the real and balanced-integer lower bounds always agree",
+    "a useful selected spectrum must be a character subgroup"
+  ],
+  "no_universal_occupancy_claim": true,
+  "success": true
+}

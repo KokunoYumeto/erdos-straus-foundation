@@ -1,0 +1,279 @@
+\documentclass[10pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,microtype,xurl}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title[Complete-shell collision bounds]{An explicit obstruction to principal domination\\in the Erd\H{o}s--Straus pair sum}
+\author{The Clankers}
+\date{September 19, 2026}
+\begin{document}
+\begin{abstract}
+For the complete first-half divisor-pair source we prove that the usual
+principal-minus-total-nonprincipal-magnitude estimate sums to at most
+$-p\log p/24$ at every prime $p\equiv1\pmod4$, $p\ge2^{20}$. The same conclusion
+holds when at most $J$ even-character modes are retained per shell once
+$p\ge2^{20}J^3$. Exact integer collision bounds and proper even-character observations supply
+original witnesses without assuming coset saturation.
+A cubic-quotient example attains the integer bound while all principal-only
+shell bounds at that prime are nonpositive. No universal ES lower bound is claimed.
+\end{abstract}
+\maketitle
+
+\section{The original pair source}
+Let $p\equiv1\pmod4$ be prime,
+\[
+ I_p=\{a\in\mathbb Z:p/4<a<p/2\},\quad R=4a-p,\quad
+ c_a(g)=\#\{d\mid pa:d\equiv g\pmod R\}.
+\]
+All residues lie in $G=(\mathbb Z/R\mathbb Z)^\times$. Write
+\[
+ m_a=2\tau_{\rm div}(a),\quad \mathcal E_a=\sum_gc_a(g)^2,\quad
+ T_a=\sum_gc_a(g)c_a(-g),\quad P_a=\frac{m_a^2}{\varphi(R)}.
+\]
+The canonical E/M criteria are $u\mid a^2$ and respectively $R\mid4u+1$ or
+$R\mid4u+p$. Their normalized coordinates are
+\[
+ (h,r,s)=(d_0^2/u,u/d_0,a/d_0),\quad d_0=\gcd(a,u).
+\]
+The ordered returns are $(a,hs\kappa,phr\kappa)$ with
+$R\kappa=pr+s$, or $(a,phs\lambda,phr\lambda)$ with $R\lambda=r+s$.
+Clearing denominators verifies $4/p$, and the inverses are
+$u=a^2/(Ry-pa)$ or $u=pa^2/(Ry-pa)$. These are the classical Type I/II
+coordinates \cite[\S2]{ET}.
+
+The original pair source is $b,c\mid pa$, $R\mid b+c$. Dividing by
+$\gcd(b,c)$ returns an ordered M pair when the two $p$-valuations agree;
+otherwise remove the one remaining $p$ and retain its side to obtain E.
+If $h=a/(rs)$, the complete fibres are
+\[
+ M:(p^\epsilon dr,p^\epsilon ds),\quad d\mid h,\ \epsilon=0,1;
+\quad
+ E:(pdr,ds)\text{ or }(ds,pdr),\quad d\mid h.
+\]
+Their sizes are $2\tau_{\rm div}(h)$, so $T_a>0$ is exactly local occupancy.
+The full first-half atlas is complete, and ES at $p$ is equivalent to
+$\sum_{a\in I_p}T_a>0$; the expanded proof and all fibre maps are supplied
+with the accompanying workbench source \cite{Workbench}.
+
+Orthogonality gives
+\[
+ T_a=\frac1{\varphi(R)}\sum_\chi\chi(-1)
+       \left|\sum_{d\mid pa}\chi(d)\right|^2,
+ \qquad
+ \mathcal E_a=\frac1{\varphi(R)}\sum_\chi
+       \left|\sum_{d\mid pa}\chi(d)\right|^2.
+\]
+Thus $T_a\ge L_a:=2P_a-\mathcal E_a$. The following theorem addresses that
+specific estimate, not every possible treatment of the signed sum.
+
+\begin{theorem}\label{thm:neg}
+For every prime $p\equiv1\pmod4$, $p\ge2^{20}$,
+\[
+ \boxed{\sum_{a\in I_p}L_a\le-\frac1{24}p\log p.}
+\]
+\end{theorem}
+\begin{proof}
+First $\tau_{\rm div}(n)<4n^{1/3}$. For primes $q\ge11$, $e+1\le q^{e/3}$;
+for $q=2,3,5,7$ the maxima of $(e+1)/q^{e/3}$ occur at $e=3,2,1,1$ and
+are at most $2,3/2,6/5,11/10$. Successive ratios prove the maxima, and the
+product of these bounds is $3.96<4$.
+
+Also
+\[
+ \sum_{\substack{r\le x\\r\equiv3\ (4)}}\frac1{\varphi(r)}
+ <\frac75(1+\tfrac14\log x),\qquad x\ge3.
+\]
+Indeed $r/\varphi(r)=\sum_{d\mid r}\mu(d)^2/\varphi(d)$. Write $r=dm$;
+the harmonic sum over the one required odd class of $m\pmod4$ is at most
+$1+\frac14\log(x/d)$ by integration after its first term. Its coefficient sum is
+\[
+ \prod_{q\text{ odd prime}}(1+1/[q(q-1)])
+ \le\exp\!\left(\sum_{j\ge1}\frac1{2j(2j+1)}\right)
+ =e/2<7/5.
+\]
+All series converge absolutely. Consequently, using $a<p/2$ and
+$2^{-2/3}<2/3$,
+\[
+ \mathcal P:=\sum_aP_a<\frac{224}{15}p^{2/3}(\log p+4).
+\]
+The original diagonal gives $\mathcal E_a\ge2\tau_{\rm div}(a)$. Put
+$Y=\lfloor\sqrt p/2\rfloor$. Every $d\le Y$ dividing $a\in I_p$ has a distinct
+complement above $Y$, and there are more than $p/(4d)-1$ such multiples of $d$.
+Thus
+\[
+ \mathcal D:=\sum_a\mathcal E_a
+ >p\sum_{d\le Y}\frac1d-4Y
+ >p(\tfrac12\log p-\log2)-2\sqrt p.
+\]
+At the stated bound, $p^{1/3}>100$, $\log p>40/3$,
+$\log2<3/4$, and $2/\sqrt p\le1/512$. Hence
+\[
+ \frac{2\mathcal P}{p\log p}<\frac{728}{1875},\qquad
+ \frac{\mathcal D}{p\log p}>\frac7{16}.
+\]
+Since $7/16-728/1875>1/24$, the result follows.
+\end{proof}
+
+For a set $\Sigma_a$ of at most $J$ even characters, let
+\[
+ L_{a,\Sigma_a}=\frac2{\varphi(R)}\sum_{\chi\in\Sigma_a}
+ \left|\sum_{d\mid pa}\chi(d)\right|^2-\mathcal E_a.
+\]
+Orthogonality gives $T_a\ge L_{a,\Sigma_a}\le2JP_a-\mathcal E_a$.
+Thus the same summed negative bound holds at $p\ge2^{20}J^3$.
+There is an effective all-sublinear extension. For $m\ge3$, define
+\[
+ K_m=\prod_{\substack{q<2^m\\q\ {\rm prime}}}
+       \max_{0\le e<2m}\frac{(e+1)^m}{q^e},\qquad
+ C_m=\min\{C\in\mathbb Z_{>0}:C^m\ge K_m\}.
+\]
+The consecutive ratio is below one once $e+1\ge2m$, since
+$(1+1/(2m))^m<2$. Larger primes obey $e+1\le2^e$.
+Hence $\tau_{\rm div}(a)\le C_ma^{1/m}$.
+If $p\ge2^{20}$ and $p^{1-2/m}\ge12JC_m^2$, then
+\[
+ \frac{2J\mathcal P}{p\log p}<\frac{91}{300},\qquad
+ \boxed{\sum_aL_{a,\Sigma_a}\le-\frac18p\log p.}
+\]
+Indeed $\mathcal P\le(7/5)C_m^2 2^{-2/m}p^{2/m}(\log p+4)$ and
+$7/16-91/300>1/8$. At $m=4$ the finite product is
+$K_4=127401984/25025$, so $C_4=9$ and
+$p\ge\max\{2^{20},944784J^2\}$ suffices.
+No zero-truncated or integer-refined bound is ruled out by these statements.
+
+\section{An integer bound without a saturation assumption}
+Let $B\le G$ contain $-1$, put $|B|=2s$, and let
+$m_C=\sum_{g\in C}c_a(g)$ for each coset. This is a chosen observation
+subgroup, not an asserted stabilizer of the actual support. For $m=sq+r$,
+$0\le r<s$, set $\mathfrak b_s(m)=sq^2+r(2q+1)$.
+
+\begin{theorem}\label{thm:int}
+\[
+ T_a\ge\mathcal L_{a,B}:=\sum_C\mathfrak b_s(m_C)-\mathcal E_a
+ \ge L_{a,B}:=\frac2{|B|}\sum_Cm_C^2-\mathcal E_a.
+\]
+The first equality holds precisely when the antipodal-pair totals in every
+coset differ by at most one. Also
+$T_a\ge4\max(0,\lceil\mathcal L_{a,B}/4\rceil)$.
+\end{theorem}
+\begin{proof}
+Partition each coset into $s$ pairs $\{g,-g\}$ and write $z_j=c_a(g)+c_a(-g)$.
+Then $T_a+\mathcal E_a=\sum_C\sum_jz_j^2$. The least integer sum of squares
+with fixed total $m_C$ is $\mathfrak b_s(m_C)$: moving one unit across a gap
+of at least two decreases it. Real Cauchy--Schwarz proves the second bound.
+Finally the commuting involutions $(b,c)\mapsto(c,b)$ and
+$(b,c)\mapsto(pa/b,pa/c)$ act freely on the original target pairs.
+The first cannot fix a pair because $R\nmid2b$; the second would make $pa$
+a square; their product would give $bc=pa$ and make $-1$ a square modulo
+$R\equiv3\pmod4$. Therefore $T_a$ is a multiple of four.
+\end{proof}
+
+The real bound retains all characters trivial on $B$, necessarily even, and
+subtracts the exact remaining collision energy. It does not infer target
+membership from a coarse occupied coset. If $[G:B]\le J$, then
+$L_{a,B}\le2JP_a-\mathcal E_a$. The proof of Theorem~\ref{thm:neg} therefore gives
+\[
+ \boxed{\sum_aL_{a,B_a}\le-p\log p/24
+ \quad\text{if }p\ge2^{20}J^3}
+\]
+for arbitrary adaptive per-shell choices of such subgroups. More generally the
+same proof retains any at most $J$ even-character modes: each squared character
+sum is at most $m_a^2$, and $T_a$ is twice the total even energy minus
+$\mathcal E_a$. This statement does not apply to zero-truncating negative
+bounds or to the integer refinement.
+
+At the actual prime $p=87481$, complete enumeration of all 21870 first-half
+shells gives $L_a\le0$ everywhere, even though 34 shells are occupied. The
+integer refinement with $B=G$ is likewise nonpositive throughout. Thus no
+nonnegative shell weighting of those bounds certifies this prime.
+
+At $p=944329$, the principal-only bounds again all fail, but choose
+\[
+ a=236098=2\cdot97\cdot1217,
+ \quad R=63,\quad B=\langle-1,13\rangle,
+\]
+\[
+ B=\{1,8,13,20,22,29,34,41,43,50,55,62\}.
+\]
+The original mass is 16, its collision energy is 16, and the index-three coset
+counts are $(8,8,0)$. Hence
+\[
+ \mathcal L_{a,B}=12+12-16=8=T_a,
+ \qquad L_a=-16/9,
+ \qquad L_{a,B}=16/3.
+\]
+With $\omega^2+\omega+1=0$, the retained nonprincipal coefficients are
+$8(1+\omega)$ and its conjugate. Each has squared absolute value 64.
+Both occupied coarse counts become zero modulo two; they retain their original
+nonempty fibres. An actual pair is $(1,p\cdot1217)$, returning
+\[
+ (h,r,s,\kappa)=(194,1217,1,18242038),
+\]
+\[
+ \frac4{944329}=\frac1{236098}+\frac1{3538955372}
+                       +\frac1{4067138774169717196}.
+\]
+A separate occupied shell at this same prime has $R=47$, $T_a=60$ and negative
+principal bound. Its group of order 46 has no proper subgroup containing $-1$
+of order greater than two. The terminal order-two observation is the exact
+target count, not a reduced universal certificate. A proper \emph{spectral}
+observation does work there. At the original $a=236094$, take
+$\chi(5)=\zeta_{23}$ modulo 47, so $\chi(-1)=1$. Form $C(X)$ by counting original
+divisors of $pa$ at their discrete logarithms modulo 23. The Laurent norm
+$Q(X)=C(X)C(X^{-1})\bmod(X^{23}-1)$ has
+\[
+ Q_0=192,\quad(Q_1,\ldots,Q_{11})=(187,176,159,138,116,92,70,50,33,21,14),
+ \quad Q_{23-j}=Q_j.
+\]
+Exact rational Taylor evaluation gives
+$1009<Q(\zeta_{23})<1010$ and $24<Q(\zeta_{23}^2)<25$.
+The certificate uses $\pi=16\arctan(1/5)-4\arctan(1/239)$,
+18 alternating terms for each arctangent and 18 cosine terms with their
+next-term bounds; argument uncertainty is bounded using the unit Lipschitz
+constant of cosine. The expanded proof gives the branch check and a second
+independent rational enclosure. With collision energy 132 and principal square 2304,
+retaining only $1,\chi^{\pm1},\chi^{\pm2}$ gives
+\[
+ T_a\ge\frac{2304+2Q(\zeta_{23})+2Q(\zeta_{23}^2)}{23}-132
+ >58,\qquad T_a\ge60.
+\]
+Direct enumeration gives 60. These are five of 23 even modes, not the exact
+terminal projection. The pair $(2,327)$ returns
+$(236094,780326438241,4772638766)$.
+The retained values and collision energy prove the bound; the omitted modes
+are the projector's explicit kernel coordinates. Their favourable signs have
+not been assumed.
+
+\section{Reproduction and scope}
+The standard-library package supplies complete original divisor/pair lists,
+source factorizations, subgroup tables, inverse marks, rational constants, and
+two code implementations. The small complete replay covers all 73798 shells
+at $p\equiv1\pmod4$ primes through 3000. In the 4519 hard primes through two
+million, the principal-only failures are exactly
+$87481,196561,944329,1915201$; integer/coset certificates return witnesses at all
+four. The separate checker exhausts every first-half shell of each failure.
+No finite census proves a universal inequality. The analytic bound above is
+proved separately, not inferred from those computations.
+
+The prescribed-prime positivity of $\sum_aT_a$ remains unproved here. The
+result rules out a specified absolute-value estimate and gives an exact
+integer replacement retaining useful nonprincipal information. It does not
+rule out signed arithmetic cancellation, and it makes no historical-priority,
+Lean-build, or independent-review claim.
+
+\begin{thebibliography}{2}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013).
+Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\url{https://arxiv.org/abs/1107.1010v6}. Coordinates: \S2, Propositions 2.2 and 2.6.
+\bibitem{Workbench} The Clankers. (2026, September 19).
+\emph{Complete-shell collision bounds for the Erd\H{o}s--Straus equation}
+[Turn 6 workbench and exact certificates]. Accompanying \texttt{core.tex},
+\texttt{verify.py}, and \texttt{check\_independent.py}; exact antecedent pair
+fibres retained from Turn 5, \S\S3--4.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,223 @@
+{
+  "checks": {
+    "C-free test not equivalent to no escape": 1,
+    "ET Type I equations": 107,
+    "ET Type II equations": 155,
+    "ET exterior sixth coordinate integral": 107,
+    "actual all-square failure closure": 13,
+    "actual escape path": 3,
+    "actual stabilizer in coefficient group": 28,
+    "all squares at mixed pair locally fail": 22,
+    "all valid mixed-pair squares counted": 1,
+    "all-edge factor supply": 4503,
+    "complete common divisor domain": 126,
+    "complete literal root list": 25,
+    "divisor normalization": 262,
+    "exact inclusion exclusion": 361,
+    "exact prime multiplicity over all sources": 18,
+    "explicit density lower bound": 361,
+    "exterior quotient": 107,
+    "finite corollary no small failed closed set": 13,
+    "finite range profile certificate": 1,
+    "full prime-power residual": 261,
+    "integer carry inverse": 1883,
+    "middle quotient": 155,
+    "mixed type exactly one orientation": 1047,
+    "mixed type mutual-or-empty": 606,
+    "no excluded root": 174,
+    "no upper-half middle state": 1895,
+    "noncoprime CRT negative example": 1,
+    "noncoprime carry digit": 1,
+    "ordered original divisor inverse": 262,
+    "original outgoing multiplicity parity": 4503,
+    "original source units and range": 4503,
+    "original target coefficient": 9006,
+    "paired source roots": 358,
+    "path terminal original middle hit": 1,
+    "positive ordered ES identity": 262,
+    "prefix constant proof": 193,
+    "prefix constants monotone": 200,
+    "prefix length exponential upper bound": 201,
+    "prime-power root equations": 54,
+    "quadratic discriminant root count": 721,
+    "reflected pair exact prefix bound": 126360,
+    "reflected root-pair discrepancy": 187,
+    "same-prime source gcd": 126,
+    "separate channel targets": 4503,
+    "simple root derivative": 108,
+    "smaller fixed-port closed sets excluded": 3,
+    "source nonresidue": 4503,
+    "unconditional six-vertex expansion": 3,
+    "uniform C-free prefix": 298,
+    "unit discriminant": 721
+  },
+  "cofactor_counts": {
+    "ambient_profiles": 1381117764,
+    "empty_boxes": 728,
+    "hard_profiles": 1915,
+    "nonresidue_profiles": 4,
+    "prime_profiles": 6,
+    "pruned_next_values": 16826308,
+    "range_profiles": 5922259,
+    "tree_nodes": 6455752,
+    "typed_profiles": 1915
+  },
+  "cofactor_enumeration_rerun": true,
+  "explicit_checks": 169313,
+  "negative_controls": [
+    "mixed canonical graph has no opposite edges",
+    "separate q and square congruences imply their product",
+    "a new prime guarantees local selector occupancy",
+    "multiplicity can be discarded in source count",
+    "base carry digit can be omitted",
+    "range boundaries may be rounded upwards",
+    "reflected-prefix error bound holds at every translated interval"
+  ],
+  "nonclaims": [
+    "No ES resolution",
+    "No universal all-square graph occupancy",
+    "No complexity bound for arbitrary integer factorization",
+    "No Lean build",
+    "No independent mathematical review"
+  ],
+  "pair_square_sources": 22,
+  "scan_totals": {
+    "E": 103,
+    "M": 146,
+    "divisor_vectors": 125666,
+    "edge_occurrences": 4510,
+    "port_edges": 4480,
+    "primes": 13,
+    "sources": 4460,
+    "vertices": 2698
+  },
+  "independent": {
+    "additional_replays": {
+      "root_fixtures": 360,
+      "scan_primes": 13,
+      "scan_source_sha256": "48b8cf2674908aa943b395c927cec36a6f045c8625e5ff543b8a2686a1aa1162",
+      "unpruned_small_domains": {
+        "2": {
+          "range_profiles": 11,
+          "raw_profiles": 40
+        },
+        "3": {
+          "range_profiles": 491,
+          "raw_profiles": 5828
+        },
+        "4": {
+          "range_profiles": 39492,
+          "raw_profiles": 1997772
+        }
+      }
+    },
+    "candidates": [
+      {
+        "cycle": [
+          61,
+          137,
+          1153,
+          383,
+          191
+        ],
+        "p": 4201
+      },
+      {
+        "cycle": [
+          409,
+          3457,
+          5743,
+          2293,
+          487
+        ],
+        "p": 12601
+      },
+      {
+        "cycle": [
+          661,
+          881,
+          7213,
+          5981,
+          5519
+        ],
+        "p": 26209
+      }
+    ],
+    "counts": {
+      "ambient_profiles": 1381117764,
+      "hard_profiles": 1915,
+      "nonresidue_profiles": 4,
+      "prime_profiles": 6,
+      "range_profiles": 5922259,
+      "typed_profiles": 1915
+    },
+    "example_counts": {
+      "base_candidates": 0,
+      "divisors": 246,
+      "sources": 22
+    },
+    "explicit_checks": 7042,
+    "imports_main_implementation": false,
+    "m": 5,
+    "range_profile_sha256": "5df2c1b996bf1562d3add24203a92928ffbd314d21c3c5700c97601ea6455ded",
+    "typed_sha256": "0548667a189273b9149819f6a6d4e8d778e51aebe62fdbc32cf00ad8ca8bdb5e"
+  },
+  "portable": {
+    "independent_cofactor_explicit_checks": 1960,
+    "example_explicit_checks": 195,
+    "normal_optimized_example_identical": true
+  },
+  "execution_receipts": {
+    "run_normal.json": {
+      "sha256": "7237109782c92b64171f45f5cc80de384150b941b413818c5bd17d3e22b99512",
+      "returncode": 0
+    },
+    "run_optimized.json": {
+      "sha256": "9f47218bdf4e74a6b10877ceefe94614a1cbc6e694d33338c553f593bdfb7686",
+      "returncode": 0
+    },
+    "run_independent.json": {
+      "sha256": "4c4fc09e5b4af7f25dd49b4a081d242756a842c9c2734e75753f89f9c6c65019",
+      "returncode": 0
+    },
+    "run_public.json": {
+      "sha256": "f4abb42cb6fa54ad8ff420dbf65d1cdbfc092abcfe6739bc7de00245553f50f1",
+      "returncode": 0
+    }
+  },
+  "source_frozen_hashes": {
+    "verify.py": "af967908f559605c0870946780f22b5279b22c4d15a65489baf9b2e747b3b4b3",
+    "cofactor_check.py": "619fe33daaca2f720123484f7c945da182859a891de7aa39f913e0f7d28556dc",
+    "check_independent.py": "ac511f4a922f206b235a242dedb00787994d1bb12b475a7a3dc86b1e3949f19b",
+    "verify_examples.py": "6f1d319b5be0fae858ff6f738633dc0367c548fe3fec3f7307ae46e0d75cb8dd",
+    "core.tex": "b75cfd41a508af54230ec3518a9aa06de525fc9c97a9bbc4a5c3dce9428f6ba0",
+    "preprint.tex": "f05122ba31dc20694f2f9c3ccde03df3e746ff722cf35870231285d1fc5db180",
+    "references.tex": "fa22caeddfeb855825be3fb7df8c91a5056e0c17b5a3e8cbe2d6c01cc1274fff",
+    "workbench.tex": "a00fd9fd5fbc8713e27c7445ecd57cfbbdaa069b583d9c8134e524d524036626"
+  },
+  "publication": {
+    "status": "published_draft_unmerged",
+    "date": "2026-09-18",
+    "repository": "KokunoYumeto/erdos-straus-foundation",
+    "pull_request": 19,
+    "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/pull/19",
+    "branch": "research/turn04-square-expansion-20260918",
+    "commit": "4b6bb0f187fa44bb62fc8c51e996f05dfc90e2d7",
+    "tree": "93cc509fbf3172c7ab608bbfb9e31ac811648c2e",
+    "parent": "2e75574e8bdc9cc3f8584002ee35f10e475ae09c",
+    "created_at": "2026-09-18T21:06:08Z",
+    "files_added": 6,
+    "additions": 637,
+    "deletions": 0,
+    "remote_blobs_read_back": {
+      "README.md": "aa881f766ec24811c94ef9dc2bb5b7c9fd4b422b",
+      "check_independent.py": "6b7f137bae92be8a2ec312aba124d6859c89a0db",
+      "cofactor_check.py": "4e49266a24ecc061910d8eda41bead204a4a43ff",
+      "input.json": "fba10329dc5241c502627a66b6ec17a9935200a5",
+      "preprint.tex": "39e7df4847bc31a7331b6ceb7f66bfc329622a21",
+      "verify_examples.py": "a6455dafee200ab63aa0f45d3f2eb2a02495beac"
+    },
+    "all_six_match_local_publication_copy": true,
+    "scope": "Standalone four-page proof, complete two-implementation finite cofactor verification, and portable original examples. Full local workbench/root/graph replay and 21-map register are additionally delivered in the ZIP."
+  }
+}

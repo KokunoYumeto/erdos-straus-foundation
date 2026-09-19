@@ -1,0 +1,272 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=20mm]{geometry}
+\usepackage{lmodern,mathrsfs,amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\title{A closed failure component in the\protect\\Erd\H{o}s--Straus shifted-factor system}
+\author{The Clankers}
+\date{18 September 2026}
+\begin{document}\maketitle
+\begin{abstract}
+We retain every factor edge and both divisor channels in the universal
+external-nonresidue graph. We give an exact finite reachability criterion and
+an integral inverse for its cycles. The hard prime 2521 has a closed seven-cycle
+whose complete local selectors all fail. Thus a proposed local-cycle rescue
+principle is false, although ES holds at that prime. Composite shifts, original
+multiplicities and the same-prime repair are explicit. No global ES result or
+historical-priority claim is asserted.
+\end{abstract}
+
+\paragraph{The original source.}
+Let $p$ be prime in $1,121,169,289,361,529\pmod{840}$ and put
+\[
+ V=\{q<p:q\text{ prime},(q/p)=-1\},\quad
+ \sigma_q=\begin{cases}1&q=3\pmod4,\\3&q=1\pmod4,\end{cases}
+ \quad R_q=\sigma_q q,\quad A_q=(p+R_q)/4.
+\]
+Here $V\ne\varnothing$, $p/4<A_q<p$, $\gcd(pA_q,R_q)=1$, and
+$(A_q/p)=-1$. A nonresidue integer below $p$ supplies a nonresidue prime;
+the hard-prime characters of $2,3,5,7$ are positive. The source statements
+follow from $4A_q\equiv\sigma_q q\pmod p$ and $\sigma_q\in\{1,3\}$.
+Hence \emph{every} nonresidue prime factor $r\mid A_q$ lies in $V\setminus\{q\}$.
+Keep every edge $q\to r$, with weight $v_r(A_q)$; their sum at each vertex is odd.
+The basic graph is inherited from \cite[\S\S1--7]{Graph}; selecting just one
+factor would lose the complete reachability question.
+
+Write $A_q=\prod_t t^{e_t}$ and retain all $\beta_t\in[-e_t,e_t]$.
+The source word and divisor are
+$v=\prod t^{\beta_t}\pmod{R_q}$ and $u=\prod t^{e_t+\beta_t}$.
+The complete gates are
+\[
+ E_q=\{u\mid A_q^2:R_q\mid4u+1\},\qquad
+ M_q=\{u\mid A_q^2:R_q\mid u+A_q\}.
+\]
+Their targets are $-p^{-1}$ and $-1$; inversion of the same exponent vector
+adds the equivalent exterior target $-p$, not a third channel.
+The original normalization is
+\[
+ d=\gcd(A_q,u),\quad(h,r,s)=(d^2/u,u/d,A_q/d).
+\]
+A gate hit gives
+\[
+ E:\ \kappa=(pr+s)/R_q,\quad(A_q,hs\kappa,phr\kappa),
+ \qquad
+ M:\ \lambda=(r+s)/R_q,\quad(A_q,phs\lambda,phr\lambda).
+ \tag{1}
+\]
+Valuations prove $A_q=hrs$, $u=hr^2$, and coprimality. Units give integral
+quotients; clearing reciprocals proves $4/p$. The ordered inverses are
+$u=A_q^2/(R_qy-pA_q)$ in E and $u=pA_q^2/(R_qy-pA_q)$ in M.
+These are inherited Type I/II coordinates \cite[\S2]{ET}.
+Auxiliary $A_q>p/2$ vertices remain: M is then impossible, while a passing E
+state returns to the first-half atlas by the exact switch
+$(h,r,s,\kappa)\mapsto(h,\kappa,s,r)$, swapping its first two denominators.
+
+\begin{theorem}[Complete closed-failure test]
+Let $\mathscr H=\{q:E_q\cup M_q\ne\varnothing\}$, $U_0=V\setminus\mathscr H$,
+and $U_{j+1}=\{q\in U_j:N^+(q)\subseteq U_j\}$, using every outgoing factor.
+The terminal set $U$ is reached after at most $|V|$ iterations and is the
+largest closed set of locally failed vertices. A vertex outside $U$ has a path
+to an actual hit of length at most $|V|-1$. $U$ is nonempty exactly when a sink
+strongly connected component has only failed vertices.
+\end{theorem}
+\begin{proof}
+Every strict iteration removes a vertex. Every closed failed set remains in
+all $U_j$. Removed vertices have a successor removed earlier, furnishing a
+strictly decreasing removal rank and a terminating hit path. Conversely,
+backwards induction removes every vertex on a hit path; its shortest version
+has no repeated vertex. A nonempty finite closed set has a bottom strong
+ component, which remains closed in the full graph. Conversely a failed sink
+ component survives every removal. The standard strong-component framework is
+ recorded in \cite[Theorems 3.10 and 5.2]{Tarjan}; the finite closure argument
+ above is proved directly for the present arithmetic graph.
+\end{proof}
+No claimed efficient factorization or prime distribution theorem is involved:
+a complete sieve, factorization of each $A_q<p$, and finite square-divisor boxes
+terminate. There are fewer than $2p^2$ divisor candidates, as a crude bound.
+
+\newpage
+\begin{theorem}[An actual closed failure component]
+At $p=2521$, the complete graph contains the sink seven-cycle
+\[
+ \boxed{11\to211\to683\to89\to17\to643\to113\to11.}
+ \tag{2}
+\]
+Every vertex in this component has exactly the displayed successor, and both
+of its complete local selectors fail.
+\end{theorem}
+\begin{proof}
+All displayed numbers are prime by complete trial division. The source data are
+\[
+\begin{array}{r|r|l|r|r}
+ q&R_q&A_q&\text{next nonresidue prime}&\tau(A_q^2)\\\hline
+11&11&633=3\cdot211&211&9\\
+211&211&683&683&3\\
+683&683&801=3^2\cdot89&89&15\\
+89&267&697=17\cdot41&17&9\\
+17&51&643&643&3\\
+643&643&791=7\cdot113&113&9\\
+113&339&715=5\cdot11\cdot13&11&27.
+\end{array}                                                \tag{3}
+\]
+The three targets $(-1,-p,-p^{-1})$, in this order of vertices, are
+\[
+ (10,9,5),\ (210,11,96),\ (682,211,560),\ (266,149,224),
+ \ (50,29,44),\ (642,51,290),\ (338,191,71).
+\]
+The complete products of the original centered factor intervals have supports
+\begin{align*}
+W_{11}&=\{1,2,3,4,6,7,8\},&W_{211}&=\{1,38,50\},\\
+W_{683}&=\{1,3,9,76,89,110,118,228,238,267,307,330,485,492,617\},\\
+W_{89}&=\{1,17,41,46,110,163,172,238,254\},&W_{17}&=\{1,28,31\},\\
+W_{643}&=\{1,7,92,108,113,126,148,239,387\},\\
+W_{113}&=\{1,5,11,13,19,32,37,53,55,65,68,70,142,143,160,185,206,\\
+&\hspace{22mm}209,214,232,247,265,266,275,313\}.
+\end{align*}
+Every target is absent from its support. The factorizations and exact character
+tests give no other outgoing nonresidue prime. Thus the component has no exit.
+The 75 original divisor vectors are not replaced by their 71 distinct support
+positions; their full integer coefficients are retained in the certificate.
+\end{proof}
+
+The effective indices $|\langle-1,2,t:t\mid A_q\rangle/\operatorname{Stab}(W_q)|$
+are respectively
+\[
+10,210,682,176,32,642,224;
+\]
+all seven stabilizers are trivial. The complete graph has 187 vertices, four
+occupied vertices, and 107 trapped vertices. Its unique sink is (2).
+Thus neither arbitrary factor choice nor starting at the least nonresidue
+prime forces reachability of a hit.
+
+This is not an ES counterexample:
+\[
+ \frac4{2521}=\frac1{636}+\frac1{5611746}+\frac1{70588}
+\]
+is the original M state $R=23,u=8,(h,r,s,\lambda)=(2,2,159,7)$.
+A same-prime source expansion also repairs (2) explicitly. For $q=11$, allow
+the separately marked quadratic-residue multiplier 5 instead of 1:
+\[
+ R=55,\ A=644=2^2\cdot7\cdot23,\ u=16,
+ \quad(h,r,s,\lambda)=(1,4,161,3),
+\]
+\[
+ \boxed{\frac4{2521}=\frac1{644}+\frac1{1217643}+\frac1{30252}.}
+\]
+The old and new $A$ values are coprime. These are new available divisor words,
+not a relabelling of an old absent coefficient. No universal assertion about
+this enlarged multiplier family is made.
+
+ A primitive index-six vertex can also feed a closed failed component:
+\[
+ p=3361:\quad31\to53\to11\to281\to1051\to1103\to31,
+\]
+ with effective indices $6,104,10,560,1050,1102$. The full source includes the
+ known saturated inactive factor $2^4$ at the first vertex. Growth of defect
+ index is not a well-founded escape mechanism. The index-six normal-form
+ antecedent is Bryan's exact combined-target analysis \cite[\S\S3--8]{BryanSix};
+ the closed-component calculation here retains the complete successor graph and
+ local selector data rather than attributing those new finite checks to that source.
+
+\newpage
+\paragraph{The full composite transition.}
+For every edge retain $m=v_r(A_q)$, $B=A_q/r^m$, and $c=r^{m-1}B$.
+Then
+\[
+ p+\sigma_q q=4cr,\qquad
+ \boxed{4A_r=(4c+\sigma_r)r-\sigma_q q.}                  \tag{4}
+\]
+The successor inverse-exterior target projects to $\sigma_q q\pmod r$.
+If $r\equiv1\pmod4$, the full target modulo $3r$ is the CRT pair
+\[
+ \boxed{-p\longleftrightarrow(2,\sigma_q q\bmod r).}       \tag{5}
+\]
+Its inverse is $ar(r^{-1}\bmod3)+3b(3^{-1}\bmod r)$ for pair $(a,b)$.
+When $\sigma_q=3$, the integer $3q$ is a nonunit modulo $3r$:
+one must retain the correction $3q-4cr$, rather than cancel three.
+Reciprocity on every original prime factor gives $(t/R_q)=(t/p)$.
+For an outgoing factor,
+\[
+ (r/q)=-1\ (q=3\pmod4),\qquad
+ (r/q)=-(-3/r)\ (q=1\pmod4).
+\]
+These imply no two-cycle of two $3\pmod4$ primes, but do not exclude (2).
+
+Writing $\Delta=A_r-A_q$, the exact common word domain is
+\[
+ \operatorname{Div}(A_q^2)\cap\operatorname{Div}(A_r^2)
+ =\operatorname{Div}(\gcd(A_q,A_r)^2).
+\]
+On it, $\beta_t^{(r)}=\beta_t^{(q)}+v_t(A_q)-v_t(A_r)$,
+$g_E'=g_E$ and $g_M'=g_M+\Delta$. The gate modulus changes as well.
+No homomorphism between the two unit groups or their period quotients follows
+from (4). In particular, the true M hit $u=1$ on $19\to13$ at $p=1801$
+remains an available divisor but loses its gate when $A$ changes from 455 to 460.
+
+\begin{theorem}[Exact cycle coordinates]
+For a simple cycle $q_0,\ldots,q_{l-1}$ with
+$p+\sigma_iq_i=4c_iq_{i+1}$, put $D=4^l\prod c_i$ and $S=\prod\sigma_i$.
+For each starting index $i$, compose the affine equations, obtaining
+$Dq_i=Sq_i+pT_i$. Then
+\[
+ \boxed{h=\gcd_iT_i,\qquad p=(D-S)/h,\qquad q_i=T_i/h.}   \tag{6}
+\]
+ An ordered coefficient word therefore encodes at most one such prime cycle.
+\end{theorem}
+\begin{proof}
+Compute a prefix by $D_0=S_0=1,T_0=0$ and
+$D_{j+1}=4c_{i+j}D_j$, $S_{j+1}=\sigma_{i+j}S_j$,
+$T_{j+1}=\sigma_{i+j}T_j+D_j$. Induction gives the stated affine composition.
+Since $p\ne q_i$ are prime, $p\mid D-S$; also $D>S$. Put $h_0=(D-S)/p$.
+Then $T_i=h_0q_i$. The distinct cycle primes have common gcd one, so $h=h_0$.
+Conversely, (6) gives candidates; primality, the original ranges, factor edges,
+types and complete local gates must all be verified. This is a finite inverse,
+ not an assertion that arbitrary coefficient words pass those tests.
+ \end{proof}
+ This affine cycle inverse is the all-type continuation of the primitive sextic
+ recurrence in \cite[\S\S2--4]{BryanChain}; the coefficients, vertex types and
+ converse checks above are stated explicitly because the presentations are not
+ identified without those maps.
+For (2), $D=8252375040$, $S=27$, and $h=3273453$, so $D-S=2521h$ exactly.
+The contraction of the affine updates is consistent with the failed cycle.
+
+\paragraph{Finite scope and the next implication.}
+Two standard-library implementations agree on every graph for the 137 hard
+primes through 50,000: 188,255 vertices, 191,789 distinct edges, 8,357,211
+original divisor candidates, and 1,709 occupied vertices. Thirty-nine primes
+have closed failure traps. The least hard prime with such a trap is 2521.
+The code also exhausts 38,636 small directed-graph/hit-mask fixtures. These
+are finite checks, not a uniform prime-coverage theorem or independent review.
+The proposed universal local closure is false. A sufficient global target
+would instead prove that not \emph{every} vertex is trapped, or supply a proved
+escape through an explicitly enlarged original source. Neither implication
+is inserted as a hypothesis here.
+
+\begingroup\footnotesize
+\begin{thebibliography}{6}
+\bibitem{Graph} Bryan, C. (2026, August 15). \emph{External-nonresidue factor
+cycle}. \texttt{chasebryan/centl}, \texttt{EXTERNAL-NR-FACTOR-CYCLE.md}, \S\S1--8;
+commit \texttt{42508684c4386b575d7b52e763565345a76bcb9e}. Basic graph antecedent.
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc.,94}(1),
+50--105. arXiv:1107.1010, \S2, Propositions 2.2 and 2.6.
+\bibitem{BryanSix} Bryan, C. (2026, August 15). \emph{Exact index-six normal form
+for the combined FAB targets}. \texttt{chasebryan/centl},
+\texttt{FAB-INDEX6-COMBINED-DEFECT.md}, \S\S3--8; commit
+\texttt{42508684c4386b575d7b52e763565345a76bcb9e}, blob
+\texttt{81f984e6961c2b6cf4157bf8089305a5b2dbb59e}.
+\bibitem{BryanChain} Bryan, C. (2026, August 15). \emph{Primitive sextic defect
+chains and the neighbor-square recurrence}. Same repository and commit,
+\texttt{ES-PRIMITIVE-SEXTIC-CHAIN.md}, \S\S2--4; blob
+\texttt{523f133a65771fdbd5a7e5cfecc7418798dd8c35}.
+\bibitem{Tarjan} Tarjan, R. E., \& Zwick, U. (2022). \emph{Finding strong
+components using depth-first search}. arXiv:2201.07197v3, Theorems 3.10 and 5.2.
+The original algorithm appeared in \emph{SIAM J. Comput. 1}(2), 146--160 (1972),
+doi:10.1137/0201010.
+\bibitem{Prior} The Clankers (2026). \emph{Turn 1: joint E/M failure structure}.
+Complete predecessor proofs and hashes accompany the workbench. Its effective
+index-six classification is distinguished from the earlier ambient-index result.
+\end{thebibliography}
+\endgroup
+\end{document}

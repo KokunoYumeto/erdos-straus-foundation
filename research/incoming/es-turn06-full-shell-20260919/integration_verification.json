@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-19",
+  "status": "passed",
+  "source_archive": {
+    "name": "es_turn6_full_shell_bundle.zip",
+    "sha256": "4f78ef7ed3288d94447064d02dd6bbadb162ccda1bdb05554a4ac863435740e5"
+  },
+  "replay": {
+    "normal_success": true,
+    "optimized_success": true,
+    "normal_optimized_mathematical_json_identical_after_line_ending_normalization": true,
+    "main_checks": 1037513,
+    "independent_checks": 928678,
+    "small_atlas": {
+      "primes": 211,
+      "shells": 73798,
+      "original_divisor_vectors": 1877004,
+      "E_states": 5700,
+      "M_states": 5268,
+      "target_pairs": 70596
+    },
+    "hard_census": {
+      "bound": 2000000,
+      "hard_primes": 4519,
+      "principal_certificates": 4515,
+      "exact_misses": [87481, 196561, 944329, 1915201]
+    },
+    "spectral_intervals": [[1009, 1010], [24, 25]]
+  },
+  "documents": {
+    "workbench_pages": 9,
+    "preprint_pages": 4,
+    "all_rebuilt": true
+  },
+  "independent_derivation": {
+    "status": "passed",
+    "report_sha256": "09e63fc630c2d8eca174d5ecd4a4f02c310707fce0ef7a6817774cbcd2c32b43",
+    "checked": [
+      "pair-source equivalence and complete return",
+      "free Klein-four action",
+      "principal obstruction and exact constants",
+      "adaptive and fixed-sublinear spectral quantifiers",
+      "integer collision and complement refinements",
+      "five-mode p=944329,R=47 certificate"
+    ],
+    "result": "No sign, factor, domain, threshold or quantifier error found."
+  },
+  "wording": "Pointwise failure means a theorem at each prescribed prime after summing all first-half shells, not negativity at every individual shell.",
+  "scope": "The universal complete-pair positivity assertion remains unproved. Finite certificate comparisons are not new overall ES verification. No Lean build, historical-priority determination or independent human review."
+}

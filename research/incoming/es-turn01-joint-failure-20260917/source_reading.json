@@ -1,0 +1,83 @@
+{
+  "ES_main": "2e75574e8bdc9cc3f8584002ee35f10e475ae09c",
+  "centl_main": "42508684c4386b575d7b52e763565345a76bcb9e",
+  "date": "2026-09-17",
+  "nonclaims": [
+    "No raw full-session JSONL audit in this turn",
+    "No entire workbench re-audit",
+    "No universal ES theorem",
+    "No new prime coverage",
+    "No independent mathematical review",
+    "No Lean build",
+    "No remote PR created"
+  ],
+  "novelty_scope": {
+    "queries": [
+      "Kneser two target Erdos Straus index six",
+      "FAB Kneser combined index six divisor defect",
+      "Erdos Straus stabilizer index eight"
+    ],
+    "result": "Existing prime-shift index-six result found and explicitly attributed. No historical-priority determination. The present proofs give arbitrary-modulus target collisions, all factor cuts, effective-index<=8 normal forms, inactive saturation, and fine coefficient/cocycle comparison."
+  },
+  "sources": [
+    {
+      "author": "chasebryan",
+      "blob": "3476f62c8d91dc8eb995b747d2405ec38764ceee",
+      "path": "research/erdos-straus/FAB-KNESER-DIVISOR-DEFECT.md",
+      "scope": "full note supplied/read; one-target predecessor, not a joint no-hit theorem"
+    },
+    {
+      "author": "chasebryan",
+      "blob": "41e7531957b3af6e187012be10c4fb1da1a917d5",
+      "path": "research/erdos-straus/FAB-TWO-TARGET-KNESER.md",
+      "scope": "full fetched note, particularly sections4-9; existing prime-shift three-target budget"
+    },
+    {
+      "author": "chasebryan",
+      "blob": "81f984e6961c2b6cf4157bf8089305a5b2dbb59e",
+      "path": "research/erdos-straus/FAB-INDEX6-COMBINED-DEFECT.md",
+      "scope": "full fetched note, sections3-8; existing ambient-index-six primitive exceptional factor"
+    },
+    {
+      "author": "chasebryan",
+      "blob": "523f133a65771fdbd5a7e5cfecc7418798dd8c35",
+      "path": "research/erdos-straus/ES-PRIMITIVE-SEXTIC-CHAIN.md",
+      "scope": "lines1-180 requested; consecutive-failure warning, not imported as a universal graph theorem"
+    },
+    {
+      "author": "Elsholtz and Tao",
+      "scope": "Section2 inherited TypeI/II parameterization; all used identities re-proved",
+      "source": "arXiv:1107.1010",
+      "year": 2013
+    },
+    {
+      "author": "DeVos",
+      "scope": "Theorem1, classical Kneser addition; present strict-growth proof given directly",
+      "source": "arXiv:1303.3539",
+      "year": 2013
+    },
+    {
+      "author": "The Clankers",
+      "blob": "41aecae338ccbd7a850a4e680b9defec2241eeb8",
+      "path": "research/continuation-2026-09-12/reconstructed/boolean_cyclotomic.tex",
+      "scope": "Theorem bp-first-half and the original ordered-code theorem; the present source re-proves every used return identity"
+    },
+    {
+      "author": "The Clankers",
+      "path": "research/incoming/es-actual-factor-socle/core.tex",
+      "scope": "Actual-stabilizer concentration and archived Star--Kneser lineage; nearby antecedent interface, not a replacement for the present joint theorem"
+    },
+    {
+      "author": "The Clankers",
+      "path": "research/incoming/split-box-energy-20260912/preprint.tex",
+      "scope": "Exact target pullback and inverse fibres; nearby antecedent interface with its original scope retained"
+    },
+    {
+      "author": "The Clankers",
+      "blob": "78537c3d0d928a9b534859bff9910ce498e13833",
+      "scope": "supported-zero and original-relation quotient convention only",
+      "source": "original SplitZero BR1-BR2"
+    }
+  ],
+  "task": "Turn 1: complete joint E/M failure structure"
+}

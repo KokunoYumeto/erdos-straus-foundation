@@ -1,0 +1,487 @@
+\section{Turn 5: what has and has not been forced}
+The preceding square-source theorem supplies actual new nonresidue factors at a
+prescribed hard prime, but does not imply that their original exterior or middle
+coefficient is occupied. This tranche gives a precise channel-separation theorem,
+a common integer pair source with its complete fibres, and a reciprocal-source
+comparison. A direct original-divisor involution and sharp joined windows provide
+a positive channel coupling; a complete six-vertex example records its precise
+limits within the expanded source system. It also gives a finite counterexample to the proposal that appending
+the reciprocal source rescues every locally empty square source. None of these
+results is a proof or counterexample to Erd\H{o}s--Straus (ES).
+
+The Type I/II parametrizations and the reciprocal master equation are antecedents
+\cite[\S2]{ET}\cite[\S\S1--4]{BryanDual}. They are rederived below in the present
+marking. No historical-priority claim is made. The present arguments distinguish the exact arithmetic obstruction, the
+fibre-normalized count, and the missing universal lower bound. The recovered
+interrupted Turn 5 draft has been rechecked and is extended by the channel-window
+and six-vertex results below; no earlier execution record is inferred from it.
+
+\section{Original source and a channel-separation theorem}
+Let $p\equiv1\pmod4$ be prime, $p/4<a<p$, $R=4a-p>0$, and
+$\gcd(pa,R)=1$. The first-half atlas additionally requires $a<p/2$; square-source
+auxiliary vertices can lie above that bound. Factor $a=\prod_\ell\ell^{e_\ell}$.
+The original coordinates are
+\[
+ f_\ell\in[0,2e_\ell]_{\mathbb Z},\qquad
+ u=\prod_\ell\ell^{f_\ell}\mid a^2,\qquad
+ \beta_\ell=f_\ell-e_\ell.                                  \tag{1}
+\]
+Both maps are bijective with their displayed prime-valuation inverses. The channels are
+\[
+ E:\ R\mid4u+1,\qquad M:\ R\mid4u+p\iff R\mid u+a.           \tag{2}
+\]
+With $d=\gcd(a,u)$ put $h=d^2/u$, $r=u/d$, $s=a/d$. Prime valuations give
+$a=hrs$, $u=hr^2$, $\gcd(r,s)=1$ and positivity. The returns are
+\[
+ E:\ \kappa=(pr+s)/R,\quad (x,y,z)=(a,hs\kappa,phr\kappa),
+\]
+\[
+ M:\ \lambda=(r+s)/R,\quad(x,y,z)=(a,phs\lambda,phr\lambda). \tag{3}
+\]
+The gates imply the integer quotients; multiplication verifies $4/p$.
+The ordered inverses are $u=a^2/(Ry-pa)$ and $u=pa^2/(Ry-pa)$ respectively.
+These identities are inherited \cite[Propositions 2.2 and 2.6]{ET}.
+
+Write $\chi_p$ for the quadratic character modulo $p$ and $(\cdot/R)$ for the
+Jacobi symbol, including composite $R$.
+\begin{theorem}[Exact character separation]\label{thm:sign}
+For every original divisor $u$,
+\[
+ (u/R)=\chi_p(u).
+\]
+A genuine E hit has $\chi_p(u)=\chi_p(h)=-1$. A genuine M hit has
+\[
+ \chi_p(u)=\chi_p(h)=-\chi_p(a).                            \tag{4}
+\]
+In particular, on every negative source $\chi_p(a)=-1$, E requires a nonresidue
+original divisor and M requires a residue original divisor.
+\end{theorem}
+\begin{proof}
+For an odd prime $\ell\mid a$, reciprocity and $R\equiv-p\pmod\ell$ give
+\[
+ (\ell/R)=(-1/\ell)(R/\ell)=(-1/\ell)(-p/\ell)
+ =(p/\ell)=(\ell/p).
+\]
+If $2\mid a$, then $R\equiv-p\pmod8$, and the supplementary law gives the same
+identity for 2. Multiplication proves the assertion for all original $u$.
+In E, $u\equiv-4^{-1}\pmod R$, whose Jacobi symbol is $-1$ since $R\equiv3\pmod4$.
+In M, $u\equiv-p4^{-1}$, giving $-(p/R)$. But $(p/R)=(a/R)=\chi_p(a)$.
+Finally $u=hr^2$ and $p\nmid r$ give the assertions about $h$.
+\end{proof}
+The reciprocity input is classical \cite[\S6.4]{Hatcher}. No sign is inferred
+from a positive real value or from the name of a channel.
+
+For actual square sources $a=(p+\sigma_q qt^2)/4<p$, with $q$ a nonresidue
+prime, $\sigma_q\in\{1,3\}$ as in Turn 4 and $p$ hard, $\chi_p(a)=-1$.
+Consequently a common-$u$ map between two such sources cannot carry an E hit to an
+M hit. More generally a rational square ratio $u'/u$, prime to $p$, preserves the
+character and cannot cross the channels. A crossing must change an odd total
+exponent on nonresidue prime coordinates. This is a necessary condition, not a
+sufficient target test.
+
+The negative-source restriction is essential. On an arbitrary original shell,
+\[
+ E_a\cap M_a=\varnothing\quad\text{if }R\nmid p-1,
+ \qquad E_a=M_a\quad\text{if }R\mid p-1.                  \tag{4a}
+\]
+This follows by subtracting the two gate numerators. In the second case
+$\chi_p(a)=(p/R)=1$. Equality of the two gate sets does not assert that either
+is nonempty. At the hard prime $p=1009$, however, $R=3,a=253,u=11$ is in both.
+Its two tagged returns are $(253,87032,3818056)$ and
+$(253,2042216,88792)$. The two states must not be merged because their original
+divisor happens to coincide. The complete-shell target retains positive- as
+well as negative-character sources; the nonresidue-factor graph alone does not.
+
+The complete available character counts, before any gate, are
+\[
+ N_\pm(a)=\frac12\left(\prod_\ell(2e_\ell+1)
+ \ \pm\!\prod_{\chi_p(\ell)=1}(2e_\ell+1)\right).          \tag{5}
+\]
+Indeed a nonresidue factor contributes $\sum_{f=0}^{2e}(-1)^f=1$ to the signed
+count, while a residue factor contributes $2e+1$. Thus both sign inventories can
+be nonempty while both target coefficients vanish.
+
+\paragraph{Exact bounded crossing at one source.}
+For a specified rational ratio $\rho=\prod\ell^{\delta_\ell}$ supported on the
+original prime set, the map $f\mapsto f+\delta$ has exactly the domain
+\[
+ \max(0,-\delta_\ell)\le f_\ell\le
+ \min(2e_\ell,2e_\ell-\delta_\ell)\quad\hbox{for every }\ell. \tag{6}
+\]
+Its inverse subtracts $\delta$. On this domain E maps to M if
+$\rho\equiv p\pmod R$; M maps to E if $\rho\equiv p^{-1}\pmod R$.
+Conversely either channel crossing forces that residue equation, since the
+original $u$ is a unit modulo $R$. These are exact domains and maps, not an
+assertion that such a ratio is always available.
+
+\input{channel_windows.tex}
+
+\section{One common integer pair source for the two channels}
+For this section $R\ge3$ is odd and $N\ge1$ has $\gcd(pN,R)=1$ and $p\nmid N$;
+$N$ need not be an actual distinguished denominator. Define
+\[
+ \mathcal P_R(N)=\{(b,c):b,c\mid pN,\ R\mid b+c\},\qquad
+ T_R(N)=|\mathcal P_R(N)|.                                \tag{7}
+\]
+Let $\mathcal F_R(N)$ be the disjoint union of ordered coprime pairs $(r,s)$,
+$rs\mid N$, with labels
+\[
+ M:R\mid r+s,\qquad E:R\mid pr+s,
+\]
+and let $F_R(N)$ denote its cardinality. Only at $N=a$, $4a=p+R$, is this the
+original ES state set. At auxiliary $N$ the label records the congruence, not a
+spurious ES solution with $4N=p+R$.
+
+\begin{theorem}[Exact pair fibres]\label{thm:fibre}
+Every element of $\mathcal F_R(N)$, with $h=N/(rs)$, has exactly
+$2\tau_{\mathrm{div}}(h)$ preimages in $\mathcal P_R(N)$. The complete inverse fibres are
+\[
+ M:\quad (b,c)=(p^\varepsilon dr,p^\varepsilon ds),\quad
+ \varepsilon\in\{0,1\},\ d\mid h;                         \tag{8}
+\]
+\[
+ E:\quad (b,c)=(pdr,ds)\ \hbox{or}\ (ds,pdr),\quad d\mid h. \tag{9}
+\]
+In particular
+\[
+ T_R(N)=2\sum_{(c,r,s)\in\mathcal F_R(N)}\tau_{\mathrm{div}}(N/(rs)),
+\quad
+ F_R(N)=\sum_{(b,c)\in\mathcal P_R(N)}\frac1{2\tau_{\mathrm{div}}(h(b,c))}. \tag{10}
+\]
+\end{theorem}
+\begin{proof}
+Write $g=\gcd(b,c)$, $x=b/g$, $y=c/g$. Since $b,c\mid pN$ and $p\nmid N$,
+the exponent of $p$ in each is at most one. If $p$ divides neither $x$ nor $y$,
+put $(r,s)=(x,y)$ and write $g=p^\varepsilon d$. The original lcm condition
+$\operatorname{lcm}(b,c)\mid pN$ gives $drs\mid N$, and $R\mid b+c$ gives
+$R\mid r+s$ because $p,d$ are units. This is precisely (8).
+If exactly one of $x,y$ contains $p$, remove that one factor and designate the
+result $r$ and the other side $s$. Now $g=d$, $drs\mid N$, and $R\mid pr+s$.
+This gives (9), including its two distinct orderings. They cannot overlap with
+(8), which has equal $p$-valuations on its two coordinates. All reconstruction
+maps are literal inverses. At an actual shell, $u=hr^2$ is the original divisor
+and (3) returns its denominators.
+\end{proof}
+Here $\tau_{\mathrm{div}}(n)=|\operatorname{Div}(n)|$ is the divisor-count function; it is not the absent-support symbol $\tau$ of SplitZero. Likewise $\mu_{\mathrm M}$ below denotes the M\"obius function, not the original residue-count array.
+
+The common-prime bit in M and the side-of-$p$ bit in E are different markings.
+They are not discarded when taking a greatest common divisor.
+
+Put
+\[
+ B_0=\#\{b,c\mid N:R\mid b+c\},\qquad
+ B_1=\#\{b,c\mid N:R\mid b+pc\}.
+\]
+The four $p$-colours have matrix
+\[
+ \begin{pmatrix}B_0&B_1\\B_1&B_0\end{pmatrix},\qquad
+ T_R(N)=2(B_0+B_1).                                      \tag{11}
+\]
+At an actual shell $B_0=\sum_M\tau_{\mathrm{div}}(h)$ and $B_1=\sum_E\tau_{\mathrm{div}}(h)$. The matrix
+need not be positive semidefinite: positive integer entries do not imply that
+its difference eigenvalue $B_0-B_1$ is nonnegative.
+
+\section{M\"obius removal of the exact common-divisor multiplicity}
+\begin{theorem}[Complete primitive count]\label{thm:mobius}
+With (7),
+\[
+ \frac12T_R(N)=\sum_{d\mid N}F_R(N/d),\qquad
+ \boxed{F_R(N)=\frac12\sum_{d\mid N}\mu_{\mathrm M}(d)T_R(N/d).}        \tag{12}
+\]
+At an actual first-half shell $F_R(a)=|E_a|+|M_a|$; consequently the complete
+primewise count is exactly
+\[
+ \boxed{\mathcal C_p=\frac12\sum_{p/4<a<p/2}\ \sum_{d\mid a}
+      \mu_{\mathrm M}(d)T_{4a-p}(a/d).}                               \tag{13}
+\]
+Here $\mathcal C_p=\sum_a(|E_a|+|M_a|)$ counts tagged ordered states.
+The distinct increasing-triple count is $\sum_a(|E_a|+|M_a|/2)$; the two counts
+are not equated. ES at $p$ is equivalent to $\mathcal C_p>0$, using the first-half completeness theorem
+retained in Turns 1--2. Equation (13) does not establish that inequality.
+\end{theorem}
+\begin{proof}
+For a primitive pair with $rs\mid N$, each common divisor $d\mid N/(rs)$
+is one term of $F_R(N/d)$. This proves the first equality with all multiplicities.
+Summing it against $\mu$ gives a coefficient
+$\sum_{d\mid m}\mu_{\mathrm M}(d)=\prod_{q\mid m}(1-1)$, equal to one for $m=1$ and zero
+otherwise. This proves the second identity. The maps $u\leftrightarrow(h,r,s)$
+prove the actual-shell identification. The auxiliary pairs use only divisors of
+$p(a/d)$, nested in the original $pa$; they are not relabelled as shells at $a/d$.
+\end{proof}
+
+The underlying operator has an exact original metric interpretation. Let
+$f_N(g)$ count the original divisors of $N$ in residue $g$, use the counting
+inner product on $\mathbb R^G$, and define the coefficient permutations
+\[
+ (S_pf)(g)=f(p^{-1}g),\qquad (J_-f)(g)=f(-g),\qquad C_p=I+S_p.
+\]
+Then
+\[
+ \boxed{T_R(N)=\langle C_pf_N,J_-C_pf_N\rangle.}           \tag{14a}
+\]
+The matrix (11) is the pullback of this \emph{signed} form to the two columns
+$f_N,S_pf_N$, not an ordinary positive Gram. Its kernel comparison is literal:
+$C_pf=0$ exactly when $f(pg)=-f(g)$ for all g. On nonnegative divisor counts
+$C_pf_N$ is nonzero; a vanishing character observation of it is a supported
+zero, not absence of the original divisor source. Replacing $J_-$ by the identity
+would calculate a different coefficient and cannot prove the desired target.
+
+For existence alone the M\"obius subtraction is unnecessary. At an actual shell,
+$h\mid a$, so the exact fibres prove
+\[
+ 2F_R(a)\le T_R(a)\le2\tau_{\mathrm{div}}(a)F_R(a),\qquad
+ \mathcal C_p\ge\sum_{p/4<a<p/2}\frac{T_{4a-p}(a)}{2\tau_{\mathrm{div}}(a)}.
+\]
+In particular
+\[
+ \boxed{\mathcal C_p>0\iff\sum_{p/4<a<p/2}T_{4a-p}(a)>0.}         \tag{14b}
+\]
+Thus a proof can first force one original p-coloured pair and then apply its
+exact gcd inverse. It need not establish a termwise lower bound for the M\"obius
+summands. Equation (13) remains necessary when claiming the exact state count.
+
+There is a corresponding finite character formula. For $G=(\mathbb Z/R\mathbb Z)^\times$,
+let $D_N(\chi)=\sum_{d\mid N}\chi(d)$. Orthogonality gives
+\[
+ T_R(N)=\frac1{|G|}\sum_{\chi\in\widehat G}
+ \chi(-1)|1+\chi(p)|^2|D_N(\chi)|^2.                      \tag{14}
+\]
+Indeed the two factors $1+\chi(p)$ come from the original two $p$-choices,
+and the relation $b+c=0$ supplies $\chi(-1)$ and the conjugate. The elementary
+orthogonality rule follows by multiplying a nontrivial character sum by a group
+element at which its value is not one.
+For $|z|=1$,
+\[
+ \left|\sum_{j=0}^e z^j\right|^2-
+ \left|\sum_{j=0}^{e-1}z^j\right|^2=\sum_{j=-e}^e z^j.
+\]
+Applying (12) primewise thus gives the exact original-box expression
+\[
+ F_R(N)=\frac1{2|G|}\sum_{\chi\in\widehat G}\chi(-1)|1+\chi(p)|^2
+ \prod_{q^e\parallel N}\left(\sum_{j=-e}^e\chi(q)^j\right). \tag{15}
+\]
+This is a signed sum; no absolute-value or positive-definiteness surrogate is used.
+
+\begin{corollary}[The source character is annihilated]
+At a negative square source, the Jacobi character $\chi_R(\cdot)=(\cdot/R)$
+has $\chi_R(p)=-1$. Its entire contribution to (14)--(15) is zero.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:sign} gives $\chi_R(p)=\chi_p(a)=-1$, so
+$|1+\chi_R(p)|^2=0$.
+\end{proof}
+More explicitly, at a negative source the centered Jacobi factor is
+$\prod_{\ell^e\parallel a}\sum_{j=-e}^e\chi_R(\ell)^j=\chi_p(a)=-1$.
+Its separate canonical E and M terms are $-1/|G|$ and $+1/|G|$, respectively.
+They cancel in the joint expression. Thus the precise quadratic character used
+to force new factors in the source expansion does not itself supply a positive
+term of the combined count. This
+identifies a failed proposed implication, not a proof that no stronger arithmetic
+estimate of (13) can exist.
+
+\section{The reciprocal source carries E through a sum gate}
+For $D\ge3$, $D\equiv3\pmod4$, put
+\[
+ B_D=(pD+1)/4.
+\]
+No hypothesis $\gcd(p,D)=1$ is required here: $\gcd(B_D,pD)=1$ automatically.
+For $w\mid B_D^2$ satisfying $D\mid w+B_D$, normalize
+\[
+ (h,r,s)=(\gcd(B_D,w)^2/w,\ w/\gcd(B_D,w),\ B_D/\gcd(B_D,w)),
+ \quad \lambda=(r+s)/D.
+\]
+Retain the input order, and swap $r,s$ to make $r<s$. Equality is impossible:
+coprimality would give $r=s=1$, and $D$ cannot divide 2. Set
+\[
+ x=hr\lambda,\qquad y=hs\lambda,\qquad z=pB_D.             \tag{16}
+\]
+\begin{theorem}[Reciprocal sum-gate return]\label{thm:dual}
+Equation (16) is an original first-half exterior solution. Its marking is
+\[
+ R'=4x-p>0,\quad a'=x,\quad u'=hr^2,
+ \quad(h,r,s_{\rm original},\kappa)=(h,r,\lambda,s).
+\]
+The complete inverse is
+\[
+ D=(4u'+1)/R'=(r+\kappa)/s_{\rm original},\quad
+ B_D=hr\kappa,\quad w=hr^2\ \hbox{or}\ h\kappa^2.         \tag{17}
+\]
+Thus every original first-half E state has exactly two reciprocal orientations.
+\end{theorem}
+\begin{proof}
+Since $4hrs=pD+1$ and $r+s=D\lambda$, direct cancellation in (16) proves the
+reciprocal identity. Also $R's=pr+\lambda>0$, and $\gcd(r,\lambda)=1$ because
+$D$ is a unit modulo $rs$. Hence the original E normalization applies.
+For the upper bound, $x<p/2$ is equivalent to $pD(s-r)>r+s$. Its positive
+left-minus-right difference is
+\[
+ (4hrs-1)(s-r)-(r+s)=2s\{2hr(s-r)-1\}>0.
+\]
+The same identity gives $x>p/4$. Conversely, an original E state satisfies
+\[
+ R'\kappa=pr+s_{\rm original},\quad
+ (4u'+1)/R'=(r+\kappa)/s_{\rm original},\quad
+ pD+1=4hr\kappa.
+\]
+The middle equality follows by multiplying by $R's_{\rm original}$ and using
+$4hr s_{\rm original}=p+R'$. Since $\gcd(r,\kappa)=1$, normalization recovers
+exactly the two complementary divisors in (17). Only one ordering has $r<\kappa$.
+\end{proof}
+The dual master equation and its swap are inherited from \cite[\S\S1--4]{BryanDual}.
+Their use is a coordinate comparison, not an assertion of reciprocal-source occupancy.
+
+Every original first-half E state occurs with
+\[
+ D\le\left\lfloor\frac{p^2+6p+13}{12}\right\rfloor.       \tag{18}
+\]
+Indeed $u\le a^2$ gives
+$D\le(p^2+4)/(4R)+p/2+R/4$, decreasing for $3\le R<p$, and its value at 3
+is the bound. Therefore the half-count of all reciprocal sum-gate states in (18)
+equals the complete E count. The two orientations and the original distinguished
+denominator are not suppressed in the algorithm.
+
+The reciprocal source has $\chi_p(B_D)=1$. The same reciprocity proof as before
+gives $(w/D)=\chi_p(w)$, so every reciprocal hit still requires $\chi_p(w)=-1$.
+Nonresidue factors can be larger than $p$ in this source: they are not automatically
+vertices of the original graph.
+
+\section{What simultaneous source-factor overlap actually proves}
+Assume $p\equiv1\pmod8$ and $0<D<3p$, $D\equiv3\pmod4$. Define
+$A_D=(p+D)/4$, $B_D=(pD+1)/4$.
+\begin{theorem}[Common nonresidue overlap is exactly the endpoint lane]
+\[
+ \gcd(A_D,B_D)=\gcd\bigl(A_D,(D^2-1)/4\bigr).            \tag{19}
+\]
+Any nonresidue prime $\ell$ dividing this gcd satisfies
+\[
+ \ell\equiv3\pmod4,\qquad \ell\mid p+1.
+\]
+Conversely, if $p+1$ has such a prime factor, some $D<p$ gives a common nonresidue
+prime of both source integers. Hence existence of a common nonresidue overlap
+in the complete stated D-range is equivalent to this inherited endpoint test.
+\end{theorem}
+\begin{proof}
+Subtract $DA_D$ from $B_D$ to prove (19). A common odd prime gives
+$D^2\equiv1\pmod\ell$ and $p\equiv-D\pmod\ell$. If $D\equiv-1$, then
+$p\equiv1$ and reciprocity makes $\ell$ a residue modulo $p$. Therefore a
+nonresidue common prime must have $D\equiv1$, $p\equiv-1$ and $\ell\equiv3\pmod4$.
+The prime 2 is a residue and cannot be the exceptional prime.
+Conversely choose the least $\ell\equiv3\pmod4$ dividing $p+1$. The odd integer
+$(p+1)/2\equiv1\pmod4$ contains an even positive number of such prime occurrences,
+so $\ell^2\le(p+1)/2$. Thus $D=2\ell+1<p$, $D\equiv3\pmod4$, and both
+sources are divisible by $\ell$. Reciprocity proves $(\ell/p)=-1$.
+The endpoint's original E state is $R=\ell$, $a=u=(p+\ell)/4$, $h=a,r=s=1$,
+$\kappa=(p+1)/\ell$; this explicitly returns the solution.
+\end{proof}
+\begin{corollary}[No common-word reciprocal repair beyond the endpoint]
+If $p+1$ has no prime factor $3\pmod4$, every divisor of
+$\gcd(A_D,B_D)^2$ has character $+1$ modulo p. Therefore the common original
+word domain contains no direct E hit and no reciprocal sum-gate hit. When
+$\chi_p(A_D)=-1$, an original M word in that common domain cannot become a
+reciprocal sum-gate hit either. A successful reciprocal repair must leave the
+common word, rather than only reinterpreting its channel.
+\end{corollary}
+\begin{proof}
+The overlap theorem makes every prime factor of the gcd a quadratic residue.
+Multiply their characters. Both direct E and reciprocal hits require character
+$-1$ by their proved character laws.
+\end{proof}
+
+This theorem does not assert that a square-source-restricted D-range always
+contains the converse D. It identifies why a common-factor coupling cannot,
+by itself, go beyond the older endpoint lane.
+
+\section{A complete two-vertex obstruction to the immediate dual repair}
+At $p=12889$, let $q=43,61$ and $D=\sigma_q qt^2<3p$, with positive odd $t$.
+The complete t-lists are $1,3,\ldots,29$ and $1,3,\ldots,13$ respectively.
+Turn 4 already certified that all 22 original sources have both E/M gates empty,
+using 246 original divisors \cite[\S8]{Turn4}.
+The present certificate additionally factors all 22 reciprocal sources and
+exhausts their 600 original divisors. Every reciprocal sum gate is empty.
+Thus 44 numerical source boxes and 66 labelled gate families are empty here.
+No least-example assertion is made.
+
+For the canonical two reciprocal sources,
+\[
+ B_{43}=127\cdot1091,\qquad B_{183}=2^3\cdot73709,
+\]
+all prime factors are residues modulo $12889$. They add no nonresidue factor
+edge. Thus the canonical two-cycle $43\leftrightarrow61$ remains closed when
+only these two canonical reciprocal-factor edges are appended. This is NOT a
+closed component of the full square-source graph, which already has exits.
+
+The original count character and reciprocal total character are opposite:
+$\chi_p(A_D)=-1$, $\chi_p(B_D)=1$. Nevertheless all three required gate counts
+vanish at every displayed D. A reciprocal nonresidue factor alone is insufficient:
+for example $B_{387}=37\cdot33703$ has nonresidue factors but no sum-gate hit.
+Some such factors exceed p and cannot be substituted for original graph vertices.
+
+The stronger endpoint test also misses this prime:
+\[
+ (p+1)/2=6445=5\cdot1289,
+\]
+with both factors $1\pmod4$. The overlap theorem therefore forbids common nonresidue
+source-factor overlap for EVERY $D$ in its interval, not just for the 22 tests.
+The serialized finite record retains each original factor exponent, candidate
+divisor, centered vector, fine residue, character and empty/hit observation.
+
+\section{An actual non-square exchange crosses the channels}
+The obstruction has a precise surviving arithmetic map. At the same prime,
+\[
+ R=31,\qquad a=3230=2\cdot5\cdot17\cdot19,
+\]
+there are the two original states
+\[
+ M:\ (u,h,r,s,\lambda)=(25,1,5,646,21),
+\]
+\[
+ E:\ (u,h,r,s,\kappa)=(85,85,1,38,417).
+\]
+They give
+\[
+ \frac4{12889}=\frac1{3230}+\frac1{174852174}+\frac1{1353345}
+ =\frac1{3230}+\frac1{1346910}+\frac1{456850605}.          \tag{20}
+\]
+The actual ratio is $u_E/u_M=17/5\equiv p^{-1}\pmod{31}$ and has quadratic
+character $-1$. The centered vectors are $(-1,1,-1,-1)$ and $(-1,0,0,-1)$;
+the shift $(0,-1,1,0)$ lies in both original bounds. This is exactly the map (6).
+
+It is reached by a genuine reciprocal factor: the q=61, t=11 reciprocal source
+has the complete factorization
+\[
+ B_{22143}=2\cdot19\cdot31\cdot37\cdot1637,
+\]
+with nonresidue factors 31 and 37 below p. Selecting 31 gives the original
+canonical source in (20), which has both channels. This is one verified path,
+not a theorem that a reciprocal factor must eventually find such an exchange.
+
+For a smaller normalization regression, $p=193,R=7,a=50$ has four original
+states but twenty ordered p-coloured pairs. Thus $T_R(a)/2=10\ne4$.
+The exact M/E colour counts are $B_0=4$, $B_1=6$, so the matrix (11) has
+negative difference eigenvalue. Formula (12), not raw pair counting or a
+positive-Gram assertion, returns four.
+
+\section{The decision for Turn 6 and the replay boundary}
+Three precise limitations have now been identified. The existing unchanged-word
+and square-ratio transports cannot cross the channels on a negative source.
+The classical reciprocal source does not rescue every local failure, even after
+all 22 square ports of the displayed two vertices are retained. Requiring a common
+nonresidue prime of the two sources collapses to the already known endpoint lane.
+None is a universal disproof of ES or of all possible channel interactions.
+
+The valid common source (7), its $2\tau_{\mathrm{div}}(h)$ fibres, M\"obius transform (13), and
+character formula (15) give the exact complete-shell object for Turn 6.
+The quadratic character used in factor expansion is killed in the combined
+expression; the remaining signed terms must be controlled from actual arithmetic.
+A positive lower bound for (13) is NOT supplied here. It is the next proof
+obligation, not another independently postulated positive form.
+
+The shipped standard-library verifier defaults to all first-half shells at primes
+$p\equiv1\pmod4$ through 1000, checks exact pair fibres and the M\"obius identity,
+checks the complete reciprocal atlas through p=97, and exhausts the 44 displayed
+source boxes. Its separate implementation shares no main-code import. It uses
+direct divisor tests, literal quadratic-residue sets and separate factorization.
+Actual run status, bounds, source hashes and output comparisons are recorded in
+\texttt{verification.json}. No finite replay establishes the universal inequality,
+no independent mathematical review or Lean build is claimed, and no new overall
+ES verification range is asserted.

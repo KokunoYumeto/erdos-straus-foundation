@@ -1,0 +1,1313 @@
+{
+  "all_64_coordinate_maps": [
+    {
+      "X_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "X_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dual_coordinates": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "note": "Squaring is a different, duplicated exponent source. It is not a move inside the original cap-one active prime box.",
+  "primitive_image": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "primitive_polynomial": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "squared_image": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ]
+}

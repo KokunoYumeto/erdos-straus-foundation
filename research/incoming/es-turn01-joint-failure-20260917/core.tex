@@ -1,0 +1,489 @@
+\section{Turn 1: the complete joint arithmetic object}
+This tranche addresses simultaneous exterior/middle failure in every original
+first-half shell. It places no chamber, Farey-depth, residual-primality, or
+dyadic-seed restriction on that shell. The output is a structural reduction,
+not a theorem that every prime has an occupied shell.
+
+The prime-shift three-target budget and primitive index-six exceptional factor
+already occur in the centl notes \cite[\S\S4--9]{BryanTwo},
+\cite[\S\S3--8]{BryanSix}. They are not claimed as new here. We extend the
+calculation to arbitrary residual moduli, distinguish the full and effective
+quotients, pull the targets through every factor cut, classify all effective
+quotients of order at most eight, and retain the exact kernel coefficients
+and extension cocycle. Every assertion used below has a proof in this tranche.
+
+Fix a prime $p\equiv1\pmod4$ and an integer $p/4<a<p/2$. Put
+\[
+ R=4a-p,\qquad a=\prod_{i=1}^r q_i^{e_i},\qquad
+ \mathcal B=\prod_i[-e_i,e_i]_{\mathbb Z},\qquad
+ v(\beta)=\prod_iq_i^{\beta_i}\pmod R.                 \tag{A1}
+\]
+The $q_i$ are distinct actual primes. Since $R\equiv3\pmod4$ and
+$\gcd(pa,R)=1$, all inverses in (A1) exist. Retain
+\[
+ u(\beta)=\prod_iq_i^{e_i+\beta_i},\quad
+ \mu(g)=\#\{\beta\in\mathcal B:v(\beta)=g\},\quad W=\operatorname{supp}\mu.
+                                                               \tag{A2}
+\]
+The inverse is $\beta_i=v_{q_i}(u)-e_i$. In particular
+$\sum_g\mu(g)=\prod_i(2e_i+1)$ and $\mu(g)=\mu(g^{-1})$.
+The channel labels and targets are
+\[
+ (M,-1),\quad(E_+,-p^{-1}),\quad(E_-,-p).                 \tag{A3}
+\]
+$E_-$ is the same exterior test after the recorded involution
+$\beta\mapsto-\beta$, not a third canonical channel. Thus
+\[
+ |M_a|=\mu(-1),\qquad |E_a|=\mu(-p^{-1}),\qquad
+ E_a=M_a=\varnothing\iff W\cap\{-1,-p,-p^{-1}\}=\varnothing. \tag{A4}
+\]
+The exponent vector is the same at every prime power dividing $R$.
+A compatible unrestricted CRT residue is not substituted for a vector in
+$\mathcal B$.
+
+\paragraph{Original ordered return.}
+For a hit, put $d_0=\gcd(a,u)$ and
+\[
+ (h,r_0,s_0)=(d_0^2/u,u/d_0,a/d_0).
+\]
+At $q_i$, their valuations are
+$(e_i-|\beta_i|,(\beta_i)_+,(-\beta_i)_+)$. Hence they are positive
+integers, $a=hr_0s_0$, $u=hr_0^2$, and $\gcd(r_0,s_0)=1$.
+Since $u\equiv av(\beta)$ and $4a\equiv p\pmod R$, (A3) becomes
+$R\mid u+a$ in M and $R\mid4u+1$ in E. All factors of $a$ are units
+modulo $R$, so the required integer quotients are
+\[
+ \begin{array}{ll}
+ M:&\lambda=(r_0+s_0)/R,\quad (x,y,z)=(a,phs_0\lambda,phr_0\lambda),\\
+ E:&\kappa=(pr_0+s_0)/R,\quad (x,y,z)=(a,hs_0\kappa,phr_0\kappa).
+ \end{array}                                                   \tag{A5}
+\]
+Multiplying the reciprocal sum by $phr_0s_0\lambda$ or
+$phr_0s_0\kappa$ verifies $4/p$. The ordered inverses are
+\[
+ u=\frac{pa^2}{Ry-pa}\quad(M),\qquad
+ u=\frac{a^2}{Ry-pa}\quad(E).                              \tag{A6}
+\]
+The M involution $u\mapsto a^2/u$ swaps $y,z$ and has no hit fixed point:
+its fixed divisor $u=a$ would require $R\mid2a$, impossible. Thus $|M_a|$
+is even. In E, the $E_-$ label is first negated before applying (A5).
+These arithmetic identities are inherited Type I/II coordinates
+\cite[\S2, Propositions 2.2 and 2.6]{ET}.
+
+\paragraph{Completeness of the interval.}
+Here is the required reduction, rather than an assumed smaller search range.
+Order any solution as $x\le y\le z$. Positivity gives $x>p/4$.
+If $x>p/2$, then $4/p\le1/x+2/y<2/p+2/y$, hence $y<p$.
+The cleared equation forces $z=pk$. Then $(4k-1)xy=pk(x+y)$,
+so $t=(4k-1)/p$ is a positive integer, $t\equiv3\pmod4$ and
+$\gcd(t,k)=1$. Write $x=gA,y=gB$, $\gcd(A,B)=1$.
+The equation gives $k=ABD$, $tg=D(A+B)$ and $\gcd(t,D)=1$.
+The inequality $x>p/2$ gives $2DA(A-B)>-1$, so $A\ge B$.
+Since $A\le B$, both equal one; then $tg=2D$ forces $t\mid2$, a
+contradiction. Equality $x=p/2$ is impossible for odd $p$.
+
+With $a=x$, the other denominators satisfy
+$(Ry-pa)(Rz-pa)=p^2a^2$, with both factors positive. The exponent of $p$
+in the first factor is $0,1$, or $2$. In case zero set
+$u=a^2/(Ry-pa)$ and use E; in case two set $u=(Ry-pa)/p^2$ and
+use E with $y,z$ exchanged; in case one set $u=pa^2/(Ry-pa)$ and
+use M. Each is a divisor of $a^2$, and the congruence of the first factor
+modulo $R$ proves its gate. This proves completeness with all permutations
+retained. The same first-half argument is recorded in the original
+workbench \cite[Theorem \texttt{bp-first-half}]{Prior}.
+
+\section{The actual period quotient and every target collision}
+Use the full unit group $G=(\mathbb Z/R\mathbb Z)^\times$ and the smaller
+coefficient envelope
+\[
+ \Gamma=\langle-1,2,q_1,\ldots,q_r\rangle\le G,
+ \qquad K=\operatorname{Stab}_G(W)=\{g:gW=W\}.             \tag{B1}
+\]
+The generators $2,-1$ in $\Gamma$ are coefficient units, not newly supplied
+factors of $a$. All targets are in $\Gamma$ because $p\equiv4a$.
+Since $1\in W$, every $g\in K$ lies in $W$. Therefore
+$K\le\Gamma$ and $\operatorname{Stab}_\Gamma(W)=K$.
+Let
+\[
+ A=\Gamma/K,\quad d=|A|,\quad S=W/K,\quad
+ \alpha=-1K,\ z=2K,\ \eta=pK,\ g_i=q_iK.                 \tag{B2}
+\]
+The ambient index $[G:K]$ is separately retained; it can exceed $d$.
+The exact arithmetic relation is
+\[
+ \boxed{\eta=z^2\prod_i g_i^{e_i}.}                      \tag{B3}
+\]
+The quotient support $S$ contains $1$, is inversion-invariant, and has
+trivial stabilizer. To prove the last claim, lift any quotient period:
+it would stabilize the full union $W$ of $K$-cosets and hence belong to $K$.
+
+\begin{theorem}[Joint failure and collision law]\label{thm:collision}
+For every original shell, joint failure is equivalent to
+\[
+ S\cap F=\varnothing,\qquad
+ F=\{\alpha,\alpha\eta,\alpha\eta^{-1}\}.               \tag{B4}
+\]
+Under failure, $\alpha\ne1$ has order two, $d$ is even, and $\eta\ne\alpha$.
+The number $t=|F|$ is exactly
+\[
+ t=\begin{cases}
+ 1,&\eta=1,\\
+ 2,&\eta^2=1,\ \eta\ne1,\\
+ 3,&\eta^2\ne1.
+ \end{cases}                                               \tag{B5}
+\]
+All three labels in (A3) remain even when their images coincide.
+\end{theorem}
+\begin{proof}
+$W$ is the full inverse image of $S$ inside $\Gamma$, so membership of
+any target is equivalent to membership of its coset. Its involution
+$\alpha$ cannot be one because $K\subset W$. If $\eta=\alpha$, an exterior
+target is one, also impossible. Equality of an exterior class with the middle
+class is equivalent to $\eta=1$. Equality of the two exterior classes is
+equivalent to $\eta^2=1$. These prove every case of (B5).
+\end{proof}
+For a prime residual $R\equiv3\pmod4$, a joint-failure stabilizer has odd
+order, since every even subgroup of the cyclic unit group contains $-1$.
+Thus every odd \emph{ambient} index is already rescued by M. In particular,
+the earlier one-target cubic defect is not a joint obstruction
+\cite[\S\S4--8]{BryanTwo}. For composite $R$, the involution collision in
+the second row of (B5) is real and cannot be removed by that cyclic argument.
+
+\section{Bounds at every original factor cut}
+Call $i$ active when $g_i\ne1$, and put
+\[
+ E_K=\sum_{i\text{ active}}e_i.                            \tag{C1}
+\]
+An empty shell has the following unconditional structural restrictions.
+
+\begin{theorem}[Joint and cut budgets]\label{thm:cuts}
+For every active index,
+\[
+ \operatorname{ord}(g_i)>2e_i+1,
+ \qquad
+ \boxed{2E_K\le d-1-|F|.}                               \tag{C2}
+\]
+For a nonempty subset $J$ of the active indices define
+\[
+ C_J=\langle g_i:i\in J\rangle,\quad
+ S_J=\prod_{i\in J}\{g_i^{-e_i},\ldots,g_i^{e_i}\},\quad
+ U_J=\prod_{i\notin J}\{g_i^{-e_i},\ldots,g_i^{e_i}\},
+\]
+\[
+ F_J=(F U_J^{-1})\cap C_J.
+\]
+Then $1\notin F_J$, $S_J\cap F_J=\varnothing$, and
+\[
+ \boxed{2\sum_{i\in J}e_i
+ \le |C_J|-1-\max\{1,|F_J|\}.}                          \tag{C3}
+\]
+In particular, for every nontrivial cyclic subgroup $C\le A$,
+\[
+ \boxed{2\sum_{\langle g_i\rangle=C}e_i\le |C|-2.}       \tag{C4}
+\]
+\end{theorem}
+\begin{proof}
+Any period of a factor subproduct remains a period after multiplying the
+other factors. Since $S$ is aperiodic, so is every such subproduct.
+If $2e_i+1\ge\operatorname{ord}(g_i)>1$, its interval is the entire cyclic
+subgroup, a contradiction. Translate each interval to $[0,2e_i]g_i$ and
+adjoin its $2e_i$ two-point factors $\{1,g_i\}$. Every step grows the
+current set strictly: otherwise $g_i$ is a period, which would persist to
+$S$. Thus $|S|\ge1+2E_K$. Together with $|S|\le d-|F|$ this proves (C2).
+
+The same growth proof gives $|S_J|\ge1+2\sum_J e_i$. Joint failure says
+exactly that $S_J$ avoids every inverse translate of a target by an actual
+remaining word; it therefore avoids $F_J$. Moreover $S_J$ cannot equal the
+nontrivial group $C_J$, since that would create a period of $S$.
+It misses at least $\max\{1,|F_J|\}$ elements of $C_J$, proving (C3).
+For (C4), group the indicated actual factors, whose generated group is $C$,
+and apply the same at-least-one-hole argument.
+\end{proof}
+These proofs specialize the strict-growth mechanism underlying Kneser's
+addition theorem \cite[Theorem 1]{DeVos}; the earlier single-target and
+prime-nonresidue versions are attributed to \cite{BryanDefect,BryanTwo}.
+No use is made of a density statement or a global conclusion of any source.
+The complement $U_J$ uses the actual remaining bounded factors; independently
+chosen residues at different prime powers of $R$ do not replace it.
+
+For fixed $d$, (C2) leaves at most $\lfloor(d-2)/2\rfloor$ active prime
+occurrences. All prime factors inside $K$, their exponents, and their original
+coefficient distribution remain unrestricted data. This is a finite reduction
+of the active quotient profile, not a uniform bound on $d$ for every shell.
+
+\section{Complete small-effective-index normal forms}
+Let
+\[
+ B=\prod_{q_i\in K}q_i^{e_i},\qquad a=B\,a_{\rm act}.
+                                                               \tag{D1}
+\]
+The definition is from the actual period subgroup, not an assumed quadratic
+or power-residue subgroup. In the following tables powers of $g$ are quotient
+classes; actual prime labels and inverse orientations are retained.
+
+\begin{theorem}[Classification through order eight]\label{thm:low}
+If an original shell fails jointly and $d\le8$, then
+\[
+ \boxed{W(B)=K,\qquad \Omega(a_{\rm act})\le2.}           \tag{D2}
+\]
+The entire list of pure cases $a_{\rm act}=1$ is
+\[
+\begin{array}{c|c|l}
+ d&A&\text{coefficient data}\\\hline
+ 2&C_2&\eta=1\\
+ 4&C_2\times C_2&\alpha,z\text{ independent},\ \eta=1\\
+ 6&C_6&\operatorname{ord}(z)\in\{3,6\},\ \operatorname{ord}(\eta)=3\\
+ 8&C_8&\operatorname{ord}(z)=8,\ \alpha=z^4,\ \eta=z^2\\
+ 8&C_4\times C_2&\operatorname{ord}(z)=4,\ \alpha\notin\langle z\rangle,\ \eta=z^2.
+\end{array}                                                   \tag{D3}
+\]
+The entire list of nonpure cases is
+\[
+\begin{array}{c|c|c|c}
+ A&\text{active occurrences}&S&\text{phase requirement}\\\hline
+ C_6&1,\ \operatorname{ord}(g)=6&\{1,g^{\pm1}\}&\eta=g^{\pm1}\\
+ C_6&2,\text{ all in }\{g,g^{-1}\},\ \operatorname{ord}(g)=6
+     &\{1,g^{\pm1},g^{\pm2}\}&\eta=1\\
+ C_8&1,\ \operatorname{ord}(g)=4&\{1,g^{\pm1}\}&\eta=1\\
+ C_8&1,\ \operatorname{ord}(g)=8&\{1,g^{\pm1}\}&\eta=g^{\pm1}\\
+ C_8&2,\text{ all in }\{g,g^{-1}\},\ \operatorname{ord}(g)=8
+     &\{1,g^{\pm1},g^{\pm2}\}&\eta=1\\
+ C_4\times C_2&1,\ \operatorname{ord}(g)=4&\{1,g^{\pm1}\}
+     &\alpha\notin\langle g\rangle,\ \eta=g^{\pm1}.
+\end{array}                                                   \tag{D4}
+\]
+Two occurrences mean one actual prime of exponent two or two distinct primes
+of exponent one. Relation (B3) is imposed throughout, and the quotient is
+generated by $\alpha,z,g_i$. Conversely, these tables together with $W(B)=K$
+produce joint failure and make $K$ the actual stabilizer.
+\end{theorem}
+\begin{proof}
+Failure makes $d$ even. Active elements have order at least four by (C2).
+At $d=2$ there are none. At $d=4$, only a cyclic order-four generator could
+be active, once. Its support is $\{1,g,g^{-1}\}$, missing only
+$\alpha=g^2$. Joint failure would force $\eta=1$, but (B3) makes
+$\eta=z^2g^{\pm1}$ an odd power of $g$, impossible. Thus both cases are pure.
+A pure quotient is generated by $\alpha,z$, with $\eta=z^2$.
+At order four it cannot be cyclic, because a generator $z$ would give
+$\eta=\alpha$ and an exterior hit. This gives the first two rows of (D3).
+
+At order six, active elements cannot have order two or three. The budget
+allows at most two occurrences, all in the unique inverse pair of generators.
+One occurrence gives $S=\{1,g,g^{-1}\}$. By (B3), $\eta$ is an odd power
+of $g$; the value $g^3=\alpha$ produces the identity target and is forbidden.
+This leaves $\eta=g^{\pm1}$. Two occurrences give the five-element interval,
+whose only missing element is $\alpha$; both exterior targets can miss only
+when $\eta=1$. A pure order-six quotient has $z$ of order three or six,
+otherwise $\alpha,z$ would generate a smaller group. This proves the order-six rows.
+
+At order eight the possibilities are $C_8$, $C_4\times C_2$, and $C_2^3$.
+The last has no active elements and cannot be generated purely by two elements.
+In $C_4\times C_2$, every active element has order four and capacity one.
+Two from the same cyclic subgroup already fill it, a forbidden period.
+Two from its two different cyclic subgroups have seven-element sumset.
+A joint miss would then require $\eta=1$. Their central product lies outside
+the square subgroup $\{1,h^2\}$, whereas $z^2$ lies inside it, contradicting
+(B3). Three active occurrences repeat a cyclic subgroup. For one occurrence,
+$\eta=z^2g$ is $g$ or $g^{-1}$. If $\alpha\in\langle g\rangle$, an exterior
+target belongs to $S$; if it is outside, all three targets are outside $S$.
+The pure case gives the last row of (D3).
+
+In $C_8$, an order-four active element has capacity one. Mixed order-four
+and order-eight elements give seven support elements but an odd central
+product, hence an odd $\eta$; joint failure of a seven-element support would
+require $\eta=1$. Two order-eight directions outside one inverse pair fill
+$C_8$. Three aligned occurrences give seven elements but again odd $\eta$.
+Two order-four occurrences fill their subgroup. Only the listed cases remain.
+For a sole order-four element, testing $\alpha\eta^{\pm1}$ forces $\eta=1$.
+For a sole generator, it forces $\eta=g^{\pm1}$. For two aligned generator
+occurrences, it forces $\eta=1$. The pure cyclic case requires $z$ itself
+to generate $C_8$, proving the remaining rows.
+
+It remains to prove (D2), not assume inactive saturation. In each active
+case at least one extreme quotient exponent has exactly one preimage in the
+active exponent box. The full fine support in that coset is a translate of
+$W(B)$. Since it is a nonempty complete $K$-coset by actual periodicity,
+$W(B)=K$. In a pure case $W\subseteq K$ and $K\subseteq W$ give the same
+conclusion. Finally, every tabulated $S$ is aperiodic and avoids its stated
+three labelled targets. If $W(B)=K$, its full inverse image is exactly $W$;
+this proves the converse and the actual-stabilizer assertion.
+\end{proof}
+
+\begin{corollary}[The first active obstruction and the collision threshold]
+If $W$ is not a subgroup and the shell fails jointly, then $d\ge6$.
+If in addition $|F|=2$, then $d\ge12$.
+\end{corollary}
+\begin{proof}
+The first claim follows from the table at orders two and four. No nonpure
+row at orders six or eight has two distinct targets. At order ten the abelian
+group is cyclic, so its only nontrivial involution is $\alpha$; (B5) would
+force $\eta=\alpha$, which gives a hit. Odd orders cannot occur.
+\end{proof}
+
+The multiplicities in (D4) are also exact. Put $T=\tau(B^2)$.
+For one simple active prime, the three quotient masses are $(T,T,T)$.
+For one active square prime they are $T(1,1,1,1,1)$.
+For two distinct active simple primes they are $T(1,2,3,2,1)$, in
+ascending exponent order $-2,-1,0,1,2$. The fine coefficients remain
+translated sums of the full function $\mu_B$; they are not obtained by
+uniformly distributing those totals over $K$.
+
+\section{The next-turn prime-shift input, with its precise scope}
+Suppose now that $R=q$ is prime, $q\equiv3\pmod4$, $q<p$, and
+$(p/q)=-1$. Then $a\equiv p/4$ is a nonresidue modulo $q$.
+The group $\Gamma$ is cyclic with exactly one factor of two in its order;
+$K$ has odd order, hence is contained in the quadratic residues. At least
+one original prime factor is therefore active. Moreover $\eta$ is a
+nonresidue in the quotient while $z^2$ is a square.
+
+The order-six case of Theorem~\ref{thm:low} consequently forces
+\[
+ \boxed{
+ a=Br,\quad r\text{ prime},\quad v_r(a)=1,\quad W(B)=K,\quad
+ \operatorname{ord}(rK)=6,\quad pK=rK\text{ or }r^{-1}K.}  \tag{E1}
+\]
+All prime factors of $B$ lie in $K$. The active prime is the unique nonresidue
+factor modulo $q$. For an odd prime $s\mid a$, the equation $4a=p+q$
+gives $p\equiv-q\pmod s$. Reciprocity, with $p\equiv1\pmod4$ and
+$q\equiv3\pmod4$, gives
+\[
+ (s/p)=(p/s)=(-1/s)(q/s)=(s/q).
+\]
+For $s=2$, its occurrence in $a$ gives $q\equiv-p\pmod8$, and the same
+identity follows from the supplementary law. Thus the active prime is also
+the unique nonresidue factor modulo $p$. The next factor edge is determined,
+with its coefficient block retained. If the \emph{ambient} index is six, $K=G^6$; for an effective
+index-six quotient inside a proper $\Gamma$, that equality with $G^6$ must
+not be asserted. The ambient prime case is inherited from
+\cite[\S\S4--8]{BryanSix}; the exact inactive block and fine fibres are part
+of the present reconstruction.
+
+The two phases in (E1) are respectively
+\[
+ 4\in K,\qquad 4r^2\in K.                                \tag{E2}
+\]
+If $p\equiv1\pmod8$ and $q\equiv7\pmod8$, then $a$ is even. The prime
+$2$ is a quadratic residue modulo $q$ and cannot be the exceptional $r$;
+therefore $2\mid B$, $2\in K$, and only the first phase is possible.
+For $q\equiv3\pmod8$, $a$ is odd and both alternatives require their own
+check. No theorem that all such prime shifts cannot fail simultaneously
+is claimed. The existing source even records consecutive primitive defects
+\cite[\S\S1--3]{BryanChain}; no contradiction from adjacency alone is used.
+
+\section{Exact extension coordinates and the retained coefficient kernel}
+Choose a section $\sigma:A\to\Gamma$ with $\sigma(1)=1$, for example the
+least positive representative. Each original unit has the unique coordinates
+\[
+ g=\sigma(c)k,\qquad c=\pi(g),\quad k=g\sigma(c)^{-1}\in K.
+\]
+Define
+\[
+ \omega(c,d)=\sigma(c)\sigma(d)\sigma(cd)^{-1}\in K.
+\]
+The exact multiplication is
+\[
+ \boxed{(c,k)(d,l)=(cd,kl\omega(c,d)).}                    \tag{F1}
+\]
+Expanding the representatives proves
+$\omega(c,d)\omega(cd,e)=\omega(d,e)\omega(c,de)$ and
+$\omega(1,c)=\omega(c,1)=1$. The displayed product therefore retains every
+coefficient and has inverse $g\mapsto(\pi(g),g/\sigma\pi(g))$.
+Replacing $\sigma$ by $\sigma(c)\theta(c)$ changes the kernel coordinate to
+$k\theta(c)^{-1}$ and the cocycle by
+$\theta(c)\theta(d)\theta(cd)^{-1}$. It is a coordinate change, not a
+claim that the extension splits.
+
+The complete fine count is
+\[
+ \nu(c,k)=\mu(\sigma(c)k),\qquad
+ \bar\mu(c)=\sum_{k\in K}\nu(c,k).                       \tag{F2}
+\]
+The integer quotient kernel is generated by
+$e_{\sigma(c)k}-e_{\sigma(c)}$ for $k\ne1$. Given its quotient value and
+all nonreference coefficients, this star-difference expansion reconstructs
+the original vector uniquely. On the original exponent source, the analogous
+kernel has one difference per nonreference $\beta$ in its actual residue
+fibre. No representative is introduced outside $\mathcal B$.
+
+Actual support periodicity makes Boolean target membership equivalent in the
+quotient, but it does not make (F2) a uniform distribution. To return an exact
+fine target, retain its kernel coordinate, and use the original suffix count:
+a positive convolution coefficient has some available next exponent whose
+suffix coefficient is positive. Iterating reconstructs $\beta$, then (A2)
+and (A5). All choices give the full finite fibre. Quotienting before retaining
+these data loses the fine witness and its multiplicity.
+
+In the original SplitZero convention $G(A)=\{\tau\}\sqcup A^\bullet$,
+a nonempty source fibre with zero image is supported zero, not $\tau$.
+The quotient and its incoming star relations above preserve that distinction.
+The present finite extension cocycle is not identified with an analytic
+Gamma or theta norm, or with a source-wide formal certificate \cite{SplitZero}.
+
+\section{Original arithmetic certificates and the nonclaims}
+At $p=3361,a=848=2^4\cdot53,R=31$,
+\[
+ K=\{1,2,4,8,16\},\quad |\Gamma/K|=6,\quad a_{\rm act}=53.
+\]
+Both channels are empty. The inactive box has coefficient one at $1$ and
+coefficient two at each other member of $K$. Each of the three occupied
+quotient cosets has mass nine, not five equal coefficients $9/5$.
+Here $pK=53K$ and $2\in K$.
+
+At $p=5569,a=1397=11\cdot127,R=19$, the other phase occurs:
+\[
+ K=\{1,7,11\},\quad pK=127^{-1}K,\quad \Gamma=C_{18}.
+\]
+For the section $\sigma(j)=2^j$, $0\le j<6$, the actual carry is
+\[
+ \boxed{\omega(i,j)=7^{\lfloor(i+j)/6\rfloor}\pmod{19}.} \tag{F3}
+\]
+Every lift of the quotient generator has order eighteen, so no homomorphic
+section exists. A direct product $C_6\times C_3$ would erase a real cubic
+carry. All nine original words and all three target fibres are recorded.
+
+The separate exterior defect at the hard prime $p=22129$ has
+$a=5537=7^2\cdot113,R=19$ and $W=K$ of ambient index three. E is empty,
+but the two original M states include
+\[
+ (u,h,r_0,s_0,\lambda)=(49,49,1,113,6),\qquad
+ \frac4{22129}=\frac1{5537}+\frac1{735169638}+\frac1{6505926}.
+\]
+Thus this one-channel cubic defect is not an unresolved joint case.
+
+The composite-residual collision $p=109,a=31,R=15$ has $K=\{1\}$,
+$\eta=4$, and targets $14,11,11$: exactly two classes, both channels empty.
+The distinct effective/ambient example $p=6340273,a=1259^2,R=51$ has
+\[
+ W=K=\{1,35\},\quad \mu(1)=3,\quad\mu(35)=2,
+ \quad |\Gamma/K|=8,\quad |G/K|=16.
+\]
+It realizes the pure cyclic order-eight case. Cyclic prime-residual reasoning
+cannot be transferred to this composite modulus.
+
+The complete source-hashed replay covers all $73\,798$ first-half shells at
+$211$ primes $p\equiv1\pmod4$, $p\le3000$, and $1\,877\,004$ original divisor
+vectors, with both canonical channel tests on each. It records $5700$ exterior
+and $5268$ middle states in $3918$ occupied shells. All $69\,880$ jointly
+empty shells undergo the actual-stabilizer and every active-factor-cut test;
+all $459$ such shells of effective index at most eight satisfy the normal forms
+and inactive saturation. Abstract tests exhaust $596$ aperiodic,
+coefficient-anchored profiles of capacity at most three, including $146$
+failures, in every abelian group of order $2,4,6,8$. The capacity bound follows
+from (C2). The main verifier makes $2\,153\,122$ named \texttt{check()} calls,
+in addition to eight successful negative-control rejections and other explicit
+precondition tests. A separate direct-divisor implementation imports neither
+it nor the antecedent software and recomputes the arithmetic of every supplied
+ledger row. It does not independently enumerate the ledger's prime/shell
+domain, so it is not a second completeness certificate for that row set.
+Execution hashes, the exact separate check count, and normal/optimized output
+identities are in the receipt. These finite checks neither prove the structural
+theorem by sampling nor constitute independent mathematical review. No new
+prime-coverage range is asserted.
+
+The required exit of Turn 1 is the unconditional joint reduction (B)--(D),
+its complete low-index normal forms, and its integer coefficient return.
+Turn 2 must connect this exact object to the original shifted-factor graph.
+In particular, primitive sextic failures exist; the next theorem cannot
+assert that an individual such shell is impossible. No uniform upper bound
+on the effective index, global contradiction, historical-priority claim,
+independent mathematical review, or new Lean build is asserted.

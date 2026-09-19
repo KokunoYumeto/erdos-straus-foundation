@@ -1,6 +1,13 @@
 # The imported edition is a byte-exact publication artifact, including line endings.
 research/expanded-2026-09-08/exact_bounded_transport_72/** -text -whitespace
 research/continuation-2026-09-12/** -text -whitespace
+research/incoming/es-turn01-joint-failure-20260917/** -text -whitespace
+research/incoming/es-turn02-shifted-graph-20260918/** -text -whitespace
+research/incoming/es-turn03-primitive-sextic-20260918/full/** -text -whitespace
+research/incoming/es-turn04-square-expansion-20260918/full/** -text -whitespace
+research/incoming/es-turn05-channel-coupling-20260919/** -text -whitespace
+research/incoming/es-turn06-full-shell-20260919/** -text -whitespace
+research/incoming/es-turn06b-pointwise-localization-20260919/** -text -whitespace
 /*.md text eol=lf
 polyclank/*.json text eol=lf
 polyclank/evidence/*.json -text

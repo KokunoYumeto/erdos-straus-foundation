@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-19",
+  "status": "passed",
+  "source_archive": {
+    "name": "erdos_straus_cumulative_through_turn5_20260919(1).zip",
+    "sha256": "162bae41c5ca9e5a006796306feb0326aa5b95e8b71723bbd226506d9d6b711a"
+  },
+  "replay": {
+    "normal_success": true,
+    "optimized_success": true,
+    "mathematical_json_files": 16,
+    "normal_optimized_value_and_byte_identity": true,
+    "pair_main_checks": 390609,
+    "pair_separate_checks": 19432,
+    "window_main_checks": 1348441,
+    "window_separate_checks": 185739,
+    "pair_scan": {"primes": 80, "shells": 9137, "original_divisors": 178245},
+    "window_scan": {"primes": 147, "shells": 33905, "original_divisors": 784633},
+    "six_cycle": {"p": 315361, "source_boxes": 17, "original_divisors": 663, "E_hits": 0, "M_hits": 0}
+  },
+  "documents": {
+    "workbench_pages": 10,
+    "channel_preprint_pages": 2,
+    "pair_preprint_pages": 3,
+    "all_rebuilt": true
+  },
+  "independent_derivation": {
+    "status": "passed",
+    "report_sha256": "47b2c96bbf378ca2ccd29627b5df9192a8dc6436231b9fda9811279e8cb1c473",
+    "checked": [
+      "original normalization and E/M character law",
+      "maximal Div(a/4) channel involution",
+      "joined-window endpoints and exact cyclic extrema",
+      "complete one-simple-nonresidue classification",
+      "pair fibres, Möbius inversion and factor-two conventions",
+      "Jacobi-character cancellation",
+      "complete six-cycle interpretation and expanded exit"
+    ],
+    "result": "No sign, factor-of-two, domain, endpoint or quantifier error found."
+  },
+  "line_endings": "Regenerated JSON is LF while the archived certificates are CRLF. Values agree exactly after newline normalization; raw cross-platform SHA-256 equality is not claimed.",
+  "scope": "Reproducible computation plus an independent derivation audit. No universal ES occupancy theorem, Lean build, historical-priority determination or independent human review."
+}

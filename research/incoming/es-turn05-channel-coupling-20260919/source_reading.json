@@ -1,0 +1,116 @@
+{
+  "ES_main_checked": "d5498ed24e149ea705661142bd1d7027c11ecafe",
+  "PR19_current_status": {
+    "checked_20260919": true,
+    "merge_commit": "c6bfa27127e3dcef2ea0d54643aebb6813162a95",
+    "merged": true
+  },
+  "antecedents": [
+    {
+      "citation": "turn296file1",
+      "file": "es_turn4_square_expansion_20260918/core.tex",
+      "scope": "Complete supplied source in current context. Original sources/returns and carry, and p12889 all-22-square-source obstruction. Its large finite cofactor proof is not rerun."
+    },
+    {
+      "citation": "turn296file0",
+      "file": "es_turn4_square_expansion_20260918/HANDOFF_TURN_5.md",
+      "scope": "Complete supplied handoff, including the requirement to distinguish factor escape from target occupancy."
+    },
+    {
+      "author": "Chase Bryan",
+      "blob": "479a9d343051637321ac2f0845e0bb481d1232b5",
+      "citation": "turn302file0",
+      "locator": "Sections 1-4",
+      "path": "research/erdos-straus/FAB-DUAL-DESCENT-SYSTEM.md",
+      "ref": "42508684c4386b575d7b52e763565345a76bcb9e",
+      "repository": "chasebryan/centl",
+      "scope": "Full supplied connector text. The reciprocal master equation and its side swap are inherited, not newly claimed.",
+      "year": 2026
+    }
+  ],
+  "claims": [
+    "Character separation on the original bounded boxes",
+    "Exact p-coloured gcd fibres with divisor multiplicity 2*tau(h)",
+    "M\u00f6bius removal and finite-character expression for the complete first-half count",
+    "Annihilation of the factor-source Jacobi term in the combined expression",
+    "Reciprocal source map with original first-half inverse and two orientation fibres",
+    "Common nonresidue overlap reduces exactly to the old p+1 endpoint lane",
+    "Finite 44-box local obstruction at p12889, not a full-square-graph closed component",
+    "Original nonsquare ratio exchange 25 to 85 at R31",
+    "Maximal original quarter-divisor E/M involution.",
+    "Exact 3e+3 cyclic joint window and its sharp target-mass extrema.",
+    "Complete E and M/2 count comparison at one simple nonresidue prime with a positive prime-power factor.",
+    "At p315361 all17valid square sources at a specified closed canonical six-cycle have both channels empty; an actual expanded exit is supplied."
+  ],
+  "content_search_scope": {
+    "outcome": "Relevant existing parametrization and reciprocal-source antecedents and current Jiang abstract found. No exhaustive priority determination.",
+    "queries": [
+      "\"Erdos Straus\" \"3e+3\"",
+      "\"Erdos Straus\" \"a/(4u)\"",
+      "\"exterior\" \"middle\" \"3e+3\"",
+      "\"Erdos Straus\" dual pair Mobius"
+    ]
+  },
+  "date": "2026-09-19",
+  "literature": [
+    {
+      "authors": "Christian Elsholtz and Terence Tao",
+      "locator": "Section 2, Propositions 2.2 and 2.6",
+      "scope": "Inherited Type I/II coordinates; all algebra used here is rederived.",
+      "source": "arXiv:1107.1010",
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "year": 2013
+    },
+    {
+      "author": "Allen Hatcher",
+      "locator": "Section 6.4, pages 205-212",
+      "scope": "Quadratic reciprocity and supplementary laws, as identified in the preceding source ledger.",
+      "title": "Topology of Numbers",
+      "year": 2022
+    }
+  ],
+  "nonclaims": [
+    "No ES proof or counterexample",
+    "No universal source or target nonvanishing",
+    "No full-graph trap at p12889",
+    "No new overall ES verification range",
+    "No independent mathematical review",
+    "No Lean build",
+    "No historical priority",
+    "No remote publication inferred from a local patch"
+  ],
+  "recent_literature": {
+    "arxiv": "2609.09204",
+    "author": "Xinyang Jiang",
+    "read_scope": "Primary indexed abstract only; PDF and HTML fetches returned errors.",
+    "use": "Adjacent same-modulus TypeI/II counting and character criteria noted; no unread theorem imported and no priority assertion.",
+    "year": 2026
+  },
+  "recovered_interrupted_draft": {
+    "changes": [
+      "Added exact quarter involution and joined-window proof.",
+      "Added complete unique-simple-nonresidue channel count formula.",
+      "Added fully enumerated six-vertex local obstruction and positive exit.",
+      "Renamed complete tagged count C_p to distinguish E+M from E+M/2.",
+      "Replayed all recovered mathematical software and two separate new checkers."
+    ],
+    "discovery": "The six-vertex candidate was found by a bounded C++ cofactor search. Only the fixed original prime and all17square sources are used in the theorem certificate.",
+    "input_library_file_id": "file_00000000dc0482438ad0866c1cf485ad",
+    "input_patch_sha256": "b57e200f7dc5b8fc74836c998c476465eb5f7947ed82ee006fb8a105a55b8915",
+    "scope": "Recovered interrupted Turn5 draft. Canonical sources have been checked, notation repaired, and extended in this tranche; an earlier completed execution is not inferred."
+  },
+  "source_hashes": {
+    "channel_windows.tex": "591d6da097bd5e806774b2f90704c8ee82b53a25fa287bdee6a70f6e53fa4db6",
+    "check_independent.py": "54e8d9f67de1789bf680c94fa3869e9a3daef15eb7c172771877bf7ab15f28f5",
+    "check_windows.py": "46798c8ce71c4cf347a075877d9ff22f52b6d2d438071ac8f54d65ad21cdde13",
+    "core.tex": "ab01178298935b183fa74840c0f33b976369854f7414521acddc1167a1634f1b",
+    "preprint.tex": "df49667f6c54bd99cb153b033c676ff026651efb4a5659c20ada58945a8fa6f9",
+    "preprint_windows.tex": "e575f6dc0bcff40ac6eb4f165d99d3ad8db3ce94d9ff0bcc8be57739d679e1ef",
+    "run_all.py": "79e4c8f0b6167fb115c35b2d7ab3b4dcecba693e66c4c29915170a44e9c8f811",
+    "verify.py": "b3e38a4a7f98a1176139754b4f47c933df8561637c484cc1354fec45bd0ea7bd",
+    "verify_local.py": "1bc08889c4f3867b691f6a31769808be7e3983fc22b98b4accb6873720d7e20f",
+    "verify_windows.py": "5920ff4f853a83780872fd0ff3499ce1b56881aa27d7af85785b5887be082917",
+    "workbench.tex": "8e6e6de23ec7e8f9f2873ce7801980920dc9586bc18156980b864677da5416d9"
+  },
+  "task": "Turn5: actual E/M exchange, exact windows, primitive pair fibres and local reciprocal obstructions"
+}

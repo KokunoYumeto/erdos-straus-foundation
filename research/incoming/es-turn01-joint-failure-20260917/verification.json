@@ -1,0 +1,146 @@
+{
+  "bound": 3000,
+  "mathematical_certificates": {
+    "abstract.json": "583dbf68566c478a0b19dd3a4ab6ec7f239c30b777c6862c7e03dc0d4439b672",
+    "checks.json": "a1ef3b80e1edfa7b8790ed15520b606fe4b89296e174b98dbc42dde2dd139288",
+    "cocycles.json": "de2cd698f3f705e758d8ee188a60e156edd30aa03a0720ba178f34724333f065",
+    "examples.json": "241834cec63544c9f084d6d0720268b036bfcbb6ccc3f216a706d899fb052be9",
+    "examples_standalone.json": "e157522570365450ecd70aa1281ea9f3b5602c326b6532d53dfcab9e04ca4ab4",
+    "independent.json": "6b1cb35a187287b42530a3cc1d44e08c4975b17d2db6816387a45d2a67f63dcf",
+    "negative_controls.json": "17ba137ea7f38023c74c9004b002c6de53e2c7b11676b3be33b5c6f8eefc0ceb",
+    "scan.json": "c372f891a94bdb5edf347e72030be81f2e99ef202dfae4985ea2aba58beb522e"
+  },
+  "nonclaims": [
+    "No universal ES occupancy theorem or counterexample",
+    "No new prime verification range",
+    "No Lean build",
+    "No independent mathematical review",
+    "No historical-priority conclusion",
+    "No remote pull request created"
+  ],
+  "normal_optimized_identity": {
+    "abstract.json": true,
+    "checks.json": true,
+    "cocycles.json": true,
+    "examples.json": true,
+    "negative_controls.json": true,
+    "scan.json": true
+  },
+  "performance_repair": "The separate checker now checks d>8 before computing all element orders. Its interrupted pre-repair run is excluded. Arithmetic tests and classification conditions are unchanged.",
+  "runs": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/es_turn1_joint_failure_20260917/verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "/mnt/data/es_turn1_joint_failure_20260917/final_certificates"
+      ],
+      "name": "normal_3000",
+      "returncode": 0,
+      "seconds": 164.20940732955933,
+      "source_sha256": {
+        "check_independent.py": "33391fdc1487edcea53c0220d61558253b50e44c77cfc502ea10734b92749e14",
+        "verify.py": "87f10623ce5f77130767ab431d00c0cc4858c7fc1a7ce1a972d668ed4e756370",
+        "verify_examples.py": "aa64af7fe32a076418d334ede003f584a5fedede5837c06efc7723ff415ca5c0"
+      },
+      "stderr": "",
+      "stdout": "{\"checks\": 2153122, \"negative_controls\": 8, \"row_sha256\": \"fba08200386904e44f52990b22ee5ed058a36246cbf30f6ee3df098d193c0170\", \"scan\": {\"A6_double\": 11, \"A6_single\": 44, \"A8_product_single\": 65, \"E_states\": 5700, \"M_states\": 5268, \"P2\": 279, \"P4_V4\": 10, \"P6\": 23, \"P8_C4xC2\": 25, \"P8_C8\": 2, \"joint_empty_shells\": 69880, \"non_subgroup_failures\": 69326, \"occupied_shells\": 3918, \"original_divisor_states\": 1877004, \"primes\": 211, \"shells\": 73798, \"subgroup_support_failures\": 554}}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-O",
+        "/mnt/data/es_turn1_joint_failure_20260917/verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "/mnt/data/es_turn1_joint_failure_20260917/final_optimized"
+      ],
+      "name": "optimized_3000",
+      "returncode": 0,
+      "seconds": 170.03154015541077,
+      "source_sha256": {
+        "check_independent.py": "33391fdc1487edcea53c0220d61558253b50e44c77cfc502ea10734b92749e14",
+        "verify.py": "87f10623ce5f77130767ab431d00c0cc4858c7fc1a7ce1a972d668ed4e756370",
+        "verify_examples.py": "aa64af7fe32a076418d334ede003f584a5fedede5837c06efc7723ff415ca5c0"
+      },
+      "stderr": "",
+      "stdout": "{\"checks\": 2153122, \"negative_controls\": 8, \"row_sha256\": \"fba08200386904e44f52990b22ee5ed058a36246cbf30f6ee3df098d193c0170\", \"scan\": {\"A6_double\": 11, \"A6_single\": 44, \"A8_product_single\": 65, \"E_states\": 5700, \"M_states\": 5268, \"P2\": 279, \"P4_V4\": 10, \"P6\": 23, \"P8_C4xC2\": 25, \"P8_C8\": 2, \"joint_empty_shells\": 69880, \"non_subgroup_failures\": 69326, \"occupied_shells\": 3918, \"original_divisor_states\": 1877004, \"primes\": 211, \"shells\": 73798, \"subgroup_support_failures\": 554}}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/es_turn1_joint_failure_20260917/check_independent.py",
+        "--input",
+        "/mnt/data/es_turn1_joint_failure_20260917/final_certificates",
+        "--out",
+        "/mnt/data/es_turn1_joint_failure_20260917/final_certificates/independent.json"
+      ],
+      "name": "separate_direct_divisor",
+      "returncode": 0,
+      "seconds": 33.45456099510193,
+      "source_sha256": {
+        "check_independent.py": "4c9bb772b51d38d11eab3b7cfa720945c0a0e220525f0b33a1317c271ae32e95",
+        "verify.py": "87f10623ce5f77130767ab431d00c0cc4858c7fc1a7ce1a972d668ed4e756370",
+        "verify_examples.py": "aa64af7fe32a076418d334ede003f584a5fedede5837c06efc7723ff415ca5c0"
+      },
+      "stderr": "",
+      "stdout": "{\"bound\": 3000, \"checks\": 494215, \"row_sha256\": \"fba08200386904e44f52990b22ee5ed058a36246cbf30f6ee3df098d193c0170\", \"rows\": 73798}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-O",
+        "/mnt/data/es_turn1_joint_failure_20260917/check_independent.py",
+        "--input",
+        "/mnt/data/es_turn1_joint_failure_20260917/final_certificates",
+        "--out",
+        "/mnt/data/es_turn1_joint_failure_20260917/final_certificates/independent_optimized.json"
+      ],
+      "name": "separate_direct_divisor_optimized",
+      "returncode": 0,
+      "seconds": 36.67069339752197,
+      "source_sha256": {
+        "check_independent.py": "4c9bb772b51d38d11eab3b7cfa720945c0a0e220525f0b33a1317c271ae32e95",
+        "verify.py": "87f10623ce5f77130767ab431d00c0cc4858c7fc1a7ce1a972d668ed4e756370",
+        "verify_examples.py": "aa64af7fe32a076418d334ede003f584a5fedede5837c06efc7723ff415ca5c0"
+      },
+      "stderr": "",
+      "stdout": "{\"bound\": 3000, \"checks\": 494215, \"row_sha256\": \"fba08200386904e44f52990b22ee5ed058a36246cbf30f6ee3df098d193c0170\", \"rows\": 73798}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "/mnt/data/es_turn1_joint_failure_20260917/verify_examples.py",
+        "--out",
+        "/mnt/data/es_turn1_joint_failure_20260917/final_certificates/examples_standalone.json"
+      ],
+      "name": "standalone_examples",
+      "returncode": 0,
+      "seconds": 1.4614450931549072,
+      "source_sha256": {
+        "check_independent.py": "4c9bb772b51d38d11eab3b7cfa720945c0a0e220525f0b33a1317c271ae32e95",
+        "verify.py": "87f10623ce5f77130767ab431d00c0cc4858c7fc1a7ce1a972d668ed4e756370",
+        "verify_examples.py": "aa64af7fe32a076418d334ede003f584a5fedede5837c06efc7723ff415ca5c0"
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"passed\", \"checks\": 2534, \"shells\": 8}\n"
+    }
+  ],
+  "scope": {
+    "factor_cuts": "all nonempty active-prime subsets of every jointly empty shell",
+    "prime_classes": "all primes p=1 mod4 through 3000",
+    "quotient_groups": "all anchored aperiodic capacity<=3 profiles in all abelian groups of orders 2,4,6,8",
+    "shells": "every p/4<a<p/2",
+    "state_counts": "1,877,004 original divisor vectors; two canonical channel tests on each; 5,700 E and 5,268 M states"
+  },
+  "separate_normal_optimized_identity": true,
+  "status": "passed"
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-19",
+  "status": "passed",
+  "scope": "Fresh repository-intake replay after correcting the preprint subscript, checker description, and scan schema label. This is reproducibility, not an independent mathematical review or a new prime-verification range.",
+  "commands": [
+    "python verify.py --bound 3000 --out <external-output>",
+    "python -O verify.py --bound 3000 --out <external-output>",
+    "python check_independent.py --input <normal-output> --out <external-output>/independent.json",
+    "python -O check_independent.py --input <normal-output> --out <external-output>/independent_optimized.json",
+    "python verify_examples.py --out <external-output>/examples_standalone.json",
+    "pdflatex workbench.tex (two passes)",
+    "pdflatex preprint.tex (two passes)"
+  ],
+  "main": {
+    "normal_optimized_mathematical_json_identical": true,
+    "checks": 2153122,
+    "negative_controls": 8,
+    "row_sha256": "fba08200386904e44f52990b22ee5ed058a36246cbf30f6ee3df098d193c0170",
+    "primes": 211,
+    "shells": 73798,
+    "original_divisor_states": 1877004,
+    "E_states": 5700,
+    "M_states": 5268,
+    "occupied_shells": 3918,
+    "joint_empty_shells": 69880
+  },
+  "separate_checker": {
+    "normal_optimized_identical": true,
+    "checks": 494215,
+    "rows": 73798,
+    "row_sha256": "fba08200386904e44f52990b22ee5ed058a36246cbf30f6ee3df098d193c0170",
+    "scope": "Independently recomputes every supplied row; does not independently enumerate completeness of the supplied ledger."
+  },
+  "examples": {
+    "checks": 2534,
+    "shells": 8
+  },
+  "documents": {
+    "workbench_pages": 7,
+    "preprint_pages": 3
+  },
+  "integrated_source_sha256": {
+    "verify.py": "12df92be9b7c2e0c474f616561dda9bed7c65479c57fafe5dc75c28ab1150070",
+    "check_independent.py": "e0f993420a4f664a506a0bf69b09530181f025434d3020fb84a297048e5b5b70",
+    "verify_examples.py": "aa64af7fe32a076418d334ede003f584a5fedede5837c06efc7723ff415ca5c0",
+    "core.tex": "810d72af4b6704a868688d20f280a0d494d2150e35625fd879cb7a2416c33bb9",
+    "preprint.tex": "9942484dc098f9781a878707b4e1aad3c1dd12a1a8c761a616c2dcaae553d211",
+    "workbench.tex": "e8ea4fdecacaf28de8182df1e8d98c1bbb9d64711b4e520f40da7ac76cc0ecc7"
+  }
+}

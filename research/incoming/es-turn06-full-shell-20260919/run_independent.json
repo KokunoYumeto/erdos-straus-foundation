@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "check_independent.py",
+    "--input",
+    "certificates",
+    "--out",
+    "certificates/independent.json"
+  ],
+  "cwd": "/mnt/data/es_turn6_full_shell_20260919",
+  "returncode": 0,
+  "elapsed_seconds": 24.351585249999516,
+  "stdout": "{\"divisor_power_constants_check\": [[3, 4], [4, 9], [5, 29], [6, 139], [7, 1424], [8, 45197]], \"explicit_checks\": 928678, \"full_failure_replays\": [{\"all_rows_sha256\": \"86ca0e8d0183f7a79c945eea9b3f73bc139ef401fe481afe084a9ff6fa927fc2\", \"max_L\": [0, 1], \"max_global_integer_lower\": 0, \"occupied_shell_count\": 34, \"p\": 87481, \"shells\": 21870}, {\"all_rows_sha256\": \"989107f88a2bdbcca83219bad13d1e1fd496245c6ff232c01700faaa6c49473e\", \"max_L\": [0, 1], \"max_global_integer_lower\": 2, \"occupied_shell_count\": 44, \"p\": 196561, \"shells\": 49140}, {\"all_rows_sha256\": \"5815e0c061e1eb30cc19f0b1ef3b5c9bdb2c5536f1832c556744aa3bfc9246ae\", \"max_L\": [0, 1], \"max_global_integer_lower\": 0, \"occupied_shell_count\": 64, \"p\": 944329, \"shells\": 236082}, {\"all_rows_sha256\": \"5ff47c28a1da393f728ccc41f3965cf93e5d8ad02c7eb2bf7048140962affd0f\", \"max_L\": [0, 1], \"max_global_integer_lower\": 0, \"occupied_shell_count\": 90, \"p\": 1915201, \"shells\": 478800}], \"hard_bound\": 2000000, \"hard_prime_count\": 4519, \"positive_certificates\": 4515, \"scope\": \"No main/antecedent imports; full small atlas, all hard positive certificates, all first-half shells of every listed principal miss, examples, independent convex DP, a separate rational spectral interval, and finite divisor-power constants. Not an independent mathematical review.\", \"small_atlas\": {\"E_states\": 5700, \"M_states\": 5268, \"occupied_shells\": 3918, \"original_divisor_vectors\": 1877004, \"primes\": 211, \"shells\": 73798, \"target_pairs\": 70596}, \"small_rows_sha256\": \"ad1024d98046eaeae69c3c5d413e02eea0be6e68fb15a0b31c7c931e8e110192\", \"spectral_check\": {\"R\": 47, \"intervals\": [[1009, 1010], [24, 25]], \"method\": \"pi=4*(atan(1/2)+atan(1/3)); separate rational Taylor series; literal original word differences\", \"p\": 944329}, \"success\": true}\n",
+  "stderr": "",
+  "source_sha256": {
+    "verify.py": "6f9e12f17e909845fe6c0e8811cba284cc9ad71794e8b42a3a358ae22b48113a",
+    "check_independent.py": "d7ccb21b5d821f556586378adec5a39683565b33894168d7fd4080f5c2ac321f"
+  }
+}

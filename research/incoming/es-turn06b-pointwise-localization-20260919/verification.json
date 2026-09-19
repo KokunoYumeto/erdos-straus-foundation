@@ -1,0 +1,170 @@
+{
+  "bound": 1000,
+  "checks": 768985,
+  "counts": {
+    "endpoint_available_primes": 29,
+    "endpoint_excluded_exterior_states": 74,
+    "endpoint_excluded_primes": 8,
+    "exterior_states": 474,
+    "fourfold_orbits": 1465,
+    "hard_primes": 0,
+    "middle_states_ordered": 293,
+    "middle_states_oriented": 586,
+    "primes_1_mod_8": 37,
+    "shells": 4388,
+    "square_divisors": 85786,
+    "target_pairs": 5860
+  },
+  "digest_algorithm": "sha256",
+  "examples": {
+    "coordinate_examples": [
+      {
+        "R": 31,
+        "a": 18,
+        "channel": "E",
+        "denominators": [
+          18,
+          24,
+          2952
+        ],
+        "h": 6,
+        "p": 41,
+        "quotient": 4,
+        "r": 3,
+        "s": 1,
+        "u": 54
+      },
+      {
+        "R": 95,
+        "a": 276,
+        "channel": "M",
+        "denominators": [
+          276,
+          92828,
+          3027
+        ],
+        "h": 1,
+        "p": 1009,
+        "quotient": 1,
+        "r": 3,
+        "s": 92,
+        "u": 9
+      },
+      {
+        "R": 3,
+        "a": 253,
+        "channel": "E",
+        "denominators": [
+          253,
+          85096,
+          1974822872
+        ],
+        "h": 11,
+        "p": 1009,
+        "quotient": 7736,
+        "r": 23,
+        "s": 1,
+        "u": 5819
+      },
+      {
+        "R": 23,
+        "a": 636,
+        "channel": "M",
+        "denominators": [
+          636,
+          5611746,
+          70588
+        ],
+        "h": 2,
+        "p": 2521,
+        "quotient": 7,
+        "r": 2,
+        "s": 159,
+        "u": 8
+      }
+    ],
+    "odd_square_control": {
+      "R": 3,
+      "a": 7,
+      "denominators": [
+        7,
+        350,
+        70
+      ],
+      "full_pair": [
+        1,
+        5
+      ],
+      "n": 25,
+      "two_colour_source": [
+        1,
+        7,
+        25,
+        175
+      ]
+    },
+    "p2521_factorization": {
+      "divisors_below_p": [
+        1,
+        3,
+        5,
+        9,
+        15,
+        45
+      ],
+      "factors": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          141233,
+          1
+        ]
+      ],
+      "integer": 6355485,
+      "middle_lane_remainders": [
+        3,
+        5,
+        7
+      ],
+      "trial_division_through": 375
+    }
+  },
+  "negative_controls": [
+    {
+      "detail": "changing 92828 to 92829 must destroy the p=1009 identity",
+      "id": "mutated-middle-denominator",
+      "rejected": true
+    },
+    {
+      "detail": "R=31 has the required congruence class but does not divide p^2+44",
+      "id": "fake-p2521-minimal-exterior-residual",
+      "rejected": true
+    },
+    {
+      "detail": "the restricted n=25 two-colour source has no opposite pair",
+      "id": "fake-odd-square-two-colour-target",
+      "rejected": true
+    },
+    {
+      "detail": "the primality checker must reject an explicit multiple of 141233",
+      "id": "composite-primality-control",
+      "rejected": true
+    }
+  ],
+  "schema": "es.turn06b.pointwise-localization.verification.v1",
+  "scope": {
+    "nonclaim": "finite enumeration does not prove universal ES occupancy",
+    "pair_scan": "every ordered divisor pair of pa satisfying R|(b+c)",
+    "prime_scan": "every prime p congruent to 1 modulo 8 through bound",
+    "shell_scan": "every integer p/4<a<p/2",
+    "source_scan": "every divisor u of a^2"
+  },
+  "status": "verified",
+  "verification_digest": "b9a8833118ffcb0bbb4ada01b186b8d37924f1bba539ec83cc4793d9d3e8ddad"
+}

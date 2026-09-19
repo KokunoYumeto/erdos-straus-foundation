@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-19",
+  "turn": 6,
+  "collective_byline": "The Clankers",
+  "historical_priority": "not determined",
+  "claims": [
+    {
+      "id": "T6-01",
+      "status": "inherited_reproved",
+      "statement": "Complete first-half E/M atlas and p-coloured pair fibres of size2*tau_div(h).",
+      "locator": "core.tex Section2",
+      "source": "Turn5 core Sections3-4; Elsholtz-Tao Section2",
+      "nonclaim": "This does not prove that a pair exists at every p."
+    },
+    {
+      "id": "T6-02",
+      "status": "proved",
+      "statement": "Swap and original divisor complementation give a free Klein-four action on every actual target-pair set. In particular T_a is divisible by4.",
+      "locator": "core.tex Lemma2.1",
+      "dependencies": [
+        "T6-01"
+      ],
+      "exceptions": "Not true for an arbitrary nonnegative residue coefficient array."
+    },
+    {
+      "id": "T6-03",
+      "status": "proved",
+      "statement": "For every prime p=1 mod4, p>=2^20, the complete sum of real principal-only lower bounds 2P_a-E_a is <=-p*log(p)/24.",
+      "locator": "core.tex Theorem3.2",
+      "dependencies": [
+        "T6-01"
+      ],
+      "proof": "Explicit divisor bound, odd-progression reciprocal-totient bound, and original diagonal mass.",
+      "nonclaim": "This is not an upper bound for the true ES count."
+    },
+    {
+      "id": "T6-04",
+      "status": "proved",
+      "statement": "For arbitrary per-shell sets of at most J even characters, the real lower-bound sum is <=-p*log(p)/24 at p>=2^20*J^3. This includes all subgroup observations containing -1 of index<=J.",
+      "locator": "core.tex Corollary3.3",
+      "dependencies": [
+        "T6-03"
+      ],
+      "exceptions": "No assertion about zero-truncated bounds, unbounded index, or the balanced-integer refinement. Positive weights require the recorded upper/lower ratio."
+    },
+    {
+      "id": "T6-05",
+      "status": "proved",
+      "statement": "Original coset masses and collision energy give T_a>=sum_C b_(|B|/2)(m_C)-E_a, with complete equality locus and multiple-of-four sharpening.",
+      "locator": "core.tex Theorem4.1",
+      "dependencies": [
+        "T6-01",
+        "T6-02"
+      ],
+      "exceptions": "B is an observation subgroup, not assumed to be the actual stabilizer or saturated support. Positivity is not asserted at every p."
+    },
+    {
+      "id": "T6-06",
+      "status": "proved",
+      "statement": "Original complementation gives c(g)=c(pa/g), even coefficients at g^2=pa, and the displayed exact labelled convex refinement.",
+      "locator": "core.tex Section4.2",
+      "dependencies": [
+        "T6-02",
+        "T6-05"
+      ],
+      "exceptions": "The minimizing model is not identified with a newly available divisor source."
+    },
+    {
+      "id": "T6-07",
+      "status": "finite_proved_by_complete_enumeration",
+      "statement": "At prime87481 every first-half real principal bound and its basic integer refinement are nonpositive, although34 shells are occupied.",
+      "locator": "core.tex Section5; certificates/failure_87481.json",
+      "bound": "all21870 first-half shells",
+      "independent_check": "Every shell is independently replayed."
+    },
+    {
+      "id": "T6-08",
+      "status": "finite_proved_by_complete_enumeration",
+      "statement": "The principal-only test covers4515 of4519 hard primes<=2m and misses exactly87481,196561,944329,1915201.",
+      "locator": "core.tex Section7; certificates/principal_census.json",
+      "independent_check": "All positive certificates, full divisor cap/candidate set, and every first-half shell at each miss.",
+      "nonclaim": "Not a new overall ES verification range."
+    },
+    {
+      "id": "T6-09",
+      "status": "finite_exact_certificate",
+      "statement": "The four stated original subgroup/integer certificates return ES states; at p944329,R63 the unsaturated cubic cosets8,8,0 have integer lower bound8 equal to T_a.",
+      "locator": "core.tex Sections5-7; certificates/examples.json",
+      "dependencies": [
+        "T6-05"
+      ],
+      "nonclaim": "These chosen examples do not prove a universal quotient-selection theorem."
+    },
+    {
+      "id": "T6-10",
+      "status": "unproved",
+      "statement": "For every prescribed hard prime, sum over the complete first-half source of T_a is positive.",
+      "locator": "HANDOFF_TURN_7.md",
+      "note": "Neither principal exclusion, finite repair, graph expansion nor metric reconstruction is substituted for this statement."
+    },
+    {
+      "id": "T6-11",
+      "status": "proved_with_exact_finite_example",
+      "statement": "At p=944329,a=236094,R=47, five of23 even-character modes and the actual collision energy certify T_a>=60, attained. Exact rational squared-norm bounds are (1009,1010) and(24,25).",
+      "locator": "core.tex Section6.1; certificates/spectral.json",
+      "dependencies": [
+        "T6-01",
+        "T6-02",
+        "T6-04"
+      ],
+      "exceptions": "No intermediate subgroup exists, but that is not an obstruction to proper Fourier projection. No universal mode-selection theorem."
+    },
+    {
+      "id": "T6-12",
+      "status": "proved",
+      "statement": "For m>=3 define C_m by the finite prime/exponent formula (18b). If p>=2^20 and p^(m-2)>=(12*J*C_m^2)^m, every original full raw sum retaining at most J even modes per shell is <=-p*log(p)/8. C_4=9 gives threshold max(2^20,944784*J^2).",
+      "locator": "core.tex Theorem3.4; certificates/constants.json",
+      "dependencies": [
+        "T6-03",
+        "T6-04"
+      ],
+      "exceptions": "No assertion about zero-truncated sums, sparse shell selection, arbitrary weight ratios, integer balancing, or all possible spectral algorithms. This is not an upper bound on the actual ES count."
+    }
+  ]
+}

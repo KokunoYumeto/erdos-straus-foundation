@@ -1,0 +1,220 @@
+\section{A direct crossing and the exact joined arithmetic windows}\label{sec:windows}
+The preceding character obstruction specifies what a successful crossing must
+change. There is also a concrete positive crossing, and it extends to a sharp
+joint window on an original factor packet. None of the following constructions
+adds a factor that is absent from the source integer.
+
+\begin{theorem}[The maximal divisor domain of a channel involution]\label{thm:quarter}
+At an original source with $4\mid a$, put $V=\operatorname{Div}(a/4)$. The map
+\[
+ \mathcal T(u)=\frac a{4u}\quad(u\in V)                         \tag{W1}
+\]
+is an involution of $V$ and interchanges the tagged E and M hit sets on $V$.
+Among all original divisors $u\mid a^2$, this is its complete integral return
+domain. Retaining the channel tag, its inverse is the same formula. Its only
+possible numerical fixed points satisfy $a=4u^2$; they are not identified across
+the two channel labels.
+\end{theorem}
+\begin{proof}
+$\mathcal T(u)$ is an integer if and only if $4u\mid a$. In that case it and $u$
+divide $a/4$, and the second application returns $u$. Every such divisor is a
+unit modulo $R$. Thus
+\[
+ R\mid4u+1\iff R\mid a(4u+1)=4u(\mathcal T(u)+a)
+ \iff R\mid\mathcal T(u)+a.
+\]
+The character ratio is $\chi_p(\mathcal T(u)/u)=\chi_p(a)$ because
+$\mathcal T(u)/u=a/(4u^2)$. Thus this is the actual non-square crossing
+required on a negative source, rather than a forbidden square-ratio transport.
+This also proves the reverse channel assertion. The fixed-point equation is
+$4u^2=a$. In particular negative-character sources have no numerical fixed
+point. The positive-source example $p=61,a=16,R=3,u=2$ is a fixed point, with
+two different tagged denominator returns.
+\end{proof}
+
+Write $a=2^e A$, $A$ odd, and suppose $e\ge1$. Retain only the specified packet
+\[
+ \mathscr D=\{2^fd:0\le f\le2e,\ d\mid A\}\subseteq\operatorname{Div}(a^2).
+                                                               \tag{W2}
+\]
+The omitted original divisors, whose odd parts divide $A^2$ but not $A$, remain
+outside this packet, not outside the complete atlas. For each $w\mid A$ define
+\[
+ I_E=[-2e-2,-2]_{\mathbb Z},\quad I_M=[-e,e]_{\mathbb Z},\qquad
+ 2^j\equiv-w\pmod R.                                      \tag{W3}
+\]
+\begin{theorem}[Joined-window coefficient theorem]\label{thm:windows}
+The maps
+\[
+ (w,j,E)\longmapsto u_E=2^{-j-2}w,\qquad
+ (w,j,M)\longmapsto u_M=2^{e+j}A/w                         \tag{W4}
+\]
+are bijections from the respective solutions of (W3) in $I_E,I_M$ onto the
+original tagged packet hits. Their inverses read $f=v_2(u)$, the odd part $d$,
+and return $(w,j)=(d,-f-2)$ for E and $(A/d,f-e)$ for M.
+The union of the two integer windows is the interval
+\[
+ [-2e-2,e]_{\mathbb Z},\qquad |I_E\cup I_M|=3e+3.          \tag{W5}
+\]
+On their intersection $[-e,-2]$ the two divisors have product $a/4$, giving
+exactly the crossing (W1). For $e=1$ that intersection is empty.
+
+Let $d_R=\operatorname{ord}_R(2)$ and
+$A_- =\#\{w\mid A:-w\in\langle2\rangle_R\}$. If $3e+3\ge d_R$, the packet
+is jointly occupied if and only if $A_->0$. Moreover put
+\[
+ 2e+1=f_0d_R+\rho,\quad0\le\rho<d_R,\quad
+ \Delta=(e+2)\bmod d_R,\quad\delta=\min(\Delta,d_R-\Delta).
+\]
+Then its exact joint count $C_{\rm packet}$ obeys
+\[
+ A_-\bigl(2f_0+\mathbf1_{\rho\ge d_R-\delta}\bigr)
+ \le C_{\rm packet}\le
+ A_-\bigl(2f_0+\mathbf1_{\rho>0}+\mathbf1_{\rho>\delta}\bigr). \tag{W6}
+\]
+The bracketed constants are the minimum and maximum of the paired cyclic
+count at a target class. In particular every cyclic target is covered exactly
+when $3e+3\ge d_R$; this is an exact interval-cover threshold, not an assertion
+that every abstract target is realized by a prime source.
+\end{theorem}
+\begin{proof}
+For E, $4u+1=0$ is equivalent to $2^{-f-2}=-d$. For M, divide
+$2^fd+2^eA=0$ by the unit $2^ed$ to obtain $2^{f-e}=-A/d$.
+This proves (W3)--(W4) and their inverses. Their integer intervals have no gap
+when $e\ge1$. On the overlap the displayed product is $2^{e-2}A=a/4$.
+
+For the count, remove $f_0$ complete periods from each window. The two remaining
+cyclic intervals have length $\rho$ and displacement $\Delta$. They overlap
+precisely when $\rho>\delta$, and cover the whole cycle precisely when
+$\rho\ge d_R-\delta$. Thus the minimum of their indicator sum is zero or one
+as in (W6), and its maximum is zero, one or two as stated. Sum this exact bound
+over the $A_-$ actual divisors; a divisor outside the subgroup contributes zero.
+For coverage, (W5) contains a complete period precisely at its stated length.
+\end{proof}
+The two label occurrences in an overlap are not one state. For $e=0$ the
+windows are the singleton sets $\{-2\}$ and $\{0\}$; (W5)--(W6) are not used.
+The same prime's upper-half sources remain in the data; their M packet is empty
+by the already proved denominator-size argument.
+
+\section{A complete classification when the nonresidue factor is simple}
+The joined windows admit a complete rather than subpacket interpretation on a
+specified original factor class. This separates an actual odd-component hole
+from merely insufficient bounded powers.
+
+\begin{theorem}[One simple nonresidue factor]\label{thm:simpleNR}
+Suppose $a=Br$, $r$ is prime, $r\nmid B$, $(r/p)=-1$, and every prime factor of
+$B$ is a residue modulo $p$. Let
+\[
+ \mu_B(g)=\#\{v\mid B^2:vB^{-1}=g\pmod R\}.
+\]
+Then the \emph{complete} original channel counts are
+\[
+ \boxed{|E_a|=\mu_B(-p^{-1}),\qquad |M_a|/2=\mu_B(-r).}  \tag{W7}
+\]
+The exact E fibre is $u=rv$, with $vB^{-1}=-p^{-1}$. The first M orientation
+is $u=v$, with $vB^{-1}=-r$, and its paired orientation is $a^2/v$.
+The complements are distinct and exhaust M. All original exponent vectors of
+$B$ and their fine residue multiplicities are retained.
+\end{theorem}
+\begin{proof}
+The original source has character $-1$. The channel-character theorem forces
+an odd exponent of $r$ for E and an even exponent for M. The only permitted
+exponents are $0,1,2$. At exponent one, $u/a=v/B$, giving the E formula.
+At exponent zero, $u/a=v/(Br)$, so M requires $v/B=-r$. Complementation sends
+this orientation to exponent two and is a bijection, proving the full count.
+\end{proof}
+
+In particular let $B=\ell^e$, with $\ell$ prime and $(\ell/p)=1$. Put
+$H=\langle\ell\rangle_R$, $d_R=|H|$. If $4\in H$, retain
+$c=\log_\ell 4\in[0,d_R)$; if $-r\in H$, retain $j=\log_\ell(-r)$.
+The complete counts become
+\[
+ \boxed{\begin{aligned}
+ |E_a|&=\#\{j'\in[-2e-c,-c]:j'\equiv j\pmod{d_R}\},\\
+ |M_a|/2&=\#\{j'\in[-e,e]:j'\equiv j\pmod{d_R}\}.
+ \end{aligned}}                                           \tag{W8}
+\]
+If $-r\notin H$, both vanish. The E map is $u=\ell^{-j'-c}r$, and the first
+M map is $u=\ell^{e+j'}$, with the complementary M word retained. Each window
+has length $2e+1$, hence
+\[
+ \boxed{\bigl||E_a|-|M_a|/2\bigr|\le1.}                  \tag{W9}
+\]
+If $4\notin H$, M requires $-r\in H$, while E requires $-r\in4^{-1}H$.
+Those are disjoint cosets, so at most one channel can occur. No nonexistent
+logarithm $c$ is assigned in that case.
+
+For $\ell=2$, one may use $c=2$ as an integer lift regardless of the order,
+and Theorem~\ref{thm:windows} is an exact classification of $|E|+|M|/2$ on
+this factor class, not just a subpacket. The full M count is twice its first
+orientation count. At fixed $R$ and fixed odd factor $A$, increasing $e$ by
+$d_R$ adds two occurrences per target to each labelled packet in (W3). This is
+an all-exponent recurrence with $p_e=4\cdot2^e A-R$ \emph{varying}; primality
+and the original source range must be checked for each parameter.
+
+The cyclic threshold has an actual sharp boundary example:
+\[
+ p=23209,\quad R=127,\quad a=2\cdot2917,\quad
+ d_R=7,\quad-r\equiv2^2\pmod{127}.
+\]
+The E window occupies $3,4,5$, the M window $6,0,1$, and class 2 is absent.
+Both complete channels are empty one class below $3e+3\ge d_R$.
+At the hard primes $43801,8521,12601$, with residual 31 and respectively
+$a=2\cdot5479,2\cdot1069,2\cdot1579$, the complete pairs
+$(|E|,|M|/2)$ are $(1,0),(0,1),(1,1)$. The one-unit difference in (W9)
+cannot be removed. These primes and every factor are checked by trial division.
+
+\section{Six expanded vertices can still have empty complete square-source channels}
+For a prime vertex $q$, write $\sigma_q=1$ at $q\equiv3\pmod4$ and
+$\sigma_q=3$ at $q\equiv1\pmod4$. Its square source has
+$R=\sigma_q qt^2$, $a=(p+R)/4$, and positive odd $t$ with $R<3p$.
+Turn 4 forces six distinct reachable vertices, not a selector. Here is an exact
+local obstruction at that cardinality, beyond the preceding two-vertex example.
+
+\begin{theorem}[A complete six-vertex local failure certificate]\label{thm:six}
+At the hard prime $p=315361\equiv361\pmod{840}$, the canonical graph has the
+closed six-cycle
+\[
+ 27847\to42901\to13877\to2789\to20233\to18803\to27847.    \tag{W10}
+\]
+Every vertex has exactly its displayed outgoing nonresidue prime, to exponent
+one. At all \emph{17} valid square sources of these six vertices, both original
+E/M channels are empty. The complete source consists of 663 original divisors.
+This is not a closed set in the expanded square graph and is not an ES
+counterexample.
+\end{theorem}
+\begin{proof}
+The six complete canonical factorizations are
+\[
+ 2\cdot42901,\quad2^3\cdot13877,\quad2^5\cdot2789,\quad
+ 2^2\cdot20233,\quad5\cdot18803,\quad3\cdot27847.
+\]
+Exact trial division proves $p$ and all factor primes. Their quadratic symbols
+prove the stated complete successor set. The finite t-ranges, in that order,
+are $\{1,3,5\}$, $\{1\}$, $\{1,3\}$, $\{1,3,5,7,9\}$, $\{1,3\}$, and $\{1,3,5,7\}$.
+They follow from the strict inequality $\sigma_q qt^2<3p$. The certificate lists
+every factorization and every bounded divisor and checks both gates directly.
+Every source in fact has a unique simple nonresidue factor, so (W7) independently
+reduces the two full gates to the two exact positive-factor coefficients.
+Both reductions are checked against the complete divisor list.
+
+For the canonical source $q=42901$, the pure-$2$ subgroup modulo $128703$
+has order 14300 and contains neither required target. Several other sources
+have their target in the generated subgroup but outside their actual bounded
+packet. These are two different certified reasons for vanishing.
+\end{proof}
+An actual exit and successful next source are retained. At $q=20233,t=3$,
+\[
+ A=215413=11\cdot19583
+\]
+has the nonresidue factor 11. The canonical source at that prime is
+$A_{11}=78843=3\cdot41\cdot641$ and has an exterior hit $u=41$ as well as
+four middle states. Its E normalization and ordered triple are in the certificate.
+This is an actual path, not a proof that every newly produced factor reaches a hit.
+No leastness or complete-square-graph failure is asserted for (W10).
+
+The finite certificate is independent of the discovery search that suggested
+this cycle. The proof only needs the displayed prime, its six complete factor
+identities, the exact valid source ranges, and all 663 divisor vectors. The
+independent checker uses direct integer divisors and literal square-residue sets,
+not the first implementation's signed-box recurrence or Euler-symbol routine.
