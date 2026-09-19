@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-19",
+  "tranche": "Turn 7: sharp square-root middle atlas",
+  "claims": [
+    {
+      "id": "T7-C01",
+      "kind": "definition",
+      "statement": "An oriented first-half middle state retains p,a,R,u,g,h,r,s,lambda with p/4<a<p/2, R=4a-p, u|a^2, R|u+a, u<a and the exact gcd normalization.",
+      "proof_locator": "core.tex, Scope and original arithmetic",
+      "dependencies": []
+    },
+    {
+      "id": "T7-C02",
+      "kind": "identity",
+      "statement": "For j=hrlambda, Q=4j-1 and A=h lambda^2, p=RQ-(Q+1)^2/(4A), with QR=p+4hr^2, Qs=p lambda+r and Q+1<2AR.",
+      "proof_locator": "core.tex, equations (2)-(3)",
+      "dependencies": ["T7-C01"]
+    },
+    {
+      "id": "T7-C03",
+      "kind": "theorem",
+      "statement": "For every prime p=1 mod 8 and every oriented middle state, 4p>=3t^2+6t-25 for t=min(R,Q); equivalently t<=4 floor(sqrt((p+7)/12))-1. Equality is attained at p=41.",
+      "proof_locator": "core.tex, A sharp hyperbola bound, first theorem",
+      "dependencies": ["T7-C02"]
+    },
+    {
+      "id": "T7-C04",
+      "kind": "theorem",
+      "statement": "For p modulo 840 in {1,121,169,289,361,529}, 4p>=3t^2+14t-81 and t<=4 floor((sqrt(3p+73)-2)/6)-1; equality has the classified coordinates and occurs at p=1801.",
+      "proof_locator": "core.tex, Theorem Sharp hard-prime refinement",
+      "dependencies": ["T7-C02", "T7-C03"]
+    },
+    {
+      "id": "T7-C05",
+      "kind": "theorem",
+      "statement": "Every oriented middle state at a hard prime belongs to exactly one of the direct and cofactor charts, and the displayed formulas give a complete inverse from the cofactor chart to the original state.",
+      "proof_locator": "core.tex, The complete disjoint two-chart atlas",
+      "dependencies": ["T7-C01", "T7-C04"]
+    },
+    {
+      "id": "T7-C06",
+      "kind": "calculation",
+      "statement": "The p=2521 cofactor state returns a valid original residual-55 state while the original residual-47 shell has neither channel occupied.",
+      "proof_locator": "core.tex, A smaller cofactor is not a smaller original shell",
+      "dependencies": ["T7-C05"]
+    },
+    {
+      "id": "T7-C07",
+      "kind": "theorem",
+      "statement": "The cofactor-chart candidate count is at most K(p)(1+log K(p))^2; the direct-chart divisor count is the explicit finite sum in core.tex.",
+      "proof_locator": "core.tex, Finite candidate bounds",
+      "dependencies": ["T7-C05"]
+    },
+    {
+      "id": "T7-C08",
+      "kind": "impossibility_result",
+      "statement": "For every fixed B there are infinitely many hard primes having no E state with h<=B and no oriented M state with j<=B, although each constructed prime has an explicit endpoint E solution.",
+      "proof_locator": "core.tex, No fixed cutoff on the two original grades",
+      "dependencies": ["quadratic reciprocity", "Dirichlet theorem"]
+    },
+    {
+      "id": "T7-C09",
+      "kind": "certificate_lemma",
+      "statement": "The partial-factor order conditions with F|n-1 and F^2>n prove n prime by forcing F|d-1 for every prime divisor d of n.",
+      "proof_locator": "core.tex, paragraph after bounded-grade theorem",
+      "dependencies": []
+    },
+    {
+      "id": "T7-O01",
+      "kind": "open_obligation",
+      "statement": "Force at least one original E or M coefficient for every hard prime.",
+      "proof_locator": "HANDOFF_TURN_7_REMAINDER.md",
+      "dependencies": ["T7-C05"]
+    }
+  ],
+  "nonclaims": [
+    "No proof or counterexample to the Erdos-Straus conjecture.",
+    "No assertion that either chart is occupied at every hard prime.",
+    "No assertion that the equality quadratic takes infinitely many prime values.",
+    "No identification of the cofactor chart with the original shell having residual Q.",
+    "No prime-independent grade cutoff; T7-C08 disproves that route.",
+    "No new overall computational verification range.",
+    "No Lean build, independent human review or historical-priority determination."
+  ]
+}

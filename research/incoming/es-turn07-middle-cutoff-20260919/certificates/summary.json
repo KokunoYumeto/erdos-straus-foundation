@@ -1,0 +1,18 @@
+{
+  "M_states_with_r_lt_s": 1162,
+  "bound": 3000,
+  "canonical_oriented_M_states": 2324,
+  "cofactor_candidate_tests": 4903,
+  "direct_candidate_tests": 10545,
+  "hard_primes": 6,
+  "output_sha256": {
+    "examples.json": "a2adee9c57c60dd7573463b1c4110c842a34a597971c4e2c315645e7ced411a6",
+    "grade_certificate.json": "93a6196c6683b08242e441c143454d80b6fa3fe5b412bb93b6cb0fbe83eacd03",
+    "scan.json": "15e41407645a484c364ad631d9f3024bc45897e44fb640a22769f28e2f16940f"
+  },
+  "primes": 101,
+  "proof_scope": "Full state bijection and bounds; finite replay is regression only",
+  "success": true,
+  "universal_ES_proved": false,
+  "universal_M_occupancy_proved": false
+}

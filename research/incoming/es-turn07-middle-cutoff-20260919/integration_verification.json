@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-19",
+  "status": "passed",
+  "mathematical_scope": {
+    "general_cutoff": "4p >= 3t^2+6t-25 for every oriented middle state at p=1 mod 8",
+    "hard_cutoff": "4p >= 3t^2+14t-81 on the six hard classes modulo 840",
+    "atlas": "complete disjoint direct/cofactor bijection at hard primes, with exact inverse",
+    "obstruction": "no fixed prime-independent cutoff on original grades h and j",
+    "universal_ES_proved": false,
+    "universal_M_occupancy_proved": false
+  },
+  "source_repairs_after_independent_derivation": [
+    "made positive-divisor premise explicit",
+    "proved B(p)<p in the direct converse",
+    "displayed a^2/u=hs^2 and a+u=Rj in the cofactor return",
+    "stated within-chart uniqueness",
+    "defined hard primes, exterior states, nu_p, m_p and J_p locally",
+    "expanded odd and 2-adic exterior reciprocity",
+    "expanded composite-Q middle Jacobi calculation",
+    "verified the endpoint E state and reciprocal identity",
+    "expanded the full prime-power order proof",
+    "qualified the equality family to prime quadratic values"
+  ],
+  "checker_repairs": [
+    "raw cofactor source inequalities are assertions, not silent filters",
+    "factor exponents are positive typed integers with distinct support",
+    "endpoint and least-nonresidue metadata are cross-checked",
+    "independent checker recomputes hard status and exact cutoff",
+    "independent checker rejects duplicate serialized states",
+    "independent checker enumerates both raw chart domains and candidate counts",
+    "independent checker validates equality forcing, example denominators, summary counts and output hashes"
+  ],
+  "replay": {
+    "bound": 3000,
+    "eligible_primes": 101,
+    "hard_primes": 6,
+    "oriented_r_lt_s_states": 1162,
+    "canonical_oriented_states": 2324,
+    "direct_candidate_tests": 10545,
+    "cofactor_candidate_tests": 4903,
+    "independent_state_checks": 1303,
+    "normal_optimized_outputs_byte_identical": true,
+    "outputs": {
+      "scan.json": "15e41407645a484c364ad631d9f3024bc45897e44fb640a22769f28e2f16940f",
+      "examples.json": "a2adee9c57c60dd7573463b1c4110c842a34a597971c4e2c315645e7ced411a6",
+      "grade_certificate.json": "93a6196c6683b08242e441c143454d80b6fa3fe5b412bb93b6cb0fbe83eacd03",
+      "summary.json": "7fbe1975001e9d1da5d44efa28a5332ef1bfa28933ee4f65c81d6b40c403f130",
+      "independent.json": "fcdd97f14051251a25ea288c3a1312715e81907cab49260cbba8daa3f92b4f82"
+    }
+  },
+  "independent_derivations": [
+    {
+      "scope": "hyperbola bounds, equality and cofactor inverse",
+      "report_sha256": "717bed3f70c593b155e9496ffadd260494295da021c2ae6743906873c777ea7f",
+      "verdict": "passed after explicit positive-divisor and return-proof repairs"
+    },
+    {
+      "scope": "complete disjoint atlas, candidate bounds and checker coverage",
+      "report_sha256": "2abbf20af99ae1ad63dc8ffafdd74393470fe1fd96fc95d592b5c8daa1bd7145",
+      "verdict": "passed; material silent-filter blind spot repaired"
+    },
+    {
+      "scope": "fixed-grade obstruction, reciprocity and order certificate",
+      "report_sha256": "da17b8801dda4a5ac559a37155674ef35957ec48262d3df0a0afb95f94bef7a3",
+      "verdict": "passed after self-containment and metadata-validation repairs"
+    }
+  ],
+  "documents": {
+    "pdf_path": "output/pdf/workbench.pdf",
+    "pdf_sha256": "e1c999ddd144e5bc162930b26a0c0ec27e829902167933fc34399dacf661b051",
+    "pages": 6,
+    "pdflatex_passes": 2,
+    "unresolved_references": 0,
+    "overfull_boxes": 0,
+    "visual_qa_all_pages": true
+  },
+  "scope_note": "Finite replay certifies the declared bounded comparison and the supplied fixed-budget order certificate. It is not a new overall ES verification range, a Lean proof, an independent human review, or a historical-priority determination."
+}

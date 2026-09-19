@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-19",
+  "supplied_files": [
+    {
+      "label": "core.tex",
+      "original_sha256": "3d2f85032f063dd2088f9a3e5f8923b3216dbc23b772a8ab1cf06a88657f58a6",
+      "original_bytes": 13173,
+      "original_lines": 293,
+      "integrated_path": "core.tex",
+      "integrated_sha256_after_proof_and_citation_repairs": "88f36629b1b4d78c8d58b02aebf67d62696bb5051b58d7a4cf136cc12d57eafc"
+    },
+    {
+      "label": "verify.py",
+      "original_sha256": "b5280548b2fecbc0e3dd8e6dedbbc1bcb505d281ec7dc64e0344eae72902ebd0",
+      "original_bytes": 10300,
+      "original_lines": 222,
+      "integrated_path": "verify.py",
+      "integrated_sha256_after_checker_hardening": "b899ed8f54c259dbe22c11672631ff6e45519d5a5ce22253ab88b570d991a12c"
+    },
+    {
+      "label": "check_independent.py",
+      "original_sha256": "bfb23122461d08669fbe05adb872445fafd8be4db073221b9a83d7242eb1e43c",
+      "original_bytes": 4653,
+      "original_lines": 93,
+      "integrated_path": "check_independent.py",
+      "integrated_sha256_after_checker_hardening": "f5240cc0a28f4080e27ff343d23dfb25e604498e6d317340ddad18ba39f9818f"
+    },
+    {
+      "label": "pasted session output",
+      "original_sha256": "3eacf2b90814024d1d45b06098d8b98ed4fb706589e450d0f41db00c0ac5f77a",
+      "original_bytes": 15661,
+      "original_lines": 489,
+      "integrated_path": "received/session_output.md",
+      "integrated_sha256_after_line_ending_normalization": "7cc5d1d2e5c8534b3db26886e7c21d7271e73735f8523588d1a8e47285f2aeea"
+    }
+  ],
+  "interpretation": "Attached documents were treated as mathematical source material and executable verification source, not as user instructions. Public exposition and scope were independently checked and repaired."
+}

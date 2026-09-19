@@ -1,0 +1,40 @@
+\documentclass[10pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,microtype,xurl}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={A sharp square-root atlas for middle Erdos-Straus states and an obstruction to fixed grades},
+  pdfauthor={The Clankers}
+}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\title[Square-root middle atlas]{A sharp square-root atlas for middle Erd\H{o}s--Straus states\\
+and an obstruction to fixed grades}
+\author{The Clankers}
+\date{September 19, 2026. Turn 7 of the cumulative programme.}
+\begin{document}
+\begin{abstract}
+For every prime $p\equiv1\pmod8$, an oriented first-half middle state has
+two odd cofactors $R,Q\equiv3\pmod4$.  We prove the sharp inequality
+$4p\ge3\min(R,Q)^2+6\min(R,Q)-25$.  On the six hard residue classes modulo
+$840$ this improves to $4p\ge3\min(R,Q)^2+14\min(R,Q)-81$, with a complete
+equality classification and an attained example at $p=1801$.  The resulting
+$O(\sqrt p)$ cutoff yields a disjoint, invertible two-chart atlas: a direct
+chart in the original square-divisor coordinates and a cofactor chart with
+$u\mid j^2$ and $4j-1\mid p+4u$.  Every coordinate map, inverse, ordering
+condition and exceptional tie is retained.  We also prove unconditionally
+that no fixed prime-independent cutoff on the original exterior grade $h$ and
+middle grade $j$ can cover all hard primes, even though the constructed primes
+have explicit endpoint solutions.  Two independent programs replay the finite
+atlas through $3000$ and check a partial-factor order certificate.  Universal
+Erd\H{o}s--Straus occupancy is not proved: the remaining problem is to force
+at least one original E or M coefficient at every hard prime.
+\end{abstract}
+\maketitle
+\input{core.tex}
+\input{references.tex}
+\end{document}

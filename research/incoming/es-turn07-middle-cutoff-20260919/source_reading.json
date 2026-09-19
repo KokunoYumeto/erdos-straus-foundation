@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-19",
+  "task": "Turn 7 sharp square-root middle atlas and fixed-grade obstruction",
+  "primary_sources": [
+    {
+      "authors": ["Christian Elsholtz", "Terence Tao"],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "journal": "Journal of the Australian Mathematical Society 94(1), 50-105",
+      "version": "arXiv:1107.1010v6",
+      "url": "https://arxiv.org/abs/1107.1010v6",
+      "local_sha256": "b2f22be400ed6443569f4f79f40f9d9424f8aafee8548646cb11a6ed488ae604",
+      "locators": ["Section 2", "equations (2.13)-(2.22)", "Propositions 2.6-2.7", "PDF pages 14-15"],
+      "use": "Type-II coordinate antecedent and verified secondary historical locator. Proposition 2.7 attributes one equivalent criterion to Rosati. Rosati's original paper was not independently read."
+    },
+    {
+      "author": "Allen Hatcher",
+      "year": 2022,
+      "revision": "September 2024",
+      "title": "Topology of Numbers",
+      "publisher": "American Mathematical Society",
+      "url": "https://pi.math.cornell.edu/~hatcher/TN/TNbook.pdf",
+      "local_sha256": "9b7c71120f96dea27a2a1560f59e0e156e915241088336bd130941dc78cfe105",
+      "locators": ["Section 6.4", "pages 207-213"],
+      "use": "Quadratic reciprocity and the supplementary law for 2 in the fixed-grade construction."
+    },
+    {
+      "author": "Andrew V. Sutherland",
+      "year": 2017,
+      "title": "Dirichlet's theorem on primes in arithmetic progressions",
+      "series": "MIT 18.785 Lecture Notes 18",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "locators": ["Theorem 18.1"],
+      "use": "Infinitely many primes in the reduced CRT class."
+    }
+  ],
+  "project_lineage": [
+    {
+      "path": "../es-turn06-full-shell-20260919/HANDOFF_TURN_7.md",
+      "sha256": "25b0a39ad687d06350278054ac66bc6ec05f9d2189cb67a0ca85bc7681620502",
+      "use": "Exact inherited frontier; no predecessor theorem was silently promoted."
+    },
+    {
+      "path": "../es-turn06b-pointwise-localization-20260919/pointwise_localization.md",
+      "sha256": "cfd284a022972749f50d1b56d324e44b8b75ea86c7bec9f43358f593a3fc16c9",
+      "use": "Pointwise localization lineage and scope control."
+    }
+  ],
+  "historical_caution": "The supplied draft named broader Mizony/Thépault and Rosati-Yamamoto lineage. Only Elsholtz-Tao Proposition 2.7 and its explicit Rosati attribution were verified at content level, so the public proof uses that precise secondary locator and makes no stronger direct attribution.",
+  "nonimports": [
+    "No theorem was imported from routing metadata or a model summary.",
+    "No universal occupancy claim was imported from the supplied session output.",
+    "No claim of infinitely many prime values of the equality quadratic.",
+    "No historical-priority conclusion."
+  ]
+}

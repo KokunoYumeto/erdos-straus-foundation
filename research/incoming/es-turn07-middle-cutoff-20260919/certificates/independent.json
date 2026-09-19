@@ -1,0 +1,10 @@
+{
+  "bound": 3000,
+  "independence": "primitive h,r,s enumeration; no main or predecessor import",
+  "primes": 101,
+  "scan_sha256": "15e41407645a484c364ad631d9f3024bc45897e44fb640a22769f28e2f16940f",
+  "state_checks": 1303,
+  "success": true,
+  "universal_ES_proved": false,
+  "universal_TypeII_occupancy_proved": false
+}

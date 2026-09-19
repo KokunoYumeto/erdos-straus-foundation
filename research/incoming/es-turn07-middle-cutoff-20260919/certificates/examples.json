@@ -1,0 +1,468 @@
+{
+  "cofactor_not_original_shell": {
+    "R": 47,
+    "a": 642,
+    "cells": [
+      {
+        "E": false,
+        "M": false,
+        "u": 1
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 2
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 3
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 4
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 6
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 9
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 12
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 18
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 36
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 107
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 214
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 321
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 428
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 642
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 963
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 1284
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 1926
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 3852
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 11449
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 22898
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 34347
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 45796
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 68694
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 103041
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 137388
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 206082
+      },
+      {
+        "E": false,
+        "M": false,
+        "u": 412164
+      }
+    ],
+    "factorization": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        107,
+        1
+      ]
+    ],
+    "p": 2521
+  },
+  "equality_family": {
+    "n_domain": "all integers n>=0; no infinitude of prime values asserted",
+    "p": "12r^2-40r+9",
+    "r": "14+210n",
+    "s": "3r-9"
+  },
+  "nonhard_counterexample": {
+    "Q": 15,
+    "R": 15,
+    "a": 52,
+    "beta": [
+      [
+        2,
+        1
+      ],
+      [
+        13,
+        -1
+      ]
+    ],
+    "channel": "M",
+    "chart": "direct",
+    "complement_denominators": [
+      52,
+      772,
+      5018
+    ],
+    "complement_u": 338,
+    "denominators": [
+      52,
+      5018,
+      772
+    ],
+    "factorization": [
+      [
+        2,
+        2
+      ],
+      [
+        13,
+        1
+      ]
+    ],
+    "h": 2,
+    "j": 4,
+    "lambda_": 1,
+    "p": 193,
+    "r": 2,
+    "s": 13,
+    "u": 8
+  },
+  "states": [
+    {
+      "Q": 7,
+      "R": 7,
+      "a": 12,
+      "beta": [
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "channel": "M",
+      "chart": "direct",
+      "complement_denominators": [
+        12,
+        82,
+        492
+      ],
+      "complement_u": 72,
+      "denominators": [
+        12,
+        492,
+        82
+      ],
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "h": 2,
+      "j": 2,
+      "lambda_": 1,
+      "p": 41,
+      "r": 1,
+      "s": 6,
+      "u": 2
+    },
+    {
+      "Q": 11,
+      "R": 7,
+      "a": 12,
+      "beta": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "channel": "M",
+      "chart": "direct",
+      "complement_denominators": [
+        12,
+        123,
+        164
+      ],
+      "complement_u": 16,
+      "denominators": [
+        12,
+        164,
+        123
+      ],
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "h": 1,
+      "j": 3,
+      "lambda_": 1,
+      "p": 41,
+      "r": 3,
+      "s": 4,
+      "u": 9
+    },
+    {
+      "Q": 55,
+      "R": 47,
+      "a": 462,
+      "beta": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          -1
+        ]
+      ],
+      "channel": "M",
+      "chart": "direct",
+      "complement_denominators": [
+        462,
+        25214,
+        59433
+      ],
+      "complement_u": 1089,
+      "denominators": [
+        462,
+        59433,
+        25214
+      ],
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "h": 1,
+      "j": 14,
+      "lambda_": 1,
+      "p": 1801,
+      "r": 14,
+      "s": 33,
+      "u": 196
+    },
+    {
+      "Q": 95,
+      "R": 95,
+      "a": 2256,
+      "beta": [
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          47,
+          -1
+        ]
+      ],
+      "channel": "M",
+      "chart": "direct",
+      "complement_denominators": [
+        2256,
+        214296,
+        20143824
+      ],
+      "complement_u": 212064,
+      "denominators": [
+        2256,
+        20143824,
+        214296
+      ],
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          47,
+          1
+        ]
+      ],
+      "h": 24,
+      "j": 24,
+      "lambda_": 1,
+      "p": 8929,
+      "r": 1,
+      "s": 94,
+      "u": 24
+    },
+    {
+      "Q": 47,
+      "R": 55,
+      "a": 644,
+      "beta": [
+        [
+          2,
+          2
+        ],
+        [
+          7,
+          -1
+        ],
+        [
+          23,
+          -1
+        ]
+      ],
+      "channel": "M",
+      "chart": "cofactor",
+      "complement_denominators": [
+        644,
+        30252,
+        1217643
+      ],
+      "complement_u": 25921,
+      "denominators": [
+        644,
+        1217643,
+        30252
+      ],
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "h": 1,
+      "j": 12,
+      "lambda_": 3,
+      "p": 2521,
+      "r": 4,
+      "s": 161,
+      "u": 16
+    }
+  ]
+}

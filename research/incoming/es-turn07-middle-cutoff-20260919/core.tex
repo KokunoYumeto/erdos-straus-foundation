@@ -1,0 +1,427 @@
+\section{Scope and original arithmetic}
+The universal existence obligation is still outstanding. This note proves a
+sharp square-root cutoff for a \emph{complete two-chart atlas of middle states},
+not that this atlas is occupied at every prime. It also rules out a fixed,
+prime-independent cutoff on the original exterior grade $h$ and middle grade
+$j$. Neither statement resolves the Erd\H{o}s--Straus conjecture.
+
+Let $p\equiv1\pmod8$ be prime. Throughout, divisors are positive divisors.
+Call $p$ \emph{hard} when
+\[
+ p\bmod840\in\{1,121,169,289,361,529\}.
+\]
+An original first-half middle state consists of
+\[
+ p/4<a<p/2,\quad R=4a-p,\quad u\in\mathbb Z_{>0},\quad
+ u\mid a^2,\quad R\mid u+a.
+\]
+Write $a=\prod_l l^{e_l}$ and retain
+$\beta_l=v_l(u)-e_l\in[-e_l,e_l]$. Divisor complementation $u\mapsto a^2/u$
+exchanges the last two ordered denominators. We choose $u<a$, recording the
+orientation bit; $u=a$ cannot be a middle state. With $g=\gcd(a,u)$ put
+\[
+ (h,r,s)=(g^2/u,u/g,a/g),\quad \lambda=(r+s)/R.
+\]
+Then $a=hrs$, $u=hr^2$, $r<s$, $\gcd(r,s)=1$, and
+\[
+ \frac4p=\frac1a+\frac1{phs\lambda}+\frac1{phr\lambda}.       \tag{1}
+\]
+The ordered inverse is $u=pa^2/(Ry-pa)$. These are the inherited Type-II
+coordinates \cite[\S2, Proposition 2.6]{ET}. All source exponents, the orientation
+bit and both complementary divisors are retained.
+
+An original first-half exterior state has the same positive data
+$p/4<a<p/2$, $R=4a-p$, $u\mid a^2$ and the exterior gate
+$R\mid4u+1$.  The same gcd normalization gives $a=hrs$, $u=hr^2$ and
+$\gcd(r,s)=1$.  Since
+\[
+ pr+s\equiv s(4hr^2+1)\equiv0\pmod R,
+\]
+the integer $\kappa=(pr+s)/R$ returns the ordered triple
+\[
+ (a,hs\kappa,phr\kappa).
+\]
+Indeed its last two reciprocals sum to
+$(pr+s)/(phrs\kappa)=R/(pa)$, so the three reciprocals sum to $4/p$.
+These exterior coordinates are used only in the fixed-grade theorem below;
+they are not identified with the middle coordinates.
+
+Set
+\[
+ j=hr\lambda,\quad Q=4j-1,\quad A=h\lambda^2.
+\]
+The original equations give
+\[
+ QR=p+4hr^2,\qquad Qs=p\lambda+r,\qquad Q+1<2AR,             \tag{2}
+\]
+\[
+ \boxed{p=RQ-\frac{(Q+1)^2}{4A}.}                         \tag{3}
+\]
+Both $R,Q$ are $3\pmod4$ and lie in $(0,p)$: indeed $hr^2<a<p/2$, so
+$QR<3p$ and $R\ge3$. No coprimality between $R$ and $Q$ is required.
+The strict inequality in (2) is exactly $r<s$.
+
+\section{A sharp hyperbola bound}
+\begin{theorem}[All $p\equiv1\pmod8$]
+Let $t=\min(R,Q)$ in an original oriented middle state. Then
+\[
+ \boxed{4p\ge3t^2+6t-25.}                                \tag{4}
+\]
+Equivalently, putting $K_0(p)=\lfloor\sqrt{(p+7)/12}\rfloor$,
+\[
+ \min(R,Q)\le4K_0(p)-1.
+\]
+The constant is attained at $p=41$.
+\end{theorem}
+\begin{proof}
+First suppose $A\ge2$. If $Q=t$, equation (3) immediately gives
+\[
+ p\ge t^2-\frac{(t+1)^2}{4A}\ge\frac{7t^2-2t-1}{8}.
+\]
+If $R=t$, the function $tQ-(Q+1)^2/(4A)$ is strictly increasing on the
+actual interval $Q+1<2At$, so the same bound follows by setting $Q=t$.
+Its difference from $(3t^2+6t-25)/4$ is $(t-7)^2/8$.
+
+Now $A=1$ implies $h=\lambda=1$, $Q=4r-1$, $R=r+s$. The tie $R=Q$
+would give $s=3r-1$ and $p=(2r-1)(6r-1)$; its only possible prime case
+$r=1$ gives $p=5$, outside the domain. If $Q=t<R$, then $R\ge t+4$, and
+\[
+ p\ge\frac{3t^2+14t-1}{4}>\frac{3t^2+6t-25}{4}.
+\]
+If $R=t<Q$, write $Q=t+4k$. The original strict order yields
+$1\le k\le(t-3)/4$, so $t\ge7$, and
+\[
+ p=f_t(k):=\frac{3t^2+(8k-2)t-(4k+1)^2}{4}.             \tag{5}
+\]
+This function is concave. At the first endpoint it equals
+$D(t):=(3t^2+6t-25)/4$. At the last endpoint it is $t^2-t-1$, whose
+excess over $D(t)$ is $(t-3)(t-7)/4\ge0$. This proves (4). Finally
+$t\equiv3\pmod4$, so write $t=4k-1$. Inequality (4) is then exactly
+$p\ge12k^2-7$, or $k^2\le(p+7)/12$. Thus it is equivalent to
+$k\le\lfloor\sqrt{(p+7)/12}\rfloor=K_0(p)$ and hence to the displayed
+cutoff on $t$.
+At $p=41$ it is attained by $(h,r,s,\lambda)=(1,3,4,1)$ and by
+$(2,1,6,1)$, both with $a=12$ and $t=7$.
+\end{proof}
+
+\begin{theorem}[Sharp hard-prime refinement]\label{thm:hard}
+Suppose additionally
+\[
+ p\bmod840\in\{1,121,169,289,361,529\}.
+\]
+Then
+\[
+ \boxed{4p\ge3t^2+14t-81.}                               \tag{6}
+\]
+Let
+\[
+ K(p)=\left\lfloor\frac{\sqrt{3p+73}-2}{6}\right\rfloor,
+ \qquad B(p)=4K(p)-1.
+\]
+Then $\min(R,Q)\le B(p)$. Equality in (6) forces
+\[
+ h=\lambda=1,\quad Q=R+8,\quad s=3r-9,\quad
+ p=12r^2-40r+9.                                         \tag{7}
+\]
+It is attained at $p=1801$, $(h,r,s,\lambda)=(1,14,33,1)$.
+\end{theorem}
+\begin{proof}
+A hard prime is at least 1009; this also follows by checking the six possible
+progressions below that number. For $A\ge2$, the preceding bound has excess
+$(t-7)(t-23)/8$ over the right side of (6) divided by four. This is nonnegative
+for $t\ge23$. For $t\le23$, that latter expression is at most 457, strictly
+below $p$. Thus equality is impossible in this case.
+
+For $A=1$, the tie is already excluded. If $Q=t<R$, the bound in the previous
+proof exceeds the desired one by 20. In (5), the case $k=1$ would give
+$p=12(r-1)^2-7\equiv2\pmod3$, impossible for a hard prime. Hence $k\ge2$,
+which requires $t\ge11$. Concavity reduces to $k=2$ and $k=(t-3)/4$.
+The first is exactly (6); the last has excess $(t-7)(t-11)/4\ge0$.
+The possible equality at $t=11$ gives $p=109$, not hard. All remaining equality
+cases have $k=2$, giving (7). For the cutoff formula, write the cofactor minimum
+as $t=4m-1$. Inequality (6) is exactly
+\[
+ p\ge12m^2+8m-23.
+\]
+The positive root of $12X^2+8X-(p+23)$ is
+$(\sqrt{3p+73}-2)/6$; therefore (6) is equivalent to
+$m\le K(p)$ and to $t\le B(p)$.
+For $p=1801$, $a=462$, $u=196$, $R=47$, $Q=55$ and the ordered triple is
+$(462,59433,25214)$. Direct multiplication verifies (1).
+More generally $r=14+210n$, $s=3r-9$ gives positive integral data with
+$\gcd(r,s)=1$, $p=12r^2-40r+9\equiv121\pmod{840}$ and equality in (6)
+for every $n\ge0$. These data are instances of the hard-prime theorem exactly
+when the displayed value of $p$ is prime; $n=0$ gives $p=1801$, whereas, for
+example, $n=1$ gives $593161=19\cdot31219$. No infinitude of prime values of
+this quadratic is asserted.
+\end{proof}
+
+The hard restriction cannot simply be replaced by $p\equiv1\pmod{24}$.
+At $p=193$, $(h,r,s,\lambda)=(2,2,13,1)$ has $R=Q=15$ and violates (6).
+The valid general inequality (4) is retained there.
+
+\section{The complete disjoint two-chart atlas}
+\begin{theorem}[Original-coordinate completeness]
+For a hard prime, every middle state with its chosen $r<s$ orientation occurs
+in exactly one of the following charts.
+
+\textbf{Direct chart:}
+\[
+ 3\le R\le B(p),\quad R\equiv3\pmod4,\quad a=(p+R)/4,
+\]
+\[
+ u\in\mathbb Z_{>0},\quad u\mid a^2,\quad u<a,\quad R\mid u+a,\quad
+ Q=(p+4u)/R,\quad R\le Q.                               \tag{8}
+\]
+
+\textbf{Cofactor chart:}
+\[
+ 1\le j\le K(p),\quad Q=4j-1,\quad
+ u\in\mathbb Z_{>0},\quad u\mid j^2,\quad Q\mid p+4u,\quad
+ R=(p+4u)/Q>Q.                                             \tag{9}
+\]
+The inverse from (9) is
+\[
+ g=\gcd(j,u),\quad
+ \boxed{h=g^2/u,\quad r=u/g,\quad\lambda=j/g,\quad s=R\lambda-r,}
+                                                                    \tag{10}
+\]
+\[
+ a=Rj-u=hrs,
+\]
+and then (1). The tie $R=Q$ belongs only to (8).
+\end{theorem}
+\begin{proof}
+Equation (2) sends every original state with $Q<R$ to (9), since
+$j^2/u=h\lambda^2$ is integral. Theorem~\ref{thm:hard} puts its $j$ in the
+stated range. A state with $R\le Q$ goes to (8).
+
+Conversely, data in the direct chart already have the original positive
+divisor and congruence conditions.  To check the interval explicitly, put
+$K=K(p)$.  A hard prime has $K\ge2$, and the floor definition gives
+$p\ge12K^2+8K-23$.  Hence
+\[
+ p-B(p)\ge12K^2+4K-22>0.
+\]
+Thus $0<R<p$ and $p/4<a<p/2$.  Moreover
+$p+4u=4(a+u)-R$, so the displayed $Q$ is integral.  The gcd normalization
+in the first section now reconstructs the unique positive
+$(h,r,s,\lambda)$ and (1).
+
+For data in the cofactor chart, the primewise valuation inequality
+$u\mid j^2$ proves the
+integrality of $h=g^2/u$ in (10), and gives $j=hr\lambda$, $u=hr^2$,
+$\gcd(r,\lambda)=1$. The relation $RQ=p+4u$ becomes
+$p=4hr(R\lambda-r)-R$, proving $a=hrs$.
+
+The range entails $p>4j^2-2j$. Indeed, $j\le K(p)$ gives
+$p\ge12j^2+8j-23$; the claimed strict inequality follows for $j\ge2$, and
+for $j=1$ from $p\ge1009$. Since $u\le j^2$,
+\[
+ jp>u(4j-2)
+\]
+implies $Rj>2u$, hence $u<a$ and $s>r>0$. Also
+\[
+ p(Q-1)-4u>0:
+\]
+for $j=1$ this is $2p-4>0$, and for $j\ge2$ the lower bound
+$p>2j(2j-1)$ makes it greater than
+$4j\{(2j-1)^2-j\}>0$. Thus $R<p$. Both factors $Q,R$ are $3\pmod4$,
+so $p/4<a<p/2$.
+
+As $r\le j<p$, a prime dividing $r$ and $R$ would divide $p$ by $RQ=p+4u$,
+which is impossible. Hence $\gcd(r,s)=\gcd(r,R\lambda)=1$. The original
+divisor and gate relations are now explicit:
+\[
+ \frac{a^2}{u}=hs^2\in\mathbb Z_{>0},\qquad a+u=Rj.
+\]
+Also $\gcd(a,u)=hr$ and $\gcd(j,u)=hr$, since
+$\gcd(r,s)=\gcd(r,\lambda)=1$.  The original normalization at $(a,u)$
+therefore recovers exactly (10). Its inverse reads $j=hr\lambda$ and the same
+integer $u$. Within either chart, $R=4a-p$, $u$, $Q=(p+4u)/R$ and
+$j=(Q+1)/4$ are fixed, and the gcd normalization is unique. The disjoint
+inequalities in (8)--(9) prove cross-chart uniqueness. Restore the recorded orientation by
+$u\mapsto a^2/u$ and swapping the last two denominators.
+\end{proof}
+
+The congruence $u\mid j^2$, $4j-1\mid p+4u$ is derived here from the original
+Type-II coordinates. For historical placement, Elsholtz--Tao
+\cite[\S2, Proposition 2.7]{ET} record several equivalent Type-II criteria,
+including a form that they attribute to Rosati. We did not independently
+consult Rosati's 1954 paper and therefore do not claim that (9)--(10) occur
+there in this form. The contribution calculated here is the cutoff, its
+hard-prime refinement and equality, and the complete disjoint return.
+A Type-II existence theorem would be stronger than the original two-channel
+conjecture; no such existence theorem is asserted.
+
+The two prime-exponent boxes remain different objects. Chart (9) starts with
+$u\mid j^2$; its output is the newly reconstructed integer $a$ and the original
+box $u\mid a^2$. They share the retained integer $u$, not a falsely identified
+prime-factor inventory. In particular, $u\mid j$ is not sufficient as a
+replacement: the $p=2521$ example below needs $j=12$, $u=16$.
+
+\paragraph{Finite candidate bounds.}
+There are $K(p)$ possible values of each small modulus. The direct chart tests
+exactly at most
+\[
+ \frac12\sum_{j=1}^{K(p)}
+ \left[\tau_{\rm div}\!\left(((p+4j-1)/4)^2\right)-1\right]
+\]
+original divisors. The cofactor chart tests at most
+\[
+ \boxed{\sum_{j\le K(p)}\tau_{\rm div}(j^2)
+ \le K(p)\left(\sum_{d\le K(p)}\frac1d\right)^2
+ \le K(p)(1+\log K(p))^2.}                              \tag{11}
+\]
+Indeed $\tau(j^2)=\sum_{d\mid j}2^{\omega(d)}\le d_3(j)$, and
+$\sum_{j\le K}d_3(j)=\sum_{abc\le K}1\le K(\sum_{a\le K}1/a)^2$.
+These are candidate counts, not a claim of polynomial-time factorization.
+
+\section{A smaller cofactor is not a smaller original shell}
+At $p=2521$, the original middle state
+\[
+ (a,R,Q,u,h,r,s,\lambda,j)=(644,55,47,16,1,4,161,3,12)
+\]
+is returned by the cofactor chart. The original shell at residual $47$ has
+\[
+ a'=(2521+47)/4=642=2\cdot3\cdot107.
+\]
+Its complete square-divisor residues modulo 47 are obtained by multiplying
+\[
+ \{1,3,9,2,6,18,4,12,36\}
+\]
+by $1,13,28$. None is the middle target $16$ or the exterior target $35$.
+Thus both of that shell's channels are empty. Simply interchanging $R,Q$ and
+calling the result a state of the other original shell would be false.
+The valid inverse instead uses $j=12$, $u\mid12^2$ and (10).
+
+An actual tie is $p=8929$, $(a,u,h,r,s,\lambda)=(2256,24,24,1,94,1)$,
+for which $R=Q=95$. It is counted once, in the direct chart. All shared
+prime factors of the two cofactors are retained.
+
+\section{No fixed cutoff on the two original grades}
+Write $(\cdot/p)$ for the Legendre symbol and define
+\[
+ \nu_p=\min\{n\ge1:(n/p)=-1\},
+\]
+\[
+ m_p=\min\{m\ge1:m\equiv3\pmod4,\ (m/p)=-1\},
+ \qquad J_p=(m_p+1)/4.
+\]
+These minima range over positive integers, not only primes.  The exterior
+grade is the $h$ in the exterior normalization above; the oriented middle
+grade is $j=hr\lambda$.
+
+\begin{theorem}[An unconditional bounded-grade obstruction]
+For every integer $B\ge1$, there are infinitely many hard primes $p$ for which
+no original E state has $h\le B$ and no oriented M state has $j=hr\lambda\le B$.
+These primes nevertheless have explicit endpoint E solutions.
+\end{theorem}
+\begin{proof}
+Dirichlet's theorem in the reduced class $3\pmod4$ first supplies a prime
+$q\equiv3\pmod4$ with $q>\max(7,4B)$. Put
+\[
+ L=8\prod_{\substack{l<q\text{ odd prime}}}l.
+\]
+The CRT conditions
+\[
+ p\equiv1\pmod L,\qquad p\equiv-1\pmod q                \tag{12}
+\]
+define one class modulo $Lq$, since $q\nmid L$. It is reduced: every prime
+dividing $L$ sees residue $1$, while $q$ sees residue $-1$. Dirichlet's theorem
+\cite[Theorem 18.1]{Dirichlet} supplies infinitely many primes in it; discard
+the finitely many at most $q$. The class is $1\pmod{840}$.
+
+Every odd prime $l<q$ is a quadratic residue modulo $p$, because quadratic
+reciprocity and $p\equiv1\pmod l$ give
+$(l/p)=(p/l)=1$; also $(2/p)=1$ since $p\equiv1\pmod8$
+\cite[\S6.4, especially pp.~207--213]{Hatcher}. The prime $q$ is a nonresidue because
+$(q/p)=(p/q)=(-1/q)=-1$. Every positive integer below $q$ factors over the
+preceding residue primes. Multiplicativity therefore proves
+\[
+ \nu_p=m_p=q.
+\]
+
+Let an exterior state be given.  Its gate implies $\gcd(u,R)=1$.  For an odd
+prime $l\mid u$, one also has $l\mid a$ and $R\equiv-p\pmod l$.  Since
+$R\equiv3\pmod4$, reciprocity gives, with the two signs retained,
+\[
+ (l/R)=(-1)^{(l-1)/2}(R/l)
+       =(-1)^{(l-1)/2}(-1/l)(p/l)=(l/p).
+\]
+If $2\mid u$, then $2\mid a$, $R\equiv7\pmod8$, and
+$(2/R)=1=(2/p)$. Multiplying with the full prime-power exponents yields
+$(u/R)=(u/p)$. The gate $4u\equiv-1\pmod R$ now gives
+$(u/R)=(-1/R)=-1$. Since $u=hr^2$, it follows that $(h/p)=-1$ and hence
+$h\ge\nu_p=q>B$.
+
+For a middle state, every odd prime $l\mid h$ satisfies $Q\equiv-1\pmod l$.
+Because $Q\equiv3\pmod4$, Jacobi reciprocity gives
+$(l/Q)=(-1)^{(l-1)/2}(Q/l)=1$. If $2\mid h$, then
+$Q\equiv7\pmod8$ and $(2/Q)=1$. Thus $(h/Q)=1$. Moreover
+$\gcd(hr,Q)=1$ and (2) gives $p\equiv-4hr^2\pmod Q$, whence
+$(p/Q)=-1$. Since $p\equiv1\pmod4$, reciprocity introduces no further sign:
+\[
+ (Q/p)=(p/Q)=-(h/Q)=-1.
+\]
+Since $Q\equiv3\pmod4$, $Q\ge m_p=q$, so
+$j=(Q+1)/4\ge(q+1)/4\ge B+1>B$.
+Finally (12) gives the original E state
+\[
+ R=q,\quad a=u=(p+q)/4,\quad h=a,\quad r=s=1,
+ \quad\kappa=(p+1)/q,
+\]
+with ordered solution $(a,a\kappa,pa\kappa)$. Thus these are genuine
+solution-bearing primes, not proposed counterexamples.  Explicitly,
+$p\equiv1\pmod4$, $q\equiv3\pmod4$ and $p\equiv-1\pmod q$ make
+$a$ and $\kappa$ integral; $0<q<p$ gives $p/4<a<p/2$; and
+$R=4a-p=q$, $u\mid a^2$, $4u+1=p+q+1\equiv0\pmod q$. Finally
+\[
+ \frac1a+\frac1{a\kappa}+\frac1{pa\kappa}
+ =\frac1a+\frac{p+1}{pa\kappa}
+ =\frac1a+\frac q{pa}=\frac4p.
+\]
+\end{proof}
+
+This theorem concerns the specific fixed grades $h$ and $j$. It does not exclude
+$p$-dependent cutoffs, a cutoff relative to $\nu_p$ or $J_p$, a finite residual
+criterion, or a different algorithm. Its progression is endpoint-soluble; it is
+not a claimed obstruction in the endpoint-free remaining branch.
+
+The supplied finite example has a separate partial-factor order certificate.
+Let $n>1$, and let the positive integer $F$ be completely factored. If
+$F\mid n-1$, $F^2>n$, and for every prime
+$l\mid F$ there is $a_l$ with
+\[
+ a_l^{n-1}\equiv1\pmod n,\qquad
+ \gcd(a_l^{(n-1)/l}-1,n)=1,
+\]
+then $n$ is prime. Indeed, if $d$ is any prime divisor of $n$, reduction
+modulo $d$ shows that the order of $a_l$ divides both $d-1$ and $n-1$.
+The gcd condition says that this order does not divide $(n-1)/l$; consequently
+it contains the full $l$-primary part of $n-1$. Doing this for every
+$l\mid F$ proves $F\mid d-1$. Were $n$ composite, its least prime divisor
+would satisfy $d\le\sqrt n<F$ while $d\equiv1\pmod F$, a contradiction.
+A probable-prime screen used to discover the supplied example is not an input
+to this final order proof.
+
+\section{Remaining universal obligation}
+The square-root atlas is complete for M but can still, logically, be empty.
+It is a terminating decision procedure for a fixed input, not a proof that it
+returns a witness. E remains a separate original channel. The fixed-grade
+obstruction explains why a constant $h/j$ inventory cannot close the problem;
+it is not a substitute for a lower bound on the full source.
+
+Turn 7's requested universal existence, uniformly positive bound or finite
+\emph{prime-parameter} cutoff has therefore not been discharged. The exact
+remaining assertion is the positivity of at least one original E/M coefficient
+for every prescribed hard prime. No theorem here assumes that assertion.
+
+The standard-library replay compares complete first-half M enumeration with
+both small charts at every $p\equiv1\pmod8$ prime through its declared bound.
+A separate checker enumerates the primitive $(h,r,s)$ domain without importing
+the first program. Every original state, its orientation, the cofactor equality
+cases and the invalid shell-swap fixture are retained. Execution receipts state
+actual outcomes and bounds; no independent mathematical review, formal Lean
+build, new overall ES verification range or historical-priority conclusion is
+claimed.

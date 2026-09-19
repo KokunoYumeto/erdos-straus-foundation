@@ -41,8 +41,8 @@ source-located passages; it is not presented as the complete history.
 
 ## Start reading
 
-**17--19 September structural continuation:** a six-turn programme is preserved
-in seven linked records because Turn 6 has two independent continuations. Each
+**17--19 September structural continuation:** a seven-turn programme is preserved
+in eight linked records because Turn 6 has two independent continuations. Each
 record retains both the result and the failure that determined the next step.
 
 1. [Simultaneous exterior/middle failure](research/incoming/es-turn01-joint-failure-20260917/README.md)
@@ -74,11 +74,18 @@ record retains both the result and the failure that determined the next step.
    quadratic nonresidue, proves the exact free fourfold fundamental domain, and
    records the corrected equality and endpoint cases. It narrows the remaining
    source but does not prove that it is occupied.
+8. [Sharp square-root middle atlas](research/incoming/es-turn07-middle-cutoff-20260919/README.md)
+   proves sharp general and hard-prime bounds for the smaller of the two exact
+   middle cofactors, constructs a complete disjoint direct/cofactor atlas with
+   an explicit inverse, and proves that no fixed prime-independent list of the
+   original grades can cover all hard primes. The atlas can still be empty at a
+   prescribed prime; universal E/M occupancy remains open.
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
 positive pair sum; its parallel pointwise continuation localizes every possible
-original state. None asserts the still-missing universal positivity theorem.
+original state; Turn 7 then gives a sharp finite atlas and isolates the fixed-
+grade obstruction. None asserts the still-missing universal positivity theorem.
 Each directory contains the complete proof, exact maps, executable certificates,
 source lineage, negative controls, and an explicit handoff where one was made.
 
@@ -144,10 +151,10 @@ and [per-artifact licensing](LICENSING.md) explain the practical arrangements.
 Scheduled mirroring and publication are paused at the maintainer's request after
 the 9 September 2026 organization update. Reading, discussion, forks and independent
 contributions remain welcome. The published mathematics and historical files are
-preserved. The manually requested 12 September continuation is available on
-GitHub; it does not restart scheduled mirroring or replace the Zenodo edition.
-This branch adds navigation and source-addressable records for the results bench
-and recovered bridge programmes.
+preserved. The manually requested 12--19 September continuations are available
+on GitHub; they do not restart scheduled mirroring or replace the Zenodo edition.
+This branch adds navigation and source-addressable records for the results bench,
+the recovered bridge programmes, and the seven-turn structural continuation.
 
 ## Results and continuing bridge programmes
 

@@ -122,18 +122,35 @@
       "checker": "research/incoming/es-turn06b-pointwise-localization-20260919/verify_localization.py",
       "scope": "Pointwise least-nonresidue localization of every original middle and exterior state, exact endpoint-excluded boundary gap, reciprocal-coordinate bound, and free fourfold fundamental domain; localization does not imply remaining-region occupancy.",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-19:turn-7",
+      "overview": "research/incoming/es-turn07-middle-cutoff-20260919/README.md",
+      "proof": "research/incoming/es-turn07-middle-cutoff-20260919/workbench.tex",
+      "reader": "research/incoming/es-turn07-middle-cutoff-20260919/output/pdf/workbench.pdf",
+      "claims": "research/incoming/es-turn07-middle-cutoff-20260919/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-middle-cutoff-20260919/verify.py",
+        "research/incoming/es-turn07-middle-cutoff-20260919/check_independent.py"
+      ],
+      "scope": "Sharp square-root cutoff for every oriented middle state, stronger six-class hard-prime cutoff with equality classification, complete disjoint direct/cofactor atlas with exact inverse, and an unconditional obstruction to any fixed prime-independent h/j inventory; universal E/M occupancy remains unproved.",
+      "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
-    "source": "research/incoming/es-turn06-full-shell-20260919/HANDOFF_TURN_7.md",
-    "unproved_statement_tex": "\\forall p\\equiv1\\pmod4\\text{ prime},\\quad \\sum_{p/4<a<p/2} T_a>0",
+    "source": "research/incoming/es-turn07-middle-cutoff-20260919/HANDOFF_TURN_7_REMAINDER.md",
+    "unproved_statement_tex": "\\forall p\\text{ hard prime},\\quad \\text{at least one original E or M coefficient is positive}",
     "available_exact_forms": [
+      "complete disjoint direct/cofactor middle atlas with O(sqrt(p)) small moduli",
+      "sharp hyperbola cutoffs and equality classification",
       "diagonal-free signed character identity",
       "zero-truncated integer collision lower bounds with original pair return",
       "complement-aware convex refinement",
       "proper conjugate-stable even-character projections"
     ],
     "excluded_shortcuts": [
+      "a fixed prime-independent cutoff on original grades h and j",
+      "identifying a small cofactor with the original shell of that residual",
       "canonical graph closure",
       "factor supply without selector occupancy",
       "the annihilated Jacobi term",

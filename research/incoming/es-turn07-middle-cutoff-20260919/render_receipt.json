@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-19",
+  "source": "workbench.tex",
+  "output": "output/pdf/workbench.pdf",
+  "engine": "MiKTeX pdfTeX 1.40.29",
+  "passes": 2,
+  "pages": 6,
+  "page_size": "A4",
+  "pdf_sha256": "e1c999ddd144e5bc162930b26a0c0ec27e829902167933fc34399dacf661b051",
+  "log_checks": {
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0
+  },
+  "visual_qa": {
+    "rendered_pages": 6,
+    "resolution_dpi": 150,
+    "inspected_pages": [1, 2, 3, 4, 5, 6],
+    "result": "passed: no clipping, overlap, missing glyphs or broken equations observed"
+  }
+}
