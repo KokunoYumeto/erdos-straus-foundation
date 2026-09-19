@@ -149,11 +149,158 @@ recorded Lucas data.
 - **Does not prove:** universal exterior or middle occupancy, an infinite prime
   subfamily, or the Erdős–Straus conjecture.
 
+## SZ-20260919-006 — exact ordered marked cubic and source inverse
+
+Every original first-half exterior state at a prime \(p\equiv1\pmod8\) defines
+
+$$
+X=v=\frac{a^2}{u},\quad Y=2a,\quad
+\alpha=v-R,\quad\beta=v-D,\quad B=\alpha\beta-1
+$$
+
+and lies on the ordered marked cubic
+
+$$
+Y^2=X^3-(\alpha+\beta)X^2+BX.
+$$
+
+The complete source inverse is
+
+$$
+R=X-\alpha,\quad D=X-\beta,\quad a=Y/2,\quad
+p=2Y-R,\quad u=(RD-1)/4,
+$$
+
+with the stated positivity, parity, residue and primality image conditions.
+At fixed \(p\), the additional line is \(2Y=p+X-\alpha\), so a fixed shape has
+at most three original source states. The Weierstrass discriminant is
+
+$$
+16B^2\bigl((\alpha-\beta)^2+4\bigr),
+$$
+
+and the original grade obeys
+
+$$
+h\mid B,\qquad p\equiv\alpha\pmod h,\qquad p\beta\equiv1\pmod h.
+$$
+
+- **Proof:** [shape-rigidity core](research/incoming/es-turn07-shape-rigidity-20260919/core.tex),
+  “Original source and the marked cubic” and “Original character constraints.”
+- **Typed inverse:** [MORPHISMS.md](research/incoming/es-turn07-shape-rigidity-20260919/MORPHISMS.md)
+- **Human literature:** the inherited Type-I/II source coordinates are traced
+  to Elsholtz–Tao, §2, Propositions 2.2 and 2.6; quadratic reciprocity is cited
+  to Hatcher, *Topology of Numbers*, §6.4.
+- **Strengthens:** SZ-20260919-004 by retaining a second exact geometric
+  coordinate system on every exterior chart state.
+- **Does not prove:** an integral point exists on the required fixed-prime line.
+
+## SZ-20260919-007 — every diagonal exterior state has a middle return
+
+For an actual exterior state with \(R=D\), write
+
+$$
+\frac{R-1}{2}=\delta t^2
+$$
+
+with \(\delta\) the positive squarefree part and \(t>0\) odd. Then
+\(\delta\equiv3\pmod4\), \(\delta\mid p+1\), and \(\delta<R\). With
+\(c=(p+1)/\delta\) and \(j=(\delta+1)/4\), the exact original middle state is
+
+$$
+(h_M,r_M,s_M,\lambda_M)=(j,1,c,1),\quad
+a_M=jc,\quad u_M=j,\quad R_M=c+1,\quad Q_M=\delta.
+$$
+
+It returns the ordered denominators \((jc,pjc,pj)\), and
+\(\min(R_M,Q_M)<R\). The inverse fibre retains the positive odd integer \(t\),
+so this is a typed map rather than an identification of the E and M channels.
+
+- **Proof:** [shape-rigidity core](research/incoming/es-turn07-shape-rigidity-20260919/core.tex),
+  “Every diagonal exterior source has an actual middle return.”
+- **Independent derivation:** [integration receipt](research/incoming/es-turn07-shape-rigidity-20260919/integration_verification.json)
+- **Strengthens/corrects:** SZ-20260919-005 by showing that its diagonal sharp
+  family, and every other occupied diagonal exterior fibre, already carries a
+  same-prime middle witness.
+- **Does not prove:** that a diagonal exterior state exists at every hard prime.
+
+## SZ-20260919-008 — hard-prime shape rigidity through radius eight
+
+Here a hard prime means
+\(p\bmod 840\in\{1,121,169,289,361,529\}\).
+If a hard-prime exterior state satisfies
+\(\max(|v-R|,|v-D|)\le7\), then it is exactly the singular family
+
+$$
+h=4n^2-2,\quad r=n,\quad s=1,\quad R=D=4n^2-1,
+$$
+
+$$
+p=16n^3-4n^2-8n+1,\qquad n\ge2\text{ even}.
+$$
+
+At the same \((p,a,R)\), it has the two original middle orientations
+\(u_M=n\) and \(u'_M=n(4n^2-2)^2\), returning \((a,pa,pn)\) up to the retained
+last-two-denominator orientation. At radius eight the sole possible
+nonsingular ordered shape is
+
+$$
+(\alpha,\beta,h)=(8,-4,11),\qquad
+4r^2=11s^4-4s^2-3.
+$$
+
+Its grade congruence gives the original middle state
+
+$$
+(h_M,r_M,s_M,\lambda_M)=\left(1,3,\frac{p+3}{11},1\right),qquad u_M=9,
+$$
+
+without classifying the quartic’s integral points. Any hard source in this
+radius-eight branch must in fact have \(p\bmod 840\in\{1,121\}\).
+
+- **Proof:** [shape-rigidity core](research/incoming/es-turn07-shape-rigidity-20260919/core.tex),
+  “Complete hard-prime rigidity at shape radius seven” and “The first possible
+  nonsingular shape at radius eight.”
+- **Certificates and strengthened independent replay:** [certificate directory](research/incoming/es-turn07-shape-rigidity-20260919/certificates/)
+  and [independent checker](research/incoming/es-turn07-shape-rigidity-20260919/check_independent.py).
+- **Strengthens:** SZ-20260919-005 from one sharp family to a complete
+  low-shape branch classification and witness-preserving removal.
+- **Does not prove:** that the radius-eight quartic has a hard-prime exterior
+  point, that no such point exists, or that every remaining shape is bounded.
+
+## SZ-20260919-009 — exact cubic involution and fixed-prime obstruction
+
+For \(B\ne0\), the marked cubic has the rational involution
+
+$$
+\Psi(X,Y)=\left(\frac BX,\frac{BY}{X^2}\right).
+$$
+
+An integral image of an original positive state forces \(s\mid2\). The case
+\(s=2\) loses evenness of \(Y\). For \(s=1\), all reconstructed coordinates are
+explicit, but \(R',D'\equiv1\pmod4\), \(p'\equiv3\pmod4\), and
+
+$$
+p'-p=(4r-1)(4r^2-R-D)\ne0.
+$$
+
+Thus this is an exact correspondence of marked cubics, not a fixed-prime
+selector. The displayed \(p'=5951\) image is a composite parameter record,
+not a prime source.
+
+- **Proof:** [shape-rigidity core](research/incoming/es-turn07-shape-rigidity-20260919/core.tex),
+  “A natural cubic involution fails the required fixed-prime return.”
+- **Strengthens/corrects:** the attempted involutive descent by proving the
+  strongest actual coordinate transport and its exact obstruction.
+- **Does not prove:** that other maps between the residue classes do not exist.
+
 ## Current proved frontier
 
-SZ-20260919-001 through SZ-20260919-005 give complete finite inverse atlases for
-every existing original middle or exterior state at a fixed prime. The
-remaining statement is structural nonvanishing:
+SZ-20260919-001 through SZ-20260919-009 give complete finite inverse atlases for
+every existing original middle or exterior state at a fixed prime and remove
+the diagonal and hard-prime radius-at-most-eight exterior branches by actual
+middle returns. The remaining statement is structural nonvanishing outside
+those removed branches:
 
 $$
 \forall p\ \text{in the unresolved prime class},\qquad

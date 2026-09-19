@@ -1,0 +1,147 @@
+{
+  "bound": 3000,
+  "commands": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "certificates"
+      ],
+      "returncode": 0,
+      "status": "completed",
+      "elapsed_seconds": 1.045627876999788
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "certificates_optimized"
+      ],
+      "returncode": 0,
+      "status": "completed",
+      "elapsed_seconds": 1.0709308999998939
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "check_independent.py",
+        "--input",
+        "certificates",
+        "--out",
+        "independent.json"
+      ],
+      "returncode": 0,
+      "status": "completed",
+      "elapsed_seconds": 0.876604099999895
+    }
+  ],
+  "normal_optimized_agreement": {
+    "scan.json": true,
+    "profiles.json": true,
+    "examples.json": true,
+    "radius8.json": true
+  },
+  "new_replay_success": true,
+  "universal_ES_proved": false,
+  "turn7_existence_milestone_completed": false,
+  "main_report": {
+    "bound": 3000,
+    "check_counts": {
+      "E divisor cannot be kept as M divisor": 1,
+      "actual endpoint divisor": 96,
+      "bounded-shape grade constraint": 2126,
+      "channel normalization must change": 1,
+      "collision fibre inverse": 96,
+      "collision map source": 96,
+      "collision residue and squarefree markings": 96,
+      "complete exceptional large-prime table": 12,
+      "complete modular exclusion of nonsingular hard profile": 12,
+      "complete singular integer profiles": 2,
+      "curve inverse integer divisor": 2123,
+      "curve inverse positive even domain": 2123,
+      "curve inverse residual and first-half domain": 2123,
+      "declared replay domain": 1,
+      "discriminant identity": 4555,
+      "displayed exact trial primality": 5,
+      "exact rational cubic involution": 2126,
+      "grade and character residue identities": 4555,
+      "hard hypothesis negative control": 1,
+      "integral cubic image requires s divides 2": 712,
+      "integral shape curve": 4555,
+      "kappa and orientation": 4555,
+      "measure is not residual alone": 1,
+      "middle cofactor marking": 154,
+      "middle normalization": 154,
+      "middle ordered inverse": 154,
+      "middle original source": 154,
+      "ordered exterior identity": 4555,
+      "ordered exterior inverse": 4555,
+      "ordered middle identity": 154,
+      "original exterior divisor and gate": 4555,
+      "original gcd inverse": 4555,
+      "original nonresidue grade": 2128,
+      "original unit first-half domain": 4555,
+      "positive-square shape excluded": 4256,
+      "radical is not squarefree part for inversion": 1,
+      "radius-eight unique nonsingular hard candidate": 1,
+      "rational involution inverse": 2126,
+      "residual-one reverse source has no positive integral cubic image": 1092,
+      "retained exterior norm": 4555,
+      "s1 involution changes prime residue class": 560,
+      "s2 image loses even-Y original domain": 152,
+      "same-shell singular channel crossing": 56,
+      "shape exceptional loci": 4555,
+      "shape map inverse equality": 2123,
+      "singular endpoint decrease": 56,
+      "singular family": 56,
+      "small singular prime examples": 1,
+      "squarefree part reconstruction": 96,
+      "strict endpoint residual decrease": 96,
+      "strict small-cofactor decrease": 96,
+      "third-coordinate structure": 4555
+    },
+    "checks": 80079,
+    "elapsed_seconds": 0.4430187949997162,
+    "output_sha256": {
+      "examples.json": "fde9525450669d6fc9c639074f7fda9fb9f77d8bfc83421fea6cd75d61d1cf55",
+      "profiles.json": "e231c7c63d46020b1e253e0b8cb470f71718bc74b52d272b19cca3343b94662d",
+      "radius8.json": "08051c87e006198144aae02fa4417e1cace2223ddebaac167cee5b0baf670b2c",
+      "scan.json": "c67f33d754291cb11d03777254285eb102ac932692e8bb94de06f0b1976481af"
+    },
+    "source_sha256": "3afa384bd415688d8599015c19d54ca4b3aca7103f0ad7d502acff9b14babe33",
+    "success": true,
+    "totals": {
+      "E_states": 2123,
+      "diagonal_states": 90,
+      "original_divisor_vectors": 925870,
+      "primes": 101,
+      "shells": 36292
+    },
+    "turn7_existence_milestone_completed": false,
+    "universal_ES_proved": false
+  },
+  "independent_report": {
+    "E_states": 2123,
+    "bound": 3000,
+    "checks": 23885,
+    "independence": "Separate primitive h,r,s enumeration; modulus96 profile test; direct trial primality; no main or predecessor import.",
+    "primes": 101,
+    "scan_sha256": "c67f33d754291cb11d03777254285eb102ac932692e8bb94de06f0b1976481af",
+    "source_sha256": "83030a2e86c29361fff883e523c7f7edf1f0a74cc96e0bd5333a48d621836ca1",
+    "success": true,
+    "universal_ES_proved": false
+  },
+  "source_sha256": {
+    "core.tex": "da258137f18d308c33b61dda196c0374ffe4fe766a30b62b31e14b56da8febee",
+    "preprint.tex": "1bd9bc7e0938a8f19853f7a671f21148eb6b6b570d94c27d25dae0c59cf58f30",
+    "verify.py": "3afa384bd415688d8599015c19d54ca4b3aca7103f0ad7d502acff9b14babe33",
+    "check_independent.py": "83030a2e86c29361fff883e523c7f7edf1f0a74cc96e0bd5333a48d621836ca1"
+  }
+}

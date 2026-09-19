@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "source": "core.tex",
+  "date": "2026-09-19",
+  "claims": [
+    {
+      "id": "SZ-20260919-006",
+      "kind": "theorem",
+      "title": "Exact ordered marked cubic and source inverse",
+      "hypotheses": "An original first-half exterior state at a prime p congruent to 1 modulo 8, with the ordered R,D marking retained.",
+      "statement_tex": "Y^2=X^3-(\\alpha+\\beta)X^2+(\\alpha\\beta-1)X,\\quad (X,Y)=(v,2a)",
+      "inverse_tex": "R=X-\\alpha,\\ D=X-\\beta,\\ a=Y/2,\\ p=2Y-R,\\ u=((X-\\alpha)(X-\\beta)-1)/4",
+      "proof_locator": "core.tex, Theorem 2.1 and equations (3)--(9)",
+      "status": "proved",
+      "nonclaims": [
+        "The unmarked cubic alone reconstructs the ordered source.",
+        "The fixed-prime line has an integral source point for every hard prime."
+      ]
+    },
+    {
+      "id": "SZ-20260919-007",
+      "kind": "theorem",
+      "title": "Every diagonal exterior state has an original middle return",
+      "hypotheses": "An original exterior state at p congruent to 1 modulo 8 with R=D.",
+      "statement_tex": "(R-1)/2=\\delta t^2,\\ c=(p+1)/\\delta,\\ j=(\\delta+1)/4\\Longrightarrow(h_M,r_M,s_M,\\lambda_M)=(j,1,c,1)",
+      "proof_locator": "core.tex, Theorem 4.1 and equations (10)--(13)",
+      "status": "proved",
+      "nonclaims": [
+        "A diagonal exterior state exists at every hard prime.",
+        "The map is injective after the positive odd fibre parameter t is forgotten."
+      ]
+    },
+    {
+      "id": "SZ-20260919-008",
+      "kind": "theorem_and_corollary",
+      "title": "Hard-prime shape rigidity through radius eight",
+      "hypotheses": "An original exterior state at a hard prime p modulo 840 in {1,121,169,289,361,529}.",
+      "statement_tex": "\\max(|\\alpha|,|\\beta|)\\le7\\Longrightarrow(\\alpha,\\beta)=(-1,-1);\\quad \\max(|\\alpha|,|\\beta|)\\le8,\\ B\\ne0\\Longrightarrow(\\alpha,\\beta,h)=(8,-4,11)",
+      "proof_locator": "core.tex, Theorem 5.1, Theorem 6.1 and Corollary 6.2",
+      "status": "proved",
+      "strengthening": "Any hard source in the radius-eight branch has p modulo 840 in {1,121}.",
+      "nonclaims": [
+        "The radius-eight quartic has a hard-prime point.",
+        "The finite prefix through s=200000 classifies all integral points.",
+        "All remaining exterior shapes are bounded."
+      ]
+    },
+    {
+      "id": "SZ-20260919-009",
+      "kind": "proposition",
+      "title": "Natural cubic involution does not preserve the fixed-prime source",
+      "hypotheses": "B is nonzero and X is nonzero on the marked cubic.",
+      "statement_tex": "\\Psi(X,Y)=(B/X,BY/X^2),\\quad \\Psi^2=1;\\quad p'-p=(4r-1)(4r^2-R-D)\\ne0\\text{ on the integral }s=1\\text{ branch}",
+      "proof_locator": "core.tex, Section 7, equations (19)--(21)",
+      "status": "proved",
+      "nonclaims": [
+        "No other correspondence between the residue classes exists.",
+        "The displayed p'=5951 composite parameter is a prime source."
+      ]
+    }
+  ],
+  "programme_status": {
+    "universal_ES_proved": false,
+    "universal_E_or_M_occupancy_proved": false,
+    "lean_complete": false
+  }
+}

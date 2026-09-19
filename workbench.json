@@ -148,16 +148,31 @@
       ],
       "scope": "Strict cubic cutoff for every positive exterior state; complete disjoint direct, reciprocal and complement--norm atlas with exact inverses; hard-prime separation from the middle cutoff; exact sharp integer family and residue classification; universal E/M occupancy remains unproved.",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-19:turn-7c",
+      "overview": "research/incoming/es-turn07-shape-rigidity-20260919/README.md",
+      "proof": "research/incoming/es-turn07-shape-rigidity-20260919/workbench.tex",
+      "reader": "research/incoming/es-turn07-shape-rigidity-20260919/output/pdf/workbench.pdf",
+      "claims": "research/incoming/es-turn07-shape-rigidity-20260919/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-shape-rigidity-20260919/verify.py",
+        "research/incoming/es-turn07-shape-rigidity-20260919/check_independent.py"
+      ],
+      "scope": "Exact ordered marked cubic for every exterior state; same-prime middle return from every diagonal state; complete hard-prime radius-seven classification; terminal middle return for the sole radius-eight nonsingular profile; exact obstruction to the natural cubic involution preserving the fixed-prime source; universal E/M occupancy remains unproved.",
+      "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
-    "source": "research/incoming/es-turn07b-exterior-atlas-20260919/HANDOFF.md",
+    "source": "research/incoming/es-turn07-shape-rigidity-20260919/HANDOFF_TURN_7_REMAINDER.md",
     "unproved_statement_tex": "\\forall p\\text{ hard prime},\\quad \\text{at least one original E or M coefficient is positive}",
     "available_exact_forms": [
       "complete disjoint direct/cofactor middle atlas with O(sqrt(p)) small moduli",
       "sharp hyperbola cutoffs and equality classification",
       "complete disjoint direct/reciprocal/complement--norm exterior atlas with O(p^(2/3)) small outer parameters",
       "exact square-divisor availability kernel K(v) and complement--norm inverse",
+      "exact ordered marked cubic and fixed-prime line for every exterior state",
+      "same-prime middle returns for every diagonal exterior state and every hard-prime exterior shape of radius at most eight",
       "diagonal-free signed character identity",
       "zero-truncated integer collision lower bounds with original pair return",
       "complement-aware convex refinement",
@@ -168,6 +183,8 @@
       "identifying a small cofactor with the original shell of that residual",
       "transferring the middle square-root cutoff unchanged to exterior R and D",
       "using norm divisibility without the K(v) availability congruence",
+      "treating the natural cubic involution as a fixed-prime descent",
+      "treating the finite radius-eight quartic prefix as an integral-point classification",
       "canonical graph closure",
       "factor supply without selector occupancy",
       "the annihilated Jacobi term",

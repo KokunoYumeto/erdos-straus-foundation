@@ -1,0 +1,433 @@
+\section{The unresolved step and the branch removed here}
+The universal assertion remains that every prescribed hard prime supplies an
+original positive exterior or middle state. The complete atlases from the
+preceding work decide a fixed input; their finite index bounds do not prove
+occupancy. We do not advance to a universally successful algorithm under an
+assumed occupancy statement.
+
+The previous exterior cutoff has an asymptotically sharp integer family. Here
+we determine its exact marked cubic geometry, prove that its diagonal cofactor
+locus already has an original middle return, and classify every hard-prime
+exterior state whose two shape defects have absolute value at most seven.
+Every such state is on that same singular family, and has two original middle
+orientations at its \emph{unchanged} distinguished denominator. At radius eight
+there is at most one nonsingular shape; its grade congruence also gives an explicit
+middle return, independently of solving its associated quartic.
+This is an existence-preserving branch reduction, not a proof of the remaining
+unbounded positive coefficient.
+
+The original Type-I/II parametrizations are antecedents \cite[\S2]{ET}.
+The integer family itself occurs in the preceding exterior proof
+\cite[\S5]{Exterior}. No historical-priority determination is made for the
+present deductions. All algebra and the finite modular classification used here
+are proved below; no theorem about integral points on elliptic curves is imported.
+
+\section{Original source and the marked cubic}
+Let $p\equiv1\pmod8$ be prime. An original exterior state has
+\[
+ p/4<a<p/2,\quad R=4a-p,\quad u\mid a^2,\quad R\mid4u+1.
+\]
+Retain $a=\prod_l l^{e_l}$, $\beta_l=v_l(u)-e_l$, and the ordered normalization
+\[
+ g=\gcd(a,u),\qquad
+ (h,r,s)=(g^2/u,u/g,a/g),\qquad \kappa=(pr+s)/R.
+\]
+Then $a=hrs$, $u=hr^2$, $\gcd(r,s)=1$, and $r<\kappa$. The ordered return is
+\[
+ (x,y,z)=(a,hs\kappa,phr\kappa),\qquad
+ \frac4p=\frac1x+\frac1y+\frac1z.                         \tag{1}
+\]
+Its ordered inverse is $u=a^2/(Ry-pa)$. Prime valuations prove the integrality
+of the normalization. Multiplication proves (1), without identifying its
+ordered denominators with another channel's order.
+
+Keep the original complement and cofactor
+\[
+ v=a^2/u=hs^2,\qquad D=(4u+1)/R=(r+\kappa)/s.
+\]
+They satisfy
+\[
+ RD=4u+1,\quad pD+1=4hr\kappa,\quad
+ (p+R)^2+4v=4vRD,\quad R,D\equiv3\pmod4.                 \tag{2}
+\]
+The case $h=1$ would make $-1$ a square modulo $R\equiv3\pmod4$. Thus $h>1$.
+Also $\gcd(h,R)=\gcd(h,D)=1$, and consequently $v\ne R,D$.
+No assertion $\gcd(v,D)=1$ is made.
+
+Define the \emph{marked shape} and its coefficient
+\[
+ \alpha=v-R,\quad \beta=v-D,\quad B=\alpha\beta-1,
+ \qquad X=v,\quad Y=2a.                                  \tag{3}
+\]
+(The symbol $\beta$ in (3) is not an original exponent $\beta_l$.)
+\begin{theorem}[Exact shape curve and inverse]\label{thm:curve}
+Every original state maps to an integral point
+\[
+ \boxed{Y^2=X^3-(\alpha+\beta)X^2+BX.}                    \tag{4}
+\]
+The complete inverse is
+\[
+ R=X-\alpha,\quad D=X-\beta,\quad a=Y/2,\quad
+ p=2Y-R,\quad u=(RD-1)/4.                                \tag{5}
+\]
+Its domain consists exactly of points of (4) with $X>0$, positive even $Y$,
+positive $R,D\equiv3\pmod4$, $Y>R$, and the prime condition on the reconstructed
+$p\equiv1\pmod8$. The original normalization then reconstructs every marking.
+Moreover
+\[
+ \boxed{h\mid B,\qquad p\equiv\alpha\pmod h,\qquad
+ p\beta\equiv1\pmod h.}                                 \tag{6}
+\]
+The discriminant of (4) is
+\[
+ \boxed{16B^2((\alpha-\beta)^2+4).}                       \tag{7}
+\]
+Thus its only singular integer shapes are $(\alpha,\beta)=(1,1)$ and $(-1,-1)$.
+\end{theorem}
+\begin{proof}
+From $a^2=uv$ and $4u=RD-1$,
+$Y^2=v(RD-1)=v((v-\alpha)(v-\beta)-1)$, proving (4).
+Conversely (4) gives $a^2=X(RD-1)/4=Xu$, so $u$ is a positive divisor of $a^2$.
+The residue requirements make $u$ integral. Equation (5) gives $R=4a-p>0$ and
+$2a<p$ precisely from $Y>R$. The original gate follows from $4u+1=RD$.
+The prime condition and $a<p$ imply the original unit condition.
+All formulas are literal inverses.
+
+Reducing $RD-1=4u$ modulo $h$ gives $\alpha\beta-1\equiv0$; reducing
+$p=4hrs-R$ and $pD+1=4hr\kappa$ gives the other two identities in (6).
+For the cubic $X(X^2-(\alpha+\beta)X+B)$, the polynomial discriminant is
+$B^2((\alpha+\beta)^2-4B)$. Multiplication by 16 gives (7).
+Its second factor is $(\alpha-\beta)^2+4>0$. Thus singularity means
+$\alpha\beta=1$, whose integer possibilities are the two stated shapes.
+\end{proof}
+
+For a fixed original $p$ and shape, the point must also retain the line
+\[
+ \boxed{2Y=p+X-\alpha.}                                  \tag{8}
+\]
+Eliminating $Y$ yields the explicit cubic
+\[
+ 4X^3-[4(\alpha+\beta)+1]X^2+
+ [4B-2(p-\alpha)]X-(p-\alpha)^2=0.                        \tag{9}
+\]
+There are at most three original states at a fixed $(p,\alpha,\beta)$.
+This is a fibre bound, not an existence assertion. The integer coefficient
+pushforward that forgets $X,Y$ sums those actual source coordinates; its kernel
+is generated by their same-shape differences. Retaining $X,Y$ gives the
+bijection of Theorem~\ref{thm:curve}. The point $(0,0)$ of a nonsingular curve is
+outside the original positive source.
+
+\section{Original character constraints}
+\begin{lemma}\label{lem:char}
+For every original square divisor, $(u/R)=(u/p)$, where the first symbol is
+Jacobi. In particular $(h/p)=-1$. If $p$ is hard, every prime factor among
+$2,3,5,7$ has character $+1$, and $h$ contains a prime factor greater than seven.
+Neither $\alpha$ nor $\beta$ can be a positive integer square.
+\end{lemma}
+\begin{proof}
+For an odd prime $l\mid a$, reciprocity and $R\equiv-p\pmod l$ give
+$(l/R)=(-1/l)(-p/l)=(p/l)=(l/p)$. For 2 use $R\equiv-p\pmod8$ when $2\mid a$.
+Multiply over the original exponents. The exterior gate has $u\equiv-1/4\pmod R$
+and $R\equiv3\pmod4$, so $(u/p)=-1$; $u=hr^2$ gives the assertion for $h$.
+For the six hard classes, $p\equiv1\pmod{24}$, $p\equiv1,4\pmod5$, and
+$p\equiv1,2,4\pmod7$, proving the four residue assertions.
+These are the ordinary reciprocity and supplementary laws \cite[\S6.4]{Hatcher}.
+
+If $\alpha=c^2>0$, then every odd $l\mid h$ sees $p\equiv c^2\pmod l$ by (6).
+The value is a nonzero square because $p\nmid h$. Thus $(l/p)=1$ for every such
+$l$, while $(2/p)=1$, contradicting $(h/p)=-1$. If $\beta=c^2>0$, use
+$p\beta\equiv1\pmod h$ instead. The shapes $\alpha=0$ or $\beta=0$ were already
+excluded by $v\ne R,D$.
+\end{proof}
+
+\section{Every diagonal exterior source has an actual middle return}
+\begin{theorem}[Cofactor collision crosses the channels]\label{thm:collision}
+Suppose an original exterior state at $p\equiv1\pmod8$ has $R=D$.
+Set
+\[
+ z=(R-1)/2=\delta t^2,
+\]
+where $\delta$ is the positive squarefree part (odd exponents retained).
+Then $\delta\equiv3\pmod4$, $t$ is odd,
+\[
+ \delta\mid a,\quad \delta\mid p+1,\quad 3\le\delta<R.
+\]
+With $c=(p+1)/\delta$ and $j=(\delta+1)/4$, the explicit original middle state is
+\[
+ \boxed{(h_M,r_M,s_M,\lambda_M)=(j,1,c,1),\quad
+ a_M=jc,\ R_M=c+1,\ u_M=j,\ Q_M=\delta.}                 \tag{10}
+\]
+It returns $(a_M,pa_M,pj)$, including the original complementary middle
+orientation. Its small cofactor satisfies $\min(R_M,Q_M)<R$.
+There is also the original endpoint exterior state
+\[
+ R_0=\delta,\quad a_0=u_0=(p+\delta)/4,\quad
+ (h_0,r_0,s_0,\kappa_0)=(a_0,1,1,c),                    \tag{11}
+\]
+with $a_0<a$.
+\end{theorem}
+\begin{proof}
+Since $R^2=4u+1$, $u$ is even, hence $a=hrs$ is even. Thus $R\equiv7\pmod8$
+and $z\equiv3\pmod4$. The equality $u=z(z+1)$ shows that every prime factor of
+$z$ divides $a$. Consequently its squarefree part $\delta$ divides $a$, and
+$p=4a-R\equiv-1\pmod\delta$. Also $z=\delta t^2$ gives $t$ odd and
+$\delta\equiv3\pmod4$.
+
+Now $p=\delta c-1=4jc-c-1$. Thus (10) has $R_M=4a_M-p=c+1$,
+$r_M+s_M=R_M\lambda_M$, and $u_M\mid a_M^2$.
+The first-half upper bound is $c(\delta-1)>2$, true because $c\ge2$ and
+$\delta\ge3$. All denominators are positive and multiplication verifies the
+identity. Its second cofactor is exactly $\delta\le(R-1)/2$.
+The endpoint in (11) follows by the same direct substitution; $\delta<R$
+gives $a_0<a$. The endpoint formulas themselves are elementary antecedents;
+the new inference here extracts their needed divisor from the \emph{actual}
+diagonal source rather than assuming its existence.
+\end{proof}
+
+The map is not claimed injective after its original source is forgotten.
+Its complete fibre above a marked (10) retains the odd integer $t$, with
+\[
+ R=2\delta t^2+1<p,\quad a=(p+R)/4,\quad
+ u=\delta t^2(\delta t^2+1)\mid a^2.                      \tag{12}
+\]
+These explicit conditions and the squarefree marking are sufficient and necessary.
+They reconstruct the source by gcd normalization. The finite bound on its fibre is
+$t^2\le(p-3)/(2\delta)$. Source aggregation sums these integer fibres; it does
+not replace them by a normalized count of residue classes.
+
+The original residual itself need not decrease under the middle return.
+At $p=2129$, the exterior source $(a,u,R,D)=(570,5700,151,151)$ has
+$z=75=3\cdot5^2$. Its middle return has $Q_M=3$ but $R_M=711$.
+The strict measure in the theorem is the smaller cofactor, not $R_M$ alone.
+At the hard prime $p=48049$, $(a,u,R,D)=(12090,24180,311,311)$ gives
+$\delta=155,t=1,j=39,c=310$ and the actual middle identity
+\[
+ \boxed{\frac4{48049}=\frac1{12090}+\frac1{580912410}
+                         +\frac1{1873911}.}              \tag{13}
+\]
+The old E divisor $24180$ is not an M divisor at that shell; the return uses $39$.
+
+\section{Complete hard-prime rigidity at shape radius seven}
+\begin{theorem}[Small-shape rigidity]\label{thm:rigid}
+For a hard prime and an original E state with
+\[
+ \max(|v-R|,|v-D|)\le7,
+\]
+there is an even integer $n\ge2$ such that
+\[
+ \boxed{h=4n^2-2,\quad r=n,\quad s=1,\quad
+ R=D=4n^2-1,\quad\kappa=4n^2-n-1,}                       \tag{14}
+\]
+\[
+ p=16n^3-4n^2-8n+1,\quad a=hn,\quad u=hn^2.
+\]
+At the \emph{same} original shell it forces the two middle states
+\[
+ \boxed{u_M=n,\quad u_M'=nh^2,\quad
+ (h_M,r_M,s_M,\lambda_M)=(n,1,h,1)}                       \tag{15}
+\]
+and the complementary orientation. The new ordered denominator triple is
+$(nh,pnh,pn)$, and $Q_M=4n-1<R$.
+\end{theorem}
+\begin{proof}
+There are 52 ordered coefficient profiles with $\alpha,\beta\in[-7,7]\setminus\{0\}$
+and $\alpha\equiv\beta\pmod4$: the four residue groups have sizes $2,4,4,4$.
+If $B\ne0$, direct multiplication of these small integers gives the following
+complete list of profiles for which $|B|$ has a prime factor greater than seven:
+\[
+\begin{array}{c|c|c}
+ B& (\alpha,\beta)&h\text{ forced by }h\mid B,\ (h/p)=-1\\ \hline
+ 11&(2,6),(6,2),(-2,-6),(-6,-2)&11\\
+ -13&(-6,2),(2,-6),(-2,6),(6,-2)&13\\
+ -17&(-4,4),(4,-4)&17\\
+ -37&(-6,6),(6,-6)&37.
+\end{array}                                             \tag{16}
+\]
+Every other nonzero $B$ is supported on $2,3,5,7$, contrary to
+Lemma~\ref{lem:char}. No unbounded factor search is implicit in (16).
+Substituting $v=hs^2$ and $Y=2hrs$ into (4) gives
+\[
+ \boxed{4r^2=hs^4-(\alpha+\beta)s^2+B/h.}                \tag{17}
+\]
+
+For $h=11$, $\alpha\equiv2\pmod4$ would require $11s^2\equiv1\pmod4$ from
+$R\equiv3$, impossible. For $h=17$, $\alpha\equiv0$ would require
+$17s^2\equiv3\pmod4$, also impossible.
+
+For $h=13$, the same residual condition forces $s$ odd. If $\alpha+\beta=4$,
+(17) is $4r^2\equiv8\pmod{16}$, impossible. If $\alpha+\beta=-4$, it gives
+$r$ even. Then $v\equiv5\pmod8$ and $\alpha\equiv2\pmod8$, so $R\equiv3$
+and $p=4hrs-R\equiv5\pmod8$, again impossible.
+
+For $h=37$, $s$ is odd and (17) makes $r$ odd. The condition $p\equiv1\pmod8$
+selects $\alpha=-6,\beta=6$. Modulo three, (17) excludes $3\mid s$ and forces
+$3\mid r$. But then $p=4hrs-37s^2-6\equiv2\pmod3$, contrary to the hard class.
+This excludes every nonsingular profile.
+
+When $B=0$, the positive-square lemma excludes $(1,1)$, leaving $(-1,-1)$.
+Here $v=R-1=D-1$, and $RD-1=4hr^2$ becomes
+\[
+ s^2(v+2)=4r^2.
+\]
+Coprimality implies $s\mid2$. The choice $s=2$ makes $r$ odd and would give
+$v+2=r^2$ with $v=4h$, impossible modulo four. Hence $s=1$, $h=v=4r^2-2$,
+which proves (14). Reduction of $p$ modulo eight forces $r=n$ even.
+
+For the same-shell return, $n+a=n(h+1)=nR$. Thus $u_M=n\mid a^2$ is an
+original middle hit. Gcd normalization gives (15) and its complement. These
+are two distinct oriented middle states, not one E state with a new label.
+\end{proof}
+
+The map from the singular E subfamily to the M orientation $r_M=1$ is bijective
+onto the subfamily in (15): read $n=h_M$, then $h=4n^2-2$ and every original
+coordinate in (14). The two M orientations retain one additional Boolean.
+The corresponding endpoint E return has the particularly simple formulas
+\[
+ R_0=4n-1,\quad a_0=n(h-n+1),\quad u_0=a_0,\quad\kappa_0=h.
+\]
+Here $a-a_0=n(n-1)>0$. Thus the asymptotically sharp family in the previous
+exterior cutoff was already reducible to an explicit middle state and a strictly
+smaller endpoint E state. This does not lower that predecessor's bound on
+\emph{all individual states}; it gives an existence-preserving way to remove
+this branch from a search for genuinely E-only inputs.
+
+The hard restriction is necessary. At $p=17$, the original E state
+$(a,u,h,r,s,\kappa)=(5,5,5,1,1,6)$ has $\alpha=2,\beta=-2$, so its nonsingular
+shape has radius two.
+
+\section{The first possible nonsingular shape at radius eight}
+\begin{theorem}[Exact next-profile reduction]\label{thm:eight}
+At a hard prime, any nonsingular original E state with shape radius at most eight
+must have
+\[
+ \boxed{(\alpha,\beta,h)=(8,-4,11),\qquad
+ 4r^2=11s^4-4s^2-3,\qquad p=44rs-11s^2+8.}               \tag{18}
+\]
+Here $r,s$ are odd and coprime. Necessary hard-class restrictions include
+\[
+ rs\equiv-1\pmod3,\qquad r^2\equiv s^2\equiv1\pmod5,
+ \qquad rs\equiv1\pmod5.
+\]
+\end{theorem}
+\begin{proof}
+Only profiles containing $8$ or $-8$ are new beyond (16); their other coordinate
+is in $\{-8,-4,4,8\}$. Any positive coordinate 4 is excluded by
+Lemma~\ref{lem:char}. The products of absolute value 64 give $B=63$ or $-65$.
+The first has only small prime factors. In the second, the only possible
+nonresidue grades are 13 and 65, both $1\pmod4$, whereas $\alpha\equiv0$ and
+$R\equiv3$ would require $hs^2\equiv3\pmod4$.
+
+The pair $(-8,-4)$, in either order, has $B=31$ and forces $h=31,s$ odd.
+Equation (17) gives $4r^2\equiv12\pmod{16}$, impossible.
+For the remaining $B=-33$ pairs the only possible grades are 11 and 33.
+The grade 33 is excluded modulo four. At grade 11, equation (17) and the prime
+congruence modulo eight leave only $(8,-4)$; it makes $r,s$ odd and gives (18).
+This calculation can equivalently be exhausted over $r,s\pmod{24}$ using (17)
+modulo 48, as in the certificate.
+
+Modulo three, $3\mid s$ would force $3\mid r$, violating coprimality.
+Thus $r,s$ are nonzero modulo three, and $p\equiv1$ gives $rs\equiv-1$.
+Modulo five, (18) allows only $s^2=r^2=1$. Then $p\equiv2-rs\pmod5$;
+the hard residue condition $p\equiv1,4\pmod5$ forces $rs\equiv1$.
+\end{proof}
+
+\begin{corollary}[Radius eight already has an original middle coefficient]
+Every hard-prime E state of shape radius at most eight forces an original M
+state. In the singular case this is (15). In the sole possible nonsingular
+case (18), the exact return is
+\[
+ \boxed{s_M=(p+3)/11,\quad
+ (h_M,r_M,s_M,\lambda_M)=(1,3,(p+3)/11,1),}
+\]
+\[
+ \boxed{a_M=3(p+3)/11,\quad u_M=9,\quad R_M=(p+36)/11,
+ Q_M=11,\quad (x,y,z)=(a_M,ps_M,3p).}                    \tag{18a}
+\]
+It attains the preceding hard-prime middle localization equality
+$11a_M=3(p+3)$.
+\end{corollary}
+\begin{proof}
+The grade identity (6) gives $p\equiv\alpha=8\pmod{11}$, so $s_M$ is integral.
+Then $p=11s_M-3=4\cdot3s_M-(3+s_M)$. A common factor of $3$ and $s_M$
+would divide the hard prime $p$, impossible. The first-half inequalities follow
+from $s_M>3$, and substitution proves both the original M gate and its ordered
+identity. The original E coordinates remain in the graph of this map; if they
+are forgotten, its fibre is the set of positive coprime quartic pairs in (18)
+with the fixed value of $p$. Theorem~\ref{thm:curve} bounds that fibre by three.
+No integral-point classification is needed to prove this return.
+\end{proof}
+
+Equation (18) remains a specific integral-point problem for classifying the
+exterior records, but no longer an obstruction to returning an original middle
+state from any such record. The bounded scan in the certificate checks
+odd $s\le200000$ exactly. No absence beyond that range, effective integral-point
+cutoff, or global ES conclusion is inferred. The small point $r=s=1$ gives
+$p=41$, outside the hard classes. The elementary Pell rewriting
+\[
+ (11s^2-2)^2-11(2r)^2=37
+\]
+also retains the extra condition that $(X+2)/11$ be a square; dropping that
+condition would change the problem.
+
+\section{A natural cubic involution fails the required fixed-prime return}
+For $B\ne0$, (4) has the explicitly checked rational involution
+\[
+ \Psi(X,Y)=(B/X,BY/X^2),\qquad X\ne0.                    \tag{19}
+\]
+Substitution proves preservation of (4), and applying it twice is the identity.
+For an original positive state it can have positive $X'$ only when $B>0$.
+Integrality of $X'$ requires
+\[
+ v\mid B\iff v\mid4u\iff s^2\mid4r^2\iff s\mid2.
+\]
+If $s=2$, then $r$ is odd, $X'\equiv3\pmod4$, and $Y'=rX'$ is odd, so the
+inverse $a'=Y'/2$ fails integrality. If $s=1$, the complete coordinate transport is
+\[
+ h'=4r^2+h-R-D,\quad R'=4r^2-D,\quad D'=4r^2-R,
+ \quad a'=rh',\quad p'=4rh'-R'.                          \tag{20}
+\]
+Whenever its signs are positive, it has $R',D'\equiv1\pmod4$ and
+$p'\equiv3\pmod4$, not the original hard prime. More exactly,
+\[
+ \boxed{p'-p=(4r-1)(4r^2-R-D).}                          \tag{21}
+\]
+The second factor is $2\pmod4$, hence cannot vanish.
+Thus (19) is an actual rational correspondence, but not a same-$p$ selector.
+At $p=2129$, its positive numerical image has $p'=5951$, $R'=D'=249$,
+$h'=155,r'=10,s'=1$. This records what the map does rather than treating its
+failure as evidence that the two geometries are unrelated.
+
+The obvious reverse attempt from the always available residual-one source in
+the class $p'\equiv3\pmod4$ also has an exact obstruction. Write
+$p'=4hrs-1$, $R=1$, $D=4hr^2+1$, $v=hs^2$ with $\gcd(r,s)=1$.
+For (19),
+\[
+ X'=4r^2/s^2+hs^2-4hr^2-2.
+\]
+An integer image still requires $s\mid2$. At $s=1$,
+$X'=h-2-4(h-1)r^2<0$. At $s=2$,
+$X'=4h-2-(4h-1)r^2\le-1$. For $s>2$ the image is not integral.
+Thus the complete residual-one source does not supply a positive integral
+inverse for the hard-prime problem. This does not prohibit the other
+$p'\equiv3\pmod4$ sources, such as the displayed numerical image at 5951;
+it identifies why the immediate reverse construction is insufficient.
+
+\section{Continuation status and executable boundary}
+The legitimate new reductions are: the diagonal source has a same-prime middle
+return with smaller cofactor; all hard-prime radius-seven E states are singular
+and already have M hits at the same shell; the next radius has the unique
+nonsingular quartic (18), whose grade congruence itself forces (18a). The marked curve includes the original fixed-$p$ line
+(8), which its natural involution does not preserve.
+
+None of this proves that an arbitrary prescribed prime supplies an original E
+or M state. The universal Turn 7 existence milestone remains outstanding. The
+finite profile classification is exhaustive because its domain consists of the
+52 explicitly enumerated integer profiles; the bound on the quartic's search
+prefix is a different, finite verification scope.
+
+The supplied main verifier enumerates all original E square divisors at every
+$p\equiv1\pmod8$ prime through its declared bound. The separate implementation
+uses primitive $(h,r,s)$ enumeration and a different modular profile test. Both
+keep the original integers and compare source fibres rather than comparing only
+state totals. All check outcomes, failures and time limits are recorded by the
+execution runner. No independent mathematical review or Lean build is claimed.

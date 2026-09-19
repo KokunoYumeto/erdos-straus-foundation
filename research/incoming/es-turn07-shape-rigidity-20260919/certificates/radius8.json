@@ -1,0 +1,254 @@
+{
+  "additional_profiles": [
+    {
+      "alpha": -8,
+      "beta": -4,
+      "h": 31,
+      "residues_mod24": []
+    },
+    {
+      "alpha": -8,
+      "beta": 4,
+      "h": 11,
+      "reason": "positive-square coordinate"
+    },
+    {
+      "alpha": -8,
+      "beta": 4,
+      "h": 33,
+      "reason": "positive-square coordinate"
+    },
+    {
+      "alpha": -8,
+      "beta": 8,
+      "h": 13,
+      "residues_mod24": []
+    },
+    {
+      "alpha": -8,
+      "beta": 8,
+      "h": 65,
+      "residues_mod24": []
+    },
+    {
+      "alpha": -4,
+      "beta": -8,
+      "h": 31,
+      "residues_mod24": []
+    },
+    {
+      "alpha": -4,
+      "beta": 8,
+      "h": 11,
+      "residues_mod24": []
+    },
+    {
+      "alpha": -4,
+      "beta": 8,
+      "h": 33,
+      "residues_mod24": []
+    },
+    {
+      "alpha": 4,
+      "beta": -8,
+      "h": 11,
+      "reason": "positive-square coordinate"
+    },
+    {
+      "alpha": 4,
+      "beta": -8,
+      "h": 33,
+      "reason": "positive-square coordinate"
+    },
+    {
+      "alpha": 4,
+      "beta": 8,
+      "h": 31,
+      "reason": "positive-square coordinate"
+    },
+    {
+      "alpha": 8,
+      "beta": -8,
+      "h": 13,
+      "residues_mod24": []
+    },
+    {
+      "alpha": 8,
+      "beta": -8,
+      "h": 65,
+      "residues_mod24": []
+    },
+    {
+      "alpha": 8,
+      "beta": -4,
+      "h": 11,
+      "residues_mod24": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          7,
+          23
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          13,
+          23
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          13
+        ],
+        [
+          17,
+          19
+        ],
+        [
+          19,
+          5
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          19,
+          17
+        ],
+        [
+          19,
+          23
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          23,
+          13
+        ],
+        [
+          23,
+          19
+        ]
+      ]
+    },
+    {
+      "alpha": 8,
+      "beta": -4,
+      "h": 33,
+      "residues_mod24": []
+    },
+    {
+      "alpha": 8,
+      "beta": 4,
+      "h": 31,
+      "reason": "positive-square coordinate"
+    }
+  ],
+  "equation": "4 r^2 = 11 s^4 - 4 s^2 - 3",
+  "finite_prefix": {
+    "odd_s_only": true,
+    "points": [
+      {
+        "gcd": 1,
+        "hard_residue": false,
+        "p": 41,
+        "p_mod840": 41,
+        "r": 1,
+        "s": 1
+      }
+    ],
+    "s_max": 200000
+  },
+  "nonclaim": "No complete integral-point theorem or global ES conclusion is inferred from the finite prefix.",
+  "p": "44 r s - 11 s^2 + 8",
+  "radius": 8,
+  "surviving_nonsingular_profiles": [
+    [
+      8,
+      -4,
+      11
+    ]
+  ]
+}

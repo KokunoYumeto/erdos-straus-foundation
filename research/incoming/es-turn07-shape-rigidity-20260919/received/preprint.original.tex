@@ -1,0 +1,178 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{lemma}[theorem]{Lemma}
+\title{Small-shape exterior certificates force original middle states\newline in the Erd\H{o}s--Straus equation}
+\author{The Clankers}\date{19 September 2026}
+\begin{document}
+\begin{abstract}
+For an original exterior state, put $v=a^2/u$, $R=4a-p$ and $D=(4u+1)/R$.
+We retain the integral cubic marked by $\alpha=v-R$, $\beta=v-D$.
+Every diagonal state $R=D$ has an explicit same-prime middle return with smaller
+cofactor. At a hard prime, every state with $\max(|\alpha|,|\beta|)\le7$ lies on
+the singular family and forces middle states at its unchanged shell. Radius eight
+has only one possible nonsingular shape, whose grade congruence also supplies a
+middle state. This removes these original exterior branches from the remaining
+E-only search; it does not establish universal ES existence.
+\end{abstract}\maketitle
+
+An original first-half exterior state at a prime $p\equiv1\pmod8$ has
+\[
+ p/4<a<p/2,\quad R=4a-p,\quad u\mid a^2,\quad R\mid4u+1.
+\]
+Gcd normalization gives $a=hrs$, $u=hr^2$, $\gcd(r,s)=1$ and
+$R\kappa=pr+s$. Its ordered denominators are
+$(a,hs\kappa,phr\kappa)$, with inverse $u=a^2/(Ry-pa)$.
+These Type-I/II coordinates are inherited [1]. Retain
+\[
+ v=hs^2=a^2/u,\quad D=(4u+1)/R=(r+\kappa)/s,
+ \quad \alpha=v-R,\quad\beta=v-D,\quad B=\alpha\beta-1.
+\]
+Then $h>1$, $R,D\equiv3\pmod4$, $v\ne R,D$, and
+\[
+ h\mid B,\quad p\equiv\alpha\pmod h,\quad p\beta\equiv1\pmod h. \tag{1}
+\]
+Primewise quadratic reciprocity gives $(u/R)=(u/p)$, hence $(h/p)=-1$.
+For a hard prime, meaning $p\bmod840\in\{1,121,169,289,361,529\}$, the primes
+$2,3,5,7$ are all residues. No positive square can equal $\alpha$ or $\beta$:
+(1) would make every prime factor of $h$ a residue.
+
+The exact marked cubic is
+\[
+ Y^2=X^3-(\alpha+\beta)X^2+BX,\qquad (X,Y)=(v,2a),       \tag{2}
+\]
+with inverse $R=X-\alpha$, $D=X-\beta$, $a=Y/2$, $p=2Y-R$ and
+$u=(RD-1)/4$. Its original domain requires positive $X$, positive even $Y$,
+positive $R,D\equiv3\pmod4$, $Y>R$, and the reconstructed prime condition.
+Its discriminant is $16B^2((\alpha-\beta)^2+4)$.
+At fixed $p$ the line $2Y=p+X-\alpha$ must also be retained.
+
+\begin{theorem}[Diagonal channel return]
+If $R=D$, write $(R-1)/2=\delta t^2$ with $\delta$ squarefree. Then
+$\delta\equiv3\pmod4$, $\delta\mid p+1$, and $\delta<R$.
+Put $c=(p+1)/\delta$, $j=(\delta+1)/4$. The original middle state
+\[
+ (a_M,R_M,u_M,h_M,r_M,s_M,\lambda_M,Q_M)
+ =(jc,c+1,j,j,1,c,1,\delta)
+\]
+returns $(jc,pjc,pj)$, with $\min(R_M,Q_M)<R$.
+\end{theorem}
+\begin{proof}
+The equality $R^2=4u+1$ makes $u$ and $a$ even. Thus $R\equiv7\pmod8$ and
+$z=(R-1)/2\equiv3\pmod4$. Since $u=z(z+1)\mid a^2$, every prime of $z$
+divides $a$, so its squarefree part $\delta$ divides $a$ and $p+1$.
+Now $p=\delta c-1=4jc-c-1$. Substitution proves the gate and the ordered identity.
+The first-half upper bound is $c(\delta-1)>2$, and $\delta\le(R-1)/2$.
+The original fibre retains odd $t$, reconstructing
+$R=2\delta t^2+1$, $a=(p+R)/4$, $u=(R^2-1)/4$ with its original divisibility.
+\end{proof}
+
+\begin{theorem}[Radius-seven rigidity]
+At a hard prime, every original E state with $\max(|\alpha|,|\beta|)\le7$ has
+\[
+ h=4n^2-2,\ r=n,\ s=1,\ R=D=4n^2-1,\ \kappa=4n^2-n-1
+\]
+for even $n\ge2$. Its parameter and distinguished denominator are
+\[
+ p=16n^3-4n^2-8n+1,\qquad a=n(4n^2-2).
+\]
+At that same shell $u_M=n$ and $u'_M=n(4n^2-2)^2$ are the two original
+middle orientations, with ordered return $(a,pa,pn)$.
+\end{theorem}
+\begin{proof}
+There are 52 ordered profiles with nonzero coordinates in $[-7,7]$ and
+$\alpha\equiv\beta\pmod4$. If $B\ne0$, its complete list of possible large
+prime factors gives only
+\[
+\begin{array}{c|c|c}
+B& (\alpha,\beta)&h\\\hline
+11&(2,6),(6,2),(-2,-6),(-6,-2)&11\\
+-13&(-6,2),(2,-6),(-2,6),(6,-2)&13\\
+-17&(-4,4),(4,-4)&17\\
+-37&(-6,6),(6,-6)&37.
+\end{array}
+\]
+All other nonzero $B$ have prime factors only $2,3,5,7$ and cannot contain the
+nonresidue grade $h$. Substituting $X=hs^2,Y=2hrs$ into (2) gives
+\[
+ 4r^2=hs^4-(\alpha+\beta)s^2+B/h.                         \tag{3}
+\]
+For $h=11$ or 17, the requirement $hs^2-\alpha\equiv3\pmod4$ is impossible.
+For $h=13$, $s$ is odd. When $\alpha+\beta=4$, (3) gives $4r^2\equiv8\pmod{16}$.
+When the sum is $-4$, it makes $r$ even and then $p\equiv5\pmod8$.
+For $h=37$, (3) makes $r,s$ odd; $p\equiv1\pmod8$ selects $\alpha=-6$.
+Modulo three, (3) forces $3\nmid s$, $3\mid r$, and hence $p\equiv2\pmod3$.
+All nonsingular cases are excluded.
+
+The singular alternatives have $\alpha\beta=1$. The positive-square obstruction
+excludes $(1,1)$. For $(-1,-1)$, $s^2(v+2)=4r^2$ implies $s\mid2$;
+$s=2$ fails modulo four. Hence $s=1$, $h=v=4r^2-2$, giving the stated family.
+Finally $n+a=n(h+1)=nR$ proves the original M gate; normalization gives
+$(h_M,r_M,s_M,\lambda_M)=(n,1,h,1)$.
+\end{proof}
+
+The family already appears in the preceding exterior cutoff [3]; the result
+above classifies all the stated hard-prime shapes and supplies its middle return.
+It also has an endpoint E state with $R_0=4n-1$, $a_0=n(h-n+1)<a$, $u_0=a_0$
+and $\kappa_0=h$.
+
+\begin{theorem}[Radius eight has a terminal middle return]
+Every hard-prime E state of shape radius at most eight forces an original M
+state. Beyond the singular case, the only possible shape is
+\[
+ (\alpha,\beta,h)=(8,-4,11),\quad
+ 4r^2=11s^4-4s^2-3,\quad p=44rs-11s^2+8.
+\]
+It has the middle return
+\[
+ s_M=(p+3)/11,\quad (h_M,r_M,s_M,\lambda_M)=(1,3,s_M,1),
+\]
+with $a_M=3(p+3)/11$, $u_M=9$, $R_M=(p+36)/11$, $Q_M=11$.
+\end{theorem}
+\begin{proof}
+Only profiles containing $\pm8$ need be added. A positive coordinate 4 is
+excluded. For $B=-65$, the possible grades 13 and 65 fail the residual condition
+modulo four; $B=63$ has no large prime. For $(-8,-4)$ or its reverse, $h=31$
+and (3) gives $4r^2\equiv12\pmod{16}$. For $B=-33$, grade 33 fails modulo four;
+at grade 11, (3) and $p\equiv1\pmod8$ leave exactly $(8,-4)$.
+Now (1) gives $p\equiv8\pmod{11}$. Thus $s_M$ is integral and
+$p=11s_M-3=12s_M-(3+s_M)$. Primality gives $\gcd(3,s_M)=1$; the source range
+and ordered M identity follow by direct substitution. Solving the quartic is
+unnecessary for this positive return.
+\end{proof}
+
+For example, the earlier hard-prime E state
+$(p,a,u,R,D)=(48049,12090,24180,311,311)$ maps to
+\[
+ \frac4{48049}=\frac1{12090}+\frac1{580912410}+\frac1{1873911},
+\]
+with middle cofactor 155. Its exterior factors exceed the earlier middle bound;
+the actual channel map, rather than an identification of the two state types,
+repairs that comparison on its exact domain.
+
+The cubic has a rational involution $(X,Y)\mapsto(B/X,BY/X^2)$ when $B\ne0$.
+An original positive integral image requires $s\mid2$. At $s=2$ its new $Y$ is
+odd. At $s=1$ its new residuals are $4r^2-D$ and $4r^2-R$, both $1\pmod4$;
+its new parameter is $3\pmod4$ and differs from $p$ by
+$(4r-1)(4r^2-R-D)$. It is not a fixed-prime descent.
+
+\paragraph{Scope.}
+These are actual same-prime returns from specified original branches.
+They do not prove that every prescribed prime supplies such a branch or any E/M
+state. The complete positive-coefficient existence assertion remains unresolved.
+The supplied standard-library programs retain original factors, exponent vectors,
+orientations, coefficient fibres and the finite 52-profile proof. No historical
+priority, independent mathematical review or Lean build is claimed.
+
+\begin{thebibliography}{9}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). \emph{Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions}. J. Australian Math. Soc.,
+94, 50--105. \texttt{arXiv:1107.1010}, \S2.
+\bibitem{Hatcher} Hatcher, A. (2022). \emph{Topology of Numbers}. Author edition,
+\S6.4, pp. 205--212.
+\bibitem{Previous} The Clankers. (2026). \emph{Exterior three-parameter bound and
+complete original atlas}. Supplied \texttt{exterior\_atlas/core.tex}, \S\S2--5.
+\end{thebibliography}
+\end{document}

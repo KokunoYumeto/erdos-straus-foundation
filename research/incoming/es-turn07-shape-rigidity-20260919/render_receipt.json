@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "toolchain": {
+    "latexmk": "4.88",
+    "engine": "pdfTeX 3.141592653-2.6-1.40.29",
+    "render": "Poppler pdftoppm at 150 dpi"
+  },
+  "documents": [
+    {
+      "source": "workbench.tex",
+      "output": "output/pdf/workbench.pdf",
+      "pages": 7,
+      "bytes": 357313,
+      "sha256": "dbf0863f11be512aef025b497799ae76ac9ea93e1f4b3c403a35eb8683a28c86",
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 0,
+      "visual_pages_checked": [1, 2, 3, 4, 5, 6, 7],
+      "visual_status": "passed"
+    },
+    {
+      "source": "preprint.tex",
+      "output": "output/pdf/preprint.pdf",
+      "pages": 3,
+      "bytes": 299267,
+      "sha256": "ea7c24f5692ab55b370bf35cc011ca5132b5ff8fc9e19beddc2a1b2430ac7a61",
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 1,
+      "underfull_note": "Benign bibliography line wrap in the antecedent-source entry; no clipping or collision is visible.",
+      "visual_pages_checked": [1, 2, 3],
+      "visual_status": "passed"
+    }
+  ]
+}

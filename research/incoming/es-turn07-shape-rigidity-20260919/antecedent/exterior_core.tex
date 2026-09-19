@@ -1,0 +1,312 @@
+\section{Scope: complementing the middle atlas without asserting existence}
+The preceding middle-channel result proves a complete two-chart atlas with a
+square-root cutoff \cite{Middle}. It does not prove that that atlas is occupied.
+The present continuation treats the other channel. It gives a three-chart
+exterior atlas indexed by an explicit cubic cutoff, preserves the original
+square-divisor availability in the norm chart, and disproves transferring the
+middle square-root bound unchanged to the exterior cofactors. The universal
+existence step remains unproved. In particular, a finite decision algorithm is
+not a witness-guaranteed algorithm.
+
+The Type I/II parametrizations are classical \cite[\S2, Propositions 2.2 and
+2.6]{ET}. Their algebraic identities are proved below in the retained marking.
+No historical-priority claim is made for the derived cutoff or atlas.
+
+\section{The original exterior state and its three arithmetic parameters}
+Let $p>1$, $p\equiv1\pmod4$, and retain the unit first-half source
+\[
+ p/4<a<p/2,\qquad \gcd(p,a)=1,\qquad R=4a-p,
+ \qquad u\mid a^2,\quad R\mid4u+1.                         \tag{1}
+\]
+The cutoff theorem applies even when this integer parameter $p$ is composite.
+When asserting a complete prime ES atlas, primality is imposed separately.
+Write $a=\prod_\ell\ell^{e_\ell}$ and retain every original exponent
+$\beta_\ell=v_\ell(u)-e_\ell\in[-e_\ell,e_\ell]$.
+Set
+\[
+ g=\gcd(a,u),\quad
+ (h,r,s)=(g^2/u,u/g,a/g),\quad
+ \kappa=(pr+s)/R.                                        \tag{2}
+\]
+Prime valuations prove that these are positive integers, $a=hrs$, $u=hr^2$,
+and $\gcd(r,s)=1$. The gate in (1), after multiplication by the unit $s$ modulo
+$R$, gives $R\mid pr+s$. The ordered return is
+\[
+ \boxed{(x,y,z)=(a,hs\kappa,phr\kappa),\qquad
+ \frac4p=\frac1x+\frac1y+\frac1z.}                       \tag{3}
+\]
+It is checked by multiplication. Its ordered inverse is
+\[
+ u=\frac{a^2}{Ry-pa}.
+\]
+No denominator permutation is suppressed.
+
+Retain the complement divisor and the exterior cofactor
+\[
+ \boxed{v=\frac{a^2}{u}=hs^2,\qquad
+ D=\frac{4u+1}{R}=\frac{r+\kappa}{s}.}                   \tag{4}
+\]
+The second equality follows from
+$RsD=s(4hr^2+1)=(p+R)r+s=R(r+\kappa)$.
+Consequently
+\[
+ \boxed{pD+1=4hr\kappa,\qquad
+ (p+R)^2+4v=4vRD.}                                     \tag{5}
+\]
+Here $R,D\equiv3\pmod4$, and $\kappa>r$ because $R<p$ and
+$R\kappa=pr+s$. Thus
+\[
+ \boxed{p+R<2vD.}                                       \tag{6}
+\]
+The case $h=1$ would make $-1$ a square modulo $R\equiv3\pmod4$ through
+$R\mid4r^2+1$, which is impossible. Hence $h>1$. Further,
+$\gcd(h,R)=\gcd(h,D)=1$ by (1) and (5), so
+\[
+ \boxed{v\ne R,\qquad v\ne D.}                         \tag{7}
+\]
+This does \emph{not} assert $\gcd(v,D)=1$: the square factor $s^2$ may overlap
+$D$. For example, at $p=37$, $(a,u,h,r,s,\kappa)=(12,8,2,2,3,7)$ has
+$(v,D)=(18,3)$.
+
+\section{A strict cubic cutoff}
+\begin{theorem}[Exterior three-parameter bound]\label{thm:cubic}
+For every state (1), put $w=\min(v,R,D)$. Then
+\[
+ \boxed{(p+w)^2>4(w+1)^2(w-1).}                         \tag{8}
+\]
+Let $C(p)$ be the largest positive integer $w$ satisfying (8). Then
+\[
+ 1\le C(p)<p,\qquad \min(v,R,D)\le C(p),
+ \qquad C(p)=(p/2)^{2/3}+O(p^{1/3}).                    \tag{9}
+\]
+The constant and strict sign in (8) are part of the statement. The asymptotic
+notation is not used in the verifier: $C(p)$ is computed by exact integer
+comparison.
+\end{theorem}
+\begin{proof}
+Put $t=\min(R,D)$. If $R=t$, (5) gives
+\[
+ (p+t)^2\ge4v(t^2-1).
+\]
+If $D=t\le R$, direct subtraction using (5) gives
+\[
+ (p+t)^2-4v(t^2-1)
+ =(R-t)(4vt-2p-R-t)\ge0.                                \tag{10}
+\]
+Indeed (6) implies $4vt-2p-2R>0$; the last factor in (10) is that positive
+quantity plus $R-t$. Equality is possible only when $R=D=t$. Hence
+\[
+ p\ge 2\sqrt{v(t^2-1)}-t.                               \tag{11}
+\]
+By (7), either $v\ge t+1$ or $v\le t-1$.
+
+In the first case $w=t$, and (11) gives
+$p\ge2(w+1)\sqrt{w-1}-w$.
+Equality would require $R=D=w$, $v=w+1$, and
+$p+w=2(w+1)\sqrt{w-1}$. Thus $w-1$ would be an integer square, whereas
+$w=R\equiv3\pmod4$ makes $w-1\equiv2\pmod4$. Equality is impossible.
+
+In the second case $w=v$ and $t\ge w+1$. The function
+$2\sqrt{w(t^2-1)}-t$ is strictly increasing for $t>1$, so
+\[
+ p\ge2w\sqrt{w+2}-w-1.
+\]
+This is strictly larger than $2(w+1)\sqrt{w-1}-w$. To verify the comparison,
+put $U=w\sqrt{w+2}$ and $V=(w+1)\sqrt{w-1}$. For $w\ge2$,
+\[
+ U^2-V^2=w^2+w+1,\qquad U+V\le2w(w+1),
+\]
+so $U-V>1/2$. This proves the strict inequality in both cases; squaring its
+positive sides proves (8).
+
+The function $2(w+1)\sqrt{w-1}-w$ is strictly increasing for $w>1$.
+At $w=1$, (8) holds, and at $w=p$ it fails since
+$(p+1)^2(p-1)-p^2=p^3-p-1>0$. There is therefore one final true integer in
+$[1,p-1]$, obtained by binary search. Expanding the increasing expression gives
+$2w^{3/2}-w+O(\sqrt w)$, whence (9).
+\end{proof}
+
+For a prime $p$, the least-nonresidue lower bound from the preceding work gives
+$v=hs^2\ge h\ge\nu_p$. This may prune the complement chart, but it does not
+replace the requirement that that chart actually contain a divisor satisfying
+its congruence and availability condition.
+
+\section{Three disjoint charts with complete inverses}
+Define the root-divisibility kernel
+\[
+ K(v)=\prod_{\ell^e\parallel v}\ell^{\lceil e/2\rceil}.
+\]
+Then $v\mid a^2$ is equivalent to $K(v)\mid a$, prime by prime.
+For the following atlas let $p\equiv1\pmod4$ be prime and $C=C(p)$.
+
+\begin{theorem}[Complete original exterior atlas]\label{thm:atlas}
+Every original first-half exterior state belongs to exactly one of the following
+charts, and every chart entry reconstructs such a state.
+
+\textbf{Direct residual chart.} Retain
+\[
+ 3\le R\le C,\quad R\equiv3\pmod4,\quad a=(p+R)/4,
+ \quad u\mid a^2,\quad R\mid4u+1.
+\]
+Compute $D=(4u+1)/R$, $v=a^2/u$, and retain $R\le D$, $R<v$.
+The map and inverse are (1)--(4).
+
+\textbf{Reciprocal chart.} Retain
+\[
+ 3\le D\le C,\quad D\equiv3\pmod4,\quad B_D=(pD+1)/4,
+ \quad w\mid B_D^2,\quad w<B_D,\quad D\mid w+B_D.
+\]
+Set
+\[
+ g=\gcd(B_D,w),\quad
+ h=g^2/w,\quad r=w/g,\quad\kappa=B_D/g,
+ \quad s=(r+\kappa)/D,\quad a=hrs,\quad u=w.
+\]
+Compute $R=4a-p$, $v=hs^2$, and retain $D<R$, $D<v$.
+
+\textbf{Complement--norm chart.} Retain
+\[
+ \boxed{2\le v\le C,\quad R\mid p^2+4v,\quad
+ R\equiv3\pmod4,\quad v<R<p,\quad
+ R\equiv-p\pmod{4K(v)}.}                               \tag{12}
+\]
+Put
+\[
+ \boxed{a=(p+R)/4,\qquad u=a^2/v,\qquad
+ D=(4u+1)/R,}                                           \tag{13}
+\]
+and retain $v<D$. Formula (2) then gives the complete original marking and (3)
+its ordered denominators. The inverse reads the original complement $v=a^2/u$
+and residual $R$.
+\end{theorem}
+\begin{proof}
+The direct chart is literal. For the reciprocal chart, gcd normalization gives
+$4hr\kappa=pD+1$, $r<\kappa$, $\gcd(r,\kappa)=1$, and
+$D\mid r+\kappa$. The number $D$ is coprime to $hr\kappa$, so
+$\gcd(r,s)=1$. Also
+\[
+ R\kappa=pr+s>0,
+\]
+and
+\[
+ D(p-2a)=pD-2hr(r+\kappa)
+ =4hr\kappa-1-2hr(r+\kappa)
+ =2hr(\kappa-r)-1>0.
+\]
+Equivalently, $2a<p$; the same identity follows by substituting
+$s=(r+\kappa)/D$. Thus $R>0$, $a<p/2$, and this is the original exterior state.
+The inverse recovers $B_D=hr\kappa$ and the orientation $w=hr^2<B_D$.
+The complementary reciprocal divisor would give $\kappa<r$ and is not silently
+identified with this orientation.
+
+For (12), $v<p$ implies $\gcd(v,p)=1$. Since $R\mid p^2+4v$, we have
+$\gcd(R,4v)=1$. The residue modulo $4K(v)$ gives the actual integer availability
+$v\mid a^2$, so (13) defines $u$. Finally
+\[
+ 4v(4u+1)=(p+R)^2+4v\equiv0\pmod R.
+\]
+Cancelling the proved unit $4v$ gives the exterior gate. The range gives the
+first-half source, and gcd normalization applies. Conversely every original
+state has $R\mid p^2+4v$ by (5), and its $v\mid a^2$ gives exactly the residue
+modulo $4K(v)$.
+
+The smallest of $R,D,v$ is at most $C$ by Theorem~\ref{thm:cubic}.
+The grade $v$ cannot tie either of the other parameters. A possible $R=D$ tie is
+assigned to the direct chart. These rules are disjoint and exhaustive.
+\end{proof}
+
+\paragraph{A correction to an overly strong coprimality shortcut.}
+One may cancel $R$ against $v$ in (12), because it follows there from the
+prime parameter and the norm divisibility. One may not assert
+$\gcd(v,D)=1$ in the original state. The $p=37$ example above has a common
+factor three. The reciprocal construction retains that factor through $s$.
+
+\paragraph{Candidate size and the surviving existence question.}
+There are at most $(C+1)/4$ values in each of the first two lists and $C-1$
+values of $v$ in the third. Exact finite candidate counts are obtained by summing
+$\tau(a^2)$, $(\tau(B_D^2)-1)/2$, and $\tau(p^2+4v)$ over their respective
+lists, then applying the displayed original conditions. These are factorization
+and divisor-enumeration bounds, not polynomial-time claims. The preceding
+middle two-chart atlas has square-root-sized outer lists. Together the two
+results decide the complete prime ES source at each given $p$. They still do
+not prove that its result is nonempty for every $p$.
+
+\section{An actual hard prime and an asymptotically extremal integer family}
+At
+\[
+ \boxed{p=48049\equiv169\pmod{840}},
+\]
+complete trial division through $219$ proves primality. The original exterior
+state is
+\[
+ \boxed{(a,u,R,D,v,h,r,s,\kappa)
+ =(12090,24180,311,311,6045,6045,2,1,309).}                \tag{14}
+\]
+It gives
+\[
+ \boxed{\frac4{48049}=\frac1{12090}+\frac1{1867905}
+ +\frac1{179501934690}.}
+\]
+Here $4u+1=311^2$, so the exterior cofactors genuinely share all their factors.
+The preceding hard-prime middle cutoff is $247$. Both $R$ and $D$ exceed it.
+Thus the middle square-root bound cannot be transferred unchanged to these
+exterior parameters; the surviving map is Theorem~\ref{thm:atlas}, not a false
+identification of the two channels.
+
+For every integer $n\ge2$, set
+\[
+ h=4n^2-2,\quad r=n,\quad s=1,\quad
+ R=D=4n^2-1,\quad\kappa=4n^2-n-1,
+\]
+\[
+ p=16n^3-4n^2-8n+1,\qquad a=hn,\qquad u=hn^2.
+                                                               \tag{15}
+\]
+Then $R^2=4hn^2+1$, $p=4a-R$, and $R\kappa=pn+1$.
+Also $\gcd(p,a)=1$ since $\gcd(R,h)=\gcd(R,n)=1$.
+The strict first-half inequalities and the ordered identity follow directly.
+Thus these are actual unit integer sources, not arbitrary real triples satisfying
+an inequality. Here
+\[
+ \min(v,R,D)=h=4n^2-2,
+ \qquad \frac{h}{(p/2)^{2/3}}\longrightarrow1.
+\]
+In fact $C(p)=h$ at every member of (15). Writing $w=h$, its parameter is
+$p=2w\sqrt{w+2}-w-1$, while
+\[
+ 2(w+2)\sqrt w-w-1>2w\sqrt{w+2}-w-1=p.
+\]
+The left side is the bounding function at $w+1$. Thus (8) holds at $h$ and fails
+at $h+1$. The integer cutoff itself is attained, including the prime examples
+$p=97,929$.
+The exponent $2/3$ and leading coefficient in the general integer-domain cutoff
+cannot be decreased uniformly for these three parameters. At $n=2,4$, the
+parameters $p=97,929$ are prime. At $n=24+210j$, $j\ge0$, they are in the hard
+residue class $289\pmod{840}$. No infinitude of prime values of the cubic is
+asserted; consequently the asymptotic sharpness claim is for the stated unit
+integer domain, not for a proved infinite prime subfamily.
+
+The least complement grade is not automatically occupied. At $p=2521$, $v=11$
+requires $R\mid6355485$ and $R\equiv31\pmod{44}$, $0<R<p$.
+The factorization $6355485=3^2\cdot5\cdot141233$ gives the possible small divisors
+$1,3,5,9,15,45$, none in that class. This antecedent extremal failure remains
+an explicit negative control \cite{Localization}.
+
+\section{Status, provenance and replay boundary}
+This continuation gives a complete exterior counterpart to the previous middle
+atlas. It does not close the unbounded existence step. The three original
+sources in Theorem~\ref{thm:atlas} may still, logically, all be empty at a
+prescribed prime. A proof of a nonzero original coefficient, or a genuine
+prime-parameter cutoff with its entire exceptional domain certified, is still
+required before treating the proposed Turn~8 existence algorithm as established.
+
+The main standard-library verifier compares every original first-half exterior
+state with the three-chart atlas at every $p\equiv1\pmod4$ prime through its
+recorded bound. The separate checker imports neither it nor predecessor code
+and enumerates primitive $h,r,s$ directly. Both verify the hard example (14),
+the source-domain counterexamples, and the original integer family (15).
+The supplied execution receipt records actual outcomes, not outcomes inferred
+from the existence of source files. Replaying previous Turn~6--7 files repairs
+the downloadable handoff; it is not a new independent review of their proofs.
+No universal ES theorem, whole-history audit, Lean build, new overall ES
+verification range or historical-priority determination is claimed.

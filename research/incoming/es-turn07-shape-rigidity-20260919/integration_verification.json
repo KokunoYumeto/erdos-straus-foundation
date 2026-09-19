@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "status": "passed",
+  "claims_checked": [
+    "SZ-20260919-006",
+    "SZ-20260919-007",
+    "SZ-20260919-008",
+    "SZ-20260919-009"
+  ],
+  "isolated_derivation_audits": [
+    {
+      "subject": "diagonal exterior-to-middle return and complete positive-odd fibre",
+      "verdict": "passed after replacing an ambiguous odd-fibre phrase by positive odd t"
+    },
+    {
+      "subject": "radius-seven singular rigidity and radius-eight nonsingular reduction",
+      "verdict": "passed after printing the complete B spectrum, the complete radius-eight table, and the hard-prime definition"
+    },
+    {
+      "subject": "ordered marked cubic, discriminant, and rational involution",
+      "verdict": "passed after separating polynomial and Weierstrass discriminants, retaining the ordered marking, and printing every transported coordinate"
+    },
+    {
+      "subject": "certificate replay and checker independence",
+      "verdict": "passed after the separate checker was strengthened to recompute hard flags and all radius-seven/radius-eight profile tables"
+    }
+  ],
+  "mathematical_repairs_and_strengthenings": [
+    "Defined a hard prime explicitly as p modulo 840 in {1,121,169,289,361,529}.",
+    "Retained the positive odd fibre coordinate t in the diagonal map.",
+    "Printed the complete radius-seven B spectrum and exceptional profiles.",
+    "Printed all 12 new radius-eight ordered pairs and all 16 eligible grade rows.",
+    "Proved s_M>3 from s_M congruent to 4 modulo 8 in the radius-eight middle return.",
+    "Strengthened the possible hard residue classes in the radius-eight branch to p modulo 840 in {1,121}.",
+    "Distinguished the cubic polynomial discriminant from the Weierstrass discriminant.",
+    "Printed the full involution transport and corrected p'=5951 to the composite factorization 11*541.",
+    "Recorded that the bounded scan has zero actual hard radius-seven and radius-eight states and therefore cannot replace the symbolic profile proof."
+  ],
+  "main_replay": {
+    "command": "python verify.py --bound 3000 --out certificates",
+    "success": true,
+    "checks": 80079,
+    "totals": {
+      "primes": 101,
+      "shells": 36292,
+      "original_divisor_vectors": 925870,
+      "E_states": 2123,
+      "diagonal_states": 90
+    },
+    "source_sha256": "b4be2d5d65b73eceae977d76c51c9a54af21538506adf6c3d8632a2c6c007d3d",
+    "deterministic_output_sha256": {
+      "scan.json": "2ac113fd54c42c9d11d80f09de6bf01232a0c7cf9b6e2ffc1325ff3b962d9788",
+      "profiles.json": "9cf63bee1cbfffde299f86993c79b08555d321ce9c722eff7bb3325ec95373be",
+      "radius8.json": "c18adaaf816d0d700af9f7d8a475a075e18ea224f06f4ef253c7e755fe52e43c",
+      "examples.json": "89eaf46ba01bfe66fb896b9df1adf734246a568e5d25acae91d41742ddec7db5"
+    },
+    "python_optimized_outputs_identical": true
+  },
+  "separate_checker": {
+    "command": "python check_independent.py --input certificates --out independent.json --radius8-s-max 200000",
+    "success": true,
+    "checks": 28272,
+    "source_sha256": "dfbd0b8e7940c102676347be98a1ddb163b700ccc546ff881ba6d469a146252c",
+    "coverage": {
+      "diagonal_states": 90,
+      "radius7_profiles": 52,
+      "radius8_shape_pairs": 12,
+      "radius8_grade_rows": 16,
+      "radius8_prefix_s_max": 200000,
+      "radius7_actual_scan_states": 0,
+      "radius8_actual_scan_states": 0
+    },
+    "independence": "Separate primitive h,r,s enumeration; no import of the main verifier or predecessor module; certificate hashes checked before comparison."
+  },
+  "execution_receipts": {
+    "RELEASE_EXECUTION.json_sha256": "4b284c6957d407f1446262c1bb5ee06884302f9a148192d2bccb3b70b1cc7a1f",
+    "independent.json_sha256": "e52706810a578320881112340d0297ea5aeb80c4d70486e3c1a355f50e8cf98b",
+    "certificates/verification.json_sha256": "5fa054d07fe378b22639e59438aec6884aa5d3c36b3fae8b4e6e79abe06b2cda"
+  },
+  "nonclaims": [
+    "The Erdős--Straus conjecture is proved.",
+    "Every hard prime has an original E or M state.",
+    "The radius-eight quartic has been classified globally.",
+    "The finite quartic prefix is an effective integral-point cutoff.",
+    "Historical priority has been determined.",
+    "An independent human review or Lean proof has been completed."
+  ]
+}

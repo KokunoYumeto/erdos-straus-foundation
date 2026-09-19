@@ -42,7 +42,7 @@ source-located passages; it is not presented as the complete history.
 ## Start reading
 
 **17--19 September structural continuation:** a seven-turn programme is preserved
-in nine linked records because Turns 6 and 7 each have two complementary
+in ten linked records because Turns 6 and 7 have complementary
 continuations. Each record retains both the result and the exact limitation
 that determines the remaining mathematical question. The
 [dated proof bulletin](DAILY_RESULTS_20260919.md) gives stable result IDs and
@@ -89,14 +89,22 @@ proof locators without reconstructing a programme timeline.
    reciprocal and norm charts with exact inverses; separates the exterior
    cofactors from the middle square-root bound; and gives an integer family
    attaining the cutoff scale. It does not prove exterior occupancy.
+10. [Small-shape rigidity and channel rescue](research/incoming/es-turn07-shape-rigidity-20260919/README.md)
+    equips every exterior state with an exact ordered marked cubic and inverse,
+    sends every diagonal cofactor state to an original middle state, classifies
+    all hard-prime shapes through radius seven, and sends the sole possible
+    nonsingular radius-eight shape to a middle state. The natural cubic
+    involution is calculated exactly and shown not to preserve the fixed-prime
+    source. These are branch reductions, not universal occupancy.
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
 positive pair sum; its parallel pointwise continuation localizes every possible
-original state; the two Turn 7 continuations then give sharp finite atlases for
-the complete middle and exterior sources and isolate their distinct fixed-grade
-and occupancy obstructions. None asserts the still-missing universal positivity
-theorem.
+original state; the Turn 7 continuations give sharp finite atlases for the
+complete middle and exterior sources, then remove the diagonal and every
+hard-prime radius-at-most-eight exterior branch by explicit original middle
+returns. They isolate, but do not prove, the remaining unbounded-shape occupancy
+statement. None asserts the still-missing universal positivity theorem.
 Each directory contains the complete proof, exact maps, executable certificates,
 source lineage, negative controls, and an explicit handoff where one was made.
 

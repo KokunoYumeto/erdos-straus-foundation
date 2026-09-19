@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "received_artifact": {
+    "name": "ES_Turns6_7_With_Shape_Rigidity_20260919.zip",
+    "bytes": 4020194,
+    "sha256": "6215d27412188df4a143f0b8b0df52f884cacda8c1afbc7403a3bfb3658fbba0"
+  },
+  "handoff_text": {
+    "name": "Pasted text.txt",
+    "bytes": 18375,
+    "sha256": "38c5bffea3c533e8e79bc2b6e399f2317939c94f7cb8d4c19f9d59c76bbfb42b"
+  },
+  "nested_archives": {
+    "current_sha256": "efc5b4fae8358cb118a768acc1d62f0475915832d546c78e10cfeda7d3d3e895",
+    "preserved_predecessor_sha256": "11d5002a040ab624e9c486a06dea5b354a7ddf19114d6315b2f357efcf5db423"
+  },
+  "received_manifest_validation": {
+    "current_entries_checked": 36,
+    "current_entries_passed": 36,
+    "preserved_entries_checked": 134,
+    "preserved_entries_passed": 134
+  },
+  "received_principal_sources": {
+    "core.tex": "da258137f18d308c33b61dda196c0374ffe4fe766a30b62b31e14b56da8febee",
+    "preprint.tex": "1bd9bc7e0938a8f19853f7a671f21148eb6b6b570d94c27d25dae0c59cf58f30",
+    "verify.py": "3afa384bd415688d8599015c19d54ca4b3aca7103f0ad7d502acff9b14babe33",
+    "check_independent.py": "83030a2e86c29361fff883e523c7f7edf1f0a74cc96e0bd5333a48d621836ca1",
+    "antecedent/exterior_core.tex": "1dd66fd333424b5108ca97343660d701210f01e4b2d7022ad46cf51c8e25dc67",
+    "MANIFEST.json": "3601134f4fad2ceae8c2775f98fc44e3f2b99a30aeb90fdf52615625f708cd1e",
+    "RELEASE_EXECUTION.json": "be02373d9da714de80cefc9aa2ca81fa1294adada5fc15bc2bb968fff8881136"
+  },
+  "integrated_principal_sources": {
+    "core.tex": "d4272a6ce38ff5023dfa1bfb6ebf09999744d02002fc3382b17667fd8240c76d",
+    "preprint.tex": "fc508bb46c89657a6065f59550964e3c576bb50ae77f62aeaa5013619692b544",
+    "verify.py": "b4be2d5d65b73eceae977d76c51c9a54af21538506adf6c3d8632a2c6c007d3d",
+    "check_independent.py": "dfbd0b8e7940c102676347be98a1ddb163b700ccc546ff881ba6d469a146252c",
+    "MORPHISMS.md": "d589d32147766d64c569fbd045b5a71d37e4638cb404226ab1bab4d44a12da36",
+    "claims.json": "f2df1990425fd7d5dd361d71fecc4c87f66bd30c784844211a26c48965b2cc1b"
+  },
+  "preservation": {
+    "received_manifest": "received/MANIFEST.original.json",
+    "received_execution_receipt": "received/RELEASE_EXECUTION.original.json",
+    "received_principal_sources_directory": "received/",
+    "policy": "Received sources are preserved separately; active sources contain documented proof repairs and strengthenings."
+  }
+}

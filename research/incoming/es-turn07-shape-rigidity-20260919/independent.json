@@ -1,0 +1,27 @@
+{
+  "E_states": 2123,
+  "bound": 3000,
+  "checks": 28272,
+  "coverage": {
+    "diagonal_states": 90,
+    "radius7_actual_scan_states": 0,
+    "radius7_profiles": 52,
+    "radius8_actual_scan_states": 0,
+    "radius8_grade_rows": 16,
+    "radius8_prefix_s_max": 200000,
+    "radius8_shape_pairs": 12
+  },
+  "independence": "Separate primitive h,r,s enumeration; recomputed hard flags; complete radius7 and radius8 profile tables; fixed-bound Pell prefix; exact ordered denominators; direct trial primality; no main or predecessor import.",
+  "input_sha256": {
+    "examples.json": "89eaf46ba01bfe66fb896b9df1adf734246a568e5d25acae91d41742ddec7db5",
+    "profiles.json": "9cf63bee1cbfffde299f86993c79b08555d321ce9c722eff7bb3325ec95373be",
+    "radius8.json": "c18adaaf816d0d700af9f7d8a475a075e18ea224f06f4ef253c7e755fe52e43c",
+    "scan.json": "2ac113fd54c42c9d11d80f09de6bf01232a0c7cf9b6e2ffc1325ff3b962d9788",
+    "verification.json": "5fa054d07fe378b22639e59438aec6884aa5d3c36b3fae8b4e6e79abe06b2cda"
+  },
+  "primes": 101,
+  "scan_sha256": "2ac113fd54c42c9d11d80f09de6bf01232a0c7cf9b6e2ffc1325ff3b962d9788",
+  "source_sha256": "dfbd0b8e7940c102676347be98a1ddb163b700ccc546ff881ba6d469a146252c",
+  "success": true,
+  "universal_ES_proved": false
+}

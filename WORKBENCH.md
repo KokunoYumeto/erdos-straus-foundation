@@ -48,7 +48,7 @@ packets. The witness maps determine which arithmetic records those interfaces
 actually transport. The links above contain the complete maps and proofs; this
 navigation page is not a replacement for them.
 
-## Current finite source atlases
+## Current finite source atlases and branch reductions
 
 The 19 September continuation now has complete, separately typed finite atlases
 for both original first-half channels:
@@ -59,9 +59,16 @@ for both original first-half channels:
 - [Exterior three-chart atlas](research/incoming/es-turn07b-exterior-atlas-20260919/README.md):
   strict cubic cutoff for the least of \((R,D,v)\), with direct, reciprocal and
   complement–norm inverses retaining the exact \(K(v)\) availability condition.
+- [Small-shape rigidity and channel rescue](research/incoming/es-turn07-shape-rigidity-20260919/README.md):
+  an exact ordered marked cubic with its full source inverse, a squarefree-part
+  map from every diagonal exterior state to an original middle state, complete
+  hard-prime radius-seven classification, and a middle return for the sole
+  radius-eight nonsingular profile.
 
-Together they decide the complete original source at any fixed prime; they do
-not prove its output nonempty. The [dated proof bulletin](DAILY_RESULTS_20260919.md)
+The first two atlases decide the complete original source at any fixed prime;
+the third removes specified occupied exterior branches by carrying them to
+actual same-prime middle states. They do not prove the source nonempty, nor do
+they bound every remaining shape. The [dated proof bulletin](DAILY_RESULTS_20260919.md)
 gives stable result IDs and exact locators. It is a mathematical index, not a
 programme chronology.
 

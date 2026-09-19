@@ -117,6 +117,29 @@ of a weak estimate. **Unfinished:** a structural nonvanishing mechanism must
 move among the complete charts; choosing the extremal grade alone is not that
 mechanism.
 
+## 8. Marked shape curves and cross-channel rescue
+
+**Aim:** turn the sharp exterior family and small cofactor collisions into
+existence-preserving maps, rather than another list of bounded examples.
+**Reason for trying:** the exterior atlas retains three exact quantities
+\((R,D,v)\); their ordered differences determine a marked cubic whose singular
+and small-defect loci can be classified without forgetting the original source.
+**What happened:** the complete ordered inverse of that cubic was proved,
+including its fixed-prime line and grade congruences. Every actual diagonal
+state \(R=D\) maps, through the squarefree part of \((R-1)/2\), to an original
+middle state with a smaller cofactor. For hard primes, every exterior state with
+\(\max(|v-R|,|v-D|)\le7\) is the known singular family and has two retained
+middle orientations; the sole possible nonsingular radius-eight profile also
+has an explicit middle return. The natural cubic involution was calculated
+through every reconstructed coordinate and changes the prime slice.
+**Successful scope:** these occupied branches are removed from an E-only search
+by exact same-prime witness maps. **Unfinished:** no theorem forces an exterior
+or middle state to exist at a prescribed hard prime, and no bound is proved for
+the remaining unbounded shape defects.
+[Complete proof and checks](research/incoming/es-turn07-shape-rigidity-20260919/README.md) ·
+[typed maps](research/incoming/es-turn07-shape-rigidity-20260919/MORPHISMS.md) ·
+[stable result locators](DAILY_RESULTS_20260919.md).
+
 ## Keeping future attempts intelligible
 
 For each task or substantial route, retain a short account with these same fields:
@@ -127,5 +150,5 @@ than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
 The [machine records](polyclank/attempts.json) expose the earlier five fields
-separately. This page covers the seven routes above; it does not claim to have recovered
+separately. This page covers the eight routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.

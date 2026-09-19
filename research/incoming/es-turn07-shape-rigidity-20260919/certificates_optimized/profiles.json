@@ -1,0 +1,476 @@
+{
+  "exceptional_profiles": [
+    {
+      "B": 11,
+      "alpha": -6,
+      "beta": -2,
+      "h": 11,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -13,
+      "alpha": -6,
+      "beta": 2,
+      "h": 13,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -37,
+      "alpha": -6,
+      "beta": 6,
+      "h": 37,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -17,
+      "alpha": -4,
+      "beta": 4,
+      "h": 17,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 11,
+      "alpha": -2,
+      "beta": -6,
+      "h": 11,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -13,
+      "alpha": -2,
+      "beta": 6,
+      "h": 13,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -13,
+      "alpha": 2,
+      "beta": -6,
+      "h": 13,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 11,
+      "alpha": 2,
+      "beta": 6,
+      "h": 11,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -17,
+      "alpha": 4,
+      "beta": -4,
+      "h": 17,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -37,
+      "alpha": 6,
+      "beta": -6,
+      "h": 37,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -13,
+      "alpha": 6,
+      "beta": -2,
+      "h": 13,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 11,
+      "alpha": 6,
+      "beta": 2,
+      "h": 11,
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    }
+  ],
+  "profiles": [
+    {
+      "B": 48,
+      "alpha": -7,
+      "beta": -7,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 20,
+      "alpha": -7,
+      "beta": -3,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -8,
+      "alpha": -7,
+      "beta": 1,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -36,
+      "alpha": -7,
+      "beta": 5,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 35,
+      "alpha": -6,
+      "beta": -6,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 11,
+      "alpha": -6,
+      "beta": -2,
+      "h": 11,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -13,
+      "alpha": -6,
+      "beta": 2,
+      "h": 13,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -37,
+      "alpha": -6,
+      "beta": 6,
+      "h": 37,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 24,
+      "alpha": -5,
+      "beta": -5,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 4,
+      "alpha": -5,
+      "beta": -1,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -16,
+      "alpha": -5,
+      "beta": 3,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -36,
+      "alpha": -5,
+      "beta": 7,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 15,
+      "alpha": -4,
+      "beta": -4,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -17,
+      "alpha": -4,
+      "beta": 4,
+      "h": 17,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 20,
+      "alpha": -3,
+      "beta": -7,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 8,
+      "alpha": -3,
+      "beta": -3,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -4,
+      "alpha": -3,
+      "beta": 1,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -16,
+      "alpha": -3,
+      "beta": 5,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 11,
+      "alpha": -2,
+      "beta": -6,
+      "h": 11,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 3,
+      "alpha": -2,
+      "beta": -2,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -5,
+      "alpha": -2,
+      "beta": 2,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -13,
+      "alpha": -2,
+      "beta": 6,
+      "h": 13,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 4,
+      "alpha": -1,
+      "beta": -5,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 0,
+      "alpha": -1,
+      "beta": -1,
+      "kind": "singular"
+    },
+    {
+      "B": -4,
+      "alpha": -1,
+      "beta": 3,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -8,
+      "alpha": -1,
+      "beta": 7,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -8,
+      "alpha": 1,
+      "beta": -7,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -4,
+      "alpha": 1,
+      "beta": -3,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 0,
+      "alpha": 1,
+      "beta": 1,
+      "kind": "singular"
+    },
+    {
+      "B": 4,
+      "alpha": 1,
+      "beta": 5,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -13,
+      "alpha": 2,
+      "beta": -6,
+      "h": 13,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -5,
+      "alpha": 2,
+      "beta": -2,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 3,
+      "alpha": 2,
+      "beta": 2,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 11,
+      "alpha": 2,
+      "beta": 6,
+      "h": 11,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -16,
+      "alpha": 3,
+      "beta": -5,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -4,
+      "alpha": 3,
+      "beta": -1,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 8,
+      "alpha": 3,
+      "beta": 3,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 20,
+      "alpha": 3,
+      "beta": 7,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -17,
+      "alpha": 4,
+      "beta": -4,
+      "h": 17,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 15,
+      "alpha": 4,
+      "beta": 4,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -36,
+      "alpha": 5,
+      "beta": -7,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -16,
+      "alpha": 5,
+      "beta": -3,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 4,
+      "alpha": 5,
+      "beta": 1,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 24,
+      "alpha": 5,
+      "beta": 5,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -37,
+      "alpha": 6,
+      "beta": -6,
+      "h": 37,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": -13,
+      "alpha": 6,
+      "beta": -2,
+      "h": 13,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 11,
+      "alpha": 6,
+      "beta": 2,
+      "h": 11,
+      "kind": "explicit modular exclusion",
+      "modulus": 48,
+      "r_s_period": 24,
+      "solutions": []
+    },
+    {
+      "B": 35,
+      "alpha": 6,
+      "beta": 6,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -36,
+      "alpha": 7,
+      "beta": -5,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": -8,
+      "alpha": 7,
+      "beta": -1,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 20,
+      "alpha": 7,
+      "beta": 3,
+      "kind": "all grade primes are 2,3,5,7"
+    },
+    {
+      "B": 48,
+      "alpha": 7,
+      "beta": 7,
+      "kind": "all grade primes are 2,3,5,7"
+    }
+  ],
+  "radius": 7,
+  "scope": "Complete coefficient profiles; h is forced to |B| on every exceptional profile. No height extrapolation."
+}

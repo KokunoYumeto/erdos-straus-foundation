@@ -1,0 +1,163 @@
+{
+  "bound": 3000,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "certificates"
+      ],
+      "returncode": 0,
+      "status": "completed",
+      "elapsed_seconds": 0.539468199989642
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "certificates_optimized"
+      ],
+      "returncode": 0,
+      "status": "completed",
+      "elapsed_seconds": 0.5428132999950321
+    },
+    {
+      "command": [
+        "python",
+        "check_independent.py",
+        "--input",
+        "certificates",
+        "--out",
+        "independent.json"
+      ],
+      "returncode": 0,
+      "status": "completed",
+      "elapsed_seconds": 0.31289800000377
+    }
+  ],
+  "normal_optimized_agreement": {
+    "scan.json": true,
+    "profiles.json": true,
+    "examples.json": true,
+    "radius8.json": true
+  },
+  "new_replay_success": true,
+  "universal_ES_proved": false,
+  "turn7_existence_milestone_completed": false,
+  "main_report": {
+    "bound": 3000,
+    "check_counts": {
+      "E divisor cannot be kept as M divisor": 1,
+      "actual endpoint divisor": 96,
+      "bounded-shape grade constraint": 2126,
+      "channel normalization must change": 1,
+      "collision fibre inverse": 96,
+      "collision map source": 96,
+      "collision residue and squarefree markings": 96,
+      "complete exceptional large-prime table": 12,
+      "complete modular exclusion of nonsingular hard profile": 12,
+      "complete singular integer profiles": 2,
+      "curve inverse integer divisor": 2123,
+      "curve inverse positive even domain": 2123,
+      "curve inverse residual and first-half domain": 2123,
+      "declared replay domain": 1,
+      "discriminant identity": 4555,
+      "displayed exact trial primality": 5,
+      "exact rational cubic involution": 2126,
+      "grade and character residue identities": 4555,
+      "hard hypothesis negative control": 1,
+      "integral cubic image requires s divides 2": 712,
+      "integral shape curve": 4555,
+      "kappa and orientation": 4555,
+      "measure is not residual alone": 1,
+      "middle cofactor marking": 154,
+      "middle normalization": 154,
+      "middle ordered inverse": 154,
+      "middle original source": 154,
+      "ordered exterior identity": 4555,
+      "ordered exterior inverse": 4555,
+      "ordered middle identity": 154,
+      "original exterior divisor and gate": 4555,
+      "original gcd inverse": 4555,
+      "original nonresidue grade": 2128,
+      "original unit first-half domain": 4555,
+      "positive-square shape excluded": 4256,
+      "radical is not squarefree part for inversion": 1,
+      "radius-eight unique nonsingular hard candidate": 1,
+      "rational involution inverse": 2126,
+      "residual-one reverse source has no positive integral cubic image": 1092,
+      "retained exterior norm": 4555,
+      "s1 involution changes prime residue class": 560,
+      "s2 image loses even-Y original domain": 152,
+      "same-shell singular channel crossing": 56,
+      "shape exceptional loci": 4555,
+      "shape map inverse equality": 2123,
+      "singular endpoint decrease": 56,
+      "singular family": 56,
+      "small singular prime examples": 1,
+      "squarefree part reconstruction": 96,
+      "strict endpoint residual decrease": 96,
+      "strict small-cofactor decrease": 96,
+      "third-coordinate structure": 4555
+    },
+    "checks": 80079,
+    "elapsed_seconds": 0.4674470000027213,
+    "output_sha256": {
+      "examples.json": "89eaf46ba01bfe66fb896b9df1adf734246a568e5d25acae91d41742ddec7db5",
+      "profiles.json": "9cf63bee1cbfffde299f86993c79b08555d321ce9c722eff7bb3325ec95373be",
+      "radius8.json": "c18adaaf816d0d700af9f7d8a475a075e18ea224f06f4ef253c7e755fe52e43c",
+      "scan.json": "2ac113fd54c42c9d11d80f09de6bf01232a0c7cf9b6e2ffc1325ff3b962d9788"
+    },
+    "source_sha256": "b4be2d5d65b73eceae977d76c51c9a54af21538506adf6c3d8632a2c6c007d3d",
+    "success": true,
+    "totals": {
+      "E_states": 2123,
+      "diagonal_states": 90,
+      "original_divisor_vectors": 925870,
+      "primes": 101,
+      "shells": 36292
+    },
+    "turn7_existence_milestone_completed": false,
+    "universal_ES_proved": false
+  },
+  "independent_report": {
+    "E_states": 2123,
+    "bound": 3000,
+    "checks": 28272,
+    "coverage": {
+      "diagonal_states": 90,
+      "radius7_actual_scan_states": 0,
+      "radius7_profiles": 52,
+      "radius8_actual_scan_states": 0,
+      "radius8_grade_rows": 16,
+      "radius8_prefix_s_max": 200000,
+      "radius8_shape_pairs": 12
+    },
+    "independence": "Separate primitive h,r,s enumeration; recomputed hard flags; complete radius7 and radius8 profile tables; fixed-bound Pell prefix; exact ordered denominators; direct trial primality; no main or predecessor import.",
+    "input_sha256": {
+      "examples.json": "89eaf46ba01bfe66fb896b9df1adf734246a568e5d25acae91d41742ddec7db5",
+      "profiles.json": "9cf63bee1cbfffde299f86993c79b08555d321ce9c722eff7bb3325ec95373be",
+      "radius8.json": "c18adaaf816d0d700af9f7d8a475a075e18ea224f06f4ef253c7e755fe52e43c",
+      "scan.json": "2ac113fd54c42c9d11d80f09de6bf01232a0c7cf9b6e2ffc1325ff3b962d9788",
+      "verification.json": "5fa054d07fe378b22639e59438aec6884aa5d3c36b3fae8b4e6e79abe06b2cda"
+    },
+    "primes": 101,
+    "scan_sha256": "2ac113fd54c42c9d11d80f09de6bf01232a0c7cf9b6e2ffc1325ff3b962d9788",
+    "source_sha256": "dfbd0b8e7940c102676347be98a1ddb163b700ccc546ff881ba6d469a146252c",
+    "success": true,
+    "universal_ES_proved": false
+  },
+  "source_sha256": {
+    "core.tex": "d4272a6ce38ff5023dfa1bfb6ebf09999744d02002fc3382b17667fd8240c76d",
+    "preprint.tex": "fc508bb46c89657a6065f59550964e3c576bb50ae77f62aeaa5013619692b544",
+    "verify.py": "b4be2d5d65b73eceae977d76c51c9a54af21538506adf6c3d8632a2c6c007d3d",
+    "check_independent.py": "dfbd0b8e7940c102676347be98a1ddb163b700ccc546ff881ba6d469a146252c"
+  }
+}

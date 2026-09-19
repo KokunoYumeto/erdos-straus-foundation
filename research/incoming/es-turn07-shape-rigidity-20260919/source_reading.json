@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-19",
+  "task": "Unresolved Turn 7 continuation: diagonal channel return and low-shape rigidity",
+  "antecedents": [
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "identifier": "arXiv:1107.1010",
+      "locator": "Section 2, Propositions 2.2 and 2.6",
+      "use": "Inherited Type I/II coordinates, rederived; no universal-existence statement imported."
+    },
+    {
+      "author": "Hatcher, A.",
+      "year": 2022,
+      "title": "Topology of Numbers",
+      "locator": "Section 6.4, pages 205-212",
+      "use": "Quadratic reciprocity and supplementary laws."
+    },
+    {
+      "source_file_id": "file_00000000b9b88210b05b99b191cfe1e1",
+      "path": "/mnt/data/es_turn6_7_recovery_20260919_v2/exterior_atlas/core.tex",
+      "citation_in_conversation": "turn319file0",
+      "locator": "Original E marking and equations, lines 23-77; existing singular integer family, lines 264-295.",
+      "use": "Retained predecessor, not a new claim for its family."
+    }
+  ],
+  "content_level_search_queries": [
+    "Erdos Straus elliptic discriminant",
+    "Erdos Straus R=D",
+    "11x^4 4x^2",
+    "11 quartic 37 Pell integer solutions"
+  ],
+  "search_conclusion": "Queries were attempted; no content-level priority determination is asserted. No theorem from an unread recent paper is used.",
+  "derivations": [
+    "Marked integral shape cubic and exact fixed-p line",
+    "Actual squarefree-part diagonal E-to-M return",
+    "Complete 52-profile hard-prime radius7 classification",
+    "Unique radius8 nonsingular profile and its j3/u9 M return",
+    "Exact rational-involution image and prime-slice failure"
+  ],
+  "nonclaims": [
+    "Universal ES or Type-II positivity",
+    "A solved universal Turn7 milestone",
+    "Complete integral points of the radius8 quartic",
+    "Infinitely many prime values of the old singular cubic",
+    "Historical priority",
+    "Independent human mathematical review",
+    "A Lean build"
+  ],
+  "antecedent_sha256": "1dd66fd333424b5108ca97343660d701210f01e4b2d7022ad46cf51c8e25dc67",
+  "preserved_predecessor_sha256": "11d5002a040ab624e9c486a06dea5b354a7ddf19114d6315b2f357efcf5db423"
+}
