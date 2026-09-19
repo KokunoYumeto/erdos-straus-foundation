@@ -1,0 +1,168 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{corollary}[theorem]{Corollary}
+\title{A Complement--Norm Cutoff for Exterior Erd\H{o}s--Straus States}
+\author{The Clankers}\date{19 September 2026}
+\begin{document}
+\begin{abstract}
+For an original exterior state, retain its residual $R$, cofactor $D$, and
+complementary square divisor $v$. We prove the strict bound
+$(p+w)^2>4(w+1)^2(w-1)$ with $w=\min(R,D,v)$. This gives a complete three-chart
+atlas with outer cutoff $(p/2)^{2/3}+O(p^{1/3})$, including its original
+availability condition and denominator inverse. A hard-prime example separates
+this channel from the preceding middle square-root bound. The argument is a
+necessary state reduction; it does not establish universal occupancy.
+\end{abstract}\maketitle
+
+Let $p\equiv1\pmod4$, $p>1$, and
+\[
+ p/4<a<p/2,\quad\gcd(p,a)=1,\quad R=4a-p,\quad
+ u\mid a^2,\quad R\mid4u+1.
+\]
+Gcd normalization gives
+\[
+ g=\gcd(a,u),\quad(h,r,s)=(g^2/u,u/g,a/g),\quad
+ \kappa=(pr+s)/R,
+\]
+\[
+ a=hrs,\quad u=hr^2,\quad \gcd(r,s)=1,\qquad
+ \frac4p=\frac1a+\frac1{hs\kappa}+\frac1{phr\kappa}.
+\]
+The ordered inverse is $u=a^2/(Ry-pa)$. These are the classical Type-I
+coordinates [1]. Put
+\[
+ v=a^2/u=hs^2,\qquad
+ D=(4u+1)/R=(r+\kappa)/s.
+\]
+Then
+\[
+ pD+1=4hr\kappa,\quad (p+R)^2+4v=4vRD,\quad p+R<2vD.       \tag{1}
+\]
+The last inequality follows from $\kappa>r$, itself a consequence of $R<p$.
+Both $R,D$ are $3\pmod4$. The case $h=1$ would make $-1$ a square modulo $R$;
+hence $h>1$. Since $h$ is coprime to $R,D$, the integer $v$ equals neither.
+This does not assert that $v$ is coprime to $D$.
+
+\begin{theorem}
+Every stated source satisfies
+\[
+ \boxed{(p+w)^2>4(w+1)^2(w-1),\qquad w=\min(R,D,v).}         \tag{2}
+\]
+Let $C(p)$ be the largest integer satisfying (2). Then $C(p)<p$ and
+$C(p)=(p/2)^{2/3}+O(p^{1/3})$.
+\end{theorem}
+\begin{proof}
+Set $t=\min(R,D)$. If $R=t$, (1) gives
+$(p+t)^2\ge4v(t^2-1)$. If $D=t\le R$, subtract to obtain
+\[
+ (p+t)^2-4v(t^2-1)=(R-t)(4vt-2p-R-t)\ge0;
+\]
+the second factor is positive by (1). Thus
+$p\ge2\sqrt{v(t^2-1)}-t$, with equality in the first step only if $R=D$.
+
+If $v>t$, integrality gives $v\ge t+1$ and therefore
+$p\ge2(t+1)\sqrt{t-1}-t$. Equality would make $t-1$ an integer square,
+whereas $t\equiv3\pmod4$. It is impossible.
+
+If $v<t$, put $w=v$. The preceding expression increases in $t$, so
+$p\ge2w\sqrt{w+2}-w-1$. This is strictly greater than
+$2(w+1)\sqrt{w-1}-w$: the difference between
+$w\sqrt{w+2}$ and $(w+1)\sqrt{w-1}$ is
+\[
+ \frac{w^2+w+1}{w\sqrt{w+2}+(w+1)\sqrt{w-1}}>\frac12.
+\]
+Squaring the positive sides proves (2). The bounding function is increasing
+for $w>1$; at $w=p$ its required inequality fails since $p^3-p-1>0$.
+Its expansion is $2w^{3/2}-w+O(\sqrt w)$, proving the asymptotic statement.
+The integer cutoff is evaluated by comparisons in (2), not by that expansion.
+\end{proof}
+
+For $v=\prod\ell^{e_\ell}$ define
+$K(v)=\prod\ell^{\lceil e_\ell/2\rceil}$. The equivalence
+$v\mid a^2\iff K(v)\mid a$ is an exact prime-valuation identity.
+
+\begin{theorem}[Complete prime atlas]
+For prime $p\equiv1\pmod4$, all original first-half E states occur in the
+following disjoint charts, with $C=C(p)$.
+
+\textup{(R)} Use the original square-divisor source at
+$R\equiv3\pmod4$, $3\le R\le C$, and retain $R\le D$, $R<v$.
+
+\textup{(D)} At $D\equiv3\pmod4$, $3\le D\le C$, put $B=(pD+1)/4$.
+Take $w\mid B^2$, $w<B$, $D\mid w+B$; gcd-normalize
+\[
+ h=\gcd(B,w)^2/w,\quad r=w/\gcd(B,w),\quad\kappa=B/\gcd(B,w),
+\]
+then $s=(r+\kappa)/D$, $a=hrs$, $u=w$. Retain $D<R$, $D<v$.
+
+\textup{(v)} For $2\le v\le C$, take
+\[
+ \boxed{R\mid p^2+4v,\quad v<R<p,\quad R\equiv3\pmod4,
+ \quad R\equiv-p\pmod{4K(v)}.}                          \tag{3}
+\]
+Set $a=(p+R)/4$, $u=a^2/v$, $D=(4u+1)/R$ and retain $v<D$.
+Gcd normalization gives the original state.
+\end{theorem}
+\begin{proof}
+For (D), normalization gives $r<\kappa$, $4hr\kappa=pD+1$ and
+$D\mid r+\kappa$. Then $R\kappa=pr+s>0$ and
+\[
+ D(p-2a)=2hr(\kappa-r)-1>0.
+\]
+Thus the original first-half inequalities hold. The inverse reads
+$B=hr\kappa$, $w=hr^2$ with its retained orientation.
+
+In (v), $v<p$ and primality imply $\gcd(R,4v)=1$. The last congruence in
+(3) gives the actual availability $v\mid a^2$. Now
+\[
+ 4v(4u+1)=(p+R)^2+4v\equiv0\pmod R
+\]
+gives the original gate after cancellation of a unit. Conversely (1) gives
+$R\mid p^2+4v$ for each original state. All inverses are literal.
+The smallest parameter is at most $C$. The grade $v$ cannot tie $R,D$;
+a possible tie $R=D$ is assigned to (R). This proves disjoint completeness.
+\end{proof}
+
+\paragraph{Negative controls and scale.}
+The hard prime $p=48049\equiv169\pmod{840}$ has the original state
+\[
+ (a,u,h,r,s,\kappa,R,D,v)
+ =(12090,24180,6045,2,1,309,311,311,6045),
+\]
+with ordered denominators $(12090,1867905,179501934690)$. Both exterior
+cofactors exceed the earlier middle cutoff $247$ [2]. At $p=37$, the state
+$(a,u,h,r,s,\kappa)=(12,8,2,2,3,7)$ has $(v,D)=(18,3)$; their overlap
+cannot be cancelled as though they were coprime.
+
+For every integer $n\ge2$, the exact source
+\[
+ h=4n^2-2,\quad r=n,\quad s=1,\quad R=D=4n^2-1,
+ \quad\kappa=4n^2-n-1
+\]
+has $p=16n^3-4n^2-8n+1$, $a=hn$, $u=hn^2$ and $\gcd(p,a)=1$.
+Its least parameter is $h\sim(p/2)^{2/3}$, and in fact $C(p)=h$: the bounding
+function at $h+1$ exceeds $p$ because
+$(h+2)\sqrt h>h\sqrt{h+2}$. The integer cutoff is attained at the prime
+members $p=97,929$. These are legitimate unit integer
+sources, with hard residue $289\pmod{840}$ when $n=24+210j$.
+No infinitude of prime values is claimed. The asymptotic sharpness assertion
+is in this integer domain.
+
+The complete main replay compares the three charts with original divisor
+enumeration; the second checker uses primitive $h,r,s$ enumeration and imports
+no first-checker code. The actual finite bound and command outcomes are in the
+release receipt. These checks do not imply universal ES positivity. No
+historical-priority or independently reviewed-proof claim is made.
+
+\begin{thebibliography}{9}
+\bibitem{1} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to the
+Erd\H{o}s--Straus equation on unit fractions. \emph{Journal of the Australian
+Mathematical Society, 94}(1), 50--105. \texttt{arXiv:1107.1010}, \S2.
+\bibitem{2} The Clankers. (2026). \emph{A sharp two-chart middle-selector cutoff
+and an original-grade obstruction for Erd\H{o}s--Straus}. Preserved Turn 7 source,
+sections 1--4. A complete decision atlas, not universal occupancy.
+\end{thebibliography}
+\end{document}

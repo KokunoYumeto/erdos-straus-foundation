@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-19",
+  "status": "passed",
+  "mathematical_scope": {
+    "cutoff": "(p+w)^2 > 4(w+1)^2(w-1) for w=min(v,R,D) in every positive source state with p=1 mod 4",
+    "asymptotic": "C(p)=(p/2)^(2/3)+O(p^(1/3))",
+    "atlas": "complete disjoint direct, reciprocal and complement--norm bijections for prime p=1 mod 4",
+    "sharpness": "C(p(n))=4n^2-2 for the exact integer source family",
+    "universal_ES_proved": false,
+    "universal_E_occupancy_proved": false
+  },
+  "source_repairs_after_independent_derivation": [
+    "made positivity of u and reciprocal divisors explicit",
+    "expanded the direct chart's range, gcd and inverse proof",
+    "expanded the reciprocal integrality, gate, range and inverse proof",
+    "expanded norm-chart cancellation using norm divisibility, primality and R<p",
+    "corrected the R=D statement to distinguish R=D<v from v<R=D",
+    "recorded exact composite-parameter failures for all three generative charts",
+    "recorded the p=19 equality boundary proving the mod-4 hypothesis is essential",
+    "completed the sharp family's two residue classes modulo 210",
+    "added a Lucas certificate for the remaining p=2521 norm factor"
+  ],
+  "checker_repairs": [
+    "deterministic UTF-8 LF JSON output makes normal and optimized receipts byte-stable",
+    "added the p=19 boundary equality fixture",
+    "checked both hard-residue branches and the exact polynomial period",
+    "checked p=2521 primality and least quadratic nonresidue 11",
+    "independent checker recomputes every row's original and candidate counts",
+    "independent checker pins literal examples and complete fixed-grade metadata",
+    "independent checker validates main-report totals, chart counts, candidate totals and scan hash"
+  ],
+  "replay": {
+    "bound": 3000,
+    "eligible_primes": 211,
+    "original_positive_divisor_vectors": 1877004,
+    "canonical_exterior_states": 5700,
+    "chart_states": {
+      "direct": 2560,
+      "reciprocal": 1927,
+      "norm": 1213
+    },
+    "raw_candidates": {
+      "direct": 90777,
+      "reciprocal": 90358,
+      "norm": 133848
+    },
+    "main_checks": 205993,
+    "independent_checks": 44351,
+    "normal_optimized_outputs_byte_identical": true,
+    "outputs": {
+      "scan.json": "dea596418930336cc662ada071ce1e67b4a341a19954df28496302c599f56dc1",
+      "examples.json": "8a235c2559a67d4540725d9ca8b80d4cc3fab69a9a5817f102914da4920e39e3",
+      "report.json": "07482904f5de0299b4a86ed56ee80e8bfcc2b5131ac3c255eb66328b2bf83c93",
+      "independent.json": "c6abbee0a5ed3430c43047232e9a7e330bcdc9ef613a736b4fac885496205661"
+    }
+  },
+  "independent_derivations": [
+    {
+      "scope": "strict cutoff, asymptotic and sharp family",
+      "report_sha256": "b7812a542ac379545243c5c517f0df1e5260bbc09c66a6f0aca390259abd25dc",
+      "verdict": "passed after explicit positive-divisor and residue-boundary repairs"
+    },
+    {
+      "scope": "three typed chart bijections, partition and prime dependencies",
+      "report_sha256": "73866b6be8b0ed009595ee14efd118bde65f3f688dea66a75b853ef388bf515e",
+      "verdict": "passed after correcting the unqualified R=D sentence and expanding chart proofs"
+    },
+    {
+      "scope": "hard examples, fixed-grade obstruction, sharp family and certificate coverage",
+      "report_sha256": "e817bbf574b453e048315326844fda335444a1fbd0309d00dddad12a8cc47d5b",
+      "verdict": "passed; independent-certificate blind spots and full residue classification repaired"
+    }
+  ],
+  "documents": {
+    "pdf_path": "output/pdf/workbench.pdf",
+    "pdf_sha256": "703cfa66d3fd05f64d0621aa81eb817cc694af9cb7abc19c50da60bbb0f1b32e",
+    "pdf_bytes": 369581,
+    "pages": 6,
+    "pdflatex_passes": 2,
+    "unresolved_references": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "visual_qa_all_pages": true
+  },
+  "scope_note": "Finite replay certifies the declared bounded comparison and exact examples. It is not a new overall Erdős--Straus verification range, a Lean proof, a human review, a novelty claim, or universal occupancy."
+}

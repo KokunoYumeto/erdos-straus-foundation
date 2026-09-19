@@ -1,0 +1,701 @@
+{
+  "asymptotic_integer_family": [
+    {
+      "D": 2303,
+      "R": 2303,
+      "h": 2302,
+      "minimal_chart": "norm",
+      "n": 24,
+      "p": 218689,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 2302
+    },
+    {
+      "D": 219023,
+      "R": 219023,
+      "h": 219022,
+      "minimal_chart": "norm",
+      "n": 234,
+      "p": 204785569,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 219022
+    },
+    {
+      "D": 788543,
+      "R": 788543,
+      "h": 788542,
+      "minimal_chart": "norm",
+      "n": 444,
+      "p": 1399662049,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 788542
+    },
+    {
+      "D": 1710863,
+      "R": 1710863,
+      "h": 1710862,
+      "minimal_chart": "norm",
+      "n": 654,
+      "p": 4473904129,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 1710862
+    },
+    {
+      "D": 2985983,
+      "R": 2985983,
+      "h": 2985982,
+      "minimal_chart": "norm",
+      "n": 864,
+      "p": 10316567809,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 2985982
+    },
+    {
+      "D": 4613903,
+      "R": 4613903,
+      "h": 4613902,
+      "minimal_chart": "norm",
+      "n": 1074,
+      "p": 19816709089,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 4613902
+    },
+    {
+      "D": 6594623,
+      "R": 6594623,
+      "h": 6594622,
+      "minimal_chart": "norm",
+      "n": 1284,
+      "p": 33863383969,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 6594622
+    },
+    {
+      "D": 8928143,
+      "R": 8928143,
+      "h": 8928142,
+      "minimal_chart": "norm",
+      "n": 1494,
+      "p": 53345648449,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 8928142
+    },
+    {
+      "D": 11614463,
+      "R": 11614463,
+      "h": 11614462,
+      "minimal_chart": "norm",
+      "n": 1704,
+      "p": 79152558529,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 11614462
+    },
+    {
+      "D": 14653583,
+      "R": 14653583,
+      "h": 14653582,
+      "minimal_chart": "norm",
+      "n": 1914,
+      "p": 112173170209,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 14653582
+    },
+    {
+      "D": 18045503,
+      "R": 18045503,
+      "h": 18045502,
+      "minimal_chart": "norm",
+      "n": 2124,
+      "p": 153296539489,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 18045502
+    },
+    {
+      "D": 21790223,
+      "R": 21790223,
+      "h": 21790222,
+      "minimal_chart": "norm",
+      "n": 2334,
+      "p": 203411722369,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 21790222
+    },
+    {
+      "D": 25887743,
+      "R": 25887743,
+      "h": 25887742,
+      "minimal_chart": "norm",
+      "n": 2544,
+      "p": 263407774849,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 25887742
+    },
+    {
+      "D": 30338063,
+      "R": 30338063,
+      "h": 30338062,
+      "minimal_chart": "norm",
+      "n": 2754,
+      "p": 334173752929,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 30338062
+    },
+    {
+      "D": 35141183,
+      "R": 35141183,
+      "h": 35141182,
+      "minimal_chart": "norm",
+      "n": 2964,
+      "p": 416598712609,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 35141182
+    },
+    {
+      "D": 40297103,
+      "R": 40297103,
+      "h": 40297102,
+      "minimal_chart": "norm",
+      "n": 3174,
+      "p": 511571709889,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 40297102
+    },
+    {
+      "D": 45805823,
+      "R": 45805823,
+      "h": 45805822,
+      "minimal_chart": "norm",
+      "n": 3384,
+      "p": 619981800769,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 45805822
+    },
+    {
+      "D": 51667343,
+      "R": 51667343,
+      "h": 51667342,
+      "minimal_chart": "norm",
+      "n": 3594,
+      "p": 742718041249,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 51667342
+    },
+    {
+      "D": 57881663,
+      "R": 57881663,
+      "h": 57881662,
+      "minimal_chart": "norm",
+      "n": 3804,
+      "p": 880669487329,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 57881662
+    },
+    {
+      "D": 64448783,
+      "R": 64448783,
+      "h": 64448782,
+      "minimal_chart": "norm",
+      "n": 4014,
+      "p": 1034725195009,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 64448782
+    },
+    {
+      "D": 107583,
+      "R": 107583,
+      "h": 107582,
+      "minimal_chart": "norm",
+      "n": 164,
+      "p": 70466209,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 107582
+    },
+    {
+      "D": 559503,
+      "R": 559503,
+      "h": 559502,
+      "minimal_chart": "norm",
+      "n": 374,
+      "p": 836455489,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 559502
+    },
+    {
+      "D": 1364223,
+      "R": 1364223,
+      "h": 1364222,
+      "minimal_chart": "norm",
+      "n": 584,
+      "p": 3185458369,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 1364222
+    },
+    {
+      "D": 2521743,
+      "R": 2521743,
+      "h": 2521742,
+      "minimal_chart": "norm",
+      "n": 794,
+      "p": 8006530849,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 2521742
+    },
+    {
+      "D": 4032063,
+      "R": 4032063,
+      "h": 4032062,
+      "minimal_chart": "norm",
+      "n": 1004,
+      "p": 16188728929,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 4032062
+    },
+    {
+      "D": 5895183,
+      "R": 5895183,
+      "h": 5895182,
+      "minimal_chart": "norm",
+      "n": 1214,
+      "p": 28621108609,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 5895182
+    },
+    {
+      "D": 8111103,
+      "R": 8111103,
+      "h": 8111102,
+      "minimal_chart": "norm",
+      "n": 1424,
+      "p": 46192725889,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 8111102
+    },
+    {
+      "D": 10679823,
+      "R": 10679823,
+      "h": 10679822,
+      "minimal_chart": "norm",
+      "n": 1634,
+      "p": 69792636769,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 10679822
+    },
+    {
+      "D": 13601343,
+      "R": 13601343,
+      "h": 13601342,
+      "minimal_chart": "norm",
+      "n": 1844,
+      "p": 100309897249,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 13601342
+    },
+    {
+      "D": 16875663,
+      "R": 16875663,
+      "h": 16875662,
+      "minimal_chart": "norm",
+      "n": 2054,
+      "p": 138633563329,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 16875662
+    },
+    {
+      "D": 20502783,
+      "R": 20502783,
+      "h": 20502782,
+      "minimal_chart": "norm",
+      "n": 2264,
+      "p": 185652691009,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 20502782
+    },
+    {
+      "D": 24482703,
+      "R": 24482703,
+      "h": 24482702,
+      "minimal_chart": "norm",
+      "n": 2474,
+      "p": 242256336289,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 24482702
+    },
+    {
+      "D": 28815423,
+      "R": 28815423,
+      "h": 28815422,
+      "minimal_chart": "norm",
+      "n": 2684,
+      "p": 309333555169,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 28815422
+    },
+    {
+      "D": 33500943,
+      "R": 33500943,
+      "h": 33500942,
+      "minimal_chart": "norm",
+      "n": 2894,
+      "p": 387773403649,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 33500942
+    },
+    {
+      "D": 38539263,
+      "R": 38539263,
+      "h": 38539262,
+      "minimal_chart": "norm",
+      "n": 3104,
+      "p": 478464937729,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 38539262
+    },
+    {
+      "D": 43930383,
+      "R": 43930383,
+      "h": 43930382,
+      "minimal_chart": "norm",
+      "n": 3314,
+      "p": 582297213409,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 43930382
+    },
+    {
+      "D": 49674303,
+      "R": 49674303,
+      "h": 49674302,
+      "minimal_chart": "norm",
+      "n": 3524,
+      "p": 700159286689,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 49674302
+    },
+    {
+      "D": 55771023,
+      "R": 55771023,
+      "h": 55771022,
+      "minimal_chart": "norm",
+      "n": 3734,
+      "p": 832940213569,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 55771022
+    },
+    {
+      "D": 62220543,
+      "R": 62220543,
+      "h": 62220542,
+      "minimal_chart": "norm",
+      "n": 3944,
+      "p": 981529050049,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 62220542
+    },
+    {
+      "D": 69022863,
+      "R": 69022863,
+      "h": 69022862,
+      "minimal_chart": "norm",
+      "n": 4154,
+      "p": 1146814852129,
+      "prime_claim": false,
+      "unit_source": true,
+      "v": 69022862
+    }
+  ],
+  "empty_minimal_norm_grade": {
+    "factorization": [
+      [
+        3,
+        2
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        141233,
+        1
+      ]
+    ],
+    "hits": [],
+    "least_quadratic_nonresidue": 11,
+    "modulus": 44,
+    "norm": 6355485,
+    "p": 2521,
+    "p_is_prime": true,
+    "required_residue": 31,
+    "residues_below_p": [
+      1,
+      3,
+      5,
+      9,
+      15,
+      45
+    ],
+    "v": 11
+  },
+  "hard_exterior_not_middle_bound": {
+    "D": 311,
+    "R": 311,
+    "a": 12090,
+    "beta": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        13,
+        0
+      ],
+      [
+        31,
+        0
+      ]
+    ],
+    "channel": "E",
+    "chart": "direct",
+    "denominators": [
+      12090,
+      1867905,
+      179501934690
+    ],
+    "factorization": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        31,
+        1
+      ]
+    ],
+    "h": 6045,
+    "kappa": 309,
+    "norm": 2308730581,
+    "p": 48049,
+    "r": 2,
+    "reciprocal_source": 3735810,
+    "root_kernel": 6045,
+    "s": 1,
+    "u": 24180,
+    "v": 6045
+  },
+  "hard_residue_classification": {
+    "exact_period_identity": "p(n+210)-p(n)=840(12n^2+2518n+176188)",
+    "modulus_for_n": 210,
+    "modulus_for_p": 840,
+    "residue_for_p": 289,
+    "residues_for_n": [
+      24,
+      164
+    ],
+    "universal_prime_values_claimed": false
+  },
+  "missing_original_availability": {
+    "R": 3,
+    "a": 5,
+    "a_squared_remainder": 1,
+    "norm": 297,
+    "p": 17,
+    "v": 2
+  },
+  "noncoprime_v_D": {
+    "D": 3,
+    "R": 11,
+    "a": 12,
+    "beta": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        -1
+      ]
+    ],
+    "channel": "E",
+    "chart": "reciprocal",
+    "denominators": [
+      12,
+      42,
+      1036
+    ],
+    "factorization": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "h": 2,
+    "kappa": 7,
+    "norm": 1441,
+    "p": 37,
+    "r": 2,
+    "reciprocal_source": 28,
+    "root_kernel": 6,
+    "s": 3,
+    "u": 8,
+    "v": 18
+  },
+  "residue_hypothesis_boundary": {
+    "D": 5,
+    "R": 5,
+    "a": 6,
+    "equality_value": 576,
+    "interpretation": "Equality occurs when p == 3 mod 4; this is outside the theorem domain.",
+    "p": 19,
+    "p_mod_4": 3,
+    "u": 6,
+    "v": 6,
+    "w": 5
+  },
+  "small_prime_family": [
+    {
+      "D": 15,
+      "R": 15,
+      "a": 28,
+      "beta": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "channel": "E",
+      "chart": "norm",
+      "denominators": [
+        28,
+        182,
+        35308
+      ],
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "h": 14,
+      "kappa": 13,
+      "norm": 9465,
+      "p": 97,
+      "r": 2,
+      "reciprocal_source": 364,
+      "root_kernel": 14,
+      "s": 1,
+      "u": 56,
+      "v": 14
+    },
+    {
+      "D": 63,
+      "R": 63,
+      "a": 248,
+      "beta": [
+        [
+          2,
+          2
+        ],
+        [
+          31,
+          0
+        ]
+      ],
+      "channel": "E",
+      "chart": "norm",
+      "denominators": [
+        248,
+        3658,
+        13593128
+      ],
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "h": 62,
+      "kappa": 59,
+      "norm": 863289,
+      "p": 929,
+      "r": 4,
+      "reciprocal_source": 14632,
+      "root_kernel": 62,
+      "s": 1,
+      "u": 992,
+      "v": 62
+    }
+  ]
+}

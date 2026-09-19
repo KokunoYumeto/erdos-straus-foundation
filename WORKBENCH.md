@@ -48,6 +48,23 @@ packets. The witness maps determine which arithmetic records those interfaces
 actually transport. The links above contain the complete maps and proofs; this
 navigation page is not a replacement for them.
 
+## Current finite source atlases
+
+The 19 September continuation now has complete, separately typed finite atlases
+for both original first-half channels:
+
+- [Middle two-chart atlas](research/incoming/es-turn07-middle-cutoff-20260919/README.md):
+  sharp square-root bounds for the least exact middle cofactor, with direct and
+  cofactor inverses.
+- [Exterior three-chart atlas](research/incoming/es-turn07b-exterior-atlas-20260919/README.md):
+  strict cubic cutoff for the least of \((R,D,v)\), with direct, reciprocal and
+  complement–norm inverses retaining the exact \(K(v)\) availability condition.
+
+Together they decide the complete original source at any fixed prime; they do
+not prove its output nonempty. The [dated proof bulletin](DAILY_RESULTS_20260919.md)
+gives stable result IDs and exact locators. It is a mathematical index, not a
+programme chronology.
+
 ## Failed steps that remain useful
 
 The record preserves exact failures as part of the programme. In particular:

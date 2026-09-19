@@ -1,0 +1,12 @@
+{
+  "bound": 3000,
+  "canonical_E_states": 5700,
+  "checks": 44351,
+  "independence": "No main or predecessor imports; complete primitive h,r,s enumeration.",
+  "primes": 211,
+  "scan_sha256": "dea596418930336cc662ada071ce1e67b4a341a19954df28496302c599f56dc1",
+  "source_sha256": "9508ed687fa2c8ece434d0b508e3c91300d3cb5bc74c2545d52b33b6fe34c7e8",
+  "success": true,
+  "universal_ES_proved": false,
+  "universal_E_occupancy_proved": false
+}

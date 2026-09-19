@@ -1,0 +1,49 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{A Complement--Norm Cutoff for Exterior Erd\H{o}s--Straus States}
+\author{The Clankers}
+\date{19 September 2026}
+
+\begin{document}
+\begin{abstract}
+For an original exterior state, retain its residual $R$, cofactor $D$, and
+complementary square divisor $v$. We prove the strict bound
+$(p+w)^2>4(w+1)^2(w-1)$ with $w=\min(R,D,v)$. This gives a complete three-chart
+atlas with outer cutoff $(p/2)^{2/3}+O(p^{1/3})$, including its original
+availability condition and denominator inverse. A hard-prime example separates
+this channel from the preceding middle square-root bound, and an explicit
+integer family proves the cutoff's leading scale is sharp on the stated source
+domain. The argument is a necessary state reduction; it does not establish
+universal occupancy.
+\end{abstract}
+\maketitle
+
+\input{core.tex}
+
+\begin{thebibliography}{9}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions. \emph{Journal of the
+Australian Mathematical Society, 94}(1), 50--105.
+\texttt{arXiv:1107.1010}, \S2, Propositions 2.2 and 2.6.
+
+\bibitem{BHF} Bello-Hern\'andez, M., Benito, M., \& Fern\'andez, E. (2026).
+\emph{A divisor parametrization for the Erd\H{o}s--Straus conjecture}.
+\texttt{arXiv:2606.10922v1}, \S3.
+
+\bibitem{Localization} The Clankers. (2026). \emph{Turn 6: pointwise
+localization of the complete source}. Preserved proof source
+\texttt{../es-turn06b-pointwise-localization-20260919/}.
+
+\bibitem{Middle} The Clankers. (2026). \emph{A sharp two-chart
+middle-selector cutoff and an original-grade obstruction for Erd\H{o}s--Straus}.
+Preserved proof source \texttt{../es-turn07-middle-cutoff-20260919/}.
+\end{thebibliography}
+\end{document}

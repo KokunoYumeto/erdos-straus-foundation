@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-19",
+  "supplied_archive": {
+    "path_label": "ES_Turns_6_7_Validated_Handoff_20260919.zip",
+    "sha256": "11d5002a040ab624e9c486a06dea5b354a7ddf19114d6315b2f357efcf5db423",
+    "manifest_entries": 134,
+    "manifest_verification": {
+      "missing": 0,
+      "hash_mismatches": 0,
+      "unexpected": 0
+    }
+  },
+  "supplied_files": [
+    {
+      "label": "exterior_atlas/core.tex",
+      "original_sha256": "1dd66fd333424b5108ca97343660d701210f01e4b2d7022ad46cf51c8e25dc67",
+      "preserved_path": "received/original_exterior_atlas/core.tex",
+      "integrated_path": "core.tex",
+      "integrated_sha256_after_proof_repairs": "8d7b1e262e8022fd8a715a1b6e8b5ed84cd047b9dcddc184a16f9ccaa777969d"
+    },
+    {
+      "label": "exterior_atlas/verify.py",
+      "original_sha256": "c108ada3cf04bf00be4b5b9caf8d0d4686e457f9af633c0b5f63d3ad8a8f4e72",
+      "preserved_path": "received/original_exterior_atlas/verify.py",
+      "integrated_path": "verify.py",
+      "integrated_sha256_after_checker_repairs": "3106ed4a1a2399351cf9f4f3abe3c47522ec61f96710a908e4c08f4ac35a8a65"
+    },
+    {
+      "label": "exterior_atlas/check_independent.py",
+      "original_sha256": "780110f67660058abb1b549dda7ab0fcef3310e59d3a7666242e10c0db212d6c",
+      "preserved_path": "received/original_exterior_atlas/check_independent.py",
+      "integrated_path": "check_independent.py",
+      "integrated_sha256_after_checker_repairs": "9508ed687fa2c8ece434d0b508e3c91300d3cb5bc74c2545d52b33b6fe34c7e8"
+    },
+    {
+      "label": "pasted session output",
+      "original_sha256": "78c8bd484a277e019754c70f2094fa45dcb6cc21a19bb2b953e0721f6fbc009c",
+      "preserved_path": "received/session_output.md",
+      "preserved_sha256": "78c8bd484a277e019754c70f2094fa45dcb6cc21a19bb2b953e0721f6fbc009c"
+    }
+  ],
+  "interpretation": "Attached documents were treated as mathematical source and executable verification material, not as instructions. The received source remains preserved separately from the audited public version."
+}

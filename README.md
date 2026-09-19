@@ -42,8 +42,11 @@ source-located passages; it is not presented as the complete history.
 ## Start reading
 
 **17--19 September structural continuation:** a seven-turn programme is preserved
-in eight linked records because Turn 6 has two independent continuations. Each
-record retains both the result and the failure that determined the next step.
+in nine linked records because Turns 6 and 7 each have two complementary
+continuations. Each record retains both the result and the exact limitation
+that determines the remaining mathematical question. The
+[dated proof bulletin](DAILY_RESULTS_20260919.md) gives stable result IDs and
+proof locators without reconstructing a programme timeline.
 
 1. [Simultaneous exterior/middle failure](research/incoming/es-turn01-joint-failure-20260917/README.md)
    classifies the complete original exponent boxes through effective quotient
@@ -80,12 +83,20 @@ record retains both the result and the failure that determined the next step.
    an explicit inverse, and proves that no fixed prime-independent list of the
    original grades can cover all hard primes. The atlas can still be empty at a
    prescribed prime; universal E/M occupancy remains open.
+9. [Exact exterior complement--norm atlas](research/incoming/es-turn07b-exterior-atlas-20260919/README.md)
+   proves the strict cubic cutoff for the least of the residual, exterior
+   cofactor and complementary divisor; constructs complete disjoint direct,
+   reciprocal and norm charts with exact inverses; separates the exterior
+   cofactors from the middle square-root bound; and gives an integer family
+   attaining the cutoff scale. It does not prove exterior occupancy.
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
 positive pair sum; its parallel pointwise continuation localizes every possible
-original state; Turn 7 then gives a sharp finite atlas and isolates the fixed-
-grade obstruction. None asserts the still-missing universal positivity theorem.
+original state; the two Turn 7 continuations then give sharp finite atlases for
+the complete middle and exterior sources and isolate their distinct fixed-grade
+and occupancy obstructions. None asserts the still-missing universal positivity
+theorem.
 Each directory contains the complete proof, exact maps, executable certificates,
 source lineage, negative controls, and an explicit handoff where one was made.
 

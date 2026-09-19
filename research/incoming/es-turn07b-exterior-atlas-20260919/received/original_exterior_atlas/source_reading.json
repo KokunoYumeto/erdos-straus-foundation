@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-19",
+  "task": "Rebuild recoverable Turns 6--7; continue the unresolved existence step with a full exterior norm atlas.",
+  "antecedents": [
+    {
+      "source": "supplied es_turn7_middle_cutoff_20260919/core.tex",
+      "file_id": "file_00000000b7a481f4b71f19d06eb3af65",
+      "locator": "Sections 1--4",
+      "use": "Prior complete middle atlas and precise nonclaim of universal occupancy."
+    },
+    {
+      "source": "supplied es_turn6_full_shell_localization_20260919/core.tex",
+      "file_id": "file_00000000e8088210b44093499301474d",
+      "locator": "Original arithmetic; exterior norm identities; p2521 extremal failure",
+      "use": "Original marked returns, rederived in the current note."
+    },
+    {
+      "authors": [
+        "Christian Elsholtz",
+        "Terence Tao"
+      ],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos--Straus equation on unit fractions",
+      "arxiv": "1107.1010",
+      "locator": "Section 2, Propositions 2.2 and 2.6",
+      "use": "Classical Type I/II parametrization; no universal existence theorem imported."
+    }
+  ],
+  "content_search_queries": [
+    "Erdos Straus Type I 2/3",
+    "Erdos Straus p squared norm",
+    "Erdos Straus hs cutoff"
+  ],
+  "search_conclusion": "No historical-priority determination. All mathematical ingredients used in the new cutoff and inverse are proved in the supplied source.",
+  "nonclaims": [
+    "Universal ES positivity",
+    "Universal Type I or II positivity",
+    "Infinite prime values of the sharpness cubic",
+    "Historical priority",
+    "Lean build",
+    "Independent mathematical review",
+    "Fresh mathematical audit of all recovered historical results"
+  ]
+}

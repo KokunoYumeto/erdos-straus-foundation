@@ -1,0 +1,158 @@
+[
+  {
+    "label": "turn6_localization",
+    "source": "/mnt/data/es_turn6_full_shell_localization_20260919",
+    "exists": true,
+    "files": [
+      {
+        "path": "HANDOFF_TURN_7.md",
+        "bytes": 2207,
+        "sha256": "6f0c3ca1027f4a9c398568e66f7f471e6c97a53216f5da51115ed4508909ad99"
+      },
+      {
+        "path": "MORPHISMS.md",
+        "bytes": 3078,
+        "sha256": "ecd0b90047ab329433c1de8c23402ece17e7ef52b857a47cd9bca7dcd03b9cf8"
+      },
+      {
+        "path": "check_independent.py",
+        "bytes": 5827,
+        "sha256": "d840cf06c0193fa7ecfeeb318f6e4fabeaeb4c4d260d5edcf83e44791e684088"
+      },
+      {
+        "path": "core.tex",
+        "bytes": 19339,
+        "sha256": "6fa498aa559484481d9d4fc5302909d80d5a6ae8f98d7b4c0b1f24737c386767"
+      },
+      {
+        "path": "lean_plan.md",
+        "bytes": 1968,
+        "sha256": "74c549b1a0061c04c9a974183b65f4b62091d59c58ba8de756e66afeb727eaf4"
+      },
+      {
+        "path": "preprint.tex",
+        "bytes": 8008,
+        "sha256": "373e451216f002fb0ef46bcd95a9f99ee3f679dde67653ca47d8ec93179deea3"
+      },
+      {
+        "path": "publication_receipt.json",
+        "bytes": 1335,
+        "sha256": "930593417aecd1e03b9786d9d83f846d131e8c98d23cac1129f4bd388a4b451c"
+      },
+      {
+        "path": "source_reading.json",
+        "bytes": 2294,
+        "sha256": "5b9f701dab07e0e7d105271f6ccbf12a36b9ace5771bb6a084c2541645e527d1"
+      },
+      {
+        "path": "verification.json",
+        "bytes": 11563,
+        "sha256": "46bd0270432e8361e062bd895d25ffa36b07f951ea7cbf0167b8c30f0246950e"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 13394,
+        "sha256": "d68adbc3e4f023b86873e2394d178c2d00eac58b2314b216b37bae853909579c"
+      }
+    ]
+  },
+  {
+    "label": "turn6_spectral",
+    "source": "/mnt/data/es_turn6_full_shell_20260919",
+    "exists": true,
+    "files": [
+      {
+        "path": "HANDOFF_TURN_7.md",
+        "bytes": 6485,
+        "sha256": "25b0a31675ad2a5921ec275b27c1bb706fb66a55f9f6191173738659ccc83ebd"
+      },
+      {
+        "path": "MORPHISMS.md",
+        "bytes": 8622,
+        "sha256": "182cf880982b701352d00399c6bb56c5bbc4b170e10cd5d2e20498ae205eaac2"
+      },
+      {
+        "path": "check_independent.py",
+        "bytes": 14771,
+        "sha256": "d7ccb21b5d821f556586378adec5a39683565b33894168d7fd4080f5c2ac321f"
+      },
+      {
+        "path": "core.tex",
+        "bytes": 30129,
+        "sha256": "1154c91a11de61c353f04f10c7b93edbd7600f728b4d5ef66515d9e94c6c23f6"
+      },
+      {
+        "path": "integration.patch",
+        "bytes": 145242,
+        "sha256": "430d08e0056308e6c0fdd9beec8e99b137bd89bb188d2250ed87e4340e67d4a0"
+      },
+      {
+        "path": "lean_plan.md",
+        "bytes": 5140,
+        "sha256": "124d4772c1001fbf317ac875218f1b2869c1e113d24882cb94ee3d6534be2955"
+      },
+      {
+        "path": "preprint.pdf",
+        "bytes": 319229,
+        "sha256": "2ecb5102a1b771e53e6d7b9d21ae50696781fadb5eb94d5b0ce6ac8d95aec084"
+      },
+      {
+        "path": "publication_receipt.json",
+        "bytes": 1897,
+        "sha256": "b340c027549b77e2c2742780ab5aba842eca3aa39740ea8b0ecf981c1a46bb98"
+      },
+      {
+        "path": "source_history.bundle",
+        "bytes": 61718,
+        "sha256": "707772552bddcebb29318377777411a42abd3ef7ecfe0454e2827581b10eeaca"
+      },
+      {
+        "path": "source_reading.json",
+        "bytes": 5908,
+        "sha256": "b47a433753704197179a38143706dfc35a0e83ad9e60b8cca1e7353bacbfebc3"
+      },
+      {
+        "path": "verification.json",
+        "bytes": 6952,
+        "sha256": "0c6f9541c00173ecefefea3ed622eb0b09c3483a37258a007427cac3f209cd2b"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 28615,
+        "sha256": "6f9e12f17e909845fe6c0e8811cba284cc9ad71794e8b42a3a358ae22b48113a"
+      },
+      {
+        "path": "workbench.pdf",
+        "bytes": 383773,
+        "sha256": "8d7eef72c8ae5eafc78e9488b0110dce337b0a614a3e5e1eafabd45fe6fc1819"
+      }
+    ]
+  },
+  {
+    "label": "turn7_middle",
+    "source": "/mnt/data/es_turn7_middle_cutoff_20260919",
+    "exists": true,
+    "files": [
+      {
+        "path": "check_independent.py",
+        "bytes": 4653,
+        "sha256": "bfb23122461d08669fbe05adb872445fafd8be4db073221b9a83d7242eb1e43c"
+      },
+      {
+        "path": "core.tex",
+        "bytes": 13173,
+        "sha256": "3d2f85032f063dd2088f9a3e5f8923b3216dbc23b772a8ab1cf06a88657f58a6"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 10300,
+        "sha256": "b5280548b2fecbc0e3dd8e6dedbbc1bcb505d281ec7dc64e0344eae72902ebd0"
+      },
+      {
+        "path": "workbench.tex",
+        "bytes": 2358,
+        "sha256": "b78633c921439795fbae9fc05026514a7b5d4b712940659d37b6be280f7e3446"
+      }
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-19",
+  "task": "Integrate and independently recheck the Turn 7 exterior complement--norm atlas without promoting a finite atlas to universal occupancy.",
+  "antecedents": [
+    {
+      "source": "research/incoming/es-turn07-middle-cutoff-20260919/core.tex",
+      "sha256": "88f36629b1b4d78c8d58b02aebf67d62696bb5051b58d7a4cf136cc12d57eafc",
+      "locator": "Complete file, especially the source normalization, two-chart atlas, and exact occupancy nonclaim",
+      "use": "Prior complete middle atlas and the exact unproved endpoint-or-middle occupancy statement."
+    },
+    {
+      "source": "research/incoming/es-turn06b-pointwise-localization-20260919/pointwise_localization.md",
+      "locator": "Exterior normalization and p=2521 least-grade obstruction",
+      "use": "Antecedent exterior coordinates and the fixed-grade negative control; all identities used here are rederived in core.tex."
+    },
+    {
+      "authors": ["Christian Elsholtz", "Terence Tao"],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdős--Straus equation on unit fractions",
+      "arxiv": "1107.1010v6",
+      "published": "Journal of the Australian Mathematical Society 94 (2013), 50--105",
+      "local_source_tex": "Papors/TEX/Erdos-Straus/arxiv/1107.1010v6/egyptian-count18.tex",
+      "source_tex_sha256": "b0469a67a737b7f4e77778310c87e22f5783ae9704f70aa55919a4a40104611c",
+      "source_archive_sha256": "ce07493decba82ad39ad3fd8e002ddec607e07f556a7f56b17223377173480d3",
+      "locator": "Section 2; source lines 487--625; Propositions 2.2 and 2.6",
+      "use": "Definitions and classical complete parametrizations of Type I and Type II solutions. No universal existence theorem is imported."
+    },
+    {
+      "authors": ["M. Bello-Hernández", "M. Benito", "E. Fernández"],
+      "year": 2026,
+      "title": "A Divisor Parametrization for the Erdős--Straus Conjecture",
+      "arxiv": "2606.10922v1",
+      "local_source_tex": "Papors/TEX/Erdos-Straus/arxiv/2606.10922v1/v1_BelloBenitoFernandez.tex",
+      "source_tex_sha256": "238a87f392fb130089d2c6d051e944deb441f2f1c83dcc680cf7b1dbde99f685",
+      "source_archive_sha256": "8b915e2f8ea496163fed2a691c3a19a34174e9b155b6b94d2471b19d80c92bd3",
+      "locator": "Section 3, beginning at source line 311; equations (13)--(16)",
+      "use": "Recent comparison of the standard Type I/II forms. It is not cited as a source for the new cubic cutoff or three-chart inverse."
+    }
+  ],
+  "content_search_queries": [
+    "\"(p+w)^2\" \"Erdos-Straus\"",
+    "\"p^2+4v\" \"Erdos-Straus\"",
+    "Erdos Straus Type I complement divisor cutoff p 2/3",
+    "Erdos Straus exterior state norm divisor"
+  ],
+  "search_conclusion": "No exact published match to the displayed cubic cutoff or complete three-chart exterior atlas was located in the bounded search. This is not a historical-priority determination.",
+  "nonclaims": [
+    "Universal Erdős--Straus positivity",
+    "Universal Type I or Type II occupancy",
+    "Infinite prime values of the sharpness cubic",
+    "Historical priority or novelty",
+    "Lean completion",
+    "Human peer review"
+  ]
+}

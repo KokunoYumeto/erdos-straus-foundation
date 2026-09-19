@@ -1,0 +1,42 @@
+[
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "verify.py",
+      "--bound",
+      "3000",
+      "--out",
+      "/mnt/data/es_turn6_7_recovery_20260919_v2/exterior_atlas/certificates"
+    ],
+    "mode": "normal",
+    "returncode": 0,
+    "elapsed_seconds": 4.313363523000135
+  },
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-O",
+      "verify.py",
+      "--bound",
+      "3000",
+      "--out",
+      "/mnt/data/es_turn6_7_recovery_20260919_v2/exterior_atlas/certificates_optimized"
+    ],
+    "mode": "optimized",
+    "returncode": 0,
+    "elapsed_seconds": 3.956109132000165
+  },
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "check_independent.py",
+      "--input",
+      "/mnt/data/es_turn6_7_recovery_20260919_v2/exterior_atlas/certificates",
+      "--out",
+      "/mnt/data/es_turn6_7_recovery_20260919_v2/exterior_atlas/certificates/independent.json"
+    ],
+    "mode": "independent",
+    "returncode": 0,
+    "elapsed_seconds": 3.164602893999927
+  }
+]

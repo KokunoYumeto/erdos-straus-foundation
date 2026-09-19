@@ -9,6 +9,7 @@ research/incoming/es-turn05-channel-coupling-20260919/** -text -whitespace
 research/incoming/es-turn06-full-shell-20260919/** -text -whitespace
 research/incoming/es-turn06b-pointwise-localization-20260919/** -text -whitespace
 research/incoming/es-turn07-middle-cutoff-20260919/** -text -whitespace
+research/incoming/es-turn07b-exterior-atlas-20260919/** -text -whitespace
 /*.md text eol=lf
 polyclank/*.json text eol=lf
 polyclank/evidence/*.json -text

@@ -1,0 +1,10 @@
+{
+  "scan.json": {
+    "equal": true,
+    "sha256": "dea596418930336cc662ada071ce1e67b4a341a19954df28496302c599f56dc1"
+  },
+  "examples.json": {
+    "equal": true,
+    "sha256": "d9a663c85964893930e0f2472dd0f5a30cf34550ab234e4da538498ef31b2686"
+  }
+}

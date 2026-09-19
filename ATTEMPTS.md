@@ -86,6 +86,37 @@ the complete announced fluid construction.
 · [inverse estimates](research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/reverse_smooth_inverse.tex)
 · [human-source attribution](research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/ATTRIBUTION.md).
 
+## 6. Complete middle and exterior atlases
+
+**Aim:** replace unrestricted source searches by exact finite coordinate charts
+without discarding the original divisibility data. **Reason for trying:** a
+universal positivity argument needs to know precisely where every possible
+state can live, and the middle and exterior channels have different exact
+norm identities. The middle continuation proves a sharp square-root two-chart
+atlas. The exterior continuation proves a strict cubic cutoff and complete
+direct, reciprocal and complement–norm atlas. The hard prime \(p=48049\)
+proves that the middle cutoff cannot be transferred unchanged to exterior
+cofactors. **Successful scope:** every existing original middle or exterior
+state at a fixed prime is recovered by one proved chart with an exact inverse.
+**Unfinished:** the union of those finite charts may still be empty at a
+prescribed prime; neither localization theorem is an occupancy theorem.
+[Middle proof](research/incoming/es-turn07-middle-cutoff-20260919/README.md) ·
+[exterior proof](research/incoming/es-turn07b-exterior-atlas-20260919/README.md) ·
+[stable result locators](DAILY_RESULTS_20260919.md).
+
+## 7. Extremal grades and fixed inventories
+
+**Aim:** force a witness at the smallest arithmetically permitted grade.
+**Reason for trying:** least-nonresidue bounds and exact cutoffs reduce the
+source to finitely many small parameters. **What happened:** the middle work
+proves that no fixed prime-independent inventory of the original grades can
+cover every hard prime. In the exterior norm chart, \((p,v)=(2521,11)\) gives a
+complete empty extremal lane. The sharp integer family nevertheless attains
+the cubic cutoff exactly, so the scale itself is real rather than an artefact
+of a weak estimate. **Unfinished:** a structural nonvanishing mechanism must
+move among the complete charts; choosing the extremal grade alone is not that
+mechanism.
+
 ## Keeping future attempts intelligible
 
 For each task or substantial route, retain a short account with these same fields:
@@ -95,6 +126,6 @@ inferred motivation as inferred. Record an unfinished attempt as unfinished rath
 than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
-The [machine records](polyclank/attempts.json) expose these fields separately.
-This first pass covers the five routes above; it does not claim to have recovered
+The [machine records](polyclank/attempts.json) expose the earlier five fields
+separately. This page covers the seven routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.

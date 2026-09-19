@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-19",
+  "tranche": "Turn 7b: exact exterior complement--norm atlas",
+  "claims": [
+    {
+      "id": "T7B-C01",
+      "kind": "definition",
+      "statement": "A positive first-half exterior state retains p,a,u,R,g,h,r,s,kappa,v,D with R=4a-p, u a positive divisor of a^2, R dividing 4u+1, and the exact gcd normalization.",
+      "proof_locator": "core.tex, The original exterior state and its three arithmetic parameters",
+      "dependencies": []
+    },
+    {
+      "id": "T7B-C02",
+      "kind": "typed_morphism",
+      "statement": "The gcd normalization is invertible by a=hrs and u=hr^2; it gives the ordered denominators (a,hs*kappa,p*h*r*kappa), whose inverse is u=a^2/(R*y-p*a).",
+      "proof_locator": "core.tex, equations (2)--(4)",
+      "dependencies": ["T7B-C01"]
+    },
+    {
+      "id": "T7B-C03",
+      "kind": "identity",
+      "statement": "The retained cofactors satisfy pD+1=4hr*kappa, (p+R)^2+4v=4vRD, and p+R<2vD; moreover v differs from R and D, although gcd(v,D) need not be one.",
+      "proof_locator": "core.tex, equations (5)--(7)",
+      "dependencies": ["T7B-C01", "T7B-C02"]
+    },
+    {
+      "id": "T7B-C04",
+      "kind": "theorem",
+      "statement": "For every positive exterior state with p congruent to 1 modulo 4, w=min(v,R,D) satisfies (p+w)^2>4(w+1)^2(w-1). The exact integer cutoff C(p) is less than p and equals (p/2)^(2/3)+O(p^(1/3)).",
+      "proof_locator": "core.tex, A strict cubic cutoff",
+      "dependencies": ["T7B-C03"]
+    },
+    {
+      "id": "T7B-C05",
+      "kind": "theorem",
+      "statement": "For prime p congruent to 1 modulo 4, every original exterior state belongs to exactly one of the direct residual, reciprocal, and complement--norm charts, and every chart has a complete inverse to the original marked state.",
+      "proof_locator": "core.tex, Complete original exterior atlas",
+      "dependencies": ["T7B-C02", "T7B-C04"]
+    },
+    {
+      "id": "T7B-C06",
+      "kind": "typed_morphism",
+      "statement": "The complement--norm chart uses K(v)=product l^ceil(e/2), with v|a^2 iff K(v)|a; the congruence R=-p mod 4K(v) retains exact square-divisor availability and cannot be replaced by norm divisibility alone.",
+      "proof_locator": "core.tex, definition of K(v) and complement--norm inverse",
+      "dependencies": ["T7B-C05"]
+    },
+    {
+      "id": "T7B-C07",
+      "kind": "calculation",
+      "statement": "At the prime p=48049, the exterior state has R=D=311 and ordered denominators (12090,1867905,179501934690); both cofactors exceed the preceding middle cutoff 247.",
+      "proof_locator": "core.tex, An actual hard prime; certificates/examples.json",
+      "dependencies": ["T7B-C02", "T7B-C05"]
+    },
+    {
+      "id": "T7B-C08",
+      "kind": "impossibility_result",
+      "statement": "The middle square-root cutoff cannot be transferred unchanged to the exterior cofactors, and neither norm divisibility alone nor pairwise coprimality of v and D is a valid replacement condition.",
+      "proof_locator": "core.tex, hard-prime and p=37 negative controls; ATTEMPTS.md",
+      "dependencies": ["T7B-C07"]
+    },
+    {
+      "id": "T7B-C09",
+      "kind": "theorem",
+      "statement": "For every integer n>=2, p=16n^3-4n^2-8n+1 has a genuine positive source with C(p)=4n^2-2; hence the cutoff exponent and leading coefficient are sharp on the integer-source domain.",
+      "proof_locator": "core.tex, equation (15) and following proof",
+      "dependencies": ["T7B-C04"]
+    },
+    {
+      "id": "T7B-C10",
+      "kind": "calculation",
+      "statement": "For the sharp family, p(n)=289 mod 840 exactly when n=24 or 164 mod 210. This is a residue classification, not a theorem about infinitely many prime values.",
+      "proof_locator": "core.tex, equation (16); certificates/examples.json",
+      "dependencies": ["T7B-C09"]
+    },
+    {
+      "id": "T7B-C11",
+      "kind": "exception",
+      "statement": "Without p=1 mod 4, (p,a,u,R,D,v,w)=(19,6,6,5,5,6,5) attains equality in the cutoff; without primality the three chart converses have explicit failures at p=21,93,25.",
+      "proof_locator": "core.tex, boundary and prime-scope paragraphs; certificates/examples.json",
+      "dependencies": ["T7B-C04", "T7B-C05"]
+    },
+    {
+      "id": "T7B-C12",
+      "kind": "calculation",
+      "statement": "At p=2521 the least complement grade v=11 has no complement--norm residual: the complete norm factorization has no divisor in the required residue class modulo 44.",
+      "proof_locator": "core.tex, p=2521 paragraph; certificates/examples.json",
+      "dependencies": ["T7B-C06", "Turn 6b least-nonresidue localization"]
+    },
+    {
+      "id": "T7B-O01",
+      "kind": "open_obligation",
+      "statement": "Prove that at every prescribed hard prime at least one original exterior or middle chart is occupied.",
+      "proof_locator": "HANDOFF.md",
+      "dependencies": ["T7B-C05", "Turn 7 middle atlas"]
+    }
+  ],
+  "nonclaims": [
+    "No proof or counterexample to the Erdős--Straus conjecture.",
+    "No assertion that any exterior or middle chart is occupied at every prime.",
+    "No infinite prime-value theorem for the sharp cubic family.",
+    "No historical-priority or novelty determination.",
+    "No Lean completion or independent human peer review.",
+    "No new overall Erdős--Straus computational verification range."
+  ]
+}

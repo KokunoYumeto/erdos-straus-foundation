@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-19",
+  "source": "workbench.tex",
+  "output": "output/pdf/workbench.pdf",
+  "engine": "MiKTeX pdfTeX 1.40.29",
+  "passes": 2,
+  "pages": 6,
+  "page_size": "A4",
+  "pdf_sha256": "703cfa66d3fd05f64d0621aa81eb817cc694af9cb7abc19c50da60bbb0f1b32e",
+  "pdf_bytes": 369581,
+  "log_checks": {
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0
+  },
+  "text_extraction": {
+    "tool": "pdftotext -layout",
+    "result": "passed: title, theorem statements, equations, scope and bibliography present"
+  },
+  "visual_qa": {
+    "renderer": "pdftoppm",
+    "resolution_dpi": 150,
+    "rendered_pages": 6,
+    "inspected_pages": [1, 2, 3, 4, 5, 6],
+    "result": "passed: no clipping, overlap, missing glyphs, broken equations, blank pages or unreadable references observed"
+  }
+}
