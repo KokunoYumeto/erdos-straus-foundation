@@ -1,0 +1,18 @@
+{
+  "pdf_sha256": "7fccf7d3c52eb4b1a706149f0eb2c9145412944b82740bfb6fce8b63fe1f34cd",
+  "pages": 20,
+  "page_size_points": [612, 792],
+  "renderer": "Poppler pdftoppm at 130 dpi",
+  "render_directory": "C:/Users/Floris/Documents/math/tmp/pdfs/family_c_final_20260921_v2",
+  "visual_inspection": "All 20 pages were freshly rendered after the final source repair. Nineteen page renders are byte-identical to the prior fully inspected build; the changed page 15 was inspected individually at original render resolution and is clean.",
+  "figures": {
+    "joint_source_allocation": "PASS: labels, arrows, formulas, and caption are legible; no overlap or clipping.",
+    "family_joint_es_collision": "PASS: k=5 occupation fibres, 16 active interior cells, and both collision regimes are legible and correctly labelled."
+  },
+  "fonts_embedded": true,
+  "forms": "none",
+  "javascript": "none",
+  "replacement_characters": 0,
+  "latex_final_log": "No overfull boxes, underfull boxes, undefined references, LaTeX warnings, or errors.",
+  "status": "PASS"
+}

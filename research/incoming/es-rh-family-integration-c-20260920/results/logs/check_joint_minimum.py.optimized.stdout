@@ -1,0 +1,1 @@
+{"exact_checks": 38, "negative_controls": 6, "rank_deficient_fixture": {"joint_determinant": "1827210/365509", "normal_positive_floor": "2373/136", "normal_rank": 2}, "scope": "Exact finite algebra and explicitly synthetic diagnostics; not a native zeta-moment evaluation or Lean proof.", "status": "PASS", "suite": "complete_source_minimum_and_allocation"}

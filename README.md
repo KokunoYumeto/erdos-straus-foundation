@@ -41,7 +41,7 @@ source-located passages; it is not presented as the complete history.
 
 ## Start reading
 
-**17--19 September structural continuation:** a seven-turn programme is preserved
+**17--20 September structural continuation:** a seven-turn programme is preserved
 in ten linked records because Turns 6 and 7 have complementary
 continuations. Each record retains both the result and the exact limitation
 that determines the remaining mathematical question. The
@@ -182,6 +182,14 @@ proof locators without reconstructing a programme timeline.
     showing why rationality cannot be dropped.  The three-page preprint,
     ten-page workbench, illustration and independent executable replay are
     included.
+20. [General-family source geometry, ES-labelled jets, and collision exponents](research/incoming/es-rh-family-integration-c-20260920/README.md)
+    proves the exact mixed-source minimum and its kernel/observation determinant
+    allocation, a certified positive-range inverse, the common reducing space
+    and centre--length covariance of the ES-labelled tensor action, and the
+    complete two-regime collision exponent diagram. Its canonical/constructed
+    metric separation and heat-scale split consume the pinned NG20--NG21
+    theorem on a stipulated off-line quartet. They do not assert such a zero,
+    an RH conclusion, universal ES occupancy, or a new integer witness.
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
@@ -213,6 +221,13 @@ presentations, and carry the collision data into local signed characters.
 The eighteenth excludes the receiving-frame divisor on an explicit infinite
 set of prime classes and gives a fully typed arithmetic-descent example; it
 does not turn failed character tests into singularity claims.
+The twentieth continuation determines how the supplied finite tensor sections
+sit inside the original physical source. It separates the constructed and
+canonical metrics, resolves the kernel/observation allocation of the joint
+minimum, computes the full ES-labelled reducing enlargement and mixed
+covariance, and evaluates every two-centre collision exponent. The finite
+source and collision theorems are unconditional at their stated inputs; the
+metric asymptotics retain their explicit dependence on NG20--NG21.
 After composing the earlier diagonal and radius-eight returns, every residual
 exterior state has shape radius at least nine. These results isolate, but do
 not prove, the remaining unbounded-shape occupancy statement. None asserts the
@@ -285,7 +300,7 @@ and [per-artifact licensing](LICENSING.md) explain the practical arrangements.
 Scheduled mirroring and publication are paused at the maintainer's request after
 the 9 September 2026 organization update. Reading, discussion, forks and independent
 contributions remain welcome. The published mathematics and historical files are
-preserved. The manually requested 12--19 September continuations are available
+preserved. The manually requested 12--20 September continuations are available
 on GitHub; they do not restart scheduled mirroring or replace the Zenodo edition.
 This branch adds navigation and source-addressable records for the results bench,
 the recovered bridge programmes, and the seven-turn structural continuation.

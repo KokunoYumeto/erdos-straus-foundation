@@ -268,6 +268,36 @@
       "integration_audit": "research/incoming/es-rh-continuation-b-20260920/INTEGRATION_AUDIT.md",
       "received_source": "research/incoming/es-rh-continuation-b-20260920/received/RESEARCH_CONTINUATION.md",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:trace-rigidity",
+      "overview": "research/incoming/es-turn07-trace-rigidity-20260920/README.md",
+      "proof": "research/incoming/es-turn07-trace-rigidity-20260920/core.tex",
+      "reader": "research/incoming/es-turn07-trace-rigidity-20260920/preprint.pdf",
+      "checkers": [
+        "research/incoming/es-turn07-trace-rigidity-20260920/verify.py",
+        "research/incoming/es-turn07-trace-rigidity-20260920/check_independent.py"
+      ],
+      "scope": "For n at least three positive rational denominators with reciprocal sum 4/p, integrality of the first n-1 power sums is equivalent to integrality of every denominator; for the three-term ES equation, the first two traces suffice. On the complete raw integer gate, one integral literal trace recovers the divisor budget and E/M tag, with two-point middle fibres U paired with a^2/U and an exact kernel basis. The rationality hypothesis is essential, and no theorem forcing an integral trace at every hard prime is asserted.",
+      "integration_audit": "research/incoming/es-turn07-trace-rigidity-20260920/INTEGRATION_AUDIT_20260920.md",
+      "source_ledger": "research/incoming/es-turn07-trace-rigidity-20260920/source_reading.json",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:family-integration-c",
+      "overview": "research/incoming/es-rh-family-integration-c-20260920/README.md",
+      "proof": "research/incoming/es-rh-family-integration-c-20260920/RESEARCH_CONTINUATION.md",
+      "reader": "research/incoming/es-rh-family-integration-c-20260920/MANUSCRIPT.pdf",
+      "claims": "research/incoming/es-rh-family-integration-c-20260920/CLAIM_REGISTER.json",
+      "checkers": [
+        "research/incoming/es-rh-family-integration-c-20260920/checks/run_validation.py"
+      ],
+      "scope": "Finite identity-map metric bounds; canonical/constructed metric separation and heat-scale split conditional on pinned NG20-NG21 for a stipulated off-line quartet; exact mixed-source minimum, determinant allocation and certified regularized range inverse; exact ES-labelled common reducing space, centre-length covariance and full-multiplicity dimension/leakage rank; complete two-centre collision exponent phase diagram with fixed metric hypotheses. No off-line zero, RH conclusion, universal ES occupancy, integer-witness construction from the tensor model or native-moment evaluation is asserted.",
+      "source_ledger": "research/incoming/es-rh-family-integration-c-20260920/SOURCE_LEDGER.md",
+      "integration_audit": "research/incoming/es-rh-family-integration-c-20260920/INTEGRATION_AUDIT_20260920.md",
+      "received_zip": "research/incoming/es-rh-family-integration-c-20260920/received/ES_RH_Family_Integration_20260920_C.zip",
+      "received_source": "research/incoming/es-rh-family-integration-c-20260920/received/PASTED_RESULT.md",
+      "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
@@ -313,6 +343,11 @@
       ,"three-character odd-frame nonsingularity theorem on 3456 CRT classes"
       ,"exact q=61 signed-cover descent and nonsquare twist for the witness (13;4,18,468)"
       ,"sharp paired native determinant return and finite heat-action remainders"
+      ,"global rational trace-integrality criterion and exact raw-source trace fibres"
+      ,"canonical/constructed metric separation with an explicit heat-scale split"
+      ,"exact mixed-source minimum, determinant allocation and certified regularized range inverse"
+      ,"exact ES-labelled common reducing space with centre-length covariance and full-multiplicity leakage rank"
+      ,"complete two-centre collision exponent phase diagram with fixed metric hypotheses"
     ],
     "excluded_shortcuts": [
       "a fixed prime-independent cutoff on original grades h and j",
@@ -341,6 +376,15 @@
       ,"dropping the square-class condition from the translated-chart descent"
       ,"treating failure of a sufficient receiving-frame character condition as a singularity certificate"
       ,"identifying the q=61 finite-fibre zeta function with the Riemann zeta function"
+      ,"extending the rational trace-integrality criterion to algebraic denominators"
+      ,"treating a stipulated off-line quartet as an asserted zeta zero"
+      ,"identifying the canonical and constructed metrics or dropping their scalar separation"
+      ,"using ambient normal rank as quotient rank"
+      ,"assigning the full determinant gain to one source component without Schur-complement allocation"
+      ,"omitting the centre-length covariance from the ES-labelled leakage Gram"
+      ,"treating tensor enlargement as an integer-witness theorem"
+      ,"extending the collision exponent formula through a=1 without its separate boundary calculation"
+      ,"dropping the degenerating physical metric or its scalar factor in a collision limit"
     ]
   },
   "records": {
@@ -352,7 +396,7 @@
     "human_motivations": "polyclank/motivations.json"
   },
   "coverage": {
-    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260920-059 are linked from their modules and the daily proof bulletin.",
+    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260920-066 are linked from their modules and the daily proof bulletin.",
     "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Later modules keep their own claims, proof locators and receipts; full claim-by-claim indexing of every historical edition is not asserted.",
     "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
   },

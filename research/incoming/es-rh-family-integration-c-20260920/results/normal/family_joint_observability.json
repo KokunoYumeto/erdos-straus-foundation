@@ -1,0 +1,7 @@
+{
+  "exact_checks": 504,
+  "negative_controls": 4,
+  "scope": "Exact finite algebra and explicitly synthetic diagnostics; not a native zeta-moment evaluation or Lean proof.",
+  "status": "PASS",
+  "suite": "family_joint_observability"
+}

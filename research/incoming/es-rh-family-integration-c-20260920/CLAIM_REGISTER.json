@@ -1,0 +1,99 @@
+{
+  "schema": "es-family-integration-claim-register-v2",
+  "date": "2026-09-20",
+  "module": "research/incoming/es-rh-family-integration-c-20260920",
+  "received": {
+    "zip_sha256": "15f8ae123c03ebac60b1e152530777000ecfbdb99ab901cb0b7e94098e5c7a8e",
+    "pasted_result_sha256": "d983d699a4ae58967537c8639f466e70189fc3fea42e6bb256039651bfb5d911",
+    "general_family_source_sha256": "ec8af51f2ff9c5ce06355e3ec9dda2a84e6216a63b04416093bd98bb0a270a9c"
+  },
+  "claims": [
+    {
+      "stable_id": "SZ-20260920-063",
+      "labels": ["MR1-MR14"],
+      "title": "Canonical and constructed metric separation with two heat scales",
+      "status": "proved from the pinned NG20-NG21 theorem and the stated GF construction",
+      "statement": "On the fixed cyclic algebra and the stated canonical cutoff sequences, liminf d/(q log(q/k)) >= 2 and log(kappa)/log(q/k) tends to positive infinity; the canonical positive heat trace at k-scale tends to zero while the constructed trace tends to the explicit error-function product.",
+      "hypotheses": [
+        "The same complete divisor h and source measure as NG1 are fixed.",
+        "The quartet is stipulated as 1/2 plus or minus delta plus or minus i gamma, with 0 < delta < 1/2, gamma > 2, and fixed multiplicity.",
+        "The cutoff sequence is one covered by NG20, including its separately stated s=0 cases.",
+        "NG20-NG21 are used at the exact provider version recorded in SOURCE_LEDGER.md."
+      ],
+      "proof": "proofs/01_METRIC_RETURN.md",
+      "certificate": "checks/check_metric.py",
+      "limitations": [
+        "No off-line zeta zero is constructed or asserted.",
+        "No conclusion about the Riemann hypothesis is drawn.",
+        "The finite checker does not certify the asymptotic provider theorem."
+      ]
+    },
+    {
+      "stable_id": "SZ-20260920-064",
+      "labels": ["JS1-JS15"],
+      "title": "Exact mixed-source minimum, determinant allocation, and certified range inverse",
+      "status": "finite proof",
+      "statement": "The joint metric is G_J = G^(1/2)(I+T)^(-1)G^(1/2); its total determinant decrease splits exactly into observed and old-kernel terms through the full Schur complement. For mu = lambda_min^+(H_Z), every certified 0 < underline_lambda <= mu gives the JS10-JS11 regularization bounds, and mu is bounded below by pdet(H_Z)/(tr H_Z)^(r_Z-1).",
+      "hypotheses": [
+        "C has finite dimension q, J and Lambda are onto, and K = ker Lambda.",
+        "The supplied section is a genuine right inverse of the ambient value map.",
+        "ker H_Z is contained in ker F.",
+        "The polynomial realization is faithful and preserves the degree of nonzero P(S_1+...+S_k)."
+      ],
+      "proof": "proofs/02_JOINT_SOURCE.md",
+      "certificate": "checks/check_joint_minimum.py",
+      "limitations": [
+        "The physical-normal rank does not determine rank F or a determinant gain.",
+        "The original cross Gram, observation orientation, and native moments remain inputs.",
+        "An arbitrary certified eigenvalue floor is not asserted to dominate the determinant-trace floor."
+      ]
+    },
+    {
+      "stable_id": "SZ-20260920-065",
+      "labels": ["ER1-ER15"],
+      "title": "ES-labelled common reducing space and centre-length covariance",
+      "status": "finite proof on the generated cyclic top-chain sector",
+      "statement": "The labelled local translations give an exact algebra isomorphism; the two transported actions generate the direct sum indexed by distinct triples (kappa, theta, D). The adjoint ES leakage Gram is tridiagonal with the exact centre-length covariance. For the equal-multiplicity witness model, dim W_joint = (D+1) binomial(k+3,3), rank L_E = (D+1)(k-1)^2 for k >= 2, and dim ker L_E = 4k(D+1).",
+      "hypotheses": [
+        "The label-to-centre bijection is chosen and retained.",
+        "ER7 is restricted to the generated top-chain sector; it is not an ambient tensor projector.",
+        "The equal-multiplicity formulas start from a sorted positive integral ES witness satisfying 4/p = 1/x + 1/y + 1/z.",
+        "The programme application has 0 < delta < 1/2, gamma > 2, k odd, and k congruent to 1 modulo 4.",
+        "ER13 uses k >= 2; the k = 1 boundary is stated separately."
+      ],
+      "proof": "proofs/03_ES_JETS.md",
+      "certificate": "checks/check_family.py",
+      "limitations": [
+        "This does not identify ES denominators with zeta zeros.",
+        "This does not construct an ES witness at an unoccupied prime.",
+        "No typed identification with the trace-rigidity kernel is made."
+      ]
+    },
+    {
+      "stable_id": "SZ-20260920-066",
+      "labels": ["CP1-CP11"],
+      "title": "Complete two-centre collision exponent diagram",
+      "status": "all-length proof with exact bounded certificate cases",
+      "statement": "For e >= f >= 1 and eta = |z|^a, every singular exponent is given by CP2 for 0 <= a <= 1 and CP3 for a >= 1. At a = 1 the list is 0,1,...,e+f-1. CP9-CP11 determine every inverse-exterior exponent and finite balanced-scale constants.",
+      "hypotheses": [
+        "The input metric is fixed and uniformly equivalent to the standard power-coordinate metric.",
+        "After row powers are extracted, the residual target metric is uniformly positive and uniformly bounded.",
+        "Fixed jet weights act through their exact row square-root factors.",
+        "Changed input coordinates are controlled at rank r by the corresponding exterior norms."
+      ],
+      "proof": "proofs/04_COLLISION_PHASE.md",
+      "certificate": "checks/check_collision.py",
+      "limitations": [
+        "A degenerating physical metric or section multiplier must be restored explicitly.",
+        "The finite checker covers bounded lengths and rational scale exponents; the general theorem rests on the written minor proof."
+      ]
+    }
+  ],
+  "global_nonclaims": [
+    "No Riemann-hypothesis conclusion.",
+    "No constructed off-line zeta zero.",
+    "No universal Erdős-Straus occupancy theorem.",
+    "No new integer witness produced by the tensor model.",
+    "No identification of the Family C kernels with the trace-rigidity kernel."
+  ]
+}

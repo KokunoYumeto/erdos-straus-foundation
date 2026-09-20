@@ -138,6 +138,16 @@ for both original first-half channels:
   exactly the retained middle involution $U\leftrightarrow a^2/U$ as its
   nontrivial fibres. The same module computes the square-part residual away
   from that gate and the irrational algebraic boundary of the rational theorem.
+- [General-family metric and ES-labelled tensor integration](research/incoming/es-rh-family-integration-c-20260920/README.md):
+  the original scalar source and constructed tensor section have an exact
+  combined minimum, complete determinant allocation, and certified range
+  inverse. The two transported sum actions generate an explicitly projected
+  common reducing space whose adjoint leakage retains the centre--length
+  covariance. The equal-multiplicity ES-labelled model has exact dimension
+  and leakage-rank formulas, and the two-centre collision calculation now has
+  every singular and inverse-exterior exponent on both sides of \(a=1\).
+  The canonical metric comparison consumes pinned NG20--NG21 on a stipulated
+  off-line quartet and is not an RH result.
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
@@ -170,6 +180,14 @@ The trace-integrality module supplies a global test for a proposed rational
 source and proves its complete fibre structure. It does not manufacture the
 proposed source: the remaining assertion is still that some raw word has an
 integral trace at each prescribed hard prime.
+The family integration identifies three maps that earlier interfaces left
+implicit: the inclusion of the constructed section into the original physical
+minimum, the projection from the ES-labelled common reducing space back to the
+original cyclic image, and the collision map between separated and confluent
+jets. Their kernels, ranges, metric costs and collision exponents are all
+retained. None of these post-witness constructions supplies the still-missing
+positive original source at every hard prime.
+
 The [19 September bulletin](DAILY_RESULTS_20260919.md)
 and [20 September bridge bulletin](DAILY_RESULTS_20260920.md) give stable result
 IDs and exact locators. They are mathematical indexes, not a programme chronology.

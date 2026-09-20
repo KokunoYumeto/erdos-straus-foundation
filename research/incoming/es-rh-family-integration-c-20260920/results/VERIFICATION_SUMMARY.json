@@ -1,0 +1,54 @@
+{
+  "checks_sha256": {
+    "check_collision.py": "6bf9af37ca01b2738ad2ea4313a83954a936c8e0a180ffcdba6f64d1bb5292c3",
+    "check_family.py": "f71091acca752cefb96b7dc16f40b5872531ae27877143e4ae0479133ec6bca7",
+    "check_joint_minimum.py": "3bf4ec78a7a781bc7a67f425094182727132f3d3cdb3f353061fe6194cbc1c39",
+    "check_metric.py": "4ec99020db99ab23d8cac3148778f6bdef56ea6f666939cfc26d0f0427058be2",
+    "core.py": "fdc8a53e9ed5a967669e08a35f006603a4ba6ac5a67225f3aa6a86b12ca57a1b",
+    "receipt.py": "a9a3e8061022e0118ab7c3eff014859e585ea39c69f14d552c68e54b1231dd54",
+    "run_validation.py": "6f4cc3ed8e001f571c92b495991ca36ddbe90ef8b7312dafe9e8b6bb8ce90865"
+  },
+  "exact_checks_per_mode": 1284,
+  "negative_control_executions_per_mode": 22,
+  "normal_optimized_identical": true,
+  "python": "3.13.9",
+  "scope": "Fresh finite exact algebra and bounded synthetic checks only. Not a Lean build, numerical evaluation of native zeta moments, or replay of unavailable source archives.",
+  "source_input_sha256": "ec8af51f2ff9c5ce06355e3ec9dda2a84e6216a63b04416093bd98bb0a270a9c",
+  "status": "PASS",
+  "suite_count": 4,
+  "suites": [
+    {
+      "exact_checks_per_mode": 504,
+      "negative_control_executions_per_mode": 4,
+      "normal_optimized_identical": true,
+      "receipt_sha256": "af7d88b30b8184d478a04e623bb14a0e2b00bdab5d7c717a44c48b62d420d9f9",
+      "script": "check_family.py",
+      "suite": "family_joint_observability"
+    },
+    {
+      "exact_checks_per_mode": 38,
+      "negative_control_executions_per_mode": 6,
+      "normal_optimized_identical": true,
+      "receipt_sha256": "9b222ecf3bf8f1c1d06f740586dd3a6ba8c5f018147a2990998db70f3e540bd0",
+      "script": "check_joint_minimum.py",
+      "suite": "complete_source_minimum_and_allocation"
+    },
+    {
+      "exact_checks_per_mode": 309,
+      "negative_control_executions_per_mode": 2,
+      "normal_optimized_identical": true,
+      "receipt_sha256": "514446b18c4bd7b9b35e38054781cdda9a9469b6c90887fe4709d56e9936ef8f",
+      "script": "check_collision.py",
+      "suite": "collision_complete_phase_diagram"
+    },
+    {
+      "exact_checks_per_mode": 433,
+      "negative_control_executions_per_mode": 10,
+      "normal_optimized_identical": true,
+      "receipt_sha256": "e1737d445803b488b3c5e9ac75e1926721ba75361398f90ee408f2d3ea4afd94",
+      "script": "check_metric.py",
+      "suite": "metric_change_and_native_scale_obstruction"
+    }
+  ],
+  "sympy": "1.13.1"
+}

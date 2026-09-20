@@ -1,0 +1,157 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+
+(C:/Users/Floris/Documents/math/work/erdos-straus-foundation-20260919/research/
+incoming/es-rh-family-integration-c-20260920/MANUSCRIPT.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
+))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+) (C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty)
+) (C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.st
+y
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pd
+ftex.def)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cf
+g))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+y
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
+y)))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg)))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty)
+
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.st
+y (C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty)
+) (C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
+ekeys.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty)))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
+tlestring.sty))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.
+sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
+c.sty)))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
+lecheck.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
+counter.sty)))
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.de
+f)) (C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd)
+(C:\Users\Floris\AppData\Local\Temp\es_rh_family_pdf_f3fimm_v\MANUSCRIPT.aux)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd)
+(C:\Users\Floris\AppData\Local\Temp\es_rh_family_pdf_f3fimm_v\MANUSCRIPT.toc)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd) [1{C:/Us
+ers/Floris/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Floris/Ap
+pData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Floris/AppDa
+ta/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Floris/AppData/
+Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Floris/AppData
+/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] [2]
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd)
+(C:\Users\Floris\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-euf.cfg)
+[3{C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
+nc}] [4] [5] [6] [7] [8] [9 <./figures/joint_source_allocation.pdf>] [10]
+[11] [12] [13] [14] [15] [16 <./figures/family_joint_es_collision.pdf>]
+[17] [18] [19] [20]
+(C:\Users\Floris\AppData\Local\Temp\es_rh_family_pdf_f3fimm_v\MANUSCRIPT.aux) )
+<C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/eule
+r/eufm10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+lm/lmbx10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/lm/lmbx12.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmex10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/lm/lmmi10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmmi12.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/lm/lmmi6.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/lm/lmmi8.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/lm/lmmib10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmr10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmr12.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmr17.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmr6.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmr8.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/lm/lmri10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmsy10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmsy6.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmsy8.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmtt10.pfb><C:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb><C:/Users/Floris/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on C:\Users\Floris\AppData\Local\Temp\es_rh_family_pdf_f3fimm_v\
+MANUSCRIPT.pdf (20 pages, 544516 bytes).
+Transcript written on C:\Users\Floris\AppData\Local\Temp\es_rh_family_pdf_f3fim
+m_v\MANUSCRIPT.log.
