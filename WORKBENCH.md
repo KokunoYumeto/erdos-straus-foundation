@@ -131,6 +131,13 @@ for both original first-half channels:
   and eight rational points on its specified nonsquare twist.  Separate
   determinant and finite-heat tracks retain their own proof and executable
   verification boundaries.
+- [Global trace integrality and exact raw-source fibres](research/incoming/es-turn07-trace-rigidity-20260920/README.md):
+  the first two power traces form a complete integrality test for rational
+  three-denominator ES targets. On the complete raw integer gate, one literal
+  trace has denominator $U/\gcd(U,pa^2)$, recovers the E/M channel, and has
+  exactly the retained middle involution $U\leftrightarrow a^2/U$ as its
+  nontrivial fibres. The same module computes the square-part residual away
+  from that gate and the irrational algebraic boundary of the rational theorem.
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
@@ -159,6 +166,10 @@ excludes the receiving divisor on an explicit infinite set of residue classes
 and supplies one complete finite-field descent calculation.  None of these
 post-witness classifications supplies the still-missing first positive
 integral source at every hard prime.
+The trace-integrality module supplies a global test for a proposed rational
+source and proves its complete fibre structure. It does not manufacture the
+proposed source: the remaining assertion is still that some raw word has an
+integral trace at each prescribed hard prime.
 The [19 September bulletin](DAILY_RESULTS_20260919.md)
 and [20 September bridge bulletin](DAILY_RESULTS_20260920.md) give stable result
 IDs and exact locators. They are mathematical indexes, not a programme chronology.

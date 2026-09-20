@@ -171,6 +171,17 @@ proof locators without reconstructing a programme timeline.
     points on its specified nonsquare twist over (mathbb F_{61}).  Its two
     adjacent tracks prove the sharp determinant return and finite heat
     remainders while retaining their separate metric and verification scope.
+19. [Global trace integrality and exact raw-source fibres](research/incoming/es-turn07-trace-rigidity-20260920/README.md)
+    proves that, for rational ES denominators, two integral power traces force
+    all three denominators to be integers.  On the complete raw integer gate,
+    one integral literal trace recovers the original divisor budget and its
+    E/M channel; the only two-point fibres are the retained middle
+    orientations.  The package also classifies every possible common
+    denominator at length three, computes the square-part obstruction when the
+    gate is removed, and constructs the exact irrational algebraic boundary
+    showing why rationality cannot be dropped.  The three-page preprint,
+    ten-page workbench, illustration and independent executable replay are
+    included.
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half

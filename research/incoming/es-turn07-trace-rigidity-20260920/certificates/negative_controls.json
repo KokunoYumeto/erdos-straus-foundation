@@ -1,0 +1,34 @@
+[
+  {
+    "false_claim": "the n>=3 hypothesis can be dropped",
+    "rejected": true
+  },
+  {
+    "false_claim": "one trace forces rational integrality",
+    "rejected": true
+  },
+  {
+    "false_claim": "square removal preserves the shell gate",
+    "rejected": true
+  },
+  {
+    "false_claim": "all raw integral M traces are canonical M",
+    "rejected": true
+  },
+  {
+    "false_claim": "a finite-place predicate includes global trace",
+    "rejected": true
+  },
+  {
+    "false_claim": "the reciprocal numerator need not retain its cube",
+    "rejected": true
+  },
+  {
+    "false_claim": "the trace gap permits weak inequality",
+    "rejected": true
+  },
+  {
+    "false_claim": "all algebraic integer moment targets split rationally",
+    "rejected": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "algebraic_targets": 6,
+  "bound": 3000,
+  "checks": 331544,
+  "constructed_denominators": 82,
+  "elapsed_seconds": 2.195617401999698,
+  "moment_presentations": 446,
+  "original_counts": {
+    "E": 5700,
+    "M": 5268
+  },
+  "primes": 211,
+  "raw_shells": 126,
+  "relaxation_primes": 44,
+  "scope": "Independent implementation; not independent mathematical review or universal ES proof.",
+  "states": 10968,
+  "success": true
+}

@@ -1,0 +1,44 @@
+{
+  "algebraic_target_count": 6,
+  "bound": 3000,
+  "checks": 2655782,
+  "constructive_denominators": 82,
+  "denominator_bound": 500,
+  "elapsed_seconds": 1.4532797410001876,
+  "mathematical_tables_sha256": {
+    "algebraic_targets.json": "f059cb2ed879ccf5d4ec290af00e9bff3d49a5034858fda7d752c36c7c74953e",
+    "denominators.json": "822712e4484d09ca849fc01c629e244dbafac87344674937d92bb9358c992b9e",
+    "examples.json": "7fdfd5b582f2b0649a850a443e7dd88a868e4ce1eb02021b6331395269b19e0d",
+    "negative_controls.json": "c6fe91942283300a00da742979e8d85c06e1e7f4ff202d69b252bc53f91e1b5c",
+    "raw_trace.json": "60925e23cfefdb3c59a3c9fa68bfc968c7afa2467aeaa098e27039010f881627",
+    "scan.json": "c319336f7b78db7345565c29dd943acca090c7c5acc515e486c5c8227401fce8",
+    "trace_relaxation.json": "a72f9c2c037383fdc5d8c7eb55f75d515426cd324834ef16c86928ea1ffcef79"
+  },
+  "negative_controls": 8,
+  "original_totals": {
+    "E": 5700,
+    "M": 5268,
+    "original_divisors": 1877004,
+    "shells": 73798
+  },
+  "primes": 211,
+  "raw_bound": 97,
+  "raw_totals": {
+    "E": 51,
+    "M": 62,
+    "integer_trace_values": 82,
+    "kernel_rank": 31,
+    "raw_words": 259074,
+    "trace_values": 259043
+  },
+  "relaxation_bound": 500,
+  "relaxation_totals": {
+    "integral_pairs": 781,
+    "nonintegral_pairs": 262,
+    "ordered_representatives_tested": 58784,
+    "trace_integral_pairs": 1043
+  },
+  "scope": "Bounded verification; no universal ES occupancy, no independent mathematical review.",
+  "state_digest": "5e0d1f4ac35a1914008a720aaa1fb05032a55b121bdb30ff2e482e2492837381",
+  "success": true
+}

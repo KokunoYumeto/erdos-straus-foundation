@@ -1,0 +1,559 @@
+\section{Scope and the exact arithmetic return}
+The preceding integral-completion calculation retained the original finite
+orders, but produced rational numerical candidates which pass a specified finite
+set of local tests while violating one original prime-exponent bound
+\cite[\S\,``One unavailable prime occurrence'']{Previous}. We now test a global
+observation instead. For rational ES denominators, two integral Newton traces
+force all denominators to be integers. In the original raw integer gate source,
+one integral trace already forces the correct divisor box, with a necessary
+middle-to-exterior reclassification at the distinguished prime. The complete
+trace fibres recover the middle states as actual kernel generators.
+
+This is an arithmetic integrality theorem, not an assertion that an integral
+trace is attained at every prime. The remaining universal existence question is
+stated at the end. In particular, an algebraic-integer root is not silently
+identified with a rational integer. We construct an explicit algebraic
+counterfamily at every hard prime which retains all integral power traces and
+the middle prime-local signature, but has no rational denominator pair.
+No historical-priority determination is claimed.
+
+\section{A denominator theorem for finite rational spectra}
+Let $x_1,\ldots,x_n\in\Q^\times$, $n\ge2$. Write
+\[
+ s_k=\sum_{i=1}^n x_i^k,\qquad
+ \sum_{i=1}^n\frac1{x_i}=\frac{m}{b}\ne0,
+ \qquad b>0,\quad\gcd(m,b)=1.
+\]
+The numerator $m$ is signed; divisibility of it means divisibility of $|m|$.
+The roots are labelled and may repeat.
+
+\begin{theorem}[Common denominator and reciprocal numerator]\label{thm:general}
+If $s_1,\ldots,s_{n-1}\in\Z$, the reduced denominators of all $x_i$ are the same
+integer $d$. Moreover
+\[
+ \boxed{\gcd(d,b)=1,\qquad d^n\mid(n-1)!m.}                 \tag{TR1}
+\]
+If $n$ is odd, $d$ is odd.
+\end{theorem}
+\begin{proof}
+Let $e_j$ be the elementary symmetric functions, with $e_0=1$. The exact Newton
+identities are
+\[
+ j e_j=\sum_{k=1}^j(-1)^{k-1}e_{j-k}s_k.                 \tag{TR2}
+\]
+They follow by expanding the logarithmic derivative of
+$\prod_i(1+x_iT)$ as a formal power series and comparing the coefficient of
+$T^{j-1}$. This is the classical identity; compare Euler
+\cite[\S\S3,5--7]{Euler}. Induction in TR2 proves
+$j!e_j\in\Z$ for $j<n$: multiplying its right side by $(j-1)!$ clears all
+previous denominators.
+
+Fix a prime $\ell$ at which some $x_i$ is nonintegral. Let $-a<0$ be their
+minimum valuation, and let exactly $r$ roots have this valuation. If $r<n$, the
+product of those $r$ roots is the unique least-valuation term in $e_r$, so
+$v_\ell(e_r)=-ar$. But
+\[
+ v_\ell(e_r)\ge-v_\ell(r!)>-r\ge-ar,
+\]
+a contradiction. The strict factorial bound follows from
+$\sum_{k\ge1}\lfloor r/\ell^k\rfloor<r$ (or its finite base-$\ell$ digit
+formula). Therefore every root has the same valuation $-a$ at that prime.
+This proves equality of all reduced denominators.
+
+Write $x_i=A_i/d$, where each $\gcd(A_i,d)=1$. Since
+$e_{n-1}/e_n=m/b$ and $e_n=\prod_iA_i/d^n$, integrality of
+$(n-1)!e_{n-1}$ gives at every $\ell^a\parallel d$
+\[
+ na\le v_\ell((n-1)!)+v_\ell(m)-v_\ell(b).              \tag{TR3}
+\]
+The factorial valuation is less than $n$. Hence $\ell\mid m$; reducedness then
+gives $\ell\nmid b$. Equation TR3 proves TR1. Finally, if $d$ were even and
+$n$ odd, all reduced numerators would be odd, and their sum would be odd,
+contradicting $s_1\in\Z$.
+\end{proof}
+
+\begin{corollary}[Numerator four, any length at least three]\label{cor:four}
+Let $n\ge3$, $p\in\Z_{>0}$, and $x_i\in\Q_{>0}$ satisfy
+$\sum_i1/x_i=4/p$. Then
+\[
+ \boxed{x_i\in\Z\ (1\le i\le n)
+ \quad\Longleftrightarrow\quad s_1,\ldots,s_{n-1}\in\Z.} \tag{TR4}
+\]
+For the Erd\H{o}s--Straus equation, only $s_1,s_2$ are required. If $p$ is odd,
+these also imply $s_2\equiv s_1^2\pmod8$.
+\end{corollary}
+\begin{proof}
+The reduced reciprocal numerator divides four. An odd prime cannot divide $d$,
+since $v_\ell((n-1)!)<n$ in TR1. If $n$ is odd, the final assertion of
+Theorem~\ref{thm:general} also excludes two. If $n\ge4$ is even, $n-1$ is odd
+and at least three. Counting the binary digits of $n-1$ gives
+\[
+ v_2((n-1)!)+2=n+1-s_2^{\rm bin}(n-1)\le n-1,
+\]
+so TR1 again excludes two. Thus $d=1$. The converse is literal. For three
+integer denominators, $4e_3=pe_2$ and odd $p$ give $4\mid e_2$; use
+$s_2=s_1^2-2e_2$.
+\end{proof}
+The restriction $n\ge3$ is necessary: $(x_1,x_2)=(p/2,p/2)$ at odd $p$ has
+integer first trace and reciprocal sum $4/p$, but is not integral.
+
+\subsection{The exact possible denominators at length three}
+\begin{theorem}[Sharp three-root denominator classification]\label{thm:three}
+Under Theorem~\ref{thm:general} with $n=3$,
+\[
+ \boxed{d\text{ is odd},\quad v_3(d)\le1,\quad
+ \ell\mid d,\ \ell\ne3\Longrightarrow\ell\equiv1\pmod3,
+ \qquad d^3\mid m.}                                   \tag{TR5}
+\]
+Conversely every $d$ with these prime conditions is realized by three positive
+rationals with common reduced denominator $d$, integral $s_1,s_2$, and
+$v_\ell(m)=3v_\ell(d)$ at every $\ell\mid d$.
+\end{theorem}
+\begin{proof}
+The oddness follows above, and TR1 then gives $d^3\mid m$. At a denominator
+prime, scale the three roots to local units $A,B,C$. Their first and second
+symmetric functions vanish modulo $\ell$, so their residues are the roots of
+$T^3-ABC$. If $\ell\ne3$, the polynomial has distinct nonzero roots. Ratios of
+these roots supply a nontrivial cube root of one, giving $\ell\equiv1\pmod3$.
+For $\ell=3$ their residues coincide. If $a=v_3(d)\ge2$, the exact symmetric
+identities imply
+\[
+ A^2+AB+B^2=3^a s_1(A+B)-3^{2a}e_2.
+\]
+The right side has valuation at least two, while
+$4(A^2+AB+B^2)=(2A+B)^2+3B^2$ has valuation exactly one. This is impossible.
+Other denominator primes are units in this displayed local equation.
+
+The denominator $d=1$ is realized by $(1,2,3)$. For $d>1$, work independently at each $\ell^a\parallel d$ modulo
+$\ell^{2a+1}$, taking the first numerator to be one. At $\ell=3$, $a=1$, take
+$(A,B,C)=(1,1,4)\pmod{27}$; the sum is divisible by three and the pair sum has
+valuation exactly two. At any other denominator prime choose a nontrivial cube
+root $b$ modulo $\ell^{2a}$. It is obtained from a root of $b^2+b+1$ modulo
+$\ell$ by the explicit unit-derivative lift
+\[
+ b'=b+\ell^k t,\qquad
+ t\equiv-\frac{b^2+b+1}{\ell^k}(2b+1)^{-1}\pmod\ell.
+\]
+Set $c=-1-b+\ell^{2a}t$. Its pair sum is
+$-(b^2+b+1)+(1+b)\ell^{2a}t$. Because $1+b$ is a unit, precisely one value
+of $t\pmod\ell$ makes its valuation exceed $2a$; choose any other value.
+CRT now gives integer $B,C$ with these separate labelled residues. Add
+respectively one and two multiples of
+$L=\prod_{\ell^a\parallel d}\ell^{2a+1}$ to make $1<B<C$.
+All three numerators are coprime to $d$; their sum is divisible by $d$ and their
+pair sum has exact valuation $2a$ at each denominator prime. Dividing by $d$
+gives integral first two traces. The reciprocal numerator has exact valuation
+$3a$ because the product of the numerators is a unit there.
+\end{proof}
+Examples retaining the exact reciprocal numerators are
+\[
+ \begin{array}{c|c|c}
+ (x_1,x_2,x_3)&(s_1,s_2)&\sum_i1/x_i\\\hline
+ (1/3,1/3,4/3)&(2,2)&27/4\\
+ (1/7,18/7,30/7)&(7,25)&343/45\\
+ (1/13,22/13,146/13)&(13,129)&10985/803.
+ \end{array}                                           \tag{TR6}
+\]
+The cube restriction concerns the reduced numerator, not the number of primes
+one has elected to check.
+
+\section{One global trace on an unfiltered integer gate source}
+Now fix prime $p\equiv1\pmod4$ and a complete original first-half shell
+\[
+ p/4<a<p/2,\qquad R=4a-p.
+\]
+Then $R\ge3$, $R\equiv3\pmod4$, and $\gcd(pa,R)=1$.
+Before imposing any divisor budget, take an arbitrary positive integer $U$ with
+$R\mid a+U$. Define
+\[
+ \boxed{x=a,\qquad y=\frac{pa(U+a)}{RU},\qquad
+ z=\frac{p(a+U)}R,\qquad S=p+x+y+z.}                    \tag{TR7}
+\]
+These are positive rational denominators, $z$ is an integer, and direct
+multiplication gives $1/x+1/y+1/z=4/p$.
+
+\begin{theorem}[Global trace recovers the original budget and tag]\label{thm:raw}
+The exact reduced denominator is
+\[
+ \boxed{\den S=\den y=\frac{U}{\gcd(U,pa^2)}.}           \tag{TR8}
+\]
+Consequently $S\in\Z$ if and only if $U\mid pa^2$. Its integral returns are
+exactly the disjoint tagged cases
+\[
+ \begin{array}{c|c|c}
+ v_p(U)&\text{original divisor}&\text{channel}\\\hline
+ 0&u=U\mid a^2&M\\
+ 1&u=U/p\mid a^2&E.
+ \end{array}                                           \tag{TR9}
+\]
+No higher $p$-valuation gives an integral return. On an integral trace the tag
+can also be read without factoring $U$:
+\[
+ \boxed{M\iff S\equiv a\pmod p,\qquad E\iff S\not\equiv a\pmod p.}
+                                                               \tag{TR10}
+\]
+For the raw E gate $R\mid4U+1$, the analogous rational return
+\[
+ \left(a,\frac{paU+a^2}{RU},\frac{pa+p^2U}{R}\right)
+\]
+has $\den S=U/\gcd(U,a^2)$; its trace is integral exactly on the original E box.
+\end{theorem}
+\begin{proof}
+The gate makes $a+U$ divisible by $R$, and $\gcd(U,R)=1$. If
+$n=pa(U+a)/R\in\Z$, then, modulo $U$,
+$Rn\equiv pa^2$. Hence $\gcd(n,U)=\gcd(pa^2,U)$, proving TR8. For integral
+returns $a<p$ makes the $p$-part of $U$ zero or one. At valuation zero, the
+original M gate is unchanged. At valuation one write $U=pu$. Since
+$p\equiv4a\pmod R$, the gate $a+pu\equiv0$ is exactly $4u+1\equiv0$; the two
+expressions in TR7 are the original E denominators at $u$. They are not a
+canonical M state with an impermissible extra occurrence of $p$.
+
+For completeness, the original normalization is
+\[
+ g=\gcd(a,u),\quad h=g^2/u,\quad r=u/g,\quad s=a/g.
+\]
+Prime valuations give positive integral $h,r,s$, $a=hrs$, $u=hr^2$ and
+$\gcd(r,s)=1$. At M set $\lambda=(r+s)/R$ and return
+$(a,phs\lambda,phr\lambda)$. At E set $\kappa=(pr+s)/R$ and return
+$(a,hs\kappa,phr\kappa)$. The gates prove their integrality. The ordered
+inverses are $pa^2/(Ry-pa)$ and $a^2/(Ry-pa)$ respectively. These Type-I/II
+identities are inherited \cite[\S2, Propositions 2.2 and 2.6]{ET}.
+At M both tail denominators are multiples of $p$, so TR10 holds. At E the first
+tail denominator is a $p$-unit, proving the other alternative. The raw E
+calculation is identical: its third denominator is integral by multiplying the
+E gate by $pa$, and reduction of the second numerator modulo $U$ gives $a^2$.
+\end{proof}
+
+For a nonintegral raw word, TR8 gives the exact integer-spacing estimate
+\[
+ \boxed{\operatorname{dist}(S,\Z)\ge\frac1{\den S}\ge\frac1U.}  \tag{TR11}
+\]
+Strict proximity $|S-N|<1/U$ to an integer forces equality. No estimate proving
+that proximity for some raw word has been obtained. The strict sign is necessary:
+at $p=13,a=4,R=3,U=5$, $S=436/5$ and the distance is $1/5$.
+
+At $p=35281,a=8821,U=202883$, the preceding foreign-prime candidates have exact
+literal traces
+\[
+ S_E=1936132532779018/23,\qquad S_M=59754044938/23.        \tag{TR12}
+\]
+Thus the global trace rejects their one unavailable prime occurrence. This is a
+stronger \emph{test} than the earlier fixed finite-place predicate, not a proof
+that the test succeeds at every prime.
+
+\section{The trace fibres and their integral coefficient kernel}
+Let
+\[
+ \Omega_{p,a}=\{1\le U\le pa^2:R\mid a+U\},
+ \quad \Theta_{p,a}=\{S(U):U\in\Omega_{p,a}\},
+\]
+and define the actual free-abelian pushforward
+\[
+ \Phi:\Z^{\Omega_{p,a}}\longrightarrow\Z^{\Theta_{p,a}},
+ \qquad e_U\longmapsto e_{S(U)}.                         \tag{TR13}
+\]
+The raw source is finite without assuming any original hit. Its explicit size is
+$1+\lfloor(pa^2-U_0)/R\rfloor$, where $U_0=(-a)\bmod R\in[1,R-1]$.
+
+\begin{theorem}[Complete trace fibres]\label{thm:fibre}
+Two distinct raw words have the same trace exactly when $UV=a^2$. Every such
+pair consists of the two original middle orientations. Every exterior integral
+trace has one raw preimage; every middle integral trace has two; every
+nonintegral trace has one. If $E_a,M_a$ are the original labelled counts, with
+both middle orientations retained, then
+\[
+ \boxed{\rank\ker\Phi=M_a/2,\quad
+ |\Theta_{p,a}\cap\Z|=E_a+M_a/2,\quad
+ E_a+M_a=|\Theta_{p,a}\cap\Z|+\rank\ker\Phi.}            \tag{TR14}
+\]
+The kernel has the explicit basis $e_U-e_{a^2/U}$ for the middle words $U<a$.
+\end{theorem}
+\begin{proof}
+From TR7,
+\[
+ S(U)-S(V)=\frac pR(U-V)\left(1-\frac{a^2}{UV}\right).  \tag{TR15}
+\]
+If both raw words are integers and $UV=a^2$, they are original square divisors.
+The gate at $U$ implies the gate at $V$ since $U\equiv-a\pmod R$ and is a unit.
+Thus both are M. There is no fixed point: $U=a$ would make $R\mid2a$, impossible.
+Conversely every original M complement is present in $\Omega_{p,a}$. An E word
+has $v_p(U)=1$; its complementary rational number $a^2/U$ is not an integer,
+so its fibre is a singleton. These are the entire fibres, proving TR14 and
+the stated integral basis.
+\end{proof}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/trace_integrality_fibres.pdf}
+\caption{The common-denominator implication and one complete raw trace source.
+In the displayed $p=13$, $a=4$, $R=3$ example, all raw words satisfying
+$R\mid a+U$ are retained. The integral points are precisely
+$U=2,8,26,104$, as TR8 predicts. The two middle words $U=2,8$ share
+$S=95$ because their product is $a^2=16$; the exterior words are singleton
+fibres. The figure therefore exhibits the nonzero kernel generator
+$e_2-e_8$ rather than identifying the two source words. All plotted values
+are generated with exact rational arithmetic by
+\texttt{figures/trace\_integrality\_fibres.py}.}
+\label{fig:trace-integrality-fibres}
+\end{figure}
+
+The labelled inverse from a trace value $S$ is the positive-root equation
+\[
+ U^2-\left(\frac R p(S-p-a)-2a\right)U+a^2=0,            \tag{TR16}
+\]
+followed by the original integer, range and gate tests. Keeping the source word
+$U$ recovers its factor exponents and tag through TR9. Equal trace values at
+\emph{different} distinguished denominators $a$ are not merged by TR13.
+
+For arbitrary retained positive source weights $w_U$, use
+$\|x\|^2=\sum_Uw_U|x_U|^2$. The exact quotient norm and minimum-norm section are
+\[
+ \|z\|_{\rm quot}^2=\sum_S\frac{|z_S|^2}{\sum_{S(U)=S}w_U^{-1}},
+ \qquad x_U=\frac{z_{S(U)}w_U^{-1}}{\sum_{S(V)=S(U)}w_V^{-1}}.
+\]
+Cauchy--Schwarz applied on each actual fibre proves the lower bound, and
+substitution proves equality for the displayed section. In the counting norm
+$w_U=1$, it places $z_S/m_S$ on each of the $m_S$ original words, with squared
+quotient norm $\sum_S|z_S|^2/m_S$. At a two-point fibre this section is not
+integral when $z_S$ is odd. Choosing one original representative instead gives
+an integral section with a different norm. No section discards the kernel.
+These are norms of the specified finite word source, not a replacement of the
+weighted analytic conductor. Reduction
+modulo two sends the original middle mass two to zero but retains its two words
+and the kernel generator. It is not an absent source.
+
+For example, at $p=1009,a=253$, the middle pair $U=11,5819$ has
+$S=2132270$. The exterior word $U=11099=p\cdot11$ has $S=3906350$ and returns
+\[
+ (253,87032,3818056).
+\]
+It is integral but is not a canonical M state at the uncorrected word $11099$.
+
+\section{An integral first trace alone retains a square-part obstruction}
+Consider arbitrary positive rational tails $y,z$ at the original integer $a$:
+\[
+ \frac1y+\frac1z=\frac R{pa},\qquad N=y+z\in\Z.
+\]
+This section does not assume the raw full gate of TR7.
+
+\begin{theorem}[Exact remaining denominator]\label{thm:tail}
+The reduced denominators of $y,z$ coincide at $d$, and
+\[
+ \boxed{d^2=\frac R{\gcd(R,N)},\qquad
+ \den(a^2+y^2+z^2)=d^2.}                                \tag{TR17}
+\]
+In particular squarefree $R$ makes an integral first trace sufficient.
+Every such pair has the complete integer-factor presentation
+\[
+ b c=(pa)^2,\quad b,c>0,\quad
+ y=(pa+b)/R,\quad z=(pa+c)/R,
+\]
+with
+\[
+ \boxed{K(R)\mid pa+b,\qquad
+ K(R)=\prod_{\ell^e\parallel R}\ell^{\lceil e/2\rceil}.} \tag{TR18}
+\]
+The pair is integral precisely when $R\mid pa+b$; in the relaxed pair
+$d=R/\gcd(R,pa+b)$.
+\end{theorem}
+\begin{proof}
+Since $y+z$ is integral, write $y=Y/d,z=Z/d$ with both numerators coprime to $d$.
+The reduced denominator of $yz$ is $d^2$. But $yz=Npa/R$ has denominator
+$R/\gcd(R,N)$, proving the first equality. The second follows from
+$a^2+y^2+z^2=a^2+N^2-2Npa/R$ and odd $R$, coprime to $pa$.
+Thus $d\mid R$, and $b=Ry-pa,c=Rz-pa$ are positive integers; the reciprocal
+identity gives $bc=(pa)^2$. They are units modulo $R$. Conversely every such
+factor pair gives positive rational tails and
+\[
+ y+z=\frac{2pa+b+c}{R}=\frac{(pa+b)^2}{Rb}.
+\]
+Its integrality is $R\mid(pa+b)^2$, exactly TR18. The remaining assertions
+are the literal denominators of $(pa+b)/R$.
+\end{proof}
+
+The failed shell-change attempt is completely concrete at the hard prime $1009$:
+\[
+ \boxed{a=286,\ R=135,\ K(R)=45,\ b=11,\quad
+ (x,y,z)=(286,6413/3,168238642/3).}                      \tag{TR19}
+\]
+It satisfies ES, has first denominator trace $56081971\in\Z$, and second trace
+$28304240703866897/9$. Its missing denominator is exactly three. Removing its
+square factor from $R$ gives $R'=15,a'=256$. The complete original divisors are
+$2^f$, $0\le f\le16$, whose residues modulo fifteen are $1,2,4,8$.
+Neither original target, $14$ for M or $11$ for E, is present. Thus stripping
+that square does not transport the original factor box to an occupied shell.
+The smaller control $p=193,a=55,R=27$ similarly gives
+$(55,1180/3,2505140/3)$ with integral first trace, while the compressed shell
+$R'=3,a'=49$ has both gates empty. These are failures of the specified map,
+not ES counterexamples.
+
+\section{The literal coefficient observation and a rationality boundary}
+For the original literal roots $(p,x,y,z)$, keep the exact normalization
+\[
+ \mathcal H(T)=AT^4+T^3+BT^2+CT+D
+              =-S^{-1}(T-p)(T-x)(T-y)(T-z).
+\]
+These are the preceding integral-completion coordinates, not the reciprocal
+cubic and not the analytic conductor moments \cite[IC4--IC5]{Previous}.
+The first two traces of multiplication by $T$ on the rank-four root algebra are
+\[
+ \boxed{\mathsf N_1=-A^{-1},\qquad
+ \mathsf N_2=A^{-2}-2B/A.}                              \tag{TR20}
+\]
+They follow from TR2. For rational ES roots, Corollary~\ref{cor:four} says that
+integrality of these two traces is equivalent to the original integer
+solution, since subtracting $p,p^2$ gives the denominator traces. On the rank-eight
+completion obtained by adjoining $\eta^2=\mathcal H'(T)$, the traces of these
+multiplication operators are \emph{twice} TR20. The two copies and their original
+basis are retained; a weighted analytic shift-conductor moment is a different
+observation and has not been substituted for either one.
+
+The two traces also determine the whole unordered denominator polynomial, not
+merely an integrality predicate. With $s_1=\mathsf N_1-p$ and
+$s_2=\mathsf N_2-p^2$, it is exactly
+\[
+ \boxed{g_{p,s_1,s_2}(T)=T^3-s_1T^2+
+ \frac{s_1^2-s_2}{2}T-\frac{p(s_1^2-s_2)}8.}             \tag{TR20a}
+\]
+The reciprocal equation supplies its constant term. Every integral trace pair
+whose polynomial splits into positive rational roots therefore gives integer
+roots by Corollary~\ref{cor:four}; in particular $s_1^2-s_2$ is divisible by
+eight at odd $p$. On the original canonical domain, choose the unique root
+$a\in(p/4,p/2)$. Its remaining $p$-divisibility pattern selects E (one tail
+multiple of $p$) or M (both tails multiples of $p$), with the M orientation bit
+retained. The original ordered divisor inverse then recovers the entire box
+marking. The fibres of the map from original states to
+$(p,\mathsf N_1,\mathsf N_2)$ have size one at E and two at M. These claims use
+only the original distinct-denominator domain; arbitrary input trace pairs
+still require positivity, rational splitting and the original range test.
+
+\begin{theorem}[Algebraic targets with every integer trace at every hard prime]
+\label{thm:algebraic}
+For every prime $p\ge1009$, $p\equiv1\pmod{24}$, there are explicitly constructed
+positive, distinct algebraic-integer denominators $(a,pb,pc)$ satisfying ES,
+with $a=(p+3)/4$, for which $b,c$ are irrational over $\Q$. All power traces
+are integers. Their literal quartic splits locally over $\Q_p$ and has the
+same middle root-cluster valuations and negative pair character as an original
+M state. It also satisfies the inherited scalar height and separation bounds.
+This family is outside the rational-root domain of Corollary~\ref{cor:four}.
+\end{theorem}
+\begin{proof}
+There are exactly $(p-1)/4$ residues $k_0\pmod p$ such that
+\[
+ \left(\frac{k_0}{p}\right)=
+ \left(\frac{3k_0-1}{p}\right)=-1.                     \tag{TR21}
+\]
+To count them set $s=3k_0$, since $3$ is a square. The sum
+$\sum_s\chi(s(s-1))=-1$ follows by counting
+$(2s-1)^2-(2y)^2=1$: there are $p-1$ nonzero choices of its first factor,
+each uniquely determining its second. Expand
+$(1-\chi(s))(1-\chi(s-1))/4$. The values at zero and one are zero because
+$-1$ is a square, so the count is exactly $(p-1)/4$.
+
+Let $k_0$ be the least such residue, and set
+\[
+ m=(p-1)/6=(2a-2)/3,\quad
+ K_0=\lfloor(m+1)^2/2\rfloor+1,\quad
+ k=K_0+((k_0-K_0)\bmod p).
+\]
+Let $b,c$ be the two roots of
+\[
+ T^2-3kT+ak,
+ \qquad \Delta=9k^2-4ak.                               \tag{TR22}
+\]
+The exact inequalities
+\[
+ \boxed{(3k-m-1)^2<\Delta<(3k-m)^2}                    \tag{TR23}
+\]
+follow because the first difference is $2k-(m+1)^2>0$ and the second is
+$4k+m^2>0$. The bounding integers are positive. Thus $\Delta$ is not a rational
+square; $b,c$ are irrational algebraic integers. They are positive,
+$b>a/3$ and $c<3k$, from $b=2ak/(3k+\sqrt\Delta)$.
+Their reciprocal identity is
+\[
+ \frac1a+\frac1{pb}+\frac1{pc}
+ =\frac1a+\frac3{pa}=\frac4p.
+\]
+Their monic cubic is
+\[
+ T^3-(a+3pk)T^2+pa k(p+3)T-p^2a^2k.                   \tag{TR24}
+\]
+All power traces are integers by TR2 and its integral recurrence beyond degree
+three. This does not make its quadratic factor split over $\Q$.
+There is an equally literal algebraic version of the raw source:
+\[
+ U_\pm=\frac{9k-2a\pm3\sqrt\Delta}{2},\quad
+ U_+U_-=a^2,\quad a+U_\pm=3b\ \text{or}\ 3c.            \tag{TR25}
+\]
+Both $U_\pm$ are positive irrational algebraic integers, since they are the roots
+of $U^2-(9k-2a)U+a^2$. They are genuine divisors of $a^2$ in that quadratic
+integer ring and pass its sum gate. Also
+$U_\pm<9k<p a^2$. Substitution in TR7 returns the two tail orientations.
+This is not the source $\Z_{>0}$: extending its scalar ring has supplied two
+new words. The field and the conjugation label cannot be discarded.
+
+Modulo $p$, $a=3/4$, and
+$\Delta=3k(3k-1)$ is a nonzero square by TR21. Unit-derivative Hensel lifting
+therefore gives both roots in $\Z_p$. Their product has character
+$\chi(ak)=-1$. They are distinct units, and neither equals one modulo $p$:
+that would force $k=4/9$, a square. Thus the literal roots $p,pb,pc$ have all
+pairwise difference valuations one, and the singleton $a$ is separated by
+units. The derivative valuations are $(2,0,2,2)$. With
+$S=p+a+3pk$, the normalized coefficient valuations are $(0,1,2,3)$, by direct
+expansion. These are the original M cluster conditions from
+\cite[IC7, IC14]{Previous}; that calculation does not force global rationality.
+For the lift itself, if $z^2=\Delta\pmod{p^n}$, set
+$z'=z+p^nt$ with $t=-(z^2-\Delta)/p^n\,(2z)^{-1}\pmod p$; both compositions
+are checked directly. Standard background is \cite[Chapter 7]{Milne}.
+
+Finally
+\[
+ k\le(p+5)^2/72+p<p^2/60\quad(p\ge1009).
+\]
+The last comparison is $p^2-410p-125>0$. Put
+$s_p=(p^2+3p)/4$ and $B_p=p+s_p(s_p+1)$. Then
+\[
+ pc<3pk<p^3/20<s_p(s_p+1)/3,\qquad S<B_p.
+\]
+In increasing order the literal roots are $a,p,pb,pc$, with all adjacent gaps
+larger than one. Their Vandermonde product is consequently larger than twelve,
+and the product of the three differences from any one root is at least two.
+The same scalar inequalities as the preceding integer-source bounds follow:
+\[
+ \Disc(\mathcal H)>144/B_p^6,\qquad
+ 2/S\le|\mathcal H'(\ell_i)|<S^2.
+\]
+No integral-point conclusion is drawn from them.
+\end{proof}
+
+At $p=1009$ the construction gives
+\[
+ a=253,\quad k_0=13,\quad k=15148,\quad
+ \Delta=2049827360,\quad
+ 45275^2<\Delta<45276^2.
+\]
+The quadratic is $T^2-45444T+3832444$. These explicit irrational denominator
+roots have all integer traces and the required local split pattern. They are
+not original divisor states. In particular, replacing a rational-root test by
+an arbitrary finite list of symmetric integer traces is unsound: this example
+has \emph{every} symmetric power trace integral.
+
+\section{What has and has not closed}
+The global rational-source integrality return is complete. It may be tested by
+two traces on arbitrary rational ES denominators, or one trace on TR7 with the
+full integer gate and its distinguished prime bit. The exact coefficient kernel
+in TR13 also recovers all oriented M states. These maps preserve all original
+fibre multiplicities.
+
+The remaining assertion is still that every prescribed hard prime produces
+at least one integral trace in that raw source, equivalently an original
+opposite divisor pair. No lower bound on $|\Theta_{p,a}\cap\Z|$ or on
+$\rank\ker\Phi$ has been proved that guarantees this for some shell. TR17--19
+show why stripping a square from a residual is not an available replacement.
+Theorem~\ref{thm:algebraic} shows why the algebraic completion cannot supply the
+missing rational-root condition by itself. Turn 7 is not marked complete and
+no witness-guaranteed Turn 8 procedure is asserted.
+
+The executable bounds, all source tables, rejected false implications, and
+normal-mode, optimized-mode and separate-checker outcomes are recorded separately. Finite scans
+check the stated formulas and fibres; they do not establish universal occupancy.

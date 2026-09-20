@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-20",
+  "predecessor": {
+    "title": "Original integral completion of the literal ES/Fabel inverse",
+    "file_id": "file_00000000923c821095cd69e1efe061df",
+    "path": "es_turn7_integral_completion_20260920/core.tex",
+    "locators": [
+      "IC1-IC5",
+      "IC7",
+      "single foreign-prime source-domain obstruction"
+    ],
+    "use": "Original coordinate dictionary, literal coefficient traces, prime-local M signature, and the failed finite-place certificate motivating the global rational-source test. The new theorems do not assume the missing ES occupancy.",
+    "sha256": "c09ac95f290487ee49de7d7dfceca6d914cc687130eb602117707b1617f3d987"
+  },
+  "primary_antecedents": [
+    {
+      "author": "Euler, L.",
+      "publication_year": 1750,
+      "translation_year": 2007,
+      "translator": "Bell, J.",
+      "arxiv": "0707.0699",
+      "url": "https://arxiv.org/pdf/0707.0699",
+      "title": "A double demonstration of a theorem of Newton, which gives a relation between the coefficient of an algebraic equation and the sums of the powers of its roots",
+      "locator": "Sections 3, 5-7; original E153, Opuscula varii argumenti 2, pp.108-120",
+      "role": "Classical Newton identities only. They are rederived by the formal logarithmic derivative in the proof."
+    },
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "year": 2013,
+      "arxiv": "1107.1010",
+      "url": "https://arxiv.org/abs/1107.1010",
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "locator": "Section 2, Propositions 2.2 and 2.6",
+      "role": "Inherited Type I/II parametrization. No average estimate is used as pointwise positivity."
+    },
+    {
+      "author": "Milne, J. S.",
+      "year": 2020,
+      "version": "3.08",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "title": "Algebraic Number Theory",
+      "locator": "Chapter 7, Theorems 7.32-7.33",
+      "role": "Standard Hensel/Newton lifting background. Every required unit-root digit step is written and checked explicitly."
+    }
+  ],
+  "content_searches": [
+    "rational integral power sums reciprocals",
+    "Erdos Straus Newton sums",
+    "denominators power sums factorial rational roots",
+    "rational numbers first two power sums integers"
+  ],
+  "search_outcome": "The searches located the classical Newton identities and general related material, not a verified priority determination for these exact statements. No novelty or historical-first claim is made.",
+  "repository_read": {
+    "repository": "KokunoYumeto/erdos-straus-foundation",
+    "initial_revision": "2b5ab3b63471092624b4fcfac2ab2a0fbafa23a3",
+    "latest_observed_revision": "34e45e06694c66650ddb4550bbf48c60ce75d8f9",
+    "latest_commit_title": "research(es): integrate defining-prime and descent continuations",
+    "scope": "Metadata read only for the latest commit. Its full new content has not been substituted for or represented as audited by this tranche."
+  },
+  "nonclaims": [
+    "Universal Erdos-Straus occupancy",
+    "A witness-guaranteed Turn 8 algorithm",
+    "Rationality of algebraic-integer roots from their integer traces",
+    "A new original analytic conductor or silently changed norm",
+    "Polynomial-time factorization or a computational efficiency improvement",
+    "A Lean build, independent mathematical review, or new overall ES verification range"
+  ]
+}
