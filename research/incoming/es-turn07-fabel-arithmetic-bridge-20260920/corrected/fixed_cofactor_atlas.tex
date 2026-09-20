@@ -1,0 +1,272 @@
+\section{The complete fixed-cofactor middle fibre}
+
+The selected square words in Theorem~\ref{thm:transfer} sit inside a larger
+finite fibre which can be computed without guessing a word.
+
+\begin{theorem}[Complete fixed-\(Q\) middle fibre]\label{thm:fixed-Q}
+Let
+\[
+ (p,a,R,u,h,r,s,\kappa,D,\alpha,\beta)
+\]
+be an original E state, in the notation of the preceding sections, and assume
+\(h\equiv3\pmod4\).  Put
+\[
+ j=\frac{h+1}{4},\qquad
+ \mathcal U_{p,h}
+ =\{U\in\mathbb Z_{>0}:U\mid j^2,\ h\mid p+4U\}.
+\]
+For \(U\in\mathcal U_{p,h}\), define
+\[
+ R_U=\frac{p+4U}{h},\qquad
+ a_U=\frac{p+R_U}{4},\qquad
+ g_U=\gcd(j,U),
+\]
+\[
+ h_U=\frac{g_U^2}{U},\qquad
+ r_U=\frac{U}{g_U},\qquad
+ \lambda_U=\frac{j}{g_U},\qquad
+ s_U=R_U\lambda_U-r_U.                                 \tag{19}
+\]
+Then
+\[
+ \boxed{(a_U,R_U,U,h_U,r_U,s_U,\lambda_U)}
+\]
+is an original M state at the same prime.  Its middle cofactor is exactly
+\[
+ Q_U=4h_Ur_U\lambda_U-1=h,
+\]
+and its ordered reciprocal decomposition is
+\[
+ \boxed{
+ \left(a_U,\;p h_Us_U\lambda_U,\;p h_Ur_U\lambda_U\right).} \tag{20}
+\]
+The assignment \(U\mapsto(a_U,R_U,U,h_U,r_U,s_U,\lambda_U)\) is a
+bijection from \(\mathcal U_{p,h}\) onto all original M states at \(p\)
+whose normalized cofactor is \(Q=h\).
+\end{theorem}
+
+\begin{proof}
+Because \(h\le a<p/2\), \(p>2h\), and \(h\ge3\).  From \(U\mid j^2\),
+\[
+ 4U\le4j^2=\frac{(h+1)^2}{4}<2h(h-1)<p(h-1).
+\]
+Consequently \(0<R_U<p\).  Since
+\(hR_U=p+4U\equiv1\pmod4\) and \(h\equiv3\pmod4\), one has
+\(R_U\equiv3\pmod4\).  Thus \(a_U\) is integral and
+\(p/4<a_U<p/2\).
+
+Prime by prime, \(U\mid j^2\) implies \(g_U^2/U\in\mathbb Z_{>0}\).
+The definitions give
+\[
+ h_Ur_U=g_U,\qquad h_Ur_U^2=U,\qquad
+ h_Ur_U\lambda_U=j.
+\]
+Moreover,
+\[
+ R_Uj-U=\frac{R_U(h+1)}4-U
+ =\frac{p+R_U}{4}=a_U.
+\]
+It follows that \(h_Ur_Us_U=a_U\) and
+\(r_U+s_U=R_U\lambda_U\).  Since
+\(\gcd(r_U,\lambda_U)=1\), a common prime divisor of \(r_U,s_U\) would
+divide \(r_U,R_U\), and hence \(hR_U-4U=p\).  It cannot equal \(p\), because
+\(0<R_U<p\).  Thus \(\gcd(r_U,s_U)=1\).  Finally
+\[
+ a_U+U=R_Uj,
+\]
+so \(R_U\mid a_U+U\), and \(U=h_Ur_U^2\mid a_U^2\).  This proves the
+forward construction and \(4h_Ur_U\lambda_U-1=4j-1=h\).
+
+Conversely, take an original M state with cofactor \(Q=h\), normalized as
+\[
+ a_M=h_Mr_Ms_M,\qquad u_M=h_Mr_M^2,\qquad
+ \lambda_M=\frac{r_M+s_M}{R_M}.
+\]
+Then
+\[
+ j=\frac{h+1}{4}=h_Mr_M\lambda_M,\qquad
+ \frac{j^2}{u_M}=h_M\lambda_M^2\in\mathbb Z_{>0}.
+\]
+Therefore \(U=u_M\mid j^2\).  Also
+\[
+ a_M+u_M=h_Mr_M(r_M+s_M)=R_Mj,
+\]
+whence
+\[
+ p+4U=4(a_M+u_M)-R_M=R_M(4j-1)=R_Mh.
+\]
+The primitive normalization gives
+\(\gcd(j,U)=h_Mr_M\), and (19) recovers
+\(h_M,r_M,\lambda_M,s_M\) exactly.  Distinct \(U\)'s remain distinct as
+original middle divisors.  This proves bijectivity.
+\end{proof}
+
+\begin{corollary}[Exact negative-square divisor slices]
+\label{cor:negative-square-slices}
+If an original E state has \(\alpha=-4c^2\) or \(\beta=-4c^2\), then
+\[
+ h\equiv3\pmod4,\qquad\gcd(h,c)=1,
+\]
+and, with \(j=(h+1)/4\),
+\[
+ \alpha=-4c^2:\quad
+ \mathcal U_{p,h}=\{U\mid j^2:U\equiv c^2\pmod h\},    \tag{21}
+\]
+\[
+ \beta=-4c^2:\quad
+ \mathcal U_{p,h}=\{U\mid j^2:c^2U\equiv j^2\pmod h\}. \tag{22}
+\]
+The words \(U=c^2\) in alpha and \(U=(j/c)^2\) in beta are available exactly
+when \(c\mid j\).  That divisibility is not necessary for the full fixed-\(Q\)
+fibre to be nonempty.
+\end{corollary}
+
+\begin{proof}
+The congruence and coprimality assertions were proved in
+Theorem~\ref{thm:transfer}.  In the alpha case,
+\(p\equiv-4c^2\pmod h\), so
+\(h\mid p+4U\) is equivalent to (21).  In the beta case,
+\(-4c^2p\equiv1\pmod h\).  Multiplication of
+\(p+4U\equiv0\pmod h\) by \(4c^2\), together with
+\(4j\equiv1\pmod h\), gives (22), and every step is reversible because
+\(\gcd(4c^2,h)=1\).
+\end{proof}
+
+Define the finite residue set
+\[
+ \Delta_h=\{U\bmod h:U\mid j^2\}
+ =\left\{\prod_{\ell^e\parallel j}\ell^{f_\ell}\bmod h:
+          0\le f_\ell\le2e\right\}.
+\]
+The exact emptiness criterion is
+\[
+ \boxed{\mathcal U_{p,h}=\varnothing
+ \Longleftrightarrow -p\,4^{-1}\pmod h\notin\Delta_h.} \tag{23}
+\]
+Thus the fixed-\(Q\) question is a complete finite divisor-residue fibre, not
+merely the selected square test.  Its other \(U\)'s can be nonsquares, so the
+square-grade conclusion of Theorem~\ref{thm:transfer} remains specific to its
+selected words.
+
+\subsection{Composition with the diagonal and radius-eight returns}
+
+For a hard prime, let \(\mathcal E_p\) be the complete original E-state set,
+\[
+ \mathcal D_p=\{e\in\mathcal E_p:R=D\},
+\]
+\[
+ \mathcal F_p=\{e\in\mathcal E_p:
+ h\equiv3\pmod4,\ \mathcal U_{p,h}\ne\varnothing\}.
+\]
+After applying the proved diagonal return and every fixed-\(Q\) return, the
+exact residual source is
+\[
+ \boxed{
+ \mathcal E_p^{\rm res}
+ =\{e\in\mathcal E_p:R\ne D,\ 
+ [\,h\not\equiv3\pmod4\ \text{or}\ \mathcal U_{p,h}=\varnothing\,]\}.} \tag{24}
+\]
+Every state in (24) has
+\[
+ \boxed{\max(|\alpha|,|\beta|)\ge9.}                   \tag{25}
+\]
+Indeed, radius at most seven is the diagonal profile
+\(\alpha=\beta=-1\).  The sole nonsingular radius-eight profile is
+\[
+ (\alpha,\beta,h)=(8,-4,11).
+\]
+Here \(j=3\), and \(U=9\in\mathcal U_{p,11}\); (19) gives
+\[
+ (h_U,r_U,s_U,\lambda_U)
+ =\left(1,3,\frac{p+3}{11},1\right),
+\]
+\[
+ a_U=\frac{3(p+3)}{11},\qquad
+ R_U=\frac{p+36}{11}.
+\]
+Thus the earlier radius-eight map is exactly the beta-square specialization
+of Theorem~\ref{thm:fixed-Q}.
+
+If a residual state nevertheless has a negative-square coordinate, it obeys
+the stronger finite exclusions
+\[
+ \alpha=-4c^2\Longrightarrow
+ \nexists U\mid j^2\text{ with }U\equiv c^2\pmod h,
+\]
+\[
+ \beta=-4c^2\Longrightarrow
+ \nexists U\mid j^2\text{ with }c^2U\equiv j^2\pmod h.
+\]
+All earlier exact conditions remain: \(h\mid\alpha\beta-1\),
+\(p\equiv\alpha\pmod h\), \(p\beta\equiv1\pmod h\),
+\((h/p)=-1\), neither coordinate is zero or a positive square, and the
+exterior atlas bound is unchanged.
+
+The overlaps are typed exactly.  If one source has both negative-square
+coordinates, both descriptions parameterize the same full set
+\(\mathcal U_{p,h}\); their selected targets coincide exactly when
+\(c_\alpha c_\beta=j\).  If \(\delta\) is the squarefree part of
+\((R-1)/2\), the diagonal return coincides with a fixed-\(Q=h\) target exactly
+when
+\[
+ \delta=h,\qquad U=j.
+\]
+Different \(U\)'s in \(\mathcal U_{p,h}\) always produce different original
+middle states.
+
+\subsection{A strict hard-prime improvement}
+
+At
+\[
+ p=41161,\qquad h=11,\qquad j=3,\qquad c=5,
+\]
+the original E state
+\[
+ (a,R,u,h,r,s,\kappa,D,\alpha,\beta)
+ =(10318,111,9678284,11,938,1,347829,348767,-100,-348756)
+\]
+has \(\alpha=-4\cdot5^2\), although \(5\nmid3\).  The state equations are
+\[
+ a=11\cdot938,\quad u=11\cdot938^2,\quad
+ 4a-p=111,\quad4u+1=111\cdot348767,
+\]
+\[
+ pr+s=111\cdot347829.
+\]
+Nevertheless \(U=3\mid9\) and \(p+4U=11\cdot3743\), so
+Theorem~\ref{thm:fixed-Q} gives
+\[
+ (a_U,R_U,U,h_U,r_U,s_U,\lambda_U)
+ =(11226,3743,3,3,1,3742,1)
+\]
+and
+\[
+ \boxed{\frac4{41161}
+ =\frac1{11226}+\frac1{462073386}+\frac1{123483}.}      \tag{26}
+\]
+Primality is certified by the Lucas witness \(22\):
+\[
+ 41160=2^3\cdot3\cdot5\cdot7^3,\qquad
+ 22^{41160}\equiv1\pmod{41161},
+\]
+while the residues at exponents \(41160/q\) for \(q=2,3,5,7\) are
+\[
+ 41160,\quad40429,\quad26424,\quad13707,
+\]
+and each residue minus one is coprime to \(41161\).
+
+By contrast, at the prime \(p=3049\), the original E state
+\[
+ (a,R,u,h,r,s,\kappa,D,\alpha,\beta)
+ =(806,175,20956,31,26,1,453,479,-144,-448)
+\]
+has ordered denominators \((806,14043,1113244782)\).  Here \(j=8,c=6\), and
+\[
+ \{U\bmod31:U\mid64\}=\{1,2,4,8,16\},
+\qquad c^2=36\equiv5\pmod{31}.
+\]
+Hence \(\mathcal U_{3049,31}\) is empty.  Primality is certified by the Lucas
+witness \(11\): \(11^{3048}\equiv1\pmod{3049}\), while the residues at
+exponents \(3048/q\) for \(q=2,3,127\) are \(3048,2516,3041\), each with
+predecessor coprime to \(3049\).  A negative-square coordinate alone does not
+force a fixed-\(Q\) return.

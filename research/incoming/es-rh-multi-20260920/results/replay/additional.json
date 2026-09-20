@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 17,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "82f62a70dfcd41ce1d9f7bff3a9574658c2b6508e1d71c458cd640ec94b9f762",
+  "script": "check_additional.py",
+  "status": "PASS",
+  "suite": "additional"
+}

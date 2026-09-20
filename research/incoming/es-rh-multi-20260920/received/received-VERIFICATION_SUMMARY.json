@@ -1,0 +1,152 @@
+{
+  "all_normal_optimized_receipts_identical": true,
+  "exact_checks_per_mode": 539,
+  "negative_controls_per_mode": 10,
+  "python": "3.13.5",
+  "scope": "Exact symbolic identities and bounded rational diagnostics; no Lean verification or evaluated native arithmetic moments.",
+  "status": "PASS",
+  "suite_count": 10,
+  "suites": [
+    {
+      "exact_checks_per_mode": 36,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "6afd3b8e57f41005069394dc8452740b2970354c4aaa93414d861af0d4e79021",
+      "script": "check_residue.py",
+      "status": "PASS",
+      "suite": "residue"
+    },
+    {
+      "exact_checks_per_mode": 19,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "b0ba4c062eddb6eeabae1a5d07aca621a38971caab54b3dd873235dbfc6b3ca8",
+      "script": "check_es_slice.py",
+      "status": "PASS",
+      "suite": "es_slice"
+    },
+    {
+      "exact_checks_per_mode": 88,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "d75c1e49d16278f5a5daa04962b6f1369f869c954de140f80d648f72dd4bc956",
+      "script": "check_gram_floor.py",
+      "status": "PASS",
+      "suite": "gram_floor"
+    },
+    {
+      "exact_checks_per_mode": 71,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "b4f204b9f6d384fcb006f9e73557275148d0c6d8c2aa938ce695f8004b505590",
+      "script": "check_lowrank.py",
+      "status": "PASS",
+      "suite": "lowrank"
+    },
+    {
+      "exact_checks_per_mode": 40,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "63130a8e4f7482d833432ad6c2db7593f523b231003c0e7c32e2cd5bbb99dac7",
+      "script": "check_gauss_bridge.py",
+      "status": "PASS",
+      "suite": "gauss_bridge"
+    },
+    {
+      "exact_checks_per_mode": 244,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "7f56adccc97de2909acd283e5f5c9e15d76100e2ccfd0c4cdf93a70d7eb21b99",
+      "script": "check_previous_bounds.py",
+      "status": "PASS",
+      "suite": "previous_bounds"
+    },
+    {
+      "exact_checks_per_mode": 4,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "aadd3b77c0af4074ee49d58b4a7d554f99af0863575910156523a5db639cc72e",
+      "script": "check_monodromy.py",
+      "status": "PASS",
+      "suite": "monodromy"
+    },
+    {
+      "exact_checks_per_mode": 5,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "f2737b1935c5cc7652a6f3e4bb89df48b0e9a519044c5204dff73f5bfa023ac4",
+      "script": "check_bernstein.py",
+      "status": "PASS",
+      "suite": "bernstein"
+    },
+    {
+      "exact_checks_per_mode": 15,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "844aeb2917bd1d999674e181b15169080f5a2c3247dedd29b8a341a829a2df97",
+      "script": "check_local_transport.py",
+      "status": "PASS",
+      "suite": "local_transport"
+    },
+    {
+      "exact_checks_per_mode": 17,
+      "identical_json": true,
+      "identical_stdout": true,
+      "modes": [
+        "normal",
+        "optimized"
+      ],
+      "negative_controls_per_mode": 1,
+      "receipt_sha256": "2b39a24f01543d9037712ed2ea1cb26a7eb8ff23e71bca0760e83ba947b13bbf",
+      "script": "check_additional.py",
+      "status": "PASS",
+      "suite": "additional"
+    }
+  ],
+  "sympy": "1.14.0"
+}

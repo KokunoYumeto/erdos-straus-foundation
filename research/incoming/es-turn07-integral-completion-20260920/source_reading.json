@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-20",
+  "parent_sources": [
+    {
+      "original_path": "/mnt/data/es_turn7_capacity_completion_20260920/core.tex",
+      "preserved_path": "antecedent/capacity_core.tex",
+      "file_id": "file_00000000a6f481f4a0d1e8c635d1cc08",
+      "bytes": 22241,
+      "sha256": "3bce8fcf88497a84c915b23c08ec057ef2f3323bdfd459c417709fbed9fe465b"
+    },
+    {
+      "original_path": "/mnt/data/es_turn7_capacity_completion_20260920/HANDOFF_TURN_7_REMAINDER.md",
+      "preserved_path": "antecedent/capacity_handoff.md",
+      "file_id": "file_00000000dc4c82108b3cc4f50f6b1eca",
+      "bytes": 2349,
+      "sha256": "54f92a32170363190114ecebffe534c23d1243ef3bbbe405fdc2322a981a250b"
+    },
+    {
+      "original_path": "/mnt/data/es_turn7_fabel_bridge_20260920/core.tex",
+      "preserved_path": "antecedent/reciprocal_core.tex",
+      "file_id": "file_00000000358c82108fbd2f30bd067c86",
+      "bytes": 21785,
+      "sha256": "ac1270fcdf747137ad74d6c2c6e3cabd406d1fd8cec878e5e38be248e890f853"
+    },
+    {
+      "original_path": "/mnt/data/es_turn7_fabel_bridge_20260920/root_orders.tex",
+      "preserved_path": "antecedent/reciprocal_root_orders.tex",
+      "file_id": "file_00000000bc208243be30b8b93cf36c42",
+      "bytes": 4411,
+      "sha256": "d916124f0b4f2ffbc33210e1ed31f50d673a81395f9c5323c8db2d1925324b43"
+    },
+    {
+      "original_path": "/mnt/data/Pasted markdown(20260920-025519).md",
+      "preserved_path": "antecedent/attached_continuation.md",
+      "file_id": "file_00000000725c8210a906fd180f65fb1a",
+      "bytes": 36760,
+      "sha256": "a7e949f5928481096976a916790c789f2ecaac67305310cc77d293f7ad4e3a1b",
+      "locators": [
+        "Section1 literal quartic and height estimates",
+        "Section2 equations(8)-(11), prime projector",
+        "Section3 equations(18)-(24), finite completion and local multiplicity"
+      ]
+    }
+  ],
+  "observed_foundation_revision": "2b5ab3b63471092624b4fcfac2ab2a0fbafa23a3",
+  "derived_here": [
+    "prime-local literal root clusters",
+    "normalization indices p^2 and p^9 and full conductors",
+    "defect-module T/eta actions",
+    "third-digit E boundary obstruction",
+    "integral defect of prime-only deck flip",
+    "labelled literal root interpolation and reciprocal quadratic twist",
+    "joint single-foreign-prime numerical source passing prescribed finite integrality tests"
+  ],
+  "antecedents": [
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "url": "https://arxiv.org/abs/1107.1010",
+      "locator": "Section 2, Propositions 2.2 and 2.6",
+      "use": "Type-I/II coordinate framework; formulas needed rederived."
+    },
+    {
+      "authors": "Bright, M. J.; Loughran, D.",
+      "year": 2020,
+      "title": "Brauer-Manin obstruction for Erdos-Straus surfaces",
+      "url": "https://arxiv.org/abs/1908.02526",
+      "journal": "Bulletin of the London Mathematical Society 52(4), 746-761",
+      "locator": "Theorem1.1, Corollary1.3, Theorems1.8-1.9 and AppendixA",
+      "use": "Context and original character comparison, not a new Brauer-Manin assertion."
+    },
+    {
+      "author": "Milne, J. S.",
+      "year": 2020,
+      "version": "3.08",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "locator": "Chapter7, Newton lemma and local extensions, printed pp119-130",
+      "use": "Local quadratic and Hensel background; exact constructions provided."
+    },
+    {
+      "author": "Sutherland, A. V.",
+      "year": 2017,
+      "title": "18.785 Lecture18: Dirichlet L-functions, primes in arithmetic progressions",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "locator": "Theorem18.1",
+      "use": "Infinitely many primes in explicitly reduced CRT progressions."
+    }
+  ],
+  "content_searches": [
+    "\"Erdos Straus\" \"normalization\" \"quartic\"",
+    "\"Erd\u0151s\u2013Straus\" \"p-adic\" \"conductor\"",
+    "\"Erdos Straus\" \"finite flat\"",
+    "\"Erdos Straus\" \"integral\" \"Hasse\""
+  ],
+  "search_outcome": "Primary Bright-Loughran paper relevant for context. No exhaustive priority determination. No result imported from secondary search summaries.",
+  "nonclaims": [
+    "Universal ES or TypeII existence",
+    "An all-place Hasse counterexample",
+    "Failure of adaptive complete-prime integrality testing",
+    "An original integer state from a rational control",
+    "Qp descent of arbitrary complex period matrices",
+    "A Lean build",
+    "Independent mathematical review",
+    "Historical priority"
+  ]
+}

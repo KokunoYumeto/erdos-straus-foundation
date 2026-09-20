@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "sources": [
+    {
+      "canonical_id": "arxiv:1107.1010v6",
+      "authors": ["Christian Elsholtz", "Terence Tao"],
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "source_file": "local-corpus://Documents/math/literature_primary/Elsholtz_Tao_1107_1010v6/egyptian-count18.tex",
+      "content_read": "Section 2, including the Type-I and Type-II divisor parametrizations and Propositions 2.2 and 2.6",
+      "programme_use": "Antecedent for the original E/M coordinates; the present reciprocal fibre, root-order and fixed-Q constructions are derived in full in the local sources."
+    },
+    {
+      "canonical_id": "hatcher:topology-of-numbers:2022",
+      "author": "Allen Hatcher",
+      "title": "Topology of Numbers",
+      "source_file": "local-corpus://Documents/Papors/OS/Topology of numbers Hatcher.pdf",
+      "content_read": "Section 6.4, pages 205-213, quadratic reciprocity and supplementary laws",
+      "programme_use": "Standard reciprocity facts used in the original-character lemma; their specialization to the retained ES factors is proved explicitly."
+    },
+    {
+      "canonical_id": "milne:algebraic-number-theory:3.08",
+      "author": "James S. Milne",
+      "title": "Algebraic Number Theory",
+      "source_file": "local-corpus://Documents/Papors/OS/Agebraic NR theory/Algebraic Nr theory MIlne.pdf",
+      "content_read": "Chapter 7, pages 119-130, Hensel lifting, local fields, unramified and ramified extensions",
+      "programme_use": "Standard local-field facts used to classify the quadratic factors; the required lift and the state-specific residues are displayed in the proof."
+    }
+  ],
+  "scope": "This ledger records sources actually read and used. It is not an exhaustive literature claim."
+}

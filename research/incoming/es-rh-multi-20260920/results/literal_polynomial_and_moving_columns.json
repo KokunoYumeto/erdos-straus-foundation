@@ -1,0 +1,33 @@
+{
+  "checks": [
+    "literal four-dimensional Jacobian",
+    "displayed common image 0",
+    "displayed common image 1",
+    "two source points remain distinct",
+    "positive moving metric 0,0",
+    "moving monic column 0,0",
+    "moving orthogonality 0,0",
+    "moving monic norm 0,0",
+    "positive moving metric -1/100,1/20",
+    "moving monic column -1/100,1/20",
+    "moving orthogonality -1/100,1/20",
+    "moving monic norm -1/100,1/20",
+    "positive moving metric 1/5,1/10",
+    "moving monic column 1/5,1/10",
+    "moving orthogonality 1/5,1/10",
+    "moving monic norm 1/5,1/10",
+    "degree-20 floor gain exceeds 10^427 exactly"
+  ],
+  "controls": [
+    "fixed-column substitution is harmless"
+  ],
+  "exact_checks": 17,
+  "negative_controls": 1,
+  "results": {
+    "moving_metric": "synthetic Gaussian-rational diagnostic, not native moment values",
+    "moving_parameter_cases": 3,
+    "polynomial": "literal EZ4/FC31, not an invented model"
+  },
+  "status": "PASS",
+  "suite": "literal_polynomial_and_moving_columns"
+}

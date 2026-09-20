@@ -1,0 +1,1899 @@
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/ATTEMPT.md b/research/incoming/es-turn07-fabel-bridge-20260920/ATTEMPT.md
+new file mode 100644
+index 0000000..f5419a7
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/ATTEMPT.md
+@@ -0,0 +1,34 @@
++# Attempt record
++
++Aim: use the new Zeta/Fabel inverse at the actual original ES source, and seek an
++arithmetic return without losing scale, chart signs, prime valuations or positivity.
++
++Read: the pinned GF1-GF28/FC32-FC55 calculation. Its inverse is over the stated
++complex polynomial source; it does not claim arithmetic ES occupancy.
++
++Tested connection: embed the actual three reciprocal roots and infinity in the
++existing quartic target, with coefficient U^3V exactly one. This works with full
++inverse formulas. The original character relations force ramified versus
++unramified factors at p. A preliminary coarse square-class split would have
++allowed seven rational M points, but the exact r/s character relation excludes
++that alternative. It is excluded by proof, not by a search heuristic.
++
++Further mechanism: the root orders have different integral index and conductor.
++Their unique labelled root interpolation supplies an exact rational map and an
++integral reverse, with the obligatory p-denominator calculated. The complex
++conductor and this arithmetic order conductor are explicitly different objects.
++
++Original arithmetic progress: negative-four-square shapes with the proved bounded
++square-divisor availability map to M at the same p. The entire lines alpha=-4
++and beta=-4 are covered without a shape-radius bound. Actual examples with c>1
++and an exhausted blocked source are retained.
++
++Stopping point: the Fabel target is constructed from an existing ES state. Its
++nonempty inverse cannot create that initial state. The arithmetic transfer removes
++branches of the E-only problem but does not make all remaining coefficients
++positive. The universal Turn7 milestone remains unproved.
++
++Attribution: the Fabel polynomial, global inverse and weighted-conductor
++conjugacy are inherited from the cited workbench, not rediscovered here.
++The classical Type-I/II parametrizations and local-field facts are credited.
++No historical priority claim is made for the new arithmetic specialization.
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/HANDOFF_TURN_7_REMAINDER.md b/research/incoming/es-turn07-fabel-bridge-20260920/HANDOFF_TURN_7_REMAINDER.md
+new file mode 100644
+index 0000000..2b01849
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/HANDOFF_TURN_7_REMAINDER.md
+@@ -0,0 +1,34 @@
++# Turn 7 is still the original universal-existence task
++
++The Zeta link is exact: actual reciprocal cubic targets of the existing Fabel
++map have local fibre algebras Qp^3 x K^2. K is ramified for E and unramified for M.
++Their Qp-point counts are both three. M cannot have a fully split fibre because
++its original r,s have opposite Legendre characters, not because a finite scan
++failed to find an example. E reduction loses four nonintegral branches; its
++root order has index p and conductor (p,p,1). A labelled root-level map E->M
++exists rationally and requires exactly a factor p in its local denominator.
++It does not lift to an isomorphism of the unchanged seven-point local algebras.
++
++The actual new arithmetic return removes alpha=-4c^2 and beta=-4c^2 whenever
++c divides j=(h+1)/4. In particular alpha=-4 and beta=-4 always return a middle
++state, even far outside all previous bounded shape radii. The return has a
++square middle grade. Preserve the original E fields, branch tag and c; two
++branch choices can return exactly the same M state.
++
++Do not infer initial ES occupancy from the Fabel inverse: every cubic target
++has an infinity point, including cubics with no rational root. Do not identify
++complex conductor conjugacy with a Qp model of its period matrix. Do not erase
++ramification by retaining only the number of local rational points.
++
++Mandatory controls:
++- p5209, E(1330,18620) has alpha=-16,beta=-576. Both c2-alpha and c12-beta map
++  to exactly M(a1316,u4), with new factor47 and old Q=h95 retained.
++- p3049, E(a806,u20956) has alpha=-144,c6,j8. The entire Div(64) cofactor box
++  fails at Q31. Its original shell R31 nevertheless has M(a770,u5).
++- p5 root interpolation has F=(17/12,-19/10,14/15), G=(25/8,-37/8,7/4).
++  This verifies exact denominator loss without an unspecified coordinate change.
++
++The next proof obligation remains: for every original hard p, produce an E or M
++state. The new maps start with an actual E state and therefore do not by themselves
++complete that obligation. Keep all remaining exterior shapes and the full middle
++atlas. Do not announce Turn 8 witness-guaranteed termination.
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/MORPHISMS.md b/research/incoming/es-turn07-fabel-bridge-20260920/MORPHISMS.md
+new file mode 100644
+index 0000000..4739dd5
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/MORPHISMS.md
+@@ -0,0 +1,55 @@
++# Typed maps, inverse domains and coefficient losses
++
++1. Original E/M divisor: (p,a,R,u,channel,beta_l) -> (h,r,s,k) by gcd(a,u).
++   Inverse a=hrs,u=hr^2,R=4a-p with original gate; ordered denominators retained.
++2. Reciprocal target: original state -> (p,t1,t2,t3,U), ti=p/xi,
++   U=(0,-4,sigma2,-sigma3). Inverse xi=p/ti on positive integer domain then
++   the channel-specific ordered divisor inverse. Forgetting p or order loses data.
++3. Shape connection: (p,alpha,beta,X,Y) -> original state using the predecessor's
++   literal inverse, then map 2. No isomorphism of unmarked cubic curves is asserted.
++4. Marked finite Fabel root: (t,A), A^2 f'(t)=1 -> (A,y,z,w) by GF7 with U0=0.
++   Inverse t=-(i+Ay)/A and original A. Both signs remain; multiple roots excluded.
++5. Infinity factor: one affine point with A=0,b=i. Its b=-i signed factor lies
++   outside this chart. Eight projective factor signs do not mean eight affine points.
++6. Exact algebraic certificate uses Q[i,A]/(i^2+1,A^2-1/d), a four-dimensional
++   algebra that may be reducible. It is not labelled a field without testing.
++7. Prime-local base change fixes one i in Q_p. E: two ramified quadratic factors
++   and three Q_p factors. M: two unramified quadratic factors and three Q_p factors.
++   Roots distinguish repeated isomorphic factors. Counting rational points loses
++   ramification. Complex conductor coordinates are not automatically Q_p-valued.
++8. Integral specialization: E first two finite root signs have coordinate
++   valuations (-1/2,1/2,1,1) and no affine integral reduction. M all seven signs
++   are integral over unramified extensions. Neither omission is a Jacobian zero.
++9. Root order evaluation: Z_p[T]/f_E -> {(z1,z2,z3):z1=z2 mod p}. Kernel zero,
++   index p; inverse by original root interpolation. M evaluation is onto Z_p^3.
++10. Order obstruction: Z_p^3 -> F_p, (z1,z2,z3)->z1-z2. Kernel is exactly the E
++    order; no Z_p-linear right inverse. The conductor in Z_p^3 is (p,p,1).
++    This is not the complex weighted conductor T_A in the Zeta programme.
++11. Labelled E/M root interpolation: unique degree<=2 F(x_i)=y_i, G(y_i)=x_i.
++    F has coefficient p-valuations (0,-1,-1), G is integral. Compositions are
++    identity modulo the respective cubics; their coefficient divisions are retained.
++12. Original negative-square E source: alpha=-4c^2 or beta=-4c^2 forces h=3 mod4.
++    Set j=(h+1)/4. Exact chosen-word domain c|j; no larger generated subgroup is
++    substituted for Div(j^2).
++13. alpha return uses U=c^2; beta return uses U=(j/c)^2; Q=h, R_M=(p+4U)/h,
++    a_M=(p+R_M)/4. Gcd(j,U) returns original middle h_M,r_M,s_M,lambda_M.
++    Output h_M is square. Restore M complement orientation explicitly when needed.
++14. Within each branch the target's Q recovers old h; U and j recover c. Source
++    fibres retain old r,s. The alpha fibre is the displayed divisor parametrization;
++    the beta fibre is the displayed finite discriminant-square parametrization.
++15. Across alpha(c1) and beta(c2), the same middle U occurs exactly when c1*c2=j.
++    Source-fibre pushforward sums original coefficients. Same-target differences
++    generate its kernel. A duplicate target is not a second distinct ES state.
++16. Original factor inventories change in a real return. Example p5209 introduces
++    target factor47 via the reconstructed integer. It is not an unused old factor.
++17. Nonempty Fabel target fibre alone has no arithmetic inverse: the cubic
++    T^3-4T^2+1 has an infinity preimage but no rational root. Domain tests remain.
++
++Every finite certificate retains ordered denominators, p, R, u and normalization.
++The names 'root-order conductor' and 'weighted complex conductor' refer to the
++distinct modules in maps 10 and 7; neither is silently substituted for the other.
++
++Ring directions in map 11 are contravariant: the point map F:E_roots->M_roots
++induces Q_p[T_M]/f_M -> Q_p[T_E]/f_E by T_M->F(T_E). Its inverse uses G.
++The integral inclusion of the E root order into the M root order corresponds
++to the reverse point map G; its image has index p.
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/README.md b/research/incoming/es-turn07-fabel-bridge-20260920/README.md
+new file mode 100644
+index 0000000..652728c
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/README.md
+@@ -0,0 +1,63 @@
++# Turn 7 continuation: the Zeta/Fabel inverse at an original ES prime
++
++Start with `preprint.pdf` (short proof) or `workbench.pdf` (full proof and fibres).
++Both have complete editable LaTeX. The source of the original four-dimensional
++polynomial is pinned below, not replaced by a similarly shaped map.
++
++## Established
++
++For every original first-half ES state at a prime p = 1 mod 4, its ordered
++reciprocal roots p/x_i define the literal Fabel target (0,-4,sigma2,-sigma3).
++The complete fibre has seven geometric affine points and exactly three Q_p
++rational points. E gives Q_p^3 times two copies of a ramified quadratic field;
++M gives Q_p^3 times two copies of the unramified quadratic field. The original
++M factor relation forces chi_p(rs)=-1, excluding a fully split local fibre.
++
++The integral E root order has index p in Z_p^3 and consists exactly of tuples
++whose first two coordinates agree mod p. Its conductor is (p,p,1). The M order
++is Z_p^3. A labelled quadratic root map E -> M requires exactly one p-adic
++power in its denominator; its reverse is integral. These are literal formulas,
++not an assertion that the seven-point field algebras are isomorphic.
++
++An original negative-four-square shape alpha=-4c^2 or beta=-4c^2 supplies an
++original same-prime M state on the exact domain c | (h+1)/4. Both full lines
++alpha=-4 and beta=-4 are therefore removed from the residual E-only problem,
++with no bound on their other shape coordinate. Source and target factors,
++colliding branch labels, and complete inverse fibres remain recorded.
++
++## Source and status
++
++Zeta source:
++`KokunoYumeto/zeta-function-research-reader`, revision
++`369f6ea9e0312bdf348ca9efd294735efc99c51d`,
++`workbenches/splitzero-tandem/continuations/20260920-fable-conductor/FABLE_TO_ORIGINAL_CONDUCTOR.tex`,
++blob `f777bb9f1434fa90f2f8bc762860048cc1d32bb4`, GF1-GF11 and FC32-FC35.
++The four-dimensional construction is the ES extension. Do not attribute its
++four labels to the original three-dimensional Alpöge-Fabel example.
++
++**The universal Turn 7 existence task remains unresolved.** This tranche does
++not claim that an initial ES state exists, that every negative-square word is
++available, or that the original complex period matrix has a Q_p-model. It does
++not advance to Turn 8 under an assumed occupancy statement.
++
++## Reproduction
++
++```
++python verify.py --bound 3000 --out certificates
++python -O verify.py --bound 3000 --out certificates_optimized
++python check_independent.py --input certificates --out certificates/independent.json
++pdflatex -interaction=nonstopmode -halt-on-error workbench.tex
++pdflatex -interaction=nonstopmode -halt-on-error preprint.tex
++```
++
++The verifier uses only the Python standard library. It checks all original E/M
++states, not only the new successful branch. The separate implementation imports
++none of it or any predecessor, enumerates primitive h,r,s directly, and checks
++the factor-incidence equations rather than the expanded Fabel polynomial.
++See `verification.json` for actual execution outcomes and hashes. Repeated runs
++are not independent mathematical reviews. No Lean build is asserted.
++
++The supplied patch adds a new directory; it does not rewrite predecessor claims.
++The previous archive is preserved separately in the cumulative handoff when its
++exact mounted bytes are available. That preservation is not a renewed audit of
++all earlier work.
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/check_independent.py b/research/incoming/es-turn07-fabel-bridge-20260920/check_independent.py
+new file mode 100644
+index 0000000..2ca8486
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/check_independent.py
+@@ -0,0 +1,224 @@
++#!/usr/bin/env python3
++"""Separate primitive-parameter enumeration and factor-incidence verification.
++Imports neither the main verifier nor preceding research software.
++"""
++from __future__ import annotations
++from fractions import Fraction
++from math import gcd,isqrt,prod
++from pathlib import Path
++from collections import Counter
++import argparse,json,hashlib,time
++CHECKS=0
++
++def req(v,label):
++    global CHECKS;CHECKS+=1
++    if not v:raise ArithmeticError(label)
++def isprime(n):return n>=2 and all(n%d for d in range(2,isqrt(n)+1))
++def fval(n,p):
++    req(n!=0,'nonzero derivative numerator');n=abs(n);e=0
++    while n%p==0:n//=p;e+=1
++    return e
++
++def primitive(p):
++    out=[]
++    for r in range(1,(p-1)//2+1):
++        for s in range(1,(p-1)//(2*r)+1):
++            if gcd(r,s)!=1:continue
++            rs=r*s
++            for h in range(p//(4*rs)+1,(p-1)//(2*rs)+1):
++                a=h*rs;R=4*a-p;u=h*r*r
++                for ch,num in [('E',p*r+s),('M',r+s)]:
++                    if num%R:continue
++                    k=num//R
++                    xyz=[a,h*s*k,p*h*r*k] if ch=='E' else [a,p*h*s*k,p*h*r*k]
++                    req(4*prod(xyz)==p*(xyz[0]*xyz[1]+xyz[0]*xyz[2]+xyz[1]*xyz[2]),'primitive reciprocal identity')
++                    out.append([ch,a,u,R,h,r,s,k]+xyz)
++    return sorted(out)
++
++def local_check(p,t):
++    ch,a,u,R,h,r,s,k,*xyz=t
++    C=[p*k,p*r,s] if ch=='E' else [p*k,r,s]
++    H=h*r*s*k
++    req(gcd(H,p)==1,'common reciprocal scale is a p-unit')
++    req([Fraction(v,H) for v in C]==[Fraction(p,x) for x in xyz],'full numerator and scale marking')
++    nums=[(C[j]-C[(j+1)%3])*(C[j]-C[(j+2)%3]) for j in range(3)]
++    vals=[fval(v,p) for v in nums]
++    squares={x*x%p for x in range(1,(p+1)//2)}
++    if ch=='E':
++        req(vals==[1,1,0],'independent E derivative valuations')
++        req(nums[2]*pow(H*H,-1,p)%p==16%p,'independent E split pair')
++        req((nums[0]//p)*pow(nums[1]//p,-1,p)%p in squares,'independent shared ramified square class')
++        return 'Qp^3 x ramified_quadratic^2'
++    req(vals==[0,0,0] and (r*s)%p not in squares,'independent M nonsquare first factor')
++    req(sum(v%p in squares for v in nums)==1,'independent M unique split pair')
++    return 'Qp^3 x unramified_quadratic^2'
++
++# Independent sparse two-generator quotient arithmetic.
++class Alg:
++    def __init__(self,d,z=0):
++        self.d=Fraction(d)
++        if isinstance(z,Alg):self.z=dict(z.z)
++        elif isinstance(z,dict):self.z={k:Fraction(v) for k,v in z.items() if v}
++        else:self.z={(0,0):Fraction(z)} if z else {}
++    def cast(self,x):return x if isinstance(x,Alg) else Alg(self.d,x)
++    def __add__(self,x):
++        x=self.cast(x);z=dict(self.z)
++        for k,v in x.z.items():z[k]=z.get(k,0)+v
++        return Alg(self.d,z)
++    __radd__=__add__
++    def __neg__(self):return Alg(self.d,{k:-v for k,v in self.z.items()})
++    def __sub__(self,x):return self+-self.cast(x)
++    def __rsub__(self,x):return self.cast(x)+-self
++    def __mul__(self,x):
++        x=self.cast(x);z={}
++        for (i,j),v in self.z.items():
++            for (k,l),w in x.z.items():
++                key=((i+k)%2,(j+l)%2)
++                value=v*w*(-1)**((i+k)//2)/self.d**((j+l)//2)
++                z[key]=z.get(key,0)+value
++        return Alg(self.d,z)
++    __rmul__=__mul__
++    def __pow__(self,n):
++        z=Alg(self.d,1)
++        for _ in range(n):z=z*self
++        return z
++    def __eq__(self,x):return self.z==self.cast(x).z
++
++def F(x):return Fraction(*x) if isinstance(x,list) else Fraction(x)
++def factor_map(q,I):
++    A,y,z,w=q
++    b=I+A*y;c=-I+2*A*y+A*A*z
++    d=-I*y-A*(I*z+2*y*y)-A*A*y*z
++    e=2*z-7*I*y*y+A*w
++    f=I*w+3*I*y**3-4*y*z+A*(6*I*y*y*z+w*y+4*y**4)+2*A*A*y**3*z
++    return [A,b,c,d,e,f]
++
++def fibre_records(ex):
++    for row in ex['local_algebras']:
++        target=[F(x) for x in row['source']['fibre']['target']]
++        points=row['exact_branches'];req(len(points)==7,'all signed affine branches')
++        for pt in points:
++            d=F(pt['d']) if pt.get('d') is not None else Fraction(1)
++            qq=[]
++            for co in pt['coordinates']:
++                z={(0,0):F(co[0]),(1,0):F(co[1]),(0,1):F(co[2]),(1,1):F(co[3])}
++                qq.append(Alg(d,z))
++            I=Alg(d,{(1,0):1});A,b,c,dd,e,f=factor_map(qq,I)
++            req(A*dd+b*c==1,'original factor incidence')
++            req(A**3*f-A*A*b*e+A*b*b*dd-b**3*c==1,'original resultant constant')
++            req([A*c,A*e+b*dd,A*f+b*e,b*f]==target,'independent original factor product')
++            if pt['root']=='infinity':req(A==0 and b==I,'only one infinity sign in chart')
++            else:
++                root=F(row['source']['fibre']['roots'][pt['root']])
++                req(b==-A*root and A*A*d==1,'all root and sign data retained')
++        ip=row['integral_branches'];p=ip['p'];mod=ip['modulus'];I=ip['i_embedding']
++        req(mod==p**ip['precision'] and (I*I+1)%mod==0,'fixed local embedding and precision')
++        req(len(ip['finite_points'])==2,'exactly two finite Qp points')
++        for pt in ip['finite_points']:
++            q=pt['coordinates'];A,b,c,dd,e,f=factor_map(q,I)
++            expected=[(v.numerator*pow(v.denominator,-1,mod))%mod for v in target]
++            req([x%mod for x in [A*c,A*e+b*dd,A*f+b*e,b*f]]==expected,'independent Hensel factor product')
++
++
++def fixed_fibre(p,h,c,side):
++    out=[]
++    for s in range(1,(p-1)//(2*h)+1):
++        for r in range(p//(4*h*s)+1,(p-1)//(2*h*s)+1):
++            if gcd(r,s)!=1:continue
++            a=h*r*s;u=h*r*r;R=4*a-p
++            if (p*r+s)%R:continue
++            k=(p*r+s)//R;v=h*s*s;D=(r+k)//s
++            if (v-R if side=='alpha' else v-D)!=-4*c*c:continue
++            out.append(['E',a,u,R,h,r,s,k,a,h*s*k,p*h*r*k])
++    return sorted(out)
++
++def check_crosses(p,records):
++    for row in records:
++        src=row['source'];ch,a,u,R,h,r,s,k,*_=src;c=row['c'];j=row['j'];side=row['side']
++        req(ch=='E' and j==(h+1)//4 and h%4==3,'retained crossing source')
++        req(h*s*s-(R if side=='alpha' else (r+k)//s)==-4*c*c,'actual negative-square shape')
++        req(row['available']==(j%c==0),'complete chosen-word availability domain')
++        if not row['available']:continue
++        U=c*c if side=='alpha' else (j//c)**2
++        RR=(p+4*U)//h;aa=(p+RR)//4;g=gcd(j,U)
++        H=g*g//U;rr=U//g;lam=j//g;ss=RR*lam-rr
++        target=['M',aa,U,RR,H,rr,ss,lam,aa,p*H*ss*lam,p*H*rr*lam]
++        req(target==row['target'],'independent crossing coordinates')
++        req(p<4*aa and 2*aa<p and aa*aa%U==0 and (U+aa)%RR==0,'crossing returns original M divisor')
++        req(gcd(rr,ss)==1 and RR*lam==rr+ss,'crossing primitive normalization')
++
++
++def order_transitions(ex):
++    for z in ex['root_order_transitions']:
++        p=z['p'];src=z['source'];dst=z['target']
++        xx=[Fraction(p,v) for v in src[8:11]];yy=[Fraction(p,v) for v in dst[8:11]]
++        ff=[F(c) for c in z['forward_coefficients']];gg=[F(c) for c in z['inverse_coefficients']]
++        req(all(sum(ff[k]*x**k for k in range(3))==y for x,y in zip(xx,yy)),'independent forward root isomorphism')
++        req(all(sum(gg[k]*y**k for k in range(3))==x for x,y in zip(xx,yy)),'independent inverse root isomorphism')
++        val=lambda c:fval(c.numerator,p)-fval(c.denominator,p)
++        req([val(c) for c in ff]==[0,-1,-1],'independent sharp interpolation denominator')
++        req(all(not c or val(c)>=0 for c in gg),'independent integral reverse interpolation')
++        req(z['source_order_index']==p and z['target_order_index']==1,'original order index record')
++        req(z['source_conductor_exponents']==[1,1,0],'root-order conductor')
++
++def finite_field_fibre(target,p):
++    I=next(x for x in range(1,p) if (x*x+1)%p==0);ans=[]
++    for A in range(p):
++        for y in range(p):
++            for z in range(p):
++                if (A**3*z+2*A*A*y-I*A-target[0])%p:continue
++                for w in range(p):
++                    aa,b,c,d,e,f=factor_map([A,y,z,w],I)
++                    if [(aa*c)%p,(aa*e+b*d)%p,(aa*f+b*e)%p,(b*f)%p]==[x%p for x in target]:
++                        ans.append([A,y,z,w])
++    return dict(p=p,i=I,target=target,points=ans)
++
++def main():
++    ap=argparse.ArgumentParser();ap.add_argument('--input',type=Path,default=Path('certificates'))
++    ap.add_argument('--out',type=Path,default=Path('independent.json'));args=ap.parse_args();start=time.monotonic()
++    data=json.loads((args.input/'scan.json').read_text());ex=json.loads((args.input/'examples.json').read_text())
++    ps=[p for p in range(5,data['bound']+1,4) if isprime(p)]
++    req(ps==[r['p'] for r in data['rows']],'complete original prime domain')
++    total=Counter()
++    for row in data['rows']:
++        p=row['p'];actual=primitive(p)
++        req(actual==row['states'],'complete primitive state replay at '+str(p))
++        c=Counter()
++        for st in actual:c[st[0]]+=1;c[local_check(p,st)]+=1
++        vec=0
++        req([a for a,fs in row['source_factorizations']]==list(range(p//4+1,(p-1)//2+1)),'complete source shells')
++        for a,fs in row['source_factorizations']:
++            req(prod(q**e for q,e in fs)==a and all(e>0 and isprime(q) for q,e in fs),'actual source factorization')
++            req(len({q for q,e in fs})==len(fs),'distinct prime indices')
++            vec+=prod(2*e+1 for q,e in fs)
++        req(vec==row['counts']['divisor_vectors'],'original exponent-box multiplicities')
++        check_crosses(p,row['crosses'])
++        for cross in row['crosses']:c['square_'+cross['side']+('_pass' if cross['available'] else '_blocked')]+=1
++        c['divisor_vectors']=vec
++        req(dict(c)==row['counts'],'all labelled counters')
++        total.update(c)
++    req(dict(total)==data['totals'],'complete totals')
++    for st in ex['states']:
++        req(isprime(st['p']),'fixed example primality by trial division')
++        vals=[st['channel'],st['a'],st['u'],st['R'],st['h'],st['r'],st['s'],st['k']]+st['denominators']
++        local_check(st['p'],vals)
++        xyz=st['denominators'];req(sum((Fraction(1,x) for x in xyz),Fraction())==Fraction(4,st['p']),'fixed example rational identity')
++    for row in ex['inverse_fibres']:
++        req(fixed_fibre(row['p'],row['h'],row['c'],row['side'])==row['states'],'complete original crossing inverse fibre')
++    fibre_records(ex)
++    order_transitions(ex)
++    p=3049;req([d for d in range(1,65) if 64%d==0]==[x['u'] for x in ex['full_blocked_cofactor']['rows']],'complete blocked cofactor square box')
++    req(all((p+4*d)%31 for d in range(1,65) if 64%d==0),'all blocked cofactor words fail')
++    E=finite_field_fibre([0,-4,0,0],17)
++    # M at p17,a5,u1: roots 0,12,9 modulo17.
++    M=finite_field_fibre([0,-4,6,0],17)
++    req(len(E['points'])==len(M['points'])==3,'literal affine finite-field fibre count')
++    result=dict(success=True,bound=data['bound'],primes=len(ps),totals=dict(total),checks=CHECKS,
++                finite_field_fibres=[E,M],elapsed_seconds=time.monotonic()-start,
++                scan_sha256=hashlib.sha256((args.input/'scan.json').read_bytes()).hexdigest(),
++                source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++                independence='Primitive parameter enumeration; sparse factor algebra; no verifier/predecessor import.',
++                universal_ES_proved=False)
++    args.out.parent.mkdir(parents=True,exist_ok=True);args.out.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
++    print(json.dumps(result,indent=2))
++if __name__=='__main__':main()
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/check_polynomial.py b/research/incoming/es-turn07-fabel-bridge-20260920/check_polynomial.py
+new file mode 100644
+index 0000000..90ed68f
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/check_polynomial.py
+@@ -0,0 +1,69 @@
++#!/usr/bin/env python3
++"""Whole-polynomial Gaussian-integer identities, without a symbolic dependency."""
++from __future__ import annotations
++from itertools import permutations
++from pathlib import Path
++import json,hashlib
++Z=(0,0,0,0)
++def ga(a,b):return (a[0]+b[0],a[1]+b[1])
++def gm(a,b):return (a[0]*b[0]-a[1]*b[1],a[0]*b[1]+a[1]*b[0])
++class Polynomial:
++    def __init__(self,z=0):
++        if isinstance(z,Polynomial):self.terms=dict(z.terms)
++        elif isinstance(z,dict):self.terms={k:v for k,v in z.items() if v!=(0,0)}
++        elif isinstance(z,int):self.terms={Z:(z,0)} if z else {}
++        else:raise TypeError(type(z))
++    def __add__(self,o):
++        o=Polynomial(o);r=dict(self.terms)
++        for k,v in o.terms.items():r[k]=ga(r.get(k,(0,0)),v)
++        return Polynomial(r)
++    __radd__=__add__
++    def __neg__(self):return Polynomial({k:(-v[0],-v[1]) for k,v in self.terms.items()})
++    def __sub__(self,o):return self+-Polynomial(o)
++    def __rsub__(self,o):return Polynomial(o)+-self
++    def __mul__(self,o):
++        o=Polynomial(o);r={}
++        for a,v in self.terms.items():
++            for b,w in o.terms.items():
++                k=tuple(x+y for x,y in zip(a,b));r[k]=ga(r.get(k,(0,0)),gm(v,w))
++        return Polynomial(r)
++    __rmul__=__mul__
++    def __pow__(self,n):
++        r=Polynomial(1)
++        for _ in range(n):r=r*self
++        return r
++    def derivative(self,j):
++        r={}
++        for k,v in self.terms.items():
++            if k[j]:
++                l=list(k);l[j]-=1;r[tuple(l)]=(v[0]*k[j],v[1]*k[j])
++        return Polynomial(r)
++    def __eq__(self,o):return self.terms==Polynomial(o).terms
++
++def main():
++    x=[]
++    for j in range(4):
++        e=[0]*4;e[j]=1;x.append(Polynomial({tuple(e):(1,0)}))
++    A,y,z,w=x;I=Polynomial({Z:(0,1)})
++    P=[A**3*z+2*A*A*y-I*A,
++       -A**3*y*y*z-2*I*A*A*y*z+A*A*w-2*A*A*y**3-10*I*A*y*y+3*A*z+y,
++       2*A**3*y**3*z+6*I*A*A*y*y*z+2*A*A*w*y+4*A*A*y**4+2*I*A*w-4*I*A*y**3-2*A*y*z+2*I*z+7*y*y,
++       2*A**3*y**4*z+8*I*A*A*y**3*z+A*A*w*y*y+4*A*A*y**5+2*I*A*w*y+7*I*A*y**4-10*A*y*y*z-4*I*y*z-w-3*y**3]
++    b=I+A*y;c=-I+2*A*y+A*A*z;d=-I*y-A*(I*z+2*y*y)-A*A*y*z
++    e=2*z-7*I*y*y+A*w;f=I*w+3*I*y**3-4*y*z+A*(6*I*y*y*z+w*y+4*y**4)+2*A*A*y**3*z
++    statements={'incidence':A*d+b*c==1,'resultant':A**3*f-A*A*b*e+A*b*b*d-b**3*c==1,
++                'factor_product':[A*c,A*e+b*d,A*f+b*e,b*f]==P}
++    J=[[v.derivative(j) for j in range(4)] for v in P];det=Polynomial(0)
++    for perm in permutations(range(4)):
++        s=(-1)**sum(perm[i]>perm[j] for i in range(4) for j in range(i+1,4));t=Polynomial(s)
++        for i in range(4):t=t*J[i][perm[i]]
++        det=det+t
++    statements['constant_Jacobian_minus_two']=det==-2
++    result={'success':all(statements.values()),'statements':statements,
++            'determinant_terms':[[list(k),list(v)] for k,v in det.terms.items()],
++            'arithmetic':'Sparse polynomials over Gaussian integers; all coefficients exact.',
++            'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
++    Path(__file__).with_name('polynomial_certificate.json').write_text(json.dumps(result,indent=2)+'\n')
++    print(json.dumps(result,indent=2))
++    if not result['success']:raise ArithmeticError('a global polynomial identity failed')
++if __name__=='__main__':main()
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/core.tex b/research/incoming/es-turn07-fabel-bridge-20260920/core.tex
+new file mode 100644
+index 0000000..489688b
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/core.tex
+@@ -0,0 +1,461 @@
++\section{Result and scope}
++This is a continuation of the unresolved Turn~7 existence task. The original
++four-dimensional Fabel polynomial in the Zeta workbench admits a literal
++arithmetic specialization at the reciprocal cubic of an Erd\H{o}s--Straus
++state. Its two channels have different local fibre algebras at the original
++prime: the exterior channel supplies ramified quadratic branches, whereas the
++middle channel supplies unramified quadratic branches. Both have exactly three
++rational local inverse points. The derivative, the full seven-point affine
++fibre, its integral specialization and the missing projective sign are retained.
++
++A separate constructive continuation extends the earlier bounded-shape E-to-M
++returns to arbitrary negative-four-square shape coordinates on their exact
++integer domain. In particular the entire lines $\alpha=-4$ and $\beta=-4$
++have original middle returns. Neither result produces the initial state at an
++arbitrary prime. No universal ES assertion, completed Turn~7 existence milestone,
++historical-priority determination or whole-programme analytic identification is
++claimed.
++
++The polynomial and global inverse formulas are antecedents from the Zeta source
++\cite[GF1--11, FC32--35]{Zeta}. Its four-dimensional map is the ES reader's
++extension, not an additional preimage attributed to the original
++three-dimensional Alp\"oge--Fabel example discussed by Tao \cite{Tao}.
++The classical Type-I/II coordinates are credited to \cite[\S2]{ET}.
++
++\section{Original arithmetic and the common reciprocal cubic}
++Fix a prime $p\equiv1\pmod4$. Retain an original first-half source
++\[
++ p/4<a<p/2,\quad R=4a-p,\quad u\mid a^2,
++ \quad E:R\mid4u+1,\quad M:R\mid u+a.
++\]
++For $a=\prod_l l^{e_l}$ retain $\beta_l=v_l(u)-e_l\in[-e_l,e_l]$.
++With $g=\gcd(a,u)$ the original normalization is
++\[
++ h=g^2/u,\quad r=u/g,\quad s=a/g,\qquad
++ a=hrs,\quad u=hr^2,\quad\gcd(r,s)=1.
++\]
++For E let $\kappa=(pr+s)/R$ and return
++$(x_1,x_2,x_3)=(a,hs\kappa,phr\kappa)$.
++For M let $\lambda=(r+s)/R$ and return
++$(x_1,x_2,x_3)=(a,phs\lambda,phr\lambda)$.
++Multiplication verifies the reciprocal identity. The ordered inverses are
++$u=a^2/(Rx_2-pa)$ and $u=pa^2/(Rx_2-pa)$, respectively. The M complement
++$u\mapsto a^2/u$ exchanges $r,s$ and the last two denominators; its orientation
++is retained rather than suppressed.
++
++Every normalization factor is a $p$-unit. For E use
++$pD+1=4hr\kappa$, with $D=(4u+1)/R=(r+\kappa)/s$; in particular $\kappa$
++need not be smaller than $p$. For M, $h,r,s<p$ and
++$\lambda=(r+s)/R<p$. The three denominators are distinct. In E,
++$\kappa>r$ and $pr>s$; in M, $r=s$ would force $r=s=1$ and $R\mid2$.
++Their first denominator is below $p/2$ and the other two are above $p/2$.
++
++\begin{lemma}[Original character distinction]\label{lem:character}
++For every original divisor $d\mid a^2$, $(d/R)=(d/p)$, with Jacobi symbol on
++the left. Every E state has $(h/p)=-1$. Every M state has $(rs/p)=-1$.
++\end{lemma}
++\begin{proof}
++For odd $l\mid a$, quadratic reciprocity and $R\equiv-p\pmod l$ give
++$(l/R)=(-1/l)(R/l)=(p/l)=(l/p)$. If $2\mid a$, then $R\equiv-p\pmod8$
++and the supplementary law gives $(2/R)=(2/p)$. Multiply over the actual
++exponents. At E, $u\equiv-1/4\pmod R$ and $R\equiv3\pmod4$, so
++$(u/p)=-1$. Since $u=hr^2$, this proves the first assertion.
++At M, $r\equiv-s\pmod R$ and all the factors are units, so
++$(r/p)=(r/R)=-(s/R)=-(s/p)$. This proves $(rs/p)=-1$.
++These are the classical laws in \cite[\S6.4]{Hatcher}, applied to the retained
++original factors.
++\end{proof}
++
++Define the labelled reciprocal roots and polynomial
++\[
++ t_i=p/x_i,\qquad f(T)=\prod_{i=1}^3(T-t_i)
++       =T^3-4T^2+\sigma_2T-\sigma_3.                 \tag{1}
++\]
++Then $2<t_1<4$ and $0<t_2,t_3<2$. The target for the \emph{existing} Fabel
++map is
++\[
++ \mathbf U=(0,-4,\sigma_2,-\sigma_3),\qquad
++ H_{\mathbf U}(U,V)=V\prod_i(U-t_iV).               \tag{2}
++\]
++The leading zero and the coefficient of $U^3V$, namely one, are fixed, not
++rescaled away. The inverse on the actual arithmetic domain is $x_i=p/t_i$,
++with its positivity and integrality tests and the original E/M divisor inverse.
++The coefficient target alone forgets the ordering; $p$ and the labels are kept.
++
++The preceding shape curve has different coordinates:
++$\alpha=v-R,\beta=v-D,X=v,Y=2a$, with the additional fixed-prime line
++$2Y=p+X-\alpha$. Its inverse is $a=Y/2$, $R=X-\alpha$,
++$D=X-\beta$, $u=(RD-1)/4$. Thus the connection to (2) is the explicit
++composition through this original state. No identification of two unmarked
++cubic curves is asserted.
++
++\section{The literal Fabel map and every inverse branch}
++Use $\xi$ for its first source coordinate, distinct from the original $a$.
++Fix $i^2=-1$ and put $P=(P_0,P_2,P_3,P_4)$, where
++\begin{align*}
++ P_0={}&\xi^3z+2\xi^2y-i\xi,\\
++ P_2={}&-\xi^3y^2z-2i\xi^2yz+\xi^2w-2\xi^2y^3-10i\xi y^2+3\xi z+y,\\
++ P_3={}&2\xi^3y^3z+6i\xi^2y^2z+2\xi^2wy+4\xi^2y^4
++             +2i\xi w-4i\xi y^3-2\xi yz+2iz+7y^2,\\
++ P_4={}&2\xi^3y^4z+8i\xi^2y^3z+\xi^2wy^2+4\xi^2y^5
++             +2i\xi wy+7i\xi y^4-10\xi y^2z-4iyz-w-3y^3.
++                                                               \tag{3}
++\end{align*}
++Its factor coordinates are
++\begin{align*}
++ b&=i+\xi y,&c&=-i+2\xi y+\xi^2z,\\
++ d&=-iy-\xi(iz+2y^2)-\xi^2yz,&e&=2z-7iy^2+\xi w,\\
++ f_0&=iw+3iy^3-4yz+\xi(6iy^2z+wy+4y^4)+2\xi^2y^3z.
++\end{align*}
++Writing $L=\xi U+bV$ and $C=cU^3+dU^2V+eUV^2+f_0V^3$, substitution gives
++\[
++ \xi d+bc=1,\quad C(-b,\xi)=1,\qquad
++ LC=P_0U^4+U^3V+P_2U^2V^2+P_3UV^3+P_4V^4.          \tag{4}
++\]
++For a simple finite root $t_i$ of (1), let
++$d_i=f'(t_i)=(t_i-t_j)(t_i-t_k)$. The full inverse is
++\[
++ \boxed{\xi^2=d_i^{-1},\quad y=-t_i-i/\xi,\quad
++ z=2t_i/\xi+3i/\xi^2,\quad
++ w=7it_i^2/\xi+(-4-17t_i)/\xi^2-13i/\xi^3.}         \tag{5}
++\]
++Both signs of $\xi$ are retained. The finite marked root is recovered by
++$t_i=-b/\xi$, and $C(-b,\xi)=\xi^2 f'(t_i)=1$.
++Coefficient comparison in (4) determines the quotient factor uniquely; the
++factor-coordinate inverse
++$y=(b-i)/\xi$, $z=(c+i-2\xi y)/\xi^2$,
++$w=(e-2z+7iy^2)/\xi$ then proves (5) and its exhaustiveness.
++
++At $\xi=0$ the single chart inverse is
++\[
++ q_\infty=(0,-4,\ i(112-\sigma_2)/2,
++                 -704+8\sigma_2+\sigma_3).          \tag{6}
++\]
++It has $b=i,c=-i$. The other signed projective infinity factor has $b=-i$
++and is outside this affine chart. Thus (2) has \emph{seven}, not eight,
++geometric affine preimages: six finite ones and (6). The missing infinity
++sign is different from any arithmetic field or integrality obstruction.
++
++For completeness the constant Jacobian statement used here is verified as
++follows. On $\xi\ne0$ use $(\xi,t,A,B)$, with $A=P_0,B=P_2$.
++The target equations are
++\[
++ P_3=\xi^{-2}-4At^3-3t^2-2Bt,\qquad
++ P_4=3At^4+2t^3+Bt^2-t\xi^{-2}.
++\]
++The full source inverse has determinant $-\xi^{-5}$ in those coordinates;
++the target determinant is $2\xi^{-5}$. Their ratio is $-2$.
++Polynomial continuation proves $\det DP=-2$ everywhere. These are the
++antecedent GF10--11 calculations \cite{Zeta}, with their constant and sign
++retained; the verifier independently expands the original derivative at every
++recorded inverse point.
++
++\section{The complete local algebra distinguishes E from M}
++Fix either root $i_p\in\mathbb Q_p$ of $-1$. Its existence follows by lifting
++a root modulo $p\equiv1\pmod4$. Normalize $v_p(p)=1$ on all extensions.
++The reduced coordinate algebra of the actual fibre is
++\[
++ \boxed{\mathcal A_{p,x}=\mathbb Q_p\ \times\!
++ \prod_{i=1}^3\mathbb Q_p[\xi_i]/(\xi_i^2-d_i^{-1}).}       \tag{7}
++\]
++The first factor is the single infinity chart. Formula (5) and its inverse
++identify the other factors; the derivative is nonzero, so there are no
++unrecorded nilpotents. This is the coordinate algebra of the fixed target,
++not a newly chosen seven-point model.
++
++\begin{theorem}[Prime-local arithmetic fibre]\label{thm:local}
++For every original first-half ES state at a prime $p\equiv1\pmod4$,
++$P^{-1}(\mathbf U)$ has exactly three $\mathbb Q_p$-rational points.
++More precisely,
++\[
++ \begin{array}{ll}
++ E:&\mathcal A_{p,x}\simeq\mathbb Q_p^3\times K_{\rm ram}\times K_{\rm ram},\\
++ M:&\mathcal A_{p,x}\simeq\mathbb Q_p^3\times K_{\rm unr}\times K_{\rm unr},
++ \end{array}                                                    \tag{8}
++\]
++where $K_{\rm ram}/\mathbb Q_p$ is a ramified quadratic extension and
++$K_{\rm unr}/\mathbb Q_p$ is the unramified quadratic extension. The repeated
++field factors retain their distinct root labels. There is no fully split
++seven-point local fibre in the original arithmetic domain.
++\end{theorem}
++\begin{proof}
++For E put $H=hrs\kappa$. Then
++\[
++ (t_1,t_2,t_3)=H^{-1}(p\kappa,pr,s),
++\]
++\[
++ (d_1,d_2,d_3)=H^{-2}\bigl(
++ p(\kappa-r)(p\kappa-s),\
++ -p(\kappa-r)(pr-s),\
++ (p\kappa-s)(pr-s)\bigr).                              \tag{9}
++\]
++All factors $h,r,s,\kappa$ are $p$-units. Also $p\nmid\kappa-r$: otherwise
++$4hr\kappa\equiv1\pmod p$ would make $4hr^2\equiv1$, contrary to
++Lemma~\ref{lem:character}. Hence
++\[
++ (v_p(d_1),v_p(d_2),v_p(d_3))=(1,1,0),\quad
++ d_1/d_2\equiv-1\pmod p,\quad d_3\equiv16\pmod p.       \tag{10}
++\]
++A unit congruent to a nonzero square modulo the odd prime $p$ is a square in
++$\mathbb Q_p$ by Hensel lifting. Thus $d_1/d_2$ is a square and the first
++two quadratic factors are copies of one ramified field (their defining
++square classes have odd valuation). The last quadratic splits into two
++rational points. Together with infinity this proves the E case.
++
++For M put $H=hrs\lambda$. Then
++\[
++ (t_1,t_2,t_3)=H^{-1}(p\lambda,r,s).
++\]
++The numerator differences are units: $r,s<p$, $r\ne s$, and $p\nmid r-s$.
++Modulo $p$, the derivative classes, up to the common square $H^{-2}$, are
++\[
++ \boxed{rs,\quad r(r-s),\quad s(s-r).}                  \tag{11}
++\]
++The first is a nonsquare by Lemma~\ref{lem:character}. Their product is
++$-r^2s^2(r-s)^2$, a square since $-1$ is a square modulo $p$. Thus exactly
++one of the three classes is a square, and exactly two are nonsquares.
++The two nonsquare units have square ratio and define the same unramified
++quadratic extension. The remaining quadratic gives two rational points.
++This proves (8) and the rational-point count.
++\end{proof}
++
++The local facts used in this proof can be made constructive. A root $b_n$
++of a unit $z$ modulo $p^n$ has the unique lift
++\[
++ b_{n+1}=b_n+p^n t,\qquad
++ t\equiv-\frac{b_n^2-z}{p^n}(2b_n)^{-1}\pmod p.
++\]
++Use the compatible rational residue of $z$ to compute the integer quotient.
++A nonsquare residue has irreducible separable quadratic reduction, giving the
++unramified degree-two extension; a class $p$ times a unit has square root of
++valuation $1/2$, giving ramification index two. These are the standard local
++field facts in \cite{Milne}; the displayed lift is also checked directly.
++
++An algebra isomorphism over $\mathbb Q_p$ must permute the primitive field
++factors. It cannot change their ramification indices. Therefore no such
++isomorphism carries the E fibre algebra to the M fibre algebra at the fixed
++prime. Equality of the rational-point counts (both three) does not give that
++isomorphism. This restricts an \emph{unchanged fibre algebra}; it does not
++prohibit an arithmetic map to a different target, constructed below.
++
++\section{Integral specialization and the nonproper boundary}
++For E, the exact numerator formula further gives
++\[
++ v_p(\sigma_2)=1,\quad v_p(\sigma_3)=2,\quad
++ v_p(\operatorname{Disc} f)=2,
++ \qquad\overline f(T)=T^2(T-4).                         \tag{12}
++\]
++Indeed $\sigma_2=p\{p\kappa r+s(\kappa+r)\}/H^2$ and
++$\kappa+r=sD$ is a unit. If $p\mid D$, then $RD=4u+1$ would make the
++nonresidue $u$ equal to the square $-1/4$ modulo $p$, impossible.
++The product gives $\sigma_3$ and the three differences give the discriminant.
++
++For each of the four signed branches over $t_1,t_2$, equation (5) has the exact
++valuation vector
++\[
++ \boxed{(v_p(\xi),v_p(y),v_p(z),v_p(w))
++                  =(-1/2,1/2,1,1).}                   \tag{13}
++\]
++The least terms are respectively $\xi$, $-i/\xi$, $3i/\xi^2$ and
++$-4/\xi^2$. The coefficient $3$ is a unit since $p\equiv1\pmod4$.
++There is no equal-valuation cancellation in these minima.
++These are genuine generic-field points but are not integral and have no affine
++specialization over the valuation ring. The two branches at $t_3$ and the
++infinity branch are integral.
++
++Over an algebraic closure of the residue field, the complete E special fibre
++has precisely the following three points:
++\[
++ (0,-4,56i_p,-704),
++ \quad(1/4,-4-4i_p,32+48i_p,-1152-384i_p),
++\]
++\[
++ (-1/4,-4+4i_p,-32+48i_p,-1152+384i_p).                  \tag{14}
++\]
++The double root zero has no resultant-one factor scaling; the simple root four
++has derivative sixteen. Thus the reduction from seven geometric generic points
++to three special points is a loss at the affine boundary, not a vanishing source
++Jacobian. The determinant $-2$ remains a unit.
++
++For M, all three roots and all derivative values are units or zero with distinct
++reductions: the roots are $0,r/H,s/H$. Every geometric inverse in (5) is integral
++over an unramified extension. Its geometric special fibre still has seven
++points; precisely three are rational over $\mathbb F_p$. Thus counting only
++rational special points also fails to distinguish the two channels.
++
++\paragraph{The exact relation to the original conductor.}
++The Zeta source constructs fixed invertible complex linear maps $\Phi,\Psi$
++with $T_A\Phi=\Psi$ and transported polynomials
++$\Phi P\Phi^{-1},\Psi P\Psi^{-1}$ \cite[FC32--35]{Zeta}.
++Consequently (5)--(6) transport point by point through that exact complex map,
++with its retained original Gram $G$ and norm $q^*Gq$. No Euclidean replacement,
++new coefficient fit or linear-conductor kernel is asserted.
++The $p$-adic statements here concern the original polynomial over $\mathbb Q(i)$
++after the specified embedding in $\mathbb Q_p$. Complex period entries in
++$\Psi$ are not thereby declared to have a $\mathbb Q_p$-model. Such a descent
++would be an additional theorem.
++
++\paragraph{A nonempty polynomial fibre is not an arithmetic solution.}
++The target $(0,-4,0,1)$ has the exact infinity inverse
++$(0,-4,56i,-705)$. Its cubic $T^3-4T^2+1$ has no rational root: the rational-root
++theorem leaves only $\pm1$, neither a root. Thus it cannot be the reciprocal
++cubic of three positive integer denominators at any rational $p$.
++The inverse formula alone does not supply the initial arithmetic target.
++
++\input{root_orders.tex}
++
++\section{An unbounded family of exact same-prime channel returns}
++Continue with the original E state, and set
++$\alpha=hs^2-R$, $\beta=hs^2-D$. The earlier shape identities give
++\[
++ h\mid\alpha\beta-1,\qquad p\equiv\alpha\pmod h,
++ \qquad p\beta\equiv1\pmod h.                         \tag{15}
++\]
++\begin{theorem}[Negative-four-square channel transfer]\label{thm:transfer}
++Suppose one marked coordinate is $-4c^2$, with $c>0$ integral. Then
++$h\equiv3\pmod4$ and $\gcd(h,c)=1$. Put $j=(h+1)/4$.
++If $c\mid j$, set
++\[
++ Q=h,\qquad
++ U=\begin{cases}c^2,&\alpha=-4c^2,\\(j/c)^2,&\beta=-4c^2,\end{cases}
++ \qquad R_M=(p+4U)/Q,\qquad a_M=(p+R_M)/4.              \tag{16}
++\]
++Then $U\mid j^2$, $Q\mid p+4U$, $0<R_M<p$, and (16) is an original M state.
++With $g_M=\gcd(j,U)$, its complete normalization is
++\[
++ \boxed{h_M=g_M^2/U,\quad r_M=U/g_M,\quad
++ \lambda_M=j/g_M,\quad s_M=R_M\lambda_M-r_M.}           \tag{17}
++\]
++The new $h_M$ is a square. The ordered return is
++$(a_M,ph_Ms_M\lambda_M,ph_Mr_M\lambda_M)$.
++Both entire shape lines $\alpha=-4$ and $\beta=-4$ are covered, without a bound
++on their other coordinate.
++\end{theorem}
++\begin{proof}
++Equation (15) makes $h$ odd and coprime to $c$. At every odd prime dividing $h$,
++either $p\equiv-4c^2$ or $p^{-1}\equiv-4c^2$. Reciprocity gives
++$(h/p)=(-1/h)$. Lemma~\ref{lem:character} makes this $-1$, so $h\equiv3\pmod4$.
++In the $\alpha$ case the required congruence is immediate.
++In the $\beta$ case, $p\equiv-(4c^2)^{-1}\pmod h$ and $4j\equiv1\pmod h$,
++so $p+4(j/c)^2\equiv0$. Availability follows from $c\mid j$ in both cases.
++
++For $\alpha$, the original inequality $R=hs^2+4c^2<p$ implies
++$4U<p-h<(h-1)p$. For $\beta$, use
++$4U\le4j^2=(h+1)^2/4$ and $p>2h$; for $h\ge3$,
++$(h+1)^2<8h(h-1)$, so again $4U<(h-1)p$.
++Thus $R_M<p$. Its residue is $3\pmod4$, proving the original first-half range.
++
++The valuation normalization of $U\mid j^2$ gives $h_Mr_M\lambda_M=j$,
++$h_Mr_M^2=U$, and $\gcd(r_M,\lambda_M)=1$. Also
++$a_M=R_Mj-U=h_Mr_Ms_M>0$.
++Since $r_M\le j<p$, the equation $QR_M=p+4U$ proves
++$\gcd(r_M,R_M)=1$, hence $\gcd(r_M,s_M)=1$.
++This is therefore precisely the original M normalization.
++
++For an explicit square-grade formula write $j=cm$, $d=\gcd(c,m)$.
++In the $\alpha$ case,
++$(h_M,r_M,\lambda_M)=(d^2,c/d,m/d)$; in the $\beta$ case it is
++$(d^2,m/d,c/d)$. This also proves that the original shared budget has not been
++used twice.
++\end{proof}
++
++The condition $c\mid j$ is the exact availability domain of the two selected
++cofactor words: $c^2\mid j^2$ if and only if $c\mid j$, and $j/c$ must be integral.
++It is not a hypothesis inserted into a universal existence theorem. Its failure
++can leave other words available, or the entire selected cofactor box empty.
++The square-divisor criterion in (16) is classical Type-II arithmetic; what is
++proved here is its supply from these actual exterior shapes.
++
++\subsection{Complete inverse fibres and coefficient collisions}
++The target retains its cofactor $Q=4h_Mr_M\lambda_M-1$, so it recovers the
++original $h$. In the $\alpha$ branch it recovers $c=\sqrt U$; in the $\beta$
++branch $c=j/\sqrt U$. The square roots here are positive integers.
++
++For fixed $(p,h,c,\alpha)$, put $N=(p+4c^2)/h$. Every original preimage is
++obtained by
++\[
++ s\mid N,\quad k=N/s,\quad s+k\equiv0\pmod4,\quad r=(s+k)/4,
++ \quad a=hrs,\quad u=hr^2,
++\]
++with the original coprimality and first-half inequalities. Conversely
++$4rs-s^2=N$ follows directly from the shape, so this is the full fibre.
++
++For fixed $(p,h,c,\beta)$, put $F=(4c^2p+1)/h$. For
++$1\le s\le\lfloor(p-1)/(2h)\rfloor$, set
++\[
++ D=hs^2+4c^2,\qquad \Delta_s=s^2(D^2-p)-F.
++\]
++Keep exactly the positive squares $k^2=\Delta_s$ for which
++$sD-k$ is positive and even, and set $r=(sD-k)/2$, $\kappa=sD-r$.
++The original coprimality and range tests complete the fibre. This comes from
++$4hr(sD-r)=pD+1$ and $k=\kappa-r>0$, so both directions are proved.
++
++Within each marked branch, $c$ is recovered. Across an $\alpha$ branch with
++$c_1$ and a $\beta$ branch with $c_2$, the selected target divisor is the same
++exactly when $c_1c_2=j$. Different original sources in any one fibre remain
++separate integer coefficients. Pushing them to one target sums those coefficients;
++the kernel is generated by their same-target differences. No injectivity or
++one-to-one state count is claimed after those records are discarded.
++
++\subsection{An actual transition, with local ramification changed}
++At the hard prime $p=5209$, the original E state is
++\[
++ (a,R,u,h,r,s,\kappa)=(1330,111,18620,95,14,1,657).
++\]
++Its shape is $(-16,-576)$, so the two selected branches have $c_1=2,c_2=12$
++and $j=24$. Both supply the \emph{same} target $U=4$. Formula (17) gives
++\[
++ (a_M,R_M,u_M,h_M,r_M,s_M,\lambda_M)=(1316,55,4,4,1,329,6),
++\]
++\[
++ \boxed{\frac4{5209}=\frac1{1316}+\frac1{41130264}+\frac1{125016}.}   \tag{18}
++\]
++The original E box uses primes $2,5,7,19$. Its M target uses $2,7,47$; the
++factor $47$ is part of the reconstructed integer, not an available original
++E factor silently adjoined. At this same prime the original Fabel fibre changes
++from ramified to unramified by Theorem~\ref{thm:local}, because the target cubic
++has changed through an actual arithmetic return. No local algebra isomorphism
++between the unchanged fibres is being asserted.
++
++A different hard example is
++\[
++ p=4561,\quad(a,R,u,h,r,s,\kappa)=(1593,1811,43011,59,27,1,68),
++ \quad\beta=-36.
++\]
++Here $c=3,j=15$ returns
++\[
++ (a_M,R_M,u_M,h_M,r_M,s_M,\lambda_M)=(1160,79,25,1,5,232,3),
++\]
++with denominators $(1160,3174456,68415)$.
++
++At the hard prime $p=3049$, the original E state
++$(a,R,u,h,r,s,\kappa)=(806,175,20956,31,26,1,453)$ has
++$\alpha=-144$, hence $c=6,j=8$. The selected $U=36$ is unavailable in $j^2=64$.
++More strongly, the entire cofactor box has divisors
++$1,2,4,8,16,32,64$, none satisfying $31\mid3049+4U$ (the required residue
++is $5\pmod{31}$). A different original shell has the middle state
++$(a,R,u,h,r,s,\lambda)=(770,31,5,5,1,154,5)$.
++This is an exact local obstruction, not an ES counterexample.
++
++\section{Verification, source distinctions and remaining task}
++The release verifier enumerates the complete first-half boxes for all primes
++$p\equiv1\pmod4$ through its declared bound, checks every labelled E/M state,
++its ordered identity, the local field signatures, and every present negative-square
++crossing. It evaluates (3) on all seven exact branches of representative fibres
++in the four-dimensional rational algebra generated by $i$ and $\xi$; it does not
++assume that this algebra is a field. It computes the original Jacobian by exact
++first-order arithmetic and checks the unit-root lifts modulo $p^4$.
++
++The separate program imports none of the main implementation or predecessor
++software. It enumerates primitive $h,r,s$ to recover the full state lists,
++checks the factor-coordinate product (4), independently enumerates the inverse
++crossing fibres, and exhausts the original affine polynomial fibre over
++$\mathbb F_{17}$ at both special targets. Execution receipts distinguish these
++checks from a mathematical review or a Lean build.
++
++The positive progress is an explicit same-prime return on unbounded shape lines,
++and an exact local arithmetic meaning for the inverse branches read in the Zeta
++workbench. The root-field signature does not prove that an ES reciprocal target
++exists, nor that every remaining exterior shape reaches a middle state.
++Turn~7's universal positive-coefficient obligation remains unresolved. We do not
++advance to Turn~8 under an assumed occupancy statement.
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/lean_plan.md b/research/incoming/es-turn07-fabel-bridge-20260920/lean_plan.md
+new file mode 100644
+index 0000000..5efe50f
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/lean_plan.md
+@@ -0,0 +1,27 @@
++# Exact Lean-ready dependencies; no Lean build asserted
++
++1. Define labelled original E/M states with p prime, p=1 mod4, complete a-square
++   exponent box and strict first-half range. Verify ordered denominator identities.
++2. Derive the original primewise Jacobi comparison. Prove E chi(h)=-1 and
++   M chi(r*s)=-1; include the factor2 supplementary case.
++3. Define reciprocal cubic and four-dimensional polynomial over Q(i). Verify
++   factor-incidence identities, root-derivative scaling and single infinity chart.
++4. Establish the seven-point finite reduced algebra by the explicit inverse,
++   including both signs and no spurious multiple-root inverse.
++5. In Q_p with p=1 mod4 and chosen i, prove the unit/odd valuation quadratic
++   classification using Hensel lifting and finite residue extensions.
++6. Calculate E derivative valuations and M unit characters, then derive the two
++   labelled algebra decompositions, each with exactly three rational local points.
++7. Formalize E nonintegral coordinate valuations and special fibre count; M has
++   an unramified integral seven-point model. Never import global ES occupancy.
++8. Evaluate the integral root orders in Z_p^3; prove image congruence, index p,
++   conductor (p,p,1), and exact no-splitting sequence to F_p.
++9. Define rational interpolation and its inverse, prove sharp p-denominator and
++   congruences modulo the original cubics. Distinguish root and full-fibre algebras.
++10. Derive the negative-square E domain, h=3 mod4, and the original chosen-square
++    return to M. Prove its strict ranges and gcd normalization from prime p.
++11. Give full inverse fibres and source counting-module pushforwards. Record
++    cross-branch collision c1*c2=j and original exponent rebuilding.
++12. Check fixed examples with exact integer/Fraction arithmetic, primality by
++    bounded trial division, and all source ranges. The finite prime bound3000
++    is regression scope, not a theorem about all primes.
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/preprint.tex b/research/incoming/es-turn07-fabel-bridge-20260920/preprint.tex
+new file mode 100644
+index 0000000..d593fbc
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/preprint.tex
+@@ -0,0 +1,221 @@
++\documentclass[11pt,reqno]{amsart}
++\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
++\usepackage[a4paper,margin=24mm]{geometry}
++\usepackage{amsmath,amssymb,amsthm,mathtools,microtype,xurl}
++\usepackage[hidelinks]{hyperref}
++\newtheorem{theorem}{Theorem}\newtheorem{lemma}{Lemma}
++\title[Prime-local Fabel fibres and channel transfer]{Three local inverse points, two ramification types,\newline and an original Erd\H{o}s--Straus channel transfer}
++\author{The Clankers}\date{20 September 2026}
++\begin{document}
++\begin{abstract}
++The reciprocal cubic of an original prime Erd\H{o}s--Straus state is a literal
++target of the four-dimensional ES--Fabel polynomial. Its seven-point affine
++fibre always has exactly three rational points over the original local field.
++Exterior states give two ramified quadratic factors; middle states give two
++unramified quadratic factors. The original prime character distinguishes the
++algebras although rational-point counts do not. An explicit negative-square
++shape transfer changes that arithmetic target at the same prime and returns a
++middle state. Universal existence is not asserted.
++\end{abstract}
++\maketitle
++
++\section{Original coordinates}
++Fix a prime $p\equiv1\pmod4$, $p/4<a<p/2$, $R=4a-p$, and $u\mid a^2$.
++The original gates are $E:R\mid4u+1$ and $M:R\mid u+a$.
++Set $g=\gcd(a,u)$, $(h,r,s)=(g^2/u,u/g,a/g)$. For E let
++$\kappa=(pr+s)/R$ and $(x_1,x_2,x_3)=(a,hs\kappa,phr\kappa)$;
++for M let $\lambda=(r+s)/R$ and $(x_1,x_2,x_3)=(a,phs\lambda,phr\lambda)$.
++These are the classical Type-I/II coordinates \cite[\S2]{ET}.
++They give $4/p=\sum_i1/x_i$, and their ordered inverses are
++$u=a^2/(Rx_2-pa)$ and $u=pa^2/(Rx_2-pa)$.
++
++\begin{lemma}
++Every original square divisor has $(u/R)=(u/p)$. In particular E implies
++$(h/p)=-1$, and M implies $(rs/p)=-1$.
++\end{lemma}
++\begin{proof}
++For odd $l\mid a$, reciprocity gives $(l/R)=(-1/l)(R/l)=(p/l)=(l/p)$.
++For $2\mid a$, use $R\equiv-p\pmod8$ and the supplementary law. Multiply over
++the original exponents. The E target is $-1/4$; for M use
++$r\equiv-s\pmod R$ and $(-1/R)=-1$.
++\end{proof}
++
++The ordered reciprocal roots $t_i=p/x_i$ are distinct and have sum four.
++Retain the cubic and its quartic target
++\[
++ f(T)=\prod_i(T-t_i)=T^3-4T^2+\sigma_2T-\sigma_3,
++ \qquad H(U,V)=V\prod_i(U-t_iV).
++\]
++The coefficient map to the existing ES--Fabel polynomial is
++$\mathbf U=(0,-4,\sigma_2,-\sigma_3)$. Its full marked arithmetic inverse is
++$x_i=p/t_i$, subject to positive integrality, followed by the original divisor
++inverse above. Neither $p$ nor the ordering is discarded.
++
++\section{The original polynomial fibre}
++For the exact four-dimensional polynomial $P$ in \cite[GF1]{Zeta}, its factor
++coordinates have $L=\xi U+bV$ and $C=cU^3+dU^2V+eUV^2+f_0V^3$, with
++$\xi d+bc=1$ and $C(-b,\xi)=1$; their product is
++$P_0U^4+U^3V+P_2U^2V^2+P_3UV^3+P_4V^4$.
++For $d_i=f'(t_i)$, the full finite inverse is
++\[
++ \xi_i^2=d_i^{-1},\quad y_i=-t_i-i/\xi_i,\quad
++ z_i=2t_i/\xi_i+3i/\xi_i^2,
++\]
++\[
++ w_i=7it_i^2/\xi_i+(-4-17t_i)/\xi_i^2-13i/\xi_i^3.
++                                                               \tag{1}
++\]
++Both signs occur. This follows by factoring at $t_i=-b/\xi_i$ and evaluating
++$C(-b,\xi_i)=\xi_i^2f'(t_i)$. The factor-coordinate inverse in
++\cite[GF5--7]{Zeta} gives (1). The single infinity chart is
++\[
++ (0,-4,i(112-\sigma_2)/2,-704+8\sigma_2+\sigma_3).       \tag{2}
++\]
++The opposite projective factor sign at infinity is absent from this particular
++affine chart. Thus there are seven geometric points. The polynomial Jacobian
++is identically $-2$; its original constant is retained.
++
++Fix either embedding $i\mapsto i_p\in\mathbb Q_p$. The complete fibre algebra is
++\[
++ \mathcal A=\mathbb Q_p\times
++ \prod_{i=1}^3\mathbb Q_p[\xi_i]/(\xi_i^2-d_i^{-1}).       \tag{3}
++\]
++
++\begin{theorem}
++Every original E or M state has exactly three $\mathbb Q_p$-rational inverse
++points. Its complete algebra is
++\[
++ E:\ \mathbb Q_p^3\times K_{\rm ram}^2,
++ \qquad M:\ \mathbb Q_p^3\times K_{\rm unr}^2,
++\]
++with respectively a ramified and the unramified quadratic extension. The two
++copies retain different original root labels.
++\end{theorem}
++\begin{proof}
++For E let $H=hrs\kappa$. The roots are $(p\kappa,pr,s)/H$, with $H$ a $p$-unit.
++The difference $\kappa-r$ is also a unit: otherwise $pD+1=4hr\kappa$ would
++make the nonresidue $hr^2$ equal to $1/4\pmod p$.
++Consequently the derivative valuations are $(1,1,0)$,
++$d_1/d_2\equiv-1\pmod p$ and $d_3\equiv16\pmod p$.
++Unit square residues lift to squares, so the first two factors are copies of one
++ramified quadratic field and the last splits.
++
++For M let $H=hrs\lambda$. The roots are $(p\lambda,r,s)/H$, with distinct
++reductions. Up to $H^{-2}$, their derivatives reduce to
++$rs,r(r-s),s(s-r)$. The first is a nonsquare by the lemma. Their product is the
++square $-r^2s^2(r-s)^2$, so precisely one is a square and two are nonsquare units.
++The latter define the same unramified quadratic field. Add the single infinity
++factor in both cases. The standard square-unit lifting step is explicitly
++$b_{n+1}=b_n+p^n t$, with
++$t=-(b_n^2-z)p^{-n}(2b_n)^{-1}\pmod p$.
++\end{proof}
++
++In E, $\overline f=T^2(T-4)$, $v_p(\sigma_2,\sigma_3,\operatorname{Disc}f)
++=(1,2,2)$. Formula (1) gives valuation vector
++$(-1/2,1/2,1,1)$ for all four branches above the first two roots. They are not
++integral. Only the two branches at four and the infinity point specialize,
++leaving three geometric special points. In M all seven branches are integral
++over unramified extensions, and seven geometric special points remain.
++Both special fibres nevertheless have three $\mathbb F_p$-rational points.
++The difference is not a zero source Jacobian: $-2$ is still a unit.
++
++The original complex conductor conjugacy in \cite[FC32--35]{Zeta} transports
++all seven points and their original norms. It is not thereby a $\mathbb Q_p$-model
++of its complex period matrix. Here the arithmetic statements apply to the literal
++polynomial over $\mathbb Q(i)$ with the specified embedding.
++
++
++\paragraph{The integral root order records the lost arithmetic.}
++Evaluation identifies the E root order with
++$\{z\in\mathbb Z_p^3:z_1\equiv z_2\pmod p\}$, of index $p$ and conductor
++$p\mathbb Z_p\times p\mathbb Z_p\times\mathbb Z_p$; the M order is all
++$\mathbb Z_p^3$. Necessity follows from congruence of the first two E roots.
++Sufficiency follows by integral interpolation at those two roots and a correction
++by $(T-t_1)(T-t_2)$ at the separated third root.
++
++For any same-prime E and M root triples $x_i,y_i$, the unique labelled quadratic
++interpolation $F(x_i)=y_i$ is
++$F(T)=\sum_i y_i(T-x_j)(T-x_k)/[(x_i-x_j)(x_i-x_k)]$.
++It has coefficient valuations $(0,-1,-1)$ and $pF\bmod p$ is a nonzero multiple
++of $T(T-4)$. The reverse interpolation is integral. The claims follow directly
++from the derivative valuations: after multiplying by $p$, only the second
++summand survives modulo $p$. Thus a rational root-level isomorphism and its
++precise integral obstruction both exist. This root-order conductor is distinct
++from the weighted complex conductor in the Zeta source.
++
++\section{Changing the arithmetic target at the same prime}
++For E put $v=hs^2$, $D=(4u+1)/R$, $\alpha=v-R$, $\beta=v-D$. Direct reduction gives
++\[
++ h\mid\alpha\beta-1,\qquad p\equiv\alpha\pmod h,
++ \qquad p\beta\equiv1\pmod h.
++\]
++\begin{theorem}
++If $\alpha=-4c^2$ or $\beta=-4c^2$ for a positive integer $c$, then
++$h\equiv3\pmod4$ and $\gcd(h,c)=1$. Put $j=(h+1)/4$.
++On the exact domain $c\mid j$, set
++\[
++ Q=h,\quad U=c^2\ (\alpha\text{ case}),\quad
++ U=(j/c)^2\ (\beta\text{ case}),\qquad
++ R_M=(p+4U)/h,\quad a_M=(p+R_M)/4.
++\]
++This is an original M state with
++\[
++ g_M=\gcd(j,U),\quad
++ (h_M,r_M,s_M,\lambda_M)=
++ (g_M^2/U,U/g_M,R_Mj/g_M-U/g_M,j/g_M).
++\]
++In particular both entire lines $\alpha=-4$ and $\beta=-4$ have middle returns.
++\end{theorem}
++\begin{proof}
++The shape congruences make $h$ odd and coprime to $c$. Reciprocity gives
++$(h/p)=(-1/h)=-1$, hence $h=4j-1$. In the first case $h\mid p+4c^2$.
++In the second, $p\equiv-(4c^2)^{-1}$ and $4j\equiv1\pmod h$ give
++$h\mid p+4(j/c)^2$. The stated divisibility is precisely what puts the
++chosen word in the actual box $U\mid j^2$.
++For the first case $4U<p-h$ follows from the original $R=hs^2+4c^2<p$.
++For the second, $4U\le(h+1)^2/4<(h-1)p$, since $p>2h$ and $h\ge3$.
++Thus $0<R_M<p$. The displayed gcd normalization gives $a_M=h_Mr_Ms_M$,
++$U=h_Mr_M^2$ and $R_M\lambda_M=r_M+s_M$.
++Any prime dividing $r_M,R_M$ would divide $p$, impossible because $r_M\le j<p$.
++The normalization is primitive and the ordered M identity follows. With
++$j=cm$, $d=\gcd(c,m)$, the new grade is explicitly $h_M=d^2$.
++\end{proof}
++
++At the hard prime $p=5209$, the original E state
++$(a,R,u,h,r,s,\kappa)=(1330,111,18620,95,14,1,657)$ has shape
++$(-16,-576)$. Its two marked returns ($c=2$ on $\alpha$, $c=12$ on $\beta$)
++coincide at $j=24,U=4$. The M state is $(a_M,R_M,u_M,h_M,r_M,s_M,\lambda_M)
++=(1316,55,4,4,1,329,6)$, giving
++\[
++ \frac4{5209}=\frac1{1316}+\frac1{41130264}+\frac1{125016}.
++\]
++The actual new factorization contains $47$, absent from the old E source. The
++local fibre changes from ramified to unramified because the target has changed,
++not through an impossible isomorphism of the unchanged local algebras.
++
++Availability cannot be suppressed. At $p=3049$, the E state
++$(806,175,20956,31,26,1,453)$ has $\alpha=-144$, but $c=6$ does not divide $j=8$.
++No divisor of $64$ is the required $5\pmod{31}$, so the entire selected cofactor
++box is empty. Another original M shell, $a=770,u=5,R=31$, succeeds.
++
++\section{Proof boundary and certificate}
++The full source lists both inverse fibre parametrizations and all coefficient
++collisions. The standard-library certificate retains the original exponents,
++ordered denominators, all signed Fabel coordinates, Jacobian checks and Hensel
++lifts. A separate primitive-parameter implementation reproduces the complete
++bounded source and uses the original factor equations instead of the expanded
++polynomial. An inverse at an arbitrary cubic target does not prove an ES state:
++$(0,-4,0,1)$ has infinity inverse $(0,-4,56i,-705)$ but its cubic has no rational
++root. Universal original target supply remains unresolved.
++
++\begin{thebibliography}{9}
++\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
++to the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc.,94},
++50--105. \texttt{arXiv:1107.1010}, \S2.
++\bibitem{Zeta} Split-Zero programme. (2026). \emph{The ES--Fable inverse
++correspondence in the original weighted conductor}. GF1--11, GF16--18,
++FC32--35. Zeta workbench revision \texttt{369f6ea9e0312bdf348ca9efd294735efc99c51d},
++source blob \texttt{f777bb9f1434fa90f2f8bc762860048cc1d32bb4}.
++The four-dimensional polynomial and inverse are antecedents, not newly claimed here.
++\end{thebibliography}
++\end{document}
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/root_orders.tex b/research/incoming/es-turn07-fabel-bridge-20260920/root_orders.tex
+new file mode 100644
+index 0000000..ef1e31d
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/root_orders.tex
+@@ -0,0 +1,86 @@
++\section{The exact integral root order and its obligatory denominator}
++This is a further arithmetic distinction between the coefficient target and its
++split roots. Let $\mathcal O_f=\mathbb Z_p[T]/(f)$, observed by evaluation at the
++three original labelled roots. All are integral, and $f$ is monic.
++
++\begin{theorem}[Root-order defect and exact interpolation loss]
++For an original E state,
++\[
++ \boxed{\mathcal O_E\simeq
++ \{(z_1,z_2,z_3)\in\mathbb Z_p^3:z_1\equiv z_2\pmod p\}.}       \tag{15a}
++\]
++Its index in $\mathbb Z_p^3$ is $p$ and its conductor ideal in that ring is
++$p\mathbb Z_p\times p\mathbb Z_p\times\mathbb Z_p$.
++For M, evaluation gives $\mathcal O_M\simeq\mathbb Z_p^3$.
++
++Given any original E and M state at the same prime, let $x_i$ and $y_i$ be their
++ordered reciprocal roots. There is a unique polynomial $F$ of degree at most
++two taking $x_i$ to $y_i$, and a unique $G$ of degree at most two taking $y_i$
++to $x_i$. Their exact formulas are
++\[
++ F(T)=\sum_i y_i\frac{(T-x_j)(T-x_k)}{(x_i-x_j)(x_i-x_k)},\qquad
++ G(T)=\sum_i x_i\frac{(T-y_j)(T-y_k)}{(y_i-y_j)(y_i-y_k)}.       \tag{15b}
++\]
++Writing coefficients in increasing degree, $F$ has exact $p$-valuations
++$(0,-1,-1)$, while $G\in\mathbb Z_p[T]$.
++Moreover $pF\bmod p$ is a nonzero scalar multiple of $T(T-4)$.
++The compositions satisfy $G(F(T))=T\pmod{f_E}$ and
++$F(G(T))=T\pmod{f_M}$.
++\end{theorem}
++\begin{proof}
++For E, $x_1-x_2$ has valuation one; both differences from $x_3$ are units.
++A polynomial over $\mathbb Z_p$ therefore has its first two values congruent
++modulo $p$. Conversely, for a tuple with that congruence, interpolation at
++$x_1,x_2$ is integral since its divided difference is integral. Its error at
++$x_3$ can be corrected by an integral multiple of $(T-x_1)(T-x_2)$, whose
++value there is a unit. This proves (15a). The quotient is exactly $\mathbb F_p$
++by $z\mapsto z_1-z_2\pmod p$. Multiplication by an arbitrary tuple preserves
++the congruence exactly when its first two coordinates are divisible by $p$,
++which proves the conductor. All three differences for M are units, giving its
++integral interpolation inverse.
++
++Formula (15b) is the original labelled interpolation. The E derivative
++valuations imply $pF\in\mathbb Z_p[T]$. It cannot be integral before that
++multiplication, since it takes two congruent arguments $x_1,x_2$ to the
++incongruent values $y_1,y_2$. In fact modulo $p$, only its second Lagrange
++summand survives after multiplication by $p$: $y_1$ is divisible by $p$,
++while the third denominator is a unit. Therefore
++\[
++ pF(T)\equiv (p y_2/d_2)T(T-4)\pmod p,
++\]
++with a nonzero coefficient. This proves valuation $-1$ for the linear and
++quadratic coefficients. The constant term is a unit: its second summand has
++valuation zero, and the first and third have positive valuation. The reverse
++interpolation has only unit denominators and integral numerators.
++Equality of each composition with $T$ at all three distinct labelled roots
++proves the two polynomial congruences.
++\end{proof}
++
++The exact sequence
++\[
++ 0\longrightarrow\mathcal O_E\longrightarrow\mathbb Z_p^3
++ \xrightarrow{\ z\mapsto z_1-z_2\bmod p\ }\mathbb F_p
++ \longrightarrow0
++\]
++has no $\mathbb Z_p$-linear right inverse, because the middle module is
++torsion-free. Tensoring with $\mathbb Q_p$ removes this index-$p$ quotient;
++that operation loses original integral information. This is the root-order
++conductor, explicitly distinct from the Zeta workbench's weighted linear
++conductor $T_A$. We do not identify their source modules.
++
++Thus there is a fully explicit rational root-level map between the two cubics,
++with a sharp integral obstruction and an integral reverse map. The lack of an
++isomorphism between their seven-point local fibre algebras is not described as
++unrelatedness. It is the additional quadratic-factor ramification in (8),
++which this root interpolation alone does not preserve.
++
++For a small complete illustration, at $p=5$ take the original E denominators
++$(2,4,20)$ and M denominators $(2,10,5)$. Their reciprocal root triples are
++$(5/2,5/4,1/4)$ and $(5/2,1/2,1)$. The exact maps are
++\[
++ \boxed{F(T)=\frac{14}{15}T^2-\frac{19}{10}T+\frac{17}{12},\qquad
++ G(T)=\frac74T^2-\frac{37}{8}T+\frac{25}{8}.}
++\]
++The first requires exactly one power of five in its local denominator;
++$5F\equiv3T(T-4)\pmod5$. The reverse is integral at five. Both ordered root
++triples and their original denominator inverses are retained in the certificate.
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/source_reading.json b/research/incoming/es-turn07-fabel-bridge-20260920/source_reading.json
+new file mode 100644
+index 0000000..0b107a6
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/source_reading.json
+@@ -0,0 +1,66 @@
++{
++  "date": "2026-09-20",
++  "zeta_input": {
++    "repo": "KokunoYumeto/zeta-function-research-reader",
++    "revision": "369f6ea9e0312bdf348ca9efd294735efc99c51d",
++    "path": "workbenches/splitzero-tandem/continuations/20260920-fable-conductor/FABLE_TO_ORIGINAL_CONDUCTOR.tex",
++    "blob": "f777bb9f1434fa90f2f8bc762860048cc1d32bb4",
++    "locators": [
++      "GF1-GF11",
++      "GF16-GF18",
++      "FC32-FC35",
++      "FC50-FC55"
++    ],
++    "use": "Exact original polynomial and complete signed inverse; original conductor conjugacy and its separate action correction."
++  },
++  "predecessor": {
++    "path": "es_turn7_shape_rigidity_20260919_r1/core.tex",
++    "file_id": "file_00000000cdc082108eb3564d1d2e8924",
++    "use": "Original shape, fixed-prime line and grade congruences; new transfer formulas are proved directly."
++  },
++  "primary_antecedents": [
++    {
++      "authors": "Elsholtz, C.; Tao, T.",
++      "year": 2013,
++      "arxiv": "1107.1010",
++      "locator": "Section2, Propositions2.2 and2.6",
++      "role": "Inherited TypeI/II coordinates."
++    },
++    {
++      "author": "Hatcher, A.",
++      "year": 2022,
++      "title": "Topology of Numbers",
++      "locator": "Section6.4",
++      "role": "Quadratic reciprocity and supplementary law."
++    },
++    {
++      "author": "Milne, J. S.",
++      "title": "Algebraic Number Theory",
++      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
++      "role": "Standard local-field background; all unit lifting and quadratic arguments needed are included.",
++      "year": 2020,
++      "version": "3.08, 19 July 2020",
++      "locator": "Chapter 7, Newton lemma pp.119-123 and local extensions pp.127-130"
++    },
++    {
++      "author": "Tao, T.",
++      "date": "2026-07-21",
++      "title": "A digestion of the Jacobian conjecture counterexample",
++      "url": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/",
++      "role": "Original three-dimensional example attribution, not the additional four-dimensional ES construction."
++    }
++  ],
++  "content_search_queries": [
++    "\"Erdos Straus\" \"Fable\" \"ramification\"",
++    "\"Erd\u0151s\u2013Straus\" \"negative square\""
++  ],
++  "priority": "No exhaustive historical-priority determination; no novelty claim based solely on these searches.",
++  "nonclaims": [
++    "Universal ES positivity",
++    "A universal terminating witness selector",
++    "Qp descent of a complex period matrix",
++    "An isomorphism of E and M seven-point local algebras",
++    "A Lean build",
++    "Independent mathematical review"
++  ]
++}
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/verify.py b/research/incoming/es-turn07-fabel-bridge-20260920/verify.py
+new file mode 100644
+index 0000000..d38fbd1
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/verify.py
+@@ -0,0 +1,426 @@
++#!/usr/bin/env python3
++"""Exact reciprocal-cubic Fabel fibres and original negative-square E/M returns.
++Python standard library only. Finite replay is not universal ES occupancy.
++"""
++from __future__ import annotations
++from collections import Counter
++from fractions import Fraction as F
++from functools import lru_cache
++from itertools import permutations
++from math import gcd,isqrt
++from pathlib import Path
++import argparse,hashlib,json,time
++CHECK=Counter(); HARD={1,121,169,289,361,529}
++def need(v,label):
++    CHECK[label]+=1
++    if not v: raise ArithmeticError(label)
++def primes_to(n):
++    b=bytearray(b'\1')*(n+1);b[:2]=b'\0\0'
++    for q in range(2,isqrt(n)+1):
++        if b[q]:b[q*q:n+1:q]=b'\0'*((n-q*q)//q+1)
++    return [q for q in range(2,n+1) if b[q]]
++@lru_cache(maxsize=100000)
++def factor(n):
++    if n<1:raise ValueError('positive factor input required')
++    z=[];q=2
++    while q*q<=n:
++        if n%q==0:
++            e=0
++            while n%q==0:n//=q;e+=1
++            z.append((q,e))
++        q=3 if q==2 else q+2
++    if n>1:z.append((n,1))
++    return tuple(z)
++@lru_cache(maxsize=50000)
++def divisors(n,square=False):
++    a=[1]
++    for q,e in factor(n):a=[d*q**j for d in a for j in range((2 if square else 1)*e+1)]
++    return tuple(sorted(a))
++def prime(n):return n>=2 and factor(n)==((n,1),)
++def vp_int(n,p):
++    if n==0:raise ValueError('valuation of zero is not a finite integer')
++    n=abs(n);e=0
++    while n%p==0:n//=p;e+=1
++    return e
++def vp(x,p):
++    x=F(x);return vp_int(x.numerator,p)-vp_int(x.denominator,p)
++def residue(x,m):
++    x=F(x);return x.numerator*pow(x.denominator,-1,m)%m
++def leg(x,p):
++    z=pow(residue(x,p),(p-1)//2,p)
++    return 0 if z==0 else (1 if z==1 else -1)
++def enc(x):
++    if isinstance(x,F):return [x.numerator,x.denominator]
++    if isinstance(x,dict):return {k:enc(v) for k,v in x.items()}
++    if isinstance(x,(tuple,list)):return [enc(v) for v in x]
++    return x
++
++def state(p,a,u,ch):
++    R=4*a-p
++    need(p%4==1 and p<4*a and 2*a<p,'original prime-class and shell domain')
++    need(u>0 and a*a%u==0,'original square divisor')
++    need((4*u+1)%R==0 if ch=='E' else (u+a)%R==0,'original labelled gate')
++    g=gcd(a,u);h=g*g//u;r=u//g;s=a//g
++    need(h*r*s==a and h*r*r==u and gcd(r,s)==1,'original normalization')
++    k=(p*r+s)//R if ch=='E' else (r+s)//R
++    need(R*k==(p*r+s if ch=='E' else r+s),'original quotient integer')
++    xyz=(a,h*s*k,p*h*r*k) if ch=='E' else (a,p*h*s*k,p*h*r*k)
++    x,y,z=xyz
++    need(4*x*y*z==p*(x*y+x*z+y*z),'ordered Egyptian identity')
++    num=a*a if ch=='E' else p*a*a
++    need(num%(R*y-p*a)==0 and num//(R*y-p*a)==u,'ordered divisor inverse')
++    need(len(set(xyz))==3,'no repeated denominators in original prime source')
++    need(gcd(p,h*r*s*k)==1,'all normalization factors are p-units')
++    st=dict(p=p,a=a,R=R,u=u,channel=ch,h=h,r=r,s=s,k=k,denominators=list(xyz))
++    if ch=='E':
++        v=a*a//u;D=(4*u+1)//R
++        st.update(v=v,D=D,alpha=v-R,beta=v-D)
++        need(leg(h,p)==-1,'exterior nonresidue grade')
++        need((k-r)%p!=0 and D%p!=0,'exterior differences stay p-units')
++    return st
++
++def local(st):
++    p=st['p'];t=[F(p,x) for x in st['denominators']]
++    d=[(t[i]-t[(i+1)%3])*(t[i]-t[(i+2)%3]) for i in range(3)]
++    s2=t[0]*t[1]+t[0]*t[2]+t[1]*t[2];s3=t[0]*t[1]*t[2]
++    disc=(t[0]-t[1])**2*(t[0]-t[2])**2*(t[1]-t[2])**2
++    need(sum(t)==4 and t[0]>2 and all(0<x<2 for x in t[1:]),'original positive reciprocal roots')
++    need(d[0]*d[1]*d[2]==-disc,'derivative product sign')
++    vals=[vp(x,p) for x in d]
++    if st['channel']=='E':
++        need(vals==[1,1,0],'E exact derivative valuations')
++        need([residue(x,p) for x in t]==[0,0,4],'E two colliding reciprocal roots')
++        need(vp(s2,p)==1 and vp(s3,p)==2 and vp(disc,p)==2,'E coefficient valuation stratum')
++        need(residue(d[0]/d[1],p)==p-1,'two ramified factors have square ratio')
++        need(residue(d[2],p)==16%p,'third E derivative is square unit')
++        signs=[leg(d[0]/p,p),leg(d[1]/p,p),leg(d[2],p)]
++        alg='Qp^3 x ramified_quadratic^2';npoints=3
++    else:
++        need(vals==[0,0,0] and vp(disc,p)==0,'M unramified reduction')
++        signs=[leg(x,p) for x in d]
++        need(leg(st['r']*st['s'],p)==-1,'middle opposite original factor characters')
++        need(signs[0]==-1 and signs.count(1)==1,'M exactly one finite split factor')
++        npoints=3
++        alg='Qp^3 x unramified_quadratic^2'
++    return dict(roots=t,derivatives=d,target=[F(0),F(-4),s2,-s3],discriminant=disc,
++                derivative_valuations=vals,unit_characters=signs,
++                qp_points=npoints,geometric_affine_points=7,algebra=alg)
++
++def marked(st):
++    z=dict(st);fs=factor(st['a']);fu=dict(factor(st['u']))
++    z['a_factorization']=[list(t) for t in fs]
++    z['centered_exponents']=[[q,fu.get(q,0)-e] for q,e in fs]
++    z['exponent_box']=[[q,-e,e] for q,e in fs]
++    z['fibre']=enc(local(st));return z
++
++# Exact four-dimensional algebra, allowing reducible quadratic polynomials.
++class Ring:
++    __slots__=('d','c')
++    def __init__(self,d,c=0):
++        self.d=F(d)
++        if isinstance(c,Ring):
++            if c.d!=self.d:raise ValueError('different algebras')
++            self.c=c.c
++        elif isinstance(c,(tuple,list)):
++            if len(c)!=4:raise ValueError('four coefficients')
++            self.c=tuple(F(x) for x in c)
++        else:self.c=(F(c),F(0),F(0),F(0))
++    def __add__(self,o):
++        if isinstance(o,Jet):return NotImplemented
++        o=Ring(self.d,o);return Ring(self.d,[a+b for a,b in zip(self.c,o.c)])
++    __radd__=__add__
++    def __neg__(self):return Ring(self.d,[-a for a in self.c])
++    def __sub__(self,o):return self+-Ring(self.d,o)
++    def __rsub__(self,o):return Ring(self.d,o)+-self
++    def __mul__(self,o):
++        if isinstance(o,Jet):return NotImplemented
++        o=Ring(self.d,o);z=[F(0)]*4
++        for j,a in enumerate(self.c):
++            for k,b in enumerate(o.c):
++                scalar=(-1 if (j&k&1) else 1)*(1/self.d if (j&k&2) else 1)
++                z[j^k]+=a*b*scalar
++        return Ring(self.d,z)
++    __rmul__=__mul__
++    def __pow__(self,n):
++        if n<0:raise ValueError('negative power')
++        z=Ring(self.d,1);a=self
++        while n:
++            if n&1:z=z*a
++            a=a*a;n//=2
++        return z
++    def __eq__(self,o):
++        try:return self.c==Ring(self.d,o).c
++        except (ValueError,TypeError):return False
++class Jet:
++    def __init__(self,v,der):self.v=v;self.der=tuple(der)
++    def lift(self,o):return o if isinstance(o,Jet) else Jet(self.v*0+o,[self.v*0]*4)
++    def __add__(self,o):
++        o=self.lift(o);return Jet(self.v+o.v,[a+b for a,b in zip(self.der,o.der)])
++    __radd__=__add__
++    def __neg__(self):return Jet(-self.v,[-a for a in self.der])
++    def __sub__(self,o):return self+-self.lift(o)
++    def __rsub__(self,o):return self.lift(o)+-self
++    def __mul__(self,o):
++        o=self.lift(o);return Jet(self.v*o.v,[a*o.v+self.v*b for a,b in zip(self.der,o.der)])
++    __rmul__=__mul__
++    def __pow__(self,n):
++        z=self.lift(1)
++        for _ in range(n):z=z*self
++        return z
++
++def P(q,I):
++    A,y,z,w=q
++    return (A**3*z+A**2*y*2-A*I,
++    -A**3*y**2*z-A**2*y*z*(2*I)+A**2*w-A**2*y**3*2-A*y**2*(10*I)+A*z*3+y,
++    A**3*y**3*z*2+A**2*y**2*z*(6*I)+A**2*w*y*2+A**2*y**4*4+A*w*(2*I)-A*y**3*(4*I)-A*y*z*2+z*(2*I)+y**2*7,
++    A**3*y**4*z*2+A**2*y**3*z*(8*I)+A**2*w*y**2+A**2*y**5*4+A*w*y*(2*I)+A*y**4*(7*I)-A*y**2*z*10-y*z*(4*I)-w-y**3*3)
++
++def det4(M):
++    z=M[0][0]*0
++    for perm in permutations(range(4)):
++        s=(-1)**sum(perm[i]>perm[j] for i in range(4) for j in range(i+1,4))
++        v=M[0][0]*0+s
++        for i in range(4):v=v*M[i][perm[i]]
++        z=z+v
++    return z
++
++def exact_fibres(st):
++    f=local(st);target=f['target'];out=[]
++    for j,(t,d) in enumerate(zip(f['roots'],f['derivatives'])):
++        for sign in (1,-1):
++            I=Ring(d,[0,1,0,0]);A=Ring(d,[0,0,sign,0]);ia=d*A
++            q=(A,-t-I*ia,2*t*ia+3*I*ia**2,7*I*t*t*ia+(-4-17*t)*ia**2-13*I*ia**3)
++            need(all(a==b for a,b in zip(P(q,I),target)),'literal Fabel polynomial signed inverse')
++            b=I+A*q[1]
++            need(-b*ia==t and A*A*d==1,'root and resultant inverse')
++            J=[Jet(v,[Ring(d,int(i==k)) for k in range(4)]) for i,v in enumerate(q)]
++            need(det4([x.der for x in P(J,I)])==-2,'original four-dimensional Jacobian sign')
++            out.append(dict(root=j,sign=sign,d=enc(d),basis=['1','i','A','iA'],coordinates=[enc(v.c) for v in q]))
++    I=Ring(1,[0,1,0,0]);u0,u2,u3,u4=target
++    q=(Ring(1,0),Ring(1,u2),I*(7*u2*u2-u3)*F(1,2),Ring(1,11*u2**3-2*u2*u3-u4))
++    need(all(a==b for a,b in zip(P(q,I),target)),'unique infinity chart inverse')
++    jets=[Jet(v,[Ring(1,int(i==k)) for k in range(4)]) for i,v in enumerate(q)]
++    need(det4([x.der for x in P(jets,I)])==-2,'original Jacobian at infinity chart point')
++    out.append(dict(root='infinity',sign='b=i only',basis=['1','i','A','iA'],coordinates=[enc(v.c) for v in q]))
++    return out
++
++def hensel_sqrt(x,p,n):
++    x=F(x);b=next((j for j in range(1,p) if j*j%p==residue(x,p)),None)
++    if b is None:raise ValueError('nonsquare unit')
++    mod=p
++    for _ in range(1,n):
++        err=(b*b-residue(x,mod*p))//mod
++        b+=mod*((-err*pow(2*b,-1,p))%p);mod*=p
++        need((b*b-residue(x,mod))%mod==0,'Hensel original digit')
++    return b,mod
++
++def integral_fibres(st,n=4):
++    p=st['p'];f=local(st);ii,mod=hensel_sqrt(-1,p,n);out=[]
++    for j,(t,d) in enumerate(zip(f['roots'],f['derivatives'])):
++        if vp(d,p)!=0 or leg(d,p)!=1:continue
++        A0,_=hensel_sqrt(1/d,p,n);rr=residue(t,mod);target=[residue(v,mod) for v in f['target']]
++        for A in (A0,(-A0)%mod):
++            ia=pow(A,-1,mod)
++            q=[A,(-rr-ii*ia)%mod,(2*rr*ia+3*ii*ia**2)%mod,
++               (7*ii*rr*rr*ia+(-4-17*rr)*ia**2-13*ii*ia**3)%mod]
++            need([v%mod for v in P(q,ii)]==target,'full integral inverse modulo p power')
++            out.append(dict(root=j,coordinates=q))
++    need(len(out)+1==f['qp_points'],'all integral Qp branches retained')
++    return dict(p=p,precision=n,modulus=mod,i_embedding=ii,finite_points=out,
++                infinity_point=enc(exact_infinity(f['target'])))
++
++def exact_infinity(target):
++    _,u2,u3,u4=target
++    return [0,u2,[0,(7*u2*u2-u3)/2],11*u2**3-2*u2*u3-u4]
++
++def square_cross(st,side,c):
++    need(st['channel']=='E' and st[side]==-4*c*c,'actual negative-square source')
++    p,h=st['p'],st['h'];j=(h+1)//4
++    need(h%4==3 and gcd(c,h)==1,'forced cofactor residue and units')
++    if j%c:return None
++    U=c*c if side=='alpha' else (j//c)**2
++    need(j*j%U==0 and (p+4*U)%h==0,'actual cofactor square divisor and gate')
++    R=(p+4*U)//h;a=(p+R)//4
++    need(0<R<p and R%4==3,'middle first-half cofactor return')
++    M=state(p,a,U,'M')
++    g=gcd(j,U)
++    need((g*g//U,U//g,R*(j//g)-U//g,j//g)==(M['h'],M['r'],M['s'],M['k']),'new prime-exponent normalization')
++    need(4*M['h']*M['r']*M['k']-1==h,'original grade becomes middle cofactor')
++    return M
++
++def candidate_crosses(st):
++    rows=[]
++    if st['channel']!='E':return rows
++    for side in ('alpha','beta'):
++        z=-st[side]
++        if z>0 and z%4==0:
++            c=isqrt(z//4)
++            if 4*c*c==z:
++                out=square_cross(st,side,c)
++                rows.append(dict(side=side,c=c,j=(st['h']+1)//4,
++                                 available=out is not None,
++                                 target=None if out is None else compact(out)))
++    return rows
++
++def inverse_source_fibre(p,h,c,side):
++    out=[]
++    if side=='alpha':
++        need((p+4*c*c)%h==0,'alpha fibre phase')
++        N=(p+4*c*c)//h
++        for s in divisors(N):
++            k=N//s
++            if (s+k)%4:continue
++            r=(s+k)//4;a=h*r*s;R=4*a-p;u=h*r*r
++            if gcd(r,s)!=1 or not(p<4*a and 2*a<p) or (4*u+1)%R:continue
++            e=state(p,a,u,'E')
++            need(e['h']==h and e['alpha']==-4*c*c,'alpha exact fibre')
++            out.append(compact(e))
++    else:
++        need((4*c*c*p+1)%h==0,'beta fibre phase')
++        F0=(4*c*c*p+1)//h
++        for s in range(1,(p-1)//(2*h)+1):
++            D=h*s*s+4*c*c;delta=s*s*(D*D-p)-F0
++            if delta<=0:continue
++            k=isqrt(delta)
++            if k*k!=delta or (s*D-k)%2:continue
++            r=(s*D-k)//2
++            if r<=0 or gcd(r,s)!=1:continue
++            a=h*r*s
++            if not(p<4*a and 2*a<p):continue
++            u=h*r*r;R=4*a-p
++            if (4*u+1)%R:continue
++            e=state(p,a,u,'E')
++            need(e['h']==h and e['beta']==-4*c*c,'beta exact fibre')
++            out.append(compact(e))
++    return sorted(out)
++
++COLUMNS=['channel','a','u','R','h','r','s','k','x','y','z']
++def compact(st):return [st['channel'],st['a'],st['u'],st['R'],st['h'],st['r'],st['s'],st['k']]+st['denominators']
++def scan(bound):
++    rows=[];tot=Counter()
++    for p in primes_to(bound):
++        if p%4!=1:continue
++        arr=[];cross=[];ct=Counter();sources=[]
++        for a in range(p//4+1,(p-1)//2+1):
++            fs=factor(a);vv=divisors(a,True);ct['divisor_vectors']+=len(vv)
++            sources.append([a,[list(x) for x in fs]])
++            R=4*a-p
++            for u in vv:
++                for ch,hit in [('E',(4*u+1)%R==0),('M',(u+a)%R==0)]:
++                    if not hit:continue
++                    st=state(p,a,u,ch);data=local(st)
++                    arr.append(compact(st));ct[ch]+=1;ct[data['algebra']]+=1
++                    for z in candidate_crosses(st):
++                        ct['square_'+z['side']+('_pass' if z['available'] else '_blocked')]+=1
++                        cross.append(dict(source=compact(st),**z))
++        rows.append(dict(p=p,hard=p%840 in HARD,source_factorizations=sources,
++                         states=sorted(arr),crosses=cross,counts=dict(ct)))
++        tot.update(ct)
++    return dict(bound=bound,prime_domain='all primes p == 1 mod 4',columns=COLUMNS,rows=rows,totals=dict(tot))
++
++def interpolation(xs,ys):
++    coeff=[F(0),F(0),F(0)]
++    for i in range(3):
++        z=[xs[j] for j in range(3) if j!=i]
++        d=(xs[i]-z[0])*(xs[i]-z[1])
++        for k,v in enumerate((z[0]*z[1],-z[0]-z[1],F(1))):coeff[k]+=ys[i]*v/d
++    return coeff
++
++def root_order_map(source,target):
++    p=source['p'];need(target['p']==p and source['channel']=='E' and target['channel']=='M','same-prime order transition')
++    x=local(source)['roots'];y=local(target)['roots']
++    ff=interpolation(x,y);gg=interpolation(y,x)
++    for xx,yy in zip(x,y):
++        need(sum(ff[k]*xx**k for k in range(3))==yy,'exact forward root interpolation')
++        need(sum(gg[k]*yy**k for k in range(3))==xx,'exact backward root interpolation')
++    need([vp(c,p) for c in ff]==[0,-1,-1],'sharp forward p-denominator')
++    need(all(c==0 or vp(c,p)>=0 for c in gg),'integral reverse polynomial')
++    need(vp(gg[1],p)==vp(gg[2],p)==0 and (gg[0]==0 or vp(gg[0],p)>=1),'reverse collapse coefficients')
++    ffbar=[residue(p*c,p) for c in ff]
++    need(ffbar[0]==0 and ffbar[1]==(-4*ffbar[2])%p and ffbar[2]!=0,'p times forward polynomial has exact T(T-4) reduction')
++    vv=lambda rr:(rr[1]-rr[0])*(rr[2]-rr[0])*(rr[2]-rr[1])
++    need(vp(vv(x),p)==1 and vp(vv(y),p)==0,'original root-order indices')
++    # Integral points in the order are exactly values congruent in slots 1 and 2.
++    for u,v,w in ((0,0,1),(1,1,0),(p,0,0),(0,p,0),(1,1+p,2)):
++        cc=interpolation(x,[F(u),F(v),F(w)])
++        need(all(c==0 or vp(c,p)>=0 for c in cc),'conductor-compatible integral tuple')
++    return enc(dict(p=p,source=compact(source),target=compact(target),forward_coefficients=ff,
++                    inverse_coefficients=gg,forward_p_valuations=[0,-1,-1],
++                    p_forward_reduction=ffbar,source_order_index=p,target_order_index=1,
++                    source_conductor_exponents=[1,1,0],root_Vandermonde_determinants=[vv(x),vv(y)]))
++
++def examples():
++    specs=[(5,2,2,'E'),(5,2,1,'M'),(5209,1330,18620,'E'),(4561,1593,43011,'E'),(3049,806,20956,'E'),
++           (3361,990,17820,'E'),(1129,286,7436,'E'),(26881,8976,430848,'E'),
++           (1009,276,9,'M'),(2521,636,8,'M')]
++    states=[];algebra_examples={};crosses=[];fibres=[];orders=[]
++    for p,a,u,ch in specs:
++        need(prime(p),'displayed exact primality')
++        st=state(p,a,u,ch);states.append(marked(st))
++        for c in candidate_crosses(st):
++            crosses.append(dict(source=compact(st),**c))
++            fibre=inverse_source_fibre(p,st['h'],c['c'],c['side'])
++            need(compact(st) in fibre,'original source in full inverse fibre')
++            fibres.append(dict(p=p,h=st['h'],side=c['side'],c=c['c'],states=fibre))
++            if c['available']:
++                M=state(p,c['target'][1],c['target'][2],'M')
++                states.append(marked(M));algebra_examples.setdefault(local(M)['algebra'],M)
++                orders.append(root_order_map(st,M))
++        algebra_examples.setdefault(local(st)['algebra'],st)
++    # Find a small original M state exhibiting each local split type, without assuming it.
++    for p in primes_to(100):
++        if p%4!=1:continue
++        for a in range(p//4+1,(p-1)//2+1):
++            for u in divisors(a,True):
++                if (u+a)%(4*a-p):continue
++                st=state(p,a,u,'M');algebra_examples.setdefault(local(st)['algebra'],st)
++    need(set(algebra_examples)=={'Qp^3 x unramified_quadratic^2','Qp^3 x ramified_quadratic^2'},'both actual local algebras exhibited')
++    fabel=[]
++    for key,st in sorted(algebra_examples.items()):
++        fabel.append(dict(kind=key,source=marked(st),exact_branches=exact_fibres(st),
++                          integral_branches=integral_fibres(st)))
++    toy=root_order_map(state(5,2,2,'E'),state(5,2,1,'M'))
++    need(toy['forward_coefficients']==[[17,12],[-19,10],[14,15]],'explicit rational forward map')
++    need(toy['inverse_coefficients']==[[25,8],[-37,8],[7,4]],'explicit integral reverse map')
++    orders.append(toy)
++    p=3049;h=31;j=8
++    blocked=[dict(u=u,residue=(p+4*u)%h) for u in divisors(j,True)]
++    need(all(x['residue'] for x in blocked),'entire blocked cofactor box empty')
++    # Same-prime positive repair exists at a different original divisor.
++    repair=marked(state(p,770,5,'M'))
++    I=Ring(1,[0,1,0,0]);q=(Ring(1,0),Ring(1,-4),56*I,Ring(1,-705))
++    need(all(x==v for x,v in zip(P(q,I),[0,-4,0,1])),'non-ES target has infinity inverse')
++    need(all(r**3-4*r*r+1!=0 for r in (-1,1)),'rational root theorem obstruction')
++    return dict(states=states,crosses=crosses,inverse_fibres=fibres,local_algebras=fabel,root_order_transitions=orders,
++                full_blocked_cofactor=dict(p=p,Q=h,j=j,rows=blocked,canonical_unavailable_u=36),
++                alternate_middle=repair,non_ES_target=dict(coefficients=[0,-4,0,1],
++                rational_root_candidates=[-1,1],infinity=[['0'],['-4'],['56i'],['-705']]))
++
++def negative_controls(ex):
++    rejected=[]
++    tests=[('seven_points_are_eight',7==8),
++           ('three_Qp_points_determine_ramification',len({z['kind'] for z in ex['local_algebras'] if z['source']['fibre']['qp_points']==3})==1),
++           ('negative_square_supplies_its_unavailable_word',64%36==0),
++           ('blocked_cofactor_has_a_different_word',any(r['residue']==0 for r in ex['full_blocked_cofactor']['rows'])),
++           ('infinity_inverse_forces_rational_reciprocals',any(r**3-4*r*r+1==0 for r in (-1,1))),
++           ('ramified_inverse_has_integral_first_coordinate',F(-1,2)>=0)]
++    for name,value in tests:
++        need(not value,'reject '+name);rejected.append(name)
++    return rejected
++
++def canonical(v):return json.dumps(v,sort_keys=True,separators=(',',':')).encode()
++def main():
++    ap=argparse.ArgumentParser();ap.add_argument('--bound',type=int,default=3000)
++    ap.add_argument('--out',type=Path,default=Path('certificates'));args=ap.parse_args()
++    if args.bound<100:ap.error('bound at least 100')
++    args.out.mkdir(parents=True,exist_ok=True);start=time.monotonic()
++    sc=scan(args.bound);ex=examples();neg=negative_controls(ex)
++    for name,v in [('scan.json',sc),('examples.json',ex)]:
++        (args.out/name).write_text(json.dumps(enc(v),indent=2,sort_keys=True)+'\n')
++    report=dict(success=True,bound=args.bound,primes=len(sc['rows']),totals=sc['totals'],
++                checks=sum(CHECK.values()),check_types=dict(CHECK),rejected=neg,
++                source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++                output_sha256={n:hashlib.sha256((args.out/n).read_bytes()).hexdigest() for n in ('scan.json','examples.json')},
++                universal_ES_proved=False,elapsed_seconds=time.monotonic()-start)
++    (args.out/'report.json').write_text(json.dumps(report,indent=2,sort_keys=True)+'\n');print(json.dumps(report,indent=2))
++if __name__=='__main__':main()
+diff --git a/research/incoming/es-turn07-fabel-bridge-20260920/workbench.tex b/research/incoming/es-turn07-fabel-bridge-20260920/workbench.tex
+new file mode 100644
+index 0000000..b0bfd79
+--- /dev/null
++++ b/research/incoming/es-turn07-fabel-bridge-20260920/workbench.tex
+@@ -0,0 +1,55 @@
++\documentclass[11pt,reqno]{amsart}
++\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
++\usepackage[a4paper,margin=25mm]{geometry}
++\usepackage{amsmath,amssymb,amsthm,mathtools,microtype,xurl}
++\usepackage[hidelinks]{hyperref}
++\newtheorem{theorem}{Theorem}[section]
++\newtheorem{lemma}[theorem]{Lemma}
++\title[Prime-local Fabel fibres and channel transfer]{Prime-local Fabel fibres and same-prime negative-square channel transfers}
++\author{The Clankers}
++\date{20 September 2026}
++\begin{document}
++\begin{abstract}
++The reciprocal cubic of every marked first-half Erd\H{o}s--Straus state is a
++literal target of the four-dimensional polynomial used in the ES--Fabel and
++Split-Zero conductor comparison. We determine its complete local fibre algebra
++at the original prime. Exterior states yield two ramified quadratic factors;
++middle states yield two unramified quadratic factors. Both have exactly three
++rational local inverse points, with all seven geometric affine branches and
++integral specializations accounted for. Separately, negative-four-square shape
++coordinates give original same-prime middle states on an exact divisor domain,
++covering entire unbounded shape lines. All arithmetic coordinates, fibres and
++ordered denominator returns are explicit. Neither conclusion proves universal
++Erd\H{o}s--Straus occupancy.
++\end{abstract}
++\maketitle\input{core.tex}
++\begin{thebibliography}{9}
++\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
++to the Erd\H{o}s--Straus equation on unit fractions. \emph{Journal of the Australian
++Mathematical Society, 94}, 50--105. \texttt{arXiv:1107.1010}, \S2,
++Propositions 2.2 and 2.6.
++\bibitem{Zeta} Split-Zero programme. (2026). \emph{The ES--Fable inverse
++correspondence in the original weighted conductor}. Equations GF1--GF11,
++GF16--GF18 and FC32--FC35. Zeta workbench, revision
++\texttt{369f6ea9e0312bdf348ca9efd294735efc99c51d}, source blob
++\texttt{f777bb9f1434fa90f2f8bc762860048cc1d32bb4}.
++\url{https://github.com/KokunoYumeto/zeta-function-research-reader/blob/369f6ea9e0312bdf348ca9efd294735efc99c51d/workbenches/splitzero-tandem/continuations/20260920-fable-conductor/FABLE_TO_ORIGINAL_CONDUCTOR.tex}.
++\bibitem{Shape} The Clankers. (2026). \emph{Turn 7 shape rigidity},
++\texttt{es\_turn7\_shape\_rigidity\_20260919\_r1/core.tex}, sections
++``Original source and the marked cubic'' and ``Original character constraints''.
++Preserved predecessor source; its historical verification is not re-certified here.
++\bibitem{Hatcher} Hatcher, A. (2022). \emph{Topology of numbers}.
++American Mathematical Society. \S6.4, quadratic reciprocity and supplementary laws.
++Author's online edition: \url{https://pi.math.cornell.edu/~hatcher/TN/TNbook.pdf}.
++\bibitem{Milne} Milne, J. S. (2020). \emph{Algebraic number theory}.
++Course notes, version 3.08, Chapter 7, ``Absolute values; local fields'', Hensel lifting and
++unramified extensions. \url{https://www.jmilne.org/math/CourseNotes/ANT.pdf}.
++Only these standard local-field facts are used; the displayed unit lift is proved
++and executed directly.
++\bibitem{Tao} Tao, T. (2026, July 21). \emph{A digestion of the Jacobian conjecture
++counterexample}. Original three-dimensional Alp\"oge--Fabel example.
++\url{https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/}.
++The four-dimensional polynomial here is credited separately to the ES construction
++as in the Zeta source, not attributed as a fourth original three-dimensional point.
++\end{thebibliography}
++\end{document}

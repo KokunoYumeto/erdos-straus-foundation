@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 5,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "24b9ab036165e53778be5eff6df88f04eb6157b8c6f067d4330fea1ab998a139",
+  "script": "check_bernstein.py",
+  "status": "PASS",
+  "suite": "bernstein"
+}

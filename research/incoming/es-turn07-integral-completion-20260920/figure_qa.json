@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-20",
+  "figure": "figures/integral-normalization-smith.pdf",
+  "source": "../../../tools/generate_20260920_illustrations.py",
+  "embedded_in": [
+    "output/workbench.pdf",
+    "output/preprint.pdf"
+  ],
+  "checks": [
+    "exact original basis labels retained",
+    "exterior Smith exponents and p^2 index displayed",
+    "middle Smith exponents and p^9 index displayed",
+    "rendered figure visually inspected",
+    "reader pages visually inspected"
+  ],
+  "status": "PASS"
+}

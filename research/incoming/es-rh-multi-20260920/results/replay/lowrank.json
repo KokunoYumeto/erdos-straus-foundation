@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 71,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "f0e5498b7f7f6e5e461c901f0184987dbfe17ba85e972e2ec44d33d9d81d16aa",
+  "script": "check_lowrank.py",
+  "status": "PASS",
+  "suite": "lowrank"
+}

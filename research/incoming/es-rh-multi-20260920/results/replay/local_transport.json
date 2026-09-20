@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 15,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "995f1fc7ba2fc266686a67ee0de6a3a01a45ba3fa9c2fb29bceec7c8e09bf430",
+  "script": "check_local_transport.py",
+  "status": "PASS",
+  "suite": "local_transport"
+}

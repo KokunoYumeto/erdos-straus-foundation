@@ -1,0 +1,86 @@
+\section{The exact integral root order and its obligatory denominator}
+This is a further arithmetic distinction between the coefficient target and its
+split roots. Let $\mathcal O_f=\mathbb Z_p[T]/(f)$, observed by evaluation at the
+three original labelled roots. All are integral, and $f$ is monic.
+
+\begin{theorem}[Root-order defect and exact interpolation loss]
+For an original E state,
+\[
+ \boxed{\mathcal O_E\simeq
+ \{(z_1,z_2,z_3)\in\mathbb Z_p^3:z_1\equiv z_2\pmod p\}.}       \tag{15a}
+\]
+Its index in $\mathbb Z_p^3$ is $p$ and its conductor ideal in that ring is
+$p\mathbb Z_p\times p\mathbb Z_p\times\mathbb Z_p$.
+For M, evaluation gives $\mathcal O_M\simeq\mathbb Z_p^3$.
+
+Given any original E and M state at the same prime, let $x_i$ and $y_i$ be their
+ordered reciprocal roots. There is a unique polynomial $F$ of degree at most
+two taking $x_i$ to $y_i$, and a unique $G$ of degree at most two taking $y_i$
+to $x_i$. Their exact formulas are
+\[
+ F(T)=\sum_i y_i\frac{(T-x_j)(T-x_k)}{(x_i-x_j)(x_i-x_k)},\qquad
+ G(T)=\sum_i x_i\frac{(T-y_j)(T-y_k)}{(y_i-y_j)(y_i-y_k)}.       \tag{15b}
+\]
+Writing coefficients in increasing degree, $F$ has exact $p$-valuations
+$(0,-1,-1)$, while $G\in\mathbb Z_p[T]$.
+Moreover $pF\bmod p$ is a nonzero scalar multiple of $T(T-4)$.
+The compositions satisfy $G(F(T))=T\pmod{f_E}$ and
+$F(G(T))=T\pmod{f_M}$.
+\end{theorem}
+\begin{proof}
+For E, $x_1-x_2$ has valuation one; both differences from $x_3$ are units.
+A polynomial over $\mathbb Z_p$ therefore has its first two values congruent
+modulo $p$. Conversely, for a tuple with that congruence, interpolation at
+$x_1,x_2$ is integral since its divided difference is integral. Its error at
+$x_3$ can be corrected by an integral multiple of $(T-x_1)(T-x_2)$, whose
+value there is a unit. This proves (15a). The quotient is exactly $\mathbb F_p$
+by $z\mapsto z_1-z_2\pmod p$. Multiplication by an arbitrary tuple preserves
+the congruence exactly when its first two coordinates are divisible by $p$,
+which proves the conductor. All three differences for M are units, giving its
+integral interpolation inverse.
+
+Formula (15b) is the original labelled interpolation. The E derivative
+valuations imply $pF\in\mathbb Z_p[T]$. It cannot be integral before that
+multiplication, since it takes two congruent arguments $x_1,x_2$ to the
+incongruent values $y_1,y_2$. In fact modulo $p$, only its second Lagrange
+summand survives after multiplication by $p$: $y_1$ is divisible by $p$,
+while the third denominator is a unit. Therefore
+\[
+ pF(T)\equiv (p y_2/d_2)T(T-4)\pmod p,
+\]
+with a nonzero coefficient. This proves valuation $-1$ for the linear and
+quadratic coefficients. The constant term is a unit: its second summand has
+valuation zero, and the first and third have positive valuation. The reverse
+interpolation has only unit denominators and integral numerators.
+Equality of each composition with $T$ at all three distinct labelled roots
+proves the two polynomial congruences.
+\end{proof}
+
+The exact sequence
+\[
+ 0\longrightarrow\mathcal O_E\longrightarrow\mathbb Z_p^3
+ \xrightarrow{\ z\mapsto z_1-z_2\bmod p\ }\mathbb F_p
+ \longrightarrow0
+\]
+has no $\mathbb Z_p$-linear right inverse, because the middle module is
+torsion-free. Tensoring with $\mathbb Q_p$ removes this index-$p$ quotient;
+that operation loses original integral information. This is the root-order
+conductor, explicitly distinct from the Zeta workbench's weighted linear
+conductor $T_A$. We do not identify their source modules.
+
+Thus there is a fully explicit rational root-level map between the two cubics,
+with a sharp integral obstruction and an integral reverse map. The lack of an
+isomorphism between their seven-point local fibre algebras is not described as
+unrelatedness. It is the additional quadratic-factor ramification in (8),
+which this root interpolation alone does not preserve.
+
+For a small complete illustration, at $p=5$ take the original E denominators
+$(2,4,20)$ and M denominators $(2,10,5)$. Their reciprocal root triples are
+$(5/2,5/4,1/4)$ and $(5/2,1/2,1)$. The exact maps are
+\[
+ \boxed{F(T)=\frac{14}{15}T^2-\frac{19}{10}T+\frac{17}{12},\qquad
+ G(T)=\frac74T^2-\frac{37}{8}T+\frac{25}{8}.}
+\]
+The first requires exactly one power of five in its local denominator;
+$5F\equiv3T(T-4)\pmod5$. The reverse is integral at five. Both ordered root
+triples and their original denominator inverses are retained in the certificate.

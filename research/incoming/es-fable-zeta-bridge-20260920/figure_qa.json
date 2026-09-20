@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "generator": "tools/generate_20260920_illustrations.py",
+  "inspection": {
+    "method": "original-resolution PNG review after deterministic regeneration, followed by inspection in the final 124-page cumulative PDF",
+    "status": "pass",
+    "checks": [
+      "all labels and exact constants are legible",
+      "arrows and boxes do not conceal mathematical data",
+      "captions distinguish proved geometry from schematic layout",
+      "numerical plots are identified and paired with exact proof inequalities"
+    ]
+  },
+  "figures": [
+    {
+      "id": "quartic-elementary-transform",
+      "proof_locator": "ES_FABLE_ZETA_CROSSWALK.tex, EZ28A-EZ28O",
+      "pdf_sha256": "94c27d73c5d24643abe7a9490a9baa41ea78d82ede08daad6b644282c85f6679",
+      "png_sha256": "5689bbf645e7ca1f1023f4488f540511177660c9f6a5a67edc62353181f0990e",
+      "png_pixels": [1885, 1199],
+      "status": "pass"
+    },
+    {
+      "id": "prime-local-fibre-comparison",
+      "proof_locator": "../es-turn07-fabel-arithmetic-bridge-20260920/corrected/core.tex and root_orders.tex",
+      "pdf_sha256": "a13071b1f882e3c5aa7dd599b07abc0909d2b97f5b3b871924896ce93de1872c",
+      "png_sha256": "f0fa8bd6f14e0e10a0dc86de35d3fc20440e5197b0adf494fecf9350049ed144",
+      "png_pixels": [2441, 1286],
+      "status": "pass"
+    },
+    {
+      "id": "fixed-q-fibre-41161",
+      "proof_locator": "../es-turn07-fabel-arithmetic-bridge-20260920/corrected/fixed_cofactor_atlas.tex, strict-generalization example",
+      "pdf_sha256": "9862cd7933991a7793d43fa34f7dec2aedaa687a26d61b2c6954e791ee7a9e6b",
+      "png_sha256": "dd125e342d4a39f8c4d1bb3e1cf499e9211accfe919628e51e7cdb7fb70ca698",
+      "png_pixels": [2042, 1100],
+      "status": "pass"
+    },
+    {
+      "id": "odd-receiver-positive-real-crossing",
+      "proof_locator": "ODD_RECEIVER_ES_PULLBACK.tex, EZ47-EZ48",
+      "pdf_sha256": "e42ab4ff4e6682697cb04509b54f5259906e0b1982d3b4358222cbc8aad0ec47",
+      "png_sha256": "3e36f9697e5391a0f78acae576c45756f6e3a4b397487b47bc8f6ca50ce124c3",
+      "png_pixels": [1789, 1033],
+      "status": "pass"
+    },
+    {
+      "id": "fable-es-raw-tetrahedron-3d",
+      "proof_locator": "FABLE_ES_TETRAHEDRON.tex, EZ35A-EZ35D",
+      "pdf_sha256": "db5fdac5cf4f726e27993970e68f99488c4ae52d13fdba1278139fb87dff9935",
+      "png_sha256": "0131b53b757783f311785c5b1d1b1bafd731d6641802db6badf620a5ada20ed2",
+      "png_pixels": [1801, 1058],
+      "status": "pass"
+    },
+    {
+      "id": "fixed-input-cover-decomposition",
+      "proof_locator": "FIXED_INPUT_BOUNDARY_MONODROMY.tex, EZ57-EZ66",
+      "pdf_sha256": "7b04334077294aa9921ce84bfea0bbfd0080868b890f4b3634d5db3d6ef17137",
+      "png_sha256": "59c9a77e851074f0da1c377dbc657e96334c86a00b1223db54ae0dcabd9dfff9",
+      "png_pixels": [1953, 1134],
+      "status": "pass"
+    },
+    {
+      "id": "finite-boundary-local-fibre",
+      "proof_locator": "FIXED_INPUT_BOUNDARY_MONODROMY.tex, EZ67-EZ76",
+      "pdf_sha256": "7b6cb8fc3108916efdb22fafc9e796b7fa955ad372eaf7dd657eea44386d72ca",
+      "png_sha256": "95b0560e8129eedfe7dda4be9f62740a777555b596a092497afdb676a668b02c",
+      "png_pixels": [1987, 1216],
+      "status": "pass"
+    },
+    {
+      "id": "integral-normalization-smith",
+      "proof_locator": "INTEGRAL_COMPLETION.tex, IC8-IC20, and INTEGRAL_NORMALIZATION_CROSSWALK.tex",
+      "pdf_sha256": "686a232467f2a2d4b2a27ce894f73df0fb2a16ce243ac527c6a0f9ed2f99b283",
+      "png_sha256": "540170ec92f4c946f03537e3de5cd24b803ae59da5f1bc47a77184961fb373c1",
+      "png_pixels": [2705, 1520],
+      "status": "pass"
+    },
+    {
+      "id": "defining-prime-twist-gluing",
+      "proof_locator": "DEFINING_PRIME_CONTINUATION.tex, equations 32-46",
+      "pdf_sha256": "948e42eb0dee226b166909dc7e6e6c3fcf415c11e8ee0b92854fce3814b7700e",
+      "png_sha256": "124cb8c71ce665832c9efbaac3e73c05653e6fc0eafaecdc388022999fa2363c",
+      "png_pixels": [2089, 1335],
+      "status": "pass"
+    },
+    {
+      "id": "arithmetic-frame-sieve",
+      "proof_locator": "ES_RH_CONTINUATION_B.tex, Track I, E1-E8",
+      "pdf_sha256": "c7dec4651eb844c107e400e4ec12d52da4fa253ea1e789a7ec386ecc645dba76",
+      "png_sha256": "fc8c25e4bed7d153db6790aa4d078e114188716ee9e27e2abd47dda9d83dc9da",
+      "png_pixels": [2055, 1300],
+      "status": "pass"
+    },
+    {
+      "id": "determinant-heat-mechanism",
+      "proof_locator": "ES_RH_CONTINUATION_B.tex, Tracks II-III, D1-D17 and H1-H16",
+      "pdf_sha256": "d4d9ef8e79a60a6f3890f07ca4c1840324ee50a3926b46365cc2f077d8fcb91d",
+      "png_sha256": "c917e8d89a99b7fb850fcb94ad89bdf71e71177e50f71f61bc95f3c0763e2b38",
+      "png_pixels": [2055, 1317],
+      "status": "pass"
+    },
+    {
+      "id": "finite-field-twist-descent",
+      "proof_locator": "ES_RH_CONTINUATION_B.tex, Track IV, F1-F9",
+      "pdf_sha256": "a77bdd2149d393fed1d07aa330e121a62174baa0d752a1c51acf3a5c678e70a3",
+      "png_sha256": "a2e753bcfff46f777432386655ee2fb5a1b08efbb8411c45bde07c013535863a",
+      "png_pixels": [2055, 1217],
+      "status": "pass"
+    }
+  ]
+}

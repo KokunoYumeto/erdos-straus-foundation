@@ -1,0 +1,302 @@
+{
+  "independent": {
+    "bound": 3000,
+    "checks": 243374,
+    "elapsed_seconds": 1.3265496750000239,
+    "finite_field_fibres": [
+      {
+        "i": 4,
+        "p": 17,
+        "points": [
+          [
+            0,
+            13,
+            3,
+            10
+          ],
+          [
+            4,
+            12,
+            7,
+            10
+          ],
+          [
+            13,
+            14,
+            3,
+            15
+          ]
+        ],
+        "target": [
+          0,
+          -4,
+          0,
+          0
+        ]
+      },
+      {
+        "i": 4,
+        "p": 17,
+        "points": [
+          [
+            0,
+            13,
+            8,
+            7
+          ],
+          [
+            3,
+            15,
+            15,
+            15
+          ],
+          [
+            14,
+            12,
+            16,
+            3
+          ]
+        ],
+        "target": [
+          0,
+          -4,
+          6,
+          0
+        ]
+      }
+    ],
+    "independence": "Primitive parameter enumeration; sparse factor algebra; no verifier/predecessor import.",
+    "primes": 211,
+    "scan_sha256": "c7758b41a41c7c6fdfef94a6945714ad70950ae46d7c827b79cbba097d2433e8",
+    "source_sha256": "e085bcae66bea31ff58eebe268934d65a41efdb35baa6544a00555780275e249",
+    "success": true,
+    "totals": {
+      "E": 5700,
+      "M": 5268,
+      "Qp^3 x ramified_quadratic^2": 5700,
+      "Qp^3 x unramified_quadratic^2": 5268,
+      "divisor_vectors": 1877004,
+      "square_alpha_blocked": 84,
+      "square_alpha_pass": 89,
+      "square_beta_blocked": 42,
+      "square_beta_pass": 37
+    },
+    "universal_ES_proved": false
+  },
+  "independent_mathematical_review": false,
+  "lean_build": false,
+  "main": {
+    "bound": 3000,
+    "check_types": {
+      "E coefficient valuation stratum": 5724,
+      "E exact derivative valuations": 5724,
+      "E two colliding reciprocal roots": 5724,
+      "Hensel original digit": 12,
+      "M exactly one finite split factor": 5359,
+      "M unramified reduction": 5359,
+      "actual cofactor square divisor and gate": 132,
+      "actual negative-square source": 260,
+      "all integral Qp branches retained": 2,
+      "all normalization factors are p-units": 11189,
+      "alpha exact fibre": 4,
+      "alpha fibre phase": 4,
+      "beta exact fibre": 4,
+      "beta fibre phase": 4,
+      "both actual local algebras exhibited": 1,
+      "conductor-compatible integral tuple": 35,
+      "derivative product sign": 11083,
+      "displayed exact primality": 10,
+      "entire blocked cofactor box empty": 1,
+      "exact backward root interpolation": 21,
+      "exact forward root interpolation": 21,
+      "explicit integral reverse map": 1,
+      "explicit rational forward map": 1,
+      "exterior differences stay p-units": 5716,
+      "exterior nonresidue grade": 5716,
+      "forced cofactor residue and units": 260,
+      "full integral inverse modulo p power": 4,
+      "integral reverse polynomial": 7,
+      "literal Fabel polynomial signed inverse": 12,
+      "middle first-half cofactor return": 132,
+      "middle opposite original factor characters": 5359,
+      "new prime-exponent normalization": 132,
+      "no repeated denominators in original prime source": 11189,
+      "non-ES target has infinity inverse": 1,
+      "ordered Egyptian identity": 11189,
+      "ordered divisor inverse": 11189,
+      "original Jacobian at infinity chart point": 2,
+      "original four-dimensional Jacobian sign": 12,
+      "original grade becomes middle cofactor": 132,
+      "original labelled gate": 11189,
+      "original normalization": 11189,
+      "original positive reciprocal roots": 11083,
+      "original prime-class and shell domain": 11189,
+      "original quotient integer": 11189,
+      "original root-order indices": 7,
+      "original source in full inverse fibre": 8,
+      "original square divisor": 11189,
+      "p times forward polynomial has exact T(T-4) reduction": 7,
+      "rational root theorem obstruction": 1,
+      "reject blocked_cofactor_has_a_different_word": 1,
+      "reject infinity_inverse_forces_rational_reciprocals": 1,
+      "reject negative_square_supplies_its_unavailable_word": 1,
+      "reject ramified_inverse_has_integral_first_coordinate": 1,
+      "reject seven_points_are_eight": 1,
+      "reject three_Qp_points_determine_ramification": 1,
+      "reverse collapse coefficients": 7,
+      "root and resultant inverse": 12,
+      "same-prime order transition": 7,
+      "sharp forward p-denominator": 7,
+      "third E derivative is square unit": 5724,
+      "two ramified factors have square ratio": 5724,
+      "unique infinity chart inverse": 2
+    },
+    "checks": 180267,
+    "elapsed_seconds": 2.385332697999729,
+    "output_sha256": {
+      "examples.json": "a91afd4e9a45de1baf3551527bb3244502e655b23d248a2000e5bbd44160670d",
+      "scan.json": "c7758b41a41c7c6fdfef94a6945714ad70950ae46d7c827b79cbba097d2433e8"
+    },
+    "primes": 211,
+    "rejected": [
+      "seven_points_are_eight",
+      "three_Qp_points_determine_ramification",
+      "negative_square_supplies_its_unavailable_word",
+      "blocked_cofactor_has_a_different_word",
+      "infinity_inverse_forces_rational_reciprocals",
+      "ramified_inverse_has_integral_first_coordinate"
+    ],
+    "source_sha256": "de043e6e316c75924b9825998b119078b124ab98fff5b3de7ebf0feaa3ff1efb",
+    "success": true,
+    "totals": {
+      "E": 5700,
+      "M": 5268,
+      "Qp^3 x ramified_quadratic^2": 5700,
+      "Qp^3 x unramified_quadratic^2": 5268,
+      "divisor_vectors": 1877004,
+      "square_alpha_blocked": 84,
+      "square_alpha_pass": 89,
+      "square_beta_blocked": 42,
+      "square_beta_pass": 37
+    },
+    "universal_ES_proved": false
+  },
+  "normal_optimized_agreement": {
+    "examples.json": true,
+    "scan.json": true
+  },
+  "pdfs": {
+    "preprint": {
+      "pages": 3,
+      "sha256": "9240a9ac38c09cf9137bc1fe27bbd2c8c9f065e1c5318ca2622a48fceb3b791a",
+      "warnings": [
+        "Overfull \\hbox (11.2776pt too wide) in paragraph at lines 184--189"
+      ]
+    },
+    "workbench": {
+      "pages": 8,
+      "sha256": "2ffdeebb1f69fa1b5fedf33d9e86a7f7a6c3714afd278c37abad3f53646f401d",
+      "warnings": [
+        "Overfull \\hbox (2.40137pt too wide) in paragraph at lines 355--360",
+        "Overfull \\hbox (11.60266pt too wide) in paragraph at lines 431--439"
+      ]
+    }
+  },
+  "runs": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "certificates"
+      ],
+      "log": "run_0.log",
+      "returncode": 0,
+      "seconds": 2.9947145430001
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "certificates_optimized"
+      ],
+      "log": "run_1.log",
+      "returncode": 0,
+      "seconds": 3.035225755999818
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "check_independent.py",
+        "--input",
+        "certificates",
+        "--out",
+        "certificates/independent.json"
+      ],
+      "log": "run_2.log",
+      "returncode": 0,
+      "seconds": 1.9289901810002448
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "workbench.tex"
+      ],
+      "log": "run_3.log",
+      "returncode": 0,
+      "seconds": 0.4689287700002751
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "workbench.tex"
+      ],
+      "log": "run_4.log",
+      "returncode": 0,
+      "seconds": 0.4651488239996979
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "preprint.tex"
+      ],
+      "log": "run_5.log",
+      "returncode": 0,
+      "seconds": 0.4231991480000943
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "preprint.tex"
+      ],
+      "log": "run_6.log",
+      "returncode": 0,
+      "seconds": 0.43466095299982044
+    }
+  ],
+  "source_sha256": {
+    "check_independent.py": "e085bcae66bea31ff58eebe268934d65a41efdb35baa6544a00555780275e249",
+    "core.tex": "ac1270fcdf747137ad74d6c2c6e3cabd406d1fd8cec878e5e38be248e890f853",
+    "preprint.tex": "7fa229c29c66895e6af4ca9f00f995f7060eaf16813792d5d5d4296e60d2c5a9",
+    "root_orders.tex": "d916124f0b4f2ffbc33210e1ed31f50d673a81395f9c5323c8db2d1925324b43",
+    "verify.py": "de043e6e316c75924b9825998b119078b124ab98fff5b3de7ebf0feaa3ff1efb",
+    "workbench.tex": "2ef824b41e5af43a84877bc6f852d0105a5d484bb9dc80bdc09f3b0d1fb19f89"
+  },
+  "success": true,
+  "turn7_universal_existence_completed": false,
+  "universal_ES_proved": false
+}

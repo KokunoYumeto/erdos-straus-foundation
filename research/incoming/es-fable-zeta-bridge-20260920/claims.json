@@ -1,6 +1,13 @@
 {
   "schema_version": 1,
   "date": "2026-09-20",
+  "integrated_claim_files": [
+    "../es-turn07-capacity-completion-20260920/claims.json",
+    "../es-rh-multi-20260920/claims.json",
+    "../es-defining-prime-continuation-20260920/claims.json",
+    "../es-rh-continuation-b-20260920/claims.json",
+    "../es-turn07-integral-completion-20260920/claims.json"
+  ],
   "claims": [
     {
       "id": "SZ-20260920-019",
@@ -56,12 +63,137 @@
       "status": "proved",
       "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Section 8, EZ36",
       "statement": "A chosen root bijection gives a zero-kernel evaluation/interpolation algebra isomorphism; realization by one projective map is obstructed exactly by cross-ratio mismatch."
+    },
+    {
+      "id": "SZ-20260920-026",
+      "title": "Exact symmetric quotient and smooth arithmetic chart",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Section 3, EZ9a-EZ9h",
+      "certificate": "verify_es_fable_zeta_bridge.py",
+      "dependencies": ["SZ-20260920-019"],
+      "statement": "On D(u0u3u4), V(G) is exactly the S3 quotient of the nonzero symmetric ES solution scheme. The inverse recovers p,s1,s2,s3; G is irreducible; its reduced singular support is u3=u4=0, outside the arithmetic chart. The two distinct collision divisors and their positive integral examples are retained."
+    },
+    {
+      "id": "SZ-20260920-027",
+      "title": "Explicit fixed-receiver equation and prime-state selector",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Section 7, EZ34a-EZ34n",
+      "certificate": "verify_es_fable_zeta_bridge.py",
+      "dependencies": ["SZ-20260920-021", "SZ-20260920-024", "SZ-20260920-026"],
+      "statement": "The inverse moment recursion, reference-root evaluation and K frame give explicit receiver linear forms U0,U2,U3,U4. Their quartic F_*=G(Psi_*^-1 r) is irreducible, recovers p and the symmetric denominator coordinates, and a displayed polynomial equation selects exactly the two p-marked states in each distinct-root eight-point receiver fibre."
+    },
+    {
+      "id": "SZ-20260920-028",
+      "title": "Complete prime-local reciprocal Fable fibre",
+      "status": "proved-with-integration-corrections",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, EZ28a-EZ28k; ../es-turn07-fabel-arithmetic-bridge-20260920/corrected/core.tex",
+      "certificate": "../es-turn07-fabel-arithmetic-bridge-20260920/verify.py",
+      "statement": "For every original E or M state, the reciprocal suspension has seven reduced geometric affine inverse points and exactly three Q_p-points. Its algebra is Q_p^3 times two ramified quadratic fields in E and Q_p^3 times two unramified quadratic fields in M."
+    },
+    {
+      "id": "SZ-20260920-029",
+      "title": "Exact reciprocal root order and interpolation loss",
+      "status": "proved-with-integration-corrections",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, EZ28l-EZ28q; ../es-turn07-fabel-arithmetic-bridge-20260920/corrected/root_orders.tex",
+      "statement": "The exterior root order is {(z1,z2,z3) in Z_p^3 : z1=z2 mod p}, with conductor pZ_p x pZ_p x Z_p, while the middle root order is maximal. The labelled exterior-to-middle interpolation has valuations (0,-1,-1), whereas the reverse interpolation is integral."
+    },
+    {
+      "id": "SZ-20260920-030",
+      "title": "Corrected negative-four-square same-prime transfer",
+      "status": "proved-after-written-fibre-correction",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, EZ28r-EZ28z; ../es-turn07-fabel-arithmetic-bridge-20260920/corrected/core.tex",
+      "statement": "On the exact selected-word domain c | (h+1)/4, a negative-four-square exterior coordinate gives an original same-prime middle state. The alpha inverse fibre retains the material original gate R_s | 4hr^2+1."
+    },
+    {
+      "id": "SZ-20260920-031",
+      "title": "Complete fixed-cofactor middle fibre",
+      "status": "proved-and-exactly-replayed",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, EZ28P-EZ28X; ../es-turn07-fabel-arithmetic-bridge-20260920/corrected/fixed_cofactor_atlas.tex",
+      "certificate": "../es-turn07-fabel-arithmetic-bridge-20260920/verify_integration_extensions.py",
+      "dependencies": ["SZ-20260920-030"],
+      "statement": "The complete divisor set U | ((h+1)/4)^2 with h | p+4U is in exact bijection with all original middle states at p whose normalized cofactor is Q=h. This strictly extends the selected square words and sends every already-classified exterior shape of radius at most eight to the middle channel."
+    },
+    {
+      "id": "SZ-20260920-032",
+      "title": "Exact literal-quartic to reciprocal-suspension elementary transform",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, EZ28A-EZ28O",
+      "certificate": "verify_es_fable_zeta_bridge.py",
+      "dependencies": ["SZ-20260920-020", "SZ-20260920-023"],
+      "statement": "The literal-root quartic and reciprocal suspension are related by the exact transform u4^-1 V/(U-V) H_ES(pV,U), which is inversion, deletion of the marked root one, insertion of infinity and retained normalization. The coefficient map has one-dimensional scale fibre, the projective root schemes are explicitly isomorphic, collisions and discriminants transport exactly, and the two signed covers meet in a 14-point fibre product. A direct generic signed map is obstructed by the nonsquare derivative-twist divisor; after its quadratic trivialization the projective correspondence is 8-to-8 while the affine chart forgets exactly the prime sign."
+    },
+    {
+      "id": "SZ-20260920-033",
+      "title": "Exact three-dimensional raw-cell transport",
+      "status": "verified-reproduced",
+      "proof": "FABLE_ES_TETRAHEDRON.tex, EZ35A-EZ35D",
+      "certificate": "verify_fable_es_raw_tetrahedron.py",
+      "source": "Erdos-Straus Project Reader, Zenodo record 21845035, theorem thm:Fable-ES-raw-tetrahedron-quarter-altitude",
+      "statement": "The retained raw-cell basis maps by an explicit determinant -1/2 matrix to one spacelike and three null Lorentz vectors. Their spatial projection has face edges 2sqrt(3), apex edges sqrt(65)/4, volume sqrt(3)/4, and exact face-centroid displacement (0,1/4,0)."
+    },
+    {
+      "id": "SZ-20260920-034",
+      "title": "Exact odd receiving divisor on the ES coefficient locus",
+      "status": "proved",
+      "proof": "ODD_RECEIVER_ES_PULLBACK.tex, EZ37-EZ46",
+      "certificate": "verify_odd_receiver_es_pullback.py",
+      "dependencies": ["SZ-20260920-019", "SZ-20260920-024"],
+      "statement": "The determinant of the original odd receiving matrix is a displayed coefficient polynomial divided by A^3. Its pullback to the ES locus is p^2 Phi(T,Z)/(1+T)^6, where Phi is an explicit primitive irreducible polynomial over Q. The supplied coefficient point from the receiving-frame calculation is proved not to lie on the ES coefficient hypersurface."
+    },
+    {
+      "id": "SZ-20260920-035",
+      "title": "Positive-real odd-divisor intersection and exact prime-integral residue",
+      "status": "proved",
+      "proof": "ODD_RECEIVER_ES_PULLBACK.tex, EZ47-EZ48",
+      "certificate": "verify_odd_receiver_es_pullback.py",
+      "dependencies": ["SZ-20260920-034"],
+      "statement": "An exact one-parameter family has a sign change proving that the odd receiving divisor meets the positive-real pairwise-distinct ES locus. A positive rational point lifts to an integral prime-numerator witness exactly under the stated cubic splitting and common-denominator criterion; existence of such a rational divisor point is not asserted."
+    },
+    {
+      "id": "SZ-20260920-036",
+      "title": "All hard-prime witnesses enter the eight-sheet domain",
+      "status": "proved",
+      "proof": "FIXED_INPUT_BOUNDARY_MONODROMY.tex, EZ49-EZ56",
+      "certificate": "verify_fixed_input_boundary.py",
+      "dependencies": ["SZ-20260920-019", "SZ-20260920-020"],
+      "statement": "For every positive integral ES witness at a prime p congruent to 1 modulo 12, the four roots p,x,y,z are pairwise distinct. At each fixed p, explicit p-dependent bounds separate the discriminant and root derivatives from zero and bound every signed inverse coordinate and every fixed receiving Gram norm."
+    },
+    {
+      "id": "SZ-20260920-037",
+      "title": "Fixed-input rank-2+6 cover with order-48 monodromy",
+      "status": "proved",
+      "proof": "FIXED_INPUT_BOUNDARY_MONODROMY.tex, EZ57-EZ66",
+      "certificate": "verify_fixed_input_boundary.py",
+      "dependencies": ["SZ-20260920-020"],
+      "arithmetic_application": "SZ-20260920-036 places every positive integral hard-prime witness in the open base of this cover.",
+      "statement": "At fixed nonzero p and over the open coefficient base B_p={(A,C): A C d_p Disc(g_p) != 0}, the signed inverse algebra splits into a marked rank-two factor and a denominator rank-six factor. The exact monodromy group has order 48, the deck group is C2 x C2, and the averaged metric decomposes as a full 2-by-2 trivial block plus scalar blocks on V2, the prime-odd determinant character, and V3."
+    },
+    {
+      "id": "SZ-20260920-038",
+      "title": "Finite rank-eight collision completion and local ES--paired-root map",
+      "status": "proved",
+      "proof": "FIXED_INPUT_BOUNDARY_MONODROMY.tex, EZ67-EZ76",
+      "certificate": "verify_fixed_input_boundary.py",
+      "dependencies": ["SZ-20260920-020"],
+      "statement": "The reciprocal coordinate eta=xi^-1 defines a finite flat rank-eight extension. An m-fold root has a displayed length-2m local algebra, a double root gives C[eta]/(eta^4), and the rational ES boundary family has an exact scaled local-algebra isomorphism to the auxiliary paired-root fibre. The original meromorphic pole remains and no global zeta-zero identification is made."
+    },
+    {
+      "id": "SZ-20260920-039",
+      "title": "Invertible marked odd-moment frame",
+      "status": "proved",
+      "proof": "FIXED_INPUT_BOUNDARY_MONODROMY.tex, EZ77-EZ80",
+      "certificate": "verify_fixed_input_boundary.py",
+      "dependencies": ["SZ-20260920-034"],
+      "statement": "On the ordered signed-root cover, the Vandermonde moment frame U has determinant plus or minus A^-2. The original odd evaluation factors exactly as O=V_h U, and the complete Lagrange inverse is explicit, locating the additional receiving divisor in V_h rather than the moment carrier."
     }
   ],
   "nonclaims": [
     "No universal ES occupancy theorem is inferred.",
     "The coefficient hypersurface does not by itself impose the arithmetic source conditions.",
     "No ES root is identified with a Riemann-zeta zero.",
-    "The fixed receiving isomorphism is not identified with the conductor."
+    "The fixed receiving isomorphism is not identified with the conductor.",
+    "The three quadratic-character conditions are sufficient for receiving-frame nonsingularity, not necessary.",
+    "The finite-field signed-cover zeta function is not the Riemann zeta function.",
+    "Finite flatness, normalization and a local section do not create an original positive integral ES source."
   ]
 }

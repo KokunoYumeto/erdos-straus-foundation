@@ -1,0 +1,105 @@
+% Additional proved CRT variant; companion fragment to core.tex.
+\section{A finite-place and bounded-size test does not ensure integrality}
+The supplied real separation estimates \cite[\S1.2, equations (2)--(4)]{Input}
+are necessary at an integral witness. The next theorem checks their logical
+strength on explicit targets. It is not a new assertion about the Brauer group.
+For the distinction between natural solutions and arithmetic approximation see
+\cite[Theorems 1.1, 1.8 and 1.9]{BL}.
+
+\begin{theorem}[Explicit rational controls for any fixed finite place set]
+\label{thm:crtcontrols}
+Let $\Sigma$ be any fixed finite set of rational primes. There are infinitely
+many primes $p\equiv1\pmod{840}$ with a positive rational triple $(x,y,z)$ such
+that the following all hold:
+\begin{enumerate}
+\item $4/p=1/x+1/y+1/z$, with $p/4<x<p/2$ and four separated literal roots;
+\item $x,y,z\in\Z_q$ for every $q\in\Sigma\cup\{p\}$;
+\item the literal prime-local completion has precisely the Type-II signatures,
+Smith exponents, conductor and four-rational-point case proved above;
+\item with $s_p=(p^2+3p)/4$, $B_p=p+s_p(s_p+1)$,
+\[
+ S<B_p,\quad\max(x,y,z)<s_p(s_p+1)/3,\quad
+ \Disc(\mathcal H)\ge144/B_p^6,\quad
+ 2/S\le|\mathcal H'(\ell_i)|\le S^2;
+\]
+\item one specified prime $l\notin\Sigma\cup\{p\}$ has $v_l(z)=-1$, so this
+particular triple is not integral;
+\item the same $p$ has a separately displayed original integer E solution.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Choose a prime $l\ge13$ outside $\Sigma$, and let $M=l^2\prod_{q\in\Sigma}q$.
+Use the reduced progression
+\[
+ p\equiv1\pmod{840},\qquad p\equiv1\pmod l,\qquad p\equiv-1\pmod{11}.
+                                                               \tag{IC32}
+\]
+Its moduli are pairwise coprime, and its residues are units. Dirichlet's theorem
+\cite[Theorem 18.1]{Dirichlet} supplies infinitely many prime members. Take
+$p>\max\Sigma$ and $p^2\ge128M$, and set $a=(p+3)/4$. Select $b$ by CRT:
+\[
+ b\equiv3\pmod p,\qquad
+ b\equiv\begin{cases}1\pmod q,&q\mid a,\\0\pmod q,&q\nmid a,\end{cases}
+ \quad(q\in\Sigma),
+ \qquad 3b-a\equiv l\pmod{l^2}.                         \tag{IC33}
+\]
+There is one residue modulo $pM$. Add $pM$ to its least nonnegative representative,
+so $pM\le b<2pM$. Put
+\[
+ c=\frac{ab}{3b-a},\qquad (x,y,z)=(a,pb,pc).             \tag{IC34}
+\]
+Then $a/3<c<a/2$, and direct addition proves the ES identity. For $q\in\Sigma$,
+$3b-a$ is a unit: if $q\mid a$ then $q\ne3$ and $b=1$; otherwise use $b=0$.
+At $l$, $a\equiv1$, so $b\equiv1/3$ and $v_l(3b-a)=1$, while $ab$ is a unit.
+Thus $v_l(z)=-1$, with no cancellation.
+
+At $p$, the normalized cluster roots are $1,3,3/11$. The character of $11$
+is $-1$ by (IC32) and reciprocity. The derivative residues in (IC14) consequently
+have signs $(-1,-1,1)$, because $3,5,-1$ are squares at a hard prime.
+All distinctness and unit conditions used in the cluster and normalization theorems (Theorems 2.2 and 4.1) of the companion workbench proof
+therefore hold literally for this rational triple, giving the four-point M case.
+No global square-divisor state is inferred.
+
+For the quantitative bounds, $p<a/3\cdot p<pc<p a/2<pb$ and $a<p$; more precisely
+$pc-p>p(p-9)/12>1$ for $p\ge13$. The other two successive gaps in the ordered
+list $a,p,pc,pb$ are also greater than one. Further,
+\[
+ S<(2M+1)p^2\le3Mp^2,
+ \qquad \max(x,y,z)<2Mp^2.
+\]
+Since $B_p\ge p^4/16$ and $s_p(s_p+1)/3\ge p^4/48$, the condition
+$p^2\ge128M$ proves the two stated upper bounds. Four real numbers with successive
+gaps at least one have Vandermonde modulus at least $1\cdot2\cdot3\cdot1\cdot2\cdot1=12$.
+At a selected root the product of its three difference moduli is at least two
+and at most $S^3$. These prove the displayed discriminant and derivative bounds.
+
+Finally $11\mid p+1$. The separately original state
+\[
+ R_0=11,\quad a_0=u_0=(p+11)/4,\quad
+ (h,r,s,\kappa)=(a_0,1,1,(p+1)/11)
+\]
+returns $(a_0,a_0\kappa,pa_0\kappa)$. This proves the last assertion and excludes
+any interpretation of the construction as an ES counterexample.
+\end{proof}
+
+For $\Sigma=\{2,3,5,7,11\}$ and $l=13$, the first certified example used here is
+\[
+ p=207481,\quad a=51871,\quad b=95637744510,
+ \quad c=\frac{4960825445478210}{286913181659}.             \tag{IC35}
+\]
+The nonintegral denominator in the rational ES triple is
+\[
+ z=\frac{1029277024253264489010}{286913181659},\qquad v_{13}(z)=-1.
+\]
+Its independent original endpoint solution has denominators
+\[
+ (51873,978428526,203005329003006).
+\]
+The certificate also checks prime parameters $567841$ and $687961$ in the same
+progression. Trial division proves each of these primality assertions.
+
+Theorem~\ref{thm:crtcontrols} does not concern all places simultaneously, nor a
+$p$-dependent complete set of possible denominator primes. The omitted prime is
+an explicit place where the target fails the original integrality condition.
+It shows why a fixed finite set of local checks, even with these exact real
+bounds and the rank-eight completion, is not itself that condition.

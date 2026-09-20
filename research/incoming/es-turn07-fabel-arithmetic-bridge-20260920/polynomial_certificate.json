@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "statements": {
+    "incidence": true,
+    "resultant": true,
+    "factor_product": true,
+    "constant_Jacobian_minus_two": true
+  },
+  "determinant_terms": [
+    [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0
+      ]
+    ]
+  ],
+  "arithmetic": "Sparse polynomials over Gaussian integers; all coefficients exact.",
+  "source_sha256": "2e4c1e7e5544bf7d1964d61e91cc1ea765f8ffbfb0f3aa06816a87479b4ca351"
+}

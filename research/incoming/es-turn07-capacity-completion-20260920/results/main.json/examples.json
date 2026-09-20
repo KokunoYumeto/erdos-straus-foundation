@@ -1,0 +1,1410 @@
+{
+  "beta27_failure": {
+    "W_hits": [],
+    "canonical_available": false,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 5
+      },
+      {
+        "W": 3,
+        "residue": 3,
+        "target": 5
+      },
+      {
+        "W": 9,
+        "residue": 9,
+        "target": 5
+      }
+    ],
+    "j": 3,
+    "side": "beta",
+    "source": {
+      "D": 999,
+      "R": 158999,
+      "a": 188100,
+      "a_factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "alpha": -158108,
+      "beta": -108,
+      "centered_exponents": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          -2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        188100,
+        702009,
+        87943155661900
+      ],
+      "exponent_box": [
+        [
+          2,
+          -2,
+          2
+        ],
+        [
+          3,
+          -2,
+          2
+        ],
+        [
+          5,
+          -2,
+          2
+        ],
+        [
+          11,
+          -1,
+          1
+        ],
+        [
+          19,
+          -1,
+          1
+        ]
+      ],
+      "h": 11,
+      "k": 7091,
+      "p": 593401,
+      "r": 1900,
+      "s": 9,
+      "u": 39710000,
+      "v": 891
+    },
+    "t": 27,
+    "targets": []
+  },
+  "beta5_failure": {
+    "W_hits": [],
+    "canonical_available": false,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 5
+      },
+      {
+        "W": 3,
+        "residue": 3,
+        "target": 5
+      },
+      {
+        "W": 9,
+        "residue": 9,
+        "target": 5
+      }
+    ],
+    "j": 3,
+    "side": "beta",
+    "source": {
+      "D": 1879,
+      "R": 988443,
+      "a": 929071,
+      "a_factorization": [
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          73,
+          1
+        ],
+        [
+          89,
+          1
+        ]
+      ],
+      "alpha": -986584,
+      "beta": -20,
+      "centered_exponents": [
+        [
+          11,
+          0
+        ],
+        [
+          13,
+          -1
+        ],
+        [
+          73,
+          1
+        ],
+        [
+          89,
+          1
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        929071,
+        2563990,
+        3495464486553710
+      ],
+      "exponent_box": [
+        [
+          11,
+          -1,
+          1
+        ],
+        [
+          13,
+          -1,
+          1
+        ],
+        [
+          73,
+          -1,
+          1
+        ],
+        [
+          89,
+          -1,
+          1
+        ]
+      ],
+      "h": 11,
+      "k": 17930,
+      "p": 2727841,
+      "r": 6497,
+      "s": 13,
+      "u": 464321099,
+      "v": 1859
+    },
+    "t": 5,
+    "targets": []
+  },
+  "beta8_failure": {
+    "W_hits": [],
+    "canonical_available": false,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 8
+      },
+      {
+        "W": 2,
+        "residue": 2,
+        "target": 8
+      },
+      {
+        "W": 3,
+        "residue": 3,
+        "target": 8
+      },
+      {
+        "W": 4,
+        "residue": 4,
+        "target": 8
+      },
+      {
+        "W": 6,
+        "residue": 6,
+        "target": 8
+      },
+      {
+        "W": 9,
+        "residue": 9,
+        "target": 8
+      },
+      {
+        "W": 12,
+        "residue": 12,
+        "target": 8
+      },
+      {
+        "W": 18,
+        "residue": 18,
+        "target": 8
+      },
+      {
+        "W": 36,
+        "residue": 13,
+        "target": 8
+      }
+    ],
+    "j": 6,
+    "side": "beta",
+    "source": {
+      "D": 607,
+      "R": 289059,
+      "a": 158815,
+      "a_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          1381,
+          1
+        ]
+      ],
+      "alpha": -288484,
+      "beta": -32,
+      "centered_exponents": [
+        [
+          5,
+          -1
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          1381,
+          1
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        158815,
+        190210,
+        18188016428402
+      ],
+      "exponent_box": [
+        [
+          5,
+          -1,
+          1
+        ],
+        [
+          23,
+          -1,
+          1
+        ],
+        [
+          1381,
+          -1,
+          1
+        ]
+      ],
+      "h": 23,
+      "k": 1654,
+      "p": 346201,
+      "r": 1381,
+      "s": 5,
+      "u": 43864703,
+      "v": 575
+    },
+    "t": 8,
+    "targets": []
+  },
+  "beta9_automatic": {
+    "W_hits": [
+      9
+    ],
+    "canonical_available": true,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 9
+      },
+      {
+        "W": 3,
+        "residue": 3,
+        "target": 9
+      },
+      {
+        "W": 5,
+        "residue": 5,
+        "target": 9
+      },
+      {
+        "W": 9,
+        "residue": 9,
+        "target": 9
+      },
+      {
+        "W": 15,
+        "residue": 15,
+        "target": 9
+      },
+      {
+        "W": 25,
+        "residue": 25,
+        "target": 9
+      },
+      {
+        "W": 45,
+        "residue": 45,
+        "target": 9
+      },
+      {
+        "W": 75,
+        "residue": 16,
+        "target": 9
+      },
+      {
+        "W": 225,
+        "residue": 48,
+        "target": 9
+      }
+    ],
+    "j": 15,
+    "side": "beta",
+    "source": {
+      "D": 95,
+      "R": 1811,
+      "a": 1593,
+      "a_factorization": [
+        [
+          3,
+          3
+        ],
+        [
+          59,
+          1
+        ]
+      ],
+      "alpha": -1752,
+      "beta": -36,
+      "centered_exponents": [
+        [
+          3,
+          3
+        ],
+        [
+          59,
+          0
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        1593,
+        4012,
+        494065764
+      ],
+      "exponent_box": [
+        [
+          3,
+          -3,
+          3
+        ],
+        [
+          59,
+          -1,
+          1
+        ]
+      ],
+      "h": 59,
+      "k": 68,
+      "p": 4561,
+      "r": 27,
+      "s": 1,
+      "u": 43011,
+      "v": 59
+    },
+    "t": 9,
+    "targets": [
+      {
+        "R": 79,
+        "a": 1160,
+        "a_factorization": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            29,
+            1
+          ]
+        ],
+        "centered_exponents": [
+          [
+            2,
+            -3
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            29,
+            -1
+          ]
+        ],
+        "channel": "M",
+        "denominators": [
+          1160,
+          3174456,
+          68415
+        ],
+        "exponent_box": [
+          [
+            2,
+            -3,
+            3
+          ],
+          [
+            5,
+            -1,
+            1
+          ],
+          [
+            29,
+            -1,
+            1
+          ]
+        ],
+        "h": 1,
+        "k": 3,
+        "p": 4561,
+        "r": 5,
+        "s": 232,
+        "u": 25
+      }
+    ]
+  },
+  "both_square_failure": {
+    "W_hits": [],
+    "canonical_available": false,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 17
+      },
+      {
+        "W": 2,
+        "residue": 2,
+        "target": 17
+      },
+      {
+        "W": 4,
+        "residue": 4,
+        "target": 17
+      },
+      {
+        "W": 13,
+        "residue": 13,
+        "target": 17
+      },
+      {
+        "W": 26,
+        "residue": 26,
+        "target": 17
+      },
+      {
+        "W": 52,
+        "residue": 52,
+        "target": 17
+      },
+      {
+        "W": 169,
+        "residue": 66,
+        "target": 17
+      },
+      {
+        "W": 338,
+        "residue": 29,
+        "target": 17
+      },
+      {
+        "W": 676,
+        "residue": 58,
+        "target": 17
+      }
+    ],
+    "j": 26,
+    "side": "alpha",
+    "source": {
+      "D": 12719,
+      "R": 15827,
+      "a": 791967,
+      "a_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          103,
+          1
+        ],
+        [
+          233,
+          1
+        ]
+      ],
+      "alpha": -3364,
+      "beta": -256,
+      "centered_exponents": [
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          103,
+          0
+        ],
+        [
+          233,
+          1
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        791967,
+        157724930,
+        31591968801037170
+      ],
+      "exponent_box": [
+        [
+          3,
+          -1,
+          1
+        ],
+        [
+          11,
+          -1,
+          1
+        ],
+        [
+          103,
+          -1,
+          1
+        ],
+        [
+          233,
+          -1,
+          1
+        ]
+      ],
+      "h": 103,
+      "k": 139210,
+      "p": 3152041,
+      "r": 699,
+      "s": 11,
+      "u": 50325903,
+      "v": 12463
+    },
+    "t": 841,
+    "targets": []
+  },
+  "finite_repair": {
+    "W_hits": [
+      25
+    ],
+    "canonical_available": false,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 6
+      },
+      {
+        "W": 5,
+        "residue": 5,
+        "target": 6
+      },
+      {
+        "W": 25,
+        "residue": 6,
+        "target": 6
+      }
+    ],
+    "j": 5,
+    "side": "alpha",
+    "source": {
+      "D": 208412999,
+      "R": 43,
+      "a": 206321,
+      "a_factorization": [
+        [
+          19,
+          1
+        ],
+        [
+          10859,
+          1
+        ]
+      ],
+      "alpha": -24,
+      "beta": -208412980,
+      "centered_exponents": [
+        [
+          19,
+          0
+        ],
+        [
+          10859,
+          1
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        206321,
+        3959640660,
+        35483496244565892540
+      ],
+      "exponent_box": [
+        [
+          19,
+          -1,
+          1
+        ],
+        [
+          10859,
+          -1,
+          1
+        ]
+      ],
+      "h": 19,
+      "k": 208402140,
+      "p": 825241,
+      "r": 10859,
+      "s": 1,
+      "u": 2240439739,
+      "v": 19
+    },
+    "t": 6,
+    "targets": [
+      {
+        "R": 43439,
+        "a": 217170,
+        "a_factorization": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            19,
+            1
+          ],
+          [
+            127,
+            1
+          ]
+        ],
+        "centered_exponents": [
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            -2
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            19,
+            -1
+          ],
+          [
+            127,
+            -1
+          ]
+        ],
+        "channel": "M",
+        "denominators": [
+          217170,
+          35843517594,
+          4126205
+        ],
+        "exponent_box": [
+          [
+            2,
+            -1,
+            1
+          ],
+          [
+            3,
+            -2,
+            2
+          ],
+          [
+            5,
+            -1,
+            1
+          ],
+          [
+            19,
+            -1,
+            1
+          ],
+          [
+            127,
+            -1,
+            1
+          ]
+        ],
+        "h": 1,
+        "k": 1,
+        "p": 825241,
+        "r": 5,
+        "s": 43434,
+        "u": 25
+      }
+    ]
+  },
+  "infinite_progression_member": {
+    "W_hits": [],
+    "canonical_available": false,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 4
+      },
+      {
+        "W": 11,
+        "residue": 11,
+        "target": 4
+      },
+      {
+        "W": 121,
+        "residue": 35,
+        "target": 4
+      }
+    ],
+    "j": 11,
+    "side": "alpha",
+    "source": {
+      "D": 6057875639,
+      "R": 59,
+      "a": 1960155,
+      "a_factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          1013,
+          1
+        ]
+      ],
+      "alpha": -16,
+      "beta": -6057875596,
+      "centered_exponents": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          43,
+          0
+        ],
+        [
+          1013,
+          1
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        1960155,
+        260486692322,
+        93101062691240009385570
+      ],
+      "exponent_box": [
+        [
+          3,
+          -2,
+          2
+        ],
+        [
+          5,
+          -1,
+          1
+        ],
+        [
+          43,
+          -1,
+          1
+        ],
+        [
+          1013,
+          -1,
+          1
+        ]
+      ],
+      "h": 43,
+      "k": 6057830054,
+      "p": 7840561,
+      "r": 45585,
+      "s": 1,
+      "u": 89353665675,
+      "v": 43
+    },
+    "t": 4,
+    "targets": []
+  },
+  "inverse_domain_correction": {
+    "E_remainder": 1299,
+    "R": 2391,
+    "a": 1900,
+    "affected": "predecessor prose only; predecessor inverse_source_fibre checked the E gate",
+    "correct_full_fibre": [
+      [
+        "E",
+        1330,
+        18620,
+        111,
+        95,
+        14,
+        1,
+        657,
+        1330,
+        62415,
+        4551676290
+      ]
+    ],
+    "h": 95,
+    "p": 5209,
+    "r": 4,
+    "s": 5,
+    "t": 4,
+    "u": 1520
+  },
+  "old_square_failure": {
+    "W_hits": [],
+    "canonical_available": false,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 5
+      },
+      {
+        "W": 2,
+        "residue": 2,
+        "target": 5
+      },
+      {
+        "W": 4,
+        "residue": 4,
+        "target": 5
+      },
+      {
+        "W": 8,
+        "residue": 8,
+        "target": 5
+      },
+      {
+        "W": 16,
+        "residue": 16,
+        "target": 5
+      },
+      {
+        "W": 32,
+        "residue": 1,
+        "target": 5
+      },
+      {
+        "W": 64,
+        "residue": 2,
+        "target": 5
+      }
+    ],
+    "j": 8,
+    "side": "alpha",
+    "source": {
+      "D": 479,
+      "R": 175,
+      "a": 806,
+      "a_factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "alpha": -144,
+      "beta": -448,
+      "centered_exponents": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          31,
+          0
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        806,
+        14043,
+        1113244782
+      ],
+      "exponent_box": [
+        [
+          2,
+          -1,
+          1
+        ],
+        [
+          13,
+          -1,
+          1
+        ],
+        [
+          31,
+          -1,
+          1
+        ]
+      ],
+      "h": 31,
+      "k": 453,
+      "p": 3049,
+      "r": 26,
+      "s": 1,
+      "u": 20956,
+      "v": 31
+    },
+    "t": 36,
+    "targets": []
+  },
+  "old_square_success": {
+    "W_hits": [
+      4
+    ],
+    "canonical_available": true,
+    "complete_capacity": [
+      {
+        "W": 1,
+        "residue": 1,
+        "target": 4
+      },
+      {
+        "W": 2,
+        "residue": 2,
+        "target": 4
+      },
+      {
+        "W": 3,
+        "residue": 3,
+        "target": 4
+      },
+      {
+        "W": 4,
+        "residue": 4,
+        "target": 4
+      },
+      {
+        "W": 6,
+        "residue": 6,
+        "target": 4
+      },
+      {
+        "W": 8,
+        "residue": 8,
+        "target": 4
+      },
+      {
+        "W": 9,
+        "residue": 9,
+        "target": 4
+      },
+      {
+        "W": 12,
+        "residue": 12,
+        "target": 4
+      },
+      {
+        "W": 16,
+        "residue": 16,
+        "target": 4
+      },
+      {
+        "W": 18,
+        "residue": 18,
+        "target": 4
+      },
+      {
+        "W": 24,
+        "residue": 24,
+        "target": 4
+      },
+      {
+        "W": 32,
+        "residue": 32,
+        "target": 4
+      },
+      {
+        "W": 36,
+        "residue": 36,
+        "target": 4
+      },
+      {
+        "W": 48,
+        "residue": 48,
+        "target": 4
+      },
+      {
+        "W": 64,
+        "residue": 64,
+        "target": 4
+      },
+      {
+        "W": 72,
+        "residue": 72,
+        "target": 4
+      },
+      {
+        "W": 96,
+        "residue": 1,
+        "target": 4
+      },
+      {
+        "W": 144,
+        "residue": 49,
+        "target": 4
+      },
+      {
+        "W": 192,
+        "residue": 2,
+        "target": 4
+      },
+      {
+        "W": 288,
+        "residue": 3,
+        "target": 4
+      },
+      {
+        "W": 576,
+        "residue": 6,
+        "target": 4
+      }
+    ],
+    "j": 24,
+    "side": "alpha",
+    "source": {
+      "D": 671,
+      "R": 111,
+      "a": 1330,
+      "a_factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "alpha": -16,
+      "beta": -576,
+      "centered_exponents": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          19,
+          0
+        ]
+      ],
+      "channel": "E",
+      "denominators": [
+        1330,
+        62415,
+        4551676290
+      ],
+      "exponent_box": [
+        [
+          2,
+          -1,
+          1
+        ],
+        [
+          5,
+          -1,
+          1
+        ],
+        [
+          7,
+          -1,
+          1
+        ],
+        [
+          19,
+          -1,
+          1
+        ]
+      ],
+      "h": 95,
+      "k": 657,
+      "p": 5209,
+      "r": 14,
+      "s": 1,
+      "u": 18620,
+      "v": 95
+    },
+    "t": 4,
+    "targets": [
+      {
+        "R": 55,
+        "a": 1316,
+        "a_factorization": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            47,
+            1
+          ]
+        ],
+        "centered_exponents": [
+          [
+            2,
+            0
+          ],
+          [
+            7,
+            -1
+          ],
+          [
+            47,
+            -1
+          ]
+        ],
+        "channel": "M",
+        "denominators": [
+          1316,
+          41130264,
+          125016
+        ],
+        "exponent_box": [
+          [
+            2,
+            -2,
+            2
+          ],
+          [
+            7,
+            -1,
+            1
+          ],
+          [
+            47,
+            -1,
+            1
+          ]
+        ],
+        "h": 4,
+        "k": 6,
+        "p": 5209,
+        "r": 1,
+        "s": 329,
+        "u": 4
+      }
+    ]
+  },
+  "prime_realized_sharp_progressions": [
+    {
+      "Dirichlet_reduced": true,
+      "R": 43,
+      "W": 25,
+      "ell": 1,
+      "h": 19,
+      "j": 5,
+      "p_base": 629161,
+      "p_step": 686280,
+      "primality_of_base_claim": false,
+      "r_base": 8279,
+      "r_step": 9030,
+      "t": 6
+    },
+    {
+      "Dirichlet_reduced": true,
+      "R": 181903,
+      "W": 180625,
+      "ell": 106,
+      "h": 180199,
+      "j": 45050,
+      "p_base": 25239705379561,
+      "p_step": 27534140505480,
+      "primality_of_base_claim": false,
+      "r_base": 35016434,
+      "r_step": 38199630,
+      "t": 426
+    },
+    {
+      "Dirichlet_reduced": true,
+      "R": 716563,
+      "W": 714025,
+      "ell": 211,
+      "h": 713179,
+      "j": 178295,
+      "p_base": 393499619141161,
+      "p_step": 429271654372680,
+      "primality_of_base_claim": false,
+      "r_base": 137938589,
+      "r_step": 150478230,
+      "t": 846
+    },
+    {
+      "Dirichlet_reduced": true,
+      "R": 1604023,
+      "W": 1600225,
+      "ell": 316,
+      "h": 1598959,
+      "j": 399740,
+      "p_base": 1974872621961961,
+      "p_step": 2154404290127880,
+      "primality_of_base_claim": false,
+      "r_base": 308774744,
+      "r_step": 336844830,
+      "t": 1266
+    },
+    {
+      "Dirichlet_reduced": true,
+      "R": 2844283,
+      "W": 2839225,
+      "ell": 421,
+      "h": 2837539,
+      "j": 709385,
+      "p_base": 6214493014689961,
+      "p_step": 6779441709211080,
+      "primality_of_base_claim": false,
+      "r_base": 547524899,
+      "r_step": 597299430,
+      "t": 1686
+    },
+    {
+      "Dirichlet_reduced": true,
+      "R": 4437343,
+      "W": 4431025,
+      "ell": 526,
+      "h": 4428919,
+      "j": 1107230,
+      "p_base": 15132536518973161,
+      "p_step": 16508211486662280,
+      "primality_of_base_claim": false,
+      "r_base": 854189054,
+      "r_step": 931842030,
+      "t": 2106
+    }
+  ],
+  "progression": {
+    "R": 59,
+    "gcd": 1,
+    "h": 43,
+    "j": 11,
+    "no_claim": "The progression contains infinitely many primes by Dirichlet; not every member is prime.",
+    "p_base": 1447321,
+    "p_step": 2131080,
+    "prime_member": 7840561,
+    "prime_member_index": 3,
+    "r0_mod_R": 37,
+    "r_base": 8415,
+    "r_step": 12390,
+    "t": 4
+  }
+}

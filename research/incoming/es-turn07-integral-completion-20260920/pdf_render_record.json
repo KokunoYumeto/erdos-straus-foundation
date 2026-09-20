@@ -1,0 +1,113 @@
+{
+  "workbench": {
+    "pages": 10,
+    "text_sha256": "54630f0e74fc42d3c7dd7225a0c100457c1c596747e0acffb7d7af59b9e7b5bf",
+    "render_scale": 1.5,
+    "pixels": [
+      {
+        "page": 1,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "9b9ebbbafd95b6ced66a3ae0052f99f64d7848fd238faa8749761b5216ad31d3"
+      },
+      {
+        "page": 2,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "29895a8b1c0df3a83d34ba6d49b62e5cd6c9461a6a87f0da75692a64ab0267ea"
+      },
+      {
+        "page": 3,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "3138df8bf40d7bb73086e94c4bd578621a2457e4e67f2d6a601b280e34604b00"
+      },
+      {
+        "page": 4,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "d1be5bcd0c0d937507e173c8cb073455789d506f84fcd2e0c82a55de3fb749c3"
+      },
+      {
+        "page": 5,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "b4fbc2bacf022ef5e9687b23e881d818a8d5a59e1fc1eaffdaad744cf965d35b"
+      },
+      {
+        "page": 6,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "339e3c418bd58fd27dbdce21a84c4fecd34a1225d6a9ab1a93e81b7f83b88561"
+      },
+      {
+        "page": 7,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "10f38de33b6bce55a2b76941398f2d39f3cbb2f85802e3b1797da428eb082c2a"
+      },
+      {
+        "page": 8,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "c26d3bb141a3074eae92e750b2933e06cf17f7ce3a601e01b8865e9368019765"
+      },
+      {
+        "page": 9,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "463acde723ccaad96d8da1f320687b39a208c93da1607ee1e61d6343f3062641"
+      },
+      {
+        "page": 10,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "2cd8385f74a29ffc200408f86d9cc760b2f3552c6acf862e07407f1a9b7e7216"
+      }
+    ]
+  },
+  "preprint": {
+    "pages": 3,
+    "text_sha256": "95274888161492c8f585c1748c0eeb90f973bc2ead574b4b5abad10714a11bd5",
+    "render_scale": 1.5,
+    "pixels": [
+      {
+        "page": 1,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "c9d4c6ce9b363aa53f5b40e5420e949bd273c28737ebc12c0bee7a63b8ec77e9"
+      },
+      {
+        "page": 2,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "66c6853ed1aa4c9af8878c33e0fa5bd47eefebdfa31e5ef9c1c447b0db7e4890"
+      },
+      {
+        "page": 3,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "f5a4402fdea2e355bfd1e1118a91730d0a70aa84e8086d2161d925d67f1225ae"
+      }
+    ]
+  },
+  "crt_control": {
+    "pages": 2,
+    "text_sha256": "f80e1e5494d4f15f1c45a021c70a418197b06345d807a8573ca7b5f170269077",
+    "render_scale": 1.5,
+    "pixels": [
+      {
+        "page": 1,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "c3f518d77d409f025c81a802c6e269655fa419814f2b08f0545e7fa8cdf5f0e8"
+      },
+      {
+        "page": 2,
+        "width": 893,
+        "height": 1263,
+        "samples_sha256": "a1b229d0f15e3cd257a0daae8b11c5187cc7ab321c8c085438bb2e1f705638f3"
+      }
+    ]
+  }
+}

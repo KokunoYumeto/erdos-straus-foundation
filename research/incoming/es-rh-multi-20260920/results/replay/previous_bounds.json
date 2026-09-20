@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 244,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "bf35873ca28a788567b350d9db4e171563d50d9ec06fd96d53c5a7d4b55507fa",
+  "script": "check_previous_bounds.py",
+  "status": "PASS",
+  "suite": "previous_bounds"
+}

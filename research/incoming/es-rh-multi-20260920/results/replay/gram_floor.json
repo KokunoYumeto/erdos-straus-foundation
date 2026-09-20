@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 88,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "d659d3c60a1cbeb6e1e3169e43869f86a40cf6a0f7ee7f6a760cf10f690ef3b5",
+  "script": "check_gram_floor.py",
+  "status": "PASS",
+  "suite": "gram_floor"
+}

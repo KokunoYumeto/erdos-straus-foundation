@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-09-20",
-  "index_entrypoint": "C:/Users/Floris/Documents/Papors/Chatnotes/Zeta-Function-Foundation/config/literature_index_entrypoint.json",
+  "index_entrypoint": "local-corpus://Documents/Papors/Chatnotes/Zeta-Function-Foundation/config/literature_index_entrypoint.json",
   "index_queries": [
     "Meixner Pollaczek Gamma norm weighted conductor",
     "weighted conductor four Time Fable",
@@ -11,7 +11,7 @@
   "sources": [
     {
       "id": "PUBUNIT-1C9A160031EECC8F3F032D4D",
-      "file": "C:/Users/Floris/Documents/Papors/Chatnotes/ES-Fable-C123/es_fable_c123_preprint.tex",
+      "file": "local-corpus://Documents/Papors/Chatnotes/ES-Fable-C123/es_fable_c123_preprint.tex",
       "coverage": "content-read source lines 22314-22543: generic quartic factor product, resultant-one ES carrier, incidence equations, constant-Jacobian chart",
       "use": "lineage and antecedent for the normalized prime-plus-denominator quartic refinement"
     },
@@ -31,7 +31,7 @@
     },
     {
       "id": "WCF-FORWARD",
-      "file": "C:/Users/Floris/Documents/math/work/source_audit_intake_20260917/forward_continuation/WEIGHTED_CONDUCTOR_FORWARD.tex",
+      "file": "local-corpus://Documents/math/work/source_audit_intake_20260917/forward_continuation/WEIGHTED_CONDUCTOR_FORWARD.tex",
       "coverage": "content-read WCF1-WCF6",
       "use": "unchanged weighted spaces, measure, Meixner-Pollaczek frame, finite-shift conductor and triangular determinant"
     },
@@ -46,6 +46,104 @@
       ],
       "coverage": "content-read exact weight, norm, recurrence and generating-function equations",
       "use": "verification of the fixed Gamma metric and Meixner-Pollaczek dictionary"
+    },
+    {
+      "id": "ES-PROJECT-READER-ZENODO-21845035-V69",
+      "authors": "The Clankers",
+      "record_url": "https://zenodo.org/records/21845035",
+      "source_archive": "01_ERDOS_STRAUSS_Reader_Source_and_Build.zip",
+      "file": "local-corpus://Documents/math/tmp/zenodo_21845035_source/extracted/reader/erdos_straus_project_reader.tex",
+      "sha256": "678b3f70ee7d2a6d00f6c588d7778e390118ab4743a5759612dbba6430984c78",
+      "coverage": "content-read theorem thm:Fable-ES-raw-tetrahedron-quarter-altitude and its exact coordinate proof",
+      "use": "reproduced raw-cell to Lorentz transport and the exact three-dimensional spatial tetrahedron"
+    },
+    {
+      "id": "ES-PROJECT-READER-LOCAL-LATER-EDITION-22209908",
+      "authors": "The Clankers",
+      "file": "local-corpus://Documents/math/tmp/zenodo_22209908/source/reader/erdos_straus_project_reader.tex",
+      "sha256": "18d373f4223555e71875d7b7288235725810986ab4d4d8c95be68b6bbf4c5dbb",
+      "coverage": "checked only as a later local edition; it is not substituted for the exact record-21845035 source cited for the raw-tetrahedron theorem",
+      "use": "edition cross-check"
+    },
+    {
+      "id": "ES-FABLE-COMBINED-CONTINUATION-20260920",
+      "file": "received/combined-continuation-20260920.txt",
+      "sha256": "85d28cc83185acc948635f2b0386c2762e4330d3eff6a52634723b5db5f18a9e",
+      "coverage": "content-read all sections; independently replayed hard-prime bounds, fixed-input monodromy, finite completion, local fibres, odd-moment frame, and the separate RH-only resolvent material",
+      "use": "candidate source for EZ49-EZ80 after the corrections recorded in INTEGRATION_AUDIT_20260920.md",
+      "contribution_status": "user-supplied collective continuation; the originating task and individual contributor are not identified in the received file, so collective attribution is preserved and no individual is invented",
+      "excluded_from_es_theorem_chain": "The auxiliary-degree resolvent rate and subsequent RH observation-error propagation have no proved dependency on the ES construction and were preserved but not imported."
+    },
+    {
+      "id": "ES-INTEGRAL-COMPLETION-20260920",
+      "file": "../es-turn07-integral-completion-20260920/core.tex",
+      "sha256": "c09ac95f290487ee49de7d7dfceca6d914cc687130eb602117707b1617f3d987",
+      "coverage": "content-read complete original-lattice normalization, all Smith factors, conductor ideals, reduction kernels, boundary lift, reciprocal twist and finite-place control proof",
+      "use": "INTEGRAL_COMPLETION.tex and the identical-basis crosswalk to the defining-prime calculation",
+      "audit": "../es-turn07-integral-completion-20260920/INTEGRATION_AUDIT_20260920.md"
+    },
+    {
+      "id": "ES-DEFINING-PRIME-CONTINUATION-20260920",
+      "file": "../es-defining-prime-continuation-20260920/DEFINING_PRIME_CONTINUATION.md",
+      "sha256": "2d8062f21651d8272530c330185dc486112621a958506cbfde79f4270842b8a3",
+      "coverage": "content-read complete coefficient normalization, collision strata, translated-chart twist, p=1201 boundary fibres, fixed-prime gluing and retained Gamma-metric calculation",
+      "use": "DEFINING_PRIME_CONTINUATION.tex, INTEGRAL_NORMALIZATION_CROSSWALK.tex and LOCAL_GALOIS_REPRESENTATION.tex",
+      "audit": "../es-defining-prime-continuation-20260920/INTEGRATION_AUDIT.md"
+    },
+    {
+      "id": "ES-RH-CONTINUATION-B-RESEARCH-20260920",
+      "file": "../es-rh-continuation-b-20260920/received/RESEARCH_CONTINUATION.md",
+      "sha256": "316bac383b2c88ad2d919b7ca4a7c361b958b4a1181223b7666e0bd102bf5fcf",
+      "coverage": "content-read all four tracks: ES receiving-frame arithmetic, paired determinant return, finite heat actions and q=61 signed-cover descent",
+      "use": "ES_RH_CONTINUATION_B.tex after the Type-II valuation correction recorded in the module audit",
+      "audit": "../es-rh-continuation-b-20260920/INTEGRATION_AUDIT.md"
+    },
+    {
+      "id": "ES-RH-CONTINUATION-B-RECEIPT-20260920",
+      "files": [
+        {
+          "path": "../es-rh-continuation-b-20260920/received/COMBINED_VERIFICATION_SUMMARY.json",
+          "sha256": "1153bd037306f225d0a27bae99a92b01353e4fbf069b62e2140735570cbe9a0c"
+        },
+        {
+          "path": "../es-rh-continuation-b-20260920/received/CODEX_HANDOFF.md",
+          "sha256": "5f9bb0508f58801efb6ddf286922c34251dc817f512cfb98d9ef4f8e0c09d430"
+        },
+        {
+          "path": "../es-rh-continuation-b-20260920/received/SOURCE_LEDGER.md",
+          "sha256": "e31fe864dcd92fd99d959dbc99bf56d6c3ffdc69902559c58bd756a5985d2e62"
+        }
+      ],
+      "coverage": "content-read receipt, handoff and source ledger; original scripts for the determinant and heat tracks were absent, so their reported receipt is preserved without being relabelled as a local replay",
+      "use": "verification boundary and exact source identity"
+    },
+    {
+      "id": "ELSHOLTZ-TAO-2013",
+      "authors": "Christian Elsholtz; Terence Tao",
+      "url": "https://arxiv.org/abs/1107.1010",
+      "coverage": "content-read source propositions 2.2 and 2.6 through the indexed local TeX copy",
+      "use": "Type-I and Type-II coordinate antecedents used by the integral proofs"
+    },
+    {
+      "id": "BRIGHT-LOUGHRAN-2020",
+      "authors": "Martin Bright; Daniel Loughran",
+      "url": "https://arxiv.org/abs/1908.02526",
+      "coverage": "content-read Corollary 1.3, Theorems 1.1 and 1.8-1.9, and Appendix A through the indexed local source",
+      "use": "character-restriction and arithmetic-surface antecedents; the specializations asserted in the reader are rederived"
+    },
+    {
+      "id": "STACKS-01WN",
+      "authors": "The Stacks Project Authors",
+      "url": "https://stacks.math.columbia.edu/tag/01WN",
+      "coverage": "content-read Lemma 29.45.11",
+      "use": "finite morphism implies proper in EZ67-EZ70"
+    },
+    {
+      "id": "STACKS-00UB",
+      "authors": "The Stacks Project Authors",
+      "url": "https://stacks.math.columbia.edu/tag/00UB",
+      "coverage": "content-read Definition 10.144.1",
+      "use": "derivative-unit criterion cited after the explicit Jacobian calculation EZ70"
     }
   ],
   "routing_note": "Index hits were used only for routing; mathematical statements were taken from the content listed above."

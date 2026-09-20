@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 38,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 2,
+  "receipt_sha256": "95758c273dcccec55f859b01fbbd8d6df5bdfffb7442b27d012b18491556f020",
+  "script": "check_residue.py",
+  "status": "PASS",
+  "suite": "residue"
+}

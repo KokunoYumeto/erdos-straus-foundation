@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "full restricted group has order 48",
+    "generators equal determinant-one prime stabilizer",
+    "prime orbit length two",
+    "denominator orbit length six"
+  ],
+  "controls": [
+    "generic group remains transitive after ES restriction"
+  ],
+  "exact_checks": 4,
+  "negative_controls": 1,
+  "results": {
+    "group_order": 48,
+    "orbits": [
+      2,
+      6
+    ]
+  },
+  "status": "PASS",
+  "suite": "fixed_prime_monodromy"
+}

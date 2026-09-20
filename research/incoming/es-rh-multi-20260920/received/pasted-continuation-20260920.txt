@@ -1,0 +1,1108 @@
+**The combined continuation now has five connected results, with complete proof notes and executable exact checks.** The most important is an identification of the non-invertible element: on the completed signed root algebra, the **trace pairing is the nondegenerate residue pairing followed by multiplication by \(2\eta^{3}\)**. That multiplication becomes singular at a root collision; the residue pairing and the original fixed conductor need not.
+
+There is also a new limitation—and a corresponding calculation—on the ES side: an explicit **strictly positive-real ES family crosses the extra receiving-frame singularity while all four roots remain distinct**. Positivity and the reciprocal equation therefore do not, by themselves, remove that singularity.
+
+[Download the research package](sandbox:/mnt/data/ES_RH_Multi_20260920.zip) · [Read the complete combined derivations](sandbox:/mnt/data/ES_RH_Multi_20260920/RESEARCH_CONTINUATION.md) · [Verification results](sandbox:/mnt/data/ES_RH_Multi_20260920/results/VERIFICATION_SUMMARY.json)
+
+The package contains 51 files: five proof notes, a combined manuscript, source provenance, the byte-verified original weighted-conductor provider, ten check suites, and a research handoff. **All ten suites passed in ordinary and optimized Python: 539 exact checks and ten deliberately false-inference controls per mode, with byte-identical outputs and receipts.** These are symbolic and bounded exact checks, not Lean verification or evaluations of the unknown native arithmetic moments.
+
+The source snapshots are the ES foundation at `2b5ab3b63471092624b4fcfac2ab2a0fbafa23a3`, unchanged from the preceding continuation, and the newer RH reader at `1bcdcebb766d84c6edbb42bc7d4d845e960ec325`. The latter adds finite theta-transfer and complex-current precision results. Neither repository has been modified.
+
+## 1. The extra receiving singularity occurs inside a positive-real ES family
+
+The foundation’s exact map remains
+
+$$
+\frac4p=\frac1x+\frac1y+\frac1z,
+\qquad
+h(r)=-\frac{(r-p)(r-x)(r-y)(r-z)}{S},
+\qquad S=p+x+y+z.
+$$
+
+Writing
+
+$$
+h(r)=Ar^4+r^3+Br^2+Cr+D,
+$$
+
+the literal coefficients recover \(p=-5D/C\). This is the source’s normalized prime–denominator quartic, not a replacement polynomial.
+
+For its distinct roots \(r_j\), retain
+
+$$
+d_j=h'(r_j),\qquad \xi_j^2d_j=1.
+$$
+
+The original sign-odd receiving columns are
+
+$$
+o_j=\xi_j
+\begin{pmatrix}
+1\\
+-id_j\\
+Ad_j^2+2r_jd_j\\
+i(7r_j^2d_j-13d_j^2)
+\end{pmatrix},
+\qquad
+O=[o_1\ o_2\ o_3\ o_4].
+$$
+
+The preceding continuation identified the additional determinant factor
+
+$$
+\det O=\frac{4\chi}{A^3}F(A,B,C,D),
+\qquad \chi\in\{1,-1\},
+$$
+
+where
+
+$$
+\begin{aligned}
+F={}&20(3C-B^2)+A(87B^3-282BC-51D)\\
+&+A^2(-28B^4+22B^2C+431C^2+204BD)\\
+&+A^3(224B^2D-168BC^2-856CD)-448A^4D^2.
+\end{aligned}
+\tag{1}
+$$
+
+I have now independently checked that polynomial identity. The source already warns that squarefreeness alone does not imply invertibility of \(O\); the new step is to impose the **positive-real ES relation itself**.
+
+### An explicit ES curve through the divisor
+
+For any fixed real \(p>0\), take
+
+$$
+\boxed{
+(p;x,y,z)
+=
+p\left(
+1,\frac{t}{4t-402},\frac{t}{202},\frac{t}{200}
+\right),
+\qquad t>202.
+}
+\tag{2}
+$$
+
+The reciprocal identity is exact:
+
+$$
+\frac{4t-402}{pt}+\frac{202}{pt}+\frac{200}{pt}
+=\frac4p.
+$$
+
+Moreover,
+
+$$
+0<x<p<y<z.
+$$
+
+Thus the four literal roots remain positive and distinct throughout this parameter range.
+
+At \(p=1\), substituting the normalized coefficients into (1) gives
+
+$$
+F(t)
+=
+-\frac{5t^2f(t)}
+{(402t^2+10099t-4060200)^6},
+\tag{3}
+$$
+
+where \(f\) is an explicit degree-twelve integer polynomial, written in full in the delivered proof and machine-readable certificate.
+
+Exact Sturm calculations establish a unique simple root in \((551,651)\), with the rational isolation
+
+$$
+\boxed{
+\frac{3520743}{6176}
+<t_*<
+\frac{3562358}{6249}.
+}
+\tag{4}
+$$
+
+The decimal \(t_*\approx570.0684909\) is only a locator. The proof uses the integer polynomial, exact endpoint signs, and Sturm root count.
+
+A \(3\times3\) receiving-coefficient minor has numerator coprime to \(f\), so it does not vanish at \(t_*\). Therefore
+
+$$
+\boxed{
+\operatorname{rank}O(t_*)=3,
+\qquad
+A\,\operatorname{Disc}(h_{t_*})\ne0.
+}
+\tag{5}
+$$
+
+All eight nonlinear inverse branches remain simple. The singularity belongs to the **receiving frame**, not to the nonlinear derivative or the quartic root cover.
+
+This holds at any fixed \(p>0\): coherent sign choices give
+
+$$
+O_p=\operatorname{diag}(p^{-1},p,p^2,p^3)O_1.
+\tag{6}
+$$
+
+That is an exact coordinate morphism, not an isometry assertion.
+
+The isolated parameter is irrational. Consequently this is **not an integral ES witness**, even when \(p\) is chosen prime. Its significance is precise: a proof excluding the receiving divisor on integral ES witnesses must use arithmetic information beyond positivity and the reciprocal relation.
+
+### A quantitative arithmetic alternative
+
+For distinct positive integral literal roots, let \(e_2,e_3,e_4\) be their elementary symmetric sums. Then
+
+$$
+(A,B,C,D)=(-S^{-1},-e_2/S,e_3/S,-e_4/S),
+$$
+
+and inspection of (1) gives
+
+$$
+N:=S^6F\in\mathbb Z.
+$$
+
+Thus, **conditional on \(N\ne0\)**,
+
+$$
+|\det O|=\frac{4|N|}{S^3}\ge\frac4{S^3}.
+\tag{7}
+$$
+
+The integer root differences also give
+
+$$
+\frac2S\le |d_j|\le S^2,
+\qquad
+S^{-1}\le|\xi_j|\le\sqrt{S/2}.
+$$
+
+The four components of \(o_j\) are therefore bounded by
+
+$$
+\sqrt{S/2},\quad S,\quad3S^2,\quad20S^3.
+$$
+
+Consequently
+
+$$
+\|O\|_2\le41S^3,
+$$
+
+and the exterior identity yields
+
+$$
+\boxed{
+\|O^{-1}\|_2\le\frac{41^3}{4}S^{12}
+\qquad(N\ne0).
+}
+\tag{8}
+$$
+
+This is in the stated coefficient norm. For the original receiving metric \(G>0\), the corresponding inverse bound includes \(\|G^{-1/2}\|_2\); an original label-space metric contributes its own factor.
+
+The remaining arithmetic issue is now sharply stated: **can the integer \(N\) vanish at an admissible integral hard-prime witness?** The positive-real example does not answer that, but it prevents a false positivity-only solution. If arithmetic nonvanishing is established, (8) supplies an explicit inverse bound immediately.
+
+## 2. The non-unit element is \(2\eta^3\): trace degenerates, residue duality survives
+
+This calculation gives a more intrinsic answer to the original question about a non-invertible element.
+
+Work over
+
+$$
+R_0=\mathbb C[A,A^{-1},B,C,D],
+\qquad
+E=R_0[r]/(h).
+$$
+
+Define
+
+$$
+\lambda_E(f)
+=
+\frac1A[r^3]\operatorname{rem}_h f.
+$$
+
+Its bilinear Gram \(J_h\), in \(1,r,r^2,r^3\), satisfies
+
+$$
+\boxed{
+\det J_h=A^{-4},
+\qquad
+J_hC_h=C_h^TJ_h,
+}
+\tag{9}
+$$
+
+where \(C_h\) is multiplication by \(r\).
+
+The determinant is nonzero without inverting the discriminant. This pairing therefore remains nondegenerate at a repeated-root fibre. It is **complex bilinear**, not the positive Hermitian metric used in the arithmetic minima.
+
+For simple roots, Lagrange interpolation gives
+
+$$
+\lambda_E(f)=\sum_j\frac{f(r_j)}{h'(r_j)}.
+$$
+
+Hence the signed moment matrix
+
+$$
+U=(r_j^n)_{n,j}\operatorname{diag}(\xi_j)
+$$
+
+obeys
+
+$$
+\boxed{UU^T=J_h.}
+\tag{10}
+$$
+
+The transpose is essential: \(UU^*\) is a different object.
+
+### The rank-eight extension
+
+Retain the finite extension from the preceding continuation:
+
+$$
+\widehat S
+=
+E[\eta]/(\eta^2-h'(r)).
+\tag{11}
+$$
+
+It is free of rank eight, with basis
+
+$$
+1,r,r^2,r^3,\eta,\eta r,\eta r^2,\eta r^3.
+$$
+
+Its open part \(\eta\ne0\) is exactly the original inverse algebra:
+
+$$
+\xi=\eta^{-1},
+\qquad
+\xi^2h'(r)=1.
+$$
+
+Define
+
+$$
+\Lambda(f+\eta g)=\lambda_E(g).
+$$
+
+Its residue Gram is
+
+$$
+\mathcal J=
+\begin{pmatrix}
+0&J_h\\
+J_h&0
+\end{pmatrix},
+\qquad
+\boxed{\det\mathcal J=A^{-8}.}
+\tag{12}
+$$
+
+This explicitly realizes the perfect duality expected for this finite flat complete intersection. The general Gorenstein background is standard; the displayed matrices establish the particular result here without leaving the duality map unspecified. ([The Stacks Project][1])
+
+The new identity is
+
+$$
+\boxed{
+\operatorname{Tr}(M_f)=\Lambda(2\eta^3f),
+}
+\tag{13}
+$$
+
+where \(M_f\) denotes multiplication by \(f\) in \(\widehat S\).
+
+To prove it, first take a squarefree target and write \(f=f_0+\eta f_1\). Summing over both signs above each root gives
+
+$$
+\operatorname{Tr}(M_f)=2\sum_jf_0(r_j).
+$$
+
+Meanwhile,
+
+$$
+\Lambda(2\eta^3f)
+=
+2\lambda_E(h'f_0)
+=
+2\sum_jf_0(r_j).
+$$
+
+Both sides are regular over \(R_0\), so the identity extends across the discriminant.
+
+Equivalently, if \(\mathcal R_\Lambda\) is the residue-duality map to the module dual,
+
+$$
+\boxed{
+\text{trace-duality map}
+=
+\mathcal R_\Lambda\circ M_{2\eta^3}.
+}
+\tag{14}
+$$
+
+Thus the exact non-invertible element is **multiplication by \(2\eta^3\)**. The trace pairing loses information through that map; the residue-duality map does not.
+
+The determinant is also completely evaluated:
+
+$$
+\boxed{
+\det(\text{trace Gram})
+=
+256\,\frac{\operatorname{Disc}(h)^3}{A^{14}}.
+}
+\tag{15}
+$$
+
+Indeed,
+
+$$
+\det M_{2\eta^3}
+=
+256\,\frac{\operatorname{Disc}(h)^3}{A^6},
+$$
+
+which multiplies the residue determinant \(A^{-8}\).
+
+### Exact local ranks
+
+At an \(m\)-fold root \(r_0\), write
+
+$$
+h(r)=(r-r_0)^mg(r),\qquad g_0=g(r_0)\ne0.
+$$
+
+The local completed algebra is
+
+$$
+\boxed{
+\mathbb C[\varepsilon,\eta]/
+\bigl(\varepsilon^m,\eta^2-mg_0\varepsilon^{m-1}\bigr),
+\qquad \varepsilon=r-r_0.
+}
+\tag{16}
+$$
+
+Its length is \(2m\).
+
+For \(m\ge2\),
+
+$$
+\eta^3=mg_0\eta\varepsilon^{m-1}\ne0,
+\qquad
+\eta^4=0.
+$$
+
+Every nonconstant monomial annihilates \(\eta^3\). Therefore
+
+$$
+\boxed{
+\operatorname{rank}M_{2\eta^3}=1
+}
+$$
+
+on this length-\(2m\) local fibre. Its trace pairing has rank one, while its residue pairing remains perfect.
+
+At a double root,
+
+$$
+\widehat S_{r_0}\simeq\mathbb C[\eta]/(\eta^4).
+\tag{17}
+$$
+
+The four nearby signed states have become one length-four nonreduced fibre, not four finite distinct points.
+
+### The original norm pole remains
+
+In the new coordinate,
+
+$$
+q(r,\eta)=
+\begin{pmatrix}
+\eta^{-1}\\
+-r-i\eta\\
+A\eta^3+2r\eta+3i\eta^2\\
+7ir^2\eta+(B-17r+Ar^2)\eta^2-13i\eta^3-2A\eta^4
+\end{pmatrix}.
+$$
+
+For a fixed original receiving map \(F\), with \(G=F^*QF>0\), a bounded-root approach to \(\eta=0\) gives
+
+$$
+\boxed{
+|\eta|\,\|Fq\|_Q\longrightarrow\sqrt{G_{11}}>0.
+}
+\tag{18}
+$$
+
+The finite algebraic extension retains the missing boundary state. It does not silently cancel the physical norm divergence.
+
+## 3. The local ES–RH morphism has a computable residue correction
+
+The local map between the two constructions can now be made more exact than an identification of their Jordan block sizes.
+
+The ES family
+
+$$
+(p;x,y,z)=\left(p;p,\frac{2p}{5},2p\right)
+$$
+
+satisfies the original reciprocal equation. Its normalized quartic is
+
+$$
+h_E(r)
+=-\frac5{22p}(r-p)^2(r-2p/5)(r-2p).
+$$
+
+At \(r=p\),
+
+$$
+g_{0,E}=\frac{3p}{22},
+\qquad
+g_{1,E}=\frac1{11},
+\qquad
+\eta_E^2=\frac{3p}{11}\varepsilon_E.
+\tag{19}
+$$
+
+For \(p=5\), this is the actual integral example \((5;5,2,10)\).
+
+For the RH construction’s auxiliary paired-root polynomial
+
+$$
+h_R(r)
+=-\frac12\left((r-\tfrac12)^2+\gamma^2\right)^2,
+$$
+
+at \(r_s=\tfrac12+s i\gamma\), \(s=\pm1\),
+
+$$
+g_{0,R}=2\gamma^2,
+\qquad
+g_{1,R}=-2s i\gamma,
+\qquad
+\eta_R^2=4\gamma^2\varepsilon_R.
+$$
+
+Choose either square root
+
+$$
+c^2=\frac{3p}{44\gamma^2}.
+$$
+
+Then
+
+$$
+\boxed{
+\phi:\eta_E\mapsto c\eta_R,\qquad
+\varepsilon_E\mapsto\varepsilon_R
+}
+\tag{20}
+$$
+
+is an isomorphism of the length-four local algebras. It intertwines centred multiplication. For uncentred multiplication, the exact scalar correction is \(p-r_s\).
+
+The full residue functional remembers the derivative of the cofactor:
+
+$$
+\lambda(f_0+f_1\varepsilon)
+=
+\frac{f_1}{g_0}
+-\frac{f_0g_1}{g_0^2}.
+\tag{21}
+$$
+
+Therefore the residue map is not transported by a scalar alone. The exact correction is
+
+$$
+\boxed{
+\Lambda_R(\phi f)
+=
+\Lambda_E(u_Ef),
+\qquad
+u_E=c^3
+\left[
+1+\left(\frac2{3p}+\frac{s i}{\gamma}\right)\varepsilon_E
+\right].
+}
+\tag{22}
+$$
+
+The bracketed factor is a unit because \(\varepsilon_E^2=0\). Its inverse is explicit. This identity was checked on the local algebra’s basis with the full cofactor derivatives retained.
+
+For positive Hermitian metrics, the coordinate matrix of (20) is
+
+$$
+\operatorname{diag}(1,c,c^2,c^3);
+$$
+
+the metric transports by its complete conjugate congruence, not by the bilinear residue rule.
+
+The original conductor also has an exact role. With the source’s fixed maps \(L\Phi_*=\Psi_*\), use their double copies on the eight coordinates. Then
+
+$$
+(L\oplus L)M_a^U=M_a^W(L\oplus L)
+\tag{23}
+$$
+
+for every algebra multiplication matrix, including \(M_{2\eta^3}\). The inverse-exterior constants of the fixed conductor remain separate. Its invertibility cannot remove the rank loss of the transported multiplication operator.
+
+This gives an explicit algebra/action/duality morphism. It does not identify an ES denominator with a zeta zero or establish arithmetic purity.
+
+## 4. A residue-to-native-Gram morphism, with the missing correction exposed
+
+A nondegenerate residue pairing is not yet a positive native metric. The exact conversion can nevertheless be calculated.
+
+Let \(d\rho\) be an original positive native measure, with its full mass \(\mu_0\), and let \(p_n\) be its actual monic orthogonal polynomial. Set
+
+$$
+H_{n-1}=[\mu_{i+j}]_{i,j=0}^{n-1},
+\qquad
+E_n=\mathbb C[z]/(p_n).
+$$
+
+Let \(J_p\) be the monic residue Gram and \(C_p\) multiplication by \(z\).
+
+Define the second-kind polynomial
+
+$$
+q_{n-1}(z)
+=
+\int\frac{p_n(z)-p_n(x)}{z-x}\,d\rho(x).
+\tag{24}
+$$
+
+This is a finite polynomial, with leading coefficient **\(\mu_0\)**.
+
+Then
+
+$$
+\boxed{
+H_{n-1}=J_p\,q_{n-1}(C_p).
+}
+\tag{25}
+$$
+
+For the proof, at the roots \(t_j\) of \(p_n\),
+
+$$
+\frac{q_{n-1}(t_j)}{p_n'(t_j)}
+=
+\int L_j(x)\,d\rho(x),
+$$
+
+where \(L_j\) is the corresponding Lagrange cardinal. Interpolation proves the identity on degrees below \(n\). For products of two such polynomials, division by \(p_n\) produces a quotient of degree at most \(n-2\), whose contribution integrates to zero by orthogonality.
+
+Furthermore,
+
+$$
+w_j
+=
+\frac{q_{n-1}(t_j)}{p_n'(t_j)}
+=
+\int L_j(x)^2\,d\rho(x)>0.
+\tag{26}
+$$
+
+Thus the positive native pairing is obtained from the residue pairing by the **specific multiplier \(q_{n-1}(C_p)\)**. That multiplier is invertible because both Grams in (25) are invertible.
+
+The scalar Gauss resolvent is correspondingly
+
+$$
+\sum_j\frac{w_j}{a+t_j}
+=
+-\frac{q_{n-1}(-a)}{p_n(-a)},
+\qquad a>0.
+\tag{27}
+$$
+
+This is classical quadrature structure used here in an explicit native receiving map; the existing Gauss/Radau literature is not being claimed as a new discovery. ([arXiv][2])
+
+### An arbitrary ES polynomial is not automatically a native Gauss polynomial
+
+For a different monic real polynomial \(h\) of degree \(n\), define
+
+$$
+[k]=J_h^{-1}(\mu_0,\ldots,\mu_{n-1})^T.
+$$
+
+Then the exact identity is
+
+$$
+\boxed{
+H_{ij}
+=
+[J_hk(C_h)]_{ij}
++
+\int h(x)\operatorname{quo}_h(x^{i+j})\,d\rho(x).
+}
+\tag{28}
+$$
+
+The second term is the full relation defect. It is a finite combination of the original moments. It vanishes for the native orthogonal polynomial; it need not vanish for the ES quartic.
+
+This is the useful connection between the two calculations: **the common root-algebra machinery does transfer, but its metric conversion contains a specified multiplier and, generally, a specified residual.** Equality of dimensions or similarity of spectra does not erase either.
+
+The newer source’s actual arithmetic receiver remains
+
+$$
+F_B=\Lambda_kJ_+K^{-1},
+\qquad
+\Lambda_kF_+=F_B,
+\qquad
+\bar CF_B=F_-.
+$$
+
+Its native Gram retains both distinct minimum-residual energies in MO7–MO8. Equations (25)–(28) must be passed into that metric calculation, not substituted for it.
+
+## 5. A substantially stronger native inverse margin
+
+The new RH release proves finite moment tolerances using the interval Gram
+
+$$
+J_t=
+\left[
+\frac{2^{i+j+1}-1}{i+j+1}
+\right]_{i,j=0}^{t}
+=
+\left[\int_1^2x^{i+j}\,dx\right]_{i,j=0}^{t}.
+$$
+
+Its valid lower floor is
+
+$$
+g_t=\frac{\det J_t}{(\operatorname{tr}J_t)^t}.
+$$
+
+That floor is then used in the native weighted inverses and precision budgets.
+
+I replaced this particular bound by an explicit floor within a factor \(t+1\) of the true smallest eigenvalue of the interval Gram.
+
+Let
+
+$$
+P_j(2x-3)=\sum_{k=0}^jc_{jk}x^k.
+$$
+
+The coefficients are the integers
+
+$$
+\boxed{
+c_{jk}
+=
+(-1)^{j-k}
+\sum_{m=k}^j
+\binom jm\binom{j+m}{m}\binom mk.
+}
+\tag{29}
+$$
+
+This follows from the classical Legendre Rodrigues/binomial representation, with the coordinate change written out rather than imposed on the native measure. ([DLMF][3])
+
+Let \(C_t\) contain these rows. Orthogonality, including the Jacobian \(dx=du/2\), gives
+
+$$
+C_tJ_tC_t^T
+=
+\operatorname{diag}\bigl((2j+1)^{-1}\bigr).
+$$
+
+Hence
+
+$$
+\boxed{
+J_t^{-1}
+=
+C_t^T\operatorname{diag}(2j+1)C_t.
+}
+\tag{30}
+$$
+
+Define the positive integer
+
+$$
+\tau_t
+=
+\sum_{j=0}^t(2j+1)\sum_{k=0}^jc_{jk}^2
+=
+\operatorname{tr}(J_t^{-1}).
+$$
+
+Then
+
+$$
+\boxed{
+J_t\succeq\tau_t^{-1}I,
+\qquad
+\tau_t^{-1}
+\le\lambda_{\min}(J_t)
+\le(t+1)\tau_t^{-1}.
+}
+\tag{31}
+$$
+
+The alternating coefficient signs also give
+
+$$
+\sum_k|c_{jk}|=P_j(5)\le10^j.
+$$
+
+Therefore
+
+$$
+\boxed{
+\tau_t\le(t+1)(2t+1)100^t,
+\qquad
+J_t\succeq
+\frac{I}{(t+1)(2t+1)100^t}.
+}
+\tag{32}
+$$
+
+This removes the quadratic-in-degree exponent from **this interval-floor step**. It does not establish that the complete native calculation has inexpensive precision requirements.
+
+The comparison is large even at moderate degree. At \(t=2\),
+
+$$
+\tau_2=2685,
+$$
+
+so the new floor is \(1/2685\), whereas the source’s floor is \(5/981552\). At \(t=20\),
+
+$$
+\tau_{20}
+=
+563499044407063990221634119557036635401.
+$$
+
+The exact rational comparison proves that the new floor exceeds the old one by more than
+
+$$
+\boxed{10^{427}.}
+\tag{33}
+$$
+
+That statement was checked using rational numbers, not floating-point logarithms.
+
+### Return to the original native moment tolerances
+
+If the actual measure has density at least \(d_\lambda>0\) on \([1,2]\), then
+
+$$
+H_t^\lambda\succeq\frac{d_\lambda}{\tau_t}I.
+\tag{34}
+$$
+
+For every positive-coefficient weight
+
+$$
+w(x)=\sum_lw_lx^l,\qquad w_l\ge0,\quad w(1)>0,
+$$
+
+its weighted Gram has floor
+
+$$
+\frac{w(1)d_\lambda}{\tau_t}.
+$$
+
+If each required scalar moment has absolute error at most \(\epsilon\), its matrix error is at most
+
+$$
+(t+1)w(1)\epsilon.
+$$
+
+Thus a sufficient common budget is
+
+$$
+\boxed{
+\epsilon
+\le
+\frac{d_\lambda}{4(t+1)\tau_t}.
+}
+\tag{35}
+$$
+
+The weight factor cancels exactly. This applies to the source’s \(x+a\), \(x(x+a)\), and \(x(x+a)(x+b)\) systems with their original moment shifts.
+
+The other constants in the newest native precision proof remain: upper moment caps, Radau subtraction margins, rectangular coefficient errors, quotient singular values, and the actual source density constants. Equation (35) improves one specific bottleneck rather than discarding the remainder of that proof.
+
+Combining (25) and (34) also gives an explicit bound on the residue-to-native multiplier:
+
+$$
+\boxed{
+\|q_{n-1}(C_p)^{-1}\|_2
+\le
+\frac{\tau_{n-1}}{d_\rho}\|J_p\|_2.
+}
+\tag{36}
+$$
+
+## 6. All native moment uncertainties can be propagated together
+
+The preceding answer treated one scalar uncertainty in detail. This continuation handles a simultaneous finite family without breaking its dependence through the two minima.
+
+Let
+
+$$
+H(\theta)=H_0+V\Theta V^*,
+\qquad
+\Theta=\operatorname{diag}(\theta_1,\ldots,\theta_m),
+$$
+
+with real parameters and \(H(\theta)>0\) on the box being certified.
+
+This includes the original finite resolvent family with negative rank-one corrections. The parameters arise from the same native measure; treating a box as an enclosure does **not** assert their statistical or algebraic independence.
+
+For an original onto map \(\mathsf A\), define
+
+$$
+P=H_0^{-1},
+\qquad
+G_0=(\mathsf AP\mathsf A^*)^{-1},
+$$
+
+$$
+\mathsf L=V^*PV,
+\qquad
+Z=G_0\mathsf APV,
+\qquad
+\mathsf K=\mathsf L-Z^*G_0^{-1}Z\succeq0.
+$$
+
+Then
+
+$$
+\boxed{
+G(\theta)
+=
+G_0+Z\Theta(I+\mathsf K\Theta)^{-1}Z^*,
+}
+\tag{37}
+$$
+
+and
+
+$$
+\boxed{
+\frac{\det G(\theta)}{\det G_0}
+=
+\frac{\det(I+\mathsf L\Theta)}
+{\det(I+\mathsf K\Theta)}.
+}
+\tag{38}
+$$
+
+No \(\Theta^{-1}\) is used, so zero uncertainty parameters and dependent columns are admitted. Matrix order is retained; the kernels need not commute.
+
+The exact minimum representative is
+
+$$
+\boxed{
+X_\theta
+=
+P\mathsf A^*G_0
+-
+B\Theta(I+\mathsf K\Theta)^{-1}Z^*,
+}
+\tag{39}
+$$
+
+where
+
+$$
+B=
+(P-P\mathsf A^*G_0\mathsf AP)V,
+\qquad
+\mathsf AB=0.
+$$
+
+Thus every correction lies in the full original source kernel.
+
+For the second minimum, apply the same formula to the **composite map** \(\Lambda\mathsf A\), using the same \(\Theta\):
+
+$$
+G_B(\theta)
+=
+\bigl(\Lambda G_E(\theta)^{-1}\Lambda^*\bigr)^{-1}.
+\tag{40}
+$$
+
+There is no new independent uncertainty after the first quotient.
+
+### Fixed-frame currents have bounded multidegree
+
+For the actual fixed three-column matrix
+
+$$
+W=[b_N,b_{N+1},v_\lambda],
+$$
+
+put
+
+$$
+F=W^*G_EW,
+\qquad
+C=W^*\Lambda^*G_B\Lambda W,
+\qquad
+R=F-C.
+$$
+
+Write
+
+$$
+G_E=N_E/\Delta_E,\qquad G_B=N_B/\Delta_B.
+$$
+
+Every entry numerator and each denominator is **multiaffine** in the parameters: degree at most one in each \(\theta_i\). This follows from the determinant and adjugate of \(I+\mathsf K\Theta\), whose \(i\)-th column depends only affinely on \(\theta_i\).
+
+Consequently:
+
+* The observed-current numerator has degree at most **two in each parameter**.
+* The kernel and mixed-current numerators have degree at most **four in each parameter**.
+
+These are per-parameter bounds, not a claim that the total degree stays four for arbitrarily many parameters.
+
+Both mixed products remain:
+
+$$
+2\operatorname{Re}
+\left(
+\overline{R_{13}}C_{23}
++
+\overline{C_{13}}R_{23}
+\right).
+\tag{41}
+$$
+
+The common denominator is positive, and the full identity \(R+C=F\) is preserved symbolically. The delivered two-parameter exact test deliberately uses noncommuting matrices and verifies the quotient formulas, minimum lifts, determinant ratios, degree bounds, and current-sum identity.
+
+### A finite sign certificate rather than vertex sampling
+
+On a rational box transported explicitly to \([0,1]^m\), write the real numerator as
+
+$$
+P(t)=\sum_\beta a_\beta t^\beta.
+$$
+
+For per-variable degree \(d_i\), its Bernstein coefficients are
+
+$$
+b_\alpha
+=
+\sum_{\beta\le\alpha}
+a_\beta
+\prod_i
+\frac{\binom{\alpha_i}{\beta_i}}
+{\binom{d_i}{\beta_i}}.
+\tag{42}
+$$
+
+The Bernstein basis is nonnegative and sums to one, so
+
+$$
+\min_\alpha b_\alpha\le P(t)\le\max_\alpha b_\alpha.
+$$
+
+Positive coefficients certify positivity on the whole box. Otherwise, subdivide.
+
+There is also a conditional finite-completion bound. If \(P\ge\mu>0\), and \(L_i\) bounds the derivative Bernstein coefficients in coordinate \(i\), then a subbox of widths \(h_i\) is certified once
+
+$$
+\boxed{\sum_i h_iL_i<\mu.}
+\tag{43}
+$$
+
+This follows by summing the exact adjacent-coefficient derivative identities. It is not an assertion that the unknown native current has such a margin.
+
+The code returns a positive covering certificate, an exact rational negative witness, or `inconclusive`. A negative point in an enclosing box need not be feasible for the correlated native moments.
+
+Vertex testing is insufficient even in a positive rank-one Gram family: the delivered counterexample has current
+
+$$
+2(s-\tfrac14)(s-\tfrac34),
+\qquad 0\le s\le1.
+$$
+
+It is positive at both endpoints and negative at \(s=1/2\).
+
+### Moving native columns are not frozen
+
+When the same moment uncertainty changes the monic polynomial itself, its correction is also explicit:
+
+$$
+q_\theta
+=
+q_0
+-
+B_0\Theta(I+K_{\mathrm{mon}}\Theta)^{-1}b,
+$$
+
+$$
+h_\theta
+=
+h_0+b^*\Theta(I+K_{\mathrm{mon}}\Theta)^{-1}b.
+\tag{44}
+$$
+
+Here \(B_0,K_{\mathrm{mon}},b\) are formed from the full original lower-degree Gram, injection and uncertainty matrix; their definitions and proof are in Track V.
+
+These formulas were checked against direct affine minimization. Orthonormal columns must additionally retain \(h_\theta^{-1/2}\). The fixed-column degree bounds cannot be reused after changing \(W\) without making this substitution.
+
+The original infinite tail also remains separate. The newest source’s sharp projection and complex-pairing bounds are available for that outward bracket; they are not replaced by the finite polynomial certificate.
+
+## What the combined programme now has
+
+The connection is no longer just “similar finite-dimensional structures.” It contains three explicit mechanisms:
+
+$$
+\boxed{
+\text{trace duality}
+=
+\text{perfect residue duality}\circ M_{2\eta^3},
+}
+$$
+
+$$
+\boxed{
+\text{native Gram}
+=
+\text{residue Gram}\times
+\text{actual native multiplier}
++\text{specified relation defect},
+}
+$$
+
+and
+
+$$
+\boxed{
+\text{one source uncertainty family}
+\longrightarrow
+\text{both original minima}
+\longrightarrow
+\text{phase-preserving current polynomials}.
+}
+$$
+
+On the ES side, the next decisive arithmetic issue is nonvanishing—or an actual integral counterexample—for the integer receiving factor \(N\), alongside the separate universal occupancy problem. On the RH side, the improved margins and simultaneous formulas now give a more effective certificate framework, but **the original native moments and growing-degree sign margins still have to be evaluated**.
+
+The residue calculation does not bypass that requirement: its pairing is not the native Hermitian metric, and the local nilpotent action has an indefinite metric defect in every positive fixed form. The point of the exact maps above is to retain those differences and quantify them, rather than let them terminate the combined research.
+
+### References
+
+The Clankers. (2026, September 20). *The normalized Erdős–Straus quartic and its exact passage through the signed Fable cover to a fixed weighted conductor* [Research manuscript, commit `2b5ab3b63471092624b4fcfac2ab2a0fbafa23a3`]. *Erdős–Straus Foundation*.
+
+National Institute of Standards and Technology. (n.d.). *NIST Digital Library of Mathematical Functions*, §18.5, Explicit representations. Retrieved September 20, 2026. ([DLMF][3])
+
+Split-Zero programme. (2026, September 20). *Explicit native moment precision, inverse margins, and the original signed receiver* [Research manuscript, commit `1bcdcebb766d84c6edbb42bc7d4d845e960ec325`]. *Zeta-function research reader*.
+
+The Stacks Project Authors. (n.d.). *Lemma 48.25.5* (Tag 0C15). *The Stacks Project*. ([The Stacks Project][1])
+
+Zimmerling, J., Druskin, V., & Simoncini, V. (2025). *Monotonicity, bounds and extrapolation of Block-Gauss and Gauss-Radau quadrature for computing \(B^T\phi(A)B\)* (Version 3) [Preprint]. arXiv:2407.21505. ([arXiv][2])
+
+[1]: https://stacks.math.columbia.edu/tag/0C15 "https://stacks.math.columbia.edu/tag/0C15"
+[2]: https://arxiv.org/abs/2407.21505 "https://arxiv.org/abs/2407.21505"
+[3]: https://dlmf.nist.gov/18.5 "https://dlmf.nist.gov/18.5"

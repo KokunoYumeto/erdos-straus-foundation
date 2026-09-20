@@ -1,0 +1,228 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=22mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype,graphicx}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{A complete fixed-target cofactor classification\ and original Erd\H{o}s--Straus channel returns}
+\author{The Clankers}
+\date{20 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We classify all divisors of $j^2$ in a fixed positive class $t$ modulo $4j-1>t$.
+A canonical divisor and an unbounded companion are separated from a finite
+exceptional set with sharp grade bound $4j-1\le t^2-3t+1$. The bound is realized
+by original exterior states at infinitely many hard primes. Applied to original
+negative shape coordinates, the classification gives complete same-grade middle
+returns and forced availability on entire nonsquare shape lines. It also proves
+that each fixed alpha coefficient $t\ge4$ has infinitely many original hard-prime
+examples with no same-grade middle return. This is not a universal ES proof.
+\end{abstract}
+
+\begin{theorem}[Complete capacity and sharp boundary]
+For $h=4j-1>t\ge1$, define
+$\mathcal A_t(j)=\{W\mid j^2:W\equiv t\pmod h\}$.
+Its disjoint, uniquely labelled words are
+\[
+ W=t\quad(t\mid j^2),\qquad
+ W=4tj\quad(4t\mid j),                                  \tag{1}
+\]
+and the finite words
+\[
+ 1\le\ell\le\lfloor(t-2)/4\rfloor,\quad
+ w\mid\ell^2,\quad n=(t-w)/(4\ell+1)\in\mathbb Z_{>0},
+\]
+\[
+ V=\ell^2/w,\quad j=\ell+4nV,\quad h>t,
+ \qquad W=j^2/V=t+nh.                                  \tag{2}
+\]
+Every finite word satisfies $h\le t^2-3t+1$. Equality holds exactly at
+$w=n=1$, $t=4\ell+2$. In particular, a nonempty box with $t\nmid j^2$ is in
+this finite grade range. Beyond it the exact count is
+$\mathbf1_{t\mid j^2}+\mathbf1_{4t\mid j}$.
+\end{theorem}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fixed-target-capacity-partition.pdf}
+\caption{Exact inverse classification in Theorem 1.  The canonical,
+companion and finite branches are disjoint, and every label is recovered from
+the original divisor \(W\).}
+\end{figure}
+\begin{proof}
+For $W\ne t$, write $W=t+nh$, $n\ge1$, and $V=j^2/W$. The identity
+$16WV=(h+1)^2$ gives $16tV=1+kh$, where $k\ge1$ and $k\equiv1\pmod4$.
+Put $k=4\ell+1$. Subtraction gives
+\[
+ j=\ell+4nV,\qquad t=(4\ell+1)n+\ell^2/V.
+\]
+At $\ell=0$, $n=t$ and $j=4tV$, exactly the second word of (1). At $\ell>0$,
+$w=\ell^2/V$ is a positive integer and $t\ge4\ell+2$. All steps reverse,
+with inverse $n=(W-t)/h$, $V=j^2/W$, $\ell=j-4nV$. Thus the list has no
+omissions or duplicate labels. Finally
+\[
+ h+1=4\ell+\frac{16\ell^2(t-w)}{(4\ell+1)w}
+ \le4\ell+\frac{16\ell^2(t-1)}{4\ell+1}
+ \le t^2-3t+2.
+\]
+The last expression increases strictly in $\ell$, whose maximum is $(t-2)/4$.
+Equality conditions give $w=n=1$. The companion always coexists with the
+canonical word, so it cannot repair its absence.
+\end{proof}
+
+The sharp family is
+\[
+ t=4\ell+2,\quad j=\ell(4\ell+1),\quad
+ h=t^2-3t+1,\quad W=(4\ell+1)^2,\quad V=\ell^2.           \tag{3}
+\]
+Here $t\nmid j^2$, because $2\ell+1>1$ is coprime to $j$. Finite words can
+also coexist with the canonical one: $\mathcal A_{289}(1224)=\{289,5184\}$.
+The companion in (1) is genuinely unbounded and must not be folded into the
+finite exceptional claim.
+
+\paragraph{Original arithmetic and inverse.}
+For prime $p\equiv1\pmod4$, an original exterior state has
+\[
+ p/4<a<p/2,\quad R=4a-p,\quad u\mid a^2,\quad R\mid4u+1.
+\]
+Normalize by $g=\gcd(a,u)$, $(h,r,s)=(g^2/u,u/g,a/g)$ and
+$\kappa=(pr+s)/R$. The original ordered return is
+$(a,hs\kappa,phr\kappa)$; its inverse is $u=a^2/(Ry-pa)$.
+Keep
+\[
+ v=hs^2,\quad D=(4u+1)/R,\quad
+ \alpha=v-R,\quad\beta=v-D.
+\]
+The original identities yield
+$h\mid\alpha\beta-1$, $p\equiv\alpha\pmod h$, $p\beta\equiv1\pmod h$.
+Reciprocity on the actual factors gives $(h/p)=-1$.
+
+If $\alpha=-4t$ or $\beta=-4t$, then
+$h\equiv3\pmod4$, $s$ is odd, $\gcd(h,t)=1$ and $(t/h)=1$.
+Set $j=(h+1)/4$. The entire middle cofactor-$h$ gate is exactly
+\[
+ W\in\mathcal A_t(j),\quad
+ U=W\ (\alpha),\qquad U=j^2/W\ (\beta).
+\]
+For every word it returns
+\[
+ R_M=(p+4U)/h,\quad a_M=(p+R_M)/4,\quad g_M=\gcd(j,U),
+\]
+\[
+ h_M=g_M^2/U,\quad r_M=U/g_M,\quad\lambda_M=j/g_M,
+ \quad s_M=R_M\lambda_M-r_M,                             \tag{4}
+\]
+with denominators $(a_M,ph_Ms_M\lambda_M,ph_Mr_M\lambda_M)$.
+Indeed $U\mid j^2$, $h\mid p+4U$, and
+$4U\le(h+1)^2/4<(h-1)p$ since $p>2h$. Thus $0<R_M<p$ and
+$R_M\equiv3\pmod4$. Prime valuations give the integral normalization;
+$a_M=R_Mj-U=h_Mr_Ms_M>0$, and a common divisor of $r_M,R_M$ would divide
+$p$, although $r_M\le j<p$. This proves the original coprimality and both range
+bounds. Complementing $U$ exchanges the retained middle orientation.
+
+These are classical Type-II coordinates \cite[\S2]{ET}; the contribution is the
+complete capacity input and its original source supply. In (2), putting
+$g_0=\gcd(\ell,V)$ gives $H_0=g_0^2/V$, $r_0=V/g_0$, $\lambda_0=\ell/g_0$.
+The returned $(h_M,r_M,\lambda_M)$ equals
+$(H_0,\lambda_0+4nr_0,r_0)$ or $(H_0,r_0,\lambda_0+4nr_0)$.
+Thus $h_M\le\ell<t/4$ on the finite branch.
+
+\begin{theorem}[Automatic entire shape lines]
+At a prime $p\equiv1\pmod{24}$, the original source forces $t\mid j^2$ on
+\[
+ \alpha=-4t,\quad t\in\{1,2,3\};\qquad
+ \beta=-4t,\quad t\mid36.
+\]
+Every such source therefore has the explicit middle return (4), without any
+bound on its other shape coordinate.
+\end{theorem}
+\begin{proof}
+For alpha, $(2/h)=1$ with $h\equiv3\pmod4$ forces $h\equiv7\pmod8$;
+$(3/h)=1$ forces $h\equiv11\pmod{12}$. These give $2\mid j$ or $3\mid j$.
+For beta, $D=hs^2+4t$, $r+\kappa=sD$ odd and $pD+1=4hr\kappa$ give
+$D\equiv7\pmod8$ and $h\equiv7-4t\pmod8$. If $2\mid t$, then $2\mid j$.
+If $3\mid t$, all equalities in the remainder of this sentence are modulo
+three: the case $h=0$ is impossible; at $h=1$, $s=0$ would
+require $1=-r^2$; $s=\pm1$ would require $2=r(s-r)$, also impossible.
+Hence $h=2\pmod3$ and $3\mid j$. Since each exponent in $t\mid36$ is at
+most two, this proves the full divisor budget.
+\end{proof}
+
+\paragraph{Sharpness in the original prime domain.}
+For every $t=6+420z$, put $h=t^2-3t+1$, $R=t^2+t+1$.
+Then $\gcd(hR,210)=\gcd(h,R)=1$. The integer $r_0=(t+2R)/4$ satisfies
+$16tr_0^2\equiv1\pmod R$, since $t^3\equiv1\pmod R$.
+Solve
+$r\equiv r_0\pmod R$ and
+$r\equiv((R+1)/4)h^{-1}\pmod{210}$.
+The progression $p=4hr-R$ is reduced modulo $840hR$ and is 1 modulo 840.
+Dirichlet's theorem \cite[Theorem 18.1]{Dirichlet} therefore gives infinitely
+many prime members. They have the original E state $(a,u)=(hr,hr^2)$,
+$\alpha=-4t$, and the unavailable canonical word but available sharp word (3).
+For example the hard prime $825241$ has
+\[
+ (a,R,u,h,r,s,\kappa)=(206321,43,2240439739,19,10859,1,208402140).
+\]
+At $j=5$, only $W=25$ in $\{1,5,25\}$ has residue six modulo 19. It returns
+\[
+ (a_M,R_M,U,h_M,r_M,s_M,\lambda_M)
+ =(217170,43439,25,1,5,43434,1).
+\]
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/capacity-sharp-bound.pdf}
+\caption{The sharp finite boundary and the exact \(p=825241\) nonsquare
+return.  Blue points enumerate every proved finite template through \(t=120\);
+the displayed quadratic curve is the theorem.}
+\end{figure}
+
+\paragraph{A complete limitation of same-grade repair.}
+For every fixed $t\ge4$ there are infinitely many actual hard-prime E states
+with $\alpha=-4t$ and $\mathcal A_t(j)=\varnothing$.
+Here is the constructive proof. Put
+$K=\prod_{l^e\parallel t}l^{\lceil e/2\rceil}$ over every prime, including
+two, and \(M=4K\). For odd \(A\) coprime to \(t\), let
+\(\chi_t(A)=(t/A)\) be the Kronecker--Jacobi character determined by the
+squarefree part of \(t\). The unit classes \(A\equiv3\pmod4\),
+\(\chi_t(A)=1\) number \(\varphi(M)/2\)
+if $t$ is a square and $\varphi(M)/4$ otherwise. The latter count follows by
+CRT: the positive quadratic character of $t$ is nontrivial on units 1 modulo
+four and has value one at $-1$. This class set is the singleton $\{-1\}$ only
+at $t=1,2,3$. Choose $A\ne-1$ and lift it so that $R,R-4t$ are units at
+$3,5,7$. The added restrictions each exclude at most two residues, and are
+already satisfied when that prime divides $K$.
+Dirichlet supplies a prime \(R\) in this reduced class with
+$h=R-4t>\max(4t,t^2-3t+1)$. Choose \(q^2\equiv t\pmod R\), put
+\(r_0\equiv(4q)^{-1}\pmod R\), and impose the
+same CRT on $r$ as above. Again $p=4hr-R$ is a reduced progression of primes
+$1\pmod{840}$. Its original E state is $(hr,hr^2)$.
+But $h\not\equiv-1\pmod{4K}$ makes $t\nmid j^2$, and Theorem 1 excludes
+all other words at this grade. Every such prime already has its constructed
+E solution; this is not an ES counterexample.
+
+For $t=4$, take $R=59,h=43,j=11$ and
+$p=1447321+2131080n$. The prime member $n=3$ is $7840561$.
+The entire capacity set tests $1,11,121$ modulo 43, giving $1,11,35$ rather
+than four. The beta automatic list cannot be extended indiscriminately:
+actual hard-prime beta sources with coefficients $5,8,27$ also have empty
+old-grade boxes; full certificates are included.
+
+\paragraph{Scope and exact records.}
+The full note gives every inverse-source fibre, including its original exterior
+gate, and corrects a missing gate in the predecessor's prose (its executable
+already tested it). It preserves every word and ordered denominator. The
+standard-library programs compare literal divisor boxes and independently
+constructed primitive source states. Their declared bounds and execution
+receipts distinguish finite replay from the unbounded proofs above. No initial
+ES state has been forced at an arbitrary prime; universal occupancy, historical
+priority, a Lean build, and independent mathematical review are not claimed.
+
+\begin{thebibliography}{9}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to
+the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc.},
+94, 50--105. \texttt{arXiv:1107.1010}, \S2.
+\bibitem{Dirichlet} Sutherland, A. V. (2017). \emph{18.785 Number Theory I,
+Lecture 18}, MIT, Theorem 18.1.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,29 @@
+{
+  "counts": {
+    "distinct_E_states_with_new_middle_return": 103,
+    "hard_E_states_with_new_return": 1,
+    "hard_primes_with_return": 1,
+    "hard_E_states_outside_previous_diagonal_or_radius8": 1
+  },
+  "strict_examples": [
+    {
+      "p": 1129,
+      "source": [
+        "E",
+        286,
+        7436,
+        15,
+        11,
+        26,
+        1,
+        1957,
+        286,
+        21527,
+        631903558
+      ],
+      "side": "alpha",
+      "c": 1
+    }
+  ],
+  "scope": "Original state reductions, not additional overall ES prime coverage."
+}

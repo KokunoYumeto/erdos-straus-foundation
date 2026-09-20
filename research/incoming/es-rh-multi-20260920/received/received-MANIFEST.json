@@ -1,0 +1,261 @@
+{
+  "date": "2026-09-20",
+  "files": [
+    {
+      "bytes": 5153,
+      "path": "CODEX_HANDOFF.md",
+      "sha256": "5649a1b375c0b5ec871e6d4a3ef78632c1a760a0650c93864202d902d20bfc72"
+    },
+    {
+      "bytes": 5806,
+      "path": "README.md",
+      "sha256": "ceecea8933de1deaaf625f51a69ed34d1e522662722b6a4c3e63c34e2e24dcee"
+    },
+    {
+      "bytes": 53993,
+      "path": "RESEARCH_CONTINUATION.md",
+      "sha256": "9d39034c1885204f9c300fcf9bb33456406b5f417912ff89c768356dfdd0d045"
+    },
+    {
+      "bytes": 8846,
+      "path": "SOURCE_LEDGER.md",
+      "sha256": "90c00eb4c773cb5a59ef03ad0b8dc6874a367da8bdb390d2919bef8cd488d98f"
+    },
+    {
+      "bytes": 2826,
+      "path": "checks/bernstein.py",
+      "sha256": "aa453fbf9b3ed05a7dfa372d55eb79a2921b8fec770f19a344cc7e40d8b99aa4"
+    },
+    {
+      "bytes": 2419,
+      "path": "checks/check_additional.py",
+      "sha256": "09d64c51ed926cc07cb3b4c7996561bf4b3fb5282824db9f093b99f056202837"
+    },
+    {
+      "bytes": 1249,
+      "path": "checks/check_bernstein.py",
+      "sha256": "eff13a2de9c0de624b86650ff1443dd9e3bd1c3ac72bac55999698d2d0401960"
+    },
+    {
+      "bytes": 3159,
+      "path": "checks/check_es_slice.py",
+      "sha256": "d1e0a3b250f28aeae7f738c2845f4395c3ebec606fbcc1e5e9e07cab11513899"
+    },
+    {
+      "bytes": 2094,
+      "path": "checks/check_gauss_bridge.py",
+      "sha256": "31f9bfd6101da08c8c04390cbae0a1cec4555050106f1048df7c443f0ac17f4f"
+    },
+    {
+      "bytes": 1553,
+      "path": "checks/check_gram_floor.py",
+      "sha256": "4363f0071ea68c494a83167cb90280caff73f070234685591151287d1dbc9e62"
+    },
+    {
+      "bytes": 2259,
+      "path": "checks/check_local_transport.py",
+      "sha256": "a21c6805cca70c940869826a91f2d09e4f16e483be940e258c52012a39a908e7"
+    },
+    {
+      "bytes": 3844,
+      "path": "checks/check_lowrank.py",
+      "sha256": "fb21b86f22806d7cb3dc0a9098782536c74933b53c3c70ad28916b8b3b9f37ee"
+    },
+    {
+      "bytes": 1267,
+      "path": "checks/check_monodromy.py",
+      "sha256": "6ea2ca822ca8d98a2d245d954189ef7869a8e3edfbdc1ab8086e88e84f3e9b41"
+    },
+    {
+      "bytes": 1682,
+      "path": "checks/check_previous_bounds.py",
+      "sha256": "aee604837494c85962fdf7a369949b4fd91be9562379c493f1103232b41b82b7"
+    },
+    {
+      "bytes": 2800,
+      "path": "checks/check_residue.py",
+      "sha256": "0aed9f1d4781dcf4f80d582a46dd6472d759cc9bbed61cda21c0b2a09dd54372"
+    },
+    {
+      "bytes": 2008,
+      "path": "checks/common.py",
+      "sha256": "bd8a3cc4118555e980bdac02df8cd986b71cc579159b7ae25127cec45e30c69d"
+    },
+    {
+      "bytes": 3803,
+      "path": "checks/run_validation.py",
+      "sha256": "bbdcf9c07a99c428d698308f7c9cbbcaba4fdc4a7f7f88daa272cc6a5a152df7"
+    },
+    {
+      "bytes": 835,
+      "path": "checks/verify_package.py",
+      "sha256": "fd613288efb0fc02d4c2d4b12b0a5cada13fb678140574d0c8b228e167116f99"
+    },
+    {
+      "bytes": 7692,
+      "path": "proofs/01_ES_FRAME_AND_ARITHMETIC.md",
+      "sha256": "d375e415b12c67ac5fbb15eaed924bc4867f243dfe2079d0335757dd580dd0da"
+    },
+    {
+      "bytes": 10407,
+      "path": "proofs/02_RESIDUE_TRACE_AND_BOUNDARY.md",
+      "sha256": "20c5fb683e9ffcac10003420dd7df5ae2f695f7c4bc8bf866ab506683b97e7f9"
+    },
+    {
+      "bytes": 7908,
+      "path": "proofs/03_NATIVE_GAUSS_PAIRING.md",
+      "sha256": "562784574851f079f5f109f0ea103e1bcf58cc55c1abbf194c5364d789486749"
+    },
+    {
+      "bytes": 7653,
+      "path": "proofs/04_NATIVE_INVERSE_MARGINS.md",
+      "sha256": "bcd3717cffb70f9cb5a376d403d8c804702ec01386cda8789925d6796842b61d"
+    },
+    {
+      "bytes": 10953,
+      "path": "proofs/05_MULTIPARAMETER_CURRENT_CERTIFICATES.md",
+      "sha256": "48a45739ff7c794b482b8f076791ca975eb23d410b69e520283dad042373de67"
+    },
+    {
+      "bytes": 14,
+      "path": "requirements.txt",
+      "sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+    },
+    {
+      "bytes": 1726,
+      "path": "results/INTERVAL_GRAM_COMPARISON.json",
+      "sha256": "d855b658095982e8bc12172655f0ea3d1ff1463021920eb0111b6e0ff3fed4c3"
+    },
+    {
+      "bytes": 4322,
+      "path": "results/VERIFICATION_SUMMARY.json",
+      "sha256": "2d23f749f713ad9824d78f694d317bb5ed5eca7309a27a1948b433be567ba71e"
+    },
+    {
+      "bytes": 9554,
+      "path": "results/carried_bounds_recheck.json",
+      "sha256": "7f56adccc97de2909acd283e5f5c9e15d76100e2ccfd0c4cdf93a70d7eb21b99"
+    },
+    {
+      "bytes": 2687,
+      "path": "results/es_frame_divisor.json",
+      "sha256": "b0ba4c062eddb6eeabae1a5d07aca621a38971caab54b3dd873235dbfc6b3ca8"
+    },
+    {
+      "bytes": 409,
+      "path": "results/es_slice_polynomial.txt",
+      "sha256": "4dae00087ecbba4a7576fc738c4e85c6951e6cff37de3a3dfe9157b85bedb53a"
+    },
+    {
+      "bytes": 452,
+      "path": "results/fixed_prime_monodromy.json",
+      "sha256": "aadd3b77c0af4074ee49d58b4a7d554f99af0863575910156523a5db639cc72e"
+    },
+    {
+      "bytes": 2684,
+      "path": "results/gauss_residue_bridge.json",
+      "sha256": "63130a8e4f7482d833432ad6c2db7593f523b231003c0e7c32e2cd5bbb99dac7"
+    },
+    {
+      "bytes": 1035,
+      "path": "results/literal_polynomial_and_moving_columns.json",
+      "sha256": "2b39a24f01543d9037712ed2ea1cb26a7eb8ff23e71bca0760e83ba947b13bbf"
+    },
+    {
+      "bytes": 985,
+      "path": "results/local_es_rh_transport.json",
+      "sha256": "844aeb2917bd1d999674e181b15169080f5a2c3247dedd29b8a341a829a2df97"
+    },
+    {
+      "bytes": 5242,
+      "path": "results/native_gram_floor.json",
+      "sha256": "d75c1e49d16278f5a5daa04962b6f1369f869c954de140f80d648f72dd4bc956"
+    },
+    {
+      "bytes": 1678,
+      "path": "results/polynomial_sign_certificate.json",
+      "sha256": "f2737b1935c5cc7652a6f3e4bb89df48b0e9a519044c5204dff73f5bfa023ac4"
+    },
+    {
+      "bytes": 339,
+      "path": "results/replay/additional.json",
+      "sha256": "d9e7e30e9467a2151d8822ae69e829013483633adb1c58a7490c99c9c2afb015"
+    },
+    {
+      "bytes": 336,
+      "path": "results/replay/bernstein.json",
+      "sha256": "4f7ecb3e53cec5f4f10c4fb93829491321c61d2dfad2f58ef6586801231d7839"
+    },
+    {
+      "bytes": 335,
+      "path": "results/replay/es_slice.json",
+      "sha256": "1acb64ea219c98ceebdf2b1f9c2380f8f08c619358cc01c493cce5c36fa60130"
+    },
+    {
+      "bytes": 343,
+      "path": "results/replay/gauss_bridge.json",
+      "sha256": "8dfe10016f0d69434eca02cdf2bc08895f7c99a90ab4b18d0a8e9c9ce8ba36eb"
+    },
+    {
+      "bytes": 339,
+      "path": "results/replay/gram_floor.json",
+      "sha256": "c51e57b8a698ec650ac4ce4a1e95fec078ac59a7807bd4a988945843a27e52b7"
+    },
+    {
+      "bytes": 349,
+      "path": "results/replay/local_transport.json",
+      "sha256": "2b05faa7fb7760be0a414aa5c3c5a62f17a9e48771db601c38865e618f5db460"
+    },
+    {
+      "bytes": 333,
+      "path": "results/replay/lowrank.json",
+      "sha256": "ab2415c2127a40039549fdc93e956c42d22ecdd3df1132545428040e8a05f48b"
+    },
+    {
+      "bytes": 336,
+      "path": "results/replay/monodromy.json",
+      "sha256": "913b177770a96c272df11d8781eddbe219396bef376a26f2dbcdacb4b04ffbbb"
+    },
+    {
+      "bytes": 350,
+      "path": "results/replay/previous_bounds.json",
+      "sha256": "ca6725a783177b5a246c30f8376e313481cf52cd201c809df40767d529b6b46f"
+    },
+    {
+      "bytes": 333,
+      "path": "results/replay/residue.json",
+      "sha256": "58920a083b3010f5df607d23d8148dda68b596a1ef6483aaeeef30636fa99a80"
+    },
+    {
+      "bytes": 1905,
+      "path": "results/residue_duality.json",
+      "sha256": "6afd3b8e57f41005069394dc8452740b2970354c4aaa93414d861af0d4e79021"
+    },
+    {
+      "bytes": 190,
+      "path": "results/residue_matrices.txt",
+      "sha256": "fbc9779a48c58009891a5526aa7dc0b347b95a647f30d8c6087b5ee964083257"
+    },
+    {
+      "bytes": 3613,
+      "path": "results/simultaneous_quotient_phase.json",
+      "sha256": "b4f204b9f6d384fcb006f9e73557275148d0c6d8c2aa938ce695f8004b505590"
+    },
+    {
+      "bytes": 2027,
+      "path": "results/synthetic_phase_polynomials.txt",
+      "sha256": "943dd9b9f8f399e2fd2c805266458df1abbf1106fc5e300eb2502b884c165b5f"
+    },
+    {
+      "bytes": 25840,
+      "path": "sources/WEIGHTED_CONDUCTOR_FORWARD.tex",
+      "sha256": "d86dcb3daf13c9b2d5a0aaa4d72cce35a1aff48066ad69c7d9846b9d097dc354"
+    }
+  ],
+  "format": 1,
+  "source_commits": {
+    "ES": "2b5ab3b63471092624b4fcfac2ab2a0fbafa23a3",
+    "RH": "1bcdcebb766d84c6edbb42bc7d4d845e960ec325"
+  },
+  "title": "ES\u2013Fable\u2013RH multi-track continuation"
+}

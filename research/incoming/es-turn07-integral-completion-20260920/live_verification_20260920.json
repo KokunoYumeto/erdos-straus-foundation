@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-20",
+  "main": {
+    "checks": 104538,
+    "success": true,
+    "primes": 99,
+    "original_vectors": 868359,
+    "E": 2451,
+    "M": 2054,
+    "source": "live_certificates/summary.json"
+  },
+  "optimized": {
+    "checks": 104538,
+    "success": true,
+    "source": "live_certificates_optimized/summary.json"
+  },
+  "independent": {
+    "checks": 27154,
+    "success": true,
+    "primes": 99,
+    "original_vectors": 868359,
+    "E": 2451,
+    "M": 2054,
+    "source": "live_certificates/independent.json"
+  },
+  "scope": "Exact literal-root normalization, local fibres, bounded original-state scan and finite-place control family; no universal occupancy claim."
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "claims": [
+    {
+      "id": "SZ-20260920-053",
+      "title": "Arithmetic nonsingularity of the original odd receiving frame on 3456 CRT classes",
+      "status": "proved-and-independently-replayed",
+      "proof": "RESEARCH_CONTINUATION.md, Track I, E1-E8",
+      "certificate": "check_es_arithmetic_descent.py; results/es_arithmetic_descent.json",
+      "dependencies": ["SZ-20260920-034", "SZ-20260920-036"],
+      "statement": "If p is prime, p is congruent to 1 modulo 12, and the three Legendre symbols (-511/p), (1241/p), (-15/p) all equal -1, then every positive integral Erdos--Straus witness at p has nonzero integer receiving numerator N and hence invertible original odd receiving frame. The two exact denominator-divisibility patterns give valuations zero or two. Quadratic reciprocity gives 3456 reduced classes modulo 521220."
+    },
+    {
+      "id": "SZ-20260920-054",
+      "title": "Sharp paired determinant return in the retained quotient metric",
+      "status": "proved-in-supplied-source-script-not-received",
+      "proof": "RESEARCH_CONTINUATION.md, Track II, D1-D13",
+      "dependencies": ["SZ-20260920-039"],
+      "statement": "For consecutive native Gram determinant ratios r_L, the exact rank-one identity epsilon_L^2=a_L^2(1-r_{L-1})(1-r_L)/r_L and the aggregate allowance Theta<=epsilon_L imply -log(r_{L-1}r_L)>=2 asinh(Theta/a_L). Summing over L=q,...,2q-1 gives the four-endpoint determinant return D10, with no claim that it is the whole assembled action."
+    },
+    {
+      "id": "SZ-20260920-055",
+      "title": "Finite holomorphic and positive heat actions with exact remainders",
+      "status": "proved-in-supplied-source-script-not-received",
+      "proof": "RESEARCH_CONTINUATION.md, Track III, H1-H16",
+      "dependencies": ["SZ-20260920-054"],
+      "statement": "For a finite original-metric operator T(t)=A-tQ with Q^2=0, the holomorphic heat action has an entire outgoing-parameter expansion with the dimension-independent remainder H7. The holomorphic and positive heat actions satisfy the quantitative small-time comparison H13 and the rational stopping certificate H15; they remain distinct functions."
+    },
+    {
+      "id": "SZ-20260920-056",
+      "title": "Exact signed-cover arithmetic descent and nonsquare twist at q=61",
+      "status": "proved-and-independently-replayed",
+      "proof": "RESEARCH_CONTINUATION.md, Track IV, F1-F9",
+      "certificate": "check_es_arithmetic_descent.py; results/es_arithmetic_descent.json",
+      "dependencies": ["SZ-20260920-020"],
+      "statement": "For the genuine witness (13;4,18,468), the normalized quartic modulo 61 has roots 4,13,18,41 and derivative values 18,38,26,30, all nonsquares. The original signed cover has zero F_61-points and eight F_61^2-points; the twist eta^2=2h'(r) has eight F_61-points. The exact base-extension map is eta_2=w eta_1 for w^2=2, Frobenius is four transpositions, and the finite-fibre zeta function is (1-T^2)^(-4)."
+    }
+  ],
+  "nonclaims": [
+    "The sufficient character conditions are not asserted to be necessary.",
+    "The five-prime witness census is not the quantified proof.",
+    "The finite-fibre zeta function is not identified with the Riemann zeta function.",
+    "The determinant and heat tracks do not close RH or the universal Erdos--Straus conjecture."
+  ]
+}

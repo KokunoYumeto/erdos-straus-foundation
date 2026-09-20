@@ -1,0 +1,81 @@
+{
+  "checks": [
+    "n=1 native mass retained",
+    "n=1 positive pairing = residue times q",
+    "n=1 positive multiplier is a unit",
+    "n=1 orthogonality 0",
+    "n=1 Stieltjes rational residue formula at 4",
+    "n=1 Gauss lower bound at 4",
+    "n=1 Stieltjes rational residue formula at 16",
+    "n=1 Gauss lower bound at 16",
+    "n=2 native mass retained",
+    "n=2 positive pairing = residue times q",
+    "n=2 positive multiplier is a unit",
+    "n=2 orthogonality 0",
+    "n=2 orthogonality 1",
+    "n=2 Stieltjes rational residue formula at 4",
+    "n=2 Gauss lower bound at 4",
+    "n=2 Stieltjes rational residue formula at 16",
+    "n=2 Gauss lower bound at 16",
+    "n=3 native mass retained",
+    "n=3 positive pairing = residue times q",
+    "n=3 positive multiplier is a unit",
+    "n=3 orthogonality 0",
+    "n=3 orthogonality 1",
+    "n=3 orthogonality 2",
+    "n=3 Stieltjes rational residue formula at 4",
+    "n=3 Gauss lower bound at 4",
+    "n=3 Stieltjes rational residue formula at 16",
+    "n=3 Gauss lower bound at 16",
+    "n=4 native mass retained",
+    "n=4 positive pairing = residue times q",
+    "n=4 positive multiplier is a unit",
+    "n=4 orthogonality 0",
+    "n=4 orthogonality 1",
+    "n=4 orthogonality 2",
+    "n=4 orthogonality 3",
+    "n=4 Stieltjes rational residue formula at 4",
+    "n=4 Gauss lower bound at 4",
+    "n=4 Stieltjes rational residue formula at 16",
+    "n=4 Gauss lower bound at 16",
+    "arbitrary-frame relation defect retained",
+    "arbitrary-frame defect nonzero"
+  ],
+  "controls": [
+    "arbitrary roots are Gauss nodes"
+  ],
+  "exact_checks": 40,
+  "negative_controls": 1,
+  "results": {
+    "cases": [
+      {
+        "mass": 41,
+        "monic_p": "z - 332/41",
+        "n": 1,
+        "second_kind_q": "41"
+      },
+      {
+        "mass": 41,
+        "monic_p": "z**2 - 50005*z/3496 + 33015/874",
+        "n": 2,
+        "second_kind_q": "41*z - 889533/3496"
+      },
+      {
+        "mass": 41,
+        "monic_p": "z**3 - 67000422*z**2/3175391 + 394811489*z/3175391 - 541324558/3175391",
+        "n": 3,
+        "second_kind_q": "41*z**2 - 1692787490*z/3175391 + 4104382145/3175391"
+      },
+      {
+        "mass": 41,
+        "monic_p": "z**4 - 717706362*z**3/27297233 + 6203795599*z**2/27297233 - 19689651558*z/27297233 + 17331263088/27297233",
+        "n": 4,
+        "second_kind_q": "41*z**3 - 20363279486*z**2/27297233 + 103428252975*z/27297233 - 137188880820/27297233"
+      }
+    ],
+    "defect": "Matrix([[0, 0, 0], [0, 0, 5466], [0, 5466, 130740]])",
+    "diagnostic_measure": "six rational atoms; NOT the native arithmetic density"
+  },
+  "status": "PASS",
+  "suite": "gauss_residue_bridge"
+}

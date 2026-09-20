@@ -1,0 +1,498 @@
+\section{The precise continuation}
+This tranche completes a fixed-target divisor problem in the original Type-II
+cofactor box. It does not assert occupancy at every prime. Starting from an
+actual exterior state with a negative-four-integer shape, it gives the entire
+same-grade middle return, including every noncanonical divisor and its inverse.
+The noncanonical repair has a sharp finite bound depending only on the shape
+coefficient. That bound is realized by original exterior states at infinitely
+many hard primes. Conversely, for every fixed shape coefficient $t\ge4$, an
+explicit reduced prime progression gives original exterior states whose entire
+same-grade middle box is empty. Their known exterior solutions remain present.
+
+The Type-I/II coordinate identities and the square-divisor cofactor criterion
+are antecedents \cite[\S2, Propositions 2.2 and 2.6]{ET}. The preceding source
+\cite[negative-four-square transfer]{Turn7Fabel} supplied $t=c^2$ when
+$c\mid(h+1)/4$. Here the arithmetic restriction is neither omitted nor made into
+an unspecified admissibility hypothesis: it is solved exactly as a divisor
+problem. No historical-priority determination is claimed.
+
+\section{Original coordinates and a general negative shape}
+Let $p\equiv1\pmod4$ be prime. An original exterior state consists of
+\[
+ p/4<a<p/2,\quad R=4a-p,\quad u\mid a^2,\quad R\mid4u+1.
+\]
+Retain $a=\prod_l l^{e_l}$, the full box $-e_l\le\beta_l\le e_l$, and
+$u=\prod_l l^{e_l+\beta_l}$. Set
+\[
+ g=\gcd(a,u),\quad (h,r,s)=(g^2/u,u/g,a/g),\quad
+ \kappa=(pr+s)/R.
+\]
+Then $a=hrs$, $u=hr^2$, $\gcd(r,s)=1$, and the ordered denominators are
+\[
+ (x,y,z)=(a,hs\kappa,phr\kappa),\qquad
+ \frac4p=\frac1x+\frac1y+\frac1z.                         \tag{1}
+\]
+Multiplication proves the identity, and its ordered inverse is
+$u=a^2/(Ry-pa)$. All normalization factors are positive integers. Let
+\[
+ v=hs^2=a^2/u,\quad D=(4u+1)/R=(r+\kappa)/s,
+ \quad \alpha=v-R,\quad\beta=v-D.
+\]
+The symbol $\beta$ here is not an exponent $\beta_l$. The original identities are
+\[
+ RD=4hr^2+1,\quad pD+1=4hr\kappa,\quad r+\kappa=sD,
+\]
+\[
+ h\mid\alpha\beta-1,\quad p\equiv\alpha\pmod h,
+ \quad p\beta\equiv1\pmod h.                             \tag{2}
+\]
+For every original divisor $d\mid a^2$, reciprocity gives $(d/R)=(d/p)$.
+For an odd prime $l\mid a$, use $R\equiv-p\pmod l$ and $R\equiv3\pmod4$;
+for 2 use the supplementary law. The exterior target $u\equiv-1/4\pmod R$
+therefore gives $(h/p)=(u/p)=-1$. These are the classical laws, used in their
+original factor coordinates \cite[\S6.4]{Hatcher}.
+
+Suppose one ordered shape coordinate is $-4t$, $t\ge1$. Since $R,D\equiv3\pmod4$,
+\[
+ h\equiv3\pmod4,\qquad s\ \hbox{odd},\qquad
+ \gcd(h,t)=1,\qquad (t/h)=1.                             \tag{3}
+\]
+Indeed $hs^2$ is 3 modulo four. Equation (2) makes $h$ coprime to $4t$.
+For $\alpha$, reciprocity gives $(h/p)=(p/h)=(-4t/h)=-(t/h)$; the inverse
+congruence gives the same result for $\beta$. Also $p>2h$ because $a\ge h$.
+
+Put $j=(h+1)/4$ and define the full original target set
+\[
+ \boxed{\mathcal A_t(j)=\{W>0:W\mid j^2,\ W\equiv t\pmod{4j-1}\}.}       \tag{4}
+\]
+There is no primality condition on $h=4j-1$ in (4).
+
+\begin{theorem}[Complete same-grade channel return]\label{thm:return}
+For every original exterior state as above and every $W\in\mathcal A_t(j)$, set
+\[
+ U=\begin{cases}W,&\alpha=-4t,\\j^2/W,&\beta=-4t,\end{cases}
+ \quad Q=h,\quad R_M=(p+4U)/h,\quad a_M=(p+R_M)/4.          \tag{5}
+\]
+These are exactly the original cofactor-$h$ middle choices, with the indicated
+ordered shape branch retained. In particular $U\mid j^2$, $0<R_M<p$, and
+\[
+ g_M=\gcd(j,U),\quad
+ h_M=g_M^2/U,\quad r_M=U/g_M,\quad\lambda_M=j/g_M,
+ \quad s_M=R_M\lambda_M-r_M                              \tag{6}
+\]
+returns the original middle state and its ordered denominators
+\[
+ (a_M,ph_Ms_M\lambda_M,ph_Mr_M\lambda_M).
+\]
+\end{theorem}
+\begin{proof}
+In the $\alpha$ case $p\equiv-4t\pmod h$, so the cofactor congruence is exactly
+$W\equiv t$. In the $\beta$ case $p\equiv-(4t)^{-1}\pmod h$ and
+$j^2\equiv16^{-1}\pmod h$, so $U=j^2/W$ satisfies $p+4U\equiv0$ precisely
+when $W\equiv t$. Every divisor involved is a unit modulo $h$.
+Since $U\le j^2$, $h\ge3$ and $p>2h$,
+\[
+ 4U\le(h+1)^2/4<(h-1)p.
+\]
+Thus $R_M<p$, and its positive integer value is 3 modulo four. Prime valuations
+in $U\mid j^2$ give $h_Mr_M\lambda_M=j$, $h_Mr_M^2=U$, and
+$\gcd(r_M,\lambda_M)=1$. Directly
+\[
+ a_M=R_Mj-U=h_Mr_Ms_M>0.
+\]
+A common prime of $r_M$ and $R_M$ would divide $p$ by $hR_M=p+4U$, whereas
+$r_M\le j<p$. Hence $\gcd(r_M,s_M)=1$. These identities prove the middle
+normalization, the first-half range, and the reciprocal identity. Conversely a
+cofactor-$h$ middle word has $U\mid j^2$ and the same gate; taking $W=U$ or
+$j^2/U$ recovers (4). Neither $U<a_M$ nor $r_M<s_M$ is imposed: the ordered
+orientation is kept, or complemented explicitly afterward.
+\end{proof}
+
+\section{An exact disjoint classification of every available divisor}
+The next theorem is pure integer arithmetic. In particular, $t$ need not be a
+square and $h$ need not be prime.
+
+\begin{theorem}[Fixed-target capacity completion]\label{thm:capacity}
+Let $t,j\ge1$ and $h=4j-1>t$. The set $\mathcal A_t(j)$ is the disjoint union of:
+\begin{enumerate}
+\item the canonical word $W=t$, present exactly when $t\mid j^2$;
+\item the companion word $W=4tj$, present exactly when $4t\mid j$;
+\item the finite words described by
+\[
+ 1\le\ell\le\left\lfloor\frac{t-2}{4}\right\rfloor,
+ \quad w\mid\ell^2,\quad
+ n=\frac{t-w}{4\ell+1}\in\mathbb Z_{>0},                  \tag{7}
+\]
+\[
+ V=\ell^2/w,\quad j=\ell+4nV,\quad h=4j-1>t,
+ \quad W=j^2/V=t+nh.                                    \tag{8}
+\]
+\end{enumerate}
+In the last item the displayed $j$ must equal the input $j$. Each word occurs
+once. The inverse, for $W\ne t$, is
+\[
+ n=(W-t)/h,\quad V=j^2/W,\quad\ell=j-4nV.                \tag{9}
+\]
+For $\ell=0$ it is the companion. Otherwise $w=\ell^2/V$ is the unique label
+in (7).
+\end{theorem}
+\begin{proof}
+If $W\ne t$, then $W=t+nh$ for some $n\ge1$, because $0<t<h$. Let $V=j^2/W$.
+Reduction of $16WV=16j^2=(h+1)^2$ modulo $h$ gives
+\[
+ 16tV=1+kh
+\]
+for an integer $k\ge1$. Modulo four, $k\equiv1$, so $k=4\ell+1$ with
+$\ell\ge0$. Comparing the two exact products gives
+\[
+ h+2=k+16nV,\qquad j=\ell+4nV,
+ \qquad t=(4\ell+1)n+\frac{\ell^2}{V}.                  \tag{10}
+\]
+If $\ell=0$, then $n=t$, $j=4tV$, and $W=4tj$. This is equivalent to
+$4t\mid j$ and coexists with the canonical divisor. If $\ell>0$, (10) proves
+$V\mid\ell^2$, and $w=\ell^2/V\ge1$. Therefore $t\ge4\ell+2$, giving (7).
+All labels are recovered by (9). Conversely (7)--(8) give
+\[
+ j^2/V=w+8\ell n+16n^2V=t+n(4j-1),
+\]
+an integer divisor of $j^2$ in the required class. The three cases are disjoint
+by $W=t$, $\ell=0$, or $\ell>0$.
+\end{proof}
+
+The small-grade domain $h\le t$ is separately finite:
+$j\le\lfloor(t+1)/4\rfloor$. Literal enumeration there is retained; the theorem
+is not asserted on that domain. A reduced residue $t\bmod h$ may be used to test
+a word, but it must not replace the original shape coefficient in a bound.
+
+\begin{theorem}[Sharp finite-repair bound]\label{thm:bound}
+Every finite word in Theorem~\ref{thm:capacity} satisfies
+\[
+ \boxed{h\le t^2-3t+1.}                                \tag{11}
+\]
+Equality holds exactly when $w=n=1$ and $t=4\ell+2$. In particular, if the
+canonical divisor is absent but $\mathcal A_t(j)$ is nonempty, (11) holds.
+For $h>\max(t,t^2-3t+1)$ the exact count is
+\[
+ \boxed{|\mathcal A_t(j)|=
+  \mathbf1_{t\mid j^2}+\mathbf1_{4t\mid j}.}             \tag{12}
+\]
+\end{theorem}
+\begin{proof}
+Use $n=(t-w)/(4\ell+1)$ to write
+\[
+ h+1=4\ell+\frac{16\ell^2(t-w)}{(4\ell+1)w}
+ \le4\ell+\frac{16\ell^2(t-1)}{4\ell+1}.
+\]
+The last expression is strictly increasing in real $\ell\ge0$. Since
+$\ell\le(t-2)/4$, it is at most
+$(t-2)+(t-2)^2=t^2-3t+2$. Equality requires both $w=1$ and
+$\ell=(t-2)/4$, and then $n=1$. The companion cannot repair a missing canonical
+word because $4t\mid j$ implies $t\mid j^2$. The classification proves (12).
+\end{proof}
+
+For every $\ell\ge1$ the arithmetic equality family is
+\[
+ t=4\ell+2,\quad j=\ell(4\ell+1),\quad h=4j-1,
+ \quad W=(4\ell+1)^2,\quad V=\ell^2.                    \tag{13}
+\]
+Here $t\nmid j^2$: the odd number $2\ell+1>1$ is coprime to both factors of
+$j$. Thus (13) is a genuine repair, not a second name for the canonical word.
+Not every finite word is a repair: at
+\[
+ t=289,\quad j=1224,\quad h=4895,
+ \qquad\mathcal A_t(j)=\{289,5184\},
+\]
+the canonical word and a finite word coexist. The latter has
+$(n,V,\ell,w)=(1,289,68,16)$. Its coefficient is two, even though its occupied
+residue is a single class.
+
+The complete finite search uses at most
+\[
+ \sum_{\ell\le(t-2)/4}\tau_{\rm div}(\ell^2)
+ \le L(1+\log L)^2,\quad L=\lfloor(t-2)/4\rfloor\ge1.   \tag{14}
+\]
+Indeed $\tau_{\rm div}(\ell^2)\le d_3(\ell)$ primewise, and
+$\sum_{abc\le L}1\le L(\sum_{a\le L}1/a)^2$.  This counts candidate labels
+under unit-cost integer arithmetic; it is not a bit-complexity estimate that
+includes integer factorization.  It is a finite classification in the original
+integers, not an assertion that a successful word always exists.
+
+There is also a strict smaller-parameter return on each finite word. Put
+$g_0=\gcd(\ell,V)$ and
+\[
+ H_0=g_0^2/V,\quad r_0=V/g_0,\quad \lambda_0=\ell/g_0.
+\]
+Then $\ell=H_0r_0\lambda_0$, $V=H_0r_0^2$, and $\gcd(r_0,\lambda_0)=1$.
+The middle normalization in (6) is
+\[
+ \begin{array}{c|ccc}
+ &h_M&r_M&\lambda_M\\\hline
+ \alpha&H_0&\lambda_0+4nr_0&r_0\\
+ \beta&H_0&r_0&\lambda_0+4nr_0.
+ \end{array}                                           \tag{15}
+\]
+In particular $h_M\le\ell\le(t-2)/4$. This decreases a parameter of the
+finite capacity reduction; it is not a well-founded proof of initial ES occupancy.
+
+\section{Entire shape lines with forced original availability}
+\begin{theorem}[Automatic negative-shape returns]\label{thm:auto}
+Let $p\equiv1\pmod{24}$ be prime and start from an original exterior state.
+The canonical word is always available on the three lines
+\[
+ \alpha=-4t,\qquad t\in\{1,2,3\},
+\]
+and on the nine lines
+\[
+ \boxed{\beta=-4t,\qquad t\mid36.}                      \tag{16}
+\]
+Every such line has the original middle return (5)--(6), with no bound on the
+other shape coordinate. The coefficient $t$ need not be a square.
+\end{theorem}
+\begin{proof}
+For $\alpha$, (3) gives $(2/h)=1$ at $t=2$; together with $h\equiv3\pmod4$,
+this forces $h\equiv7\pmod8$, hence $2\mid j$. At $t=3$, the supplementary
+quadratic law gives $h\equiv11\pmod{12}$ and $3\mid j$. The case $t=1$ is literal.
+
+For $\beta$, use the stronger actual equations, not just their Jacobi projection.
+Here $D=hs^2+4t$ and $r+\kappa=sD$ is odd. Thus $r\kappa$ is even. Since
+$pD+1=4hr\kappa$ and $p\equiv1\pmod8$, necessarily $D\equiv7\pmod8$, whence
+\[
+ h\equiv7-4t\pmod8.
+\]
+If $2\mid t$, this gives $2\mid j$.
+If $3\mid t$, all equalities in the rest of this paragraph are modulo three.
+The case $h=0$ makes $D=0$ and contradicts
+$pD+1=4hr\kappa$. If $h=1$ and $s=0$, the same equation would give
+$1=-r^2$, impossible. If $h=1$ and $s=\pm1$, then $D=1$, $\kappa=s-r$, and
+$2=r(s-r)$; the right side has only values zero and one. Thus $h=2\pmod3$,
+so $3\mid j$. Every prime exponent of $t\mid36$ is at most two. Therefore
+these two forced divisibilities imply $t\mid j^2$, and Theorem~\ref{thm:return}
+applies.
+\end{proof}
+
+For the canonical $W=t$, the squarefree part of $h_M$ is exactly that of $t$.
+This follows from $h_M=g_M^2/U$ and, in the inverse branch, $U=j^2/t$.
+The preceding square-target theorem is the special case in which this part is one.
+We do not claim that (16) lists every possible automatic $\beta$ coefficient.
+Actual complete failures at $t=5,8,27$ are given below.
+
+\section{The quadratic bound is sharp on actual hard-prime sources}
+\begin{theorem}[Prime realization of the finite-repair boundary]\label{thm:sharp}
+For every $t=6+420z$, $z\ge0$, infinitely many primes $p\equiv1\pmod{840}$ have
+an original exterior state with $\alpha=-4t$,
+\[
+ h=t^2-3t+1,\quad R=t^2+t+1,\quad s=1,
+\]
+whose canonical cofactor word is unavailable but whose finite word in (13)
+returns an original middle state. Thus the bound (11) is attained within the
+original prime arithmetic, for unbounded $t$.
+\end{theorem}
+\begin{proof}
+Put $\ell=(t-2)/4$, $j=\ell(4\ell+1)$, so $h=4j-1$ and the word is
+$W=(t-1)^2$. The two integers $h,R$ are coprime, since their difference is $4t$
+and $h\equiv R\equiv1\pmod t$. For the displayed progression of $t$,
+$\gcd(hR,210)=1$. Also $t^3\equiv1\pmod R$. Consequently
+\[
+ r_0=(t+2R)/4\in\mathbb Z,
+ \qquad16tr_0^2\equiv1\pmod R.
+\]
+Since $h\equiv-4t\pmod R$, the latter is exactly
+$R\mid4hr_0^2+1$.
+Choose $r$ by the explicit compatible CRT conditions
+\[
+ r\equiv r_0\pmod R,\qquad
+ r\equiv\frac{R+1}{4}h^{-1}\pmod{210}.
+\]
+Then $p=4hr-R$ varies in a progression of modulus $840hR$, is 1 modulo 840,
+and is coprime to the entire modulus: modulo $h$ it is $-R$ and modulo $R$
+it is $4hr_0$. Dirichlet's theorem supplies infinitely many prime members
+\cite[Theorem 18.1]{Dirichlet}. For all sufficiently large positive members,
+$a=hr$, $u=hr^2$ is an original first-half exterior state; $R<2hr$ verifies the
+ only upper range issue. Its shape is $h-R=-4t$. Formula (13) proves canonical
+ unavailability and supplies the sharp finite repair. The target is reconstructed by
+Theorem~\ref{thm:return}. Prime values are supplied by a reduced \emph{linear}
+progression; no assertion about primes represented by a higher-degree polynomial
+has been inserted.
+\end{proof}
+
+A small explicit original member, in another hard class, is
+\[
+ \boxed{p=825241,\quad
+ (a,R,u,h,r,s,\kappa)=(206321,43,2240439739,19,10859,1,208402140).}    \tag{17}
+\]
+Its coefficient is $t=6$, $j=5$, and the entire capacity box is $\{1,5,25\}$.
+Only $25\equiv6\pmod{19}$ succeeds. The original middle return is
+\[
+ (a_M,R_M,U,h_M,r_M,s_M,\lambda_M)
+ =(217170,43439,25,1,5,43434,1),                           \tag{18}
+\]
+with ordered denominators $(217170,825241\cdot43434,825241\cdot5)$.
+This is a nonsquare coefficient and a genuinely noncanonical return.
+
+\section{Every other alpha coefficient has infinite original same-grade obstructions}
+\begin{lemma}[Exact limitation of the character-only budget]
+For $t\ge1$, let the product run over every prime, including \(2\):
+\[
+ K(t)=\prod_{l^e\parallel t}l^{\lceil e/2\rceil},\qquad M=4K(t).
+\]
+For odd \(A\) coprime to \(t\), write
+\(\chi_t(A)=(t/A)\) for the quadratic Kronecker--Jacobi character determined
+by the squarefree part of \(t\); its conductor divides \(M\).  Among units
+\(A\pmod M\) with \(A\equiv3\pmod4\) and \(\chi_t(A)=1\), the implication
+$A\equiv-1\pmod M$ holds for all such $A$ exactly when $t=1,2,3$.
+\end{lemma}
+\begin{proof}
+The Jacobi character is well-defined modulo $M$ by reciprocity, including the
+factor at two. It takes value one at $-1$. If $t$ is a square, it is trivial,
+and the indicated set has $\varphi(M)/2$ elements. If $t$ is nonsquare, its
+restriction to the units 1 modulo four is nontrivial: at an odd prime appearing
+to odd exponent choose a nonsquare by CRT, with the other coordinates one; if
+only the factor two has odd exponent, choose the coordinate 5 modulo eight.
+Thus it is independent of the mod-four sign character, and the indicated set
+has $\varphi(M)/4$ elements. A multiple of four with totient two is $M=4$;
+those with totient four are $8,12$. The square/non-square alternatives give
+exactly $t=1,2,3$. In each singleton case the member is $-1$.
+\end{proof}
+
+\begin{theorem}[An actual obstruction for every fixed $t\ge4$]\label{thm:obstruct}
+For every integer $t\ge4$, there are infinitely many hard primes possessing an
+original exterior state with $\alpha=-4t$ but no middle state at cofactor equal
+to that state's original grade $h$, even after the \emph{entire} divisor box
+$\operatorname{Div}(j^2)$ is tested. These primes already have the constructed
+exterior solution. This is not an Erd\H{o}s--Straus counterexample.
+\end{theorem}
+\begin{proof}
+Choose a unit class $A\pmod{4K(t)}$ from the preceding lemma other than $-1$.
+Then $A\equiv3\pmod4$ and $(t/A)=1$. Lift it by CRT to a reduced class modulo
+$\operatorname{lcm}(4K(t),840)$ such that, for $l=3,5,7$, both $R$ and
+$R-4t$ are units modulo $l$. If $l\mid K(t)$ this is already true, because
+$l\mid t$ and $A$ is a unit. Otherwise one need only avoid $0,4t\pmod l$,
+which leaves a choice even for $l=3$. Choose an odd lift modulo eight as well.
+Dirichlet's theorem gives a prime $R$ in this class as large as required.
+Set $h=R-4t$ and choose it so that
+\[
+ h>\max(4t,t^2-3t+1).
+\]
+Then $h\equiv3\pmod4$, $\gcd(h,210)=\gcd(h,R)=1$, and
+$h\not\equiv-1\pmod{4K(t)}$. Thus $t\nmid j^2$ for $j=(h+1)/4$.
+   Since \(\chi_t(R)=(t/R)=1\), choose \(q\) with \(q^2\equiv t\pmod R\)
+   and set \(r_0\equiv(4q)^{-1}\pmod R\).  Then
+\[
+ 16tr_0^2\equiv1\pmod R.
+ \]
+ Solve
+\[
+ r\equiv r_0\pmod R,\qquad
+ r\equiv\frac{R+1}{4}h^{-1}\pmod{210}.
+\]
+Again $p=4hr-R$ is a reduced progression modulo $840hR$, with $p\equiv1\pmod{840}$.
+Dirichlet gives infinitely many prime members. Take $a=hr$, $u=hr^2$, $s=1$.
+Then $R\mid4u+1$, $\gcd(p,a)=1$, and $p>2a$ follows already from $h>4t$ and
+$r\ge1$. The original shape is $\alpha=h-R=-4t$.
+Theorem~\ref{thm:bound} now gives $\mathcal A_t(j)=\varnothing$: neither the
+canonical word nor its companion is available and the finite-exception range
+has been passed. Theorem~\ref{thm:return} identifies this with failure of the
+complete cofactor-$h$ middle source.
+\end{proof}
+
+For $t=4$ one explicit construction is
+\[
+ R=59,\quad h=43,\quad j=11,\quad
+ r=8415+12390n,\quad
+ \boxed{p=1447321+2131080n.}                              \tag{19}
+\]
+The progression is reduced and 1 modulo 840. At $n=3$, $p=7840561$ is prime,
+with
+\[
+ (a,R,u,h,r,s,\kappa)
+ =(1960155,59,89353665675,43,45585,1,6057830054).
+\]
+The three capacity divisors are $1,11,121$, of residues $1,11,35$ modulo 43,
+not four. Every prime in (19) nevertheless has its displayed exterior solution.
+
+The beta automatic theorem has genuine limits too. The following are original
+hard-prime sources, and complete enumeration of their small $j^2$ boxes proves
+failure at their old grade:
+\[
+\begin{array}{c|r|r|r|r|r|r|r}
+ p&a&u&h&r&s&\kappa&t\ (\beta=-4t)\\\hline
+346201&158815&43864703&23&1381&5&1654&8\\
+593401&188100&39710000&11&1900&9&7091&27\\
+2727841&929071&464321099&11&6497&13&17930&5.
+\end{array}                                             \tag{20}
+\]
+The case $h\le t$ in the middle row is checked literally, not attributed to
+Theorem~\ref{thm:capacity}. No infinite beta obstruction theorem is asserted.
+
+\section{Original inverse fibres and a necessary prose correction}
+For fixed $p,h,t$ on an $\alpha$ branch, put $N=(p+4t)/h$. Its complete original
+fibre is
+\[
+ s\mid N,\quad s+N/s\equiv0\pmod4,\quad r=(s+N/s)/4,
+ \quad a=hrs,\quad u=hr^2,
+\]
+\[
+ \boxed{\gcd(r,s)=1,\quad p/4<a<p/2,\quad
+        R=4a-p\mid4hr^2+1.}                             \tag{21}
+\]
+The shape equation is $4rs-s^2=N$; the extra gate in (21) is necessary and not
+implied by this factorization. For a beta branch, put $F=(4tp+1)/h$ and enumerate
+\[
+ 1\le s\le\lfloor(p-1)/(2h)\rfloor,\quad
+ D=hs^2+4t,\quad\Delta_s=s^2(D^2-p)-F.
+\]
+Keep the positive squares $k^2=\Delta_s$ with $sD-k$ positive even, and set
+$r=(sD-k)/2$, $\kappa=sD-r$, retaining the original coprimality, range and gate.
+These are equivalences from $4hr(sD-r)=pD+1$ and $k=\kappa-r>0$.
+
+The predecessor's prose alpha-fibre formula omitted the final gate in (21).
+Its executable inverse-fibre enumeration did test that gate. At
+$p=5209,h=95,t=4$, the displayed divisor equation has $N=55$. The choice
+$s=5,r=4$ satisfies its factorization, coprimality, shape and first-half conditions,
+but gives
+\[
+ a=1900,\quad R=2391,\quad u=1520,\qquad
+ (4u+1)\bmod R=1299.
+\]
+It is not an exterior state. This correction changes the textual claimed inverse
+domain, not the predecessor's forward theorem or its executable fibre filter.
+The old source is preserved, and \texttt{CORRECTION.md} identifies the affected
+passage and file hash.
+
+For the new maps, retain $(p,\text{original E state},\text{side},t,j,W)$ and its
+canonical/companion/finite label. The M output recovers $Q=h$ and $j$; (21) and
+its beta counterpart recover precisely the possible E sources once $t$ and the
+side remain. The finite labels are inverted by (9). Across two ordered branches,
+alpha word $W_1$ and beta word $W_2$ give the same M word exactly when
+$W_1W_2=j^2$. Multiple original sources above that word are not identified.
+
+On the free abelian group of these labelled sources the coefficient pushforward
+sums each actual target fibre. Its kernel is generated by same-target differences.
+No division by a fibre size is used to prove positivity. Reducing a positive even
+coefficient modulo two can yield a supported zero; it does not remove its
+original words. The two-word example following (13) is an explicit control.
+
+\section{Verification scope and the remaining milestone}
+The verifier exhausts (4) for $t\le120$, $j\le5000$, $4j-1>t$, and compares every
+integer word with Theorem~\ref{thm:capacity}. It separately verifies all finite
+profiles and one hundred members of the sharp arithmetic family, the original
+prime-realizable progressions, and the character-only classification through 120.
+It also enumerates every original first-half E/M divisor at primes
+$p\equiv1\pmod4$ through 3000, retaining actual factorization and channel records,
+and checks the returned original states. The fixed larger examples use complete
+trial-division primality checks. Their empty cofactor boxes are exhausted.
+
+The independent program imports neither the main verifier nor predecessor code.
+It uses literal divisors of $j^2$, coprime primitive $r,s$ sources, primewise
+Euler-symbol evaluation, and a complementary-divisor parameter for the finite
+profiles. Normal and optimized command outcomes, hashes and scopes belong to the
+execution receipt. Multiple runs are not independent mathematical review.
+
+The completed unbounded statements here concern the \emph{fixed-target capacity
+problem} and the original shape lines in Theorem~\ref{thm:auto}. The obstruction
+in Theorem~\ref{thm:obstruct} proves why increasing the old-grade divisor search
+cannot repair every negative-square alpha source. It does not exclude a different
+original middle cofactor or an exterior solution, which the construction already
+supplies. No initial state has been forced at an arbitrary hard prime. Turn~7's
+universal existence milestone remains outstanding; no Turn~8 witness guarantee,
+Lean build, new global verification range or priority claim follows.

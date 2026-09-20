@@ -1,0 +1,10 @@
+{
+  "new_exact_checks_per_mode": 1121,
+  "new_suite_count": 4,
+  "predecessor_exact_checks_per_mode": 539,
+  "predecessor_suite_count": 10,
+  "scope": "Exact identities, bounded positive-measure diagnostics and the explicitly counted ES witnesses; no Lean or native zeta-moment evaluation.",
+  "status": "PASS",
+  "total_exact_checks_per_mode": 1660,
+  "total_negative_controls_per_mode": 20
+}

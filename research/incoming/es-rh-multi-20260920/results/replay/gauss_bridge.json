@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 40,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "d9c18d36b0bb43f101ae34ec43408c73e45b2065f05e89819e61bba397c0beb1",
+  "script": "check_gauss_bridge.py",
+  "status": "PASS",
+  "suite": "gauss_bridge"
+}

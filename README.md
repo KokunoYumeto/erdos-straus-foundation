@@ -97,12 +97,80 @@ proof locators without reconstructing a programme timeline.
     involution is calculated exactly and shown not to preserve the fixed-prime
     source. These are branch reductions, not universal occupancy.
 11. [Normalized ES quartic and exact Fable--weighted-conductor bridge](research/incoming/es-fable-zeta-bridge-20260920/README.md)
-    maps every actual Turn 7 exterior state to a quartic whose literal roots are
-    $p,x,y,z$, recovers $p=-5u_4/u_3$ from its unmarked coefficients, proves the
-    coefficient hypersurface and complete eight-point signed fibre, and
-    transports the result through one fixed original weighted conductor. A
-    separate seven-state reciprocal suspension retains its different nonproper
-    locus. This is a structural bridge, not an occupancy or zeta-zero theorem.
+    maps every positive integral witness at a prime $p\equiv1\pmod {12}$ to a
+    quartic whose distinct literal roots are $p,x,y,z$, recovers
+    $p=-5u_4/u_3$ from its unmarked coefficients, proves the coefficient
+    hypersurface and complete eight-point signed fibre, and transports the
+    result through one fixed original weighted conductor. A separate
+    seven-state reciprocal suspension retains its different nonproper locus.
+    An explicit invertible raw-cell--Lorentz map transports the archived
+    three-dimensional tetrahedron, and the odd receiving determinant pulls
+    back to a primitive irreducible polynomial on the ES chart with a proved
+    positive-real intersection. This is a structural bridge, not an occupancy
+    or zeta-zero theorem.
+12. [Prime-local Fable fibres and same-prime negative-square transfer](research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/INTEGRATION_AUDIT.md)
+    proves that an original exterior state has local fibre algebra
+    $\mathbb Q_p^3\times K_{\rm ram}^2$, whereas a middle state gives
+    $\mathbb Q_p^3\times K_{\rm unr}^2$; both have three local points, but
+    their integral root orders differ by an exact index-$p$ quotient. It also
+    constructs original same-prime middle states from negative-four-square
+    exterior shapes and retains complete inverse fibres. Its stronger
+    fixed-cofactor theorem gives a bijection from the finite divisor set
+    (U\mid((h+1)/4)^2, h\mid p+4U) onto every original middle state with
+    (Q=h), strictly extending the two selected square words. The received
+    archive is preserved byte-for-byte; the linked audit and corrected build
+    repair a missing exterior divisibility gate and two scope statements.
+13. [Fixed-input cover, finite boundary completion, and odd-moment frame](research/incoming/es-fable-zeta-bridge-20260920/INTEGRATION_AUDIT_20260920.md)
+    proves that every positive integral witness at a prime
+    \(p\equiv1\pmod {12}\) enters the eight-sheet domain, with explicit
+    fixed-\(p\) separation and inverse-coordinate bounds. At fixed nonzero
+    \(p\), over
+    \(\mathcal B_p=\{(A,C):ACd_p\operatorname{Disc}(g_p)\ne0\}\), the cover
+    splits into ranks \(2+6\), has monodromy order \(48\), and has deck group
+    \(C_2\times C_2\). The reciprocal signed coordinate
+    gives a finite flat rank-eight completion with double-root fibre
+    \(\mathbb C[\eta]/(\eta^4)\), while an invertible marked moment frame
+    factors the separate odd receiving divisor exactly.
+14. [Exact cofactor capacity and fixed-target returns](research/incoming/es-turn07-capacity-completion-20260920/README.md)
+    classifies every divisor \(W\mid j^2\) in a fixed class
+    \(t\pmod{4j-1}\) into canonical, companion, and finite branches with an
+    exact inverse. The finite branch satisfies the sharp bound
+    \(h\le t^2-3t+1\); actual hard-prime exterior states attain equality
+    infinitely often. Every fixed \(t\ge4\) also occurs on infinitely many
+    constructed exterior states whose complete same-grade middle box is
+    empty. Those states already solve ES in the exterior channel, so this is
+    not an ES counterexample.
+15. [Exact ES/Fable/RH multi-track continuation](research/incoming/es-rh-multi-20260920/README.md)
+    isolates a unique rank-three crossing on an explicit positive-real ES ray
+    and gives the corresponding integral determinant dichotomy. It proves that
+    the collision-completed trace pairing is the perfect residue pairing
+    composed with multiplication by \(2\eta^3\), including the exact local
+    residue-unit correction. It then constructs the typed
+    residue-to-native-Gram multiplier and its retained ES relation defect.
+    Its inverse-trace and common-parameter Bernstein results are RH-facing
+    interfaces, not ES occupancy claims. The received packet, audit repairs,
+    541-check replay, figures and reader are preserved together.
+16. [Original integral signed completion](research/incoming/es-turn07-integral-completion-20260920/README.md)
+    computes the literal-root rank-eight order over (mathbb Z_p), including
+    every Smith factor, conductor, inverse lattice and reduction kernel.  The
+    exterior and middle indices are (p^2) and (p^9); the Type-I boundary
+    has (p) lifts modulo (p^2) and none modulo (p^3).  Its finite-place
+    control family proves that the listed gates are not by themselves an
+    integral-source certificate; it is not an ES counterexample.
+17. [Defining-prime normalization and local signed characters](research/incoming/es-defining-prime-continuation-20260920/README.md)
+    extends the original E/M calculation to every closer-pair collision
+    stratum, proves the translated chart is an exact quadratic twist, and
+    gives the fixed-prime rank-(2+6) fibre product.  Its signed-label
+    representation satisfies the exact conductor-index identity, including
+    the retained (p=1201) Frobenius calculation.
+18. [Arithmetic frame nonsingularity and signed descent](research/incoming/es-rh-continuation-b-20260920/README.md)
+    proves a three-character sufficient condition for nonsingularity of the
+    original odd receiving frame on exactly (3456) reduced classes modulo
+    (521220).  The actual witness ((13;4,18,468)) has no original signed
+    point over (mathbb F_{61}), eight over (mathbb F_{61^2}), and eight
+    points on its specified nonsquare twist over (mathbb F_{61}).  Its two
+    adjacent tracks prove the sharp determinant return and finite heat
+    remainders while retaining their separate metric and verification scope.
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
@@ -112,13 +180,36 @@ complete middle and exterior sources, then remove the diagonal and every
 hard-prime radius-at-most-eight exterior branch by explicit original middle
 returns. The eleventh result then places every occupied exterior state in the
 generic signed Fable cover and a fixed weighted conductor with all fibres and
-information loss explicit. They isolate, but do not prove, the remaining
-unbounded-shape occupancy statement. None asserts the still-missing universal
-positivity theorem.
+information loss explicit; the exact elementary transform to the reciprocal
+suspension has a one-scale fibre and a proved 14-point signed fibre product.
+The twelfth computes the prime-local fibre and integral-order difference
+between the two channels, changes the arithmetic target on an exact
+negative-square family, and completes the entire fixed-(Q=h) middle fibre.
+The thirteenth removes the exterior-only restriction from the distinct-root
+domain theorem, computes the fixed-input monodromy and deck actions, and
+retains collision fibres without cancelling the original meromorphic pole.
+The fourteenth solves the fixed-target divisor capacity problem, identifies
+its sharp finite boundary, and shows exactly when same-grade repair can fail
+despite an existing exterior state.
+The fifteenth locates the exact odd-frame rank loss on a positive-real solution
+ray, separates perfect residue duality from trace degeneration, and returns the
+finite algebra to the native moment metric through a proved multiplier and
+defect. Its final two tracks improve RH-side conditioning and certificate
+propagation without being counted as ES occupancy progress.
+The sixteenth and seventeenth identify the complete integral lattice defect at
+the defining prime, prove the exact relationship between the two received
+presentations, and carry the collision data into local signed characters.
+The eighteenth excludes the receiving-frame divisor on an explicit infinite
+set of prime classes and gives a fully typed arithmetic-descent example; it
+does not turn failed character tests into singularity claims.
+After composing the earlier diagonal and radius-eight returns, every residual
+exterior state has shape radius at least nine. These results isolate, but do
+not prove, the remaining unbounded-shape occupancy statement. None asserts the
+still-missing universal positivity theorem.
 Each directory contains the complete proof, exact maps, executable certificates,
 source lineage, negative controls, and an explicit handoff where one was made.
 The [20 September proof bulletin](DAILY_RESULTS_20260920.md) gives stable IDs for
-the quartic, fibre, conductor and root-algebra results.
+the quartic, fibre, conductor, monodromy, boundary and root-algebra results.
 
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with
@@ -140,6 +231,7 @@ heuristic motivation, attempts, limited successes and unfinished work.
 
 | Edition | Read | Proof sources and checks |
 | --- | --- | --- |
+| Current GitHub cumulative ES/Fable reader (124 pages) | [PDF](research/incoming/es-fable-zeta-bridge-20260920/output/pdf/ES_FABLE_ZETA_CROSSWALK.pdf) | [TeX, exact checkers and audit](research/incoming/es-fable-zeta-bridge-20260920/README.md) |
 | Published 9 September 2026 expanded supplement: exact bounded transport (86 pages) | [PDF](https://zenodo.org/records/22678971/files/07_Exact_Bounded_Transport_Expanded_72_Statements_2026-09-08.pdf) | [TeX and exact checks](https://zenodo.org/records/22678971/files/08_Exact_Bounded_Transport_72_Source_and_Checks_2026-09-08.zip) |
 | Published 8 September 2026 supplement: bounded congruence transport (67 pages) | [PDF](https://zenodo.org/records/22666493/files/02_Exact_Bounded_Congruence_Transport_2026-09-08.pdf) | [TeX and exact checks](https://zenodo.org/records/22666493/files/03_Exact_Bounded_Transport_Source_and_Checks_2026-09-08.zip) |
 | Preserved 31 August 2026 cumulative archive (619 pages) | [PDF](https://zenodo.org/records/22666493/files/00_ERDOS_STRAUSS_Project_Reader.pdf) | [Source, verification and provenance](https://zenodo.org/records/22666493/files/01_ERDOS_STRAUSS_Source_Verification_and_Machine_Memory.zip) |

@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-20",
+  "antecedents": [
+    {
+      "authors": "Christian Elsholtz and Terence Tao",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "locator": "source TeX lines 528-634, Section 2, Propositions 2.2 and 2.6 (labels type-1 and type-2)",
+      "identifier": "arXiv:1107.1010v6",
+      "source_tex": "local-corpus://Documents/arxiv_latex/library/other/Counting the number of solutions to the Erdos-Straus equation on unit fractions/egyptian-count18.tex",
+      "source_tex_sha256": "b0469a67a737b7f4e77778310c87e22f5783ae9704f70aa55919a4a40104611c",
+      "use": "Inherited Type I/II and square-divisor cofactor coordinates; not universal occupancy"
+    },
+    {
+      "author": "Allen Hatcher",
+      "year": 2022,
+      "title": "Topology of Numbers",
+      "locator": "Section 6.4",
+      "use": "Quadratic reciprocity and supplementary laws; primewise source calculation is proved in core.tex"
+    },
+    {
+      "author": "Andrew V. Sutherland",
+      "year": 2017,
+      "title": "18.785 Number Theory I, Lecture 18",
+      "locator": "Theorem 18.1",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "use": "Infinitely many primes in the explicitly proved reduced linear progressions"
+    },
+    {
+      "source": "es_turn7_fabel_bridge_20260920/core.tex",
+      "locator": "Negative-four-square transfer and inverse-source subsection",
+      "use": "Previous square-coefficient rule and the textual inverse-domain correction",
+      "sha256": "ac1270fcdf747137ad74d6c2c6e3cabd406d1fd8cec878e5e38be248e890f853"
+    }
+  ],
+  "content_level_search": {
+    "queries": [
+      "\"Erdos Straus\" \"4j-1\" \"divisor\"",
+      "\"t^2-3t+1\" \"divisor\"",
+      "Elsholtz Tao Counting solutions Proposition 2.6"
+    ],
+    "priority_determination": false
+  },
+  "new_scope": [
+    "Complete fixed-target integer divisor classification",
+    "Sharp finite-repair bound with original hard-prime realization",
+    "Forced negative nonsquare shape lines",
+    "Infinite original alpha old-grade failure for every t>=4"
+  ],
+  "nonclaims": [
+    "Universal ES or Type-II existence",
+    "A completed universal Turn 7 milestone",
+    "An endpoint-free fixed-grade obstruction",
+    "An infinite prime-value polynomial theorem",
+    "Historical priority",
+    "Lean build",
+    "Independent mathematical review"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 4,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "a2715a8615f7a9cc7e1c8c38a1af23c94becd9053f1995ca15848be5a07210b2",
+  "script": "check_monodromy.py",
+  "status": "PASS",
+  "suite": "monodromy"
+}

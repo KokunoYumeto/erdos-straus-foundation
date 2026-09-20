@@ -1,0 +1,89 @@
+{
+  "checks": [
+    "initial positive polynomial needs subdivision",
+    "strictly positive polynomial certified",
+    "all trap corners positive",
+    "interior negative value found",
+    "Bernstein reconstruction"
+  ],
+  "controls": [
+    "positive vertices certify positive current"
+  ],
+  "exact_checks": 5,
+  "negative_controls": 1,
+  "results": {
+    "negative": {
+      "point": [
+        "1/2",
+        "1/2"
+      ],
+      "positive_leaves": 0,
+      "status": "negative witness",
+      "value": "-49/400"
+    },
+    "positive": {
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "box": [
+            [
+              "0",
+              "1/2"
+            ],
+            [
+              "0",
+              "1/2"
+            ]
+          ],
+          "lower": "1/100",
+          "upper": "51/100"
+        },
+        {
+          "box": [
+            [
+              "0",
+              "1/2"
+            ],
+            [
+              "1/2",
+              "1"
+            ]
+          ],
+          "lower": "1/100",
+          "upper": "51/100"
+        },
+        {
+          "box": [
+            [
+              "1/2",
+              "1"
+            ],
+            [
+              "0",
+              "1/2"
+            ]
+          ],
+          "lower": "1/100",
+          "upper": "51/100"
+        },
+        {
+          "box": [
+            [
+              "1/2",
+              "1"
+            ],
+            [
+              "1/2",
+              "1"
+            ]
+          ],
+          "lower": "1/100",
+          "upper": "51/100"
+        }
+      ],
+      "status": "positive certificate"
+    }
+  },
+  "status": "PASS",
+  "suite": "polynomial_sign_certificate"
+}

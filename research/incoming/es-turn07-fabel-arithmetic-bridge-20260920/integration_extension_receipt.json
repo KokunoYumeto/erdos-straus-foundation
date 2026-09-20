@@ -1,0 +1,91 @@
+{
+  "certificate": "Turn 7 Fabel integration corrections and complete fixed-Q atlas",
+  "checks": {
+    "alpha_missing_gate_counterexample": {
+      "R": 2391,
+      "c": 2,
+      "h": 95,
+      "p": 5209,
+      "r": 4,
+      "remainder": 1299,
+      "s": 5
+    },
+    "distinct_fixed_Q_targets": 511,
+    "eligible_E_sources_h_3_mod_4": 1293,
+    "empty_fixed_Q_example": {
+      "c": 6,
+      "denominators": [
+        806,
+        14043,
+        1113244782
+      ],
+      "divisor_residues": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "exterior_state": [
+        806,
+        175,
+        20956,
+        31,
+        26,
+        1,
+        453,
+        479,
+        -144,
+        -448
+      ],
+      "h": 31,
+      "j": 8,
+      "p": 3049
+    },
+    "fixed_Q_asserted_identities": 8397,
+    "negative_square_sources": 227,
+    "negative_square_sources_with_empty_fixed_Q_fibre": 44,
+    "source_target_incidences": 933,
+    "strict_generalization_example": {
+      "c": 5,
+      "denominators": [
+        11226,
+        462073386,
+        123483
+      ],
+      "fixed_Q_word": 3,
+      "j": 3,
+      "lucas_base": 22,
+      "middle_state": [
+        11226,
+        3743,
+        3,
+        3,
+        1,
+        3742,
+        1
+      ],
+      "p": 41161,
+      "selected_word_unavailable": true
+    }
+  },
+  "incoming_scan_bound": 3000,
+  "incoming_scan_sha256": "c7758b41a41c7c6fdfef94a6945714ad70950ae46d7c827b79cbba097d2433e8",
+  "incoming_scan_totals": {
+    "E": 5700,
+    "M": 5268,
+    "Qp^3 x ramified_quadratic^2": 5700,
+    "Qp^3 x unramified_quadratic^2": 5268,
+    "divisor_vectors": 1877004,
+    "square_alpha_blocked": 84,
+    "square_alpha_pass": 89,
+    "square_beta_blocked": 42,
+    "square_beta_pass": 37
+  },
+  "nonclaims": [
+    "The fixed-Q fibre does not supply an exterior source at an unoccupied prime.",
+    "The selected c|j square words do not exhaust the complete fixed-Q fibre.",
+    "The finite replay is a regression certificate for the proved formulas, not a universal ES computation."
+  ],
+  "schema_version": 1
+}

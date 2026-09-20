@@ -1,0 +1,86 @@
+{
+  "checks": [
+    "generic quartic residue Gram",
+    "generic residue determinant",
+    "multiplication is residue-self-adjoint",
+    "quartic trace equals residue times derivative",
+    "eta squared equals h prime",
+    "r and eta commute",
+    "residue duality determinant",
+    "eta self-adjoint for residue pairing",
+    "trace Gram = residue Gram times 2 eta cubed",
+    "norm of derivative",
+    "quartic trace determinant",
+    "bounded-root boundary example has eta squared tending to zero",
+    "bounded-root boundary example has divergent third scaled coordinate term",
+    "m=2 length",
+    "m=2 trace-map rank one",
+    "m=2 eta^4 zero",
+    "m=2 eta^3 nonzero",
+    "m=3 length",
+    "m=3 trace-map rank one",
+    "m=3 eta^4 zero",
+    "m=3 eta^3 nonzero",
+    "m=4 length",
+    "m=4 trace-map rank one",
+    "m=4 eta^4 zero",
+    "m=4 eta^3 nonzero",
+    "m=5 length",
+    "m=5 trace-map rank one",
+    "m=5 eta^4 zero",
+    "m=5 eta^3 nonzero",
+    "m=6 length",
+    "m=6 trace-map rank one",
+    "m=6 eta^4 zero",
+    "m=6 eta^3 nonzero",
+    "m=7 length",
+    "m=7 trace-map rank one",
+    "m=7 eta^4 zero",
+    "m=7 eta^3 nonzero",
+    "signed moment carrier square equals residue Gram"
+  ],
+  "controls": [
+    "bounded roots alone do not force eta q to e1",
+    "trace pairing is not invertible on double root"
+  ],
+  "exact_checks": 38,
+  "negative_controls": 2,
+  "results": {
+    "local_fibres": [
+      {
+        "length": 4,
+        "multiplicity": 2,
+        "trace_rank": 1
+      },
+      {
+        "length": 6,
+        "multiplicity": 3,
+        "trace_rank": 1
+      },
+      {
+        "length": 8,
+        "multiplicity": 4,
+        "trace_rank": 1
+      },
+      {
+        "length": 10,
+        "multiplicity": 5,
+        "trace_rank": 1
+      },
+      {
+        "length": 12,
+        "multiplicity": 6,
+        "trace_rank": 1
+      },
+      {
+        "length": 14,
+        "multiplicity": 7,
+        "trace_rank": 1
+      }
+    ],
+    "residue_determinant": "A^(-8)",
+    "trace_determinant": "256*Disc(h)^3/A^14"
+  },
+  "status": "PASS",
+  "suite": "residue_duality"
+}

@@ -154,16 +154,147 @@ happened:** the literal-root target recovers $p=-5u_4/u_3$, lies on an explicit
 coefficient hypersurface, and, for every actual Turn 7 exterior state, belongs
 to the finite étale degree-eight locus. Its two prime-marked states and six
 denominator-marked states are explicit. The reciprocal suspension instead has
-seven states and lies on the nonproper hyperplane. Both pass through the same
-fixed conductor square by invertible maps. **Successful scope:** this is a
-complete coordinate, fibre, inverse and exceptional-locus bridge from each
-existing exterior witness to the operator construction. **Unfinished:** it
+  seven states and lies on the nonproper hyperplane. The exact relation is now
+  proved: inversion (T\mapsto p/T), deletion of the marked root, insertion of
+  infinity and normalization give an elementary transform with a one-scale
+  coefficient fibre. The projective root schemes are explicitly isomorphic;
+  the signed covers meet in a 14-point fibre product, and a quadratic
+  trivialization identifies their projective eight-state covers while the
+  affine chart forgets exactly the prime sign. Both also pass through the same
+  fixed conductor square by invertible maps. **Successful scope:** this is a
+  complete coordinate, fibre, inverse and exceptional-locus bridge from each
+  existing exterior witness to the operator construction. **Unfinished:** it
 starts from an occupied ES state, so it does not force occupancy; the fixed
 reference roots are not zeta zeros, and no zeta-zero theorem follows.
 [Complete proof](research/incoming/es-fable-zeta-bridge-20260920/ES_FABLE_ZETA_CROSSWALK.tex) ·
 [typed maps](research/incoming/es-fable-zeta-bridge-20260920/MORPHISMS.md) ·
 [audit qualifications](research/incoming/es-fable-zeta-bridge-20260920/AUDIT_NOTES.md) ·
 [stable result locators](DAILY_RESULTS_20260920.md).
+
+## 10. Prime-local channel type and negative-square target change
+
+**Aim:** determine whether the reciprocal Fable inverse sees arithmetic
+information that is lost by its raw point count, and then construct an exact
+map that can change that information rather than declaring the two channels
+unrelated. **Reason for trying:** every exterior and middle target has seven
+geometric affine inverse points and three points over the original local field,
+so counting alone erases the channel distinction. **What happened:** the
+complete coordinate algebra was computed. Exterior targets have two ramified
+quadratic factors and an index-\(p\) root order; middle targets have two
+unramified factors and the maximal root order. The unique labelled rational
+interpolation exists in both directions, while its exterior-to-middle
+coefficients have exact valuations \((0,-1,-1)\). A separate arithmetic
+  source change sends negative-four-square exterior shapes to original
+  same-prime middle states and records every inverse fibre and collision. The
+  complete continuation replaces the selected square word by every divisor
+  (U\mid((h+1)/4)^2) satisfying (h\mid p+4U), and proves that this set is
+  bijective with all original middle states of normalized cofactor (Q=h).
+**Correction found on integration:** the received alpha inverse-fibre theorem
+omitted the original gate \(R\mid4u+1\). The executable certificate had applied
+it, and the corrected proof now does too; \(p=5209,h=95,c=2,s=5\) is the
+explicit false candidate excluded by the restored gate. **Successful scope:**
+  the local obstruction, its exact rational comparison, the target-changing
+  return and its complete fixed-cofactor fibre are proved without discarding
+  labels, valuation, scale, or source conditions. This strictly improves the
+  selected-word test at (p=41161), while the exact empty fibre at (p=3049)
+  shows why a negative square alone is insufficient. Composed with the earlier
+  shape theorem, the remaining occupied exterior source has radius at least
+  nine. **Unfinished:** these constructions begin with an occupied
+exterior source and do not force a first state at every prescribed prime.
+[Incoming packet and audit](research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/INTEGRATION_AUDIT.md) ·
+[corrected complete source](research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/corrected/workbench.tex) ·
+[cumulative crosswalk](research/incoming/es-fable-zeta-bridge-20260920/ES_FABLE_ZETA_CROSSWALK.tex).
+
+## 11. Fixed-input monodromy and the collision boundary
+
+**Aim:** determine what becomes of the generic signed cover after the
+intrinsic prime is fixed, and retain the multiple-root states without
+cancelling the pole in the original inverse. **Reason for trying:** the generic
+order-\(192\) action can move all four roots, whereas the ES coefficient
+family distinguishes \(p=-5D/C\); carrying the generic group unchanged would
+erase that marked structure. The inverse also removes every point where
+\(h_u'(r)=0\), exactly where the arithmetic and paired-root degenerations meet.
+**What was tried:** the fixed-\(p\) quartic was factored as
+\((r-p)g_p(r)\); two explicit complex ES loops were used to generate the
+signed monodromy; the reciprocal coordinate \(\eta=\xi^{-1}\) was retained;
+and the original odd evaluation was factored through a marked Vandermonde
+moment frame. **What happened:** the signed algebra splits into ranks \(2+6\),
+the monodromy has order \(48\), and the deck group is \(C_2\times C_2\).
+The correct representation contains two trivial summands, one standard
+two-dimensional summand, the prime-odd determinant character and one
+three-dimensional signed summand. The finite completion is free of rank eight;
+an \(m\)-fold root has the exact length-\(2m\) local algebra printed in the
+proof, and a double root gives \(\mathbb C[\eta]/(\eta^4)\). The original
+inverse still diverges like \(\eta^{-1}\). The odd moment carrier is
+invertible and exposes the remaining receiving divisor in its coefficient
+matrix. **Successful scope:** the fixed-input group, deck maps, orbit metric,
+collision algebra, local ES--paired-root map, and information loss are all
+typed and proved. Every positive integral witness at a hard prime is also
+proved to lie in the distinct-root domain with explicit fixed-\(p\) bounds.
+**Unfinished:** the bounds do not force occupancy; the local paired-root map
+does not identify global ES and zeta objects; and no rational prime-integral
+point on the odd receiving divisor is yet known.
+[Proof, audit and certificates](research/incoming/es-fable-zeta-bridge-20260920/INTEGRATION_AUDIT_20260920.md) ·
+[complete TeX](research/incoming/es-fable-zeta-bridge-20260920/FIXED_INPUT_BOUNDARY_MONODROMY.tex) ·
+[stable result locators](DAILY_RESULTS_20260920.md).
+
+## 12. Integral normalization at the defining prime
+
+**Aim:** determine what the signed rank-eight completion remembers over the
+original (p)-adic integer lattice, rather than only over the fraction field.
+**Reason for trying:** geometric degree, number of rational points and integral
+invertibility are different questions; the earlier seven- and eight-state
+descriptions did not by themselves compute the original order. **What was
+tried:** the literal roots ((p,x,y,z)), original signed basis, Vandermonde
+normalization, all Smith minors, conductor ideals and specialization kernels
+were carried through both E and M channels. **What happened:** the exterior
+and middle indices are exactly (p^2) and (p^9), with Smith exponent lists
+((0,0,0,0,0,0,1,1)) and ((0,0,0,1,1,2,2,3)). The Type-I added boundary
+point lifts modulo (p^2) but not (p^3). The independent defining-prime
+calculation was proved to use the identical orders and bases; its translated
+chart requires an explicit quadratic twist. **Successful scope:** every map,
+inverse lattice, quotient module and descent condition is explicit.
+**Unfinished:** normalization begins after an original ES state exists and
+does not force one at an unoccupied prime.
+[Integral proof](research/incoming/es-turn07-integral-completion-20260920/README.md) ·
+[general collision proof](research/incoming/es-defining-prime-continuation-20260920/README.md).
+
+## 13. Local signed characters and conductor balance
+
+**Aim:** turn the residue-collision data into an exact local representation
+without identifying it with the complex weighted conductor. **Reason for
+trying:** the parity of each normalized quadratic factor records which signed
+labels are split, unramified or ramified, while the integral index records
+collision depth. **What was tried:** cluster quotients, all quadratic
+characters, tame inertia, Frobenius and the original normalization lengths
+were computed in one basis. **What happened:** a cluster of \(m\) labels gives
+\(\mathbf 1^{m-1}\oplus\bigoplus_i\chi_i\), and the exact identity
+\(2\operatorname{length}(\widetilde{\mathscr E}_p/\mathscr E_p)+a(W)
+=6\sum_{i<j}v_p(t_i-t_j)\) holds. The \(p=1201\) middle witness has the
+displayed Frobenius polynomial and trace while retaining defect length nine.
+**Successful scope:** a typed finite-prime representation with every
+dependency and conductor term proved. **Unfinished:** no morphism from this
+finite-prime representation to a complex zeta operator has been proved.
+
+## 14. Character sieve for the odd receiving divisor
+
+**Aim:** exclude the additional odd receiving-frame singularity on infinite
+prime classes and test its signed cover arithmetically. **Reason for trying:**
+the positive-real rank-three crossing showed that the divisor is genuine, so
+integral arithmetic rather than continuity must exclude it. **What was tried:**
+the one-(p)-divisible and two-(p)-divisible denominator cases were exhausted,
+including the Type-I diagonal, and their exact discriminants were converted
+to quadratic-character conditions. A separate witness was reduced modulo
+(61) with every signed point retained through base extension and twist.
+**What happened:** three Legendre symbols force nonsingularity on exactly
+(3456) reduced classes modulo (521220). The witness
+((13;4,18,468)) has zero original signed points over (mathbb F_{61}),
+eight over (mathbb F_{61^2}), and eight on the specified twist over
+(mathbb F_{61}). **Successful scope:** the quantified theorem and descent
+are independently replayed with 923 exact checks. **Unfinished:** the
+conditions are only sufficient; the remaining classes and universal occupancy
+are open.
+[Complete proof and receipt](research/incoming/es-rh-continuation-b-20260920/README.md).
 
 ## Keeping future attempts intelligible
 
@@ -175,5 +306,5 @@ than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
 The [machine records](polyclank/attempts.json) expose the earlier five fields
-separately. This page covers the nine routes above; it does not claim to have recovered
+separately. This page covers the fourteen routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.

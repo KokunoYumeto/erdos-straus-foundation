@@ -1,0 +1,14 @@
+{
+  "exact_checks_per_mode": 19,
+  "identical_json": true,
+  "identical_stdout": true,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "negative_controls_per_mode": 1,
+  "receipt_sha256": "c6ac4567e50b4db213d5a241fe9defa2f8a38486c42000121bcc60df6572ab1c",
+  "script": "check_es_slice.py",
+  "status": "PASS",
+  "suite": "es_slice"
+}

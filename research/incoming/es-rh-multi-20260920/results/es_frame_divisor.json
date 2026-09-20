@@ -1,0 +1,72 @@
+{
+  "checks": [
+    "generic odd determinant numerator",
+    "literal reciprocal equation",
+    "prime recovered from coefficients",
+    "one nontrivial factor",
+    "negative frame determinant scalar at left",
+    "positive frame determinant scalar at right",
+    "no pole on interval",
+    "squarefree slice determinant factor",
+    "unique receiving-divisor root on interval",
+    "algebraic singular parameter is not rational",
+    "rank-three minor does not vanish at determinant root",
+    "rank-three minor has no pole on interval",
+    "distinct roots 0,1",
+    "distinct roots 0,2",
+    "distinct roots 0,3",
+    "distinct roots 1,2",
+    "distinct roots 1,3",
+    "distinct roots 2,3",
+    "isolating interval generated"
+  ],
+  "controls": [
+    "squarefreeness implies odd-frame invertibility"
+  ],
+  "exact_checks": 19,
+  "negative_controls": 1,
+  "results": {
+    "endpoint_values": [
+      "-1786217206785622999386511949033330706567620355/3557112872624161948946769867172196830620614599201",
+      "97280415041466364549868027939695740822768005/36624771458690978500024763191782482212857228369"
+    ],
+    "interval": [
+      551,
+      651
+    ],
+    "isolating_interval": [
+      [
+        "3520743/6176",
+        "3562358/6249",
+        1
+      ]
+    ],
+    "parameter": "t",
+    "primitive_polynomial_coefficients": [
+      2359424,
+      -2380972032,
+      -125022004322048,
+      199766203719977640,
+      -126442260595802541476,
+      41598937953326627478150,
+      -7385542427424681354996253,
+      544226493322473956433710982,
+      40187872427398803311778426564,
+      -12845040782988159530278491608280,
+      1219651834158063698018605839792000,
+      -55076685665576109738730352971200000,
+      998076020859413480649547526400000000
+    ],
+    "rank_three_minor": "5*t**2*(1034272*t**8 - 285852552*t**7 + 48156452756*t**6 - 10196021395806*t**5 + 838990618432457*t**4 - 6380634745828584*t**3 + 15568590734557010248*t**2 - 2811323797878833854080*t + 121087346879565184320000)/(4*(402*t**2 + 10099*t - 4060200)**4)",
+    "roots_at_prime_p": [
+      "p",
+      "p*t/(4*t-402)",
+      "p*t/202",
+      "p*t/200"
+    ],
+    "slice": "-5*t**2*(2359424*t**12 - 2380972032*t**11 - 125022004322048*t**10 + 199766203719977640*t**9 - 126442260595802541476*t**8 + 41598937953326627478150*t**7 - 7385542427424681354996253*t**6 + 544226493322473956433710982*t**5 + 40187872427398803311778426564*t**4 - 12845040782988159530278491608280*t**3 + 1219651834158063698018605839792000*t**2 - 55076685665576109738730352971200000*t + 998076020859413480649547526400000000)/(402*t**2 + 10099*t - 4060200)**6",
+    "sturm_root_count": 1
+  },
+  "status": "PASS",
+  "suite": "es_frame_divisor"
+}

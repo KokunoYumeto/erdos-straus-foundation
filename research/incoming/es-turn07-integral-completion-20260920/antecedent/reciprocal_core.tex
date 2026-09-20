@@ -1,0 +1,461 @@
+\section{Result and scope}
+This is a continuation of the unresolved Turn~7 existence task. The original
+four-dimensional Fabel polynomial in the Zeta workbench admits a literal
+arithmetic specialization at the reciprocal cubic of an Erd\H{o}s--Straus
+state. Its two channels have different local fibre algebras at the original
+prime: the exterior channel supplies ramified quadratic branches, whereas the
+middle channel supplies unramified quadratic branches. Both have exactly three
+rational local inverse points. The derivative, the full seven-point affine
+fibre, its integral specialization and the missing projective sign are retained.
+
+A separate constructive continuation extends the earlier bounded-shape E-to-M
+returns to arbitrary negative-four-square shape coordinates on their exact
+integer domain. In particular the entire lines $\alpha=-4$ and $\beta=-4$
+have original middle returns. Neither result produces the initial state at an
+arbitrary prime. No universal ES assertion, completed Turn~7 existence milestone,
+historical-priority determination or whole-programme analytic identification is
+claimed.
+
+The polynomial and global inverse formulas are antecedents from the Zeta source
+\cite[GF1--11, FC32--35]{Zeta}. Its four-dimensional map is the ES reader's
+extension, not an additional preimage attributed to the original
+three-dimensional Alp\"oge--Fabel example discussed by Tao \cite{Tao}.
+The classical Type-I/II coordinates are credited to \cite[\S2]{ET}.
+
+\section{Original arithmetic and the common reciprocal cubic}
+Fix a prime $p\equiv1\pmod4$. Retain an original first-half source
+\[
+ p/4<a<p/2,\quad R=4a-p,\quad u\mid a^2,
+ \quad E:R\mid4u+1,\quad M:R\mid u+a.
+\]
+For $a=\prod_l l^{e_l}$ retain $\beta_l=v_l(u)-e_l\in[-e_l,e_l]$.
+With $g=\gcd(a,u)$ the original normalization is
+\[
+ h=g^2/u,\quad r=u/g,\quad s=a/g,\qquad
+ a=hrs,\quad u=hr^2,\quad\gcd(r,s)=1.
+\]
+For E let $\kappa=(pr+s)/R$ and return
+$(x_1,x_2,x_3)=(a,hs\kappa,phr\kappa)$.
+For M let $\lambda=(r+s)/R$ and return
+$(x_1,x_2,x_3)=(a,phs\lambda,phr\lambda)$.
+Multiplication verifies the reciprocal identity. The ordered inverses are
+$u=a^2/(Rx_2-pa)$ and $u=pa^2/(Rx_2-pa)$, respectively. The M complement
+$u\mapsto a^2/u$ exchanges $r,s$ and the last two denominators; its orientation
+is retained rather than suppressed.
+
+Every normalization factor is a $p$-unit. For E use
+$pD+1=4hr\kappa$, with $D=(4u+1)/R=(r+\kappa)/s$; in particular $\kappa$
+need not be smaller than $p$. For M, $h,r,s<p$ and
+$\lambda=(r+s)/R<p$. The three denominators are distinct. In E,
+$\kappa>r$ and $pr>s$; in M, $r=s$ would force $r=s=1$ and $R\mid2$.
+Their first denominator is below $p/2$ and the other two are above $p/2$.
+
+\begin{lemma}[Original character distinction]\label{lem:character}
+For every original divisor $d\mid a^2$, $(d/R)=(d/p)$, with Jacobi symbol on
+the left. Every E state has $(h/p)=-1$. Every M state has $(rs/p)=-1$.
+\end{lemma}
+\begin{proof}
+For odd $l\mid a$, quadratic reciprocity and $R\equiv-p\pmod l$ give
+$(l/R)=(-1/l)(R/l)=(p/l)=(l/p)$. If $2\mid a$, then $R\equiv-p\pmod8$
+and the supplementary law gives $(2/R)=(2/p)$. Multiply over the actual
+exponents. At E, $u\equiv-1/4\pmod R$ and $R\equiv3\pmod4$, so
+$(u/p)=-1$. Since $u=hr^2$, this proves the first assertion.
+At M, $r\equiv-s\pmod R$ and all the factors are units, so
+$(r/p)=(r/R)=-(s/R)=-(s/p)$. This proves $(rs/p)=-1$.
+These are the classical laws in \cite[\S6.4]{Hatcher}, applied to the retained
+original factors.
+\end{proof}
+
+Define the labelled reciprocal roots and polynomial
+\[
+ t_i=p/x_i,\qquad f(T)=\prod_{i=1}^3(T-t_i)
+       =T^3-4T^2+\sigma_2T-\sigma_3.                 \tag{1}
+\]
+Then $2<t_1<4$ and $0<t_2,t_3<2$. The target for the \emph{existing} Fabel
+map is
+\[
+ \mathbf U=(0,-4,\sigma_2,-\sigma_3),\qquad
+ H_{\mathbf U}(U,V)=V\prod_i(U-t_iV).               \tag{2}
+\]
+The leading zero and the coefficient of $U^3V$, namely one, are fixed, not
+rescaled away. The inverse on the actual arithmetic domain is $x_i=p/t_i$,
+with its positivity and integrality tests and the original E/M divisor inverse.
+The coefficient target alone forgets the ordering; $p$ and the labels are kept.
+
+The preceding shape curve has different coordinates:
+$\alpha=v-R,\beta=v-D,X=v,Y=2a$, with the additional fixed-prime line
+$2Y=p+X-\alpha$. Its inverse is $a=Y/2$, $R=X-\alpha$,
+$D=X-\beta$, $u=(RD-1)/4$. Thus the connection to (2) is the explicit
+composition through this original state. No identification of two unmarked
+cubic curves is asserted.
+
+\section{The literal Fabel map and every inverse branch}
+Use $\xi$ for its first source coordinate, distinct from the original $a$.
+Fix $i^2=-1$ and put $P=(P_0,P_2,P_3,P_4)$, where
+\begin{align*}
+ P_0={}&\xi^3z+2\xi^2y-i\xi,\\
+ P_2={}&-\xi^3y^2z-2i\xi^2yz+\xi^2w-2\xi^2y^3-10i\xi y^2+3\xi z+y,\\
+ P_3={}&2\xi^3y^3z+6i\xi^2y^2z+2\xi^2wy+4\xi^2y^4
+             +2i\xi w-4i\xi y^3-2\xi yz+2iz+7y^2,\\
+ P_4={}&2\xi^3y^4z+8i\xi^2y^3z+\xi^2wy^2+4\xi^2y^5
+             +2i\xi wy+7i\xi y^4-10\xi y^2z-4iyz-w-3y^3.
+                                                               \tag{3}
+\end{align*}
+Its factor coordinates are
+\begin{align*}
+ b&=i+\xi y,&c&=-i+2\xi y+\xi^2z,\\
+ d&=-iy-\xi(iz+2y^2)-\xi^2yz,&e&=2z-7iy^2+\xi w,\\
+ f_0&=iw+3iy^3-4yz+\xi(6iy^2z+wy+4y^4)+2\xi^2y^3z.
+\end{align*}
+Writing $L=\xi U+bV$ and $C=cU^3+dU^2V+eUV^2+f_0V^3$, substitution gives
+\[
+ \xi d+bc=1,\quad C(-b,\xi)=1,\qquad
+ LC=P_0U^4+U^3V+P_2U^2V^2+P_3UV^3+P_4V^4.          \tag{4}
+\]
+For a simple finite root $t_i$ of (1), let
+$d_i=f'(t_i)=(t_i-t_j)(t_i-t_k)$. The full inverse is
+\[
+ \boxed{\xi^2=d_i^{-1},\quad y=-t_i-i/\xi,\quad
+ z=2t_i/\xi+3i/\xi^2,\quad
+ w=7it_i^2/\xi+(-4-17t_i)/\xi^2-13i/\xi^3.}         \tag{5}
+\]
+Both signs of $\xi$ are retained. The finite marked root is recovered by
+$t_i=-b/\xi$, and $C(-b,\xi)=\xi^2 f'(t_i)=1$.
+Coefficient comparison in (4) determines the quotient factor uniquely; the
+factor-coordinate inverse
+$y=(b-i)/\xi$, $z=(c+i-2\xi y)/\xi^2$,
+$w=(e-2z+7iy^2)/\xi$ then proves (5) and its exhaustiveness.
+
+At $\xi=0$ the single chart inverse is
+\[
+ q_\infty=(0,-4,\ i(112-\sigma_2)/2,
+                 -704+8\sigma_2+\sigma_3).          \tag{6}
+\]
+It has $b=i,c=-i$. The other signed projective infinity factor has $b=-i$
+and is outside this affine chart. Thus (2) has \emph{seven}, not eight,
+geometric affine preimages: six finite ones and (6). The missing infinity
+sign is different from any arithmetic field or integrality obstruction.
+
+For completeness the constant Jacobian statement used here is verified as
+follows. On $\xi\ne0$ use $(\xi,t,A,B)$, with $A=P_0,B=P_2$.
+The target equations are
+\[
+ P_3=\xi^{-2}-4At^3-3t^2-2Bt,\qquad
+ P_4=3At^4+2t^3+Bt^2-t\xi^{-2}.
+\]
+The full source inverse has determinant $-\xi^{-5}$ in those coordinates;
+the target determinant is $2\xi^{-5}$. Their ratio is $-2$.
+Polynomial continuation proves $\det DP=-2$ everywhere. These are the
+antecedent GF10--11 calculations \cite{Zeta}, with their constant and sign
+retained; the verifier independently expands the original derivative at every
+recorded inverse point.
+
+\section{The complete local algebra distinguishes E from M}
+Fix either root $i_p\in\mathbb Q_p$ of $-1$. Its existence follows by lifting
+a root modulo $p\equiv1\pmod4$. Normalize $v_p(p)=1$ on all extensions.
+The reduced coordinate algebra of the actual fibre is
+\[
+ \boxed{\mathcal A_{p,x}=\mathbb Q_p\ \times\!
+ \prod_{i=1}^3\mathbb Q_p[\xi_i]/(\xi_i^2-d_i^{-1}).}       \tag{7}
+\]
+The first factor is the single infinity chart. Formula (5) and its inverse
+identify the other factors; the derivative is nonzero, so there are no
+unrecorded nilpotents. This is the coordinate algebra of the fixed target,
+not a newly chosen seven-point model.
+
+\begin{theorem}[Prime-local arithmetic fibre]\label{thm:local}
+For every original first-half ES state at a prime $p\equiv1\pmod4$,
+$P^{-1}(\mathbf U)$ has exactly three $\mathbb Q_p$-rational points.
+More precisely,
+\[
+ \begin{array}{ll}
+ E:&\mathcal A_{p,x}\simeq\mathbb Q_p^3\times K_{\rm ram}\times K_{\rm ram},\\
+ M:&\mathcal A_{p,x}\simeq\mathbb Q_p^3\times K_{\rm unr}\times K_{\rm unr},
+ \end{array}                                                    \tag{8}
+\]
+where $K_{\rm ram}/\mathbb Q_p$ is a ramified quadratic extension and
+$K_{\rm unr}/\mathbb Q_p$ is the unramified quadratic extension. The repeated
+field factors retain their distinct root labels. There is no fully split
+seven-point local fibre in the original arithmetic domain.
+\end{theorem}
+\begin{proof}
+For E put $H=hrs\kappa$. Then
+\[
+ (t_1,t_2,t_3)=H^{-1}(p\kappa,pr,s),
+\]
+\[
+ (d_1,d_2,d_3)=H^{-2}\bigl(
+ p(\kappa-r)(p\kappa-s),\
+ -p(\kappa-r)(pr-s),\
+ (p\kappa-s)(pr-s)\bigr).                              \tag{9}
+\]
+All factors $h,r,s,\kappa$ are $p$-units. Also $p\nmid\kappa-r$: otherwise
+$4hr\kappa\equiv1\pmod p$ would make $4hr^2\equiv1$, contrary to
+Lemma~\ref{lem:character}. Hence
+\[
+ (v_p(d_1),v_p(d_2),v_p(d_3))=(1,1,0),\quad
+ d_1/d_2\equiv-1\pmod p,\quad d_3\equiv16\pmod p.       \tag{10}
+\]
+A unit congruent to a nonzero square modulo the odd prime $p$ is a square in
+$\mathbb Q_p$ by Hensel lifting. Thus $d_1/d_2$ is a square and the first
+two quadratic factors are copies of one ramified field (their defining
+square classes have odd valuation). The last quadratic splits into two
+rational points. Together with infinity this proves the E case.
+
+For M put $H=hrs\lambda$. Then
+\[
+ (t_1,t_2,t_3)=H^{-1}(p\lambda,r,s).
+\]
+The numerator differences are units: $r,s<p$, $r\ne s$, and $p\nmid r-s$.
+Modulo $p$, the derivative classes, up to the common square $H^{-2}$, are
+\[
+ \boxed{rs,\quad r(r-s),\quad s(s-r).}                  \tag{11}
+\]
+The first is a nonsquare by Lemma~\ref{lem:character}. Their product is
+$-r^2s^2(r-s)^2$, a square since $-1$ is a square modulo $p$. Thus exactly
+one of the three classes is a square, and exactly two are nonsquares.
+The two nonsquare units have square ratio and define the same unramified
+quadratic extension. The remaining quadratic gives two rational points.
+This proves (8) and the rational-point count.
+\end{proof}
+
+The local facts used in this proof can be made constructive. A root $b_n$
+of a unit $z$ modulo $p^n$ has the unique lift
+\[
+ b_{n+1}=b_n+p^n t,\qquad
+ t\equiv-\frac{b_n^2-z}{p^n}(2b_n)^{-1}\pmod p.
+\]
+Use the compatible rational residue of $z$ to compute the integer quotient.
+A nonsquare residue has irreducible separable quadratic reduction, giving the
+unramified degree-two extension; a class $p$ times a unit has square root of
+valuation $1/2$, giving ramification index two. These are the standard local
+field facts in \cite{Milne}; the displayed lift is also checked directly.
+
+An algebra isomorphism over $\mathbb Q_p$ must permute the primitive field
+factors. It cannot change their ramification indices. Therefore no such
+isomorphism carries the E fibre algebra to the M fibre algebra at the fixed
+prime. Equality of the rational-point counts (both three) does not give that
+isomorphism. This restricts an \emph{unchanged fibre algebra}; it does not
+prohibit an arithmetic map to a different target, constructed below.
+
+\section{Integral specialization and the nonproper boundary}
+For E, the exact numerator formula further gives
+\[
+ v_p(\sigma_2)=1,\quad v_p(\sigma_3)=2,\quad
+ v_p(\operatorname{Disc} f)=2,
+ \qquad\overline f(T)=T^2(T-4).                         \tag{12}
+\]
+Indeed $\sigma_2=p\{p\kappa r+s(\kappa+r)\}/H^2$ and
+$\kappa+r=sD$ is a unit. If $p\mid D$, then $RD=4u+1$ would make the
+nonresidue $u$ equal to the square $-1/4$ modulo $p$, impossible.
+The product gives $\sigma_3$ and the three differences give the discriminant.
+
+For each of the four signed branches over $t_1,t_2$, equation (5) has the exact
+valuation vector
+\[
+ \boxed{(v_p(\xi),v_p(y),v_p(z),v_p(w))
+                  =(-1/2,1/2,1,1).}                   \tag{13}
+\]
+The least terms are respectively $\xi$, $-i/\xi$, $3i/\xi^2$ and
+$-4/\xi^2$. The coefficient $3$ is a unit since $p\equiv1\pmod4$.
+There is no equal-valuation cancellation in these minima.
+These are genuine generic-field points but are not integral and have no affine
+specialization over the valuation ring. The two branches at $t_3$ and the
+infinity branch are integral.
+
+Over an algebraic closure of the residue field, the complete E special fibre
+has precisely the following three points:
+\[
+ (0,-4,56i_p,-704),
+ \quad(1/4,-4-4i_p,32+48i_p,-1152-384i_p),
+\]
+\[
+ (-1/4,-4+4i_p,-32+48i_p,-1152+384i_p).                  \tag{14}
+\]
+The double root zero has no resultant-one factor scaling; the simple root four
+has derivative sixteen. Thus the reduction from seven geometric generic points
+to three special points is a loss at the affine boundary, not a vanishing source
+Jacobian. The determinant $-2$ remains a unit.
+
+For M, all three roots and all derivative values are units or zero with distinct
+reductions: the roots are $0,r/H,s/H$. Every geometric inverse in (5) is integral
+over an unramified extension. Its geometric special fibre still has seven
+points; precisely three are rational over $\mathbb F_p$. Thus counting only
+rational special points also fails to distinguish the two channels.
+
+\paragraph{The exact relation to the original conductor.}
+The Zeta source constructs fixed invertible complex linear maps $\Phi,\Psi$
+with $T_A\Phi=\Psi$ and transported polynomials
+$\Phi P\Phi^{-1},\Psi P\Psi^{-1}$ \cite[FC32--35]{Zeta}.
+Consequently (5)--(6) transport point by point through that exact complex map,
+with its retained original Gram $G$ and norm $q^*Gq$. No Euclidean replacement,
+new coefficient fit or linear-conductor kernel is asserted.
+The $p$-adic statements here concern the original polynomial over $\mathbb Q(i)$
+after the specified embedding in $\mathbb Q_p$. Complex period entries in
+$\Psi$ are not thereby declared to have a $\mathbb Q_p$-model. Such a descent
+would be an additional theorem.
+
+\paragraph{A nonempty polynomial fibre is not an arithmetic solution.}
+The target $(0,-4,0,1)$ has the exact infinity inverse
+$(0,-4,56i,-705)$. Its cubic $T^3-4T^2+1$ has no rational root: the rational-root
+theorem leaves only $\pm1$, neither a root. Thus it cannot be the reciprocal
+cubic of three positive integer denominators at any rational $p$.
+The inverse formula alone does not supply the initial arithmetic target.
+
+\input{root_orders.tex}
+
+\section{An unbounded family of exact same-prime channel returns}
+Continue with the original E state, and set
+$\alpha=hs^2-R$, $\beta=hs^2-D$. The earlier shape identities give
+\[
+ h\mid\alpha\beta-1,\qquad p\equiv\alpha\pmod h,
+ \qquad p\beta\equiv1\pmod h.                         \tag{15}
+\]
+\begin{theorem}[Negative-four-square channel transfer]\label{thm:transfer}
+Suppose one marked coordinate is $-4c^2$, with $c>0$ integral. Then
+$h\equiv3\pmod4$ and $\gcd(h,c)=1$. Put $j=(h+1)/4$.
+If $c\mid j$, set
+\[
+ Q=h,\qquad
+ U=\begin{cases}c^2,&\alpha=-4c^2,\\(j/c)^2,&\beta=-4c^2,\end{cases}
+ \qquad R_M=(p+4U)/Q,\qquad a_M=(p+R_M)/4.              \tag{16}
+\]
+Then $U\mid j^2$, $Q\mid p+4U$, $0<R_M<p$, and (16) is an original M state.
+With $g_M=\gcd(j,U)$, its complete normalization is
+\[
+ \boxed{h_M=g_M^2/U,\quad r_M=U/g_M,\quad
+ \lambda_M=j/g_M,\quad s_M=R_M\lambda_M-r_M.}           \tag{17}
+\]
+The new $h_M$ is a square. The ordered return is
+$(a_M,ph_Ms_M\lambda_M,ph_Mr_M\lambda_M)$.
+Both entire shape lines $\alpha=-4$ and $\beta=-4$ are covered, without a bound
+on their other coordinate.
+\end{theorem}
+\begin{proof}
+Equation (15) makes $h$ odd and coprime to $c$. At every odd prime dividing $h$,
+either $p\equiv-4c^2$ or $p^{-1}\equiv-4c^2$. Reciprocity gives
+$(h/p)=(-1/h)$. Lemma~\ref{lem:character} makes this $-1$, so $h\equiv3\pmod4$.
+In the $\alpha$ case the required congruence is immediate.
+In the $\beta$ case, $p\equiv-(4c^2)^{-1}\pmod h$ and $4j\equiv1\pmod h$,
+so $p+4(j/c)^2\equiv0$. Availability follows from $c\mid j$ in both cases.
+
+For $\alpha$, the original inequality $R=hs^2+4c^2<p$ implies
+$4U<p-h<(h-1)p$. For $\beta$, use
+$4U\le4j^2=(h+1)^2/4$ and $p>2h$; for $h\ge3$,
+$(h+1)^2<8h(h-1)$, so again $4U<(h-1)p$.
+Thus $R_M<p$. Its residue is $3\pmod4$, proving the original first-half range.
+
+The valuation normalization of $U\mid j^2$ gives $h_Mr_M\lambda_M=j$,
+$h_Mr_M^2=U$, and $\gcd(r_M,\lambda_M)=1$. Also
+$a_M=R_Mj-U=h_Mr_Ms_M>0$.
+Since $r_M\le j<p$, the equation $QR_M=p+4U$ proves
+$\gcd(r_M,R_M)=1$, hence $\gcd(r_M,s_M)=1$.
+This is therefore precisely the original M normalization.
+
+For an explicit square-grade formula write $j=cm$, $d=\gcd(c,m)$.
+In the $\alpha$ case,
+$(h_M,r_M,\lambda_M)=(d^2,c/d,m/d)$; in the $\beta$ case it is
+$(d^2,m/d,c/d)$. This also proves that the original shared budget has not been
+used twice.
+\end{proof}
+
+The condition $c\mid j$ is the exact availability domain of the two selected
+cofactor words: $c^2\mid j^2$ if and only if $c\mid j$, and $j/c$ must be integral.
+It is not a hypothesis inserted into a universal existence theorem. Its failure
+can leave other words available, or the entire selected cofactor box empty.
+The square-divisor criterion in (16) is classical Type-II arithmetic; what is
+proved here is its supply from these actual exterior shapes.
+
+\subsection{Complete inverse fibres and coefficient collisions}
+The target retains its cofactor $Q=4h_Mr_M\lambda_M-1$, so it recovers the
+original $h$. In the $\alpha$ branch it recovers $c=\sqrt U$; in the $\beta$
+branch $c=j/\sqrt U$. The square roots here are positive integers.
+
+For fixed $(p,h,c,\alpha)$, put $N=(p+4c^2)/h$. Every original preimage is
+obtained by
+\[
+ s\mid N,\quad k=N/s,\quad s+k\equiv0\pmod4,\quad r=(s+k)/4,
+ \quad a=hrs,\quad u=hr^2,
+\]
+with the original coprimality and first-half inequalities. Conversely
+$4rs-s^2=N$ follows directly from the shape, so this is the full fibre.
+
+For fixed $(p,h,c,\beta)$, put $F=(4c^2p+1)/h$. For
+$1\le s\le\lfloor(p-1)/(2h)\rfloor$, set
+\[
+ D=hs^2+4c^2,\qquad \Delta_s=s^2(D^2-p)-F.
+\]
+Keep exactly the positive squares $k^2=\Delta_s$ for which
+$sD-k$ is positive and even, and set $r=(sD-k)/2$, $\kappa=sD-r$.
+The original coprimality and range tests complete the fibre. This comes from
+$4hr(sD-r)=pD+1$ and $k=\kappa-r>0$, so both directions are proved.
+
+Within each marked branch, $c$ is recovered. Across an $\alpha$ branch with
+$c_1$ and a $\beta$ branch with $c_2$, the selected target divisor is the same
+exactly when $c_1c_2=j$. Different original sources in any one fibre remain
+separate integer coefficients. Pushing them to one target sums those coefficients;
+the kernel is generated by their same-target differences. No injectivity or
+one-to-one state count is claimed after those records are discarded.
+
+\subsection{An actual transition, with local ramification changed}
+At the hard prime $p=5209$, the original E state is
+\[
+ (a,R,u,h,r,s,\kappa)=(1330,111,18620,95,14,1,657).
+\]
+Its shape is $(-16,-576)$, so the two selected branches have $c_1=2,c_2=12$
+and $j=24$. Both supply the \emph{same} target $U=4$. Formula (17) gives
+\[
+ (a_M,R_M,u_M,h_M,r_M,s_M,\lambda_M)=(1316,55,4,4,1,329,6),
+\]
+\[
+ \boxed{\frac4{5209}=\frac1{1316}+\frac1{41130264}+\frac1{125016}.}   \tag{18}
+\]
+The original E box uses primes $2,5,7,19$. Its M target uses $2,7,47$; the
+factor $47$ is part of the reconstructed integer, not an available original
+E factor silently adjoined. At this same prime the original Fabel fibre changes
+from ramified to unramified by Theorem~\ref{thm:local}, because the target cubic
+has changed through an actual arithmetic return. No local algebra isomorphism
+between the unchanged fibres is being asserted.
+
+A different hard example is
+\[
+ p=4561,\quad(a,R,u,h,r,s,\kappa)=(1593,1811,43011,59,27,1,68),
+ \quad\beta=-36.
+\]
+Here $c=3,j=15$ returns
+\[
+ (a_M,R_M,u_M,h_M,r_M,s_M,\lambda_M)=(1160,79,25,1,5,232,3),
+\]
+with denominators $(1160,3174456,68415)$.
+
+At the hard prime $p=3049$, the original E state
+$(a,R,u,h,r,s,\kappa)=(806,175,20956,31,26,1,453)$ has
+$\alpha=-144$, hence $c=6,j=8$. The selected $U=36$ is unavailable in $j^2=64$.
+More strongly, the entire cofactor box has divisors
+$1,2,4,8,16,32,64$, none satisfying $31\mid3049+4U$ (the required residue
+is $5\pmod{31}$). A different original shell has the middle state
+$(a,R,u,h,r,s,\lambda)=(770,31,5,5,1,154,5)$.
+This is an exact local obstruction, not an ES counterexample.
+
+\section{Verification, source distinctions and remaining task}
+The release verifier enumerates the complete first-half boxes for all primes
+$p\equiv1\pmod4$ through its declared bound, checks every labelled E/M state,
+its ordered identity, the local field signatures, and every present negative-square
+crossing. It evaluates (3) on all seven exact branches of representative fibres
+in the four-dimensional rational algebra generated by $i$ and $\xi$; it does not
+assume that this algebra is a field. It computes the original Jacobian by exact
+first-order arithmetic and checks the unit-root lifts modulo $p^4$.
+
+The separate program imports none of the main implementation or predecessor
+software. It enumerates primitive $h,r,s$ to recover the full state lists,
+checks the factor-coordinate product (4), independently enumerates the inverse
+crossing fibres, and exhausts the original affine polynomial fibre over
+$\mathbb F_{17}$ at both special targets. Execution receipts distinguish these
+checks from a mathematical review or a Lean build.
+
+The positive progress is an explicit same-prime return on unbounded shape lines,
+and an exact local arithmetic meaning for the inverse branches read in the Zeta
+workbench. The root-field signature does not prove that an ES reciprocal target
+exists, nor that every remaining exterior shape reaches a middle state.
+Turn~7's universal positive-coefficient obligation remains unresolved. We do not
+advance to Turn~8 under an assumed occupancy statement.

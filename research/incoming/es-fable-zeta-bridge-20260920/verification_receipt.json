@@ -1,7 +1,10 @@
 {
-  "certificate": "normalized ES prime-denominator quartic, signed Fable cover, and fixed conductor crosswalk",
+  "certificate": "cumulative normalized ES quartic, integral signed order, signed Fable cover and fixed-conductor crosswalk",
   "checks": {
+    "arithmetic_chart": "V(G) intersect D(u0u3u4) is isomorphic to G_m^3",
     "coefficient_hypersurface": "625u0u4^3-125u3u4^2+25u2u3^2u4-4u3^4=0",
+    "collision_discriminant_transport": true,
+    "distinguished_root_collision": "1250u0u4^3+3u3^4-125u3u4^2=0",
     "eight_source_inverse_residuals": [
       "0",
       "0",
@@ -10,17 +13,80 @@
     ],
     "es_incidence_4af_minus_be": true,
     "es_relation": "p(xy+xz+yz)=4xyz",
+    "fixed_receiver_coefficient_forms": [
+      "sqrt(2)*xiE/2 + I*xiN + sqrt(2)*xiT/2",
+      "xiE - sqrt(2)*I*xiE - xiN - xiT - sqrt(2)*I*xiT",
+      "-2*sqrt(2)*xiE + 6*I*xiE + I*xiM/2 - 3*I*xiN + 2*sqrt(2)*xiT + 6*I*xiT",
+      "34*xiE - 19*sqrt(2)*I*xiE + 13*xiN - 34*xiT - 19*sqrt(2)*I*xiT"
+    ],
+    "fixed_receiver_inverse": "B_v^-1 followed by V_*^T and K",
+    "hypersurface_singular_support": "u3=u4=0",
     "intrinsic_prime": "p=-5u4/u3",
     "marked_resultant_one_factorization": true,
     "normalized_quartic_coefficients": true,
+    "ordered_denominator_cover": "finite flat degree 6; etale off Disc(Q)=0",
+    "projective_root_scheme_maps": {
+      "forward": "T=p(X^2-s1X+s2)/s3",
+      "inverse": "X=p(T^2-(p*s2/s3)T+e2)/e3"
+    },
+    "quartic_collision_factorization": "Disc(h)=u0^6 Disc(Q) Q(p)^2",
     "quartic_discriminant": "S^-6 product_{j<k}(t_j-t_k)^2",
+    "quartic_to_reciprocal_elementary_transform": "u4^-1 V/(U-V) H_ES(pV,U)",
+    "receiver_hypersurface": "G(Psi_*^-1 r)=0",
+    "receiver_prime_marked_factor_pair": true,
+    "receiver_prime_selector": "5A(r)U4-A(r)Y(r)U3-iU3=0",
+    "reciprocal_coefficient_inverse": true,
     "separate_reciprocal_suspension": true,
-    "suspended_cubic_discriminant": "-4*e2**3 + 16*e2**2 + 72*e2*e3 - 27*e3**2 - 256*e3"
+    "signed_derivative_twist": "h'(x_i)/f'(p/x_i)=p^2(p/x_i-1)/((p/x_i)^2(e2+e3))",
+    "singular_primary_decomposition": "J=Q_plane intersect Q_embedded",
+    "suspended_cubic_discriminant": "-4*e2**3 + 16*e2**2 + 72*e2*e3 - 27*e3**2 - 256*e3",
+    "symmetric_chart_inverse": {
+      "p": "-5u4/u3",
+      "s1": "-1/u0+5u4/u3",
+      "s2": "4u3^2/(25u0u4)",
+      "s3": "-u3/(5u0)"
+    },
+    "target_factor_residual": "u0(T+5u4/u3)Q-h=-G*T^2/(25u3^2u4)"
   },
+  "cumulative_pdf": {
+    "build": "two successful pdflatex passes; no warnings, undefined references, overfull boxes or underfull boxes in the final log",
+    "pages": 124,
+    "path": "output/pdf/ES_FABLE_ZETA_CROSSWALK.pdf",
+    "sha256": "7ad9b683338907a4b1afc843b0767adfdfcfa6aed352416edc12164780067e46",
+    "visual_qa": "all 124 pages rendered; complete contact sheets and seven newly affected figure/transition pages inspected"
+  },
+  "integrated_receipts": [
+    {
+      "checks": 80,
+      "module": "es-defining-prime-continuation-20260920",
+      "receipt": "../es-defining-prime-continuation-20260920/results/verification.json",
+      "sha256": "06a66abdfe26a6225ec7da8192fac1ff40acad23468e6bca7e51be116ba209a0",
+      "status": "PASS"
+    },
+    {
+      "checks": 923,
+      "module": "es-rh-continuation-b-20260920",
+      "receipt": "../es-rh-continuation-b-20260920/results/es_arithmetic_descent.json",
+      "scope": "Tracks I and IV independently reconstructed and replayed",
+      "sha256": "07f938cecca0d374056c4b40b817f626f8b96acbf20dd84318d82587334031d6",
+      "status": "PASS"
+    },
+    {
+      "independent_checks": 27154,
+      "independent_receipt": "../es-turn07-integral-completion-20260920/live_certificates/independent.json",
+      "independent_sha256": "91a9c481de309cb7b3f3408f12256e0c9c937a0f08ba23c315c902e4ad6a0e79",
+      "main_checks": 104538,
+      "main_receipt": "../es-turn07-integral-completion-20260920/live_certificates/summary.json",
+      "main_sha256": "e2c266fd69e62bfd23849555bac90696c38858c6eac3f05329c6dd3cb39e70eb",
+      "module": "es-turn07-integral-completion-20260920",
+      "status": "PASS"
+    }
+  ],
   "nonclaims": [
     "The coefficient hypersurface alone does not impose integral positive roots, primality, or ES channel gates.",
     "The construction begins with an ES witness and is not a universal existence proof.",
-    "The fixed conductor receiver does not identify ES roots with zeta zeros."
+    "The fixed conductor receiver does not identify ES roots with zeta zeros.",
+    "The received determinant and heat-track executable receipt is preserved but not relabelled as a local replay because its four scripts were absent."
   ],
-  "schema_version": 2
+  "schema_version": 5
 }

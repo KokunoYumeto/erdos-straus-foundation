@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "packet_identity": {
+    "received_zip": "received/ES_RH_Multi_20260920.zip",
+    "received_zip_sha256": "85b2d350ace2d5c740c3707a292b9de5b6c9c133d375212b0944e011aeea964f",
+    "received_paste": "received/pasted-continuation-20260920.txt",
+    "received_paste_sha256": "74237417b837d43b3c5fbd483873591cdde44bd83ca892ec1d1620841a6fe021",
+    "received_combined_derivation_sha256": "9d39034c1885204f9c300fcf9bb33456406b5f417912ff89c768356dfdd0d045",
+    "attribution": "Received collective continuation; no separable individual author was named in the packet."
+  },
+  "sources": [
+    {
+      "id": "ES-1",
+      "authors": "The Clankers",
+      "title": "The normalized Erdos-Straus quartic and its exact passage through the signed Fable cover to a fixed weighted conductor",
+      "repository": "KokunoYumeto/erdos-straus-foundation",
+      "commit": "2b5ab3b63471092624b4fcfac2ab2a0fbafa23a3",
+      "path": "research/incoming/es-fable-zeta-bridge-20260920/ES_FABLE_ZETA_CROSSWALK.tex",
+      "git_blob": "dd7aa82fed5dc8ea6dd903a8731ec475a85984be",
+      "coverage": "Source lines 1-260: polynomial EZ4, ES equation and normalized coefficient map, EZ6-EZ17.",
+      "used_by": ["SZ-20260920-045", "SZ-20260920-046", "SZ-20260920-047"]
+    },
+    {
+      "id": "ES-2",
+      "authors": "The Clankers",
+      "title": "Independent audit notes for the frozen upstream packet",
+      "repository": "KokunoYumeto/erdos-straus-foundation",
+      "commit": "2b5ab3b63471092624b4fcfac2ab2a0fbafa23a3",
+      "path": "research/incoming/es-fable-zeta-bridge-20260920/AUDIT_NOTES.md",
+      "git_blob": "99c6799fc1fd4c3a289913ea140fc682dc8bf9d8",
+      "coverage": "Read completely; used to retain the distinction between squarefreeness and odd-frame invertibility.",
+      "used_by": ["SZ-20260920-045"]
+    },
+    {
+      "id": "RH-2",
+      "authors": "Split-Zero programme",
+      "title": "Explicit native moment precision, inverse margins, and the original signed receiver",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "commit": "1bcdcebb766d84c6edbb42bc7d4d845e960ec325",
+      "path": "workbenches/splitzero-tandem/continuations/20260920-theta-transfer-current-precision/NATIVE_MOMENT_PRECISION.tex",
+      "git_blob": "d7d4efac164faa684142fa4c38d9f58aab3fbcce",
+      "coverage": "Source lines 1-460: native measures, density floors, interval determinant/trace floor, weighted inverse margins, moment budgets, quadratic estimates and Radau/phase formulas.",
+      "used_by": ["SZ-20260920-048", "SZ-20260920-049"]
+    },
+    {
+      "id": "RH-3",
+      "authors": "Split-Zero programme",
+      "title": "Sharp original-metric projection control and disks for complex mixed pairings",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "commit": "1bcdcebb766d84c6edbb42bc7d4d845e960ec325",
+      "path": "workbenches/splitzero-tandem/continuations/20260920-theta-transfer-current-precision/PROJECTION_PHASE_RETURN.tex",
+      "git_blob": "ce29a20ba43452d913682ce428708db4a12b1982",
+      "coverage": "Source lines 1-240: PD1-PD17, fixed-kernel projection bound and complex pairing radii.",
+      "used_by": ["SZ-20260920-049"]
+    },
+    {
+      "id": "RH-4",
+      "authors": "Split-Zero programme",
+      "title": "The ES-Fable inverse correspondence in the original weighted conductor",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "commit": "1bcdcebb766d84c6edbb42bc7d4d845e960ec325",
+      "path": "workbenches/splitzero-tandem/continuations/20260920-marked-observation-illustrated/FABLE_TO_ORIGINAL_CONDUCTOR.tex",
+      "git_blob": "4674db16bf242f95e0b800f8dac14514363d6d76",
+      "coverage": "Source lines 3835-3975: MO4-MO11, original minimum residuals, exact marking, source/observation/conductor maps and arithmetic action.",
+      "used_by": ["SZ-20260920-049"]
+    },
+    {
+      "id": "UP-1",
+      "authors": "Split-Zero programme",
+      "title": "A polynomial forward bound for the full weighted conductor",
+      "path": "sources/WEIGHTED_CONDUCTOR_FORWARD.tex",
+      "sha256": "d86dcb3daf13c9b2d5a0aaa4d72cce35a1aff48066ad69c7d9846b9d097dc354",
+      "coverage": "Complete 25,840-byte provider preserved; WCF1-WCF9 inspected.",
+      "used_by": ["SZ-20260920-045", "SZ-20260920-046"]
+    },
+    {
+      "id": "DLMF-18",
+      "authors": "National Institute of Standards and Technology",
+      "title": "Digital Library of Mathematical Functions, Sections 18.5, 18.9 and 18.23.7",
+      "locator": "https://dlmf.nist.gov/18.5 ; https://dlmf.nist.gov/18.9 ; https://dlmf.nist.gov/18.23.E7",
+      "coverage": "Classical Rodrigues/binomial representation, Legendre recurrence and Meixner-Pollaczek generating-function context.",
+      "used_by": ["SZ-20260920-048"]
+    },
+    {
+      "id": "STACKS-0C15-03ZN",
+      "authors": "The Stacks Project Authors",
+      "title": "Lemma 48.25.5 and Integral and finite morphisms",
+      "locator": "https://stacks.math.columbia.edu/tag/0C15 ; https://stacks.math.columbia.edu/tag/03ZN",
+      "coverage": "Finite-flat local-complete-intersection/Gorenstein and finite/proper background; all programme-specific coordinates are proved in the packet.",
+      "used_by": ["SZ-20260920-046"]
+    },
+    {
+      "id": "ZDS-2025",
+      "authors": "J. Zimmerling, V. Druskin, and V. Simoncini",
+      "title": "Monotonicity, bounds and extrapolation of Block-Gauss and Gauss-Radau quadrature for computing B^T phi(A) B",
+      "version": "arXiv:2407.21505v3",
+      "locator": "https://arxiv.org/abs/2407.21505",
+      "coverage": "Primary Gauss/Radau context; no complete author-source reading or transferred hypothesis is claimed.",
+      "used_by": ["SZ-20260920-047"]
+    }
+  ]
+}

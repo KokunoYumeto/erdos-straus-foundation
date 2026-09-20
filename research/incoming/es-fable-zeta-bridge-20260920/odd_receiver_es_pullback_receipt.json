@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "Q_1e_minus_4_sign": "positive",
+    "Q_1e_minus_6_sign": "negative",
+    "coefficient_pullback_identity": true,
+    "phi_independent_python_flint_factorization": true,
+    "phi_irreducible_mod_11": true,
+    "phi_primitive_irreducible_over_Q": true,
+    "positive_real_line_identity": true,
+    "rh_regular_target_not_on_es_hypersurface": "-51840000/34507149121",
+    "scale_free_phi_identity": true,
+    "split_cubic_criterion": true,
+    "state_p5_pullback_nonzero": "-6378886584/887503681"
+  },
+  "exact_endpoint_values": {
+    "Q(10^-4)": "421368746134524395585536/2384185791015625",
+    "Q(10^-6)": "-208947824537547554186600178130584239/2384185791015625000000000000"
+  },
+  "schema_version": 1,
+  "status": "pass"
+}

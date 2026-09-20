@@ -1,0 +1,892 @@
+[**Cumulative Turn 6–7 handoff, including this continuation**](sandbox:/mnt/data/ES_Turns6_7_With_Capacity_Completion_20260920.zip)
+
+[**Current research package**](sandbox:/mnt/data/ES_Turn7_Capacity_Completion_20260920.zip) · [Complete proof, LaTeX](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/core.tex) · [Standalone preprint, LaTeX](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/preprint.tex) · [Delivery and execution receipt](sandbox:/mnt/data/ES_Turn7_Capacity_Completion_Receipt_20260920.json)
+
+## Turn 7 continuation: the fixed-target capacity problem is now completely classified
+
+The preceding negative-square transfer required an available divisor of \(((h+1)/4)^2\). That requirement has now been resolved as an exact arithmetic problem, rather than weakened by an assumption.
+
+The main result is:
+
+$$
+\boxed{
+\begin{gathered}
+h=4j-1>t,\qquad t\nmid j^2,\\
+\exists W\mid j^2,\quad W\equiv t\pmod h
+\quad\Longrightarrow\quad
+h\le t^2-3t+1.
+\end{gathered}}
+$$
+
+Every exceptional word below that bound has an explicit, uniquely invertible parametrization. The bound is attained by **original exterior states at infinitely many hard primes**, for unbounded values of \(t\).
+
+There is also a definitive limitation: **for every fixed \(t\ge4\), infinitely many hard primes have an original exterior state with \(\alpha=-4t\) but an empty complete middle cofactor box at its original grade \(h\)**. Those primes already have the constructed exterior solution. This refutes universal repair at that grade, not ES.
+
+On the positive side, the original equations force the necessary divisor budget on three entire \(\alpha\)-lines and nine entire \(\beta\)-lines, including nonsquare coefficients. They give actual same-prime middle returns.
+
+This completes an unbounded subproblem within Turn 7. It does not complete the universal existence milestone.
+
+## 1. The original source and the exact capacity being tested
+
+Retain a first-half exterior state at a prime \(p\equiv1\pmod4\):
+
+$$
+\frac p4<a<\frac p2,\qquad
+R=4a-p,\qquad
+u\mid a^2,\qquad
+R\mid4u+1.
+$$
+
+Its original normalization is
+
+$$
+g=\gcd(a,u),\qquad
+(h,r,s)=\left(\frac{g^2}{u},\frac ug,\frac ag\right),
+\qquad
+\kappa=\frac{pr+s}{R}.
+$$
+
+Thus
+
+$$
+a=hrs,\qquad u=hr^2,\qquad \gcd(r,s)=1,
+$$
+
+and the ordered return is
+
+$$
+\boxed{
+\frac4p=\frac1a+\frac1{hs\kappa}+\frac1{phr\kappa}.
+}
+$$
+
+The ordered inverse remains
+
+$$
+u=\frac{a^2}{Ry-pa}.
+$$
+
+These are the inherited Type-I/II coordinates, not a new parametrization claim (Elsholtz & Tao, 2013, §2, Propositions 2.2 and 2.6).
+
+Keep
+
+$$
+v=hs^2,\qquad
+D=\frac{4u+1}{R},\qquad
+\alpha=v-R,\qquad
+\beta=v-D.
+$$
+
+The original equations imply
+
+$$
+h\mid\alpha\beta-1,\qquad
+p\equiv\alpha\pmod h,\qquad
+p\beta\equiv1\pmod h.
+$$
+
+Suppose either marked shape coordinate is
+
+$$
+-4t,\qquad t\in\mathbb Z_{>0}.
+$$
+
+The coefficient \(t\) need not be a square. Then
+
+$$
+\boxed{
+h\equiv3\pmod4,\qquad
+s\text{ is odd},\qquad
+\gcd(h,t)=1,\qquad
+\left(\frac th\right)=1.
+}
+$$
+
+Indeed, \(hs^2\equiv3\pmod4\); the grade congruences supply coprimality. Reciprocity on the original divisor source gives \((h/p)=-1\), while either negative-shape congruence gives
+
+$$
+\left(\frac hp\right)
+=
+-\left(\frac th\right).
+$$
+
+Put
+
+$$
+j=\frac{h+1}{4}.
+$$
+
+The relevant **complete original capacity** is
+
+$$
+\boxed{
+\mathcal A_t(j)=
+\{W\in\mathbb Z_{>0}:W\mid j^2,\quad W\equiv t\pmod{4j-1}\}.
+}
+$$
+
+For every \(W\in\mathcal A_t(j)\), use
+
+$$
+U=
+\begin{cases}
+W,&\alpha=-4t,\\
+j^2/W,&\beta=-4t.
+\end{cases}
+$$
+
+Then
+
+$$
+Q=h,\qquad
+R_M=\frac{p+4U}{h},\qquad
+a_M=\frac{p+R_M}{4}
+$$
+
+is an original middle source.
+
+The inverse normalization is
+
+$$
+\boxed{
+g_M=\gcd(j,U),\quad
+h_M=\frac{g_M^2}{U},\quad
+r_M=\frac U{g_M},\quad
+\lambda_M=\frac j{g_M},\quad
+s_M=R_M\lambda_M-r_M.
+}
+$$
+
+It returns
+
+$$
+\boxed{
+(a_M,\ ph_Ms_M\lambda_M,\ ph_Mr_M\lambda_M).
+}
+$$
+
+This is the full cofactor-\(h\) gate, not merely a selected sufficient family. For the \(\beta\)-branch,
+
+$$
+p\equiv-(4t)^{-1}\pmod h,\qquad
+j^2\equiv16^{-1}\pmod h,
+$$
+
+so \(U=j^2/W\) satisfies the gate exactly when \(W\equiv t\).
+
+All range conditions follow from the actual source:
+
+$$
+p>2h,\qquad
+4U\le4j^2=\frac{(h+1)^2}{4}<(h-1)p.
+$$
+
+Hence \(0<R_M<p\). The identity
+
+$$
+a_M=R_Mj-U=h_Mr_Ms_M
+$$
+
+proves positivity, and the prime equation proves \(\gcd(r_M,s_M)=1\). An orientation with \(r_M>s_M\) remains valid and is retained rather than discarded.
+
+The previous theorem handled \(t=c^2\) when \(c\mid j\). The present capacity includes every original divisor, whether or not it is square.
+
+## 2. Every available divisor has one of three exact forms
+
+Let \(t,j\ge1\) and \(h=4j-1>t\). There is no primality assumption on \(h\).
+
+### Complete capacity theorem
+
+The set \(\mathcal A_t(j)\) is the disjoint union of the following words.
+
+The **canonical word** is
+
+$$
+\boxed{W=t,}
+$$
+
+present exactly when \(t\mid j^2\).
+
+The **companion word** is
+
+$$
+\boxed{W=4tj,}
+$$
+
+present exactly when \(4t\mid j\).
+
+Every other word has the unique finite parametrization
+
+$$
+\boxed{
+1\le\ell\le\left\lfloor\frac{t-2}{4}\right\rfloor,\qquad
+w\mid\ell^2,\qquad
+n=\frac{t-w}{4\ell+1}\in\mathbb Z_{>0},
+}
+$$
+
+$$
+\boxed{
+V=\frac{\ell^2}{w},\qquad
+j=\ell+4nV,\qquad
+h=4j-1>t,\qquad
+W=\frac{j^2}{V}=t+nh.
+}
+$$
+
+The displayed \(j\) must equal the input \(j\).
+
+The complete inverse for \(W\ne t\) is
+
+$$
+\boxed{
+n=\frac{W-t}{h},\qquad
+V=\frac{j^2}{W},\qquad
+\ell=j-4nV.
+}
+$$
+
+If \(\ell=0\), the word is the companion. Otherwise
+
+$$
+w=\ell^2/V
+$$
+
+recovers its finite label.
+
+### Proof
+
+If \(W\ne t\), positivity and \(0<t<h\) give
+
+$$
+W=t+nh,\qquad n\ge1.
+$$
+
+Set \(V=j^2/W\). Since
+
+$$
+16WV=16j^2=(h+1)^2,
+$$
+
+there is a positive integer \(k\) with
+
+$$
+16tV=1+kh.
+$$
+
+Reduction modulo four gives \(k\equiv1\pmod4\). Write \(k=4\ell+1\), \(\ell\ge0\).
+
+Comparing the exact products gives
+
+$$
+h+2=k+16nV,
+$$
+
+and therefore
+
+$$
+\boxed{
+j=\ell+4nV,\qquad
+t=(4\ell+1)n+\frac{\ell^2}{V}.
+}
+$$
+
+If \(\ell=0\), then \(n=t\), \(j=4tV\), and \(W=4tj\).
+
+If \(\ell>0\), the last expression proves \(V\mid\ell^2\). With \(w=\ell^2/V\ge1\),
+
+$$
+t\ge4\ell+2,
+$$
+
+giving the finite range.
+
+Conversely, every permitted finite record satisfies
+
+$$
+\frac{j^2}{V}
+=
+w+8\ell n+16n^2V
+=
+t+n(4j-1).
+$$
+
+It is therefore an actual divisor in the required class. The inverse formulas distinguish every word and every case.
+
+The separate domain \(h\le t\) has
+
+$$
+j\le\left\lfloor\frac{t+1}{4}\right\rfloor
+$$
+
+and remains a literal finite divisor calculation. The large-grade theorem is not asserted there.
+
+## 3. The finite-repair bound is sharp
+
+For a finite word,
+
+$$
+h+1
+=
+4\ell+
+\frac{16\ell^2(t-w)}{(4\ell+1)w}
+\le
+4\ell+\frac{16\ell^2(t-1)}{4\ell+1}.
+$$
+
+The last expression is strictly increasing in \(\ell\ge0\). Substituting
+
+$$
+\ell\le(t-2)/4
+$$
+
+gives
+
+$$
+\boxed{h\le t^2-3t+1.}
+$$
+
+Equality holds exactly when
+
+$$
+\boxed{w=n=1,\qquad t=4\ell+2.}
+$$
+
+The arithmetic equality family is
+
+$$
+\boxed{
+t=4\ell+2,\quad
+j=\ell(4\ell+1),\quad
+h=t^2-3t+1,\quad
+W=(4\ell+1)^2,\quad
+V=\ell^2.
+}
+$$
+
+Here \(t\nmid j^2\): the odd factor \(2\ell+1>1\) of \(t\) is coprime to both factors of \(j\).
+
+The companion must be treated separately. It is unbounded, but it cannot repair missing canonical availability because
+
+$$
+4t\mid j\Longrightarrow t\mid j^2.
+$$
+
+Consequently,
+
+$$
+\boxed{
+h>\max\{t,t^2-3t+1\}
+\Longrightarrow
+|\mathcal A_t(j)|
+=
+\mathbf1_{t\mid j^2}+\mathbf1_{4t\mid j}.
+}
+$$
+
+A finite exceptional word can coexist with the canonical one. For example,
+
+$$
+\boxed{
+\mathcal A_{289}(1224)=\{289,5184\}.
+}
+$$
+
+The second word has
+
+$$
+(n,V,\ell,w)=(1,289,68,16).
+$$
+
+The original coefficient is two, not one because the support occupies a single residue class.
+
+The finite search depends only on \(t\):
+
+$$
+\sum_{\ell\le(t-2)/4}\tau_{\mathrm{div}}(\ell^2)
+\le L(1+\log L)^2,\qquad
+L=\left\lfloor\frac{t-2}{4}\right\rfloor.
+$$
+
+This follows from \(\tau_{\mathrm{div}}(\ell^2)\le d_3(\ell)\) and the elementary harmonic estimate for \(\sum_{abc\le L}1\).
+
+There is also a smaller reconstructed grade. Put
+
+$$
+g_0=\gcd(\ell,V),\qquad
+H_0=g_0^2/V,\quad r_0=V/g_0,\quad\lambda_0=\ell/g_0.
+$$
+
+Then the middle normalization is
+
+$$
+\begin{aligned}
+\alpha\text{-branch}:&
+\quad(h_M,r_M,\lambda_M)
+=(H_0,\lambda_0+4nr_0,r_0),\\
+\beta\text{-branch}:&
+\quad(h_M,r_M,\lambda_M)
+=(H_0,r_0,\lambda_0+4nr_0),
+\end{aligned}
+$$
+
+with
+
+$$
+\boxed{h_M\le\ell<t/4.}
+$$
+
+This is a proved reduction within the finite capacity calculation. It is not a descent argument that supplies an initial ES state.
+
+## 4. Original arithmetic forces the budget on nonsquare shape lines
+
+At every prime \(p\equiv1\pmod{24}\), an actual exterior source forces canonical availability on
+
+$$
+\boxed{
+\alpha=-4t,\qquad t\in\{1,2,3\},
+}
+$$
+
+and
+
+$$
+\boxed{
+\beta=-4t,\qquad t\mid36.
+}
+$$
+
+Thus the nine beta coefficients are
+
+$$
+1,\ 2,\ 3,\ 4,\ 6,\ 9,\ 12,\ 18,\ 36.
+$$
+
+There is no bound on the other shape coordinate.
+
+For the alpha lines, \((t/h)=1\) and \(h\equiv3\pmod4\) suffice. At \(t=2\), they force \(h\equiv7\pmod8\), hence \(2\mid j\). At \(t=3\), they force \(h\equiv11\pmod{12}\), hence \(3\mid j\). The case \(t=1\) is immediate.
+
+The beta proof uses more than that character. The actual equations give
+
+$$
+D=hs^2+4t,\qquad
+r+\kappa=sD,\qquad
+pD+1=4hr\kappa.
+$$
+
+Since \(sD\) is odd, \(r\kappa\) is even. Therefore \(D\equiv7\pmod8\), and
+
+$$
+h\equiv7-4t\pmod8.
+$$
+
+For even \(t\), this proves \(2\mid j\).
+
+When \(3\mid t\), the same equations force \(h\equiv2\pmod3\). Indeed, \(h=0\pmod3\) would give \(1=0\). If \(h=1\), then \(s=0\) would require \(1=-r^2\); if \(s=\pm1\), it would require
+
+$$
+2=r(s-r),
+$$
+
+whose right side has only values zero and one modulo three. Thus \(3\mid j\).
+
+Every exponent in a divisor of \(36\) is at most two. These forced divisibilities therefore prove
+
+$$
+t\mid j^2
+$$
+
+on all nine beta lines.
+
+For a canonical word, the squarefree part of the new grade \(h_M\) is exactly that of \(t\). The earlier square-grade return is its \(t=c^2\) special case. Nonsquare \(t\) is not normalized away.
+
+## 5. The sharp bound occurs in original hard-prime states
+
+The equality family is not merely an abstract divisor example.
+
+For every
+
+$$
+t=6+420z,\qquad z\ge0,
+$$
+
+put
+
+$$
+h=t^2-3t+1,\qquad
+R=t^2+t+1,\qquad
+\ell=(t-2)/4.
+$$
+
+Then
+
+$$
+\gcd(h,R)=1,\qquad \gcd(hR,210)=1.
+$$
+
+Also \(t^3\equiv1\pmod R\), so the integer
+
+$$
+r_0=\frac{t+2R}{4}
+$$
+
+satisfies
+
+$$
+16tr_0^2\equiv1\pmod R.
+$$
+
+Choose \(r\) by
+
+$$
+r\equiv r_0\pmod R,\qquad
+r\equiv\frac{R+1}{4}h^{-1}\pmod{210}.
+$$
+
+Then
+
+$$
+p=4hr-R
+$$
+
+is a reduced arithmetic progression modulo \(840hR\), with \(p\equiv1\pmod{840}\). Modulo \(h\), it equals \(-R\); modulo \(R\), it equals \(4hr_0\). Those are units, proving the reducedness needed for Dirichlet’s theorem.
+
+Hence there are infinitely many prime members (Sutherland, 2017, Theorem 18.1). Each sufficiently large member has the original exterior state
+
+$$
+a=hr,\qquad u=hr^2,\qquad s=1,
+$$
+
+with
+
+$$
+\alpha=h-R=-4t.
+$$
+
+Its canonical cofactor word is unavailable, while
+
+$$
+W=(t-1)^2
+$$
+
+is the sharp finite repair.
+
+This uses primes in a **proved reduced linear progression**. It does not assume infinitely many primes represented by an unproved polynomial family.
+
+### A concrete hard-prime repair
+
+At
+
+$$
+\boxed{p=825241\equiv361\pmod{840}},
+$$
+
+the original exterior marking is
+
+$$
+\boxed{
+(a,R,u,h,r,s,\kappa)
+=
+(206321,43,2240439739,19,10859,1,208402140).
+}
+$$
+
+Here
+
+$$
+\alpha=-24,\qquad t=6,\qquad j=5.
+$$
+
+The complete cofactor box is
+
+$$
+\{1,5,25\},
+$$
+
+and only
+
+$$
+25\equiv6\pmod{19}
+$$
+
+hits. The unavailable canonical word is \(6\).
+
+The return is
+
+$$
+\boxed{
+(a_M,R_M,U,h_M,r_M,s_M,\lambda_M)
+=
+(217170,43439,25,1,5,43434,1),
+}
+$$
+
+giving
+
+$$
+\boxed{
+\frac4{825241}
+=
+\frac1{217170}
++\frac1{825241\cdot43434}
++\frac1{825241\cdot5}.
+}
+$$
+
+Its original grade satisfies
+
+$$
+19=6^2-3\cdot6+1.
+$$
+
+Thus the sharp finite-repair boundary is attained by actual original prime arithmetic, and the return genuinely goes beyond the preceding square-coefficient rule.
+
+## 6. For every fixed alpha coefficient \(t\ge4\), universal same-grade repair is false
+
+The finite classification also settles the negative side.
+
+Let
+
+$$
+K(t)=\prod_{\ell^e\parallel t}\ell^{\lceil e/2\rceil},
+\qquad M=4K(t).
+$$
+
+Consider the unit classes
+
+$$
+A\equiv3\pmod4,\qquad \left(\frac tA\right)=1.
+$$
+
+If \(t\) is square, this set has \(\varphi(M)/2\) elements. If \(t\) is nonsquare, it has \(\varphi(M)/4\). For the latter count, the positive quadratic character of \(t\) is nontrivial on units congruent to one modulo four: choose a nonsquare at an odd prime occurring to odd exponent, or the class five modulo eight when only the two-part is nonsquare. CRT makes the other coordinates one.
+
+The class \(-1\) always belongs to the set. It is the **only** class exactly for
+
+$$
+\boxed{t=1,2,3.}
+$$
+
+Now fix \(t\ge4\) and choose \(A\ne-1\) in that set. Lift it by CRT so that both \(R\) and \(R-4t\) are units at \(3,5,7\). If one of those primes divides \(t\), the unit condition already suffices; otherwise at most two residue values are excluded.
+
+Dirichlet supplies a prime \(R\) in this class so large that
+
+$$
+h=R-4t>\max\{4t,t^2-3t+1\}.
+$$
+
+Since \(R\not\equiv-1\pmod{4K(t)}\),
+
+$$
+t\nmid j^2,\qquad j=(h+1)/4.
+$$
+
+The choice \((t/R)=1\) supplies an actual root
+
+$$
+16tr_0^2\equiv1\pmod R.
+$$
+
+Solve the same two CRT conditions on \(r\):
+
+$$
+r\equiv r_0\pmod R,\qquad
+r\equiv\frac{R+1}{4}h^{-1}\pmod{210}.
+$$
+
+Again \(p=4hr-R\) is a reduced progression of primes \(1\pmod{840}\). Its original state
+
+$$
+(a,u)=(hr,hr^2)
+$$
+
+has \(\alpha=-4t\).
+
+But the completed capacity theorem now gives
+
+$$
+\boxed{\mathcal A_t(j)=\varnothing.}
+$$
+
+The canonical divisor is absent; its companion is therefore absent; and the finite-repair range has been passed.
+
+Consequently:
+
+$$
+\boxed{
+\begin{gathered}
+\text{For every fixed }t\ge4,\text{ infinitely many hard primes have}\\
+\text{an original E state with }\alpha=-4t
+\text{ and no M return at its original cofactor }h.
+\end{gathered}}
+$$
+
+Every prime constructed in this proof already has its exterior solution. The theorem concerns the complete **same-grade middle box**, not the whole ES source.
+
+For \(t=4\), an explicit progression is
+
+$$
+R=59,\qquad h=43,\qquad j=11,
+$$
+
+$$
+r=8415+12390n,\qquad
+\boxed{p=1447321+2131080n.}
+$$
+
+At \(n=3\),
+
+$$
+p=7840561
+$$
+
+is prime and has the original exterior marking
+
+$$
+(a,R,u,h,r,s,\kappa)
+=
+(1960155,59,89353665675,43,45585,1,6057830054).
+$$
+
+The complete capacity divisors \(1,11,121\) have residues
+
+$$
+1,\ 11,\ 35\pmod{43},
+$$
+
+not four.
+
+There are corresponding finite limitations to the beta automatic theorem. The certificate exhausts the old-grade boxes for actual hard-prime beta sources with
+
+$$
+\boxed{
+(t,p,h)=(8,346201,23),\quad
+(27,593401,11),\quad
+(5,2727841,11).
+}
+$$
+
+All three boxes are empty. No infinite beta-obstruction theorem is inferred from those examples.
+
+## 7. The inverse fibres retain the original gate
+
+The complete fixed-\((p,h,t)\) alpha fibre has
+
+$$
+N=\frac{p+4t}{h},\qquad
+s\mid N,\qquad
+r=\frac{s+N/s}{4}\in\mathbb Z,
+$$
+
+together with
+
+$$
+\boxed{
+\gcd(r,s)=1,\qquad
+\frac p4<hrs<\frac p2,\qquad
+4hrs-p\mid4hr^2+1.
+}
+$$
+
+The last condition is necessary. The factor equation and shape alone do not imply it.
+
+This repairs one omission in the predecessor’s **prose inverse domain**. At
+
+$$
+p=5209,\qquad h=95,\qquad t=4,
+$$
+
+the factor equation has \(N=55\). Choosing \(s=5,r=4\) satisfies its divisibility, coprimality, shape and first-half tests, but gives
+
+$$
+a=1900,\qquad R=2391,\qquad u=1520,
+$$
+
+and
+
+$$
+(4u+1)\bmod R=1299.
+$$
+
+It is not an exterior state.
+
+The predecessor executable already rejected it through the E-gate check. The correction concerns the textual claim of a complete inverse domain, not the forward transfer theorem. The old source remains preserved.
+
+For beta, the full fibre retains
+
+$$
+F=\frac{4tp+1}{h},\qquad
+D=hs^2+4t,\qquad
+\Delta_s=s^2(D^2-p)-F,
+$$
+
+and the positive square condition \(\Delta_s=k^2\), with
+
+$$
+r=(sD-k)/2,\qquad \kappa=sD-r,
+$$
+
+plus the original range, parity and coprimality checks.
+
+The new map keeps the original E record, side, \(t,j,W\), and canonical/companion/finite label. Across two branches, their middle words coincide exactly when
+
+$$
+W_\alpha W_\beta=j^2.
+$$
+
+Distinct original preimages remain separate integer coefficients. The pushforward sums those fibres; its kernel consists of same-target differences. It does not replace a coefficient by the cardinality of its residue support.
+
+## 8. What this changes in the remaining programme
+
+The same-grade capacity question is no longer an unspecified obstacle. It has a complete answer:
+
+$$
+\boxed{
+\begin{array}{l}
+\text{forced canonical availability on the proved automatic lines};\\
+\text{a complete, sharply bounded list of exceptional repairs};\\
+\text{an exact eventual count beyond that range};\\
+\text{actual prime examples where every same-grade word fails}.
+\end{array}}
+$$
+
+Increasing the old-grade divisor search cannot repair the latter examples. A successful next arithmetic step must change the source or cofactor through another proved construction, or force a positive coefficient in the complete first-half pair source.
+
+The universal obligation remains
+
+$$
+\boxed{
+\forall p\text{ hard prime},\qquad
+\mathcal E_p\cup\mathcal M_p\ne\varnothing.
+}
+$$
+
+No theorem in this tranche assumes that missing first state.
+
+### Reproduction and records
+
+The default replay compares the complete divisor classification for
+
+$$
+t\le120,\qquad j\le5000,\qquad4j-1>t,
+$$
+
+including every original word, not just occupancy. It separately checks the sharp families, character classes, larger prime examples and their complete cofactor boxes.
+
+The original-state replay covers every first-half E/M divisor at primes \(p\equiv1\pmod4\) through 3,000. The separate implementation imports neither the main verifier nor predecessor code; it uses literal square-divisor enumeration, primitive coprime \(r,s\) sources and primewise character evaluation.
+
+```sh
+python verify.py --bound 3000 --target-bound 120 --j-bound 5000 \
+  --out certificates
+python -O verify.py --bound 3000 --target-bound 120 --j-bound 5000 \
+  --out certificates_optimized
+python check_independent.py --input certificates \
+  --out certificates/independent.json
+```
+
+[Main verifier](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/verify.py) · [Separate checker](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/check_independent.py) · [Typed maps and fibres](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/MORPHISMS.md) · [Inverse-domain correction](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/CORRECTION.md)
+
+[Remaining Turn 7 obligation](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/HANDOFF_TURN_7_REMAINDER.md) · [Source ledger](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/source_reading.json) · [Lean-ready dependency plan](sandbox:/mnt/data/es_turn7_capacity_completion_20260920/lean_plan.md) · [Delivery and execution receipt](sandbox:/mnt/data/ES_Turn7_Capacity_Completion_Receipt_20260920.json)
+
+The archive and its included manifest were checked at delivery. The receipt distinguishes completed replay results from source presence; the cumulative package preserves the preceding ZIP rather than claiming a new audit of its entire history. No unconfirmed remote PR, Lean build, independent mathematical review or historical-priority determination is being reported.
+
+**The completed advance is a full solution of the fixed-target cofactor-capacity problem, including prime-realized sharpness and an infinite original obstruction to universal same-grade repair. It also supplies unconditional arithmetic returns on additional nonsquare shape lines. The broader Turn 7 existence milestone remains open within this programme.**

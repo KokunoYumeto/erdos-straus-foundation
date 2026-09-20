@@ -1,9 +1,10 @@
 \documentclass[11pt]{article}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,mathrsfs,booktabs,longtable,array,microtype,graphicx}
 \usepackage[a4paper,margin=25mm]{geometry}
 \usepackage[hidelinks,hypertexnames=false]{hyperref}
 \usepackage{xurl}
+\newcounter{none}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -11,15 +12,31 @@
 \theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
 \theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
 \newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
 \newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
 \newcommand{\Disc}{\operatorname{Disc}}
 \newcommand{\Res}{\operatorname{Res}}
 \newcommand{\ii}{\mathrm i}
+\newcommand{\Frac}{\operatorname{Frac}}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\oo}{\mathfrak o}
+\providecommand{\NN}{\mathcal N}
+\providecommand{\OO}{\mathcal O}
+\providecommand{\SSS}{\widehat{\mathcal S}}
+\providecommand{\vp}{v_p}
+\providecommand{\diag}{\operatorname{diag}}
+\providecommand{\Span}{\operatorname{span}}
+\providecommand{\length}{\operatorname{length}}
+\providecommand{\im}{\operatorname{im}}
+\providecommand{\supp}{\operatorname{supp}}
+\providecommand{\Leg}[2]{\left(\frac{#1}{#2}\right)}
+\DeclareMathOperator{\Spec}{Spec}
 \setlength{\emergencystretch}{2em}
 
-\title{The normalized Erd\H{o}s--Straus quartic\\
-and its exact passage through the signed Fable cover\\
-to a fixed weighted conductor}
+\title{The normalized Erd\H{o}s--Straus quartic,\\
+prime-local Fable fibres, and exact channel transfers\\
+in a fixed weighted conductor}
 \author{The Clankers}
 \date{20 September 2026}
 
@@ -29,20 +46,58 @@ to a fixed weighted conductor}
 \begin{abstract}
 An ordered positive solution of the Erd\H{o}s--Straus equation determines a
 normalized binary quartic whose four literal roots are the prime and its three
-denominators.  We prove that this coefficient target lies in the genuine
-degree-eight finite \(\acute{e}\)tale domain of the four-dimensional Fable map.
+denominators.  On the distinct-root locus this coefficient target lies in the
+genuine degree-eight finite \(\acute{e}\)tale domain of the four-dimensional
+Fable map.  Every positive integral witness at a prime
+\(p\equiv1\pmod {12}\) lies in that locus, and explicit fixed-\(p\) bounds
+separate its discriminant and derivatives from zero and bound all inverse
+coordinates.
 The prime is intrinsic in the unmarked coefficients, an explicit hypersurface
 equation characterizes the algebraic image on the relevant open chart, and
 the two inverse states marking the prime are given in every source coordinate.
-For the exterior states developed in this workbench all four roots are
-distinct; sorting recovers the denominator marking and the complete Turn~7
-coordinates.  We also retain, as a different map with a different fibre, the
-earlier reciprocal-cubic suspension: it lies on the nonproper hyperplane and
-has seven states.  Finally, explicit invertible linear maps carry both targets,
-their fibres and their exceptional loci into one fixed Meixner--Pollaczek
-weighted-conductor four-plane.  These are exact arithmetic--geometric--operator
-bridges.  They neither prove universal Erd\H{o}s--Straus existence nor identify
-the four arithmetic roots with zeros of the Riemann zeta function.
+At fixed complex \(p\ne0\), over the exact open base
+\(\mathcal B_p=\{(A,C):ACd_p\Disc(g_p)\ne0\}\), the signed cover splits into
+ranks \(2+6\), has monodromy group of order \(48\), and has deck group
+\(C_2\times C_2\).
+At the defining prime, the original rank-eight integral order has normalization
+index \(p^2\) in the exterior channel and \(p^9\) in the middle channel, with
+every Smith factor, conductor, reduction kernel and local signed-label
+character made explicit.  Three quadratic-character conditions select exactly
+\(3456\) reduced classes modulo \(521220\) on which the original odd receiving
+frame is nonsingular for every positive integral witness.  The actual witness
+\((13;4,18,468)\) also gives an exact finite-field descent example: no signed
+lift over \(\mathbb F_{61}\), eight lifts over \(\mathbb F_{61^2}\), and eight
+\(\mathbb F_{61}\)-points on the specified nonsquare twist.
+We also retain, as a different map with a different fibre, the earlier
+reciprocal-cubic suspension: it lies on the nonproper hyperplane and has seven
+states.  At the original prime its exterior and middle fibres have
+respectively ramified and unramified quadratic factors despite having the same
+three rational points; their root orders differ by one exact index-\(p\)
+quotient.  A negative-four-square source transformation changes the arithmetic
+target and produces original same-prime middle states on its exact divisor
+domain.  For every integer coefficient \(t>0\), the complete fixed-target
+divisor box splits into canonical, companion and finite branches; the finite
+branch has the sharp bound \(h\le t^2-3t+1\).  That bound is attained by
+actual exterior states at infinitely many hard primes, while every fixed
+\(t\ge4\) also occurs on infinitely many exterior states whose complete
+same-grade middle box is empty.  Replacing the inverse square-root coordinate
+by its reciprocal gives
+a finite flat rank-eight completion whose double-root fibre is
+\(\mathbb C[\eta]/(\eta^4)\); the original meromorphic pole remains explicit.
+An invertible marked odd-moment frame identifies the separate receiving
+divisor exactly.  An explicit positive-real solution ray crosses that divisor
+at one exactly isolated simple parameter, where the odd receiving matrix has
+rank three while the quartic remains squarefree; for integral roots, a retained
+integer gives a sharp zero-or-inverse-bound dichotomy.  On the completed signed
+root algebra, a perfect residue pairing factors the trace pairing through
+multiplication by \(2\eta^3\), locating the exact noninvertible boundary map.
+A native moment Gram is obtained from residue duality by its second-kind
+polynomial multiplier, while an arbitrary ES root polynomial retains a
+displayed relation defect.  Finally, invertible linear maps carry the coefficient
+targets, fibres and exceptional loci into one fixed Meixner--Pollaczek
+weighted-conductor four-plane.  These exact bridges neither prove universal
+Erd\H{o}s--Straus existence nor identify arithmetic roots with zeros of the
+Riemann zeta function.
 \end{abstract}
 
 \section{The arithmetic source and the four-dimensional map}
@@ -164,6 +219,235 @@ remain part of the source.  No admission criterion is being invented for the
 published Fable theorem; this is the exact image statement for the new ES map.
 \end{remark}
 
+\section{The exact quotient chart and its singular boundary}
+
+The converse in EZ9 can be sharpened from a root statement to an isomorphism
+of affine charts.  Retain all four symmetric source coordinates and put
+\begin{align}
+ \mathscr X_{\rm sym}
+  &:=\Spec\frac{\mathbb C[p,s_1,s_2,s_3,(Sps_3)^{-1}]}
+                    {(ps_2-4s_3)},\qquad S=p+s_1,\nonumber\\
+ \mathscr Y_{\rm ES}
+  &:=V(G)\cap D(u_0u_3u_4).                            \tag{EZ9a}
+\end{align}
+
+\begin{theorem}[Exact symmetric quotient]
+The coefficient map
+\begin{equation}
+ \Theta(p,s_1,s_2,s_3)=
+ \left(-\frac1S,-\frac{ps_1+s_2}{S},
+       \frac{5s_3}{S},-\frac{ps_3}{S}\right)          \tag{EZ9b}
+\end{equation}
+is an isomorphism \(\mathscr X_{\rm sym}\simeq\mathscr Y_{\rm ES}\).
+Its inverse is
+\begin{equation}
+ \boxed{
+ p=-\frac{5u_4}{u_3},\quad
+ s_1=-\frac1{u_0}+\frac{5u_4}{u_3},\quad
+ s_2=\frac{4u_3^2}{25u_0u_4},\quad
+ s_3=-\frac{u_3}{5u_0}.}                              \tag{EZ9c}
+\end{equation}
+Equivalently,
+\begin{equation}
+ \mathscr Y_{\rm ES}\simeq
+ \Spec\mathbb C[u_0^{\pm1},u_3^{\pm1},u_4^{\pm1}]
+ \simeq\mathbb G_m^3,                                 \tag{EZ9c'}
+\end{equation}
+with
+\[
+ u_2=\frac{5u_4}{u_3}-\frac{25u_0u_4^2}{u_3^2}
+                    +\frac{4u_3^2}{25u_4}.
+\]
+If the ordered source with coordinates \((p,x,y,z)\) is retained, its map
+to \(\mathscr Y_{\rm ES}\) is exactly the quotient by the action of
+\(S_3\) permuting \((x,y,z)\).  It is finite flat of degree six.  Where
+the cubic with roots \(x,y,z\) is squarefree, it is finite
+\(\acute{e}\)tale and has six reduced ordered points in every geometric
+fibre.
+\end{theorem}
+
+\begin{proof}
+On \(\mathscr X_{\rm sym}\), the relation \(ps_2=4s_3\) gives EZ9 by
+the calculation in the proof above, and \(Sps_3\ne0\) makes all four
+fractions in EZ9b regular with \(u_0u_3u_4\ne0\).
+
+Conversely, define the four source coordinates by EZ9c.  Directly,
+\[
+ p+s_1=-u_0^{-1},\qquad ps_2=4s_3.
+\]
+The first, third and fourth coordinates of EZ9b then return
+\(u_0,u_3,u_4\).  For the second coordinate one obtains
+\[
+ -\frac{ps_1+s_2}{p+s_1}-u_2
+ =-\frac{G(u)}{25u_3^2u_4},
+\]
+which vanishes exactly on \(\mathscr Y_{\rm ES}\).  Substituting EZ9b
+into EZ9c returns \(p,s_1,s_2,s_3\), so the two regular maps are inverse.
+
+The invariant ring of \(\mathbb C[x,y,z]\) under the displayed
+\(S_3\)-action is \(\mathbb C[s_1,s_2,s_3]\).  The relation
+\(ps_2-4s_3\) and the localized element \(Sps_3\) are invariant; since
+the characteristic is zero, taking invariants commutes with this invariant
+quotient and localization.  Thus the ordered map factors through precisely
+\(\mathscr X_{\rm sym}\), not through a smaller unidentified object.
+The symmetric-polynomial ring is free of rank \(|S_3|=6\) over its invariant
+ring, and this remains true after the invariant quotient and localization;
+the ordered map is therefore finite flat of degree six.  When the cubic
+discriminant is nonzero the action on ordered roots is free, giving the stated
+\(\acute{e}\)tale locus.  Finally, use \((S,p,s_3)\) as source coordinates:
+the relation solves \(s_2=4s_3/p\) and \(s_1=S-p\).  All three are units,
+so the source coordinate ring is a three-variable Laurent ring.  Applying
+EZ9c proves EZ9c' and the displayed formula for \(u_2\).
+\end{proof}
+
+The inverse also gives an exact arithmetic recognition statement.  For
+\(u\in\mathscr Y_{\rm ES}(\mathbb Q)\), form the four quantities EZ9c and
+the retained cubic
+\begin{equation}
+ Q_u(T)=T^3-s_1T^2+s_2T-s_3.                           \tag{EZ9d}
+\end{equation}
+In literal target coordinates this is
+\[
+ Q_u(T)=T^3+\left(\frac1{u_0}-\frac{5u_4}{u_3}\right)T^2
+ +\frac{4u_3^2}{25u_0u_4}T+\frac{u_3}{5u_0}.
+\]
+Before imposing \(G=0\), polynomial division retains the exact residual
+\begin{equation}
+ u_0\left(T+\frac{5u_4}{u_3}\right)Q_u(T)-h_u(T)
+       =-\frac{G(u)}{25u_3^2u_4}T^2.                  \tag{EZ9d'}
+\end{equation}
+Thus on the hypersurface
+\(u_0^{-1}h_u(T)=(T+5u_4/u_3)Q_u(T)\), with every scale retained.
+Then \(u\) comes from an Erd\H{o}s--Straus solution with prime numerator
+\(p\) and positive integral denominators if and only if the recovered
+\(p\) is a positive prime integer and \(Q_u\) splits over \(\mathbb Z\)
+as \((T-x)(T-y)(T-z)\) with \(x,y,z>0\).  This criterion neither discards
+nor supplies any congruence or divisibility gate from the earlier programme.
+
+\begin{theorem}[Irreducibility, singular support and collision divisors]
+The polynomial \(G\) is irreducible in
+\(\mathbb C[u_0,u_2,u_3,u_4]\).  The scheme-theoretic singular subscheme
+of \(V(G)\) is cut out by \(G\) and
+\begin{align}
+ \partial_{u_0}G&=625u_4^3,&
+ \partial_{u_2}G&=25u_3^2u_4,\nonumber\\
+ \partial_{u_3}G&=-125u_4^2+50u_2u_3u_4-16u_3^3,&
+ \partial_{u_4}G&=1875u_0u_4^2-250u_3u_4+25u_2u_3^2.
+                                                               \tag{EZ9e}
+\end{align}
+Its reduced support is exactly the plane
+\(V(u_3,u_4)\).  Consequently \(\mathscr Y_{\rm ES}\) is smooth, and
+every positive arithmetic image lies in its smooth locus with the retained
+signs
+\begin{equation}
+ u_0<0,\qquad u_2<0,\qquad u_3>0,\qquad u_4<0.          \tag{EZ9f}
+\end{equation}
+
+On this chart the cubic collision divisor is \(\Disc(Q_u)=0\), with the
+\(s_i\) given exactly by EZ9c.  Collision of the distinguished root \(p\)
+with one of the three denominator roots is the different divisor
+\begin{equation}
+ Q_u(p)=-\frac{1250u_0u_4^3+3u_3^4-125u_3u_4^2}
+                    {5u_0u_3^3}=0.                    \tag{EZ9g}
+\end{equation}
+The full quartic discriminant factors without loss of scale as
+\begin{equation}
+ \Disc(h_u)=u_0^6\Disc(Q_u)Q_u(p)^2.                  \tag{EZ9h}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+View \(G\) as a degree-one polynomial in \(u_0\) over the UFD
+\(R=\mathbb C[u_2,u_3,u_4]\).  Its leading coefficient is
+\(625u_4^3\), while its constant coefficient is
+\(u_3(-125u_4^2+25u_2u_3u_4-4u_3^3)\).  These two coefficients are
+coprime: \(u_4\) does not divide the latter coefficient, as its value at
+\(u_4=0\) is \(-4u_3^4\).  The polynomial is therefore primitive and
+irreducible over \(\Frac(R)\), hence irreducible over \(R\).
+
+The four derivatives are EZ9e.  At any geometric singular point the first
+one forces \(u_4=0\), and then the third forces \(u_3=0\).  Conversely all
+four derivatives and \(G\) vanish on that plane.  This proves the statement
+about the reduced support while retaining the nonreduced Jacobian ideal in
+EZ9e.  The arithmetic signs follow term by term from EZ7 and positivity of
+\(p,x,y,z,S\).
+
+The cubic discriminant is the square of
+\((x-y)(x-z)(y-z)\).  Direct substitution of EZ9c into EZ9d at
+\(T=p=-5u_4/u_3\) gives EZ9g.  Finally the root formula for the discriminant
+of \(u_0(T-p)Q_u(T)\) gives EZ9h, retaining the leading factor \(u_0^6\).
+\end{proof}
+
+For completeness, the nonreduced singular scheme can also be retained
+exactly.  Write \(A=u_0,B=u_2,C=u_3,D=u_4\), and divide the four generators
+in EZ9e only by nonzero constants.  Its Jacobian ideal is
+\begin{equation}
+ J=\bigl(D^3,C^2D,16C^3-50BCD+125D^2,
+                 BC^2-10CD+75AD^2\bigr).              \tag{EZ9i}
+\end{equation}
+The identity
+\[
+ -A G_A+B G_B+2C G_C+3D G_D=8G
+\]
+shows that adding \(G\) does not enlarge this ideal.  Its irredundant primary
+decomposition is
+\begin{align}
+ J={}&Q_P\cap Q_E,\nonumber\\
+ Q_P={}&(C,D)^3+
+ (2BCD-5D^2,\ BC^2-10CD+75AD^2),\nonumber\\
+ Q_E={}&(B,D^3,16C^3+125D^2,\ 2CD-15AD^2).            \tag{EZ9j}
+\end{align}
+Thus the singular scheme is a thickened copy of the plane \(V(C,D)\) with
+an embedded line supported on \(V(B,C,D)\).  One exact elimination check is
+that both \(J\) and \(Q_P\cap Q_E\) have the Gr\"obner basis
+\[
+ \begin{split}
+ (&75AD^2+BC^2-10CD,\ BC^3,
+ 50BCD-16C^3-125D^2,\\
+ &C^4,C^2D,CD^2,D^3).
+ \end{split}
+\]
+Moreover \((C,D)^3\subset Q_P\subset(C,D)\), so \(Q_P\) is
+\((C,D)\)-primary.  In \(Q_E\), the relations give
+\(D^3=CD^2=C^2D=C^4=0\); hence
+\((B,C,D)^4\subset Q_E\subset(B,C,D)\), proving that \(Q_E\) is
+\((B,C,D)\)-primary.
+
+The reduced boundary of the torus chart EZ9c' inside \(V(G)\) has the three
+components
+\begin{equation}
+ V(A,C),\qquad
+ V\bigl(A,-125D^2+25BCD-4C^3\bigr),\qquad
+ V(C,D),                                                 \tag{EZ9k}
+\end{equation}
+and every pairwise or triple intersection is the line \(V(A,C,D)\).
+This follows by setting each of \(A,C,D\) equal to zero in the unreduced
+polynomial (G); no boundary component meets the sign chamber EZ9f.
+
+The finite-flat quotient retains collision multiplicities.  Over an
+algebraically closed field of characteristic zero, a denominator pattern
+\(1+1+1\) gives six reduced orderings; a pattern \(2+1\) gives three
+length-two fibres; and a triple root gives the length-six coinvariant fibre
+\[
+ \Spec\frac{\mathbb C[\xi,\eta]}
+ {\bigl(\xi^2+\xi\eta+\eta^2,\ \xi\eta(\xi+\eta)\bigr)}.
+\]
+Hence sorting positive real roots is a semialgebraic section on the strict
+real chamber, not a rational ordering of the generic cubic.
+
+The collision divisors are not empty on positive integral solutions.  For
+example,
+\[
+ (p;x,y,z)=(3;1,6,6),\qquad(5;2,5,10),\qquad(2;1,2,2)
+\]
+satisfy EZ1; respectively they have a denominator collision, a collision of
+the distinguished root with a denominator, and both kinds.  Thus an arbitrary
+positive solution need not have an eight-point fibre.  These collision
+divisors lie inside the smooth chart \(\mathscr Y_{\rm ES}\): they are
+ramification/fibre-degeneration loci for the root and signed-factor covers,
+not singularities of the coefficient hypersurface.  The Turn~7 exterior
+theorem below proves that its own image avoids both divisors.
+
 \section{The eight states and the prime-marked pair}
 
 Let \(t_1=p,t_2=x,t_3=y,t_4=z\), and for each root put
@@ -231,7 +515,7 @@ Then
 satisfy
 \begin{equation}
  LC=\mathcal J(p;x,y,z),\quad
- \Res(L,C)=1,quad ad+bc=1,quad 4af-be=0.              \tag{EZ17}
+ \Res(L,C)=1,\quad ad+bc=1,\quad 4af-be=0.              \tag{EZ17}
 \end{equation}
 The two choices of \(\lambda\) are exactly \(q_{p,+},q_{p,-}\), and
 the rational deck involution exchanges them.  The other six fibre points mark
@@ -262,8 +546,8 @@ GF18 of \cite{SignedCover}.
 
 The exterior source retained in the Turn~7 work has
 \begin{equation}
- a=hrs,quad u=hr^2,quad R=4a-p,quad
- D=\frac{4u+1}{R}=\frac{r+\kappa}{s},quad
+ a=hrs,\quad u=hr^2,\quad R=4a-p,\quad
+ D=\frac{4u+1}{R}=\frac{r+\kappa}{s},\quad
  R\kappa=pr+s,                                         \tag{EZ18}
 \end{equation}
 and ordered denominators
@@ -293,8 +577,8 @@ integer \(a<p\).  If \(p\mid\kappa\), then
 
 The marked shape curve retains
 \begin{equation}
- X=v,quad Y=2a,quad R=X-\alpha,quad D=X-\beta,quad
- p=2Y-R,quad u=(RD-1)/4.                               \tag{EZ21}
+ X=v,\quad Y=2a,\quad R=X-\alpha,\quad D=X-\beta,\quad
+ p=2Y-R,\quad u=(RD-1)/4.                               \tag{EZ21}
 \end{equation}
 On its stated integral image, the inverse
 \begin{equation}
@@ -307,8 +591,8 @@ cubic to \(J_4\).  Algebraically, the coefficient target forgets the action
 of \(S_3\) permuting \(x,y,z\).  On the actual strict real chamber EZ20,
 sorting the three non-prime roots restores \(x<y<z\).  One then reconstructs
 \begin{equation}
- R=4x-p,quad u=\frac{xz}{py}=\frac{x^2}{Ry-px},quad
- D=\frac{4u+1}{R},quad v=\frac{x^2}{u},quad
+ R=4x-p,\quad u=\frac{xz}{py}=\frac{x^2}{Ry-px},\quad
+ D=\frac{4u+1}{R},\quad v=\frac{x^2}{u},\quad
  (X,Y)=(v,2x),                                         \tag{EZ23}
 \end{equation}
 and EZ22 restores every exterior marking.  Outside the arithmetic chamber,
@@ -319,8 +603,8 @@ ordered integral source.
 
 For comparison, an ordered ES solution also gives reciprocal roots
 \begin{equation}
- t_1=p/x,quad t_2=p/y,quad t_3=p/z,quad
- t_1+t_2+t_3=4,quad e_2=\sum_{i<j}t_it_j,quad e_3=t_1t_2t_3. \tag{EZ24}
+ t_1=p/x,\quad t_2=p/y,\quad t_3=p/z,\quad
+ t_1+t_2+t_3=4,\quad e_2=\sum_{i<j}t_it_j,\quad e_3=t_1t_2t_3. \tag{EZ24}
 \end{equation}
 The normalized cubic
 \[
@@ -350,9 +634,855 @@ nonproper locus
 \begin{equation}
  \mathcal N(P)=\{u:u_0\Disc(H_u)=0\}.                  \tag{EZ28}
 \end{equation}
-Thus the eight-state quartic and seven-state suspension are related maps with
-different retained data, fibres and exceptional loci.  Neither is substituted
-for the other.
+Thus the eight-state quartic and seven-state suspension retain different data,
+fibres and exceptional loci.  The exact morphism between them is calculated
+below; neither is substituted for the other.
+
+\section{The exact elementary transform between the two quartics}
+
+The apparent change from eight to seven affine states does not make the two
+constructions unrelated.  It records an exact marked-root elementary
+modification and a separately calculable square-class obstruction on the
+signed covers.
+
+\begin{theorem}[Marked-root transform to the reciprocal suspension]
+\label{thm:quartic-reciprocal-transform}
+Work over a characteristic-zero field containing \(\ii\), and restrict to
+\begin{equation}
+ p\,s_3\,S
+ \prod_{i<j}(x_i-x_j)\prod_i(p-x_i)\ne0.               \tag{EZ28A}
+\end{equation}
+For \(t_i=p/x_i\), let
+\(f(T)=\prod_i(T-t_i)=T^3-4T^2+e_2T-e_3\).  Then
+\begin{equation}
+ s_1=\frac{pe_2}{e_3},\qquad
+ s_2=\frac{4p^2}{e_3},\qquad
+ s_3=\frac{p^3}{e_3},\qquad
+ S=\frac{p(e_2+e_3)}{e_3},                             \tag{EZ28B}
+\end{equation}
+and the two binary quartics obey the literal identity
+\begin{equation}
+ \boxed{
+ H_{\rm rec}(U,V)
+ =\frac1{u_4}\frac{V}{U-V}\mathcal J(p;pV,U)
+ =V\prod_{i=1}^3\left(U-\frac p{x_i}V\right).}         \tag{EZ28C}
+\end{equation}
+Here \(\mathcal J(p;pV,U)\) means substitution
+\((U,V)\mapsto(pV,U)\) in EZ6; it is divisible by \(U-V\) because the marked
+root \(p\) maps to \(1\).
+
+On symmetric coefficient charts,
+\begin{align}
+ e_2&=\frac{125u_4^2(u_3-5u_0u_4)}{u_3^4},&
+ e_3&=\frac{625u_0u_4^3}{u_3^4},&
+ e_2+e_3&=\frac{125u_4^2}{u_3^3},                      \tag{EZ28D}\\
+ u_0&=-\frac{e_3}{p(e_2+e_3)},&
+ u_2&=-\frac{p(e_2+4)}{e_2+e_3},&
+ u_3&=\frac{5p^2}{e_2+e_3},&
+ u_4&=-\frac{p^3}{e_2+e_3}.                            \tag{EZ28E}
+\end{align}
+Put
+\[
+ \Delta_f=\Disc(T^3-4T^2+e_2T-e_3),\qquad
+ f(1)=e_2-e_3-3,
+\]
+\[
+ \mathscr Z^\circ=
+ \operatorname{Spec}k[e_2,e_3,
+   (e_3(e_2+e_3)\Delta_ff(1))^{-1}].
+\]
+The distinct-root arithmetic coefficient chart is
+\begin{equation}
+ \boxed{\mathbb G_{m,p}\times\mathscr Z^\circ.}         \tag{EZ28F}
+\end{equation}
+Projection to the reciprocal target forgets exactly the common scale \(p\);
+its scheme-theoretic fibre is \(\mathbb G_m\).  In quartic coordinates that
+scaling is
+\begin{equation}
+ \lambda\cdot(u_0,u_2,u_3,u_4)
+ =(\lambda^{-1}u_0,\lambda u_2,\lambda^2u_3,\lambda^3u_4), \tag{EZ28G}
+\end{equation}
+and \(e_2,e_3\) are invariant.
+
+Let \(Q(X)=X^3-s_1X^2+s_2X-s_3\).  There is a canonical isomorphism of
+degree-four projective root schemes
+\begin{equation}
+ \{p\}\sqcup\operatorname{Spec}k[X]/(Q)
+ \ \xrightarrow{\sim}\
+ \{\infty\}\sqcup\operatorname{Spec}k[T]/(f),           \tag{EZ28H}
+\end{equation}
+given by \(p\mapsto\infty\), \(x_i\mapsto p/x_i\).  On the finite coordinate
+rings it is
+\begin{equation}
+ T\longmapsto\frac p{s_3}(X^2-s_1X+s_2),\qquad
+ X\longmapsto\frac p{e_3}(T^2-4T+e_2).                 \tag{EZ28I}
+\end{equation}
+The collision divisors and discriminants transform as
+\begin{equation}
+ Q(p)=-\frac{p^3}{e_3}f(1),\qquad
+ \Disc(Q)=\frac{p^6}{e_3^4}\Disc(f),\qquad
+ \Disc(\mathcal J)=
+ \frac{p^6f(1)^2\Disc(f)}{(e_2+e_3)^6}.                \tag{EZ28J}
+\end{equation}
+No Möbius transformation realizes EZ28H: the unique one carrying the three
+distinct \(x_i\) to \(p/x_i\) is \(T\mapsto p/T\), which sends \(p\) to \(1\),
+not to \(\infty\).  Thus EZ28C is exactly inversion, deletion of the marked
+root \(1\), insertion of \(\infty\), and coefficient normalization.
+\end{theorem}
+
+\begin{proof}
+The relation \(ps_2=4s_3\) gives
+\(\sum_i p/x_i=4\), and the remaining formulas in EZ28B follow directly from
+\(x_i=p/t_i\).  Substitution in EZ6 gives
+\[
+ \mathcal J(p;pV,U)=\frac pS(U-V)\prod_i(pV-x_iU).
+\]
+Since
+\(\prod_i(pV-x_iU)=-s_3\prod_i(U-(p/x_i)V)\) and
+\(u_4=-ps_3/S\), this proves EZ28C with its sign and scale.
+
+Now \(e_2=p^2s_1/s_3\), \(e_3=p^3/s_3\).  Combining these identities with
+EZ8 and the inverse formulas EZ9b gives EZ28D.  Conversely EZ28B substituted
+in EZ7 gives EZ28E.  The two substitutions are inverse on EZ28A, proving
+EZ28F; simultaneous scaling of \(p,x_1,x_2,x_3\) proves EZ28G.
+
+Modulo \(Q\),
+\[
+ X^{-1}=\frac{X^2-s_1X+s_2}{s_3};
+\]
+modulo \(f\),
+\[
+ T^{-1}=\frac{T^2-4T+e_2}{e_3}.
+\]
+Multiplication by \(X\) and \(T\), respectively, shows that the two maps in
+EZ28I are inverse, proving EZ28H.  Finally
+\[
+ x_i-x_j=\frac{p(t_j-t_i)}{t_it_j},\qquad
+ p-x_i=\frac{p(t_i-1)}{t_i}.
+\]
+Multiplication of all retained differences gives EZ28J.  Three-point
+uniqueness in \(\operatorname{PGL}_2\) proves the final obstruction.
+\end{proof}
+
+\begin{theorem}[Exact signed-cover correspondence and obstruction]
+\label{thm:signed-reciprocal-correspondence}
+Let
+\[
+ \mathcal F_8=\{(r,A):h_u(r)=0,\ A^2h_u'(r)=1\},
+\]
+with the remaining three Fable source coordinates recovered by EZ13, and let
+\[
+ \mathcal F_7=\{q_\infty\}\sqcup
+ \{(t,\xi):f(t)=0,\ \xi^2f'(t)=1\}.
+\]
+Use EZ28H to form the fibre product
+\begin{equation}
+ \mathcal C=\mathcal F_8
+ \mathop{\times}_{\mathcal R_4}\mathcal F_7.           \tag{EZ28K}
+\end{equation}
+It has fourteen geometric points: two over the prime/infinity branch and four
+over each denominator branch.  The projection
+\(\mathcal C\to\mathcal F_7\) is finite \(\acute{e}\)tale of degree two; the
+projection to \(\mathcal F_8\) has degree one over the two prime-marked states
+and degree two over each denominator-marked state.
+
+For \(t_i=p/x_i\), the exact derivative twists are
+\begin{equation}
+ \frac{h_u'(x_i)}{f'(t_i)}
+ =\frac{x_is_3(p-x_i)}{Sp^2}
+ =\frac{p^2(t_i-1)}{t_i^2(e_2+e_3)},\qquad
+ h_u'(p)=\frac{p^2f(1)}{e_2+e_3}.                      \tag{EZ28L}
+\end{equation}
+There is generically no rational morphism
+\(\mathcal F_8\to\mathcal F_7\) covering EZ28H: the first ratio in EZ28L has
+odd valuation along the divisor \(t_i=1\), so it is not a square in the
+ordered-base function field.
+
+After adjoining
+\begin{equation}
+ c_i^2=\frac{h_u'(x_i)}{f'(t_i)},                       \tag{EZ28M}
+\end{equation}
+the denominator branches are isomorphic by
+\[
+ (x_i,A_i)\longmapsto(t_i,\xi_i=c_iA_i),
+\]
+followed by the full inverse coordinates
+\[
+ y_i'=-t_i-\frac{\ii}{\xi_i},\qquad
+ z_i'=\frac{2t_i}{\xi_i}+\frac{3\ii}{\xi_i^2},
+\]
+\[
+ w_i'=\frac{7\ii t_i^2}{\xi_i}
+ +\frac{-4-17t_i}{\xi_i^2}-\frac{13\ii}{\xi_i^3}.
+\]
+The projective factor-incidence completion over \(\infty\) has two signs
+\(b=\pm\ii\).  After adjoining \(d_p^2=h_u'(p)\), the prime states map to
+them by
+\begin{equation}
+ b=\ii d_pA_p.                                         \tag{EZ28N}
+\end{equation}
+The affine chart \(b=\ii+\xi y\) retains only \(b=\ii\) when \(\xi=0\).
+Consequently the projective completion restores an eight-to-eight
+correspondence after the displayed quadratic trivializations.  In the affine
+seven-state chart the induced surjection has a two-point fibre over
+\(q_\infty\) and singleton fibres elsewhere: it forgets exactly the prime
+sign.
+\end{theorem}
+
+\begin{proof}
+Equation EZ28L follows by differentiating both products and substituting
+EZ28B.  Over each denominator root, a signed map would have to identify the
+quadratic extensions generated by \(h_u'(x_i)^{-1/2}\) and
+\(f'(t_i)^{-1/2}\), which is equivalent to the ratio in EZ28L being a square.
+At the generic valuation associated with \(t_i=1\), its numerator has order
+one and \(t_i^2(e_2+e_3)\) has order zero.  This proves the obstruction.
+After EZ28M,
+\((c_iA_i)^2f'(t_i)=A_i^2h_u'(x_i)=1\), proving the finite branch map and
+its inverse.
+
+For a projective infinity factor \(L=bV\), the complementary cubic has leading
+coefficient \(b^{-1}\), and the resultant condition is
+\[
+ C(-b,0)=-b^2=1.
+\]
+Thus \(b=\pm\ii\).  Since \((d_pA_p)^2=1\), EZ28N is a bijection between the
+two prime signs and the two infinity signs.  The affine-chart equation fixes
+only the positive sign.  Counting the independent signed choices over each
+root gives \(2+3\cdot4=14\) points in EZ28K and the stated projection degrees.
+\end{proof}
+
+\begin{proposition}[Boundary resolution of the marked transform]
+On the marked incidence space
+\[
+ \mathfrak I=\{(H,p):H(p,1)=0,\ p\ne0,\ H\ne0\},
+\]
+the unnormalized map
+\[
+ (H,p)\longmapsto V\,\frac{H(pV,U)}{U-V}
+\]
+is regular.  Its \(U^3V\)-coefficient is \(u_4\), so the projective binary form
+extends across \(u_4=0\), whereas the affine normalization EZ28C exists exactly
+on \(D(u_4)\).  On the unmarked closure \(V(G)\), the marked root is the
+rational map
+\[
+ u\longmapsto[-5u_4:u_3].
+\]
+Its indeterminacy locus is \(V(u_3,u_4)\), and its graph is the blow-up of the
+ideal \((u_3,u_4)\).  The full reciprocal coefficient map has projective form
+\begin{equation}
+ u\longmapsto
+ [u_3^4:\ 125u_4^2(u_3-5u_0u_4):\ 625u_0u_4^3],       \tag{EZ28O}
+\end{equation}
+whose graph closure is the blow-up of the displayed three-generator base
+ideal.
+\end{proposition}
+
+\begin{proof}
+On \(\mathfrak I\), polynomial division by the monic marked factor \(U-V\)
+is regular in the coefficients; the leading coefficient is read directly
+from EZ28C.  The unmarked-root formula is EZ8 in homogeneous coordinates, so
+the standard graph construction of a rational map to \(\mathbb P^1\) is the
+blow-up of its base ideal.  Clearing the denominators in EZ28D gives EZ28O,
+and the same graph construction proves the final statement.
+\end{proof}
+
+This exact transform also reaches the integral calculation below.  In E,
+\(v_p(e_3)=2\); in M, \(v_p(e_3)=1\).  Therefore the inverse root-algebra
+formula
+\[
+ X=\frac p{e_3}(T^2-4T+e_2)
+\]
+has coefficient valuation \(-1\) in E and \(0\) in M.  Exterior evaluations
+remain integral precisely because the root order supplies the congruence
+calculated in EZ28l.  This is the exact morphism and its information loss; it
+is not the unrelated weighted analytic conductor of EZ29--35.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.96\textwidth]{figures/quartic-elementary-transform.pdf}
+\caption{The exact elementary transform EZ28C--EZ28O.  The drawing records
+inversion \(T\mapsto p/T\), deletion of the marked root \(1\), insertion of
+the root at infinity, the retained normalization, the common-scale fibre and
+the signed-cover information loss.  Horizontal spacing is schematic and is
+not used as a metric.  Reproduce with
+\texttt{tools/generate\_20260920\_illustrations.py}.}
+\label{fig:quartic-elementary-transform}
+\end{figure}
+
+\section{The prime-local seven-state fibre and its integral order}
+
+We now specialize EZ24--28 to the original shell coordinates rather than to an
+arbitrary reciprocal cubic.  In this section \(A\) denotes the original shell
+denominator, so it is not the Fable source coordinate \(a\) of EZ4.  Fix a
+prime \(p\equiv1\pmod4\) and retain
+\begin{equation}
+ \frac p4<A<\frac p2,\qquad R=4A-p,\qquad u\mid A^2,
+ \qquad
+ E:R\mid4u+1,\quad M:R\mid u+A.                        \tag{EZ28a}
+\end{equation}
+Put
+\begin{equation}
+ g=\gcd(A,u),\qquad
+ (h,r,s)=\left(\frac{g^2}{u},\frac ug,\frac Ag\right),
+ \qquad A=hrs,\quad u=hr^2,\quad\gcd(r,s)=1.           \tag{EZ28b}
+\end{equation}
+The ordered denominator maps, including their channel labels, are
+\begin{align}
+ E:\quad&\kappa=\frac{pr+s}{R},&
+ (x_1,x_2,x_3)&=(A,hs\kappa,phr\kappa),\nonumber\\
+ M:\quad&\lambda=\frac{r+s}{R},&
+ (x_1,x_2,x_3)&=(A,phs\lambda,phr\lambda).             \tag{EZ28c}
+\end{align}
+They are the retained Type-I/II coordinates of Elsholtz--Tao
+\cite[Section 2, Propositions 2.2 and 2.6]{ET}; multiplication gives EZ1, and
+the original divisor is recovered respectively by
+\begin{equation}
+ u=\frac{A^2}{Rx_2-pA},\qquad
+ u=\frac{pA^2}{Rx_2-pA}.                               \tag{EZ28d}
+\end{equation}
+
+\begin{lemma}[The original character survives the reciprocal map]
+For every positive divisor \(d\mid A^2\), with Jacobi symbol on the left,
+\begin{equation}
+ \left(\frac dR\right)=\left(\frac dp\right).          \tag{EZ28e}
+\end{equation}
+Consequently an E state has \((h/p)=-1\), whereas an M state has
+\((rs/p)=-1\).
+\end{lemma}
+
+\begin{proof}
+For every odd prime \(\ell\mid A\), \(R\equiv-p\pmod\ell\), while
+\(R\equiv3\pmod4\) and \(p\equiv1\pmod4\).  Quadratic reciprocity therefore
+gives
+\[
+ \left(\frac\ell R\right)
+ =\left(\frac{-1}\ell\right)\left(\frac R\ell\right)
+ =\left(\frac p\ell\right)=\left(\frac\ell p\right).
+\]
+If \(2\mid A\), then \(R\equiv-p\pmod8\), and the supplementary law gives
+\((2/R)=(2/p)\).  Multiplication with the original exponents proves EZ28e.
+In E, \(u\equiv-1/4\pmod R\), hence \((u/R)=-1\); since \(u=hr^2\),
+\((h/p)=-1\).  In M, \(r\equiv-s\pmod R\), so
+\((r/p)=(r/R)=-(s/R)=-(s/p)\), proving the last claim.  The reciprocity and
+supplementary laws used here are stated in Hatcher
+\cite[Section 6.4]{Hatcher}.
+\end{proof}
+
+For the ordered reciprocal roots \(t_i=p/x_i\), write
+\(f(T)=\prod_i(T-t_i)\) and \(d_i=f'(t_i)\).  The roots are simple.  In E,
+\(\kappa-r=((p-R)r+s)/R>0\), \(p\kappa>s\), and \(pr>s\).  In M,
+\(p\lambda>r,s\); equality \(r=s\) would force \(r=s=1\), whence
+\(R\mid2\), impossible for the positive integer \(R\equiv3\pmod4\).
+
+\begin{theorem}[Complete prime-local fibre algebra]\label{thm:local-fibre}
+Choose and retain one embedding \(\ii\mapsto i_p\in\Q_p\).  The complete
+affine fibre of EZ4 over the reciprocal suspension EZ25 has coordinate algebra
+\begin{equation}
+ \boxed{\mathcal A_{p,A,u}=
+ \Q_p\times\prod_{i=1}^3
+ \Q_p[\xi_i]/(\xi_i^2-d_i^{-1}).}                     \tag{EZ28f}
+\end{equation}
+It is reduced of dimension seven and has seven geometric points.  For an
+original state its field-factor type is
+\begin{equation}
+ \boxed{
+ E:\ \mathcal A_{p,A,u}\simeq\Q_p^3\times K_{\rm ram}^2,
+ \qquad
+ M:\ \mathcal A_{p,A,u}\simeq\Q_p^3\times K_{\rm unr}^2.} \tag{EZ28g}
+\end{equation}
+Here the two ramified factors for a fixed E state are isomorphic, but the
+field is state-dependent and no canonical identification is asserted;
+\(K_{\rm unr}\) is the unique unramified quadratic extension of \(\Q_p\).
+In either channel there are exactly three \(\Q_p\)-rational affine points.
+\end{theorem}
+
+\begin{proof}
+Write the marked factor pair as
+\(L=\xi U+bV\), \(C=cU^3+dU^2V+eUV^2+f_0V^3\).  If \(\xi\ne0\), the identity
+\(LC=V\prod_j(U-t_jV)\) forces, for one unique label \(i\),
+\[
+ L=\xi(U-t_iV),\qquad
+ C=\xi^{-1}V\prod_{j\ne i}(U-t_jV).
+\]
+Since \(b=-\xi t_i\), the retained resultant condition is exactly
+\[
+ 1=C(-b,\xi)=\xi^2\prod_{j\ne i}(t_i-t_j)=\xi^2d_i.
+\]
+Conversely either root of \(\xi^2=d_i^{-1}\) reconstructs the unique source
+point by EZ13.  At \(\xi=0\), the four target equations successively force the
+single point EZ26.  The source Jacobian is the constant \(-2\), a \(p\)-adic
+unit, so all factors are reduced.  This proves EZ28f.
+
+For E put \(H=hrs\kappa\).  In the original order
+\begin{equation}
+ (t_1,t_2,t_3)=H^{-1}(p\kappa,pr,s),                    \tag{EZ28h}
+\end{equation}
+and direct subtraction gives
+\begin{equation}
+ (d_1,d_2,d_3)=H^{-2}\bigl(
+ p(\kappa-r)(p\kappa-s),
+ -p(\kappa-r)(pr-s),
+ (p\kappa-s)(pr-s)\bigr).                             \tag{EZ28i}
+\end{equation}
+The identity \(pD+1=4hr\kappa\) makes \(\kappa\) a unit.  If
+\(p\mid\kappa-r\), it would give \(4hr^2\equiv1\pmod p\), contradicting
+\((h/p)=-1\).  Hence
+\begin{equation}
+ (v_p(d_1),v_p(d_2),v_p(d_3))=(1,1,0),\qquad
+ \frac{d_1}{d_2}\equiv-1,\quad d_3\equiv16\pmod p.    \tag{EZ28j}
+\end{equation}
+Because \(-1\) is a square in \(\Q_p\), the first two quadratic factors are
+isomorphic ramified fields and the third splits.
+
+For M put \(H=hrs\lambda\).  Then
+\begin{equation}
+ (t_1,t_2,t_3)=H^{-1}(p\lambda,r,s),\qquad
+ (d_1,d_2,d_3)\sim(rs,r(r-s),s(s-r))\pmod p,           \tag{EZ28k}
+\end{equation}
+where the omitted common factor \(H^{-2}\) is a square unit.  By EZ28e,
+\(d_1\) is a nonsquare unit, while
+\(d_1d_2d_3\sim-r^2s^2(r-s)^2\) is a square.  Exactly one of labels \(2,3\)
+is square and the other is nonsquare; the complement \(r\leftrightarrow s\)
+exchanges those labels.  Thus one finite quadratic splits and two give the
+same unramified quadratic field.  Adding the infinity factor proves EZ28g and
+the count of three rational points.  The square-unit lift and the
+ramified/unramified classification used here are the elementary Hensel and
+local-extension results in Milne \cite[Chapter 7]{Milne}; explicitly, a unit
+square root lifts by
+\[
+ b_{n+1}=b_n+p^nt,\qquad
+ t\equiv-(b_n^2-z)p^{-n}(2b_n)^{-1}\pmod p.
+\]
+\end{proof}
+
+\begin{theorem}[Exact integral root order and one-prime loss]
+Let \(\mathcal O_E\) and \(\mathcal O_M\) be the images of
+\(\Z_p[T]/(f)\) under evaluation at the ordered roots.  Then
+\begin{equation}
+ \boxed{\mathcal O_E=
+ \{(z_1,z_2,z_3)\in\Z_p^3:z_1\equiv z_2\pmod p\},
+ \qquad \mathcal O_M=\Z_p^3.}                          \tag{EZ28l}
+\end{equation}
+The normalization quotient and conductor are
+\begin{equation}
+ 0\longrightarrow\mathcal O_E\longrightarrow\Z_p^3
+ \xrightarrow{z_1-z_2\bmod p}\F_p\longrightarrow0,
+ \qquad
+ \mathfrak f_E=p\Z_p\times p\Z_p\times\Z_p.          \tag{EZ28m}
+\end{equation}
+The sequence has no \(\Z_p\)-linear right inverse.  For any same-prime E and M
+states, the unique labelled quadratic interpolations \(F(t_i^E)=t_i^M\) and
+\(G(t_i^M)=t_i^E\) satisfy
+\begin{equation}
+ (v_p(F_0),v_p(F_1),v_p(F_2))=(0,-1,-1),\qquad
+ G\in\Z_p[T],\qquad pF(T)\equiv cT(T-4)\pmod p         \tag{EZ28n}
+\end{equation}
+for a nonzero \(c\in\F_p\).  Their composition congruences are divisibilities
+in \(\Q_p[T]\), not generally in \(\Z_p[T]\).
+\end{theorem}
+
+\begin{proof}
+In E, EZ28h--j give
+\(v_p(t_1-t_2)=1\), the other two difference valuations zero, and
+\((t_1,t_2,t_3)\equiv(0,0,4)\pmod p\).  Evaluation therefore forces the
+congruence in EZ28l.  Conversely, for a tuple satisfying it, the polynomial
+\[
+ L(T)=z_1+\frac{z_2-z_1}{t_2-t_1}(T-t_1)
+\]
+is integral, and
+\[
+ L(T)+\frac{z_3-L(t_3)}{(t_3-t_1)(t_3-t_2)}
+             (T-t_1)(T-t_2)
+\]
+is an integral interpolant.  In M all three differences are units, so the
+Vandermonde interpolation is integral and surjective.  The quotient map in
+EZ28m is therefore exact.  An element of \(\Z_p^3\) multiplies all of
+\(\Z_p^3\) into \(\mathcal O_E\) exactly when its first two coordinates are
+divisible by \(p\), proving the conductor formula.  A right inverse
+\(\F_p\to\Z_p^3\) would have \(p\)-torsion image, but \(\Z_p^3\) is
+torsion-free.
+
+For interpolation write
+\[
+ F(T)=\sum_i t_i^M
+ \frac{(T-t_j^E)(T-t_k^E)}{(t_i^E-t_j^E)(t_i^E-t_k^E)}.
+\]
+The E denominators have valuations \((1,1,0)\), whereas the M roots have
+valuations \((1,0,0)\).  Multiplication by \(p\) leaves only the \(i=2\) term
+modulo \(p\), giving the last congruence in EZ28n and the linear and quadratic
+valuations \(-1\).  The three contributions to the constant term have
+valuations \(1,0,2\); the unique minimum cannot cancel, so \(v_p(F_0)=0\).
+All M difference denominators are units, proving \(G\in\Z_p[T]\).  Each
+composition fixes three distinct roots, hence
+\(f_E\mid G(F(T))-T\) and \(f_M\mid F(G(T))-T\) in \(\Q_p[T]\).  The exact
+denominator just proved prevents upgrading this assertion in general to
+\(\Z_p[T]\).
+\end{proof}
+
+\begin{corollary}[The same rational point count hides different specialization]
+For E,
+\begin{equation}
+ v_p(\sigma_2,\sigma_3,\Disc f)=(1,2,2),\qquad
+ \bar f=T^2(T-4).                                      \tag{EZ28o}
+\end{equation}
+The four signed branches over \(t_1,t_2\) have
+\begin{equation}
+ (v_p(\xi),v_p(y_0),v_p(z_0),v_p(w_0))
+ =(-1/2,1/2,1,1),                                      \tag{EZ28p}
+\end{equation}
+so they escape the affine integral chart.  The reduced special fibre consists
+exactly of
+\begin{equation}
+\begin{aligned}
+ &(0,-4,56i_p,-704),\\
+ &(1/4,-4-4i_p,32+48i_p,-1152-384i_p),\\
+ &(-1/4,-4+4i_p,-32+48i_p,-1152+384i_p).
+\end{aligned}                                             \tag{EZ28q}
+\end{equation}
+For M, \(v_p(\sigma_2,\sigma_3,\Disc f)=(0,1,0)\); all seven geometric
+branches are integral and remain distinct.  In both channels exactly three
+special-fibre points are \(\F_p\)-rational.  The M roots have distinct
+reductions and all derivatives are units; their derivative residues need not
+be pairwise distinct.
+\end{corollary}
+
+\begin{proof}
+For E, \(\kappa+r=sD\), \(D\) is a unit, and the elementary symmetric
+expressions from EZ28h give the valuations in EZ28o.  EZ28j and the inverse
+EZ13 have unique lowest-valuation terms
+\(-i_p/\xi\), \(3i_p/\xi^2\), and \(-4/\xi^2\), proving EZ28p.
+Reduction has \(t_3=4\), \(d_3=16\), so \(\xi=\pm1/4\); substitution in
+EZ13 and EZ26 gives EZ28q.  The double root zero has no finite inverse because
+\(\xi^2\bar f'(0)=1\) is impossible.  For M, EZ28k has three distinct root
+reductions and unit derivatives, proving the remaining assertions.  For
+example, the valid state
+\(p=5,(A,u,R,h,r,s,\lambda,H)=(2,1,3,1,1,2,1,2)\) has root residues
+\((0,3,1)\) but derivative residues \((3,1,3)\), so no stronger distinctness
+claim is made.
+\end{proof}
+
+The conductor in EZ28m is the conductor of an integral root order in its
+normalization.  It is not the fixed complex weighted operator of EZ29--35.
+The rational interpolation proves an exact morphism between already occupied
+channel targets; it does not create a missing source state.
+
+\section{A same-prime negative-square target change}
+
+Return to an original E state and put
+\begin{equation}
+ D=\frac{4u+1}{R},\qquad v=hs^2,\qquad
+ \alpha=v-R,\qquad\beta=v-D.                           \tag{EZ28r}
+\end{equation}
+The retained identities are
+\begin{equation}
+ h\mid\alpha\beta-1,\qquad p\equiv\alpha\pmod h,
+ \qquad p\beta\equiv1\pmod h.                         \tag{EZ28s}
+\end{equation}
+
+\begin{theorem}[Negative-four-square channel transfer]
+Suppose \(\alpha=-4c^2\) or \(\beta=-4c^2\) for an integer \(c>0\).  Then
+\(h\equiv3\pmod4\) and \(\gcd(h,c)=1\).  Put \(j=(h+1)/4\).  On the exact
+selected-word domain \(c\mid j\), define
+\begin{equation}
+ Q=h,\qquad
+ U=\begin{cases}c^2,&\alpha=-4c^2,\\(j/c)^2,&\beta=-4c^2,\end{cases}
+ \qquad R_M=\frac{p+4U}{h},\qquad A_M=\frac{p+R_M}{4}.  \tag{EZ28t}
+\end{equation}
+Then \((p,A_M,R_M,U)\) is an original M state.  With
+\(g_M=\gcd(j,U)\), its complete normalization and ordered denominators are
+\begin{equation}
+ h_M=\frac{g_M^2}{U},\quad r_M=\frac{U}{g_M},\quad
+ \lambda_M=\frac{j}{g_M},\quad s_M=R_M\lambda_M-r_M,   \tag{EZ28u}
+\end{equation}
+\begin{equation}
+ \boxed{(A_M,\;p h_Ms_M\lambda_M,\;p h_Mr_M\lambda_M).} \tag{EZ28v}
+\end{equation}
+Writing \(j=cm\) and \(d=\gcd(c,m)\), the alpha branch has
+\((h_M,r_M,\lambda_M)=(d^2,c/d,m/d)\), while the beta branch has
+\((d^2,m/d,c/d)\).  Thus \(h_M=d^2\) is a square.  In particular, every
+already-existing E state on \(\alpha=-4\) or \(\beta=-4\) returns to M, with
+no bound on the other shape coordinate.  This last statement neither produces
+source states on those lines nor asserts that there are infinitely many.
+\end{theorem}
+
+\begin{proof}
+If \(\alpha=-4c^2\), then \(R=hs^2+4c^2\equiv3\pmod4\).  If
+\(\beta=-4c^2\), then \(D=hs^2+4c^2\), and
+\(RD=4hr^2+1\equiv1\pmod4\) with \(R\equiv3\pmod4\), so
+\(D\equiv3\pmod4\).  In either case \(s\) is odd and \(h\equiv3\pmod4\).
+Equation EZ28s makes \(h\) coprime to \(c\).
+
+In the alpha branch \(h\mid p+4c^2\).  In the beta branch,
+\(-4pc^2\equiv1\pmod h\); since \(4j\equiv1\pmod h\) and \(c\mid j\),
+\(h\mid p+4(j/c)^2\).  Hence \(R_M\) is integral.  The original alpha
+inequality gives \(4U<p-h<(h-1)p\); in beta,
+\(4U\le(h+1)^2/4<2h(h-1)<p(h-1)\).  Thus \(0<R_M<p\).  Moreover
+\(hR_M\equiv1\pmod4\), so \(R_M\equiv3\pmod4\) and
+\(p/4<A_M<p/2\).
+
+Since \(p=hR_M-4U\),
+\[
+ A_M=jR_M-U,\qquad A_M+U=jR_M,
+\]
+and \(U\mid j^2\) gives \(U\mid A_M^2\).  This is exactly the original M
+gate.  Any common divisor of \(R_M,U\) divides \(p\), while
+\(0<R_M<p\), so \(\gcd(R_M,U)=1\).  It follows that
+\(\gcd(A_M,U)=\gcd(j,U)=g_M\), and direct substitution proves EZ28u,
+\(A_M=h_Mr_Ms_M\), \(U=h_Mr_M^2\), and
+\(r_M+s_M=R_M\lambda_M\).  These identities prove the original primitive
+normalization and EZ28v.  The formulas with \(j=cm\) follow by taking
+\(d=\gcd(c,m)\).
+\end{proof}
+
+The inverse fibres are also exact.  In the alpha branch put
+\(N=(p+4c^2)/h\).  For every positive divisor \(s\mid N\), set
+\begin{equation}
+ k=N/s,\qquad r=(s+k)/4,\qquad R_s=hs^2+4c^2.          \tag{EZ28w}
+\end{equation}
+The complete source fibre consists precisely of those divisors for which
+\begin{equation}
+ s+k\equiv0\pmod4,\qquad\gcd(r,s)=1,\qquad R_s<p,
+ \qquad\boxed{R_s\mid4hr^2+1}.                         \tag{EZ28x}
+\end{equation}
+The boxed condition is the original E gate and cannot be omitted.  With
+\(D_s=(4hr^2+1)/R_s\), it gives
+\(\kappa=sD_s-r=(pr+s)/R_s\); conversely these formulas reconstruct the
+entire original E state and \(\alpha=-4c^2\).  At \(p=5209,h=95,c=2\), the
+candidate \(s=5,k=11,r=4\) passes the other tests but has
+\(R_s=2391\nmid6081=4hr^2+1\), proving that the gate is material.
+
+In the beta branch put
+\begin{equation}
+ F_0=\frac{4c^2p+1}{h},\qquad D_s=hs^2+4c^2,\qquad
+ \Delta_s=s^2(D_s^2-p)-F_0.                            \tag{EZ28y}
+\end{equation}
+For \(1\le s\le\lfloor(p-1)/(2h)\rfloor\), retain exactly the positive
+squares \(k^2=\Delta_s\) for which \(sD_s-k\) is positive and even, put
+\(r=(sD_s-k)/2\), \(\kappa=(sD_s+k)/2\), and retain the original coprimality
+and first-half inequalities.  The identity
+\(4hr\kappa=pD_s+1\) then proves both directions, including the original E
+divisibility; there is no omitted gate in this branch.
+
+Finally, equality of full selected targets first recovers the common
+\(Q=4h_Mr_M\lambda_M-1=h\).  For this fixed \(h\), an alpha label \(c_1\)
+and beta label \(c_2\) select the same \(U\) exactly when
+\begin{equation}
+ c_1c_2=j.                                              \tag{EZ28z}
+\end{equation}
+Different sources in one fibre remain distinct until a stated pushforward;
+the kernel of that pushforward is generated by their same-target differences.
+The complete independent review and corrected build are preserved in
+\cite{Turn7Fabel}.
+
+\section{The complete fixed-cofactor middle fibre}
+
+The two selected square words above belong to a larger finite fibre.  Keeping
+the original E-state variables fixed, suppose \(h\equiv3\pmod4\), and put
+
+\begin{equation}
+ j=\frac{h+1}{4},\qquad
+ \mathcal U_{p,h}=\{U\in\mathbb Z_{>0}:U\mid j^2,\ h\mid p+4U\}.
+                                                               \tag{EZ28P}
+\end{equation}
+
+\begin{theorem}[Complete fixed-\(Q\) middle fibre]
+For each \(U\in\mathcal U_{p,h}\), define
+\begin{align}
+ R_U&=\frac{p+4U}{h},& A_U&=\frac{p+R_U}{4},&g_U&=\gcd(j,U),\notag\\
+ h_U&=\frac{g_U^2}{U},&r_U&=\frac{U}{g_U},&
+ \lambda_U&=\frac{j}{g_U},&s_U&=R_U\lambda_U-r_U.       \tag{EZ28Q}
+\end{align}
+Then \((A_U,R_U,U,h_U,r_U,s_U,\lambda_U)\) is an original M state
+at \(p\), and its normalized cofactor is
+
+\begin{equation}
+ Q_U=4h_Ur_U\lambda_U-1=h,                              \tag{EZ28R}
+\end{equation}
+
+and its ordered ES denominators are
+
+\begin{equation}
+ \boxed{\left(A_U,\;p h_Us_U\lambda_U,\;
+                    p h_Ur_U\lambda_U\right).}          \tag{EZ28S}
+\end{equation}
+
+The assignment is a bijection from \(\mathcal U_{p,h}\) onto all original M
+states at \(p\) whose normalized cofactor is \(Q=h\).
+\end{theorem}
+
+\begin{proof}
+An original E state has \(h\le A<p/2\), so \(p>2h\); here \(h\ge3\).
+Since \(U\mid j^2\),
+
+\[
+ 4U\le4j^2=\frac{(h+1)^2}{4}<2h(h-1)<p(h-1).
+\]
+
+Hence \(0<R_U<p\).  Moreover \(hR_U=p+4U\equiv1\pmod4\); because
+\(p\equiv1\pmod4\) and \(h\equiv3\pmod4\),
+\(R_U\equiv3\pmod4\).  Thus \(A_U\) is integral and
+\(p/4<A_U<p/2\).
+
+Prime by prime, \(U\mid j^2\) implies \(g_U^2/U\in\mathbb Z_{>0}\).
+The definitions give
+
+\[
+ h_Ur_U=g_U,\qquad h_Ur_U^2=U,\qquad
+ h_Ur_U\lambda_U=j,
+\]
+
+and
+
+\[
+ R_Uj-U=\frac{R_U(h+1)}4-U=\frac{p+R_U}{4}=A_U.
+\]
+
+Consequently \(h_Ur_Us_U=A_U\), \(r_U+s_U=R_U\lambda_U\),
+\(A_U+U=R_Uj\), and \(U\mid A_U^2\).  Also
+\(\gcd(r_U,\lambda_U)=1\).  If a prime divided both \(r_U\) and \(s_U\),
+it would divide \(R_U\), then \(hR_U-4U=p\); this is impossible because
+\(0<R_U<p\).  Hence \(\gcd(r_U,s_U)=1\).  These are precisely the original
+M gates, and EZ28R and EZ28S follow by substitution.
+
+Conversely, let an original M state have cofactor \(Q=h\), written
+
+\[
+ A_M=h_Mr_Ms_M,\qquad U=h_Mr_M^2,\qquad
+ \lambda_M=\frac{r_M+s_M}{R_M}.
+\]
+
+Then
+
+\[
+ j=\frac{h+1}{4}=h_Mr_M\lambda_M,qquad
+ \frac{j^2}{U}=h_M\lambda_M^2\in\mathbb Z_{>0},
+\]
+
+so \(U\mid j^2\).  Furthermore
+
+\[
+ A_M+U=h_Mr_M(r_M+s_M)=R_Mj,qquad
+ p+4U=4(A_M+U)-R_M=R_Mh.
+\]
+
+Thus \(U\in\mathcal U_{p,h}\).  The primitive normalization gives
+\(\gcd(j,U)=h_Mr_M\), and EZ28Q recovers
+\((h_M,r_M,\lambda_M,s_M)\) exactly.  The original middle divisor \(U\)
+separates distinct states, proving bijectivity.
+\end{proof}
+
+\begin{corollary}[Exact negative-square slices and emptiness]
+If the existing E state has \(\alpha=-4c^2\) or \(\beta=-4c^2\), then
+
+\begin{align}
+ \alpha=-4c^2:\quad
+ \mathcal U_{p,h}&=\{U\mid j^2:U\equiv c^2\pmod h\},\notag\\
+ \beta=-4c^2:\quad
+ \mathcal U_{p,h}&=\{U\mid j^2:c^2U\equiv j^2\pmod h\}. \tag{EZ28T}
+\end{align}
+
+The selected words \(U=c^2\) and \(U=(j/c)^2\) exist exactly when
+\(c\mid j\), but that divisibility is not necessary for the complete fibre to
+be nonempty.  With
+
+\[
+ \Delta_h=\{U\bmod h:U\mid j^2\},
+\]
+
+the exact criterion is
+
+\begin{equation}
+ \boxed{\mathcal U_{p,h}=\varnothing\iff
+ -p\,4^{-1}\pmod h\notin\Delta_h.}                    \tag{EZ28U}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+In the alpha branch, \(p\equiv-4c^2\pmod h\), so the defining congruence
+\(p+4U\equiv0\pmod h\) is equivalent to \(U\equiv c^2\pmod h\).
+In the beta branch, \(-4c^2p\equiv1\pmod h\).  Multiplying the defining
+congruence by \(4c^2\) and using \(4j\equiv1\pmod h\) yields
+\(c^2U\equiv j^2\pmod h\); every step is reversible because
+\(\gcd(4c^2,h)=1\).  Formula EZ28U is the defining congruence solved for
+\(U\bmod h\).
+\end{proof}
+
+Let \(\mathcal E_p\) be the original E-state set at a hard prime.  After the
+proved diagonal return and every fixed-\(Q\) return, the exact residual source
+is
+
+\begin{equation}
+ \boxed{\mathcal E_p^{\rm res}=
+ \{e\in\mathcal E_p:R\ne D,
+ \quad [h\not\equiv3\pmod4\text{ or }\mathcal U_{p,h}=\varnothing]\}.} \tag{EZ28V}
+\end{equation}
+
+The shape-rigidity theorem of \cite{Turn7} states that radius at most seven
+is the diagonal profile \((\alpha,\beta)=(-1,-1)\), while the only
+nonsingular radius-eight profile is \((8,-4,11)\).  For the latter,
+\(j=3\) and \(U=9\in\mathcal U_{p,11}\), so EZ28Q gives
+
+\begin{equation}
+ (h_U,r_U,s_U,\lambda_U)=\left(1,3,\frac{p+3}{11},1\right),
+ \quad A_U=\frac{3(p+3)}{11},\quad R_U=\frac{p+36}{11}. \tag{EZ28W}
+\end{equation}
+
+Therefore every state remaining in EZ28V has
+\(\max(|\alpha|,|\beta|)\ge9\).  If such a residual state still has a
+negative-square coordinate, EZ28T fails for every divisor \(U\mid j^2\), a
+strict finite exclusion stronger than failure of the selected word.
+
+This improvement is strict.  At the certified prime \(p=41161\), the E state
+
+\[
+ (A,R,u,h,r,s,\kappa,D,\alpha,\beta)
+ =(10318,111,9678284,11,938,1,347829,348767,-100,-348756)
+\]
+
+has \(j=3\), \(c=5\nmid j\), but \(U=3\in\mathcal U_{41161,11}\).
+The resulting M state and exact decomposition are
+
+\begin{equation}
+\begin{aligned}
+ (A_U,R_U,U,h_U,r_U,s_U,\lambda_U)
+   &=(11226,3743,3,3,1,3742,1),\\
+ \boxed{\frac4{41161}}
+   &=\boxed{\frac1{11226}+\frac1{462073386}+\frac1{123483}}.
+\end{aligned}                                             \tag{EZ28X}
+\end{equation}
+
+Primality follows from the Lucas witness \(22\): \(22^{41160}\equiv1\)
+modulo \(41161\), while for \(q=2,3,5,7\) the residues
+\(22^{41160/q}\) are \(41160,40429,26424,13707\), each with predecessor
+coprime to \(41161\).  Conversely, \(p=3049,h=31,j=8,c=6\) has
+\(\{U\bmod31:U\mid64\}=\{1,2,4,8,16\}\) but \(c^2\equiv5\pmod{31}\);
+its alpha slice is empty.  Thus a negative-square coordinate alone does not
+force a fixed-(Q) return.  The executable exact comparison with every
+recorded original M state is retained in \cite{Turn7Fabel}.
+
+\input{CAPACITY_COMPLETION}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fixed-target-capacity-partition.pdf}
+\caption{The exact inverse in Theorem~\ref{thm:capacity}. Starting from a
+word \(W\), equations (9)--(10) recover \(n,V,\ell\), while the signs and
+domains separate the canonical, companion and finite branches. The sharp
+grade bound belongs only to the finite branch.}
+\label{fig:capacity-partition}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/capacity-sharp-bound.pdf}
+\caption{Every finite template with \(t\le120\), plotted against the proved
+boundary in Theorem~\ref{thm:bound}. The right panel retains the exact
+\(p=825241\) nonsquare return from equations (17)--(18). The points are a
+reproducible enumeration by
+\texttt{tools/generate\_20260920\_illustrations.py}; the curve is the proved
+bound, not an empirical fit.}
+\label{fig:capacity-bound}
+\end{figure}
 
 \section{The exact bridge to a fixed weighted conductor}
 
@@ -417,6 +1547,202 @@ Invertible linear maps preserve fibres, escaping sequences, convergence and
 deck equations, proving the final assertion.
 \end{proof}
 
+The coefficient hypersurface itself also transports, with no loss of its
+arithmetic coordinates.  Define the two inverse matrices
+\begin{equation}
+ R_{\mathcal U}:=\Phi_*^{-1}=KV_*^{\mathsf T},\qquad
+ R_{\mathcal W}:=\Psi_*^{-1}=KV_*^{\mathsf T}B_{v,*}^{-1}.       \tag{EZ34a}
+\end{equation}
+For \(\mathcal C\in\{\mathcal U,\mathcal W\}\), let
+\(\ell^{\mathcal C}_0,\ell^{\mathcal C}_2,
+\ell^{\mathcal C}_3,\ell^{\mathcal C}_4\) be the four row covectors of
+\(R_{\mathcal C}\), in the retained coefficient order
+\((u_0,u_2,u_3,u_4)\).
+
+\begin{theorem}[Exact equation in the fixed zeta receiving coordinates]
+In either fixed conductor plane, the transported arithmetic image is the
+irreducible quartic hypersurface
+\begin{align}
+ G_{\mathcal C}(q):={}&
+ 625\ell^{\mathcal C}_0(q)\ell^{\mathcal C}_4(q)^3
+ -125\ell^{\mathcal C}_3(q)\ell^{\mathcal C}_4(q)^2\nonumber\\
+ &+25\ell^{\mathcal C}_2(q)\ell^{\mathcal C}_3(q)^2
+                    \ell^{\mathcal C}_4(q)
+ -4\ell^{\mathcal C}_3(q)^4=0.                       \tag{EZ34b}
+\end{align}
+On the open chart where
+\(\ell^{\mathcal C}_0\ell^{\mathcal C}_3
+\ell^{\mathcal C}_4\ne0\), its exact inverse arithmetic coordinates are
+\begin{align}
+ p&=-5\frac{\ell^{\mathcal C}_4}{\ell^{\mathcal C}_3},&
+ s_1&=-\frac1{\ell^{\mathcal C}_0}
+          +5\frac{\ell^{\mathcal C}_4}{\ell^{\mathcal C}_3},\nonumber\\
+ s_2&=\frac{4(\ell^{\mathcal C}_3)^2}
+              {25\ell^{\mathcal C}_0\ell^{\mathcal C}_4},&
+ s_3&=-\frac{\ell^{\mathcal C}_3}
+             {5\ell^{\mathcal C}_0}.                 \tag{EZ34c}
+\end{align}
+The reduced singular support of EZ34b is the codimension-two linear plane
+\begin{equation}
+ \ell^{\mathcal C}_3=\ell^{\mathcal C}_4=0.           \tag{EZ34d}
+\end{equation}
+Finally, the original conductor carries these equations and recovered
+coordinates identically:
+\begin{equation}
+ G_{\mathcal W}(T_{A,*}q)=G_{\mathcal U}(q),\qquad
+ \ell_j^{\mathcal W}(T_{A,*}q)=\ell_j^{\mathcal U}(q)
+ \quad(j=0,2,3,4).                                    \tag{EZ34e}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+For a coefficient column \(u\), EZ34a gives
+\(R_{\mathcal U}\Phi_*u=u\) and
+\(R_{\mathcal W}\Psi_*u=u\).  Thus each retained covector recovers the
+corresponding literal coefficient, and substituting these four identities
+into EZ9 and EZ9c proves EZ34b--EZ34c.  An invertible linear change of
+coordinates preserves irreducibility and carries the reduced singular plane
+\(u_3=u_4=0\) exactly to EZ34d.  From
+\(T_{A,*}=\Psi_*\Phi_*^{-1}\) one has
+\(R_{\mathcal W}T_{A,*}=R_{\mathcal U}\); applying each row and then the
+quartic polynomial proves EZ34e.
+\end{proof}
+
+We now write every receiver covector in EZ34b without hiding the inverse
+matrix.  Use the fixed Time order
+\((\mathrm M,\mathrm N,\mathrm T,\mathrm E)\), write
+\(m_j=\mu_{v+j}\), and put
+\[
+ \alpha_2=\binom{v+2}{2},\qquad
+ \alpha_3=\binom{v+3}{3},\qquad
+ \beta_{23}=\binom{v+3}{2}.
+\]
+For a receiver coefficient column
+\(\mathbf r=(r_0,r_1,r_2,r_3)^{\mathsf T}\), define successively
+\begin{align}
+ c_3&=\frac{r_3}{\alpha_3m_0},\nonumber\\
+ c_2&=\frac{r_2-\beta_{23}m_1c_3}{\alpha_2m_0},\nonumber\\
+ c_1&=\frac{r_1-(v+2)m_1c_2-(v+3)m_2c_3}{(v+1)m_0},\nonumber\\
+ c_0&=\frac{r_0-m_1c_1-m_2c_2-m_3c_3}{m_0},          \tag{EZ34f}\\
+ \xi_a(\mathbf r)&=c_0+c_1\rho_{*,a}+c_2\rho_{*,a}^2
+                         +c_3\rho_{*,a}^3
+ \quad(a=\mathrm M,\mathrm N,\mathrm T,\mathrm E).   \tag{EZ34g}
+\end{align}
+The four literal coefficient-recovery forms are
+\begin{align}
+ U_0={}&\ii\xi_{\mathrm N}
+       +\frac{\xi_{\mathrm T}+\xi_{\mathrm E}}{\sqrt2},\nonumber\\
+ U_2={}&-\xi_{\mathrm N}+(-1-\sqrt2\ii)\xi_{\mathrm T}
+       +(1-\sqrt2\ii)\xi_{\mathrm E},\nonumber\\
+ U_3={}&\frac{\ii}{2}\xi_{\mathrm M}-3\ii\xi_{\mathrm N}
+       +(2\sqrt2+6\ii)\xi_{\mathrm T}
+       +(-2\sqrt2+6\ii)\xi_{\mathrm E},\nonumber\\
+ U_4={}&13\xi_{\mathrm N}+(-34-19\sqrt2\ii)\xi_{\mathrm T}
+       +(34-19\sqrt2\ii)\xi_{\mathrm E}.            \tag{EZ34h}
+\end{align}
+Indeed EZ34f is forward substitution in
+\(B_{v,*}c=\mathbf r\), EZ34g is
+\(V_*^{\mathsf T}c\), and EZ34h is multiplication by the four rows of
+\(K\).  Hence \(U_j(\mathbf r)=\ell_j^{\mathcal W}(\mathbf r)\) exactly.
+In particular
+\begin{equation}
+ F_*(\mathbf r):=625U_0U_4^3-125U_3U_4^2
+             +25U_2U_3^2U_4-4U_3^4                 \tag{EZ34i}
+\end{equation}
+is the fully expanded-by-rows form of \(G_{\mathcal W}\); no coefficient
+has been fitted to an ES example.  It is nonzero and irreducible, has total
+degree four and retains the nonzero cubic term \(-125U_3U_4^2\).
+
+\begin{theorem}[Prime-marked receiver pair and polynomial selector]
+Assume
+\begin{equation}
+ F_*(\mathbf r)=0,qquad
+ U_0U_3U_4\Disc(H_{\mathbf r})\ne0,qquad
+ p=-\frac{5U_4}{U_3},                                \tag{EZ34j}
+\end{equation}
+where
+\[
+ H_{\mathbf r}(U,V)=U_0U^4+U^3V+U_2U^2V^2+U_3UV^3+U_4V^4.
+\]
+Then
+\begin{align*}
+ H_{\mathbf r}(U,V)&=(U-pV)Q_{\mathbf r,p}(U,V),\\
+ Q_{\mathbf r,p}(U,V)&=U_0U^3+(1+pU_0)U^2V\\
+ &\quad +(U_2+p+p^2U_0)UV^2
+ +(U_3+pU_2+p^2+p^3U_0)V^3.
+\end{align*}
+Put
+\[
+ \kappa=4U_0p^3+3p^2+2U_2p+U_3=h_{\mathbf r}'(p).
+\]
+It is nonzero by the discriminant hypothesis.  For each of the two choices
+\(A^2\kappa=1\), define
+\[
+ L_A=A(U-pV),\qquad C_A=A^{-1}Q_{\mathbf r,p}.
+\]
+Their six factor coordinates are
+\begin{equation}
+ (a,b,c,d,e,f)=
+ \left(A,-Ap,\frac{U_0}{A},\frac{1+pU_0}{A},
+ \frac{U_2+p+p^2U_0}{A},
+ \frac{U_3+pU_2+p^2+p^3U_0}{A}\right).               \tag{EZ34k}
+\end{equation}
+They satisfy, without a changed resultant convention,
+\begin{equation}
+ L_AC_A=H_{\mathbf r},\quad
+ \Res(L_A,C_A)=1,\quad ad+bc=1,
+ \quad4af-be=-\frac{F_*(\mathbf r)}{U_3^3}=0.         \tag{EZ34l}
+\end{equation}
+The corresponding original source points are
+\begin{align}
+ q_A(\mathbf r)=\Bigg(&A,-p-\frac{\ii}{A},
+ \frac{U_0}{A^3}+\frac{2p}{A}+\frac{3\ii}{A^2},\nonumber\\
+ &\frac{7\ii p^2}{A}
+ +\frac{U_2-17p+U_0p^2}{A^2}
+ -\frac{13\ii}{A^3}-\frac{2U_0}{A^4}\Bigg),          \tag{EZ34m}
+\end{align}
+and the two receiver-source points are \(z_A=\Psi_*q_A\).
+
+More intrinsically, let \(z\) be any of the eight points over \(\mathbf r\)
+under \(P_{\mathcal W,*}\), and decode
+\((A(z),Y(z),Z(z),\Omega(z))^{\mathsf T}=\Psi_*^{-1}z\).
+Then (z) is one of the two points marking (p) if and only if
+\begin{equation}
+ 5A(z)U_4(\mathbf r)-A(z)Y(z)U_3(\mathbf r)
+                    -\ii U_3(\mathbf r)=0.            \tag{EZ34n}
+\end{equation}
+Thus EZ34n selects exactly two states from the eight-point receiver fibre.
+\end{theorem}
+
+\begin{proof}
+Multiplication of \((U-pV)Q_{\mathbf r,p}\) reproduces the first four
+coefficients of \(H_{\mathbf r}\).  Its last residual is
+\(h_{\mathbf r}(p)=U_4F_*(\mathbf r)/U_3^4\), so it vanishes under EZ34j.
+The resultant orientation retained in the source is
+\[
+ \Res(A(U-pV),A^{-1}Q)=A^2Q(p,1)=A^2h_{\mathbf r}'(p)=1.
+\]
+Direct substitution of EZ34k gives \(ad+bc=1\) and
+\[
+ 4af-be=4U_3+5pU_2+5p^2+5p^3U_0
+       =-F_*(\mathbf r)/U_3^3,
+\]
+proving EZ34l.  Formula EZ34m is the full inverse of the Fable factor chart,
+already checked in EZ13, with no coordinate suppressed.
+
+For the selector, the marked root decoded from a source point is exactly
+\(t(z)=-Y(z)-\ii/A(z)\).  Equating it with
+\(p=-5U_4/U_3\) and multiplying by \(A(z)U_3\) gives EZ34n.  Distinctness
+of the four roots gives two signs over each root, so precisely two of the
+eight states satisfy it.
+\end{proof}
+
+Equations EZ34b and EZ34i are literal polynomial constraints in the fixed
+receiving coordinates.  They do not make the reference roots
+\(\rho_{*,j}\), the moments \(\mu_{v+j}\), or any zeros of a zeta or
+\(L\)-function equal to \(p,x,y,z\).  Their role is confined to the proved
+invertible coordinate matrices EZ29--EZ34h.
+
 For fixed \(s>0\) and centre \(c_*\), the receiving plane retains the norm
 \begin{equation}
  \|q\|_{\Gamma,*}^2=
@@ -428,6 +1754,53 @@ Its Meixner--Pollaczek weight, mass, recurrence and generating function are
 the exact specialization of DLMF 18.19.8--9, 18.22.8 and 18.23.7
 \cite{DLMF18}.  This metric makes the bridge quantitative; it does not make
 the four ES roots into zeta zeros.
+
+\input{FABLE_ES_TETRAHEDRON}
+
+\input{ODD_RECEIVER_ES_PULLBACK}
+
+\input{FIXED_INPUT_BOUNDARY_MONODROMY}
+
+\clearpage
+\section*{The original integral signed completion}
+
+The next proof works in the literal root basis \((p,x,y,z)\) over
+\(\mathbb Z_p\).  It retains the original arithmetic lattice rather than
+replacing a finite flat rank-eight algebra by an abstract vector space.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/integral-normalization-smith.pdf}
+\caption{The exact normalization matrix and all Smith factors in the exterior
+and middle channels.  The matrix, inverse lattice, quotient modules and
+specialization kernels are proved in the following sections.}
+\end{figure}
+
+\input{INTEGRAL_COMPLETION}
+
+\clearpage
+\section*{Defining-prime normalization, gluing and local characters}
+
+The general collision calculation below includes the separated exterior and
+middle orders as exact specializations and then keeps every additional
+closer-pair valuation.  Its translated chart is related to the original chart
+by a quadratic twist whose square class is retained.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/defining-prime-twist-gluing.pdf}
+\caption{The exact translated-chart quadratic twist, rank-\(2+6\) fibre
+product and collision normalization.  The displayed base extension is part
+of the map and is not discarded during descent.}
+\end{figure}
+
+\input{DEFINING_PRIME_CONTINUATION}
+
+\clearpage
+\input{INTEGRAL_NORMALIZATION_CROSSWALK}
+
+\clearpage
+\input{LOCAL_GALOIS_REPRESENTATION}
 
 \section{A root-algebra bridge and its exact projective obstruction}
 
@@ -447,7 +1820,7 @@ map.  Such a map exists exactly when the corresponding ordered cross ratios
 agree, up to the six values produced by relabelling.  This is the exact
 projective obstruction; failure of that stronger map does not erase EZ31--36.
 
-\section{Scope}
+\section{Scope of the quartic-to-conductor core}
 
 The new composite is
 \[
@@ -468,10 +1841,153 @@ witness exists for every \(p\).  The hypersurface \(G=0\) is not by itself an
 arithmetic occupancy theorem.  The fixed quartet and fixed conductor data do
 not vary with \(p,x,y,z\), and the construction proves no zero of the Riemann
 zeta function.  The signed-root monodromy group of order \(192\) belongs to the
-generic eight-sheet cover over \(\mathcal B\); it is not attributed to the
-seven-state boundary suspension.
+generic eight-sheet cover over \(\mathcal B\).  After restricting to a fixed
+intrinsic prime and to \(\mathcal B_p\),
+Theorem~\ref{thm:fixed-input-monodromy} gives the different order-\(48\) group
+and its rank-\(2+6\) sheet decomposition.  Neither group is
+attributed to the seven-state boundary suspension.  The finite completion
+EZ67 adds nonreduced collision fibres but leaves the original meromorphic
+inverse pole visible; its local paired-root map does not identify the global
+ES and zeta constructions.
 
-\begin{thebibliography}{9}
+\clearpage
+\section*{Illustrated guide to the new five-track continuation}
+
+The following three figures display the proved maps without replacing their
+coordinate formulas.  Tracks I--III refine the ES/Fable interfaces.  Tracks
+IV--V are RH-facing conditioning and certification interfaces and are not
+claims of progress toward ES occupancy.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/positive-real-receiving-divisor.pdf}
+\caption{The exact positive-real solution ray and its unique rank-three odd
+receiver.  The plotted polynomial is a locator; the rational isolating
+interval, Sturm count, nonzero minor and integral dichotomy are proved in
+Track~I, Sections~3--4.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/residue-trace-factorization.pdf}
+\caption{The perfect residue pairing reaches the trace pairing through the
+specific endomorphism \(M_{2\eta^3}\).  Track~II, Sections~3--5 prove the
+determinants, collision ranks, local algebra and nonconstant residue unit.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/residue-native-gram-bridge.pdf}
+\caption{The native orthogonal-polynomial multiplier and the stronger
+arbitrary-polynomial identity retaining its relation defect.  Track~III proves
+the multiplier, support hypothesis, resolvent error and defect term.}
+\end{figure}
+
+\clearpage
+\input{ES_RH_MULTI_CONTINUATION}
+
+\clearpage
+\section*{Arithmetic-frame and signed-descent continuation}
+
+The final continuation keeps four proof tracks separate: arithmetic
+nonsingularity of the ES receiving frame, a sharp paired native determinant
+return, finite heat-action remainders in the retained metric, and an exact
+finite-field signed-cover descent calculation.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/arithmetic-frame-sieve.pdf}
+\caption{The exhaustive valuation split and the three quadratic obstructions
+used to force receiving-frame nonsingularity.}
+\end{figure}
+\clearpage
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/determinant-heat-mechanism.pdf}
+\caption{The exact determinant-ratio identity, its sharp two-ratio
+consequence, and the two distinct heat actions with their proved remainder
+boundary.}
+\end{figure}
+\clearpage
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/finite-field-twist-descent.pdf}
+\caption{The original signed cover and its nonsquare twist for
+\((13;4,18,468)\) at \(q=61\), including the quadratic base-extension map and
+Frobenius action.}
+\end{figure}
+\clearpage
+
+\input{ES_RH_CONTINUATION_B}
+
+\clearpage
+\section{Cumulative scope and remaining arithmetic problem}
+
+Every theorem in this reader starts either from an actual positive integral
+Erd\H{o}s--Straus witness or from an explicitly stated algebraic, local or
+finite-dimensional input.  The integral normalization and finite-field
+descent theorems classify what happens after such a witness is present.  The
+three-character theorem proves receiving-frame nonsingularity on its stated
+residue classes conditional only on witness existence; failure of one of its
+characters does not imply singularity.  The determinant and heat estimates
+are exact finite-dimensional constraints in their retained metric and are not
+substituted for the assembled arithmetic action.
+
+The unresolved ES statement remains the original occupancy problem: for each
+hard prime, force at least one positive integral exterior or middle source.
+No finite signed fibre, normalization, nilpotent completion, conductor index,
+local Galois character, Gram determinant, heat remainder or CRT control family
+supplies that source by itself.  Likewise, none of the proved root-algebra,
+weighted-conductor or finite-field maps identifies an ES root with a
+nontrivial zero of the Riemann zeta function.
+
+\begin{thebibliography}{99}
+\small\raggedright
+
+\bibitem{ET}
+C. Elsholtz and T. Tao,
+\emph{Counting the number of solutions to the Erd\H{o}s--Straus equation on
+unit fractions},
+J. Aust. Math. Soc. 94 (2013), 50--105,
+\texttt{arXiv:1107.1010}, Section 2.
+The Type-I/Type-II coordinates used in EZ28a--d are traced to Propositions
+2.2 and 2.6.
+
+\bibitem{Hatcher}
+A. Hatcher,
+\emph{Topology of Numbers},
+American Mathematical Society, 2022, Section 6.4.
+Used only for the stated quadratic-reciprocity and supplementary laws; their
+specialization to the retained ES factors is proved in EZ28e.
+
+\bibitem{Dirichlet}
+A. V. Sutherland,
+\emph{18.785 Number Theory I, Lecture 18},
+Massachusetts Institute of Technology, 2017, Theorem 18.1.
+Used for Dirichlet's theorem in the two reduced arithmetic progressions of
+Theorems~\ref{thm:sharp} and \ref{thm:obstruct}; both progressions and their
+coprimality conditions are constructed explicitly before the theorem is
+applied.
+
+\bibitem{BL}
+M. Bright and D. Loughran,
+\emph{Brauer--Manin obstruction for Erd\H{o}s--Straus surfaces},
+Bull. London Math. Soc. 52 (2020), 746--761,
+\texttt{arXiv:1908.02526}, Corollary 1.3, Theorems 1.1 and 1.8--1.9,
+and Appendix A.
+Used for the cited antecedent character restrictions and the arithmetic
+surface context; every local specialization asserted here is proved in the
+reader.
+
+\bibitem{Milne}
+J. S. Milne,
+\emph{Algebraic Number Theory},
+course notes, version 3.08, 2020, Chapter 7, pp. 119--130.
+Used for Newton--Hensel lifting and the standard classification of unramified
+and Eisenstein quadratic extensions; the required digit lift is displayed in
+the proof of Theorem~\ref{thm:local-fibre}.
 
 \bibitem{ESC123}
 The Clankers,
@@ -483,12 +1999,33 @@ Used for the generic quartic product/resultant carrier, the ES incidence
 prime--denominator target, intrinsic-prime formula, image hypersurface and
 global-locus refinement are proved here.
 
+\bibitem{ESReader}
+The Clankers,
+\emph{Erd\H{o}s--Straus Project Reader},
+Zenodo record 21845035, version 69, 2026,
+\url{https://zenodo.org/records/21845035}.
+The three-dimensional transport reproduced in
+Theorem~\ref{thm:transported-raw-tetrahedron} is the theorem labelled
+\texttt{thm:Fable-ES-raw-tetrahedron-quarter-altitude} in the archived
+source; its exact checker is
+\texttt{verification/verify\_fable\_es\_raw\_tetrahedron.py}.
+
 \bibitem{Turn7}
 The Clankers,
 \emph{Small-shape rigidity and channel rescue},
 \texttt{../es-turn07-shape-rigidity-20260919/core.tex},
 20 September 2026.
 Used for EZ18--23, including every exterior gate and the marked-cubic inverse.
+
+\bibitem{Turn7Fabel}
+The Clankers,
+\emph{Prime-local Fabel fibres and same-prime negative-square channel
+transfers},
+\texttt{../es-turn07-fabel-arithmetic-bridge-20260920/corrected/workbench.tex},
+20 September 2026.
+The received 30-file packet and its hashes remain unchanged; the corrected
+build supplies the exact alpha inverse-fibre gate, the derivative-residue
+wording repair, and the full proofs used in EZ28a--z.
 
 \bibitem{SignedCover}
 The Clankers,
@@ -501,6 +2038,32 @@ nonproper locus, conductor square, signed evaluation and monodromy.  The frozen
 cumulative source hash is
 \texttt{bfb75ff468f35b71103ad2671e22f20fee0414df4a43d1dab5fc2d19aabbd1b6}.
 
+\bibitem{Input}
+The Clankers and the Split-Zero programme,
+\emph{Combined continuation: literal ES quartic, fixed-input monodromy,
+finite rank-eight completion and native error bounds},
+preserved source \texttt{received/combined-continuation-20260920.txt},
+20 September 2026.
+Used at the exact equation locators cited in the integral-completion proof;
+the preserved source and corrected public derivation remain separate.
+
+\bibitem{Reciprocal}
+The Clankers,
+\emph{Prime-local Fable fibres and same-prime negative-square channel
+transfers},
+\texttt{../es-turn07-fabel-arithmetic-bridge-20260920/corrected/workbench.tex},
+20 September 2026.
+Used for the reciprocal cubic and its seven-point chart, which the present
+reader relates to but does not identify with the literal quartic.
+
+\bibitem{Capacity}
+The Clankers,
+\emph{Fixed-target capacity completion},
+\texttt{../es-turn07-capacity-completion-20260920/workbench.tex},
+20 September 2026.
+Used for the complete same-grade channel return and sharp finite repair; it is
+not a universal occupancy theorem.
+
 \bibitem{DLMF18}
 T. H. Koornwinder, R. Wong, R. Koekoek, R. F. Swarttouw,
 and W. P. Reinhardt,
@@ -510,6 +2073,22 @@ Chapter 18,
 \url{https://dlmf.nist.gov/18.19.E9},
 \url{https://dlmf.nist.gov/18.22.E8},
 \url{https://dlmf.nist.gov/18.23.E7}.
+
+\bibitem{StacksFinite}
+The Stacks Project Authors,
+\emph{Integral and finite morphisms},
+Lemma 29.45.11, Tag \texttt{01WN},
+\url{https://stacks.math.columbia.edu/tag/01WN}.
+Used only for the standard implication that a finite morphism is proper; the
+rank-eight algebra itself is constructed explicitly in EZ67--70.
+
+\bibitem{StacksEtale}
+The Stacks Project Authors,
+\emph{Local structure of \(\acute{e}\)tale ring maps},
+Definition 10.144.1, Tag \texttt{00UB},
+\url{https://stacks.math.columbia.edu/tag/00UB}.
+Used for the standard derivative-unit criterion; the complete Jacobian in the
+present two-equation algebra is calculated in EZ70.
 
 \end{thebibliography}
 \end{document}

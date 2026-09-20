@@ -13,6 +13,20 @@ research/incoming/es-turn07b-exterior-atlas-20260919/** -text -whitespace
 research/incoming/es-turn07-shape-rigidity-20260919/** -text -whitespace
 research/incoming/es-fable-zeta-bridge-20260920/upstream/** -text -whitespace
 research/incoming/es-fable-zeta-bridge-20260920/output/pdf/*.pdf binary
+research/incoming/es-fable-zeta-bridge-20260920/figures/*.pdf binary
+research/incoming/es-fable-zeta-bridge-20260920/figures/*.png binary
+research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/corrected/figures/*.pdf binary
+research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/corrected/figures/*.png binary
+research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/** -text -whitespace
+research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/*.pdf binary
+research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/*.bundle binary
+research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/corrected/output/*.pdf binary
+research/incoming/**/*.pdf binary
+research/incoming/**/*.png binary
+research/incoming/**/*.zip binary
+research/incoming/**/*.bundle binary
+research/incoming/**/received/** -text -whitespace
+research/incoming/**/*.patch -text -whitespace
 /*.md text eol=lf
 polyclank/*.json text eol=lf
 polyclank/evidence/*.json -text

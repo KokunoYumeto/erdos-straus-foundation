@@ -1,0 +1,603 @@
+% Additive continuation. Do not overwrite the accepted SGT/NCT/TAC sources.
+\begingroup
+\providecommand{\rank}{\operatorname{rank}}
+\section{A polynomial forward bound for the full weighted conductor}
+\label{sec:WCF}
+
+The original Split-Zero programme and the deposited source notes retain
+their existing attribution \cite{human:globalization2026,human:splitzero2026}.
+The new calculation in this section acts on the literal SGT10 matrix. It
+improves its forward bound at ranks of order $a^2$. Its exact triangular
+determinant then controls every inverse exterior rank and supplies a
+two-sided four-endpoint comparison for the entire conductor block.
+
+\subsection{Original spaces, mass, phases and matrix}
+
+Fix the original hypothetical simple quartet, its original period and
+logarithm branch. Retain $0<\delta<1/2$, $\gamma>2$, and all original
+coefficients $a_{uw}$, including repeated contributions. Put
+\[
+\begin{gathered}
+ a=4l+1\ge9,\quad q=(a+1)^2,\quad q'=(a-7)^2,\quad
+ \beta_{n,u,w}=n/2+(2u-n)\delta+i(2w-n)\gamma,\\
+ E_A(z)=\sum_{u,w=0}^{8}a_{uw}e^{\beta_{8,u,w}z},\quad
+ \mu_n=E_A^{(n)}(0),\quad v=\operatorname{ord}_0E_A\le80,
+ \quad \mu_v\ne0,\quad A_{\rm abs}=\sum_{u,w=0}^{8}|a_{uw}|,\\
+ s\in\{1,a\},\quad b=s/2,\quad c_0=a/2,\quad c_1=a/2-4,
+ \quad N=D+v,\quad D\ge0.
+\end{gathered}\tag{WCF1}
+\]
+The symbol and its coefficients are fixed as $a$ varies. The Hermitian
+inner product is conjugate-linear in its first variable. The original
+polynomial norm, orthonormal frame, and leading coefficient are
+\[
+\begin{gathered}
+ dm_s(y)=\frac{(2\pi)^{s/2}2^{s/2}}{4\pi\Gamma(s/2)}
+       |\Gamma(s/4+iy/2)|^2\,dy,\quad M_s=(2\pi)^{s/2},\\
+ \|P\|_{s,c}^2=\int_{\mathbb R}|P(c+iy)|^2dm_s(y),\qquad
+ p_{0,s}=1,\quad p_{1,s}=y,\\
+ p_{n+1,s}=yp_{n,s}-n(n-1+s/2)p_{n-1,s},\quad
+ h_{n,s}=M_sn!(s/2)_n,\\
+ \phi_{n,s,c}(S)=\frac{p_{n,s}((S-c)/i)}{\sqrt{h_{n,s}}},\qquad
+ [S^n]\phi_{n,s,c}=\frac{i^{-n}}{\sqrt{h_{n,s}}},\qquad
+ \rho_n=\sqrt{\frac{n!}{(s/2)_n}}.
+\end{gathered}\tag{WCF2}
+\]
+The classical dictionary is
+$p_{n,s}(y)=n!P_n^{(s/4)}(y/2;\pi/2)$, with $dy=2\,d(y/2)$.
+The weight, norm, recurrence and generating function are respectively
+DLMF (18.19.8)--(18.19.9), (18.22.8), and (18.23.7)
+\cite{human:dlmf18}. In the generating function take
+$\lambda=s/4>0$, $x=y/2$, $\varphi=\pi/2$, and $z=t$, $|t|<1$.
+The two powers take their branches with value one at $t=0$; their product is
+\[
+ \sum_{n\ge0}\frac{p_{n,s}(y)}{n!}t^n
+   =(1+t^2)^{-s/4}e^{y\arctan t}.
+ \tag{WCF3}
+\]
+This also follows by multiplying WCF2's recurrence by $t^n/n!$ and
+solving $(1+t^2)\partial_t F=(y-(s/2)t)F$, $F(y,0)=1$.
+Thus the stated generating identity holds at the complex polynomial
+arguments below, without a change of phase or of the measure.
+
+For $\mathcal P_d=\mathbb C[S]_{\le d}$, $\mathcal P_{-1}=0$, the
+unscaled conductor map is
+\[
+ \mathcal T_A P(S')=\sum_{u,w=0}^{8}a_{uw}P(S'+\beta_{8,u,w}),\qquad
+ A_{D,s}:(\mathcal P_{D+v}/\mathcal P_{v-1},\|\cdot\|_{s,c_0,\rm quot})
+       \longrightarrow(\mathbb C[S']_{\le D},\|\cdot\|_{s,c_1}).
+ \tag{WCF4}
+\]
+Indeed $\mathcal T_A S^n=\sum_{j=v}^n\binom nj\mu_j S'^{n-j}$.
+For $n\ge v$ the leading coefficient is $\binom nv\mu_v\ne0$;
+for $n<v$ the image is zero. Successive elimination in degree proves
+that WCF4 is an isomorphism with precisely the displayed kernel.
+Its quotient frame is represented by
+$\phi_{v,s,c_0},\ldots,\phi_{D+v,s,c_0}$, the orthogonal complement
+of that full kernel. Set
+\[
+ w(t)=-i\arctan t=\tfrac12\log\frac{1-it}{1+it},\qquad
+ g(t)=t^{-v}e^{-4w(t)}E_A(w(t)),\quad
+ g(0)=(-i)^v\mu_v/v!,\quad g(t)=\sum_{j\ge0}g_jt^j.
+ \tag{WCF5}
+\]
+The singularity at zero is removable. The displayed logarithm is the
+analytic branch equal to zero there. Apply the finite sum WCF4 to WCF3.
+Since $c_0-c_1=4$, the result is $t^vg(t)$ times the generating
+function centred at $c_1$. Comparing coefficients, including
+$n!/\sqrt{h_{n,s}}=\rho_n/\sqrt{M_s}$, proves
+\[
+ A_{D,s}=\operatorname{diag}(\rho_0,\ldots,\rho_D)^{-1}
+          T_D(g)\operatorname{diag}(\rho_v,\ldots,\rho_{D+v}),
+ \quad
+ (A_{D,s})_{ij}=\begin{cases}g_{j-i}\rho_{j+v}/\rho_i,&i\le j,\\0,&i>j.
+ \end{cases}
+ \tag{WCF6}
+\]
+Here $T_D(g)_{ij}=g_{j-i}$ above the diagonal. The two copies of
+$M_s^{-1/2}$ cancel in this matrix because the source order is the same
+on both sides. All norms and all endpoint Grams retain their original
+mass. No scalar $v!/\mu_v$ is inserted in WCF4 or WCF6.
+
+\subsection{Forward coefficient and weighted-shift estimates}
+
+For $|t|\le r<1$ the Cayley ratio $z=(1-it)/(1+it)$ satisfies
+\[
+ \Re z=\frac{1-|t|^2}{|1+it|^2}>0,\qquad
+ \frac{1-r}{1+r}\le|z|\le\frac{1+r}{1-r},\qquad
+ |\arg z|<\pi/2.
+ \tag{WCF7}
+\]
+The first identity follows by multiplying by $1-i\bar t$; the
+modulus bounds follow from the triangle inequality and its reverse.
+The branch in WCF5 is therefore exactly the logarithm on the right
+half-plane. For $\beta_{8,u,w}-4=x+iy$, we have
+$|x|\le8\delta$, $|y|\le8\gamma$. Consequently
+\[
+ \left|e^{(\beta_{8,u,w}-4)w(t)}\right|
+ =\exp\!\left(\tfrac{x}{2}\log|z|-\tfrac{y}{2}\arg z\right)
+ \le\left(\frac{1+r}{1-r}\right)^{4\delta}e^{2\pi\gamma}.
+ \tag{WCF8}
+\]
+This estimate retains the imaginary shifts through $e^{2\pi\gamma}$;
+it does not replace them by a real-root symbol.
+
+For $D\ge1$, choose $r_D=D/(D+1)$ and define
+\[
+ C_D=e\,2^v A_{\rm abs}e^{2\pi\gamma}(2D+1)^{4\delta}.
+ \tag{WCF9}
+\]
+On $|t|=r_D$, WCF5 and WCF8 bound $|g(t)|$ by
+$r_D^{-v}A_{\rm abs}e^{2\pi\gamma}(2D+1)^{4\delta}$.
+Cauchy's coefficient integral gives $|g_l|\le r_D^{-l}\max|g|$.
+For $0\le l\le D$, $r_D^{-l}\le(1+1/D)^D\le e$ and
+$r_D^{-v}\le2^v$. Hence
+\[
+ |g_l|\le C_D\qquad(0\le l\le D).
+ \tag{WCF10}
+\]
+
+The $l$th upper diagonal in WCF6 is a weighted shift whose norm is
+the maximum of $\rho_{i+l+v}/\rho_i$. Its nonzero columns have
+orthogonal images, which proves this norm assertion directly. If
+$s=a\ge9$, then $b>1$ and $\rho_{n+1}/\rho_n=
+\sqrt{(n+1)/(n+b)}\le1$, so this norm is at most one.
+If $s=1$, the factors in
+\[
+ \frac{\rho_{i+d}^2}{\rho_i^2}
+ =\prod_{t=0}^{d-1}\left(1+\frac{1/2}{i+t+1/2}\right)
+ \le\frac{d!}{(1/2)_d}\le2d+1
+ \qquad(d\ge0)
+ \tag{WCF11}
+\]
+decrease with $i$. For the last bound use induction: it is equality
+at $d=0$, and multiplication by $(d+1)/(d+1/2)$ takes $2d+1$
+to $2d+2\le2d+3$. The following integral calculation avoids paying
+for the number of upper diagonals.
+
+For $s=a$, so $b>1$, give a polynomial $P(z)=\sum p_nz^n$ the norm
+\[
+ \|P\|_{\rho}^2=\sum_n|p_n|^2\rho_n^2
+  =(b-1)\int_0^1\int_0^{2\pi}|P(\sqrt{x}e^{i\theta})|^2
+       \frac{d\theta}{2\pi}(1-x)^{b-2}\,dx.
+ \tag{WCF11a}
+\]
+Angular integration kills unequal monomials. The radial identity
+$(b-1)\int_0^1x^n(1-x)^{b-2}dx=n!/(b)_n$ follows either by
+integration by parts and its value at $n=0$, or directly from Euler's
+beta integral, DLMF (5.12.1), at the positive parameters $n+1,b-1$
+\cite{human:dlmf5}. Thus WCF11a is an isometric coefficient
+realization of these exact positive weights. It is an auxiliary proof
+space for WCF6; the original Gamma measure WCF2 is unchanged.
+
+Multiplication by $g(rz)$, $0<r<1$, has norm at most
+$\max_{|t|=r}|g(t)|$ in WCF11a, since that pointwise modulus bound
+holds on the whole unit disk. Its power series converges uniformly
+on the closed unit disk. Orthogonal projection onto degrees at most
+$D$ contracts the norm. In the orthonormal basis $z^n/\rho_n$, the
+transpose of this compressed multiplication matrix is
+\[
+ U_r=\operatorname{diag}(\rho_0,\ldots,\rho_D)^{-1}
+            T_D(g(r\,\cdot))\operatorname{diag}(\rho_0,\ldots,\rho_D).
+ \tag{WCF11b}
+\]
+Transposition preserves operator norm. For
+$R_r=\operatorname{diag}(1,r,\ldots,r^D)$, the unscaled matrix is
+$U=R_rU_rR_r^{-1}$. Hence
+$\|U\|\le r^{-D}\max_{|t|=r}|g(t)|$. Finally
+$A_{D,a}=U\operatorname{diag}(\rho_{i+v}/\rho_i)$, whose last
+diagonal is a contraction. Taking $r=r_D$ and WCF8 proves
+$\|A_{D,a}\|\le C_D$.
+
+For $s=1$ apply the same angular integration with the unweighted
+circle norm $\sum|p_n|^2$: multiplication and orthogonal compression
+give $\|T_D(g)\|\le r^{-D}\max_{|t|=r}|g(t)|$ by the same radial
+similarity. In this case $\rho_n$ increases, so the two diagonal
+operator norms in WCF6 have product $\rho_{D+v}$, bounded by
+$\sqrt{2(D+v)+1}$ in WCF11. We have therefore proved the sharper
+finite estimate
+\[
+ \boxed{\quad \|A_{D,s}\|\le B^+_{D,s}:=
+ \begin{cases}
+ C_D\sqrt{2(D+v)+1},&D\ge1,\ s=1,\\
+ C_D,&D\ge1,\ s=a,\\
+ |\mu_v|\rho_v/v!,&D=0.
+ \end{cases}\quad}
+ \tag{WCF12}
+\]
+The $D=0$ case is the exact scalar modulus from WCF6; $\rho_0=1$.
+The estimate therefore includes $v=0$ and the smallest cutoff.
+In particular, uniformly for $s\in\{1,a\}$ and $D\le C a^2$,
+\[
+ \log^+B^+_{D,s}=O_{\rm actual,C}(\log(a+1)).
+ \tag{WCF13}
+\]
+For $D\ge1$ this follows by taking the logarithm of WCF12 and
+using fixed $v,\delta,\gamma,A_{\rm abs}$. At $D=0$, $\rho_v\le1$
+for $s=a$ and is fixed for $s=1$. This proves the asserted uniformity.
+
+\subsection{A finite inverse estimate with every principal part}
+
+The following records the inverse terms needed at the negative endpoints.
+It also prevents an upper-triangular estimate from being applied to a
+lower-triangular correction. Retain the original SGT zero-free constants
+\[
+\begin{gathered}
+ B_0=\max\{1,\max_{u,w}|\beta_{8,u,w}|\},\quad
+ C_v=A_{\rm abs}B_0^v/|\mu_v|,\\
+ R_0=B_0^{-1}\min\{1,(v+1)/(2eC_v)\},\quad
+ a_0=\min\{1/2,\tanh(R_0/2)\},\\
+ d_0=1-\frac{a_0^2}{3(1-a_0^2)},\qquad
+ M_0=\frac{2v!}{|\mu_v|}d_0^{-v}e^{2R_0},\qquad
+ S_D(r)=\sum_{l=0}^D r^{-l}.
+\end{gathered}\tag{WCF14}
+\]
+Here $v!E_A(z)/(\mu_vz^v)$ differs from one by at most
+$C_vB_0|z|e^{B_0|z|}/(v+1)$, by its exponential Taylor series.
+This is at most $1/2$ for $|z|\le R_0$. On $|t|\le a_0$,
+$|w(t)|\le R_0/2$ and $|w(t)/t|\ge d_0$, by the arctangent
+series. Factoring $g$ as
+$(\mu_v/v!)(w/t)^ve^{-4w}[v!E_A(w)/(\mu_vw^v)]$ proves
+$|1/g(t)|\le M_0$ on that entire disk, including zero.
+
+Fix any $0<\varrho<1$ with no zero of $g$ on $|t|=\varrho$.
+Let its interior zeros be $\zeta$, of orders $m_\zeta$, and put
+\[
+\begin{gathered}
+ H_\varrho=\sum_\zeta m_\zeta,\qquad
+ A_{\zeta,h}=\frac1{(m_\zeta-h)!}
+   \left.\frac{d^{m_\zeta-h}}{dt^{m_\zeta-h}}
+       \frac{(t-\zeta)^{m_\zeta}}{g(t)}\right|_{t=\zeta},\\
+ f_\varrho(t)=\frac1{g(t)}-
+       \sum_{\zeta}\sum_{h=1}^{m_\zeta}\frac{A_{\zeta,h}}{(t-\zeta)^h},
+ \quad W_\varrho=\operatorname{arctanh}\varrho,\\
+ m_{E,\varrho}=\min_{|t|=\varrho}|E_A(w(t))|>0,\quad
+ M_\varrho=\frac{\varrho^ve^{4W_\varrho}}{m_{E,\varrho}}
+       +\sum_{\zeta,h}\frac{|A_{\zeta,h}|}{(\varrho-|\zeta|)^h}.
+\end{gathered}\tag{WCF15}
+\]
+All these pole sums are finite. Zero is not a pole, and $f_\varrho$
+is holomorphic on a neighbourhood of the closed circle and its
+interior. Its modulus on the circle is at most $M_\varrho$.
+
+Truncated power-series multiplication gives
+$T_D(g)^{-1}=T_D(1/g)$. The inverse weighted upper diagonals have
+ratios $\rho_{i+l}/\rho_{i+v}$. WCF11 gives an upper bound
+$\sqrt{2l+1}$ at $s=1$. At $s=a$, this ratio is at most
+$\rho_i/\rho_{i+v}\le\sqrt{(b)_v/v!}$; the last inequality follows
+by decreasing each factor $(i+t+b)/(i+t+1)$ to its maximum at $i=0$.
+Thus set
+\[
+ W_{D,s}^-=
+ \begin{cases}\sqrt{2D+1},&s=1,\\\sqrt{(s/2)_v/v!},&s=a,
+ \end{cases}
+ \qquad B^0_{D,s}=W_{D,s}^-M_0S_D(a_0).
+ \tag{WCF16}
+\]
+Cauchy's bound on $1/g$ at radius $a_0$, followed by the sum of
+these upper-diagonal norms, proves $\|A_{D,s}^{-1}\|\le B^0_{D,s}$.
+
+For completeness, the Taylor coefficient of $A/(t-\zeta)^h$ is
+$c_n=A(-1)^h\zeta^{-n-h}\binom{n+h-1}{h-1}$.
+Extend the binomial polynomial to every integer $n$. The full matrix
+$(c_{j-i})_{0\le i,j\le D}$ has rank at most $h$, by expanding its
+polynomial in $i$. For all orders at one pole the combined column
+space is contained in $\operatorname{span}\{(\zeta^ii^d)_i:
+0\le d<m_\zeta\}$, hence its rank is at most $m_\zeta$.
+For a lower-diagonal gap $l=i-j\ge1$, the omitted entry equals
+zero if $l<h$ and equals
+$-A\zeta^{l-h}\binom{l-1}{h-1}$ if $l\ge h$.
+Its cancellation therefore requires a lower-triangular correction with
+the opposite, positive displayed coefficient.
+
+After multiplying by the actual inverse diagonal factors, that
+lower-diagonal shift has weight $\rho_j/\rho_{j+l+v}$. Its norm is
+at most one for $s=1$, and at most
+$\sqrt{(b)_{l+v}/(l+v)!}$ for $s=a$, by the same decreasing-factor
+argument. Define the finite, original-pole quantity
+\[
+\begin{gathered}
+ \Theta_{l,s}=\begin{cases}1,&s=1,\\
+       \sqrt{(s/2)_{l+v}/(l+v)!},&s=a,\end{cases}\\
+ Z_{D,s,\varrho}=\sum_{\zeta,h}|A_{\zeta,h}|
+      \sum_{l=h}^{D}|\zeta|^{l-h}\binom{l-1}{h-1}\Theta_{l,s},\\
+ B^{\rm rem}_{D,s,\varrho}=W_{D,s}^-M_\varrho S_D(\varrho)
+                              +Z_{D,s,\varrho},\qquad
+ B^{\rm cap}_{D,s,\varrho}
+     =\min\{B^0_{D,s},B^{\rm rem}_{D,s,\varrho}\}.
+\end{gathered}\tag{WCF17}
+\]
+An empty inner sum is zero. The preceding exact principal-part
+calculation and the coefficient bound on $f_\varrho$ prove a decomposition
+of the entire inverse into a matrix of rank at most $H_\varrho$ and
+a remainder of norm at most $B^{\rm rem}_{D,s,\varrho}$.
+Diagonal multiplication leaves this rank bound unchanged. No pole,
+lower-triangular correction, or original coefficient has been removed.
+
+For $c$ orthogonal copies, $c\in\{1,4\}$, and a rank $r$ plane or
+attained subquotient, put $h_c=\min\{r,cH_\varrho\}$ and
+\[
+ \mathcal L^{\rm wt}_{D,s,r,c}(\varrho)
+ =2h_c\log^+B^0_{D,s}
+       +2(r-h_c)\log^+B^{\rm cap}_{D,s,\varrho},\qquad
+ \mathcal U^{\rm wt}_{D,s,r}=2r\log^+B^+_{D,s}.
+ \tag{WCF18}
+\]
+To prove the inverse exterior bound, take the kernel of the exceptional
+matrix. It has codimension at most $cH_\varrho$, and on it the full
+inverse has norm at most the remainder bound. Diagonalizing its positive
+squared norm shows that every singular value after the first
+$cH_\varrho$ is at most that bound; all singular values are at most
+$B^0_{D,s}$. Multiplying the largest $r$ singular values proves the
+exterior bound in WCF18, with $\log^+$ giving a nonnegative allowance.
+
+The older inverse estimate remains available without alteration. In its
+literal NCT16--19 notation define
+\[
+\begin{gathered}
+ L_{s,D,v}=\tfrac12\max\{1,s/2-1\}\sum_{n=1}^{D+v}\frac1n,
+ \quad G_{0,D}=M_0S_D(a_0),\\
+ P_\varrho=\sum_{\zeta,h}\frac{|A_{\zeta,h}|}{(1-|\zeta|)^h},
+ \quad V_{\varrho,D}=M_\varrho S_D(\varrho)+P_\varrho,\\
+ \mathcal L^{\rm old}_{D,s,r,c}(\varrho)
+ =4rL_{s,D,v}+2h_c\log^+G_{0,D}
+       +2(r-h_c)\log^+\min\{G_{0,D},V_{\varrho,D}\},\\
+ \mathcal L^{\rm pole}_{D,s,r,c}=
+  \inf_{\varrho\ {\rm admissible}}
+  \min\{\mathcal L^{\rm wt}_{D,s,r,c}(\varrho),
+        \mathcal L^{\rm old}_{D,s,r,c}(\varrho)\}.
+\end{gathered}\tag{WCF19}
+\]
+The old bound follows from the same pole decomposition before diagonal
+weighting: summing the lower shifts gives $P_\varrho$ by the binomial
+series, and each of the two diagonal factors costs at most
+$e^{L_{s,D,v}}$. The latter follows by writing $\rho_n$ as its
+product and using $\log(1+x)\le x$. Applying the exterior argument
+then gives exactly WCF19. Thus taking the displayed minimum and
+infimum keeps two independently proved finite bounds. Admissible radii
+exist arbitrarily close to one because zeros are isolated. The infimum
+is finite and nonnegative and need not be attained.
+
+\subsection{The full determinant controls every inverse exterior rank}
+
+There is a stronger estimate that uses the entire original triangular
+matrix and needs no separation of its poles. Put $d=D+1$ and
+$M_{D,s}=\max\{1,B^+_{D,s}\}$. Triangularity of WCF6 proves the
+exact complex determinant identity
+\[
+ \det A_{D,s}=g(0)^d\prod_{i=0}^{D}\frac{\rho_{i+v}}{\rho_i}.
+ \tag{WCF19a}
+\]
+It retains the complete phase $g(0)=(-i)^v\mu_v/v!$. For $s=1$ the
+product of positive ratios is at least one. For $s=a$ its reciprocal
+satisfies
+\[
+ \begin{split}
+ \log\prod_{i=0}^{D}\frac{\rho_i}{\rho_{i+v}}
+ &=\frac12\sum_{i=0}^{D}\sum_{t=0}^{v-1}
+           \log\left(1+\frac{s/2-1}{i+t+1}\right)\\
+ &\le\frac12(s/2-1)v\sum_{j=1}^{d}\frac1j.
+ \end{split}\tag{WCF19b}
+\]
+For $v=0$ both sums are empty. Define the nonnegative finite quantity
+\[
+ J_{D,s}=d\log^+\frac1{|g(0)|}
+       +\frac12(s/2-1)_+v\sum_{j=1}^{d}\frac1j.
+ \tag{WCF19c}
+\]
+Equations WCF19a--b prove $|\det A_{D,s}|^{-1}\le e^{J_{D,s}}$.
+
+Let $B=(A_{D,s}^{\mathsf T})^{\oplus c}$, of dimension $cd$, with
+singular values $\sigma_1\ge\cdots\ge\sigma_{cd}>0$. Its inverse
+exterior norm is
+\[
+ \left\|\bigwedge^rB^{-1}\right\|
+ =\frac{\sigma_1\cdots\sigma_{cd-r}}
+           {\sigma_1\cdots\sigma_{cd}}
+ =\frac{\|\bigwedge^{cd-r}B\|}{|\det B|}
+ \le M_{D,s}^{cd-r}e^{cJ_{D,s}}\qquad(0\le r\le cd).
+ \tag{WCF19d}
+\]
+The first equality multiplies the $r$ largest inverse singular values;
+the denominator is exactly the modulus of the full determinant. Thus
+this estimate includes every direction of the original inverse, including
+all directions caused by every symbol zero. It has imposed no zero-free
+unit disk or bound on its pole count.
+
+For $r>0$ set
+\[
+ \mathcal L^{\rm det}_{D,s,r,c}
+ =2\bigl((cd-r)\log M_{D,s}+cJ_{D,s}\bigr),\qquad
+ \mathcal L^*_{D,s,r,c}
+ =\min\{\mathcal L^{\rm pole}_{D,s,r,c},
+                         \mathcal L^{\rm det}_{D,s,r,c}\}.
+ \tag{WCF19e}
+\]
+At $r=0$ define both allowances to be zero, as the actual empty
+exterior norm and determinant are one. This sharpens rather than
+replaces the preserved finite principal-part bounds. For fixed $C_{\rm cut}>0$, if
+$D\le C_{\rm cut}a^2$, $c\le4$, $s\in\{1,a\}$, then WCF13 and WCF19c give
+\[
+ \mathcal L^*_{D,s,r,c}
+ \le\mathcal L^{\rm det}_{D,s,r,c}
+ =O_{\rm actual,C_{\rm cut}}(a^2\log(a+1))=o(aq)
+ \quad(0\le r\le c(D+1)).
+ \tag{WCF19f}
+\]
+Indeed $cd-r\le4(D+1)$, the first term is
+$O(a^2\log(a+1))$, and $J_{D,s}=O_{\rm actual,C_{\rm cut}}(a^2+
+a\log(a+1))$. The bounds hold uniformly over every retained rank.
+No limiting choice of radius is needed for WCF19f.
+
+\subsection{The original lower evaluation space and the conductor Gram}
+
+Now take the original cutoffs $N\ge q-1$ and $D=N-v$. Define
+the full observation matrices, with the indicated rows and fixed root order,
+\[
+ (\mathsf E_-)_{n,(u,w)}=\phi_{n,s,c_1}(\beta_{a-8,u,w}),\quad0\le n\le D,
+ \qquad
+ (\mathsf E_+)_{n,(u,w)}=\phi_{n,s,c_0}(\beta_{a,u,w}),\quad0\le n\le N.
+ \tag{WCF20}
+\]
+The lower dimension is $q'$. Since $q-q'=16a-48\ge96>v$,
+$D\ge q'-1$, so the lower matrix has full column rank by its
+nonzero leading coefficients and the lower Vandermonde. The upper
+matrix likewise has rank $q$. Let the full original conductor matrix
+$C_a$ be defined by collecting every original shift:
+\[
+ \sum_{u,w}(C_a^{\mathsf T}\eta)_{uw}e^{\beta_{a,u,w}z}
+       =E_A(z)\sum_{u,w=0}^{a-8}\eta_{uw}e^{\beta_{a-8,u,w}z}.
+ \tag{WCF21}
+\]
+The identity $\beta_{a-8,u,w}+\beta_{8,r,t}=\beta_{a,u+r,w+t}$
+proves the formula, retaining all terms with the same resulting root.
+The map $C_a^{\mathsf T}$ is injective: a vanishing product makes
+the lower exponential sum zero on an open set, hence everywhere,
+and its distinct-root Vandermonde forces $\eta=0$.
+
+Complex-linear functionals transform by ordinary transpose. In fact
+evaluating $\mathcal T_A\phi_{v+j,s,c_0}$ at the lower roots and using
+WCF6 gives exactly
+\[
+ \boxed{\quad \mathsf E_+ C_a^{\mathsf T}
+       =\begin{bmatrix}0_{v\times q'}\\ A_{D,s}^{\mathsf T}\mathsf E_-\end{bmatrix},
+ \qquad
+ K_{C,N,s}=\overline C_a(\mathsf E_+^*\mathsf E_+)C_a^{\mathsf T}
+       =\mathsf E_-^*\overline{A_{D,s}}A_{D,s}^{\mathsf T}\mathsf E_-.
+ \quad}\tag{WCF22}
+\]
+The first $v$ rows vanish because those polynomials lie in the full
+kernel of $\mathcal T_A$. This is the exact map from the original
+lower evaluation space to the conductor-multiple subspace. Its lower
+Gram is $K_{-,D,s}=\mathsf E_-^*\mathsf E_->0$ and its upper Gram
+is the literal $K_{C,N,s}>0$ of TAC5. No new lower source order is
+introduced: the two orders remain $1$ and $a$, even though the lower
+root packet has degree $a-8$. The shift of its centre is exactly four.
+
+For a full-column-rank matrix $E$ of rank $r$ and an invertible $B$,
+the Gram determinant is the squared norm of the wedge of its columns.
+Applying $\bigwedge^r B$ to this wedge and then applying
+$\bigwedge^rB^{-1}$ to its image proves the two directed determinant
+bounds. The transpose has the same singular values as its matrix:
+if $A=U\Sigma V^*$ then $A^{\mathsf T}=\bar V\Sigma U^{\mathsf T}$.
+Using WCF18--19 in WCF22 therefore proves
+\[
+ \boxed{\quad
+ -\mathcal L_{D,s,q',1}^*
+ \le e_{N,s}^{C}:=\log\det K_{C,N,s}-\log\det K_{-,N-v,s}
+ \le\mathcal U^{\rm wt}_{D,s,q'}.
+ \quad}\tag{WCF23}
+\]
+The same proof applies to restrictions and attained quotients. To see
+the precise map, write $K\subset Y$ in the original space, identify
+$Y/K$ with $Y\cap K^\perp$, and identify $BY/BK$ with
+$BY\cap(BK)^\perp$. The induced map and its inverse are the
+restrictions of $B$ and $B^{-1}$ followed by orthogonal projections.
+Each projection contracts every exterior norm, which follows in an
+orthonormal basis from its zero or unit singular values. Thus the
+same bounds use the actual quotient rank, with the full original
+denominator retained. The determinant/wedge identity is classical;
+compare Lyons, \S4, (4.1) \cite{human:lyons2003}. The exact maps,
+weights and their bounds have been proved here.
+
+For any rank $r\le C_r a^2$, $D\le C_{\rm cut}a^2$, both original orders,
+and $c=1,4$, WCF13 gives the new uniform forward conclusion
+\[
+ \mathcal U^{\rm wt}_{D,s,r}=O_{\rm actual,C_{\rm cut},C_r}(a^2\log(a+1))
+                            =o(aq).
+ \tag{WCF24}
+\]
+It applies in particular to the complete $q'$-dimensional conductor
+restriction, as well as to all earlier rank-$O(a)$ native subquotients.
+
+\subsection{The four signs and the remaining calculation}
+
+Retain the four actual endpoints and the TAC dual orientation:
+\[
+ N_i=(q-1,q,2q-1,2q)_i,\quad D_i=N_i-v,\quad
+ \mathcal R f=-f(N_0)-f(N_1)+f(N_2)+f(N_3).
+ \tag{WCF25}
+\]
+Set $U_i^C=\mathcal U^{\rm wt}_{D_i,s,q'}$,
+$L_i^C=\mathcal L_{D_i,s,q',1}^*$, and
+$\mathcal C^-_{a,s}=\mathcal R\log\det K_{-,N-v,s}$.
+Subtracting the two low endpoint inequalities WCF23 and adding the
+two high endpoint inequalities gives the exact finite receiver
+\[
+ \boxed{\quad
+ \mathcal C^-_{a,s}-U_0^C-U_1^C-L_2^C-L_3^C
+ \le\mathcal C_{a,s}
+ \le\mathcal C^-_{a,s}+L_0^C+L_1^C+U_2^C+U_3^C.
+ \quad}\tag{WCF26}
+\]
+Here $\mathcal C_{a,s}=\mathcal R\log\det K_{C,N,s}$ is the exact
+conductor term in TAC10 and TAC15. Every $U_i^C$ and $L_i^C$ is
+$O_{\rm actual}(a^2\log(a+1))=o(aq)$, by WCF19f and WCF24.
+Consequently the full conductor return transfers to the literal
+lower-root covariance return with a proved two-sided error on that
+scale. The receiver respects all four signs and every actual correlated
+endpoint.
+
+The finite endpoint dimensions give a sharper upper-directed statement.
+At the two low endpoints $d_i=D_i+1$ satisfies
+$d_0-q'=m$ and $d_1-q'=m+1$, where $m=16a-48-v$. Thus
+\[
+ \begin{split}
+ \mathcal C_{a,s}-\mathcal C^-_{a,s}
+ \le{}&2m\log M_{D_0,s}+2(m+1)\log M_{D_1,s}
+            +2J_{D_0,s}+2J_{D_1,s}\\
+       &+2q'\log M_{D_2,s}+2q'\log M_{D_3,s}.
+ \end{split}\tag{WCF26a}
+\]
+This follows from WCF26 by using the determinant bound only on the
+two negatively signed low endpoints. Its first line is
+$O_{\rm actual}(q+a\log(a+1))$. Its second line is at most
+$32\delta q\log a+O_{\rm actual}(q)$ for $s=a$, and at most
+$(32\delta+4)q\log a+O_{\rm actual}(q)$ for $s=1$. To verify the
+coefficients, use $D_2,D_3=2(a+1)^2-v+O(1)$ in WCF9 and WCF12:
+$\log M_{D_i,a}\le8\delta\log a+O_{\rm actual}(1)$ and
+$\log M_{D_i,1}\le(8\delta+1)\log a+O_{\rm actual}(1)$.
+There are two upper terms, each multiplied by $2q'\le2q$.
+These are upper bounds on an actual signed correction, not assigned
+values of independent endpoint determinants.
+
+For the analytic quotient of rank $m=q-q'-v=16a-48-v$, replace
+$q'$ by $m$ in WCF18--19. Its new forward allowance is
+$O(a\log(a+1))$. The retained old inverse estimates at rank $m$
+have the already proved NCT21 radius-infimum limit $o(aq)$:
+at any fixed admissible radius their limsup divided by $a^3$ is
+bounded by a constant times $\log(1/\varrho)$, while the exceptional
+rank is fixed; only afterwards let $\varrho$ approach one. Thus the
+TAC10a--11 analytic correction may use the smaller forward constants
+without changing its existing two-sided conclusion. The complete
+conductor has rank $q'$ and is addressed instead by WCF26.
+
+Finally let $F_{L_a}^{(s)}$, $\delta^{\rm ar}_{a,s}$, $\Xi_{a,s}$,
+$\mathcal T^{\le R}_{a,s}$, $\mathscr T_{a,s,R}$, and $W_a,P_{a,\pm}$
+be the unchanged terms defined by TAC9--15. Substitution into TAC15
+gives the exact identity
+\[
+ \begin{split}
+ J_a={}&\mathcal C^-_{a,s}+\mathcal R e^C_{N,s}
+      +F_{L_a}^{(s)}+\delta^{\rm ar}_{a,s}+\Xi_{a,s}
+      +\mathcal T^{\le R}_{a,s}+\mathscr T_{a,s,R}\\
+      &+W_a-P_{a,-}-P_{a,+}.
+ \end{split}\tag{WCF27}
+\]
+In particular the upper complete-action estimate receives
+$L_0^C+L_1^C+U_2^C+U_3^C$ with coefficient one, and WCF26a retains
+its more precise endpoint dimensions. The bound $o(aq)$ does not make
+this correction negligible relative to TAC20's actual benchmark
+$4q\log(\delta q(a+1)/2)=12q\log a+O_{\rm actual}(q)$.
+The explicit $q\log a$ coefficients and the coupled actual terms must
+therefore be retained. The next quantitative calculation is the
+transferred lower-root covariance return together with the surviving
+native correlated tail and arithmetic correction in WCF27; the generic
+inverse transport estimate is now proved. WCF22 specifies its literal
+lower space, source order, centre and shifted cutoffs. WCF15--17 retain
+every pole and lower-triangular correction when finer signed control is
+needed. The original independent
+degree-$k$ proper-source matrices and all CPQ complements continue to
+obey their existing exact receiving maps; this degree-$a$ calculation
+has not substituted the target packet for that proper source.
+\endgroup

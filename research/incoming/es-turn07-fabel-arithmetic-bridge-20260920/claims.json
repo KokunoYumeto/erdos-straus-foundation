@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "incoming_manifest": "MANIFEST.json",
+  "integration_audit": "INTEGRATION_AUDIT.md",
+  "claims": [
+    {
+      "id": "SZ-20260920-028",
+      "title": "Complete prime-local reciprocal Fable fibre",
+      "status": "proved-with-integration-corrections",
+      "proof": "corrected/core.tex, section The complete local algebra distinguishes E from M; cumulative crosswalk EZ28a-EZ28k",
+      "certificates": [
+        "verify.py",
+        "check_independent.py",
+        "check_polynomial.py"
+      ],
+      "statement": "For every original p=1 mod 4 E or M state, the reciprocal-cubic target has seven reduced geometric affine inverse points and exactly three Q_p-points. Its algebra is Q_p^3 times two isomorphic ramified quadratic fields in E and Q_p^3 times two copies of the unique unramified quadratic field in M."
+    },
+    {
+      "id": "SZ-20260920-029",
+      "title": "Exact root-order conductor and interpolation loss",
+      "status": "proved-with-integration-corrections",
+      "proof": "corrected/root_orders.tex; cumulative crosswalk EZ28l-EZ28q",
+      "certificates": [
+        "verify.py",
+        "check_independent.py"
+      ],
+      "statement": "The E root order is {(z1,z2,z3) in Z_p^3 : z1=z2 mod p}, of index p and conductor pZ_p x pZ_p x Z_p; the M root order is Z_p^3. The labelled E-to-M interpolation has coefficient valuations (0,-1,-1), while the reverse interpolation is integral."
+    },
+    {
+      "id": "SZ-20260920-030",
+      "title": "Negative-four-square same-prime channel transfer",
+      "status": "proved-after-written-fibre-correction",
+      "proof": "corrected/core.tex, section An unbounded family of exact same-prime channel returns; cumulative crosswalk EZ28r-EZ28z",
+      "certificates": [
+        "verify.py",
+        "check_independent.py"
+      ],
+      "statement": "An existing E state with alpha=-4c^2 or beta=-4c^2 and c dividing (h+1)/4 supplies an explicit original same-prime M state. The complete alpha inverse fibre includes the necessary and sufficient original gate R_s | 4hr^2+1; the beta inverse fibre is the displayed discriminant-square fibre. Every existing source on alpha=-4 or beta=-4 returns, without asserting existence or infinitude of sources on those lines."
+    },
+    {
+      "id": "SZ-20260920-031",
+      "title": "Complete fixed-cofactor middle fibre",
+      "status": "proved-and-exactly-replayed",
+      "proof": "corrected/fixed_cofactor_atlas.tex; cumulative crosswalk EZ28P-EZ28X",
+      "certificates": [
+        "verify_integration_extensions.py",
+        "integration_extension_receipt.json"
+      ],
+      "dependencies": [
+        "SZ-20260920-030"
+      ],
+      "statement": "For an existing E state with h=3 mod 4 and j=(h+1)/4, the divisors U of j^2 satisfying h | p+4U are in bijection with all original M states at p having normalized cofactor Q=h. The exact formulas recover every coordinate and denominator. This strictly extends the selected negative-square words, reduces the proved residual exterior source to radius at least nine, gives an explicit return at p=41161 where c does not divide j, and retains an empty fixed-Q example at p=3049."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "ES-T7F-CORR-A",
+      "target": "incoming core.tex M special-fibre wording",
+      "replacement": "The roots have distinct reductions and all derivative values are units; derivative residues need not be pairwise distinct.",
+      "counterexample": "p=5, state (a,u,R,h,r,s,lambda,H)=(2,1,3,1,1,2,1,2), root residues (0,3,1), derivative residues (3,1,3)."
+    },
+    {
+      "id": "ES-T7F-CORR-B",
+      "target": "incoming core.tex alpha inverse fibre",
+      "replacement": "Add R_s | 4hr^2+1, equivalently R_s | pr+s.",
+      "counterexample": "p=5209,h=95,c=2,s=5,k=11,r=4 gives R_s=2391 not dividing 6081."
+    }
+  ],
+  "nonclaims": [
+    "The fibre classification starts from an existing arithmetic state and does not prove universal ES occupancy.",
+    "Equal rational point counts do not identify the E and M local algebras.",
+    "The integral root-order conductor is not the fixed complex weighted analytic conductor.",
+    "No p-adic descent of the complex period matrix, zeta-zero theorem, or whole-package Lean formalization is claimed."
+  ]
+}

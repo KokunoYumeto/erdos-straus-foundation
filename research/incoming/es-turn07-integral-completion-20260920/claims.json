@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "shared_claim_references": [
+    {
+      "id": "SZ-20260920-050",
+      "module_proof": "core.tex, Sections 2-4; preprint.tex",
+      "module_certificate": "verify.py; check_independent.py; live_certificates/summary.json; live_certificates/independent.json",
+      "relation": "This module gives the original E/M theorem and the defining-prime module gives the general collision formula plus an identical-basis crosswalk. They are one stable claim, not two results with the same identifier."
+    }
+  ],
+  "claims": [
+    {
+      "id": "SZ-20260920-057",
+      "title": "Sharp Type-I boundary lift obstruction",
+      "status": "proved-and-independently-replayed",
+      "proof": "core.tex, boundary lifting section; preprint.tex",
+      "certificate": "verify.py; check_independent.py; live_certificates/summary.json",
+      "dependencies": ["SZ-20260920-050"],
+      "statement": "The added Type-I nilpotent boundary point has exactly p lifts modulo p^2 and no lift modulo p^3. The obstruction is the displayed nonzero third digit, so finite flat rank eight does not produce an original integral section."
+    },
+    {
+      "id": "SZ-20260920-058",
+      "title": "Exact one-way literal-root interpolation and integral-order loss",
+      "status": "proved-and-independently-replayed",
+      "proof": "core.tex, labelled interpolation and conductor sections; MORPHISMS.md",
+      "certificate": "verify.py; check_independent.py; live_certificates/summary.json",
+      "dependencies": ["SZ-20260920-050"],
+      "statement": "The labelled literal-root exterior-to-middle interpolation and its reverse are written in the original bases. One direction is integral; the other has the exact p^2 denominator loss recorded by the normalization quotients. The prime-only deck sign likewise has exact p-order one in the exterior channel and two in the middle channel and need not preserve the original order."
+    },
+    {
+      "id": "SZ-20260920-059",
+      "title": "Finite-place control family exposing the omitted divisor coordinate",
+      "status": "proved-and-independently-replayed",
+      "proof": "core.tex, joint-channel finite-place control section; crt_control_note.tex",
+      "certificate": "verify.py; check_independent.py; live_certificates/summary.json",
+      "statement": "For any prescribed finite set of primes, the displayed CRT progression gives rational exterior and middle targets satisfying both numerical gates, the original height bounds and the stated local signatures, while one specified prime occurrence violates the original divisor box. The construction proves that those finite-place tests alone are not an integral-source certificate; it is not an ES counterexample."
+    }
+  ],
+  "nonclaims": [
+    "Rank eight does not imply equality of the original and normalized integral lattices.",
+    "The literal signed quartic fibre is not the reciprocal cubic fibre.",
+    "The finite-place control family is not an all-place obstruction or an Erdos--Straus counterexample.",
+    "No universal exterior, middle or Erdos--Straus occupancy theorem is claimed."
+  ]
+}

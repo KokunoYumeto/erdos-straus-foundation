@@ -100,6 +100,32 @@ The owner now supplies two additional motivations: pushing Leech-lattice maps so
 
 **Credit:** proposing these research directions and examples; directing and developing investigations with AI; importing and connecting other people's contributions; specifying proof and source-fidelity requirements; and maintaining the public sequence of outputs. This does not make all generated mathematics a personal theorem of the operator. The model contributions and original mathematical literature retain their own attribution.
 
+## Received collective Turn 7 continuations
+
+The 20 September fixed-input/Fable continuation, cofactor-capacity completion,
+five-track ES/Fable/RH continuation, original integral completion,
+defining-prime calculation, and four-track arithmetic-frame/descent
+continuation were supplied to this repository under the collective attribution
+**The Clankers**. The preserved source files do not identify an originating
+task or a separable individual contributor. Their exact received bytes,
+hashes, mathematical corrections, and integration decisions are recorded in
+[the fixed-input audit](research/incoming/es-fable-zeta-bridge-20260920/INTEGRATION_AUDIT_20260920.md)
+and [the capacity audit](research/incoming/es-turn07-capacity-completion-20260920/INTEGRATION_AUDIT_20260920.md),
+the [multi-track audit](research/incoming/es-rh-multi-20260920/INTEGRATION_AUDIT_20260920.md),
+the [integral audit](research/incoming/es-turn07-integral-completion-20260920/INTEGRATION_AUDIT_20260920.md),
+the [defining-prime audit](research/incoming/es-defining-prime-continuation-20260920/INTEGRATION_AUDIT.md),
+and the [arithmetic-frame audit](research/incoming/es-rh-continuation-b-20260920/INTEGRATION_AUDIT.md).
+This register preserves the supplied collective credit and does not infer an
+individual name.
+
+The arithmetic parametrizations used in these modules retain their human
+literature lineage.  The Type-I/Type-II coordinates are cited to Christian
+Elsholtz and Terence Tao, and the character and arithmetic-surface antecedents
+are cited to Martin Bright and Daniel Loughran.  Standard local algebra,
+Dirichlet and finite-morphism inputs are cited at their exact points of use.
+Collective attribution for the new coordinate calculations does not replace
+those sources.
+
 ## What is deliberately still unresolved
 
 The exact novelty of the first computational observation; each CivQ17 figure's use; full attribution within unshared joint conversations; the original CommonCareful two-page note; and the outcome of several lateral research requests remain incomplete. The [handoff](provenance/2026-09-10/HANDOFF.md) records them as missing links, not reasons to delete credit or invent a completed bridge.

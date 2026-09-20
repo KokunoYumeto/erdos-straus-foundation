@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-20",
+  "remote_pr_created": false,
+  "remote_push_performed": false,
+  "status": "No exposed GitHub write action; direct git ls-remote failed DNS. No remote PR number is asserted.",
+  "write_discovery": {
+    "GitHub_create": "no matching action exposed",
+    "Plugin_Management": "GitHub plugin already installed; no added write route"
+  },
+  "direct_git_error": "Could not resolve host: github.com",
+  "last_observed_upstream_revision": "2b5ab3b63471092624b4fcfac2ab2a0fbafa23a3",
+  "local_history_kind": "Source-only history with an explicit empty base; not an upstream clone",
+  "local_base": "9a9c8032c1f838bd61436c45df522774800de821",
+  "local_commit": "2aec3da05f8d867e26836aad1f58aae7eccdc64c",
+  "local_tree": "c776f097153ab0297736f8c1f26e937a38483511",
+  "branch": "research/es-integral-completion-20260920",
+  "additive_prefix": "research/incoming/es-turn07-integral-completion-20260920",
+  "added_paths": 20,
+  "modified_existing_paths": 0,
+  "deleted_paths": 0,
+  "local_fsck_passed": true,
+  "patch_replay_identical_tree": true,
+  "fsck_output": "",
+  "publisher_script": "publish_pr.sh",
+  "publisher_script_syntax_checked": true,
+  "publisher_script_executed": false
+}

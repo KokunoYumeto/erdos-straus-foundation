@@ -1,0 +1,26 @@
+{
+  "bound": 3000,
+  "checks": 622997,
+  "elapsed_seconds": 3.3689055000140797,
+  "independence": "No main/predecessor import; trial divisors, primitive r/s enumeration, primewise Jacobi",
+  "j_bound": 5000,
+  "primes": 211,
+  "source_sha256": "bd541dcd901ed3e4df7c20ce8c0a6cddad27474667b85196d326e470ed3f99e7",
+  "success": true,
+  "target_bound": 120,
+  "totals": {
+    "E": 5700,
+    "M": 5268,
+    "automatic_alpha": 10,
+    "automatic_beta": 12,
+    "automatic_source_states": 21,
+    "new_return_source_states": 176,
+    "new_source_states_beyond_old": 73,
+    "old_square_branches": 126,
+    "old_square_source_states": 103,
+    "original_divisor_vectors": 1877004,
+    "returned_pairs": 205
+  },
+  "universal_ES_proved": false,
+  "universal_TypeII_occupancy_proved": false
+}

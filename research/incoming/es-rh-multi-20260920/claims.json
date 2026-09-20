@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "claims": [
+    {
+      "id": "SZ-20260920-045",
+      "title": "Positive-real odd-frame rank-three crossing and integral dichotomy",
+      "status": "proved-after-audit",
+      "proof": "proofs/01_ES_FRAME_AND_ARITHMETIC.md, Sections 3-4",
+      "certificate": "checks/check_es_slice.py",
+      "dependencies": [
+        "SZ-20260920-034",
+        "SZ-20260920-035",
+        "SZ-20260920-039"
+      ],
+      "statement": "The explicit positive-real ES family p(1,t/(4t-402),t/202,t/200), t>202, has one exactly isolated simple parameter at which the odd receiving matrix has rank three while the quartic remains squarefree. For distinct positive integral roots, N=S^6F is an integer; if N is nonzero, then |det O|>=4/S^3 and ||O^-1||_2<=41^3 S^12/4.",
+      "scope": "Interface theorem. The isolated crossing is not an integral witness, and arithmetic nonvanishing of N remains open."
+    },
+    {
+      "id": "SZ-20260920-046",
+      "title": "Perfect residue pairing and exact trace-degenerating multiplication",
+      "status": "proved-after-boundary-hypothesis-repair",
+      "proof": "proofs/02_RESIDUE_TRACE_AND_BOUNDARY.md, Sections 1-5",
+      "certificate": "checks/check_residue.py and checks/check_local_transport.py",
+      "dependencies": [
+        "SZ-20260920-024",
+        "SZ-20260920-038"
+      ],
+      "statement": "The rank-eight collision completion has perfect residue Gram determinant A^-8. Its trace pairing is the residue pairing composed with multiplication by 2 eta^3, with determinant 256 Disc(h)^3/A^14 and collision-local rank one. The local ES/RH algebra isomorphism requires the nonconstant residue unit c^3[1+(2/(3p)+s i/gamma) epsilon_E]. The metric pole has an unconditional positive lower bound after multiplication by |eta|.",
+      "scope": "Exact local boundary interface, not a global ES-zeta identification."
+    },
+    {
+      "id": "SZ-20260920-047",
+      "title": "Residue-to-native Gram multiplier with retained relation defect",
+      "status": "proved-after-support-hypothesis-repair",
+      "proof": "proofs/03_NATIVE_GAUSS_PAIRING.md, Sections 1-4",
+      "certificate": "checks/check_gauss_bridge.py",
+      "dependencies": [
+        "SZ-20260920-019",
+        "SZ-20260920-046"
+      ],
+      "statement": "For the native monic orthogonal polynomial, H=J_p q(C_p), with q retaining the original measure mass. For any monic root polynomial h, H_ij=[J_h k(C_h)]_ij+integral h(x) quo_h(x^(i+j)) d rho(x). The resolvent sign is stated under support in [0,infinity), or with the corresponding nonvanishing and denominator-sign hypotheses.",
+      "scope": "Cross-programme typed bridge. ES roots are not thereby native Gauss nodes."
+    },
+    {
+      "id": "SZ-20260920-048",
+      "title": "Inverse-trace native moment margin",
+      "status": "proved-after-all-degree-comparison-completion",
+      "proof": "proofs/04_NATIVE_INVERSE_MARGINS.md, Sections 2-6",
+      "certificate": "checks/check_gram_floor.py and checks/check_previous_bounds.py",
+      "dependencies": [
+        "RH-2"
+      ],
+      "statement": "The shifted-Legendre coefficient matrix gives the exact inverse of the interval monomial Gram. Its inverse trace tau_t yields J_t >= tau_t^-1 I, is within factor t+1 of the true minimum eigenvalue, dominates the earlier determinant-over-trace floor in every degree, and obeys tau_t <= (t+1)(2t+1)100^t. A degree-L weight needs moments through degree 2t+L.",
+      "scope": "RH-facing conditioning result outside the ES occupancy chain."
+    },
+    {
+      "id": "SZ-20260920-049",
+      "title": "Common-parameter quotient and Bernstein certification procedure",
+      "status": "proved-procedure-with-synthetic-diagnostics",
+      "proof": "proofs/05_MULTIPARAMETER_CURRENT_CERTIFICATES.md, Sections 1-6",
+      "certificate": "checks/check_lowrank.py, checks/check_bernstein.py and checks/check_additional.py",
+      "dependencies": [
+        "RH-2",
+        "RH-3",
+        "RH-4"
+      ],
+      "statement": "For one common diagonal uncertainty matrix, the attained quotient, determinant ratio and minimizing lift have the displayed exact ordered formulas. Fixed-column current numerators have bounded coordinatewise degrees, Bernstein subdivision gives a finite positivity procedure under a strict margin, and moving monic columns use the same parameters through an exact rational correction.",
+      "scope": "RH-facing propagation interface. The included diagnostics are synthetic and do not constitute an actual native-current sign certificate."
+    }
+  ],
+  "nonclaims": [
+    "No universal Erdos-Straus occupancy theorem follows.",
+    "No integral nonvanishing theorem for the odd-frame integer N follows.",
+    "No global ES-zeta identification follows.",
+    "No Riemann-hypothesis theorem or counterexample follows.",
+    "No actual native-current sign certificate follows from the synthetic diagnostics.",
+    "The finite exact checks are not Lean verification or external peer review."
+  ]
+}

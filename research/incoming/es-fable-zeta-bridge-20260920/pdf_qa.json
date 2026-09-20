@@ -4,15 +4,16 @@
   "artifacts": [
     {
       "file": "output/pdf/ES_FABLE_ZETA_CROSSWALK.pdf",
-      "pages": 7,
-      "sha256": "114871f6450db9951c1a0f5184efac6f29f330cba596ce243b1ab864eca2a989",
+      "pages": 124,
+      "sha256": "7ad9b683338907a4b1afc843b0767adfdfcfa6aed352416edc12164780067e46",
       "source": "ES_FABLE_ZETA_CROSSWALK.tex",
-      "source_sha256": "f39c2a65725fe8a62bcb0d7c5b1e6ba8234090664c8dc041fca8b25944deb3d2",
+      "source_sha256": "9531181dd024831c49a6dfdd21ec84c4e23eb451e4b05b6c562ee87249c31c8f",
       "latex_errors": 0,
       "overfull_boxes": 0,
+      "underfull_boxes": 0,
       "undefined_references": 0,
-      "text_extraction_characters": 13998,
-      "visual_review": "all seven pages rendered; pages 1, 2 and 7 rechecked at original detail after the final build"
+      "text_extraction_characters": 282741,
+      "visual_review": "all 124 pages rendered and reviewed in complete contact sheets; pages 18, 47, 57, 103, 104, 105 and 124 rechecked at original detail after the final build"
     },
     {
       "file": "output/pdf/FABLE_TO_ORIGINAL_CONDUCTOR.pdf",

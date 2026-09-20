@@ -7,8 +7,11 @@ correspondences with other mathematical structures. It has not resolved the
 conjecture. The purpose of this page is to help a reader enter the full arguments,
 understand why they were tried, and continue them.
 
-Read the [86-page expanded supplement](https://zenodo.org/records/22678971/files/07_Exact_Bounded_Transport_Expanded_72_Statements_2026-09-08.pdf)
-or browse its [complete TeX, proofs and checks](research/expanded-2026-09-08/exact_bounded_transport_72).
+Read the [current 124-page ES/Fable cumulative reader](research/incoming/es-fable-zeta-bridge-20260920/output/pdf/ES_FABLE_ZETA_CROSSWALK.pdf)
+with its [complete TeX, exact checks and audit](research/incoming/es-fable-zeta-bridge-20260920/README.md).
+The earlier [86-page expanded supplement](https://zenodo.org/records/22678971/files/07_Exact_Bounded_Transport_Expanded_72_Statements_2026-09-08.pdf)
+and its [complete TeX, proofs and checks](research/expanded-2026-09-08/exact_bounded_transport_72)
+remain preserved as a separate edition.
 The source files here are byte-for-byte copies of the published archive.
 The [earlier readers and corrections](README.md#start-reading) remain available.
 The routes below describe this supplement, not an exhaustive classification of
@@ -69,14 +72,94 @@ for both original first-half channels:
   degree-eight signed cover, with intrinsic prime, exact image hypersurface,
   complete source fibre, Turn 7 inverse, and a fixed original conductor square.
   The reciprocal-cubic suspension is retained separately as a seven-state
-  nonproper degeneration.
+  nonproper degeneration. The exact elementary transform between them,
+  including its scale fibre, projective root-scheme maps, discriminant
+  transport and 14-point signed fibre product, is proved rather than left as a
+  presentation-level comparison. An explicit invertible raw-cell--Lorentz map
+  retains the archived three-dimensional tetrahedron, while the odd receiving
+  determinant has an exact irreducible ES pullback and a proved positive-real
+  intersection. The same cumulative source now proves that
+  every witness at a prime \(p\equiv1\pmod {12}\) lies in the eight-sheet
+  domain; at fixed \(p\), over the open base
+  \(\mathcal B_p=\{(A,C):ACd_p\operatorname{Disc}(g_p)\ne0\}\), the cover has
+  a rank-\(2+6\) split, order-\(48\) monodromy and deck group
+  \(C_2\times C_2\). Its reciprocal signed coordinate
+  gives a finite flat rank-eight collision completion, and an invertible
+  marked moment frame isolates the separate odd receiving divisor.
+- [Prime-local fibre, root order, and negative-square transfer](research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/INTEGRATION_AUDIT.md):
+  the seven-state reciprocal fibre has ramified quadratic factors in the
+  exterior channel and unramified quadratic factors in the middle channel,
+  although both have exactly three local rational points.  Its exterior root
+  order has index \(p\) in its normalization and the labelled exterior-to-middle
+  interpolation loses exactly one power of \(p\).  Changing the arithmetic
+  target on the negative-four-square locus gives explicit same-prime middle
+  states and complete corrected inverse fibres. The complete fixed-(Q)
+  theorem then classifies all such middle returns by the finite divisor set
+  (U\mid((h+1)/4)^2, h\mid p+4U), including nonsquare words missed by the
+  selected transfer.
+- [Exact cofactor capacity completion](research/incoming/es-turn07-capacity-completion-20260920/README.md):
+  the fixed-target divisor set \(\mathcal A_t(j)\) is classified exactly into
+  canonical, companion and finite branches with an inverse for every word.
+  The finite branch has sharp boundary \(h\le t^2-3t+1\), attained by
+  infinitely many original hard-prime exterior states. Every fixed
+  \(t\ge4\) also has infinitely many constructed exterior states with an
+  empty complete same-grade middle box; those exterior states remain ES
+  solutions.
+- [ES/Fable/RH multi-track continuation](research/incoming/es-rh-multi-20260920/README.md):
+  an explicit positive-real ES ray crosses the odd-frame divisor at one
+  exactly isolated rank-three point while the quartic remains squarefree.
+  The collision completion carries a perfect residue pairing whose trace
+  degeneration is exactly multiplication by \(2\eta^3\), including the
+  nonconstant local residue-unit correction. The native orthogonal-polynomial
+  Gram is then recovered by its exact second-kind multiplier; an arbitrary ES
+  polynomial retains a computed relation defect. The final inverse-trace and
+  common-parameter Bernstein tracks are RH-facing interfaces and do not count
+  as ES occupancy results.
+- [Original integral completion and defining-prime normalization](research/incoming/es-turn07-integral-completion-20260920/README.md):
+  the literal-root rank-eight order has exact exterior and middle indices
+  (p^2) and (p^9), with all Smith factors, conductor ideals, inverse
+  lattices and reduction kernels.  The
+  [general defining-prime module](research/incoming/es-defining-prime-continuation-20260920/README.md)
+  retains every closer-pair valuation, proves the translated-chart quadratic
+  twist and fixed-prime gluing, and identifies the local signed-label
+  representation and its Artin conductor.
+- [Arithmetic frame nonsingularity and signed descent](research/incoming/es-rh-continuation-b-20260920/README.md):
+  three quadratic characters force the original odd receiving frame to be
+  invertible for every witness in (3456) reduced classes modulo (521220).
+  The genuine witness ((13;4,18,468)) gives an exact descent at (q=61),
+  with no original rational signed point, eight quadratic-extension points,
+  and eight rational points on its specified nonsquare twist.  Separate
+  determinant and finite-heat tracks retain their own proof and executable
+  verification boundaries.
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
 actual same-prime middle states. The fourth gives an exact structural receiver
-for every occupied exterior state without turning the receiver into an
-occupancy theorem. They do not prove the source nonempty, nor do they bound
-every remaining shape. The [19 September bulletin](DAILY_RESULTS_20260919.md)
+and exact elementary transform for every occupied exterior state without
+turning the receiver into an occupancy theorem. It also supplies the exact
+fixed-input group action and boundary algebra without cancelling the inverse
+pole. The fifth calculates the local
+and integral difference between the channels and proves the complete
+fixed-cofactor return fibre. Together with the earlier shape theorem this
+removes every occupied exterior shape of radius at most eight, but it does not
+prove the source nonempty or bound every remaining shape.
+The capacity completion then determines the entire same-grade fixed-target
+box, including its sharp finite boundary and exact infinite obstruction
+families, without promoting those same-grade obstructions to global ES
+counterexamples.
+The multi-track continuation identifies the exact map that loses trace rank,
+retains the perfect residue map on the same boundary algebra, and proves the
+multiplier and defect needed to compare this finite algebra with the native
+moment metric. It leaves integral frame nonvanishing, native moment evaluation
+and the closing ES/RH statements open.
+The integral and defining-prime modules then compute the complete arithmetic
+lattice defect underneath that finite algebra and prove the exact morphism
+between the two received E/M presentations.  The arithmetic-frame continuation
+excludes the receiving divisor on an explicit infinite set of residue classes
+and supplies one complete finite-field descent calculation.  None of these
+post-witness classifications supplies the still-missing first positive
+integral source at every hard prime.
+The [19 September bulletin](DAILY_RESULTS_20260919.md)
 and [20 September bridge bulletin](DAILY_RESULTS_20260920.md) give stable result
 IDs and exact locators. They are mathematical indexes, not a programme chronology.
 

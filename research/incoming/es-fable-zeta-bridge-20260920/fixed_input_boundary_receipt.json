@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "deck_centralizer_order": 4,
+    "double_root_jordan_blocks": [
+      2,
+      2
+    ],
+    "fixed_input_bound_comparison_identity": true,
+    "fixed_p_coefficient_factorization": true,
+    "fixed_p_discriminant_factorization": true,
+    "local_scaling": "c^2=3p/(44gamma^2)",
+    "monodromy_all_derivative_factors_exact": true,
+    "monodromy_path_denominator_collision": true,
+    "monodromy_path_prime_collision": true,
+    "odd_moment_factorization": true,
+    "odd_moment_inverse": true,
+    "p5_nilpotent_boundary": "eta^2=(15/11)epsilon",
+    "paired_root_boundary": "eta^2=4gamma^2 epsilon",
+    "rational_boundary_family": "eta^2=(3p/11)epsilon",
+    "signed_monodromy_group_order": 48,
+    "signed_sheet_orbit_sizes": [
+      2,
+      6
+    ]
+  },
+  "nonclaims": [
+    "The fixed-input bounds do not prove witness occupancy.",
+    "The order-48 paths are complex algebraic ES paths, not paths of positive integral witnesses.",
+    "The local ES--paired-root isomorphism does not identify global fibres or zeta zeros."
+  ],
+  "schema_version": 1,
+  "status": "pass"
+}

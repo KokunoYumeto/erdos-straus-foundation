@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "claims": [
+    {
+      "id": "SZ-20260920-040",
+      "title": "Complete fixed-target cofactor-capacity trichotomy",
+      "status": "proved-and-exactly-replayed",
+      "proof": "core.tex, Theorem 3.1, equations (7)-(10)",
+      "certificate": "verify.py",
+      "dependencies": ["SZ-20260920-031"],
+      "statement": "For h=4j-1>t, every positive divisor W of j^2 congruent to t modulo h is uniquely either the canonical word W=t, the companion W=4tj, or a finite word with exact inverse label (ell,w,n,V). The three branches are disjoint and the input-grade condition h>t remains part of the finite converse."
+    },
+    {
+      "id": "SZ-20260920-041",
+      "title": "Sharp finite-repair boundary and eventual exact capacity",
+      "status": "proved-and-exactly-replayed",
+      "proof": "core.tex, Theorem 3.2, equations (11)-(15)",
+      "certificate": "verify.py and check_independent.py",
+      "dependencies": ["SZ-20260920-040"],
+      "statement": "Every finite cofactor word satisfies h<=t^2-3t+1, with equality exactly for w=n=1 and t=4ell+2. Above max(t,t^2-3t+1), capacity is exactly the sum of the canonical and companion indicators. Every finite word also yields the exact smaller returned grade h_M<=ell<t/4."
+    },
+    {
+      "id": "SZ-20260920-042",
+      "title": "Forced nonsquare negative-shape channel returns",
+      "status": "proved-and-exactly-replayed",
+      "proof": "core.tex, Theorem 4.1, equations (16) and the complete same-grade return in equations (5)-(6)",
+      "certificate": "verify.py and check_independent.py",
+      "dependencies": ["SZ-20260920-031", "SZ-20260920-040"],
+      "statement": "At every prime p congruent to 1 modulo 24, an existing original exterior state forces the canonical same-prime middle return on alpha=-4t for t in {1,2,3} and on beta=-4t for every t dividing 36. The coefficients need not be squares, and no bound is placed on the other shape coordinate."
+    },
+    {
+      "id": "SZ-20260920-043",
+      "title": "Prime-realized sharp capacity boundary",
+      "status": "proved-and-exactly-replayed",
+      "proof": "core.tex, Theorem 5.1 and equations (17)-(18)",
+      "certificate": "verify.py and check_independent.py",
+      "dependencies": ["SZ-20260920-040", "SZ-20260920-041"],
+      "statement": "For every t=6+420z, an explicitly reduced linear progression contains infinitely many hard primes with an original exterior state whose canonical word is absent and whose finite word attains h=t^2-3t+1. The p=825241 state gives an exact nonsquare t=6 witness and same-prime middle return."
+    },
+    {
+      "id": "SZ-20260920-044",
+      "title": "Infinite limitation of universal same-grade alpha repair",
+      "status": "proved-and-exactly-replayed",
+      "proof": "core.tex, Lemma 6.1 and Theorem 6.2, equations (19)-(20)",
+      "certificate": "verify.py and check_independent.py",
+      "dependencies": ["SZ-20260920-040", "SZ-20260920-041"],
+      "statement": "For every fixed t>=4, infinitely many hard primes have a constructed original exterior state with alpha=-4t but an empty complete middle cofactor box at that state's original grade h. Each prime already has the displayed exterior solution; the theorem is a same-grade obstruction and is not an Erdos-Straus counterexample."
+    }
+  ],
+  "nonclaims": [
+    "No universal Erdos-Straus or Type-II occupancy theorem is inferred.",
+    "The finite-repair bound does not apply to the unbounded companion branch.",
+    "Empty same-grade middle capacity does not imply an empty Erdos-Straus source.",
+    "The bounded Python replays are not Lean proofs or external peer review."
+  ]
+}

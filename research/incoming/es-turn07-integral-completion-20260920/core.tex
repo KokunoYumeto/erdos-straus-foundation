@@ -1,0 +1,679 @@
+\section{Question, inherited objects, and the unresolved implication}
+The preceding capacity theorem \cite{Capacity} completes a fixed-target divisor
+problem. It proves that searching additional divisors at a fixed grade cannot
+repair every exterior source. Its universal existence obligation is still open:
+for a prescribed hard prime, produce an original exterior or middle state.
+We do not assume that obligation in the present calculation.
+
+The newly supplied ES--Zeta work \cite[\S\S1--3, equations (8)--(24)]{Input}
+uses the \emph{literal} four roots $(p,x,y,z)$ and completes its signed inverse
+by $\eta=\xi^{-1}$. Its monic equations give a finite flat rank-eight algebra.
+The task here is to determine what happens to that particular algebra over
+$\Z_p$, with its original coordinate lattice, rather than replacing it by an
+arbitrary rank-eight vector space. The literal quartic is different from the
+reciprocal cubic in \cite{Reciprocal}; the exact inversion and its derivative
+twist are given in Section~\ref{sec:reciprocal}.
+
+The Type-I/II identities are classical \cite[\S2, Propositions 2.2 and 2.6]{ET}.
+Quadratic character restrictions are also antecedents; in particular compare
+\cite[Corollary 1.3 and Appendix A]{BL}. All calculations needed for the local
+and integral results below are proved explicitly. No historical-priority claim
+is made for these specializations or for the standard local algebra tools.
+
+\section{Original coordinates and the literal polynomial}
+Fix a prime $p\equiv1\pmod{12}$. Thus $p\ge13$, and both $-1$ and $3$ are
+squares modulo $p$. Set $K=\Q_p$, $\oo=\Z_p$, and normalize $\vp(p)=1$.
+An original state retains
+\[
+ p/4<a<p/2,\quad R=4a-p,\quad u\mid a^2,
+ \qquad E:R\mid4u+1,\qquad M:R\mid u+a.
+ \tag{IC1}
+\]
+For $a=\prod_l l^{e_l}$ its original exponent vector is
+$\beta_l=v_l(u)-e_l\in[-e_l,e_l]$. Let
+\[
+ g=\gcd(a,u),\qquad (h,r,s)=(g^2/u,u/g,a/g).
+\]
+Then $a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$. The exact ordered returns are
+\[
+\begin{array}{ll}
+ E:&\kappa=(pr+s)/R,\quad (x,y,z)=(a,hs\kappa,phr\kappa),\\
+ M:&\lambda=(r+s)/R,\quad (x,y,z)=(a,phs\lambda,phr\lambda).
+\end{array}                                                     \tag{IC2}
+\]
+Multiplication proves $4/p=1/x+1/y+1/z$. The ordered divisor inverses are
+$a^2/(Ry-pa)$ and $pa^2/(Ry-pa)$, respectively. The middle complement
+$u\mapsto a^2/u$ exchanges the last two denominators and is kept as an orientation,
+not suppressed as a duplicate.
+
+\begin{lemma}[Original character and unit facts]\label{lem:original}
+Every factor in (IC2) is a $p$-unit. For each $d\mid a^2$,
+$\Leg dR=\Leg dp$, with Jacobi symbol on the left. Consequently
+\[
+ E:\Leg hp=-1,\qquad M:\Leg{rs}p=-1.                      \tag{IC3}
+\]
+In the exterior case, $\kappa-r$ and $\kappa+r$ are $p$-units.
+\end{lemma}
+\begin{proof}
+For an odd $l\mid a$, reciprocity and $R\equiv-p\pmod l$ give
+$\Leg lR=\Leg{-1}l\Leg Rl=\Leg pl=\Leg lp$. If $2\mid a$, use
+$R\equiv-p\pmod8$ and the supplementary law. Multiplication over the original
+exponents proves the divisor identity. The E target is $-1/4$ modulo
+$R\equiv3\pmod4$, so $\Leg up=-1$ and $u=hr^2$ gives the first assertion.
+The M relation $r\equiv-s\pmod R$ gives the second.
+
+The factors $h,r,s$ are below $p$. In E put
+$\mathsf D=(4u+1)/R=(r+\kappa)/s$; the original identities give
+$p\mathsf D+1=4hr\kappa$, so $\kappa$ is a unit too.
+If $p\mid\kappa-r$, this identity gives $4hr^2\equiv1\pmod p$, contradicting
+$\Leg hp=-1$. If $p\mid\kappa+r$, then $p\mid\mathsf D$ and
+$4u+1=R\mathsf D$ gives the equally impossible nonresidue $u\equiv-1/4$.
+For M, $r+s\le rs+1\le a+1<p$, so $\lambda<p$.
+\end{proof}
+
+The fixed, ordered root vector and scale are
+\[
+ (\ell_0,\ell_1,\ell_2,\ell_3)=(p,x,y,z),\qquad S=p+x+y+z,
+\]
+\[
+ \mathcal H(T)=-S^{-1}\prod_{i=0}^3(T-\ell_i)
+ =AT^4+T^3+BT^2+CT+D.                                   \tag{IC4}
+\]
+Here $D$ is a quartic coefficient, not the original exterior cofactor $\mathsf D$.
+Vieta and the reciprocal identity give
+\[
+ A=-S^{-1},\quad C=5xyz/S,\quad D=-pxyz/S,
+ \quad D=-pC/5,\quad B=-Ap^2-p-4C/(5p).                 \tag{IC5}
+\]
+These are the literal coefficient equations in \cite[\S2.1]{Input}; the prime
+and every root label are retained. Define $d_i=\mathcal H'(\ell_i)$.
+
+\begin{theorem}[Original prime-local root clusters]\label{thm:clusters}
+The roots are distinct, $S\in\oo^\times$, and the following assertions hold.
+For E write $(x,y,z)=(a,b,pc)$. Then $a,b,a-b,a+b$ are units,
+$c\equiv1/4\pmod p$, and
+\[
+ (\vp(d_0),\vp(d_1),\vp(d_2),\vp(d_3))=(1,0,0,1),
+ \qquad \vp\Disc(\mathcal H)=2.                         \tag{IC6}
+\]
+For M write $(x,y,z)=(a,pb,pc)$. Then $b,c,b-c,b-1,c-1$ are units,
+\[
+ 4bc\equiv b+c\pmod p,\qquad\Leg{bc}p=-1,
+\]
+\[
+ (\vp(d_0),\vp(d_1),\vp(d_2),\vp(d_3))=(2,0,2,2),
+ \qquad \vp\Disc(\mathcal H)=6.                         \tag{IC7}
+\]
+In coefficient order $(A,B,C,D)$ the valuations are respectively
+$(0,0,1,2)$ and $(0,1,2,3)$.
+\end{theorem}
+\begin{proof}
+For E, $c=hr\kappa$ and $4c=p\mathsf D+1$. The remaining unit statements follow
+from Lemma~\ref{lem:original} and $a\pm b=hs(r\pm\kappa)$.
+Thus exactly one pair of roots, $p$ and $pc$, has difference of valuation one;
+all other differences are units. In particular they are all distinct, and
+$S\equiv a+b$ is a unit. The derivative and discriminant formulas prove (IC6).
+The coefficient $B\equiv-ab/S$ is a unit, and (IC5) gives the other valuations.
+
+For M, $b=hs\lambda,c=hr\lambda$. The unit and distinctness of $b,c$ follow from
+$r\ne s$, $r,s<p$; equality would force $r=s=1$ and $R\mid2$.
+The ES equation gives $4bc=pbc/a+b+c$, and (IC3) gives $\Leg{bc}p=-1$.
+If $b=1\pmod p$, then $c=1/3$, making $bc$ a square since $\Leg3p=1$.
+The same excludes $c=1$. The three roots $p,pb,pc$ therefore have pairwise
+valuation-one differences; the singleton $a$ is separated by units. Now
+$S\equiv a$, giving (IC7). In $B$ the leading term is
+$-pa(1+b+c)/S$, and $1+b+c\equiv1+4bc$ cannot vanish, since $bc=-1/4$
+would be a square. Hence $\vp(B)=1$. The remaining values follow from (IC5).
+\end{proof}
+
+In particular any two original E and M coefficient targets at the same prime
+have distance exactly one in the maximum $p$-adic norm on $(A,B,C,D)$: the
+$B$-coordinate is a unit on E and divisible by $p$ on M, while all coordinates
+are integral. An infinitesimal target deformation preserving reduction is not
+such a channel change. No comparison with a complex Gamma metric is inferred.
+
+\section{The rank-eight generic algebra and its original integral order}
+The supplied completion specializes, with its exact original basis, to
+\[
+ \OO=\oo[T]/(\mathcal H),\qquad
+ \SSS=\OO[\eta]/(\eta^2-\mathcal H'(T)).                 \tag{IC8}
+\]
+The leading coefficient $A$ is a unit, so both equations can be made monic.
+Thus $\SSS$ is free over $\oo$ on
+\[
+ 1,T,T^2,T^3,\eta,\eta T,\eta T^2,\eta T^3.             \tag{IC9}
+\]
+After inverting $\eta$ it is the original signed inverse, with
+$\xi=\eta^{-1}$ and $\xi^2\mathcal H'(T)=1$.
+The full physical Fabel coordinates, inherited from \cite[equation (21)]{Input}, are
+\[
+ \left(\eta^{-1},-T-i\eta,
+ A\eta^3+2T\eta+3i\eta^2,
+ 7iT^2\eta+(B-17T+AT^2)\eta^2-13i\eta^3-2A\eta^4\right).       \tag{IC10}
+\]
+Either embedding of $i$ in $K$ may be chosen and is kept fixed. No complex
+period coefficient is presumed to have a $p$-adic descent.
+
+Over $K$, root evaluation gives exactly
+\[
+ \SSS_K\simeq\prod_{i=0}^3K[\eta_i]/(\eta_i^2-d_i).     \tag{IC11}
+\]
+There is no infinity factor: $A\ne0$ and all four roots are finite.
+This is not the seven-dimensional reciprocal-cubic algebra.
+
+\begin{theorem}[Generic local signed types]\label{thm:fields}
+An E state has either
+\[
+ K^4\times K_{\rm ram}^2
+ \quad\text{or}\quad K_{\rm unr}^2\times K_{\rm ram}^2,
+                                                                  \tag{IC12}
+\]
+and consequently four or zero $K$-rational signed inverse points.
+An M state has either
+\[
+ K^8\quad\text{or}\quad K^4\times K_{\rm unr}^2,          \tag{IC13}
+\]
+and consequently eight or four such points. Repeated field factors retain their
+root labels; they are not identified.
+\end{theorem}
+\begin{proof}
+For E the two valuation-one derivatives have square ratio: after dividing by
+$p$ their ratio is $-1\pmod p$. They define the same ramified quadratic extension.
+At the other two roots the derivative residues are
+\[
+ -\frac{a^2(a-b)}{a+b},\qquad -\frac{b^2(b-a)}{a+b}.
+\]
+Their ratio is a square, so either both split or both define the unramified
+quadratic extension. This proves (IC12).
+
+For M, divide the three cluster derivatives by $p^2$. Their unit residues are
+\[
+ (1-b)(1-c),\quad(b-1)(b-c),\quad(c-1)(c-b).              \tag{IC14}
+\]
+Their product is the negative of a nonzero square. Since $-1$ is a square,
+either all three or exactly one are squares. At the singleton,
+$d_1\equiv-a^2$ is a square. This proves (IC13).
+
+For the local facts, a square unit modulo the odd prime has unique compatible
+lifts after a sign is chosen: if $z_n^2\equiv d\pmod{p^n}$, set
+$z_{n+1}=z_n+p^nk$, with
+$k\equiv-(z_n^2-d)/p^n\,(2z_n)^{-1}\pmod p$.
+A nonsquare unit has irreducible separable quadratic reduction and gives the
+unramified quadratic extension. An odd-valuation class gives a ramified
+quadratic. These are also the standard constructions in
+\cite[Chapter 7, Newton's lemma and local extensions]{Milne}.
+\end{proof}
+
+At the single hard prime $p=1009$, all four alternatives occur. The respective
+original $(a,u)$ and ordered denominators are
+\[
+\begin{array}{c|c|c}
+\text{channel, number of }K\text{-points}&(a,u)&(x,y,z)\\\hline
+E,0&(253,11)&(253,87032,3818056)\\
+E,4&(253,23)&(253,86020,7890380)\\
+M,8&(253,11)&(253,2042216,88792)\\
+M,4&(253,23)&(253,1021108,92828).
+\end{array}                                                   \tag{IC15}
+\]
+These are four independently checked original states. In particular a
+$K$-rational point on the literal signed fibre is not a necessary condition for
+an ES witness. Every row still has eight geometric characteristic-zero points.
+
+\section{Exact normalization, conductors and invariant factors}
+Put $k_i=\lfloor\vp(d_i)/2\rfloor$ and
+\[
+ \theta_i=\eta_i/p^{k_i},\qquad
+ \delta_i=d_i/p^{2k_i},\qquad
+ N_i=\oo[\theta_i]/(\theta_i^2-\delta_i),\qquad
+ \NN=\prod_iN_i.                                         \tag{IC16}
+\]
+Each $\delta_i$ is a unit or has valuation one. Thus $N_i$ is the maximal
+integral order in its generic factor. For a field factor, integrality of
+$a+b\theta_i$ first gives $a\in\oo$ by its trace. Its norm then gives
+$2\vp(b)+\vp(\delta_i)\ge0$, forcing $b\in\oo$ because $\vp(b)$ is integral.
+For a split unit factor use the two values $a\pm b\sqrt{\delta_i}$ and the
+unit $2\sqrt{\delta_i}$. This also proves maximality without an unspecified
+integral basis.
+
+The precise normalization map is
+\[
+ f(T)+\eta g(T)\longmapsto
+ \bigl(f(\ell_i)+p^{k_i}g(\ell_i)\theta_i\bigr)_{i=0}^3,
+ \qquad \deg f,\deg g<4.                                \tag{IC17}
+\]
+It is injective: over $K$, evaluate at all distinct labelled roots.
+All its inverse coefficients are provided by the corresponding Lagrange
+polynomials, so its integral image can be tested without changing the lattice.
+
+\begin{theorem}[Complete original integral defect]\label{thm:index}
+For E,
+\[
+ \NN/\SSS\simeq(\oo/p)^2,
+ \qquad[\NN:\SSS]=p^2,
+ \qquad\mathfrak f_E=pN_0\times N_1\times N_2\times pN_3.       \tag{IC18}
+\]
+For M,
+\[
+ \NN/\SSS\simeq(\oo/p)^2\oplus(\oo/p^2)^2\oplus\oo/p^3,
+ \qquad[\NN:\SSS]=p^9,
+\]
+\[
+ \mathfrak f_M=p^3N_0\times N_1\times p^3N_2\times p^3N_3.      \tag{IC19}
+\]
+Here $\mathfrak f=\{n\in\NN:n\NN\subseteq\SSS\}$ is the conductor ideal in
+this finite algebra. It is not the analytic weighted conductor of the Zeta
+programme. In the eight-dimensional original basis, the Smith exponents are
+\[
+ E:(0,0,0,0,0,0,1,1),\qquad
+ M:(0,0,0,1,1,2,2,3).                                   \tag{IC20}
+\]
+\end{theorem}
+\begin{proof}
+Unit differences split off every noncolliding root integrally, by the polynomial
+CRT. For E, the remaining root lattice on the pair $p,pc$ is exactly
+\[
+ L_2=\{(z_0,z_3)\in\oo^2:z_0-z_3\in p\oo\}.
+\]
+A linear interpolation proves sufficiency, since $p-pc$ is $p$ times a unit.
+Both coefficients $f$ and $g$ in (IC17) give a copy of $L_2$: here $k_i=0$.
+This proves the quotient and exponents. A normal element supported at just one
+of these two roots is in the original order precisely when its coefficients
+of $1$ and $\theta_i$ both lie in $p\oo$. The resulting $pN_i$ is an ideal and
+is maximal with this property, giving (IC18).
+
+For M, order the cluster as $p,pb,pc$ and use the Newton polynomial basis
+$1,T-p,(T-p)(T-pb)$. Evaluation gives diagonal factors $1,p,p^2$ times units,
+and integral row operations remove the lower entries. Thus its root lattice
+$L_3$ has quotient $\oo/p\oplus\oo/p^2$. The two coefficients in (IC17)
+give $L_3\oplus pL_3$. Their exponents are $(0,1,2)$ and $(1,2,3)$; the
+singleton contributes two zeros. This proves (IC19)--(IC20).
+
+For the conductor, a vector supported at one of the three roots has a unique
+Lagrange interpolation of degree at most two. Its leading coefficient has
+denominator of exact order $p^2$. Hence a normal value $a+b\theta_i$ supported
+there belongs to $\SSS$ precisely when $a\in p^2\oo$ and $b\in p^3\oo$.
+For it to lie in the conductor, multiplication by the unit $\theta_i$ must also
+belong to the order. This forces $a,b\in p^3\oo$, and that condition is
+sufficient because $1,\theta_i$ is the full normal basis. The singleton is
+already maximal. This proves the displayed conductor.
+\end{proof}
+
+The root orders alone have indices $p$ (E) and $p^3$ (M), with Smith exponents
+$(0,0,0,1)$ and $(0,0,1,2)$. A further exact check is the trace discriminant:
+\[
+ \vp\Disc(\SSS)=2\vp\Disc(\OO)+\sum_i\vp(4d_i)
+ =6\ (E),\quad18\ (M).
+\]
+The normal algebra has discriminant valuation two (E) or zero (M). The square
+of the change-of-basis determinant again gives index exponents two and nine.
+Neither determinant is a density or positivity assertion.
+
+\begin{corollary}[The original actions on the finite defect module]
+Let $Q=N/\widehat S$, a module rather than a quotient ring. Multiplication by the
+original $T$ and $\eta$ descends to it. Their exact nilpotence indices are
+\[
+ E:(1,2),\qquad M:(3,3),                                \tag{IC20a}
+\]
+respectively. Thus the finite quotient retains nonzero action, even though
+rational extension removes it.
+\end{corollary}
+\begin{proof}
+The quotient is supported only at the colliding roots. For E, $T$ is divisible
+by $p$ there and $\eta^2=d_i$ is also divisible by $p$, so the conductor kills
+both actions. Multiplying a supported normal constant by $\eta$ still has a
+coefficient not divisible by $p$ and is nonzero in $Q$.
+For M, both $T^3$ and $\eta^3$ have a factor $p^3$ at each colliding normal
+factor. But their squares, applied to a supported normal $\theta_i$, have a
+$\theta_i$-coefficient of exact valuation two. The membership criterion in the
+proof of Theorem~\ref{thm:index} requires three, so both squared actions remain
+nonzero. All the normal root quotients are units, precluding cancellation.
+\end{proof}
+
+\paragraph{Complete inverse coordinates.}
+For a normal vector $a_i+b_i\theta_i$, interpolate the four values $a_i$ to
+obtain $f(T)$, and the values $b_i/p^{k_i}$ to obtain $g(T)$. Membership in the
+original order means all eight coefficients of $f,g$ are in $\oo$. Thus (IC17)
+has an explicit partial integral inverse and a total $K$-linear inverse.
+The quotient in (IC18) or (IC19) is retained when the integral inverse fails.
+There is no $\oo$-linear splitting of its surjection from $\NN$, since that
+would map a nonzero torsion module into a torsion-free one.
+
+\section{Boundary fibres and a sharp finite lifting obstruction}
+At E, the colliding factor of the special fibre is
+\[
+ \F_p[\epsilon,\eta]/(\epsilon^2,\eta^2-2g_0\epsilon)
+ \simeq\F_p[\eta]/(\eta^4),\qquad g_0=-ab/S\ne0.         \tag{IC21}
+\]
+At M it is
+\[
+ \boxed{\F_p[\epsilon,\eta]/(\epsilon^3,\eta^2-3\epsilon^2).} \tag{IC22}
+\]
+These follow from the actual reduced quartics, respectively
+$-S^{-1}T^2(T-a)(T-b)$ and $T^3(1-T/a)$, using the supplied
+multiple-root algebra \cite[equation (23)]{Input}. Their dimensions are four
+and six. Multiplication by $\epsilon$ has blocks $(2,2)$ or $(3,3)$.
+Multiplication by $\eta$ has blocks $(4)$ or $(4,2)$: on
+$1,\epsilon,\epsilon^2,\eta,\epsilon\eta,\epsilon^2\eta$ in (IC22), its
+successive ranks are $6,4,2,1,0$. Thus (IC22) is not a single length-six chain.
+
+The normalization map modulo $p$ has kernel dimension two on the E collision
+block and five on the M collision block. For E, $T$ becomes zero in each normal
+factor modulo $p$, while $\eta$ gives its two labelled nonzero nilpotents. For M,
+both $T=p\zeta$ and $\eta=p\theta$ become zero in the normal special fibre.
+These are the kernels dictated by (IC20), not a deletion of the original labels.
+
+\begin{theorem}[The added E point stops at the third digit]\label{thm:lift}
+The point $(T,\eta)=(0,0)$ of (IC21) has exactly $p$ lifts solving both original
+equations modulo $p^2$, and has no lift modulo $p^3$.
+\end{theorem}
+\begin{proof}
+Write $\mathcal H(T)=U(T)(T-p)(T-pc)$, with
+$U(T)=-(T-a)(T-b)/S$ a unit near zero. A putative lift modulo $p^2$ is
+$T=pw,\eta=pv$, with $w,v\in\F_p$. The first equation is automatic. The
+second gives
+\[
+ 0\equiv pU(0)(2w-1-c)\pmod{p^2},
+\]
+so $w=(1+c)/2=5/8\pmod p$. The $p$ values of $v$ are all possible.
+For any higher lift of that $T$,
+\[
+ \frac{\mathcal H(T)}{p^2}\equiv
+ -U(0)\frac{(1-c)^2}{4}
+ =\frac{9ab}{64S}\not\equiv0\pmod p.                   \tag{IC23}
+\]
+Thus the root equation already fails modulo $p^3$, independently of $\eta$.
+\end{proof}
+
+The finite flat completion is proper, but this boundary point has no integral
+$\oo$-section. The ramified generic points remain over their actual quadratic
+extensions. At $p=1009$ in the first row of (IC15), the entire generic signed
+fibre has no $K$-point despite an original ES solution and a rational special
+boundary point. No smooth Hensel hypothesis is available at $\eta=0$.
+
+For M, the collision block instead has the exact integral normalization chart
+\[
+ G(Z)=(Z-1)(Z-b)(Z-c),\qquad
+ G(Z)=0,\quad \theta^2=\frac{a-pZ}{S}G'(Z),              \tag{IC24}
+\]
+with $T=pZ,\eta=p\theta$. This is finite etale of rank six, since the reduced
+roots are distinct and the right side is a unit there. The inverse divides
+exactly by those powers of $p$. The character product in (IC14) proves that
+at least one cluster root has two $K$-rational signed lifts. Thus the M boundary
+point does lift to $\oo$, although its full multiplicity and the index $p^9$
+are still retained.
+
+The original physical inverse (IC10) has pole $\vp(\xi)=-1/2$ on the E cluster
+and $\vp(\xi)=-1$ on the M cluster. Inverting $\eta$ in (IC21) or (IC22)
+annihilates that local algebra; it does not turn the added state into a finite
+original affine inverse. The supplied complex metric limit remains the one in
+\cite[equations (21)--(22)]{Input}; no identification of that complex norm with
+this nonarchimedean valuation is asserted.
+
+\section{The generic prime-sign symmetry has an integral defect}
+The distinguished-root projector is
+\[
+ e_p(T)=\frac{\prod_{i=1}^3(T-\ell_i)}{\prod_{i=1}^3(p-\ell_i)}.
+                                                               \tag{IC25}
+\]
+Its values are $(1,0,0,0)$. Its coefficients require an exact denominator $p$
+in E and $p^2$ in M, since its numerator is monic and the denominator has
+those respective valuations. This is also the supplied $g_p/d_p$ projector
+\cite[equations (9)--(11)]{Input}.
+
+Among the supplied four generic deck sign maps, the prime-only flip is
+\[
+ T\longmapsto T,\qquad \eta\longmapsto(1-2e_p(T))\eta.
+                                                               \tag{IC26}
+\]
+Uniqueness in the original free basis (IC9) proves that it does not preserve
+$\SSS$. Nor does its negative, the denominator-only flip. The identity and the
+simultaneous sign $\eta\mapsto-\eta$ do preserve it. All four extend to the
+normalization (IC16), where their action is an independent sign on the labelled
+quadratic factors. This conclusion concerns those four source deck maps, not
+all automorphisms of a specialized split algebra.
+
+\section{Literal channel interpolation and reciprocal inversion}
+Suppose actual E and M states are both supplied at the same $p$. Denote their
+ordered literal roots by $x_i$ and $y_i$. The exact root-algebra maps are
+\[
+ F(T)=\sum_i y_i\frac{\prod_{j\ne i}(T-x_j)}{\prod_{j\ne i}(x_i-x_j)},
+ \qquad
+ G(T)=\sum_i x_i\frac{\prod_{j\ne i}(T-y_j)}{\prod_{j\ne i}(y_i-y_j)}.
+                                                               \tag{IC27}
+\]
+Evaluation proves both inverse compositions on the respective quotient rings.
+Under their common label coordinates in $K^4$, the integral orders obey
+\[
+ \OO_M\subset\OO_E,
+ \qquad[\OO_E:\OO_M]=p^2.                              \tag{IC28}
+\]
+Indeed the three M cluster values are congruent modulo $p$, in particular at
+the E pair of labels $0,3$. The already proved indices give the ratio.
+Thus $F$ is integral. In the reverse interpolation, the summand at label $2$
+has unit output $x_2$ and a denominator of valuation two; the other cluster
+outputs are divisible by $p$. Consequently
+\[
+ \boxed{\min_j\vp(G_j)=-2,\qquad
+ p^2G(T)\bmod p=c_0T^2(T-a_M),\quad c_0\ne0.}           \tag{IC29}
+\]
+This proves the exact lost factor, not just an upper denominator estimate.
+At $p=1009$, the pair of $(a,u)=(253,11)$ states in (IC15) gives
+$c_0=306$ and $p^2G\equiv275T^2+306T^3\pmod{1009}$.
+
+The full signed generic algebras need not be isomorphic over $K$: E has ramified
+field factors and M has none. The surviving comparison is explicit after a
+specified extension. Adjoin square roots $\delta_i^2=d_i^M/d_i^E$ and send
+$\eta_M$ to $\delta(T)\eta_E$, where $\delta$ is the labelled interpolation
+of the $\delta_i$. The inverse uses their reciprocals. The extension has degree
+at most four: for odd $p$, unit classes are square or a fixed nonsquare unit,
+and the only additional parity is that of $p$. The original integral images
+must still be tested by (IC17); they are not made unit lattices by this field
+isomorphism.
+
+This is applicable to actual source-changing returns, for example the preceding
+capacity certificate \cite[sharp finite repair]{Capacity} at $p=825241$:
+\[
+ E:(a,R,u,h,r,s,\kappa)=(206321,43,2240439739,19,10859,1,208402140),
+\]
+\[
+ M:(a,R,u,h,r,s,\lambda)=(217170,43439,25,1,5,43434,1).
+\]
+The latter is supplied there by the noncanonical original cofactor word $25$,
+not by interpolation in (IC27). The current certificate transports both actual
+states through (IC18)--(IC29), preserving their different factor inventories.
+No M state is assumed to exist in order to use (IC27) as an existence proof.
+
+\subsection{The reciprocal model changes the lattice and the signed square class}
+\label{sec:reciprocal}
+Keep all four roots while applying $z_i=p/\ell_i$. On the literal root algebra,
+\[
+ \boxed{I(T)=-\frac pD(AT^3+T^2+BT+C)=p/T.}              \tag{IC30}
+\]
+Its exact coefficient denominator is $p$ in E and $p^2$ in M. The transformed
+monic polynomial is $Z^4L(p/Z)/L(0)$, where $L=\prod(T-\ell_i)$.
+If $N=\prod_i\ell_i$ and the normalized reciprocal quartic is
+$\widetilde{\mathcal H}=-\frac15\prod(Z-z_i)$, differentiation gives
+\[
+ \boxed{\widetilde{\mathcal H}'(z_i)=
+ \omega\frac{\mathcal H'(\ell_i)}{\ell_i^2},\qquad
+ \omega=-\frac{p^3S}{5N}.}                              \tag{IC31}
+\]
+The four reciprocal roots sum to five; the coefficient $-1/5$ is therefore
+fixed, not fitted. The signed comparison needs the recorded quadratic twist
+$\sqrt\omega$. Its valuation is one in E and zero in M.
+
+The reciprocal discriminant valuation is the literal value plus
+$12-6\vp(N)$, hence two in E and zero in M. The reciprocal root order has
+index $p$ in E and is maximal in M. In E its colliding labels are now $1,2$,
+not $0,3$. Removing the separately marked root $z_0=1$ yields the preceding
+reciprocal cubic, whose signed derivatives acquire the further factors
+$-(z_i-1)/5$ from the augmented quartic. This states the maps and square classes
+rather than conflating the earlier seven-point and current eight-point fibres.
+
+\section{A single missing prime passes any fixed finite integrality window}
+The supplied real separation estimates \cite[\S1.2, equations (2)--(4)]{Input}
+are necessary at an integral witness. The next result gives a precise scope
+test for treating them, together with a finite local completion, as sufficient.
+It retains both numerical channel gates and the entire allowed numerical range
+of the proposed integer $u$. The one failed condition is original square-divisor
+availability, at one explicitly designated prime.
+
+\begin{theorem}[A joint, single-prime source obstruction]\label{thm:controls}
+For every fixed finite set of rational primes $\Sigma$, there are infinitely
+many hard primes $p$ and integers $a,R,u$ such that
+\[
+ p/4<a<p/2,\quad R=4a-p=3,\quad0<u<a^2,
+ \quad R\mid4u+1,\quad R\mid u+a,                       \tag{IC32}
+\]
+yet $u\nmid a^2$. There is just one extra prime occurrence in $u$, at a
+specified prime $l\notin\Sigma\cup\{p\}$. In particular
+\[
+ a^2/u\in\Z_q\quad(q\in\Sigma\cup\{p\}),
+ \qquad v_l(a^2/u)=-1.
+\]
+The literal E and M rational denominator returns from these same numerical
+coordinates satisfy the ES identity and all the following conditions:
+\begin{enumerate}
+\item their only nonintegral denominator has reduced denominator exactly $l$;
+\item at $p$ they have the respective E and M local signatures, normalization
+indices, conductors and invariant factors proved above;
+\item their four positive literal roots have successive gaps greater than one;
+\item with $s_p=(p^2+3p)/4$ and $B_p=p+s_p(s_p+1)$, both satisfy
+\[
+ S<B_p,\quad\max(x,y,z)<s_p(s_p+1)/3,\quad
+ \Disc(\mathcal H)\ge144/B_p^6,\quad
+ 2/S\le|\mathcal H'(\ell_i)|\le S^2;
+\]
+\item the same prime $p$ has separately supplied original integer E \emph{and}
+M states. The failed source in (IC32) is not an ES counterexample.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Choose a prime $l\equiv11\pmod{12}$ outside $\Sigma$. Dirichlet's theorem
+\cite[Theorem 18.1]{Dirichlet} permits this choice, and then supplies infinitely
+many primes in the reduced CRT progression
+\[
+ p\equiv1\pmod{840},\qquad p\equiv-1\pmod l.
+\]
+The moduli are coprime. Take $p>4l$ and set
+\[
+ a=(p+3)/4,\quad R=3,\quad u=al,\quad
+ h=a/l,\quad r=l,\quad s=1,\quad
+ \kappa=(pl+1)/3,\quad\lambda=(l+1)/3.                  \tag{IC33}
+\]
+Both quotients are positive integers, and $l<a$ gives $0<u<a^2$.
+Modulo three, $p\equiv a\equiv1$ and $l\equiv2$, so both gates hold.
+But $a\equiv1/2\pmod l$ and $\gcd(a,u)=a$. Thus $h=a/l$ is nonintegral with
+exact denominator $l$. Every prime of $a$ occurs in $u$ with its original
+exponent; the only extra coordinate is $v_l(u)=1$, while $v_l(a)=0$.
+In the centered original box this is exactly $\beta_l=1$ outside $[0,0]$.
+All the equations $a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$ hold, but the positive
+rational grade $h$ is not an allowed original integer grade.
+
+The two explicit returns are
+\[
+ E_{\rm rat}:\quad(a,a\kappa/l,pa\kappa),\qquad
+ M_{\rm rat}:\quad(a,pa\lambda/l,pa\lambda).              \tag{IC34}
+\]
+Multiplication proves their reciprocal identities. Since $p,a,\kappa,\lambda$
+are all units at $l$, the middle displayed denominator has exact reduced
+denominator $l$ and the other two are integers. Every declared finite place
+therefore passes the denominator test and the original divisor valuation test.
+
+At the original prime, $p\nmid a,l,\kappa,\lambda$ and
+$(l/p)=(p/l)=(-1/l)=-1$. Also $a\equiv3/4\pmod p$ is a square. Thus the same
+unit and character calculations as Theorem~\ref{thm:clusters} apply to (IC34):
+in the first return $4a\kappa\equiv1$, while the second has normalized root
+product $a^2\lambda^2/l$ a nonsquare. The reduction patterns, local field
+alternatives and all integral normalization formulas follow exactly. This
+verifies local algebra for rational targets; it does not insert a missing
+integer factor into the original box.
+
+For both triples write their largest denominator as $z=s_p q$,
+where $q=\kappa$ or $\lambda$ and $s_p=pa$. Since $l<a$,
+$\kappa=(pl+1)/3<(s_p+1)/3$, and the same bound holds for $\lambda$.
+Hence $z<s_p(s_p+1)/3$. Their other denominator is $z/(pl)$ in E and $z/l$ in M.
+It is greater than $pa/3>p+1$; also $p-a>1$ and $z-y>1$. Thus the ordered root
+list $a,p,y,z$ has successive gaps greater than one, and
+$S=p+a+y+z<p+3z<B_p$. Four such roots have Vandermonde modulus at least twelve.
+The product of three differences at a selected root is at least two and at most
+$S^3$. The claimed discriminant and derivative bounds follow from
+$\mathcal H=-S^{-1}\prod(T-\ell_i)$.
+
+Finally retain the genuine endpoint data
+\[
+ R_E=l,\quad a_E=u_E=(p+l)/4,\quad
+ (h_E,r_E,s_E,\kappa_E)=(a_E,1,1,(p+1)/l).
+\]
+They are integral and return $(a_E,a_E\kappa_E,pa_E\kappa_E)$.
+There is also a genuine middle state: put
+$j=(l+1)/4$, $c=(p+1)/l$, then
+\[
+ (h_M,r_M,s_M,\lambda_M)=(j,1,c,1),\quad a_M=jc,\quad
+ R_M=c+1,\quad u_M=j.
+\]
+Its identity is $p=lc-1=4jc-c-1$. Since $l\ge11$ and $c>4$, both first-half
+inequalities hold. This gives the last assertion without assuming ES.
+\end{proof}
+
+For $\Sigma=\{2,3,5,7,11\}$, choose $l=23$ and the hard prime $p=35281$.
+The numerical source is
+\[
+ a=8821,\quad R=3,\quad u=202883,
+ \quad(h,r,s,\lambda,\kappa)=(8821/23,23,1,8,270488).
+\]
+The two nonintegral denominator triples are
+\[
+ \boxed{E_{\rm rat}=(8821,2385974648/23,84179571556088),}
+\]
+\[
+ \boxed{M_{\rm rat}=(8821,2489709608/23,2489709608).}      \tag{IC35}
+\]
+The E target has zero rational local signed points and the M target has four.
+Their local normalization and ramification types are different. The only forbidden original factor is
+$23\mid u$, while $23\nmid a=8821$. A second complete example at $p=54601$ is
+included in the certificate. Trial division proves these displayed primes.
+
+This theorem does not concern all places simultaneously: the omitted place is
+explicit. Nor does it exclude an adaptive test of every possible denominator
+prime. It proves that a fixed finite collection of local observations, even
+with the original numerical ranges, both channel congruences and the stated
+real bounds, is not original square-divisor membership. For the broader
+arithmetic-approximation context, compare \cite[Theorems 1.1, 1.8--1.9]{BL}.
+The separate companion fragment \texttt{crt\_control\_note.tex} preserves an
+additional exact CRT construction with three larger-prime control targets;
+those targets and their full equations are also independently checked.
+
+\section{Verification scope, information loss, and continuation}
+The full replay covers every original first-half box for the 99 primes
+$p\equiv1\pmod{12}$ through 3000: 868359 square divisors and 4505 labelled
+states, of which 2451 are E and 2054 are oriented M. It compares all derivative
+valuations, characters, coefficient identities and local point alternatives.
+The deep lattice calculations expand every original normalization matrix at
+the four $p=1009$ examples. The separate checker uses all minors for the
+invariant factors and independent Lagrange inversion, rather than the first
+program's elimination. Both test the direct $p^2/p^3$ boundary equations, the
+actual capacity crossing, and every supplied rational control.
+
+The main verifier is standard-library Python. The separate implementation imports
+none of it or of the preceding work. Its original source enumeration is by
+primitive coprime $r,s$ and $h=a/(rs)$, rather than by divisors of $a^2$.
+The prime domains, original vectors, ordered states and finite computation
+ranges are all recorded in JSON. Checks of a finite prefix are not a proof
+that the original source is nonempty at every prime.
+
+No source coefficient is created by normalization. The exact sequence
+$0\to\SSS\to\NN\to\NN/\SSS\to0$ retains all the finite torsion coordinates
+in (IC18)--(IC20). Taking a quotient, a rational extension, or a reduction modulo
+$p$ is accompanied by its calculated kernel. A receiving zero is not relabelled
+as absence of an original divisor word, and an added nilpotent boundary point
+is not promoted to an original E/M word. The countermodels in
+Theorem~\ref{thm:controls} make that latter distinction quantitative.
+
+The remaining Turn~7 task is still to force a positive original integer
+coefficient for each prescribed hard prime. The completed same-grade capacity
+classification remains available, and its actual source-changing maps are
+compatible with the lattice comparison here. Finite rank, properness, local
+normalization and the displayed approximation bounds do not supply the initial
+arithmetic state by themselves. No Turn~8 witness guarantee, universal ES
+proof, Lean build or independent mathematical review is claimed.

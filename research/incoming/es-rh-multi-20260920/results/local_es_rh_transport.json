@@ -1,0 +1,32 @@
+{
+  "checks": [
+    "ES cofactor constant",
+    "ES cofactor derivative",
+    "actual repeated ES example",
+    "RH cofactor constant 1",
+    "RH cofactor derivative 1",
+    "local unit coefficient 1",
+    "RH cofactor constant -1",
+    "RH cofactor derivative -1",
+    "local unit coefficient -1",
+    "full residue functional transport 0,0",
+    "full residue functional transport 1,0",
+    "full residue functional transport 0,1",
+    "full residue functional transport 2,3",
+    "centered generator under eta scaling",
+    "coordinate determinant"
+  ],
+  "controls": [
+    "the cofactor derivative may be silently discarded"
+  ],
+  "exact_checks": 15,
+  "negative_controls": 1,
+  "results": {
+    "local_length": 4,
+    "qualification": "Residue pairing is complex bilinear, not the original Hermitian norm.",
+    "residue_unit": "c^3*(1+(2/(3*p)+i*sign/gamma)*epsilon)",
+    "scaling_equation": "c^2=3*p/(44*gamma^2)"
+  },
+  "status": "PASS",
+  "suite": "local_es_rh_transport"
+}

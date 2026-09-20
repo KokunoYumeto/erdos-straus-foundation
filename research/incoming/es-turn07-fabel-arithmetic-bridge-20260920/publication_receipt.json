@@ -1,0 +1,8 @@
+{
+  "remote_pr_created": false,
+  "status": "No remote write was executed; no create/push action was exposed in this session.",
+  "local_source_only_commit": "411f9aacd0f90bb6a1a4d6d76a1688b966fa5830",
+  "local_tree": "ba49059f61bea35ace2aae541f810e41815574de",
+  "upstream_clone": false,
+  "additive_patch_replayed": true
+}

@@ -168,8 +168,105 @@
       "proof": "research/incoming/es-fable-zeta-bridge-20260920/ES_FABLE_ZETA_CROSSWALK.tex",
       "reader": "research/incoming/es-fable-zeta-bridge-20260920/output/pdf/ES_FABLE_ZETA_CROSSWALK.pdf",
       "claims": "research/incoming/es-fable-zeta-bridge-20260920/claims.json",
-      "checker": "research/incoming/es-fable-zeta-bridge-20260920/verify_es_fable_zeta_bridge.py",
-      "scope": "Normalized literal-root quartic with intrinsic prime and exact coefficient hypersurface; complete eight-point signed fibre and Turn 7 inverse; distinct seven-state reciprocal suspension; exact fixed weighted-conductor transport and root-algebra bridge; universal ES occupancy and zeta-zero implications remain unproved.",
+      "checkers": [
+        "research/incoming/es-fable-zeta-bridge-20260920/verify_es_fable_zeta_bridge.py",
+        "research/incoming/es-fable-zeta-bridge-20260920/verify_odd_receiver_es_pullback.py",
+        "research/incoming/es-fable-zeta-bridge-20260920/verify_fable_es_raw_tetrahedron.py",
+        "research/incoming/es-fable-zeta-bridge-20260920/verify_fixed_input_boundary.py"
+      ],
+      "scope": "Normalized literal-root quartic with intrinsic prime and exact coefficient hypersurface; complete eight-point signed fibre and Turn 7 inverse; distinct seven-state reciprocal suspension; exact elementary transform with one-scale fibre, projective root-scheme isomorphism and 14-point signed fibre product; invertible raw-cell--Lorentz transport; exact odd receiving divisor and positive-real intersection; all hard-prime witnesses in the distinct-root domain with fixed-p bounds; fixed-input rank-2+6 cover over B_p={(A,C): A C d_p Disc(g_p) != 0}, with order-48 monodromy and C2 x C2 deck group; finite flat rank-eight collision completion; invertible marked moment frame; exact fixed weighted-conductor transport; universal ES occupancy and global zeta-zero implications remain unproved.",
+      "integration_audit": "research/incoming/es-fable-zeta-bridge-20260920/INTEGRATION_AUDIT_20260920.md",
+      "received_source": "research/incoming/es-fable-zeta-bridge-20260920/received/combined-continuation-20260920.txt",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:turn-7-fabel-arithmetic",
+      "overview": "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/INTEGRATION_AUDIT.md",
+      "proof": "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/corrected/workbench.tex",
+      "reader": "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/corrected/output/workbench.pdf",
+      "claims": "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/verify.py",
+        "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/check_independent.py",
+        "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/check_polynomial.py",
+        "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/verify_integration_extensions.py"
+      ],
+      "scope": "Prime-local seven-state fibre algebra, ramified exterior versus unramified middle factors, exact index-p exterior root order and interpolation loss, corrected same-prime negative-four-square channel transfer, and a complete finite divisor-fibre bijection onto every middle state with normalized cofactor Q=h; universal E/M occupancy remains unproved.",
+      "received_manifest": "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/MANIFEST.json",
+      "integration_audit": "research/incoming/es-turn07-fabel-arithmetic-bridge-20260920/INTEGRATION_AUDIT.md",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:turn-7-capacity",
+      "overview": "research/incoming/es-turn07-capacity-completion-20260920/README.md",
+      "proof": "research/incoming/es-turn07-capacity-completion-20260920/workbench.tex",
+      "reader": "research/incoming/es-turn07-capacity-completion-20260920/output/workbench.pdf",
+      "preprint": "research/incoming/es-turn07-capacity-completion-20260920/output/preprint.pdf",
+      "claims": "research/incoming/es-turn07-capacity-completion-20260920/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-capacity-completion-20260920/verify.py",
+        "research/incoming/es-turn07-capacity-completion-20260920/check_independent.py"
+      ],
+      "scope": "Exact canonical/companion/finite classification of every W dividing j^2 in one fixed residue class t modulo h=4j-1, with inverse and disjointness; sharp finite boundary h <= t^2-3t+1 and equality family; automatic alpha returns for t=1,2,3 and beta returns for t dividing 36; infinitely many hard-prime equality states; for every fixed t>=4, infinitely many hard-prime exterior states with empty complete same-grade middle box; these exterior states remain ES solutions and no universal occupancy or counterexample is asserted.",
+      "integration_audit": "research/incoming/es-turn07-capacity-completion-20260920/INTEGRATION_AUDIT_20260920.md",
+      "received_source": "research/incoming/es-turn07-capacity-completion-20260920/received/pasted-continuation-20260920.txt",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:es-rh-multi",
+      "overview": "research/incoming/es-rh-multi-20260920/README.md",
+      "proof": "research/incoming/es-rh-multi-20260920/RESEARCH_CONTINUATION.md",
+      "reader": "research/incoming/es-rh-multi-20260920/output/reader.pdf",
+      "claims": "research/incoming/es-rh-multi-20260920/claims.json",
+      "checkers": [
+        "research/incoming/es-rh-multi-20260920/checks/run_validation.py"
+      ],
+      "scope": "Exact positive-real rank-three odd-frame crossing and integral zero-or-bound dichotomy; perfect residue pairing with trace factor M_(2 eta^3), collision ranks and nonconstant local residue-unit correction; exact residue-to-native Gram multiplier with retained arbitrary-ES relation defect; RH-facing inverse-trace and common-parameter Bernstein interfaces. No universal ES occupancy, integral frame nonvanishing, global ES-zeta identification, RH result or actual native-current sign certificate is asserted.",
+      "integration_audit": "research/incoming/es-rh-multi-20260920/INTEGRATION_AUDIT_20260920.md",
+      "received_source": "research/incoming/es-rh-multi-20260920/received/pasted-continuation-20260920.txt",
+      "received_zip": "research/incoming/es-rh-multi-20260920/received/ES_RH_Multi_20260920.zip",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:turn-7-integral-completion",
+      "overview": "research/incoming/es-turn07-integral-completion-20260920/README.md",
+      "proof": "research/incoming/es-turn07-integral-completion-20260920/core.tex",
+      "reader": "research/incoming/es-turn07-integral-completion-20260920/output/workbench.pdf",
+      "preprint": "research/incoming/es-turn07-integral-completion-20260920/output/preprint.pdf",
+      "claims": "research/incoming/es-turn07-integral-completion-20260920/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-integral-completion-20260920/verify.py",
+        "research/incoming/es-turn07-integral-completion-20260920/check_independent.py"
+      ],
+      "scope": "Original literal-root rank-eight order over Z_p with complete E/M normalization matrices, Smith factors, conductor ideals, inverse lattices and reduction kernels; Type-I boundary lift obstruction; exact one-way interpolation loss; finite-place control family. No universal occupancy or ES counterexample is asserted.",
+      "integration_audit": "research/incoming/es-turn07-integral-completion-20260920/INTEGRATION_AUDIT_20260920.md",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:defining-prime",
+      "overview": "research/incoming/es-defining-prime-continuation-20260920/README.md",
+      "proof": "research/incoming/es-defining-prime-continuation-20260920/DEFINING_PRIME_CONTINUATION.md",
+      "reader": "research/incoming/es-defining-prime-continuation-20260920/output/reader.pdf",
+      "claims": "research/incoming/es-defining-prime-continuation-20260920/claims.json",
+      "checkers": [
+        "research/incoming/es-defining-prime-continuation-20260920/verify_defining_prime.py"
+      ],
+      "scope": "Complete defining-prime collision-stratum Smith formulas, exact translated-chart quadratic twist, fixed-prime rank-2+6 fibre product, retained Gamma-metric minimum and local signed-label Artin-conductor identity. The twist descent and separation from a complex zeta operator remain explicit.",
+      "integration_audit": "research/incoming/es-defining-prime-continuation-20260920/INTEGRATION_AUDIT.md",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:arithmetic-frame-descent",
+      "overview": "research/incoming/es-rh-continuation-b-20260920/README.md",
+      "proof": "research/incoming/es-rh-continuation-b-20260920/RESEARCH_CONTINUATION.md",
+      "reader": "research/incoming/es-rh-continuation-b-20260920/output/reader.pdf",
+      "claims": "research/incoming/es-rh-continuation-b-20260920/claims.json",
+      "checkers": [
+        "research/incoming/es-rh-continuation-b-20260920/check_es_arithmetic_descent.py"
+      ],
+      "scope": "Three-character sufficient condition for original odd-frame nonsingularity on 3456 reduced classes modulo 521220; exact q=61 signed-cover descent for the witness (13;4,18,468); sharp paired determinant return and finite heat-action remainders with their distinct verification boundary. No necessity, universal occupancy, RH result or Riemann-zeta identification is asserted.",
+      "integration_audit": "research/incoming/es-rh-continuation-b-20260920/INTEGRATION_AUDIT.md",
+      "received_source": "research/incoming/es-rh-continuation-b-20260920/received/RESEARCH_CONTINUATION.md",
       "changes_zenodo_edition": false
     }
   ],
@@ -190,7 +287,32 @@
       "normalized literal-root quartic with intrinsic prime and exact coefficient hypersurface",
       "complete degree-eight signed fibre for every actual Turn 7 exterior state",
       "separate seven-state reciprocal suspension and its nonproper locus",
-      "fixed weighted-conductor square with zero-kernel receiving maps"
+      "exact literal-to-reciprocal elementary transform with one-scale fibre and 14-point signed fibre product",
+      "fixed weighted-conductor square with zero-kernel receiving maps",
+      "all positive integral witnesses at primes 1 mod 12 lie in the eight-sheet distinct-root domain",
+      "fixed-input rank-2+6 signed cover with order-48 monodromy and C2 x C2 deck group",
+      "finite flat rank-eight collision completion with exact length-2m local fibres",
+      "exact local algebra map from the rational ES double-root family to the paired-root auxiliary",
+      "invertible marked odd-moment frame and exact receiving-divisor factorization"
+      ,"invertible raw-cell--Lorentz transport retaining the exact three-dimensional tetrahedron"
+      ,"odd receiving determinant pullback with a proved positive-real ES intersection"
+      ,"prime-local seven-state fibre algebra with ramified E and unramified M quadratic factors"
+      ,"exact exterior root order of index p and maximal middle root order"
+      ,"negative-four-square same-prime E-to-M target change with complete corrected inverse fibres"
+      ,"complete fixed-Q middle fibre U | ((h+1)/4)^2 with h | p+4U"
+      ,"complete fixed-target capacity trichotomy with sharp finite boundary h <= t^2-3t+1"
+      ,"infinitely many hard-prime sharp-bound states and fixed-t empty same-grade boxes"
+      ,"every residual occupied exterior shape after diagonal and fixed-Q returns has radius at least nine"
+      ,"exact positive-real odd-frame rank-three crossing with integral zero-or-inverse-bound dichotomy"
+      ,"perfect collision-completed residue pairing with trace degeneration exactly through multiplication by 2 eta^3"
+      ,"exact residue-to-native Gram multiplier with retained arbitrary-ES relation defect"
+      ,"inverse-trace native moment floor and common-parameter Bernstein certification procedure on the RH interface"
+      ,"original integral signed-order indices p^2 and p^9 with complete Smith factors and reduction kernels"
+      ,"exact translated-chart quadratic twist and fixed-prime collision gluing"
+      ,"local signed-label Artin conductor and conductor-index identity"
+      ,"three-character odd-frame nonsingularity theorem on 3456 CRT classes"
+      ,"exact q=61 signed-cover descent and nonsquare twist for the witness (13;4,18,468)"
+      ,"sharp paired native determinant return and finite heat-action remainders"
     ],
     "excluded_shortcuts": [
       "a fixed prime-independent cutoff on original grades h and j",
@@ -205,7 +327,20 @@
       "untruncated fixed-sublinear adverse-sign spectral domination",
       "treating the coefficient hypersurface as positive-integral root occupancy",
       "identifying the seven-state suspension with the eight-state literal-root quartic",
-      "identifying the fixed receiving isomorphism with the conductor or with a zeta-zero map"
+      "identifying the fixed receiving isomorphism with the conductor or with a zeta-zero map",
+      "identifying the E and M reciprocal fibres from their equal count of three local points",
+      "dropping the original E gate from the alpha inverse fibre",
+      "treating c | (h+1)/4 as necessary for every same-Q middle return rather than for the two selected words"
+      ,"reusing generic order-192 monodromy after fixing the intrinsic prime"
+      ,"identifying the finite local ES--paired-root algebra map with a global zeta-zero map"
+      ,"treating the marked odd-moment matrix as a single-valued frame on the unmarked coefficient base"
+      ,"using bounded literal roots alone to infer eta q tends to e1 without controlling the coefficient base"
+      ,"dropping the arbitrary-polynomial relation defect when comparing an ES quartic with a native orthogonal polynomial"
+      ,"representing a synthetic Bernstein diagnostic as an actual native-current sign certificate"
+      ,"identifying finite flat rank eight with equality of the original and normalized integral lattices"
+      ,"dropping the square-class condition from the translated-chart descent"
+      ,"treating failure of a sufficient receiving-frame character condition as a singularity certificate"
+      ,"identifying the q=61 finite-fibre zeta function with the Riemann zeta function"
     ]
   },
   "records": {
@@ -217,8 +352,8 @@
     "human_motivations": "polyclank/motivations.json"
   },
   "coverage": {
-    "claims": "All 72 named theorem, lemma, proposition and corollary environments in the current supplement's 15 canonical proof sources.",
-    "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Their full claim-by-claim indexing is not asserted by this index.",
+    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260920-059 are linked from their modules and the daily proof bulletin.",
+    "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Later modules keep their own claims, proof locators and receipts; full claim-by-claim indexing of every historical edition is not asserted.",
     "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
   },
   "checks_interpretation": "File identity, source indexing, published written proofs, exact finite computation and formal checking retain their separate stated scopes. Repeated runs are not independent reviewers or a truth score.",

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-20",
+  "zeta_input": {
+    "repo": "KokunoYumeto/zeta-function-research-reader",
+    "revision": "369f6ea9e0312bdf348ca9efd294735efc99c51d",
+    "path": "workbenches/splitzero-tandem/continuations/20260920-fable-conductor/FABLE_TO_ORIGINAL_CONDUCTOR.tex",
+    "blob": "f777bb9f1434fa90f2f8bc762860048cc1d32bb4",
+    "locators": [
+      "GF1-GF11",
+      "GF16-GF18",
+      "FC32-FC35",
+      "FC50-FC55"
+    ],
+    "use": "Exact original polynomial and complete signed inverse; original conductor conjugacy and its separate action correction."
+  },
+  "predecessor": {
+    "path": "es_turn7_shape_rigidity_20260919_r1/core.tex",
+    "file_id": "file_00000000cdc082108eb3564d1d2e8924",
+    "use": "Original shape, fixed-prime line and grade congruences; new transfer formulas are proved directly."
+  },
+  "primary_antecedents": [
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "year": 2013,
+      "arxiv": "1107.1010",
+      "locator": "Section2, Propositions2.2 and2.6",
+      "role": "Inherited TypeI/II coordinates."
+    },
+    {
+      "author": "Hatcher, A.",
+      "year": 2022,
+      "title": "Topology of Numbers",
+      "locator": "Section6.4",
+      "role": "Quadratic reciprocity and supplementary law."
+    },
+    {
+      "author": "Milne, J. S.",
+      "title": "Algebraic Number Theory",
+      "url": "https://www.jmilne.org/math/CourseNotes/ANT.pdf",
+      "role": "Standard local-field background; all unit lifting and quadratic arguments needed are included.",
+      "year": 2020,
+      "version": "3.08, 19 July 2020",
+      "locator": "Chapter 7, Newton lemma pp.119-123 and local extensions pp.127-130"
+    },
+    {
+      "author": "Tao, T.",
+      "date": "2026-07-21",
+      "title": "A digestion of the Jacobian conjecture counterexample",
+      "url": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/",
+      "role": "Original three-dimensional example attribution, not the additional four-dimensional ES construction."
+    }
+  ],
+  "content_search_queries": [
+    "\"Erdos Straus\" \"Fable\" \"ramification\"",
+    "\"Erd\u0151s\u2013Straus\" \"negative square\""
+  ],
+  "priority": "No exhaustive historical-priority determination; no novelty claim based solely on these searches.",
+  "nonclaims": [
+    "Universal ES positivity",
+    "A universal terminating witness selector",
+    "Qp descent of a complex period matrix",
+    "An isomorphism of E and M seven-point local algebras",
+    "A Lean build",
+    "Independent mathematical review"
+  ]
+}

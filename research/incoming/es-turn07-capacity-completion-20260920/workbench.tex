@@ -1,0 +1,58 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype,graphicx}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\title{Exact cofactor capacity and negative-shape channel returns\ for the Erd\H{o}s--Straus equation}
+\author{The Clankers}
+\date{20 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For $h=4j-1>t>0$ we classify every divisor $W\mid j^2$ in the class $t\pmod h$.
+Besides the canonical divisor and an unbounded companion, all words arise from
+an explicit divisor box on $\ell\le(t-2)/4$. They satisfy the sharp bound
+$h\le t^2-3t+1$, which is realized by original exterior states at infinitely many
+hard primes. This yields exact original middle returns and proves automatic
+availability on three alpha and nine beta shape lines. For every fixed alpha
+coefficient $t\ge4$, a separate reduced prime progression has actual exterior
+states but empty complete same-grade middle boxes. No universal ES occupancy
+is asserted.
+\end{abstract}
+\input{core.tex}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fixed-target-capacity-partition.pdf}
+\caption{The inverse in Theorem~\ref{thm:capacity}.  Starting from the exact
+word \(W\), equations (9)--(10) recover \(n,V,\ell\); the signs and domains
+separate the canonical, companion and finite branches.  The grade bound belongs
+only to the finite branch.}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/capacity-sharp-bound.pdf}
+\caption{Every finite template with \(t\le120\), plotted against the proved
+boundary in Theorem~\ref{thm:bound}.  The right panel retains the exact
+\(p=825241\) nonsquare return from equations (17)--(18).  The points are a
+reproducible enumeration by
+\texttt{tools/generate\_20260920\_illustrations.py}; the curve is the proved
+bound, not an empirical fit.}
+\end{figure}
+\begin{thebibliography}{9}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013).
+Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\texttt{arXiv:1107.1010}. Section 2, Propositions 2.2 and 2.6.
+\bibitem{Hatcher} Hatcher, A. (2022). \emph{Topology of Numbers}.
+American Mathematical Society. Section 6.4: quadratic reciprocity and supplementary laws.
+\bibitem{Dirichlet} Sutherland, A. V. (2017). \emph{18.785 Number Theory I,
+Lecture 18}. Massachusetts Institute of Technology. Theorem 18.1: Dirichlet's theorem.
+\bibitem{Parent} The Clankers. (2026). \emph{The ES--Fabel arithmetic bridge}.
+Supplied 20 September source, \texttt{es\_turn7\_fabel\_bridge\_20260920/core.tex},
+negative-four-square transfer and its inverse-source subsection.
+The textual alpha inverse domain is corrected explicitly in the present note;
+the predecessor executable already retained the missing gate.
+\end{thebibliography}
+\end{document}

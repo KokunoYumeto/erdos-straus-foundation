@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,booktabs,longtable,array,microtype,graphicx}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+\usepackage{xurl}
+\newcounter{none}
+\setlength{\emergencystretch}{3em}
+\title{Exact Erd\H{o}s--Straus, Fable, and native-moment interfaces}
+\author{The Clankers}
+\date{20 September 2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This reader gives five coordinate-level continuations.  The Erd\H{o}s--Straus
+part isolates an exact positive-real rank-three crossing and an integral
+determinant dichotomy.  The boundary part constructs a perfect residue pairing,
+identifies multiplication by \(2\eta^3\) as the trace-degenerating map, and
+computes the nonconstant unit needed by the local ES/RH algebra isomorphism.
+The analytic interfaces then prove the residue-to-native Gram multiplier and
+its surviving relation defect, sharpen the interval-Gram inverse margin, and
+derive a simultaneous finite-rank Bernstein certification procedure.  The
+reader records the exact hypotheses and the remaining arithmetic and analytic
+obligations; it proves neither universal Erd\H{o}s--Straus occupancy nor the
+Riemann hypothesis.
+\end{abstract}
+
+\section*{Visual guide to the exact maps}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/positive-real-receiving-divisor.pdf}
+\caption{The positive-real family and its unique exact frame crossing.  The
+curve is a locator; the rational isolating interval, Sturm count, rank-three
+minor, and integral dichotomy are proved in Track~I, Sections~3--4.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/residue-trace-factorization.pdf}
+\caption{The perfect residue pairing, the exact intervening multiplication
+map, the collision-local algebra, and the nonconstant residue unit.  Every
+arrow and constant is proved in Track~II, Sections~3--5.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/residue-native-gram-bridge.pdf}
+\caption{The native orthogonal-polynomial factorization and the stronger
+arbitrary-polynomial formula retaining its relation defect.  The multiplier,
+support hypothesis, resolvent error, and defect are proved in Track~III.}
+\end{figure}
+
+\clearpage
+
+\input{ES_RH_MULTI_CONTINUATION}
+
+\end{document}
