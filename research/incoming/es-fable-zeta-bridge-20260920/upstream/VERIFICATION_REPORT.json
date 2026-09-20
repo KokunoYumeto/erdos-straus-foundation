@@ -1,0 +1,524 @@
+{
+  "root_compounds": {
+    "branch": [
+      "-epsilon",
+      "2*I/epsilon",
+      "-I/2 + 6*I/epsilon**2",
+      "40*I/epsilon**3"
+    ],
+    "forward": {
+      "matrix": [
+        [
+          "-3*I*epsilon**2/2 + 9*I",
+          "2*epsilon**2",
+          "-epsilon**3",
+          "0"
+        ],
+        [
+          "-7*I/2 - 30*I/epsilon**2",
+          "epsilon**2 - 27",
+          "-3*epsilon",
+          "epsilon**2"
+        ],
+        [
+          "-2/epsilon + 104/epsilon**3",
+          "-I*epsilon - 56*I/epsilon",
+          "-2*I",
+          "2*I*epsilon"
+        ],
+        [
+          "-4*I/epsilon**2 + 64*I/epsilon**4",
+          "2 + 28/epsilon**2",
+          "0",
+          "-1"
+        ]
+      ],
+      "1": {
+        "valuation": -4,
+        "limit_rank": 1,
+        "leading_matrix": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "64*I",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "2": {
+        "valuation": -5,
+        "limit_rank": 1,
+        "leading_matrix": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-672",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "3": {
+        "valuation": -4,
+        "limit_rank": 1,
+        "leading_matrix": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "240",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "4": {
+        "valuation": 0,
+        "limit_rank": 1,
+        "leading_matrix": [
+          [
+            "-2"
+          ]
+        ]
+      }
+    },
+    "inverse": {
+      "matrix": [
+        [
+          "3*I*epsilon**2/2 - I",
+          "-3*I*epsilon**4/2 + 2*I*epsilon**2",
+          "3*epsilon**5/2 - 5*epsilon**3/2",
+          "3*I*epsilon**6/2 - 3*I*epsilon**4"
+        ],
+        [
+          "-3/2 + 2/epsilon**2",
+          "3*epsilon**2/2 - 3",
+          "3*I*epsilon**3/2 - 7*I*epsilon/2",
+          "-3*epsilon**4/2 + 4*epsilon**2"
+        ],
+        [
+          "9*epsilon/4 - 18/epsilon + 12/epsilon**3",
+          "-9*epsilon**3/4 + 39*epsilon/2 - 24/epsilon",
+          "-9*I*epsilon**4/4 + 81*I*epsilon**2/4 - 59*I/2",
+          "9*epsilon**5/4 - 21*epsilon**3 + 35*epsilon"
+        ],
+        [
+          "3 - 138/epsilon**2 + 120/epsilon**4",
+          "-3*epsilon**2 + 140 - 212/epsilon**2",
+          "-3*I*epsilon**3 + 141*I*epsilon - 258*I/epsilon",
+          "3*epsilon**4 - 142*epsilon**2 + 303"
+        ]
+      ],
+      "1": {
+        "valuation": -4,
+        "limit_rank": 1,
+        "leading_matrix": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "120",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "2": {
+        "valuation": -5,
+        "limit_rank": 1,
+        "leading_matrix": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "336",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "3": {
+        "valuation": -4,
+        "limit_rank": 1,
+        "leading_matrix": [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "32*I",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "4": {
+        "valuation": 0,
+        "limit_rank": 1,
+        "leading_matrix": [
+          [
+            "-1/2"
+          ]
+        ]
+      }
+    },
+    "velocity_identity": true,
+    "inverse_determinant": "-1/2",
+    "all_checks_passed": true
+  },
+  "independent_compounds": {
+    "J_equals_FC57": true,
+    "inverse_equals_FC58": true,
+    "determinant": "-2",
+    "velocity_identity_FC63": true,
+    "compounds": [
+      {
+        "r": 1,
+        "minimum_laurent_exponent": -4,
+        "row_subset": [
+          4
+        ],
+        "column_subset": [
+          1
+        ],
+        "forward_leading_coefficient": "64*I",
+        "inverse_leading_coefficient": "120",
+        "compound_inverse_check": true
+      },
+      {
+        "r": 2,
+        "minimum_laurent_exponent": -5,
+        "row_subset": [
+          3,
+          4
+        ],
+        "column_subset": [
+          1,
+          2
+        ],
+        "forward_leading_coefficient": "-672",
+        "inverse_leading_coefficient": "336",
+        "compound_inverse_check": true
+      },
+      {
+        "r": 3,
+        "minimum_laurent_exponent": -4,
+        "row_subset": [
+          2,
+          3,
+          4
+        ],
+        "column_subset": [
+          1,
+          2,
+          3
+        ],
+        "forward_leading_coefficient": "240",
+        "inverse_leading_coefficient": "32*I",
+        "compound_inverse_check": true
+      },
+      {
+        "r": 4,
+        "minimum_laurent_exponent": 0,
+        "row_subset": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "column_subset": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "forward_leading_coefficient": "-2",
+        "inverse_leading_coefficient": "-1/2",
+        "compound_inverse_check": true
+      }
+    ]
+  },
+  "root_signed_evaluation": {
+    "odd_coefficient_matrix": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-I*C",
+        "-2*I*B",
+        "-3*I",
+        "-4*I*A"
+      ],
+      [
+        "A*C**2 - 9*D",
+        "4*A*B*C - 8*A*D - 7*C",
+        "-16*A**2*D + 4*A*B**2 - 2*A*C - 5*B",
+        "-8*A**2*C + 4*A*B - 3"
+      ],
+      [
+        "-13*I*C**2 + 20*I*D/A",
+        "-52*I*B*C + 76*I*D + 20*I*C/A",
+        "208*I*A*D - 52*I*B**2 + 5*I*C + 20*I*B/A",
+        "104*I*A*C - 66*I*B + 20*I/A"
+      ]
+    ],
+    "odd_coefficient_determinant": "-4*(448*A**4*D**2 - 224*A**3*B**2*D + 168*A**3*B*C**2 + 856*A**3*C*D + 28*A**2*B**4 - 22*A**2*B**2*C - 204*A**2*B*D - 431*A**2*C**2 - 87*A*B**3 + 282*A*B*C + 51*A*D + 20*B**2 - 60*C)/A",
+    "even_coefficient_matrix": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "3*I*C",
+        "6*I*B",
+        "9*I",
+        "12*I*A"
+      ],
+      [
+        "-2*A*C**2 + B*C + 71*D",
+        "-8*A*B*C + 12*A*D + 2*B**2 + 54*C",
+        "32*A**2*D - 8*A*B**2 + A*C + 40*B",
+        "16*A**2*C - 6*A*B + 20"
+      ]
+    ],
+    "quartet_odd_coefficient_determinant": "448*delta**2*gamma**2*(2*delta**2*gamma**2 - delta**2 + gamma**2)",
+    "quartet_even_nonzero_minor": "6*I*(16*delta**2*gamma**2 - 35*delta**2 + 35*gamma**2)",
+    "exact_sign_pair_decomposition": true,
+    "all_assertions_passed": true
+  },
+  "independent_signed_evaluation": {
+    "method": "quartic companion multiplication; no root script imports",
+    "SE4_coefficient_matrix_verified": true,
+    "odd_general_determinant": "-4*(448*A**4*D**2 - 224*A**3*B**2*D + 168*A**3*B*C**2 + 856*A**3*C*D + 28*A**2*B**4 - 22*A**2*B**2*C - 204*A**2*B*D - 431*A**2*C**2 - 87*A*B**3 + 282*A*B*C + 51*A*D + 20*B**2 - 60*C)/A",
+    "odd_literal_determinant": "448*delta**2*gamma**2*(2*delta**2*gamma**2 - delta**2 + gamma**2)",
+    "even_minor_general": "6*I*(64*A**3*D - 16*A**2*B**2 - 22*A**2*C + 89*A*B - 30)",
+    "even_minor_literal": "6*I*(16*delta**2*gamma**2 - 35*delta**2 + 35*gamma**2)",
+    "even_coefficient_matrix": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "3*I*C",
+        "6*I*B",
+        "9*I",
+        "12*I*A"
+      ],
+      [
+        "-2*A*C**2 + B*C + 71*D",
+        "-8*A*B*C + 12*A*D + 2*B**2 + 54*C",
+        "32*A**2*D - 8*A*B**2 + A*C + 40*B",
+        "16*A**2*C - 6*A*B + 20"
+      ]
+    ],
+    "explicit_even_kernel_vector_verified": true,
+    "exact_sign_pair_decomposition": true,
+    "quartet_vandermonde": "-64*delta**2*gamma**2*(delta**2 + gamma**2)",
+    "product_derivative_identity": true,
+    "all_assertions_passed": true
+  },
+  "root_signed_group": {
+    "generators": [
+      [
+        2,
+        -1,
+        3,
+        4
+      ],
+      [
+        1,
+        3,
+        -2,
+        4
+      ],
+      [
+        1,
+        2,
+        4,
+        -3
+      ]
+    ],
+    "generated_order": 192,
+    "equals_determinant_one_signed_group": true,
+    "pure_sign_kernel_order": 8,
+    "orbit_size": 8,
+    "point_stabilizer_order": 24,
+    "point_stabilizer_fixed_states": [
+      -1,
+      1
+    ],
+    "simultaneous_sign_is_central": true,
+    "scope": "Finite permutation calculation; topological monodromy realization requires the accompanying proof."
+  },
+  "global_inverse_certificate": "Full polynomial Jacobian determinant: -2\nM maps to [0, 0, -1, 0]\nN maps to [0, 0, -1, 0]\nT maps to [0, 0, -1, 0]\nE maps to [0, 0, -1, 0]\nOrdered coordinate-column determinant: 77*sqrt(2)*I/2\nOrdered quartet jet determinant: -64*delta**2*gamma**2*(delta**2 + gamma**2)\nAll exact checks passed.\nComplete inverse parameterization verified.\nSource parameter Jacobian=-a^-5; target parameter Jacobian=2a^-5.\nEntire u0=0 chart section verified.\nDiscriminant boundary and omitted square surface verified.\nAll four original quartet roots, signed scaling equations, and discriminant verified.\nAll global inverse identity checks passed.\n",
+  "monodromy_permutation_certificate": "Adjacent half-exchange generators: [(2, 3, 1, 0, 4, 5, 6, 7), (0, 1, 4, 5, 3, 2, 6, 7), (0, 1, 2, 3, 6, 7, 5, 4)]\nGenerated group equals determinant-one signed permutation group; order: 192\nElement-order distribution: {1: 1, 2: 43, 3: 32, 4: 36, 6: 32, 8: 48}\nProduct beta1 beta2 beta3 has order: 8\nW(D4) element-order distribution: {1: 1, 2: 43, 3: 32, 4: 84, 6: 32}\nFull S8 centralizer has exactly identity and simultaneous sign reversal.\nAll exact finite permutation checks passed.\n",
+  "analytic_proof_read_and_checked": true,
+  "polynomial_deck_not_commutation_centralizer": true,
+  "original_gamma_metrics_retained": true,
+  "rh_conclusion_claimed": false
+}

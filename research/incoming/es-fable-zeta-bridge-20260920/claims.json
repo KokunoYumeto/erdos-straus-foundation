@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "claims": [
+    {
+      "id": "SZ-20260920-019",
+      "title": "Normalized ES quartic and intrinsic-prime hypersurface",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Sections 2-3, EZ6-EZ10",
+      "certificate": "verify_es_fable_zeta_bridge.py",
+      "statement": "The normalized quartic with roots p,x,y,z has fixed U^3V coefficient one, recovers p=-5u4/u3, and lies on 625u0u4^3-125u3u4^2+25u2u3^2u4-4u3^4=0; the algebraic converse holds on D(u0u3u4)."
+    },
+    {
+      "id": "SZ-20260920-020",
+      "title": "Complete eight-point signed fibre",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Section 4, EZ11-EZ14",
+      "certificate": "verify_es_fable_zeta_bridge.py and upstream/independent/verify_global_fibre.py",
+      "statement": "A distinct-root arithmetic quartic lies in the finite etale degree-eight locus and has exactly the eight displayed signed source points."
+    },
+    {
+      "id": "SZ-20260920-021",
+      "title": "Prime-marked resultant-one pair",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Corollary 4.2, EZ15-EZ17",
+      "certificate": "verify_es_fable_zeta_bridge.py",
+      "statement": "The two signed lifts marking p satisfy LC=H_ES, Res(L,C)=1, ad+bc=1 and 4af-be=0; the other six fibre states mark x,y,z."
+    },
+    {
+      "id": "SZ-20260920-022",
+      "title": "Turn 7 exterior image avoids the nonproper locus",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Section 5, EZ18-EZ23",
+      "dependencies": ["SZ-20260919-006"],
+      "statement": "Every actual Turn 7 exterior state has four distinct roots p,x,y,z and hence maps to u0 Disc(H) != 0; the strict chamber recovers all exterior coordinates from the coefficient target."
+    },
+    {
+      "id": "SZ-20260920-023",
+      "title": "Seven-state reciprocal suspension",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Section 6, EZ24-EZ28",
+      "certificate": "verify_es_fable_zeta_bridge.py",
+      "statement": "The reciprocal cubic has a separate normalized suspension with seven states and lies on the u0=0 component of the nonproper locus."
+    },
+    {
+      "id": "SZ-20260920-024",
+      "title": "Fixed weighted-conductor transport",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Section 7, EZ29-EZ35",
+      "dependencies": ["SZ-20260920-020", "SZ-20260920-023"],
+      "statement": "The invertible fixed maps Phi_* and Psi_* transport the nonlinear map, all fibres, deck action and exceptional loci through the original conductor identity T_A,* Phi_*=Psi_*."
+    },
+    {
+      "id": "SZ-20260920-025",
+      "title": "Root-algebra isomorphism and cross-ratio obstruction",
+      "status": "proved",
+      "proof": "ES_FABLE_ZETA_CROSSWALK.tex, Section 8, EZ36",
+      "statement": "A chosen root bijection gives a zero-kernel evaluation/interpolation algebra isomorphism; realization by one projective map is obstructed exactly by cross-ratio mismatch."
+    }
+  ],
+  "nonclaims": [
+    "No universal ES occupancy theorem is inferred.",
+    "The coefficient hypersurface does not by itself impose the arithmetic source conditions.",
+    "No ES root is identified with a Riemann-zeta zero.",
+    "The fixed receiving isomorphism is not identified with the conductor."
+  ]
+}

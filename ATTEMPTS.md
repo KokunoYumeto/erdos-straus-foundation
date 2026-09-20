@@ -140,6 +140,31 @@ the remaining unbounded shape defects.
 [typed maps](research/incoming/es-turn07-shape-rigidity-20260919/MORPHISMS.md) ·
 [stable result locators](DAILY_RESULTS_20260919.md).
 
+## 9. Literal-root quartics, signed fibres and the weighted conductor
+
+**Aim:** connect the exact Turn 7 arithmetic state to the four-dimensional
+Fable and zeta-conductor work without identifying unlike presentations or
+discarding roots, signs, fibres or exceptional loci. **Reason for trying:** the
+earlier ES source already had a resultant-one quartic carrier, while the global
+Fable calculation now supplies a complete inverse, nonproper locus and fixed
+conductor square. **What was tried:** two maps were calculated separately. The
+strong map normalizes the literal four roots $(p,x,y,z)$; the older map suspends
+the three reciprocal roots $(p/x,p/y,p/z)$ by a root at infinity. **What
+happened:** the literal-root target recovers $p=-5u_4/u_3$, lies on an explicit
+coefficient hypersurface, and, for every actual Turn 7 exterior state, belongs
+to the finite étale degree-eight locus. Its two prime-marked states and six
+denominator-marked states are explicit. The reciprocal suspension instead has
+seven states and lies on the nonproper hyperplane. Both pass through the same
+fixed conductor square by invertible maps. **Successful scope:** this is a
+complete coordinate, fibre, inverse and exceptional-locus bridge from each
+existing exterior witness to the operator construction. **Unfinished:** it
+starts from an occupied ES state, so it does not force occupancy; the fixed
+reference roots are not zeta zeros, and no zeta-zero theorem follows.
+[Complete proof](research/incoming/es-fable-zeta-bridge-20260920/ES_FABLE_ZETA_CROSSWALK.tex) ·
+[typed maps](research/incoming/es-fable-zeta-bridge-20260920/MORPHISMS.md) ·
+[audit qualifications](research/incoming/es-fable-zeta-bridge-20260920/AUDIT_NOTES.md) ·
+[stable result locators](DAILY_RESULTS_20260920.md).
+
 ## Keeping future attempts intelligible
 
 For each task or substantial route, retain a short account with these same fields:
@@ -150,5 +175,5 @@ than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
 The [machine records](polyclank/attempts.json) expose the earlier five fields
-separately. This page covers the eight routes above; it does not claim to have recovered
+separately. This page covers the nine routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.

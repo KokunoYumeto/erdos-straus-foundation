@@ -1,0 +1,19 @@
+{
+  "locale_rank": 3,
+  "locale_kernel": [
+    "1",
+    "1",
+    "1",
+    "1"
+  ],
+  "quartet_jet_determinant": "-64*delta**2*gamma**2*(delta**2 + gamma**2)",
+  "pairing_orbit_size": 3,
+  "pairing_stabilizer_size": 8,
+  "degree8_dimension_rank_kernel": [
+    165,
+    81,
+    84
+  ],
+  "weighted_inverse_exact_test": true,
+  "order_jump_exact_instances": 75
+}

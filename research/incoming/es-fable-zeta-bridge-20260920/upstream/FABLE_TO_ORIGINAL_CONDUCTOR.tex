@@ -1,0 +1,2556 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\tr}{\operatorname{tr}}
+\title{The ES--Fable inverse correspondence in the original weighted conductor}
+\author{Split-Zero programme: coordinate calculation}
+\date{20 September 2026}
+\begin{document}
+\maketitle
+
+This calculation responds to equation (11) of the supplied audit: the
+inverse-exterior bound for the matrix in WCF6 \cite{WCF}. It constructs
+the marked map from the four ES--Fable locales, follows it through the
+original quartet and degree-eight conductor, and determines where the
+receiving finite linear map can lose rank. All four labels are retained.
+The conclusions concern this precise map. They neither assert RH nor
+classify all nonlinear maps in the programme.
+The original three-dimensional polynomial example was announced by
+Levent Alp\"oge with credit to Fable; Tao's exposition \cite{Tao}
+reproduces its formula. The additional four-Time constructions used here
+are credited to the ES programme source \cite{ES}, rather than attributed
+to that original three-point fibre.
+
+The continuation solves the entire inverse problem for the displayed
+four-dimensional map: every finite fibre, its complete omitted image,
+its degree-eight inverse domain and its complete nonproper-value locus.
+It gives the eight signed states over the literal arithmetic quartet,
+their common limiting omitted target, and their escape in a fixed
+original Gamma norm. For the earlier seven-point target it evaluates
+the complete singular spectrum, all exterior inverse asymptotes, and
+the exact volume distortion of explicitly transported coordinate flags.
+The original conductor intertwines these maps throughout; its coefficients
+are never chosen to fit the new polynomial.
+
+The signed-state continuation gives a nonzero exact determinant for the
+four sign differences on the literal quartet, the full rank-three mean
+map and its explicit kernel line, and the entire eight-state evaluation
+kernel. Retaining labels and evaluation gives an invertible total map
+through two copies of the original conductor. Its signed-root symmetry
+has order $192$; all monodromy generators, its deck transformations,
+the complete mixing block and its ranks are calculated explicitly.
+
+\section{Four points, including the coordinates hidden by local symmetry}
+The source \cite{ES}, equations \texttt{four-Time-quarter-locales},
+\texttt{times-weight-and-unit-vectors}, and
+\texttt{four-Time-quarter-coordinate-matrix}, defines
+\[
+ \mathcal T=(\mathrm M,\mathrm N,\mathrm T,\mathrm E),\qquad
+ V=\{v\in\R^4:\mathbf1^Tv=0\},\qquad
+ \mu_a=\frac2{\sqrt3}(e_a-\tfrac14\mathbf1),\qquad
+ \mathfrak q_a=-\frac13\mu_a.
+ \tag{FC1}
+\]
+Here $e_a$ are the four separate coordinate vectors; no two are identified.
+Consequently
+\[
+ \langle\mathfrak q_a,\mathfrak q_b\rangle
+ =\begin{cases}1/9&a=b,\\-1/27&a\ne b,\end{cases}
+ \qquad
+ Q_{ab}:=\tfrac34\langle\mathfrak q_b,\mu_a\rangle
+ =\frac1{12}-\frac13\delta_{ab}.
+ \tag{FC2}
+\]
+The matrix $Q$ has four distinct columns, although each column has its
+own local altitude $-1/4$. Direct multiplication gives
+\[
+ Q\mathbf1=0,\qquad Q|_{\mathbf1^\perp}=-\tfrac13 I,
+ \qquad \rank Q=3.
+ \tag{FC3}
+\]
+Thus a specific noninvertible map is already present: simultaneous
+altitude readout. Its entire kernel is the constant vector. This is the
+source's tetrahedral projection, not a singularity of WCF6.
+
+The affine map which recovers the four indicators is
+\[
+ b:V_{\C}\longrightarrow\{c\in\C^4:\mathbf1^Tc=1\},\qquad
+ b(v)=\tfrac14\mathbf1-\tfrac{3\sqrt3}{2}v,
+ \quad b(\mathfrak q_a)=e_a.
+ \tag{FC4}
+\]
+Its inverse is $c\mapsto-2(c-\mathbf1/4)/(3\sqrt3)$.
+Both formulas follow by substitution in FC1. They commute with all
+simultaneous permutations of the four labels. Retaining the affine term
+in FC4 recovers the constant direction that FC3 loses.
+
+\section{Exact transport into the original quartet}
+Retain the WCF simple quartet and its full unit, with
+$0<\delta<1/2$ and $\gamma>2$. Fix the explicit marking
+\[
+ \begin{array}{c|cccc}
+ a&\mathrm M&\mathrm N&\mathrm T&\mathrm E\\\hline
+ \rho_a&\frac12+\delta+i\gamma&\frac12+\delta-i\gamma&
+ \frac12-\delta+i\gamma&\frac12-\delta-i\gamma.
+ \end{array}
+ \tag{FC5}
+\]
+This is a declared marking, not an inference that the four Time operators
+are the arithmetic dilation operator. All other markings are obtained
+by simultaneous permutations; their effects on the Segre relation are
+calculated below. Put $h(S)=\prod_a(S-\rho_a)$ and
+\[
+ \ell_a(S)=\prod_{b\ne a}\frac{S-\rho_b}{\rho_a-\rho_b}.
+ \tag{FC6}
+\]
+The exact algebra map is
+\[
+ \Theta:\operatorname{Map}(\{\mathfrak q_a\},\C)
+ \longrightarrow\C[S]/(h),\qquad
+ f\longmapsto\sum_a f(\mathfrak q_a)[\ell_a].
+ \tag{FC7}
+\]
+Evaluation at the four $\rho_a$ is its inverse. Indeed
+$\ell_a(\rho_b)=\delta_{ab}$; a polynomial of degree at most three
+vanishing at all four distinct points is zero. The same argument applied
+to remainders modulo $h$ proves
+$[\ell_a\ell_b]=\delta_{ab}[\ell_a]$ and
+$\sum_a[\ell_a]=1$, so FC7 is an algebra isomorphism, not merely a
+vector-space bijection.
+
+For the full original Taylor unit $u_a=(g/h)(\rho_a)\ne0$, the
+additional source-unit map is $c\mapsto\diag(u_a)c$, with inverse
+$c\mapsto\diag(u_a^{-1})c$. Its determinant is $\prod_a u_a$.
+No unit has been replaced by one in the preceding isomorphism or in
+the period map below. The unit multiplication is a separate linear
+isomorphism, not an unital algebra homomorphism.
+
+The original exponential observation of a coefficient vector is
+\[
+ \mathcal E(c)(z)=\sum_a c_a e^{\rho_a z},\qquad
+ \bigl(\mathcal E(c)^{(n)}(0)\bigr)_{n=0}^3
+ =V_\rho c,\quad (V_\rho)_{na}=\rho_a^n.
+ \tag{FC8}
+\]
+The Vandermonde determinant, with precisely the order FC5, is
+\[
+ \det V_\rho=\prod_{a<b}(\rho_b-\rho_a)
+ =-64\delta^2\gamma^2(\delta^2+\gamma^2)\ne0.
+ \tag{FC9}
+\]
+The product formula follows by subtracting columns and induction in the
+number of columns; its evaluation uses the six differences
+$-2i\gamma,-2\delta,-2\delta-2i\gamma,
+-2\delta+2i\gamma,-2\delta,-2i\gamma$.
+In particular the four transported points cannot collide under the full
+first-four-jet observation. With the unit included the determinant is
+FC9 times $\prod_a u_a$.
+
+\section{The degree-eight map is the original conductor map}
+Write $t=(t_1,t_2,t_3,t_4)$ in the FC5 order, and retain
+\[
+ Q_0(t)=t_1t_4-t_2t_3,\qquad
+ t(z)=(e^{\rho_1z},e^{\rho_2z},e^{\rho_3z},e^{\rho_4z}).
+ \tag{FC10}
+\]
+Let $\mathcal S_n=\C[t_1,t_2,t_3,t_4]_n$. Substitution along this
+curve gives the linear map
+\[
+ \mathcal E_n:\mathcal S_n\to
+ \operatorname{span}\{e^{\beta_{n,u,w}z}:0\le u,w\le n\},
+ \quad P\mapsto P(t(z)),\qquad
+ \beta_{n,u,w}=\tfrac n2+(2u-n)\delta+i(2w-n)\gamma.
+ \tag{FC11}
+\]
+Its exact kernel is
+\[
+ \ker\mathcal E_n=Q_0\mathcal S_{n-2},\qquad
+ \dim\operatorname{im}\mathcal E_n=(n+1)^2,
+ \tag{FC12}
+\]
+where $\mathcal S_{n-2}=0$ for $n<2$.
+To prove this, a monomial $t_1^{k_1}\cdots t_4^{k_4}$ is sent to the
+exponential indexed by $u=k_1+k_2,w=k_1+k_3$. Every pair $0\le u,w\le n$
+occurs: choose
+$k_1=\max(0,u+w-n)$, $k_2=u-k_1$, $k_3=w-k_1$,
+$k_4=n-u-w+k_1$. Replacing $t_1t_4$ by $t_2t_3$ reduces any monomial to
+this unique representative. Thus the quotient by $Q_0$ has those
+$(n+1)^2$ monomial representatives. Their exponents are distinct because
+equality of real parts forces $u=u'$ and equality of imaginary parts
+forces $w=w'$. Differentiating a linear relation in these exponentials
+through order $(n+1)^2-1$ gives a Vandermonde matrix with nonzero
+determinant. Hence they are linearly independent and FC12 follows.
+At $n=8$, the map has rank $81$ and kernel dimension
+$\binom{11}{3}-81=84$.
+
+For the original admitted period let $H$ be its entire invertible period
+matrix, including its Gamma factors, branch powers and Taylor unit.
+Retain $D_5=\diag(\zeta,\zeta^2,\zeta^3,\zeta^4)$,
+$\zeta=e^{2\pi i/5}$, and the precise original polynomials
+\[
+ Q_j(X)=Q_0(H^{-1}D_5^{-j}X),\qquad
+ A_H(X)=\prod_{j=1}^4Q_j(X),\qquad
+ E_A(z)=A_H(Ht(z)).
+ \tag{FC13}
+\]
+These are NC5 and DFX4--5 \cite{NC,Cumulative}; no alternative conductor
+is being selected. Expanding
+$A_H(H(ZW,Z,W,1)^T)=\sum_{u,w=0}^8 a_{uw}Z^uW^w$ gives exactly
+\[
+ E_A(z)=\sum_{u,w=0}^8a_{uw}e^{\beta_{8,u,w}z},\qquad
+ \mu_j=\sum_{u,w=0}^8a_{uw}\beta_{8,u,w}^{\,j}.
+ \tag{FC14}
+\]
+This follows because
+$t(z)=e^{(1/2-\delta-i\gamma)z}
+(e^{2\delta z}e^{2i\gamma z},e^{2\delta z},e^{2i\gamma z},1)^T$
+and $A_H$ is homogeneous of degree eight.
+
+There is also a literal point map into the original quadric:
+\[
+ \mathfrak q_a\xmapsto{b}e_a\xmapsto{H}He_a,
+ \qquad Q_0(e_a)=Q_0(H^{-1}He_a)=0.
+\tag{FC15}
+\]
+The canonical 488-page reader \cite{ES488} also supplies an explicit
+four-point polynomial collision in four coordinates, theorem
+\texttt{explicit-four-time-Jacobian-collision}.
+Its ordered source columns form the matrix
+\[
+ K=\begin{pmatrix}
+ 0&i&1/\sqrt2&1/\sqrt2\\
+ 0&-1&-1-\sqrt2 i&1-\sqrt2 i\\
+ i/2&-3i&2\sqrt2+6i&-2\sqrt2+6i\\
+ 0&13&-34-19\sqrt2 i&34-19\sqrt2 i
+ \end{pmatrix},\qquad \det K=77\sqrt2 i/2.
+ \tag{FC15a}
+\]
+Expansion along the first column reduces this determinant to $i/2$
+times a three-by-three determinant. Subtracting its second column from
+its third gives the column $(0,2,68)^T$; the remaining expansion is
+$30\sqrt2+94/\sqrt2=77\sqrt2$, proving the value. Hence the explicit
+linear map $x\mapsto HK^{-1}x$, with
+$K^{-1}=\operatorname{adj}(K)/(77\sqrt2 i/2)$, sends those four
+original collision coordinates to exactly the same four $He_a$ in
+FC15. The labelled map from these four source points to the Time locales
+is $Ke_a\mapsto\mathfrak q_a$. This supplies a second, fully explicit
+source for FC15 without asserting that two different ambient spaces or
+their dynamics are identical. The companion independent derivation
+records all four polynomial evaluations and their exact certificate.
+Put $M_j=H^{-1}D_5^{-j}H$. The exact conductor value at this point is
+\[
+ A_H(He_a)=\prod_{j=1}^4
+ \bigl((M_j)_{1a}(M_j)_{4a}-(M_j)_{2a}(M_j)_{3a}\bigr).
+ \tag{FC16}
+\]
+Its vanishing means that $He_a$ lies on another quadric in the orbit.
+It is not the same evaluation as any $\mu_v$: the latter is the
+derivative at $z=0$ on the path $Ht(z)$, whose base point is $H\mathbf1$.
+Equations FC13--16 give both maps and their different evaluation points
+explicitly, rather than discarding the relation between the objects.
+
+More precisely, the four incidences are four coordinates of the
+\emph{original} symbol, not an auxiliary symbol. With
+$P(t)=A_H(Ht)=\sum_{|m|=8}c_mt^m$, collection in FC11 gives
+\[
+ a_{u,w}=\sum_{\substack{|m|=8\\m_1+m_2=u,\ m_1+m_3=w}}c_m,
+ \quad
+ (A_H(He_1),A_H(He_2),A_H(He_3),A_H(He_4))
+ =(a_{88},a_{80},a_{08},a_{00}).
+ \tag{FC16a}
+\]
+Indeed each of those four corner pairs admits only the corresponding
+pure eighth power. Define
+$\mathcal D_\rho=\sum_j\rho_jt_j\partial_{t_j}$. The chain rule,
+iterated on each polynomial $\mathcal D_\rho^nP$, proves
+\[
+ \mu_n=(\mathcal D_\rho^nP)(\mathbf1)
+ =\sum_{j=1}^4A_H(He_j)(8\rho_j)^n
+  +\sum_{(u,w)\notin\{(8,8),(8,0),(0,8),(0,0)\}}
+      a_{uw}\beta_{8,u,w}^{\,n}.
+ \tag{FC16b}
+\]
+Thus all four points enter the exact moment test, with the remaining
+77 collected terms explicitly retained. Computing those four incidences
+alone does not evaluate the remaining sum. For example, the test
+polynomial $t_1^7t_2$ has zero at all four $e_j$ and value one at
+$\mathbf1$; this establishes independence of the evaluation functionals,
+without substituting that polynomial for the original conductor.
+
+On the original five-orbit domain the quadrics $Q_0(H^{-1}X),Q_1,\ldots,Q_4$
+are nonassociate irreducibles. The polynomial $Q_0(t)$ is irreducible:
+as a degree-one polynomial in $t_1$ it is primitive over
+$\C[t_2,t_3,t_4]$, with coprime coefficients $t_4$ and $-t_2t_3$,
+and is irreducible over that coefficient field. An invertible linear
+substitution preserves irreducibility. If the degree-eight polynomial
+$A_H(Ht)$ belonged to $(Q_0)$, primality would force $Q_0$ to divide
+one factor $Q_j(Ht)$, making those degree-two polynomials associates.
+This contradicts the original orbit domain. Thus FC12 proves
+\[
+ E_A\not\equiv0,\qquad
+ v=\ord_0E_A\le80,\qquad\mu_v\ne0.
+ \tag{FC17}
+\]
+The order bound follows again from the $81$ distinct exponents and their
+first $81$ derivative matrix. It is not a numerical lower bound for the
+first nonzero derivative.
+More precisely, if $r_A$ is the number of nonzero original collected
+coefficients, the same derivative argument gives $v\le r_A-1$.
+In particular, vanishing of all four incidences in FC16a leaves
+$r_A\le77$ and gives $v\le76$; it does not annihilate the original
+nonzero symbol. This support statement evaluates the effect of all four
+point-incidence equations on the vanishing-order bound.
+
+\section{All tetrahedral permutations, with the lost equation restored}
+The full $S_4$ action on the four labels takes the line $\C Q_0$ to
+the three lines represented by
+\[
+ Q_{14|23}=t_1t_4-t_2t_3,\quad
+ Q_{12|34}=t_1t_2-t_3t_4,\quad
+ Q_{13|24}=t_1t_3-t_2t_4.
+ \tag{FC18}
+\]
+These correspond to the three partitions into two unordered pairs.
+The stabilizer of the first line has order eight (independent exchanges
+inside the pairs and exchange of the pairs); it is the dihedral group
+of the rectangle. A sign can change when the pairs are exchanged and
+is retained by these equations. The three lines are distinct, since
+their monomial supports differ. On the unchanged original curve,
+\[
+ Q_{14|23}(t(z))=0,\quad
+ Q_{12|34}(t(z))=2e^z\sinh(2\delta z),\quad
+ Q_{13|24}(t(z))=2ie^z\sin(2\gamma z).
+ \tag{FC19}
+\]
+All identities follow by multiplying the original exponentials. The
+last two have nonzero first derivatives $4\delta$ and $4i\gamma$ at zero.
+Thus equal-looking tetrahedral presentations must carry their pairing
+equation as well as their point labels. To transport the whole diagram
+under a permutation matrix $P$, use $t'=Pt$, $H'=HP^{-1}$ and
+$Q'_0(t')=Q_0(P^{-1}t')$. Then $H't'=Ht$ and
+$Q'_0(H'^{-1}X)=Q_0(H^{-1}X)$ exactly; the original conductor is unchanged.
+Permuting only labels while silently fixing a different pairing would
+instead change its defining equation.
+
+\section{The singularity test in equation (11)}
+Retain $d=D+1$, $s\in\{1,a\}$ with $a=4\ell+1\ge9$,
+$b=s/2$, and $N=D+v$. WCF2--6 specify the original Gamma polynomial
+norms and their orthonormal frames; write
+\[
+ \rho_n^{(s)}=\sqrt{n!/(b)_n},\qquad
+ w(t)=-i\arctan t,\quad
+ g(t)=t^{-v}e^{-4w(t)}E_A(w(t)),\quad
+ g_0=(-i)^v\mu_v/v!.
+ \tag{FC20}
+\]
+The source and target of the unscaled map are exactly
+\[
+ T_A:\mathcal P_{D+v}/\mathcal P_{v-1}\to\mathcal P_D,
+ \qquad T_AP(S')=\sum_{u,w}a_{uw}P(S'+\beta_{8,u,w}),
+ \tag{FC21}
+\]
+with centers $a/2$ and $a/2-4$ and the WCF2 quotient/target norms.
+Its WCF6 matrix and determinant are
+\[
+ A_{D,s}=\diag(\rho_0^{(s)},\ldots,\rho_D^{(s)})^{-1}
+ T_D(g)\diag(\rho_v^{(s)},\ldots,\rho_{D+v}^{(s)}),
+ \tag{FC22}
+\]
+\[
+ \det A_{D,s}=\left(\frac{(-i)^v\mu_v}{v!}\right)^{D+1}
+ \prod_{j=0}^D\frac{\rho_{j+v}^{(s)}}{\rho_j^{(s)}}\ne0.
+ \tag{FC23}
+\]
+Indeed Taylor expansion gives
+$T_AS^n=\sum_{j=v}^n\binom nj\mu_j S'^{n-j}$.
+It annihilates precisely $\mathcal P_{v-1}$ and reduces each remaining
+leading degree by $v$ with nonzero factor $\binom nv\mu_v$.
+Successive elimination proves bijectivity in FC21. In the stated frames
+FC22 is triangular; its diagonal proves FC23. Since $b>0$, all displayed
+weights are finite and positive. Nothing about the four labelled points
+can defeat FC23 while retaining the stated orbit domain and actual
+vanishing order.
+
+For completeness, every inverse coefficient is explicitly reconstructed:
+\[
+ h_0=g_0^{-1},\qquad
+ h_n=-g_0^{-1}\sum_{j=1}^ng_jh_{n-j},\qquad
+ A_{D,s}^{-1}=\diag(\rho_v^{(s)},\ldots,\rho_{D+v}^{(s)})^{-1}
+ T_D(h)\diag(\rho_0^{(s)},\ldots,\rho_D^{(s)}).
+ \tag{FC24}
+\]
+Multiplication of the two truncated Toeplitz matrices gives the identity
+by the convolution recurrence, proving this inverse with all factors.
+
+There is a precise rank-drop locus for a \emph{fixed} old quotient.
+Keep $v_0$ and $N=D+v_0$ fixed while varying coefficients and shifts
+within the conductor formula. It defines
+$\mathcal P_N/\mathcal P_{v_0-1}\to\mathcal P_D$ exactly when
+$\mu_0=\cdots=\mu_{v_0-1}=0$. Necessity follows by applying the map to
+$1,S,\ldots,S^{v_0-1}$ in that order; sufficiency follows from its Taylor
+formula. At such a point of finite actual order $v\ge v_0$,
+\[
+ \rank T_A=\max(D+1-(v-v_0),0),\qquad
+ \ker T_A=\mathcal P_{\min(v-1,N)}/\mathcal P_{v_0-1}.
+ \tag{FC25}
+\]
+To prove this, degrees below $v$ vanish and the images of
+$S^v,\ldots,S^N$ have different degrees and nonzero leading coefficients;
+they span $\mathcal P_{N-v}$ when $N\ge v$. If $E_A=0$ identically the
+rank is zero. If actual order is smaller than $v_0$, the old quotient
+arrow is undefined, not singular. Restoring the actual kernel and actual
+target degree gives FC21 again. Thus a zero of the old leading moment
+is an order jump, and the full kernel correction must be retained.
+
+The audit's inverse-exterior expression (11) has singular factors only
+when the retained leading moment vanishes or a displayed weight ceases
+to be defined. The latter never occurs for the admitted positive $s$;
+the former contradicts using the actual order $v$. FC25 states exactly
+what a genuine fixed-quotient degeneration would be. No original-period
+order-jump point is supplied merely by the four Fable locale coordinates.
+The point-conductor incidence test FC16 remains an explicit separate
+polynomial calculation in the original $H$, with all four columns retained.
+
+\section{Four explicit inputs to the very operator in equation (11)}
+For the programme cutoffs $D\ge3$, the four labels have the following
+literal receiving vectors in the WCF source, without introducing another
+conductor:
+\[
+ x_a=[S^v\ell_a(S)]\in\mathcal P_{D+v}/\mathcal P_{v-1},\qquad
+ y_a(S')=\sum_{u,w=0}^8 a_{uw}
+ (S'+\beta_{8,u,w})^v\ell_a(S'+\beta_{8,u,w}).
+ \tag{FC26}
+\]
+Thus $\mathfrak q_a\mapsto x_a\mapsto y_a=T_Ax_a$ is an explicit
+map into equation (11)'s actual operator; the four-dimensional collision
+coordinates $Ke_a$ map to the same $x_a$ by first applying $K^{-1}$.
+All four output polynomials lie in $\mathcal P_3$.
+With the source label basis in FC5 and target monomial basis
+$(1,S',S'^2,S'^3)$, their four-column determinant is
+\[
+ \det\bigl([y_1]\ [y_2]\ [y_3]\ [y_4]\bigr)
+ =\frac{\mu_v^4\displaystyle\prod_{j=0}^3\binom{v+j}{v}}
+ {-64\delta^2\gamma^2(\delta^2+\gamma^2)}\ne0.
+ \tag{FC27}
+\]
+Here the brackets on the left denote coefficient columns, not an
+orthonormal change of the WCF metric. To prove the formula, evaluation
+of a cubic at the four roots has matrix $V_\rho^T$. Therefore the
+coefficient matrix of the four $\ell_a$ is $(V_\rho^T)^{-1}$.
+On the source monomials $S^v,\ldots,S^{v+3}$, Taylor expansion in
+FC21 gives a triangular output matrix with diagonal
+$\mu_v\binom{v+j}{v}$. Multiplying these two determinants proves
+FC27. It also proves all four outputs are linearly independent. The
+source norm is the original quotient norm of the classes in FC26;
+choosing their minimum-norm representatives only subtracts elements of
+$\mathcal P_{v-1}$, which $T_A$ kills exactly. The target norm is the
+unchanged original Gamma norm at center $a/2-4$. Thus no modification
+of the norms is used to establish the determinant or the images.
+
+The full four-vector Gram determinants can also be evaluated, so the
+norm transport need not be left implicit. Set
+$\Delta_\rho=-64\delta^2\gamma^2(\delta^2+\gamma^2)$ and retain
+\[
+ dm_s(y)=\frac{(2\pi)^{s/2}2^{s/2}}{4\pi\Gamma(s/2)}
+ |\Gamma(s/4+iy/2)|^2dy,\qquad
+ h_{n,s}=(2\pi)^{s/2}n!(s/2)_n.
+ \tag{FC28}
+\]
+Let $G_x=(\langle x_a,x_b\rangle_{s,a/2,\mathrm{quot}})_{ab}$
+and $G_y=(\langle y_a,y_b\rangle_{s,a/2-4})_{ab}$. Then
+\[
+ \det G_x=\frac{\prod_{j=0}^3 h_{v+j,s}}{|\Delta_\rho|^2},\qquad
+ \det G_y=\frac{|\mu_v|^8
+       \left(\prod_{j=0}^3\binom{v+j}{v}\right)^2
+       \prod_{j=0}^3h_{j,s}}{|\Delta_\rho|^2},
+ \tag{FC29}
+\]
+and in particular
+\[
+ \frac{\det G_y}{\det G_x}
+ =\left|\frac{\mu_v}{v!}\right|^8
+       \prod_{j=0}^3\frac{(\rho_{v+j}^{(s)})^2}
+                              {(\rho_j^{(s)})^2}
+ =|\det A_{3,s}|^2>0.
+ \tag{FC30}
+\]
+For the proof, the original orthonormal polynomial of degree $n$ in
+$S$ has leading coefficient $i^{-n}/\sqrt{h_{n,s}}$, as in WCF2.
+Expanding $S^v,\ldots,S^{v+3}$ in this frame and removing the
+degrees below $v$ gives a triangular matrix with diagonal
+$i^{v+j}\sqrt{h_{v+j,s}}$. Its Gram determinant is
+$\prod_{j=0}^3h_{v+j,s}$. Multiplication by $(V_\rho^T)^{-1}$
+therefore proves the first formula in FC29. In the target, the
+monomial Gram determinant is $\prod_{j=0}^3h_{j,s}$ by the same
+leading-coefficient argument; FC27 proves the second formula.
+Dividing the two equalities, substituting $h_{n,s}$ and the binomial
+coefficients, proves FC30. Both Gram determinants retain the mass
+$(2\pi)^{2s}$; it cancels only in their displayed ratio. This is the
+original quotient metric on the four vectors, not a Euclidean norm
+imposed on their coefficient columns.
+
+These formulas locate the noninvertibility that survives transport:
+FC3 loses the constant direction when reading the four locales together,
+and the collision polynomial forgets which marked source was chosen.
+FC26 instead retains that source identity through the original
+conductor; FC27 excludes a four-point collision or a kernel there.
+An attempt to factor FC26's four outputs through a single common image
+would make all four columns equal, contradicting FC27. This proves the
+failure of that specific factorization with the exact source and target
+maps in hand, rather than asserting that the programmes are unrelated.
+
+\section{Transport of the complete nonlinear collision}
+In this section and the next two sections, $a$ is the first ES coordinate.
+It is separate from the fixed WCF amplification integer, which is now
+written $a_{\mathrm{amp}}=4\ell+1\ge9$. Thus the original source and
+target centers remain $a_{\mathrm{amp}}/2$ and
+$a_{\mathrm{amp}}/2-4$, and $s\in\{1,a_{\mathrm{amp}}\}$.
+This dictionary changes no coordinate value or measure.
+Here the receiving map is constructed, rather than inferred from a
+similarity of determinants. In the original source coordinates
+$q=(a,y,z,w)$, the ES reader's four-dimensional polynomial is
+\[
+\begin{aligned}
+ P_0(q)&=a^3z+2a^2y-ia,\\
+ P_2(q)&=-a^3y^2z-2ia^2yz+a^2w-2a^2y^3-10iay^2+3az+y,\\
+ P_3(q)&=2a^3y^3z+6ia^2y^2z+2a^2wy+4a^2y^4
+             +2iaw-4iay^3-2ayz+2iz+7y^2,\\
+ P_4(q)&=2a^3y^4z+8ia^2y^3z+a^2wy^2+4a^2y^5
+             +2iawy+7iay^4-10ay^2z-4iyz-w-3y^3.
+\end{aligned}\tag{FC31}
+\]
+Write $P=(P_0,P_2,P_3,P_4)$ and $h=(0,0,-1,0)^T$.
+Substitution in FC31 gives $P(Ke_a)=h$ for the four columns of FC15a,
+and $h=2iKe_{\mathrm M}$. Direct differentiation and determinant
+expansion give $\det DP=-2$ identically; the accompanying
+\texttt{independent/verify\_four\_labels.py} performs that exact
+polynomial calculation and all four evaluations, with rational
+coefficients in $\mathbb Q(i,\sqrt2)$.
+
+Let $\mathcal U=\mathcal P_{v+3}/\mathcal P_{v-1}$ and
+$\mathcal W=\mathcal P_3$, as subspaces of FC21, and use the original
+quotient and target Gamma norms. Define the isomorphisms
+\[
+ X:\C^4\to\mathcal U,\quad Xe_a=x_a,\qquad
+ Y:\C^4\to\mathcal W,\quad Ye_a=y_a,\qquad
+ \Phi=XK^{-1},\quad\Psi=YK^{-1}.
+ \tag{FC32}
+\]
+FC27 proves they are isomorphisms and $T_A\Phi=\Psi$.
+Consequently the following are explicit polynomial self-maps of the
+\emph{actual} original four-dimensional source and target spaces:
+\[
+ P_{\mathcal U}=\Phi P\Phi^{-1},\qquad
+ P_{\mathcal W}=\Psi P\Psi^{-1},\qquad
+ T_AP_{\mathcal U}=P_{\mathcal W}T_A.
+ \tag{FC33}
+\]
+The last equality follows by substituting $T_A\Phi=\Psi$ and
+$\Phi^{-1}=\Psi^{-1}T_A$ on $\mathcal U$. Both polynomial maps have
+constant Jacobian determinant $-2$: the chain rule cancels the two
+constant change-of-coordinate determinants. Their norms remain those
+of FC28--30. The pulled-back forms on $\C^4$ are, explicitly,
+$(K^{-1})^*G_xK^{-1}$ and $(K^{-1})^*G_yK^{-1}$.
+
+In particular the four distinct original target polynomials satisfy
+\[
+ P_{\mathcal W}(y_{\mathrm M})=
+ P_{\mathcal W}(y_{\mathrm N})=
+ P_{\mathcal W}(y_{\mathrm T})=
+ P_{\mathcal W}(y_{\mathrm E})=2i\,y_{\mathrm M}.
+ \tag{FC34}
+\]
+This is a transported noninjective nonlinear map on the conductor
+target. The original linear conductor is the invertible intertwiner
+in FC33; it has not acquired a kernel and none of its coefficients
+has been fitted to the new map.
+
+No inverse is hidden in these definitions: put
+$\ell_a(S)=\sum_{r=0}^3\lambda_{ra}S^r$, where its coefficients are
+given by the product FC6. In the target monomial basis the matrix of
+$Y$ is exactly
+\[
+ Y_{ka}=\sum_{r=k}^3\lambda_{ra}\binom{v+r}{k}\mu_{v+r-k},
+ \quad 0\le k\le3,\qquad
+ P_{\mathcal W}(p)=YK^{-1}P(KY^{-1}[p]).
+ \tag{FC35}
+\]
+Here $[p]$ is the coefficient column of $p$; the last output column is
+read in the same monomial basis. The inverses are adjugates divided
+by their nonzero determinants in FC15a and FC27. Formula FC35,
+together with FC31, is the complete polynomial map in the original
+target coordinates, with all original moments retained.
+
+\section{The full fibre contains seven points, with all four labels retained}
+The four displayed source points of FC15a are not the entire polynomial
+fibre. This does not identify or remove any of the four Time locales.
+We now solve every equation $P(q)=h$ over $\C$.
+
+When $a=0$, FC31 reads
+\[
+ P(q)=(0,y,2iz+7y^2,-4iyz-w-3y^3).
+\]
+Thus $y=0,z=i/2,w=0$, the single point $q_{\mathrm M}=Ke_{\mathrm M}$.
+When $a\ne0$, the equations $P_0=P_2=0$ solve uniquely as
+\[
+ z=\frac{i-2ay}{a^2},\qquad
+ w=\frac{i(7a^2y^2-3iay-3)}{a^3}.
+ \tag{FC36}
+\]
+Substitution into $P_3+1$ and $P_4$ gives exactly
+\[
+ P_3+1=-\frac{3a^2y^2-a^2+6iay-4}{a^2},\qquad
+ P_4=-\frac{(ay+i)(2a^2y^2+4iay-3)}{a^3}.
+ \tag{FC37}
+\]
+Set $t=ay$. Hence
+\[
+ (t+i)(2t^2+4it-3)=0,\qquad a^2=3t^2+6it-4.
+ \tag{FC38}
+\]
+There are exactly three possible $t$: $-i$ and $-i\pm1/\sqrt2$.
+For $t=-i$ the second equation gives $a^2=-1$; for the other two it
+gives $a^2=1/2$. In each case both square roots are nonzero, $y=t/a$
+is determined, and FC36 determines $z,w$. Thus there are exactly six
+points with $a\ne0$ and the one already found with $a=0$.
+All implications used above are equivalences, so no elimination root
+is extraneous and none is omitted.
+
+The exact involution
+\[
+ J(a,y,z,w)=(-a,-y,z,-w)
+\]
+satisfies, term by term in FC31,
+\[
+ P\circ J=J_{\mathrm{out}}\circ P,\qquad
+ J_{\mathrm{out}}(u_0,u_2,u_3,u_4)=(-u_0,-u_2,u_3,-u_4).
+ \tag{FC39}
+\]
+Since $J_{\mathrm{out}}h=h$, the full fibre is
+\[
+ P^{-1}(h)=\{q_{\mathrm M},q_{\mathrm N},q_{\mathrm T},q_{\mathrm E},
+              Jq_{\mathrm N},Jq_{\mathrm T},Jq_{\mathrm E}\}.
+ \tag{FC40}
+\]
+The three additional points, in the unchanged $(a,y,z,w)$ coordinates,
+are
+\[
+\begin{aligned}
+ Jq_{\mathrm N}&=(-i,1,-3i,-13),\\
+ Jq_{\mathrm T}&=(-1/\sqrt2,1+\sqrt2i,2\sqrt2+6i,34+19\sqrt2i),\\
+ Jq_{\mathrm E}&=(-1/\sqrt2,-1+\sqrt2i,-2\sqrt2+6i,-34+19\sqrt2i).
+\end{aligned}\tag{FC41}
+\]
+Their first and second coordinates distinguish all seven, and FC36--38
+prove their exhaustiveness.
+
+This entire fibre transports to the original WCF target. Since
+$Jq=-q+2z e_z$ and $e_z=-2i q_{\mathrm M}$, its seven points are
+\[
+\begin{gathered}
+ y_{\mathrm M},\ y_{\mathrm N},\ y_{\mathrm T},\ y_{\mathrm E},\quad
+ -12y_{\mathrm M}-y_{\mathrm N},\\
+ (24-8\sqrt2i)y_{\mathrm M}-y_{\mathrm T},\quad
+ (24+8\sqrt2i)y_{\mathrm M}-y_{\mathrm E}.
+\end{gathered}\tag{FC42}
+\]
+They are precisely $P_{\mathcal W}^{-1}(2iy_{\mathrm M})$, by the
+bijective conjugacy FC33. Every one is a locally invertible point of
+$P_{\mathcal W}$ because its Jacobian determinant is $-2$.
+The failure is a global inverse at the common target, not a zero of
+the local derivative or of the linear conductor determinant.
+
+\section{The explicit escaping branch and its original norm}
+There is also a rational symmetry which leaves every output unchanged.
+On the exact domain $a\ne0$, set
+\[
+ \Sigma(a,y,z,w)=\left(-a,\ y+\frac{2i}{a},\
+ \frac{6i}{a^2}-z,\
+ w-\frac{14iy^2}{a}+\frac{28y}{a^2}+\frac{40i}{a^3}\right).
+ \tag{FC43}
+\]
+Direct substitution gives $\Sigma^2=I$ and $P\Sigma=P$ on this
+domain. One can verify the latter identity with fewer terms in the
+reader's original factor coordinates:
+\[
+\begin{aligned}
+ b&=i+ay,&c&=-i+2ay+a^2z,\\
+ d&=-iy-a(iz+2y^2)-a^2yz,&e&=2z-7iy^2+aw,\\
+ f&=iw+3iy^3-4yz+a(6iy^2z+wy+4y^4)+2a^2y^3z.
+\end{aligned}\tag{FC44}
+\]
+Substitution of FC43 into these formulas changes
+$(a,b,c,d,e,f)$ to $(-a,-b,-c,-d,-e,-f)$.
+The polynomial outputs are $(ac,ae+bd,af+be,bf)$, so all four
+remain unchanged. The first four solved coordinates also show the
+sign operation is an involution; alternatively it follows by inserting
+FC43 twice. For $a=0$, the chart fixes $b=i$. The negative of the
+$\mathrm M$ factor state has $b=-i$ and lies outside this chart.
+The other three factor-state negatives are present among FC41.
+This records the orientation data without treating an opposite
+factorization as an identical labelled point.
+
+The exact factor count explains why four labels coexist with seven
+points in this affine fibre. A marked factorization of
+$H(U,V)=UV(U-V)(U+V)$ chooses one of its four distinct linear factors
+as $L=aU+bV$, and places the remaining factors in
+$C=cU^3+dU^2V+eUV^2+fV^3$. The resultant is
+\[
+ R(L,C)=C(-b,a)=a^3f-a^2be+ab^2d-b^3c.
+ \tag{FC44a}
+\]
+For each marked root it is nonzero, because none of the remaining
+three factors vanishes on that root. Replacing $(L,C)$ by
+$(\lambda L,\lambda^{-1}C)$ changes this resultant by $\lambda^2$.
+Thus $R=1$ has exactly two scalar choices for each of the four
+marked roots, eight factor states in all. Their signs are distinct.
+All have $ad+bc=1$, the $U^3V$ coefficient of $H$.
+
+On $a\ne0$, FC44 has the exact inverse
+\[
+ y=(b-i)/a,\qquad z=(c+i-2ay)/a^2,\qquad
+ w=(e-2z+7iy^2)/a.
+ \tag{FC44b}
+\]
+The incidence equation $ad+bc=1$ then determines $d$ uniquely, and
+FC44a with $R=1$ determines $f$ uniquely. This proves that all six
+factor states with $a\ne0$ occur in the chart. When $a=0$, those two
+incidence equations force $bc=1$ and $-b^3c=1$, hence $b^2=-1$.
+The chart FC44 has $b=i$ at $a=0$; its remaining coordinates are
+recovered by $y=id$, $z=(e+7iy^2)/2$ and
+$w=(f-3iy^3+4yz)/i$. It contains the entire $b=i$ component and none
+of the $b=-i$ component. At the particular product $H$, the omitted
+state is $(a,b,c,d,e,f)=(0,-i,i,0,-i,0)$. This proves precisely that
+the chosen chart retains seven of the eight signed factor states,
+still over the same four marked roots. No Time label has been added
+or discarded.
+
+Take real $\epsilon>0$ and the two explicit source curves
+\[
+ q_\epsilon=(\epsilon,0,i/2,0),\qquad
+ \widehat q_\epsilon=\Sigma q_\epsilon
+ =(-\epsilon,2i/\epsilon,6i/\epsilon^2-i/2,40i/\epsilon^3).
+ \tag{FC45}
+\]
+The latter escapes to infinity whereas the former tends to
+$q_{\mathrm M}$. Their identical images are
+\[
+ P(q_\epsilon)=P(\widehat q_\epsilon)
+ =(-i\epsilon+i\epsilon^3/2,\ 3i\epsilon/2,\ -1,\ 0)
+ \longrightarrow h.
+ \tag{FC46}
+\]
+Thus $h$ is an explicit nonproper value of the nonlinear map: a
+sequence escaping every compact subset has convergent images.
+No numerical search is needed.
+
+The same statement holds in the original target norm, with exact
+constants. Put $z_\epsilon=\Psi\widehat q_\epsilon$ and
+\[
+ R=\Psi e_w=
+ \frac6{77}y_{\mathrm M}+\frac1{77}y_{\mathrm N}
+ +\frac{-3-\sqrt2i}{154}y_{\mathrm T}
+ +\frac{3-\sqrt2i}{154}y_{\mathrm E}.
+ \tag{FC47}
+\]
+The displayed coefficients are the last column of $K^{-1}$, verified
+by multiplying by FC15a. They are not all zero, so $R\ne0$ by FC27.
+Multiplying FC45 by $\epsilon^3\Psi$ gives the norm-convergent limit
+\[
+ \epsilon^3 z_\epsilon\longrightarrow40iR,\qquad
+ \epsilon^3\|z_\epsilon\|_{s,a_{\mathrm{amp}}/2-4}
+ \longrightarrow40\|R\|_{s,a_{\mathrm{amp}}/2-4}>0.
+ \tag{FC48}
+\]
+The limit uses only a fixed finite-dimensional linear map and the
+original positive Gamma norm. Simultaneously
+\[
+ P_{\mathcal W}(z_\epsilon)
+ =\Psi(-i\epsilon+i\epsilon^3/2,3i\epsilon/2,-1,0)
+ \longrightarrow2iy_{\mathrm M}.
+ \tag{FC49}
+\]
+Equations FC42 and FC45--49 therefore identify the full finite fibre
+and a branch escaping to infinity above its common value in the
+actual conductor target. They do not make that introduced nonlinear
+map a linear conductor or an arithmetic dilation action. The exact
+relation to the original conductor is the intertwining square FC33,
+which preserves its inverse bound.
+
+\section{Compatibility with the original translation action}
+The nonlinear transport can be tested against an actual symmetry of the
+original conductor. It is not enough to have a conjugate polynomial
+on its target. The original finite-shift formula FC21 satisfies
+\[
+ T_A\partial_S=\partial_{S'}T_A,\qquad
+ T_A(P(S+t))=(T_AP)(S'+t).
+ \tag{FC50}
+\]
+Both identities follow by differentiating, respectively translating,
+each term of the unchanged finite sum. Differentiation preserves
+$\mathcal P_{v-1}$ and therefore descends on $\mathcal U$.
+In the source basis $[S^v],\ldots,[S^{v+3}]$ and target basis
+$1,S',S'^2,S'^3$, its matrices are
+\[
+ N_v=\begin{pmatrix}0&v+1&0&0\\0&0&v+2&0\\0&0&0&v+3\\0&0&0&0\end{pmatrix},
+ \qquad
+ N_0=\begin{pmatrix}0&1&0&0\\0&0&2&0\\0&0&0&3\\0&0&0&0\end{pmatrix}.
+ \tag{FC51}
+\]
+Let $B_v$ have entries
+$(B_v)_{kj}=\binom{v+j}{k}\mu_{v+j-k}$ for $k\le j$ and zero
+otherwise. FC35 gives $Y=B_v(V_\rho^T)^{-1}$, and FC50 gives
+$N_0B_v=B_vN_v$. Thus the complete original translation matrix
+in the Fable coordinates is exactly
+\[
+ M=\Psi^{-1}N_0\Psi
+   =K V_\rho^T N_v(V_\rho^T)^{-1}K^{-1},\qquad M^4=0,
+ \quad M^3\ne0.
+ \tag{FC52}
+\]
+No moment has been set to one in this formula: their cancellation is
+the proved identity $N_0B_v=B_vN_v$. They remain in $\Psi$ and in
+the native metrics.
+
+The quotient correction has an explicit form in the labelled basis.
+Writing $R_v=V_\rho^T N_v(V_\rho^T)^{-1}$ gives
+\[
+ (R_v)_{ba}=\ell_a'(\rho_b)
+          +v\frac{\delta_{ba}-\ell_a(0)}{\rho_b}.
+ \tag{FC53}
+\]
+Indeed, modulo $\mathcal P_{v-1}$,
+\[
+ \partial_S(S^vf(S))
+ =S^v\left(f'(S)+v\frac{f(S)-f(0)}S\right).
+\]
+The removed term is exactly $vf(0)S^{v-1}$, and the quotient in
+parentheses is a polynomial. Evaluating at the four nonzero $\rho_b$
+proves FC53. It retains the term that would be lost by treating the
+quotient as an ordinary cubic space before transporting its action.
+
+The introduced nonlinear map does not preserve this original
+translation flow. From FC31,
+\[
+ P(0)=0,\qquad J_0:=DP(0)=\diag(-i,1,2i,-1).
+ \tag{FC54}
+\]
+All four eigenvalues of $J_0$ are distinct. A matrix commuting with
+this diagonal matrix must be diagonal, since its $(j,k)$ entry is
+multiplied in the commutator by the nonzero difference of the two
+eigenvalues whenever $j\ne k$. If $M$ commuted with $J_0$, it
+would consequently be diagonal; $M^4=0$ would then force $M=0$,
+contradicting $M^3\ne0$. Hence $J_0M-MJ_0\ne0$.
+
+More strongly, $P e^{tM}=e^{tM}P$ fails as a polynomial identity
+for every $t\ne0$ in $\C$. Otherwise differentiation at zero
+would make $J_0$ commute with $R=e^{tM}$. Since $(R-I)^4=0$,
+\[
+ M=t^{-1}\left((R-I)-\tfrac12(R-I)^2+\tfrac13(R-I)^3\right).
+\]
+This identity follows by substituting
+$R=I+tM+t^2M^2/2+t^3M^3/6$ and collecting powers of $M$.
+It would force $J_0$ to commute with $M$, the contradiction just
+proved. Conjugating by $\Psi$ proves the same failure for
+$P_{\mathcal W}$ and the original target translations $e^{tN_0}$.
+
+The entire correction is explicit, rather than an unspecified failure:
+\[
+ \Delta(q):=DP(q)Mq-MP(q),\qquad
+ P(e^{tM}q)-e^{tM}P(q)
+ =\int_0^t e^{(t-s)M}\Delta(e^{sM}q)\,ds.
+ \tag{FC55}
+\]
+For complex $t$, integrate on the straight segment from zero to $t$.
+Differentiating $e^{(t-s)M}P(e^{sM}q)$ proves FC55 by the
+fundamental theorem of calculus. Every exponential truncates after
+its cubic term, so the integrand and integral are finite explicit
+polynomials. The linear part of $\Delta$ is precisely
+$(J_0M-MJ_0)q\ne0$. The original-target correction is
+$\Psi$ times the right side of FC55, with $q=\Psi^{-1}p$;
+its norm is evaluated in the unchanged form
+$(K^{-1})^*G_yK^{-1}$.
+
+Thus FC33 is a complete nonlinear intertwining with the original
+conductor, FC42 is its complete seven-point collision, FC48--49
+is its exact nonproper branch, and FC55 is its nonzero correction
+for the conductor's original translation action. None of these
+calculations identifies this additional nonlinear map with the
+arithmetic dilation action or makes the inverse-exterior bound false.
+
+% BEGIN ESCAPE_DIFFERENTIAL
+\section{Every exterior inverse along the escaping branch, in the original metric}
+The original branch FC45 yields an exact pointwise differential calculation,
+not only an unbounded sequence. Throughout this section $\epsilon>0$, the
+quartet, original conductor, $a_{\mathrm{amp}}$, and $s$ are fixed. Let
+$\widehat q_\epsilon$ be FC45, $z_\epsilon=\Psi\widehat q_\epsilon$,
+and retain the full positive matrix
+\[
+ G=(K^{-1})^*G_yK^{-1},\qquad
+ \|q\|_G^2=q^*Gq=\|\Psi q\|_{s,a_{\mathrm{amp}}/2-4}^2.
+ \tag{FC56}
+\]
+No entry of this form is replaced by a Euclidean coordinate norm.
+Its entries can be obtained by a finite formula in the original moments,
+so FC56 does not leave an unspecified metric to be chosen. Write
+$F=YK^{-1}$ in the target monomial basis, $c=a_{\mathrm{amp}}/2-4$,
+$b=s/2$, and $M_s=(2\pi)^{s/2}$. Then
+\[
+ G=F^*\mathcal H F,\qquad
+ \mathcal H_{jk}=\sum_{p=0}^j\sum_{q=0}^k
+ \binom jp\binom kq c^{j+k-p-q}(-i)^p i^q m_{p+q},
+ \quad 0\le j,k\le3,
+ \tag{FC56a}
+\]
+where $m_0=M_s$, $m_2=M_sb$, $m_4=M_s(3b^2+2b)$,
+$m_6=M_s(15b^3+30b^2+16b)$, and the odd moments vanish.
+To prove this formula, expand
+$(c-iy)^j(c+iy)^k$ in the defining measure FC28. The measure is
+even. Integrating the WCF generating function in WCF3, cited in
+\cite{WCF}, leaves only its constant orthogonal-polynomial coefficient,
+so its moment generating function at $u=\arctan t$ is
+$\int e^{uy}\,dm_s(y)=M_s(\cos u)^{-b}$ near zero. The coefficients
+through order six give exactly the stated moments by differentiation.
+The identity can equivalently be read coefficientwise through degree
+six, using orthogonality, so no exchange of an infinite series outside
+its convergence domain is needed. FC35 specifies every entry of $F$
+in $\mu_v,\ldots,\mu_{v+3}$ and the unchanged quartet.
+Differentiating the polynomial FC31 and substituting FC45 gives
+\[
+ J_\epsilon=DP(\widehat q_\epsilon)=
+ \begin{pmatrix}
+ 9i-3i\epsilon^2/2&2\epsilon^2&-\epsilon^3&0\\
+ -7i/2-30i/\epsilon^2&\epsilon^2-27&-3\epsilon&\epsilon^2\\
+ -2/\epsilon+104/\epsilon^3&-i\epsilon-56i/\epsilon&-2i&2i\epsilon\\
+ -4i/\epsilon^2+64i/\epsilon^4&2+28/\epsilon^2&0&-1
+ \end{pmatrix},\qquad \det J_\epsilon=-2.
+ \tag{FC57}
+\]
+Thus $D P_{\mathcal W}(z_\epsilon)=\Psi J_\epsilon\Psi^{-1}$.
+The inverse matrix, including all its lower-order terms, is
+\[
+\renewcommand{\arraystretch}{1.25}
+\begin{pmatrix}
+ \frac{3i\epsilon^2}{2}-i&-\frac{3i\epsilon^4}{2}+2i\epsilon^2&
+ \frac{3\epsilon^5}{2}-\frac{5\epsilon^3}{2}&\frac{3i\epsilon^6}{2}-3i\epsilon^4\\
+ -\frac32+\frac2{\epsilon^2}&\frac{3\epsilon^2}{2}-3&
+ \frac{3i\epsilon^3}{2}-\frac{7i\epsilon}{2}&-\frac{3\epsilon^4}{2}+4\epsilon^2\\
+ \frac{9\epsilon}{4}-\frac{18}{\epsilon}+\frac{12}{\epsilon^3}&
+ -\frac{9\epsilon^3}{4}+\frac{39\epsilon}{2}-\frac{24}{\epsilon}&
+ -\frac{9i\epsilon^4}{4}+\frac{81i\epsilon^2}{4}-\frac{59i}{2}&
+ \frac{9\epsilon^5}{4}-21\epsilon^3+35\epsilon\\
+ 3-\frac{138}{\epsilon^2}+\frac{120}{\epsilon^4}&
+ -3\epsilon^2+140-\frac{212}{\epsilon^2}&
+ -3i\epsilon^3+141i\epsilon-\frac{258i}{\epsilon}&
+ 3\epsilon^4-142\epsilon^2+303
+\end{pmatrix}.
+\tag{FC58}
+\]
+This is $J_\epsilon^{-1}$: multiplying FC57 by FC58 gives the identity
+entry by entry. It is also $-\operatorname{adj}(J_\epsilon)/2$.
+These two exact checks, rather than numerical singular-value sampling,
+are recorded by \texttt{derive\_escape\_differential.py}.
+
+For exterior powers use increasing coordinate subsets in the order
+$1=a,2=y,3=z,4=w$. Let $E^{(r)}_{I,J}$ send the coordinate wedge
+$e_J$ to $e_I$ and annihilate the other coordinate wedges. Expanding
+the minors of FC57 proves all four finite matrix limits
+\[
+\begin{array}{c|c|c|c}
+ r&m_r&\displaystyle\lim_{\epsilon\downarrow0}
+       \epsilon^{m_r}\wedge^rJ_\epsilon&
+ \displaystyle\lim_{\epsilon\downarrow0}
+       \epsilon^{m_r}\wedge^rJ_\epsilon^{-1}\\\hline
+ 1&4&64iE^{(1)}_{4,1}&120E^{(1)}_{4,1}\\
+ 2&5&-672E^{(2)}_{34,12}&336E^{(2)}_{34,12}\\
+ 3&4&240E^{(3)}_{234,123}&32iE^{(3)}_{234,123}\\
+ 4&0&-2&-1/2
+\end{array}.
+\tag{FC59}
+\]
+For explicit verification, each exterior matrix has entries
+$\det(J_{I,J})$ or $\det((J^{-1})_{I,J})$. Their minimum Laurent
+exponents are respectively $-4,-5,-4,0$; the coefficients at those
+exponents are exactly the displayed single-entry matrices. Every
+remaining monomial has larger exponent. This proves the limits and
+the absence of any more singular omitted entry. The accompanying
+script expands every minor and checks the limits symbolically over
+$\mathbb Q(i)(\epsilon)$.
+
+Here are the exact constants in the original norm. For a principal
+submatrix write $G_{I,I}$; inverses below are of the full matrix $G$.
+Set
+\[
+ \tau_1=\sqrt{G_{44}(G^{-1})_{11}},\qquad
+ \tau_2=\sqrt{\det G_{34,34}\det(G^{-1})_{12,12}}
+       =\frac{\det G_{34,34}}{\sqrt{\det G}}>0.
+ \tag{FC60}
+\]
+Both constants are strictly positive because $G$ is positive definite.
+For the original wedge metric, the squared norm of $e_I$ is
+$\det G_{I,I}$ and that of its coordinate dual functional $e_J^*$ is
+$\det(G^{-1})_{J,J}$. The norm of a rank-one map $x\lambda$ is
+$\|x\|\|\lambda\|$: the inequality is Cauchy--Schwarz for the
+Riesz representative of $\lambda$, and equality is attained at that
+representative. It follows that the rank-one norms in FC59 are
+$64\tau_1$, $672\tau_2$, and $240\tau_1$.
+For the last equality use
+\[
+ \det G_{234,234}=\det G\,(G^{-1})_{11},\quad
+ \det(G^{-1})_{123,123}=G_{44}/\det G.
+\]
+These complementary-minor formulas follow from the cofactor inverse
+formula for three-element minors. For the two-element formula in
+FC60, block-eliminate the positive principal block $G_{34,34}$.
+The complementary block of $G^{-1}$ is the inverse Schur complement,
+and $\det G$ is the product of that complement's determinant with
+$\det G_{34,34}$, giving the claimed identity without discarding
+any cross term.
+
+Continuity of the norm of a finite matrix with fixed positive domain
+and codomain forms now proves
+\[
+\begin{array}{c|c|c}
+r&\displaystyle\lim_{\epsilon\downarrow0}\epsilon^{m_r}
+ \|\wedge^r DP_{\mathcal W}(z_\epsilon)\|&
+\displaystyle\lim_{\epsilon\downarrow0}\epsilon^{m_r}
+ \|\wedge^r DP_{\mathcal W}(z_\epsilon)^{-1}\|\\\hline
+1&64\tau_1&120\tau_1\\
+2&672\tau_2&336\tau_2\\
+3&240\tau_1&32\tau_1\\
+4&2&1/2
+\end{array}.
+\tag{FC61}
+\]
+Every norm here is in the original target Gamma metric and its induced
+exterior metric. The pulled-back matrix $G$ is only its exact coordinate
+expression; the maps $\Psi$ and $K$ have not been declared unitary.
+
+Let $\sigma_1(\epsilon)\ge\cdots\ge\sigma_4(\epsilon)>0$
+be the four singular values of this derivative in that metric. The
+largest singular value of $\wedge^r J$ is the product of its largest
+$r$ singular values: diagonalizing the two positive singular-value
+factors gives the wedge basis with all $r$-fold products. Taking
+successive ratios of FC61 therefore proves the full spectrum
+\[
+\begin{aligned}
+ \sigma_1(\epsilon)&\sim64\tau_1\epsilon^{-4},&
+ \sigma_2(\epsilon)&\sim\frac{21\tau_2}{2\tau_1}\epsilon^{-1},\\
+ \sigma_3(\epsilon)&\sim\frac{5\tau_1}{14\tau_2}\epsilon,&
+ \sigma_4(\epsilon)&\sim\frac{1}{120\tau_1}\epsilon^4.
+\end{aligned}\tag{FC62}
+\]
+The product of the four displayed constants is $2$, agreeing with
+the exact determinant modulus. In particular the condition number
+is asymptotic to $7680\tau_1^2\epsilon^{-8}$. The degeneration is
+at infinity along a proved branch; each finite point still has
+nonzero Jacobian determinant.
+
+There is also an exact inverse derivative identity in the direction
+of the image curve. Differentiating FC45--46 gives
+\[
+ J_\epsilon
+ \begin{pmatrix}-1\\-2i\epsilon^{-2}\\-12i\epsilon^{-3}\\-120i\epsilon^{-4}\end{pmatrix}
+ =\begin{pmatrix}-i+3i\epsilon^2/2\\3i/2\\0\\0\end{pmatrix}.
+ \tag{FC63}
+\]
+This identifies a specific bounded target velocity whose inverse
+grows as $\epsilon^{-4}$, in addition to the full singular spectrum.
+If $p_\epsilon=P_{\mathcal W}(z_\epsilon)$, put
+$v_0=\Psi(-i,3i/2,0,0)^T\ne0$ and $p_*=2iy_{\mathrm M}$.
+FC46 implies $(p_\epsilon-p_*)/\epsilon\to v_0$. Combining
+this limit with FC48 and FC61 gives the exact distance laws
+\[
+ \|p_\epsilon-p_*\|^3\|z_\epsilon\|
+       \longrightarrow40\|\Psi e_w\|\|v_0\|^3,
+ \qquad
+ \|p_\epsilon-p_*\|^4
+ \|DP_{\mathcal W}(z_\epsilon)^{-1}\|
+       \longrightarrow120\tau_1\|v_0\|^4.
+ \tag{FC64}
+\]
+All norms and all constants in these two limits are the same original
+Gamma norms of FC56. Injectivity of $\Psi$ proves their positivity.
+
+\section{The exact return to audit equation (11)}
+For an invertible map $B$ of a four-dimensional Hilbert space,
+its singular values prove
+\[
+ \|\wedge^r B^{-1}\|=
+       \frac{\|\wedge^{4-r}B\|}{|\det B|}.
+ \tag{FC65}
+\]
+Applying this to FC57 gives precisely the inverse constants in FC61,
+including $\|\wedge^2 B^{-1}\|=\|\wedge^2B\|/2$.
+Thus the escaping branch realizes highly anisotropic distortion while
+satisfying the same exterior identity used to derive audit (11).
+Its forward bound is not fixed along the branch: it grows with the
+explicit poles in FC59. No contradiction with that identity occurs.
+
+The exact relation to the original conductor is stronger than applying
+the identity to an unrelated matrix. Put $L=T_A|_{\mathcal U}$,
+$u_\epsilon=\Phi\widehat q_\epsilon$, and
+$B_{U,\epsilon}=DP_{\mathcal U}(u_\epsilon)$,
+$B_{W,\epsilon}=DP_{\mathcal W}(z_\epsilon)$. Differentiating FC33
+at the very same source point proves
+\[
+ LB_{U,\epsilon}=B_{W,\epsilon}L,\qquad
+ B_{W,\epsilon}^{-1}=L B_{U,\epsilon}^{-1}L^{-1}.
+ \tag{FC66}
+\]
+This identity retains the original source quotient metric on $\mathcal U$
+and target metric on $\mathcal W$. In particular, for every $0\le r\le4$,
+\[
+ \frac{\|\wedge^r B_{U,\epsilon}^{-1}\|}
+ {\|\wedge^r L\|\,\|\wedge^r L^{-1}\|}
+ \le\|\wedge^r B_{W,\epsilon}^{-1}\|
+ \le\|\wedge^r L\|\,\|\wedge^r L^{-1}\|
+       \|\wedge^r B_{U,\epsilon}^{-1}\|.
+ \tag{FC67}
+\]
+The upper bound follows from composition of exterior maps; the lower
+bound follows by solving FC66 for $B_{U,\epsilon}^{-1}$. On the four-plane,
+$L$ is exactly $A_{3,s}$ in the WCF orthonormal frames, so the actual
+bound in audit (11) applies to the unchanged factor
+$\|\wedge^rL^{-1}\|$. For fixed conductor this factor is independent
+of $\epsilon$. All four pole orders therefore survive transport through
+the original conductor in both directions. This supplies a quantitative
+return to the audited map, without assigning to it the nonlinear map's
+variable derivative or removing a kernel without its quotient.
+
+For completeness, define the source pullback form
+$G_U=(K^{-1})^*G_xK^{-1}$. Replacing $G$ in FC60 by $G_U$ proves
+the exact source constants in FC61--64 as well, since the Laurent
+matrices FC57--59 are unchanged. Both source and target degenerations
+are now evaluated in their original norms. The constant determinant
+and the nonproper inverse are compatible; the first does not control
+the separate singular values, which FC62 evaluates completely.
+
+\section{The singular flags and the exact volumes of fixed Fable flags}
+The compound limits determine the directions of this distortion as well
+as its size. Let $I_k=\{1,\ldots,k\}$ and
+$J_k=\{5-k,\ldots,4\}$. For $k=1,2,3$, the limiting right
+singular $k$-plane in the $G$ coordinates and the limiting left plane are
+\[
+ \mathcal R_k=G^{-1}\operatorname{span}\{e_j:j\in I_k\},\qquad
+ \mathcal L_k=\operatorname{span}\{e_j:j\in J_k\}.
+ \tag{FC68}
+\]
+To prove this, the rank-one compound limit in FC59 has image line
+$\C e_{J_k}$ and covector proportional to $e_{I_k}^*$.
+The Riesz vector of the coordinate covector $e_j^*$ in the original
+form is $G^{-1}e_j$, because
+$\langle G^{-1}e_j,x\rangle_G=e_j^*x$.
+Taking wedges gives the right singular line
+$\C\bigwedge_{j\in I_k}(G^{-1}e_j)$. The nonzero singular value
+of each limiting rank-one map is simple; its other singular values
+are zero. For convergent matrices with this property, their leading
+left and right singular lines converge: a convergent subsequence of
+unit maximizing vectors must attain the limiting positive norm and
+therefore belongs to that unique line. Compactness of the unit sphere
+and uniqueness give convergence of the full family of lines. The
+Pl\"ucker line of a decomposable nonzero wedge determines its plane
+by $x\wedge\omega=0$, so the singular $k$-planes have the stated
+limits. Applying $\Psi$ gives these planes in the literal original
+target, with its unchanged Gamma metric.
+
+In particular, the greatest right-singular direction tends to
+$\C G^{-1}e_1$, and the greatest left-singular direction tends to
+$\C e_4$. Applying the inverse compound limit in FC59 shows that
+the least right-singular direction tends to $\C e_4$, and its
+least left-singular direction tends to $\C G^{-1}e_1$.
+These are directions, not a declaration that the coordinate vectors
+are orthogonal or of unit length.
+
+There is also a complete calculation for fixed, explicitly transported
+subspaces, as in the audit's endpoint Gram formula (12). Let
+\[
+ E_k=\Psi\operatorname{span}\{e_1,\ldots,e_k\}\subset\mathcal W,
+ \quad 1\le k\le4,
+ \qquad (d_1,d_2,d_3,d_4)=(64,672,240,2).
+\]
+The ratio of the output Gram determinant of this particular frame under
+$B_{W,\epsilon}$ to its input Gram determinant is exactly
+\[
+ \mathcal V_k(\epsilon)=
+ \frac{\det\bigl((J_\epsilon^*GJ_\epsilon)_{I_k,I_k}\bigr)}
+      {\det G_{I_k,I_k}},\qquad
+ \epsilon^{2m_k}\mathcal V_k(\epsilon)
+ \longrightarrow d_k^2\frac{\det G_{J_k,J_k}}{\det G_{I_k,I_k}}>0.
+ \tag{FC69}
+\]
+Indeed the numerator is the squared original wedge norm of
+$(\wedge^kJ_\epsilon)e_{I_k}$. FC59 takes this wedge, after
+the displayed power of $\epsilon$, to a scalar of modulus $d_k$
+times $e_{J_k}$. Taking its squared norm proves FC69, while the
+denominator is the exact squared norm of the input wedge. Hence
+\[
+ \log\mathcal V_k(\epsilon)=2m_k\log(1/\epsilon)
+   +\log\left(d_k^2\frac{\det G_{J_k,J_k}}
+                                {\det G_{I_k,I_k}}\right)+o(1).
+ \tag{FC70}
+\]
+For $k=4$, this ratio is identically $4$, not merely asymptotic to it.
+For $k=1,2,3$ it diverges with the specified rates, even though the
+full determinant stays fixed. This computes actual subspaces and their
+exact original metric constants; it is not an upper enclosure for an
+unspecified endpoint. The $E_k$ are the transported Fable coordinate
+flags defined here, and no equality with a different programme endpoint
+is inferred. Their source partners $\Phi\operatorname{span}(e_1,\ldots,e_k)$
+are carried to them by the original $L$ in FC66. Replacing $G$ by
+$G_U$ gives their full source volume formulas by the same proof.
+
+The difference between the actual coordinate-flag constant and the
+optimizing singular-flag constant is itself exact. For $k=1,2,3$,
+FC59--60 and FC69 give
+\[
+ \lim_{\epsilon\downarrow0}
+ \frac{\|\wedge^k B_{W,\epsilon}\|^2}{\mathcal V_k(\epsilon)}
+ =\det G_{I_k,I_k}\det(G^{-1})_{I_k,I_k}\ge1,
+ \tag{FC71}
+\]
+with equality precisely when $G_{I_k,I_k^c}=0$. To prove this
+without omitting the cross terms, write $G$ in these blocks as
+$\left(\begin{smallmatrix}A&C\\C^*&D\end{smallmatrix}\right)$.
+The corresponding inverse block is $(A-CD^{-1}C^*)^{-1}$.
+The matrix $A^{-1/2}(A-CD^{-1}C^*)A^{-1/2}$ is positive and at
+most the identity, since $CD^{-1}C^*$ is positive semidefinite.
+Its determinant is at most one, which proves the inequality.
+Equality makes all its eigenvalues one, hence $CD^{-1}C^*=0$.
+Positive definiteness of $D^{-1}$ then gives $C=0$; the reverse
+implication follows by substitution. The limit equality follows
+by dividing the rank-one operator constant
+$d_k^2\det G_{J_k,J_k}\det(G^{-1})_{I_k,I_k}$ by the fixed-frame
+constant in FC69. Thus the exact preserved cross Gram determines
+the slack in replacing these particular flag volumes by the operator
+bound used in audit (11).
+% END ESCAPE_DIFFERENTIAL
+
+% BEGIN GLOBAL_FIBRE
+\providecommand{\cP}{\mathcal P}
+% Full independent global proof reviewed and integrated by root.
+The following complete inverse calculation extends the canonical ES source
+\cite{ES488}, whose original polynomial and four marked representatives
+are retained. It classifies every target, then specializes the result
+to the literal four roots used by the original conductor.
+
+\section{The original polynomial and the factor coordinates}
+Fix $i^2=-1$. The original coordinates are $(a,y,z,w)\in\C^4$,
+and the ordered output coordinates are $(u_0,u_2,u_3,u_4)$. Define
+\begin{align}
+ P_0={}&a^3z+2a^2y-ia,\nonumber\\
+ P_2={}&-a^3y^2z-2ia^2yz+a^2w-2a^2y^3-10iay^2+3az+y,\nonumber\\
+ P_3={}&2a^3y^3z+6ia^2y^2z+2a^2wy+4a^2y^4+2iaw
+       -4iay^3-2ayz+2iz+7y^2,\nonumber\\
+ P_4={}&2a^3y^4z+8ia^2y^3z+a^2wy^2+4a^2y^5+2iawy
+       +7iay^4-10ay^2z-4iyz-w-3y^3.
+ \tag{GF1}
+\end{align}
+The factor-coordinate map $\Phi_{\mathrm{fac}}(a,y,z,w)=(a,b,c,d,e,f)$ is
+\begin{align}
+ b&=i+ay,&c&=-i+2ay+a^2z,\nonumber\\
+ d&=-iy-a(iz+2y^2)-a^2yz,&e&=2z-7iy^2+aw,\nonumber\\
+ f&=iw+3iy^3-4yz+a(6iy^2z+wy+4y^4)+2a^2y^3z.
+ &&\tag{GF2}
+\end{align}
+Let
+\[
+ L=aU+bV,\qquad C=cU^3+dU^2V+eUV^2+fV^3.
+\]
+Their original incidence and resultant equations are
+\begin{equation}
+ ad+bc=1,\qquad
+ R(L,C)=C(-b,a)=a^3f-a^2be+ab^2d-b^3c=1.\tag{GF3}
+\end{equation}
+Direct substitution of GF2 proves both identities. Multiplication
+of the two factors gives the complete coefficient map
+\begin{equation}
+ LC=(ac)U^4+U^3V+(ae+bd)U^2V^2+(af+be)UV^3+(bf)V^4,
+ \qquad P=(ac,ae+bd,af+be,bf).\tag{GF4}
+\end{equation}
+Substitution of GF2 in GF4 gives precisely GF1.
+
+On $a\ne0$, every factor state satisfying GF3 has the unique inverse
+\begin{equation}
+ y=(b-i)/a,\qquad z=(c+i-2ay)/a^2,\qquad
+ w=(e-2z+7iy^2)/a.\tag{GF5}
+\end{equation}
+These formulas recover $a,b,c,e$. The first equation GF3 uniquely
+determines $d$, and its second uniquely determines $f$ because
+$a^3\ne0$. Thus GF5 is a full inverse on that open set.
+At $a=0$, GF3 forces $bc=1$ and $-b^3c=1$, hence $b=\pm i$.
+The original chart GF2 has $b=i$, $c=-i$, and contains all such
+states: its inverse there is
+\[
+ y=id,\qquad z=(e+7iy^2)/2,\qquad
+ w=(f-3iy^3+4yz)/i.
+\]
+It contains none of the $a=0,b=-i$ states. This description of the
+chart is used explicitly in every fibre count below.
+
+\section{Exact inverse over every target}
+For $u=(u_0,u_2,u_3,u_4)$ define
+\begin{equation}
+ H_u(U,V)=u_0U^4+U^3V+u_2U^2V^2+u_3UV^3+u_4V^4,
+ \qquad h_u(x)=H_u(x,1).\tag{GF6}
+\end{equation}
+The fixed $U^3V$ coefficient is part of the original map, not a
+choice made during this calculation.
+
+\begin{theorem}[Complete fibre, including every multiple-root case]
+Every finite simple root $r$ of $h_u$ contributes exactly two
+distinct points of $P^{-1}(u)$. Their complete coordinates are
+\begin{align}
+ a^2&=1/h_u'(r),\qquad a\in\{\text{both square roots}},\nonumber\\
+ y&=-r-i/a,\nonumber\\
+ z&=u_0/a^3+2r/a+3i/a^2,\nonumber\\
+ w&=7ir^2/a+(u_2-17r+u_0r^2)/a^2-13i/a^3-2u_0/a^4.
+ \tag{GF7}
+\end{align}
+A finite multiple root contributes no point. When $u_0=0$ there
+is exactly one additional point, namely
+\begin{equation}
+ q_\infty(u)=
+ \left(0,u_2,\frac{i(7u_2^2-u_3)}2,
+                  11u_2^3-2u_2u_3-u_4\right).\tag{GF8}
+\end{equation}
+There are no other points. In particular, writing $m(u)$ for the
+number of distinct finite simple roots,
+\begin{equation}
+ \#P^{-1}(u)=2m(u)+\mathbf1_{\{u_0=0\}}.\tag{GF9}
+\end{equation}
+\end{theorem}
+\begin{proof}
+A source point with $a\ne0$ gives the marked finite root
+$r=-b/a$ of $H_u=LC$. The quotient factor is necessarily
+\begin{align*}
+ b&=-ar,&c&=u_0/a,&d&=(1+u_0r)/a,\\
+ e&=(u_2+r+u_0r^2)/a,&
+ f&=(u_3+u_2r+r^2+u_0r^3)/a.
+\end{align*}
+These formulas follow by comparing successive coefficients in
+$H_u=a(U-rV)C$. The final constant coefficient is equivalent to
+$h_u(r)=0$. Evaluating $C$ at $(-b,a)=(ar,a)$ gives
+\[
+ R(L,C)=a^3 C(r,1)=a^2 h_u'(r).
+\]
+Thus GF3 holds exactly when $a^2h_u'(r)=1$. A multiple root is
+excluded by this equation, while each simple root supplies exactly
+two nonzero values of $a$. The other incidence equation follows
+without a further constraint:
+$ad+bc=1+u_0r-u_0r=1$. The complete inverse GF5 now gives GF7;
+for example substitution in $w=(e-2z+7iy^2)/a$ yields all four
+displayed terms of its last line. These operations are reversible,
+so they prove both sufficiency and exhaustiveness on $a\ne0$.
+Distinct roots give different $r=-b/a$, and the two signs of $a$
+give distinct source points.
+
+If $a=0$ then $u_0=ac=0$. Conversely, GF1 on this hyperplane reads
+\[
+ P(0,y,z,w)=(0,y,2iz+7y^2,-4iyz-w-3y^3).
+\]
+Solving successively gives exactly GF8. In projective factor terms,
+$u_0=0$ makes $[U:V]=[1:0]$ a simple root: $H_u=V(U^3+\cdots)$
+and the leading coefficient of the parenthesis is exactly one.
+Its two resultant-one factor scalings have $b=\pm i$, but GF2
+retains only $b=i$. This is precisely the single point just solved,
+regardless of any multiple finite roots. Hence there are no omitted
+chart exceptions, and GF9 follows.
+\end{proof}
+
+For clarity the exhaustive multiplicity counts are
+\[
+\begin{array}{c|c|c}
+\text{target chart}&\text{finite root multiplicities}&\#P^{-1}(u)\\\hline
+u_0\ne0&1+1+1+1&8\\
+u_0\ne0&2+1+1&4\\
+u_0\ne0&3+1&2\\
+u_0\ne0&2+2\text{ or }4&0\\\hline
+u_0=0&1+1+1&7\\
+u_0=0&2+1&3\\
+u_0=0&3&1
+\end{array}
+\]
+Every row follows directly from GF9. The polynomial always has
+degree four or three, because the cubic coefficient is fixed at one.
+
+\section{A short complete Jacobian proof}
+On $a\ne0$, use parameters $(a,r,A,B)$, where $A=u_0$ and $B=u_2$.
+The two equations $h_u(r)=0$, $a^2h_u'(r)=1$ solve as
+\begin{equation}
+ u_3=a^{-2}-4Ar^3-3r^2-2Br,
+ \qquad u_4=3Ar^4+2r^3+Br^2-r/a^2.\tag{GF10}
+\end{equation}
+GF7 gives the source parameterization
+\[
+ q(a,r,A,B)=\left(a,-r-i/a,A/a^3+2r/a+3i/a^2,
+ 7ir^2/a+(B-17r+Ar^2)/a^2-13i/a^3-2A/a^4\right).
+\]
+Its Jacobian determinant in this parameter order is $-a^{-5}$:
+after its first row, the remaining triangular minor has diagonal
+$-1,a^{-3},a^{-2}$. For the target parameterization
+$(A,B,u_3,u_4)$, reorder the first two parameter columns past the
+last two; this permutation has positive sign. The remaining
+two-by-two determinant is
+\[
+ \det\begin{pmatrix}
+ -2/a^3&-(12Ar^2+6r+2B)\\
+ 2r/a^3&r(12Ar^2+6r+2B)-a^{-2}
+ \end{pmatrix}=2a^{-5}.
+\]
+The chain rule therefore proves
+\begin{equation}
+ \det DP=-2\quad\text{on }a\ne0.\tag{GF11}
+\end{equation}
+Every original source point with $a\ne0$ has these parameters by
+GF5--7, so this identity holds on that entire open set. Both sides
+of GF11 are polynomials in the original coordinates; their
+difference vanishes on a nonempty dense open set and is consequently
+the zero polynomial. This proves GF11 everywhere, including the
+$a=0$ chart, with its original constant and sign.
+
+\section{The exact omitted image}
+The only quartic multiplicity patterns with no simple root are
+$2+2$ and $4$. Equivalently a quartic with $u_0\ne0$ and no simple
+root is the square of a quadratic times its leading coefficient.
+Because its cubic coefficient is one, it must have the form
+\[
+ H_u(U,V)=u_0\left(U^2+\frac{1}{2u_0}UV+u_3V^2\right)^2.
+\]
+Indeed, write the monic quadratic as $U^2+pUV+qV^2$; comparison
+of cubic and linear coefficients gives $p=1/(2u_0)$ and $q=u_3$.
+The remaining coefficients then give the exact image complement
+\begin{equation}
+ \C^4\setminus P(\C^4)
+ =\{4u_0u_2-1-8u_0^2u_3=0,\quad u_4-u_0u_3^2=0\}.
+ \tag{GF12}
+\end{equation}
+The first equation excludes $u_0=0$. Conversely the two equations
+give exactly the displayed square. GF9 therefore proves both
+inclusions in GF12, not only exclusion of the square targets.
+
+\section{Discriminant and the genuine eight-sheet domain}
+Write $A=u_0,B=u_2,C=u_3,D=u_4$. Define the original binary-quartic
+discriminant polynomial by
+\begin{align}
+ \mathfrak D(u)={}&256A^3D^3-128A^2B^2D^2+144A^2BC^2D
+ -27A^2C^4-192A^2CD^2\nonumber\\
+ &+16AB^4D-4AB^3C^2-80AB^2CD+18ABC^3
+ +144ABD^2-6AC^2D\nonumber\\
+ &-4B^3D+B^2C^2+18BCD-4C^3-27D^2.
+ \tag{GF13}
+\end{align}
+For $A\ne0$, the Sylvester determinant of $h_u$ and $h_u'$,
+divided by $A$, expands to GF13. If $r_1,\ldots,r_4$ are its
+roots counted with multiplicity, that same determinant gives
+\begin{equation}
+ \mathfrak D=A^6\prod_{j<k}(r_j-r_k)^2.\tag{GF14}
+\end{equation}
+One can verify this identity first for distinct roots: the
+resultant is $A^3\prod_jh_u'(r_j)$, and
+$\prod_jh_u'(r_j)=A^4\prod_{j<k}(r_j-r_k)^2$ because
+$(-1)^{4\cdot3/2}=1$. Polynomial continuity gives the identity
+also at multiple roots. At $A=0$, GF13 becomes
+\[
+ B^2C^2-4C^3-4B^3D+18BCD-27D^2,
+\]
+the discriminant of the monic cubic $x^3+Bx^2+Cx+D$. The same
+resultant calculation in degree three proves that it vanishes
+exactly at a repeated finite root. Since the projective root at
+infinity is simple when $A=0$, GF13 vanishes exactly when $H_u$
+has any multiple projective root, on both charts.
+
+Let
+\begin{equation}
+ \mathcal B=\{u\in\C^4:u_0\mathfrak D(u)\ne0\},\qquad
+ R=\C[u_0,u_2,u_3,u_4,(u_0\mathfrak D)^{-1}].\tag{GF15}
+\end{equation}
+Over this precise domain the map $P$ is an eight-sheet finite
+unramified cover. Its complete coordinate algebra is
+\begin{equation}
+ S=R[r,a]/(h_u(r),\ a^2h_u'(r)-1).\tag{GF16}
+\end{equation}
+Here is a direct proof of each assertion. Since $u_0$ is a unit,
+the first relation is a monic relation of degree four after division
+by $u_0$, and $R[r]/(h_u)$ is free of rank four over $R$ with basis
+$1,r,r^2,r^3$. The resultant of $h_u$ and $h_u'$ is a unit in $R$.
+The adjugate of their Sylvester matrix therefore gives a Bezout
+identity over $R$, so $h_u'(r)$ is a unit in this rank-four algebra.
+The second relation is consequently the monic relation
+$a^2=h_u'(r)^{-1}$. Thus $S$ is free of rank eight over $R$, with
+basis $1,r,r^2,r^3,a,ar,ar^2,ar^3$.
+
+The original chart inverse GF7 has entries in $S$: $a$ is a unit
+with inverse $a h_u'(r)$. In the other direction, for an original
+source point over $\mathcal B$ the identity $u_0=ac$ makes $a$
+a unit, and $r=-b/a$ is regular. GF3--7 prove these two maps are
+mutually inverse. Thus GF16 is the coordinate algebra of the
+\emph{actual} preimage $P^{-1}(\mathcal B)$, rather than a new
+eight-point model.
+
+The derivative matrix of the two defining equations of GF16 with
+respect to $(r,a)$ has determinant
+$2a\,h_u'(r)^2$, a unit. This proves that each of its eight simple
+solutions gives one local holomorphic inverse, equivalently that
+the finite free map is unramified. Explicitly the four simple roots
+vary holomorphically in a sufficiently small target neighbourhood,
+and each nonzero $1/h_u'(r)$ has its two separate holomorphic
+square roots there. GF7 gives eight disjoint local inverse charts.
+There are exactly eight by GF9. These statements require neither
+a chosen global square-root branch nor identification of its two signs.
+
+\section{The complete nonproper-value locus}
+A target $u$ is called a nonproper value here if there is a sequence
+$q_n\in\C^4$ escaping every compact set with $P(q_n)\to u$.
+For this polynomial map that is the local failure of properness
+near $u$. The exact locus is
+\begin{equation}
+ \boxed{\quad\mathcal N(P)=\{u_0=0\}\ \cup\ \{\mathfrak D(u)=0\}.\quad}
+ \tag{GF17}
+\end{equation}
+
+First take $u\in\mathcal B$ and a convergent sequence of targets
+$u_n\to u$. On a sufficiently small closed neighbourhood of $u$,
+$u_0$ and $\mathfrak D$ are bounded away from zero. Every finite
+root is bounded: after dividing $h$ by $u_0$, any root has modulus
+at most one plus the maximum modulus of its nonleading
+coefficients. This follows by comparing the leading term with
+the finite geometric sum of the remaining terms outside that disk.
+Moreover $|h_{u_n}'(r_n)|$ is bounded away from zero uniformly over
+all roots. Otherwise a convergent subsequence of the bounded
+$r_n$ would give a root $r$ of $h_u$ with $h_u'(r)=0$,
+contradicting $\mathfrak D(u)\ne0$. The derivatives also have a
+uniform upper bound, by the root and coefficient bounds. Hence
+$a^2=1/h'(r)$ bounds both $a$ and $a^{-1}$; GF7 then bounds every
+original source coordinate. There is no $a=0$ solution on this
+neighbourhood. Thus no sequence above $u_n$ can escape, proving
+$\mathcal N(P)\subseteq\C^4\setminus\mathcal B$.
+
+For the reverse inclusion at $u_0=0$, let GF8 be
+$q_0=(0,y_0,z_0,w_0)$ and set
+$q_\epsilon=(\epsilon,y_0,z_0,w_0)$ for real $\epsilon>0$.
+On $a\ne0$ the exact factor-sign involution is
+\begin{equation}
+ \Sigma(a,y,z,w)=\left(-a,y+\frac{2i}{a},\frac{6i}{a^2}-z,
+ w-\frac{14iy^2}{a}+\frac{28y}{a^2}+\frac{40i}{a^3}\right).
+ \tag{GF18}
+\end{equation}
+To verify its invariance, substitute GF18 in GF2: $a,b,c,e$
+all change sign. GF3 then forces $d$ and $f$ also to change sign
+because $a\ne0$. Both factors in GF4 change sign, so
+$P\Sigma=P$. The full inverse GF5 proves $\Sigma^2=I$ as well.
+Now the second coordinate of $\Sigma q_\epsilon$ is
+$y_0+2i/\epsilon$ and escapes, while
+$P\Sigma q_\epsilon=Pq_\epsilon\to Pq_0=u$.
+Every point of the entire hyperplane $u_0=0$ is consequently
+nonproper, including its discriminant intersections.
+
+Finally let $u_0\ne0$ and $\mathfrak D(u)=0$. Choose any multiple
+root $r_0$ of $h_u$ and define
+\[
+ h_\epsilon(x)=h_u(x)+\epsilon(x-r_0),\qquad
+ u_\epsilon=(u_0,u_2,u_3+\epsilon,u_4-\epsilon r_0).
+\]
+These preserve the original fixed cubic coefficient.
+The root $r_0$ persists and has derivative exactly $\epsilon$.
+For real $\epsilon>0$ choose $a=\epsilon^{-1/2}$ and apply the
+complete inverse GF7 to this simple root. It gives a genuine
+source point $q_\epsilon$ with $Pq_\epsilon=u_\epsilon\to u$,
+while its first coordinate tends to infinity. This argument works
+for every multiplicity of $r_0$ and does not require the other roots
+to be simple. It proves the remaining inclusion in GF17.
+
+\section{The literal arithmetic quartet as a marked target quartic}
+Retain the original four distinct roots, with both original signs:
+\[
+ \rho_{\varepsilon,\eta}=\tfrac12+\varepsilon\delta+i\eta\gamma,
+ \qquad\varepsilon,\eta\in\{1,-1\},\quad
+ 0<\delta<\tfrac12,\quad\gamma>2.
+\]
+Their sum is exactly two. Therefore the quartic with these literal
+roots and the required original cubic coefficient one is
+\begin{equation}
+ H_\rho(U,V)=-\tfrac12\prod_{\varepsilon,\eta}
+                    (U-\rho_{\varepsilon,\eta}V).\tag{GF19}
+\end{equation}
+The factor $-1/2$ is forced by the cubic coefficient and is retained
+in every derivative, discriminant, and inverse below. With
+$x=S-1/2$, its affine polynomial is
+\[
+ h_\rho(S)=-\tfrac12\bigl(x^4+2(\gamma^2-\delta^2)x^2
+                              +(\delta^2+\gamma^2)^2\bigr).
+\]
+Expanding gives the exact target
+\begin{equation}
+ u_\rho(\delta)=\left(-\tfrac12,\
+ \delta^2-\gamma^2-\tfrac34,\
+ \gamma^2-\delta^2+\tfrac14,\
+ -\tfrac1{32}-\frac{\gamma^2-\delta^2}{4}
+                     -\frac{(\delta^2+\gamma^2)^2}{2}\right).
+ \tag{GF20}
+\end{equation}
+At the marked root $\rho_{\varepsilon,\eta}$,
+\begin{equation}
+ h_\rho'(\rho_{\varepsilon,\eta})
+       =4\delta\gamma(\varepsilon\gamma-i\eta\delta),\qquad
+ a_{\varepsilon,\eta,\pm}^{2}
+       =\frac1{4\delta\gamma(\varepsilon\gamma-i\eta\delta)}.
+ \tag{GF21}
+\end{equation}
+To verify the derivative, the three differences from that root are
+$2i\eta\gamma$, $2\varepsilon\delta$, and
+$2\varepsilon\delta+2i\eta\gamma$; multiply them and the retained
+leading coefficient $-1/2$. This gives precisely GF21. Both square
+roots are present at every one of the four marked roots.
+
+In the order $(+,+),(+,-),(-,+),(-,-)$ the original Vandermonde is
+$\Delta_\rho=-64\delta^2\gamma^2(\delta^2+\gamma^2)$. Hence
+\begin{equation}
+ \mathfrak D(u_\rho)=\Delta_\rho^2/64
+                   =64\delta^4\gamma^4(\delta^2+\gamma^2)^2>0.
+ \tag{GF22}
+\end{equation}
+The denominator $64$ is the sixth power of the retained factor
+$2$. Thus $u_\rho\in\mathcal B$, and GF7 and GF21 give all
+eight original chart states over it. Unlike the earlier target
+$UV(U-V)(U+V)$, it has no root at infinity and loses no sign
+partner from the source chart.
+
+For fixed $\gamma$ and $\delta\downarrow0$, GF19 tends to
+\begin{equation}
+ H_0=-\tfrac12\left((U-V/2)^2+\gamma^2V^2\right)^2.\tag{GF23}
+\end{equation}
+This target is on the omitted square surface GF12, so its complete
+source fibre is empty. The eight nearby states all escape; they
+do not become fewer finite chart points. Indeed GF21 gives
+\[
+ |a|=\bigl(4\delta\gamma\sqrt{\gamma^2+\delta^2}\bigr)^{-1/2},
+ \qquad \sqrt\delta\,|a|\longrightarrow\frac1{2\gamma}.
+\]
+For each continuous choice of its sign branch,
+\begin{equation}
+ \sqrt\delta\,a_{\varepsilon,\eta,\pm}\longrightarrow
+ \kappa_{\varepsilon,\pm},\qquad
+ \kappa_{\varepsilon,\pm}^2=\frac1{4\varepsilon\gamma^2}.
+ \tag{GF24}
+\end{equation}
+GF7 then gives
+$y\to-(1/2+i\eta\gamma)$ and $z,w\to0$. Consequently, in
+the original source coordinates,
+\begin{equation}
+ \sqrt\delta\,q_{\varepsilon,\eta,\pm}(\delta)
+       \longrightarrow\kappa_{\varepsilon,\pm}e_a,
+ \qquad e_a=(1,0,0,0)^{\mathsf T}.\tag{GF25}
+\end{equation}
+Each claim follows from the displayed inverse formulas; no moving
+period or limiting identification of distinct root coordinates is
+used to infer these limits.
+
+\section{All eight escaping branches in one fixed original conductor norm}
+Fix once and for all an admitted reference quartet with parameter
+$\delta_*>0$, its original conductor, an original permitted source
+order $s$, and its original target Gamma norm on $W=\cP_3$.
+Let $\Psi_*:\C^4\to W$ be the exact invertible receiving map
+constructed from that reference conductor in FC26--35
+above. Its entries include the reference period and every
+reference moment; none is varied in this section. Define
+\[
+ K=\begin{pmatrix}
+ 0&i&1/\sqrt2&1/\sqrt2\\
+ 0&-1&-1-\sqrt2 i&1-\sqrt2 i\\
+ i/2&-3i&2\sqrt2+6i&-2\sqrt2+6i\\
+ 0&13&-34-19\sqrt2 i&34-19\sqrt2 i
+ \end{pmatrix},\quad \det K=77\sqrt2 i/2.
+\]
+For complete coordinates, let $V_*=(\rho_{*,j}^n)_{0\le n\le3,1\le j\le4}$
+be the reference root Vandermonde, and let $\mu_j$ and $v$ be
+the original reference conductor moments and their actual first
+nonzero order. In the target basis $(1,S',S'^2,S'^3)$ the complete
+matrix of this fixed map is
+\[
+ [\Psi_*]=B_{v,*}(V_*^{\mathsf T})^{-1}K^{-1},\qquad
+ (B_{v,*})_{kj}=\begin{cases}
+ \binom{v+j}{k}\mu_{v+j-k},&0\le k\le j\le3,\\
+ 0,&k>j.
+ \end{cases}
+\]
+The first determinant is
+$\det B_{v,*}=\mu_v^4\prod_{j=0}^3\binom{v+j}{v}\ne0$;
+the reference Vandermonde is nonzero and $K$ has the determinant
+displayed above. This proves the asserted invertibility with all
+original factors retained. The target norm in this monomial frame
+is the original one, not the Euclidean norm of the column:
+\[
+ \|p\|_{\Gamma,*}^2=
+ \int_{\mathbb R}|p(c_*+iy)|^2
+ \frac{(2\pi)^{s/2}2^{s/2}}{4\pi\Gamma(s/2)}
+ |\Gamma(s/4+iy/2)|^2\,dy,\qquad
+ c_*=a_{\mathrm{amp},*}/2-4,
+\]
+where $s\in\{1,a_{\mathrm{amp},*}\}$ is the fixed original
+reference source order. This integral defines a positive definite
+norm on $\cP_3$: its density is positive on the real axis and a
+nonzero polynomial cannot vanish on that entire axis. Finiteness is
+the original WCF2 orthogonal-polynomial norm identity
+$h_{n,s}=(2\pi)^{s/2}n!(s/2)_n$, applied to the finite expansion
+of the polynomial in that frame, with no change of measure.
+With these exact maps and norms, define
+\[
+ P_{W,*}=\Psi_*P\Psi_*^{-1},\qquad
+ p_\delta=\Psi_*u_\rho(\delta),\qquad
+ Z_{\varepsilon,\eta,\pm}(\delta)
+              =\Psi_*q_{\varepsilon,\eta,\pm}(\delta).
+\]
+The variable $\delta$ in these formulas parametrizes an auxiliary
+target path inside this \emph{fixed} operator and its \emph{fixed}
+norm. It does not move the reference arithmetic period. Exact
+conjugacy gives all eight fibre identities
+\[
+ P_{W,*}(Z_{\varepsilon,\eta,\pm}(\delta))=p_\delta.
+\]
+GF25 and continuity of the fixed linear map give the actual norm
+asymptote, for every one of the eight branches,
+\begin{equation}
+ \sqrt\delta\,\|Z_{\varepsilon,\eta,\pm}(\delta)\|_{\Gamma,*}
+       \longrightarrow\frac{\|\Psi_*e_a\|_{\Gamma,*}}{2\gamma}>0.
+ \tag{GF26}
+\end{equation}
+The strict inequality follows because $\Psi_*$ is injective and
+the original Gamma norm is positive definite.
+
+The target displacement in its original coordinates is exactly
+\begin{equation}
+ u_\rho(\delta)-u_\rho(0)
+ =\delta^2 d_\gamma-\tfrac12\delta^4e_w,
+ \quad d_\gamma=(0,1,-1,\tfrac14-\gamma^2)^{\mathsf T},
+ \quad e_w=(0,0,0,1)^{\mathsf T}.\tag{GF27}
+\end{equation}
+Subtract GF20 at zero to verify every coefficient. Therefore
+$\delta^{-2}\|p_\delta-p_0\|_{\Gamma,*}
+\to\|\Psi_*d_\gamma\|_{\Gamma,*}>0$.
+Combining this with GF26 proves the complete original-norm rate
+\begin{equation}
+ \boxed{\quad
+ \|p_\delta-p_0\|_{\Gamma,*}^{1/4}
+ \|Z_{\varepsilon,\eta,\pm}(\delta)\|_{\Gamma,*}
+ \longrightarrow
+ \frac{\|\Psi_*d_\gamma\|_{\Gamma,*}^{1/4}
+       \|\Psi_*e_a\|_{\Gamma,*}}{2\gamma}>0.
+ \quad}\tag{GF28}
+\end{equation}
+The limiting point $p_0$ has no finite preimage under $P_{W,*}$,
+because GF12 and the exact conjugacy transfer that assertion as
+well. For completeness, the entire nonproper-value locus of this
+fixed nonlinear receiving map is precisely
+$\Psi_*(\{u_0\mathfrak D(u)=0\})$: invertible linear maps preserve
+boundedness, escaping sequences, and convergence. This statement
+concerns $P_{W,*}$; the original linear conductor remains the
+invertible intertwiner defining $\Psi_*$.
+
+GF26--28 avoid using a singular limit of a moving Vandermonde or a
+moving conductor norm. Such a limit would be a separate calculation:
+the construction of $\Psi_\delta$ itself assumes distinct original
+roots, and its original Vandermonde vanishes at $\delta=0$.
+Everything asserted here has instead been proved with the reference
+operator, its full original coefficients, and its original norm held
+fixed. No assertion about RH follows from introducing this nonlinear
+map or this auxiliary target path.
+% END GLOBAL_FIBRE
+
+% BEGIN SIGNED_STATE_EVALUATION
+\section{The eight-state evaluation and its exact sign decomposition}
+The eight inverse states from GF7 give a second, intrinsic four-vector
+frame in the original conductor target. This construction uses the actual
+opposite-sign pairs in that fibre, rather than selecting four unrelated
+vectors. Write $A=u_0$, $B=u_2$, $C=u_3$, $D=u_4$ and
+$h(r)=Ar^4+r^3+Br^2+Cr+D$, retaining $A\ne0$.
+For each of its four distinct roots $r_j$ choose one of the two values
+$a_j^2 h'(r_j)=1$, and write $q_{j,+}=q(r_j,a_j)$ and
+$q_{j,-}=q(r_j,-a_j)$ using the full inverse GF7. Put $d_j=h'(r_j)$.
+Direct addition and subtraction of GF7 give
+\[
+ e_j:=\frac{q_{j,+}+q_{j,-}}2=
+ \begin{pmatrix}0\\-r_j\\3i d_j\\
+ (B-17r_j+Ar_j^2)d_j-2A d_j^2\end{pmatrix},\qquad
+ o_j:=\frac{q_{j,+}-q_{j,-}}2=
+ a_j\begin{pmatrix}1\\-i d_j\\A d_j^2+2r_jd_j\\
+ 7ir_j^2d_j-13i d_j^2\end{pmatrix}.
+ \tag{SE1}
+\]
+For example $a_j^{-1}=a_jd_j$, $a_j^{-2}=d_j$,
+$a_j^{-3}=a_jd_j^2$, and $a_j^{-4}=d_j^2$; these identities
+retain every constant and sign in that addition. Thus SE1 is an exact
+reconstruction $q_{j,\pm}=e_j\pm o_j$.
+
+Let $\mathcal F_u=\C^{\{(j,+),(j,-):1\le j\le4\}}$ with its
+eight separately marked basis vectors $f_{j,\pm}$, and let
+$\mathsf S f_{j,\pm}=f_{j,\mp}$. The two explicit embeddings are
+\[
+ \iota_+e_j^{\rm coord}=(f_{j,+}+f_{j,-})/2,\qquad
+ \iota_-e_j^{\rm coord}=(f_{j,+}-f_{j,-})/2.
+ \tag{SE2}
+\]
+Their images are the $+1$ and $-1$ eigenspaces of $\mathsf S$;
+every vector of $\mathcal F_u$ has a unique expression
+$\iota_+\alpha+\iota_-\beta$. The factors $1/2$ in SE2 are the
+explicit coefficients of these maps, not an unrecorded metric change.
+Define the source-coordinate evaluation map by
+$\mathcal E f_{j,\pm}=q_{j,\pm}$ and matrices
+$E=(e_1\ e_2\ e_3\ e_4)$, $O=(o_1\ o_2\ o_3\ o_4)$.
+Then the whole eight-state map is exactly
+\[
+ \mathcal E(\iota_+\alpha+\iota_-\beta)=E\alpha+O\beta.
+ \tag{SE3}
+\]
+
+\section{The sign differences are a basis on the literal quartet}
+The rank of these two pieces can be proved in the original arithmetic
+quartet, without dropping the phases in $a_j$. For this purpose form
+the four polynomials
+\[
+ v(r)=(1,-ih'(r),A h'(r)^2+2rh'(r),
+                         7ir^2h'(r)-13ih'(r)^2)^T.
+\]
+Reduce each polynomial modulo the original $h$ by polynomial division;
+this changes no evaluation at a root. Write the remainders as
+$v(r)=V(1,r,r^2,r^3)^T$ modulo $h$. Their full coefficient matrix is
+\[
+\begin{aligned}
+ V_{1,*}&=(1,0,0,0),\\
+ V_{2,*}&=(-iC,-2iB,-3i,-4iA),\\
+ V_{3,*}&=(AC^2-9D,\ 4ABC-8AD-7C,\
+             -16A^2D+4AB^2-2AC-5B,\ -8A^2C+4AB-3),\\
+ V_{4,*}&=(-13iC^2+20iD/A,\ -52iBC+76iD+20iC/A,\
+             208iAD-52iB^2+5iC+20iB/A,\
+             104iAC-66iB+20i/A).
+\end{aligned}\tag{SE4}
+\]
+This is polynomial division by a quartic with its retained leading
+coefficient $A$; the denominators in the last row have not been removed.
+For the literal $u_\rho$ in GF20, substitution and expansion of the
+three-by-three determinant remaining after the first row give
+\[
+ \det V=448\delta^2\gamma^2
+                   (2\delta^2\gamma^2-\delta^2+\gamma^2)>0.
+ \tag{SE5}
+\]
+The inequality follows since the last factor is
+$\gamma^2+\delta^2(2\gamma^2-1)>0$ for $\gamma>2$.
+The exact polynomial remainder and determinant calculations in SE4--5
+are reproduced by \texttt{derive\_signed\_evaluation.py}; they use
+rational function arithmetic, not a sampled determinant sign.
+
+Write $\Delta=\det(r_j^{n})_{0\le n\le3,1\le j\le4}$ in the
+same original marking, and retain
+\[
+ \chi=A^2\Delta\prod_{j=1}^4a_j\in\{1,-1\}.
+ \tag{SE6}
+\]
+Indeed $\prod_jh'(r_j)=A^4\Delta^2$ by multiplying all pair
+differences; the six sign reversals have positive product. Squaring
+SE6 and using $a_j^2=1/h'(r_j)$ proves $\chi^2=1$. No particular
+choice of its sign has been imposed. Evaluating SE4 at the roots gives
+$O=V(r_j^n)_{n,j}\diag(a_1,a_2,a_3,a_4)$, hence
+\[
+ \det O=\frac{\chi}{A^2}\det V
+   =1792\chi\delta^2\gamma^2
+                   (2\delta^2\gamma^2-\delta^2+\gamma^2)\ne0
+ \tag{SE7}
+\]
+on the literal quartet, where $A=-1/2$ is retained. Thus the four
+opposite-sign differences are an actual basis in the original source
+coordinates for every admitted quartet, for either choice of each sign.
+
+The pair means have rank exactly three. Their first coordinate is zero.
+For a direct lower bound on rank, let $E_{\mathrm{pol}}$ be the coefficient
+matrix of the four polynomials in the first column expression of SE1,
+again reduced modulo the original $h$. The minor with rows $y,z,w$
+and columns corresponding to $r,r^2,r^3$ is
+\[
+ 6i\bigl(64A^3D-16A^2B^2-22A^2C+89AB-30\bigr)
+ =6i\bigl(16\delta^2\gamma^2-35\delta^2+35\gamma^2\bigr)\ne0.
+ \tag{SE8}
+\]
+The equality follows by substituting GF20. Positivity of the last
+real factor follows from
+$16\delta^2\gamma^2+35(\gamma^2-\delta^2)>0$ under the original
+bounds $0<\delta<1/2$, $\gamma>2$. Evaluation at four distinct
+roots multiplies $E_{\mathrm{pol}}$ by the invertible Vandermonde,
+so its rank and the rank of $E$ are both exactly three.
+
+The remaining even kernel line is also explicit. The full coefficient
+matrix of the means has rows
+\[
+ (0,0,0,0),\quad(0,-1,0,0),\quad(3iC,6iB,9i,12iA),\quad
+ (w_0,w_1,w_2,w_3),
+\]
+where
+\[
+\begin{aligned}
+ w_0&=-2AC^2+BC+71D,&w_1&=-8ABC+12AD+2B^2+54C,\\
+ w_2&=32A^2D-8AB^2+AC+40B,&w_3&=16A^2C-6AB+20.
+\end{aligned}\tag{SE8a}
+\]
+For $W=(r_j^n)_{n,j}$ define
+\[
+ t=(3w_3-4Aw_2,\ 0,\ 4Aw_0-Cw_3,\ Cw_2-3w_0)^T,
+ \qquad \lambda=W^{-1}t.
+ \tag{SE8b}
+\]
+The first coordinate of $t$ is nonzero by SE8. Substitution in
+the three nonzero rows of SE8a gives zero: the last two equations
+are the cross-product cancellation between $(C,3,4A)$ and
+$(w_0,w_2,w_3)$; the second coordinate of $t$ is zero. Consequently
+\[
+ \ker E=\C\lambda,\qquad
+ \lambda_j=
+ \frac{t_0(C+Br_j+r_j^2+Ar_j^3)+t_2(1+Ar_j)+t_3A}{h'(r_j)}.
+ \tag{SE8c}
+\]
+To verify the last formula, the $j$th row of $W^{-1}$ is the
+coefficient row of $h(r)/((r-r_j)h'(r_j))$. Polynomial division
+gives the four coefficients
+$h'(r_j)^{-1}(C+Br_j+r_j^2+Ar_j^3,B+r_j+Ar_j^2,1+Ar_j,A)$.
+Pairing with $t$, whose $r$ coefficient is zero, gives SE8c.
+Thus the one even direction lost by evaluation is calculated
+in the original labelled coordinates, not inferred to be the
+constant direction from the separate tetrahedral altitude map.
+
+\section{The entire eight-state kernel and the original-metric return}
+Because $O$ is invertible on the literal quartet, SE3 gives the complete
+kernel, with no unspecified missing sign or root state:
+\[
+ \ker\mathcal E=
+ \{\iota_+\alpha-\iota_-O^{-1}E\alpha:\alpha\in\C^4\},
+ \qquad
+ \mathcal E\,\iota_-O^{-1}=I_{\C^4}.
+ \tag{SE9}
+\]
+The inverse here is exactly $\operatorname{adj}(O)/\det O$, with
+SE1 and SE7 specifying numerator and nonzero denominator. The kernel
+therefore has dimension four. Its intersection with the even subspace
+has dimension one by SE8; its intersection with the odd subspace is zero
+by SE7. These assertions follow by solving $E\alpha+O\beta=0$;
+they do not identify the even kernel with a different tetrahedral
+constant direction by analogy.
+
+The receiving map to the actual conductor target is
+$\mathcal E_W=\Psi\mathcal E$, and its source partner is
+$\mathcal E_U=\Phi\mathcal E$, with the exact original maps FC32.
+Thus
+\[
+ T_A\mathcal E_U=\mathcal E_W,\quad
+ \ker\mathcal E_U=\ker\mathcal E_W=\ker\mathcal E,\quad
+ \mathcal E_W\,\iota_-O^{-1}\Psi^{-1}=I_{\mathcal W}.
+ \tag{SE10}
+\]
+The last identity constructs a complete section into the sign-odd
+four-plane of the actual eight-state space. Changing which partner
+is named $+$ changes the relevant column of $O$ and of $\iota_-$
+by the same sign; it leaves this section unchanged. Permuting the
+four labels likewise permutes these two maps inversely, so no root
+label is implicitly forgotten.
+
+The four original target vectors $\Psi o_j$ have the full Gram
+$O^*GO$, with $G$ from FC56--56a. Consequently
+\[
+ \det(O^*GO)=1792^2\delta^4\gamma^4
+       (2\delta^2\gamma^2-\delta^2+\gamma^2)^2\det G>0.
+ \tag{SE11}
+\]
+This retains the entire original Gamma measure and all its cross
+terms. Their source Gram is $O^*G_UO$; therefore the exact ratio is
+\[
+ \frac{\det(O^*GO)}{\det(O^*G_UO)}
+ =\frac{\det G}{\det G_U}=|\det A_{3,s}|^2.
+ \tag{SE12}
+\]
+The first equality cancels the same nonzero explicitly calculated
+$|\det O|^2$ on both sides, while the second is FC30 with the
+unchanged $K$ factors. This is a basis constructed from the actual
+eight signed inverse states and transported through the original
+linear conductor. Its full sign-odd part is invertible; the rank-three
+loss in the pair means and the four-dimensional graph kernel SE9
+record exactly what the sign-forgetting evaluation removes.
+
+\section{An invertible total state map retaining both labels and evaluation}
+The graph kernel can be resolved by retaining the original root-label
+vector, rather than discarding the nonlinear evaluation. Define
+\[
+ \mathcal J_U(\iota_+\alpha+\iota_-\beta)
+       =(X\alpha,\ \Phi(E\alpha+O\beta))\in\mathcal U\oplus\mathcal U,
+ \qquad
+ \mathcal J_W(\iota_+\alpha+\iota_-\beta)
+       =(Y\alpha,\ \Psi(E\alpha+O\beta))\in\mathcal W\oplus\mathcal W.
+ \tag{SE13}
+\]
+Both are isomorphisms of the complete eight-dimensional state space.
+For the target, the entire inverse is
+\[
+ \mathcal J_W^{-1}(p_1,p_2)=
+ \iota_+Y^{-1}p_1+
+ \iota_-O^{-1}(\Psi^{-1}p_2-EY^{-1}p_1).
+ \tag{SE14}
+\]
+Substitution in SE13 proves each inverse composition. Replacing
+$Y,\Psi$ by $X,\Phi$ proves the source inverse. Moreover the
+original conductor itself supplies the exact map between these
+total state spaces:
+\[
+ (T_A|_{\mathcal U}\oplus T_A|_{\mathcal U})\,\mathcal J_U
+      =\mathcal J_W.
+ \tag{SE15}
+\]
+This is direct substitution of $T_AX=Y$ and $T_A\Phi=\Psi$.
+In particular, the two original sign states of root $j$ become
+$(y_j,\Psi q_{j,+})$ and $(y_j,\Psi q_{j,-})$ in the same
+target direct sum. The root coordinate and the nonlinear input
+are both retained.
+
+The exact action of signed root permutations on this object includes
+the terms that evaluation alone would lose. For a permutation $\pi$
+and signs $\sigma_j\in\{1,-1\}$, let
+$g f_{j,t}=f_{\pi(j),\sigma_jt}$, let $\Pi e_j=e_{\pi(j)}$,
+and let $R e_j=\sigma_j e_{\pi(j)}$. Thus
+$g\iota_+=\iota_+\Pi$ and $g\iota_-=\iota_-R$.
+In coordinates $(\alpha,z)$ for the target pair $(Y\alpha,\Psi z)$,
+SE13--14 give the full transported action
+\[
+ \widehat g=
+ \begin{pmatrix}
+  \Pi&0\\ E\Pi-ORO^{-1}E&ORO^{-1}
+ \end{pmatrix}.
+ \tag{SE16}
+\]
+Indeed $z=E\alpha+O\beta$ gives
+$z'=E\Pi\alpha+OR\beta
+=ORO^{-1}z+(E\Pi-ORO^{-1}E)\alpha$.
+The off-diagonal block is therefore evaluated exactly, with all
+coefficients given in SE1 and SE7. Since SE16 is
+$\mathcal J_W g\mathcal J_W^{-1}$ in the displayed coordinates,
+it obeys the group law for every pair of signed permutations.
+The actual monodromy subgroup is determined in the signed-root
+continuation; this formula retains its full action as well.
+The source uses the identical block matrix in coordinates
+$(X\alpha,\Phi z)$, so SE15 intertwines every such action.
+
+Every nontrivial even sign change has a nonzero lower-left block,
+and its rank is exact. Put $F=O^{-1}E$. The image of $E$ is the
+entire first-coordinate-zero hyperplane by SE8, and the first row
+of $O$ is $(a_1,a_2,a_3,a_4)$. Hence
+$\operatorname{im}F=\{x:\sum_j a_jx_j=0\}$.
+Each $a_j$ is nonzero. Projection of this hyperplane onto any
+proper subset of coordinates is surjective: choose one omitted
+coordinate to solve the single displayed equation. For a diagonal
+sign action $D_J$ negating the subset $J$, the lower-left block
+of SE16 is $O(I-D_J)F$. Therefore
+\[
+ \operatorname{rank}\bigl(E-OD_JO^{-1}E\bigr)
+ =\begin{cases}2,&|J|=2,\\3,&|J|=4.\end{cases}
+ \tag{SE18}
+\]
+For two coordinates this is the just-proved surjective projection;
+for all four it is twice a rank-three matrix. These are all
+nonidentity elements of the even-sign kernel. Thus the extra
+label coordinate in SE13 retains a necessary, quantitatively
+specified mixing term. SE16 supplies the full action including it.
+
+Put the original orthogonal direct-sum Gamma norms on the two target
+copies and the original quotient direct-sum norms on the two source
+copies. In the coordinates just used their Grams are
+$\diag(G_y,G)$ and $\diag(G_x,G_U)$, respectively. This choice
+retains each original mass and cross Gram within its copy; it does
+not identify either $\mathcal J$ with an isometry from a previously
+assigned norm on the abstract finite state space. For $L=T_A|_U$
+and every $0\le r\le8$, the actual inverse-exterior norm is
+\[
+ \left\|\wedge^r(L\oplus L)^{-1}\right\|
+ =\max_{\substack{p+q=r\\0\le p,q\le4}}
+          \|\wedge^pL^{-1}\|\,\|\wedge^qL^{-1}\|.
+ \tag{SE17}
+\]
+To prove it, the orthogonal direct sum decomposes its $r$th exterior
+space into the orthogonal summands
+$\wedge^p\mathcal W\otimes\wedge^q\mathcal W$, $p+q=r$.
+The map on each summand is the tensor product of the displayed
+two exterior inverses; in singular bases its norm is the product
+of their largest singular values. The norm of a block diagonal
+map on an orthogonal direct sum is the maximum of block norms,
+proving SE17. Each factor is the original four-plane $A_{3,s}$
+inverse appearing in audit (11). This proves the full eight-state
+return to that bound without deleting the rank-three mean part,
+the four root labels, either factor sign, or the mixing block.
+% END SIGNED_STATE_EVALUATION
+
+% BEGIN SIGNED_MONODROMY
+\providecommand{\Disc}{\operatorname{Disc}}
+\providecommand{\sgn}{\operatorname{sgn}}
+\providecommand{\Aut}{\operatorname{Aut}}
+% Root-reviewed complete independent signed-root monodromy proof.
+The next calculation determines the symmetry of the actual cover GF16,
+with the original ES map and four marked labels retained \cite{ES488}.
+
+\section{The actual cover and its eight labelled states}
+For $u=(u_0,u_2,u_3,u_4)$ put
+\[
+ H_u(U,V)=u_0U^4+U^3V+u_2U^2V^2+u_3UV^3+u_4V^4,
+ \qquad h_u(x)=H_u(x,1),\qquad A=u_0.
+\]
+The original cubic coefficient remains one throughout. Let
+\[
+ \mathcal B=\{u:A\Disc(H_u)\ne0\},\qquad
+ R=\C[u_0,u_2,u_3,u_4,(A\Disc H_u)^{-1}].
+\]
+Over this domain the original source is isomorphic to the finite
+cover with coordinate algebra
+\begin{equation}
+ S=R[r,a]/(h_u(r),\ a^2h_u'(r)-1).\tag{SM1}
+\end{equation}
+In the unchanged original source coordinates its inverse is
+\begin{align}
+ y&=-r-i/a,\nonumber\\
+ z&=A/a^3+2r/a+3i/a^2,\nonumber\\
+ w&=7ir^2/a+(u_2-17r+Ar^2)/a^2-13i/a^3-2A/a^4.
+ \tag{SM2}
+\end{align}
+These formulas are obtained by factoring
+$H_u=(aU+bV)(cU^3+dU^2V+eUV^2+fV^3)$, setting $r=-b/a$,
+and retaining the resultant equation
+$C(-b,a)=a^2h_u'(r)=1$. Thus SM1 describes the actual inverse
+states; its two signs are two distinct original source points.
+
+For completeness, $R[r]/(h_u)$ is free of rank four because $A$
+is a unit and $A^{-1}h_u$ is monic. The discriminant condition
+and the Sylvester Bezout identity make $h_u'(r)$ a unit. The
+second equation of SM1 is therefore the monic relation
+$a^2=h_u'(r)^{-1}$, and $S$ is free of rank eight over $R$.
+The Jacobian of the two equations with respect to $(r,a)$ has
+determinant $2a h_u'(r)^2$, a unit. In a sufficiently small target
+neighbourhood the four simple roots and their two nonzero square
+roots therefore give eight separate holomorphic inverse charts.
+This provides the local path-lifting property used below.
+
+Both the base and the actual cover are path connected. The base
+is the complement in $\C^4$ of the zero set of the nonzero
+polynomial $A\Disc H_u$. The actual source is the complement
+of the zero set of its polynomial pullback under the original map
+$P$. This pullback is nonzero, since the eight states of any point
+in $\mathcal B$ exist by SM1--2. To connect two points in either
+complement, restrict its defining polynomial to the complex line
+through them. Its value at the endpoints is nonzero, so the
+restricted polynomial is not identically zero and has only
+finitely many zeros. A path in the complex line parameter from
+zero to one, with small detours around these finitely many points,
+connects the endpoints within the complement. This proves the
+asserted connectedness without an unproved topological
+classification of the base.
+
+\section{The exact upper bound from the retained product invariant}
+At a base point order the four roots as $r_1,r_2,r_3,r_4$ and
+choose one of the two actual values $a_j$ at each root. Denote
+the eight states by $(j,+)$ and $(j,-)$, corresponding respectively
+to $a_j$ and $-a_j$ in SM2. During continuation the four roots
+remain distinct, and their scalings remain nonzero. Put
+\[
+ \Delta=\prod_{j<k}(r_k-r_j),\qquad
+ \chi=A^2\Delta\prod_{j=1}^4a_j.
+\]
+The complete derivative product is
+\[
+ \prod_{j=1}^4h_u'(r_j)
+ =A^4\prod_{j=1}^4\prod_{k\ne j}(r_j-r_k)
+ =A^4\Delta^2.
+\]
+There are six pairs, so the sign from reversing each pair is
+$(-1)^6=1$. Consequently
+\begin{equation}
+ \chi^2=1.\tag{SM3}
+\end{equation}
+The continuous value $\chi$ is therefore constant along every
+ordered lift of a path. Its initial value may be $1$ or $-1$;
+neither value has been discarded.
+
+A loop in $\mathcal B$ induces a root permutation $\pi\in S_4$
+and signs $\sigma_j\in\{1,-1\}$ such that
+$r_j\mapsto r_{\pi(j)}$ and $a_j\mapsto\sigma_j a_{\pi(j)}$.
+The negative state continues as the negative of the positive one,
+by uniqueness in the equation $a^2h'(r)=1$. The exact action is
+therefore
+\begin{equation}
+ (j,\epsilon)\longmapsto(\pi(j),\sigma_j\epsilon),
+ \qquad \epsilon\in\{1,-1\}.\tag{SM4}
+\end{equation}
+The final Vandermonde is $\sgn(\pi)\Delta$. Applying the
+constancy of SM3 gives the necessary relation
+\begin{equation}
+ \prod_{j=1}^4\sigma_j=\sgn(\pi).\tag{SM5}
+\end{equation}
+Thus the monodromy is contained in the explicitly defined group
+\begin{equation}
+ G=\{(\sigma,\pi)\in\{\pm1\}^4\rtimes S_4:
+                       \prod_j\sigma_j=\sgn(\pi)\}.
+ \tag{SM6}
+\end{equation}
+For each permutation exactly eight sign choices satisfy SM5, so
+$|G|=8\cdot24=192$. As signed permutation matrices its elements
+have determinant $(\prod_j\sigma_j)\sgn(\pi)=1$.
+
+\section{Explicit local exchanges realizing the full group}
+Use the real roots
+\[
+ (r_{\mathrm T},r_{\mathrm E},r_{\mathrm M},r_{\mathrm N})
+ =(7,9,11,13),\qquad A=-1/40.
+\]
+Their sum is forty; hence the cubic coefficient of
+$A\prod(x-r_j)$ is exactly one. The base target is
+\begin{equation}
+ u_*^{\rm real}=(-1/40,-59/4,95,-9009/40)\in\mathcal B.
+ \tag{SM7}
+\end{equation}
+For the next calculation index the real order as
+$s_1=7,s_2=9,s_3=11,s_4=13$; these indices refer respectively
+to the unchanged labels $\mathrm T,\mathrm E,\mathrm M,\mathrm N$.
+The four derivatives are
+\[
+ (h'(s_1),h'(s_2),h'(s_3),h'(s_4))
+       =(6/5,-2/5,2/5,-6/5).
+\]
+Choose the exact base scalings
+\begin{equation}
+ (a_{\mathrm T},a_{\mathrm E},a_{\mathrm M},a_{\mathrm N})
+ =\left(\sqrt{5/6},-i\sqrt{5/2},-\sqrt{5/2},i\sqrt{5/6}\right),
+ \tag{SM8}
+\end{equation}
+where the real square roots displayed are positive. Each satisfies
+the original equation in SM1.
+
+For each adjacent pair $(s_j,s_{j+1})$, let
+$c=(s_j+s_{j+1})/2$ and $d=1$. Keeping the other two roots fixed,
+take the explicit path
+\begin{equation}
+ s_j(\theta)=c-d e^{i\theta},\qquad
+ s_{j+1}(\theta)=c+d e^{i\theta},\qquad0\le\theta\le\pi.
+ \tag{SM9}
+\end{equation}
+The pair sum remains $2c$, so the total root sum and the original
+coefficient $A=-1/40$ are unchanged. The two moving roots remain
+distinct. The closed disk of radius one about $c$ contains no
+other root, so no collision with a fixed root occurs. At the
+endpoint the pair is interchanged. The unordered roots and all
+polynomial coefficients consequently return to the same target;
+SM9 is a loop in the actual base $\mathcal B$.
+
+We compute its signs without assuming a braid-group presentation.
+For a fixed root $s_k$ outside the pair disk, the moving contribution
+to $h'(s_k)$ is
+\[
+ (s_k-s_j(\theta))(s_k-s_{j+1}(\theta))
+       =(s_k-c)^2-d^2e^{2i\theta}.
+\]
+Its values lie in the disk with positive real centre $(s_k-c)^2$
+and strictly smaller radius $d^2$. This disk is in the right
+half-plane and has a single continuous logarithm. After the loop
+that logarithm returns to its initial value. Therefore neither
+scaling at a fixed root changes sign.
+
+For a moving root, its difference from the other moving root turns
+by exactly $\pi$. Each of its two differences from an outside
+root lies in a disk not containing zero, with both endpoint values
+real and of the same sign. A logarithm on the corresponding left
+or right half-plane shows that the net imaginary part of each of
+those logarithm differences is zero. The argument change of the
+complete moving derivative is thus exactly $\pi$. Its inverse
+square root changes phase by $-\pi/2$, with its magnitude taking
+the new root's required magnitude. By the explicit choices SM8,
+the resulting permutation is the four-cycle
+\begin{equation}
+ \beta_j=(j+\quad(j+1)+\quad j-\quad(j+1)-).
+ \tag{SM10}
+\end{equation}
+Equivalently, in the four retained Time labels the three generators
+are
+\begin{equation}
+ \begin{split}
+ \beta_1&=(\mathrm T+\ \mathrm E+\ \mathrm T-\ \mathrm E-),\\
+ \beta_2&=(\mathrm E+\ \mathrm M+\ \mathrm E-\ \mathrm M-),\\
+ \beta_3&=(\mathrm M+\ \mathrm N+\ \mathrm M-\ \mathrm N-).
+ \end{split}\tag{SM11}
+\end{equation}
+Every sign and every fixed state has been determined by the path.
+
+The square $\beta_j^2$ flips exactly the two adjacent root signs.
+These three pair flips generate all even sign patterns: as vectors
+over $\mathbb F_2$ they are
+$(1,1,0,0)$, $(0,1,1,0)$ and $(0,0,1,1)$, which are independent
+and span the dimension-three subspace with coordinate sum zero.
+The projections of the three $\beta_j$ are the three adjacent
+transpositions, and they generate all of $S_4$ by successively
+moving entries to any prescribed positions. Thus the group
+generated by these actual loops contains all eight elements in
+the sign kernel and projects onto all 24 permutations. It has
+at least $8\cdot24=192$ elements. The universal upper bound SM6
+has exactly 192 elements, proving equality:
+\begin{equation}
+ \boxed{\operatorname{Mon}(P^{-1}(\mathcal B)/\mathcal B)=G.}
+ \tag{SM12}
+\end{equation}
+This proof establishes the entire group without an unproved claim
+that every base loop is a braid word.
+
+\section{Transport from the literal original quartet}
+Start with the original marking
+\[
+ (\rho_{\mathrm M},\rho_{\mathrm N},\rho_{\mathrm T},\rho_{\mathrm E})
+ =\left(\tfrac12+\delta+i\gamma,\tfrac12+\delta-i\gamma,
+        \tfrac12-\delta+i\gamma,\tfrac12-\delta-i\gamma\right),
+ \qquad0<\delta<\tfrac12,\quad\gamma>2.
+\]
+Its target is $H_\rho=-\frac12\prod(U-\rho_jV)$, with the
+original cubic coefficient one. The following two paths give a
+fully explicit base transport to SM7. First, for $0\le t\le1$,
+put
+\begin{equation}
+ \begin{array}{ll}
+ r_{\mathrm M}(t)=\tfrac12+(1-t)(\delta+i\gamma)+t,
+ &r_{\mathrm N}(t)=\tfrac12+(1-t)(\delta-i\gamma)+3t,\\
+ r_{\mathrm T}(t)=\tfrac12+(1-t)(-\delta+i\gamma)-3t,
+ &r_{\mathrm E}(t)=\tfrac12+(1-t)(-\delta-i\gamma)-t.
+ \end{array}\tag{SM13}
+\end{equation}
+Their sum is always two, so $A=-1/2$ throughout this segment.
+Roots with different original imaginary signs have different
+imaginary parts for $t<1$. Roots with the same original imaginary
+sign have real difference $2\delta(1-t)+4t$, which is positive.
+At $t=1$ the four real roots are $(3/2,7/2,-5/2,-1/2)$ and
+are distinct. Thus the entire segment remains in $\mathcal B$.
+
+Next translate all four roots by $19t/2$, $0\le t\le1$, and
+put $A(t)=-1/(2+38t)$. Their differences remain fixed, their sum
+is $2+38t\ne0$, and the retained original cubic coefficient is
+again one. At its endpoint the marked roots are
+$(11,13,7,9)$, namely SM7 in the original Time order. This
+second segment also lies entirely in $\mathcal B$.
+
+The actual signs transport by the original equations, not by
+discarding a branch. An exact formula along either differentiable
+segment is
+\begin{equation}
+ a_j(t)=a_j(0)\exp\left[-\frac12\int_0^t
+ \left(\frac{A'(s)}{A(s)}+
+ \sum_{k\ne j}\frac{r_j'(s)-r_k'(s)}{r_j(s)-r_k(s)}\right)ds\right].
+ \tag{SM14}
+\end{equation}
+The integrand has no singularity on these paths. Differentiating
+shows that $a_j(t)^2A(t)\prod_{k\ne j}(r_j(t)-r_k(t))$ is
+constant, and its initial value is one. Hence SM14 is precisely
+the lifted inverse branch. Both initial signs lift separately.
+Using SM8 as the signs at the real endpoint defines their exact
+transported signs at the original quartet; any other initial
+sign convention conjugates SM11 by a diagonal sign permutation.
+It does not change SM12, because the determinant-one subgroup
+is invariant under that conjugation.
+
+Conjugating each loop SM9 by the explicitly constructed path
+SM13 and its translation segment gives based loops at the literal
+quartet with the same marked-root action. This transport concerns
+the auxiliary quartic targets of the fixed nonlinear map. It does
+not assert that intermediate roots are arithmetic zeta zeros or
+that an original conductor period is moved along these paths.
+
+\section{Why this group is not the Weyl group of type $D_4$}
+With composition acting first by the rightmost generator, the
+product $\beta_1\beta_2\beta_3$ is the eight-cycle
+\begin{equation}
+ (\mathrm T+\ \mathrm E+\ \mathrm M+\ \mathrm N+\
+   \mathrm T-\ \mathrm E-\ \mathrm M-\ \mathrm N-).
+ \tag{SM15}
+\end{equation}
+This follows by applying the three four-cycles SM11 to each
+state in order. It has order eight.
+
+For comparison, the reflections in the roots
+$\{\pm e_j\pm e_k:j\ne k\}$ generate precisely the signed
+permutations with an even total number of sign changes. Indeed
+the reflection in $e_j-e_k$ swaps those coordinates, and the
+reflection in $e_j+e_k$ swaps them with both signs changed.
+Their compositions generate every permutation and every pair
+sign flip, and each such reflection has even total sign product.
+This proves the usual signed-permutation description of the
+Weyl group $W(D_4)$ directly:
+\[
+ W(D_4)=\{(\sigma,\pi):\prod_j\sigma_j=1\}.
+\]
+This group has no element of order eight. An underlying
+permutation of four coordinates can have cycle lengths only
+$1,2,3,4$. A signed cycle of length $m$ has order $m$ if its
+sign product is positive and $2m$ if its sign product is
+negative, as follows by applying the cycle $m$ times to each
+coordinate. With no length-four cycle, the available orders
+combine to divisors of four or six. With a length-four cycle,
+the even total sign condition makes its sign product positive,
+so its order is four. Thus order eight never occurs in $W(D_4)$,
+whereas SM15 occurs in $G$. The groups are therefore not even
+abstractly isomorphic, despite their equal order 192.
+
+\section{Exact deck groups}
+Let $\tau$ denote simultaneous reversal of all four root signs,
+$\tau(j,\epsilon)=(j,-\epsilon)$. The centralizer of $G$ in
+the full permutation group of the eight inverse states is
+\begin{equation}
+ C_{S_8}(G)=\{1,\tau\}.\tag{SM16}
+\end{equation}
+Here is a complete proof. Fix one state, say $(1,+)$. Its
+stabilizer in $G$ also fixes $(1,-)$. No state at another root
+is fixed by that stabilizer: a pair sign flip involving that
+root and one of the other two roots different from root 1
+belongs to the stabilizer and moves that state. Hence the
+stabilizer has exactly the two fixed states $(1,+),(1,-)$.
+Any permutation $c$ commuting with $G$ must send $(1,+)$ to
+one of these fixed states. The group $G$ is transitive on all
+eight states (permutations move root labels and pair flips
+change either chosen sign), so the image of this one state
+determines $c$ everywhere through $c(gx)=g c(x)$. The first
+choice gives the identity and the second gives $\tau$.
+Both commute with every signed permutation, proving SM16.
+
+A deck transformation of the actual connected cover restricts
+on the base fibre to a permutation commuting with monodromy:
+apply the deck transformation to a lifted loop and use uniqueness
+of path lifting in the local charts of SM1. Its restriction is
+injective as a function of the deck transformation. Indeed a
+transformation fixing one fibre point fixes the lift of every
+path starting there; connectedness, or the explicit path-lifting
+description, reaches the entire cover. Thus SM16 is an upper
+bound of two for the actual deck group.
+
+Both transformations are realized. The nontrivial one is the
+original rational factor-sign involution, in unchanged source
+coordinates,
+\begin{equation}
+ \Sigma(a,y,z,w)=\left(-a,\ y+\frac{2i}{a},\
+ \frac{6i}{a^2}-z,\
+ w-\frac{14iy^2}{a}+\frac{28y}{a^2}+\frac{40i}{a^3}\right).
+ \tag{SM17}
+\end{equation}
+To check it directly in the inverse model, keep the same $r,u$
+in SM2 and replace $a$ by $-a$. Its new $y$ is $y+2i/a$ and
+its new $z$ is $6i/a^2-z$. Expanding the two expressions for
+$w$ gives exactly SM17. It follows from this same operation
+that $\Sigma^2=1$ and $P\Sigma=P$ on $a\ne0$. Since $u_0=ac$
+is nonzero on $\mathcal B$, every point of its preimage has
+$a\ne0$. SM17 is regular on the entire cover and realizes
+$\tau$. The exact cover deck group is consequently
+\begin{equation}
+ \Aut_{\mathcal B}(P^{-1}(\mathcal B))=\{1,\Sigma\}\cong C_2.
+ \tag{SM18}
+\end{equation}
+
+The same two elements are all rational birational deck
+transformations of the original polynomial map. To justify the
+passage from rational maps, write $K_0=\C(u_0,u_2,u_3,u_4)$
+and $L_0=\C(a,y,z,w)$ with the embedding defined by $P$.
+SM1 makes $[L_0:K_0]=8$. The actual ring $S$ is also the
+localization
+\[
+ \C[a,y,z,w,(P_0\Disc(H_{P(q)}))^{-1}],
+\]
+so it is integrally closed: a localization of a polynomial
+unique-factorization ring has this property, since a reduced
+fraction integral over it has denominator dividing a power of
+its relatively prime numerator and therefore has unit denominator.
+Since $S$ is finite integral over $R$, it is the full integral
+closure of $R$ in $L_0$. In fact any element of $L_0$ integral
+over $R$ is integral over $S$ by the same monic polynomial,
+and integrally closedness puts it in $S$.
+Every $K_0$-automorphism of $L_0$ preserves this integral closure,
+and hence extends to a regular deck transformation on the actual
+cover. SM18 therefore bounds it by those same two elements;
+SM17 realizes both. Thus
+\begin{equation}
+ \Aut_{K_0}(L_0)=\{1,\Sigma\}.\tag{SM19}
+\end{equation}
+This statement is about birational automorphisms fixing the
+target field, not arbitrary rational maps of the source.
+
+Finally the only global polynomial deck automorphism $D$ of $\C^4$
+satisfying $P\circ D=P$ is the identity. Such an automorphism would
+restrict to SM19. The nonidentity element cannot extend
+polynomially across $a=0$, because its second coordinate is
+$(ay+2i)/a$, whose numerator is not divisible by $a$.
+Equality on the dense open set $a\ne0$ forces equality as
+rational functions, so there is no alternative polynomial
+extension. This proves the assertion for the whole original
+source, while retaining the nontrivial regular deck
+transformation on the precise eight-sheet domain. This does not
+classify polynomial automorphisms satisfying the different equation
+$P\circ D=D\circ P$; that centralizer is not asserted to be trivial.
+
+\section{Receiving the group in the fixed original conductor target}
+For the fixed original receiving isomorphism
+$\Psi:\C^4\to W=\cP_3$, with all original moments and Gamma
+norms retained, set $P_W=\Psi P\Psi^{-1}$. Its eight-sheet
+base is exactly $\Psi(\mathcal B)$. Sending a target path
+$u(t)$ to $\Psi u(t)$ and each source state to its image under
+$\Psi$ gives a bijection of all path lifts, with inverse
+$\Psi^{-1}$. Thus its monodromy is exactly SM12 on the eight
+transported marked states, and its nontrivial rational deck
+transformation is exactly $\Psi\Sigma\Psi^{-1}$. The cover
+deck group is $C_2$ and its global polynomial deck group is
+trivial by the same conjugacy.
+
+These are statements about the constructed nonlinear cover on
+the original target. They do not enlarge the symmetry group
+of a fixed Segre pairing or assert that the original conductor
+itself is a nonlinear map. The original linear conductor
+remains the exact invertible intertwiner proved in
+FC26--35 above. All four Time labels and both signs over each
+are present in the monodromy action just calculated.
+% END SIGNED_MONODROMY
+
+\begin{thebibliography}{9}
+\bibitem{ES488} The Clankers, \emph{Erd\H{o}s--Straus project reader},
+canonical 488-page edition, deposited source version 69,
+\texttt{erdos\_straus\_project\_reader.tex}, theorem
+\texttt{explicit-four-time-Jacobian-collision}, source lines
+19484--19588. Source SHA-256:
+\texttt{678b3f70ee7d2a6d00f6c588d7778e390118ab4743a5759612dbba6430984c78}.
+The formal source uses the labels $\mathrm M,\mathrm N,\mathrm T,\mathrm E$.
+The seven-point fibre and missing eighth factor-sign state are proved
+here as an extension, rather than attributed to this reader.
+\bibitem{ES} The Clankers, \emph{Arithmetic Shells, Finite Support Geometry,
+and Lorentz Lifts: Exact Identities, Certificates, and Symmetry Constructions},
+dated 4 August 2026, \texttt{es\_fable\_c123\_preprint.tex},
+consulted source snapshot, 19--20 September 2026. Exact theorem/equation
+labels are cited at use. Source SHA-256:
+\texttt{0e71a9c146eb860a9b66a2287dca673ab675e894e545df0ede642e74a4f353c4}.
+The four-Time and conductor comparison in
+this note is a new calculation, not an attribution to the human authors
+of the original Jacobian example.
+\bibitem{WCF} Split-Zero programme, \emph{A polynomial forward bound for
+the full weighted conductor}, \texttt{WEIGHTED\_CONDUCTOR\_FORWARD.tex},
+WCF1--6, source intake 17 September 2026. This source credits the
+Meixner--Pollaczek dictionary to the NIST DLMF Chapter 18 by T. H. Koornwinder, R. Wong, R. Koekoek, R. F. Swarttouw and W. P. Reinhardt, equations
+18.19.8--9, 18.22.8 and 18.23.7; its original phases and masses are
+retained here, and no new orthogonality theorem is asserted.
+\bibitem{NC} Split-Zero programme, \emph{Vanishing of the original
+proper-source kernel through conductor coprimality}, 19 September 2026,
+NC1--5, \texttt{ORIGINAL\_CONDUCTOR\_COPRIMALITY.tex}.
+\bibitem{Cumulative} Split-Zero programme, accepted 782-page source
+collection, DFX4--5 and CNC1--2, consulted local source snapshot.
+\bibitem{Tao} Terence Tao, \emph{A digestion of the Jacobian conjecture
+counterexample}, 21 July 2026,
+\url{https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/}.
+Equations (1) and the displayed three-point fibre record the
+Alp\"oge--Fable example. The ES four-Time locale is an additional marked
+construction; it must not be credited as a fourth preimage in that
+three-dimensional fibre.
+\end{thebibliography}
+\end{document}

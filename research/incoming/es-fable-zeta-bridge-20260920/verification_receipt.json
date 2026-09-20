@@ -1,0 +1,26 @@
+{
+  "certificate": "normalized ES prime-denominator quartic, signed Fable cover, and fixed conductor crosswalk",
+  "checks": {
+    "coefficient_hypersurface": "625u0u4^3-125u3u4^2+25u2u3^2u4-4u3^4=0",
+    "eight_source_inverse_residuals": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "es_incidence_4af_minus_be": true,
+    "es_relation": "p(xy+xz+yz)=4xyz",
+    "intrinsic_prime": "p=-5u4/u3",
+    "marked_resultant_one_factorization": true,
+    "normalized_quartic_coefficients": true,
+    "quartic_discriminant": "S^-6 product_{j<k}(t_j-t_k)^2",
+    "separate_reciprocal_suspension": true,
+    "suspended_cubic_discriminant": "-4*e2**3 + 16*e2**2 + 72*e2*e3 - 27*e3**2 - 256*e3"
+  },
+  "nonclaims": [
+    "The coefficient hypersurface alone does not impose integral positive roots, primality, or ES channel gates.",
+    "The construction begins with an ES witness and is not a universal existence proof.",
+    "The fixed conductor receiver does not identify ES roots with zeta zeros."
+  ],
+  "schema_version": 2
+}

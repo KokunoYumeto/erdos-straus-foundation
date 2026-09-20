@@ -64,13 +64,21 @@ for both original first-half channels:
   map from every diagonal exterior state to an original middle state, complete
   hard-prime radius-seven classification, and a middle return for the sole
   radius-eight nonsingular profile.
+- [Normalized ES quartic and exact Fable--weighted-conductor bridge](research/incoming/es-fable-zeta-bridge-20260920/README.md):
+  the literal root set $\{p,x,y,z\}$ gives a normalized quartic in the generic
+  degree-eight signed cover, with intrinsic prime, exact image hypersurface,
+  complete source fibre, Turn 7 inverse, and a fixed original conductor square.
+  The reciprocal-cubic suspension is retained separately as a seven-state
+  nonproper degeneration.
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
-actual same-prime middle states. They do not prove the source nonempty, nor do
-they bound every remaining shape. The [dated proof bulletin](DAILY_RESULTS_20260919.md)
-gives stable result IDs and exact locators. It is a mathematical index, not a
-programme chronology.
+actual same-prime middle states. The fourth gives an exact structural receiver
+for every occupied exterior state without turning the receiver into an
+occupancy theorem. They do not prove the source nonempty, nor do they bound
+every remaining shape. The [19 September bulletin](DAILY_RESULTS_20260919.md)
+and [20 September bridge bulletin](DAILY_RESULTS_20260920.md) give stable result
+IDs and exact locators. They are mathematical indexes, not a programme chronology.
 
 ## Failed steps that remain useful
 

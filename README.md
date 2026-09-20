@@ -14,7 +14,7 @@ $1/2+1/4+1/20=(10+5+1)/20=4/5$.
 
 The goal is to resolve this equation's existence question and develop the exact
 links between its arithmetic, geometry and operator constructions. The current
-86-page supplement describes the full finite witness sets at primes $p=12h+1$,
+published 86-page supplement describes the full finite witness sets at primes $p=12h+1$,
 factor tests for particular witness sets, maps that carry solutions between
 coordinates or primes, and congruence, cyclic-character and torus interfaces.
 Its central unfinished question is whether the full witness count is positive
@@ -96,6 +96,13 @@ proof locators without reconstructing a programme timeline.
     nonsingular radius-eight shape to a middle state. The natural cubic
     involution is calculated exactly and shown not to preserve the fixed-prime
     source. These are branch reductions, not universal occupancy.
+11. [Normalized ES quartic and exact Fable--weighted-conductor bridge](research/incoming/es-fable-zeta-bridge-20260920/README.md)
+    maps every actual Turn 7 exterior state to a quartic whose literal roots are
+    $p,x,y,z$, recovers $p=-5u_4/u_3$ from its unmarked coefficients, proves the
+    coefficient hypersurface and complete eight-point signed fibre, and
+    transports the result through one fixed original weighted conductor. A
+    separate seven-state reciprocal suspension retains its different nonproper
+    locus. This is a structural bridge, not an occupancy or zeta-zero theorem.
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
@@ -103,10 +110,15 @@ positive pair sum; its parallel pointwise continuation localizes every possible
 original state; the Turn 7 continuations give sharp finite atlases for the
 complete middle and exterior sources, then remove the diagonal and every
 hard-prime radius-at-most-eight exterior branch by explicit original middle
-returns. They isolate, but do not prove, the remaining unbounded-shape occupancy
-statement. None asserts the still-missing universal positivity theorem.
+returns. The eleventh result then places every occupied exterior state in the
+generic signed Fable cover and a fixed weighted conductor with all fibres and
+information loss explicit. They isolate, but do not prove, the remaining
+unbounded-shape occupancy statement. None asserts the still-missing universal
+positivity theorem.
 Each directory contains the complete proof, exact maps, executable certificates,
 source lineage, negative controls, and an explicit handoff where one was made.
+The [20 September proof bulletin](DAILY_RESULTS_20260920.md) gives stable IDs for
+the quartic, fibre, conductor and root-algebra results.
 
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with

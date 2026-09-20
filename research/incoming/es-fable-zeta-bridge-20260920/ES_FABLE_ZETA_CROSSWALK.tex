@@ -1,0 +1,515 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+\usepackage{xurl}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Disc}{\operatorname{Disc}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\ii}{\mathrm i}
+\setlength{\emergencystretch}{2em}
+
+\title{The normalized Erd\H{o}s--Straus quartic\\
+and its exact passage through the signed Fable cover\\
+to a fixed weighted conductor}
+\author{The Clankers}
+\date{20 September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+An ordered positive solution of the Erd\H{o}s--Straus equation determines a
+normalized binary quartic whose four literal roots are the prime and its three
+denominators.  We prove that this coefficient target lies in the genuine
+degree-eight finite \(\acute{e}\)tale domain of the four-dimensional Fable map.
+The prime is intrinsic in the unmarked coefficients, an explicit hypersurface
+equation characterizes the algebraic image on the relevant open chart, and
+the two inverse states marking the prime are given in every source coordinate.
+For the exterior states developed in this workbench all four roots are
+distinct; sorting recovers the denominator marking and the complete Turn~7
+coordinates.  We also retain, as a different map with a different fibre, the
+earlier reciprocal-cubic suspension: it lies on the nonproper hyperplane and
+has seven states.  Finally, explicit invertible linear maps carry both targets,
+their fibres and their exceptional loci into one fixed Meixner--Pollaczek
+weighted-conductor four-plane.  These are exact arithmetic--geometric--operator
+bridges.  They neither prove universal Erd\H{o}s--Straus existence nor identify
+the four arithmetic roots with zeros of the Riemann zeta function.
+\end{abstract}
+
+\section{The arithmetic source and the four-dimensional map}
+
+Retain an ordered positive integral solution
+\begin{equation}
+ \frac4p=\frac1x+\frac1y+\frac1z,\qquad
+ p,x,y,z\in\Z_{>0}.                                    \tag{EZ1}
+\end{equation}
+Put
+\begin{equation}
+ s_1=x+y+z,\qquad s_2=xy+xz+yz,\qquad s_3=xyz,
+ \qquad S=p+s_1.                                       \tag{EZ2}
+\end{equation}
+Multiplication of EZ1 by \(pxyz\), with no division by a possibly
+vanishing coordinate, gives the exact relation
+\begin{equation}
+ p s_2=4s_3.                                            \tag{EZ3}
+\end{equation}
+
+In source coordinates \((a,y_0,z_0,w_0)\in\C^4\), let
+\begin{align}
+ P_0={}&a^3z_0+2a^2y_0-\ii a,\nonumber\\
+ P_2={}&-a^3y_0^2z_0-2\ii a^2y_0z_0+a^2w_0-2a^2y_0^3
+       -10\ii ay_0^2+3az_0+y_0,\nonumber\\
+ P_3={}&2a^3y_0^3z_0+6\ii a^2y_0^2z_0+2a^2w_0y_0+4a^2y_0^4\nonumber\\
+      &+2\ii aw_0-4\ii ay_0^3-2ay_0z_0+2\ii z_0+7y_0^2,
+       \nonumber\\
+ P_4={}&2a^3y_0^4z_0+8\ii a^2y_0^3z_0+a^2w_0y_0^2+4a^2y_0^5\nonumber\\
+      &+2\ii aw_0y_0+7\ii ay_0^4-10ay_0^2z_0
+       -4\ii y_0z_0-w_0-3y_0^3,                       \tag{EZ4}\\
+ P(a,y_0,z_0,w_0)={}&(P_0,P_2,P_3,P_4).\nonumber
+\end{align}
+For a target \(u=(u_0,u_2,u_3,u_4)\), write
+\begin{equation}
+ H_u(U,V)=u_0U^4+U^3V+u_2U^2V^2+u_3UV^3+u_4V^4,
+ \quad h_u(T)=H_u(T,1).                                \tag{EZ5}
+\end{equation}
+The full inverse, image complement and nonproper-value locus of EZ4 are proved
+in the cumulative source \cite[GF1--GF18]{SignedCover}.  We state every inverse
+formula used below, so the crosswalk does not depend on an unnamed analogy.
+
+\section{The normalized prime--denominator quartic}
+
+\begin{definition}[Arithmetic quartic]
+Define
+\begin{equation}
+ \mathcal J(p;x,y,z)=
+ -\frac1S(U-pV)(U-xV)(U-yV)(U-zV).                     \tag{EZ6}
+\end{equation}
+The minus sign and the factor \(S^{-1}\) are retained: they make the
+coefficient of \(U^3V\) exactly one, as required by EZ5.
+\end{definition}
+
+\begin{theorem}[Exact coefficients and intrinsic prime]
+The coefficient target \(J_4(p;x,y,z)=(u_0,u_2,u_3,u_4)\) of EZ6 is
+\begin{equation}
+ \boxed{
+ u_0=-\frac1S,\quad
+ u_2=-\frac{ps_1+s_2}{S},\quad
+ u_3=\frac{ps_2+s_3}{S}=\frac{5s_3}{S},\quad
+ u_4=-\frac{ps_3}{S}.}                                 \tag{EZ7}
+\end{equation}
+In particular \(u_0u_3u_4\ne0\), and the prime survives the passage to
+the unmarked coefficient target:
+\begin{equation}
+ \boxed{p=-\frac{5u_4}{u_3}.}                           \tag{EZ8}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Expanding the product in EZ6 gives
+\[
+ -S^{-1}\bigl(U^4-SU^3V+(ps_1+s_2)U^2V^2
+ -(ps_2+s_3)UV^3+ps_3V^4\bigr).
+\]
+This proves the first expressions in EZ7.  Relation EZ3 gives
+\(ps_2+s_3=5s_3\).  All source integers are positive, so the displayed
+denominators and numerators do not vanish.  Dividing the last two coefficient
+identities gives EZ8.
+\end{proof}
+
+\begin{theorem}[Coefficient hypersurface and exact converse]
+On the open target chart \(D(u_0u_3u_4)\), every arithmetic quartic satisfies
+\begin{equation}
+ \boxed{G(u)=625u_0u_4^3-125u_3u_4^2
+       +25u_2u_3^2u_4-4u_3^4=0.}                       \tag{EZ9}
+\end{equation}
+Conversely, if \(u_0u_3u_4\ne0\) and EZ9 holds, then
+\(p=-5u_4/u_3\) is a root of \(h_u\).  If the other roots in an algebraic
+closure are denoted \(x,y,z\), counted with multiplicity, then
+\begin{equation}
+ p(xy+xz+yz)=4xyz.                                      \tag{EZ10}
+\end{equation}
+When all four roots are nonzero, EZ10 is equivalent to EZ1.
+\end{theorem}
+
+\begin{proof}
+Direct substitution of \(p=-5u_4/u_3\) into EZ5 gives
+\[
+ h_u(p)=\frac{u_4}{u_3^4}G(u).
+\]
+The prefactor is nonzero on the stated chart, proving both directions of
+the root assertion.  Factor
+\(h_u(T)=u_0(T-p)(T-x)(T-y)(T-z)\).  Vieta's formulas give
+\(u_3=-u_0(ps_2+s_3)\) and \(u_4=u_0ps_3\), where now
+\(s_2=xy+xz+yz\), \(s_3=xyz\).  Equation EZ8, which follows here from
+the definition of \(p\), becomes
+\(p=5ps_3/(ps_2+s_3)\).  Since \(p\ne0\), this is exactly EZ10.
+Dividing EZ10 by \(pxyz\) proves the last assertion.
+\end{proof}
+
+\begin{remark}[What the hypersurface does not encode]
+The equation \(G=0\) is the Zariski equation of the normalized reciprocal
+relation on this open chart.  It does not force the four roots to be positive
+integers, make \(p\) prime, select an ordering of \(x,y,z\), or impose any
+exterior, middle, congruence or divisibility gate.  These arithmetic conditions
+remain part of the source.  No admission criterion is being invented for the
+published Fable theorem; this is the exact image statement for the new ES map.
+\end{remark}
+
+\section{The eight states and the prime-marked pair}
+
+Let \(t_1=p,t_2=x,t_3=y,t_4=z\), and for each root put
+\begin{equation}
+ \Delta_j=\prod_{k\ne j}(t_j-t_k).
+\end{equation}
+
+\begin{theorem}[Complete fibre]
+If \(p,x,y,z\) are pairwise distinct, then \(J_4\) lies in the finite
+\(\acute{e}\)tale domain
+\begin{equation}
+ \mathcal B=\{u:u_0\Disc(H_u)\ne0\}                    \tag{EZ11}
+\end{equation}
+of EZ4, and \(P^{-1}(J_4)\) consists of exactly eight points.  For every
+\(j\in\{1,2,3,4\}\) and each of the two signs, choose
+\begin{equation}
+ a_{j,\sigma}^2=-\frac{S}{\Delta_j},\qquad
+ a_{j,-}=-a_{j,+}.                                     \tag{EZ12}
+\end{equation}
+The corresponding source point is
+\begin{align}
+ q_{j,\sigma}={}&(a_{j,\sigma},y_{j,\sigma},z_{j,\sigma},w_{j,\sigma}),
+                                                               \nonumber\\
+ y_{j,\sigma}={}&-t_j-\frac{\ii}{a_{j,\sigma}},\nonumber\\
+ z_{j,\sigma}={}&\frac{u_0}{a_{j,\sigma}^3}
+       +\frac{2t_j}{a_{j,\sigma}}+\frac{3\ii}{a_{j,\sigma}^2},\nonumber\\
+ w_{j,\sigma}={}&\frac{7\ii t_j^2}{a_{j,\sigma}}
+ +\frac{u_2-17t_j+u_0t_j^2}{a_{j,\sigma}^2}
+ -\frac{13\ii}{a_{j,\sigma}^3}
+ -\frac{2u_0}{a_{j,\sigma}^4}.                         \tag{EZ13}
+\end{align}
+These eight points are distinct and exhaust the fibre.
+\end{theorem}
+
+\begin{proof}
+The leading coefficient is \(u_0=-S^{-1}\ne0\), and
+\begin{equation}
+ \Disc(H_{J_4})=S^{-6}\prod_{1\le j<k\le4}(t_j-t_k)^2. \tag{EZ14}
+\end{equation}
+Thus the distinctness hypothesis is exactly EZ11.  At the root \(t_j\),
+\[
+ h_{J_4}'(t_j)=-S^{-1}\Delta_j,
+\]
+so the inverse equation \(a^2h'(t_j)=1\) is precisely EZ12.  Comparing
+coefficients in a factorization
+\(H=L C\), where \(L=a(U-t_jV)\), gives EZ13.  Substitution into EZ4
+returns \(J_4\).  Conversely, the complete inverse theorem for EZ4 says
+that on \(u_0\ne0\) every source point selects a simple root
+\(t=-b/a\) and a sign satisfying \(a^2h'(t)=1\).  Four simple roots and
+two signs therefore give exactly eight points, with no \(a=0\) chart.
+\end{proof}
+
+\begin{corollary}[The two prime-marked lifts]
+Put
+\begin{equation}
+ \Delta_p=(p-x)(p-y)(p-z),\qquad
+ \lambda^2=-\frac S{\Delta_p},\qquad
+ \mu=-\frac1{\lambda S}.                               \tag{EZ15}
+\end{equation}
+Then
+\begin{equation}
+ L=\lambda(U-pV),\qquad
+ C=\mu(U-xV)(U-yV)(U-zV)                               \tag{EZ16}
+\end{equation}
+satisfy
+\begin{equation}
+ LC=\mathcal J(p;x,y,z),\quad
+ \Res(L,C)=1,quad ad+bc=1,quad 4af-be=0.              \tag{EZ17}
+\end{equation}
+The two choices of \(\lambda\) are exactly \(q_{p,+},q_{p,-}\), and
+the rational deck involution exchanges them.  The other six fibre points mark
+\(x,y,z\); they are not additional prime-marked ES inverses.
+\end{corollary}
+
+\begin{proof}
+The product identity follows from \(\lambda\mu=-S^{-1}\).  In the
+coefficient convention
+\(L=aU+bV\), \(C=cU^3+dU^2V+eUV^2+fV^3\), EZ16 gives
+\[
+ (a,b,c,d,e,f)=(\lambda,-\lambda p,
+ \mu,-\mu s_1,\mu s_2,-\mu s_3).
+\]
+The retained resultant orientation is
+\[
+ \Res(L,C)=C(-b,a)=\lambda^3\mu\Delta_p
+           =-\lambda^2\Delta_p/S=1.
+\]
+Furthermore
+\(ad+bc=-\lambda\mu(s_1+p)=1\), and
+\(4af-be=\lambda\mu(ps_2-4s_3)=0\) by EZ3.  The source formula in
+EZ13 is the inverse of these six factor coordinates.  The deck statement is
+GF18 of \cite{SignedCover}.
+\end{proof}
+
+\section{The complete Turn 7 exterior map}
+
+The exterior source retained in the Turn~7 work has
+\begin{equation}
+ a=hrs,quad u=hr^2,quad R=4a-p,quad
+ D=\frac{4u+1}{R}=\frac{r+\kappa}{s},quad
+ R\kappa=pr+s,                                         \tag{EZ18}
+\end{equation}
+and ordered denominators
+\begin{equation}
+ (x,y,z)=(hrs,hs\kappa,phr\kappa).                     \tag{EZ19}
+\end{equation}
+
+\begin{theorem}[Exterior states land in the eight-sheet domain]
+Every actual Turn~7 exterior state maps by EZ19 and EZ6 into \(\mathcal B\).
+More precisely,
+\begin{equation}
+ x<p,qquad x<y<z,qquad z>p,qquad y\ne p,             \tag{EZ20}
+\end{equation}
+so \(p,x,y,z\) are pairwise distinct and EZ14 is strictly positive.
+\end{theorem}
+
+\begin{proof}
+The exterior inequalities give \(p/4<a=x<p/2\), hence \(x<p\).
+The retained normalization gives \(r<\kappa\), so
+\(y/x=\kappa/r>1\).  Since \(s=a/g\le a<p/2\), while \(pr\ge p\),
+we have \(z/y=pr/s>1\).  Also \(z/p=hr\kappa>1\).
+Finally \(p\nmid h\) and \(p\nmid s\), because both divide the positive
+integer \(a<p\).  If \(p\mid\kappa\), then
+\(R\kappa=pr+s\) would imply \(p\mid s\), a contradiction.  Therefore
+\(p\nmid hs\kappa=y\), so \(y\ne p\).  This proves EZ20 and the claim.
+\end{proof}
+
+The marked shape curve retains
+\begin{equation}
+ X=v,quad Y=2a,quad R=X-\alpha,quad D=X-\beta,quad
+ p=2Y-R,quad u=(RD-1)/4.                               \tag{EZ21}
+\end{equation}
+On its stated integral image, the inverse
+\begin{equation}
+ g=\gcd(a,u),\qquad
+ (h,r,s)=(g^2/u,u/g,a/g),\qquad
+ \kappa=(pr+s)/R                                       \tag{EZ22}
+\end{equation}
+followed by EZ19 and EZ6 is the complete typed map from the Turn~7 marked
+cubic to \(J_4\).  Algebraically, the coefficient target forgets the action
+of \(S_3\) permuting \(x,y,z\).  On the actual strict real chamber EZ20,
+sorting the three non-prime roots restores \(x<y<z\).  One then reconstructs
+\begin{equation}
+ R=4x-p,quad u=\frac{xz}{py}=\frac{x^2}{Ry-px},quad
+ D=\frac{4u+1}{R},quad v=\frac{x^2}{u},quad
+ (X,Y)=(v,2x),                                         \tag{EZ23}
+\end{equation}
+and EZ22 restores every exterior marking.  Outside the arithmetic chamber,
+there is no asserted global rational inverse from an unmarked root set to the
+ordered integral source.
+
+\section{The reciprocal suspension is a different exact bridge}
+
+For comparison, an ordered ES solution also gives reciprocal roots
+\begin{equation}
+ t_1=p/x,quad t_2=p/y,quad t_3=p/z,quad
+ t_1+t_2+t_3=4,quad e_2=\sum_{i<j}t_it_j,quad e_3=t_1t_2t_3. \tag{EZ24}
+\end{equation}
+The normalized cubic
+\[
+ C_{\rm ES}(U,V)=-\tfrac14\prod_{j=1}^3(U-t_jV)
+\]
+has the canonical suspension
+\begin{equation}
+ \mathfrak S(C_{\rm ES})=-4VC_{\rm ES}
+ =V\prod_{j=1}^3(U-t_jV),qquad
+ J_3=(0,-4,e_2,-e_3).                                  \tag{EZ25}
+\end{equation}
+If the three roots are distinct, the fibre has exactly seven points:
+two over each finite root and the single infinity-chart point
+\begin{equation}
+ q_\infty=\left(0,-4,\frac{\ii(112-e_2)}2,
+                         -704+8e_2+e_3\right).          \tag{EZ26}
+\end{equation}
+For \(\Delta_j=\prod_{k\ne j}(t_j-t_k)\), the six finite points are EZ13
+with \(u_0=0,u_2=-4,t_j\) as root and \(a^2=\Delta_j^{-1}\).
+Its discriminant is
+\begin{equation}
+ \prod_{i<j}(t_i-t_j)^2
+ =\frac{p^6(x-y)^2(x-z)^2(y-z)^2}{x^4y^4z^4}.           \tag{EZ27}
+\end{equation}
+Unlike \(J_4\), every \(J_3\) lies on the \(u_0=0\) component of the exact
+nonproper locus
+\begin{equation}
+ \mathcal N(P)=\{u:u_0\Disc(H_u)=0\}.                  \tag{EZ28}
+\end{equation}
+Thus the eight-state quartic and seven-state suspension are related maps with
+different retained data, fibres and exceptional loci.  Neither is substituted
+for the other.
+
+\section{The exact bridge to a fixed weighted conductor}
+
+Fix one reference arithmetic quartet with distinct roots
+\(\rho_{*,1},\ldots,\rho_{*,4}\), its original exponential polynomial,
+first nonzero moment \(\mu_v\), period frame and Taylor unit.  Let
+\begin{equation}
+ V_*=(\rho_{*,j}^{\,n})_{0\le n\le3,\,1\le j\le4},\qquad
+ (B_{v,*})_{kj}=\begin{cases}
+ \binom{v+j}{k}\mu_{v+j-k},&0\le k\le j\le3,\\
+ 0,&k>j,
+ \end{cases}                                           \tag{EZ29}
+\end{equation}
+and retain the source frame
+\begin{equation}
+ K=\begin{pmatrix}
+ 0&\ii&1/\sqrt2&1/\sqrt2\\
+ 0&-1&-1-\sqrt2\ii&1-\sqrt2\ii\\
+ \ii/2&-3\ii&2\sqrt2+6\ii&-2\sqrt2+6\ii\\
+ 0&13&-34-19\sqrt2\ii&34-19\sqrt2\ii
+ \end{pmatrix}.                                        \tag{EZ30}
+\end{equation}
+Define
+\begin{equation}
+ \Phi_*=(V_*^{\mathsf T})^{-1}K^{-1},\qquad
+ \Psi_*=B_{v,*}(V_*^{\mathsf T})^{-1}K^{-1}.           \tag{EZ31}
+\end{equation}
+The columns of \(K\) are the auxiliary labelled source frame; they are not
+identified with either \(p,x,y,z\) or the reference roots.  The original
+weighted conductor is \(T_{A,*}|_{\mathcal U_*}\), and the exact square is
+\begin{equation}
+ T_{A,*}\Phi_*=\Psi_*.                                  \tag{EZ32}
+\end{equation}
+The receiving map \(\Psi_*\) is not itself the conductor.
+
+\begin{theorem}[Conductor transport of the ES quartic]
+All three maps in EZ32 are invertible and have zero kernel.  Put
+\begin{equation}
+ P_{\mathcal U,*}=\Phi_*P\Phi_*^{-1},\qquad
+ P_{\mathcal W,*}=\Psi_*P\Psi_*^{-1}.                  \tag{EZ33}
+\end{equation}
+For every target \(u\) and source point \(q\) with \(P(q)=u\),
+\begin{equation}
+ P_{\mathcal U,*}(\Phi_*q)=\Phi_*u,qquad
+ P_{\mathcal W,*}(\Psi_*q)=\Psi_*u,qquad
+ T_{A,*}P_{\mathcal U,*}=P_{\mathcal W,*}T_{A,*}.      \tag{EZ34}
+\end{equation}
+In particular the eight points EZ13 above \(J_4\), their deck involution,
+and the exceptional set EZ28 pass bijectively to the fixed conductor planes.
+\end{theorem}
+
+\begin{proof}
+Distinct reference roots make \(V_*\) invertible.  Moreover
+\[
+ \det B_{v,*}=\mu_v^4\prod_{j=0}^3\binom{v+j}{v}\ne0,
+ \qquad \det K=77\sqrt2\,\ii/2.
+\]
+Thus EZ31 is invertible and EZ32 is the exact conductor identity proved in
+\cite[FC26--FC35]{SignedCover}.  The first two identities in EZ34 are the
+definitions of conjugacy.  Inserting EZ32 between them proves the last one.
+Invertible linear maps preserve fibres, escaping sequences, convergence and
+deck equations, proving the final assertion.
+\end{proof}
+
+For fixed \(s>0\) and centre \(c_*\), the receiving plane retains the norm
+\begin{equation}
+ \|q\|_{\Gamma,*}^2=
+ \int_{\mathbb R}|q(c_*+\ii y)|^2
+ \frac{(2\pi)^{s/2}2^{s/2}}{4\pi\Gamma(s/2)}
+ |\Gamma(s/4+\ii y/2)|^2\,dy.                          \tag{EZ35}
+\end{equation}
+Its Meixner--Pollaczek weight, mass, recurrence and generating function are
+the exact specialization of DLMF 18.19.8--9, 18.22.8 and 18.23.7
+\cite{DLMF18}.  This metric makes the bridge quantitative; it does not make
+the four ES roots into zeta zeros.
+
+\section{A root-algebra bridge and its exact projective obstruction}
+
+After choosing a bijection \(t_j\leftrightarrow\rho_{*,j}\) between the four
+distinct ES roots and the four fixed reference roots, let
+\(\ell_j^\rho(S)\) be the Lagrange polynomial satisfying
+\(\ell_j^\rho(\rho_{*,k})=\delta_{jk}\).  Then
+\begin{equation}
+ \Theta:\frac{\C[T]}{\prod_j(T-t_j)}\longrightarrow
+ \frac{\C[S]}{\prod_j(S-\rho_{*,j})},\qquad
+ [f]\longmapsto\sum_{j=1}^4 f(t_j)[\ell_j^\rho(S)]     \tag{EZ36}
+\end{equation}
+is a unital algebra isomorphism.  Its inverse evaluates at the reference roots
+and interpolates at the ES roots; hence both kernels are zero.  It depends on
+the chosen bijection.  It is generally not induced by one fractional-linear
+map.  Such a map exists exactly when the corresponding ordered cross ratios
+agree, up to the six values produced by relabelling.  This is the exact
+projective obstruction; failure of that stronger map does not erase EZ31--36.
+
+\section{Scope}
+
+The new composite is
+\[
+\begin{array}{c}
+\text{actual ordered ES exterior state}\\
+\downarrow\ \text{EZ18--23}\\
+(p;x,y,z)\\
+\downarrow\ \text{normalized product EZ6}\\
+J_4\in\mathcal B,\quad p=-5u_4/u_3,\quad G(J_4)=0\\
+\downarrow\ P^{-1}\\
+\{q_{p,\pm},q_{x,\pm},q_{y,\pm},q_{z,\pm}\}\\
+\downarrow\ (\Phi_*,\Psi_*,T_{A,*})\\
+\text{eight states in the fixed weighted-conductor square.}
+\end{array}
+\]
+The map begins with an actual ES witness and therefore is not a proof that a
+witness exists for every \(p\).  The hypersurface \(G=0\) is not by itself an
+arithmetic occupancy theorem.  The fixed quartet and fixed conductor data do
+not vary with \(p,x,y,z\), and the construction proves no zero of the Riemann
+zeta function.  The signed-root monodromy group of order \(192\) belongs to the
+generic eight-sheet cover over \(\mathcal B\); it is not attributed to the
+seven-state boundary suspension.
+
+\begin{thebibliography}{9}
+
+\bibitem{ESC123}
+The Clankers,
+\emph{Erd\H{o}s--Straus--Fable C123 preprint},
+canonical local corpus unit \texttt{PUBUNIT-1C9A160031EECC8F3F032D4D},
+source lines 22314--22543.
+Used for the generic quartic product/resultant carrier, the ES incidence
+\(\Res=1,4af-be=0\), and the constant-Jacobian chart.  The normalized
+prime--denominator target, intrinsic-prime formula, image hypersurface and
+global-locus refinement are proved here.
+
+\bibitem{Turn7}
+The Clankers,
+\emph{Small-shape rigidity and channel rescue},
+\texttt{../es-turn07-shape-rigidity-20260919/core.tex},
+20 September 2026.
+Used for EZ18--23, including every exterior gate and the marked-cubic inverse.
+
+\bibitem{SignedCover}
+The Clankers,
+\emph{The ES--Fable inverse correspondence in the original weighted conductor},
+\texttt{upstream/FABLE\_TO\_ORIGINAL\_CONDUCTOR.tex},
+FC1--FC71, GF1--GF28, SE1--SE18 and SM1--SM19,
+20 September 2026.
+Used for the four-dimensional map, complete inverse, image complement,
+nonproper locus, conductor square, signed evaluation and monodromy.  The frozen
+cumulative source hash is
+\texttt{bfb75ff468f35b71103ad2671e22f20fee0414df4a43d1dab5fc2d19aabbd1b6}.
+
+\bibitem{DLMF18}
+T. H. Koornwinder, R. Wong, R. Koekoek, R. F. Swarttouw,
+and W. P. Reinhardt,
+\emph{Orthogonal Polynomials}, NIST Digital Library of Mathematical Functions,
+Chapter 18,
+\url{https://dlmf.nist.gov/18.19.E8},
+\url{https://dlmf.nist.gov/18.19.E9},
+\url{https://dlmf.nist.gov/18.22.E8},
+\url{https://dlmf.nist.gov/18.23.E7}.
+
+\end{thebibliography}
+\end{document}

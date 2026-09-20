@@ -1,0 +1,567 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,mathtools,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Disc}{\operatorname{Disc}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\cP}{\mathcal P}
+\title{Complete fibres, the eight-sheet domain, and the nonproper-value locus of the ES--Fable map}
+\author{Independent programme calculation}
+\date{20 September 2026}
+\begin{document}
+\maketitle
+
+The input polynomial is the four-dimensional map in the canonical
+ES--Fable reader \cite[Theorem
+\texttt{explicit-four-time-Jacobian-collision}]{ES488}.
+Its complete inverse calculation below includes every multiple-root
+and missing-chart case. The original conductor is retained as a
+fixed linear receiving isomorphism in the final section; its
+coefficients and its original Gamma norm are not replaced.
+
+\section{The original polynomial and the factor coordinates}
+Fix $i^2=-1$. The original coordinates are $(a,y,z,w)\in\C^4$,
+and the ordered output coordinates are $(u_0,u_2,u_3,u_4)$. Define
+\begin{align}
+ P_0={}&a^3z+2a^2y-ia,\nonumber\\
+ P_2={}&-a^3y^2z-2ia^2yz+a^2w-2a^2y^3-10iay^2+3az+y,\nonumber\\
+ P_3={}&2a^3y^3z+6ia^2y^2z+2a^2wy+4a^2y^4+2iaw
+       -4iay^3-2ayz+2iz+7y^2,\nonumber\\
+ P_4={}&2a^3y^4z+8ia^2y^3z+a^2wy^2+4a^2y^5+2iawy
+       +7iay^4-10ay^2z-4iyz-w-3y^3.
+ \tag{GF1}
+\end{align}
+The factor-coordinate map $\Phi(a,y,z,w)=(a,b,c,d,e,f)$ is
+\begin{align}
+ b&=i+ay,&c&=-i+2ay+a^2z,\nonumber\\
+ d&=-iy-a(iz+2y^2)-a^2yz,&e&=2z-7iy^2+aw,\nonumber\\
+ f&=iw+3iy^3-4yz+a(6iy^2z+wy+4y^4)+2a^2y^3z.
+ &&\tag{GF2}
+\end{align}
+Let
+\[
+ L=aU+bV,\qquad C=cU^3+dU^2V+eUV^2+fV^3.
+\]
+Their original incidence and resultant equations are
+\begin{equation}
+ ad+bc=1,\qquad
+ R(L,C)=C(-b,a)=a^3f-a^2be+ab^2d-b^3c=1.\tag{GF3}
+\end{equation}
+Direct substitution of GF2 proves both identities. Multiplication
+of the two factors gives the complete coefficient map
+\begin{equation}
+ LC=(ac)U^4+U^3V+(ae+bd)U^2V^2+(af+be)UV^3+(bf)V^4,
+ \qquad P=(ac,ae+bd,af+be,bf).\tag{GF4}
+\end{equation}
+Substitution of GF2 in GF4 gives precisely GF1.
+
+On $a\ne0$, every factor state satisfying GF3 has the unique inverse
+\begin{equation}
+ y=(b-i)/a,\qquad z=(c+i-2ay)/a^2,\qquad
+ w=(e-2z+7iy^2)/a.\tag{GF5}
+\end{equation}
+These formulas recover $a,b,c,e$. The first equation GF3 uniquely
+determines $d$, and its second uniquely determines $f$ because
+$a^3\ne0$. Thus GF5 is a full inverse on that open set.
+At $a=0$, GF3 forces $bc=1$ and $-b^3c=1$, hence $b=\pm i$.
+The original chart GF2 has $b=i$, $c=-i$, and contains all such
+states: its inverse there is
+\[
+ y=id,\qquad z=(e+7iy^2)/2,\qquad
+ w=(f-3iy^3+4yz)/i.
+\]
+It contains none of the $a=0,b=-i$ states. This description of the
+chart is used explicitly in every fibre count below.
+
+\section{Exact inverse over every target}
+For $u=(u_0,u_2,u_3,u_4)$ define
+\begin{equation}
+ H_u(U,V)=u_0U^4+U^3V+u_2U^2V^2+u_3UV^3+u_4V^4,
+ \qquad h_u(x)=H_u(x,1).\tag{GF6}
+\end{equation}
+The fixed $U^3V$ coefficient is part of the original map, not a
+choice made during this calculation.
+
+\begin{theorem}[Complete fibre, including every multiple-root case]
+Every finite simple root $r$ of $h_u$ contributes exactly two
+distinct points of $P^{-1}(u)$. Their complete coordinates are
+\begin{align}
+ a^2&=1/h_u'(r),\qquad a\in\{\text{both square roots}},\nonumber\\
+ y&=-r-i/a,\nonumber\\
+ z&=u_0/a^3+2r/a+3i/a^2,\nonumber\\
+ w&=7ir^2/a+(u_2-17r+u_0r^2)/a^2-13i/a^3-2u_0/a^4.
+ \tag{GF7}
+\end{align}
+A finite multiple root contributes no point. When $u_0=0$ there
+is exactly one additional point, namely
+\begin{equation}
+ q_\infty(u)=
+ \left(0,u_2,\frac{i(7u_2^2-u_3)}2,
+                  11u_2^3-2u_2u_3-u_4\right).\tag{GF8}
+\end{equation}
+There are no other points. In particular, writing $m(u)$ for the
+number of distinct finite simple roots,
+\begin{equation}
+ \#P^{-1}(u)=2m(u)+\mathbf1_{\{u_0=0\}}.\tag{GF9}
+\end{equation}
+\end{theorem}
+\begin{proof}
+A source point with $a\ne0$ gives the marked finite root
+$r=-b/a$ of $H_u=LC$. The quotient factor is necessarily
+\begin{align*}
+ b&=-ar,&c&=u_0/a,&d&=(1+u_0r)/a,\\
+ e&=(u_2+r+u_0r^2)/a,&
+ f&=(u_3+u_2r+r^2+u_0r^3)/a.
+\end{align*}
+These formulas follow by comparing successive coefficients in
+$H_u=a(U-rV)C$. The final constant coefficient is equivalent to
+$h_u(r)=0$. Evaluating $C$ at $(-b,a)=(ar,a)$ gives
+\[
+ R(L,C)=a^3 C(r,1)=a^2 h_u'(r).
+\]
+Thus GF3 holds exactly when $a^2h_u'(r)=1$. A multiple root is
+excluded by this equation, while each simple root supplies exactly
+two nonzero values of $a$. The other incidence equation follows
+without a further constraint:
+$ad+bc=1+u_0r-u_0r=1$. The complete inverse GF5 now gives GF7;
+for example substitution in $w=(e-2z+7iy^2)/a$ yields all four
+displayed terms of its last line. These operations are reversible,
+so they prove both sufficiency and exhaustiveness on $a\ne0$.
+Distinct roots give different $r=-b/a$, and the two signs of $a$
+give distinct source points.
+
+If $a=0$ then $u_0=ac=0$. Conversely, GF1 on this hyperplane reads
+\[
+ P(0,y,z,w)=(0,y,2iz+7y^2,-4iyz-w-3y^3).
+\]
+Solving successively gives exactly GF8. In projective factor terms,
+$u_0=0$ makes $[U:V]=[1:0]$ a simple root: $H_u=V(U^3+\cdots)$
+and the leading coefficient of the parenthesis is exactly one.
+Its two resultant-one factor scalings have $b=\pm i$, but GF2
+retains only $b=i$. This is precisely the single point just solved,
+regardless of any multiple finite roots. Hence there are no omitted
+chart exceptions, and GF9 follows.
+\end{proof}
+
+For clarity the exhaustive multiplicity counts are
+\[
+\begin{array}{c|c|c}
+\text{target chart}&\text{finite root multiplicities}&\#P^{-1}(u)\\\hline
+u_0\ne0&1+1+1+1&8\\
+u_0\ne0&2+1+1&4\\
+u_0\ne0&3+1&2\\
+u_0\ne0&2+2\text{ or }4&0\\\hline
+u_0=0&1+1+1&7\\
+u_0=0&2+1&3\\
+u_0=0&3&1
+\end{array}
+\]
+Every row follows directly from GF9. The polynomial always has
+degree four or three, because the cubic coefficient is fixed at one.
+
+\section{A short complete Jacobian proof}
+On $a\ne0$, use parameters $(a,r,A,B)$, where $A=u_0$ and $B=u_2$.
+The two equations $h_u(r)=0$, $a^2h_u'(r)=1$ solve as
+\begin{equation}
+ u_3=a^{-2}-4Ar^3-3r^2-2Br,
+ \qquad u_4=3Ar^4+2r^3+Br^2-r/a^2.\tag{GF10}
+\end{equation}
+GF7 gives the source parameterization
+\[
+ q(a,r,A,B)=\left(a,-r-i/a,A/a^3+2r/a+3i/a^2,
+ 7ir^2/a+(B-17r+Ar^2)/a^2-13i/a^3-2A/a^4\right).
+\]
+Its Jacobian determinant in this parameter order is $-a^{-5}$:
+after its first row, the remaining triangular minor has diagonal
+$-1,a^{-3},a^{-2}$. For the target parameterization
+$(A,B,u_3,u_4)$, reorder the first two parameter columns past the
+last two; this permutation has positive sign. The remaining
+two-by-two determinant is
+\[
+ \det\begin{pmatrix}
+ -2/a^3&-(12Ar^2+6r+2B)\\
+ 2r/a^3&r(12Ar^2+6r+2B)-a^{-2}
+ \end{pmatrix}=2a^{-5}.
+\]
+The chain rule therefore proves
+\begin{equation}
+ \det DP=-2\quad\text{on }a\ne0.\tag{GF11}
+\end{equation}
+Every original source point with $a\ne0$ has these parameters by
+GF5--7, so this identity holds on that entire open set. Both sides
+of GF11 are polynomials in the original coordinates; their
+difference vanishes on a nonempty dense open set and is consequently
+the zero polynomial. This proves GF11 everywhere, including the
+$a=0$ chart, with its original constant and sign.
+
+\section{The exact omitted image}
+The only quartic multiplicity patterns with no simple root are
+$2+2$ and $4$. Equivalently a quartic with $u_0\ne0$ and no simple
+root is the square of a quadratic times its leading coefficient.
+Because its cubic coefficient is one, it must have the form
+\[
+ H_u(U,V)=u_0\left(U^2+\frac{1}{2u_0}UV+u_3V^2\right)^2.
+\]
+Indeed, write the monic quadratic as $U^2+pUV+qV^2$; comparison
+of cubic and linear coefficients gives $p=1/(2u_0)$ and $q=u_3$.
+The remaining coefficients then give the exact image complement
+\begin{equation}
+ \C^4\setminus P(\C^4)
+ =\{4u_0u_2-1-8u_0^2u_3=0,\quad u_4-u_0u_3^2=0\}.
+ \tag{GF12}
+\end{equation}
+The first equation excludes $u_0=0$. Conversely the two equations
+give exactly the displayed square. GF9 therefore proves both
+inclusions in GF12, not only exclusion of the square targets.
+
+\section{Discriminant and the genuine eight-sheet domain}
+Write $A=u_0,B=u_2,C=u_3,D=u_4$. Define the original binary-quartic
+discriminant polynomial by
+\begin{align}
+ \mathfrak D(u)={}&256A^3D^3-128A^2B^2D^2+144A^2BC^2D
+ -27A^2C^4-192A^2CD^2\nonumber\\
+ &+16AB^4D-4AB^3C^2-80AB^2CD+18ABC^3
+ +144ABD^2-6AC^2D\nonumber\\
+ &-4B^3D+B^2C^2+18BCD-4C^3-27D^2.
+ \tag{GF13}
+\end{align}
+For $A\ne0$, the Sylvester determinant of $h_u$ and $h_u'$,
+divided by $A$, expands to GF13. If $r_1,\ldots,r_4$ are its
+roots counted with multiplicity, that same determinant gives
+\begin{equation}
+ \mathfrak D=A^6\prod_{j<k}(r_j-r_k)^2.\tag{GF14}
+\end{equation}
+One can verify this identity first for distinct roots: the
+resultant is $A^3\prod_jh_u'(r_j)$, and
+$\prod_jh_u'(r_j)=A^4\prod_{j<k}(r_j-r_k)^2$ because
+$(-1)^{4\cdot3/2}=1$. Polynomial continuity gives the identity
+also at multiple roots. At $A=0$, GF13 becomes
+\[
+ B^2C^2-4C^3-4B^3D+18BCD-27D^2,
+\]
+the discriminant of the monic cubic $x^3+Bx^2+Cx+D$. The same
+resultant calculation in degree three proves that it vanishes
+exactly at a repeated finite root. Since the projective root at
+infinity is simple when $A=0$, GF13 vanishes exactly when $H_u$
+has any multiple projective root, on both charts.
+
+Let
+\begin{equation}
+ \mathcal B=\{u\in\C^4:u_0\mathfrak D(u)\ne0\},\qquad
+ R=\C[u_0,u_2,u_3,u_4,(u_0\mathfrak D)^{-1}].\tag{GF15}
+\end{equation}
+Over this precise domain the map $P$ is an eight-sheet finite
+unramified cover. Its complete coordinate algebra is
+\begin{equation}
+ S=R[r,a]/(h_u(r),\ a^2h_u'(r)-1).\tag{GF16}
+\end{equation}
+Here is a direct proof of each assertion. Since $u_0$ is a unit,
+the first relation is a monic relation of degree four after division
+by $u_0$, and $R[r]/(h_u)$ is free of rank four over $R$ with basis
+$1,r,r^2,r^3$. The resultant of $h_u$ and $h_u'$ is a unit in $R$.
+The adjugate of their Sylvester matrix therefore gives a Bezout
+identity over $R$, so $h_u'(r)$ is a unit in this rank-four algebra.
+The second relation is consequently the monic relation
+$a^2=h_u'(r)^{-1}$. Thus $S$ is free of rank eight over $R$, with
+basis $1,r,r^2,r^3,a,ar,ar^2,ar^3$.
+
+The original chart inverse GF7 has entries in $S$: $a$ is a unit
+with inverse $a h_u'(r)$. In the other direction, for an original
+source point over $\mathcal B$ the identity $u_0=ac$ makes $a$
+a unit, and $r=-b/a$ is regular. GF3--7 prove these two maps are
+mutually inverse. Thus GF16 is the coordinate algebra of the
+\emph{actual} preimage $P^{-1}(\mathcal B)$, rather than a new
+eight-point model.
+
+The derivative matrix of the two defining equations of GF16 with
+respect to $(r,a)$ has determinant
+$2a\,h_u'(r)^2$, a unit. This proves that each of its eight simple
+solutions gives one local holomorphic inverse, equivalently that
+the finite free map is unramified. Explicitly the four simple roots
+vary holomorphically in a sufficiently small target neighbourhood,
+and each nonzero $1/h_u'(r)$ has its two separate holomorphic
+square roots there. GF7 gives eight disjoint local inverse charts.
+There are exactly eight by GF9. These statements require neither
+a chosen global square-root branch nor identification of its two signs.
+
+\section{The complete nonproper-value locus}
+A target $u$ is called a nonproper value here if there is a sequence
+$q_n\in\C^4$ escaping every compact set with $P(q_n)\to u$.
+For this polynomial map that is the local failure of properness
+near $u$. The exact locus is
+\begin{equation}
+ \boxed{\quad\mathcal N(P)=\{u_0=0\}\ \cup\ \{\mathfrak D(u)=0\}.\quad}
+ \tag{GF17}
+\end{equation}
+
+First take $u\in\mathcal B$ and a convergent sequence of targets
+$u_n\to u$. On a sufficiently small closed neighbourhood of $u$,
+$u_0$ and $\mathfrak D$ are bounded away from zero. Every finite
+root is bounded: after dividing $h$ by $u_0$, any root has modulus
+at most one plus the maximum modulus of its nonleading
+coefficients. This follows by comparing the leading term with
+the finite geometric sum of the remaining terms outside that disk.
+Moreover $|h_{u_n}'(r_n)|$ is bounded away from zero uniformly over
+all roots. Otherwise a convergent subsequence of the bounded
+$r_n$ would give a root $r$ of $h_u$ with $h_u'(r)=0$,
+contradicting $\mathfrak D(u)\ne0$. The derivatives also have a
+uniform upper bound, by the root and coefficient bounds. Hence
+$a^2=1/h'(r)$ bounds both $a$ and $a^{-1}$; GF7 then bounds every
+original source coordinate. There is no $a=0$ solution on this
+neighbourhood. Thus no sequence above $u_n$ can escape, proving
+$\mathcal N(P)\subseteq\C^4\setminus\mathcal B$.
+
+For the reverse inclusion at $u_0=0$, let GF8 be
+$q_0=(0,y_0,z_0,w_0)$ and set
+$q_\epsilon=(\epsilon,y_0,z_0,w_0)$ for real $\epsilon>0$.
+On $a\ne0$ the exact factor-sign involution is
+\begin{equation}
+ \Sigma(a,y,z,w)=\left(-a,y+\frac{2i}{a},\frac{6i}{a^2}-z,
+ w-\frac{14iy^2}{a}+\frac{28y}{a^2}+\frac{40i}{a^3}\right).
+ \tag{GF18}
+\end{equation}
+To verify its invariance, substitute GF18 in GF2: $a,b,c,e$
+all change sign. GF3 then forces $d$ and $f$ also to change sign
+because $a\ne0$. Both factors in GF4 change sign, so
+$P\Sigma=P$. The full inverse GF5 proves $\Sigma^2=I$ as well.
+Now the second coordinate of $\Sigma q_\epsilon$ is
+$y_0+2i/\epsilon$ and escapes, while
+$P\Sigma q_\epsilon=Pq_\epsilon\to Pq_0=u$.
+Every point of the entire hyperplane $u_0=0$ is consequently
+nonproper, including its discriminant intersections.
+
+Finally let $u_0\ne0$ and $\mathfrak D(u)=0$. Choose any multiple
+root $r_0$ of $h_u$ and define
+\[
+ h_\epsilon(x)=h_u(x)+\epsilon(x-r_0),\qquad
+ u_\epsilon=(u_0,u_2,u_3+\epsilon,u_4-\epsilon r_0).
+\]
+These preserve the original fixed cubic coefficient.
+The root $r_0$ persists and has derivative exactly $\epsilon$.
+For real $\epsilon>0$ choose $a=\epsilon^{-1/2}$ and apply the
+complete inverse GF7 to this simple root. It gives a genuine
+source point $q_\epsilon$ with $Pq_\epsilon=u_\epsilon\to u$,
+while its first coordinate tends to infinity. This argument works
+for every multiplicity of $r_0$ and does not require the other roots
+to be simple. It proves the remaining inclusion in GF17.
+
+\section{The literal arithmetic quartet as a marked target quartic}
+Retain the original four distinct roots, with both original signs:
+\[
+ \rho_{\varepsilon,\eta}=\tfrac12+\varepsilon\delta+i\eta\gamma,
+ \qquad\varepsilon,\eta\in\{1,-1\},\quad
+ 0<\delta<\tfrac12,\quad\gamma>2.
+\]
+Their sum is exactly two. Therefore the quartic with these literal
+roots and the required original cubic coefficient one is
+\begin{equation}
+ H_\rho(U,V)=-\tfrac12\prod_{\varepsilon,\eta}
+                    (U-\rho_{\varepsilon,\eta}V).\tag{GF19}
+\end{equation}
+The factor $-1/2$ is forced by the cubic coefficient and is retained
+in every derivative, discriminant, and inverse below. With
+$x=S-1/2$, its affine polynomial is
+\[
+ h_\rho(S)=-\tfrac12\bigl(x^4+2(\gamma^2-\delta^2)x^2
+                              +(\delta^2+\gamma^2)^2\bigr).
+\]
+Expanding gives the exact target
+\begin{equation}
+ u_\rho(\delta)=\left(-\tfrac12,\
+ \delta^2-\gamma^2-\tfrac34,\
+ \gamma^2-\delta^2+\tfrac14,\
+ -\tfrac1{32}-\frac{\gamma^2-\delta^2}{4}
+                     -\frac{(\delta^2+\gamma^2)^2}{2}\right).
+ \tag{GF20}
+\end{equation}
+At the marked root $\rho_{\varepsilon,\eta}$,
+\begin{equation}
+ h_\rho'(\rho_{\varepsilon,\eta})
+       =4\delta\gamma(\varepsilon\gamma-i\eta\delta),\qquad
+ a_{\varepsilon,\eta,\pm}^{2}
+       =\frac1{4\delta\gamma(\varepsilon\gamma-i\eta\delta)}.
+ \tag{GF21}
+\end{equation}
+To verify the derivative, the three differences from that root are
+$2i\eta\gamma$, $2\varepsilon\delta$, and
+$2\varepsilon\delta+2i\eta\gamma$; multiply them and the retained
+leading coefficient $-1/2$. This gives precisely GF21. Both square
+roots are present at every one of the four marked roots.
+
+In the order $(+,+),(+,-),(-,+),(-,-)$ the original Vandermonde is
+$\Delta_\rho=-64\delta^2\gamma^2(\delta^2+\gamma^2)$. Hence
+\begin{equation}
+ \mathfrak D(u_\rho)=\Delta_\rho^2/64
+                   =64\delta^4\gamma^4(\delta^2+\gamma^2)^2>0.
+ \tag{GF22}
+\end{equation}
+The denominator $64$ is the sixth power of the retained factor
+$2$. Thus $u_\rho\in\mathcal B$, and GF7 and GF21 give all
+eight original chart states over it. Unlike the earlier target
+$UV(U-V)(U+V)$, it has no root at infinity and loses no sign
+partner from the source chart.
+
+For fixed $\gamma$ and $\delta\downarrow0$, GF19 tends to
+\begin{equation}
+ H_0=-\tfrac12\left((U-V/2)^2+\gamma^2V^2\right)^2.\tag{GF23}
+\end{equation}
+This target is on the omitted square surface GF12, so its complete
+source fibre is empty. The eight nearby states all escape; they
+do not become fewer finite chart points. Indeed GF21 gives
+\[
+ |a|=\bigl(4\delta\gamma\sqrt{\gamma^2+\delta^2}\bigr)^{-1/2},
+ \qquad \sqrt\delta\,|a|\longrightarrow\frac1{2\gamma}.
+\]
+For each continuous choice of its sign branch,
+\begin{equation}
+ \sqrt\delta\,a_{\varepsilon,\eta,\pm}\longrightarrow
+ \kappa_{\varepsilon,\pm},\qquad
+ \kappa_{\varepsilon,\pm}^2=\frac1{4\varepsilon\gamma^2}.
+ \tag{GF24}
+\end{equation}
+GF7 then gives
+$y\to-(1/2+i\eta\gamma)$ and $z,w\to0$. Consequently, in
+the original source coordinates,
+\begin{equation}
+ \sqrt\delta\,q_{\varepsilon,\eta,\pm}(\delta)
+       \longrightarrow\kappa_{\varepsilon,\pm}e_a,
+ \qquad e_a=(1,0,0,0)^{\mathsf T}.\tag{GF25}
+\end{equation}
+Each claim follows from the displayed inverse formulas; no moving
+period or limiting identification of distinct root coordinates is
+used to infer these limits.
+
+\section{All eight escaping branches in one fixed original conductor norm}
+Fix once and for all an admitted reference quartet with parameter
+$\delta_*>0$, its original conductor, an original permitted source
+order $s$, and its original target Gamma norm on $W=\cP_3$.
+Let $\Psi_*:\C^4\to W$ be the exact invertible receiving map
+constructed from that reference conductor in FC26--35
+\cite{Bridge}. Its entries include the reference period and every
+reference moment; none is varied in this section. Define
+\[
+ K=\begin{pmatrix}
+ 0&i&1/\sqrt2&1/\sqrt2\\
+ 0&-1&-1-\sqrt2 i&1-\sqrt2 i\\
+ i/2&-3i&2\sqrt2+6i&-2\sqrt2+6i\\
+ 0&13&-34-19\sqrt2 i&34-19\sqrt2 i
+ \end{pmatrix},\quad \det K=77\sqrt2 i/2.
+\]
+For complete coordinates, let $V_*=(\rho_{*,j}^n)_{0\le n\le3,1\le j\le4}$
+be the reference root Vandermonde, and let $\mu_j$ and $v$ be
+the original reference conductor moments and their actual first
+nonzero order. In the target basis $(1,S',S'^2,S'^3)$ the complete
+matrix of this fixed map is
+\[
+ [\Psi_*]=B_{v,*}(V_*^{\mathsf T})^{-1}K^{-1},\qquad
+ (B_{v,*})_{kj}=\begin{cases}
+ \binom{v+j}{k}\mu_{v+j-k},&0\le k\le j\le3,\\
+ 0,&k>j.
+ \end{cases}
+\]
+The first determinant is
+$\det B_{v,*}=\mu_v^4\prod_{j=0}^3\binom{v+j}{v}\ne0$;
+the reference Vandermonde is nonzero and $K$ has the determinant
+displayed above. This proves the asserted invertibility with all
+original factors retained. The target norm in this monomial frame
+is the original one, not the Euclidean norm of the column:
+\[
+ \|p\|_{\Gamma,*}^2=
+ \int_{\mathbb R}|p(c_*+iy)|^2
+ \frac{(2\pi)^{s/2}2^{s/2}}{4\pi\Gamma(s/2)}
+ |\Gamma(s/4+iy/2)|^2\,dy,\qquad
+ c_*=a_{\mathrm{amp},*}/2-4,
+\]
+where $s\in\{1,a_{\mathrm{amp},*}\}$ is the fixed original
+reference source order. This integral defines a positive definite
+norm on $\cP_3$: its density is positive on the real axis and a
+nonzero polynomial cannot vanish on that entire axis. Finiteness is
+the original WCF2 orthogonal-polynomial norm identity
+$h_{n,s}=(2\pi)^{s/2}n!(s/2)_n$, applied to the finite expansion
+of the polynomial in that frame, with no change of measure.
+With these exact maps and norms, define
+\[
+ P_{W,*}=\Psi_*P\Psi_*^{-1},\qquad
+ p_\delta=\Psi_*u_\rho(\delta),\qquad
+ Z_{\varepsilon,\eta,\pm}(\delta)
+              =\Psi_*q_{\varepsilon,\eta,\pm}(\delta).
+\]
+The variable $\delta$ in these formulas parametrizes an auxiliary
+target path inside this \emph{fixed} operator and its \emph{fixed}
+norm. It does not move the reference arithmetic period. Exact
+conjugacy gives all eight fibre identities
+\[
+ P_{W,*}(Z_{\varepsilon,\eta,\pm}(\delta))=p_\delta.
+\]
+GF25 and continuity of the fixed linear map give the actual norm
+asymptote, for every one of the eight branches,
+\begin{equation}
+ \sqrt\delta\,\|Z_{\varepsilon,\eta,\pm}(\delta)\|_{\Gamma,*}
+       \longrightarrow\frac{\|\Psi_*e_a\|_{\Gamma,*}}{2\gamma}>0.
+ \tag{GF26}
+\end{equation}
+The strict inequality follows because $\Psi_*$ is injective and
+the original Gamma norm is positive definite.
+
+The target displacement in its original coordinates is exactly
+\begin{equation}
+ u_\rho(\delta)-u_\rho(0)
+ =\delta^2 d_\gamma-\tfrac12\delta^4e_w,
+ \quad d_\gamma=(0,1,-1,\tfrac14-\gamma^2)^{\mathsf T},
+ \quad e_w=(0,0,0,1)^{\mathsf T}.\tag{GF27}
+\end{equation}
+Subtract GF20 at zero to verify every coefficient. Therefore
+$\delta^{-2}\|p_\delta-p_0\|_{\Gamma,*}
+\to\|\Psi_*d_\gamma\|_{\Gamma,*}>0$.
+Combining this with GF26 proves the complete original-norm rate
+\begin{equation}
+ \boxed{\quad
+ \|p_\delta-p_0\|_{\Gamma,*}^{1/4}
+ \|Z_{\varepsilon,\eta,\pm}(\delta)\|_{\Gamma,*}
+ \longrightarrow
+ \frac{\|\Psi_*d_\gamma\|_{\Gamma,*}^{1/4}
+       \|\Psi_*e_a\|_{\Gamma,*}}{2\gamma}>0.
+ \quad}\tag{GF28}
+\end{equation}
+The limiting point $p_0$ has no finite preimage under $P_{W,*}$,
+because GF12 and the exact conjugacy transfer that assertion as
+well. For completeness, the entire nonproper-value locus of this
+fixed nonlinear receiving map is precisely
+$\Psi_*(\{u_0\mathfrak D(u)=0\})$: invertible linear maps preserve
+boundedness, escaping sequences, and convergence. This statement
+concerns $P_{W,*}$; the original linear conductor remains the
+invertible intertwiner defining $\Psi_*$.
+
+GF26--28 avoid using a singular limit of a moving Vandermonde or a
+moving conductor norm. Such a limit would be a separate calculation:
+the construction of $\Psi_\delta$ itself assumes distinct original
+roots, and its original Vandermonde vanishes at $\delta=0$.
+Everything asserted here has instead been proved with the reference
+operator, its full original coefficients, and its original norm held
+fixed. No assertion about RH follows from introducing this nonlinear
+map or this auxiliary target path.
+
+\begin{thebibliography}{9}
+\bibitem{ES488} The Clankers, \emph{Erd\H{o}s--Straus project
+reader}, canonical 488-page deposited source, version 69,
+\texttt{erdos\_straus\_project\_reader.tex}, theorem
+\texttt{explicit-four-time-Jacobian-collision}, source lines
+19484--19588. Recorded source SHA-256:
+\texttt{678b3f70ee7d2a6d00f6c588d7778e390118ab4743a5759612dbba6430984c78}.
+The map and four marked source points originate in that local
+programme source; the global fibre and nonproper-locus calculations
+in this note are new derivations and are not retroactively
+attributed to the reader or to a human author of another map.
+\bibitem{Bridge} Split-Zero programme,
+\emph{The ES--Fable inverse correspondence in the original weighted conductor},
+\texttt{FABLE\_TO\_ORIGINAL\_CONDUCTOR.tex}, FC26--35 and FC50--55,
+20 September 2026. The four-plane construction uses the original
+WCF1--6 finite-shift operator and its original Meixner--Pollaczek
+Gamma norms; their human orthogonal-polynomial provenance is
+retained there. The complete direct Gram proof also appears in
+\texttt{ACTUAL\_FOUR\_PLANE\_METRIC\_AND\_CONJUGACY.tex}, R1--8.
+\end{thebibliography}
+\end{document}

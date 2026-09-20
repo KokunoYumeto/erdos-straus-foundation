@@ -1,0 +1,20 @@
+{
+  "derive_escape_differential.py": "881a60ffae92dfb691e973785bedb46a13f92fe1d1288841b2336170e546c98d",
+  "derive_signed_evaluation.py": "68a8bca8aa2d46d9be3205dba3aaaef1fa2f6ff067a3c16373b15afa47e88b5e",
+  "FABLE_TO_ORIGINAL_CONDUCTOR.tex": "bfb75ff468f35b71103ad2671e22f20fee0414df4a43d1dab5fc2d19aabbd1b6",
+  "independent/ESCAPE_SPECTRUM_AND_METRIC.tex": "5e86de15307c5666837fe6d302a36af0f3fb55423fe6795dd3607ed9121aa6e0",
+  "independent/GLOBAL_FIBRE_AND_NONPROPER_LOCUS.tex": "3e5ed9ff9883483be71cf10630f4cc799af47b2caad6bfdebca08baa211b1862",
+  "independent/SIGNED_EVALUATION_REVIEW.tex": "412735448c42dcc0ee151fd7fc0794001368424e8c057e5cd46f581d3012432c",
+  "independent/SIGNED_ROOT_MONODROMY.tex": "67a21042ed2d3deaf5bde153a307ad1adbd4133f461f928fcd492856d6cb225b",
+  "independent/verify_escape_spectrum.py": "7fa807753a8c47316bc1ce42a50196573328696c4dd7a4a84d5e84cecc265959",
+  "independent/verify_four_labels.py": "1d2ad6f36d8b00ae768b6236cfcb90e7b3648a686f2bc08aac83cfc67194186a",
+  "independent/verify_global_fibre.py": "43ee7c5a372a09a5144b579c385c980578d23b2a08b06bda687c71b72039d554",
+  "independent/verify_seven_fibre.py": "f121e147e8b20115aaf718dd0bf7d1f63f2898dd746d590fcefc2e0e92ee1027",
+  "independent/verify_signed_evaluation.py": "80f3535e19e141f300705eacf3f0f5d665041b4a990e44ffdd629bf1d4da41e9",
+  "independent/verify_signed_root_monodromy.py": "59b73eac076d3bc778d8bbe48192748b240920f87f3733aa79f885c0ce5446a8",
+  "README.md": "3f9d120a7b650de05f70579e2ac3d5c6ba59f10bf6bb9e8135fa24d5aadea583",
+  "verification.json": "2462939086c2656f790bbab6ca4e9fa31cdc1dae01db4e61804ffe719205ce59",
+  "VERIFICATION_REPORT.json": "915373041be09c4edc8e55b13945f3a9e53b884602399bcb2ac7c2de8d9321f2",
+  "verify_signed_root_group.py": "741f92e4b441ce6ef84b4f201d1cd51d51dfa99d66c3b292f816bc833cc9b473",
+  "verify_transport.py": "91021f3db9b4bd104aabb2ae61e4c55ffa82928fcd199e2d80722166951fc928"
+}

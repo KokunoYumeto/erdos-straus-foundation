@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "artifacts": [
+    {
+      "file": "output/pdf/ES_FABLE_ZETA_CROSSWALK.pdf",
+      "pages": 7,
+      "sha256": "114871f6450db9951c1a0f5184efac6f29f330cba596ce243b1ab864eca2a989",
+      "source": "ES_FABLE_ZETA_CROSSWALK.tex",
+      "source_sha256": "f39c2a65725fe8a62bcb0d7c5b1e6ba8234090664c8dc041fca8b25944deb3d2",
+      "latex_errors": 0,
+      "overfull_boxes": 0,
+      "undefined_references": 0,
+      "text_extraction_characters": 13998,
+      "visual_review": "all seven pages rendered; pages 1, 2 and 7 rechecked at original detail after the final build"
+    },
+    {
+      "file": "output/pdf/FABLE_TO_ORIGINAL_CONDUCTOR.pdf",
+      "pages": 32,
+      "sha256": "2beac40b0096df0085b55bb3da21071e11b934ea90f55fdace92bc36e8569824",
+      "source": "build/FABLE_TO_ORIGINAL_CONDUCTOR_BUILD.tex",
+      "source_sha256": "d37b0315fef9275fb46821328a9379cfe24bebeb2ba140adae267d76a3c7db20",
+      "frozen_mathematical_source": "upstream/FABLE_TO_ORIGINAL_CONDUCTOR.tex",
+      "frozen_source_sha256": "bfb75ff468f35b71103ad2671e22f20fee0414df4a43d1dab5fc2d19aabbd1b6",
+      "latex_errors": 0,
+      "overfull_boxes": 0,
+      "undefined_references": 0,
+      "text_extraction_characters": 88915,
+      "visual_review": "representative pages 1, 5, 10, 15, 16, 20, 25, 30 and final page 32 inspected at original detail; all remaining pages rendered and checked for nonblank/clipped output"
+    }
+  ],
+  "upstream_integrity": {
+    "packet_files": 19,
+    "manifest_entries_excluding_manifest": 18,
+    "hash_mismatches": 0
+  },
+  "isolated_upstream_replay": [
+    "verify_transport.py",
+    "independent/verify_seven_fibre.py",
+    "independent/verify_global_fibre.py",
+    "independent/verify_escape_spectrum.py",
+    "independent/verify_signed_root_monodromy.py",
+    "independent/verify_signed_evaluation.py",
+    "derive_escape_differential.py",
+    "derive_signed_evaluation.py",
+    "verify_signed_root_group.py"
+  ],
+  "isolated_upstream_replay_status": "all passed; temporary copy removed"
+}

@@ -1,0 +1,361 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\C}{\mathbb C}
+\newcommand{\diag}{\operatorname{diag}}
+\title{Independent derivation of the complete signed-state evaluation}
+\author{Independent programme calculation}
+\date{20 September 2026}
+\begin{document}
+\maketitle
+This note verifies SE1--12 of
+\texttt{SIGNED\_STATE\_EVALUATION\_BODY.tex}, using the exact
+inverse GF7 in \texttt{GLOBAL\_FIBRE\_ACCEPTED\_BODY.tex}.
+The latter is the explicit inverse calculation for the original
+four-dimensional polynomial in the canonical ES reader \cite{ES}.
+The eight states are retained separately, with both signs at each
+of the four literal arithmetic roots. The arithmetic conductor
+and its original Gamma metrics are those of WCF \cite{WCF};
+the calculation below changes none of their coefficients.
+
+\section{Exact sign decomposition}
+Write $h(r)=Ar^4+r^3+Br^2+Cr+D$, where $A\ne0$, and let
+$r_j$ be its four distinct roots. Put $d_j=h'(r_j)$ and choose
+$a_j$ with $a_j^2d_j=1$, retaining both $a_j$ and $-a_j$.
+GF7 gives the complete corresponding point
+\[
+ q(r,a)=\left(a,-r-i/a,A/a^3+2r/a+3i/a^2,
+ 7ir^2/a+(B-17r+Ar^2)/a^2-13i/a^3-2A/a^4\right)^T.
+ \tag{SR1}
+\]
+In particular $a^{-1}=ad_j$, $a^{-2}=d_j$, $a^{-3}=ad_j^2$
+and $a^{-4}=d_j^2$. Adding and subtracting SR1 at $a_j$ and
+$-a_j$ proves
+\[
+ e_j=\begin{pmatrix}0\\-r_j\\3id_j\\
+ (B-17r_j+Ar_j^2)d_j-2Ad_j^2\end{pmatrix},\qquad
+ o_j=a_j\begin{pmatrix}1\\-id_j\\Ad_j^2+2r_jd_j\\
+ 7ir_j^2d_j-13id_j^2\end{pmatrix},\qquad
+ q_{j,\pm}=e_j\pm o_j.
+ \tag{SR2}
+\]
+Let $\mathcal F$ have basis $f_{j,\pm}$ indexed by all eight
+points, and define
+\[
+ \iota_+c_j=(f_{j,+}+f_{j,-})/2,\qquad
+ \iota_-c_j=(f_{j,+}-f_{j,-})/2,
+\]
+where $c_j$ are the four coordinate basis vectors. For any pair
+of coefficients $b_{j,+},b_{j,-}$, the decomposition parameters
+are $\alpha_j=b_{j,+}+b_{j,-}$ and
+$\beta_j=b_{j,+}-b_{j,-}$; hence this is a direct decomposition
+$\mathcal F=\operatorname{im}\iota_+\oplus\operatorname{im}\iota_-$.
+Set $E=(e_1\ \cdots\ e_4)$, $O=(o_1\ \cdots\ o_4)$ and
+$\mathcal Ef_{j,\pm}=q_{j,\pm}$. Formula SR2 proves exactly
+\[
+ \mathcal E(\iota_+\alpha+\iota_-\beta)=E\alpha+O\beta.
+ \tag{SR3}
+\]
+Thus the factors $1/2$ are present in the map, not removed in a
+metric convention.
+
+\section{Independent quartic-algebra determinant calculation}
+The following calculation works in the four-dimensional quotient
+algebra $\C[r]/(h)$, retaining its original leading coefficient.
+In the ordered coefficient basis $(1,r,r^2,r^3)$, multiplication
+by $r$ and by $h'(r)$ has matrices
+\[
+ R=\begin{pmatrix}0&0&0&-D/A\\1&0&0&-C/A\\
+ 0&1&0&-B/A\\0&0&1&-1/A\end{pmatrix},\qquad
+ F=4AR^3+3R^2+2BR+CI.
+ \tag{SR4}
+\]
+These formulas follow immediately from
+$Ar^4=-r^3-Br^2-Cr-D$ in that quotient. If $c_1=(1,0,0,0)^T$,
+the transposed coefficient matrix of the four odd polynomials
+in SR2 is
+\[
+ V^{\mathsf T}=\bigl(c_1,\,-iFc_1,\,(AF^2+2RF)c_1,
+                 (7iR^2F-13iF^2)c_1\bigr).
+ \tag{SR5}
+\]
+Expanding SR4--5 gives
+\[
+\begin{aligned}
+V_{1,*}&=(1,0,0,0),\\
+V_{2,*}&=(-iC,-2iB,-3i,-4iA),\\
+V_{3,*}&=(AC^2-9D,4ABC-8AD-7C,
+ -16A^2D+4AB^2-2AC-5B,-8A^2C+4AB-3),\\
+V_{4,*}&=(-13iC^2+20iD/A,-52iBC+76iD+20iC/A,
+ 208iAD-52iB^2+5iC+20iB/A,104iAC-66iB+20i/A).
+\end{aligned}\tag{SR6}
+\]
+Expansion along the first row and then the resulting three-by-three
+determinant yields the complete rational expression
+\[
+\begin{aligned}
+ \det V=-\frac4A\big(&448A^4D^2-224A^3B^2D+168A^3BC^2
+ +856A^3CD+28A^2B^4-22A^2B^2C\\
+ &-204A^2BD-431A^2C^2-87AB^3+282ABC+51AD+20B^2-60C\big).
+\end{aligned}\tag{SR7}
+\]
+For the original arithmetic quartet, without changing any root,
+\[
+\begin{aligned}
+ r_{\varepsilon,\eta}&=\tfrac12+\varepsilon\delta+i\eta\gamma,
+ &0<\delta<\tfrac12,\quad\gamma>2,\\
+ A&=-\tfrac12,&B&=\delta^2-\gamma^2-\tfrac34,\\
+ C&=\gamma^2-\delta^2+\tfrac14,
+ &D&=-\tfrac1{32}-\tfrac{\gamma^2-\delta^2}{4}
+                      -\tfrac{(\delta^2+\gamma^2)^2}{2}.
+\end{aligned}\tag{SR8}
+\]
+Substitution into SR7 and collection of powers gives
+\[
+ \det V=448\delta^2\gamma^2
+             (2\delta^2\gamma^2-\delta^2+\gamma^2)>0.
+ \tag{SR9}
+\]
+The factor in parentheses is
+$\gamma^2+\delta^2(2\gamma^2-1)>0$ under the original bounds.
+The certificate \texttt{verify\_signed\_evaluation.py}
+independently constructs SR4--5, verifies every entry of SR6,
+expands SR7, and verifies SR9 as an exact polynomial identity.
+It imports no matrices or code from the root calculation.
+
+Let $W=(r_j^n)_{0\le n\le3,1\le j\le4}$ and $\Delta=\det W$.
+Evaluation of remainders at roots gives
+$O=VW\diag(a_1,a_2,a_3,a_4)$. Also
+\[
+ \prod_jd_j=A^4\Delta^2,\qquad
+ \chi=A^2\Delta\prod_ja_j\in\{1,-1\}.
+ \tag{SR10}
+\]
+Indeed $d_j=A\prod_{k\ne j}(r_j-r_k)$, and the six pair
+reversals have total sign $(-1)^6=1$. Squaring $\chi$ using
+$a_j^2=d_j^{-1}$ proves its stated values. Consequently
+\[
+ \det O=\frac{\chi}{A^2}\det V
+ =1792\chi\delta^2\gamma^2
+       (2\delta^2\gamma^2-\delta^2+\gamma^2)\ne0.
+ \tag{SR11}
+\]
+This keeps the phase of every $a_j$ through $\chi$; only its
+modulus will cancel in the later Gram determinant.
+
+\section{Complete rank calculation for the means}
+The same quotient-algebra method gives the coefficient matrix
+$E_{\mathrm{pol}}$ of the four mean polynomials:
+\[
+\begin{aligned}
+ (E_{\mathrm{pol}})_{1,*}&=(0,0,0,0),\\
+ (E_{\mathrm{pol}})_{2,*}&=(0,-1,0,0),\\
+ (E_{\mathrm{pol}})_{3,*}&=(3iC,6iB,9i,12iA),\\
+ (E_{\mathrm{pol}})_{4,*}&=(w_0,w_1,w_2,w_3),\\
+ w_0&=-2AC^2+BC+71D,\\
+ w_1&=-8ABC+12AD+2B^2+54C,\\
+ w_2&=32A^2D-8AB^2+AC+40B,\\
+ w_3&=16A^2C-6AB+20.
+\end{aligned}\tag{SR12}
+\]
+Its last three rows and last three columns have determinant
+\[
+ -3i(3w_3-4Aw_2)
+ =6i(64A^3D-16A^2B^2-22A^2C+89AB-30)
+ =6i(16\delta^2\gamma^2-35\delta^2+35\gamma^2)\ne0.
+ \tag{SR13}
+\]
+The final real factor is positive because
+$16\delta^2\gamma^2+35(\gamma^2-\delta^2)>0$.
+The zero first row bounds the rank by three, and SR13 bounds
+it below by three. Since $E=E_{\mathrm{pol}}W$ and $W$ is
+invertible, $E$ has rank exactly three.
+
+The even kernel can also be specified by a single explicit vector.
+Put
+\[
+ t=(3w_3-4Aw_2,\ 0,\ 4Aw_0-Cw_3,\ Cw_2-3w_0)^T.
+ \tag{SR14}
+\]
+The first coordinate is nonzero by SR13. Substitution into SR12
+gives $E_{\mathrm{pol}}t=0$: in the third and fourth rows the
+nontrivial equations are the cross-product cancellation of
+$(C,3,4A)$ and $(w_0,w_2,w_3)$, and the second coordinate
+is zero. Hence
+\[
+ \ker E=\C W^{-1}t.
+ \tag{SR15}
+\]
+For completely evaluated coordinates one may use
+\[
+ (W^{-1}t)_j=
+ \frac{t_0(C+Br_j+r_j^2+Ar_j^3)+t_2(1+Ar_j)+t_3A}{d_j}.
+ \tag{SR16}
+\]
+Here $t_0,t_2,t_3$ name the entries corresponding to powers
+$r^0,r^2,r^3$. To verify SR16, the $j$th row of $W^{-1}$ is
+the coefficient row of the Lagrange polynomial
+$h(r)/((r-r_j)d_j)$. Polynomial division gives its coefficients
+$d_j^{-1}(C+Br_j+r_j^2+Ar_j^3,B+r_j+Ar_j^2,1+Ar_j,A)$,
+whose pairing with $t$ is the displayed expression.
+
+\section{The full kernel, section, and all relabeling maps}
+Since $O$ is invertible, SR3 gives the entire kernel and an exact
+section without dropping any point:
+\[
+ \ker\mathcal E
+ =\{\iota_+\alpha-\iota_-O^{-1}E\alpha:\alpha\in\C^4\},
+ \qquad \mathcal E\iota_-O^{-1}=I.
+ \tag{SR17}
+\]
+The graph parameter is injective because the even and odd
+subspaces are a direct sum, so this kernel has dimension four.
+Its intersection with the even subspace is the line
+$\C\iota_+W^{-1}t$, and its intersection with the odd subspace
+is zero. Each statement follows by solving the same equation
+$E\alpha+O\beta=0$.
+
+There is an exact invariance under every change of names in
+these formulas. Let $Q$ be the permutation matrix whose $j$th
+column is $c_{\pi(j)}$, and let
+$D_\varepsilon=\diag(\varepsilon_1,\ldots,\varepsilon_4)$,
+$\varepsilon_j\in\{1,-1\}$. The new root and sign choices are
+$r'_j=r_{\pi(j)}$, $a'_j=\varepsilon_j a_{\pi(j)}$.
+Identify the renamed eight-state basis with the original basis
+by the points it represents. Then directly from SR2,
+\[
+ E'=EQ,\quad O'=OQD_\varepsilon,\quad
+ \iota'_+=\iota_+Q,\quad\iota'_-=\iota_-QD_\varepsilon,
+ \quad (O')^{-1}=D_\varepsilon Q^{-1}O^{-1}.
+ \tag{SR18}
+\]
+Thus
+$\iota'_-(O')^{-1}=\iota_-O^{-1}$ exactly. Replacing the
+graph parameter by $\alpha'=Q^{-1}\alpha$ also identifies
+the graph in SR17 with its renamed presentation. Finally
+$\Delta'=(\det Q)\Delta$ and
+$\chi'=(\det Q)(\prod_j\varepsilon_j)\chi$, which is
+precisely the change in $\det O$. This proves invariance of
+the section, kernel, and determinant formula while preserving
+all individual root and sign labels.
+
+\section{Return through the unchanged original conductor}
+Use the original invertible maps $\Phi:\C^4\to U$ and
+$\Psi:\C^4\to W$ with $T_A\Phi=\Psi$, and their original
+pulled-back positive Gamma forms $G_U$ and $G$. Define
+$\mathcal E_U=\Phi\mathcal E$ and
+$\mathcal E_W=\Psi\mathcal E$. Substitution proves
+\[
+ T_A\mathcal E_U=\mathcal E_W,\qquad
+ \ker\mathcal E_U=\ker\mathcal E_W=\ker\mathcal E,
+ \qquad
+ \mathcal E_W\iota_-O^{-1}\Psi^{-1}=I_W.
+ \tag{SR19}
+\]
+Thus the same invariant section lands in the actual odd
+four-plane of the eight-state space. The four target vectors
+$\Psi o_j$ have Gram $O^*GO$, and the source vectors $\Phi o_j$
+have Gram $O^*G_UO$. Determinant multiplicativity and SR11 give
+\[
+ \det(O^*GO)=1792^2\delta^4\gamma^4
+ (2\delta^2\gamma^2-\delta^2+\gamma^2)^2\det G>0,
+ \qquad
+ \frac{\det(O^*GO)}{\det(O^*G_UO)}
+ =\frac{\det G}{\det G_U}=|\det A_{3,s}|^2.
+ \tag{SR20}
+\]
+The last equality is the already established exact determinant
+of the original conductor restriction in its WCF orthonormal
+frames. This calculation multiplies the full original forms
+by the actual $O$; no entry or off-diagonal term is discarded.
+
+\section{Verification of the complete eight-dimensional return}
+For the continuation SE13--17, retain $X,Y$ with $T_AX=Y$ and
+the same $\Phi,\Psi$ as in SR19. The two maps
+\[
+ \mathcal J_U(\iota_+\alpha+\iota_-\beta)
+ =(X\alpha,\Phi(E\alpha+O\beta)),\qquad
+ \mathcal J_W(\iota_+\alpha+\iota_-\beta)
+ =(Y\alpha,\Psi(E\alpha+O\beta))
+ \tag{SR21}
+\]
+are invertible: their entire target inverse is
+$\iota_+Y^{-1}p_1+\iota_-O^{-1}(\Psi^{-1}p_2-EY^{-1}p_1)$.
+Substitution cancels both terms involving $E$ and gives $p_2$
+in the second component; the first component gives $p_1$.
+In the other order the same substitution recovers $\alpha,\beta$.
+The source proof replaces $Y,\Psi$ with $X,\Phi$. Applying $T_A$
+to each component proves $(T_A|_U\oplus T_A|_U)\mathcal J_U
+=\mathcal J_W$ exactly.
+
+For the fixed-fibre action
+$g f_{j,t}=f_{\pi(j),\sigma_jt}$, put
+$\Pi c_j=c_{\pi(j)}$ and $R c_j=\sigma_jc_{\pi(j)}$.
+Then $g$ sends $(\alpha,\beta)$ to $(\Pi\alpha,R\beta)$.
+Writing $z=E\alpha+O\beta$ gives the full conjugated matrix
+\[
+ \begin{pmatrix}\Pi&0\\E\Pi-ORO^{-1}E&ORO^{-1}\end{pmatrix}
+ \tag{SR22}
+\]
+in the coordinates $(Y\alpha,\Psi z)$, and the identical
+matrix in source coordinates $(X\alpha,\Phi z)$. This is
+conjugation by the invertible triangular coordinate map
+$(\alpha,\beta)\mapsto(\alpha,E\alpha+O\beta)$, so it
+automatically preserves multiplication of all signed
+permutations. The actual monodromy subgroup may be restricted
+in this exact representation without changing any matrix.
+
+There is a stronger nonvanishing statement for every even sign
+element. If $\Pi=I$ and $R$ is a nonidentity diagonal sign
+matrix with an even number of minus signs, then
+$E-ORO^{-1}E\ne0$. Indeed equality would imply that the
+three-dimensional range of $O^{-1}E$ lies in the fixed space
+of $R$. That fixed space has dimension two when exactly two
+signs are negative and dimension zero when all four are
+negative, which is impossible. Thus each such element, when
+present in the actual monodromy subgroup, has a nonzero
+mixing block; this is stronger than nonvanishing for at least
+one element. The formula does not assert invariance of
+$\ker\mathcal E$ under a fixed-fibre action. Naming invariance
+in SR18 and this action on distinct basis points are different
+maps, both specified explicitly above.
+
+Finally set $L=T_A|_U$. The original orthogonal direct sums
+have coordinate Grams $\diag(G_x,G_U)$ and $\diag(G_y,G)$.
+The exterior space of an orthogonal direct sum decomposes
+orthogonally by the number $p$ of vectors from its first
+copy and $q$ from its second copy, $p+q=r$. The corresponding
+restriction of $\wedge^r(L\oplus L)^{-1}$ is
+$(\wedge^pL^{-1})\otimes(\wedge^qL^{-1})$.
+Choosing singular bases for these finite-dimensional maps
+proves that this tensor product has norm equal to the product
+of the two norms. Taking the maximum over the orthogonal
+summands therefore proves
+\[
+ \|\wedge^r(L\oplus L)^{-1}\|
+ =\max_{\substack{p+q=r\\0\le p,q\le4}}
+       \|\wedge^pL^{-1}\|\,\|\wedge^qL^{-1}\|,
+ \qquad 0\le r\le8.
+ \tag{SR23}
+\]
+All maps and metrics here are the original ones on each copy;
+no Hilbert norm previously assigned to the eight abstract
+basis states is replaced or presumed.
+
+\begin{thebibliography}{9}
+\bibitem{ES} The Clankers, \emph{Erd\H{o}s--Straus project reader},
+canonical 488-page edition, source version 69,
+\texttt{erdos\_straus\_project\_reader.tex}, theorem
+\texttt{explicit-four-time-Jacobian-collision}, lines 19484--19588.
+The eight-state inverse GF7 and the evaluation calculation above
+are programme extensions of its original explicit polynomial.
+\bibitem{WCF} Split-Zero programme, \emph{A polynomial forward
+bound for the full weighted conductor},
+\texttt{WEIGHTED\_CONDUCTOR\_FORWARD.tex}, WCF1--6.
+Its Meixner--Pollaczek formulas are credited to
+T. H. Koornwinder, R. Wong, R. Koekoek, R. F. Swarttouw and
+W. P. Reinhardt, NIST DLMF Chapter 18, equations 18.19.8--9,
+18.22.8 and 18.23.7; the original WCF phases and mass remain
+in $G_U$ and $G$ throughout SR19--20.
+\end{thebibliography}
+\end{document}

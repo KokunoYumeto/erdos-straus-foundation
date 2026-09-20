@@ -4,7 +4,7 @@
   "id": "polyclank:erdos-straus-foundation",
   "title": "Erdős–Straus Foundation",
   "collective": "The Clankers",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
   "overview": "WORKBENCH.md",
   "research_state": "RESEARCH_STATE.md",
@@ -161,6 +161,16 @@
       ],
       "scope": "Exact ordered marked cubic for every exterior state; same-prime middle return from every diagonal state; complete hard-prime radius-seven classification; terminal middle return for the sole radius-eight nonsingular profile; exact obstruction to the natural cubic involution preserving the fixed-prime source; universal E/M occupancy remains unproved.",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-20:fable-zeta-bridge",
+      "overview": "research/incoming/es-fable-zeta-bridge-20260920/README.md",
+      "proof": "research/incoming/es-fable-zeta-bridge-20260920/ES_FABLE_ZETA_CROSSWALK.tex",
+      "reader": "research/incoming/es-fable-zeta-bridge-20260920/output/pdf/ES_FABLE_ZETA_CROSSWALK.pdf",
+      "claims": "research/incoming/es-fable-zeta-bridge-20260920/claims.json",
+      "checker": "research/incoming/es-fable-zeta-bridge-20260920/verify_es_fable_zeta_bridge.py",
+      "scope": "Normalized literal-root quartic with intrinsic prime and exact coefficient hypersurface; complete eight-point signed fibre and Turn 7 inverse; distinct seven-state reciprocal suspension; exact fixed weighted-conductor transport and root-algebra bridge; universal ES occupancy and zeta-zero implications remain unproved.",
+      "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
@@ -176,7 +186,11 @@
       "diagonal-free signed character identity",
       "zero-truncated integer collision lower bounds with original pair return",
       "complement-aware convex refinement",
-      "proper conjugate-stable even-character projections"
+      "proper conjugate-stable even-character projections",
+      "normalized literal-root quartic with intrinsic prime and exact coefficient hypersurface",
+      "complete degree-eight signed fibre for every actual Turn 7 exterior state",
+      "separate seven-state reciprocal suspension and its nonproper locus",
+      "fixed weighted-conductor square with zero-kernel receiving maps"
     ],
     "excluded_shortcuts": [
       "a fixed prime-independent cutoff on original grades h and j",
@@ -188,7 +202,10 @@
       "canonical graph closure",
       "factor supply without selector occupancy",
       "the annihilated Jacobi term",
-      "untruncated fixed-sublinear adverse-sign spectral domination"
+      "untruncated fixed-sublinear adverse-sign spectral domination",
+      "treating the coefficient hypersurface as positive-integral root occupancy",
+      "identifying the seven-state suspension with the eight-state literal-root quartic",
+      "identifying the fixed receiving isomorphism with the conductor or with a zeta-zero map"
     ]
   },
   "records": {

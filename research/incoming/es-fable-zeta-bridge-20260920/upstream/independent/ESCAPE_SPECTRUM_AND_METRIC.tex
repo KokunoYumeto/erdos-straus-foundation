@@ -1,0 +1,472 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newcommand{\C}{\mathbb C}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Span}{\operatorname{span}}
+\title{Every singular value and singular flag on the ES--Fable escaping branch}
+\author{Independent programme derivation}
+\date{20 September 2026}
+\begin{document}
+\maketitle
+This note independently derives the differential and original-metric
+claims FC56--67 of \texttt{ESCAPE\_DIFFERENTIAL\_BODY.tex} and determines
+the limiting singular flags. The polynomial is the four-dimensional
+ES--Fable construction in the canonical 488-page reader \cite{ES}; it
+is not presented as the original three-dimensional Alp\"oge--Fable
+example discussed by Terence Tao \cite{Tao}. The conductor and Gamma
+measure are the unchanged WCF objects \cite{WCF}. Every calculation
+below takes place in these original metrics. In particular no change
+of variables is declared unitary.
+
+\section{The actual receiving spaces and their metrics}
+Fix the original conductor
+\[
+ T_A f(S')=\sum_{u,w=0}^8 a_{uw}f(S'+\beta_{8,u,w}),\qquad
+ E_A(t)=\sum_{u,w=0}^8a_{uw}e^{\beta_{8,u,w}t},\qquad
+ \mu_j=E_A^{(j)}(0),\quad v=\operatorname{ord}_0E_A.
+ \tag{ES1}
+\]
+Here $E_A$ is the programme's original nonzero symbol, with all its
+original period coefficients retained; thus $v$ is its actual order,
+$\mu_j=0$ for $j<v$, and $\mu_v\ne0$. Write
+\[
+ \rho=(\tfrac12+\delta+i\gamma,\tfrac12+\delta-i\gamma,
+        \tfrac12-\delta+i\gamma,\tfrac12-\delta-i\gamma),
+ \quad 0<\delta<\tfrac12,\quad\gamma>2,
+ \qquad \beta_{8,u,w}=4+(2u-8)\delta+i(2w-8)\gamma,
+\]
+and $\ell_j(S)=\prod_{k\ne j}(S-\rho_k)/(\rho_j-\rho_k)$.
+For the fixed amplification integer $a_{\mathrm{amp}}=4\ell+1\ge9$
+and $s\in\{1,a_{\mathrm{amp}}\}$, put $c_0=a_{\mathrm{amp}}/2$
+and $c_1=a_{\mathrm{amp}}/2-4$. The unchanged measure is
+\[
+ dm_s(t)=\frac{(2\pi)^{s/2}2^{s/2}}{4\pi\Gamma(s/2)}
+ |\Gamma(s/4+it/2)|^2dt,\qquad
+ \|f\|_{s,c}^2=\int_{\mathbb R}|f(c+it)|^2dm_s(t).
+ \tag{ES2}
+\]
+On $U=\cP_{v+3}/\cP_{v-1}$ retain the quotient of the norm at
+$c_0$; on $W=\cP_3$ retain the norm at $c_1$. These are positive
+Hermitian forms, since the measure is strictly positive and a
+nonzero polynomial cannot vanish on the entire vertical line.
+Define
+\[
+ x_j=[S^v\ell_j(S)],\quad y_j=T_Ax_j,\quad Xe_j=x_j,\quad Ye_j=y_j,
+ \qquad G_x=(\langle x_j,x_k\rangle),\quad G_y=(\langle y_j,y_k\rangle).
+ \tag{ES3}
+\]
+If $V_{rj}=\rho_j^r$ for $0\le r\le3$, then the coefficient
+matrix of the $\ell_j$ is $(V^{\mathsf T})^{-1}$. The determinant
+of $V$ is $-64\delta^2\gamma^2(\delta^2+\gamma^2)\ne0$.
+The binomial theorem and the moment vanishings give
+\[
+ Y=B_v(V^{\mathsf T})^{-1},\qquad
+ (B_v)_{kj}=\begin{cases}\binom{v+j}{k}\mu_{v+j-k},&k\le j,\\0,&k>j,
+ \end{cases}\quad 0\le k,j\le3.
+ \tag{ES4}
+\]
+Thus $X,Y$ are isomorphisms, and $L=T_A|_U:U\to W$ is the
+unchanged invertible conductor restriction. In particular the two
+Gram matrices in ES3 are positive definite.
+
+Retain the four collision columns, in their marked order, in
+\[
+ K=\begin{pmatrix}
+ 0&i&1/\sqrt2&1/\sqrt2\\
+ 0&-1&-1-\sqrt2 i&1-\sqrt2 i\\
+ i/2&-3i&2\sqrt2+6i&-2\sqrt2+6i\\
+ 0&13&-34-19\sqrt2 i&34-19\sqrt2 i
+ \end{pmatrix},\qquad \det K=77\sqrt2 i/2.
+ \tag{ES5}
+\]
+Consequently $\Phi=XK^{-1}$, $\Psi=YK^{-1}$ are isomorphisms,
+$L\Phi=\Psi$, and their exact pulled-back forms are
+\[
+ G_U=(K^{-1})^*G_xK^{-1},\qquad G=(K^{-1})^*G_yK^{-1}.
+ \tag{ES6}
+\]
+In particular $\|q\|_G=\|\Psi q\|_{s,c_1}$ exactly, including
+the factor $(2\pi)^{s/2}$ in the measure.
+
+\section{The exact branch derivative and its inverse}
+In the original coordinates $q=(a,y,z,w)$ the polynomial is
+\[
+\begin{aligned}
+P_0&=a^3z+2a^2y-ia,\\
+P_2&=-a^3y^2z-2ia^2yz+a^2w-2a^2y^3-10iay^2+3az+y,\\
+P_3&=2a^3y^3z+6ia^2y^2z+2a^2wy+4a^2y^4+2iaw-4iay^3-2ayz+2iz+7y^2,\\
+P_4&=2a^3y^4z+8ia^2y^3z+a^2wy^2+4a^2y^5+2iawy+7iay^4-10ay^2z-4iyz-w-3y^3.
+\end{aligned}\tag{ES7}
+\]
+The first coordinate $a$ in ES7 has no relation to the fixed
+amplification integer $a_{\mathrm{amp}}$. For real $\epsilon>0$, put
+\[
+ \widehat q_\epsilon=(-\epsilon,2i/\epsilon,6i/\epsilon^2-i/2,40i/\epsilon^3)^T.
+\]
+Direct substitution and differentiation of ES7 give, without
+discarding any term,
+\[
+ P(\widehat q_\epsilon)=(-i\epsilon+i\epsilon^3/2,3i\epsilon/2,-1,0)^T,
+ \tag{ES8}
+\]
+\[
+ J_\epsilon=DP(\widehat q_\epsilon)=
+ \begin{pmatrix}
+ 9i-3i\epsilon^2/2&2\epsilon^2&-\epsilon^3&0\\
+ -7i/2-30i/\epsilon^2&\epsilon^2-27&-3\epsilon&\epsilon^2\\
+ -2/\epsilon+104/\epsilon^3&-i\epsilon-56i/\epsilon&-2i&2i\epsilon\\
+ -4i/\epsilon^2+64i/\epsilon^4&2+28/\epsilon^2&0&-1
+ \end{pmatrix},\quad\det J_\epsilon=-2.
+ \tag{ES9}
+\]
+Expansion by minors gives the following full inverse:
+\[
+\begin{pmatrix}
+ \frac{3i\epsilon^2}{2}-i&-\frac{3i\epsilon^4}{2}+2i\epsilon^2&
+ \frac{3\epsilon^5}{2}-\frac{5\epsilon^3}{2}&\frac{3i\epsilon^6}{2}-3i\epsilon^4\\
+ -\frac32+\frac2{\epsilon^2}&\frac{3\epsilon^2}{2}-3&
+ \frac{3i\epsilon^3}{2}-\frac{7i\epsilon}{2}&-\frac{3\epsilon^4}{2}+4\epsilon^2\\
+ \frac{9\epsilon}{4}-\frac{18}{\epsilon}+\frac{12}{\epsilon^3}&
+ -\frac{9\epsilon^3}{4}+\frac{39\epsilon}{2}-\frac{24}{\epsilon}&
+ -\frac{9i\epsilon^4}{4}+\frac{81i\epsilon^2}{4}-\frac{59i}{2}&
+ \frac{9\epsilon^5}{4}-21\epsilon^3+35\epsilon\\
+ 3-\frac{138}{\epsilon^2}+\frac{120}{\epsilon^4}&
+ -3\epsilon^2+140-\frac{212}{\epsilon^2}&
+ -3i\epsilon^3+141i\epsilon-\frac{258i}{\epsilon}&
+ 3\epsilon^4-142\epsilon^2+303
+\end{pmatrix}.
+\tag{ES10}
+\]
+This matrix is checked independently by multiplication on both
+sides of ES9 in \texttt{verify\_escape\_spectrum.py}. The certificate
+uses the original four polynomials ES7 directly, rather than importing
+the derivative from the calculation under review. All operations are
+exact in $\mathbb Q(i)(\epsilon)$.
+
+\section{All compound limits, with no omitted more singular entry}
+Order the coordinate wedges by increasing subsets of $\{1,2,3,4\}$.
+For such subsets let $E_{I,J}^{(r)}$ send $e_J$ to $e_I$ and
+annihilate the other coordinate wedges. Its entries need not be
+orthonormal coordinates for the original metric.
+
+ES9 and ES10 show that their unique entries of Laurent order $-4$
+are $(4,1)$ with respective coefficients $64i$ and $120$.
+For $r=2$, expansion of the $2\times2$ minors of ES9 gives this
+matrix of minimum Laurent exponents, in order $12,13,14,23,24,34$:
+\[
+ \begin{pmatrix}
+ 0&1&2&3&4&5\\-1&0&1&2&3&4\\-2&-1&0&1&2&3\\
+ -3&-2&-1&0&1&2\\-4&-3&-2&-1&0&1\\-5&-4&-3&-2&1&0
+ \end{pmatrix}.
+ \tag{ES11}
+\]
+The unique order $-5$ entry is the completely evaluated minor
+\[
+ \det(J_{\{3,4\},\{1,2\}})=312\epsilon^{-3}-672\epsilon^{-5}.
+\]
+For ES10 the exponent matrix is
+\[
+ \begin{pmatrix}
+ 0&1&2&3&4&5\\1&0&1&2&3&4\\-2&-1&0&1&2&3\\
+ -3&-2&-1&0&1&2\\-4&-3&-2&-1&0&1\\-5&-4&-3&-2&-1&0
+ \end{pmatrix},
+ \quad
+ \det((J^{-1})_{\{3,4\},\{1,2\}})=-156\epsilon^{-3}+336\epsilon^{-5}.
+ \tag{ES12}
+\]
+These tables result simply by forming $J_{ik}J_{jl}-J_{il}J_{jk}$
+for each pair; the complete 36-entry checks are included in the
+certificate. For third compounds the complementary-minor identity
+\[
+ \det J_{I,J}=(-1)^{\sum I+\sum J}\det J\,
+                (J^{-1})_{J^c,I^c}\qquad(|I|=|J|=3)
+\]
+follows by the cofactor formula for the inverse. The only order
+$-4$ entry therefore has $I=234,J=123$; its coefficient is
+$(-1)^{15}(-2)120=240$. Applying the same formula to $J^{-1}$
+gives coefficient $(-1)^{15}(-1/2)64i=32i$. We have proved
+\[
+\begin{array}{c|c|c|c}
+ r&m_r&\lim_{\epsilon\downarrow0}\epsilon^{m_r}\wedge^rJ_\epsilon&
+ \lim_{\epsilon\downarrow0}\epsilon^{m_r}\wedge^rJ_\epsilon^{-1}\\\hline
+ 1&4&64iE^{(1)}_{4,1}&120E^{(1)}_{4,1}\\
+ 2&5&-672E^{(2)}_{34,12}&336E^{(2)}_{34,12}\\
+ 3&4&240E^{(3)}_{234,123}&32iE^{(3)}_{234,123}\\
+ 4&0&-2&-1/2
+\end{array}.
+\tag{ES13}
+\]
+The tables and cofactor identity establish that no undisplayed entry
+has a greater pole. These are full matrix limits.
+
+\section{Original-metric constants and the complete singular spectrum}
+For a positive Gram $G$, the Gram on coordinate $r$-wedges has
+entries $\det G_{I,J}$: expanding the alternating multilinear
+definition of the induced Hermitian form proves this determinant
+formula. Its inverse is the compound of $G^{-1}$, by multiplying
+the exterior maps of $G$ and $G^{-1}$. Hence the squared lengths of
+$e_I$ and the coordinate functional $e_J^*$ are respectively
+$\det G_{I,I}$ and $\det(G^{-1})_{J,J}$. Cauchy--Schwarz, with
+equality at the Riesz representative of the functional, gives
+\[
+ \|E_{I,J}^{(r)}\|_G
+ =\sqrt{\det G_{I,I}\det(G^{-1})_{J,J}}.
+ \tag{ES14}
+\]
+Put
+\[
+ \tau_1=\sqrt{G_{44}(G^{-1})_{11}},\qquad
+ \tau_2=\sqrt{\det G_{34,34}\det(G^{-1})_{12,12}}
+       =\frac{\det G_{34,34}}{\sqrt{\det G}}.
+ \tag{ES15}
+\]
+The last identity follows by block elimination: the $12$ block
+of $G^{-1}$ is the inverse of the Schur complement of the positive
+$34$ block of $G$, whose determinant is $\det G/\det G_{34,34}$.
+Both $\tau_j$ are strictly positive. The same cofactor identity
+gives
+\[
+ \det G_{234,234}=\det G\,(G^{-1})_{11},\qquad
+ \det(G^{-1})_{123,123}=G_{44}/\det G.
+\]
+Thus the rank-one norms in ES13 have factors $\tau_1,\tau_2,
+\tau_1$ in degrees $1,2,3$. Taking norms of the full limits is
+valid because the norm for the fixed positive Gram is continuous.
+For $B_{W,\epsilon}=\Psi J_\epsilon\Psi^{-1}$, it proves
+\[
+\begin{array}{c|c|c}
+ r&\lim\epsilon^{m_r}\|\wedge^r B_{W,\epsilon}\|&
+ \lim\epsilon^{m_r}\|\wedge^r B_{W,\epsilon}^{-1}\|\\\hline
+ 1&64\tau_1&120\tau_1\\
+ 2&672\tau_2&336\tau_2\\
+ 3&240\tau_1&32\tau_1\\
+ 4&2&1/2
+\end{array}.
+\tag{ES16}
+\]
+All these are the physical target norms ES2, with ES6 providing
+their exact coordinate expression.
+
+Diagonalization of the positive operator $B^*B$ yields an
+orthonormal basis of singular vectors; taking wedges shows that
+$\|\wedge^rB\|$ is the product of the largest $r$ singular
+values. Taking successive ratios of ES16 therefore gives
+\[
+\begin{aligned}
+ \sigma_1&\sim64\tau_1\epsilon^{-4},&
+ \sigma_2&\sim\frac{21\tau_2}{2\tau_1}\epsilon^{-1},\\
+ \sigma_3&\sim\frac{5\tau_1}{14\tau_2}\epsilon,&
+ \sigma_4&\sim\frac{1}{120\tau_1}\epsilon^4.
+\end{aligned}\tag{ES17}
+\]
+The product of these four leading coefficients is $2$, as required
+by the exact determinant. The condition number is
+$7680\tau_1^2\epsilon^{-8}(1+o(1))$.
+
+\section{The limiting singular flags in the native metric}
+The result also locates the degenerating directions. Denote the
+span of the $k$ largest right and left singular vectors of
+$J_\epsilon$ in the $G$ metric by $R_k(\epsilon)$ and
+$L_k(\epsilon)$ respectively. All consecutive singular-value ratios
+tend to infinity by ES17, so these planes are uniquely determined
+for small positive $\epsilon$. Then
+\[
+ R_k(\epsilon)\longrightarrow G^{-1}\Span(e_1,\ldots,e_k),\qquad
+ L_k(\epsilon)\longrightarrow\Span(e_{5-k},\ldots,e_4),
+ \quad k=1,2,3.
+ \tag{ES18}
+\]
+Here convergence means convergence of the corresponding orthogonal
+projections in the unchanged $G$ metric. To prove it, divide each
+compound in ES13 by its operator norm. Its limit is the unit-norm
+rank-one map proportional to $e_Ie_J^*$. Consequently its product
+with its adjoint converges to the rank-one projection onto $e_I$;
+the reversed product converges to the projection onto the Riesz
+representative of $e_J^*$. A direct finite-dimensional proof that
+the top spectral projection converges is as follows. Choose a unit
+top eigenvector. Every convergent subsequence has limit $u$, and
+the eigenvector equation and convergence of the top eigenvalue
+force $u$ into the limit's one-dimensional range. Every subsequence
+therefore gives the same rank-one projection. The right Riesz
+representative is proportional to
+$G^{-1}e_1\wedge\cdots\wedge G^{-1}e_k$, because
+$\langle G^{-1}e_j,q\rangle_G=e_j^*q$. The left range is
+$e_{5-k}\wedge\cdots\wedge e_4$. A decomposable nonzero wedge
+determines its plane, proving ES18.
+
+In particular, as lines, the largest right and left singular
+directions tend respectively to
+\[
+ \C\frac{G^{-1}e_1}{\sqrt{(G^{-1})_{11}}},\qquad
+ \C\frac{e_4}{\sqrt{G_{44}}}.
+ \tag{ES19}
+\]
+The smallest right direction is the $G$-orthogonal complement of
+$G^{-1}\Span(e_1,e_2,e_3)$, namely $\C e_4$; the smallest left
+direction is the complement of $\Span(e_2,e_3,e_4)$, namely
+$\C G^{-1}e_1$. This proves the corresponding reversed pair of
+unit directions without asserting a phase for singular vectors.
+The displayed square roots describe unit representatives of the
+actual metric; they do not replace or scale the original metric.
+
+\section{Exact conductor intertwining and image-distance laws}
+Set $P_U=\Phi P\Phi^{-1}$ and $P_W=\Psi P\Psi^{-1}$,
+$u_\epsilon=\Phi\widehat q_\epsilon$,
+$z_\epsilon=\Psi\widehat q_\epsilon$. The identity $L\Phi=\Psi$
+proves $LP_U=P_WL$ by substitution; differentiating at
+$u_\epsilon$ gives
+\[
+ LB_{U,\epsilon}=B_{W,\epsilon}L,\qquad
+ B_{W,\epsilon}^{-1}=LB_{U,\epsilon}^{-1}L^{-1},
+ \quad B_{U,\epsilon}=\Phi J_\epsilon\Phi^{-1}.
+ \tag{ES20}
+\]
+Composition of exterior maps, and then solving the same identity
+for $B_{U,\epsilon}^{-1}$, proves both bounds
+\[
+ \frac{\|\wedge^rB_{U,\epsilon}^{-1}\|}
+ {\|\wedge^rL\|\,\|\wedge^rL^{-1}\|}
+ \le\|\wedge^rB_{W,\epsilon}^{-1}\|
+ \le\|\wedge^rL\|\,\|\wedge^rL^{-1}\|
+       \|\wedge^rB_{U,\epsilon}^{-1}\|,
+ \quad 0\le r\le4.
+ \tag{ES21}
+\]
+Each $L$ norm here uses the original source quotient as domain and
+the original target as codomain, and $L^{-1}$ uses the reverse
+pair. The fixed $L$ factors are independent of $\epsilon$.
+In the original WCF orthonormal frames $L$ is exactly $A_{3,s}$;
+its entries follow by restricting the same conductor, without
+changing the quotient or either frame. Thus the original audit's
+inverse-exterior bound applies to precisely this fixed factor.
+The full source versions of ES15--19 follow on replacing $G$ by
+$G_U$ throughout; all Laurent matrices remain identical.
+
+For completeness the exact differential in the image-curve
+direction is obtained by differentiating ES8:
+\[
+ J_\epsilon(-1,-2i\epsilon^{-2},-12i\epsilon^{-3},-120i\epsilon^{-4})^T
+ =(-i+3i\epsilon^2/2,3i/2,0,0)^T.
+ \tag{ES22}
+\]
+Writing $p_\epsilon=P_W(z_\epsilon)$,
+$p_*=\Psi(0,0,-1,0)^T=2iy_{\mathrm M}$ and
+$v_0=\Psi(-i,3i/2,0,0)^T$, equations ES8 and the branch give
+\[
+ \epsilon^{-1}(p_\epsilon-p_*)\longrightarrow v_0\ne0,
+ \qquad \epsilon^3z_\epsilon\longrightarrow40i\Psi e_4\ne0.
+\]
+Continuity of the original norms and ES16 yield
+\[
+ \|p_\epsilon-p_*\|^3\|z_\epsilon\|
+ \longrightarrow40\|\Psi e_4\|\|v_0\|^3,
+ \qquad
+ \|p_\epsilon-p_*\|^4\|B_{W,\epsilon}^{-1}\|
+ \longrightarrow120\tau_1\|v_0\|^4.
+ \tag{ES23}
+\]
+All constants are strictly positive by injectivity of $\Psi$.
+The source versions have $\Phi$ in place of $\Psi$, the source
+Gram $G_U$, and the corresponding source norms.
+
+Finally, for any invertible endomorphism $B$ of this same metric
+space, the product of all four singular values is $|\det B|$.
+The largest $r$ singular values of $B^{-1}$ are the reciprocals of
+the smallest $r$ of $B$. Therefore
+\[
+ \|\wedge^rB^{-1}\|=\frac{\|\wedge^{4-r}B\|}{|\det B|}.
+ \tag{ES24}
+\]
+This recovers every inverse constant in ES16 and shows exactly
+how the inverse-exterior identity accommodates the computed
+degeneration. The fixed linear conductor remains invertible;
+the nonlinear derivative has the quantified degeneration at
+infinity above, with nonzero determinant at every finite branch
+point.
+
+\section{Exact volume distortion of the fixed transported coordinate flags}
+There is also a calculation on explicit fixed original-target
+planes, requiring no choice of a singular frame. For $1\le k\le4$
+put
+\[
+ H_k=\{1,\ldots,k\},\qquad T_k=\{5-k,\ldots,4\},\qquad
+ \mathcal E_k=\Psi\Span(e_1,\ldots,e_k)\subset W,
+ \quad(d_1,d_2,d_3,d_4)=(64,672,240,2).
+\]
+Retain $m=(4,5,4,0)$ from ES13 and the original basis vectors
+$\Psi e_1,\ldots,\Psi e_k$ of $\mathcal E_k$. Their exact squared
+volume distortion under $B_{W,\epsilon}$ satisfies
+\[
+ \frac{\det\bigl(\langle B_{W,\epsilon}\Psi e_j,
+                         B_{W,\epsilon}\Psi e_l\rangle_{s,c_1}
+                   \bigr)_{1\le j,l\le k}}
+      {\det G_{H_k,H_k}}
+ \sim d_k^2\frac{\det G_{T_k,T_k}}{\det G_{H_k,H_k}}
+                  \epsilon^{-2m_k}.
+ \tag{ES25}
+\]
+The numerator is the squared original norm of
+$(\wedge^k B_{W,\epsilon})(\Psi e_1\wedge\cdots\wedge\Psi e_k)$.
+Pulling back by the exact coordinate map $\Psi$ gives
+$\|(\wedge^kJ_\epsilon)e_{H_k}\|_{\wedge^kG}^2$.
+Applying each full matrix limit ES13 to the fixed vector
+$e_{H_k}$ proves that this numerator multiplied by
+$\epsilon^{2m_k}$ tends to $d_k^2\det G_{T_k,T_k}$.
+The input squared volume is exactly the positive denominator
+$\det G_{H_k,H_k}$, independent of $\epsilon$. This proves ES25.
+For $k=4$ the ratio is exactly $4$ for every $\epsilon>0$;
+no asymptotic remainder is needed in that degree.
+
+These fixed-plane constants generally differ from the operator
+constants, and their exact comparison is also determined. For
+$k=1,2,3$, division of the squared operator asymptotic in ES16
+by ES25 tends to
+\[
+ \det G_{H_k,H_k}\det(G^{-1})_{H_k,H_k}\ge1.
+ \tag{ES26}
+\]
+Indeed the numerator's operator coefficient is
+$d_k^2\det G_{T_k,T_k}\det(G^{-1})_{H_k,H_k}$
+by ES14. This proves the equality in ES26. For the inequality,
+write $G$ in the $H_k,H_k^c$ blocks as
+$\left(\begin{smallmatrix}A&C\\C^*&D\end{smallmatrix}\right)$.
+The indicated inverse block is $(A-CD^{-1}C^*)^{-1}$.
+The matrix $A^{-1/2}(A-CD^{-1}C^*)A^{-1/2}$ is positive with
+all eigenvalues at most one: this follows by evaluating its
+quadratic form and that of the positive matrix
+$A^{-1/2}CD^{-1}C^*A^{-1/2}$. Its determinant is therefore at
+most one, proving ES26. Equality holds exactly when $C=0$,
+because all these eigenvalues must then be one, forcing
+$CD^{-1}C^*=0$, hence $C=0$. This identifies precisely when
+the fixed coordinate-plane coefficient attains the leading
+operator coefficient, with no cross term discarded.
+The same proofs, with $\Phi$ and $G_U$, give the exact fixed-source
+flag distortions in the original quotient metric. These are
+the stated transported coordinate flags; no identification with
+other programme endpoint subspaces is made or needed.
+
+\begin{thebibliography}{9}
+\bibitem{ES} The Clankers, \emph{Erd\H{o}s--Straus project
+reader}, canonical 488-page edition, source version 69,
+\texttt{erdos\_straus\_project\_reader.tex}, theorem
+\texttt{explicit-four-time-Jacobian-collision}, lines 19484--19588;
+source SHA-256
+\texttt{678b3f70ee7d2a6d00f6c588d7778e390118ab4743a5759612dbba6430984c78}.
+The escaping-branch derivative, metric constants and singular flags
+in this note are new calculations from its explicit polynomial.
+\bibitem{WCF} Split-Zero programme, \emph{A polynomial forward
+bound for the full weighted conductor},
+\texttt{WEIGHTED\_CONDUCTOR\_FORWARD.tex}, WCF1--6.
+The underlying Meixner--Pollaczek formulas are credited there to
+T. H. Koornwinder, R. Wong, R. Koekoek, R. F. Swarttouw and
+W. P. Reinhardt, NIST DLMF Chapter 18, equations 18.19.8--9,
+18.22.8 and 18.23.7. Their dictionary is used with the original
+WCF phases and mass.
+\bibitem{Tao} Terence Tao, \emph{A digestion of the Jacobian
+conjecture counterexample}, 21 July 2026,
+\url{https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/};
+the original example is credited to Levent Alp\"oge and Fable.
+\end{thebibliography}
+\end{document}

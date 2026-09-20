@@ -1,0 +1,461 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,mathtools,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Disc}{\operatorname{Disc}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\title{Exact signed-root monodromy of the ES--Fable inverse cover}
+\author{Independent programme calculation}
+\date{20 September 2026}
+\begin{document}
+\maketitle
+
+This calculation acts on the actual degree-eight inverse cover of
+the original four-dimensional ES--Fable map, with the four marked
+labels $\mathrm M,\mathrm N,\mathrm T,\mathrm E$ retained.
+The polynomial and factor chart come from \cite{ES488}; the complete
+global inverse and its chart boundary were proved in \cite{Global}.
+All continuation paths, sign changes, group generators, and deck
+transformations used here are constructed below. No identification
+with a named Weyl group is assumed.
+
+\section{The actual cover and its eight labelled states}
+For $u=(u_0,u_2,u_3,u_4)$ put
+\[
+ H_u(U,V)=u_0U^4+U^3V+u_2U^2V^2+u_3UV^3+u_4V^4,
+ \qquad h_u(x)=H_u(x,1),\qquad A=u_0.
+\]
+The original cubic coefficient remains one throughout. Let
+\[
+ \mathcal B=\{u:A\Disc(H_u)\ne0\},\qquad
+ R=\C[u_0,u_2,u_3,u_4,(A\Disc H_u)^{-1}].
+\]
+Over this domain the original source is isomorphic to the finite
+cover with coordinate algebra
+\begin{equation}
+ S=R[r,a]/(h_u(r),\ a^2h_u'(r)-1).\tag{SM1}
+\end{equation}
+In the unchanged original source coordinates its inverse is
+\begin{align}
+ y&=-r-i/a,\nonumber\\
+ z&=A/a^3+2r/a+3i/a^2,\nonumber\\
+ w&=7ir^2/a+(u_2-17r+Ar^2)/a^2-13i/a^3-2A/a^4.
+ \tag{SM2}
+\end{align}
+These formulas are obtained by factoring
+$H_u=(aU+bV)(cU^3+dU^2V+eUV^2+fV^3)$, setting $r=-b/a$,
+and retaining the resultant equation
+$C(-b,a)=a^2h_u'(r)=1$. Thus SM1 describes the actual inverse
+states; its two signs are two distinct original source points.
+
+For completeness, $R[r]/(h_u)$ is free of rank four because $A$
+is a unit and $A^{-1}h_u$ is monic. The discriminant condition
+and the Sylvester Bezout identity make $h_u'(r)$ a unit. The
+second equation of SM1 is therefore the monic relation
+$a^2=h_u'(r)^{-1}$, and $S$ is free of rank eight over $R$.
+The Jacobian of the two equations with respect to $(r,a)$ has
+determinant $2a h_u'(r)^2$, a unit. In a sufficiently small target
+neighbourhood the four simple roots and their two nonzero square
+roots therefore give eight separate holomorphic inverse charts.
+This provides the local path-lifting property used below.
+
+Both the base and the actual cover are path connected. The base
+is the complement in $\C^4$ of the zero set of the nonzero
+polynomial $A\Disc H_u$. The actual source is the complement
+of the zero set of its polynomial pullback under the original map
+$P$. This pullback is nonzero, since the eight states of any point
+in $\mathcal B$ exist by SM1--2. To connect two points in either
+complement, restrict its defining polynomial to the complex line
+through them. Its value at the endpoints is nonzero, so the
+restricted polynomial is not identically zero and has only
+finitely many zeros. A path in the complex line parameter from
+zero to one, with small detours around these finitely many points,
+connects the endpoints within the complement. This proves the
+asserted connectedness without an unproved topological
+classification of the base.
+
+\section{The exact upper bound from the retained product invariant}
+At a base point order the four roots as $r_1,r_2,r_3,r_4$ and
+choose one of the two actual values $a_j$ at each root. Denote
+the eight states by $(j,+)$ and $(j,-)$, corresponding respectively
+to $a_j$ and $-a_j$ in SM2. During continuation the four roots
+remain distinct, and their scalings remain nonzero. Put
+\[
+ \Delta=\prod_{j<k}(r_k-r_j),\qquad
+ \chi=A^2\Delta\prod_{j=1}^4a_j.
+\]
+The complete derivative product is
+\[
+ \prod_{j=1}^4h_u'(r_j)
+ =A^4\prod_{j=1}^4\prod_{k\ne j}(r_j-r_k)
+ =A^4\Delta^2.
+\]
+There are six pairs, so the sign from reversing each pair is
+$(-1)^6=1$. Consequently
+\begin{equation}
+ \chi^2=1.\tag{SM3}
+\end{equation}
+The continuous value $\chi$ is therefore constant along every
+ordered lift of a path. Its initial value may be $1$ or $-1$;
+neither value has been discarded.
+
+A loop in $\mathcal B$ induces a root permutation $\pi\in S_4$
+and signs $\sigma_j\in\{1,-1\}$ such that
+$r_j\mapsto r_{\pi(j)}$ and $a_j\mapsto\sigma_j a_{\pi(j)}$.
+The negative state continues as the negative of the positive one,
+by uniqueness in the equation $a^2h'(r)=1$. The exact action is
+therefore
+\begin{equation}
+ (j,\epsilon)\longmapsto(\pi(j),\sigma_j\epsilon),
+ \qquad \epsilon\in\{1,-1\}.\tag{SM4}
+\end{equation}
+The final Vandermonde is $\sgn(\pi)\Delta$. Applying the
+constancy of SM3 gives the necessary relation
+\begin{equation}
+ \prod_{j=1}^4\sigma_j=\sgn(\pi).\tag{SM5}
+\end{equation}
+Thus the monodromy is contained in the explicitly defined group
+\begin{equation}
+ G=\{(\sigma,\pi)\in\{\pm1\}^4\rtimes S_4:
+                       \prod_j\sigma_j=\sgn(\pi)\}.
+ \tag{SM6}
+\end{equation}
+For each permutation exactly eight sign choices satisfy SM5, so
+$|G|=8\cdot24=192$. As signed permutation matrices its elements
+have determinant $(\prod_j\sigma_j)\sgn(\pi)=1$.
+
+\section{Explicit local exchanges realizing the full group}
+Use the real roots
+\[
+ (r_{\mathrm T},r_{\mathrm E},r_{\mathrm M},r_{\mathrm N})
+ =(7,9,11,13),\qquad A=-1/40.
+\]
+Their sum is forty; hence the cubic coefficient of
+$A\prod(x-r_j)$ is exactly one. The base target is
+\begin{equation}
+ u_*^{\rm real}=(-1/40,-59/4,95,-9009/40)\in\mathcal B.
+ \tag{SM7}
+\end{equation}
+For the next calculation index the real order as
+$s_1=7,s_2=9,s_3=11,s_4=13$; these indices refer respectively
+to the unchanged labels $\mathrm T,\mathrm E,\mathrm M,\mathrm N$.
+The four derivatives are
+\[
+ (h'(s_1),h'(s_2),h'(s_3),h'(s_4))
+       =(6/5,-2/5,2/5,-6/5).
+\]
+Choose the exact base scalings
+\begin{equation}
+ (a_{\mathrm T},a_{\mathrm E},a_{\mathrm M},a_{\mathrm N})
+ =\left(\sqrt{5/6},-i\sqrt{5/2},-\sqrt{5/2},i\sqrt{5/6}\right),
+ \tag{SM8}
+\end{equation}
+where the real square roots displayed are positive. Each satisfies
+the original equation in SM1.
+
+For each adjacent pair $(s_j,s_{j+1})$, let
+$c=(s_j+s_{j+1})/2$ and $d=1$. Keeping the other two roots fixed,
+take the explicit path
+\begin{equation}
+ s_j(\theta)=c-d e^{i\theta},\qquad
+ s_{j+1}(\theta)=c+d e^{i\theta},\qquad0\le\theta\le\pi.
+ \tag{SM9}
+\end{equation}
+The pair sum remains $2c$, so the total root sum and the original
+coefficient $A=-1/40$ are unchanged. The two moving roots remain
+distinct. The closed disk of radius one about $c$ contains no
+other root, so no collision with a fixed root occurs. At the
+endpoint the pair is interchanged. The unordered roots and all
+polynomial coefficients consequently return to the same target;
+SM9 is a loop in the actual base $\mathcal B$.
+
+We compute its signs without assuming a braid-group presentation.
+For a fixed root $s_k$ outside the pair disk, the moving contribution
+to $h'(s_k)$ is
+\[
+ (s_k-s_j(\theta))(s_k-s_{j+1}(\theta))
+       =(s_k-c)^2-d^2e^{2i\theta}.
+\]
+Its values lie in the disk with positive real centre $(s_k-c)^2$
+and strictly smaller radius $d^2$. This disk is in the right
+half-plane and has a single continuous logarithm. After the loop
+that logarithm returns to its initial value. Therefore neither
+scaling at a fixed root changes sign.
+
+For a moving root, its difference from the other moving root turns
+by exactly $\pi$. Each of its two differences from an outside
+root lies in a disk not containing zero, with both endpoint values
+real and of the same sign. A logarithm on the corresponding left
+or right half-plane shows that the net imaginary part of each of
+those logarithm differences is zero. The argument change of the
+complete moving derivative is thus exactly $\pi$. Its inverse
+square root changes phase by $-\pi/2$, with its magnitude taking
+the new root's required magnitude. By the explicit choices SM8,
+the resulting permutation is the four-cycle
+\begin{equation}
+ \beta_j=(j+\quad(j+1)+\quad j-\quad(j+1)-).
+ \tag{SM10}
+\end{equation}
+Equivalently, in the four retained Time labels the three generators
+are
+\begin{equation}
+ \begin{split}
+ \beta_1&=(\mathrm T+\ \mathrm E+\ \mathrm T-\ \mathrm E-),\\
+ \beta_2&=(\mathrm E+\ \mathrm M+\ \mathrm E-\ \mathrm M-),\\
+ \beta_3&=(\mathrm M+\ \mathrm N+\ \mathrm M-\ \mathrm N-).
+ \end{split}\tag{SM11}
+\end{equation}
+Every sign and every fixed state has been determined by the path.
+
+The square $\beta_j^2$ flips exactly the two adjacent root signs.
+These three pair flips generate all even sign patterns: as vectors
+over $\mathbb F_2$ they are
+$(1,1,0,0)$, $(0,1,1,0)$ and $(0,0,1,1)$, which are independent
+and span the dimension-three subspace with coordinate sum zero.
+The projections of the three $\beta_j$ are the three adjacent
+transpositions, and they generate all of $S_4$ by successively
+moving entries to any prescribed positions. Thus the group
+generated by these actual loops contains all eight elements in
+the sign kernel and projects onto all 24 permutations. It has
+at least $8\cdot24=192$ elements. The universal upper bound SM6
+has exactly 192 elements, proving equality:
+\begin{equation}
+ \boxed{\operatorname{Mon}(P^{-1}(\mathcal B)/\mathcal B)=G.}
+ \tag{SM12}
+\end{equation}
+This proof establishes the entire group without an unproved claim
+that every base loop is a braid word.
+
+\section{Transport from the literal original quartet}
+Start with the original marking
+\[
+ (\rho_{\mathrm M},\rho_{\mathrm N},\rho_{\mathrm T},\rho_{\mathrm E})
+ =\left(\tfrac12+\delta+i\gamma,\tfrac12+\delta-i\gamma,
+        \tfrac12-\delta+i\gamma,\tfrac12-\delta-i\gamma\right),
+ \qquad0<\delta<\tfrac12,\quad\gamma>2.
+\]
+Its target is $H_\rho=-\frac12\prod(U-\rho_jV)$, with the
+original cubic coefficient one. The following two paths give a
+fully explicit base transport to SM7. First, for $0\le t\le1$,
+put
+\begin{equation}
+ \begin{array}{ll}
+ r_{\mathrm M}(t)=\tfrac12+(1-t)(\delta+i\gamma)+t,
+ &r_{\mathrm N}(t)=\tfrac12+(1-t)(\delta-i\gamma)+3t,\\
+ r_{\mathrm T}(t)=\tfrac12+(1-t)(-\delta+i\gamma)-3t,
+ &r_{\mathrm E}(t)=\tfrac12+(1-t)(-\delta-i\gamma)-t.
+ \end{array}\tag{SM13}
+\end{equation}
+Their sum is always two, so $A=-1/2$ throughout this segment.
+Roots with different original imaginary signs have different
+imaginary parts for $t<1$. Roots with the same original imaginary
+sign have real difference $2\delta(1-t)+4t$, which is positive.
+At $t=1$ the four real roots are $(3/2,7/2,-5/2,-1/2)$ and
+are distinct. Thus the entire segment remains in $\mathcal B$.
+
+Next translate all four roots by $19t/2$, $0\le t\le1$, and
+put $A(t)=-1/(2+38t)$. Their differences remain fixed, their sum
+is $2+38t\ne0$, and the retained original cubic coefficient is
+again one. At its endpoint the marked roots are
+$(11,13,7,9)$, namely SM7 in the original Time order. This
+second segment also lies entirely in $\mathcal B$.
+
+The actual signs transport by the original equations, not by
+discarding a branch. An exact formula along either differentiable
+segment is
+\begin{equation}
+ a_j(t)=a_j(0)\exp\left[-\frac12\int_0^t
+ \left(\frac{A'(s)}{A(s)}+
+ \sum_{k\ne j}\frac{r_j'(s)-r_k'(s)}{r_j(s)-r_k(s)}\right)ds\right].
+ \tag{SM14}
+\end{equation}
+The integrand has no singularity on these paths. Differentiating
+shows that $a_j(t)^2A(t)\prod_{k\ne j}(r_j(t)-r_k(t))$ is
+constant, and its initial value is one. Hence SM14 is precisely
+the lifted inverse branch. Both initial signs lift separately.
+Using SM8 as the signs at the real endpoint defines their exact
+transported signs at the original quartet; any other initial
+sign convention conjugates SM11 by a diagonal sign permutation.
+It does not change SM12, because the determinant-one subgroup
+is invariant under that conjugation.
+
+Conjugating each loop SM9 by the explicitly constructed path
+SM13 and its translation segment gives based loops at the literal
+quartet with the same marked-root action. This transport concerns
+the auxiliary quartic targets of the fixed nonlinear map. It does
+not assert that intermediate roots are arithmetic zeta zeros or
+that an original conductor period is moved along these paths.
+
+\section{Why this group is not the Weyl group of type $D_4$}
+With composition acting first by the rightmost generator, the
+product $\beta_1\beta_2\beta_3$ is the eight-cycle
+\begin{equation}
+ (\mathrm T+\ \mathrm E+\ \mathrm M+\ \mathrm N+\
+   \mathrm T-\ \mathrm E-\ \mathrm M-\ \mathrm N-).
+ \tag{SM15}
+\end{equation}
+This follows by applying the three four-cycles SM11 to each
+state in order. It has order eight.
+
+For comparison, the reflections in the roots
+$\{\pm e_j\pm e_k:j\ne k\}$ generate precisely the signed
+permutations with an even total number of sign changes. Indeed
+the reflection in $e_j-e_k$ swaps those coordinates, and the
+reflection in $e_j+e_k$ swaps them with both signs changed.
+Their compositions generate every permutation and every pair
+sign flip, and each such reflection has even total sign product.
+This proves the usual signed-permutation description of the
+Weyl group $W(D_4)$ directly:
+\[
+ W(D_4)=\{(\sigma,\pi):\prod_j\sigma_j=1\}.
+\]
+This group has no element of order eight. An underlying
+permutation of four coordinates can have cycle lengths only
+$1,2,3,4$. A signed cycle of length $m$ has order $m$ if its
+sign product is positive and $2m$ if its sign product is
+negative, as follows by applying the cycle $m$ times to each
+coordinate. With no length-four cycle, the available orders
+combine to divisors of four or six. With a length-four cycle,
+the even total sign condition makes its sign product positive,
+so its order is four. Thus order eight never occurs in $W(D_4)$,
+whereas SM15 occurs in $G$. The groups are therefore not even
+abstractly isomorphic, despite their equal order 192.
+
+\section{Exact deck groups}
+Let $\tau$ denote simultaneous reversal of all four root signs,
+$\tau(j,\epsilon)=(j,-\epsilon)$. The centralizer of $G$ in
+the full permutation group of the eight inverse states is
+\begin{equation}
+ C_{S_8}(G)=\{1,\tau\}.\tag{SM16}
+\end{equation}
+Here is a complete proof. Fix one state, say $(1,+)$. Its
+stabilizer in $G$ also fixes $(1,-)$. No state at another root
+is fixed by that stabilizer: a pair sign flip involving that
+root and one of the other two roots different from root 1
+belongs to the stabilizer and moves that state. Hence the
+stabilizer has exactly the two fixed states $(1,+),(1,-)$.
+Any permutation $c$ commuting with $G$ must send $(1,+)$ to
+one of these fixed states. The group $G$ is transitive on all
+eight states (permutations move root labels and pair flips
+change either chosen sign), so the image of this one state
+determines $c$ everywhere through $c(gx)=g c(x)$. The first
+choice gives the identity and the second gives $\tau$.
+Both commute with every signed permutation, proving SM16.
+
+A deck transformation of the actual connected cover restricts
+on the base fibre to a permutation commuting with monodromy:
+apply the deck transformation to a lifted loop and use uniqueness
+of path lifting in the local charts of SM1. Its restriction is
+injective as a function of the deck transformation. Indeed a
+transformation fixing one fibre point fixes the lift of every
+path starting there; connectedness, or the explicit path-lifting
+description, reaches the entire cover. Thus SM16 is an upper
+bound of two for the actual deck group.
+
+Both transformations are realized. The nontrivial one is the
+original rational factor-sign involution, in unchanged source
+coordinates,
+\begin{equation}
+ \Sigma(a,y,z,w)=\left(-a,\ y+\frac{2i}{a},\
+ \frac{6i}{a^2}-z,\
+ w-\frac{14iy^2}{a}+\frac{28y}{a^2}+\frac{40i}{a^3}\right).
+ \tag{SM17}
+\end{equation}
+To check it directly in the inverse model, keep the same $r,u$
+in SM2 and replace $a$ by $-a$. Its new $y$ is $y+2i/a$ and
+its new $z$ is $6i/a^2-z$. Expanding the two expressions for
+$w$ gives exactly SM17. It follows from this same operation
+that $\Sigma^2=1$ and $P\Sigma=P$ on $a\ne0$. Since $u_0=ac$
+is nonzero on $\mathcal B$, every point of its preimage has
+$a\ne0$. SM17 is regular on the entire cover and realizes
+$\tau$. The exact cover deck group is consequently
+\begin{equation}
+ \Aut_{\mathcal B}(P^{-1}(\mathcal B))=\{1,\Sigma\}\cong C_2.
+ \tag{SM18}
+\end{equation}
+
+The same two elements are all rational birational deck
+transformations of the original polynomial map. To justify the
+passage from rational maps, write $K_0=\C(u_0,u_2,u_3,u_4)$
+and $L_0=\C(a,y,z,w)$ with the embedding defined by $P$.
+SM1 makes $[L_0:K_0]=8$. The actual ring $S$ is also the
+localization
+\[
+ \C[a,y,z,w,(P_0\Disc(H_{P(q)}))^{-1}],
+\]
+so it is integrally closed: a localization of a polynomial
+unique-factorization ring has this property, since a reduced
+fraction integral over it has denominator dividing a power of
+its relatively prime numerator and therefore has unit denominator.
+Since $S$ is finite integral over $R$, it is the full integral
+closure of $R$ in $L_0$. In fact any element of $L_0$ integral
+over $R$ is integral over $S$ by the same monic polynomial,
+and integrally closedness puts it in $S$.
+Every $K_0$-automorphism of $L_0$ preserves this integral closure,
+and hence extends to a regular deck transformation on the actual
+cover. SM18 therefore bounds it by those same two elements;
+SM17 realizes both. Thus
+\begin{equation}
+ \Aut_{K_0}(L_0)=\{1,\Sigma\}.\tag{SM19}
+\end{equation}
+This statement is about birational automorphisms fixing the
+target field, not arbitrary rational maps of the source.
+
+Finally the only global polynomial deck automorphism $D$ of $\C^4$
+satisfying $P\circ D=P$ is the identity. Such an automorphism would
+restrict to SM19. The nonidentity element cannot extend
+polynomially across $a=0$, because its second coordinate is
+$(ay+2i)/a$, whose numerator is not divisible by $a$.
+Equality on the dense open set $a\ne0$ forces equality as
+rational functions, so there is no alternative polynomial
+extension. This proves the assertion for the whole original
+source, while retaining the nontrivial regular deck
+transformation on the precise eight-sheet domain. This does not
+classify polynomial automorphisms satisfying the different equation
+$P\circ D=D\circ P$; that centralizer is not asserted to be trivial.
+
+\section{Receiving the group in the fixed original conductor target}
+For the fixed original receiving isomorphism
+$\Psi:\C^4\to W=\cP_3$, with all original moments and Gamma
+norms retained, set $P_W=\Psi P\Psi^{-1}$. Its eight-sheet
+base is exactly $\Psi(\mathcal B)$. Sending a target path
+$u(t)$ to $\Psi u(t)$ and each source state to its image under
+$\Psi$ gives a bijection of all path lifts, with inverse
+$\Psi^{-1}$. Thus its monodromy is exactly SM12 on the eight
+transported marked states, and its nontrivial rational deck
+transformation is exactly $\Psi\Sigma\Psi^{-1}$. The cover
+deck group is $C_2$ and its global polynomial deck group is
+trivial by the same conjugacy.
+
+These are statements about the constructed nonlinear cover on
+the original target. They do not enlarge the symmetry group
+of a fixed Segre pairing or assert that the original conductor
+itself is a nonlinear map. The original linear conductor
+remains the exact invertible intertwiner proved in
+\cite{Bridge}. All four Time labels and both signs over each
+are present in the monodromy action just calculated.
+
+\begin{thebibliography}{9}
+\bibitem{ES488} The Clankers, \emph{Erd\H{o}s--Straus project reader},
+canonical 488-page edition, deposited source version 69,
+\texttt{erdos\_straus\_project\_reader.tex}, theorem
+\texttt{explicit-four-time-Jacobian-collision}, source lines
+19484--19588. The source attribution identifies the original
+four-dimensional map and its marked coordinates; the monodromy
+calculation in this note is not retrospectively attributed to it.
+\bibitem{Global} Programme calculation,
+\emph{Complete fibres, the eight-sheet domain, and the nonproper-value
+locus of the ES--Fable map},
+\texttt{GLOBAL\_FIBRE\_AND\_NONPROPER\_LOCUS.tex}, GF1--28,
+20 September 2026. SM1--2 are its exact inverse cover and original
+coordinate formulas; the group and deck proofs here are new.
+\bibitem{Bridge} Programme calculation,
+\emph{The four ES--Fable locales and the original weighted conductor},
+\texttt{FABLE\_TO\_ORIGINAL\_CONDUCTOR.tex}, FC26--35 and FC50--55,
+20 September 2026. The original WCF operator and its human
+orthogonal-polynomial provenance remain as cited there.
+\end{thebibliography}
+\end{document}

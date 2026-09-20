@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "index_entrypoint": "C:/Users/Floris/Documents/Papors/Chatnotes/Zeta-Function-Foundation/config/literature_index_entrypoint.json",
+  "index_queries": [
+    "Meixner Pollaczek Gamma norm weighted conductor",
+    "weighted conductor four Time Fable",
+    "ES Fable weighted conductor",
+    "finite shift Meixner Pollaczek conductor"
+  ],
+  "sources": [
+    {
+      "id": "PUBUNIT-1C9A160031EECC8F3F032D4D",
+      "file": "C:/Users/Floris/Documents/Papors/Chatnotes/ES-Fable-C123/es_fable_c123_preprint.tex",
+      "coverage": "content-read source lines 22314-22543: generic quartic factor product, resultant-one ES carrier, incidence equations, constant-Jacobian chart",
+      "use": "lineage and antecedent for the normalized prime-plus-denominator quartic refinement"
+    },
+    {
+      "id": "ES-TURN7-SHAPE-20260919",
+      "file": "../es-turn07-shape-rigidity-20260919/core.tex",
+      "coverage": "content-read definitions and proofs of exterior normalization, ordered denominators, marked cubic and complete inverse",
+      "use": "typed source and inverse for EZ18-EZ23"
+    },
+    {
+      "id": "FABLE-SIGNED-CONDUCTOR-20260920",
+      "file": "upstream/FABLE_TO_ORIGINAL_CONDUCTOR.tex",
+      "sha256": "bfb75ff468f35b71103ad2671e22f20fee0414df4a43d1dab5fc2d19aabbd1b6",
+      "coverage": "content-read FC1-FC71, GF1-GF28, SE1-SE18 and SM1-SM19 together with all independent proof modules and checker scope",
+      "use": "global inverse, exact fibres, image complement, nonproper locus, conductor square, signed evaluation, monodromy and deck groups",
+      "audit": "AUDIT_NOTES.md"
+    },
+    {
+      "id": "WCF-FORWARD",
+      "file": "C:/Users/Floris/Documents/math/work/source_audit_intake_20260917/forward_continuation/WEIGHTED_CONDUCTOR_FORWARD.tex",
+      "coverage": "content-read WCF1-WCF6",
+      "use": "unchanged weighted spaces, measure, Meixner-Pollaczek frame, finite-shift conductor and triangular determinant"
+    },
+    {
+      "id": "DLMF-18.19.8-9-18.22.8-18.23.7",
+      "authors": "T. H. Koornwinder; R. Wong; R. Koekoek; R. F. Swarttouw; W. P. Reinhardt",
+      "urls": [
+        "https://dlmf.nist.gov/18.19.E8",
+        "https://dlmf.nist.gov/18.19.E9",
+        "https://dlmf.nist.gov/18.22.E8",
+        "https://dlmf.nist.gov/18.23.E7"
+      ],
+      "coverage": "content-read exact weight, norm, recurrence and generating-function equations",
+      "use": "verification of the fixed Gamma metric and Meixner-Pollaczek dictionary"
+    }
+  ],
+  "routing_note": "Index hits were used only for routing; mathematical statements were taken from the content listed above."
+}
