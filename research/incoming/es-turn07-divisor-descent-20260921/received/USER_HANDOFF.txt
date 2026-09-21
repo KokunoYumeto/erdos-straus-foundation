@@ -1,0 +1,776 @@
+[**Cumulative Turn 6–7 handoff, with the new continuation and the preceding archives preserved**](sandbox:/mnt/data/ES_Turns6_7_With_Divisor_Descent_20260921.zip)
+
+[**Current research package**](sandbox:/mnt/data/ES_Turn7_Divisor_Descent_20260921.zip) · [Eight-page complete proof](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/workbench.pdf) · [Two-page preprint](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/preprint.pdf) · [Complete LaTeX](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/core.tex) · [Fresh-extraction receipt](sandbox:/mnt/data/ES_Turn7_Divisor_Descent_Receipt_20260921.json)
+
+## Turn 7: the composite-source descent has an exact domain—and an optimal universal seed list
+
+**The prime-shell descent now extends to composite distinguished denominators.** The extension preserves the original divisor word and determines exactly which divisors of the old residual produce an integral state.
+
+Its strongest uniform consequence is:
+
+$$
+\boxed{
+u\in\{1,2,3,4,6,9,12,18,36\}
+\quad\Longrightarrow\quad
+\text{every proper rational trace source with word }u
+\text{ has a one-step integral return}.
+}
+$$
+
+The list is optimal for this transformation system. **For every other fixed word \(u\), infinitely many hard-prime sources have no same-word residual-divisor return, even after taking the middle complement.** These primes have separately constructed integer solutions; the obstruction concerns the proposed descent, not ES.
+
+Several composite examples also succeed outside the automatic list. One repairs the earlier failed \(p=1009,\ R=135\) source by an available complement followed by a **nonsquare** residual deletion. Another requires retaining a square in the new residual: stripping every square destroys the original word budget.
+
+This is a genuine source-changing result within Turn 7. The remaining universal obligation is still to produce a suitable source at every prescribed prime, rather than assume one is available.
+
+## 1. The relaxed source already retains its original integer divisor
+
+Fix a prime \(p\equiv1\pmod4\), and retain
+
+$$
+\frac p4<a<\frac p2,\qquad
+R=4a-p,\qquad
+u\mid a^2.
+$$
+
+Write
+
+$$
+a=\prod_\ell \ell^{e_\ell},\qquad
+u=\prod_\ell \ell^{f_\ell},\qquad
+0\le f_\ell\le2e_\ell.
+$$
+
+These are the complete original exponent bounds.
+
+Define
+
+$$
+G_E=4u+1,\qquad G_M=p+4u.
+$$
+
+Before requiring the full gate \(R\mid G_c\), the original word gives positive rational denominators
+
+$$
+E:\quad
+\left(
+a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}
+\right),
+$$
+
+$$
+M:\quad
+\left(
+a,\frac{p(a+a^2/u)}{R},\frac{p(a+u)}R
+\right).
+$$
+
+Both satisfy the Erdős–Straus identity exactly.
+
+Their tail sums are
+
+$$
+N_E=\frac{(a+pu)^2}{Ru},
+\qquad
+N_M=\frac{p(a+u)^2}{Ru}.
+$$
+
+Because \(p,a,u\) are units modulo \(R\), and \(p\equiv4a\pmod R\),
+
+$$
+\boxed{
+N_c\in\mathbb Z
+\iff R\mid G_c^2.
+}
+$$
+
+The two reduced tail denominators are exactly
+
+$$
+\boxed{
+d=\frac{R}{\gcd(R,G_c)},\qquad d^2\mid R.
+}
+$$
+
+A *proper trace source* has \(d>1\): its first trace is integral, its word is an actual divisor of \(a^2\), but its tails are not yet integers.
+
+This is different from the earlier raw sum-gate source, which imposed the full gate before testing a trace. Here the unresolved condition is the higher residual divisibility.
+
+For a positive integer \(n\), put
+
+$$
+K(n)=\prod_{\ell^e\parallel n}\ell^{\lceil e/2\rceil}.
+$$
+
+The exact original word budget is
+
+$$
+\boxed{
+u\mid a^2
+\iff K(u)\mid a
+\iff p+R\equiv0\pmod{4K(u)}.
+}
+$$
+
+Set \(m=4K(u)\). This modulus, not merely its radical or its odd part, controls the descent.
+
+## 2. Every same-word residual-divisor return is classified
+
+Replace \(R\) by a divisor \(R'=R/k\), while retaining \(p\), the channel tag, and the original integer \(u\).
+
+### Complete descent theorem
+
+The permitted deletion factors are exactly
+
+$$
+\boxed{
+\mathcal K_{p,a,u,c}
+=
+\{k:k\mid R,\ d\mid k,\ k\equiv1\pmod m\}.
+}
+$$
+
+For each such factor,
+
+$$
+\boxed{
+R'=\frac Rk,\qquad
+a'=\frac{p+R'}4,\qquad
+u'=u
+}
+$$
+
+is an original integral state. For a proper trace source,
+
+$$
+\boxed{a'<a.}
+$$
+
+The proof has two independent arithmetic parts.
+
+The full target gate is
+
+$$
+R/k\mid G_c
+\iff d\mid k.
+$$
+
+The new distinguished denominator and its original word budget together require
+
+$$
+p+R/k\equiv0\pmod m.
+$$
+
+Multiplying by \(k\), using \(p+R\equiv0\pmod m\), and cancelling the unit \(p\), gives
+
+$$
+k\equiv1\pmod m.
+$$
+
+That last condition includes \(k\equiv1\pmod4\). Consequently,
+
+$$
+R'\equiv3\pmod4,\qquad 3\le R'<R<p,
+$$
+
+and \(p/4<a'<p/2\). It also proves \(K(u)\mid a'\), hence \(u\mid a'^2\). No target factor is being introduced without reconstructing the integer containing it.
+
+### The ordered denominator return is explicit
+
+Recompute
+
+$$
+g'=\gcd(a',u),\qquad
+(h',r',s')=
+\left(\frac{g'^2}{u},\frac{u}{g'},\frac{a'}{g'}\right).
+$$
+
+For E,
+
+$$
+\kappa'=\frac{pr'+s'}{R'},
+\qquad
+(x,y,z)=(a',h's'\kappa',ph'r'\kappa').
+$$
+
+For M,
+
+$$
+\lambda'=\frac{r'+s'}{R'},
+\qquad
+(x,y,z)=(a',ph's'\lambda',ph'r'\lambda').
+$$
+
+These are the classical Type-I/II identities, now supplied with a proved integer source. Their ordered inverses are
+
+$$
+u=\frac{a'^2}{R'y-pa'}\quad(E),
+\qquad
+u=\frac{pa'^2}{R'y-pa'}\quad(M).
+$$
+
+The parametrization is inherited from Elsholtz and Tao (2013, §2, Propositions 2.2 and 2.6).
+
+The old and new exponent vectors are related by
+
+$$
+\boxed{
+\beta'_\ell=\beta_\ell+v_\ell(a)-v_\ell(a').
+}
+$$
+
+The numerical word survives, but the surrounding prime inventories need not coincide.
+
+For a fixed target, its complete proper-source fibre consists of
+
+$$
+1\le k\le\left\lfloor\frac{p-1}{R'}\right\rfloor,
+\quad k\equiv1\pmod m,
+\quad R'k\mid G_c^2,
+\quad R'k\nmid G_c,
+$$
+
+with \(R=R'k\) and \(a=(p+R)/4\). Thus every forgotten source coordinate has an explicit finite reconstruction domain.
+
+### Original multiplicities are integer coefficients
+
+Writing \(k=dv\), the number of returns is
+
+$$
+\boxed{
+|\mathcal K|
+=
+[d^{-1}]
+\prod_{\ell^e\parallel R/d}
+\bigl([1]+[\ell]+\cdots+[\ell^e]\bigr)
+\quad\text{in }\mathbb Z[(\mathbb Z/m\mathbb Z)^\times].
+}
+$$
+
+Every exponent choice occurs once. A geometric factor is not replaced by a binomial expansion with coloured prime copies.
+
+If the target coefficient is nonzero, it has an original word satisfying
+
+$$
+\Omega(k/d)\le\varphi(m)-1.
+$$
+
+Choose a shortest word. Its successive partial products are distinct; otherwise an identity subword can be removed while staying inside the original exponent bounds.
+
+That bounds an **existing** word. It is not an assumed nonzero-coefficient theorem.
+
+## 3. Exactly nine fixed words have an automatic square-removal return
+
+Write
+
+$$
+R=\delta t^2,
+$$
+
+where \(\delta\) is the positive squarefree part obtained from the odd exponents, not the radical. It may share prime factors with \(t\).
+
+Put
+
+$$
+q_0=K(d).
+$$
+
+The relation \(d^2\mid R\) proves \(q_0\mid t\).
+
+The square deletion factors \(k=q^2\) are exactly
+
+$$
+\boxed{
+q_0\mid q\mid t,\qquad q^2\equiv1\pmod m.
+}
+$$
+
+Their complete coefficient count is
+
+$$
+\boxed{
+[q_0^{-2}]
+\prod_{\ell^e\parallel t/q_0}
+\bigl([1]+[\ell^2]+\cdots+[\ell^{2e}]\bigr).
+}
+$$
+
+It is calculated in the actual square-image subgroup
+
+$$
+H_m=\{x^2:x\in(\mathbb Z/m\mathbb Z)^\times\}.
+$$
+
+For
+
+$$
+m=2^\alpha\prod_{\ell\ {\rm odd}}\ell^{e_\ell},
+\qquad \alpha\ge2,
+$$
+
+elementary prime-power root counting gives
+
+$$
+\boxed{
+|H_m|
+=
+2^{\max(0,\alpha-3)}
+\prod_{\ell\ {\rm odd}}
+\frac{\ell^{e_\ell-1}(\ell-1)}2.
+}
+$$
+
+At odd prime powers, \(x^2=1\) has two unit roots; modulo four it has two, and modulo \(2^\alpha\), \(\alpha\ge3\), it has four. CRT gives the displayed order.
+
+Consequently,
+
+$$
+\boxed{
+H_m=\{1\}
+\iff m\mid24
+\iff K(u)\mid6
+\iff u\mid36.
+}
+$$
+
+For those nine words, **every** permitted square factor works. In particular,
+
+$$
+\boxed{
+R'=\frac{R}{K(d)^2},\qquad
+a'=\frac{p+R'}4,\qquad u'=u
+}
+$$
+
+is an original integer return, with \(a'<a\).
+
+The number of distinct square-deletion targets is exactly
+
+$$
+\boxed{
+\tau_{\mathrm{div}}(t/q_0)
+=
+\prod_{\ell^e\parallel R}
+\left(
+\left\lfloor\frac e2\right\rfloor
+-
+\left\lceil\frac{v_\ell(d)}2\right\rceil
++1
+\right).
+}
+$$
+
+This applies to both channels throughout \(p\equiv1\pmod4\). At hard primes, the E case for these particular words is vacuous because their prime factors \(2,3\) are quadratic residues; the M case is substantive.
+
+### A composite shell with both gates empty is repaired
+
+At
+
+$$
+\boxed{p=1009,\quad a=321=3\cdot107,\quad R=275,\quad u=9,}
+$$
+
+the rational middle tails are
+
+$$
+\frac{215926}{5},\qquad\frac{6054}{5},
+$$
+
+with integer sum \(44396\).
+
+The old shell has no full E or M state. Nevertheless,
+
+$$
+d=5,\qquad m=12,\qquad k=25
+$$
+
+returns
+
+$$
+\boxed{
+(a',R',u,h',r',s',\lambda')
+=(255,11,9,1,3,85,8),
+}
+$$
+
+and
+
+$$
+\boxed{
+\frac4{1009}
+=
+\frac1{255}+\frac1{686120}+\frac1{24216}.
+}
+$$
+
+The distinguished denominator is composite. Its rational source has supplied a new integral source rather than passing a test that was already true.
+
+## 4. Larger words can succeed—but the actual deletion choice matters
+
+At
+
+$$
+p=1108801,\quad
+a=279295=5\cdot83\cdot673,
+$$
+
+$$
+R=8379=19\cdot3^2\cdot7^2,\qquad u=5,\qquad c=M,
+$$
+
+the missing denominator is \(d=3\), and the original budget modulus is \(20\).
+
+The complete deletion set is
+
+$$
+\boxed{\mathcal K=\{21,441\}.}
+$$
+
+The factor \(7\) is not needed to remove the denominator \(3\), but it is needed to preserve the original word’s residue budget.
+
+The two returns are
+
+$$
+\begin{array}{c|rrrrrr}
+k&a'&R'&h'&r'&s'&\lambda'\\ \hline
+21&277300&399&5&1&55460&139\\
+441&277205&19&5&1&55441&2918.
+\end{array}
+$$
+
+Thus both a nonsquare deletion and a square deletion work. The integer coefficient is two. Reducing it modulo two gives zero while retaining two actual source words and two distinct integer states.
+
+At
+
+$$
+p=51361,\quad a=14845,\quad
+R=8019=11\cdot3^6,\quad u=5,
+$$
+
+the **only** deletion is
+
+$$
+k=81.
+$$
+
+It returns a residual that still contains a square:
+
+$$
+R'=99,\qquad a'=12865,
+$$
+
+and
+
+$$
+\boxed{
+\frac4{51361}
+=
+\frac1{12865}
++\frac1{17179740890}
++\frac1{6676930}.
+}
+$$
+
+Removing every square would instead give \(R'=11,a'=12843\), whose square is not divisible by the original word \(5\).
+
+### The preceding failed \(R=135\) example has a different, valid repair
+
+Complementation
+
+$$
+u\longmapsto u^*=\frac{a^2}{u}
+$$
+
+always preserves the relaxed M source and swaps its tails. For E, its exact relaxed-gate domain is
+
+$$
+\boxed{K(R)\mid p^2-1.}
+$$
+
+This follows by reducing the complemented gate modulo \(K(R)\):
+
+$$
+4u^*+1\equiv1-p^2.
+$$
+
+At \(p=1009,a=286,R=135\), the earlier rational tails
+
+$$
+6413/3,\qquad168238642/3
+$$
+
+come from the E word \(u=7436\). No same-word residual deletion works.
+
+But \(K(R)=45\mid p^2-1\), so the complement \(u^*=11\) is another genuine relaxed E source. Its complete deletion set is
+
+$$
+\{45\}.
+$$
+
+That nonsquare deletion gives
+
+$$
+\boxed{
+\frac4{1009}
+=
+\frac1{253}+\frac1{87032}+\frac1{3818056}.
+}
+$$
+
+The previously failed map to \(R'=15,a'=256\) remains failed. The replacement changes the word by its recorded complement and then uses a different deletion factor.
+
+The complement cannot be applied indiscriminately: at \(p=29,a=14,R=27,u=2\), the E source has integral first trace, but its complement \(98\) does not.
+
+## 5. The nine-word list is optimal, even allowing every residual divisor
+
+The converse is not inferred from a finite search.
+
+Fix any \(u\nmid36\), and let \(m=4K(u)\). Choose a unit \(b\bmod m\) such that
+
+$$
+b^2\not\equiv1\pmod m.
+$$
+
+Changing its sign permits \(b\equiv1\pmod4\).
+
+Choose distinct primes
+
+$$
+\delta\equiv-b^2\pmod m,
+\qquad
+t\equiv b^{-1}\pmod m,
+$$
+
+larger than \(u\) and seven. Then
+
+$$
+\delta\equiv3\pmod4,\qquad t\equiv1\pmod4.
+$$
+
+They may be chosen arbitrarily large by Dirichlet’s theorem.
+
+Put
+
+$$
+R=\delta t^2,\qquad L=\operatorname{lcm}(840,m),
+$$
+
+and choose a prime \(e\equiv3\pmod4\) coprime to \(LR\). Consider
+
+$$
+\boxed{
+p\equiv1\pmod L,\qquad
+p\equiv\delta t-4u\pmod R,\qquad
+p\equiv-1\pmod e.
+}
+$$
+
+The moduli are coprime, and every residue is a unit. This is therefore a reduced arithmetic progression containing infinitely many primes. The application of Dirichlet is to this explicit progression, not to an unproved nonlinear prime pattern (Sutherland, 2017, Theorem 18.1).
+
+Take such primes sufficiently large, and set \(a=(p+R)/4\). Since
+
+$$
+R\equiv-b^2b^{-2}\equiv-1\pmod m,
+$$
+
+the original budget \(u\mid a^2\) holds.
+
+Also,
+
+$$
+\boxed{
+\gcd(R,p+4u)=\delta t,\qquad d=t>1.
+}
+$$
+
+Thus the source has an integral rational first trace and nonintegral tails.
+
+The only residual divisors congruent to three modulo four are
+
+$$
+\delta,\qquad\delta t,\qquad R.
+$$
+
+The last fails the full gate. The first two fail the actual word budget:
+
+$$
+p+\delta\equiv1-b^2\not\equiv0\pmod m,
+$$
+
+$$
+p+\delta t\equiv1-b\not\equiv0\pmod m.
+$$
+
+**There is no same-word residual-divisor return.**
+
+The other middle orientation does not rescue the source. Define
+
+$$
+B(u)=\prod_{\ell^f\parallel u}\ell^{\lfloor f/2\rfloor}.
+$$
+
+Primewise calculation gives
+
+$$
+\boxed{
+K(a^2/u)=\frac{a}{B(u)}.
+}
+$$
+
+Taking \(p>B(u)R\) makes the complement’s modulus
+
+$$
+4K(a^2/u)=\frac{p+R}{B(u)}>R.
+$$
+
+No proper divisor \(k\le R\) can be one modulo that modulus.
+
+The construction can additionally make the **entire middle cofactor-\(\delta\) box** empty. Choose
+
+$$
+\delta>\max\{u,u^2-3u+1,7\}.
+$$
+
+With \(j=(\delta+1)/4\), canonical availability \(u\mid j^2\) fails. The earlier finite-capacity calculation, reproduced in the full proof, establishes
+
+$$
+W\mid j^2,\quad W\equiv u\pmod{4j-1},\quad u\nmid j^2
+\Longrightarrow
+4j-1\le u^2-3u+1.
+$$
+
+Our size choice excludes every such \(W\).
+
+This cofactor box is not the original residual-\(\delta\) shell. The two integer sources remain distinct.
+
+Finally, these primes are not ES counterexamples. The condition \(e\mid p+1\) gives
+
+$$
+j_e=\frac{e+1}{4},\qquad c=\frac{p+1}{e},
+$$
+
+and the genuine middle state
+
+$$
+(h,r,s,\lambda)=(j_e,1,c,1),
+$$
+
+with ordered denominators
+
+$$
+\boxed{(j_ec,\ pj_ec,\ pj_e).}
+$$
+
+There is a genuine exterior endpoint state as well.
+
+Therefore the fixed-word statement is settled exactly:
+
+$$
+\boxed{
+\begin{aligned}
+&\text{Every proper original trace source with word }u\\
+&\text{admits this residual-divisor descent}
+\end{aligned}
+\quad\Longleftrightarrow\quad
+u\mid36.
+}
+$$
+
+### An explicit terminal source
+
+For \(u=8\), take
+
+$$
+m=16,\quad b=5,\quad\delta=71,\quad t=13,\quad e=11.
+$$
+
+The resulting progression is
+
+$$
+\boxed{p=48116881+221741520n.}
+$$
+
+Its first term is prime, checked by complete trial division through \(6936\).
+
+At that prime,
+
+$$
+a=12032220,\qquad R=11999,\qquad u=8,\qquad d=13.
+$$
+
+The rational tail sum is the integer
+
+$$
+72\,569\,567\,260\,707\,262.
+$$
+
+Neither original middle orientation has a residual-divisor return.
+
+The cofactor-\(71\) source is the complete divisor box of \(18^2\). Its residues are
+
+$$
+1,2,3,4,6,9,12,18,27,36,54,10,37,20,40
+\pmod{71},
+$$
+
+none equal to eight.
+
+The independent endpoint middle solution has
+
+$$
+(h,r,s,\lambda)=(3,1,4374262,1).
+$$
+
+Thus the failed local mechanism and the successful original integer solution coexist at a deterministically certified hard prime.
+
+## 6. What this closes, and what remains at Turn 7
+
+The positive progression is now:
+
+$$
+\boxed{
+\text{available original divisor with a rational integral trace}
+\longrightarrow
+\text{exact residue-budget test}
+\longrightarrow
+\text{strictly smaller original integer source}.
+}
+$$
+
+It works automatically for nine fixed words, and the complete coefficient test handles all other words without dropping any multiplicities. It repairs composite-source examples that the earlier prime-shell theorem did not cover.
+
+The limitation is equally exact. The constructed infinite family proves that an arbitrary proper trace source need not descend through any divisor of its own residual, even after the available middle orientation is changed. More search within that same transformation system cannot turn those empty coefficient sets into witnesses.
+
+The remaining universal obligation is still to force, at every prescribed hard prime, an original trace source with a nonzero compatible-return coefficient—or an original integral state directly. A new argument must exploit relationships between different sources at the same prime, change the word beyond the present complement, or construct a justified non-divisor residual.
+
+No such initial-source existence theorem is assumed here, so this is not being marked as completion of Turn 7.
+
+## Reproduction and handoff
+
+The main verifier examines every original first-half square-divisor word at all primes \(p\equiv1\pmod4\) through 3,000. It tests the complete proper rational-trace source, every allowed return, the inverse fibres, the exact integer coefficients, and all displayed examples.
+
+The separate checker imports neither the main implementation nor predecessor code. It enumerates primitive \((h,r,s)\) sources and tests target residual divisors directly through rational denominator integrality.
+
+```sh
+python verify.py --bound 3000 --seed-bound 100 --out reproduced
+python -O verify.py --bound 3000 --seed-bound 100 \
+  --out reproduced_optimized
+python check_independent.py --input reproduced \
+  --out reproduced/independent.json
+```
+
+The finite checks additionally cover the unit-square classification through \(u=200\), and the explicitly reduced progression construction for the 91 nonautomatic words through \(u=100\). The latter are progression certificates, **not 91 claimed prime initial values**.
+
+The finalized archive was extracted afresh. Its manifest was verified; ordinary and optimized mathematical outputs matched; the separate checker reproduced the complete source and target records. Both PDFs rebuilt with identical extracted text and rendered pixels. The execution receipt records the actual counts and scope rather than treating those checks as independent mathematical review.
+
+[Main verifier](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/verify.py) · [Separate checker](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/check_independent.py) · [Exact certificates](sandbox:/mnt/data/ES_Turn7_Divisor_Descent_Certificates_20260921.zip) · [Preprint TeX and page PNGs](sandbox:/mnt/data/ES_Turn7_Divisor_Descent_Preprint_20260921.zip)
+
+[Typed maps and fibres](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/MORPHISMS.md) · [Remaining Turn 7 obligation](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/HANDOFF_TURN_7_REMAINDER.md) · [Source ledger](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/source_reading.json) · [Lean-ready dependency plan](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/lean_plan.md)
+
+No remote PR was created: the exposed connector supplied no creation action, the GitHub CLI was absent, and the direct Git route failed proxy-name resolution. The local source-only Git history and additive patch were created and replayed to the identical source tree; they are not represented as an upstream branch.
+
+[Additive patch](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/integration.patch) · [Git bundle](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/source_history.bundle) · [Publication receipt](sandbox:/mnt/data/es_turn7_divisor_descent_20260921/publication_receipt.json)
+
+The cumulative archive preserves the preceding trace-rigidity archive and prime-shell tranche byte-for-byte. No historical-priority determination, new overall ES verification range, Lean build, or universal ES theorem is claimed.
+
+**The established advance is a complete composite-source descent with an optimal nine-word guarantee, exact multiplicities, and an infinite arithmetic classification of where that guarantee stops.**

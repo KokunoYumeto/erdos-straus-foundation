@@ -1,0 +1,596 @@
+\section{Scope: a composite-source descent, not initial occupancy}
+The preceding prime-shell trace theorem \cite{PrimeTrace} supplies an integer
+return from an integral rational first trace when the distinguished denominator
+is prime. It explicitly leaves the composite case open. Here the distinguished
+denominator may be arbitrary. We classify every residual-divisor return that
+keeps its original divisor word. Nine words have a uniform one-step return;
+for every other fixed word, infinitely many hard primes give exact obstructions
+within this transformation system. The original prime is never changed.
+
+This remains the programme's Turn~7. No theorem below asserts that a prescribed
+prime supplies the initial rational trace candidate. The Type-I/II formulas are
+classical \cite[\S2, Propositions 2.2 and 2.6]{ET}; the trace relaxation is
+inherited from \cite[TR17--19]{Trace}. The finite capacity bound used in the
+optimality theorem is from \cite[Theorem ``Sharp finite-repair bound'']{Capacity}
+and is reproved here. No historical-priority determination is made.
+Here a \emph{hard prime} means
+\[
+ p\bmod840\in\{1,121,169,289,361,529\}.
+\]
+The counterfamily below lies in the first of these classes.
+
+\section{The full original divisor box and its rational trace relaxation}
+Fix a prime $p\equiv1\pmod4$, an integer $p/4<a<p/2$, and
+$R=4a-p$. Thus $3\le R<p$, $R\equiv3\pmod4$ and $\gcd(pa,R)=1$.
+Retain the integer word and every exponent:
+\[
+ a=\prod_l l^{e_l},\qquad u=\prod_l l^{f_l}\mid a^2,
+ \quad 0\le f_l\le2e_l,\qquad \beta_l=f_l-e_l.
+\]
+For $c\in\{E,M\}$ define
+\[
+ G_E=4u+1,\qquad G_M=p+4u.
+\]
+Before requiring the full gate $R\mid G_c$, these original words give the
+positive rational denominator triples
+\begin{align}
+ E:&\quad \left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\label{eq:Erational}\\
+ M:&\quad \left(a,\frac{p(a+a^2/u)}{R},\frac{p(a+u)}{R}\right).\label{eq:Mrational}
+\end{align}
+They satisfy $4/p=1/x+1/y+1/z$ by multiplication.
+
+\begin{lemma}[Exact trace domain]\label{lem:trace}
+The tail trace $y+z$ is integral exactly when $R\mid G_c^2$.
+The two reduced tail denominators then equal
+\begin{equation}\label{eq:d}
+ d=\frac R{\gcd(R,G_c)},\qquad d^2\mid R.
+\end{equation}
+They are integers exactly when $d=1$.
+\end{lemma}
+\begin{proof}
+The traces are respectively $(a+pu)^2/(Ru)$ and $p(a+u)^2/(Ru)$.
+Since $u\mid a^2$, both $u\mid(a+pu)^2$ and $u\mid(a+u)^2$.
+All $p,a,u$ are units modulo $R$, in particular $\gcd(u,R)=1$.
+Since $p\equiv4a\pmod R$,
+$a+pu\equiv a(1+4u)$ and $4(a+u)\equiv p+4u$ there.
+The exact tail denominators in \eqref{eq:Erational} and
+\eqref{eq:Mrational} follow by multiplying their integer numerators by the
+unit $u$ when needed.  If $l^e\parallel R$ and $g=v_l(G_c)$, the exponent
+of $l$ in the reduced denominator is $\max(e-g,0)$.  The trace gate
+$R\mid G_c^2$ gives $e\le2g$, hence
+$2\max(e-g,0)\le e$.  This proves $d^2\mid R$ prime by prime.
+\end{proof}
+A record with $d>1$ will be called a proper trace source. It contains an
+\emph{available integer divisor word}, but the full residual gate is not yet
+satisfied. It is different from the earlier raw integer sum-gate source in
+\cite[TR7--16]{Trace}, which imposed its full gate before testing a trace.
+
+These sources also recover every rational integral-trace tail pair.  Let
+$S=y+z\in\mathbb Z$ and put $b=Ry-pa$, $c=Rz-pa$.  The reciprocal identity
+gives
+\[
+ yz=\frac{paS}{R},\qquad b+c=RS-2pa\in\mathbb Z,
+ \qquad bc=(pa)^2\in\mathbb Z.
+\]
+Thus the rational numbers $b,c$ are roots of the monic polynomial
+\[
+ X^2-(RS-2pa)X+(pa)^2\in\mathbb Z[X].
+\]
+A rational algebraic integer is an integer.  Moreover
+$1/y,1/z<R/(pa)$, so $b,c>0$.  The three possible pairs of $p$-valuations
+are $(0,2),(1,1),(2,0)$.
+For completeness, write the common reduced denominator as
+$y=A/d$, $z=C/d$; it is common because $z=S-y$.  Then
+$RAC=paSd^2$ and $\gcd(AC,d)=1$, so $d^2\mid R$.  If $R=d^2r$, then
+$rAC=paS$; since $\gcd(r,pa)=1$, write $S=rT$.  The equality
+$AC=paT$ and the facts $\gcd(AC,d)=\gcd(pa,d)=1$ give $\gcd(T,d)=1$.
+Consequently $\gcd(R,S)=r$ and
+\[
+ d^2=R/\gcd(R,S).
+\]
+After retaining an E orientation, the first pair has
+$b=a^2/u,c=p^2u$; the middle pair has $b=pa^2/u,c=pu$.
+Their inverses are exactly \eqref{eq:Erational}--\eqref{eq:Mrational}.
+Both middle tail orientations remain separate.
+
+For any positive integer $n$ write
+\[
+ K(n)=\prod_{l^e\parallel n}l^{\lceil e/2\rceil},\qquad
+ B(n)=\prod_{l^e\parallel n}l^{\lfloor e/2\rfloor}.
+\]
+The actual word budget is $u\mid a^2\iff K(u)\mid a$.
+Put $m=4K(u)$. Then
+\begin{equation}\label{eq:budget}
+ p+R\equiv0\pmod m,\qquad \gcd(pR,m)=1.
+\end{equation}
+No absent prime coordinates are adjoined to this budget.
+
+\section{Every same-word residual-divisor return}
+\begin{theorem}[Complete divisor-removal domain]\label{thm:all}
+For a trace source $(p,a,R,u,c)$, the complete set of original same-channel
+returns that keep $p,u$ and replace $R$ by a divisor is indexed by the positive
+integers
+\begin{equation}\label{eq:domain}
+ \boxed{\mathcal K=\{k\in\mathbb Z_{>0}:k\mid R,\ d\mid k,\
+ k\equiv1\pmod m\}.}
+\end{equation}
+The map and the inverse after this source is retained are
+\begin{equation}\label{eq:map}
+ R'=R/k,\qquad a'=(p+R')/4,\qquad u'=u;
+ \qquad k=R/R'.
+\end{equation}
+For a proper source every return has $a'<a$ and hence terminates in one
+strictly decreasing step at an original integral state.
+\end{theorem}
+\begin{proof}
+The full new gate $R/k\mid G_c$ is equivalent prime by prime to $d\mid k$.
+The new integral distinguished denominator and its word budget together are
+$p+R/k\equiv0\pmod m$. Multiplying by $k$ and using \eqref{eq:budget}
+proves that this is equivalent to $k\equiv1\pmod m$.
+This condition includes $k\equiv1\pmod4$, so $R'\equiv3\pmod4$ and $R'\ge3$.
+Also $R'\le R<p$; hence $p/4<a'<p/2$. The condition $K(u)\mid a'$ proves
+$u\mid a'^2$ in the actual integers. If $d>1$ then $k\ge d>1$ and $a'<a$.
+All steps are equivalences, proving completeness.
+\end{proof}
+
+The full channel-labelled output is computed, not inherited unchanged from the
+rational tails.  The label order records which tail recovers $u$; it is not a
+claim that the denominators increase numerically.  Put
+\[
+ g'=\gcd(a',u),\quad h'=g'^2/u,\quad r'=u/g',\quad s'=a'/g'.
+\]
+Prime valuations prove $a'=h'r's'$, $u=h'r'^2$ and $\gcd(r',s')=1$.
+For E, set $\kappa'=(pr'+s')/R'$ and return
+$(a',h's'\kappa',ph'r'\kappa')$. For M, set
+$\lambda'=(r'+s')/R'$ and return $(a',ph's'\lambda',ph'r'\lambda')$.
+The full gates prove the quotient integrality. Their labelled divisor inverses
+are $a'^2/(R'y-pa')$ and $pa'^2/(R'y-pa')$ respectively.
+The centred prime-exponent vectors satisfy
+\[
+ \beta'_l=\beta_l+v_l(a)-v_l(a').
+\]
+A numerical word may survive even though the distinguished denominator's other
+prime factors change. Those old and new prime coordinates remain recorded.
+
+\subsection{Complete inverse fibres and integer coefficient maps}
+Fix a full original target $(p,R',a',u,c)$ satisfying
+$R'=4a'-p$, $3\le R'<p$, $R'\equiv3\pmod4$, $u\mid(a')^2$, and
+$R'\mid G_c$.  Every proper input mapping to it is recovered by the positive
+integers
+\begin{equation}\label{eq:fibre}
+ 1\le k\le\left\lfloor\frac{p-1}{R'}\right\rfloor,
+ \quad k\equiv1\pmod m,\quad R'k\mid G_c^2,
+ \quad R'k\nmid G_c,
+\end{equation}
+with $R=R'k$ and $a=(p+R)/4$. The old word budget follows from $k\equiv1\pmod m$.
+Indeed $p+R'\equiv0\pmod m$ at the target, while
+$p+R'k=(p+R')+R'(k-1)\equiv0\pmod m$.  Thus $a$ is an integer and
+$u\mid a^2$.  The bound and $k\equiv1\pmod4$ give $0<R<p$ and
+$R\equiv3\pmod4$; the last two divisibilities in \eqref{eq:fibre} give the
+trace gate and properness.  Finally $R'\mid G_c$ implies, prime by prime, that
+the deletion denominator $d=R/\gcd(R,G_c)$ divides $k$.  These conditions are
+therefore both necessary and sufficient, including all original exponent
+multiplicities.
+
+For exact fibre typing, let
+\[
+ \mathcal A=\{(s,k):s\text{ is a proper source and }k\in\mathcal K_s\},
+ \qquad \mathcal T_{\rm hit}=F(\mathcal A),
+\]
+where $F(s,k)$ is the target in \eqref{eq:map}.  One source can have several
+arrows and targets; for example $(p,a,R,u,c)=(101,41,63,1,M)$ has
+$k=9$ and $k=21$.  The correctly typed pushforward is
+\[
+ F_*:\mathbb Z^{(\mathcal A)}\longrightarrow
+ \mathbb Z^{(\mathcal T_{\rm hit})},\qquad [\alpha]\longmapsto[F(\alpha)].
+\]
+Choose one arrow $\alpha_t\in F^{-1}(t)$ for every hit target.  Then
+\[
+ \ker F_*=\bigoplus_{t\in\mathcal T_{\rm hit}}
+ \left\langle[\alpha]-[\alpha_t]:
+ \alpha\in F^{-1}(t)\setminus\{\alpha_t\}\right\rangle_{\mathbb Z}.
+\]
+The chosen arrows define a section $s([t])=[\alpha_t]$.  The actual integral
+isomorphism retaining every arrow is
+\[
+ x\longmapsto\bigl(F_*x,\,x-sF_*x\bigr),\qquad
+ \mathbb Z^{(\mathcal A)}\cong
+ \mathbb Z^{(\mathcal T_{\rm hit})}\oplus\ker F_*,
+\]
+with inverse $(y,z)\mapsto s(y)+z$.  After the source and fibre-difference
+coordinates are discarded, no inverse remains.
+
+There is a finite coefficient calculation before any successful word is selected.
+Use the group ring of $G_m=(\mathbb Z/m\mathbb Z)^\times$, with $[g]$ for its
+basis elements.  The integer $d$ and every prime dividing $R/d$ are units
+modulo $m$, because $\gcd(R,m)=1$.  Since $k=dv$ in \eqref{eq:domain},
+the labelled pushforward is
+\[
+ \pi_{R,d}:\mathbb Z^{(\operatorname{Div}(R/d))}\longrightarrow
+ \mathbb Z[G_m],\qquad e_v\longmapsto[v\bmod m].
+\]
+The group-ring image alone does not retain the divisor label $v$; the labelled
+certificate does.  The complete integer count is
+\begin{equation}\label{eq:poly}
+ |\mathcal K|=\operatorname{coeff}_{[d^{-1}]}
+ \prod_{l^e\parallel R/d}
+       \left([1]+[l]+\cdots+[l^e]\right).
+\end{equation}
+Each factor is geometric: its $e+1$ exponent choices occur once each. It is not
+an expansion of $([1]+[l])^e$ which would introduce coloured multiplicities.
+The integer coefficient and the original divisors representing it are retained.
+
+If a target word exists, one exists with
+\begin{equation}\label{eq:length}
+ \Omega(k/d)\le |G_m|-1=\varphi(m)-1.
+\end{equation}
+Choose a shortest original prime-occurrence word for $d^{-1}$. Its successive
+partial products, starting with one, are distinct; a repeated partial product
+would let an identity subword be removed without exceeding any exponent bound.
+This proves \eqref{eq:length}. It bounds an existing word; it does not assert
+that the target coefficient is nonzero.
+
+\section{Square removal and the exact nine-seed guarantee}
+Write
+\[
+ R=\delta t^2,\quad\delta=\prod_{l^e\parallel R}l^{e\bmod2},\qquad
+ q_0=K(d),\qquad T=t/q_0.
+\]
+The squarefree part $\delta$ is not the radical, and it need not be coprime to $t$.
+The fact $d^2\mid R$ proves $q_0\mid t$.
+\begin{proposition}[Every square deletion and its capacity]\label{prop:square}
+For $q\in\mathbb Z_{>0}$, the square members $k=q^2$ of
+\eqref{eq:domain} are precisely
+\begin{equation}\label{eq:square}
+ q\mid t,\qquad q_0\mid q,\qquad q^2\equiv1\pmod m.
+\end{equation}
+Let $H_m=\{x^2:x\in G_m\}$. Their complete count is
+\begin{equation}\label{eq:squarepoly}
+ \operatorname{coeff}_{[q_0^{-2}]}
+ \prod_{l^e\parallel T}
+       \left([1]+[l^2]+\cdots+[l^{2e}]\right)
+       \quad\text{in }\mathbb Z[H_m].
+\end{equation}
+If nonzero, it has a word with $\Omega(q/q_0)\le |H_m|-1$.
+\end{proposition}
+\begin{proof}
+The two divisibilities are exactly $q^2\mid R$ and $d\mid q^2$.
+Write $q=q_0v$, with $v\mid T$, for the coefficient formula. The preceding
+partial-product proof applies to the squared residue of each original prime.
+Equivalently the labelled map is
+$e_v\mapsto[v^2\bmod m]$ from
+$\mathbb Z^{(\operatorname{Div}(T))}$ to $\mathbb Z[H_m]$.
+\end{proof}
+
+For
+\[
+ m=2^\alpha\prod_{i=1}^{r}l_i^{e_i},
+ \qquad \alpha\ge2,
+\]
+where the $l_i$ are distinct odd primes,
+\begin{equation}\label{eq:groupsize}
+ |H_m|=2^{\max(0,\alpha-3)}
+       \prod_{i=1}^{r}\frac{l_i^{e_i-1}(l_i-1)}2.
+\end{equation}
+At an odd prime power,
+$(x-1)(x+1)\equiv0\pmod{l_i^{e_i}}$ has just the two unit solutions $\pm1$.
+At modulus four there are two; at $2^\alpha$, $\alpha\ge3$, there are four,
+since one of $v_2(x-1),v_2(x+1)$ is one and the other must be at least
+$\alpha-1$. CRT and the square-map kernel give \eqref{eq:groupsize}.
+Consequently
+\begin{equation}\label{eq:nine}
+ H_m=\{1\}\iff m\mid24\iff K(u)\mid6\iff
+ \boxed{u\mid36.}
+\end{equation}
+
+\begin{theorem}[Uniform one-step descent for nine exact words]\label{thm:safe}
+For every prime $p\equiv1\pmod4$, every proper E or M trace source with
+\[
+ u\in\{1,2,3,4,6,9,12,18,36\}
+\]
+has an original same-channel integral return at
+\begin{equation}\label{eq:auto}
+ R'=R/K(d)^2,\qquad a'=(p+R')/4,\qquad u'=u,
+ \quad a'<a.
+\end{equation}
+Its complete square-deletion family has exactly
+\begin{equation}\label{eq:mult}
+ \tau(T)=\prod_{l^e\parallel R}
+ \left(\left\lfloor\frac e2\right\rfloor
+       -\left\lceil\frac{v_l(d)}2\right\rceil+1\right)
+\end{equation}
+ distinct original targets.
+\end{theorem}
+\begin{proof}
+All the actual square factors are units modulo $m$. Equation \eqref{eq:nine}
+therefore makes every choice in \eqref{eq:square} available, including $q=q_0$.
+Here $\tau(T)$ is the number of positive divisors of $T$, with
+$v_l(T)=\lfloor v_l(R)/2\rfloor-\lceil v_l(d)/2\rceil$.
+The target count is the number of divisors of $T$. Distinct $q$ give distinct
+$R'$ and hence distinct distinguished denominators. Theorem~\ref{thm:all}
+proves integrality, positivity and strict descent.
+\end{proof}
+This theorem does not assert the existence of a proper trace source at every
+prime. For hard primes its E part is vacuous for these nine words: the factors
+2 and 3 are residues, whereas a relaxed E gate has negative word character.
+The M part is nonvacuous. The theorem's full domain is all $p\equiv1\pmod4$.
+
+\section{The complement is an available word only on its exact gate domain}
+At a fixed original $a$, the involution $u^*=a^2/u$ always preserves the integer
+box. It preserves the relaxed M gate and swaps the rational tails.
+For a relaxed E input it preserves the relaxed gate exactly when
+\begin{equation}\label{eq:comp}
+ K(R)\mid p^2-1.
+\end{equation}
+For M the exact identity
+\[
+ 4uG_M(u^*)-pG_M(u)=R(4a+p)
+\]
+shows that the complement has the same gcd with $R$, because $4u$ and $p$ are
+units modulo $R$.  Thus a proper M source has a proper M complement and the
+two rational tails are exchanged.  For E, $R\mid G_E^2$ means
+$4u\equiv-1\pmod{K(R)}$, and $4u^*+1\equiv1-p^2$ there. This proves both
+directions of \eqref{eq:comp}.
+
+A complement flag followed by an allowed factor $k$ maps
+$a$ to $(p+R/k)/4$ and decreases it exactly when $k>1$.  This strictness is
+automatic for a proper M complement, but not for an E complement.  For example,
+$(p,a,R,u,c)=(37,16,27,2,E)$ is proper, whereas its complement $u^*=128$
+has $G_E(u^*)=513=19\cdot27$, hence $d^*=1$; its modulus is
+$4K(128)=64$, and its only allowed factor is $k=1$.
+The original input is recovered from the flag and old $a$ by applying the same
+involution. A fixed E word $u=a$ is not counted as two new source words.
+
+\section{Composite examples where the square choice and multiplicities matter}
+At the hard prime $p=1009$, take $a=321=3\cdot107$, $R=275$, $u=9$, channel M.
+The rational tails are $215926/5,6054/5$ and have sum $44396$.
+Exhaustion of the nine original divisor words $u\mid321^2$ shows that both full
+channels of that old shell are empty. Here $d=5$, $m=12$ and $k=25$ gives
+\[
+ (a',R',u,h',r',s',\lambda')=(255,11,9,1,3,85,8),
+\]
+\begin{equation}\label{eq:1009}
+ \boxed{\frac4{1009}=\frac1{255}+\frac1{686120}+\frac1{24216}.}
+\end{equation}
+This is a genuine composite distinguished denominator, not the preceding
+prime-shell case.
+
+At $p=1108801$, take
+\[
+ a=279295=5\cdot83\cdot673,\quad R=8379=19\cdot3^2\cdot7^2,
+ \quad u=5,\quad c=M.
+\]
+Its denominator is $d=3$, its budget modulus is 20 and its entire removal set is
+\begin{equation}\label{eq:mixed}
+ \boxed{\mathcal K=\{21,441\}.}
+\end{equation}
+The prime 7 is not needed to remove the missing denominator 3, but its residue
+is needed to preserve the original divisor word. The minimal square factor
+$q_0=3$ fails, whereas $q=3\cdot7$ succeeds. The non-square deletion 21 also
+succeeds. The two target records are
+\[
+\begin{array}{c|rrrrrr}
+ k&a'&R'&h'&r'&s'&\lambda'\\\hline
+ 21&277300&399&5&1&55460&139\\
+ 441&277205&19&5&1&55441&2918.
+\end{array}
+\]
+The integer coefficient in \eqref{eq:poly} is two.  Its labelled representatives
+are $v=7$ and $v=147$, giving $k=21$ and $k=441$.  Thus
+$e_7+e_{147}$ survives in the labelled source while its group-ring image
+$2[7]$ vanishes after reduction modulo two.  There is one retained original
+word $u=5$ and two distinct labelled deletion witnesses and target states.
+
+At $p=51361$, take $a=14845$, $R=8019=11\cdot3^6$, $u=5$, channel M.
+Here $d=27$, $q_0=9$, $t=27$ and $m=20$. The only removal is $k=81$, giving
+\[
+ (a',R',h',r',s',\lambda')=(12865,99,5,1,2573,26),
+\]
+\[
+ \boxed{\frac4{51361}=\frac1{12865}+\frac1{17179740890}+\frac1{6676930}.}
+\]
+The returned residual still contains $3^2$. Removing every square instead
+would give $R'=11$, $a'=12843$, whose square is not divisible by 5.
+Thus maximal square stripping is not a valid substitute for \eqref{eq:square}.
+
+The old composite negative control in \cite{PrimeTrace,Trace} can also be
+repaired by a different, explicit map. At $p=1009,a=286,R=135$, its original
+E word is $u=7436$, with rational tails $6413/3,168238642/3$.
+No same-word removal is available. But $K(R)=45$ divides $p^2-1$, so its
+complement $u^*=11$ is another relaxed E source. At that source the complete
+removal set is $\{45\}$, not a square deletion. It gives
+\[
+ (a',R',u,h',r',s',\kappa')=(253,3,11,11,1,23,344),
+\]
+\[
+ \boxed{\frac4{1009}=\frac1{253}+\frac1{87032}+\frac1{3818056}.}
+\]
+The previously failed map to $R=15,a=256$ remains failed. Its replacement changes
+the original word by the recorded complement and then uses a non-square divisor.
+
+\section{The nine-seed list is maximal, even allowing every residual divisor}
+We first retain the earlier finite cofactor-capacity estimate.
+\begin{lemma}[Capacity obstruction, with original target retained]\label{lem:cap}
+Let $H=4j-1>u>0$. If $u\nmid j^2$ and a divisor $W\mid j^2$ satisfies
+$W\equiv u\pmod H$, then
+\begin{equation}\label{eq:cap}
+ H\le u^2-3u+1.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Write $W=u+nH$ with $n\ge1$, $V=j^2/W$. The exact equality
+$16uV=1+H(H+2-16nV)$ has a positive final factor congruent to one modulo four.
+Write it as $4\ell+1$, $\ell\ge0$. Comparison gives
+\[
+ j=\ell+4nV,\qquad u=(4\ell+1)n+\ell^2/V.
+\]
+If $\ell=0$, then $j=4uV$, contrary to $u\nmid j^2$. Otherwise
+$w=\ell^2/V$ is a positive integer, and $\ell\le(u-2)/4$.
+Consequently
+\[
+ H+1=4\ell+\frac{16\ell^2(u-w)}{(4\ell+1)w}
+ \le4\ell+\frac{16\ell^2(u-1)}{4\ell+1}
+ \le u^2-3u+2.
+\]
+The last function is increasing for $\ell\ge0$; substitution of $(u-2)/4$
+proves the bound. This is the finite-repair argument of \cite{Capacity},
+reproduced with the present original target $u$.
+\end{proof}
+
+\begin{theorem}[Exact universal seed classification]\label{thm:optimal}
+For a fixed positive integer $u$, the following are equivalent:
+\begin{enumerate}
+\item $u\mid36$;
+\item every proper E or M trace source with word $u$, at every prime
+$p\equiv1\pmod4$, admits a same-word residual-divisor return.
+\end{enumerate}
+For every $u\nmid36$ there are infinitely many hard primes with an available
+original M word $u$ and an integral rational first trace, but no such return.
+Its middle complement has no such return either. At these examples a specified
+complete original middle cofactor box is empty, although the prime has explicit
+integer endpoint solutions in both channels.
+\end{theorem}
+\begin{proof}
+The positive implication is Theorem~\ref{thm:safe}. For necessity, put
+$m=4K(u)$. By \eqref{eq:nine} there is a unit $b\bmod m$ with $b^2\ne1$.
+Replace it by its negative if needed to have $b\equiv1\pmod4$.
+Dirichlet's theorem \cite[Theorem 18.1]{Dirichlet} supplies a prime
+\[
+ \delta\equiv-b^2\pmod m,
+ \quad\delta>\max(u,u^2-3u+1,7),
+\]
+and a distinct prime
+\[
+ t\equiv b^{-1}\pmod m,\qquad t>\max(u,7).
+\]
+Then $\delta\equiv3\pmod4$, $t\equiv1\pmod4$, and both primes are coprime
+to $L=\operatorname{lcm}(840,m)$. Put $R=\delta t^2$ and choose a prime
+$e\equiv3\pmod4$ coprime to $LR$.
+The three congruences
+\begin{equation}\label{eq:AP}
+ p\equiv1\pmod L,\qquad
+ p\equiv\delta t-4u\pmod R,\qquad
+ p\equiv-1\pmod e
+\end{equation}
+form one reduced class modulo $LRe$. The middle residue is a unit at both
+$\delta$ and $t$, since $u$ is coprime to them. Another application of Dirichlet
+therefore supplies infinitely many primes in this class with
+$p>\max(R,e,B(u)R)$.
+
+Let $a=(p+R)/4$. Since $R\equiv-b^2b^{-2}=-1\pmod m$, the integer $a$ is
+a multiple of $K(u)$, proving the original budget $u\mid a^2$. Also
+\[
+ \gcd(R,p+4u)=\delta t,\qquad d=t>1.
+\]
+This is a proper rational trace source at a hard prime, with no full M gate.
+The only eligible residual divisors congruent to three modulo four are
+$\delta,\delta t,R$. The last fails its gate. For the first two, respectively,
+\[
+ p+\delta\equiv1-b^2\ne0\pmod m,
+ \qquad p+\delta t\equiv1-b\ne0\pmod m.
+\]
+Their original word budgets fail, so no residual-divisor return exists.
+
+For the middle complement $u^*=a^2/u$, direct valuation comparison gives
+\[
+ K(u^*)=a/B(u),\qquad 4K(u^*)=(p+R)/B(u)>R.
+\]
+The complement remains a proper trace source with the same exact denominator.
+Indeed, modulo $R$,
+\[
+ 4u(p+4u^*)=4up+16a^2\equiv p(p+4u),
+\]
+and both $4u$ and $p$ are units.  Hence
+$\gcd(R,p+4u^*)=\gcd(R,p+4u)=\delta t$ and $d^*=t>1$.
+No divisor $1<k\le R$ can be one modulo $4K(u^*)$, while $k=1$ fails
+$d^*\mid k$. Thus choosing the other original rational-tail orientation does
+not escape this local obstruction.
+
+The old residual's squarefree part is the prime $\delta$. Put
+$j=(\delta+1)/4$. The congruence $\delta+1\not\equiv0\pmod{4K(u)}$ gives
+$u\nmid j^2$. A middle cofactor-$\delta$ word would require
+$W\mid j^2$ and $W\equiv-p/4\equiv u\pmod\delta$.
+The strict size choice of $\delta$ contradicts Lemma~\ref{lem:cap}; thus the
+\emph{entire} cofactor box is empty. This is not a claim that the original
+residual-$\delta$ shell, which is a different source, is empty.
+
+Finally $e\mid p+1$ yields genuine endpoint states. With
+$c=(p+1)/e$ and $j_e=(e+1)/4$, use
+\[
+ E:\ a_E=u_E=(p+e)/4,\quad(h_E,r_E,s_E,\kappa_E)=(a_E,1,1,c),
+\]
+\[
+ M:\ (h_M,r_M,s_M,\lambda_M)=(j_e,1,c,1),\quad
+ a_M=j_ec,\quad R_M=c+1,\quad u_M=j_e.
+\]
+$p\equiv1\pmod4$ and $e\equiv3\pmod4$ give $c\equiv2\pmod4$, so
+$R_M\equiv3\pmod4$; also $R_E=e\equiv3\pmod4$.
+The inequalities $p>e$, $c\ge2$, $e\ge3$ give the original ranges. Their
+channel-labelled identities follow by multiplication.  In particular the M
+tuple $(j_ec,pj_ec,pj_e)$ is not asserted to increase; its increasing
+permutation is $(j_ec,pj_e,pj_ec)$.  These are counterexamples to
+the proposed descent predicate, not to ES.
+\end{proof}
+
+\subsection{A complete hard-prime terminal example}
+For $u=8$ choose
+\[
+ m=16,\quad b=5,\quad\delta=71,\quad t=13,\quad e=11,
+ \quad R=11999,\quad L=1680.
+\]
+The reduced prime progression in \eqref{eq:AP} is
+\[
+ \boxed{p=48116881+221741520n.}
+\]
+Its first term is prime, proved by trial division through $6936$. It has
+\[
+ a=12032220,\quad d=13,\quad u=8,
+\]
+with rational tails
+\[
+ \frac{943403747137533690}{13},\qquad
+ \frac{627251660716}{13}.
+\]
+Their sum is $72569567260707262$. At the proposed residual 71 the new
+distinguished denominator is $12029238$, whose square is $4\bmod8$.
+The original exponent-three requirement at two is lost by exactly one occurrence.
+The complement budget modulus is $24064440>11999$ and has no proper deletion.
+
+The complete cofactor-$71$ box is $\operatorname{Div}(18^2)$; its residues are
+\[
+\begin{array}{c|rrrrrrrr}
+ W&1&2&3&4&6&9&12&18\\\hline
+ W\bmod71&1&2&3&4&6&9&12&18
+\end{array}
+\]
+\[
+\begin{array}{c|rrrrrrr}
+ W&27&36&54&81&108&162&324\\\hline
+ W\bmod71&27&36&54&10&37&20&40.
+\end{array}
+\]
+There is no target residue eight. The separate endpoint middle state has
+$j_e=3,c=4374262$ and denominators $(13122786,p\cdot13122786,3p)$.
+
+\section{What remains and what the finite execution establishes}
+The composite-source return is exact; the nine automatic words are a maximal
+fixed-seed guarantee for this entire residual-divisor method. Beyond them, the
+complete coefficient test \eqref{eq:poly}, its square subfamily, and the trace
+complement are useful but not universally occupied. The infinite obstruction
+retains an actual original word budget and both middle orientations. Enlarging
+the search over the same residual divisors cannot repair those sources.
+A new universal arrow must change the word beyond that complement, supply a
+non-divisor residual through a proved arithmetic construction, or force an
+original coefficient in the complete source. None is assumed here.
+
+The main verifier enumerates every original square-divisor word at all primes
+$p\equiv1\pmod4$ through 3000. It checks all proper trace sources, every return
+and inverse fibre, actual multiplicities, the unit-square classification through
+$u=200$, and the explicit reduced progressions for the 91 nonautomatic seeds
+through 100. The latter progression records are not 91 asserted prime values.
+The separate implementation imports neither the main program nor predecessor
+code: it generates primitive $(h,r,s)$ sources and tests every target residual
+divisor directly using rational denominators. It independently reproduces the
+complete original source lists and all output records. The command receipts
+state the observed outcomes; no independent mathematical review or Lean build
+is claimed. No finite scan is used as an all-prime occupancy proof.

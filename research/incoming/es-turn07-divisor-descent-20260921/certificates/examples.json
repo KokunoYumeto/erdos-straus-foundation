@@ -1,0 +1,994 @@
+{
+  "automatic_composite": {
+    "R": 275,
+    "a": 321,
+    "budget_modulus": 12,
+    "channel": "M",
+    "coefficient_table": [
+      [
+        1,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        11,
+        1
+      ]
+    ],
+    "complement": 11449,
+    "complement_is_trace": true,
+    "denominator": 5,
+    "minimum_square_factor": 5,
+    "original_R_factors": [
+      [
+        5,
+        2
+      ],
+      [
+        11,
+        1
+      ]
+    ],
+    "original_a_factors": [
+      [
+        3,
+        1
+      ],
+      [
+        107,
+        1
+      ]
+    ],
+    "p": 1009,
+    "rational_denominators": [
+      [
+        321,
+        1
+      ],
+      [
+        215926,
+        5
+      ],
+      [
+        6054,
+        5
+      ]
+    ],
+    "removals": [
+      25
+    ],
+    "square_coefficient_table": [
+      [
+        1,
+        1
+      ]
+    ],
+    "square_removals": [
+      25
+    ],
+    "square_root_part": 5,
+    "tail_trace": [
+      44396,
+      1
+    ],
+    "targets": [
+      {
+        "removal": 25,
+        "target": {
+          "R": 11,
+          "a": 255,
+          "channel": "M",
+          "denominators": [
+            255,
+            686120,
+            24216
+          ],
+          "h": 1,
+          "lambda": 8,
+          "p": 1009,
+          "r": 3,
+          "s": 85,
+          "u": 9
+        }
+      }
+    ],
+    "u": 9,
+    "word_factors": [
+      [
+        3,
+        2
+      ]
+    ]
+  },
+  "complement_boundary": {
+    "R": 27,
+    "a": 14,
+    "budget_modulus": 8,
+    "channel": "E",
+    "coefficient_table": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "complement": 98,
+    "complement_is_trace": false,
+    "denominator": 3,
+    "minimum_square_factor": 3,
+    "original_R_factors": [
+      [
+        3,
+        3
+      ]
+    ],
+    "original_a_factors": [
+      [
+        2,
+        1
+      ],
+      [
+        7,
+        1
+      ]
+    ],
+    "p": 29,
+    "rational_denominators": [
+      [
+        14,
+        1
+      ],
+      [
+        56,
+        3
+      ],
+      [
+        232,
+        3
+      ]
+    ],
+    "removals": [
+      9
+    ],
+    "square_coefficient_table": [
+      [
+        1,
+        1
+      ]
+    ],
+    "square_removals": [
+      9
+    ],
+    "square_root_part": 3,
+    "tail_trace": [
+      96,
+      1
+    ],
+    "targets": [
+      {
+        "removal": 9,
+        "target": {
+          "R": 3,
+          "a": 8,
+          "channel": "E",
+          "denominators": [
+            8,
+            88,
+            638
+          ],
+          "h": 2,
+          "kappa": 11,
+          "p": 29,
+          "r": 1,
+          "s": 4,
+          "u": 2
+        }
+      }
+    ],
+    "u": 2,
+    "word_factors": [
+      [
+        2,
+        1
+      ]
+    ]
+  },
+  "endpoint": {
+    "E": {
+      "R": 11,
+      "a": 12029223,
+      "channel": "E",
+      "denominators": [
+        12029223,
+        52618973058426,
+        2531860864994489889306
+      ],
+      "h": 12029223,
+      "kappa": 4374262,
+      "p": 48116881,
+      "r": 1,
+      "s": 1,
+      "u": 12029223
+    },
+    "M": {
+      "R": 4374263,
+      "a": 13122786,
+      "channel": "M",
+      "denominators": [
+        13122786,
+        631427532350466,
+        144350643
+      ],
+      "h": 3,
+      "lambda": 1,
+      "p": 48116881,
+      "r": 1,
+      "s": 4374262,
+      "u": 3
+    }
+  },
+  "mixed_square_factors": {
+    "R": 8379,
+    "a": 279295,
+    "budget_modulus": 20,
+    "channel": "M",
+    "coefficient_table": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        19,
+        2
+      ]
+    ],
+    "complement": 15601139405,
+    "complement_is_trace": true,
+    "denominator": 3,
+    "minimum_square_factor": 3,
+    "original_R_factors": [
+      [
+        3,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        19,
+        1
+      ]
+    ],
+    "original_a_factors": [
+      [
+        5,
+        1
+      ],
+      [
+        83,
+        1
+      ],
+      [
+        673,
+        1
+      ]
+    ],
+    "p": 1108801,
+    "rational_denominators": [
+      [
+        279295,
+        1
+      ],
+      [
+        6193651505900,
+        3
+      ],
+      [
+        110880100,
+        3
+      ]
+    ],
+    "removals": [
+      21,
+      441
+    ],
+    "square_coefficient_table": [
+      [
+        1,
+        1
+      ],
+      [
+        9,
+        1
+      ]
+    ],
+    "square_removals": [
+      441
+    ],
+    "square_root_part": 21,
+    "tail_trace": [
+      2064587462000,
+      1
+    ],
+    "targets": [
+      {
+        "removal": 21,
+        "target": {
+          "R": 399,
+          "a": 277300,
+          "channel": "M",
+          "denominators": [
+            277300,
+            42738401904700,
+            770616695
+          ],
+          "h": 5,
+          "lambda": 139,
+          "p": 1108801,
+          "r": 1,
+          "s": 55460,
+          "u": 5
+        }
+      },
+      {
+        "removal": 441,
+        "target": {
+          "R": 19,
+          "a": 277205,
+          "channel": "M",
+          "denominators": [
+            277205,
+            896891598756190,
+            16177406590
+          ],
+          "h": 5,
+          "lambda": 2918,
+          "p": 1108801,
+          "r": 1,
+          "s": 55441,
+          "u": 5
+        }
+      }
+    ],
+    "u": 5,
+    "word_factors": [
+      [
+        5,
+        1
+      ]
+    ]
+  },
+  "nonsquare_after_complement": {
+    "R": 135,
+    "a": 286,
+    "budget_modulus": 44,
+    "channel": "E",
+    "coefficient_table": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        15,
+        1
+      ]
+    ],
+    "complement": 7436,
+    "complement_is_trace": true,
+    "denominator": 3,
+    "minimum_square_factor": 3,
+    "original_R_factors": [
+      [
+        3,
+        3
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "original_a_factors": [
+      [
+        2,
+        1
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        13,
+        1
+      ]
+    ],
+    "p": 1009,
+    "rational_denominators": [
+      [
+        286,
+        1
+      ],
+      [
+        6578,
+        3
+      ],
+      [
+        255277,
+        3
+      ]
+    ],
+    "removals": [
+      45
+    ],
+    "square_coefficient_table": [
+      [
+        1,
+        1
+      ]
+    ],
+    "square_removals": [],
+    "square_root_part": 3,
+    "tail_trace": [
+      87285,
+      1
+    ],
+    "targets": [
+      {
+        "removal": 45,
+        "target": {
+          "R": 3,
+          "a": 253,
+          "channel": "E",
+          "denominators": [
+            253,
+            87032,
+            3818056
+          ],
+          "h": 11,
+          "kappa": 344,
+          "p": 1009,
+          "r": 1,
+          "s": 23,
+          "u": 11
+        }
+      }
+    ],
+    "u": 11,
+    "word_factors": [
+      [
+        11,
+        1
+      ]
+    ]
+  },
+  "partial_square_only": {
+    "R": 8019,
+    "a": 14845,
+    "budget_modulus": 20,
+    "channel": "M",
+    "coefficient_table": [
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        19,
+        1
+      ]
+    ],
+    "complement": 44074805,
+    "complement_is_trace": true,
+    "denominator": 27,
+    "minimum_square_factor": 9,
+    "original_R_factors": [
+      [
+        3,
+        6
+      ],
+      [
+        11,
+        1
+      ]
+    ],
+    "original_a_factors": [
+      [
+        5,
+        1
+      ],
+      [
+        2969,
+        1
+      ]
+    ],
+    "p": 51361,
+    "rational_denominators": [
+      [
+        14845,
+        1
+      ],
+      [
+        7624540450,
+        27
+      ],
+      [
+        2568050,
+        27
+      ]
+    ],
+    "removals": [
+      81
+    ],
+    "square_coefficient_table": [
+      [
+        1,
+        1
+      ],
+      [
+        9,
+        1
+      ]
+    ],
+    "square_removals": [
+      81
+    ],
+    "square_root_part": 27,
+    "tail_trace": [
+      282485500,
+      1
+    ],
+    "targets": [
+      {
+        "removal": 81,
+        "target": {
+          "R": 99,
+          "a": 12865,
+          "channel": "M",
+          "denominators": [
+            12865,
+            17179740890,
+            6676930
+          ],
+          "h": 5,
+          "lambda": 26,
+          "p": 51361,
+          "r": 1,
+          "s": 2573,
+          "u": 5
+        }
+      }
+    ],
+    "u": 5,
+    "word_factors": [
+      [
+        5,
+        1
+      ]
+    ]
+  },
+  "previous_failed_word": {
+    "R": 135,
+    "a": 286,
+    "budget_modulus": 1144,
+    "channel": "E",
+    "coefficient_table": [
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        45,
+        1
+      ]
+    ],
+    "complement": 11,
+    "complement_is_trace": true,
+    "denominator": 3,
+    "minimum_square_factor": 3,
+    "original_R_factors": [
+      [
+        3,
+        3
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "original_a_factors": [
+      [
+        2,
+        1
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        13,
+        1
+      ]
+    ],
+    "p": 1009,
+    "rational_denominators": [
+      [
+        286,
+        1
+      ],
+      [
+        6413,
+        3
+      ],
+      [
+        168238642,
+        3
+      ]
+    ],
+    "removals": [],
+    "square_coefficient_table": [
+      [
+        1,
+        1
+      ]
+    ],
+    "square_removals": [],
+    "square_root_part": 3,
+    "tail_trace": [
+      56081685,
+      1
+    ],
+    "targets": [],
+    "u": 7436,
+    "word_factors": [
+      [
+        2,
+        2
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        13,
+        2
+      ]
+    ]
+  },
+  "sharp_failure": {
+    "R": 11999,
+    "a": 12032220,
+    "budget_modulus": 16,
+    "channel": "M",
+    "coefficient_table": [
+      [
+        1,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        13,
+        1
+      ]
+    ],
+    "cofactor_table": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        18,
+        18
+      ],
+      [
+        27,
+        27
+      ],
+      [
+        36,
+        36
+      ],
+      [
+        54,
+        54
+      ],
+      [
+        81,
+        10
+      ],
+      [
+        108,
+        37
+      ],
+      [
+        162,
+        20
+      ],
+      [
+        324,
+        40
+      ]
+    ],
+    "complement": 18096789766050,
+    "complement_budget_modulus": 24064440,
+    "complement_is_trace": true,
+    "denominator": 13,
+    "minimum_square_factor": 13,
+    "original_R_factors": [
+      [
+        13,
+        2
+      ],
+      [
+        71,
+        1
+      ]
+    ],
+    "original_a_factors": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        23,
+        1
+      ],
+      [
+        8719,
+        1
+      ]
+    ],
+    "p": 48116881,
+    "prime_trial_bound": 6936,
+    "rational_denominators": [
+      [
+        12032220,
+        1
+      ],
+      [
+        943403747137533690,
+        13
+      ],
+      [
+        627251660716,
+        13
+      ]
+    ],
+    "removals": [],
+    "square_coefficient_table": [
+      [
+        1,
+        1
+      ]
+    ],
+    "square_removals": [],
+    "square_root_part": 13,
+    "tail_trace": [
+      72569567260707262,
+      1
+    ],
+    "targets": [],
+    "u": 8,
+    "word_factors": [
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  "small_exterior": {
+    "R": 27,
+    "a": 16,
+    "budget_modulus": 8,
+    "channel": "E",
+    "coefficient_table": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "complement": 128,
+    "complement_is_trace": true,
+    "denominator": 3,
+    "minimum_square_factor": 3,
+    "original_R_factors": [
+      [
+        3,
+        3
+      ]
+    ],
+    "original_a_factors": [
+      [
+        2,
+        4
+      ]
+    ],
+    "p": 37,
+    "rational_denominators": [
+      [
+        16,
+        1
+      ],
+      [
+        80,
+        3
+      ],
+      [
+        370,
+        3
+      ]
+    ],
+    "removals": [
+      9
+    ],
+    "square_coefficient_table": [
+      [
+        1,
+        1
+      ]
+    ],
+    "square_removals": [
+      9
+    ],
+    "square_root_part": 3,
+    "tail_trace": [
+      150,
+      1
+    ],
+    "targets": [
+      {
+        "removal": 9,
+        "target": {
+          "R": 3,
+          "a": 10,
+          "channel": "E",
+          "denominators": [
+            10,
+            140,
+            1036
+          ],
+          "h": 2,
+          "kappa": 14,
+          "p": 37,
+          "r": 1,
+          "s": 5,
+          "u": 2
+        }
+      }
+    ],
+    "u": 2,
+    "word_factors": [
+      [
+        2,
+        1
+      ]
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-21",
+  "predecessor_files": [
+    {
+      "source": "/mnt/data/es_turn7_prime_shell_trace_descent_20260921/proof.md",
+      "preserved": "antecedent/prime_shell_trace.md",
+      "bytes": 5538,
+      "sha256": "156b93e231f8ad9c90a3ca0f7a087502b33f8f2aba64762e8d324c1d79831065"
+    },
+    {
+      "source": "/mnt/data/es_turn7_trace_rigidity_20260920/core.tex",
+      "preserved": "antecedent/trace_rigidity_core.tex",
+      "bytes": 25061,
+      "sha256": "38e3a16170b6b1b92f1453ebbf22d499a3150f42c424f5fdced7ccef3a66b250"
+    },
+    {
+      "source": "/mnt/data/es_turn7_capacity_completion_20260920/core.tex",
+      "preserved": "antecedent/capacity_core.tex",
+      "bytes": 22241,
+      "sha256": "3bce8fcf88497a84c915b23c08ec057ef2f3323bdfd459c417709fbed9fe465b"
+    }
+  ],
+  "primary_antecedents": [
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "source": "https://arxiv.org/pdf/1107.1010",
+      "source_tex": "C:/Users/Floris/Documents/arxiv_latex/library/other/Counting the number of solutions to the Erdos-Straus equation on unit fractions/egyptian-count18.tex",
+      "source_tex_bytes": 146643,
+      "source_tex_sha256": "b0469a67a737b7f4e77778310c87e22f5783ae9704f70aa55919a4a40104611c",
+      "locator": "Author TeX lines 487-625: Sigma^I_n and Sigma^II_n coordinates, maps pi^I_n and pi^II_n, and the Type I/II description propositions; journal numbering Proposition 2.2 on PDF page 12 and Proposition 2.6 on PDF page 14",
+      "use": "Inherited Type-I/II coordinates; current formulas rederived."
+    },
+    {
+      "author": "Sutherland, A. V.",
+      "year": 2017,
+      "title": "18.785 Lecture 18: Dirichlet L-functions, primes in arithmetic progressions",
+      "source": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "locator": "Theorem 18.1 on PDF page 1",
+      "use": "Primes only in explicitly reduced arithmetic progressions."
+    }
+  ],
+  "content_searches": [
+    "Erdos Straus rational denominators integer sum two fractions square divisor",
+    "Erdos Straus prime power first denominator two unit fractions sum trace",
+    "\"Erdos Straus\" \"square removal\"",
+    "\"Erd\u0151s\" \"Straus\" \"divisors of 36\""
+  ],
+  "priority": "No exhaustive historical-priority determination or novelty claim. The unit-square group classification is elementary and proved in the text.",
+  "repository_metadata_observed": {
+    "repository": "KokunoYumeto/erdos-straus-foundation",
+    "revision": "49976b17491ba927df8bc7f2c2f81d39dfb15ce8",
+    "message": "research(es): integrate general-family source geometry",
+    "scope": "Metadata only, not a review of all newly integrated sources."
+  },
+  "nonclaims": [
+    "Universal ES or Type-II occupancy",
+    "Existence of a proper trace source at every prime",
+    "A universally witness-producing Turn8 procedure",
+    "All-prime occupancy from finite scan",
+    "An all-shell counterexample from the terminal local source",
+    "Lean build",
+    "Historical priority"
+  ]
+}

@@ -1,0 +1,44 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,microtype,graphicx}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\title{Original-divisor descent from rational Erd\H{o}s--Straus trace sources}
+\author{The Clankers}
+\date{21 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We determine every same-word return obtained by replacing an original residual
+by a divisor, starting from rational positive ES tails with integral first trace.
+The word budget survives exactly at a specified residue class modulo
+$4\prod_l l^{\lceil v_l(u)/2\rceil}$. A one-step integral return is guaranteed
+for every such source precisely for the nine words dividing 36. Outside this
+list we construct infinitely many hard-prime sources on which the entire
+residual-divisor system, including the middle complement, fails. All source
+multiplicities and denominator inverses are retained. This is a source-descent
+and obstruction theorem, not a proof that every prime supplies an initial ES
+state or a suitable rational trace source.
+\end{abstract}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/divisor_descent_map.pdf}
+\caption{The exact source--target map of Theorem~\ref{thm:all}, its
+fixed-source inverse, the full global fibre, and the mixed-factor fixture of
+equation~\eqref{eq:mixed}.  The script recomputes every displayed integer
+before rendering.}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/nine_word_boundary.pdf}
+\caption{The square-image mechanism behind Theorems~\ref{thm:safe} and
+\ref{thm:optimal}.  The right panel is the complete $u=8$ terminal fixture;
+it obstructs this descent method while retaining an explicit ES endpoint.}
+\end{figure}
+\input{core.tex}
+\input{references.tex}
+\end{document}

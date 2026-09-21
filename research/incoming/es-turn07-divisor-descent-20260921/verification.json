@@ -1,0 +1,261 @@
+{
+  "Lean_build": false,
+  "commands": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--seed-bound",
+        "100",
+        "--out",
+        "/mnt/data/es_divisor_release_run/normal"
+      ],
+      "elapsed_seconds": 2.671946569999818,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"bound\": 3000,\n  \"checks\": 155532,\n  \"counts\": {\n    \"automatic_seed_sources\": 711,\n    \"distinct_returned_states\": 1457,\n    \"distinct_target_fibres\": 1457,\n    \"integral_E\": 5700,\n    \"integral_M\": 5268,\n    \"original_divisor_vectors\": 1877004,\n    \"primes\": 211,\n    \"proper_E\": 2682,\n    \"proper_M\": 2592,\n    \"repairable_E\": 751,\n    \"repairable_M\": 724,\n    \"returned_records\": 1864,\n    \"shells\": 73798,\n    \"square_repairable_E\": 202,\n    \"square_repairable_M\": 673\n  },\n  \"mathematical_sha256\": {\n    \"abstract.json\": \"d465e027df7e24549212b8017941faba8ec4916b82c33021cce2e74c04352427\",\n    \"examples.json\": \"5e8b1209431148395cd999ea800884d41a4e6e43bd32eb10e41199858597ba99\",\n    \"progressions.json\": \"25c2cd34eaf6cdaa68d1d5241593205879e189a9dac822213159173574f2cd54\",\n    \"scan.json\": \"312d7df6e7805c112b53f9f86b636fe1e3a4e4dbff4bdc6fdcadb6a3e5f9f9fe\",\n    \"sources.json\": \"fd316854a7e7f561bb29046453dd67168bc89840833171d059628d8bcbf8606c\"\n  },\n  \"rejected_false_implications\": [\n    \"Removing only a denominator always preserves the word\",\n    \"A minimal square factor always suffices\",\n    \"Removing every square always suffices\",\n    \"Every valid deletion is a square\",\n    \"Every E trace complement stays in the domain\",\n    \"The previous failed divisor can be silently kept\",\n    \"All seeds are automatic\",\n    \"A nonempty rational trace ensures cofactor71 occupancy\",\n    \"The terminal source disproves ES\"\n  ],\n  \"success\": true,\n  \"universal_ES_proved\": false,\n  \"universal_trace_source_occupancy_proved\": false\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--seed-bound",
+        "100",
+        "--out",
+        "/mnt/data/es_divisor_release_run/optimized"
+      ],
+      "elapsed_seconds": 2.431195210999931,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"bound\": 3000,\n  \"checks\": 155532,\n  \"counts\": {\n    \"automatic_seed_sources\": 711,\n    \"distinct_returned_states\": 1457,\n    \"distinct_target_fibres\": 1457,\n    \"integral_E\": 5700,\n    \"integral_M\": 5268,\n    \"original_divisor_vectors\": 1877004,\n    \"primes\": 211,\n    \"proper_E\": 2682,\n    \"proper_M\": 2592,\n    \"repairable_E\": 751,\n    \"repairable_M\": 724,\n    \"returned_records\": 1864,\n    \"shells\": 73798,\n    \"square_repairable_E\": 202,\n    \"square_repairable_M\": 673\n  },\n  \"mathematical_sha256\": {\n    \"abstract.json\": \"d465e027df7e24549212b8017941faba8ec4916b82c33021cce2e74c04352427\",\n    \"examples.json\": \"5e8b1209431148395cd999ea800884d41a4e6e43bd32eb10e41199858597ba99\",\n    \"progressions.json\": \"25c2cd34eaf6cdaa68d1d5241593205879e189a9dac822213159173574f2cd54\",\n    \"scan.json\": \"312d7df6e7805c112b53f9f86b636fe1e3a4e4dbff4bdc6fdcadb6a3e5f9f9fe\",\n    \"sources.json\": \"fd316854a7e7f561bb29046453dd67168bc89840833171d059628d8bcbf8606c\"\n  },\n  \"rejected_false_implications\": [\n    \"Removing only a denominator always preserves the word\",\n    \"A minimal square factor always suffices\",\n    \"Removing every square always suffices\",\n    \"Every valid deletion is a square\",\n    \"Every E trace complement stays in the domain\",\n    \"The previous failed divisor can be silently kept\",\n    \"All seeds are automatic\",\n    \"A nonempty rational trace ensures cofactor71 occupancy\",\n    \"The terminal source disproves ES\"\n  ],\n  \"success\": true,\n  \"universal_ES_proved\": false,\n  \"universal_trace_source_occupancy_proved\": false\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "check_independent.py",
+        "--input",
+        "/mnt/data/es_divisor_release_run/normal",
+        "--out",
+        "/mnt/data/es_divisor_release_run/normal/independent.json"
+      ],
+      "elapsed_seconds": 2.4056803230000696,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"checks\": 68097,\n  \"examples\": {\n    \"displayed_sources\": 8,\n    \"prime_trial_bound\": 6936\n  },\n  \"imports_predecessor_or_main\": false,\n  \"models\": {\n    \"prime_progressions\": 91,\n    \"unit_models\": 200\n  },\n  \"scan\": {\n    \"bound\": 3000,\n    \"counts\": {\n      \"automatic_seed_sources\": 711,\n      \"distinct_returned_states\": 1457,\n      \"distinct_target_fibres\": 1457,\n      \"integral_E\": 5700,\n      \"integral_M\": 5268,\n      \"original_divisor_vectors\": 1877004,\n      \"primes\": 211,\n      \"proper_E\": 2682,\n      \"proper_M\": 2592,\n      \"repairable_E\": 751,\n      \"repairable_M\": 724,\n      \"returned_records\": 1864,\n      \"shells\": 73798,\n      \"square_repairable_E\": 202,\n      \"square_repairable_M\": 673\n    },\n    \"signature_sha256\": \"f3439118c02d96c79998631b9b3c399efd01fb063c55744448ff495bf55ac03f\"\n  },\n  \"success\": true,\n  \"universal_ES_proved\": false\n}\nelapsed_seconds 1.5500055929999235\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "workbench.tex"
+      ],
+      "elapsed_seconds": 0.6049685790001149,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex)\n restricted \\write18 enabled.\nentering extended mode\n(./workbench.tex\nLaTeX2e <2024-11-01> patch level 2\nL3 programming layer <2025-01-18>\n(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls\nDocument Class: article 2024/06/29 v1.4n Standard LaTeX document class\n(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))\n(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)\n(/usr/share/texmf/tex/latex/lm/lmodern.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty\n(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))\n(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty\n(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty\n(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty\n(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty\n(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty\n(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))\n(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty\n(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty\n(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))\n(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)\n(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)\n(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty\n(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def\n(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty\n(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))\n(/usr/share/texmf/tex/latex/lm/t1lmr.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)\n(./workbench.aux)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def\n(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n))) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty\n(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)))\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(./workbench.out) (./workbench.out) (/usr/share/texmf/tex/latex/lm/ot1lmr.fd)\n(/usr/share/texmf/tex/latex/lm/omllmm.fd)\n(/usr/share/texmf/tex/latex/lm/omslmsy.fd)\n(/usr/share/texmf/tex/latex/lm/omxlmex.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg) (./core.tex\n[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/en\nc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share\n/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm\n-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]\n[2]\n[3]\n[4]\n[5]\n[6]\n[7]) (./references.tex (/usr/share/texmf/tex/latex/lm/t1lmtt.fd))\n[8] (./workbench.aux) )</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr\n/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/pub\nlic/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/shar\ne/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm\n/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/\nfonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.p\nfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/ty\npe1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/\nshare/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public\n/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t\nexmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lm\nsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/\ntexmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>\nOutput written on workbench.pdf (8 pages, 329008 bytes).\nTranscript written on workbench.log.\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "workbench.tex"
+      ],
+      "elapsed_seconds": 0.6128619219998654,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex)\n restricted \\write18 enabled.\nentering extended mode\n(./workbench.tex\nLaTeX2e <2024-11-01> patch level 2\nL3 programming layer <2025-01-18>\n(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls\nDocument Class: article 2024/06/29 v1.4n Standard LaTeX document class\n(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))\n(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)\n(/usr/share/texmf/tex/latex/lm/lmodern.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty\n(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))\n(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty\n(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty\n(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty\n(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty\n(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty\n(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))\n(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty\n(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty\n(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))\n(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)\n(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)\n(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty\n(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def\n(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty\n(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))\n(/usr/share/texmf/tex/latex/lm/t1lmr.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)\n(./workbench.aux)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def\n(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n))) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty\n(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)))\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(./workbench.out) (./workbench.out) (/usr/share/texmf/tex/latex/lm/ot1lmr.fd)\n(/usr/share/texmf/tex/latex/lm/omllmm.fd)\n(/usr/share/texmf/tex/latex/lm/omslmsy.fd)\n(/usr/share/texmf/tex/latex/lm/omxlmex.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg) (./core.tex\n[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/en\nc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share\n/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm\n-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]\n[2]\n[3]\n[4]\n[5]\n[6]\n[7]) (./references.tex (/usr/share/texmf/tex/latex/lm/t1lmtt.fd))\n[8] (./workbench.aux) )</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr\n/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/pub\nlic/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/shar\ne/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm\n/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/\nfonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.p\nfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/ty\npe1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/\nshare/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public\n/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t\nexmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lm\nsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/\ntexmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>\nOutput written on workbench.pdf (8 pages, 329008 bytes).\nTranscript written on workbench.log.\n"
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-r",
+        "110",
+        "-png",
+        "workbench.pdf",
+        "/mnt/data/es_divisor_release_run/rendered/workbench/page"
+      ],
+      "elapsed_seconds": 1.9936680660000548,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "preprint.tex"
+      ],
+      "elapsed_seconds": 0.5272933930000363,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex)\n restricted \\write18 enabled.\nentering extended mode\n(./preprint.tex\nLaTeX2e <2024-11-01> patch level 2\nL3 programming layer <2025-01-18>\n(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls\nDocument Class: article 2024/06/29 v1.4n Standard LaTeX document class\n(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))\n(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)\n(/usr/share/texmf/tex/latex/lm/lmodern.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty\n(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))\n(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty\n(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty\n(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty\n(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty\n(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty\n(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))\n(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty\n(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty\n(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))\n(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)\n(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)\n(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty\n(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def\n(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty\n(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))\n(/usr/share/texmf/tex/latex/lm/t1lmr.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)\n(./preprint.aux) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def\n(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n))) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty\n(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)))\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(./preprint.out) (./preprint.out) (/usr/share/texmf/tex/latex/lm/ot1lmr.fd)\n(/usr/share/texmf/tex/latex/lm/omllmm.fd)\n(/usr/share/texmf/tex/latex/lm/omslmsy.fd)\n(/usr/share/texmf/tex/latex/lm/omxlmex.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)\n[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/en\nc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s\nhare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l\nm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]\n[2] (./preprint.aux) )</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/\nshare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publ\nic/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share\n/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/\nlmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/f\nonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pf\nb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/ty\npe1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo\nnts/symbols/msbm10.pfb>\nOutput written on preprint.pdf (2 pages, 186735 bytes).\nTranscript written on preprint.log.\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "preprint.tex"
+      ],
+      "elapsed_seconds": 0.5090557070000159,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex)\n restricted \\write18 enabled.\nentering extended mode\n(./preprint.tex\nLaTeX2e <2024-11-01> patch level 2\nL3 programming layer <2025-01-18>\n(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls\nDocument Class: article 2024/06/29 v1.4n Standard LaTeX document class\n(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))\n(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)\n(/usr/share/texmf/tex/latex/lm/lmodern.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty\n(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))\n(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty\n(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty\n(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty\n(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty\n(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty\n(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))\n(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty\n(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty\n(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))\n(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)\n(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)\n(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)\n(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty\n(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def\n(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty\n(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))\n(/usr/share/texmf/tex/latex/lm/t1lmr.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)\n(./preprint.aux) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty\n(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)\n(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def\n(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n))) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty\n(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)))\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(./preprint.out) (./preprint.out) (/usr/share/texmf/tex/latex/lm/ot1lmr.fd)\n(/usr/share/texmf/tex/latex/lm/omllmm.fd)\n(/usr/share/texmf/tex/latex/lm/omslmsy.fd)\n(/usr/share/texmf/tex/latex/lm/omxlmex.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)\n[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/en\nc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s\nhare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l\nm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]\n[2] (./preprint.aux) )</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/\nshare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publ\nic/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share\n/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/\nlmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/f\nonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pf\nb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/ty\npe1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo\nnts/symbols/msbm10.pfb>\nOutput written on preprint.pdf (2 pages, 186735 bytes).\nTranscript written on preprint.log.\n"
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-r",
+        "110",
+        "-png",
+        "preprint.pdf",
+        "/mnt/data/es_divisor_release_run/rendered/preprint/page"
+      ],
+      "elapsed_seconds": 0.6357216849999077,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "independent": {
+    "checks": 68097,
+    "examples": {
+      "displayed_sources": 8,
+      "prime_trial_bound": 6936
+    },
+    "imports_predecessor_or_main": false,
+    "models": {
+      "prime_progressions": 91,
+      "unit_models": 200
+    },
+    "scan": {
+      "bound": 3000,
+      "counts": {
+        "automatic_seed_sources": 711,
+        "distinct_returned_states": 1457,
+        "distinct_target_fibres": 1457,
+        "integral_E": 5700,
+        "integral_M": 5268,
+        "original_divisor_vectors": 1877004,
+        "primes": 211,
+        "proper_E": 2682,
+        "proper_M": 2592,
+        "repairable_E": 751,
+        "repairable_M": 724,
+        "returned_records": 1864,
+        "shells": 73798,
+        "square_repairable_E": 202,
+        "square_repairable_M": 673
+      },
+      "signature_sha256": "f3439118c02d96c79998631b9b3c399efd01fb063c55744448ff495bf55ac03f"
+    },
+    "success": true,
+    "universal_ES_proved": false
+  },
+  "independent_mathematical_review": false,
+  "inspected_page_pixels_reproduced": {
+    "preprint": [
+      "page-1.png",
+      "page-2.png"
+    ],
+    "workbench": [
+      "page-1.png",
+      "page-2.png",
+      "page-3.png",
+      "page-4.png",
+      "page-5.png",
+      "page-6.png",
+      "page-7.png",
+      "page-8.png"
+    ]
+  },
+  "main": {
+    "bound": 3000,
+    "checks": 155532,
+    "counts": {
+      "automatic_seed_sources": 711,
+      "distinct_returned_states": 1457,
+      "distinct_target_fibres": 1457,
+      "integral_E": 5700,
+      "integral_M": 5268,
+      "original_divisor_vectors": 1877004,
+      "primes": 211,
+      "proper_E": 2682,
+      "proper_M": 2592,
+      "repairable_E": 751,
+      "repairable_M": 724,
+      "returned_records": 1864,
+      "shells": 73798,
+      "square_repairable_E": 202,
+      "square_repairable_M": 673
+    },
+    "mathematical_sha256": {
+      "abstract.json": "d465e027df7e24549212b8017941faba8ec4916b82c33021cce2e74c04352427",
+      "examples.json": "5e8b1209431148395cd999ea800884d41a4e6e43bd32eb10e41199858597ba99",
+      "progressions.json": "25c2cd34eaf6cdaa68d1d5241593205879e189a9dac822213159173574f2cd54",
+      "scan.json": "312d7df6e7805c112b53f9f86b636fe1e3a4e4dbff4bdc6fdcadb6a3e5f9f9fe",
+      "sources.json": "fd316854a7e7f561bb29046453dd67168bc89840833171d059628d8bcbf8606c"
+    },
+    "rejected_false_implications": [
+      "Removing only a denominator always preserves the word",
+      "A minimal square factor always suffices",
+      "Removing every square always suffices",
+      "Every valid deletion is a square",
+      "Every E trace complement stays in the domain",
+      "The previous failed divisor can be silently kept",
+      "All seeds are automatic",
+      "A nonempty rational trace ensures cofactor71 occupancy",
+      "The terminal source disproves ES"
+    ],
+    "success": true,
+    "universal_ES_proved": false,
+    "universal_trace_source_occupancy_proved": false
+  },
+  "normal_optimized_identical": {
+    "abstract.json": true,
+    "examples.json": true,
+    "progressions.json": true,
+    "scan.json": true,
+    "sources.json": true,
+    "summary.json": true
+  },
+  "pdf": {
+    "preprint": {
+      "PNG_sha256": {
+        "page-1.png": "9728d390b9b4b1f5e1522539e382814f6afed9208a5e1425da8ca78e94017350",
+        "page-2.png": "2bee712d1352b905d97ff4b116f7ddc0686cadd8efeaf62d168bac15b5cc064a"
+      },
+      "pages": 2,
+      "text_sha256": "2f27d8bde36ca969796667525b0ccc8a13b7019fed22aa2ff220667f4d3adab1"
+    },
+    "workbench": {
+      "PNG_sha256": {
+        "page-1.png": "37f41d4fe6e7d41f25c217c9b57472895709fb446e794cb33c79f850b3ff9fde",
+        "page-2.png": "4b243d2dd6625f020c1735e278eb03c43387466827836160ebcdc11e4c6d4ba8",
+        "page-3.png": "acb020a303dd43b860997bc421001c26417c0ef95243c7ffcfa5fb3223724208",
+        "page-4.png": "177b45918cef33361285ca309b06a6daa2180d8b087c7f9db45f09b25b6e191d",
+        "page-5.png": "c1765e7a1ce684914aa37da79054897ae1c6447c000f85d240be6cc5e9b6e1a5",
+        "page-6.png": "2b75b65d8d0ef9e34bf835c22f9aea7496aed126589c3e9743856486b9e88ccc",
+        "page-7.png": "fcc29607527485ef0c45feffa467a8ee0bbfe94cd10d495553785e003f51e720",
+        "page-8.png": "efde4e23975bf539caa52facd1b684ea430bcaacaab0a584ab214ecd54a8466e"
+      },
+      "pages": 8,
+      "text_sha256": "518e93f62b65d5d5b1c54bac6d90d6361e4ab5bf31e23da08ca0067150473a17"
+    }
+  },
+  "scope": {
+    "complete_source": "all primes p=1 mod4 through3000, all first-half square-divisor words",
+    "independent": "different primitive-source and literal target-divisor enumeration; no code import from main",
+    "prime_progressions": "91 reduced classes for nonautomatic words through100; their starting residues are not all asserted prime"
+  },
+  "success": true,
+  "universal_ES_proved": false
+}
