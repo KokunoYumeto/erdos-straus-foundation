@@ -148,6 +148,14 @@ for both original first-half channels:
   every singular and inverse-exterior exponent on both sides of \(a=1\).
   The canonical metric comparison consumes pinned NG20--NG21 on a stipulated
   off-line quartet and is not an RH result.
+- [Original-divisor trace descent and exact nine-word boundary](research/incoming/es-turn07-divisor-descent-20260921/README.md):
+  every positive same-word residual-divisor arrow is classified by the exact
+  divisibility and word congruence on \(k\); the fixed-source inverse, complete
+  global target fibres, group-ring coefficient and labelled kernel are all
+  retained.  The unit-square image gives a uniform strict return exactly for
+  \(u\mid36\), and the CRT/Dirichlet construction proves that this fixed-word
+  list is maximal even after the middle complement.  Explicit E/M endpoints
+  keep the method obstruction separate from the conjecture itself.
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
@@ -187,9 +195,26 @@ original cyclic image, and the collision map between separated and confluent
 jets. Their kernels, ranges, metric costs and collision exponents are all
 retained. None of these post-witness constructions supplies the still-missing
 positive original source at every hard prime.
+The original-divisor descent then determines every arrow from a supplied
+rational trace source back into the integral original box.  It proves that the
+nine automatic words are the largest fixed-word class for this arrow and gives
+the exact infinite obstruction outside them.  The remaining universal question
+has therefore moved upstream to trace-source occupancy or to a new source-changing
+map outside the classified residual-divisor system.
+The global receiver determinant continuation then proves that the original odd
+receiver is nonsingular at every positive integral witness for
+\(p\equiv1\pmod {12}\), without the earlier three-character filter.  It retains
+the exact determinant phase and standard-Hermitian norm, supplies quantitative
+determinant and inverse bounds, and isolates the unique receiver singularity in
+an exact positive-real counterdomain outside the integral E/M cones.  This
+closes that post-witness receiver question while leaving initial source
+occupancy unchanged.  The [pinned complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6bdfce25724b95a4b30e97f0df69879a87793302/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex#L1-L488)
+contains the full arithmetic reduction, coefficient certificates, inverse and
+negative controls.
 
-The [19 September bulletin](DAILY_RESULTS_20260919.md)
-and [20 September bridge bulletin](DAILY_RESULTS_20260920.md) give stable result
+The [19 September bulletin](DAILY_RESULTS_20260919.md),
+[20 September bridge bulletin](DAILY_RESULTS_20260920.md), and
+[21 September arithmetic bulletin](DAILY_RESULTS_20260921.md) give stable result
 IDs and exact locators. They are mathematical indexes, not a programme chronology.
 
 ## Failed steps that remain useful

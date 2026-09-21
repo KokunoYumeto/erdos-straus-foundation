@@ -1,0 +1,1876 @@
+{
+  "bound": 3000,
+  "counts": {
+    "automatic_seed_sources": 711,
+    "distinct_returned_states": 1457,
+    "distinct_target_fibres": 1457,
+    "integral_E": 5700,
+    "integral_M": 5268,
+    "integral_nontrivial_return_sources": 289,
+    "integral_returned_records": 11356,
+    "original_divisor_vectors": 1877004,
+    "primes": 211,
+    "proper_E": 2682,
+    "proper_M": 2592,
+    "repairable_E": 751,
+    "repairable_M": 724,
+    "returned_records": 1864,
+    "shells": 73798,
+    "square_repairable_E": 202,
+    "square_repairable_M": 673
+  },
+  "primes": [
+    {
+      "integral_E": 1,
+      "integral_M": 2,
+      "p": 5
+    },
+    {
+      "integral_E": 3,
+      "integral_M": 2,
+      "p": 13
+    },
+    {
+      "integral_E": 2,
+      "integral_M": 4,
+      "p": 17
+    },
+    {
+      "integral_E": 4,
+      "integral_M": 6,
+      "p": 29,
+      "proper_E": 1,
+      "proper_M": 2,
+      "repairable_E": 1,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 7,
+      "integral_M": 4,
+      "p": 37,
+      "proper_E": 1,
+      "proper_M": 2,
+      "repairable_E": 1,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 3,
+      "integral_M": 8,
+      "p": 41,
+      "proper_M": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 9,
+      "integral_M": 8,
+      "p": 53,
+      "proper_E": 2,
+      "proper_M": 2,
+      "repairable_E": 1
+    },
+    {
+      "integral_E": 8,
+      "integral_M": 6,
+      "p": 61,
+      "proper_E": 2,
+      "repairable_E": 1
+    },
+    {
+      "integral_E": 4,
+      "integral_M": 6,
+      "p": 73,
+      "proper_E": 1
+    },
+    {
+      "integral_E": 5,
+      "integral_M": 10,
+      "p": 89,
+      "proper_E": 2,
+      "proper_M": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 5,
+      "integral_M": 6,
+      "p": 97,
+      "proper_E": 2,
+      "proper_M": 2,
+      "repairable_E": 1,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 9,
+      "integral_M": 14,
+      "p": 101,
+      "proper_E": 3,
+      "proper_M": 8,
+      "repairable_E": 1,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 10,
+      "integral_M": 10,
+      "p": 109,
+      "proper_E": 4,
+      "proper_M": 2,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 9,
+      "integral_M": 8,
+      "p": 113,
+      "proper_E": 1,
+      "proper_M": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 11,
+      "integral_M": 12,
+      "p": 137,
+      "proper_E": 1,
+      "repairable_E": 1
+    },
+    {
+      "integral_E": 12,
+      "integral_M": 12,
+      "p": 149,
+      "proper_E": 3,
+      "proper_M": 8,
+      "repairable_E": 1,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 16,
+      "integral_M": 16,
+      "p": 157,
+      "proper_E": 6,
+      "proper_M": 6,
+      "repairable_E": 3,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 18,
+      "integral_M": 16,
+      "p": 173,
+      "proper_E": 5,
+      "proper_M": 4,
+      "repairable_E": 4,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 13,
+      "integral_M": 8,
+      "p": 181,
+      "proper_E": 4,
+      "proper_M": 2,
+      "repairable_E": 1,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 4,
+      "integral_M": 4,
+      "p": 193,
+      "proper_E": 4,
+      "repairable_E": 1
+    },
+    {
+      "integral_E": 17,
+      "integral_M": 12,
+      "p": 197,
+      "proper_E": 5,
+      "proper_M": 4,
+      "repairable_E": 2
+    },
+    {
+      "integral_E": 15,
+      "integral_M": 10,
+      "p": 229,
+      "proper_E": 3,
+      "proper_M": 2,
+      "repairable_E": 1
+    },
+    {
+      "integral_E": 13,
+      "integral_M": 12,
+      "p": 233,
+      "proper_E": 3,
+      "proper_M": 4,
+      "repairable_E": 1,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 4,
+      "integral_M": 8,
+      "p": 241,
+      "proper_E": 3,
+      "proper_M": 4,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 11,
+      "integral_M": 16,
+      "p": 257,
+      "proper_E": 4,
+      "proper_M": 6,
+      "repairable_E": 1,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 19,
+      "integral_M": 18,
+      "p": 269,
+      "proper_E": 8,
+      "proper_M": 10,
+      "repairable_E": 3,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 18,
+      "p": 277,
+      "proper_E": 7,
+      "proper_M": 8,
+      "repairable_E": 4,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 10,
+      "integral_M": 14,
+      "p": 281,
+      "proper_E": 2,
+      "proper_M": 6,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 25,
+      "integral_M": 18,
+      "p": 293,
+      "proper_E": 6,
+      "proper_M": 8,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 11,
+      "integral_M": 10,
+      "p": 313,
+      "proper_E": 4,
+      "proper_M": 2,
+      "repairable_E": 1
+    },
+    {
+      "integral_E": 24,
+      "integral_M": 20,
+      "p": 317,
+      "proper_E": 8,
+      "proper_M": 6,
+      "repairable_E": 4,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 13,
+      "integral_M": 16,
+      "p": 337,
+      "proper_E": 3,
+      "proper_M": 4,
+      "repairable_E": 2,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 20,
+      "p": 349,
+      "proper_E": 5,
+      "proper_M": 4,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 12,
+      "integral_M": 14,
+      "p": 353,
+      "proper_E": 4,
+      "proper_M": 8,
+      "repairable_E": 2,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 27,
+      "integral_M": 12,
+      "p": 373,
+      "proper_E": 10,
+      "proper_M": 8,
+      "repairable_E": 3,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 20,
+      "integral_M": 20,
+      "p": 389,
+      "proper_E": 7,
+      "proper_M": 6,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 21,
+      "integral_M": 16,
+      "p": 397,
+      "proper_E": 11,
+      "proper_M": 8,
+      "repairable_E": 4,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 14,
+      "integral_M": 18,
+      "p": 401,
+      "proper_E": 3,
+      "proper_M": 4,
+      "repairable_E": 1,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 9,
+      "integral_M": 12,
+      "p": 409,
+      "proper_E": 4,
+      "proper_M": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 11,
+      "integral_M": 10,
+      "p": 421,
+      "proper_E": 7,
+      "proper_M": 8,
+      "repairable_E": 2,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 10,
+      "integral_M": 18,
+      "p": 433,
+      "proper_E": 3,
+      "proper_M": 2,
+      "repairable_E": 1,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 9,
+      "integral_M": 12,
+      "p": 449,
+      "proper_E": 7,
+      "proper_M": 4,
+      "repairable_E": 1,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 10,
+      "integral_M": 14,
+      "p": 457,
+      "proper_E": 7,
+      "proper_M": 2,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 17,
+      "integral_M": 24,
+      "p": 461,
+      "proper_E": 8,
+      "proper_M": 12,
+      "repairable_E": 3,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 22,
+      "p": 509,
+      "proper_E": 6,
+      "proper_M": 6,
+      "repairable_E": 3,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 19,
+      "integral_M": 24,
+      "p": 521,
+      "proper_E": 3,
+      "proper_M": 12,
+      "repairable_E": 1,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 24,
+      "integral_M": 12,
+      "p": 541,
+      "proper_E": 9,
+      "proper_M": 8,
+      "repairable_E": 4,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 38,
+      "integral_M": 34,
+      "p": 557,
+      "proper_E": 12,
+      "proper_M": 10,
+      "repairable_E": 6,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 18,
+      "integral_M": 24,
+      "p": 569,
+      "proper_E": 6,
+      "proper_M": 6,
+      "repairable_E": 2,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 11,
+      "integral_M": 14,
+      "p": 577,
+      "proper_E": 5,
+      "proper_M": 8,
+      "repairable_E": 2,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 13,
+      "integral_M": 18,
+      "p": 593,
+      "proper_E": 10,
+      "proper_M": 10,
+      "repairable_E": 2,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 10,
+      "integral_M": 12,
+      "p": 601,
+      "proper_E": 1,
+      "proper_M": 4,
+      "repairable_E": 1,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 20,
+      "p": 613,
+      "proper_E": 15,
+      "proper_M": 12,
+      "repairable_E": 6,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 24,
+      "integral_M": 18,
+      "p": 617,
+      "proper_E": 4,
+      "proper_M": 6,
+      "repairable_E": 2,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 20,
+      "integral_M": 28,
+      "p": 641,
+      "proper_E": 2,
+      "proper_M": 6,
+      "repairable_E": 2,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 30,
+      "integral_M": 20,
+      "p": 653,
+      "proper_E": 15,
+      "proper_M": 16,
+      "repairable_E": 4,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 21,
+      "integral_M": 22,
+      "p": 661,
+      "proper_E": 8,
+      "proper_M": 10,
+      "repairable_E": 2,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 12,
+      "integral_M": 10,
+      "p": 673,
+      "proper_E": 6,
+      "proper_M": 6,
+      "repairable_E": 1,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 33,
+      "integral_M": 26,
+      "p": 677,
+      "proper_E": 15,
+      "proper_M": 18,
+      "repairable_E": 7,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 24,
+      "integral_M": 36,
+      "p": 701,
+      "proper_E": 11,
+      "proper_M": 12,
+      "repairable_E": 5,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 30,
+      "integral_M": 16,
+      "p": 709,
+      "proper_E": 13,
+      "proper_M": 8,
+      "repairable_E": 2
+    },
+    {
+      "integral_E": 35,
+      "integral_M": 26,
+      "p": 733,
+      "proper_E": 14,
+      "proper_M": 10,
+      "repairable_E": 6,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 27,
+      "integral_M": 20,
+      "p": 757,
+      "proper_E": 17,
+      "proper_M": 18,
+      "repairable_E": 6,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 13,
+      "integral_M": 22,
+      "p": 761,
+      "proper_E": 6,
+      "proper_M": 20,
+      "repairable_E": 1,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 10,
+      "integral_M": 16,
+      "p": 769,
+      "proper_E": 7,
+      "proper_M": 6,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 29,
+      "integral_M": 24,
+      "p": 773,
+      "proper_E": 7,
+      "proper_M": 8,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 34,
+      "p": 797,
+      "proper_E": 14,
+      "proper_M": 10,
+      "repairable_E": 6,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 25,
+      "integral_M": 24,
+      "p": 809,
+      "proper_E": 10,
+      "proper_M": 8,
+      "repairable_E": 2,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 29,
+      "integral_M": 28,
+      "p": 821,
+      "proper_E": 8,
+      "proper_M": 20,
+      "repairable_E": 3,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 36,
+      "integral_M": 30,
+      "p": 829,
+      "proper_E": 7,
+      "proper_M": 8,
+      "repairable_E": 5,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 26,
+      "integral_M": 16,
+      "p": 853,
+      "proper_E": 17,
+      "proper_M": 10,
+      "repairable_E": 3,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 28,
+      "p": 857,
+      "proper_E": 12,
+      "proper_M": 10,
+      "repairable_E": 2,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 42,
+      "integral_M": 34,
+      "p": 877,
+      "proper_E": 17,
+      "proper_M": 10,
+      "repairable_E": 7,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 18,
+      "integral_M": 34,
+      "p": 881,
+      "proper_E": 10,
+      "proper_M": 12,
+      "repairable_E": 2,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 19,
+      "integral_M": 22,
+      "p": 929,
+      "proper_E": 8,
+      "proper_M": 12,
+      "repairable_E": 2,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 16,
+      "integral_M": 22,
+      "p": 937,
+      "proper_E": 8,
+      "proper_M": 8,
+      "repairable_E": 2,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 32,
+      "p": 941,
+      "proper_E": 15,
+      "proper_M": 22,
+      "repairable_E": 3,
+      "repairable_M": 9
+    },
+    {
+      "integral_E": 27,
+      "integral_M": 28,
+      "p": 953,
+      "proper_E": 7,
+      "proper_M": 10,
+      "repairable_E": 3,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 28,
+      "integral_M": 20,
+      "p": 977,
+      "proper_E": 12,
+      "proper_M": 8,
+      "repairable_E": 4,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 35,
+      "integral_M": 26,
+      "p": 997,
+      "proper_E": 19,
+      "proper_M": 12,
+      "repairable_E": 6,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 11,
+      "integral_M": 16,
+      "p": 1009,
+      "proper_E": 4,
+      "proper_M": 2,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 27,
+      "integral_M": 16,
+      "p": 1013,
+      "proper_E": 10,
+      "proper_M": 14,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 26,
+      "integral_M": 20,
+      "p": 1021,
+      "proper_E": 8,
+      "proper_M": 6,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 20,
+      "p": 1033,
+      "proper_E": 8,
+      "proper_M": 4,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 21,
+      "integral_M": 36,
+      "p": 1049,
+      "proper_E": 9,
+      "proper_M": 14,
+      "repairable_E": 2,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 30,
+      "p": 1061,
+      "proper_E": 15,
+      "proper_M": 10,
+      "repairable_E": 4,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 28,
+      "integral_M": 28,
+      "p": 1069,
+      "proper_E": 13,
+      "proper_M": 8,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 31,
+      "integral_M": 10,
+      "p": 1093,
+      "proper_E": 16,
+      "proper_M": 14,
+      "repairable_E": 3,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 28,
+      "integral_M": 26,
+      "p": 1097,
+      "proper_E": 8,
+      "proper_M": 10,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 26,
+      "integral_M": 26,
+      "p": 1109,
+      "proper_E": 11,
+      "proper_M": 14,
+      "repairable_E": 2,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 43,
+      "integral_M": 42,
+      "p": 1117,
+      "proper_E": 28,
+      "proper_M": 8,
+      "repairable_E": 10,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 14,
+      "integral_M": 10,
+      "p": 1129,
+      "proper_E": 5,
+      "proper_M": 2,
+      "repairable_E": 2
+    },
+    {
+      "integral_E": 14,
+      "integral_M": 16,
+      "p": 1153,
+      "proper_E": 10,
+      "proper_M": 6,
+      "repairable_E": 2
+    },
+    {
+      "integral_E": 29,
+      "integral_M": 36,
+      "p": 1181,
+      "proper_E": 10,
+      "proper_M": 16,
+      "repairable_E": 5,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 29,
+      "integral_M": 40,
+      "p": 1193,
+      "proper_E": 10,
+      "proper_M": 16,
+      "repairable_E": 4,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 7,
+      "integral_M": 8,
+      "p": 1201,
+      "proper_E": 8,
+      "proper_M": 8,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 50,
+      "integral_M": 22,
+      "p": 1213,
+      "proper_E": 17,
+      "proper_M": 22,
+      "repairable_E": 6,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 29,
+      "integral_M": 30,
+      "p": 1217,
+      "proper_E": 10,
+      "proper_M": 16,
+      "repairable_E": 3,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 37,
+      "integral_M": 38,
+      "p": 1229,
+      "proper_E": 19,
+      "proper_M": 14,
+      "repairable_E": 8,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 41,
+      "integral_M": 24,
+      "p": 1237,
+      "proper_E": 18,
+      "proper_M": 12,
+      "repairable_E": 6,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 11,
+      "integral_M": 16,
+      "p": 1249,
+      "proper_E": 6,
+      "proper_M": 4,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 30,
+      "p": 1277,
+      "proper_E": 18,
+      "proper_M": 8,
+      "repairable_E": 7,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 26,
+      "integral_M": 26,
+      "p": 1289,
+      "proper_E": 14,
+      "proper_M": 6,
+      "repairable_E": 2,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 19,
+      "integral_M": 18,
+      "p": 1297,
+      "proper_E": 6,
+      "proper_M": 10,
+      "repairable_E": 2,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 25,
+      "integral_M": 26,
+      "p": 1301,
+      "proper_E": 11,
+      "proper_M": 24,
+      "repairable_E": 2,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 14,
+      "integral_M": 16,
+      "p": 1321,
+      "proper_E": 4,
+      "proper_M": 4
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 38,
+      "p": 1361,
+      "proper_E": 11,
+      "proper_M": 28,
+      "repairable_E": 3,
+      "repairable_M": 12
+    },
+    {
+      "integral_E": 30,
+      "integral_M": 24,
+      "p": 1373,
+      "proper_E": 22,
+      "proper_M": 16,
+      "repairable_E": 5,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 27,
+      "integral_M": 14,
+      "p": 1381,
+      "proper_E": 16,
+      "proper_M": 12,
+      "repairable_E": 3
+    },
+    {
+      "integral_E": 19,
+      "integral_M": 16,
+      "p": 1409,
+      "proper_E": 9,
+      "proper_M": 12,
+      "repairable_E": 1,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 29,
+      "integral_M": 22,
+      "p": 1429,
+      "proper_E": 16,
+      "proper_M": 6,
+      "repairable_E": 3,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 35,
+      "integral_M": 34,
+      "p": 1433,
+      "proper_E": 15,
+      "proper_M": 12,
+      "repairable_E": 4,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 38,
+      "integral_M": 28,
+      "p": 1453,
+      "proper_E": 23,
+      "proper_M": 12,
+      "repairable_E": 8,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 28,
+      "integral_M": 40,
+      "p": 1481,
+      "proper_E": 13,
+      "proper_M": 20,
+      "repairable_E": 3,
+      "repairable_M": 9
+    },
+    {
+      "integral_E": 15,
+      "integral_M": 14,
+      "p": 1489,
+      "proper_E": 5,
+      "proper_M": 6,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 55,
+      "integral_M": 36,
+      "p": 1493,
+      "proper_E": 23,
+      "proper_M": 16,
+      "repairable_E": 8,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 30,
+      "integral_M": 22,
+      "p": 1549,
+      "proper_E": 13,
+      "proper_M": 10,
+      "repairable_E": 4,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 33,
+      "integral_M": 28,
+      "p": 1553,
+      "proper_E": 11,
+      "proper_M": 14,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 39,
+      "integral_M": 32,
+      "p": 1597,
+      "proper_E": 27,
+      "proper_M": 22,
+      "repairable_E": 9,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 20,
+      "integral_M": 24,
+      "p": 1601,
+      "proper_E": 9,
+      "proper_M": 20,
+      "repairable_E": 1,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 16,
+      "integral_M": 22,
+      "p": 1609,
+      "proper_E": 7,
+      "proper_M": 10,
+      "repairable_E": 1,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 33,
+      "integral_M": 28,
+      "p": 1613,
+      "proper_E": 20,
+      "proper_M": 24,
+      "repairable_E": 5,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 35,
+      "integral_M": 22,
+      "p": 1621,
+      "proper_E": 20,
+      "proper_M": 10,
+      "repairable_E": 6,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 37,
+      "integral_M": 34,
+      "p": 1637,
+      "proper_E": 20,
+      "proper_M": 16,
+      "repairable_E": 6,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 28,
+      "integral_M": 28,
+      "p": 1657,
+      "proper_E": 9,
+      "proper_M": 8,
+      "repairable_E": 4,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 44,
+      "integral_M": 36,
+      "p": 1669,
+      "proper_E": 20,
+      "proper_M": 12,
+      "repairable_E": 6,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 30,
+      "integral_M": 28,
+      "p": 1693,
+      "proper_E": 19,
+      "proper_M": 20,
+      "repairable_E": 5,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 30,
+      "p": 1697,
+      "proper_E": 17,
+      "proper_M": 20,
+      "repairable_E": 4,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 29,
+      "integral_M": 30,
+      "p": 1709,
+      "proper_E": 17,
+      "proper_M": 16,
+      "repairable_E": 4,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 25,
+      "integral_M": 36,
+      "p": 1721,
+      "proper_E": 8,
+      "proper_M": 20,
+      "repairable_E": 2,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 43,
+      "integral_M": 32,
+      "p": 1733,
+      "proper_E": 26,
+      "proper_M": 28,
+      "repairable_E": 6,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 20,
+      "p": 1741,
+      "proper_E": 17,
+      "proper_M": 12,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 27,
+      "integral_M": 30,
+      "p": 1753,
+      "proper_E": 12,
+      "proper_M": 6,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 20,
+      "p": 1777,
+      "proper_E": 10,
+      "proper_M": 12,
+      "repairable_E": 2,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 47,
+      "integral_M": 34,
+      "p": 1789,
+      "proper_E": 11,
+      "proper_M": 6,
+      "repairable_E": 9,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 12,
+      "integral_M": 22,
+      "p": 1801,
+      "proper_E": 7,
+      "proper_M": 6,
+      "repairable_E": 2,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 30,
+      "integral_M": 22,
+      "p": 1861,
+      "proper_E": 17,
+      "proper_M": 20,
+      "repairable_E": 2,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 13,
+      "integral_M": 16,
+      "p": 1873,
+      "proper_E": 6,
+      "proper_M": 4,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 37,
+      "integral_M": 28,
+      "p": 1877,
+      "proper_E": 24,
+      "proper_M": 24,
+      "repairable_E": 7,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 42,
+      "p": 1889,
+      "proper_E": 15,
+      "proper_M": 16,
+      "repairable_E": 3,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 49,
+      "integral_M": 44,
+      "p": 1901,
+      "proper_E": 16,
+      "proper_M": 14,
+      "repairable_E": 8,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 35,
+      "integral_M": 32,
+      "p": 1913,
+      "proper_E": 14,
+      "proper_M": 16,
+      "repairable_E": 3,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 40,
+      "integral_M": 26,
+      "p": 1933,
+      "proper_E": 23,
+      "proper_M": 18,
+      "repairable_E": 5,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 47,
+      "integral_M": 46,
+      "p": 1949,
+      "proper_E": 18,
+      "proper_M": 28,
+      "repairable_E": 5,
+      "repairable_M": 11
+    },
+    {
+      "integral_E": 41,
+      "integral_M": 40,
+      "p": 1973,
+      "proper_E": 18,
+      "proper_M": 16,
+      "repairable_E": 6,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 26,
+      "integral_M": 20,
+      "p": 1993,
+      "proper_E": 15,
+      "proper_M": 10,
+      "repairable_E": 2,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 39,
+      "integral_M": 38,
+      "p": 1997,
+      "proper_E": 29,
+      "proper_M": 22,
+      "repairable_E": 8,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 19,
+      "integral_M": 16,
+      "p": 2017,
+      "proper_E": 11,
+      "proper_M": 10,
+      "repairable_E": 3,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 32,
+      "integral_M": 26,
+      "p": 2029,
+      "proper_E": 19,
+      "proper_M": 12,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 59,
+      "integral_M": 26,
+      "p": 2053,
+      "proper_E": 24,
+      "proper_M": 24,
+      "repairable_E": 5,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 44,
+      "integral_M": 40,
+      "p": 2069,
+      "proper_E": 19,
+      "proper_M": 12,
+      "repairable_E": 5,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 26,
+      "p": 2081,
+      "proper_E": 12,
+      "proper_M": 18,
+      "repairable_E": 2,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 17,
+      "integral_M": 26,
+      "p": 2089,
+      "proper_E": 8,
+      "proper_M": 8,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 24,
+      "integral_M": 28,
+      "p": 2113,
+      "proper_E": 11,
+      "proper_M": 12,
+      "repairable_E": 2,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 28,
+      "integral_M": 32,
+      "p": 2129,
+      "proper_E": 14,
+      "proper_M": 20,
+      "repairable_E": 2,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 24,
+      "integral_M": 26,
+      "p": 2137,
+      "proper_E": 14,
+      "proper_M": 14,
+      "repairable_E": 2,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 40,
+      "integral_M": 44,
+      "p": 2141,
+      "proper_E": 22,
+      "proper_M": 34,
+      "repairable_E": 5,
+      "repairable_M": 13
+    },
+    {
+      "integral_E": 42,
+      "integral_M": 38,
+      "p": 2153,
+      "proper_E": 20,
+      "proper_M": 10,
+      "repairable_E": 8,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 13,
+      "integral_M": 24,
+      "p": 2161,
+      "proper_E": 6,
+      "proper_M": 4,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 35,
+      "integral_M": 28,
+      "p": 2213,
+      "proper_E": 33,
+      "proper_M": 32,
+      "repairable_E": 5,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 38,
+      "integral_M": 20,
+      "p": 2221,
+      "proper_E": 18,
+      "proper_M": 14,
+      "repairable_E": 4,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 70,
+      "integral_M": 60,
+      "p": 2237,
+      "proper_E": 26,
+      "proper_M": 16,
+      "repairable_E": 14,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 45,
+      "integral_M": 24,
+      "p": 2269,
+      "proper_E": 14,
+      "proper_M": 18,
+      "repairable_E": 6,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 42,
+      "integral_M": 34,
+      "p": 2273,
+      "proper_E": 15,
+      "proper_M": 24,
+      "repairable_E": 6,
+      "repairable_M": 8
+    },
+    {
+      "integral_E": 17,
+      "integral_M": 20,
+      "p": 2281,
+      "proper_E": 5,
+      "proper_M": 4,
+      "repairable_E": 1,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 49,
+      "integral_M": 28,
+      "p": 2293,
+      "proper_E": 35,
+      "proper_M": 24,
+      "repairable_E": 8,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 32,
+      "integral_M": 26,
+      "p": 2297,
+      "proper_E": 16,
+      "proper_M": 16,
+      "repairable_E": 5,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 30,
+      "integral_M": 34,
+      "p": 2309,
+      "proper_E": 29,
+      "proper_M": 18,
+      "repairable_E": 4,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 49,
+      "integral_M": 38,
+      "p": 2333,
+      "proper_E": 17,
+      "proper_M": 32,
+      "repairable_E": 8,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 26,
+      "integral_M": 24,
+      "p": 2341,
+      "proper_E": 15,
+      "proper_M": 18,
+      "repairable_E": 2,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 46,
+      "integral_M": 34,
+      "p": 2357,
+      "proper_E": 16,
+      "proper_M": 20,
+      "repairable_E": 7,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 32,
+      "integral_M": 30,
+      "p": 2377,
+      "proper_E": 6,
+      "proper_M": 8,
+      "repairable_E": 5,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 32,
+      "integral_M": 24,
+      "p": 2381,
+      "proper_E": 19,
+      "proper_M": 24,
+      "repairable_E": 4,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 46,
+      "integral_M": 34,
+      "p": 2389,
+      "proper_E": 21,
+      "proper_M": 16,
+      "repairable_E": 7,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 37,
+      "integral_M": 40,
+      "p": 2393,
+      "proper_E": 23,
+      "proper_M": 12,
+      "repairable_E": 4,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 38,
+      "integral_M": 22,
+      "p": 2417,
+      "proper_E": 17,
+      "proper_M": 14,
+      "repairable_E": 3,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 36,
+      "integral_M": 36,
+      "p": 2437,
+      "proper_E": 33,
+      "proper_M": 28,
+      "repairable_E": 7,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 39,
+      "integral_M": 50,
+      "p": 2441,
+      "proper_E": 14,
+      "proper_M": 22,
+      "repairable_E": 4,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 24,
+      "integral_M": 18,
+      "p": 2473,
+      "proper_E": 8,
+      "proper_M": 6,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 54,
+      "integral_M": 46,
+      "p": 2477,
+      "proper_E": 31,
+      "proper_M": 14,
+      "repairable_E": 9,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 6,
+      "integral_M": 6,
+      "p": 2521,
+      "proper_E": 10,
+      "proper_M": 10
+    },
+    {
+      "integral_E": 38,
+      "integral_M": 42,
+      "p": 2549,
+      "proper_E": 22,
+      "proper_M": 36,
+      "repairable_E": 6,
+      "repairable_M": 11
+    },
+    {
+      "integral_E": 48,
+      "integral_M": 38,
+      "p": 2557,
+      "proper_E": 35,
+      "proper_M": 22,
+      "repairable_E": 10,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 28,
+      "integral_M": 32,
+      "p": 2593,
+      "proper_E": 13,
+      "proper_M": 14,
+      "repairable_E": 4,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 36,
+      "p": 2609,
+      "proper_E": 24,
+      "proper_M": 20,
+      "repairable_E": 2,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 24,
+      "integral_M": 30,
+      "p": 2617,
+      "proper_E": 10,
+      "proper_M": 10,
+      "repairable_E": 3,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 41,
+      "integral_M": 46,
+      "p": 2621,
+      "proper_E": 24,
+      "proper_M": 18,
+      "repairable_E": 7,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 42,
+      "integral_M": 32,
+      "p": 2633,
+      "proper_E": 18,
+      "proper_M": 8,
+      "repairable_E": 5,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 40,
+      "integral_M": 34,
+      "p": 2657,
+      "proper_E": 23,
+      "proper_M": 16,
+      "repairable_E": 5
+    },
+    {
+      "integral_E": 52,
+      "integral_M": 36,
+      "p": 2677,
+      "proper_E": 27,
+      "proper_M": 20,
+      "repairable_E": 7,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 14,
+      "integral_M": 18,
+      "p": 2689,
+      "proper_E": 8,
+      "proper_M": 4,
+      "repairable_E": 1,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 40,
+      "integral_M": 36,
+      "p": 2693,
+      "proper_E": 24,
+      "proper_M": 26,
+      "repairable_E": 6,
+      "repairable_M": 9
+    },
+    {
+      "integral_E": 31,
+      "integral_M": 26,
+      "p": 2713,
+      "proper_E": 16,
+      "proper_M": 10,
+      "repairable_E": 4,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 37,
+      "integral_M": 40,
+      "p": 2729,
+      "proper_E": 18,
+      "proper_M": 22,
+      "repairable_E": 3,
+      "repairable_M": 8
+    },
+    {
+      "integral_E": 44,
+      "integral_M": 32,
+      "p": 2741,
+      "proper_E": 21,
+      "proper_M": 30,
+      "repairable_E": 4,
+      "repairable_M": 8
+    },
+    {
+      "integral_E": 46,
+      "integral_M": 40,
+      "p": 2749,
+      "proper_E": 22,
+      "proper_M": 8,
+      "repairable_E": 6,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 41,
+      "integral_M": 34,
+      "p": 2753,
+      "proper_E": 22,
+      "proper_M": 16,
+      "repairable_E": 5,
+      "repairable_M": 4
+    },
+    {
+      "integral_E": 33,
+      "integral_M": 32,
+      "p": 2777,
+      "proper_E": 16,
+      "proper_M": 22,
+      "repairable_E": 4,
+      "repairable_M": 6
+    },
+    {
+      "integral_E": 37,
+      "integral_M": 38,
+      "p": 2789,
+      "proper_E": 20,
+      "proper_M": 42,
+      "repairable_E": 2,
+      "repairable_M": 13
+    },
+    {
+      "integral_E": 57,
+      "integral_M": 54,
+      "p": 2797,
+      "proper_E": 28,
+      "proper_M": 26,
+      "repairable_E": 14,
+      "repairable_M": 11
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 42,
+      "p": 2801,
+      "proper_E": 13,
+      "proper_M": 30,
+      "repairable_E": 5,
+      "repairable_M": 13
+    },
+    {
+      "integral_E": 22,
+      "integral_M": 20,
+      "p": 2833,
+      "proper_E": 16,
+      "proper_M": 6,
+      "repairable_E": 2,
+      "repairable_M": 1
+    },
+    {
+      "integral_E": 56,
+      "integral_M": 30,
+      "p": 2837,
+      "proper_E": 27,
+      "proper_M": 26,
+      "repairable_E": 7,
+      "repairable_M": 3
+    },
+    {
+      "integral_E": 31,
+      "integral_M": 28,
+      "p": 2857,
+      "proper_E": 16,
+      "proper_M": 8,
+      "repairable_E": 4,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 34,
+      "p": 2861,
+      "proper_E": 15,
+      "proper_M": 18,
+      "repairable_E": 3,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 42,
+      "integral_M": 38,
+      "p": 2897,
+      "proper_E": 23,
+      "proper_M": 22,
+      "repairable_E": 6,
+      "repairable_M": 5
+    },
+    {
+      "integral_E": 50,
+      "integral_M": 62,
+      "p": 2909,
+      "proper_E": 18,
+      "proper_M": 24,
+      "repairable_E": 10,
+      "repairable_M": 10
+    },
+    {
+      "integral_E": 34,
+      "integral_M": 26,
+      "p": 2917,
+      "proper_E": 32,
+      "proper_M": 30,
+      "repairable_E": 6,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 30,
+      "integral_M": 28,
+      "p": 2953,
+      "proper_E": 16,
+      "proper_M": 10,
+      "repairable_E": 3,
+      "repairable_M": 2
+    },
+    {
+      "integral_E": 54,
+      "integral_M": 50,
+      "p": 2957,
+      "proper_E": 23,
+      "proper_M": 20,
+      "repairable_E": 10,
+      "repairable_M": 7
+    },
+    {
+      "integral_E": 33,
+      "integral_M": 36,
+      "p": 2969,
+      "proper_E": 17,
+      "proper_M": 12,
+      "repairable_E": 3,
+      "repairable_M": 3
+    }
+  ]
+}

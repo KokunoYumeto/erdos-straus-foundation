@@ -4,7 +4,7 @@
   "id": "polyclank:erdos-straus-foundation",
   "title": "Erdős–Straus Foundation",
   "collective": "The Clankers",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
   "overview": "WORKBENCH.md",
   "research_state": "RESEARCH_STATE.md",
@@ -298,10 +298,47 @@
       "received_zip": "research/incoming/es-rh-family-integration-c-20260920/received/ES_RH_Family_Integration_20260920_C.zip",
       "received_source": "research/incoming/es-rh-family-integration-c-20260920/received/PASTED_RESULT.md",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-21:divisor-descent",
+      "overview": "research/incoming/es-turn07-divisor-descent-20260921/README.md",
+      "proof": "research/incoming/es-turn07-divisor-descent-20260921/core.tex",
+      "reader": "research/incoming/es-turn07-divisor-descent-20260921/workbench.pdf",
+      "preprint": "research/incoming/es-turn07-divisor-descent-20260921/preprint.pdf",
+      "checkers": [
+        "research/incoming/es-turn07-divisor-descent-20260921/verify.py",
+        "research/incoming/es-turn07-divisor-descent-20260921/check_independent.py",
+        "research/incoming/es-turn07-divisor-descent-20260921/independent_audits/bruteforce_nine_words.py"
+      ],
+      "scope": "Exact positive same-word residual-divisor arrow domain k|R, d|k and k=1 mod 4K(u), with full channel-labelled target coordinates, fixed-source inverse, complete global target fibres, free-abelian kernel and right inverse; complete square subdomain and integer multiplicity formulas; uniform strict descent exactly for the nine words u|36; for every other fixed word, infinitely many hard-prime proper M trace sources with no same-word return, including the middle complement, together with explicit E/M endpoint solutions. No universal trace-source occupancy or ES resolution is asserted.",
+      "source_ledger": "research/incoming/es-turn07-divisor-descent-20260921/source_reading.json",
+      "integration_audit": "research/incoming/es-turn07-divisor-descent-20260921/INTEGRATION_AUDIT_20260921.md",
+      "received_zip": "research/incoming/es-turn07-divisor-descent-20260921/received/ES_Turns6_7_With_Divisor_Descent_20260921.zip",
+      "received_source": "research/incoming/es-turn07-divisor-descent-20260921/received/USER_HANDOFF.txt",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-21:global-receiver-determinant",
+      "overview": "research/incoming/es-turn07-global-receiver-determinant-20260921/README.md",
+      "proof": "research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex",
+      "reader": "research/incoming/es-turn07-global-receiver-determinant-20260921/workbench.pdf",
+      "preprint": "research/incoming/es-turn07-global-receiver-determinant-20260921/preprint.pdf",
+      "claims": "research/incoming/es-turn07-global-receiver-determinant-20260921/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-global-receiver-determinant-20260921/verify.py",
+        "research/incoming/es-turn07-global-receiver-determinant-20260921/check_independent.py"
+      ],
+      "scope": "For every positive integral Erdős-Straus witness at every prime p=1 mod12, the literal odd-receiver numerator satisfies N<-(125873811/262144)p^8, with constant 327448292668/47045881 at p=1 mod24; the exact determinant phase, standard-Hermitian lower determinant bound and inverse norm bound are proved. A separate degree-18 certificate isolates one unique collision-free receiver singularity in an exact positive-real family outside both integral coordinate domains. No universal E/M occupancy or ES resolution is asserted.",
+      "source_ledger": "research/incoming/es-turn07-global-receiver-determinant-20260921/source_reading.json",
+      "integration_audit": "research/incoming/es-turn07-global-receiver-determinant-20260921/INTEGRATION_AUDIT_20260921.md",
+      "received_zip": "research/incoming/es-turn07-global-receiver-determinant-20260921/received/ES_Turns6_7_With_Global_Receiver_Determinant_20260921.zip",
+      "received_source": "research/incoming/es-turn07-global-receiver-determinant-20260921/received/USER_HANDOFF.txt",
+      "pinned_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6bdfce25724b95a4b30e97f0df69879a87793302/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex#L1-L488",
+      "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
-    "source": "research/incoming/es-turn07-shape-rigidity-20260919/HANDOFF_TURN_7_REMAINDER.md",
+    "source": "research/incoming/es-turn07-global-receiver-determinant-20260921/HANDOFF_TURN_7_REMAINDER.md",
     "unproved_statement_tex": "\\forall p\\text{ hard prime},\\quad \\text{at least one original E or M coefficient is positive}",
     "available_exact_forms": [
       "complete disjoint direct/cofactor middle atlas with O(sqrt(p)) small moduli",
@@ -348,6 +385,12 @@
       ,"exact mixed-source minimum, determinant allocation and certified regularized range inverse"
       ,"exact ES-labelled common reducing space with centre-length covariance and full-multiplicity leakage rank"
       ,"complete two-centre collision exponent phase diagram with fixed metric hypotheses"
+      ,"complete original same-word residual-divisor arrow domain with fixed-source inverse and full global target fibres"
+      ,"exact nine-word universal descent classification u | 36 and complete square-deletion multiplicities"
+      ,"infinite reduced CRT progression obstructing every same-word residual-divisor return outside the nine words"
+      ,"global strict sign of the original odd-receiver numerator on every integral p=1 mod12 witness"
+      ,"exact determinant phase and quantitative standard-Hermitian inverse bound"
+      ,"unique collision-free receiver singularity in the exact positive-real counterdomain"
     ],
     "excluded_shortcuts": [
       "a fixed prime-independent cutoff on original grades h and j",
@@ -385,6 +428,11 @@
       ,"treating tensor enlargement as an integer-witness theorem"
       ,"extending the collision exponent formula through a=1 without its separate boundary calculation"
       ,"dropping the degenerating physical metric or its scalar factor in a collision limit"
+      ,"treating the fixed-source formula k=R/R' as a global inverse after the source coordinate is forgotten"
+      ,"assuming every proper trace source has a residual-divisor return outside the exact nine-word class"
+      ,"asserting strict second-stage descent for an E complement whose exact denominator has already become one"
+      ,"treating odd-receiver nonsingularity as existence of an original E or M source"
+      ,"extending the integral receiver sign theorem to every positive-real reciprocal quartic"
     ]
   },
   "records": {
@@ -396,7 +444,7 @@
     "human_motivations": "polyclank/motivations.json"
   },
   "coverage": {
-    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260920-066 are linked from their modules and the daily proof bulletin.",
+    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260921-007 are linked from their modules and the daily proof bulletin.",
     "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Later modules keep their own claims, proof locators and receipts; full claim-by-claim indexing of every historical edition is not asserted.",
     "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
   },

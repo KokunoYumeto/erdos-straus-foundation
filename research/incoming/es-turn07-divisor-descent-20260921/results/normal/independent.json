@@ -1,0 +1,49 @@
+{
+  "checks": 4084626,
+  "examples": {
+    "displayed_sources": 10,
+    "prime_trial_bound": 6936
+  },
+  "imports_predecessor_or_main": false,
+  "models": {
+    "prime_progressions": 91,
+    "unit_models": 200
+  },
+  "negative_controls": [
+    "Removing only a denominator always preserves the word",
+    "A minimal square factor always suffices",
+    "Removing every square always suffices",
+    "Every valid deletion is a square",
+    "Every E trace complement stays in the domain",
+    "The previous failed divisor can be silently kept",
+    "All seeds are automatic",
+    "A nonempty rational trace ensures cofactor71 occupancy",
+    "The terminal source disproves ES",
+    "Reducing the integer coefficient modulo two preserves its target count"
+  ],
+  "scan": {
+    "bound": 3000,
+    "counts": {
+      "automatic_seed_sources": 711,
+      "distinct_returned_states": 1457,
+      "distinct_target_fibres": 1457,
+      "integral_E": 5700,
+      "integral_M": 5268,
+      "integral_nontrivial_return_sources": 289,
+      "integral_returned_records": 11356,
+      "original_divisor_vectors": 1877004,
+      "primes": 211,
+      "proper_E": 2682,
+      "proper_M": 2592,
+      "repairable_E": 751,
+      "repairable_M": 724,
+      "returned_records": 1864,
+      "shells": 73798,
+      "square_repairable_E": 202,
+      "square_repairable_M": 673
+    },
+    "signature_sha256": "f3439118c02d96c79998631b9b3c399efd01fb063c55744448ff495bf55ac03f"
+  },
+  "success": true,
+  "universal_ES_proved": false
+}

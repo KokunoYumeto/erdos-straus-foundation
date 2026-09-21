@@ -296,6 +296,65 @@ conditions are only sufficient; the remaining classes and universal occupancy
 are open.
 [Complete proof and receipt](research/incoming/es-rh-continuation-b-20260920/README.md).
 
+## 15. Original-divisor descent from rational trace sources
+
+**Aim:** turn a positive rational E/M tail pair with integral sum into an
+original integral state while keeping its prime, channel and divisor word.
+**Reason for trying:** trace rigidity identifies the exact remaining square-part
+denominator, but does not determine which divisor of the old residual preserves
+the original finite exponent budget. **What was tried:** every positive divisor
+\(k\mid R\) was retained, the full residual gate and word budget were solved as
+equivalences, and the global relation was typed on decorated arrows rather than
+sources. The square subdomain, unit-square image, middle complement and the
+earlier finite cofactor-capacity bound were then composed without discarding
+their domains. **What happened:** the complete arrow domain is
+\(d\mid k\), \(k\equiv1\pmod{4K(u)}\). It gives a strict return for every proper
+source at exactly the nine fixed words \(u\mid36\). For every other word an
+explicit reduced progression supplies infinitely many proper middle sources
+whose complete same-word arrow set is empty; their complements fail as well.
+Separate E/M endpoint formulas solve ES at every prime in this obstruction
+family. **Successful scope:** exact maps, inverses, fibres, kernel coordinates,
+integer coefficient multiplicities, two independently checked finite replays,
+and a sharp optimality theorem for this residual-divisor method. **Unfinished:**
+the construction begins with a trace source. It does not force one at every
+hard prime and does not resolve ES.
+[Complete proof, audits and receipts](research/incoming/es-turn07-divisor-descent-20260921/README.md).
+
+## 16. Global arithmetic nonvanishing of the literal odd receiver
+
+**Aim:** decide whether the original odd receiving determinant can vanish on
+an actual positive integral Erdős--Straus witness after the earlier
+three-character sieve leaves its other character cells open. **Reason for
+trying:** a positive-real rank-three crossing proves that squarefree positive
+roots alone do not exclude the divisor, while an arithmetic sign theorem would
+separate receiver degeneracy from the upstream occupancy problem. **What was
+tried:** every integral witness was reduced, without dropping its channel or
+orientation, to the complete exterior or middle coordinate domain.  The exact
+degree-eight numerator was transported to two integer polynomial certificates:
+three full 221-coefficient exterior arrays and a middle comparison with 191
+positive nonconstant coefficients.  The literal coefficient matrix,
+Vandermonde phase, Lagrange inverse, cofactor bounds and standard-Hermitian norm
+were then recomputed. **What happened:** for every prime
+\(p\equiv1\pmod {12}\) and every positive integral witness,
+
+\[
+\mathfrak N<-\frac{125873811}{262144}p^8,
+\]
+
+with the stronger constant \(327448292668/47045881\) when
+\(p\equiv1\pmod {24}\).  Thus
+\(|\det O|>4cp^8/S^3\) and
+\(\|O^{-1}\|_2<360S^9/(cp^8)\).  A separate degree-18 certificate proves that
+the real family with tails \((t,t+1/10)\) has exactly one collision-free receiver
+singularity in \(3053/1000<t<1527/500\), outside both integral domains.
+**Successful scope:** the full original witness domain, exact signs and labels,
+complete coefficient arrays, two independent executable implementations,
+examples, counterdomains and rendered proof sources. **Unfinished:** the
+receiver theorem starts from an existing witness.  It does not force an
+original E or M state at every prescribed hard prime and therefore does not
+resolve ES.
+[Pinned complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6bdfce25724b95a4b30e97f0df69879a87793302/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex#L1-L488).
+
 ## Keeping future attempts intelligible
 
 For each task or substantial route, retain a short account with these same fields:
@@ -306,5 +365,5 @@ than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
 The [machine records](polyclank/attempts.json) expose the earlier five fields
-separately. This page covers the fourteen routes above; it does not claim to have recovered
+separately. This page covers the sixteen routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.

@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parent
 MATH=('sources.json','scan.json','examples.json','progressions.json','abstract.json','summary.json','independent.json')
 def run(cmd,cwd=ROOT):
     start=time.monotonic()
-    r=subprocess.run(cmd,cwd=cwd,text=True,capture_output=True,timeout=600)
+    r=subprocess.run(cmd,cwd=cwd,text=True,encoding='utf-8',capture_output=True,timeout=600)
     report=dict(command=cmd,returncode=r.returncode,elapsed_seconds=time.monotonic()-start,
                 stdout=r.stdout,stderr=r.stderr)
     if r.returncode:raise RuntimeError(json.dumps(report,indent=2))

@@ -1,0 +1,45 @@
+{
+  "bound": 3000,
+  "checks": 428449,
+  "counts": {
+    "automatic_seed_sources": 711,
+    "distinct_returned_states": 1457,
+    "distinct_target_fibres": 1457,
+    "integral_E": 5700,
+    "integral_M": 5268,
+    "integral_nontrivial_return_sources": 289,
+    "integral_returned_records": 11356,
+    "original_divisor_vectors": 1877004,
+    "primes": 211,
+    "proper_E": 2682,
+    "proper_M": 2592,
+    "repairable_E": 751,
+    "repairable_M": 724,
+    "returned_records": 1864,
+    "shells": 73798,
+    "square_repairable_E": 202,
+    "square_repairable_M": 673
+  },
+  "mathematical_sha256": {
+    "abstract.json": "d465e027df7e24549212b8017941faba8ec4916b82c33021cce2e74c04352427",
+    "examples.json": "7266952d1874a2b1ab03704cdc74afeb3ceb8ca4bf2f9f5ed991b29f6b1c402c",
+    "progressions.json": "25c2cd34eaf6cdaa68d1d5241593205879e189a9dac822213159173574f2cd54",
+    "scan.json": "c957f58958991788ffed844d7930f124791dcd4259d9aa20bf9c4910a520523b",
+    "sources.json": "fd316854a7e7f561bb29046453dd67168bc89840833171d059628d8bcbf8606c"
+  },
+  "rejected_false_implications": [
+    "Removing only a denominator always preserves the word",
+    "A minimal square factor always suffices",
+    "Removing every square always suffices",
+    "Every valid deletion is a square",
+    "Every E trace complement stays in the domain",
+    "The previous failed divisor can be silently kept",
+    "All seeds are automatic",
+    "A nonempty rational trace ensures cofactor71 occupancy",
+    "The terminal source disproves ES",
+    "Reducing the integer coefficient modulo two preserves its target count"
+  ],
+  "success": true,
+  "universal_ES_proved": false,
+  "universal_trace_source_occupancy_proved": false
+}

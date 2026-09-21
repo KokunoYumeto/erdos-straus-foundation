@@ -39,11 +39,26 @@ def isprime(n:int)->bool:
     return all(n%d for d in range(2,isqrt(n)+1))
 def budget(n:int)->int:return prod(p**((e+1)//2) for p,e in fs(n))
 def squarepart(n:int)->int:return prod(p**(e//2) for p,e in fs(n))
+def complement_budget(a:int,u:int)->int:
+    """For u|a^2, compute K(a^2/u)=a/squarepart(u) without factoring a^2/u."""
+    require(a*a%u==0,'complement budget domain')
+    b=squarepart(u)
+    require(a%b==0,'complement budget integrality')
+    return a//b
 def omega(n:int)->int:return sum(e for _,e in fs(n))
 def phi(n:int)->int:return prod((p-1)*p**(e-1) for p,e in fs(n))
 def square_group_order(m:int)->int:
     return prod(2**max(0,e-3) if p==2 else (p-1)*p**(e-1)//2
                 for p,e in fs(m))
+@lru_cache(None)
+def primitive_words(a:int)->tuple:
+    """All primitive (h,r,s,u) words for a=hrs,u=hr^2, cached by a."""
+    out=[]
+    for r in ds(a):
+        for s in ds(a//r):
+            if gcd(r,s)!=1:continue
+            h=a//(r*s);out.append((h,r,s,h*r*r))
+    return tuple(out)
 def fraction_pair(p,a,u,tag):
     R=4*a-p
     if tag=='E': b=a*a//u;c=p*p*u
@@ -109,10 +124,8 @@ def check_scan(path:Path)->dict:
         total['primes']+=1;pc=Counter()
         for a in range(p//4+1,(p+1)//2):
             R=4*a-p;total['shells']+=1
-            for r in ds(a):
-                for s in ds(a//r):
-                    if gcd(r,s)!=1:continue
-                    h=a//(r*s);u=h*r*r;total['original_divisor_vectors']+=1
+            for h,r,s,u in primitive_words(a):
+                    total['original_divisor_vectors']+=1
                     for tag,n in [('E',p*r+s),('M',r+s)]:
                         # Test the literal trace denominator by integer
                         # numerator/gcd arithmetic before constructing Fractions.
@@ -235,7 +248,7 @@ def check_examples(path:Path)->dict:
         tot+=1
     p=48116881;a=12032220;u=8;R=11999
     comp=a*a//u
-    require(4*budget(comp)>R,'complement obstruction retains budget')
+    require(4*complement_budget(a,u)>R,'complement obstruction retains budget')
     require(not any((4*w+p)%71==0 for w in ds(18,2)),'all cofactor71 words fail')
     for c,row in data['endpoint'].items():
         require(target(row['p'],row['a'],row['u'],c)==row,'independent endpoint')
@@ -298,7 +311,7 @@ def check_finite_models(path:Path)->dict:
         require(gcd(R,N+4*comp)==gcd(R,N+4*u)==delta*t,
                 'complement preserves exact denominator')
         require((N+4*comp)**2%R==0 and (N+4*comp)%R!=0 and
-                4*budget(comp)>R,
+                4*complement_budget(a,u)>R,
                 'proper complemented trace and oversized budget')
         for R1 in ds(R):
             if R1%4!=3:continue

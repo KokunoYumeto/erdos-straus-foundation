@@ -1,0 +1,277 @@
+{
+  "Lean_build": false,
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--seed-bound",
+        "100",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-divisor-descent-20260921\\results\\normal"
+      ],
+      "elapsed_seconds": 1.3896897000086028,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"bound\": 3000,\n  \"checks\": 428449,\n  \"counts\": {\n    \"automatic_seed_sources\": 711,\n    \"distinct_returned_states\": 1457,\n    \"distinct_target_fibres\": 1457,\n    \"integral_E\": 5700,\n    \"integral_M\": 5268,\n    \"integral_nontrivial_return_sources\": 289,\n    \"integral_returned_records\": 11356,\n    \"original_divisor_vectors\": 1877004,\n    \"primes\": 211,\n    \"proper_E\": 2682,\n    \"proper_M\": 2592,\n    \"repairable_E\": 751,\n    \"repairable_M\": 724,\n    \"returned_records\": 1864,\n    \"shells\": 73798,\n    \"square_repairable_E\": 202,\n    \"square_repairable_M\": 673\n  },\n  \"mathematical_sha256\": {\n    \"abstract.json\": \"d465e027df7e24549212b8017941faba8ec4916b82c33021cce2e74c04352427\",\n    \"examples.json\": \"7266952d1874a2b1ab03704cdc74afeb3ceb8ca4bf2f9f5ed991b29f6b1c402c\",\n    \"progressions.json\": \"25c2cd34eaf6cdaa68d1d5241593205879e189a9dac822213159173574f2cd54\",\n    \"scan.json\": \"c957f58958991788ffed844d7930f124791dcd4259d9aa20bf9c4910a520523b\",\n    \"sources.json\": \"fd316854a7e7f561bb29046453dd67168bc89840833171d059628d8bcbf8606c\"\n  },\n  \"rejected_false_implications\": [\n    \"Removing only a denominator always preserves the word\",\n    \"A minimal square factor always suffices\",\n    \"Removing every square always suffices\",\n    \"Every valid deletion is a square\",\n    \"Every E trace complement stays in the domain\",\n    \"The previous failed divisor can be silently kept\",\n    \"All seeds are automatic\",\n    \"A nonempty rational trace ensures cofactor71 occupancy\",\n    \"The terminal source disproves ES\",\n    \"Reducing the integer coefficient modulo two preserves its target count\"\n  ],\n  \"success\": true,\n  \"universal_ES_proved\": false,\n  \"universal_trace_source_occupancy_proved\": false\n}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "-O",
+        "verify.py",
+        "--bound",
+        "3000",
+        "--seed-bound",
+        "100",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-divisor-descent-20260921\\results\\optimized"
+      ],
+      "elapsed_seconds": 1.387918599997647,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"bound\": 3000,\n  \"checks\": 428449,\n  \"counts\": {\n    \"automatic_seed_sources\": 711,\n    \"distinct_returned_states\": 1457,\n    \"distinct_target_fibres\": 1457,\n    \"integral_E\": 5700,\n    \"integral_M\": 5268,\n    \"integral_nontrivial_return_sources\": 289,\n    \"integral_returned_records\": 11356,\n    \"original_divisor_vectors\": 1877004,\n    \"primes\": 211,\n    \"proper_E\": 2682,\n    \"proper_M\": 2592,\n    \"repairable_E\": 751,\n    \"repairable_M\": 724,\n    \"returned_records\": 1864,\n    \"shells\": 73798,\n    \"square_repairable_E\": 202,\n    \"square_repairable_M\": 673\n  },\n  \"mathematical_sha256\": {\n    \"abstract.json\": \"d465e027df7e24549212b8017941faba8ec4916b82c33021cce2e74c04352427\",\n    \"examples.json\": \"7266952d1874a2b1ab03704cdc74afeb3ceb8ca4bf2f9f5ed991b29f6b1c402c\",\n    \"progressions.json\": \"25c2cd34eaf6cdaa68d1d5241593205879e189a9dac822213159173574f2cd54\",\n    \"scan.json\": \"c957f58958991788ffed844d7930f124791dcd4259d9aa20bf9c4910a520523b\",\n    \"sources.json\": \"fd316854a7e7f561bb29046453dd67168bc89840833171d059628d8bcbf8606c\"\n  },\n  \"rejected_false_implications\": [\n    \"Removing only a denominator always preserves the word\",\n    \"A minimal square factor always suffices\",\n    \"Removing every square always suffices\",\n    \"Every valid deletion is a square\",\n    \"Every E trace complement stays in the domain\",\n    \"The previous failed divisor can be silently kept\",\n    \"All seeds are automatic\",\n    \"A nonempty rational trace ensures cofactor71 occupancy\",\n    \"The terminal source disproves ES\",\n    \"Reducing the integer coefficient modulo two preserves its target count\"\n  ],\n  \"success\": true,\n  \"universal_ES_proved\": false,\n  \"universal_trace_source_occupancy_proved\": false\n}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "check_independent.py",
+        "--input",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-divisor-descent-20260921\\results\\normal",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-divisor-descent-20260921\\results\\normal\\independent.json"
+      ],
+      "elapsed_seconds": 2.0707167999935336,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"checks\": 4084626,\n  \"examples\": {\n    \"displayed_sources\": 10,\n    \"prime_trial_bound\": 6936\n  },\n  \"imports_predecessor_or_main\": false,\n  \"models\": {\n    \"prime_progressions\": 91,\n    \"unit_models\": 200\n  },\n  \"negative_controls\": [\n    \"Removing only a denominator always preserves the word\",\n    \"A minimal square factor always suffices\",\n    \"Removing every square always suffices\",\n    \"Every valid deletion is a square\",\n    \"Every E trace complement stays in the domain\",\n    \"The previous failed divisor can be silently kept\",\n    \"All seeds are automatic\",\n    \"A nonempty rational trace ensures cofactor71 occupancy\",\n    \"The terminal source disproves ES\",\n    \"Reducing the integer coefficient modulo two preserves its target count\"\n  ],\n  \"scan\": {\n    \"bound\": 3000,\n    \"counts\": {\n      \"automatic_seed_sources\": 711,\n      \"distinct_returned_states\": 1457,\n      \"distinct_target_fibres\": 1457,\n      \"integral_E\": 5700,\n      \"integral_M\": 5268,\n      \"integral_nontrivial_return_sources\": 289,\n      \"integral_returned_records\": 11356,\n      \"original_divisor_vectors\": 1877004,\n      \"primes\": 211,\n      \"proper_E\": 2682,\n      \"proper_M\": 2592,\n      \"repairable_E\": 751,\n      \"repairable_M\": 724,\n      \"returned_records\": 1864,\n      \"shells\": 73798,\n      \"square_repairable_E\": 202,\n      \"square_repairable_M\": 673\n    },\n    \"signature_sha256\": \"f3439118c02d96c79998631b9b3c399efd01fb063c55744448ff495bf55ac03f\"\n  },\n  \"success\": true,\n  \"universal_ES_proved\": false\n}\nelapsed_seconds 2.0055188000260387\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "-O",
+        "check_independent.py",
+        "--input",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-divisor-descent-20260921\\results\\optimized",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-divisor-descent-20260921\\results\\optimized\\independent.json"
+      ],
+      "elapsed_seconds": 2.0575514000083786,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"checks\": 4084626,\n  \"examples\": {\n    \"displayed_sources\": 10,\n    \"prime_trial_bound\": 6936\n  },\n  \"imports_predecessor_or_main\": false,\n  \"models\": {\n    \"prime_progressions\": 91,\n    \"unit_models\": 200\n  },\n  \"negative_controls\": [\n    \"Removing only a denominator always preserves the word\",\n    \"A minimal square factor always suffices\",\n    \"Removing every square always suffices\",\n    \"Every valid deletion is a square\",\n    \"Every E trace complement stays in the domain\",\n    \"The previous failed divisor can be silently kept\",\n    \"All seeds are automatic\",\n    \"A nonempty rational trace ensures cofactor71 occupancy\",\n    \"The terminal source disproves ES\",\n    \"Reducing the integer coefficient modulo two preserves its target count\"\n  ],\n  \"scan\": {\n    \"bound\": 3000,\n    \"counts\": {\n      \"automatic_seed_sources\": 711,\n      \"distinct_returned_states\": 1457,\n      \"distinct_target_fibres\": 1457,\n      \"integral_E\": 5700,\n      \"integral_M\": 5268,\n      \"integral_nontrivial_return_sources\": 289,\n      \"integral_returned_records\": 11356,\n      \"original_divisor_vectors\": 1877004,\n      \"primes\": 211,\n      \"proper_E\": 2682,\n      \"proper_M\": 2592,\n      \"repairable_E\": 751,\n      \"repairable_M\": 724,\n      \"returned_records\": 1864,\n      \"shells\": 73798,\n      \"square_repairable_E\": 202,\n      \"square_repairable_M\": 673\n    },\n    \"signature_sha256\": \"f3439118c02d96c79998631b9b3c399efd01fb063c55744448ff495bf55ac03f\"\n  },\n  \"success\": true,\n  \"universal_ES_proved\": false\n}\nelapsed_seconds 1.9921936999890022\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "workbench.tex"
+      ],
+      "elapsed_seconds": 0.7575091000180691,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)\n restricted \\write18 enabled.\nentering extended mode\n(workbench.tex\nLaTeX2e <2025-11-01>\nL3 programming layer <2026-03-20>\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\size11.clo))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\fontenc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\inputenc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\lmodern.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amstext.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsgen.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsbsy.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsopn.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\amssymb.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\amsfonts.sty)\n) (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amscls\\amsthm.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/mathtools\\mathtools.st\ny (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\keyval.sty)\n (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/tools\\calc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/mathtools\\mhsetup.sty)\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype.st\ny\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/etoolbox\\etoolbox.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype-pd\nftex.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype.cf\ng))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\graphicx.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\graphics.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\trig.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics-cfg\\graphics.\ncfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics-def\\pdftex.de\nf)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\ifvtex.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\iftex.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.cfg)\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\hyperref.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/kvsetkeys\\kvsetkeys.st\ny)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/kvdefinekeys\\kvdefin\nekeys.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/pdfescape\\pdfescape.\nsty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/ltxcmds\\ltxcmds.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/pdftexcmds\\pdftexcmd\ns.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/infwarerr\\infwarerr.\nsty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hycolor\\hycolor.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\nameref.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/refcount\\refcount.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/gettitlestring\\getti\ntlestring.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/kvoptions\\kvoptions.st\ny)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/stringenc\\stringenc.\nsty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\pd1enc.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/intcalc\\intcalc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\puenc.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/url\\url.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/bitset\\bitset.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/bigintcalc\\bigintcal\nc.sty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\hpdftex.def\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/rerunfilecheck\\rerunfi\nlecheck.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/uniquecounter\\unique\ncounter.sty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\t1lmr.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/l3backend\\l3backend-pd\nftex.def) (workbench.aux)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-cmr.cfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/context/base/mkii\\supp-pdf.m\nkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/epstopdf-pkg\\epstopdf-\nbase.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/00miktex\\epstopdf-sys.\ncfg))\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(workbench.out) (workbench.out)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\ot1lmr.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omllmm.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omslmsy.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omxlmex.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\umsa.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-msa.cfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\umsb.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-msb.cfg)\n(core.tex [1{C:/Users/Floris/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{\nC:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/\nUsers/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Us\ners/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/U\nsers/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./\nfigures/divisor_descent_map.pdf>] [2 <./figures/nine_word_boundary.pdf>]\n[3] [4] [5] [6] [7] [8] [9]) (references.tex) [10] (workbench.aux) )<C:/Users/F\nloris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/\nFloris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users\n/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users\n/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/\nFloris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users\n/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm\n10.pfb>\nOutput written on workbench.pdf (10 pages, 476212 bytes).\nTranscript written on workbench.log.\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "workbench.tex"
+      ],
+      "elapsed_seconds": 0.660854499990819,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)\n restricted \\write18 enabled.\nentering extended mode\n(workbench.tex\nLaTeX2e <2025-11-01>\nL3 programming layer <2026-03-20>\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\size11.clo))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\fontenc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\inputenc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\lmodern.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amstext.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsgen.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsbsy.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsopn.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\amssymb.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\amsfonts.sty)\n) (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amscls\\amsthm.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/mathtools\\mathtools.st\ny (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\keyval.sty)\n (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/tools\\calc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/mathtools\\mhsetup.sty)\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype.st\ny\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/etoolbox\\etoolbox.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype-pd\nftex.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype.cf\ng))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\graphicx.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\graphics.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\trig.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics-cfg\\graphics.\ncfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics-def\\pdftex.de\nf)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\ifvtex.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\iftex.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.cfg)\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\hyperref.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/kvsetkeys\\kvsetkeys.st\ny)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/kvdefinekeys\\kvdefin\nekeys.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/pdfescape\\pdfescape.\nsty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/ltxcmds\\ltxcmds.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/pdftexcmds\\pdftexcmd\ns.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/infwarerr\\infwarerr.\nsty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hycolor\\hycolor.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\nameref.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/refcount\\refcount.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/gettitlestring\\getti\ntlestring.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/kvoptions\\kvoptions.st\ny)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/stringenc\\stringenc.\nsty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\pd1enc.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/intcalc\\intcalc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\puenc.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/url\\url.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/bitset\\bitset.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/bigintcalc\\bigintcal\nc.sty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\hpdftex.def\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/rerunfilecheck\\rerunfi\nlecheck.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/uniquecounter\\unique\ncounter.sty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\t1lmr.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/l3backend\\l3backend-pd\nftex.def) (workbench.aux)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-cmr.cfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/context/base/mkii\\supp-pdf.m\nkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/epstopdf-pkg\\epstopdf-\nbase.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/00miktex\\epstopdf-sys.\ncfg))\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(workbench.out) (workbench.out)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\ot1lmr.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omllmm.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omslmsy.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omxlmex.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\umsa.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-msa.cfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\umsb.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-msb.cfg)\n(core.tex [1{C:/Users/Floris/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{\nC:/Users/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/\nUsers/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Us\ners/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/U\nsers/Floris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./\nfigures/divisor_descent_map.pdf>] [2 <./figures/nine_word_boundary.pdf>]\n[3] [4] [5] [6] [7] [8] [9]) (references.tex) [10] (workbench.aux) )<C:/Users/F\nloris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/\nFloris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users\n/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Use\nrs/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users\n/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/\nFloris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users\n/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/User\ns/Floris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm\n10.pfb>\nOutput written on workbench.pdf (10 pages, 476212 bytes).\nTranscript written on workbench.log.\n"
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-r",
+        "110",
+        "-png",
+        "workbench.pdf",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-divisor-descent-20260921\\results\\rendered\\workbench\\page"
+      ],
+      "elapsed_seconds": 1.4070265000045765,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "preprint.tex"
+      ],
+      "elapsed_seconds": 0.5944366000185255,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)\n restricted \\write18 enabled.\nentering extended mode\n(preprint.tex\nLaTeX2e <2025-11-01>\nL3 programming layer <2026-03-20>\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\size11.clo))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\fontenc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\lmodern.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amstext.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsgen.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsbsy.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsopn.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\amssymb.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\amsfonts.sty)\n) (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amscls\\amsthm.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/mathtools\\mathtools.st\ny (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\keyval.sty)\n (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/tools\\calc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/mathtools\\mhsetup.sty)\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype.st\ny\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/etoolbox\\etoolbox.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype-pd\nftex.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype.cf\ng))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\graphicx.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\graphics.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\trig.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics-cfg\\graphics.\ncfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics-def\\pdftex.de\nf)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\ifvtex.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\iftex.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.cfg)\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\hyperref.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/kvsetkeys\\kvsetkeys.st\ny)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/kvdefinekeys\\kvdefin\nekeys.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/pdfescape\\pdfescape.\nsty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/ltxcmds\\ltxcmds.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/pdftexcmds\\pdftexcmd\ns.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/infwarerr\\infwarerr.\nsty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hycolor\\hycolor.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\nameref.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/refcount\\refcount.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/gettitlestring\\getti\ntlestring.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/kvoptions\\kvoptions.st\ny)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/stringenc\\stringenc.\nsty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\pd1enc.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/intcalc\\intcalc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\puenc.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/url\\url.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/bitset\\bitset.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/bigintcalc\\bigintcal\nc.sty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\hpdftex.def\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/rerunfilecheck\\rerunfi\nlecheck.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/uniquecounter\\unique\ncounter.sty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\t1lmr.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/l3backend\\l3backend-pd\nftex.def) (preprint.aux)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-cmr.cfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/context/base/mkii\\supp-pdf.m\nkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/epstopdf-pkg\\epstopdf-\nbase.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/00miktex\\epstopdf-sys.\ncfg))\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(preprint.out) (preprint.out)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\ot1lmr.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omllmm.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omslmsy.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omxlmex.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\umsa.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-msa.cfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\umsb.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-msb.cfg)\n[1{C:/Users/Floris/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/F\nloris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Flor\nis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Flo\nris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Floris\n/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Flori\ns/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [2] [3 <./fi\ngures/nine_word_boundary.pdf>] (preprint.aux) )<C:/Users/Floris/AppData/Local/P\nrograms/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Floris/AppData/Local/\nPrograms/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Floris/AppData/Local\n/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Floris/AppData/Loca\nl/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Floris/AppData/Loca\nl/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Floris/AppData/Lo\ncal/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Floris/AppData/Lo\ncal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>\nOutput written on preprint.pdf (3 pages, 245801 bytes).\nTranscript written on preprint.log.\n"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "preprint.tex"
+      ],
+      "elapsed_seconds": 0.5851929999771528,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)\n restricted \\write18 enabled.\nentering extended mode\n(preprint.tex\nLaTeX2e <2025-11-01>\nL3 programming layer <2026-03-20>\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\size11.clo))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/base\\fontenc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\lmodern.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amstext.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsgen.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsbsy.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsmath\\amsopn.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\amssymb.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\amsfonts.sty)\n) (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amscls\\amsthm.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/mathtools\\mathtools.st\ny (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\keyval.sty)\n (C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/tools\\calc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/mathtools\\mhsetup.sty)\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype.st\ny\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/etoolbox\\etoolbox.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype-pd\nftex.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\microtype.cf\ng))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\graphicx.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\graphics.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics\\trig.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics-cfg\\graphics.\ncfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/graphics-def\\pdftex.de\nf)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\ifvtex.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/iftex\\iftex.sty))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/geometry\\geometry.cfg)\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\hyperref.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/kvsetkeys\\kvsetkeys.st\ny)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/kvdefinekeys\\kvdefin\nekeys.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/pdfescape\\pdfescape.\nsty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/ltxcmds\\ltxcmds.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/pdftexcmds\\pdftexcmd\ns.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/infwarerr\\infwarerr.\nsty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hycolor\\hycolor.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\nameref.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/refcount\\refcount.sty)\n\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/gettitlestring\\getti\ntlestring.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/kvoptions\\kvoptions.st\ny)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/stringenc\\stringenc.\nsty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\pd1enc.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/intcalc\\intcalc.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\puenc.def)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/url\\url.sty)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/bitset\\bitset.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/bigintcalc\\bigintcal\nc.sty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/hyperref\\hpdftex.def\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/rerunfilecheck\\rerunfi\nlecheck.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/generic/uniquecounter\\unique\ncounter.sty)))\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\t1lmr.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/l3backend\\l3backend-pd\nftex.def) (preprint.aux)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-cmr.cfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/context/base/mkii\\supp-pdf.m\nkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/epstopdf-pkg\\epstopdf-\nbase.sty\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/00miktex\\epstopdf-sys.\ncfg))\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(preprint.out) (preprint.out)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\ot1lmr.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omllmm.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omslmsy.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/lm\\omxlmex.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\umsa.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-msa.cfg)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/amsfonts\\umsb.fd)\n(C:\\Users\\Floris\\AppData\\Local\\Programs\\MiKTeX\\tex/latex/microtype\\mt-msb.cfg)\n[1{C:/Users/Floris/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/F\nloris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Flor\nis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Flo\nris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Floris\n/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Flori\ns/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [2] [3 <./fi\ngures/nine_word_boundary.pdf>] (preprint.aux) )<C:/Users/Floris/AppData/Local/P\nrograms/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Floris/AppData/Local/\nPrograms/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Floris/AppData/Local\n/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Floris/AppData/Loca\nl/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Floris/AppData/Loca\nl/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Floris/AppData/Loc\nal/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Floris/AppData/Lo\ncal/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Floris/AppData/Lo\ncal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>\nOutput written on preprint.pdf (3 pages, 245801 bytes).\nTranscript written on preprint.log.\n"
+    },
+    {
+      "command": [
+        "pdftoppm",
+        "-r",
+        "110",
+        "-png",
+        "preprint.pdf",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-divisor-descent-20260921\\results\\rendered\\preprint\\page"
+      ],
+      "elapsed_seconds": 0.4498103999940213,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "independent": {
+    "checks": 4084626,
+    "examples": {
+      "displayed_sources": 10,
+      "prime_trial_bound": 6936
+    },
+    "imports_predecessor_or_main": false,
+    "models": {
+      "prime_progressions": 91,
+      "unit_models": 200
+    },
+    "negative_controls": [
+      "Removing only a denominator always preserves the word",
+      "A minimal square factor always suffices",
+      "Removing every square always suffices",
+      "Every valid deletion is a square",
+      "Every E trace complement stays in the domain",
+      "The previous failed divisor can be silently kept",
+      "All seeds are automatic",
+      "A nonempty rational trace ensures cofactor71 occupancy",
+      "The terminal source disproves ES",
+      "Reducing the integer coefficient modulo two preserves its target count"
+    ],
+    "scan": {
+      "bound": 3000,
+      "counts": {
+        "automatic_seed_sources": 711,
+        "distinct_returned_states": 1457,
+        "distinct_target_fibres": 1457,
+        "integral_E": 5700,
+        "integral_M": 5268,
+        "integral_nontrivial_return_sources": 289,
+        "integral_returned_records": 11356,
+        "original_divisor_vectors": 1877004,
+        "primes": 211,
+        "proper_E": 2682,
+        "proper_M": 2592,
+        "repairable_E": 751,
+        "repairable_M": 724,
+        "returned_records": 1864,
+        "shells": 73798,
+        "square_repairable_E": 202,
+        "square_repairable_M": 673
+      },
+      "signature_sha256": "f3439118c02d96c79998631b9b3c399efd01fb063c55744448ff495bf55ac03f"
+    },
+    "success": true,
+    "universal_ES_proved": false
+  },
+  "independent_human_review": false,
+  "independent_machine_review": true,
+  "main": {
+    "bound": 3000,
+    "checks": 428449,
+    "counts": {
+      "automatic_seed_sources": 711,
+      "distinct_returned_states": 1457,
+      "distinct_target_fibres": 1457,
+      "integral_E": 5700,
+      "integral_M": 5268,
+      "integral_nontrivial_return_sources": 289,
+      "integral_returned_records": 11356,
+      "original_divisor_vectors": 1877004,
+      "primes": 211,
+      "proper_E": 2682,
+      "proper_M": 2592,
+      "repairable_E": 751,
+      "repairable_M": 724,
+      "returned_records": 1864,
+      "shells": 73798,
+      "square_repairable_E": 202,
+      "square_repairable_M": 673
+    },
+    "mathematical_sha256": {
+      "abstract.json": "d465e027df7e24549212b8017941faba8ec4916b82c33021cce2e74c04352427",
+      "examples.json": "7266952d1874a2b1ab03704cdc74afeb3ceb8ca4bf2f9f5ed991b29f6b1c402c",
+      "progressions.json": "25c2cd34eaf6cdaa68d1d5241593205879e189a9dac822213159173574f2cd54",
+      "scan.json": "c957f58958991788ffed844d7930f124791dcd4259d9aa20bf9c4910a520523b",
+      "sources.json": "fd316854a7e7f561bb29046453dd67168bc89840833171d059628d8bcbf8606c"
+    },
+    "rejected_false_implications": [
+      "Removing only a denominator always preserves the word",
+      "A minimal square factor always suffices",
+      "Removing every square always suffices",
+      "Every valid deletion is a square",
+      "Every E trace complement stays in the domain",
+      "The previous failed divisor can be silently kept",
+      "All seeds are automatic",
+      "A nonempty rational trace ensures cofactor71 occupancy",
+      "The terminal source disproves ES",
+      "Reducing the integer coefficient modulo two preserves its target count"
+    ],
+    "success": true,
+    "universal_ES_proved": false,
+    "universal_trace_source_occupancy_proved": false
+  },
+  "normal_optimized_identical": {
+    "abstract.json": true,
+    "examples.json": true,
+    "independent.json": true,
+    "progressions.json": true,
+    "scan.json": true,
+    "sources.json": true,
+    "summary.json": true
+  },
+  "pdf": {
+    "preprint": {
+      "PNG_sha256": {
+        "page-1.png": "8c19dd8ed3e0fe0cc904d444bee7b482b30a1c3871647605f930bd6031816356",
+        "page-2.png": "c1cc00fd0f175fe7f815b445e5d31e025b4b71d9bf9fe4d9c98041f9de5ec9f5",
+        "page-3.png": "1cab58e78c4ac08dcf807457d7f6dab563c6c8a883fa3c17b6dc8638ce468346"
+      },
+      "pages": 3,
+      "text_sha256": "3c84b11c5785e0e95d74f44e6676dacaf4facf141e9f3290e651706cc66c1ade"
+    },
+    "workbench": {
+      "PNG_sha256": {
+        "page-01.png": "3d066f18783fc6f65a4cc97a6825e91185e9a26e4ab9a282abf85b1a3205ea55",
+        "page-02.png": "f5e472699b9364cc1540ea43ebd128fcc8b3ccbc6f1a9ffeedc0828e69d0bbba",
+        "page-03.png": "e0dde031ada965bc9959525f7373685dad7b247bf44360de684556cf5f911ae5",
+        "page-04.png": "623b69d9b5a718a38de0df155b5d772012d2bd3e5e3bc1ffcebeeeb1c5c5e68a",
+        "page-05.png": "2c19d34be11b670a8a8ba0c91bbf69361c23c5b07164db5269ce0d972a4a8ab1",
+        "page-06.png": "7373add5b04845e15e4d17e1b7c0f21c6ead6c03f2ac508cc32cd58641453068",
+        "page-07.png": "fe68cbec6b653d67da9d937b7c557156ec2ecccc0ee81bca5d0c125d97ccf7bf",
+        "page-08.png": "f489b4b8a90ddb0937fb298ad5f985c210f37c44d9633933de4f43375e84877a",
+        "page-09.png": "85fa4816168bb0b04b0b246c84c310f0c2a5f06c75ac47994bd1ab7909be404e",
+        "page-10.png": "b1e342cbd0409ef9789a92513c4fd6be36ea816db90c43ffd0e9c78d23d793f5"
+      },
+      "pages": 10,
+      "text_sha256": "a5aab203d13ebbde5a00a19afad238e5c5c0f830d64c939c92b9ec8407ec7e0f"
+    }
+  },
+  "success": true,
+  "universal_ES_proved": false
+}

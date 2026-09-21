@@ -41,8 +41,8 @@ source-located passages; it is not presented as the complete history.
 
 ## Start reading
 
-**17--20 September structural continuation:** a seven-turn programme is preserved
-in ten linked records because Turns 6 and 7 have complementary
+**17--21 September structural continuation:** a seven-turn programme is preserved
+in twelve linked records because Turns 6 and 7 have complementary
 continuations. Each record retains both the result and the exact limitation
 that determines the remaining mathematical question. The
 [dated proof bulletin](DAILY_RESULTS_20260919.md) gives stable result IDs and
@@ -190,6 +190,28 @@ proof locators without reconstructing a programme timeline.
     metric separation and heat-scale split consume the pinned NG20--NG21
     theorem on a stipulated off-line quartet. They do not assert such a zero,
     an RH conclusion, universal ES occupancy, or a new integer witness.
+21. [Exact original-divisor descent and the nine-word boundary](research/incoming/es-turn07-divisor-descent-20260921/README.md)
+    classifies every same-channel return from a rational positive trace source
+    that keeps the original divisor word and replaces its residual by a divisor.
+    The complete positive domain is
+    \(k\mid R\), \(d\mid k\), \(k\equiv1\pmod{4K(u)}\), with
+    \(R'=R/k\) and \(a'=(p+R')/4\); its global inverse fibres and free-abelian
+    kernel are explicit.  A uniform strict descent exists for exactly the nine
+    words \(u\mid36\).  For every other word a reduced CRT/Dirichlet family
+    gives infinitely many proper middle trace sources with no same-word return,
+    even after the middle complement.  Separate endpoint solutions show that
+    these are method obstructions, not Erdős--Straus counterexamples.
+22. [Global sign for the literal odd receiving determinant](research/incoming/es-turn07-global-receiver-determinant-20260921/README.md)
+    proves, for every positive integral witness at every prime
+    \(p\equiv1\pmod {12}\), the strict bound
+    \(\mathfrak N<-(125873811/262144)p^8\).  For
+    \(p\equiv1\pmod {24}\), the constant improves to
+    \(327448292668/47045881\).  It keeps the original complex receiver,
+    determinant phase, root labels and square-root signs and obtains
+    \(|\det O|>4cp^8/S^3\) and
+    \(\|O^{-1}\|_2<360S^9/(cp^8)\).  Its exact real counterdomain has one
+    collision-free singularity outside both integral coordinate domains.
+    [Pinned theorem and complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6bdfce25724b95a4b30e97f0df69879a87793302/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex#L1-L488).
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
@@ -228,6 +250,19 @@ minimum, computes the full ES-labelled reducing enlargement and mixed
 covariance, and evaluates every two-centre collision exponent. The finite
 source and collision theorems are unconditional at their stated inputs; the
 metric asymptotics retain their explicit dependence on NG20--NG21.
+The twenty-first continuation acts earlier in the arithmetic pipeline: it
+starts from a rational positive tail pair with integral trace, computes every
+residual-divisor arrow back into the original integral source, and proves the
+exact fixed-word boundary of that arrow.  It strengthens the trace-rigidity
+and fixed-target capacity results without manufacturing the still-missing
+initial trace source at an arbitrary prime.
+The twenty-second continuation closes the odd-receiver singularity question
+on the complete integral witness domain.  Its exterior and middle polynomial
+certificates remove the earlier three-character restriction and give an
+explicit inverse bound.  The theorem is conditional only in the literal sense
+that it starts from an existing Erdős--Straus witness; it does not force the
+first occupied source at a prescribed prime.  The unique positive-real
+singularity and a failed-gate rational source record the two exact boundaries.
 After composing the earlier diagonal and radius-eight returns, every residual
 exterior state has shape radius at least nine. These results isolate, but do
 not prove, the remaining unbounded-shape occupancy statement. None asserts the
@@ -236,6 +271,10 @@ Each directory contains the complete proof, exact maps, executable certificates,
 source lineage, negative controls, and an explicit handoff where one was made.
 The [20 September proof bulletin](DAILY_RESULTS_20260920.md) gives stable IDs for
 the quartic, fibre, conductor, monodromy, boundary and root-algebra results.
+The [21 September proof bulletin](DAILY_RESULTS_20260921.md) gives stable IDs
+for the trace descent, complete arrow fibres, nine-word classification,
+optimality construction, global receiver sign, inverse bound and exact real
+counterdomain.
 
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with
