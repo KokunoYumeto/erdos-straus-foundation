@@ -1,0 +1,15 @@
+{
+  "schema": "github-publication-receipt-v1",
+  "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
+  "branch": "main",
+  "published_at": "2026-09-21T10:21:06+02:00",
+  "proof_source_commit": "6bdfce25724b95a4b30e97f0df69879a87793302",
+  "content_integration_commit": "72c81661bb68f2b5c33d102642c4471f44e61903",
+  "content_remote_commit": "72c81661bb68f2b5c33d102642c4471f44e61903",
+  "content_remote_verified": true,
+  "publication_mode": "direct fast-forward push",
+  "additive_path": "research/incoming/es-turn07-global-receiver-determinant-20260921",
+  "deletions": 0,
+  "public_entry": "https://github.com/KokunoYumeto/erdos-straus-foundation/tree/72c81661bb68f2b5c33d102642c4471f44e61903/research/incoming/es-turn07-global-receiver-determinant-20260921",
+  "scope": "Complete global-sign theorem for the literal odd receiver on every existing positive integral Erdős–Straus witness at primes congruent to 1 modulo 12, its quantitative determinant and inverse bounds, and its exact positive-real counterdomain. No universal occupancy or Erdős–Straus resolution is asserted."
+}

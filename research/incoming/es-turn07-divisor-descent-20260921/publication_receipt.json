@@ -1,0 +1,15 @@
+{
+  "schema": "github-publication-receipt-v1",
+  "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
+  "branch": "main",
+  "published_at": "2026-09-21T10:21:06+02:00",
+  "proof_source_commit": "1400e6301429cf9c66d8071e107be9dc41f5b907",
+  "content_integration_commit": "72c81661bb68f2b5c33d102642c4471f44e61903",
+  "content_remote_commit": "72c81661bb68f2b5c33d102642c4471f44e61903",
+  "content_remote_verified": true,
+  "publication_mode": "direct fast-forward push",
+  "additive_path": "research/incoming/es-turn07-divisor-descent-20260921",
+  "deletions": 0,
+  "public_entry": "https://github.com/KokunoYumeto/erdos-straus-foundation/tree/72c81661bb68f2b5c33d102642c4471f44e61903/research/incoming/es-turn07-divisor-descent-20260921",
+  "scope": "Complete same-word residual-divisor arrow theorem, fibres, kernel, exact nine-word universal class, and optimality construction. The result classifies this descent system and does not assert universal trace-source occupancy or resolve the Erdős–Straus conjecture."
+}
