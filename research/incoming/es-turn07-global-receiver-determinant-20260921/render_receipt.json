@@ -1,0 +1,35 @@
+{
+  "workbench": {
+    "pdf_sha256": "84efbaefd0b15dbbe7687989fb280a898660066010c3f6e4fa14a52cf4af914c",
+    "pages": 9,
+    "overfull_boxes": 0,
+    "undefined_warning": false,
+    "fatal_error": false,
+    "visual_inspection": "passed on all nine final rendered pages",
+    "pixel_files": {
+      "rendered/workbench/page-1.png": "dbcb292589ab320c062244bdf7f491a9ddb6f0e284466513c53c680a6f9e5227",
+      "rendered/workbench/page-2.png": "5829701edeb105398b39fb243e6edfbcfae86d18c4968456bd87b158549e1dea",
+      "rendered/workbench/page-3.png": "eabaf020d6c2b5a93af747c7541fc84a842cd0ac6d1bef93e651bc4c0cfaa2eb",
+      "rendered/workbench/page-4.png": "df1a390c2554c048331056e1f9f0ce6d1f51e0d184fa0becd37866bc160c8490",
+      "rendered/workbench/page-5.png": "659aa4c68361c5ad393c78f511ebe66fe8397450ebde6d95b6a4ad63760726ae",
+      "rendered/workbench/page-6.png": "623ecd24473dc923f45d5049cf1004b8060cc43229c5ea3e08e2f0e1dbb33a08",
+      "rendered/workbench/page-7.png": "b8cf982a5e597ee402313923b9879dcfab2e4a5060f10a21cf5e1a4cc347d2e4",
+      "rendered/workbench/page-8.png": "d94c27af09ba92342924e3645d49663c6bae9c035926f0124bfc49f830e30dd8",
+      "rendered/workbench/page-9.png": "43ee52248fa3fcb737b7ce23af88533e036cfb7c1836404e701ff744b620ad53"
+    }
+  },
+  "preprint": {
+    "pdf_sha256": "36b7fd105548e3dcc2cce070d22f8b9511eb71556faf8b46deb0f8ee7d204584",
+    "pages": 4,
+    "overfull_boxes": 0,
+    "undefined_warning": false,
+    "fatal_error": false,
+    "visual_inspection": "passed on all four final rendered pages",
+    "pixel_files": {
+      "rendered/preprint/page-1.png": "56d5fca5a06257358a2afd4fc99548af0cddb9b860867acc3a7e8aaaaa74f7bb",
+      "rendered/preprint/page-2.png": "18d2b14e7420724dcdffad7159ed99cbb16c1ecae142336d4e434482653b4b8c",
+      "rendered/preprint/page-3.png": "d1db7a1e0349d89d95f9d2c12cceba9b51e9ddd6ff98536a8f9f85bfd9b62d7a",
+      "rendered/preprint/page-4.png": "c4c79c0b22c7c65ee6613a15e302f961786096a7e1ec91d8a6efe850229c0ce0"
+    }
+  }
+}

@@ -1,0 +1,712 @@
+[**Cumulative Turn 6–7 handoff, with this continuation and the preceding archive preserved**](sandbox:/mnt/data/ES_Turns6_7_With_Global_Receiver_Determinant_20260921.zip)
+
+[**Current research package**](sandbox:/mnt/data/ES_Turn7_Global_Receiver_Determinant_20260921.zip) · [Eight-page complete proof](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/workbench.pdf) · [Three-page preprint](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/preprint.pdf) · [Complete LaTeX](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/core.tex) · [Fresh-extraction receipt](sandbox:/mnt/data/ES_Turn7_Global_Receiver_Determinant_Receipt_20260921.json)
+
+## Turn 7: the integral receiving-determinant question is resolved
+
+**The original odd receiving matrix is nonsingular at every positive integral Erdős–Straus witness at every prime \(p\equiv1\pmod{12}\).** No additional quadratic-character restriction is required.
+
+The supplied audit had proved this only under
+
+$$
+\left(\frac{-511}{p}\right)
+=
+\left(\frac{1241}{p}\right)
+=
+\left(\frac{-15}{p}\right)=-1.
+$$
+
+It correctly left the other integral cases unresolved, because actual \(p\)-adic singular points exist outside that sufficient domain. The present proof uses the global integer source rather than refining that local test.  
+
+The result is quantitative. Let
+
+$$
+S=p+x+y+z
+$$
+
+and let \(\mathfrak N=S^6F\) be the audit’s exact integer receiving numerator. Then
+
+$$
+\boxed{
+\mathfrak N<
+-\frac{125873811}{262144}\,p^8<0.
+}
+$$
+
+For \(p\equiv1\pmod{24}\), including every one of the six hard progressions, this strengthens to
+
+$$
+\boxed{
+\mathfrak N<
+-\frac{327448292668}{47045881}\,p^8.
+}
+$$
+
+The original inverse consequently satisfies
+
+$$
+\boxed{
+\|O^{-1}\|_2<
+\frac{360}{c}\frac{S^9}{p^8},
+}
+$$
+
+with the applicable displayed constant \(c\), and with the original metric factors retained when changing norms.
+
+This closes a specific unbounded arithmetic question in the new attachment. **It does not prove that an ES witness exists at every prime.** An explicit failed divisor gate below already has a nonsingular receiver, so that remaining distinction is mathematical, not merely a qualification about the proof.
+
+## 1. The determinant is the one in the supplied construction
+
+Retain the literal ordered roots
+
+$$
+(\ell_0,\ell_1,\ell_2,\ell_3)=(p,x,y,z)
+$$
+
+and the original normalization
+
+$$
+H(T)=-\frac1S\prod_{i=0}^{3}(T-\ell_i)
+=AT^4+T^3+BT^2+CT+D.
+$$
+
+At each simple root, retain
+
+$$
+d_i=H'(\ell_i),\qquad \xi_i^2d_i=1,
+$$
+
+including both square-root signs.
+
+The original odd receiving column is
+
+$$
+o_i=\xi_i
+\begin{pmatrix}
+1\\
+-id_i\\
+Ad_i^2+2\ell_id_i\\
+i(7\ell_i^2d_i-13d_i^2)
+\end{pmatrix}.
+$$
+
+Its determinant is governed by
+
+$$
+\begin{aligned}
+F={}&20(3C-B^2)+A(87B^3-282BC-51D)\\
+&+A^2(-28B^4+22B^2C+431C^2+204BD)\\
+&+A^3(224B^2D-168BC^2-856CD)-448A^4D^2.
+\end{aligned}
+$$
+
+These are the supplied receiver and polynomial, also checked against the current public continuation’s Track I, equations E1–E6—not a replacement chosen to have a favourable sign. 
+
+With
+
+$$
+\epsilon=A^2\prod_{i<j}(\ell_j-\ell_i)\prod_i\xi_i\in\{1,-1\},
+$$
+
+the exact determinant is
+
+$$
+\boxed{
+\det O=\frac{4\epsilon F}{A^3}
+=-\frac{4\epsilon\mathfrak N}{S^3}.
+}
+$$
+
+The numerator has a fixed negative sign on the integral arithmetic domain. The determinant’s sign still retains \(\epsilon\), as it must.
+
+Writing \(e_j\) for the elementary symmetric functions of the four literal roots gives
+
+$$
+(A,B,C,D)=(-S^{-1},-e_2/S,e_3/S,-e_4/S).
+$$
+
+Substitution shows that \(\mathfrak N\) is an integer polynomial homogeneous of degree eight in those roots. No inverse of \(S\) modulo \(p\) is assumed.
+
+The verifier also reconstructs the receiving determinant universally: it reduces the four component polynomials modulo \(H\), forms their coefficient matrix in \(1,T,T^2,T^3\), and proves its determinant is \(4F/A\). Evaluation at the roots and the retained signed Vandermonde then give the displayed formula.
+
+## 2. Every integral witness enters the original arithmetic domains used in the proof
+
+For a prime \(p\equiv1\pmod{12}\), the four literal roots are distinct. A denominator equal to \(p\) would give
+
+$$
+(3y-p)(3z-p)=p^2,
+$$
+
+whose positive factors have incompatible residues modulo three. Two equal denominators give a divisor of \(p^2\), and each of its three possibilities makes the remaining denominator nonintegral.
+
+Every positive integral witness also has a unique smallest denominator
+
+$$
+\frac p4<a<\frac p2.
+$$
+
+The less immediate case is the exterior one. Write its unique \(p\)-divisible denominator as \(pk\), and the other two as \(a\le b\), both units at \(p\). Then
+
+$$
+(4k-1)ab=pk(a+b).
+$$
+
+Consequently \(4k-1=pt\), with \(t\equiv3\pmod4\) and \(\gcd(k,t)=1\). Writing
+
+$$
+a=gr,\qquad b=gs,\qquad \gcd(r,s)=1,\quad r\le s,
+$$
+
+gives
+
+$$
+k=drs,\qquad r+s=t\lambda,\qquad g=d\lambda.
+$$
+
+The contrary inequality \(a\ge p/2\) would force
+
+$$
+2dr(r-s)\ge-1.
+$$
+
+Its left side is an even nonpositive integer, so \(r=s=1\), contradicting \(t\mid r+s\).
+
+For the middle case, its two \(p\)-divisible denominators make \(a\ge p/2\) incompatible with the reciprocal sum.
+
+Thus every witness is captured by the complete first-half source
+
+$$
+R=4a-p,\qquad u\mid a^2.
+$$
+
+Its original ordered formulas are
+
+$$
+\begin{aligned}
+E:\quad&
+R\mid4u+1,\qquad
+(a,y,z)=
+\left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\\[1mm]
+M:\quad&
+R\mid a+u,\qquad
+(a,y,z)=
+\left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+\end{aligned}
+$$
+
+The primewise normalization
+
+$$
+g=\gcd(a,u),\qquad
+(h,r,s)=\left(\frac{g^2}{u},\frac ug,\frac ag\right)
+$$
+
+and the ordered inverse
+
+$$
+u=\frac{a^2}{Ry-pa}\quad(E),\qquad
+u=\frac{pa^2}{Ry-pa}\quad(M)
+$$
+
+remain attached. This is the inherited Type-I/II framework, with the completeness and present coordinate conventions proved explicitly here (Elsholtz & Tao, 2013, §2). ([arXiv][1])
+
+The two global arithmetic facts that drive the determinant proof are now specific:
+
+For E,
+
+$$
+\boxed{u\ge2.}
+$$
+
+The word \(u=1\) would require \(R\mid5\), impossible for \(R\equiv3\pmod4\). Moreover,
+
+$$
+\left(\frac up\right)=-1.
+$$
+
+Primewise reciprocity on the original factors gives \((u/R)=(u/p)\), and the exterior target is \(-1/4\). At \(p\equiv1\pmod{24}\), both two and three are residues, so
+
+$$
+\boxed{u\ge5.}
+$$
+
+For M, order only the last two denominators and write
+
+$$
+y=pb,\qquad z=pc,\qquad b<c.
+$$
+
+Neither can equal \(p\). Their original integrality gives
+
+$$
+\boxed{b\ge2,\qquad c-b\ge1.}
+$$
+
+These inequalities are stronger than positivity of a real quartic or membership in a \(p\)-adic valuation class.
+
+## 3. The exterior numerator has a universal monotone certificate
+
+Set
+
+$$
+w=\frac pR>1.
+$$
+
+The normalized literal roots in the raw exterior formula are
+
+$$
+\left(
+1,\frac{w+1}{4w},
+\frac{w+1}{4}+\frac{(w+1)^2}{16wu},
+\frac{w+1}{4}+wu
+\right).
+$$
+
+Define \(P_E\) by the exact polynomial division
+
+$$
+\begin{aligned}
+-64u^2P_E(u,w)=\mathfrak N\bigl(
+&16wu,\ 4u(w+1),\\
+&(w+1)(4wu+w+1),\
+4wu(w+1+4wu)
+\bigr).
+\end{aligned}
+$$
+
+The right side is divisible by \(64u^2\) in \(\mathbb Z[u,w]\), and \(P_E\) has bidegree \((12,16)\). Consequently,
+
+$$
+\boxed{
+-\frac{\mathfrak N(p,a,y,z)}{p^8}
+=
+Q_E(u,w)
+=
+\frac{P_E(u,w)}{2^{26}u^6w^8}.
+}
+$$
+
+The decisive finite polynomial statement is:
+
+$$
+\boxed{
+\begin{gathered}
+P_E(1+X,1+Y),\\
+(u\,\partial_uP_E-6P_E)(1+X,1+Y),\\
+(w\,\partial_wP_E-8P_E)(1+X,1+Y)
+\end{gathered}
+}
+$$
+
+each has **221 positive integer coefficients**, occupying the complete rectangle
+
+$$
+0\le i\le12,\qquad0\le j\le16.
+$$
+
+The derivative numerators retain the \(-6P_E\) and \(-8P_E\) contributions from the actual denominator. Dropping them would prove something about a different function.
+
+It follows that \(Q_E\) is strictly increasing in each variable on \([1,\infty)^2\). Its exact boundary is
+
+$$
+\Phi(u)=Q_E(u,1)
+=\frac{(2u-1)^2}{4096u^6}V(u),
+$$
+
+where
+
+$$
+\begin{aligned}
+V(u)={}&5120u^{10}+14592u^9+7232u^8-6400u^7+1728u^6\\
+&+3904u^5+432u^4-400u^3+113u^2+57u+5.
+\end{aligned}
+$$
+
+In particular,
+
+$$
+\boxed{
+\Phi(2)=\frac{125873811}{262144},
+\qquad
+\Phi(5)=\frac{1310003654463}{12800000}
+>
+\frac{327448292668}{47045881}.
+}
+$$
+
+Every original E state has \(w>1\), so these give the strict bounds claimed above. The same positivity holds on the larger **unfiltered rational exterior domain** \(u,w\ge1\), even when the original gate fails.
+
+### Why the coefficient calculation is a universal proof
+
+The [complete coefficient arrays](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/certificates/polynomial_certificates.json) are supplied, not replaced by their minima.
+
+The main verifier expands the original polynomial, performs the exact division, and checks all translated coefficients. The separate checker evaluates the **unexpanded supplied \(S^6F\)** on the entire \(17\times17\) grid
+
+$$
+u,w\in\{1,\ldots,17\}.
+$$
+
+After clearing the specified factor, both sides have bidegree at most \((16,16)\). Polynomial uniqueness, applied successively in the two variables, proves the complete identity from this grid. The checker independently computes both derivatives and every binomial translation.
+
+This is a finite computer-assisted polynomial lemma. It is not a sign conjecture inferred from tested primes.
+
+## 4. The middle integer gap gives the stronger uniform constant
+
+For M, let
+
+$$
+L=4bc-b-c,\qquad
+T=(b+c)L+bc,\qquad V=b^2c^2.
+$$
+
+The normalized smallest denominator is \(a/p=bc/L\). If \(s\) and \(v\) denote the normalized denominator sum and product, then
+
+$$
+s=T/L,\qquad v=V/L.
+$$
+
+The exact determinant expression is
+
+$$
+-\frac{\mathfrak N}{p^8}=\mathcal P(s,v),
+$$
+
+where
+
+$$
+\begin{aligned}
+\mathcal P(s,v)={}&7168v^4-(5568s^2+5728s-5888)v^3\\
+&+(320s^4+2744s^3+705s^2-3350s-903)v^2\\
+&+(-140s^5-443s^4+440s^3+390s^2+70s-249)v\\
+&+20s^6-7s^5-26s^4-7s^3+20s^2.
+\end{aligned}
+$$
+
+Use the actual integer cone
+
+$$
+b=2+X,\qquad c=3+X+Y,\qquad X,Y\ge0.
+$$
+
+Define
+
+$$
+H_M(X,Y)=
+\left[L^6\mathcal P(T/L,V/L)\right]_{b=2+X,\ c=3+X+Y},
+$$
+
+and retain
+
+$$
+L_M=4X^2+4XY+18X+7Y+19.
+$$
+
+The exact comparison polynomial
+
+$$
+\boxed{
+47045881H_M-327448292668L_M^6
+}
+$$
+
+has zero constant coefficient and **191 nonzero positive integer coefficients**. Its coefficients of \(X\) and \(Y\) are positive. Therefore
+
+$$
+\boxed{
+-\frac{\mathfrak N}{p^8}
+\ge
+\frac{327448292668}{47045881}.
+}
+$$
+
+Equality in the larger real cone requires \(X=Y=0\), so \(b=2,c=3\) and
+
+$$
+a=\frac{6p}{19}.
+$$
+
+For prime \(p\), this could be integral only at \(p=19\), outside the theorem’s \(1\pmod{12}\) domain. Thus the inequality is strict at every original witness covered here.
+
+The separate checker proves the underlying identity
+
+$$
+\mathfrak N(L,bc,bL,cL)=-L^2H_M(X,Y)
+$$
+
+on the complete \(25\times17\) grid covering bidegree \((24,16)\), then independently expands the comparison with \(L_M^6\). Again, the degree bounds make this a universal polynomial verification.
+
+Combining the two arithmetic cones proves the global theorem for every integral witness, not only for the finite replay.
+
+## 5. The inverse and its metric cost remain explicit
+
+Let \(\mathsf C_H\) be the coefficient matrix obtained by reducing the four original component polynomials modulo \(H\), with their complex row factors retained. Let
+
+$$
+U_{nj}=\ell_j^n\xi_j.
+$$
+
+Then
+
+$$
+\boxed{
+O=\mathsf C_HU,\qquad
+\det\mathsf C_H=\frac{4F}{A},\qquad
+\det U=\frac{\epsilon}{A^2}.
+}
+$$
+
+Given \(z=O\beta\), first calculate
+
+$$
+m=\mathsf C_H^{-1}z
+$$
+
+using the actual adjugate and determinant. Lagrange interpolation then returns
+
+$$
+\boxed{
+\begin{aligned}
+\beta_j=\xi_j\bigl[
+&(C+B\ell_j+\ell_j^2+A\ell_j^3)m_0\\
+&+(B+\ell_j+A\ell_j^2)m_1
++(1+A\ell_j)m_2+Am_3
+\bigr].
+\end{aligned}}
+$$
+
+The root labels and signs are part of this inverse. Their squared norms alone are not asserted to reconstruct them.
+
+For four distinct positive integer literal roots,
+
+$$
+\frac2S\le |d_j|\le S^2.
+$$
+
+The absolute entry bounds, row by row, are
+
+$$
+\sqrt{S/2},\qquad S,\qquad3S^2,\qquad20S^3.
+$$
+
+Every \(3\times3\) cofactor is therefore at most \(360S^6\), and the adjugate Frobenius norm is at most \(1440S^6\). Dividing by the determinant lower bound proves
+
+$$
+\boxed{
+\|O^{-1}\|_2<
+\frac{360S^9}{cp^8}.
+}
+$$
+
+For actual positive label and receiving metrics \(G,Q\),
+
+$$
+\boxed{
+\|O^{-1}\|_{Q\to G}
+<
+\|G^{1/2}\|_2\,
+\|Q^{-1/2}\|_2\,
+\frac{360S^9}{cp^8}.
+}
+$$
+
+No invariant, averaged or otherwise substituted metric is being assigned.
+
+A further original observation \(\Lambda\) has
+
+$$
+\boxed{
+\ker(\Lambda O)=O^{-1}\ker\Lambda,
+\qquad
+\operatorname{rank}(\Lambda O)=\operatorname{rank}\Lambda.
+}
+$$
+
+The receiver contributes no additional kernel on this arithmetic domain. The observation itself can still have one.
+
+Likewise, for the original invertible conductor \(\mathcal L\),
+
+$$
+(\mathcal LO)^{-1}=O^{-1}\mathcal L^{-1}.
+$$
+
+The theorem supplies the first factor; it does not cancel the conductor’s own coefficients or norm.
+
+The existing finite height estimate can also be made explicit in the new bound. With
+
+$$
+s_p=\frac{p(p+3)}4,\qquad B_p=p+s_p(s_p+1),
+$$
+
+the factor-pair identity gives \(S\le B_p\). Thus
+
+$$
+\boxed{
+\|O^{-1}\|_2<
+\frac{360B_p^9}{cp^8}=O(p^{28})
+}
+$$
+
+in the stated coefficient norm. This is a bound over all existing integral witnesses at the prescribed prime, not an occupancy theorem.
+
+## 6. The old exceptions are covered; the real and local counterdomains remain
+
+At the hard prime \(p=1009\), the original word \(u=11\) at \(a=253,R=3\) gives
+
+$$
+E:\quad(253,87032,3818056),
+$$
+
+$$
+M:\quad(253,2042216,88792).
+$$
+
+The audit’s character triple is
+
+$$
+(-1,1,1),
+$$
+
+so its earlier sufficient condition does not apply. The new theorem applies to both, and to every other integral witness at that prime.
+
+At
+
+$$
+p=944329,\qquad(a,R,u)=(236094,47,1444),
+$$
+
+the original M return is
+
+$$
+(236094,780326438241,4772638766).
+$$
+
+All three old characters are positive, but the same global negative bound holds.
+
+**Nonvanishing is not a \(p\)-adic unit assertion.** The two \(p=1009\) examples have \(v_p(\mathfrak N)=0\) and \(2\), respectively. The existing integral-order indices and conductor defects are not erased.
+
+Nor is the theorem merely a positive-real statement. For \(3\le t\le4\), take
+
+$$
+p=1,\qquad b=t,\qquad c=t+\frac1{10},
+\qquad a=\frac{bc}{4bc-b-c}.
+$$
+
+The reciprocal identity holds, and the four literal roots remain positive and distinct. Exact endpoint evaluations give
+
+$$
+\mathfrak N<0\quad(t=3),\qquad
+\mathfrak N>0\quad(t=4).
+$$
+
+Continuity therefore supplies a receiving singularity while the quartic remains squarefree.
+
+The M separation \(c-b\ge1\) fails. Scaling the family by any prime \(p>5\) leaves the tail gap \(p/10\) nonintegral, so it cannot become an integral witness. This retains, rather than contradicts, the audit’s distinction between real or local singular points and global positive integers.  
+
+### A nonsingular receiver still does not force a gate
+
+At
+
+$$
+p=1009,\qquad a=321,\qquad R=275,\qquad u=9,
+$$
+
+the word is genuinely available: \(9\mid321^2\). Its raw exterior identity is
+
+$$
+\boxed{
+\frac4{1009}
+=
+\frac1{321}
++\frac1{335338/275}
++\frac1{9486618/275}.
+}
+$$
+
+The receiving numerator is strictly negative by the universal exterior polynomial. But
+
+$$
+275\nmid4\cdot9+1.
+$$
+
+The tails are not integers.
+
+Thus even an available original divisor can have an invertible receiver while failing the arithmetic gate. The complete coefficient-existence question remains separate from this now-resolved determinant question.
+
+## 7. What has closed at Turn 7
+
+The supplied audit left
+
+$$
+\mathfrak N\ne0
+$$
+
+as a global arithmetic question beyond its three-character locus. That question is now answered for **every positive integral ES witness at every prime \(p\equiv1\pmod{12}\)**, with a strict sign, explicit lower constants and an original-coordinate inverse bound.
+
+The result also removes this particular receiving singularity from any proposed counterfactual obstruction built from genuine integral witnesses. No additional character hypothesis about \(F\), no generic nonvanishing assumption, and no unidentified denominator in \(O^{-1}\) needs to be carried forward on that domain.
+
+What has **not** closed is
+
+$$
+\boxed{
+\forall p\text{ hard prime},\quad
+\exists\,a,u:
+\quad
+\frac p4<a<\frac p2,\quad
+u\mid a^2,\quad
+R\mid4u+1\ \text{or}\ R\mid a+u.
+}
+$$
+
+The predecessor’s residual-divisor descent likewise distinguished its exact return maps from that missing initial-source assertion. 
+
+The next arithmetic argument must therefore force an original gate or a compatible source-changing return. Repeating local receiving-frame exclusions is no longer the missing task; that determinant obstruction has been removed globally.
+
+## Verification and research record
+
+The main standard-library verifier passed **48,533 explicit checks**, including five negative controls. The separately written checker passed **30,222 checks**, importing neither the main implementation nor predecessor code.
+
+The complete original-source replay covers
+
+$$
+\boxed{
+99\text{ primes }p\equiv1\pmod{12}\text{ through }3000,
+}
+$$
+
+$$
+\boxed{
+34\,287\text{ shells},\quad
+868\,359\text{ original divisor vectors},\quad
+2451\text{ E states},\quad2054\text{ oriented M states}.
+}
+$$
+
+Every state retains
+
+$$
+p,a,R,u,h,r,s,\kappa\text{ or }\lambda,
+$$
+
+its complete original exponent record, ordered denominators, literal numerator, \(p\)-valuation and signed determinant scale.
+
+```sh
+python run_all.py --bound 3000 --directory certificates
+```
+
+The release was extracted afresh. All **48 manifest entries** were checked; all **seven mathematical JSON files** were reproduced; the main ordinary and optimized outputs agreed; and the separate checker reproduced the original state list. Both PDFs rebuilt with identical extracted text and rendered pixels. All eleven proof pages were rendered and inspected.
+
+[Main verifier](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/verify.py) · [Separate checker](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/check_independent.py) · [Exact certificates](sandbox:/mnt/data/ES_Turn7_Global_Receiver_Determinant_Certificates_20260921.zip) · [Preprint TeX and page PNGs](sandbox:/mnt/data/ES_Turn7_Global_Receiver_Determinant_Preprint_20260921.zip)
+
+[Twenty-one typed maps](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/MORPHISMS.md) · [Remaining Turn 7 obligation](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/HANDOFF_TURN_7_REMAINDER.md) · [Source ledger](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/source_reading.json) · [Lean-ready dependency plan](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/lean_plan.md)
+
+GitHub read access succeeded at revision `49976b17491ba927df8bc7f2c2f81d39dfb15ce8`, and I read the current mathematical predecessor directly. **No remote PR was created:** no creation action was exposed, and the direct Git route could not resolve `github.com`.
+
+The actual local source-only continuation is commit **`dcf14092a668206adb7df15a3202419ae25b49c1`**, extending the preserved preceding local bundle with twenty added paths and no deletions. Its additive patch replays to the identical source tree; it is not represented as an upstream branch.
+
+[Additive patch](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/integration.patch) · [Git bundle](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/source_history.bundle) · [Publication receipt](sandbox:/mnt/data/es_turn7_determinant_arithmetic_20260921/publication_receipt.json)
+
+The cumulative archive preserves the preceding archive byte-for-byte. The current proof includes a finite computer-assisted polynomial lemma, not an independent mathematical review or a Lean build. No historical-priority determination or universal ES theorem is claimed.
+
+**The completed advance is the global arithmetic exclusion of the original receiving determinant’s zero locus, together with its explicit inverse. The first occupied integer source remains the theorem to force.**
+
+[1]: https://arxiv.org/abs/1107.1010 "https://arxiv.org/abs/1107.1010"

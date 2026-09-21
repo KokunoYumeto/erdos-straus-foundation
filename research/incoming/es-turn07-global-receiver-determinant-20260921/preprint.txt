@@ -1,0 +1,191 @@
+    A GLOBAL SIGN FOR THE LITERAL ERDŐS–STRAUS RECEIVING
+                        DETERMINANT
+
+                                               THE CLANKERS
+
+
+        Abstract. An explicit quartic receiving matrix used in a recent ES/Split-Zero construction has
+        an additional determinantal divisor, distinct from its root discriminant. We prove that divisor
+        is avoided by every positive integral ES witness at every prime p ≡ 1 (mod 12). Two exact
+        polynomial certificates give uniform negative bounds and an original-coordinate inverse bound.
+        Real and p-adic zeros do not contradict the result. No ES existence theorem is asserted.
+
+
+                                                                                                       P
+  For positive integers x, y, z with 4/p = 1/x + 1/y + 1/z, retain ℓ = (p, x, y, z), S =                   ℓi , and
+the literal normalization
+                     H(T ) = −S −1
+                                       Y
+                                            (T − ℓi ) = AT 4 + T 3 + BT 2 + CT + D.
+                                        i
+
+At simple roots choose and retain ξi ∈ C× with ξi2 H ′ (ℓi ) = 1. The sign-odd receiving matrix
+O ∈ M4 (C) in the supplied programme has columns
+                                                                        T
+                  oi = ξi 1, −idi , Ad2i + 2ℓi di , i(7ℓ2i di − 13d2i )      ,       di = H ′ (ℓi ).
+Put V = i<j (ℓj −ℓi ) and ϵ = A2 V i ξi ∈ {1, −1}. This retains root order and every square-root
+         Q                               Q
+
+choice. The determinant is det O = 4ϵF/A3 = −4ϵN/S 3 , where
+                       F = 20(3C − B 2 ) + A(87B 3 − 282BC − 51D)
+                             + A2 (−28B 4 + 22B 2 C + 431C 2 + 204BD)
+                             + A3 (224B 2 D − 168BC 2 − 856CD) − 448A4 D2 .
+Reduction of the four component polynomials modulo H proves this identity; the supplied
+standard-library verifier checks it universally. Set N(ℓ) = S 6 F . This is an integer homogeneous
+polynomial of degree eight in integral ℓ, without any assumption that S is a p-unit.
+Theorem 1. For every prime p ≡ 1 (mod 12) and every positive integral ES witness,
+                                                  125873811 8
+                                         N<−               p < 0.
+                                                    262144
+For p ≡ 1 (mod 24) the stronger constant is c = 327448292668/47045881. With either applicable
+constant,
+                                              4cp8                        360S 9
+                                | det O| >         ,        ∥O−1 ∥2 <            .
+                                               S3                          cp8
+Here ∥ · ∥2 is the operator norm for the standard Hermitian norm on C4 .
+The complete original arithmetic domain. Four literal roots are distinct: x = p would give
+(3y − p)(3z − p) = p2 with incompatible residues modulo three; x = y = a gives 4(2a − p)z = p(2a)
+and 2a − p | p2 , whose three cases all fail integrality for p ≡ 1 (mod 4). At least one, but not all,
+denominators are divisible by p.
+   If two are, the third is the unique smallest denominator a < p/2. If only one is pk, let the
+other two be a ≤ b, both units at p. Write 4k − 1 = pt, a = gr, b = gs, (r, s) = 1. Then k = drs,
+r + s = tλ, g = dλ, and t ≡ 3 (mod 4). The contrary inequality a ≥ p/2 gives 2dr(r − s) ≥ −1,
+hence r = s = 1 and t | 2, impossible. Thus every witness has p/4 < a < p/2.
+
+  Date: 21 September 2026.
+                                                        1
+2                                            THE CLANKERS
+
+  Put R = 4a − p. The identity (Ry − pa)(Rz − pa) = p2 a2 recovers the full original Type I/II
+source [1, §2], with u | a2 :
+                                 gate       ordered denominator return
+                          E   R | 4u + 1 (a, (pa + a2 /u)/R, (pa + p2 u)/R)
+                          M   R | a + u (a, p(a + a2 /u)/R, p(a + u)/R).
+
+The original normalization is (h, r, s) = (g 2 /u, u/g, a/g), g = (a, u). The ordered divisor inverses
+are a2 /(Ry − pa) and pa2 /(Ry − pa). Complementation exchanges only the two M tails and is
+retained.
+   An E state has u ≥ 2: u = 1 would require R | 5. Write (·/R) for the Jacobi symbol and (·/p)
+for the Legendre symbol. Reciprocity primewise on a gives (u/R) = (u/p), so its target −1/4
+makes (u/p) = −1. When p ≡ 1 (mod 24), two and three are residues, and therefore u ≥ 5. For
+M, write the two tails as pb < pc. Since neither denominator is p, b ≥ 2 and c − b ≥ 1 are original
+integer inequalities.
+Exterior coefficient identity. Use real u ≥ 1 and w = p/R > 1. The four normalized roots are
+                                                                         !
+                                 w + 1 w + 1 (w + 1)2 w + 1
+                              1,      ,     +        ,      + wu .
+                                  4w     4    16wu      4
+
+Define PE ∈ Z[u, w] by the exact division
+                −64u2 PE (u, w) = N 16wu, 4u(w + 1),
+                                                                                   
+                                        (w + 1)(4wu + w + 1), 4wu(w + 1 + 4wu) .
+It has bidegree (12, 16). Each of the following has 221 positive integer coefficients, occupying the
+full 13 × 17 rectangle:
+      PE (1 + X, 1 + Y ),     (uPE,u − 6PE )(1 + X, 1 + Y ),     (wPE,w − 8PE )(1 + X, 1 + Y ).
+The arrays are the finite certificate. Hence
+                                                  PE (u, w)   N
+                                    QE (u, w) =    26  6  8
+                                                            =− 8
+                                                  2 u w       p
+is strictly increasing in both arguments. Exact boundary evaluation gives
+                          125873811                       1310003654463   327448292668
+            QE (2, 1) =             ,       QE (5, 1) =                 >              .
+                           262144                            12800000       47045881
+This proves both required bounds in the exterior channel.
+Middle coefficient identity. Let L = 4bc − b − c, T = (b + c)L + bc, V = b2 c2 . Then a/p = bc/L
+and −N/p8 = P(T /L, V /L), where
+                  P(s, v) = 7168v 4 − (5568s2 + 5728s − 5888)v 3
+                               + (320s4 + 2744s3 + 705s2 − 3350s − 903)v 2
+                               + (−140s5 − 443s4 + 440s3 + 390s2 + 70s − 249)v
+                               + 20s6 − 7s5 − 26s4 − 7s3 + 20s2 .
+Put                                     h                   i
+                          HM (X, Y ) = L6 P(T /L, V /L)                       ,
+                                                             b=2+X, c=3+X+Y
+
+                                LM = 4X 2 + 4XY + 18X + 7Y + 19.
+The polynomial 47045881HM − 327448292668L6M has zero constant and 191 positive nonzero
+integer coefficients. Its X and Y coefficients are positive. Dividing by 47045881L6M proves the
+stronger bound for all X, Y ≥ 0. Equality requires b = 2, c = 3, hence a = 6p/19, which is not
+integral at a prime p ≡ 1 (mod 12). The inequality in the theorem is strict.
+           A GLOBAL SIGN FOR THE LITERAL ERDŐS–STRAUS RECEIVING DETERMINANT                                   3
+
+
+ w = p/R                                                 Y =c−b−1
+           u=2                  u=5
+                 QE = PE /(226 u6 w8 )                           47045881HM − 327448292668L6M
+                 strictly increases in u, w                      has zero constant and 191 positive terms
+
+
+
+
+                                       p ≡ 1 (mod 24)
+                                       forces u ≥
+                                                w 5= 1           b=2+X
+                 QE (2, 1) = c12                                 c=3+X +Y
+                                                 u                                                   X =b−2
+                                                                equality point (0, 0) is not an integral
+           Exterior coordinates                                 state for prime p ≡ 1 (mod 12)
+                                                                  Middle integer cone
+
+        Figure 1. The two exact coordinate domains used in the global sign proof. The
+        blue and green regions are certificate domains; actual Erdős–Straus witnesses are
+        the arithmetic points satisfying the displayed gates and integrality conditions.
+        The exterior lower bound is approached at the dashed boundary w = 1, which is
+        excluded by R < p. The middle comparison is strict at every admissible lattice
+        point because its only equality point would require a = 6p/19.
+
+
+Why the finite certificate is a proof. The source norm is the literal F of [3, Track I, E1], not a
+fitted array. The main program expands every rational coefficient identity exactly, then checks
+all its coefficients. The separate implementation proves the exterior identity on the entire 17 × 17
+unisolvent grid after clearing its known bidegree (16, 16) denominator. It independently performs
+the two derivative and binomial-translation operations. For M, it checks
+                                           N(L, bc, bL, cL) = −L2 HM
+on the full 25 × 17 grid in X, Y , covering bidegree (24, 16), then independently expands the
+comparison with L6M . Repeated one-variable polynomial uniqueness makes these universal
+identities. This is a computer-assisted coefficient lemma, not a finite-prime extrapolation.
+Original inverse and norm. Let CH be the reduction matrix of the four original component
+polynomials, including their i factors, and Unj = ℓnj ξj . Then O = CH U . Given z, set m = C−1
+                                                                                             H z
+using its adjugate. Lagrange interpolation returns
+                        βj = ξj (C + Bℓj + ℓ2j + Aℓ3j )m0 + (B + ℓj + Aℓ2j )m1
+                                   
+                                                           
+                                       + (1 + Aℓj )m2 + Am3 .
+
+For four distinct integer roots, 2/S ≤ |dj | ≤ S 2 . The entry bounds by row are S/2, S, 3S 2
+                                                                                             p
+
+and 20S 3 . Every cofactor is at most 360S 6 ; the adjugate Frobenius norm is at most 1440S 6 .
+Dividing by 4cp8 /S 3 proves the inverse bound. Original positive metrics G, Q contribute the
+explicit factor ∥G1/2 ∥ ∥Q−1/2 ∥.
+Scope and negative controls. At p = 1009, the genuine E and M returns from (a, u) = (253, 11) are
+(253, 87032, 3818056) and (253, 2042216, 88792). They violate two of the audit’s three sufficient
+character conditions, but are covered here. This does not assert p ∤ N: their valuations are zero
+and two.
+   At p = 1, let b = t, c = t + 1/10, a = bc/(4bc − b − c) for 3 ≤ t ≤ 4. The literal roots stay
+positive and distinct. Exact elimination produces a degree-18 numerator P (t) with all coefficients
+of P ′ (3 + X) positive and opposite signs at 3053/1000 and 1527/500. Hence this real family has
+one receiver singularity, at t ≈ 3.05367681075890. Its tail gap is not the original integer gap used
+above. The earlier local zeros likewise remain local, not integral, counterdomains.
+   Finally p = 1009, a = 321, u = 9 gives the unfiltered E triple (321, 335338/275, 9486618/275).
+Its frame is nonsingular, but its E gate is not satisfied: 275 ∤ 37. Its S 6 F is rational, not an
+integer numerator. Thus the theorem excludes receiver singularity conditional on an existing
+4                                                THE CLANKERS
+
+positive integral witness at p ≡ 1 (mod 12); it does not establish universal occupancy of the ES
+source. No priority determination, independent human review, or Lean build is claimed.
+
+                                                 References
+[1] Elsholtz, C., & Tao, T. (2013). Counting the number of solutions to the Erdős–Straus equation on unit fractions.
+    Journal of the Australian Mathematical Society, 94 (1), 50–105. arXiv:1107.1010v6. Type I/II antecedents:
+    source §2, Propositions 2.2 and 2.6.
+[2] The Clankers. (2026, September 20). The odd receiving divisor pulled back to the Erdős–Straus locus. Pinned
+    source, EZ37–EZ48.
+[3] The Clankers. (2026, September 20). ES–RH continuation B: Arithmetic nonsingularity, paired determinant
+    bounds, finite heat actions, and arithmetic descent. Erdős–Straus Foundation, revision 49976b1, Track I, E1–E6.
+    The polynomial and three-character theorem were read directly at this revision.
+[4] The Clankers. (2026, September 21). Original-divisor descent from rational Erdős–Straus trace sources. Pinned
+    scope and initial-occupancy boundary.
+

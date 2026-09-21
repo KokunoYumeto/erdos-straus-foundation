@@ -1,0 +1,16 @@
+{
+  "aim": "Continue Turn7 using the new supplied determinant audit.",
+  "motivation": "The audit left global integral nonvanishing unproved outside three character classes, although local zeros exist.",
+  "attempt": "Use the exact literal receiving numerator and arithmetic restrictions on original E words and M tail gaps.",
+  "outcome": "Complete positive coefficient certificates give N<-c p^8 on all integral p=1 mod12 witnesses. A separate exact degree-18 certificate isolates the unique positive-real receiver singularity in its one-parameter counterdomain. No witness existence is inferred.",
+  "abandoned_inferences": [
+    "more local p-adic exclusions will remove every locally singular point",
+    "positive real simple roots alone imply receiving invertibility"
+  ],
+  "proof_files": [
+    "core.tex",
+    "preprint.tex",
+    "certificates/polynomial_certificates.json"
+  ],
+  "next_unproved": "Produce an available original integral coefficient at every prescribed prime."
+}

@@ -1,0 +1,125 @@
+{
+  "commands": [
+    {
+      "arguments": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\reproduced\\normal"
+      ],
+      "elapsed_seconds": 1.039452,
+      "log": "execution_logs/command_0.log",
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "-O",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\verify.py",
+        "--bound",
+        "3000",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\reproduced\\normal_optimized"
+      ],
+      "elapsed_seconds": 1.089214,
+      "log": "execution_logs/command_1.log",
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\check_independent.py",
+        "--input",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\reproduced\\normal",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\reproduced\\normal\\independent.json"
+      ],
+      "elapsed_seconds": 1.191336,
+      "log": "execution_logs/command_2.log",
+      "returncode": 0
+    },
+    {
+      "arguments": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "-O",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\check_independent.py",
+        "--input",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\reproduced\\normal_optimized",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-global-receiver-determinant-20260921\\reproduced\\normal_optimized\\independent.json"
+      ],
+      "elapsed_seconds": 1.154773,
+      "log": "execution_logs/command_3.log",
+      "returncode": 0
+    }
+  ],
+  "independent": {
+    "E_positive_coefficients_each": 221,
+    "M_comparison_positive_coefficients": 191,
+    "bound": 3000,
+    "checks": 30245,
+    "counts": {
+      "E": 2451,
+      "M": 2054,
+      "divisor_words": 868359,
+      "shells": 34287
+    },
+    "exterior_grid": [
+      17,
+      17
+    ],
+    "grid_checks_prove_identities": true,
+    "imports_predecessor_or_main": false,
+    "middle_grid": [
+      25,
+      17
+    ],
+    "primes": 99,
+    "states_sha256": "f5c2d939455c32a65dd660a2007d1370a83444338f0ded5a5c1432e42c614695",
+    "success": true,
+    "universal_ES_proved": false
+  },
+  "independent_mathematical_review": false,
+  "lean_build": false,
+  "main": {
+    "bound": 3000,
+    "checks": 48542,
+    "counts": {
+      "E": 2451,
+      "M": 2054,
+      "divisor_words": 868359,
+      "shells": 34287
+    },
+    "determinant_valuation_histogram": {
+      "E:0": 2447,
+      "E:1": 4,
+      "M:2": 2054
+    },
+    "independent_mathematical_review": false,
+    "negative_controls": 5,
+    "prime_domain": "p prime, p=1 mod12",
+    "primes": 99,
+    "states_sha256": "f5c2d939455c32a65dd660a2007d1370a83444338f0ded5a5c1432e42c614695",
+    "success": true,
+    "universal_ES_proved": false,
+    "universal_polynomial_checks": true
+  },
+  "normal_optimized_identical": {
+    "examples.json": true,
+    "independent.json": true,
+    "negative_controls.json": true,
+    "polynomial_certificates.json": true,
+    "scan.json": true,
+    "states.json": true,
+    "summary.json": true
+  },
+  "source_hashes": {
+    "check_independent.py": "620901c57ca4956e93888dd6fb005a78ce3eaf0fed4f8b5fedde512ebd49dd65",
+    "run_all.py": "a59442eb91f7fb442b9b75ac92fedad3572ab51d2476bc5a54bc35ee21763c37",
+    "verify.py": "9674f02d230b15e7d486254b895721e700bea5deb35df0eb91e443bd647a3c18"
+  },
+  "success": true,
+  "universal_ES_proved": false
+}

@@ -1,0 +1,53 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,booktabs,longtable,array,microtype,graphicx,tikz}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Global arithmetic nonvanishing of the ES odd receiving determinant}
+\author{The Clankers}
+\date{21 September 2026}
+\begin{document}
+\begin{abstract}
+For the literal prime--denominator quartic of an integral Erd\H{o}s--Straus
+witness, we prove strict negativity of the original odd-receiver determinant
+numerator at every prime $p\equiv1\pmod{12}$. Explicit universal constants give
+$-\mathfrak N>cp^8$ and $\|O^{-1}\|_2<360S^9/(cp^8)$. The proof uses the complete
+Type I/II domain and two exact positive-coefficient polynomial certificates.
+This settles the arithmetic nonvanishing question isolated in the supplied
+programme audit, without its three-character restriction. It does not prove
+that an ES witness exists at every prescribed prime. Full integer coefficients,
+source maps, negative controls and two standard-library verification procedures
+are supplied.
+\end{abstract}
+\maketitle
+\input{core.tex}
+\begin{thebibliography}{9}
+\bibitem{ET} Elsholtz, C., \& Tao, T. (2013).
+Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\href{https://arxiv.org/abs/1107.1010}{arXiv:1107.1010v6};
+doi:10.1017/S1446788712000468.
+Locators: \S2, Propositions 2.2 and 2.6. Used for Type I/II antecedents;
+the normalization and first-half reduction are proved above.
+\bibitem{Receiver} The Clankers. (2026, September 20).
+\emph{The odd receiving divisor pulled back to the Erd\H{o}s--Straus locus}.
+\href{https://github.com/KokunoYumeto/erdos-straus-foundation/blob/49976b17491ba927df8bc7f2c2f81d39dfb15ce8/research/incoming/es-fable-zeta-bridge-20260920/ODD_RECEIVER_ES_PULLBACK.tex\#L19-L215}{Pinned source, EZ37--EZ48}. This is the direct public source for the receiver,
+its determinant polynomial, ES pullback and positive-real counterdomain.
+\bibitem{Descent} The Clankers. (2026, September 21).
+\emph{Original-divisor descent from rational ES trace sources}.
+\href{https://github.com/KokunoYumeto/erdos-straus-foundation/blob/1400e6301429cf9c66d8071e107be9dc41f5b907/research/incoming/es-turn07-divisor-descent-20260921/core.tex\#L1-L16}{Pinned scope and initial-occupancy boundary}. Locators: complete divisor-removal domain,
+exact universal seed classification, and the final original-coefficient
+existence obligation. Used to preserve the programme's current nonclaim.
+\bibitem{Frame} The Clankers. (2026, September 20).
+\emph{ES--RH continuation B: Arithmetic nonsingularity, paired determinant
+bounds, finite heat actions, and arithmetic descent}. Erd\H{o}s--Straus Foundation,
+\href{https://github.com/KokunoYumeto/erdos-straus-foundation/blob/49976b17491ba927df8bc7f2c2f81d39dfb15ce8/research/incoming/es-rh-continuation-b-20260920/RESEARCH_CONTINUATION.md\#L44-L254}{revision \texttt{49976b1}, Track I, E1--E6}.
+The polynomial and three-character theorem were read directly at this revision.
+\end{thebibliography}
+\end{document}

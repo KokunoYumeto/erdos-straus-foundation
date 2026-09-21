@@ -1,0 +1,26 @@
+{
+  "exterior_grid": [
+    17,
+    17
+  ],
+  "middle_grid": [
+    25,
+    17
+  ],
+  "grid_checks_prove_identities": true,
+  "E_positive_coefficients_each": 221,
+  "M_comparison_positive_coefficients": 191,
+  "success": true,
+  "bound": 3000,
+  "primes": 99,
+  "counts": {
+    "shells": 34287,
+    "divisor_words": 868359,
+    "E": 2451,
+    "M": 2054
+  },
+  "checks": 30245,
+  "imports_predecessor_or_main": false,
+  "universal_ES_proved": false,
+  "states_sha256": "f5c2d939455c32a65dd660a2007d1370a83444338f0ded5a5c1432e42c614695"
+}

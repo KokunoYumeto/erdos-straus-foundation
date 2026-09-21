@@ -1,0 +1,142 @@
+{
+  "date": "2026-09-21",
+  "scope": "Actual supplied determinant polynomial, the integral nonvanishing question and the original E/M arithmetic. No complete audit of the 10801-line transcript is asserted.",
+  "sources": [
+    {
+      "kind": "supplied_source",
+      "file_id": "file_000000000084820aa44de6e38f8d81e7",
+      "name": "ChatGPT-Research program audit-20260921-0508.md",
+      "sha256": "ef43f0ba78d4c4d0a7d5d6827b83b062771e9be20ea47ec57c59e5e36475d308",
+      "read_original_ranges": [
+        [
+          4501,
+          4820
+        ],
+        [
+          5863,
+          6007
+        ],
+        [
+          3310,
+          3492
+        ],
+        [
+          10200,
+          10459
+        ]
+      ],
+      "additional_complete_excerpts_in_context": [
+        [
+          1338,
+          1403
+        ]
+      ],
+      "locators_used": {
+        "receiving_polynomial": "1338-1403 and3310-3387",
+        "arithmetic_question": "3453-3487",
+        "three_character_theorem": "4501-4706",
+        "local_sharpness": "5863-6007"
+      },
+      "interpretation": "Source defines the receiver and asks an integral question; its local zeros and real sign change remain separate. Last RH range was read but not used as an ES premise."
+    },
+    {
+      "kind": "supplied_predecessor",
+      "name": "es_turn7_divisor_descent_20260921/core.tex",
+      "file_id": "file_000000008f788246af3fc6c5c22d930a",
+      "locators": "Original source and final initial-occupancy obligation",
+      "use": "Maintain the actual Turn7 status, not a premise of the determinant proof."
+    },
+    {
+      "kind": "live_connector",
+      "repo": "KokunoYumeto/erdos-straus-foundation",
+      "commit": "49976b17491ba927df8bc7f2c2f81d39dfb15ce8",
+      "read": [
+        "branches/main",
+        "CONTRIBUTING.md",
+        "WORKBENCH.md (returned portion)",
+        "research/incoming/es-rh-continuation-b-20260920/README.md"
+      ],
+      "use": "Current reference and additive contribution policy; no newer mathematical theorem inferred from commit metadata."
+    },
+    {
+      "kind": "primary_literature_author_tex",
+      "authors": [
+        "Christian Elsholtz",
+        "Terence Tao"
+      ],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdős–Straus equation on unit fractions",
+      "journal": "Journal of the Australian Mathematical Society",
+      "volume": 94,
+      "issue": 1,
+      "pages": "50-105",
+      "arxiv": "1107.1010v6",
+      "url": "https://arxiv.org/abs/1107.1010",
+      "source_version": "arXiv:1107.1010v6",
+      "local_author_source": "literature/Elsholtz_Tao_2013_arxiv_1107.1010v6/egyptian-count18.tex",
+      "local_author_source_sha256": "b0469a67a737b7f4e77778310c87e22f5783ae9704f70aa55919a4a40104611c",
+      "doi": "10.1017/S1446788712000468",
+      "read_lines": [487, 625],
+      "locators": "Section2; Type I surface and map, lines 491-528; Proposition2.2 and proof, lines528-542; Type II surface and map, lines573-601; Proposition2.6 and proof, lines601-611",
+      "use": "Human-source lineage for the complete TypeI/II coordinate framework. This tranche rederives its specialized normalization and first-half reduction."
+    },
+    {
+      "kind": "live mathematical source",
+      "repo": "KokunoYumeto/erdos-straus-foundation",
+      "commit": "49976b17491ba927df8bc7f2c2f81d39dfb15ce8",
+      "path": "research/incoming/es-rh-continuation-b-20260920/RESEARCH_CONTINUATION.md",
+      "blob": "3629853c115d4f548c9f63652dc78faa799b1aad",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/49976b17491ba927df8bc7f2c2f81d39dfb15ce8/research/incoming/es-rh-continuation-b-20260920/RESEARCH_CONTINUATION.md#L44-L254",
+      "read_lines": [
+        1,
+        165
+      ],
+      "locators": "Track I, sections I.1-I.5, equations E1-E6",
+      "use": "Direct content-level confirmation of the exact norm polynomial and the previously character-restricted theorem."
+    },
+    {
+      "kind": "live_mathematical_source",
+      "repo": "KokunoYumeto/erdos-straus-foundation",
+      "commit": "49976b17491ba927df8bc7f2c2f81d39dfb15ce8",
+      "path": "research/incoming/es-fable-zeta-bridge-20260920/ODD_RECEIVER_ES_PULLBACK.tex",
+      "blob": "3e6fa5f153f1370384e47e32d62c57b6cc390c41",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/49976b17491ba927df8bc7f2c2f81d39dfb15ce8/research/incoming/es-fable-zeta-bridge-20260920/ODD_RECEIVER_ES_PULLBACK.tex#L19-L215",
+      "read_lines": [1, 215],
+      "locators": "EZ37-EZ39 receiver and determinant, EZ40-EZ45 ES pullback, EZ47-EZ48 positive-real and arithmetic boundary",
+      "use": "Direct public lineage for the odd receiving columns, determinant polynomial, integer numerator, and nonintegral counterdomain."
+    }
+  ],
+  "content_search": {
+    "web_queries": [
+      "Elsholtz Tao Counting number solutions Erdos Straus 1107.1010",
+      "Erdős odd receiving determinant",
+      "Fabel 511 1241",
+      "Erdos Straus determinant 26383"
+    ],
+    "github_queries": [
+      {
+        "query": "receiving determinant",
+        "repositories": [
+          "KokunoYumeto/erdos-straus-foundation",
+          "KokunoYumeto/zeta-function-research-reader"
+        ],
+        "result": "no matches returned"
+      }
+    ],
+    "conclusion": "No matching prior global-sign theorem was located in this limited search; absence from search is not a historical-priority result."
+  },
+  "current_derivations": [
+    "global integral sign",
+    "explicit p^8 lower constants",
+    "unfiltered E monotonic cone",
+    "integer middle-gap polynomial certificate",
+    "cofactor-based inverse norm bound"
+  ],
+  "nonclaims": [
+    "universal ES occupancy",
+    "independent mathematical review",
+    "historical priority",
+    "Lean build",
+    "a global Jacobian-conjecture result"
+  ]
+}

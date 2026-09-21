@@ -1,0 +1,23 @@
+{
+  "bound": 3000,
+  "checks": 48542,
+  "counts": {
+    "E": 2451,
+    "M": 2054,
+    "divisor_words": 868359,
+    "shells": 34287
+  },
+  "determinant_valuation_histogram": {
+    "E:0": 2447,
+    "E:1": 4,
+    "M:2": 2054
+  },
+  "independent_mathematical_review": false,
+  "negative_controls": 5,
+  "prime_domain": "p prime, p=1 mod12",
+  "primes": 99,
+  "states_sha256": "f5c2d939455c32a65dd660a2007d1370a83444338f0ded5a5c1432e42c614695",
+  "success": true,
+  "universal_ES_proved": false,
+  "universal_polynomial_checks": true
+}

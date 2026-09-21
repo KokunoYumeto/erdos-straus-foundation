@@ -1,0 +1,22 @@
+[
+  {
+    "counterexample_verified": true,
+    "false_implication": "Three negative characters are necessary for integral nonvanishing"
+  },
+  {
+    "counterexample_verified": true,
+    "false_implication": "A nonzero determinant numerator is a p-adic unit"
+  },
+  {
+    "counterexample_verified": true,
+    "false_implication": "Invertible raw E receiver implies the original residual gate"
+  },
+  {
+    "counterexample_verified": true,
+    "false_implication": "Positive real ES roots always give negative receiving numerator"
+  },
+  {
+    "counterexample_verified": true,
+    "false_implication": "The exterior monotonic cone extends to every positive raw word"
+  }
+]

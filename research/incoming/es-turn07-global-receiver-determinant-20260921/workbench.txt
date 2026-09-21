@@ -1,0 +1,504 @@
+ GLOBAL ARITHMETIC NONVANISHING OF THE ES ODD RECEIVING
+                     DETERMINANT
+
+                                              THE CLANKERS
+
+
+       Abstract. For the literal prime–denominator quartic of an integral Erdős–Straus witness,
+       we prove strict negativity of the original odd-receiver determinant numerator at every prime
+       p ≡ 1 (mod 12). Explicit universal constants give −N > cp8 and ∥O−1 ∥2 < 360S 9 /(cp8 ).
+       The proof uses the complete Type I/II domain and two exact positive-coefficient polynomial
+       certificates. This settles the arithmetic nonvanishing question isolated in the supplied programme
+       audit, without its three-character restriction. It does not prove that an ES witness exists
+       at every prescribed prime. Full integer coefficients, source maps, negative controls and two
+       standard-library verification procedures are supplied.
+
+
+
+
+                         1. The arithmetic question and the result
+   The preceding receiver calculation isolates a polynomial F governing the original sign-odd
+receiving matrix of a quartic factor-inverse construction [2, EZ37–EZ45]. A later audit proves
+nonvanishing on a three-character prime locus and also constructs positive real and p-adic zeros
+outside the integral locus. We use its literal polynomial, roots, signs and coefficient normalization,
+read directly in the pinned public continuation [4, Track I, E1–E6]. The present result settles its
+integral nonvanishing question; it does not assert the existence of an Erdős–Straus (ES) witness
+at every prime.
+Theorem 1.1 (Global arithmetic receiving determinant). Let p ≡ 1 (mod 12) be prime and
+let x, y, z be positive integers satisfying 4/p = 1/x + 1/y + 1/z. Retain the four literal roots
+ℓ = (p, x, y, z) and put
+                                                        3
+                                                   −1
+                                                        Y
+       S = p + x + y + z,          H(T ) = −S                 (T − ℓi ) = AT 4 + T 3 + BT 2 + CT + D.
+                                                        i=0
+
+Define F by (8) and N = S 6 F . Then N is an integer and
+                                                                       125873811
+                                N < −c12 p8 < 0,               c12 =             .                          (1)
+                                                                         262144
+If p ≡ 1 (mod 24), one may replace c12 by
+                                                   327448292668
+                                           c24 =                .                                           (2)
+                                                     47045881
+For the original odd receiving matrix O, every retained choice of root order and square-root signs
+gives
+                                        4c p8        −1      360 S 9
+                             | det O| >       ,   ∥O    ∥2 <         ,
+                                         S3                    c p8
+where c is the applicable constant. These constants are not asserted optimal on the original
+integral witness domain.
+  The proof uses two finite, universal polynomial coefficient identities. The complete integer
+arrays and two separate standard-library checks are supplied. The arithmetic census is a
+corroboration of the implementation, not the proof of the universal coefficient identities or the
+theorem.
+
+  Date: 21 September 2026.
+                                                         1
+2                                            THE CLANKERS
+
+                2. Original states and the complete first-half domain
+   Here we give the elementary reductions needed to apply the theorem to every witness, rather
+than assume that its distinguished denominator has been chosen in a restricted family. The Type
+I/II framework is classical [1, §2, Propositions 2.2 and 2.6].
+   Every denominator exceeds p/4. At least one is divisible by p, by clearing the reciprocal
+equation; all three cannot be, since their reciprocal sum would then be at most 3/p. A denominator
+equal to p would give
+                                        (3y − p)(3z − p) = p2 .
+Here y, z > p/3, so both displayed factors are positive. The positive factors of p2 are 1 (mod 3),
+whereas each displayed factor is 2 (mod 3). Hence no denominator equals p. If two denominators
+equal a, positivity of the third denominator gives d = 2a − p > 0. Then 4dz = p(d + p) and d | p2 .
+The three possibilities d = 1, p, p2 give respectively z = p(p + 1)/4, p/2, (p + 1)/4, all nonintegral
+for p ≡ 1 (mod 4). Thus all four literal roots are distinct.
+   If two denominators are multiples of p, the third, denoted by a, must satisfy a < p/2: otherwise
+the sum is at most 4/p, with equality requiring the impossible integer a = p/2. The other two
+denominators exceed a.
+   If exactly one denominator is pk, let the other two be a ≤ b, both units at p. The identity
+                                      (4k − 1)ab = pk(a + b)
+gives 4k − 1 = pt, where t ≡ 3 (mod 4) and gcd(k, t) = 1. Write a = gr, b = gs, r ≤ s,
+gcd(r, s) = 1. Then tgrs = k(r + s), so k = drs, r + s = tλ and g = dλ: indeed gcd(rs, r + s) = 1
+gives rs | k, say k = drs; then tg = d(r+s), and gcd(d, t) = 1 gives the remaining two divisibilities.
+If a ≥ p/2, substitution of p = (4drs − 1)/t and a = dλr gives
+                                         2dr(r − s) ≥ −1.
+The left side is an even nonpositive integer, forcing r = s = 1 and t | 2, a contradiction. Thus
+again p/4 < a < p/2, and a is the unique smallest original denominator.
+   Retain this a and R = 4a − p, so 3 ≤ R < p, R ≡ 3 (mod 4) and gcd(pa, R) = 1. Since both
+tails exceed the unique smallest denominator, the two factor coordinates
+                                 X = Ry − pa, qquadZ = Rz − pa
+are positive and satisfy
+                                              XZ = p2 a2 .
+Because p ∤ R, one has p | X exactly when p | y, and likewise for Z, z. Their p-valuation pairs
+are therefore (0, 2), (1, 1), (2, 0). Place the unique p-divisible exterior denominator last. In the
+exterior and oriented middle cases, respectively, there is a unique positive divisor u | a2 for which
+                  E:    (X, Z) = (a2 /u, p2 u), qquadM :     (X, Z) = (pa2 /u, pu).
+Solving for the tails gives
+                                              !                                              !
+                       pa + a2 /u pa + p2 u                            p(a + a2 /u) p(a + u)
+      E:   (y, z) =              ,          ,       M:      (y, z) =               ,         .
+                           R         R                                      R          R
+Since a, u, p are units modulo R and p ≡ 4a (mod R), the two exact integrality gates are
+                                E : R | 4u + 1,      M : R | a + u.                               (3)
+Put
+                         g = gcd(a, u),      (h, r, s) = (g 2 /u, u/g, a/g).
+Primewise valuation gives a = hrs, u = hr2 , with all coordinates positive integers and gcd(r, s) =
+1. The ordered returns are
+                      E:   (a, hsκ, phrκ),                      κ = (pr + s)/R,                   (4)
+                      M:   (a, phsλ, phrλ),                     λ = (r + s)/R.                    (5)
+Their ordered inverses are u = a2 /(Ry − pa) and u = pa2 /(Ry − pa), respectively. The middle
+complement u 7→ a2 /u exchanges r, s and only the last two denominators. Both orientations
+          GLOBAL ARITHMETIC NONVANISHING OF THE ES ODD RECEIVING DETERMINANT                                          3
+
+remain recorded. No prime-factor exponents are identified across this map. The exterior case
+and the two middle orientations exhaust every positive integral witness.
+  For E, the same rational identity exists even before the full gate:
+                                                                                             !
+                                                            pa + a2 /u pa + p2 u
+                                    (a, y, z) =          a,           ,          .                                (6)
+                                                                R         R
+Every original E word has u ≥ 2, since u = 1 would force R | 5. Moreover, write (·/R) for the
+Jacobi symbol and (·/p) for the Legendre symbol. Then
+                                                            u
+                                                            
+                                                                 = −1.                                            (7)
+                                                            p
+For an odd prime q | a, reciprocity and R ≡ −p (mod q) give
+                      q                            R                                −p            p         q
+                                                                                                    
+                                     (q−1)/2                          (q−1)/2
+                              = (−1)                       = (−1)                            =         =      .
+                      R                            q                                 q            q         p
+If 2 | a, the supplementary law and R ≡ −p (mod 8) give the same identity at two. Multiplication
+yields (u/R) = (u/p), while the E gate gives u ≡ −4−1 (mod R). Hence (u/R) = (−1/R) = −1.
+This proves (7). When p ≡ 1 (mod 24), two and three are residues, so u ≥ 5. This character use
+is elementary and independent of the three receiving-frame characters in the audit.
+
+                   3. The literal receiver and its integer determinant
+  Let ei denote the elementary symmetric functions of the four literal roots. Then
+                          A = −1/S,        B = −e2 /S,                C = e3 /S,         D = −e4 /S.
+For dj = H ′ (ℓj ) choose and retain each sign ξj ∈ C× with ξj2 dj = 1. The source’s odd column is
+                                                                                                  T
+                               oj = ξj 1, −idj , Ad2j + 2ℓj dj , i(7ℓ2j dj − 13d2j )                   .
+The supplied polynomial is
+                          F = 20(3C − B 2 ) + A(87B 3 − 282BC − 51D)
+                                 + A2 (−28B 4 + 22B 2 C + 431C 2 + 204BD)
+                                 + A3 (224B 2 D − 168BC 2 − 856CD) − 448A4 D2 .                                   (8)
+Define the signed product
+                                                   Y                  Y
+                                       ϵ = A2            (ℓj − ℓi )        ξi ∈ {1, −1}.
+                                                   i<j                 i
+Then, exactly,
+                                                 4ϵF           4ϵN
+                                               det O =3
+                                                         =− 3 .                                           (9)
+                                                  A             S
+For completeness, reduce 1, H ′ , A(H ′ )2 + 2T H ′ , 7T 2 H ′ − 13(H ′ )2 modulo H in 1, T, T 2 , T 3 . With
+the four row phases retained, the exact coefficient matrix is CH = diag(1, −i, 1, i)MH ∈ M4 (C),
+where
+            1                0                       0                     0
+                                                                                                                 
+           C               2B                       3                    4A         
+MH = 
+                                                                                    .
+        AC 2 − 9D    4ABC − 8AD − 7C    4AB 2 − 16A2 D − 2AC − 5B   4AB − 8A2 C − 3 
+      20D/A − 13C 2 20C/A + 76D − 52BC 20B/A + 5C − 52B 2 + 208AD 20/A − 66B + 104AC
+Direct expansion gives det MH = 4F/A; the phases −i, i have product one. Evaluation at the
+roots and multiplication by the retained ξj gives (9), since
+                                               Y                 Y
+                                                    dj = A4            (ℓj − ℓi )2 .
+                                               j                 i<j
+
+The main verifier expands this complete Laurent-polynomial identity in A, B, C, D, rather than
+testing selected targets.
+4                                                       THE CLANKERS
+
+    The integer numerator, used without assuming p ∤ S, is
+                             N = 60e3 S 5 − 20e22 S 4 + 87e32 S 2 − 282e2 e3 S 3 − 51e4 S 4
+                                      − 28e42 + 22e22 e3 S + 431e23 S 2 + 204e2 e4 S 2
+                                      + 224e22 e4 − 168e2 e23 − 856e3 e4 S − 448e24 .                                                  (10)
+It is homogeneous of degree eight in the literal roots. Root permutation does not change N, but
+the sign in (9) is retained.
+
+                                                                                                                       det CH = 4F/A,
+                                     H(T ) = −S −1 (T −ℓj )
+                                                    Q
+     integral witness        S, ℓj                              dj , ξ j        O = CH U ∈ M4 (C)                       det U = ϵ/A2
+        (p, x, y, z)                    literal roots and                       Unj = ℓnj ξj , ξj2 dj = 1             det O = −4ϵN/S 3 ,
+                                          order retained
+                                                                                                                          N = S6F
+                             one p-tail
+                                                                           two p-tails
+
+                          exterior source                         middle source
+                         u | a2 , w = p/R                       b ≥ 2, c − b ≥ 1
+                          u ≥ 2, w > 1                        X = b − 2, Y = c − b − 1
+
+
+
+                         PE , uPE,u − 6PE ,                       47045881HM −
+                           wPE,w − 8PE                           327448292668L6M
+                          221 positive co-                       191 positive non-
+                           efficients each                        constant terms
+
+
+                                                                                                    −N/p8 > c
+                                                                                                | det O| > 4cp8 /S 3
+                                                                                               ∥O−1 ∥2 < 360S 9 /(cp8 )
+
+
+          Figure 1. Typed route from a positive integral witness to the receiver bound.
+          The two arithmetic branches exhaust the witness domain. The root labels, square-
+          root signs, complex coefficient map and determinant phase are retained; the
+          polynomial certificates control only the final real scalar −N/p8 .
+
+
+
+                4. Exterior arithmetic has a monotone positive certificate
+    In (6) set w = p/R > 1. Dividing the four roots by p gives
+                                                                                                       !
+                                             w + 1 w + 1 (w + 1)2 w + 1
+                                          1,      ,     +        ,      + wu .
+                                              4w     4    16wu      4
+Define the exact polynomial PE by
+                        −64u2 PE (u, w) = N 16wu, 4u(w + 1),
+                                                                                                                                      (11)
+                                                    (w + 1)(4wu + w + 1), 4wu(w + 1 + 4wu) .
+
+The right side is divisible by 64u2 in Z[u, w]; the sign on the left is part of the definition. The
+resulting bidegree is (12, 16). Hence
+                                              N(p, a, y, z)               PE (u, w)
+                                          −         8
+                                                            = QE (u, w) := 26 6 8 .                                                    (12)
+                                                  p                        2 u w
+Lemma 4.1 (Finite universal exterior coefficient certificate). Each of
+       PE (1 + X, 1 + Y ),            (u∂u PE − 6PE )(1 + X, 1 + Y ),                      (w∂w PE − 8PE )(1 + X, 1 + Y )
+has exactly 221 coefficients, one at every position 0 ≤ i ≤ 12, 0 ≤ j ≤ 16, and every coefficient is
+a positive integer.
+         GLOBAL ARITHMETIC NONVANISHING OF THE ES ODD RECEIVING DETERMINANT                       5
+
+Exact certificate and its independent verification. Equation (10) and the four integer polynomi-
+als in (11) define every coefficient by finite integer additions and multiplications. The complete
+arrays are in polynomial_certificates.json. The first verifier performs the division and
+binomial translation exactly. The second evaluates the unexpanded S 6 F on the entire 17 × 17
+grid u, w ∈ {1, . . . , 17}. Both sides of (11) have bidegree at most (16, 16) before division. Uni-
+variate polynomial uniqueness applied successively in the two variables proves equality from
+that complete grid. It then independently performs both derivative operations and all binomial
+translations. Table 1 displays the row minima; no untested sign or floating-point comparison is
+used. This is a finite computer-assisted polynomial lemma, not an extrapolation from the prime
+census.                                                                                          □
+   The derivative numerators in Lemma 4.1 show that QE strictly increases in both u and w on
+[1, ∞)2 . Its exact boundary value is
+                                                     (2u − 1)2
+                                Φ(u) = QE (u, 1) =             V (u),                          (13)
+                                                      4096u6
+where
+                    V (u) = 5120u10 + 14592u9 + 7232u8 − 6400u7 + 1728u6
+                             + 3904u5 + 432u4 − 400u3 + 113u2 + 57u + 5.
+The boundary equality is also a coefficient identity, independently checked at 13 arguments after
+its degree-12 polynomial denominator is cleared. In particular,
+                                               1310003654463
+                      Φ(2) = c12 ,     Φ(5) =                  > c24 > c12 .
+                                                   12800000
+Every actual E word has u ≥ 2 and w > 1, so (1) follows for E. At p ≡ 1 (mod 24), use u ≥ 5
+for the stronger constant. More generally (12) proves nonvanishing throughout the unfiltered
+rational E source with real u ≥ 1, w ≥ 1, even when its original integer gate fails.
+
+             5. Middle arithmetic has a uniform separation certificate
+  For M, reorder only the last two denominators and write them as pb, pc with integers b < c.
+The original prime cannot be a denominator, so b ≥ 2 and c − b ≥ 1. The normalized smallest
+denominator is
+                            a/p = bc/L,    L = 4bc − b − c > 0.
+For normalized denominator sum s = (a + pb + pc)/p and product v = a(pb)(pc)/p3 , set
+                   T = (b + c)L + bc,       V = b2 c2 ,    s = T /L,    v = V /L.
+Substitution into (10), using the exact normalized reciprocal identity, gives −N/p8 = P(s, v),
+where
+                  P(s, v) = 7168v 4 − (5568s2 + 5728s − 5888)v 3
+                             + (320s4 + 2744s3 + 705s2 − 3350s − 903)v 2
+                             + (−140s5 − 443s4 + 440s3 + 390s2 + 70s − 249)v
+                             + 20s6 − 7s5 − 26s4 − 7s3 + 20s2 .                                (14)
+Define the integer polynomial
+              H(b, c) = L6 P(T /L, V /L),       HM (X, Y ) = H(2 + X, 3 + X + Y ),
+and retain the denominator
+                              LM = 4X 2 + 4XY + 18X + 7Y + 19.
+Lemma 5.1 (Finite universal middle coefficient certificate). HM has 192 nonzero positive integer
+coefficients. The polynomial
+                                47045881HM − 327448292668L6M                                   (15)
+6                                                 THE CLANKERS
+
+has zero constant coefficient and exactly 191 nonzero coefficients, all positive integers. In
+particular it is nonnegative on X, Y ≥ 0, and strictly positive unless X = Y = 0.
+Exact certificate and its independent verification. Use (14) to generate the first array by integer
+polynomial operations. The second is its literal difference with the sixth power of the displayed
+LM . Table 2 records every row’s nonzero count and minimum. The complete arrays include the
+positive coefficients of X and Y . Independently, with b = 2 + X, c = 3 + X + Y , evaluate
+                                        N(L, bc, bL, cL) = −L2 HM (X, Y )
+on the full grid 0 ≤ X ≤ 24, 0 ≤ Y ≤ 16. Each scaled root has degree at most three in X
+and two in Y ; (10) is homogeneous of degree eight. The left side thus has bidegree at most
+(24, 16); the array bounds give the same bound on the right. The complete grid therefore proves
+the polynomial identity. The independent checker multiplies L6M separately and confirms all
+coefficients of (15).                                                                        □
+   Since LM > 0, the lemma proves −N/p8 ≥ c24 throughout the actual M domain. Equality in
+the larger real cone requires b = 2, c = 3, whence a = 6p/19. It would force p = 19 for prime
+p, outside 1 (mod 12). Thus the original inequality is strict. Combining this with the E result
+proves the determinant assertion of Theorem 1.1.
+
+w = p/R                                                    Y =c−b−1
+           u=2                  u=5
+                 QE = PE /(226 u6 w8 )                             47045881HM − 327448292668L6M
+                 strictly increases in u, w                        has zero constant and 191 positive terms
+
+
+
+
+                                       p ≡ 1 (mod 24)
+                                       forces u ≥
+                                                w 5= 1             b=2+X
+                 QE (2, 1) = c12                                   c=3+X +Y
+                                                 u                                                     X =b−2
+                                                                  equality point (0, 0) is not an integral
+           Exterior coordinates                                   state for prime p ≡ 1 (mod 12)
+                                                                    Middle integer cone
+
+        Figure 2. The two exact coordinate domains used in the global sign proof. The
+        blue and green regions are certificate domains; actual Erdős–Straus witnesses are
+        the arithmetic points satisfying the displayed gates and integrality conditions.
+        The exterior lower bound is approached at the dashed boundary w = 1, which is
+        excluded by R < p. The middle comparison is strict at every admissible lattice
+        point because its only equality point would require a = 6p/19.
+
+
+          6. The original inverse, signs, norms, and conductor composition
+    Let CH be the displayed coefficient matrix of the four original component polynomials and put
+                                          Unj = ℓnj ξj ,    0 ≤ n, j ≤ 3.
+Then O, CH , U ∈ M4 (C) and
+                          O = CH U,            det CH = 4F/A,        det U = ϵ/A2 .
+For given z = Oβ, compute m = C−1
+                               H z by its actual adjugate and determinant. The complete
+signed inverse is
+                        βj = ξj (C + Bℓj + ℓ2j + Aℓ3j )m0 + (B + ℓj + Aℓ2j )m1
+                                   
+                                                              
+                                       + (1 + Aℓj )m2 + Am3 .                                                 (16)
+         GLOBAL ARITHMETIC NONVANISHING OF THE ES ODD RECEIVING DETERMINANT                          7
+
+This is Lagrange interpolation; 1/(ξj dj ) = ξj . Its source comprises the literal root labels and
+their retained signs. Neither squared norms nor an unordered root list is asserted to reconstruct
+that source.
+  Here and in Theorem 1.1, ∥ · ∥2 is the operator norm for the standard Hermitian norm on C4 .
+For four distinct positive integer literal roots,
+                                            2/S ≤ |dj | ≤ S 2 .
+Indeed |dj | = S −1 k̸=j |ℓj − ℓk |. The three nonzero integer differences cannot all have magnitude
+                   Q
+
+one, while each is strictly less than S. The four row-entry bounds of O are therefore
+                                 q
+                                     S/2,      S,      3S 2 ,     20S 3 .
+Every 3 × 3 cofactor has magnitude at most 360S 6 . The Frobenius norm of the sixteen-cofactor
+adjugate is at most 1440S 6 . Dividing by the determinant lower bound proves the inverse bound
+in Theorem 1.1. For original positive label and receiving metrics G and Q, respectively,
+                                                                   360S 9
+                              ∥O−1 ∥Q→G < ∥G1/2 ∥2 ∥Q−1/2 ∥2              .                       (17)
+                                                                    c p8
+No new invariant metric is substituted. If a further original linear observation Λ is retained, then
+                          ker(ΛO) = O−1 ker Λ,           rank(ΛO) = rank Λ.
+The receiver adds no further kernel on this arithmetic domain; it does not assert that the
+observation itself is injective. On the image, for original label metric G, its quotient metric is
+exactly (ΛOG−1 O∗ Λ∗ )−1 . Transporting by O uses O−∗ GO−1 rather than assigning a new norm.
+For an original invertible conductor L, the complete inverse remains (LO)−1 = O−1 L−1 with its
+actual second factor. An enlarged receiving map J (α, β) = (α, Eα + Oβ) likewise has the literal
+inverse (α, z) 7→ (α, O−1 (z − Eα)).
+   There is also a bound depending only on the prescribed prime. Let
+                             sp = p(p + 3)/4,        Bp = p + sp (sp + 1).
+The tail factor identity bounds either tail by pa(pa + 1)/R. Direct subtraction from its value at
+R = 3 gives                                                            !
+                     pa(pa + 1) sp (sp + 1)      p2 (R − 3)     p2 + 4
+                               −              =             1−           ≤ 0.
+                         R             3             16          3R
+Since a is smallest, S ≤ Bp . Thus (17) gives the explicit coefficient bound 360Bp9 /(c p8 ) = O(p28 ).
+It is a bound on every existing integral witness, not an assertion that one exists. Homogeneous
+scaling gives Np = p8 N1 and, with coherent signs, Op = diag(p−1 , p, p2 , p3 )O1 ; these scale factors
+are retained.
+
+                       7. Arithmetic examples and precise nonclaims
+  At the hard prime p = 1009, the word u = 11 at a = 253, R = 3 gives
+                    E : (253, 87032, 3818056),         M : (253, 2042216, 88792).
+The audit’s character triple is (−1, 1, 1) at this prime. The present theorem nevertheless proves
+nonvanishing for every one of its integral witnesses. For these two states vp (N) is respectively
+zero and two. At p = 944329, the original M state (a, R, u) = (236094, 47, 1444) returns
+                               (236094, 780326438241, 4772638766).
+All three old characters are positive, while the new negative bound still holds. The exact integer
+numerators and original factor boxes appear in the certificate.
+   The theorem is not a claim that N is a unit at p. In the complete census over primes p ≡ 1
+(mod 12) through 3000, the valuation histogram is E : vp = 0 for 2447 states, E : vp = 1 for four
+states, and M : vp = 2 for 2054 states. The arithmetic order/conductor defects studied earlier
+remain; nonvanishing over Q is a different assertion.
+8                                         THE CLANKERS
+
+    A positive real counterdomain also remains. For 3 ≤ t ≤ 4, put
+                      p = 1,   b = t,   c = t + 1/10,   a = bc/(4bc − b − c).
+These are distinct positive reciprocal roots with 1/4 < a < 1/2 < 1 < t < t + 1/10. Put
+D = 40t2 − 16t − 1. Exact elimination gives
+                                                   P (t)
+                                        N(t) =            ,
+                                                 100000D6
+where, in descending order from t18 to the constant term, the coefficient vector of P is
+                (3617792000000000, −26154803200000000, 70130040320000000,
+                −88735357952000000, 45725157043200000, 12437702609920000,
+               −28537312234432000, 13617485725683200, −1729738000411520,
+             −478292746960768, 90264805813440, 17381353732960, −951549897144,
+         −455951154664, −51247817566, −3092472120, −110106797, −2195730, −19035).
+All eighteen coefficients of P ′ (3 + X) are positive. Exact endpoint signs therefore give a unique
+receiver singularity
+                          3053            1527
+                                  < t0 <       ,    t0 ≈ 3.05367681075890,
+                          1000             500
+while the quartic remains squarefree. The M separation c − b ≥ 1 fails. The E raw word is also
+below one at both endpoints. Scaling by any prime p > 5 leaves the tail gap p/10 nonintegral,
+so these points cannot be promoted to integral witnesses. The audit’s separate positive-real
+example and p-adic zeros are not contradicted by Theorem 1.1.
+   Finally, even an available divisor need not satisfy a gate. At p = 1009, a = 321, R = 275, u = 9,
+the raw exterior identity is
+                                    (321, 335338/275, 9486618/275).
+Its rational quantity S 6 F is strictly negative by Lemma 4.1, but 275 ∤ 37: the E divisibility
+gate fails. Frame invertibility therefore does not force an original integer coefficient. The
+divisor-descent handoff’s universal occupancy obligation is unchanged [3].
+
+                        8. Certificate scope and reproducibility
+    Run the two separate implementations with the stated bounds:
+python verify.py --bound 3000 --out certificates
+python -O verify.py --bound 3000 --out certificates_optimized
+python check_independent.py --input certificates \
+  --out certificates/independent.json
+The first program performs the universal Laurent-polynomial reduction, all coefficient identities
+and the original divisor scan. The second uses the unexpanded supplied F , complete unisolvent
+grids, separate binomial arithmetic, and a primitive (h, r, s) enumeration. It imports neither the
+first program nor predecessor software. Both use only the Python standard library and explicit
+checks that remain present under optimized execution.
+   The bounded arithmetic lane covers every first-half source at primes p ≡ 1 (mod 12) through
+3000: 99 primes, 34287 shells, 868359 original divisor words, 2451 E states and 2054 oriented M
+states. Source hashes, execution outcomes and negative-control values are recorded separately.
+This is not a new overall ES verification range, an independent mathematical review, or a Lean
+build. The universal theorem is the proved arithmetic reduction together with the complete
+polynomial certificates.
+   The precise newly closed question is nonvanishing of the supplied odd receiving determinant at
+every positive integral hard-prime witness. The initial existence of such a witness is not a premise
+that can be discharged by this nonvanishing theorem. The work remains at the programme’s
+Turn 7.
+           GLOBAL ARITHMETIC NONVANISHING OF THE ES ODD RECEIVING DETERMINANT                                    9
+
+                            Appendix A. Compact coefficient ledger
+  The full arrays are machine-readable; the following minima make their signs visible without
+replacing the identity checks.
+        Table 1. Exterior coefficient minima. Each row contains 17 coefficients in each
+        of the three arrays.
+
+                     X degree    PE (1 + X, 1 + Y )    uPE,u − 6PE shifted   wPE,w − 8PE shifted
+                            0          414843750               1950703125            3318750000
+                            1         4439765625              21170421875           35518125000
+                            2        21684625000             105062450000          173477000000
+                            3        63933650000             315267850000          511469200000
+                            4       126767200000             637111680000         1014137600000
+                            5       178129216000             913469734400         1425033728000
+                            6       181933158400             952827043840         1455465267200
+                            7       136118149120             728564637696         1088945192960
+                            8        74055811072             405315584000          592446488576
+                            9        28578217984             160000049152          228625743872
+                           10         7426539520              42543874048           59412316160
+                           11         1167065088               6841958400            9336520704
+                           12           83886080                503316480             671088640
+
+
+
+        Table 2. Middle comparison polynomial: every nonzero coefficient is positive;
+        its constant is zero.
+
+                                Y degree    Nonzero count        Minimum coefficient
+                                        0                   18       12224401719040
+                                        1                   19       28134189572096
+                                        2                   19       14067094786048
+                                        3                   18      126603853074432
+                                        4                   17      510269410869248
+                                        5                   16     1212467950600192
+                                        6                   15     1880365903044608
+                                        7                   14     1988277863047168
+                                        8                   13     1451415862034432
+                                        9                   12      722239332302848
+                                       10                   11      234515813076992
+                                       11                   10       44899083358208
+                                       12                    9        3853998571520
+
+
+                                                      References
+[1] Elsholtz, C., & Tao, T. (2013). Counting the number of solutions to the Erdős–Straus equation
+    on unit fractions. Journal of the Australian Mathematical Society, 94 (1), 50–105. arXiv:1107.1010v6;
+    doi:10.1017/S1446788712000468. Locators: §2, Propositions 2.2 and 2.6. Used for Type I/II antecedents;
+    the normalization and first-half reduction are proved above.
+[2] The Clankers. (2026, September 20). The odd receiving divisor pulled back to the Erdős–Straus locus. Pinned
+    source, EZ37–EZ48. This is the direct public source for the receiver, its determinant polynomial, ES pullback
+    and positive-real counterdomain.
+[3] The Clankers. (2026, September 21). Original-divisor descent from rational ES trace sources. Pinned scope and
+    initial-occupancy boundary. Locators: complete divisor-removal domain, exact universal seed classification,
+    and the final original-coefficient existence obligation. Used to preserve the programme’s current nonclaim.
+[4] The Clankers. (2026, September 20). ES–RH continuation B: Arithmetic nonsingularity, paired determinant
+    bounds, finite heat actions, and arithmetic descent. Erdős–Straus Foundation, revision 49976b1, Track I, E1–E6.
+    The polynomial and three-character theorem were read directly at this revision.
+

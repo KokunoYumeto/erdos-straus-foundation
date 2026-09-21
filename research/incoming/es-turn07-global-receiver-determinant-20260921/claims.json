@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ES-ODD-NORM-INTEGER",
+    "status": "proved",
+    "statement": "Literal S^6 F is the specified integral homogeneous degree-eight norm; det O=-4 epsilon N/S^3.",
+    "dependencies": [
+      "supplied receiving polynomial",
+      "universal coefficient reduction"
+    ]
+  },
+  {
+    "id": "ES-E-RAW-MONOTONE",
+    "status": "proved with exact polynomial certificate",
+    "statement": "The rational raw exterior norm ratio is positive and strictly increasing in real u,w>=1.",
+    "dependencies": [
+      "P_E definition",
+      "three positive 221-coefficient arrays"
+    ]
+  },
+  {
+    "id": "ES-M-INTEGER-GAP",
+    "status": "proved with exact polynomial certificate",
+    "statement": "On b>=2,c-b>=1, -N/p^8>=327448292668/47045881.",
+    "dependencies": [
+      "original M arithmetic",
+      "191-coefficient lower polynomial"
+    ]
+  },
+  {
+    "id": "ES-ODD-GLOBAL-NONVANISHING",
+    "status": "proved with exact polynomial certificate",
+    "statement": "For every positive integral ES witness at prime p=1 mod12, N<-c12 p^8; p=1 mod24 admits c24.",
+    "dependencies": [
+      "complete first-half reduction",
+      "ES-E-RAW-MONOTONE",
+      "ES-M-INTEGER-GAP"
+    ]
+  },
+  {
+    "id": "ES-ODD-NATIVE-INVERSE",
+    "status": "proved",
+    "statement": "Original coefficient-norm inverse is bounded by360 S^9/(c p^8), with explicit actual metric factors.",
+    "dependencies": [
+      "ES-ODD-GLOBAL-NONVANISHING",
+      "integer root separation",
+      "adjugate bound"
+    ]
+  },
+  {
+    "id": "ES-ODD-REAL-UNIQUE-COUNTERDOMAIN",
+    "status": "proved with an exact polynomial certificate",
+    "statement": "The positive-real reciprocal family (1,a(t),t,t+1/10) has exactly one collision-free receiver singularity, in 3053/1000<t<1527/500, and it lies outside both integral certificate domains.",
+    "dependencies": [
+      "degree-18 exact numerator",
+      "positive coefficients of P'(3+X)",
+      "exact endpoint signs and integral-gap obstruction"
+    ]
+  },
+  {
+    "id": "ES-UNIVERSAL-OCCUPANCY",
+    "status": "not proved",
+    "statement": "Every prescribed hard prime has an available original E or M state.",
+    "dependencies": [
+      "missing independent arithmetic forcing theorem"
+    ]
+  }
+]
