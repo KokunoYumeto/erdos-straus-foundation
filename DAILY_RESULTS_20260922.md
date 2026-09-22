@@ -476,7 +476,7 @@ Tail exchange is a receiver-column permutation, and branch changes act by
 diagonal signs. The prime-indexed centred exponent vector is not identified
 with the four-dimensional label vector.
 
-- **Proof:** [typed source, target and composite](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L7-L84); [branch coordinates and quantitative bounds](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L86-L179); [fibres, symmetries and nonclaims](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L181-L216).
+- **Proof:** [typed source, target and composite](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/c9bb9978d5d3028be67574ef4935eaa269eb74a8/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L7-L128); [branch coordinates and quantitative bounds](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/c9bb9978d5d3028be67574ef4935eaa269eb74a8/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L133-L229); [fibres, symmetries and nonclaims](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/c9bb9978d5d3028be67574ef4935eaa269eb74a8/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L231-L278).
 - **Nonclaim:** receiver invertibility cannot be reversed into trace-source existence, a full gate, ray deletion or universal occupancy.
 
 ## Verification boundary
