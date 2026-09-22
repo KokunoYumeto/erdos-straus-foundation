@@ -1,0 +1,9 @@
+{
+  "arxiv": "0808.1408v2",
+  "url": "https://arxiv.org/src/0808.1408v2",
+  "archive_sha256": "b0650548ba4b743a44389912e7da8e7ce7dfe8c06e4477cb8665b287a3d037dc",
+  "status": "original single TeX source recovered",
+  "files": [
+    "dirichlet.tex"
+  ]
+}

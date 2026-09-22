@@ -1,0 +1,60 @@
+[
+  {
+    "id": "MRT-1",
+    "statement": "Every rational trace source at a=cq,c|6,q>3 prime,p1mod24 gives an original Type-II state.",
+    "status": "proved_on_stated_original_source",
+    "proof": "core.tex Theorem1.1 and Sections2,4,5",
+    "unresolved": "Initial source existence is not asserted."
+  },
+  {
+    "id": "MRT-2",
+    "statement": "Complete ray-preserving divisor deletion is d|k|R and k=1mod4rs. Centred exponent coordinates are unchanged.",
+    "status": "proved",
+    "proof": "core.tex Theorem3.1"
+  },
+  {
+    "id": "MRT-3",
+    "statement": "For rs|6 the complete squarefree trace fibre has t|oddPart(pr+s)/delta and delta*t^2<p, with a full integer M return.",
+    "status": "proved",
+    "proof": "core.tex Section4"
+  },
+  {
+    "id": "MRT-4",
+    "statement": "The universal ray-preserving repair rule holds exactly for the nine primitive rays rs|6.",
+    "status": "proved",
+    "proof": "core.tex Sections4 and7",
+    "external_dependency": "Dirichlet theorem on the proved reduced CRT progressions"
+  },
+  {
+    "id": "MRT-5",
+    "statement": "p6975049201 has a proper original trace on ray5,3 but no full ray residual, and both original full gates at its selected shell are empty.",
+    "status": "exact_computer_checked_example_with_arithmetic_factor_proof",
+    "proof": "core.tex Section7.1; certificates/examples.json; independent p-1 order certificate",
+    "nonclaim": "No ES counterexample or least example."
+  },
+  {
+    "id": "MRT-6",
+    "statement": "p9601 is an exact negative control for extending this squarefree-target deletion rule from c|6 to c=4.",
+    "status": "proved_by_complete_nine_word_target_box",
+    "proof": "core.tex Section6.1"
+  },
+  {
+    "id": "MRT-7",
+    "statement": "At p2521,p3361 the mixed initial family is empty; all nine initial automatic ray traces are empty at p3361.",
+    "status": "finite_exhaustion_reproduced_by_complete_enumeration",
+    "proof": "certificates/examples.json initial_source_controls",
+    "nonclaim": "The original full atlas is not empty."
+  },
+  {
+    "id": "MRT-8",
+    "statement": "The trace return composes with the literal receiver on every returned witness, with exact branch coordinates, fibre kernel, determinant margin, inverse bound, and second and third inverse-compound bounds.",
+    "status": "proved",
+    "proof": "receiver_bridge.tex, equations (RB1)-(RB2) and the determinant maximum",
+    "dependencies": [
+      "MRT-1",
+      "global receiver sign theorem",
+      "sharp receiver growth theorem"
+    ],
+    "nonclaim": "Receiver invertibility does not create the initial trace source."
+  }
+]

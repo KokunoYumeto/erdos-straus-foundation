@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-22",
+  "current_repository": {
+    "name": "KokunoYumeto/erdos-straus-foundation",
+    "read_revision": "799c53ffbad2dd9826ed8cb59ac9fe04958a3ce1",
+    "tree": "6711338a5d652b932c38884080c5c1a5f94c8742",
+    "scope": "Main revision and full CONTRIBUTING.md read; no complete current tree audit."
+  },
+  "primary_sources": [
+    {
+      "authors": "Yamamoto, K.",
+      "year": 1965,
+      "title": "On the Diophantine equation 4/n=1/x+1/y+1/z",
+      "locator": "Lemma 2, equation (4), printed p.38",
+      "doi": "10.2206/kyushumfs.19.37",
+      "reading": "Primary J-STAGE PDF page image inspected",
+      "use": "Inherited exterior simultaneous congruences; present proof rederives their marked rational and integral returns."
+    },
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "locator": "Section 2, Propositions 2.2 and 2.6",
+      "arxiv": "1107.1010",
+      "doi": "10.1017/S1446788712000468",
+      "reading": "Primary arXiv text/PDF sections read",
+      "use": "Inherited Type I/II coordinate framework, not universal witness existence."
+    },
+    {
+      "authors": "Sutherland, A. V.",
+      "year": 2017,
+      "title": "Dirichlet’s theorem on primes in arithmetic progressions",
+      "locator": "MIT 18.785 Lecture18, Theorem18.1, p.1",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "reading": "Primary lecture theorem read",
+      "use": "Infinitely many primes only after explicit CRT reducedness is proved."
+    }
+  ],
+  "project_antecedents": [
+    {
+      "title": "Global original receiving determinant",
+      "version": "20260921",
+      "file_id": "file_00000000a0a481f486a509fbbd98e7b2",
+      "locator": "core.tex Theorem1.1; HANDOFF_TURN_7_REMAINDER.md",
+      "use": "Confirms mod24 already within the determinant theorem; its original-source existence obligation is unresolved."
+    },
+    {
+      "title": "Trace rigidity map register",
+      "file_id": "file_000000001f5081f4bb1c98f0a19de334",
+      "locator": "MORPHISMS items8 and9",
+      "use": "Rational integral-tail-trace to integer factor-pair coordinates. Entire historical tranche not re-audited."
+    },
+    {
+      "title": "Original divisor descent map register",
+      "file_id": "file_000000007ff48210a367d674179d9884",
+      "locator": "Items9--18, especially fixed-word budget and u|36",
+      "use": "Prior fixed-word return; the present ray map retains r,s instead and may change u."
+    }
+  ],
+  "content_level_search": {
+    "queries": [
+      "Erdos Straus squarefree ray",
+      "Erdos Straus rational trace",
+      "GitHub ternary lifting",
+      "GitHub ray trace squarefree"
+    ],
+    "scope": "Primary literature leads and exact workbench code searches; not an exhaustive historical review.",
+    "outcome": "No historical-priority claim. Classical parametrizations, CRT, character laws and Dirichlet are credited separately from the derived mixed-source statement.",
+    "other_leads": "Dahan arXiv2608.24035v1 abstract surfaced; full text not relied on, no theorem from it imported."
+  },
+  "nonclaims": [
+    "Universal ES or Type-II occupancy",
+    "Finite global prime cutoff",
+    "New overall verification range",
+    "Least counterexample to the specified local implication",
+    "Independent human review",
+    "Compiled Lean proof",
+    "Historical priority"
+  ]
+}

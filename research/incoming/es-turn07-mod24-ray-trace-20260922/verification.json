@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-22",
+  "status": "pass",
+  "command": "python run_all.py --bound 10000 --directory reproduced",
+  "returncode": 0,
+  "elapsed_seconds": 9.3,
+  "main": {
+    "checks": 126013,
+    "primes_1_mod_24": 143,
+    "shells": 171732,
+    "original_divisor_words": 5616298,
+    "ordered_interface_repairs": 1612,
+    "automatic_rays": 9,
+    "progression_templates": 34,
+    "receipt": "certificates/summary.json"
+  },
+  "independent_checker": {
+    "checks": 257382,
+    "imports_main_checker": false,
+    "independent_human_review": false,
+    "large_prime": 6975049201,
+    "large_prime_certificate": "complete p-1 order certificate with base 11",
+    "receipt": "certificates/independent.json"
+  },
+  "normal_optimized_identical": {
+    "examples.json": true,
+    "progressions.json": true,
+    "ray_fibres.json": true,
+    "repair_example.json": true,
+    "scan.json": true,
+    "summary_except_elapsed": true
+  },
+  "negative_controls": [
+    "c=4 does not extend the square-free target mechanism",
+    "middle orientations remain distinct",
+    "dropping R<p fails",
+    "dropping the hard residue class fails",
+    "dropping prime carrier fails",
+    "radical divisibility is weaker than divisibility by R",
+    "fixed-word deletion need not preserve a primitive ray",
+    "a third-ray saturation extension fails"
+  ],
+  "source_hashes_sha256": {
+    "verify.py": "3e6a298ac64522c8c1861e7aec0ab1b355ee94df536dfed9f8b02af0110f030c",
+    "check_independent.py": "5fa3d455526d8342145ff016c27e0e1bad9bfc8344cd3fa1248930b63e73368b",
+    "check_interface.py": "f6f8f3d1d2294f58a2e8730a6cc1a27d2ce7a458c824d89bf3792cc8373dd4b3",
+    "repair.py": "b3ec1ef120bc1be631f48853af37c722d9802eb8bdd4ed2ffcc3d73d2595a600",
+    "run_all.py": "be2e09dca0c50acbe02fd766d60ac223069e01f0d0320e6a842346bdbf4f4ab5"
+  },
+  "receipt_hashes_sha256": {
+    "certificates/summary.json": "d5a11d05c73702dc3d4028379738a6a15eacc55dc9c948dbe3957ad0951d7917",
+    "certificates/independent.json": "ac700ba59bee61a22280326fe4e578b633a0467fe0619045e6626ece7549e282",
+    "certificates/interface.json": "c76ea57d4ba2f92cd9315467d5434318b143890bcade44aad38c731fa5b1774a"
+  },
+  "pdf_build": {
+    "command": "pdflatex -interaction=nonstopmode -halt-on-error workbench.tex (twice)",
+    "returncode": 0,
+    "pages": 12,
+    "warnings": []
+  },
+  "universal_ES_proved": false,
+  "universal_TypeII_proved": false,
+  "lean_build": false
+}

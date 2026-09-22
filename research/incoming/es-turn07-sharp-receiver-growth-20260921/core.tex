@@ -1,0 +1,668 @@
+\section{Literal receiver and arithmetic domain}
+
+Let \(p\equiv1\pmod {12}\) be prime and let
+\[
+ \frac4p=\frac1a+\frac1Y+\frac1Z,
+ \qquad a,Y,Z\in\mathbb Z_{>0},\qquad Y<Z,
+\]
+be an existing Erd\H{o}s--Straus witness, written in the complete first-half
+coordinates of the preceding global-sign theorem. Thus \(a\) is the unique
+smallest denominator,
+\[
+ \frac p4<a<\frac p2,\qquad R=4a-p,\qquad 3\le R<p,\qquad w=\frac pR.
+\]
+Every witness lies in exactly one of the following two coordinate channels,
+up to the retained exchange of the final two denominators:
+\begin{align}
+ E:\quad
+ (Y,Z)&=\left(\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),
+ &u\mid a^2,\quad R\mid4u+1,\label{eq:Echart}\tag{E}\\
+ M:\quad
+ (Y,Z)&=(pb,pc),
+ &b\ge2,\quad c\ge b+1,\quad
+ a(4bc-b-c)=pbc.\label{eq:Mchart}\tag{M}
+\end{align}
+These are the original integral coordinates, not continuously enlarged model
+domains.
+
+Retain the ordered literal roots
+\[
+ \ell=(p,a,Y,Z),\qquad S=p+a+Y+Z,
+\]
+and define
+\[
+ H(T)=-S^{-1}\prod_{j=0}^3(T-\ell_j)
+     =AT^4+T^3+BT^2+CT+D,\qquad A=-S^{-1}.
+\]
+Put \(d_j=H'(\ell_j)\). For each label choose and retain one square root
+\(\xi_j\in\mathbb C^\times\) satisfying
+\(\xi_j^2d_j=1\). The literal odd receiving map
+\(O:\mathbb C^4_{\mathrm{labels}}\to\mathbb C^4_q\) has columns
+\begin{equation}\label{eq:receiver}
+ o_j=\xi_j
+ \begin{pmatrix}
+ 1\\-i d_j\\A d_j^2+2\ell_jd_j\\
+ i(7\ell_j^2d_j-13d_j^2)
+ \end{pmatrix}.
+\end{equation}
+All norms below are the operator norms induced by the displayed standard
+Hermitian coordinates. A change of metric is treated separately in
+Section~\ref{sec:transport}.
+
+Let \(e_r\) be the elementary symmetric functions of the four literal roots
+and set
+\begin{align}
+ \mathfrak N={}&60e_3S^5-20e_2^2S^4+87e_2^3S^2-282e_2e_3S^3-51e_4S^4\notag\\
+ &-28e_2^4+22e_2^2e_3S+431e_3^2S^2+204e_2e_4S^2\notag\\
+ &+224e_2^2e_4-168e_2e_3^2-856e_3e_4S-448e_4^2.\label{eq:N}
+\end{align}
+The preceding exact reduction of the four rows in \eqref{eq:receiver} gives
+\begin{equation}\label{eq:detO}
+ \det O=-\frac{4\epsilon\mathfrak N}{S^3},
+ \qquad
+ \epsilon=A^2\prod_{i<j}(\ell_j-\ell_i)\prod_j\xi_j\in\{1,-1\}.
+\end{equation}
+The sign records both root order and all four square-root choices.
+
+Define the exact constants
+\begin{equation}\label{eq:constants}
+ \mathfrak c_0=\frac{81920}{483^6},
+ \qquad
+ \mathfrak c=\frac{80}{6279^4}
+ =\frac{81920}{4\,52^4\,483^4}.
+\end{equation}
+
+\begin{theorem}[Sharp prime growth of the literal inverse]\label{thm:main}
+Every positive integral witness in the domain above satisfies
+\begin{align}
+ \|O^{-1}\|_2
+ &<\frac{360}{\mathfrak c}\,p\sqrt w
+ \le\frac{120\sqrt3}{\mathfrak c}\,p^{3/2},\label{eq:inverse-main}\\
+ \|\wedge^2O^{-1}\|_2
+ &<\frac{180}{\mathfrak c},\label{eq:wedge2-main}\\
+ \|\wedge^3O^{-1}\|_2
+ &<\frac{41}{4\mathfrak c\,p^2},\label{eq:wedge3-main}\\
+ |\det O^{-1}|
+ &<\frac1{4\mathfrak c\,p^2S^3}
+ <\frac1{4\mathfrak c\,p^{13/2}}.\label{eq:detinv-main}
+\end{align}
+The exponents in \eqref{eq:inverse-main}--\eqref{eq:wedge3-main} are optimal
+over actual prime witnesses.
+
+If \(s_1(O)\ge s_2(O)\ge s_3(O)\ge s_4(O)>0\), then
+\[
+ s_3(O)>\sqrt{\mathfrak c/180}.
+\]
+Consequently the singular-value decomposition gives
+\begin{equation}\label{eq:rankone}
+ O^{-1}=u\varphi+B,
+ \qquad \operatorname{rank}(u\varphi)\le1,
+ \qquad \|B\|_2<\sqrt{180/\mathfrak c}.
+\end{equation}
+The line represented by \(u\varphi\) may depend on the witness.
+\end{theorem}
+
+\section{Shape-sensitive determinant margins}
+
+The proof of Theorem~\ref{thm:main} uses the full coefficient certificates of
+the global-sign theorem, but extracts information not used by the earlier
+prime-only estimate.
+
+\subsection{Exterior channel}
+
+For \eqref{eq:Echart}, let \(P_E(u,w)\in\mathbb Z[u,w]\) be defined by
+\begin{align}
+ -64u^2P_E(u,w)=\mathfrak N\bigl(&16wu,4u(w+1),\notag\\
+ &(w+1)(4wu+w+1),4wu(w+1+4wu)\bigr).\label{eq:PE}
+\end{align}
+The exact division is part of the supplied certificate. With
+\[
+ J_E=16w^2u^2+8w^2u+28wu+4u+w^2+2w+1,
+\]
+the literal sum and determinant numerator are
+\begin{equation}\label{eq:Escale}
+ \frac Sp=\frac{J_E}{16wu},
+ \qquad
+ -\frac{F}{p^2}=\frac{P_E}{4w^2J_E^6},
+ \qquad F=\frac{\mathfrak N}{S^6}.
+\end{equation}
+
+The translated polynomial \(P_E(1+X,1+Y)\) has one positive integer
+coefficient at every point of the rectangle
+\(0\le i\le12,0\le j\le16\), and its least coefficient is \(83886080\).
+The translated polynomial
+\[
+ \bigl[4w^4J_E(u,w)^6\bigr]_{u=1+X,w=1+Y}
+\]
+has nonnegative coefficients in the same rectangle and coefficient sum
+\(64\,449^6\). The verifier reconstructs both objects from \eqref{eq:N} and
+checks, coefficient by coefficient, that
+\begin{equation}\label{eq:Etranslated}
+ 449^6P_E(1+X,1+Y)
+ -1310720\bigl[4w^4J_E^6\bigr]_{u=1+X,w=1+Y}
+\end{equation}
+has 221 positive coefficients. Notice that this coefficient statement is in
+the translated variables. The unshifted \(P_E\) has negative coefficients;
+no unshifted coefficient claim is used.
+
+Since \(u,w\ge1\), \eqref{eq:Etranslated} gives the pointwise inequality
+\[
+ P_E(u,w)>\frac{1310720}{449^6}\,4w^4J_E(u,w)^6.
+\]
+The rational coefficient is larger than \(16\mathfrak c_0\). Using
+\eqref{eq:Escale} proves
+\begin{equation}\label{eq:E-margin}
+ -F>\mathfrak c_0p^2w^2>\mathfrak c p^2w^2.
+\end{equation}
+
+\subsection{Middle channel}
+
+Set \(b=2+X\), \(c=3+X+Y\), and
+\begin{align*}
+ L_M&=4X^2+4XY+18X+7Y+19,\\
+ J_M&=8X^3+12X^2Y+4XY^2+61X^2+57XY+7Y^2\\
+ &\hspace{16mm}+151X+63Y+120.
+\end{align*}
+The exact middle numerator \(H_M\in\mathbb Z[X,Y]\) is the polynomial defined
+by
+\[
+ -\frac{\mathfrak N}{p^8}=\frac{H_M}{L_M^6},
+ \qquad
+ \frac Sp=\frac{J_M}{L_M},
+ \qquad
+ -\frac F{p^2}=\frac{H_M}{J_M^6}.
+\]
+Its support consists of all 192 lattice points
+\[
+ 0\le i\le18,\qquad0\le j\le12,\qquad i+j\le20,
+\]
+and every coefficient is positive, with minimum \(81920\). Exact expansion
+also proves that every coefficient of
+\begin{equation}\label{eq:Mbase-residual}
+ 483^6H_M-81920J_M^6
+\end{equation}
+is positive. Therefore
+\begin{equation}\label{eq:Mbase}
+ -F>\mathfrak c_0p^2.
+\end{equation}
+
+Put \(h=Z-Y=p(c-b)\) and \(\tau=h/S\). The product
+\((b+c)^2H_M=(5+2X+Y)^2H_M\) has all 237 coefficients in the enlarged
+trapezoid
+\[
+ 0\le i\le20,\qquad0\le j\le14,\qquad i+j\le22,
+\]
+and every coefficient is at least \(81920\). The comparison polynomial
+\(L_M^4(Y+1)^2J_M^4\) has nonnegative coefficients, lies in the same
+trapezoid, and has coefficient sum \(4\,52^4\,483^4\). The verifier checks
+the stronger exact assertion that every coefficient of
+\begin{equation}\label{eq:Mgap-residual}
+ 4\,52^4\,483^4(b+c)^2H_M
+ -81920L_M^4(Y+1)^2J_M^4
+\end{equation}
+is positive. Since
+\[
+ w=\frac{L_M}{b+c},
+ \qquad
+ \tau=\frac{(c-b)L_M}{J_M},
+\]
+this gives
+\begin{equation}\label{eq:M-margin}
+ -F>\mathfrak c p^2\max\{1,w^2\tau^2\}.
+\end{equation}
+
+\section{Cofactors and compound matrices}
+
+Put \(P=\max(p,Y)\) and \(D_*=Z-a\). The reciprocal equation gives
+\begin{equation}\label{eq:P-bounds}
+ Y\le\frac{2pa}{R}<pw,\qquad p\le P\le pw,\qquad P\le S.
+\end{equation}
+If \(Z\le2a\), then \(Y\le Z\le2a\) would imply
+\(1/a+1/Y+1/Z\ge2/a>4/p\); hence \(Z>2a\) and \(a<D_*\). All four roots
+are below \(Z<2D_*\), so \(S<8D_*\). At any root one of the three integer
+differences has magnitude at least \(D_*/2\), and the other two have magnitude
+at least one. Therefore
+\begin{equation}\label{eq:d-xi}
+ |d_j|>\frac1{16},\qquad |\xi_j|<4.
+\end{equation}
+The direct derivative bounds are
+\[
+ |d_p|,|d_a|\le pP,\qquad |d_Y|\le P^2,\qquad |d_Z|\le S^2.
+\]
+Substitution in \eqref{eq:receiver} gives the entry table
+\begin{equation}\label{eq:entry-table}
+\begin{array}{c|ccc}
+ &p,a\text{ columns}&Y\text{ column}&Z\text{ column}\\ \hline
+0&4&4&4\\
+1&\sqrt{pP}&P&S\\
+2&3p\sqrt{pP}&3P^2&3S^2\\
+3&20pP\sqrt{pP}&20P^3&20S^3.
+\end{array}
+\end{equation}
+
+In the exterior channel, each \(3\times3\) cofactor has six determinant terms,
+each bounded by \(60S^3P^{5/2}\sqrt p\). Thus
+\[
+ \|\operatorname{adj}O\|_2
+ \le\|\operatorname{adj}O\|_F
+ \le1440S^3P^{5/2}\sqrt p.
+\]
+By \eqref{eq:detO} and \eqref{eq:E-margin},
+\[
+ \|O^{-1}\|_2
+ <\frac{360P^{5/2}}{\mathfrak c p^{3/2}w^2}
+ \le\frac{360}{\mathfrak c}p\sqrt w.
+\]
+
+The middle channel needs its gap and the exact cofactor cancellation. Here
+\begin{equation}\label{eq:w-middle}
+ w=\frac{4bc}{b+c}-1,\qquad2b-1\le w<4b,\qquad w\ge\frac{19}{5},
+\end{equation}
+and, with \(d=c-b\ge1\),
+\begin{equation}\label{eq:S-h}
+ \frac Sh=1+\frac{2b+1+a/p}{d}<2w.
+\end{equation}
+The three bounds in \eqref{eq:w-middle} retain their exact positive
+remainders.  With \(B=b-2\ge0\) and \(D=d-1\ge0\),
+\[
+ w-(2b-1)=\frac{2bd}{2b+d}>0,
+ \qquad
+ 4b-w=\frac{4b^2+2b+d}{2b+d}>0,
+\]
+and
+\[
+ w-\frac{19}{5}
+ =\frac{4(5B^2+5BD+13B+4D)}{5(2B+D+5)}\ge0.
+\]
+After clearing positive denominators, the last strict inequality follows from
+\[
+ 16b^2d+16bd^2-16bd-6d^2-8b^2-6b-3d>0
+ \quad(b\ge2,d\ge1).
+\]
+Indeed, with \(B=b-2\ge0\) and \(D=d-1\ge0\), the left-hand side is exactly
+\[
+ 16B^2D+8B^2+16BD^2+80BD+26B+26D^2+81D+11.
+\]
+More precisely, writing \(L=4bc-b-c\) and \(\alpha=a/p<1/2\),
+\[
+ w=\frac{L}{b+c},\qquad
+ \frac Sh=1+\frac{2b+1+\alpha}{d}
+ <1+\frac{2b+3/2}{d},
+\]
+and the difference between \(2w\) and the final upper bound is the displayed
+positive polynomial divided by \(2d(2b+d)\).
+The derivative products give
+\[
+ |d_a|>\frac{pY}{8},\qquad |d_p|>\frac{pY}{15},\qquad
+ |d_Y|\ge\frac{Y^2h}{4S},\qquad
+ |d_Z|\ge\frac{Z^2h}{4S}.
+\]
+For completeness, after division by \(p^2\), the first two left-hand sides are
+\[
+ \frac{(1-\alpha)(b-\alpha)(c-\alpha)}{1+\alpha+b+c},\qquad
+ \frac{(1-\alpha)(b-1)(c-1)}{1+\alpha+b+c}.
+\]
+The estimates \(b-\alpha>3b/4\), \(b-1\ge b/2\),
+\(3(c-\alpha)>1+\alpha+b+c\), and
+\(15(c-1)>4(1+\alpha+b+c)\) prove the claimed lower bounds. The tail
+bounds follow from
+\((b-\alpha)(b-1)>b^2/4\) and
+\((c-\alpha)(c-1)>c^2/4\).
+For reference, the two denominator comparisons used here are themselves
+strict:
+\[
+ 3(c-\alpha)-(1+\alpha+b+c)=2c-b-1-4\alpha>0,
+\]
+\[
+ 15(c-1)-4(1+\alpha+b+c)=11c-4b-19-4\alpha>0.
+\]
+Together with \(b>w/4\), these imply
+\begin{equation}\label{eq:xi-middle}
+ |\xi_j|\le\frac{12}{p\sqrt w}.
+\end{equation}
+
+For three retained columns \(I\), let \(t\) be the omitted root and
+\(\Delta_I=\prod_{j<l,\,j,l\in I}(\ell_l-\ell_j)\). Factoring
+\(\xi_jd_j=\xi_j^{-1}\) from the three columns, and replacing the final
+polynomial row by
+\[
+ \bigl(7T^2-13H'(T)\bigr)+\frac{13}{A}\bigl(AH'(T)+2T\bigr)
+ =7T^2+\frac{26}{A}T,
+\]
+gives the exact identity
+\begin{equation}\label{eq:cofactor}
+ \det O_{\{1,2,3\},I}
+ =\left(\prod_{j\in I}\xi_j^{-1}\right)\Delta_I
+ \left[14AB-64-104A\sum_{j\in I}\ell_j
+ -28A^2\sum_{j<l\atop j,l\in I}\ell_j\ell_l\right].
+\end{equation}
+Using \(A=-1/S\), \(B=-e_2/S\), and the full set of four roots, the bracket
+in \eqref{eq:cofactor} becomes
+\begin{equation}\label{eq:omitted-bracket}
+ 40-\frac{76t}{S}-\frac{28t^2}{S^2}-\frac{14e_2}{S^2},
+\end{equation}
+whose modulus is below \(151\). Moreover,
+\begin{equation}\label{eq:xi-product}
+ \left|\prod_{j\in I}\xi_j^{-1}\right|
+ =S^{-3/2}|\Delta_I|
+ \sqrt{\prod_{j\in I}|t-\ell_j|}.
+\end{equation}
+For an omitted core root, use
+\(|\Delta_I|\le PSh\) and
+\(\prod_{j\in I}|t-\ell_j|\le pPS\). For an omitted tail, use
+\(|\Delta_I|\le pS^2\) and respectively
+\(\prod_{j\in I}|t-\ell_j|\le P^2h\) or \(S^2h\).
+Equations \eqref{eq:M-margin}, \eqref{eq:cofactor}, and
+\eqref{eq:xi-product} bound every entry in the first inverse column by
+\begin{equation}\label{eq:first-inverse-column}
+ \frac{108}{\mathfrak c}p\sqrt w.
+\end{equation}
+The constants before \(108\) in the three omitted-root cases are
+\(151/4\), \(151\,2^{3/2}/4\), and \(151/(8\sqrt2)\).
+
+For the remaining inverse columns, \eqref{eq:entry-table},
+\eqref{eq:xi-middle}, and the baseline part of \eqref{eq:M-margin} give
+\[
+ \frac{1080w^{3/2}}{\mathfrak c p},\qquad
+ \frac{360\sqrt w}{\mathfrak c p^2},\qquad
+ \frac{54}{\mathfrak c p^3\sqrt w}.
+\]
+Since \(p\ge13\) and \(w\le p/3\), these are at most \(28,1,1\) times
+\(p\sqrt w/\mathfrak c\). The Frobenius estimate is therefore
+\[
+ \|O^{-1}\|_2
+ <2\sqrt{108^2+28^2+1+1}\,\frac{p\sqrt w}{\mathfrak c}
+ <\frac{224}{\mathfrak c}p\sqrt w,
+\]
+which is covered by \eqref{eq:inverse-main}.
+
+The entries of \(\wedge^2O^{-1}\) are the complementary \(2\times2\)
+minors of \(O\), divided by \(\det O\), with their retained signs. In the
+exterior channel, every numerator is at most \(120S^3P^2\), hence every
+inverse minor is below \(30/\mathfrak c\).
+
+In the middle channel, a tail entry acquires a factor \(\sqrt\tau\) through
+\[
+ \sqrt{|d_Y|}\le Y\sqrt\tau,\qquad
+ \sqrt{|d_Z|}\le Z\sqrt\tau.
+\]
+Every core--tail inverse minor is bounded by
+\begin{equation}\label{eq:core-tail}
+ \frac{30\sqrt{w\tau}}
+ {\mathfrak c\max\{1,(w\tau)^2\}}
+ \le\frac{30}{\mathfrak c},
+\end{equation}
+and the core--core minors obey the same final bound.
+
+For the tail--tail pair set \(Q_c(T)=(T-a)(T-p)\). Then
+\[
+ d_Y=\frac{hQ_c(Y)}S,\qquad d_Z=-\frac{hQ_c(Z)}S.
+\]
+The modulus of the rows-\((2,3)\) minor is exactly
+\begin{align}
+ \frac{h^2}{S}\sqrt{Q_c(Y)Q_c(Z)}\left|
+ 14YZ+\frac{26}{S}\{YQ_c(Z)+ZQ_c(Y)\}
+ -\frac7{S^2}\{Z^2Q_c(Y)+Y^2Q_c(Z)\}
+ \right|.\label{eq:tail-tail}
+\end{align}
+Using \(Q_c(Y)<Y^2\), \(Q_c(Z)<Z^2\), \(Y+Z<S\), and
+\(YZ\le S^2/4\), the bracket is below \(44YZ\); division by
+\eqref{eq:M-margin} gives \(11/\mathfrak c\). The row pairs \((1,3)\) and
+\((1,2)\) have exact polynomial differences bounded by \(20hS\) and \(3h\),
+giving \(5/\mathfrak c\) and \(1/\mathfrak c\). Row-\(0\) pairs are below
+\(1/\mathfrak c\) by \eqref{eq:xi-middle}. Thus all 36 entries of the
+six-by-six second inverse compound are below \(30/\mathfrak c\), and
+\eqref{eq:wedge2-main} follows from its Frobenius norm.
+
+Finally, \eqref{eq:entry-table} gives
+\[
+ \|O\|_2^2\le\|O\|_F^2
+ <64+4S^2+36S^4+1600S^6<41^2S^6.
+\]
+For a \(4\times4\) matrix,
+\(\|\wedge^3O^{-1}\|_2=\|O\|_2/|\det O|\), so
+\eqref{eq:wedge3-main} follows from either determinant margin.
+
+It remains to bound \(S\). In E write \(4u+1=tR\). Since
+\(R\equiv3\pmod4\), \(t\equiv3\pmod4\) and \(t\ge3\), while direct
+substitution gives
+\[
+ Z=\frac{p(pt+1)}4>p^{3/2}.
+\]
+In M, \(p\nmid a\) and \(a(4bc-b-c)=pbc\), so
+\(p\mid4bc-b-c<4bc\). Hence \(bc>p/4\) and
+\[
+ S>p(b+c)\ge2p\sqrt{bc}>p^{3/2}.
+\]
+This proves \eqref{eq:detinv-main}. Since
+\[
+ \|\wedge^2O^{-1}\|_2=\frac1{s_3(O)s_4(O)}<\frac{180}{\mathfrak c}
+\]
+and \(s_3\ge s_4\), one has \(s_3>\sqrt{\mathfrak c/180}\).
+Removing the largest singular summand of \(O^{-1}\) leaves a rank-three
+operator \(B\) with norm \(1/s_3\), proving \eqref{eq:rankone}.
+
+\input{figures/singular_exponent_profiles.tex}
+
+\section{Two infinite prime families and exact leading constants}
+
+\subsection{The family through \((13;4,18,468)\)}
+
+For each prime \(p\equiv13\pmod {24}\), put
+\begin{equation}\label{eq:family1}
+ a=\frac{p+3}{4},\qquad T=pa,\qquad
+ Y=\frac{T+2}{3},\qquad Z=\frac{T(T+2)}6.
+\end{equation}
+Here \(a\) is even and \(T+2\equiv0\pmod3\); hence every displayed quantity
+is integral. Moreover
+\[
+ \frac1Y+\frac1Z=\frac3T,\qquad
+ \frac1a+\frac3{pa}=\frac4p.
+\]
+This is \eqref{eq:Echart} with \(R=3\) and \(u=a^2/2\).
+
+Choose positive real square roots for \(d_a,d_Y>0\) and positive-imaginary
+ones for \(d_p,d_Z<0\); then \(\epsilon=1\). In the root order
+\((p,a,Y,Z)\), the exact rational root formulas give the following entrywise
+asymptotic matrix, with relative error \(O(p^{-1})\) in every displayed
+nonzero entry:
+\[
+O_p=
+\begin{pmatrix}
+4ip^{-3/2}&4p^{-3/2}&12p^{-2}&96ip^{-4}\\
+-\frac14p^{3/2}&-\frac i4p^{3/2}&-\frac i{12}p^2&-\frac1{96}p^4\\
+-\frac i2p^{5/2}&\frac18p^{5/2}&\frac1{72}p^4&-\frac i{3072}p^8\\
+\frac{13}{64}p^{9/2}&-\frac{13i}{64}p^{9/2}&-\frac i{288}p^6&
+\frac5{221184}p^{12}
+\end{pmatrix}.
+\]
+The complete compound matrices give
+\begin{equation}\label{eq:family1-compounds}
+\begin{array}{c|c|c}
+j&\text{power of }p&\text{leading coefficient of }\|\wedge^jO_p\|_2\\ \hline
+1&12&5/221184\\
+2&16&5/15925248\\
+3&35/2&5\sqrt2/(2^{18}3^5)\\
+4&16&5/7962624.
+\end{array}
+\end{equation}
+At rank three, two column triples have the same leading order, with
+coefficients \(-5/63700992\) and \(-5i/63700992\). Their joint Euclidean norm,
+not either selected minor, produces the factor \(\sqrt2\).
+
+Successive compound-norm ratios yield
+\begin{equation}\label{eq:family1-singular}
+\begin{aligned}
+s_1(O_p)&=\frac5{221184}p^{12}(1+O(p^{-1})),&
+s_2(O_p)&=\frac1{72}p^4(1+O(p^{-1})),\\
+s_3(O_p)&=\frac1{2\sqrt2}p^{3/2}(1+O(p^{-1})),&
+s_4(O_p)&=4\sqrt2\,p^{-3/2}(1+O(p^{-1})).
+\end{aligned}
+\end{equation}
+In particular,
+\begin{equation}\label{eq:family1-inverse}
+ p^{-3/2}\|O_p^{-1}\|_2\longrightarrow\frac1{4\sqrt2},
+ \qquad
+ \|\wedge^2O_p^{-1}\|_2\longrightarrow\frac12,
+ \qquad
+ p^4\|\wedge^3O_p^{-1}\|_2\longrightarrow36.
+\end{equation}
+
+The leading cofactors give the operator limit
+\begin{equation}\label{eq:rankone-limit}
+ p^{-3/2}O_p^{-1}
+ \longrightarrow\frac18(-i,1,0,0)^Te_0^*.
+\end{equation}
+Thus the smallest right singular vector tends, up to phase, to
+\(v=2^{-1/2}(-i,1,0,0)^T\), and \(p^3s_4(O_p)^2\to32\). The other three
+eigenvalues of \(p^3O_p^*O_p\) diverge, so the continuous functional calculus
+proves, for every fixed \(t>0\),
+\begin{equation}\label{eq:heat-limit}
+ e^{-tp^3O_p^*O_p}\longrightarrow e^{-32t}vv^*.
+\end{equation}
+No statement at \(t=0\) follows from this limit.
+
+\subsection{The family through \((13;5,10,130)\)}
+
+For the same prime progression put
+\begin{equation}\label{eq:family2}
+ a=\frac{3p+1}{8},\qquad Y=2a,\qquad Z=2pa.
+\end{equation}
+Then \(a,Y,Z\) are positive integers and
+\[
+ \frac1a+\frac1{2a}+\frac1{2pa}=\frac4p.
+\]
+This is \eqref{eq:Echart} with \(R=(p+1)/2\) and \(u=a\), since
+\(4u+1=3R\). The derivative signs are
+\((+,+,-,-)\); choose positive real and positive-imaginary roots accordingly,
+so \(\epsilon=-1\).
+
+The complete leading receiving matrix is
+\[
+\begin{pmatrix}
+\sqrt{32/5}\,p^{-1}&8p^{-1}/\sqrt{15}&i\sqrt{32/3}\,p^{-1}&4ip^{-2}/3\\
+-i\sqrt{10}\,p/8&-i\sqrt{15}\,p/8&-\sqrt6\,p/8&-3p^2/4\\
+\sqrt{10}\,p^2/4&3\sqrt{15}\,p^2/32&-3i\sqrt6\,p^2/16&-27ip^4/16\\
+159i\sqrt{10}\,p^3/256&-33i\sqrt{15}\,p^3/128&
+165\sqrt6\,p^3/256&135p^6/16
+\end{pmatrix},
+\]
+again with relative \(O(p^{-1})\) error in each displayed nonzero entry.
+The full compound norms are
+\begin{equation}\label{eq:family2-compounds}
+\begin{array}{c|c|c}
+j&\text{power of }p&\text{leading coefficient of }\|\wedge^jO_p\|_2\\ \hline
+1&6&135/16\\
+2&8&135\sqrt{991}/512\\
+3&9&675\sqrt3/512\\
+4&8&2565/256.
+\end{array}
+\end{equation}
+Here the relevant small-root row norm, two-row exterior norm, and determinant
+are exactly \(991/1024\), \(75/1024\), and \(-19/16\), respectively. Therefore
+\begin{equation}\label{eq:family2-singular}
+\begin{aligned}
+s_1(O_p)&\sim\frac{135}{16}p^6,&
+s_2(O_p)&\sim\frac{\sqrt{991}}{32}p^2,\\
+s_3(O_p)&\sim\frac{5\sqrt3}{\sqrt{991}}p,&
+s_4(O_p)&\sim\frac{38}{5\sqrt3}p^{-1},
+\end{aligned}
+\end{equation}
+and
+\begin{equation}\label{eq:family2-inverse}
+ p^{-1}\|O_p^{-1}\|_2\to\frac{5\sqrt3}{38},
+ \qquad
+ \|\wedge^2O_p^{-1}\|_2\to\frac{\sqrt{991}}{38},
+ \qquad
+ p^2\|\wedge^3O_p^{-1}\|_2\to\frac{16}{19}.
+\end{equation}
+
+Dirichlet's theorem applies because \(\gcd(13,24)=1\), so both families
+contain infinitely many prime witnesses. Equations
+\eqref{eq:family1-inverse} and \eqref{eq:family2-inverse} prove the optimality
+of all three exponents in Theorem~\ref{thm:main}.
+
+\section{Metrics, conductor, and observations}\label{sec:transport}
+
+Let \(G\) and \(Q\) be positive-definite Hermitian matrices on
+\(V_\beta=\mathbb C^4_{\mathrm{labels}}\) and
+\(E_q=\mathbb C^4_q\), respectively. For \(1\le j\le4\), exterior-power
+submultiplicativity applied to
+\(G^{1/2}O^{-1}Q^{-1/2}\) gives
+\begin{equation}\label{eq:metric-wedge}
+ \|\wedge^jO^{-1}\|_{Q\to G}
+ \le
+ \left[
+ \frac{\prod_{a=1}^j\lambda_a^\downarrow(G)}
+ {\prod_{a=1}^j\lambda_a^\uparrow(Q)}
+ \right]^{1/2}B_j(p),
+\end{equation}
+where \(B_j\) is the corresponding bound in
+\eqref{eq:inverse-main}--\eqref{eq:detinv-main}. If the metrics depend on
+\(p\), their eigenvalue factors remain present.
+
+The conductor maps in the source programme have the exact types
+\[
+ O:V_\beta\to E_q,\qquad
+ \Phi:E_q\to U,\qquad
+ L_U:U\to W,\qquad
+ \Psi=L_U\Phi:E_q\to W.
+\]
+On the stated invertible restrictions, the complete composite and inverse are
+\begin{equation}\label{eq:conductor-composite}
+ C=L_U\Phi O=\Psi O,
+ \qquad
+ C^{-1}=O^{-1}\Phi^{-1}L_U^{-1}=O^{-1}\Psi^{-1}.
+\end{equation}
+Thus \eqref{eq:rankone} transports as
+\begin{equation}\label{eq:rankone-transport}
+ C^{-1}=B\Psi^{-1}+u(\varphi\Psi^{-1}).
+\end{equation}
+The second summand has rank at most one. The first is uniformly bounded only
+when \(\Psi^{-1}\) is fixed or uniformly bounded; the receiver estimate does
+not remove conductor resonances.
+
+For a further linear observation \(\Lambda:E_q\to Y\), let
+\(Y_0=\operatorname{im}(\Lambda O)=\operatorname{im}\Lambda\). Then
+\begin{equation}\label{eq:observation}
+ \ker(\Lambda O)=O^{-1}\ker\Lambda,
+ \qquad
+ \operatorname{rank}(\Lambda O)=\operatorname{rank}\Lambda,
+\end{equation}
+and the quotient covariance on the actual image is
+\begin{equation}\label{eq:covariance}
+ Q_{\Lambda O}
+ =\left[(\Lambda OG^{-1}O^*\Lambda^*)|_{Y_0}\right]^{-1}.
+\end{equation}
+In an ambient codomain larger than \(Y_0\), the corresponding formula uses
+the Moore--Penrose inverse. An observation after the conductor retains every
+factor:
+\[
+ \ker(\Lambda C)=O^{-1}\Phi^{-1}L_U^{-1}\ker\Lambda.
+\]
+The metric paired exactly to \(O\) is
+\[
+ G_{\mathrm{out}}=O^{-*}G_{\mathrm{in}}O^{-1},
+\]
+and through the conductor it is
+\[
+ C^{-*}G_{\mathrm{in}}C^{-1}
+ =\Psi^{-*}O^{-*}G_{\mathrm{in}}O^{-1}\Psi^{-1}.
+\]
+Neither \(\Phi\) nor \(\Psi\) is declared unitary. Finally,
+\(\epsilon\det O=4(-F)S^3>0\), but no sign or phase for
+\(\det(\Psi O)\) follows without retaining \(\det\Psi\).
+
+\input{figures/typed_transport.tex}
+
+\section{Scope}
+
+The theorem begins with an existing integral witness. It proves that the
+literal receiving stage is invertible there, bounds its inverse and compound
+maps, and determines sharp growth on two infinite families. It does not
+produce a witness at a prescribed hard prime and therefore does not prove the
+Erd\H{o}s--Straus conjecture. The heat limit
+\eqref{eq:heat-limit} belongs to the displayed finite-dimensional ES receiver;
+it is not an RH heat operator. The conductor conclusions are exactly those
+of \eqref{eq:conductor-composite}--\eqref{eq:rankone-transport}, with all
+metric and resonance factors retained.

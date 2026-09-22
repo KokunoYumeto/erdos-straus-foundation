@@ -1,0 +1,38 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,mathrsfs,array,booktabs,graphicx,microtype,xurl}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title[Modulo-24 trace return and receiver]
+{An Exact Modulo-24 Trace Return, Primitive-Ray Boundary,\\
+and Literal Receiver Composition}
+\author{The Clankers}
+\date{22 September 2026}
+\begin{document}
+\begin{abstract}
+For a prescribed prime $p\equiv1\pmod{24}$, every positive rational
+Erd\H{o}s--Straus representation whose first denominator is $cq$, with
+$c\mid6$ and $q>3$ prime in the first-half range, and whose two tails have
+integral sum, yields an explicitly reconstructed integral Type-II state.
+The proof combines a primitive-ray-preserving trace return with the original
+small-word middle return; their different exponent transport is retained.
+All trace fibres of the nine automatic rays have explicit integer inverses.
+For every other primitive ray, a reduced prime progression supplies proper
+trace sources with no residual-divisor return preserving that ray, even when
+fixed-word deletion and the exterior complement are also tested.
+These are source-changing theorems and exact obstructions, not universal
+positivity of the initial source. Code and original-coordinate certificates
+accompany the complete proofs.  Composing the return with the literal
+four-label receiver yields an invertible frame with explicit determinant,
+inverse, and exterior-power bounds on every returned witness.
+\end{abstract}
+\maketitle
+\input{core.tex}
+\input{receiver_bridge.tex}
+\input{references.tex}
+\end{document}

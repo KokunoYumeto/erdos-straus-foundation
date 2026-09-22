@@ -1,0 +1,31 @@
+\begin{figure}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  node distance=15mm and 18mm,
+  box/.style={draw,rounded corners,minimum width=30mm,minimum height=10mm,align=center},
+  >=Latex
+]
+  \node[box] (V) {\(V_\beta=\mathbb C^4_{\rm labels}\)};
+  \node[box,right=of V] (E) {\(E_q=\mathbb C^4_q\)};
+  \node[box,right=of E] (U) {\(U=\mathcal P_{v+3}/\mathcal P_{v-1}\)};
+  \node[box,right=of U] (W) {\(W=\mathcal P_3\)};
+  \draw[->,thick] (V) -- node[above] {\(O\)} (E);
+  \draw[->,thick] (E) -- node[above] {\(\Phi\)} (U);
+  \draw[->,thick] (U) -- node[above] {\(L_U\)} (W);
+  \draw[->,thick,bend right=23] (E) to node[below] {\(\Psi=L_U\Phi\)} (W);
+  \draw[->,very thick,bend left=24] (V) to
+    node[above] {\(C=L_U\Phi O=\Psi O\)} (W);
+  \node[box,below=of E] (Y) {\(Y_0=\operatorname{im}(\Lambda O)\)};
+  \draw[->,thick] (E) -- node[right] {\(\Lambda|_{\operatorname{im}O}\)} (Y);
+  \node[align=left,below=of U,draw,dashed,rounded corners,inner sep=4pt] (inv)
+    {\(C^{-1}=O^{-1}\Phi^{-1}L_U^{-1}=O^{-1}\Psi^{-1}\)\\
+     \(\ker(\Lambda C)=O^{-1}\Phi^{-1}L_U^{-1}\ker\Lambda\)};
+  \draw[densely dotted] (W) -- (inv);
+\end{tikzpicture}%
+}
+\caption{The exact typed conductor chain. Omitting \(\Phi\) makes the composite
+ill-typed. The receiver's rank-one inverse decomposition passes through
+\(\Psi^{-1}\), while any growth or resonance of \(\Psi^{-1}\) remains.}
+\label{fig:typed-transport}
+\end{figure}

@@ -1,0 +1,89 @@
+{
+  "bound": 10000,
+  "checks": 257382,
+  "counts": {
+    "automatic_ray_proper": 409,
+    "automatic_ray_traces": 1230,
+    "full_E": 3637,
+    "full_M": 3910,
+    "mixed_proper": 254,
+    "mixed_traces": 806,
+    "original_divisor_words": 5616298,
+    "primes": 143,
+    "proper_E": 2151,
+    "proper_M": 1768,
+    "shells": 171732,
+    "trace_E": 5788,
+    "trace_M": 5678
+  },
+  "elapsed_seconds": 3.245,
+  "full_source_sha256": "bec6c6bfc7eb1deab27e2a5857cbb5b8d64f82d3efde10049ee340763820d4ea",
+  "large_prime_certificate": {
+    "base": 11,
+    "full_power": 1,
+    "order_witnesses": [
+      {
+        "gcd": 1,
+        "q": 2,
+        "residue": 6975049200
+      },
+      {
+        "gcd": 1,
+        "q": 3,
+        "residue": 5142439303
+      },
+      {
+        "gcd": 1,
+        "q": 5,
+        "residue": 3452841807
+      },
+      {
+        "gcd": 1,
+        "q": 7,
+        "residue": 1416197156
+      },
+      {
+        "gcd": 1,
+        "q": 830363,
+        "residue": 906946382
+      }
+    ],
+    "p": 6975049201,
+    "p_minus_one_factors": [
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        830363,
+        1
+      ]
+    ],
+    "sqrt_floor": 83516
+  },
+  "negative_controls": {
+    "c4_sf_target_failure": true,
+    "distinct_M_orientations": true,
+    "drop_R_less_p": true,
+    "drop_hard_class": true,
+    "drop_prime_carrier": true,
+    "radical_not_squarefree_part": true,
+    "same_word_not_ray": true,
+    "third_ray_saturation_failure": true
+  },
+  "success": true,
+  "trace_source_sha256": "4c20ce46313053e25ebb647a1597a8c755cb9d7b7a655e0f182abbf8313dac71",
+  "universal_ES_proved": false
+}

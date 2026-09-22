@@ -1,0 +1,185 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,xurl}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{lemma}[theorem]{Lemma}
+\title{A Rational-Trace Return for the Modulo-24\newline Erd\H{o}s--Straus Source}
+\author{The Clankers}\date{22 September 2026}
+\begin{document}
+\begin{abstract}
+At a prime $p\equiv1\pmod{24}$, a positive rational ES representation with
+integer first denominator $cq$ in the first-half range, $c\mid6$, $q>3$ prime,
+and integral sum of the two tails has an explicit integral Type-II return at
+the same prime. The proof preserves the full original divisor box and uses a
+primitive-ray change on exterior sources, but a fixed-word change on middle
+sources. Initial existence of such a trace source is not asserted.
+\end{abstract}\maketitle
+
+\begin{theorem}\label{thm}
+Let $p\equiv1\pmod{24}$ be prime, $a=cq$ with $c\mid6$ and $q>3$ prime, and
+$p/4<a<p/2$. If positive rationals $y,z$ satisfy
+\[
+ 4/p=1/a+1/y+1/z,\qquad y+z\in\mathbb Z,
+\]
+then the formulas below return positive integers $x_M,y_M,z_M$ satisfying the
+same reciprocal identity. If the input tails are nonintegral, the returned
+middle state's smaller residual or cofactor is strictly below $R=4a-p$.
+\end{theorem}
+
+\paragraph{Original coordinates.}
+The classical exterior congruences are in Yamamoto's Lemma 2, equation (4),
+p.~38 [1]; the Type I/II framework is [2, Section 2]. We retain their actual
+integer data. For $u\mid a^2$, define
+\[
+ g=\gcd(a,u),\quad(h,r,s)=(g^2/u,u/g,a/g),\quad a=hrs,\quad u=hr^2.
+\]
+The two rational returns before imposing full gates are
+\begin{align*}
+ E:&\quad(a,hs\kappa,phr\kappa),&\kappa&=(pr+s)/R,\\
+ M:&\quad(a,phs\lambda,phr\lambda),&\lambda&=(r+s)/R.
+\end{align*}
+Every cancelled factor is a unit modulo $R$. Their full gates are respectively
+$R\mid4u+1$ and $R\mid p+4u$. Integral tail trace is equivalent to the square
+of the corresponding numerator being divisible by $R$.
+
+These coordinates capture every rational pair in Theorem~\ref{thm}. Its tails
+have the same reduced denominator $d$, and $yz=(y+z)pa/R$ implies
+$d^2=R/\gcd(R,y+z)$. Thus $b=Ry-pa$ and $b'=Rz-pa$ are positive integers with
+$bb'=(pa)^2$. Their $p$-valuations are $(0,2),(1,1),(2,0)$. Set $u=a^2/b$
+in the first case, interchange the tails in the last case while retaining
+that bit, and set $u=pa^2/b$ in the middle case. This gives precisely the two
+returns above and an original integer divisor $u\mid a^2$.
+
+\paragraph{The character constraint still holds on a proper trace.}
+For each odd prime $\ell\mid a$, reciprocity and $R\equiv-p\pmod\ell$ give
+$(\ell/R)=(p/\ell)=(\ell/p)$. When $2\mid a$, the same equality follows from
+$R\equiv-p\pmod8$. Multiplying all original prime powers yields
+$(u/R)=(u/p)$. At each prime \(\ell\mid R\), the square gate implies
+\(\ell\mid G_c\), equivalently \(\operatorname{rad}(R)\mid G_c\); it does not
+imply \(R\mid G_c\). Since $R\equiv3\pmod4$, the primewise statement gives
+\[
+ E:(u/p)=-1,\qquad M:(u/p)=-(a/p).
+\]
+At $p\equiv1\pmod{24}$, the primes two and three are residues. If $(q/p)=1$,
+all divisors of $a^2$ would be residues, contradicting either displayed rule.
+Therefore $(q/p)=-1$.
+
+\paragraph{Exterior branch: preserve the primitive ray, not the old word.}
+The exponent of $q$ in an E divisor is exactly one, so $u=qw$ with $w\mid c^2$.
+The gcd normalization then has $rs\mid c\mid6$. Put
+\[
+ m=4rs,\quad T=pr+s,\quad R=\delta t^2,
+\]
+where $\delta$ is the positive squarefree part, not the radical. The trace
+condition gives $R\mid T^2$, hence $\delta\mid T$. Since $m\mid24$, every unit
+square modulo $m$ is one. Thus
+\[
+ \delta\equiv R\equiv-p\equiv-1\pmod m.
+\]
+Define
+\[
+ H=(\delta+1)/m,\quad J=T/\delta,
+ \quad(h_M,r_M,s_M,\lambda_M)=(H,s,J,r).
+\]
+Then $r\mid s+J$, $\gcd(s,J)=1$, and
+\[
+ a_M=HsJ,\quad u_M=Hs^2,\quad R_M=(s+J)/r,\quad Q_M=\delta.
+\]
+The exact identities are $4a_M-R_M=p$ and $r_M+s_M=R_M\lambda_M$.
+Moreover
+\[
+ R_M\le p/3+4s/(3r)<p,
+\]
+because the original range gives $p>2hrs\ge2s/r$. Consequently
+\begin{equation}\label{eq:return}
+ (x_M,y_M,z_M)=(HsJ,\ pHJr,\ pHsr)
+\end{equation}
+is an original positive integer solution. The old E state also has the
+integral E image $R'=\delta$, $h'=(p+\delta)/m$, $u'=h'r^2$.
+If the input tails were exterior-swapped, use the complementary returned word
+\(a_M^2/u_M=HJ^2\); this reverses the returned middle tails and retains the
+marked input orientation.
+At every prime, $v_\ell(u')-v_\ell(h'rs)=v_\ell(r)-v_\ell(s)$:
+the centred exponents survive, but the absolute divisor is allowed to change.
+
+\paragraph{Middle branch: preserve a small original word.}
+The exponent of $q$ in an M divisor is zero or two. Complement $u\mapsto a^2/u$
+when it is two and retain the orientation bit. The resulting word $u_0$ divides
+$c^2$, hence divides $36$. If
+\[
+ K(u_0)=\prod_{\ell^e\parallel u_0}\ell^{\lceil e/2\rceil},
+\]
+then $4K(u_0)\mid24$. Since $t^2\equiv1\pmod{4K(u_0)}$ and
+$4K(u_0)\mid p+R$, put $a'=(p+\delta)/4$ to obtain
+\[
+ u_0\mid a'^2,\qquad \delta\mid p+4u_0.
+\]
+Recompute $(h',r',s')$ from $a',u_0$, set $\lambda'=(r'+s')/\delta$, and
+return $(a',ph's'\lambda',ph'r'\lambda')$. Restore the original M orientation
+with the new complement $a'^2/u_0$. No factors from the old $a$ are assigned to
+$a'$ without this calculation.
+
+A nonintegral input has $R\nmid G$ but $R\mid G^2$, so $R$ is not squarefree
+and $\delta<R$. In the M branch, $a'<a$; in the E branch, $Q_M=\delta<R$.
+This completes the theorem.
+
+\paragraph{Complete E fibres and their finite range.}
+For any fixed automatic ray $rs\mid6$, let $A$ be the odd part of $T$.
+One has \(\gcd(A,4rs)=1\).
+The squarefree targets are precisely
+\[
+ \delta\mid\operatorname{rad}(A),\qquad\delta\equiv-1\pmod{4rs}.
+\]
+Each is below $p$: $J=T/\delta\equiv-(r+s)\pmod{4rs}$ implies $J\ge r+s$.
+All original trace preimages are exactly
+\[
+ R=\delta t^2<p,\qquad t\mid A/\delta.
+\]
+This follows by checking each exponent in $R\mid T^2$. Retaining $t$ gives
+the inverse, with $h=(p+R)/(4rs)$. The middle marking recovers $r=\lambda_M$,
+$s=r_M$, $J=s_M$ and $\delta=4h_Mr_M\lambda_M-1$. Forgetting $t$ sums its
+original integer multiplicities; the section $t=1$ does not assert a nonempty
+target set.
+
+\paragraph{An actual composite-source repair.}
+At $p=1129$,
+\[
+ a=417=3\cdot139,\quad R=539=11\cdot7^2,\quad
+ (h,r,s,u)=(139,3,1,1251)
+\]
+gives rational tails $6116/7,20714892/7$ with integral sum. Both original gates
+are empty at this shell, but \eqref{eq:return} gives
+\[
+ \frac4{1129}=\frac1{308}+\frac1{1043196}+\frac1{3387}.
+\]
+The fixed-word deletion fails: $1251\nmid285^2$. The ray-preserving E return
+uses $u'=855$ at $a'=285$, not an unavailable copy of the old divisor.
+
+\paragraph{Exact scope.}
+At $p=9601$, $a=4\cdot739=2956$, $R=2223$, the M word $u=8$ gives an integral
+rational tail trace. The squarefree target $R'=247$, $a'=2462$ has complete
+divisor-residue set $\{1,2,4,16,32,64,231,239,243\}$. It misses the E target
+$185$ and M target $8$. Thus the displayed deletion rule cannot simply be
+extended to $c=4$. At $p=2521$ and $3361$, every initial shell in the theorem's
+family has empty trace source; those finite tables are supplied. The theorem
+is not a proof that such a source exists at every prime.
+
+The complete workbench additionally proves that the universal ray-preserving
+residual-divisor guarantee holds exactly for $rs\mid6$, using an explicitly
+reduced prime progression for every other primitive ray. It provides all
+original exponent boxes, full inverse fibres and a separate deterministic
+checker. The default replay covers all 143 primes $1\pmod{24}$ through 10000;
+finite tests are not substituted for the preceding general proofs. No historical
+priority, independent human review, universal ES proof or Lean build is claimed.
+
+\begin{thebibliography}{9}
+\bibitem{1} Yamamoto, K. (1965). On the Diophantine equation
+$4/n=1/x+1/y+1/z$. \emph{Memoirs of the Faculty of Science, Kyushu University,
+Series A, Mathematics, 19}(1), 37--47. Lemma 2, equation (4), p.~38.
+\bibitem{2} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions.
+\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
+\texttt{arXiv:1107.1010}, Section 2, Propositions 2.2 and 2.6.
+\end{thebibliography}
+\end{document}

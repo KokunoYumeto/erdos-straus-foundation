@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "received_date": "2026-09-22",
+  "outer_archive": {
+    "source_locator": "Downloads/ES_Turns6_7_With_Mod24_Ray_Trace_20260922.zip",
+    "sha256": "5d87c3bfc34630f7d8c9be4732fb7fe5412322eddeed375cb388e246255daac4"
+  },
+  "pasted_handoff": {
+    "source_locator": "Codex attachment 3149b935-ee80-42c2-8822-1687cd7ded3a/Pasted text.txt",
+    "sha256": "df2c94e566267e4066ba1844a2c06c52f253f09c33ad6a2f0a71ac3ab2e825b8"
+  },
+  "inner_current_archive": {
+    "sha256": "8318b1be87de7104d77316521c1be5509d59e0d33e59df55cc25f602e7e2c7c8"
+  },
+  "path_containment_check": "pass",
+  "integration_corrections": [
+    "The exterior-to-middle denominators are (HsJ, pHsr, pHJr).",
+    "The residual-divisor conclusion is rad(R) dividing G_c, not R dividing G_c.",
+    "The gcd(k,m) and gcd(A,m) hypotheses are explicit.",
+    "Source and target fibre bases, orientation bits, complement bits, and retained t are distinct data.",
+    "The finite computations are described only at their certified ranges.",
+    "The p=9601 control refutes only the proposed c=4 extension."
+  ],
+  "excluded_from_import": [
+    "stale PDFs",
+    "integration.patch",
+    "source bundle",
+    "cache directories"
+  ]
+}

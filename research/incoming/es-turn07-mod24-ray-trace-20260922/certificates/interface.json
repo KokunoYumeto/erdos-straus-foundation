@@ -1,0 +1,7 @@
+{
+  "domain_rejections": 2,
+  "imports_repair_implementation": true,
+  "independent_mathematical_checker": false,
+  "ordered_inputs_repaired": 1612,
+  "success": true
+}

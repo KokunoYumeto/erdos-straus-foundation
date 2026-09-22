@@ -1,0 +1,380 @@
+{
+  "status": "passed",
+  "exact_count": 50,
+  "numerical_count": 56,
+  "exact": [
+    "complete weighted receiver leading matrix",
+    "complete weighted determinant leading coefficient",
+    "complete exact inverse-column leading coefficient",
+    "first core inverse-column correction",
+    "full upper-row first derivative including Y term",
+    "largest singular first correction",
+    "second exterior first correction",
+    "third exterior first correction with both core triples",
+    "complete determinant first correction",
+    "third singular first correction",
+    "smallest singular first correction",
+    "inverse limiting norm squared",
+    "inverse norm first correction",
+    "last observation exact squared coefficient",
+    "integral family p13 c2",
+    "exact ES reciprocal identity p13 c2",
+    "exact original inverse zero column p13",
+    "exact inverse column 1 p13",
+    "exact inverse column 2 p13",
+    "exact inverse column 3 p13",
+    "exact determinant denominator identity p13",
+    "nonzero signed inverse denominator p13",
+    "integral family p37 c2",
+    "exact ES reciprocal identity p37 c2",
+    "exact original inverse zero column p37",
+    "exact inverse column 1 p37",
+    "exact inverse column 2 p37",
+    "exact inverse column 3 p37",
+    "exact determinant denominator identity p37",
+    "nonzero signed inverse denominator p37",
+    "integral family p3361 c29",
+    "exact ES reciprocal identity p3361 c29",
+    "exact original inverse zero column p3361",
+    "exact inverse column 1 p3361",
+    "exact inverse column 2 p3361",
+    "exact inverse column 3 p3361",
+    "exact determinant denominator identity p3361",
+    "nonzero signed inverse denominator p3361",
+    "integral family p27721 c29",
+    "exact ES reciprocal identity p27721 c29",
+    "exact original inverse zero column p27721",
+    "exact inverse column 1 p27721",
+    "exact inverse column 2 p27721",
+    "exact inverse column 3 p27721",
+    "exact determinant denominator identity p27721",
+    "nonzero signed inverse denominator p27721",
+    "coprime original hard-residue progression",
+    "initial displayed prime",
+    "initial displayed Y",
+    "initial displayed Z"
+  ],
+  "numerical": [
+    {
+      "label": "all four first corrections c2 p10000",
+      "detail": [
+        0.01406347818901078,
+        -0.0020472234221998765,
+        0.006514973905496149,
+        0.005187599091678065
+      ]
+    },
+    {
+      "label": "soft energy first correction c2 p10000",
+      "detail": 0.3562977297271996
+    },
+    {
+      "label": "full determinant first correction c2 p10000",
+      "detail": 0.005823435990558473
+    },
+    {
+      "label": "relative last-label singular-vector asymptotic c2 p10000",
+      "detail": 0.002622240368266106
+    },
+    {
+      "label": "both relative tail-vector first corrections c2 p10000",
+      "detail": [
+        0.0010650663862387167,
+        0.02759631733893791
+      ]
+    },
+    {
+      "label": "both rare-label heat first corrections c2 p10000",
+      "detail": [
+        0.04275462706314718,
+        0.2190304992510704
+      ]
+    },
+    {
+      "label": "actual inverse column to slow direction c2 p10000",
+      "detail": 1.1536732090119244e-25
+    },
+    {
+      "label": "fixed complex metric soft-energy first correction p10000",
+      "detail": 0.009279530851357637
+    },
+    {
+      "label": "all four annihilation tiers in fixed complex metrics p10000",
+      "detail": [
+        0.001032425523932155,
+        0.00033297484368478505,
+        1.7009200781586574e-05,
+        0.0062641692253010625
+      ]
+    },
+    {
+      "label": "all four first corrections c2 p20000",
+      "detail": [
+        0.007030869773700663,
+        -0.0010249302871967183,
+        0.0032592107916550148,
+        0.0025929934704226215
+      ]
+    },
+    {
+      "label": "soft energy first correction c2 p20000",
+      "detail": 0.17807441120737172
+    },
+    {
+      "label": "full determinant first correction c2 p20000",
+      "detail": 0.002910858498759941
+    },
+    {
+      "label": "relative last-label singular-vector asymptotic c2 p20000",
+      "detail": 0.00131180986641125
+    },
+    {
+      "label": "both relative tail-vector first corrections c2 p20000",
+      "detail": [
+        0.0005314223666466132,
+        0.013802671775001144
+      ]
+    },
+    {
+      "label": "both rare-label heat first corrections c2 p20000",
+      "detail": [
+        0.0213799211895749,
+        0.10959135298211758
+      ]
+    },
+    {
+      "label": "actual inverse column to slow direction c2 p20000",
+      "detail": 9.006530481704837e-28
+    },
+    {
+      "label": "all four first corrections c2 p40000",
+      "detail": [
+        0.003515217471717229,
+        -0.0005127950007462691,
+        0.0016300368934363551,
+        0.0012962952360475793
+      ]
+    },
+    {
+      "label": "soft energy first correction c2 p40000",
+      "detail": 0.08901860015038876
+    },
+    {
+      "label": "full determinant first correction c2 p40000",
+      "detail": 0.0014552145623412474
+    },
+    {
+      "label": "relative last-label singular-vector asymptotic c2 p40000",
+      "detail": 0.0006560774383836251
+    },
+    {
+      "label": "both relative tail-vector first corrections c2 p40000",
+      "detail": [
+        0.00026543365667112295,
+        0.006902464654993864
+      ]
+    },
+    {
+      "label": "both rare-label heat first corrections c2 p40000",
+      "detail": [
+        0.01069060709950552,
+        0.05481471051617038
+      ]
+    },
+    {
+      "label": "actual inverse column to slow direction c2 p40000",
+      "detail": 7.033799898317019e-30
+    },
+    {
+      "label": "fixed complex metric soft-energy first correction p40000",
+      "detail": 0.002319065491488572
+    },
+    {
+      "label": "all four annihilation tiers in fixed complex metrics p40000",
+      "detail": [
+        0.0002580927825399426,
+        8.31271032606939e-05,
+        4.371907896456713e-06,
+        0.0015694502325011982
+      ]
+    },
+    {
+      "label": "all four first corrections c29 p10000",
+      "detail": [
+        0.021597507353570418,
+        0.008200466924994022,
+        0.006514567629932274,
+        0.005195688637702717
+      ]
+    },
+    {
+      "label": "soft energy first correction c29 p10000",
+      "detail": 0.35681560331757484
+    },
+    {
+      "label": "full determinant first correction c29 p10000",
+      "detail": 0.02361684590120627
+    },
+    {
+      "label": "relative last-label singular-vector asymptotic c29 p10000",
+      "detail": 0.0026238473557399053
+    },
+    {
+      "label": "both relative tail-vector first corrections c29 p10000",
+      "detail": [
+        0.021598565420764118,
+        0.011526442600945513
+      ]
+    },
+    {
+      "label": "both rare-label heat first corrections c29 p10000",
+      "detail": [
+        0.08381732002324029,
+        0.18698138752280133
+      ]
+    },
+    {
+      "label": "actual inverse column to slow direction c29 p10000",
+      "detail": 1.153670842478485e-25
+    },
+    {
+      "label": "all four first corrections c29 p20000",
+      "detail": [
+        0.010804383417906393,
+        0.00410199200536341,
+        0.003259109381565519,
+        0.0025950171649987324
+      ]
+    },
+    {
+      "label": "soft energy first correction c29 p20000",
+      "detail": 0.17820394548555338
+    },
+    {
+      "label": "full determinant first correction c29 p20000",
+      "detail": 0.011814213737462317
+    },
+    {
+      "label": "relative last-label singular-vector asymptotic c29 p20000",
+      "detail": 0.0013122123957605356
+    },
+    {
+      "label": "both relative tail-vector first corrections c29 p20000",
+      "detail": [
+        0.01079480062494538,
+        0.005752084789289945
+      ]
+    },
+    {
+      "label": "both rare-label heat first corrections c29 p20000",
+      "detail": [
+        0.04190564684616616,
+        0.09351286859002246
+      ]
+    },
+    {
+      "label": "actual inverse column to slow direction c29 p20000",
+      "detail": 9.00652586213911e-28
+    },
+    {
+      "label": "all four first corrections c29 p40000",
+      "detail": [
+        0.005403596677158079,
+        0.002051435535771167,
+        0.0016300115608848767,
+        0.0012968013229523229
+      ]
+    },
+    {
+      "label": "soft energy first correction c29 p40000",
+      "detail": 0.08905099194012459
+    },
+    {
+      "label": "full determinant first correction c29 p40000",
+      "detail": 0.005908553717171064
+    },
+    {
+      "label": "relative last-label singular-vector asymptotic c29 p40000",
+      "detail": 0.0006561781685938754
+    },
+    {
+      "label": "both relative tail-vector first corrections c29 p40000",
+      "detail": [
+        0.005396278657957486,
+        0.0028732562449820327
+      ]
+    },
+    {
+      "label": "both rare-label heat first corrections c29 p40000",
+      "detail": [
+        0.020952045058871945,
+        0.04676196985264519
+      ]
+    },
+    {
+      "label": "actual inverse column to slow direction c29 p40000",
+      "detail": 7.033798996308749e-30
+    },
+    {
+      "label": "u2 same inverse limit p24013",
+      "detail": 0.17675098739214593
+    },
+    {
+      "label": "u2 same second inverse exterior limit p24013",
+      "detail": 0.5001409634950713
+    },
+    {
+      "label": "u2 different full determinant p24013",
+      "detail": 0.19479824828962866
+    },
+    {
+      "label": "u2 same inverse limit p48013",
+      "detail": 0.1767638403865141
+    },
+    {
+      "label": "u2 same second inverse exterior limit p48013",
+      "detail": 0.5000705070097659
+    },
+    {
+      "label": "u2 different full determinant p48013",
+      "detail": 0.19484681538890727
+    },
+    {
+      "label": "complete uniform-tail spectrum u1",
+      "detail": [
+        1.8479337196708927,
+        2.859582359881585,
+        3.4119198841553784,
+        1.317951357682138
+      ]
+    },
+    {
+      "label": "complete uniform-tail spectrum u2",
+      "detail": [
+        1.1445345466627959,
+        2.720863035323128,
+        3.4184467116574777,
+        1.1650843017130201
+      ]
+    },
+    {
+      "label": "complete uniform-tail spectrum u10",
+      "detail": [
+        0.2743045943100267,
+        2.5552513529880505,
+        3.417003558394163,
+        0.9778402328720895
+      ]
+    },
+    {
+      "label": "complete uniform-tail spectrum u10000",
+      "detail": [
+        0.0002875036051454599,
+        2.49979462348045,
+        3.4144981347447345,
+        0.9184581204445315
+      ]
+    }
+  ],
+  "script_sha256": "647f3416a16f6a0ab6c341dcca1a268ef2e38c100d76672e2a0f9c9a3a21c823"
+}

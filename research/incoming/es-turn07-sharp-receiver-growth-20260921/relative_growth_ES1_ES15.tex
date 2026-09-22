@@ -1,0 +1,135 @@
+\section{Original four-label ES receiver: full spectrum and first corrections}\label{original-four-label-es-receiver-full-spectrum-and-first-corrections}
+
+This section derives the complete singular asymptotics of the literal
+four-label Erd\H{o}s--Straus receiver, including its exact inverse, its
+rank-three exceptional locus, all exterior-power scales, and the relation
+between inverse rates and total volume.  It retains the original denominator
+labels and every square-root branch.  The receiver is the linear extension
+defined in the cited ES--Fable bridge; it is not asserted to be the Jacobian
+of the originating nonlinear three-dimensional construction described in
+Tao's exposition~\cite{TaoDigestion}.
+
+\subsection{ES1. Original roots, chart, signs, and exact inverse}\label{es1.-original-roots-chart-signs-and-exact-inverse}
+
+Retain four distinct positive labelled roots \(\ell=(p,a,Y,Z)\), the original sum \(S=p+a+Y+Z\), and \[
+f(x)=\prod_j(x-\ell_j),\quad A=-S^{-1},\quad H=Af,\quad d_j=Af'(\ell_j),\quad \xi_j^2d_j=1.
+\tag{ES1}
+\] The source and target coefficient frames are exactly the four labels and the four displayed receiving coordinates. Their Euclidean receiver has columns \[
+o_j=\xi_j(1,-id_j,Ad_j^2+2\ell_jd_j,i(7\ell_j^2d_j-13d_j^2))^{\mathsf T}.
+\tag{ES2}
+\] Thus every independent square-root sign is retained. Changing a sign is right multiplication by its diagonal sign isometry and changes the corresponding label coordinate of every inverse and observed vector.
+
+Let \(e_2,e_3\) be the elementary symmetric sums of the literal roots, and put \[
+P_2(x)=x^2+\frac{19S}{7}x+\frac{e_2}{2}-\frac{10S^2}{7},\qquad
+\mathfrak h=\sum_j\frac{P_2(\ell_j)}{d_j^2},
+\] \[
+\begin{aligned}
+R_1(x)&=i\left[x^3+\left(\frac{19S^2}{7}+e_2\right)x
+-\frac{10S^3}{7}+\frac{Se_2}{2}-\frac{3e_3}{4}\right],\\
+R_2(x)&=\frac{5S^2-13Sx}{7},
+&R_3(x)&=\frac{i(S-4x)}{28},\\
+\mathfrak r_\nu&=\sum_j\frac{R_\nu(\ell_j)}{d_j^2}.
+\end{aligned}
+\tag{ES3}
+\] On the exact invertibility locus calculated in ES5, the supplied rational expressions are the actual inverse of ES2: \[
+(O^{-1}e_0)_j=\xi_j^{-1}\frac{P_2(\ell_j)/d_j^2}{\mathfrak h},
+\qquad
+(O^{-1})_{j\nu}=\frac{A\xi_j^{-1}}{d_j^2}
+\left[R_\nu(\ell_j)-P_2(\ell_j)\frac{\mathfrak r_\nu}{\mathfrak h}\right],\quad1\le\nu\le3.
+\tag{ES4}
+\] Here is a direct derivation, retaining all denominators. For target \(b\), put \(z_j=\xi_j(O^{-1}b)_j\) and \(t_j=d_jz_j\). There is a unique polynomial \(L(x)=l_3x^3+l_2x^2+l_1x+l_0\) with \(t_j=L(\ell_j)/f'(\ell_j)\). The coefficients of the Lagrange identity, or polynomial division by the monic \(f\), give \[
+\sum_j\ell_j^n/f'(\ell_j)=0,0,0,1,S,S^2-e_2\quad(0\le n\le5).
+\] Writing \(U_L=\sum_jL(\ell_j)\), the last three receiver equations become exactly \[
+l_3=ib_1,\quad A^2U_L+2(l_2+Sl_3)=b_2,
+\quad7[l_1+Sl_2+(S^2-e_2)l_3]-13AU_L=-ib_3,
+\] \[
+U_L=l_3(S^3-3Se_2+3e_3)+l_2(S^2-2e_2)+Sl_1+4l_0.
+\] The first equation fixes \(l_3\); the coefficient determinant in \((l_1,l_0)\) of the other two equations is \((1/S)(52/S)-(4/S^2)20=-28/S^2\ne0\). Hence their homogeneous solution space has dimension one. Substitution verifies that their complete solution is \(L=cP_2+\sum_{\nu=1}^3b_\nu R_\nu\). The remaining first equation is \(A\sum_jL(\ell_j)/d_j^2=b_0\), which determines \(c=(b_0/A-\sum b_\nu\mathfrak r_\nu)/\mathfrak h\) and proves ES4. This is an exact connecting map from the supplied auxiliary polynomial column to the original labelled inverse.
+
+For the determinant put \(\Delta_\ell=\prod_{i<j}(\ell_j-\ell_i)\). Factoring each column by \(d_j\), applying the same polynomial coefficient elimination, and using the Vandermonde determinant gives \[
+\det O=28\epsilon A\left(\prod_jd_j\right)\mathfrak h,
+\qquad \epsilon=A^2\Delta_\ell\prod_j\xi_j\in\{1,-1\}.
+\tag{ES5}
+\] Indeed \(\prod_jf'(\ell_j)=\Delta_\ell^2\) for four roots, so \(\epsilon^2=1\). Equivalently, before any square-root choices, the determinant of the four unscaled columns in ES2 is \(28A^3\Delta_\ell(\prod d_j)\mathfrak h\). Thus among all distinct positive labelled roots the exact exceptional receiver space is \(\mathfrak h=0\); its complement is precisely the domain of ES4. Below, nonvanishing is proved directly throughout the large-\(w\) regime used by the asymptotics. No unproved global certificate at every smaller integral witness is needed for that calculation.
+
+To verify the determinant coefficient explicitly, interpolate \(R_0(\ell_j)=1/d_j\), writing \(R_0=r_0+r_1x+r_2x^2+r_3x^3\). After factoring the \(d_j\) and cancelling the row constants \((-i)i=1\), the other three row polynomials are \(1\), \(A^2f'+2x\), and \(7x^2-13Af'\). The determinant of their four coefficient rows is \[
+\frac{28}{S^2}r_1+\frac{104}{S}r_2+
+\left(64-\frac{14e_2}{S^2}\right)r_3
+=28A^2\sum_j\frac{P_2(\ell_j)R_0(\ell_j)}{f'(\ell_j)}
+=28A^3\mathfrak h.
+\] The equality uses exactly the Lagrange sums above. Multiplication by the evaluation determinant \(\Delta_\ell\), by \(\prod d_j\), and finally by \(\prod\xi_j\) proves ES5 with its stated sign.
+
+The exceptional space also has exact connecting data. At \(\mathfrak h=0\), the last three receiver rows still have rank three by the coefficient determinant above. Hence \(O\) has rank exactly three, with kernel generated by the nonzero vector \((\xi_j^{-1}P_2(\ell_j)/d_j^2)_j\). Its image is precisely the hyperplane \[
+\{b\in\mathbb C^4:b_0/A-\mathfrak r_1b_1-\mathfrak r_2b_2-\mathfrak r_3b_3=0\}.
+\] The defining cokernel row is nonzero because \(A\ne0\). This follows from the first-row compatibility equation after solving all last-three-row equations. Thus the exact defect determines both kernel and cokernel and is not merely a failed inverse formula.
+
+\subsection{\texorpdfstring{ES2. Uniform large-\(w\) exterior spectrum}{ES2. Uniform large-w exterior spectrum}}\label{es2.-uniform-large-w-exterior-spectrum}
+
+In the original exterior chart retain \[
+R=4a-p>0,\quad w=p/R,\quad t=a/p=(1+w^{-1})/4,\quad u\ge1,
+\] \[
+Y=pw(t+t^2/u),\qquad Z=pw(t+u),\qquad
+\frac YZ=\frac tu,\qquad\frac{YZ}{Y+Z}=pwt.
+\tag{ES6}
+\] These equalities are literal algebraic identities; integrality remains an additional property of the original witness, not of an arbitrary real chart point. For \(w\ge256\), they imply \(a<p<Y<Z\), \(Y\ge pw/4\), \(Z\ge pw\). Set \(U=Y+Z\), \(\tau=(Z-Y)/U\). Since \(Y/Z=t/u\le257/1024\), one has \(1/2<\tau<1\).
+
+Choose \(\xi_p=i/\sqrt{-d_p}\), \(\xi_a=1/\sqrt{d_a}\), \(\xi_Y=1/\sqrt{d_Y}\), \(\xi_Z=i/\sqrt{-d_Z}\). The exact derivative equations include \[
+-d_p=p^2wt(1-t)\frac{(1-p/Y)(1-p/Z)}{1+(p+a)/U},\quad
+d_a=p^2wt(1-t)\frac{(1-a/Y)(1-a/Z)}{1+(p+a)/U},
+\] \[
+d_Y=Y^2\tau\frac{(1-p/Y)(1-a/Y)}{1+(p+a)/U},\quad
+-d_Z=Z^2\tau\frac{(1-p/Z)(1-a/Z)}{1+(p+a)/U}.
+\tag{ES7}
+\] The bounds \(p/Y\le4/w\), \(p/Z\le1/w\), \((p+a)/U\le4/(3w)\) prove, with constants independent of \(u\ge1\), \[
+-d_p,d_a=\frac3{16}p^2w[1+O(w^{-1})],\quad
+d_Y=Y^2\tau[1+O(w^{-1})],\quad-d_Z=Z^2\tau[1+O(w^{-1})].
+\tag{ES8}
+\] All estimates in this section are uniform for \(p\ge1,u\ge1,w\ge256\); no nearly coincident-tail denominator is hidden in them.
+
+For completeness \(\mathfrak h<0\) on this entire regime. Positivity of the four roots gives \(e_2\le3S^2/8\), while \(p/S\le1/w\). Consequently both core values satisfy \(P_2(p),P_2(a)\le-S^2\). ES7 gives \(|d_p|,d_a\le p^2w/4\), so the core contribution to \(\mathfrak h\) is at most \(-32S^2/(p^4w^2)\). At every root \(|P_2(\ell_j)|\le6S^2\). ES7 gives \(d_Y\ge Y^2/3\), \(-d_Z\ge Z^2/3\), hence the absolute tail contribution is at most \[
+54S^2(Y^{-4}+Z^{-4})\le27648S^2/(p^4w^4).
+\] The ratio of this last bound to the core magnitude is at most \(864/w^2<1\). This proves nonvanishing of ES4--5 directly, without relying on an unexecuted global coefficient certificate.
+
+Define the positive literal-tail quantities \[
+A_3=\sqrt{\tau[Y^6(7-13\tau)^2+Z^6(7+13\tau)^2]},
+\] \[
+A_{23}=\tau^2Y^2Z^2U\left(40-\frac{14YZ}{U^2}\right).
+\tag{ES9}
+\] The bracket is at least \(73/2\). The complete increasingly numbered by decreasing size singular values are \[
+s_1=A_3[1+O(w^{-1})],\quad s_2=(A_{23}/A_3)[1+O(w^{-1})],
+\] \[
+s_3=\sqrt{3/8}\,p\sqrt w[1+O(w^{-1})],\qquad
+s_4=\sqrt{32/3}\,(p\sqrt w)^{-1}[1+O(w^{-1})].
+\tag{ES10}
+\] Here and below singular values use the original Euclidean label and receiving metrics, until the explicit transport ES33--37 in \texttt{ES\_FAMILY\_CORRECTIONS.md}.
+
+We prove all four rates by the complete exterior maps. The leading tail block in rows 2 and 3 is \[
+\begin{pmatrix}
+Y^2\sqrt\tau(2-Y\tau/U)&-iZ^2\sqrt\tau(2+Z\tau/U)\\
+iY^3\sqrt\tau(7-13\tau)&Z^3\sqrt\tau(7+13\tau)
+\end{pmatrix}.
+\tag{ES11}
+\] Its determinant is exactly \(A_{23}\): expanding the two terms reduces the remaining bracket to \(\tau U(40-14YZ/U^2)\). ES8 gives errors bounded entrywise by \(CY^2/w,CZ^2/w,CY^3/w,CZ^3/w\), respectively. The last-row norm is \(A_3[1+O(w^{-1})]\); its Z term is uniformly nonzero even if \(7-13\tau\) vanishes.
+
+Here are the bounds for every omitted exterior coefficient. Core entries in rows 0,1,2,3 have respective sizes at most \(C/(p\sqrt w),Cp\sqrt w,Cp^2\sqrt w,Cp^3w^{3/2}\); tail entries in those rows have respective sizes at most \(C/L,CL,CL^2,CL^3\), for \(L=Y,Z\). Relative to \(A_{23}\ge(73/8)Y^2Z^3\), any other two-column minor is bounded by \(C/w\): for tail columns lowering row 2 costs at most \(C/Y\), and for one core column the largest ratio is bounded by \(C[p^2\sqrt w/Y^2+p^3w^{3/2}/(Y^2Z)]\). Both are at most \(C/w\); two core columns are smaller. The finite number of minors then bounds the entire second exterior map, not only one chosen coefficient.
+
+At exterior rank three the two leading entries, in rows 1,2,3 and columns \((p,Y,Z)\), \((a,Y,Z)\), are \[
+-\frac{\sqrt3}{4}p\sqrt w A_{23}[1+O(w^{-1})],\quad
+-\frac{i\sqrt3}{4}p\sqrt w A_{23}[1+O(w^{-1})].
+\] The other terms in either same minor cost at most \(Cp/Y+Cp^2w/(YZ)=O(w^{-1})\) relatively. A triple with two core columns has relative size at most \(Cw^{-3/2}\), and replacing row 1 by row 0 costs at most \(C/(p^2w)\). Thus the leading exterior map has one nonzero row with both displayed entries, giving \[
+\|\wedge^3O\|=\sqrt{3/8}\,p\sqrt w A_{23}[1+O(w^{-1})].
+\tag{ES12}
+\] For the full determinant the core rows 0,1 minor equals \((d_a-d_p)/\sqrt{-d_pd_a}=2+O(w^{-1})\). The largest alternative pairing, core rows 0,2 and tail rows 1,3, has relative size at most \(Cp/Y\); core rows 0,3 and tail rows 1,2 cost at most \(Cp^2w/(YZ)\). The remaining pairings cost at most these bounds. Therefore \[
+|\det O|=2A_{23}[1+O(w^{-1})].
+\tag{ES13}
+\] The identities \(\|\wedge^jO\|=s_1\cdots s_j\) now prove ES10 with all four singular values retained.
+
+The same calculation, or ES4 with ES7, gives the inverse operator limit \[
+\frac{O^{-1}}{p\sqrt w}=\frac{\sqrt3}{8}(-i,1,0,0)^{\mathsf T}e_0^*+O(w^{-1})
+\tag{ES14}
+\] in operator norm, uniformly in the stated regime. To see why all columns are controlled, the cofactor of column zero has the two ES12 leading triples, while every cofactor of column one has norm at most \(CA_{23}/(p\sqrt w)\); columns two and three have at most \(CA_{23}/(p^2\sqrt w)\) and \(CA_{23}/(p^3w^{3/2})\), respectively. Division by ES13 and then by \(p\sqrt w\) makes all these columns \(O(w^{-1})\), uniformly for \(p\ge1\). The leading two zero-column cofactors have the phases in ES14; their exact formula is ES4.
+
+Let \(v_0=2^{-1/2}(-i,1,0,0)^{\mathsf T}\). Rank-one singular perturbation of ES14 and ES10 prove, for every fixed \(\tau_0>0\), \[
+e^{-\tau_0p^2wO^*O}\longrightarrow e^{-(32/3)\tau_0}v_0v_0^*,
+\tag{ES15}
+\] uniformly as \(w\to\infty\) in this original chart. The other three exponents diverge because \(p^2w s_3^2\asymp p^4w^2\to\infty\). The four marked labels remain distinct in the limiting projection.

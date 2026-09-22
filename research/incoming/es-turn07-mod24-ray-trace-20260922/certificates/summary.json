@@ -1,0 +1,64 @@
+{
+  "automatic_rays": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      6,
+      1
+    ]
+  ],
+  "bound": 10000,
+  "checks": 126013,
+  "counts": {
+    "automatic_ray_proper": 409,
+    "automatic_ray_traces": 1230,
+    "full_E": 3637,
+    "full_M": 3910,
+    "mixed_proper": 254,
+    "mixed_traces": 806,
+    "original_divisor_words": 5616298,
+    "primes": 143,
+    "proper_E": 2151,
+    "proper_M": 1768,
+    "shells": 171732,
+    "trace_E": 5788,
+    "trace_M": 5678
+  },
+  "elapsed_seconds": 2.435,
+  "full_source_sha256": "bec6c6bfc7eb1deab27e2a5857cbb5b8d64f82d3efde10049ee340763820d4ea",
+  "progression_templates": 34,
+  "success": true,
+  "trace_source_sha256": "4c20ce46313053e25ebb647a1597a8c755cb9d7b7a655e0f182abbf8313dac71",
+  "universal_ES_proved": false,
+  "universal_TypeII_proved": false
+}

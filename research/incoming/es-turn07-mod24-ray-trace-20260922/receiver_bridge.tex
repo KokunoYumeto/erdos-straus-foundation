@@ -1,0 +1,218 @@
+\section{Exact composition with the literal receiver}\label{sec:receiver-bridge}
+
+The trace return and the receiver bounds have different domains.  This
+section gives their exact composite and records the data that the composite
+retains or forgets.
+
+Let \(\mathcal T_{24}^{\mathrm{mix}}\) be the set of marked tuples
+\[
+ T=(p,c,q,a,y,z,\omega)
+\]
+such that
+\[
+ p\equiv1\pmod {24},\quad a=cq,\quad c\mid6,\quad q>3\text{ prime},
+ \quad \frac p4<a<\frac p2,
+\]
+\[
+ y,z\in\mathbb Q_{>0},\qquad
+ \frac4p=\frac1a+\frac1y+\frac1z,qquad y+z\in\mathbb Z,
+\]
+where \(\omega\) records the original order of the two tails.  The
+factorization in Lemma~\ref{lem:trace} assigns an E or M word
+\[
+ R=4a-p,qquad u\mid a^2,qquad
+ a=hrs,qquad u=hr^2,qquad \gcd(r,s)=1.
+\]
+Its common reduced tail denominator is
+\[
+ d(T)=\frac{R}{\gcd(R,G_E)}
+ \quad\hbox{or}\quad
+ d(T)=\frac{R}{\gcd(R,G_M)},
+\]
+according to the channel.  Let \(\mathcal W_{12}^{\mathrm{ord}}\) be the
+ordered integral witnesses
+\[
+ W=(p;a_W,Y_W,Z_W),\qquad p\equiv1\pmod {12},qquad
+ \frac4p=\frac1{a_W}+\frac1{Y_W}+\frac1{Z_W},qquad
+ a_W<Y_W<Z_W.
+\]
+Then, after matching the retained order,
+\[
+ \mathcal T_{24}^{\mathrm{mix}}\cap\mathcal W_{12}^{\mathrm{ord}}
+ =\{T\in\mathcal T_{24}^{\mathrm{mix}}:d(T)=1\}.
+\]
+In particular, a proper trace source \(d(T)>1\) is not already in the
+receiver theorem's integral domain.
+
+The mixed theorem defines a source-changing map
+\begin{equation}\label{eq:rho}
+ \rho:\mathcal T_{24}^{\mathrm{mix}}
+ \longrightarrow \mathcal W_{24}^{M,\mathrm{ord}}
+ \subset\mathcal W_{12}^{\mathrm{ord}}.
+\end{equation}
+For \(W=\rho(T)\), retain
+\[
+ \ell=(p,a_W,Y_W,Z_W),\qquad S=p+a_W+Y_W+Z_W,qquad
+ H_W(X)=-S^{-1}\prod_{j=0}^3(X-\ell_j).
+\]
+Write \(d_j=H_W'(\ell_j)\), and retain one of the two square roots
+\(\xi_j\) with \(\xi_j^2d_j=1\) for every label.  The literal receiver is
+the typed linear map
+\begin{equation}\label{eq:receiver-typed}
+ \mathscr O(W,\xi):V_\beta=\mathbb C^4_{\mathrm{labels}}
+ \longrightarrow E_q=\mathbb C^4_q,
+\end{equation}
+\[
+ e_j\longmapsto
+ \xi_j
+ \begin{pmatrix}
+ 1\\-i d_j\\A d_j^2+2\ell_jd_j\\
+ i(7\ell_j^2d_j-13d_j^2)
+ \end{pmatrix},
+ \qquad A=-S^{-1}.
+\]
+Let \(\Xi_W\) be the sixteen retained square-root choices.  The exact
+composite is therefore
+\begin{equation}\label{eq:receiver-composite}
+ \mathscr O\circ\rho:
+ \mathcal T_{24}^{\mathrm{mix}}\times_\rho\Xi
+ \longrightarrow
+ \operatorname{Iso}_{\mathbb C}(V_\beta,E_q).
+\end{equation}
+The codomain follows from the global-sign theorem and the sharp inverse
+theorem~\cite{GlobalSign,SharpGrowth}.  It is not assumed in defining
+\(\rho\).
+
+\subsection{The two branches in receiver coordinates}
+
+For an E input, write
+\[
+ m=4rs,qquad R=\delta t^2,qquad
+ H=\frac{\delta+1}{m},qquad J=\frac{pr+s}{\delta}.
+\]
+The returned M state before sorting has denominators
+\[
+ (HsJ,\ pHJr,\ pHsr).
+\]
+Since \(J\ge r+s>s\), the receiver order is
+\begin{equation}\label{eq:E-return-sorted}
+ W_M=(p;HsJ,pHsr,pHJr).
+\end{equation}
+Its literal receiver parameters are
+\begin{equation}\label{eq:E-return-parameters}
+ R_M=\frac{s+J}{r},\qquad
+ w_M=\frac{p}{R_M}=\frac{pr}{s+J},qquad
+ b=Hsr,qquad c=HJr,qquad
+ \tau=\frac{pHr(J-s)}{S}.
+\end{equation}
+The squarefree number
+\[
+ \delta=4Hsr-1
+\]
+is the retained cofactor \(Q_M\), not the receiver residual \(R_M\).
+Replacing \(w_M\) by \(p/\delta\) would change the receiver theorem.  If
+the input order had the exterior-swap bit, the target complement
+\(a_M^2/u_M=HJ^2\) restores that order before the independent sorting in
+\eqref{eq:E-return-sorted}.
+
+For an M input, let \(u_0\mid c^2\mid36\) be the small word after the marked
+complement, and put
+\[
+ a'=\frac{p+\delta}{4},\qquad g'=\gcd(a',u_0),qquad
+ (h',r',s')=\left(\frac{g'^2}{u_0},\frac{u_0}{g'},\frac{a'}{g'}\right),
+ \qquad \lambda'=\frac{r'+s'}{\delta}.
+\]
+Before the complement bit is restored, the return is
+\[
+ (a',ph's'\lambda',ph'r'\lambda').
+\]
+The receiver order is
+\begin{equation}\label{eq:M-return-sorted}
+ Y_W=ph'\lambda'\min(r',s'),qquad
+ Z_W=ph'\lambda'\max(r',s'),qquad w=\frac p\delta.
+\end{equation}
+The M gate used here is the same gate in both presentations:
+\[
+ R\mid p+4u\quad\Longleftrightarrow\quad R\mid a+u,
+\]
+because \(p+4u=4(a+u)-R\) and \(R\) is odd.
+
+\subsection{Quantitative theorem on the returned witness}
+
+Put
+\[
+ c_{24}=\frac{327448292668}{47045881},
+ \qquad \gamma=\frac{80}{6279^4}.
+\]
+For every \(T\in\mathcal T_{24}^{\mathrm{mix}}\), the integral witness
+\(W=\rho(T)\) satisfies
+\begin{equation}\label{eq:bridge-global-sign}
+ \mathfrak N(W)<-c_{24}p^8,qquad
+ |\det\mathscr O_W|>\frac{4c_{24}p^8}{S^3}.
+\end{equation}
+Because \(\rho(T)\) is a middle-channel witness, the middle-channel proof of
+the sharp theorem gives
+\begin{align}
+ \|\mathscr O_W^{-1}\|_2
+ &<\frac{224}{\gamma}p\sqrt w,
+ &\|\wedge^2\mathscr O_W^{-1}\|_2
+ &<\frac{180}{\gamma},\label{eq:bridge-inverse}\tag{RB1}\\
+ \|\wedge^3\mathscr O_W^{-1}\|_2
+ &<\frac{41}{4\gamma p^2},
+ &|\det\mathscr O_W^{-1}|
+ &<\frac1{4\gamma p^2S^3}.label{eq:bridge-compounds}\tag{RB2}
+\end{align}
+Here \(w\) and \(\tau\) are the actual returned-witness parameters in
+\eqref{eq:E-return-parameters} or \eqref{eq:M-return-sorted}.  The two
+determinant estimates combine without discarding either shape term:
+\begin{equation}\label{eq:bridge-det-max}
+ |\det\mathscr O_W|>
+ \max\left\{
+  \frac{4c_{24}p^8}{S^3},
+  4\gamma p^2S^3\max(1,w^2\tau^2)
+ \right\}.
+\end{equation}
+Moreover the third singular value obeys
+\[
+ s_3(\mathscr O_W)>\sqrt{\gamma/180},
+\]
+so at most one inverse singular direction can become unbounded.
+
+\subsection{Fibres, symmetries, and exact limits of the composition}
+
+For fixed \(p,r,s,\delta\), all E trace sources
+\[
+ R=\delta t^2,qquad t\mid A/\delta,qquad \delta t^2<p
+\]
+have the same returned E and M witnesses.  On the free modules of
+Section~\ref{sec:auto}, the return therefore factors through \(\pi\), whose
+kernel has basis
+\[
+ e_{\delta,t}-e_{\delta,1}\qquad(t>1).
+\]
+Retaining \(t\) before applying \(\pi\) recovers the original residual and
+shell.  The E-to-E return preserves \(p,r,s\) and every centred exponent
+\(v_\ell(u)-v_\ell(a)\).  The E-to-M return instead encodes
+\[
+ r=\lambda_M,qquad s=r_M,qquad J=s_M,qquad
+ \delta=4h_Mr_M\lambda_M-1.
+\]
+The M return retains \(p,u_0\) and the complement bit, while recomputing the
+target exponent box at \(a'\).
+
+Tail exchange acts on \(\mathscr O\) by a column permutation.  Changing any
+square-root branch acts by a diagonal sign matrix on the label side.  Hence
+\(\mathfrak N\), the singular values, and the norm bounds are unchanged;
+the oriented sign \(\epsilon\) and \(\det\mathscr O\) change compatibly.
+The prime-indexed centred exponent vector is not identified with the
+four-dimensional label vector \(V_\beta\); no map making that identification
+has been proved.
+
+The composition begins with a trace source.  It does not prove that
+\(\mathcal T_{24}^{\mathrm{mix}}(p)\) is nonempty.  Receiver invertibility
+does not imply a trace gate, a full gate, a ray deletion, or universal
+occupancy.  The sharpness families for the receiver exponents lie in
+\(p\equiv13\pmod{24}\), so their optimality does not prove optimality on the
+restricted image of \(\rho\).
+
+\input{figures/mod24_receiver_composite.tex}

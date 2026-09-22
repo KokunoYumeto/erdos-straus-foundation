@@ -1,0 +1,49 @@
+\begin{figure}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  node distance=13mm and 16mm,
+  >=Latex,
+  box/.style={draw,rounded corners,align=center,inner sep=6pt,text width=37mm},
+  map/.style={->,thick},
+  note/.style={align=center,font=\small,text width=41mm}
+]
+\node[box] (trace) {marked rational trace\\
+\(T=(p,c,q,a,y,z,\omega)\)\\
+\(y+z\in\mathbb Z\)};
+\node[box,right=of trace] (factor) {exact factorization\\
+\(R,u,h,r,s,d\)\\
+E or M channel};
+\node[box,above right=9mm and 16mm of factor] (eray) {E branch\\
+\(R=\delta t^2,\ rs\mid6\)\\
+\(H=(\delta+1)/(4rs)\), \(J=(pr+s)/\delta\)};
+\node[box,below right=9mm and 16mm of factor] (mword) {M branch\\
+marked complement\\
+\(u_0\mid c^2\mid36\), \(a'=(p+\delta)/4\)};
+\node[box,right=22mm of factor] (witness) {integral M witness \(W=\rho(T)\)\\
+E input: \((HsJ,pHsr,pHJr)\)\\
+M input: \eqref{eq:M-return-sorted}};
+\node[box,right=of witness] (receiver) {literal receiver\\
+\(\mathscr O(W,\xi):V_\beta\to E_q\)\\
+invertible with \eqref{eq:bridge-inverse}--\eqref{eq:bridge-det-max}};
+
+\draw[map] (trace) -- node[above,font=\small] {Lemma~\ref{lem:trace}} (factor);
+\draw[map] (factor) -- (eray);
+\draw[map] (factor) -- (mword);
+\draw[map] (eray) -- (witness);
+\draw[map] (mword) -- (witness);
+\draw[map] (witness) -- node[above,font=\small] {\(\mathscr O\)} (receiver);
+
+\node[note,below=13mm of witness] (fibre) {For fixed \(p,r,s,\delta\), all allowed
+\(t\) map to the same witness; retaining \(t\) recovers the source.};
+\draw[map,dashed] (eray.south) -- (fibre.north west);
+\node[note,below=13mm of receiver] (boundary) {No reverse arrow is proved:
+receiver invertibility does not create the initial trace source.};
+\draw[map,dashed] (receiver.south) -- (boundary.north);
+\end{tikzpicture}
+}
+\caption{The typed composite from a marked mod-\(24\) rational trace to an
+integral witness and then to its literal receiver.  The two arithmetic
+branches are retained, as are the source fibre and the missing reverse map.}
+\label{fig:mod24-receiver-composite}
+\end{figure}

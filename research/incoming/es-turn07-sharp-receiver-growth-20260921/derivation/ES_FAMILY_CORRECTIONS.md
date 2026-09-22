@@ -1,0 +1,236 @@
+# Original ES family: complete first corrections and observation hierarchy
+
+This is the continuation ES16–37 of `ES_PROOFS.md`, 22 September 2026. Every root, map, branch, and denominator is ES1–7 from that proof.
+
+## ES3. Exact fixed-c integral family and its progression
+
+Fix an integer \(c\ge2\), \(c\equiv2\pmod3\). At primes satisfying \(p\equiv1\pmod{12}\), \(c\mid a=(p+3)/4\), retain
+\[
+T=pa,\quad Y=(T+c)/3,\quad Z=T(T+c)/(3c).
+\tag{ES16}
+\]
+Since \(p\equiv a\equiv1\pmod3\), \(T+c\equiv0\pmod3\); since \(c\mid T\), both \(Y,Z\) are integers. Direct fractions give \(Y^{-1}+Z^{-1}=3/T\) and \(a^{-1}+3/(pa)=4/p\). Thus this is an existing integral ES witness in the original chart, with \(R=3,w=p/3,u=a^2/c\ge1\) eventually. No occupancy assertion for every prime in a residue class is made.
+
+The explicit choice \(c=29\), \(p\equiv3361\pmod{24360}\) satisfies \(p\equiv1\pmod{840}\), \(p\equiv-3\pmod{116}\), and \(\gcd(3361,24360)=1\). The classical coprime-progression theorem of P. G. Lejeune-Dirichlet gives infinitely many primes in this progression. The retained source is the 1837 paper in Ralf Stephan's English translation, [arXiv:0808.1408v2](https://arxiv.org/abs/0808.1408v2); its opening theorem and translator credit were read directly in the retained TeX. This translation is not described as Dirichlet's original German typesetting. The initial prime \(3361\) gives exactly
+\[
+(p;a,Y,Z)=(3361;841,942210,91836266490),\quad T=2826601.
+\tag{ES17}
+\]
+
+## ES4. Full analytic matrix and every first singular correction
+
+Use \(z=1/p\) here, to distinguish the expansion variable from the chart's \(t=a/p\). Define the exact weighted matrix
+\[
+B(z)=\operatorname{diag}(1,p^{-3},p^{-4},p^{-6})\,O_p\,
+\operatorname{diag}(p^{3/2},p^{3/2},1,p^{-6}).
+\tag{ES18}
+\]
+The roots and \(d_j\) are rational functions of \(z\). Their four derivative leading terms are \(-p^3/16,p^3/16,p^4/144,-p^8/(2304c^2)\). Factoring these terms out of the prescribed square roots leaves analytic functions equal to one at zero. Every exponent in ES18 is then integral and nonnegative. Hence \(B\) is analytic at zero, with a convergent local Taylor series for each fixed \(c\).
+
+Direct substitution gives its complete first two coefficients:
+\[
+B_0=\begin{pmatrix}
+4i&4&0&0\\-1/4&-i/4&0&0\\-i/2&1/8&1/72&0\\
+13/64&-13i/64&-i/288&5/(27648c^3)
+\end{pmatrix},
+\]
+\[
+B_1=\begin{pmatrix}
+20i&2&0&0\\5/4&i/8&-i/12&0\\5i/2&5/16&-1/48&0\\
+-83/64&53i/128&31i/288&5/(1536c^3)
+\end{pmatrix},\qquad B(z)=B_0+zB_1+O_c(z^2).
+\tag{ES19}
+\]
+In particular \(\det B_0=5/(995328c^3)>0\). Its inverse is analytic, and
+\[
+B(z)^{-1}e_0=z_0+zz_1+O_c(z^2),
+\]
+\[
+z_0=(-i/8,1/8,27/8,1728ic^3/5)^{\mathsf T},\quad
+z_1=(-i/2,-19/16,135/16,-50112ic^3/5)^{\mathsf T}.
+\tag{ES20}
+\]
+These are verified by \(B_0z_0=e_0\), \(B_0z_1=-B_1z_0\), giving their exact derivation without an inferred inverse rate. In particular the nonzero entry \((B_1)_{1Y}=-i/12\) and the original Y-coordinate \(27/8\) both enter the two core derivatives.
+
+The exact inverse factorization is
+\[
+O_p^{-1}=\operatorname{diag}(p^{3/2},p^{3/2},1,p^{-6})B(1/p)^{-1}
+\operatorname{diag}(1,p^{-3},p^{-4},p^{-6}).
+\tag{ES21}
+\]
+Thus its first column has all four expansions
+\[
+(O_p^{-1}e_0)_p=-\frac i8p^{3/2}-\frac i2p^{1/2}+O_c(p^{-1/2}),
+\quad (O_p^{-1}e_0)_a=\frac18p^{3/2}-\frac{19}{16}p^{1/2}+O_c(p^{-1/2}),
+\]
+\[
+(O_p^{-1}e_0)_Y=\frac{27}{8}\left(1+\frac{5}{2p}+O_c(p^{-2})\right),
+\quad (O_p^{-1}e_0)_Z=\frac{1728ic^3}{5}p^{-6}
+\left(1-\frac{29}{p}+O_c(p^{-2})\right).
+\tag{ES22}
+\]
+These expand the exact ES4 column, with the same roots, derivative denominators and square-root choices. They are not a different auxiliary receiver.
+
+Every singular value has its first correction evaluated:
+\[
+\boxed{\begin{aligned}
+s_1(O_p)&=\frac5{27648c^3}p^{12}\left(1+\frac{18}{p}+O_c(p^{-2})\right),\\
+s_2(O_p)&=\frac1{72}p^4\left(1-\frac{3}{2p}+O_c(p^{-2})\right),\\
+s_3(O_p)&=\frac1{2\sqrt2}p^{3/2}\left(1-\frac{41}{4p}+O_c(p^{-2})\right),\\
+s_4(O_p)&=4\sqrt2\,p^{-3/2}\left(1+\frac{11}{4p}+O_c(p^{-2})\right).
+\end{aligned}}
+\tag{ES23}
+\]
+The complete determinant, with the retained branches, is
+\[
+\boxed{\det O_p=\frac5{995328c^3}p^{16}\left(1+\frac9p+O_c(p^{-2})\right).}
+\tag{ES24}
+\]
+We prove the errors as well as the coefficients. The leading entry of \(O_p\) is row 3, column Z, namely \(p^{12}B_{3Z}\); every other entry is at most \(O_c(p^8)\). Thus its norm has the relative first correction 18 by ES19. For exterior rank two, the leading minor is rows 2,3 and columns Y,Z:
+\[
+p^{16}\det B_{\{2,3\},\{Y,Z\}}
+=\frac5{1990656c^3}p^{16}\left(1+\frac{33}{2p}+O_c(p^{-2})\right).
+\]
+Every other minor is at most \(O_c(p^{15})\). Its squared Frobenius norm is therefore the squared leading minor times \(1+O_c(p^{-2})\); the operator norm lies between that leading modulus and the Frobenius norm. This proves the stated first correction for \(s_1s_2\).
+
+For exterior rank three, both leading minors are in rows 1,2,3 and columns \((p,Y,Z)\), \((a,Y,Z)\), of scale \(p^{35/2}\). Their exact analytic coefficients are the corresponding minors \(M_p(z),M_a(z)\) of \(B\). Expanding ES19 gives
+\[
+\frac{\left.\frac d{dz}(|M_p(z)|^2+|M_a(z)|^2)\right|_{z=0}}
+{2(|M_p(0)|^2+|M_a(0)|^2)}=\frac{25}{4}.
+\]
+The leading norm is \(5p^{35/2}/(3981312\sqrt2c^3)\). Every other entry is at most \(O_c(p^{16})\), so its squared contribution is relatively \(O_c(p^{-3})\). The norm of the complete leading row is a lower bound, and the Frobenius norm supplies the matching upper bound. Thus the first correction to \(s_1s_2s_3\) is \(25/4\). Finally \(\det O_p=p^{16}\det B(1/p)\), and \(\operatorname{Tr}(B_0^{-1}B_1)=9\). Taking successive exterior ratios gives \(18,33/2-18=-3/2,25/4-33/2=-41/4,9-25/4=11/4\), proving ES23–24.
+
+A second route to the smallest singular value uses \(u_0=(-i,1,0,0)^{\mathsf T}/8\), \(u_1=(-i/2,-19/16,0,0)^{\mathsf T}\). ES21 gives the first normalized inverse column \(u_0+p^{-1}u_1+O_c(p^{-3/2})\); its \(p^{-3/2}\) term is in the orthogonal Y coordinate. The other normalized inverse columns are \(O_c(p^{-3})\). Since \(\|u_0\|^2=1/32\) and \(2\Re(u_0^*u_1)=-11/64\),
+\[
+p^{-3}\|O_p^{-1}\|^2=\frac1{32}-\frac{11}{64p}+O_c(p^{-2}),\qquad
+\boxed{p^3s_4(O_p)^2=32+\frac{176}{p}+O_c(p^{-2}).}
+\tag{ES25}
+\]
+
+## ES5. Exact slow-vector hierarchy and scalar observations
+
+Let \(v_p\) be the right singular vector of \(O_p\) for \(s_4\), with its a coordinate positive. Put \(v_0=(-i,1,0,0)^{\mathsf T}/\sqrt2\), \(w_0=(i,1,0,0)^{\mathsf T}/\sqrt2\). Then
+\[
+v_p=v_0-\frac{27}{4p}w_0+\frac{27\sqrt2}{2p^{3/2}}e_Y+O_c(p^{-2}).
+\tag{ES26}
+\]
+Both tail coordinates have stronger relative expansions:
+\[
+\boxed{e_Y^*v_p=\frac{27\sqrt2}{2}p^{-3/2}\left(1+\frac{21}{4p}+O_c(p^{-2})\right),}
+\]
+\[
+\boxed{e_Z^*v_p=\frac{6912\sqrt2\,ic^3}{5}p^{-15/2}
+\left(1-\frac{105}{4p}+O_c(p^{-2})\right).}
+\tag{ES27}
+\]
+To prove relative accuracy, write exactly
+\[
+p^{-3/2}O_p^{-1}=D(z)B(z)^{-1}E(z),\quad
+D(z)=\operatorname{diag}(1,1,z^{3/2},z^{15/2}),\quad
+E(z)=\operatorname{diag}(1,z^3,z^4,z^6).
+\]
+The right Gram of this inverse has a simple leading eigenvalue \(1/32\). Its top eigenvector has coordinates \((1,O_c(z^3),O_c(z^4),O_c(z^6))\), up to scalar normalization: solve the three lower block equations, whose scalar eigenvalue stays separated from zero. Multiplication by \(E\) changes the coefficient vector from \(e_0\) by \(O_c(z^6)\). The left singular vector before normalization is therefore \(D(z)[B(z)^{-1}e_0+O_c(z^6)]\), preserving the powers in each tail coordinate. Its norm is \(\|u_0\|[1-11z/4+O_c(z^2)]\). ES20–22 give ES26 and the relative coefficients \(5/2+11/4=21/4\), \(-29+11/4=-105/4\) in ES27. A tiny component is not inferred from a larger vector error.
+
+For \(\mathcal H_p(\tau)=e^{-\tau p^3O_p^*O_p}\), the three faster directions are \(O_c(e^{-c_1\tau p^6})\), while ES25 supplies the slow exponential. For each fixed nonzero scalar row \(\ell\), the following tests are exhaustive:
+
+| Exact original-label test | Power \(\nu\) | Limit of \(p^\nu\ell\mathcal H_p(\tau)\ell^*\) |
+|---|---:|---|
+| \(\ell v_0\ne0\) | 0 | \(|\ell v_0|^2e^{-32\tau}\) |
+| \(\ell v_0=0\), \(\ell w_0\ne0\) | 2 | \((729/16)|\ell w_0|^2e^{-32\tau}\) |
+| \(\ell v_0=\ell w_0=0\), \(\ell e_Y\ne0\) | 3 | \((729/2)|\ell e_Y|^2e^{-32\tau}\) |
+| \(\ell v_0=\ell w_0=\ell e_Y=0\) | 15 | \((95551488c^6/25)|\ell e_Z|^2e^{-32\tau}\) |
+
+The vectors \(v_0,w_0\) span exactly the original core coordinates, so no nonzero row is missing. Convergence is locally uniform in \(\tau\in(0,\infty)\), without an assertion at zero time. The two pure tail observations also have evaluated first corrections:
+\[
+p^3e_Y^*\mathcal H_p(\tau)e_Y
+=\frac{729}{2}e^{-32\tau}\left[1+\frac{21/2-176\tau}{p}+O_c(p^{-2})\right],
+\]
+\[
+p^{15}e_Z^*\mathcal H_p(\tau)e_Z
+=\frac{95551488c^6}{25}e^{-32\tau}\left[1-\frac{105/2+176\tau}{p}+O_c(p^{-2})\right].
+\tag{ES28}
+\]
+These follow by squaring ES27 and multiplying the exponential from ES25; the faster modes remain below the remainder after either polynomial rescaling.
+
+For the actual two-row observation \(L_{\rm obs}=\left(\begin{smallmatrix}1/\sqrt2&i/\sqrt2&0&0\\0&0&1&0\end{smallmatrix}\right)\), \(D_p=\operatorname{diag}(p,p^{3/2})\), its first row annihilates \(v_0\) and takes value \(i\) on \(w_0\). Hence
+\[
+D_pL_{\rm obs}\mathcal H_p(\tau)L_{\rm obs}^*D_p
+\longrightarrow e^{-32\tau}
+\begin{pmatrix}729/16&-729i\sqrt2/8\\729i\sqrt2/8&729/2\end{pmatrix}.
+\tag{ES29}
+\]
+Replacing the core phases by their moduli before applying this observation would destroy its cancellation.
+
+## ES6. Same inverse limits, different complete volume on the same map
+
+For primes \(p\equiv13\pmod{24}\), retain the exact original-chart family
+\[
+a=(p+3)/4,\quad Y=(p+3)(3p+1)/32,\quad Z=p(3p+1)/4.
+\tag{ES30}
+\]
+Writing \(p=24j+13\) gives \(p+3=8(3j+2)\), \(3p+1=8(9j+5)\), proving integrality. Direct substitution gives \(Y^{-1}+Z^{-1}=12/[p(p+3)]=3/(pa)\). Thus the same ES identity and receiver ES2 apply, with \(R=3,w=p/3,u=2\); the initial witness is \((13;4,20,130)\).
+
+Here \(Y/p^2\to3/32\), \(Z/p^2\to3/4\), \(\tau\to7/9\). Substituting into the literal ES9 quantities gives
+\[
+s_1=\frac{7\sqrt{55508999}}{8192}p^6[1+O(p^{-1})],\quad
+s_2=\frac{2737}{24\sqrt{55508999}}p^4[1+O(p^{-1})],
+\]
+\[
+s_3=\frac1{2\sqrt2}p^{3/2}[1+O(p^{-1})],\quad
+s_4=4\sqrt2p^{-3/2}[1+O(p^{-1})],\quad
+|\det O_p|=\frac{19159}{98304}p^{10}[1+O(p^{-1})].
+\tag{ES31}
+\]
+Both families have the same limits
+\[
+p^{-3/2}\|O_p^{-1}\|\to1/(4\sqrt2),\quad
+\|\wedge^2O_p^{-1}\|\to1/2,\quad
+e^{-\tau p^3O_p^*O_p}\to e^{-32\tau}v_0v_0^*.
+\tag{ES32}
+\]
+Their complete determinants have different powers, \(p^{10}\) and \(p^{16}\). This compares existing integral families under the same receiver; it does not invent an unrelated spectrum. Their exact relation is \(|\det O|=(s_1s_2)/\|\wedge^2O^{-1}\|\): the two inverse limits control \(s_3,s_4\), while the original tail factor \(A_{23}=s_1s_2[1+O(w^{-1})]\) supplies the missing volume.
+
+## ES7. Exact fixed-metric and conductor transport
+
+For fixed positive label metric \(G\) and fixed positive receiving metric \(Q\), the original energy is \(H_{G,Q}=G^{-1}O_p^*QO_p\). Its orthonormal representative is \(\widehat O=Q^{1/2}O_pG^{-1/2}\), with exact inverse \(G^{1/2}O_p^{-1}Q^{-1/2}\). Put \(n_G=u_0^*Gu_0>0\), \(q_Q=e_0^*Q^{-1}e_0>0\). ES21 gives the rank-one inverse limit \(G^{1/2}u_0e_0^*Q^{-1/2}\), whence
+\[
+p^3\lambda_{\min}(H_{G,Q})\longrightarrow(n_Gq_Q)^{-1}.
+\tag{ES33}
+\]
+Its metric-dependent first correction is
+\[
+\boxed{p^3\lambda_{\min}(H_{G,Q})
+=\frac1{n_Gq_Q}\left[1-\frac{2\Re(u_0^*Gu_1)}{n_Gp}+O_{c,G,Q}(p^{-3/2})\right].}
+\tag{ES34}
+\]
+Indeed the first inverse-column squared G norm is \(n_G+2\Re(u_0^*Gu_1)/p+O(p^{-3/2})\). Other inverse columns enter the weighted target contraction first at order \(p^{-3}\). The simple leading eigenvalue expansion, obtained from its complementary block Schur equation, yields ES34. A \(p^{-3/2}\) term may occur when G has nonzero core–Y entries; the stronger Euclidean remainder is not assigned to arbitrary metrics.
+
+The observed covariance \(\ell e^{-\tau p^3H_{G,Q}}G^{-1}\ell^*\) has the same four powers \(0,2,3,15\), tested successively by \(\ell u_0\), \(\ell u_1\), \(\ell e_Y\), \(\ell e_Z\). Its respective leading numerators are
+\[
+|\ell u_0|^2,\quad |\ell u_1|^2,\quad |\ell(27e_Y/8)|^2,
+\quad |\ell(1728ic^3e_Z/5)|^2,
+\tag{ES35}
+\]
+each divided by \(n_G\) and multiplied by \(e^{-\tau/(n_Gq_Q)}\), after the preceding numerators vanish. For relative last-coordinate accuracy, write the inverse exactly as \(G^{1/2}D(z)B(z)^{-1}E(z)Q^{-1/2}\). Its top left singular vector, returned to label coordinates, is \(D(z)[B(z)^{-1}e_0+O_{G,Q}(z^3)]\), up to normalization: the off-diagonal terms in \(E Q^{-1}E\) first occur at order \(z^3\). The Y and Z coordinate powers therefore stay \(z^{3/2},z^{15/2}\), with the same nonzero leading coefficients. Normalization terms multiply earlier vectors and cancel under the successive annihilation tests. This proves the weighted hierarchy without imposing Euclidean orthogonality after transport.
+
+The attained scalar observation metric is \(Q_\ell=(\ell G^{-1}\ell^*)^{-1}\); multiply the covariance by it to obtain measured scalar heat. On a fixed admitted invertible conductor restriction \(L\), take the actual metric \(Q=L^*Q_\Gamma L\). Then \(q_Q=e_0^*(L^*Q_\Gamma L)^{-1}e_0\) retains the full conductor inverse, Gamma mass, and period data.
+
+For moving metrics or conductor restrictions, the underlying error transport is
+\[
+\|G^{1/2}(O^{-1}/(p\sqrt w)-a_*e_0^*)Q^{-1/2}\|
+\le\sqrt{\lambda_{\max}(G)/\lambda_{\min}(Q)}\,
+\|O^{-1}/(p\sqrt w)-a_*e_0^*\|,
+\quad a_*=\sqrt3(-i,1,0,0)^{\mathsf T}/8.
+\tag{ES36}
+\]
+Composition by the actual invertible conductor \(L\) has relative leading-operator error bounded by
+\[
+\frac{\|O^{-1}/(p\sqrt w)-a_*e_0^*\|\,\|L^{-1}\|}
+{\|a_*\|\,\|e_0^*L^{-1}\|}.
+\tag{ES37}
+\]
+This denominator is part of the proved connecting map. A conductor approaching a directional resonance need not have a uniform bound here. Neither the growing RH kernel coefficient nor a complex-current phase has been assigned from the ES soft mode.
+
+## Verification
+
+The exact checker derives ES19–20, all exterior first corrections, the complete rational inverse, integral families, and initial witness. Independent 110-digit SVD checks retain both core triples and test the four first singular corrections, soft energy, relative last-label component, and distinct-volume family. Large integer samples used for analytic asymptotics are not asserted to be primes. Source versions, reading coverage, and original/translated source distinctions are recorded in the accompanying ledger.

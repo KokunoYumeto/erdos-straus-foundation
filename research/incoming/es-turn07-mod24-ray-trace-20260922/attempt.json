@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-22",
+  "goal": "Turn7: force original positive integer ES source at the hard mod24 primes.",
+  "starting_obligation": "Receiving determinant now nonzero on every actual witness, but does not supply its first arithmetic gate.",
+  "reason_for_route": "A rational integral-tail-trace gives an available original factor word with a squared gate. Test whether retaining the primitive ray instead of the absolute word repairs a failed gate.",
+  "success": "Exact ray deletion and all its automatic unit-square cases; mixed c*q original sources give a full same-prime M return, including old shells with both gates empty.",
+  "failure": "Unit squares do not preserve every shell budget. Explicit reduced prime progressions obstruct all ray and word residual-divisor returns outside rs|6. Mixed family has actual empty initial cases.",
+  "next": "Use original composite carriers beyond the one-prime character split, or couple different sources at fixed p to force a target. No further receiving invertibility is needed.",
+  "evidence": [
+    "core.tex",
+    "claims.json",
+    "certificates/examples.json",
+    "verification.json"
+  ],
+  "universal_ES_proved": false,
+  "Turn8_witness_guarantee_started": false
+}

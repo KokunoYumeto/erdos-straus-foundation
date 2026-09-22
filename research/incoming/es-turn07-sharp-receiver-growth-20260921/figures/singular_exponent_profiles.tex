@@ -1,0 +1,36 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[x=1.65cm,y=0.39cm,>=Latex]
+  \draw[->] (0.65,-3.4) -- (4.45,-3.4) node[right] {\(\text{singular index }j\)};
+  \draw[->] (0.8,-3.8) -- (0.8,13.2) node[above] {\(\alpha_j\) in \(s_j(O_p)\asymp p^{\alpha_j}\)};
+  \foreach \j in {1,2,3,4} {
+    \draw (\j,-3.55) -- (\j,-3.25);
+    \node[below] at (\j,-3.55) {\(\j\)};
+  }
+  \foreach \y in {-3,0,3,6,9,12} {
+    \draw (0.7,\y) -- (0.9,\y);
+    \node[left] at (0.7,\y) {\(\y\)};
+  }
+  \draw[very thick,blue!70!black] plot coordinates {(1,12) (2,4) (3,1.5) (4,-1.5)};
+  \foreach \x/\y in {1/12,2/4,3/1.5,4/-1.5}
+    \fill[blue!70!black] (\x,\y) circle (2.2pt);
+  \draw[very thick,orange!85!black,dashed] plot coordinates {(1,6) (2,2) (3,1) (4,-1)};
+  \foreach \x/\y in {1/6,2/2,3/1,4/-1}
+    \fill[orange!85!black] (\x,\y) circle (2.2pt);
+  \node[anchor=west,blue!70!black] at (1.2,11.1)
+    {\(\displaystyle (p+3)/4,\ (pa+2)/3,\ pa(pa+2)/6\)};
+  \node[anchor=west,orange!85!black] at (1.2,6.8)
+    {\(\displaystyle (3p+1)/8,\ 2a,\ 2pa\)};
+  \draw[densely dotted] (0.8,0) -- (4.3,0);
+  \node[align=left,anchor=west,fill=white,inner sep=1.5pt] at (1.15,-2.3)
+    {\(\alpha_4<0\) is the single shrinking receiver direction;\\
+     the two families attain \(p^{3/2}\), \(p^0\), and \(p^{-2}\)
+     for the first three inverse compounds.};
+\end{tikzpicture}
+\caption{Exact singular-value exponents on the two infinite prime families.
+The first family attains the \(p^{3/2}\) inverse exponent and the constant
+second inverse compound; the second attains the \(p^{-2}\) third inverse
+compound exponent. The figure records powers only; the constants are given in
+\eqref{eq:family1-singular} and \eqref{eq:family2-singular}.}
+\label{fig:singular-exponents}
+\end{figure}

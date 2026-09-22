@@ -1,0 +1,543 @@
+\section{Scope: the unresolved class and the theorem proved here}
+The elementary prime reduction leaves $p\equiv1\pmod{24}$. The preceding
+receiving-determinant theorem applies to every existing integral witness at
+$p\equiv1\pmod{12}$, so already includes this class; it does not assert that a
+witness exists. We now return to the original arithmetic source. The main
+result is the following source-changing theorem, rather than an improvement
+of the determinant constant.
+
+\begin{theorem}[Mixed prime-shell trace return]\label{thm:mixed}
+Let $p\equiv1\pmod{24}$ be prime. Suppose $a=cq$ where $c\mid6$, $q>3$ is prime,
+and $p/4<a<p/2$. If $y,z\in\mathbb Q_{>0}$ satisfy
+\[
+ \frac4p=\frac1a+\frac1y+\frac1z,\qquad y+z\in\mathbb Z,
+\]
+then the formulas in Sections~\ref{sec:auto}--\ref{sec:mixed} construct an
+original integral middle state at the same $p$. All input orderings and
+original divisor exponents have explicit inverses or stated fibres. If the
+input tails are nonintegral, the returned middle state's smaller residual or
+cofactor is strictly smaller than the input residual. In the exterior case
+there is additionally an original exterior return with smaller first denominator.
+\end{theorem}
+
+The theorem concerns positive denominators in the complete E/M atlas; no extra
+Koide-chamber condition is imposed on the retained ray. The theorem does not
+assert the existence of its initial rational trace source.
+At $p=2521$ and $3361$, the entire displayed family of initial shells is empty.
+We also give an infinite obstruction to extending the fixed-ray return beyond
+its precise nine-ray domain. The reductions are unconditional on their stated
+source sets; none supplies a universal occupancy hypothesis.
+
+The original exterior congruences are Yamamoto's Lemma~2, equation~(4), p.~38
+\cite{Yamamoto}. The Type I/II context is Elsholtz--Tao, Section~2, Propositions
+2.2 and 2.6 \cite{ET}. Their identities are rederived below. The reciprocal
+trace source and the distinct fixed-word deletion are inherited from the
+preserved workbench tranches \cite{Trace,Word}. No historical-priority conclusion
+is made for the present continuation.
+
+\section{The full rational trace source and original coordinates}\label{sec:source}
+Fix a prime $p\equiv1\pmod4$, $p/4<a<p/2$, and $R=4a-p$. Thus
+$3\le R<p$, $R\equiv3\pmod4$, and $\gcd(pa,R)=1$.
+For every original divisor $u\mid a^2$, put
+\[
+ g=\gcd(a,u),\quad (h,r,s)=(g^2/u,u/g,a/g),\quad
+ a=hrs,\quad u=hr^2,\quad \gcd(r,s)=1.
+\]
+If $a=\prod\ell^{e_\ell}$ and $u=\prod\ell^{f_\ell}$, the complete box is
+$0\le f_\ell\le2e_\ell$; its centred coordinate is
+$\beta_\ell=f_\ell-e_\ell=v_\ell(r)-v_\ell(s)$.
+Before imposing integrality of the tails, the two positive rational returns are
+\begin{align}
+ E:\quad &(a,hs\kappa,phr\kappa),&\kappa&=(pr+s)/R,\label{eq:E}\\
+ M:\quad &(a,phs\lambda,phr\lambda),&\lambda&=(r+s)/R.\label{eq:M}
+\end{align}
+Equivalently, they are
+\[
+ E:\left(a,\frac{pa+a^2/u}{R},\frac{pa+p^2u}{R}\right),\qquad
+ M:\left(a,\frac{p(a+a^2/u)}R,\frac{p(a+u)}R\right).
+\]
+Direct common-denominator multiplication proves the reciprocal identities.
+The full gates and the ordered divisor inverses are
+\begin{align*}
+ E:&\ R\mid4u+1\ \Longleftrightarrow\ R\mid pr+s,
+ &u&=a^2/(Ry-pa),\\
+ M:&\ R\mid p+4u\ \Longleftrightarrow\ R\mid r+s,
+ &u&=pa^2/(Ry-pa).
+\end{align*}
+All cancelled factors are units modulo $R$.
+
+\begin{lemma}[Exact trace relaxation]\label{lem:trace}
+Let $G_E=4u+1$ and $G_M=p+4u$. The rational tails have integral sum precisely
+when $R\mid G_c^2$. Their common reduced denominator is
+\[
+ d=R/\gcd(R,G_c),\qquad d^2\mid R.
+\]
+For E, the trace condition is also $R\mid(pr+s)^2$, and
+$\gcd(R,G_E)=\gcd(R,pr+s)$. For M,
+\(\gcd(R,G_M)=\gcd(R,r+s)\). A proper trace source means $d>1$.
+Every positive rational pair at the prescribed integral $a$ with integral
+sum occurs in these coordinates, up to the separately retained exterior swap.
+\end{lemma}
+\begin{proof}
+The two tail sums are $(a+pu)^2/(Ru)$ and $p(a+u)^2/(Ru)$.
+Their numerators and denominators, using $u\mid a^2$, give the stated square
+conditions and common denominator. Alternatively, for arbitrary rational tails
+with integral sum $N$, their reduced denominators coincide at $d$, since their
+sum is integral. Their product is $Npa/R$. Prime-by-prime valuation shows
+\[
+ 2v_\ell(d)=v_\ell(R)-v_\ell(N)\quad\text{when }\ell\mid d,
+\]
+while \(v_\ell(N)\ge v_\ell(R)\) when \(\ell\nmid d\). Hence
+$d^2=R/\gcd(R,N)$. Thus $d\mid R$, and
+\[
+ b=Ry-pa,\qquad c=Rz-pa
+\]
+are positive integers with $bc=(pa)^2$. Their $p$-valuation pair is $(0,2)$,
+$(1,1)$ or $(2,0)$. For $(0,2)$ set $u=a^2/b$; for $(2,0)$ first swap the
+tails and retain that bit; for $(1,1)$ set $u=pa^2/b$. The resulting integer
+$u$ divides $a^2$ and gives exactly \eqref{eq:E} or \eqref{eq:M}.
+Finally,
+\[
+ pr+s\equiv s(4u+1)\pmod R,\qquad
+ p(r+s)\equiv s(p+4u)\pmod R
+\]
+proves both gcd statements.
+\end{proof}
+
+\begin{lemma}[Original characters, including proper traces]\label{lem:char}
+On every trace source,
+\[
+ E:\left(\frac up\right)=-1,\qquad
+ M:\left(\frac up\right)=-\left(\frac ap\right).
+\]
+\end{lemma}
+\begin{proof}
+For odd $\ell\mid a$, quadratic reciprocity and $R\equiv-p\pmod\ell$ give
+$(\ell/R)=(p/\ell)=(\ell/p)$. If $2\mid a$, the supplementary law gives the
+same equality from $R\equiv-p\pmod8$. Multiplication through the original
+exponents gives $(u/R)=(u/p)$. At each prime \(\ell\) dividing \(R\), the
+square gate implies only the primewise statement \(\ell\mid G_c\), or
+equivalently \(\operatorname{rad}(R)\mid G_c\); it does not imply
+\(R\mid G_c\). This primewise statement is exactly what the Jacobi product
+uses. Thus the Jacobi value for E is $(-1/R)=-1$;
+for M it is $(-p/R)=-(R/p)=-(a/p)$. Prime multiplicities in $R$ are retained
+in these Jacobi products.
+\end{proof}
+
+\section{A ray-preserving return with its full integer coefficient}\label{sec:ray}
+For an E trace source define $m=4rs$, $T=pr+s$ and
+$d=R/\gcd(R,T)$. Retaining the primitive ray means retaining both $r$ and $s$,
+not retaining the old numerical divisor $u$.
+
+\begin{theorem}[Complete divisor-deletion criterion]\label{thm:ray}
+For \(k\in\mathbb Z_{>0}\) with $k\mid R$, a ray-preserving integral exterior
+return at $R'=R/k$ exists
+exactly when
+\begin{equation}\label{eq:delete}
+ d\mid k,\qquad k\equiv1\pmod m.
+\end{equation}
+The literal target is
+\[
+ h'=(p+R/k)/m,\quad a'=h'rs,\quad u'=h'r^2,\quad
+ \kappa'=T/(R/k)=k\kappa.
+\]
+For a proper source, $a'<a$. At every prime $\ell$ the centred exponent is
+unchanged: $v_\ell(u')-v_\ell(a')=v_\ell(r)-v_\ell(s)$.
+\end{theorem}
+\begin{proof}
+The full E gate is $R/k\mid T$, exactly $d\mid k$. Since
+\(\gcd(R,a)=1\), \(R\) is odd and \(rs\mid a\), one has
+\(\gcd(R,m)=1\); hence every \(k\mid R\) is a unit modulo \(m\).
+The integer shell condition is therefore equivalent to
+\[
+ m\mid p+R/k
+ \Longleftrightarrow m\mid pk+R
+ \Longleftrightarrow m\mid p(k-1)
+ \Longleftrightarrow k\equiv1\pmod m.
+\]
+The middle equivalence uses \(m\mid p+R\), and the last uses
+\(\gcd(p,m)=1\), which follows from \(rs\le a<p\). It also gives
+$R'\equiv3\pmod4$,
+so $R'\ge3$ and the target is in the original first-half range. All target
+coordinates and their ordered inverse follow from \eqref{eq:E}: explicitly,
+\[
+ \frac{(a')^2}{u'}=h's^2,\qquad
+ \gcd(a',u')=h'r,\qquad
+ R'y'-pa'=h's^2,\qquad
+ u'=\frac{(a')^2}{R'y'-pa'}.
+\]
+Properness
+forces $k>1$. The centred equality follows from the two factorizations of $a,u$.
+\end{proof}
+
+The complete number of deletion words is the integer coefficient
+\begin{equation}\label{eq:coefficient}
+ [d^{-1}]\prod_{\ell^e\parallel R/d}
+ \bigl([1]+[\ell]+\cdots+[\ell^e]\bigr)
+ \quad\hbox{in }\mathbb Z[(\mathbb Z/m\mathbb Z)^\times].
+\end{equation}
+Each exponent vector occurs once; no binomial coefficients are substituted
+for its original multiplicity. The inverse reads the retained old $R$ and $k$.
+A fixed-word return instead uses modulus $4K(u)$, where
+$K(u)=\prod\ell^{\lceil v_\ell(u)/2\rceil}$ \cite{Word}. The two conditions
+are different: the ray return changes $u$ while preserving the centred exponents.
+
+\section{Nine automatic rays and their complete middle images}\label{sec:auto}
+The unit squares modulo $m=4rs$ are all one if and only if $m\mid24$.
+On any odd prime-power factor other than $3$ to exponent one, the unit $2$
+has $2^2-1=3$ nonzero in that factor. On a factor $2^e$ with $e\ge4$, the
+unit $3$ has $3^2-1=8$ nonzero. CRT extends either witness to a unit modulo
+the full $m$. Conversely every odd integer has square one modulo eight,
+and every unit has square one modulo three. CRT gives the converse. Equivalently, $rs\mid6$.
+The nine primitive ordered rays are
+\[
+ (1,1),(1,2),(1,3),(1,6),(2,1),(2,3),(3,1),(3,2),(6,1).
+\]
+For every such E trace source, write $R=\delta t^2$, where $\delta$ is the
+positive squarefree part: prime exponents are reduced modulo two. This is not
+the radical, and $\gcd(\delta,t)$ need not be one. Since $R\mid T^2$,
+$\delta\mid T$, and $t^2\equiv1\pmod m$. Therefore $k=t^2$ satisfies
+\eqref{eq:delete}, giving a full E state at $R'=\delta$.
+
+When $p\equiv1\pmod{24}$, one has $p\equiv1\pmod m$ and
+$\delta\equiv-1\pmod m$. Set
+\begin{equation}\label{eq:Mreturn}
+ H=(\delta+1)/m,\qquad J=T/\delta,\qquad
+ (h_M,r_M,s_M,\lambda_M)=(H,s,J,r).
+\end{equation}
+Then
+\[
+ a_M=HsJ,\quad u_M=Hs^2,\quad R_M=(s+J)/r,\quad Q_M=4Hsr-1=\delta.
+\]
+These are integers: $\delta J=pr+s$ and $\delta\equiv-1\pmod r$ imply
+$r\mid s+J$. A common factor of $s,J$ would divide $p$ or $r$, which is
+impossible. Directly,
+\[
+ 4a_M-R_M=((\delta+1)J-s-J)/r=p.
+\]
+Furthermore
+\[
+ 0<R_M\le p/3+4s/(3r)<p,
+\]
+because $p>2hrs\ge2s/r$. Thus the original ordered middle denominators are
+\begin{equation}\label{eq:MDenom}
+ (HsJ,\ pHJr,\ pHsr).
+\end{equation}
+If the source is proper, $t>1$ and
+$\min(R_M,Q_M)\le\delta<R$. This is a cofactor decrease, not necessarily
+a decrease in $R_M$ or $a_M$. The accompanying E return always has $a'<a$.
+
+\subsection{Exact squarefree fibres}
+For fixed $p$ and an automatic ray, let $A$ be the odd part of $T=pr+s$.
+The complete target index set consists of squarefree divisors
+\[
+ \delta\mid\operatorname{rad}(A),\qquad \delta\equiv-1\pmod m.
+\]
+Here the symbol $\operatorname{rad}(A)$ only specifies the squarefree divisor
+set; it does not replace the source's squarefree part. Every such $\delta<p$:
+$J\equiv-(r+s)\pmod m$ gives
+$J\ge m-r-s\ge r+s$, and $(pr+s)/(r+s)<p$.
+The full trace fibre is
+\begin{equation}\label{eq:fibre}
+ R=\delta t^2,
+ \qquad t\mid A/\delta,
+ \qquad \delta t^2<p.
+\end{equation}
+To prove this, compare exponents in $R\mid T^2$. At a prime of $\delta$, the
+exponent of $t$ is at most $v_\ell(A)-1$; elsewhere it is at most $v_\ell(A)$.
+These conditions are also sufficient. Here \(\gcd(A,m)=1\): for every prime
+\(\ell\mid r\), \(T\equiv s\not\equiv0\pmod\ell\), while for
+\(\ell\mid s\), \(T\equiv pr\not\equiv0\pmod\ell\). Thus every allowed \(t\)
+is a unit modulo \(m\), and its square is one. The congruence of $R$ is
+therefore preserved by all such squares modulo $m$. The full original hits within this fibre are
+exactly those additionally satisfying $R\mid T$.
+
+Retaining $t$ in \eqref{eq:fibre} gives an inverse. From the marked middle
+image, recover $r=\lambda_M$, $s=r_M$, $J=s_M$ and
+$\delta=4h_Mr_M\lambda_M-1$, then reconstruct the old residual and $h$.
+Let \(e_{\delta,t}\) denote a source basis vector and \(f_\delta\) the
+corresponding target basis vector. Forgetting \(t\) gives the split map
+\[
+ \pi:\mathbb Z[\{(\delta,t)\}]\longrightarrow\mathbb Z[\{\delta\}],
+ \qquad e_{\delta,t}\longmapsto f_\delta,
+ \qquad \sigma(f_\delta)=e_{\delta,1}.
+\]
+Its kernel has basis \(e_{\delta,t}-e_{\delta,1}\) for \(t>1\) in the
+original bounded fibre.
+Neither surjectivity nor the section asserts that the target index set is
+nonempty. At $p=1129$, ray $(3,1)$ and $\delta=11$ have the two words $t=1,7$;
+its integer coefficient two is not absent merely because it reduces to zero
+modulo two.
+
+\section{Proof of the mixed prime-shell theorem}\label{sec:mixed}
+By Lemma~\ref{lem:trace}, normalize the given rational pair to an original
+E or M trace word $u\mid a^2$, retaining its input orientation. Both two and
+three are quadratic residues at $p\equiv1\pmod{24}$. If $q$ were a residue,
+every divisor of $a^2$ and $a$ itself would have positive character, contradicting
+Lemma~\ref{lem:char}. Thus $(q/p)=-1$.
+
+For E, the exponent of $q$ in $u$ is odd, hence exactly one. Write
+$u=qw$, $w\mid c^2$. The gcd normalization has $rs\mid c\mid6$:
+for each prime of the squarefree integer $c$, its exponent zero or two in $w$
+contributes that prime to exactly one of $r,s$, and exponent one contributes
+ it to neither. The automatic ray construction therefore gives
+\eqref{eq:Mreturn}--\eqref{eq:MDenom}. If the arbitrary input tails required
+the exterior swap in Lemma~\ref{lem:trace}, replace the canonical returned
+middle word \(u_M=Hs^2\) by its new-shell complement
+\[
+ \frac{a_M^2}{u_M}=HJ^2;
+\]
+this interchanges the two middle tails and restores the retained input
+orientation.
+
+For M, Lemma~\ref{lem:char} forces an even exponent of $q$. If it is two,
+replace $u$ by its original complement $a^2/u$ and retain that bit; otherwise
+leave it unchanged. The resulting $u_0$ divides $c^2$, hence divides $36$.
+This complement preserves the square gate because
+\[
+ u\left(p+4a^2/u\right)-a(p+4u)=(a-u)R,
+\]
+and \(a,u\) are units modulo \(R\). Thus $4K(u_0)\mid24$. With
+$R=\delta t^2$ one has
+\[
+ \delta\mid p+4u_0,\qquad
+ t^2\equiv1\pmod{4K(u_0)},\qquad
+ p+\delta\equiv0\pmod{4K(u_0)}.
+\]
+Put $a'=(p+\delta)/4$. These equations prove $u_0\mid a'^2$ and the full M
+gate at the original residual $\delta$. Recompute the gcd normalization and
+use \eqref{eq:M}. If the old complement bit was one, use $u'=a'^2/u_0$ to
+restore the corresponding tail ordering. The new exponent box, not the old
+factor inventory, is used in this reversal. Marking the bit
+\(\varepsilon\in\{0,1\}\), the inverse reads
+\[
+ u_0=\begin{cases}u_{\rm out},&\varepsilon=0,\\
+ a'^2/u_{\rm out},&\varepsilon=1,\end{cases}
+ \qquad
+ u=\begin{cases}u_0,&\varepsilon=0,\\
+ a^2/u_0,&\varepsilon=1,\end{cases}
+\]
+with the retained square factor \(t\) recovering \(R=\delta t^2\) and
+\(a=(p+R)/4\). A proper input has $\delta<R$,
+so $a'<a$. This proves Theorem~\ref{thm:mixed}.
+
+The excluded carrier values $q=2,3$ provide no trace source at these primes:
+all available prime factors would be residues. Without the $p\equiv1\pmod{24}$
+hypothesis the carrier conclusion can fail, as the exact $p=37,a=10,u=2$ E
+state demonstrates.
+
+\section{Examples, source fibres and indispensable negative controls}\label{sec:examples}
+At the hard prime $p=1129$, let
+\[
+ a=417=3\cdot139,\quad R=539=11\cdot7^2,\quad u=1251,
+ \quad(h,r,s)=(139,3,1).
+\]
+The positive rational E identity has tails $6116/7$ and $20714892/7$, with
+integer sum $2960144$. The complete original shell has both gates empty.
+Squarefree ray descent gives
+\[
+ (a',R',u',h',r',s',\kappa')=(285,11,855,95,3,1,308),
+\]
+with denominators $(285,29260,99103620)$. The middle return is
+\[
+ (a_M,R_M,u_M,h_M,r_M,s_M,\lambda_M)
+ =(308,103,1,1,1,308,3),
+\]
+\[
+ \frac4{1129}=\frac1{308}+\frac1{1043196}+\frac1{3387}.
+\]
+The unchanged word $1251$ does not divide $285^2$, and its entire previous
+fixed-word deletion set is empty. This is a genuinely different transport.
+
+At $p=2689$, $a=1138=2\cdot569$, $R=1863=23\cdot3^4$, $u=569$, both old
+gates again fail. Here $\delta=23$, while the radical of $R$ is $69$ and
+is $1\pmod4$: using it would destroy the original shell. At $p=6841$,
+\[
+ a=2454=6\cdot409,\quad R=2975=7\cdot17\cdot5^2,\quad u=1636
+\]
+has rational tails $28221/5$ and $128706574/5$. Its squarefree part is the
+composite $119$, not a selected prime factor. The middle return is
+\[
+ (a_M,R_M,u_M,h_M,r_M,s_M,\lambda_M)=(1725,59,45,5,3,115,2),
+\]
+\[
+ \frac4{6841}=\frac1{1725}+\frac1{7867150}+\frac1{205230}.
+\]
+Every original and returned prime exponent is serialized in the certificate.
+The $p=1009,a=321,u=9$ M example returns $(255,686120,24216)$ and cross-checks
+the earlier fixed-word theorem rather than supplying a new example of that theorem.
+
+\subsection{The factor \texorpdfstring{$4q$}{4q} cannot be added to this deletion rule}
+At the hard prime $p=9601$, the M source
+\[
+ a=2956=4\cdot739,\quad R=2223=3^2\cdot13\cdot19,\quad u=8
+\]
+has tails $14190278/3,38404/3$ and an integral sum. The squarefree target is
+$\delta=247$, $a'=2462=2\cdot1231$. Its complete divisor-residue set is
+\[
+ \{1,2,4,16,32,64,231,239,243\}\pmod{247}.
+\]
+It contains neither the E target $185$ nor the M target $8$. This refutes
+this automatic squarefree deletion at $4q$, not all possible source-changing
+repairs at that shell. An original M state at $a=2405,R=19,u=65$ is separately
+certified.
+
+\subsection{The initial-source implication is still missing}
+Exhaustion at $p=2521$ and $3361$ finds no rational integral-trace pair in any
+of the shells $cq$ specified by Theorem~\ref{thm:mixed}. All those prime-shell
+records and empty square gates are supplied. At $3361$, every one of the nine
+automatic E rays also has no initial trace state. Their linear forms factor as
+\[
+\begin{array}{c|l@{\qquad}c|l}
+(r,s)&pr+s&(r,s)&pr+s\\\hline
+(1,1)&2\cdot41^2&(1,2)&3\cdot19\cdot59\\
+(1,3)&2^2\cdot29^2&(1,6)&7\cdot13\cdot37\\
+(2,1)&3^4\cdot83&(2,3)&5^2\cdot269\\
+(3,1)&2^2\cdot2521&(3,2)&5\cdot2017\\
+(6,1)&7\cdot43\cdot67&&
+\end{array}
+\]
+None has a divisor in its required class $-1\pmod{4rs}$. The complete fibre
+formula therefore excludes its trace sources too. This is not an ES
+counterexample: $a=841=29^2$, $R=3$, $u=29$ is an original E state (and M state).
+The carrier in the failed mixed form would be composite.
+
+\section{Optimality of the automatic-ray guarantee}\label{sec:optimal}
+\begin{theorem}[An infinite original obstruction outside the nine rays]
+Fix coprime positive $r,s$ with $rs\nmid6$. There are infinitely many hard
+primes $p\equiv1\pmod{840}$ with an original proper E trace source on this ray
+for which every ray-preserving residual-divisor return is absent. The sources
+may simultaneously have no fixed-word residual-divisor return, and their E
+complements may fail even the relaxed trace gate. These primes have separately
+constructed integer middle solutions. No global ES counterexample is claimed.
+\end{theorem}
+\begin{proof}
+Put $m=4rs$. Since $m\nmid24$, choose a unit $b$ with $b^2\not\equiv1\pmod m$;
+change its sign if necessary so that $b\equiv1\pmod4$. By Dirichlet's theorem
+\cite[Theorem 18.1]{Dirichlet}, choose distinct primes
+\[
+ t\equiv b\pmod m,\qquad \delta\equiv-b^{-2}\pmod m,
+\]
+both exceeding $\max(7,r,s,|r^2-s^2|)$. Then $t\equiv1\pmod4$,
+$\delta\equiv3\pmod4$. Set $R=\delta t^2$ and $L=\operatorname{lcm}(840,m)$.
+Neither \(t\) nor \(\delta\) divides \(L\): both exceed seven and both are
+units modulo \(m\). Choose a prime $e\equiv3\pmod4$ coprime to $LR$. The CRT conditions
+\begin{equation}\label{eq:CRT}
+ p\equiv1\pmod L,\qquad pr+s\equiv\delta t\pmod R,
+ \qquad p\equiv-1\pmod e
+\end{equation}
+form a reduced class: the moduli are pairwise coprime, $r$ is a unit modulo
+$R$, and \(\delta t-s\equiv-s\) is nonzero modulo both $\delta$ and $t$
+because they exceed \(s\). Dirichlet supplies
+infinitely many primes in it.
+
+Choose them large enough that $p>R$ and $p>sR^2/(4r)$. Since $R\equiv-1\pmod m$,
+$h=(p+R)/m$, $a=hrs$ and $u=hr^2$ give an original proper E trace source
+with integral shell coordinates. Writing
+\(pr+s=\delta t+n\delta t^2=\delta t(1+nt)\) shows exactly that
+\(\gcd(R,pr+s)=\delta t\), so its trace defect is $d=t$. The possible deleting
+factors in \eqref{eq:delete} are $t,t^2,\delta t,\delta t^2$. The last two are
+$3\pmod4$; the first two are $b,b^2\not\equiv1\pmod m$. There is no ray return.
+
+Moreover $u>R^2/16$, so $4K(u)\ge4\sqrt u>R$. The fixed-word budget follows
+directly from \(K(u)\mid a\): both source and target shell conditions force
+\(k\equiv1\pmod{4K(u)}\). No divisor \(k\mid R\) with \(d=t>1\) can satisfy
+that congruence when \(4K(u)>R\). For the complement $u^*=hs^2$,
+\[
+ 4u^*+1\equiv (r^2-s^2)r^{-2}\not\equiv0\pmod\delta.
+\]
+Here $r\ne s$, since coprimality and equality would give the automatic ray
+$(1,1)$. Thus the complement is not even a trace source.
+Finally $e\mid p+1$ gives $H=(e+1)/4$, $J=(p+1)/e$ and the original middle
+state $(h_M,r_M,s_M,\lambda_M)=(H,1,J,1)$, with denominators
+$(HJ,pHJ,pH)$. Its residual is \(R_M=J+1\), and
+\[
+ 0<R_M\le\frac{p+1}{3}+1=\frac{p+4}{3}<p,
+\]
+so it is in the first-half range.
+\end{proof}
+
+This proves an exact classification of the \emph{universal repair rule on a
+supplied trace ray}: it works for all such sources exactly when $rs\mid6$.
+It does not say that nonautomatic rays never succeed. The finite progression
+records retain reduced residue, modulus and lower threshold; their sample
+integers are not described as prime values.
+
+\subsection{The older third Farey ray has a completely failed trace example}
+Take
+\[
+ p=6975049201,\quad r=5,\quad s=3,\quad
+ R=378359=71\cdot73^2,
+\]
+\[
+ h=116257126,\quad a=1743856890,\quad u=2906428150.
+\]
+This prime lies in the reduced progression
+$p=3479012041+3496037160n$ at $n=1$. Its original proper E trace has tails
+\[
+ \frac{2346804477773328}{73},\qquad
+ \frac{27281794495993456209184880}{73}.
+\]
+The complete linear-form factorization is
+\[
+ 5p+3=34875246008=2^3\cdot71\cdot73\cdot841097.
+\]
+Every required residual is odd. The complete odd-divisor residue set is
+\[
+ \{1,7,11,13,17,23,31,41\}\pmod{60},
+\]
+which omits $59$. Thus the \emph{entire genuine ray} $(5,3)$ fails here, not
+just the residual-divisor return. The 243 divisor words \(u\mid a^2\), for
+$a=2\cdot3\cdot5\cdot293\cdot198391$, also give empty full E and M gates at
+the specified old shell. These are exact finite exhaustions in the certificates.
+
+Primality is checked by two methods: trial division through $\lfloor\sqrt p\rfloor$
+and, separately, the complete-order certificate
+\[
+ p-1=2^4\cdot3\cdot5^2\cdot7\cdot830363,\qquad\hbox{base }11.
+\]
+Each listed factor is prime; the certificate checks $11^{p-1}=1\pmod p$ and
+$\gcd(11^{(p-1)/q}-1,p)=1$ for every listed $q$. These force order $p-1$ modulo
+any prime divisor of $p$, proving primality. The same prime has the independently
+available middle state
+\[
+ (h_M,r_M,s_M,\lambda_M)=(3,1,634095382,1),
+\]
+\[
+ (x,y,z)=(1902286146,\ 6975049201\cdot1902286146,\ 20925147603).
+\]
+No least-prime claim or full verification through this large isolated prime is made.
+
+\section{Reproduction, scope and the remaining implication}
+The main standard-library verifier enumerates every original first-half square
+divisor at primes $p\equiv1\pmod{24}$ through the declared bound. The separate
+checker imports no main or predecessor code and enumerates primitive $h,r,s$
+parameters instead. Both test the square gates, original full gates, centred
+exponent transport, middle returns, fibres, CRT records and explicit obstructions.
+\begin{verbatim}
+python verify.py --bound 10000 --out certificates
+python -O verify.py --bound 10000 --out certificates_optimized
+python check_independent.py --input certificates \
+  --out certificates/independent.json
+python repair.py --p 1129 --a 417 --y 6116/7 --z 20714892/7
+\end{verbatim}
+The complete run contains 143 primes, 171732 shells, 5616298 original divisor
+words, 5788 E traces and 5678 oriented M traces. Of these, 3637 E and 3910 M
+are integral. The mixed family has 806 trace states, 254 proper; the automatic
+rays have 1230 E traces, 409 proper. These counts overlap as specified source
+subsets and are not added as new prime coverage. Thirty-four nonautomatic-ray
+progression templates with $r,s\le8$ are arithmetic CRT certificates, not lists
+of independently certified prime sample values.
+
+The finite tests corroborate the implementation. The general theorems have
+the preceding coordinate proofs and the explicitly reduced Dirichlet input.
+No Lean build or independent human mathematical review is claimed. The current
+result completes the stated trace-to-integer return; it does not prove
+\[
+ \forall p\equiv1\pmod{24}\text{ prime},\quad
+ \exists\text{ an occupied original E or M coefficient}.
+\]
+In particular the split coefficient map and its integral section in
+\eqref{eq:fibre} do not establish a first source. The negative controls specify
+why both a supplied-ray assumption and a supplied mixed prime-shell trace
+assumption remain substantive. The programme therefore remains at Turn~7.

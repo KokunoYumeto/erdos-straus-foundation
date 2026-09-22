@@ -1,0 +1,99 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,booktabs,array,longtable,calc,microtype}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\title[Sharp inverse growth for the Erd\H{o}s--Straus receiver]
+{Sharp inverse growth, singular defect, and finite heat limits\\
+for the literal Erd\H{o}s--Straus receiver}
+\author{The Clankers}
+\date{22 September 2026}
+
+\begin{document}
+\begin{abstract}
+For every existing positive integral Erd\H{o}s--Straus witness at a prime
+\(p\equiv1\pmod {12}\), we prove sharp prime-growth bounds for an explicit
+four-mark complex receiving map. In its original ordered label and receiving
+coordinates,
+\[
+ \|O^{-1}\|_2=O(p^{3/2}),\qquad
+ \|\wedge^2O^{-1}\|_2=O(1),\qquad
+ \|\wedge^3O^{-1}\|_2=O(p^{-2}).
+\]
+Only one inverse singular direction can become unbounded. Two infinite prime
+families in the class \(13\bmod24\) attain all three exponents; their complete
+singular constants, a rank-one inverse limit, and a finite receiver heat limit
+are evaluated.  On the exact exceptional divisor the receiver has rank three,
+with an explicit kernel and cokernel hyperplane.  A fixed-\(c\) integral family
+has four computed first singular corrections and an exhaustive observation
+hierarchy with powers \(0,2,3,15\). The proof retains the two exact arithmetic channels, every
+root label and square-root sign, the standard Hermitian coordinates, and the
+conductor and metric factors. Three exact positive-coefficient comparisons
+and a high-precision replay accompany the proof. The argument begins with an
+existing witness and is not an existence theorem for the Erd\H{o}s--Straus
+equation.
+\end{abstract}
+\maketitle
+
+\input{core.tex}
+
+\input{relative_growth_ES1_ES15.tex}
+
+\input{relative_growth_ES16_ES37.tex}
+
+\section*{Acknowledgments and provenance}
+The Type I/II coordinate antecedents are due to Elsholtz and Tao
+\cite[\S2, Propositions 2.2 and 2.6]{ET}. The literal four-mark receiver and
+its determinant polynomial entered this project through the ES--Fable
+bridge~\cite{Receiver}; the complete integral sign theorem and coefficient
+arrays used here are proved in~\cite{GlobalSign}. The three-dimensional
+Jacobian construction that motivated that bridge was publicly announced by
+Levent Alp\"oge, with Akhil Mathew credited for the question and Claude
+Fable~5 for the work producing the construction; Tao's later article is an
+independent exposition~\cite{TaoDigestion}. This paper proves only the ES
+receiver statements displayed here. Dirichlet's theorem supplies infinitely
+many primes in the reduced class \(13\bmod24\)~\cite{Dirichlet}.
+
+\begin{thebibliography}{9}
+\bibitem{ET}
+Christian Elsholtz and Terence Tao,
+\emph{Counting the number of solutions to the Erd\H{o}s--Straus equation on
+unit fractions}, J. Aust. Math. Soc. 94 (2013), 50--105.
+\href{https://arxiv.org/abs/1107.1010}{arXiv:1107.1010v6};
+doi:10.1017/S1446788712000468.
+
+\bibitem{Receiver}
+The Clankers,
+\emph{The odd receiving divisor pulled back to the Erd\H{o}s--Straus locus},
+2026.
+\href{https://github.com/KokunoYumeto/erdos-straus-foundation/blob/799c53ffbad2dd9826ed8cb59ac9fe04958a3ce1/research/incoming/es-fable-zeta-bridge-20260920/ODD_RECEIVER_ES_PULLBACK.tex\#L19-L215}{Pinned proof, EZ37--EZ48}.
+
+\bibitem{GlobalSign}
+The Clankers,
+\emph{A global sign for the literal Erd\H{o}s--Straus receiving determinant},
+2026.
+\href{https://github.com/KokunoYumeto/erdos-straus-foundation/blob/799c53ffbad2dd9826ed8cb59ac9fe04958a3ce1/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex\#L1-L488}{Pinned theorem and complete arithmetic certificates}.
+
+\bibitem{TaoDigestion}
+Terence Tao,
+\emph{A digestion of the Jacobian conjecture counterexample},
+What's New, 21 July 2026.
+\href{https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/}{Article}.
+
+\bibitem{Dirichlet}
+Peter Gustav Lejeune Dirichlet,
+\emph{There are infinitely many prime numbers in all arithmetic progressions
+with first term and difference coprime}, translated by Ralf Stephan,
+\href{https://arxiv.org/abs/0808.1408}{arXiv:0808.1408} (2008);
+original work published 1837.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "received-primary-resolvent",
+    "private_source_locator": "relative_growth_20260922/01_COMPLETE_PROOFS (5).md",
+    "bytes": 36229,
+    "sha256": "1e042cf77ef8df20bcb3167d38d5a98e9f653b6a2a1694a16e6c2728b7de96ab"
+  },
+  {
+    "id": "received-relative-growth-and-es",
+    "private_source_locator": "relative_growth_20260922/03_Pasted text.txt",
+    "bytes": 29145,
+    "sha256": "88e30806879ab09fd2be80020765fb3571b33a53353ad428d967c0745edb4521"
+  },
+  {
+    "id": "received-angular-strengthening",
+    "private_source_locator": "angular_strengthening_20260922/01_Pasted text.txt",
+    "bytes": 25724,
+    "sha256": "e81cc9cf0a23b9a51ae638e21f02b1dba7d6cfba1101b53d512cafda5d1201ce"
+  },
+  {
+    "id": "arxiv:0808.1408v2-translator-tex",
+    "path": "literature/Dirichlet_1837_Stephan_arxiv_0808.1408v2/dirichlet.tex",
+    "bytes": 61292,
+    "sha256": "c7edc2c0ea0dd94a107845b3d0801bb346dbca90532670906def5525fc00549d"
+  }
+]

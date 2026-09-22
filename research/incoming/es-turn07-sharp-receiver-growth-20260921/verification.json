@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-22",
+  "status": "pass",
+  "commands": [
+    {
+      "command": "python verify.py",
+      "returncode": 0,
+      "result": "76 exact and high-precision checks passed",
+      "receipt": "certificates/sharp_growth_verification.json"
+    },
+    {
+      "command": "python derivation/check_es.py",
+      "returncode": 0,
+      "result": "50 exact checks and 56 numerical convergence checks passed",
+      "receipt": "derivation/ES_CHECKS.json"
+    },
+    {
+      "command": "pdflatex -interaction=nonstopmode -halt-on-error preprint.tex (twice)",
+      "returncode": 0,
+      "result": "17 pages; no unresolved references, overfull boxes, or underfull boxes"
+    }
+  ],
+  "source_hashes_sha256": {
+    "verify.py": "3ba14cc56141b2407b10030b25ea49a6f1061d9a765c518a695773b214a76446",
+    "derivation/check_es.py": "647f3416a16f6a0ab6c341dcca1a268ef2e38c100d76672e2a0f9c9a3a21c823",
+    "certificates/global_sign_polynomials.json": "3f1a7dc71435d17a74e2c96b3878723f4b40783247ab48467b2029dea26ea730"
+  },
+  "receipt_hashes_sha256": {
+    "certificates/sharp_growth_verification.json": "5c79f614e2dcf961ac1f3309244da8f2fe2c67c4069f85a45f83cc8e57cfc34a",
+    "derivation/ES_CHECKS.json": "702fd86504e68e0cd94c03bfa38522d070b9e2f0d4ef47faa6f8117c7156bfd2"
+  },
+  "verified_scope": [
+    "uniform inverse and exterior-power receiver bounds on existing integral hard-prime witnesses",
+    "two exact sharpness families in the class 13 modulo 24",
+    "rank-three defect locus with explicit kernel and cokernel",
+    "four first singular corrections and the observation hierarchy with powers 0, 2, 3, and 15",
+    "three positive-coefficient polynomial comparisons and exact family identities"
+  ],
+  "nonclaims": [
+    "No Erdős–Straus existence theorem is inferred from receiver invertibility.",
+    "No Riemann-hypothesis conclusion is inferred.",
+    "Numerical singular-value evaluations support, but do not replace, the exact asymptotic proofs."
+  ],
+  "lean_build": false,
+  "independent_human_review": false
+}

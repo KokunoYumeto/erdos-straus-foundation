@@ -1,0 +1,71 @@
+[
+  {
+    "id": "ES-SHARP-UNIFORM-COMPOUNDS",
+    "status": "proved",
+    "statement": "Every existing positive integral witness at prime p congruent to 1 modulo 12 satisfies the explicit inverse, second-compound, third-compound, and determinant-inverse bounds with gamma=80/6279^4.",
+    "proof": "core.tex, Theorem 1.1 and Sections 2-3",
+    "certificate": "verify.py and certificates/sharp_growth_verification.json",
+    "dependencies": ["global receiver sign theorem", "exact cofactor identities", "original E/M arithmetic"]
+  },
+  {
+    "id": "ES-SHARP-ONE-SOFT-DIRECTION",
+    "status": "proved",
+    "statement": "The third receiver singular value exceeds sqrt(gamma/180), so at most one inverse singular direction can be unbounded.",
+    "proof": "core.tex, Theorem 1.1 and the final paragraph of Section 3",
+    "dependencies": ["ES-SHARP-UNIFORM-COMPOUNDS"]
+  },
+  {
+    "id": "ES-SHARP-OPTIMAL-FAMILIES",
+    "status": "proved",
+    "statement": "Two infinite prime families in p congruent to 13 modulo 24 attain the p^(3/2), p^0, and p^(-2) inverse-compound exponents with the displayed leading constants.",
+    "proof": "core.tex, Section 4",
+    "certificate": "verify.py and certificates/sharp_growth_verification.json",
+    "dependencies": ["Dirichlet theorem for the reduced class 13 modulo 24"]
+  },
+  {
+    "id": "ES-RECEIVER-EXACT-DEFECT",
+    "status": "proved",
+    "statement": "On four distinct positive labelled roots, the receiver is invertible exactly when h is nonzero; at h=0 it has rank exactly three with the displayed kernel generator and cokernel hyperplane.",
+    "proof": "relative_growth_ES1_ES15.tex, ES1-ES5",
+    "certificate": "derivation/check_es.py and derivation/ES_CHECKS.json",
+    "dependencies": ["cubic interpolation inverse", "Vandermonde determinant"]
+  },
+  {
+    "id": "ES-RECEIVER-UNIFORM-LARGE-W-SPECTRUM",
+    "status": "proved",
+    "statement": "The four singular values, inverse rank-one limit, and finite heat limit have the uniform large-w asymptotics ES10-ES15.",
+    "proof": "relative_growth_ES1_ES15.tex, ES6-ES15",
+    "certificate": "derivation/check_es.py and derivation/ES_CHECKS.json",
+    "dependencies": ["exact derivative identities", "complete exterior maps"]
+  },
+  {
+    "id": "ES-RECEIVER-FIRST-CORRECTIONS",
+    "status": "proved",
+    "statement": "On the fixed-c integral family, all four first singular corrections are 18, -3/2, -41/4, 11/4; the determinant correction is 9/p and p^3 s4^2=32+176/p+O_c(p^-2).",
+    "proof": "relative_growth_ES16_ES37.tex, ES16-ES25",
+    "certificate": "derivation/check_es.py and derivation/ES_CHECKS.json",
+    "dependencies": ["exact weighted matrix first jet", "analytic inversion at z=0"]
+  },
+  {
+    "id": "ES-RECEIVER-HEAT-HIERARCHY",
+    "status": "proved",
+    "statement": "Every nonzero scalar observation falls into exactly one of four annihilation tiers with powers 0, 2, 3, or 15; both tail first corrections and the two-row observed heat limit are explicit.",
+    "proof": "relative_growth_ES16_ES37.tex, ES26-ES29",
+    "certificate": "derivation/check_es.py and derivation/ES_CHECKS.json",
+    "dependencies": ["ES-RECEIVER-FIRST-CORRECTIONS"]
+  },
+  {
+    "id": "ES-RECEIVER-METRIC-CONDUCTOR-TRANSPORT",
+    "status": "proved",
+    "statement": "The soft eigenvalue and observation hierarchy persist under fixed positive label and receiving metrics, and composition with a fixed invertible conductor has the exact directional error denominator of ES37.",
+    "proof": "relative_growth_ES16_ES37.tex, ES33-ES37",
+    "certificate": "derivation/check_es.py and derivation/ES_CHECKS.json",
+    "dependencies": ["exact inverse transport", "positive fixed metrics"]
+  },
+  {
+    "id": "ES-UNIVERSAL-OCCUPANCY",
+    "status": "not proved",
+    "statement": "Every hard prime has an integral witness to which the receiver theorems apply.",
+    "dependencies": ["missing arithmetic source theorem"]
+  }
+]

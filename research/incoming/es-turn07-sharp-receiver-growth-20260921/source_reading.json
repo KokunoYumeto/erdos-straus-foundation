@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-22",
+  "scope": "Exact receiver bounds and the ES1-ES37 relative-growth derivation. No broad historical-priority claim is made.",
+  "sources": [
+    {
+      "kind": "primary_literature_author_tex",
+      "authors": ["Christian Elsholtz", "Terence Tao"],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "arxiv": "1107.1010v6",
+      "doi": "10.1017/S1446788712000468",
+      "local_source": "literature/Elsholtz_Tao_2013_arxiv_1107.1010v6/egyptian-count18.tex",
+      "sha256": "b0469a67a737b7f4e77778310c87e22f5783ae9704f70aa55919a4a40104611c",
+      "locator": "Section 2, Propositions 2.2 and 2.6; author-source lines 487-625",
+      "use": "Type I/II coordinate antecedent. The specialized receiver estimates are derived here."
+    },
+    {
+      "kind": "primary_literature_translation_tex",
+      "author": "Peter Gustav Lejeune Dirichlet",
+      "translator": "Ralf Stephan",
+      "year_original": 1837,
+      "source_version": "arXiv:0808.1408v2",
+      "local_source": "literature/Dirichlet_1837_Stephan_arxiv_0808.1408v2/dirichlet.tex",
+      "local_source_sha256": "c7edc2c0ea0dd94a107845b3d0801bb346dbca90532670906def5525fc00549d",
+      "source_archive": "literature/Dirichlet_1837_Stephan_arxiv_0808.1408v2/source.tar",
+      "source_archive_sha256": "b0650548ba4b743a44389912e7da8e7ce7dfe8c06e4477cb8665b287a3d037dc",
+      "locator": "opening theorem and translator statement",
+      "use": "Prime supply in one explicitly reduced arithmetic progression."
+    },
+    {
+      "kind": "pinned_programme_source",
+      "title": "The odd receiving divisor pulled back to the Erdos-Straus locus",
+      "commit": "799c53ffbad2dd9826ed8cb59ac9fe04958a3ce1",
+      "path": "research/incoming/es-fable-zeta-bridge-20260920/ODD_RECEIVER_ES_PULLBACK.tex",
+      "locator": "lines 19-215, EZ37-EZ48",
+      "use": "Definition of the literal receiver, determinant polynomial, and arithmetic pullback."
+    },
+    {
+      "kind": "pinned_programme_source",
+      "title": "A global sign for the literal Erdos-Straus receiving determinant",
+      "commit": "799c53ffbad2dd9826ed8cb59ac9fe04958a3ce1",
+      "path": "research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex",
+      "locator": "lines 1-488, Theorem 1.1 and complete coefficient proof",
+      "use": "Integral nonvanishing and exact sign coefficients strengthened by the current shape-sensitive estimates."
+    },
+    {
+      "kind": "pinned_cross_programme_derivation",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "commit": "13ca9b136fcdae48df7454bd9bf99e1ef22dd03c",
+      "path": "workbenches/splitzero-tandem/continuations/20260922-original-growth-resolvent/ES_COMPLETE_PROOFS.md",
+      "locator": "ES1-ES37",
+      "use": "Independent derivation of the exact inverse, singular spectrum, first corrections, heat hierarchy, and metric/conductor transport."
+    }
+  ],
+  "nonclaims": [
+    "universal Erdos-Straus occupancy",
+    "Riemann-hypothesis consequence",
+    "identification with the nonlinear Jacobian construction",
+    "historical priority",
+    "Lean build",
+    "independent human review"
+  ]
+}
