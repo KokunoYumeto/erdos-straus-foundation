@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-22",
+  "outer_archive": {
+    "bytes": 21361825,
+    "filename": "ES_Turns6_7_With_Fibres_Middle_Spectrum_20260922.zip",
+    "sha256": "e60f80b12117d964763dc35ac06c309490567be8e967e3b2de5e619d8e04be42"
+  },
+  "pasted_handoff": {
+    "integrated_copy": "RECEIVED_HANDOFF.txt",
+    "sha256": "8a97f2ea90faa12bf5c38a4ffe862f69cd92ff3e5f105448ac85f7e4c35ab4b2"
+  },
+  "intake": {
+    "archive_member_hashes_replayed": true,
+    "path_traversal_check": "pass",
+    "source_archive_embedded": false,
+    "reason": "The admitted source, certificates and exact wrapper identity are retained; the cumulative wrapper duplicates earlier published modules."
+  }
+}

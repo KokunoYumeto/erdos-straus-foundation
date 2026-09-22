@@ -1,0 +1,255 @@
+\documentclass[10pt,reqno]{amsart}
+\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,microtype,xurl}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,positioning,shapes.geometric}
+\usepackage[authoryear,round]{natbib}\usepackage[hidelinks,pdftitle={Complete mixed-trace fibres and sharp hard-prime middle scales},pdfauthor={The Clankers}]{hyperref}
+\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}
+\title{Complete mixed-trace fibres and sharp hard-prime middle scales}
+\author{The Clankers}\date{22 September 2026}
+\begin{document}
+\begin{abstract}
+We complete a source fibre left unclassified by the corrected modulo-24
+Erd\H{o}s--Straus trace-return map, and prove that three established inverse
+bounds for its literal receiver are exponent-sharp already on actual middle
+witnesses with prime $p\equiv1\pmod{840}$. Neither result supplies an initial
+witness at every prime. Complete higher-order coefficients, a scalar
+observation hierarchy, and independent finite checks are in the accompanying
+workbench proof.
+\end{abstract}
+\maketitle
+
+\section{The bare sorted fibre}
+Fix a prime $p\equiv1\pmod{24}$. The original mixed rational source has
+$a_0=cq$, $c\mid6$, $q>3$ prime, $p/4<a_0<p/2$, and positive rational tails
+whose reciprocal sum with $1/a_0$ is $4/p$ and whose sum is an integer.
+With $R_0=4a_0-p$, every such pair has an original word $u_0\mid a_0^2$,
+normalized as $a_0=h_0r_0s_0$, $u_0=h_0r_0^2$, $(r_0,s_0)=1$.
+Its E tails are $(h_0s_0\kappa,p h_0r_0\kappa)$,
+$\kappa=(pr_0+s_0)/R_0$, with a separate swap bit; its M tails are
+$(p h_0s_0\lambda,p h_0r_0\lambda)$, $\lambda=(r_0+s_0)/R_0$.
+The squared gates are respectively $R_0\mid(4u_0+1)^2$ and
+$R_0\mid(p+4u_0)^2$. The factorization
+$(R_0y-pa_0)(R_0z-pa_0)=(pa_0)^2$ proves completeness, including both orders.
+The coordinate antecedents are Type I/II \citep{ET}.
+
+The corrected source-changing map \citep{Mixed,Composite} writes
+$R_0=\delta t^2$ with $\delta$ its squarefree part. E inputs have
+$r_0s_0\mid6$ and return the middle state
+\[
+ H=(\delta+1)/(4r_0s_0),\quad J=(pr_0+s_0)/\delta,
+ \qquad (H,s_0,J,r_0).
+\]
+M inputs are complemented if necessary to a word $\nu\mid c^2\mid36$;
+they return that word at $a=(p+\delta)/4$. Sorting forgets the orientations.
+This map is denoted by $\rho$.
+
+Let an existing sorted M target be
+\[
+ W=(p;a,Y,Z)=(p;hrs,phr\lambda,phs\lambda),\qquad r<s,
+ \quad R=4a-p=(r+s)/\lambda.
+\]
+These primitive coordinates are unique: reduce $(Y/p,Z/p)$ by its gcd to
+get $(r,s)$, then $h=a/(rs)$ and $\lambda=\gcd(Y/p,Z/p)/h$.
+Write $\operatorname{Car}(A)$ for the literal, uniquely decoded condition
+$A=cq$, $c\mid6$, $q>3$ prime.
+For $n=\prod_\ell\ell^{e_\ell}$ put
+$K(n)=\prod_\ell\ell^{\lceil e_\ell/2\rceil}$.
+
+\begin{theorem}
+The complete ordered fibre $\rho^{-1}(W)$ is as follows.
+Put $\delta_E=4hr\lambda-1$. If $r\lambda\mid6$ and $\delta_E$ is squarefree,
+then for every
+\[
+ t\mid\operatorname{oddpart}(s),\quad\delta_Et^2<p,\quad
+ a_t=(p+\delta_Et^2)/4\text{ satisfying }\operatorname{Car},
+\]
+there are two E inputs, with both orders, and
+\[
+ (h_t,r_t,s_t)=\left(a_t/(r\lambda),\lambda,r\right),\quad
+ u_t=h_t\lambda^2.
+\]
+There are no other E inputs. For every
+$\nu\in\{hr^2,hs^2\}\cap\operatorname{Div}(36)$, if $R$ is squarefree,
+put $A_\nu=(p+4\nu)/R$. Every
+\[
+ t\mid A_\nu,\quad Rt^2<p,\quad
+ a_t=(p+Rt^2)/4=c_tq_t,\quad c_t\mid6,\ q_t>3\text{ prime},\quad
+ \nu\mid c_t^2
+\]
+gives exactly the two M words $\nu,a_t^2/\nu$. There are no other M inputs.
+All lists are disjoint; hence their cardinalities add with the displayed
+factor two.
+\end{theorem}
+\begin{proof}
+For E, the normalized target forces
+$(r_0,s_0,H,J,\delta)=(\lambda,r,h,s,\delta_E)$.
+The reconstructed coordinates satisfy
+\[
+ r(4u_t+1)=\delta_E(s+\lambda t^2),\qquad
+ \gcd(r,\delta_Et^2)=1.
+\]
+Thus the squared gate is equivalent to
+$\delta_Et^2\mid(\delta_Es)^2$, and this is equivalent primewise to
+$t\mid\operatorname{oddpart}(s)$ because $\delta_E$ is squarefree and the
+residual is odd. Since $\lambda R=r+s$ and $(r,s)=1$, one has
+$(s,r\lambda)=1$. Hence $t\mid\operatorname{oddpart}(s)$ gives
+$(t,4r\lambda)=1$. Every such unit has square one modulo the divisor
+$4r\lambda$ of $24$, so multiplication by $t^2$ preserves the source shell
+condition. The displayed original word is therefore available and its forward
+return is $W$. The carrier test is exactly the mixed-source restriction.
+
+For M, the sorted target has only the two word orientations $hr^2,hs^2$.
+For these two choices respectively,
+\[
+ A_{hr^2}=4hr\lambda-1,\qquad A_{hs^2}=4hs\lambda-1,
+\]
+so $A_\nu=(p+4\nu)/R$ is a positive odd integer. The selected small word is
+one of them and divides $c_t^2$. Its old squared
+gate is $Rt^2\mid(RA_\nu)^2$, exactly $t\mid A_\nu$ when $R$ is squarefree.
+Moreover $A_\nu\equiv-1\pmod{4K(\nu)}$, and complementation from $u_t$ to
+$u_t'=a_t^2/u_t$ preserves the square gate because
+\[
+ p+4u_t'\equiv a_tu_t^{-1}(p+4u_t)\pmod{Rt^2}
+\]
+with a unit multiplier.  Indeed, $\gcd(a_t,Rt^2)=1$ because a common
+divisor would divide $4a_t-Rt^2=p$, and $\gcd(u_t,Rt^2)=1$ follows from
+$u_t\mid a_t^2$. The original square budget and the gate are therefore
+retained. The two
+source words have carrier exponent zero and two, hence cannot coincide.
+The carrier is unique, so different small words cannot duplicate a source.
+E and M inputs have different $p$-valuation pairs in the original factor
+coordinates. These same equations give the complete inverse in every case.
+\end{proof}
+
+The E general-ray section $t=1$ does not always survive the carrier
+restriction. The entire fibre over $(1009;255,24216,686120)$ consists of the
+two M words $9,11449$ at $a_t=321=3\cdot107,t=5$. Its squarefree $a=255$
+is not a mixed carrier. At $(6841;1866,20523,12765306)$, two E orders from
+$a_t=u_t=1713$ and two M words $3,1160652$ from $a_t=1866$ collide.
+The free-module kernel over a nonempty undecorated fibre has its literal
+difference basis $e_T-e_{T_0}$. After adding the sixteen receiver frames, its
+rank is multiplied by sixteen. Neither statement proves a fibre nonempty.
+
+\input{figures/fibre_decomposition.tex}
+
+For the receiver below, its full matrix and $p$ reconstruct the target:
+\[
+ \xi_j=O_{0j},\quad d_j=iO_{1j}/O_{0j},\quad
+ A=(O_{20}/O_{00}-2pd_0)/d_0^2,\quad
+ \ell_j=(O_{2j}/O_{0j}-Ad_j^2)/(2d_j).
+\]
+On the marked middle domain $a<p<Y<Z$, all four roots are distinct,
+$d_j=-S^{-1}\prod_{k\ne j}(\ell_j-\ell_k)\ne0$, and $\xi_j\ne0$.
+Thus every displayed denominator is nonzero. Direct substitution proves both
+compositions on the receiver image. The same arithmetic fibre is therefore
+the complete fibre of the fixed-prime receiver-valued map for each of the
+sixteen independently selected square-root frames.
+
+\section{Middle families in the hard class}
+The original literal receiver is the typed map
+$O:V_{\mathrm{labels}}\to E_{\mathrm{recv}}$ with
+\[
+ H(X)=-S^{-1}\prod_{j=0}^3(X-\ell_j),\quad
+ \ell=(p,a,Y,Z),\quad S=\sum_j\ell_j,\quad A=-1/S,
+\]
+\[
+ d_j=H'(\ell_j),\quad\xi_j^2d_j=1,\qquad
+ O_{\cdot j}=\xi_j(1,-id_j,Ad_j^2+2\ell_jd_j,
+ i(7\ell_j^2d_j-13d_j^2))^{\mathsf T}.
+\]
+The established uniform bounds on existing integral witnesses are
+$O(p^{3/2}),O(1),O(p^{-2})$ for the first three inverse compounds
+\citep[Theorem 1.1]{Sharp}. Norms are the original standard Hermitian norms.
+
+\begin{theorem}
+All three uniform powers are optimal already on middle witnesses at primes
+$p\equiv1\pmod{840}$.
+\end{theorem}
+\begin{proof}
+First fix $R=11,u=9$, and take primes $p\equiv8401\pmod{9240}$.
+Put
+\[
+ a=(p+R)/4,\qquad Y=p(a+u)/R,\qquad Z=pa(a+u)/(Ru).
+\]
+Here $9\mid a^2$ and $11\mid p+36$, so these are original integer M states.
+More generally fix positive $R,u$, and let
+$\alpha=1/(4R)$, $\beta=1/(16Ru)$ and $C=\sqrt{3/(16R)}$.
+Choose positive real $\xi_a,\xi_Y$ and positive imaginary $\xi_p,\xi_Z$.
+The exact rational roots give
+\[
+ d_p\sim-C^2p^3,\quad d_a\sim C^2p^3,\quad
+ d_Y\sim\alpha^2p^4,\quad d_Z\sim-\beta^2p^6.
+\]
+The compensated analytic matrix
+\[
+ B=\operatorname{diag}(1,p^{-3},p^{-4},p^{-6})O
+ \operatorname{diag}(p^{3/2},p^{3/2},1,p^{-3})
+\]
+has limit
+\[
+ B_0=\begin{pmatrix}
+i/C&1/C&0&0\\-C&-iC&0&0\\
+-2iC&C/2&2\alpha^2&0\\
+13C^3&-13iC^3&-6i\alpha^3&20\beta^3
+\end{pmatrix}.
+\]
+The four leading compound norms are
+\[
+20\beta^3p^9,\quad40\alpha^2\beta^3p^{13},\quad
+40\sqrt2C\alpha^2\beta^3p^{29/2},\quad80\alpha^2\beta^3p^{13}.
+\]
+They use respectively the entry $(3,Z)$, the minor $(2,3;Y,Z)$, both
+triples $(1,2,3;p,Y,Z)$ and $(1,2,3;a,Y,Z)$, and the full determinant.
+Every other compound entry is a lower power, as follows by adding row
+powers $(0,3,4,6)$ and column powers $(-3/2,-3/2,0,3)$ and retaining zero
+leading minors. The complete leading row and the Frobenius bound therefore
+sandwich the true compound norms. Consequently
+\[
+ p^{-3/2}\|O^{-1}\|\to\sqrt{3/(32R)},\qquad
+ \|\wedge^2O^{-1}\|\to\tfrac12.
+\]
+These nonzero limits settle the first two powers.
+
+For the third, take primes $p\equiv4201\pmod{9240}$ and set
+$s=(p+1)/11$, $(a,Y,Z)=(3s,3p,3ps)$.
+The original M coordinates are $(h,r,s,\lambda)=(3,1,s,1)$.
+The small root ratios are $x=(1,3/11,3)$, their derivative constants are
+$D=(-16/11,240/121,60/11)$, and $Z\sim(3/11)p^2$.
+The leading core matrix in rows $0,1,2$ is obtained by multiplying each
+column $(1,-iD_j,2x_jD_j)^{\mathsf T}$ by the selected inverse square root
+of $D_j$. Its determinant is $2896/121$. The last row of $O$ on the $Z$
+column is $20(3/11)^3p^6[1+O(p^{-1})]$; eliminating that column affects
+only lower core powers. The full determinant is therefore that entry times
+$(2896/121)p^2[1+O(p^{-1})]$. Since
+$\|\wedge^3O^{-1}\|=\|O\|/|\det O|$,
+\[
+ p^2\|\wedge^3O^{-1}\|\longrightarrow121/2896>0.
+\]
+Both residues are coprime to $9240$ and are $1\pmod{840}$.
+Dirichlet's theorem supplies infinitely many prime members
+\citep{DirichletOriginal}; see also \citet[Theorem 18.1]{Dirichlet}.
+No simultaneous primality of an additional
+carrier, nor universal occupancy of the mixed trace source, is asserted.
+\end{proof}
+
+The complete proof gives all first singular corrections, not just rates:
+\[
+6R+14u/5,\quad -R/2+19u/5,\quad-41R/12,\quad11R/12.
+\]
+It also proves the middle scalar heat-observation hierarchy $0,2,3,9$,
+retaining the small last coordinate, original signs, and metric factors.
+Those refinements are not needed for the theorem just proved.
+\input{figures/middle_spectrum.tex}
+The new fixed-residual family is not the already published hard-prime
+exterior $c=29$ family in ES16--ES17 \citep{EScont}.
+
+The executable standard-library checks include all 143 primes
+$p\equiv1\pmod{24}$ through 10000, all 1955 sorted M targets, all 1134
+ordered mixed sources and every empty or occupied formula fibre.
+There are 490 image targets, 28 cross-channel fibres, and 156 image targets
+with no $t=1$ input. These finite counts corroborate the implementations;
+they are not a universal existence theorem or independent human review.
+\input{references.tex}
+\end{document}

@@ -1,0 +1,9 @@
+{
+  "checks": 2003,
+  "finite_samples_are_corroboration": true,
+  "jet_parameter_pairs": 25,
+  "method": "exact rational Laurent arithmetic; complete leading-compound enumeration",
+  "prime_family_samples": 16,
+  "success": true,
+  "universal_ES_proved": false
+}

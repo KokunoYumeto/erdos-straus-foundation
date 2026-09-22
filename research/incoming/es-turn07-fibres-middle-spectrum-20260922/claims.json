@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-22",
+  "claims": [
+    {
+      "id": "ES-FMS-001",
+      "type": "theorem",
+      "statement": "For every supplied sorted middle witness in the stated domain, the ordered mixed-source fibre is exactly the disjoint E/M union in equations Efibre, Mfibre and fibrecount.",
+      "proof": "core.tex: complete bare fibre theorem and proof",
+      "certificate": "certificates/fibres.json",
+      "scope": "A target may have an empty fibre; no witness at every prime is inferred."
+    },
+    {
+      "id": "ES-FMS-002",
+      "type": "proposition",
+      "statement": "Known p and the full labelled receiver matrix recover the returned target and its four selected square-root branches on the receiver image.",
+      "proof": "core.tex: fixed-prime target reconstruction",
+      "scope": "The inverse does not choose an arithmetic preimage when the source fibre is nontrivial."
+    },
+    {
+      "id": "ES-FMS-003",
+      "type": "theorem",
+      "statement": "The fixed-positive-(R,u) middle family has singular powers 9, 4, 3/2 and -3/2 with the four displayed first relative coefficients and the inverse-compound limits in the theorem.",
+      "proof": "core.tex: middle spectrum with first corrections",
+      "certificate": "certificates/spectrum.json",
+      "scope": "The remainders hold for fixed R,u and do not assert uniformity in unbounded parameters."
+    },
+    {
+      "id": "ES-FMS-004",
+      "type": "theorem",
+      "statement": "The scalar heat observation powers for the fixed-(R,u) middle family are exhaustively 0, 2, 3 and 9.",
+      "proof": "core.tex: middle observation hierarchy",
+      "certificate": "certificates/spectrum.json"
+    },
+    {
+      "id": "ES-FMS-005",
+      "type": "theorem",
+      "statement": "Two reduced prime progressions in the class 1 modulo 840 make the three inherited inverse powers p^(3/2), 1 and p^(-2) sharp on actual middle witnesses.",
+      "proof": "core.tex: both hard progressions",
+      "certificate": "certificates/spectrum.json",
+      "scope": "Sharpness on the smaller mixed-return image is not claimed."
+    }
+  ],
+  "nonclaims": [
+    "No universal source or witness existence theorem.",
+    "No proof or counterexample to the Erdős–Straus conjecture.",
+    "No historical-priority claim from the bounded literature search.",
+    "No Lean verification claim."
+  ]
+}

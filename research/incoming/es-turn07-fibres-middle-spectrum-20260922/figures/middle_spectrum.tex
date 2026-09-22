@@ -1,0 +1,42 @@
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  >=Latex,
+  every node/.style={font=\scriptsize,align=center},
+  dot/.style={circle,fill=black,inner sep=1.8pt},
+  lab/.style={text width=3.0cm}
+]
+\draw[->,thick] (-5.5,0) -- (5.6,0) node[right] {power of $p$};
+\foreach \x/\e in {-4/-3/2,-1/3/2,1.6/4,5/9}{
+  \draw (\x,0.12)--(\x,-0.12) node[below=3pt] {$\e$};
+}
+\node[dot] (s4) at (-4,0) {};
+\node[dot] (s3) at (-1,0) {};
+\node[dot] (s2) at (1.6,0) {};
+\node[dot] (s1) at (5,0) {};
+\node[lab,above=7pt of s4] {$s_4\sim(\sqrt2/C)p^{-3/2}$};
+\node[lab,above=7pt of s3] {$s_3\sim\sqrt2C\,p^{3/2}$};
+\node[lab,above=7pt of s2] {$s_2\sim2\alpha^2p^4$};
+\node[lab,above=7pt of s1] {$s_1\sim20\beta^3p^9$};
+
+\draw[->,thick] (-5.5,-2.2) -- (5.6,-2.2) node[right] {observation power $\nu$};
+\foreach \x/\e in {-4.8/0,-2.3/2,0.2/3,5/9}{
+  \draw (\x,-2.08)--(\x,-2.32) node[below=3pt] {$\e$};
+}
+\node[dot] (v) at (-4.8,-2.2) {};
+\node[dot] (w) at (-2.3,-2.2) {};
+\node[dot] (y) at (0.2,-2.2) {};
+\node[dot] (z) at (5,-2.2) {};
+\node[lab,above=7pt of v] {$Lv_0\ne0$};
+\node[lab,above=7pt of w] {$Lv_0=0$, $Lw_0\ne0$};
+\node[lab,above=7pt of y] {$Lv_0=Lw_0=0$, $Le_Y\ne0$};
+\node[lab,above=7pt of z] {$L|_{\langle v_0,w_0,e_Y\rangle}=0$};
+\end{tikzpicture}
+\caption{Two different exact exponent systems for the fixed-$(R,u)$ middle
+family.  The upper axis records the four singular-value scales.  The lower
+axis records the exhaustive rescalings of
+$L\exp(-\tau p^3O^*O)L^*$ for fixed $\tau>0$; its last direction is $e_Z$.
+The first corrections and coefficients are stated in the middle-spectrum
+theorem and the subsequent observation table.}
+\label{fig:middle-spectrum}
+\end{figure}

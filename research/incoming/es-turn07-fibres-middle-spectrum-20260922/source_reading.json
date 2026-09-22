@@ -1,0 +1,97 @@
+{
+  "commits_compared": [
+    "799c53ffbad2dd9826ed8cb59ac9fe04958a3ce1",
+    "e713c342fc16e361e104de3322790ca0cee7281d",
+    "c9bb9978d5d3028be67574ef4935eaa269eb74a8",
+    "b6825f8faafff4539f93eae9c4ccb9749b32a855"
+  ],
+  "content_search": {
+    "historical_priority_claim": false,
+    "queries": [
+      "\"Erdos Straus\" \"middle\" \"singular values\"",
+      "\"Erdos Straus\" \"trace\" \"fibre\" receiver",
+      "\"Erdos Straus\" \"0,2,3,9\"",
+      "\"Erdos Straus\" \"bare\" \"fibre\""
+    ],
+    "result": "No matching independent statement was established. The results included an unrelated general prior-art ledger and irrelevant pages, none used as proof inputs."
+  },
+  "date": "2026-09-22",
+  "files": [
+    {
+      "git_blob": null,
+      "locator": "Complete contributor instructions",
+      "path": "CONTRIBUTING.md",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/b6825f8faafff4539f93eae9c4ccb9749b32a855/CONTRIBUTING.md"
+    },
+    {
+      "git_blob": null,
+      "locator": "Active routes and current frontier, including updated proofs",
+      "path": "WORKBENCH.md",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/b6825f8faafff4539f93eae9c4ccb9749b32a855/WORKBENCH.md"
+    },
+    {
+      "git_blob": "8b70d1b91b677e268fb7c69147192baaed5fc1c6",
+      "locator": "Sections 1-8: corrected original sources and automatic returns",
+      "path": "research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/b6825f8faafff4539f93eae9c4ccb9749b32a855/research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex"
+    },
+    {
+      "git_blob": "91f8605a65ecf1766c87f7f0529eb63339fbfd96",
+      "locator": "Entire file: original input types, actual residuals, signed pullback and unclassified bare M fibre",
+      "path": "research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/b6825f8faafff4539f93eae9c4ccb9749b32a855/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex"
+    },
+    {
+      "git_blob": "26ae2fa3a7c18acff7fe06f0537718772e24ea4d",
+      "locator": "Complete audit, all correction and evidence-scope entries",
+      "path": "research/incoming/es-turn07-mod24-ray-trace-20260922/audit/AUDIT_REPORT.md",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/b6825f8faafff4539f93eae9c4ccb9749b32a855/research/incoming/es-turn07-mod24-ray-trace-20260922/audit/AUDIT_REPORT.md"
+    },
+    {
+      "git_blob": "2268a91ccfad94aac87885970bfcc2c2faf42819",
+      "locator": "Complete proof: sharp uniform inverse/compound bounds and original metric transport",
+      "path": "research/incoming/es-turn07-sharp-receiver-growth-20260921/core.tex",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/b6825f8faafff4539f93eae9c4ccb9749b32a855/research/incoming/es-turn07-sharp-receiver-growth-20260921/core.tex"
+    },
+    {
+      "git_blob": "3a6bc8b20316f54842324b1464d3e8fc63719491",
+      "locator": "Complete ES1-ES15 original-chart asymptotic proof",
+      "path": "research/incoming/es-turn07-sharp-receiver-growth-20260921/relative_growth_ES1_ES15.tex",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/b6825f8faafff4539f93eae9c4ccb9749b32a855/research/incoming/es-turn07-sharp-receiver-growth-20260921/relative_growth_ES1_ES15.tex"
+    },
+    {
+      "git_blob": "af63dc64acdcc7e6bdb3b9d929b077f3e21f35ca",
+      "locator": "Complete ES16-ES37; E hard-prime family, first corrections and metric hierarchy",
+      "path": "research/incoming/es-turn07-sharp-receiver-growth-20260921/relative_growth_ES16_ES37.tex",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/b6825f8faafff4539f93eae9c4ccb9749b32a855/research/incoming/es-turn07-sharp-receiver-growth-20260921/relative_growth_ES16_ES37.tex"
+    }
+  ],
+  "head_rechecked_same": true,
+  "original_derivations": [
+    "Complete bare sorted mixed fibre including M origin",
+    "Fixed-prime target recovery from full receiver matrix",
+    "All fixed-residual M first singular corrections and observation powers 0,2,3,9",
+    "Hard-prime M-only exponent optimality in two linear progressions"
+  ],
+  "primary_antecedents": [
+    {
+      "authors": "Christian Elsholtz and Terence Tao",
+      "locator": "Section 2, Propositions 2.2 and 2.6; PDF printed pp.11 and13 in accessed version",
+      "role": "Classical Type I/II arithmetic, not universal occupancy",
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "url": "https://arxiv.org/abs/1107.1010",
+      "year": 2013
+    },
+    {
+      "author": "Andrew V. Sutherland",
+      "locator": "Theorem 18.1, p.1",
+      "role": "Infinitely many primes in each explicitly reduced linear progression",
+      "title": "Dirichlet L-functions, primes in arithmetic progressions",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "year": 2017
+    }
+  ],
+  "read_scope": "Selected complete mathematical dependency chain and its integration corrections, not every historical repository file.",
+  "repository": "KokunoYumeto/erdos-straus-foundation",
+  "revision": "b6825f8faafff4539f93eae9c4ccb9749b32a855"
+}

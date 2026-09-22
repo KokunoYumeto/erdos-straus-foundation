@@ -1,0 +1,142 @@
+{
+  "commands": [
+    {
+      "command": [
+        "python",
+        "verify_fibres.py",
+        "--bound",
+        "20000",
+        "--out",
+        "build/reproduced_20000/normal"
+      ],
+      "returncode": 0,
+      "seconds": 10.447
+    },
+    {
+      "command": [
+        "python",
+        "verify_spectrum.py",
+        "--out",
+        "build/reproduced_20000/normal"
+      ],
+      "returncode": 0,
+      "seconds": 0.8
+    },
+    {
+      "command": [
+        "python",
+        "check_independent.py",
+        "--input",
+        "build/reproduced_20000/normal",
+        "--out",
+        "build/reproduced_20000/normal/independent.json"
+      ],
+      "returncode": 0,
+      "seconds": 5.372
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify_fibres.py",
+        "--bound",
+        "20000",
+        "--out",
+        "build/reproduced_20000/optimized"
+      ],
+      "returncode": 0,
+      "seconds": 10.23
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "verify_spectrum.py",
+        "--out",
+        "build/reproduced_20000/optimized"
+      ],
+      "returncode": 0,
+      "seconds": 0.782
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "check_independent.py",
+        "--input",
+        "build/reproduced_20000/optimized",
+        "--out",
+        "build/reproduced_20000/optimized/independent.json"
+      ],
+      "returncode": 0,
+      "seconds": 5.403
+    }
+  ],
+  "independent": {
+    "all_M_targets": 4627,
+    "bound": 20000,
+    "checks": 31337,
+    "cross_channel_targets": 38,
+    "image_targets": 974,
+    "imports_no_main_or_predecessor_code": true,
+    "ordered_sources": 2252,
+    "source_key_sha256": "3b88d994cfcea5f2bf05f08258fd9d2f18099229f89ae34249531d6941bd42c9",
+    "success": true,
+    "targets_without_t1_source": 337,
+    "universal_ES_proved": false
+  },
+  "independent_human_mathematical_review": false,
+  "lean_build": false,
+  "main": {
+    "bound": 20000,
+    "checks": 25277,
+    "counts": {
+      "cross_channel_targets": 38,
+      "empty_target_fibres": 3653,
+      "image_targets": 974,
+      "kernel_rank": 1278,
+      "ordered_mixed_E": 1288,
+      "ordered_mixed_M": 964,
+      "oriented_M_states": 9254,
+      "original_divisor_words": 23973370,
+      "proper_ordered_mixed_E": 442,
+      "proper_ordered_mixed_M": 342,
+      "shells": 641358,
+      "targets_without_t1_source": 337
+    },
+    "independent_human_review": false,
+    "primes": 267,
+    "source_key_sha256": "3b88d994cfcea5f2bf05f08258fd9d2f18099229f89ae34249531d6941bd42c9",
+    "success": true,
+    "target_count": 4627,
+    "universal_ES_proved": false
+  },
+  "normal_optimized_identical": {
+    "examples.json": true,
+    "fibre_summary.json": true,
+    "fibres.json": true,
+    "independent.json": true,
+    "spectrum.json": true,
+    "spectrum_summary.json": true
+  },
+  "source_sha256": {
+    "build_manifest.py": "0561034864bb588d2e6d86afdd65c5c9975c3bb79088d4e017224babb2961ca4",
+    "check_independent.py": "0abe84349d673fb961cf17f55032125bc4aacaa18001590a46a41afaa7495267",
+    "fibres.py": "2d901fa927199db8e7c0191bbf6677b8280a041f85f710e637d183818b4495a3",
+    "run_all.py": "4855130c9630d083dfe4e60e98fd31dabc153fb419553bc28dda9be5250a1269",
+    "spectrum_exact.py": "cf042b266189c3d361be1aa70b402498e4a619de6d3178ef57e2a30c249457d9",
+    "verify_fibres.py": "44ac6889c8a43bd6cf19e5c936e55d63d7a32419897c645211966b88cc50e36d",
+    "verify_spectrum.py": "232c4fec4268ecb9874c9d1f9660da4376a02b37d7ba323eee4de8c808848e05"
+  },
+  "spectrum": {
+    "checks": 2003,
+    "finite_samples_are_corroboration": true,
+    "jet_parameter_pairs": 25,
+    "method": "exact rational Laurent arithmetic; complete leading-compound enumeration",
+    "prime_family_samples": 16,
+    "success": true,
+    "universal_ES_proved": false
+  },
+  "success": true,
+  "universal_ES_proved": false
+}

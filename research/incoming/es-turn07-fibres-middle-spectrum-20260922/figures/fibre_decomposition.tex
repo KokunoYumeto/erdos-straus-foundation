@@ -1,0 +1,43 @@
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  >=Latex,
+  every node/.style={font=\scriptsize,align=center},
+  box/.style={draw,rounded corners,inner sep=4pt,text width=4.25cm},
+  target/.style={draw,very thick,ellipse,inner sep=5pt,text width=3.25cm},
+  loss/.style={draw,dashed,rounded corners,inner sep=3pt,text width=4.0cm}
+]
+\node[box] (E) at (-5.0,1.8)
+ {E records\\
+ $t\in\mathcal I_E(W)$, $R_t=\delta_Et^2$\\
+ two original tail orders};
+\node[box] (M) at (-5.0,-1.8)
+ {M records\\
+ $\nu\in\{hr^2,hs^2\}\cap\operatorname{Div}(36)$,
+ $t\in\mathcal I_{M,\nu}(W)$\\
+ words $\nu$ and $a_t^2/\nu$};
+\node[target] (W) at (0,0)
+ {$W=(p;a,Y,Z)$\\
+ bare sorted middle target\\
+ $n_W=2|\mathcal I_E|+2\sum_\nu|\mathcal I_{M,\nu}|$};
+\node[box] (O) at (5.0,0)
+ {$O(W,\xi):V_{\rm labels}\to E_{\rm recv}$\\
+ $\xi\in\Xi_W$, $|\Xi_W|=16$\\
+ $(p,O)$ recovers $(W,\xi)$};
+\node[loss] (L) at (0,-3.1)
+ {forgotten by $\rho$: old shell, $t$, carrier, word choice,
+ and sometimes channel; final sorting also forgets tail order};
+\draw[->,thick] (E) -- node[above,sloped] {$\rho$} (W);
+\draw[->,thick] (M) -- node[below,sloped] {$\rho$} (W);
+\draw[->,thick] (W) -- node[above] {choose $\xi$} (O);
+\draw[->,dashed] (E.south east) to[bend right=12] (L.west);
+\draw[->,dashed] (M.north east) to[bend left=12] (L.west);
+\draw[->,dashed] (W) -- (L);
+\end{tikzpicture}
+\caption{The exact arithmetic fibre and receiver lift.  The E and M records
+are disjoint as source records but may meet at one target.  Adding the full
+matrix restores $W$ and the selected square-root frame, not the forgotten
+arithmetic record.  The fibre theorem and receiver reconstruction formulas
+give the exact maps.}
+\label{fig:fibre-decomposition}
+\end{figure}

@@ -1,0 +1,742 @@
+[**Cumulative handoff: the preceding archive preserved, with this GitHub-based continuation added**](sandbox:/mnt/data/ES_Turns6_7_With_Fibres_Middle_Spectrum_20260922.zip)
+
+[**Current research package**](sandbox:/mnt/data/ES_Turn7_Fibres_Middle_Spectrum_20260922.zip) · [Nine-page complete proof](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/workbench.pdf) · [Three-page preprint](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/preprint.pdf) · [Complete LaTeX](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/core.tex) · [Fresh-extraction receipt](sandbox:/mnt/data/ES_Turn7_Fibres_Middle_Spectrum_Receipt_20260922.json)
+
+## The integrated corrections change the starting point
+
+I read the current relevant proof chain at
+
+$$
+\texttt{b6825f8faafff4539f93eae9c4ccb9749b32a855},
+$$
+
+including the correction commits, the complete mod-\(24\) audit and corrected source, the receiver composite, the sharp-growth proof, and its ES1–ES37 continuation. The repository head remained at that revision when rechecked. This was a reading of the active mathematical dependencies, not a claim to have audited every historical file.
+
+The upstream correction of the automatic E-to-M denominator is retained:
+
+$$
+\boxed{(HsJ,\ pHJr,\ pHsr).}
+$$
+
+The extra \(s\) formerly printed in the second denominator was erroneous. The corrected composite also explicitly separates a proper rational trace input from an integral receiver input, retains the actual returned residual rather than substituting its cofactor, and states that the **middle-origin fibre after sorting had not been completely classified**.
+
+That last omission is now closed.
+
+The continuation proves two results:
+
+**First, the complete fibre of the sorted mixed-source return is explicit**, including every M-origin input, E/M cross-collision, orientation, carrier-prime test and missing-section case.
+
+**Second, all three established receiver inverse-growth exponents are sharp already on middle witnesses in the hard class \(p\equiv1\pmod{840}\).** The proof supplies all four first singular corrections for a fixed-residual middle family. Its complete scalar observation hierarchy is
+
+$$
+\boxed{0,\ 2,\ 3,\ 9,}
+$$
+
+rather than the exterior family’s \(0,2,3,15\).
+
+This remains Turn 7. Neither result supplies the first occupied source at every prime.
+
+## 1. The complete sorted-return fibre
+
+Let
+
+$$
+W=(p;a,Y,Z),\qquad a<Y<Z,
+$$
+
+be any existing middle witness at \(p\equiv1\pmod{24}\). Recover its unique primitive orientation by
+
+$$
+b=Y/p,\qquad c=Z/p,\qquad g=\gcd(b,c),
+$$
+
+$$
+r=b/g<s=c/g,\qquad h=\frac{a}{rs},\qquad\lambda=\frac gh.
+$$
+
+Thus
+
+$$
+\boxed{
+a=hrs,\quad Y=phr\lambda,\quad Z=phs\lambda,\quad
+R=4a-p=\frac{r+s}{\lambda}.
+}
+$$
+
+These are the inherited Type-II coordinates, with the sorted target fixing their orientation (Elsholtz & Tao, 2013, §2, Proposition 2.6). ([arXiv][1])
+
+Write \(\operatorname{Car}(A)\) for the **actual finite test**
+
+$$
+A=cq,\qquad c\in\{1,2,3,6\},\qquad q>3\text{ prime}.
+$$
+
+When present, the pair \((c,q)\) is unique. This test is executed; it is not an assumed prime-supply condition.
+
+### Exterior-origin inputs
+
+Put
+
+$$
+\delta_E=4hr\lambda-1.
+$$
+
+There are no E-origin mixed inputs unless
+
+$$
+r\lambda\mid6,\qquad \delta_E\text{ is squarefree}.
+$$
+
+When those conditions hold, define
+
+$$
+\boxed{
+\mathcal I_E(W)=
+\left\{
+t\mid\operatorname{oddpart}(s):
+\delta_Et^2<p,\quad
+\operatorname{Car}\!\left(\frac{p+\delta_Et^2}{4}\right)
+\right\}.
+}
+$$
+
+For each such \(t\), the complete original source is
+
+$$
+R_t=\delta_Et^2,\qquad a_t=\frac{p+R_t}{4},
+$$
+
+$$
+\boxed{
+(h_t,r_t,s_t)
+=
+\left(\frac{a_t}{r\lambda},\lambda,r\right),
+\qquad u_t=h_t\lambda^2.
+}
+$$
+
+It contributes exactly two ordered E inputs, obtained by retaining the exterior tail-swap bit.
+
+The corrected forward return forces these parameters. Indeed,
+
+$$
+p\lambda+r=\delta_Es.
+$$
+
+The squared trace gate becomes
+
+$$
+\delta_Et^2\mid(\delta_Es)^2.
+$$
+
+Because \(\delta_E\) is squarefree, primewise comparison gives exactly
+
+$$
+t\mid\operatorname{oddpart}(s).
+$$
+
+Unit squares modulo \(4r\lambda\mid24\) preserve the original shell congruence. The carrier test is the remaining restriction from the general automatic-ray source to the mixed source.
+
+### Middle-origin inputs
+
+Set
+
+$$
+\boxed{
+\mathcal V(W)=\{hr^2,hs^2\}\cap\operatorname{Div}(36).
+}
+$$
+
+There are no M-origin mixed inputs unless the target residual \(R\) is squarefree.
+
+For each \(\nu\in\mathcal V(W)\), put
+
+$$
+A_\nu=\frac{p+4\nu}{R}.
+$$
+
+The complete index set is
+
+$$
+\boxed{
+\begin{aligned}
+\mathcal I_{M,\nu}(W)=
+\{t\mid A_\nu:\;&Rt^2<p,\quad
+a_t=(p+Rt^2)/4=c_tq_t,\\
+&c_t\mid6,\quad q_t>3\text{ prime},\quad
+\nu\mid c_t^2\}.
+\end{aligned}}
+$$
+
+All these \(t\) are odd.
+
+Each index gives precisely the two original M words
+
+$$
+\boxed{u_t=\nu,\qquad u_t=a_t^2/\nu}
+$$
+
+at residual \(R_t=Rt^2\).
+
+To prove completeness, the squarefree target must be the squarefree part of the old residual. Its pre-complement small word is one of the two target divisor orientations, hence \(\nu\in\mathcal V(W)\). The original squared gate is
+
+$$
+Rt^2\mid(p+4\nu)^2=(RA_\nu)^2.
+$$
+
+Since \(R\) is squarefree, that is exactly \(t\mid A_\nu\).
+
+The carrier and its original exponent budget remain explicit. Distinct \(\nu\) cannot duplicate an M source: the source’s unique carrier prime identifies which of \(u_t,a_t^2/u_t\) is the small word.
+
+### Exact count and inverse
+
+The two origin channels are disjoint in the original rational factor coordinates. Consequently,
+
+$$
+\boxed{
+|\rho^{-1}(W)|
+=
+2|\mathcal I_E(W)|
++
+2\sum_{\nu\in\mathcal V(W)}
+|\mathcal I_{M,\nu}(W)|.
+}
+$$
+
+Every item reconstructs
+
+$$
+p,a_t,R_t,u_t,h_t,r_t,s_t,\kappa_t\text{ or }\lambda_t
+$$
+
+and its original ordered rational tails. Every prime-exponent box is recalculated at the appropriate shell.
+
+This is a complete finite inverse for an arbitrary supplied sorted M target. An empty fibre is an allowed, exactly decided result.
+
+## 2. Sorting loses more than a complement bit
+
+The general automatic-ray section \(t=1\) does not necessarily belong to the mixed carrier domain.
+
+For example,
+
+$$
+\boxed{W=(1009;255,24216,686120)}
+$$
+
+has exactly two mixed inputs: the M words \(9\) and \(11449\) at
+
+$$
+a_t=321=3\cdot107,\qquad R_t=275,\qquad t=5.
+$$
+
+Both inputs are proper rational traces. The squarefree representative \(a=255\) is not a permitted mixed carrier, so the fibre has **no \(t=1\) input**.
+
+Similarly,
+
+$$
+W=(1129;308,3387,1043196)
+$$
+
+has only the two E tail orders at
+
+$$
+a_t=417=3\cdot139,\qquad t=7.
+$$
+
+Its prospective \(t=1\) carrier would be \(285\), again outside the mixed source.
+
+There are also genuine E/M-origin collisions. At
+
+$$
+\boxed{W=(6841;1866,20523,12765306),}
+$$
+
+the full fibre consists of the two E orders at
+
+$$
+a_t=u_t=1713=3\cdot571
+$$
+
+and the two M words
+
+$$
+3,\qquad1160652
+$$
+
+at \(a_t=1866=6\cdot311\). These are four distinct original inputs of one bare sorted target.
+
+For the free abelian coefficient map onto its actual image, choose an actual source \(T_W\) in each nonempty fibre. Its kernel is exactly
+
+$$
+\boxed{
+\bigoplus_W
+\left\langle e_T-e_{T_W}:T\ne T_W,\ \rho(T)=W\right\rangle,
+}
+$$
+
+of rank
+
+$$
+\sum_W\bigl(|\rho^{-1}(W)|-1\bigr).
+$$
+
+The section chooses a member of the computed fibre; it does not insert an unavailable \(t=1\) source.
+
+With original positive coefficient forms \(G_T\), the receiver sum
+
+$$
+z=O_W\sum_{\rho(T)=W}v_T
+$$
+
+has exact quotient form
+
+$$
+\boxed{
+Q_W=
+\left[
+O_W\left(\sum_{\rho(T)=W}G_T^{-1}\right)O_W^*
+\right]^{-1}.
+}
+$$
+
+For equal Euclidean forms, the minimum-norm section is
+
+$$
+v_T=|\rho^{-1}(W)|^{-1}O_W^{-1}z.
+$$
+
+It generally is not an integral coefficient section. The original integer kernel and the metric minimum remain different constructions.
+
+### The receiver matrix itself retains the target
+
+For the literal receiver,
+
+$$
+O_{\cdot j}
+=
+\xi_j
+\begin{pmatrix}
+1\\-id_j\\Ad_j^2+2\ell_jd_j\\
+i(7\ell_j^2d_j-13d_j^2)
+\end{pmatrix},
+\qquad
+\ell=(p,a,Y,Z),
+$$
+
+the known prime and full matrix recover the target:
+
+$$
+\boxed{
+\xi_j=O_{0j},\qquad d_j=iO_{1j}/O_{0j},
+}
+$$
+
+$$
+\boxed{
+A=\frac{O_{20}/O_{00}-2pd_0}{d_0^2},
+\qquad
+\ell_j=\frac{O_{2j}/O_{0j}-Ad_j^2}{2d_j}.
+}
+$$
+
+All displayed denominators are nonzero. The fourth row, sum normalization, sign equations and arithmetic domain are the remaining consistency tests.
+
+Thus the complete fibre above also describes the fixed-prime receiver-valued composite, for each of its sixteen retained full-frame sign choices. This uses the full matrix, not only its singular values or squared norms.
+
+## 3. Middle states have a different large-parameter spectrum
+
+The integrated sharp theorem already gives, on existing integral witnesses,
+
+$$
+\|O^{-1}\|_2=O(p^{3/2}),\qquad
+\|\wedge^2O^{-1}\|_2=O(1),\qquad
+\|\wedge^3O^{-1}\|_2=O(p^{-2}).
+$$
+
+The question addressed here is their sharpness and finer behaviour on **middle witnesses in the hard class**, not another proof of those upper bounds.
+
+Fix integers \(R\equiv3\pmod4\), \(u>0\), with \(\gcd(R,u)=1\). At the prime parameters satisfying
+
+$$
+a=\frac{p+R}{4}\in\mathbb Z,\qquad
+u\mid a^2,\qquad R\mid p+4u,
+$$
+
+retain the sorted middle family
+
+$$
+\boxed{
+(a,Y,Z)=
+\left(
+a,\frac{p(a+u)}R,\frac{pa(a+u)}{Ru}
+\right).
+}
+$$
+
+The formulas define the exact rational family used for expansion; primality and integer availability are imposed separately when asserting original witnesses.
+
+Put
+
+$$
+\alpha=\frac1{4R},\qquad
+\beta=\frac1{16Ru},\qquad
+C=\sqrt{\frac3{16R}}.
+$$
+
+For \(p>4(R+u)\), the literal order is
+
+$$
+a<p<Y<Z.
+$$
+
+Choose positive real square roots for \(d_a,d_Y>0\), and positive-imaginary inverse roots for \(d_p,d_Z<0\). The oriented determinant sign is then fixed.
+
+### All four first corrections
+
+For fixed \(R,u\), the singular values satisfy
+
+$$
+\boxed{
+\begin{aligned}
+s_1&=20\beta^3p^9
+ \left[1+\frac{6R+14u/5}{p}+O_{R,u}(p^{-2})\right],\\
+s_2&=2\alpha^2p^4
+ \left[1+\frac{-R/2+19u/5}{p}+O_{R,u}(p^{-2})\right],\\
+s_3&=\sqrt2\,C\,p^{3/2}
+ \left[1-\frac{41R}{12p}+O_{R,u}(p^{-2})\right],\\
+s_4&=\frac{\sqrt2}{C}\,p^{-3/2}
+ \left[1+\frac{11R}{12p}+O_{R,u}(p^{-2})\right].
+\end{aligned}}
+$$
+
+The complete determinant is
+
+$$
+\boxed{
+\det O
+=
+80\alpha^2\beta^3p^{13}
+\left[1+\frac{3R+33u/5}{p}+O_{R,u}(p^{-2})\right].
+}
+$$
+
+No uniform remainder in unbounded \(R,u\) is asserted.
+
+The proof uses the compensated analytic matrix
+
+$$
+B(1/p)=
+\operatorname{diag}(1,p^{-3},p^{-4},p^{-6})
+\,O\,
+\operatorname{diag}(p^{3/2},p^{3/2},1,p^{-3}).
+$$
+
+Its constant term is
+
+$$
+\boxed{
+B_0=
+\begin{pmatrix}
+i/C&1/C&0&0\\
+-C&-iC&0&0\\
+-2iC&C/2&2\alpha^2&0\\
+13C^3&-13iC^3&-6i\alpha^3&20\beta^3
+\end{pmatrix}.
+}
+$$
+
+The full first coefficient \(B_1\) is printed and verified in the proof; no original column is omitted.
+
+The complete compound norms have leading data
+
+$$
+\begin{array}{c|c|c}
+k&\text{power of }p&\text{leading coefficient}\\ \hline
+1&9&20\beta^3\\
+2&13&40\alpha^2\beta^3\\
+3&29/2&40\sqrt2\,C\alpha^2\beta^3\\
+4&13&80\alpha^2\beta^3.
+\end{array}
+$$
+
+At rank three, both core-labelled triples contribute. Their joint norm produces the factor \(\sqrt2\).
+
+The leading entry or leading row supplies a lower norm bound. The full Frobenius norm supplies the matching upper bound; every other compound entry is of sufficiently smaller order that its square affects only the stated remainder. Taking successive ratios proves the singular expansions.
+
+The exact inverse scaling then gives
+
+$$
+\boxed{
+p^{-3/2}O^{-1}
+\longrightarrow
+\frac C2(-i,1,0,0)^{\mathsf T}e_0^*,
+}
+$$
+
+and
+
+$$
+\boxed{
+p^{-3/2}\|O^{-1}\|_2\to\sqrt{\frac3{32R}},\qquad
+\|\wedge^2O^{-1}\|_2\to\frac12,\qquad
+p^4\|\wedge^3O^{-1}\|_2\to4R^2.
+}
+$$
+
+These are middle-family calculations, not the unchanged exterior fixed-\(c\) expansion.
+
+## 4. The middle observation hierarchy is \(0,2,3,9\)
+
+Let
+
+$$
+v_0=\frac{(-i,1,0,0)^{\mathsf T}}{\sqrt2},
+\qquad
+w_0=\frac{(i,1,0,0)^{\mathsf T}}{\sqrt2},
+\qquad
+n_0=\frac C{\sqrt2}.
+$$
+
+The normalized right singular vector for \(s_4\), with positive \(a\)-component, has
+
+$$
+v_p
+=
+v_0-\frac{9R}{4p}w_0
++\frac{9R}{8n_0}p^{-3/2}e_Y
++O_{R,u}(p^{-2}).
+$$
+
+The two small coordinates have stronger **relative** expansions:
+
+$$
+\boxed{
+e_Y^*v_p=
+\frac{9R}{8n_0}p^{-3/2}
+\left[
+1+\frac{7R/4-38u/5}{p}+O_{R,u}(p^{-2})
+\right],
+}
+$$
+
+$$
+\boxed{
+e_Z^*v_p=
+\frac{576iRu^3}{5n_0}p^{-9/2}
+\left[
+1+\frac{-35R/4-239u/40}{p}+O_{R,u}(p^{-2})
+\right].
+}
+$$
+
+The last component is proved through the exact inverse factorization; it is not inferred from the much larger error in the full vector.
+
+Also,
+
+$$
+\boxed{
+p^3s_4^2=\frac{32R}{3}+\frac{176R^2}{9p}
++O_{R,u}(p^{-2}).
+}
+$$
+
+For a fixed nonzero scalar row \(L\) and fixed \(\tau>0\), consider
+
+$$
+L\exp(-\tau p^3O^*O)L^*.
+$$
+
+Its complete hierarchy is:
+
+$$
+\begin{array}{c|c|c}
+\text{first nonzero original observation}&
+\text{rescaling power}&
+\text{limiting coefficient}\\ \hline
+Lv_0&0&|Lv_0|^2\\
+Lw_0\quad(Lv_0=0)&2&
+\frac{81R^2}{16}|Lw_0|^2\\
+Le_Y\quad(Lv_0=Lw_0=0)&3&
+\frac{27R^3}{2}|Le_Y|^2\\
+Le_Z\quad\text{after the preceding vanish}&9&
+\frac{3538944R^3u^6}{25}|Le_Z|^2.
+\end{array}
+$$
+
+Every coefficient is multiplied by
+
+$$
+e^{-(32R/3)\tau}.
+$$
+
+The four tests are exhaustive because \(v_0,w_0,e_Y,e_Z\) span the original label space. There is no assertion at \(\tau=0\).
+
+The integrated exterior fixed-\(c\) family has last observation power \(15\). That result remains correct on its own source. The middle family’s last inverse-column scale is \(p^{-3}\), rather than \(p^{-6}\), and its corresponding normalized observation power is \(9\).
+
+## 5. All three inverse exponents are sharp on hard middle witnesses
+
+The preceding family has actual prime members. Take
+
+$$
+\boxed{R=11,\qquad u=9,\qquad p\equiv8401\pmod{9240}.}
+$$
+
+The progression is reduced, lies in \(1\bmod840\), and supplies
+
+$$
+11\mid p+36,\qquad
+3\mid a=(p+11)/4.
+$$
+
+Hence \(9\mid a^2\), and every prime in the progression gives the original M witness above. Dirichlet’s theorem applies after these reducedness and availability checks (Sutherland, 2017, Theorem 18.1). ([MIT Mathematics][2])
+
+Thus, already on middle witnesses in the hard class,
+
+$$
+p^{-3/2}\|O^{-1}\|_2
+\longrightarrow\sqrt{\frac3{352}}>0,
+\qquad
+\|\wedge^2O^{-1}\|_2\longrightarrow\frac12.
+$$
+
+The powers \(p^{3/2}\) and \(p^0\) cannot be improved uniformly there.
+
+For the third compound, use the different reduced progression
+
+$$
+\boxed{p\equiv4201\pmod{9240},\qquad s=\frac{p+1}{11}.}
+$$
+
+It gives the original middle state
+
+$$
+(h,r,s,\lambda)=(3,1,s,1),
+$$
+
+with sorted denominators
+
+$$
+\boxed{(a,Y,Z)=(3s,3p,3ps).}
+$$
+
+The initial prime \(4201\) gives
+
+$$
+(1146,12603,4814346).
+$$
+
+The three small literal root ratios tend to
+
+$$
+1,\qquad 3/11,\qquad3.
+$$
+
+Their leading receiver coefficient matrix is
+
+$$
+\boxed{
+C_*=
+\begin{pmatrix}
+i\sqrt{11}/4&11\sqrt{15}/60&\sqrt{165}/30\\
+-4\sqrt{11}/11&-4i\sqrt{15}/11&-2i\sqrt{165}/11\\
+-8i\sqrt{11}/11&24\sqrt{15}/121&12\sqrt{165}/11
+\end{pmatrix},
+\quad
+\det C_*=\frac{2896}{121}.
+}
+$$
+
+The complete compound calculation gives
+
+$$
+\boxed{
+p^{-1}\|O^{-1}\|_2
+\to\sqrt{\frac{286200}{360371}},
+}
+$$
+
+$$
+\boxed{
+\|\wedge^2O^{-1}\|_2
+\to\frac{\sqrt{2968784}}{2896},
+\qquad
+p^2\|\wedge^3O^{-1}\|_2
+\to\frac{121}{2896}>0.
+}
+$$
+
+The last limit proves sharpness of the inherited \(p^{-2}\) exponent on hard middle witnesses.
+
+The current repository already contains the exterior \(c=29\) family in the hard progression \(3361\bmod24360\). I have not re-presented that family as new. The present extension establishes the three exponents on the **middle** domain, with different original states and constants.
+
+Nor does this settle optimality on the narrower image of the mixed trace-return map. For example, the fixed-residual family at \(p=26881\) has
+
+$$
+a=6723=3^4\cdot83,\qquad
+(Y,Z)=(16451172,12289025484),
+$$
+
+and the complete fibre theorem proves that its mixed-source fibre is empty. An infinite supply of carrier-prime preimages has not been assumed.
+
+## 6. What the continuation establishes
+
+The corrected GitHub composite now has its formerly missing arithmetic fibre classification. It is possible to determine exactly whether a supplied sorted M target came from an E trace, an M trace, both, or neither—and to reconstruct every original input and its coefficient multiplicity.
+
+The receiver side now has sharp middle-domain growth on the hard prime classes, including the full observation hierarchy and the actual small-coordinate asymptotics. Fixed metric changes retain their matrix factors; no Euclidean estimate is silently assigned to a moving conductor metric.
+
+The remaining universal assertion is still upstream:
+
+$$
+\boxed{
+\forall p\text{ hard prime},\qquad
+\text{some original E or M source is occupied}.
+}
+$$
+
+A complete inverse on existing fibres and sharp conditioning of their receivers do not establish that assertion. The current workbench makes the same distinction between post-witness receiver control and initial-source occupancy.
+
+## Verification and delivery
+
+The exact arithmetic replay covers
+
+$$
+\boxed{
+143\text{ primes }p\equiv1\pmod{24}\text{ through }10000,
+}
+$$
+
+$$
+\boxed{
+171732\text{ shells},\qquad5616298\text{ original divisor words}.
+}
+$$
+
+Among the 1,955 distinct sorted M targets, the complete mixed return reaches **490**. Its source contains **1,134 unique ordered inputs**: 656 E-origin and 478 M-origin inputs. There are **28 cross-origin targets**, **156 reached targets without any permitted \(t=1\) source**, and exact kernel rank
+
+$$
+1134-490=644.
+$$
+
+The count uses one existing orientation per M word and a separate swap bit for E. It does not count redundant interface calls as different rational inputs.
+
+The arithmetic verifier completed 11,235 explicit checks. The spectrum checker completed 2,003 exact checks, including all leading compound minors and first-jet tests. The separate arithmetic implementation, importing neither the main program nor predecessor code, completed 15,265 checks and reproduced every source fibre.
+
+```sh
+python run_all.py --bound 10000 --directory reproduced
+```
+
+[Public fibre inverse](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/fibres.py) · [Arithmetic verifier](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/verify_fibres.py) · [Spectrum verifier](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/verify_spectrum.py) · [Separate checker](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/check_independent.py) · [JSON certificates](sandbox:/mnt/data/ES_Turn7_Fibres_Middle_Spectrum_Certificates_20260922.zip)
+
+The finalized archive was extracted afresh. All **28 manifest entries** were verified; all **six mathematical JSON files** reproduced byte-for-byte in ordinary and optimized execution. Both PDFs rebuilt with identical extracted text and rendered pixels across all **twelve pages**. The finite spectrum checks corroborate the written analytic derivation; they are not substituted for it.
+
+[Reading and correction ledger](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/READING_AND_DELTA.md) · [Typed maps and fibres](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/MORPHISMS.md) · [Remaining Turn 7 obligation](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/HANDOFF_TURN_7_REMAINDER.md) · [Lean-ready plan](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/lean_plan.md) · [Preprint source and page PNGs](sandbox:/mnt/data/ES_Turn7_Fibres_Middle_Spectrum_Preprint_20260922.zip)
+
+No remote PR was created. GitHub reads succeeded, but no creation or push action was exposed, and direct Git access failed DNS resolution. The local source-only record is
+`d7aff0eb20a1b83bc933bf97f76671b51642aa3c`, adding sixteen paths and deleting none. Its patch was replayed against a fresh source-record tree; it is not represented as a commit parented to the upstream revision.
+
+[Additive patch](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/integration.patch) · [Git bundle](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/source_history.bundle) · [Publication receipt](sandbox:/mnt/data/es_turn7_fibres_middle_spectrum_20260922/publication_receipt.json)
+
+The cumulative archive preserves the supplied predecessor byte-for-byte and adds this pinned continuation; it is not a full clone or a renewed audit of the updated repository. No universal ES theorem, historical-priority determination, independent human review or Lean build is claimed.
+
+[1]: https://arxiv.org/abs/1107.1010 "https://arxiv.org/abs/1107.1010"
+[2]: https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf"

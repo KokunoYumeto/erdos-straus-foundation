@@ -1,0 +1,24 @@
+{
+  "bound": 10000,
+  "checks": 11235,
+  "counts": {
+    "cross_channel_targets": 28,
+    "empty_target_fibres": 1465,
+    "image_targets": 490,
+    "kernel_rank": 644,
+    "ordered_mixed_E": 656,
+    "ordered_mixed_M": 478,
+    "oriented_M_states": 3910,
+    "original_divisor_words": 5616298,
+    "proper_ordered_mixed_E": 212,
+    "proper_ordered_mixed_M": 148,
+    "shells": 171732,
+    "targets_without_t1_source": 156
+  },
+  "independent_human_review": false,
+  "primes": 143,
+  "source_key_sha256": "1f274a0ca1b1771ad107aff9ded306a9c4b1b7535235cb39431501261396ea76",
+  "success": true,
+  "target_count": 1955,
+  "universal_ES_proved": false
+}

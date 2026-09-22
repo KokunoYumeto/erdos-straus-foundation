@@ -1,0 +1,13 @@
+{
+  "all_M_targets": 1955,
+  "bound": 10000,
+  "checks": 15265,
+  "cross_channel_targets": 28,
+  "image_targets": 490,
+  "imports_no_main_or_predecessor_code": true,
+  "ordered_sources": 1134,
+  "source_key_sha256": "1f274a0ca1b1771ad107aff9ded306a9c4b1b7535235cb39431501261396ea76",
+  "success": true,
+  "targets_without_t1_source": 156,
+  "universal_ES_proved": false
+}

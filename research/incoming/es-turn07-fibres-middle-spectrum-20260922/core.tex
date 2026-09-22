@@ -1,0 +1,670 @@
+\section{Pinned basis, corrections, and scope}
+This continuation starts from the integrated repository revision
+\begin{center}\small\ttfamily b6825f8faafff4539f93eae9c4ccb9749b32a855\end{center}
+The current mixed-trace proof and its corrected receiver composite were read
+before the constructions below \citep{Mixed,Composite}. The sharp receiver
+proof, its ES1--ES15 derivation and its ES16--ES37 continuation were also read
+\citep{Sharp,EScont}. The actual changes matter: the automatic E-to-M
+ordered denominators are $(HsJ,pHJr,pHsr)$; the input of a proper trace is
+rational, not already an integral receiver input; the returned cofactor is
+not necessarily its residual; the full receiver frame has sixteen choices
+of signs, rather than eight choices of complete frames. The published
+composite explicitly leaves the bare sorted M-origin fibre unclassified.
+
+We complete that fibre, including cross-channel collisions. We then derive
+middle-channel receiver asymptotics and two infinite prime families in the
+hard class $1\pmod{840}$. They prove optimality of all three inherited inverse
+exponents on that narrower middle domain. We do not claim optimality on the
+still smaller image of the mixed-source map. In particular, the already
+published ES16--ES17 exterior family with $c=29$ and
+$p\equiv3361\pmod{24360}$ is not a new result of this note.
+Neither conclusion proves that a witness exists for every prescribed prime.
+
+\section{The original source and its corrected return}
+Let $p\equiv1\pmod{24}$ be prime. The mixed source consists of
+$a=cq$, $c\mid6$, $q>3$ prime, $p/4<a<p/2$, and every positive rational
+ordered pair $y,z$ satisfying $4/p=1/a+1/y+1/z$ and $y+z\in\mathbb Z$.
+The pair $(c,q)$ is unique. Put $R=4a-p$. Retain an E word and an exterior
+swap bit, or an M word with its existing orientation:
+\[
+ u\mid a^2,\qquad g=\gcd(a,u),\qquad
+ (h,r,s)=(g^2/u,u/g,a/g),\quad a=hrs,\quad u=hr^2.
+\]
+The two rational tails and quotients are
+\begin{align}
+ E:&\quad (hs\kappa,phr\kappa),&\kappa&=(pr+s)/R,\label{eq:Es}\tag{1E}\\
+ M:&\quad (phs\lambda,phr\lambda),&\lambda&=(r+s)/R.\label{eq:Ms}\tag{1M}
+\end{align}
+Their sum is integral exactly when $R\mid G^2$, for $G=4u+1$ and $G=p+4u$
+respectively. Their common denominator is $R/\gcd(R,G)$. The exact gates
+require $R\mid G$. These coordinates are the inherited Type I/II framework
+\citep[\S2, Propositions 2.2 and 2.6]{ET}.
+
+For completeness, write $N=y+z$. Reduced denominators coincide at $d$,
+and $yz=Npa/R$ gives $d^2=R/\gcd(R,N)$. Thus
+$Ry-pa,Rz-pa$ are positive integers with product $(pa)^2$.
+Their $p$-valuation pairs $(0,2),(1,1),(2,0)$ recover exactly (1E)--(1M),
+including the E swap. Primewise gcd normalization gives the unique displayed
+$h,r,s$. This proves completeness before the full gate is imposed.
+
+The mixed return $\rho$ in \citet{Mixed} has the following exact form.
+Write $R=\delta t^2$ with $\delta$ the positive squarefree part (odd
+exponents retained). For an E input, its carrier character forces $rs\mid6$.
+Set
+\[
+ H=\frac{\delta+1}{4rs},\qquad J=\frac{pr+s}{\delta}.
+\]
+The resulting middle state is $(h_M,r_M,s_M,\lambda_M)=(H,s,J,r)$.
+Since $J\ge r+s>s$, its bare sorted image is
+\begin{equation}\label{eq:forwardE}
+ \rho_E=(p;HsJ,pHsr,pHJr).
+\end{equation}
+For an M input, its carrier exponent is zero or two. Choose the small word
+$u_0=u$ or $a^2/u$ accordingly, so $u_0\mid c^2\mid36$.
+At $a'=(p+\delta)/4$ use the full M word $u_0$, then sort the tails.
+The remembered complement restores the ordered version before sorting.
+The primewise character and unit-square proofs of these returns are those
+of \citet[\S\S2--5]{Mixed}; only the formulas just stated are inputs below.
+
+No independent orientation bit is added to an M word: $u$ and $a^2/u$
+already encode its two ordered tails. An E word instead has its separately
+retained swap bit. This convention prevents artificial factors of two in
+all fibre counts.
+
+\section{The full bare sorted fibre}
+Let $W=(p;a,Y,Z)$ be any existing sorted middle witness, with
+$a<p<Y<Z$ and $2\le Y/p<Z/p$.
+Recover its unique primitive orientation by
+\[
+ b=Y/p,\quad c=Z/p,\quad g=\gcd(b,c),\quad
+ r=b/g<s=c/g,\quad h=a/(rs),\quad\lambda=g/h.
+\]
+Then
+\begin{equation}\label{eq:target}
+ a=hrs,\quad Y=phr\lambda,\quad Z=phs\lambda,
+ \quad R=4a-p=(r+s)/\lambda.
+\end{equation}
+Define the literal carrier test
+\[
+ \operatorname{Car}(A)\iff
+ \exists c\in\{1,2,3,6\}:c\mid A,\ A/c>3\text{ prime}.
+\]
+It returns a unique $(c,q)$ when true. Primality is a finite exact test,
+not an assumed supply condition.
+For an integer $n=\prod_\ell\ell^{e_\ell}$, also write
+\[
+ K(n)=\prod_\ell\ell^{\lceil e_\ell/2\rceil};
+\]
+this is the least positive integer with $n\mid K(n)^2$.
+
+Put $\delta_E=4hr\lambda-1$. Define $\mathcal I_E(W)$ to be empty unless
+$r\lambda\mid6$ and $\delta_E$ is squarefree. Otherwise it is exactly
+\begin{equation}\label{eq:Efibre}
+ \left\{t\mid\operatorname{oddpart}(s):
+  \delta_Et^2<p,\quad
+  \operatorname{Car}\left(\frac{p+\delta_Et^2}{4}\right)\right\}.
+\end{equation}
+Also set
+\[
+ \mathcal V(W)=\{hr^2,hs^2\}\cap\operatorname{Div}(36).
+\]
+For $\nu\in\mathcal V(W)$, define $\mathcal I_{M,\nu}(W)$ to be empty
+unless $R$ is squarefree.  The two possible seeds obey
+\[
+ \frac{p+4hr^2}{R}=4hr\lambda-1,
+ \qquad
+ \frac{p+4hs^2}{R}=4hs\lambda-1.
+\]
+Consequently, for every $\nu\in\mathcal V(W)$ the quantity
+$A_\nu=(p+4\nu)/R$ is a positive odd integer.  If $R$ is squarefree, use
+\begin{equation}\label{eq:Mfibre}
+ \left\{t\mid A_\nu:\ Rt^2<p,\quad
+  a_t=\frac{p+Rt^2}{4}=c_tq_t,\quad c_t\mid6,
+  \ q_t>3\text{ prime},\quad \nu\mid c_t^2\right\}.
+\end{equation}
+All such $t$ are odd. The final budget is retained explicitly even where it
+also follows from the other integer conditions.
+
+\begin{theorem}[Complete bare fibre]\label{thm:fibre}
+The complete ordered rational mixed-source fibre of $W$ is the disjoint union
+of the following records.
+For each $t\in\mathcal I_E(W)$, set
+\[
+ R_t=\delta_Et^2,\quad a_t=(p+R_t)/4,\quad
+ (h_t,r_t,s_t)=\left(\frac{a_t}{r\lambda},\lambda,r\right),
+ \quad u_t=h_t\lambda^2.
+\]
+Take both original E tail orders. For each
+$\nu\in\mathcal V(W)$ and $t\in\mathcal I_{M,\nu}(W)$, take the two M words
+\[
+ R_t=Rt^2,\quad a_t=(p+R_t)/4,\qquad
+ u_t=\nu\quad\hbox{or}\quad a_t^2/\nu.
+\]
+Thus, exactly,
+\begin{equation}\label{eq:fibrecount}
+ n_W=|\rho^{-1}(W)|
+ =2|\mathcal I_E(W)|+
+ 2\sum_{\nu\in\mathcal V(W)}|\mathcal I_{M,\nu}(W)|.
+\end{equation}
+ Every original coordinate, prime exponent and ordering of each enumerated
+ preimage is recovered by these formulas and gcd normalization. The maps are
+ defined on arbitrary existing
+sorted M targets; an empty fibre is an allowed, completely decided result.
+\end{theorem}
+\begin{proof}
+In the E return (\ref{eq:forwardE}), the primitive target parameters force
+$(r_t,s_t)=(\lambda,r)$, $H=h$, $J=s$ and $\delta=\delta_E$.
+ The identity $p\lambda+r=\delta_Es$ follows directly from
+ (\ref{eq:target}). For the reconstructed source one has
+ \[
+  r(4u_t+1)=\delta_E(s+\lambda t^2),\qquad
+  \gcd(r,\delta_Et^2)=1.
+ \]
+ Indeed, $\delta_E\equiv-1\pmod r$ and
+ $t\mid s$ with $(r,s)=1$. Multiplication by the unit $r$ therefore shows
+ that the squared trace gate at $\delta_Et^2$ is equivalent to
+\[
+ \delta_Et^2\mid(\delta_Es)^2.
+\]
+At a prime of the squarefree $\delta_E$, this is
+$v_\ell(t)\le v_\ell(s)$; the same inequality holds at every other prime.
+Oddness gives exactly $t\mid\operatorname{oddpart}(s)$.
+Conversely, that divisibility gives the full squared gate. Since
+$4r\lambda\mid24$, $p\equiv1$ and
+ $\delta_E\equiv-1\pmod{4r\lambda}$. Moreover
+ $\lambda R=r+s$ and $(r,s)=1$ give $(s,r\lambda)=1$; hence
+ $t\mid\operatorname{oddpart}(s)$ gives $(t,4r\lambda)=1$. Every unit
+ modulo a divisor of $24$ has square one. Thus $t^2$ preserves
+ the source shell congruence. The displayed $h_t$ is integral, $u_t\mid a_t^2$,
+and (\ref{eq:forwardE}) returns $W$. The carrier test is precisely the extra
+restriction from the general automatic-ray source to the mixed source.
+
+In the M return the target residual is the squarefree part of the old
+residual. Its two possible original divisor orientations are exactly
+$hr^2,hs^2$. The small pre-complement word must be one of these and divide
+$c_t^2\mid36$, which gives $\nu$ and its displayed budget.  Put
+$N=p+4\nu=RA_\nu$.  Since $R$ is squarefree, the gate
+$Rt^2\mid N^2$ is equivalent prime by prime to $t\mid A_\nu$.
+For $\nu=hr^2$ or $hs^2$, respectively, $K(\nu)$ divides $hr$ or $hs$;
+hence $A_\nu\equiv-1\pmod{4K(\nu)}$.  Therefore $t$ is a unit modulo
+$4K(\nu)\mid24$ and $t^2\equiv1\pmod{4K(\nu)}$.  The explicit condition
+$\nu\mid c_t^2$ retains the literal carrier budget.
+
+For the complementary word $u_t'=a_t^2/u_t$, first
+$\gcd(a_t,R_t)=1$: a common divisor would divide $4a_t-R_t=p$ while
+$0<R_t<p$.  Since $u_t\mid a_t^2$, also $\gcd(u_t,R_t)=1$.  Thus
+\[
+ p+4u_t'\equiv a_tu_t^{-1}(p+4u_t)\pmod {R_t},
+\]
+and the multiplier is a unit.  The squared M gates for the complementary
+words are therefore equivalent.  The returned small word is $\nu$ at $a$,
+so its sorted target is $W$.
+
+Every source in either list is a positive rational trace by (1E)--(1M).
+Each list has the displayed inverse. Distinct $t$ give distinct old residuals.
+The two M words are different because one contains the carrier $q_t^2$ and
+the other does not. Different $\nu$ cannot duplicate an M source: its unique
+ $q_t$ determines which of $u_t,a_t^2/u_t$ is the small word. E and M sources
+are disjoint by the $p$-valuation pair of their original factor coordinates.
+The two E orders differ because equal tails would require $s_t=pr_t$, while
+$s_t\le a_t<p$. This proves disjointness and completeness.
+\end{proof}
+
+The formula is an executable finite inverse. In (\ref{eq:Efibre}) use
+$t^2\le(p-1)/\delta_E$; in (\ref{eq:Mfibre}) use
+$t^2\le(p-1)/R$. Every prime-factor occurrence in either divisor list is
+retained. There is no fixed-progression or subgroup-support replacement.
+
+\subsection{The missing section and channel collisions}
+The general-ray section $t=1$ need not be in the mixed source. At
+\[
+ W=(1009;255,24216,686120),
+\]
+the full bare fibre consists of the M words $9,11449$ at
+$a_t=321=3\cdot107$, $R_t=275$, $t=5$. The squarefree representative
+$a=255$ has no mixed carrier. Thus its fibre has two proper inputs and no
+$t=1$ member. The E-origin example
+\[
+ W=(1129;308,3387,1043196)
+\]
+has only the two E orientations at $a_t=417=3\cdot139$, $t=7$;
+ its would-be E-branch section has $a_t=285$, again outside the mixed domain.
+
+An actual hard-prime cross-channel collision is
+\[
+ W=(6841;1866,20523,12765306).
+\]
+It has the two E orientations at $a_t=u_t=1713=3\cdot571$ and the two M
+words $3,1160652$ at $a_t=1866=6\cdot311$. The four original source records
+produce the same bare sorted target, not four new targets.
+
+For fixed $p$, let $\mathcal S_p$ be the ordered mixed-source records and
+write $F_W=\rho^{-1}(W)$ for $W$ in the actual image. The undecorated free
+abelian pushforward
+\[
+ \Phi_p:\mathbb Z[\mathcal S_p]\longrightarrow
+ \mathbb Z[\operatorname{Im}\rho_p],\qquad e_T\longmapsto e_{\rho(T)},
+\]
+has kernel basis $e_T-e_{T_W}$ for
+$T\in F_W\setminus\{T_W\}$, where $T_W$ is chosen from that explicitly
+computed nonempty fibre. Its rank is $\sum_W(n_W-1)$. For the decorated map
+$e_{(T,\xi)}\mapsto e_{(W,\xi)}$, with all
+$\xi\in\Xi_W$, the rank is instead
+$16\sum_W(n_W-1)$. Neither section uses an unavailable $t=1$ source.
+
+Fix now one frame $\xi\in\Xi_W$. With
+$O(W,\xi):V_{\mathrm{labels}}\to E_{\mathrm{recv}}$, define
+\[
+ L_{W,\xi}:\bigoplus_{T\in F_W}V_{\mathrm{labels}}
+ \longrightarrow E_{\mathrm{recv}},\qquad
+ (v_T)_T\longmapsto O(W,\xi)\sum_Tv_T.
+\]
+For positive-definite Hermitian forms $G_T$, put
+$M_W=\sum_TG_T^{-1}$. The exact quotient Gram operator is
+\begin{equation}\label{eq:metricfibre}
+ Q_{W,\xi}=O(W,\xi)^{-*}M_W^{-1}O(W,\xi)^{-1}
+ =\left[O(W,\xi)M_WO(W,\xi)^*\right]^{-1}.
+\end{equation}
+The unique minimum-energy preimage of $z$ is
+\[
+ v_T=G_T^{-1}M_W^{-1}O(W,\xi)^{-1}z.
+\]
+For $G_T=I$, this becomes
+$v_T=n_W^{-1}O(W,\xi)^{-1}z$. This complex vector-space section is generally
+neither an integral coefficient section nor a choice of one arithmetic source.
+The formulas follow by a Lagrange multiplier or direct completion of the square;
+they change no original metric by decree.
+
+\input{figures/fibre_decomposition.tex}
+
+\section{A receiver matrix itself retains the target}
+Retain the literal roots $\ell=(p,a,Y,Z)$, $S=\sum\ell_j$ and
+\[
+ H(X)=-S^{-1}\prod_j(X-\ell_j),\quad A=-S^{-1},\quad
+ d_j=H'(\ell_j),\quad \xi_j^2d_j=1.
+\]
+The original receiver
+$O:V_{\mathrm{labels}}\longrightarrow E_{\mathrm{recv}}$, with its sixteen
+full-frame square-root choices, has
+columns
+\begin{equation}\label{eq:receiver}
+ O_{\cdot j}=\xi_j(1,-id_j,Ad_j^2+2\ell_jd_j,
+                  i(7\ell_j^2d_j-13d_j^2))^{\mathsf T}.
+\end{equation}
+Its invertibility on actual integral witnesses is the current global-sign
+and sharp-growth theorem, not an additional assumption \citep{Sharp}.
+
+\begin{proposition}[Fixed-prime target reconstruction]\label{prop:target}
+The map $(W,\xi)\mapsto(p,O)$ is injective on the marked target domain.
+Its explicit inverse is
+\begin{align}
+ \xi_j&=O_{0j},& d_j&=iO_{1j}/O_{0j},\label{eq:matrixreturn}\\
+ A&=\frac{O_{20}/O_{00}-2pd_0}{d_0^2},&
+ \ell_j&=\frac{O_{2j}/O_{0j}-Ad_j^2}{2d_j}.\notag
+\end{align}
+ The fourth row, sum normalization, square-root equations,
+ $d_j=A\prod_{k\ne j}(\ell_j-\ell_k)$ and the arithmetic domain give the
+ remaining exact consistency tests.
+\end{proposition}
+\begin{proof}
+All displayed denominators are nonzero. Dividing each receiver column by
+its retained first coordinate gives $d_j$ and then the affine expression in
+$A,\ell_j$. The known prime is the root with label zero, determining $A$.
+The remaining equations solve for each original root. Substitution into
+(\ref{eq:receiver}) proves both compositions. No unlabelled norm or singular
+spectrum has been used instead of the matrix.
+\end{proof}
+Thus Theorem~\ref{thm:fibre} also gives the complete arithmetic fibre of the
+bare fixed-prime receiver-valued composite for each selected square-root frame.
+The matrix recovers the returned sorted target and those four branches, not a
+unique choice among its $n_W$ arithmetic preimages. Root permutation and branch
+quotienting are not additional unrecorded identifications. This target
+reconstruction does not create a missing target.
+
+\section{A fixed-residual middle family and every first correction}
+Fix positive integers $R\equiv3\pmod4$ and $u>0$, with $\gcd(R,u)=1$. At the prime
+values satisfying the original conditions
+\[
+ a=(p+R)/4\in\mathbb Z,\qquad u\mid a^2,\qquad R\mid p+4u,
+\]
+retain the middle witness, sorted for sufficiently large $p$,
+\begin{equation}\label{eq:family}
+ (a,Y,Z)=\left(a,\frac{p(a+u)}R,\frac{pa(a+u)}{Ru}\right).
+\end{equation}
+The identity holds at every positive real parameter before these arithmetic
+tests; the asymptotic derivation below uses this exact rational family.
+For $p>4(R+u)$ the literal order is $a<p<Y<Z$, so the derivative signs
+and branch convention below already hold on an explicit half-line.
+Define
+\[
+ \alpha=\frac1{4R},\qquad \beta=\frac1{16Ru},\qquad
+ C=\sqrt{\frac3{16R}}.
+\]
+Take positive real $\xi_a,\xi_Y$, and
+$\xi_p=i/\sqrt{-d_p}$, $\xi_Z=i/\sqrt{-d_Z}$, in original label order.
+Then $\epsilon=A^2\prod_{i<j}(\ell_j-\ell_i)\prod_j\xi_j=1$.
+
+\begin{theorem}[Middle spectrum with first corrections]\label{thm:spectrum}
+For fixed $R,u$, as $p\to\infty$ along this exact family,
+\begin{align*}
+ s_1&=20\beta^3p^9\left[1+\frac{6R+14u/5}{p}+O_{R,u}(p^{-2})\right],\\
+ s_2&=2\alpha^2p^4\left[1+\frac{-R/2+19u/5}{p}+O_{R,u}(p^{-2})\right],\\
+ s_3&=\sqrt2 C p^{3/2}\left[1-\frac{41R}{12p}+O_{R,u}(p^{-2})\right],\\
+ s_4&=\frac{\sqrt2}{C}p^{-3/2}\left[1+\frac{11R}{12p}+O_{R,u}(p^{-2})\right],
+\end{align*}
+and
+\begin{equation}\label{eq:detexp}
+ \det O=80\alpha^2\beta^3p^{13}
+ \left[1+\frac{3R+33u/5}{p}+O_{R,u}(p^{-2})\right].
+\end{equation}
+In particular,
+\[
+ p^{-3/2}O^{-1}\longrightarrow\frac C2(-i,1,0,0)^{\mathsf T}e_0^*,
+\]
+\[
+ p^{-3/2}\|O^{-1}\|_2\to\sqrt{3/(32R)},\quad
+ \|\wedge^2O^{-1}\|_2\to\tfrac12,\quad
+ p^4\|\wedge^3O^{-1}\|_2\to4R^2.
+\]
+Every remainder is for fixed $R,u$. No claim uniform in unbounded $R,u$ is
+made, and a value of $p$ used in an analytic check is not thereby declared prime.
+\end{theorem}
+
+\subsection{The complete analytic matrix}
+Let $z=1/p$ and define
+\[
+ B(z)=\operatorname{diag}(1,p^{-3},p^{-4},p^{-6})O_p
+       \operatorname{diag}(p^{3/2},p^{3/2},1,p^{-3}).
+\]
+This is an explicitly compensated calculation, not an identification of the
+original norms under rescaling. Its inverse scaling is retained below.
+Directly from the rational roots and $H'$, the derivative expansions are
+\begin{align*}
+ d_p&=-C^2p^3[1-10R/(3p)+O(p^{-2})],&
+ d_a&= C^2p^3[1-R/(3p)+O(p^{-2})],\\
+ d_Y&=\alpha^2p^4[1-3R/p+O(p^{-2})],&
+ d_Z&=-\beta^2p^6[1+4R/p+O(p^{-2})].
+\end{align*}
+For example, the first coefficients of the three differences at the prime
+root are $-R/3,-3R+4u,2R+4u$, while the relative first coefficient of $S$
+is $2R+8u$. Their sum minus the latter is $-10R/3$.
+The same difference calculation gives the other three coefficients.
+
+After factoring these derivative leading terms out of the square roots,
+every remaining radical is analytic and equal to one at $z=0$. Every
+entry of $B$ then has a nonnegative integral valuation. Thus
+$B(z)=B_0+zB_1+O_{R,u}(z^2)$, where
+\[
+B_0=\begin{pmatrix}
+i/C&1/C&0&0\\
+-C&-iC&0&0\\
+-2iC&C/2&2\alpha^2&0\\
+13C^3&-13iC^3&-6i\alpha^3&20\beta^3
+\end{pmatrix},
+\]
+\[
+B_1=\begin{pmatrix}
+5Ri/(3C)&R/(6C)&0&0\\
+5RC/3&iRC/6&-i\alpha&0\\
+i(10RC/3-C^3/\beta)&5RC/12-C^3/\beta&(-R+4u)\alpha^2&-3i\beta^2\\
+7C-65RC^3&i(13RC^3/2+7C/16)&i(62R+56u)\alpha^3&(120R+56u)\beta^3
+\end{pmatrix}.
+\]
+These coefficients follow from $(1+ez)^{-1/2}=1-ez/2+O(z^2)$ and the four
+receiver polynomials in (\ref{eq:receiver}). Every original column, including
+its zero leading entries and next coefficient, is shown.
+An explicit analytic neighbourhood can be computed from the finitely many
+normalized numerator and denominator polynomials of the derivative units:
+for each $P(0)=1$ choose $\rho\le[4(1+\sum_{k>0}|[z^k]P|)]^{-1}$.
+Then $|P(z)-1|<1/4$ for $|z|\le\rho$. The chosen square-root branches are
+analytic there; continuity and $\det B_0\ne0$ give an inverse neighbourhood.
+The printed $O_{R,u}$ terms do not assert a uniform numerical neighbourhood.
+
+\subsection{Complete compound calculation and error control}
+One has $\det B_0=80\alpha^2\beta^3$. At exterior ranks $1,2,3,4$, the
+leading norms and their relative first coefficients are
+\[
+\begin{array}{c|c|c|c}
+ k&\text{power of }p&\text{leading norm}&\text{first coefficient}\\\hline
+1&9&20\beta^3&6R+14u/5\\
+2&13&40\alpha^2\beta^3&11R/2+33u/5\\
+3&29/2&40\sqrt2 C\alpha^2\beta^3&25R/12+33u/5\\
+4&13&80\alpha^2\beta^3&3R+33u/5
+\end{array}
+\]
+Here the first rank uses row 3, column $Z$. The second uses rows 2,3 and
+columns $Y,Z$. The third uses the complete row 1,2,3 on both triples
+$(p,Y,Z)$ and $(a,Y,Z)$; their leading squared norms are equal and their
+relative first coefficients are $-R/6+33u/5$ and $13R/3+33u/5$.
+Their average gives the displayed correction. The fourth uses
+$\operatorname{tr}(B_0^{-1}B_1)=3R+33u/5$.
+
+To check that no other minor changes those coefficients, the row powers of
+$O$ are $(0,3,4,6)$ and the column powers are $(-3/2,-3/2,0,3)$.
+Add the appropriate powers for each minor, reducing its order by at least
+one when its constant $B$-minor vanishes. At rank 1 all other entries are
+$O(p^6)$; at rank 2 all other entries are $O(p^{12})$; at rank 3 all other
+entries are $O(p^{13})$. The finite constant/linear minor table supplied
+in the certificate includes every row and column combination.
+The leading entry or leading row gives a lower bound for the operator norm;
+the full Frobenius norm gives the matching upper bound. The squares of the
+omitted entries contribute relative $O(p^{-2})$ or smaller. Thus the displayed
+first coefficients concern the entire exterior operators, not selected minors.
+Successive ratios of compound norms prove Theorem~\ref{thm:spectrum}.
+
+For a second direct calculation, put $z_0=B_0^{-1}e_0$ and
+$z_1=-B_0^{-1}B_1z_0$. They are exactly
+\[
+ z_0=(-iC/2,C/2,9R/8,576iRu^3/5)^{\mathsf T},
+\]
+\[
+ z_1=\left(-2iRC/3,-19RC/12,
+ \frac{3R(25R-228u)}{80},
+ \frac{24iRu^3(-1160R-717u)}{25}\right)^{\mathsf T}.
+\]
+Their defining equations verify all coordinates. The original inverse is
+\begin{equation}\label{eq:invscale}
+ O^{-1}=\operatorname{diag}(p^{3/2},p^{3/2},1,p^{-3})
+ B(1/p)^{-1}\operatorname{diag}(1,p^{-3},p^{-4},p^{-6}).
+\end{equation}
+In particular, its four first-column powers are $p^{3/2},p^{3/2},1,p^{-3}$,
+not the exterior fixed-$c$ family's $p^{3/2},p^{3/2},1,p^{-6}$.
+
+\section{The middle observation hierarchy is \texorpdfstring{$0,2,3,9$}{0,2,3,9}}
+Let $v_p$ be the right singular vector for $s_4(O)$, with its $a$ coordinate
+positive. Set
+\[
+ v_0=(-i,1,0,0)^{\mathsf T}/\sqrt2,\quad
+ w_0=(i,1,0,0)^{\mathsf T}/\sqrt2,\quad n_0=C/\sqrt2.
+\]
+Then
+\[
+ v_p=v_0-\frac{9R}{4p}w_0+
+ \frac{9R}{8n_0}p^{-3/2}e_Y+O_{R,u}(p^{-2}),
+\]
+and the two tail components have the stronger relative expansions
+\begin{align}
+ e_Y^*v_p&=\frac{9R}{8n_0}p^{-3/2}
+ \left[1+\frac{7R/4-38u/5}{p}+O_{R,u}(p^{-2})\right],\label{eq:tailsv}\\
+ e_Z^*v_p&=\frac{576iRu^3}{5n_0}p^{-9/2}
+ \left[1+\frac{-35R/4-239u/40}{p}+O_{R,u}(p^{-2})\right].\notag
+\end{align}
+To prove the last, small component rather than infer it from a larger vector
+error, divide (\ref{eq:invscale}) by $p^{3/2}$ and write
+\[
+ D(z)B(z)^{-1}E(z),\quad
+ D=\operatorname{diag}(1,1,z^{3/2},z^{9/2}),\quad
+ E=\operatorname{diag}(1,z^3,z^4,z^6).
+\]
+The right Gram has a simple leading eigenvalue $C^2/2$. Its complementary
+block equations give its top eigenvector proportional to
+$(1,O(z^3),O(z^4),O(z^6))$. Multiplication by $E$ leaves the coefficient
+$e_0+O(z^6)$. After return to label coordinates the vector is therefore
+$D(z)[B(z)^{-1}e_0+O(z^6)]$. Its norm is
+$n_0[1-11Rz/12+O(z^2)]$. Substitution of $z_0,z_1$ proves all displayed
+coefficients, including the relative error in the last coordinate.
+
+Also
+\[
+ p^3s_4^2=\frac{32R}{3}+\frac{176R^2}{9p}+O_{R,u}(p^{-2}).
+\]
+For every fixed nonzero scalar row $L$ and $\tau>0$, put
+$\mathcal H_p(\tau)=\exp(-\tau p^3O^*O)$. The complete hierarchy is
+\[
+\begin{array}{c|c|c}
+\text{successive original-label tests}&\nu&
+ \lim p^\nu L\mathcal H_p(\tau)L^*\,/\,e^{-(32R/3)\tau}\\\hline
+Lv_0\ne0&0&|Lv_0|^2\\
+Lv_0=0,
+Lw_0\ne0&2&(81R^2/16)|Lw_0|^2\\
+Lv_0=Lw_0=0,
+Le_Y\ne0&3&(27R^3/2)|Le_Y|^2\\
+Lv_0=Lw_0=Le_Y=0&9&(3538944R^3u^6/25)|Le_Z|^2
+\end{array}
+\]
+The four directions are a basis, so the tests exhaust every nonzero row.
+The other three heat eigenvalues are $O_{R,u}(e^{-c\tau p^6})$ for a
+positive constant at fixed $R,u$; their contribution stays negligible after
+these polynomial scalings. Convergence is locally uniform for
+$\tau\in(0,\infty)$, not at zero time. Fixed sign changes act in the actual
+label frame and transform the tests; phases cannot be replaced by moduli.
+
+\input{figures/middle_spectrum.tex}
+
+For fixed positive original metrics $G,Q$, the orthonormal representative
+$\widehat O=Q^{1/2}OG^{-1/2}$ has inverse
+$\widehat O^{-1}=G^{1/2}O^{-1}Q^{-1/2}$. Its leading rank-one limit follows from
+Theorem~\ref{thm:spectrum} with both factors retained. Writing
+$a_0=C(-i,1,0,0)^{\mathsf T}/2$, the limiting small energy is
+$[(a_0^*Ga_0)(e_0^*Q^{-1}e_0)]^{-1}$.
+A conductor replaces $Q$ by its actual pullback; neither unitary transport
+nor uniform moving-metric constants are inferred. The detailed fixed-metric
+method is inherited from ES33--ES37 in \citet{EScont}.
+
+\section{All three upper exponents are sharp on hard middle witnesses}
+The current uniform theorem gives, with $\gamma=80/6279^4$, the M bounds
+\[
+ \|O^{-1}\|_2<\frac{224}{\gamma}p\sqrt w,
+ \quad \|\wedge^2O^{-1}\|_2<\frac{180}{\gamma},
+ \quad \|\wedge^3O^{-1}\|_2<\frac{41}{4\gamma p^2},
+ \qquad w=p/(4a-p)\le p/3
+\]
+\citep[Theorem 1.1 and middle cofactor proof]{Sharp}.
+We now restrict optimality to actual middle states at $p\equiv1\pmod{840}$.
+
+\subsection{First hard progression}
+Choose $R=11,u=9$ and primes
+\[
+ p\equiv8401\pmod{9240}.
+\]
+They satisfy $p\equiv1\pmod{840}$, $p+36\equiv0\pmod{11}$ and
+$3\mid a=(p+11)/4$, so every member has the original M state
+(\ref{eq:family}). The residue is coprime to $9240$, hence Dirichlet's theorem
+supplies infinitely many such primes
+\citep[conclusion at source lines 1257--1265]{DirichletOriginal}; see also
+\citet[Theorem 18.1, p.~1]{Dirichlet}.
+Theorem~\ref{thm:spectrum} proves positive limits at inverse scales
+$p^{3/2}$ and $1$ for its first and second compounds. Its initial prime sample
+$p=26881$ has $a=6723=3^4\cdot83$, $R=11$, $u=9$. It has no mixed input
+fibre: $r\lambda=68$ excludes the E list, and $(p+36)/11=2447$ is prime,
+so only $t=1$ fits the M cutoff, with an unavailable mixed carrier. This is
+a concrete reason not to assign these optimality claims to the narrower image.
+
+\subsection{Second hard progression}
+For primes
+\[
+ p\equiv4201\pmod{9240},\qquad s=(p+1)/11,
+\]
+use the original M state
+\[
+ (h,r,s,\lambda)=(3,1,(p+1)/11,1),\qquad
+ (a,Y,Z)=(3s,3p,3ps).
+\]
+The residue is again coprime to the modulus and is $1\pmod{840}$.
+The identity is immediate from $p=11s-1=12s-s-1$, and the denominators
+are sorted for these primes. Put $\gamma_0=3/11$. The three small root
+ratios are $1,3/11,3$ and the large root is
+$Z=\gamma_0p^2[1+O(p^{-1})]$.
+The derivative leading coefficients at those small roots are
+\[
+ D_0=-16/11,\qquad D_1=240/121,\qquad D_2=60/11.
+\]
+Take the same positive-real or positive-imaginary branch convention according
+to their signs. In rows $0,1,2$, the three core columns, after the respective
+row powers $p^{-1},p,p^2$, have the matrix
+\[
+ C_*=
+ \begin{pmatrix}
+ i\sqrt{11}/4&11\sqrt{15}/60&\sqrt{165}/30\\
+ -4\sqrt{11}/11&-4i\sqrt{15}/11&-2i\sqrt{165}/11\\
+ -8i\sqrt{11}/11&24\sqrt{15}/121&12\sqrt{165}/11
+ \end{pmatrix}.
+\]
+Its last row has squared norm $2968784/14641$, the exterior norm squared
+of its last two rows is $73267200/161051$, and
+$\det C_*=2896/121$. These constants follow by the displayed three-by-three
+products; their Gaussian-rational, square-root-cancelled versions are in the
+certificate.
+
+The first prime in this progression is $p=4201$, giving
+$(a,Y,Z)=(1146,12603,4814346)$. Its mixed-source fibre has exactly the two
+M words $3$ and $437772$; this finite occupancy is not used to infer occupancy
+for the progression.
+
+The original $Z$ column has last entry
+$20\gamma_0^3p^6[1+O(p^{-1})]$. Its other entries are of orders
+$p^{-2},p^2,p^4$, while the three core columns have orders
+$p^{-1},p,p^2,p^3$. Thus the complete leading compound constants are
+\[
+20\gamma_0^3p^6,
+\quad20\gamma_0^3\sqrt{2968784/14641}\,p^8,
+\quad20\gamma_0^3\sqrt{73267200/161051}\,p^9,
+\quad20\gamma_0^3(2896/121)p^8.
+\]
+For ranks two and three, all the entries involving the leading $Z$ last
+coordinate form one row, with respectively all core row-2 entries and all
+core rows-1,2 minors. Every other term is of lower power. For rank four,
+eliminating the $Z$ column changes the core rows only in lower powers.
+The same operator/Frobenius comparison therefore proves
+\begin{equation}\label{eq:endlimits}
+ p^{-1}\|O^{-1}\|_2\to\sqrt{286200/360371},\quad
+ \|\wedge^2O^{-1}\|_2\to\frac{\sqrt{2968784}}{2896},\quad
+ p^2\|\wedge^3O^{-1}\|_2\to\frac{121}{2896}.
+\end{equation}
+All constants are nonzero. Along the two reduced prime progressions, these
+limits prove that no smaller power than $p^{3/2}$, no decaying bound replacing
+$O(1)$, and no faster power decay than $p^{-2}$ is possible in the inherited
+three uniform estimates, already on hard middle witnesses.
+This does not assert prime-carrier preimages for these families; their
+membership in the narrower image of $\rho$ is determined separately by
+Theorem~\ref{thm:fibre}. No unproved simultaneous primality condition is used.
+
+\section{Verification, source boundaries, and the remaining theorem}
+The main arithmetic replay enumerates all original first-half divisor words
+at primes $p\equiv1\pmod{24}$ through 10000. It computes all sorted M targets
+and compares their formula (\ref{eq:fibrecount}) fibres, including empty fibres,
+against the full forward mixed source. The separate checker imports neither
+it nor any predecessor code; it uses positive factor pairs of $(pa)^2$ for
+rational inputs and primitive $h,r,s$ enumeration for integral targets.
+The exact receiver jets are independently expanded from their literal
+rational formulas in standard-library Gaussian-rational Laurent arithmetic;
+all leading-compound positions are retained. For the second hard family, the
+checker verifies the entered leading $x,D$ data and resulting constants,
+while the written calculation derives those data, the sign and the dominance
+from the full $p$-dependent receiver. The parameter-grid checks corroborate the
+written analytic derivation, not an extrapolated prime theorem.
+\begin{verbatim}
+python run_all.py --directory reproduced
+python fibres.py --target 1009 255 24216 686120
+\end{verbatim}
+The executed counts, commands and hashes are recorded in the receipts.
+There is no independent human mathematical review or Lean build.
+
+The completed source-fibre calculation repairs no false universal claim:
+it fills exactly the explicit M-origin gap left by the corrected composite.
+The hard-prime middle asymptotics refine a post-witness result; they do not
+reverse receiver invertibility into original source occupancy.
+The still-unproved statement remains that every prescribed hard prime has
+an original E or M state. Neither a nonempty mixed fibre at every M target,
+nor a mixed source at every prime, is asserted. The programme remains at
+Turn~7 on that existence obligation.

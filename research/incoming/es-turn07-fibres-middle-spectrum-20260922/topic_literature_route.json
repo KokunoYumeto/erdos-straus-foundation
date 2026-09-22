@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-22",
+  "index_entrypoint_id": "LITERATURE-INDEX-ENTRYPOINT-20260829-0001",
+  "queries": [
+    {
+      "layer": "research_literature",
+      "query": "There are infinitely many prime numbers in all arithmetic progressions",
+      "role": "route the prime-progression dependency and recover the Erdős–Straus source unit"
+    },
+    {
+      "layer": "research_literature",
+      "query": "Counting number solutions Erdos Straus unit fractions",
+      "role": "route the Type I and Type II coordinate antecedent"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_unit_id": "PUBUNIT-1D778B56AC2B71BF35EB40F9",
+      "authors": ["Christian Elsholtz", "Terence Tao"],
+      "title": "Counting the number of solutions to the Erdős–Straus equation on unit fractions",
+      "version": "arXiv:1107.1010v6 / journal version",
+      "source_kind": "primary TeX",
+      "source_file": "egyptian-count18.tex",
+      "source_sha256": "b0469a67a737b7f4e77778310c87e22f5783ae9704f70aa55919a4a40104611c",
+      "section_structure_checked": true,
+      "content_read": [
+        "Section 2 introduction and algebraic surface, source lines 487-526",
+        "Description of Type I solutions and proof, source lines 528-564",
+        "Type II variety, map, description and proof, source lines 573-624"
+      ],
+      "used_for": [
+        "Type I/Type II divisibility patterns",
+        "unique six-coordinate normalization and tail-exchange symmetry",
+        "classical antecedent only; no universal occupancy imported"
+      ]
+    },
+    {
+      "canonical_unit_id": null,
+      "authors": ["P. G. L. Dirichlet"],
+      "translator": "Ralf Stephan",
+      "title": "There are infinitely many prime numbers in all arithmetic progressions with first term and difference coprime",
+      "version": "arXiv:0808.1408v2, English translation of the 1837 paper",
+      "source_kind": "primary TeX retained with the predecessor module",
+      "source_file": "literature/Dirichlet_1837_Stephan_arxiv_0808.1408v2/dirichlet.tex",
+      "source_sha256": "c7edc2c0ea0dd94a107845b3d0801bb346dbca90532670906def5525fc00549d",
+      "section_structure_checked": true,
+      "content_read": [
+        "Opening theorem statement, source lines 26-81",
+        "prime-modulus case, source lines 750-812",
+        "general composite-modulus conclusion, source lines 1257-1265"
+      ],
+      "used_for": [
+        "infinitely many primes in each of the two explicitly reduced classes modulo 9240"
+      ],
+      "index_note": "The exact retained TeX did not appear as its own canonical hit in the bounded query; this is recorded as a route gap rather than silently assigning an ID."
+    },
+    {
+      "canonical_unit_id": null,
+      "authors": ["Andrew V. Sutherland"],
+      "title": "Dirichlet L-functions, primes in arithmetic progressions",
+      "version": "MIT 18.785 Lecture 18 (2017)",
+      "source_kind": "authoritative modern lecture note, PDF-only in the used route",
+      "content_read": ["Theorem 18.1 and its hypotheses, page 1"],
+      "used_for": ["modern statement of the reduced-residue prime progression theorem"]
+    }
+  ],
+  "unresolved_literature_questions": [
+    "No prior source located in the routed corpus states the complete mixed-return fibre or the fixed-(R,u) receiver spectrum derived here.",
+    "No historical-priority claim is made from a bounded search."
+  ]
+}
