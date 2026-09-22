@@ -4,7 +4,7 @@
   "id": "polyclank:erdos-straus-foundation",
   "title": "Erdős–Straus Foundation",
   "collective": "The Clankers",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
   "overview": "WORKBENCH.md",
   "research_state": "RESEARCH_STATE.md",
@@ -335,10 +335,47 @@
       "received_source": "research/incoming/es-turn07-global-receiver-determinant-20260921/received/USER_HANDOFF.txt",
       "pinned_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6bdfce25724b95a4b30e97f0df69879a87793302/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex#L1-L488",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-22:sharp-receiver-growth",
+      "overview": "research/incoming/es-turn07-sharp-receiver-growth-20260921/README.md",
+      "proof": "research/incoming/es-turn07-sharp-receiver-growth-20260921/core.tex",
+      "appendices": [
+        "research/incoming/es-turn07-sharp-receiver-growth-20260921/relative_growth_ES1_ES15.tex",
+        "research/incoming/es-turn07-sharp-receiver-growth-20260921/relative_growth_ES16_ES37.tex"
+      ],
+      "reader": "output/pdf/ES_Sharp_Receiver_Growth_20260922.pdf",
+      "claims": "research/incoming/es-turn07-sharp-receiver-growth-20260921/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-sharp-receiver-growth-20260921/verify.py",
+        "research/incoming/es-turn07-sharp-receiver-growth-20260921/derivation/check_es.py"
+      ],
+      "scope": "Uniform sharp bounds for the literal receiver inverse and its second and third exterior powers on every positive integral witness at p=1 mod12; at most one inverse singular direction can diverge. Two p=13 mod24 prime families attain all three exponents over that full domain; optimality on the narrower p=1 mod24 image is not proved. In the enlarged space of four distinct positive labelled roots, the exact exceptional divisor has rank three with explicit kernel and cokernel and is disjoint from the integral witness locus; a fixed-c family gives all four first singular corrections and the scalar-observation powers 0,2,3,15. No witness-existence or zeta-zero theorem is asserted.",
+      "source_ledger": "research/incoming/es-turn07-sharp-receiver-growth-20260921/source_reading.json",
+      "pinned_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-sharp-receiver-growth-20260921/core.tex#L75-L636",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-22:mod24-ray-trace",
+      "overview": "research/incoming/es-turn07-mod24-ray-trace-20260922/README.md",
+      "proof": "research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex",
+      "receiver_composite": "research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex",
+      "reader": "output/pdf/ES_Mod24_Ray_Trace_and_Receiver_20260922.pdf",
+      "claims": "research/incoming/es-turn07-mod24-ray-trace-20260922/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-mod24-ray-trace-20260922/verify.py",
+        "research/incoming/es-turn07-mod24-ray-trace-20260922/check_independent.py",
+        "research/incoming/es-turn07-mod24-ray-trace-20260922/check_interface.py"
+      ],
+      "scope": "For p=1 mod24 and a=cq in the first-half range, with c|6 and q>3 prime, every positive rational ES tail pair with integral sum returns to an original integral middle witness at the same prime. The exterior ray deletion is classified exactly by k|R, d|k and k=1 mod 4rs; its universal guarantee holds on exactly nine primitive rays. Infinite reduced progressions obstruct that universal rule outside the nine rays but have separate ES witnesses. The returned witness composes with the literal receiver through exact branch coordinates, its computed information-loss fibres, separately retained square-root choices and quantitative bounds. Initial trace-source occupancy remains unproved.",
+      "source_ledger": "research/incoming/es-turn07-mod24-ray-trace-20260922/source_reading.json",
+      "received_archive": "research/incoming/es-turn07-mod24-ray-trace-20260922/RECEIVED_ARCHIVE.json",
+      "pinned_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex#L9-L464",
+      "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
-    "source": "research/incoming/es-turn07-global-receiver-determinant-20260921/HANDOFF_TURN_7_REMAINDER.md",
+    "source": "research/incoming/es-turn07-mod24-ray-trace-20260922/HANDOFF_TURN_7_REMAINDER.md",
     "unproved_statement_tex": "\\forall p\\text{ hard prime},\\quad \\text{at least one original E or M coefficient is positive}",
     "available_exact_forms": [
       "complete disjoint direct/cofactor middle atlas with O(sqrt(p)) small moduli",
@@ -391,6 +428,15 @@
       ,"global strict sign of the original odd-receiver numerator on every integral p=1 mod12 witness"
       ,"exact determinant phase and quantitative standard-Hermitian inverse bound"
       ,"unique collision-free receiver singularity in the exact positive-real counterdomain"
+      ,"sharp inverse and exterior-power growth bounds with only one potentially unbounded direction"
+      ,"exact rank-three receiver defect with kernel and cokernel hyperplane"
+      ,"two exponent-sharp integral prime families and a finite heat limit"
+      ,"all four fixed-c singular corrections and observation powers 0,2,3,15"
+      ,"complete primitive-ray deletion criterion with source and target inverses"
+      ,"exact nine-ray universal return and complete squarefree source fibres"
+      ,"mixed mod24 prime-shell trace return to an original integral middle witness"
+      ,"typed trace-return receiver composite with exact branch coordinates and bounds"
+      ,"infinite reduced progressions proving maximality of the universal ray rule"
     ],
     "excluded_shortcuts": [
       "a fixed prime-independent cutoff on original grades h and j",
@@ -433,6 +479,10 @@
       ,"asserting strict second-stage descent for an E complement whose exact denominator has already become one"
       ,"treating odd-receiver nonsingularity as existence of an original E or M source"
       ,"extending the integral receiver sign theorem to every positive-real reciprocal quartic"
+      ,"identifying the squarefree cofactor delta with the returned receiver residual R_M"
+      ,"dropping the retained square factor t when claiming an inverse to the ray return"
+      ,"extending the nine-ray universal guarantee to every primitive ray"
+      ,"reversing receiver invertibility into trace-source existence"
     ]
   },
   "records": {
@@ -444,7 +494,7 @@
     "human_motivations": "polyclank/motivations.json"
   },
   "coverage": {
-    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260921-007 are linked from their modules and the daily proof bulletin.",
+    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260922-007 are linked from their modules and the daily proof bulletins.",
     "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Later modules keep their own claims, proof locators and receipts; full claim-by-claim indexing of every historical edition is not asserted.",
     "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
   },

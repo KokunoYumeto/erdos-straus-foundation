@@ -1,13 +1,18 @@
 # Sharp inverse growth and finite heat limits for the ES receiver
 
-This module proves quantitative and asymptotic theorems for the literal
-four-label receiving map attached to an existing positive integral
-Erdős–Straus witness at a prime \(p\equiv1\pmod {12}\). It retains the
-ordered labels \((p,a,Y,Z)\), every square-root branch, the Euclidean source
-and target metrics, and the exact conductor factors. It does not assert that
-every prime has a witness.
+This module has two exact domains. Its arithmetic part proves quantitative and
+asymptotic theorems for the literal four-label receiving map attached to an
+existing positive integral Erdős–Straus witness at a prime
+\(p\equiv1\pmod {12}\). Its defect part extends the same map to four distinct
+positive labelled roots without imposing the reciprocal identity; the global
+sign theorem proves that the resulting rank-three divisor is disjoint from the
+positive integral witness locus. The module retains the ordered labels
+\((p,a,Y,Z)\), every square-root branch, the Euclidean source and target
+metrics, and the exact conductor factors. It does not assert that every prime
+has a witness.
 
-The complete readable paper is *preprint.tex*. Its first part proves uniform
+The [complete readable PDF](../../../output/pdf/ES_Sharp_Receiver_Growth_20260922.pdf)
+is built from *preprint.tex*. Its first part proves uniform
 bounds for every integral witness; the two continuation sections prove the
 exact inverse, the rank-three defect, uniform tail asymptotics, first
 corrections, heat limits, and fixed-metric/conductor transport.

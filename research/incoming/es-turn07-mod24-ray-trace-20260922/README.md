@@ -18,13 +18,20 @@ constructed ES solutions. This is not a conjectural counterexample.
 The exact composition with the literal four-label receiver is proved in
 *receiver_bridge.tex*. Every returned middle witness has a nonsingular receiver
 with explicit determinant, inverse, and exterior-power bounds. The composite
-retains the ray parameters, complement bit, tail permutations, and source
-fibre; it does not reverse receiver invertibility into source existence.
+uses the actual returned ray and shape parameters. Its decorated source records
+the complement bit, tail permutation, and source-fibre parameter, while the
+bare sorted map \(\rho\) forgets those marks; the lost fibre and its kernel are
+computed exactly on the E branch. For M inputs the proof gives the
+retained-\(t\) inverse but does not classify the complete bare \(\rho\)-fibre.
+Square-root choices are retained separately in the receiver pullback. The
+construction does not reverse receiver invertibility into source existence.
 
-Read *workbench.tex* and *core.tex* for all proofs, the complete trace fibres,
-scope, and negative controls. *preprint.tex* is a shorter standalone proof of
-the mixed source theorem. *MORPHISMS.md* gives each original coordinate
-transition.
+Read the [complete readable PDF](../../../output/pdf/ES_Mod24_Ray_Trace_and_Receiver_20260922.pdf),
+built from *workbench.tex*, and *core.tex* for all proofs, the complete
+automatic E-ray trace fibres, retained-\(t\) M inverse, scope, and negative
+controls. *preprint.tex* is a shorter standalone
+proof of the mixed source theorem. *MORPHISMS.md* gives each original
+coordinate transition.
 
 Reproduce all mathematical tables:
     python run_all.py --bound 10000 --directory reproduced

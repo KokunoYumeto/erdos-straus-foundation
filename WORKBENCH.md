@@ -156,6 +156,28 @@ for both original first-half channels:
   \(u\mid36\), and the CRT/Dirichlet construction proves that this fixed-word
   list is maximal even after the middle complement.  Explicit E/M endpoints
   keep the method obstruction separate from the conjecture itself.
+- [Sharp receiver growth, singular defect and finite heat](research/incoming/es-turn07-sharp-receiver-growth-20260921/README.md):
+  every integral witness at \(p\equiv1\pmod {12}\) has one potentially
+  unbounded inverse singular direction and three uniformly controlled
+  directions. Exact compound bounds give the optimal powers
+  \(p^{3/2},1,p^{-2}\) over this full domain; two
+  \(p\equiv13\pmod {24}\) prime families prove sharpness, without proving
+  optimality on the narrower \(p\equiv1\pmod {24}\) image. In the enlarged
+  distinct-positive-root space, the receiver's exceptional divisor has rank
+  exactly three with an explicit kernel and cokernel and is disjoint from the
+  positive integral witness locus, while the
+  fixed-\(c\) family supplies all four first corrections and the exhaustive
+  scalar-observation hierarchy.
+- [Modulo-24 mixed trace return and exact receiver composite](research/incoming/es-turn07-mod24-ray-trace-20260922/README.md):
+  every rational integral-trace source with \(a=cq\), \(c\mid6\), \(q>3\)
+  prime returns to an original integral middle state at the same
+  \(p\equiv1\pmod {24}\). The exterior deletion map has exact domain
+  \(k\mid R\), \(d\mid k\), \(k\equiv1\pmod{4rs}\), complete squarefree fibres, and a
+  universal guarantee on exactly nine primitive rays. Its typed composite
+  with the literal receiver retains the actual returned denominator order,
+  shape parameters, and square-root choices; it records the exact source
+  E-branch fibre and the information forgotten by the bare sorted map. The M
+  branch has a retained-\(t\) inverse, not a complete bare-fibre classification.
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
@@ -211,11 +233,24 @@ closes that post-witness receiver question while leaving initial source
 occupancy unchanged.  The [pinned complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6bdfce25724b95a4b30e97f0df69879a87793302/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex#L1-L488)
 contains the full arithmetic reduction, coefficient certificates, inverse and
 negative controls.
+The sharp-growth continuation resolves the quantitative question left by that
+sign theorem. It proves that only one inverse direction can become unbounded,
+finds the optimal compound exponents, calculates the exact singular defect and
+propagates the receiver through fixed metrics and conductors. This is still a
+post-witness theorem.
+The mod-$24$ trace continuation then supplies a source-changing map before the
+receiver. It proves an integral return on the stated mixed prime-shell trace
+domain and composes it with the sharp receiver without identifying their
+different source spaces. Its infinite obstruction says exactly that the
+universal ray-preserving rule stops outside the nine rays; it does not say that
+other source-changing maps or ES itself fail there.
 
 The [19 September bulletin](DAILY_RESULTS_20260919.md),
 [20 September bridge bulletin](DAILY_RESULTS_20260920.md), and
-[21 September arithmetic bulletin](DAILY_RESULTS_20260921.md) give stable result
-IDs and exact locators. They are mathematical indexes, not a programme chronology.
+[21 September arithmetic bulletin](DAILY_RESULTS_20260921.md), and
+[22 September receiver/trace bulletin](DAILY_RESULTS_20260922.md) give stable
+result IDs and exact locators. They are mathematical indexes, not a programme
+chronology.
 
 ## Failed steps that remain useful
 

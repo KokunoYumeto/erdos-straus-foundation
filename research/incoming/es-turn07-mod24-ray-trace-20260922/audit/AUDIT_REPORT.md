@@ -273,15 +273,15 @@ with
 
 \[
 R_M=\frac{s+J}{r},\qquad
-a_M=HsJ,qquad u_M=Hs^2,
+a_M=HsJ,\qquad u_M=Hs^2,
 \]
 
 and identities
 
 \[
-r_M+s_M=rR_M,qquad
-p+4u_M=\delta R_M,qquad
-4a_M-R_M=p,qquad 0<R_M<p.
+r_M+s_M=rR_M,\qquad
+p+4u_M=\delta R_M,\qquad
+4a_M-R_M=p,\qquad 0<R_M<p.
 \]
 
 Its correct denominators are `(HsJ,pHJr,pHsr)`.
@@ -301,7 +301,7 @@ beyond the listed size exclusions. With `R=\delta t^2`, `L=\operatorname{lcm}(84
 The resulting source
 
 \[
-h=\frac{p+R}{m},\qquad a=hrs,qquad u=hr^2
+h=\frac{p+R}{m},\qquad a=hrs,\qquad u=hr^2
 \]
 
 has exact defect `d=t`. The only deletion candidates are
@@ -451,13 +451,13 @@ and proves the quoted bounds for the inverse norm, exterior powers, determinant 
 For an automatic E-source middle output, since `J>s`, sort the returned tails as
 
 \[
-Y=pHsr,qquad Z=pHJr.
+Y=pHsr,\qquad Z=pHJr.
 \]
 
 Then the sharp-receiver parameters are
 
 \[
-b=Hsr,qquad c=HJr,qquad R=R_M,qquad w=p/R_M.
+b=Hsr,\qquad c=HJr,\qquad R=R_M,\qquad w=p/R_M.
 \]
 
 The accompanying returned E state has residual `\delta` and `w=p/\delta`. For an M-source squarefree output the residual is likewise `\delta` and `w=p/\delta`.

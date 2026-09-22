@@ -212,6 +212,33 @@ proof locators without reconstructing a programme timeline.
     \(\|O^{-1}\|_2<360S^9/(cp^8)\).  Its exact real counterdomain has one
     collision-free singularity outside both integral coordinate domains.
     [Pinned theorem and complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6bdfce25724b95a4b30e97f0df69879a87793302/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex#L1-L488).
+23. [Sharp receiver growth, exact defect, and finite heat limits](research/incoming/es-turn07-sharp-receiver-growth-20260921/README.md)
+    strengthens the global sign to uniform compound-inverse bounds
+    \(\|O^{-1}\|_2<360p\sqrt w/\gamma\),
+    \(\|\wedge^2O^{-1}\|_2<180/\gamma\), and
+    \(\|\wedge^3O^{-1}\|_2<41/(4\gamma p^2)\), where
+    \(\gamma=80/6279^4\).  Thus at most one inverse singular direction can
+    become unbounded.  Two actual prime families prove the exponents sharp;
+    the exact exceptional divisor in the enlarged distinct-positive-root
+    receiver space has rank three with explicit kernel and cokernel and is
+    disjoint from the integral witness locus. A fixed-\(c\) family supplies all four first singular
+    corrections and the scalar-observation powers \(0,2,3,15\).
+    [Readable PDF](output/pdf/ES_Sharp_Receiver_Growth_20260922.pdf); [pinned
+    main theorem and proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-sharp-receiver-growth-20260921/core.tex#L75-L636).
+24. [Modulo-24 mixed trace return and primitive-ray boundary](research/incoming/es-turn07-mod24-ray-trace-20260922/README.md)
+    starts with a positive rational trace source at a prime
+    \(p\equiv1\pmod {24}\) whose first denominator is \(a=cq\), with
+    \(c\mid6\) and \(q>3\) prime, and constructs an original integral middle
+    witness at the same prime.  The exterior branch has a complete
+    ray-preserving deletion criterion, nine automatic primitive rays, exact
+    squarefree fibres and an inverse retaining the old square factor.  Every
+    nonautomatic ray has an infinite reduced progression obstructing this
+    universal return rule, while a separately constructed middle witness
+    keeps that obstruction distinct from an ES counterexample.  The complete
+    trace-return/receiver composite has explicit domain, codomain, fibres,
+    determinant and exterior-power bounds.
+    [Readable PDF](output/pdf/ES_Mod24_Ray_Trace_and_Receiver_20260922.pdf);
+    [pinned mixed theorem and exact coordinates](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex#L9-L322).
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
@@ -263,6 +290,20 @@ explicit inverse bound.  The theorem is conditional only in the literal sense
 that it starts from an existing Erdős--Straus witness; it does not force the
 first occupied source at a prescribed prime.  The unique positive-real
 singularity and a failed-gate rational source record the two exact boundaries.
+The twenty-third continuation determines sharp inverse-side conditioning:
+at most one inverse singular direction can diverge, and an
+explicit prime family attains that growth. The
+three compound scales have sharp exponents, and the singular divisor in the
+enlarged distinct-positive-root space has an explicit rank-three defect and
+does not meet the integral witness locus. The fixed-\(c\) calculation then
+resolves every first correction and the finite heat hierarchy without changing
+the receiver or its label metric.
+The twenty-fourth continuation moves back upstream.  Its mixed trace theorem
+changes a rational source into an integral original witness on a specified
+prime-shell domain, and its exact composite then carries that witness into the
+now-controlled receiver.  The nine-ray theorem is maximal for the universal
+ray-preserving rule; this does not prove that a required trace source exists at
+each hard prime.
 After composing the earlier diagonal and radius-eight returns, every residual
 exterior state has shape radius at least nine. These results isolate, but do
 not prove, the remaining unbounded-shape occupancy statement. None asserts the
@@ -275,6 +316,9 @@ The [21 September proof bulletin](DAILY_RESULTS_20260921.md) gives stable IDs
 for the trace descent, complete arrow fibres, nine-word classification,
 optimality construction, global receiver sign, inverse bound and exact real
 counterdomain.
+The [22 September proof bulletin](DAILY_RESULTS_20260922.md) records the sharp
+receiver exponents, singular defect, first corrections, mixed trace return,
+nine-ray boundary, obstruction families and exact receiver composite.
 
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with

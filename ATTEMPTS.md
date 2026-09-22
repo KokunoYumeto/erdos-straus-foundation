@@ -355,6 +355,81 @@ original E or M state at every prescribed hard prime and therefore does not
 resolve ES.
 [Pinned complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6bdfce25724b95a4b30e97f0df69879a87793302/research/incoming/es-turn07-global-receiver-determinant-20260921/core.tex#L1-L488).
 
+## 17. Sharp conditioning, singular defect and finite heat
+
+**Aim:** determine the complete growth of the literal receiver inverse rather
+than retaining only the earlier determinant lower bound. **Reason for trying:**
+receiver nonvanishing does not identify how many directions can become badly
+conditioned, whether the inverse exponent is sharp, or what survives in a
+finite heat limit. **What was tried:** the original four labelled roots,
+derivative denominators, sixteen square-root choices and standard Hermitian
+norm were kept. Exact positive-coefficient margins were converted into bounds
+for every inverse compound, and two infinite prime families were expanded by
+their complete compound matrices. The exceptional divisor was calculated
+directly rather than discarded. **What happened:** with
+For every existing positive integral witness at a prime
+\(p\equiv1\pmod {12}\), put \(\gamma=80/6279^4\). Then
+
+\[
+\|O^{-1}\|_2<\frac{360}{\gamma}p\sqrt w,
+\quad
+\|\wedge^2O^{-1}\|_2<\frac{180}{\gamma},
+\quad
+\|\wedge^3O^{-1}\|_2<\frac{41}{4\gamma p^2}.
+\]
+
+Thus \(s_3(O)>\sqrt{\gamma/180}\), so at most one inverse singular
+direction can diverge. The family through \((13;4,18,468)\) attains inverse
+powers \(p^{3/2},1,p^{-4}\), while the family through \((13;5,10,130)\)
+attains \(p,1,p^{-2}\); together they prove optimality of all three uniform
+exponents. On \(\mathfrak h=0\) in the enlarged space of four distinct positive
+labelled roots, the receiver has rank exactly three, with explicit kernel and
+cokernel; the global sign theorem excludes this divisor from the positive
+integral witness locus. A fixed-\(c\) family gives first corrections
+\(18,-3/2,-41/4,11/4\), the refinement
+\(p^3s_4(O_p)^2=32+176/p+O_c(p^{-2})\), and the observation powers
+\(0,2,3,15\). **Successful scope:** exact inverse, compound bounds, sharp
+families, singular defect, metric/conductor transport and executable
+certificates. **Unfinished:** the uniform receiver bounds start from an
+existing witness, and no initial E/M source is produced at a prescribed hard
+prime. [Pinned main bounds and sharp families](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-sharp-receiver-growth-20260921/core.tex#L75-L636);
+[exact defect and large-\(w\) limits](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-sharp-receiver-growth-20260921/relative_growth_ES1_ES15.tex#L12-L135);
+[first corrections, observations and transport](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-sharp-receiver-growth-20260921/relative_growth_ES16_ES37.tex#L7-L212).
+
+## 18. Modulo-24 source-changing trace return
+
+**Aim:** move upstream from receiver control and turn a rational trace source
+into an original integral witness in the unresolved prime class.
+**Reason for trying:** the fixed-word residual-divisor map is maximal on nine
+words, but changing the numerical divisor while retaining the primitive ray
+preserves different information and can cross gates that fixed-word deletion
+misses. **What was tried:** every rational tail pair with integral sum was
+recovered in the original E/M coordinates, including orientation and
+complement bits. For an exterior source, every divisor deletion was classified
+by the exact simultaneous conditions
+\(k\mid R\), \(d\mid k\), and \(k\equiv1\pmod{4rs}\); squarefree fibres and their free-module
+kernel were computed. Prime-character parity at \(a=cq\), \(c\mid6\), then
+forced either one exterior carrier factor or a small middle word. Finally the
+returned witness was composed with the literal receiver through its actual
+ordered denominators and parameters. **What happened:** for every prime
+\(p\equiv1\pmod {24}\), every positive rational ES trace source with
+\(a=cq\), \(c\mid6\), \(q>3\) prime, returns an original middle witness at the
+same prime.
+The universal ray-preserving guarantee holds exactly on the nine ordered rays
+with \(rs\mid6\). For every other ray, a reduced CRT/Dirichlet progression
+produces infinitely many proper sources for which every ray-preserving return
+is absent; an independent middle construction solves ES on those primes.
+The decorated construction records the source fibre, tail orientation, and
+complement bit; the bare sorted receiver map forgets them and has the stated
+E-branch fibre kernel. The M branch has a retained-\(t\) inverse but no
+complete bare-fibre classification. Its pullback retains the square-root choices and gives the
+middle-specific bound \(\|O^{-1}\|_2<224p\sqrt w/\gamma\) together with the
+uniform compound bounds. **Successful scope:** a genuine source-changing
+theorem, maximal ray law, complete automatic E-ray fibres, infinite obstruction families and
+typed receiver composite. **Unfinished:** the theorem does not force its
+initial rational trace source to exist at every hard prime.
+[Pinned mixed theorem](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex#L9-L464).
+
 ## Keeping future attempts intelligible
 
 For each task or substantial route, retain a short account with these same fields:
@@ -365,5 +440,5 @@ than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
 The [machine records](polyclank/attempts.json) expose the earlier five fields
-separately. This page covers the sixteen routes above; it does not claim to have recovered
+separately. This page covers the eighteen routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.

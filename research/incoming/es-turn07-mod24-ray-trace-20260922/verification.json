@@ -56,8 +56,10 @@
   "pdf_build": {
     "command": "pdflatex -interaction=nonstopmode -halt-on-error workbench.tex (twice)",
     "returncode": 0,
-    "pages": 12,
-    "warnings": []
+    "pages": 11,
+    "warnings": [
+      "One pdfTeX font-expansion ordering warning; no unresolved references, overfull boxes, or underfull boxes"
+    ]
   },
   "universal_ES_proved": false,
   "universal_TypeII_proved": false,

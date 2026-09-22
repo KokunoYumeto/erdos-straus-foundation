@@ -1,0 +1,163 @@
+{
+  "entries": [
+    {
+      "bytes": 2510,
+      "path": "HANDOFF_TURN_7_REMAINDER.md",
+      "sha256": "95e49ff38accc66ce808fb25e26c90600a0f9abb7491b20271a2d30ce8a67434"
+    },
+    {
+      "bytes": 4924,
+      "path": "MORPHISMS.md",
+      "sha256": "46411f7cba45184d110e0d5dc21f241d1743add983ae176d53b4f3f5618cd962"
+    },
+    {
+      "bytes": 3791,
+      "path": "README.md",
+      "sha256": "e604bf2258efe6f67f1f21a2f53017f76f8091b903bc797e6128722b2248f72e"
+    },
+    {
+      "bytes": 1215,
+      "path": "RECEIVED_ARCHIVE.json",
+      "sha256": "052209b375e7d6f49f2c3084a29a11fb610ba5013aa184072b0cf0565b673582"
+    },
+    {
+      "bytes": 1227,
+      "path": "attempt.json",
+      "sha256": "cd5d66a6a126bf06e14055625812481695dbe15f21c0da856861f010efa6f060"
+    },
+    {
+      "bytes": 19706,
+      "path": "audit/AUDIT_REPORT.md",
+      "sha256": "069a7a35f092753efe951245b6a39949cbb03ed91e0a73180aa57d91e163d268"
+    },
+    {
+      "bytes": 1435,
+      "path": "build_manifest.py",
+      "sha256": "4ae74c4455b7220c671b554c425aca07e6fe4f97fed1676cf615c33166ec3852"
+    },
+    {
+      "bytes": 82602,
+      "path": "certificates/examples.json",
+      "sha256": "619c619839211960ecaf4a7a74704e2b579d5d4065bfa195df8c73700cd0303e"
+    },
+    {
+      "bytes": 1825,
+      "path": "certificates/independent.json",
+      "sha256": "ac700ba59bee61a22280326fe4e578b633a0467fe0619045e6626ece7549e282"
+    },
+    {
+      "bytes": 176,
+      "path": "certificates/interface.json",
+      "sha256": "c76ea57d4ba2f92cd9315467d5434318b143890bcade44aad38c731fa5b1774a"
+    },
+    {
+      "bytes": 10831,
+      "path": "certificates/progressions.json",
+      "sha256": "2c85975389382938e6796869e4f1faef5e67ab230a9eab55355744777372b7ef"
+    },
+    {
+      "bytes": 255367,
+      "path": "certificates/ray_fibres.json",
+      "sha256": "f7f6148b0e0c9af646d3c97e699f8506426da5f0c9b7cc13336f5d229509d132"
+    },
+    {
+      "bytes": 3183,
+      "path": "certificates/repair_example.json",
+      "sha256": "4174bde9cb1868c43bb6e98ff950e4a86673de5ef26677830473604efb6932ed"
+    },
+    {
+      "bytes": 4763547,
+      "path": "certificates/scan.json",
+      "sha256": "df20ef666797176ee68450462d8d5d841a0c148334fc742b34260f09ab487b11"
+    },
+    {
+      "bytes": 1073,
+      "path": "certificates/summary.json",
+      "sha256": "d5a11d05c73702dc3d4028379738a6a15eacc55dc9c948dbe3957ad0951d7917"
+    },
+    {
+      "bytes": 11179,
+      "path": "check_independent.py",
+      "sha256": "5fa3d455526d8342145ff016c27e0e1bad9bfc8344cd3fa1248930b63e73368b"
+    },
+    {
+      "bytes": 1891,
+      "path": "check_interface.py",
+      "sha256": "f6f8f3d1d2294f58a2e8730a6cc1a27d2ce7a458c824d89bf3792cc8373dd4b3"
+    },
+    {
+      "bytes": 2612,
+      "path": "claims.json",
+      "sha256": "e6309980140d62183bd74574bb0c20926d298ed8ee51e9ceda9e190bd7d3e339"
+    },
+    {
+      "bytes": 24449,
+      "path": "core.tex",
+      "sha256": "8303244f07387aac1c125b91a3a9a19c1d2d1fb8192aa301ac493305b102ef24"
+    },
+    {
+      "bytes": 2090,
+      "path": "figures/mod24_receiver_composite.tex",
+      "sha256": "61500275c1242f5056ea9de2b8a2708ee80d8c9a9d4bb8e7fa00a8d2d2ef87dc"
+    },
+    {
+      "bytes": 2727,
+      "path": "lean_plan.md",
+      "sha256": "c931ff5d8355560d1fff6b040f93592fd6ff4a6ad229af789f8f9419cf05a257"
+    },
+    {
+      "bytes": 8454,
+      "path": "preprint.tex",
+      "sha256": "b2fb9e7b549e10310c6b0a9d6b5fe6145f7ce66793d1d13ed7b0771891551dbc"
+    },
+    {
+      "bytes": 9652,
+      "path": "receiver_bridge.tex",
+      "sha256": "dfcbdc9e8a126d08e09961a543f392df6578b8226d13f80d6d9214d989409636"
+    },
+    {
+      "bytes": 2611,
+      "path": "references.tex",
+      "sha256": "68eda5b2142ea080c5b75989255bfd09cf793cd37e0b3dc7d7594abbaf67bef6"
+    },
+    {
+      "bytes": 2714,
+      "path": "repair.py",
+      "sha256": "b3ec1ef120bc1be631f48853af37c722d9802eb8bbd4ed2ffcc3d73d2595a600"
+    },
+    {
+      "bytes": 2703,
+      "path": "run_all.py",
+      "sha256": "be2e09dca0c50acbe02fd766d60ac223069e01f0d0320e6a842346bdbf4f4ab5"
+    },
+    {
+      "bytes": 4055,
+      "path": "source_reading.json",
+      "sha256": "5995eb2007c4c1941a33b55b117ec4498ccf624f24d47011b0ddf75509a1b624"
+    },
+    {
+      "bytes": 2559,
+      "path": "verification.json",
+      "sha256": "37a82b75b21f2a2d94ad6164e422ba148bcb8abb847e72cd5a0627d290163278"
+    },
+    {
+      "bytes": 13896,
+      "path": "verify.py",
+      "sha256": "3e6a298ac64522c8c1861e7aec0ab1b355ee94df536dfed9f8b02af0110f030c"
+    },
+    {
+      "bytes": 2098,
+      "path": "workbench.tex",
+      "sha256": "70327657af0f712a29b9fa26758816f0f94d1b9944505e34405d582930f32557"
+    }
+  ],
+  "excluded_suffixes": [
+    ".aux",
+    ".log",
+    ".out",
+    ".toc"
+  ],
+  "root": "research/incoming/es-turn07-mod24-ray-trace-20260922",
+  "schema": "sha256-file-manifest-v1",
+  "self_excluded": "MANIFEST.json"
+}

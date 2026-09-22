@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-22",
+  "renderer": "Poppler pdftoppm at 120 dpi; final changed pages re-rendered at 180 dpi after the typed-domain audit",
+  "papers": [
+    {
+      "path": "output/pdf/ES_Sharp_Receiver_Growth_20260922.pdf",
+      "bytes": 496476,
+      "pages": 17,
+      "sha256": "cc2992270a57a744765bda36cba35a3672d490d6ab918d0fa2d3b261f30174c1",
+      "source": "research/incoming/es-turn07-sharp-receiver-growth-20260921/preprint.tex",
+      "build_passes": 2,
+      "visual_pages_inspected": "1-17",
+      "result": "pass",
+      "findings": "No clipped text, overlapping mathematical displays, missing glyphs, or broken figures were found. Both figures, theorem boxes, tables, references, and the corrected arithmetic-domain statement are legible."
+    },
+    {
+      "path": "output/pdf/ES_Mod24_Ray_Trace_and_Receiver_20260922.pdf",
+      "bytes": 437284,
+      "pages": 11,
+      "sha256": "c3984f9d2370a6ab02355f8df8c2f8c015837de64802c25edd10c61afa2d7203",
+      "source": "research/incoming/es-turn07-mod24-ray-trace-20260922/workbench.tex",
+      "build_passes": 2,
+      "visual_pages_inspected": "1-11",
+      "result": "pass after correction",
+      "findings": "The first render exposed overlapping boxes in the typed receiver-composition figure. The node coordinates and spacing were repaired. A later typed-domain audit added the exact receiver loci, pullback, branch parameters, and information-loss statement. The paper was rebuilt twice and pages 8-11 were re-rendered at 180 dpi. The corrected figure, equations, references, page boundaries, and receiver codomain notation are legible without clipping."
+    }
+  ]
+}

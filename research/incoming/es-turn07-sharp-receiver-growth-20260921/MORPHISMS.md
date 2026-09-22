@@ -46,8 +46,9 @@
 
 11. **Fixed-\(c\) integral family.** ES16 maps each admitted pair \((c,p)\) to
     the four literal integral roots. Its inverse recovers \(c\) from the
-    displayed formulas. The reduced \(c=29\) progression is the only use of
-    Dirichlet's theorem.
+    displayed formulas. The reduced \(c=29\) progression is the Dirichlet
+    input for this fixed-\(c\) supplement; the main proof separately uses
+    Dirichlet for the sharp \(p\equiv13\pmod {24}\) families.
 
 12. **Analytic weighted matrix.** ES18 defines \(B(z)\) with \(z=1/p\) by
     exact left and right diagonal weights. ES19--ES22 invert its full first

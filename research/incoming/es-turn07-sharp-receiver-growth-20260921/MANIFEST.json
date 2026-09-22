@@ -1,0 +1,148 @@
+{
+  "entries": [
+    {
+      "bytes": 4139,
+      "path": "MORPHISMS.md",
+      "sha256": "08dbd93f9266862bc0b9c49866711a9bcb0f01749a6b3afd74b7342232294b44"
+    },
+    {
+      "bytes": 6072,
+      "path": "README.md",
+      "sha256": "35b6b4f75729b9c04ec32c04ef04f02769d0fbfb3d00e3b07dfd3e638cbdb847"
+    },
+    {
+      "bytes": 1441,
+      "path": "build_manifest.py",
+      "sha256": "4ef0ae8472bcba0c19be340da86d4210f6315b781eac8b0d180adbbf850ac07f"
+    },
+    {
+      "bytes": 97948,
+      "path": "certificates/global_sign_polynomials.json",
+      "sha256": "3f1a7dc71435d17a74e2c96b3878723f4b40783247ab48467b2029dea26ea730"
+    },
+    {
+      "bytes": 9588,
+      "path": "certificates/sharp_growth_verification.json",
+      "sha256": "5c79f614e2dcf961ac1f3309244da8f2fe2c67c4069f85a45f83cc8e57cfc34a"
+    },
+    {
+      "bytes": 3930,
+      "path": "claims.json",
+      "sha256": "30ae426c37a3a15a5437601bee6b17ff387f2a0a95f4bea07db172ab7f329a7e"
+    },
+    {
+      "bytes": 22427,
+      "path": "core.tex",
+      "sha256": "b9280465ca77d145850bf7120f248e078ca818d2684ecb436f47ad3167b9988d"
+    },
+    {
+      "bytes": 10921,
+      "path": "derivation/ES_CHECKS.json",
+      "sha256": "702fd86504e68e0cd94c03bfa38522d070b9e2f0d4ef47faa6f8117c7156bfd2"
+    },
+    {
+      "bytes": 14710,
+      "path": "derivation/ES_FAMILY_CORRECTIONS.md",
+      "sha256": "8f27d2419fe92770edcae106e00314155664717a0f808d7bb73bf98dcb63195c"
+    },
+    {
+      "bytes": 357,
+      "path": "derivation/ES_FIRST_ORDER_MATRICES.txt",
+      "sha256": "e994289129937618acc16cc9ea16641d0aac3481b71237220b319e7d26e035ca"
+    },
+    {
+      "bytes": 11973,
+      "path": "derivation/ES_PROOFS.md",
+      "sha256": "4209dff5f6dc181ccf5e3ff27deacfba43217bcef3d9b357ed6a74b619c3b482"
+    },
+    {
+      "bytes": 964,
+      "path": "derivation/ES_SOURCE_IDENTITIES.json",
+      "sha256": "8add055827f54facf3046f15877e4d384942d48e7b2578c3f6130cb7f8798574"
+    },
+    {
+      "bytes": 9939,
+      "path": "derivation/ES_SOURCE_USE_LEDGER.md",
+      "sha256": "e27a6279a4246b25a8183d918f43a85a80d7e41051844dba0373c1df678fe8a6"
+    },
+    {
+      "bytes": 10761,
+      "path": "derivation/check_es.py",
+      "sha256": "647f3416a16f6a0ab6c341dcca1a268ef2e38c100d76672e2a0f9c9a3a21c823"
+    },
+    {
+      "bytes": 781,
+      "path": "derivation/record_es_sources.py",
+      "sha256": "db72860f4515d1261bf518a2336801d1df8cf5954cabe1b56526c23563acbe6c"
+    },
+    {
+      "bytes": 1755,
+      "path": "figures/singular_exponent_profiles.tex",
+      "sha256": "f43f295bd2296352f363f3e8e8def579e67dfc44d18e0f3464cf37438bd01970"
+    },
+    {
+      "bytes": 1429,
+      "path": "figures/typed_transport.tex",
+      "sha256": "dc1e97004c59131e69677714aec6d44782f374984cce0ba7eebabc1522b87747"
+    },
+    {
+      "bytes": 260,
+      "path": "literature/Dirichlet_1837_Stephan_arxiv_0808.1408v2/DOWNLOAD.json",
+      "sha256": "f7ad18147e6c2d09fc2211324e02280ea98d9155a9c40010bf00accc66d77250"
+    },
+    {
+      "bytes": 61292,
+      "path": "literature/Dirichlet_1837_Stephan_arxiv_0808.1408v2/dirichlet.tex",
+      "sha256": "c7edc2c0ea0dd94a107845b3d0801bb346dbca90532670906def5525fc00549d"
+    },
+    {
+      "bytes": 17817,
+      "path": "literature/Dirichlet_1837_Stephan_arxiv_0808.1408v2/source.tar",
+      "sha256": "b0650548ba4b743a44389912e7da8e7ce7dfe8c06e4477cb8665b287a3d037dc"
+    },
+    {
+      "bytes": 146643,
+      "path": "literature/Elsholtz_Tao_2013_arxiv_1107.1010v6/egyptian-count18.tex",
+      "sha256": "b0469a67a737b7f4e77778310c87e22f5783ae9704f70aa55919a4a40104611c"
+    },
+    {
+      "bytes": 5000,
+      "path": "preprint.tex",
+      "sha256": "6ba72403cca8d816fa948c8e902319e75c0b212a981ffbc9e5392571feae30a5"
+    },
+    {
+      "bytes": 15789,
+      "path": "relative_growth_ES16_ES37.tex",
+      "sha256": "80205a79d4b3f483c8f3ddefc1674811a82ab2debd95f4af23332061733f4bc9"
+    },
+    {
+      "bytes": 11896,
+      "path": "relative_growth_ES1_ES15.tex",
+      "sha256": "08b7de48c3c53442fea62fddb4459ded8ee65135fab4a77cd8c09b83ecf886ca"
+    },
+    {
+      "bytes": 3220,
+      "path": "source_reading.json",
+      "sha256": "cb0a1876a907d3f39171f97fdcab2526c52cdd81463dff58b548e639979530c4"
+    },
+    {
+      "bytes": 2052,
+      "path": "verification.json",
+      "sha256": "cf80b99234e25ee7016a6b7fc8b2e7f2b2cc4f8639046c89ea9982014fa89f29"
+    },
+    {
+      "bytes": 13540,
+      "path": "verify.py",
+      "sha256": "3ba14cc56141b2407b10030b25ea49a6f1061d9a765c518a695773b214a76446"
+    }
+  ],
+  "excluded_suffixes": [
+    ".aux",
+    ".log",
+    ".out",
+    ".toc"
+  ],
+  "root": "research/incoming/es-turn07-sharp-receiver-growth-20260921",
+  "schema": "sha256-file-manifest-v1",
+  "self_excluded": "MANIFEST.json"
+}

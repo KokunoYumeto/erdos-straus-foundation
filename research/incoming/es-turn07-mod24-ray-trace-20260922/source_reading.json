@@ -38,6 +38,14 @@
   ],
   "project_antecedents": [
     {
+      "title": "Sharp inverse growth, singular defect, and finite heat limits for the literal Erdős–Straus receiver",
+      "repository": "KokunoYumeto/erdos-straus-foundation",
+      "commit": "e713c342fc16e361e104de3322790ca0cee7281d",
+      "path": "research/incoming/es-turn07-sharp-receiver-growth-20260921/core.tex",
+      "locator": "Theorem 1.1 and lines 75–636",
+      "use": "Receiver invertibility, inverse and compound bounds, sharpness families, and the single potentially unbounded inverse direction applied after the source-changing trace return."
+    },
+    {
       "title": "Global original receiving determinant",
       "version": "20260921",
       "file_id": "file_00000000a0a481f486a509fbbd98e7b2",
