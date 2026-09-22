@@ -1,9 +1,10 @@
 # Dated proof bulletin — 22 September 2026
 
-This bulletin indexes the sharp receiver-growth and modulo-24 trace-return
-results proved and checked on 22 September. Every item records the full domain,
-coordinates, maps, exceptions, proof source and nonclaims. It is a mathematical
-index, not a programme chronology.
+This bulletin indexes the sharp receiver-growth, modulo-24 trace-return,
+complete mixed-source fibre and hard-middle spectrum results proved and checked
+on 22 September. Every item records the full domain, coordinates, maps,
+exceptions, proof source and nonclaims. It is a mathematical index, not a
+programme chronology.
 
 ## SZ-20260922-001 — uniform sharp inverse and compound bounds
 
@@ -468,23 +469,219 @@ receiver residual \(R_M\). For every returned witness,
 
 The decorated source record keeps the fibre parameter \(t\), tail permutation,
 and middle-complement bit distinct. The bare sorted map \(\rho\) forgets those
-marks. Its complete E-branch \(t\)-fibre kernel and tail-permutation action are
-computed explicitly; for M inputs the proof gives a retained-\(t\) inverse,
-not a classification of the complete bare \(\rho\)-fibre.
-The pullback above separately retains every square-root choice in \(\Xi_W\).
+marks. This predecessor proof computes the complete E-origin fibre and retains
+a \(t\)-marked inverse for M inputs, leaving the complete bare sorted M-origin
+fibre open. SZ-20260922-008 closes exactly that stated gap. The pullback above
+separately retains every square-root choice in \(\Xi_W\).
 Tail exchange is a receiver-column permutation, and branch changes act by
 diagonal signs. The prime-indexed centred exponent vector is not identified
 with the four-dimensional label vector.
 
-- **Proof:** [typed source, target and composite](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/c9bb9978d5d3028be67574ef4935eaa269eb74a8/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L7-L128); [branch coordinates and quantitative bounds](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/c9bb9978d5d3028be67574ef4935eaa269eb74a8/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L133-L229); [fibres, symmetries and nonclaims](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/c9bb9978d5d3028be67574ef4935eaa269eb74a8/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L231-L278).
+- **Proof:** [typed source, target and composite](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L7-L128); [branch coordinates and quantitative bounds](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L133-L229); [fibres, symmetries and nonclaims](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L231-L278).
 - **Nonclaim:** receiver invertibility cannot be reversed into trace-source existence, a full gate, ray deletion or universal occupancy.
+
+## SZ-20260922-008 — complete bare sorted mixed-source fibres
+
+Let \(W=(p;a,Y,Z)\) be a supplied existing sorted middle witness in the stated
+mod-\(24\) domain, with \(a<p<Y<Z\) and \(2\le Y/p<Z/p\). Put
+
+\[
+b=Y/p,\quad c=Z/p,\quad g=\gcd(b,c),\quad
+r=b/g<s=c/g,\quad h=a/(rs),\quad\lambda=g/h,
+\]
+
+so that \(R=4a-p=(r+s)/\lambda\). Let \(\operatorname{Car}(A)\) mean that
+\(A=c_Aq_A\) with \(c_A\mid6\) and \(q_A>3\) prime, and put
+\(\delta_E=4hr\lambda-1\).
+
+The E-origin index set is empty unless \(r\lambda\mid6\) and \(\delta_E\) is
+squarefree; otherwise
+
+\[
+\mathcal I_E(W)=
+\left\{t\mid\operatorname{oddpart}(s):
+\delta_Et^2<p,
+\operatorname{Car}\!\left(\frac{p+\delta_Et^2}{4}\right)\right\}.
+\]
+
+For \(t\in\mathcal I_E(W)\), put
+
+\[
+R_t=\delta_Et^2,\quad a_t=\frac{p+R_t}{4},\quad
+(h_t,r_t,s_t)=\left(\frac{a_t}{r\lambda},\lambda,r\right),
+\quad u_t=h_t\lambda^2,
+\]
+
+and retain both original E tail orders.
+
+For the M branch put
+
+\[
+\mathcal V(W)=\{hr^2,hs^2\}\cap\operatorname{Div}(36).
+\]
+
+For \(\nu\in\mathcal V(W)\), the index set is empty unless \(R\) is
+squarefree; otherwise, with \(A_\nu=(p+4\nu)/R\),
+
+\[
+\mathcal I_{M,\nu}(W)=
+\left\{t\mid A_\nu:
+Rt^2<p,
+a_t=\frac{p+Rt^2}{4}=c_tq_t,
+c_t\mid6,\ q_t>3\ {\rm prime},\ \nu\mid c_t^2\right\}.
+\]
+
+Each such \(t\) gives exactly the two M words \(u_t=\nu\) and
+\(u_t=a_t^2/\nu\). These E and M lists are disjoint as source records and
+exhaustive, although their images can collide. Hence
+
+\[
+|\rho^{-1}(W)|
+=2|\mathcal I_E(W)|
+ +2\sum_{\nu\in\mathcal V(W)}|\mathcal I_{M,\nu}(W)|.
+\]
+
+Known \(p\) and the full labelled receiver matrix recover its selected frame
+and target by
+
+\[
+\xi_j=O_{0j},\qquad d_j=iO_{1j}/O_{0j},\qquad
+A=\frac{O_{20}/O_{00}-2pd_0}{d_0^2},\qquad
+\ell_j=\frac{O_{2j}/O_{0j}-Ad_j^2}{2d_j}.
+\]
+
+This reconstructs \(W\) and the selected square-root frame, not a unique
+member of \(\rho^{-1}(W)\).
+
+- **Proof:** [complete fibre, kernel and receiver reconstruction](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L74-L323).
+- **Verification:** [large-range replay and independent checker](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/verification_20000.json).
+- **Nonclaim:** \(W\) is supplied and its fibre may be empty; neither target existence nor universal ES occupancy follows.
+
+## SZ-20260922-009 — fixed-\((R,u)\) middle corrections and observation hierarchy
+
+Fix positive integers \(R\equiv3\pmod4\) and \(u>0\), with
+\(\gcd(R,u)=1\). At prime values satisfying
+
+\[
+a=\frac{p+R}{4}\in\mathbb Z,\qquad
+u\mid a^2,\qquad R\mid p+4u,
+\]
+
+retain the middle witness
+
+\[
+(a,Y,Z)=\left(a,\frac{p(a+u)}R,\frac{pa(a+u)}{Ru}\right).
+\]
+
+Put
+
+\[
+\alpha=\frac1{4R},\qquad \beta=\frac1{16Ru},\qquad
+C=\sqrt{\frac3{16R}}.
+\]
+
+For fixed \(R,u\), its singular values satisfy
+
+\[
+\begin{aligned}
+s_1&=20\beta^3p^9
+ \left[1+\frac{6R+14u/5}{p}+O_{R,u}(p^{-2})\right],\\
+s_2&=2\alpha^2p^4
+ \left[1+\frac{-R/2+19u/5}{p}+O_{R,u}(p^{-2})\right],\\
+s_3&=\sqrt2Cp^{3/2}
+ \left[1-\frac{41R}{12p}+O_{R,u}(p^{-2})\right],\\
+s_4&=\frac{\sqrt2}{C}p^{-3/2}
+ \left[1+\frac{11R}{12p}+O_{R,u}(p^{-2})\right].
+\end{aligned}
+\]
+
+Moreover,
+
+\[
+\det O=80\alpha^2\beta^3p^{13}
+\left[1+\frac{3R+33u/5}{p}+O_{R,u}(p^{-2})\right].
+\]
+
+Let
+
+\[
+v_0=\frac{(-i,1,0,0)^{\mathsf T}}{\sqrt2},\qquad
+w_0=\frac{(i,1,0,0)^{\mathsf T}}{\sqrt2},
+\qquad
+\mathcal H_p(\tau)=e^{-\tau p^3O^*O}.
+\]
+
+For every fixed nonzero scalar row \(L\) and \(\tau>0\), the exhaustive
+successive tests \(v_0,w_0,e_Y,e_Z\) give observation powers and limits
+
+\[
+\begin{array}{c|c|c}
+\text{first nonzero test}&\nu&
+\displaystyle\lim\frac{p^\nu L\mathcal H_p(\tau)L^*}
+ {e^{-(32R/3)\tau}}\\ \hline
+Lv_0&0&|Lv_0|^2\\
+Lw_0&2&(81R^2/16)|Lw_0|^2\\
+Le_Y&3&(27R^3/2)|Le_Y|^2\\
+Le_Z&9&(3538944R^3u^6/25)|Le_Z|^2 .
+\end{array}
+\]
+
+- **Proof:** [fixed-\((R,u)\) analytic matrix, all corrections and observation hierarchy](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L324-L543).
+- **Certificate:** [exact Laurent and compound checks](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/certificates/spectrum.json).
+- **Nonclaim:** every remainder is for fixed \(R,u\); no uniformity in unbounded parameters or new source-existence theorem is asserted.
+
+## SZ-20260922-010 — hard-middle sharpness on two reduced progressions
+
+For primes
+
+\[
+p\equiv8401\pmod{9240},
+\]
+
+take the fixed-residual middle family \(R=11,u=9\). Then
+
+\[
+p^{-3/2}\|O^{-1}\|_2\to\sqrt{\frac3{352}},\qquad
+\|\wedge^2O^{-1}\|_2\to\frac12,\qquad
+p^4\|\wedge^3O^{-1}\|_2\to484.
+\]
+
+For primes
+
+\[
+p\equiv4201\pmod{9240},\qquad s=\frac{p+1}{11},
+\]
+
+take the original middle witness
+
+\[
+(a,Y,Z)=(3s,3p,3ps).
+\]
+
+Then
+
+\[
+p^{-1}\|O^{-1}\|_2\to\sqrt{\frac{286200}{360371}},\qquad
+\|\wedge^2O^{-1}\|_2\to\frac{\sqrt{2968784}}{2896},\qquad
+p^2\|\wedge^3O^{-1}\|_2\to\frac{121}{2896}.
+\]
+
+Both residues are coprime to \(9240\) and are \(1\bmod840\), so Dirichlet's
+theorem supplies infinitely many prime members. The two families together
+prove that no smaller powers than \(p^{3/2}\), \(1\), and \(p^{-2}\) can
+replace the three inherited uniform inverse estimates, already on actual hard
+middle witnesses.
+
+- **Proof:** [both progressions, dominance and exact limits](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L544-L641).
+- **Certificate:** [hard-family exact checks](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/certificates/spectrum.json).
+- **Nonclaim:** the first sample \(p=26881\) has an empty mixed-source fibre. The theorem proves sharpness on the full middle domain, not on the smaller mixed-return image, and does not prove universal ES occupancy.
 
 ## Verification boundary
 
-The two Python packages replay the coefficient identities, exact rational
+The retained Python packages replay the coefficient identities, exact rational
 maps, finite censuses, negative controls and high-precision asymptotics at
 their stated ranges. They are not Lean builds or independent human review.
-The two TeX readers compile without unresolved references or layout warnings.
-All literature use and programme dependencies are recorded in the two
-*source_reading.json* files. Neither module claims a proof or counterexample to
-the Erdős–Straus conjecture.
+The TeX readers compile without unresolved references or layout warnings.
+All literature use and programme dependencies are recorded in each module's
+*source_reading.json* file. No module claims a proof or counterexample to the
+Erdős–Straus conjecture.

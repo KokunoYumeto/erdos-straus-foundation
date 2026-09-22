@@ -239,6 +239,21 @@ proof locators without reconstructing a programme timeline.
     determinant and exterior-power bounds.
     [Readable PDF](output/pdf/ES_Mod24_Ray_Trace_and_Receiver_20260922.pdf);
     [pinned mixed theorem and exact coordinates](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex#L9-L322).
+25. [Complete mixed-return fibres and hard-middle spectra](research/incoming/es-turn07-fibres-middle-spectrum-20260922/README.md)
+    closes the bare sorted M-origin fibre left open by item 24. For every
+    supplied sorted middle target it gives the complete disjoint E/M inverse,
+    including every square-factor parameter, carrier test, tail order,
+    complementary word and cross-channel collision. Its receiver theorem
+    reconstructs the target and the four selected square-root branches from
+    the full labelled matrix without selecting a unique arithmetic preimage.
+    A fixed-positive-\((R,u)\) middle family has singular powers
+    \(9,4,3/2,-3/2\), every first relative coefficient, and the exhaustive
+    observation powers \(0,2,3,9\). Two reduced prime progressions in
+    \(1\bmod840\) prove that the inherited inverse powers
+    \(p^{3/2},1,p^{-2}\) are sharp already on middle witnesses.
+    [Short PDF](output/pdf/ES_Complete_Mixed_Fibres_20260922.pdf);
+    [complete workbench PDF](output/pdf/ES_Mixed_Fibres_and_Hard_Middle_Spectra_20260922.pdf);
+    [pinned coordinate proofs](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L74-L641).
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
@@ -304,6 +319,13 @@ prime-shell domain, and its exact composite then carries that witness into the
 now-controlled receiver.  The nine-ray theorem is maximal for the universal
 ray-preserving rule; this does not prove that a required trace source exists at
 each hard prime.
+The twenty-fifth continuation computes the entire arithmetic fibre that the
+twenty-fourth left open, then separates that finite source multiplicity from
+the sixteen receiver frames. Its fixed-residual middle calculation supplies
+new first corrections and a different exhaustive observation hierarchy, and
+its two hard-prime progressions prove all three inherited inverse exponents
+sharp inside the class \(1\bmod840\). These are post-witness and inverse-fibre
+results; they do not force a first trace source at every hard prime.
 After composing the earlier diagonal and radius-eight returns, every residual
 exterior state has shape radius at least nine. These results isolate, but do
 not prove, the remaining unbounded-shape occupancy statement. None asserts the
@@ -318,7 +340,8 @@ optimality construction, global receiver sign, inverse bound and exact real
 counterdomain.
 The [22 September proof bulletin](DAILY_RESULTS_20260922.md) records the sharp
 receiver exponents, singular defect, first corrections, mixed trace return,
-nine-ray boundary, obstruction families and exact receiver composite.
+nine-ray boundary, obstruction families, exact receiver composite, complete
+mixed-return fibres, fixed-residual middle spectrum and hard-middle sharpness.
 
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with

@@ -421,14 +421,38 @@ produces infinitely many proper sources for which every ray-preserving return
 is absent; an independent middle construction solves ES on those primes.
 The decorated construction records the source fibre, tail orientation, and
 complement bit; the bare sorted receiver map forgets them and has the stated
-E-branch fibre kernel. The M branch has a retained-\(t\) inverse but no
-complete bare-fibre classification. Its pullback retains the square-root choices and gives the
+E-branch fibre kernel. Historically, the M branch had a retained-\(t\) inverse
+but no complete bare-fibre classification; [the subsequent fibre theorem](research/incoming/es-turn07-fibres-middle-spectrum-20260922/README.md)
+now supplies that classification. Its pullback retains the square-root choices and gives the
 middle-specific bound \(\|O^{-1}\|_2<224p\sqrt w/\gamma\) together with the
 uniform compound bounds. **Successful scope:** a genuine source-changing
 theorem, maximal ray law, complete automatic E-ray fibres, infinite obstruction families and
 typed receiver composite. **Unfinished:** the theorem does not force its
 initial rational trace source to exist at every hard prime.
 [Pinned mixed theorem](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex#L9-L464).
+
+## 19. Complete inverse fibres and hard-middle scales
+
+**Aim:** finish the M-origin inverse fibre of the modulo-24 return and determine
+whether the inherited receiver powers are already optimal in the unresolved
+hard-prime class. **Reason for trying:** the preceding composite retained a
+parameter \(t\) but did not classify every source over one bare target, while
+its known sharpness families lay in a different residue class. **What was
+tried:** the target was decoded back to its primitive
+\((h,r,s,\lambda)\) coordinates; the E and M gates were inverted prime by
+prime without deleting square factors, and every carrier and complement choice
+was retained. Independently, the literal receiver was expanded along a
+fixed-positive-\((R,u)\) middle family and along two reduced classes modulo
+\(9240\). **What happened:** the complete fibre is the disjoint E/M union with
+cardinality \(2|\mathcal I_E|+2\sum_\nu|\mathcal I_{M,\nu}|\). The receiver
+has singular powers \(9,4,3/2,-3/2\), complete first corrections and
+observation powers \(0,2,3,9\). Prime classes \(8401\) and \(4201\) modulo
+\(9240\) attain the three uniform inverse powers. **Successful scope:**
+complete source coordinates, kernel ranks, quotient metric, target/frame
+reconstruction, exact asymptotics, two illustrated exponent systems and
+reproducible certificates. **Unfinished:** fibres may be empty; optimality on
+the smaller mixed-return image and universal ES occupancy remain open.
+[Pinned complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L74-L641).
 
 ## Keeping future attempts intelligible
 
@@ -440,5 +464,5 @@ than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
 The [machine records](polyclank/attempts.json) expose the earlier five fields
-separately. This page covers the eighteen routes above; it does not claim to have recovered
+separately. This page covers the nineteen routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.

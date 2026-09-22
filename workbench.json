@@ -371,11 +371,32 @@
       "source_ledger": "research/incoming/es-turn07-mod24-ray-trace-20260922/source_reading.json",
       "received_archive": "research/incoming/es-turn07-mod24-ray-trace-20260922/RECEIVED_ARCHIVE.json",
       "pinned_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/e713c342fc16e361e104de3322790ca0cee7281d/research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex#L9-L464",
+      "pinned_receiver_composite": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-mod24-ray-trace-20260922/receiver_bridge.tex#L7-L280",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-22:fibres-middle-spectrum",
+      "overview": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/README.md",
+      "proof": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex",
+      "reader": "output/pdf/ES_Mixed_Fibres_and_Hard_Middle_Spectra_20260922.pdf",
+      "preprint": "output/pdf/ES_Complete_Mixed_Fibres_20260922.pdf",
+      "claims": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-fibres-middle-spectrum-20260922/verify_fibres.py",
+        "research/incoming/es-turn07-fibres-middle-spectrum-20260922/verify_spectrum.py",
+        "research/incoming/es-turn07-fibres-middle-spectrum-20260922/check_independent.py"
+      ],
+      "verification": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/verification_20000.json",
+      "scope": "For every supplied sorted original middle target, the complete bare ordered mixed-source fibre is the disjoint E/M union of the exact divisor and carrier formulas, including both source orders, complement words, cross-channel collisions, exact counts and kernel ranks. A known prime and full labelled receiver recover the target and selected square-root frame, not a unique arithmetic preimage. For fixed positive (R,u), the middle family has all singular first corrections and exhaustive observation powers 0,2,3,9. Two reduced progressions at p=1 mod840 prove the inherited inverse powers p^(3/2), 1 and p^(-2) sharp on actual middle witnesses. Fibres may be empty; no sharpness on the smaller mixed-return image, universal occupancy or ES resolution is asserted.",
+      "source_ledger": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/source_reading.json",
+      "integration_audit": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/INTEGRATION_AUDIT.md",
+      "received_archive": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/RECEIVED_ARCHIVE.json",
+      "pinned_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L74-L641",
       "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
-    "source": "research/incoming/es-turn07-mod24-ray-trace-20260922/HANDOFF_TURN_7_REMAINDER.md",
+    "source": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/HANDOFF_TURN_7_REMAINDER.md",
     "unproved_statement_tex": "\\forall p\\text{ hard prime},\\quad \\text{at least one original E or M coefficient is positive}",
     "available_exact_forms": [
       "complete disjoint direct/cofactor middle atlas with O(sqrt(p)) small moduli",
@@ -437,6 +458,10 @@
       ,"mixed mod24 prime-shell trace return to an original integral middle witness"
       ,"typed trace-return receiver composite with exact branch coordinates and bounds"
       ,"infinite reduced progressions proving maximality of the universal ray rule"
+      ,"complete bare sorted mixed-source E/M fibres over every supplied middle target, including empty fibres and cross-channel collisions"
+      ,"fixed-prime full-receiver reconstruction of the returned target and selected square-root frame"
+      ,"fixed-positive-(R,u) middle singular corrections and exhaustive observation powers 0,2,3,9"
+      ,"two reduced class-1-mod840 hard-middle progressions proving sharp inverse exponents p^(3/2), 1 and p^(-2) on actual M witnesses"
     ],
     "excluded_shortcuts": [
       "a fixed prime-independent cutoff on original grades h and j",
@@ -483,6 +508,10 @@
       ,"dropping the retained square factor t when claiming an inverse to the ray return"
       ,"extending the nine-ray universal guarantee to every primitive ray"
       ,"reversing receiver invertibility into trace-source existence"
+      ,"assuming the general-ray t=1 section survives the mixed carrier restriction"
+      ,"using fixed-prime receiver reconstruction to select a unique arithmetic preimage"
+      ,"promoting hard-middle sharpness to sharpness on the smaller mixed-return image"
+      ,"treating a complete fibre formula as nonemptiness of that fibre or as universal ES occupancy"
     ]
   },
   "records": {
@@ -494,7 +523,7 @@
     "human_motivations": "polyclank/motivations.json"
   },
   "coverage": {
-    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260922-007 are linked from their modules and the daily proof bulletins.",
+    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260922-010 are linked from their modules and the daily proof bulletins.",
     "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Later modules keep their own claims, proof locators and receipts; full claim-by-claim indexing of every historical edition is not asserted.",
     "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
   },

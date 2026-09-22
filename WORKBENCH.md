@@ -177,7 +177,16 @@ for both original first-half channels:
   with the literal receiver retains the actual returned denominator order,
   shape parameters, and square-root choices; it records the exact source
   E-branch fibre and the information forgotten by the bare sorted map. The M
-  branch has a retained-\(t\) inverse, not a complete bare-fibre classification.
+  branch historically had only a retained-\(t\) inverse; the next module closes
+  that bare-fibre classification.
+- [Complete mixed-return fibres and hard-middle spectra](research/incoming/es-turn07-fibres-middle-spectrum-20260922/README.md):
+  every supplied sorted middle target has an exact disjoint E/M inverse fibre,
+  with all square factors, carrier tests, tail orders and complementary words
+  retained. The full receiver matrix reconstructs the target and selected
+  frame without choosing among arithmetic preimages. A fixed-positive-\((R,u)\)
+  family gives singular powers \(9,4,3/2,-3/2\), all first corrections and the
+  observation hierarchy \(0,2,3,9\); two prime classes modulo \(9240\) prove the
+  inherited inverse powers sharp on middle states in \(1\bmod840\).
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
@@ -244,11 +253,17 @@ domain and composes it with the sharp receiver without identifying their
 different source spaces. Its infinite obstruction says exactly that the
 universal ray-preserving rule stops outside the nine rays; it does not say that
 other source-changing maps or ES itself fail there.
+The complete-fibre continuation then inverts that source-changing map over an
+arbitrary supplied middle target, identifies every collision and computes the
+free-module and metric fibres. Its separate fixed-residual calculation proves
+the hard-middle sharpness of all three inherited inverse exponents. This closes
+the earlier M-fibre gap but leaves initial trace-source occupancy and sharpness
+on the narrower mixed-return image open.
 
 The [19 September bulletin](DAILY_RESULTS_20260919.md),
 [20 September bridge bulletin](DAILY_RESULTS_20260920.md), and
 [21 September arithmetic bulletin](DAILY_RESULTS_20260921.md), and
-[22 September receiver/trace bulletin](DAILY_RESULTS_20260922.md) give stable
+[22 September receiver/trace/fibre/spectrum bulletin](DAILY_RESULTS_20260922.md) give stable
 result IDs and exact locators. They are mathematical indexes, not a programme
 chronology.
 

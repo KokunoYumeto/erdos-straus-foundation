@@ -15,14 +15,36 @@
     },
     {
       "path": "output/pdf/ES_Mod24_Ray_Trace_and_Receiver_20260922.pdf",
-      "bytes": 437284,
+      "bytes": 437053,
       "pages": 11,
-      "sha256": "c3984f9d2370a6ab02355f8df8c2f8c015837de64802c25edd10c61afa2d7203",
+      "sha256": "f5deff03822b4cb47f8755c05bd6afac845d70ee06a927cde109bd56fbfe0866",
       "source": "research/incoming/es-turn07-mod24-ray-trace-20260922/workbench.tex",
       "build_passes": 2,
       "visual_pages_inspected": "1-11",
       "result": "pass after correction",
       "findings": "The first render exposed overlapping boxes in the typed receiver-composition figure. The node coordinates and spacing were repaired. A later typed-domain audit added the exact receiver loci, pullback, branch parameters, and information-loss statement. The paper was rebuilt twice and pages 8-11 were re-rendered at 180 dpi. The corrected figure, equations, references, page boundaries, and receiver codomain notation are legible without clipping."
+    },
+    {
+      "path": "output/pdf/ES_Complete_Mixed_Fibres_20260922.pdf",
+      "bytes": 375598,
+      "pages": 4,
+      "sha256": "e63191634e4a73700767a9acdbfb4c107f23a2006725e75abb20cc36484df036",
+      "source": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/preprint.tex",
+      "build_passes": 3,
+      "visual_pages_inspected": "1-4",
+      "result": "pass",
+      "findings": "No clipped text, overlapping displays, missing glyphs, broken references, or page-boundary defects were found. The complete fibre theorem, hard-middle theorem, fibre diagram, spectrum diagram, and references are legible."
+    },
+    {
+      "path": "output/pdf/ES_Mixed_Fibres_and_Hard_Middle_Spectra_20260922.pdf",
+      "bytes": 465807,
+      "pages": 10,
+      "sha256": "d70a23cb3cf474fb5c62107be8e031f21237521caaf0fee39a1084b6bf716ef4",
+      "source": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/workbench.tex",
+      "build_passes": 3,
+      "visual_pages_inspected": "1-10",
+      "result": "pass",
+      "findings": "No clipped text, overlapping mathematical displays, missing glyphs, broken figures, or page-boundary defects were found. Both figures, complete coordinate formulas, theorem statements, tables, and references are legible."
     }
   ]
 }
