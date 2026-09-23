@@ -1,0 +1,20 @@
+{
+  "checks": 27484,
+  "box_counts": {
+    "primes": 143,
+    "shells": 171732,
+    "divisor_words": 5616298,
+    "M_traces": 5678,
+    "M_full": 3910,
+    "E_traces": 5788,
+    "E_full": 3637,
+    "E_proper": 2151,
+    "M_proper": 1768
+  },
+  "prime_square_interval_reproduced": true,
+  "prefix_least_counterexample_reproduced": true,
+  "all_worked_identities_pass": true,
+  "fixed_tail_sum_fibre_reproduced": true,
+  "imports_main_implementation": false,
+  "independent_human_review": false
+}

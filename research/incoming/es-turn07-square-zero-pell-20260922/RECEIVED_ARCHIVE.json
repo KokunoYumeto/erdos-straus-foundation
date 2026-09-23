@@ -1,0 +1,17 @@
+{
+  "outer_archive": {
+    "bytes": 25282872,
+    "filename": "ES_Turns6_7_With_Square_Zero_Pell_20260922.zip",
+    "sha256": "6708E1277F64AAD2F596BF9E7AC5217212BAE451D88A6644D53D7333DEFC0684"
+  },
+  "inner_archive": {
+    "sha256": "2697DDB6ADA7E088EC172EED495F4E215D6B088B57FD707A2170960FDF0A91FF"
+  },
+  "pasted_handoff": {
+    "bytes": 23609,
+    "filename": "Pasted text.txt",
+    "sha256": "44836BCC6CAC0A447DF310F763A3D33F632C8E3390E2213BFF45E915348AF599"
+  },
+  "received_date": "2026-09-22",
+  "scope": "Hash-bound provenance for the supplied cumulative handoff; the bulk pasted conversation is not republished."
+}

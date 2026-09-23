@@ -1,0 +1,1710 @@
+{
+  "N_factorization": [
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      29,
+      1
+    ],
+    [
+      67369,
+      1
+    ]
+  ],
+  "p67369_census": {
+    "eligible_residual_candidates": 507,
+    "fibres": [
+      {
+        "N": 11250623,
+        "candidate_residuals": [
+          167
+        ],
+        "nonnegative_candidates": 0,
+        "source_tags": [
+          {
+            "R": 4175,
+            "a": 17886,
+            "channel": "M",
+            "u": 484
+          },
+          {
+            "R": 4175,
+            "a": 17886,
+            "channel": "M",
+            "u": 660969
+          }
+        ]
+      },
+      {
+        "N": 32471877,
+        "candidate_residuals": [
+          3,
+          47,
+          123,
+          411,
+          1927,
+          5043,
+          6439,
+          16851
+        ],
+        "nonnegative_candidates": 5,
+        "source_tags": [
+          {
+            "R": 57575,
+            "a": 31236,
+            "channel": "E",
+            "u": 411
+          }
+        ]
+      },
+      {
+        "N": 33145548,
+        "candidate_residuals": [
+          3,
+          123
+        ],
+        "nonnegative_candidates": 0,
+        "source_tags": [
+          {
+            "R": 363,
+            "a": 16933,
+            "channel": "M",
+            "u": 2009
+          },
+          {
+            "R": 363,
+            "a": 16933,
+            "channel": "M",
+            "u": 142721
+          }
+        ]
+      },
+      {
+        "N": 46080396,
+        "candidate_residuals": [
+          3,
+          19,
+          171
+        ],
+        "nonnegative_candidates": 1,
+        "source_tags": [
+          {
+            "R": 53371,
+            "a": 30185,
+            "channel": "M",
+            "u": 25
+          },
+          {
+            "R": 53371,
+            "a": 30185,
+            "channel": "M",
+            "u": 36445369
+          }
+        ]
+      },
+      {
+        "N": 60160517,
+        "candidate_residuals": [
+          19,
+          47
+        ],
+        "nonnegative_candidates": 0,
+        "source_tags": [
+          {
+            "R": 57575,
+            "a": 31236,
+            "channel": "M",
+            "u": 19
+          },
+          {
+            "R": 57575,
+            "a": 31236,
+            "channel": "M",
+            "u": 51351984
+          }
+        ]
+      },
+      {
+        "N": 70400605,
+        "candidate_residuals": [
+          11,
+          19,
+          55,
+          95
+        ],
+        "nonnegative_candidates": 1,
+        "source_tags": [
+          {
+            "R": 7695,
+            "a": 18766,
+            "channel": "M",
+            "u": 44
+          },
+          {
+            "R": 7695,
+            "a": 18766,
+            "channel": "M",
+            "u": 8003699
+          }
+        ]
+      },
+      {
+        "N": 81651228,
+        "candidate_residuals": [
+          3,
+          303
+        ],
+        "nonnegative_candidates": 1,
+        "source_tags": [
+          {
+            "R": 2523,
+            "a": 17473,
+            "channel": "M",
+            "u": 101
+          },
+          {
+            "R": 2523,
+            "a": 17473,
+            "channel": "M",
+            "u": 3022829
+          }
+        ]
+      },
+      {
+        "N": 82055442,
+        "candidate_residuals": [
+          3,
+          7,
+          87,
+          203
+        ],
+        "nonnegative_candidates": 2,
+        "source_tags": [
+          {
+            "R": 54375,
+            "a": 30436,
+            "channel": "M",
+            "u": 14
+          },
+          {
+            "R": 54375,
+            "a": 30436,
+            "channel": "M",
+            "u": 66167864
+          }
+        ]
+      },
+      {
+        "N": 93777648,
+        "candidate_residuals": [
+          3,
+          87
+        ],
+        "nonnegative_candidates": 1,
+        "source_tags": [
+          {
+            "R": 9075,
+            "a": 19111,
+            "channel": "M",
+            "u": 29
+          },
+          {
+            "R": 9075,
+            "a": 19111,
+            "channel": "M",
+            "u": 12594149
+          }
+        ]
+      },
+      {
+        "N": 116952584,
+        "candidate_residuals": [
+          7,
+          31
+        ],
+        "nonnegative_candidates": 0,
+        "source_tags": [
+          {
+            "R": 19375,
+            "a": 21686,
+            "channel": "M",
+            "u": 14
+          },
+          {
+            "R": 19375,
+            "a": 21686,
+            "channel": "M",
+            "u": 33591614
+          }
+        ]
+      },
+      {
+        "N": 117222060,
+        "candidate_residuals": [
+          3,
+          15,
+          87,
+          435
+        ],
+        "nonnegative_candidates": 2,
+        "source_tags": [
+          {
+            "R": 375,
+            "a": 16936,
+            "channel": "M",
+            "u": 464
+          },
+          {
+            "R": 375,
+            "a": 16936,
+            "channel": "M",
+            "u": 618164
+          }
+        ]
+      },
+      {
+        "N": 145449671,
+        "candidate_residuals": [
+          127,
+          2159
+        ],
+        "nonnegative_candidates": 2,
+        "source_tags": [
+          {
+            "R": 10287,
+            "a": 19414,
+            "channel": "M",
+            "u": 17
+          },
+          {
+            "R": 10287,
+            "a": 19414,
+            "channel": "M",
+            "u": 22170788
+          }
+        ]
+      },
+      {
+        "N": 230873563,
+        "candidate_residuals": [
+          23,
+          3427
+        ],
+        "nonnegative_candidates": 2,
+        "source_tags": [
+          {
+            "R": 575,
+            "a": 16986,
+            "channel": "M",
+            "u": 149
+          },
+          {
+            "R": 575,
+            "a": 16986,
+            "channel": "M",
+            "u": 1936404
+          }
+        ]
+      },
+      {
+        "N": 234174644,
+        "candidate_residuals": [
+          11,
+          79
+        ],
+        "nonnegative_candidates": 1,
+        "source_tags": [
+          {
+            "R": 1975,
+            "a": 17336,
+            "channel": "M",
+            "u": 44
+          },
+          {
+            "R": 1975,
+            "a": 17336,
+            "channel": "M",
+            "u": 6830384
+          }
+        ]
+      },
+      {
+        "N": 261917202,
+        "candidate_residuals": [
+          3,
+          31,
+          159,
+          163,
+          1643,
+          8639,
+          15159
+        ],
+        "nonnegative_candidates": 6,
+        "source_tags": [
+          {
+            "R": 26871,
+            "a": 23560,
+            "channel": "E",
+            "u": 1550
+          }
+        ]
+      },
+      {
+        "N": 268398096,
+        "candidate_residuals": [
+          3,
+          83
+        ],
+        "nonnegative_candidates": 1,
+        "source_tags": [
+          {
+            "R": 27,
+            "a": 16849,
+            "channel": "M",
+            "u": 4067
+          },
+          {
+            "R": 27,
+            "a": 16849,
+            "channel": "M",
+            "u": 69803
+          }
+        ]
+      },
+      {
+        "N": 270284428,
+        "candidate_residuals": [
+          59,
+          1003
+        ],
+        "nonnegative_candidates": 2,
+        "source_tags": [
+          {
+            "R": 4779,
+            "a": 18037,
+            "channel": "M",
+            "u": 17
+          },
+          {
+            "R": 4779,
+            "a": 18037,
+            "channel": "M",
+            "u": 19137257
+          }
+        ]
+      },
+      {
+        "N": 298910656,
+        "candidate_residuals": [
+          11,
+          319,
+          1331,
+          38599
+        ],
+        "nonnegative_candidates": 3,
+        "source_tags": [
+          {
+            "R": 3971,
+            "a": 17835,
+            "channel": "E",
+            "u": 261
+          }
+        ]
+      },
+      {
+        "N": 406820340,
+        "candidate_residuals": [
+          3,
+          15,
+          27,
+          59,
+          135,
+          295,
+          339,
+          531,
+          1695,
+          2655,
+          3051,
+          6667,
+          15255,
+          33335,
+          38307,
+          60003
+        ],
+        "nonnegative_candidates": 15,
+        "source_tags": [
+          {
+            "R": 42135,
+            "a": 27376,
+            "channel": "E",
+            "u": 3776
+          }
+        ]
+      },
+      {
+        "N": 516189713,
+        "candidate_residuals": [
+          23,
+          79,
+          299,
+          943,
+          1027,
+          3239,
+          3887,
+          12259,
+          13351,
+          38663,
+          42107
+        ],
+        "nonnegative_candidates": 11,
+        "source_tags": [
+          {
+            "R": 2783,
+            "a": 17538,
+            "channel": "E",
+            "u": 316
+          }
+        ]
+      },
+      {
+        "N": 518926668,
+        "candidate_residuals": [
+          3,
+          39,
+          79,
+          123,
+          507,
+          1027,
+          1599,
+          3239,
+          13351,
+          18723,
+          20787,
+          42107
+        ],
+        "nonnegative_candidates": 11,
+        "source_tags": [
+          {
+            "R": 363,
+            "a": 16933,
+            "channel": "E",
+            "u": 41
+          }
+        ]
+      },
+      {
+        "N": 586110300,
+        "candidate_residuals": [
+          3,
+          15,
+          75,
+          87,
+          435,
+          2175
+        ],
+        "nonnegative_candidates": 5,
+        "source_tags": [
+          {
+            "R": 27,
+            "a": 16849,
+            "channel": "M",
+            "u": 1421
+          },
+          {
+            "R": 27,
+            "a": 16849,
+            "channel": "M",
+            "u": 199781
+          }
+        ]
+      },
+      {
+        "N": 1286301585,
+        "candidate_residuals": [
+          3,
+          15,
+          239,
+          599,
+          1195,
+          2995
+        ],
+        "nonnegative_candidates": 5,
+        "source_tags": [
+          {
+            "R": 3375,
+            "a": 17686,
+            "channel": "E",
+            "u": 956
+          }
+        ]
+      },
+      {
+        "N": 1891317308,
+        "candidate_residuals": [
+          607,
+          22459
+        ],
+        "nonnegative_candidates": 2,
+        "source_tags": [
+          {
+            "R": 5463,
+            "a": 18208,
+            "channel": "E",
+            "u": 2276
+          }
+        ]
+      },
+      {
+        "N": 1892706806,
+        "candidate_residuals": [
+          79,
+          2923,
+          44951
+        ],
+        "nonnegative_candidates": 3,
+        "source_tags": [
+          {
+            "R": 711,
+            "a": 17020,
+            "channel": "E",
+            "u": 296
+          }
+        ]
+      },
+      {
+        "N": 2044649150,
+        "candidate_residuals": [
+          607,
+          3035,
+          15175
+        ],
+        "nonnegative_candidates": 3,
+        "source_tags": [
+          {
+            "R": 5463,
+            "a": 18208,
+            "channel": "M",
+            "u": 2
+          },
+          {
+            "R": 5463,
+            "a": 18208,
+            "channel": "M",
+            "u": 165765632
+          }
+        ]
+      },
+      {
+        "N": 2166209774,
+        "candidate_residuals": [
+          271,
+          30623
+        ],
+        "nonnegative_candidates": 2,
+        "source_tags": [
+          {
+            "R": 32791,
+            "a": 25040,
+            "channel": "E",
+            "u": 15650
+          }
+        ]
+      },
+      {
+        "N": 2395694575,
+        "candidate_residuals": [
+          47,
+          223,
+          235,
+          1115,
+          1175,
+          1927,
+          5575,
+          9143,
+          9635,
+          45715,
+          48175
+        ],
+        "nonnegative_candidates": 11,
+        "source_tags": [
+          {
+            "R": 3807,
+            "a": 17794,
+            "channel": "E",
+            "u": 2009
+          }
+        ]
+      },
+      {
+        "N": 3101456127,
+        "candidate_residuals": [
+          3,
+          7,
+          11,
+          19,
+          59,
+          87,
+          147,
+          203,
+          231,
+          319,
+          399,
+          539,
+          551,
+          627,
+          931,
+          1239,
+          1463,
+          1711,
+          1947,
+          2891,
+          3363,
+          4263,
+          4543,
+          6699,
+          7847,
+          10443,
+          11571,
+          12331,
+          15631,
+          18183,
+          24367,
+          26999,
+          30723,
+          35931,
+          38291,
+          42427,
+          56463,
+          66139
+        ],
+        "nonnegative_candidates": 38,
+        "source_tags": [
+          {
+            "R": 19575,
+            "a": 21736,
+            "channel": "E",
+            "u": 13376
+          }
+        ]
+      },
+      {
+        "N": 4916898844,
+        "candidate_residuals": [
+          11,
+          143,
+          151,
+          319,
+          1859,
+          1963,
+          4147,
+          4379,
+          25519,
+          53911,
+          56927
+        ],
+        "nonnegative_candidates": 11,
+        "source_tags": [
+          {
+            "R": 16731,
+            "a": 21025,
+            "channel": "E",
+            "u": 18125
+          }
+        ]
+      },
+      {
+        "N": 4920901250,
+        "candidate_residuals": [
+          31,
+          151,
+          155,
+          755,
+          775,
+          899,
+          3775,
+          3875,
+          4379,
+          4495,
+          18875,
+          19375,
+          21895,
+          22475,
+          26071
+        ],
+        "nonnegative_candidates": 15,
+        "source_tags": [
+          {
+            "R": 279,
+            "a": 16912,
+            "channel": "E",
+            "u": 302
+          }
+        ]
+      },
+      {
+        "N": 4941246674,
+        "candidate_residuals": [
+          7,
+          31,
+          91,
+          403,
+          1183,
+          5239
+        ],
+        "nonnegative_candidates": 6,
+        "source_tags": [
+          {
+            "R": 279,
+            "a": 16912,
+            "channel": "M",
+            "u": 14
+          },
+          {
+            "R": 279,
+            "a": 16912,
+            "channel": "M",
+            "u": 20429696
+          }
+        ]
+      },
+      {
+        "N": 4959217500,
+        "candidate_residuals": [
+          3,
+          15,
+          75,
+          87,
+          151,
+          375,
+          435,
+          755,
+          1875,
+          2175,
+          3775,
+          4379,
+          10875,
+          18875,
+          21895,
+          54375
+        ],
+        "nonnegative_candidates": 16,
+        "source_tags": [
+          {
+            "R": 27,
+            "a": 16849,
+            "channel": "E",
+            "u": 29
+          }
+        ]
+      },
+      {
+        "N": 7530256593,
+        "candidate_residuals": [
+          3,
+          31,
+          127,
+          279,
+          1143,
+          1383,
+          11811,
+          14291,
+          58547
+        ],
+        "nonnegative_candidates": 9,
+        "source_tags": [
+          {
+            "R": 3751,
+            "a": 17780,
+            "channel": "E",
+            "u": 6223
+          }
+        ]
+      },
+      {
+        "N": 14036145936,
+        "candidate_residuals": [
+          3,
+          83,
+          5631
+        ],
+        "nonnegative_candidates": 3,
+        "source_tags": [
+          {
+            "R": 27,
+            "a": 16849,
+            "channel": "E",
+            "u": 83
+          }
+        ]
+      },
+      {
+        "N": 15723045000,
+        "candidate_residuals": [
+          3,
+          15,
+          27,
+          31,
+          39,
+          51,
+          75,
+          135,
+          155,
+          195,
+          255,
+          279,
+          351,
+          375,
+          403,
+          459,
+          527,
+          663,
+          675,
+          775,
+          867,
+          975,
+          1275,
+          1395,
+          1755,
+          1875,
+          2015,
+          2295,
+          2635,
+          3315,
+          3375,
+          3627,
+          3875,
+          4335,
+          4743,
+          4875,
+          5967,
+          6375,
+          6851,
+          6975,
+          7803,
+          8775,
+          8959,
+          10075,
+          11271,
+          11475,
+          13175,
+          16575,
+          16875,
+          18135,
+          19375,
+          21675,
+          23715,
+          24375,
+          29835,
+          31875,
+          34255,
+          34875,
+          39015,
+          43875,
+          44795,
+          50375,
+          56355,
+          57375,
+          61659,
+          65875
+        ],
+        "nonnegative_candidates": 66,
+        "source_tags": [
+          {
+            "R": 17199,
+            "a": 21142,
+            "channel": "E",
+            "u": 59582
+          }
+        ]
+      },
+      {
+        "N": 22469041515,
+        "candidate_residuals": [
+          3,
+          15,
+          87,
+          435,
+          7187,
+          35935
+        ],
+        "nonnegative_candidates": 6,
+        "source_tags": [
+          {
+            "R": 375,
+            "a": 16936,
+            "channel": "E",
+            "u": 1856
+          }
+        ]
+      },
+      {
+        "N": 23071646444,
+        "candidate_residuals": [
+          7,
+          11,
+          67,
+          259,
+          287,
+          407,
+          451,
+          847,
+          2479,
+          2747,
+          5159,
+          8107,
+          10619,
+          16687,
+          31339,
+          31423,
+          34727,
+          49379
+        ],
+        "nonnegative_candidates": 18,
+        "source_tags": [
+          {
+            "R": 2331,
+            "a": 17425,
+            "channel": "E",
+            "u": 11849
+          }
+        ]
+      },
+      {
+        "N": 55717387264,
+        "candidate_residuals": [
+          7,
+          11,
+          59,
+          203,
+          319,
+          539,
+          1711,
+          2891,
+          4543,
+          15631,
+          24367,
+          38291
+        ],
+        "nonnegative_candidates": 12,
+        "source_tags": [
+          {
+            "R": 3971,
+            "a": 17835,
+            "channel": "E",
+            "u": 48749
+          }
+        ]
+      },
+      {
+        "N": 68616274045,
+        "candidate_residuals": [
+          11,
+          31,
+          55,
+          71,
+          155,
+          227,
+          355,
+          1135,
+          3751,
+          8591,
+          18755,
+          24211,
+          27467,
+          42955
+        ],
+        "nonnegative_candidates": 14,
+        "source_tags": [
+          {
+            "R": 25631,
+            "a": 23250,
+            "channel": "E",
+            "u": 387500
+          }
+        ]
+      },
+      {
+        "N": 75373004047,
+        "candidate_residuals": [
+          11,
+          19,
+          263,
+          1171,
+          54967
+        ],
+        "nonnegative_candidates": 5,
+        "source_tags": [
+          {
+            "R": 12887,
+            "a": 20064,
+            "channel": "E",
+            "u": 214016
+          }
+        ]
+      },
+      {
+        "N": 147127065820,
+        "candidate_residuals": [
+          7,
+          19,
+          35,
+          95,
+          287,
+          439,
+          779,
+          931,
+          1435,
+          2195,
+          3895,
+          4655,
+          17999,
+          21511,
+          38171,
+          58387
+        ],
+        "nonnegative_candidates": 16,
+        "source_tags": [
+          {
+            "R": 855,
+            "a": 17056,
+            "channel": "E",
+            "u": 27716
+          }
+        ]
+      },
+      {
+        "N": 268154716776,
+        "candidate_residuals": [
+          3,
+          311,
+          331,
+          1047
+        ],
+        "nonnegative_candidates": 4,
+        "source_tags": [
+          {
+            "R": 9423,
+            "a": 19198,
+            "channel": "E",
+            "u": 556742
+          }
+        ]
+      },
+      {
+        "N": 274448356308,
+        "candidate_residuals": [
+          3,
+          7,
+          19,
+          63,
+          67,
+          171,
+          339,
+          399,
+          603,
+          791,
+          1407,
+          2147,
+          3819,
+          7119,
+          7571,
+          8911,
+          13467,
+          19323,
+          31423,
+          38307,
+          45087
+        ],
+        "nonnegative_candidates": 21,
+        "source_tags": [
+          {
+            "R": 4375,
+            "a": 17936,
+            "channel": "E",
+            "u": 264556
+          }
+        ]
+      },
+      {
+        "N": 297115297826,
+        "candidate_residuals": [
+          19,
+          31,
+          103,
+          359,
+          11191,
+          37183,
+          60667
+        ],
+        "nonnegative_candidates": 7,
+        "source_tags": [
+          {
+            "R": 5047,
+            "a": 18104,
+            "channel": "E",
+            "u": 330398
+          }
+        ]
+      },
+      {
+        "N": 307152812120,
+        "candidate_residuals": [
+          7,
+          11,
+          19,
+          35,
+          55,
+          79,
+          95,
+          203,
+          319,
+          395,
+          551,
+          1015,
+          1463,
+          1595,
+          2291,
+          2755,
+          5887,
+          6083,
+          7315,
+          9251,
+          10507,
+          11455,
+          15979,
+          16511,
+          29435,
+          30415,
+          42427,
+          43687,
+          46255,
+          52535,
+          66439
+        ],
+        "nonnegative_candidates": 31,
+        "source_tags": [
+          {
+            "R": 40095,
+            "a": 26866,
+            "channel": "E",
+            "u": 2713466
+          }
+        ]
+      },
+      {
+        "N": 813442416204,
+        "candidate_residuals": [
+          3,
+          11,
+          107,
+          3531,
+          22767
+        ],
+        "nonnegative_candidates": 5,
+        "source_tags": [
+          {
+            "R": 5819,
+            "a": 18297,
+            "channel": "E",
+            "u": 1042929
+          }
+        ]
+      },
+      {
+        "N": 3174621327900,
+        "candidate_residuals": [
+          3,
+          11,
+          15,
+          27,
+          55,
+          75,
+          79,
+          99,
+          135,
+          243,
+          275,
+          363,
+          395,
+          495,
+          519,
+          675,
+          711,
+          891,
+          1215,
+          1815,
+          1903,
+          1975,
+          2475,
+          2595,
+          2607,
+          3267,
+          3555,
+          4455,
+          4671,
+          6075,
+          6399,
+          9075,
+          9515,
+          9559,
+          12975,
+          13035,
+          13667,
+          16335,
+          17127,
+          17775,
+          18723,
+          22275,
+          23355,
+          23463,
+          29403,
+          31995,
+          42039,
+          47575,
+          47795,
+          62799,
+          65175
+        ],
+        "nonnegative_candidates": 51,
+        "source_tags": [
+          {
+            "R": 2523,
+            "a": 17473,
+            "channel": "E",
+            "u": 1764773
+          }
+        ]
+      },
+      {
+        "N": 82135141640412,
+        "candidate_residuals": [
+          3,
+          7,
+          83,
+          311,
+          1047,
+          1743,
+          2443,
+          6531,
+          28967
+        ],
+        "nonnegative_candidates": 9,
+        "source_tags": [
+          {
+            "R": 27,
+            "a": 16849,
+            "channel": "E",
+            "u": 488621
+          }
+        ]
+      },
+      {
+        "N": 129133642215424,
+        "candidate_residuals": [
+          7,
+          11,
+          539,
+          707,
+          1111,
+          5327,
+          8371,
+          54439
+        ],
+        "nonnegative_candidates": 8,
+        "source_tags": [
+          {
+            "R": 99,
+            "a": 16867,
+            "channel": "E",
+            "u": 2816789
+          }
+        ]
+      },
+      {
+        "N": 235076283301776,
+        "candidate_residuals": [
+          3,
+          7,
+          87,
+          147,
+          203,
+          343,
+          4263,
+          9947,
+          66567
+        ],
+        "nonnegative_candidates": 9,
+        "source_tags": [
+          {
+            "R": 27,
+            "a": 16849,
+            "channel": "E",
+            "u": 1398467
+          }
+        ]
+      }
+    ],
+    "integral_tags": 47,
+    "integral_tail_sums": 37,
+    "nonnegative_discriminants": 478,
+    "proper_tail_sums": 51,
+    "proper_trace_tags": 69,
+    "shared_tail_sums": []
+  },
+  "positive_recovery_control": {
+    "fibre": {
+      "D": 9751715969853936821000,
+      "N": 98750810744,
+      "candidates": [
+        {
+          "a": 16850,
+          "discriminant": 9737258270885323739136,
+          "floor_sqrt": 98677546944,
+          "lower_gap": 0,
+          "ordered_targets": [
+            {
+              "Delta": -98677546944,
+              "Y": 98714178844,
+              "Z": 36631900,
+              "a": 16850,
+              "rho": 31,
+              "squareclass": {
+                "X": -98677546944,
+                "delta": 31,
+                "norm_rhs": -14457698968613081864,
+                "v": 1
+              }
+            },
+            {
+              "Delta": 98677546944,
+              "Y": 36631900,
+              "Z": 98714178844,
+              "a": 16850,
+              "rho": 31,
+              "squareclass": {
+                "X": 98677546944,
+                "delta": 31,
+                "norm_rhs": -14457698968613081864,
+                "v": 1
+              }
+            }
+          ],
+          "rho": 31,
+          "square": true,
+          "upper_gap": 197355093889
+        },
+        {
+          "a": 17114,
+          "discriminant": 9751303652772035251968,
+          "floor_sqrt": 98748689372,
+          "lower_gap": 84289497584,
+          "rejection": "between consecutive squares",
+          "rho": 1087,
+          "square": false,
+          "upper_gap": 113207881161
+        },
+        {
+          "a": 19454,
+          "discriminant": 9751673068670053696128,
+          "floor_sqrt": 98750559839,
+          "lower_gap": 154133990207,
+          "rejection": "between consecutive squares",
+          "rho": 10447,
+          "square": false,
+          "upper_gap": 43367129472
+        }
+      ],
+      "complete_reason": "rho divides N because rho<p and p is prime",
+      "p": 67369,
+      "targets": [
+        {
+          "Delta": -98677546944,
+          "Y": 98714178844,
+          "Z": 36631900,
+          "a": 16850,
+          "rho": 31,
+          "squareclass": {
+            "X": -98677546944,
+            "delta": 31,
+            "norm_rhs": -14457698968613081864,
+            "v": 1
+          }
+        },
+        {
+          "Delta": 98677546944,
+          "Y": 36631900,
+          "Z": 98714178844,
+          "a": 16850,
+          "rho": 31,
+          "squareclass": {
+            "X": 98677546944,
+            "delta": 31,
+            "norm_rhs": -14457698968613081864,
+            "v": 1
+          }
+        }
+      ]
+    },
+    "source": {
+      "D": 1,
+      "K": 31,
+      "R": 31,
+      "a": 16850,
+      "channel": "E",
+      "common_denominator": 1,
+      "defect": 0,
+      "delta": 31,
+      "denominators": [
+        [
+          16850,
+          1
+        ],
+        [
+          36631900,
+          1
+        ],
+        [
+          98714178844,
+          1
+        ]
+      ],
+      "exponents": [
+        {
+          "beta": 0,
+          "e": 1,
+          "f": 1,
+          "prime": 2
+        },
+        {
+          "beta": -2,
+          "e": 2,
+          "f": 0,
+          "prime": 5
+        },
+        {
+          "beta": 0,
+          "e": 1,
+          "f": 1,
+          "prime": 337
+        }
+      ],
+      "full": true,
+      "h": 674,
+      "p": 67369,
+      "quotient": [
+        2174,
+        1
+      ],
+      "quotient_name": "kappa",
+      "r": 1,
+      "s": 25,
+      "tail_sum": [
+        98750810744,
+        1
+      ],
+      "trace": true,
+      "u": 674
+    }
+  },
+  "retained_quantity": "numerical tail sum y+z; not the raw factor sum h+s",
+  "schema": "es.fixed-tail-sum-fibre.v1",
+  "seed": {
+    "B": 13459046189,
+    "C": 95731349,
+    "D": 343485798101289300,
+    "N": 586110300,
+    "R": 27,
+    "U": 15888123345511263900,
+    "V": 26726629680,
+    "a": 16849,
+    "exact_tail_gate": false,
+    "gate_residue": 18,
+    "p": 67369,
+    "pell_norm": 7076183892463958519482017231178890000,
+    "squareclass": {
+      "X": [
+        -1484812760,
+        1
+      ],
+      "delta": 3,
+      "norm_rhs": [
+        -886703250652786100,
+        1
+      ],
+      "parity_gate": false,
+      "v": 3,
+      "v_divides_X": false
+    },
+    "tail_difference_Z_minus_Y": [
+      -1484812760,
+      3
+    ],
+    "w": 13363314840
+  },
+  "selected_fibre": {
+    "D": 343485798101289300,
+    "N": 586110300,
+    "candidates": [
+      {
+        "a": 16843,
+        "discriminant": -543217452551496800,
+        "modular_or_sign_witness": {
+          "kind": "negative"
+        },
+        "rejection": "negative discriminant",
+        "rho": 3,
+        "square": false
+      },
+      {
+        "a": 16846,
+        "discriminant": 166145147970732080,
+        "floor_sqrt": 407609062,
+        "lower_gap": 546212236,
+        "modular_or_sign_witness": {
+          "kind": "quadratic nonresidue",
+          "modulus": 3,
+          "residue": 2
+        },
+        "rejection": "between consecutive squares",
+        "rho": 15,
+        "square": false,
+        "upper_gap": 269005889
+      },
+      {
+        "a": 16861,
+        "discriminant": 308017668075177856,
+        "floor_sqrt": 554993394,
+        "lower_gap": 691538620,
+        "modular_or_sign_witness": {
+          "kind": "quadratic nonresidue",
+          "modulus": 7,
+          "residue": 5
+        },
+        "rejection": "between consecutive squares",
+        "rho": 75,
+        "square": false,
+        "upper_gap": 418448169
+      },
+      {
+        "a": 16864,
+        "discriminant": 312909823940848400,
+        "floor_sqrt": 559383431,
+        "lower_gap": 1063516639,
+        "modular_or_sign_witness": {
+          "kind": "quadratic nonresidue",
+          "modulus": 3,
+          "residue": 2
+        },
+        "rejection": "between consecutive squares",
+        "rho": 87,
+        "square": false,
+        "upper_gap": 55250224
+      },
+      {
+        "a": 16951,
+        "discriminant": 337370603269201120,
+        "floor_sqrt": 580836124,
+        "lower_gap": 325857744,
+        "modular_or_sign_witness": {
+          "kind": "quadratic nonresidue",
+          "modulus": 7,
+          "residue": 3
+        },
+        "rejection": "between consecutive squares",
+        "rho": 435,
+        "square": false,
+        "upper_gap": 835814505
+      },
+      {
+        "a": 17386,
+        "discriminant": 342262759134871664,
+        "floor_sqrt": 585032271,
+        "lower_gap": 1023454223,
+        "modular_or_sign_witness": {
+          "kind": "quadratic nonresidue",
+          "modulus": 3,
+          "residue": 2
+        },
+        "rejection": "between consecutive squares",
+        "rho": 2175,
+        "square": false,
+        "upper_gap": 146610320
+      }
+    ],
+    "complete_reason": "rho divides N because rho<p and p is prime",
+    "p": 67369,
+    "targets": []
+  },
+  "source": {
+    "D": 3,
+    "K": 9,
+    "R": 27,
+    "a": 16849,
+    "channel": "M",
+    "common_denominator": 3,
+    "defect": 2,
+    "delta": 3,
+    "denominators": [
+      [
+        16849,
+        1
+      ],
+      [
+        1621571830,
+        3
+      ],
+      [
+        136759070,
+        3
+      ]
+    ],
+    "exponents": [
+      {
+        "beta": 1,
+        "e": 1,
+        "f": 2,
+        "prime": 7
+      },
+      {
+        "beta": 0,
+        "e": 1,
+        "f": 1,
+        "prime": 29
+      },
+      {
+        "beta": -1,
+        "e": 1,
+        "f": 0,
+        "prime": 83
+      }
+    ],
+    "full": false,
+    "h": 29,
+    "p": 67369,
+    "quotient": [
+      10,
+      3
+    ],
+    "quotient_name": "lambda",
+    "r": 7,
+    "s": 83,
+    "tail_sum": [
+      586110300,
+      1
+    ],
+    "trace": true,
+    "u": 1421
+  },
+  "theorem": "complete ordered integral first-half fibre at fixed prime and tail sum",
+  "universal_ES_proved": false
+}

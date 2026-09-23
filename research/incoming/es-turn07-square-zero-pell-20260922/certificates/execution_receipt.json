@@ -1,0 +1,149 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\verify.py",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\reproduced_current\\normal",
+        "--bound",
+        "10000",
+        "--square-bound",
+        "2000000",
+        "--prefix-bound",
+        "67369"
+      ],
+      "elapsed_seconds": 5.754611000011209,
+      "name": "normal_main",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\check_independent.py",
+        "--input",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\reproduced_current\\normal",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\reproduced_current\\normal\\independent.json"
+      ],
+      "elapsed_seconds": 7.1862085000029765,
+      "name": "normal_separate",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "-O",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\verify.py",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\reproduced_current\\optimized",
+        "--bound",
+        "10000",
+        "--square-bound",
+        "2000000",
+        "--prefix-bound",
+        "67369"
+      ],
+      "elapsed_seconds": 6.53223190002609,
+      "name": "optimized_main",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Floris\\miniconda3\\python.exe",
+        "-O",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\check_independent.py",
+        "--input",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\reproduced_current\\optimized",
+        "--out",
+        "C:\\Users\\Floris\\Documents\\math\\work\\erdos-straus-foundation-20260919\\research\\incoming\\es-turn07-square-zero-pell-20260922\\reproduced_current\\optimized\\independent.json"
+      ],
+      "elapsed_seconds": 7.597478799987584,
+      "name": "optimized_separate",
+      "returncode": 0
+    }
+  ],
+  "independent_human_review": false,
+  "main": {
+    "box": {
+      "E_full": 3637,
+      "E_proper": 2151,
+      "E_traces": 5788,
+      "M_full": 3910,
+      "M_proper": 1768,
+      "M_traces": 5678,
+      "divisor_words": 5616298,
+      "primes": 143,
+      "shells": 171732,
+      "squareful_trace_shells": 2522,
+      "squareful_trace_tiles": 4139
+    },
+    "checks": 26310,
+    "examples": {
+      "general_sumshift_examples": 6,
+      "pell_prime_examples": 3
+    },
+    "fixed_tail_sum": {
+      "eligible_residual_candidates": 507,
+      "integral_returns": 0,
+      "proper_tail_sums": 51,
+      "proper_trace_tags": 69
+    },
+    "prefix": {
+      "bound": 67369,
+      "exceptions": [
+        67369
+      ],
+      "primes": 817,
+      "shells": 1422
+    },
+    "prime_squares": {
+      "bound": 2000000,
+      "shells": 167,
+      "state_counts": {
+        "E_full": 52,
+        "E_proper": 83,
+        "M_full": 56,
+        "M_proper": 94
+      }
+    },
+    "priority_claim": false,
+    "universal_ES_proved": false
+  },
+  "mathematical_files": {
+    "box_tiles.json": "7a7395729c12eb04d6a97197c0d7ada764fe787607e2c9f0b5c0c524dada9551",
+    "fixed_tail_sum.json": "2d67180cda74531bf5bef5bcfeb0e6282488465e0fc4b34337dac53632ce4060",
+    "independent.json": "b53f3ae6ab2bcc0f75c4e15b85d163aaafe5e30ad78932ae6b428d4af9a4330d",
+    "local_certificates.json": "eeac15a73e35627e647d9a9855f18635602491734f0b6ab54ecdc73dce6a7c1c",
+    "negative_controls.json": "ac7ba2da97e944a8d491615d2f0d41b3653ab7e9c2848fb5852c9ed08a961afa",
+    "prefix_certificate.json": "4fbd1ab2ba308ffd4db7251f3cd0b251652a32c4ab4ab8c3d42d98ff97e950c3",
+    "prime_squares.json": "5f623d4743de42ff1109a1420f620fd11a2ce1d79666b38b7690d00a88543e2f",
+    "sharp_packets.json": "cfc2ef8280b2ec54fe8f921648e5bd9b6afaf1e77fc41601ef892d384478d299",
+    "summary.json": "304316a5fd9b4f09ecbef441ac65bd17658270fcf2bddac03bf57e205c2d63f3",
+    "worked_examples.json": "eb79eee05eae68dfc16672c15a88367b19e0f2242d981df6bb38434b70c68cae"
+  },
+  "normal_optimized_identical": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "separate": {
+    "all_worked_identities_pass": true,
+    "box_counts": {
+      "E_full": 3637,
+      "E_proper": 2151,
+      "E_traces": 5788,
+      "M_full": 3910,
+      "M_proper": 1768,
+      "M_traces": 5678,
+      "divisor_words": 5616298,
+      "primes": 143,
+      "shells": 171732
+    },
+    "checks": 27484,
+    "fixed_tail_sum_fibre_reproduced": true,
+    "imports_main_implementation": false,
+    "independent_human_review": false,
+    "prefix_least_counterexample_reproduced": true,
+    "prime_square_interval_reproduced": true
+  },
+  "universal_ES_proved": false
+}

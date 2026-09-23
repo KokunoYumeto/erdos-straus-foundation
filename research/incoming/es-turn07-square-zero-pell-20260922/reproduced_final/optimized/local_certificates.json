@@ -1,0 +1,16 @@
+{
+  "cyclic_moduli": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15
+  ],
+  "proof_boundary": "finite corroboration only; universal proofs are in core.tex",
+  "residual_bound": 499,
+  "saturated_tests": 216,
+  "square_zero_triples": 2801,
+  "stabilizer_checks": 10864
+}

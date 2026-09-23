@@ -1,0 +1,7 @@
+The received cumulative archive and pasted handoff are identified in
+RECEIVED_ARCHIVE.json.  Their full local contents were used for intake and
+verification.  The pasted conversation is not duplicated in this repository.
+
+The integrated mathematical source is core.tex.  Corrections, scope decisions,
+fresh replay receipts and literature locators are recorded in
+INTEGRATION_AUDIT.md and topic_literature_route.json.

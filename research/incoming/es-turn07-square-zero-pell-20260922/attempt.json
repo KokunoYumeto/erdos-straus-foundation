@@ -1,0 +1,27 @@
+{
+  "aim": "Force an original integral coefficient at a prescribed hard prime",
+  "broader_motivation": "Roadmap Stage6--7; initial-source arithmetic rather than post-witness spectral control",
+  "claims": [
+    "SZP-01",
+    "SZP-02",
+    "SZP-03",
+    "SZP-04",
+    "SZP-05",
+    "SZP-06",
+    "SZP-07",
+    "SZP-08",
+    "SZP-09"
+  ],
+  "heuristic": "The square gate has a bounded fine residue; use its exact nilpotent ideal to combine actual E/M states. For terminal square carriers, vary factors rather than preserving the blocked divisor/ray.",
+  "inherited_revision": "20709bee872ad10e4cc7d7b976d975e24532a803",
+  "outcome": "Exact mixed and factor-sum returns, a complete fixed-tail-sum fibre, and a universal prime-square proper-divisor obstruction. A universal nonincreasing-a repair is disproved by p67369.",
+  "tried": [
+    "square-zero additive defect",
+    "full original box cyclic coefficients and saturation",
+    "prime-power classification",
+    "general factor-sum map and Pell restriction",
+    "fixed-numerical-tail-sum Pell fibre and prime-square divisor obstruction",
+    "least first-trace/full-gate prefix search"
+  ],
+  "unfinished": "No proof that every prescribed hard prime supplies a part with occupied zero coefficient or a passing factor-sum source."
+}

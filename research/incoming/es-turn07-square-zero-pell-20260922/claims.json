@@ -1,0 +1,83 @@
+[
+  {
+    "id": "SZP-01",
+    "locator": "Sections 2--3; Theorem Mixed integer-exponent law",
+    "nonclaim": "No initial trace-source existence",
+    "scope": "Every original first-half E/M trace at p prime1mod4; integer coefficients, channel exponent and original box retained",
+    "source": "core.tex",
+    "status": "written universal proof; exact finite corroboration",
+    "title": "Exact square-zero trace defect and mixed exponent law"
+  },
+  {
+    "id": "SZP-02",
+    "locator": "Section4",
+    "nonclaim": "Not generated-subgroup support or uniform nonzero coefficient without the width condition",
+    "scope": "Every original exponent part; saturation when actual unit width>=D-1, with explicit integer lower count",
+    "source": "core.tex",
+    "status": "written universal proof and exact coefficient replay",
+    "title": "Full bounded coefficient partition, stabilizers and sharp unit-width saturation"
+  },
+  {
+    "id": "SZP-03",
+    "locator": "Section5",
+    "nonclaim": "No extra carrier-prime supply theorem",
+    "scope": "p prime1mod24, a=q^e or q^2, q>3 prime; both original orientations",
+    "source": "core.tex",
+    "status": "written universal proof; complete q^2 source census through p<=2000000",
+    "title": "Prime-power M and complete prime-square channel classification"
+  },
+  {
+    "id": "SZP-04",
+    "locator": "Section5 terminality theorem",
+    "nonclaim": "Not failure of unrelated maps or of ES",
+    "scope": "Every proper original M trace at a=q^2; all residual divisors",
+    "source": "core.tex",
+    "status": "written proof",
+    "title": "Terminal prime-square M source for both inherited deletion systems"
+  },
+  {
+    "id": "SZP-05",
+    "locator": "Section6, Complete factor-sum return and inverse",
+    "nonclaim": "The quadratic root is tested, not asserted for every trace",
+    "scope": "Every oriented original M trace; exact integer quadratic-root condition; full c,w inverse",
+    "source": "core.tex",
+    "status": "written universal coordinate proof; all supplied arrows and fibres checked by two implementations",
+    "title": "General factor-sum return, primitive gcd and complete incoming fibres"
+  },
+  {
+    "id": "SZP-06",
+    "locator": "Section6 Pell specialization",
+    "nonclaim": "No infinitude of prime polynomial/Pell values",
+    "scope": "Explicit integer family, recurrence, and three isolated prime pairs; retained old and new word/ray",
+    "source": "core.tex",
+    "status": "written identity; deterministic full trial division for isolated primes",
+    "title": "Pell restriction and verified hard-prime examples"
+  },
+  {
+    "id": "SZP-07",
+    "locator": "Section7",
+    "nonclaim": "Not ES counterexample or nonexistence of another terminating invariant",
+    "scope": "All817 primes1mod24 through67369 and consecutive original shells through first full gate",
+    "source": "core.tex",
+    "status": "complete deterministic finite proof",
+    "title": "Least failure of universal nonincreasing-a trace repair"
+  },
+  {
+    "id": "SZP-08",
+    "locator": "Section 7, Complete fixed-tail-sum fibre",
+    "nonclaim": "An unrestricted Pell point is not an integer-tail return; the fixed-sum obstruction is not an ES counterexample and is distinct from the factor-sum map",
+    "scope": "All ordered integral first-half triples at fixed odd prime p and numerical tail sum N; complete p=67369 census of 69 proper tags and 51 proper sums",
+    "source": "core.tex",
+    "status": "written universal bijection; complete deterministic fixed-prime certificate and separate implementation",
+    "title": "Exact fixed-tail-sum Pell lattice, return gate and complete p=67369 obstruction"
+  },
+  {
+    "id": "SZP-09",
+    "locator": "Theorem prime-square-fixed-sum",
+    "nonclaim": "Residuals smaller than but not dividing the source residual, and returns that change the numerical tail sum, remain outside this theorem",
+    "scope": "Every proper prime-square E/M trace with word q or q^3; every target word, both channels and both tail orders; target residual a proper divisor of the source residual",
+    "source": "core.tex",
+    "status": "written universal four-case proof; deterministic corroboration over all proper prime-square rows serialized through p<=2000000",
+    "title": "No fixed-tail-sum return to a proper residual divisor from a proper prime-square trace"
+  }
+]

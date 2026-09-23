@@ -1,0 +1,3376 @@
+{
+  "counterexamples": [],
+  "proper_divisor_residuals_tested": 633,
+  "proper_source_rows": 177,
+  "records": [
+    {
+      "F": 28,
+      "N": 25872,
+      "R": 75,
+      "channel": "E",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 409,
+      "proper_divisor_residuals_tested": 2,
+      "q": 11,
+      "u": 11
+    },
+    {
+      "F": 52,
+      "N": 89232,
+      "R": 27,
+      "channel": "E",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 457,
+      "proper_divisor_residuals_tested": 1,
+      "q": 11,
+      "u": 11
+    },
+    {
+      "F": 2,
+      "N": 230316,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 1129,
+      "proper_divisor_residuals_tested": 1,
+      "q": 17,
+      "u": 17
+    },
+    {
+      "F": 2,
+      "N": 230316,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 1129,
+      "proper_divisor_residuals_tested": 1,
+      "q": 17,
+      "u": 4913
+    },
+    {
+      "F": 74,
+      "N": 476412,
+      "R": 507,
+      "channel": "E",
+      "eta": 13,
+      "g": 39,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 2857,
+      "proper_divisor_residuals_tested": 2,
+      "q": 29,
+      "u": 29
+    },
+    {
+      "F": 194,
+      "N": 4629228,
+      "R": 363,
+      "channel": "E",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 6361,
+      "proper_divisor_residuals_tested": 2,
+      "q": 41,
+      "u": 41
+    },
+    {
+      "F": 2,
+      "N": 3235884,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 6577,
+      "proper_divisor_residuals_tested": 2,
+      "q": 41,
+      "u": 41
+    },
+    {
+      "F": 2,
+      "N": 3235884,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 6577,
+      "proper_divisor_residuals_tested": 2,
+      "q": 41,
+      "u": 68921
+    },
+    {
+      "F": 416,
+      "N": 24400896,
+      "R": 147,
+      "channel": "E",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 8689,
+      "proper_divisor_residuals_tested": 2,
+      "q": 47,
+      "u": 47
+    },
+    {
+      "F": 2,
+      "N": 6991548,
+      "R": 243,
+      "channel": "M",
+      "eta": 9,
+      "g": 27,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 10993,
+      "proper_divisor_residuals_tested": 2,
+      "q": 53,
+      "u": 53
+    },
+    {
+      "F": 2,
+      "N": 6991548,
+      "R": 243,
+      "channel": "M",
+      "eta": 9,
+      "g": 27,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 10993,
+      "proper_divisor_residuals_tested": 2,
+      "q": 53,
+      "u": 148877
+    },
+    {
+      "F": 56,
+      "N": 4230464,
+      "R": 4275,
+      "channel": "E",
+      "eta": 15,
+      "g": 285,
+      "k0": 19,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 15889,
+      "proper_divisor_residuals_tested": 8,
+      "q": 71,
+      "u": 71
+    },
+    {
+      "F": 336,
+      "N": 24046848,
+      "R": 1083,
+      "channel": "E",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 19081,
+      "proper_divisor_residuals_tested": 2,
+      "q": 71,
+      "u": 71
+    },
+    {
+      "F": 352,
+      "N": 167146496,
+      "R": 171,
+      "channel": "E",
+      "eta": 3,
+      "g": 57,
+      "k0": 19,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 19993,
+      "proper_divisor_residuals_tested": 2,
+      "q": 71,
+      "u": 71
+    },
+    {
+      "F": 1344,
+      "N": 384749568,
+      "R": 75,
+      "channel": "E",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 20089,
+      "proper_divisor_residuals_tested": 2,
+      "q": 71,
+      "u": 71
+    },
+    {
+      "F": 95088,
+      "N": 1925888009472,
+      "R": 75,
+      "channel": "E",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 20089,
+      "proper_divisor_residuals_tested": 2,
+      "q": 71,
+      "u": 357911
+    },
+    {
+      "F": 4,
+      "N": 109197456,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 27409,
+      "proper_divisor_residuals_tested": 2,
+      "q": 83,
+      "u": 83
+    },
+    {
+      "F": 4,
+      "N": 109197456,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 27409,
+      "proper_divisor_residuals_tested": 2,
+      "q": 83,
+      "u": 571787
+    },
+    {
+      "F": 3068,
+      "N": 2343743376,
+      "R": 27,
+      "channel": "E",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 27529,
+      "proper_divisor_residuals_tested": 1,
+      "q": 83,
+      "u": 83
+    },
+    {
+      "F": 606,
+      "N": 98052012,
+      "R": 867,
+      "channel": "E",
+      "eta": 17,
+      "g": 51,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 30817,
+      "proper_divisor_residuals_tested": 2,
+      "q": 89,
+      "u": 89
+    },
+    {
+      "F": 10,
+      "N": 845241900,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 31657,
+      "proper_divisor_residuals_tested": 1,
+      "q": 89,
+      "u": 89
+    },
+    {
+      "F": 10,
+      "N": 845241900,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 31657,
+      "proper_divisor_residuals_tested": 1,
+      "q": 89,
+      "u": 704969
+    },
+    {
+      "F": 19422,
+      "N": 114295867452,
+      "R": 9075,
+      "channel": "E",
+      "eta": 55,
+      "g": 165,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 31729,
+      "proper_divisor_residuals_tested": 8,
+      "q": 101,
+      "u": 1030301
+    },
+    {
+      "F": 86,
+      "N": 20168892,
+      "R": 6075,
+      "channel": "E",
+      "eta": 15,
+      "g": 405,
+      "k0": 27,
+      "obstruction_counts": {
+        "negative_discriminant": 2,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 6
+      },
+      "p": 34729,
+      "proper_divisor_residuals_tested": 8,
+      "q": 101,
+      "u": 101
+    },
+    {
+      "F": 23462,
+      "N": 611567108284,
+      "R": 2475,
+      "channel": "E",
+      "eta": 15,
+      "g": 165,
+      "k0": 11,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 38329,
+      "proper_divisor_residuals_tested": 8,
+      "q": 101,
+      "u": 1030301
+    },
+    {
+      "F": 2,
+      "N": 48403644,
+      "R": 867,
+      "channel": "M",
+      "eta": 17,
+      "g": 51,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 39937,
+      "proper_divisor_residuals_tested": 2,
+      "q": 101,
+      "u": 101
+    },
+    {
+      "F": 2,
+      "N": 48403644,
+      "R": 867,
+      "channel": "M",
+      "eta": 17,
+      "g": 51,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 39937,
+      "proper_divisor_residuals_tested": 2,
+      "q": 101,
+      "u": 1030301
+    },
+    {
+      "F": 298,
+      "N": 242168508,
+      "R": 675,
+      "channel": "E",
+      "eta": 5,
+      "g": 135,
+      "k0": 27,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 40129,
+      "proper_divisor_residuals_tested": 5,
+      "q": 101,
+      "u": 101
+    },
+    {
+      "F": 1164,
+      "N": 434921616,
+      "R": 507,
+      "channel": "E",
+      "eta": 13,
+      "g": 39,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 45289,
+      "proper_divisor_residuals_tested": 2,
+      "q": 107,
+      "u": 107
+    },
+    {
+      "F": 1380,
+      "N": 611312400,
+      "R": 363,
+      "channel": "E",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 45433,
+      "proper_divisor_residuals_tested": 2,
+      "q": 107,
+      "u": 107
+    },
+    {
+      "F": 4,
+      "N": 233960208,
+      "R": 243,
+      "channel": "M",
+      "eta": 9,
+      "g": 27,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 45553,
+      "proper_divisor_residuals_tested": 2,
+      "q": 107,
+      "u": 107
+    },
+    {
+      "F": 4,
+      "N": 233960208,
+      "R": 243,
+      "channel": "M",
+      "eta": 9,
+      "g": 27,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 45553,
+      "proper_divisor_residuals_tested": 2,
+      "q": 107,
+      "u": 1225043
+    },
+    {
+      "F": 1388,
+      "N": 2267542288,
+      "R": 99,
+      "channel": "E",
+      "eta": 3,
+      "g": 33,
+      "k0": 11,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 45697,
+      "proper_divisor_residuals_tested": 2,
+      "q": 107,
+      "u": 107
+    },
+    {
+      "F": 2,
+      "N": 67790508,
+      "R": 1083,
+      "channel": "M",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 49993,
+      "proper_divisor_residuals_tested": 2,
+      "q": 113,
+      "u": 113
+    },
+    {
+      "F": 2,
+      "N": 67790508,
+      "R": 1083,
+      "channel": "M",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 49993,
+      "proper_divisor_residuals_tested": 2,
+      "q": 113,
+      "u": 1442897
+    },
+    {
+      "F": 350,
+      "N": 50347500,
+      "R": 11163,
+      "channel": "E",
+      "eta": 61,
+      "g": 183,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 63913,
+      "proper_divisor_residuals_tested": 2,
+      "q": 137,
+      "u": 137
+    },
+    {
+      "F": 124,
+      "N": 151069200,
+      "R": 3675,
+      "channel": "E",
+      "eta": 7,
+      "g": 525,
+      "k0": 75,
+      "obstruction_counts": {
+        "negative_discriminant": 2,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 5
+      },
+      "p": 64969,
+      "proper_divisor_residuals_tested": 8,
+      "q": 131,
+      "u": 131
+    },
+    {
+      "F": 4,
+      "N": 429350928,
+      "R": 363,
+      "channel": "M",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 68281,
+      "proper_divisor_residuals_tested": 2,
+      "q": 131,
+      "u": 131
+    },
+    {
+      "F": 4,
+      "N": 429350928,
+      "R": 363,
+      "channel": "M",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 68281,
+      "proper_divisor_residuals_tested": 2,
+      "q": 131,
+      "u": 2248091
+    },
+    {
+      "F": 652,
+      "N": 1949101840,
+      "R": 315,
+      "channel": "E",
+      "eta": 3,
+      "g": 105,
+      "k0": 35,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 68329,
+      "proper_divisor_residuals_tested": 5,
+      "q": 131,
+      "u": 131
+    },
+    {
+      "F": 2,
+      "N": 155429052,
+      "R": 1875,
+      "channel": "M",
+      "eta": 25,
+      "g": 75,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 86929,
+      "proper_divisor_residuals_tested": 4,
+      "q": 149,
+      "u": 149
+    },
+    {
+      "F": 2,
+      "N": 155429052,
+      "R": 1875,
+      "channel": "M",
+      "eta": 25,
+      "g": 75,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 86929,
+      "proper_divisor_residuals_tested": 4,
+      "q": 149,
+      "u": 3307949
+    },
+    {
+      "F": 442,
+      "N": 101393916,
+      "R": 17787,
+      "channel": "E",
+      "eta": 77,
+      "g": 231,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 101929,
+      "proper_divisor_residuals_tested": 8,
+      "q": 173,
+      "u": 173
+    },
+    {
+      "F": 8,
+      "N": 3572218176,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 111409,
+      "proper_divisor_residuals_tested": 2,
+      "q": 167,
+      "u": 167
+    },
+    {
+      "F": 8,
+      "N": 3572218176,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 111409,
+      "proper_divisor_residuals_tested": 2,
+      "q": 167,
+      "u": 4657463
+    },
+    {
+      "F": 2,
+      "N": 243292668,
+      "R": 2523,
+      "channel": "M",
+      "eta": 29,
+      "g": 87,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 117193,
+      "proper_divisor_residuals_tested": 2,
+      "q": 173,
+      "u": 173
+    },
+    {
+      "F": 2,
+      "N": 243292668,
+      "R": 2523,
+      "channel": "M",
+      "eta": 29,
+      "g": 87,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 117193,
+      "proper_divisor_residuals_tested": 2,
+      "q": 173,
+      "u": 5177717
+    },
+    {
+      "F": 5702,
+      "N": 16874145276,
+      "R": 147,
+      "channel": "E",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 119569,
+      "proper_divisor_residuals_tested": 2,
+      "q": 173,
+      "u": 173
+    },
+    {
+      "F": 13318,
+      "N": 92054575356,
+      "R": 27,
+      "channel": "E",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 119689,
+      "proper_divisor_residuals_tested": 1,
+      "q": 173,
+      "u": 173
+    },
+    {
+      "F": 488,
+      "N": 136456512,
+      "R": 21675,
+      "channel": "E",
+      "eta": 85,
+      "g": 255,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 124249,
+      "proper_divisor_residuals_tested": 8,
+      "q": 191,
+      "u": 191
+    },
+    {
+      "F": 16232,
+      "N": 150972793152,
+      "R": 27,
+      "channel": "E",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 145897,
+      "proper_divisor_residuals_tested": 1,
+      "q": 191,
+      "u": 191
+    },
+    {
+      "F": 2,
+      "N": 359254716,
+      "R": 3267,
+      "channel": "M",
+      "eta": 33,
+      "g": 99,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 151969,
+      "proper_divisor_residuals_tested": 5,
+      "q": 197,
+      "u": 197
+    },
+    {
+      "F": 2,
+      "N": 359254716,
+      "R": 3267,
+      "channel": "M",
+      "eta": 33,
+      "g": 99,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 151969,
+      "proper_divisor_residuals_tested": 5,
+      "q": 197,
+      "u": 7645373
+    },
+    {
+      "F": 6,
+      "N": 3295077948,
+      "R": 363,
+      "channel": "M",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 154873,
+      "proper_divisor_residuals_tested": 2,
+      "q": 197,
+      "u": 197
+    },
+    {
+      "F": 6,
+      "N": 3295077948,
+      "R": 363,
+      "channel": "M",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 154873,
+      "proper_divisor_residuals_tested": 2,
+      "q": 197,
+      "u": 7645373
+    },
+    {
+      "F": 22,
+      "N": 44396603196,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 155209,
+      "proper_divisor_residuals_tested": 1,
+      "q": 197,
+      "u": 197
+    },
+    {
+      "F": 22,
+      "N": 44396603196,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 155209,
+      "proper_divisor_residuals_tested": 1,
+      "q": 197,
+      "u": 7645373
+    },
+    {
+      "F": 2842,
+      "N": 8963645030956,
+      "R": 42867,
+      "channel": "E",
+      "eta": 3,
+      "g": 14289,
+      "k0": 4763,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 174289,
+      "proper_divisor_residuals_tested": 5,
+      "q": 233,
+      "u": 12649337
+    },
+    {
+      "F": 4,
+      "N": 2234039568,
+      "R": 1083,
+      "channel": "M",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 205033,
+      "proper_divisor_residuals_tested": 2,
+      "q": 227,
+      "u": 227
+    },
+    {
+      "F": 4,
+      "N": 2234039568,
+      "R": 1083,
+      "channel": "M",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 205033,
+      "proper_divisor_residuals_tested": 2,
+      "q": 227,
+      "u": 11697083
+    },
+    {
+      "F": 2,
+      "N": 594410028,
+      "R": 4563,
+      "channel": "M",
+      "eta": 39,
+      "g": 117,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 212593,
+      "proper_divisor_residuals_tested": 5,
+      "q": 233,
+      "u": 233
+    },
+    {
+      "F": 2,
+      "N": 594410028,
+      "R": 4563,
+      "channel": "M",
+      "eta": 39,
+      "g": 117,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 212593,
+      "proper_divisor_residuals_tested": 5,
+      "q": 233,
+      "u": 12649337
+    },
+    {
+      "F": 6,
+      "N": 5451755436,
+      "R": 507,
+      "channel": "M",
+      "eta": 13,
+      "g": 39,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 216649,
+      "proper_divisor_residuals_tested": 2,
+      "q": 233,
+      "u": 233
+    },
+    {
+      "F": 6,
+      "N": 5451755436,
+      "R": 507,
+      "channel": "M",
+      "eta": 13,
+      "g": 39,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 216649,
+      "proper_divisor_residuals_tested": 2,
+      "q": 233,
+      "u": 12649337
+    },
+    {
+      "F": 1532554,
+      "N": 6019773878353708,
+      "R": 99,
+      "channel": "E",
+      "eta": 3,
+      "g": 33,
+      "k0": 11,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 217057,
+      "proper_divisor_residuals_tested": 2,
+      "q": 233,
+      "u": 12649337
+    },
+    {
+      "F": 2600,
+      "N": 4846920000,
+      "R": 2523,
+      "channel": "E",
+      "eta": 29,
+      "g": 87,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 225961,
+      "proper_divisor_residuals_tested": 2,
+      "q": 239,
+      "u": 239
+    },
+    {
+      "F": 16,
+      "N": 41924928768,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 228409,
+      "proper_divisor_residuals_tested": 2,
+      "q": 239,
+      "u": 239
+    },
+    {
+      "F": 16,
+      "N": 41924928768,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 228409,
+      "proper_divisor_residuals_tested": 2,
+      "q": 239,
+      "u": 13651919
+    },
+    {
+      "F": 15058,
+      "N": 19560469782188,
+      "R": 69075,
+      "channel": "E",
+      "eta": 15,
+      "g": 4605,
+      "k0": 307,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 246769,
+      "proper_divisor_residuals_tested": 8,
+      "q": 281,
+      "u": 22188041
+    },
+    {
+      "F": 4,
+      "N": 3020204688,
+      "R": 1323,
+      "channel": "M",
+      "eta": 21,
+      "g": 63,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 250681,
+      "proper_divisor_residuals_tested": 5,
+      "q": 251,
+      "u": 251
+    },
+    {
+      "F": 4,
+      "N": 3020204688,
+      "R": 1323,
+      "channel": "M",
+      "eta": 21,
+      "g": 63,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 250681,
+      "proper_divisor_residuals_tested": 5,
+      "q": 251,
+      "u": 15813251
+    },
+    {
+      "F": 12,
+      "N": 27309358224,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 251857,
+      "proper_divisor_residuals_tested": 2,
+      "q": 251,
+      "u": 251
+    },
+    {
+      "F": 12,
+      "N": 27309358224,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 251857,
+      "proper_divisor_residuals_tested": 2,
+      "q": 251,
+      "u": 15813251
+    },
+    {
+      "F": 718,
+      "N": 434586732,
+      "R": 46875,
+      "channel": "E",
+      "eta": 125,
+      "g": 375,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 5
+      },
+      "p": 268969,
+      "proper_divisor_residuals_tested": 6,
+      "q": 281,
+      "u": 281
+    },
+    {
+      "F": 3392,
+      "N": 9077968896,
+      "R": 2187,
+      "channel": "E",
+      "eta": 27,
+      "g": 81,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 2
+      },
+      "p": 274489,
+      "proper_divisor_residuals_tested": 3,
+      "q": 263,
+      "u": 263
+    },
+    {
+      "F": 2,
+      "N": 914715132,
+      "R": 6075,
+      "channel": "M",
+      "eta": 45,
+      "g": 135,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 283369,
+      "proper_divisor_residuals_tested": 8,
+      "q": 269,
+      "u": 269
+    },
+    {
+      "F": 2,
+      "N": 914715132,
+      "R": 6075,
+      "channel": "M",
+      "eta": 45,
+      "g": 135,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 283369,
+      "proper_divisor_residuals_tested": 8,
+      "q": 269,
+      "u": 19465109
+    },
+    {
+      "F": 18,
+      "N": 75660733692,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 289369,
+      "proper_divisor_residuals_tested": 2,
+      "q": 269,
+      "u": 269
+    },
+    {
+      "F": 18,
+      "N": 75660733692,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 289369,
+      "proper_divisor_residuals_tested": 2,
+      "q": 269,
+      "u": 19465109
+    },
+    {
+      "F": 95522,
+      "N": 787139142437228,
+      "R": 2763,
+      "channel": "E",
+      "eta": 3,
+      "g": 921,
+      "k0": 307,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 313081,
+      "proper_divisor_residuals_tested": 2,
+      "q": 281,
+      "u": 22188041
+    },
+    {
+      "F": 838,
+      "N": 14799792300,
+      "R": 1875,
+      "channel": "E",
+      "eta": 5,
+      "g": 375,
+      "k0": 75,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 313969,
+      "proper_divisor_residuals_tested": 4,
+      "q": 281,
+      "u": 281
+    },
+    {
+      "F": 1472,
+      "N": 2021609472,
+      "R": 20667,
+      "channel": "E",
+      "eta": 83,
+      "g": 249,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 366217,
+      "proper_divisor_residuals_tested": 2,
+      "q": 311,
+      "u": 311
+    },
+    {
+      "F": 25808,
+      "N": 621427322112,
+      "R": 75,
+      "channel": "E",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 386809,
+      "proper_divisor_residuals_tested": 2,
+      "q": 311,
+      "u": 311
+    },
+    {
+      "F": 34420,
+      "N": 645843646886800,
+      "R": 14139,
+      "channel": "E",
+      "eta": 3,
+      "g": 4713,
+      "k0": 1571,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 467497,
+      "proper_divisor_residuals_tested": 2,
+      "q": 347,
+      "u": 41781923
+    },
+    {
+      "F": 55418,
+      "N": 3252352852716,
+      "R": 27,
+      "channel": "E",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 498409,
+      "proper_divisor_residuals_tested": 1,
+      "q": 353,
+      "u": 353
+    },
+    {
+      "F": 250392,
+      "N": 94608495878976,
+      "R": 440067,
+      "channel": "E",
+      "eta": 383,
+      "g": 1149,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 571969,
+      "proper_divisor_residuals_tested": 2,
+      "q": 503,
+      "u": 127263527
+    },
+    {
+      "F": 27952,
+      "N": 897730135296,
+      "R": 147,
+      "channel": "E",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 586609,
+      "proper_divisor_residuals_tested": 2,
+      "q": 383,
+      "u": 383
+    },
+    {
+      "F": 2,
+      "N": 2766298812,
+      "R": 12675,
+      "channel": "M",
+      "eta": 65,
+      "g": 195,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 592609,
+      "proper_divisor_residuals_tested": 8,
+      "q": 389,
+      "u": 389
+    },
+    {
+      "F": 2,
+      "N": 2766298812,
+      "R": 12675,
+      "channel": "M",
+      "eta": 65,
+      "g": 195,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 592609,
+      "proper_divisor_residuals_tested": 8,
+      "q": 389,
+      "u": 58863869
+    },
+    {
+      "F": 1651614,
+      "N": 3183376215430332,
+      "R": 6627,
+      "channel": "E",
+      "eta": 47,
+      "g": 141,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 598657,
+      "proper_divisor_residuals_tested": 2,
+      "q": 389,
+      "u": 58863869
+    },
+    {
+      "F": 67294,
+      "N": 5284739002812,
+      "R": 27,
+      "channel": "E",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 605257,
+      "proper_divisor_residuals_tested": 1,
+      "q": 389,
+      "u": 389
+    },
+    {
+      "F": 1898,
+      "N": 4333692012,
+      "R": 34347,
+      "channel": "E",
+      "eta": 107,
+      "g": 321,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 608857,
+      "proper_divisor_residuals_tested": 2,
+      "q": 401,
+      "u": 401
+    },
+    {
+      "F": 2,
+      "N": 3030294444,
+      "R": 13467,
+      "channel": "M",
+      "eta": 67,
+      "g": 201,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 629737,
+      "proper_divisor_residuals_tested": 2,
+      "q": 401,
+      "u": 401
+    },
+    {
+      "F": 2,
+      "N": 3030294444,
+      "R": 13467,
+      "channel": "M",
+      "eta": 67,
+      "g": 201,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 629737,
+      "proper_divisor_residuals_tested": 2,
+      "q": 401,
+      "u": 64481201
+    },
+    {
+      "F": 2002,
+      "N": 171971427628,
+      "R": 963,
+      "channel": "E",
+      "eta": 3,
+      "g": 321,
+      "k0": 107,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 642241,
+      "proper_divisor_residuals_tested": 2,
+      "q": 401,
+      "u": 401
+    },
+    {
+      "F": 42902,
+      "N": 2214219669612,
+      "R": 75,
+      "channel": "E",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 643129,
+      "proper_divisor_residuals_tested": 2,
+      "q": 401,
+      "u": 401
+    },
+    {
+      "F": 17192982,
+      "N": 355605151952945772,
+      "R": 75,
+      "channel": "E",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 643129,
+      "proper_divisor_residuals_tested": 2,
+      "q": 401,
+      "u": 64481201
+    },
+    {
+      "F": 10752,
+      "N": 149477916672,
+      "R": 1587,
+      "channel": "E",
+      "eta": 23,
+      "g": 69,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 741457,
+      "proper_divisor_residuals_tested": 2,
+      "q": 431,
+      "u": 431
+    },
+    {
+      "F": 2152,
+      "N": 229540669760,
+      "R": 1035,
+      "channel": "E",
+      "eta": 3,
+      "g": 345,
+      "k0": 115,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 742009,
+      "proper_divisor_residuals_tested": 5,
+      "q": 431,
+      "u": 431
+    },
+    {
+      "F": 9699864,
+      "N": 121654958572715328,
+      "R": 363,
+      "channel": "E",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 742681,
+      "proper_divisor_residuals_tested": 2,
+      "q": 431,
+      "u": 80062991
+    },
+    {
+      "F": 16,
+      "N": 245873073408,
+      "R": 243,
+      "channel": "M",
+      "eta": 9,
+      "g": 27,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 742801,
+      "proper_divisor_residuals_tested": 2,
+      "q": 431,
+      "u": 431
+    },
+    {
+      "F": 16,
+      "N": 245873073408,
+      "R": 243,
+      "channel": "M",
+      "eta": 9,
+      "g": 27,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 742801,
+      "proper_divisor_residuals_tested": 2,
+      "q": 431,
+      "u": 80062991
+    },
+    {
+      "F": 4,
+      "N": 16604823696,
+      "R": 4107,
+      "channel": "M",
+      "eta": 37,
+      "g": 111,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 780889,
+      "proper_divisor_residuals_tested": 2,
+      "q": 443,
+      "u": 443
+    },
+    {
+      "F": 4,
+      "N": 16604823696,
+      "R": 4107,
+      "channel": "M",
+      "eta": 37,
+      "g": 111,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 780889,
+      "proper_divisor_residuals_tested": 2,
+      "q": 443,
+      "u": 86938307
+    },
+    {
+      "F": 2182,
+      "N": 6584634492,
+      "R": 45387,
+      "channel": "E",
+      "eta": 123,
+      "g": 369,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 804697,
+      "proper_divisor_residuals_tested": 5,
+      "q": 461,
+      "u": 461
+    },
+    {
+      "F": 2,
+      "N": 108531696300,
+      "R": 675,
+      "channel": "M",
+      "eta": 3,
+      "g": 225,
+      "k0": 75,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 2
+      },
+      "p": 805729,
+      "proper_divisor_residuals_tested": 5,
+      "q": 449,
+      "u": 449
+    },
+    {
+      "F": 2,
+      "N": 108531696300,
+      "R": 675,
+      "channel": "M",
+      "eta": 3,
+      "g": 225,
+      "k0": 75,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 2
+      },
+      "p": 805729,
+      "proper_divisor_residuals_tested": 5,
+      "q": 449,
+      "u": 90518849
+    },
+    {
+      "F": 2,
+      "N": 4604267004,
+      "R": 17787,
+      "channel": "M",
+      "eta": 77,
+      "g": 231,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 832297,
+      "proper_divisor_residuals_tested": 8,
+      "q": 461,
+      "u": 461
+    },
+    {
+      "F": 2,
+      "N": 4604267004,
+      "R": 17787,
+      "channel": "M",
+      "eta": 77,
+      "g": 231,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 832297,
+      "proper_divisor_residuals_tested": 8,
+      "q": 461,
+      "u": 97972181
+    },
+    {
+      "F": 6874,
+      "N": 65349344508,
+      "R": 5043,
+      "channel": "E",
+      "eta": 41,
+      "g": 123,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 845041,
+      "proper_divisor_residuals_tested": 2,
+      "q": 461,
+      "u": 461
+    },
+    {
+      "F": 1378,
+      "N": 107672419452,
+      "R": 3075,
+      "channel": "E",
+      "eta": 5,
+      "g": 615,
+      "k0": 123,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 847009,
+      "proper_divisor_residuals_tested": 5,
+      "q": 461,
+      "u": 461
+    },
+    {
+      "F": 3180,
+      "N": 14167472400,
+      "R": 23763,
+      "channel": "E",
+      "eta": 89,
+      "g": 267,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 848593,
+      "proper_divisor_residuals_tested": 2,
+      "q": 467,
+      "u": 467
+    },
+    {
+      "F": 14,
+      "N": 230332172028,
+      "R": 363,
+      "channel": "M",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 849721,
+      "proper_divisor_residuals_tested": 2,
+      "q": 461,
+      "u": 461
+    },
+    {
+      "F": 14,
+      "N": 230332172028,
+      "R": 363,
+      "channel": "M",
+      "eta": 11,
+      "g": 33,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 849721,
+      "proper_divisor_residuals_tested": 2,
+      "q": 461,
+      "u": 97972181
+    },
+    {
+      "F": 56698,
+      "N": 4445879211132,
+      "R": 75,
+      "channel": "E",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 850009,
+      "proper_divisor_residuals_tested": 2,
+      "q": 461,
+      "u": 461
+    },
+    {
+      "F": 460,
+      "N": 26384192400,
+      "R": 13083,
+      "channel": "E",
+      "eta": 7,
+      "g": 1869,
+      "k0": 267,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 859273,
+      "proper_divisor_residuals_tested": 5,
+      "q": 467,
+      "u": 467
+    },
+    {
+      "F": 4,
+      "N": 19452447888,
+      "R": 4563,
+      "channel": "M",
+      "eta": 39,
+      "g": 117,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 867793,
+      "proper_divisor_residuals_tested": 5,
+      "q": 467,
+      "u": 467
+    },
+    {
+      "F": 4,
+      "N": 19452447888,
+      "R": 4563,
+      "channel": "M",
+      "eta": 39,
+      "g": 117,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 867793,
+      "proper_divisor_residuals_tested": 5,
+      "q": 467,
+      "u": 101847563
+    },
+    {
+      "F": 573486,
+      "N": 514049118402348,
+      "R": 210675,
+      "channel": "E",
+      "eta": 265,
+      "g": 795,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 875089,
+      "proper_divisor_residuals_tested": 8,
+      "q": 521,
+      "u": 141420761
+    },
+    {
+      "F": 32,
+      "N": 1350368351232,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 917689,
+      "proper_divisor_residuals_tested": 2,
+      "q": 479,
+      "u": 479
+    },
+    {
+      "F": 32,
+      "N": 1350368351232,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 917689,
+      "proper_divisor_residuals_tested": 2,
+      "q": 479,
+      "u": 109902239
+    },
+    {
+      "F": 24,
+      "N": 879517728576,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1011889,
+      "proper_divisor_residuals_tested": 2,
+      "q": 503,
+      "u": 503
+    },
+    {
+      "F": 24,
+      "N": 879517728576,
+      "R": 147,
+      "channel": "M",
+      "eta": 7,
+      "g": 21,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1011889,
+      "proper_divisor_residuals_tested": 2,
+      "q": 503,
+      "u": 127263527
+    },
+    {
+      "F": 30680,
+      "N": 5208004859200,
+      "R": 99,
+      "channel": "E",
+      "eta": 3,
+      "g": 33,
+      "k0": 11,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1011937,
+      "proper_divisor_residuals_tested": 2,
+      "q": 503,
+      "u": 503
+    },
+    {
+      "F": 56,
+      "N": 4789053278016,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 1012009,
+      "proper_divisor_residuals_tested": 1,
+      "q": 503,
+      "u": 503
+    },
+    {
+      "F": 56,
+      "N": 4789053278016,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 1012009,
+      "proper_divisor_residuals_tested": 1,
+      "q": 503,
+      "u": 127263527
+    },
+    {
+      "F": 2,
+      "N": 6197476092,
+      "R": 21675,
+      "channel": "M",
+      "eta": 85,
+      "g": 255,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 1014649,
+      "proper_divisor_residuals_tested": 8,
+      "q": 509,
+      "u": 509
+    },
+    {
+      "F": 2,
+      "N": 6197476092,
+      "R": 21675,
+      "channel": "M",
+      "eta": 85,
+      "g": 255,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 1014649,
+      "proper_divisor_residuals_tested": 8,
+      "q": 509,
+      "u": 131872229
+    },
+    {
+      "F": 6048330,
+      "N": 55861165669650300,
+      "R": 2523,
+      "channel": "E",
+      "eta": 29,
+      "g": 87,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1033801,
+      "proper_divisor_residuals_tested": 2,
+      "q": 509,
+      "u": 131872229
+    },
+    {
+      "F": 34,
+      "N": 1829199169788,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1036249,
+      "proper_divisor_residuals_tested": 2,
+      "q": 509,
+      "u": 509
+    },
+    {
+      "F": 34,
+      "N": 1829199169788,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1036249,
+      "proper_divisor_residuals_tested": 2,
+      "q": 509,
+      "u": 131872229
+    },
+    {
+      "F": 3530142,
+      "N": 19477953670276332,
+      "R": 8427,
+      "channel": "E",
+      "eta": 53,
+      "g": 159,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1077337,
+      "proper_divisor_residuals_tested": 2,
+      "q": 521,
+      "u": 141420761
+    },
+    {
+      "F": 6,
+      "N": 60951804588,
+      "R": 2523,
+      "channel": "M",
+      "eta": 29,
+      "g": 87,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1083241,
+      "proper_divisor_residuals_tested": 2,
+      "q": 521,
+      "u": 521
+    },
+    {
+      "F": 6,
+      "N": 60951804588,
+      "R": 2523,
+      "channel": "M",
+      "eta": 29,
+      "g": 87,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1083241,
+      "proper_divisor_residuals_tested": 2,
+      "q": 521,
+      "u": 141420761
+    },
+    {
+      "F": 8186322,
+      "N": 104745801508450092,
+      "R": 1587,
+      "channel": "E",
+      "eta": 23,
+      "g": 69,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1084177,
+      "proper_divisor_residuals_tested": 2,
+      "q": 521,
+      "u": 141420761
+    },
+    {
+      "F": 58,
+      "N": 5708731315884,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 1085737,
+      "proper_divisor_residuals_tested": 1,
+      "q": 521,
+      "u": 521
+    },
+    {
+      "F": 58,
+      "N": 5708731315884,
+      "R": 27,
+      "channel": "M",
+      "eta": 3,
+      "g": 9,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 1085737,
+      "proper_divisor_residuals_tested": 1,
+      "q": 521,
+      "u": 141420761
+    },
+    {
+      "F": 1454,
+      "N": 3608796012,
+      "R": 192027,
+      "channel": "E",
+      "eta": 253,
+      "g": 759,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 1103017,
+      "proper_divisor_residuals_tested": 8,
+      "q": 569,
+      "u": 569
+    },
+    {
+      "F": 569436,
+      "N": 641056796955792,
+      "R": 588747,
+      "channel": "E",
+      "eta": 443,
+      "g": 1329,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1148377,
+      "proper_divisor_residuals_tested": 2,
+      "q": 659,
+      "u": 286191179
+    },
+    {
+      "F": 718260,
+      "N": 1019929214365200,
+      "R": 458643,
+      "channel": "E",
+      "eta": 391,
+      "g": 1173,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 1278481,
+      "proper_divisor_residuals_tested": 8,
+      "q": 659,
+      "u": 286191179
+    },
+    {
+      "F": 6190,
+      "N": 65405582700,
+      "R": 14283,
+      "channel": "E",
+      "eta": 69,
+      "g": 207,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 1280761,
+      "proper_divisor_residuals_tested": 5,
+      "q": 569,
+      "u": 569
+    },
+    {
+      "F": 10,
+      "N": 220879142700,
+      "R": 1083,
+      "channel": "M",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1293961,
+      "proper_divisor_residuals_tested": 2,
+      "q": 569,
+      "u": 569
+    },
+    {
+      "F": 10,
+      "N": 220879142700,
+      "R": 1083,
+      "channel": "M",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1293961,
+      "proper_divisor_residuals_tested": 2,
+      "q": 569,
+      "u": 184220009
+    },
+    {
+      "F": 506,
+      "N": 3118262444,
+      "R": 346275,
+      "channel": "E",
+      "eta": 135,
+      "g": 2565,
+      "k0": 19,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 19
+      },
+      "p": 1297249,
+      "proper_divisor_residuals_tested": 20,
+      "q": 641,
+      "u": 641
+    },
+    {
+      "F": 17020,
+      "N": 4591144659600,
+      "R": 243,
+      "channel": "E",
+      "eta": 3,
+      "g": 81,
+      "k0": 27,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 0
+      },
+      "p": 1378033,
+      "proper_divisor_residuals_tested": 2,
+      "q": 587,
+      "u": 587
+    },
+    {
+      "F": 2,
+      "N": 36491671084,
+      "R": 8019,
+      "channel": "M",
+      "eta": 27,
+      "g": 297,
+      "k0": 11,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 5
+      },
+      "p": 1398577,
+      "proper_divisor_residuals_tested": 6,
+      "q": 593,
+      "u": 593
+    },
+    {
+      "F": 2,
+      "N": 36491671084,
+      "R": 8019,
+      "channel": "M",
+      "eta": 27,
+      "g": 297,
+      "k0": 11,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 5
+      },
+      "p": 1398577,
+      "proper_divisor_residuals_tested": 6,
+      "q": 593,
+      "u": 208527857
+    },
+    {
+      "F": 8,
+      "N": 164844301632,
+      "R": 1875,
+      "channel": "M",
+      "eta": 25,
+      "g": 75,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 1433329,
+      "proper_divisor_residuals_tested": 4,
+      "q": 599,
+      "u": 599
+    },
+    {
+      "F": 8,
+      "N": 164844301632,
+      "R": 1875,
+      "channel": "M",
+      "eta": 25,
+      "g": 75,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 1433329,
+      "proper_divisor_residuals_tested": 4,
+      "q": 599,
+      "u": 214921799
+    },
+    {
+      "F": 28136,
+      "N": 1422567189312,
+      "R": 867,
+      "channel": "E",
+      "eta": 17,
+      "g": 51,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1434337,
+      "proper_divisor_residuals_tested": 2,
+      "q": 599,
+      "u": 599
+    },
+    {
+      "F": 86882,
+      "N": 1579708554645100,
+      "R": 715275,
+      "channel": "E",
+      "eta": 51,
+      "g": 14025,
+      "k0": 275,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 3,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 23
+      },
+      "p": 1601209,
+      "proper_divisor_residuals_tested": 26,
+      "q": 761,
+      "u": 440711081
+    },
+    {
+      "F": 2,
+      "N": 12377789484,
+      "R": 34347,
+      "channel": "M",
+      "eta": 107,
+      "g": 321,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1609177,
+      "proper_divisor_residuals_tested": 2,
+      "q": 641,
+      "u": 641
+    },
+    {
+      "F": 2,
+      "N": 12377789484,
+      "R": 34347,
+      "channel": "M",
+      "eta": 107,
+      "g": 321,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1609177,
+      "proper_divisor_residuals_tested": 2,
+      "q": 641,
+      "u": 263374721
+    },
+    {
+      "F": 3178,
+      "N": 123004051436,
+      "R": 13851,
+      "channel": "E",
+      "eta": 27,
+      "g": 513,
+      "k0": 19,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 5
+      },
+      "p": 1629673,
+      "proper_divisor_residuals_tested": 6,
+      "q": 641,
+      "u": 641
+    },
+    {
+      "F": 3186,
+      "N": 175676364972,
+      "R": 9747,
+      "channel": "E",
+      "eta": 19,
+      "g": 513,
+      "k0": 27,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 1633777,
+      "proper_divisor_residuals_tested": 5,
+      "q": 641,
+      "u": 641
+    },
+    {
+      "F": 11308074,
+      "N": 245898889784562348,
+      "R": 2883,
+      "channel": "E",
+      "eta": 31,
+      "g": 93,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1640641,
+      "proper_divisor_residuals_tested": 2,
+      "q": 641,
+      "u": 263374721
+    },
+    {
+      "F": 28826,
+      "N": 1597894304748,
+      "R": 1083,
+      "channel": "E",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1642441,
+      "proper_divisor_residuals_tested": 2,
+      "q": 641,
+      "u": 641
+    },
+    {
+      "F": 43738,
+      "N": 3747591769596,
+      "R": 507,
+      "channel": "E",
+      "eta": 13,
+      "g": 39,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1705129,
+      "proper_divisor_residuals_tested": 2,
+      "q": 653,
+      "u": 653
+    },
+    {
+      "F": 171236,
+      "N": 42568667940395792,
+      "R": 19827,
+      "channel": "E",
+      "eta": 3,
+      "g": 6609,
+      "k0": 2203,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1717297,
+      "proper_divisor_residuals_tested": 2,
+      "q": 659,
+      "u": 286191179
+    },
+    {
+      "F": 22435164,
+      "N": 995096425988533392,
+      "R": 867,
+      "channel": "E",
+      "eta": 17,
+      "g": 51,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1736257,
+      "proper_divisor_residuals_tested": 2,
+      "q": 659,
+      "u": 286191179
+    },
+    {
+      "F": 44,
+      "N": 6648506410128,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1737049,
+      "proper_divisor_residuals_tested": 2,
+      "q": 659,
+      "u": 659
+    },
+    {
+      "F": 44,
+      "N": 6648506410128,
+      "R": 75,
+      "channel": "M",
+      "eta": 5,
+      "g": 15,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1737049,
+      "proper_divisor_residuals_tested": 2,
+      "q": 659,
+      "u": 286191179
+    },
+    {
+      "F": 1059198,
+      "N": 2561298620514732,
+      "R": 541875,
+      "channel": "E",
+      "eta": 425,
+      "g": 1275,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 13
+      },
+      "p": 1774609,
+      "proper_divisor_residuals_tested": 14,
+      "q": 761,
+      "u": 440711081
+    },
+    {
+      "F": 2,
+      "N": 14582653116,
+      "R": 38307,
+      "channel": "M",
+      "eta": 113,
+      "g": 339,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1795009,
+      "proper_divisor_residuals_tested": 2,
+      "q": 677,
+      "u": 677
+    },
+    {
+      "F": 2,
+      "N": 14582653116,
+      "R": 38307,
+      "channel": "M",
+      "eta": 113,
+      "g": 339,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1795009,
+      "proper_divisor_residuals_tested": 2,
+      "q": 677,
+      "u": 310288733
+    },
+    {
+      "F": 29090,
+      "N": 1718689271100,
+      "R": 1323,
+      "channel": "E",
+      "eta": 21,
+      "g": 63,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 4
+      },
+      "p": 1831993,
+      "proper_divisor_residuals_tested": 5,
+      "q": 677,
+      "u": 677
+    },
+    {
+      "F": 28592,
+      "N": 1753873873777920,
+      "R": 1471875,
+      "channel": "E",
+      "eta": 25,
+      "g": 58875,
+      "k0": 2355,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 4,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 1847809,
+      "proper_divisor_residuals_tested": 11,
+      "q": 911,
+      "u": 756058031
+    },
+    {
+      "F": 4,
+      "N": 387112630544,
+      "R": 1539,
+      "channel": "M",
+      "eta": 9,
+      "g": 171,
+      "k0": 19,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 1864417,
+      "proper_divisor_residuals_tested": 4,
+      "q": 683,
+      "u": 683
+    },
+    {
+      "F": 4,
+      "N": 387112630544,
+      "R": 1539,
+      "channel": "M",
+      "eta": 9,
+      "g": 171,
+      "k0": 19,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 1,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 1864417,
+      "proper_divisor_residuals_tested": 4,
+      "q": 683,
+      "u": 318611987
+    },
+    {
+      "F": 12,
+      "N": 550241967888,
+      "R": 1083,
+      "channel": "M",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1864873,
+      "proper_divisor_residuals_tested": 2,
+      "q": 683,
+      "u": 683
+    },
+    {
+      "F": 12,
+      "N": 550241967888,
+      "R": 1083,
+      "channel": "M",
+      "eta": 19,
+      "g": 57,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 1
+      },
+      "p": 1864873,
+      "proper_divisor_residuals_tested": 2,
+      "q": 683,
+      "u": 318611987
+    },
+    {
+      "F": 2,
+      "N": 16189205244,
+      "R": 41067,
+      "channel": "M",
+      "eta": 117,
+      "g": 351,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 1924537,
+      "proper_divisor_residuals_tested": 8,
+      "q": 701,
+      "u": 701
+    },
+    {
+      "F": 2,
+      "N": 16189205244,
+      "R": 41067,
+      "channel": "M",
+      "eta": 117,
+      "g": 351,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 1924537,
+      "proper_divisor_residuals_tested": 8,
+      "q": 701,
+      "u": 344472101
+    },
+    {
+      "F": 84652,
+      "N": 1857825577939728,
+      "R": 1839363,
+      "channel": "E",
+      "eta": 83,
+      "g": 22161,
+      "k0": 267,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 1932001,
+      "proper_divisor_residuals_tested": 5,
+      "q": 971,
+      "u": 915498611
+    },
+    {
+      "F": 11862,
+      "N": 295906913532,
+      "R": 9075,
+      "channel": "E",
+      "eta": 55,
+      "g": 165,
+      "k0": 3,
+      "obstruction_counts": {
+        "negative_discriminant": 1,
+        "nonsquare_discriminant": 0,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 7
+      },
+      "p": 1956529,
+      "proper_divisor_residuals_tested": 8,
+      "q": 701,
+      "u": 701
+    },
+    {
+      "F": 721198,
+      "N": 231526534150732540,
+      "R": 5715,
+      "channel": "E",
+      "eta": 3,
+      "g": 1905,
+      "k0": 635,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 1959889,
+      "proper_divisor_residuals_tested": 5,
+      "q": 701,
+      "u": 344472101
+    },
+    {
+      "F": 3502,
+      "N": 1607651492348,
+      "R": 1683,
+      "channel": "E",
+      "eta": 3,
+      "g": 561,
+      "k0": 187,
+      "obstruction_counts": {
+        "negative_discriminant": 0,
+        "nonsquare_discriminant": 2,
+        "parity_failure": 0,
+        "residual_not_dividing_tail_sum": 3
+      },
+      "p": 1963921,
+      "proper_divisor_residuals_tested": 5,
+      "q": 701,
+      "u": 701
+    }
+  ],
+  "scope": {
+    "prime_square_bound": null,
+    "source": "prime_squares.json"
+  },
+  "theorem": "prime-square fixed-sum divisor obstruction",
+  "universal_status": "proved in core.tex; this file is finite corroboration"
+}

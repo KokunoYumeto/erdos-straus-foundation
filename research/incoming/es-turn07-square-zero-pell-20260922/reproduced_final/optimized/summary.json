@@ -1,0 +1,46 @@
+{
+  "box": {
+    "E_full": 3637,
+    "E_proper": 2151,
+    "E_traces": 5788,
+    "M_full": 3910,
+    "M_proper": 1768,
+    "M_traces": 5678,
+    "divisor_words": 5616298,
+    "primes": 143,
+    "shells": 171732,
+    "squareful_trace_shells": 2522,
+    "squareful_trace_tiles": 4139
+  },
+  "checks": 26310,
+  "examples": {
+    "general_sumshift_examples": 6,
+    "pell_prime_examples": 3
+  },
+  "fixed_tail_sum": {
+    "eligible_residual_candidates": 507,
+    "integral_returns": 0,
+    "proper_tail_sums": 51,
+    "proper_trace_tags": 69
+  },
+  "prefix": {
+    "bound": 67369,
+    "exceptions": [
+      67369
+    ],
+    "primes": 817,
+    "shells": 1422
+  },
+  "prime_squares": {
+    "bound": 2000000,
+    "shells": 167,
+    "state_counts": {
+      "E_full": 52,
+      "E_proper": 83,
+      "M_full": 56,
+      "M_proper": 94
+    }
+  },
+  "priority_claim": false,
+  "universal_ES_proved": false
+}

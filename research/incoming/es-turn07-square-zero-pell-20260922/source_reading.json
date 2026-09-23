@@ -1,0 +1,60 @@
+{
+  "content_search": {
+    "exhaustive": false,
+    "historical_priority_claim": false,
+    "matching_prior_statement_established": false,
+    "queries": [
+      "Erdos Straus Pell",
+      "Erdos Straus factor sum",
+      "Erdos Straus nilpotent",
+      "prime-square trace",
+      "Hensel exponent"
+    ],
+    "scope": "Completed local corpus index routing, original author TeX reading where available, and scoped current GitHub code search"
+  },
+  "current_source": "research/incoming/es-turn07-square-zero-pell-20260922/INTEGRATION_AUDIT.md",
+  "reading_scope": "READING_AND_DELTA.md; not a full repository proof audit",
+  "repository": "KokunoYumeto/erdos-straus-foundation",
+  "revision": "20709bee872ad10e4cc7d7b976d975e24532a803",
+  "sources": [
+    {
+      "author": "Yamamoto, K.",
+      "locator": "Lemma2, equation(4), printed p38, PDF page2",
+      "read_method": "Primary PDF page image",
+      "title": "On the Diophantine equation 4/n=1/x+1/y+1/z",
+      "url": "https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf",
+      "used": "Inherited exterior congruences",
+      "year": 1965
+    },
+    {
+      "author": "Elsholtz, C., and Tao, T.",
+      "canonical_source_id": "PUBUNIT-1D778B56AC2B71BF35EB40F9",
+      "local_source": "research/incoming/es-turn07-global-receiver-determinant-20260921/literature/Elsholtz_Tao_2013_arxiv_1107.1010v6/egyptian-count18.tex",
+      "locator": "Original author TeX lines 487--627; Section2, Propositions2.2 and2.6, equations(2.1)--(2.22)",
+      "read_method": "Original arXiv author TeX",
+      "sha256": "B0469A67A737B7F4E77778310C87E22F5783AE9704F70AA55919A4A40104611C",
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "url": "https://arxiv.org/pdf/1107.1010",
+      "used": "TypeI/II coordinates; exact sextuple crosswalk",
+      "version": "v6; journal year retained separately from PDF title-date metadata",
+      "year": 2013
+    },
+    {
+      "author": "Sutherland, A.V.",
+      "locator": "Theorem18.1,p1",
+      "read_method": "Primary course notes text",
+      "title": "Dirichlet L-functions, primes in arithmetic progressions",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "used": "Classical Dirichlet theorem only for proved reduced CRT sharpness progressions",
+      "year": 2017
+    },
+    {
+      "author": "The Clankers",
+      "locator": "Sections2--3, trace and deletion definitions",
+      "title": "Modulo-24 mixed prime-shell trace return",
+      "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/20709bee872ad10e4cc7d7b976d975e24532a803/research/incoming/es-turn07-mod24-ray-trace-20260922/core.tex",
+      "used": "Inherited original trace and prior deletion domains; identities rederived here",
+      "year": 2026
+    }
+  ]
+}

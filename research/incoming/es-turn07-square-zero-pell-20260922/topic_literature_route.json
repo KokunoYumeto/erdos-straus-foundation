@@ -1,0 +1,47 @@
+{
+  "corpus_index": "Zeta-Function-Foundation/config/literature_index_entrypoint.json",
+  "queries": [
+    "Erdos Straus Pell",
+    "Erdos Straus factor sum",
+    "Erdos Straus nilpotent",
+    "prime-square trace",
+    "Hensel exponent",
+    "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+    "On the Diophantine equation 4/n=1/x+1/y+1/z",
+    "Dirichlet L-functions primes in arithmetic progressions"
+  ],
+  "records": [
+    {
+      "authors": ["Christian Elsholtz", "Terence Tao"],
+      "canonical_source_id": "PUBUNIT-1D778B56AC2B71BF35EB40F9",
+      "file_id": "LFILE-673AD677C0A95DF398958D71",
+      "locator": "Original author TeX lines 487--627; Section 2, Propositions 2.2 and 2.6, equations (2.1)--(2.22)",
+      "repository_copy": "../es-turn07-global-receiver-determinant-20260921/literature/Elsholtz_Tao_2013_arxiv_1107.1010v6/egyptian-count18.tex",
+      "sha256": "B0469A67A737B7F4E77778310C87E22F5783AE9704F70AA55919A4A40104611C",
+      "source_kind": "original arXiv author TeX",
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "used_for": "Type-I/II coordinate lineage and exact coordinate crosswalk"
+    },
+    {
+      "author": "K. Yamamoto",
+      "canonical_source_id": null,
+      "index_result": "No exact indexed local source record found by title query",
+      "locator": "Lemma 2, equation (4), printed page 38, PDF page 2",
+      "source_kind": "primary journal PDF page image; author TeX unavailable in the routed corpus",
+      "title": "On the Diophantine equation 4/n=1/x+1/y+1/z",
+      "used_for": "Inherited exterior congruences",
+      "url": "https://doi.org/10.2206/kyushumfs.19.37"
+    },
+    {
+      "author": "Andrew V. Sutherland",
+      "canonical_source_id": null,
+      "index_result": "No exact indexed local source record found by title query",
+      "locator": "Theorem 18.1, page 1",
+      "source_kind": "primary course-notes PDF; TeX unavailable in the routed corpus",
+      "title": "Dirichlet L-functions, primes in arithmetic progressions",
+      "used_for": "Dirichlet's theorem only after reduced CRT classes are proved",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf"
+    }
+  ],
+  "scope": "Routing records identify sources; the reading/use evidence is recorded by exact locators above. Searches were scoped and do not establish historical priority."
+}

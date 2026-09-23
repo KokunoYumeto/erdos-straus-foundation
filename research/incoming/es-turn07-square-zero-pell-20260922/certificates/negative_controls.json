@@ -1,0 +1,53 @@
+{
+  "ET_TypeII_coordinate_equations": 9,
+  "controls": [
+    {
+      "name": "even number of negative trace factors",
+      "rejected": true
+    },
+    {
+      "name": "reduce channel exponent modulo two",
+      "rejected": true
+    },
+    {
+      "name": "zero formal defect outside original exponent box",
+      "rejected": true
+    },
+    {
+      "expected": [
+        2401,
+        29
+      ],
+      "formal_word": [
+        2401,
+        29
+      ],
+      "name": "outside-box zero sum"
+    },
+    {
+      "name": "retaining old q after Pell factor-sum map",
+      "not_available": true,
+      "old_u": 83,
+      "target_a": 6853
+    },
+    {
+      "name": "forgotten primitive gcd quotient",
+      "normalization_gcd": 2,
+      "rejected": true
+    },
+    {
+      "G_residue": 9,
+      "R": 27,
+      "name": "square gate substituted for full gate",
+      "rejected": true
+    },
+    {
+      "R": 27,
+      "name": "unrestricted Pell point substituted for an integer-tail return",
+      "rejected": true,
+      "w": 13363314840,
+      "w_mod_R": 18
+    }
+  ],
+  "decoded_order_tests": 12
+}

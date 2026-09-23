@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-23",
+  "engine": "pdflatex",
+  "outputs": [
+    {
+      "file": "workbench.pdf",
+      "pages": 16,
+      "sha256": "1538B2B9EDF61E2BA9569396AA3D547ECA6A071C8004DFBB72209C60B01A9F30"
+    },
+    {
+      "file": "preprint.pdf",
+      "pages": 5,
+      "sha256": "7FDC306C175D53493CD3DA03BCE8451BFD7548BF7EAB27F4F1EAC340ABFF7E1D"
+    }
+  ],
+  "visual_check": {
+    "method": "Poppler page rendering and contact-sheet inspection",
+    "result": "accepted",
+    "notes": "All pages were rendered. The two new exact-data figures and their surrounding proof pages were inspected at readable scale; no clipping, overlap, missing glyph, or broken reference was found."
+  }
+}
