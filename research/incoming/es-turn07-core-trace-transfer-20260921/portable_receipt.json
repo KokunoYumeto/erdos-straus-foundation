@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "checks": 574178,
+  "capacity_boxes": 288000,
+  "capacity_bound": [24, 24, 500],
+  "capacity_digest": "6d5d3e17929482593ffacc9d0d5c6683811b3707685a271434b4c89d99345bae",
+  "core_trace_prime_bound": 1000,
+  "core_transfers": 68,
+  "normal_and_optimized_agree": true,
+  "universal_ES_proved": false,
+  "independent_mathematical_review": false,
+  "scope_note": "Observed portable check.py replay. The larger local main and separate replay have different scopes and totals. General theorems have written proofs; finite scans do not establish universal occupancy."
+}
