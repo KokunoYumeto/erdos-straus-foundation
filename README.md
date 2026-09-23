@@ -254,6 +254,32 @@ proof locators without reconstructing a programme timeline.
     [Short PDF](output/pdf/ES_Complete_Mixed_Fibres_20260922.pdf);
     [complete workbench PDF](output/pdf/ES_Mixed_Fibres_and_Hard_Middle_Spectra_20260922.pdf);
     [pinned coordinate proofs](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L74-L641).
+26. [Original trace defects and factor-sum/Pell returns](research/incoming/es-turn07-square-zero-pell-20260922/README.md)
+    constructs the complete square-zero fine-defect coordinate from the original
+    E/M divisor boxes, proves its mixed-channel law and sharp unit-direction
+    saturation threshold, and classifies every prime-power middle trace. Its
+    factor-sum map has exact positivity, gcd reduction, inverse fibres and a Pell
+    specialization. A distinct fixed-tail-sum classifier proves that every
+    proper prime-square trace with word `q` or `q^3` has no same-sum integral
+    target whose residual is a proper divisor of the source residual, even when
+    channel and word change. The least-prefix certificate at `p=67369` refutes
+    universal nonincreasing trace repair, not Erdős--Straus.
+    [Complete PDF](research/incoming/es-turn07-square-zero-pell-20260922/workbench.pdf);
+    [pinned proofs](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6c064a07298cdba38352998364ce6b7cb3efa973/research/incoming/es-turn07-square-zero-pell-20260922/core.tex#L340-L1046).
+27. [Affine channels, mixed-order sections, and upward return](research/incoming/es-turn07-mixed-order-upward-20260923/README.md)
+    proves the exact common-trace locus and affine E/M shift, then identifies the
+    labelled two-channel count as an injective odd-order lattice operator with
+    an alternating inverse and an orbit-parity cokernel. A partial radix chain
+    reduces the remaining problem to an exact quotient-support cover and proves
+    that two channel labels cannot replace a missing final radix when the
+    residual steps stay in a proper subgroup. The complete mixed-order decoder
+    and divisor-DAG criterion retain every bounded exponent and cyclic carry.
+    Separately, the labelled `4a+s` fibre crosses the `p=67369` obstruction by
+    an exact upward shell return and extends along a reduced prime progression.
+    [Complete PDF](research/incoming/es-turn07-mixed-order-upward-20260923/workbench.pdf);
+    [short PDF](research/incoming/es-turn07-mixed-order-upward-20260923/preprint.pdf);
+    [pinned affine and quotient proofs](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L101-L365);
+    [pinned factor-exchange proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L611-L786).
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
@@ -326,6 +352,15 @@ new first corrections and a different exhaustive observation hierarchy, and
 its two hard-prime progressions prove all three inherited inverse exponents
 sharp inside the class \(1\bmod840\). These are post-witness and inverse-fibre
 results; they do not force a first trace source at every hard prime.
+The twenty-sixth continuation returns to the unoccupied source itself. It
+constructs the square-zero defect without replacing the original divisor box,
+proves two complete source-changing classifiers, and supplies exact
+counterexamples to nonincreasing or fixed-tail termination rules. The
+twenty-seventh then proves what combining the E/M labels can and cannot do:
+the affine pairing retains the full coefficient vector through a signed
+inverse, while a partial chain succeeds only through a genuine quotient-support
+cover. This is the current structural target; finite census size is not treated
+as evidence for arbitrary-prime occupancy.
 After composing the earlier diagonal and radius-eight returns, every residual
 exterior state has shape radius at least nine. These results isolate, but do
 not prove, the remaining unbounded-shape occupancy statement. None asserts the
@@ -342,6 +377,9 @@ The [22 September proof bulletin](DAILY_RESULTS_20260922.md) records the sharp
 receiver exponents, singular defect, first corrections, mixed trace return,
 nine-ray boundary, obstruction families, exact receiver composite, complete
 mixed-return fibres, fixed-residual middle spectrum and hard-middle sharpness.
+The [23 September proof bulletin](DAILY_RESULTS_20260923.md) records the
+square-zero obstructions, affine channel operator, mixed-order section,
+quotient-support criterion and upward factor exchange.
 
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with

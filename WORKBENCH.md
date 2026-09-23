@@ -187,6 +187,26 @@ for both original first-half channels:
   family gives singular powers \(9,4,3/2,-3/2\), all first corrections and the
   observation hierarchy \(0,2,3,9\); two prime classes modulo \(9240\) prove the
   inherited inverse powers sharp on middle states in \(1\bmod840\).
+- [Square-zero trace defects and factor-sum/Pell returns](research/incoming/es-turn07-square-zero-pell-20260922/README.md):
+  the original E/M divisor boxes carry an exact square-zero fine defect, a
+  complete bounded coefficient partition and a sharp unit-direction
+  saturation theorem. Every prime-power middle trace is classified. The
+  factor-sum map has an exact quadratic gate, primitive reduction and complete
+  inverse fibre; its prime-square specialization is Pell. A separate
+  fixed-tail-sum map has an exact residual-divisor/discriminant inverse and a
+  universal prime-square obstruction. The least (p=67369) prefix proves that
+  a universal trace repair cannot require the first denominator to decrease.
+  None of these obstructions is promoted to an ES counterexample.
+- [Affine channels, mixed-order sections and upward return](research/incoming/es-turn07-mixed-order-upward-20260923/README.md):
+  the exact common-trace relation is (c_E=c_M-(p-1)/K) in
+  (mathbb Z/D). The paired channel operator (I+T_\omega) is injective,
+  has an alternating orbitwise inverse and has only the stated parity
+  cokernel. A partial mixed-order chain reduces paired positivity to an exact
+  quotient-support cover, with a sharp odd-cycle threshold and a proper-subgroup
+  no-go theorem. The complete plus-factor fibre gives a different exact map
+  that raises (a) by one at (p=67369) and extends along a reduced prime
+  progression. This crosses the earlier termination invariant without claiming
+  a universal terminating algorithm.
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
@@ -259,6 +279,15 @@ free-module and metric fibres. Its separate fixed-residual calculation proves
 the hard-middle sharpness of all three inherited inverse exponents. This closes
 the earlier M-fibre gap but leaves initial trace-source occupancy and sharpness
 on the narrower mixed-return image open.
+The square-zero and affine-channel continuations return to the source-level
+positivity problem. They classify two failed termination invariants, then prove
+that labelled E/M pairing is an information-preserving lattice transform rather
+than an averaging argument. The partial-chain theorem isolates the missing
+datum as an actual quotient-support cover; a coefficient total, a generated
+subgroup or a larger finite census cannot replace that condition. The upward
+plus-factor map shows that changing the retained invariant can cross the least
+nonincreasing-(a) obstruction, but it does not yet operate from every hard
+prime source.
 
 The [19 September bulletin](DAILY_RESULTS_20260919.md),
 [20 September bridge bulletin](DAILY_RESULTS_20260920.md), and
@@ -266,6 +295,10 @@ The [19 September bulletin](DAILY_RESULTS_20260919.md),
 [22 September receiver/trace/fibre/spectrum bulletin](DAILY_RESULTS_20260922.md) give stable
 result IDs and exact locators. They are mathematical indexes, not a programme
 chronology.
+The [23 September structural bulletin](DAILY_RESULTS_20260923.md) records the
+square-zero source laws, two exact source-changing fibres, the affine channel
+operator, mixed-order and partial-chain sections, the quotient-support
+obstruction and the controlled upward return.
 
 ## Failed steps that remain useful
 

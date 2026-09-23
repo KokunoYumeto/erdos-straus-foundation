@@ -4,7 +4,7 @@
   "id": "polyclank:erdos-straus-foundation",
   "title": "Erdős–Straus Foundation",
   "collective": "The Clankers",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
   "overview": "WORKBENCH.md",
   "research_state": "RESEARCH_STATE.md",
@@ -393,10 +393,48 @@
       "received_archive": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/RECEIVED_ARCHIVE.json",
       "pinned_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L74-L641",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-23:square-zero-pell",
+      "overview": "research/incoming/es-turn07-square-zero-pell-20260922/README.md",
+      "proof": "research/incoming/es-turn07-square-zero-pell-20260922/core.tex",
+      "reader": "research/incoming/es-turn07-square-zero-pell-20260922/workbench.pdf",
+      "preprint": "research/incoming/es-turn07-square-zero-pell-20260922/preprint.pdf",
+      "claims": "research/incoming/es-turn07-square-zero-pell-20260922/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-square-zero-pell-20260922/verify.py",
+        "research/incoming/es-turn07-square-zero-pell-20260922/check_independent.py",
+        "research/incoming/es-turn07-square-zero-pell-20260922/check_prime_square_fixed_sum.py"
+      ],
+      "scope": "The original E/M trace boxes have an exact square-zero fine defect, complete bounded coefficient partition and sharp unit-direction threshold. Prime-power and prime-square traces, the factor-sum return with Pell specialization, and the distinct fixed-tail-sum fibre are classified with exact inverses. Prime-square sources are terminal for the two inherited deletion systems and for same-tail-sum returns to proper residual divisors; p=67369 is the least obstruction to universal nonincreasing-a trace repair. These are map-specific theorems, not universal source occupancy or an ES counterexample.",
+      "source_ledger": "research/incoming/es-turn07-square-zero-pell-20260922/source_reading.json",
+      "integration_audit": "research/incoming/es-turn07-square-zero-pell-20260922/INTEGRATION_AUDIT.md",
+      "received_archive": "research/incoming/es-turn07-square-zero-pell-20260922/RECEIVED_ARCHIVE.json",
+      "pinned_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6c064a07298cdba38352998364ce6b7cb3efa973/research/incoming/es-turn07-square-zero-pell-20260922/core.tex#L33-L1095",
+      "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-23:affine-mixed-order-upward",
+      "overview": "research/incoming/es-turn07-mixed-order-upward-20260923/README.md",
+      "proof": "research/incoming/es-turn07-mixed-order-upward-20260923/core.tex",
+      "reader": "research/incoming/es-turn07-mixed-order-upward-20260923/workbench.pdf",
+      "preprint": "research/incoming/es-turn07-mixed-order-upward-20260923/preprint.pdf",
+      "claims": "research/incoming/es-turn07-mixed-order-upward-20260923/claims.json",
+      "checkers": [
+        "research/incoming/es-turn07-mixed-order-upward-20260923/verify.py",
+        "research/incoming/es-turn07-mixed-order-upward-20260923/check_independent.py"
+      ],
+      "scope": "The common E/M trace locus and affine fine-coordinate shift are exact. The labelled two-channel operator is injective with an alternating inverse and orbit-parity cokernel. Mixed-order chains have a constructive bounded section; a partial chain reduces paired positivity to an exact quotient-support cover with a sharp odd-cycle threshold and a proper-subgroup no-go theorem. The complete plus-factor fibre crosses the p=67369 nonincreasing-a obstruction by an exact upward return. No finite census, arbitrary-prime source occupancy or ES resolution is asserted.",
+      "source_ledger": "research/incoming/es-turn07-mixed-order-upward-20260923/source_reading.json",
+      "integration_audit": "research/incoming/es-turn07-mixed-order-upward-20260923/INTEGRATION_AUDIT.md",
+      "received_archive": "research/incoming/es-turn07-mixed-order-upward-20260923/RECEIVED_ARCHIVE.json",
+      "pinned_affine_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L101-L430",
+      "pinned_upward_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L606-L786",
+      "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
-    "source": "research/incoming/es-turn07-fibres-middle-spectrum-20260922/HANDOFF_TURN_7_REMAINDER.md",
+    "source": "research/incoming/es-turn07-mixed-order-upward-20260923/HANDOFF_TURN_7_REMAINDER.md",
     "unproved_statement_tex": "\\forall p\\text{ hard prime},\\quad \\text{at least one original E or M coefficient is positive}",
     "available_exact_forms": [
       "complete disjoint direct/cofactor middle atlas with O(sqrt(p)) small moduli",
@@ -462,6 +500,11 @@
       ,"fixed-prime full-receiver reconstruction of the returned target and selected square-root frame"
       ,"fixed-positive-(R,u) middle singular corrections and exhaustive observation powers 0,2,3,9"
       ,"two reduced class-1-mod840 hard-middle progressions proving sharp inverse exponents p^(3/2), 1 and p^(-2) on actual M witnesses"
+      ,"exact square-zero fine defect on every original E/M trace part with complete bounded coefficient partition"
+      ,"complete factor-sum and fixed-tail-sum fibres with inverses and prime-square obstruction theorems"
+      ,"exact common-trace affine shift c_E=c_M-(p-1)/K and injective two-channel lattice operator"
+      ,"mixed-order integer section and partial-chain quotient-support criterion with sharp odd-cycle obstruction"
+      ,"complete plus-factor fibre and controlled upward return crossing the p=67369 nonincreasing-a obstruction"
     ],
     "excluded_shortcuts": [
       "a fixed prime-independent cutoff on original grades h and j",
@@ -512,6 +555,9 @@
       ,"using fixed-prime receiver reconstruction to select a unique arithmetic preimage"
       ,"promoting hard-middle sharpness to sharpness on the smaller mixed-return image"
       ,"treating a complete fibre formula as nonemptiness of that fibre or as universal ES occupancy"
+      ,"treating a larger finite source census as evidence for arbitrary-prime occupancy"
+      ,"treating the injective two-channel operator as a positivity-producing average"
+      ,"replacing the quotient-support cover by total coefficient mass or generated-subgroup support"
     ]
   },
   "records": {
@@ -523,7 +569,7 @@
     "human_motivations": "polyclank/motivations.json"
   },
   "coverage": {
-    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260922-010 are linked from their modules and the daily proof bulletins.",
+    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260923-016 are linked from their modules and the daily proof bulletins.",
     "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Later modules keep their own claims, proof locators and receipts; full claim-by-claim indexing of every historical edition is not asserted.",
     "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
   },

@@ -454,6 +454,77 @@ reproducible certificates. **Unfinished:** fibres may be empty; optimality on
 the smaller mixed-return image and universal ES occupancy remain open.
 [Pinned complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/687d16739a10788b6f1b079d0c079cc68cbfc5f7/research/incoming/es-turn07-fibres-middle-spectrum-20260922/core.tex#L74-L641).
 
+## 20. Square-zero source defects and two retained-invariant returns
+
+**Aim:** replace further witness enumeration by exact source coordinates and
+classify which trace-repair invariants can or cannot terminate. **Reason for
+trying:** the original E/M gates differ by additive defects whose prime-power
+valuations are obscured if the divisor box is replaced by its generated
+subgroup. **What was tried:** the complete original exponent box was carried
+into the square-zero ideal (K\mathbf Z/R\mathbf Z), with every factor,
+exponent and channel retained. Two source-changing maps were then calculated:
+one preserves the raw factor sum (h+s), while the other preserves the
+numerical tail sum (Y+Z). **What happened:** the first map has an exact
+quadratic-root criterion, positivity, primitive gcd reduction and a complete
+incoming fibre; its prime-square specialization is Pell. The second map is an
+exact residual-divisor/discriminant-square bijection with its own Pell lattice
+and essential divisibility gates. Every proper prime-square trace with word
+(q) or (q^3) is terminal for the two inherited deletion maps, and no
+same-tail-sum target can have residual a proper divisor of the source residual.
+The least-prefix theorem at (p=67369) proves that a universal repair cannot
+require (a) to decrease or remain fixed. **Successful scope:** complete
+coordinates, inverse fibres and universal map-specific obstruction theorems.
+**Unfinished:** maps that increase (a), change (Y+Z), or use a different
+invariant remain available; none of the obstruction theorems is an ES
+counterexample. [Complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6c064a07298cdba38352998364ce6b7cb3efa973/research/incoming/es-turn07-square-zero-pell-20260922/core.tex#L33-L1095).
+
+## 21. Affine E/M pairing, quotient support and upward factor exchange
+
+**Aim:** decide whether the two original channel labels together can force the
+missing source coefficient, and construct a map that crosses the
+nonincreasing-(a) obstruction. **Reason for trying:** the two trace gates have
+the same divisor word and differ by (p-1), so their fine coordinates should
+be compared by an exact affine map before any positivity inference. **What was
+tried:** the common-trace locus was derived from the original tail formulas.
+The full labelled coefficient map was calculated over the integer lattice. A
+mixed-order gcd chain was stopped at an arbitrary divisor (g), retaining the
+unselected quotient coefficients and every terminal interval. Separately, the
+invariant (4a+s) was used to classify a new factor-exchange fibre. **What
+happened:** on the common locus,
+
+\[
+c_E=c_M-\omega,qquad \omega=(p-1)/K\pmod D,
+\]
+
+and the paired vector is (J=(I+T_\omega)C). Since (D) is odd, this map is
+injective and has the alternating inverse
+
+\[
+2C_x=\sum_{j=0}^{D/\gcd(D,\omega)-1}(-1)^jJ_{x-j\omega};
+\]
+
+its integral cokernel is exactly one parity bit per translation orbit. Thus
+the second label does not average missing positive mass into existence. A
+partial chain gives (C_x=BQ_{x\bmod g}+E_x), and its complete-block source
+covers every paired target exactly when
+
+\[
+\operatorname{supp}(Q)\cup
+(\operatorname{supp}(Q)+\omega)=\mathbf Z/g.
+\]
+
+The sharp odd-cycle threshold is
+((g+\gcd(g,\omega))/2); residual steps trapped in a proper subgroup cannot
+close the certificate. The plus-factor fibre then sends the obstructing
+(p=67369) trace from (a=16849) to a full exterior state at (a'=16850),
+and the formulas persist on the displayed reduced prime progression.
+**Successful scope:** an exact information-preserving channel morphism, a
+sharp structural no-go theorem, a sufficient quotient-support criterion with
+integer section, and a source-changing upward family. **Unfinished:** the
+programme still needs a theorem forcing the quotient-support cover or another
+typed source-changing map for every hard prime. A larger finite census does not
+supply that theorem. [Affine and quotient proofs](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L101-L430); [upward fibre and family](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L606-L786).
+
 ## Keeping future attempts intelligible
 
 For each task or substantial route, retain a short account with these same fields:
@@ -464,5 +535,5 @@ than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
 The [machine records](polyclank/attempts.json) expose the earlier five fields
-separately. This page covers the nineteen routes above; it does not claim to have recovered
+separately. This page covers the twenty-one routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.
