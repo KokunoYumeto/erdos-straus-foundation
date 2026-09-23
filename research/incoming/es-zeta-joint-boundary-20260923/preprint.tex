@@ -1,0 +1,238 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,microtype}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\setlength{\emergencystretch}{2em}
+\title{Higher mixed support and a retained boundary\\in original Erd\H{o}s--Straus packets}
+\author{The Clankers}
+\date{September 23, 2026}
+\begin{document}\maketitle
+\begin{abstract}
+Full-support methods from the current Split-Zero programme suggest retaining
+joint divisor directions and the boundary of their finite arithmetic action.
+We construct, for every $n\ge2$, original $2\cdot3^n$-word ES trace packets at
+infinitely many hard primes whose two full words use all $n$ directions.
+Every proper coordinate face and both previously used capacity criteria miss
+them. An explicit ordinary-radix inverse recovers the witnesses, with a
+rank-one boundary term. A separate arithmetic example has uniform primary
+marginals but no full middle word. This is a theorem about the stated
+original packets, not universal ES occupancy or a new abstract radix theorem.
+\end{abstract}
+
+\paragraph{Original source.}
+Let $p\equiv1\pmod4$ be prime, $p/4<a<p/2$, $R=4a-p$, and retain
+$u\mid a^2$. With $g=\gcd(a,u)$, put
+$(h,r,s)=(g^2/u,u/g,a/g)$. The classical Type-I/II maps are
+\[
+ E:(a,hs\kappa,phr\kappa),\quad\kappa=(pr+s)/R;
+ \qquad M:(a,phs\lambda,phr\lambda),\quad\lambda=(r+s)/R.
+\]
+Their full gates are $R\mid4u+1$ and $R\mid p+4u$; their rational tail sums
+are integral precisely at the squared gates. Define
+$K=\prod_{q^e\parallel R}q^{\lceil e/2\rceil}$ and $D=R/K$.
+Then $D\mid K$. On a trace,
+\[
+ p^\eta u/a=-1+Kc\pmod R,\quad c\in\mathbb Z/D,
+ \qquad\eta=1\ (E),\ 0\ (M).
+\]
+The full gate is $c=0$ and the tail denominator is $D/\gcd(D,c)$.
+These formulas follow directly from $a=hrs,u=hr^2$; the Type-I/II
+antecedent is [1, \S2]. Every prime exponent of $u$ remains in its actual
+interval $[0,2v_q(a)]$.
+
+\begin{theorem}[Unbounded original mixed order]
+For every $n\ge2$, infinitely many primes $p\equiv1\pmod{840}$ have a
+specified original M trace packet with $2\cdot3^n$ words, fine modulus
+$D=3^n-2$, and exactly two full words. Each requires all $n$ selected
+centred-exponent directions to be nonzero. Fixing any one of them at zero
+leaves no full word. Every fine residue nevertheless has at least two
+preimages, with the explicit bounded inverse below.
+\end{theorem}
+\begin{proof}
+Put $V=3^n$, $L=(V-1)/2$, $C=L-2$, $K=3D$ and $R=3D^2$. Fix a unit
+$\ell\pmod D$. Choose distinct primes $q_0,\ldots,q_n>7$ in the reduced
+classes
+\[
+ q_0\equiv-1+K\ell C\pmod R,
+ \qquad q_{j+1}\equiv1+K\ell3^j\pmod R\quad(0\le j<n).
+\]
+Every class is $1$ or $-1$ at each prime of $R$, so Dirichlet applies [2].
+Set $A=\prod q_i$ and use CRT to impose
+\[
+ H\equiv\frac{R+1}{4}A^{-1}\pmod{210},\qquad H\equiv1\pmod A,
+ \qquad p=4AH-R.
+\]
+This prime progression has modulus $840A^2$ and is reduced: $p\equiv1$
+modulo 840 and $p\equiv-R\ne0$ at each prime of $A$. There are infinitely
+many prime members $p>R$. Their original shell is $a=AH$.
+
+Take the actual divisors
+\[
+ u=Hq_0^{1+\sigma}\prod_{j=0}^{n-1}q_{j+1}^{1+\beta_j},
+ \qquad\sigma=\pm1,\quad\beta_j\in\{-1,0,1\}.
+\]
+Since $K^2=0\pmod R$, including the negative powers with their inverses,
+\[
+ c=\ell\left(\sigma C-\sum_j3^j\beta_j\right)\pmod D.
+\]
+All words are therefore traces. Balanced ternary bijects the $3^n$ choices
+onto $[-L,L]$. The unique representative of $C\pmod{2L-1}$ in that interval
+is $C=L-2$, with digits $(-1,1,\ldots,1)$. The negative branch has the
+opposite digits. This proves both full words and the proper-face claim.
+
+For the complete inverse put $J=\sum_j3^j(\beta_j+1)$, so $0\le J<V=D+2$.
+The two branches have respectively
+$c=2\ell-\ell J$ and $c=-\ell-\ell J$. For any target $c$, solve the
+single residue for the least $J_0\in[0,D)$; the entire fibre is
+$J=J_0+kD<V$. Ternary integer division recovers every original digit.
+Each branch has one or two preimages of each residue, proving the bound.
+The gcd normalization then returns the ordered original M denominators,
+with quotient $(r+s)/R$ integral at each full word.
+\end{proof}
+
+The preceding capacity tests genuinely fail here. In nonnegative
+coordinates the lengths are $(2,3,\ldots,3)$ and the steps are
+$(3\ell,\ell,3\ell,\ldots,3^{n-1}\ell)$. All steps are units modulo $D$,
+but every length is less than $D$, so a subgroup-order chain cannot even
+start. The total unit width is $2n+1<D-1$. The success comes from the
+coherent consecutive powers, not larger one-coordinate capacity.
+
+\paragraph{Exact support map.}
+On the original word basis let $E_A$ keep the words whose active exponent
+set is contained in $A\subseteq I=\{0,\ldots,n-1\}$. Then
+$E_AE_B=E_{A\cap B}$. The zero-symbol join algebra of Split-Zero 032 FSJ1--4
+acts by $[z_B]\mapsto E_{I\setminus B}$. Its original M\"obius idempotent
+$\xi_B$ projects exactly onto active set $I\setminus B$. If $G$ is the
+diagonal full-gate projection, then
+\[
+ \operatorname{Tr}(GE_A)=0\ (A\ne I),\qquad\operatorname{Tr}(GE_I)=2.
+\]
+Thus the two actual witnesses occupy the highest mixed component. This is
+an exact finite support representation, not an asserted extension of the
+original analytic ST4 action.
+
+\begin{proposition}[Retained boundary and integral image]
+Let $T_se_x=e_{x+s}$ on $C_D$, with $s$ a unit. For any integer coefficient
+vector $v$, let $V=\sum v_x$ and $b=(1-T_s)v$. Then
+\[
+ v_x=\frac{V-\sum_{j=1}^{D-1}(D-j)b_{x+js}}D.
+\]
+The image consists exactly of $\sum b_x=0$ and the divisibility by $D$ of
+one displayed numerator. The map $v\mapsto(V,b)$ is injective and its
+cokernel is $\mathbb Z/D$. If $B=\frac12\sum|b_x|$, then
+\[
+ v_x\ge\left\lceil\frac{V-(D-1)B}{D}\right\rceil.
+\]
+For an actual consecutive source $P e_J=e_{c_0+sJ}$, $0\le J<V$, and
+$Ue_J=e_{J+1\bmod V}$,
+\[
+ PU-T_sP=(e_{c_0}-e_{c_0+sV})e_{V-1}^*.
+\]
+\end{proposition}
+\begin{proof}
+Integrate $b$ along the cycle: $v_{x+js}=v_x+\sum_{i=1}^jb_{x+is}$.
+Summation gives the inverse and its one integral syndrome. Conversely the
+inverse has the specified boundary and mass. The syndrome is onto modulo
+$D$ by $(V,b)=(1,0)$. The range of $v$ is at most $B$, giving
+$V\le D\min v+(D-1)B$; equality occurs at $(0,B,\ldots,B)$.
+The last identity is equality on every source column except the last,
+whose two images are precisely the displayed basis vectors.
+\end{proof}
+The boundary vanishes exactly when $D\mid V$. An equivariant bijection of
+the whole source would require target fibres to have equal size, so it
+cannot erase this defect otherwise. Counting norms and fibre multiplicities
+are retained. The integer section picks one actual word in each occupied
+bin; the minimum-norm section averages its words and need not be integral.
+
+\paragraph{An affine two-channel consequence.}
+If the actual prime satisfies $p\equiv1\pmod K$, put
+$\omega=(p-1)/K\pmod D$. Multiplication by $p$ on the retained affine
+principal part $-1/R+c/D\in\mathbb Q/\mathbb Z$ is
+$c\mapsto c-\omega$, whereas its centred action $c\mapsto pc$ is the
+identity. Thus the same original exponent packet has full count
+$C_{c_0}+C_{c_0-\omega}$ in its two distinct E/M channels. For consecutive
+unit step $\ell$, $V=qD+r$, and $d=\omega\ell^{-1}\pmod D$, its sharp
+uniform minimum is $2q+\mathbf1_{r\ge D-\min(d,D-d)}$: the two remainder
+intervals cover the cycle precisely at that threshold.
+At $p=6841,a=1717,R=27$, the actual two-word part
+$u\in\{101,29189\}$ has M coefficient vector $(1,0,1)$, target $c_0=1$
+and $\omega=1$. Its M gate is empty but its E gate has one original word,
+returning $(1717,436118,175499014)$. No new divisor or channel exponent is
+inserted. The corrected affine origin, not a norm estimate, supplies this
+same-shell return.
+
+\paragraph{A full-shell example.}
+For $n=3$, $D=25$, $K=75$, $R=1875$, take $\ell=3$ and
+\[
+ (q_0,q_1,q_2,q_3)=(599,5851,2551,151),\qquad H=1421=7^2\cdot29.
+\]
+The prime is $p=7673586546314641$ and $a=1918396636579129$. Of all 1215
+original divisors of $a^2$, the full E channel is empty and the M channel
+has exactly the two complementary words in the 54-word packet. One is
+\[
+ u=48646799621,\qquad(h,r,s,\lambda)=(1421,5851,230735399,123062),
+\]
+with ordered denominators
+\[
+ (1918396636579129,\quad309621186685901359565863932118418,
+ \quad7851389822067175981176039082).
+\]
+All primality, exponent, reciprocal and inverse checks are exact in the
+standard-library certificates. This isolated $H$ is coprime to the selected
+primes; the stronger $H\equiv1\pmod A$ was only a convenient condition for
+the infinite-progression proof.
+
+\paragraph{The corresponding local-to-joint obstruction.}
+At $p=34442321771655001$, $a=101\cdot179\cdot6121\cdot8821^2$ and
+$R=675$, choose the original 15 M words
+$u=101\cdot179^2\cdot6121^{1+\beta_1}\cdot8821^{2+\beta_2}$,
+where $-1\le\beta_1\le1$ and $-2\le\beta_2\le2$.
+Their defects modulo 15 are $c=4-\beta_1-\beta_2$, giving
+\[
+ v=(0,1,2,3,3,3,2,1,0,0,0,0,0,0,0).
+\]
+Both primary marginals are exactly uniform: $(5,5,5)$ modulo three and
+$(3,3,3,3,3)$ modulo five. Yet $v_0=0$. In the orthogonal CRT support
+splitting, the constant component is $1$, both first mixed components
+vanish, and the full mixed component is $v-1$, with value $-1$ at zero.
+The full 135-word surrounding box has three E states but no M states.
+This tests the marginal inference, not the ES conjecture.
+
+\paragraph{The finite arithmetic is not an unchanged complex jet.}
+The exact maps corresponding to Zeta 031/032 are
+\[
+ \mathbb Z[C_D]/(T-1)^2\simeq\mathbb Z[\epsilon]/(\epsilon^2,D\epsilon),
+ \qquad c\epsilon\mapsto Kc\pmod R,
+ \qquad c\epsilon\mapsto c/D\pmod{\mathbb Z}.
+\]
+They retain the finite torsion, unlike tensoring the jet with $\mathbb Q$.
+For the actual degree operator $(A_mf)(x)=f(mx)$ on $\ell^2(\mathbb Q/\mathbb Z)$,
+compressing to $C_D$ gives
+\[
+ A_{m,D}^*A_{m,D}=g\Pi_g,\qquad
+ B_{m,D}^*B_{m,D}=mI-g\Pi_g,\qquad g=\gcd(m,D).
+\]
+Here $B$ is the escaped component, and $\Pi_g$ keeps residues divisible by
+$g$. Both formulas follow by counting preimages. At the original ES prime
+$g=1$: the finite action is a permutation and the escaped mass is $(p-1)I$.
+The supported-zero distributional action and the absent label are not
+identified. Neither the infinite norm gain nor the local marginals force
+an initial ES word. Universal positivity of the complete original
+all-shell coefficient sum remains the Stage 7 obligation.
+
+\begin{thebibliography}{9}\small
+\bibitem{1} C. Elsholtz and T. Tao, \emph{Counting the number of solutions
+to the Erd\H{o}s--Straus equation on unit fractions}, J. Aust. Math. Soc.
+94 (2013), 50--105; arXiv:1107.1010, \S2.
+\bibitem{2} A. V. Sutherland, \emph{18.785 Lecture 18}, MIT (2017),
+Theorem 18.1 (Dirichlet).
+\bibitem{3} Split-Zero programme, editions 031--032,
+\texttt{20260923-full-prime-support}, pinned at
+\texttt{8fea210da131ef7714e54eea6becc876c4a55320}:
+031 PD1--10, IA1--9; 032 CR37--41, FSJ1--7, FLC6--21.
+The present finite transfer does not assert a Weil or purity theorem.
+\end{thebibliography}
+\end{document}
