@@ -1,0 +1,23 @@
+\begin{tikzpicture}[
+  font=\small,
+  chain/.style={draw,rounded corners,minimum width=33mm,minimum height=8mm,align=center},
+  every edge/.style={draw,-{Latex[length=2mm]},thick}
+]
+\node[chain] (h9) {$H_9=9\mathbb Z/9=\{0\}$};
+\node[chain,right=16mm of h9] (h3) {$H_3=3\mathbb Z/9=\{0,3,6\}$};
+\node[chain,right=16mm of h3] (h1) {$H_1=\mathbb Z/9$};
+\path (h9) edge node[above] {$\lambda_1=6,\ m_1=3$} (h3)
+      (h3) edge node[above] {$\lambda_2=1,\ m_2=3$} (h1);
+
+\matrix[below=13mm of h3,matrix of math nodes,
+  nodes={draw,minimum width=9mm,minimum height=7mm,anchor=center},
+  row 1/.style={nodes={fill=black!6}},
+  column 1/.style={nodes={fill=black!6}}] (grid) {
+  {} & t_1=0 & t_1=1 & t_1=2 \\
+  t_6=0 & 0 & 1 & 2 \\
+  t_6=1 & 6 & 7 & 8 \\
+  t_6=2 & 3 & 4 & 5 \\
+};
+\node[below=4mm of grid,draw,rounded corners,fill=black!4,inner sep=4pt]
+  {$ (0,2)\star(0,1)=\operatorname{decode}(2+1)=(2,0)$};
+\end{tikzpicture}

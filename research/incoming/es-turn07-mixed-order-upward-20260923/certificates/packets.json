@@ -1,0 +1,3767 @@
+[
+  {
+    "H": 29,
+    "H0": 29,
+    "R": 243,
+    "a": 67893901,
+    "all_original_word_count": 81,
+    "base": 2341169,
+    "es": [
+      1,
+      1,
+      1
+    ],
+    "full_states": [
+      {
+        "D": 9,
+        "K": 27,
+        "R": 243,
+        "a": 67893901,
+        "channel": "M",
+        "common_denominator": 1,
+        "defect": 0,
+        "delta": 3,
+        "denominators": [
+          [
+            67893901,
+            1
+          ],
+          [
+            63316463068428934,
+            1
+          ],
+          [
+            75968862033974,
+            1
+          ]
+        ],
+        "exponents": [
+          {
+            "beta": 0,
+            "e": 1,
+            "f": 1,
+            "prime": 29
+          },
+          {
+            "beta": 1,
+            "e": 1,
+            "f": 2,
+            "prime": 53
+          },
+          {
+            "beta": -1,
+            "e": 1,
+            "f": 0,
+            "prime": 163
+          },
+          {
+            "beta": -1,
+            "e": 1,
+            "f": 0,
+            "prime": 271
+          }
+        ],
+        "full": true,
+        "h": 29,
+        "p": 271575361,
+        "quotient": [
+          182,
+          1
+        ],
+        "quotient_name": "lambda",
+        "r": 53,
+        "s": 44173,
+        "trace": true,
+        "u": 81461
+      },
+      {
+        "D": 9,
+        "K": 27,
+        "R": 243,
+        "a": 67893901,
+        "channel": "M",
+        "common_denominator": 1,
+        "defect": 0,
+        "delta": 3,
+        "denominators": [
+          [
+            67893901,
+            1
+          ],
+          [
+            75968862033974,
+            1
+          ],
+          [
+            63316463068428934,
+            1
+          ]
+        ],
+        "exponents": [
+          {
+            "beta": 0,
+            "e": 1,
+            "f": 1,
+            "prime": 29
+          },
+          {
+            "beta": -1,
+            "e": 1,
+            "f": 0,
+            "prime": 53
+          },
+          {
+            "beta": 1,
+            "e": 1,
+            "f": 2,
+            "prime": 163
+          },
+          {
+            "beta": 1,
+            "e": 1,
+            "f": 2,
+            "prime": 271
+          }
+        ],
+        "full": true,
+        "h": 29,
+        "p": 271575361,
+        "quotient": [
+          182,
+          1
+        ],
+        "quotient_name": "lambda",
+        "r": 44173,
+        "s": 53,
+        "trace": true,
+        "u": 56586363941
+      }
+    ],
+    "index": 0,
+    "p": 271575361,
+    "prime_progression": [
+      271575361,
+      1966581960
+    ],
+    "qs": [
+      53,
+      163,
+      271
+    ],
+    "tiles": [
+      {
+        "D": 9,
+        "K": 27,
+        "R": 243,
+        "a": 67893901,
+        "chain": {
+          "D": 9,
+          "edges": 2,
+          "indices": [
+            2,
+            3
+          ],
+          "lower": 2,
+          "reachable": [
+            1,
+            3,
+            9
+          ],
+          "rows": [
+            {
+              "after": 3,
+              "before": 9,
+              "full_blocks": 1,
+              "index": 2,
+              "radix": 3,
+              "step": 6
+            },
+            {
+              "after": 1,
+              "before": 3,
+              "full_blocks": 1,
+              "index": 3,
+              "radix": 3,
+              "step": 1
+            }
+          ]
+        },
+        "channel": "M",
+        "coefficients": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "delta": 3,
+        "domain": "Explicit injective subpacket of the original exponent box; other words remain in the full source.",
+        "exponents": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "p": 271575361,
+        "parts": [
+          {
+            "base": 0,
+            "length": 1,
+            "order": 18,
+            "step": 7
+          },
+          {
+            "base": -1,
+            "length": 2,
+            "order": 2,
+            "step": 5
+          },
+          {
+            "base": -1,
+            "length": 3,
+            "order": 1,
+            "step": 6
+          },
+          {
+            "base": -1,
+            "length": 3,
+            "order": 1,
+            "step": 1
+          }
+        ],
+        "primes": [
+          29,
+          53,
+          163,
+          271
+        ],
+        "returned_state": {
+          "D": 9,
+          "K": 27,
+          "R": 243,
+          "a": 67893901,
+          "channel": "M",
+          "common_denominator": 1,
+          "defect": 0,
+          "delta": 3,
+          "denominators": [
+            [
+              67893901,
+              1
+            ],
+            [
+              75968862033974,
+              1
+            ],
+            [
+              63316463068428934,
+              1
+            ]
+          ],
+          "exponents": [
+            {
+              "beta": 0,
+              "e": 1,
+              "f": 1,
+              "prime": 29
+            },
+            {
+              "beta": -1,
+              "e": 1,
+              "f": 0,
+              "prime": 53
+            },
+            {
+              "beta": 1,
+              "e": 1,
+              "f": 2,
+              "prime": 163
+            },
+            {
+              "beta": 1,
+              "e": 1,
+              "f": 2,
+              "prime": 271
+            }
+          ],
+          "full": true,
+          "h": 29,
+          "p": 271575361,
+          "quotient": [
+            182,
+            1
+          ],
+          "quotient_name": "lambda",
+          "r": 44173,
+          "s": 53,
+          "trace": true,
+          "u": 56586363941
+        },
+        "section": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "stabilizer": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "target": 5,
+        "unit_lower": 0,
+        "words": [
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 5,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                1598785918522879461310,
+                9
+              ],
+              [
+                682900687016990,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 163
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 29,
+            "p": 271575361,
+            "quotient": [
+              86710,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 2341169,
+            "trace": true,
+            "u": 29
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 4,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                5900259415607443520,
+                9
+              ],
+              [
+                682979443871680,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 163
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 7859,
+            "p": 271575361,
+            "quotient": [
+              320,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 8639,
+            "trace": true,
+            "u": 7859
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 3,
+            "defect": 3,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                7484185144336010,
+                3
+              ],
+              [
+                234774183830890,
+                3
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 163
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 29,
+            "p": 271575361,
+            "quotient": [
+              110,
+              3
+            ],
+            "quotient_name": "lambda",
+            "r": 271,
+            "s": 8639,
+            "trace": true,
+            "u": 2129789
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 8,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                9809181278447374852,
+                9
+              ],
+              [
+                682947941129804,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 163
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 4727,
+            "p": 271575361,
+            "quotient": [
+              532,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 14363,
+            "trace": true,
+            "u": 4727
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 7,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                36876621347546522,
+                9
+              ],
+              [
+                695785308444274,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 163
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 1281017,
+            "p": 271575361,
+            "quotient": [
+              2,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 53,
+            "trace": true,
+            "u": 1281017
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 3,
+            "defect": 6,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                272152187066764,
+                3
+              ],
+              [
+                1391570616888548,
+                3
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 163
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 4727,
+            "p": 271575361,
+            "quotient": [
+              4,
+              3
+            ],
+            "quotient_name": "lambda",
+            "r": 271,
+            "s": 53,
+            "trace": true,
+            "u": 347155607
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 2,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                60857737070490886,
+                9
+              ],
+              [
+                690650361518486,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 163
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 29,
+            "p": 271575361,
+            "quotient": [
+              538,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 163,
+            "s": 14363,
+            "trace": true,
+            "u": 770501
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 1,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                904947763129976,
+                9
+              ],
+              [
+                2783141233777096,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 163
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 7859,
+            "p": 271575361,
+            "quotient": [
+              8,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 163,
+            "s": 53,
+            "trace": true,
+            "u": 208805771
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 1,
+            "defect": 0,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                75968862033974,
+                1
+              ],
+              [
+                63316463068428934,
+                1
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 53
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 163
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 271
+              }
+            ],
+            "full": true,
+            "h": 29,
+            "p": 271575361,
+            "quotient": [
+              182,
+              1
+            ],
+            "quotient_name": "lambda",
+            "r": 44173,
+            "s": 53,
+            "trace": true,
+            "u": 56586363941
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 1,
+            "defect": 0,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                63316463068428934,
+                1
+              ],
+              [
+                75968862033974,
+                1
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 163
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 271
+              }
+            ],
+            "full": true,
+            "h": 29,
+            "p": 271575361,
+            "quotient": [
+              182,
+              1
+            ],
+            "quotient_name": "lambda",
+            "r": 53,
+            "s": 44173,
+            "trace": true,
+            "u": 81461
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 8,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                2783141233777096,
+                9
+              ],
+              [
+                904947763129976,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 163
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 7859,
+            "p": 271575361,
+            "quotient": [
+              8,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 53,
+            "s": 163,
+            "trace": true,
+            "u": 22075931
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 7,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                690650361518486,
+                9
+              ],
+              [
+                60857737070490886,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 163
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 29,
+            "p": 271575361,
+            "quotient": [
+              538,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 14363,
+            "s": 163,
+            "trace": true,
+            "u": 5982577301
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 3,
+            "defect": 3,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                1391570616888548,
+                3
+              ],
+              [
+                272152187066764,
+                3
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 163
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 4727,
+            "p": 271575361,
+            "quotient": [
+              4,
+              3
+            ],
+            "quotient_name": "lambda",
+            "r": 53,
+            "s": 271,
+            "trace": true,
+            "u": 13278143
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 2,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                695785308444274,
+                9
+              ],
+              [
+                36876621347546522,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 163
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 1281017,
+            "p": 271575361,
+            "quotient": [
+              2,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 53,
+            "s": 1,
+            "trace": true,
+            "u": 3598376753
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 1,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                682947941129804,
+                9
+              ],
+              [
+                9809181278447374852,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 163
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 4727,
+            "p": 271575361,
+            "quotient": [
+              532,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 14363,
+            "s": 1,
+            "trace": true,
+            "u": 975160100063
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 3,
+            "defect": 6,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                234774183830890,
+                3
+              ],
+              [
+                7484185144336010,
+                3
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 163
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 29,
+            "p": 271575361,
+            "quotient": [
+              110,
+              3
+            ],
+            "quotient_name": "lambda",
+            "r": 8639,
+            "s": 271,
+            "trace": true,
+            "u": 2164337309
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 5,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                682979443871680,
+                9
+              ],
+              [
+                5900259415607443520,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 163
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 7859,
+            "p": 271575361,
+            "quotient": [
+              320,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 8639,
+            "s": 1,
+            "trace": true,
+            "u": 586535410739
+          },
+          {
+            "D": 9,
+            "K": 27,
+            "R": 243,
+            "a": 67893901,
+            "channel": "M",
+            "common_denominator": 9,
+            "defect": 4,
+            "delta": 3,
+            "denominators": [
+              [
+                67893901,
+                1
+              ],
+              [
+                682900687016990,
+                9
+              ],
+              [
+                1598785918522879461310,
+                9
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 29
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 53
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 163
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 271
+              }
+            ],
+            "full": false,
+            "h": 29,
+            "p": 271575361,
+            "quotient": [
+              86710,
+              9
+            ],
+            "quotient_name": "lambda",
+            "r": 2341169,
+            "s": 1,
+            "trace": true,
+            "u": 158951096310269
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "H": 101,
+    "H0": 101,
+    "R": 675,
+    "a": 1188950229349,
+    "all_original_word_count": 135,
+    "base": 11771784449,
+    "es": [
+      1,
+      2,
+      1
+    ],
+    "full_states": [
+      {
+        "D": 15,
+        "K": 45,
+        "R": 675,
+        "a": 1188950229349,
+        "channel": "M",
+        "common_denominator": 1,
+        "defect": 0,
+        "delta": 3,
+        "denominators": [
+          [
+            1188950229349,
+            1
+          ],
+          [
+            30410117146732181081147294,
+            1
+          ],
+          [
+            8379212753563191691006,
+            1
+          ]
+        ],
+        "exponents": [
+          {
+            "beta": -1,
+            "e": 1,
+            "f": 0,
+            "prime": 89
+          },
+          {
+            "beta": 0,
+            "e": 1,
+            "f": 1,
+            "prime": 101
+          },
+          {
+            "beta": -2,
+            "e": 2,
+            "f": 0,
+            "prime": 271
+          },
+          {
+            "beta": 1,
+            "e": 1,
+            "f": 2,
+            "prime": 1801
+          }
+        ],
+        "full": true,
+        "h": 101,
+        "p": 4755800916721,
+        "quotient": [
+          9686,
+          1
+        ],
+        "quotient_name": "lambda",
+        "r": 1801,
+        "s": 6536249,
+        "trace": true,
+        "u": 327603701
+      },
+      {
+        "D": 15,
+        "K": 45,
+        "R": 675,
+        "a": 1188950229349,
+        "channel": "E",
+        "common_denominator": 1,
+        "defect": 0,
+        "delta": 3,
+        "denominators": [
+          [
+            1188950229349,
+            1
+          ],
+          [
+            8376904578779573848830,
+            1
+          ],
+          [
+            18253329644440504375677236751008670,
+            1
+          ]
+        ],
+        "exponents": [
+          {
+            "beta": -1,
+            "e": 1,
+            "f": 0,
+            "prime": 89
+          },
+          {
+            "beta": 0,
+            "e": 1,
+            "f": 1,
+            "prime": 101
+          },
+          {
+            "beta": 2,
+            "e": 2,
+            "f": 4,
+            "prime": 271
+          },
+          {
+            "beta": -1,
+            "e": 1,
+            "f": 0,
+            "prime": 1801
+          }
+        ],
+        "full": true,
+        "h": 101,
+        "p": 4755800916721,
+        "quotient": [
+          517438185370470,
+          1
+        ],
+        "quotient_name": "kappa",
+        "r": 73441,
+        "s": 160289,
+        "trace": true,
+        "u": 544751628581
+      },
+      {
+        "D": 15,
+        "K": 45,
+        "R": 675,
+        "a": 1188950229349,
+        "channel": "M",
+        "common_denominator": 1,
+        "defect": 0,
+        "delta": 3,
+        "denominators": [
+          [
+            1188950229349,
+            1
+          ],
+          [
+            8379212753563191691006,
+            1
+          ],
+          [
+            30410117146732181081147294,
+            1
+          ]
+        ],
+        "exponents": [
+          {
+            "beta": 1,
+            "e": 1,
+            "f": 2,
+            "prime": 89
+          },
+          {
+            "beta": 0,
+            "e": 1,
+            "f": 1,
+            "prime": 101
+          },
+          {
+            "beta": 2,
+            "e": 2,
+            "f": 4,
+            "prime": 271
+          },
+          {
+            "beta": -1,
+            "e": 1,
+            "f": 0,
+            "prime": 1801
+          }
+        ],
+        "full": true,
+        "h": 101,
+        "p": 4755800916721,
+        "quotient": [
+          9686,
+          1
+        ],
+        "quotient_name": "lambda",
+        "r": 6536249,
+        "s": 1801,
+        "trace": true,
+        "u": 4314977649990101
+      },
+      {
+        "D": 15,
+        "K": 45,
+        "R": 675,
+        "a": 1188950229349,
+        "channel": "E",
+        "common_denominator": 1,
+        "defect": 0,
+        "delta": 3,
+        "denominators": [
+          [
+            1188950229349,
+            1
+          ],
+          [
+            8376904578775729553096,
+            1
+          ],
+          [
+            960874199367151056122757746534039651704,
+            1
+          ]
+        ],
+        "exponents": [
+          {
+            "beta": 1,
+            "e": 1,
+            "f": 2,
+            "prime": 89
+          },
+          {
+            "beta": 0,
+            "e": 1,
+            "f": 1,
+            "prime": 101
+          },
+          {
+            "beta": 1,
+            "e": 2,
+            "f": 3,
+            "prime": 271
+          },
+          {
+            "beta": 0,
+            "e": 1,
+            "f": 1,
+            "prime": 1801
+          }
+        ],
+        "full": true,
+        "h": 49295171,
+        "p": 4755800916721,
+        "quotient": [
+          169933573793176,
+          1
+        ],
+        "quotient_name": "kappa",
+        "r": 24119,
+        "s": 1,
+        "trace": true,
+        "u": 28676290581668531
+      }
+    ],
+    "index": 0,
+    "p": 4755800916721,
+    "prime_progression": [
+      4755800916721,
+      9888298937160
+    ],
+    "qs": [
+      89,
+      271,
+      1801
+    ],
+    "tiles": [
+      {
+        "D": 15,
+        "K": 45,
+        "R": 675,
+        "a": 1188950229349,
+        "chain": {
+          "D": 15,
+          "edges": 4,
+          "indices": [
+            2,
+            3
+          ],
+          "lower": 2,
+          "reachable": [
+            1,
+            3,
+            5,
+            15
+          ],
+          "rows": [
+            {
+              "after": 3,
+              "before": 15,
+              "full_blocks": 1,
+              "index": 2,
+              "radix": 5,
+              "step": 6
+            },
+            {
+              "after": 1,
+              "before": 3,
+              "full_blocks": 1,
+              "index": 3,
+              "radix": 3,
+              "step": 10
+            }
+          ]
+        },
+        "channel": "M",
+        "coefficients": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "delta": 3,
+        "domain": "Explicit injective subpacket of the original exponent box; other words remain in the full source.",
+        "exponents": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "p": 4755800916721,
+        "parts": [
+          {
+            "base": -1,
+            "length": 2,
+            "order": 2,
+            "step": 11
+          },
+          {
+            "base": 0,
+            "length": 1,
+            "order": 6,
+            "step": 5
+          },
+          {
+            "base": -2,
+            "length": 5,
+            "order": 1,
+            "step": 6
+          },
+          {
+            "base": -1,
+            "length": 3,
+            "order": 1,
+            "step": 10
+          }
+        ],
+        "primes": [
+          89,
+          101,
+          271,
+          1801
+        ],
+        "returned_state": {
+          "D": 15,
+          "K": 45,
+          "R": 675,
+          "a": 1188950229349,
+          "channel": "M",
+          "common_denominator": 1,
+          "defect": 0,
+          "delta": 3,
+          "denominators": [
+            [
+              1188950229349,
+              1
+            ],
+            [
+              30410117146732181081147294,
+              1
+            ],
+            [
+              8379212753563191691006,
+              1
+            ]
+          ],
+          "exponents": [
+            {
+              "beta": -1,
+              "e": 1,
+              "f": 0,
+              "prime": 89
+            },
+            {
+              "beta": 0,
+              "e": 1,
+              "f": 1,
+              "prime": 101
+            },
+            {
+              "beta": -2,
+              "e": 2,
+              "f": 0,
+              "prime": 271
+            },
+            {
+              "beta": 1,
+              "e": 1,
+              "f": 2,
+              "prime": 1801
+            }
+          ],
+          "full": true,
+          "h": 101,
+          "p": 4755800916721,
+          "quotient": [
+            9686,
+            1
+          ],
+          "quotient_name": "lambda",
+          "r": 1801,
+          "s": 6536249,
+          "trace": true,
+          "u": 327603701
+        },
+        "section": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "stabilizer": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "target": 5,
+        "unit_lower": 0,
+        "words": [
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 3,
+            "defect": 5,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                295833345178697796992546704525418,
+                3
+              ],
+              [
+                25130713738462014629482,
+                3
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -2,
+                "e": 2,
+                "f": 0,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 101,
+            "p": 4755800916721,
+            "quotient": [
+              52319042,
+              3
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 11771784449,
+            "trace": true,
+            "u": 101
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 3,
+            "defect": 10,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                164260627659068585442246472450,
+                3
+              ],
+              [
+                25130717581149155340050,
+                3
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -2,
+                "e": 2,
+                "f": 0,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 181901,
+            "p": 4755800916721,
+            "quotient": [
+              29050,
+              3
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 6536249,
+            "trace": true,
+            "u": 181901
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 1,
+            "defect": 0,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                30410117146732181081147294,
+                1
+              ],
+              [
+                8379212753563191691006,
+                1
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -2,
+                "e": 2,
+                "f": 0,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": true,
+            "h": 101,
+            "p": 4755800916721,
+            "quotient": [
+              9686,
+              1
+            ],
+            "quotient_name": "lambda",
+            "r": 1801,
+            "s": 6536249,
+            "trace": true,
+            "u": 327603701
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 14,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                5458179925534880180828184195184,
+                15
+              ],
+              [
+                125653571574325428680336,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -1,
+                "e": 2,
+                "f": 1,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 27371,
+            "p": 4755800916721,
+            "quotient": [
+              965296,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 43438319,
+            "trace": true,
+            "u": 27371
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 4,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                3030764076601058925887921144,
+                15
+              ],
+              [
+                125658778415401091499976,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -1,
+                "e": 2,
+                "f": 1,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 49295171,
+            "p": 4755800916721,
+            "quotient": [
+              536,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 24119,
+            "trace": true,
+            "u": 49295171
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 5,
+            "defect": 9,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                602802239538775425106368,
+                5
+              ],
+              [
+                45012099730889943223872,
+                5
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -1,
+                "e": 2,
+                "f": 1,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 27371,
+            "p": 4755800916721,
+            "quotient": [
+              192,
+              5
+            ],
+            "quotient_name": "lambda",
+            "r": 1801,
+            "s": 24119,
+            "trace": true,
+            "u": 88780602971
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 8,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                20141010523979425175396968498,
+                15
+              ],
+              [
+                125654352600486778103282,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 0,
+                "e": 2,
+                "f": 2,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 7417541,
+            "p": 4755800916721,
+            "quotient": [
+              3562,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 160289,
+            "trace": true,
+            "u": 7417541
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 13,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                11308821181347234798089258,
+                15
+              ],
+              [
+                127065406531991402225722,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 0,
+                "e": 2,
+                "f": 2,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 13358991341,
+            "p": 4755800916721,
+            "quotient": [
+              2,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 1,
+            "s": 89,
+            "trace": true,
+            "u": 13358991341
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 5,
+            "defect": 3,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                43954329966369041414006,
+                5
+              ],
+              [
+                889457845723939815580054,
+                5
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 0,
+                "e": 2,
+                "f": 2,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 7417541,
+            "p": 4755800916721,
+            "quotient": [
+              14,
+              5
+            ],
+            "quotient_name": "lambda",
+            "r": 1801,
+            "s": 89,
+            "trace": true,
+            "u": 24059543405141
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 2,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                74446261946581058597015632,
+                15
+              ],
+              [
+                125866010690212471721648,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 1,
+                "e": 2,
+                "f": 3,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 27371,
+            "p": 4755800916721,
+            "quotient": [
+              3568,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 271,
+            "s": 160289,
+            "trace": true,
+            "u": 2010153611
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 7,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                166919869835383539455192,
+                15
+              ],
+              [
+                508261626127965608902888,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 1,
+                "e": 2,
+                "f": 3,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 49295171,
+            "p": 4755800916721,
+            "quotient": [
+              8,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 271,
+            "s": 89,
+            "trace": true,
+            "u": 3620286653411
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 5,
+            "defect": 12,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                41892160558352781695584,
+                5
+              ],
+              [
+                229734255009840455224105376,
+                5
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 1,
+                "e": 2,
+                "f": 3,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 27371,
+            "p": 4755800916721,
+            "quotient": [
+              3616,
+              5
+            ],
+            "quotient_name": "lambda",
+            "r": 488071,
+            "s": 89,
+            "trace": true,
+            "u": 6520136262793211
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 11,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                399899356053958535023186,
+                15
+              ],
+              [
+                183225353005875442298834,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 2,
+                "e": 2,
+                "f": 4,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 101,
+            "p": 4755800916721,
+            "quotient": [
+              5194,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 73441,
+            "s": 160289,
+            "trace": true,
+            "u": 544751628581
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 1,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                125805842855635010825546,
+                15
+              ],
+              [
+                103812437136636975618414874,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 2,
+                "e": 2,
+                "f": 4,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 181901,
+            "p": 4755800916721,
+            "quotient": [
+              1634,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 73441,
+            "s": 89,
+            "trace": true,
+            "u": 981097683074381
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 5,
+            "defect": 6,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                41884551077142389593302,
+                5
+              ],
+              [
+                62246674286485416130934467638,
+                5
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 2,
+                "e": 2,
+                "f": 4,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 101,
+            "p": 4755800916721,
+            "quotient": [
+              979758,
+              5
+            ],
+            "quotient_name": "lambda",
+            "r": 132267241,
+            "s": 89,
+            "trace": true,
+            "u": 1766956927216960181
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 5,
+            "defect": 9,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                62246674286485416130934467638,
+                5
+              ],
+              [
+                41884551077142389593302,
+                5
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -2,
+                "e": 2,
+                "f": 0,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 101,
+            "p": 4755800916721,
+            "quotient": [
+              979758,
+              5
+            ],
+            "quotient_name": "lambda",
+            "r": 89,
+            "s": 132267241,
+            "trace": true,
+            "u": 800021
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 14,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                103812437136636975618414874,
+                15
+              ],
+              [
+                125805842855635010825546,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -2,
+                "e": 2,
+                "f": 0,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 181901,
+            "p": 4755800916721,
+            "quotient": [
+              1634,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 89,
+            "s": 73441,
+            "trace": true,
+            "u": 1440837821
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 4,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                183225353005875442298834,
+                15
+              ],
+              [
+                399899356053958535023186,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -2,
+                "e": 2,
+                "f": 0,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 101,
+            "p": 4755800916721,
+            "quotient": [
+              5194,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 160289,
+            "s": 73441,
+            "trace": true,
+            "u": 2594948915621
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 5,
+            "defect": 3,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                229734255009840455224105376,
+                5
+              ],
+              [
+                41892160558352781695584,
+                5
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -1,
+                "e": 2,
+                "f": 1,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 27371,
+            "p": 4755800916721,
+            "quotient": [
+              3616,
+              5
+            ],
+            "quotient_name": "lambda",
+            "r": 89,
+            "s": 488071,
+            "trace": true,
+            "u": 216805691
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 8,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                508261626127965608902888,
+                15
+              ],
+              [
+                166919869835383539455192,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -1,
+                "e": 2,
+                "f": 1,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 49295171,
+            "p": 4755800916721,
+            "quotient": [
+              8,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 89,
+            "s": 271,
+            "trace": true,
+            "u": 390467049491
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 13,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                125866010690212471721648,
+                15
+              ],
+              [
+                74446261946581058597015632,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": -1,
+                "e": 2,
+                "f": 1,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 27371,
+            "p": 4755800916721,
+            "quotient": [
+              3568,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 160289,
+            "s": 271,
+            "trace": true,
+            "u": 703231156133291
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 5,
+            "defect": 12,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                889457845723939815580054,
+                5
+              ],
+              [
+                43954329966369041414006,
+                5
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 0,
+                "e": 2,
+                "f": 2,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 7417541,
+            "p": 4755800916721,
+            "quotient": [
+              14,
+              5
+            ],
+            "quotient_name": "lambda",
+            "r": 89,
+            "s": 1801,
+            "trace": true,
+            "u": 58754342261
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 2,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                127065406531991402225722,
+                15
+              ],
+              [
+                11308821181347234798089258,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 0,
+                "e": 2,
+                "f": 2,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 13358991341,
+            "p": 4755800916721,
+            "quotient": [
+              2,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 89,
+            "s": 1,
+            "trace": true,
+            "u": 105816570412061
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 7,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                125654352600486778103282,
+                15
+              ],
+              [
+                20141010523979425175396968498,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 0,
+                "e": 2,
+                "f": 2,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 7417541,
+            "p": 4755800916721,
+            "quotient": [
+              3562,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 160289,
+            "s": 1,
+            "trace": true,
+            "u": 190575643312121861
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 5,
+            "defect": 6,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                45012099730889943223872,
+                5
+              ],
+              [
+                602802239538775425106368,
+                5
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 1,
+                "e": 2,
+                "f": 3,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 27371,
+            "p": 4755800916721,
+            "quotient": [
+              192,
+              5
+            ],
+            "quotient_name": "lambda",
+            "r": 24119,
+            "s": 1801,
+            "trace": true,
+            "u": 15922426752731
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 11,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                125658778415401091499976,
+                15
+              ],
+              [
+                3030764076601058925887921144,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 1,
+                "e": 2,
+                "f": 3,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 49295171,
+            "p": 4755800916721,
+            "quotient": [
+              536,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 24119,
+            "s": 1,
+            "trace": true,
+            "u": 28676290581668531
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 15,
+            "defect": 1,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                125653571574325428680336,
+                15
+              ],
+              [
+                5458179925534880180828184195184,
+                15
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 1,
+                "e": 2,
+                "f": 3,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 27371,
+            "p": 4755800916721,
+            "quotient": [
+              965296,
+              15
+            ],
+            "quotient_name": "lambda",
+            "r": 43438319,
+            "s": 1,
+            "trace": true,
+            "u": 51645999337585024331
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 1,
+            "defect": 0,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                8379212753563191691006,
+                1
+              ],
+              [
+                30410117146732181081147294,
+                1
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 2,
+                "e": 2,
+                "f": 4,
+                "prime": 271
+              },
+              {
+                "beta": -1,
+                "e": 1,
+                "f": 0,
+                "prime": 1801
+              }
+            ],
+            "full": true,
+            "h": 101,
+            "p": 4755800916721,
+            "quotient": [
+              9686,
+              1
+            ],
+            "quotient_name": "lambda",
+            "r": 6536249,
+            "s": 1801,
+            "trace": true,
+            "u": 4314977649990101
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 3,
+            "defect": 5,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                25130717581149155340050,
+                3
+              ],
+              [
+                164260627659068585442246472450,
+                3
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 2,
+                "e": 2,
+                "f": 4,
+                "prime": 271
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 181901,
+            "p": 4755800916721,
+            "quotient": [
+              29050,
+              3
+            ],
+            "quotient_name": "lambda",
+            "r": 6536249,
+            "s": 1,
+            "trace": true,
+            "u": 7771274747632171901
+          },
+          {
+            "D": 15,
+            "K": 45,
+            "R": 675,
+            "a": 1188950229349,
+            "channel": "M",
+            "common_denominator": 3,
+            "defect": 10,
+            "delta": 3,
+            "denominators": [
+              [
+                1188950229349,
+                1
+              ],
+              [
+                25130713738462014629482,
+                3
+              ],
+              [
+                295833345178697796992546704525418,
+                3
+              ]
+            ],
+            "exponents": [
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 89
+              },
+              {
+                "beta": 0,
+                "e": 1,
+                "f": 1,
+                "prime": 101
+              },
+              {
+                "beta": 2,
+                "e": 2,
+                "f": 4,
+                "prime": 271
+              },
+              {
+                "beta": 1,
+                "e": 1,
+                "f": 2,
+                "prime": 1801
+              }
+            ],
+            "full": false,
+            "h": 101,
+            "p": 4755800916721,
+            "quotient": [
+              52319042,
+              3
+            ],
+            "quotient_name": "lambda",
+            "r": 11771784449,
+            "s": 1,
+            "trace": true,
+            "u": 13996065820485541593701
+          }
+        ]
+      }
+    ]
+  }
+]

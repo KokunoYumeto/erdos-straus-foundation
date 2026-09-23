@@ -1,0 +1,21 @@
+{
+  "received_date": "2026-09-23",
+  "cumulative_archive": {
+    "name": "ES_Turns6_7_With_Mixed_Order_Upward_20260923.zip",
+    "sha256": "2F39BC4B8EA7A2FBBEFC313C41AD194DF4AB2FC742D3020980C127BE1A85D934",
+    "bytes": 28770936
+  },
+  "preserved_predecessor_archive": {
+    "sha256": "6708E1277F64AAD2F596BF9E7AC5217212BAE451D88A6644D53D7333DEFC0684"
+  },
+  "current_inner_archive": {
+    "sha256": "0A2C35255C80246617F767C0B00B13D14E5D4C8E365D97544A7F818AC56A80CF",
+    "bytes": 3478202
+  },
+  "pasted_trace_sha256": "EB27ED2267FB4059C2CAAA3BBAE1B24AC352BDDBBC504206F89A3073BC4D800B",
+  "pasted_handoff_sha256": "76E33D855E01ECF1470095362D55A2E1FAC02098D4CE65F9A8F02BC35FE9CE33",
+  "manifest_check": {
+    "entries": 45,
+    "failures": 0
+  }
+}

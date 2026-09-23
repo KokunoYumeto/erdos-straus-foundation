@@ -1,0 +1,23 @@
+{
+  "remote_pr_created": false,
+  "remote_commit_created": false,
+  "remote_revision_read": "20709bee872ad10e4cc7d7b976d975e24532a803",
+  "latest_square_zero_integration_confirmed": false,
+  "capability_checks": {
+    "GitHub_create_query": "no exposed action",
+    "GitHub_push_query": "no exposed action",
+    "plugin_search": "GitHub already installed",
+    "gh_cli": "not present",
+    "git_ls_remote_exit": 128,
+    "git_ls_remote_error": "fatal: unable to access 'https://github.com/KokunoYumeto/erdos-straus-foundation.git/': Could not resolve host: github.com"
+  },
+  "local_source_parent": "f7f08e82f14a990c7912efdee14045fdb3479998",
+  "local_source_commit": "f976c122565e76b65e62cdfb1f8ea2e2077ded07",
+  "local_source_tree": "29eb0f508bf24fd5494b2b9249478dc8c8d6b661",
+  "new_paths": 17,
+  "deleted_paths": 0,
+  "patch_replay_identical_tree": true,
+  "local_record_is_upstream_commit": false,
+  "bundle_sha256": "2d470140fe1d6e8dd327cb3961879bec77a38498d917391e8b06f35d9ef55aa3",
+  "scope": "Additive local source record extends the supplied predecessor local bundle; not a claim of upstream ancestry or remote publication."
+}

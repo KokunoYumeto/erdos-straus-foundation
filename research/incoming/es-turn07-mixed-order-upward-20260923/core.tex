@@ -1,0 +1,801 @@
+\section{Pinned frontier and purpose}
+The integration base for this continuation is
+\texttt{KokunoYumeto/erdos-straus-foundation} commit
+\texttt{6c064a07298cdba38352998364ce6b7cb3efa973}, which incorporates the
+square-zero/Pell tranche on top of the earlier mixed-fibre and middle-spectrum
+revision. Its complete source and handoff were read, including the obstruction
+at $p=67369$ to repairing every trace without increasing the distinguished
+denominator. The retained ten-stage plan still requires an original occupied
+coefficient at every prescribed prime.
+
+We prove a stronger constructive coefficient criterion that uses directions of
+\emph{different orders}, including nonunits, in the original fine-defect group.
+It is a cyclic subgroup-transversal construction with exact original multiplicity,
+carry, and integer-section data. The cyclic calculation is proved from first principles below. No historical-priority
+claim is made for either the abstract normal form or its arithmetic application. A second construction changes the shell and the word,
+and gives a one-step upward return at the predecessor's decisive $67369$ example.
+Neither construction assumes that its source exists for every prime.
+
+\section{The original bounded source and its fine defect}
+Fix a prime $p\equiv1\pmod4$, $p/4<a<p/2$, and $R=4a-p$. For every
+\emph{original} divisor $u\mid a^2$, put
+\[
+ a=\prod_iq_i^{e_i},\quad u=\prod_iq_i^{f_i},\quad
+ 0\le f_i\le2e_i,\quad\beta_i=f_i-e_i,
+\]
+\[
+ g=\gcd(a,u),\quad h=g^2/u,\quad r=u/g,\quad s=a/g.
+\]
+Then $a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$. The ordered rational returns are
+\begin{align}
+ E:&\quad(a,hs\kappa,phr\kappa),&\kappa&=(pr+s)/R,\label{eq:E}\\
+ M:&\quad(a,phs\lambda,phr\lambda),&\lambda&=(r+s)/R.\label{eq:M}
+\end{align}
+Direct common-denominator multiplication gives $4/p$ in each case. Their
+integer gates are $R\mid4u+1$ and $R\mid p+4u$, respectively. The ordered
+inverses are $u=a^2/(Ry-pa)$ in E and $u=pa^2/(Ry-pa)$ in M.
+These are the inherited Yamamoto--Rosati/Type-I--II coordinates
+\citep[p.~38, Lemma~2, equation~(4)]{Yamamoto}\citep[\S2, Propositions~2.2
+and~2.6]{ET}, not a new parametrization.
+Lopez's structural classification supplies additional literature context for
+the difficult class $p\equiv1\pmod{24}$ and for Type~II solution forms
+\citep[Introduction and the Type~A/B definitions]{Lopez}; no theorem of that
+paper is used to prove the new subgroup-chain or factor-exchange results below.
+
+The rational tail sums are $(a+pu)^2/(Ru)$ and $p(a+u)^2/(Ru)$.
+Consequently a trace, meaning an integral tail sum, is exactly the square gate
+$R\mid G^2$, where $G=4u+1$ or $G=p+4u$. Its common tail denominator is
+$R/\gcd(R,G)$. Define
+\[
+ K=\prod_{\ell^v\parallel R}\ell^{\lceil v/2\rceil},\quad
+ D=R/K,\quad\delta=R/D^2.
+\]
+Then $R=KD=\delta D^2$, $D\mid K$, and the ideal $K\mathbb Z/R\mathbb Z$
+is square-zero. Here $\delta$ is the positive squarefree part, not the radical.
+For $\eta=1$ in E and $\eta=0$ in M, retain the original residue ratio
+\[
+ z=p^\eta u/a=p^\eta\prod_iq_i^{\beta_i}\pmod R.
+\]
+Trace is exactly $z\equiv-1\pmod K$. Its unique fine coordinate is
+\begin{equation}\label{eq:defect}
+ z=-1+Kc,\qquad c\in\mathbb Z/D.
+\end{equation}
+The full gate is $c=0$; the original denominator is $D/\gcd(D,c)$.
+No integer coefficient is reduced modulo $D$.
+
+For completeness, partition each original interval $[-e_i,e_i]$ by residue
+modulo $o_i=\operatorname{ord}_K(q_i)$. Each nonempty part has the literal form
+\[
+ \beta_i=b_i+o_it_i,\qquad0\le t_i<N_i.
+\]
+A product part is a trace part when its base is $-1\pmod K$. Put
+\[
+ \lambda_i=(q_i^{o_i}-1)/K\pmod D,
+\]
+where the division is evaluated modulo $R$ before passing to $D$. Since
+$(1+K\lambda)^t=1+tK\lambda\pmod R$, its fine coordinate is
+$c_0-\sum_i\lambda_it_i$. Thus the complete original count in that part is
+\begin{equation}\label{eq:C}
+ C_{c_0},\qquad
+ \mathcal C=\prod_i\left([0]+[\lambda_i]+\cdots+[(N_i-1)\lambda_i]\right)
+ \in\mathbb Z[\mathbb Z/D].
+\end{equation}
+The inverse reads $(b_i,t_i)$ from $\beta_i$ and reconstructs
+$u=\prod_iq_i^{e_i+\beta_i}$. Every vector in the full exponent box belongs to
+one product part. An explicitly specified subrectangle of such a part also
+has formula~\eqref{eq:C}; its omitted words remain in the complete source.
+These source identities are inherited from the supplied square-zero tranche
+\citep[\S\S2--4]{Previous}; the stronger coefficient criterion follows next.
+
+\section{The exact affine relation between the two channels}
+For the same divisor $u$, put
+\[
+ G_E(u)=4u+1,\qquad G_M(u)=p+4u.
+\]
+The preceding trace calculation gives
+\[
+ E\text{ trace}\Longleftrightarrow K\mid G_E(u),\qquad
+ M\text{ trace}\Longleftrightarrow K\mid G_M(u).
+\]
+
+\begin{theorem}[Common traces and the two-channel lattice]
+\label{thm:affine-channels}
+The same original divisor $u\mid a^2$ is a trace in both channels if and only if
+\begin{equation}\label{eq:common-trace}
+ K\mid(4u+1)\quad\text{and}\quad K\mid(p-1).
+\end{equation}
+Equivalently, one channel is a trace and $p\equiv1\pmod K$. More strongly, if
+\[
+ \mathcal T_E=\{u\mid a^2:K\mid4u+1\},\qquad
+ \mathcal T_M=\{u\mid a^2:K\mid p+4u\},
+\]
+then these two trace sets are disjoint when $K\nmid p-1$ and equal when
+$K\mid p-1$.
+
+On the common-trace locus the exact fine coordinates are
+\begin{equation}\label{eq:channel-coordinates}
+ c_E\equiv\frac{4u+1}{K}\pmod D,\qquad
+ c_M\equiv p^{-1}\frac{p+4u}{K}\pmod D.
+\end{equation}
+Writing
+\[
+ \omega=(p-1)/K,\qquad \bar\omega=\omega\pmod D,
+\]
+one has the oriented affine relation
+\begin{equation}\label{eq:affine-shift}
+ c_E=c_M-\bar\omega\quad\text{in }\mathbb Z/D.
+\end{equation}
+Thus $M$ is full exactly at $c_M=0$, whereas $E$ is full exactly at
+$c_M=\bar\omega$. The same divisor is full in both channels exactly when
+$R\mid4u+1$ and $R\mid p-1$.
+
+Let a common trace part have $M$ base coordinate $c_0$ and coefficient vector
+$C$ from~\eqref{eq:C}. Its labelled full-state counts are
+\begin{equation}\label{eq:paired-count}
+ N_M=C_{c_0},\qquad N_E=C_{c_0-\bar\omega},\qquad
+ N_{E\sqcup M}=C_{c_0}+C_{c_0-\bar\omega}.
+\end{equation}
+On the full coefficient lattice define
+\[
+ (T_{\bar\omega}f)_x=f_{x-\bar\omega},\qquad
+ J=(I+T_{\bar\omega})C.
+\]
+Put $d=\gcd(D,\omega)$ and $L=D/d$. Since $D$ is odd, every
+$\bar\omega$-orbit has odd length $L$, and
+\begin{equation}\label{eq:alternating-inverse}
+ 2C_x=\sum_{j=0}^{L-1}(-1)^jJ_{x-j\bar\omega}.
+\end{equation}
+If $\mathcal O$ is the set of these $d$ orbits and
+$\pi(f)_O=\sum_{x\in O}f_x\pmod2$, then
+\begin{equation}\label{eq:channel-exact-sequence}
+0\longrightarrow\mathbb Z^{\mathbb Z/D}
+ \xrightarrow{I+T_{\bar\omega}}\mathbb Z^{\mathbb Z/D}
+ \xrightarrow{\pi}(\mathbb Z/2)^d\longrightarrow0
+\end{equation}
+is exact. In particular the two-channel operator is injective, and its only
+integral cokernel is the displayed orbit-parity data.
+
+For $C_x\ge0$, uniform labelled two-channel positivity is equivalent to
+\begin{equation}\label{eq:support-cover}
+ \operatorname{supp}(C)\cup
+ (\operatorname{supp}(C)+\bar\omega)=\mathbb Z/D.
+\end{equation}
+It forces the sharp necessary bound
+\begin{equation}\label{eq:support-bound}
+ |\operatorname{supp}(C)|\ge \frac{D+d}{2}.
+\end{equation}
+The adjacency condition~\eqref{eq:support-cover}, not cardinality alone, is
+the exact criterion.
+\end{theorem}
+
+\begin{proof}
+The difference $G_M(u)-G_E(u)=p-1$ proves both the common-trace criterion and
+the trace-set dichotomy. Since $4a\equiv p\pmod R$ and $a,p$ are units modulo
+$R$,
+\[
+ pu\,a^{-1}+1\equiv4u+1\pmod R,
+ \qquad
+ u\,a^{-1}+1\equiv p^{-1}(p+4u)\pmod R.
+\]
+Both right sides lie in $K\mathbb Z/R$ on their respective trace loci.
+The map $Kc\mapsto c$ identifies $K\mathbb Z/R$ with $\mathbb Z/D$, which
+proves~\eqref{eq:channel-coordinates} without discarding a factor. On the
+common locus $p=1+K\omega$ and $p\equiv1\pmod D$, while
+\[
+ \frac{p+4u}{K}=\frac{4u+1}{K}+\omega.
+\]
+This proves~\eqref{eq:affine-shift}. Replacing divisibility by $K$ with
+divisibility by $KD=R$ proves the full-gate statements.
+
+For every bounded exponent vector, multiplication of
+$u/a=-1+Kc_M$ by $p=1+K\omega$ gives
+\[
+ p(-1+Kc_M)=-1+K(c_M-\omega)+K^2\omega c_M.
+\]
+Because $R\mid K^2$, the last summand vanishes modulo $R$. The shift is
+therefore constant over the whole common trace part; its step coefficients
+and literal exponent intervals are unchanged. Formula~\eqref{eq:paired-count}
+follows from the original coefficient definition~\eqref{eq:C}.
+
+On an orbit of $T=T_{\bar\omega}$, $T^L=I$ and $L$ is odd. Hence
+\[
+ (I+T)(I-T+T^2-\cdots+T^{L-1})=I+T^L=2I,
+\]
+which proves~\eqref{eq:alternating-inverse} and injectivity. Every vector in
+the image has even coordinate sum on each orbit. Conversely, if those sums
+are even, every alternating numerator in~\eqref{eq:alternating-inverse} is
+even, so the reconstructed $C$ is integral. The parity map is onto by taking
+one standard basis vector on each orbit. This proves the exact sequence.
+
+Finally, $J_x>0$ exactly when at least one of $C_x,C_{x-\bar\omega}$ is
+positive, proving~\eqref{eq:support-cover}. Its complement has no two
+consecutive vertices on any $\bar\omega$-cycle. An independent set in an odd
+cycle of length $L$ has at most $(L-1)/2$ vertices, so the support has at least
+$(L+1)/2$ vertices on each of $d$ cycles. This gives~\eqref{eq:support-bound},
+and alternating occupancy with one forced adjacent occupied pair on each odd
+cycle attains the bound.
+\end{proof}
+
+\begin{figure}[ht]
+\centering
+\input{figures/affine_channel_operator.tex}
+\caption{The common-trace affine shift, the two labelled full targets, and the
+exact odd-orbit inverse. The signed inverse shows why adding the two channels
+does not create positivity from total coefficient mass.}
+\label{fig:affine-channel}
+\end{figure}
+
+\section{Mixed-order sections with all integer coefficients retained}
+Let $D\ge1$, $\lambda_i\in\mathbb Z$, and $N_i\ge1$. Write $C_x$ for the
+coefficient of $[x]$ in~\eqref{eq:C}. Fix distinct coordinate indices
+$i_1,\ldots,i_k$, and put
+\[
+ g_0=D,\qquad g_j=\gcd(g_{j-1},\lambda_{i_j}),\qquad
+ m_j=g_{j-1}/g_j.
+\]
+The nontrivial chain has $g_0>g_1>\cdots>g_k=1$.
+
+\begin{theorem}[Mixed-order coefficient completion]\label{thm:chain}
+If $N_{i_j}\ge m_j$ for every $j$, then every original coefficient satisfies
+\begin{equation}\label{eq:lower}
+ C_x\ge L:=(\prod_{i\notin I}N_i)
+              \prod_{j=1}^k\left\lfloor\frac{N_{i_j}}{m_j}\right\rfloor>0.
+\end{equation}
+The map
+\begin{equation}\label{eq:radix}
+ (t_{i_1},\ldots,t_{i_k})\longmapsto
+ \sum_j\lambda_{i_j}t_{i_j}\pmod D,
+ \qquad0\le t_{i_j}<m_j,
+\end{equation}
+is a bijection of the $D=\prod_jm_j$ original digit choices with $\mathbb Z/D$.
+It has the explicit reverse algorithm below. When $N_{i_j}=m_j$ for all
+selected coordinates, every coefficient equals $\prod_{i\notin I}N_i$.
+The case $D=1$ is the empty chain, with every word full.
+\end{theorem}
+\begin{proof}
+Let $H_g=g\mathbb Z/D\mathbb Z$. The quotient
+$H_{g_j}/H_{g_{j-1}}$ has order $m_j$. Its specified generator is the image
+of $\lambda_{i_j}$, since
+$\gcd(g_{j-1}/g_j,\lambda_{i_j}/g_j)=1$.
+For $c_k=x\pmod D$, compute backwards
+\begin{equation}\label{eq:decode}
+ t_{i_j}\equiv(c_j/g_j)(\lambda_{i_j}/g_j)^{-1}\pmod{m_j},\quad
+ 0\le t_{i_j}<m_j,\qquad
+ c_{j-1}=c_j-\lambda_{i_j}t_{i_j}\pmod D.
+\end{equation}
+At step $j$, $c_j$ is divisible by $g_j$; the chosen digit makes the next
+residual divisible by $g_{j-1}$. At the end it is zero modulo $D$.
+The same quotient forces each digit of any other representation, proving
+both existence and uniqueness.
+
+Partition the selected interval $[0,N_{i_j})$ into its
+$\lfloor N_{i_j}/m_j\rfloor$ full blocks of size $m_j$, with the remaining
+short interval separately retained. For every choice of full blocks and every
+choice of the unselected original coordinates, their offsets translate $x$.
+Algorithm~\eqref{eq:decode} gives one unique original bounded word in those
+blocks. Distinct choices give distinct words, proving~\eqref{eq:lower}.
+When the selected intervals have exactly the radix lengths, this exhausts
+all words and proves equality.
+\end{proof}
+
+\begin{theorem}[Partial-chain quotient reduction]
+\label{thm:partial-chain}
+Allow the same strict chain to end at a divisor $g=g_k$ of $D$, possibly
+$g>1$, and retain $N_{i_j}\ge m_j$. Put
+\[
+ B=\prod_{j=1}^k\left\lfloor\frac{N_{i_j}}{m_j}\right\rfloor
+\]
+and, for $y\in\mathbb Z/g$, define the exact residual quotient coefficient
+\[
+ Q_y=\#\left\{(t_i)_{i\notin I}:0\le t_i<N_i,
+ \quad\sum_{i\notin I}\lambda_it_i\equiv y\pmod g\right\}.
+\]
+Then there are integers $E_x\ge0$ such that
+\begin{equation}\label{eq:partial-chain}
+ C_x=BQ_{x\bmod g}+E_x.
+\end{equation}
+If $m_j\mid N_{i_j}$ for every selected coordinate, then every $E_x=0$.
+For the two common channels of Theorem~\ref{thm:affine-channels}, with
+$\delta=\omega\pmod g$,
+\begin{equation}\label{eq:partial-pair}
+ C_x+C_{x-\bar\omega}
+ \ge B\bigl(Q_{x\bmod g}+Q_{(x\bmod g)-\delta}\bigr).
+\end{equation}
+Thus the complete-block subsource isolated by this partial chain forces
+two-channel occupancy for every target precisely when
+\begin{equation}\label{eq:quotient-cover}
+ \operatorname{supp}(Q)+\{0,\delta\}=\mathbb Z/g.
+\end{equation}
+When $g>1$, write $d_g=\gcd(g,\delta)$. Since $g$ is odd,
+condition~\eqref{eq:quotient-cover} requires the sharp bound
+\begin{equation}\label{eq:quotient-support-bound}
+ |\operatorname{supp}(Q)|\ge(g+d_g)/2.
+\end{equation}
+If
+\[
+ b=\gcd\bigl(g,\{\lambda_i:i\notin I\}\bigr)>1,
+\]
+with $b=g$ when no residual coordinate remains, then
+condition~\eqref{eq:quotient-cover} is impossible.
+\end{theorem}
+
+\begin{proof}
+For each selected coordinate, retain all complete radix blocks
+\[
+ a_jm_j+[0,m_j),\qquad
+ 0\le a_j<\lfloor N_{i_j}/m_j\rfloor,
+\]
+and retain its terminal interval separately. For fixed block indices the
+offset is $\sum_j\lambda_{i_j}m_ja_j$. Since
+\[
+ \lambda_{i_j}m_j
+ =g_{j-1}(\lambda_{i_j}/g_j),
+\]
+every such offset lies in $g\mathbb Z/D$. The bounded radix map on the
+within-block digits is a bijection onto $g\mathbb Z/D$, by the same reverse
+algorithm~\eqref{eq:decode} stopped at $g$. Therefore every unselected tuple
+whose sum equals $x$ modulo $g$, together with every one of the $B$ block-index
+tuples, supplies exactly one selected tuple whose total sum is $x$ modulo
+$D$. These are $BQ_{x\bmod g}$ distinct original words. All words using at
+least one terminal interval make up $E_x\ge0$. There is no terminal interval
+when every $m_j$ divides $N_{i_j}$, proving equality in that case.
+
+Apply~\eqref{eq:partial-chain} at $x$ and $x-\bar\omega$ to obtain
+\eqref{eq:partial-pair}. Since all coefficients are nonnegative, its right
+side is positive at every $x$ exactly under~\eqref{eq:quotient-cover}. On each
+$\delta$-orbit in $\mathbb Z/g$, the complement of the support can have no
+adjacent vertices. There are $d_g$ odd cycles of length $g/d_g$, giving
+\eqref{eq:quotient-support-bound} by the odd-cycle argument already used in
+Theorem~\ref{thm:affine-channels}; the same alternating construction attains
+the bound.
+
+Finally every residual sum in the complete-block subsource lies in the subgroup
+$b\mathbb Z/g$. Its support
+and one translate occupy at most two cosets of that subgroup. The index is the
+odd integer $b\ge3$, so two cosets cannot cover $\mathbb Z/g$. This proves the
+last assertion. In particular, the two channel labels cannot by themselves
+replace a missing final radix: genuine residual quotient support is necessary.
+Terminal intervals remain part of the original coefficient vector and may add
+words outside this certificate.
+\end{proof}
+
+\paragraph{Carry, not a direct-product group substitution.}
+The digit map is a set bijection. Its transported group operation is
+$\operatorname{decode}(\operatorname{encode}(v)+\operatorname{encode}(w))$,
+not coordinatewise addition in $\prod_j\mathbb Z/m_j$. For $D=9$ and steps
+$(6,1)$ with radices $(3,3)$,
+\[
+ (0,2)\star(0,1)=(2,0),
+\]
+ because $3=2\cdot6\pmod9$. The cyclic extension and this integer carry remain.
+
+\begin{figure}[ht]
+\centering
+\input{figures/mixed_radix_chain.tex}
+\caption{The exact $D=9$ subgroup chain and its carried digit section. The
+entry in row $t_6$ and column $t_1$ is $6t_6+t_1\pmod9$. Every residue occurs
+once, but the displayed carry proves that the section is not being replaced by
+coordinatewise addition in $(\mathbb Z/3)^2$.}
+\label{fig:mixed-chain}
+\end{figure}
+
+\paragraph{Fibres and coefficient loss.}
+In the equality case each bin has
+$\mu=\prod_{i\notin I}N_i$ words. Retaining the unselected digit vector and
+applying \eqref{eq:decode} inverts the augmented map from a word to its residue
+and that retained vector. The residue projection alone has $\mu$-point fibres.
+Choose one reference word in every residue fibre. On free abelian modules, the
+differences between each other word and that reference form a basis of the
+kernel, of rank $D(\mu-1)=\mu D-D$. All pairwise differences generate the same
+kernel but are not independent. The coefficient stabilizer is the whole
+additive group.
+If $\mu$ is zero modulo a prime, none of these original integer words vanishes.
+Outside the equality case,~\eqref{eq:lower} counts a specified union of full
+blocks; the remainder and its coefficients stay in~\eqref{eq:C}.
+
+\begin{proposition}[Optimal bound within the radix-chain class]\label{prop:dag}
+There is a finite exact algorithm for the largest lower bound~\eqref{eq:lower}
+among all chains. Its graph has the divisors $g\mid D$ as vertices, and an edge
+\[
+ g\longrightarrow d=\gcd(g,\lambda_i)<g
+ \quad\text{when}\quad N_i\ge g/d,
+\]
+with score $\lfloor N_i/(g/d)\rfloor/N_i$.
+Start with score one at $D$, maximize products along decreasing paths, and
+multiply the score at one by $\prod_iN_i$.
+There are at most $n\tau(D)$ candidate edges. If one is unreachable, the zero
+output means only that this certificate class fails, not that $C_{c_0}=0$.
+\end{proposition}
+\begin{proof}
+After a coordinate has been used, every subsequent $g$ divides its step.
+That coordinate can never give another strict edge. Thus paths automatically
+have distinct labels. Future strict edges depend only on $g$, not on which
+prefix reached it. The path score times $\prod_iN_i$ is exactly~\eqref{eq:lower}.
+Dynamic programming on the decreasing divisor graph proves optimality within
+this stated class. Exact rational scores become integers at every successful
+terminal path by the displayed product formula.
+\end{proof}
+
+The criterion is complementary to, not a replacement for, the earlier
+unit-width theorem. For $D=3$, steps $(1,1)$ and lengths $(2,2)$ give all three
+bins, but neither length can start a radix chain. Conversely the examples
+below pass mixed-order completion while their entire prior unit width is less
+than $D-1$. Even joint generation and a positive source size are insufficient:
+steps $(3,1)$ and lengths $(2,2)$ generate $\mathbb Z/9$ but miss five bins.
+
+If an original full coefficient is absent, every feasible radix chain on its
+trace part must therefore stop before one. The set of reachable divisors, and
+the failed inequality $N_i<g/\gcd(g,\lambda_i)$ at each missing outgoing edge,
+are an exact additional obstruction certificate. This does not assert that
+such certificates are contradictory across all shells.
+
+\section{Actual prime arithmetic with genuinely mixed orders}
+The following are original bounded packets, not freely chosen residue supports.
+Set $R=243$, $K=27$, $D=9$ and
+\[
+ a=H\cdot53\cdot163\cdot271,
+ \qquad p=4a-243,
+ \qquad H\equiv29\pmod{210}.
+\]
+For every prime member $p>R$ retain the M packet
+\[
+ \beta_{53}\in\{-1,1\},\quad
+ \beta_{163},\beta_{271}\in\{-1,0,1\},
+\]
+with every other original centred exponent zero. If $H$ contains one of
+these primes, the actual larger exponent interval is still retained and this
+is its specified subpacket. Modulo $K$ the first prime is $-1$ and the other
+two are one. The packet polynomial, up to its retained base shift, is
+\[
+ (1+X^5)(1+X^6+X^{12})(1+X+X^2)
+ =2\sum_{c=0}^8X^c\pmod{X^9-1}.
+\]
+The chain is $9\to3\to1$ using steps $6,1$, both with radix three.
+The preceding unit width is only $1+2=3<8$.
+One full word is
+\[
+ u=H(163\cdot271)^2,\qquad
+ (h,r,s,\lambda)=(H,44173,53,182),
+\]
+since $44173+53=243\cdot182$. Its original complement is the other full word.
+
+There is an all-nonunit selected-chain example. Put
+\[
+ R=675,\quad K=45,\quad D=15,\quad
+ a=H\cdot89\cdot271^2\cdot1801,\quad p=4a-675,
+ \quad H\equiv101\pmod{210}.
+\]
+The original M packet has centred ranges $\{-1,1\}$ at $89$,
+$[-2,2]$ at $271$, and $[-1,1]$ at $1801$, with the other coordinates zero.
+Its polynomial is
+\[
+ (1+X^{11})\left(\sum_{j=0}^4X^{6j}\right)(1+X^{10}+X^{20})
+ =2\sum_{c=0}^{14}X^c\pmod{X^{15}-1}.
+\]
+The selected steps $6,10$ are both nonunits; their chain is
+$15\to3\to1$ with radices $5,3$. The only unit width is the single binary
+$89$ coordinate, so the older unit-width criterion does not apply.
+One full word and its marking are
+\[
+ u=H\cdot1801^2,\qquad
+ (h,r,s,\lambda)=(H,1801,6536249,9686).
+\]
+Both examples are uniform original coefficient vectors with every bin equal
+to two. Freezing either selected mixed direction at centred exponent zero
+removes the full words of the specified M packet; the executable tables check
+these exact restricted fibres as well.
+
+These are infinite prime-source statements, not an assumption of prime values
+of a nonlinear polynomial. With $A=\prod q_i^{e_i}$ fixed, $p=4AH-R$ and
+$H=H_0+210n$ give a linear progression of modulus $840A$. It is reduced:
+$p\equiv1\pmod{840}$ and $p\equiv-R\pmod{q_i}$ for each fixed prime $q_i$,
+which is a unit. Dirichlet's theorem therefore supplies infinitely many prime
+members \citep[Theorem~18.1]{Dirichlet}. Each such member has the constructed
+source and full M return. This does not cover arbitrary prescribed primes.
+The JSON tables select particular prime members by a bounded deterministic
+search and certify their primality independently by complete-order certificates.
+
+\subsection{Arithmetic sharpness at an arbitrary odd defect}
+The last radix capacity cannot be lowered even on actual hard-prime packets.
+Fix odd $D>1$ and integers $\lambda_1,\ldots,\lambda_k$ such that
+\[
+ g_0=D,\qquad g_j=\gcd(g_{j-1},\lambda_j),\qquad
+ D=g_0>g_1>\cdots>g_k=1.
+\]
+Put $m_j=g_{j-1}/g_j$, let the last radix be
+$m=m_k=g_{k-1}>1$, and put $R=3D^2$, $K=3D$. For $i<k$, choose distinct primes greater
+than seven with
+\[
+ q_i\equiv1+K\lambda_i\pmod R.
+\]
+Choose a further prime
+\[
+ q_k\equiv-1+Kc\pmod R,\qquad 2c\equiv-\lambda_k\pmod D.
+\]
+Every displayed class is a unit modulo $R$, so Dirichlet supplies these primes.
+For $i<k$ one has $\operatorname{ord}_K(q_i)=1$ and
+$(q_i-1)/K\equiv\lambda_i\pmod D$. Since $K^2=3R$,
+\[
+ q_k^2=(-1+Kc)^2\equiv1-2Kc\pmod R,
+\]
+so $\operatorname{ord}_K(q_k)=2$ and
+\[
+ \frac{q_k^2-1}{K}\equiv-2c\equiv\lambda_k\pmod D.
+\]
+Take original exponents $e_i=(m_i-1)/2$ for $i<k$ and $e_k=m-1$. Let
+$A=\prod q_i^{e_i}$, and impose
+\[
+ p\equiv1\pmod{840},\qquad p\equiv4A-R\pmod{4A^2}.
+\]
+The congruences agree modulo four and are reduced at every other prime.
+Infinitely many prime members therefore have $a=(p+R)/4=AH$ with
+$H\equiv1\pmod A$, so the stated prime exponents are exact.
+
+Hold the other centred coordinates zero. For $i<k$ use all
+$\beta_i\in[-e_i,e_i]$; for $q_k$ use the odd part
+\[
+ \beta_k\in\{-(m-2),-(m-4),\ldots,m-2\}.
+\]
+For $i<k$, square-zero expansion gives
+$q_i^{\beta_i}\equiv1+K\lambda_i\beta_i\pmod R$; because $\beta_k$ is odd,
+$q_k^{\beta_k}\equiv-1+Kc\beta_k\pmod R$. Hence every displayed word is an
+original M trace and its original residue ratio and fine defect are
+\[
+ z=\prod_iq_i^{\beta_i}
+ \equiv-1+K\left(c\beta_k-\sum_{i<k}\lambda_i\beta_i\right)\pmod R,
+ \qquad
+ d(\boldsymbol\beta)=c\beta_k-\sum_{i<k}\lambda_i\beta_i\pmod D.
+\]
+For $i<k$, the centred interval $[-e_i,e_i]$ has exactly $m_i$ members and is
+a complete digit interval modulo $m_i$. The reverse decoder therefore maps
+their product bijectively onto $H_m=m\mathbb Z/D$, whose order is
+$D/m=\prod_{i<k}m_i$. Moreover $\gcd(c,m)=1$, because
+$2c\equiv-\lambda_k\pmod m$, $m$ is odd, and $\gcd(\lambda_k,m)=1$. The
+$m-1$ displayed values of $\beta_k$ are exactly the nonzero residue classes
+modulo $m$, so their multiples by $c$ are the nonzero quotient classes of
+$(\mathbb Z/D)/H_m$. Thus the actual fine-defect count
+$\mu_x=\#\{u:d(u)=x\}$ is
+\begin{equation}\label{eq:sharp}
+ \mu_x=\begin{cases}0,&m\mid x,\\1,&m\nmid x.\end{cases}
+\end{equation}
+Its actual coefficient stabilizer is exactly $H_m$: a translation preserves
+the zero set precisely when it lies in $H_m$. The source maps bijectively onto
+the complement of $H_m$. In particular zero is absent, despite all preceding
+capacities being exact.
+This construction does not furnish or claim an ES counterexample: it proves an
+exact empty subpacket while retaining every other original word.
+
+The separate finite realization has
+\[
+ D=9,\quad K=27,\quad R=243,\quad
+ (\lambda_1,\lambda_2)=(6,1),\quad(q_1,q_2)=(163,107),
+\]
+\[
+ A=163\cdot107^2=1866187,\quad H=523,\quad
+ a=976015801,\quad p=3904062961.
+\]
+Its six centred exponent pairs
+$\beta_{163}\in\{-1,0,1\}$, $\beta_{107}\in\{-1,1\}$ have fine-defect vector
+\[
+ (\mu_0,\ldots,\mu_8)=(0,1,1,0,1,1,0,1,1),\qquad
+ \operatorname{Stab}(\mu)=\{0,3,6\}=3\mathbb Z/9.
+\]
+This $H=523$ example is distinct from the displayed $H\equiv1\pmod A$ lift.
+The reduced exact-exponent progression through it is
+\[
+ p=3904062961+2925429291933960t.
+\]
+Complete enumeration finds no full word in the displayed $R=243$ shell. The
+same prime nevertheless has the exterior full witness
+\[
+ a_0=976015741,\quad R_0=3,\quad u_0=89,\quad
+ (h,r,s,\kappa)=(89,1,10966469,1305009810),
+\]
+and therefore the exact E denominators
+\[
+ (976015741,1273710116719419210,453440801203675619490).
+\]
+Thus the boundary packet is not an ES counterexample. Complete prime, word,
+progression, stabilizer and exterior-witness certificates are supplied.
+
+\section{A factor exchange that permits controlled upward movement}
+The supplied least-example theorem shows that a repair from \emph{every} trace
+cannot always satisfy $a'\le a$ \citep[\S7]{Previous}. We retain another exact
+integer invariant instead. For any original shell and any chosen divisor
+$s\mid a$, write $n=a/s$ and define
+\begin{equation}\label{eq:invariant}
+ C=R+s,\qquad M=p+C=4a+s=(4n+1)s.
+\end{equation}
+Here $0<C<3p/2$ and $M<5p/2$.
+
+\begin{theorem}[Complete labelled plus-factor fibre]\label{thm:plus}
+At fixed $p,C$, every positive first-half integer cell with invariant
+\eqref{eq:invariant} is exactly
+\[
+ s'\mid M=p+C,\quad M/s'\equiv1\pmod4,\quad0<C-s'<p,
+\]
+\begin{equation}\label{eq:cell}
+ n'=(M/s'-1)/4,\quad R'=C-s',\quad
+ a'=n's'=(M-s')/4.
+\end{equation}
+The map is inverted by retaining $s$ and $s'$. Its unit-ray exterior targets
+are exactly those cells additionally satisfying $R'\mid M$. For each,
+\begin{equation}\label{eq:plusreturn}
+ (h',r',s',\kappa')=(n',1,s',M/R'-1),\qquad u'=n',
+\end{equation}
+with ordered denominators $(a',n's'\kappa',pn'\kappa')$.
+The change of first denominator is exactly
+\[
+ a'-a=(s-s')/4.
+\]
+\end{theorem}
+\begin{proof}
+Equation~\eqref{eq:invariant} proves both directions of~\eqref{eq:cell}; its
+congruence implies $R'\equiv-p\equiv3\pmod4$, so the strict range gives
+$R'\ge3$ and $p/4<a'<p/2$. Because $s'\mid a'$ and $a'<p$, one has
+$\gcd(p,s')=1$; moreover
+\[
+ \gcd(R',s')=\gcd(4n's'-p,s')=\gcd(p,s')=1.
+\]
+Since $M=(4n'+1)s'$, the original unit-ray E gate
+$R'\mid4n'+1$ is therefore equivalent to $R'\mid M$. Equivalently,
+$p+s'=M-R'$, so $R'\mid p+s'$ precisely when $R'\mid M$.
+Then~\eqref{eq:plusreturn} is the inherited full E identity, and
+$u'=n'$ divides $a'^2$ with its actual original exponents.
+Conversely a full unit-ray target in this fibre forces that same divisibility.
+Both residual and carrier factors are computed, not declared favourable.
+\end{proof}
+
+The whole cell list has at most $\tau(M)$ members. The full target list is a
+specified finite divisor test, not an assertion that every fibre has a target.
+For a canonical original E or M trace, choose $s$ from its exact gcd
+factorization. Then $n=hr$. For a marked unit-ray E target, its complete
+\emph{canonical} incoming trace fibre is: enumerate every cell
+\eqref{eq:cell}, every $r\mid n$ with $\gcd(r,s)=1$, put
+\[
+ h=n/r,\qquad u=nr,
+\]
+and test each original square gate. This reconstructs all fields and all
+original word bounds. An M word already retains its order. On ordered rational
+solution triples define the exact E-tail involution
+\[
+ \tau_E(a,Y,Z)=(a,Z,Y),\qquad \tau_E^2=\operatorname{id}.
+\]
+This permutation does not generally preserve the original E exponent box, so it
+is retained as a map of ordered solutions and is not inserted as another member
+of the canonical incoming word fibre. In particular it is not an extra free
+bit on an already counted M word.
+
+The labelled arrow includes its chosen target. Forgetting that choice makes
+the forward relation set-valued when more than one divisor passes. On free
+integer coefficient modules, choose one reference arrow over every target. The
+differences between each other arrow and its fibre reference form a kernel basis;
+all pairwise same-target differences generate that kernel but are dependent.
+No group-ring reduction changes the count
+of distinct original source words or of distinct target states.
+
+\subsection{The critical 67369 source moves up by one shell}
+At
+\[
+ p=67369,\quad a=16849=7\cdot29\cdot83,\quad R=27,\quad u=4067,
+\]
+the exact M gcd factors are $(h,r,s)=(83,7,29)$ and $\lambda=4/3$.
+Thus $C=56$, $M=67425$. Select
+\[
+ s'=25,\quad R'=31,\quad n'=674,\quad a'=16850.
+\]
+Both $25$ and $31$ divide $67425$, with $67425/25\equiv1\pmod4$.
+The resulting marking is
+\[
+ (a',R',u',h',r',s',\kappa')=(16850,31,674,674,1,25,2174),
+\]
+and
+\begin{equation}\label{eq:critical}
+ \frac4{67369}=\frac1{16850}+\frac1{36631900}+\frac1{98714178844}.
+\end{equation}
+The old factors $7,29,83$ and the new factors $2,5,337$ do not share a prime.
+The invariant is $4a+s=4a'+s'$, not an identification of their factor boxes.
+
+\begin{figure}[ht]
+\centering
+\input{figures/plus_factor_fibre.tex}
+\caption{The complete $p=67369$, $C=56$, $M=67425$ plus-factor cell set.
+The arrow retains the source word and selected target. Only the $s'=25$ cell
+passes the unit-ray terminal test $R'\mid M$; the other divisor cells remain in
+the fibre rather than being discarded.}
+\label{fig:plus-fibre}
+\end{figure}
+
+The release enumerates every divisor at residuals $3,7,11,15,19,23,27,31$.
+The first seven have no full E/M word; $R=27$ has proper traces and $R=31$
+has full E words $674,84250$. This rechecks the relevant fixed-prime obstruction;
+it does not claim to have newly replayed the predecessor's leastness proof over
+all 817 smaller primes. The chosen target's canonical incoming trace fibre is
+computed by the complete rule above, including any full source itself.
+
+The return extends to a reduced prime progression, not just one example. Put
+\[
+ h=83+4650k,\quad p=812h-27=67369+3775800k,\quad k\ge0.
+\]
+Every prime member is $169\pmod{840}$ and has the proper source
+\[
+ (a,R,u,h,r,s,\lambda)=(203h,27,49h,h,7,29,4/3).
+\]
+The target is
+\[
+ a'=203h+1,\quad R'=31,\quad u'=h'=(203h+1)/25,
+ \quad r'=1,\quad s'=25,\quad\kappa'=(p+25)/31.
+\]
+All divisions are exact. The progression is reduced, so infinitely many
+prime members exist. The old word and ray deletion systems fail on this
+source: their moduli exceed $27$, while the properness requires deletion by
+a multiple of three. The earlier factor-sum map to $\delta=3$ also fails
+because its necessary divisibility is $7\mid(3^2-1)/4=2$.
+The new formula always has $a'=a+1$. Only the initial prime is asserted to
+have an entirely empty old full shell; no such extra assertion is made for
+every prime in the progression.
+
+\subsection{Why the new fibre is not automatically occupied}
+At $p=97,a=40,u=2$ in M, the canonical $s$ is $20$, so $C=83$ and $M=180$.
+The complete cell list is
+\[
+ (a',R',s')=(36,47,36),(40,63,20),(44,79,4).
+\]
+None has a unit-ray E target. Exhausting each of these three complete original
+square-divisor boxes finds no full E or M state at all. The input is nevertheless
+a proper M trace. This refutes universal occupancy of a fixed plus-factor fibre,
+not ES or possible transformations between different such fibres.
+
+\section{Remaining arithmetic obligation and verification scope}
+The mixed-order theorem forces original target coefficients when its actual
+quotient capacities pass; its inverse and all integer multiplicities are known.
+The upward return crosses a previously certified obstruction to every
+nonincreasing repair at its selected source. The two mechanisms are not
+implicitly composable on every input: any application must preserve the shown
+source, interval, channel and divisibility tests.
+
+The affine-channel theorem now gives an exact alternative to a full radix
+chain. A partial chain may stop at $g>1$ only if its surviving quotient support
+and its $\delta$-translate cover $\mathbb Z/g$. Two channel labels do not
+constitute the missing final radix: when the residual steps remain in a proper
+subgroup, the support meets at most two of at least three quotient cosets.
+Thus a proof through the two-channel route must construct the required quotient
+support, or introduce a proved source-changing map that alters this obstruction.
+Total word mass, a norm bound, or the injectivity of $I+T_{\bar\omega}$ cannot
+replace that step.
+
+If ES failed at a prescribed prime, every full coefficient in the complete
+first-half source would be zero. Each trace part would fail both the previous
+unit-width test and every feasible mixed-order chain. Every chosen plus-factor
+fibre reachable by a proposed argument would have to miss its displayed
+terminal divisor test. These are exact necessary conditions, not a contradiction
+by definition. The remaining Stage~7 step is still to force at least one
+original gate, with controlled changes between shells if required.
+
+The standard-library replay exhausts the complete original boxes at primes
+$p\equiv1\pmod{24}$ through its recorded bound and checks every squareful
+trace part against literal gates. It additionally examines 161887 finite
+additive polynomials, compares the divisor-DAG optimum with an independent
+ordered-subsequence implementation, retains all nonzero carries, and verifies
+complete original example boxes and inverse fibres. The separate checker imports
+neither the main program nor predecessor code. Large example primes have full
+order certificates whose factors are themselves certified; trial division is
+used in discovery and as a separate finite check. Finite search caps, outcomes,
+and file hashes are in the release receipt. A probable-prime label is not used
+as a proof. There is no Lean build, independent human review, priority
+conclusion, or new overall ES verification-range claim.
+
+\subsection{Primality and finite-check boundary}
+The isolated large primes have complete-order certificates. A nonterminal node
+retains the full certified prime factorization of $n-1$ and a base $b$ with
+\[
+ b^{n-1}\equiv1\pmod n,\qquad
+ \gcd(b^{(n-1)/q}-1,n)=1\quad(q\mid n-1).
+\]
+For any prime divisor $\ell$ of $n$, the order of $b$ modulo $\ell$ divides
+$n-1$ and does not divide $(n-1)/q$ for any prime $q$ of $n-1$. Thus that order
+is $n-1$, which divides $\ell-1$. It follows that $\ell\ge n$, proving $n$
+prime. Terminal nodes below $10000$ are checked by complete trial division
+through their integer square root. Discovery tests and completed certificates
+are recorded separately. The arithmetic census tests every source word at its
+finite bound; it is not an additional assertion about primes beyond that bound.

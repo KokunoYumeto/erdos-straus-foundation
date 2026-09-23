@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-23",
+  "github": {
+    "repository": "KokunoYumeto/erdos-straus-foundation",
+    "observed_default_revision": "20709bee872ad10e4cc7d7b976d975e24532a803",
+    "integration_base": "6c064a07298cdba38352998364ce6b7cb3efa973",
+    "message": "The square-zero/Pell tranche was independently checked and integrated before this continuation.",
+    "latest_square_zero_integration_confirmed": true,
+    "scope": "The observed starting revision, integrated predecessor and current incoming sources were checked; no claim is made about every unobserved fork or unpublished working tree."
+  },
+  "supplied_predecessor": {
+    "source": "/mnt/data/es_turn7_square_zero_pell_20260922/core.tex",
+    "source_sha256": "f3a3a87cde84c1bad100f56dc422d9d2bc49a7c18924da48377ac8670ea9e453",
+    "archive": "/mnt/data/ES_Turn7_Square_Zero_Pell_20260922.zip",
+    "archive_sha256": "2697ddb6ada7e088ec172eed495f4e215d6b088b57fd707a2170960fdf0a91ff",
+    "cumulative": "/mnt/data/ES_Turns6_7_With_Square_Zero_Pell_20260922.zip",
+    "cumulative_sha256": "6708e1277f64aad2f596bf9e7ac5217212bae451d88a6644d53d7333defc0684",
+    "reading": "Complete core and handoff were retrieved. Section3 additive coordinate; Section4 original-box polynomial, unit-width theorem and stabilizers; Section6 factor-sum/Pell; Section7 p67369 obstruction are the active dependencies."
+  },
+  "primary_sources": [
+    {
+      "authors": "Yamamoto, K.",
+      "year": 1965,
+      "title": "On the diophantine equation 4/n=1/x+1/y+1/z",
+      "url": "https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf/-char/en",
+      "locator": "Lemma 2, equation (4), printed p.38",
+      "use": "Inherited exterior congruences; coordinate identity is rederived here."
+    },
+    {
+      "authors": "Elsholtz, C.; Tao, T.",
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "url": "https://arxiv.org/abs/1107.1010",
+      "locator": "Section2, Propositions2.2 and2.6; TypeI and TypeII identities",
+      "use": "Inherited original coordinate framework, not existence at every prime."
+    },
+    {
+      "authors": "Lopez, Miguel Angel",
+      "year": 2024,
+      "title": "A Complete Congruence System for the Erdos-Straus Conjecture",
+      "url": "https://arxiv.org/abs/2404.01508",
+      "canonical_source_id": "PUBUNIT-AA4F2795BABD6CBE602A4627",
+      "local_source": "arxiv_latex/library/other/A Complete Congruence System for the Erdos-Straus Conjecture/main.tex",
+      "locator": "Original author TeX lines 33--58, 76--127 and 171--190; introduction, Type II and Type A/B definitions, p congruent to 1 modulo 24 discussion",
+      "read_method": "Original arXiv author TeX",
+      "use": "Literature context for the hard residue class and solution-form lineage; no new theorem here depends on its conjectural coverage system."
+    },
+    {
+      "authors": "Sutherland, A. V.",
+      "year": 2017,
+      "title": "Dirichlet theorem on primes in arithmetic progressions",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
+      "locator": "Lecture18, Theorem18.1, p.1",
+      "use": "Only the displayed explicitly reduced linear prime progressions; attribution to P. G. L. Dirichlet."
+    }
+  ],
+  "content_searches": [
+    "Erdos Straus mixed radix",
+    "Erdos Straus 4a divisors sum",
+    "cyclic group subgroup chain bounded intervals mixed radix bijection",
+    "Erdos Straus",
+    "mixed radix cyclic group",
+    "Yamamoto diophantine equation",
+    "Elsholtz Tao unit fractions"
+  ],
+  "search_limit": "Scoped source/content search did not establish a specific matching arithmetic antecedent. The abstract cyclic quotient digit construction is elementary and is not advertised as a new abstract group theorem. Search nonmatches do not establish novelty.",
+  "not_used_as_lemmas": [
+    "No new receiver spectral estimate",
+    "No unrestricted subgroup-support surrogate",
+    "No prime distribution theorem beyond Dirichlet",
+    "No density-to-pointwise inference"
+  ],
+  "nonclaims": [
+    "universal ES",
+    "a globally terminating p-only witness algorithm",
+    "historical priority",
+    "independent human review",
+    "Lean build",
+    "new overall ES verification range"
+  ]
+}

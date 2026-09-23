@@ -1,0 +1,47 @@
+{
+  "corpus_index": "Zeta-Function-Foundation/config/literature_index_entrypoint.json",
+  "queries": [
+    "Erdos Straus",
+    "mixed radix cyclic group",
+    "Yamamoto diophantine equation",
+    "Elsholtz Tao unit fractions"
+  ],
+  "records": [
+    {
+      "authors": ["Christian Elsholtz", "Terence Tao"],
+      "canonical_source_id": "PUBUNIT-1D778B56AC2B71BF35EB40F9",
+      "locator": "Original author TeX lines 487--625; Section 2, Propositions 2.2 and 2.6",
+      "source_kind": "original arXiv author TeX",
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "used_for": "Type-I/II coordinate lineage and exact coordinate crosswalk"
+    },
+    {
+      "author": "Miguel Angel Lopez",
+      "canonical_source_id": "PUBUNIT-AA4F2795BABD6CBE602A4627",
+      "locator": "Original author TeX lines 33--58, 76--127 and 171--190",
+      "source_kind": "original arXiv author TeX",
+      "title": "A Complete Congruence System for the Erdos-Straus Conjecture",
+      "used_for": "Context for p congruent to 1 modulo 24 and Type II/Type A/Type B solution forms",
+      "url": "https://arxiv.org/abs/2404.01508"
+    },
+    {
+      "author": "K. Yamamoto",
+      "canonical_source_id": null,
+      "locator": "Lemma 2, equation (4), printed page 38",
+      "source_kind": "primary journal PDF; author TeX unavailable in the routed corpus",
+      "title": "On the Diophantine equation 4/n=1/x+1/y+1/z",
+      "used_for": "Inherited exterior congruences",
+      "url": "https://doi.org/10.2206/kyushumfs.19.37"
+    },
+    {
+      "author": "Andrew V. Sutherland",
+      "canonical_source_id": null,
+      "locator": "Theorem 18.1, page 1",
+      "source_kind": "primary course-notes PDF; TeX unavailable in the routed corpus",
+      "title": "Dirichlet L-functions, primes in arithmetic progressions",
+      "used_for": "Dirichlet's theorem after the exact reduced CRT classes are proved",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf"
+    }
+  ],
+  "scope": "Routing records identify sources. Reading and use are recorded by exact locators; the scoped searches do not establish historical priority."
+}

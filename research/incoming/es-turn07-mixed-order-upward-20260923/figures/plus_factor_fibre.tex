@@ -1,0 +1,22 @@
+\begin{tikzpicture}[
+  font=\scriptsize,
+  cell/.style={draw,rounded corners,align=center,minimum width=31mm,minimum height=18mm,inner sep=3pt},
+  source/.style={cell,fill=blue!8,very thick},
+  target/.style={cell,fill=green!10,very thick},
+  fail/.style={cell,fill=black!4},
+  arrow/.style={-{Latex[length=2.2mm]},very thick}
+]
+\node[font=\small] (head) {$p=67369,\quad C=56,\quad M=p+C=67425$};
+\node[source,below=8mm of head,xshift=-54mm] (c1)
+  {$s=29,\ R=27$\\$a=16849,\ n=581$\\M trace $u=4067$};
+\node[target,right=5mm of c1] (c2)
+  {$s'=25,\ R'=31$\\$a'=16850,\ n'=674$\\E full $u'=674$};
+\node[fail,right=5mm of c2] (c3)
+  {$s'=5,\ R'=51$\\$a'=16855,\ n'=3371$\\$51\nmid67425$};
+\node[fail,right=5mm of c3] (c4)
+  {$s'=1,\ R'=55$\\$a'=16856,\ n'=16856$\\$55\nmid67425$};
+\draw[arrow] (c1) -- (c2);
+\node[draw,rounded corners,below=6mm of c2,inner sep=4pt,align=center]
+  {$\displaystyle\frac4{67369}=\frac1{16850}+\frac1{36631900}
+       +\frac1{98714178844}$};
+\end{tikzpicture}

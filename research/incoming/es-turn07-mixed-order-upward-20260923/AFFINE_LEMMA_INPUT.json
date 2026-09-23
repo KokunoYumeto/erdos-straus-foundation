@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-23",
+  "received_archive": {
+    "file": "ES_Turn7_Zeta_Mixed_Boundary_20260923.zip",
+    "sha256": "7A5D45A99C38CF4BDAF8337EE8AE21B35B00CAD55C8E7EBA2552E07B4E962F38"
+  },
+  "received_handoff": {
+    "file": "Pasted text.txt",
+    "sha256": "B6840A0367B978B50983F4B77F00E52A9D273958DFE082582E97F00149F240B6"
+  },
+  "retained_contribution": "The proposed E/M fine-coordinate shift was rederived from the original channel formulas and strengthened to an exact common-trace theorem, coefficient-lattice sequence, support-cover criterion, and partial-chain quotient theorem.",
+  "excluded_scope": "The supplied numerical census, example accumulation, and unrelated zeta transfer material are not integrated or presented as Erdős--Straus progress.",
+  "proof_locators": [
+    "core.tex#thm:affine-channels",
+    "core.tex#thm:partial-chain"
+  ]
+}

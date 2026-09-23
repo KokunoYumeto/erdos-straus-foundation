@@ -1,0 +1,59 @@
+{
+  "scope": "proved as stated; no universal source occupancy",
+  "claims": [
+    {
+      "id": "C0A",
+      "title": "Exact affine E/M channel operator",
+      "statement": "A fixed original divisor is trace-admissible in both channels exactly when one trace gate holds and K divides p-1. On that locus c_E=c_M-(p-1)/K modulo D. The labelled count operator I+T is injective for odd D, has the displayed alternating inverse, and has orbit-parity cokernel (Z/2)^gcd(D,omega).",
+      "locator": "core.tex Theorem thm:affine-channels"
+    },
+    {
+      "id": "C0B",
+      "title": "Partial-chain quotient criterion",
+      "statement": "A strict radix chain ending at g reduces its complete-block paired count to B(Q_y+Q_{y-delta}). Uniform coverage is exactly the quotient support-cover condition; the sharp support threshold is (g+gcd(g,delta))/2, and residual steps in a proper subgroup cannot close the certificate.",
+      "locator": "core.tex Theorem thm:partial-chain"
+    },
+    {
+      "id": "C1",
+      "title": "Mixed-order bounded section",
+      "statement": "Every coefficient is at least prod unused N times prod floor(N/m) under the displayed actual strict gcd chain. Exact inverse and carries.",
+      "locator": "core.tex Section3"
+    },
+    {
+      "id": "C2",
+      "title": "Finite certificate optimizer",
+      "statement": "Divisor DAG with at most n*tau(D) candidate edges gives the strongest lower bound in the specified chain class; no claim to decide all positivity.",
+      "locator": "core.tex Section3.2"
+    },
+    {
+      "id": "C3",
+      "title": "Original hard-prime realizations",
+      "statement": "Two reduced linear progressions realize uniform fine coefficients two while old unit width fails; second selected chain is entirely nonunit.",
+      "locator": "core.tex Section4"
+    },
+    {
+      "id": "C4",
+      "title": "Arithmetic last-capacity boundary",
+      "statement": "For arbitrary odd D and a strict chain, actual prime packets can have fine coefficient 1 outside H_m and 0 on H_m after one last digit is removed. The finite D=9 certificate records the exact stabilizer, exact-exponent progression, and a separate exterior witness for the same prime.",
+      "locator": "core.tex Section 4.1; certificates/arithmetic_boundary.json"
+    },
+    {
+      "id": "C5",
+      "title": "Complete labelled plus-factor fibre",
+      "statement": "All cells and unit-ray E terminals with invariant 4a+s, their original inverses and canonical trace input fibres.",
+      "locator": "core.tex Section5"
+    },
+    {
+      "id": "C6",
+      "title": "Controlled upward prime family",
+      "statement": "p=67369+3775800k prime yields a proper M input and exact E target with a prime-support change and a increase exactly1.",
+      "locator": "core.tex Section5.1"
+    },
+    {
+      "id": "C7",
+      "title": "Fixed-fibre obstruction",
+      "statement": "At p97,a40,u2 the complete C83 fibre has three shells, all with both full gates empty.",
+      "locator": "core.tex Section5.2"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "cardinality_sharpness": [
+    {
+      "D": 9,
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        3,
+        3
+      ],
+      "shortened": [
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "index": 0
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "index": 1
+        }
+      ],
+      "steps": [
+        6,
+        1
+      ]
+    },
+    {
+      "D": 15,
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        5,
+        3
+      ],
+      "shortened": [
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "index": 0
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "index": 1
+        }
+      ],
+      "steps": [
+        6,
+        10
+      ]
+    },
+    {
+      "D": 27,
+      "coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "lengths": [
+        3,
+        3,
+        3
+      ],
+      "shortened": [
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "index": 0
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "index": 1
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "index": 2
+        }
+      ],
+      "steps": [
+        9,
+        3,
+        1
+      ]
+    }
+  ],
+  "nonimplications": [
+    {
+      "D": 9,
+      "chain": {
+        "edges": 0,
+        "indices": [],
+        "lower": 0,
+        "reachable": [
+          9
+        ]
+      },
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "lengths": [
+        2,
+        2
+      ],
+      "steps": [
+        3,
+        1
+      ],
+      "unit_lower": 0
+    },
+    {
+      "D": 3,
+      "chain": {
+        "edges": 0,
+        "indices": [],
+        "lower": 0,
+        "reachable": [
+          3
+        ]
+      },
+      "coefficients": [
+        1,
+        2,
+        1
+      ],
+      "lengths": [
+        2,
+        2
+      ],
+      "steps": [
+        1,
+        1
+      ],
+      "unit_lower": 1
+    },
+    {
+      "D": 5,
+      "chain": {
+        "edges": 0,
+        "indices": [],
+        "lower": 0,
+        "reachable": [
+          5
+        ]
+      },
+      "coefficients": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "lengths": [
+        2
+      ],
+      "steps": [
+        1
+      ],
+      "unit_lower": 0
+    }
+  ],
+  "note": "Shortened abstract boxes are not asserted to be separate ES counterexamples."
+}

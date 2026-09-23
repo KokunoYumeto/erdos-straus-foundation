@@ -1,0 +1,2312 @@
+From f976c122565e76b65e62cdfb1f8ea2e2077ded07 Mon Sep 17 00:00:00 2001
+From: The Clankers <clankers@users.noreply.github.com>
+Date: Tue, 22 Sep 2026 23:41:40 +0000
+Subject: [PATCH] Add mixed-order original coefficients and upward plus-factor
+ return
+
+---
+ .../HANDOFF_TURN_7_REMAINDER.md               |  36 ++
+ .../MORPHISMS.md                              |  74 +++
+ .../READING_AND_DELTA.md                      |  36 ++
+ .../README.md                                 |  66 +++
+ .../arithmetic.py                             | 303 +++++++++++
+ .../attempt.json                              |   9 +
+ .../check_independent.py                      | 279 +++++++++++
+ .../claims.json                               |  47 ++
+ .../core.tex                                  | 472 ++++++++++++++++++
+ .../lean_plan.md                              |  40 ++
+ .../preprint.tex                              | 231 +++++++++
+ .../references.tex                            |  26 +
+ .../run_all.py                                |  52 ++
+ .../source_reading.json                       |  65 +++
+ .../verification.json                         | 136 +++++
+ .../verify.py                                 | 264 ++++++++++
+ .../workbench.tex                             |  29 ++
+ 17 files changed, 2165 insertions(+)
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/HANDOFF_TURN_7_REMAINDER.md
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/MORPHISMS.md
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/READING_AND_DELTA.md
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/README.md
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/arithmetic.py
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/attempt.json
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/check_independent.py
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/claims.json
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/core.tex
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/lean_plan.md
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/preprint.tex
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/references.tex
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/run_all.py
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/source_reading.json
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/verification.json
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/verify.py
+ create mode 100644 research/incoming/es-turn07-mixed-order-upward-20260923/workbench.tex
+
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/HANDOFF_TURN_7_REMAINDER.md b/research/incoming/es-turn07-mixed-order-upward-20260923/HANDOFF_TURN_7_REMAINDER.md
+new file mode 100644
+index 0000000..d3063d9
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/HANDOFF_TURN_7_REMAINDER.md
+@@ -0,0 +1,36 @@
++# Remaining Stage 7 obligation
++
++The universal first-source assertion is not proved. Do not mark Stage7 complete
++or begin a witness-guaranteed Stage8 algorithm on the strength of this package.
++
++Completed:
++- exact mixed-order coefficient section with integer multiplicities and carries;
++- optimal bound within that finite subgroup-chain class, including nonunit steps;
++- original hard-prime packets that improve on the old unit-width test;
++- sharp last-capacity failure in actual original prime packets;
++- an upward, source-changing plus-factor relation with complete inverse fibres;
++- the p67369 trace repaired at a'=a+1, and an infinite reduced prime family.
++
++The main positive arithmetic example specifically passes through the previously
++proved obstruction to universal nonincrease of a. Its source u4067 maps to the
++E word674 at a16850. Do not change its output channel or confuse its cofactor
++with its residual. The fixed plus-factor fibre at p97 is entirely unoccupied
++in both full channels, so that fibre relation alone is not a universal selector.
++
++The chain lower bound and the old unit-width bound are complementary. D3 with
++two length-two unit intervals is positive but has no valid chain. D9 with two
++length-two intervals of steps3,1 generates the group but still has absent bins.
++Neither subgroup generation nor an unconstrained quotient representative may
++replace the actual digit lengths.
++
++Within the complete p<=10000 original replay, the chain is positive on four
++coarse parts and the old unit bound on five; there is no chain-only part in that
++small census. The strict improvement is proved and exhibited on the separately
++certified larger original packets. No extra prime coverage is inferred from
++those selected positive examples.
++
++The next necessary theorem must force an initial trace/part with an occupied
++coefficient, or link different original shell fibres so that a full gate is
++unavoidable. A fixed-C component or an arithmetic boundary packet may be empty.
++No well-founded global termination measure has been proved by the isolated
++one-shell upward transformation.
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/MORPHISMS.md b/research/incoming/es-turn07-mixed-order-upward-20260923/MORPHISMS.md
+new file mode 100644
+index 0000000..27ec345
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/MORPHISMS.md
+@@ -0,0 +1,74 @@
++# Typed maps, inverse domains, fibres, and loss
++
++## Original arithmetic
++
++1. Fix p prime, p=1 mod4 and p/4<a<p/2. The source is the entire exponent box
++   0<=f_q<=2e_q at a=prod q^e_q, with the channel separately retained.
++2. u -> g=gcd(a,u), (h,r,s)=(g^2/u,u/g,a/g). Its inverse is
++   a=hrs,u=hr^2,gcd(r,s)=1. No original exponent occurrence is discarded.
++3. E: kappa=(pr+s)/R, ordered denominators (a,hs*kappa,phr*kappa).
++   M: lambda=(r+s)/R, ordered denominators (a,phs*lambda,phr*lambda).
++   The quotients are rational before the full gate. Ordered inverses are
++   u=a^2/(Ry-pa) and u=pa^2/(Ry-pa), respectively.
++4. M complement already encodes its two tail orders. An E tail exchange is a
++   separate permutation; it is not another free bit on an already ordered M word.
++
++## Fine defect and its source boxes
++
++5. R=4a-p, K=prod l^ceil(v_l(R)/2), D=R/K. The map c -> Kc identifies the
++   additive group Z/D with the literal square-zero ideal KZ/R. D=1 is retained.
++6. On an actual trace, p^eta*u/a=-1+Kc modR, eta=1 for E,0 for M. Full gate
++   iff c=0; common rational tail denominator is D/gcd(D,c).
++7. Original prime exponent intervals are partitioned by ord_K(q):
++   beta_q=b_q+o_q*t_q, 0<=t_q<N_q. On a coarse trace part the fine map is
++   c=c0-sum lambda_q*t_q, lambda_q=(q^o_q-1)/K modD.
++   Inversion reads the original beta, the unique part, and t_q. Explicitly chosen
++   subrectangles retain all omitted original words in the surrounding source.
++8. The integer polynomial coefficients count one actual original vector per
++   index. Group indices, not integer coefficients, are reduced modulo D.
++
++## Mixed-order section
++
++9. A strict chain g0=D, gj=gcd(g(j-1),lambda_ij)>0, gk=1, has relative radices
++   mj=g(j-1)/gj. Distinct labels, all actual lengths N_ij>=mj, are required.
++10. Digits 0<=t_ij<mj -> sum lambda_ij*t_ij modD is a bijection of sets. The
++    reverse divisions c_j/g_j and lambda_ij/g_j are exact, and the latter is
++    inverted modulo mj. This is not generally a product-group isomorphism.
++11. The carried group law is obtained by decoding the sum of two residue images.
++    In D=9 with steps6,1 and radices3,3, (0,2)*(0,1)=(2,0).
++12. Each full radix block and each unused coordinate vector gives a separate
++    original word over every residue. The lower bound is
++    prod(unused N_i)*prod floor(N_ij/mj). If selected lengths equal the radices,
++    every coefficient is exactly prod(unused N_i), and the kernel rank is that
++    multiplicity times D minus D. Kernel generators are same-bin word differences.
++13. The optimizer's states are actual divisors g of D. Its edge weight for label i
++    is floor(N_i/(g/gcd(g,lambda_i)))/N_i, with a strict decrease and sufficient
++    original length. No effective label can recur. Optimization is complete only
++    within this specified chain certificate class; it does not decide positivity.
++14. Shortening the last relative digit interval in the arithmetic sharpness family
++    gives a bijection onto the complement of H_m=mZ/D. The actual coefficient
++    stabilizer is H_m. The zero fibre is empty, not a supported reduced coefficient.
++
++## Upward plus-factor relation
++
++15. From an original cell and a chosen s|a retain n=a/s, C=R+s, M=p+C=4a+s.
++    The choice s is taken from the actual gcd normalization in the trace examples.
++16. Every cell in that fibre is a divisor s'|M with M/s'=1 mod4 and
++    0<R'=C-s'<p. Its inverse retains the old and new s. Set
++    n'=(M/s'-1)/4,a'=(M-s')/4. Then a'-a=(s-s')/4 exactly.
++17. An E terminal with primitive r'=1 additionally requires R'|M. Its marking is
++    (h',r',s',kappa')=(n',1,s',M/R'-1), u'=n'. The ordered denominators are
++    (a',n's'kappa',pn'kappa'). This condition is tested, not assumed nonempty.
++18. Over a marked unit-ray E target, reconstruct C=R'+s', M=p+C. For every
++    source cell and every r|n with gcd(r,s)=1, put h=n/r,u=nr and test the
++    literal E/M square gates. This is the complete canonical trace input fibre.
++19. The arrow source includes its selected target. Forgetting that choice gives
++    a relation when several targets pass. The free-integer kernel of projection
++    onto actual targets is generated by differences of arrows in the same target
++    fibre. It is not a section over all hypothetical targets.
++20. Old and new prime supports are not identified. At p67369 the shift from
++    16849 to16850 changes {7,29,83} to{2,5,337}. The invariant 4a+s is retained;
++    an assertion that each factor was transported unchanged would be false.
++
++No receiver, analytic metric, or independently defined Split-Zero support object
++is identified with these finite-ring coordinates without an additional typed map.
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/READING_AND_DELTA.md b/research/incoming/es-turn07-mixed-order-upward-20260923/READING_AND_DELTA.md
+new file mode 100644
+index 0000000..858bec9
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/READING_AND_DELTA.md
+@@ -0,0 +1,36 @@
++# Reading basis and exact continuation
++
++The GitHub default branch read was `20709bee872ad10e4cc7d7b976d975e24532a803`.
++It confirms the integrated mixed-fibre/middle-spectrum work. It did not confirm
++the latest square-zero/Pell tranche. The available incoming directory and branch
++list were checked; this is not a statement that the work exists nowhere else.
++
++The supplied square-zero source was read in full through Files, with its handoff.
++Its SHA-256 is `f3a3a87cde84c1bad100f56dc422d9d2bc49a7c18924da48377ac8670ea9e453`.
++The supplied archive SHA-256 is `2697ddb6ada7e088ec172eed495f4e215d6b088b57fd707a2170960fdf0a91ff`.
++The attached ten-stage plan was read and continues to place universal original
++occupancy, not another receiver norm, at the missing Stage7 step.
++
++Inherited and retained: original E/M normalization and ordered denominators;
++trace square gates; K,D and the square-zero fine defect; the complete original
++box partition; its integer coefficients and stabilizers; the unit-width
++criterion; factor-sum/Pell map; and the p67369 nonincreasing-repair obstruction.
++The upstream orientation, carrier, and integer-versus-vector-section corrections
++remain in force. No extra orientation bit is added to an already ordered M word.
++
++Added here: the bounded mixed-order cyclic section and explicit carried law;
++its exact multiplicity lower bound and optimal divisor-DAG criterion; actual
++hard-prime realizations beyond the unit-width criterion; arithmetic sharpness at
++an arbitrary odd defect; and a plus-factor relation crossing the critical trace
++upwards by one shell, with an infinite reduced prime family and full inverse
++fibres. These are not consequences of receiver invertibility.
++
++The new complete original census is p=1 mod24 through10000. It does not reuse the
++predecessor's execution count, and the new p67369 prefix check is not described
++as an independent reproof of leastness over all817 earlier primes. Isolated
++large primes have complete-order certificates separate from discovery.
++
++One exploratory factor-neighbour graph was considered but is not used as a
++closure theorem. The delivered fixed-C negative control proves that even all
++original gates in a plus-factor fibre may be empty. No speculative global graph
++connectivity or termination assertion is imported.
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/README.md b/research/incoming/es-turn07-mixed-order-upward-20260923/README.md
+new file mode 100644
+index 0000000..7ab69fb
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/README.md
+@@ -0,0 +1,66 @@
++# Mixed-order coefficient sections and an upward shell return
++
++This continuation remains at Stage 7. It does not prove that the complete
++Erdős–Straus source is occupied at every prime.
++
++## Mathematical results
++
++1. The original additive coefficient polynomial has a constructive mixed-order
++   lower bound along a strict chain of cyclic subgroups. Nonunit directions are
++   retained. A backward digit algorithm returns an actual bounded original word;
++   its cyclic carries, integer multiplicities and inverse are explicit.
++2. The strongest bound of this specified chain form is computed on the divisor
++   DAG of the actual defect D, with at most n*tau(D) candidate edges. Failure of
++   that criterion is not a proof that the coefficient vanishes.
++3. Two actual hard-prime packet families have every fine coefficient equal to
++   two while the preceding unit-width criterion fails. The second uses two
++   nonunit selected directions. All other original divisor words remain present.
++4. Decreasing the last quotient capacity by one can remove an entire fine-defect
++   subgroup, including zero, in actual hard-prime packets. This arithmetic
++   sharpness construction is not an ES counterexample.
++5. The invariant 4a+s, with s|a, gives an exact finite source-changing relation.
++   It repairs the critical p=67369 M trace by a'=a+1, changing its prime-factor
++   support, and extends to an explicitly reduced infinite hard-prime progression.
++   A p=97 control has no full state anywhere in its fixed invariant fibre.
++
++The core proof is `core.tex`; `workbench.tex` builds the complete paper.
++`preprint.tex` is a shorter standalone account. The inherited square-zero
++coordinate theorem and the p=67369 obstruction are credited to the preceding
++supplied tranche. The subgroup-chain argument is elementary and no priority
++claim is made for the abstract normal form or the arithmetic continuation.
++
++## Reproduce
++
++    python run_all.py --bound 10000 --directory reproduced
++
++This runs the main implementation, optimized Python, and the separate checker,
++then compares exact UTF-8/LF JSON bytes. All code uses the standard library.
++The separate checker imports neither the main implementation nor predecessor
++software. Its factor/primality checks are distinct from the discovery tests.
++
++Public upward return:
++
++    python arithmetic.py --p 67369 --a 16849 --u 4067 --channel M
++
++The complete original replay is bounded by p<=10000 and p=1 mod24. Isolated
++larger primes are listed in `certificates/prime_certificates.json`, with a
++recursive complete-order proof; they are not a new overall ES verification range.
++The abstract lane contains 161887 finite polynomials, checked against both the
++original convolution and a separately implemented ordered-chain optimizer.
++
++The two positive isolated packet primes are 271575361 and 4755800916721.
++Their original scalar factors are H=29 and H=101. These values are results of
++an explicitly bounded deterministic search and are independently certified;
++they are not assumed prime because a progression is reduced.
++
++## Source and publication status
++
++The fetched default branch was `20709bee872ad10e4cc7d7b976d975e24532a803`, containing
++mixed fibres/middle spectra. The latest supplied square-zero/Pell integration
++was not confirmed there. This continuation uses the mounted supplied archive
++at its recorded hash, not an invented upstream version. See
++`READING_AND_DELTA.md`, `source_reading.json`, and `publication_receipt.json`.
++
++`verification.json` records observed replay outcomes. `MANIFEST.json` describes
++exact packaged bytes. The cumulative ZIP preserves the preceding cumulative
++archive byte-for-byte; it is not a fresh mathematical audit of that history.
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/arithmetic.py b/research/incoming/es-turn07-mixed-order-upward-20260923/arithmetic.py
+new file mode 100644
+index 0000000..ec34327
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/arithmetic.py
+@@ -0,0 +1,303 @@
++#!/usr/bin/env python3
++"""Original ES boxes, mixed-order sections and labelled upward factor exchange.
++Python 3.9+, standard library only. No universal ES success assertion.
++"""
++from __future__ import annotations
++from fractions import Fraction
++from itertools import product
++from math import gcd, isqrt, prod
++from pathlib import Path
++import argparse, json
++
++
++def need(ok: bool, msg: str = 'verification failure') -> None:
++    if not ok:
++        raise ValueError(msg)
++
++
++def dump(path, obj):
++    path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
++    path.write_bytes((json.dumps(obj, sort_keys=True, indent=2)+'\n').encode('utf-8'))
++
++
++def sieve(n):
++    need(n >= 1)
++    a = bytearray(b'\1')*(n+1); a[:2] = b'\0\0'
++    for q in range(2,isqrt(n)+1):
++        if a[q]: a[q*q::q] = b'\0'*((n-q*q)//q+1)
++    return a
++
++
++def factor(n):
++    need(n >= 1); f={}; q=2
++    while q*q<=n:
++        if n%q==0:
++            e=0
++            while n%q==0: n//=q; e+=1
++            f[q]=e
++        q=3 if q==2 else q+2
++    if n>1:f[n]=1
++    return f
++
++
++def spf(n):
++    a=list(range(n+1))
++    for q in range(2,isqrt(n)+1):
++        if a[q]==q:
++            for t in range(q*q,n+1,q):
++                if a[t]==t:a[t]=q
++    return a
++
++
++def factor_spf(n,table):
++    f={}
++    while n>1:
++        q=table[n]; e=0
++        while n%q==0:n//=q;e+=1
++        f[q]=e
++    return f
++
++
++def divs_f(f):
++    out=[1]
++    for q,e in sorted(f.items()):out=[d*q**j for d in out for j in range(e+1)]
++    return sorted(out)
++
++
++def divisors(n):return divs_f(factor(n))
++
++
++def trial_prime(n):
++    return n>=2 and (n==2 or n%2 and all(n%q for q in range(3,isqrt(n)+1,2)))
++
++
++def fr(q):
++    q=Fraction(q);return [q.numerator,q.denominator]
++
++
++def order(q,m):
++    need(m>1 and gcd(q,m)==1)
++    z=1
++    for o in range(1,m+1):
++        z=z*q%m
++        if z==1:return o
++    raise ValueError('unit order not found')
++
++
++def residual(R):
++    f=factor(R);D=prod(q**(e//2) for q,e in f.items());return R//D,D,R//(D*D)
++
++
++def state(p,a,u,channel):
++    need(p>1 and p%4==1 and p<4*a<2*p and gcd(p,a)==1)
++    need(channel in ('E','M') and u>0 and a*a%u==0)
++    R=4*a-p;g=gcd(a,u);h=g*g//u;r=u//g;s=a//g
++    need(h*r*s==a and h*r*r==u and gcd(r,s)==1)
++    if channel=='E':
++        quotient=Fraction(p*r+s,R);tails=[h*s*quotient,p*h*r*quotient];G=4*u+1
++    else:
++        quotient=Fraction(r+s,R);tails=[p*h*s*quotient,p*h*r*quotient];G=p+4*u
++    need(Fraction(1,a)+1/tails[0]+1/tails[1]==Fraction(4,p))
++    K,D,delta=residual(R);z=pow(p,int(channel=='E'),R)*u*pow(a,-1,R)%R
++    trace=(z+1)%K==0;defect=((z+1)//K)%D if trace else None
++    need(trace==(G*G%R==0))
++    f=factor(a);fu=factor(u)
++    return dict(p=p,a=a,R=R,u=u,channel=channel,h=h,r=r,s=s,
++        quotient_name='kappa' if channel=='E' else 'lambda',quotient=fr(quotient),
++        denominators=[fr(a),*[fr(x) for x in tails]],trace=trace,full=G%R==0,
++        K=K,D=D,delta=delta,defect=defect,common_denominator=R//gcd(R,G),
++        exponents=[dict(prime=q,e=e,f=fu.get(q,0),beta=fu.get(q,0)-e) for q,e in sorted(f.items())])
++
++
++def convolution(D,steps,lengths):
++    need(D>=1 and len(steps)==len(lengths) and all(n>=1 for n in lengths))
++    a=[0]*D;a[0]=1
++    for l,n in zip(steps,lengths):
++        b=[0]*D
++        for x,c in enumerate(a):
++            if c:
++                for t in range(n):b[(x+l*t)%D]+=c
++        a=b
++    return a
++
++
++def chain_data(D,steps,lengths,indices):
++    need(D>=1 and len(steps)==len(lengths) and all(n>0 for n in lengths))
++    need(len(set(indices))==len(indices))
++    g=D;rows=[]
++    for i in indices:
++        need(0<=i<len(steps));d=gcd(g,steps[i]);m=g//d
++        need(m>1 and lengths[i]>=m,'chain capacity fails')
++        rows.append(dict(index=i,before=g,after=d,radix=m,step=steps[i]%D,
++                         full_blocks=lengths[i]//m))
++        g=d
++    need(g==1,'chain does not reach the whole group')
++    lower=prod(lengths[i] for i in range(len(steps)) if i not in indices)
++    lower*=prod(z['full_blocks'] for z in rows)
++    return dict(D=D,indices=list(indices),rows=rows,lower=lower)
++
++
++def best_chain(D,steps,lengths):
++    """Best block lower bound among every feasible strict gcd chain.
++    Exact divisor DAG. Effective edges cannot reuse an earlier coordinate.
++    """
++    need(D>=1 and len(steps)==len(lengths) and all(n>0 for n in lengths))
++    score={D:Fraction(1)};path={D:[]};edges=0
++    for g in reversed(divisors(D)):
++        if g not in score:continue
++        for i,(l,n) in enumerate(zip(steps,lengths)):
++            d=gcd(g,l);m=g//d
++            if m<=1 or n<m:continue
++            edges+=1;value=score[g]*Fraction(n//m,n)
++            if d not in score or value>score[d] or value==score[d] and path[g]+[i]<path[d]:
++                score[d]=value;path[d]=path[g]+[i]
++    if 1 not in score:
++        return dict(lower=0,indices=[],reachable=sorted(score),edges=edges)
++    out=chain_data(D,steps,lengths,path[1]);value=prod(lengths)*score[1]
++    need(value.denominator==1 and int(value)==out['lower'])
++    out.update(reachable=sorted(score),edges=edges);return out
++
++
++def decode(D,steps,indices,target):
++    """Inverse of the literal mixed-radix digit section; carries retained."""
++    g=D;rows=[]
++    for i in indices:
++        d=gcd(g,steps[i]);m=g//d;need(m>1)
++        rows.append((i,g,d,m));g=d
++    need(g==1)
++    c=target%D;answer={}
++    for i,before,after,m in reversed(rows):
++        need(c%after==0)
++        t=(c//after)*pow((steps[i]//after)%m,-1,m)%m
++        answer[i]=t;c=(c-steps[i]*t)%D
++        need(c%before==0)
++    need(c==0 and sum(steps[i]*t for i,t in answer.items())%D==target%D)
++    return answer
++
++
++def section_vector(D,steps,lengths,indices,target,blocks=None,unused=None):
++    """Choose full blocks and actual unused digits, then invert exactly."""
++    cert=chain_data(D,steps,lengths,indices);blocks={} if blocks is None else blocks
++    unused={} if unused is None else unused;vec=[0]*len(steps);offset=0
++    selected=set(indices)
++    for i,n in enumerate(lengths):
++        if i not in selected:
++            v=unused.get(i,0);need(0<=v<n);vec[i]=v;offset+=steps[i]*v
++    for row in cert['rows']:
++        i=row['index'];b=blocks.get(i,0)
++        need(0<=b<row['full_blocks']);v=b*row['radix'];vec[i]=v;offset+=steps[i]*v
++    digits=decode(D,steps,indices,target-offset)
++    for i,t in digits.items():vec[i]+=t
++    need(all(0<=v<n for v,n in zip(vec,lengths)))
++    need(sum(l*v for l,v in zip(steps,vec))%D==target%D)
++    return vec
++
++
++def unit_lower(D,steps,lengths):
++    if D==1:return prod(lengths)
++    units=[i for i,l in enumerate(steps) if gcd(l,D)==1]
++    if sum(lengths[i]-1 for i in units)<D-1:return 0
++    return prod(lengths[i] for i in range(len(lengths)) if i not in units)
++
++
++def tile_parts(p,a,fa=None):
++    """Complete original coarse partition, not a generated support surrogate."""
++    fa=factor(a) if fa is None else fa
++    R=4*a-p;K,D,delta=residual(R);qs=sorted(fa);blocks=[]
++    for q in qs:
++        e=fa[q];o=order(q,K);by={}
++        for beta in range(-e,e+1):by.setdefault(beta%o,[]).append(beta)
++        lam=((pow(q,o,R)-1)//K)%D
++        blocks.append([dict(base=v[0],length=len(v),order=o,step=lam) for _,v in sorted(by.items())])
++    for eta in (0,1):
++        for piece in product(*blocks):
++            z=pow(p,eta,R)
++            for q,row in zip(qs,piece):z=z*pow(q,row['base'],R)%R
++            if (z+1)%K:continue
++            target=((z+1)//K)%D
++            yield dict(p=p,a=a,R=R,K=K,D=D,delta=delta,channel='E' if eta else 'M',
++                primes=qs,exponents=[fa[q] for q in qs],parts=list(piece),target=target)
++
++
++def tile_word(tile,vec):
++    return prod(q**(e+b['base']+b['order']*v)
++                for q,e,b,v in zip(tile['primes'],tile['exponents'],tile['parts'],vec))
++
++
++def plus_cells(p,C):
++    """Every original integral labelled cell in one plus-factor fibre."""
++    need(p>1 and p%4==1 and C>0)
++    M=p+C;out=[]
++    for s in divisors(M):
++        N=M//s;R=C-s
++        if N%4!=1 or not 0<R<p:continue
++        n=(N-1)//4;a=n*s
++        need(4*a-p==R and p<4*a<2*p and n>=1)
++        out.append(dict(p=p,C=C,M=M,s=s,n=n,a=a,R=R))
++    return sorted(out,key=lambda x:(x['a'],x['s']))
++
++
++def plus_targets(p,C):
++    """Complete unit-ray E targets among the labelled cells."""
++    out=[]
++    for cell in plus_cells(p,C):
++        if cell['M']%cell['R']:continue
++        rec=state(p,cell['a'],cell['n'],'E')
++        need(rec['full'] and rec['r']==1 and rec['s']==cell['s'])
++        need(Fraction(*rec['quotient'])==cell['M']//cell['R']-1)
++        out.append(dict(cell=cell,state=rec))
++    return out
++
++
++def plus_return(rec):
++    """All targets after retaining C=R+s from this canonical orientation."""
++    return plus_targets(rec['p'],rec['R']+rec['s'])
++
++
++def plus_inverse(target,proper_only=False):
++    """Complete canonical original trace inputs for a marked r=1 E target.
++    M words already encode their order. E tail swapping is separately available.
++    """
++    need(target['full'] and target['channel']=='E' and target['r']==1)
++    p=target['p'];C=target['R']+target['s'];out=[]
++    for cell in plus_cells(p,C):
++        for r in divisors(cell['n']):
++            if gcd(r,cell['s'])!=1:continue
++            u=cell['n']*r
++            for tag in ('E','M'):
++                rec=state(p,cell['a'],u,tag)
++                if rec['trace'] and (not proper_only or not rec['full']):
++                    need(rec['s']==cell['s']);out.append(rec)
++    return sorted(out,key=lambda t:(t['a'],t['channel'],t['u']))
++
++
++def lucas_tree(numbers):
++    """Construct full n-1 order certificates; leaves are trial-division proofs."""
++    nodes={}
++    def add(n):
++        if n in nodes:return
++        need(n>=2)
++        if n<10000:
++            need(trial_prime(n));nodes[n]=dict(n=n,type='trial',bound=isqrt(n));return
++        f=factor(n-1)
++        for q in f:add(q)
++        a=2
++        while a<n:
++            if pow(a,n-1,n)==1 and all(gcd(pow(a,(n-1)//q,n)-1,n)==1 for q in f):break
++            a+=1
++        need(a<n,'full-order primality certificate not found')
++        nodes[n]=dict(n=n,type='order',base=a,factors=[[q,e] for q,e in sorted(f.items())],
++            power=pow(a,n-1,n),gcds=[[q,gcd(pow(a,(n-1)//q,n)-1,n)] for q in sorted(f)])
++    for n in numbers:add(n)
++    return dict(roots=list(numbers),nodes=[nodes[n] for n in sorted(nodes)])
++
++
++def main():
++    p=argparse.ArgumentParser();p.add_argument('--p',type=int);p.add_argument('--a',type=int)
++    p.add_argument('--u',type=int);p.add_argument('--channel',choices=['E','M'],default='M')
++    args=p.parse_args();need(all(x is not None for x in [args.p,args.a,args.u]))
++    rec=state(args.p,args.a,args.u,args.channel)
++    need(trial_prime(args.p),'input is not prime')
++    print(json.dumps(dict(source=rec,plus_targets=plus_return(rec)),indent=2,sort_keys=True))
++
++if __name__=='__main__':main()
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/attempt.json b/research/incoming/es-turn07-mixed-order-upward-20260923/attempt.json
+new file mode 100644
+index 0000000..4dba3e5
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/attempt.json
+@@ -0,0 +1,9 @@
++{
++  "aim": "Continue Stage7 original coefficient and source-changing programme after checking integration.",
++  "reason": "Unit directions ignore ordered quotient capacities; the p67369 obstruction forces some repairs to move upward.",
++  "tried": "Construct exact bounded cyclic digits through actual gcd chains; classify factor cells preserving 4a+s and test original full gates.",
++  "outcome": "Uniform coefficient sections on their exact source domains and an original one-shell upward return with prime families.",
++  "stopping_point": "Neither the required chain nor a terminal plus-factor cell is forced at every prime. p97 provides a complete local empty fibre.",
++  "credit": "The Clankers; antecedents and inherited identities individually recorded.",
++  "priority_claim": false
++}
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/check_independent.py b/research/incoming/es-turn07-mixed-order-upward-20260923/check_independent.py
+new file mode 100644
+index 0000000..a87344c
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/check_independent.py
+@@ -0,0 +1,279 @@
++#!/usr/bin/env python3
++"""Separate standard-library implementation; imports no main/predecessor code."""
++from fractions import Fraction
++from itertools import product
++from math import gcd, isqrt, prod
++from pathlib import Path
++import argparse, hashlib, json, time
++
++checks=0
++
++def ck(ok,msg='independent verification failure'):
++    global checks;checks+=1
++    if not ok:raise ValueError(msg)
++
++def prime(n):
++    if n<2:return False
++    if n%2==0:return n==2
++    d=3
++    while d*d<=n:
++        if n%d==0:return False
++        d+=2
++    return True
++
++def factors(n):
++    f=[];q=2
++    while q*q<=n:
++        if n%q==0:
++            e=0
++            while n%q==0:n//=q;e+=1
++            f.append((q,e))
++        q+=1 if q==2 else 2
++    if n>1:f.append((n,1))
++    return f
++
++def divisors(n):
++    f=factors(n)
++    return sorted(prod(q**b for (q,e),b in zip(f,ex)) for ex in product(*(range(e+1) for q,e in f)))
++
++def primitives(a):
++    ds=divisors(a);ans=[]
++    for r in ds:
++        for s in divisors(a//r):
++            if gcd(r,s)==1:
++                h=a//(r*s);ans.append((h*r*r,h,r,s))
++    ans.sort();return ans
++
++def exact_counts(D,ls,ns):
++    C=[0]*D
++    for t in product(*(range(n) for n in ns)):
++        C[sum(l*x for l,x in zip(ls,t))%D]+=1
++    return C
++
++def all_chain_best(D,ls,ns):
++    # Exhaust every ordered subsequence, rather than the divisor DAG.
++    best=0
++    def walk(g,used,q):
++        nonlocal best
++        if g==1:
++            L=q*prod(ns[i] for i in range(len(ns)) if i not in used)
++            best=max(best,L);return
++        for i,l in enumerate(ls):
++            if i in used:continue
++            d=gcd(g,l);m=g//d
++            if m>1 and ns[i]>=m:walk(d,used+(i,),q*(ns[i]//m))
++    walk(D,(),1);return best
++
++def oldbound(D,ls,ns):
++    U=[i for i,l in enumerate(ls) if gcd(l,D)==1]
++    return prod(ns[i] for i in range(len(ns)) if i not in U) if sum(ns[i]-1 for i in U)>=D-1 else 0
++
++def hashline(H,x):H.update((json.dumps(x,separators=(',',':'),sort_keys=True)+'\n').encode())
++
++def check_abstract(data):
++    h=hashlib.sha256();cnt=0;pos=0
++    for n,Ds,Ns in [(2,range(2,26),range(1,6)),(3,(3,5,9),range(1,4))]:
++        for D in Ds:
++            for ls in product(range(D),repeat=n):
++                for ns in product(Ns,repeat=n):
++                    C=exact_counts(D,ls,ns);B=all_chain_best(D,ls,ns);U=oldbound(D,ls,ns)
++                    ck(min(C)>=max(B,U));cnt+=1;pos+=B>0
++                    hashline(h,[D,list(ls),list(ns),C,B,U])
++    ck(cnt==data['cases'] and pos==data['positive_chain_cases'])
++    ck(h.hexdigest()==data['sha256'])
++    return cnt
++
++def check_state(t):
++    p,a,R,u,h,r,s=(t[k] for k in ['p','a','R','u','h','r','s'])
++    ck(p<4*a<2*p and R==4*a-p and h*r*s==a and h*r*r==u and gcd(r,s)==1)
++    Q=Fraction(p*r+s,R) if t['channel']=='E' else Fraction(r+s,R)
++    ys=[h*s*Q,p*h*r*Q] if t['channel']=='E' else [p*h*s*Q,p*h*r*Q]
++    ck([Fraction(*z) for z in t['denominators']]==[Fraction(a),*ys])
++    ck(Fraction(1,a)+1/ys[0]+1/ys[1]==Fraction(4,p))
++    ck((sum(ys).denominator==1)==t['trace'])
++    ck(all(y.denominator==1 for y in ys)==t['full'])
++    ck(max(y.denominator for y in ys)==t['common_denominator'])
++    for e in t['exponents']:
++        q=e['prime'];x=a;y=u;va=vu=0
++        while x%q==0:x//=q;va+=1
++        while y%q==0:y//=q;vu+=1
++        ck((va,vu,vu-va)==(e['e'],e['f'],e['beta']))
++
++def check_source(data):
++    bound=data['bound'];primes=[p for p in range(25,bound+1,24) if prime(p)]
++    cache={a:primitives(a) for a in range(1,(bound-1)//2+1)}
++    counts=dict(primes=len(primes),shells=0,words=0,trace_E=0,trace_M=0,full_E=0,full_M=0,
++                squareful_trace_shells=0,parts=0,chain_positive_parts=0,old_unit_positive_parts=0,chain_only_parts=0)
++    lookup={}
++    for t in data['parts']:lookup.setdefault((t['p'],t['a']),[]).append(t)
++    sourcehash=hashlib.sha256()
++    for p in primes:
++        for a in range(p//4+1,(p-1)//2+1):
++            R=4*a-p;traces=set();counts['shells']+=1;counts['words']+=len(cache[a])
++            for u,h,r,s in cache[a]:
++                for tag,G in [('E',p*r+s),('M',r+s)]:
++                    if G*G%R==0:traces.add((tag,u));counts['trace_'+tag]+=1
++                    if G%R==0:counts['full_'+tag]+=1
++            hashline(sourcehash,[p,a,sorted(traces)])
++            fs=factors(R);D=prod(q**(e//2) for q,e in fs);K=R//D
++            if D==1 or not traces:
++                ck((p,a) not in lookup);continue
++            counts['squareful_trace_shells']+=1;seen=set()
++            for tile in lookup[(p,a)]:
++                ls=[row['step'] for row in tile['parts']];ns=[row['length'] for row in tile['parts']]
++                qs=tile['primes'];es=tile['exponents'];C=exact_counts(D,ls,ns);full=0
++                for q,e,row in zip(qs,es,tile['parts']):
++                    o=row['order'];ck(pow(q,o,K)==1 and all(pow(q,j,K)!=1 for j in range(1,o)))
++                    ck(((pow(q,o,R)-1)//K)%D==row['step'])
++                    members=[v for v in range(-e,e+1) if (v-row['base'])%o==0]
++                    ck(members==[row['base']+o*j for j in range(row['length'])])
++                for vec in product(*(range(n) for n in ns)):
++                    betas=[b['base']+b['order']*v for b,v in zip(tile['parts'],vec)]
++                    u=prod(q**(e+b) for q,e,b in zip(qs,es,betas));key=(tile['channel'],u)
++                    ck(key in traces and key not in seen);seen.add(key)
++                    G=(4*u+1) if key[0]=='E' else p+4*u
++                    full+=G%R==0
++                ck(C==tile['coefficients'] and full==tile['literal_full']==C[tile['target']])
++                best=all_chain_best(D,ls,ns);old=oldbound(D,ls,ns)
++                ck(best==tile['chain']['lower'] and old==tile['unit_lower'])
++                stab=[s for s in range(D) if C[s:]+C[:s]==C]
++                ck(stab==tile['stabilizer'])
++                counts['parts']+=1;counts['chain_positive_parts']+=best>0
++                counts['old_unit_positive_parts']+=old>0;counts['chain_only_parts']+=best>0 and old==0
++                if best:
++                    indices=tile['chain']['indices'];g=D;digits=[]
++                    for i in indices:
++                        new=gcd(g,ls[i]);digits.append(g//new);g=new
++                    codes=[sum(ls[i]*v for i,v in zip(indices,t))%D for t in product(*(range(d) for d in digits))]
++                    ck(sorted(codes)==list(range(D)))
++                    check_state(tile['returned_state'])
++            ck(seen==traces)
++    ck(counts==data['counts']);ck(sourcehash.hexdigest()==data['source_sha256'])
++    return counts
++
++def check_prime_tree(data):
++    proved=set()
++    for node in data['nodes']:
++        n=node['n']
++        if node['type']=='trial':ck(prime(n) and node['bound']==isqrt(n))
++        else:
++            f=node['factors'];base=node['base']
++            ck(all(q in proved for q,e in f) and prod(q**e for q,e in f)==n-1)
++            ck(pow(base,n-1,n)==1==node['power'])
++            gs=[[q,gcd(pow(base,(n-1)//q,n)-1,n)] for q,e in f]
++            ck(gs==node['gcds'] and all(d==1 for q,d in gs))
++        proved.add(n)
++    ck(all(n in proved for n in data['roots']))
++    return len(proved)
++
++def check_packets(data):
++    for pack in data:
++        p=pack['p'];a=pack['a'];R=pack['R'];ck(4*a-p==R and p%840==1)
++        ck(prod(q**e for q,e in zip(pack['qs'],pack['es']))==pack['base'])
++        ck(gcd(*pack['prime_progression'])==1 and p==pack['prime_progression'][0]+pack['index']*pack['prime_progression'][1])
++        pp=primitives(a);ck(len(pp)==pack['all_original_word_count'])
++        allfull=[]
++        for u,h,r,s in pp:
++            for c,G in [('E',p*r+s),('M',r+s)]:
++                if G%R==0:allfull.append((c,u))
++        ck(sorted(allfull)==sorted((t['channel'],t['u']) for t in pack['full_states']))
++        for t in pack['full_states']:check_state(t)
++        for tile in pack['tiles']:
++            ls=[z['step'] for z in tile['parts']];ns=[z['length'] for z in tile['parts']];D=tile['D']
++            ck(exact_counts(D,ls,ns)==[2]*D==tile['coefficients'])
++            ck(all_chain_best(D,ls,ns)==2 and oldbound(D,ls,ns)==0)
++            keys=[]
++            for t in tile['words']:
++                check_state(t);keys.append(t['u'])
++            ck(len(keys)==2*D and len(set(keys))==len(keys))
++            ck(sum(t['full'] for t in tile['words'])==2)
++            for hold in pack['qs'][1:]:
++                if tile['channel']!='M':continue
++                restricted=[t for t in tile['words'] if next(v['beta'] for v in t['exponents'] if v['prime']==hold)==0]
++                ck(restricted and not any(t['full'] for t in restricted))
++            check_state(tile['returned_state'])
++
++def literal_cells(p,C):
++    out=[]
++    for a in range(p//4+1,(p-1)//2+1):
++        s=C-(4*a-p)
++        if s>0 and a%s==0:
++            out.append(dict(p=p,C=C,M=p+C,s=s,n=a//s,a=a,R=4*a-p))
++    return out
++
++def check_upward(data):
++    check_state(data['critical_source']);check_state(data['critical_target'])
++    p=data['critical_source']['p'];C=data['C'];cells=literal_cells(p,C)
++    ck(cells==data['cells'])
++    targetkeys=[(x['cell']['a'],x['state']['u']) for x in data['targets']]
++    expect=[(c['a'],c['n']) for c in cells if (p+c['s'])%c['R']==0]
++    ck(targetkeys==expect)
++    inv=[]
++    for cell in cells:
++        for u,h,r,s in primitives(cell['a']):
++            if s!=cell['s']:continue
++            R=cell['R']
++            for tag,G in [('E',p*r+s),('M',r+s)]:
++                if G*G%R==0:inv.append((cell['a'],tag,u))
++    ck(sorted(inv)==[(t['a'],t['channel'],t['u']) for t in data['inverse']])
++    for t in data['inverse']:check_state(t)
++    for row in data['prefix']:
++        a=row['a'];R=row['R'];expected=[]
++        for u,h,r,s in primitives(a):
++            expected.append(dict(u=u,E=(4*u+1)%R,M=(p+4*u)%R))
++        ck(row['words']==expected)
++        full=[(c,u) for u,h,r,s in primitives(a) for c,G in [('E',p*r+s),('M',r+s)] if G%R==0]
++        ck(sorted(full)==sorted((t['channel'],t['u']) for t in row['full']))
++        if a<=16849:ck(not full)
++    ck(gcd(data['progression']['residue'],data['progression']['modulus'])==1)
++    for row in data['progression']['prime_samples']:
++        s=row['source'];t=row['target'];k=row['index'];check_state(s);check_state(t)
++        ck(s['p']==67369+3775800*k and s['h']==83+4650*k)
++        ck(s['p']%840==169 and s['common_denominator']==3 and not s['full'] and t['full'])
++        ck(t['a']==s['a']+1 and t['R']==31 and t['s']==25)
++        ck(4*s['a']+s['s']==4*t['a']+t['s'])
++    ne=data['nonclosure'];check_state(ne['source']);p=97;C=83
++    ck([x['cell'] for x in ne['complete_cells']]==literal_cells(p,C))
++    for row in ne['complete_cells']:
++        a=row['cell']['a'];states=row['states']
++        ck(len(states)==2*len(primitives(a)))
++        ck(not any(t['full'] for t in states))
++        for t in states:check_state(t)
++
++def check_boundary(data):
++    p=data['p'];a=data['a'];R=data['R'];tile=data['part'];ck(a==data['H']*163*107**2 and p==4*a-243 and p%840==1)
++    ck(4*a-p==R==243)
++    bs=[0]*9
++    for rec in tile['words']:
++        check_state(rec);ck(rec['trace'] and not rec['full']);bs[rec['defect']]+=1
++    ck(bs==[0,1,1,0,1,1,0,1,1]==tile['defect_bins'])
++    full=[(c,u) for u,h,r,s in primitives(a) for c,G in [('E',p*r+s),('M',r+s)] if G%R==0]
++    ck(sorted(full)==sorted((r['channel'],r['u']) for r in data['other_full_states']))
++    for rec in data['other_full_states']:check_state(rec)
++
++def check_controls(data):
++    for row in data['nonimplications']:
++        D=row['D']; ls=row['steps']; ns=row['lengths']
++        ck(exact_counts(D,ls,ns)==row['coefficients'])
++        ck(all_chain_best(D,ls,ns)==row['chain']['lower'])
++        ck(oldbound(D,ls,ns)==row['unit_lower'])
++    for row in data['cardinality_sharpness']:
++        D=row['D']; ls=row['steps']; ns=row['lengths']
++        ck(exact_counts(D,ls,ns)==[1]*D==row['coefficients'])
++        for item in row['shortened']:
++            nn=ns.copy(); nn[item['index']]-=1
++            c=exact_counts(D,ls,nn)
++            ck(c==item['coefficients'] and min(c)==0 and sum(c)<D)
++
++def main():
++    ap=argparse.ArgumentParser();ap.add_argument('--input',default='certificates');ap.add_argument('--out',default='independent.json');args=ap.parse_args()
++    path=Path(args.input);read=lambda n:json.loads((path/n).read_text())
++    start=time.monotonic();ac=check_abstract(read('abstract.json'));counts=check_source(read('source_parts.json'))
++    nodes=check_prime_tree(read('prime_certificates.json'));check_packets(read('packets.json'));check_boundary(read('arithmetic_boundary.json'));check_upward(read('upward.json'));check_controls(read('negative_controls.json'))
++    result=dict(success=True,checks=checks,bound=read('source_parts.json')['bound'],abstract_cases=ac,
++        source_counts=counts,certified_prime_nodes=nodes,universal_ES_proved=False,
++        tables={n:hashlib.sha256((path/n).read_bytes()).hexdigest() for n in ['arithmetic_boundary.json','abstract.json','source_parts.json','packets.json','upward.json','negative_controls.json','prime_certificates.json']})
++    Path(args.out).write_bytes((json.dumps(result,indent=2,sort_keys=True)+'\n').encode())
++    print(json.dumps(dict(result=result,elapsed_seconds=round(time.monotonic()-start,3)),sort_keys=True))
++
++if __name__=='__main__':main()
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/claims.json b/research/incoming/es-turn07-mixed-order-upward-20260923/claims.json
+new file mode 100644
+index 0000000..38aad0d
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/claims.json
+@@ -0,0 +1,47 @@
++{
++  "scope": "proved as stated; no universal source occupancy",
++  "claims": [
++    {
++      "id": "C1",
++      "title": "Mixed-order bounded section",
++      "statement": "Every coefficient is at least prod unused N times prod floor(N/m) under the displayed actual strict gcd chain. Exact inverse and carries.",
++      "locator": "core.tex Section3"
++    },
++    {
++      "id": "C2",
++      "title": "Finite certificate optimizer",
++      "statement": "Divisor DAG with at most n*tau(D) candidate edges gives the strongest lower bound in the specified chain class; no claim to decide all positivity.",
++      "locator": "core.tex Section3.2"
++    },
++    {
++      "id": "C3",
++      "title": "Original hard-prime realizations",
++      "statement": "Two reduced linear progressions realize uniform fine coefficients two while old unit width fails; second selected chain is entirely nonunit.",
++      "locator": "core.tex Section4"
++    },
++    {
++      "id": "C4",
++      "title": "Arithmetic last-capacity boundary",
++      "statement": "For arbitrary odd D and a strict chain, actual prime packets can have fine coefficient 1 outside H_m and0 on H_m after one last digit is removed.",
++      "locator": "core.tex Section4.1"
++    },
++    {
++      "id": "C5",
++      "title": "Complete labelled plus-factor fibre",
++      "statement": "All cells and unit-ray E terminals with invariant 4a+s, their original inverses and canonical trace input fibres.",
++      "locator": "core.tex Section5"
++    },
++    {
++      "id": "C6",
++      "title": "Controlled upward prime family",
++      "statement": "p=67369+3775800k prime yields a proper M input and exact E target with a prime-support change and a increase exactly1.",
++      "locator": "core.tex Section5.1"
++    },
++    {
++      "id": "C7",
++      "title": "Fixed-fibre obstruction",
++      "statement": "At p97,a40,u2 the complete C83 fibre has three shells, all with both full gates empty.",
++      "locator": "core.tex Section5.2"
++    }
++  ]
++}
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex b/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex
+new file mode 100644
+index 0000000..34adf92
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex
+@@ -0,0 +1,472 @@
++\section{Pinned frontier and purpose}
++The repository read for this continuation is
++\texttt{KokunoYumeto/erdos-straus-foundation}, at
++\texttt{20709bee872ad10e4cc7d7b976d975e24532a803}.
++That revision integrates the mixed-fibre and middle-spectrum work. The later
++square-zero/Pell tranche is used from the supplied archive, not described as
++confirmed on that default-branch revision. Its complete source and handoff were
++read, including the obstruction at $p=67369$ to repairing every trace without
++increasing the distinguished denominator. The attached ten-stage plan still
++requires an original occupied coefficient at every prescribed prime.
++
++We prove a stronger constructive coefficient criterion that uses directions of
++\emph{different orders}, including nonunits, in the original fine-defect group.
++It is a cyclic subgroup-transversal construction with exact original multiplicity,
++carry, and integer-section data. The cyclic calculation is proved from first principles below. No historical-priority
++claim is made for either the abstract normal form or its arithmetic application. A second construction changes the shell and the word,
++and gives a one-step upward return at the predecessor's decisive $67369$ example.
++Neither construction assumes that its source exists for every prime.
++
++\section{The original bounded source and its fine defect}
++Fix a prime $p\equiv1\pmod4$, $p/4<a<p/2$, and $R=4a-p$. For every
++\emph{original} divisor $u\mid a^2$, put
++\[
++ a=\prod_iq_i^{e_i},\quad u=\prod_iq_i^{f_i},\quad
++ 0\le f_i\le2e_i,\quad\beta_i=f_i-e_i,
++\]
++\[
++ g=\gcd(a,u),\quad h=g^2/u,\quad r=u/g,\quad s=a/g.
++\]
++Then $a=hrs$, $u=hr^2$, and $\gcd(r,s)=1$. The ordered rational returns are
++\begin{align}
++ E:&\quad(a,hs\kappa,phr\kappa),&\kappa&=(pr+s)/R,\label{eq:E}\\
++ M:&\quad(a,phs\lambda,phr\lambda),&\lambda&=(r+s)/R.\label{eq:M}
++\end{align}
++Direct common-denominator multiplication gives $4/p$ in each case. Their
++integer gates are $R\mid4u+1$ and $R\mid p+4u$, respectively. The ordered
++inverses are $u=a^2/(Ry-pa)$ in E and $u=pa^2/(Ry-pa)$ in M.
++These are the inherited Yamamoto--Rosati/Type-I--II coordinates
++\citep[p.~38, Lemma~2, equation~(4)]{Yamamoto}\citep[\S2, Propositions~2.2
++and~2.6]{ET}, not a new parametrization.
++
++The rational tail sums are $(a+pu)^2/(Ru)$ and $p(a+u)^2/(Ru)$.
++Consequently a trace, meaning an integral tail sum, is exactly the square gate
++$R\mid G^2$, where $G=4u+1$ or $G=p+4u$. Its common tail denominator is
++$R/\gcd(R,G)$. Define
++\[
++ K=\prod_{\ell^v\parallel R}\ell^{\lceil v/2\rceil},\quad
++ D=R/K,\quad\delta=R/D^2.
++\]
++Then $R=KD=\delta D^2$, $D\mid K$, and the ideal $K\mathbb Z/R\mathbb Z$
++is square-zero. Here $\delta$ is the positive squarefree part, not the radical.
++For $\eta=1$ in E and $\eta=0$ in M, the normalized residue is
++\[
++ z=p^\eta u/a=p^\eta\prod_iq_i^{\beta_i}\pmod R.
++\]
++Trace is exactly $z\equiv-1\pmod K$. Its unique fine coordinate is
++\begin{equation}\label{eq:defect}
++ z=-1+Kc,\qquad c\in\mathbb Z/D.
++\end{equation}
++The full gate is $c=0$; the original denominator is $D/\gcd(D,c)$.
++No integer coefficient is reduced modulo $D$.
++
++For completeness, partition each original interval $[-e_i,e_i]$ by residue
++modulo $o_i=\operatorname{ord}_K(q_i)$. Each nonempty part has the literal form
++\[
++ \beta_i=b_i+o_it_i,\qquad0\le t_i<N_i.
++\]
++A product part is a trace part when its base is $-1\pmod K$. Put
++\[
++ \lambda_i=(q_i^{o_i}-1)/K\pmod D,
++\]
++where the division is evaluated modulo $R$ before passing to $D$. Since
++$(1+K\lambda)^t=1+tK\lambda\pmod R$, its fine coordinate is
++$c_0-\sum_i\lambda_it_i$. Thus the complete original count in that part is
++\begin{equation}\label{eq:C}
++ C_{c_0},\qquad
++ \mathcal C=\prod_i\left([0]+[\lambda_i]+\cdots+[(N_i-1)\lambda_i]\right)
++ \in\mathbb Z[\mathbb Z/D].
++\end{equation}
++The inverse reads $(b_i,t_i)$ from $\beta_i$ and reconstructs
++$u=\prod_iq_i^{e_i+\beta_i}$. Every vector in the full exponent box belongs to
++one product part. An explicitly specified subrectangle of such a part also
++has formula~\eqref{eq:C}; its omitted words remain in the complete source.
++These source identities are inherited from the supplied square-zero tranche
++\citep[\S\S2--4]{Previous}; the stronger coefficient criterion follows next.
++
++\section{Mixed-order sections with all integer coefficients retained}
++Let $D\ge1$, $\lambda_i\in\mathbb Z$, and $N_i\ge1$. Write $C_x$ for the
++coefficient of $[x]$ in~\eqref{eq:C}. Fix distinct coordinate indices
++$i_1,\ldots,i_k$, and put
++\[
++ g_0=D,\qquad g_j=\gcd(g_{j-1},\lambda_{i_j}),\qquad
++ m_j=g_{j-1}/g_j.
++\]
++The nontrivial chain has $g_0>g_1>\cdots>g_k=1$.
++
++\begin{theorem}[Mixed-order coefficient completion]\label{thm:chain}
++If $N_{i_j}\ge m_j$ for every $j$, then every original coefficient satisfies
++\begin{equation}\label{eq:lower}
++ C_x\ge L:=(\prod_{i\notin I}N_i)
++              \prod_{j=1}^k\left\lfloor\frac{N_{i_j}}{m_j}\right\rfloor>0.
++\end{equation}
++The map
++\begin{equation}\label{eq:radix}
++ (t_{i_1},\ldots,t_{i_k})\longmapsto
++ \sum_j\lambda_{i_j}t_{i_j}\pmod D,
++ \qquad0\le t_{i_j}<m_j,
++\end{equation}
++is a bijection of the $D=\prod_jm_j$ original digit choices with $\mathbb Z/D$.
++It has the explicit reverse algorithm below. When $N_{i_j}=m_j$ for all
++selected coordinates, every coefficient equals $\prod_{i\notin I}N_i$.
++The case $D=1$ is the empty chain, with every word full.
++\end{theorem}
++\begin{proof}
++Let $H_g=g\mathbb Z/D\mathbb Z$. The quotient
++$H_{g_j}/H_{g_{j-1}}$ has order $m_j$. Its specified generator is the image
++of $\lambda_{i_j}$, since
++$\gcd(g_{j-1}/g_j,\lambda_{i_j}/g_j)=1$.
++For $c_k=x\pmod D$, compute backwards
++\begin{equation}\label{eq:decode}
++ t_{i_j}\equiv(c_j/g_j)(\lambda_{i_j}/g_j)^{-1}\pmod{m_j},\quad
++ 0\le t_{i_j}<m_j,\qquad
++ c_{j-1}=c_j-\lambda_{i_j}t_{i_j}\pmod D.
++\end{equation}
++At step $j$, $c_j$ is divisible by $g_j$; the chosen digit makes the next
++residual divisible by $g_{j-1}$. At the end it is zero modulo $D$.
++The same quotient forces each digit of any other representation, proving
++both existence and uniqueness.
++
++Partition the selected interval $[0,N_{i_j})$ into its
++$\lfloor N_{i_j}/m_j\rfloor$ full blocks of size $m_j$, with the remaining
++short interval separately retained. For every choice of full blocks and every
++choice of the unselected original coordinates, their offsets translate $x$.
++Algorithm~\eqref{eq:decode} gives one unique original bounded word in those
++blocks. Distinct choices give distinct words, proving~\eqref{eq:lower}.
++When the selected intervals have exactly the radix lengths, this exhausts
++all words and proves equality.
++\end{proof}
++
++\paragraph{Carry, not a direct-product group substitution.}
++The digit map is a set bijection. Its transported group operation is
++$\operatorname{decode}(\operatorname{encode}(v)+\operatorname{encode}(w))$,
++not coordinatewise addition in $\prod_j\mathbb Z/m_j$. For $D=9$ and steps
++$(6,1)$ with radices $(3,3)$,
++\[
++ (0,2)\star(0,1)=(2,0),
++\]
++because $3=2\cdot6\pmod9$. The cyclic extension and this integer carry remain.
++
++\paragraph{Fibres and coefficient loss.}
++In the equality case each bin has
++$\mu=\prod_{i\notin I}N_i$ words. Retaining the unselected digits and applying
++\eqref{eq:decode} inverts the coefficient projection. On free abelian modules
++its kernel has the original same-bin differences as a basis, of rank
++$\mu D-D$. The coefficient stabilizer is the whole additive group.
++If $\mu$ is zero modulo a prime, none of these original integer words vanishes.
++Outside the equality case,~\eqref{eq:lower} counts a specified union of full
++blocks; the remainder and its coefficients stay in~\eqref{eq:C}.
++
++\begin{proposition}[Optimal bound within the radix-chain class]\label{prop:dag}
++There is a finite exact algorithm for the largest lower bound~\eqref{eq:lower}
++among all chains. Its graph has the divisors $g\mid D$ as vertices, and an edge
++\[
++ g\longrightarrow d=\gcd(g,\lambda_i)<g
++ \quad\text{when}\quad N_i\ge g/d,
++\]
++with score $\lfloor N_i/(g/d)\rfloor/N_i$.
++Start with score one at $D$, maximize products along decreasing paths, and
++multiply the score at one by $\prod_iN_i$.
++There are at most $n\tau(D)$ candidate edges. If one is unreachable, the zero
++output means only that this certificate class fails, not that $C_{c_0}=0$.
++\end{proposition}
++\begin{proof}
++After a coordinate has been used, every subsequent $g$ divides its step.
++That coordinate can never give another strict edge. Thus paths automatically
++have distinct labels. Future strict edges depend only on $g$, not on which
++prefix reached it. The path score times $\prod_iN_i$ is exactly~\eqref{eq:lower}.
++Dynamic programming on the decreasing divisor graph proves optimality within
++this stated class. Exact rational scores become integers at every successful
++terminal path by the displayed product formula.
++\end{proof}
++
++The criterion is complementary to, not a replacement for, the earlier
++unit-width theorem. For $D=3$, steps $(1,1)$ and lengths $(2,2)$ give all three
++bins, but neither length can start a radix chain. Conversely the examples
++below pass mixed-order completion while their entire prior unit width is less
++than $D-1$. Even joint generation and a positive source size are insufficient:
++steps $(3,1)$ and lengths $(2,2)$ generate $\mathbb Z/9$ but miss five bins.
++
++If an original full coefficient is absent, every feasible radix chain on its
++trace part must therefore stop before one. The set of reachable divisors, and
++the failed inequality $N_i<g/\gcd(g,\lambda_i)$ at each missing outgoing edge,
++are an exact additional obstruction certificate. This does not assert that
++such certificates are contradictory across all shells.
++
++\section{Actual prime arithmetic with genuinely mixed orders}
++The following are original bounded packets, not freely chosen residue supports.
++Set $R=243$, $K=27$, $D=9$ and
++\[
++ a=H\cdot53\cdot163\cdot271,
++ \qquad p=4a-243,
++ \qquad H\equiv29\pmod{210}.
++\]
++For every prime member $p>R$ retain the M packet
++\[
++ \beta_{53}\in\{-1,1\},\quad
++ \beta_{163},\beta_{271}\in\{-1,0,1\},
++\]
++with every other original centred exponent zero. If $H$ contains one of
++these primes, the actual larger exponent interval is still retained and this
++is its specified subpacket. Modulo $K$ the first prime is $-1$ and the other
++two are one. The packet polynomial, up to its retained base shift, is
++\[
++ (1+X^5)(1+X^6+X^{12})(1+X+X^2)
++ =2\sum_{c=0}^8X^c\pmod{X^9-1}.
++\]
++The chain is $9\to3\to1$ using steps $6,1$, both with radix three.
++The preceding unit width is only $1+2=3<8$.
++One full word is
++\[
++ u=H(163\cdot271)^2,\qquad
++ (h,r,s,\lambda)=(H,44173,53,182),
++\]
++since $44173+53=243\cdot182$. Its original complement is the other full word.
++
++There is an all-nonunit selected-chain example. Put
++\[
++ R=675,\quad K=45,\quad D=15,\quad
++ a=H\cdot89\cdot271^2\cdot1801,\quad p=4a-675,
++ \quad H\equiv101\pmod{210}.
++\]
++The original M packet has centred ranges $\{-1,1\}$ at $89$,
++$[-2,2]$ at $271$, and $[-1,1]$ at $1801$, with the other coordinates zero.
++Its polynomial is
++\[
++ (1+X^{11})\left(\sum_{j=0}^4X^{6j}\right)(1+X^{10}+X^{20})
++ =2\sum_{c=0}^{14}X^c\pmod{X^{15}-1}.
++\]
++The selected steps $6,10$ are both nonunits; their chain is
++$15\to3\to1$ with radices $5,3$. The only unit width is the single binary
++$89$ coordinate, so the older unit-width criterion does not apply.
++One full word and its marking are
++\[
++ u=H\cdot1801^2,\qquad
++ (h,r,s,\lambda)=(H,1801,6536249,9686).
++\]
++Both examples are uniform original coefficient vectors with every bin equal
++to two. Freezing either selected mixed direction at centred exponent zero
++removes the full words of the specified M packet; the executable tables check
++these exact restricted fibres as well.
++
++These are infinite prime-source statements, not an assumption of prime values
++of a nonlinear polynomial. With $A=\prod q_i^{e_i}$ fixed, $p=4AH-R$ and
++$H=H_0+210n$ give a linear progression of modulus $840A$. It is reduced:
++$p\equiv1\pmod{840}$ and $p\equiv-R\pmod{q_i}$ for each fixed prime $q_i$,
++which is a unit. Dirichlet's theorem therefore supplies infinitely many prime
++members \citep[Theorem~18.1]{Dirichlet}. Each such member has the constructed
++source and full M return. This does not cover arbitrary prescribed primes.
++The JSON tables select particular prime members by a bounded deterministic
++search and certify their primality independently by complete-order certificates.
++
++\subsection{Arithmetic sharpness at an arbitrary odd defect}
++The last radix capacity cannot be lowered even on actual hard-prime packets.
++Fix any odd $D>1$, any strict chain ending in one, and put $R=3D^2$, $K=3D$.
++Let its last radix be $m=g_{k-1}>1$. For $i<k$, choose distinct primes greater
++than seven with
++\[
++ q_i\equiv1+K\lambda_i\pmod R.
++\]
++Choose a further prime
++\[
++ q_k\equiv-1+Kc\pmod R,\qquad 2c\equiv-\lambda_k\pmod D.
++\]
++Every displayed class is a unit modulo $R$, so Dirichlet supplies these primes.
++Take original exponents $e_i=(m_i-1)/2$ for $i<k$ and $e_k=m-1$. Let
++$A=\prod q_i^{e_i}$, and impose
++\[
++ p\equiv1\pmod{840},\qquad p\equiv4A-R\pmod{4A^2}.
++\]
++The congruences agree modulo four and are reduced at every other prime.
++Infinitely many prime members therefore have $a=(p+R)/4=AH$ with
++$H\equiv1\pmod A$, so the stated prime exponents are exact.
++
++Hold the other centred coordinates zero. For $i<k$ use all
++$\beta_i\in[-e_i,e_i]$; for $q_k$ use the odd part
++\[
++ \beta_k\in\{-(m-2),-(m-4),\ldots,m-2\}.
++\]
++This is an original M trace packet. Its last fine quotient modulo $m$ is
++$c\beta_k$, where $c$ is a unit modulo $m$. These $m-1$ exponents give exactly
++the nonzero quotient classes. The earlier radix digits cover
++$H_m=m\mathbb Z/D$ uniquely. Thus the actual fine-defect count $\mu_x=\#\{u:c(u)=x\}$ is
++\begin{equation}\label{eq:sharp}
++ \mu_x=\begin{cases}0,&m\mid x,\\1,&m\nmid x.\end{cases}
++\end{equation}
++Its actual coefficient stabilizer is exactly $H_m$: a translation preserves
++the zero set precisely when it lies in $H_m$. The source maps bijectively onto
++the complement of $H_m$. In particular zero is absent, despite all preceding
++capacities being exact.
++This is not an ES counterexample: all other original words at that prime remain
++present. The finite example uses $D=9$, primes $163,107$, and exponents $1,2$;
++its six trace words miss precisely $\{0,3,6\}$. Complete prime and word
++certificates are supplied.
++
++\section{A factor exchange that permits controlled upward movement}
++The supplied least-example theorem shows that a repair from \emph{every} trace
++cannot always satisfy $a'\le a$ \citep[\S7]{Previous}. We retain another exact
++integer invariant instead. For any original shell and any chosen divisor
++$s\mid a$, write $n=a/s$ and define
++\begin{equation}\label{eq:invariant}
++ C=R+s,\qquad M=p+C=4a+s=(4n+1)s.
++\end{equation}
++Here $0<C<3p/2$ and $M<5p/2$.
++
++\begin{theorem}[Complete labelled plus-factor fibre]\label{thm:plus}
++At fixed $p,C$, every positive first-half integer cell with invariant
++\eqref{eq:invariant} is exactly
++\[
++ s'\mid M=p+C,\quad M/s'\equiv1\pmod4,\quad0<C-s'<p,
++\]
++\begin{equation}\label{eq:cell}
++ n'=(M/s'-1)/4,\quad R'=C-s',\quad
++ a'=n's'=(M-s')/4.
++\end{equation}
++The map is inverted by retaining $s$ and $s'$. Its unit-ray exterior targets
++are exactly those cells additionally satisfying $R'\mid M$. For each,
++\begin{equation}\label{eq:plusreturn}
++ (h',r',s',\kappa')=(n',1,s',M/R'-1),\qquad u'=n',
++\end{equation}
++with ordered denominators $(a',n's'\kappa',pn'\kappa')$.
++The change of first denominator is exactly
++\[
++ a'-a=(s-s')/4.
++\]
++\end{theorem}
++\begin{proof}
++Equation~\eqref{eq:invariant} proves both directions of~\eqref{eq:cell}; its
++congruence implies $R'\equiv-p\equiv3\pmod4$, so the strict range gives
++$R'\ge3$ and $p/4<a'<p/2$. In the unit-ray target,
++$p+s'=M-R'$, hence $R'\mid p+s'$ precisely when $R'\mid M$.
++Then~\eqref{eq:plusreturn} is the inherited full E identity, and
++$u'=n'$ divides $a'^2$ with its actual original exponents.
++Conversely a full unit-ray target in this fibre forces that same divisibility.
++Both residual and carrier factors are computed, not declared favourable.
++\end{proof}
++
++The whole cell list has at most $\tau(M)$ members. The full target list is a
++specified finite divisor test, not an assertion that every fibre has a target.
++For a canonical original E or M trace, choose $s$ from its actual gcd
++normalization. Then $n=hr$. For a marked unit-ray E target, its complete
++\emph{canonical} incoming trace fibre is: enumerate every cell
++\eqref{eq:cell}, every $r\mid n$ with $\gcd(r,s)=1$, put
++\[
++ h=n/r,\qquad u=nr,
++\]
++and test each original square gate. This reconstructs all fields and all
++original word bounds. An M word already retains its order. An independent E
++swap is an additional recorded permutation; on the unsorted input domain it
++restores the corresponding target-tail permutation. It is not an extra free
++bit on an already counted M word.
++
++The labelled arrow includes its chosen target. Forgetting that choice makes
++the forward relation set-valued when more than one divisor passes. On free
++integer coefficient modules, the image fibre has precisely the same-target fibre
++basis differences as its kernel. No group-ring reduction changes the count
++of distinct original source words or of distinct target states.
++
++\subsection{The critical $67369$ source moves up by one shell}
++At
++\[
++ p=67369,\quad a=16849=7\cdot29\cdot83,\quad R=27,\quad u=4067,
++\]
++the original M normalization is $(h,r,s)=(83,7,29)$ and $\lambda=4/3$.
++Thus $C=56$, $M=67425$. Select
++\[
++ s'=25,\quad R'=31,\quad n'=674,\quad a'=16850.
++\]
++Both $25$ and $31$ divide $67425$, with $67425/25\equiv1\pmod4$.
++The resulting marking is
++\[
++ (a',R',u',h',r',s',\kappa')=(16850,31,674,674,1,25,2174),
++\]
++and
++\begin{equation}\label{eq:critical}
++ \frac4{67369}=\frac1{16850}+\frac1{36631900}+\frac1{98714178844}.
++\end{equation}
++The old factors $7,29,83$ and the new factors $2,5,337$ do not share a prime.
++The invariant is $4a+s=4a'+s'$, not an identification of their factor boxes.
++
++The release enumerates every divisor at residuals $3,7,11,15,19,23,27,31$.
++The first seven have no full E/M word; $R=27$ has proper traces and $R=31$
++has full E words $674,84250$. This rechecks the relevant fixed-prime obstruction;
++it does not claim to have newly replayed the predecessor's leastness proof over
++all 817 smaller primes. The chosen target's canonical incoming trace fibre is
++computed by the complete rule above, including any full source itself.
++
++The return extends to a reduced prime progression, not just one example. Put
++\[
++ h=83+4650k,\quad p=812h-27=67369+3775800k,\quad k\ge0.
++\]
++Every prime member is $169\pmod{840}$ and has the proper source
++\[
++ (a,R,u,h,r,s,\lambda)=(203h,27,49h,h,7,29,4/3).
++\]
++The target is
++\[
++ a'=203h+1,\quad R'=31,\quad u'=h'=(203h+1)/25,
++ \quad r'=1,\quad s'=25,\quad\kappa'=(p+25)/31.
++\]
++All divisions are exact. The progression is reduced, so infinitely many
++prime members exist. The old word and ray deletion systems fail on this
++source: their moduli exceed $27$, while the properness requires deletion by
++a multiple of three. The earlier factor-sum map to $\delta=3$ also fails
++because its necessary divisibility is $7\mid(3^2-1)/4=2$.
++The new formula always has $a'=a+1$. Only the initial prime is asserted to
++have an entirely empty old full shell; no such extra assertion is made for
++every prime in the progression.
++
++\subsection{Why the new fibre is not automatically occupied}
++At $p=97,a=40,u=2$ in M, the canonical $s$ is $20$, so $C=83$ and $M=180$.
++The complete cell list is
++\[
++ (a',R',s')=(36,47,36),(40,63,20),(44,79,4).
++\]
++None has a unit-ray E target. Exhausting each of these three complete original
++square-divisor boxes finds no full E or M state at all. The input is nevertheless
++a proper M trace. This refutes universal occupancy of a fixed plus-factor fibre,
++not ES or possible transformations between different such fibres.
++
++\section{Remaining arithmetic obligation and verification scope}
++The mixed-order theorem forces original target coefficients when its actual
++quotient capacities pass; its inverse and all integer multiplicities are known.
++The upward return crosses a previously certified obstruction to every
++nonincreasing repair at its selected source. The two mechanisms are not
++implicitly composable on every input: any application must preserve the shown
++source, interval, channel and divisibility tests.
++
++If ES failed at a prescribed prime, every full coefficient in the complete
++first-half source would be zero. Each trace part would fail both the previous
++unit-width test and every feasible mixed-order chain. Every chosen plus-factor
++fibre reachable by a proposed argument would have to miss its displayed
++terminal divisor test. These are exact necessary conditions, not a contradiction
++by definition. The remaining Stage~7 step is still to force at least one
++original gate, with controlled changes between shells if required.
++
++The standard-library replay exhausts the complete original boxes at primes
++$p\equiv1\pmod{24}$ through its recorded bound and checks every squareful
++trace part against literal gates. It additionally examines 161887 finite
++additive polynomials, compares the divisor-DAG optimum with an independent
++ordered-subsequence implementation, retains all nonzero carries, and verifies
++complete original example boxes and inverse fibres. The separate checker imports
++neither the main program nor predecessor code. Large example primes have full
++order certificates whose factors are themselves certified; trial division is
++used in discovery and as a separate finite check. Finite search caps, outcomes,
++and file hashes are in the release receipt. A probable-prime label is not used
++as a proof. There is no Lean build, independent human review, priority
++conclusion, or new overall ES verification-range claim.
++
++\subsection{Primality and finite-check boundary}
++The isolated large primes have complete-order certificates. A nonterminal node
++retains the full certified prime factorization of $n-1$ and a base $b$ with
++\[
++ b^{n-1}\equiv1\pmod n,\qquad
++ \gcd(b^{(n-1)/q}-1,n)=1\quad(q\mid n-1).
++\]
++For any prime divisor $\ell$ of $n$, the order of $b$ modulo $\ell$ divides
++$n-1$ and does not divide $(n-1)/q$ for any prime $q$ of $n-1$. Thus that order
++is $n-1$, which divides $\ell-1$. It follows that $\ell\ge n$, proving $n$
++prime. Terminal nodes below $10000$ are checked by complete trial division
++through their integer square root. Discovery tests and completed certificates
++are recorded separately. The arithmetic census tests every source word at its
++finite bound; it is not an additional assertion about primes beyond that bound.
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/lean_plan.md b/research/incoming/es-turn07-mixed-order-upward-20260923/lean_plan.md
+new file mode 100644
+index 0000000..3583f03
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/lean_plan.md
+@@ -0,0 +1,40 @@
++# Exact Lean-ready dependency plan — no build claimed
++
++The plan is mathematical and version-neutral; no unchecked library identifier
++or successful Lean execution is asserted.
++
++1. OriginalState(p,a,u,channel): natural-number primality, p=1 mod4, p<4a<2p,
++   u>0 and u|a^2. Normalize via gcd and prove h*r*s=a,h*r^2=u,gcd(r,s)=1.
++2. Prove the E/M rational identities and their ordered rational inverses. Define
++   Trace by the square gate and Full by the unsquared gate; derive equivalence
++   with rational tail-sum integrality.
++3. Define K,D from the factorization of R. Prove D|K,R=KD,R|K^2 and the additive
++   isomorphism ZMod D -> the ideal generated by K in ZMod R. Prove the exact
++   fine coordinate and its denominator-order formula.
++4. Define original exponent boxes as a finite dependent product of integer
++   intervals. Partition each by the order modulo K; prove disjointness, inverse
++   and the one-word-per-coefficient formula over Z[ZMod D].
++5. For steps lambda_i and strict chain g_j, prove that H_j=g_j Z/D and the class
++   of lambda_ij generates H_j/H_(j-1), of order m_j. Construct the reverse digit
++   recursion using the displayed modular inverses. Prove both compositions.
++6. Enumerate full original radix blocks and unused coordinates. Show their
++   returned words are distinct, proving the lower bound and the uniform equality
++   case. Define the carried finite group law through the bijection; do not assert
++   the componentwise product group law.
++7. Prove no effective index can recur down a strict gcd chain. Induct over the
++   finite divisor DAG to establish optimality of the rational-weight recursion
++   in precisely the specified chain class.
++8. Prove the actual-prime arithmetic realization, treating Dirichlet's theorem
++   as a cited theorem with all CRT reducedness conditions discharged. For the
++   sharp packet, prove the exact fine-defect function 1_{x notin H_m} and its
++   stabilizer. No universal source existence axiom is allowed.
++9. Define PlusCell(p,C,s) by s|(p+C), quotient=1 mod4,0<C-s<p. Prove the integer
++   inverse and a'-a identity; add R'|(p+C) for the original unit-ray E return.
++   Prove the full canonical trace-fibre inverse via every r|n,gcd(r,s)=1.
++10. Verify the concrete p67369 source, all eight prefix shells, and the p97
++    complete empty fibre by finite integer enumeration. Do not reuse the prior
++    leastness over all primes as though this run independently proved it.
++11. Formalize the full-order primality criterion: every prime divisor l of n
++    has ord_l(b)=n-1, hence l>=n. Check complete factorizations recursively.
++12. Derive the necessary counterfactual constraints, but leave universal source
++    occupancy as the explicit unproved proposition. Stage7 has not closed it.
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/preprint.tex b/research/incoming/es-turn07-mixed-order-upward-20260923/preprint.tex
+new file mode 100644
+index 0000000..deb3c73
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/preprint.tex
+@@ -0,0 +1,231 @@
++\documentclass[10pt,reqno]{amsart}
++\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
++\usepackage[a4paper,margin=24mm]{geometry}\usepackage{amsmath,amssymb,mathtools,microtype}
++\usepackage[hidelinks]{hyperref}
++\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}
++\title[Mixed-order sections and upward return]{Mixed-order sections and one upward return in the Erd\H{o}s--Straus source}
++\author{The Clankers}\date{23 September 2026}
++\hypersetup{pdftitle={Mixed-order sections and upward return},pdfauthor={The Clankers}}
++\begin{document}
++\begin{abstract}
++An explicit subgroup-chain digit section gives a positive integer lower bound
++for the complete original square-zero divisor coefficient. It uses nonunit steps,
++retains cyclic carries, and is attained on hard-prime packets missed by the
++unit-width criterion. An original factor exchange then gives a one-shell upward
++return at the previously terminal trace at $p=67369$. Both results retain their
++actual source conditions; no universal ES existence assertion is made.
++\end{abstract}
++\maketitle
++
++\paragraph{Original source.}
++For prime $p\equiv1\pmod4$, $p/4<a<p/2$, set $R=4a-p$ and retain $u\mid a^2$.
++Writing $g=\gcd(a,u)$, $h=g^2/u$, $r=u/g$, $s=a/g$, the original ordered maps are
++\[
++ E:(a,hs\kappa,phr\kappa),\quad\kappa=(pr+s)/R,
++\qquad
++ M:(a,phs\lambda,phr\lambda),\quad\lambda=(r+s)/R.
++\]
++Their full gates are $R\mid4u+1$ and $R\mid p+4u$. These are the classical
++Type-I/II coordinates [1, \S2]. Integral rational-tail trace is the weaker
++condition $R\mid G^2$, with the same respective $G$.
++Let $K=\prod_{\ell^e\parallel R}\ell^{\lceil e/2\rceil}$ and $D=R/K$.
++Then $D\mid K$, so the ideal $K\mathbb Z/R$ is square-zero. With channel
++exponent $\eta=1$ for E and $0$ for M, a trace has the unique fine coordinate
++\[
++ p^\eta u/a=-1+Kc\pmod R,\qquad c\in\mathbb Z/D.
++\]
++Its full gate is $c=0$, and its tail denominator is $D/\gcd(D,c)$.
++
++For each prime $q_i^{e_i}\parallel a$, partition the original centred interval
++$[-e_i,e_i]$ modulo $o_i=\operatorname{ord}_K(q_i)$ into
++$\beta_i=b_i+o_it_i$, $0\le t_i<N_i$. On every trace part,
++\[
++ c=c_0-\sum_i\lambda_it_i,\quad
++ \lambda_i=(q_i^{o_i}-1)/K\pmod D.
++\]
++Hence its exact integer full count is $C_{c_0}$ in
++\[
++ \mathcal C=\prod_i\sum_{t=0}^{N_i-1}[t\lambda_i]
++ \in\mathbb Z[\mathbb Z/D].                                      \tag{1}
++\]
++Every original word occurs once. The original normalization and ordering are
++reconstructed after any positive coefficient is selected.
++
++\begin{theorem}[Mixed-order bounded section]
++Choose distinct indices $i_1,\ldots,i_k$, and let
++$g_0=D$, $g_j=\gcd(g_{j-1},\lambda_{i_j})$, $m_j=g_{j-1}/g_j$.
++Suppose $g_0>\cdots>g_k=1$ and $N_{i_j}\ge m_j$. Then
++\[
++ C_x\ge(\prod_{i\notin I}N_i)
++          \prod_j\lfloor N_{i_j}/m_j\rfloor>0\quad(x\in\mathbb Z/D).       \tag{2}
++\]
++The $D$ bounded digits $0\le t_{i_j}<m_j$ give a bijection with $\mathbb Z/D$.
++The empty chain for $D=1$ is included. If all selected $N_{i_j}=m_j$, equality
++holds in (2).
++\end{theorem}
++\begin{proof}
++The image of $\lambda_{i_j}$ generates
++$g_j\mathbb Z/D$ modulo $g_{j-1}\mathbb Z/D$, a cyclic quotient of order $m_j$.
++For a residue $c_k=x$, invert backwards:
++\[
++ t_{i_j}=(c_j/g_j)(\lambda_{i_j}/g_j)^{-1}\pmod{m_j},\quad
++ 0\le t_{i_j}<m_j,\quad c_{j-1}=c_j-\lambda_{i_j}t_{i_j}\pmod D.          \tag{3}
++\]
++The remaining residue is divisible by $g_{j-1}$, ending in zero. Each quotient
++forces its unique digit. Partition each selected interval into full blocks of
++size $m_j$. Every choice of blocks and of other coordinates translates the
++required residue and gives one distinct original word by (3), proving (2).
++\end{proof}
++
++The digit set is not given the wrong product-group law: in $\mathbb Z/9$ with
++steps $(6,1)$ and radices $(3,3)$, the actual carry is
++$(0,2)\star(0,1)=(2,0)$, not $(0,0)$. The exact multiplicity is also retained.
++In the equality case every bin has $\mu=\prod_{i\notin I}N_i$ original words;
++the free-integer coefficient kernel has rank $D(\mu-1)$ and the explicit
++same-bin differences as basis.
++
++All possible chain lower bounds can be optimized on a divisor DAG: use
++$g\to\gcd(g,\lambda_i)<g$ when $N_i$ is at least the quotient order, with
++edge weight $\lfloor N_i/m\rfloor/N_i$. Multiply the maximal path product by
++$\prod_iN_i$. An effective coordinate cannot recur because every later gcd
++already divides its step. Thus at most $n\tau(D)$ candidate edges suffice.
++Failure of this test is not absence of the target coefficient.
++
++\paragraph{Arithmetic beyond unit directions.}
++For
++\[
++ R=243,\quad a=H\cdot53\cdot163\cdot271,\quad p=4a-R,\quad H\equiv29\pmod{210},
++\]
++retain the actual M packet with centred exponents $\{-1,1\},[-1,1],[-1,1]$
++at the three displayed primes, all other centred exponents zero. It has
++\[
++ \mathcal C=(1+X^5)(1+X^6+X^{12})(1+X+X^2)
++           =2\sum_{i=0}^8X^i\pmod{X^9-1}.
++\]
++The chain $9\to3\to1$ has radices $3,3$. The previous total unit width is only
++three, below eight. One original M return is
++$(h,r,s,\lambda)=(H,44173,53,182)$.
++
++For
++\[
++ R=675,\quad a=H\cdot89\cdot271^2\cdot1801,\quad p=4a-R,
++ \quad H\equiv101\pmod{210},
++\]
++use centred exponents $\{-1,1\},[-2,2],[-1,1]$. Now
++\[
++ \mathcal C=(1+X^{11})\left(\sum_{j=0}^4X^{6j}\right)
++                    (1+X^{10}+X^{20})
++ =2\sum_{i=0}^{14}X^i\pmod{X^{15}-1}.
++\]
++Both selected steps $6,10$ are nonunits; their radices are $5,3$.
++The only unit width is one. An original M return is
++$(H,1801,6536249,9686)$.
++Each displayed $p$-family is a reduced linear progression modulo $840A$, where
++$A$ is the displayed fixed product. Modulo its prime factors, $p=-R$ is a unit;
++modulo $840$, $p=1$. Dirichlet supplies infinitely many prime members [2].
++No arbitrary-prime coverage is inferred.
++
++The last capacity bound is arithmetically necessary for uniform completion.
++For any odd defect $D$, put $R=3D^2$, $K=3D$. Realize earlier steps by primes
++$q_i=1+K\lambda_i\pmod R$ with exponents $(m_i-1)/2$. For the last step choose
++$q_k=-1+Kc\pmod R$, $2c=-\lambda_k\pmod D$, with exponent $m_k-1$.
++In its odd centred-exponent part there are $m_k-1$ digits, giving every
++\emph{nonzero} last quotient class and no zero. Earlier digits uniquely fill
++its subgroup. The exact fine count is zero on $m_k\mathbb Z/D$ and one
++elsewhere. The CRT conditions
++$p=1\pmod{840}$, $p=4A-R\pmod{4A^2}$ are compatible and reduced, proving
++infinitely many hard-prime original packets with that defect. Other source
++words are retained; this is not a conjectural counterexample.
++
++\begin{theorem}[A labelled upward factor exchange]
++For an original shell and chosen $s\mid a$, put
++$C=R+s$ and $M=p+C=4a+s$. All cells with the same labelled invariant are
++\[
++ s'\mid M,\quad M/s'\equiv1\pmod4,\quad 0<C-s'<p,
++\]
++\[
++ a'=(M-s')/4,\quad R'=C-s',\quad h'=(M/s'-1)/4.                       \tag{4}
++\]
++Such a cell gives an original unit-ray E state precisely when $R'\mid M$.
++Then $u'=h'$, $r'=1$, $\kappa'=M/R'-1$, and its ordered denominators are
++$(a',h's'\kappa',ph'\kappa')$.
++\end{theorem}
++\begin{proof}
++The congruence is precisely the integral factorization $a'=h's'$ and implies
++$R'\equiv3\pmod4$. The range gives the original first-half domain. Finally
++$p+s'=M-R'$, so the E gate $R'\mid p+s'$ is exactly $R'\mid M$.
++Retaining $s,s'$ inverts (4), with $a'-a=(s-s')/4$.
++\end{proof}
++
++At $p=67369$, the proper trace $(a,R,u,h,r,s)=(16849,27,4067,83,7,29)$
++has $C=56$, $M=67425$. Taking $s'=25$, $R'=31$ gives $a'=16850$, $h'=674$,
++$\kappa'=2174$ and
++\[
++ \frac4{67369}=\frac1{16850}+\frac1{36631900}+\frac1{98714178844}.
++\]
++Every earlier shell is fully exhausted in the certificate and has no integer
++gate. The return must increase $a$ at this input. More generally, set
++$h=83+4650k$, $p=812h-27=67369+3775800k$. On every prime member, the same
++proper trace $(203h,27,49h)$ returns to
++\[
++ a'=203h+1,\ R'=31,\ h'=(203h+1)/25,\ r'=1,\ s'=25,\ \kappa'=(p+25)/31.
++\]
++All divisions are exact and the prime progression is reduced. The previous
++word/ray deletions and factor-sum return fail on that marked source. No assertion
++that every old shell is wholly empty along this progression is needed.
++
++At $p=97,a=40,u=2$ in M, the invariant instead has $C=83,M=180$. Its entire
++cell list is $(a',R',s')=(36,47,36),(40,63,20),(44,79,4)$, each with both full
++gates empty. Thus a fixed invariant fibre need not be occupied. Universal
++existence still requires an argument linking original sources across shells;
++neither theorem assumes that missing first source.
++
++\paragraph{Complete incoming source, rather than an unmarked inverse.}
++For a supplied primitive target with $r'=1$, recover $C=R'+s'$ and
++$M=p+C$. Enumerate every cell in (4). For each cell enumerate $r\mid n$
++with $\gcd(r,s)=1$ and set
++\[
++ h=n/r,\qquad u=nr,\qquad a=ns.
++\]
++The E and M source tests are respectively
++\[
++ R\mid(pr+s)^2,\qquad R\mid(r+s)^2.
++\]
++These finite tests are necessary and sufficient for all canonical trace inputs
++whose retained $s$ produces this $C$. The factorization of the old shell gives
++$n=hr$ and recovers exactly the displayed data; conversely gcd normalization
++of $a=ns,u=nr$ gives $(h,r,s)$ because $\gcd(r,s)=1$. An M word already
++records its ordered tails. An E swap is a separately retained permutation.
++The forward arrow records its chosen target; forgetting that choice gives a
++relation whenever several terminal cells pass. The free-integer kernel of the
++arrow projection is generated by differences of arrows in the same target
++fibre. It is not a quotient that identifies the old and new factor supports.
++
++For the target at $p=67369$, the complete cells have $(R,s)$ equal to
++\[
++ (27,29),\ (31,25),\ (51,5),\ (55,1).
++\]
++Only $(31,25)$ is an exterior terminal cell. Its canonical incoming trace fibre
++contains precisely the original M word $4067$ at $a=16849$ and the full E word
++$674$ at $a=16850$. Thus the source-changing arrow crosses the obstruction;
++its complete fibre does not assert that a corresponding arrow exists at every
++prime. At $p=97$ the three cells given above have no full original gate even
++when all their words, not just the unit-ray words, are tested.
++
++\paragraph{Evidence.}
++The accompanying full source gives every inverse fibre and finite bound.
++The standard-library checks compare the complete original boxes through the
++declared prime bound and exhaust 161887 additive polynomials, with a separate
++subsequence-based optimum check and independent primitive-state enumeration.
++The files distinguish observed runs, finite example searches and written
++universal proofs. No human review, Lean build or priority determination is claimed.
++
++\begin{thebibliography}{9}
++\bibitem{1} Elsholtz, C., \& Tao, T. (2013). Counting the number of solutions to
++the Erd\H{o}s--Straus equation on unit fractions. \emph{J. Aust. Math. Soc., 94},
++50--105. \href{https://arxiv.org/abs/1107.1010}{arXiv:1107.1010}, \S2.
++\bibitem{2} Sutherland, A. V. (2017). \emph{Dirichlet's theorem on primes in
++arithmetic progressions}. MIT 18.785 Lecture 18, Theorem 18.1.
++\href{https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf}{Lecture notes}.
++\end{thebibliography}
++\end{document}
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/references.tex b/research/incoming/es-turn07-mixed-order-upward-20260923/references.tex
+new file mode 100644
+index 0000000..9ff1b47
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/references.tex
+@@ -0,0 +1,26 @@
++\begin{thebibliography}{9}
++\bibitem[Elsholtz and Tao(2013)]{ET} Elsholtz, C., \& Tao, T. (2013).
++Counting the number of solutions to the Erd\H{o}s--Straus equation on unit fractions.
++\emph{Journal of the Australian Mathematical Society, 94}(1), 50--105.
++\href{https://arxiv.org/abs/1107.1010}{arXiv:1107.1010}, \S2, Propositions 2.2 and 2.6.
++\bibitem[Yamamoto(1965)]{Yamamoto} Yamamoto, K. (1965).
++On the diophantine equation $4/n=1/x+1/y+1/z$.
++\emph{Memoirs of the Faculty of Science, Kyushu University, Series A, Mathematics,
++19}(1), 37--47. Lemma 2, equation (4), p.~38.
++\href{https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf/-char/en}{Original paper}.
++\bibitem[Sutherland(2017)]{Dirichlet} Sutherland, A. V. (2017).
++\emph{Dirichlet's theorem on primes in arithmetic progressions}.
++MIT 18.785, Lecture 18, Theorem 18.1, p.~1.
++\href{https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf}{Lecture notes}.
++The prime-progression theorem is attributed to P. G. Lejeune Dirichlet.
++\bibitem[The Clankers(2026a)]{Previous} The Clankers. (2026a).
++\emph{Square-zero defects and a factor-sum return for Erd\H{o}s--Straus}.
++Supplied source \texttt{es\_turn7\_square\_zero\_pell\_20260922/core.tex},
++\S\S2--7. Archive and source hashes are recorded in the reading ledger.
++This source was not confirmed in the fetched default branch.
++\bibitem[The Clankers(2026b)]{Integrated} The Clankers. (2026b).
++\emph{Integration audit: mixed fibres and middle spectra}.
++\href{https://github.com/KokunoYumeto/erdos-straus-foundation/blob/20709bee872ad10e4cc7d7b976d975e24532a803/research/incoming/es-turn07-fibres-middle-spectrum-20260922/INTEGRATION_AUDIT.md}{Pinned audit}.
++The exact distinctions between original source, receiver, orientation and
++coefficient sections are retained in this continuation.
++\end{thebibliography}
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/run_all.py b/research/incoming/es-turn07-mixed-order-upward-20260923/run_all.py
+new file mode 100644
+index 0000000..d6baf81
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/run_all.py
+@@ -0,0 +1,52 @@
++#!/usr/bin/env python3
++"""Replay the complete declared arithmetic and coefficient domains.
++Standard library only. Failing tests raise also under optimized Python.
++"""
++from __future__ import annotations
++from pathlib import Path
++import argparse, hashlib, json, subprocess, sys, time
++
++
++def run(command: list[str], cwd: Path, log: Path) -> dict:
++    started=time.monotonic()
++    result=subprocess.run(command,cwd=cwd,text=True,capture_output=True)
++    log.parent.mkdir(parents=True,exist_ok=True)
++    log.write_bytes((result.stdout+result.stderr).encode('utf-8'))
++    if result.returncode:
++        raise RuntimeError(f'Command failed ({result.returncode}); see {log}: {command}')
++    return dict(command=command,returncode=result.returncode,
++                elapsed_seconds=round(time.monotonic()-started,3))
++
++
++def main() -> None:
++    ap=argparse.ArgumentParser()
++    ap.add_argument('--bound',type=int,default=10000)
++    ap.add_argument('--directory',default='certificates')
++    args=ap.parse_args()
++    root=Path(__file__).resolve().parent
++    out=Path(args.directory)
++    if not out.is_absolute():out=root/out
++    opt=out.with_name(out.name+'_optimized')
++    runs=[]
++    runs.append(run([sys.executable,'verify.py','--bound',str(args.bound),'--out',str(out)],root,out/'main.log'))
++    runs.append(run([sys.executable,'-O','verify.py','--bound',str(args.bound),'--out',str(opt)],root,out/'optimized.log'))
++    runs.append(run([sys.executable,'check_independent.py','--input',str(out),'--out',str(out/'independent.json')],root,out/'independent.log'))
++    summary=json.loads((out/'summary.json').read_bytes())
++    independent=json.loads((out/'independent.json').read_bytes())
++    names=sorted(summary['tables'])
++    comparisons={name:(out/name).read_bytes()==(opt/name).read_bytes() for name in names}
++    comparisons['summary.json']=(out/'summary.json').read_bytes()==(opt/'summary.json').read_bytes()
++    if not all(comparisons.values()):raise RuntimeError('Normal and optimized bytes differ')
++    if independent['tables']!=summary['tables']:raise RuntimeError('Independent table digest mismatch')
++    receipt=dict(success=True,runs=runs,main=summary,independent=independent,
++                 normal_optimized_identical=comparisons,
++                 source_sha256={name:hashlib.sha256((root/name).read_bytes()).hexdigest()
++                    for name in ['arithmetic.py','verify.py','check_independent.py','run_all.py']},
++                 universal_ES_proved=False,turn7_universal_existence_complete=False,
++                 evidence_scope='Two implementations of finite exact checks; not independent human review or Lean.')
++    dest=out/'execution.json'
++    dest.write_bytes((json.dumps(receipt,indent=2,sort_keys=True)+'\n').encode('utf-8'))
++    print(json.dumps(dict(success=True,receipt=str(dest),main_checks=summary['checks'],
++                    independent_checks=independent['checks'],counts=summary['source_counts']),indent=2))
++
++if __name__=='__main__':main()
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/source_reading.json b/research/incoming/es-turn07-mixed-order-upward-20260923/source_reading.json
+new file mode 100644
+index 0000000..ff36976
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/source_reading.json
+@@ -0,0 +1,65 @@
++{
++  "date": "2026-09-23",
++  "github": {
++    "repository": "KokunoYumeto/erdos-straus-foundation",
++    "observed_default_revision": "20709bee872ad10e4cc7d7b976d975e24532a803",
++    "message": "Map complete mixed fibres in public workbench",
++    "latest_square_zero_integration_confirmed": false,
++    "scope": "Default branch, incoming directory and returned branches checked; no claim about every unobserved fork or unpublished working tree."
++  },
++  "supplied_predecessor": {
++    "source": "/mnt/data/es_turn7_square_zero_pell_20260922/core.tex",
++    "source_sha256": "f3a3a87cde84c1bad100f56dc422d9d2bc49a7c18924da48377ac8670ea9e453",
++    "archive": "/mnt/data/ES_Turn7_Square_Zero_Pell_20260922.zip",
++    "archive_sha256": "2697ddb6ada7e088ec172eed495f4e215d6b088b57fd707a2170960fdf0a91ff",
++    "cumulative": "/mnt/data/ES_Turns6_7_With_Square_Zero_Pell_20260922.zip",
++    "cumulative_sha256": "6708e1277f64aad2f596bf9e7ac5217212bae451d88a6644d53d7333defc0684",
++    "reading": "Complete core and handoff were retrieved. Section3 additive coordinate; Section4 original-box polynomial, unit-width theorem and stabilizers; Section6 factor-sum/Pell; Section7 p67369 obstruction are the active dependencies."
++  },
++  "primary_sources": [
++    {
++      "authors": "Yamamoto, K.",
++      "year": 1965,
++      "title": "On the diophantine equation 4/n=1/x+1/y+1/z",
++      "url": "https://www.jstage.jst.go.jp/article/kyushumfs/19/1/19_1_37/_pdf/-char/en",
++      "locator": "Lemma 2, equation (4), printed p.38",
++      "use": "Inherited exterior congruences; coordinate identity is rederived here."
++    },
++    {
++      "authors": "Elsholtz, C.; Tao, T.",
++      "year": 2013,
++      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
++      "url": "https://arxiv.org/abs/1107.1010",
++      "locator": "Section2, Propositions2.2 and2.6; TypeI and TypeII identities",
++      "use": "Inherited original coordinate framework, not existence at every prime."
++    },
++    {
++      "authors": "Sutherland, A. V.",
++      "year": 2017,
++      "title": "Dirichlet theorem on primes in arithmetic progressions",
++      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf",
++      "locator": "Lecture18, Theorem18.1, p.1",
++      "use": "Only the displayed explicitly reduced linear prime progressions; attribution to P. G. L. Dirichlet."
++    }
++  ],
++  "content_searches": [
++    "Erdos Straus mixed radix",
++    "Erdos Straus 4a divisors sum",
++    "cyclic group subgroup chain bounded intervals mixed radix bijection"
++  ],
++  "search_limit": "Scoped source/content search did not establish a specific matching arithmetic antecedent. The abstract cyclic quotient digit construction is elementary and is not advertised as a new abstract group theorem. Search nonmatches do not establish novelty.",
++  "not_used_as_lemmas": [
++    "No new receiver spectral estimate",
++    "No unrestricted subgroup-support surrogate",
++    "No prime distribution theorem beyond Dirichlet",
++    "No density-to-pointwise inference"
++  ],
++  "nonclaims": [
++    "universal ES",
++    "a globally terminating p-only witness algorithm",
++    "historical priority",
++    "independent human review",
++    "Lean build",
++    "new overall ES verification range"
++  ]
++}
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/verification.json b/research/incoming/es-turn07-mixed-order-upward-20260923/verification.json
+new file mode 100644
+index 0000000..1e16190
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/verification.json
+@@ -0,0 +1,136 @@
++{
++  "evidence_scope": "Two implementations of finite exact checks; not independent human review or Lean.",
++  "independent": {
++    "abstract_cases": 161887,
++    "bound": 10000,
++    "certified_prime_nodes": 43,
++    "checks": 386546,
++    "source_counts": {
++      "chain_only_parts": 0,
++      "chain_positive_parts": 4,
++      "full_E": 3637,
++      "full_M": 3910,
++      "old_unit_positive_parts": 5,
++      "parts": 4139,
++      "primes": 143,
++      "shells": 171732,
++      "squareful_trace_shells": 2522,
++      "trace_E": 5788,
++      "trace_M": 5678,
++      "words": 5616298
++    },
++    "success": true,
++    "tables": {
++      "abstract.json": "175d8ea7fc8db4df58008f9226ebe8f1023a7afe6c0a1444b77487c72c52cf49",
++      "arithmetic_boundary.json": "d6ba10f1e952b97612eda1af38c4f68a0df861833e913d93c9009b13ae7647d6",
++      "negative_controls.json": "9f9661f1574cea8b70356a129603473a7b1715c6ce6d126705f652a9346c6da0",
++      "packets.json": "335e25683663e16ba15f26d3be5418f9a050196028be2c5263673830f7a95d8b",
++      "prime_certificates.json": "005d80a5ff92a68e80ebce00bca2e9abcf35e7a1d5c9e1f948230a88ad25a760",
++      "source_parts.json": "de49a7c89bc70dad776e1caa75f4a3312a41aa095a9ef6d76bbb48752a2e1926",
++      "upward.json": "e48ddabebc32953cad1919a9cf2af4289d4f0922aa6a5ce520cb0dd37fb787aa"
++    },
++    "universal_ES_proved": false
++  },
++  "main": {
++    "abstract_cases": 161887,
++    "bound": 10000,
++    "checks": 400023,
++    "source_counts": {
++      "chain_only_parts": 0,
++      "chain_positive_parts": 4,
++      "full_E": 3637,
++      "full_M": 3910,
++      "old_unit_positive_parts": 5,
++      "parts": 4139,
++      "primes": 143,
++      "shells": 171732,
++      "squareful_trace_shells": 2522,
++      "trace_E": 5788,
++      "trace_M": 5678,
++      "words": 5616298
++    },
++    "source_sha256": "487e30e760f697f8a46b71e664e770ed7dc0a17eb3b566b48cd276ec192d1ee5",
++    "success": true,
++    "tables": {
++      "abstract.json": "175d8ea7fc8db4df58008f9226ebe8f1023a7afe6c0a1444b77487c72c52cf49",
++      "arithmetic_boundary.json": "d6ba10f1e952b97612eda1af38c4f68a0df861833e913d93c9009b13ae7647d6",
++      "negative_controls.json": "9f9661f1574cea8b70356a129603473a7b1715c6ce6d126705f652a9346c6da0",
++      "packets.json": "335e25683663e16ba15f26d3be5418f9a050196028be2c5263673830f7a95d8b",
++      "prime_certificates.json": "005d80a5ff92a68e80ebce00bca2e9abcf35e7a1d5c9e1f948230a88ad25a760",
++      "source_parts.json": "de49a7c89bc70dad776e1caa75f4a3312a41aa095a9ef6d76bbb48752a2e1926",
++      "upward.json": "e48ddabebc32953cad1919a9cf2af4289d4f0922aa6a5ce520cb0dd37fb787aa"
++    },
++    "universal_ES_proved": false
++  },
++  "new_overall_ES_verification_range_claimed": false,
++  "normal_optimized_identical": {
++    "abstract.json": true,
++    "arithmetic_boundary.json": true,
++    "negative_controls.json": true,
++    "packets.json": true,
++    "prime_certificates.json": true,
++    "source_parts.json": true,
++    "summary.json": true,
++    "upward.json": true
++  },
++  "pdfs": {
++    "preprint": {
++      "compile_success": true,
++      "pages": 3,
++      "text_sha256": "af64f9a3b6c3ebb310ff0199e72f8abbe21802cb7819acea68a6e5b299de09f1"
++    },
++    "workbench": {
++      "compile_success": true,
++      "pages": 7,
++      "text_sha256": "dd9cbd9ae6df130d35968469fb0e46492b2a0053cadde0c1d0f156b53fe87ba6"
++    }
++  },
++  "runs": [
++    {
++      "command": [
++        "/opt/pyvenv/bin/python",
++        "verify.py",
++        "--bound",
++        "10000",
++        "--out",
++        "/mnt/data/es_turn7_mixed_order_upward_20260923/certificates"
++      ],
++      "elapsed_seconds": 6.053,
++      "returncode": 0
++    },
++    {
++      "command": [
++        "/opt/pyvenv/bin/python",
++        "-O",
++        "verify.py",
++        "--bound",
++        "10000",
++        "--out",
++        "/mnt/data/es_turn7_mixed_order_upward_20260923/certificates_optimized"
++      ],
++      "elapsed_seconds": 7.549,
++      "returncode": 0
++    },
++    {
++      "command": [
++        "/opt/pyvenv/bin/python",
++        "check_independent.py",
++        "--input",
++        "/mnt/data/es_turn7_mixed_order_upward_20260923/certificates",
++        "--out",
++        "/mnt/data/es_turn7_mixed_order_upward_20260923/certificates/independent.json"
++      ],
++      "elapsed_seconds": 5.065,
++      "returncode": 0
++    }
++  ],
++  "source_sha256": {
++    "arithmetic.py": "c1d6bd0951ddafec43d62e636ddfc6e55c5bff1d717d4e08b09e1eea113a85e2",
++    "check_independent.py": "38c1a289340364ba8ff7b97a44d682f01511ef8c96f220815655a251553802e5",
++    "run_all.py": "8029376c55989810d0063e3cea98536bff3e198dfb175e64f74cbd3b7562f96d",
++    "verify.py": "2b782f09fc5acf2c5c9aba0e20eb2db4f90114218f261a5e60b89a7c05c2a83a"
++  },
++  "success": true,
++  "turn7_universal_existence_complete": false,
++  "universal_ES_proved": false
++}
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/verify.py b/research/incoming/es-turn07-mixed-order-upward-20260923/verify.py
+new file mode 100644
+index 0000000..d623781
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/verify.py
+@@ -0,0 +1,264 @@
++#!/usr/bin/env python3
++"""Exact finite replay. Its bounds are regression domains, not an ES cutoff."""
++from __future__ import annotations
++import argparse, hashlib, json, time
++from itertools import product
++from math import gcd, prod, isqrt
++from pathlib import Path
++from fractions import Fraction
++import arithmetic as A
++
++CHECKS=0
++
++def check(ok,msg='verification failure'):
++    global CHECKS;CHECKS+=1;A.need(ok,msg)
++
++def add_hash(H,obj):
++    H.update((json.dumps(obj,separators=(',',':'),sort_keys=True)+'\n').encode())
++
++def abstract_cases():
++    for D in range(2,26):
++        for steps in product(range(D),repeat=2):
++            for ns in product(range(1,6),repeat=2):yield D,steps,ns
++    for D in (3,5,9):
++        for steps in product(range(D),repeat=3):
++            for ns in product(range(1,4),repeat=3):yield D,steps,ns
++
++def verify_abstract():
++    H=hashlib.sha256();count=positive=0;by={}
++    for D,ls,ns in abstract_cases():
++        C=A.convolution(D,ls,ns);cert=A.best_chain(D,ls,ns);L=cert['lower'];old=A.unit_lower(D,ls,ns)
++        check(sum(C)==prod(ns));check(min(C)>=max(L,old))
++        if L:
++            positive+=1
++            # Every target, with a genuine original bounded section.
++            for target in range(D):
++                vec=A.section_vector(D,ls,ns,cert['indices'],target)
++                check(sum(l*t for l,t in zip(ls,vec))%D==target)
++            rows=cert['rows']
++            if all(ns[r['index']]==r['radix'] for r in rows):
++                check(len(set(C))==1)
++        count+=1;by.setdefault(str(D),[0,0])[0]+=1;by[str(D)][1]+=bool(L)
++        add_hash(H,[D,list(ls),list(ns),C,L,old])
++    # The cyclic carry is NOT coordinatewise addition in C3 x C3.
++    carry=A.decode(9,[6,1],[0,1],3)
++    check(carry=={1:0,0:2})
++    return dict(cases=count,positive_chain_cases=positive,by_modulus=by,sha256=H.hexdigest(),
++                carry_example=dict(D=9,steps=[6,1],left=[0,2],right=[0,1],sum=[2,0]))
++
++def original_scan(bound):
++    primes=A.sieve(bound);spf=A.spf(bound);tables=[];hash_all=hashlib.sha256()
++    counts=dict(primes=0,shells=0,words=0,trace_E=0,trace_M=0,full_E=0,full_M=0,
++                squareful_trace_shells=0,parts=0,chain_positive_parts=0,
++                old_unit_positive_parts=0,chain_only_parts=0)
++    for p in range(25,bound+1,24):
++        if not primes[p]:continue
++        counts['primes']+=1
++        for a in range(p//4+1,(p-1)//2+1):
++            R=4*a-p;fa=A.factor_spf(a,spf);ds=A.divs_f({q:2*e for q,e in fa.items()})
++            direct=set();counts['shells']+=1;counts['words']+=len(ds)
++            for u in ds:
++                for tag,G in [('E',4*u+1),('M',p+4*u)]:
++                    g=G%R
++                    if g*g%R==0:
++                        direct.add((tag,u));counts['trace_'+tag]+=1
++                    if g==0:counts['full_'+tag]+=1
++            add_hash(hash_all,[p,a,sorted(direct)])
++            if not direct:continue
++            K,D,delta=A.residual(R)
++            if D==1:continue
++            counts['squareful_trace_shells']+=1;seen=set()
++            for tile in A.tile_parts(p,a,fa):
++                ls=[v['step'] for v in tile['parts']];ns=[v['length'] for v in tile['parts']]
++                C=A.convolution(D,ls,ns);literal=[0]*D;full=0
++                for vec in product(*(range(n) for n in ns)):
++                    u=A.tile_word(tile,vec);key=(tile['channel'],u);check(key not in seen);seen.add(key)
++                    eta=int(tile['channel']=='E');z=pow(p,eta,R)*u*pow(a,-1,R)%R
++                    check((z+1)%K==0);c=((z+1)//K)%D
++                    check(c==(tile['target']-sum(l*t for l,t in zip(ls,vec)))%D)
++                    literal[sum(l*t for l,t in zip(ls,vec))%D]+=1
++                    G=4*u+1 if eta else p+4*u
++                    check((G%R==0)==(c==0));full+=G%R==0
++                check(C==literal and full==C[tile['target']])
++                best=A.best_chain(D,ls,ns);old=A.unit_lower(D,ls,ns)
++                check(min(C)>=max(best['lower'],old))
++                stab=[s for s in range(D) if all(C[(x+s)%D]==C[x] for x in range(D))]
++                counts['parts']+=1;counts['chain_positive_parts']+=best['lower']>0
++                counts['old_unit_positive_parts']+=old>0
++                counts['chain_only_parts']+=best['lower']>0 and old==0
++                tile.update(coefficients=C,chain=best,unit_lower=old,stabilizer=stab,
++                            literal_full=full)
++                if best['lower']:
++                    vec=A.section_vector(D,ls,ns,best['indices'],tile['target'])
++                    rec=A.state(p,a,A.tile_word(tile,vec),tile['channel']);check(rec['full'])
++                    tile['returned_state']=rec
++                tables.append(tile)
++            check(seen==direct,'the original partition omitted or duplicated words')
++    return dict(bound=bound,counts=counts,source_sha256=hash_all.hexdigest(),parts=tables)
++
++def embedded_tile(p,a,selected,tag='M'):
++    R=4*a-p;K,D,delta=A.residual(R);fa=A.factor(a);qs=sorted(fa);parts=[]
++    for q in qs:
++        o=A.order(q,K);lam=((pow(q,o,R)-1)//K)%D
++        b,n=selected.get(q,(0,1))
++        check(-fa[q]<=b and b+o*(n-1)<=fa[q])
++        parts.append(dict(base=b,length=n,order=o,step=lam))
++    z=A.prod(pow(q,v['base'],R) for q,v in zip(qs,parts))*pow(p,int(tag=='E'),R)%R
++    check((z+1)%K==0)
++    return dict(p=p,a=a,R=R,K=K,D=D,delta=delta,channel=tag,primes=qs,
++                exponents=[fa[q] for q in qs],parts=parts,target=((z+1)//K)%D,
++                domain='Explicit injective subpacket of the original exponent box; other words remain in the full source.')
++
++def choose_example(qs,es,R):
++    base=prod(q**e for q,e in zip(qs,es));H0=((R+1)//4)*pow(base,-1,210)%210
++    if H0==0:H0=210
++    for index in range(10000):
++        H=H0+210*index;p=4*base*H-R
++        if p>R and gcd(H,base)==1 and A.trial_prime(p):
++            return dict(p=p,H=H,qs=qs,es=es,R=R,base=base,H0=H0,index=index,
++                        prime_progression=[4*base*H0-R,840*base])
++    raise ValueError('Declared finite example search cap exhausted')
++
++def source_examples():
++    packets=[];prime_roots=[]
++    specs=[choose_example([53,163,271],[1,1,1],243),
++           choose_example([89,271,1801],[1,2,1],675)]
++    for sp in specs:
++        p,H,qs,es,R=[sp[k] for k in ('p','H','qs','es','R')]
++        check(A.trial_prime(p));prime_roots.append(p);prime_roots.extend(qs)
++        base=sp['base'];a=H*base;check(4*a-p==R and p%840==1)
++        allstates=[A.state(p,a,u,tag) for u in A.divs_f({q:2*e for q,e in A.factor(a).items()}) for tag in ('E','M')]
++        selected={qs[0]:(-1,2),qs[1]:(-es[1],2*es[1]+1),qs[2]:(-es[2],2*es[2]+1)}
++        tile=embedded_tile(p,a,selected)
++        ls=[x['step'] for x in tile['parts']];ns=[x['length'] for x in tile['parts']]
++        C=A.convolution(tile['D'],ls,ns);best=A.best_chain(tile['D'],ls,ns)
++        check(best['lower']>0 and A.unit_lower(tile['D'],ls,ns)==0)
++        check(len(set(C))==1 and C[0]==2)
++        words=[]
++        for vec in product(*(range(n) for n in ns)):
++            rec=A.state(p,a,A.tile_word(tile,vec),tile['channel']);check(rec['trace']);words.append(rec)
++        check(sum(r['full'] for r in words)==2)
++        vec=A.section_vector(tile['D'],ls,ns,best['indices'],tile['target'])
++        output=A.state(p,a,A.tile_word(tile,vec),tile['channel']);check(output['full'])
++        for hold in (qs[1],qs[2]):
++            restricted=[r for r in words if next(e['beta'] for e in r['exponents'] if e['prime']==hold)==0]
++            check(restricted and not any(r['full'] for r in restricted))
++        tile.update(coefficients=C,chain=best,unit_lower=0,words=words,section=vec,
++                    returned_state=output,stabilizer=list(range(tile['D'])))
++        p0,modulus=sp['prime_progression'];check(gcd(p0,modulus)==1 and (p-p0)==modulus*sp['index'])
++        packets.append(dict(**sp,a=a,tiles=[tile],full_states=[r for r in allstates if r['full']],
++                            all_original_word_count=len(allstates)//2))
++    return packets,prime_roots
++
++def upward_examples():
++    p=67369;a=16849;source=A.state(p,a,4067,'M')
++    check(A.trial_prime(p) and source['trace'] and not source['full'])
++    C=source['R']+source['s'];cells=A.plus_cells(p,C);targets=A.plus_return(source)
++    target=next(x['state'] for x in targets if x['state']['a']==16850)
++    check((source['h'],source['r'],source['s'])==(83,7,29))
++    check((C,p+C,target['u'],target['h'],target['r'],target['s'])==(56,67425,674,674,1,25))
++    check(target['a']==a+1)
++    prefix=[]
++    for aa in range(p//4+1,a+2):
++        states=[A.state(p,aa,u,c) for u in A.divs_f({q:2*e for q,e in A.factor(aa).items()}) for c in ('E','M')]
++        full=[x for x in states if x['full']];trace=[x for x in states if x['trace']]
++        if aa<=a:check(not full)
++        prefix.append(dict(a=aa,R=4*aa-p,words=[dict(u=u, E=(4*u+1)%(4*aa-p), M=(p+4*u)%(4*aa-p))
++            for u in A.divs_f({q:2*e for q,e in A.factor(aa).items()})],traces=trace,full=full))
++    inverse=A.plus_inverse(target)
++    check(any((x['a'],x['u'],x['channel'])==(a,4067,'M') for x in inverse))
++    for rec in inverse:
++        check(any(x['state']==target for x in A.plus_return(rec)))
++    # All forward targets have the original ordered inverse.
++    for row in targets:
++        out=row['state'];den=[Fraction(*x) for x in out['denominators']]
++        check(out['a']**2/(out['R']*den[1]-p*out['a'])==out['u'])
++    # The whole p+C fibre is finite but need not have an E terminal.
++    no=A.state(97,40,2,'M');empty=A.plus_cells(97,no['R']+no['s'])
++    check(no['trace'] and not no['full'] and not A.plus_return(no))
++    failures=[]
++    for row in empty:
++        aa=row['a'];states=[A.state(97,aa,u,c) for u in A.divs_f({q:2*e for q,e in A.factor(aa).items()}) for c in ('E','M')]
++        check(not any(x['full'] for x in states))
++        failures.append(dict(cell=row,states=states))
++    # Unbounded linear progression: no polynomial-prime assumption.
++    progression=[];k=0
++    while len(progression)<8:
++        h=83+4650*k;pp=812*h-27
++        if A.trial_prime(pp):
++            rec=A.state(pp,203*h,49*h,'M');check(rec['trace'] and not rec['full'] and rec['common_denominator']==3)
++            targeta=203*h+1;hh=targeta//25
++            out=A.state(pp,targeta,hh,'E');check(out['full'] and out['a']==rec['a']+1)
++            check(pp%840==169 and targeta%25==0 and (pp+25)%31==0)
++            check(any(x['state']==out for x in A.plus_return(rec)))
++            # All old divisor-deletion candidates explicitly fail.
++            for d in A.divisors(27):
++                if d%3:continue
++                check(d%(4*rec['r']*rec['s'])!=1)
++                word_mod=4*prod(q**((e+1)//2) for q,e in A.factor(rec['u']).items())
++                check(d%word_mod!=1)
++            check(((3*3-1)//4)%rec['r']!=0)
++            progression.append(dict(index=k,source=rec,target=out))
++        k+=1
++    check(gcd(67369,3775800)==1)
++    return dict(critical_source=source,critical_target=target,C=C,M=p+C,cells=cells,
++        targets=targets,inverse=inverse,prefix=prefix,
++        progression=dict(residue=67369,modulus=3775800,prime_samples=progression),
++        nonclosure=dict(source=no,complete_cells=failures)),[p]+[x['source']['p'] for x in progression]
++
++def controls():
++    examples=[]
++    for D,ls,ns in [(9,[3,1],[2,2]),(3,[1,1],[2,2]),(5,[1],[2])]:
++        C=A.convolution(D,ls,ns);best=A.best_chain(D,ls,ns)
++        examples.append(dict(D=D,steps=ls,lengths=ns,coefficients=C,chain=best,
++                             unit_lower=A.unit_lower(D,ls,ns)))
++    check(gcd(9,*[3,1])==1 and examples[0]['coefficients'][2]==0)
++    check(examples[1]['chain']['lower']==0 and min(examples[1]['coefficients'])==1)
++    check(examples[2]['chain']['lower']==0 and examples[2]['coefficients'][1]==1)
++    # Exactly D original words are a cardinality-sharp uniform section.
++    sharp=[]
++    for D,ls,ns in [(9,[6,1],[3,3]),(15,[6,10],[5,3]),(27,[9,3,1],[3,3,3])]:
++        C=A.convolution(D,ls,ns);check(C==[1]*D)
++        lost=[]
++        for i in range(len(ns)):
++            n=ns.copy();n[i]-=1;c=A.convolution(D,ls,n);check(0 in c and sum(c)<D);lost.append(dict(index=i,coefficients=c))
++        sharp.append(dict(D=D,steps=ls,lengths=ns,coefficients=C,shortened=lost))
++    return dict(nonimplications=examples,cardinality_sharpness=sharp,
++        note='Shortened abstract boxes are not asserted to be separate ES counterexamples.')
++
++def arithmetic_boundary():
++    sp=choose_example([163,107],[1,2],243)
++    p,H,R=sp['p'],sp['H'],sp['R'];a=sp['base']*H
++    check(A.trial_prime(p) and p%840==1 and 4*a-p==R)
++    tile=embedded_tile(p,a,{163:(-1,3),107:(-1,2)})
++    words=[];bins=[0]*9
++    for vec in product(*(range(row['length']) for row in tile['parts'])):
++        rec=A.state(p,a,A.tile_word(tile,vec),'M');check(rec['trace'] and not rec['full'])
++        bins[rec['defect']]+=1;words.append(rec)
++    check(len(words)==6 and bins==[0,1,1,0,1,1,0,1,1])
++    ls=[row['step'] for row in tile['parts']];ns=[row['length'] for row in tile['parts']]
++    check(A.best_chain(9,ls,ns)['lower']==0)
++    tile.update(words=words,defect_bins=bins,chain=A.best_chain(9,ls,ns))
++    full=[A.state(p,a,u,c) for u in A.divs_f({q:2*e for q,e in A.factor(a).items()})
++          for c in ('E','M') if ((4*u+1) if c=='E' else p+4*u)%R==0]
++    return dict(**sp,a=a,part=tile,other_full_states=full,
++                nonclaim='Only the specified original subpacket is empty.'),p
++
++def main():
++    parser=argparse.ArgumentParser();parser.add_argument('--bound',type=int,default=10000)
++    parser.add_argument('--out',default='certificates');args=parser.parse_args();out=Path(args.out)
++    start=time.monotonic();abstract=verify_abstract();A.dump(out/'abstract.json',abstract)
++    original=original_scan(args.bound);A.dump(out/'source_parts.json',original)
++    packets,roots=source_examples();upward,other=upward_examples();roots+=other
++    boundary,bprime=arithmetic_boundary();roots.append(bprime);A.dump(out/'arithmetic_boundary.json',boundary)
++    A.dump(out/'packets.json',packets);A.dump(out/'upward.json',upward);A.dump(out/'negative_controls.json',controls())
++    A.dump(out/'prime_certificates.json',A.lucas_tree(sorted(set(roots))))
++    files=['arithmetic_boundary.json','abstract.json','source_parts.json','packets.json','upward.json','negative_controls.json','prime_certificates.json']
++    summary=dict(success=True,bound=args.bound,checks=CHECKS,source_counts=original['counts'],
++        abstract_cases=abstract['cases'],source_sha256=original['source_sha256'],
++        tables={name:hashlib.sha256((out/name).read_bytes()).hexdigest() for name in files},
++        universal_ES_proved=False)
++    A.dump(out/'summary.json',summary)
++    print(json.dumps(dict(summary=summary,elapsed_seconds=round(time.monotonic()-start,3)),sort_keys=True))
++
++if __name__=='__main__':main()
+diff --git a/research/incoming/es-turn07-mixed-order-upward-20260923/workbench.tex b/research/incoming/es-turn07-mixed-order-upward-20260923/workbench.tex
+new file mode 100644
+index 0000000..91604ec
+--- /dev/null
++++ b/research/incoming/es-turn07-mixed-order-upward-20260923/workbench.tex
+@@ -0,0 +1,29 @@
++\documentclass[11pt,reqno]{amsart}
++\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}
++\usepackage[a4paper,margin=25mm]{geometry}
++\usepackage{amsmath,amssymb,mathtools,microtype,longtable,array}
++\usepackage[authoryear,round]{natbib}\usepackage[hidelinks]{hyperref}
++\newtheorem{theorem}{Theorem}[section]\newtheorem{proposition}[theorem]{Proposition}
++\newtheorem{lemma}[theorem]{Lemma}\newtheorem{corollary}[theorem]{Corollary}
++\title[Mixed-order sections and upward shell return]{Mixed-order coefficient sections and a controlled upward shell return
++for Erd\H{o}s--Straus}
++\author{The Clankers}\date{23 September 2026}
++\hypersetup{pdftitle={Mixed-order sections and upward shell return},pdfauthor={The Clankers}}
++\begin{document}
++\begin{abstract}
++The complete bounded divisor source has an additive fine-defect coordinate.
++We give a mixed-order subgroup-chain section with a literal inverse, a positive
++integer coefficient bound, and an optimal finite divisor-DAG test within that
++certificate class. The section retains cyclic carries and actual exponent
++multiplicities. Original hard-prime packets with defects 9 and 15 pass this test
++while the previous unit-direction width test fails. A reduced prime progression
++realizes an exact missing-quotient boundary. Separately, a labelled factor exchange
++preserves $4a+s$ while changing the shell and the word; it returns an integral
++state at the first full shell above the critical $p=67369$ trace. The same one-shell
++upward return holds on an explicit infinite progression of hard primes. Neither
++criterion is asserted to produce an initial source at every prime.
++\end{abstract}
++\maketitle
++\input{core.tex}
++\input{references.tex}
++\end{document}
+-- 
+2.47.3

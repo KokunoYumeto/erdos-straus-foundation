@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-23",
+  "engine": "pdflatex",
+  "outputs": [
+    {
+      "file": "workbench.pdf",
+      "pages": 12,
+      "sha256": "5D5325A77C6E3FB46E370DEFF7542D7E4A05F03F50219AF00D098E6D99CD405E"
+    },
+    {
+      "file": "preprint.pdf",
+      "pages": 5,
+      "sha256": "54E10A43ACB939BC81B136C9A99118611078647CA026B9822154F465B2C7496B"
+    }
+  ],
+  "visual_check": {
+    "method": "Poppler page rendering with contact-sheet and full-page inspection",
+    "result": "accepted",
+    "notes": "All seventeen pages were rendered. The affine-channel diagram, carried-digit figure, factor-cell figure, and their surrounding proofs were inspected at readable scale. One overlapping arrow label was removed, both documents were rebuilt twice, and the affected pages were inspected again. No clipping, overlap, missing glyph, or broken reference remains."
+  }
+}

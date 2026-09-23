@@ -1,0 +1,25 @@
+\begin{tikzpicture}[
+  font=\small,
+  box/.style={draw,rounded corners,minimum height=10mm,minimum width=39mm,align=center},
+  map/.style={-{Latex[length=2mm]},thick}
+]
+\node[box,fill=blue!7] (m) {$M$ fine coordinate\\$c_M=c$};
+\node[box,fill=green!9,right=25mm of m] (e) {$E$ fine coordinate\\$c_E=c-\bar\omega$};
+\draw[map] (m) -- node[above] {$p=1+K\omega$} (e);
+\node[below=5mm of m,align=center] {$M$ full: $c=0$};
+\node[below=5mm of e,align=center] {$E$ full: $c=\bar\omega$};
+
+\node[box,below=20mm of m,fill=black!4] (c)
+  {$C\in\mathbb Z^{\mathbb Z/D}$\\original coefficient vector};
+\node[box,right=25mm of c,fill=black!4] (j)
+  {$J=(I+T_{\bar\omega})C$\\$J_x=C_x+C_{x-\bar\omega}$};
+\draw[map] (c) -- node[above] {$I+T_{\bar\omega}$} (j);
+
+\node[draw,rounded corners,below=10mm of $(c)!0.5!(j)$,align=center,
+      text width=116mm,inner sep=5pt] (inverse)
+  {$d=\gcd(D,\omega)$, $L=D/d$ is odd, and on every translation orbit\\[2pt]
+   $\displaystyle 2C_x=\sum_{r=0}^{L-1}(-1)^rJ_{x-r\bar\omega}$,\qquad
+   $\displaystyle J_x>0\ (\forall x)\Longleftrightarrow
+   \operatorname{supp}(C)\cup
+   (\operatorname{supp}(C)+\bar\omega)=\mathbb Z/D$.};
+\end{tikzpicture}

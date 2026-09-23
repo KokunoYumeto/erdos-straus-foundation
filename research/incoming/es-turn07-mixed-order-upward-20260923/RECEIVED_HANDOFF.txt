@@ -1,0 +1,9 @@
+The cumulative archive preserves the preceding Turn 6--7 archive and adds the
+mixed-order coefficient and upward plus-factor continuation. The supplied
+manifest was checked entry by entry before integration. The received proof and
+certificate files were then reviewed against fresh replay output, exact
+arithmetic recomputation, independent mathematical referees, and the indexed
+primary literature recorded in source_reading.json.
+
+This file records intake provenance only. Mathematical acceptance and every
+integration correction are listed in INTEGRATION_AUDIT.md.
