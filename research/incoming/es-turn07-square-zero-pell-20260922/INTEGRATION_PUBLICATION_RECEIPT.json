@@ -1,0 +1,29 @@
+{
+  "schema": "es-integration-publication-receipt/1",
+  "published_at": "2026-09-23T22:35:13.6595381+02:00",
+  "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
+  "branch": "main",
+  "source_commit": "13cdd6c8d1236b078bb503af698d132017ed99d7",
+  "original_publication_source_commit": "6c064a07298cdba38352998364ce6b7cb3efa973",
+  "navigation_commit": "7d288e06a44e637289b90908d32e50f7fac72792",
+  "remote_head_verified": "7d288e06a44e637289b90908d32e50f7fac72792",
+  "source_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/tree/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-turn07-square-zero-pell-20260922",
+  "proof_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-turn07-square-zero-pell-20260922/core.tex",
+  "bulletin_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/7d288e06a44e637289b90908d32e50f7fac72792/DAILY_RESULTS_20260923.md",
+  "pdfs": {
+    "workbench.pdf": {
+      "pages": 16,
+      "bytes": 491979,
+      "sha256": "2C43B0FD96FD5DDE98802BDC8E38E2926483275BDD0918F6FBC9089CC31F3091"
+    },
+    "preprint.pdf": {
+      "pages": 5,
+      "sha256": "7FDC306C175D53493CD3DA03BCE8451BFD7548BF7EAB27F4F1EAC340ABFF7E1D"
+    }
+  },
+  "scope": "The publication retains the original square-zero trace defects, bounded coefficient partition, prime-power classification, factor-sum and fixed-tail-sum maps, Pell specialization, complete inverse fibres, and map-specific prime-square obstructions. The corrected source states the exact domain of the factor-sum inverse and the full reciprocal hypothesis for the trace coordinates. It does not claim a universal source, terminating descent, or an Erdős–Straus proof or counterexample.",
+  "remote_verification": {
+    "command": "git ls-remote --heads origin main",
+    "observed": "7d288e06a44e637289b90908d32e50f7fac72792 refs/heads/main"
+  }
+}

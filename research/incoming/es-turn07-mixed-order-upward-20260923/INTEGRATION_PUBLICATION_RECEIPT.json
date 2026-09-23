@@ -1,0 +1,29 @@
+{
+  "schema": "es-integration-publication-receipt/1",
+  "published_at": "2026-09-23T22:35:13.6595381+02:00",
+  "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
+  "branch": "main",
+  "source_commit": "13cdd6c8d1236b078bb503af698d132017ed99d7",
+  "original_publication_source_commit": "6125e74b1aadb860965964e2ae3587c902dbbab8",
+  "navigation_commit": "7d288e06a44e637289b90908d32e50f7fac72792",
+  "remote_head_verified": "7d288e06a44e637289b90908d32e50f7fac72792",
+  "predecessor_commit": "a8cefe028e383d1967cc8876fbbdd9325db9bfb8",
+  "source_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/tree/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-turn07-mixed-order-upward-20260923",
+  "bulletin_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/7d288e06a44e637289b90908d32e50f7fac72792/DAILY_RESULTS_20260923.md",
+  "proof_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex",
+  "pdfs": {
+    "workbench.pdf": {
+      "pages": 12,
+      "sha256": "F96DC0B057B6C824C76173313184C2F5D3DFC4DC62EA3F3FBC776F1000E4C176"
+    },
+    "preprint.pdf": {
+      "pages": 5,
+      "sha256": "54E10A43ACB939BC81B136C9A99118611078647CA026B9822154F465B2C7496B"
+    }
+  },
+  "scope": "The remote publication contains the exact affine E/M channel operator, mixed-order and partial-chain coefficient theorems, divisor-DAG certificate, complete plus-factor fibre and controlled upward return. The finite zeta-transfer census and PR 21 were not integrated as Erdős–Straus progress.",
+  "remote_verification": {
+    "command": "git ls-remote --heads origin main",
+    "observed": "7d288e06a44e637289b90908d32e50f7fac72792 refs/heads/main"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "es-integration-publication-receipt/1",
+  "published_at": "2026-09-23T22:35:13.6595381+02:00",
+  "repository": "https://github.com/KokunoYumeto/erdos-straus-foundation",
+  "branch": "main",
+  "source_commit": "13cdd6c8d1236b078bb503af698d132017ed99d7",
+  "navigation_commit": "7d288e06a44e637289b90908d32e50f7fac72792",
+  "remote_head_verified": "7d288e06a44e637289b90908d32e50f7fac72792",
+  "predecessor_commit": "a8cefe028e383d1967cc8876fbbdd9325db9bfb8",
+  "source_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/tree/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-third-defect-signed-pairing-20260923",
+  "proof_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-third-defect-signed-pairing-20260923/core.tex",
+  "bulletin_url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/7d288e06a44e637289b90908d32e50f7fac72792/DAILY_RESULTS_20260923.md",
+  "pdfs": {
+    "workbench.pdf": {
+      "pages": 11,
+      "bytes": 372902,
+      "sha256": "38802FC92721D581B0309A4BC5941BE6C8C62E927E4E93C05AFB88C5FF845F3F"
+    }
+  },
+  "verification": {
+    "command": "python -B run_all.py",
+    "active_assertions": 167,
+    "signed_pair_exact_rational_tests": 90,
+    "independent_checker_imports_active_implementation": false,
+    "status": "pass"
+  },
+  "scope": "The publication contains the exact weighted signed-pair fibres, multiplicative-character and parity forms, degree covariance, cross-shell determinant and cyclic fusion obstruction, odd-quotient complement decomposition, sharp uniqueness of quotient three, the same-shell third-defect return, every applicable residual, and the residual-27 factor classification. It does not claim universal source nonemptiness, universal cross-shell fusion, an Erdős–Straus proof or counterexample, historical priority, or a Lean formalization.",
+  "remote_verification": {
+    "command": "git ls-remote --heads origin main",
+    "observed": "7d288e06a44e637289b90908d32e50f7fac72792 refs/heads/main"
+  }
+}
