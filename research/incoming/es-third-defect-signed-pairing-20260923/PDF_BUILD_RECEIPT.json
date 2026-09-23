@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-23",
+  "engine": "pdflatex",
+  "build_status": "pass",
+  "outputs": [
+    {
+      "file": "workbench.pdf",
+      "pages": 11,
+      "bytes": 372902,
+      "sha256": "38802FC92721D581B0309A4BC5941BE6C8C62E927E4E93C05AFB88C5FF845F3F",
+      "status": "pass"
+    }
+  ],
+  "visual_check": {
+    "method": "Poppler page rendering with contact-sheet and full-page inspection",
+    "result": "accepted",
+    "notes": "All eleven pages were rendered. The signed-pairing formulas, cross-shell diagram, three-colour orbit diagram, proof pages, and references were inspected at readable scale. No clipping, overlap, missing glyph, or broken reference was found."
+  }
+}

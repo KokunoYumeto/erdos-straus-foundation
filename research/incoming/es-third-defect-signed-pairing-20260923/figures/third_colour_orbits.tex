@@ -1,0 +1,18 @@
+\begin{tikzpicture}[>=Latex,node distance=17mm,
+  colour/.style={circle,draw,minimum size=10mm,inner sep=1pt},
+  gate/.style={rounded corners,draw,align=center,inner sep=3pt}]
+\node[colour,fill=blue!10] (zero) {$0$};
+\node[colour,fill=green!12,right=31mm of zero] (omega) {$\omega$};
+\node[colour,fill=orange!15,right=31mm of omega] (minus) {$-\omega$};
+\draw[->,bend left=22] (omega) to node[above] {$u\mapsto a^2/u$} (minus);
+\draw[->,bend left=22] (minus) to node[below] {$u\mapsto a^2/u$} (omega);
+\draw[->,loop above] (zero) to node[above] {colour fixed} (zero);
+\node[gate,below=14mm of zero] (M) {M gate\\two divisor words};
+\node[gate,below=14mm of omega] (E) {E gate\\one divisor word};
+\node[gate,below=14mm of minus] (Ec) {complement\\of the E word};
+\draw[->] (zero) -- (M);
+\draw[->] (omega) -- (E);
+\draw[->] (minus) -- (Ec);
+\node[draw,dashed,fit=(zero)(omega)(minus),inner sep=5mm,
+ label=above:{${\mathbb Z}/3{\mathbb Z}=\{0,\omega,-\omega\}$}] {};
+\end{tikzpicture}

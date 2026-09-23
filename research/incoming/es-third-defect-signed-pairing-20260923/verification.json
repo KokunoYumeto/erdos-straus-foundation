@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "command": "python run_all.py",
+  "active_assertions": 167,
+  "signed_pair_exact_rational_tests": 90,
+  "third_defect_counts": [
+    {"p": 6841, "E": 1, "M": 0, "T3": 2},
+    {"p": 6121, "E": 0, "M": 2, "T3": 2},
+    {"p": 1009, "E": 0, "M": 0, "T3": 0},
+    {"p": 73, "E": 0, "M": 0, "T3": 0}
+  ],
+  "cross_shell_negative_control": {
+    "p": 73,
+    "R": 3,
+    "q": 5,
+    "a": 19,
+    "a_prime": 22,
+    "lambda": 1,
+    "mu": 730,
+    "nu": 731,
+    "rho": 731
+  },
+  "larger_quotient_progressions": [
+    {"N": 5, "R": 75, "m": 15, "s": 11, "U": 41, "p_progression_residue": 19441, "step": 24600},
+    {"N": 7, "R": 147, "m": 21, "s": 1, "U": 5, "p_progression_residue": 4873, "step": 5880},
+    {"N": 9, "R": 243, "m": 27, "s": 55, "U": 371, "p_progression_residue": 639361, "step": 721224},
+    {"N": 11, "R": 363, "m": 33, "s": 45, "U": 371, "p_progression_residue": 977593, "step": 1077384},
+    {"N": 15, "R": 675, "m": 45, "s": 1, "U": 11, "p_progression_residue": 54721, "step": 59400},
+    {"N": 21, "R": 1323, "m": 63, "s": 43, "U": 677, "p_progression_residue": 6820129, "step": 7165368}
+  ],
+  "independent_checker_imports_active_implementation": false,
+  "universal_ES_proved": false
+}

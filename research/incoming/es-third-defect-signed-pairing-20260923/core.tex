@@ -1,0 +1,761 @@
+\section{Original shells and marked words}
+
+Fix a prime
+\[
+ p\equiv1\pmod{24}
+\]
+and an integer $a$ with $p/4<a<p/2$.  Retain
+\[
+ R=4a-p,\qquad S=pa.
+\]
+Then $0<R<p$, $R\equiv3\pmod4$, and
+\[
+ \gcd(p,R)=\gcd(a,R)=\gcd(S,R)=1.                 \tag{1.1}
+\]
+The last equalities follow from $R=4a-p$, $a<p$, and the primality of $p$.
+Every divisor of $S$ therefore represents a unit modulo $R$.
+
+For $u\mid a^2$, put
+\[
+ g_u=\gcd(a,u),\qquad
+ (h_u,r_u,s_u)=
+ \left(\frac{g_u^2}{u},\frac{u}{g_u},\frac{a}{g_u}\right).       \tag{1.2}
+\]
+These are positive integers and retain the exact inverse data
+\[
+ a=h_ur_us_u,\qquad u=h_ur_u^2,\qquad \gcd(r_u,s_u)=1.            \tag{1.3}
+\]
+The original full word sets are
+\[
+ E_a=\{u\mid a^2:R\mid4u+1\},\qquad
+ M_a=\{u\mid a^2:R\mid p+4u\}.                                 \tag{1.4}
+\]
+Their marked ordered returns are
+\begin{align}
+ E_a:\quad&\kappa=\frac{pr+s}{R},&
+ (x,y,z)&=(a,hs\kappa,phr\kappa),                               \tag{1.5}\label{eq:Ereturn}\\
+ M_a:\quad&\lambda=\frac{r+s}{R},&
+ (x,y,z)&=(a,phs\lambda,phr\lambda).                            \tag{1.6}\label{eq:Mreturn}
+\end{align}
+The classical type-I/type-II parametrizations are the literature antecedent
+\citep[Section~2, Propositions~2.2 and~2.6]{ElsholtzTao}.  Equations
+\eqref{eq:Ereturn}--\eqref{eq:Mreturn} retain the marked coordinates used in
+this work; no existence statement is imported from the parametrization.
+
+\section{The complete original-source signed pairing}
+
+Let $G_R=(\mathbb Z/R\mathbb Z)^\times$.  In the real Hilbert space with
+orthonormal basis $\{e_t:t\in G_R\}$, define, for every real $\sigma$,
+\[
+ v_{p,a,\sigma}
+ =\sum_{d\mid S}\left(\frac d{\sqrt S}\right)^{-\sigma}e_{d\bmod R},
+ \qquad J_Re_t=e_{-t}.                                          \tag{2.1}
+\]
+Different divisors with the same residue remain as separate summands before
+their coefficients are added at the same basis vector.  The vector exists at
+every shell, whether or not either gate in (1.4) is occupied.  Set
+\[
+ \mathcal T_{p,a}(\sigma)
+ =\langle v_{p,a,\sigma},J_Rv_{p,a,\sigma}\rangle
+ =\sum_{\substack{d,e\mid pa\\R\mid d+e}}
+   \left(\frac{de}{pa}\right)^{-\sigma}.                         \tag{2.2}\label{eq:signedpair}
+\]
+The unweighted pair statistic and its character form occur in the earlier
+Boolean-product collaboration \citep[BP15--BP16]{Boolean}; the next theorem
+computes all weighted fibres over the original marked words.
+
+\begin{theorem}[Exact positive-weight fibres]\label{thm:weighted-fibres}
+For
+\[
+ W_\sigma(h)=\sum_{k\mid h}\left(\frac h{k^2}\right)^\sigma,
+\]
+one has, for every real $\sigma$,
+\[
+ \boxed{
+ \mathcal T_{p,a}(\sigma)
+ =2\sum_{u\in E_a}W_\sigma(h_u)
+ +(p^\sigma+p^{-\sigma})\sum_{u\in M_a}W_\sigma(h_u).}          \tag{2.3}\label{eq:fibreformula}
+\]
+Consequently
+\[
+ \boxed{\mathcal T_{p,a}(\sigma)>0
+ \Longleftrightarrow E_a\cup M_a\ne\varnothing.}               \tag{2.4}
+\]
+At $\sigma=0$ this becomes
+\[
+ \mathcal T_{p,a}(0)
+ =2\sum_{u\in E_a}\tau_{\rm div}(h_u)
+ +2\sum_{u\in M_a}\tau_{\rm div}(h_u).                         \tag{2.5}
+\]
+\end{theorem}
+
+\begin{proof}
+Because $p\nmid a$, every divisor of $pa$ is uniquely $p^\epsilon b$ with
+$\epsilon\in\{0,1\}$ and $b\mid a$.  For an ordered pair $b,c\mid a$, retain
+\[
+ k=\gcd(b,c),\qquad b=kr,\qquad c=ks,\qquad\gcd(r,s)=1.
+\]
+The least common multiple $krs$ divides $a$.  Writing $h=a/(rs)$, the exact
+remaining condition is $k\mid h$.  Conversely every $k\mid h$ returns the
+actual divisors $kr,ks\mid hrs=a$.  The associated original marked divisor is
+\[
+ u=hr^2,\qquad a=hrs.                                            \tag{2.6}
+\]
+
+The patterns with neither or both entries divisible by $p$ are
+\[
+ (kr,ks),\qquad(pkr,pks),\qquad k\mid h.
+\]
+Because $k$ is a unit modulo $R$, their opposition congruence is $R\mid r+s$.
+Using $p=4hrs-R$ and the fact that $4hr$ is a unit modulo $R$, this is equivalent
+to $R\mid p+4hr^2$, the middle gate.  The two retained weights are
+\[
+ p^\sigma\left(\frac h{k^2}\right)^\sigma,\qquad
+ p^{-\sigma}\left(\frac h{k^2}\right)^\sigma.                  \tag{2.7}
+\]
+
+The mixed patterns are
+\[
+ (pkr,ks),\qquad(ks,pkr),\qquad k\mid h.
+\]
+Here $r$ is always the coprime part carried by the $p$-bearing divisor; the
+second displayed pair retains the opposite position bit.  Conversely, for any
+mixed ordered pair, remove the one factor $p$, orient $r$ from that entry and
+$s$ from the other entry, and then recover $k,h,u$.  This gives both position
+bits without omitting or duplicating an ordered pair.
+Their opposition congruence is $R\mid pr+s$.  Since
+\[
+ pr+s=s(4hr^2+1)-Rr
+\]
+and $s$ is a unit modulo $R$, this is equivalent to the exterior gate
+$R\mid4u+1$.  Each retained weight is
+\[
+ \left(\frac h{k^2}\right)^\sigma.                              \tag{2.8}
+\]
+The four $p$-patterns exhaust every ordered pair in (2.2), proving
+\eqref{eq:fibreformula}.  Every summand is strictly positive for real $\sigma$,
+which proves (2.4) and (2.5).
+\end{proof}
+
+\begin{proposition}[Character sign, parity energies, and degree action]
+For a character $\chi\in\widehat G_R$, retain
+\[
+ Z_{S,\chi}(\sigma)=
+ \sum_{d\mid S}\chi(d)\left(\frac d{\sqrt S}\right)^{-\sigma}.
+\]
+Then
+\[
+ \boxed{\mathcal T_{p,a}(\sigma)=
+ \frac1{\varphi(R)}\sum_{\chi\in\widehat G_R}
+ \chi(-1)|Z_{S,\chi}(\sigma)|^2.}                               \tag{2.9}\label{eq:char}
+\]
+With $P_\pm=(I\pm J_R)/2$,
+\[
+ \boxed{\mathcal T_{p,a}(\sigma)=
+ \|P_+v_{p,a,\sigma}\|^2-\|P_-v_{p,a,\sigma}\|^2.}            \tag{2.10}\label{eq:parity}
+\]
+
+The map $e_t\mapsto e_{t/R}$ embeds this shell space into the finitely supported
+part of $\ell^2(\mathbb Q/\mathbb Z)$.  Its support consists of points of exact
+additive order $R$, so supports belonging to distinct residuals are disjoint.
+For
+\[
+ V_{p,\sigma}=\sum_{p/4<a<p/2}v_{p,a,\sigma}
+\]
+one therefore has
+\[
+ \langle V_{p,\sigma},JV_{p,\sigma}\rangle
+ =\sum_{p/4<a<p/2}\mathcal T_{p,a}(\sigma).                       \tag{2.11}
+\]
+On finitely supported functions define $(A_qf)(x)=f(qx)$.  Then
+\[
+ \boxed{A_q^*JA_q=qJ.}                                           \tag{2.12}\label{eq:degree}
+\]
+In particular the degree action preserves signed isotropy.
+\end{proposition}
+
+\begin{proof}
+Expand $|Z_{S,\chi}|^2$ with the real positive divisor weights.  Character
+orthogonality applied to $-de^{-1}\in G_R$ retains exactly $d+e\equiv0\pmod R$,
+which proves \eqref{eq:char}.  The self-adjoint involution $J_R$ has spectral
+projections $P_\pm$, giving \eqref{eq:parity}.  Since $R$ is odd, both
+$e_t+e_{-t}$ and $e_t-e_{-t}$ occur, so the signed form is indefinite; it cannot
+be replaced on the full space by the pullback of a positive semidefinite form.
+
+For $t\in G_R$, the class $t/R$ has exact order $R$.  This proves the disjoint
+support assertion and (2.11).  Finally, each $y\in\mathbb Q/\mathbb Z$ has
+exactly $q$ preimages under multiplication by $q$.  Hence
+$\langle A_qf,A_qg\rangle=q\langle f,g\rangle$, while $A_qJ=JA_q$.
+Equation \eqref{eq:degree} follows.
+\end{proof}
+
+The operator in (2.12) is the unscaled global pullback; explicitly,
+\[
+ (A_q^*g)(y)=\sum_{qx=y}g(x),\qquad A_q^*A_q=qI.                 \tag{2.13}
+\]
+The scaled operator $V_q=q^{-1/2}A_q$ instead satisfies $V_q^*JV_q=J$.  The global
+operator need not preserve one exact-order stratum: its compression to the
+order-$R$ stratum is the permutation $t\mapsto qt$ when $\gcd(q,R)=1$, and is
+zero when $\gcd(q,R)>1$; all uncompressed support remains in its actual
+exact-order strata.
+
+Equations \eqref{eq:char}--\eqref{eq:degree} locate the sign that any analytic
+comparison must retain.  A lower bound for the unsigned energy does not imply a
+strict lower bound for \eqref{eq:parity}.
+
+\section{Cross-shell boundary and its obstruction space}
+
+Choose an integer $m\ge1$, put $q=4m+1$, and assume $qR<p$.  Retain two original
+shells
+\[
+ a=\frac{p+R}{4},\qquad a'=\frac{p+qR}{4}=a+mR.                  \tag{3.1}
+\]
+Take actual positive divisors
+\[
+ d\mid pa,\qquad e\mid pa',\qquad R\mid d+e,                   \tag{3.2}
+\]
+and their actual complements
+\[
+ \alpha=\frac{pa}{d},\qquad \beta=\frac{pa'}e.                  \tag{3.3}
+\]
+By (1.1), $d$ is a unit modulo $R$.  Since
+$e\beta-d\alpha=pa'-pa=pmR$ and $e\equiv-d\pmod R$, cancellation
+of $d$ gives $R\mid\alpha+\beta$.  Thus the following are positive integers:
+\[
+ \lambda=\frac{d+e}{R},\qquad \mu=\frac{\alpha+\beta}{R}.       \tag{3.4}
+\]
+
+\begin{theorem}[Exact cross-shell boundary]\label{thm:cross-shell}
+The retained data satisfy both determinant identities
+\[
+ \boxed{\lambda\beta-d\mu=pm,\qquad e\mu-\lambda\alpha=pm}     \tag{3.5}
+\]
+and the four-term reciprocal identity
+\[
+ \boxed{
+ \frac4p=\frac1a+\frac1{\lambda\alpha}+\frac1{\mu d}
+ +\frac{m}{a\lambda\mu}.}                                      \tag{3.6}\label{eq:fourterm}
+\]
+Let
+\[
+ L=\lambda\mu,\quad g=\gcd(L,m),\quad
+ \ell=\frac Lg,\quad \nu=\frac{L+m}{g}.                        \tag{3.7}
+\]
+Then $\gcd(\ell,\nu)=1$, and the first and fourth terms in
+\eqref{eq:fourterm} form one unit fraction exactly when
+\[
+ \boxed{\nu\mid a.}                                             \tag{3.8}\label{eq:fusion}
+\]
+On this exact domain,
+\[
+ \boxed{
+ X=\frac{a\lambda\mu}{\lambda\mu+m}
+   =\frac a\nu\frac{\lambda\mu}{g},\quad
+ Y=\lambda\alpha,\quad Z=\mu d}                                \tag{3.9}
+\]
+are positive integers and $4/p=1/X+1/Y+1/Z$.
+\end{theorem}
+
+\begin{proof}
+The first identity in (3.5) is
+\[
+ \lambda\beta-d\mu
+ =\frac{(d+e)\beta-d(\alpha+\beta)}R
+ =\frac{e\beta-d\alpha}{R}=pm.
+\]
+The second is obtained by retaining the other column.  Since $d\alpha=pa$,
+\[
+ \frac1{\lambda\alpha}+\frac1{\mu d}
+ +\frac{m}{a\lambda\mu}
+ =\frac{\mu d+\lambda\alpha+pm}{pa\lambda\mu}
+ =\frac{\lambda(\alpha+\beta)}{pa\lambda\mu}
+ =\frac R{pa}.
+\]
+Adding $1/a$ and retaining $p+R=4a$ proves \eqref{eq:fourterm}.
+
+The retained fusion is
+\[
+ \frac1a+\frac{m}{aL}=\frac{L+m}{aL}=\frac{\nu}{a\ell}.
+\]
+Because $\gcd(\nu,\ell)=1$, its reciprocal $a\ell/\nu$ is integral exactly
+when $\nu\mid a$.  Equations (3.9) then retain all three denominators.
+\end{proof}
+
+\begin{definition}[Boundary obstruction]\label{def:boundary-obstruction}
+For fixed $m,\lambda,\mu$, let
+\[
+ \mathcal O_\nu=(\nu^{-1}\mathbb Z)/\mathbb Z,\qquad
+ \Theta_{\ell,\nu}:\mathbb Z\longrightarrow\mathcal O_\nu,\quad
+ n\longmapsto\frac{n\ell}{\nu}+\mathbb Z.                       \tag{3.10}
+\]
+The exact sequence
+\[
+ 0\longrightarrow\nu\mathbb Z\longrightarrow\mathbb Z
+ \xrightarrow{\Theta_{\ell,\nu}}\mathcal O_\nu\longrightarrow0 \tag{3.11}
+\]
+defines the cyclic obstruction class
+\[
+ \Omega(a;m,\lambda,\mu)
+ =\Theta_{\ell,\nu}(a)
+ =\frac{a\lambda\mu}{\lambda\mu+m}+\mathbb Z.                  \tag{3.12}
+\]
+It vanishes exactly on the fusion domain \eqref{eq:fusion}.
+\end{definition}
+
+Put $h=\gcd(a,\nu)$, $A=a/h$, and $\rho=\nu/h$.  The complete retained defect is
+\[
+ \frac1a+\frac{m}{aL}=\frac{\rho}{A\ell},\qquad
+ \gcd(\rho,A\ell)=1,
+ \qquad \ord\Omega=\rho.                                       \tag{3.13}
+\]
+Thus a failed fusion is not discarded: its exact reduced numerator is the
+order of a point in $\mathcal O_\nu$.  The order-$\rho$ stratum is
+\[
+ \mathcal S_\rho=
+ \left\{\frac{\nu}{\rho}w\pmod\nu:
+ w\in(\mathbb Z/\rho\mathbb Z)^\times\right\},                  \tag{3.14}
+\]
+with $\varphi(\rho)$ residue classes.  In the original shell variables,
+\[
+ \nu\mid a\Longleftrightarrow4\nu\mid p+R,\qquad
+ \rho=\frac{4\nu}{\gcd(p+R,4\nu)}.                             \tag{3.15}
+\]
+The surviving identity outside the fusion locus remains
+\[
+ \frac4p=\frac1{\lambda\alpha}+\frac1{\mu d}
+ +\frac{\rho}{A\ell}.                                           \tag{3.16}
+\]
+
+\begin{figure}[ht]
+\centering
+\input{figures/cross_shell_boundary.tex}
+\caption{Every displayed arrow retains its domain and codomain.  The cross-shell
+pair produces the determinant $pm$ and the fourth reciprocal term.  Fusion is
+an exact map only on the kernel of $\Theta_{\ell,\nu}$; outside it, the order
+$\rho$ records the surviving boundary numerator.}
+\label{fig:cross-shell}
+\end{figure}
+
+\section{General odd-quotient complement law}
+
+The same-shell theorem is best understood before setting the quotient equal to
+three.  Continue with one original shell $(p,a,R)$.  Suppose a positive divisor
+$m\mid R$ satisfies
+\[
+ \gcd(R,p-1)=m,\qquad R\mid m^2,\qquad N=R/m>1.               \tag{4.1}\label{eq:Ndomain}
+\]
+All of $R,m,N$ are odd.  Define the complete trace source
+\[
+ \mathcal T_N=\{u\mid a^2:m\mid p+4u\},                         \tag{4.2}
+\]
+the complement $\iota(u)=a^2/u$, and
+\[
+ b_u=\frac{p+4u}{m}\pmod N,\qquad
+ \omega=\frac{p-1}{m}\pmod N.                                 \tag{4.3}
+\]
+
+\begin{theorem}[Exact $N$-colour complement decomposition]
+\label{thm:N-colour}
+Under \eqref{eq:Ndomain}, $\omega$ is a unit in $\mathbb Z/N\mathbb Z$,
+$\iota$ is a fixed-point-free involution of $\mathcal T_N$, and
+\[
+ \boxed{b_{\iota(u)}=-b_u\pmod N.}                              \tag{4.4}\label{eq:complement-colour}
+\]
+The full gates are
+\[
+ u\in M_a\Longleftrightarrow b_u=0,\qquad
+ u\in E_a\Longleftrightarrow b_u=\omega.                        \tag{4.5}
+\]
+Let
+\[
+ U_N=\{u\in\mathcal T_N:b_u\notin\{0,\omega,-\omega\}\}.
+\]
+Then $U_N$ is complement-stable, and there is an exact labelled orbit
+decomposition
+\[
+ \boxed{
+ \mathcal T_N/\iota\ \simeq\
+ E_a\ \amalg\ (M_a/\iota)\ \amalg\ (U_N/\iota).}              \tag{4.6}\label{eq:orbit-decomp}
+\]
+Consequently
+\[
+ \boxed{|\mathcal T_N|=2|E_a|+|M_a|+|U_N|.}                     \tag{4.7}\label{eq:defect-count}
+\]
+The inverse in \eqref{eq:orbit-decomp} attaches the actual pair
+$\{u,a^2/u\}$; an input-member bit restores the labelled source word.
+\end{theorem}
+
+\begin{proof}
+The exact gcd in \eqref{eq:Ndomain} gives
+\[
+ \gcd\left(N,\frac{p-1}{m}\right)=1,
+\]
+so $\omega$ is a unit.  For $u\in\mathcal T_N$,
+\[
+ 4(a+u)=p+R+4u
+\]
+is divisible by $m$.  Since $m$ is odd, $m\mid a+u$; since $R\mid m^2$,
+$R\mid(a+u)^2$.  The divisor $u$ is a unit modulo $R$, and
+\[
+ u+\frac{a^2}{u}+2a=\frac{(a+u)^2}{u}\equiv0\pmod R.           \tag{4.8}
+\]
+Therefore
+\[
+ (p+4u)+\left(p+4\frac{a^2}{u}\right)\equiv0\pmod R,
+\]
+which proves that $\iota(u)\in\mathcal T_N$ and gives
+\eqref{eq:complement-colour} after division by $m$.
+
+A fixed point would have $u=a$.  Membership in $\mathcal T_N$ would then give
+$m\mid p+4a=2p+R$, hence $m\mid2p$.  But $m>1$ is odd and is coprime to $p$,
+a contradiction.  Finally,
+\[
+ p+4u-(p-1)=4u+1
+\]
+proves (4.5).  Every orbit with colour zero consists of two middle words; every
+orbit with colours $\{\omega,-\omega\}$ contains exactly one exterior word;
+the remaining orbits are exactly $U_N/\iota$.  This proves (4.6)--(4.7).
+\end{proof}
+
+\begin{corollary}[Uniqueness of three colours]\label{cor:unique-three}
+Complementation alone guarantees that every possible colour orbit meets a full
+E or M gate if and only if $N=3$.  More exactly,
+\[
+ \{0,\omega,-\omega\}=\mathbb Z/N\mathbb Z
+ \Longleftrightarrow N=3.                                      \tag{4.9}
+\]
+For a particular source at $N>3$, return still holds exactly when its realized
+colour support is contained in $\{0,\omega,-\omega\}$; the nonempty set $U_N$
+is the exact obstruction otherwise.
+\end{corollary}
+
+\begin{proof}
+The three displayed residues are distinct because $N>1$ is odd and $\omega$ is
+a unit.  Equality with the entire residue group therefore forces $N=3$.
+Conversely a group of order three consists exactly of those residues.
+\end{proof}
+
+\begin{proposition}[Sharpness for every larger odd quotient]
+\label{prop:larger-quotient-sharp}
+For every odd $N>3$, there are infinitely many primes $p\equiv1\pmod{24}$
+and original shells satisfying \eqref{eq:Ndomain} whose source
+$\mathcal T_N$ contains a wholly uncovered complement orbit.
+\end{proposition}
+
+\begin{proof}
+Set
+\[
+ m=3N,\qquad R=3N^2=mN.                                        \tag{4.14}
+\]
+Then $R\equiv3\pmod4$ and $R\mid m^2$.  By the Chinese remainder theorem,
+choose $s>0$ with
+\[
+ s\equiv1\pmod N,\qquad ms\equiv5\pmod8,                      \tag{4.15}
+\]
+and retain
+\[
+ U=\frac{ms-1}{4}.                                               \tag{4.16}
+\]
+Thus $U$ is odd and $\gcd(U,mN)=1$.  Choose an even $k_0$ with
+\[
+ 4Uk_0\equiv2\pmod N,                                          \tag{4.17}
+\]
+which is possible because $4U$ is a unit modulo odd $N$ and adding $N$ changes
+parity.  For $k=k_0+2Nj$, define
+\[
+ a=U(mk-1),\qquad p=4a-R.                                      \tag{4.18}
+\]
+As $j$ varies, $p$ lies in the progression
+\[
+ p=p_0+8UmN\,j.                                                  \tag{4.19}
+\]
+The retained identities give $p\equiv1\pmod8$ and $p\equiv1\pmod3$, hence
+$p\equiv1\pmod{24}$.  Moreover $p\equiv1\pmod m$,
+$p\equiv-R\pmod U$, and $\gcd(U,R)=1$, so
+\[
+ \gcd(p_0,8UmN)=1.
+\]
+Dirichlet's theorem on primes in reduced progressions
+\citep[Theorem~18.1]{Sutherland} supplies infinitely many prime values; choose
+one with $p>R$.
+
+Using $4U=ms-1$, one has
+\[
+ p-1=m(4Uk-s-N),\qquad \frac{p-1}{m}\equiv1\pmod N.             \tag{4.20}
+\]
+Therefore $\gcd(R,p-1)=m$ and $\omega=1$.  The actual divisor $U\mid a^2$
+satisfies
+\[
+ p+4U=m(4Uk-N),\qquad b_U=2\pmod N.                              \tag{4.21}
+\]
+Its complement has colour $-2$.  For odd $N>3$, neither colour is $0$ or
+$\omega=1$, so this entire complement orbit lies in $U_N$.
+\end{proof}
+
+\begin{remark}[The quotient-one edge]
+If $N=1$, then $m=R$ and $\mathcal T_1=M_a=E_a$: the two gates coincide because
+$R\mid p-1$.  In the original shell domain $R\equiv3\pmod4$, hence $R>1$, and
+the divisor complement is free.  This doubly gated edge is separate from the
+nontrivial odd-quotient uniqueness in Corollary~\ref{cor:unique-three}.
+\end{remark}
+
+\subsection{Exact morphism to the affine channel coordinate}
+
+Let
+\[
+ K=\prod_{\ell^e\parallel R}\ell^{\lceil e/2\rceil},\qquad
+ D=R/K.                                                         \tag{4.10}
+\]
+The hypotheses $R=mN$ and $R\mid m^2$ first give $N\mid m$.  They also imply,
+prime by prime,
+\[
+ K\mid m,\qquad N\mid K.                                      \tag{4.11}
+\]
+Write $t=m/K$; then $D=Nt$.  The source $\mathcal T_N$ lies in the common E/M
+trace locus of the affine-channel theorem because $K\mid m$ divides both
+$p-1$ and $p+4u$.  Its middle fine coordinate is
+\[
+ c_M\equiv p^{-1}\frac{p+4u}{K}\pmod D.
+\]
+Since $D\mid m$ and $m\mid p-1$, one has $p^{-1}\equiv1\pmod D$.  Thus
+\[
+ c_M=t\,b_u\pmod{Nt}.                                          \tag{4.12}
+\]
+The exact subgroup quotient
+\[
+ t\mathbb Z/(Nt)\mathbb Z\longrightarrow\mathbb Z/N\mathbb Z,
+ \qquad tb\longmapsto b                                       \tag{4.13}
+\]
+sends the prior affine E target
+$(p-1)/K=t\omega$ to $\omega$, the M target to zero, and the divisor complement
+to $b\mapsto-b$.  This is the exact morphism between the fine-defect channel
+operator and the colour-orbit theorem; neither presentation replaces the other.
+
+\begin{figure}[ht]
+\centering
+\input{figures/third_colour_orbits.tex}
+\caption{The exact quotient-three mechanism.  At residue level, complementation
+fixes colour zero and exchanges $\omega$ with $-\omega$; on divisor words it is
+fixed-point-free.  The zero orbit contains two M words, while the nonzero orbit
+contains exactly one E word.  Larger odd quotients have additional uncovered
+orbits.}
+\label{fig:three-colour}
+\end{figure}
+
+\section{Same-shell third-defect return}
+
+Assume now
+\[
+ \boxed{\gcd(R,p-1)=R/3},\qquad m=R/3.                           \tag{5.1}
+\]
+Because $p\equiv1\pmod3$, valuation comparison forces $9\mid R$; hence
+$3\mid m$ and $R=3m\mid m^2$.  Thus Theorem~\ref{thm:N-colour} applies with
+$N=3$ to the complete source
+\[
+ \mathcal T_3=\{u\mid a^2:m\mid p+4u\}.                         \tag{5.2}
+\]
+
+\begin{theorem}[Whole-shell third-defect completion]\label{thm:third-defect}
+Every member of $\mathcal T_3$ gives a rational middle trace whose two tails
+have denominators dividing three.  It returns at unchanged $(p,R,a)$ to an
+original integer E or M word using either $u$ or $a^2/u$.  Explicitly, with
+\[
+ b_u=\frac{p+4u}{m}\pmod3,\qquad
+ \omega=\frac{p-1}{m}\pmod3,
+\]
+the return is
+\[
+ \begin{array}{c|c}
+ b_u&\text{marked integer output}\\ \hline
+ 0&M\text{ at }u\\
+ \omega&E\text{ at }u\\
+ -\omega&E\text{ at }a^2/u.
+ \end{array}                                                     \tag{5.3}
+\]
+Moreover
+\[
+ \boxed{2|E_a|+|M_a|=|\mathcal T_3|},                           \tag{5.4}
+\]
+and therefore
+\[
+ \boxed{E_a\cup M_a=\varnothing\Longleftrightarrow
+ \mathcal T_3=\varnothing.}                                    \tag{5.5}
+\]
+The number of increasing original denominator triples at this shell is exactly
+$|\mathcal T_3|/2$.
+\end{theorem}
+
+\begin{proof}
+Only the tail and increasing-order assertions remain beyond
+Theorem~\ref{thm:N-colour} and Corollary~\ref{cor:unique-three}.  Put
+$v=a^2/u$.  The rational middle tails are retained as
+\[
+ y=\frac{p(a+v)}R,\qquad z=\frac{p(a+u)}R.                       \tag{5.6}
+\]
+Both $u$ and $v$ belong to $\mathcal T_3$, so $m$ divides both $a+u$ and
+$a+v$; since $R=3m$, each tail has reduced denominator dividing three.  Their
+sum retains the exact integer formula
+\[
+ y+z=\frac{p(a+u)^2}{Ru}.                                       \tag{5.7}
+\]
+Indeed, $R\mid(a+u)^2$, $u\mid(a+u)^2$, and $\gcd(R,u)=1$.
+
+For an exterior word, (1.5) gives $a<y<z$: the inequalities are equivalent to
+$\kappa>r$ and $pr>s$, which follow from $p>R$ and $s<a<p$.  Exactly one tail
+is divisible by $p$: the factor $p$ is explicit in $z$, whereas
+$R\kappa=pr+s$ and $0<s<p$ show that $p\nmid\kappa$, hence $p\nmid y$.
+The ordered inverse recovers its unique exterior word.
+For a middle word, both tails in (1.6) exceed $a$ and are divisible by $p$;
+complementation swaps $r,s$ and hence swaps the two tails.  There is no fixed
+middle word in $\mathcal T_3$.  Therefore exterior words count once and middle
+complement pairs count once:
+\[
+ \#\{\text{increasing triples}\}=|E_a|+\frac{|M_a|}{2}
+ =\frac{|\mathcal T_3|}{2}.
+\]
+\end{proof}
+
+Under complementation, the primitive coordinates change exactly by
+\[
+ (h,r,s)\longmapsto(h,s,r).                                     \tag{5.8}
+\]
+The prime, residual, distinguished denominator, and original exponent box are
+unchanged; the E/M quotient is recomputed in its own channel.
+
+\section{All applicable residuals from the prescribed prime}
+
+Write the complete factorization
+\[
+ p-1=2^k3^\eta b,\qquad \gcd(b,6)=1,\qquad k\ge3,\quad\eta\ge1. \tag{6.1}
+\]
+
+\begin{theorem}[Applicable residual classification]\label{thm:residuals}
+The positive residuals $R<p$, $R\equiv3\pmod4$ satisfying
+$\gcd(R,p-1)=R/3$ are exactly
+\[
+ \boxed{R=3^{\eta+1}d,\qquad d\mid b,\qquad
+ d\equiv(-1)^\eta\pmod4.}                                     \tag{6.2}
+\]
+Every one satisfies
+\[
+ R\le\frac{3(p-1)}{2^k}<p.                                    \tag{6.3}
+\]
+The family is nonempty exactly when $\eta$ is even or $b$ has a prime divisor
+congruent to $3$ modulo $4$.
+\end{theorem}
+
+\begin{proof}
+At the prime three, the equality
+\[
+ \min(v_3(R),\eta)=v_3(R)-1
+\]
+forces $v_3(R)=\eta+1$.  At every other odd prime, its exponent in $R$ is at
+most its exponent in $p-1$.  This yields $R=3^{\eta+1}d$ with $d\mid b$.
+The retained shell congruence $R\equiv3\pmod4$ is exactly
+$d\equiv(-1)^\eta\pmod4$.  These conditions also prove the converse gcd
+identity.  Since $d\le b$, (6.3) follows.  If $\eta$ is even, $d=1$ works.  If
+$\eta$ is odd, a divisor $d\equiv3\pmod4$ exists exactly when one of the prime
+divisors of $b$ is $3$ modulo $4$.
+\end{proof}
+
+This theorem constructs every candidate residual from the prescribed prime.
+It does not assert that one of the associated sets $\mathcal T_3$ is nonempty.
+
+\section{Complete factor-level failure locus at residual 27}
+
+\begin{theorem}[Residual-27 classification]\label{thm:R27}
+Let $p$ be prime with
+\[
+ \boxed{p\equiv73\ \text{or}\ 145\pmod{216}},\qquad
+ a=\frac{p+27}{4}.                                               \tag{7.1}
+\]
+The complete original $R=27$ shell is empty if and only if one of the following
+disjoint factorization types occurs:
+\begin{enumerate}
+\item every prime factor of $a$ is $1$ modulo $3$;
+\item exactly two prime-factor occurrences of $a$ are $5$ modulo $9$, counting
+multiplicity, and every remaining prime factor is $1$ modulo $9$.
+\end{enumerate}
+Outside these two types, an original E or M word is constructed with at most
+three signed prime occurrences in $u/a$, followed by (5.3).
+\end{theorem}
+
+\begin{proof}
+The two classes in (7.1) are exactly the classes $p\equiv1\pmod{24}$ for which
+$\gcd(27,p-1)=9$.  They give $a\equiv7\pmod9$ and
+\[
+ \mathcal T_3=\{u\mid a^2:u\equiv2\pmod9\}.                    \tag{7.2}
+\]
+Write
+\[
+ a=\prod_q q^{e_q},\qquad
+ u=\prod_q q^{e_q+\beta_q},\qquad -e_q\le\beta_q\le e_q.      \tag{7.3}
+\]
+The exact target is
+\[
+ \prod_q q^{\beta_q}\equiv-1\pmod9.                            \tag{7.4}
+\]
+The unit group modulo nine is generated by two; the residues
+\[
+ 1,2,4,8,7,5
+\]
+have logarithms $0,1,2,3,4,5$ modulo six.  The logarithm of $a$ is four and
+the target in (7.4) is three.
+
+A residue-$8$ prime supplies the target with one occurrence.  Suppose none is
+present.  Let $H$ be the total multiplicity of primes in the residue classes
+$2,5$ modulo nine.  The logarithm of $a$ is even, so $H$ is even.  If $H\ge4$,
+select three such occurrences, assigning sign $+1$ to residue two and sign
+$-1$ to residue five; each contributes logarithm one.  If $H=2$ and a residue
+$4$ or $7$ occurrence exists, one signed odd logarithm contributes one and one
+signed even logarithm contributes two.
+
+If $H=0$, every available logarithm is even, so the target three is impossible;
+this is the first exceptional type.  In the remaining case $H=2$, with no
+residue $8,4,$ or $7$, the total logarithm four forces both odd occurrences to
+be residue five.  Their complete centred exponent range contributes only
+\[
+ \{-2,-1,0,1,2\}\pmod6,
+\]
+which misses three.  This is the second type.  Every successful selection obeys
+the literal bounds in (7.3), so it returns an actual divisor of $a^2$.
+\end{proof}
+
+The exceptional examples
+\[
+ (p,a)=(1009,259=7\cdot37),\qquad (p,a)=(73,25=5^2)              \tag{7.5}
+\]
+have, respectively, the first and second factorization type.  Their residual-27
+shells are empty; neither prime is an Erd\H{o}s--Straus counterexample.
+
+\section{What remains}
+
+The results above are structural rather than a finite prime census.  They give:
+\begin{enumerate}
+\item a complete source that exists at every shell and whose signed value is
+strictly positive exactly when that shell has an original integer word;
+\item an exact cross-shell map with a classified cyclic boundary obstruction;
+\item an exact same-shell quotient law in which three is the unique nontrivial
+odd quotient closed by the divisor complement alone;
+\item every residual on which that three-colour theorem applies, constructed
+from the prescribed prime; and
+\item the complete emptiness criterion for the first canonical residual $27$.
+\end{enumerate}
+They do not prove that an applicable $\mathcal T_3$ is nonempty for every hard
+prime, nor that a cross-shell pair with zero boundary obstruction must occur.
+An arbitrary counterexample would have to make every constructed three-colour
+source empty, defeat all other original shells, and avoid every cross-shell
+kernel in (3.11).  Proving that this simultaneous avoidance is impossible is
+the remaining existence problem.
+
+\section*{Reproducibility and attribution}
+
+The received four-page proof and constructor are preserved byte-for-byte under
+\texttt{received/}.  The active constructor corrects two output-field names but
+does not alter the mathematics.  A separately written checker reconstructs the
+complement law, count, residual family, residual-27 factor classification,
+signed pairing at fixed exact test values, and cross-shell identities without
+importing the active constructor.  The Boolean-pair antecedent is credited to
+the JT collaboration; the type-I/type-II antecedent is credited to Elsholtz and
+Tao.  No historical-priority claim is made for the new quotient and obstruction
+formulations.

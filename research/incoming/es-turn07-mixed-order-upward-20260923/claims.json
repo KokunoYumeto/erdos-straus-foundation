@@ -34,7 +34,7 @@
     {
       "id": "C4",
       "title": "Arithmetic last-capacity boundary",
-      "statement": "For arbitrary odd D and a strict chain, actual prime packets can have fine coefficient 1 outside H_m and 0 on H_m after one last digit is removed. The finite D=9 certificate records the exact stabilizer, exact-exponent progression, and a separate exterior witness for the same prime.",
+      "statement": "For arbitrary odd D and a strict chain, specified original subpackets at sufficiently large prime members can have fine coefficient 1 outside H_m and 0 on H_m after one last digit is removed. The finite D=9 certificate records the exact stabilizer, exact-exponent progression, and a separate exterior witness for the same prime.",
       "locator": "core.tex Section 4.1; certificates/arithmetic_boundary.json"
     },
     {

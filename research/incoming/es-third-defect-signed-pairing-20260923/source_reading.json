@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-23",
+  "reading_scope": "Exact antecedents used by this module; not an exhaustive literature review",
+  "sources": [
+    {
+      "authors": ["Christian Elsholtz", "Terence Tao"],
+      "year": 2013,
+      "title": "Counting the number of solutions to the Erdos-Straus equation on unit fractions",
+      "version": "arXiv:1107.1010v6",
+      "canonical_source_id": "PUBUNIT-1D778B56AC2B71BF35EB40F9",
+      "local_author_tex": "research/incoming/es-turn07-global-receiver-determinant-20260921/literature/Elsholtz_Tao_2013_arxiv_1107.1010v6/egyptian-count18.tex",
+      "sha256": "B0469A67A737B7F4E77778310C87E22F5783AE9704F70AA55919A4A40104611C",
+      "locator": "author TeX lines 487-627; Section 2, Propositions 2.2 and 2.6",
+      "used": "Type-I/type-II arithmetic antecedent and marked denominator formulas",
+      "url": "https://arxiv.org/abs/1107.1010"
+    },
+    {
+      "authors": ["JT", "The Clankers"],
+      "year": 2026,
+      "title": "Boolean product formulation and exact cyclotomic reconstruction",
+      "local_source": "research/continuation-2026-09-12/reconstructed/boolean_cyclotomic.tex",
+      "locator": "BP15-BP16 and the full divisor-pair fibre immediately following them",
+      "used": "Unweighted signed pair and multiplicative-character antecedent; weighted fibre derived here",
+      "public_source": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/a8cefe028e383d1967cc8876fbbdd9325db9bfb8/research/continuation-2026-09-12/reconstructed/boolean_cyclotomic.tex"
+    },
+    {
+      "author": "Andrew V. Sutherland",
+      "year": 2017,
+      "title": "Dirichlet L-functions, primes in arithmetic progressions",
+      "locator": "Theorem 18.1, page 1",
+      "read_method": "Primary course notes",
+      "used": "Infinitely many prime members of the reduced progression in Proposition 4.3",
+      "url": "https://math.mit.edu/classes/18.785/2017fa/LectureNotes18.pdf"
+    },
+    {
+      "author": "The Clankers",
+      "year": 2026,
+      "title": "Affine channels, mixed-order coefficient sections, and a controlled upward shell return",
+      "local_source": "research/incoming/es-turn07-mixed-order-upward-20260923/core.tex",
+      "locator": "Theorem 2.1, equations (2.1)-(2.4)",
+      "used": "Fine-coordinate target and exact subgroup quotient comparison",
+      "public_source": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex"
+    }
+  ],
+  "received_source": {
+    "pdf": "received/proof.pdf",
+    "code": "received/arithmetic.py",
+    "coverage": "Complete PDF and code read; source TeX was not received.",
+    "role": "Same-shell third-defect theorem, residual family, and residual-27 classification"
+  },
+  "historical_priority_claim": false
+}

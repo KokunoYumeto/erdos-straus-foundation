@@ -1,0 +1,26 @@
+\begin{tikzpicture}[>=Latex,node distance=17mm,
+  box/.style={draw,rounded corners,align=center,inner sep=4pt},
+  map/.style={->,thick}]
+\node[box] (left) {shell $a$\\$d\mid pa$, $\alpha=pa/d$};
+\node[box,right=28mm of left] (right) {shell $a'=a+mR$\\$e\mid pa'$, $\beta=pa'/e$};
+\node[box,below=18mm of $(left)!0.5!(right)$] (bridge)
+ {$\lambda=(d+e)/R$, $\mu=(\alpha+\beta)/R$\\
+ $\lambda\beta-d\mu=pm$};
+\node[box,below left=19mm and 11mm of bridge] (four)
+ {$\dfrac4p=\dfrac1a+\dfrac1{\lambda\alpha}
+ +\dfrac1{\mu d}+\dfrac{m}{a\lambda\mu}$};
+\node[box,below right=19mm and 11mm of bridge] (obs)
+ {$\Omega=\dfrac{a\lambda\mu}{\lambda\mu+m}+\mathbb Z$\\
+ $\ord(\Omega)=\rho$};
+\node[box,below=19mm of $(four)!0.5!(obs)$] (return)
+ {$\Omega=0\iff\nu\mid a$\\
+ $(X,Y,Z)=\left(\dfrac{a\lambda\mu}{\lambda\mu+m},
+ \lambda\alpha,\mu d\right)$};
+\draw[map] (left) -- node[above] {$R\mid d+e$} (right);
+\draw[map] (left) -- (bridge);
+\draw[map] (right) -- (bridge);
+\draw[map] (bridge) -- (four);
+\draw[map] (bridge) -- (obs);
+\draw[map] (four) -- (return);
+\draw[map] (obs) -- (return);
+\end{tikzpicture}

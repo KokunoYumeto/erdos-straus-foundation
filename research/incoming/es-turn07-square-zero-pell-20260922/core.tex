@@ -82,8 +82,12 @@ For rational traces these parameters need not all be integers.
 Put $G_E=4u+1$, $G_M=p+4u$. The corresponding two tails have integral sum
 exactly when $R\mid G_c^2$. Their common reduced denominator is
 $d=R/\gcd(R,G_c)$; on a trace, $d^2\mid R$.
-Every positive rational tail pair at this integral $a$ with integral sum
-occurs in these coordinates, with the E swap retained.
+Every positive rational pair $(y,z)$ at this integral $a$ satisfying
+\[
+ \frac4p=\frac1a+\frac1y+\frac1z
+\]
+and having integral sum $y+z$ occurs in these coordinates, with the E swap
+retained.
 \end{lemma}
 \begin{proof}
 The sums are $(a+pu)^2/(Ru)$ and $p(a+u)^2/(Ru)$. Since $u\mid a^2$ and
@@ -431,6 +435,9 @@ its retained word is $q$, proving sufficiency.
 \section{A different arithmetic arrow: retain the factor sum}\label{sec:shift}
 The terminality theorem does not prohibit changing both the numerical word
 and the primitive ray. The following arrow does exactly that.
+Its completeness is relative to the displayed residual $\delta$, unchanged
+raw factor $r$, and opposite shifts of $h$ and $s$; it is not a classification
+of every possible source-changing map.
 
 \begin{theorem}[Complete factor-sum return and inverse]\label{thm:sumshift}
 Take any oriented original M trace

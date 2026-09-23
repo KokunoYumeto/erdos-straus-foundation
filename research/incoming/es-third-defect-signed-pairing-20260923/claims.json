@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-23",
+  "module": "es-third-defect-signed-pairing-20260923",
+  "claims": [
+    {
+      "id": "SZ-20260923-017",
+      "status": "proved",
+      "locator": "core.tex, Theorem 2.1",
+      "claim": "The complete weighted signed divisor pairing has the exact E/M fibre formula and is positive exactly on occupied shells."
+    },
+    {
+      "id": "SZ-20260923-018",
+      "status": "proved",
+      "locator": "core.tex, Proposition 2.2",
+      "claim": "The character sign, parity-energy difference, exact-order embedding, and unscaled degree covariance are exact."
+    },
+    {
+      "id": "SZ-20260923-019",
+      "status": "proved",
+      "locator": "core.tex, Theorem 3.1 and Definition 3.2",
+      "claim": "The cross-shell determinant and four-term identity have an exact cyclic boundary obstruction; fusion occurs exactly when nu divides a."
+    },
+    {
+      "id": "SZ-20260923-020",
+      "status": "proved",
+      "locator": "core.tex, Theorem 4.1",
+      "claim": "If m=gcd(R,p-1), R divides m^2, and N=R/m>1, the odd residual quotient has an exact complement-colour decomposition with an uncovered-orbit term."
+    },
+    {
+      "id": "SZ-20260923-021",
+      "status": "proved",
+      "locator": "core.tex, Corollary 4.2 and Proposition 4.3",
+      "claim": "Three is the unique nontrivial odd quotient with universal complement closure, and every larger odd quotient has infinitely many prime-shell uncovered-orbit examples."
+    },
+    {
+      "id": "SZ-20260923-022",
+      "status": "proved",
+      "locator": "core.tex, Theorem 5.1",
+      "claim": "Under gcd(R,p-1)=R/3, every third-denominator trace returns at the same shell, with exact word and increasing-triple counts."
+    },
+    {
+      "id": "SZ-20260923-023",
+      "status": "proved",
+      "locator": "core.tex, Theorem 6.1",
+      "claim": "The complete applicable residual family is classified from the prescribed prime."
+    },
+    {
+      "id": "SZ-20260923-024",
+      "status": "proved",
+      "locator": "core.tex, Theorem 7.1",
+      "claim": "The residual-27 empty locus has exactly two factorization types in the stated prime classes."
+    }
+  ],
+  "nonclaims": [
+    "No universal Erdős–Straus theorem or counterexample.",
+    "No theorem that an applicable third-colour source is nonempty for every hard prime.",
+    "No theorem that a cross-shell pair with vanishing boundary obstruction always exists.",
+    "No historical-priority determination.",
+    "No Lean formalization in this tranche."
+  ]
+}

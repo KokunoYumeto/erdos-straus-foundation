@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-23",
+  "inputs": [
+    {
+      "source_locator": "Downloads/arithmetic(2).py",
+      "preserved_as": "received/arithmetic.py",
+      "bytes": 9066,
+      "sha256": "AEA6635878F51459CBA3ADE262FB8FED91F2856311C9CACCB1B7A9EF38D8D037"
+    },
+    {
+      "source_locator": "Downloads/proof.pdf",
+      "preserved_as": "received/proof.pdf",
+      "bytes": 319479,
+      "sha256": "6047AF869152ECE872E9F49C6BCEB75AD742D0C1BB2B72734C6962CC267AC3D7"
+    },
+    {
+      "source_locator": "attachment 67469620-640a-4750-b91c-cc54884d758f/Pasted text.txt",
+      "published": false,
+      "bytes": 23092,
+      "sha256": "DABFA80366E9CE31B5A0DF98593A4772826B9B90F627C748268FC4A20F3B206B"
+    }
+  ],
+  "source_status": "Received files are source objects, not audit authority. The PDF and code were read and checked independently.",
+  "source_tex_received": false
+}
