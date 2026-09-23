@@ -280,6 +280,33 @@ proof locators without reconstructing a programme timeline.
     [short PDF](research/incoming/es-turn07-mixed-order-upward-20260923/preprint.pdf);
     [pinned affine and quotient proofs](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L101-L365);
     [pinned factor-exchange proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L611-L786).
+28. [Signed divisor pairings, cross-shell boundary classes, and the unique three-colour return](research/incoming/es-third-defect-signed-pairing-20260923/README.md)
+    computes the complete weighted opposition pairing at every original shell:
+    \(
+    \mathcal T_{p,a}(\sigma)=
+    2\sum_{u\in E_a}W_\sigma(h_u)+
+    (p^\sigma+p^{-\sigma})\sum_{u\in M_a}W_\sigma(h_u)
+    \), so for real \(\sigma\) strict positivity is equivalent to actual E/M
+    occupancy. Its character expansion retains \(\chi(-1)\), and the global
+    degree pullback obeys \(A_q^*JA_q=qJ\); neither unsigned energy nor degree
+    amplification creates positivity. An actual opposed divisor pair on shells
+    \(a\) and \(a+mR\) gives
+    \(\lambda\beta-d\mu=e\mu-\lambda\alpha=pm\) and the exact four-term
+    reciprocal identity. The fourth term fuses with \(1/a\) exactly when
+    \(\nu\mid a\); otherwise the failed fusion is retained as a cyclic class of
+    order \(\rho=\nu/\gcd(a,\nu)\). For
+    \(m=\gcd(R,p-1)\), \(N=R/m\), and \(R\mid m^2\), divisor complementation
+    reverses \(b_u=(p+4u)/m\bmod N\) and yields
+    \(|\mathcal T_N|=2|E_a|+|M_a|+|U_N|\). Quotient three is uniquely closed
+    by complementation; every larger odd quotient has an explicit reduced prime
+    progression with uncovered orbits. At \(N=3\), every nonempty source returns
+    at the same shell, \(2|E_a|+|M_a|=|\mathcal T_3|\), all applicable residuals
+    are \(R=3^{\eta+1}d\) with the proved divisor and parity conditions, and the
+    for \(p\equiv73\) or \(145\pmod {216}\), the residual-27 empty locus has
+    exactly two factorization types.
+    [Readable PDF](research/incoming/es-third-defect-signed-pairing-20260923/workbench.pdf);
+    [complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-third-defect-signed-pairing-20260923/core.tex#L45-L729);
+    [typed maps and fibres](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-third-defect-signed-pairing-20260923/MORPHISMS.md).
 
 The first four steps produce and transport factors; the fifth couples the
 original $E/M$ channels; the packaged sixth attacks their complete first-half
@@ -359,8 +386,15 @@ counterexamples to nonincreasing or fixed-tail termination rules. The
 twenty-seventh then proves what combining the E/M labels can and cannot do:
 the affine pairing retains the full coefficient vector through a signed
 inverse, while a partial chain succeeds only through a genuine quotient-support
-cover. This is the current structural target; finite census size is not treated
-as evidence for arbitrary-prime occupancy.
+cover. The twenty-eighth computes a different, complete signed opposition form,
+retains its character sign and indefinite parity decomposition, and proves the
+exact cross-shell boundary class rather than discarding a failed fusion. Its
+odd-quotient complement law isolates three as the unique universal colour
+closure and reduces the corresponding same-shell problem to nonemptiness of
+\(\mathcal T_3\). The current structural target is therefore to force one
+applicable three-colour source or a cross-shell pair in the kernel of its cyclic
+boundary map at every hard prime; finite census size is not treated as evidence
+for arbitrary-prime occupancy.
 After composing the earlier diagonal and radius-eight returns, every residual
 exterior state has shape radius at least nine. These results isolate, but do
 not prove, the remaining unbounded-shape occupancy statement. None asserts the
@@ -379,7 +413,10 @@ nine-ray boundary, obstruction families, exact receiver composite, complete
 mixed-return fibres, fixed-residual middle spectrum and hard-middle sharpness.
 The [23 September proof bulletin](DAILY_RESULTS_20260923.md) records the
 square-zero obstructions, affine channel operator, mixed-order section,
-quotient-support criterion and upward factor exchange.
+quotient-support criterion, upward factor exchange, exact signed-pair fibres,
+cross-shell cyclic obstruction, odd-quotient colour decomposition, unique
+three-colour closure, complete applicable-residual family and residual-27
+empty locus.
 
 **12 September continuation:** [Exact selectors, character energy, and integral
 return](research/continuation-2026-09-12/README.md) adds the new joint work with

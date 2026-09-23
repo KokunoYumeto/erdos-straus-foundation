@@ -207,6 +207,31 @@ for both original first-half channels:
   that raises (a) by one at (p=67369) and extends along a reduced prime
   progression. This crosses the earlier termination invariant without claiming
   a universal terminating algorithm.
+- [Signed divisor pairings, cross-shell boundary classes, and the unique three-colour return](research/incoming/es-third-defect-signed-pairing-20260923/README.md):
+  for every shell the complete weighted opposition form is
+  \[
+  \mathcal T_{p,a}(\sigma)=
+  2\sum_{u\in E_a}W_\sigma(h_u)+
+  (p^\sigma+p^{-\sigma})\sum_{u\in M_a}W_\sigma(h_u),
+  \]
+  hence for real \(\sigma\) it is positive exactly on occupied shells. The
+  character formula keeps \(\chi(-1)\), the parity form is the difference of
+  even and odd energies, and the unscaled global degree operator satisfies
+  \(A_q^*JA_q=qJ\). For an actual cross-shell opposed divisor pair, the exact
+  determinant is \(pm\) and
+  \[
+  \frac4p=\frac1a+\frac1{\lambda\alpha}
+  +\frac1{\mu d}+\frac{m}{a\lambda\mu}.
+  \]
+  Fusion of the first and fourth terms occurs exactly on \(\nu\mid a\); the
+  complementary locus is retained as a cyclic class of order
+  \(\rho=\nu/\gcd(a,\nu)\). On every odd quotient \(N=R/m\) in the stated
+  domain, complementation reverses the exact colour and yields
+  \(|\mathcal T_N|=2|E_a|+|M_a|+|U_N|\). Quotient three is uniquely closed;
+  every odd \(N>3\) has an explicit reduced prime progression with uncovered
+  orbits. The complete proof also gives the same-shell third-defect return,
+  every applicable residual, and, for
+  \(p\equiv73\) or \(145\pmod {216}\), the exact residual-27 empty locus.
 
 The first two atlases decide the complete original source at any fixed prime;
 the third removes specified occupied exterior branches by carrying them to
@@ -288,6 +313,16 @@ subgroup or a larger finite census cannot replace that condition. The upward
 plus-factor map shows that changing the retained invariant can cross the least
 nonincreasing-(a) obstruction, but it does not yet operate from every hard
 prime source.
+The signed-opposition continuation then computes the complete positive fibres
+of a different bilinear form without replacing it by an unsigned norm. Its
+cross-shell determinant produces a four-term identity and an exact cyclic
+boundary class, while its quotient-colour map is the proved image of the
+earlier affine fine coordinate under
+\(t\mathbb Z/(Nt)\mathbb Z\to\mathbb Z/N\mathbb Z\), \(tb\mapsto b\).
+The unique three-colour closure converts every member of a nonempty
+\(\mathcal T_3\) into an original E or M word at the same shell. It does not
+prove that this source is nonempty for every prime, and a nonzero boundary
+class obstructs only the stated fusion, not every cross-shell return.
 
 The [19 September bulletin](DAILY_RESULTS_20260919.md),
 [20 September bridge bulletin](DAILY_RESULTS_20260920.md), and
@@ -298,7 +333,10 @@ chronology.
 The [23 September structural bulletin](DAILY_RESULTS_20260923.md) records the
 square-zero source laws, two exact source-changing fibres, the affine channel
 operator, mixed-order and partial-chain sections, the quotient-support
-obstruction and the controlled upward return.
+obstruction, the controlled upward return, weighted signed-pair fibres,
+cross-shell cyclic obstruction, odd-quotient complement law, sharp
+three-colour uniqueness, applicable residuals and the residual-27
+factorization theorem.
 
 ## Failed steps that remain useful
 

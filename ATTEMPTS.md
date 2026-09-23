@@ -493,7 +493,7 @@ invariant (4a+s) was used to classify a new factor-exchange fibre. **What
 happened:** on the common locus,
 
 \[
-c_E=c_M-\omega,qquad \omega=(p-1)/K\pmod D,
+c_E=c_M-\omega,\qquad \omega=(p-1)/K\pmod D,
 \]
 
 and the paired vector is (J=(I+T_\omega)C). Since (D) is odd, this map is
@@ -525,6 +525,106 @@ programme still needs a theorem forcing the quotient-support cover or another
 typed source-changing map for every hard prime. A larger finite census does not
 supply that theorem. [Affine and quotient proofs](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L101-L430); [upward fibre and family](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L606-L786).
 
+## 22. Signed opposition, cross-shell fusion, and the third colour
+
+**Aim:** turn the complete original divisor source into an exact positivity
+criterion, then identify a source-level return that is stronger than a finite
+packet or a post-witness receiver calculation. **Reason for trying:** the
+earlier Boolean product exposes opposed divisor pairs, while the affine-channel
+work shows that combining E/M labels through an injective lattice operator
+cannot create missing positive mass. The sign, complete fibres, cross-shell
+boundary, and quotient information therefore have to be calculated on their
+actual domains. **What was tried:** for \(S=pa\), the weighted vector
+
+\[
+v_{p,a,\sigma}=\sum_{d\mid S}
+\left(\frac d{\sqrt S}\right)^{-\sigma}e_{d\bmod R}
+\]
+
+was paired with the opposition involution \(J_Re_t=e_{-t}\). Every ordered
+pair \((d,e)\) with \(R\mid d+e\) was inverted to its actual E or M word,
+common divisor \(k\mid h_u\), and position or common-\(p\) bit. The character
+and parity forms were retained rather than replacing the signed pairing by a
+norm. A second shell \(a'=a+mR\) was coupled through actual divisors
+\(d\mid pa\), \(e\mid pa'\) with \(R\mid d+e\), keeping their complements
+\(\alpha=pa/d\), \(\beta=pa'/e\). Finally, the full same-shell trace source
+was mapped to the odd quotient \(N=R/m\), where
+\(m=\gcd(R,p-1)\), by the colour
+\(b_u=(p+4u)/m\bmod N\), with divisor complement
+\(u\mapsto a^2/u\).
+
+**What happened:** the complete pairing has the exact positive-fibre formula
+
+\[
+\mathcal T_{p,a}(\sigma)=
+2\sum_{u\in E_a}\sum_{k\mid h_u}
+\left(\frac{h_u}{k^2}\right)^\sigma+
+(p^\sigma+p^{-\sigma})
+\sum_{u\in M_a}\sum_{k\mid h_u}
+\left(\frac{h_u}{k^2}\right)^\sigma.
+\]
+
+For real \(\sigma\), it is positive exactly when the shell is occupied. Its
+character expansion is
+
+\[
+\mathcal T_{p,a}(\sigma)=\frac1{\varphi(R)}
+\sum_{\chi}\chi(-1)|Z_{S,\chi}(\sigma)|^2,
+\]
+
+and its parity decomposition is
+\(\|P_+v\|^2-\|P_-v\|^2\); the degree map satisfies
+\(A_q^*JA_q=qJ\) and therefore preserves a signed zero. Across the two shells,
+with \(\lambda=(d+e)/R\) and \(\mu=(\alpha+\beta)/R\), one obtains
+
+\[
+\lambda\beta-d\mu=e\mu-\lambda\alpha=pm,
+\qquad
+\frac4p=\frac1a+\frac1{\lambda\alpha}+
+\frac1{\mu d}+\frac{m}{a\lambda\mu}.
+\]
+
+Writing \(L=\lambda\mu\), \(g=\gcd(L,m)\),
+\(\ell=L/g\), and \(\nu=(L+m)/g\), the first and fourth terms fuse into one
+unit fraction exactly when \(\nu\mid a\). The failed fusion is the point
+\(a\ell/\nu+\mathbb Z\) in \((\nu^{-1}\mathbb Z)/\mathbb Z\), whose order is
+\(\rho=\nu/\gcd(a,\nu)\).
+
+Under \(R\mid m^2\), complementation is a free involution of
+\(\mathcal T_N\), sends \(b_u\) to \(-b_u\), and gives
+
+\[
+|\mathcal T_N|=2|E_a|+|M_a|+|U_N|.
+\]
+
+The three residues \(0,\omega,-\omega\) fill the entire quotient exactly when
+\(N=3\). For each odd \(N>3\), a proved reduced prime progression realizes an
+actual uncovered orbit, so this uniqueness is sharp. At \(N=3\), every trace
+returns at the same shell and
+\(2|E_a|+|M_a|=|\mathcal T_3|\); the increasing-triple count is
+\(|\mathcal T_3|/2\). Writing
+\(p-1=2^k3^\eta b\), all applicable residuals are exactly
+\(R=3^{\eta+1}d\), where \(d\mid b\) and
+\(d\equiv(-1)^\eta\pmod4\). At \(R=27\), for
+\(p\equiv73\) or \(145\pmod {216}\), emptiness is equivalent to either all
+prime factors of \(a\) being \(1\bmod3\), or exactly two prime-factor
+occurrences being \(5\bmod9\) with every remaining factor \(1\bmod9\).
+
+**Successful scope:** exact weighted fibres and inverses, the signed character
+and parity laws, the global degree covariance, a typed cross-shell determinant
+and cyclic boundary, a general odd-quotient orbit decomposition, the unique
+and sharp three-colour closure, the complete applicable-residual family, and
+the residual-27 factor theorem. The received proof and constructor are retained
+unchanged, while the active constructor separates marked from increasing
+denominator order and input from output centred exponents. **Unfinished:** the
+work does not force an applicable \(\mathcal T_3\) to be nonempty for every
+hard prime. A nonzero cross-shell class obstructs only the stated fusion; it
+does not exclude another pair, channel, shell, or return. Neither the degree
+operator nor an unsigned energy bound supplies the missing strict signed
+positivity. [Complete proof](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-third-defect-signed-pairing-20260923/core.tex#L45-L729);
+[maps, inverse fibres, kernels and retained information](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-third-defect-signed-pairing-20260923/MORPHISMS.md);
+[independent proof audit](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/13cdd6c8d1236b078bb503af698d132017ed99d7/research/incoming/es-third-defect-signed-pairing-20260923/INTEGRATION_AUDIT.md).
+
 ## Keeping future attempts intelligible
 
 For each task or substantial route, retain a short account with these same fields:
@@ -535,5 +635,5 @@ than quietly dropping it. The account describes the work; it need not prescribe
 what another researcher should try next.
 
 The [machine records](polyclank/attempts.json) expose the earlier five fields
-separately. This page covers the twenty-one routes above; it does not claim to have recovered
+separately. This page covers the twenty-two routes above; it does not claim to have recovered
 every attempt in every historical task or neighbouring workbench.

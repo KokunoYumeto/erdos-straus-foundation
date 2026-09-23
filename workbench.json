@@ -431,10 +431,29 @@
       "pinned_affine_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L101-L430",
       "pinned_upward_proof": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/6125e74b1aadb860965964e2ae3587c902dbbab8/research/incoming/es-turn07-mixed-order-upward-20260923/core.tex#L606-L786",
       "changes_zenodo_edition": false
+    },
+    {
+      "id": "es:continuation:2026-09-23:third-defect-signed-pairing",
+      "overview": "research/incoming/es-third-defect-signed-pairing-20260923/README.md",
+      "proof": "research/incoming/es-third-defect-signed-pairing-20260923/core.tex",
+      "reader": "research/incoming/es-third-defect-signed-pairing-20260923/workbench.pdf",
+      "claims": "research/incoming/es-third-defect-signed-pairing-20260923/claims.json",
+      "morphisms": "research/incoming/es-third-defect-signed-pairing-20260923/MORPHISMS.md",
+      "checkers": [
+        "research/incoming/es-third-defect-signed-pairing-20260923/verify.py",
+        "research/incoming/es-third-defect-signed-pairing-20260923/check_independent.py",
+        "research/incoming/es-third-defect-signed-pairing-20260923/run_all.py"
+      ],
+      "verification": "research/incoming/es-third-defect-signed-pairing-20260923/verification.json",
+      "scope": "For every original shell, the complete weighted signed opposition pairing has the exact positive E/M fibre formula, while its character expansion retains chi(-1), its parity form is an energy difference, and the unscaled global degree operator satisfies A_q^* J A_q=qJ. An actual cross-shell opposed divisor pair yields the determinant pm, a four-term reciprocal identity, and a cyclic fusion obstruction whose order is the retained numerator. For gcd(R,p-1)=m, R|m^2 and odd N=R/m, divisor complementation reverses the exact colour and gives |T_N|=2|E|+|M|+|U_N|. N=3 is uniquely closed, every larger odd quotient has infinitely many prime-shell uncovered-orbit examples, and a nonempty T_3 returns at the same shell. The complete applicable-residual family is classified; for p congruent to 73 or 145 modulo 216, the residual-27 empty locus is classified. No universal T_3 nonemptiness, universal cross-shell fusion, ES resolution, counterexample, historical-priority determination, or Lean formalization is asserted.",
+      "source_ledger": "research/incoming/es-third-defect-signed-pairing-20260923/source_reading.json",
+      "integration_audit": "research/incoming/es-third-defect-signed-pairing-20260923/INTEGRATION_AUDIT.md",
+      "received_input": "research/incoming/es-third-defect-signed-pairing-20260923/RECEIVED_INPUT.json",
+      "changes_zenodo_edition": false
     }
   ],
   "current_frontier": {
-    "source": "research/incoming/es-turn07-mixed-order-upward-20260923/HANDOFF_TURN_7_REMAINDER.md",
+    "source": "research/incoming/es-third-defect-signed-pairing-20260923/README.md",
     "unproved_statement_tex": "\\forall p\\text{ hard prime},\\quad \\text{at least one original E or M coefficient is positive}",
     "available_exact_forms": [
       "complete disjoint direct/cofactor middle atlas with O(sqrt(p)) small moduli",
@@ -505,6 +524,14 @@
       ,"exact common-trace affine shift c_E=c_M-(p-1)/K and injective two-channel lattice operator"
       ,"mixed-order integer section and partial-chain quotient-support criterion with sharp odd-cycle obstruction"
       ,"complete plus-factor fibre and controlled upward return crossing the p=67369 nonincreasing-a obstruction"
+      ,"complete weighted signed opposition pairing with exact positive E/M fibres"
+      ,"character sign chi(-1), even-minus-odd parity energy and unscaled degree covariance A_q^* J A_q=qJ"
+      ,"cross-shell determinant pm, four-term reciprocal identity and cyclic fusion obstruction of order nu/gcd(a,nu)"
+      ,"exact odd-quotient complement-colour decomposition |T_N|=2|E|+|M|+|U_N|"
+      ,"unique quotient-three complement closure and explicit reduced prime progressions proving sharpness for every odd N>3"
+      ,"same-shell third-defect return with exact increasing-triple count |T_3|/2"
+      ,"complete applicable-residual classification R=3^(eta+1)d with its exact parity condition"
+      ,"complete two-type factorization criterion for an empty residual-27 shell"
     ],
     "excluded_shortcuts": [
       "a fixed prime-independent cutoff on original grades h and j",
@@ -558,6 +585,12 @@
       ,"treating a larger finite source census as evidence for arbitrary-prime occupancy"
       ,"treating the injective two-channel operator as a positivity-producing average"
       ,"replacing the quotient-support cover by total coefficient mass or generated-subgroup support"
+      ,"dropping chi(-1) or replacing the signed opposition form by unsigned character energy"
+      ,"using degree amplification to turn a signed zero into strict positivity"
+      ,"omitting the uncovered-orbit term U_N from the odd-quotient complement count"
+      ,"extending the universal complement closure from N=3 to any larger odd quotient"
+      ,"treating a nonzero cyclic boundary class as an obstruction to every cross-shell return"
+      ,"treating applicable-residual construction as proof that an associated T_3 source is nonempty"
     ]
   },
   "records": {
@@ -569,7 +602,7 @@
     "human_motivations": "polyclank/motivations.json"
   },
   "coverage": {
-    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260923-016 are linked from their modules and the daily proof bulletins.",
+    "claims": "The published 9 September edition retains all 72 named theorem, lemma, proposition and corollary environments in its 15 canonical proof sources. Later dated claim files through SZ-20260923-024 are linked from their modules and the daily proof bulletins.",
     "history": "Earlier readers, source archives, corrections and manifests remain linked in README.md. Later modules keep their own claims, proof locators and receipts; full claim-by-claim indexing of every historical edition is not asserted.",
     "research_map": "Describes the current published routes, motivations, results, exact failures and unfinished scope; does not prescribe subsequent mathematical choices."
   },
